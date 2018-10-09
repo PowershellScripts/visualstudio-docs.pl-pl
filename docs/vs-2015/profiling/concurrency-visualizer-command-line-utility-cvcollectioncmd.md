@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1925a240c011e4a9e7ede1a0aeb673b5d33c23bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dbc4f235d56554b37033703158126a003ddbca93
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629387"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880828"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Najnowszą wersję tego tematu znajduje się w temacie [Concurrency Visualizer C
 Narzędzie wiersza polecenia Concurrency Visualizer (CVCollectionCmd.exe) służy do zbierania śladów z wiersza polecenia, aby wyświetlić w Wizualizatorze współbieżności dla programu Visual Studio. Ule może służyć na komputerach, które nie mają zainstalowanego programu Visual Studio.  
   
 > [!NOTE]
->  Narzędzie Concurrency Visualizer, począwszy od programu Visual Studio 2013 to opcjonalne rozszerzenie. (Wcześniej on miał została uwzględniona w programie Visual Studio.) Możesz pobrać [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) z Centrum pobierania.  
+>  Narzędzie Concurrency Visualizer, począwszy od programu Visual Studio 2013 to opcjonalne rozszerzenie. (Wcześniej on miał została uwzględniona w programie Visual Studio.) Możesz pobrać [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) z Centrum pobierania.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Pobierz narzędzie wiersza polecenia Concurrency Visualizer  
- Aby pobrać i zainstalować narzędzia wiersza polecenia, przejdź do [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) i postępuj zgodnie z instrukcjami. Domyślnie CVCollectionCmd.exe jest zainstalowany w folderze %ProgramFiles%\Microsoft SDKs\Windows\v8.0a\bin\netfx kolekcji wizualizatora współbieżności (% ProgramFiles (x86) %\Microsoft Concurrency Visualizer kolekcji SDKs\Windows\v8.0a\bin\netfx na x64 komputerów).  
+ Aby pobrać i zainstalować narzędzia wiersza polecenia, przejdź do [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) i postępuj zgodnie z instrukcjami. Domyślnie CVCollectionCmd.exe jest zainstalowany w folderze %ProgramFiles%\Microsoft SDKs\Windows\v8.0a\bin\netfx kolekcji wizualizatora współbieżności (% ProgramFiles (x86) %\Microsoft Concurrency Visualizer kolekcji SDKs\Windows\v8.0a\bin\netfx na x64 komputerów).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Zbierać dane śledzenia z CVCollectionCmd  
  Uruchamianie aplikacji za pomocą CVCollectionCmd lub dołączanie do niego, można zbierać dane śledzenia. Zobacz informacje o poleceniu poniżej dla opcji. Na przykład  

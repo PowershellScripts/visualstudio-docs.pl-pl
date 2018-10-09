@@ -13,12 +13,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c70cf8ae41652d0426f40d26dd5217ca4507aad8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2bf6251b8152224b521f60b0ec1694e03adeb9b1
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679665"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880482"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Wymagania systemowe dotyczące emulatora programu Visual Studio dla systemu Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,12 +135,12 @@ Visual Studio Emulator for Android działa jako maszyna wirtualna funkcji Hyper-
  Po uruchomieniu emulatora, jeśli nie jesteś już członkiem grupy Administratorzy funkcji Hyper-V, wyświetlany jest monit o dołączenie do grupy (okno dialogowe odwołuje się do emulatora Windows Phone). Dołączenia do grupy wymaga uprawnień administratora.  
   
 > [!IMPORTANT]
->  Po dołączeniu do grupy, wyloguj się lub ponowne uruchomienie, aby zmiany zaczęły obowiązywać.  
+> Po dołączeniu do grupy, wyloguj się lub ponowne uruchomienie, aby zmiany zaczęły obowiązywać.  
   
  ![Łączenie Hyper&#45;grupy zabezpieczeń Administratorzy V](../cross-platform/media/android-emu-hyperv-admin.png "Android_Emu_HyperV_Admin")  
   
- Aby samodzielnie ręcznie dodać do grupy, otwórz lokalni użytkownicy i grupy w przystawce. Aby uzyskać więcej informacji, zobacz [dodać konto użytkownika do grupy](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (W tym temacie Windows 7 jest również zastosowanie do systemu Windows 8).  
-  
+ Aby samodzielnie ręcznie dodać do grupy, otwórz lokalni użytkownicy i grupy w przystawce.
+ 
 ##  <a name="BootableVHD"></a> Uruchamianie emulatora z rozruchowego dysku VHD nie jest obsługiwana.  
  W przypadku uruchamiania aplikacji w Visual Studio Emulator dla systemu Android, gdy używasz Windows rozruchowego dysku VHD emulator zazwyczaj trwa kilka minut, aby uruchomić lub nie została uruchomiona. Jeśli emulator nie powiedzie się, zostanie wyświetlony następujący komunikat: Wdrażanie aplikacji nie powiodło się. Spróbuj ponownie później.  
   

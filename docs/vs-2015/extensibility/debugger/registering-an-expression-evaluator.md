@@ -16,12 +16,12 @@ ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34cf96f38d169994d85f758c9453b6ad15ad6390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99561ea9e1fe46f5e0f90bf994c8b9eaf4b11d32
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674403"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880534"
 ---
 # <a name="registering-an-expression-evaluator"></a>Rejestrowanie ewaluatora wyrażeń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Najnowszą wersję tego tematu znajduje się w temacie [rejestrowanie ewaluatora
 ## <a name="managed-code-expression-evaluator"></a>Kod zarządzany Ewaluator wyrażeń  
  Kod zarządzany EE jest implementowany jako biblioteki klas, czyli biblioteki DLL, która rejestruje się za pomocą środowiska COM, typowo są uruchamiane przez wywołanie VSIP program **regpkg.exe**. Rzeczywisty proces pisania klucze rejestru dla środowiska COM odbywa się automatycznie.  
   
- Metoda główna klasa jest oznaczona atrybutem <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, wskazujący, że ta metoda jest wywoływana, gdy biblioteka DLL jest rejestrowana w modelu COM. Ta metoda rejestracji, często nazywane `RegisterClass`, wykonuje zadanie rejestrowania biblioteki DLL za pomocą programu Visual Studio. Odpowiedni `UnregisterClass` (oznaczone <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), cofa skutki `RegisterClass` po odinstalowaniu biblioteki DLL.  
+ Metoda główna klasa jest oznaczona atrybutem <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>, wskazujący, że metoda jest wywoływana, gdy biblioteka DLL jest rejestrowana w modelu COM. Ta metoda rejestracji, często nazywane `RegisterClass`, wykonuje zadanie rejestrowania biblioteki DLL za pomocą programu Visual Studio. Odpowiedni `UnregisterClass` (oznaczone <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>), cofa skutki `RegisterClass` po odinstalowaniu biblioteki DLL.  
   
  Ten sam wpisy rejestru są wykonywane jak w przypadku EE zapisywane w niezarządzanym kodzie; Jedyną różnicą jest to, że nie ma pomocnika funkcji takich jak `SetEEMetric` które wykonają tę pracę za Ciebie. Przykładem tego procesu zarejestrować/wyrejestrować wygląda następująco:  
   

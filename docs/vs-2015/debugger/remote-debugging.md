@@ -24,12 +24,12 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc6cbcb4bba7e808a72ca389ab8ad9157e80375c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689031"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880724"
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Możesz albo pobierania, które narzędzia zdalnej bezpośrednio na urządzeniu 
 
 ### <a name="to-download-and-install-the-remote-tools"></a>Aby pobrać i zainstalować narzędzia zdalne
   
-1.  Na komputerze serwera ani urządzenia, który chcesz debugować (a nie komputer, z programem Visual Studio), pobrać poprawną wersję narzędzi remote tools.
+1.  Na urządzeniu lub serwera maszyny, które chcesz debugować (a nie komputer z programem Visual Studio) Pobierz poprawną wersję narzędzi remote tools.
 
     |Wersja|Łącze|Uwagi|
     |-|-|-|
@@ -59,7 +59,7 @@ Możesz albo pobierania, które narzędzia zdalnej bezpośrednio na urządzeniu 
     > [!IMPORTANT]
     >  Zaleca się, że możesz zainstalować najnowszą wersję narzędzi remote tools, który odpowiada używanej wersji programu Visual Studio. Niezgodność wersji nie jest zalecane.  
     >   
-    >  Ponadto należy zainstalować narzędzi zdalnych, które mają taką samą architekturę co system operacyjny, na którym chcesz go zainstalować. Innymi słowy Jeśli chcesz debugować aplikację 32-bitowego na zdalnym komputerze z systemem 64-bitowym systemie operacyjnym, należy zainstalować 64-bitowej wersji narzędzi zdalnych na komputerze zdalnym.  
+    >  Ponadto należy zainstalować narzędzi zdalnych, które mają taką samą architekturę co system operacyjny, na którym chcesz go zainstalować. Innymi słowy Jeśli chcesz debugować 32-bitowej aplikacji na komputerze zdalnym z systemem 64-bitowym systemie operacyjnym, należy zainstalować 64-bitowej wersji narzędzi zdalnych na komputerze zdalnym.  
   
 3.  Po zakończeniu pobierania pliku wykonywalnego, postępuj zgodnie z instrukcjami, aby zainstalować aplikację na komputerze zdalnym. Zobacz [instrukcje instalacji](#bkmk_setup)
 

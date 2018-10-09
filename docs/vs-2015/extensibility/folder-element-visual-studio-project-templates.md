@@ -17,12 +17,12 @@ ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e9827186ad2e7310f2a7554c8d830518f9979411
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c26dd5652b2c167e8ae33be4250015ba32c34a96
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683427"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878878"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder — Element (szablony projektów Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Określa folder, który zostanie dodany do projektu.
 ## <a name="remarks"></a>Uwagi  
  `Folder` jest podrzędnym opcjonalne `Project`.  
   
- Do organizowania elementów projektu w foldery w szablonie, można użyć dowolnego z poniższych metod, aby:  
+ Do organizowania elementów projektu w foldery w szablonie, można użyć dowolnej z następujących metod:  
   
 -   Będą one wyświetlane w pliku zip szablonu i dodać je do projektu w pliku .vstemplate, określając ścieżkę do pliku w `ProjectItem` elementów, na których nie `Folder` elementów. Jest to zalecana metoda. Na przykład:  
   

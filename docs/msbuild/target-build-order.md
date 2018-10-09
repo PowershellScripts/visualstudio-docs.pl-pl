@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7546c2da20c29f0140bd6b9572175ae0c2b019ad
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774948"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879372"
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego obiektu docelowego jest zależna od danych wyjściowych z innym elementem docelowym. Aby określić kolejność uruchamiania elementów docelowych, można użyć tych atrybutów:  
@@ -56,9 +56,9 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
 <Project DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- Można zastąpić domyślne elementy docelowe za pomocą **/target** Przejdź w wierszu polecenia. Poniższy przykład określa, że `Build` docelowy działa, a następnie `Report` docelowych uruchomienia. Po określeniu elementów docelowych w ten sposób wszystkie domyślne elementy docelowe są ignorowane.  
+ Można zastąpić domyślne elementy docelowe za pomocą **-target** Przejdź w wierszu polecenia. Poniższy przykład określa, że `Build` docelowy działa, a następnie `Report` docelowych uruchomienia. Po określeniu elementów docelowych w ten sposób wszystkie domyślne elementy docelowe są ignorowane.  
   
- `msbuild /target:Build;Report`  
+ `msbuild -target:Build;Report`  
   
  Jeśli określono zarówno cele początkowe i domyślne elementy docelowe, a jeśli nie określono żadnych elementów docelowych w wiersza polecenia, MSBuild uruchamia cele początkowe najpierw, a następnie uruchomić domyślnych elementów docelowych.  
   
@@ -108,7 +108,7 @@ Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego o
   
 1.  `InitialTargets` obiekty docelowe są uruchamiane.  
   
-2.  Cele określone w wierszu polecenia przez **/target** przełącznika są uruchamiane. Jeśli określisz żadnych elementów docelowych w wierszu polecenia, a następnie `DefaultTargets` obiekty docelowe są uruchamiane. Jeśli nie jest obecny, pierwszy napotkano element docelowy zostanie uruchomiony.  
+2.  Cele określone w wierszu polecenia przez **-target** przełącznika są uruchamiane. Jeśli określisz żadnych elementów docelowych w wierszu polecenia, a następnie `DefaultTargets` obiekty docelowe są uruchamiane. Jeśli nie jest obecny, pierwszy napotkano element docelowy zostanie uruchomiony.  
   
 3.  `Condition` Atrybut docelowy jest oceniany. Jeśli `Condition` atrybut jest obecny i daje w wyniku `false`, element docelowy nie jest wykonywane i nie ma dalszych wpływu na kompilację.
 

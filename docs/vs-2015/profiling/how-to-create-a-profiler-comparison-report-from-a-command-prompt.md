@@ -14,23 +14,23 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cb31a79af25fbe66112efd6be0aacd9b3c3820d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95b4599c8e3b3a65bdcca4519a6beaa2e1364e96
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684846"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879334"
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Porady: tworzenie raportu porównania profilera z wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Najnowszą wersję tego tematu znajduje się w temacie [porady: Tworzenie raportu porównania Profiler w wierszu polecenia](https://docs.microsoft.com/visualstudio/profiling/how-to-create-a-profiler-comparison-report-from-a-command-prompt).  
   
-Możesz wygenerować [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools raport, który porównuje dane dotyczące wydajności dwóch danych profilowania (. VSP lub. Pliki VSPS). Raport przedstawia przedstawiono różnice największe Regresje wydajności i ulepszeń, które wystąpiły w jednej sesji profilowania do innego. Wartości w raporcie przedstawiają zmian lub zmiany z linią bazową pierwszego pliku, który określisz. Tę deltę jest obliczana przez określenie różnica między stara wartość, czyli wartość punktu odniesienia, a wartość wyniku z analizy nowych. Porównywanie danych profilera może bazować na funkcje w kodzie, moduły w aplikacji, wiersze, wskaźników instrukcji (IP) i typy.  
+Możesz wygenerować [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools raport, który porównuje dane dotyczące wydajności dwóch danych profilowania (. VSP lub. Pliki VSPS). Ten raport prezentuje różnic, największe Regresje wydajności i ulepszeń, które wystąpiły w jednej sesji profilowania do innego. Wartości w raporcie przedstawiają zmian lub zmiany z linią bazową pierwszego pliku, który określisz. Tę deltę jest obliczana przez określenie różnica między stara wartość, czyli wartość punktu odniesienia, a wartość wyniku z analizy nowych. Porównywanie danych profilera może bazować na funkcje w kodzie, moduły w aplikacji, wiersze, wskaźników instrukcji (IP) i typy.  
   
  Aby wyświetlić listę identyfikatorów kategorii porównania i pola, wpisz następujące polecenie w wierszu:  
   
- **VSPerfReport/querydifftables zwraca***VspFileName1* *VspFileName2*   
+ **VSPerfReport/querydifftables zwraca***VspFileName1* *VspFileName2*  
   
  Aby utworzyć raport porównawczy, należy użyć następującej składni:  
   

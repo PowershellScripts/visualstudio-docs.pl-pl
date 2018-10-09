@@ -18,12 +18,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: 2f58a6b22aa2e7274c6fcf8d702d264a9a592c33
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 75c234b2a3b16d3bcbe05da9f0818c73be0412db
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280041"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880800"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Język JavaScript w programie Visual Studio 2017
 
@@ -64,7 +64,7 @@ Wymagane ustawienia dla pliku tsconfig są następujące:
  Lokalizacja danych wyjściowych, foldery poza projektem, takie jak `node_modules` lub `temp`, powinny zostać dodane do tego ustawienia.
  - `enableAutoDiscovery`: To ustawienie umożliwia automatyczne wykrywanie i pobierania plików definicji, co zostało opisane wcześniej.
  - `compileOnSave`: To ustawienie informuje kompilator, jeśli należy ponownie skompilować każdym razem, gdy plik źródłowy jest zapisany w programie Visual Studio.
- - `typeAcquisition`: To zbiór ustawień kontrolowania zachowania przejęcia automatyczne typu (dokładniejszego wyjaśnienia w [w tej sekcji](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense#Auto))
+ - `typeAcquisition`: To zbiór ustawień kontrolowania zachowania przejęcia automatyczne typu (dokładniejszego wyjaśnienia w [w tej sekcji](/visualstudio/ide/javascript-intellisense#Auto))
 
 Aby można było przekonwertować plików JavaScript z modułami CommonJS i umieść je w `./out` folderu, można użyć następującego `tsconfig.json` pliku:
 

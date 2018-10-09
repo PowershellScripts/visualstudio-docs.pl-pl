@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e90c3f5ec522190cf08027bdffbc9a9558cee90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb5e91d22549cf99b10f7575a8669d908e4832b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682149"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880790"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Dostępność produktów i usług (program Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korz
   
  Adresy internetowe czasami się zmieniają, dlatego witryna wymieniona powyżej może okazać się niedostępna.  
   
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>Obsługa klienta dla osób z wadą słuchu  
+## <a name="customer-service-for-people-with-hearing-impairments"></a>Obsługa klienta dla osób z wadami słuchu  
  Osoby niesłyszące lub niedosłyszące mają pełny dostęp do produktów i obsługi klienta firmy Microsoft za pośrednictwem usługi telefonu tekstowego (TTY/TDD):  
   
  Aby się skontaktować z obsługą klienta, należy zadzwonić do Centrum informacji sprzedażowej Microsoft pod numer (800) 892-5234 w godzinach od 6:30 do 17:30 czasu pacyficznego, od poniedziałku do piątku, z wyjątkiem świąt.  

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b2a9e85f94e4c6baa06984b2b84e03c836eab53
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9a73f54eb5349c62ceecbdffc44f5d2f95831c72
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677639"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880841"
 ---
 # <a name="concurrency-visualizer"></a>Concurrency Visualizer
 > [!NOTE]
@@ -30,7 +30,7 @@ ms.locfileid: "35677639"
 >   
 >  -   Pobierz [Concurrency Visualizer dla programu Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview) rozszerzenia.  
 >  -   Pobierz [Concurrency Visualizer dla programu Visual Studio 2015](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) rozszerzenia.  
-> -   Pobierz [Concurrency Visualizer Collection Tools dla programu Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103).  
+> -   Pobierz [Concurrency Visualizer Collection Tools dla programu Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103).  
 >   
 >      [Concurrency Visualizer Command-Line Utility (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) pozwala zbierać dane śledzenia w wierszu polecenia, który można wyświetlić w Wizualizatorze współbieżności dla programu Visual Studio 2015. Narzędzie może służyć na komputerach, które nie mają zainstalowanego programu Visual Studio.  
   

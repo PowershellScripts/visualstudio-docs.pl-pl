@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8fc3ce425f2eaf6052d1e301d23c00d3503daec
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e0cbbcbc57d07eaf6273545f5520e461c7578977
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179986"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879088"
 ---
 # <a name="build-loggers"></a>Rejestratory kompilacji
 Rejestratory umożliwiają umożliwiające dostosowanie dane wyjściowe kompilacji i wyświetlanie wiadomości, błędy lub ostrzeżenia w odpowiedzi na zdarzenia w konkretnej kompilacji. Każdy rejestrator jest implementowany jako klasa .NET, która implementuje <xref:Microsoft.Build.Framework.ILogger> interfejs, który jest zdefiniowany w *Microsoft.Build.Framework.dll* zestawu.  
@@ -43,25 +43,25 @@ Rejestratory umożliwiają umożliwiające dostosowanie dane wyjściowe kompilac
  [!code-csharp[msbuild_SimpleConsoleLogger#3](../msbuild/codesnippet/CSharp/build-loggers_2.cs)]  
   
 ## <a name="respond-to-logger-verbosity-values"></a>Reagowanie na wartości poziom szczegółowości rejestratora  
- W niektórych przypadkach możesz tylko rejestrować informacje ze zdarzenia, jeśli MSBuild.exe **/verbosity** przełącznik zawiera określoną wartość. W tym przykładzie <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> programu obsługi zdarzeń tylko rejestruje wiadomość, jeśli <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> właściwość, która została ustawiona przez **/verbosity** przełącznika, jest równa <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed`.  
+ W niektórych przypadkach możesz tylko rejestrować informacje ze zdarzenia, jeśli MSBuild.exe **— poziom szczegółowości** przełącznik zawiera określoną wartość. W tym przykładzie <xref:Microsoft.Build.Framework.IEventSource.TargetStarted> programu obsługi zdarzeń tylko rejestruje wiadomość, jeśli <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> właściwość, która została ustawiona przez **— poziom szczegółowości** przełącznika, jest równa <xref:Microsoft.Build.Framework.LoggerVerbosity> `Detailed`.  
   
  [!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]  
   
 ## <a name="specify-a-logger"></a>Określ Rejestrator  
- Gdy rejestratora jest kompilowany do zestawu, należy przekazać [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do użycia tego rejestratora podczas kompilacji. Odbywa się przy użyciu **/logger** przełącznik z *MSBuild.exe*. Aby uzyskać więcej informacji na temat parametrów, które są dostępne dla *MSBuild.exe*, zobacz [wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
+ Gdy rejestratora jest kompilowany do zestawu, należy przekazać [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do użycia tego rejestratora podczas kompilacji. Odbywa się przy użyciu **-rejestratora** przełącznik z *MSBuild.exe*. Aby uzyskać więcej informacji na temat parametrów, które są dostępne dla *MSBuild.exe*, zobacz [wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
   
- Następujące polecenie w wierszu tworzy projekt *MyProject.csproj* i wykorzystuje klasy rejestratora zaimplementowane w *SimpleLogger.dll*. **/Nologo** przełącznika ukrywa transparent i komunikat o prawach autorskich oraz **/noconsolelogger** przełącznika wyłącza domyślne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rejestratora konsoli.  
+ Następujące polecenie w wierszu tworzy projekt *MyProject.csproj* i wykorzystuje klasy rejestratora zaimplementowane w *SimpleLogger.dll*. **- Nologo** przełącznika ukrywa transparent i komunikat o prawach autorskich oraz **- noconsolelogger** przełącznika wyłącza domyślne [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rejestratora konsoli.  
   
 ```cmd  
-MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll  
+MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll  
 ```  
   
  Następujące polecenie w wierszu tworzy projekt za pomocą tego samego rejestratora, ale z `Verbosity` poziom `Detailed`.  
   
 ```cmd  
-MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed  
+MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed  
 ```  
-  
+
 ## <a name="example"></a>Przykład  
   
 ### <a name="description"></a>Opis  

@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b320df77f204a5d0c9f10df82679280c1335cb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc463439259ac5eaabe0d0fe29e3afbde9352b3a
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694183"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880048"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Porady: instrumentacja usługi .NET Framework i zbieranie danych pamięci przy użyciu wiersza polecenia profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,7 +134,7 @@ W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 ## <a name="see-also"></a>Zobacz też  
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)   
- [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)
+ [Widoki danych pamięci platformy .NET](../profiling/dotnet-memory-data-views.md)
 
 
 

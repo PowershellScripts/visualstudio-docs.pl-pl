@@ -17,17 +17,17 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7ae2e4459a0da2dbcd096869cf49687c84a68b6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ca964bca83796e56bf3f7d7b53fb6344c05b8b4
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679895"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880178"
 ---
 # <a name="ltlocgt-javascript"></a>&lt;Lokalizacja&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dokumentacja programu Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+Najnowszą wersję tego tematu znajduje się w temacie [dokumentacja programu Visual Studio 2017](/visualstudio/).  
   
 Określa lokalizację i typ pliku sidecar, który zawiera zlokalizowane informacje funkcji IntelliSense.  
   

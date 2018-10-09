@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061065b23aa8a2e7504b32358628ec4e0b3f4b47
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1c94ec84d322a8947af72dbc0a4c7aac2c79ae8b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153163"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880191"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Zestaw narzędzi MSBuild (ToolsVersion)
 Program MSBuild używa narzędzi zadania, celów i narzędzi do tworzenia aplikacji. Zazwyczaj zawiera zestaw narzędzi MSBuild *microsoft.common.tasks* pliku *microsoft.common.targets* plików i kompilatory, takie jak *csc.exe* i  *vbc.exe*. Większość zestawów narzędzi może służyć do kompilowania aplikacji, aby więcej niż jedna wersja programu .NET Framework i więcej niż jedną platformę systemu. Jednak zestaw narzędzi w wersji 2.0 programu MSBuild może służyć do docelowych tylko .NET Framework 2.0.  
@@ -40,7 +40,7 @@ Program MSBuild używa narzędzi zadania, celów i narzędzi do tworzenia aplika
   
  Gdy `ToolsVersion` wartość jest zdefiniowana w pliku projektu, program MSBuild używa tej wartości można określić wartości właściwości zestawu narzędzi, które są dostępne dla projektu. Jedna właściwość zestawu narzędzi jest `$(MSBuildToolsPath)`, która określa ścieżkę do narzędzia programu .NET Framework. Tej właściwości zestawu narzędzi (lub `$(MSBuildBinPath)`), jest wymagana.  
   
- Począwszy od programu Visual Studio 2013 w wersji zestaw narzędzi MSBuild jest taki sam jak numer wersji programu Visual Studio. Domyślnie ten zestaw narzędzi w programie Visual Studio i w wierszu polecenia, niezależnie od wersji zestawu narzędzi, określone w pliku projektu MSBuild.  To zachowanie można zastąpić za pomocą flagi /ToolsVersion. Aby uzyskać więcej informacji, zobacz [ustawienia ToolsVersion zastąpienia](../msbuild/overriding-toolsversion-settings.md).  
+ Począwszy od programu Visual Studio 2013 w wersji zestaw narzędzi MSBuild jest taki sam jak numer wersji programu Visual Studio. Domyślnie ten zestaw narzędzi w programie Visual Studio i w wierszu polecenia, niezależnie od wersji zestawu narzędzi, określone w pliku projektu MSBuild.  To zachowanie można zastąpić za pomocą flagi - ToolsVersion. Aby uzyskać więcej informacji, zobacz [ustawienia ToolsVersion zastąpienia](../msbuild/overriding-toolsversion-settings.md).  
   
  W poniższym przykładzie wyszukuje MSBuild *Microsoft.CSharp.targets* plików przy użyciu `MSBuildToolsPath` zastrzeżone właściwości.  
   
@@ -119,4 +119,4 @@ Zestawy narzędzi podrzędne zostały wprowadzone w .NET Framework 4.5.
   
 ## <a name="see-also"></a>Zobacz także  
  [Standardowe i niestandardowe konfiguracje zestawu narzędzi](../msbuild/standard-and-custom-toolset-configurations.md)   
- [Wielowersyjności kodu w programie](../msbuild/msbuild-multitargeting-overview.md)
+ [Wielowersyjność kodu](../msbuild/msbuild-multitargeting-overview.md)

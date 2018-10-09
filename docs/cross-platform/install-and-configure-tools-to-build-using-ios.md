@@ -12,19 +12,19 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: fe73510c645eadea99796b8b8aea5b6eec1f01c9
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: cbc9e2b0016fde990e2fbd6d79b083907ced5060
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251815"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881088"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalowanie i Konfigurowanie narzędzia umożliwiające tworzenie za pomocą systemu iOS
 
 Możesz używać Visual C++ for Cross-Platform Mobile Development, edytowanie, debugowanie i wdrażanie kodu z systemem iOS w narzędziu iOS Simulator lub na urządzeniu z systemem iOS, ale z powodu ograniczeń licencyjnych, kod musi można skompilować i uruchomić zdalnie na komputerach Mac. Aby skompilować i uruchomić aplikacje dla systemu iOS przy użyciu programu Visual Studio, musisz Instalowanie i Konfigurowanie agenta zdalnego [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), na komputerze Mac. Obsługuje zdalnego agenta kompilacji żądania z programu Visual Studio i uruchamia aplikację na urządzeniu z systemem iOS podłączone do komputera Mac lub w narzędziu iOS Simulator na komputerze Mac.
 
 > [!NOTE]
-> Aby uzyskać informacji na temat korzystania z usług hostowanych w chmurze Mac zamiast komputera Mac, zobacz [Konfigurowanie programu Visual Studio do łączenia się z Twoją chmurą hostowanych Mac](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Instrukcje dotyczą tworzenia przy użyciu programu Visual Studio Tools for Apache Cordova. W celu postępuj zgodnie z instrukcjami, aby kompilować przy użyciu języka C++, należy zastąpić vcremote dla polecenia remotebuild.
+> Aby uzyskać informacji na temat korzystania z usług hostowanych w chmurze Mac zamiast komputera Mac, zobacz [Konfigurowanie programu Visual Studio do łączenia się z Twoją chmurą hostowanych Mac](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Instrukcje dotyczą tworzenia przy użyciu programu Visual Studio Tools for Apache Cordova. W celu postępuj zgodnie z instrukcjami, aby kompilować przy użyciu języka C++, należy zastąpić vcremote dla polecenia remotebuild.
 
 Po zainstalowaniu narzędzia do tworzenia przy użyciu systemu iOS można znaleźć w tym temacie, aby poznać sposoby szybko skonfigurować i zaktualizować agenta zdalnego dla programowania w systemie iOS w programie Visual Studio i na komputerze Mac.
 

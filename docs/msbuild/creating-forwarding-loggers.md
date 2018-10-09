@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d18e84e6c3637fb5d40dfcef14e8dd6a06dc47ce
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6597bfcdcbfb5acddbbbf8804d198036c5b98c53
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179206"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880984"
 ---
 # <a name="create-forwarding-loggers"></a>Tworzenie przekazywania rejestratorów
 Przekazywanie rejestratorów poprawy efektywności rejestrowania, umożliwiając Ci wybrać zdarzeń, które chcesz monitorować, podczas kompilowania projektów w systemie wieloprocesorowym. Po włączeniu przekazywanie rejestratorów może uniemożliwić niepożądanych zdarzeń z przeciążenia rejestratora centralnego, spowalniając czas kompilacji i zaśmiecania dziennika.  
@@ -35,7 +35,7 @@ Przekazywanie rejestratorów poprawy efektywności rejestrowania, umożliwiając
  W środowisku wielu procesorów do odebrania poza kolejnością prawdopodobnie komunikaty o zdarzeniach. W związku z tym należy obliczyć zdarzeń za pomocą programu obsługi zdarzeń w rejestratora przekazywania i programu do określenia, które zdarzenia do przekazania do przekierowania do przekazywania danych do centralnej rejestratora. Aby to osiągnąć, można użyć <xref:Microsoft.Build.Framework.BuildEventContext> klasy, która jest dołączona do każdej wiadomości, aby ułatwić zidentyfikowanie zdarzenia, które mają być przekazywane, a następnie przekaż nazwy zdarzeń, aby <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> klasy (lub podklasa go). Korzystając z tej metody, nie inne określone kodowanie jest wymagana do przesyłania dalej zdarzeń.  
   
 ## <a name="specify-a-forwarding-logger"></a>Określ Rejestrator przekazywania  
- Rejestrator przekazywania został wcześniej skompilowany w zestawie, musisz poinformować [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] z niego korzystać podczas kompilacji. Aby to zrobić, należy użyć `/FileLogger`, `/FileLoggerParameters`, i `/DistributedFileLogger` zmienia się wraz z *MSBuild.exe*. `/FileLogger` Informuje o przełącznikiem *MSBuild.exe* bezpośrednio dołączonego rejestratora. `/DistributedFileLogger` Przełącznika oznacza, że istnieje plik dziennika w każdym węźle. Aby ustawić parametry rejestratora przekazywania, należy użyć `/FileLoggerParameters` przełącznika. Aby uzyskać więcej informacji na temat tych i innych *MSBuild.exe* przełączników, zobacz [wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
+ Rejestrator przekazywania został wcześniej skompilowany w zestawie, musisz poinformować [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] z niego korzystać podczas kompilacji. Aby to zrobić, należy użyć `-FileLogger`, `-FileLoggerParameters`, i `-DistributedFileLogger` zmienia się wraz z *MSBuild.exe*. `-FileLogger` Informuje o przełącznikiem *MSBuild.exe* bezpośrednio dołączonego rejestratora. `-DistributedFileLogger` Przełącznika oznacza, że istnieje plik dziennika w każdym węźle. Aby ustawić parametry rejestratora przekazywania, należy użyć `-FileLoggerParameters` przełącznika. Aby uzyskać więcej informacji na temat tych i innych *MSBuild.exe* przełączników, zobacz [wiersza polecenia](../msbuild/msbuild-command-line-reference.md).  
   
 ## <a name="multi-processor-aware-loggers"></a>Procesorów uwzględniających rejestratorów  
  Podczas tworzenia projektu w systemie wieloprocesorowym komunikatów kompilacji z każdego procesora nie są automatycznie przeplotu ujednoliconego sekwencji. Zamiast tego należy ustanowić komunikat grupowanie priorytet za pomocą <xref:Microsoft.Build.Framework.BuildEventContext> klasy, który jest dołączony do każdej wiadomości. Aby uzyskać więcej informacji na temat tworzenia wielu procesorów zobacz [logowanie w środowisku wielu procesorów](../msbuild/logging-in-a-multi-processor-environment.md).  

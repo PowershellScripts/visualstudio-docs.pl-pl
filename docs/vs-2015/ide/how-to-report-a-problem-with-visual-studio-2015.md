@@ -12,17 +12,17 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dbbd84fb72c2d25c30b3012d3dfcb381dcc35050
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80e8a8c69b0536891737741125f0313f953b421e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629506"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880633"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Jak zgłosić Problem w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [jak zgłosić problem w programie Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
+Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [jak zgłosić problem w programie Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
 
 Jeśli wystąpi problem z programem Visual Studio 2015, chcemy o tym wiedzieć, aby firma Microsoft zdiagnozować i rozwiązać go.  Za pomocą **Zgłoś Problem** narzędzia, możesz zbierać szczegółowe informacje o problemie i wysyłać do firmy Microsoft, za pomocą kilku kliknięć przycisków.  
   

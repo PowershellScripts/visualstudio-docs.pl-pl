@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbb444a8de184f47bc8c6915bbf0fafcaf6c7ca3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0a9787e7e0a203a77e456ec61ea8a80057ce92
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695624"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879983"
 ---
 # <a name="just-my-code"></a>Tylko mój kod
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -195,7 +195,7 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
 |-|-|  
 |**MyCode**|Kod użytkownika, który umożliwia zbieranie i kontrolowanie.|  
 |**LibraryCode**|Kod niezwiązany z użytkownikiem z bibliotek, które regularnie używane i aplikacji zależy od działał poprawnie (na przykład WinJS lub jQuery).|  
-|**UnrelatedCode**|Niezwiązanych z użytkownikiem kodu, która może być uruchomiony w Twojej aplikacji, ale nie jesteś właścicielem i aplikacja nie bezpośrednio na niej się opierać działał poprawnie (na przykład reklamą zestaw SDK, który wyświetla reklamy). W przypadku projektów Windows Store wszelki kod, który jest ładowany do aplikacji za pomocą protokołu HTTP lub HTTPS identyfikatora URI jest również uważana za UnrelatedCode.|  
+|**UnrelatedCode**|Kod niezwiązany z użytkownikiem, które mogą być wykonywane w aplikacji, ale nie jest własnością i aplikacja nie bezpośrednio na niej się opierać działał poprawnie (na przykład reklamą zestaw SDK, który wyświetla reklamy). W przypadku projektów Windows Store wszelki kod, który jest ładowany do aplikacji za pomocą protokołu HTTP lub HTTPS identyfikatora URI jest również uważana za UnrelatedCode.|  
   
  Debuger JavaScript klasyfikuje automatycznie tych typów kodu:  
   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e862322995c7cda4a7080ee387c7a080437748
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178521"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880152"
 ---
 # <a name="walkthrough-use-msbuild"></a>Przewodnik: Używanie programu MSBuild
 Program MSBuild jest platformę kompilacji firmy Microsoft i programu Visual Studio. Ten przewodnik stanowi wprowadzenie do bloki konstrukcyjne programu MSBuild i pokazuje, jak napisać, modyfikowania i debugowania projektów programu MSBuild. Uzyskasz informacje na temat:
@@ -116,7 +116,7 @@ Zadanie komunikatu jest jednym z wielu zadań, które jest dostarczany za pomoc�
 Zadanie komunikatu przyjmuje wartość ciągu atrybutu tekstu jako danych wejściowych i wyświetla je na urządzeniu wyjściowym. Docelowy HelloWorld wykonuje zadanie komunikatu dwa razy: najpierw po to, aby wyświetlić "Hello", a następnie, aby wyświetlić "World".
 
 ## <a name="build-the-target"></a>Tworzenie obiektu docelowego
- Uruchom program MSBuild z **Visual Studio Command Prompt** do tworzenia pod kątem HelloWorld zdefiniowanych powyżej. Użyj przełącznika wiersza polecenia/TARGET lub/t, aby wybrać element docelowy.
+ Uruchom program MSBuild z **Visual Studio Command Prompt** do tworzenia pod kątem HelloWorld zdefiniowanych powyżej. Użyj - docelowego lub -t przełącznik wiersza polecenia do wybierz docelową.
 
 > [!NOTE]
 >  Będziemy nazywać **Visual Studio Command Prompt** jako **okna polecenia** w poniższych sekcjach.
@@ -127,10 +127,10 @@ Zadanie komunikatu przyjmuje wartość ciągu atrybutu tekstu jako danych wejśc
 
 2.  W oknie polecenia przejdź do folderu zawierającego plik projektu, w tym przypadku *D:\BuildApp\BuildApp*.
 
-3.  Uruchom program msbuild z /t:HelloWorld przełącznik polecenia. Wybiera i tworzy element docelowy HelloWorld:
+3.  Msbuild wykonywania za pomocą polecenia przełącznika - t: HelloWorld. Wybiera i tworzy element docelowy HelloWorld:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Sprawdź dane wyjściowe w **okna polecenia**. Powinny zostać wyświetlone dwa wiersze "Hello" i "World":
@@ -200,7 +200,7 @@ $(PropertyName)
 3.  Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące dwa wiersze (.NET Framework w wersji mogą się różnić):
@@ -231,14 +231,14 @@ $(PropertyName)
  Możesz odwoływać się zmiennych środowiskowych w plikach projektu taki sam sposób, jak właściwości kompilacji. Na przykład aby użyć zmiennej środowiskowej PATH w pliku projektu, należy użyć składni $(Path). Jeśli projekt zawiera definicję właściwości, która ma taką samą nazwę jako zmienną środowiskową, właściwość w projekcie zastępuje wartość zmiennej środowiskowej. Aby uzyskać więcej informacji, zobacz [porady: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Ustawianie właściwości w wierszu polecenia
- Właściwości może być określona w wierszu polecenia przy użyciu /property lub /p przełącznik wiersza polecenia. Wartości właściwości odebranych w wierszu polecenia zastępują wartości właściwości ustawione w projekcie plików i zmiennymi środowiskowymi.
+ Właściwości mogą być określone w wierszu polecenia za pomocą - lub -p właściwości przełącznik wiersza polecenia. Wartości właściwości odebranych w wierszu polecenia zastępują wartości właściwości ustawione w projekcie plików i zmiennymi środowiskowymi.
 
 #### <a name="to-set-a-property-value-from-the-command-line"></a>Aby ustawić wartość właściwości z wiersza polecenia
 
 1.  Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
+    msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
 2.  Zbadaj dane wyjściowe. Powinien zostać wyświetlony ten wiersz:
@@ -267,7 +267,7 @@ Program MSBuild tworzy właściwość konfiguracji i nadaje mu wartość "Wersja
 3.  Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Zbadaj dane wyjściowe. Powinien zostać wyświetlony ten wiersz:
@@ -329,7 +329,7 @@ Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md
 3.  Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Zbadaj dane wyjściowe. Powinien zostać wyświetlony ten długi wiersz:
@@ -361,7 +361,7 @@ Zmień zadanie komunikatu do używania znaki powrotu karetki i wiersz źródła 
 3.  Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące wiersze:
@@ -441,7 +441,7 @@ nie wyklucza pliku *Form1.cs*, który został dodany w poprzedniej pozycji eleme
 4.  Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 5.  Zbadaj dane wyjściowe. Powinien zostać wyświetlony ten wiersz:
@@ -482,7 +482,7 @@ nie wyklucza pliku *Form1.cs*, który został dodany w poprzedniej pozycji eleme
 3.  Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące wiersze:
@@ -512,7 +512,7 @@ Zwróć uwagę, jak frazę "Compile.DependentUpon" pojawia się wiele razy. Uży
 3.  Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Zbadaj dane wyjściowe. Powinny zostać wyświetlone następujące wiersze:
@@ -550,7 +550,7 @@ Na przykład element lista plików źródłowych mogą zostać przekształcone n
 3.  Z **okna polecenia**, wprowadź i wykonuje ten wiersz:
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  Zbadaj dane wyjściowe. Powinien zostać wyświetlony ten wiersz:

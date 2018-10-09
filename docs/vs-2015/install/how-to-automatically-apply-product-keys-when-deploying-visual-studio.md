@@ -14,17 +14,17 @@ caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 45ed6a059c0a9cf9ae5063e538ec9b9c87698ef1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07f09cbc2deedaeb701a52ffc09532e36e30c308
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681852"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879076"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Porady: automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
+Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
 
 Można zastosować klucz produktu programowego jako część skryptu, który umożliwia automatyzowanie wdrażania programu Visual Studio 2015. Klucze produktów można ustawić na urządzeniu programowo podczas instalacji programu Visual Studio lub po ukończeniu instalacji.  
   

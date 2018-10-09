@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8de1d8777f7f4b232ed4dcc2dabe69e0c1712fdf
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 0da7118d1ee420e5e4a415ea8f32d9ba8f1771e6
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321245"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880100"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] To platforma do tworzenia aplikacji. Ten aparat, który jest również znany jako MSBuild, dostarcza schemat XML pliku projektu, który kontroluje, jak platforma kompilacji przetwarza i tworzy oprogramowanie. Program Visual Studio używa MSBuild, ale go nie są zależne od programu Visual Studio. Za pomocą wywołania *msbuild.exe* w pliku projektu lub rozwiązania organizowania i kompilować produkty w środowiskach, w których nie zainstalowano programu Visual Studio.
@@ -56,7 +56,7 @@ Można napisać kod w środowisku IDE programu Visual Studio, ale uruchamiać ko
  Aby uruchomić [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] w wierszu polecenia, Przekaż plik projektu do *MSBuild.exe*, wraz z odpowiednimi opcjami wiersza polecenia. Opcje wiersza polecenia umożliwiają ustawianie właściwości, wykonywanie określonych obiektów docelowych i ustaw inne opcje, które sterują procesem kompilacji. Na przykład można użyć następującej składni wiersza polecenia do tworzenia pliku *MyProj.proj* z `Configuration` właściwością `Debug`.
 
 ```cmd
-MSBuild.exe MyProj.proj /property:Configuration=Debug
+MSBuild.exe MyProj.proj -property:Configuration=Debug
 ```
 
  Aby uzyskać więcej informacji na temat [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] opcji wiersza polecenia, zobacz [wiersza polecenia](../msbuild/msbuild-command-line-reference.md).

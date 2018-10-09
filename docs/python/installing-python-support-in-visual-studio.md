@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f6a11de4b273b55910e03e73be79f6e3473bac5
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: 3d8ff33247fa6497bcf39451628b5ee503100b6c
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168373"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879840"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Jak zainstalować obsługę języka Python w programie Visual Studio na Windows
 
@@ -59,7 +59,7 @@ Aby szybko przetestować, obsługa w języku Python po wykonaniu kroków instala
 
     | Opcja | Opis |
     | --- | --- |
-    | Dystrybucje języka Python | Wybierz dowolną kombinację wariantów 32-bitowych i 64-bitowe języka Python 2, 3 języka Python, anaconda2, wersja i Anaconda3 dystrybucji, które zamierzasz pracować. Każde zawiera obsługę dystrybucji interpreter środowiska uruchomieniowego i bibliotek. Anaconda, to w szczególności platforma analizy otwartej obsługi danych, która zawiera szereg wstępnie zainstalowane pakiety. (Można zwrócić do Instalatora programu Visual Studio w dowolnym momencie, aby dodać lub usunąć dystrybucje.)  **Uwaga**: po zainstalowaniu dystrybucji poza Instalatora programu Visual Studio, czy nie ma potrzeby Sprawdź tutaj opcji równoważne. Program Visual Studio automatycznie wykrywa istniejącej instalacji środowiska Python. Zobacz [środowiska Python](managing-python-environments-in-visual-studio.md). |
+    | Dystrybucje języka Python | Wybierz dowolną kombinację wariantów 32-bitowych i 64-bitowe języka Python 2, 3 języka Python, anaconda2, wersja i Anaconda3 dystrybucji, które zamierzasz pracować. Każde zawiera obsługę dystrybucji interpreter środowiska uruchomieniowego i bibliotek. Anaconda, to w szczególności platforma analizy otwartej obsługi danych, która zawiera szereg wstępnie zainstalowane pakiety. (Można zwrócić do Instalatora programu Visual Studio w dowolnym momencie, aby dodać lub usunąć dystrybucje.)  **Uwaga**: po zainstalowaniu dystrybucji poza Instalatora programu Visual Studio, czy nie ma potrzeby Sprawdź tutaj opcji równoważne. Program Visual Studio automatycznie wykrywa istniejącej instalacji środowiska Python. Zobacz [środowiska Python](managing-python-environments-in-visual-studio.md). Ponadto jeśli nowszą wersję języka Python jest dostępny od przedstawionego w oknie Instalatora tej wersji można zainstalować oddzielnie i Visual Studio wykryje go. |
     | **Obsługa szablonów Cookiecutter** | Instaluje Cookiecutter graficznego interfejsu użytkownika, aby odnaleźć szablonów, wprowadź opcje szablonu i tworzenie projektów i plików. Zobacz [używanie rozszerzenia Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Obsługa sieci web w języku Python** | Instaluje narzędzia do tworzenia aplikacji internetowych, w tym HTML, CSS i JavaScript, edycję, wraz z szablonów dla projektów przy użyciu platformy Bottle, Flask i Django. Zobacz [internetowa szablony projektów w języku Python](python-web-application-project-templates.md). |
     | **Obsługa IoT w języku Python** | Obsługuje rozwój systemu Windows IoT Core przy użyciu języka Python. |

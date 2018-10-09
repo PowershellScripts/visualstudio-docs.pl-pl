@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a799ebced2f790d94a4062b663b59dfa3fa41c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aab6de915d6bb26b123b931fe10b7e0116688357
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678296"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880919"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1. Utworzenie projektu i dodawanie etykiet do formularza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Jako pierwsze kroki w projektowaniu tego quizu tworzysz projekt i dodać etykiet
 > [!NOTE]
 >  Ten temat jest częścią serii samouczków na temat podstawowych pojęć kodowania. Aby uzyskać omówienie samouczka, zobacz [samouczek 2: Utwórz, Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
-### <a name="to-create-a-project-and-and-set-properties-for-a-form"></a>Aby utworzyć projekt i i ustawić właściwości dla formularza  
+### <a name="to-create-a-project-and-set-properties-for-a-form"></a>Aby utworzyć projekt i ustawić właściwości dla formularza  
   
 1.  Na pasku menu wybierz **pliku**, **New**, **projektu**.  
   

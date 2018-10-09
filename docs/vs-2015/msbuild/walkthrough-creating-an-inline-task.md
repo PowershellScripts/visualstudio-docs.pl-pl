@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d5931d0871b0a240b0702d865787171b9acf759
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 727c8cec7309952189558d2f4b7aebc8ec99738d
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677024"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880997"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Wskazówki: tworzenie zadania wbudowanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -244,7 +244,7 @@ Zadania programu MSBuild są zwykle tworzone przez skompilowanie klasy, która i
   
 -   `Files` jest wymagany element listy parametr wejściowy, który ma wartość, która znajduje się lista plików, które mają być wyszukiwane dopasowanie. W tym przykładzie `Files` ustawiono `Compile` elementu, który zawiera pliki źródłowe projektu.  
   
--   `Result` to parametr wyjściowy, który ma wartość, która jest to lista plików, które mają zawartość, która odpowiada wyrażeniu regularnemu.  
+-   `Result` to parametr wyjściowy, który ma wartość, która znajduje się lista plików, które mają zawartość, która odpowiada wyrażeniu regularnemu.  
   
  Wartości parametrów wejściowych są ustawione, gdy element docelowy TestBuild wywołuje zadanie RegX. Zadanie RegX odczytuje każdy plik i zwraca listę wszystkich plików, które odpowiada wyrażeniu regularnemu. Ta lista jest zwracana jako `Result` parametr wyjściowy, który jest emitowany jako element MSBuild `MatchedFiles`.  
   

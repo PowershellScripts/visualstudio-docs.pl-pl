@@ -13,12 +13,12 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 587da32a1216c219b1811e8fbc8c1dd9ed2b01ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b8b352b5abdeb975c09d3be95fc7384930eb022
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685492"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880932"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Udostępnione kolory dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -2802,7 +2802,7 @@ Podczas projektowania interfejsu użytkownika, który używa wspólnych element�
  `Environment.ToolWindowBorder`  
   
 ### <a name="scroll-bar"></a>Pasek przewijania  
- Paski przewijania mają różne przez środowisko Visual Studio i nie będą musiały mieć motywów. Jednak można zdecydować, czy chcesz korzystać kolorów używanych na paski przewijania, dzięki czemu interfejs użytkownika zawsze pojawia się zgodnie z tym ta część środowiska Visual Studio.  
+ Paski przewijania mają różne przez środowisko Visual Studio i nie będą musiały mieć motywów. Jednak można zdecydować, czy chcesz korzystać kolorów używanych na paski przewijania, dzięki czemu interfejs użytkownika zawsze wyświetlana jest zgodny z tej części środowiska Visual Studio.  
   
  ![Pasek przewijania poprawek](../../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303 140_ScrollbarRedline")  
   

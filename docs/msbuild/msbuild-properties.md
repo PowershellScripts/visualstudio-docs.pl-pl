@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 109d95202d5ce67b2bdda1aab61d1b725a3ac23c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080753"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879203"
 ---
 # <a name="msbuild-properties"></a>właściwości programu MSBuild
 Właściwości to pary nazwa-wartość, których można używać do konfigurowania kompilacji. Stanową przydatny mechanizm przekazywania wartości do zadań, obliczania warunków i przechowywania wartości, do których będą prowadziły odwołania z różnych miejsc pliku projektu.  
@@ -84,12 +84,12 @@ $(registry:Hive\MyKey\MySubKey)
 ```  
   
 ## <a name="global-properties"></a>Właściwości globalne  
- Program MSBuild umożliwia konfigurowanie właściwości w wierszu polecenia za pomocą **/property** (lub **/p**) przełącznika. Te globalne wartości właściwości zastępują wartości właściwości ustawione w pliku projektu. Dotyczy to również właściwości środowiska, natomiast nie obejmuje właściwości zastrzeżonych, ponieważ nie można ich modyfikować.  
+ Program MSBuild umożliwia konfigurowanie właściwości w wierszu polecenia za pomocą **— właściwość** (lub **-p**) przełącznika. Te globalne wartości właściwości zastępują wartości właściwości ustawione w pliku projektu. Dotyczy to również właściwości środowiska, natomiast nie obejmuje właściwości zastrzeżonych, ponieważ nie można ich modyfikować.  
   
  W przykładzie poniżej dla globalnej właściwości `Configuration` jest ustawiana wartość `DEBUG`.  
   
 ```cmd  
-msbuild.exe MyProj.proj /p:Configuration=DEBUG  
+msbuild.exe MyProj.proj -p:Configuration=DEBUG  
 ```  
   
  Właściwości globalne można także ustawiać i modyfikować dla projektów podrzędnych w kompilacjach wieloprojektowych. Służy do tego atrybut `Properties` zadania programu MSBuild. Właściwości globalne również są przekazywane do projektów podrzędnych, chyba że `RemoveProperties` atrybut zadanie MSBuild służy do określania listy właściwości nie można przesłać dalej. Aby uzyskać więcej informacji, zobacz [zadanie MSBuild](../msbuild/msbuild-task.md).

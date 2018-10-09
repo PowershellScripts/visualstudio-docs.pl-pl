@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13d0bcf02bb46de9116ab4dbd33b4a034c786252
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b180eed67b617cd7e46610b78865fe0ae088d85e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690160"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879827"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Wskazówki: brak obiektów spowodowany cieniowaniem wierzchołków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../includes/v
     > [!TIP]
     >  Jeśli jednocześnie debugujesz aplikację, w tym miejscu można ustawić punktu przerwania i zostanie uruchomiona, podczas renderowania następnej ramki. Następnie można sprawdzić członkowie `m_marbleConstantBufferData` do upewnij się, że wartość `projection` elementu członkowskiego jest ustawiony na samych zer, jeśli stałego buforu.  
   
- Po znalezieniu lokalizacji, w którym zostanie wypełnione stały bufor i wykryć, czy jego wartości pochodzą ze zmiennych `m_marbleConstantBufferData`, następnym krokiem jest, aby dowiedzieć się, gdzie `m_marbleConstantBufferData.projection` element członkowski jest ustawiany na samych zer. Możesz użyć **Znajdź wszystkie odwołania** do szybkiego skanowania w poszukiwaniu kod, który zmienia wartość `m_marbleConstantBufferData.projection`.  
+ Po znalezieniu lokalizacji, w którym zostanie wypełnione stały bufor i odnajdywanie, że jego wartości pochodzą ze zmiennych `m_marbleConstantBufferData`, następnym krokiem jest, aby dowiedzieć się, gdzie `m_marbleConstantBufferData.projection` element członkowski jest ustawiany na samych zer. Możesz użyć **Znajdź wszystkie odwołania** do szybkiego skanowania w poszukiwaniu kod, który zmienia wartość `m_marbleConstantBufferData.projection`.  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>Aby znaleźć, gdzie element członkowski projekcji jest ustawiany w kodzie źródłowym aplikacji  
   

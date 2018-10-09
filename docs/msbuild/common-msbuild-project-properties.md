@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e6e8a76e9ec7fc68e739e48399d76b244d5afa
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9e6dc57f81ca2fb87541f81df6a939314ad5f004
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945822"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880503"
 ---
 # <a name="common-msbuild-project-properties"></a>Wspólne właściwości projektów MSBuild
 W poniższej tabeli właściwości często używanych list, które są zdefiniowane w plikach projektu programu Visual Studio lub zawartych w *.targets* pliki, dostarczanych przez program MSBuild.  
@@ -48,14 +48,14 @@ W poniższej tabeli właściwości często używanych list, które są zdefiniow
 |BaseOutputPath|Określa podstawową ścieżkę dla pliku wyjściowego. Jeśli je skonfigurowano, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] użyje `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Przykład składni: `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>`|  
 |BaseIntermediateOutputPath|Folder najwyższego poziomu, w których wszystkie specyficznych dla konfiguracji pośrednie foldery wynikowe są tworzone. Wartość domyślna to `obj\`. Poniższy kod jest przykładem: `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>`|  
 |BuildInParallel|Wartość logiczna, która wskazuje, czy odwołania do projektu są wbudowane lub czyszczone równolegle, kiedy wieloprocesowym [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest używany. Wartość domyślna to `true`, co oznacza, że projekty będą kompilowane równolegle, jeśli system ma wiele rdzeni lub procesorów.|  
-|BuildProjectReferences|Wartość logiczna, która wskazuje, czy odwołania w projekcie są kompilowane przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Automatycznie ustawiona na `false` Jeśli tworzysz projekt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE), `true` Jeśli inaczej. `/p:BuildProjectReferences=false` można określić w wierszu polecenia, aby uniknąć, sprawdzanie, czy przywoływane projekty są aktualne.|  
+|BuildProjectReferences|Wartość logiczna, która wskazuje, czy odwołania w projekcie są kompilowane przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Automatycznie ustawiona na `false` Jeśli tworzysz projekt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE), `true` Jeśli inaczej. `-p:BuildProjectReferences=false` można określić w wierszu polecenia, aby uniknąć, sprawdzanie, czy przywoływane projekty są aktualne.|  
 |CleanFile|Nazwa pliku, który będzie używany jako "clean cache". Wyczyść pamięć podręczną znajduje się lista wygenerowanych plików, które zostaną usunięte podczas operacji czyszczenia. Plik jest umieszczony w pośredniej ścieżce wyjściowej przez proces kompilacji.<br /><br /> Ta właściwość określa tylko nazwy plików, które nie mają informacji o ścieżce.|  
 |Strona kodowa|Określa stronę kodową dla wszystkich plików kodu źródłowego w kompilacji. Ta właściwość jest równoważna `/codepage` przełącznika kompilatora.|  
 |CompilerResponseFile|Opcjonalny plik odpowiedzi, który może być przekazywany do zadań kompilatora.|  
 |Konfiguracja|Konfiguracja, który jest kompilowany "Debug" lub "Wersja".|  
 |CscToolPath|Ścieżka *csc.exe*, [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] kompilatora.|  
 |CustomBeforeMicrosoftCommonTargets|Nazwa pliku projektu lub pliku obiektów docelowych, który ma być importowane automatycznie przed zaimportowaniem wspólnych obiektów docelowych.|  
-|DebugSymbols|Wartość logiczna wskazująca, czy symbole są generowane przez kompilację.<br /><br /> Ustawienie **/p:DebugSymbols = false** w wierszu poleceń wyłącza Generowanie z bazy danych programu (*.pdb*) pliki symboli.|  
+|DebugSymbols|Wartość logiczna wskazująca, czy symbole są generowane przez kompilację.<br /><br /> Ustawienie **- p: DebugSymbols = false** w wierszu poleceń wyłącza Generowanie z bazy danych programu (*.pdb*) pliki symboli.|  
 |DefineConstants|Definiuje stałe warunkowe kompilatora. Pary symbol/wartość są oddzielone średnikami i są określane przy użyciu następującej składni:<br /><br /> *symbol1 = wartość1; Symbol2 = wartość2*<br /><br /> Właściwość jest równoważna `/define` przełącznika kompilatora.|  
 |DefineDebug|Wartość logiczna wskazująca, czy chcesz, aby stała DEBUG była zdefiniowana.|  
 |DefineTrace|Wartość logiczna wskazująca, czy chcesz, aby stała TRACE była zdefiniowana.|  

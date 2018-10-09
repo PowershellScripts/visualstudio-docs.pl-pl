@@ -18,17 +18,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e95970c19020e28c3b7592068b0ef1df7f1c56f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8f25b995079aeedca262dedd62b2f9c880efb52
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689052"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879220"
 ---
 # <a name="visual-studio-administrator-guide"></a>Podręcznik administratora programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [Podręcznik administratora programu Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/install/visual-studio-administrator-guide).
+Aby uzyskać najnowszą dokumentację programu Visual Studio 2017, zobacz [Podręcznik administratora programu Visual Studio 2017](/visualstudio/install/visual-studio-administrator-guide).
 
 Visual Studio 2015 można wdrożyć w sieci, tak długo, jak długo każdy komputer docelowy spełnia [minimalne wymagania dotyczące instalacji](http://www.microsoft.com/visualstudio/eng/products/2013-editions). Można utworzyć udział sieciowy, uruchamiając plik instalacyjny z przełącznikiem/Layout (zgodnie z opisem na [trybu Offline instalacji programu Visual Studio Utwórz](../install/create-an-offline-installation-of-visual-studio.md) strony), a następnie kopiując je z komputera lokalnego do udziału sieciowego. Jeśli używasz obrazu ISO, możesz zainstalować plik ISO i udostępnić go lub skopiuj plik ISO w udziale sieciowym.  
   
@@ -73,8 +73,8 @@ Visual Studio 2015 można wdrożyć w sieci, tak długo, jak długo każdy kompu
   
 |Temat|Opis|  
 |-----------|-----------------|  
-|[Porady: Instalowanie określonej wersji programu Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Opisuje sposób instalowania określonej konfiguracji bieżącą wersję [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Porady: tworzenie i uruchamianie instalacji nienadzorowanej programu Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|W tym artykule opisano sposób instalowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie nienadzorowanym.|  
-|[Porady: automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Opisuje sposób stosowanie kluczy produktów podczas wdrażania na wielu komputerach.|  
+|[Instrukcje: instalowanie określonej wersji programu Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Opisuje sposób instalowania określonej konfiguracji bieżącą wersję [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Instrukcje: tworzenie i uruchamianie nienadzorowanej instalacji programu Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|W tym artykule opisano sposób instalowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w trybie nienadzorowanym.|  
+|[Instrukcje: automatyczne stosowanie kluczy produktów podczas wdrażania programu Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Opisuje sposób stosowanie kluczy produktów podczas wdrażania na wielu komputerach.|  
 |[Podręcznik administratora programu Podgląd Pomocy](../ide/help-viewer-administrator-guide.md)|Zawiera informacje o sposobie zarządzania lokalnymi instalacjami pomocy dla środowisk sieciowych, które mają lub nie masz dostępu do Internetu.|  
 |[Instalowanie programu Visual Studio](../install/install-visual-studio-2015.md)|Zawiera instrukcje i linki do tematów opisujących sposób instalowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb14269c933d8e8de191b8a8c52e9f41e63ca79d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d31863e3dfdf39481a6215a29f37186a2f528050
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678011"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880373"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Co&#39;s Nowość w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Witamy w programie Visual Studio 2015, zintegrowany pakiet narzędzi zwiększaj�
  I — oczywiście — Obsługa klasycznych aplikacji pulpitu jest lepsze niż kiedykolwiek wcześniej z dużą liczbą ulepszenia języków, biblioteki i narzędzia.  
   
 ### <a name="cross-platform-mobile-apps-in-c-with-xamarin-for-visual-studio"></a>Aplikacje mobilne dla wielu platform w języku C# za pomocą platformy Xamarin dla programu Visual Studio  
- Xamarin to przenośnych strukturę, która umożliwia pisanie kodu w języku C#, który wiąże natywnie w systemach IOS i interfejsy API systemu Android. Firma Microsoft nawiązała współpracę ściśle zintegrowana za pomocą platformy Xamarin w swojej wersji programu Xamarin dla programu Visual Studio rozszerzenia, które pozwala na tworzenie oprogramowania dla systemów Android, iOS i Windows Phone za pomocą jednego rozwiązania, ze współdzielonym kodem. Za pomocą platformy Xamarin korzystając z jednego języka i jednego kodu bazowego, z minimalnym różnic między platformami.  Platforma Xamarin dla programu Visual Studio jest obsługiwana w programie Visual Studio 2010 i nowszych. W wersji starter programu Xamarin jest uwzględniony w programie Visual Studio 2015. Aby rozpocząć pracę, zobacz [Kompilowanie aplikacji z natywnym interfejsem użytkownika przy użyciu platformy Xamarin w programie Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).  
+ Xamarin to przenośnych strukturę, która umożliwia pisanie kodu w języku C#, który wiąże natywnie w systemach IOS i interfejsy API systemu Android. Firma Microsoft nawiązała współpracę ściśle zintegrowana za pomocą platformy Xamarin w swojej wersji programu Xamarin dla programu Visual Studio rozszerzenia, które pozwala na tworzenie oprogramowania dla systemów Android, iOS i Windows Phone za pomocą jednego rozwiązania, ze współdzielonym kodem. Za pomocą platformy Xamarin korzystając z jednego języka i jednego kodu bazowego, z minimalnym różnic między platformami.  Platforma Xamarin dla programu Visual Studio jest obsługiwana w programie Visual Studio 2010 i nowszych. Program Xamarin w wersji starter znajduje się w programie Visual Studio 2015. Aby rozpocząć pracę, zobacz [Kompilowanie aplikacji z natywnym interfejsem użytkownika przy użyciu platformy Xamarin w programie Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).  
   
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>Aplikacje mobilne dla wielu platform w języku HTML/JavaScript przy użyciu Apache Cordova  
  Visual Studio Tools for Apache Cordova jest wyniku bliskiej współpracy między firmami Microsoft i typu open source społeczności Apache Cordova. Narzędzia te umożliwiają za pomocą kodu HTML, CSS i JavaScript (lub języka Typescript) opracowywania aplikacji mobilnych dla wielu platform. Możesz docelowych systemów Android, iOS i Windows przy użyciu jednej bazy kodu i bogactwa programu Visual Studio IDE, w tym JavaScript IntelliSense, narzędzia DOM Explorer, konsoli języka JavaScript, punkty przerwania, zegarki, zmiennych lokalnych, tylko mój kod i inne.  Program Visual Studio Tools for Apache Cordova aplikacje mają dostęp do natywnych możliwości urządzenia na wszystkich platformach za pomocą wtyczki, które zapewniają wspólny interfejs API języka JavaScript. Aby rozpocząć pracę, zobacz [Rozpoczynanie pracy z usługą Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).  
@@ -280,4 +280,4 @@ Witamy w programie Visual Studio 2015, zintegrowany pakiet narzędzi zwiększaj�
 * [Tworzenie niestandardowych układów okien](./misc/create-custom-window-layouts.md)   
 * [Szybkie wykonywanie akcji dzięki żarówkom](./ide/perform-quick-actions-with-light-bulbs.md)   
 * [What's new for Application Lifecycle Management programu Visual Studio 2015](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)
-* [Co nowego w programie Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+* [Co nowego w programie Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

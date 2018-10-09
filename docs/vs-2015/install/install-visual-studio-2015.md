@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: db32eaaefd89bce9b3972853b7bb02a307b8df4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5f28f547d6d206cce7fe4face3b92d5fdf0ae4b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634305"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880131"
 ---
 # <a name="install-visual-studio-2015"></a>Instalowanie programu Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -201,9 +201,9 @@ Ta strona zawiera szczegółowe informacje pomocne przy instalowaniu **programu 
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Tworzenie instalacji Offline programu Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)|W tym artykule opisano sposób instalowania programu Visual Studio, gdy nie jest połączony z Internetem.
-|[Instalowanie programu Visual Studio wersje Side-by-Side](../install/install-visual-studio-versions-side-by-side.md)|Zawiera informacje dotyczące sposobu instalowania wielu wersji programu Visual Studio na tym samym komputerze.|  
-|[Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Zawiera listę parametrów wiersza polecenia, których można używać podczas instalowania programu Visual Studio z poziomu wiersza polecenia.|  
+|[Tworzenie instalacji w trybie offline programu Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)|W tym artykule opisano sposób instalowania programu Visual Studio, gdy nie jest połączony z Internetem.
+|[Instalowanie obok siebie różnych wersji programu Visual Studio](../install/install-visual-studio-versions-side-by-side.md)|Zawiera informacje dotyczące sposobu instalowania wielu wersji programu Visual Studio na tym samym komputerze.|  
+|[Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|Zawiera listę parametrów wiersza polecenia, których można używać podczas instalowania programu Visual Studio z poziomu wiersza polecenia.|  
 |[Odinstalowywanie programu Visual Studio](../install/uninstall-visual-studio.md)|W tym artykule opisano sposób odinstalowywania programu Visual Studio.|  
 |[Podręcznik administratora programu Visual Studio](../install/visual-studio-administrator-guide.md)|Zawiera informacje dotyczące opcji wdrażania programu Visual Studio.|  
 |[Biblioteka obrazów programu Visual Studio](../designers/the-visual-studio-image-library.md)|Zawiera informacje dotyczące sposobu instalowania grafiki, która może być używana w aplikacjach Visual Studio.|  

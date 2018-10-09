@@ -20,17 +20,17 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bee6a4f6cfdcdd53583fae858186ee8cc1da7ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59189ae35ce43877e59309382dfd9cbf278ce8f0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684914"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881127"
 ---
 # <a name="extending-javascript-intellisense"></a>Rozszerzanie JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dokumentacja programu Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/).  
+Najnowszą wersję tego tematu znajduje się w temacie [dokumentacja programu Visual Studio 2017](/visualstudio/).  
   
 Funkcja rozszerzalność JavaScript IntelliSense umożliwia dostosowywanie wyników funkcji IntelliSense w edytorze języka JavaScript dla bibliotek innych firm. Może to poprawić środowisko deweloperów, którzy korzystają z tych bibliotek.  
   
@@ -554,7 +554,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 ## <a name="see-also"></a>Zobacz też  
  [Technologia JavaScript IntelliSense](../ide/javascript-intellisense.md)   
- [Uzupełnianie składni dla identyfikatorów](../ide/statement-completion-for-identifiers.md)
+ [Uzupełnianie instrukcji dla identyfikatorów](../ide/statement-completion-for-identifiers.md)
 
 
 

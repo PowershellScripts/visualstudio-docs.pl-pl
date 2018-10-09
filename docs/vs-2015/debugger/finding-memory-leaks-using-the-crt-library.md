@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c102bba09901e55e9ec6196009965b912f8be967
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683584"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879775"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Wyszukiwanie przecieków pamięci za pomocą biblioteki CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -194,7 +194,7 @@ Oznacza to, że ujawnione przydział był przeznaczony w wierszu 20 debug_new.cp
   
 2.  Gdy aplikacja przerywa w punkcie przerwania, **Obejrzyj** okna.  
   
-3.  W **Obejrzyj** okna, typ `_crtBreakAlloc` w w **nazwa** kolumny.  
+3.  W **Obejrzyj** okna, typ `_crtBreakAlloc` w **nazwa** kolumny.  
   
      Jeśli używasz wielowątkowej wersji DLL biblioteki CRT (opcja/MD), Dodaj operator kontekstu: `{,,ucrtbased.dll}_crtBreakAlloc`  
   

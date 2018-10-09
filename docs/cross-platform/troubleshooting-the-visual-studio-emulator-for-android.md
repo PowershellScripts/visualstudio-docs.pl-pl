@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 4456fdf61fc1ae7f3d4dc958afe3ba7cb6ff9add
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 4740ec0dea2e92737980df33051d29ff5832dab8
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496093"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880451"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Rozwiązywanie problemów z narzędziem Visual Studio Emulator for Android
 Ten temat zawiera informacje pomocne podczas rozwiązywania problemów, które mogą wystąpić podczas korzystania z programu Visual Studio Emulator for Android.  
@@ -134,7 +134,7 @@ Ten temat zawiera informacje pomocne podczas rozwiązywania problemów, które m
   
      ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")  
   
-     Jeśli konfiguracja jest nieprawidłowa w przypadku korzystania z systemu Windows 10, użytkownik może próbować [ponownej instalacji urządzeń sieciowych przy użyciu polecenia -d netcfg](http://windows.microsoft.com/en-us/windows-10/fix-network-connection-issues) (sekcja 6).  
+     Jeśli konfiguracja jest nieprawidłowa w przypadku korzystania z systemu Windows 10, użytkownik może próbować [ponownej instalacji urządzeń sieciowych przy użyciu polecenia -d netcfg](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (sekcja 6).  
   
 -   Jeśli te kroki nie rozwiązują problemu, zobacz [emulatora uruchomienie nie powiedzie się (pierwszym użyciu)](#NoStart) uzyskać informacji na temat 3 oprogramowania innych firm, które mogą powodować konflikt z emulatorem.  
   

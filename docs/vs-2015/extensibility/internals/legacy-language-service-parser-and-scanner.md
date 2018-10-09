@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8aaf608c4a03816fb109e65c2b8d71d06a279799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bd5fa0fd23f2608e7cfd00896b0632cfb13fa38
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690189"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880249"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analizator i skaner starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ namespace MyNamespace
 ## <a name="parsing-for-matching-braces"></a>Analiza kodu dla dopasowywanie nawiasów klamrowych  
  Ten przykład przedstawia przepływ sterowania do dopasowania zamykającego nawiasu klamrowego, wpisany przez użytkownika. W ramach tego procesu skanera, który jest używany do kolorowania umożliwia również określanie typu tokenu i tego, czy token można wyzwolić operacji nawias klamrowy dopasowania. Jeśli wyzwalacz zostanie znaleziony, <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda jest wywoływana w celu znalezienia pasującego nawiasu klamrowego. Na koniec dwa nawiasy klamrowe są wyróżnione.  
   
- Mimo że nawiasy klamrowe są używane w nazwach wyzwalaczy i analizować przyczyny, ten proces nie jest ograniczona do rzeczywistego nawiasów klamrowych. Jest obsługiwana w jakiejkolwiek parze znaków łączących, które jest określone jako zgodnego. Przykłady obejmują (a) \< i >, a [i].  
+ Mimo że nawiasy klamrowe są używane w nazwach wyzwalaczy i analizować przyczyny, ten proces nie jest ograniczona do rzeczywistego nawiasów klamrowych. Pary znaków, który jest określony jako pasującą parę jest obsługiwane. Przykłady obejmują (a) \< i >, a [i].  
   
  Załóżmy, że usługa językowa obsługuje pasujące nawiasy klamrowe.  
   

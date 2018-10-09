@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10ff36702f4fba2ed5093e866ac57a099fbbc904
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f1507a297c1baf7f410bde1c6d32e48b43a9cdc2
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081813"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880238"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Porady: wyświetlanie listy elementów rozdzielanych przecinkami
 Podczas pracy z elementu listy w [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), czasami jest to przydatne do wyświetlania zawartości listy tych elementów w sposób, który jest łatwy do odczytania. Lub możesz mieć do zadań, która przyjmuje listę elementów oddzielonych specjalne separatora. W obu przypadkach można określić ciąg separatora listy elementów.  
@@ -45,7 +45,7 @@ Podczas pracy z elementu listy w [!INCLUDE[vstecmsbuildengine](../msbuild/includ
      `@(TXTFile, ', ')`  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie [Exec](../msbuild/exec-task.md) zadanie jest uruchamiane narzędzie findstr, aby znaleźć ciągów tekstowych określonej w pliku *Phrases.txt*. W poleceniu findstr literałów ciągów znaków są wskazywane przez **/c:** przełączyć, więc separator elementów `/c:` jest wstawiany między elementami w `@(Phrase)` listy elementów.  
+ W tym przykładzie [Exec](../msbuild/exec-task.md) zadanie jest uruchamiane narzędzie findstr, aby znaleźć ciągów tekstowych określonej w pliku *Phrases.txt*. W poleceniu findstr literałów ciągów znaków są wskazywane przez **-c:** przełączyć, więc separator elementów `-c:` jest wstawiany między elementami w `@(Phrase)` listy elementów.  
   
  W tym przykładzie jest równoważne wiersza polecenia:  
   

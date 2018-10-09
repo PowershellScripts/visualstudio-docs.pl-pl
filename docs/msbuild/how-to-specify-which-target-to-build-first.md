@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e812be4927ee0232d1096fa272d8ff8e7358366
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a4077f53008691dd1fcf6ddd07f890616bc09018
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078803"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879047"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Porady: Określ, która docelowa do tworzenia najpierw
-Plik projektu może zawierać jeden lub więcej `Target` elementy, które określają jak projekt jest kompilowany. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Aparatu kompilacji pierwszego projektu go odnajduje i wszelkie zależności, chyba, że plik projektu zawiera `DefaultTargets` atrybutu `InitialTargets` atrybutu lub elementu docelowego jest określony w wierszu polecenia za pomocą **/ docelowy** przełącznika.  
+Plik projektu może zawierać jeden lub więcej `Target` elementy, które określają jak projekt jest kompilowany. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Aparatu kompilacji pierwszego projektu go odnajduje i wszelkie zależności, chyba, że plik projektu zawiera `DefaultTargets` atrybutu `InitialTargets` atrybutu lub elementu docelowego jest określony w wierszu polecenia za pomocą **— docelowy** przełącznika.  
   
 ## <a name="use-the-initialtargets-attribute"></a>Użyj atrybutu InitialTargets  
  `InitialTargets` Atrybutu `Project` element określa obiekt docelowy, który zostanie uruchomiony po pierwsze, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w `DefaultTargets` atrybutu.  
@@ -58,20 +58,21 @@ Plik projektu może zawierać jeden lub więcej `Target` elementy, które okreś
   
      `<Project DefaultTargets="Clean;Compile">`  
   
-## <a name="use-the-target-switch"></a>Użyj opcji/TARGET przełącznika  
- Jeśli domyślny element docelowy nie jest zdefiniowana w pliku projektu lub jeśli chcesz użyć tego domyślnego obiektu docelowego, można użyć przełącznika wiersza polecenia **/target** Aby określić inny element docelowy. Cel lub cele określony za pomocą **/target** przełącznika są uruchamiane zamiast elementów docelowych określone przez `DefaultTargets` atrybutu. Obiektów docelowych określonych w `InitialTargets` są zawsze uruchamiane pierwszego atrybutu.  
-  
+## <a name="use-the--target-switch"></a>Użyj przełącznika - target  
+ Jeśli domyślny element docelowy nie jest zdefiniowana w pliku projektu lub jeśli chcesz użyć tego domyślnego obiektu docelowego, można użyć przełącznika wiersza polecenia **-target** Aby określić inny element docelowy. Cel lub cele określony za pomocą **-target** przełącznika są uruchamiane zamiast elementów docelowych określone przez `DefaultTargets` atrybutu. Obiektów docelowych określonych w `InitialTargets` są zawsze uruchamiane pierwszego atrybutu.  
+ 
+ 
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Aby użyć pierwszy element docelowy inny niż domyślny element docelowy  
   
--   Określ element docelowy jako pierwszy przy użyciu docelowej **/target** przełącznik wiersza polecenia. Na przykład:  
+-   Określ element docelowy jako pierwszy przy użyciu docelowej **-target** przełącznik wiersza polecenia. Na przykład:  
   
-     `msbuild file.proj /target:Clean`  
+     `msbuild file.proj -target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Aby korzystać z kilku jest przeznaczony dla innych niż domyślne elementy docelowe najpierw  
   
--   Lista obiektów docelowych, rozdzielone średnikami lub przecinkami, za pomocą **/target** przełącznik wiersza polecenia. Na przykład:  
+-   Lista obiektów docelowych, rozdzielone średnikami lub przecinkami, za pomocą **-target** przełącznik wiersza polecenia. Na przykład:  
   
-     `msbuild <file name>.proj /t:Clean;Compile`  
+     `msbuild <file name>.proj -t:Clean;Compile`  
   
 ## <a name="see-also"></a>Zobacz także
   [MSBuild](../msbuild/msbuild.md)  

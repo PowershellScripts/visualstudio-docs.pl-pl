@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 3871ee1f31b2bc63f575e308b3b9008b3335a224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d2f36b3b5213003e65f51f7d93a2d7d90a3ff12
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675832"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881179"
 ---
 # <a name="shared-colors"></a>Udostępnione kolory
 Tutaj wstaw wprowadzenie.  
@@ -1085,7 +1085,7 @@ Tutaj wstaw wprowadzenie.
 |![Pasek informacyjny](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303 139_Infobar")<br /><br /> **Pasek informacyjny**|Obramowanie|`Environment.ToolWindowBorder`|  
   
 #### <a name="scroll-bar"></a>Pasek przewijania  
- Paski przewijania mają różne przez środowisko Visual Studio i nie będą musiały mieć motywów. Jednak można zdecydować, czy chcesz korzystać kolorów używanych na paski przewijania, dzięki czemu interfejs użytkownika zawsze pojawia się zgodnie z tym ta część środowiska Visual Studio.  
+ Paski przewijania mają różne przez środowisko Visual Studio i nie będą musiały mieć motywów. Jednak można zdecydować, czy chcesz korzystać kolorów używanych na paski przewijania, dzięki czemu interfejs użytkownika zawsze wyświetlana jest zgodny z tej części środowiska Visual Studio.  
   
  ![Pasek przewijania poprawek](../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303 140_ScrollbarRedline")  
   

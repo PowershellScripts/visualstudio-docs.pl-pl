@@ -1,26 +1,34 @@
 ---
 title: IntelliSense dla C++
-ms.date: 09/06/2018
+ms.date: 10/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27b7912e624881e7dcd40ff2fdb9476d61d29e1c
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: ab520f7cdf512ebbfd07770d63d2ed50caee7a55
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124908"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879853"
 ---
 # <a name="visual-c-intellisense-features"></a>Funkcje programu Visual C++ IntelliSense
 
 Funkcja IntelliSense jest nazwą nadaną zestaw funkcji, które kodowania bardziej wygodne. IntelliSense dla języka C++ jest dostępna dla autonomicznych plików oraz jak w przypadku plików, które są częścią projektu w języku C++. W projektach dla wielu platform, niektóre funkcje IntelliSense są dostępne w *.cpp* i *.c* pliki w projekcie współdzielonym kodem, nawet wtedy, gdy jesteś w kontekście systemu Android lub iOS.
 
-Elementy menu i skróty klawiaturowe, które pokazano na poniższej ilustracji umożliwia dostęp do funkcji IntelliSense:
+Ten artykuł zawiera omówienie funkcji C++ IntelliSense funkcji. Aby uzyskać informacje na temat konfigurowania projektu dla technologii IntelliSense i rozwiązywania problemów, zobacz [skonfigurować projekt języka C++ dla technologii IntelliSense](visual-cpp-intellisense-configuration.md).
+
+## <a name="intellisense-features-in-c"></a>Funkcje IntelliSense w języku C++
+
+Funkcja IntelliSense jest nazwą nadaną zestaw funkcji, które kodowania bardziej wygodne. Ponieważ różne osoby mają różne pomysłów dotyczących co to jest wygodne, praktycznie wszystkie funkcje IntelliSense może być włączone lub wyłączone w **opcje** dialogowego **edytora tekstów**  >  **C/C++** > **zaawansowane**. **Opcje** okno dialogowe jest dostępne z **narzędzia** menu na pasku menu.
+
+![Okno dialogowe opcji narzędzi](../ide/media/sintellisensecpptoolsoptions.PNG)
+
+Elementy menu i skróty klawiaturowe, które pokazano na poniższej ilustracji umożliwia dostęp do funkcji IntelliSense.
 
 ![Menu funkcji IntelliSense](../ide/media/vs2015_cpp_intellisense_menu.png)
 
@@ -32,7 +40,7 @@ Aby uzyskać listę ikon i ich znaczenie, zobacz [ikony w widoku klas i przeglą
 
 ![Program Visual C&#43; &#43; okna Dokończ wyraz](../ide/media/vs2015_cpp_complete_word.png)
 
-Po raz pierwszy zostanie wywołana listę elementów członkowskich, pokazywane są tylko elementy członkowskie, które są dostępne dla bieżącego kontekstu. Jeśli użytkownik naciśnie klawisz **Ctrl**+**"j"** po tym pokazuje wszystkie elementy członkowskie, niezależnie od tego, w ułatwienia dostępu. Jeśli wywołujesz ją raz trzeci, wyświetlany jest jeszcze większą listę elementów programu. Można wyłączyć listy członków w **opcje** dialogowego **edytora tekstów** > **C/C++** > **ogólne**  >  **Automatyczna lista członków**.
+Przy pierwszym wywołaniu listy członków pokazywane są tylko elementy członkowskie, które są dostępne dla bieżącego kontekstu. Jeśli użytkownik naciśnie klawisz **Ctrl**+**"j"** po tym pokazuje wszystkie elementy członkowskie, niezależnie od tego, w ułatwienia dostępu. Jeśli wywołujesz ją raz trzeci, wyświetlany jest jeszcze większą listę elementów programu. Można wyłączyć listy członków w **opcje** dialogowego **edytora tekstów** > **C/C++** > **ogólne**  >  **Automatyczna lista członków**.
 
 ![Program Visual C&#43; &#43; listę elementów członkowskich](../ide/media/vs2015_cpp_list_members.png)
 
@@ -101,3 +109,4 @@ Ponieważ różne osoby mają różne pomysłów dotyczących co to jest wygodne
 ## <a name="see-also"></a>Zobacz także
 
 - [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)
+- [Konfigurowanie projektu w języku C++ dla funkcji IntelliSense](visual-cpp-intellisense-configuration.md)

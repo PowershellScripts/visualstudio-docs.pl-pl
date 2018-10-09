@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: dbe546f43b0a66abc78b94480894b63dc4f5eafa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4b6fb4e5ba69695389de2ad7db578488bf55ab75
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283115"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879803"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Rozpoczynanie pracy z usługą Visual Studio Tools for Unity
 
@@ -47,7 +47,7 @@ Wersja programu Visual Studio, dołączone do instalacji programu Unity może by
 
 Jeśli już masz zainstalowanego programu Visual Studio 2017 lub chcesz ręcznie zainstalować, uruchom Instalatora programu Visual Studio.
 
-1. [Pobierz Instalatora programu Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio), lub otworzyć go, jeśli już zainstalowane.
+1. [Pobierz Instalatora programu Visual Studio](/visualstudio/install/install-visual-studio), lub otworzyć go, jeśli już zainstalowane.
 
 1. Kliknij przycisk **Modyfikuj** (jeśli jest już zainstalowana) lub **zainstalować** (w przypadku nowych instalacji) dla odpowiednią wersję programu Visual Studio.
 

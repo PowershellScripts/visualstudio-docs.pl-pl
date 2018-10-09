@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d70460671bcea19f0a4e56de6ebdd3c7affdb670
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 1254a7c768521f4ec8b84cb0e345dbee8fb25d69
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179193"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879866"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Przewodnik: Tworzenie pliku projektu MSBuild od zera
 Języki programowania, które obsługują program .NET Framework używają plików projektu MSBuild do opisywania i kontrolowania procesu tworzenia aplikacji. Gdy używasz programu Visual Studio do tworzenia pliku projektu programu MSBuild, właściwy XML jest automatycznie dodawany do pliku. Jednak może okazać się pomocne w zrozumieniu, w jaki sposób XML jest zorganizowany i jak mogą zmienić go, aby kontrolować kompilację.  
@@ -172,7 +172,7 @@ Zadania w lokalizacji docelowej kompilacji są wykonywane sekwencyjnie. W tym pr
   
 #### <a name="to-build-the-application"></a>Aby skompilować aplikację  
   
-1.  W wierszu polecenia wpisz **msbuild helloworld.csproj /t:Build**.  
+1.  W wierszu polecenia wpisz **msbuild helloworld.csproj - t: tworzenie**.  
   
      To skompiluje kompilację docelową projektu HelloWorld wywołując kompilator Visual C# do tworzenia aplikacji Helloworld.  
   
@@ -183,7 +183,7 @@ Zadania w lokalizacji docelowej kompilacji są wykonywane sekwencyjnie. W tym pr
 > [!NOTE]
 >  Więcej szczegółów na temat kompilacji można zobaczyć, zwiększając poziom szczegółowości. Aby ustawić poziom szczegółowości "szczegółowe", wpisz następujące polecenie w wierszu polecenia:  
 >   
->  **Program MSBuild helloworld.csproj /t:Build /verbosity: szczegółowe**  
+>  **Program MSBuild helloworld.csproj - t: kompilacja — poziom szczegółowości: szczegółowe**  
   
 ## <a name="add-build-properties"></a>Dodawanie właściwości kompilacji  
  Można dodać właściwości kompilacji do pliku projektu, aby dalej kontrolować kompilację. Teraz dodaj następujące właściwości:  
@@ -259,7 +259,7 @@ Plik projektu minimalnego powinien teraz przypominać następujący kod:
   
 #### <a name="to-test-the-build-properties"></a>Aby przetestować właściwości kompilacji  
   
-1.  W wierszu polecenia wpisz **msbuild helloworld.csproj /t:Build**.  
+1.  W wierszu polecenia wpisz **msbuild helloworld.csproj - t: tworzenie**.  
   
      Spowoduje to utworzenie *\Bin\\*  folder, a następnie wywołuje kompilatora Visual C#, aby utworzyć *MSBuildSample* aplikacji i umieszcza go w *\Bin\\* folderu.  
   
@@ -334,9 +334,9 @@ Plik projektu minimalnego powinien teraz przypominać następujący kod:
   
 #### <a name="to-test-the-build-targets"></a>Aby przetestować obiekty docelowe kompilacji  
   
-1.  W wierszu polecenia wpisz **msbuild helloworld.csproj /p:AssemblyName = Greetings**.  
+1.  W wierszu polecenia wpisz **msbuild helloworld.csproj - p: AssemblyName = Greetings**.  
   
-     Ponieważ nie użyto **/t** do jawnego ustawienia celu, MSBuild uruchamia domyślny element docelowy kompilacji. **/P** przełączanie przesłania `AssemblyName` właściwość i nadaje jej nową wartość `Greetings`. Powoduje to, że nową aplikację, *Greetings.exe*, zostały utworzone w *\Bin\\*  folderu.  
+     Ponieważ nie użyto **-t** do jawnego ustawienia celu, MSBuild uruchamia domyślny element docelowy kompilacji. **-P** przełączanie przesłania `AssemblyName` właściwość i nadaje jej nową wartość `Greetings`. Powoduje to, że nową aplikację, *Greetings.exe*, zostały utworzone w *\Bin\\*  folderu.  
   
 2.  Aby sprawdzić, czy *\Bin\\*  folder zawiera zarówno *MSBuildSample* aplikacji, a nowe *Greetings* aplikacji, należy wpisać **katalog Bin** .  
   
@@ -344,11 +344,11 @@ Plik projektu minimalnego powinien teraz przypominać następujący kod:
   
      **Witaj, świecie!** powinien zostać wyświetlony komunikat.  
   
-4.  Usuń aplikację MSBuildSample wpisując **helloworld.csproj msbuild/t /: wyczyść**.  
+4.  Usuń aplikację MSBuildSample wpisując **msbuild helloworld.csproj -t: wyczyść**.  
   
      To uruchamia zadanie czysty, aby usunąć aplikację, która ma domyślne `AssemblyName` wartość właściwości `MSBuildSample`.  
   
-5.  Usuń aplikację Greetings wpisując **helloworld.csproj msbuild/t /: czyszczenie /p:AssemblyName = Greetings**.  
+5.  Usuń aplikację Greetings wpisując **msbuild helloworld.csproj -t: czyszczenie - p: AssemblyName = Greetings**.  
   
      To uruchamia zadanie czysty, aby usunąć aplikację, która ma danego **AssemblyName** wartość właściwości `Greetings`.  
   
@@ -382,11 +382,11 @@ Plik projektu minimalnego powinien teraz przypominać następujący kod:
     </Target>  
     ```  
   
-2.  Przetestuj kompilację docelową wpisując **msbuild /v:d** w wierszu polecenia.  
+2.  Przetestuj kompilację docelową wpisując **msbuild - v: d** w wierszu polecenia.  
   
      Należy pamiętać, że *helloworld.csproj* jest domyślnym plikiem projektu, a tej kompilacji domyślnego obiektu docelowego.  
   
-     **/V:d** przełącznik określa pełny opis procesu kompilacji.  
+     **- V: d** przełącznik określa pełny opis procesu kompilacji.  
   
      Powinny być wyświetlane następujące wiersze:  
   

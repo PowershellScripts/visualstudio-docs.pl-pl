@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 87f54ec6e284a913f8bdb87826f585b7c4f38a4c
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 439dc464f0eb4f9666f06b9c33719de096944b31
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233142"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880080"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Zapis procesorów uwzględniających rejestratorów
 Zdolność [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] może korzystać z wielu procesorów skrócić czas tworzenia projektu, ale również dodaje złożoności do tworzenia rejestrowania zdarzeń. W środowisku jednoprocesorowym zdarzenia, komunikaty, ostrzeżenia i błędy przybyć rejestratora w sposób przewidywalny i sekwencyjne. Jednak w środowisku wielu procesorów zdarzeń z różnych źródeł mogą pojawić się w tym samym czasie lub poza sekwencją. Aby zapewnić w tym celu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] udostępnia procesorów uwzględniających rejestratora i nowy model rejestrowania i umożliwia utworzenie niestandardowego "przekazywanie rejestratorów."  
@@ -73,21 +73,21 @@ Można zmodyfikować ConfigurableForwardingLogger ze swoimi potrzebami. W tym ce
 Alternatywnie można utworzyć rejestratora przekazywanie niestandardowych. Tworząc rejestratora przekazywanie niestandardowych, można dostosować zachowanie programu rejestrującego. Jednak tworzenie rejestratora przekazywanie niestandardowych jest bardziej skomplikowane niż po prostu Dostosowywanie ConfigurableForwardingLogger. Aby uzyskać więcej informacji, zobacz [tworzenie przekazywania rejestratorów](../msbuild/creating-forwarding-loggers.md).  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Proste rozproszone rejestrowania przy użyciu ConfigurableForwardingLogger  
- Aby dołączyć ConfigurableForwardingLogger lub rejestratora przekazywanie niestandardowych, należy użyć `/distributedlogger` przełącznika (`/dl` w skrócie) w *MSBuild.exe* kompilacji wiersza polecenia. Format określająca nazwy klasy i typy rejestratora jest taka sama jak dla `/logger` przełącznika, z tą różnicą, że rozproszonych rejestratora zawsze ma dwie klasy rejestrowania zamiast jednym Rejestrator przekazywania i rejestratora centralnego. Oto przykładowy sposób dołączyć Rejestrator przekazywanie niestandardowej o nazwie XMLForwardingLogger.  
+ Aby dołączyć ConfigurableForwardingLogger lub rejestratora przekazywanie niestandardowych, należy użyć `-distributedlogger` przełącznika (`-dl` w skrócie) w *MSBuild.exe* kompilacji wiersza polecenia. Format określająca nazwy klasy i typy rejestratora jest taka sama jak dla `-logger` przełącznika, z tą różnicą, że rozproszonych rejestratora zawsze ma dwie klasy rejestrowania zamiast jednym Rejestrator przekazywania i rejestratora centralnego. Oto przykładowy sposób dołączyć Rejestrator przekazywanie niestandardowej o nazwie XMLForwardingLogger.  
   
 ```cmd  
-msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral  
+msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral  
 ```  
   
 > [!NOTE]
->  Znak gwiazdki (*) muszą być rozdzielone nazwy dwóch rejestratora w `/dl` przełącznika.  
+>  Znak gwiazdki (*) muszą być rozdzielone nazwy dwóch rejestratora w `-dl` przełącznika.  
   
  Za pomocą ConfigurableForwardingLogger przypomina przy użyciu innych rejestratora (zgodnie z opisem w [dzienniki kompilacji uzyskiwanie](../msbuild/obtaining-build-logs-with-msbuild.md)), z tą różnicą, że możesz dołączyć rejestratora ConfigurableForwardingLogger zamiast typowej [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rejestratora i Określ jako parametry zdarzeń, które chcesz ConfigurableForwardingLogger w celu przekazania ich węźle centralnym.  
   
  Na przykład, jeśli chcesz otrzymywać powiadomienia, tylko wtedy, gdy kompilacja rozpoczyna i kończy i po wystąpieniu błędu, należy wprowadzić `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT`, i `ERROREVENT` jako parametry. Wiele parametrów mogą być przekazywane, oddzielając je średnikami. Oto przykład sposobu użycia ConfigurableForwardingLogger do przekazywania tylko `BUILDSTARTEDEVENT`, `BUILDFINISHEDEVENT`, i `ERROREVENT` zdarzenia.  
   
 ```cmd  
-msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*ConfigureableForwardingLogger,C:\My.dll;BUILDSTARTEDEVENT; BUILDFINISHEDEVENT;ERROREVENT  
+msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*ConfigureableForwardingLogger,C:\My.dll;BUILDSTARTEDEVENT; BUILDFINISHEDEVENT;ERROREVENT  
 ```  
   
  Oto lista dostępnych parametrów ConfigurableForwardingLogger.  

@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6d9510bf667b95dde4619f469b51041c07c0b4e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 696c6f2a0e738d965b5992e3df52a77831ab27a0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682358"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880893"
 ---
 # <a name="troubleshooting-service-references"></a>Rozwiązywanie problemów z odwołaniami usługi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,9 +70,9 @@ Ten temat zawiera listę typowych problemów, które mogą wystąpić podczas pr
 ## <a name="error-debugging-service-code"></a>Błąd podczas debugowania kodu usługi
  W przypadku wkroczyć do kodu dla usługi WCF z poziomu kodu klienta, może pojawić się błąd związany Brak symboli. Taka sytuacja może wystąpić, gdy usługi, które było częścią rozwiązania został przeniesiony lub usunięty z rozwiązania.
 
- Po dodaniu odwołania do usługi WCF, która jest częścią bieżącego rozwiązania, między projektami usługi i projekt klienta usługi zostanie dodana zależność jawną kompilację. Gwarantuje to, czy klient zawsze uzyskuje dostęp do plików binarnych aktualności usługi, która jest szczególnie ważne w przypadku debugowania scenariuszy, takich jak przechodzenie z poziomu kodu klienta do kodu usługi.
+ Po dodaniu odwołania do usługi WCF, która jest częścią bieżącego rozwiązania, między projektami usługi i projekt klienta usługi zostanie dodana zależność jawną kompilację. Gwarantuje to, czy klient zawsze ma dostęp do plików binarnych usługi aktualne, który jest szczególnie ważne w przypadku debugowania scenariuszy, takich jak przechodzenie z poziomu kodu klienta do kodu usługi.
 
- Jeśli projekt usługi zostanie usunięty z rozwiązania, zostaje unieważniony tę zależność jawną kompilację. Program Visual Studio mogą już zagwarantować, że odbudowaniu projektu usługi gdy jest to konieczne.
+ Jeśli projekt usługi zostanie usunięty z rozwiązania, zostaje unieważniony tę zależność jawną kompilację. Programu Visual Studio może nie jest już zagwarantować, że zostanie ponownie skompilowany projekt usługi w razie.
 
  Aby naprawić ten błąd, należy ręcznie ponownie skompilować projekt usługi:
 
@@ -105,4 +105,4 @@ Ten temat zawiera listę typowych problemów, które mogą wystąpić podczas pr
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

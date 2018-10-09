@@ -1,20 +1,20 @@
 ---
 title: Pisanie testów jednostkowych dla języka C/C++ w programie Visual Studio
-ms.date: 11/04/2017
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7838d4435c71fa332711c0ef3794c8bed556827a
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: e79b65628193c7b90a03b2e1141dfc45b6b0829f
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341375"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879229"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Pisanie testów jednostkowych dla języka C/C++ w programie Visual Studio
 
@@ -31,6 +31,10 @@ Program Visual Studio zawiera następujące struktury testów języka C++ z żad
 - Narzędzia CTest
 
 Oprócz zainstalowanych platform można napisać własne rozszerzenia test adapter for niezależnie od framework, które chcesz użyć w programie Visual Studio. Adapter testowy można zintegrować testów jednostkowych za pomocą **Eksploratora testów** okna. Kilka kart sieciowych innych firm są dostępne na [Visual Studio Marketplace](https://marketplace.visualstudio.com). Aby uzyskać więcej informacji, zobacz [instalowanie platform testów jednostkowych innych firm](install-third-party-unit-test-frameworks.md).
+
+**Visual Studio 2017 w wersji 15.7 (Professional i Enterprise)**
+
+Test jednostkowy C++ projektów pomocy technicznej [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md).
 
 **Visual Studio 2017, wersja 15.5**
 
@@ -80,13 +84,14 @@ TEST_CLASS i TEST_METHOD są częścią [natywne środowisko testów Microsoft](
 TEST_METHOD zwraca wartość void. Do uzyskania wyniku testu, użyj metod statycznych w `Assert` klasy do przetestowania rzeczywiste wyniki niż oczekiwana. W poniższym przykładzie przyjęto założenie, `MyClass` zawiera konstruktora przyjmującego `std::string`. Można przetestować, Konstruktor inicjuje klasy zgodnie z oczekiwaniami w następujący sposób:
 
 ```cpp
-        TEST_METHOD(TestClassInit)
-        {
-            std::string name = "Bill";
-            MyClass mc(name);
-            Assert::AreEqual(name, mc.GetName());
-        }
+TEST_METHOD(TestClassInit)
+{
+    std::string name = "Bill";
+    MyClass mc(name);
+    Assert::AreEqual(name, mc.GetName());
+}
 ```
+
 W poprzednim przykładzie, wynik `Assert::AreEqual` wywołanie określa, czy test przekazuje lub nie powiedzie się. Klasa Asercja zawiera wiele innych metod do porównywania, oczekiwany, a rzeczywiste wyniki.
 
 Możesz dodać *cech* do testowania metod do określenia testów właścicieli, priorytetu i innych informacji. Następnie można te wartości sortowanie i grupowanie testów w **Eksplorator testów**. Aby uzyskać więcej informacji, zobacz [Uruchamianie testów jednostkowych w Eksploratorze testów](run-unit-tests-with-test-explorer.md).
@@ -111,6 +116,22 @@ Dla testów zakończonych niepowodzeniem komunikat oferuje szczegółowe informa
 Aby uzyskać więcej informacji o korzystaniu z **Eksplorator testów**, zobacz [Uruchamianie testów jednostkowych w Eksploratorze testów](run-unit-tests-with-test-explorer.md).
 
 Aby uzyskać najlepsze rozwiązania związane z testów jednostkowych, zobacz [podstawy testów jednostkowych](unit-test-basics.md)
+
+## <a name="use-codelens"></a>Używanie funkcji CodeLens
+
+**Visual Studio 2017 w wersji 15.7 Professional i Enterprise tylko**: [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) pozwala szybko sprawdzić stan jednostki testowania bez opuszczania edytora kodu. Można zainicjować wskaźników CodeLens dla projektu testu jednostkowego języka C++ w jeden z następujących sposobów:
+
+- Edytowanie i tworzenie projektu testu lub rozwiązania.
+- Ponownie skompiluj swój projekt lub rozwiązanie.
+- Uruchom testy z **Eksploratora testów** okna.
+
+Po **CodeLens** jest inicjowany, możesz zobaczyć testowanie ikony stanu powyżej każdy test jednostkowy.
+
+![Ikony CodeLens języka C++](media/cpp-test-codelens-icons.png)
+
+ Kliknij ikonę, aby uzyskać więcej informacji, lub do uruchamiania lub debugowania test jednostkowy:
+
+![C++ CodeLens, uruchamianie i debugowanie](media/cpp-test-codelens-run-debug.png)
 
 ## <a name="see-also"></a>Zobacz także
 

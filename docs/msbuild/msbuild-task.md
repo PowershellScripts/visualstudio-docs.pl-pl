@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 366e73473b442ee52ceac10e1398a7bb3e2b52f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 72a68b1e63df42a10851c292f73f9fe54aa7e3fb
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178217"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881062"
 ---
 # <a name="msbuild-task"></a>zadanie MSBuild
 Kompilacje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektów z innego [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.  
@@ -37,7 +37,7 @@ Kompilacje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
 |---------------|-----------------|  
 |`BuildInParallel`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, projekty, określone w `Projects` parametru są kompilowane w sposób równoległy, jeśli jest to możliwe. Wartość domyślna to `false`.|  
 |`Projects`|Wymagany parametr interfejsu <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Określa pliki projektu do kompilacji.|  
-|`Properties`|Opcjonalnie `String` parametru.<br /><br /> Rozdzielana średnikami lista par nazwa/wartość właściwości do zastosowania jako globalne właściwości do projektu podrzędnego. W przypadku określenia tego parametru jest funkcjonalnie równoważny z ustawieniem dla właściwości, które mają **/property** przełącznika, gdy kompilujesz za pomocą [ *MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Na przykład:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Podczas przekazywania właściwości do projektu przy użyciu `Properties` parametru [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tworzy nowe wystąpienie projektu, nawet wtedy, gdy plik projektu został już załadowany. Podczas tworzenia nowego wystąpienia projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] traktuje je jako inny projekt, który ma inne właściwości globalnych i która może być kompilowana równolegle z innymi wystąpieniami projektu. Na przykład konfiguracja wydania można utworzyć w tym samym czasie co Konfiguracja debugowania.|  
+|`Properties`|Opcjonalnie `String` parametru.<br /><br /> Rozdzielana średnikami lista par nazwa/wartość właściwości do zastosowania jako globalne właściwości do projektu podrzędnego. W przypadku określenia tego parametru jest funkcjonalnie równoważny z ustawieniem dla właściwości, które mają **— właściwość** przełącznika, gdy kompilujesz za pomocą [ *MSBuild.exe*](../msbuild/msbuild-command-line-reference.md). Na przykład:<br /><br /> `Properties="Configuration=Debug;Optimize=$(Optimize)"`<br /><br /> Podczas przekazywania właściwości do projektu przy użyciu `Properties` parametru [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tworzy nowe wystąpienie projektu, nawet wtedy, gdy plik projektu został już załadowany. Podczas tworzenia nowego wystąpienia projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] traktuje je jako inny projekt, który ma inne właściwości globalnych i która może być kompilowana równolegle z innymi wystąpieniami projektu. Na przykład konfiguracja wydania można utworzyć w tym samym czasie co Konfiguracja debugowania.|  
 |`RebaseOutputs`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, ścieżki względne obiektu docelowego, dane wyjściowe elementy z skompilowanych projektach mają ich ścieżek dostosowane względem projektu wywołującego. Wartość domyślna to `false`.|  
 |`RemoveProperties`|Opcjonalnie `String` parametru.<br /><br /> Określa zestaw właściwości globalne do usunięcia.|  
 |`RunEachTargetSeparately`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadanie wywołuje każdego obiektu docelowego, na liście, który został przekazany do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pojedynczo, a nie w tym samym czasie. Ustawienie tego parametru na `true` gwarantuje, że kolejne elementy docelowe są wywoływane, nawet wtedy, gdy wcześniej wywoływana elementy docelowe nie powiodło się. W przeciwnym razie błąd kompilacji przestaną wywołania wszystkie kolejne elementy docelowe. Wartość domyślna to `false`.|  

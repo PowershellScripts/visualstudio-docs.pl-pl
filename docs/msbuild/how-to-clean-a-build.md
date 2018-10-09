@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 125fb107bcb40510ad8196c26c9538ef505d2093
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: f9d039d6f6f5593538063e751348148786667000
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079125"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879060"
 ---
 # <a name="how-to-clean-a-build"></a>Porady: czyszczenie kompilacji
 Podczas oczyszczania kompilacji są usuwane wszystkie pliki pośrednich i wynikowych, pozostawiając tylko pliki projektu, jak i składnika. W plikach projektu, jak i składnika nowych wystąpień pośrednich i pliki wyjściowe może następnie być skompilowana. Biblioteka typowych zadań, które jest dostarczane z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obejmuje [Exec](../msbuild/exec-task.md) zadanie, które służy do uruchamiania poleceń systemowych. Aby uzyskać więcej informacji na temat biblioteki zadań, zobacz [zadania, odwołanie](../msbuild/msbuild-task-reference.md).  
@@ -53,13 +53,13 @@ Podczas oczyszczania kompilacji są usuwane wszystkie pliki pośrednich i wyniko
 ## <a name="example"></a>Przykład  
  Poniższy kod przykładowy projekt zawiera nowy obiekt docelowy `Clean`, który używa `RemoveDir` zadanie, aby usunąć katalog i wszystkie pliki i katalogi, które zawiera. Również w tym przykładzie `Compile` docelowej tworzy oddzielny katalog dla elementów danych wyjściowych, które są usuwane, gdy kompilacja jest czyszczona.  
   
- `Compile` jest zdefiniowany jako domyślnego obiektu docelowego i w związku z tym jest używany automatycznie, chyba że określisz inną docelową lub miejsc docelowych. Możesz użyć przełącznika wiersza polecenia **/target** Aby określić inny element docelowy. Na przykład:  
+ `Compile` jest zdefiniowany jako domyślnego obiektu docelowego i w związku z tym jest używany automatycznie, chyba że określisz inną docelową lub miejsc docelowych. Możesz użyć przełącznika wiersza polecenia **-target** Aby określić inny element docelowy. Na przykład:  
   
- `msbuild <file name>.proj /target:Clean`  
+ `msbuild <file name>.proj -target:Clean`  
   
- **/Target** przełącznik może zostać skrócony do **/t** i można określić więcej niż jeden element docelowy. Na przykład użycie wartości docelowej `Clean` następnie element docelowy `Compile`, wpisz:  
+ **-Target** przełącznik może zostać skrócony do **-t** i można określić więcej niż jeden element docelowy. Na przykład użycie wartości docelowej `Clean` następnie element docelowy `Compile`, wpisz:  
   
- `msbuild <file name>.proj /t:Clean;Compile`  
+ `msbuild <file name>.proj -t:Clean;Compile`  
   
 ```xml  
 <Project DefaultTargets = "Compile"  

@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: 21ff2211632cba63dafe2a7abf1964e7a89e87c3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 6efc22f916973f292daa97bdd6b5129ac9311f04
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624360"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881075"
 ---
 # <a name="javascript-support"></a>Obsługa języka JavaScript
 
@@ -34,7 +34,7 @@ W oknie dialogowym Nowy plik, wybierz **Web > plik JS pusty** lub **sieci Web > 
 
 ## <a name="intellisense"></a>funkcja IntelliSense
 
-Program Visual Studio for Mac używa [usługę językową Javascript](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense) dostarczyć Intellisense, co pozwala mieć inteligentnego uzupełniania kodu, informacje o parametrach i listy elementów członkowskich, podczas pisania kodu.
+Program Visual Studio for Mac używa [usługę językową Javascript](/visualstudio/ide/javascript-intellisense) dostarczyć Intellisense, co pozwala mieć inteligentnego uzupełniania kodu, informacje o parametrach i listy elementów członkowskich, podczas pisania kodu.
 
 Funkcja intellisense języka JavaScript w programie Visual Studio dla komputerów Mac może bazować na wnioskowanie o typie, JSDoc lub Typescript deklaracji.
 

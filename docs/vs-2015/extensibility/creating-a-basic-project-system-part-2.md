@@ -17,12 +17,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 324eb3c0af582e32318980dac675ac483f86f31f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea16f64d07450eabebb0ff49f8c8ea26a0214ffa
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685577"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880204"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Tworzenie systemu podstawowego projektu, część 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Pierwszy instrukcje przedstawione w tej serii [Tworzenie podstawowego systemu pr
   
 1.  W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], otwórz rozwiązanie SimpleProject, który został utworzony, postępując zgodnie z [Tworzenie podstawowego systemu projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md).  
   
-2.  W pliku SimpleProjectPackage.cs Znajdź atrybut ProvideProjectFactory. Zamień na drugi parametr (nazwa projektu) z wartością null, a czwarty parametr (ścieżka do folderu szablonu projektu) ". \\\NullPath ", wykonując następujące czynności.  
+2.  W pliku SimpleProjectPackage.cs odnaleźć atrybutu ProvideProjectFactory. Zamień na drugi parametr (nazwa projektu) z wartością null, a czwarty parametr (ścieżka do folderu szablonu projektu) ". \\\NullPath ", wykonując następujące czynności.  
   
     ```  
     [ProvideProjectFactory(typeof(SimpleProjectFactory), null,  

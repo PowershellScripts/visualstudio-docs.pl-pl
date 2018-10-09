@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d524626187e95a02654f00ca7cf7921fd819e7c6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b68330e4cfb8e1d403caa1c48d26ad29aacc19f7
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081660"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880555"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Porady: kompilacja tych samych plików źródłowych przy użyciu różnych opcji
 Podczas kompilowania projektów kompilacji są często te same składniki z opcjami różne kompilacje. Na przykład można utworzyć kompilacji debugowania przy użyciu informacji o symbolach lub kompilację wydania z nie informacji o symbolach, ale z włączonymi optymalizacjami. Możesz też skompilować projektu do uruchamiania na danej platformie, takich jak x86 lub [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. W takich przypadkach większości opcji kompilacji pozostają takie same; tylko kilka opcji zostały zmienione, aby kontrolować konfigurację kompilacji. Za pomocą [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], użyj właściwości i warunki do tworzenia innych konfiguracji kompilacji.  
@@ -50,34 +50,34 @@ Podczas kompilowania projektów kompilacji są często te same składniki z opcj
     ```  
   
 ## <a name="specify-properties-on-the-command-line"></a>Określ właściwości w wierszu polecenia  
- Napisana pliku projektu, aby akceptował wiele konfiguracji musisz mieć możliwość zmiany te konfiguracje przy każdej kompilacji projektu. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zapewnia tę możliwość, umożliwiając właściwości można określić w wierszu polecenia za pomocą **/property** lub **/p** przełącznika.  
+ Napisana pliku projektu, aby akceptował wiele konfiguracji musisz mieć możliwość zmiany te konfiguracje przy każdej kompilacji projektu. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zapewnia tę możliwość, umożliwiając właściwości można określić w wierszu polecenia za pomocą **— właściwość** lub **-p** przełącznika.  
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Aby ustawić właściwości projektu w wierszu polecenia  
   
--   Użyj **/property** przełącznik z właściwości i wartości właściwości. Na przykład:  
+-   Użyj **— właściwość** przełącznik z właściwości i wartości właściwości. Na przykład:  
   
     ```cmd  
-    msbuild file.proj /property:Flavor=Debug  
+    msbuild file.proj -property:Flavor=Debug  
     ```  
   
     lub  
   
     ```cmd  
-    Msbuild file.proj /p:Flavor=Debug  
+    Msbuild file.proj -p:Flavor=Debug  
     ```  
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Aby określić więcej niż jednej właściwości projektu w wierszu polecenia  
   
--   Użyj **/property** lub **/p** przełącznika wiele razy przy użyciu właściwości i wartości właściwości lub użyć jednego **/property** lub **/p** przełącznika i wiele właściwości należy oddzielić średnikami (;). Na przykład:  
+-   Użyj **— właściwość** lub **-p** przełącznika wiele razy przy użyciu właściwości i wartości właściwości lub użyć jednego **— właściwość** lub **-p** przełącznika i wiele właściwości należy oddzielić średnikami (;). Na przykład:  
   
     ```cmd  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
+    msbuild file.proj -p:Flavor=Debug;Platform=x86  
     ```  
   
     lub
   
     ```cmd  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
+    msbuild file.proj -p:Flavor=Debug -p:Platform=x86  
     ```  
   
  Zmienne środowiskowe są także traktowane jako właściwości i są automatycznie włączone przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Aby uzyskać więcej informacji na temat używania zmiennych środowiskowych, zobacz [porady: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).  
@@ -92,13 +92,13 @@ Podczas kompilowania projektów kompilacji są często te same składniki z opcj
  Tworzenie wersji debugowania tego projektu, należy wpisać:  
   
 ```cmd  
-msbuild consolehwcs1.proj /p:flavor=debug  
+msbuild consolehwcs1.proj -p:flavor=debug  
 ```  
   
  Aby skompilować wersji detalicznej tego projektu, należy wpisać:  
   
 ```cmd  
-msbuild consolehwcs1.proj /p:flavor=retail  
+msbuild consolehwcs1.proj -p:flavor=retail  
 ```  
   
 ```xml  
@@ -159,7 +159,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
  Aby skompilować projekt, wprowadź następujące polecenie:  
   
 ```cmd  
-msbuild colortest.proj /t:go /property:Color=Green  
+msbuild colortest.proj -t:go -property:Color=Green  
 ```  
   
 ```xml  

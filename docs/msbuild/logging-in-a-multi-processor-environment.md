@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 864b60a7f2262803e9a25b967831c35202799cd5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 6f418c9f3823aaceb4237546cadc68ea2f2bf95e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077581"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879255"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Logowanie w środowisku wielu procesorów
 Możliwość używania wielu procesorów MSBuild może znacznie skrócić czas tworzenia projektu, ale również dodaje złożoności do rejestrowania. W środowisku jednoprocesorowym rejestratora może obsługiwać przychodzących zdarzenia, wiadomości, ostrzeżenia i błędy w sposób przewidywalny i sekwencyjne. Jednak w środowisku wielu procesorów zdarzenia z kilku źródeł mogą pojawić się równocześnie lub poza sekwencją. MSBuild zapewnia nowy Rejestrator procesorów uwzględniających oraz umożliwia tworzenie niestandardowych "przekazywania rejestratorów."  
@@ -62,15 +62,15 @@ public interface IForwardingLogger: INodeLogger
  Aby uzyskać więcej informacji, zobacz [tworzenie przekazywania rejestratorów](../msbuild/creating-forwarding-loggers.md).  
   
 ### <a name="attaching-a-distributed-logger"></a>Dołączanie rozproszonych rejestratora  
- Aby dołączanie rozproszonych rejestratora dla kompilacji wiersza polecenia, należy użyć `/distributedlogger` (lub `/dl` w skrócie) przełącznika. Format określająca nazwy klasy i typy rejestratora są takie same jak w przypadku `/logger` przełączyć, chyba że rozproszonych rejestratora składa się z dwóch klas rejestrowania: Rejestrator przekazywania i rejestratora centralnego. Poniżej znajduje się przykład dołączenia rejestratora rozproszonych:  
+ Aby dołączanie rozproszonych rejestratora dla kompilacji wiersza polecenia, należy użyć `-distributedlogger` (lub `-dl` w skrócie) przełącznika. Format określająca nazwy klasy i typy rejestratora są takie same jak w przypadku `-logger` przełączyć, chyba że rozproszonych rejestratora składa się z dwóch klas rejestrowania: Rejestrator przekazywania i rejestratora centralnego. Poniżej znajduje się przykład dołączenia rejestratora rozproszonych:  
   
 ```cmd  
-msbuild.exe *.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
+msbuild.exe *.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
 Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,  
 Culture=neutral  
 ```  
   
- Znak gwiazdki (*) oddziela nazwy dwóch rejestratora w `/dl` przełącznika.  
+ Znak gwiazdki (*) oddziela nazwy dwóch rejestratora w `-dl` przełącznika.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Rejestratory kompilacji](../msbuild/build-loggers.md)   

@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a211048e287bd3ef3e45625022f7389e06358e32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 802627f59f54b9a4b1179ba5c643b4671f4f7ce0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680115"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878957"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Procedury składowane, które mogą być dodawane do Projektanta obiektów relac
 >  [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] uchwyty wygenerowanych w bazie danych wartości automatycznie tożsamości (automatycznego przyrostu), rowguidcol (identyfikator GUID generowany przez bazy danych) i kolumn sygnatur czasowych. Wartości generowanych przez bazę danych w innych typów kolumn spowoduje nieoczekiwane wartości null. Aby zwrócić wartości wygenerowanych w bazie danych, należy ręcznie ustawić <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> do `true` i <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> do jednej z następujących czynności: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, lub <xref:System.Data.Linq.Mapping.AutoSync>.  
   
 ## <a name="configuring-the-update-behavior-of-an-entity-class"></a>Konfigurowanie zachowania aktualizacji klasę jednostki  
- Domyślnie, logika aktualizacji bazy danych (operacje wstawiania, aktualizacji i usunięć) za pomocą zmian wprowadzonych do danych w [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klas jednostek są dostarczane przez [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] środowiska uruchomieniowego. Środowisko uruchomieniowe tworzy domyślne Insert, Update, i usuwanie poleceń, które są oparte na schemat tabeli (kolumny i informacje o kluczu podstawowym). Gdy zachowanie domyślne jest niepożądany, możesz skonfigurować zachowanie aktualizacji, przypisując określonych procedur składowanych do wykonania niezbędnych operacji wstawiania, aktualizacji, i usuwa wymagane do manipulowania danymi w tabeli. Ponadto można to zrobić, jeśli domyślne zachowanie nie jest generowany, na przykład, gdy Twoje klas jednostek mapy do widoków. Na koniec można zastąpić domyślne zachowanie aktualizacji, gdy baza danych wymaga dostępu do tabel za pomocą procedur składowanych.  
+ Domyślnie, logika aktualizacji bazy danych (operacje wstawiania, aktualizacji i usunięć) za pomocą zmian wprowadzonych do danych w [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klas jednostek są dostarczane przez [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] środowiska uruchomieniowego. Środowisko uruchomieniowe tworzy domyślne polecenia Insert, Update i Delete, które opierają się na schemat tabeli (kolumny i informacje o kluczu podstawowym). Gdy zachowanie domyślne jest niepożądany, możesz skonfigurować zachowanie aktualizacji, przypisując określonych procedur składowanych do wykonania niezbędnych operacji wstawiania, aktualizacji, i usuwa wymagane do manipulowania danymi w tabeli. Ponadto można to zrobić, jeśli domyślne zachowanie nie jest generowany, na przykład, gdy Twoje klas jednostek mapy do widoków. Na koniec można zastąpić domyślne zachowanie aktualizacji, gdy baza danych wymaga dostępu do tabel za pomocą procedur składowanych.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

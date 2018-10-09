@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: e83aec143d2b7fdb6ed7a338b6a726aa81147e7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 95184d5f73e2ec4aaa7339da77096108abbc3bda
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280743"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880425"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Odwołanie do migracji i uaktualniania projektu programu Visual Studio 2017
 
@@ -41,7 +41,7 @@ W tym artykule istnieje zawiera szczegółowe informacje, tylko dla typów proje
 
 Na poniższej liście opisano obsługę projektów, które zostały utworzone we wcześniejszych wersjach programu Visual Studio 2017.
 
-Jeśli nie widzisz projektu lub typ pliku tutaj wymieniony, powinny być, zapoznaj się z [wersji programu Visual Studio 2015 w tym artykule](port-migrate-and-upgrade-visual-studio-projects.md) i użyj opcji "Przekaż opinię dotyczącą dokumentacji" u dołu tej strony, aby podać szczegóły projektu. (Jeśli chcesz odpowiedzi użyć opinii dotyczących dokumentacji, zamiast anonimowego "czy ta strona jest przydatne?" control.)
+Jeśli nie widzisz projektu lub typ pliku tutaj wymieniony, powinny być, zapoznaj się z [wersji programu Visual Studio 2015 w tym artykule](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015) i użyj opcji "Przekaż opinię dotyczącą dokumentacji" u dołu tej strony, aby podać szczegóły projektu. (Jeśli chcesz odpowiedzi użyć opinii dotyczących dokumentacji, zamiast anonimowego "czy ta strona jest przydatne?" control.)
 
 | Typ projektu | Obsługa |
 | --- | --- |

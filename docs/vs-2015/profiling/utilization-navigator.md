@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 503d48a470a8865f0d6a56e5872c3f1af2e60193
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9458e57d210b9f0b7d822cbf56555776a6ddf29
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633193"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879743"
 ---
 # <a name="utilization-navigator"></a>Nawigator wykorzystania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Nawigator wykorzystania i wybrany przedział czasu
   
  Poniżej przedstawiono, jak Nawigator wykorzystania można użyć do manipulowania zakres wyświetlanych czasu:  
   
--   Przez można przesuwać, przeciągając przycisku suwaka w lewo lub w prawo. (Klawiatura: Przenieś fokus do przycisku suwaka, a następnie naciśnij klawisz Strzałka w lewo lub w prawo.)  
+-   Można przesuwać, przeciągając przycisku suwaka w lewo lub w prawo. (Klawiatura: Przenieś fokus do przycisku suwaka, a następnie naciśnij klawisz Strzałka w lewo lub w prawo.)  
   
 -   Zakres interwał można zmienić, przeciągając jeden z uchwytów. (Klawiatura: Przenieś fokus do uchwytu, a następnie naciśnij klawisz Strzałka w lewo lub w prawo.)  
   

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a60b76efc5c1c476f69a11804c74cd3341139c9c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d5c10cdf2221f329e8e0ff748c2b4fe77479b205
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080317"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863858"
 ---
 # <a name="midl-task"></a>MIDL — Zadanie
 Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawijany *midl.exe*. Aby uzyskać więcej informacji, zobacz [wiersza polecenia MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference).  
@@ -245,7 +245,7 @@ Narzędzie kompilatora języka definicji interfejsu Microsoft (MIDL), jest zawij
   
      Jeśli `true`, wymaga formatu pliku wejściowego, aby był zgodny z *mktyplib.exe* w wersji 2.03.  
   
-     Aby uzyskać więcej informacji, zobacz **/mktyplib203** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). Zobacz też [składni pliku ODL](https://msdn.microsoft.com/library/windows/desktop/ms221683(v=vs.85).aspx) w witrynie MSDN.  
+     Aby uzyskać więcej informacji, zobacz **/mktyplib203** opcji [wiersza polecenia MIDL](https://docs.microsoft.com/en-us/windows/desktop/Midl/midl-command-line-reference). Zobacz też [składni pliku ODL](/previous-versions/windows/desktop/automat/odl-file-syntax) w witrynie MSDN.  
   
 -   **OutputDirectory**  
   

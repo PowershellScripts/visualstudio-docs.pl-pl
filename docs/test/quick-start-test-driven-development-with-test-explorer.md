@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c2988bb821a91ec1bc5f37955bef8a61897f2c4d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1c05ca6cbcf1f365e6b8147cbaab6004035f633f
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382093"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863903"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Szybki Start: Testów opartych na tworzenie aplikacji przy użyciu Eksploratora testów
 
@@ -39,7 +39,7 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
 
     1.  Utwórz projekt testu.
 
-         W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** > **Visual C#** lub **Visual C++**, a następnie wybierz polecenie **Testu**.
+         W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#** lub **Visual C++**, a następnie wybierz **testu**.
 
          Wybierz **projektu testu jednostkowego**.
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cc30f572f48622776bb1014c2a5e3c17bf8f27b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 05faacee77496f8d25ca926e4a1d441819cd9d9d
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512379"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863936"
 ---
 # <a name="layout-for-visual-studio"></a>Układ dla programu Visual Studio
 Większość okien dialogowych programu Visual Studio jest [układ okna dialogowego narzędzia](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), które są unthemed okien dialogowych standardzie postępuj zgodnie z [zasad układu okna dialogowego pulpitu Windows](/windows/desktop/uxguide/win-dialog-box). Przemieszcza się w programie Visual Studio można odświeżyć jego interfejsie użytkownika, niektóre ważniejszej okien dialogowych mają nowy projekt, który ustanawia je jak definiowanie produktu środowiska. Te [układ okna dialogowego motywem](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) ma wygląd kompozycji.  
@@ -159,5 +159,5 @@ Większość okien dialogowych programu Visual Studio jest [układ okna dialogow
   
 ## <a name="see-also"></a>Zobacz też  
  [Wzorce aplikacji dla programu Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)   
- [Formanty (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx)   
- [Okna dialogowe (Windows)](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx)
+ [Formanty (Windows)](/windows/desktop/uxguide/controls)   
+ [Okna dialogowe (Windows)](/windows/desktop/uxguide/win-dialog-box)

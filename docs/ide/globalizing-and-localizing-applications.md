@@ -17,30 +17,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9abcb55d49b84a97ad7eae241547317d74cc6f71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73e638b2474342987963c02f442f5d7a98a6e44e
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942471"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863599"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalizacja i lokalizacja aplikacji
 
-Jeśli planujesz dystrybuowanie aplikacji międzynarodowych odbiorców, należy zachować kilka sposobów na uwadze podczas fazy projektowania i opracowywania. Nawet jeśli nie masz takich planów małych nakładu pracy na początku można ułatwienia znacznie powinien planów zmianie w przyszłych wersjach aplikacji. Wbudowane usługi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ułatwiają tworzenie pojedynczej aplikacji, które można dostosować do różnych ustawień regionalnych przy użyciu tworzenie aplikacji zarządzanych za pomocą programu Visual Studio.
+Jeśli planujesz dystrybucja aplikacji odbiorcom międzynarodowym, należy zapewnić kilka rzeczy, należy pamiętać podczas fazy projektowania i tworzenia. Nawet jeśli użytkownik nie ma takich planów, mały nakład pracy na początku może ułatwić rzeczy znacznie powinien swoje plany ulec zmianie w przyszłych wersjach aplikacji. Wbudowana w usługi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ułatwiają tworzenie pojedynczej aplikacji, które dostosowują się do różnych ustawień regionalnych, tworzenie aplikacji zarządzanych przy użyciu programu Visual Studio.
 
-## <a name="resources"></a>Zasoby
+## <a name="resources"></a>Resources
 
- Visual Studio została zaprojektowana od początku tworzenie dla odbiorców międzynarodowe łatwe dzięki wykorzystaniu usług wbudowane [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Następujące artykuły pomogą przedstawiono funkcje internacjonalizacji wbudowanych w programie Visual Studio.
+ Program Visual Studio została zaprojektowana od początku do ułatwienia programowania dla publiczności międzynarodowej łatwe dzięki wykorzystaniu usług, wbudowaną [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Następujące artykuły pomogą Państwu internacjonalizacji funkcji wbudowanych w program Visual Studio.
 
- [Wprowadzenie do aplikacji międzynarodowych oparte na programie .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) wprowadza pojęcia związane z opracowywania oprogramowania dla międzynarodowego rynku przy użyciu programu Visual Studio i [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ [Wprowadzenie do aplikacji międzynarodowych oparte na programie .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md) wprowadza pojęcia związane z tworzy oprogramowanie na rynku międzynarodowym przy użyciu programu Visual Studio i [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
 
- [Lokalizowanie aplikacji](../ide/localizing-applications.md) zawiera łącza do strony Dostosowywanie aplikacji dla danej kultury.
+ [Lokalizowanie aplikacji](../ide/localizing-applications.md) dostarcza łącza do stron dotyczących dostosowywania aplikacji dla danej kultury.
 
- [Globalizowanie aplikacji](../ide/globalizing-applications.md) zawiera łącza do stron o tworzeniu aplikacji, które obsługują wiele kultur.
+ [Globalizowanie aplikacji](../ide/globalizing-applications.md) dostarcza łącza do stron dotyczących tworzenia aplikacji, które obsługują wielu kulturach.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Najlepsze rozwiązania do tworzenia aplikacji gotowych](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) podano informacje dotyczące programowanie międzynarodowe grupy odbiorców.
-- [Przegląd biblioteki klas](/dotnet/standard/class-library-overview) wprowadza klasy, interfejsy i typy wartości, które przyspieszenia i zoptymalizować proces rozwoju i zapewnienia dostępu do funkcji systemu.
-- <xref:System.Globalization> Punkty limit klasy w tej przestrzeni nazw, które definiują informacje związane z kultury, w tym języku, kraj/region, kalendarze w użyciu, kolejność wzorce format daty, waluty i liczb i sortowanie ciągów.
-- <xref:System.Resources> Punkty klasy i interfejsy w tej przestrzeni nazw, która umożliwia deweloperom tworzenie, przechowywania i zarządzania nimi różnych zasobów specyficzne dla kultury używane w aplikacji.
+- [Najlepsze rozwiązania dotyczące tworzenia aplikacji gotowych do](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps) przedstawiono ogólne informacje o programowaniu dla międzynarodowych grupy odbiorców.
+- [Przegląd biblioteki klas](/dotnet/standard/class-library-overview) wprowadza klas, interfejsów i typów wartości, które przyspiesza i zoptymalizować proces tworzenia aplikacji oraz zapewnia dostęp do funkcji systemu.
+- <xref:System.Globalization> Wskazuje się klasy w tej przestrzeni nazw, które definiują informacje związane z kulturą, w tym język, kraj/region, używane kalendarze w użyciu, wzorce formatu daty, waluty i liczb i sortowania kolejności ciągów.
+- <xref:System.Resources> Punktów klasy i interfejsy, które w tej przestrzeni nazw, która umożliwia deweloperom tworzenie, przechowywania i zarządzania nimi różnych zasobów dla kultury, używane w aplikacji.

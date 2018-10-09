@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8018f3f72fd774a1ac64cd1d6d968ad8be65b453
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512242"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863956"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Powiadomienia i postęp dla programu Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a> Systemy powiadomień  
@@ -213,7 +213,7 @@ ms.locfileid: "39512242"
  Pokrętła (znany także jako "pierścień postępu") jest wskaźnikiem nieokreślonego postępu używane głównie w odniesieniu do kontekstowe interfejsu użytkownika. Okrągły wskaźnik przetwarzania są wyświetlane w bliskim sąsiedztwie do jego zawartości pokrewne, takie jak nagłówek tekstową kategorii, obsługi komunikatów lub kontroli.  
   
 ##### <a name="cursor-feedback"></a>Kursor opinii  
- Operacje, które zająć od 2 do 7 sekundach kursor opinii. Zazwyczaj oznacza to, za pomocą kursor oczekiwania, dostarczone przez system operacyjny. Aby uzyskać wskazówki, zobacz artykuł w witrynie MSDN [właściwość Cursors.Wait](https://msdn.microsoft.com/en-us/library/system.windows.input.cursors.wait\(v=vs.110\).aspx).  
+ Operacje, które zająć od 2 do 7 sekundach kursor opinii. Zazwyczaj oznacza to, za pomocą kursor oczekiwania, dostarczone przez system operacyjny. Aby uzyskać wskazówki, zobacz artykuł w witrynie MSDN [właściwość Cursors.Wait](/dotnet/api/system.windows.input.cursors.wait).  
   
 #### <a name="progress-indicator-locations"></a>Lokalizacje wskaźnik postępu  
   

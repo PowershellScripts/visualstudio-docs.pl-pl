@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 022eef30e7e067ca622650a2f5e702cd9a8168b9
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 92ac0daf0f1326676e37dcddd0a493c06a19df96
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443496"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863676"
 ---
 # <a name="common-quick-actions"></a>Typowe szybkie akcje
 
@@ -71,17 +71,10 @@ Te szybkie akcje umożliwiają rozwiązywanie konfliktów scalania git przez "Tr
 // Before
 private void MyMethod()
 {
-<<<<<<< HEAD
-    if (true)
-    {
-
-    }
-=======
     if (false)
     {
 
     }
->>>>>>> upstream
 }
 
 // Take changes from 'HEAD'
@@ -458,7 +451,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>Konwertuj na ciąg interpolowany
 
-[Ciągi interpolowane](/dotnet/csharp/language-reference/keywords/interpolated-strings) to łatwy sposób express ciągi zawierające osadzone zmienne, podobnie jak **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)** metody. Rozpoznaje, przypadki, gdzie ciągi są połączone lub przy użyciu tej szybkiej akcji **String.Format**oraz zmian użycie w ciągu interpolowanym.
+[Ciągi interpolowane](/dotnet/csharp/language-reference/keywords/interpolated-strings) to łatwy sposób express ciągi zawierające osadzone zmienne, podobnie jak **[String.Format](/dotnet/api/system.string.format#overloads)** metody.  Rozpoznaje, przypadki, gdzie ciągi są połączone lub przy użyciu tej szybkiej akcji **String.Format**oraz zmian użycie w ciągu interpolowanym.
 
 ```csharp
 // Before

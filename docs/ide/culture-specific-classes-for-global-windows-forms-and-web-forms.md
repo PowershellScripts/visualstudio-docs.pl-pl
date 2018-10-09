@@ -30,30 +30,30 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8289b44359508d788b43fa155c6f91b58d304138
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d0a6947127fd564eace97c919a425d4a3a3360c4
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917003"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863572"
 ---
-# <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Klasy specyficzne dla kultury dla globalnych formularzy systemu Windows i formularzy sieci web
+# <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Klasy specyficzne dla kultury dla globalnych formularzy Windows i formularzy sieci web
 
-Każdy kulturę różnych Konwencji do wyświetlania dat, czasu, cyfry, waluty i inne informacje. <xref:System.Globalization> Przestrzeń nazw zawiera klasy, które mogą służyć do modyfikowania wartości jak specyficzne dla kultury są wyświetlane, takich jak:
+Każda kultura ma różnych Konwencji do wyświetlania daty, godziny, liczby, waluty i inne informacje. <xref:System.Globalization> Przestrzeń nazw zawiera klasy, które mogą służyć do modyfikowania wartości jak specyficzne dla kultury są wyświetlane, takich jak:
 - <xref:System.Globalization.DateTimeFormatInfo>
 - **Kalendarz**
 - <xref:System.Globalization.NumberFormatInfo>
 
-## <a name="using-the-culture-setting"></a>Przy użyciu ustawienia kulturowe
+## <a name="using-the-culture-setting"></a>Za pomocą ustawienia kulturowe
 
-Użyj ustawienia kultury, przechowywane w aplikacji lub w **Opcje regionalne** panel sterowania do określenia konwencje kultury na czas wykonywania i formatowania w związku z tym informacji. Aby uzyskać więcej informacji na temat ustawiania kultury, zobacz [porady: culture i kultury interfejsu użytkownika dla globalizacji strony sieci web ASP.NET](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Klasy, które automatycznie Formatuj informacji zgodnie z ustawieniem kultury są nazywane *specyficzne dla kultury*. Niektóre metody specyficzne dla kultury
+Użyj ustawienia kultury, przechowywane w aplikacji lub w **Opcje regionalne** Panelu sterowania, aby określić Konwencji kultury w czasie wykonywania i odpowiednio sformatować informacji. Aby uzyskać więcej informacji na temat ustawiania kultury, zobacz [porady: Ustawianie kultury i kultury UI dla globalizacji strony sieci web platformy ASP.NET](https://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Klasy, które automatycznie Formatuj informacje zgodnie z ustawieniem kultury są nazywane *specyficzne dla kultury*. Niektóre metody specyficzne dla kultury
 - <xref:System.IFormattable.ToString%2A?displayProperty=fullName>
 - <xref:System.Console.WriteLine%2A?displayProperty=fullName>
 - <xref:System.String.Format%2A?displayProperty=fullName>
 
 Niektóre funkcje specyficzne dla kultury (w języku Visual Basic) są `MonthName` i `WeekDayName`.
 
-Na przykład poniższy kod przedstawia sposób korzystania <xref:System.IFormattable.ToString%2A> metodę formacie waluty dla bieżącej kultury:
+Na przykład, poniższy kod przedstawia, jak można użyć <xref:System.IFormattable.ToString%2A> metodę format waluty bieżącej kultury:
 
 ```vb
 ' Put the Imports statements at the beginning of the code module
@@ -73,11 +73,11 @@ int myInt = 100;
 Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));
 ```
 
-Jeśli kultury jest ustawiony na "fr-FR", zostanie wyświetlony następujące opcje w oknie danych wyjściowych:
+Kultura jest ustawiona na "fr-FR", zobaczysz następujące opcje w oknie danych wyjściowych:
 
 `100,00`
 
-Jeśli kultura ma ustawioną wartość "en US", zostanie wyświetlony następujące opcje w oknie danych wyjściowych:
+Kultura ma wartość "en US", zobaczysz następujące opcje w oknie danych wyjściowych:
 
 `$100.00`
 

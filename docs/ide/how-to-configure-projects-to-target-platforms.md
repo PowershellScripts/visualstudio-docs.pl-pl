@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Konfigurowanie projektów do platform docelowych'
+title: 'Porady: Konfigurowanie projektów pod kątem platform docelowych'
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -19,55 +19,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f5f5552cb87f1c8b4501930f23765143a9e9399
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cb1b28615593758b0a34425be9e9a5aef11d406b
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946692"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863559"
 ---
-# <a name="how-to-configure-projects-to-target-platforms"></a>Porady: Konfigurowanie projektów do platform docelowych
+# <a name="how-to-configure-projects-to-target-platforms"></a>Porady: Konfigurowanie projektów pod kątem platform docelowych
 
-Program Visual Studio umożliwia konfigurowanie aplikacji pod kątem różnych platform, w tym platformach 64-bitowych. Aby uzyskać więcej informacji dotyczących obsługi 64-bitowej platformy w programie Visual Studio, zobacz [aplikacji 64-bitowych](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).
+Program Visual Studio umożliwia ustawianie aplikacji przeznaczonych dla różnych platform, w tym platform 64-bitowych. Aby uzyskać więcej informacji na temat obsługi platform 64-bitowych w programie Visual Studio, zobacz [aplikacji 64-bitowych](/dotnet/framework/64-bit-apps).
 
-## <a name="target-platforms-with-the-configuration-manager"></a>Platformy docelowe z programu Configuration Manager
+## <a name="target-platforms-with-the-configuration-manager"></a>Platformy docelowe przy użyciu programu Configuration Manager
 
-**Programu Configuration Manager** pozwala szybko dodać nowa platforma do obiektu docelowego projektu. W przypadku wybrania jednej z platform uwzględnionych w programie Visual Studio, aby skompilować projekt dla wybranej platformy są modyfikacji właściwości projektu.
+**Programu Configuration Manager** umożliwia szybko dodać nową platformę docelową z projektem. Po wybraniu jednej z platform, w programie Visual Studio, właściwości projektu są modyfikowane w celu kompilowania projektu dla wybranej platformy.
 
-### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Aby skonfigurować projekt pod kątem platformy 64-bitowych
+### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Aby skonfigurować projekt przeznaczony dla platformy 64-bitowej
 
 1.  Na pasku menu wybierz **kompilacji** > **programu Configuration Manager**.
 
-2.  W **platformy aktywne rozwiązanie** listy, wybierz 64-bitowej platformy dla rozwiązania do obiektu docelowego, a następnie wybierz pozycję **Zamknij** przycisku.
+2.  W **aktywną platformą rozwiązania** listy, wybierz platformę 64-bitowych dla rozwiązania do obiektu docelowego, a następnie wybierz **Zamknij** przycisku.
 
-    1.  Jeśli nie ma platformy, które mają **platformy aktywne rozwiązanie** wybierz **nowy**.
+    1.  Jeśli nie ma platformy, która ma **aktywną platformą rozwiązania** wybierz **New**.
 
-         **Nowa platforma rozwiązania** zostanie wyświetlone okno dialogowe.
+         **Nowa platforma rozwiązania** pojawi się okno dialogowe.
 
-    2.  W **wpisz lub wybierz Nowa platforma** wybierz **x64**.
+    2.  W **wpisz lub wybierz nową platformę** wybierz **x64**.
 
         > [!NOTE]
-        >  Jeśli konfigurację Podaj nową nazwę, należy zmodyfikować ustawienia w **projektanta projektu** pod kątem poprawne platformy.
+        >  Jeśli nadasz konfiguracji nową nazwę, może być konieczne zmodyfikować ustawienia w **projektanta projektu** pod kątem odpowiedniej platformy.
 
     3.  Jeśli chcesz skopiować ustawienia z bieżącej konfiguracji platformy, wybierz go, a następnie wybierz **OK** przycisku.
 
-Właściwości dla wszystkich projektów przeznaczonych dla platformy 64-bitowej są aktualizowane i następnej kompilacji projektu zostanie zoptymalizowana dla platformy 64-bitowych.
+Właściwości dla wszystkich projektów przeznaczonych dla platformy 64-bitowe są aktualizowane i następnej kompilacji projektu będzie optymalizowany dla platform 64-bitowych.
 
 ## <a name="target-platforms-in-the-project-designer"></a>Platformy docelowe w Projektancie projektu
 
-**Projektanta projektu** także sposób pod kątem różnych platform z projektu. W przypadku wybrania jednej z platform uwzględnione na liście w **nowa platforma rozwiązania** okno dialogowe nie działa w przypadku rozwiązania, można utworzyć nazwy konfiguracji niestandardowej i zmodyfikuj ustawienia w **Projektant projektu**  pod kątem poprawne platformy.
+**Projektanta projektu** również umożliwia przeznaczonych dla różnych platform za pomocą projektu. W przypadku wybrania jednej z platform uwzględnione na liście w **nowa platforma rozwiązania** okno dialogowe nie działa w przypadku rozwiązania, można utworzyć nazwy niestandardowej konfiguracji i zmodyfikować ustawienia w **Projektant projektu**  pod kątem odpowiedniej platformy.
 
-Wykonanie tego zadania zależy od języka programowania, którego używasz. Zobacz poniższe łącza, aby uzyskać więcej informacji:
+Wykonanie tego zadania zależy od języka programowania, którego używasz. Skorzystaj z następujących linków, aby uzyskać więcej informacji:
 
 -   Aby uzyskać [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektów, zobacz [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 
 -   Aby uzyskać [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektów, zobacz [strona kompilacji, Projektant projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
--   Aby uzyskać [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów, zobacz [/CLR (kompilacja środowiska CLR)](/cpp/build/reference/clr-common-language-runtime-compilation).
+-   Aby uzyskać [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projektów, zobacz [/CLR (kompilacja środowiska uruchomieniowego języka wspólnego)](/cpp/build/reference/clr-common-language-runtime-compilation).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Informacje o platformach kompilacji](../ide/understanding-build-platforms.md)
+- [Omówienie platformy kompilacji](../ide/understanding-build-platforms.md)
 - [/ platform (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
-- [64-bit — aplikacje](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)
-- [Techniczną usługi Visual Studio IDE 64-bitowych](../ide/visual-studio-ide-64-bit-support.md)
+- [aplikacje 64-bitowe](/dotnet/framework/64-bit-apps)
+- [Visual Studio IDE 64-bitowe systemu](../ide/visual-studio-ide-64-bit-support.md)

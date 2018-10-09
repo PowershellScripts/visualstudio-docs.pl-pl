@@ -14,16 +14,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 497aa6a85bd47813aa20bd5c2e89ca26ddffbe5a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082158"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863905"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio za pomocą wiersza polecenia
 
-W tym instruktażu dowiesz się, jak opublikować rozszerzenia programu Visual Studio do witryny Marketplace programu Visual Studio przy użyciu wiersza polecenia. Po dodaniu rozszerzenia w portalu Marketplace, deweloperzy mogą używać **rozszerzenia i aktualizacje** okno dialogowe wyszukiwania istnieje nowe i zaktualizowane rozszerzenia.
+W tym instruktażu dowiesz się, jak opublikować rozszerzenia programu Visual Studio do witryny Marketplace programu Visual Studio przy użyciu wiersza polecenia. Po dodaniu rozszerzenia w portalu Marketplace, deweloperzy mogą używać [ **rozszerzenia i aktualizacje** ](../ide/finding-and-using-visual-studio-extensions.md) okno dialogowe wyszukiwania istnieje nowe i zaktualizowane rozszerzenia.
 
 VsixPublisher.exe to narzędzie wiersza polecenia do publikowania rozszerzenia programu Visual Studio w witrynie Marketplace. Są dostępne z ${VSInstallDir}\VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe. Są dostępne w tym narzędzia polecenia: **publikowania**, **createPublisher**, **deletePublisher**, **deleteExtension**,  **Zaloguj się**, **wylogowania**.
 

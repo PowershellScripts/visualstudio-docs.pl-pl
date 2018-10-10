@@ -9,12 +9,12 @@ description: Więcej informacji na temat subskrypcji szkolenia Pluralsight, któ
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3b90ac75cf92ac9adfef5023b3677b8044d44350
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 515053c8266aa7cccb1afd651c2eac4da31e3e8d
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283148"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074029"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Korzyści szkolenia Pluralsight, w ramach subskrypcji programu Visual Studio
 
@@ -81,7 +81,7 @@ W poniższej tabeli przedstawiono, jakie korzyści z subskrypcji w witrynie Plur
 | Visual Studio Dev Essentials | NAZWA  | 3 miesiące |Nie|
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                  |NAZWA|
 | Visual Studio Enterprise (NFR<sup>1</sup> ) | Program                                       | Niedostępne                                  |NAZWA|
-<sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi, Microsoft zwracającej partnera (MVP), dyrektor Region (usług pulpitu zdalnego), partnerem firmy Microsoft Wyobraź sobie Network (MPN), ekwiwalentu pełnego wymiaru czasu.*
+<sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi, Microsoft zwracającej Professional (MVP), dyrektor Region (usług pulpitu zdalnego), partnerem firmy Microsoft Wyobraź sobie Network (MPN), ekwiwalentu pełnego wymiaru czasu.* 
 
 <sup>2</sup>*korzyści z firmą Pluralsight jest tylko jednorazowego użytku powiązane osoby.  Gdy subskrybent zużywa korzyści, nie zresetować. Zobacz często zadawane pytania poniżej, aby uzyskać więcej informacji.  Po upływie okresu subskrypcji w witrynie Pluralsight możesz kwalifikować się do odbierania 12 miesięcy dostępu do 50 wybranych kursów Pluralsight w jednym z trzech obszarów analiza.*
 

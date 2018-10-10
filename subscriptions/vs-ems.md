@@ -9,12 +9,12 @@ description: Informacje na temat pakietu Enterprise Mobility + Security korzyśc
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 81d93a4a030fd4a588903073d065041a6dbd69e6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c85643a13adec8913477d7201a224a6689d3d46f
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283291"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073795"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Pakiet Enterprise Mobility + Security (EMS) w subskrypcji programu Visual Studio
 
@@ -61,7 +61,7 @@ Aby korzystać z pakietu EMS, należy skonfigurować konto lub zaloguj się przy
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
 | Visual Studio Dev Essentials | Brak  | Niedostępne |Brak |
 
-<sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark.  Nie obejmuje: Cenionym partnera firmy Microsoft (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services, Wyobraź sobie, Microsoft Partner Network (Professional).*
+<sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark.  Nie obejmuje: Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services, Wyobraź sobie, Microsoft Partner Network (Professional).*
 
 <sup>2</sup> *wyklucza sieci Microsoft Partner Network (Professional)*
 

@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści Concierge Chat uwzględniony 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1163feb7b1a55a816eef3b4b5f106de01c34669a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 73201570aae74645a0116c3a34aab344c07c7837
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282525"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073691"
 ---
 # <a name="concierge-chat"></a>Konsjerż — Rozmowa
 
@@ -48,7 +48,7 @@ Uzyskiwanie pomocy za pośrednictwem usługi Konsjerż — Rozmowa jest bardzo p
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
 | Visual Studio Dev Essentials | NAZWA  | Niedostępne |Brak |
 
-<sup>1</sup>*obejmuje: nie for Resale (NFR) programu Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Nie obejmuje: Ekwiwalentu pełnego wymiaru czasu, Microsoft zwracającej partnera (MVP), dyrektor Region (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Imagine.*
+<sup>1</sup>*obejmuje: nie for Resale (NFR) programu Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark.  Nie obejmuje: Ekwiwalentu pełnego wymiaru czasu, Microsoft zwracającej Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Imagine.*
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

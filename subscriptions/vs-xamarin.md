@@ -9,12 +9,12 @@ description: Dowiedz się więcej na temat subskrypcji platformy Xamarin Univers
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b939aaeaa201b141e3263ddf9ae35ebc049af6f3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3e709ea6d9ad5f53725aeed0f0400b4e5d365ab0
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280353"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073535"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkoleń Xamarin University w subskrypcji programu Visual Studio
 
@@ -76,7 +76,7 @@ Uczestnicy programu Visual Studio Dev Essentials kwalifikują się do utworzenia
 | Visual Studio Dev Essentials | NAZWA  | Bezpłatny plan                                             |  Tak        |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
 
-<sup>1</sup>*obejmuje: nie for Resale (NFR) programu Visual Studio Industry Partner (VSIP).  Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, partnerem firmy Microsoft cenionym (MVP), dyrektor Region (usług pulpitu zdalnego).   Nie obejmuje: MCT Software & Services.*
+<sup>1</sup>*obejmuje: nie for Resale (NFR) programu Visual Studio Industry Partner (VSIP).  Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, systemu Microsoft cenionym Professional (MVP), dyrektor Region (usług pulpitu zdalnego).   Nie obejmuje: MCT Software & Services.*
 
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.

@@ -9,12 +9,12 @@ description: Więcej informacji na temat subskrypcja szkoleń DataCamp, które s
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f0a6fe16edf12616dd93b394b118f40651ffb0ec
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 81dea4c5da7b6fe6b6c6cfe000ae953f98e6e83f
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282419"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073821"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkolenia DataCamp w subskrypcji programu Visual Studio
 
@@ -80,7 +80,7 @@ Można zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji.  
 
 
 
-<sup>1</sup>*obejmuje: nie, for Resale (NFR), ekwiwalentu pełnego wymiaru czasu, cenionym partnera firmy Microsoft (MVP), dyrektor Region (usług pulpitu zdalnego), sieci Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>*obejmuje: nie, for Resale (NFR), ekwiwalentu pełnego wymiaru czasu, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine* 
 
 
 

@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści programu Visual Studio App Ce
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 266ce307b8ee06eed427385d67c48d4258ae2a1c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e6d8e53d01892dc22de8ce48f37f0df6a506ae3b
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283174"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073834"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center w subskrypcji programu Visual Studio
 
@@ -50,7 +50,7 @@ Wprowadzenie do programu Visual Studio App Center jest proste.
 | Visual Studio Dev Essentials | NAZWA  | Uwzględnione                                                            |Tak |
 
 
-<sup>1</sup>*obejmuje: nie, for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, Visual Studio Industry Partner (VSIP), Imagine sieci Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & deweloperów usług, BizSpark, Microsoft zwracającej partnera (MVP ), Dyrektor region (usług pulpitu zdalnego).*
+<sup>1</sup>*obejmuje: nie, for Resale (NFR) ekwiwalentu pełnego wymiaru czasu, Visual Studio Industry Partner (VSIP), Imagine sieci Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & deweloperów usług, BizSpark, Microsoft zwracającej Professional (MVP), dyrektor Region (usług pulpitu zdalnego).* 
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

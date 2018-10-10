@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować korzyść pomocy technicznej dołączo
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
-ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
+ms.openlocfilehash: 3f6474052555734a57f5478fd3bc4b711e6fce21
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44701770"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073886"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktywuj korzyść pomocy technicznej w ramach subskrypcji programu Visual Studio
 
@@ -102,6 +102,6 @@ Po wykonaniu tych czynności będzie można wybrać plan pomocy technicznej, sko
 | Visual Studio Dev Essentials | NAZWA | Niedostępne |NAZWA|
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
 
-<sup>1</sup> *obejmuje: Imagine Premium. Nie obejmuje: Nie for Resale (NFR) programu Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine Standard, cenionym partnera firmy Microsoft (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Services.*
+<sup>1</sup> *obejmuje: Imagine Premium. Nie obejmuje: Nie, for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine Standard, Microsoft zwracającej Professional (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Usługi.*
 
 <sup>2</sup> *obejmuje: Imagine Standard.*

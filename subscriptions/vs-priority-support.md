@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści priorytetowej pomocy technicz
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 21448d75cbdbbff5468617ebb3ffc816f672ad3e
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9377302cdee771e282ab622df0b76ecf2ca3460b
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282953"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074042"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Priorytetowa pomoc techniczna w ramach subskrypcji programu Visual Studio
 
@@ -238,7 +238,7 @@ Subskrybenci z wybranych subskrypcji programu Visual Studio kwalifikujesz się d
 | Visual Studio Dev Essentials | NAZWA  | Uwzględnione                                                            |Tak |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
 
-<sup>1</sup>*obejmuje: nie do odsprzedaży, Imagine ekwiwalentu pełnego wymiaru czasu i Visual Studio Industry Partner (VSIP).  Nie obejmuje: Sieci Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & deweloperów usług, BizSpark, cenionym partnera firmy Microsoft (MVP), dyrektor Region (usług pulpitu zdalnego).*
+<sup>1</sup>*obejmuje: nie do odsprzedaży, Imagine ekwiwalentu pełnego wymiaru czasu i Visual Studio Industry Partner (VSIP).  Nie obejmuje: Sieci Microsoft Partner Network (MPN), MCT Software & Services, MCT Software & deweloperów usług, BizSpark, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego).*
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

@@ -9,12 +9,12 @@ description: Dowiedz się, jak można użyć DevOps platformy Azure jako subskry
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 34a6f601eb3ad78cb4c34af1807e66b7e7d6058e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1b536a303b2eba848c6b1cf41bcf73d6cf10975d
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859968"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073652"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Korzyści DevOps platformy Azure dla subskrybentów programu Visual Studio
 
@@ -33,7 +33,7 @@ Po zalogowaniu się w DevOps platformy Azure przy użyciu tożsamości, która z
 | Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Tablice platformy Azure i repozytoriów (Basic), planów testowych platformy Azure                                              |  Tak          |
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Tablice platformy Azure i repozytoriów (Basic), planów testowych platformy Azure                                              |  Tak          |
 
-<sup>1</sup>*obejmuje: nie for Resale (NFR) firmy Microsoft zwracającej partnera (MVP), dyrektor Region (usług pulpitu zdalnego), Visual Studio Industry Partner (VSIP), sieci Microsoft Partner Network (przedsiębiorstwo), BizSpark, MCT Software & usług dla deweloperów.   Nie obejmuje: MCT Software & Services, Wyobraź sobie.*
+<sup>1</sup>*obejmuje: nie for Resale (NFR) firmy Microsoft zwracającej Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Visual Studio Industry Partner (VSIP), sieci Microsoft Partner Network (przedsiębiorstwo), BizSpark, MCT Software & usług dla deweloperów.   Nie obejmuje: MCT Software & Services, Wyobraź sobie.*
 
 Dowiedz się więcej na temat funkcji metodyki DevOps platformy Azure:
 

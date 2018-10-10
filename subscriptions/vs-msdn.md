@@ -9,12 +9,12 @@ description: Zarejestruj się otrzymać Subskrypcja magazynu MSDN Magazine zawar
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a988c6cd546aee767c0900f2319bc456a79da266
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 65c1b2a37c11c70ab8cc8f67be21bc3ef9a35d60
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283590"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073951"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Korzyść MSDN Magazine w subskrypcji programu Visual Studio
 
@@ -59,7 +59,7 @@ Wersja cyfrowa jest dostępne dla członków programu Visual Studio Dev Essentia
 
 <sup>1</sup>*wydrukowana edition: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, Microsoft Partner Network (przedsiębiorstwo), Imagine (Premium).*
 
-*Wersja cyfrowa: MCT Software & Services, cenionym partnera firmy Microsoft (Professional), dyrektor Region (usług pulpitu zdalnego).*
+*Wersja cyfrowa: MCT Software & Services, Microsoft wycenia Professional (Professional), dyrektor Region (usług pulpitu zdalnego).*
 
 *Nie obejmuje: Imagine (standardowa), BizSpark, MCT Software & Services dla deweloperów*
 

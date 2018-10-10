@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f39e1a5c5271e806a8e90499e50cb9bd4705a5d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 725d902c181e6082c7f995ceec805aa05441bbaa
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677502"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074055"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Porady: tworzenie projektów Office w Visual Studio
   Możesz użyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do tworzenia dodatku narzędzi VSTO i na poziomie dokumentu dostosowania aplikacji pakietu Microsoft Office. Aby uzyskać więcej informacji na temat tych typów projektów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -157,7 +157,7 @@ ms.locfileid: "35677502"
   
     -   Tworzysz projekt szablonu programu Word, który jest oparty na *dotx* pliku. Folder projektu należy dodać do listy zaufanych lokalizacji tak, aby można uruchamiać i debugować projektu.  
   
-     Aby uzyskać więcej informacji na temat sposobu dodawania dokumentu do zaufanej lokalizacji, zobacz witryny sieci web Microsoft Office Online [Utwórz, usuń lub zmień zaufanej lokalizacji plików](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+     Aby uzyskać więcej informacji na temat sposobu dodawania dokumentu do zaufanej lokalizacji, zobacz witryny sieci web Microsoft Office Online [Utwórz, usuń lub zmień zaufanej lokalizacji plików](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Omówienie szablonów projektu pakietu Office](../vsto/office-project-templates-overview.md)   

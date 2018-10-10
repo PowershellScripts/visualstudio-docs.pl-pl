@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści usługi Office 365, objęte n
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f26bcc2b4e5313efcf6157d7be7cd01115594cf5
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 27be6e98bcaf030a74096a404383cbc54d64f44f
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48864007"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073912"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Usługi Office 365 w ramach subskrypcji programu Visual Studio
 
@@ -53,7 +53,7 @@ Jeśli planowane jest tworzenie aplikacji dla pakietu Office, należy aktywować
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure | Niedostępne | Brak |
 | Visual Studio Dev Essentials | Brak  | Niedostępne |Brak |
 
-<sup>1</sup>*obejmuje: nie dla Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Microsoft zwracającej partnera (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Software & Usług, Wyobraź sobie, Microsoft Partner Network.* 
+<sup>1</sup>*obejmuje: nie dla Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Microsoft zwracającej Professional (MVP), dyrektor Region (usług pulpitu zdalnego), MCT Oprogramowanie i usługi, Wyobraź sobie, Microsoft Partner Network.* 
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8bb09bd5080e82a80659905eb3db1d9dbc78dd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4e430ac4658cd34db34f87c6b051c9269c3b6454
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280340"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073665"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Korzystanie z programu Microsoft Monitoring Agent
-Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 2010 lub 2013 aplikacje błędy, problemy z wydajnością lub inne problemy można monitorować lokalnie za pomocą **Microsoft Monitoring Agent**. Zdarzenia diagnostyczne z poziomu agenta można zapisać do pliku dziennika (.iTrace) funkcji IntelliTrace. Następnie możesz otworzyć dziennika w Visual Studio Enterprise (ale nie w wersji Professional lub Community) do debugowania problemów ze wszystkim narzędziami diagnostyki programu Visual Studio. Istnieje też możliwość gromadzenia danych diagnostycznych IntelliTrace i metoda dane, uruchamiając agenta w **śledzenia** trybu. Program Microsoft Monitoring Agent można zintegrować z [usługi Application Insights](/azure/application-insights/) i [System Center Operations Manager](http://technet.microsoft.com/library/hh205987.aspx). Program Microsoft Monitoring Agent zmienić środowiska systemu docelowego, po jej zainstalowaniu.  
+Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 2010 lub 2013 aplikacje błędy, problemy z wydajnością lub inne problemy można monitorować lokalnie za pomocą **Microsoft Monitoring Agent**. Zdarzenia diagnostyczne z poziomu agenta można zapisać do pliku dziennika (.iTrace) funkcji IntelliTrace. Następnie możesz otworzyć dziennika w Visual Studio Enterprise (ale nie w wersji Professional lub Community) do debugowania problemów ze wszystkim narzędziami diagnostyki programu Visual Studio. Istnieje też możliwość gromadzenia danych diagnostycznych IntelliTrace i metoda dane, uruchamiając agenta w **śledzenia** trybu. Program Microsoft Monitoring Agent można zintegrować z [usługi Application Insights](/azure/application-insights/) i [System Center Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12)). Program Microsoft Monitoring Agent zmienić środowiska systemu docelowego, po jej zainstalowaniu.  
   
 > [!NOTE]
 >  Może również zbierać dane diagnostyczne i metody funkcji IntelliTrace dla sieci web programu SharePoint, WPF i Windows aplikacje formularza na komputerach zdalnych, bez wprowadzania zmian w środowisku docelowym przy użyciu **autonomiczny moduł zbierający IntelliTrace**. Autonomiczny moduł zbierający ma większy wpływ na wydajność niż uruchomienie programu Microsoft Monitoring Agent **Monitor** trybu. Zobacz [przy użyciu autonomicznego modułu zbierającego IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
- Jeśli używasz programu System Center 2012, za pomocą programu Microsoft Monitoring Agent programu Operations Manager Otrzymuj alerty dotyczące problemów i tworzenie elementów roboczych serwera Team Foundation Server wraz z łączami do zapisane dzienniki IntelliTrace. Następnie można przypisać te elementy robocze z inne potrzeby dalszego debugowania. Zobacz [Integrowanie programu Operations Manager z procesami programowania](http://technet.microsoft.com/library/jj614609.aspx) i [monitorowanie przy użyciu programu Microsoft Monitoring Agent](http://technet.microsoft.com/en-us/library/dn465153.aspx).  
+ Jeśli używasz programu System Center 2012, za pomocą programu Microsoft Monitoring Agent programu Operations Manager Otrzymuj alerty dotyczące problemów i tworzenie elementów roboczych serwera Team Foundation Server wraz z łączami do zapisane dzienniki IntelliTrace. Następnie można przypisać te elementy robocze z inne potrzeby dalszego debugowania. Zobacz [Integrowanie programu Operations Manager z procesami programowania](/previous-versions/system-center/system-center-2012-R2/jj614609(v=sc.12)) i [monitorowanie przy użyciu programu Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12)).  
   
  Przed rozpoczęciem Sprawdź, czy zgodnego źródła i symboli dla kodu skompilowane i wdrożone. Dzięki temu można przejść bezpośrednio do kodu aplikacji, podczas uruchamiania, debugowania i przeglądanie zdarzenia diagnostyczne w dzienniku IntelliTrace. [Skonfiguruj kompilacje](../debugger/diagnose-problems-after-deployment.md) tak, aby program Visual Studio, mogą automatycznie znaleźć i otworzyć pasujące źródło do wdrożonego kodu.  
   
@@ -34,13 +34,13 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
 3.  [Krok 3: Zapisz zarejestrowane zdarzenia](#SaveEvents)  
   
 ##  <a name="SetUpMonitoring"></a> Krok 1: Konfigurowanie programu Microsoft Monitoring Agent  
- Skonfiguruj agenta autonomiczny, na serwerze sieci web, do przeprowadzenia monitorowania lokalnego bez konieczności zmieniania aplikacji. Jeśli używasz programu System Center 2012, zobacz [instalacji programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465156.aspx).  
+ Skonfiguruj agenta autonomiczny, na serwerze sieci web, do przeprowadzenia monitorowania lokalnego bez konieczności zmieniania aplikacji. Jeśli używasz programu System Center 2012, zobacz [instalacji programu Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465156(v=sc.12)).  
   
 ###  <a name="SetUpStandaloneMMA"></a> Konfigurowanie agenta autonomiczny  
   
 1.  Upewnij się, że:  
   
-    -   Na serwerze sieci web jest uruchomiona [obsługiwane wersje programu Internetowe usługi informacyjne (IIS)](http://technet.microsoft.com/en-us/library/dn465154.aspx).  
+    -   Na serwerze sieci web jest uruchomiona [obsługiwane wersje programu Internetowe usługi informacyjne (IIS)](/previous-versions/system-center/system-center-2012-R2/dn465154(v=sc.12)).  
   
     -   Serwer sieci web ma .NET Framework 3.5, 4 lub 4.5.  
   

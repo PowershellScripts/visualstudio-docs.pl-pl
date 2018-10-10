@@ -1,7 +1,7 @@
 ---
 title: Zestaw debugowania i zwalniania konfiguracji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 04/10/2017
+ms.date: 10/05/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -33,89 +33,97 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea27fdccaadc70f22d9c9c02d75ddef98a11be13
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 18689a82fe2ae7c66eb8e8d6ef9bd115e2950cac
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153101"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073996"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Zestaw debugowania i zwalniania konfiguracji w programie Visual Studio
-Projektów programu Visual Studio mają oddzielnych wersji i konfiguracji programu do debugowania. Jak sugerują nazwy kompilujesz wersję debugera do debugowania i wersję zwolnienia do ostatecznej dystrybucji zwolnienia.  
-  
-Konfiguracja debugowania programu została skompilowana z informacji pełnego symbolicznego debugowania i bez optymalizacji. Optymalizacja komplikuje debugowanie, ponieważ relacja między kodem źródłowym i wygenerowanymi instrukcjami jest bardziej złożona.  
-  
-Konfiguracja wydania programu nie zawiera żadnych informacji symbolicznego debugowania i jest w pełni zoptymalizowana. Debugowanie informacje mogą być generowane w plikach .pdb [w zależności od opcji kompilatora](#BKMK_symbols_release) które są używane. Tworzenie plików .pdb może być bardzo przydatne, jeśli później trzeba debugować swoje wersje.  
-  
-Aby uzyskać więcej informacji o konfiguracjach kompilacji, zobacz [ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md).  
-  
-Możesz zmienić konfigurację kompilacji z **kompilacji** menu na pasku narzędzi lub na stronach właściwości projektu. Strony właściwości projektu są specyficzne dla języka. Poniższa procedura pokazuje, jak zmienić konfigurację kompilacji w menu i paska narzędzi. Aby uzyskać więcej informacji o tym, jak zmienić konfigurację kompilacji w projektach w różnych językach zobacz poniżej sekcję Zobacz też.  
-  
-## <a name="change-the-build-configuration"></a>Zmień konfigurację kompilacji  
-  
-1.  Z **kompilacji** menu, wybierz opcję **programu Configuration Manager**, a następnie wybierz **debugowania** lub **wersji**.  
-  
-2.  Na pasku narzędzi wybierz **debugowania** lub **wersji** z **konfiguracje rozwiązania** pola listy.  
-  
-     ![Konfiguracja kompilacji narzędzi](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
-  
-     Ten pasek narzędzi nie jest dostępny w wersji Express. Możesz użyć **Kompiluj rozwiązanie F6** i **Rozpocznij debugowanie F5** elementy menu, aby wybrać konfigurację.
+
+Projektów programu Visual Studio mają oddzielnych wersji i konfiguracji programu do debugowania. Kompilujesz wersję debugera do debugowania i wersję zwolnienia do ostatecznej dystrybucji zwolnienia.
+
+W konfiguracji debugowania programach kompiluje z informacji pełnego symbolicznego debugowania i bez optymalizacji. Optymalizacja komplikuje debugowanie, ponieważ relacja między kodem źródłowym i wygenerowanymi instrukcjami jest bardziej złożona.
+
+Konfiguracja wydania programu ma nie symbolicznej informacji debugowania i jest w pełni zoptymalizowana. Debugowanie informacje mogą być generowane w plikach .pdb [w zależności od opcji kompilatora](#BKMK_symbols_release) które są używane. Tworzenie plików .pdb może być przydatne, jeśli później trzeba debugować swoje wersje.
+
+Aby uzyskać więcej informacji o konfiguracjach kompilacji, zobacz [konfiguracje kompilacji omówienie](../ide/understanding-build-configurations.md).
+
+Możesz zmienić konfigurację kompilacji z **kompilacji** menu na pasku narzędzi lub na stronach właściwości projektu. Strony właściwości projektu są specyficzne dla języka. Poniższa procedura pokazuje, jak zmienić konfigurację kompilacji w menu i paska narzędzi. Aby uzyskać więcej informacji o tym, jak zmienić konfigurację kompilacji w projektach w różnych językach, zobacz [Zobacz też](#see-also) poniższej sekcji.
+
+## <a name="change-the-build-configuration"></a>Zmień konfigurację kompilacji
+
+Aby zmienić konfigurację kompilacji, albo:
+
+* Z **kompilacji** menu, wybierz opcję **programu Configuration Manager**, a następnie wybierz **debugowania** lub **wersji**.
+
+lub
+
+* Na pasku narzędzi wybierz **debugowania** lub **wersji** z **konfiguracje rozwiązania** listy.
+
+  ![Konfiguracja kompilacji pasków narzędzi](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")
 
 ## <a name="BKMK_symbols_release"></a>Generowanie plików symboli (.pdb) dla kompilacji
 
-Dla większości typów projektów pliki .pdb są generowane domyślnie dla obu debugowania i kompilacje wydania, ale domyślne ustawienia są różne w zależności od Twojego projektu określonego typu i wersji programu Visual Studio. Można skonfigurować tego, czy kompilator generuje pliki .pdb i jakiego rodzaju informacje debugowania.
+Istnieje możliwość generowania plików symboli (.pdb) i jakie informacje debugowania. Dla większości typów projektów kompilator generuje pliki symboli domyślnie do debugowania i wersji kompilacji, podczas gdy inne ustawienia domyślne różnią się typów projektów i wersji programu Visual Studio.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Debuger będzie ładował tylko plik .pdb dla pliku wykonywalnego, który dokładnie pasuje do pliku .pdb, który z kolei został utworzony podczas kompilowania pliku wykonywalnego (czyli .pdb musi być plikiem oryginalnym lub kopią oryginalnego pliku .pdb). Aby uzyskać więcej informacji, zobacz [Dlaczego Visual Studio wymaga, aby debuger symbol dokładnej zgodności plików plików binarnych, które zostały skompilowane?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
 
 Każdy typ projektu może mieć inny sposób ustawienia tych opcji.
 
 ### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>Generuj pliki symboli dla projektów C#, ASP.NET lub Visual Basic
 
-Aby uzyskać szczegółowe informacje na temat ustawień projektu dla konfiguracji debugowania w języku C#, zobacz [ustawienia konfiguracji debugowania języka C# projektu](../debugger/project-settings-for-csharp-debug-configurations.md). Dla języka Visual Basic, zobacz [w tym temacie](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
+Aby uzyskać szczegółowe informacje na temat ustawień projektu dla konfiguracji debugowania w języku C# lub Visual Basic, zobacz [ustawienia projektu dla języka C# konfiguracji debugowania](../debugger/project-settings-for-csharp-debug-configurations.md) lub [ustawienia projektu dla języka Visual Basic konfiguracjidebugowania](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
 
-1. Kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań i wybierz polecenie **właściwości**.
+1. W Eksploratorze rozwiązań wybierz projekt.
 
-2. Wybierz **wersji** lub **debugowania** opracowano na podstawie **konfiguracji** listy.
+2. Wybierz **właściwości** ikonę (lub naciśnij **klawisze Alt + Enter**).
 
-2. Wybierz **kompilacji** ustawienia, a następnie kliknij przycisk **zaawansowane** przycisku.
+3. W okienku bocznym wybierz **kompilacji** (lub **skompilować** w języku Visual Basic).
 
-    W języku Visual Basic, możesz wybrać **skompilować** ustawienia i **zaawansowane opcje kompilacji** zamiast tego przycisku.
+4. W **konfiguracji** wybierz **debugowania** lub **wersji**.
 
-3. Wybierz **pełne**, **przenośne**, lub **pdb_only** w **informacje o debugowaniu** pole listy (**Generuj informacje debugowania** w języku Visual Basic).
+5. Wybierz **zaawansowane** przycisk (lub **zaawansowane opcje kompilacji** przycisku w języku Visual Basic).
 
-    Przenośne format jest najbardziej aktualną format dla wielu platform .NET Core. Aby uzyskać więcej informacji na temat opcji, zobacz [okno dialogowe Zaawansowane ustawienia kompilacji (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
+6. W **informacje o debugowaniu** listy (lub **Generuj informacje debugowania** listy w języku Visual Basic), wybierz **pełne**, **tylko do Pdb**, lub **Przenośne**.
 
-    ![Generowanie plików PDB dla kompilacji w języku C#](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
+   Przenośne format jest najbardziej aktualną format dla wielu platform .NET Core. Aby uzyskać więcej informacji na temat opcji, zobacz [okno dialogowe Zaawansowane ustawienia kompilacji (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
-4. Skompilowanie projektu.
+   ![Generowanie plików PDB dla kompilacji w języku C#](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
 
-    Utworzone pliki symboli w tym samym folderze co plik wykonywalny lub plik wyjściowy głównego.
+7. Skompilowanie projektu.
+
+   Kompilator tworzy pliki symboli w tym samym folderze co plik wykonywalny lub plik wyjściowy głównego.
 
 ### <a name="generate-symbol-files-for-a-c-project"></a>Generuj pliki symboli dla projektu w języku C++
 
-1. Kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań i wybierz polecenie **właściwości**.
+1. W Eksploratorze rozwiązań wybierz projekt.
 
-2. Wybierz **wersji** lub **debugowania** opracowano na podstawie **konfiguracji** listy.
+2. Wybierz **właściwości** ikonę (lub naciśnij **klawisze Alt + Enter**).
 
-2. W obszarze **konsolidatora > debugowanie**, wybierz żądane opcje **Generuj informacje o debugowaniu**.
+3. W **konfiguracji** wybierz **debugowania** lub **wersji**.
 
-    Aby uzyskać szczegółowe informacje na temat ustawień projektu dla konfiguracji debugowania w języku C++, zobacz [ustawienia konfiguracji debugowania języka C++ projektu](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+4. W okienku bocznym wybierz **konsolidatora > debugowanie**, następnie wybierz opcje **Generuj informacje o debugowaniu**.
 
-4. Skonfiguruj opcje generowania plików bazy danych programu
+   Aby uzyskać szczegółowe informacje na temat ustawień projektu dla konfiguracji debugowania w języku C++, zobacz [ustawienia projektu dla języka C++ konfiguracji debugowania](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
-    W większości projektów C++, wartość domyślna to `$(OutDir)$(TargetName).pdb`, które generuje pliki .pdb w folderze wyjściowym.
+5. Skonfiguruj opcje **Generowanie plików bazy danych programu**.
 
-    ![Generowanie plików PDB dla kompilacji w języku C++](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus") 
+   W większości projektów C++, wartość domyślna to `$(OutDir)$(TargetName).pdb`, które generuje pliki .pdb w folderze wyjściowym.
 
-5. Skompilowanie projektu.
+   ![Generowanie plików PDB dla kompilacji w języku C++](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus")
 
-    Utworzone pliki symboli w tym samym folderze co plik wykonywalny lub plik wyjściowy głównego.
-  
-## <a name="see-also"></a>Zobacz też  
- [Określanie plików symboli (.pdb) i plików źródłowych w debugerze integrujące Studio](../debugger/debugger-settings-and-preparation.md)  
- [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
- [Ustawienia projektu dla konfiguracji debugowania języka C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Ustawienia projektu dla języka C# konfiguracji debugowania](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Ustawienia projektu dla języka Visual Basic konfiguracji debugowania](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Instrukcje: Tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md)
+6. Skompilowanie projektu.
+
+   Kompilator tworzy pliki symboli w tym samym folderze co plik wykonywalny lub plik wyjściowy głównego.
+
+## <a name="see-also"></a>Zobacz też
+ 
+[Określanie plików symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)<br/>
+[Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)<br/>
+[Ustawienia projektu dla konfiguracji debugowania w języku C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
+[Ustawienia projektu dla konfiguracji debugowania języka C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
+[Ustawienia projektu dla konfiguracji debugowania w języku Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
+[Porady: tworzenie i edytowanie konfiguracji](../ide/how-to-create-and-edit-configurations.md)

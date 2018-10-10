@@ -9,12 +9,12 @@ description: Dowiedz się, jak pobrać i zainstalować program Visual Studio IDE
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f65deb92684f043597256d8e2f0664f18da9cfa1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 775ab55066c241eb4881e19a33a8557aeada2aa4
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624268"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073847"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>Za pośrednictwem korzyści z programu Visual Studio 2017
 
@@ -68,7 +68,7 @@ Aby pobrać IDE:
 | Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              | Niedostępne                                              |  Brak          |
 | Visual Studio Dev Essentials | Brak  | Visual Studio Community |Tak |
 
-<sup>1</sup>*obejmuje: nie, for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, Microsoft zwracającej partnera (MVP), dyrektor Region (usług pulpitu zdalnego).    Nie obejmuje: MCT Software & Services.*
+<sup>1</sup>*obejmuje: nie, for Resale (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, MCT Software & deweloperów usług, BizSpark, Imagine, Microsoft zwracającej Professional (MVP), dyrektor Region (RD) .    Nie obejmuje: MCT Software & Services.*
 
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.

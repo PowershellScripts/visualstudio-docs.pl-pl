@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować korzyść platformy Azure, zawarte w T
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b8f3542fce0d04e4e6efeba6e2558740c5f5d12f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2a59953eb3af65430492d892e58f51f2d51f63e5
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282316"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073964"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Dzięki platformie Microsoft Azure w ramach subskrypcji programu Visual Studio
 
@@ -44,7 +44,7 @@ Jako subskrybent programu Visual Studio mogą używać programu Microsoft Azure,
 | Visual Studio Enterprise – BizSpark                          | 150 USD środków miesięcznie         |   Tak                                                        |
 | Visual Studio Enterprise — MCT Software & Services           | miesięczne środki w wysokości 100 USD         |   Tak                                                        |
 | Visual Studio Enterprise — MCT Software & Services dla deweloperów | 150 USD środków miesięcznie         |   Tak                                                        |
-* Zawiera nie for Resale (NFR), cenionym partnera firmy Microsoft (MVP), dyrektor Region (usług pulpitu zdalnego), Visual Studio Industry Partner (VSIP)
+* Zawiera nie for Resale (NFR), Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Visual Studio Industry Partner (VSIP)
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści Office 365 dla deweloperów, 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a97f32bdb2e4a2639962cb3bfc1240f27473bfd6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9c77062873704f6e92d04aa4e949f1db3c1c71f7
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283187"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073977"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Korzyści z subskrypcji dewelopera Office 365 w ramach subskrypcji programu Visual Studio
 
@@ -56,7 +56,12 @@ Subskrybenci z wybranych subskrypcji programu Visual Studio Enterprise uzyskują
     > [!div class="mx-imgBorder"]
     > ![Sprawdzanie poprawności kodu deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-setup.png)
 
-To wszystko!  Zostanie wyświetlona strona wyświetlania informacji dostosowane do potrzeb użytkownika.  Aby uzyskać dostęp do subskrypcji dewelopera, przejdź do [office.com](https://www.office.com) i zaloguj się przy użyciu Identyfikatora użytkownika i hasła, które zostały właśnie utworzony.
+To wszystko!  Zostanie wyświetlona strona wyświetlania informacji dostosowane do potrzeb użytkownika.  
+
+## <a name="next-steps"></a>Następne kroki
+Aby uzyskać dostęp do subskrypcji dewelopera, przejdź do [office.com](https://www.office.com) i zaloguj się przy użyciu Identyfikatora użytkownika i hasła, które zostały właśnie utworzony.
+
+Aby dowiedzieć się więcej na temat subskrypcji dewelopera Office 365, zapoznaj się z [często zadawane pytania dotyczące programu Office 365 dla deweloperów programu](https://docs.microsoft.com/office/developer-program/office-365-developer-program-faq). 
 
 
 ## <a name="eligibility"></a>Uprawnienie
@@ -69,7 +74,7 @@ To wszystko!  Zostanie wyświetlona strona wyświetlania informacji dostosowane 
 | Visual Studio Dev Essentials | NAZWA  | Niedostępne |NAZWA |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
 
-<sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, BizSpark, MCT Software & Services dla deweloperów, MCT Software & Services.  Nie obejmuje: Sieci Microsoft Partner Network (MPN), Wyobraź sobie, partnerem firmy Microsoft cenionym (MVP), dyrektor Region (usług pulpitu zdalnego).*
+<sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), ekwiwalentu pełnego wymiaru czasu, BizSpark, MCT Software & Services dla deweloperów, MCT Software & Services.  Nie obejmuje: Sieci Microsoft Partner Network (MPN), Wyobraź sobie, systemu Microsoft cenionym Professional (MVP), dyrektor Region (usług pulpitu zdalnego).*
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

@@ -9,12 +9,12 @@ description: Więcej informacji na temat umiejętności mi się — obsługiwane
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscriptions
-ms.openlocfilehash: 1eb58fb8667e2eebea1108d0df2d654917ed2702
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 8f62fdb14847048f212c055017b1461085e3529b
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243916"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073717"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Umiejętności mnie w górę - działającemu korzyści szkolenie Opsgility w subskrypcji programu Visual Studio
 
@@ -45,7 +45,7 @@ Wybrane subskrypcje programu Visual Studio obejmują dostęp do szkolenia wykwal
 | Visual Studio Dev Essentials | NAZWA  | Niedostępne | NAZWA  |
 | Program Visual Studio Enterprise, Visual Studio Professional (miesięcznych w chmurze) | Azure                                       | Niedostępne                                                           |NAZWA|
 
-*Nie obejmuje: Sieci Microsoft Partner Network (MPN), cenionym partnera firmy Microsoft (MVP) i Microsoft Certified Trainer, BizSpark, Imagine, NFR, ekwiwalentu pełnego wymiaru czasu*
+*Nie obejmuje: Sieci Microsoft Partner Network (MPN), Microsoft wycenia Professional (MVP) i Microsoft Certified Trainer, BizSpark, Imagine, NFR, ekwiwalentu pełnego wymiaru czasu*
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 

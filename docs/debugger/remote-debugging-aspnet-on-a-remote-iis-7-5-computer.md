@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4a08c957e03dd2df80d9b3b770e569ba1e64104f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d64850910d1a6a25514eb48e46f70168d245e168
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38780991"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101094"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS
 Do debugowania aplikacji ASP.NET, która została wdrożona w usługach IIS, zainstalować i uruchomić narzędzia zdalne na komputerze, w której została wdrożona aplikacja, a następnie dołącz do uruchomionej aplikacji w programie Visual Studio.
@@ -166,12 +166,7 @@ Możesz również publikować i wdrażanie aplikacji przy użyciu systemu plikó
 
 W tym samouczku używamy programu Visual Studio 2017.
 
-Jeśli masz problem z otwarcie strony z pobranymi zdalnego debugera, zobacz [odblokować pobierania pliku](../debugger/remote-debugging.md#unblock_msvsmon) celu uzyskania pomocy.
-
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-> [!TIP]
-> W niektórych scenariuszach może być najbardziej efektywny, aby uruchomić zdalny debuger z udziału plików. Aby uzyskać więcej informacji, zobacz [uruchomienia zdalnego debugera z udziału plików](../debugger/remote-debugging.md#fileshare_msvsmon).
   
 ## <a name="BKMK_setup"></a> Konfigurowanie zdalnego debugera w systemie Windows Server
 

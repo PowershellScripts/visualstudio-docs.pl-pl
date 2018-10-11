@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 813fdbccaf7bb685f0b4bf182f0bd0aede907f83
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551665"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101137"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Jak przypisać środowisko Python, które jest używane dla projektu
 
@@ -50,7 +50,7 @@ Menu kontekstowe **środowiska Python** węzła zawiera także dodatkowe polecen
 
 Korzyścią z używania środowiska wirtualnego jest, że podczas tworzenia projektu wraz z upływem czasu, środowisko wirtualne zawsze odzwierciedla dokładnie zależności projektu. (Globalny środowisku współdzielonym, z drugiej strony, zawiera dowolnej liczby bibliotek czy będziesz ich używać w projekcie lub nie). Następnie można łatwo utworzyć *requirements.txt* pliku ze środowiska wirtualnego, który jest następnie używany do ponownej instalacji tych zależności na innym komputerze programowania lub produkcji. Aby uzyskać więcej informacji, zobacz [zarządzania wymagane pakiety przy użyciu pliku requirements.txt](managing-required-packages-with-requirements-txt.md).
 
-Po otwarciu projektu w programie Visual Studio, który zawiera *requirements.txt* plików, programu Visual Studio automatycznie udostępnia opcję do odtworzenia w środowisku wirtualnym. Na komputerach, gdzie nie jest zainstalowany program Visual Studio, takich jak usługi Azure App Service można użyć `pip install -r requirements.txt` próbie przywrócenia pakietów (ten proces jest opisany w [zarządzanie z językiem Python w usłudze Azure App Service](managing-python-on-azure-app-service.md)).
+Po otwarciu projektu w programie Visual Studio, który zawiera *requirements.txt* plików, programu Visual Studio automatycznie udostępnia opcję do odtworzenia w środowisku wirtualnym. Komputery, na którym nie zainstalowano programu Visual Studio, można użyć `pip install -r requirements.txt` próbie przywrócenia pakietów.
 
 Ponieważ środowisko wirtualne zawiera ustalona ścieżka do interpretera podstawowej i Utwórz ponownie używając środowiska *requirements.txt*, zwykle pominąć folderu całego środowiska wirtualnego z kontroli źródła.
 

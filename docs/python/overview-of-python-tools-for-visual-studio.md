@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fe19c1239c2f08417b1b7ee76cb07ae150c891d1
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: c70d13237b1d6fb3bfac130e97d3516efd306569
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029150"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101176"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
@@ -99,7 +99,7 @@ Informacje dodatkowe:
 
 ## <a name="full-featured-debugging"></a>Oferujący debugowania
 
-Jedną z mocnych programu Visual Studio jest jego zaawansowany debuger. Dla języka Python w szczególności program Visual Studio zawiera debugowanie trybu mieszanego języków Python/C++, zdalne debugowanie w systemie Linux, zdalne debugowanie na platformie Azure, profilowanie w ciągu **Interactive** okna i debugowanie testów jednostkowych dla kodu Python.
+Jedną z mocnych programu Visual Studio jest jego zaawansowany debuger. Dla języka Python w szczególności program Visual Studio zawiera języków Python/C++ trybu mieszanego debugowanie, zdalne debugowanie w systemie Linux, debugowania w ramach **Interactive** okna i debugowanie testów jednostkowych dla kodu Python.
 
 ![Debuger programu Visual Studio dla języka Python, przedstawiający okno podręczne wyjątku](media/debugging-exception-popup.png)
 
@@ -109,7 +109,6 @@ Informacje dodatkowe:
 - Dokumentacja: [debugowania języka Python](debugging-python-in-visual-studio.md)
 - Dokumentacja: [debugowanie trybu mieszanego języków Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - Dokumentacja: [zdalne debugowanie w systemie Linux](debugging-python-code-on-remote-linux-machines.md)
-- Dokumentacja: [zdalnego debugowania na platformie Azure](debugging-remote-python-code-on-azure.md)
 - Dokumentacja funkcji ogólne Visual Studio: [funkcji samouczek debuger programu Visual Studio](../debugger/debugger-feature-tour.md)
 
 ## <a name="profiling-tools-with-comprehensive-reporting"></a>Narzędzia profilowania przy użyciu kompleksowe raportowanie
@@ -136,16 +135,11 @@ Informacje dodatkowe:
 - Dokumentacja: [testów jednostkowych narzędzia dla języka Python](unit-testing-python-in-visual-studio.md)
 - Dokumentacja funkcji ogólne Visual Studio: [kodu testu jednostkowego](../test/unit-test-your-code.md).
 
-## <a name="publish-to-azure-and-azure-sdk-for-python"></a>Publikowanie na platformie Azure oraz Azure SDK dla języka Python
+## <a name="azure-sdk-for-python"></a>Zestaw Azure SDK dla języka Python
 
-Program Visual Studio obsługuje zintegrowane publikowanie aplikacji sieci web i usług w chmurze na platformie Azure. Program Visual Studio zawiera podstawowe *web.config* szablony statycznych i dynamicznych zawartości elementu. Obciążenie języka Python zawiera także zestaw Azure SDK dla języka Python, co upraszcza korzystanie usług platformy Azure z Windows, Mac OS X i Linux, aplikacji.
+Obciążenie języka Python zawiera zestaw Azure SDK dla języka Python, co upraszcza korzystanie usług platformy Azure z aplikacji Windows, Mac OS X i Linux.
 
-![Publikowanie aplikacji w języku Python na platformie Azure w programie Visual Studio](media/azure-publish-dialog.png)
-
-Informacje dodatkowe:
-
-- Dokumentacja: [publikowanie na platformie Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- Dokumentacja: [zestaw Azure SDK dla języka Python](azure-sdk-for-python.md)
+Aby uzyskać więcej informacji, zobacz [zestawu Azure SDK dla języka Python](azure-sdk-for-python.md)
 
 ## <a name="python-training-on-microsoft-virtual-academy"></a>Python Szkolenie Microsoft Virtual Academy
 

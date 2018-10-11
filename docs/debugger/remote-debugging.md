@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46913c1bb671c1986c4f302a84d4183fe17f5878
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9edfae9eb2109a81208cd864dd992dee565f7958
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778297"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101095"
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 Można debugować aplikację programu Visual Studio, która została wdrożona na innym komputerze. Aby to zrobić, należy użyć zdalnego debugera programu Visual Studio.
@@ -47,47 +47,6 @@ Jeśli po prostu chcesz pobrać i zainstalować zdalnego debugera i nie ma potrz
 ## <a name="download-and-install-the-remote-tools"></a>Pobieranie i instalowanie narzędzi zdalnych
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-## <a name="unblock_msvsmon"></a> Odblokuj pobierania narzędzia zdalnej w systemie Windows Server
-
-Domyślne ustawienia zabezpieczeń w programie Internet Explorer w systemie Windows Server można tworzyć i czasochłonne pobrać składników, takich jak remote tools.
-
-* Włączeniu konfiguracji zwiększonych zabezpieczeń programu Internet Explorer, która uniemożliwia otwarcie witryny sieci Web i uzyskiwanie dostępu do zasobów sieci web, chyba że domenę zawierającą zasobu jest jawnie dozwolone (to znaczy, że zaufane). Mimo że to ustawienie zostanie wyłączone, nie jest zalecane, ponieważ jest to możliwe stanowi zagrożenie bezpieczeństwa.
-
-* W systemie Windows Server 2016, domyślne ustawienie w **Opcje internetowe** > **zabezpieczeń** > **Internet**  >   **Poziom niestandardowy** > **pliki do pobrania** również wyłącza pobierania plików. Jeśli wybierzesz pobieranie narzędzi zdalnych bezpośrednio w systemie Windows Server, należy włączyć pobieranie plików.
-
-Aby pobrać narzędzia w systemie Windows Server, zaleca się jedną z następujących czynności:
-
-* Pobieranie narzędzi zdalnych na innym komputerze, takie jak jednego uruchomionego programu Visual Studio, a następnie skopiuj *.exe* plików do systemu Windows Server.
-
-* Uruchom zdalny debuger [z udziału plików](#fileshare_msvsmon) na komputerze programu Visual Studio.
-
-* Pobierz narzędzia zdalne bezpośrednio w systemie Windows Server i akceptowanie poleceń, aby dodać Zaufane witryny. Nowoczesnych witryn internetowych często zawierają wiele innych zasobów, więc może to spowodować wiele monitów. Ponadto wszystkie linki przekierowanego może być konieczne należy dodać ręcznie. Można dodać niektóre Zaufane witryny przed rozpoczęciem pobierania. Przejdź do **Opcje internetowe > Zabezpieczenia > Zaufane witryny > witryny** i dodaj następujące witryny.
-
-  * VisualStudio.microsoft.com
-  * download.visualstudio.microsoft.com
-  * temat: puste
-
-  Dla starszych wersji debugera na my.visualstudio.com Dodaj te dodatkowe lokacje, aby upewnić się, że ten użytkownik zaloguje się ponownie:
-
-  * microsoft.com
-  * go.microsoft.com
-  * download.microsoft.com
-  * My.VisualStudio.com
-  * login.microsoftonline.com
-  * Login.Live.com
-  * secure.aadcdn.microsoftonline-p.com
-  * MSFT.STS.microsoft.com
-  * auth.gfx.MS
-  * app.vssps.visualstudio.com
-  * vlscppe.microsoft.com
-  * Query.prod.cms.RT.microsoft.com
-
-    Jeśli możesz dodać te domeny podczas pobierania narzędzi zdalnych, a następnie wybierz **Dodaj** po wyświetleniu monitu.
-
-    ![Okno dialogowe zawartości zablokowane](../debugger/media/remotedbg-blocked-content.png)
-
-    Po pobraniu oprogramowania, możesz uzyskać niektóre dodatkowe żądania, aby przyznać uprawnienie do ładowania różnych skrypty witryny sieci web i zasobami. Na my.visualstudio.com zaleca się, że dodasz dodatkowe domeny, aby upewnić się, że ten użytkownik zaloguje się ponownie.
 
 ## <a name="requirements_msvsmon"></a> Wymagania
 
@@ -163,7 +122,7 @@ Do debugowania na platformie ASP.NET i innych środowisk serwera, należy urucho
 ## <a name="see-also"></a>Zobacz także
 
 - [Przewodnik po funkcjach debugera](../debugger/debugger-feature-tour.md)
-- [Skonfiguruj zaporę Windows do zdalnego debugowania](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
+- [Konfigurowanie zapory systemu Windows na potrzeby debugowania zdalnego](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Przypisania portów debugera zdalnego](../debugger/remote-debugger-port-assignments.md)
 - [Zdalne debugowanie platformy ASP.NET Core na komputerze zdalnym usług IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)
 - [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)

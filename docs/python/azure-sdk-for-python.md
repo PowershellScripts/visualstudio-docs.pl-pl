@@ -1,7 +1,7 @@
 ---
 title: Zestaw Azure SDK dla języka Python
 description: Zestaw Azure SDK dla języka Python ułatwia korzystanie z usług Microsoft Azure z poziomu aplikacji Python działające na dowolnej platformie.
-ms.date: 09/56/2018
+ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,16 +12,16 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 0a68027e975357a404cd7b4f29c837767c60e015
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: b1b41fe707c751b5cd32706d1c27f707f964dff8
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228815"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100929"
 ---
 # <a name="azure-sdk-for-python"></a>Zestaw Azure SDK dla języka Python
 
-Zestaw Azure SDK dla języka Python ułatwia wykorzystanie i zarządzanie usługami Microsoft Azure z poziomu aplikacji z systemem Windows, Mac OS x i Linux.
+Zestaw Azure SDK dla języka Python ułatwia wykorzystanie i zarządzanie usługami Microsoft Azure z poziomu aplikacji w systemie Windows, MacOS i Linux.
 
 ## <a name="installation"></a>Instalacja
 
@@ -37,21 +37,15 @@ Możesz również śledzić [zainstalowania języka Python i zestawu SDK](https:
 
 ## <a name="documentation"></a>Dokumentacja
 
-Pełną dokumentację znajduje się na [platforma Azure w Centrum deweloperów języka Python](https://docs.microsoft.com/en-us/python/azure/?view=azure-python). Qucik środowisko pracy, zobacz [wprowadzenie do projektowania aplikacji w chmurze przy użyciu języka Python](/python/azure/python-sdk-azure-get-started?view=azure-python).
+[Zestawu Azure SDK dla Centrum deweloperów języka Python](https://docs.microsoft.com/python/azure/?view=azure-python) zawiera również liczbę przydatne zasoby, w tym liczby samouczków:
 
-Zobacz też tych samouczków dotyczących innych za pomocą usług platformy Azure za pomocą języka Python:
-
-- Usługa Azure App Service:
-  - [Tworzenie aplikacji sieci web](/azure/app-service/containers/quickstart-python)
-  - [Tworzenie aplikacji internetowej Docker Python i bazy danych PostgreSQL na platformie Azure](/azure/app-service/containers/tutorial-docker-python-postgresql-app)
-- Usługa Azure Storage:
-  - [Magazyn obiektów blob](/azure/storage/blobs/storage-quickstart-blobs-python)
-  - [Table storage i Cosmos DB](/azure/cosmos-db/table-storage-how-to-use-python)
-  - [Usługa queue storage](/azure/storage/queues/storage-python-how-to-use-queue-storage)
-  - [Flask i Cosmos DB](/azure/cosmos-db/sql-api-python-application)
-- Usługa Service Bus
-  - [Kolejki usługi Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
-  - [Tematy/subskrypcje usługi Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
+- Tworzenie aplikacji sieci web w usłudze App Service Azuyre na Linux(/azure/app-service/containers/quickstart-python).
+- [Magazyn obiektów blob](/azure/storage/blobs/storage-quickstart-blobs-python)
+- [Magazyn tabel](/azure/cosmos-db/table-storage-how-to-use-python)
+- [Usługa queue storage](/azure/storage/storage-python-how-to-use-queue-storage)
+- [Usługi Azure Cosmos DB](/azure/cosmos-db/sql-api-python-application)
+- [Kolejki usługi Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
+- [Tematy/subskrypcje usługi Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
 - [Zarządzanie usługami](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
 
 Dla publicznych interfejsów API bez dokumentacji, testy jednostek [repozytorium SDK GitHub](https://github.com/Azure/azure-sdk-for-python) są dobrym źródłem informacji:

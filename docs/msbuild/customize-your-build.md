@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c4fa433a3eb2318c36545a285cfd57386c169eb2
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175959"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101033"
 ---
 # <a name="customize-your-build"></a>Dostosowywanie kompilacji
 
@@ -33,6 +33,11 @@ A *Directory.Build.rsp* pliku w lub powyżej katalogu źródłowego zostaną zas
 Przed MSBuild wersji 15 Jeśli chcesz podać nowe, niestandardowe właściwości do projektów w rozwiązaniu, trzeba było ręcznie Dodaj odwołanie do tej właściwości do każdego pliku projektu w rozwiązaniu. Czy zdefiniować właściwość w *.props* pliku, a następnie zaimportuj jawnie *.props* pliku każdego projektu w rozwiązaniu, między innymi.
 
 Jednak teraz możesz dodać nową właściwość do każdego projektu w jednym kroku, definiując je w pojedynczy plik o nazwie *Directory.Build.props* w folderze głównym, który zawiera Twoje źródło. Po uruchomieniu programu MSBuild *Microsoft.Common.props* wyszukuje struktury katalogów dla *Directory.Build.props* pliku (i *Microsoft.Common.targets* szuka *Directory.Build.targets*). Jeśli zostanie znaleziony, importuje właściwości. *Directory.Build.props* jest plikiem zdefiniowanych przez użytkownika zawiera dostosowania do projektów w katalogu.
+
+> [!NOTE]
+> Systemy plików z systemem Linux jest rozróżniana wielkość liter. Upewnij się, że wielkość liter w wyrazie Directory.Build.props filename dokładnie odpowiada lub nie zostanie wykryty w procesie kompilacji.
+>
+> Zobacz [problem w usłudze GitHub](https://github.com/dotnet/core/issues/1991#issue-368441031) Aby uzyskać więcej informacji.
 
 ### <a name="directorybuildprops-example"></a>Przykład Directory.Build.props
 

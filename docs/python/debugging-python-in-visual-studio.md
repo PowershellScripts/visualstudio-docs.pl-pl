@@ -1,7 +1,7 @@
 ---
 title: Debugowanie kodu języka Python
 description: Przewodnik po funkcji debugowania w programie Visual Studio dla kodu Python, w tym ustawiania punktów przerwania, przechodzenie krok po kroku, sprawdzania wartości, patrząc wyjątków i debugowania w oknie interaktywnym.
-ms.date: 09/25/2018
+ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa331093e6085179a20638b1314200f65deb6a61
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228945"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101163"
 ---
 # <a name="debug-your-python-code"></a>Debugowanie kodu w języku Python
 
@@ -25,7 +25,6 @@ Program Visual Studio udostępnia kompleksowe środowisko debugowania dla język
 Zobacz też następujące artykuły debugowania specyficzne dla scenariusza:
 
 - [Zdalne debugowanie w systemie Linux](debugging-python-code-on-remote-linux-machines.md)
-- [Zdalne debugowanie platformy Azure](debugging-remote-python-code-on-azure.md)
 - [Debugowanie w trybie mieszanym języków Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [Symbole debugowania w trybie mieszanym](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 

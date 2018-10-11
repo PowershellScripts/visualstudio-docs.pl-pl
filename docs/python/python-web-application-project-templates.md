@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ad905581252bd2af7307292d617669d00320c398
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029030"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101007"
 ---
 # <a name="python-web-application-project-templates"></a>Szablony projektów aplikacji sieci web języka Python
 
@@ -34,7 +34,7 @@ Tworzenie projektu z szablonu za pomocą **pliku** > **New** > **projektu**. Aby
 
 Ogólny **projektu sieci Web** szablon, wspomniano wcześniej, zawiera tylko pusty projekt programu Visual Studio z żadnego kodu i żadnych założeń niż trwa projektu języka Python. Aby uzyskać szczegółowe informacje na temat **usługa w chmurze** szablonu, zobacz [projektów usług w chmurze platformy Azure dla języka Python](python-azure-cloud-service-project-template.md).
 
-Wszystkie inne szablony zależą od struktury sieci web Bottle, Flask i Django i można podzielić na trzy główne grupy, zgodnie z opisem w poniższych sekcjach. Aplikacje utworzone przez dowolnego z tych szablonów zawierają kod wystarczający do uruchamiania i debugowania aplikacji w środowisku lokalnym. Każdy z nich są także niezbędne [obiekt aplikacji WSGI](http://www.python.org/dev/peps/pep-3333/) (python.org) do [wdrażanie w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
+Wszystkie inne szablony zależą od struktury sieci web Bottle, Flask i Django i można podzielić na trzy główne grupy, zgodnie z opisem w poniższych sekcjach. Aplikacje utworzone przez dowolnego z tych szablonów zawierają kod wystarczający do uruchamiania i debugowania aplikacji w środowisku lokalnym. Każdy z nich są także niezbędne [obiekt aplikacji WSGI](http://www.python.org/dev/peps/pep-3333/) (python.org) do użytku z serwerów sieci web w środowisku produkcyjnym.
 
 ### <a name="blank-group"></a>Pusta grupa
 

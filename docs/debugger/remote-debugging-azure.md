@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: cc889accc116fb2115ae56155a190ed6ea2d3fc0
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 821da7c5d131acea62e944055ec6c450e4bc5154
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797855"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101111"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Zdalne debugowanie platformy ASP.NET Core w usługach IIS na platformie Azure w programie Visual Studio 2017
 
@@ -183,8 +183,6 @@ Jeśli nie używasz, narzędzie Web Deploy, należy opublikować i wdrażanie ap
 ### <a name="BKMK_msvsmon"></a> Pobierz i zainstaluj narzędzia zdalnego w systemie Windows Server
 
 W tym samouczku używamy programu Visual Studio 2017.
-
-Jeśli masz problem z otwarcie strony z pobranymi zdalnego debugera, zobacz [odblokować pobierania pliku](../debugger/remote-debugging.md#unblock_msvsmon) celu uzyskania pomocy.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   

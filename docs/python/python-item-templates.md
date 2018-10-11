@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8319c99e5de12ce1c09a2c20fc5cf1b132f34092
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c282bdbfbfad589418c48d6caa65dedfdc7a53b2
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776038"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100942"
 ---
 # <a name="python-item-templates"></a>Szablony elementów języka Python
 
@@ -42,18 +42,13 @@ W poniższej tabeli opisano skrótowo efekt każdego szablonu elementu w obrębi
 | **Okno WPF v Ironpythonu** | Okno WPF, składający się z dwóch plików side-by-side: *.xaml* pliku, który definiuje `<Window>` z pustym `<Grid>` elementu, a skojarzone *PY* pliku, który ładuje, przy użyciu pliku XAML `wpf` biblioteki. Zazwyczaj używane w ramach projektu utworzonych za pomocą jednego z szablonów projektów Ironpythonu. Zobacz [Zarządzanie projektów języka Python — szablony projektów](managing-python-projects-in-visual-studio.md#project-templates). |
 | **Pliki obsługi roli sieci Web** | A *bin* folderu w katalogu głównym projektu (niezależnie od wybranego folderu w projekcie). Folder zawiera domyślny skrypt wdrożenia i *web.config* pliku dla ról sieci web w usłudze Azure Cloud Services. Szablon zawiera również *readme.html* pliku, który zawiera szczegółowe informacje. |
 | **Pliki obsługi roli procesu roboczego** | A *bin* folderu w katalogu głównym projektu (niezależnie od wybranego folderu w projekcie). Folder zawiera domyślne wdrożenie, a następnie uruchom skrypt, wraz z *web.config* pliku dla ról procesów roboczych w usłudze Azure Cloud Services. Szablon zawiera również *readme.html* pliku, który zawiera szczegółowe informacje. |
-| **Web.config Pro Azure (FastCGI)** | A *web.config* pliku, który zawiera wpisy dla aplikacji przy użyciu [WSGI](https://wsgi.readthedocs.io/en/latest/) obiektu do obsługi połączeń przychodzących. Ten plik jest zwykle wdrażana do głównego serwera sieci web usług IIS, takich jak usługa Azure App Service. Aby uzyskać więcej informacji, zobacz [Publikuj w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **Web.config Pro Azure (HttpPlatformHandler)** | A *web.config* pliku, który zawiera wpisy dla aplikacji, które nasłuchują na gniazdo dla połączeń przychodzących. Ten plik jest zwykle wdrażana do głównego serwera sieci web usług IIS, takich jak usługa Azure App Service. Aby uzyskać więcej informacji, zobacz [Publikuj w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **Plik web.config platformy Azure pliki statyczne** | A *web.config* zazwyczaj są dodawane do pliku *statyczne* folderu (lub inne folderu zawierającego elementy statyczne), można wyłączyć obsługi dla danego folderu języka Python. Ten plik konfiguracji działa w połączeniu z jednym z tych FastCGI lub HttpPlatformHandler konfiguracji plików. Aby uzyskać więcej informacji, zobacz [Publikuj w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). |
-| **Web.config Pro Azure zdalnego debugowania** | A *web.config.debug* plik, który umożliwia zdalne debugowanie przez protokół WebSockets, wraz z obszarami *Microsoft.PythonTools.WebRole.dll* i *ptvsd* folder zawierający moduły, które można wdrożyć na serwerze, aby włączyć zdalne debugowanie. Zwykle tworzysz ten element, w tym samym miejscu co Twoje *web.config* pliku. Aby uzyskać więcej informacji, zobacz [zdalne debugowanie kodu w języku Python na platformie Azure](debugging-remote-python-code-on-azure.md). Zobacz też Uwaga poniżej. |
-
-> [!Note]
-> Jeśli dodasz debugowanie *web.config* szablon projektu i zamierzasz używać zdalnego debugowania w języku Python, musisz opublikować witryny w **debugowania** konfiguracji. To ustawienie jest oddzielony od bieżącej aktywnej konfiguracji rozwiązania i zawsze domyślnie konfiguruje **wersji**. Aby je zmienić, należy otworzyć **ustawienia** kartę i użyj **konfiguracji** pola kombi w **Publikuj** kreatora. (Zobacz [dokumentacji platformy Azure](https://azure.microsoft.com/develop/python/) Aby uzyskać więcej informacji na temat tworzenia i wdrażania w usłudze Azure Web Apps.)
->
-> ![Zmiana konfiguracji publikowania](media/template-web-publish-config.png)
+| **Web.config Pro Azure (FastCGI)** | A *web.config* pliku, który zawiera wpisy dla aplikacji przy użyciu [WSGI](https://wsgi.readthedocs.io/en/latest/) obiektu do obsługi połączeń przychodzących. Ten plik zazwyczaj jest wdrażana w katalogu głównym serwera sieci web usług IIS. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla usług IIS](configure-web-apps-for-iis-windows.md). |
+| **Web.config Pro Azure (HttpPlatformHandler)** | A *web.config* pliku, który zawiera wpisy dla aplikacji, które nasłuchują na gniazdo dla połączeń przychodzących. Ten plik jest zwykle wdrażana do głównego serwera sieci web usług IIS, takich jak usługa Azure App Service. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla usług IIS](configure-web-apps-for-iis-windows.md). |
+| **Plik web.config platformy Azure pliki statyczne** | A *web.config* zazwyczaj są dodawane do pliku *statyczne* folderu (lub inne folderu zawierającego elementy statyczne), można wyłączyć obsługi dla danego folderu języka Python. Ten plik konfiguracji działa w połączeniu z jednym z tych FastCGI lub HttpPlatformHandler konfiguracji plików. Aby uzyskać więcej informacji, zobacz [Konfigurowanie aplikacji dla usług IIS](configure-web-apps-for-iis-windows.md). |
+| **Web.config Pro Azure zdalnego debugowania** | Przestarzałe (został użyty do zdalnego debugowania w usłudze Azure App Service dla Windows, który nie jest już obsługiwane). |
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie projektów języka Python — szablony projektów](managing-python-projects-in-visual-studio.md#project-templates)
 - [Szablony projektów sieci web języka Python](python-web-application-project-templates.md)
-- [Publikowanie w usłudze Azure app service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Publikowanie w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

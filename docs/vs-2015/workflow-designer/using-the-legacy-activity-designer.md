@@ -1,7 +1,7 @@
 ---
 title: Przy użyciu starszej wersji projektanta działań | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -19,12 +19,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: a3970a4453c23a47b609886c24d0b8fe62efd3e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c71fa8d901653babd8c3558da7eff8ff16058c5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680427"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296832"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Używanie starszej wersji projektanta działań
 W tym temacie opisano sposób używania projektanta działań w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Podczas określania wartości za pomocą starszej wersji projektanta [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

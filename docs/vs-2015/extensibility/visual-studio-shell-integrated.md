@@ -1,7 +1,7 @@
 ---
 title: Program Visual Studio Shell (zintegrowany) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5e5247261a94b04e1730398f0d8c751ff1a020d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60456a99023067e76a4396cb18990b9d0f900920
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674603"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296448"
 ---
 # <a name="visual-studio-shell-integrated"></a>Program Visual Studio Shell (zintegrowany)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Powłoka programu Visual Studio obejmuje zintegrowanego środowiska programistyc
 |Edytor|-Przeglądania narzędzia (ujednolicone wyszukiwanie, definicja źródła, dziedziczenie) kodu<br />-Nawigowanie po kodzie<br />— Technologia IntelliSense<br />-Tagi inteligentne<br />-Refaktoryzacji<br />-Pretty listy<br />— Filtrowanie IntelliSense<br />-   **Kod definicji** okna|  
 |Projektant|— Windows Presentation Foundation projektanta<br />— Windows Forms Designer<br />-Sieci web projektanta i edytora HTML|  
 |Dane|-   **Eksplorator serwera** (uproszczone: tylko dane). Patrz Uwaga 1.<br />-   **Źródła danych** okna<br />-Pełnego zestawu kontrolek danych<br />-Edytor XML<br />-Powiąż dane z lokalnego źródła danych (. MDF lub. MDB)<br />— Powiązanie danych obiekt<br />-Powiąż dane z usługi sieci Web<br />-Powiąż dane z lokalnej bazy danych serwera<br />— Powiązanie danych do zdalnego serwera bazy danych<br />— Narzędzia języka DDL dla danych zdalnych<br />-   **Eksplorator serwera** rozszerzalności ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] przykłady)|  
-|Debugger|— Debugowanie lokalne. Patrz Uwaga 2.<br />-Debugowania zarządzanego<br />— Debugowanie lokalne<br />— Dołącz do procesu lokalnego<br />— Dołącz do procesu zdalnego<br />-Delegat anonimowe<br />— Domeny aplikacji<br />— Debugowanie ASPX<br />— Atrybuty<br />-Break podczas Func eval<br />-Punktów przerwania<br />— Punkt przerwania ograniczenia<br />-Stosu wywołań<br />-   **Polecenie** okna<br />— Debugowanie międzywątkowe<br />— Porady dotyczące danych<br />— Wizualizator danych<br />-Obsługa debugera dla Asystentów zarządzanego debugowania (mda)<br />-Obsługa debugera dla typu usługi przesyłania dalej<br />-DTEEvents obsługę OTB<br />-JMC Stepper<br />-Test AppID debugera (DBGCLR)<br />— Profil debuger<br />-Debugera, narzędzia i opcje<br />— Iterator debugowania<br />-Obliczanie wyrażenia czasu projektowania<br />— Ewaluator wyrażeń C#<br />-Dezasemblacji<br />-Edytuj i Kontynuuj<br />-Expression evaluator windows (Czujka, zmienne lokalne, automatyczne)<br />— Pomocnik wyjątek<br />-Wyjątków<br />— Wykonywanie<br />-Ogólne<br />— Wprowadzenie prawo źródła<br />-HPC/debugowanie klastra<br />— Zintegrowane debugowanie wiele języków<br />— Debugowanie międzyoperacyjne<br />Debugowanie just-in time<br />— Debugowanie lokalne<br />-Debugowania zarządzanego<br />-Ręcznej kontroli (okno procesów)<br />-Pamięć<br />-Obsługa minizrzutu<br />— Moduły<br />-Debugowanie wielu procesów<br />-Debugowanie w trybie macierzystym<br />-New Obsługa aparatu debugowania<br />— Debugowanie zoptymalizowanego kodu<br />-Filtrowania systemu windows output<br />-Przetwarzanie hostingu do debugowania zarządzanego<br />-Procesy<br />-Quickwatch<br />-Rejestrów<br />-Rejestrów na stosie<br />-Zdalnego debugowania<br />— Zwracane wartości<br />-Debugowanie script<br />-Obsługa usługi source<br />— Zabezpieczenia<br />Side-by-side<br />-SQL<br />— Serwer symbol<br />-Punkty śledzenia<br />-Wątku<br />-Wizualizacji<br />-Extensible arkusza stylów języka przekształcenia (XSLT) debugera|  
+|Debuger|— Debugowanie lokalne. Patrz Uwaga 2.<br />-Debugowania zarządzanego<br />— Debugowanie lokalne<br />— Dołącz do procesu lokalnego<br />— Dołącz do procesu zdalnego<br />-Delegat anonimowe<br />— Domeny aplikacji<br />— Debugowanie ASPX<br />— Atrybuty<br />-Break podczas Func eval<br />-Punktów przerwania<br />— Punkt przerwania ograniczenia<br />-Stosu wywołań<br />-   **Polecenie** okna<br />— Debugowanie międzywątkowe<br />— Porady dotyczące danych<br />— Wizualizator danych<br />-Obsługa debugera dla Asystentów zarządzanego debugowania (mda)<br />-Obsługa debugera dla typu usługi przesyłania dalej<br />-DTEEvents obsługę OTB<br />-JMC Stepper<br />-Test AppID debugera (DBGCLR)<br />— Profil debuger<br />-Debugera, narzędzia i opcje<br />— Iterator debugowania<br />-Obliczanie wyrażenia czasu projektowania<br />— Ewaluator wyrażeń C#<br />-Dezasemblacji<br />-Edytuj i Kontynuuj<br />-Expression evaluator windows (Czujka, zmienne lokalne, automatyczne)<br />— Pomocnik wyjątek<br />-Wyjątków<br />— Wykonywanie<br />-Ogólne<br />— Wprowadzenie prawo źródła<br />-HPC/debugowanie klastra<br />— Zintegrowane debugowanie wiele języków<br />— Debugowanie międzyoperacyjne<br />Debugowanie just-in time<br />— Debugowanie lokalne<br />-Debugowania zarządzanego<br />-Ręcznej kontroli (okno procesów)<br />-Pamięć<br />-Obsługa minizrzutu<br />— Moduły<br />-Debugowanie wielu procesów<br />-Debugowanie w trybie macierzystym<br />-New Obsługa aparatu debugowania<br />— Debugowanie zoptymalizowanego kodu<br />-Filtrowania systemu windows output<br />-Przetwarzanie hostingu do debugowania zarządzanego<br />-Procesy<br />-Quickwatch<br />-Rejestrów<br />-Rejestrów na stosie<br />-Zdalnego debugowania<br />— Zwracane wartości<br />-Debugowanie script<br />-Obsługa usługi source<br />— Zabezpieczenia<br />Side-by-side<br />-SQL<br />— Serwer symbol<br />-Punkty śledzenia<br />-Wątku<br />-Wizualizacji<br />-Extensible arkusza stylów języka przekształcenia (XSLT) debugera|  
 |Obsługa 64-bitowa|— 64-bitowych debugowania dla kodu zarządzanego i natywnego, wszystkie języki<br />— obsługuje x64 natywne|  
 |Kontrola kodu źródłowego (SCC)|-Podstawowa integracja SCC. Patrz Uwaga 3.<br />-Narzędzia i opcje weryfikacji|  
 |Rozszerzalność|-Korzystających ze składników pakietów VSPackage i MEF|  

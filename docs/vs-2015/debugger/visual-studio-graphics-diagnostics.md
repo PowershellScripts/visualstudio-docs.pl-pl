@@ -1,7 +1,7 @@
 ---
 title: Diagnostyka grafiki programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c708900a0eebb2f4de1515eeab2f788eb5345a03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1ada0fb0379846d7c0a0af5a6ab28906b29f619
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294206"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostyka grafiki w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Visual Studio diagnostyki grafiki](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics).  
-  
 Program Visual Studio*Graphics Diagnostics* to zestaw narzędzi do rejestrowania i następnie analizowania problemów renderowania i wydajności w aplikacjach Direct3D. Diagnostyka grafiki może służyć w aplikacjach, które działają lokalnie na komputerze z systemem Windows, w emulatorze urządzenia Windows lub na zdalnym komputerze lub urządzeniu.  
   
  Diagnostyka grafiki przepływu pracy rozpoczyna się od przechwytywania rekordu w jaki sposób aplikacja używa technologii Direct3D — na żywo, podczas jego wykonywania — tak, aby od razu można analizować swoje zachowanie, udostępnione lub zapisywane do użycia w dalszej części. Można zainicjować sesji przechwytywania i kontrolować ręcznie z programu Visual Studio lub za pomocą narzędzia wiersza polecenia do przechwytywania **dxcap.exe**. Można również zainicjować sesji przechwytywania i kontrolować programowo, za pomocą Graphics Diagnostics przechwytywania interfejsów API.  
@@ -56,13 +54,13 @@ Program Visual Studio*Graphics Diagnostics* to zestaw narzędzi do rejestrowania
  [Dokument dziennika grafiki](../debugger/graphics-log-document.md)  
  Aby rozpocząć badanie dziennik grafiki zarejestrowane, umożliwia okno dokumentu dziennika grafiki wybierz przechwyconej ramki — a nawet określonych pikseli — tak, aby szczegółowo, można sprawdzić *zdarzenia* (czyli DirectX wywołań interfejsu API), ma ona wpływu na .  
   
- [Analiza klatek](../debugger/graphics-frame-analysis.md)  
+ [Analiza ramek](../debugger/graphics-frame-analysis.md)  
  Po zaznaczeniu klatki, należy użyć analiza klatek grafiki do badania i Dostosuj wydajność renderowania.  
   
  [Lista zdarzeń](../debugger/graphics-event-list.md)  
  Po zaznaczeniu klatki, należy użyć **Lista zdarzeń graficznych** aby zbadać jego zdarzeń, aby ustalić, czy są one związane z problemem renderowania.  
   
- [Stan](../debugger/graphics-state.md)  
+ [State](../debugger/graphics-state.md)  
  W oknie stanu ułatwia zrozumienie stanu grafiki, który jest aktywny w momencie bieżącego zdarzenia.  
   
  [Etapy potoku](../debugger/graphics-pipeline-stages.md)  

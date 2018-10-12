@@ -1,7 +1,7 @@
 ---
 title: Zestaw reguł edytora okno dialogowe (starsza wersja) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 2b7c7965d7f9af42dc25a91c750a6ec633fedc73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9da35b83eead06f40452696bb9559d409da8e38d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680609"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294583"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Edytor zestawu reguł, okno dialogowe (starsza wersja)
 W tym temacie opisano sposób użycia **Edytor zestawu reguł** okno dialogowe w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -41,7 +41,7 @@ W tym temacie opisano sposób użycia **Edytor zestawu reguł** okno dialogowe w
 |Element interfejsu użytkownika|Opis|  
 |----------------|-----------------|  
 |**Dodaj regułę**|Dodaje nową definicję reguły do zestawu reguł.|  
-|**Usuwanie**|Usuwa wybraną regułę z zestawu reguł.|  
+|**Delete**|Usuwa wybraną regułę z zestawu reguł.|  
 |**Tworzenie łańcucha**|Określa, jakiego typu do przodu łańcucha za pomocą zestawu reguł. Dostępne opcje to:<br /><br /> -   **Pełne tworzenie łańcucha**, co określa, aby korzystać z wszystkich do przodu mechanizmów łańcucha: niejawne, przypisywanie metody i za pomocą jawnego **aktualizacji** funkcji.<br />-   **Sekwencyjne**, która określa, że nie należy używać do przodu łańcucha.<br />-   **Tylko jawne aktualizacji**, co określa, aby wykonać tylko do przodu łańcucha na **aktualizacji** akcji.<br /><br /> Aby uzyskać więcej informacji na temat łańcucha do przodu, zobacz [przy użyciu działania działania PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).|  
 |**Nazwa**|Nagłówek kolumny listy zestawu reguł. Kliknij, aby posortować listę reguł według nazwy.|  
 |**Priorytet**|Nagłówek kolumny listy zestawu reguł. Kliknij, aby posortować listę reguł według priorytetu.|  

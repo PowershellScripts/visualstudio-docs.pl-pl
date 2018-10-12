@@ -1,7 +1,7 @@
 ---
 title: Obsługiwanie wyjątku współbieżności | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d174aeb48170f1232aa0830bd2532897e7cb6f5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5949578a6515d74d97821608093f8cdf0dfc7b15
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675184"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295304"
 ---
 # <a name="handle-a-concurrency-exception"></a>Obsługiwanie wyjątku współbieżności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [obsługiwanie wyjątku współbieżności](https://docs.microsoft.com/visualstudio/data-tools/handle-a-concurrency-exception).  
-  
   
 Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywoływane, gdy dwóch użytkowników podejmują próby zmiany te same dane w bazie danych, w tym samym czasie. W tym instruktażu utworzysz aplikacji Windows, który ilustruje sposób catch <xref:System.Data.DBConcurrencyException>, znajdź wiersz, który spowodował błąd i Dowiedz się, strategii, sposobu jego obsługi.  
   

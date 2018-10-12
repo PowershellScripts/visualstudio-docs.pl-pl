@@ -1,7 +1,7 @@
 ---
 title: Just-In-Time Debugging in Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1256584c2d4517b566095b3b71c6d080c6327df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629508"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294050"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Debugowanie just in time w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [debugowanie just in time w programie Visual Studio](https://docs.microsoft.com/visualstudio/debugger/just-in-time-debugging-in-visual-studio).  
-  
 Debugowanie Just In Time uruchamia Visual Studio automatycznie, gdy wystąpi wyjątek lub awaria wystąpi w aplikacji, która działa poza programem Visual Studio. Dzięki temu można przetestować aplikację, gdy nie jest uruchomiony program Visual Studio i rozpocząć debugowanie w programie Visual Studio, jeśli wystąpi problem.
 
 Debugowanie Just In Time działa w przypadku aplikacji komputerowych Windows. Nie działa dla aplikacji Windows Universal, a nie działa dla kodu zarządzanego, który znajduje się w aplikacji macierzystej, jak na przykład Wizualizatory.

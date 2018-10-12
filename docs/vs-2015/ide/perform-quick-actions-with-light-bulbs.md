@@ -1,7 +1,7 @@
 ---
 title: Szybkie wykonywanie akcji dzięki żarówkom | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cd0c28f55be540207c7590e068c0b5f93a2abc39
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 338e8e82e8b8f904c6f7f1e9e5f079e3de788bd3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880815"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294570"
 ---
 # <a name="perform-quick-actions-with-light-bulbs"></a>Szybkie wykonywanie akcji dzięki żarówkom
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dokumentacja programu Visual Studio 2017](/visualstudio/).  
-  
 Ikony żarówek są nową funkcją produktywność w programie Visual Studio 2015. Są one ikon wyświetlanych w edytorze programu Visual Studio i można kliknąć, aby wykonać szybkie akcje w tym refaktoryzacji naprawienie błędów. Żarówki przenieść naprawianie błędów i refaktoryzacji pomocy w pojedynczy punkt centralny często prawym przyciskiem myszy w wierszu, gdzie wpisujesz.  
   
  ![Ikona mała ikona żarówki](../ide/media/vs2015-lightbulbsmall.png "VS2015_LightBulbSmall")  

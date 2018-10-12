@@ -1,7 +1,7 @@
 ---
 title: Opis metodami zbierania danych wydajności | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57be2cf704521f25b48495e6537d384633cfd85f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77ccabd5a75e2290f57d97af70d23d6e4e136fbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675840"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295727"
 ---
 # <a name="understanding-performance-collection-methods"></a>Opis metodami zbierania danych wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [metodami zbierania danych wydajności opis](https://docs.microsoft.com/visualstudio/profiling/understanding-performance-collection-methods).  
-  
 Pakiet Visual Studio Profiling Tools oferuje pięć metod zbierania informacji o wydajności. W tym temacie opisano różne metody oraz zasugerowano kilka scenariuszy zbierania danych za pomocą konkretnych metod.  
   
 > [!NOTE]
@@ -60,7 +58,7 @@ Pakiet Visual Studio Profiling Tools oferuje pięć metod zbierania informacji o
   
  [Zbieranie statystyk wydajności za pomocą metody pobierania próbek](../profiling/collecting-performance-statistics-by-using-sampling.md)  
   
- [Z wartościami danych próbkowania opis](../profiling/understanding-sampling-data-values.md)  
+ [Zapoznanie z wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)  
   
  [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)  
   
@@ -83,9 +81,9 @@ Pakiet Visual Studio Profiling Tools oferuje pięć metod zbierania informacji o
   
  Metoda Instrumentacja pozwala gromadzić dane z liczników wydajności procesora i oprogramowania.  
   
- [Zapoznanie z wartościami danych Instrumentacji](../profiling/understanding-instrumentation-data-values.md)  
+ [Zapoznanie z wartościami danych instrumentacji](../profiling/understanding-instrumentation-data-values.md)  
   
- [Zbieranie szczegółowych danych o chronometrażu przy użyciu Instrumentacji](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)  
+ [Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)  
   
  [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)  
   
@@ -96,9 +94,9 @@ Pakiet Visual Studio Profiling Tools oferuje pięć metod zbierania informacji o
   
 -   Wizualizator współbieżności przedstawia w formie graficznej informacje mogące służyć do identyfikowania wąskich gardeł wydajności, zdarzeń niepełnego wykorzystania procesora, rywalizacji wątków i migracji wątków, opóźnień synchronizacji, obszarów nakładania się wejść/wyjść itd. W miarę możliwości prezentacja graficzna zawiera odwołania do odnośnych danych w wywołaniach stosów i kodzie źródłowym. Wizualizacje współbieżności można generować tylko dla aplikacji wiersza polecenia i aplikacji systemu Windows.  
   
- [Zapoznanie z wartościami danych Kontencji zasobów](../profiling/understanding-resource-contention-data-values.md)  
+ [Zapoznanie z wartościami danych rywalizacji o zasoby](../profiling/understanding-resource-contention-data-values.md)  
   
- [Zbieranie danych współbieżności procesu i wątku](../profiling/collecting-thread-and-process-concurrency-data.md)  
+ [Zbieranie danych współbieżności dla wątku i procesu](../profiling/collecting-thread-and-process-concurrency-data.md)  
   
  [Widoki danych rywalizacji o zasoby](../profiling/resource-contention-data-views.md)  
   
@@ -119,11 +117,11 @@ Pakiet Visual Studio Profiling Tools oferuje pięć metod zbierania informacji o
   
 -   Jeśli profilowanie pamięci .NET odbywa się w trybie instrumentacji, są zbierane szczegółowe informacje o czasie oraz o wartościach alokacji włącznie i wyłącznie.  
   
- [Zapoznanie z alokacją pamięci i danych o okresie istnienia obiektu wartości](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
+ [Zapoznanie z alokacją pamięci i wartościami danych o okresie istnienia obiektu](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
   
- [Zbieranie alokacji pamięci .NET i okres istnienia obiektu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
+ [Zbieranie danych alokacji pamięci .NET i okresu istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
- [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)  
+ [Widoki danych pamięci platformy .NET](../profiling/dotnet-memory-data-views.md)  
   
 ##  <a name="tier_interaction"></a> Interakcje między warstwami  
  Metoda profilowania na podstawie interakcji między warstwami dodaje do pliku danych profilowania informacje o synchronicznych wywołaniach [!INCLUDE[vstecado](../includes/vstecado-md.md)] między stroną utworzoną w środowisku [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] lub inną aplikacją a bazą danych programu [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Dane obejmują liczbę i godziny wywołań oraz maksymalne i minimalne czasy trwania wywołań. Dane interakcji między warstwami można dodawać do danych profilowania zbieranych za pomocą metod Próbkowanie, Instrumentacja, Pamięć .NET i Współbieżność.  

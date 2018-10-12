@@ -1,7 +1,7 @@
 ---
 title: Uruchamianie sesji debugowania dla aplikacji Store w programie Visual Studio (JavaScript) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9131c0e9a9b1b329a2c24d02e0988e68d701987b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6818383fd5da157359e74effc86c69d181b32be2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682174"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294986"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Uruchamianie sesji debugowania dla aplikacji Store w programie Visual Studio (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [uruchamianie sesji debugowania dla aplikacji Store w programie Visual Studio (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript).  
-  
 Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  W tym temacie opisano sposób uruchamiania sesji debugowania dla aplikacji Windows Store napisanych w języku JavaScript i HTML5. Można uruchomić debugowania za pomocą pojedynczego naciśnięcia klawisza lub możesz skonfigurować sesję debugowania dla konkretnych scenariuszy, a następnie wybrać sposób, aby uruchomić aplikację.  

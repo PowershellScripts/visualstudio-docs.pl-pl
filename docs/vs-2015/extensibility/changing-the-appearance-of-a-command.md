@@ -1,7 +1,7 @@
 ---
 title: Zmiana wyglądu polecenia | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d707451b71efdd41a470c2e1e54353e2fdfe4f01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 832a6732789d8e218a739b03fb5aa6541ec8276f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294726"
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Zmiana wyglądu polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zmiana wyglądu polecenia](https://docs.microsoft.com/visualstudio/extensibility/changing-the-appearance-of-a-command).  
-  
 Aby przekazać opinię do użytkownika, zmiana wyglądu polecenia. Na przykład możesz polecenie będzie wyglądać inaczej, gdy jest ona niedostępna. Można wprowadzić polecenia dostępne lub niedostępne, ukryć lub pokazać je, lub sprawdź lub usuń ich zaznaczenie w menu.  
   
  Zmiana wyglądu polecenia, wykonaj jedną z następujących czynności:  

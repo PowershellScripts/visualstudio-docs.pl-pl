@@ -1,7 +1,7 @@
 ---
 title: Zatwierdź zmiany w procesie kontrolek powiązanych z danymi przed zapisaniem danych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd56f9acfce7933d0bc89e7e86eb8083b9b1f867
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3af1534e6436eec2eac1f294be8c2428c949ce9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677794"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296039"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Zatwierdzanie edycji wewnątrzprocesowych w ramach kontrolek powiązanych z danymi przed zapisaniem danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Zatwierdź zmiany w procesie kontrolek powiązanych z danymi przed zapisaniem danych](https://docs.microsoft.com/visualstudio/data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data).  
-  
   
 Podczas edytowania wartości w formantach powiązanych z danymi, użytkownicy muszą Wyjdź bieżącego rekordu, aby zatwierdzić zaktualizowaną wartość do bazowego źródła danych, który formant jest powiązany z. Podczas przeciągania elementów z [okna źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) na formularz, pierwszy element, który usuniesz generuje kod z gałęzią **Zapisz** Zdarzenie kliknięcia przycisku <xref:System.Windows.Forms.BindingNavigator>. Ten kod wywołuje <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metody <xref:System.Windows.Forms.BindingSource>. W związku z tym, wywołanie <xref:System.Windows.Forms.BindingSource.EndEdit%2A> ma generowaną metodę tylko pierwszy <xref:System.Windows.Forms.BindingSource> który został dodany do formularza.  
   
@@ -62,5 +60,5 @@ Podczas edytowania wartości w formantach powiązanych z danymi, użytkownicy mu
   
 ## <a name="see-also"></a>Zobacz też  
  [Powiązywanie kontrolek formularzy Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Hierarchiczna aktualizacja](../data-tools/hierarchical-update.md)
+ [Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Co&#39;s Nowość w edytorze XML | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f2d20e6619519956a753bd081e0ecbf2c5debaca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 979c52dc738ece4f96ac6b37f170c085a61051a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676679"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295961"
 ---
 # <a name="what39s-new-in-the-xml-editor"></a>Co&#39;s Nowość w edytorze XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [co&#39;s Nowość w edytorze XML](https://docs.microsoft.com/visualstudio/xml-tools/what-s-new-in-the-xml-editor).  
-  
   
 Następujące funkcje są nowością w programie Visual Studio 2010.  
   

@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie właścicielem blokady dokumentu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cf3e532a7a20be746405a7c5f90bb2c345a36cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba494d38384263570289b3f84b90fc8b5b5931e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685471"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296728"
 ---
 # <a name="document-lock-holder-management"></a>Zarządzanie właścicielem blokady dokumentu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Zarządzanie właścicielem blokady dokumentu](https://docs.microsoft.com/visualstudio/extensibility/document-lock-holder-management).  
-  
 Tabela systemem dokumentu (Normalizacją) przechowuje liczbę otwartych dokumentów i wszystkie blokady edycji, które mają. Można umieścić blokady edycji dokumentu w Normalizacją, gdy programowe jest edytowany w tle bez użytkownika wyświetlany w oknie dokumentu otwartego dokumentu. Ta funkcja jest często używane przez projektantów, które modyfikują wiele plików za pomocą graficznego interfejsu użytkownika.  
   
 ## <a name="document-lock-holder-scenarios"></a>Scenariusze właściciela blokady dokumentu  

@@ -1,7 +1,7 @@
 ---
 title: Funkcja SccEnumChangedFiles | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d1935724a965d7b7d62e6bc059c0d483bb3a1b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4bc5595b5421e0be0139598464e70c6af52df80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679267"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294479"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [funkcja SccEnumChangedFiles](https://docs.microsoft.com/visualstudio/extensibility/sccenumchangedfiles-function).  
-  
 Podana lista plików lokalnych, ta funkcja sprawdza pliki, które różnią się od odpowiedniej wersji w bazie danych kontroli kodu źródłowego.  
   
 ## <a name="syntax"></a>Składnia  

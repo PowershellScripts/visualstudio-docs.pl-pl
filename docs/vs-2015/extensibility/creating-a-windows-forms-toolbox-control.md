@@ -1,7 +1,7 @@
 ---
 title: Tworzenie Windows Forms kontrolki przybornika | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc1deab4439133eb43348289fcfbba204a1cf9ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b7f1c5f9f052253e2b18ac2f7c669b7442ac391
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690215"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294219"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Tworzenie kontrolki przybornika Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [tworzenie kontrolki przybornika Windows Forms](https://docs.microsoft.com/visualstudio/extensibility/creating-a-windows-forms-toolbox-control).  
-  
 Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje się w Visual Studio Tools Extensibility (zestaw SDK programu VS) pozwala utworzyć formant, który jest automatycznie dodawany do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak utworzyć formant prostego licznika, który można rozdystrybuować innym użytkownikom za pomocą szablonu.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
@@ -62,9 +60,9 @@ Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje
   
     |Formant|Właściwość|Wartość|  
     |-------------|--------------|-----------|  
-    |`Label1`|**Tekst**|""|  
+    |`Label1`|**Text**|""|  
     |`Button1`|**Nazwa**|btnReset|  
-    |`Button1`|**Tekst**|Resetuj|  
+    |`Button1`|**Text**|Resetuj|  
   
 ### <a name="coding-the-user-control"></a>Kodowanie kontrolki użytkownika  
  `Counter` Kontroli udostępni metodę, aby zwiększyć licznik, wystąpienie zdarzenia wywoływane, gdy licznik jest zwiększany, `Reset` przycisk i trzy właściwości do przechowywania bieżąca liczba, tekst wyświetlany i czy chcesz pokazać lub ukryć `Reset`przycisku. `ProvideToolboxControl` Atrybut określa, w którym miejscu **przybornika** `Counter` pojawi się kontrolka.  

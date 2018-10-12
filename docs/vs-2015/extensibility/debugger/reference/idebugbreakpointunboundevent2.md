@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointUnboundEvent2 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6b1e1863-0c64-4d85-8ab9-aface522fdea
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c5b33a0f1881cb52b3a7f647128c1bddc330cff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 974687f13523f4ee5a6dcc83f486e16133ae693e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678491"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294141"
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [IDebugBreakpointUnboundEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointunboundevent2).  
-  
 Ten interfejs informuje Menedżer debugowania sesji (SDM), czy powiązany punkt przerwania został niezwiązanej z załadowanych programu.  
   
 ## <a name="syntax"></a>Składnia  
@@ -49,7 +47,7 @@ IDebugBreakpointUnboundEvent2 : IUnknown
 |Metoda|Opis|  
 |------------|-----------------|  
 |[GetBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getbreakpoint.md)|Pobiera punkt przerwania, które stały się niepowiązanych.|  
-|[Getreason —](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Pobiera powodów, dla którego punkt przerwania został niepowiązanej.|  
+|[GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md)|Pobiera powodów, dla którego punkt przerwania został niepowiązanej.|  
   
 ## <a name="remarks"></a>Uwagi  
  Gdy zwalnia aparat debugowania, biblioteki DLL lub klasy, wszystkie punkty przerwania, które były powiązane z kodu w module musi być niezwiązanej z debugowanego programu. `IDebugBreakpointUnboundEvent2` Jest wysyłana dla każdego niepowiązanych punktu przerwania.  

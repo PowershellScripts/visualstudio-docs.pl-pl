@@ -1,7 +1,7 @@
 ---
 title: 'Przykładowy plik XSD: Relacje | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 304cc9d25f99071e13fd8cae104b09a0836a3224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 42dbe702c1b6841dd834af28e02737c00aed6595
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627553"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295714"
 ---
 # <a name="sample-xsd-file-relationships"></a>Przykładowy plik XSD: relacje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [przykładowy plik XSD: relacje](https://docs.microsoft.com/visualstudio/xml-tools/sample-xsd-file-relationships).  
-  
   
 Następujący plik XSD jest używany w różne przykłady w dokumentacji projektanta schematu XSD. Ten plik jest schemat zamówienia zakupu, adnotacji i dokumentację.  
   

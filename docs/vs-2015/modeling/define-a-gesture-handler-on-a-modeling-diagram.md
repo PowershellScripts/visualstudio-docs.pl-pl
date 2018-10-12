@@ -1,7 +1,7 @@
 ---
 title: Definiowanie procedury obsługi gestów na diagramie modelowania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8afc13a03fcff51eaad0507af753f3a434eac093
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774689"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248087"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definiowanie procedury obsługi gestów na diagramie modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [definiowanie procedury obsługi gestów na diagramie modelowania](https://docs.microsoft.com/visualstudio/modeling/define-a-gesture-handler-on-a-modeling-diagram).  
-  
 W programie Visual Studio można zdefiniować polecenia, które są wykonywane, gdy użytkownik kliknie dwukrotnie lub przeciąganie elementy na UML diagram. Można spakować te rozszerzenia w rozszerzeniu integracji programu Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) i rozdystrybuować je innym użytkownikom programu Visual Studio.  
   
  Jeśli istnieje już wbudowane zachowanie dla typu diagramu i typu elementu, który chcesz przeciągnąć, nie można dodać lub zmienić to zachowanie.  

@@ -1,7 +1,7 @@
 ---
 title: 'Porady: zbieranie danych licznika Windows | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f0ace1d920cdd4f2c503c608a1695b04c1251f2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7dfaed19949dac532949e1d4a10bb744ec464580
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680720"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227334"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Porady: zbieranie danych liczników systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: zbieranie danych licznika Windows](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-windows-counter-data).  
-  
 Liczniki Windows są liczniki wydajności systemu, które mogą być zbierane podczas profilowania w ustalonych odstępach czasu. W widoku znaczniki raportu narzędzi profilowania z wiersza jest oznaczona etykietą **AutoMark** dla każdego interwału zbierania. Wiersz zawiera kolumny, które opisują wartości licznika wydajności, w tym odstępach czasu. Aby ograniczyć analizę do okresu czasu między dwoma określonymi znacznikami, zaznacz znaki, kliknij prawym przyciskiem myszy, a następnie wybierz **Filtruj wg** ->  **znaczniki** z menu skrótów.  
   
  **Wymagania**  
@@ -63,7 +61,7 @@ Liczniki Windows są liczniki wydajności systemu, które mogą być zbierane po
 ## <a name="see-also"></a>Zobacz też  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
  [Właściwości sesji wydajności](../profiling/performance-session-properties.md)   
- [CPU i liczniki Windows](../profiling/cpu-and-windows-counters.md)
+ [Liczniki procesora CPU i systemu Windows](../profiling/cpu-and-windows-counters.md)
 
 
 

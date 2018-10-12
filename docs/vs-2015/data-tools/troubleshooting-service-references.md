@@ -1,7 +1,7 @@
 ---
 title: Rozwiązywanie problemów z odwołaniami usługi | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 696c6f2a0e738d965b5992e3df52a77831ab27a0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 90ec170182d0b54e6185de68f5ca03a5e114f0ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880893"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223967"
 ---
 # <a name="troubleshooting-service-references"></a>Rozwiązywanie problemów z odwołaniami usługi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [Rozwiązywanie problemów z odwołaniami usługi](https://docs.microsoft.com/visualstudio/data-tools/troubleshooting-service-references).
-
 Ten temat zawiera listę typowych problemów, które mogą wystąpić podczas pracy z [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] lub [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] przywoływane w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="error-returning-data-from-a-service"></a>Wystąpił błąd podczas zwracania danych z usługi

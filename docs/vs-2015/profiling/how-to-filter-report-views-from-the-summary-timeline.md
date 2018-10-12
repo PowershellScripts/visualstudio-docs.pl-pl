@@ -1,7 +1,7 @@
 ---
 title: 'Porady: filtrowanie widoków raportu z podsumowania osi czasu | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95e9ad24bc5ecf41274b08c83d6f1170bf225ec3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bdf402f8de9f5ce952d2abe4f4b015545a02b1b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684174"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231780"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Porady: filtrowanie widoków raportu z podsumowania osi czasu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [jak: Filtr widoków raportu z podsumowania osi czasu](https://docs.microsoft.com/visualstudio/profiling/how-to-filter-report-views-from-the-summary-timeline).  
-  
 Można filtrować dane wyświetlane w raportach wydajności, określając segment czasu na wykresie widoku podsumowania osi czasu. Podczas filtrowania raportów, obejmujący segmentu czas, który określiłeś reanalyzed jest plik danych profilowania.  
   
 ### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>Aby filtrować raport profilowania z podsumowania osi czasu wykresu  

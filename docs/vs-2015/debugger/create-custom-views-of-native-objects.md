@@ -1,7 +1,7 @@
 ---
 title: Tworzenie niestandardowych widoków obiektów macierzystych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab7343a13d1c5182e207728a2d4772b6704789ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23a6b08bcc592284f8cb2381abe1967d50428873
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690858"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236538"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Tworzenie niestandardowych widoków obiektów macierzystych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Tworzenie niestandardowych widoków obiektów macierzystych](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects).  
-  
 Struktura Natvis usługi Visual Studio pozwala dostosować sposób, w programie Visual Studio Wyświetla typy natywne w oknach zmiennych debugera (na przykład **Obejrzyj**, **lokalne**, i **porady dotyczące danych** systemu windows.  
   
  Zastępuje Natvis **autoexp.dat —** pliku, który został użyty we wcześniejszych wersjach programu Visual Studio i oferuje składni XML lepszą diagnostykę, przechowywanie wersji i obsługę wielu plików.  

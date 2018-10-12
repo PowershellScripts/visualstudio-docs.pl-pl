@@ -1,7 +1,7 @@
 ---
 title: Powiązywanie kontrolek formularzy Windows Forms z danymi | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b3f454e1eb6e754327a50b22a4aefdc5e4afa0eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1d8710ef98339c0cf4b44ddd3fa41cca8676570
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693935"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237474"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Powiązywanie kontrolek Windows Forms z danymi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [formanty powiązania formularzy Windows do danych](https://docs.microsoft.com/visualstudio/data-tools/bind-windows-forms-controls-to-data).  
-  
   
 Źródła danych można powiązać formanty przeciągając obiekty z **źródeł danych** okna w formularzu Windows albo do istniejącego formantu w formularzu. Podczas przeciągania elementów, można ustawić typu formantu, który chcesz powiązać. W zależności od tego, czy wybierz tabelę, samego lub poszczególnych kolumn są wyświetlane różne wartości.  Można również ustawić wartości niestandardowych. W przypadku tabeli "Szczegóły" oznacza, że każda kolumna jest powiązana z oddzielnej kontrolce.  
   
@@ -69,5 +67,5 @@ Najnowszą wersję tego tematu znajduje się w temacie [formanty powiązania for
  Należy zauważyć, że każda kontrolka ma tagu inteligentnego. Ten tag umożliwia dostosowania, które dotyczą tylko tej kontrolki.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Powiązywanie kontrolek formularzy Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+ [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 

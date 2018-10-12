@@ -1,7 +1,7 @@
 ---
 title: Przetwarzanie kartę, okno dialogowe właściwości | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cc1a02108708b3a9430af50d0b69b1ed1610c1b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab70bd420564735e8edaa33cec5aa494bb76fd58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631933"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241803"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>Karta Proces, okno dialogowe właściwości okna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [karta proces, okno dialogowe właściwości](https://docs.microsoft.com/visualstudio/debugger/process-tab-window-properties-dialog-box).  
-  
 Użyj **procesu** kartę, aby zidentyfikować proces wybranego okna. Aby wyświetlić [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md), Przenieś fokus do [widoku Windows](../debugger/windows-view.md) okna. Zaznacz dowolny węzeł okna w drzewie, a następnie wybierz **właściwości** z **widoku** menu.  
   
  Następujące ustawienia są dostępne na **procesu** karty:  

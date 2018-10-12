@@ -1,7 +1,7 @@
 ---
 title: Funkcje ułatwień dostępu w Podglądzie pomocy | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 623e2c6514f8eddfd587848aff5fc68c29640885
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d6dee81d823c52986922d59a4e41f402db4fbd5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684016"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242141"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Ułatwienia dostępu w Podglądzie Pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [funkcje ułatwień dostępu w Podglądzie Pomocy](https://docs.microsoft.com/visualstudio/ide/accessibility-features-of-the-help-viewer).  
-  
 Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korzystania z jej produktów i usług. Ten temat zawiera informacje dotyczące funkcji, produktów i usług, które tworzą 2.2 podglądu pomocy firmy Microsoft dostępne dla osób z wadami szeroką gamę możliwości.  
   
 ## <a name="keyboard-access"></a>Dostęp za pomocą klawiatury  

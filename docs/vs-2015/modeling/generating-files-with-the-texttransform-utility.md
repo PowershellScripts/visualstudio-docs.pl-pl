@@ -1,7 +1,7 @@
 ---
 title: Generowanie plików za pomocą narzędzia TextTransform | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 069f7f5ef2c579c10c1ee7c19989c79ce3ad63bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7dbe189c9b46c10dc7bac5da4b87457d7c6ecbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681953"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227451"
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>Generowanie plików za pomocą narzędzia TextTransform
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Generowanie plików za pomocą narzędzia TextTransform](https://docs.microsoft.com/visualstudio/modeling/generating-files-with-the-texttransform-utility).  
-  
 TextTransform.exe jest narzędziem wiersza polecenia, można użyć do przekształcania szablonu tekstu. Jeśli chcesz wywołać TextTransform.exe, należy określić nazwę pliku szablonu tekstu jako argument. TextTransform.exe wywołuje aparat przekształcenia tekstu i przetwarza szablonu tekstu. TextTransform.exe zwykle jest wywoływana przez skrypty. Jednak nie jest zazwyczaj wymagane, ponieważ można dokonać przekształcenia tekstu, w programie Visual Studio lub w procesie kompilacji.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Wprowadzenie do narzędzia do oceny wydajności | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0bb0fa65bbd11e18f6b83fafe0a7ad8df9fd15eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89822656a518c13467e20b9b79ad36fd09ef36a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696817"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249491"
 ---
 # <a name="getting-started-with-performance-tools"></a>Wprowadzenie do narzędzia do oceny wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [rozpoczęcie korzystania z narzędzia do oceny wydajności](https://docs.microsoft.com/visualstudio/profiling/getting-started-with-performance-tools).  
-  
 Ta sekcja zawiera omówienie pojęć i zadań, które będą stosowane podczas zbierania, wyświetlania i analizowania wydajności kodu za pomocą narzędzi wydajności programu Visual Studio.  
   
  Te narzędzia umożliwiają kilka sposobów na zbieranie i analizowanie danych dotyczących wydajności. Ale w wielu przypadkach najlepszym sposobem rozpoczęcia do domyślnych ustawień kreatora wydajności, co pozwala na zbieranie statystyk aplikacji, który może wskazywać na problemy z wydajnością w kodzie.  

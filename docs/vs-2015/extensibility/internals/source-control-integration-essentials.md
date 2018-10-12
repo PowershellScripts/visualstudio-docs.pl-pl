@@ -1,7 +1,7 @@
 ---
 title: Podstawowe informacje o integracji kontroli źródła | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 37508599b01f2639df416c56181f1c9b8672cd5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ecd87dfc4c2993023d0c882ce581280204f99d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678196"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232364"
 ---
 # <a name="source-control-integration-essentials"></a>Podstawowe informacje o integracji kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [podstawowe informacje o integracji kontroli źródła](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-integration-essentials).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obsługuje dwa typy Integracja kontroli źródła: wtyczka do kontroli źródła zapewnia podstawowe funkcje, który został skompilowany przy użyciu interfejsu API wtyczki kontroli źródła (znanego wcześniej jako interfejs API MSSCCI) i rozwiązania integracji kontroli źródła opartych na VSPackage, zapewnia bardziej niezawodne funkcje.  
   
 ## <a name="source-control-plug-in"></a>Wtyczka do kontroli źródła  

@@ -1,7 +1,7 @@
 ---
 title: Łączenie wariantów użycia z dokumentami i diagramami | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0fd5bfedc803ff928a87f34abece9b2449a5033
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633023"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232534"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Łączenie przypadków użycia z dokumentami i diagramami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [łączenie wariantów użycia z dokumentami i diagramami](https://docs.microsoft.com/visualstudio/modeling/link-a-use-case-to-documents-and-diagrams).  
-  
 Możesz połączyć przypadek użycia na diagramie przypadku użycia innego diagramu lub dokumentu. Na przykład można połączyć przypadek użycia, następujące diagramy i dokumenty:  
   
 -   Diagram sekwencji, który pokazuje, jak cele przypadek użycia są realizowane przez interakcje między użytkownikami i system lub jej główne składniki.  

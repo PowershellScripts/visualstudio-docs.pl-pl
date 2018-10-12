@@ -1,7 +1,7 @@
 ---
 title: Dodawanie paska narzędzi | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ebfd86a05be72b5a0c35664dee0dc0fcd4189be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e3aa697ab6ac25c1fe273f4229cff462f097a35e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684061"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222914"
 ---
 # <a name="adding-a-toolbar"></a>Dodawanie paska narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dodawanie paska narzędzi](https://docs.microsoft.com/visualstudio/extensibility/adding-a-toolbar).  
-  
 W tym instruktażu pokazano, jak dodać pasek narzędzi środowiska IDE programu Visual Studio.  
   
  Pasek narzędzi jest poziomy lub pionowy pasek, zawierający przyciski, które są powiązane z poleceń. W zależności od jego implementacja paska narzędzi w IDE mogą być przeniesiony, zadokowany po dowolnej stronie głównego okna środowiska IDE lub wykonywane na bieżąco przed innymi oknami.  

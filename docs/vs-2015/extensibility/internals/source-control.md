@@ -1,7 +1,7 @@
 ---
 title: Kontrola źródła | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93b00df779d5b650de59c91196b8fc004efa6994
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 875ee92c91081b2df097e96bf833ea2fcf775f6d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680261"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247516"
 ---
 # <a name="source-control"></a>Kontrola źródła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [kontroli źródła](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control).  
-  
 W tej sekcji omówiono opcje implementowania kontroli źródła jako zintegrowaną funkcją [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], za pomocą wtyczki kontroli źródła lub pakietu VSPackage kontroli źródła.  
   
 ## <a name="in-this-section"></a>W tej sekcji  

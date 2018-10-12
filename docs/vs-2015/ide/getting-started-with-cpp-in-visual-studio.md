@@ -1,31 +1,29 @@
 ---
 title: Wprowadzenie do języka C++ w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-general
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 30bed5ac15038a91c95b4383d9dbd8c519095569
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cebb5624471277717395bd11c76e717692600977
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631912"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240451"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Wprowadzenie do korzystania z C++ w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wprowadzenie do języka C++ w programie Visual Studio](https://docs.microsoft.com/visualstudio/ide/getting-started-with-cpp-in-visual-studio).  
-  
 Przez ukończenie tego instruktażu, zapoznasz się z wielu narzędzi i oknach dialogowych, używane podczas tworzenia aplikacji za pomocą programu Visual Studio. Utworzysz prostą "Hello, World"-stylów aplikacji, podczas gdy dowiesz się więcej na temat pracy w zintegrowanym środowisku programistycznym (IDE).  
   
  Ten temat zawiera następujące sekcje:  

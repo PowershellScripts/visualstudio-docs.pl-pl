@@ -1,7 +1,7 @@
 ---
 title: Widok podsumowania — dane próbkowania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdfa43dab60268eb428c2affbc6ad072e04b45cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3e88a974c38ab4538faa0ebf6163ec2d8e92db8e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678958"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232981"
 ---
 # <a name="summary-view---sampling-data"></a>Widok podsumowania — dane próbkowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [widok podsumowania — dane próbkowania](https://docs.microsoft.com/visualstudio/profiling/summary-view-sampling-data).  
-  
 Widok podsumowania Wyświetla informacje na temat wydajności najdroższych funkcji w przebiegu profilowania. Aby uzyskać więcej informacji, łącznie z opisem powiadomienie łącza i listy raportów, zobacz [Widok Podsumowanie](../profiling/summary-view.md).  
   
 > [!NOTE]

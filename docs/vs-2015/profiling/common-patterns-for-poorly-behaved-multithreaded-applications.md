@@ -1,7 +1,7 @@
 ---
 title: Wspólne wzorce dla nieprawidłowo działających aplikacji wielowątkowych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91a8ba5e4cecddd4acc047d891b491dac963044b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 846c756511bc10a3d019294a16ba2d2e98fb37a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695508"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244118"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Typowe nieprawidłowo działające wzorce dla aplikacji wielowątkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wspólne wzorce dla aplikacji wielowątkowych Poorly-Behaved](https://docs.microsoft.com/visualstudio/profiling/common-patterns-for-poorly-behaved-multithreaded-applications).  
-  
 Narzędzie Concurrency Visualizer pomaga deweloperom do wizualizacji zachowania aplikacji wielowątkowych. To narzędzie zawiera galerię wspólne wzorce dla aplikacji wielowątkowych, które zachowują się nieprawidłowo w inny sposób. Galeria zawiera typowe i rozpoznawalny visual wzorców, które są udostępniane za pośrednictwem narzędzia, wraz z wyjaśnieniem zachowanie, który jest reprezentowany przez każdy wzorzec prawdopodobnie wynik tego zachowania i najbardziej typowym podejściem go rozwiązać.  
   
 ## <a name="lock-contention-and-serialized-execution"></a>Rywalizacja o blokady i wykonywanie serializacji  

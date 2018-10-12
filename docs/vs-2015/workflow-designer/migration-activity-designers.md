@@ -1,7 +1,7 @@
 ---
 title: Projektanci działań Migration | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: ae161fc5ff6f2b415cb477dcc3726a23802520a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8fdec5b2a32f8a25832663ede74757d0bc8285c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630824"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236707"
 ---
 # <a name="migration-activity-designers"></a>Projektanci działań Migration
 Projektanci działań Migration są używane do wywoływania 3.0/3.5 działań przepływu pracy z przepływu pracy przeznaczonych dla [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. Tematy zawarte w tej sekcji zapewnić wskazówki dotyczące sposobu używania [!INCLUDE[wfd2](../includes/wfd2-md.md)] Projektanci działań.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Usługa międzyoperacyjna](../workflow-designer/interop-activity-designer.md)  
+ [Interop](../workflow-designer/interop-activity-designer.md)  
  Umożliwia tworzenie i konfigurowanie <xref:System.Activities.Statements.Interop> działania.  
   
 ## <a name="reference"></a>Tematy pomocy  
@@ -37,7 +37,7 @@ Projektanci działań Migration są używane do wywoływania 3.0/3.5 działań p
   
  [Używanie projektantów działań](../workflow-designer/using-the-activity-designers.md)  
   
- [Obsługa wiadomości](../workflow-designer/messaging-activity-designers.md)  
+ [Obsługa komunikatów](../workflow-designer/messaging-activity-designers.md)  
   
  [Środowisko uruchomieniowe](../workflow-designer/runtime-activity-designers.md)  
   

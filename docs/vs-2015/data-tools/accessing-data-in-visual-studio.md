@@ -1,7 +1,7 @@
 ---
 title: Uzyskiwanie dostępu do danych w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 452e7dbc1f151bc39791e04d708eaf1cf870b4cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eacf075a0ba8689ff0cb5ca822d5cc8ca2f7ad1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677893"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233912"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Uzyskiwanie dostępu do danych w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [uzyskiwanie dostępu do danych w programie Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio).  
-  
   
 W programie Visual Studio, można utworzyć aplikacji, które łączą się z danymi w praktycznie dowolnego produktu bazy danych lub usługi, w dowolnym formacie, dowolnym miejscu — na komputerze lokalnym, w sieci lokalnej lub w chmurze prywatnej, publicznej lub hybrydowej.  
   
@@ -125,7 +123,7 @@ W programie Visual Studio, można utworzyć aplikacji, które łączą się z da
  Zainstaluj [narzędzi Python Tools for Visual Studio](http://microsoft.github.io/PTVS/) wraz ze swojej ulubionej platformy języka Python do tworzenia aplikacji języka CPython lub IronPython (.NET).  Python Tools for Visual Studio witryny sieci Web ma kilka samouczków na temat nawiązywania połączenia z danymi, w tym [Django i bazy danych SQL na platformie Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django i MySQL na platformie Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) i [Bottle i MongoDB na Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Instalowanie systemów baz danych, narzędzia i przykłady](../data-tools/installing-database-systems-tools-and-samples.md)  
+ [Instalowanie systemów baz danych, narzędzi i przykładów](../data-tools/installing-database-systems-tools-and-samples.md)  
  W tym artykule omówiono sposób uzyskiwania bazy danych, produkty i rozszerzenia programu Visual Studio lub sterowniki, które je obsługują i gdzie można znaleźć przykładowe bazy danych do eksperymentowania i celów szkoleniowych.  
   
  [Narzędzia do obsługi danych programu Visual Studio dla platformy .NET](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1)  

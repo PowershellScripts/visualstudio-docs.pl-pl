@@ -1,7 +1,7 @@
 ---
 title: 'Porady: testowanie i debugowanie Wizualizera | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9972951b1c5064fcc0582909976a234158ea096
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dba924f94da967cd19d63982ee2f6eb93384d0a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694260"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237253"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Porady: testowanie i debugowanie wizualizera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: testowanie i debugowanie Wizualizera](https://docs.microsoft.com/visualstudio/debugger/how-to-test-and-debug-a-visualizer).  
-  
 Po napisaniu wizualizatora, należy do debugowania i testowania.  
   
  Jednym ze sposobów, aby przetestować Wizualizator jest zamontowany w programie Visual Studio i wywoływania go z okna debugera. (Zobacz [porady: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md).) Jeśli to zrobisz, musisz użyć drugiego wystąpienia programu Visual Studio do dołączenia i debugowanie wizualizatora, w którym jest uruchomiony w pierwszej kolejności debugera.  
@@ -66,7 +64,7 @@ Po napisaniu wizualizatora, należy do debugowania i testowania.
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki: Pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
  [Porady: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)   
- [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
+ [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
 
 
 

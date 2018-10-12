@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Tworzenie prostą usługę WCF w formularzach Windows Forms | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e14944157a14be4a5e06c26464a4de2cdb2bff1b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e73659c2d28cf97a8a7136ed8232cfbc5f0b77c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630731"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247211"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Wskazówki: Tworzenie prostą usługę WCF w formularzach Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: tworzenie prostą usługę WCF w formularzach Windows Forms](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms).  
-  
   
 W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] usługi, testowania i do niego dostęp z aplikacji Windows Forms.  
   
@@ -131,5 +129,5 @@ W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[vsindigo](.
      ![Formularz jako wynik](../data-tools/media/wcf10.png "wcf10")  
   
 ## <a name="see-also"></a>Zobacz też  
- [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+ [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 

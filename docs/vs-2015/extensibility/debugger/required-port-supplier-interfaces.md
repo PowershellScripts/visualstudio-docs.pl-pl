@@ -1,7 +1,7 @@
 ---
 title: Wymagane interfejsy dostawcy portów | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 960cd5668fe49ba50e79f036848948ec8e0bbfc2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 251b5c9d96ac7d0e82705c81b1b568e2d85b88f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680540"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248192"
 ---
 # <a name="required-port-supplier-interfaces"></a>Wymagane interfejsy dostawcy portów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wymagane interfejsy dostawcy portów](https://docs.microsoft.com/visualstudio/extensibility/debugger/required-port-supplier-interfaces).  
-  
 Dostawcy portu musi implementować [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interfejsu.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
   
  Ponieważ dostawcy portu dostarcza, portów, musi on również implementować ich. W związku z tym musi on implementować następujących interfejsów:  
@@ -61,13 +59,13 @@ Dostawcy portu musi implementować [IDebugPortSupplier2](../../extensibility/deb
   
     -   [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
   
-    -   [Getname —](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
+    -   [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
   
     -   [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
   
     -   [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
-    -   [Getprocessid —](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)  
+    -   [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)  
   
     -   [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)  
   
@@ -79,7 +77,7 @@ Dostawcy portu musi implementować [IDebugPortSupplier2](../../extensibility/deb
   
      W tym artykule opisano logicznych program. Co najmniej należy zaimplementować następujące metody:  
   
-    -   [Getname —](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
+    -   [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
   
     -   [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)  
   

@@ -1,7 +1,7 @@
 ---
 title: 'Porady: wyświetlanie dokumentów skryptu | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc24c5e9c2332516cbf939e14581a2df7bea44eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7f32fc5537fae9483401ac479eb4585d1e19108
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684006"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230518"
 ---
 # <a name="how-to-view-script-documents"></a>Porady: wyświetlanie dokumentów skryptu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: wyświetlanie dokumentów skryptu](https://docs.microsoft.com/visualstudio/debugger/how-to-view-script-documents).  
-  
 We wcześniejszych wersjach programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], pliki skryptów po stronie klienta wygenerowany na podstawie skryptu po stronie serwera pojawiły się w oknie Eksplorator skryptów. Okno Eksplorator skryptów często zostało ukryte, tak, aby dostępności skryptu po stronie klienta nie jest zawsze oczywiste.  
   
  W [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], pliki skryptu po stronie klienta wygenerowany na podstawie skryptu po stronie serwera są wyświetlane w Eksploratorze rozwiązań, który jest domyślnie widoczny. Okno Eksplorator skryptów zostały wyeliminowane.  

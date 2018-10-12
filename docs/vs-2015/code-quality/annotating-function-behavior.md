@@ -1,7 +1,7 @@
 ---
 title: Zachowanie funkcji dodawania adnotacji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c05fca9a23f213f14aaecffda87478819291e1f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1be20fed5e7fd98860a4a62c3d59fc458bed04ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680669"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234393"
 ---
 # <a name="annotating-function-behavior"></a>Zachowanie funkcji dodawania adnotacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zachowanie funkcji dodawania adnotacji](https://docs.microsoft.com/visualstudio/code-quality/annotating-function-behavior).  
-  
 Oprócz dodawania adnotacji [funkcji parametry i zwracane wartości](../code-quality/annotating-function-parameters-and-return-values.md), może dodawać adnotacje właściwości całej funkcji.  
   
 ## <a name="function-annotations"></a>Adnotacje — funkcja  
@@ -71,7 +69,7 @@ Oprócz dodawania adnotacji [funkcji parametry i zwracane wartości](../code-qua
  [Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md)   
  [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)   
- [Najlepsze praktyki i przykłady](../code-quality/best-practices-and-examples-sal.md)
+ [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)
 
 
 

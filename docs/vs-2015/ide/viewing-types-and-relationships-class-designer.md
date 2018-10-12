@@ -1,7 +1,7 @@
 ---
 title: Wyświetlanie typów i relacji (Projektant klas) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dc7bf4d9f005b5514be5ec6765744b8d043a3979
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 801481c6fed2dab33774cd9895685e91e49ab361
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694155"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240763"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Wyświetlanie typów i relacji (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wyświetlanie typów i relacji (Projektant klas)](https://docs.microsoft.com/visualstudio/ide/viewing-types-and-relationships-class-designer).  
-  
 Projektant klas korzysta z diagramów klas, aby pokazać szczegóły typów, na przykład, ich składowe i relacje, które współużytkują one. Wizualizacja te jednostki jest faktycznie dynamiczny widok w kodzie. Oznacza to, że można edytować typy w Projektancie i następnie zobacz zmiany zostaną uwzględnione w kodzie źródłowym jednostki. Podobnie diagram klas są synchronizowane z zmiany wprowadzone do jednostek w kodzie.  
   
 > [!NOTE]

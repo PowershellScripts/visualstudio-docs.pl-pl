@@ -1,7 +1,7 @@
 ---
 title: Sesja wydajności — omówienie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da90a5ae4e35f36306e8537ca2cd743e98ffd33f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676567"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242817"
 ---
 # <a name="performance-session-overview"></a>Sesja wydajności — Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [sesja wydajności — omówienie](https://docs.microsoft.com/visualstudio/profiling/performance-session-overview).  
-  
 W tym omówieniu przedstawiono podstawowe informacje profilowania. Zobaczą deweloperzy, którzy dopiero wydajności pracy sposób, w jaki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools może pomóc im szybko stać się wydajność i zwiększyć wydajność swój kod. Deweloperzy, którzy doświadczenie w profilowania można zapoznać się z określonych funkcji narzędzi profilowania i procesów.  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Narzędzia profilowania pomagają zidentyfikować problemy z wydajnością w kodzie źródłowym i porównać wydajność możliwych rozwiązań. Profilowanie kreatorów narzędzia i ustawienia domyślne daje natychmiastowy wgląd w wiele problemów z wydajnością. Funkcje i opcje Profiling Tools zapewniają dokładną kontrolę nad procesem profilowania. Ten formant obejmuje dokładne wartości docelowej sekcji kodu, zbieranie informacji o czasie na poziomie bloku i włączenia dodatkowe dane dotyczące wydajności procesora i systemu w danych.  
@@ -85,7 +83,7 @@ W tym omówieniu przedstawiono podstawowe informacje profilowania. Zobaczą dewe
   
 ## <a name="see-also"></a>Zobacz też  
  [Omówienie](../profiling/overviews-performance-tools.md)   
- [Przewodnik: Identyfikowanie problemów z wydajnością](../profiling/walkthrough-identifying-performance-problems.md)
+ [Przewodnik: identyfikowanie problemów z wydajnością](../profiling/walkthrough-identifying-performance-problems.md)
 
 
 

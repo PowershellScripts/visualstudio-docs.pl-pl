@@ -1,7 +1,7 @@
 ---
 title: Właściwości elementów modelu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd655a92338d676c41e69f37f55992a13a1e3247
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a754322a7c82eaa918deea51cf3c55eff7842a3b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691686"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226463"
 ---
 # <a name="properties-of-model-elements"></a>Właściwości elementów modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [właściwości elementów modelu](https://docs.microsoft.com/visualstudio/modeling/properties-of-model-elements).  
-  
 W tej sekcji przedstawiono właściwości, które zostanie wyświetlony w oknie dialogowym właściwości po wybraniu elementu w diagramie definicji DSL lub w Eksplorator DSL.  
   
  W niektórych przypadkach dodatkowe właściwości można znaleźć w oknie Szczegóły języka DSL.  

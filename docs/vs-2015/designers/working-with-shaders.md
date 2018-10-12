@@ -1,7 +1,7 @@
 ---
 title: Praca z cieniowaniem | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d84d5aa52ebfe7ad29886296031d492c1945d8c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72325522886ed1bc6ab262152c84fc3660231d86
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690903"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226853"
 ---
 # <a name="working-with-shaders"></a>Praca z cieniowaniem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Praca z cieniowaniem](https://docs.microsoft.com/visualstudio/designers/working-with-shaders).  
-  
 Można użyć projektanta modułu cieniującego opartej na wykresach w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do efekty cieniowania niestandardowego projektu. Możesz użyć tych programów do cieniowania w sieci Web opartej na DirectX gry lub aplikacji.  
   
 ## <a name="shaders"></a>Programy do cieniowania  

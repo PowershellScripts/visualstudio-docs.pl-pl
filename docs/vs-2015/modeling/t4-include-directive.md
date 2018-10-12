@@ -1,7 +1,7 @@
 ---
 title: T4 Dyrektywa Include | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 32af7c25070f4e93c40d01da0cc0ba09e80c2193
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ad5f409b6f7da852abbf2872bf01ef678b7a5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631551"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233990"
 ---
 # <a name="t4-include-directive"></a>Dyrektywa T4 Include
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dyrektywy zawierają T4](https://docs.microsoft.com/visualstudio/modeling/t4-include-directive).  
-  
 W szablonie tekstowym w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można dołączyć tekst z innego pliku za pomocą `<#@include#>` dyrektywy. Możesz umieścić `include` dyrektywy w dowolnym miejscu w szablonie tekstu przed blokiem funkcji pierwszej klasy `<#+ ... #>`. Dołączone pliki mogą również zawierać `include` dyrektywy oraz inne dyrektywy. To pozwala na udostępnianie kodu szablonu i standardowych wzorców tekstu szablonu między szablonami.  
   
 ## <a name="using-include-directives"></a>Używanie dyrektyw Include  

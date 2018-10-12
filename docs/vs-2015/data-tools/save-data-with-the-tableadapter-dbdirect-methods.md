@@ -1,7 +1,7 @@
 ---
 title: Zapisywanie danych za pomocą TableAdapter dbdirect — metody | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 69839a8f54b35bd932296b0dbd0126af3ac58ba2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6bb326f1cad6ea019c5d057ca24d198c28dca2a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682553"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220821"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zapisywanie danych za pomocą TableAdapter dbdirect — metody](https://docs.microsoft.com/visualstudio/data-tools/save-data-with-the-tableadapter-dbdirect-methods).  
-  
   
 Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji SQL bezpośrednio w odniesieniu do bazy danych przy użyciu dbdirect — metody TableAdapter. Dbdirect — metody TableAdapter zapewniają wystarczające poziom kontroli nad aktualizacje bazy danych. Umożliwia ich uruchamianie określonych instrukcji języka SQL i procedur składowanych, wywołując poszczególnych `Insert`, `Update`, i `Delete` metody, stosownie do potrzeb przez aplikację (w przeciwieństwie przeciążone `Update` metodę, która wykonuje AKTUALIZACJĘ Instrukcjami INSERT i DELETE wszystko w jednym wywołaniu).  
   
@@ -115,7 +113,7 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
     |----------|----------|  
     |`InsertButton`|**Wstaw**|  
     |`UpdateButton`|**Aktualizacja**|  
-    |`DeleteButton`|**Usuwanie**|  
+    |`DeleteButton`|**Delete**|  
   
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Aby dodać kod, aby wstawianie nowych rekordów do bazy danych  
   

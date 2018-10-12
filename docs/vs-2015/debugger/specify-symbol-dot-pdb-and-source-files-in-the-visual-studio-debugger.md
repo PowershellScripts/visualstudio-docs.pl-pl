@@ -1,7 +1,7 @@
 ---
 title: Określ symboli (.pdb) i źródłowych plików w debugerze programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8674ee9c4141b9bfe8511e67c4cd6113f8f0fed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6b988a2e3defa1a434cc825ad78e7c92dd30c382
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775446"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226983"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określanie plików symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [określanie plików symboli (.pdb) i plików źródłowych w debugerze](https://docs.microsoft.com/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger).  
-  
 Plik bazy danych programu (.pdb), nazywany także plikiem symboli, mapuje identyfikatory, które tworzysz w plikach źródłowych dla klas, metod i innego kodu, na identyfikatory które są używane w skompilowanych plikach wykonywalnych projektu. Plik .pdb mapuje również instrukcje zawarte w kodzie źródłowym na instrukcje wykonania w plikach wykonywalnych. Debuger używa tych informacji do określenia dwóch informacji o znaczeniu kluczowym: plik źródłowy i numer wiersza, które są wyświetlane w programie Visual Studio IDE oraz lokalizacja w pliku wykonywalnym, w której program się zatrzyma, jeśli ustawisz punkt przerwania. Plik symboli zawiera także oryginalną lokalizację plików źródłowych i opcjonalnie lokalizację serwera źródeł, z którego mogą być pobierane pliki źródłowe.  
   
  Podczas debugowania projektu w programie Visual Studio IDE debuger wie, domyślna lokalizacja dla plików .pdb i źródła, w kodzie. Jeśli chcesz debugować kod poza kodem źródłowym projektu, taki jak kod systemu Windows lub kod zewnętrznych aplikacji wywoływanych w projekcie, należy określić lokalizację pliku .pdb (i opcjonalnie plików źródłowych kodu zewnętrznego), i te pliki muszą dokładnie odpowiadać kompilacji plików wykonywalnych.  

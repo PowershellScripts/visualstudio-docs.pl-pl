@@ -1,7 +1,7 @@
 ---
 title: Pakiet identyfikatorów GUID funkcji programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f56f0356-f3ac-48bc-9674-94259e29a4df
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb8263c3f36e4633cdc81b179f10587a3bfa0e8b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ccac7110c5be5fcb0a7f846ca2756ecc334d767
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694079"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233290"
 ---
 # <a name="package-guids-of-visual-studio-features"></a>Identyfikatory GUID pakietów funkcji programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [identyfikatorów GUID programu Visual Studio funkcje pakietu](https://docs.microsoft.com/visualstudio/extensibility/package-guids-of-visual-studio-features).  
-  
 Następujące identyfikatory GUID w pliku pkgundef Twojej aplikacji isolated shell umożliwia wykluczanie pakietów specyficznych dla aplikacji.  
   
 ## <a name="package-guids"></a>Identyfikatory GUID pakietów  

@@ -1,7 +1,7 @@
 ---
 title: 'Przewodnik: Wyświetlanie, dopasowywanie nawiasów klamrowych | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11021dc98acfd80f1e91443cc834eb4ae0126455
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0568060ec19fc24731850b20dc70dfa7a48231d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627768"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247835"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Przewodnik: wyświetlanie parowanych nawiasów klamrowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: wyświetlanie dopasowywanie nawiasów klamrowych](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-matching-braces).  
-  
 Możesz zaimplementować opartych na języku funkcje, takie jak parowanie nawiasów klamrowych przez definiowanie nawiasy klamrowe, które chcesz dopasować, a następnie dodanie tagu znacznika tekstu do pasujące nawiasy klamrowe, gdy karetka znajduje się na jednym z nawiasami klamrowymi. Można zdefiniować nawiasy klamrowe w kontekście języka, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typ i zastosować znaczniki do właśnie tego typu lub można zastosować znaczniki do istniejącego typu zawartości (na przykład "text"). Następujące instruktaż przedstawia sposób zastosowania parowanie nawiasów klamrowych tagów, aby typ zawartości "text".  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  

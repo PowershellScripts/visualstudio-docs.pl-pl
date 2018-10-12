@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: ograniczanie Instrumentacji do określonych bibliotek DLL | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b99a67921739f620c908f1551f0f8a29a5aac73a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d61879e967e2e75f0edcd2d91bd7e31fd4d9382
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234523"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Porady: ograniczanie instrumentacji do określonych bibliotek DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: ograniczenie Instrumentacji do określonych bibliotek DLL](https://docs.microsoft.com/visualstudio/profiling/how-to-limit-instrumentation-to-specific-dlls).  
-  
 Za pomocą metody profilowania instrumentacji, można ograniczyć zbierania danych profilowania do jednego lub więcej bibliotek DLL w aplikacji. Aby profilować jedną lub więcej bibliotek DLL w aplikacji, należy utworzyć sesję wydajności, który zawiera pliki .dll jako elementy docelowe. Można określić bibliotek DLL, które chcesz profilować jako projekty w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania lub jako niezależnego pliki binarne.  
   
 ### <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>Ograniczenie Instrumentacji do określonych bibliotek DLL w rozwiązaniu Visual Studio  
@@ -79,7 +77,7 @@ Za pomocą metody profilowania instrumentacji, można ograniczyć zbierania dany
   
 ## <a name="see-also"></a>Zobacz też  
  [Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)   
- [Instrukcje: ograniczanie Instrumentacji do określonych funkcji](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+ [Instrukcje: ograniczanie instrumentacji do określonych funkcji](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
 
 
 

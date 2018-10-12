@@ -1,7 +1,7 @@
 ---
 title: Włącz testowanie kodowanego interfejsu użytkownika dla kontrolek | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 316c8e80a1ccfd95ea83114092604e1542292a05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9883b266e74db115c57f0a7cc245889ed59a599d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692285"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247874"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Włącz testowanie kodowanego interfejsu użytkownika dla Twoich kontrolek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Włącz Coded UI Testing of Your Controls](https://docs.microsoft.com/visualstudio/test/enable-coded-ui-testing-of-your-controls).  
-  
 Kontrolki można łatwo przetestować w przypadku zastosowania pomocy technicznej dla kodowanych testów interfejsu użytkownika. Zwiększa poziom obsługi można dodać przyrostowo. Możesz rozpocząć dzięki obsłudze rekordu i odtwarzania oraz właściwości sprawdzania poprawności. Możesz rozwijać to umożliwienie konstruktora kodowanego testu interfejsu użytkownika, rozpoznawał właściwości niestandardowych kontroli nad i dostarczają niestandardowej klasy dostęp do tych właściwości z wygenerowanego kodu. Może również pomóc kodowanego interfejsu użytkownika testu konstruktora przechwytywania akcje w sposób, który jest bliżej celem akcji rejestrowane.  
   
  **W tym temacie:**  

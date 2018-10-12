@@ -1,7 +1,7 @@
 ---
 title: 'Porady: debugowanie w trybie mieszanym | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ce056b60a3e080490a2ad60f4aee5a7b5c8dd63
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c13babd3e54d11c7a32e83f645dc2ab9d12b4f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633526"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226151"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>Porady: debugowanie w trybie mieszanym
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: debugowanie w trybie mieszanym](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-in-mixed-mode).  
-  
 W poniższych procedurach opisano sposób debugowania kodu zarządzanego i natywnego, tzw. debugowanie w trybie mieszanym. Istnieją dwa scenariusze, aby to zrobić, w zależności od tego, czy biblioteka DLL lub w aplikacji są zapisywane w kodzie natywnym:  
   
 -   Aplikacja wywołująca, która wywołuje bibliotekę DLL są zapisywane w kodzie natywnym. W tym przypadku jest zarządzana biblioteka DLL i debugery zarówno zarządzanego i natywnego musi być włączona debugować oba. Można to sprawdzić  **\<Projekt > strony właściwości** okno dialogowe. Jak to zrobić, zależy od tego, czy rozpoczynasz debugowanie z projektu DLL lub wywoływania projektu aplikacji.  
@@ -56,7 +54,7 @@ W poniższych procedurach opisano sposób debugowania kodu zarządzanego i natyw
 4.  Ustaw **typ debugera** do **mieszane** lub **automatycznie**.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: debugowanie z projektu DLL](../debugger/how-to-debug-from-a-dll-project.md)
+ [Instrukcje: debugowanie z projektu DLL](../debugger/how-to-debug-from-a-dll-project.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Wybieranie warunku, okno dialogowe (starsza wersja) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 1aa0f8644d350bbcccc2496c1d4f155332933e60
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4baec4427c09eff34b2fedb205de5556f22a4aa6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691727"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246151"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Wybieranie warunku, okno dialogowe (starsza wersja)
 W tym temacie opisano sposób użycia **wybierz warunek** okno dialogowe w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -45,7 +45,7 @@ W tym temacie opisano sposób użycia **wybierz warunek** okno dialogowe w stars
 |**Nowy...**|Kliknij, aby otworzyć [(starsza wersja) okno dialogowe Edytor warunku reguły](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) Aby utworzyć nowy warunek reguły.|  
 |**Edytuj...**|Kliknij, aby otworzyć [(starsza wersja) okno dialogowe Edytor warunku reguły](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) edytować warunku wybranej reguły.|  
 |**Zmień nazwę...**|Kliknij, aby otworzyć okno dialogowe umożliwia zmienianie nazwy warunku wybranej reguły.|  
-|**Usuwanie**|Kliknij, aby usunąć ten warunek wybranej reguły.|  
+|**Delete**|Kliknij, aby usunąć ten warunek wybranej reguły.|  
 |**Podgląd warunku**|Wyświetla wyrażenie warunku dla warunku wybranej reguły.|  
 |**OK**|Kliknij, aby przypisać warunek wybranej reguły do warunku działania.|  
   

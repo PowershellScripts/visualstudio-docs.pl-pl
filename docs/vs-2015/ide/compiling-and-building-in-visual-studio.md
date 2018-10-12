@@ -1,7 +1,7 @@
 ---
 title: Kompilowanie i tworzenie w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec3a74d911a32d7e7f869ee099c70914cafe9a08
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65fbe40a3609b0729bdc376196940f2adb670a2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692454"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229232"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Kompilowanie i tworzenie w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [kompilowanie i tworzenie w programie Visual Studio](https://docs.microsoft.com/visualstudio/ide/compiling-and-building-in-visual-studio).  
-  
 Można używać programu Visual Studio do kompilacji aplikacji i do tworzenia zestawów oraz programów wykonywalnych w krótkich odstępach czasu podczas cyklu rozwoju. Dzięki częstym kompilacjom kodu, można wcześniej wykryć błędy czasu kompilacji, takie jak niepoprawna składnia, błędnie napisane słowa kluczowe i niezgodności typów. Można także wykryć i poprawić błędy czasu wykonania, takie jak błędy logiczne i semantyczne, dzięki częstym kompilacjom i uruchamianiu wersji debugowania kodu.  
   
  Kiedy projekt lub rozwiązanie jest już w pełni rozwinięte i zdebugowane, można skompilować jego składniki poprzez kompilację wydania. Domyślnie kompilacja wydania jest zoptymalizowana i zaprojektowana, aby była mniejsza i działała szybciej niż wersja do debugowania. Aby uzyskać więcej informacji, zobacz [przewodnik: budowanie aplikacji](../ide/walkthrough-building-an-application.md).  

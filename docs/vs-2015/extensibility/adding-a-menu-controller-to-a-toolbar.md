@@ -1,7 +1,7 @@
 ---
 title: Dodawanie kontrolera Menu do paska narzędzi | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f6d124b1dc6bcd16b0f4d62c47df521ba25b07b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5389626f31fa45f04ec58723450baba5370b24f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681788"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231182"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Dodawanie kontrolera menu do paska narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dodawanie kontrolera Menu do paska narzędzi](https://docs.microsoft.com/visualstudio/extensibility/adding-a-menu-controller-to-a-toolbar).  
-  
 W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md) instruktażu przedstawiono sposób dodawania kontrolera menu do paska narzędzi okna narzędzia. Kroki opisane w tym miejscu można zastosować także do narzędzi, który jest tworzony w [Dodawanie paska narzędzi](../extensibility/adding-a-toolbar.md) wskazówki.  
   
  Kontroler menu jest formantem podziału. Kontroler menu po lewej stronie pokazuje ostatnio używane polecenia, a następnie uruchomić, klikając go. Prawa strona kontroler menu jest strzałka, po kliknięciu otwiera listę dodatkowych poleceń. Kiedy kliknąć polecenie na liście, a polecenie działa, i zastępuje polecenia po lewej stronie kontroler menu. W ten sposób kontroler menu działa jak przycisk polecenia, które zawsze wyświetli ostatnio używane polecenia, z listy.  

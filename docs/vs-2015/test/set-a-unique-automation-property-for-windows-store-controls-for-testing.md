@@ -1,7 +1,7 @@
 ---
 title: Ustawianie unikatowej właściwości automatyzacji dla kontrolek Windows Store do testowania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3dd593efa23d40278a314f6b1c1d90e7f7905922
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e20186a7615f774f3cef0b57c56a61a3b076b8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685484"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238878"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Ustawianie unikatowej właściwości automatyzacji dla kontrolek Sklepu Windows przeznaczonych do testowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [ustawić unikatową automatyzacji dla Windows Store formantów właściwości dla testowania](https://docs.microsoft.com/visualstudio/test/set-a-unique-automation-property-for-windows-store-controls-for-testing).  
-  
 Jeśli chcesz uruchomić kodowane testy interfejsu użytkownika dla aplikacji opartych na XAML Windows Store, musi mieć unikatowej właściwości automatyzacji, który identyfikował każdy formant.  
   
  Możesz przypisać unikatowej właściwości automatyzacji na podstawie typu kontrolki XAML w aplikacji. Poniżej przedstawiono sposób przypisać ten unikatowej właściwości automatyzacji w następujących sytuacjach:  

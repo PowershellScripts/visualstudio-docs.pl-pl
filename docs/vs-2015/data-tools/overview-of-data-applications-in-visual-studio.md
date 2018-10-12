@@ -1,7 +1,7 @@
 ---
 title: Przegląd aplikacji w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,12 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: fae912d438be42e874dd539ea78853c9039ebc90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6473608bb781ed9a9ca2e11b473e15e596be1db5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630971"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232807"
 ---
 # <a name="overview-of-data-applications-in-visual-studio"></a>Przegląd aplikacji w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Ta sekcja zawiera informacje i instrukcje przygotowawcze do pracy z danymi w apl
  [Porady: Zarządzanie plikami danych lokalnych w projekcie](../data-tools/how-to-manage-local-data-files-in-your-project.md)  
  W tym artykule opisano sposób lokalnych danych plików są zarządzane w projekcie i jak zmienić zachowanie domyślne.  
   
- [Powiązanie obiektów w programie Visual Studio](../data-tools/bind-objects-in-visual-studio.md)  
+ [Wiązanie obiektów w programie Visual Studio](../data-tools/bind-objects-in-visual-studio.md)  
  Zawiera opis funkcji w programie Visual Studio, który służy do wyłączania danych dla obiektów.  
   
- [Dodatkowe zasoby dotyczące rozwiązywania problemów z błędami dostępu do danych](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+ [Dodatkowe zasoby dla rozwiązywania problemów z błędami dostępu do danych](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
  Zawiera łącza do forów związanych z pracą z danymi w programie Visual Studio.  
   
- [Instalowanie systemów baz danych, narzędzia i przykłady](../data-tools/installing-database-systems-tools-and-samples.md)  
+ [Instalowanie systemów baz danych, narzędzi i przykładów](../data-tools/installing-database-systems-tools-and-samples.md)  
  Zawiera łącza do pobrania przykładowych baz danych i wyświetla listę tematów związanych z konfigurowaniem przykładowych baz danych do użycia w określonych instruktażach.  
   
  [Wskazówki i przykłady](../data-tools/data-applications-samples-and-walkthroughs.md)  
@@ -70,7 +70,7 @@ Ta sekcja zawiera informacje i instrukcje przygotowawcze do pracy z danymi w apl
  [Pobieranie danych do aplikacji](../data-tools/fetching-data-into-your-application.md)  
  W tym artykule opisano sposób przenoszenia danych do aplikacji przez wykonanie instrukcji SQL lub procedur przechowywanych w odniesieniu do źródła danych.  
   
- [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+ [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
  W tym artykule opisano sposób wyświetlania danych w formularzach Windows Forms.  
   
  [Edytowanie danych w aplikacji](../data-tools/editing-data-in-your-application.md)  
@@ -82,10 +82,10 @@ Ta sekcja zawiera informacje i instrukcje przygotowawcze do pracy z danymi w apl
  [Zapisywanie danych](../data-tools/saving-data.md)  
  W tym artykule omówiono zagadnienia, które należy uwzględnić podczas pracy z odłączonej przechowuje rekordów przechowywanych w pamięci.  
   
- [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+ [Narzędzia LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
  Zawiera łącza do tematów dotyczących sposobu tworzenia [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klasy za pomocą [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
- [Hierarchiczna aktualizacja](../data-tools/hierarchical-update.md)  
+ [Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)  
  Zawiera łącza do tematów o tym, jak zapisywać tabele powiązane w zestawie danych wpisywanych za pomocą `TableAdapterManager` składnika.  
   
  [Praca z zestawami danych w aplikacjach n-warstwowych](../data-tools/work-with-datasets-in-n-tier-applications.md)  

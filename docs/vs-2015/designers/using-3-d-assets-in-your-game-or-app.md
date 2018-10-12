@@ -1,7 +1,7 @@
 ---
 title: Używanie obiektów 3-d w grach i aplikacjach | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ab73f8ecdb9507459c7214de37b2349c01062f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226313"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Korzystanie z obiektów 3-D w grach i aplikacjach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [używanie obiektów 3-d w Twojej gry lub aplikacji](https://docs.microsoft.com/visualstudio/designers/using-3-d-assets-in-your-game-or-app).  
-  
 W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do przetwarzania zasobów 3D i zawierania ich w kompilacji.  
   
  Po użyciu narzędzi dostępnych w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do utworzenia zasobów 3-D następnym krokiem jest ich używać w aplikacji. Jednak zanim można ich używać, obiekty muszą zostać przekształcone do formatu, który może zrozumieć program DirectX. Aby ułatwić przekształcenie zasobów, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zawiera dostosowania kompilacji dla każdego rodzaju zasobów, które może wygenerować. Aby uwzględnić zasoby w kompilacji, trzeba będzie skonfigurować projekt do używania dostosowań kompilacji, dodać zasoby do projektu i konfigurowanie zasobów do użycia poprawnego dostosowywania kompilacji. Po tym można załadować zasoby do aplikacji i ich używać, tworząc i wypełniając zasoby DirectX tak jak w przypadku innych aplikacji DirectX.  

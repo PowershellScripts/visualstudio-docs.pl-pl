@@ -1,7 +1,7 @@
 ---
 title: Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio w programie Visual Studio &quot;15&quot; RC | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -21,12 +21,12 @@ caps.latest.revision: 6
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 641f5f296c4670c1a0806ee3340b38a81eedbabb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9a57cacc8d8d37c13e7380f5b68c800c5c31075
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673564"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226190"
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-quot15quot-rc"></a>Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio w programie Visual Studio &quot;15&quot; RC
 Po przeniesieniu do nowszej wersji programu Visual Studio, należy znać, jeśli należy zmodyfikować dowolnego rozwiązania, projekty, pliki i inne zasoby, które zostały utworzone w [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], lub [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] przed uruchomieniem albo [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] lub [!INCLUDE[vs_dev15_md](../includes/vs-dev15-md.md)]. Na tej stronie mogą pomóc korzystając z niego. 
@@ -44,7 +44,7 @@ Po przeniesieniu do nowszej wersji programu Visual Studio, należy znać, jeśli
 |Typ projektu|Zgodność|  
 |---------------------|-------------------|  
 |Windows Universal apps platformy|Do zainstalowania narzędzi Universal Windows apps, w Instalatorze programu Visual Studio, wybierz **niestandardowe** lub **Modyfikuj**, a następnie wybierz pozycję **narzędzia do programowania aplikacji uniwersalnych Windows**.<br /><br /> Tworzenie aplikacji uniwersalnych platformy Windows (UWP) dla systemu Windows 10 jest obsługiwana tylko w programie [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] w systemie Windows 10 lub [!INCLUDE[win81](../includes/win81-md.md)].|  
-|Aplikacje Windows Store|Tworzenie aplikacji Windows Store, w tym uniwersalnych aplikacji przeznaczonych dla Windows 8.1 i Windows Phone 8.1, jest obsługiwana w [!INCLUDE[win81](../includes/win81-md.md)] i Windows 10. Istniejące [!INCLUDE[win8](../includes/win8-md.md)] projekty mogą w dalszym ciągu być obsługiwane, ale nowe [!INCLUDE[win8](../includes/win8-md.md)] projekty nie mogą być tworzone. [!INCLUDE[win81](../includes/win81-md.md)] projekty można być zależne tylko od niektórych typów odwołań. Aby uzyskać więcej informacji, zobacz [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md). **Uwaga:** [!INCLUDE[win81](../includes/win81-md.md)] projektów, które tworzysz przy użyciu [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] lub [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] nie można otworzyć w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].   To dlatego, że [!INCLUDE[win81](../includes/win81-md.md)] projekty utworzone za pomocą [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] i [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] nowszymi wersjami i [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] obsługuje tylko [!INCLUDE[win8](../includes/win8-md.md)] projekty [!INCLUDE[win8](../includes/win8-md.md)].|  
+|Aplikacje Windows Store|Tworzenie aplikacji Windows Store, w tym uniwersalnych aplikacji przeznaczonych dla Windows 8.1 i Windows Phone 8.1, jest obsługiwana w [!INCLUDE[win81](../includes/win81-md.md)] i Windows 10. Istniejące [!INCLUDE[win8](../includes/win8-md.md)] projekty mogą w dalszym ciągu być obsługiwane, ale nowe [!INCLUDE[win8](../includes/win8-md.md)] projekty nie mogą być tworzone. [!INCLUDE[win81](../includes/win81-md.md)] projekty można być zależne tylko od niektórych typów odwołań. Aby uzyskać więcej informacji, zobacz [Zarządzanie odwołaniami w projekcie](../ide/managing-references-in-a-project.md). **Uwaga:** [!INCLUDE[win81](../includes/win81-md.md)] projektów, które tworzysz przy użyciu [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] lub [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] nie można otworzyć w [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. To dlatego, że [!INCLUDE[win81](../includes/win81-md.md)] projekty utworzone za pomocą [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] i [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] nowszymi wersjami i [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] obsługuje tylko [!INCLUDE[win8](../includes/win8-md.md)] projekty [!INCLUDE[win8](../includes/win8-md.md)].|  
 |[!INCLUDE[net_v451](../includes/net-v451-md.md)]|Można tworzyć i używać tych projektów w [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] i [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] po zainstalowaniu odpowiedniego multi-targeting pack. Te projekty nie są obsługiwane w Visual Studio 2010 SP1.|  
 |[!INCLUDE[net_v45](../includes/net-v45-md.md)]|Można tworzyć i otwierać te projekty w [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] i [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], ale nie w Visual Studio 2010 SP1. Aby uzyskać więcej informacji, zobacz [Przewodnik po migracji](http://msdn.microsoft.com/library/02d55147-9b3a-4557-a45f-fa936fadae3b)|  
 |BizTalk|Projekty z serwera BizTalk nie są zgodne z [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] lub [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|  

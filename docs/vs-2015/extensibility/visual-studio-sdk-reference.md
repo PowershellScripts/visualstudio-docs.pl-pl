@@ -1,7 +1,7 @@
 ---
 title: Odwołanie do zestawu SDK programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 048423c5ff981b1c3b14ccb9db1ce0ffe1076209
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db82d0ccfbd4a82686e2b8069a26d3cdadffb73b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630363"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232066"
 ---
 # <a name="visual-studio-sdk-reference"></a>Dokumentacja zestawu Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [odwołanie do zestawu SDK programu Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-sdk-reference).  
-  
 Ta sekcja zawiera informacje o przestrzeni nazw programu Visual Studio, pokrewne obszary nazw i innych obszarach zainteresowań dla deweloperów, którzy korzystają z zestawu SDK programu Visual Studio.  
   
 ## <a name="in-this-section"></a>W tej sekcji

@@ -1,7 +1,7 @@
 ---
 title: Definiowanie kształtów i łączników | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee16ff9dcca787fdf35101aff69348ccea42cfcf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ee3bfaac9cfcdf887a22c84e0b98a13f8add7ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686831"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244611"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definiowanie kształtów i łączników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Definiowanie kształtów i łączników](https://docs.microsoft.com/visualstudio/modeling/defining-shapes-and-connectors).  
-  
 Istnieje kilka typów podstawowych kształtów, które mogą być używane do wyświetlania informacji na diagramie w języku specyficznym dla domeny (DSL).  
   
 ##  <a name="shapeTypes"></a> Podstawowe typy kształtów i łączników  

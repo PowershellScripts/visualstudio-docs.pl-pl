@@ -1,7 +1,7 @@
 ---
 title: Tworzenie i używanie zasad ewidencjonowania analizy kodu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2719e9ec021a1fa2c40d7afb56a4ac459542a7b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b2eb5059d5ec027654b1e4de7098c732e897088
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631918"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238358"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Tworzenie zasad ewidencjonowania analizy kodu i korzystanie z nich
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [tworzyć i za pomocą zasad analizy kodu ewidencjonowania](https://docs.microsoft.com/visualstudio/code-quality/creating-and-using-code-analysis-check-in-policies).  
-  
 Gdy używasz Team Foundation Version Control (TFVC), można utworzyć zasad analizy kodu ewidencjonowania programu .NET Framework i natywne projekty kodu (C/C++) w projekcie zespołowym. Zasady analizy kodu ewidencjonowania służy do kontroli i poprawy jakości kodu, który jest ewidencjonowany w kodzie podstawowym.  
   
  Zasady zostają spełnione, gdy lokalna kompilacja jest aktualna oraz analiza kodu została uruchomiona na najnowszych plikach źródłowych. Co najmniej reguły analizy kodu, które są włączone w projekcie kodu musi zawierać te same reguły jako te, które są definiowane w team project zasad ewidencjonowania. Reguły, które zostały określone jako błędy w ustawieniach projektu zespołowego musi być także określona jako błędy w projekcie kodu  

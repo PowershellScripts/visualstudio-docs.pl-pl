@@ -1,7 +1,7 @@
 ---
 title: Obsługiwanie zabezpieczeń | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c2093e33b2a6b3424b39c8377f8168afd1e90939
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 793ec2b6f5ccfad1ded9f8a4cc2d4e6c4b994f0f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692447"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230805"
 ---
 # <a name="maintaining-security"></a>Obsługiwanie zabezpieczeń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zachowaniu bezpieczeństwa](https://docs.microsoft.com/visualstudio/ide/maintaining-security).  
-  
 Często mówi się, że ceną bezpieczeństwa jest nieprzerwana czujność. Pomimo najwyższej uwagi poświęconej bezpieczeństwu podczas projektowania i rozwoju aplikacji, należy przyjąć, że po jej wdrożeniu pojawią się luki w zabezpieczeniach. Dzięki audytom aplikacji i analizie dzienników zdarzeń, możesz odkryć poprzednio ukryte wady.  
   
  Ponadto, musisz zachowywać czujność nie tylko, jeśli chodzi o swoją własną aplikację. Musisz też być na bieżąco ze wszystkimi zagrożeniami bezpieczeństwa i błędami dotyczącymi platformy, na której działa aplikacja, i innych produktów, od których zależy aplikacja.  

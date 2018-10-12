@@ -1,7 +1,7 @@
 ---
 title: Ustawienia międzynarodowe, środowisko, okno dialogowe Opcje | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6aacaecc14b7a941fcbec54fcf1e26bf9d62690a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98e806101b685f6691dc276bccc58d157af6bc54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680088"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239632"
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>Ustawienia międzynarodowe, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [okno dialogowe Opcje ustawienia międzynarodowe, środowisko,](https://docs.microsoft.com/visualstudio/ide/reference/international-settings-environment-options-dialog-box).  
-  
   
 Strona Ustawienia międzynarodowe umożliwia zmienić domyślny język, jeśli masz więcej niż jedną wersję językową zintegrowanego środowiska programistycznego (IDE) zainstalowane na tym komputerze. Dostęp do tego okna dialogowego wybierając **opcje** z **narzędzia** menu, a następnie wybierając **ustawienia międzynarodowe** z **środowiska** folderu. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.  
   

@@ -1,7 +1,7 @@
 ---
 title: Lista dostępnych usług | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b09e58ee64eeb27940ea30f9a03429706b720cf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 658a4406b16c3f79f3c485e62e6de8027bb35167
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679023"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248108"
 ---
 # <a name="list-of-available-services"></a>Lista dostępnych usług
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [listy dostępnych usług](https://docs.microsoft.com/visualstudio/extensibility/internals/list-of-available-services).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] i zestawu SDK programu Visual Studio obsługuje następujące usługi. Niektóre pakiety oferują własnych usług, które nie są wymienione w tym miejscu — na przykład usług języka nie ma jednej usługi identyfikator GUID. Nazwa języka musi być Znajdź identyfikator GUID usługi języka w rejestrze.  
   
  Użyj identyfikatorów GUID usługi wymienione w tym miejscu lub uzyskane z innego źródła (na przykład język usługi), aby uzyskać podstawowy interfejs lub interfejsy wyświetlane z każdej usługi.  

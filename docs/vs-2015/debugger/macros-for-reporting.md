@@ -1,7 +1,7 @@
 ---
 title: Makra raportowania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22f3637aeee41f764825a0d8f8cd4fdca2cb3e94
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84b5e72b15d085e29823fb8c8e116a153ff550e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680200"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224383"
 ---
 # <a name="macros-for-reporting"></a>Makra raportowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [makra dla raportowania](https://docs.microsoft.com/visualstudio/debugger/macros-for-reporting).  
-  
 Możesz użyć **_RPTn**, i **_RPTFn** makra, zdefiniowane w CRTDBG. Godz., aby zastąpić użycie `printf` instrukcje do debugowania. Te makra automatycznie znikają w Twojej wersji kompilacji, gdy **_DEBUG** nie jest zdefiniowana, więc nie ma potrzeby, należy ująć je w **#ifdef**s.  
   
 |Macro|Opis|  
@@ -91,7 +89,7 @@ someVar=%d, otherVar=%d.\n", someVar, otherVar );
  Ponieważ makra można łatwo zmienić więcej lub mniej zgłaszania informacji dotyczących różnych miejsc docelowych (w zależności od co to jest bardziej wygodne), to podejście może być szczególnie przydatne w miarę ewolucji wymagań dotyczących debugowania.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Techniki testowania CRT](../debugger/crt-debugging-techniques.md)
+ [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md)
 
 
 

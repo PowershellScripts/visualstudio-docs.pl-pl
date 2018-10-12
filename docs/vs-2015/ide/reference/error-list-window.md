@@ -1,7 +1,7 @@
 ---
 title: Okno listy błędów | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0f7bb3d50a68ca7e6908a89d1fd680377b77c9e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e3e87a2786e2eb5ffafda2924920eaad7640039
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682309"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232287"
 ---
 # <a name="error-list-window"></a>Okno listy błędów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [okno listy błędów](https://docs.microsoft.com/visualstudio/ide/reference/error-list-window).  
-  
   
 UWAGA]
 >  Lista błędów wyświetla informacje dotyczące konkretnego komunikatu o błędzie. Możesz skopiować numer błędu lub ciąg tekstu błędu błędu z okna danych wyjściowych. Aby wyświetlić okno danych wyjściowych, naciśnij klawisze Ctrl + Alt + O. Zobacz [okno danych wyjściowych](../../ide/reference/output-window.md).  

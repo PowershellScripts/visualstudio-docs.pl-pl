@@ -1,7 +1,7 @@
 ---
 title: Element VSIXLanguagePack (VSIX Language Pack schemat) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf8e55e38ecf16577482955c30ea95c5a5980087
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8cc63f24f50f8ed0fecb9640ae4b2a5d2ec669be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683938"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224747"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>Element VSIXLanguagePack (schemat VSIX Language Pack)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [VSIXLanguagePack — Element (VSIX Language Pack schemat)](https://docs.microsoft.com/visualstudio/extensibility/vsixlanguagepack-element-vsix-language-pack-schema).  
-  
 Wymagane. Zawiera element główny pakietu językowego VSIX. Pakietu językowego VSIX zawiera informacje dotyczące instalacji zlokalizowanego pakietu VSIX.  
   
 ## <a name="syntax"></a>Składnia  
@@ -57,10 +55,10 @@ Wymagane. Zawiera element główny pakietu językowego VSIX. Pakietu językowego
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[LocalizedName Element](../extensibility/localizedname-element-vsix-language-pack-schema.md)|Wymagane. Zlokalizowana nazwa rozszerzenia do zainstalowania.|  
-|[LocalizedDescription Element](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)|Wymagane. Zlokalizowany opis rozszerzenia do zainstalowania.|  
-|[MoreInfoURL Element](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)|Opcjonalna. Łącze do zlokalizowanych informacji o rozszerzeniu.|  
-|[Element licencji](../extensibility/license-element-vsix-language-pack-schema.md)|Opcjonalna. Ścieżka zlokalizowaną wersję pliku licencji dla rozszerzenia.|  
+|[LocalizedName, element](../extensibility/localizedname-element-vsix-language-pack-schema.md)|Wymagane. Zlokalizowana nazwa rozszerzenia do zainstalowania.|  
+|[LocalizedDescription, element](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)|Wymagane. Zlokalizowany opis rozszerzenia do zainstalowania.|  
+|[MoreInfoURL, element](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)|Opcjonalna. Łącze do zlokalizowanych informacji o rozszerzeniu.|  
+|[License, element](../extensibility/license-element-vsix-language-pack-schema.md)|Opcjonalna. Ścieżka zlokalizowaną wersję pliku licencji dla rozszerzenia.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   

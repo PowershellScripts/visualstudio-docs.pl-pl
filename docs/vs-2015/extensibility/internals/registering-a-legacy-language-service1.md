@@ -1,7 +1,7 @@
 ---
 title: Rejestrowanie starszej wersji usługi językowej1 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0aebd8142d5ceed2acb113dbfaec5904271d4468
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4177507e8633fa5596da07f5df349df28a66f2a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691553"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230600"
 ---
 # <a name="registering-a-legacy-language-service"></a>Rejestrowanie starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [rejestrowanie starszej wersji usługi językowej1](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-legacy-language-service1).  
-  
 W ramach pakietu zarządzanego (MPF), usługa języka jest proffered przez pakietu VSPackage (zobacz [pakietów VSPackage](../../extensibility/internals/vspackages.md)) i jest zarejestrowany w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] przez dodanie klucze i wpisy. Ten proces rejestracji odbywa się w częściowo podczas instalacji i częściowo w czasie wykonywania.  
   
 ## <a name="register-the-language-service-by-using-attributes"></a>Zarejestruj usługę języka przy użyciu atrybutów  

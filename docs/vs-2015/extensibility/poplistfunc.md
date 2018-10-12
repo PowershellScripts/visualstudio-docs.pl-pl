@@ -1,7 +1,7 @@
 ---
 title: POPLISTFUNC | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8b193eae0e41f48c0f947bbf8af596084a1544f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b085401b905011fcf62f5ef94cc214af1d978f3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681674"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224552"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [POPLISTFUNC](https://docs.microsoft.com/visualstudio/extensibility/poplistfunc).  
-  
 To wywołanie zwrotne jest dostarczony do [SccPopulateList](../extensibility/sccpopulatelist-function.md) IDE i jest używany przez wtyczka do kontroli źródła do aktualizowania listy plików lub katalogów (również dostarczane do `SccPopulateList` funkcji).  
   
  Kiedy użytkownik wybierze **uzyskać** polecenie w IDE, środowisko IDE wyświetla pola listy wszystkich plików, które użytkownik może otrzymać. Niestety IDE znasz dokładną listę wszystkich plików, które użytkownik może otrzymać; tylko dodatek używa tej listy. Jeśli innym użytkownikom dodane pliki do projektu kontroli kodu źródłowego, pliki te powinna zostać wyświetlona na liście, ale IDE nie wie o nich. IDE kompiluje listę plików, które uważa, że użytkownik może otrzymać. Przed wyświetleniem tej listy do użytkownika wywoływanych przez nią [SccPopulateList](../extensibility/sccpopulatelist-function.md) `,` zapewniając wtyczka do kontroli źródła możliwość dodawania i usuwania plików z listy.  

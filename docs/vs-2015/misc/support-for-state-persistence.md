@@ -1,7 +1,7 @@
 ---
 title: Obsługa stanu trwałości | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d25866f2-8d1f-477f-8aa5-3af3fbbf6e97
 caps.latest.revision: 15
 manager: douge
-ms.openlocfilehash: 23278842d3a4c7c7123e5e84a07014749873a6f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b7eb294b38a5fb19303a175347adcdaa0f0ba22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675789"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242830"
 ---
 # <a name="support-for-state-persistence"></a>Obsługa stanu trwałości
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] można zachować stanu obiektów. Na przykład właściwości rozwiązania i projektu zapisany i przywrócony z plików rozwiązania i projektu. Ustawienia użytkownika można eksportować do i zaimportowane z plików ustawień.  

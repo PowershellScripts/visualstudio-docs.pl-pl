@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Tworzenie elementu roboczego dla defektu kodu zarządzanego | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8d3fb0e5b0881f5777e428d6aa0e8503ed32b8b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0ed4ad9693ffbca44154f328a74b45810705457
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677213"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235092"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Porady: tworzenie elementu roboczego dla defektu kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Tworzenie elementu roboczego dla defektu kodu zarządzanego](https://docs.microsoft.com/visualstudio/code-quality/how-to-create-a-work-item-for-a-managed-code-defect).  
-  
 Można użyć elementu roboczego funkcji dziennika element roboczy z poziomu śledzenia [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Aby użyć tej funkcji, projekt musi być częścią projektu zespołowego w [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
   
 ### <a name="to-create-a-work-item-for-managed-code-defect"></a>Aby utworzyć element roboczy dla błędu kodu zarządzanego  

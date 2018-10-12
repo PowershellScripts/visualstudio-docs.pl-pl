@@ -1,7 +1,7 @@
 ---
 title: 'Porady: wyszukiwanie tematów | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c094e255a6e87c1b2d6d8036bf033874399e000
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef0cbdff47423fe1ed580f3f51ba1e6039ee3e01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631946"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248292"
 ---
 # <a name="how-to-search-for-topics"></a>Porady: wyszukiwanie tematów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: wyszukiwanie tematów](https://docs.microsoft.com/visualstudio/ide/how-to-search-for-topics).  
-  
 Funkcja wyszukiwania pełnotekstowego, aby znaleźć wszystkie tematy, które zawierają określony wyraz. Można również dostosować i dostosowywanie wyszukiwania przy użyciu wyrażenia z symbolami wieloznacznymi, operatory logiczne i operatory wyszukiwania zaawansowanego.  
   
 ### <a name="to-open-the-search-tab"></a>Aby otworzyć kartę Wyszukiwanie  
@@ -53,7 +51,7 @@ Funkcja wyszukiwania pełnotekstowego, aby znaleźć wszystkie tematy, które za
  [Porady dotyczące wyszukiwania pełnotekstowego](../ide/full-text-search-tips.md)   
  [Operatory logiczne w wyrażeniach wyszukiwania](../ide/logical-operators-in-search-expressions.md)   
  [Operatory wyszukiwania zaawansowanego w wyrażeniach wyszukiwania](../ide/advanced-search-operators-in-search-expressions.md)   
- [Porady: Dostosowywanie wyników wyszukiwania](../ide/how-to-customize-search-results.md)
+ [Instrukcje: dostosowywanie wyników wyszukiwania](../ide/how-to-customize-search-results.md)
 
 
 

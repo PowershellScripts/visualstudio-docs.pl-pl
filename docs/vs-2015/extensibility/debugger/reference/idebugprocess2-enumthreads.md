@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2::EnumThreads | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 05677385-7a7f-4545-8438-af00dde85db0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30fb71dbb1fa6edbce9201cd757dd96f401f1e5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c6cf90b66c2a74f6f189a5531c019832ca8b72e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679088"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247380"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [IDebugProcess2::EnumThreads](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2-enumthreads).  
-  
 Pobiera listę wszystkich wątków, uruchomiony w procesie.  
   
 ## <a name="syntax"></a>Składnia  
@@ -61,5 +59,5 @@ int EnumThreads(
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Enumthreads —](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)
+ [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)
 

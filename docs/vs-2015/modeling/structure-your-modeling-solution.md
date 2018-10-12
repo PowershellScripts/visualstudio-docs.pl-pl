@@ -1,7 +1,7 @@
 ---
 title: Tworzenie struktury rozwiązania modelowania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 96f545c980cd49c6f70c45f3ee7fc80be3a25421
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4409891b7d6cbc4be5f46b598cd5910f3e0e9284
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243038"
 ---
 # <a name="structure-your-modeling-solution"></a>Tworzenie struktury rozwiązania modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [struktury rozwiązania modelowania](https://docs.microsoft.com/visualstudio/modeling/structure-your-modeling-solution).  
-  
 Aby skutecznie używać modeli w projekcie programistycznym, członkowie zespołu musi umożliwiać do pracy w modelach różnych części projektu, w tym samym czasie. W tym temacie sugeruje schemat podzielenie aplikacji na różne części, które odpowiadają warstw w ogólną diagram warstwowe.  
   
  Do uruchamiania w projekcie, lub szybko subproject, warto mieć szablon projektu, który następuje struktury projektu, który wybrano. W tym temacie opisano, jak utworzyć i używać tych szablonów.  

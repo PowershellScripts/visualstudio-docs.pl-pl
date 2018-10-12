@@ -1,7 +1,7 @@
 ---
 title: Używanie motywów w przepływach pracy (starsza wersja) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: c1bb0392054717844cc9f0943f57aaa33d0c887c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b69913605e57ed0ef4b4a2b025287821f679369d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233021"
 ---
 # <a name="using-themes-in-workflows-legacy"></a>Używanie motywów w przepływach pracy (starsza wersja)
 W tym temacie opisano sposób używania tematów w [!INCLUDE[wf](../includes/wf-md.md)] przy użyciu starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] przeznaczonego [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

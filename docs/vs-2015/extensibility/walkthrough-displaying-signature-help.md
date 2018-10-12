@@ -1,7 +1,7 @@
 ---
 title: 'Przewodnik: Wyświetlanie pomocy dotyczącej sygnatur | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24c3eea821209485b5d57335c0c948cae92b4a20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0642b798668e24e7ba1e6595ab3c8ea6dba6885e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682783"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247926"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>Przewodnik: wyświetlanie pomocy dotyczącej sygnatur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: wyświetlanie pomoc podpisu](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-signature-help).  
-  
 Pomocy dotyczącej sygnatur (znany także jako *Parameter Info*) Wyświetla podpis metody w etykietce narzędzia, gdy użytkownik wpisuje znak start listy parametrów (zazwyczaj nawias otwierający). Jako parametr i separator parametru (zazwyczaj przecinek) mają typ, etykietki narzędzia jest aktualizowana w celu wyświetlenia następny parametr pogrubioną czcionką. Pomoc podpisu można zdefiniować w kontekście usługi językowej, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typ i wyświetlić Pomoc podpisu dla właśnie tego typu lub możesz wyświetlić Pomoc podpisu dla istniejącego typu zawartości (na przykład "text"). Ten poradnik pokazuje jak wyświetlić Pomoc podpisu dla typu zawartości "text".  
   
  Pomocy dotyczącej sygnatur zwykle jest wyzwalany przez wpisanie określonych znaków, na przykład, "(" (nawias otwierający), a zostanie odrzucony, wpisując znak inny, na przykład, ")" (zamykający nawias). Funkcje IntelliSense, które są wyzwalane, wpisując znak można zaimplementować przy użyciu procedurę obsługi poleceń dla naciśnięcia klawiszy ( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu) i dostawcy programu obsługi, który implementuje <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interfejsu. Aby utworzyć źródło pomoc podpisu, czyli wykaz sygnatur, które uczestniczą w pomoc podpisu, należy zaimplementować <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource> interfejsu i dostawcy źródła, który implementuje <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider> interfejsu. Dostawcy są składnikami Managed Extensibility Framework (MEF) i odpowiadają za eksportowanie klas źródłowych i kontrolera i importowanie usługi i brokerzy, na przykład <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, który umożliwia nawigowanie w buforze tekstu i <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>, która wyzwala sesji pomoc podpisu.  

@@ -1,7 +1,7 @@
 ---
 title: Plan rozwoju rozszerzania debugera | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 753f63b1a3deae2b1eab7bd46d1302bebaa16b85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fce5c11b5393bb8e3887b1369866a5f0906195d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676493"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242108"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Plan rozwoju rozszerzania debugera
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [plan rozwoju rozszerzania debugera](https://docs.microsoft.com/visualstudio/extensibility/debugger/roadmap-for-extending-the-debugger).  
-  
 Ta dokumentacja zawiera przewodnik i informacje do rozszerzania [!INCLUDE[vs_current_short](../../includes/vs-current-short-md.md)] debugera za pomocą [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugowanie dokumentacji zawiera przykłady, stanowią wyczerpujące Kompendium i kilka reprezentatywny scenariusze, które pokazują typowe sposoby dostosowywania debugera.  
@@ -38,7 +36,7 @@ Ta dokumentacja zawiera przewodnik i informacje do rozszerzania [!INCLUDE[vs_cur
   
 -   Tworzy Microsoft intermediate language (MSIL). dane wyjściowe, można debugować programy przy użyciu aparatu debugowania kodu zarządzanego DE, która jest również zintegrowana [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. W związku z tym należy zaimplementować tylko ewaluatora wyrażeń. Ewaluator wyrażeń próbki jest dostarczany. Więcej informacji znajduje się w następujących tematach:  
   
-     [Szacowanie wyrażeń](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
+     [Obliczanie wyrażeń](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
   
      [Ocenianie wyrażeń](../../extensibility/debugger/evaluating-expressions.md)  
   

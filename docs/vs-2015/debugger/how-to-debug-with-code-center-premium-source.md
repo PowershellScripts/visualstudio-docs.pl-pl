@@ -1,7 +1,7 @@
 ---
 title: 'Porady: debugowanie przy użyciu źródła Code Center Premium | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a453f7e926175b6ebf4825d015626e0f81688f35
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 3fa890e15a27a3d54c420520a71119f794fd124c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879385"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248270"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Porady: debugowanie przy użyciu źródła Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: debugowanie przy użyciu źródła Code Center Premium](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-with-code-center-premium-source).  
-  
 Za pomocą [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] debugera, możesz przeprowadzić debugowanie bezpiecznego źródłowy udostępniony z Microsoft MSDN Code Center Premium.  
   
  W tym temacie opisano sposób konfigurowania i debugowania kodu źródła Code Center Premium w programie Visual Studio.  

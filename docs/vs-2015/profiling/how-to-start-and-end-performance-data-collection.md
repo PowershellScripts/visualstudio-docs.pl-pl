@@ -1,7 +1,7 @@
 ---
 title: 'Porady: rozpoczęcia i zakończenia zbierania danych o wydajności | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7c7848f8bb45ae9c97dacdd75c42e8345646e5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e6d98a8a72c28bc3e70a3b6b0f0d55ce74522cb7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685909"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229700"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>Porady: rozpoczęcia i zakończenia zbierania danych o wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [jak: rozpoczęcia i zakończenia zbierania danych o wydajności](https://docs.microsoft.com/visualstudio/profiling/how-to-start-and-end-performance-data-collection).  
-  
 Docelowe dane binarne, które chcesz należy dodać do profilu do sesji wydajności przed rozpoczęciem profilowania. Aby dodać element docelowy, kliknij prawym przyciskiem myszy **obiektów docelowych** w **Eksplorator wydajności**, a następnie kliknij przycisk **Dodaj binarne docelowej**. W **Dodaj binarne docelowej** okno dialogowe, wybierz nazwę pliku, a następnie kliknij przycisk **Otwórz**. Zostanie dodany nowy plik binarny.  
   
 ### <a name="to-start-profiling"></a>Aby rozpocząć profilowanie  
@@ -49,7 +47,7 @@ Docelowe dane binarne, które chcesz należy dodać do profilu do sesji wydajno�
   
 ## <a name="see-also"></a>Zobacz też  
  [Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)   
- [Porady: wstrzymywanie i wznawianie zbierania danych o wydajności](../profiling/how-to-pause-and-resume-performance-data-collection.md)
+ [Instrukcje: wstrzymywanie i wznawianie zbierania danych o wydajności](../profiling/how-to-pause-and-resume-performance-data-collection.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Właściwości dokumentu XML, okno właściwości | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7145c81a87235d37a0e4825509e7f8fb94ab0f7c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c93defe6f5c56966195f1514b5aa76464f6f3013
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684791"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236564"
 ---
 # <a name="xml-document-properties-properties-window"></a>Właściwości dokumentu XML, Właściwości, okno
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [właściwości dokumentu XML, okno właściwości](https://docs.microsoft.com/visualstudio/xml-tools/xml-document-properties-properties-window).  
-  
   
 **Właściwości** okno zawiera podstawowe informacje o dokument, który jest aktywny w edytorze XML. Właściwości, które są dostępne, różnią się w zależności od typu dokumentu XML, który jest obecnie aktywny.  
   

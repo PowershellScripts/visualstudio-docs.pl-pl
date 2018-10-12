@@ -1,7 +1,7 @@
 ---
 title: Edytowanie modeli i diagramów UML | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 86
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0620f0a1212d7abd864a9428492d95067098ef16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52d83911da0f8c1a54618a389db3cff6bbcbab1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677957"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245828"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Edytowanie modeli i diagramów UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [modeli i diagramów UML Edytuj](https://docs.microsoft.com/visualstudio/modeling/edit-uml-models-and-diagrams).  
-  
 Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez różne rodzaje diagramów. Dostarczając z różnych perspektyw w systemie, te diagramy pomaga zrozumieć i różnych aspektów projektu i wymagania. Program Visual Studio udostępnia szablony dla 5 najbardziej często używanych typów diagramu UML.  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

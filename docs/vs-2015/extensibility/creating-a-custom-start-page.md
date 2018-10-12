@@ -1,7 +1,7 @@
 ---
 title: Tworzenie niestandardowej strony początkowej | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b217c098f34240ddc4505821ae8446e4244605da
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 052f05c3485e9ecdfbfe74b6a142c44c7b0699ff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775252"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239788"
 ---
 # <a name="creating-a-custom-start-page"></a>Tworzenie niestandardowej strony początkowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [tworzenie niestandardowe strony początkowej](https://docs.microsoft.com/visualstudio/extensibility/creating-a-custom-start-page).  
-  
 Jeśli nie można utworzyć niestandardowej strony początkowej za pomocą szablonu projektu strony początkowej, zgodnie z opisem w [Start stron](../misc/creating-your-own-start-page.md), można ręcznie utworzyć jeden, wykonując kroki opisane w tym dokumencie.  
   
 ## <a name="creating-a-blank-start-page"></a>Tworzenie strony początkowej puste  

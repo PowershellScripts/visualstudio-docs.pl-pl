@@ -1,7 +1,7 @@
 ---
 title: Zgodność wersji dla zasad ewidencjonowania analizy kodu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e5d243ecda08dde83bf2dbc77595d4df3849cf54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 840a12e7f4c0e3853e885a803dea5a92e05a5a27
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684002"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261485"
 ---
 # <a name="version-compatibility-for-code-analysis-check-in-policies"></a>Kompatybilność wersji dla zasad ewidencjonowania analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zgodność wersji dla zasad ewidencjonowania analizy kodu](https://docs.microsoft.com/visualstudio/code-quality/version-compatibility-for-code-analysis-check-in-policies).  
-  
 Jeśli musisz ocenić i tworzyć przy użyciu różnych wersji zasad ewidencjonowania dla analizy kodu [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], musisz wiedzieć, że różnice w sposób [!INCLUDE[vstsTfsOrcasLong](../includes/vststfsorcaslong-md.md)] i [!INCLUDE[vstsTfsRosarioShort](../includes/vststfsrosarioshort-md.md)] oceń zasady ewidencjonowania.  
   
 ## <a name="version-compatibility-for-evaluating-check-in-policies"></a>Kompatybilność wersji dla oceny zasad ewidencjonowania  

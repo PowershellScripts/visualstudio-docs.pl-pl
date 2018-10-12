@@ -1,7 +1,7 @@
 ---
 title: Ostrzeżenia o zabezpieczeniach | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e906143b384a36dd34a5f487f6785705bdc2ab33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3015e1d01407120aef30b25aea4dbc8e0c6c7fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682716"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187608"
 ---
 # <a name="security-warnings"></a>Ostrzeżenia o zabezpieczeniach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [ostrzeżenia o zabezpieczeniach](https://docs.microsoft.com/visualstudio/code-quality/security-warnings).  
-  
 Ostrzeżenia o zabezpieczeniach obsługują bezpieczniejsze biblioteki i aplikacje. Ostrzeżenia te pomagają zapobiec usterkom w zabezpieczeniach w programie. Przyczynę wyłączenia któregokolwiek z tych ostrzeżeń należy wyraźnie oznaczyć w kodzie i poinformować o tym osobę odpowiedzialną za bezpieczeństwo w projekcie.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
@@ -87,7 +85,7 @@ Ostrzeżenia o zabezpieczeniach obsługują bezpieczniejsze biblioteki i aplikac
 |[CA2147: Metody przezroczyste nie mogą używać asercji zabezpieczeń](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Kod, który jest oznaczony jako SecurityTransparentAttribute, nie ma przyznanego wystarczającego uprawnienia do potwierdzenia.|  
 |[CA2149: Metody przezroczyste nie mogą wywoływać kodu natywnego](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Ta reguła jest uruchamiana dla każdej przezroczystej metody, która wywołuje bezpośrednio kod natywny, na przykład przez metodę P/Invoke. Naruszenie tej zasady prowadzi do wyjątku MethodAccessException w poziomie 2 modelu przezroczystości i pełnego żądania dla UnmanagedCode w modelu przezroczystości poziomu 1.|  
 |[CA2151: Pola typu krytycznego powinny być krytyczne pod względem zabezpieczeń](../code-quality/ca2151-fields-with-critical-types-should-be-security-critical.md)|Aby używać typów krytycznych pod względem zabezpieczeń, kod odwołujący się do typu musi być albo krytyczny pod względem zabezpieczeń, albo bezpieczny-krytyczny pod względem zabezpieczeń. Ta zasada obowiązuje nawet w przypadku odwołania pośredniego. Dlatego pole mające zabezpieczenia przezroczyste lub pole bezpieczne-krytyczne pod względem zabezpieczeń jest mylące, ponieważ przezroczysty kod nadal nie będzie mógł uzyskać dostępu do pola.|  
-|[Deklaracje CA5122 P/Invoke nie powinny być bezpieczne-krytyczne](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|Metody są oznaczone jako SecuritySafeCritical, gdy wykonują operacje zależne od zabezpieczeń, ale mogą być również bezpiecznie używane przez kod przezroczystości. Kod przezroczystości może nigdy bezpośrednio nie wywołać kodu natywnego za pośrednictwem metody P/Invoke. Dlatego oznakowanie metody P/Invoke jako bezpiecznej-krytycznej pod względem zabezpieczeń nie umożliwi jej wywołania kodu przezroczystości i jest mylące dla analizy zabezpieczeń.|  
+|[CA5122 Deklaracje P/Invoke nie powinny być bezpieczne-krytyczne pod względem zabezpieczeń](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|Metody są oznaczone jako SecuritySafeCritical, gdy wykonują operacje zależne od zabezpieczeń, ale mogą być również bezpiecznie używane przez kod przezroczystości. Kod przezroczystości może nigdy bezpośrednio nie wywołać kodu natywnego za pośrednictwem metody P/Invoke. Dlatego oznakowanie metody P/Invoke jako bezpiecznej-krytycznej pod względem zabezpieczeń nie umożliwi jej wywołania kodu przezroczystości i jest mylące dla analizy zabezpieczeń.|  
 |[CA2153: Unikaj obsługiwania uszkodzonych wyjątków stanu](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Uszkodzony stan wyjątków (rozszerzenie klienta)](https://msdn.microsoft.com/magazine/dd419661.aspx) wskazać, że pamięć uszkodzenie istnieje w procesie. Przechwytywanie tych zamiast zezwalać awarię procesu może prowadzić do luk w zabezpieczeniach, jeśli osoba atakująca może wykorzystać do regionu pamięci uszkodzony.|  
 |[CA3075: Niezabezpieczone przetwarzanie definicji DTD](../code-quality/ca3075-insecure-dtd-processing.md)|Jeśli używasz niezabezpieczone wystąpień XmlReaderSettings lub odwoływać się do jednostek zewnętrznych źródeł, analizator może zaakceptować niezaufane dane wejściowe i ujawnienia poufnych informacji dla osób atakujących.|  
 |[CA3076: Niezabezpieczone wykonywanie skryptu XSLT](../code-quality/ca3076-insecure-xslt-script-execution.md)|Jeżeli insecurely wykonać Extensible arkuszy stylów języka przekształcenia (XSLT) w aplikacjach platformy .NET, procesor może zostać rozwiązany niezaufanych odwołań do identyfikatora URI, które można ujawnić poufne informacje do osoby atakujące, co prowadzi do "odmowa usługi" i Cross-Site ataki.|  

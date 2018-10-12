@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Uruchom narzędzie Spy ++ | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9eb5d8cd8a5ca0ba32f59e483265942379eb3122
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50b9e68862c8dfc3d608f965cb61ee1e0c1012b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683842"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180313"
 ---
 # <a name="how-to-start-spy"></a>Porady: korzystanie z programu Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Uruchom narzędzie Spy ++](https://docs.microsoft.com/visualstudio/debugger/how-to-start-spy-increment).  
-  
 Można uruchomić programu Spy ++ w programie Visual Studio lub w wierszu polecenia.  
   
  Po uruchomieniu programu Spy ++, jeśli zostanie wyświetlony komunikat o uprawnienia, aby wprowadzić zmiany do komputera, kliknij przycisk **tak**.  

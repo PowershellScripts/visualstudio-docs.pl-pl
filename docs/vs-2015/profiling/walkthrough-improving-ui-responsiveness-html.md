@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Poprawianie czasu odpowiedzi interfejsu użytkownika (HTML) | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9409a8af25d2283e3b808c7e779aa86361d2e454
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678982"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258313"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Wskazówki: Poprawianie czasu odpowiedzi interfejsu użytkownika (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: poprawa UI responsiveness (HTML)](https://docs.microsoft.com/visualstudio/profiling/walkthrough-improving-ui-responsiveness-html).  
-  
 Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie problemów z wydajnością za pomocą [profiler czasu odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md). Program profilujący jest dostępna w aplikacjach Visual Studio for Windows Universal a Windows Store przy użyciu języka JavaScript. W tym scenariuszu utworzysz aplikację test wydajności, która aktualizuje elementów DOM zbyt często, a następnie użyć profiler zidentyfikować i rozwiązać ten problem.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Tworzenie i uruchamianie wykonywania testowanie aplikacji  

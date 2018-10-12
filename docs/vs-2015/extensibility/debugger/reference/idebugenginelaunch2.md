@@ -1,7 +1,7 @@
 ---
 title: IDebugEngineLaunch2 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5eaf2ad8-3fbf-446e-b48b-5327ad3f5255
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b4f70dac4d8831b02e458be3b8b4e38e5703b5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d67bdd4c4d2901c98409b85f784aa117da434d7e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258253"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [IDebugEngineLaunch2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugenginelaunch2).  
-  
 Używane przez aparat debugowania (DE) do uruchomienia, a następnie Zakończ działanie programów.  
   
 ## <a name="syntax"></a>Składnia  

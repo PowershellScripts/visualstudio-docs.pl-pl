@@ -1,7 +1,7 @@
 ---
 title: MSI wdrażanie i VSIX języka DSL | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9842dd41b01d10405c3e3cae0d0dde2a704ecdf3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 7c1ad9b9790a7d7fda27bab0d409480f8114d3a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775792"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258300"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Wdrażanie pakietów MSI i VSIX języka DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [MSI wdrażanie i VSIX języka DSL](https://docs.microsoft.com/visualstudio/modeling/msi-and-vsix-deployment-of-a-dsl).  
-  
 Języka specyficznego dla domeny można zainstalować na komputerze lokalnym lub na innych komputerach. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] muszą być zainstalowane na komputerze docelowym.  
   
 ##  <a name="which"></a> Wybieranie między wdrażanie pliku MSI i VSIX  

@@ -1,7 +1,7 @@
 ---
 title: Dostosowywanie edytora | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a74276e0b9ae70f94d87aa258eacf6168f20653
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0b9d01c6582d1bf67b0b33e5372d94700a62587
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685628"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259331"
 ---
 # <a name="customizing-the-editor"></a>Dopasowywanie edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dostosowywanie edytora](https://docs.microsoft.com/visualstudio/ide/customizing-the-editor).  
-  
 Formatowanie, karty, czcionki i kolory, funkcja IntelliSense i wiele innych funkcji edytora ogólnie rzecz biorąc lub edytora języka można dostosować, zmieniając opcje. Aby uzyskać więcej informacji o tych opcjach, zobacz [okno dialogowe Opcje edytora tekstowego](../ide/reference/text-editor-options-dialog-box.md) lub typ `Editor` do **szybkiego uruchamiania**. Można również zmienić sposób wyświetlania okien edytora.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
@@ -48,7 +46,7 @@ Formatowanie, karty, czcionki i kolory, funkcja IntelliSense i wiele innych funk
  [Ustawianie zakładek w kodzie](../ide/setting-bookmarks-in-code.md)   
  [Ogólne, środowisko, okno dialogowe Opcje](../ide/reference/general-environment-options-dialog-box.md)   
  [Dokumenty, środowisko, opcje, okno dialogowe](../ide/reference/documents-environment-options-dialog-box.md)   
- [Czcionki i kolory, środowisko, okno dialogowe Opcje](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+ [Czcionki i kolory, Środowisko, Opcje — okno dialogowe](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
 
 
 

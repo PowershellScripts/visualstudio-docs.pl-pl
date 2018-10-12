@@ -1,7 +1,7 @@
 ---
 title: Za pomocą projektanta przepływu pracy automatu stanu starszych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -21,12 +21,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: aafe537adf0a48ea38cdeb84a3461fef30cb13e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679129"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231689"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Używanie starszej wersji Projektanta przepływu pracy automatu stanów
 Podczas tworzenia nowego projektu przepływu pracy maszyny stanu w [!INCLUDE[vs2010](../includes/vs2010-md.md)] który jest przeznaczony dla jednej [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], możesz użyć **Aplikacja konsoli przepływu pracy maszyny w stanie** lub  **Stan biblioteki przepływu pracy automatu** szablonu projektu w starszej wersji. Jeśli zostanie wybrana jedna z tych szablonów projektu maszyny stanu, Projektant machine stanu jest przedstawiany jako interfejsu użytkownika projektanta przepływu pracy w starszej wersji. Uzyskać informacji o szablonach projektu maszyny stanu starszej wersji, zobacz [porady: Tworzenie stanu maszyny aplikacji konsoli przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) i [jak: Tworzenie biblioteki przepływu pracy (starsza wersja)stanumaszyny](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
@@ -45,7 +45,7 @@ Podczas tworzenia nowego projektu przepływu pracy maszyny stanu w [!INCLUDE[vs2
   
 |Nazwa przybornika|Działanie|Opis|  
 |------------------|--------------|-----------------|  
-|**Stan**|[Działanie StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|Reprezentuje stan w automacie stanów; może zawierać dodatkowe **działanie StateActivity** działań. Aby uzyskać więcej informacji, zobacz [przy użyciu działania działanie StateActivity](http://go.microsoft.com/fwlink?LinkID=65083).|  
+|**State**|[Działanie StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|Reprezentuje stan w automacie stanów; może zawierać dodatkowe **działanie StateActivity** działań. Aby uzyskać więcej informacji, zobacz [przy użyciu działania działanie StateActivity](http://go.microsoft.com/fwlink?LinkID=65083).|  
 |**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|Określa przejścia do nowego stanu. Aby uzyskać więcej informacji, zobacz [przy użyciu działania SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65082).|  
 |**Działanie StateInitialization**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|Wykonuje, gdy stan jest wprowadzana; może zawierać innych działań. Aby uzyskać więcej informacji, zobacz [przy użyciu działania działanie StateInitialization](http://go.microsoft.com/fwlink?LinkID=65006).|  
 |**Działanie StateFinalization**|[StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)|Wykonuje zawarte działania podczas opuszczania [działanie StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) działania. Aby uzyskać więcej informacji, zobacz [przy użyciu działania StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65008).|  

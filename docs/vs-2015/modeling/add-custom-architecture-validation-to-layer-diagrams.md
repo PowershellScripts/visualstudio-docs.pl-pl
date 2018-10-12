@@ -1,7 +1,7 @@
 ---
 title: Dodawanie niestandardowej walidacji architektury do diagramów warstw | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ef9831dd5268c545373433d728df7e36d31cf83
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2012ff0729853d365ed9bb32a9420f5b41bf47fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629390"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231104"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Dodawanie niestandardowej walidacji architektury do diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dodawanie niestandardowej walidacji architektury do diagramów zależności](https://docs.microsoft.com/visualstudio/modeling/add-custom-architecture-validation-to-layer-diagrams).  
-  
 W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źródłowego w projekcie względem modelu warstwy, aby mogli zweryfikować, że kod źródłowy odpowiada zależnościom na diagramie warstwy. Istnieje algorytm standardowego sprawdzania poprawności, ale można zdefiniować własne rozszerzenia sprawdzania poprawności.  
   
  Gdy użytkownik wybierze **sprawdzanie poprawności architektury** polecenia na diagramie warstwy, wywoływana jest standardowa metoda sprawdzania poprawności, następuje wszystkie rozszerzenia sprawdzania poprawności, które zostały zainstalowane.  

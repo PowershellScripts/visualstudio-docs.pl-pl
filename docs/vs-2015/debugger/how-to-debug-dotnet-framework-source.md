@@ -1,7 +1,7 @@
 ---
 title: 'Porady: debugowanie źródła .NET Framework | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250c2bd633a4f6c6b0580b23d0fbf1bb25094247
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c717e1d9eccce48319d8a73dd52d7f13ce36296e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240620"
 ---
 # <a name="how-to-debug-net-framework-source"></a>Porady: debugowanie źródła .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: debugowanie źródła programu .NET Framework](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-dotnet-framework-source).  
-  
 Najbardziej aktualną wersję [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oferuje nowe funkcje [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] debugowania. Aby debugować [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] źródło, musisz mieć dostęp do symboli debugowania dla kodu. Należy również umożliwić stepping do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] źródła.  
   
  Aby umożliwić [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] przechodzenie krok po kroku i ściąganie symbolu w **opcje** okno dialogowe. Po włączeniu pobierania symboli, można od razu pobrać symbole lub po prostu włączyć opcję późniejszego pobrania. Jeśli użytkownik nie pobierze symboli natychmiast, symbole będą pobierane przy następnym uruchomieniu debugowania aplikacji. Możesz także zrobić ręczne pobranie z **modułów** okna lub **stos wywołań** okna.  
@@ -81,7 +79,7 @@ Najbardziej aktualną wersję [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oferu
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   
- [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Określanie plików symboli (pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
 
 

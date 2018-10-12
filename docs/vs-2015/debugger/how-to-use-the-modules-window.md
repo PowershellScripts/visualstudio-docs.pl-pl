@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Korzystanie z okna modułów | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f7a5c71a95c0e4c366b7001a3adf86d5bacc9c8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fcd1b19557cf07901b5834539095847e7e1395ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676041"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225176"
 ---
 # <a name="how-to-use-the-modules-window"></a>Porady: korzystanie z okna modułów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wyświetlanie modułów, biblioteki dll i plików wykonywalnych w debugerze](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-modules-window).  
-  
 UWAGA]
 >  Ta funkcja nie jest dostępna dla bazy danych SQL lub debugowania skryptu.  
   
@@ -87,7 +85,7 @@ UWAGA]
 ## <a name="see-also"></a>Zobacz też  
  [Przerwanie wykonywania](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
- [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+ [Określanie plików symboli (pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
 
 

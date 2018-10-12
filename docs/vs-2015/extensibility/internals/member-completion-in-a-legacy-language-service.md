@@ -1,7 +1,7 @@
 ---
 title: Uzupełnianie składowych w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c17404b115c7e8b3f8036c52e493f6932411731
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240815"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Uzupełnianie składowych w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [uzupełnianie składowych w starszej wersji usługi językowej](https://docs.microsoft.com/visualstudio/extensibility/internals/member-completion-in-a-legacy-language-service).  
-  
 Uzupełnianie składowych IntelliSense jest etykietka narzędzia, która zawiera listę możliwych elementów członkowskich z określonego zakresu, takich jak klasy, struktury, wyliczenia lub przestrzeni nazw. Na przykład w języku C#, jeśli użytkownik wpisze "this" następuje kropka, listę wszystkich elementów członkowskich klasy lub struktury w bieżącym zakresie jest przedstawiona na liście, z którego użytkownik może wybrać.  
   
  Środowiska pakietu zarządzanego (MPF) zapewnia obsługę etykietki narzędzia i zarządzanie nimi na liście w etykietce narzędzia; wszystko, co jest potrzebne jest współpraca z analizatora do dostarczania danych, który pojawia się na liście.  

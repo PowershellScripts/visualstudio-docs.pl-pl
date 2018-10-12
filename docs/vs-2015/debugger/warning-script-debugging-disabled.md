@@ -1,7 +1,7 @@
 ---
 title: 'Ostrzeżenie: Debugowanie skryptu wyłączone | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91b54b3e9a70284dc1efb03be7adfaa5d1421920
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2274d1fc8ce534ed5d839efe6de8e933595c395f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264982"
 ---
 # <a name="warning-script-debugging-disabled"></a>Ostrzeżenie: debugowanie skryptu wyłączone
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Ostrzeżenie: debugowanie skryptu — wyłączone](https://docs.microsoft.com/visualstudio/debugger/warning-script-debugging-disabled).  
-  
 Debugowanie skryptów jest obecnie wyłączone w programie Internet Explorer  
   
  Ostrzeżenie to pojawia się podczas próby debugowania skryptu bez włączania debugowania skryptu w programie Internet Explorer. Ze względów bezpieczeństwa program Internet Explorer wyłącza debugowanie skryptu domyślnie.  
@@ -54,7 +52,7 @@ Debugowanie skryptów jest obecnie wyłączone w programie Internet Explorer
      Teraz będzie obowiązywać do nowych ustawień.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: dołączanie do skryptu](../debugger/how-to-attach-to-script.md)
+ [Instrukcje: dołączanie do skryptu](../debugger/how-to-attach-to-script.md)
 
 
 

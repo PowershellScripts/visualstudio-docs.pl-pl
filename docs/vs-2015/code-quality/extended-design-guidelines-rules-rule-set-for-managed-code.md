@@ -1,7 +1,7 @@
 ---
 title: Rozszerzonych reguł wytycznych projektowych, ustaw dla kodu zarządzanego | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fb9b8544d2d4f902bf5bd64afc937f505990b736
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b486156a2b2fb9161b20441cfb8e62c2a9b4bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631825"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207821"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Rozszerzone wytyczne dotyczące reguł projektowania dla zarządzanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [rozszerzonych reguł wytycznych projektowych, ustaw dla kodu zarządzanego](https://docs.microsoft.com/visualstudio/code-quality/extended-design-guidelines-rules-rule-set-for-managed-code).  
-  
 Reguły wskazówek dotyczących projektowania firmy Microsoft rozszerzony zestaw reguł rozszerza reguły wskazówek dotyczących podstawowy projekt, aby zmaksymalizować użytecznością i utrzymaniem problemy, które są zgłaszane. Dodatkowy nacisk jest kładziony na wskazówki dotyczące nazewnictwa. Należy rozważyć dołączenie tego zestawu, jeśli projekt zawiera kod biblioteki lub jeśli chcesz wymusić najwyższych standardów tworzenia kodu, która jest łatwa w obsłudze reguł.  
   
  Rozszerzone reguły wskazówek dotyczących projektowania obejmuje wszystkie podstawowe reguły wskazówek dotyczących projektowania firmy Microsoft. Podstawowe reguły wskazówek dotyczących projektowania obejmuje wszystkie reguły Zalecana minimalna firmy Microsoft. Aby uzyskać więcej informacji, zobacz [zestaw reguł podstawowych reguł wytycznych projektowych dla kodu zarządzanego](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) i [zarządzany zalecany zestaw reguł dla kodu zarządzanego](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  

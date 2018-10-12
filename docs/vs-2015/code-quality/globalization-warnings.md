@@ -1,7 +1,7 @@
 ---
 title: Globalizacja — ostrzeżenia | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2430b5cac7f3cbdf7d871f574438508fee0e625b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6717eb3105cf8060a8423c58ad5a425745ec6d57
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681733"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207977"
 ---
 # <a name="globalization-warnings"></a>Globalizacja — Ostrzeżenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [ostrzeżenia dotyczące globalizacji](https://docs.microsoft.com/visualstudio/code-quality/globalization-warnings).  
-  
 Ostrzeżenia dotyczące globalizacji obsługuje gotowych do biblioteki i aplikacje.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
@@ -49,7 +47,7 @@ Ostrzeżenia dotyczące globalizacji obsługuje gotowych do biblioteki i aplikac
 |[CA1307: Określ wyliczenie StringComparison](../code-quality/ca1307-specify-stringcomparison.md)|Operacja porównania ciągu używa przeciążenia metody, które nie ustawia parametru StringComparison.|  
 |[CA1308: Normalizuj ciągi do postaci zapisanej wielkimi literami](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Ciągi powinny być znormalizowane do użycia wielkich liter. Małe grupy znaków nie mogą wykonywać rund, gdy są one konwertowane na małe litery.|  
 |[CA1309: Używaj wyliczenia StringComparison stosującego reguły sortowania oparte na wartości](../code-quality/ca1309-use-ordinal-stringcomparison.md)|Operacja porównania ciągu, która jest nielingwistyczna, nie ustawia parametru StringComparison na Ordinal lub OrdinalIgnoreCase. Poprzez jawne ustawienie parametru na StringComparison.Ordinal lub StringComparison.OrdinalIgnoreCase kod często zaczyna działać szybciej, staje się bardziej poprawny i niezawodny.|  
-|[CA2101: Określ marshaling dla argumentów ciągu P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Wywołania platformy elementu członkowskiego umożliwia częściowo zaufanych wywołań, ma parametr typu ciąg, a nie kieruje jawnie tego ciągu. Może to spowodować potencjalne luki w zabezpieczeniach.|
+|[CA2101: Określ marshaling dla argumentów ciągu wywołania P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Wywołania platformy elementu członkowskiego umożliwia częściowo zaufanych wywołań, ma parametr typu ciąg, a nie kieruje jawnie tego ciągu. Może to spowodować potencjalne luki w zabezpieczeniach.|
 
 
 

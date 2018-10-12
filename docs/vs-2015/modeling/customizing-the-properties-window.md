@@ -1,7 +1,7 @@
 ---
 title: Dostosowywanie okna właściwości | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a5ae14866780be08633f5a7cf07f70c5b94bcca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa690b88b5ab2d7aac3f8aea9967419dcbd43df1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685452"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241738"
 ---
 # <a name="customizing-the-properties-window"></a>Dostosowywanie okna właściwości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dostosowywanie okna właściwości](https://docs.microsoft.com/visualstudio/modeling/customizing-the-properties-window).  
-  
 W języku specyficznym dla domeny (DSL) można dostosować wygląd i zachowanie w oknie właściwości w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. W definicji DSL definiuje się właściwości domeny na każdej klasy domeny. Domyślnie po wybraniu wystąpienia klasy w diagramie lub w Eksploratorze modelu, dla każdej właściwości domeny znajduje się w oknie dialogowym właściwości. Dzięki temu można wyświetlić i edytować wartości właściwości domeny, nawet jeśli ma nie mapowane do pól kształtów na diagramie.  
   
 ## <a name="names-descriptions-and-categories"></a>Nazwy, opisy i kategorii  

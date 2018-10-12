@@ -1,7 +1,7 @@
 ---
 title: Widoków programu Spy ++ | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 648c0d32b19964d3e85feb3d16a04ccbd235444b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a361e09e534a19e0fc68bd44a68cccd8359b4b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631769"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190973"
 ---
 # <a name="spy-views"></a>Spy++ — Widoki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [widoków programu Spy ++](https://docs.microsoft.com/visualstudio/debugger/spy-increment-views).  
-  
 Spy ++ Wyświetla widoki drzewa systemu windows, wiadomości, procesów i wątków dostępnych na komputerze.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
@@ -45,7 +43,7 @@ Spy ++ Wyświetla widoki drzewa systemu windows, wiadomości, procesów i wątk�
  Wyświetla aktywne wątki w widoku drzewa.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Narzędzia wyszukiwania dotyczące widoków programu Spy ++](../debugger/search-tools-for-spy-increment-views.md)  
+ [Narzędzia wyszukiwania dotyczące widoków programu Spy++](../debugger/search-tools-for-spy-increment-views.md)  
  Okna dialogowe używana do znajdowania określonych węzłów w systemie windows widoków programu Spy ++.  
   
  [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  

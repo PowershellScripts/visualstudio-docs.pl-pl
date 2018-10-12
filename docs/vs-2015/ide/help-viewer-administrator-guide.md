@@ -1,7 +1,7 @@
 ---
 title: Podręcznik administratora programu Podgląd pomocy | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97d28d0651be2fd04e283b05e5a9a0e81997c338
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632234"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256961"
 ---
 # <a name="help-viewer-administrator-guide"></a>Podręcznik administratora programu Podgląd Pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Podręcznik administratora programu Podgląd Pomocy](https://docs.microsoft.com/visualstudio/ide/help-viewer-administrator-guide).  
-  
 Podgląd Pomocy umożliwia zarządzanie lokalnymi instalacjami pomocy dla środowisk sieciowych, z lub bez dostępu do Internetu. Zawartość pomocy lokalnej jest skonfigurowana na kompurtera. Domyślnie użytkownicy muszą mieć uprawnienia administratora, aby zaktualizować ich lokalną instalację pomocy.  
   
  Jeśli środowisko sieciowe pozwala klientom na dostęp do Internetu, w Podglądzie pomocy pozwala wdrażać lokalnie zawartości pomocy z Internetu za pomocą skryptów wiersza polecenia.  

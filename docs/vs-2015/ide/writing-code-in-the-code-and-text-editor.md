@@ -1,7 +1,7 @@
 ---
 title: Pisanie kodu w edytorze kodu i tekstu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -65,18 +65,15 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb879efdc3370578d57b529194a9a8790c9136dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220535"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Pisanie kodu w edytorze kodu i tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [pisanie kodu w edytorze tekstu i kodu](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
-
 Edytor programu Visual Studio zapewnia wiele funkcji, które ułatwiają umożliwia pisanie kodu i zarządzanie. Można rozwijać i zwijać różne bloki kodu przy użyciu konturów. Dowiedz się więcej o kod, używając za pomocą funkcji IntelliSense, **przeglądarki obiektów**i hierarchii wywoływania. Możesz nawigować wewnątrz kodu przy użyciu funkcji, takich jak **przejdź do**, **przejdź do definicji**, i **Znajdź wszystkie odwołania**. Możesz wstawiać bloki kodu za pomocą wstawek kodu i może wygenerować kod, za pomocą funkcji, takich jak **Generowanie z użycia**. Jeśli po raz pierwszy używasz edytora programu Visual Studio 2015 przed, zobacz [edycji kodu](https://www.visualstudio.com/features/ide-vs) Aby uzyskać szybki przegląd.  
 
  Możesz wyświetlić swój kod na wiele różnych sposobów. Aby wyświetlić widok klasy dla rozwiązania, możesz otworzyć **Widok klas** okna lub rozwinąć węzły w **Eksploratora rozwiązań** w plikach klas.  
@@ -201,7 +198,7 @@ Ta funkcja jest szczególnie przydatne, jeśli kod ma długich nazwach.
 
 -   [Używanie środowiska programistycznego Visual Studio dla C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [Opcje, Edytor tekstu, JavaScript, formatowanie](../ide/reference/options-text-editor-javascript-formatting.md)  
+-   [Opcje, Edytor tekstów, JavaScript, Formatowanie](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>W tej sekcji  
 

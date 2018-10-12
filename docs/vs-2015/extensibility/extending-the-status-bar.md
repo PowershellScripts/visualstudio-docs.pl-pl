@@ -1,7 +1,7 @@
 ---
 title: Rozszerzanie paska stanu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc9a691b3ee8955f7fad33c84d7d0d40652e6a8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8ea7854bb90564f68a7f178ceda7b561b123dce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678453"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244741"
 ---
 # <a name="extending-the-status-bar"></a>Rozszerzanie paska stanu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [rozszerzanie paska stanu](https://docs.microsoft.com/visualstudio/extensibility/extending-the-status-bar).  
-  
 Na pasku stanu programu Visual Studio w dolnej części IDE służy do wyświetlania informacji.  
   
  Podczas rozszerzania paska stanu w czterech regionach można wyświetlać informacje i interfejsu użytkownika: region opinii, pasek postępu, region animacji i projektanta regionów. Region opinii pozwala na wyświetlanie tekstu i wyróżnić tekst wyświetlany. Pasek postępu pokazuje przyrostowy postęp krótko działających operacje, takie jak zapisywanie pliku. Region animacji Wyświetla animację stale zwracane do operacji długotrwałych lub operacji o nieustalonym długości, takie jak tworzenie wielu projektów w rozwiązaniu. I projektanta region pokazuje numer wiersza i kolumny lokalizacji kursora.  

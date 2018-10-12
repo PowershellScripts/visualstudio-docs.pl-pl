@@ -1,7 +1,7 @@
 ---
 title: Widok procesu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6d0c560cdd40651763837bba4e87372eba76007
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89ba6578e5f804bb8757807b742ff43c9dd218c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677925"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264189"
 ---
 # <a name="process-view"></a>Widok procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [widok procesu](https://docs.microsoft.com/visualstudio/profiling/process-view).  
-  
 Widok procesu wyświetla danych profilowania dla procesów i wątków, które zostały wykonane podczas uruchomienia profilowania.  
   
  Procesy są wyświetlane według nazwy. Wątki są wyświetlane jako węzły podrzędne procesu, który je utworzył. Wątki są nazywane przez funkcję, która jest uruchomiona w wątku lub etykieta **[ntdll.dll]** Jeśli brak symboli są dostępne.  
@@ -53,7 +51,7 @@ Widok procesu wyświetla danych profilowania dla procesów i wątków, które zo
 ## <a name="see-also"></a>Zobacz też  
  [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)   
  [Widok danych metody Instrumentacji](../profiling/instrumentation-method-data-views.md)   
- [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)
+ [Widoki danych pamięci platformy .NET](../profiling/dotnet-memory-data-views.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Debugowanie projektów DLL | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13e124c4c9c24ad298c2528f2901d5aa1d52d54c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb1d8cf355aee56797b5c814341255cb47cf4f9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678647"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267387"
 ---
 # <a name="debugging-dll-projects"></a>Debugowanie projektów DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [debugowanie projektów DLL](https://docs.microsoft.com/visualstudio/debugger/debugging-dll-projects).  
-  
 Następujące szablony tworzą biblioteki DLL:  
   
 -   (C++, C# i Visual Basic) Biblioteka klas  
@@ -60,9 +58,9 @@ Następujące szablony tworzą biblioteki DLL:
   
  Ta sekcja zawiera również informacje o następujących tematach:  
   
--   [Porady: debugowanie z projektu DLL](../debugger/how-to-debug-from-a-dll-project.md)  
+-   [Instrukcje: debugowanie z projektu DLL](../debugger/how-to-debug-from-a-dll-project.md)  
   
--   [Porady: debugowanie w trybie mieszanym](../debugger/how-to-debug-in-mixed-mode.md)  
+-   [Instrukcje: debugowanie w trybie mieszanym](../debugger/how-to-debug-in-mixed-mode.md)  
   
  Ten temat zawiera poniższe sekcje, w których omówiono sposób przygotowania debugowania biblioteki klas:  
   

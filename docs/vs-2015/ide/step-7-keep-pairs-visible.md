@@ -1,7 +1,7 @@
 ---
 title: 'Krok 7: Zachować widoczność par | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e47b2308c085e9fd30cc18bc3afd45584e29274c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b796fa9735337b5cc8f8cb8d955b33bc6a77e76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678114"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189010"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Krok 7. Zachowanie widoczności par
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [kroku 7: Keep Pairs Visible](https://docs.microsoft.com/visualstudio/ide/step-7-keep-pairs-visible).  
-  
 Gra działa dobrze, dopóki gracz wybiera tylko pary ikon, które nie są zgodne. Rozważmy jednak, co się powinno zdarzyć, gdy gracz wybierze pasującą parę. Zamiast ukrywania okien przez włączanie czasomierza (za pomocą `Start()` metoda), gra powinna się zresetować, aby go jest już rejestrowanie informacji o wszystkich etykiet używających `firstClicked` i `secondClicked` odwoływać się do zmiennych, bez resetowania kolory dla dwóch etykiet, które zostały wybrane.  
   
 ### <a name="to-keep-pairs-visible"></a>Aby zachować widoczność par  

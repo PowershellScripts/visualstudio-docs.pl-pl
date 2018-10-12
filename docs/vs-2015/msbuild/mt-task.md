@@ -1,7 +1,7 @@
 ---
 title: MT — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c4318ffe208810fc23fa7237a96118368d6da61
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c9b14de0b9e80379736dd7f6a02cb374d475fcda
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214945"
 ---
 # <a name="mt-task"></a>MT — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [MT — zadanie](https://docs.microsoft.com/visualstudio/msbuild/mt-task).  
-  
   
 Opakowuje narzędziu manifestu Microsoft mt.exe. Aby uzyskać więcej informacji, zobacz "Mt.exe" w [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) witryny sieci Web.  
   

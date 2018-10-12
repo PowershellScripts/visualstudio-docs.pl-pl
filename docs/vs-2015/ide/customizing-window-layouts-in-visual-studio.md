@@ -1,7 +1,7 @@
 ---
 title: Dostosowywanie układów okien w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7f581c920a0f42105c1409e320b941a12dbc5f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d1fb044d2529e2349e7c98e810adbfe62c7c654
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684736"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218819"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Dostosowywanie układów okien w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dostosowywanie układów okien w programie Visual Studio](https://docs.microsoft.com/visualstudio/ide/customizing-window-layouts-in-visual-studio).  
-  
 W programie Visual Studio można dostosować położenie, rozmiar i zachowanie systemu windows, aby utworzyć układy okna, które najlepiej działać dla różnych przepływów pracy programowania. Podczas dostosowywania układu IDE pamięta. Na przykład, jeśli zmienisz lokalizację dokowania **Eksploratora rozwiązań** , a następnie zamknij program Visual Studio przy następnym uruchomieniu, nawet jeśli pracujesz na innym komputerze, **Eksploratora rozwiązań** będzie zadokowane, w tym samym miejscu. Można również nazwij układu niestandardowego i zapisz go, a następnie przełączać się między układy za pomocą jednego polecenia. Na przykład można utworzyć układ do edycji i drugą na potrzeby debugowania i przełączać się między nimi przy użyciu **okna &#124; Zastosuj układ okna** polecenia menu.  
   
 ## <a name="kinds-of-windows"></a>Rodzaje okien  
@@ -188,7 +186,7 @@ W programie Visual Studio można dostosować położenie, rozmiar i zachowanie s
 |-----------|-----------------|  
 |[Rodzaje Windows](../misc/kinds-of-windows.md)|W tym artykule omówiono różnice między oknami narzędzi i oknami dokumentu w IDE.|  
 |[Porady: Aranżowanie i dokowanie Windows](../misc/how-to-arrange-and-dock-windows.md)|W tym artykule opisano, jak dokować, automatycznie ukrywać i rozkładać sąsiadująco okna, a także jak zresetować układ okien.|  
-|[Porady: poruszanie się w środowisku IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|W tym artykule opisano, jak przechodzić kolejno przez otwarte okna w IDE, w kolejności ich użycia. Opisano również, jak można przejść do określonych dokumentów.|  
+|[Instrukcje: poruszanie się w środowisku IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|W tym artykule opisano, jak przechodzić kolejno przez otwarte okna w IDE, w kolejności ich użycia. Opisano również, jak można przejść do określonych dokumentów.|  
 |[Dostosowywanie ustawień środowiska deweloperskiego w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Zawiera informacje dotyczące kombinacji ustawień i wpływu ustawień na układy okien, skróty klawiaturowe i inne elementy w IDE.|
 
 

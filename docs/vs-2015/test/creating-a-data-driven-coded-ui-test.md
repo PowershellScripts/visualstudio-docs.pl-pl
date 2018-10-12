@@ -1,7 +1,7 @@
 ---
 title: Tworzenie na podstawie danych kodowanego testu interfejsu użytkownika | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 725628eb8234960b3880f6e5d080a04e54bea6a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09cf6f69348c08ec284e074feea8d9a33c488f0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681172"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229472"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Tworzenie kodowanego testu interfejsu użytkownika opartego na danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [tworzenie ze kodowanego testu interfejsu użytkownika](https://docs.microsoft.com/visualstudio/test/creating-a-data-driven-coded-ui-test).  
-  
 Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z wartościami różnych parametrów. Oparte na danych coded UI testy są wygodny sposób, aby to zrobić. Określ wartości parametrów w źródle danych, a każdy wiersz w źródle danych jest iteracji kodowanego testu interfejsu użytkownika. Ogólny wynik testu będzie zależeć od wyniku dla wszystkich iteracji. Na przykład w przypadku niepowodzenia jednej iteracji testu, ogólny wynik testu jest błąd.  
   
  **Wymagania**  

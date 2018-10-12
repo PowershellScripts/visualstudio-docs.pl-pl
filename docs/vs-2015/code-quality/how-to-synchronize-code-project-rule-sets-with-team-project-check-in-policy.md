@@ -1,7 +1,7 @@
 ---
 title: 'Porady: synchronizowanie zestawów reguł projektu kodu z zasadami ewidencjonowania projektu zespołowego | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d7d20680fdba3affa5da4ee917fb12bf1b98457b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680531"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263123"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Porady: synchronizowanie zestawu reguł projektu kodu z zasadami ewidencjonowania projektu zespołowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: synchronizowanie zestawów reguł projektu kodu z zasadami ewidencjonowania projektu zespołowego](https://docs.microsoft.com/visualstudio/code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy).  
-  
 Ustawienia analizy kodu dla projektów kodu zasad ewidencjonowania dla projektu zespołowego można zsynchronizować, określając zestaw reguł, który zawiera co najmniej reguły, które są określone w regule ustawić dla zasad ewidencjonowania. Potencjalnych klientów usługi dla deweloperów może poinformować Cię o nazwę i lokalizację zestawu reguł dla zasad ewidencjonowania. Aby upewnić się, że analiza kodu dla projektu używa poprawny zestaw reguł, można użyć jednej z następujących opcji:  
   
 -   Zasady ewidencjonowania korzysta z jednego z Microsoft wbudowany zestaw reguł, Otwórz okno dialogowe właściwości dla projektu kodu, wyświetlenia strony analizy kodu i wybierz regułę, ustawić na stronie analizy kodu w ustawieniach projektu kodu. Microsoft standardowych zestawów reguł są automatycznie instalowane z programem Visual Studio są ustawione na tylko do odczytu i nie można edytować. Jeśli zestawy reguł nie są edytowane, gwarancję reguł w zasadzie i zestawów reguł lokalnych do dopasowania.  

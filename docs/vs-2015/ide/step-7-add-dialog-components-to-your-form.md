@@ -1,7 +1,7 @@
 ---
 title: 'Krok 7: Dodawanie składników okna dialogowego do formularza | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b6f819495cd6787398fadf414bcfebb2c3eefec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca17a6958a3c66054b89fc65c30bf397c4e6b821
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683400"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192949"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Krok 7. Dodawanie składników okna dialogowego do formularza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [krok 7: Dodawanie składników okna dialogowego do formularza Your](https://docs.microsoft.com/visualstudio/ide/step-7-add-dialog-components-to-your-form).  
-  
 Aby umożliwić programowi otwieranie plików obrazów i Wybieranie koloru tła, w tym kroku należy dodać **OpenFileDialog** składnika i **ColorDialog** składnika do formularza.  
   
  Składnik to podobnie jak kontrolka pod pewnymi względami. Używasz przybornika, aby dodać składnik do formularza i ustaw jego właściwości, za pomocą **właściwości** okna. Jednak w przeciwieństwie do formantu, dodawanie składnika do formularza nie powoduje dodania widocznego elementu, który użytkownik może wyświetlić w formularzu. Zamiast tego zapewnia pewne zachowania, które mogą wyzwalać przy użyciu kodu. Jest składnik, który otwiera **Otwórz plik** okno dialogowe.  

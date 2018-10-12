@@ -1,7 +1,7 @@
 ---
 title: Idiasymbol::get_noreturn — | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edf90f5eaafcb2c76bdf7a33e3f70e71bd17e431
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99f4a118dc23e858aedb6bdf3ffce359cc0036a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686019"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222010"
 ---
 # <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [idiasymbol::get_noreturn —](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-noreturn).  
-  
 Pobiera flagę określającą, czy funkcja została oznaczona jako nigdy nie zwróciło [noreturn](http://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d) atrybutu.  
   
 ## <a name="syntax"></a>Składnia  

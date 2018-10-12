@@ -1,7 +1,7 @@
 ---
 title: Projektanci działań primitives | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,21 +12,21 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4d2397cf97b57008d92f8ec8086161df03d0714b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8fe81e57ed9eff699cf70f2e4fa613b0a0683f2f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696797"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197720"
 ---
 # <a name="primitives-activity-designers"></a>Projektanci działań Primitives
 Projektanci działań primitives są używane do tworzenia i konfigurowania różnych działań w <xref:System.Activities> przestrzeni nazw, takich jak przypisywanie i opóźnienie. Tematy zawarte w tej sekcji zapewnić wskazówki dotyczące sposobu używania [!INCLUDE[wfd2](../includes/wfd2-md.md)] projektantów działań i szablonu.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Przypisz](../workflow-designer/assign-activity-designer.md)  
+ [Assign](../workflow-designer/assign-activity-designer.md)  
  Umożliwia tworzenie i konfigurowanie <xref:System.Activities.Statements.Assign> działania.  
   
- [Opóźnienie](../workflow-designer/delay-activity-designer.md)  
+ [Delay](../workflow-designer/delay-activity-designer.md)  
  Umożliwia tworzenie i konfigurowanie <xref:System.Activities.Statements.Delay> działania.  
   
  [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)  
@@ -42,7 +42,7 @@ Projektanci działań primitives są używane do tworzenia i konfigurowania ró�
   
  [Schemat blokowy](../workflow-designer/flowchart-activity-designers.md)  
   
- [Obsługa wiadomości](../workflow-designer/messaging-activity-designers.md)  
+ [Obsługa komunikatów](../workflow-designer/messaging-activity-designers.md)  
   
  [Środowisko uruchomieniowe](../workflow-designer/runtime-activity-designers.md)  
   

@@ -1,7 +1,7 @@
 ---
 title: JIT Optymalizacja i debugowanie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb73c434c978f7a8b1847976c73fe2bff47e3b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e798d44371f04b955db9019c741100ce9e5e5ef6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680171"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201994"
 ---
 # <a name="jit-optimization-and-debugging"></a>Optymalizacja i debugowanie JIT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [optymalizację JIT i debugowanie](https://docs.microsoft.com/visualstudio/debugger/jit-optimization-and-debugging).  
-  
 Podczas debugowania aplikacji zarządzanych, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pomija optymalizację kodu just-in-time (JIT) domyślnie. Pomijanie optymalizacji JIT oznacza, że debugujesz kod niezoptymalizowany. Kod działa nieco wolniej, ponieważ nie jest zoptymalizowana, ale środowisko debugowania jest dużo większe. Debugowanie zoptymalizowanego kodu jest trudniejsze i zalecane tylko wtedy, jeśli napotkasz usterkę, która występuje w zoptymalizowanym kodzie, ale nie może być odtworzony w wersji niezoptymalizowanej.  
   
  Optymalizacja JIT jest kontrolowana w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przez **Pomijaj optymalizację JIT podczas ładowania modułu** opcji. Tej opcji można znaleźć na **ogólne** strony w obszarze **debugowanie** w węźle **opcje** okno dialogowe.  

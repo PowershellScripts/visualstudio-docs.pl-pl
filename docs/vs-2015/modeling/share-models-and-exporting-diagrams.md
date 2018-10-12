@@ -1,7 +1,7 @@
 ---
 title: Udostępnianie modeli i eksportowanie diagramów | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 16
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e450216d25c4e7991bd0bc27fcc64feb81a2919a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4f25931b1374042a09fd130731c83f8813353a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627566"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254392"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Udostępnianie modeli i eksportowanie diagramów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [udostępnianie modeli i eksportowanie diagramów](https://docs.microsoft.com/visualstudio/modeling/share-models-and-exporting-diagrams).  
-  
 W programie Visual Studio udostępnianie modeli i diagramów ze współpracownikami na kilka sposobów.  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -63,7 +61,7 @@ W programie Visual Studio udostępnianie modeli i diagramów ze współpracownik
 |[Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md)|Użytkownicy niektóre wersje programu Visual Studio nie może tworzyć modele mogą odczytać modeli i diagramów.|  
 |[Eksportowanie diagramów jako obrazów](../modeling/export-diagrams-as-images.md)|Możesz skopiować części diagramy do aplikacji, takich jak Word lub PowerPoint lub wydrukować diagram do pliku XPS.|  
 |[Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)|Przegląd modeli i diagramów.|  
-|[Dostosowywanie modelu z profilami i stereotypami](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|Jeśli używany jest profil UML w modelu, a następnie wysłać model do kogoś innego, należy na nich zainstalować ten sam profil.|  
+|[Dostosowywanie modelu za pomocą profili i stereotypów](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|Jeśli używany jest profil UML w modelu, a następnie wysłać model do kogoś innego, należy na nich zainstalować ten sam profil.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie modeli aplikacji](../modeling/create-models-for-your-app.md)   

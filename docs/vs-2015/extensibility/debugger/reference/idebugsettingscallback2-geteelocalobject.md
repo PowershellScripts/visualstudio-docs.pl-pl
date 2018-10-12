@@ -1,7 +1,7 @@
 ---
 title: IDebugSettingsCallback2::GetEELocalObject | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e69a3469-a049-420c-b918-c48a1e7b9baf
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 751c92ef92c0a01c7696db3d0d5ad2f3be53e61b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e7caa47eb996b713e3133241405e9fe068e82e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630234"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264950"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [IDebugSettingsCallback2::GetEELocalObject](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject).  
-  
 Pobiera wyrażenie ewaluatora lokalnego obiektu podanej nazwy metryki.  
   
 ## <a name="syntax"></a>Składnia  

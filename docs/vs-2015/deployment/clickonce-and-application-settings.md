@@ -1,7 +1,7 @@
 ---
 title: ClickOnce i ustawienia aplikacji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2aa565721bc934fb78a7b183b0e4b4b637bafaf8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29f51960ad953318c8d9de749f28f684128e52ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694041"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176994"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce i ustawienia aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [ClickOnce i ustawienia aplikacji](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-application-settings).  
-  
 Ustawienia aplikacji dla formularzy Windows Forms można łatwo tworzyć, przechowywać i Obsługa niestandardowych aplikacji i preferencji użytkowników na komputerze klienckim. Poniższy dokument w tym artykule opisano działanie pliki ustawień aplikacji w aplikacji ClickOnce, i jak ClickOnce wykonuje migrację ustawień, po uaktualnieniu do następnej wersji.  
   
  Poniższe informacje dotyczą tylko w domyślny dostawca ustawień aplikacji, <xref:System.Configuration.LocalFileSettingsProvider> klasy. Jeśli podasz niestandardowego dostawcy, tego dostawcy określi, jak przechowuje swoje dane i jak uaktualni ona jego ustawienia między wersjami. Aby uzyskać więcej informacji na temat dostawców ustawień aplikacji, zobacz [Architektura ustawień aplikacji](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  

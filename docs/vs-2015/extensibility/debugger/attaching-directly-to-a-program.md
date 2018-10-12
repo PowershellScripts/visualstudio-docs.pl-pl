@@ -1,7 +1,7 @@
 ---
 title: Dołączanie bezpośrednio do programu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: ad2b7db8-821c-440c-ba07-c55c6a395e0f
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab866d46e99c6cdee8300bc194468b115ab59e51
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a30805988b00fa2c25057f75ebdc3b6359444ab5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678414"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265937"
 ---
 # <a name="attaching-directly-to-a-program"></a>Dołączanie bezpośrednio do programu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dołączanie bezpośrednio do programu](https://docs.microsoft.com/visualstudio/extensibility/debugger/attaching-directly-to-a-program).  
-  
 Użytkownicy, którzy chcą do debugowania programów w procesie, który zazwyczaj jest już uruchomiony, wykonaj następujące czynności:  
   
 1.  W środowisku IDE, wybierz **debugowanie procesów** polecenia **narzędzia** menu.  

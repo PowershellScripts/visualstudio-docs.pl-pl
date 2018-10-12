@@ -1,7 +1,7 @@
 ---
 title: Słownik języka Visual dla programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9eee2e412024cdb9eae7669d65e2283fc24488d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681236"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267634"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Słownik języka Visual dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Visual słownika dla programu Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio).  
-  
 Visual Studio używa wspólnego języka visual w celu zilustrowania koncepcji, które są blokami konstrukcyjnymi jego nadruków i inne aplikacje. Podczas projektowania nowych ikon, użyj tego słownika, aby zidentyfikować pojęcia, które chcesz przekazać w własnego obrazu.  
   
  **Ogólne wskazówki**  
@@ -58,7 +56,7 @@ Visual Studio używa wspólnego języka visual w celu zilustrowania koncepcji, k
 |**Akcji** ikona może również służyć jako adnotacja do wskazania, że zostanie wykonana akcja podstawowa przy użyciu ustawień automatycznego.|||  
 |**Aktywność**|![Ikona działania](../../extensibility/ux-guidelines/media/vld-c-activity.png "VLD_C_Activity")|![Ikona działania kodu](../../extensibility/ux-guidelines/media/vld-c-activity-codeactivity.png "VLD_C_Activity_CodeActivity") działaniu kodu|  
 |**aktora**|![Ikona aktora](../../extensibility/ux-guidelines/media/vld-c-actor.png "VLD_C_Actor")||  
-|**Dodaj**|![Dodaj ikonę](../../extensibility/ux-guidelines/media/vld-c-add.png "VLD_C_Add")|![Dodaj wszystkie ikony testy sterownika](../../extensibility/ux-guidelines/media/vld-c-add-addalldrivertests.png "VLD_C_Add_AddAllDriverTests") Dodaj wszystkie testy sterownika![Dodaj ikonę załącznika](../../extensibility/ux-guidelines/media/vld-c-add-addattachment.png "VLD_C_Add_AddAttachment") dodawania załącznika ![Ikona zachowanie Dodaj](../../extensibility/ux-guidelines/media/vld-c-add-addbehavior.png "VLD_C_Add_AddBehavior") dodać zachowanie|  
+|**Add**|![Dodaj ikonę](../../extensibility/ux-guidelines/media/vld-c-add.png "VLD_C_Add")|![Dodaj wszystkie ikony testy sterownika](../../extensibility/ux-guidelines/media/vld-c-add-addalldrivertests.png "VLD_C_Add_AddAllDriverTests") Dodaj wszystkie testy sterownika![Dodaj ikonę załącznika](../../extensibility/ux-guidelines/media/vld-c-add-addattachment.png "VLD_C_Add_AddAttachment") dodawania załącznika ![Ikona zachowanie Dodaj](../../extensibility/ux-guidelines/media/vld-c-add-addbehavior.png "VLD_C_Add_AddBehavior") dodać zachowanie|  
 |**Adres**|![Ikona adresu](../../extensibility/ux-guidelines/media/vld-c-address.png "VLD_C_Address")||  
 |**Zgłoś alert**|![Ikona alertu](../../extensibility/ux-guidelines/media/vld-c-alert.png "VLD_C_Alert")||  
 |**Kanał alfa**|![Ikona kanał alfa](../../extensibility/ux-guidelines/media/vld-c-alphachannel.png "VLD_C_AlphaChannel")||  
@@ -66,7 +64,7 @@ Visual Studio używa wspólnego języka visual w celu zilustrowania koncepcji, k
 |**Aplikacja** projektu|![Ikona aplikacji](../../extensibility/ux-guidelines/media/vld-c-application.png "VLD_C_Application")|![Ikona błędu roli aplikacji](../../extensibility/ux-guidelines/media/vld-c-application-applicationroleerror.png "VLD_C_Application_ApplicationRoleError") błąd roli aplikacji![C&#43; &#43; ikony projektu MFC](../../extensibility/ux-guidelines/media/vld-c-application-cppmfcproject.png "VLD_C_Application_ CPPMFCProject") projektu C++ MFC|  
 |**Obszar**|![Ikony w obszarze](../../extensibility/ux-guidelines/media/vld-c-area.png "VLD_C_Area")|![Ikonę wykres warstwowy z krzywymi składanymi](../../extensibility/ux-guidelines/media/vld-c-area-splineareachart.png "VLD_C_Area_SplineAreaChart") wykres warstwowy z krzywymi składanymi![skumulowany warstwowy serii ikonę](../../extensibility/ux-guidelines/media/vld-c-area-stackedareaseries.png "VLD_C_Area_StackedAreaSeries") skumulowany warstwowy serii|  
 |**Rozmieść**|![Rozmieść ikony](../../extensibility/ux-guidelines/media/vld-c-arrange.png "VLD_C_Arrange")|![Ikona kształty Rozmieść](../../extensibility/ux-guidelines/media/vld-c-arrange-arrangeshapes.png "VLD_C_Arrange_ArrangeShapes") rozmieszczenie kształtów![automatycznie&#45;Rozmieść ikony kształtów](../../extensibility/ux-guidelines/media/vld-c-arrange-autoarrangeshapes.png "VLD_C_Arrange_AutoArrangeShapes") Rozmieść automatycznie kształtów|  
-|**Przypisz**|![Przypisz ikony](../../extensibility/ux-guidelines/media/vld-c-assign.png "VLD_C_Assign")||  
+|**Assign**|![Przypisz ikony](../../extensibility/ux-guidelines/media/vld-c-assign.png "VLD_C_Assign")||  
 |**Skojarzenie**|![Ikona skojarzenia](../../extensibility/ux-guidelines/media/vld-c-association.png "VLD_C_Association")|![Dodaj skojarzenie ikonę](../../extensibility/ux-guidelines/media/vld-c-association-addassociation.png "VLD_C_Association_AddAssociation") Dodaj skojarzenie![ikonę skojarzenia edycji](../../extensibility/ux-guidelines/media/vld-c-association-editassociation.png "VLD_C_Association_EditAssociation") edycji skojarzenie|  
 |**Asymetryczny**|![Ikona asymetrycznego](../../extensibility/ux-guidelines/media/vld-c-asymmetric.png "VLD_C_Asymmetric")||  
 |**Asymetryczne** koncepcja jest reprezentowany przez zestawienie przeciwny obrazów (na przykład, jasny/ciemny lub prawej/lewej strony).|||  
@@ -355,7 +353,7 @@ Visual Studio używa wspólnego języka visual w celu zilustrowania koncepcji, k
 |**Tag** znakowanie systemu|![Tag &#40;znakowanie system&#41; ikonę](../../extensibility/ux-guidelines/media/vld-c-tag-tagging-system.png "VLD_C_Tag_tagging_system")||  
 |**Zadanie**|![Ikona zadania](../../extensibility/ux-guidelines/media/vld-c-task.png "VLD_C_Task")|![Ikona zadania połączonej](../../extensibility/ux-guidelines/media/vld-c-task-linkedtask.png "VLD_C_Task_LinkedTask") połączonych zadań ![ikonę listy zadań](../../extensibility/ux-guidelines/media/vld-c-task-tasklist.png "VLD_C_Task_TaskList") listy zadań|  
 |**Team**|![Ikona zespołu](../../extensibility/ux-guidelines/media/vld-c-team.png "VLD_C_Team")|![Nowa ikona projektu zespołowego](../../extensibility/ux-guidelines/media/vld-c-team-newteamproject.png "VLD_C_Team_NewTeamProject") nowego projektu zespołowego ![ikona projektu zespołu Dodaj](../../extensibility/ux-guidelines/media/vld-c-team-addteamproject.png "VLD_C_Team_AddTeamProject") projektu zespołowego Dodaj ![ Team Foundation Server ikonę](../../extensibility/ux-guidelines/media/vld-c-team-teamfoundationserver.png "VLD_C_Team_TeamFoundationServer") Team Foundation Server|  
-|**Tekst**|![Ikona tekstu](../../extensibility/ux-guidelines/media/vld-c-text.png "VLD_C_Text")|![Ikona obraz i tekst](../../extensibility/ux-guidelines/media/vld-c-text-pictureandtext.png "VLD_C_Text_PictureAndText") obraz i tekst ![ikona okno tekstu sformatowanego](../../extensibility/ux-guidelines/media/vld-c-text-richtextbox.png "VLD_C_Text_RichTextBox") pole tekstu sformatowanego ![Tekst &#45; najpierw wcięcie ikonę](../../extensibility/ux-guidelines/media/vld-c-text-textfirstindenton.png "VLD_C_Text_TextFirstIndentOn") tekstu — najpierw wcięcie na|  
+|**Text**|![Ikona tekstu](../../extensibility/ux-guidelines/media/vld-c-text.png "VLD_C_Text")|![Ikona obraz i tekst](../../extensibility/ux-guidelines/media/vld-c-text-pictureandtext.png "VLD_C_Text_PictureAndText") obraz i tekst ![ikona okno tekstu sformatowanego](../../extensibility/ux-guidelines/media/vld-c-text-richtextbox.png "VLD_C_Text_RichTextBox") pole tekstu sformatowanego ![Tekst &#45; najpierw wcięcie ikonę](../../extensibility/ux-guidelines/media/vld-c-text-textfirstindenton.png "VLD_C_Text_TextFirstIndentOn") tekstu — najpierw wcięcie na|  
 |**Wątek**|![Wątek ikonę](../../extensibility/ux-guidelines/media/vld-c-thread.png "VLD_C_Thread")|![Wiele wątków zatrzymana ikonę](../../extensibility/ux-guidelines/media/vld-c-thread-manythreadsstopped.png "VLD_C_Thread_ManyThreadsStopped") zatrzymana wiele wątków ![Ukryj wszystkie regiony z wyjątkiem ikonę wybrane wątki](../../extensibility/ux-guidelines/media/vld-c-thread-hideallexceptselectedthreads.png "VLD_C_Thread_ HideAllExceptSelectedThreads") Ukryj wszystkie wątki z wyjątkiem wybranych ![Ukryj wybrane wątki ikonę](../../extensibility/ux-guidelines/media/vld-c-thread-hideselectedthreads.png "VLD_C_Thread_HideSelectedThreads") Ukryj wybrane wątki|  
 |**Czas** oczekujące|![Ikona godziny](../../extensibility/ux-guidelines/media/vld-c-time.png "VLD_C_Time")|![Czas w górę lub w dół do ikony](../../extensibility/ux-guidelines/media/vld-c-time-timeupordown.png "VLD_C_Time_TimeUpOrDown") czasu w górę lub w dół ![selektor czasu na ikonie](../../extensibility/ux-guidelines/media/vld-c-time-timepickeron.png "VLD_C_Time_TimePickerOn") selektor czasu na|  
 |**Timer**|![Ikona czasomierza](../../extensibility/ux-guidelines/media/vld-c-timer.png "VLD_C_Timer")|![Czas zakończenia ikonę](../../extensibility/ux-guidelines/media/vld-c-timer-timefinish.png "VLD_C_Timer_TimeFinish") czas zakończenia ![rozpoczyna się ikona](../../extensibility/ux-guidelines/media/vld-c-timer-timestart.png "VLD_C_Timer_TimeStart") czas rozpoczęcia|  
@@ -486,7 +484,7 @@ Visual Studio używa wspólnego języka visual w celu zilustrowania koncepcji, k
 |**Punkt przerwania: zamapowane wyłączony**|![Punkt przerwania: zamapowanego ikonę wyłączony](../../extensibility/ux-guidelines/media/vld-s-breakpointmappeddisabled.png "VLD_S_BreakpointMappedDisabled")||  
 |**Punkt przerwania: mapowany włączone**|![Punkt przerwania: zamapowanego ikonę włączony](../../extensibility/ux-guidelines/media/vld-s-breakpointmappedenabled.png "VLD_S_BreakpointMappedEnabled")||  
 |**Pełne i OK**|![Ikona pełny i OK](../../extensibility/ux-guidelines/media/vld-s-completeandok.png "VLD_S_CompleteAndOK")|![Ikona zakończonego zadania](../../extensibility/ux-guidelines/media/vld-s-completeandok-taskcomplete.png "VLD_S_CompleteAndOK_TaskComplete") zadanie ukończone ![ikona procesu wykonywanego](../../extensibility/ux-guidelines/media/vld-s-completeandok-processdone.png "VLD_S_CompleteAndOK_ProcessDone") procesu wykonywanego ![Ikona OK usługi chmury](../../extensibility/ux-guidelines/media/vld-s-completeandok-cloudserviceok.png "VLD_S_CompleteAndOK_CloudServiceOK") usługi w chmurze OK|  
-|**Błąd**|![Ikona błędu](../../extensibility/ux-guidelines/media/vld-s-error.png "VLD_S_Error")|![Ikona Błąd punktu przerwania](../../extensibility/ux-guidelines/media/vld-s-error-breakpointerror.png "VLD_S_Error_BreakpointError") błąd punktu przerwania ![ikona błędu certyfikatu](../../extensibility/ux-guidelines/media/vld-s-error-certificateerror.png "VLD_S_Error_CertificateError") certyfikatu Błąd ![ikona Błąd ograniczenia sprawdzania](../../extensibility/ux-guidelines/media/vld-s-error-checkconstrainterror.png "VLD_S_Error_CheckConstraintError") ograniczenia Check|  
+|**Error**|![Ikona błędu](../../extensibility/ux-guidelines/media/vld-s-error.png "VLD_S_Error")|![Ikona Błąd punktu przerwania](../../extensibility/ux-guidelines/media/vld-s-error-breakpointerror.png "VLD_S_Error_BreakpointError") błąd punktu przerwania ![ikona błędu certyfikatu](../../extensibility/ux-guidelines/media/vld-s-error-certificateerror.png "VLD_S_Error_CertificateError") certyfikatu Błąd ![ikona Błąd ograniczenia sprawdzania](../../extensibility/ux-guidelines/media/vld-s-error-checkconstrainterror.png "VLD_S_Error_CheckConstraintError") ograniczenia Check|  
 |**Pomoc/niejednoznaczne**|![Pomoc&#47;niejednoznaczny ikonę](../../extensibility/ux-guidelines/media/vld-s-helpinconclusive.png "VLD_S_HelpInconclusive")|![Ikona pliku pomocy Compiled MS](../../extensibility/ux-guidelines/media/vld-s-helpinconclusive-compiledmshelpfile.png "VLD_S_HelpInconclusive_CompiledMSHelpFile") plik pomocy Compiled MS ![pliku indeksu pomocy MS](../../extensibility/ux-guidelines/media/vld-s-helpinconclusive-mshelpindexfile.png "VLD_S_HelpInconclusive_MSHelpIndexFile ") Pliku indeksu pomocy MS|  
 |**Informacje o**|![Ikona informacji](../../extensibility/ux-guidelines/media/vld-s-information.png "VLD_S_Information")|![Ikona relacji sztywne informacji](../../extensibility/ux-guidelines/media/vld-s-information-rigidinforelationship.png "VLD_S_Information_RigidInfoRelationship") relacji sztywne informacje ![ikonę z informacjami System](../../extensibility/ux-guidelines/media/vld-s-information-systeminfo.png "VLD_S_Information_SystemInfo")Informacje o systemie|  
 |**Informacje w etykietce narzędzia**|![Ikona etykietki narzędzia informacji](../../extensibility/ux-guidelines/media/vld-s-informationtooltip.png "VLD_S_InformationTooltip")||  

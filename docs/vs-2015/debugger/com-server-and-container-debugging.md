@@ -1,7 +1,7 @@
 ---
 title: Debugowanie kontenera i serwera COM | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 531c485f50a4a775ca2933c40f5ff74ca9c43717
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1df02319e081abe882cef7031eba144ef22d7c4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679071"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263064"
 ---
 # <a name="com-server-and-container-debugging"></a>Debugowanie kontenera i serwera COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [debugowanie kontenera i serwera COM](https://docs.microsoft.com/visualstudio/debugger/com-server-and-container-debugging).  
-  
 Aplikacje COM wykonywanie szeregu zadań poza programisty bezpośrednią kontrolę. Komunikacja między bibliotek DLL, liczniki użycia obiektów i operacje na schowku przedstawiono kilka obszarów, w którym mogą wystąpić nieoczekiwane zachowanie. W takim przypadku Twoim pierwszym krokiem jest śledzenie źródła problemu.  
   
  Debuger programu Visual Studio obsługuje przechodzenie między oraz kontenery i serwery. Obejmuje to możliwość krok w zdalnych wywołań procedur (RPC).  
@@ -65,7 +63,7 @@ Aplikacje COM wykonywanie szeregu zadań poza programisty bezpośrednią kontrol
  Aby uzyskać dostęp do *projektu* okno dialogowe strony właściwości, kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań, a następnie z menu skrótów wybierz polecenie Właściwości. Aby znaleźć właściwości argumenty wiersza polecenia, rozwiń kategorię właściwości konfiguracji, a następnie kliknij przycisk na stronie debugowanie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [COM i debugowanie ActiveX](../debugger/com-and-activex-debugging.md)
+ [Debugowanie aplikacji COM i kontrolek ActiveX](../debugger/com-and-activex-debugging.md)
 
 
 

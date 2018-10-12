@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Debugowanie aplikacji wielowątkowych | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a13fa717cc7f3952e44fe0dffecf735e7b53345a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696893"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186202"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>Wskazówki: Debugowanie aplikacji wielowątkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [debugowania aplikacji wielowątkowych, za pomocą okna wątki](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window).  
-  
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] zapewnia ulepszone **wątków** okna i inny użytkownik interfejsu ulepszenia, aby ułatwić debugowanie aplikacji wielowątkowych. W tym przewodniku zajmuje tylko kilka minut, ale jego ukończenia umożliwia zapoznanie się z nowymi funkcjami interfejsu do debugowania aplikacji wielowątkowych.  
   
  Zanim rozpoczniesz ten Instruktaż, musisz projektu aplikacji wielowątkowych. Wykonaj kroki wymienione w tym miejscu do utworzenia tego projektu.  
@@ -265,7 +263,7 @@ Thread::Sleep(3000);
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Porady: przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Instrukcje: przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 
 
 

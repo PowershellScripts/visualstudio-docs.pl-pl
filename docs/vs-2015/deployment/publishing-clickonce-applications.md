@@ -1,7 +1,7 @@
 ---
 title: Publikowanie aplikacji ClickOnce | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: f1e15ed2a1b2c2224a5e51cd02cf7609e40d5d29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70cf261f2d235a8ed1b27550acad916cf5a355a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682111"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265645"
 ---
 # <a name="publishing-clickonce-applications"></a>Publikowanie aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [publikowanie aplikacji ClickOnce](https://docs.microsoft.com/visualstudio/deployment/publishing-clickonce-applications).  
-  
 Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] właściwości publikowania aplikacji po raz pierwszy, można ustawić za pomocą Kreatora publikacji. Tylko niektóre właściwości są dostępne w Kreatorze; wszystkie pozostałe właściwości są ustawione na wartości domyślne.  
   
  Kolejne zmiany do publikowania właściwości są dokonywane na **Publikuj** strony w **projektanta projektu**.  
@@ -89,7 +87,7 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wła
 |[Instrukcje: określanie linku do pomocy technicznej](../deployment/how-to-specify-a-link-for-technical-support.md)|W tym artykule opisano sposób ustawiania **adres URL pomocy technicznej** właściwość, która identyfikuje strony sieci Web lub udziału plików, gdzie użytkownicy mogą przejść w celu uzyskania informacji o aplikacji.|  
 |[Instrukcje: określanie adresu URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|Pokazano, jak ręcznie zmienić manifest aplikacji, aby uwzględnić adresy URL poszczególnych pomocy technicznej dla poszczególnych wymagań wstępnych.|  
 |[Instrukcje: określanie strony publikowania dla aplikacji ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|W tym artykule opisano sposób generowania i opublikować domyślna strona internetowa (publish.htm) wraz z aplikacji|  
-|[Porady: dostosowywanie ClickOnce domyślnej strony sieci Web](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Opisuje sposób dostosowywania strony sieci Web, która jest automatycznie generowany i opublikowanych wraz z aplikacji.|  
+|[Instrukcje: dostosowywanie domyślnej strony internetowej technologii ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Opisuje sposób dostosowywania strony sieci Web, która jest automatycznie generowany i opublikowanych wraz z aplikacji.|  
 |[Instrukcje: włączenie funkcji AutoStart dla instalacji z dysku CD](../deployment/how-to-enable-autostart-for-cd-installations.md)|W tym artykule opisano, jak włączyć automatyczne uruchamianie aplikacji ClickOnce jest uruchamiane automatycznie, gdy znajduje się nośnik.|  
   
 ## <a name="related-topics"></a>Tematy pokrewne  

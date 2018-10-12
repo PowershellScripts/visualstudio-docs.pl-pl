@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie skojarzenia plików Side-by-Side | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79bd0fe8d298aaa6635cb30efaf7f4d0d0be8c28
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55a3649385ca8fc840bed8bd28555bcb17f6ac91
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630578"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253984"
 ---
 # <a name="managing-side-by-side-file-associations"></a>Zarządzanie równoległymi skojarzeniami plików
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [skojarzenia plików Side-by-Side zarządzanie](https://docs.microsoft.com/visualstudio/extensibility/managing-side-by-side-file-associations).  
-  
 Jeśli Twoje pakietu VSPackage udostępnia skojarzenia plików, należy zdecydować, jak obsługiwać instalacje side-by-side, w którym konkretnej wersji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] powinny być używane w celu otwarcia pliku. Niezgodnych formatów pliku złożone problem.  
   
  Użytkownicy oczekują nową wersję produktu, aby zapewnić ich zgodność z wcześniejszymi wersjami, tak, aby istniejące pliki mogą być ładowane w nowej wersji bez utraty danych. W idealnym przypadku Twojego pakietu VSPackage można zarówno obciążenia i zapisać formatów plików starszych wersji. Jeśli nie jest to wartość true, powinno oferować się uaktualnienie formatu pliku do nowej wersji usługi pakietu VSPackage. Wadą tego podejścia jest to, że uaktualniony plik nie można otworzyć w starszej wersji.  

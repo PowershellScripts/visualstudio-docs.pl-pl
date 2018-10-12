@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Ustawianie właściwości analizy kodu dla projektów C i C++ | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2c0b396394e003f97c60a65ee37b94810e692e28
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5be7d600da2f1f402de3f6d083851edb11bf8dda
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681307"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224825"
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Porady: ustawianie właściwości analizy kodu dla projektów C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Ustawianie właściwości analizy kodu dla projektów C/C++](https://docs.microsoft.com/visualstudio/code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects).  
-  
 Można skonfigurować zasady, które używa narzędzie do analizy kodu w celu analizowania kodu w każdej konfiguracji projektu. Ponadto można kierować analizy kodu, aby pominąć ostrzeżenia, od kodu, który został wygenerowany i dodany do projektu za pomocą narzędzia innych firm.  
   
 ## <a name="code-analysis-property-page"></a>Strona właściwości analizy kodu  

@@ -1,7 +1,7 @@
 ---
 title: Kontrola wykonywania i ocena stanu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 55adde38-1622-4b51-83cb-ce1b04c1ca7a
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72b13fece6129c6b3996363bb0ec082330c9b686
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 20c2737d233e90cba5813709b2c4cf8ac232105f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679069"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263201"
 ---
 # <a name="execution-control-and-state-evaluation"></a>Kontrola wykonywania i ocena stanu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Kontrola wykonywania i ocena stanu](https://docs.microsoft.com/visualstudio/extensibility/debugger/execution-control-and-state-evaluation).  
-  
 Debugowanie aplikacji wymaga implementacji takich funkcji kontroli wykonywania jako przechodzenie krok po kroku do funkcji, zatrzymanie w punktach przerwania i kontynuowanie wykonywania. Podstawy debugowania programu Visual Studio do jego kontrolki wykonywania zdarzeń wysyłane między składnikami debugera.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
@@ -40,7 +38,7 @@ Debugowanie aplikacji wymaga implementacji takich funkcji kontroli wykonywania j
  [Ocena stosu wywołań](../../extensibility/debugger/call-stack-evaluation.md)  
  W tym artykule omówiono implementacji metod, które umożliwiają wyświetlanie ramek stosu stosu wywołań w trybie break.  
   
- [Szacowanie wyrażeń](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
+ [Obliczanie wyrażeń](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
  Przedstawia sposób aparat debugowania (DE) Menedżer wyrażenie oceny (EE) i sesja debugowania są zaangażowane w analizę i obliczania wyrażenia wprowadzane do jednego z okien środowiska IDE.  
   
  [Zdarzenia kontrolki](../../extensibility/debugger/control-events.md)  

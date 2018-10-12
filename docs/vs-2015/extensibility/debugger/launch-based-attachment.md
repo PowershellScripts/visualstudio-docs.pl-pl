@@ -1,7 +1,7 @@
 ---
 title: Dołączanie na podstawie uruchamiania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e52e364e49bb38e6be812edec9f5fa5d8f26df0f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3603f14d07eb8531480b89f24d73cbd5045da7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678946"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188310"
 ---
 # <a name="launch-based-attachment"></a>Dołączanie na podstawie uruchamiania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [załącznika na podstawie uruchamiania](https://docs.microsoft.com/visualstudio/extensibility/debugger/launch-based-attachment).  
-  
 Na podstawie uruchamiania załącznika do programu odbywa się automatycznie. Podczas procesu hostingu program jest uruchamiany przez SDM, na podstawie uruchamiania załącznika poniżej ścieżką podobną do tej metody ręcznego załącznika. Aby uzyskać informacje, zobacz [dołączanie do programu](../../extensibility/debugger/attaching-to-the-program.md).  
   
 ## <a name="the-attaching-process"></a>Dołączanie procesu  

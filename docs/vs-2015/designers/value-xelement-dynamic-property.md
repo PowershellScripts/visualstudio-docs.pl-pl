@@ -1,7 +1,7 @@
 ---
 title: Wartość (właściwość dynamiczna XElement) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 95320fa27c4f5aa85269697d6d578a46cfe3c667
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ee56f072207b3a7065ffb73aa49c510068ab81fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681942"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204439"
 ---
 # <a name="value-xelement-dynamic-property"></a>Wartość (właściwość dynamiczna XElement)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wartość (właściwość dynamiczna XElement)](https://docs.microsoft.com/visualstudio/designers/value-xelement-dynamic-property).  
-  
 Pobiera lub ustawia zawartość elementu.  
   
 ## <a name="syntax"></a>Składnia  

@@ -1,7 +1,7 @@
 ---
 title: Łącznik gotowego wątku | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250729a453c1964e1954b89faae614660690a8e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fe7bd10426dd9d101cbbee8dff1067e99c832e66
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631720"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239749"
 ---
 # <a name="thread-ready-connector"></a>Łącznik gotowego wątku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [łącznik gotowego wątku](https://docs.microsoft.com/visualstudio/profiling/thread-ready-connector).  
-  
 Po kliknięciu przycisku segment blokujący, aby zobaczyć stos wywołań i jego stos odblokowywania łącznik gotowego wątku może również zostać wyświetlony. Jeśli odblokowywanie zdarzenie wystąpiło w innym wątku w bieżącym procesie, łącznik gotowego wątku identyfikuje wizualnie segment wątku i wykonanie, który włączone zablokowanego wątku, aby wznowić wykonywanie.
 
 

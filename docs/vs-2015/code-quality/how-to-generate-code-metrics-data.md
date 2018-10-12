@@ -1,7 +1,7 @@
 ---
 title: 'Porady: generowanie danych metryk kodu | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b380fadc7fba4123297506a4f068199710014c7e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4dbd9b4e0b62d1c6542231418aa99bd6d6ab0438
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683841"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189809"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Porady: generowanie metryk kodów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: generowanie metryk kodów](https://docs.microsoft.com/visualstudio/code-quality/how-to-generate-code-metrics-data).  
-  
 Można zdecydować wygenerować wyniki metryki kodu dla całego rozwiązania lub wybranego projektu.  
   
  **Wymagania**  

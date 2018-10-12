@@ -1,7 +1,7 @@
 ---
 title: 'Porady: zbieranie danych pobierania próbek na poziomie wiersza | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bd57893476ba7654a37fc44d1681adc3264f92b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b33679efb9fc3523d0ee10dc6bded0c1932a2175
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680645"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198591"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Porady: zbieranie danych pobierania próbek na poziomie wiersza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: zbieranie danych próbkowania poziomie wiersza](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-line-level-sampling-data).  
-  
 Próbkowanie na poziomie wiersza jest możliwość określenia, gdzie w kodzie funkcji obciążającą procesor, takich jak funkcja, która ma wysoką wyłącznych próbek, procesor musi spędzają większość czasu profilera.  
   
 ## <a name="overview"></a>Omówienie  
@@ -67,7 +65,7 @@ Próbkowanie na poziomie wiersza jest możliwość określenia, gdzie w kodzie f
   
 ## <a name="see-also"></a>Zobacz też  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
- [Analizowanie wydajności danych dotyczących narzędzi](../profiling/analyzing-performance-tools-data.md)
+ [Analizowanie danych dotyczących narzędzi do oceny wydajności](../profiling/analyzing-performance-tools-data.md)
 
 
 

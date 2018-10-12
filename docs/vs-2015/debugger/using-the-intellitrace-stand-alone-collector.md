@@ -1,7 +1,7 @@
 ---
 title: Przy użyciu autonomicznego modułu zbierającego IntelliTrace | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 111
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74c17850ebbbd8a7031bc1380bc4e651d0f9dda0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b35b6b42126bb0a1b159e3bf90e67aee15dd540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696792"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267478"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Korzystanie z autonomicznego modułu zbierającego funkcji IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [przy użyciu autonomicznego modułu zbierającego IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/using-the-intellitrace-stand-alone-collector).  
-  
 **Autonomiczny moduł zbierający IntelliTrace** umożliwia zbieranie danych diagnostycznych IntelliTrace dla aplikacji na serwerach produkcyjnych lub innych środowiskach bez instalowania programu Visual Studio na maszynie docelowej i bez wprowadzania zmian docelowe środowiska systemu. Autonomiczny moduł zbierający IntelliTrace działa w sieci web programu SharePoint, aplikacje WPF i Windows Forms. Po zakończeniu zbierania danych, po prostu usuń moduł zbierający aby go odinstalować.  
   
  Obejrzyj działanie IntelliTrace: [zbieranie i analizowanie danych IntelliTrace w produkcji do debugowania (wideo Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)  

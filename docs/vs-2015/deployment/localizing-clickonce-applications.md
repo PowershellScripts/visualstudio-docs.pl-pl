@@ -1,7 +1,7 @@
 ---
 title: Lokalizowanie aplikacji ClickOnce | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 285c1273114fe7f59b2ee0bb6bc612d18cbaf32e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7c3b8527bf96ee783de6ac975117bd4c797d426
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678921"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261472"
 ---
 # <a name="localizing-clickonce-applications"></a>Lokalizowanie aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [lokalizowanie aplikacji ClickOnce](https://docs.microsoft.com/visualstudio/deployment/localizing-clickonce-applications).  
-  
 Lokalizacja jest procesem tworzenia aplikacji odpowiednie dla określonej kultury. Ten proces obejmuje tłumaczenie tekstu interfejsu użytkownika na język określonego regionu, przy użyciu poprawną datę i formatowania waluty, dopasowywanie rozmiaru formantów w formularzu, a dublowania kontrolki od prawej do lewej w razie potrzeby.  
   
  Lokalizowanie wyniki aplikacji podczas tworzenia jeden lub więcej zestawów satelickich. Każdy zestaw zawiera ciągi, obrazy i inne zasoby, które są specyficzne dla danej kultury interfejsu użytkownika. (Głównego pliku wykonywalnego aplikacji zawiera ciągi dla kultury domyślnej aplikacji).  

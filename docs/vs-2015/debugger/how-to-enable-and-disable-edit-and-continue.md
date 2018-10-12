@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Włącz i Wyłącz Edytuj i Kontynuuj | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57a9ec8b8e25da6edb36e1983e45f7bb78251208
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2700076fa0cc08aa137377b9a99c1179d9b8fc12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674795"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212835"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>Porady: włączanie i wyłączanie opcji edytuj i kontynuuj
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [jak: Włącz i Wyłącz Edytuj i Kontynuuj](https://docs.microsoft.com/visualstudio/debugger/how-to-enable-and-disable-edit-and-continue).  
-  
 Można wyłączyć lub włączyć Edytuj i Kontynuuj w **opcje** okno dialogowe, w czasie projektowania. Nie można zmienić tego ustawienia podczas debugowania.  
   
  Edytuj i Kontynuuj działa tylko w kompilacjach do debugowania. Dla natywnych języka C++, Edytuj i Kontynuuj wymaga przy użyciu / incremental — opcja.  
@@ -64,7 +62,7 @@ Można wyłączyć lub włączyć Edytuj i Kontynuuj w **opcje** okno dialogowe,
  Aby uzyskać więcej informacji o tych opcjach, zobacz [ogólne, debugowanie, okno dialogowe Opcje](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Edytuj i Kontynuuj](../debugger/edit-and-continue.md)
+ [Edytuj i kontynuuj](../debugger/edit-and-continue.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Stałe węzły | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eeeff91d6c30774d89544ab7cfd5c1f5db759620
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b062f6190213fc2b18670f50fdd527c4c3f212a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680058"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260068"
 ---
 # <a name="constant-nodes"></a>Stałe węzły
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [stałe węzły](https://docs.microsoft.com/visualstudio/designers/constant-nodes).  
-  
 W projektancie programu do cieniowania stałe węzły przedstawiają wartości literałów i interpolowane wierzchołka atrybutów w obliczeniach cieniowania pikseli. Ponieważ wierzchołek atrybuty są interpolowane — i dlatego są różne dla każdego piksela — każde wystąpienie programu do cieniowania pikseli odbiera nieco innej stałej. Dzięki temu każdego piksela unikatowego wyglądu.  
   
 ## <a name="vertex-attribute-interpolation"></a>Interpolacja atrybut wierzchołka  

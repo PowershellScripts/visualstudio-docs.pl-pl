@@ -1,7 +1,7 @@
 ---
 title: Shell (Isolated lub Integrated) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 364a45ea3ae66e3ba8962bfce1487cc04ba35397
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0001ff15bd6f74ea0b993c73a9c458d5724a28a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680449"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266126"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (Isolated lub Integrated)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Shell (Isolated lub Integrated)](https://docs.microsoft.com/visualstudio/extensibility/shell-isolated-or-integrated).  
-  
 Można utworzyć własną aplikację na podstawie programu Visual Studio w trybie zintegrowanym lub izolowanych. W trybie zintegrowanym wiele funkcji programu Visual Studio dostępnych dodatkowo oprócz używanej aplikacji. W trybie izolowanym wybierasz podzbiór funkcji programu Visual Studio, które chcesz rozpowszechnić razem ze swoim rozszerzeniem.  
   
 ## <a name="integrated-mode"></a>W trybie zintegrowanym  

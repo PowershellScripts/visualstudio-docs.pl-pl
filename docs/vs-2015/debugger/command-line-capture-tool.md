@@ -1,7 +1,7 @@
 ---
 title: Narzędzie wiersza polecenia do przechwytywania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22f6a399630a675b7a44f5357faea50d1dc16d91
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a2c646af7102bd6a5017b1afb522448d4e6b1d8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775373"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210550"
 ---
 # <a name="command-line-capture-tool"></a>Narzędzie wiersza polecenia do przechwytywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [narzędzia wiersza polecenia do przechwytywania](https://docs.microsoft.com/visualstudio/debugger/graphics/command-line-capture-tool).  
-  
 DXCap.exe jest narzędziem wiersza polecenia do przechwytywania diagnostyki grafiki i odtwarzania. Obsługuje ona Direct3D 10 za pośrednictwem Direct3D 12 na wszystkich poziomach funkcji.  
   
 ## <a name="syntax"></a>Składnia  

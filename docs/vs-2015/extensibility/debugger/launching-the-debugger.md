@@ -1,7 +1,7 @@
 ---
 title: Uruchamianie debugera | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f24da1a1-f923-48b4-989f-18a22b581d1b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f2a427825fdc10811fccc10ddc71438b406ebd5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a985d2184ecc69ab4fa2da3b634ab82281fc3ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201217"
 ---
 # <a name="launching-the-debugger"></a>Uruchamianie debugera
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [uruchamianie debugera](https://docs.microsoft.com/visualstudio/extensibility/debugger/launching-the-debugger).  
-  
 Uruchamianie debugera wymaga wysyłania odpowiedniej kolejności metod i zdarzeń za pomocą ich odpowiednich atrybutów.  
   
 ## <a name="sequences-of-methods-and-events"></a>Sekwencje metody i zdarzenia  

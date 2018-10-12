@@ -1,7 +1,7 @@
 ---
 title: 'Porady: podział klasy na klasy częściowe (Projektant klas) | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bbf355caf4a67e54a53f7447f813bf5870b9086
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ae389e3bfe32e2e040da5bef3f41a51ff69555d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628396"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245482"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Porady: podział klas na klasy częściowe (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: podział klasy na klasy częściowe (Projektant klas)](https://docs.microsoft.com/visualstudio/ide/how-to-split-a-class-into-partial-classes-class-designer).  
-  
 Deklaracja klasy lub struktury między kilka deklaracji można podzielić przy użyciu `Partial` — słowo kluczowe w języku Visual Basic lub `partial` — słowo kluczowe w języku Visual C#. Można użyć tylu częściowe deklaracje, jak w tyle plików innego źródła lub w jednym pliku źródłowym. Jednak wszystkie deklaracje musi należeć do tego samego zestawu i tej samej przestrzeni nazw.  
   
  Klasy częściowe są przydatne w kilku sytuacjach. Na przykład pracujesz nad dużymi projektami, rozdzielając klasy na więcej niż jeden plik umożliwia więcej niż jeden programisty pracować nad nim, w tym samym czasie. Podczas pracy z kodem, który program Visual Studio generuje klasę można zmienić bez konieczności ponownego tworzenia pliku źródłowego. (Przykłady kodu, który generuje programie Visual Studio obejmuje kod otoki Windows Forms i usługi sieci Web). Ten sposób można utworzyć kod, który używa klasy generowane automatycznie, bez konieczności modyfikowania pliku przez program Visual Studio.  

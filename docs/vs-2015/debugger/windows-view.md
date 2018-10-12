@@ -1,7 +1,7 @@
 ---
 title: Wyświetl Windows | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd40259af773e268a8786f370591d5d0a474b05e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4622e268aaaf76a2968a2bc6ef67ead7b0c45b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685627"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261706"
 ---
 # <a name="windows-view"></a>Widok okien
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [widoku Windows](https://docs.microsoft.com/visualstudio/debugger/windows-view).  
-  
 Przy pierwszym otwarciu programu Spy ++, widok Windows wyświetla drzewo wszystkich okien i formantów w systemie. Nazwa okna dojścia i klasy są wyświetlane. Bieżące okno pulpitu jest w górnej części drzewa. Inne okna są elementami podrzędnymi pulpitu i są wyświetlane zgodnie z hierarchią standardowego okna. Okna równorzędne są wyświetlane na listach expansible poniżej nadrzędnych.  
   
  Na poniższym rysunku przedstawiono typowy widok programu Spy ++ Windows za pomocą węzła najwyższego poziomu, rozwinięty.  
@@ -42,7 +40,7 @@ Wyświetl Windows Spy ++
  Po aktywowaniu widoku Windows, można użyć narzędzia wyszukiwania w [okno dialogowe Wyszukiwanie](../debugger/window-search-dialog-box.md) do wyświetlania informacji z otwartego okna w systemie.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Porady: Korzystanie z narzędzia wyszukiwania](../debugger/how-to-use-the-finder-tool.md)  
+ [Instrukcje: korzystanie z narzędzia wyszukiwania](../debugger/how-to-use-the-finder-tool.md)  
  Pokazuje, jak to narzędzie skanowania systemu windows do właściwości lub komunikaty.  
   
  [Instrukcje: wyszukiwanie okna w widoku okien](../debugger/how-to-search-for-a-window-in-windows-view.md)  
@@ -61,10 +59,10 @@ Wyświetl Windows Spy ++
  [Okno dialogowe Znajdź okno](../debugger/find-window-dialog-box.md)  
  Używane, aby wyświetlić właściwości lub komunikaty z określonym oknie.  
   
- [Okno dialogowe Wyszukiwanie](../debugger/window-search-dialog-box.md)  
+ [Wyszukiwanie okien, okno dialogowe](../debugger/window-search-dialog-box.md)  
  Umożliwia znalezienie węzła w określonym oknie, w widoku Windows.  
   
- [Okno dialogowe właściwości](../debugger/window-properties-dialog-box.md)  
+ [Właściwości okna, okno dialogowe](../debugger/window-properties-dialog-box.md)  
  Umożliwia wyświetlenie właściwości wybranego w widoku Windows okna.  
   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  

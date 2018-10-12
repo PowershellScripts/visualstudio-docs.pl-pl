@@ -1,7 +1,7 @@
 ---
 title: Biblioteka formantów (kod zarządzany) sieci Web | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bdc9c62699e905a2c7aaee106dcb9cba14ac312
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7e942fe6909d41ed5000f5e8a4f31f0de87cf9e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680956"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262530"
 ---
 # <a name="web-control-library-managed-code"></a>Biblioteka formantów sieci Web (zarządzany kod)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Biblioteka formantów sieci Web (kod zarządzany)](https://docs.microsoft.com/visualstudio/debugger/web-control-library-managed-code).  
-  
 Szablon projektu Biblioteka formantów sieci Web tworzy bibliotekę DLL. Ponieważ biblioteki klas jest biblioteką DLL, nie możesz uruchomić go bezpośrednio. Należy utworzyć [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] strona, która osadza formantu. Aby uzyskać więcej informacji, zobacz [szablon biblioteki kontrolki sieci Web](http://msdn.microsoft.com/en-us/00666b07-71d2-4ace-a13c-cc130a3ce372).  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Aby debugować Biblioteka formantów sieci Web (metoda 1)  
@@ -59,7 +57,7 @@ Szablon projektu Biblioteka formantów sieci Web tworzy bibliotekę DLL. Poniewa
 3.  Dodaj odwołanie do projektu sieci web kontroli.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Aplikacje sieci Web ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)
+ [Aplikacje internetowe ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)
 
 
 

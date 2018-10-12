@@ -1,7 +1,7 @@
 ---
 title: Dostosowywanie funkcji IntelliSense dla RequireJS | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04cffba0f7bd03cbb4fb2fe228174377871c35f8
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 7b1c32d0096742c2364e5ac3b8afe59b39152b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246717"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>Dostosowywanie funkcji IntelliSense dla RequireJS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dokumentacja programu Visual Studio 2017](/visualstudio/).  
-  
 Począwszy od programu Visual Studio 2013 Update 4, obsługę popularnych plik RequireJS JavaScript i modularnej modułu ładującego jest obsługiwane. RequireJS ułatwia definiowanie zależności między modułami kodu i załadować dynamicznie modułów tylko wtedy, gdy jest to wymagane. Podczas pisania kodu JavaScript, który używa RequireJS, sugestie funkcji IntelliSense zostanie podana dla modułów już przywoływany z definicji modułu lub odwoływać się za pomocą wywołania `require()` z w obrębie kodu.  
   
  Domyślnie program Visual Studio obsługuje bardzo podstawową konfigurację do obsługi RequireJS, ale jest powszechną praktyką, aby skonfigurować własne niestandardowe ustawienia konfiguracji (oznacza to, aby zdefiniować aliasów dla bibliotek). W tym temacie opisano różne sposoby, które można dostosować Visual Studio do pracy z projektu Instalatora unikatowy.  

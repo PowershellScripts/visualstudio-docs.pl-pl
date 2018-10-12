@@ -1,7 +1,7 @@
 ---
 title: Pole TASK_STATE_WAITING_ON_CHILDREN | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6f26b098-84ad-4f6e-ba27-6136581ba630
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e69d8473e877807a6f1d80ca7844d78a38aa82d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6b00010947a1841367f767165e821d65c6df677
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685227"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263850"
 ---
 # <a name="taskstatewaitingonchildren-field"></a>TASK_STATE_WAITING_ON_CHILDREN, pole
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [pole TASK_STATE_WAITING_ON_CHILDREN](https://docs.microsoft.com/visualstudio/extensibility/debugger/task-state-waiting-on-children-field).  
-  
 Zadanie zostało zakończone, wykonywanie jej delegata i niejawnie Trwa oczekiwanie na ukończenie dołączonych zadań podrzędnych.  
   
  **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
@@ -45,5 +43,5 @@ Zadanie zostało zakończone, wykonywanie jej delegata i niejawnie Trwa oczekiwa
  Jeśli [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) pole zawiera wartość ta <xref:System.Threading.Tasks.Task.Status%2A> właściwość zwraca <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Task — klasa](../../extensibility/debugger/task-class-internal-members.md)
+ [Task, klasa](../../extensibility/debugger/task-class-internal-members.md)
 

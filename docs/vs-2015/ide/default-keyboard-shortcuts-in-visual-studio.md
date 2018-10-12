@@ -1,7 +1,7 @@
 ---
 title: Domyślne skróty klawiaturowe w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdd1c4b29a90d10af3593d50f2578f8dbf27bf66
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: afe7f71508de6dca3d29afeead23258eccbc667b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678376"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247185"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Domyśle skróty klawiaturowe w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [domyślne skróty klawiaturowe w programie Visual Studio](https://docs.microsoft.com/visualstudio/ide/default-keyboard-shortcuts-in-visual-studio).  
-  
 Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, wybierając odpowiednie skróty klawiaturowe. Ten temat wyświetla listę domyślnych skrótów dla profilu Ogólnego projektowania, który być może wybrano podczas instalacji Visual Studio. Niezależnie od wybranego profilu, możesz zidentyfikować skrót dla polecenia, otwierając **opcje** okno dialogowe, rozszerzając **środowiska** węzeł, a następnie wybierając **klawiatury**. Możesz również dostosować skróty, przypisując różne skróty do dowolnego polecenia.  
   
  Aby uzyskać listę typowych skrótów klawiaturowych i innych informacji o wydajności, zobacz [porady i wskazówki](../ide/tips-and-tricks-for-visual-studio.md) i [wskazówki dotyczące produktywności](../ide/productivity-tips-for-visual-studio.md).  
@@ -40,7 +38,7 @@ Możesz uzyskać łatwy dostęp do różnych poleceń i okien w Visual Studio, w
   
 |||||  
 |-|-|-|-|  
-|[Analyze](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Edytuj](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|  
+|[Analyze](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Edytowanie](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|  
 |[Architektura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menu kontekstowe edytora](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Menu kontekstowe rozwiązania i projektu](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Eksplorator testów](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|  
 |[Kompilacja](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Plik](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refaktoryzacja](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Narzędzia](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|  
 |[Menu kontekstowe widoku klas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Pomoc](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Eksplorator rozwiązań](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Widok](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|  

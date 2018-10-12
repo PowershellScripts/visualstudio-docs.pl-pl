@@ -1,7 +1,7 @@
 ---
 title: Używanie projektantów działań | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: c370b48d0534303947ca2e940adf95e178422c56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7601f4e42c7dbc2bee63719986760bedd1c8589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684908"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224240"
 ---
 # <a name="using-the-activity-designers"></a>Używanie projektantów działań
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] Obejmuje pewną liczbę działań dostarczane przez system, które można użyć podczas tworzenia swojej działalności i przepływów pracy. W tej sekcji opisano kategorie działań dostarczane przez system i ich projektantów, które są dostępne. Tematy dotyczące poszczególnych działań i ich odpowiednich projektantów w ramach każdej z tych kategorii opisano, co te działania są i wytyczne dotyczące sposobu ich używania.  
@@ -35,7 +35,7 @@ ms.locfileid: "42684908"
  [Automat stanów](../workflow-designer/state-machine-activity-designers.md)  
  Projektanci działań użytego do stworzenia działania maszyny stanu.  
   
- [Obsługa wiadomości](../workflow-designer/messaging-activity-designers.md)  
+ [Obsługa komunikatów](../workflow-designer/messaging-activity-designers.md)  
  Projektanci działań, używany do zarządzania działań dotyczących komunikatów.  
   
  [Środowisko uruchomieniowe](../workflow-designer/runtime-activity-designers.md)  

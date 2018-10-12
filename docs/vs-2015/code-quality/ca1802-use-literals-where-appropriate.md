@@ -1,7 +1,7 @@
 ---
 title: 'CA1802: Używaj literałów wszędzie, gdzie jest to odpowiednie | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f3bef3fe8627f93b2d4fe7f3ec46f4834be5c01b
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 746061d51a53c4cbcdff0dbac93cef07de57fb2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258716"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Używaj literałów wszędzie, gdzie jest to odpowiednie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [CA1802: użycie literałów kiedy trzeba](https://docs.microsoft.com/visualstudio/code-quality/ca1802-use-literals-where-appropriate).
-
 |||
 |-|-|
 |TypeName|UseLiteralsWhereAppropriate|

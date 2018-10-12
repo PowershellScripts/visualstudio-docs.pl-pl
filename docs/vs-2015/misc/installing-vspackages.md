@@ -1,7 +1,7 @@
 ---
 title: Instalowanie pakietów VSPackage | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 43db03ef-ceb5-4c13-875f-90259f470cc7
 caps.latest.revision: 18
 manager: douge
-ms.openlocfilehash: 2514a37337864de896ba810cb65f1d5661abb00b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3b814280a3d4b29908eb8a8baa5f011221952347
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681776"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267595"
 ---
 # <a name="installing-vspackages"></a>Instalowanie pakietów VSPackage
 W tej sekcji omówiono sposób tworzenia i instalowania pakietów VSPackage i sposób obsługi użytkowników korzystających z wieloma wersjami programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] w tym samym czasie.  

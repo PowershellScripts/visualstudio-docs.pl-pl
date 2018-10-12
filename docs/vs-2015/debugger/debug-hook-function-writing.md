@@ -1,7 +1,7 @@
 ---
 title: Pisanie funkcji punktów zaczepienia debugowanie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5761b0a32e7739a5611f2d3d07183f0c529fc60c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4439b3c308a3c76172b0de4aa5c8a95f92092c5b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694331"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218988"
 ---
 # <a name="debug-hook-function-writing"></a>Pisanie debugowanie funkcji punktów zaczepienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [debugowania pisanie funkcji punktów zaczepienia](https://docs.microsoft.com/visualstudio/debugger/debug-hook-function-writing).  
-  
 W tej sekcji opisano wiele niestandardowych debugowania punktów zaczepienia funkcje, których można napisać, które umożliwiają wstawianie kodu niektóre punkty wstępnie zdefiniowane wewnątrz debugera normalne przetwarzanie.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
@@ -56,7 +54,7 @@ W tej sekcji opisano wiele niestandardowych debugowania punktów zaczepienia fun
  W tym artykule omówiono `_CrtSetReportHook`, którego można użyć do filtrowania raportów skoncentrować się na określonych typów alokacji. Ten temat zawiera także prototypu.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Techniki testowania CRT](../debugger/crt-debugging-techniques.md)  
+ [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md)  
  Łącza do debugowania dla biblioteki wykonawczej C, w tym o korzystaniu z biblioteki debugowania CRT, makra raportowania, różnice między `malloc` i `_malloc_dbg`, pisanie debugowanie funkcji punktów zaczepienia i sterty debugowania CRT.
 
 

@@ -1,7 +1,7 @@
 ---
 title: Obsługa 64-bitowego środowiska IDE programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3215cccf956e0d9c4bf80e70dfa377eef823283d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89ccc29b35c7495857d54c5baa4ea6b0667ae5fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688606"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259782"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Obsługa 64-bitowego środowiska IDE programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [pomocy technicznej programu Visual Studio IDE 64-bitowych](https://docs.microsoft.com/visualstudio/ide/visual-studio-ide-64-bit-support).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Umożliwia ustawianie aplikacji przeznaczonych dla różnych platform, w tym platform 64-bitowych. Aby uzyskać więcej informacji na platformie 64-bitowej obsługi w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zobacz [aplikacji 64-bitowych](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
   
 ## <a name="deploying-a-64-bit-application"></a>Wdrażanie aplikacji 64-bitowych  
@@ -51,7 +49,7 @@ Najnowszą wersję tego tematu znajduje się w temacie [pomocy technicznej progr
   
 -   [Debugowanie aplikacji 64-bitowych](../debugger/debug-64-bit-applications.md)  
   
--   [Przy użyciu plików zrzutu](../debugger/using-dump-files.md)  
+-   [Używanie plików zrzutów](../debugger/using-dump-files.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Konfigurowanie projektów pod kątem platform docelowych](../ide/how-to-configure-projects-to-target-platforms.md)

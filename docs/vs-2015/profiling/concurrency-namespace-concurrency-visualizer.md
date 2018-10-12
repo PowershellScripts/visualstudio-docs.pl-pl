@@ -1,7 +1,7 @@
 ---
 title: Namespace współbieżności (Concurrency Visualizer) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb2b9b8b06722dd1c5cab5219a2e3457e7a54587
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 169df5f3d3e498575b0153dc12894622e0a6e149
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634091"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251267"
 ---
 # <a name="concurrency-namespace-concurrency-visualizer"></a>Przestrzeń nazwy współbieżności (Concurrency Visualizer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Namespace współbieżności (Concurrency Visualizer)](https://docs.microsoft.com/visualstudio/profiling/concurrency-namespace-concurrency-visualizer).  
-  
 `Concurrency` Przestrzeń nazw zawiera klasy i funkcje, które zapewniają dostęp do środowiska wykonawczego Concurrency, platformy programowania współbieżnego dla C++. Aby uzyskać więcej informacji, zobacz [współbieżność środowiska wykonawczego](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
   
 ## <a name="syntax"></a>Składnia  

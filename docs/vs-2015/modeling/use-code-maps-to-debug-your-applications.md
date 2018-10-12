@@ -1,12 +1,12 @@
 ---
 title: Używanie map kodu do debugowania aplikacji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, visualizing code
 - Visual Studio Ultimate, navigating code visually
@@ -21,18 +21,16 @@ caps.latest.revision: 51
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f3dd19804a8e7749a976b5334ea691918eeae906
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 354c99a9e11f7dbf86f93dab48f669c206323ce5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680036"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264010"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Używanie map kodu do debugowania aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [mapy Użyj kodu do debugowania aplikacji](https://docs.microsoft.com/visualstudio/modeling/use-code-maps-to-debug-your-applications).  
-  
 Mapy kodu może pomóc uniknąć zagubienia w dużych bazach kodu, w nieznanym kodzie lub starszego kodu. Na przykład podczas debugowania możesz chcieć spojrzeć na kod w wielu plikach i projektach. Używanie map kodu do poruszania się fragmentów kodu i zrozumienie relacji między nimi. Dzięki temu nie trzeba informacji o ten kod w głowie lub narysować diagram oddzielnych. Tak gdy działanie zostanie zakłócone swoją pracę, mapy kodu pomogą odświeżyć sobie pamięć o kodzie, nad którymi pracuje.  
   
  ![Mapy kodu &#45; mapę relacji w kodzie](../modeling/media/codemapstoryboardpaint.png "CodeMapStoryboardPaint")  

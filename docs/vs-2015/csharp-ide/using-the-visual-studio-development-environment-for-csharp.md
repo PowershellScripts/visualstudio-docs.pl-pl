@@ -1,7 +1,7 @@
 ---
 title: Używanie środowiska programistycznego Visual Studio dla języka C# | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2811fada41293cb64ab223bc0e6f8d387304231
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0205cd546c857b3ad80d89c2520e15759558c75
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696922"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194880"
 ---
 # <a name="using-the-visual-studio-development-environment-for-c"></a>Używanie środowiska programistycznego Visual Studio dla języka C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Visual Studio zintegrowane środowisko programistyczne (IDE) to zbiór narzędzi
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Wskazówki: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Omówienie wielu funkcji i narzędzi dostępnych w programie Visual Studio, które służą do tworzenia aplikacji.|  
+|[Przewodnik: tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Omówienie wielu funkcji i narzędzi dostępnych w programie Visual Studio, które służą do tworzenia aplikacji.|  
 |[Tworzenie rozwiązań i projektów](../ide/creating-solutions-and-projects.md)|Opis sposobu tworzenia projektu, który zawiera wszystkie pliki kodu źródłowego, pliki zasobów, takich jak ikony, odwołania do plików zewnętrznych i dane konfiguracyjne, takie jak ustawienia kompilatora.|  
 |[Wprowadzenie do projektanta projektu](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)|Omówienie Projektanta projektu, który stanowi centralną lokalizację służącą do zarządzania właściwościami, ustawieniami i zasobami projektu.|  
 |[Pisanie kodu](../ide/writing-code-in-the-code-and-text-editor.md)|Opis narzędzi programu Visual Studio, które ułatwiają modyfikowanie tekstu, kodu i znaczników oraz wykonywanie na nich operacji, wstawianie i konfigurowanie formantów oraz innych obiektów i przestrzeni nazw, a także dodawanie odwołań do zewnętrznych składników i zasobów.|  

@@ -1,7 +1,7 @@
 ---
 title: Rejestrowanie programów obsługi zestawu międzyoperacyjnego | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2288c1692f50e3937bbfa71502a0572a1747c976
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea0ea8a8374f63335e3e5b2a7c00bdb8c3084d11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679050"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234976"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Rejestrowanie programów obsługi zestawu międzyoperacyjnego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [międzyoperacyjności zestawu poleceń programy obsługi rejestrowania](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-interop-assembly-command-handlers).  
-  
 Należy zarejestrować pakietu VSPackage [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tak, aby prawidłowo polecenia kieruje zintegrowanego środowiska programistycznego (IDE).  
   
  Rejestru mogą być aktualizowane ręcznie edytując lub przy użyciu pliku rejestratora (.rgs). Aby uzyskać więcej informacji, zobacz [tworzenie skryptów rejestratora](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  

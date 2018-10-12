@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomViewer | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67bea9c931cc702c2f79d1a94b3ae33511518e07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 814bf0b43d217f3309e50c54db70bef850e6ed50
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690905"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257586"
 ---
 # <a name="idebugcustomviewer"></a>IDebugCustomViewer
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [IDebugCustomViewer](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcustomviewer).  
-  
 Ten interfejs umożliwia ewaluatora wyrażeń (EE), aby wyświetlić wartości właściwości w dowolnych format jest konieczne.  
   
 ## <a name="syntax"></a>Składnia  
@@ -48,7 +46,7 @@ IDebugCustomViewer : IUknown
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[Się pozycje DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Nie, niezależnie od rodzaju jest niezbędne do wyświetlania danej wartości.|  
+|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Nie, niezależnie od rodzaju jest niezbędne do wyświetlania danej wartości.|  
   
 ## <a name="remarks"></a>Uwagi  
  Ten interfejs jest używany, gdy wartość właściwości nie można wyświetlić w normalny sposób — na przykład z tabeli danych lub inny typ właściwość typu złożonego. Przeglądarka niestandardowa, reprezentowane przez `IDebugCustomViewer` interfejsu, różni się od typu wizualizatora, czyli programu zewnętrznego do wyświetlania danych określonego typu, niezależnie od tego, EE. EE implementuje podglądu niestandardowego, które są specyficzne dla tego EE. Użytkownik wybierze typ wizualizatora do użycia, Wizualizator typów i Przeglądarka niestandardowa. Zobacz [Visualizing i wyświetlanie danych](../../../extensibility/debugger/visualizing-and-viewing-data.md) Aby uzyskać szczegółowe informacje na temat tego procesu.  

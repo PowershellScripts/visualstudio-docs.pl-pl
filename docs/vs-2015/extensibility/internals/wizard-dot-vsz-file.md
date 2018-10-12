@@ -1,7 +1,7 @@
 ---
 title: Kreator (. Plik Vsz) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24296384ec66386cdcb735547a1b6ce9c64a0618
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1d8d36ba617f5d5828354e32b5b0f45ed9ec1ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678282"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197174"
 ---
 # <a name="wizard-vsz-file"></a>Kreator (plik Vsz)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [kreatora (. Plik Vsz)](https://docs.microsoft.com/visualstudio/extensibility/internals/wizard-dot-vsz-file).  
-  
 Zintegrowane środowisko programistyczne (IDE) korzysta z plików .vsz do uruchamiania kreatorów. Te pliki .vsz zawierają informacje, które używa środowiska IDE, aby określić które kreatora do wywołania i jakie informacje do przekazania do kreatora.  
   
  Plik .vsz jest wersja pliku tekstu w formacie pliku ini, który ma nie sekcji. Informacje znane IDE znajduje się na początku pliku. Zapewnia to łącze między kreatora, który wywołuje IDE i parametry, które znajdują się w pliku .vsz do przekazania do środowiska IDE. Pozostała część pliku zawiera parametry specyficznych dla kreatora, i które mają być zbierane przez środowisko IDE i przekazywane do określonych kreatora.  

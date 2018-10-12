@@ -1,7 +1,7 @@
 ---
 title: Dostosowanie kodem Legacy do edytora | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a208d38e-9bea-41c9-9fe2-38bd86a359cb
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b477436826b69e7e0123e6003c23ed719b1a7466
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c828632e2c6de2666edecbedf04479598085890c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681009"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197746"
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>Dostosowanie kodem Legacy do edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dostosowanie kodem Legacy do edytora](https://docs.microsoft.com/visualstudio/extensibility/adapting-legacy-code-to-the-editor).  
-  
 Edytor programu Visual Studio zawiera wiele funkcji, które można wywołać z istniejącymi elementami kodu. Poniższe instrukcje przedstawiają sposób dostosowania jako składnik MEF nie, na przykład pakietu VSPackage, korzystanie z funkcji edytora. Instrukcje pokazują również jak używać kart usług edytora kodu zarówno zarządzanego i niezarządzanego.  
   
 ## <a name="editor-adapters"></a>Edytor kart  

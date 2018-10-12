@@ -1,7 +1,7 @@
 ---
 title: Rozszerzanie innych części programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b2cdcde6115f78eb9d2e43edaa6fe238b0963dc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c910fcd8a3025b6a12454ad7234502df99726768
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684036"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263526"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Rozszerzanie innych części programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [rozszerzanie innych części programu Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/extending-other-parts-of-visual-studio).  
-  
 Istnieje wiele więcej elementów w interfejsie użytkownika Visual Studio, które mogą rozszerzyć. W tym miejscu pokazujemy kilka.  
   
 ## <a name="creating-a-vspackage"></a>Tworzenie pakietu VSPackage  

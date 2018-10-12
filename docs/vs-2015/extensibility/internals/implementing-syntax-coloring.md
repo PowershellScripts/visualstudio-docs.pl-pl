@@ -1,7 +1,7 @@
 ---
 title: Implementowanie kolorowania składni | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c86a782b3b100811d29b1f81bf2beb6c8cfae1a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4315b9e6b6fdb12a0fcb3e97f6b208d6b84acd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259258"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementowanie kolorowania składni
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Implementowanie kolorowania składni](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-syntax-coloring).  
-  
 Gdy usługa językowa udostępnia kolorowania składni, analizator konwertuje tablicę elementów z możliwością kolorowania wiersza tekstu i zwraca typy tokenów odpowiadający te elementy z możliwością kolorowania. Analizator powinien zwrócić typy tokenów, które należą do listy elementów z możliwością kolorowania. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Wyświetla każdy element z możliwością kolorowania w oknie kodu według atrybutów przypisanych przez obiekt colorizer do odpowiedniego typu tokenu.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nie określono interfejsu analizatora, i wykonania parser zależy od całkowicie użytkownika. Jednak domyślna implementacja parser znajduje się w projekcie pakiet językowy Visual Studio. Dla kodu zarządzanego środowiska pakietu zarządzanego (MPF) zapewnia pełną obsługę Kolorowanie tekstu.  

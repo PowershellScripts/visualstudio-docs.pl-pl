@@ -1,7 +1,7 @@
 ---
 title: Atrybuty warunkowe schematu VSCT XML | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 018c78d10af48a946ded543210404f397eee5ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ee3d25fd7d08ea52c41ef24fdfe654bbf7a2eb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685312"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246884"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Atrybuty warunkowe schematu XML VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [atrybuty warunkowe schematu XML VSCT](https://docs.microsoft.com/visualstudio/extensibility/vsct-xml-schema-conditional-attributes).  
-  
 Atrybuty warunkowe mogą być stosowane do wszystkich list i elementów. Operatory logiczne i wyrażenia rozszerzenia symboli zwrócić wartość PRAWDA lub FAŁSZ. W przypadku opcji true skojarzona lista lub element znajduje się w dane wyjściowe.  
   
  Rozszerzenia tokenu można przetestować względem innych rozszerzenia tokenu lub stałe. Funkcja Defined() służy do sprawdzenia, czy została zdefiniowana określonej nazwie, nawet wtedy, gdy go nie ma wartości.  

@@ -1,7 +1,7 @@
 ---
 title: Definiowanie ograniczeń walidacji dla modeli UML | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775610"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176543"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definiowanie ograniczeń walidacji dla modeli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [definiowanie ograniczeń walidacji dla modeli UML](https://docs.microsoft.com/visualstudio/modeling/define-validation-constraints-for-uml-models).  
-  
 Można zdefiniować ograniczenia sprawdzania poprawności, które sprawdzić, czy model spełnia określony warunek, który określisz. Na przykład można zdefiniować ograniczenie, aby upewnić się, że użytkownik nie utworzy pętli relacji dziedziczenia. Ograniczenie jest wywoływane, gdy użytkownik próbuje otworzyć lub zapisać model i można również uruchomić ręcznie. Jeśli ograniczenie nie powiedzie się, komunikat o błędzie, który zdefiniujesz jest dodawany do okna błędu. Można spakować te ograniczenia w rozszerzeniu integracji programu Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) i rozdystrybuować je innym użytkownikom programu Visual Studio.  
   
  Można również zdefiniować ograniczenia, które sprawdzają poprawność modelu przed zasobami zewnętrznymi, takich jak bazy danych. Jeśli chcesz sprawdzić poprawność kodu programu względem diagramu warstwy, zobacz [Dodawanie niestandardowej walidacji architektury do diagramów warstw](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  

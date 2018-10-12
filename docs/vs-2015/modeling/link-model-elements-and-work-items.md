@@ -1,7 +1,7 @@
 ---
 title: Łączenie elementów modeli i elementów roboczych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 603438fda4c2f883376292b68896309a4e669be5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e3c2a7558adb9036cec474429da9778394e8c1f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696964"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263931"
 ---
 # <a name="link-model-elements-and-work-items"></a>Łączenie elementów modeli i elementów roboczych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [łączenie elementów modeli i elementów roboczych](https://docs.microsoft.com/visualstudio/modeling/link-model-elements-and-work-items).  
-  
 Śledź zadania, przypadki testowe, błędy, wymagania, problemy i inne zadania związane z modelu, łącząc elementy modelu w programie Visual Studio i elementów roboczych w Team Foundation Server lub Visual Studio Team Services. Dołącz dokumenty do połączonych elementów roboczych, aby skojarzyć je z elementami modelu.  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

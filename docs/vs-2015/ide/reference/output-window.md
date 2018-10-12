@@ -1,7 +1,7 @@
 ---
 title: Okno danych wyjściowych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fa3297ca0b3843fcc427bdad4f380828ad441d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55869ff13cf4048b6d256e57892d470062847501
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628697"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189907"
 ---
 # <a name="output-window"></a>Okno wyniku
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [okno danych wyjściowych](https://docs.microsoft.com/visualstudio/ide/reference/output-window).  
-  
   
 **Dane wyjściowe** można wyświetlić w oknie komunikatów o stanie dla różnych funkcji w zintegrowanym środowisku programistycznym (IDE). Aby otworzyć **dane wyjściowe** okna, na pasku menu wybierz **widok/Output** (lub kliknij CTRL + ALT + O).  
   

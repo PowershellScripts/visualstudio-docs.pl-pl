@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Określanie adresu URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 99003812248a10ca8797a5727911caf4ba3a0a60
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6b7f9c9f718b0f76d2a2b0c313c951064c5dc6f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632646"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262265"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Porady: określanie adresu URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [jak: Określ adres URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment).  
-  
 A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pewne wymagania wstępne, które muszą być dostępne na komputerze klienckim, aby sprawdzić wdrożenia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] do uruchomienia aplikacji. Obejmują one wymaganą minimalną wersję [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], wersję systemu operacyjnego i dowolne zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC). [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], jednak nie zainstalują dowolną z tych wymagań wstępnych. Jeśli warunek wstępny nie zostanie znaleziony, po prostu zatrzymuje instalację i wyświetla okno dialogowe wyjaśniające, dlaczego instalacja nie powiodła się.  
   
  Istnieją dwie metody instalacji wymagań wstępnych. Możesz zainstalować je przy użyciu aplikacji programu inicjującego. Alternatywnie można określić adres URL pomocy technicznej dla indywidualnych wstępnie wymaganych, który jest wyświetlany użytkownikom w oknie dialogowym, jeśli wymagań wstępnych nie zostanie znaleziony. Strony odwołuje się ten adres URL może zawierać łącza do instrukcji dotyczących instalacji wymagany warunek wstępny. Jeśli aplikacja nie określa adres URL pomocy technicznej dla indywidualnych wstępnie wymaganego składnika [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Wyświetla adres URL pomocy technicznej, określone w pliku manifestu wdrożenia dla aplikacji jako całości, jeśli jest zdefiniowana.  

@@ -1,7 +1,7 @@
 ---
 title: Komunikaty diagnostyczne w oknie danych wyjściowych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0a9e0bb4fa34133937e39b310cb05360e66a443
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72d9da2ea3ab6cb9807fc7e0a668155d37110c3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681874"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246797"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>Komunikaty diagnostyczne w oknie danych wyjściowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [komunikaty diagnostyczne w oknie danych wyjściowych](https://docs.microsoft.com/visualstudio/debugger/diagnostic-messages-in-the-output-window).  
-  
 Możesz zapisywać wiadomości w czasie wykonywania w oknie danych wyjściowych za pomocą klasy debugowania lub śledzenia, które są częścią <xref:System.Diagnostics> biblioteki klas. Korzystanie z klasy Debug, jeśli tylko dane wyjściowe w wersji debugowania programu. Jeśli chcesz, aby dane wyjściowe w wersji debugowania i wydania, użyj klasy Trace.  
   
 ## <a name="output-methods"></a>Metod wyjścia  
@@ -73,7 +71,7 @@ Możesz zapisywać wiadomości w czasie wykonywania w oknie danych wyjściowych 
  [Śledzenie i Instrumentacja aplikacji](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
  [Wprowadzenie do Instrumentacji i śledzenia](http://msdn.microsoft.com/en-us/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)   
  [C#, F # i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
+ [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
 
 
 

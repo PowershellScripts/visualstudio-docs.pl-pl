@@ -1,7 +1,7 @@
 ---
 title: Obraz usługi i wykaz | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3079bada9b8d3e9a0b2644e4aaa3d9e3ee3bebe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 847ac3b7ed956daf61a04c5891871c9182594877
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679744"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265216"
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i katalog obrazów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Usługa obrazów i katalog](https://docs.microsoft.com/visualstudio/extensibility/image-service-and-catalog).  
-  
 Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi obrazu w usłudze Visual Studio i katalog obrazów wprowadzone w programie Visual Studio 2015.  
   
  Usługa obrazów, wprowadzona w programie Visual Studio 2015 umożliwia deweloperom pobieranie najlepszych obrazów związanych z urządzeniem i motyw wybrany przez użytkownika do wyświetlania obrazu, w tym poprawny motywy dla kontekstu, w którym są wyświetlane. Wdrażanie usługi obrazów pomoże wyeliminuj główne problemy dotyczące konserwacji zasobów, HDPI skalowanie i motywów.  

@@ -1,7 +1,7 @@
 ---
 title: Wyszukiwanie zestawu schematów | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c6ce05cbaf203649ce62d13285f7304c04be6497
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 885797e319652aaf9573b0c171318506518f82df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680538"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204207"
 ---
 # <a name="searching-the-schema-set"></a>Wyszukiwanie zestawu schematów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wyszukiwania zestawu schematu](https://docs.microsoft.com/visualstudio/xml-tools/searching-the-schema-set).  
-  
   
 Eksplorator schematu XML umożliwia wyszukiwanie schematu ustawiony w następujący sposób:  
   

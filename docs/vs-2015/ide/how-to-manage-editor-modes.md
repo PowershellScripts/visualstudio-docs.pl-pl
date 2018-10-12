@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Zarządzanie trybami edytora | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e679c751f5d4e8aa23bb843f812476f2f9e9f5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d38812007e042d014cb0090f1334bee2cce0858
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697096"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229219"
 ---
 # <a name="how-to-manage-editor-modes"></a>Porady: zarządzanie trybami edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Zarządzanie trybami edytora](https://docs.microsoft.com/visualstudio/ide/how-to-manage-editor-modes).  
-  
 Edytor kodu programu Visual Studio można wyświetlić w różnych trybów wyświetlania.  
   
 > [!NOTE]
@@ -75,7 +73,7 @@ Edytor kodu programu Visual Studio można wyświetlić w różnych trybów wyśw
 ## <a name="see-also"></a>Zobacz też  
  [Dopasowywanie edytora](../ide/customizing-the-editor.md)   
  [Porady: Aranżowanie i dokowanie Windows](../misc/how-to-arrange-and-dock-windows.md)   
- [Czcionki i kolory, środowisko, okno dialogowe Opcje](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
+ [Czcionki i kolory, Środowisko, Opcje — okno dialogowe](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Tworzenie aplikacji mobilnych dla wielu platform w języku Visual C++ | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: douge
-ms.openlocfilehash: dfb8924c40a33abe817f9546ae5ec87192b84836
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b7f30378f863e119c121b1805aa5f805fa60ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674407"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260186"
 ---
 # <a name="build-cross-platform-mobile-apps-with-visual-c"></a>Tworzenie aplikacji mobilnych dla wielu platform w języku Visual C++
 Dla wielu platform kod można utworzyć dla systemów Android, iOS i Windows urządzenia, korzystając z języka Visual C++ for Cross-Platform Mobile Development. Jest to opcjonalna funkcja dostępna w programie Visual Studio 2015, która umożliwia programowanie dla wielu platform kodu dla systemów iOS, Android i Windows przy użyciu języka Visual C++.  

@@ -1,7 +1,7 @@
 ---
 title: Dokumentacja interfejsu API wizualizatora | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ab8b56cb8eea3424d03292d761816c7b7ac9fb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 849b8d93722f7ca70ba161b297449dc33cfd1acc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682924"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206352"
 ---
 # <a name="visualizer-api-reference"></a>Wizualizator API — Odwołanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Wizualizator API — odwołanie](https://docs.microsoft.com/visualstudio/debugger/visualizer-api-reference).  
-  
 Wizualizator interfejsów API znajdują się dla użytkowników, którzy chcą pisanie wizualizatora w debugerze programu Visual Studio. Wizualizatora to mała aplikacja, która umożliwia rozbudowanie interfejsu użytkownika funkcji debugera programu Visual Studio. Wizualizatora może wyświetlić (i, opcjonalnie, edytować) obiekt danych określonego typu, dla których zaprojektowano wizualizatora.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
@@ -52,7 +50,7 @@ Wizualizator interfejsów API znajdują się dla użytkowników, którzy chcą p
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki: Pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
  [Porady: pisanie wizualizatora](../debugger/how-to-write-a-visualizer.md)   
- [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
+ [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
 
 
 

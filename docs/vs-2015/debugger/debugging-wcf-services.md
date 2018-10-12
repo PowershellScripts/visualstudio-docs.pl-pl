@@ -1,7 +1,7 @@
 ---
 title: Debugowanie usług WCF | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,26 +22,24 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b47ac0d54f69ef4976c9f6a60b087247e1421e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d556f8a35cff99c1098323a9e2911af20bd2277c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681234"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258700"
 ---
 # <a name="debugging-wcf-services"></a>Debugowanie usług WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [debugowanie usług WCF](https://docs.microsoft.com/visualstudio/debugger/debugging-wcf-services).  
-  
 W tej sekcji  
- [Ograniczenia debugowania WCF](../debugger/limitations-on-wcf-debugging.md)  
+ [Ograniczenia dotyczące debugowania usług WCF](../debugger/limitations-on-wcf-debugging.md)  
  W tym artykule opisano ograniczenia dotyczące debugowania usług WCF.  
   
- [Porady: przechodzenie do usług WCF](../debugger/how-to-step-into-wcf-services.md)  
+ [Instrukcje: przechodzenie do usług WCF](../debugger/how-to-step-into-wcf-services.md)  
  W tym artykule wyjaśniono, obsługa debugera do przechodzenia do usługi WCF.  
   
- [Porady: debugowanie hostowania samoobsługowego WCF usługi](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
+ [Instrukcje: debugowanie hostowanej samodzielnie usługi WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
  W tym artykule opisano sposób debugowania usługi WCF, w którym działa program IIS poza lub [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] serwera projektowego.  
   
 ## <a name="see-also"></a>Zobacz też  

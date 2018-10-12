@@ -1,7 +1,7 @@
 ---
 title: 'Przewodnik: Wyróżnianie tekstu | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 caps.latest.revision: 43
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 238d9d65ac43fc5d33c05a28c48ed62c57102d92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 504f9c099b76bf2b59cabb271b12b7b419586248
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678148"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224292"
 ---
 # <a name="walkthrough-highlighting-text"></a>Przewodnik: wyróżnianie tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [przewodnik: wyróżnianie tekstu](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-highlighting-text).  
-  
 Możesz dodać różne efekty do edytora, tworząc części składowe Managed Extensibility Framework (MEF). W tym instruktażu przedstawiono sposób zaznacz każde wystąpienie bieżącego słowa w pliku tekstowym. Jeśli słowa występuje więcej niż jeden raz w pliku tekstowym, a następnie pozycji karetki w jedno wystąpienie, każde wystąpienie jest wyróżniona.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  

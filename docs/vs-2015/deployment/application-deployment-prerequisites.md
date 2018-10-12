@@ -1,7 +1,7 @@
 ---
 title: Wymagania wstępne wdrożenia aplikacji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3a866105a2b9d4549fd3684dc4726f165d43a7af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632790"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217935"
 ---
 # <a name="application-deployment-prerequisites"></a>Wstępnie wymagane składniki wdrażania aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wymagania wstępne wdrożenia aplikacji](https://docs.microsoft.com/visualstudio/deployment/application-deployment-prerequisites).  
-  
 Aby upewnić się, że Twoja aplikacja zostanie zainstalowana i wykonane pomyślnie, najpierw upewnij się, że wszystkie składniki, od których zależy aplikacja, są już zainstalowane na komputerze docelowym. Na przykład większość aplikacji utworzonych przy użyciu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zależy od [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]; poprawną wersję środowiska uruchomieniowego języka wspólnego musi być obecny na komputerze docelowym, zanim aplikacja zostanie zainstalowana.  
   
  Możesz wybrać te warunki wstępne **wstępnie wymagane składniki, okno dialogowe** i zainstaluj jako część instalacji programu .NET Framework i innych pakietów redystrybucyjnych. To rozwiązanie jest znany jako *uruchamianie*. Następnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje program wykonywalny Windows o nazwie Setup.exe, znany także jako *programu inicjującego*. Program inicjujący jest odpowiedzialny za instalowanie wymagań wstępnych przed uruchomieniem Twojej aplikacji. Aby uzyskać więcej informacji o wybieraniu tych wymagań wstępnych, zobacz [wstępnie wymagane składniki, okno dialogowe](../ide/reference/prerequisites-dialog-box.md).  

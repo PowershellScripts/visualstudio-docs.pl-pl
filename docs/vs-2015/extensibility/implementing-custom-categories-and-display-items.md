@@ -1,7 +1,7 @@
 ---
 title: Implementowanie niestandardowych kategorii i wyświetlenie elementów | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c47bc8bc4cae609ad378dabaf64f239b7aa47c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4a9f18330060888527466c29f911a37ce29ce46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631062"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218676"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementowanie niestandardowych kategorii i wyświetlenie elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Implementowanie niestandardowe kategorie i wyświetlenie elementów](https://docs.microsoft.com/visualstudio/extensibility/implementing-custom-categories-and-display-items).  
-  
 Pakietu VSPackage może zapewnić kontrolę nad czcionek i kolorów tekstu do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE) za pomocą niestandardowych kategorii i wyświetlenie elementów.  
   
  Niestandardowe kategorie i wyświetle elementy znajdują się na **czcionki i kolory** stronę właściwości. Aby otworzyć **czcionki i kolory** na stronie właściwości **narzędzia** menu, kliknij przycisk **opcje**. Rozwiń **środowiska** a następnie kliknij przycisk **czcionki i kolory**.  
@@ -141,5 +139,5 @@ Pakietu VSPackage może zapewnić kontrolę nad czcionek i kolorów tekstu do [!
  [Wprowadzenie czcionkę i kolor informacje dotyczące kolorowania tekstu](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [Uzyskiwanie dostępu do przechowywanych czcionkę i kolor ustawienia](../extensibility/accessing-stored-font-and-color-settings.md)   
  [Porady: dostęp do wbudowanych czcionek i schemat kolorów](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
- [Omówienie kolorów i czcionek](../extensibility/font-and-color-overview.md)
+ [Omówienie czcionek i kolorów](../extensibility/font-and-color-overview.md)
 

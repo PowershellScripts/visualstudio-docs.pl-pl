@@ -1,7 +1,7 @@
 ---
 title: Anatomia kodowanego testu interfejsu użytkownika | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: 25
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c9fea94f0298212bb8c3909d4227936437b8f24c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7595a967a6dae091da6c5a7613a27c602cc1381e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681230"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202751"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomia kodowanego testu interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [anatomia kodowanego testu interfejsu użytkownika](https://docs.microsoft.com/visualstudio/test/anatomy-of-a-coded-ui-test).  
-  
 Podczas tworzenia kodowanych testów interfejsu użytkownika w projekt kodowanego testu interfejsu użytkownika kilka plików są dodawane do rozwiązania. W tym temacie użyjemy przykład kodowany Test interfejsu użytkownika do zbadania tych plików.  
   
  **Wymagania**  

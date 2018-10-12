@@ -1,7 +1,7 @@
 ---
 title: Ograniczenia debugowania WCF | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a74fbdae86e1603e97aedb8d293c5a78f522d027
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e28ee8c4fa17eca8f2b5419b1d9aefb229fd020
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694000"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219157"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Ograniczenia debugowania WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [ograniczenia debugowania WCF](https://docs.microsoft.com/visualstudio/debugger/limitations-on-wcf-debugging).  
-  
 Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:  
   
 -   Debugowany proces klienta, który wywołuje usługę. Debuger nie wchodzi do usługi. Usługa nie ma znajdować się w tym samym rozwiązaniu jako aplikację kliencką.  
@@ -91,7 +89,7 @@ Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie usług WCF](../debugger/debugging-wcf-services.md)   
- [Porady: debugowanie hostowania samoobsługowego WCF usługi](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+ [Instrukcje: debugowanie hostowanej samodzielnie usługi WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
 
 
 

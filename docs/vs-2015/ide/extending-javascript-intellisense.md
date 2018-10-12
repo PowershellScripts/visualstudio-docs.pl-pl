@@ -1,7 +1,7 @@
 ---
 title: Rozszerzanie JavaScript IntelliSense | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 59189ae35ce43877e59309382dfd9cbf278ce8f0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881127"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214256"
 ---
 # <a name="extending-javascript-intellisense"></a>Rozszerzanie JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dokumentacja programu Visual Studio 2017](/visualstudio/).  
-  
 Funkcja rozszerzalność JavaScript IntelliSense umożliwia dostosowywanie wyników funkcji IntelliSense w edytorze języka JavaScript dla bibliotek innych firm. Może to poprawić środowisko deweloperów, którzy korzystają z tych bibliotek.  
   
  Usługa języka JavaScript zawiera funkcje IntelliSense dla bibliotek JavaScript innych firm, które są dodawane do projektu. Większość bibliotek uzupełnianie instrukcji jest dostarczony automatycznie przez usługę języka. Na poniższej ilustracji przedstawiono przykład uzupełnianie instrukcji:  

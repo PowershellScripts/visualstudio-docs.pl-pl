@@ -1,7 +1,7 @@
 ---
 title: Dane dokumentu i dokument widok w edytorach niestandardowych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6df543f832fa85ea6d74fc2846355fbf9deab912
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 258718a99e774b7098ff29dd66efc51a57062475
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631267"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206911"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dane dokumentu i widok dokumentu w edytorach niestandardowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dane dokumentu i Widok dokumentu w edytorach niestandardowych](https://docs.microsoft.com/visualstudio/extensibility/document-data-and-document-view-in-custom-editors).  
-  
 Niestandardowy edytor, który składa się z dwóch części: obiekt danych dokumentu i obiekt widoku dokumentu. Jak sugerują nazwy dokumentu obiekt danych reprezentuje dane tekstowe, które mają być wyświetlane, a obiekt widoku dokumentu (lub "view") — jednego lub kilku okien, w której chcesz wyświetlić obiekt danych dokumentu.  
   
 ## <a name="document-data-object"></a>Obiekt danych dokumentu  
@@ -54,5 +52,5 @@ Niestandardowy edytor, który składa się z dwóch części: obiekt danych doku
  [Zapisywanie standardowego dokumentu](../extensibility/internals/saving-a-standard-document.md)   
  [Trwałość i uruchamianie tabeli dokumentów](../extensibility/internals/persistence-and-the-running-document-table.md)   
  [Określanie który Edytor służy do otwierania pliku w projekcie](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)   
- [Fabryki edytora](../extensibility/editor-factories.md)
+ [Fabryki edytorów](../extensibility/editor-factories.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Lista rejestrów — polecenie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9ff1287bb4c92d074c0a0e123d48ddb7e61cc90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e52b7de812be9168c30093b16041db42ea4676b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694060"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195419"
 ---
 # <a name="list-registers-command"></a>Lista rejestrów — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [lista rejestrów — polecenie](https://docs.microsoft.com/visualstudio/ide/reference/list-registers-command).  
-  
   
 Wyświetla wartość wybranego rejestruje i pozwala zmodyfikować listę rejestrów, aby pokazać.  
   
@@ -75,7 +73,7 @@ r /Display Flags
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)   
  [Podstawy debugowania: Okno rejestrów](../../debugger/debugging-basics-registers-window.md)   
- [Porady: Korzystanie z okna rejestrów](../../debugger/how-to-use-the-registers-window.md)
+ [Instrukcje: korzystanie z okna rejestrów](../../debugger/how-to-use-the-registers-window.md)
 
 
 

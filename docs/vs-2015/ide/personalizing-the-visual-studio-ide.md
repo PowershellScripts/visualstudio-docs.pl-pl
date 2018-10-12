@@ -1,7 +1,7 @@
 ---
 title: Personalizowanie środowiska IDE programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24def685632c995f173ad1c0b50910ef36d484e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8729b9d2e532909a89e6293d48aefb21922fb4d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682128"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220001"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Personalizowanie środowiska IDE programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [personalizowanie środowiska IDE programu Visual Studio](https://docs.microsoft.com/visualstudio/ide/personalizing-the-visual-studio-ide).  
-  
 Ta sekcja opisuje sposób Personalizowanie programu Visual Studio na różne sposoby do najlepszej obsługi własne style rozwoju i wymagania. Można zdefiniować i zapisać wiele układów okna i przełączać się między nimi. Na przykład można zdefiniować układ kodowania i jeden dla debugowania. Można dostosować kolory, czcionki i formatowanie w edytorze kodu dla każdego języka. Możesz wybrać między motywy kolorów środowiska niebieski, ciemny lub światła, lub można utworzyć motywy dostosowane przez pobranie i zainstalowanie programu Visual Studio Edytor motywów z galerii Visual Studio Code. Inne opcje są również udostępniane za pośrednictwem [okno dialogowe opcji środowiska](../ide/reference/environment-options-dialog-box.md).  
   
  Wiele ustawień są przekazywane z Tobą między wystąpieniami programu Visual Studio. Zobacz [zsynchronizowane ustawienia](../ide/synchronized-settings-in-visual-studio.md) Aby uzyskać więcej informacji.  

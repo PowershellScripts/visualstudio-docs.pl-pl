@@ -1,7 +1,7 @@
 ---
 title: 'Diagramy warstw: Wytyczne dotyczące | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd0115021ba00d8e727f67260f5bcdb00464dd2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633916"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202582"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramy warstw: Zalecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [diagramy zależności: wskazówki dotyczące](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-guidelines).  
-  
 Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w programie Visual Studio. Upewnij się, że kod pozostaje zgodny z tym projektem, sprawdzanie poprawności kodu za pomocą diagramu warstwowego. Można także dodać sprawdzanie poprawności warstwy w procesie kompilacji. Zobacz [wideo Channel 9: projektowanie i Walidacja architektury za pomocą diagramów warstwowych](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -80,7 +78,7 @@ Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w pr
   
  Zobacz:  
   
--   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)  
+-   [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
   
 -   [Używanie map kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md)  
   
@@ -169,7 +167,7 @@ Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w pr
   
 ## <a name="see-also"></a>Zobacz też  
  [Diagramy warstw: odwołanie](../modeling/layer-diagrams-reference.md)   
- [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)
+ [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)
 
 
 

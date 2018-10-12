@@ -1,7 +1,7 @@
 ---
 title: Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c56b0b91301defaf08fb81c87e9eb070a9e5458
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688782"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214750"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](https://docs.microsoft.com/visualstudio/modeling/run-time-text-generation-with-t4-text-templates).  
-  
 Ciągi tekstowe można wygenerować w aplikacji w czasie wykonywania, za pomocą [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablony tekstowe czasu wykonywania. Komputer, na którym aplikacja wykonuje muszą mieć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Środowisko uruchomieniowe szablony są czasami nazywane "wstępnie przetworzonych szablonów tekstowych" ponieważ w czasie kompilacji, szablon generuje kod, który jest wykonywany w czasie wykonywania.  
   
  Każdy szablon jest kombinację tekstu, która będzie wyświetlana w wygenerowanym ciągu i fragmenty kodu programu. Fragmenty program Podaj wartości dla zmiennej części ciągu, a także kontrolować sposób Warunkowość oraz części.  

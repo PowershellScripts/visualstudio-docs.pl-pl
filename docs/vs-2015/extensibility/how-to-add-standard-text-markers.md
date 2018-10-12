@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Dodawanie znaczników standardowy tekst | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 41232fab8545fcd0ed65c039969e40b03e754d2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7deaccc41e506f2ad696fd3e2ec700fcd5367433
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683505"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217870"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Porady: Dodawanie znaczników standardowy tekst
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Dodawanie standardowych znaczników tekstu](https://docs.microsoft.com/visualstudio/extensibility/how-to-add-standard-text-markers).  
-  
 Poniższa procedura umożliwia utworzenie jednej z domyślnych typów znacznika tekstu, wyposażone w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytorze podstawowych funkcji.  
   
 ### <a name="to-create-a-text-marker"></a>Aby utworzyć znacznika tekstu  
@@ -59,5 +57,5 @@ Poniższa procedura umożliwia utworzenie jednej z domyślnych typów znacznika 
  [Znaczniki tekstu przy użyciu starszej wersji interfejsu API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Porady: Implementowanie znaczniki błędów](../extensibility/how-to-implement-error-markers.md)   
  [Porady: Tworzenie niestandardowego tekstu znaczników](../extensibility/how-to-create-custom-text-markers.md)   
- [Porady: Korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)
+ [Instrukcje: korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)
 

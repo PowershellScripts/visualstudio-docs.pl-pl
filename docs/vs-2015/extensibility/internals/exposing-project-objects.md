@@ -1,7 +1,7 @@
 ---
 title: Udostępnianie obiektów projektu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5514589660df1850dc2f5d9fce3079f6769ec06e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3cc9f3ffc7869506dc5ac46a715c9bd7b042a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628062"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210800"
 ---
 # <a name="exposing-project-objects"></a>Udostępnianie obiektów projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [udostępnianie obiektów projektu](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-project-objects).  
-  
 Typy projektów niestandardowych można podać obiektów automatyzacji, aby zezwolić na dostęp do projektu przy użyciu interfejsów automatyzacji. Każdy typ projektu powinien zapewniać standard <xref:EnvDTE.Project> obiektu automatyzacji, który jest dostępny z <xref:EnvDTE.Solution>, który zawiera zbiór wszystkich projektów, które są otwarte w środowisku IDE. Każdy element w projekcie powinien być udostępniane przez <xref:EnvDTE.ProjectItem> obiektu uzyskuje się z czasem <xref:EnvDTE.Project.ProjectItems>. Oprócz tych obiektów automatyzacji w wersji standard projektów można zaoferować obiektów automatyzacji specyficznych dla projektu.  
   
  Możesz utworzyć niestandardowe poziomu głównego obiektów automatyzacji, które mogą uzyskać dostęp z późnym wiązaniem z głównego DTE obiektu przy użyciu `DTE.<customeObjectName>` lub `DTE.GetObject(“<customObjectName>”)`. Na przykład Visual C++ Tworzy kolekcję projektu specyficznego dla projektu C++ o nazwie "VCProjects", której będziesz mieć dostęp, za pomocą obiektu DTE. VCProjects lub DTE. GetObject("VCProjects"). Można również utworzyć Project.Object, która jest unikatowa dla typu projektu Project.CodeModel, które mogą być wyszukiwane w jego najbardziej pochodnego obiektu ProjectItem, który uwidacznia ProjectItem.Object i ProjectItem.FileCodeModel.  

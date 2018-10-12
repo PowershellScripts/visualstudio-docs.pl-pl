@@ -1,7 +1,7 @@
 ---
 title: LINQ to SQL Tools w Visual Studio2 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19d9bccad36a186c93aeb8aef8e93b63320a00d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0ff09fea0f534343fcc5e896e082f550e6bcdcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630037"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195380"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL Tools w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [narzędzi LINQ to SQL w Visual Studio2](https://docs.microsoft.com/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
-  
   
 LINQ do SQL była pierwszym technologii mapowania obiektowo relacyjny, wydane przez firmę Microsoft. Działa dobrze w przypadku podstawowych scenariuszy i może być obsługiwany w programie Visual Studio, ale nie jest już opracowywane active. Użyj programu LINQ to SQL podczas obsługi starszych aplikacji, który już jest używany lub w prostej aplikacji, użyj programu SQL Server, które nie wymagają mapowania wielu tabel. Ogólnie rzecz biorąc nowe aplikacje powinny używać programu Entity Framework, gdy wymagana jest warstwa Mapowania obiektowo relacyjny.  
   
@@ -80,37 +78,37 @@ LINQ do SQL była pierwszym technologii mapowania obiektowo relacyjny, wydane pr
  [Dziedziczenie klas danych (O/R Designer)](../data-tools/data-class-inheritance-o-r-designer.md)  
  Omówienie pojęć dotyczących dziedziczenia pojedynczej tabeli i jak jest zaimplementowana w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
- [Porady: Tworzenie typu LINQ do klas SQL zamapowanych na tabele i widoki (O/R Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)  
+ [Instrukcje: tworzenie klas LINQ do SQL zamapowanych na tabele i widoki (O/R Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)  
  W tym artykule opisano sposób tworzenia klas jednostek, które są mapowane do tabel i widoków w bazie danych.  
   
- [Porady: Tworzenie skojarzenia (Relacja) między LINQ to SQL klas (Projektant O/R)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)  
+ [Instrukcje: tworzenie skojarzenia (relacji) między klasami LINQ do SQL (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)  
  W tym artykule opisano sposób tworzenia relacji między [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] klas jednostek.  
   
- [Porady: Tworzenie metod DataContext zamapowanych na procedury składowane i funkcje (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)  
+ [Instrukcje: tworzenie metod DataContext zamapowanych na procedury składowane i funkcje (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)  
  W tym artykule opisano sposób tworzenia <xref:System.Data.Linq.DataContext> metody, które Uruchom procedurami składowanymi i funkcjami, gdy zostaną wywołane.  
   
- [Porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
+ [Instrukcje: przypisywanie procedur składowanych na potrzeby wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
  W tym artykule opisano sposób konfigurowania <xref:System.Data.Linq.DataContext> do procedur składowanych zapisywania danych z obiektu klasy z powrotem do bazy danych.  
   
- [Porady: zmiana zwracanego typu metody DataContext (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)  
+ [Instrukcje: zmienianie zwracanego typu metody DataContext (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)  
  W tym artykule opisano sposób ustawiania zwracany typ <xref:System.Data.Linq.DataContext> metody na typ klasy jednostki lub typ wygenerowany automatycznie utworzone przez projektanta O/R.  
   
- [Porady: Dodawanie walidacji do klas jednostek](../data-tools/how-to-add-validation-to-entity-classes.md)  
+ [Instrukcje: dodawanie walidacji do klas jednostek](../data-tools/how-to-add-validation-to-entity-classes.md)  
  W tym artykule opisano sposób generowania metod częściowych, które umożliwiają dodawanie kodu podczas zmiany właściwości i aktualizacje klasy jednostka.  
   
- [Porady: Włączanie pluralizacja włączać i wyłączać (O/R Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)  
+ [Instrukcje: włączanie i wyłączanie pluralizacji (O/R Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md)  
  Opisano, jak włączyć i wyłączyć automatyczne zmienianie nazw klas, które są dodawane do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
- [Porady: Konfigurowanie dziedziczenia za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)  
+ [Instrukcje: konfigurowanie dziedziczenia za pomocą narzędzia Object Relational Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)  
  W tym artykule opisano sposób konfigurowania klas jednostek za pomocą dziedziczenia pojedynczej tabeli z [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
- [Porady: rozszerzanie kodu wygenerowanego przez Relational Designer](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)  
+ [Instrukcje: rozszerzanie kodu wygenerowanego przez narzędzie Object Relational Designer](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md)  
  Opisuje, jak i gdzie dodać kod, który nie zostanie nadpisany podczas zmiany obiektów w Projektancie obiektów relacyjnych ponownie wygenerować kod.  
   
- [Wskazówki: Tworzenie klasy LINQ do SQL za pomocą pojedynczej tabeli dziedziczenia (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)  
+ [Przewodnik: tworzenie klas LINQ do SQL za pomocą dziedziczenia pojedynczej tabeli (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)  
  Zawiera instrukcje krok po kroku dotyczące konfigurowania klas jednostek za pomocą dziedziczenia pojedynczej tabeli z [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
- [Wskazówki: Dostosowywanie wstawiania, aktualizowania i usuwania zachowanie klas jednostek](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)  
+ [Przewodnik: dostosowywanie zachowania wstawiania, aktualizacji i usuwania dla klas jednostek](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)  
  Zawiera instrukcje krok po kroku dotyczące konfigurowania <xref:System.Data.Linq.DataContext> do procedur składowanych zapisywania danych z obiektu klasy z powrotem do bazy danych.  
   
 ## <a name="reference-content"></a>Odwołania do zawartości  

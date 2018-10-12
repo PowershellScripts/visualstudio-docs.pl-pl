@@ -1,7 +1,7 @@
 ---
 title: 'Porady: tworzenie i edytowanie konfiguracji | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d6e253bebc5cd56690d8b8251ef7f4d1c4b1fcf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55d10e779ebd949f3f229e0abc4822b7a2da64e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682484"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195686"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Porady: tworzenie i edycja konfiguracji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: tworzenie i edytowanie konfiguracji](https://docs.microsoft.com/visualstudio/ide/how-to-create-and-edit-configurations).  
-  
 Można utworzyć kilka konfiguracji kompilacji dla rozwiązania. Na przykład można skonfigurować do kompilacji debugowanej, testerom służy do znajdowania i rozwiązywania problemów i można skonfigurować różne rodzaje kompilacji, które mogą być dystrybuowane do różnych klientów.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  

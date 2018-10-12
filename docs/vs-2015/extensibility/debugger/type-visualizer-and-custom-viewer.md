@@ -1,7 +1,7 @@
 ---
 title: Typ wizualizatora i Przeglądarka niestandardowa | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d347e7b18722aa8f8901abac3966150b3dca97cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d71aeac0c3cde321df4f77874a2d679162cf1d54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42672246"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201893"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Wizualizator typów i przeglądarka niestandardowa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Wizualizator typów i Przeglądarka niestandardowa](https://docs.microsoft.com/visualstudio/extensibility/debugger/type-visualizer-and-custom-viewer).  
-  
 Wizualizator typów jest składnikiem, który wyświetla część danych w bardzo specyficznym formacie. Ten format jest całkowicie maksymalnie implementujący wizualizatora, użytkownik końcowy lub dostawcą wizualizatorów innych firm.  
   
  Przeglądarka niestandardowa jest częścią ewaluatora wyrażeń niestandardowych, które wyświetla część danych w formacie bardzo szczegółowych. Ten format jest całkowicie maksymalnie implementujący niestandardowe podglądu, co oznacza, że format jest maksymalnie implementujący programu expression evaluator (EE).  

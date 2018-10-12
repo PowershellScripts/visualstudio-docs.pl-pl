@@ -1,7 +1,7 @@
 ---
 title: Ponowne formatowanie kodu w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b5361706e4dbb3c009de903a53cc78fcb7b93634
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 53cdbc963c7701d0073634ef133c2ef2d54fa9a4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681882"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211032"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Ponowne formatowanie kodu w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [ponowne formatowanie kodu w starszej wersji usługi językowej](https://docs.microsoft.com/visualstudio/extensibility/internals/reformatting-code-in-a-legacy-language-service).  
-  
 W [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] kod źródłowy może ponownie sformatowane, przez normalizowanie stosowania wcięć i białe znaki. Może to obejmować wstawiania lub usuwając spacje lub tabulatory na początku każdego wiersza, dodawanie nowych wierszy między liniami lub zastępowania miejsca do magazynowania za pomocą karty lub kart przy użyciu miejsc do magazynowania.  
   
 > [!NOTE]
@@ -187,5 +185,5 @@ namespace MyLanguagePackage
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Funkcje usługi starszego języka](../../extensibility/internals/legacy-language-service-features1.md)
+ [Funkcje starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-features1.md)
 

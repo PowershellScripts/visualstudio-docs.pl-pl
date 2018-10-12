@@ -1,7 +1,7 @@
 ---
 title: Compiland — | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e5f4d168c1b6f8a4719a14eac26f6d88df2e2f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34cb6f2c8660a6344ca906f036abd3292a69dda3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678204"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217168"
 ---
 # <a name="compiland"></a>Jednostka kompilacji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [compiland —](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/compiland).  
-  
 Istnieje `SymTagCompiland` symboli dla każdego compiland — połączone z pliku .exe. Compiland — informacje jest podzielony między symboli z `SymTagCompiland` znacznik, który można pobrać bez dodatkowych compiland — symbole, oraz symboli z `SymTagCompilandDetails` znaczników, które mogą wymagać dodatkowych symbole.  
   
 ## <a name="properties"></a>Właściwości  

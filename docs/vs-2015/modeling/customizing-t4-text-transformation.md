@@ -1,7 +1,7 @@
 ---
 title: Dopasowanie przekształcenia tekstu T4 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e304b38979b80c1d67d3f88accdbfa584406c9cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc44c1de2e0a590b73916a8496a7fe5cae7cb07e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684765"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200242"
 ---
 # <a name="customizing-t4-text-transformation"></a>Dopasowanie przekształcenia tekstu T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dostosowywanie przekształcenia tekstu T4](https://docs.microsoft.com/visualstudio/modeling/customizing-t4-text-transformation).  
-  
 Szablony tekstowe są funkcją [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] umożliwiającą generować kod programu lub innych plików tekstowych, proces przekształcenia. Za pomocą [!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)], można rozszerzyć proces przekształcania szablonu domyślnego, dostosowując procesora dyrektywy szablonu tekstu lub hosta szablonu tekstu.  
   
 ## <a name="in-this-section"></a>W tej sekcji  

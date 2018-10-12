@@ -1,7 +1,7 @@
 ---
 title: Wybierz zestaw reguł, okno dialogowe (starsza wersja) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 170a7467be4f1fb3bfdc3f3696c654717131a3d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c53aefdf17e11974e5ef563cd3684e80722837c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682804"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195991"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Wybieranie zestawu reguł, okno dialogowe (starsza wersja)
 W tym temacie opisano sposób użycia **wybierz zestaw reguł** okno dialogowe w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -35,7 +35,7 @@ W tym temacie opisano sposób użycia **wybierz zestaw reguł** okno dialogowe w
 |**Nowy...**|Kliknij, aby otworzyć [reguły Ustaw edytora okno dialogowe (starsza wersja)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) Aby utworzyć nowy warunek reguły.|  
 |**Edytuj...**|Kliknij, aby otworzyć [reguły Ustaw edytora okno dialogowe (starsza wersja)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) edytować warunku wybranej reguły.|  
 |**Zmień nazwę...**|Kliknij, aby otworzyć okno dialogowe pozwala zmienić nazwę wybranego zestawu reguł.|  
-|**Usuwanie**|Kliknij, aby usunąć zestaw reguł.|  
+|**Delete**|Kliknij, aby usunąć zestaw reguł.|  
 |**Podgląd zestawu reguł**|Wyświetlane są reguły w zestawie wybranej reguły.|  
 |**OK**|Kliknij, aby przypisać wybraną regułę równa **działania PolicyActivity** działania.|  
   

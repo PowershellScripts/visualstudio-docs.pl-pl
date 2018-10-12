@@ -1,7 +1,7 @@
 ---
 title: 'Diagramy klas UML: Odwołanie | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 239b5427c4e19b15e44d683def0e2d6c82dccdfe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 890c69a4cde928e645dd2ede9fbbb27f66a44794
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679887"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220132"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagramy klas UML: Odwołanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [diagramów klas UML: odwołanie](https://docs.microsoft.com/visualstudio/modeling/uml-class-diagrams-reference).  
-  
 Diagram klas UML w tym artykule opisano obiektu i informacje struktury używane przez aplikację, zarówno wewnętrznie, jak i komunikuje się z jej użytkowników. Opisano w nim informacji bez odwołania do konkretnej implementacji. Jego klas i relacji można zaimplementować na wiele sposobów, np. tabele bazy danych, węzłów XML lub kompozycje obiektów oprogramowania.  
   
 > [!NOTE]
@@ -51,13 +49,13 @@ Diagram klas UML w tym artykule opisano obiektu i informacje struktury używane 
 ## <a name="reading-class-diagrams"></a>Odczytywanie diagramów klas  
  W tabeli w tej sekcji opisano elementy, które są widoczne na diagramie klas UML. Aby uzyskać informacji na temat właściwości tych elementów zobacz następujące tematy:  
   
--   [Właściwości typów w diagramach przypadków UML](../modeling/properties-of-types-on-uml-class-diagrams.md)  
+-   [Właściwości typów w diagramach klas UML](../modeling/properties-of-types-on-uml-class-diagrams.md)  
   
--   [Właściwości atrybutów w diagramach przypadków UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+-   [Właściwości atrybutów w diagramach klas UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Właściwości operacji w diagramach przypadków UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+-   [Właściwości operacji w diagramach klas UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [Właściwości skojarzeń w diagramach przypadków UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+-   [Właściwości skojarzeń w diagramach klas UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
  ![Trzy klasy, właściwości i relacje przedstawiający](../modeling/media/uml-classovreading.png "UML_ClassOvReading")  
   
@@ -99,7 +97,7 @@ Diagram klas UML w tym artykule opisano obiektu i informacje struktury używane 
  [Właściwości typów w diagramach przypadków UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Właściwości atrybutów w diagramach przypadków UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Właściwości operacji w diagramach przypadków UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [Właściwości skojarzeń w diagramach przypadków UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)
+ [Właściwości skojarzeń w diagramach klas UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)
 
 
 

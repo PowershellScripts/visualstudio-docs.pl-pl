@@ -1,7 +1,7 @@
 ---
 title: Przełączniki wiersza polecenia Devenv | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 459ab16b30882feb3d167d7668ffd660e6490cf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ee1596cf59fb4ba9b21772cdabc0c875ef8779a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689072"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215037"
 ---
 # <a name="devenv-command-line-switches"></a>Przełączniki wiersza polecenia Devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [przełączników wiersza polecenia Devenv](https://docs.microsoft.com/visualstudio/ide/reference/devenv-command-line-switches).  
-  
   
 Devenv pozwala ustawić różne opcje zintegrowanego środowiska programistycznego (IDE) i również tworzenia, debugowania i wdrażania projektów, w wierszu polecenia. Używaj tych przełączników, aby uruchomić środowisko IDE z skrypt lub plik .bat, na przykład skrypt nocna kompilacja, lub aby uruchomić środowisko IDE w określonej konfiguracji.  
   
@@ -99,7 +97,7 @@ Devenv pozwala ustawić różne opcje zintegrowanego środowiska programistyczne
 |[/ Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)|Tworzy określonego rozwiązania lub projektu, zgodnie z konfiguracją określonego rozwiązania.<br /><br /> **/ Build myproj.csproj Devenv**|  
 |[/ Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)|Usuwa wszystkie pliki utworzone za pomocą polecenia kompilacji, bez wywierania wpływu na pliki źródłowe.<br /><br /> **Devenv myproj.csproj / clean**|  
 |[/ Wdrażanie (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)|Kompiluje rozwiązanie, wraz z plikami niezbędne do wdrożenia, zgodnie z konfiguracją rozwiązania.<br /><br /> **Devenv myproj.csproj / deploy**|  
-|[/ Diff](../../ide/reference/diff.md)|Porównuje dwa pliki.  Przyjmuje cztery parametry: SourceFile, TargetFile, SourceDisplayName(optional),TargetDisplayName(optional).|  
+|[/Diff](../../ide/reference/diff.md)|Porównuje dwa pliki.  Przyjmuje cztery parametry: SourceFile, TargetFile, SourceDisplayName(optional),TargetDisplayName(optional).|  
 |[/ InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md)|Rejestruje szablony projektu lub elementu, które znajdują się w  *\<VisualStudioInstallDir >* \Common7\IDE\ProjectTemplates lub  *\<VisualStudioInstallDir >* \Common7 \IDE\ItemTemplates, dzięki czemu są one dostępne za pośrednictwem **nowy projekt** i **Dodaj nowy element** okien dialogowych.<br /><br /> **/ Installvstemplates Devenv**|  
 |[/ Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)|Pozwala określić plik, aby otrzymywać komunikaty o błędach podczas kompilacji.<br /><br /> **/ Build myproj.csproj Devenv/out log.txt**|  
 |[/ Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)|Projekt do kompilacji, czyszczenia lub wdrożenia. Można użyć tego przełącznika, tylko wtedy, gdy podano również/Build, / rebuild, / clean, lub / deploy — przełącznik.|  
@@ -110,7 +108,7 @@ Devenv pozwala ustawić różne opcje zintegrowanego środowiska programistyczne
 |[/ Upgrade (devenv.exe)](../../ide/reference/upgrade-devenv-exe.md)|Uaktualnienie do bieżącego pliku określonego rozwiązania i wszystkie jego pliki projektu lub pliku określonego projektu, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] formatów tych plików.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ogólne, środowisko, okno dialogowe Opcje](../../ide/reference/general-environment-options-dialog-box.md)
+ [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
 
 
 

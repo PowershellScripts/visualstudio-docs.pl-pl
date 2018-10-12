@@ -1,7 +1,7 @@
 ---
 title: Just-In-Time, debugowanie, okno dialogowe Opcje | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8675bc383a492f4d7ca762fa052a0e6174fe01bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5522c9da025b76a3892d3923cdd7397b8ed5ce5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678575"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207496"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Just-in-time, debugowanie, opcje ― Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Just-In-Time, debugowanie, okno dialogowe Opcje](https://docs.microsoft.com/visualstudio/debugger/just-in-time-debugging-options-dialog-box).  
-  
 Aby uzyskać dostęp do **Just-In-Time** strony, przejdź do **narzędzia** menu i kliknij przycisk **opcje**. W **opcje** okna dialogowego rozwiń **debugowanie** a następnie wybierz węzeł **Just-In-Time**. Ta strona umożliwia włączenie debugowania dla kodu zarządzanego, natywnego kodu i skryptów Just-In-Time. Aby uzyskać więcej informacji, zobacz [debugowanie just in Time](../debugger/just-in-time-debugging-in-visual-studio.md).  
   
  Aby umożliwić debugowanie dla tych typów programów Just-In-Time:  
@@ -70,7 +68,7 @@ Aby uzyskać dostęp do **Just-In-Time** strony, przejdź do **narzędzia** menu
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie, opcje ― Okno dialogowe](../debugger/debugging-options-dialog-box.md)   
- [Porady: Określanie ustawień debugera](../debugger/how-to-specify-debugger-settings.md)
+ [Instrukcje: określanie ustawień debugera](../debugger/how-to-specify-debugger-settings.md)
 
 
 

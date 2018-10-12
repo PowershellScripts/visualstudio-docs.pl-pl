@@ -1,7 +1,7 @@
 ---
 title: IDebugProperty2 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c728c2e4955d35e2954fbda0a4a4432c550666d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63b39e45d73be47538263b7e7cd5ce1e12769f95
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684713"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215647"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [IDebugProperty2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugproperty2).  
-  
 Ten interfejs reprezentuje właściwości ramki stosu, właściwości dokumentu programu lub niektóre inne właściwości. Właściwość jest zazwyczaj wynikiem oceny wyrażenia.  
   
 > [!NOTE]
@@ -63,12 +61,12 @@ IDebugProperty2 : IUnknown
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)|Ustawia wartości właściwości z ciągu.|  
 |[SetValueAsReference](../../../extensibility/debugger/reference/idebugproperty2-setvalueasreference.md)|Ustawia wartość właściwości z wartości danego odwołania.|  
 |[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)|Wylicza element podrzędny elementu właściwości.|  
-|[Getparent —](../../../extensibility/debugger/reference/idebugproperty2-getparent.md)|Zwraca element nadrzędny właściwości.|  
+|[GetParent](../../../extensibility/debugger/reference/idebugproperty2-getparent.md)|Zwraca element nadrzędny właściwości.|  
 |[GetDerivedMostProperty](../../../extensibility/debugger/reference/idebugproperty2-getderivedmostproperty.md)|Zwraca właściwość, która opisuje właściwość najbardziej pochodnego właściwości.|  
 |[GetMemoryBytes](../../../extensibility/debugger/reference/idebugproperty2-getmemorybytes.md)|Zwraca wartość bajty pamięci, wchodzących w skład wartości właściwości.|  
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)|Zwraca kontekst pamięci dla wartości właściwości.|  
 |[GetSize](../../../extensibility/debugger/reference/idebugproperty2-getsize.md)|Zwraca rozmiar w bajtach, wartość właściwości.|  
-|[Getreference —](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|Zwraca odwołanie do wartości tej właściwości.|  
+|[GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)|Zwraca odwołanie do wartości tej właściwości.|  
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)|Zwraca informacje rozszerzone właściwości.|  
   
 ## <a name="remarks"></a>Uwagi  

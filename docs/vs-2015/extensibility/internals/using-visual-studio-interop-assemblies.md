@@ -1,7 +1,7 @@
 ---
 title: Przy użyciu zestawów międzyoperacyjnych programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 942db931178cedba21468f42e7412ba3e93a1aa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38d33733c9ab2c9b3a1b0eb44fad30b46ae3c029
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195631"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Korzystanie z zestawów międzyoperacyjnych programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [przy użyciu programu Visual Studio Interop zestawy](https://docs.microsoft.com/visualstudio/extensibility/internals/using-visual-studio-interop-assemblies).  
-  
 Visual Studio, zestawy międzyoperacyjne Zezwalaj na dostęp do interfejsów COM, które przewiduje rozszerzalności programu Visual Studio zarządzanych aplikacji. Istnieją pewne różnice między proste interfejsy COM i ich wersje międzyoperacyjnego. Na przykład wartości HRESULT zazwyczaj są reprezentowane jako wartości int i muszą być obsługiwani w taki sam sposób jak wyjątki i parametry (szczególnie parametrów out) są traktowane inaczej.  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Obsługa wartości HRESULT zwracane do kodu zarządzanego z modelu COM  

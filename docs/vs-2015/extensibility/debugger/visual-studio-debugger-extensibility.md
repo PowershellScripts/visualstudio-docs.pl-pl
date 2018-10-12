@@ -1,7 +1,7 @@
 ---
 title: Rozszerzalność debugera programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4c3a9644e7150ea31cca2aba927bbdbacb8b0eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca40964befc940bd0cf28457755f5f338ea36579
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680188"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212618"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Rozszerzalność debugera programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [rozszerzeń debugera programu Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/debugger/visual-studio-debugger-extensibility).  
-  
 Visual Studio zawiera debuger kodu źródłowego w pełni interaktywne, udostępnieniem zaawansowane i łatwe w użyciu narzędzia do śledzenia szczegółów błędów w programie. Debuger ma pełną obsługę języka Visual Basic, C#, C/C++ i JavaScript. Jednak w przypadku [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], która jest dostępna z [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453),, innych języków programowania może być obsługiwany w debugerze przy użyciu tych samych funkcji zaawansowanych.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debuger jest wspólne frontonu (czyli interfejs użytkownika) do debugowania składników, które są kolei specyficznych dla języka debugowany. Dla nowych języków, wszystkie, które jest niezbędne do obsługi przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugera jest utworzenie niezbędnych składników zaplecza, takich jak aparat debugowania (DE). To tutaj [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] pochodzą.  

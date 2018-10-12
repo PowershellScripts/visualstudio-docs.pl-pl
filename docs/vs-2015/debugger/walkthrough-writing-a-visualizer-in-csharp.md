@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Pisanie wizualizatora w języku C# | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 871856c38b40d38892b6236fa02b63f47b62d112
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd8c12e415b37f04635327d195ef0f96649a2894
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685931"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199189"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Wskazówki: Pisanie wizualizatora w C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: pisanie wizualizatora w języku C#](https://docs.microsoft.com/visualstudio/debugger/walkthrough-writing-a-visualizer-in-csharp).  
-  
 W tym instruktażu pokazano, jak pisanie prostego wizualizatora przy użyciu języka C#. Wizualizator, która zostanie utworzona w tym przewodniku Wyświetla zawartość ciągu przy użyciu okna komunikatu Windows forms. Ten Wizualizator prostego ciągu nie jest szczególnie przydatne w sobie, ale pokazuje podstawowe kroki, które należy wykonać, aby utworzyć bardziej użyteczny, wizualizatorów dla innych typów danych.  
   
 > [!NOTE]
@@ -267,7 +265,7 @@ W tym instruktażu pokazano, jak pisanie prostego wizualizatora przy użyciu ję
 ## <a name="see-also"></a>Zobacz też  
  [Architektura wizualizatora](../debugger/visualizer-architecture.md)   
  [Porady: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)   
- [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
+ [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
 
 
 

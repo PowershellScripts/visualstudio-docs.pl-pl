@@ -1,7 +1,7 @@
 ---
 title: Dostosowywanie zachowania dotyczącego usuwania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9d3be15009964272eb06118a0b9c01ec012164bc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 69774b098e76bb14ed11be092ae7ebedb71c218a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775834"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202764"
 ---
 # <a name="customizing-deletion-behavior"></a>Dostosowywanie zachowania dotyczącego usuwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dostosowywanie zachowania dotyczącego usuwania](https://docs.microsoft.com/visualstudio/modeling/customizing-deletion-behavior).  
-  
 Usuwanie elementu zwykle powoduje, że powiązanych elementów można również usunąć. Wszystkie relacje dołączone do niego, a wszystkie elementy podrzędne są usuwane. To zachowanie jest o nazwie *Usuń propagacji*. Można dostosować propagacji delete, na przykład aby rozmieścić, że dodatkowe powiązane elementy zostaną usunięte. Pisząc kod programu, można wprowadzić propagacji delete zależą od stanu modelu. Może również spowodować inne zmiany w odpowiedzi na usunięcie.  
   
  Ten temat zawiera następujące sekcje:  

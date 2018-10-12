@@ -1,7 +1,7 @@
 ---
 title: Pobieranie z wyprzedzeniem zawartości aplikacji Windows Store apps | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc1b01e0cd841c6239a7f2ef76f964482348ee16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9329cad2f0125288aeea146070188d023d1a126
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682816"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211449"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>Zawartość pobrana z wyprzedzeniem dla aplikacji Sklepu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [pobieranie z wyprzedzeniem zawartości aplikacji Windows Store](https://docs.microsoft.com/visualstudio/debugger/prefetch-content-for-windows-store-apps).  
-  
 Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content")  
   
  Aby zapewnić zwiększyć szybkość reakcji aplikacji Windows Store, możesz poprosić o Windows do wstępnego ładowania niektórych zawartości sieci web, takich jak strony sieci web lub obrazów do aplikacji [WinINet](http://msdn.microsoft.com/en-us/0a06f2af-957a-4dff-a8cc-187370181b5c)[WinINet](http://msdn.microsoft.com/library/aa383630.aspx)pamięci podręcznej. Ta funkcja jest wywoływana, trwa pobieranie z wyprzedzeniem. Jest szczególnie efektywna, dla zawartości, która jest używana podczas uruchamiania, ale użytkownik może zawartość pobrana z wyprzedzeniem inne często używane, za. Metody [Windows.Networking.BackgroundTransfer.ContentPrefetcher](http://msdn.microsoft.com/library/windows/apps/windows.networking.backgroundtransfer.contentprefetcher.aspx) klasy umożliwiają określenie identyfikatorów URI zawartości, którą chcesz wstępnego ładowania. Zobacz zestaw SDK Windows [przykładowej zawartości pobierania z wyprzedzeniem](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309) przykładów dotyczących sposobów dodać funkcje ContentPrefetcher do aplikacji.  

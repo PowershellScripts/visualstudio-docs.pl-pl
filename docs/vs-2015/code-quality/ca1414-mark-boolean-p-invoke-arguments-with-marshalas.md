@@ -1,7 +1,7 @@
 ---
 title: 'CA1414: Oznacz logiczne argumenty P-Invoke za pomocą atrybutu MarshalAs | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5753affc1f635e322d17ea10617297d3ec71077a
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 48dde74f2b6bf142d0bc173dbb34dd0c82c3d53d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902026"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200060"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Oznacz logiczne argumenty P/Invoke za pomocą MarshalAs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [CA1414: Oznacz logiczne argumenty P-Invoke za pomocą atrybutu MarshalAs](https://docs.microsoft.com/visualstudio/code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas).
-
 |||
 |-|-|
 |TypeName|MarkBooleanPInvokeArgumentsWithMarshalAs|
@@ -63,7 +60,7 @@ Najnowszą wersję tego tematu znajduje się w temacie [CA1414: Oznacz logiczne 
 ## <a name="related-rules"></a>Powiązane reguły
  [CA1901: Deklaracje P/Invoke powinny być przenośne](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)
 
- [CA2101: Określ marshaling dla argumentów ciągu P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: Określ marshaling dla argumentów ciągu wywołania P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
 ## <a name="see-also"></a>Zobacz też
  <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [Organizowanie domyślne dotyczące typów logicznych](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9) [współdziałanie z niezarządzanego kodu](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

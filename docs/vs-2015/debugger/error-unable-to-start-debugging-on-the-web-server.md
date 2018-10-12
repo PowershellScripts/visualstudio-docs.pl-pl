@@ -1,7 +1,7 @@
 ---
 title: 'Błąd: Nie można rozpocząć debugowania na serwerze sieci Web | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -33,18 +33,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 410b180d7b533c925aa183d01bd8f64463225629
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ccfce76d1cedacecdc467971151a6f9a66d5af68
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679260"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217883"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Błąd: Nie można rozpocząć debugowania na serwerze sieci Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [błąd: nie można rozpocząć debugowania na serwerze sieci Web](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-start-debugging-on-the-web-server).  
-  
 Podczas debugowania aplikacji ASP.NET uruchomionych na serwerze sieci Web, może wystąpić ten komunikat o błędzie: nie można rozpocząć debugowania na serwerze sieci Web.
   
 W wielu przypadkach ten błąd występuje, ponieważ usługi IIS nie jest poprawnie skonfigurowany.
@@ -98,7 +96,7 @@ Jeśli używasz starszej wersji programu Visual Studio:
    
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie aplikacji sieci Web: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
 
 

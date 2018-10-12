@@ -1,7 +1,7 @@
 ---
 title: Rozwiązania i projekty w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -55,18 +55,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7223acc3612d12fc5589e46b06b9fa76b5ecf002
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e5996d07a3186c1881e4fc44b3b1622a9ab221f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682696"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211149"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Rozwiązania i projekty w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [rozwiązań i projektów w programie Visual Studio](https://docs.microsoft.com/visualstudio/ide/solutions-and-projects-in-visual-studio).  
-  
 Podczas tworzenia aplikacji, aplikacji, witryny sieci Web, aplikacji sieci Web skrypt wtyczki itp w programie Visual Studio, możesz zaczynać *projektu*. W sensie logicznym projekt zawiera wszystkich plikach kodu źródłowego, ikony, obrazy, pliki danych i dowolne inne zostanie skompilowany w program wykonywalny lub witryny sieci web; w przeciwnym razie jest wymagane w celu wykonywania kompilacji.  Projekt zawiera również wszystkie ustawienia kompilatora i inne pliki konfiguracyjne, które mogą być wymagane przez różnych dostawców usług ani składników, które program będzie komunikować się z.  
   
  W tym sensie literału projektu to plik XML (*.vbproj, \*.csproj, \*.vcxproj) definiujący hierarchii folder wirtualny, wraz ze ścieżkami do wszystkich elementów "zawiera" i wszystkich ustawień kompilacji. W programie Visual Studio plik projektu jest używany przez Eksploratora rozwiązań do wyświetlania zawartości projektu i ustawień. Podczas kompilowania projektu aparat MSBuild używa pliku projektu, aby utworzyć plik wykonywalny. Można również dostosować projekty do produktu inne rodzaje danych wyjściowych.  

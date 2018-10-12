@@ -1,7 +1,7 @@
 ---
 title: IDebugProcess2 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cfb5a4fbd1c1e3b164b3e690da07136099711607
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5d1fcdb6df958a62ed23b3bc7e812e1f4a7e15f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684009"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218780"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [IDebugProcess2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocess2).  
-  
 Ten interfejs reprezentuje proces uruchomiony na porcie. Jeśli port lokalny port, następnie `IDebugProcess2` zazwyczaj reprezentuje fizyczny proces na komputerze lokalnym.  
   
 ## <a name="syntax"></a>Składnia  
@@ -54,16 +52,16 @@ IDebugProcess2 : IUnknown
 |------------|-----------------|  
 |[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)|Pobiera opis procesu.|  
 |[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)|Wylicza programy, które są zawarte w ramach tego procesu.|  
-|[Getname —](../../../extensibility/debugger/reference/idebugprocess2-getname.md)|Pobiera tytuł, przyjazną nazwę lub nazwę procesu.|  
+|[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)|Pobiera tytuł, przyjazną nazwę lub nazwę procesu.|  
 |[GetServer](../../../extensibility/debugger/reference/idebugprocess2-getserver.md)|Pobiera wystąpienie serwera maszyny, na którym ten proces jest uruchomiony na.|  
-|[Zakończenie](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)|Kończy proces.|  
+|[Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)|Kończy proces.|  
 |[Attach](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|Dołącza do procesu.|  
 |[CanDetach](../../../extensibility/debugger/reference/idebugprocess2-candetach.md)|Określa, jeśli model SDM można odłączyć procesu.|  
 |[Detach](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Odłącza debuger z procesu.|  
 |[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|Pobiera identyfikator procesu systemu.|  
-|[Getprocessid —](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Pobiera unikatowy identyfikator globalny dla tego procesu.|  
+|[GetProcessId](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Pobiera unikatowy identyfikator globalny dla tego procesu.|  
 |[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [PRZESTARZAŁE]|Pobiera nazwę sesji, która jest debugowanie procesu.<br /><br /> [PRZESTARZAŁE. NALEŻY ZAWSZE ZWRÓCENIA `E_NOTIMPL`.]|  
-|[Enumthreads —](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)|Wylicza wątków, uruchomiony w procesie.|  
+|[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)|Wylicza wątków, uruchomiony w procesie.|  
 |[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|Żądania wysyłane przez następnego programu Uruchamianie kodu w tym zatrzymania procesu.|  
 |[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|Pobiera portu, którego ten proces.|  
   

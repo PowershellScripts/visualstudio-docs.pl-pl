@@ -1,7 +1,7 @@
 ---
 title: 'CA3075: Niezabezpieczone przetwarzanie definicji DTD | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,18 +13,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7c8a7fefe3b39c68040101e73ec678d92a81a875
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b201631d86d0fd36a0f35d2842400473abf5fc3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900564"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201581"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Niezabezpieczone przetwarzanie definicji DTD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [CA3075: niezabezpieczone przetwarzanie definicji DTD](https://docs.microsoft.com/visualstudio/code-quality/ca3075-insecure-dtd-processing).
-
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|

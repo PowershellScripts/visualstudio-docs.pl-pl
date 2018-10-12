@@ -1,7 +1,7 @@
 ---
 title: Widok danych metody Instrumentacji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab3337e018a173eb4bf8633d7aa5913bb3d88e63
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 17e4d588f2c19aa74c9741d69ee8a3c1022c677c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677966"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220431"
 ---
 # <a name="instrumentation-method-data-views"></a>Widok danych metody instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [widok danych metody Instrumentacji](https://docs.microsoft.com/visualstudio/profiling/instrumentation-method-data-views).  
-  
 Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody instrumentacji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
@@ -58,14 +56,14 @@ Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plikó
  [Widok danych metody próbkowania](../profiling/profiler-sampling-method-data-views.md)  
  Informacje o odwołaniach dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody pobierania próbek.  
   
- [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)  
+ [Widoki danych pamięci platformy .NET](../profiling/dotnet-memory-data-views.md)  
  Informacje o odwołaniach dotyczące widoków i raportów plików danych profilera, które zawierają dane pamięci platformy .NET.  
   
  [Widoki danych rywalizacji o zasoby](../profiling/resource-contention-data-views.md)  
  Informacje o odwołaniach dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody rywalizacji wątków.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zapoznanie z wartościami danych Instrumentacji](../profiling/understanding-instrumentation-data-values.md)
+ [Zapoznanie z wartościami danych instrumentacji](../profiling/understanding-instrumentation-data-values.md)
 
 
 

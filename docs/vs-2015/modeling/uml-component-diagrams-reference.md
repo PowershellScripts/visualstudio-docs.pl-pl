@@ -1,7 +1,7 @@
 ---
 title: 'Diagramy składników UML: Odwołanie | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 38
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f628ebfa84246c6d991543352f4de36a51cc7fbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b99188aa069a830d17e31733ad20b0ae727d63f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685543"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206744"
 ---
 # <a name="uml-component-diagrams-reference"></a>Diagramy składników UML: Odwołanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [diagramy składników UML: odwołanie](https://docs.microsoft.com/visualstudio/modeling/uml-component-diagrams-reference).  
-  
 W programie Visual Studio *diagram składników* pokazuje części projektu dla systemu oprogramowania. Diagram składników pomaga wizualizować strukturę wysokiego poziomu systemu i zachowanie usługi, które te elementy zapewniają i wykorzystują za pośrednictwem interfejsów. Aby utworzyć diagram składników UML na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**.  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -70,7 +68,7 @@ W programie Visual Studio *diagram składników* pokazuje części projektu dla 
  [Diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
  [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)   
  [Diagramy aktywności UML: odwołanie](../modeling/uml-activity-diagrams-reference.md)   
- [Diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md)
+ [Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)
 
 
 

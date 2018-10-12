@@ -1,7 +1,7 @@
 ---
 title: Programowanie za pomocą interfejsu API UML | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,32 +15,30 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aff07c444b6dac85144b06c0430ad1d9a2a497c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7e7fe3a58b1e21b116b3afcfff022cf19ba9af1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681273"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206303"
 ---
 # <a name="programming-with-the-uml-api"></a>Programowanie za pomocą API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Programowanie przy użyciu interfejsu API UML](https://docs.microsoft.com/visualstudio/modeling/programming-with-the-uml-api).  
-  
 UML interfejsu API programu Visual Studio pozwala napisać kod, aby utworzyć, odczytać i aktualizować modele UML i diagramy. Aby dowiedzieć się, które wersje programu Visual Studio obsługują modeli UML, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Oprócz stron referencyjnych interfejsu API w poniższych tematach opisano interfejs API.  
   
 |Temat|Przykład typów i metod opisanych|Opisane funkcje|  
 |-----------|-----------------------------------------|------------------------|  
-|[Nawigowanie po relacjach z UML API](../modeling/navigate-relationships-with-the-uml-api.md)|Elementy UML i ich właściwości i skojarzenia. Na przykład, IElement i jego elementy potomne, w tym: IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage|W programie Visual Studio, modele UML odpowiadają specyfikacji UML wersji 2.1.2, którą można uzyskać w [stronie zasobów UML](http://go.microsoft.com/fwlink/?LinkId=160796). Każdy typ jest interfejsem, który ma taką samą nazwę jak typ UML, poprzedzoną przedrostkiem "I".|  
+|[Nawigowanie po relacjach za pomocą interfejsu API UML](../modeling/navigate-relationships-with-the-uml-api.md)|Elementy UML i ich właściwości i skojarzenia. Na przykład, IElement i jego elementy potomne, w tym: IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage|W programie Visual Studio, modele UML odpowiadają specyfikacji UML wersji 2.1.2, którą można uzyskać w [stronie zasobów UML](http://go.microsoft.com/fwlink/?LinkId=160796). Każdy typ jest interfejsem, który ma taką samą nazwę jak typ UML, poprzedzoną przedrostkiem "I".|  
 |[Tworzenie elementów i relacji w modelach UML](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|Każdy typ elementu posiada metody tworzenia jego obiektów podrzędnych.|  
 |[Wyświetlanie modelu UML na diagramach](../modeling/display-a-uml-model-on-diagrams.md)|IShape, IDiagram<br /><br /> IShape.Move()|Każdy element w modelu może być reprezentowany jako kształt na diagramie. W niektórych przypadkach można utworzyć nowe kształty dla każdego obiektu. Można przenieść, zmienić rozmiar, kolor i zwinąć lub rozwinąć te kształty.|  
 |[Nawigowanie po modelu UML](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|Store modeli przechowuje model.<br /><br /> Kontekst Diagram daje dostęp do bieżącego diagramu i sklepu.|  
 |[Łączenie aktualizacji modelu UML za pomocą transakcji](../modeling/link-uml-model-updates-by-using-transactions.md)|ILinkedUndoContext|Można połączyć szereg zmian do jednej transakcji.|  
-|[Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|IMenuCommand<br /><br /> IGestureExtension<br /><br /> ICommandExtension|Możesz rozszerzyć funkcjonalność diagramu przez definiowanie polecenia wywoływanego przez dwukrotne kliknięcie i przeciągnięcie go na diagramie.|  
+|[Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|IMenuCommand<br /><br /> IGestureExtension<br /><br /> ICommandExtension|Możesz rozszerzyć funkcjonalność diagramu przez definiowanie polecenia wywoływanego przez dwukrotne kliknięcie i przeciągnięcie go na diagramie.|  
 |[Definiowanie ograniczeń walidacji dla modeli UML](../modeling/define-validation-constraints-for-uml-models.md)|ValidationContext|Można zdefiniować reguły, które ułatwiają upewnij się, że wzór spełnia określone ograniczenia sprawdzania.|  
-|[Pobieranie elementów modelu UML z IDataObject](../modeling/get-uml-model-elements-from-idataobject.md)|IElement, IShape|Gdy element zostanie przeciągnięty z Eksploratora modelu UML lub diagramu UML do innego diagramu lub aplikacji, jest serializowany jako IDataObject.|  
+|[Pobieranie elementów modelu UML z elementu IDataObject](../modeling/get-uml-model-elements-from-idataobject.md)|IElement, IShape|Gdy element zostanie przeciągnięty z Eksploratora modelu UML lub diagramu UML do innego diagramu lub aplikacji, jest serializowany jako IDataObject.|  
 |[Edytowanie diagramów sekwencji UML przy użyciu interfejsu API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)|IMessage IInteraction, ILifeline,|Tworzenie i aktualizowanie diagramu interakcji jest nieco różne od pracy z innymi typami diagramów.|  
 |[Rozszerzone diagramy warstw](../modeling/extend-layer-diagrams.md)|ILayer, ILayerDiagram|Można napisać kod, aby tworzyć i edytować warstwę diagramu i zweryfikować kod programu przed nimi.|  
   
@@ -75,7 +73,7 @@ UML interfejsu API programu Visual Studio pozwala napisać kod, aby utworzyć, o
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie modeli i diagramów UML](../modeling/extend-uml-models-and-diagrams.md)   
- [Dokumentacja interfejsu API dla rozszerzalności modelowania UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
+ [Wykaz interfejsów API dla rozszerzalności modelowania UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
 
 
 

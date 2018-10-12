@@ -1,7 +1,7 @@
 ---
 title: Widok okresu istnienia obiektów | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3aaff07ecc6732403ef1d611cb23129207a27351
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a503a0de6a8b9935fbfb6b7e415d79cb0520f67d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202855"
 ---
 # <a name="object-lifetime-view"></a>Widok okresu istnienia obiektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [widok okresu istnienia obiektu](https://docs.microsoft.com/visualstudio/profiling/object-lifetime-view).  
-  
 Widok okresu istnienia obiektu, jest dostępny, gdy **również zbieranie danych o okresie istnienia obiektu platformy .NET** zaznaczono na stronach właściwości sesji wydajności.  
   
  Moduł zbierający elementy bezużyteczne z [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] zarządza alokacją i zwolnieniem pamięci dla aplikacji. W celu zoptymalizowania wydajności moduł zbierający elementy bezużyteczne, zarządzanego stosu jest podzielony na trzy generacje: 0, 1 i 2. Moduł odśmiecania pamięci środowiska uruchomieniowego zapisuje nowe obiekty w generacji 0. Obiekty, które przeżyły kolekcje są promowane i przechowywane w generacji 1 i 2.  
@@ -82,7 +80,7 @@ Widok okresu istnienia obiektu, jest dostępny, gdy **również zbieranie danych
 |**Zebrane bajty sterty obiektów wielkich**|Rozmiar w bajtach wystąpień tego typu, które znajdowały się w stosie dużego obiektu i które zostały zebrane podczas uruchomienia profilowania.|  
   
 ## <a name="see-also"></a>Zobacz też  
- [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)
+ [Widoki danych pamięci platformy .NET](../profiling/dotnet-memory-data-views.md)
 
 
 

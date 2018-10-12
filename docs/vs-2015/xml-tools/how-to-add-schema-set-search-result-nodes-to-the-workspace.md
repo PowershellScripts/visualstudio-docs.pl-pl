@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Dodawanie węzłów wyników wyszukiwania zestawu schematu do obszaru roboczego | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19157704019a949a4b2590ff277bcabd3bb320f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 75f254a8f64c3750a3c89e10016a0520d3760847
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690867"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210369"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Porady: Dodawanie węzłów wyników wyszukiwania zestawu schematu do obszaru roboczego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Dodawanie zestawu węzłów wyników wyszukiwania schematu do obszaru roboczego](https://docs.microsoft.com/visualstudio/xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace).  
-  
   
 W tym temacie opisano sposób dodawania węzłów, które są wyróżnione w Eksplorator schematu XML jako wynik wyszukiwania słów kluczowych, w obszarze roboczym.  
   

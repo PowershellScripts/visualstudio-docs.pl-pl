@@ -1,7 +1,7 @@
 ---
 title: 'Przewodnik: Analizowanie kodu zarządzanego pod względem wad kodu | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9137e7319cd8cddfb54ab4b6a6929567b24bb6e5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c8bf9d1f293895c762348752b64c7be8cf6d510
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681028"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217488"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Wskazówki: analizowanie zarządzanego kodu pod względem wad kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: analizowanie kodu zarządzanego pod względem wad kodu](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-analyzing-managed-code-for-code-defects).  
-  
 W tym przewodniku możesz analizować za pomocą narzędzia do analizy kodu zarządzanego projektu pod względem wad kodu.  
   
  W tym instruktażu będą krok po kroku przez proces przy użyciu analizy kodu, aby analizować swoje zestawy kodu zarządzanego na platformie .NET dla zapewnienia zgodności z wytycznymi programu Microsoft .NET Framework.  

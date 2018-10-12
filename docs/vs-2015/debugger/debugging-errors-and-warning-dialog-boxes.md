@@ -1,7 +1,7 @@
 ---
 title: Błędy związane z debugowaniem i okna dialogowe Ostrzeżenie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,44 +27,42 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef599f3d786618339ac695b182a4efb5682035d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 225cd9e209d3fd513d4991e5c20bfc4a6a07e9d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632352"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216673"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Błędy i ostrzeżenia debugowania — Okna dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Debugowanie błędów i ostrzeżeń, okno dialogowe](https://docs.microsoft.com/visualstudio/debugger/debugging-errors-and-warning-dialog-boxes).  
-  
 Poniżej przedstawiono błędy i ostrzeżenia oknach dialogowych, które można napotkać podczas debugowania aplikacji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Błędy potwierdzenia — okno dialogowe](../debugger/assertion-failed-dialog-box.md)  
+ [Błąd potwierdzenia, okno dialogowe](../debugger/assertion-failed-dialog-box.md)  
   
  [Nie można zmienić wartości, okno dialogowe](../debugger/cannot-change-value-dialog-box.md)  
   
  [Debuger nie może wyświetlić kodu źródłowego lub dezasemblacji](../debugger/debugger-cannot-display-source-code-or-disassembly.md)  
   
- [Plik wykonywalny do debugowania sesji, okno dialogowe](../debugger/executable-for-debugging-session-dialog-box.md)  
+ [Plik wykonywalny sesji debugowania, okno dialogowe](../debugger/executable-for-debugging-session-dialog-box.md)  
   
  [Nie można zastosować zmian kodu, okno dialogowe](../debugger/edit-and-continue-dialog-box-cpp.md)  
   
- [Microsoft Visual Studio Debugger (wystąpienie wyjątku), okno dialogowe](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
+ [Debuger programu Microsoft Visual Studio (zgłoszenie wyjątku), okno dialogowe](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
   
  [Brak dostępnego dla okna dialogowego bieżącej lokalizacji kodu źródłowego](../debugger/no-source-available.md)  
   
  [Okno dialogowe nie informacji o symbolach](http://msdn.microsoft.com/en-us/18de4888-9cca-4059-a165-48b135fee4c9)  
   
- [Okno dialogowe rozstrzyganie niejednoznaczności](../debugger/resolve-ambiguity-dialog-box.md)  
+ [Rozstrzyganie niejednoznaczności, okno dialogowe](../debugger/resolve-ambiguity-dialog-box.md)  
   
- [Okno dialogowe Ostrzeżenie o nieodświeżonym kodzie](../debugger/stale-code-warning-dialog-box.md)  
+ [Ostrzeżenie o nieodświeżonym kodzie, okno dialogowe](../debugger/stale-code-warning-dialog-box.md)  
   
  [Nie można nawiązać połączenia z maszyną](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)  
   
- [Błąd: Debugowanie nie jest możliwe ponieważ w systemie jest włączony debuger jądra](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [Błąd: Debugowanie nie jest możliwe, ponieważ debuger jądra został wyłączony z poziomu systemu](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Debugowanie skryptu i sieci Web: błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  

@@ -1,7 +1,7 @@
 ---
 title: Właściwości operacji w UML, diagramy klas | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e977ede02f355724f1a93f82f1c688de27e36fa6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c2392cf951c5f25a5b287a1d56338b03bebb27e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774715"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207028"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Właściwości operacji w diagramach klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [właściwości operacji w UML, diagramy klas](https://docs.microsoft.com/visualstudio/modeling/properties-of-operations-on-uml-class-diagrams).  
-  
 Na diagramie klas UML, można dodać *operacji* do klasy i interfejsy. Operacja jest metodą albo funkcją, które mogą być wykonywane przez wystąpienie klasy lub interfejsu.  
   
  Aby dodać operację, kliknij prawym przyciskiem myszy klasę lub interfejs, wskaż opcję **Dodaj**, a następnie kliknij przycisk **operacji**.  

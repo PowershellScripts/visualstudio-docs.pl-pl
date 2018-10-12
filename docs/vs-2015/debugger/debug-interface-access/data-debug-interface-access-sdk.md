@@ -1,7 +1,7 @@
 ---
 title: Dane (debugowania zestaw SDK dostępu do interfejsu) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a52548ba72a9c3ef35397b2e16085da61c2ae3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37e06bf6fb74355690310dc6549b6333d7223a73
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630032"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216672"
 ---
 # <a name="data-debug-interface-access-sdk"></a>Dane (Zestaw SDK dostępu do interfejsu debugowania)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [danych (debugowanie interfejsu Access SDK)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/data-debug-interface-access-sdk).  
-  
 Wszystkie zmienne, takie jak parametry, zmiennych lokalnych, zmiennych globalnych i składowych klasy są identyfikowane za pomocą `SymTagData` symboli. Wartości stałe (`LocIsConstant`) również są identyfikowane za pomocą tego typu.  
   
 ## <a name="properties"></a>Właściwości  

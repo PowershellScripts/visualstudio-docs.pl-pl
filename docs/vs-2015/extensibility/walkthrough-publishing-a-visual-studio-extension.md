@@ -1,7 +1,7 @@
 ---
 title: 'Przewodnik: Publikowanie rozszerzenia programu Visual Studio | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,19 +16,18 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 66f6c6e4f59f271999294991dc66f71f16cf4a2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d92bf805aba9b3d168f3f8d5bc3af84dfff423f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632830"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204064"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Przewodnik: publikowanie rozszerzenia programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Uwaga**: Galeria Visual Studio jest zastępowany przez Visual Studio Marketplace. Zobaczyć najnowszą wersję tego tematu, aby uzyskać szczegółowe informacje.
 
-Najnowszą wersję tego tematu znajduje się w temacie [przewodnik: publikowanie rozszerzenia programu Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-publishing-a-visual-studio-extension).  
   
 W tym instruktażu dowiesz się, jak opublikować rozszerzenia programu Visual Studio do galerii Visual Studio. Po dodaniu rozszerzenia w galerii, deweloperzy mogą używać **rozszerzenia i aktualizacje** przeglądać dostępne dla nowych i zaktualizowanych rozszerzeń.  
   

@@ -1,7 +1,7 @@
 ---
 title: Dostępność produktów i usług firmy Microsoft | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7336a1e4a12b0db326b536f59f9562d772bc94df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8f16fdd837b266bfcc04f7e35cfbadd12a14fa5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688695"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215777"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkty i usługi firmy Microsoft związane z ułatwieniami dostępu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [produktów i usług firmy Microsoft](https://docs.microsoft.com/visualstudio/ide/reference/accessibility-products-and-services-from-microsoft).  
-  
   
 Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korzystania z jej produktów i usług. Informacje o funkcjach, produktach i usługach powodujących, że program Microsoft Windows bardziej dostępny dla osób niepełnosprawnych można znaleźć w następujących tematach:  
   

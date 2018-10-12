@@ -1,7 +1,7 @@
 ---
 title: Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e9ba21aa4cf5d2f11ba7aa24f095acaaea13924
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678411"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204312"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET](https://docs.microsoft.com/visualstudio/data-tools/create-a-simple-data-application-by-using-adonet).  
-  
   
 Gdy tworzysz aplikację, która manipuluje danymi w bazie danych, wykonujesz podstawowe zadania, takie definiowania ciągów połączeń, wstawiania danych i uruchamianie przechowywanych procedur. Korzystając z tego tematu, można wykryć, jak korzystać z bazy danych z w ramach prostą aplikację "formularzy nad danymi" Windows Forms przy użyciu języka Visual C# lub Visual Basic i ADO.NET.  Wszystkie technologie danych .NET — w tym zestawy danych, LINQ to SQL i Entity Framework — ostatecznie wykonaj kroki, które są bardzo podobne do tych przedstawione w tym artykule.  
   

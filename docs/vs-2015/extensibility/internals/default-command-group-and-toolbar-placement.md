@@ -1,7 +1,7 @@
 ---
 title: Domyślnie polecenia, grupy i położenie paska narzędzi | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c6007cd9502d5b1e10aa0fc90181f405189889a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb7144842cba237a11d94435f56782a8d2de90b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627933"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195744"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Domyślne położenie poleceń, grup i pasków narzędzi
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [polecenie domyślne, grupy i położenie paska narzędzi](https://docs.microsoft.com/visualstudio/extensibility/internals/default-command-group-and-toolbar-placement).  
-  
 Jednolitość produktu i stabilności interfejsu użytkownika niektórych grup poleceń są domyślnie wyświetlane, i [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zawiera definicje dla poleceń i grup poleceń. Pakietów VSPackage również używać poleceń standardowych i grup poleceń.  
   
  Domyślne grupy poleceń można podzielić na trzy kategorie: środowisko IDE poleceń, polecenia produktu i poleceń edytora.  

@@ -1,7 +1,7 @@
 ---
 title: 'Porady: tworzenie cieniowania gradientu geometrycznego | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1e9ef91ad2d7714ca5f589aeccff61967c27e46
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 480a316ea7947e71317c3d15424b521f0ac69ba8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678863"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195978"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Porady: tworzenie modułu cieniującego gradientu geometrycznego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: tworzenie cieniowania gradientu geometrycznego](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-geometry-based-gradient-shader).  
-  
 W tym dokumencie przedstawiono sposób umożliwia tworzenie cieniowania gradientu geometrycznego Shader Designer i język programu do cieniowania wykres kierowany. Ten program do cieniowania można skalować stałej wartości kolorów RGB przez wysokość każdego punktu obiektu w przestrzeni świata.  
   
  Ten dokument przedstawia te działania:  

@@ -1,7 +1,7 @@
 ---
 title: Zapisywanie danych z obiektu do bazy danych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b122285b653b75691a78367d12344c4720792f97
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acbbf9f309573f110da3b7dd0a53ede36150a319
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685225"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207457"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Zapisywanie danych z obiektu w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zapisywanie danych z obiektu w bazie danych](https://docs.microsoft.com/visualstudio/data-tools/save-data-from-an-object-to-a-database).  
-  
   
 Można zapisać danych w obiektach do bazy danych przez przekazanie wartości z obiektu do jednej z TableAdapter dbdirect — metody (na przykład `TableAdapter.Insert`). Aby uzyskać więcej informacji, zobacz [TableAdapter — Przegląd](../data-tools/tableadapter-overview.md).  
   

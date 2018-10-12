@@ -1,7 +1,7 @@
 ---
 title: Zdarzenia buforu tekstu w starszej wersji interfejsu API | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799443f4674c48201a161dbbd02d525afdb3218c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c3db7d7a4b2c52e4b831078f789dea75c73b337
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691576"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218728"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Zdarzenia buforu tekstu w starszej wersji interfejsu API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zdarzenia buforu tekstu w starszej wersji interfejsu API](https://docs.microsoft.com/visualstudio/extensibility/text-buffer-events-in-the-legacy-api).  
-  
 Obiekt buforu tekstu emituje szereg różnych zdarzeń, które umożliwiają reagowanie na różnych sytuacjach.  
   
  Jeśli używasz starszej wersji interfejsu API, należy zaimplementować następujące interfejsy w celu otrzymywania powiadomień o zmianach w buforze tekstu. Uwidacznia interfejsów do buforu tekstu przy użyciu `IConnectionPointContainer` interfejsu w buforze tekstu, aby otrzymać powiadomienie o wiersz zmieni się z buforu. Aby uzyskać więcej informacji, zobacz [porady: rejestrowanie zdarzeń buforu tekstu przy użyciu starszej wersji interfejsu API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md). W przypadku właściwości `IVsTextStreamEvents` lub `IVsTextLinesEvents` interfejsów, zmiany są zwracane w albo jednego lub dwu dimensional współrzędne, odpowiednio.  
@@ -60,5 +58,5 @@ Obiekt buforu tekstu emituje szereg różnych zdarzeń, które umożliwiają rea
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostęp do buforu tekstowego przy użyciu starszej wersji interfejsu API](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [Porady: rejestrowanie zdarzeń buforu tekstu przy użyciu starszej wersji interfejsu API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+ [Instrukcje: rejestrowanie w zdarzeniach buforu tekstowego przy użyciu starszego interfejsu API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
 

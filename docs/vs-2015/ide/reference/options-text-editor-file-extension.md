@@ -1,7 +1,7 @@
 ---
 title: Rozszerzenie pliku opcje, Edytor tekstu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99f6d7b90b86b4a5ffefadd98f30ef2f3326fa61
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 953417bf6d3c89df452878a3070937f29112c67c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685617"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204129"
 ---
 # <a name="options-text-editor-file-extension"></a>Opcje, edytor tekstu, rozszerzenie pliku
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [opcje, Edytor tekstu, rozszerzenie pliku](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-file-extension).  
-  
   
 Opcje to okno dialogowe umożliwia określenie, jak wszystkie pliki z określonych rozszerzeń plików będzie obsługiwany przez program Visual Studio zintegrowane środowisko programistyczne (IDE). Dla każdego **rozszerzenia** czy wprowadzasz, możesz wybrać środowisko edycji. Teraz można wybrać w edytorze IDE lub Projektant Otwórz dokumentów określonego typu. Aby wyświetlić te opcje, wybierz **opcje** z **narzędzia** menu, rozwiń węzeł **edytora tekstów** , a następnie wybierz węzeł **rozszerzenie pliku**.  
   
@@ -48,7 +46,7 @@ Opcje to okno dialogowe umożliwia określenie, jak wszystkie pliki z określony
  **Edytor**  
  Wybierz edytor środowiska IDE lub w dokumentach, które z tym plikiem rozszerzenie zostanie otwarty projektant. Po wybraniu opcji "z kodowaniem", pojawi się okno dialogowe przy każdym otwarciu takiego dokumentu, który służy do wybierania schemat kodowania.  
   
- **Dodaj**  
+ **Add**  
  Dodaje wpis, który zawiera określony **rozszerzenia** i **środowisko edytowania** do listy rozszerzeń.  
   
  **Usuń**  

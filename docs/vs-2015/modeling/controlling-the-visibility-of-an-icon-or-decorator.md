@@ -1,7 +1,7 @@
 ---
 title: Kontrolowanie widoczności ikony lub Dekoratora | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9cc74f7ba8c71c2b8828ad19c4d6af80d6e8b8e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 299abef4d60b6bdc6fdf07cb8257034a6ee22d10
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631634"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207860"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Kontrolowanie widoczności ikony lub elementu Decorator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [kontrolowanie widoczności ikony lub Dekoratora](https://docs.microsoft.com/visualstudio/modeling/controlling-the-visibility-of-an-icon-or-decorator).  
-  
 A *dekoratora* jest ikona albo wiersz tekstu, który pojawia się na kształcie języka specyficznego dla domeny (DSL). Można wprowadzić dekoratora pojawiają się i znikają w zależności od stanu właściwości w modelu. Na przykład na kształcie reprezentująca osobę, może mieć różne ikony, które pojawiają się w zależności od danej osoby, płeć, liczba elementów podrzędnych i tak dalej.  
   
 ## <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Kontrolowanie widoczności ikony lub dekoratora  

@@ -1,7 +1,7 @@
 ---
 title: 'Porady: określanie zestawów reguł kodu zarządzanego dla wielu projektów w rozwiązaniu | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 42b04eb88e6edee2d8250ac29a26f4cfe6562a29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d2469491eeb5419c70e208bbf6e1ed7809657dbc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694062"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218702"
 ---
 # <a name="how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution"></a>Porady: określanie zestawów reguł zarządzanego kodu dla wielu projektów w rozwiązaniu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: określanie zarządzanych zestawów reguł kodu dla wielu projektów w rozwiązaniu](https://docs.microsoft.com/visualstudio/code-quality/how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution).  
-  
 Domyślnie, wszystkie projekty zarządzane rozwiązanie przypisanych reguł zalecanych Minimum Microsoft code analysis *zestaw reguł*. Można zmienić zestawów reguł, które są przypisane do projektów rozwiązania w oknie dialogowym właściwości rozwiązania.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 'Porady: otwieranie edytorów dla otwartych dokumentów | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 44d3ae5a20269e63e074ec32fd0631312c8d695f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1c0cdc94a3aa796c981dbfb83aef3dd3c2ec1a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681877"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215998"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Porady: otwieranie edytorów dla otwartych dokumentów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: otwieranie edytorów dla otwartych dokumentów](https://docs.microsoft.com/visualstudio/extensibility/how-to-open-editors-for-open-documents).  
-  
 Przed projektu powoduje otwarcie okna dokumentów, projektu najpierw należy określić czy plik jest już otwarty w oknie dokumentu innym edytorze. Może to być plik albo otworzyć w edytorze specyficzne dla projektu lub jednego z standardowych edytorów zarejestrowane w usłudze [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="opening-a-project-specific-editor"></a>Otwieranie Edytora specyficznych dla projektu  

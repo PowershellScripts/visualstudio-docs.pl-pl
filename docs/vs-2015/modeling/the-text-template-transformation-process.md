@@ -1,7 +1,7 @@
 ---
 title: Proces przekształcania szablonu tekstu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c7b39517e5e4c88bbefe6bf378e1dffd3c233872
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685487"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203778"
 ---
 # <a name="the-text-template-transformation-process"></a>Proces przekształcania szablonu tekstowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [proces przekształcania szablonu tekstowego](https://docs.microsoft.com/visualstudio/modeling/the-text-template-transformation-process).  
-  
 Proces przekształcania szablonu tekstowego przyjmuje plik szablonu tekstu jako dane wejściowe i generuje nowy plik tekstowy jako dane wyjściowe. Na przykład można użyć szablonów tekstowych do generowania kodu Visual Basic lub C# lub możesz wygenerować raport HTML.  
   
  Trzy składniki wzięcia udziału w ramach tego procesu: silnik, hosta i procesorów dyrektyw. Aparat kontroluje proces; współpracuje z usługą hosta oraz procesor dyrektywy, aby wygenerować plik wyjściowy. Host zawiera wszystkie interakcje ze środowiskiem, takich jak lokalizowanie plików i zestawów. Procesor dyrektywy dodaje funkcje, takie jak odczytywanie danych z pliku XML lub bazy danych.  

@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Dodawanie lub usuwanie importowanych przestrzeni nazw (Visual Basic) | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c70f5187300c3c7d661055f78911bdedb926fdc5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 730ebcf8029abf51e6cb04c74b826593139cfdc5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196407"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Porady: dodawanie i usuwanie importowanych przestrzeni nazw (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Dodawanie lub usuwanie zaimportowane przestrzenie nazw (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/how-to-add-or-remove-imported-namespaces-visual-basic).  
-  
 Importowanie przestrzeni nazw pozwala na używanie elementów z tej przestrzeni nazw w kodzie bez w pełni kwalifikowanie elementu. Na przykład, jeśli chcesz uzyskać dostęp do `Create` method in Class metoda `System.Messaging.MessageQueue` klasy, można zaimportować `System.Messaging` przestrzeni nazw i po prostu odwoływać się do elementu, należy w kodzie jako `MessageQueue.Create`.  
   
  Importowane przestrzenie nazw są zarządzane na **odwołania** strony **projektanta projektu**. Polecenie importuje określisz w tym oknie dialogowym są przekazywane bezpośrednio do kompilatora (`/imports`) i Zastosuj do wszystkich plików w projekcie. Użyj `Imports` instrukcję, aby użyć przestrzeni nazw w pliku kodu jednego źródła.  

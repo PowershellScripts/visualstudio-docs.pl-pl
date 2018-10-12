@@ -1,7 +1,7 @@
 ---
 title: Windows Communication Foundation i usługi danych WCF w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -36,18 +36,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a1a26e3a119f89f89ea71997b1463bc8d3fa8daf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55b6ddc1d0e8e3a3caaee89547874e9e38115a17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633721"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194691"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio).  
-  
   
 Visual Studio zapewnia narzędzia do pracy za pomocą programu Windows Communication Foundation (WCF) i [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], technologii firmy Microsoft do tworzenia aplikacji rozproszonych. Ten temat zawiera wprowadzenie do usługi z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] perspektywy. Aby uzyskać pełną dokumentację, zobacz [4.5 usług danych WCF](http://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a).  
   
@@ -240,16 +238,16 @@ Visual Studio zapewnia narzędzia do pracy za pomocą programu Windows Communica
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Wskazówki: Tworzenie prostą usługę WCF w formularzach Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Zawiera instrukcje krok po kroku Pokaz tworzenia i używania usługi WCF w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Wskazówki: Tworzenie usługi danych WCF, WPF i Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Zawiera pokaz krok po kroku dotyczące tworzenia i używania [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Przewodnik: tworzenie prostej usługi WCF w aplikacji Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Zawiera instrukcje krok po kroku Pokaz tworzenia i używania usługi WCF w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Przewodnik: tworzenie usługi danych programu WCF za pomocą struktur WPF i Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Zawiera pokaz krok po kroku dotyczące tworzenia i używania [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |[Używanie narzędzi deweloperskich programu WCF](http://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|W tym artykule omówiono sposób tworzenia i testowania usługi WCF w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |[Porady: Dodawanie, aktualizowanie lub usuwanie odwołań usługi](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|W tym artykule opisano, jak dodawanie, aktualizowanie lub usuwanie usługi WCF z projektu.|  
-|[Porady: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|W tym artykule omówiono sposób odwołać się i używać [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Instrukcje: dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|W tym artykule omówiono sposób odwołać się i używać [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |[Rozwiązywanie problemów z odwołaniami usługi](../data-tools/troubleshooting-service-references.md)|Przedstawia informacje o typowych błędów, które mogą wystąpić, za pomocą odwołań do usług i sposobu zapobiegania im.|  
 |[Debugowanie usług WCF](../debugger/debugging-wcf-services.md)|Zawiera opis typowych problemów debugowania i technik, które mogą wystąpić podczas debugowania usług WCF.|  
 |[Omówienie usługi uwierzytelniania do programu Windows Communication Foundation](http://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Opisuje sposób używania usługi WCF do świadczenia usług roli dla witryny sieci Web.|  
-|[Przewodnik: Tworzenie aplikacji warstwowych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Instrukcje krok po kroku dotyczące tworzenia typizowany zestaw danych i oddzielenie kodu TableAdapter i zestaw danych do wielu projektów.|  
-|[Konfigurowanie usługi odwołania — okno dialogowe](../data-tools/configure-service-reference-dialog-box.md)|W tym artykule opisano elementy interfejsu użytkownika z **Konfiguruj odwołanie do usługi** okno dialogowe.|  
+|[Przewodnik: tworzenie n-warstwowych aplikacji do obsługi danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Instrukcje krok po kroku dotyczące tworzenia typizowany zestaw danych i oddzielenie kodu TableAdapter i zestaw danych do wielu projektów.|  
+|[Konfigurowanie odwołania do usługi, okno dialogowe](../data-tools/configure-service-reference-dialog-box.md)|W tym artykule opisano elementy interfejsu użytkownika z **Konfiguruj odwołanie do usługi** okno dialogowe.|  
   
 ## <a name="reference"></a>Tematy pomocy  
  <xref:System.ServiceModel>  

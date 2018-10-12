@@ -1,7 +1,7 @@
 ---
 title: Tworzenie i konfigurowanie adapterów TableAdapter | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: df2a5313ace294c536dc1e8cdaab6ce0adcaeabb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c1c9337fac3cde818fd8af298813c89c8c13daf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682441"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199254"
 ---
 # <a name="create-and-configure-tableadapters"></a>Tworzenie i konfigurowanie adapterów TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [tworzenie i konfigurowanie adapterów TableAdapter](https://docs.microsoft.com/visualstudio/data-tools/create-and-configure-tableadapters).  
-  
   
 TableAdapters zapewniają komunikację między aplikacją i bazą danych. Łączą się z bazą danych, wykonywania zapytań lub procedur przechowywanych i zwrócenie nowe dane tabeli lub wypełnij istniejącego <xref:System.Data.DataTable> ze zwracanych danych. TableAdapters można również wysyłać zaktualizowane dane z aplikacji w bazie danych.  
   
@@ -117,5 +115,5 @@ TableAdapters zapewniają komunikację między aplikacją i bazą danych. Łącz
     >  Przeciąganie **zapytania** obiektu bezpośrednio na **Projektanta obiektów Dataset** tworzy metodę, która zwraca tylko (pojedyncze) wartość skalarną. Gdy zapytanie lub procedura składowana, którą wybierzesz może zwrócić więcej niż jedną wartość, metody, która jest tworzony przez kreatora tylko zwraca pojedynczą wartość. Na przykład zapytanie może zwrócić pierwszą kolumnę pierwszego wiersza zwrócone dane.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wypełnij zestawów danych za pomocą adapterów TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
+ [Wypełnianie zestawów danych za pomocą adapterów TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)
 

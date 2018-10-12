@@ -1,7 +1,7 @@
 ---
 title: Opis katalogu szablonu (. Pliki Vsdir) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0d4281201c0aa7d699deb5c1d2d9ae1b183fd76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 733f59b4498ccec80b1223c87e32de0fab2ded69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694297"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201990"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Opis katalogu szablonu (pliki Vsdir)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [opis katalogu szablonu (. Pliki Vsdir)](https://docs.microsoft.com/visualstudio/extensibility/internals/template-directory-description-dot-vsdir-files).  
-  
 Plik opis katalogu szablonu (vsdir) to plik tekstowy, który umożliwia zintegrowanego środowiska programistycznego (IDE), aby wyświetlić folderów, plików .vsz kreatora i plików szablonów, które są skojarzone z projektem w oknach dialogowych. Zawartość obejmują jeden rekord w pliku lub folderu. Wszystkich plików .vsdir w lokalizacji, do którego istnieje odwołanie są scalane, mimo że .vsdir tylko jeden plik jest zazwyczaj podawana do opisania wiele folderów, pliki szablonów lub kreatorów.  
   
  Foldery (w podkatalogach), pliki, które są określone w pliku .vsdir i sam plik .vsdir znajdują się w tym samym katalogu. Gdy IDE uruchamia Kreator lub wyświetla folderu lub pliku w **nowy projekt** lub **Dodaj nowy element** okien dialogowych, IDE sprawdza, czy katalog, który zawiera pliki wykonane, aby ustalić, czy plik .vsdir jest obecne. Jeśli zostanie znaleziony plik .vsdir, IDE odczytuje go, aby ustalić, czy zawiera on wpis dla wykonany lub wyświetlanych folderu lub pliku. Jeśli wpis zostanie znaleziony, IDE używa tych informacji w wykonanie kreatora lub wyświetlanie zawartości.  

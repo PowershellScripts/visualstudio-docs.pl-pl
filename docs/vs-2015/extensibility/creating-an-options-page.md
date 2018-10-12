@@ -1,7 +1,7 @@
 ---
 title: Tworzenie strony opcji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 63
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fe6e26a534f7bb02d0a309d436d9b62927639a6
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: bd04ea51fb73f6f095c9f5bcddce735deb06066e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880256"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219703"
 ---
 # <a name="creating-an-options-page"></a>Tworzenie strony opcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Tworzenie strony opcji](https://docs.microsoft.com/visualstudio/extensibility/creating-an-options-page).  
-  
 Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki właściwości w celu zbadania i ustawić właściwości.  
   
  Aby zapisać te właściwości, aby i przywrócić je z pliku ustawień, wykonaj następujące kroki, a następnie zobacz [Tworzenie kategorii ustawień](../extensibility/creating-a-settings-category.md).  

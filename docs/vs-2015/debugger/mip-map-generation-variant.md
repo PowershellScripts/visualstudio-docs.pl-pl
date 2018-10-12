@@ -1,7 +1,7 @@
 ---
 title: Wariant generowania mipmapy | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4805aee80cb298088109a166ecf1a417c9a854aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9b56c4830c61ea0484d19195ab230fcd297a8588
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676428"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176790"
 ---
 # <a name="mip-map-generation-variant"></a>Wariant generowania mipmapy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wariant generowania mipmapy](https://docs.microsoft.com/visualstudio/debugger/graphics/mip-map-generation-variant).  
-  
 Umożliwia mapy mip na tekstury, które nie są renderowane elementów docelowych.  
   
 ## <a name="interpretation"></a>Interpretacja  
@@ -80,7 +78,7 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 >  Jeśli chcesz podać własne mip poziomu zawartość zamiast generować je automatycznie, musi utworzyć swoje tekstury za pomocą obrazu edytora obsługującego mapowane mip tekstury i następnie załaduj plik i poziomów mip, aby przekazać `CreateTexture2D`.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wariant wymiarów tekstury połowie/kwartał](../debugger/half-quarter-texture-dimensions-variant.md)
+ [Wariant wymiarów jednej ósmej tekstury](../debugger/half-quarter-texture-dimensions-variant.md)
 
 
 

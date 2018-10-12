@@ -1,7 +1,7 @@
 ---
 title: Standardowe stereotypy dla modeli UML | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3e5cabed5b2b75d9a97c74dd58d87ea387df8f8e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c38ad14fa44d2f537f9622d7746e534f8dd41ea0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694033"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212163"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Standardowe stereotypy dla modeli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [standardowe stereotypy dla modeli UML](https://docs.microsoft.com/visualstudio/modeling/standard-stereotypes-for-uml-models).  
-  
 Za dodawanie stereotypów do elementów modelu UML, aby podać dodatkowe informacje dla czytnika lub do przetworzenia maszyny. Stereotypy są zdefiniowane w profilach, a każdy profil zawiera zbiór stereotypów. Kilka profilów są dostarczane z programem Visual Studio. Można także zdefiniować własne profile, które mogą zawierać własne stereotypów. Aby uzyskać więcej informacji, zobacz [Definiowanie profilu w celu rozszerzenia UML](../modeling/define-a-profile-to-extend-uml.md).  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -146,7 +144,7 @@ Za dodawanie stereotypów do elementów modelu UML, aby podać dodatkowe informa
 ## <a name="see-also"></a>Zobacz też  
  [Dodawanie stereotypów do elementów modelu UML](../modeling/add-stereotypes-to-uml-model-elements.md)   
  [Dostosowywanie modelu z profilami i stereotypami](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
- [Definiowanie profilu w celu rozszerzenia UML](../modeling/define-a-profile-to-extend-uml.md)
+ [Definiowanie profilu w celu rozszerzenia kodu UML](../modeling/define-a-profile-to-extend-uml.md)
 
 
 

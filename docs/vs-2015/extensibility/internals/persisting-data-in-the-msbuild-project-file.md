@@ -1,7 +1,7 @@
 ---
 title: Utrwalanie danych w pliku projektu MSBuild | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 288fe5387a25ed74f0fd18d9d461328f4e922724
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fb062ab2a3f3ad692c3b8aff2d6b8d5fefef207
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696890"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187697"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Utrwalanie danych w pliku projektu programu MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [przechowywanie danych w pliku projektu MSBuild](https://docs.microsoft.com/visualstudio/extensibility/internals/persisting-data-in-the-msbuild-project-file).  
-  
 Podtypu projektu może być konieczne do utrwalenia danych specyficznych dla podtypu do pliku projektu do późniejszego użycia. Podtypu projektu używa trwałość plików projektu, aby spełniać następujące wymagania:  
   
 1.  Utrwalanie danych używanych w ramach tworzenia projektu. (Aby uzyskać więcej informacji na temat aparatu Microsoft Build Engine, zobacz [MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Informacje dotyczące kompilacji wykonać jedną z następujących:  

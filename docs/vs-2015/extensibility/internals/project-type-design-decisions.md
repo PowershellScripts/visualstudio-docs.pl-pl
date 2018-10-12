@@ -1,7 +1,7 @@
 ---
 title: Decyzje projektowe dotyczące typów projektu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 49f4b198da38a53360efffcdff82daa6fcdb350c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9b5738f3119a8e5f1f6c1d8cb3ee47d64df1541d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683099"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195484"
 ---
 # <a name="project-type-design-decisions"></a>Decyzje projektowe dotyczące typów projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [decyzje projektowe dotyczące typów projektu](https://docs.microsoft.com/visualstudio/extensibility/internals/project-type-design-decisions).  
-  
 Przed przystąpieniem do tworzenia nowych typów projektów należy kilka decyzji projektowych dotyczących danego typu projektu. Należy zdecydować, jakie rodzaje elementów, który będzie zawarty w projekcie, jak pliki projektu zostaną utrwalone i jakie modelu zobowiązania będą używane.  
   
 ## <a name="project-items"></a>Elementy projektu  

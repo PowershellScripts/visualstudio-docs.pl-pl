@@ -1,7 +1,7 @@
 ---
 title: Co&#39;s Nowość w kontroli źródła | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f098c9f46d649a8b93c29eff57c5606438d3e399
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fac4b901c7e9b3c5a59e125a9480b21703b19a8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696831"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217059"
 ---
 # <a name="what39s-new-in-source-control"></a>Co&#39;s Nowość w kontroli źródła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [co&#39;s Nowość w kontroli źródła](https://docs.microsoft.com/visualstudio/extensibility/internals/what-s-new-in-source-control).  
-  
 W [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] może udostępnić rozwiązanie kontroli źródła ściśle zintegrowana z zastosowaniem kontroli źródła pakietu VSPackage. Ta sekcja zawiera opis funkcji kontroli źródła pakietów VSPackage i zawiera omówienie kroków wdrożenia.  
   
 ## <a name="the-source-control-vspackage"></a>Pakietu VSPackage kontroli kodu źródłowego  

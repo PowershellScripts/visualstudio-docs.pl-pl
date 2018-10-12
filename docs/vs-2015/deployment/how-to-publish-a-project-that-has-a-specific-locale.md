@@ -1,7 +1,7 @@
 ---
 title: 'Porady: publikowanie projektu o specyficznych ustawieniach regionalnych | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: f832fc7f8ff78fc23571015ceeaf67d605a82aa9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f45b0a453e66814d54bbe0cb5e20c4f287cc713f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673776"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185214"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Porady: publikowanie projektu o specyficznych ustawieniach regionalnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: publikowanie projektu o specyficznych ustawieniach regionalnych](https://docs.microsoft.com/visualstudio/deployment/how-to-publish-a-project-that-has-a-specific-locale).  
-  
 Nie jest niczym niezwykłym aplikacji zawierają składniki, które mają różnych ustawień regionalnych. W tym scenariuszu może utworzyć rozwiązanie, które ma kilka projektów, a następnie opublikuj oddzielnych projektów dla poszczególnych ustawień regionalnych. Ta procedura pokazuje, jak publikować pierwszego projektu w rozwiązaniu przy użyciu ustawień regionalnych "PL" za pomocą makra. Jeśli chcesz wypróbować tę procedurę za pomocą ustawień regionalnych innych niż "en", upewnij się ustawić `localeString` w makrze zgodne z ustawieniami regionalnymi, którego używasz (na przykład, "de" lub "de-DE").  
   
 > [!NOTE]

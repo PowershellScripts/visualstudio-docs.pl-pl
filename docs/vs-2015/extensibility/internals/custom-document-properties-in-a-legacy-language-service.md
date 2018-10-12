@@ -1,7 +1,7 @@
 ---
 title: Niestandardowe właściwości dokumentu w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6e29fe0831385456a36f6d3519c28f5adf1006a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 139c5b92d8dd9198e518c50b45531138e5cbc06b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677777"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194862"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Niestandardowe właściwości dokumentu w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [niestandardowe właściwości dokumentu w starszej wersji usługi językowej](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-document-properties-in-a-legacy-language-service).  
-  
 Właściwości dokumentu mogą być wyświetlane w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **właściwości** okna. Języki programowania zwykle nie mają właściwości skojarzone z pojedynczych źródłowych plików. Jednakże XML obsługuje właściwości dokumentu, które wpływają na kodowanie, schemat oraz arkusza stylów.  
   
 ## <a name="discussion"></a>Dyskusja  
@@ -407,5 +405,5 @@ namespace TestLanguagePackage
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Funkcje usługi starszego języka](../../extensibility/internals/legacy-language-service-features1.md)
+ [Funkcje starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-features1.md)
 

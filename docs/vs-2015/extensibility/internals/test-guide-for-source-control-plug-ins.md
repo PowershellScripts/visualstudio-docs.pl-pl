@@ -1,7 +1,7 @@
 ---
 title: Przewodnik wtyczek kontroli kodu źródłowego testowania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 350e84da54ef554e625dcf1db6df52016e38fa27
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1620de29372d1d8e397ad879e3c9f413c41b1286
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632804"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219586"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Przewodnik testowania wtyczek kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Przewodnik po testowym dla wtyczek kontroli źródła](https://docs.microsoft.com/visualstudio/extensibility/internals/test-guide-for-source-control-plug-ins).  
-  
 Ta sekcja zawiera wskazówki dotyczące testowania Twojego wtyczka do kontroli źródła przy użyciu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Rozbudowane przegląd typowych obszarów, testowania, a także niektórych bardziej skomplikowanych obszarów, które może być problematyczne, jest dostępna. W tym omówieniu nie stanowi wyczerpującej listy przypadków testowych.  
   
 > [!NOTE]
@@ -64,7 +62,7 @@ Ta sekcja zawiera wskazówki dotyczące testowania Twojego wtyczka do kontroli �
   
 ## <a name="test-areas-covered-in-this-section"></a>Obszary testów, opisanych w tej sekcji  
   
--   [Obszar testowy 1: Dodaj / Otwórz z kontroli źródła](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+-   [Obszar testowy 1: dodawanie do kontroli kodu źródłowego i otwieranie z poziomu kontroli kodu źródłowego](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
     -   Zamierzone, Zapisz 1a: Dodaj rozwiązanie do kontroli źródła  
   
@@ -74,7 +72,7 @@ Ta sekcja zawiera wskazówki dotyczące testowania Twojego wtyczka do kontroli �
   
 -   [Obszar testowy 2: pobieranie z kontroli kodu źródłowego](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Obszar testowy 3: Wyewidencjonowanie / Cofnij wyewidencjonowanie](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+-   [Obszar testowy 3: wyewidencjonowywanie i cofanie wyewidencjonowania](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
     -   Przypadek 3: Wyewidencjonowanie / Cofnij wyewidencjonowanie  
   

@@ -1,7 +1,7 @@
 ---
 title: Zawiera języki | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,17 +15,16 @@ ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d0b455a526bf1b32de90588a103c23855e730946
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 22f297027d2196cf69c241f651fd84cbb18ecfa1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682630"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184967"
 ---
 # <a name="contained-languages"></a>Języki zawarte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
 
-Najnowszą wersję tego tematu znajduje się w temacie [języki zawarte](https://docs.microsoft.com/visualstudio/extensibility/contained-languages).  
   
 *Zawiera języki* języków, które znajdują się w innych językach. Na przykład HTML w [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] strony mogą zawierać [!INCLUDE[csprcs](../includes/csprcs-md.md)] lub [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] skryptów. Architektura podwójnego język jest wymagany dla edytora plików .aspx, do zapewnienia funkcji IntelliSense, kolorowanie i inne funkcje edytowania HTML i języka skryptów.  
   

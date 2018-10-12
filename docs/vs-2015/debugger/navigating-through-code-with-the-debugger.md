@@ -1,14 +1,14 @@
 ---
 title: Nawigowanie po kodzie za pomocą debugera za | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
 dev_langs:
@@ -26,18 +26,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81b5bbca0b547510056b1aecfa0e7237e40a9814
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d91d99b6eaa33f3aae84ecd3510bf08fe194f101
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683071"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186163"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Nawigowanie po kodzie za pomocą debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Przejdź kodu za pomocą debugera programu Visual Studio](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger).  
-  
 Zapoznaj się z poleceń i skrótów, przechodzenie do kodu w debugerze i który ułatwi przyspiesza i ułatwia znajdowanie i rozwiązywanie problemów w aplikacji. Gdy przejdziesz kodu w debugerze, możesz [sprawdzić stan aplikacji](https://msdn.microsoft.com/library/mt243867.aspx#BKMK_Inspect_Variables) lub Dowiedz się więcej o przepływ jego wykonania.  
   
 ## <a name="start-debugging"></a>Rozpocznij debugowanie  

@@ -1,7 +1,7 @@
 ---
 title: Korzystanie z programu Spy ++ | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e7600447e84ec1181d608c2d54a3ebbaa6136d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45a787eb2e5963454239da27605e7e6cf6893f6c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679005"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210356"
 ---
 # <a name="using-spy"></a>Korzystanie z programu Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [przy użyciu programu Spy ++](https://docs.microsoft.com/visualstudio/debugger/using-spy-increment).  
-  
 Spy ++ (SPYXX. Z rozszerzeniem EXE) jest narzędziem oparte na Win32 umożliwia graficzne przedstawienie procesy, wątki, windows i komunikatów okien systemu. Ten rozdział z programu Spy ++ pomocy zawiera następujące tematy pomocy:  
   
 ## <a name="in-this-section"></a>W tej sekcji  
@@ -37,19 +35,19 @@ Spy ++ (SPYXX. Z rozszerzeniem EXE) jest narzędziem oparte na Win32 umożliwia 
  [Instrukcje: rozpoczynanie pracy z programem Spy++](../debugger/how-to-start-spy-increment.md)  
  Wyjaśnia, jak można uruchomić programu Spy ++ z menu Narzędzia.  
   
- [Spy ++ — pasek narzędzi](../debugger/spy-increment-toolbar.md)  
+ [Pasek narzędzi w programie Spy++](../debugger/spy-increment-toolbar.md)  
  W tym artykule opisano poleceń dostępnych w programie Spy ++ — pasek narzędzi.  
   
- [Porady: wyświetlanie widoków Spy ++](../debugger/how-to-display-spy-increment-views.md)  
+ [Instrukcje: wyświetlanie widoków programu Spy++](../debugger/how-to-display-spy-increment-views.md)  
  Jak wyświetlić widok Windows, widoku komunikatów, widok procesy i Widok wątków.  
   
- [Porady: odświeżanie widoku](../debugger/how-to-refresh-the-view.md)  
+ [Instrukcje: odświeżanie widoku](../debugger/how-to-refresh-the-view.md)  
  W tym artykule wyjaśniono polecenia Odśwież.  
   
- [Porady: Zmienianie czcionek](../debugger/how-to-change-fonts.md)  
+ [Instrukcje: zmienianie czcionek](../debugger/how-to-change-fonts.md)  
  Wyjaśnia, jak zmienić sposób wyświetlania widoku.  
   
- [Porady: rozwijanie i zwijanie drzew w programie Spy ++](../debugger/how-to-expand-and-collapse-spy-increment-trees.md)  
+ [Instrukcje: rozwijanie i zwijanie drzew w programie Spy++](../debugger/how-to-expand-and-collapse-spy-increment-trees.md)  
  Wyjaśnia sposób modyfikowania widoku.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

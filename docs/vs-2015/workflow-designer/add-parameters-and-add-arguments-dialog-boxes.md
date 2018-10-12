@@ -1,7 +1,7 @@
 ---
 title: Dodawanie parametrów i dodawanie argumentów, okno dialogowe | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: f6fd230fbc168782cacaf475ab5a050370033a5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d01eb02a68666007021aad9d789502e58f684528
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684026"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196707"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Dodawanie parametrów i Dodawanie argumentów, okna dialogowe
 W poniższej tabeli opisano elementy interfejsu użytkownika **Dodawanie parametrów** okno dialogowe, które posługują się <xref:System.Activities.Statements.InvokeMethod> projektanta.  

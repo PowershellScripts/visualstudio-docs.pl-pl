@@ -1,7 +1,7 @@
 ---
 title: Importgroup — Element | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b579b75970539c6639f98e321bb6e0a03341aa59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4522099c893c7fb5dc37c0ad78d40cb0600e84b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633921"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219976"
 ---
 # <a name="importgroup-element"></a>ImportGroup — Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [importgroup — Element](https://docs.microsoft.com/visualstudio/msbuild/importgroup-element).  
-  
   
 Zawiera kolekcję `Import` elementy, które są zgrupowane w obszarze opcjonalny warunek. Aby uzyskać więcej informacji, zobacz [Import — Element (MSBuild)](../msbuild/import-element-msbuild.md).  
   
@@ -62,7 +60,7 @@ Zawiera kolekcję `Import` elementy, które są zgrupowane w obszarze opcjonalny
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Import](../msbuild/import-element-msbuild.md)|Importuje zawartość pliku jednego projektu do innego pliku projektu.|  
+|[Importujuj](../msbuild/import-element-msbuild.md)|Importuje zawartość pliku jednego projektu do innego pliku projektu.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   

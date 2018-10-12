@@ -1,7 +1,7 @@
 ---
 title: Projektowanie ostrzeżenia | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6f7ba768d27334052c16f13b114d990156bb4a59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d903b1ae2f708cb2866c2831debd4bd6b2abd55
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686035"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201555"
 ---
 # <a name="design-warnings"></a>Ostrzeżenia projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [ostrzeżenia projektu](https://docs.microsoft.com/visualstudio/code-quality/design-warnings).  
-  
 Projekt ostrzeżenia dotyczące pomocy technicznej dla zgodności z wytycznymi projektowania programu .NET Framework.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
@@ -93,7 +91,7 @@ Projekt ostrzeżenia dotyczące pomocy technicznej dla zgodności z wytycznymi p
 |[CA1057: Przeciążenia identyfikatora URI w postaci ciągu wywołują przeciążenia metody System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)|Typ deklaruje przeciążenia metody, które różnią się jedynie zastąpieniem parametru typu ciąg parametrem System.Uri. Przeciążenie, które przyjmuje parametr typu ciąg, nie wywołuje przeciążenia, które przyjmuje parametr identyfikatora URI.|  
 |[CA1058: Typy nie powinny rozszerzać pewnych typów podstawowych](../code-quality/ca1058-types-should-not-extend-certain-base-types.md)|Typ widoczny na zewnątrz rozszerza niektóre typy podstawowe. Użyj jednej z alternatyw.|  
 |[CA1059: Składowe nie powinny ujawniać pewnych typów konkretnych](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)|Konkretny typ jest typem posiadającym pełną implementację i dlatego może zostać utworzone jego wystąpienie. Aby włączyć powszechne użycie elementu członkowskiego, zamień konkretny typ, używając sugerowanego interfejsu.|  
-|[CA1060: Przenieś P/Invokes do klasy NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Metody platform Invocation, takich jak oznaczone <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> lub metody zdefiniowane przy użyciu słowa kluczowego Declare w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], dostęp do kodu niezarządzanego. Metody te powinny być klasami NativeMethods, SafeNativeMethods lub UnsafeNativeMethods.|  
+|[CA1060: Przenieś wywołania P/Invoke do klasy NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)|Metody platform Invocation, takich jak oznaczone <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> lub metody zdefiniowane przy użyciu słowa kluczowego Declare w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], dostęp do kodu niezarządzanego. Metody te powinny być klasami NativeMethods, SafeNativeMethods lub UnsafeNativeMethods.|  
 |[CA1061: Nie ukrywaj metod klasy podstawowej](../code-quality/ca1061-do-not-hide-base-class-methods.md)|Metoda w typie podstawowym jest ukryta przez metodę o identycznej nazwie typu pochodnego, gdy sygnatura parametru metody pochodnej różni się tylko typami, które są słabiej dziedziczone niż odpowiadające typy w sygnaturze parametru metody podstawowej.|  
 |[CA1062 Zweryfikuj argumenty metod publicznych](../code-quality/ca1062-validate-arguments-of-public-methods.md)|Wszystkie argumenty odwołania, które są przekazywane do metody widocznej na zewnątrz, powinny być sprawdzane pod kątem wartości null.|  
 |[CA1063: Zaimplementuj poprawnie interfejs IDisposable](../code-quality/ca1063-implement-idisposable-correctly.md)|Wszystkie typy IDisposable powinny poprawnie implementować wzorzec Dispose.|  

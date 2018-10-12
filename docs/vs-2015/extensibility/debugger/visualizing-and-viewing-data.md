@@ -1,7 +1,7 @@
 ---
 title: Wizualizacja i wyświetlanie danych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 10d83291a8d5820241ff2837b6b4a773c7b6fdba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a88969139c993163c88f2dc16fc8cbdb7a62feb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683489"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202777"
 ---
 # <a name="visualizing-and-viewing-data"></a>Wizualizacja i wyświetlanie danych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Visualizing i wyświetlanie danych](https://docs.microsoft.com/visualstudio/extensibility/debugger/visualizing-and-viewing-data).  
-  
 Wizualizatorów typu i przeglądarek niestandardowych danych obecnych w sposób, który jest szybko zrozumiałe dla dewelopera. Ewaluator wyrażeń (EE) może obsługiwać wizualizatorów typu innych firm także podać swój własny przeglądarek niestandardowych.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Określa, ile wizualizatorów typu i przeglądarek niestandardowych są skojarzone z typem obiektu przez wywołanie metody [GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) metody. Jeśli istnieje co najmniej jeden typ wizualizatora lub Przeglądarka niestandardowa dostępny, Visual Studio wywołuje [GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) metodę, aby pobrać listę tych wizualizatorów i osoby przeglądające (w rzeczywistości listę `CLSID`s, który implementuje wizualizatory i przeglądarki) i wyświetlane dla użytkownika.  

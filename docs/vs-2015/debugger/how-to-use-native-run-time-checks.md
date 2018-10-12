@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Korzystanie z macierzystego sprawdzania w czasie wykonywania | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -46,18 +46,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e90af82b5f3d7cd88d3b8488b0ebd9a4359b566f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1efa6852a9bb1c2ec6cd4cabf63ca761506cad3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630748"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220223"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Porady: Korzystanie z macierzystego sprawdzania w trakcie wykonywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: użycie macierzystego sprawdzania w trakcie wykonywania](https://docs.microsoft.com/visualstudio/debugger/how-to-use-native-run-time-checks).  
-  
 W programie Visual C++ można użyć natywny [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) do przechwytywania typowych błędów czasu wykonywania, takich jak:  
   
 -   Uszkodzenie wskaźnika stosu.  

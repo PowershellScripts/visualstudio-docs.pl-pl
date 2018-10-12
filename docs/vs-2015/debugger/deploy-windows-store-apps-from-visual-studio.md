@@ -1,7 +1,7 @@
 ---
 title: Wdrażanie aplikacji Windows Store za pomocą programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1212665b8e7e1c28fa30f50c1cd64a0dc5c217bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 540a335365102f279f62f0707ee3cf7cc4fe1b53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679756"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196108"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Wdrażanie aplikacji Windows Store za pomocą programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Deploy Windows Store apps za pomocą programu Visual Studio](https://docs.microsoft.com/visualstudio/debugger/deploy-windows-store-apps-from-visual-studio).  
-  
 Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content")  
   
  Funkcjonalność wdrożenia programu Visual Studio tworzy i rejestruje aplikacje Windows Store, które są tworzone za pomocą programu Visual Studio na urządzeniu docelowym. Dokładnie, jak aplikacja jest zarejestrowana, zależy od tego, czy urządzenie docelowe jest lokalnym lub zdalnym:  

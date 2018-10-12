@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Tworzenie niestandardowego programu inicjującego wyświetlającego monit zasad ochrony prywatności | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 790aa1c67ef8c76e404876bd61a42d4b286892da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4184e8400c50c518b461a0877f06c54db5f84927
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628150"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217967"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Wskazówki: tworzenie niestandardowego programu inicjującego wyświetlającego prywatny monit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: Tworzenie niestandardowego programu inicjującego wyświetlającego monit zachowania](https://docs.microsoft.com/visualstudio/deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt).  
-  
 Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zestawy za pomocą nowszej wersji plików i wersje zestawów stają się dostępne. Aby upewnić się, że klienci wyrazić zgodę na to zachowanie, możesz wyświetlić monit o prywatności do nich. Następnie mogą wybrać, czy można udzielić uprawnienia do aplikacji w celu automatycznej aktualizacji. Jeśli aplikacja nie może być aktualizowane automatycznie, nie jest instalowana.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  

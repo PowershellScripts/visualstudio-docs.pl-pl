@@ -1,7 +1,7 @@
 ---
 title: Wyświetlanie danych w debugerze | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 048f1a531c9de81c8ba316449835b022e4393222
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6d90342e97e4e331cacd87adf33d9cc7e434576
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629499"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204363"
 ---
 # <a name="viewing-data-in-the-debugger"></a>Wyświetlanie danych w debugerze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wyświetlanie danych w debugerze](https://docs.microsoft.com/visualstudio/debugger/viewing-data-in-the-debugger).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Debugera zawiera szereg narzędzi do inspekcji i modyfikacji stanu programu. Większość tych narzędzi działa tylko w trybie przerwania.  
   
 ## <a name="datatips"></a>DataTips  

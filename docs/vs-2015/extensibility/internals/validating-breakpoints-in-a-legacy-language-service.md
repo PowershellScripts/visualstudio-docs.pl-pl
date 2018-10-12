@@ -1,7 +1,7 @@
 ---
 title: Sprawdzanie poprawności punktów przerwania w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3fbfd2ca8ec3377d8c7d97e38fb4669a2d2042b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2739bfd8807552653e7bb302e5e5efad2835529b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685351"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216843"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Sprawdzanie poprawności punktów przerwania w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [sprawdzanie poprawności punktów przerwania w starszej wersji usługi językowej](https://docs.microsoft.com/visualstudio/extensibility/internals/validating-breakpoints-in-a-legacy-language-service).  
-  
 Punkt przerwania wskazuje, że wykonywanie programu powinna zostać przerwana w określonym punkcie, gdy są one uruchamiane w debugerze. Użytkownika można umieścić punkt przerwania w dowolnym wierszu w pliku źródłowym, ponieważ edytor ma nie wie, co stanowi prawidłowej lokalizacji punktu przerwania. Gdy debuger jest uruchamiany, wszystkie oznaczone punkty przerwania (nazywane oczekujących punktów przerwania) są powiązane z odpowiedniej lokalizacji w uruchomionego programu. W tym samym czasie, które punkty przerwania są sprawdzane w celu zapewnienia, że ich oznaczenie lokalizacje prawidłowy kod. Na przykład punkt przerwania w komentarz nie jest prawidłowy, ponieważ nie ma kodu w tej lokalizacji w kodzie źródłowym. Debuger wyłącza nieprawidłowy punktów przerwania.  
   
  Ponieważ usługa językowa wie o kodzie źródłowym, są wyświetlane, można sprawdzić punkty przerwania, zanim debuger jest uruchamiany. Można zastąpić <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> metodę, aby zwrócić zakresu, określając prawidłową lokalizacją punktu przerwania. Nadal jest weryfikowana lokalizacji punktu przerwania, gdy debuger jest uruchamiany, ale użytkownik jest powiadamiany nieprawidłowy punktów przerwania, bez konieczności oczekiwania na debugera do załadowania.  
@@ -108,5 +106,5 @@ namespace TestLanguagePackage
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Funkcje usługi starszego języka](../../extensibility/internals/legacy-language-service-features1.md)
+ [Funkcje starszej wersji usługi językowej](../../extensibility/internals/legacy-language-service-features1.md)
 

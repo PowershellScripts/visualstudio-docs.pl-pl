@@ -1,7 +1,7 @@
 ---
 title: Wykrywanie wymagań systemowych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c9bdb2a9f33f848ed0ba879aa178efd8dd96016
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1956130203498d32d1ee39d67121f7797dd41fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685407"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187479"
 ---
 # <a name="detecting-system-requirements"></a>Wykrywanie wymagań systemowych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wykrywanie wymagań systemowych](https://docs.microsoft.com/visualstudio/extensibility/internals/detecting-system-requirements).  
-  
 Pakietu VSPackage nie może działać, jeśli nie zainstalowano programu Visual Studio. Gdy Instalator systemu Microsoft Windows umożliwia zarządzanie instalacjami Twojego pakietu VSPackage, można skonfigurować Instalatora aby wykryć, czy jest zainstalowany program Visual Studio. Można również skonfigurować ją do sprawdzania systemu pod kątem innych wymagań, na przykład konkretnej wersji systemu Windows lub określoną ilość pamięci RAM.  
   
 ## <a name="detecting-visual-studio-editions"></a>Wykrywanie wersje programu Visual Studio  

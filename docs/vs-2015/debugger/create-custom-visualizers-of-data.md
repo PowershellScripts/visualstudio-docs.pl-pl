@@ -1,7 +1,7 @@
 ---
 title: Tworzenie niestandardowych Wizualizatorów danych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a025068d1657d9feb569a77731aa8bab517bae2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1fccaad8cb22bdd5193f2a674c5a9c6bafb49a7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679700"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217636"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Tworzenie niestandardowych Wizualizatorów danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Tworzenie niestandardowych Wizualizatorów danych](https://docs.microsoft.com/visualstudio/debugger/create-custom-visualizers-of-data).  
-  
 Wizualizatory są składnikami [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] interfejs użytkownika debugera. A *Wizualizator* tworzy okno dialogowe lub inny interfejs do wyświetlania zmiennej lub obiektu w sposób, który jest odpowiedni do jego typu danych. Na przykład wizualizatora HTML interpretuje ciąg HTML i wyświetla wynik, jak będzie wyglądał w oknie przeglądarki; Wizualizator mapy bitowej interpretuje strukturę mapy bitowej i wyświetla grafiki, którą reprezentuje. Niektóre wizualizatorów umożliwiają modyfikowanie, a także wyświetlić dane.  
   
  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] Debugera zawiera sześć wizualizatorów standardowych. Są to tekst, HTML, XML i JSON wizualizatorów, z których wszystkie pracować nad obiektów w postaci ciągów; z wizualizatora drzewa WPF, do wyświetlania właściwości WPF drzewa wizualnego w obiekcie; i Wizualizator zestawu danych, która działa w przypadku obiektów DataSet, DataView i DataTable. Dodatkowe wizualizatorów mogą być dostępne do pobrania firmy Microsoft Corporation w przyszłości i są dostępne w innych firm i społeczności. Ponadto możesz napisać własne wizualizatorów i zainstalować je w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] debugera.  
@@ -55,15 +53,15 @@ Wizualizatory są składnikami [!INCLUDE[vs_current_short](../includes/vs-curren
 >  Wizualizatory debugera wymagają większe uprawnienia niż jest to dozwolone przez aplikację do częściowego zaufania. W rezultacie wizualizatory nie są ładowane, gdy zostały zatrzymane w kod z częściowej relacji zaufania. Aby debugować za pomocą wizualizatora, należy uruchomić kod z pełnym zaufaniem.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Porady: pisanie wizualizatora](../debugger/how-to-write-a-visualizer.md)  
+ [Instrukcje: pisanie wizualizatora](../debugger/how-to-write-a-visualizer.md)  
   
- [Wskazówki: Pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
+ [Przewodnik: pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
   
- [Porady: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)  
+ [Instrukcje: instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)  
   
- [Porady: testowanie i debugowanie Wizualizera](../debugger/how-to-test-and-debug-a-visualizer.md)  
+ [Instrukcje: testowanie i debugowanie wizualizatora](../debugger/how-to-test-and-debug-a-visualizer.md)  
   
- [Wizualizator API — odwołanie](../debugger/visualizer-api-reference.md)  
+ [Interfejs API wizualizatora — dokumentacja](../debugger/visualizer-api-reference.md)  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

@@ -1,7 +1,7 @@
 ---
 title: IDebugField | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26bcd1d2a85e547aa733c6a8e7d906a822d0fdc0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5984e372574ddb104e90415870d3d79020066e3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692413"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218286"
 ---
 # <a name="idebugfield"></a>IDebugField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [IDebugField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugfield).  
-  
 Ten interfejs reprezentuje pole, oznacza to, że opis symboli lub typu.  
   
 ## <a name="syntax"></a>Składnia  
@@ -52,10 +50,10 @@ IDebugField : IUnknown
 |[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|Pobiera rodzaj pola.|  
 |[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Pobiera typ pola.|  
 |[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|Pobiera kontener pola.|  
-|[Getaddress —](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|Pobiera adres tego pola.|  
+|[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|Pobiera adres tego pola.|  
 |[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Pobiera rozmiar pola, w bajtach.|  
 |[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|Pobiera rozszerzone informacje dotyczące pola.|  
-|[równe](../../../extensibility/debugger/reference/idebugfield-equal.md)|Porównuje dwa pola.|  
+|[Equal](../../../extensibility/debugger/reference/idebugfield-equal.md)|Porównuje dwa pola.|  
 |[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Pobiera niezależnie od typu informacji na temat symboli lub typu.|  
   
 ## <a name="remarks"></a>Uwagi  

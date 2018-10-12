@@ -1,7 +1,7 @@
 ---
 title: Profilowanie wiersza polecenia usług | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc44d7f9ea822dfb7c5d68e6769e36a0ff9aeae4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86613c66cf7c52419d75a858d7ad7d7fbcf6a83d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673799"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178792"
 ---
 # <a name="command-line-profiling-of-services"></a>Profilowanie wiersza polecenia usług
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wiersza polecenia Profiling usług](https://docs.microsoft.com/visualstudio/profiling/command-line-profiling-of-services).  
-  
 W tej sekcji opisano procedury składowane i opcji zbierania danych wydajności dla usług Windows za pomocą [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] narzędzi profilowania z wiersza polecenia.  
   
 > [!NOTE]

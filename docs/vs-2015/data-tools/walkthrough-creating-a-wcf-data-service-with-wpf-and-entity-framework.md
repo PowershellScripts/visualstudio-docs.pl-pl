@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Tworzenie usługi danych WCF, WPF i Entity Framework | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43acbe17b826947dacd2d8c60b4cb28e5550ed40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6aeb16bb805bc6dda1328b424acbe48b6371437e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682556"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197954"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Wskazówki: Tworzenie usługi danych WCF, WPF i Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: Tworzenie usługi danych programu WCF za pomocą struktur WPF i Entity Framework](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework).  
-  
   
 W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] hostowaną w [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web, a następnie Uzyskaj dostęp z aplikacji Windows Forms.  
   
@@ -283,5 +281,5 @@ W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[ss_data_ser
   
 ## <a name="see-also"></a>Zobacz też  
  [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
- [Porady: Dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+ [Instrukcje: dodawanie, aktualizowanie lub usuwanie odwołań usługi danych WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 

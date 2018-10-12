@@ -1,7 +1,7 @@
 ---
 title: Architektura pakietu VSPackage kontroli źródła | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d2a76a877581085b6bdffd8522bfcea24ea9e24
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69cbcd1f8ab1f04f02d89839eed1e0cd67aa2fd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634078"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190466"
 ---
 # <a name="source-control-vspackage-architecture"></a>Architektura pakietu VSPackage kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Architektura pakietu VSPackage kontroli źródła](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-vspackage-architecture).  
-  
 Pakiet kontroli źródła jest pakietu VSPackage, który korzysta z usługi, których [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] środowisko IDE. W zamian pakiet kontroli źródła zapewnia jej funkcje, jak usługi kontroli źródła. Ponadto pakiet kontroli źródła jest bardziej wszechstronna alternatywna niż wtyczka do kontroli źródła do integracji kontroli źródła do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
  Wtyczka do kontroli źródła implementującej interfejs API wtyczki kontroli źródła przestrzega strict kontraktu. Na przykład wtyczka nie można zastąpić domyślną [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interfejsu użytkownika (UI). Ponadto API wtyczki kontroli źródła nie uwzględnia wtyczki do zaimplementowania swój własny model kontroli źródła. Pakiet kontroli źródła, jednak pozwala pokonać oba te ograniczenia. Pakiet kontroli źródła, ma pełną kontrolę nad możliwości kontroli źródła [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] użytkownika. Ponadto pakiet kontroli źródła można użyć własnej model kontroli źródła i logiki i można zdefiniować, wszystkie interfejsy użytkownika związane z kontroli źródła.  

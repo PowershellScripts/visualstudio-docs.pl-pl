@@ -1,7 +1,7 @@
 ---
 title: Korzystanie z adnotacji SAL w celu zmniejszenia liczby błędów kodu C i C++ | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 29
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdeb2c4d03d172d3bd2051077b3099515faf7b67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca7e8a406b02aa5d3b09d9ad588546ae3d965b89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682860"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207017"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Korzystanie z adnotacji SAL w celu redukowanie defektów kodu C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [przy użyciu adnotacji SAL w celu zmniejszenia defektów kodu C/C++](https://docs.microsoft.com/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects).  
-  
 SAL jest język adnotacji kodu źródłowego firmy Microsoft. Za pomocą funkcji adnotacje kodu źródłowego, możesz wprowadzać zamiar za kod jawnego. Narzędzia do analizy statycznej automatycznych dokładniej analizować kod znacznie mniejszej liczby wyników fałszywie dodatnich i fałszywych wyników negatywnych można również włączyć w tych adnotacji.  
   
  Artykuły w tej sekcji dokumentacji aspektów SAL, zapewniają odwołanie SAL składni i przykłady jego użycia.  
@@ -62,7 +60,7 @@ SAL jest język adnotacji kodu źródłowego firmy Microsoft. Za pomocą funkcji
   
      Wyświetla listę wewnętrznych adnotacji SAL.  
   
--   [Najlepsze praktyki i przykłady](../code-quality/best-practices-and-examples-sal.md)  
+-   [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)  
   
      Przykłady, które pokazują, jak korzystanie z adnotacji SAL. Wyjaśniono również typowych pułapek.  
   

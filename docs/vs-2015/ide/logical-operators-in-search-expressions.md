@@ -1,7 +1,7 @@
 ---
 title: Operatory logiczne w wyrażeniach wyszukiwania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0cf55bbdc025b4aabd13f7ded72c2ea69386a61b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8337c455ac283e7b9abbf70c39493b31c01a7d06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630227"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212540"
 ---
 # <a name="logical-operators-in-search-expressions"></a>Operatory logiczne w wyrażeniach wyszukiwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [operatory logiczne w wyrażeniach wyszukiwania](https://docs.microsoft.com/visualstudio/ide/logical-operators-in-search-expressions).  
-  
 Za pomocą operatorów logicznych, można uściślić wyszukiwanie zawartości, tworząc bardziej złożonych wyszukiwania z tymi prostsze. Jak pokazano w poniższej tabeli, operatory logiczne Określanie wielu warunków wyszukiwania powinny być one łączone w zapytaniu wyszukiwania.  
   
 > [!IMPORTANT]
@@ -43,7 +41,7 @@ Za pomocą operatorów logicznych, można uściślić wyszukiwanie zawartości, 
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady dotyczące wyszukiwania pełnotekstowego](../ide/full-text-search-tips.md)   
- [Lokalizowanie informacji](../ide/locate-information.md)
+ [Znajdowanie informacji](../ide/locate-information.md)
 
 
 

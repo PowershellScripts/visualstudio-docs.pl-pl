@@ -1,7 +1,7 @@
 ---
 title: Obsługa fragmentów kodu w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83fcde82b2b4b509745c8a81045f01b822620fce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 71098c0dda7c06f446658c4970d0b6cf2e35e55e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630717"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198513"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Obsługa fragmentów kodu w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Obsługa fragmentów kodu w starszej wersji usługi językowej](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-code-snippets-in-a-legacy-language-service).  
-  
 Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego. Fragmentem jest oparty na składni XML szablonu przy użyciu zestawu pól. Te pola są wyróżnione po tym fragmencie kodu jest wstawiany i mogą mieć różne wartości w zależności od kontekstu, w którym wstawieniu fragmentu kodu. Po wstawieniu fragmentu kodu, usługa językowa można sformatować fragment kodu.  
   
  Fragment kodu jest wstawiana w trybie edycji specjalne, który umożliwia pola fragment kodu, aby można go znaleźć za pomocą klawisza TAB. Pola może obsługiwać menu rozwijane w stylu funkcji IntelliSense. Użytkownik zobowiązuje fragment kodu do pliku źródłowego, wpisując ENTER lub klawisz ESC. Aby dowiedzieć się więcej na temat fragmentów kodu, zobacz [fragmenty kodu](../../ide/code-snippets.md).  

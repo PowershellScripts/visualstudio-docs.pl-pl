@@ -1,7 +1,7 @@
 ---
 title: Pole wyszukiwania polecenia | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22ced396f8a18cf2a665ed7a1ba1016b16e44c8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e818df222e9b7343facc989c1b61be30c098b64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42675201"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172578"
 ---
 # <a name="findcommand-box"></a>Find/Command — Pole
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [pole wyszukiwania polecenia](https://docs.microsoft.com/visualstudio/ide/find-command-box).  
-  
 Można wyszukać tekst i uruchomić polecenia programu Visual Studio z **Find/Command** pole. **Find/Command** pole jest nadal dostępne jako formant paska narzędzi, ale nie jest już domyślnie widoczne. Możesz wyświetlić **Find/Command** pola, wybierając **apletu Dodaj lub usuń przyciski** na **standardowa** narzędzi, a następnie wybierając **znaleźć**.  
   
  Aby uruchomić [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] polecenia, należy poprzedzić go znakiem większe niż (>).  

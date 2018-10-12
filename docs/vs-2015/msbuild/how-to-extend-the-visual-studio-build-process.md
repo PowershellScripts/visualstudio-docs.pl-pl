@@ -1,7 +1,7 @@
 ---
 title: 'Porady: rozszerzanie procesu kompilacji programu Visual Studio | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa46b55745fcd07ddbc8e66804f5df4125c244e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f318f6092c24c58399b40c7a20c967a89ca5219
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677214"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191636"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Porady: rozszerzanie procesu kompilacji programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Rozszerzanie programu Visual Studio procesu kompilacji](https://docs.microsoft.com/visualstudio/msbuild/how-to-extend-the-visual-studio-build-process).  
-  
   
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Procesu kompilacji jest definiowany przez szereg [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] plików .targets, które są importowane do pliku projektu. Jeden z tych plików zaimportowanych Microsoft.Common.targets, można rozszerzyć do umożliwiają uruchamianie niestandardowych zadań w kilku miejscach w procesie kompilacji. W tym temacie opisano dwie metody, można użyć, aby rozszerzyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] procesu kompilacji:  
   
@@ -136,7 +134,7 @@ Najnowszą wersję tego tematu znajduje się w temacie [porady: Rozszerzanie pro
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio Integration](../msbuild/visual-studio-integration-msbuild.md)   
  [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)   
- [. Pliki elementów docelowych](../msbuild/msbuild-dot-targets-files.md)
+ [Pliki Targets](../msbuild/msbuild-dot-targets-files.md)
 
 
 

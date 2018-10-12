@@ -1,7 +1,7 @@
 ---
 title: Współtworzenie dialogowego Dodawanie nowego elementu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5fcbac8b9e26bcca5a588846c14972156761d5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7e9ce7df2adc05468a27de5f4eaac52c68a07e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633395"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215894"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>Dodawanie elementów do okna dialogowego Dodawanie nowego elementu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [przyczyniających się do dodawania nowego elementu okno dialogowe](https://docs.microsoft.com/visualstudio/extensibility/internals/contributing-to-the-add-new-item-dialog-box).  
-  
 Podtypu projektu może zapewnić pełną nowy katalog elementów dla **Dodaj nowy element** okno dialogowe, rejestrując **elementu Dodawanie** szablonów w ramach `Projects` podklucza rejestru.  
   
 ## <a name="registering-add-new-item-templates"></a>Rejestrowanie szablonów Dodaj nowy element  

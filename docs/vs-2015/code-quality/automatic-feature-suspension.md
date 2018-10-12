@@ -1,7 +1,7 @@
 ---
 title: Automatyczne wstrzymanie funkcji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,15 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 281a4cbfb7bb1564af698cf4e745d56207f3e58e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8aee8f4ef46d3621bf569b260d943180abd7ad5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686787"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178181"
 ---
 # <a name="automatic-feature-suspension"></a>Automatyczne wstrzymanie funkcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [automatyczne wstrzymanie funkcji](https://docs.microsoft.com/visualstudio/code-quality/automatic-feature-suspension).
-
 Jeśli Twoje dostępnej pamięci systemowej kwalifikuje się do 200MB lub mniej, Visual Studio wyświetla następujący komunikat w edytorze kodu.
 
  ![Tekst alertu zawieszanie pełnej analizy rozwiązania](../code-quality/media/fsa-alert.png "FSA_Alert")
@@ -68,6 +65,6 @@ Ponadto używane dla operacji programu Visual Studio wewnętrznych pamięci podr
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Porady: Włączanie i wyłączanie pełnej analizy rozwiązania](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
+- [Instrukcje: Włączanie i wyłączanie pełnej analizy rozwiązania](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Podstawy dotyczące odzyskiwania pamięci](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [Zagadnienia dotyczące wydajności w przypadku dużych rozwiązań](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

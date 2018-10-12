@@ -1,7 +1,7 @@
 ---
 title: Inne, XML, Edytor tekstu, okno dialogowe Opcje | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d5ef4588689360bb3ebf6465ff77b09809865cbb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a58ef682ec269ebf83cb72bfbd7801da1fc17c64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194509"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Inne, XML, Edytor tekstu, Opcje, okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [różne, XML, Edytor tekstu, okno dialogowe Opcje](https://docs.microsoft.com/visualstudio/xml-tools/miscellaneous-xml-text-editor-options-dialog-box).  
-  
   
 To okno dialogowe umożliwia zmianę ustawień automatycznego uzupełniania i schematu edytora XML. Możesz uzyskać dostęp **opcje** okno dialogowe z **narzędzia** menu.  
   

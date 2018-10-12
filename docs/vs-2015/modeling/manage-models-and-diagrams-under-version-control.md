@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie modelami i diagramami w ramach kontroli wersji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1c2cc85b5ae94e95ef5f1e07a6d3ca13663fbb44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4aa1da880195e3566460d8169c6eed4e81bb0fb1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684129"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187572"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Zarządzanie modelami i diagramami w ramach kontroli wersji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Zarządzanie modelami i diagramami w ramach kontroli wersji](https://docs.microsoft.com/visualstudio/modeling/manage-models-and-diagrams-under-version-control).  
-  
 Zarządzać różne wersje usługi projektów i diagramów modelowania, łącznie z mapy kodu (pliki .dgml) za pomocą [Użyj kontroli wersji serwera Team Foundation lub Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); albo z lokalnego serwera Team Foundation Server lub w chmurze za pomocą Visual Studio Team Services.  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługuje tę funkcję, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

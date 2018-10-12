@@ -1,7 +1,7 @@
 ---
 title: Przykłady debugowania programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 591bcb7808ed7429a3b663f7d18adf50a6c753b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64b5c47c769901455b02d6b08f859562846a0c0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630133"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183212"
 ---
 # <a name="visual-studio-debugging-samples"></a>Przykłady debugowania w programie Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Visual Studio debugowanie próbki](https://docs.microsoft.com/visualstudio/extensibility/debugger/visual-studio-debugging-samples).  
-  
 Dwa przykłady pokazują, jak rozszerzyć debugera programu Visual Studio przy użyciu [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
 -   Przykładowe ewaluatora wyrażeń debugera, dla języków zarządzanych, znajduje się w [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. W [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] okna, kliknij przycisk **przykłady** kliknij pozycję **wszystkich** lub **C#** listy języków, a następnie kliknij przycisk **debugera**.  

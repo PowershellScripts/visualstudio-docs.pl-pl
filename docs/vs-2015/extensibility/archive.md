@@ -1,7 +1,7 @@
 ---
 title: Archiwum | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: eb92f40d-c0f0-42a9-8388-97ba0476efdf
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e54133d110eeb042aebd15c3317c241d7d5d8646
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f990854b23bae9d193173fceb37b0e3f2a13a9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685553"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191038"
 ---
 # <a name="archive"></a>Archiwum
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [archiwum](https://docs.microsoft.com/visualstudio/extensibility/archive).  
-  
 Ta sekcja zawiera dyskusje technologii rozszerzalności programu Visual Studio, nadal są obsługiwane, ale mają zastąpienie technologie, które są nowsze.  
   
 ## <a name="legacy-interfaces-in-the-editor"></a>Interfejsy starszej wersji w edytorze  

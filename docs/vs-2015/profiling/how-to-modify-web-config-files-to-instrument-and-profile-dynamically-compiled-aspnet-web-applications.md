@@ -1,7 +1,7 @@
 ---
 title: 'Porady: modyfikowanie plików Web.Config do Instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci Web ASP.NET | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2b9f0220d2b25b9bf7f3e319ef8a63ae5ea3a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690770"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176309"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Porady: modyfikowanie plików Web.Config w celu instrumentowania i profilowania dynamicznie skompilowanych aplikacji sieci ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: modyfikowanie plików Web.Config w celu Instrument i profilu dynamicznie skompilowanych aplikacji sieci Web ASP.NET](https://docs.microsoft.com/visualstudio/profiling/how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications).  
-  
 Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metody Instrumentacji narzędzi profilowania do zbierania danych o chronometrażu, dane alokacji pamięci .NET i danych o okresie istnienia obiektu platformy .NET z dynamicznie kompilowany [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web.  
   
  W tym temacie opisano sposób modyfikowania pliku konfiguracji web.config, aby włączyć Instrumentację oraz profilowanie [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web.  
@@ -79,7 +77,7 @@ Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metody Instrumentacj
   
     |Nazwa atrybutu|Wartość atrybutu|  
     |--------------------|---------------------|  
-    |**Wersja**|**10.0.0.0**|  
+    |**version**|**10.0.0.0**|  
     |**href**|`PathToASPNetHelperDll`|  
   
      `PathToASPNetHelperDll` jest adres URL pliku Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Jeśli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jest zainstalowany w lokalizacji domyślnej **href** . wartość powinna być `C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL`  
@@ -230,7 +228,7 @@ Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] metody Instrumentacj
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: Instrumentacja dynamicznie skompilowanej ASP.NET aplikacji i zbieranie szczegółowych danych o chronometrażu](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
- [Porady: Instrumentacja dynamicznie skompilowanej ASP.NET aplikacji i zbieranie danych pamięci](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+ [Instrukcje: instrumentacja dynamicznie skompilowanej aplikacji ASP.NET i zbieranie danych pamięci](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
 
 
 

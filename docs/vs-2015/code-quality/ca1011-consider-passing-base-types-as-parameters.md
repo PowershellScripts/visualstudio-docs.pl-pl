@@ -1,7 +1,7 @@
 ---
 title: 'CA1011: Rozważ przekazanie typów podstawowych jako parametrów | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a2ddf1e4f1edc319fdc5744878d4f962ce5b46bb
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 71bf8247fca736fd1257ec7489c71752cd9cc21a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902991"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220158"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Należy rozważyć przekazywanie typów bazowych jako parametrów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [CA1011: rozważ przekazanie typów podstawowych jako parametrów](https://docs.microsoft.com/visualstudio/code-quality/ca1011-consider-passing-base-types-as-parameters).
-
 |||
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|

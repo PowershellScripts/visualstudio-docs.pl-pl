@@ -1,7 +1,7 @@
 ---
 title: Ustawienia dla konfiguracji debugowania w języku C# projektu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d3a3df064d3014e4f468b73b7f6384b6f66657d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d5526f3f10fbb13b7d84b0edf846453e09bc43d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682315"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183732"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Ustawienia projektu dla konfiguracji debugowania w C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [ustawienia projektu dla języka C# Debuguj konfiguracje](https://docs.microsoft.com/visualstudio/debugger/project-settings-for-csharp-debug-configurations).  
-  
 Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka C# w **stron właściwości** zgodnie z opisem w oknie [konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md). W poniższej tabeli przedstawiono, gdzie można znaleźć ustawienia związane z debugerem w **stron właściwości** okna.  
   
 > [!WARNING]

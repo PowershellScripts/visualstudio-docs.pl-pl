@@ -1,7 +1,7 @@
 ---
 title: Dodawanie adnotacji do zachowania blokującego | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f34eb22d56cc6a1e47e07229a5b3e922aee5c386
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 881fa2a0355c1524855008d508163a3012f95dff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627568"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187515"
 ---
 # <a name="annotating-locking-behavior"></a>Dodawanie adnotacji do zachowania blokującego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dodawanie adnotacji do zachowania blokującego](https://docs.microsoft.com/visualstudio/code-quality/annotating-locking-behavior).  
-  
 Aby uniknąć błędów współbieżności w programach wielowątkowych, zawsze postępuj zgodnie z odpowiednią dyscypliny blokowania i korzystanie z adnotacji SAL.  
   
  Współbieżność usterki są bardzo trudne do odtworzenia, diagnozowanie i debugowanie, ponieważ są one deterministyczna. Uzasadnienie o wątku z przeplotem jest trudne w najlepszym i staje się niepraktyczne, projektując treści kodu, który ma więcej niż kilka wątków. Dlatego jest dobrym rozwiązaniem, postępuj zgodnie z blokowaniem dyscypliny w programach wielowątkowych. Na przykład obeying kolejności blokady podczas uzyskiwania blokady wielu pomaga uniknąć zakleszczenia i uzyskiwanie właściwego guarding blokady przed uzyskaniem dostępu do zasobu udostępnionego zapobiega wyścigu.  

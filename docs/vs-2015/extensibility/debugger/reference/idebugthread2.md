@@ -1,7 +1,7 @@
 ---
 title: IDebugThread2 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5a19e207e0c5f23c8f757e428789dfc265bb19b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cdd6d15d5ac5547502b1b7dbc4c4f60a0a0e5750
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678504"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189029"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [IDebugThread2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugthread2).  
-  
 Ten interfejs reprezentuje wątku działającego w programie.  
   
 ## <a name="syntax"></a>Składnia  
@@ -53,13 +51,13 @@ IDebugThread2 : IUnknown
 |Metoda|Opis|  
 |------------|-----------------|  
 |[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)|Pobiera listę ramek stosu dla tego wątku.|  
-|[Getname —](../../../extensibility/debugger/reference/idebugthread2-getname.md)|Pobiera nazwę wątku.|  
-|[Setthreadname —](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)|Określa nazwę wątku.|  
+|[GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md)|Pobiera nazwę wątku.|  
+|[SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md)|Określa nazwę wątku.|  
 |[GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)|Pobiera program, w którym jest uruchomiony wątek.|  
 |[CanSetNextStatement](../../../extensibility/debugger/reference/idebugthread2-cansetnextstatement.md)|Określa, czy można ustawić następnej instrukcji w kontekst stosu danej ramki i kod.|  
 |[SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md)|Ustawia następną instrukcję do kontekstu stosu danej ramki i kod.|  
 |[GetThreadId](../../../extensibility/debugger/reference/idebugthread2-getthreadid.md)|Pobiera identyfikator wątku systemu.|  
-|[Wstrzymywanie](../../../extensibility/debugger/reference/idebugthread2-suspend.md)|Wstrzymuje działanie wątku.|  
+|[Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)|Wstrzymuje działanie wątku.|  
 |[Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)|Wznawia działanie wątku.|  
 |[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)|Pobiera właściwości, które opisują wątku.|  
 |[GetLogicalThread](../../../extensibility/debugger/reference/idebugthread2-getlogicalthread.md)|Pobiera logiczne wątek skojarzony z tym wątku fizycznym.|  

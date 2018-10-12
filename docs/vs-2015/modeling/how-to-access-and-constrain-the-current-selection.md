@@ -1,7 +1,7 @@
 ---
 title: 'Porady: dostęp i ograniczyć bieżące zaznaczenie | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 308187842eeaed8e216336ab84c6e9036c1ced70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8ff7ae0b0e006528b11604f54dc74170857cf7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691622"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187580"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Porady: ograniczenie bieżącego wyboru i uzyskiwanie dostępu do niego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: dostęp i ograniczyć bieżące zaznaczenie](https://docs.microsoft.com/visualstudio/modeling/how-to-access-and-constrain-the-current-selection).  
-  
 Kiedy piszesz obsługi polecenia lub gestu dla języka specyficznego dla domeny, można określić elementu użytkownik kliknął prawym przyciskiem myszy. Można również uniemożliwić niektórych kształtów lub pól są zaznaczone. Na przykład można rozmieścić, że po kliknięciu ikony dekorator kształtu, który go zawiera zamian zostanie wybrany. Ograniczając zaznaczenia w ten sposób powoduje zmniejszenie liczby programów obsługi, które trzeba napisać. Ponadto ułatwia dla użytkownika, który może kliknij w dowolnym miejscu w kształcie bez konieczności uniknąć dekoratora.  
   
 ## <a name="accessing-the-current-selection-from-a-command-handler"></a>Uzyskiwanie dostępu do bieżącego zaznaczenia z programem obsługi.  

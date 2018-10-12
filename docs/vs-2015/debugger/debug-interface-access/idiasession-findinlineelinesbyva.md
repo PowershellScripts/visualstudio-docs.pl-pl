@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findInlineeLinesByVA | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad822e5ca4a62c8a804dc7e8326abd80baccb897
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 697a2000ced432fb477091238bc0d76029e7b0b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684190"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218754"
 ---
 # <a name="idiasessionfindinlineelinesbyva"></a>IDiaSession::findInlineeLinesByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [IDiaSession::findInlineeLinesByVA](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findinlineelinesbyva).  
-  
 Pobiera wyliczenie, które umożliwia klientowi iteracyjne przeglądanie informacji o numerze wiersza wszystkich funkcji, które są śródwierszowych, bezpośrednio lub pośrednio, za pomocą symbolu określonego elementu nadrzędnego i znajdują się w określonym wirtualnego adresu (oceny luk w zabezpieczeniach).  
   
 ## <a name="syntax"></a>Składnia  

@@ -1,7 +1,7 @@
 ---
 title: Zapisywanie danych w bazie danych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93af342cca97d1e116b122a1e5387be1c182a42a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d085fd350c3757af4a24d659fe8b6ee30165e7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684018"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215166"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zapisać dane w bazie danych](https://docs.microsoft.com/visualstudio/data-tools/save-data-back-to-the-database).  
-  
   
 Zestaw danych jest kopii danych w pamięci. W przypadku zmodyfikowania tych danych jest dobrą praktyką, aby zapisać te zmiany w bazie danych. Możesz to zrobić na jeden z trzech sposobów:  
   
@@ -58,10 +56,10 @@ Zestaw danych jest kopii danych w pamięci. W przypadku zmodyfikowania tych dany
 |-----------|-----------------|  
 |[Wstawianie nowych rekordów do bazy danych](../data-tools/insert-new-records-into-a-database.md)|Jak przeprowadzić aktualizacje i wstawia przy użyciu obiektów TableAdapter lub polecenia|  
 |[Aktualizowanie danych za pomocą adaptera TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Jak przeprowadzić aktualizacje z TableAdapters|  
-|[Hierarchiczna aktualizacja](../data-tools/hierarchical-update.md)|Jak przeprowadzić aktualizacje z zestawu danych przy użyciu dwóch lub więcej powiązanych tabel|  
+|[Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)|Jak przeprowadzić aktualizacje z zestawu danych przy użyciu dwóch lub więcej powiązanych tabel|  
 |[Obsługiwanie wyjątku współbieżności](../data-tools/handle-a-concurrency-exception.md)|Jak obsługiwać wyjątki, gdy dwóch użytkowników podejmują próby zmiany te same dane w bazie danych, w tym samym czasie|  
 |[Zapisywanie danych przy użyciu transakcji](../data-tools/save-data-by-using-a-transaction.md)|Jak zapisać danych w ramach transakcji używanie system.Transactions — przestrzeń nazw i obiektu elementu TransactionScope|  
-|[Zapisywanie danych w ramach transakcji](../data-tools/save-data-in-a-transaction.md)|Jak zapisać danych w transakcji za pomocą system.Transactions — przestrzeń nazw|  
+|[Zapisywanie danych w transakcji](../data-tools/save-data-in-a-transaction.md)|Jak zapisać danych w transakcji za pomocą system.Transactions — przestrzeń nazw|  
 |[Zapisywanie danych w bazie danych (wiele tabel)](../data-tools/save-data-to-a-database-multiple-tables.md)|Jak edytować rekordy i zapisać zmiany w wielu tabel w bazie danych|  
 |[Zapisywanie danych z obiektu w bazie danych](../data-tools/save-data-from-an-object-to-a-database.md)|Sposób przekazywania danych z obiektu, który nie jest w zestawie danych do bazy danych za pomocą TableAdapter dbdirect — metody|  
 |[Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Jak wysyłać zapytania SQL bezpośrednio do bazy danych za pomocą TableAdapter|  

@@ -1,7 +1,7 @@
 ---
 title: 'Porady: tworzenie manifestu pakietu | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 6abbbb351d04251b4ef1c209f35652a91b11d8c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2941000e9fa2c6f1d9fd4835c9fd0b8fa1fd1b4f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182432"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Porady: tworzenie manifestu pakietu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: tworzenie manifestu pakietu](https://docs.microsoft.com/visualstudio/deployment/how-to-create-a-package-manifest).  
-  
 Aby wdrożyć wymagania wstępne dotyczące aplikacji, można użyć pakietu programu inicjującego. Pakiet programu inicjującego zawiera pojedynczy plik manifestu produktu ale manifest pakietu dla poszczególnych ustawień regionalnych. Zestawu funkcji wspólnych w różnych wersjach zlokalizowanych powinny należeć do manifestu produktu.  
   
  Aby uzyskać więcej informacji na temat manifestów pakietu zobacz [porady: tworzenie manifestu produktu](../deployment/how-to-create-a-product-manifest.md).  

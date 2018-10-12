@@ -1,7 +1,7 @@
 ---
 title: 'Diagramy sekwencji UML: Odwołanie | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94ae423e74e0d78389a196adf1185ebdfa062069
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ebadcc72e346aac26b227ff069e20ffd81a601e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195133"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>Diagramy sekwencji UML: Odwołanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [diagramy sekwencji UML: odwołanie](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-reference).  
-  
 W programie Visual Studio *diagram sekwencji* pokazuje interakcji, która reprezentuje sekwencję wiadomości między wystąpieniami klasy, składników, podsystemów lub podmiotów. Czas przepływy w dół do diagramu, a następnie przedstawia przepływ sterowania od jednego uczestnika do innego. Użyj diagramów sekwencji do wizualizacji, wystąpienia i zdarzenia, a nie klasy i metody. Więcej niż jedno wystąpienie tego samego typu mogą być wyświetlane na diagramie. Więcej niż jedno wystąpienie tego samego komunikatu może również zostać wyświetlony.  
   
  Diagramy sekwencji UML są częścią modelu UML i istnieją tylko w projektach modelowania UML. Aby utworzyć diagram sekwencji UML, na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**. Dowiedz się więcej na temat sposobu tworzenia i narysuj [diagramy sekwencji UML](../modeling/uml-sequence-diagrams-guidelines.md) lub [diagramów modelowania UML](../modeling/edit-uml-models-and-diagrams.md) ogólnie rzecz biorąc.  
@@ -71,7 +69,7 @@ W programie Visual Studio *diagram sekwencji* pokazuje interakcji, która reprez
  [Diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
  [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)   
  [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)
+ [Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)
 
 
 

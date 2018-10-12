@@ -1,7 +1,7 @@
 ---
 title: Praca z zestawami danych w aplikacjach n warstwowych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 61f3686488a460ef4c7091521c2165f575e76fa6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d05204edfd7c3cd5daecad3a1cb21ba5ba7e60d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676858"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205975"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Praca z zestawami danych w aplikacjach n-warstwowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Praca z zestawami danych w aplikacjach n warstwowych](https://docs.microsoft.com/visualstudio/data-tools/work-with-datasets-in-n-tier-applications).  
-  
   
 Aplikacje warstwowe — * są aplikacji biznesowych przetwarzających dane, które są rozdzielone na wiele warstw logiczne (lub *warstwy*). Innymi słowy aplikacja n warstwowa danych jest aplikacja, która jest dzielony na wiele projektów z warstwy dostępu do danych, warstwy logiki biznesowej i warstwy prezentacji każdego we własnym projekcie. Aby uzyskać więcej informacji, zobacz [N-warstwowa danych aplikacji — omówienie](../data-tools/n-tier-data-applications-overview.md).  
   
@@ -60,7 +58,7 @@ Aplikacje warstwowe — * są aplikacji biznesowych przetwarzających dane, któ
  [Dodawanie walidacji do n-warstwowego zestawu danych](../data-tools/add-validation-to-an-n-tier-dataset.md)  
  W tym artykule opisano gdzie dodać kod do wykonywania sprawdzania poprawności od zmieniających się danych.  
   
- [Przewodnik: Tworzenie aplikacji warstwowych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
+ [Przewodnik: tworzenie n-warstwowych aplikacji do obsługi danych](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
  Instrukcje krok po kroku dotyczące tworzenia typizowany zestaw danych i oddzielenie kodu TableAdapter i zestaw danych do wielu projektów.  
   
  [Wskazówki: Dodawanie walidacji do aplikacji warstwowych](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
@@ -72,11 +70,11 @@ Aplikacje warstwowe — * są aplikacji biznesowych przetwarzających dane, któ
  <xref:System.Data.TypedTableBase%601>  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Omówienie aplikacji N-warstwowa danych](../data-tools/n-tier-data-applications-overview.md)  
+ [N-warstwowe aplikacje do obsługi danych — omówienie](../data-tools/n-tier-data-applications-overview.md)  
   
- [Hierarchiczna aktualizacja](../data-tools/hierarchical-update.md)  
+ [Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)  
   
- [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
+ [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
   
  [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)  
   

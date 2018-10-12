@@ -1,7 +1,7 @@
 ---
 title: Kod zabezpieczenia dostępu dla aplikacji ClickOnce | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 71b9344e552cb03d65b0093b1d5e0707689ec6af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5cfc8ad2be56965f691b2c114d3908172f0edfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627981"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197980"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Zabezpieczenia dostępu kodu dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](https://docs.microsoft.com/visualstudio/deployment/code-access-security-for-clickonce-applications).  
-  
 Aplikacje ClickOnce są oparte na programie .NET Framework i podlegają ograniczeniom zabezpieczeń dostępu kodu. Z tego powodu jest ważne, że rozumiesz implikacje kodu dostępu zabezpieczeń i w związku z tym zapisu aplikacji ClickOnce.  
   
  Zabezpieczenia dostępu kodu jest mechanizm programu .NET Framework, która ułatwia ograniczenie dostępu kodu do chronionych zasobów i operacji. Należy skonfigurować uprawnienia zabezpieczeń dostępu kodu dla aplikacji ClickOnce do używania strefy, które są odpowiednie dla lokalizacji Instalatora aplikacji. W większości przypadków można wybrać **Internet** strefę dla ograniczony zestaw uprawnień lub **lokalny Intranet** strefę dla większy zestaw uprawnień.  

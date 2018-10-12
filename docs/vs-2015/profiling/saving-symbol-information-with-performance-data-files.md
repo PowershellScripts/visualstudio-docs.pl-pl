@@ -1,7 +1,7 @@
 ---
 title: Zapisywanie informacji o symbolach przy użyciu plików danych dotyczących wydajności | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98d8a981a1f186c87940cf0a63f5c72d91d56b1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a41cbbed95461245b701ead1e9c11e662bd02f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199775"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Zapisywanie informacji o symbolach w plików danych dotyczących wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zapisywanie informacji o symbolach w plików danych dotyczących wydajności](https://docs.microsoft.com/visualstudio/profiling/saving-symbol-information-with-performance-data-files).  
-  
 Jeśli używasz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE) do przeanalizowania plików i planujesz przenoszenia pliku VSP na innym komputerze, należy ustawić wydajność ustawienia projektu, aby zapisać lub *serializacji* symboli w Plik raportu. Zwiększa rozmiar pliku raportu. Serializacja symboli jest dwóch powodów:  
   
 -   Aby osadzić symbole kodu do raportu dotyczącego wydajności przed zestawów docelowych zostaną utracone z lokalizacji w magazyn tymczasowy.  

@@ -1,7 +1,7 @@
 ---
 title: Filtrując węzły | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2789676505588c2041abfd876a228fc456ee3607
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8046fcbeebe2af0c6c7ebb725ffe4ed6cfa263
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682123"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178584"
 ---
 # <a name="filter-nodes"></a>Węzły filtrów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [węzły filtru](https://docs.microsoft.com/visualstudio/designers/filter-nodes).  
-  
 W projektancie programu do cieniowania węzły filtru przekształcania danych wejściowych — na przykład próbkę koloru lub tekstury — na wartość koloru symboli. Te wartości kolorów symboli są często używane w innych — gdy chodzi o fotorealistyczne renderowanie, lub jako składników w innych efektów wizualnych.  
   
 ## <a name="filter-node-reference"></a>Odwołanie do węzła filtru  

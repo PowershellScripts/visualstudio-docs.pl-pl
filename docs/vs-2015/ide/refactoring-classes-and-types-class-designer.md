@@ -1,7 +1,7 @@
 ---
 title: Refaktoryzacja klas i typów (Projektant klas) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8704977447a7f7aa45b7991ae4451818dc4bfb58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 215030b511ecbddbda23073df464035887f8ef95
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678184"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207965"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refaktoryzacja klas i typów (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Refaktoryzacja klas i typów (Projektant klas)](https://docs.microsoft.com/visualstudio/ide/refactoring-classes-and-types-class-designer).  
-  
 Refaktoryzacja kodu możesz ułatwić zrozumienie, obsługa i bardziej wydajne, zmieniając jego wewnętrzną strukturę i sposób jej obiektów są zaprojektowane nie jego zachowanie zewnętrznych. Umożliwia ograniczenie prac, które należy wykonać i ryzyko wprowadzenia błędów podczas refaktoryzacji kodu języka Visual C# .NET, Visual Basic .NET lub C++ w projekcie programu Visual Studio w Projektancie klas i oknie Szczegóły klasy.  
   
 > [!NOTE]

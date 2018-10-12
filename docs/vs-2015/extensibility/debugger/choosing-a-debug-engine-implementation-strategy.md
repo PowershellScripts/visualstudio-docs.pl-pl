@@ -1,7 +1,7 @@
 ---
 title: Wybieranie strategii implementacji aparatu debugowania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8a9e449fddad18c3ff0e95786ab852745407e6a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 662102fbf74d9721fc8a93d85f5f8e694fba7ccd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674987"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212371"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Wybieranie strategii implementacji aparatu debugowania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Wybieranie strategii implementacji aparatu debugowania](https://docs.microsoft.com/visualstudio/extensibility/debugger/choosing-a-debug-engine-implementation-strategy).  
-  
 Architektura środowiska wykonawczego umożliwia określenie strategii implementacji aparatu (DE) debugowania. Aparat debugowania może zostać utworzony wewnątrz procesu program do debugowania, w trakcie Menedżer debugowania sesji programu Visual Studio (SDM) lub poza procesem do obu z nich. Poniższe wskazówki pomoże wybrać jeden z tych trzech strategii.  
   
 ## <a name="guidelines"></a>Wytyczne dotyczące  

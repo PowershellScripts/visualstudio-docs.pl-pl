@@ -1,7 +1,7 @@
 ---
 title: Debugowanie zarządzanego kodu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,28 +26,26 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efa999fabc0d27900900c6d1512cca3fde76043d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ba07591cf4682ef40579f58b290f6b26bb4c111
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695593"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211591"
 ---
 # <a name="debugging-managed-code"></a>Debugowanie zarządzanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [debugowanie kodu zarządzanego](https://docs.microsoft.com/visualstudio/debugger/debugging-managed-code).  
-  
 W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych aplikacji lub aplikacje napisane w językach przeznaczonych środowisko uruchomieniowe języka wspólnego, takich jak Visual Basic, C# i C++. Techniki opisane w tym miejscu są techniki wysokiego poziomu. Aby uzyskać więcej informacji, zobacz [za pomocą debugera](../debugger/debugger-basics.md).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Komunikaty diagnostyczne w oknie danych wyjściowych](../debugger/diagnostic-messages-in-the-output-window.md)  
  W tym artykule opisano <xref:System.Diagnostics.Debug> i <xref:System.Diagnostics.Trace> klas, za pomocą których można napisać komunikaty czasu wykonywania, aby **dane wyjściowe** okna. Te klasy zawierają metody danych wyjściowych, które umożliwiają informacji wyjściowych bez przerywania wynik wykonywania i informacje również przerywa wykonywanie, jeśli określony warunek zakończy się niepowodzeniem.  
   
- [Potwierdzenia w zarządzanym kodzie](../debugger/assertions-in-managed-code.md)  
+ [Asercje w kodzie zarządzanym](../debugger/assertions-in-managed-code.md)  
  W tym artykule opisano potwierdzenia w zarządzanym kodzie, których warunki, które określisz jako argumenty do badania `Assert` metody. Ponadto, ten temat zawiera przykładowy kod, informacje na temat korzystania z <xref:System.Diagnostics.Debug> i <xref:System.Diagnostics.Trace> metody klasy, zagadnienia dotyczące debugowania, jak i wydania wersji kodu, efekty uboczne assert argumentów, dostosowywanie assert zachowanie i plików konfiguracji.  
   
- [Instrukcje stop w Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
+ [Instrukcje „Stop” w języku Visual Basic](../debugger/stop-statements-in-visual-basic.md)  
  W tym artykule opisano `Stop` instrukcji, co stanowi alternatywę dla ustawienie punktu przerwania. Przykładowy kod znajduje się również, wraz z porównania między `Stop` instrukcji i `End` instrukcji, jak również między `Stop` i `Assert` instrukcji.  
   
  [Przewodnik: debugowanie formularza Windows Forms](../debugger/walkthrough-debugging-a-windows-form.md)  
@@ -68,7 +66,7 @@ W tej sekcji omówiono typowe problemy z debugowania i technik dla zarządzanych
  [Debugowanie LINQ i DLINQ](../debugger/debugging-linq.md)  
  W tym artykule omówiono techniki debugowania zapytań LINQ.  
   
- [Wskazówki: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Przewodnik: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Opisuje sposób używania **zadań równoległych** i **stosów równoległych** narzędzia systemu windows do debugowania aplikacji równoległej.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

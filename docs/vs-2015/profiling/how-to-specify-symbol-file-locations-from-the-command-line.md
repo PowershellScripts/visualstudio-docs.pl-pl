@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Określanie lokalizacji plików symboli z wiersza polecenia | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f482c839ffe98c7be8147bbed45fa9fda69b4c85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1661788c010d55586413060d1e79b3630fa2d89e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678435"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220067"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Porady: określanie lokalizacji plików symboli z wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Określanie lokalizacji plików symboli z wiersza polecenia](https://docs.microsoft.com/visualstudio/profiling/how-to-specify-symbol-file-locations-from-the-command-line).  
-  
 Aby wyświetlić informacje o symbolach, takich jak nazwy i numery wierszy, narzędzie wiersza polecenia VSPerfReport wymaga dostępu do plików symboli (.pdb) profilowanych składników i pliki systemu Windows. Pliki symboli są tworzone, gdy składnik został skompilowany. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport automatycznie przeszukuje następujące lokalizacje plików symboli:  
   
 -   Ścieżki określane w **symbolpath** opcji lub **_NT_SYMBOL_PATH** zmiennej środowiskowej.  
@@ -69,7 +67,7 @@ Aby wyświetlić informacje o symbolach, takich jak nazwy i numery wierszy, narz
   
  Następujące polecenie w wierszu polecenia VSPerfReport dodaje C:\Projects\Symbols katalog do ścieżki wyszukiwania, używając **symbolpath** opcji.  
   
- **VSPerfReport***MyApp* **której /SymbolPath:C:\Projects\Symbols .exe** 
+ **VSPerfReport***MyApp* **której /SymbolPath:C:\Projects\Symbols .exe**
 
 
 

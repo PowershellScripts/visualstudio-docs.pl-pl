@@ -1,7 +1,7 @@
 ---
 title: 'Porady: ponowne podpisywanie aplikacji i manifestów wdrożenia | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: d16dfa86c4620868178687bcde3323f3e55b31b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 734258871e72e6272abcd61c4efa1a00765f8a32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633706"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185721"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Porady: ponowne podpisywanie aplikacji i manifestów wdrożenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: ponowne podpisywanie aplikacji i manifestów wdrożenia](https://docs.microsoft.com/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests).  
-  
 Po wprowadzeniu zmian do właściwości wdrożenia w manifeście aplikacji dla aplikacji Windows Forms, aplikacji Windows Presentation Foundation (xbap) lub rozwiązań pakietu Office, musisz ją ponownie podpisać zarówno aplikację i manifesty wdrożenia za pomocą certyfikat. Ten proces pozwala upewnić się, że zmodyfikowany pliki nie są zainstalowane na komputerach użytkowników końcowych.  
   
  Inny scenariusz, w którym może ponownie podpisać manifesty jest, gdy Twoi klienci wymagają podpisać aplikację i manifesty wdrożenia za pomocą ich własnych certyfikatów.  

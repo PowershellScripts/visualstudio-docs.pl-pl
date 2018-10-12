@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Użyj kontekstu oparty na regułach interfejsu użytkownika dla rozszerzenia programu Visual Studio | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -9,18 +9,16 @@ ms.topic: article
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: dfe3e1645bd23c859a36f4de222472b8460fd305
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9a0f740232493d24cf1bdcd6decba338036e6c9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678180"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194704"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Porady: Użyj kontekstu oparty na regułach interfejsu użytkownika dla rozszerzenia programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [jak: oparty na regułach Użyj kontekstu interfejsu użytkownika dla rozszerzenia programu Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions).  
-  
 Program Visual Studio umożliwia ładowanie pakietów VSPackage przy pewnych dobrze znanych <xref:Microsoft.VisualStudio.Shell.UIContext>s zostaną aktywowane. Jednak tych kontekstach interfejsu użytkownika nie są bardzo wysokiej jakości szczegółowej, pozostawiając twórcy rozszerzeń Brak wyboru, ale do wyboru dostępne kontekstu interfejsu użytkownika, który aktywuje przed punktem chcieli naprawdę pakietu VSPackage do załadowania. Aby uzyskać listę znanych kontekstów interfejsu użytkownika, zobacz <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
   
  Ładowanie pakietów może mieć negatywny wpływ na wydajność i szybciej niż jest to konieczne ich załadowaniem nie jest najlepszym rozwiązaniem. Program Visual Studio 2015 wprowadzono pojęcie opartych na regułach kontekstów interfejsu użytkownika, mechanizm, który umożliwia twórcy rozszerzeń zdefiniować dokładne warunki, na jakich kontekstu interfejsu użytkownika jest aktywowany, a następnie załadować skojarzonych pakietów VSPackage.  

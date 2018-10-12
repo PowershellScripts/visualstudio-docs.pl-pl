@@ -1,7 +1,7 @@
 ---
 title: Interfejs użytkownika właściwości projektu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b9418603e13fad91aa9d40c2d05f6ebc1d83a5e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57c9bb58ab1d930c6beb2e1cfa9cc4b9b6ec52fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682533"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172294"
 ---
 # <a name="project-property-user-interface"></a>Interfejs użytkownika właściwości projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [interfejs użytkownika właściwości projektu](https://docs.microsoft.com/visualstudio/extensibility/internals/project-property-user-interface).  
-  
 Podtypu projektu można użyć elementów w projekcie **stron właściwości** okno dialogowe, ponieważ są one dostarczane przez projektu podstawowego, ukryć lub przygotowywanie kontrolek tylko do odczytu i całe strony dostarczony lub dodać strony specyficzne dla podtypu projektu do **Stron właściwości** okno dialogowe.  
   
 ## <a name="extending-the-project-property-dialog-box"></a>Rozszerzanie okno dialogowe właściwości projektu  

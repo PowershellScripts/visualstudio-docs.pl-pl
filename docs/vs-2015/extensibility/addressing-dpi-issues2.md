@@ -1,7 +1,7 @@
 ---
 title: Adresowanie Problemy2 DPI | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3cb14cf601633efa6bbb022d8d1a56e62cc0f9b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9d86204eb79eb0dd20db45d4ffe5c1f80c2e9dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677076"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194069"
 ---
 # <a name="addressing-dpi-issues"></a>Rozwiązywanie problemów z technologią DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [adresowania Problemy2 DPI](https://docs.microsoft.com/visualstudio/extensibility/addressing-dpi-issues2).  
-  
 Zwiększa liczbę urządzeń, które jest dostarczany z ekranami "o wysokiej rozdzielczości". Te ekrany, zwykle dokonują ponad 200 pikseli na cal (ppi). Korzystanie z aplikacji na tych komputerów będzie wymagać zawartości można skalować w do potrzeb wyświetlania zawartości w odległości normalnego widoku dla urządzenia. 2014 roku podstawowy cel wyświetlaczy o wysokiej gęstości są mobilni, urządzenia (tablety, laptopy clamshell i telefonów).  
   
  Windows 8.1 lub nowszy zawiera kilka funkcji, aby włączyć te maszyny pracować z Wyświetla i środowiska, w której komputer jest podłączony do obu o wysokiej gęstości i gęstość standardowa wyświetla się w tym samym czasie.  

@@ -1,7 +1,7 @@
 ---
 title: Tworzenie procesorów dyrektyw szablonu tekstowego T4 niestandardowego | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d97b87289be6f6fb685fe9f1b4e5ee4309bd0431
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4e0b6b325f2418c031f00defc0f28bd2fc6b3f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632521"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176933"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Tworzenie niestandardowych procesorów dyrektywy T4 dotyczącej szablonu tekstowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Tworzenie niestandardowych procesorów T4 dotyczącej tekstu szablonu dyrektywy](https://docs.microsoft.com/visualstudio/modeling/creating-custom-t4-text-template-directive-processors).  
-  
 *Proces przekształcania szablonu tekstowego* przyjmuje *szablon tekstowy* pliku jako dane wejściowe i tworzy plik tekstowy jako dane wyjściowe. *Aparatu przekształceń szablonu tekstu* kontroli procesu i aparat współdziała z hosta przekształcania szablonu tekstu i co najmniej jeden szablon tekstowy *procesorów dyrektyw* do ukończenia proces. Aby uzyskać więcej informacji, zobacz [proces przekształcania szablonu tekstowego](../modeling/the-text-template-transformation-process.md).  
   
  Aby utworzyć niestandardowy procesor dyrektywy, należy utworzyć klasę, która dziedziczy z <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> lub <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  

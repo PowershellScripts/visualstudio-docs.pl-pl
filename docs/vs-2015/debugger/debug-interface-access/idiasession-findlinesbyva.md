@@ -1,7 +1,7 @@
 ---
 title: Idiasession::findlinesbyva — | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 846eeebf8a84dd5fe6b24a568927fd7e4e22975e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50b65ac9647019380402f2ea4cd47b2e2b17dff5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690115"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216635"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [idiasession::findlinesbyva —](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findlinesbyva).  
-  
 Pobiera informacje o numerze wiersza dla wierszy znajdujących się w zakresie określony adres wirtualny (oceny luk w zabezpieczeniach).  
   
 ## <a name="syntax"></a>Składnia  

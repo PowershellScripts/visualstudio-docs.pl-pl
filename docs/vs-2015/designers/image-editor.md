@@ -1,7 +1,7 @@
 ---
 title: Edytor obrazów | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49149fcae2afa25c22132f23298d3dea6bccf60f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681846"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185773"
 ---
 # <a name="image-editor"></a>Edytor obrazów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [edytora obrazów](https://docs.microsoft.com/visualstudio/designers/image-editor).  
-  
 W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] edytora obrazów do wyświetlania i modyfikowania zasobów tekstur i obrazów.  
   
  Edytor obrazów można użyć do pracy z rodzajami zaawansowanych formaty tekstur i obrazów, które są używane w rozwoju aplikacji DirectX — w tym obsługę formatów plików obrazów popularnych i kodowanie kolorów, funkcje, takie jak kanałów alfa i mapowanie MIP oraz wielu wysoce skompresowany, przyspieszanych sprzętowo tekstury w formatach obsługiwanych przez DirectX.  
@@ -138,7 +136,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |**Wypełnienie**|Używa wybór koloru active do wypełnienia obszaru obrazu. Dotyczy region jest zdefiniowany jako pikseli, w których stosowane wypełnienie wraz z każdy piksel, który jest z nią połączona pikseli tego samego koloru i to ten sam kolor, sam. Jeśli wypełnienie jest stosowana w ramach aktywnego zaznaczenia, dotyczy region jest ograniczone przez zaznaczenie.<br /><br /> Domyślnie wybór koloru active jest zmieszana wraz z zainfekowanego region obrazu zgodnie z jego składnik alfa. Aby użyć wybór koloru active zastąpić dotyczy region, naciśnij i przytrzymaj klawisz Shift podczas używania narzędzia wypełnienia.|  
 |**Gumka**|Jeśli obraz, który obsługuje kanał alfa, ustawia piksele, aby całkowicie przezroczysty kolor. W przeciwnym razie piksele Ustawia kolor tła active.|  
 |**Wiersz**, **prostokąt**, **prostokąt zaokrąglony**, **wielokropka**|Rysuje kształt na obrazie. Można ustawić kolor i grubość konturu w **właściwości** okna.<br /><br /> Aby narysować elementu podstawowego, który ma równa szerokość i wysokość, naciśnij i przytrzymaj klawisz Shift podczas rysowania.|  
-|**Tekst**|Używa wybór koloru pierwszego planu, aby rysować tekst. Kolor tła jest określany przez wybór koloru tła. Dla przezroczyste tło wartość alfa wybór koloru tła musi być 0. Gdy obszaru tekstu jest aktywna, można ustalić, czy tekst jest rysowana obrysu wygładzanie i można ustawić tekst **wartość**, **czcionki**, **rozmiar**, styl i —**Bold**, **Kursywa**, lub **podkreślona**— w **właściwości** okna. Zawartość i wygląd tekstu jest aktualnie finalizowana, gdy region tekst nie jest już aktywna.|  
+|**Text**|Używa wybór koloru pierwszego planu, aby rysować tekst. Kolor tła jest określany przez wybór koloru tła. Dla przezroczyste tło wartość alfa wybór koloru tła musi być 0. Gdy obszaru tekstu jest aktywna, można ustalić, czy tekst jest rysowana obrysu wygładzanie i można ustawić tekst **wartość**, **czcionki**, **rozmiar**, styl i —**Bold**, **Kursywa**, lub **podkreślona**— w **właściwości** okna. Zawartość i wygląd tekstu jest aktualnie finalizowana, gdy region tekst nie jest już aktywna.|  
 |**Obróć**|Obrót 90 stopni w prawo.|  
 |**TRIM**|Przycina obraz do aktywnego zaznaczenia.|  
   
@@ -225,7 +223,7 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
 |----------|----------------|  
 |Wszystkie narzędzia i opcje|**Obróć o**<br /> Określa, w stopniach, czy zaznaczenie lub narzędzia efekt jest obracana wskazówek zegara.|  
 |**Ołówek**, **pędzla**, **Aerograf**, **Gumka**|**Grubość**<br /> Określa rozmiar obszaru, który jest zależna od narzędzia.|  
-|**Tekst**|**Wygładzanie**<br /> Rysuje tekst, który ma wygładzanie krawędzi. Dzięki temu tekst gładsze wygląd.<br /><br /> **Wartość**<br /> Tekst do narysowania.<br /><br /> **Czcionka**<br /> Czcionka używana ma zostać narysowany tekst.<br /><br /> **Rozmiar**<br /> Rozmiar tekstu.<br /><br /> **Bold**<br /> Sprawia, że czcionka pogrubienie.<br /><br /> **Kursywa**<br /> Sprawia, że czcionka italic.<br /><br /> **Podkreślony**<br /> Sprawia, że czcionka podkreślone.|  
+|**Text**|**Wygładzanie**<br /> Rysuje tekst, który ma wygładzanie krawędzi. Dzięki temu tekst gładsze wygląd.<br /><br /> **Wartość**<br /> Tekst do narysowania.<br /><br /> **Czcionka**<br /> Czcionka używana ma zostać narysowany tekst.<br /><br /> **Rozmiar**<br /> Rozmiar tekstu.<br /><br /> **Bold**<br /> Sprawia, że czcionka pogrubienie.<br /><br /> **Kursywa**<br /> Sprawia, że czcionka italic.<br /><br /> **Podkreślony**<br /> Sprawia, że czcionka podkreślone.|  
 |**Element 2-D**|**Wygładzanie**<br /> Rysuje podstawowych, które mają wygładzanie krawędzi. To daje im gładsze wygląd.<br /><br /> **Grubość**<br /> Określa grubość linii, który wchodzi w skład granicy podstawowego.<br /><br /> **Promień X**<br /> (Tylko w przypadku prostokąt zaokrąglony) Definiuje górną i dolną krawędzią element pierwotny zaokrąglania usługi radius.<br /><br /> **Promień Y**<br /> (Tylko w przypadku prostokąt zaokrąglony) Definiuje zaokrąglania usługi radius do lewej i prawej krawędzi element pierwotny.|  
 |**Ołówek**, **pędzla**, **Aerograf**, **podstawowego 2-D**|**kanały**<br /> Włącza lub wyłącza określony kolor kanały do wyświetlania i rysowania. Jeśli **widoku** jest ustawiona dla określonego kanału koloru, tym kanale jest widoczne na obrazie; w przeciwnym razie nie jest on widoczny. Jeśli **Rysowanie** ustawiono dla określonego kanału koloru, że kanał jest objęte za pomocą rysowania operacji; w przeciwnym razie, nie jest.|  
 |**Wybór Różdżka**, **wypełnienia**|**Na uszkodzenia**<br /> Definiuje maksymalną różnicę między sąsiadujących kolorów, w których są one traktowane jako podobnie, tak aby mniej lub bardziej podobne kolory zostały wprowadzone w ramach objęty lub wybranego regionu. Domyślnie wartość jest 32, co oznacza, że sąsiadujących pikseli w ciągu 32 odcienie koloru oryginalnego (jaśniejsze i ciemniejsze) są traktowane jako część obszaru.|  

@@ -1,7 +1,7 @@
 ---
 title: Zapytania Edytuj zapytanie, Zapisz (pakiet VSPackage kontroli) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8d1ab375ff40d141a0c40740a0052674ec13ef11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 612bd94ba360f496c08ea25fd1a45e15c88edb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680282"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172396"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>Edytowanie i zapisywanie zapytań (pakiet VSPackage kontroli kodu źródłowego)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zapytania Edytuj zapytanie Zapisz (pakiet VSPackage kontroli)](https://docs.microsoft.com/visualstudio/extensibility/internals/query-edit-query-save-source-control-vspackage).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] edytory może emitować zdarzenia zapytania Edytuj zapytanie Zapisz (QEQS). [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Klasy zastępczej kontroli źródła implementuje usługę QEQS tak, aby odbiorca zdarzenia QEQS. Zdarzenia te są następnie delegowane do kontroli źródła aktualnie aktywnego pakietu VSPackage. Implementuje pakietu VSPackage do kontroli źródła active <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> i jego metod. Metody `IVsQueryEditQuerySave2` interfejsu są zwykle nazywane bezpośrednio przed wykonaniem edycji dokumentu po raz pierwszy, i od razu, aby dokument został zapisany.  
   
 ## <a name="queryeditquerysave-events"></a>Zdarzenia QueryEditQuerySave  

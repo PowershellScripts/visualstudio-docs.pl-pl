@@ -1,7 +1,7 @@
 ---
 title: Dodawanie przełączników wiersza polecenia | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4a9b9041183b22612c36e98f502d01ee3b62e36
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a67e25b06f9b33f184280d0182cf96bfcda154db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685017"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188763"
 ---
 # <a name="adding-command-line-switches"></a>Dodawanie przełączników wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dodawanie przełączników wiersza polecenia](https://docs.microsoft.com/visualstudio/extensibility/adding-command-line-switches).  
-  
 Możesz dodać przełączniki wiersza polecenia, które dotyczą Twojego pakietu VSPackage, gdy jest wykonywana devenv.exe. Użyj <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> do deklarowania nazwę przełącznika i jego właściwości. W tym przykładzie przełącznika MySwitch zostanie dodany do podklasy pakietu VSPackage o nazwie **AddCommandSwitchPackage** bez argumentów i za pomocą pakietu VSPackage ładowane automatycznie.  
   
 ```csharp  
@@ -88,5 +86,5 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
  [Przełączniki wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md)   
  [Narzędzie CreatePkgDef](../extensibility/internals/createpkgdef-utility.md)   
- [. Pliki Pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+ [Pliki pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
 

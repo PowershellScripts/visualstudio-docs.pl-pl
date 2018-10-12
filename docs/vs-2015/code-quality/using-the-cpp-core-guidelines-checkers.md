@@ -1,7 +1,7 @@
 ---
 title: Za pomocą narzędzia do sprawdzania podstawowych wytycznych dotyczących języka C++ | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f7813659f63e14c22ee40dc28eaa5b2d029288e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fc975ab5c9c1e43b79ddd861bca3a61e9005f5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627454"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194093"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Za pomocą narzędzia do sprawdzania podstawowych wytycznych dotyczących języka C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [przy użyciu narzędzia do sprawdzania podstawowych wytycznych dotyczących języka C++](https://docs.microsoft.com/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers).  
-  
 Podstawowych wytycznych dotyczących języka C++ są przenośne zbiór wytycznych, reguł i najlepsze rozwiązania dotyczące programowania w języku C++, utworzone przez ekspertów z C++ i projektantów.  Program Visual Studio obsługuje teraz pakiety dodatku, tworzonych dodatkowe reguły dla kodu, narzędziami do analizowania sprawdzać Twój kod pod kątem zgodności z podstawowych wytycznych dotyczących języka C++, a także sugerują ulepszenia.  
   
 ## <a name="the-c-core-guidelines-project"></a>C++ podstawowych wytycznych dotyczących projektu  

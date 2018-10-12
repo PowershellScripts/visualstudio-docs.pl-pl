@@ -1,7 +1,7 @@
 ---
 title: Kontekst projektu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d1803f4a-24eb-44b0-b5d2-cb40c15534be
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 280864c69e75d37c73095320787d74e61a93ab38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 24db09c97b499ee10aaf5d84fa1d8eb328042a3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678149"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203323"
 ---
 # <a name="project-context"></a>Kontekst projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [kontekstem projektu](https://docs.microsoft.com/visualstudio/extensibility/internals/project-context).  
-  
 Gdy użytkownik dodaje lub współpracuje z projektów i elementów projektu, IDE używa pojęcie kontekstem projektu, aby określić, jak różne operacje, które powinny być wykonywane.  
   
  Zazwyczaj pliki są standardowy projekt obiektów tworzonych użytkownik jawnie, wybierając **nowy projekt** polecenia lub udostępnia, wybierając **Otwórz projekt** polecenie  **Plik** menu. W takich przypadkach pliki są tworzone i otwierane w ramach projektu, a typ projektu Określa kontekst dla edytowania dokumentu.  

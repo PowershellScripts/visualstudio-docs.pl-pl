@@ -1,7 +1,7 @@
 ---
 title: Projektowanie DataTables | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f952fbcf6da0185e4f9c1bd6a76b7d15d7f772a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7ff3bde70fb45f28bac10d5191bcc6fe3dc8afe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695506"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213710"
 ---
 # <a name="designing-datatables"></a>Projektowanie DataTables
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ ms.locfileid: "42695506"
  [Pobieranie danych do aplikacji](../data-tools/fetching-data-into-your-application.md)  
  Zawiera łącza do tematów wyjaśniających jak do wykonywania zapytań i procedur składowanych i ładowanie danych do zestawów danych.  
   
- [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+ [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
  Zawiera łącza do tematów, które opisują sposób wyświetlania danych w formularzach Windows Forms za pomocą formantów powiązanych z danymi.  
   
  [Edytowanie danych w aplikacji](../data-tools/editing-data-in-your-application.md)  

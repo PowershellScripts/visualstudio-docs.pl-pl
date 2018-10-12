@@ -1,7 +1,7 @@
 ---
 title: 'Debugowanie F # | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5790b81eedb1a1bb9dc65b7ce053089c3bc1470
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd722e40a0579181e3c361706f0775aaf350c341
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633197"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209576"
 ---
 # <a name="debugging-f"></a>Debugowanie F# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [debugowanie F #](https://docs.microsoft.com/visualstudio/debugger/debugging-f-hash).  
-  
 Debugowanie F # jest podobne do debugowania jakiegokolwiek języka zarządzanego, z pewnymi wyjątkami:  
   
 -   **Autos** okna nie są wyświetlane zmienne F #.  
@@ -43,7 +41,7 @@ Debugowanie F # jest podobne do debugowania jakiegokolwiek języka zarządzanego
 -   Debuger nie może rozpoznać wyrażeń języka F #. Aby wprowadzić wyrażenie w oknie debugera lub okno dialogowe podczas debugowania F #, wykonuje translację wyrażenia w języku C# składni. Podczas tłumaczenia jest wyrażenie F # do języka C#, upewnij się, że należy pamiętać, że C# używa == jako operator porównania dla równości i że F # używa pojedynczego =.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
+ [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
 
 
 

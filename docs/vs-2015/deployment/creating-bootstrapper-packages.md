@@ -1,7 +1,7 @@
 ---
 title: Tworzenie pakietów programu inicjującego | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ee6badf48d0d196001c948495f9b658114c66ff6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9224314dbcb5fcb424708c7dad4ca674af661604
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679625"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208916"
 ---
 # <a name="creating-bootstrapper-packages"></a>Tworzenie pakietów programu inicjującego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [tworzenie pakietów programu inicjującego](https://docs.microsoft.com/visualstudio/deployment/creating-bootstrapper-packages).  
-  
 Setup program jest generycznym Instalatorem, który można skonfigurować, aby wykrywać i instalować składników pakietu redystrybucyjnego, takie jak pliki Instalatora Windows (msi) i programy wykonywalne. Instalator jest również znany jako program inicjujący. Jest programowane za pomocą zestawu manifestów XML, które określają metadane w celu zarządzania instalacją składnika.  
   
  Program inicjujący najpierw wykrywa, czy dowolny z wymagań wstępnych są już zainstalowane. Jeśli wymagania wstępne nie są zainstalowane, najpierw program inicjujący wyświetli umów licencyjnych. Po drugie, po użytkownik końcowy akceptuje umów licencyjnych, rozpocznie się instalacja dla wymagań wstępnych. W przeciwnym razie jeśli zostaną wykryte wszystkie wymagania wstępne, program inicjujący tylko uruchamia Instalatora aplikacji.  

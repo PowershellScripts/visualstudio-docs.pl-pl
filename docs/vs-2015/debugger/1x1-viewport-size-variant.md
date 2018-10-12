@@ -1,7 +1,7 @@
 ---
 title: Wariant rozmiaru okienka ekranu 1 x 1 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7c0052a2d59dbcef1d7ea32eab789ab955750f3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea21a12cb8bf1b37524a4b563c70a43eeed6f7f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695638"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184876"
 ---
 # <a name="1x1-viewport-size-variant"></a>Wariant rozmiaru 1x1 okienka ekranu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wariant rozmiaru okienka ekranu 1 x 1](https://docs.microsoft.com/visualstudio/debugger/graphics/1x1-viewport-size-variant).  
-  
 Maksymalne wymiary okienka ekranu na wszystkie elementy docelowe renderowania na 1 x 1 pikseli.  
   
 ## <a name="interpretation"></a>Interpretacja  

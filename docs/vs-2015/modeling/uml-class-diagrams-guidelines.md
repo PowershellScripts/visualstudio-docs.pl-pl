@@ -1,7 +1,7 @@
 ---
 title: 'Diagramów klas UML: Wytyczne dotyczące | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 56
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 073fb32fae3d02e7edaa8adb8347901e797d047f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9c7b5f5a88e8563930615c883c6911956932d17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684177"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181782"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagramy klas UML: Zalecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [UML Class Diagrams: wskazówki dotyczące](https://docs.microsoft.com/visualstudio/modeling/uml-class-diagrams-guidelines).  
-  
 W programie Visual Studio, można użyć *diagram klas UML* do opisu typów danych i ich relacji, niezależnie od ich implementacji. Diagram pozwala skupić się na logicznych aspektach klas, a nie na ich implementacji.  
   
  Aby utworzyć diagram klasy UML na **architektury** menu, wybierz **nowego diagramu UML lub diagramu warstwowego**.  
@@ -172,9 +170,9 @@ W programie Visual Studio, można użyć *diagram klas UML* do opisu typów dany
   
  Aby uzyskać szczegółowe informacje dotyczące wszystkich właściwości, które można ustawiać, zobacz:  
   
--   [Właściwości atrybutów w diagramach przypadków UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+-   [Właściwości atrybutów w diagramach klas UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Właściwości operacji w diagramach przypadków UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+-   [Właściwości operacji w diagramach klas UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
 ### <a name="types-of-attributes-and-operations"></a>Typy atrybutów i operacji  
  Każdy *typu* atrybutu lub operacji i każdy typ parametru może być jedną z następujących czynności:  
@@ -484,7 +482,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)   
  [Diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
  [Diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)
+ [Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)
 
 
 

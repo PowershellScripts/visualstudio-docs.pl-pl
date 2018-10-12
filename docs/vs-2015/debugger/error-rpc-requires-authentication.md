@@ -1,7 +1,7 @@
 ---
 title: 'Błąd: RPC wymaga uwierzytelnienia | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e606c0e730b279723248a3fdbdd5b3e2bca1c4a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5643e815386541bb9045eb56cacbd68e7e9b998d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696651"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193839"
 ---
 # <a name="error-rpc-requires-authentication"></a>Błąd: RPC wymaga uwierzytelnienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [błąd: RPC wymaga uwierzytelnienia](https://docs.microsoft.com/visualstudio/debugger/error-rpc-requires-authentication).  
-  
 Debuger programu Visual Studio nie może połączyć się z komputerem zdalnym. Na komputerze lokalnym, która uniemożliwia zdalne debugowanie jest włączona zasada rcp.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  

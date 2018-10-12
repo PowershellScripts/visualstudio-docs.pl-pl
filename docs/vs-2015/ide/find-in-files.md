@@ -1,7 +1,7 @@
 ---
 title: Znajdź w plikach | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2f6f51f53642f0eb17cbbae5498ce1c4c288a867
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af1eb1b42281e001bb56f9556c2b0eb21d859758
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676581"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178259"
 ---
 # <a name="find-in-files"></a>Znajdź w plikach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Znajdź w plikach](https://docs.microsoft.com/visualstudio/ide/find-in-files).  
-  
 Znajdź w plikach ** umożliwia wyszukiwanie określonego zestawu plików. Liczba znalezionych dopasowań i akcje wykonywane są wymienione w **Find Results** wybranego w oknie **wyniku opcje**.  
   
  Można użyć dowolnej z następujących metod, do wyświetlenia **Znajdź w plikach** w **Znajdź i Zamień** okna.  

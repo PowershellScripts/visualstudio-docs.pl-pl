@@ -1,7 +1,7 @@
 ---
 title: Wzorce interakcji dla programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf21a8aa3c2a2813c71907d1d79bdcd4f7cde323
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ac6dde1b09e0488f3ae07b3a6ea02409d69892e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192065"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Wzorce interakcji dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wzorce interakcji dla programu Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/interaction-patterns-for-visual-studio).  
-  
 ## <a name="overview"></a>Omówienie  
  Wzorzec projektowania, ogólnie rzecz biorąc, to podstawowe rozwiązanie projektowania, które mogą być stosowane w określonych sytuacjach do rozwiązywania problemów z podobne zestawy warunków ograniczających. Projektanci systemu i funkcja pełnić te wzorce projektowe punktów początkowych — które następnie można dostosować do swoich konkretnej sytuacji.  
   
@@ -43,7 +41,7 @@ Najnowszą wersję tego tematu znajduje się w temacie [wzorce interakcji dla pr
   
  Dostępne są wzorce użycia podstawowego dla każdego z punktów integracji kluczy w interfejsie użytkownika środowiska IDE:  
   
--   [Menu i poleceń dla programu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)  
+-   [Menu i polecenia dla programu Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)  
   
 -   [Wzorce aplikacji dla programu Visual Studio](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)  
   
@@ -62,7 +60,7 @@ Najnowszą wersję tego tematu znajduje się w temacie [wzorce interakcji dla pr
   
  Najczęstsze formanty w programie Visual Studio powinien być zgodny z wytycznymi pulpitu Windows. Nasze wskazówki zawierają tylko obszarów, w których należy rozszerzyć typowych konwersji za pomocą programu Visual Studio specyficznych interakcji lub miejsc, w których firma Microsoft zastępują wytycznych całkowicie Aby dostosować Visual Studio, aby zaspokoić potrzeby naszych zaawansowanych użytkowników.  
   
--   [Typowe wzorce kontrolki dla programu Visual Studio](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)  
+-   [Typowe wzorce kontrolek dla programu Visual Studio](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)  
   
     -   [Formanty standardowe](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md#BKMK_CommonControls)  
   

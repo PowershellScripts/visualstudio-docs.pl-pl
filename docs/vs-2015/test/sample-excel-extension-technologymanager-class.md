@@ -1,7 +1,7 @@
 ---
 title: 'Przykładowe rozszerzenie programu Excel: Klasa TechnologyManager | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 440591cae5251c614c13738668bbe71d43f90600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b23c3e735aba74d86b31afb4b83862d83bcd2bdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628195"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190583"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Przykładowe rozszerzenie programu Excel: klasa TechnologyManager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Przykładowe rozszerzenie programu Excel: klasa TechnologyManager](https://docs.microsoft.com/visualstudio/test/sample-excel-extension-technologymanager-class).  
-  
 Ta klasa rozszerza <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> klasy i jest odpowiedzialny za dostarczającego usługi podstawowe dla [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] rozszerzenia. Chociaż klasa bazowa ma wiele metod, tylko część z nich jest używana w tym przykładzie.  
   
  Niektóre metody po prostu zwraca wartość właściwości. Wiele metod są przeznaczone do umożliwiania dla deweloperów zastąpić ustawienie domyślne, które algorytmy rozbudowuj aparat kodowanych testów interfejsu użytkownika. Te metody throw <xref:System.NotSupportedException> lub je zwracają `null`, informuje platformę, by używać algorytmu domyślne.  

@@ -1,7 +1,7 @@
 ---
 title: Podstawowych reguł poprawności, ustaw dla kodu zarządzanego | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 83f0ac2eb1345a8a933e92682e0f6a76ed3d0edf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4b435d813ad1e7c9308bfa6a7d8d243b877d6d6b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634069"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184596"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Podstawowy zestaw reguł poprawności dla zarządzanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zestaw reguł podstawowych reguł poprawności dla kodu zarządzanego](https://docs.microsoft.com/visualstudio/code-quality/basic-correctness-rules-rule-set-for-managed-code).  
-  
 Zestaw reguł podstawowych reguł poprawności koncentruje się na błędów logicznych i typowych pomyłek popełnianych framework interfejsów API. Podstawowe reguły poprawności obejmują reguły w co najmniej zalecany zestaw reguł. Aby uzyskać więcej informacji, zobacz [zarządzany zalecany zestaw reguł dla kodu zarządzanego](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) należy dołączyć ten zestaw reguł, aby rozszerzyć listę ostrzeżeń, że minimalna zalecana raportu reguł.  
   
  W poniższej tabeli opisano wszystkie reguły w zestawie reguł podstawowe reguły poprawności firmy Microsoft.  

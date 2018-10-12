@@ -1,7 +1,7 @@
 ---
 title: Friend (dostępu do interfejsu debugowania zestawu SDK) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1348b943d34ac5db3891bc0c9cd3beb6e5c0cf8e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1135380ee2bffb06bf7edc27b0253d1244922e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190128"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>Przyjaciel (Zestaw SDK dostępu do interfejsu debugowania)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Friend (debugowanie interfejsu Access SDK)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/friend-debug-interface-access-sdk).  
-  
 Klasy przyjazne i Friend — funkcje, które są identyfikowane przez `SymTagFriend` symboli. Ich elementy podrzędne elementu nadrzędnego typy zdefiniowane przez użytkownika (UDTs) i ma [idiasymbol::get_classparent —](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) właściwości.  
   
 ## <a name="properties"></a>Właściwości  

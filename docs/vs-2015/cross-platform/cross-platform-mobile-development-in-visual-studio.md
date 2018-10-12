@@ -1,7 +1,7 @@
 ---
 title: Tworzenie aplikacji mobilnych dla wielu Platform w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 68ecf06ba6a2bdb40355ab645ea35774c8b73c09
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fae40230a75816653e8d06ab9ec7ed4f894d3fa0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634174"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194106"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Tworzenie aplikacji mobilnych na wiele platform w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Cross-Platform Mobile Development w programie Visual Studio](https://docs.microsoft.com/visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio).  
-  
   
 Można tworzyć aplikacje dla urządzeń z systemem Android, iOS i Windows przy użyciu programu Visual Studio.  Podczas projektowania aplikacji, należy użyć narzędzi w programie Visual Studio, łatwe dodawanie podłączonych usług, takich jak Office 365, Azure App Service i usługi Application Insights.  
   

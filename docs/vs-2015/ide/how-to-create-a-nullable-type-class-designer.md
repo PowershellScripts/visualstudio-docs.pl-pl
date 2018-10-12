@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Tworzenie typu Zerowalnego (Projektant klas) | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f93d5a18b71a054a147b396afd293c6bdce36c64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686005"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179429"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Porady: tworzenie typu zerowalnego (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Tworzenie typu Zerowalnego (Projektant klas)](https://docs.microsoft.com/visualstudio/ide/how-to-create-a-nullable-type-class-designer).  
-  
 Niektóre typy wartości nie zawsze masz (lub potrzebujesz) zdefiniowanej wartości. Jest to powszechną praktyką w bazach danych, gdzie niektóre pola nie można przypisać dowolną wartość. Na przykład może przypisać wartości null z polem bazy danych, aby oznaczają, że nie jeszcze nadano jej wartość.  
   
  A *typu dopuszczającego wartość null* jest typem wartości, które można rozszerzyć, aby przyspieszyć typowy zakres wartości dla tego typu, a także wartość null. Na przykład dopuszczający wartości null z `Int32`, są również oznaczane jako dopuszczającego wartość null\<Int32 > można przypisać dowolną wartość od -2147483648 do 2147483647 i może ona zostać przypisana wartość null. Nullable\<bool > można przypisać wartości `True`, `False`, lub wartość null (Brak wartości wszystkie).  

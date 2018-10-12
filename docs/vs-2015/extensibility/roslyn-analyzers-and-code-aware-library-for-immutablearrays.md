@@ -1,7 +1,7 @@
 ---
 title: Analizatory Roslyn i Biblioteka obsługująca kod dla tablic Immutablearray | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3353596474525a381a495288f5f5b951b7e5efac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94dbfbc39260e0cfcab374c2db12ab103f310b28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679204"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173358"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizatory Roslyn i biblioteka obsługująca kod dla tablic ImmutableArray
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [analizatory Roslyn i Biblioteka obsługująca kod dla tablic Immutablearray](https://docs.microsoft.com/visualstudio/extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays).  
-  
 [Platformie kompilatora .NET](https://github.com/dotnet/roslyn) ("Roslyn") pomaga w tworzeniu bibliotek kodu aware.  Biblioteka obsługująca kod zawiera funkcje, których można użyć i narzędzi (analizatorów Roslyn), aby ułatwić korzystanie z biblioteki w najlepszy sposób, lub aby uniknąć błędów.  W tym temacie dowiesz się, jak tworzyć Roslyn rzeczywistych analizator catch typowych błędów, korzystając z [NIB: kolekcje niezmienialne](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) pakietu NuGet.  W przykładzie pokazano również sposób udostępniania poprawki kodu dla kodu problemu wykrytego przez analizator.  Użytkownicy widzą poprawki kodu w Visual Studio żarówki interfejsu użytkownika i automatycznie stosować poprawki dla kodu.  
   
 ## <a name="getting-started"></a>Wprowadzenie  

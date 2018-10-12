@@ -1,7 +1,7 @@
 ---
 title: Praca z wieloma kontami użytkownika | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3559e6df1f675489d15b2cfd53ef80737e003cb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93f029a067e5a45930c2ac827862c1807e32aff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692281"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176270"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Praca z wieloma kontami użytkownika](https://docs.microsoft.com/visualstudio/ide/work-with-multiple-user-accounts).  
-  
 Jeśli masz wiele kont Microsoft i/lub konta służbowego lub szkolnego, można dodać je wszystkie do programu Visual Studio, tak, aby dostęp do zasobów z dowolnego konta bez konieczności logowania się do niego oddzielnie. W dniu Visual Studio 2015 RTM usługi platformy Azure, usługa Application Insights, Team Foundation Server i usługi Office 365 obsługują usprawnione środowisko logowania. Dodatkowe usługi może stają się dostępne, gdy czas.  
   
  Po dodaniu wielu kont na jednej maszynie, ten zestaw kont "wędrują" z Tobą Jeśli logujesz się do programu Visual Studio na innym komputerze. Należy zauważyć, że chociaż nazwy kont są przekazywane, poświadczenia nie są. W związku z tym można jest monitowany o podanie poświadczeń dla tych innych kont próby użycia zasobów na nowej maszynie po raz pierwszy.  

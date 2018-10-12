@@ -1,7 +1,7 @@
 ---
 title: Uruchom Windows Store aplikacji w symulatorze | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3007d0e6ea7a835cd9147f5f5ff94c91f9f7bda4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680103"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190726"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Uruchamianie Windows Store apps w symulatorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Uruchom Windows Store aplikacji w symulatorze](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-in-the-simulator).  
-  
 Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komputerowa, która symuluje aplikacji Windows Store. Można uruchamiać aplikacje i symulacji typowe touch i obrót zdarzeń na komputerze deweloperskim. Możesz również, rozmiar ekranu fizycznego i rozwiązania, który chcesz emulować i symulowanie właściwości połączenia sieciowego.  
   
  Symulator udostępnia środowisko, w którym można projektować, tworzenia, debugowania i testowania aplikacji Windows Store. Jednak przed opublikowaniem aplikacji Windows Store powinny testować swoją aplikację na rzeczywistego urządzenia.  
@@ -147,7 +145,7 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
   
  [Przykładowe informacje o sieci](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Analizowanie zużycia energii](../profiling/analyze-energy-use-in-store-apps.md)  
+ [Analiza zużycia energii](../profiling/analyze-energy-use-in-store-apps.md)  
   
  [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   

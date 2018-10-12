@@ -1,7 +1,7 @@
 ---
 title: 'Porady: tworzenie. Pliku Vsct | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79d2c0c059d9e257fc0239731fb013a56c6dd6a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b28fe38a9d45816481233c3ae267b3c764ee264
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697018"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186679"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Porady: tworzenie. Pliku Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: tworzenie. Pliku Vsct](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-create-a-dot-vsct-file).  
-  
 Istnieje kilka sposobów, aby utworzyć plik konfiguracji (vsct) oparte na języku XML programu Visual Studio polecenie tabeli.  
   
 -   Można utworzyć nowego pakietu VSPackage w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pakietu szablonu.  

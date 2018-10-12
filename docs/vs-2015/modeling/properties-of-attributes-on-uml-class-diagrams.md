@@ -1,7 +1,7 @@
 ---
 title: Właściwości atrybutów w UML, diagramy klas | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a9cd12bb002efbf28443b8052382c29ed87036b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b3f1379aa692cae06c38ac6bf55c6efba4d5c94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679771"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173077"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Właściwości atrybutów w diagramach klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [właściwości atrybutów w UML, diagramy klas](https://docs.microsoft.com/visualstudio/modeling/properties-of-attributes-on-uml-class-diagrams).  
-  
 Na diagramie klas UML, można dodać *atrybuty* do klasy i interfejsy. Atrybut definiuje wartości, które mogą być dołączane do wystąpienia klasy lub interfejsu.  
   
  Aby dodać atrybut, kliknij prawym przyciskiem myszy klasę lub interfejs, wskaż opcję **Dodaj**, a następnie kliknij przycisk **atrybutu**.  

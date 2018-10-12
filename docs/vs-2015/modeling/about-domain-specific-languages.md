@@ -1,7 +1,7 @@
 ---
 title: Języki specyficzne dla domeny — informacje | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 971c63d25aee9c8676921b5ee7e112ae41a8a251
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682548"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175269"
 ---
 # <a name="about-domain-specific-languages"></a>Języki specyficzne dla domeny — informacje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dotyczące języków specyficznych dla domeny](https://docs.microsoft.com/visualstudio/modeling/about-domain-specific-languages).  
-  
 W przeciwieństwie do języka ogólnego przeznaczenia, takich jak C# lub UML języka specyficznego dla domeny (DSL) jest przeznaczona do express instrukcji w konkretnych problemów miejsca lub domenie.  
   
  Dobrze znanych języków DSL obejmują wyrażeń regularnych i SQL. Każdy język DSL jest znacznie wyższa niż uniwersalny język opisu operacji na ciągi tekstowe lub bazy danych, ale znacznie gorsza do opisywania pojęcia, które wykraczają poza zakres swój własny. Poszczególnych branż mają również własne językami DSL. Na przykład w branży usług telekomunikacyjnych, wywołaj opis języki są powszechnie używane do określ stanów połączeń telefonicznych i w powietrzu podróży w branży standard, używane do opisywania Rezerwacje lotów DSL.  

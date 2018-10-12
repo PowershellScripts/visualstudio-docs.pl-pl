@@ -1,7 +1,7 @@
 ---
 title: Węzły narzędzi | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa242e6c2f609c8ac6214fcbd20d210f7c794b77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d85735c5fb355163f2003a27a96675ed097d66e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681252"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174424"
 ---
 # <a name="utility-nodes"></a>Węzły narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [węzły narzędzi](https://docs.microsoft.com/visualstudio/designers/utility-nodes).  
-  
 W projektancie programu do cieniowania węzły narzędzie reprezentują obliczeniach cieniowania wspólny, przydatne, które nie pasują do innych kategorii. Niektóre węzły narzędzie do wykonywania prostych operacji takich jak dołączanie wektorów razem lub wybierając warunkowo wyniki oraz wykonywania innych złożonych operacji, takich jak przetwarzanie oświetlenia wkładów, zgodnie z modele oświetlenia popularne.  
   
 ## <a name="utility-node-reference"></a>Odwołanie do narzędzia node  

@@ -1,7 +1,7 @@
 ---
 title: Odwołanie do schematu fragmentów kodu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9dfcb6e7bc29fe29f33b919545a6781a731b7734
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19a14972d36bcb7070e0604b47caab55f41d0126
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680380"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188131"
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kodu — Odwołanie do schematu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dokumentacja schematu fragmentów kodu](https://docs.microsoft.com/visualstudio/ide/code-snippets-schema-reference).  
-  
 Fragmenty kodu IntelliSense to wstępnie przygotowane wycinki kodu źródłowego, które są gotowe do wstawienia do aplikacji za pomocą [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Umożliwiają one poprawę wydajności pracy, ponieważ zmniejszają ilość czasu spędzanego na wielokrotnym wpisywaniu tego samego kodu czy wyszukiwaniu przykładów. Można użyć schematu XML fragmentu kodu IntelliSense, aby utworzyć własne fragmenty kodu i dodaj je do fragmentów kodu, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zawiera już.  
   
 ## <a name="intellisense-code-snippets-schema-elements"></a>Elementy schematu fragmentów kodu IntelliSense  

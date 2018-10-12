@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Tworzenie konspektu | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6737d9fffa1f0f38fab57edd4031647d0cc1510e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d86dd811339122415a4511b7b7cf28f239be752
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181977"
 ---
 # <a name="walkthrough-outlining"></a>Przewodnik: tworzenie konspektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: Tworzenie konspektu](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-outlining).  
-  
 Możesz zaimplementować opartych na języku funkcje, takie jak tworzenie konspektu, definiując rodzaje regionów tekst, który chcesz rozwinąć lub zwinąć. Regiony można zdefiniować w kontekście usługi językowej, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typ i zastosować definicji region tylko do tego typu lub definicje regionu można zastosować do istniejącego typu zawartości (na przykład "text"). Ten poradnik pokazuje jak zdefiniować i wyświetlanie konspektu regionów.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  

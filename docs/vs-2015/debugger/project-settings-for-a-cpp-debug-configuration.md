@@ -1,7 +1,7 @@
 ---
 title: Ustawienia konfiguracji debugowania języka C++ projektu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -117,18 +117,16 @@ caps.latest.revision: 52
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f92b7e61de269ab12794055870d51f99f3c7995
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05667c982daa35910bb1d4e1d895fb2bef50fb78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678032"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193469"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Ustawienia projektu dla konfiguracji debugowania w C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [ustawienia projektu dla konfiguracji debugowania języka C++](https://docs.microsoft.com/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration).  
-  
 Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka Visual C++ lub C w **strony właściwości** okno dialogowe, zgodnie z opisem w [porady: Ustawianie debugowania i konfiguracje wydania](../debugger/how-to-set-debug-and-release-configurations.md). W poniższej tabeli przedstawiono, gdzie można znaleźć ustawienia związane z debugerem w **stron właściwości** okno dialogowe.  
   
 > [!WARNING]

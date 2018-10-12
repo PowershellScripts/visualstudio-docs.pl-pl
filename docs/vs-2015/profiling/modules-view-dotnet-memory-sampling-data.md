@@ -1,7 +1,7 @@
 ---
 title: Widok modułów — dane próbkowania pamięci platformy .NET | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1596d85e2668090533df9021c964d6767d36b38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3334edce4d29792e44f4cab0840a9f46763d74aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684851"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185395"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Widok modułów — dane próbkowania pamięci platformy .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [widok modułów — dane próbkowania pamięci platformy .NET](https://docs.microsoft.com/visualstudio/profiling/modules-view-dotnet-memory-sampling-data).  
-  
 Widok modułów danych alokacji pamięci .NET, które są zbierane przy użyciu metody próbkowania grupuje dane pamięci przez moduły, które zostały wykonane w trakcie uruchomienia profilowania. Każdy moduł jest katalogiem głównym drzewa hierarchicznego. Funkcji modułu są wyświetlane poniżej tego węzła modułu.  
   
  Numery wierszy pliku źródłowego w instrukcji, które przydzielają pamięć są wymienione poniżej tego węzła funkcji, a adresy instrukcji, które wykonują alokacji są wymienione pod węzeł wiersza. Wartości włączne i wyłączne są zawsze takie same dla wiersza danych i danych instrukcji.  

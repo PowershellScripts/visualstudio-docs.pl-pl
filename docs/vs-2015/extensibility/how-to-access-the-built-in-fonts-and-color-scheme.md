@@ -1,7 +1,7 @@
 ---
 title: 'Porady: dostęp do wbudowanych czcionek i schemat kolorów | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4bde4bb7bf0e6fc9b5dafdc444507e985a756c34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f81d8998063fba9c3d51ddb1d66b2da9bd4fd8a9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681226"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178701"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Porady: dostęp do wbudowanych czcionek i schemat kolorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: dostęp do wbudowanych czcionek i schemat kolorów](https://docs.microsoft.com/visualstudio/extensibility/how-to-access-the-built-in-fonts-and-color-scheme).  
-  
 Visual Studio zintegrowane środowisko programistyczne (IDE) zawiera schemat kolorów i czcionek, który jest skojarzony z oknem edytora. Możesz uzyskać dostęp za pośrednictwem systemu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfejsu.  
   
  Aby korzystać z wbudowanych czcionek i kolorów schematu, pakietu VSPackage musi:  
@@ -108,5 +106,5 @@ if (spPropCatContainer != NULL){
  [Używanie czcionek i kolorów](../extensibility/using-fonts-and-colors.md)   
  [Wprowadzenie czcionkę i kolor informacje dotyczące kolorowania tekstu](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [Uzyskiwanie dostępu do przechowywanych czcionkę i kolor ustawienia](../extensibility/accessing-stored-font-and-color-settings.md)   
- [Omówienie kolorów i czcionek](../extensibility/font-and-color-overview.md)
+ [Omówienie czcionek i kolorów](../extensibility/font-and-color-overview.md)
 

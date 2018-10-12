@@ -1,7 +1,7 @@
 ---
 title: 'Porady: profilowanie kodu JavaScript na stronach sieci Web | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a54321b835cad9f37983a386c93f46e26bbdd5ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99e0f201ab1c61999eae1e54efb4eaf4fc475f4d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680047"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176478"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>Porady: profilowanie kodu JavaScript na stronach sieci Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [jak: profil kodu JavaScript na stronach sieci Web](https://docs.microsoft.com/visualstudio/profiling/how-to-profile-javascript-code-in-web-pages).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Narzędzia profilowania może zbierać dane wydajności dla kodu JavaScript, która jest wykonywana w [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] sieci Web aplikacji, dowolnej strony sieci Web lub aplikacji JavaScript przy użyciu Instrumentacji, metoda profilowania.  
   
  **Wymagania**  

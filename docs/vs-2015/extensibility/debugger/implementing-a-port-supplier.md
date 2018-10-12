@@ -1,7 +1,7 @@
 ---
 title: Implementowanie dostawcy portu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5d14c2642d30ee46df0cd1b766540ae0b135e4d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33ca3287b6408541f64152609a6f33b4eac03632
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688726"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180755"
 ---
 # <a name="implementing-a-port-supplier"></a>Implementowanie dostawcy portu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [implementowanie dostawcy portu](https://docs.microsoft.com/visualstudio/extensibility/debugger/implementing-a-port-supplier).  
-  
 Dostawcy portu dostarcza portów na żądanie Menedżer debugowania sesji (SDM). Dostawcy portu musi być implementowane podczas debugowania na maszynie bez modelu DCOM, lub gdy nowe urządzenie musi być obsługiwane. Na przykład aby umożliwić debugowanie na telefon komórkowy, można wdrożyć dostawcy portu, który udostępnia porty, które łączą na telefon komórkowy (być może za pomocą środowiska IR lub połączenia komórki) i wylicza procesów i programy uruchomione na telefonie.  
   
  Debugowanie programów na komputerach z systemem Windows (w tym zdalnego debugowania) program Visual Studio udostępnia dostawcy portów dla natywnych i procesów środowiska uruchomieniowego języka wspólnego (CLR), więc nie ma potrzeby implementowanie dostawcy portu w przypadkach.  

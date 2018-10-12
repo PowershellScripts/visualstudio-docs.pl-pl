@@ -1,7 +1,7 @@
 ---
 title: Idiaframedata::get_type — | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6585518c3fd1e5120ef1f6f0a2fbb2fec58cce3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6511e8bc4819fc338530d081731b2a98d34bc521
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684944"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178038"
 ---
 # <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [idiaframedata::get_type —](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaframedata-get-type).  
-  
 Pobiera typ ramki specyficznych dla kompilatora.  
   
 ## <a name="syntax"></a>Składnia  
@@ -49,7 +47,7 @@ HRESULT get_type (
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md)   
- [Stackframetypeenum — wyliczenie](../../debugger/debug-interface-access/stackframetypeenum.md)
+ [StackFrameTypeEnum, wyliczenie](../../debugger/debug-interface-access/stackframetypeenum.md)
 
 
 

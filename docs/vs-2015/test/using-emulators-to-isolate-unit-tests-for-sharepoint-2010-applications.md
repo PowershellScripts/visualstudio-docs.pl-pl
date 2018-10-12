@@ -1,7 +1,7 @@
 ---
 title: Izolowanie testów jednostkowych aplikacji Sharepoint 2010 przy użyciu emulatorów | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 85e3236e83d29e16c4501091cebf644605bfa82c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d45ea88fea9f30bf02c24e927694c81d8639559
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694090"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178311"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Izolowanie testów jednostkowych aplikacji SharePoint 2010 przy użyciu emulatorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [izolowanie testów jednostkowych aplikacji Sharepoint 2010 przy użyciu emulatorów](https://docs.microsoft.com/visualstudio/test/using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications).  
-  
 Pakiet Microsoft.SharePoint.Emulators zawiera zbiór bibliotek, które ułatwiają tworzenie izolowanych testów jednostkowych dla aplikacji programu Microsoft SharePoint 2010. Emulatory używają [podkładki](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) z [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) izolacji platformę, by tworzyć lekkie obiekty w pamięci, umożliwiających naśladowanie najczęściej używanych obiektów i metod interfejsu API programu SharePoint. Gdy metodę programu SharePoint nie jest emulowana, lub gdy chcesz zmienić zachowanie domyślne emulatora, możesz utworzyć podkładki substytutów zapewniające wyniki, które chcesz.  
   
  Istniejące metody i klasy testowe można łatwo przekształcić do uruchamiania w kontekście emulatora. Ta funkcja pozwala utworzyć testy podwójnego zastosowania. Test podwójnego zastosowania można przełączać się między testami integracji dla prawdziwego interfejsu API programu SharePoint i testów jednostkowych, które korzystają z emulatorów.  

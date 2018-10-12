@@ -1,7 +1,7 @@
 ---
 title: IDebugReference2 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8dcb8734057e3308f28cce471670bde8aed8a748
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d78a77d45183272994d05c85fe79ad84759ecb23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682350"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187463"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [IDebugReference2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugreference2).  
-  
 Ten interfejs reprezentuje odwołanie do właściwości ramki stosu lub niektóre inne właściwości.  
   
 > [!NOTE]
@@ -55,7 +53,7 @@ IDebugReference2 : IUnknown
 |[SetValueAsString](../../../extensibility/debugger/reference/idebugreference2-setvalueasstring.md)|Ustawia wartość tego odwołania z ciągu.|  
 |[SetValueAsReference](../../../extensibility/debugger/reference/idebugreference2-setvalueasreference.md)|Ustawia wartość odwołanie z innego odwołania.|  
 |[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)|Wylicza elementy podrzędne tego odwołania.|  
-|[Getparent —](../../../extensibility/debugger/reference/idebugreference2-getparent.md)|Pobiera element nadrzędny tego odwołania.|  
+|[GetParent](../../../extensibility/debugger/reference/idebugreference2-getparent.md)|Pobiera element nadrzędny tego odwołania.|  
 |[GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md)|Pobiera odniesienie najbardziej pochodnego tego odwołania.|  
 |[GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)|Pobiera bajtów pamięci, do których odnosi się to odwołanie.|  
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)|Pobiera kontekst pamięci dla tego odwołania.|  
@@ -85,5 +83,5 @@ IDebugReference2 : IUnknown
  [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [Getreference —](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)
+ [GetReference](../../../extensibility/debugger/reference/idebugproperty2-getreference.md)
 

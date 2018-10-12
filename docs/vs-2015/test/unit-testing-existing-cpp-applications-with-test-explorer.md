@@ -1,7 +1,7 @@
 ---
 title: Testy jednostkowe istniejących aplikacji C++ za pomocą narzędzia Eksplorator testów | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 040e3f0a236067a96d107f64f4c9aca06d0706e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63761dc543b327c1c8639203c80afb92d4700c8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629397"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172461"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Testy jednostkowe istniejących aplikacji C++ za pomocą narzędzia Eksplorator testów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [testy jednostkowe istniejących aplikacji C++ za pomocą narzędzia Eksplorator testów](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer).  
-  
 Zaleca się, że zanim będzie można zmienić istniejącą aplikację, należy upewnić się, czy ma ona dobre pokrycie testami jednostkowymi. Daje to pewność, że zmiany nie wprowadzają błędów. Jeśli aplikacja nie ma jeszcze testów jednostkowych, można je dodać przy użyciu technik opisanych w tym temacie. W tym temacie opisano sposób dodawania testów jednostkowych dla istniejącego kodu języka Visual C++, począwszy od wyboru sposobu testowania kodu oraz poprzez tworzenie, pisanie i wreszcie Uruchamianie testów.  
   
 ## <a name="deciding-how-to-test-your-code"></a>Wybór sposobu testowania kodu  

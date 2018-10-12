@@ -1,7 +1,7 @@
 ---
 title: Przygotowywanie do debugowania ASP.NET | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,41 +21,39 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d9f19e062f60f1f72ca1f7e3ee54aeb211e4b75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57031fa7529a7ef12c7ad8c2c61b41194bd18f74
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632047"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171500"
 ---
 # <a name="preparing-to-debug-aspnet"></a>Przygotowywanie do debugowania ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Trwa przygotowywanie do debugowania ASP.NET](https://docs.microsoft.com/visualstudio/debugger/preparing-to-debug-aspnet).  
-  
 W tej sekcji opisano sposób konfigurowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debugowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] lub aplikacja usługi WCF.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md)  
  W tym artykule opisano wymagania dotyczące systemu operacyjnego do debugowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] lub aplikacji sieci Web WCF za pomocą [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- [Ograniczenia debugowania WCF](../debugger/limitations-on-wcf-debugging.md)  
+ [Ograniczenia dotyczące debugowania usług WCF](../debugger/limitations-on-wcf-debugging.md)  
  Opisano ograniczenia dotyczące debugowania aplikacji sieci Web programu WCF za pomocą [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- [Porady: Włączanie debugowania dla aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
+ [Instrukcje: włączanie debugowania dla aplikacji ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)  
  W tym artykule omówiono ustawienia trybu debugowania dla [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji. Informacje dotyczące opisu plików Web.config, sugestie dotyczące edytowania pliku, przykładowy kod i zachowanie plików konfiguracyjnych hierarchicznej.  
   
- [Wstępne wymagania zdalne debugowanie aplikacji sieci Web](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
+ [Wstępne wymagania debugowania zdalnego aplikacji internetowych](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
  Wyświetla listę wymagań wstępnych w celu debugowania aplikacji sieci Web na serwerze zdalnym.  
   
  [Porady: Konfigurowanie usług IIS w systemie Windows Server 2003](http://msdn.microsoft.com/en-us/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
  W tym artykule omówiono kroki specjalnej konfiguracji wymagane do debugowania wymagania systemowe dotyczące debugowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] na [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)].  
   
- [Porady: debugowanie hostowania samoobsługowego WCF usługi](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
+ [Instrukcje: debugowanie hostowanej samodzielnie usługi WCF](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
  W tym artykule opisano kroki do debugowania usługi WCF, które nie są hostowane w usługach IIS lub programem ASP.NET Development Server.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Debugowanie aplikacji sieci Web: Błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
+ [Debugowanie aplikacji internetowych: błędy i rozwiązywanie problemów](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  Wyjaśnia, jak rozwiązać typowe problemy i wyświetla komunikaty o błędach.  
   
 ## <a name="see-also"></a>Zobacz też  

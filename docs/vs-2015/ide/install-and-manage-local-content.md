@@ -1,7 +1,7 @@
 ---
 title: Instalowanie i zarządzać zawartością lokalną | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 298448421430491cba3c367dc1976cf755f2b601
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685599"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193846"
 ---
 # <a name="install-and-manage-local-content"></a>Instalowanie zawartości lokalnej i zarządzanie nią
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [instalacja i zarządzanie zawartością lokalnego](https://docs.microsoft.com/visualstudio/ide/install-and-manage-local-content).  
-  
 Za pomocą Podglądu pomocy firmy Microsoft, możesz dodać, usunąć, aktualizacji i przenieść zawartość pomocy, która jest zainstalowana na komputerze, aby zaspokajać potrzeby rozwoju oprogramowania.  
   
  Aby zarządzać zawartością na komputerze lokalnym, należy zalogować się przy użyciu konta z uprawnieniami administracyjnymi. Ponadto nie można zarządzać zawartością lokalną, jeśli pracujesz w środowisku przedsiębiorstwa, ponieważ administratorzy systemu mogą podjąć te decyzje dla danej organizacji. Aby uzyskać więcej informacji, zobacz [Podręcznik administratora programu Podgląd Pomocy](../ide/help-viewer-administrator-guide.md).  

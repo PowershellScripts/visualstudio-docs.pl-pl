@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Korzystanie z interfejsów API Profiler | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7eb2d4c3acfc8f2a98de1364b1f98aa451abaed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad4b22be98396fe58734f9c785da201450bdafcc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632033"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172539"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Wskazówki: korzystanie z interfejsów API profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Instruktaż: przy użyciu interfejsów API Profiler](https://docs.microsoft.com/visualstudio/profiling/walkthrough-using-profiler-apis).  
-  
 Przewodnik używa aplikacji w języku C# do prezentują sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API narzędzi profilowania. Użyjesz interfejsów API profilera, aby ograniczyć ilość danych zebranych podczas profilowania instrumentacji.  
   
  Kroki opisane w tym przewodniku dotyczą ogólnie aplikacji C/C++. Dla każdego języka będzie trzeba odpowiednio skonfigurować środowiska kompilacji.  
@@ -46,9 +44,9 @@ Przewodnik używa aplikacji w języku C# do prezentują sposób użycia [!INCLUD
 ## <a name="prerequisites"></a>Wymagania wstępne  
  W tym przewodniku przyjęto założenie, że preferowanego środowiska deweloperskiego jest skonfigurowany do obsługi debugowania i pobierania próbek. Przegląd wymagań wstępnych można znaleźć w następujących tematach:  
   
- [Porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)  
+ [Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)  
   
- [Porady: odwoływać się do informacji o symbolach Windows](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Instrukcje: odwołania do informacji o symbolach w systemie Windows](../profiling/how-to-reference-windows-symbol-information.md)  
   
  Domyślnie po uruchomieniu profilera, profiler zbiera dane na poziomie globalnym. Następujący kod na początku programu, włącza globalnego profilowania na wyłączone.  
   

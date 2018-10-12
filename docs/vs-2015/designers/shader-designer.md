@@ -1,7 +1,7 @@
 ---
 title: Projektant programu do cieniowania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a8a6e0bb39ee501f72c96b55575859af0ce1e26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685608"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182798"
 ---
 # <a name="shader-designer"></a>Shader Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Shader Designer](https://docs.microsoft.com/visualstudio/designers/shader-designer).  
-  
 W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Shader Designer do tworzenia, modyfikacji i eksportowanie niestandardowych efektów wizualnych, które są znane jako *programów do cieniowania*.  
   
  Program Shader Designer umożliwia tworzenie niestandardowych efektów wizualnych dla Twojej gry lub aplikacji, nawet jeśli nie znasz języka HLSL programowania. Można utworzyć modułu cieniującego w projektancie programu do cieniowania, możesz po prostu określić go jako Graf; oznacza to, możesz dodać do powierzchni projektowej *węzłów* , reprezentowania danych i operacje, a następnie połączenia między nimi do definiowania sposobu operacji przetwarzania danych. W każdym węźle operacji Podgląd efekt do tego punktu znajduje się tak, aby wizualizować jego wynik. Dane przepływają przez węzły kierunku ostatni węzeł, który reprezentuje dane wyjściowe programu do cieniowania.  

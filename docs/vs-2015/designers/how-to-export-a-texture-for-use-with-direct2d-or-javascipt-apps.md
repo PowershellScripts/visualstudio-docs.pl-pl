@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b064620174a3a64194eee3ae18bffbe330ece13b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43854b2d0aad0e1466f8d8b6fcb45921999aba5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696839"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186293"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Porady: eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript](https://docs.microsoft.com/visualstudio/designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps).  
-  
 Potok zawartości obrazu może generować tekstury, które są zgodne z konwencjami renderowania wewnętrznego w Direct2D. Tekstury tego rodzaju są odpowiednie do użycia w aplikacjach, które używają Direct2D oraz w aplikacjach Windows Store utworzone przy użyciu języka JavaScript.  
   
  Ten dokument przedstawia te działania:  

@@ -1,7 +1,7 @@
 ---
 title: Podstawowych reguł wytycznych projektowych, ustaw dla kodu zarządzanego | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aad4bb755889ca4d2aa9766836f156495d281bca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed0728eb0daa5c1ff0f322db42f66373181f3e23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674379"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184720"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Podstawowe reguły zasad projektowania dla zarządzanego kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zestaw reguł podstawowych reguł wytycznych projektowych dla kodu zarządzanego](https://docs.microsoft.com/visualstudio/code-quality/basic-design-guideline-rules-rule-set-for-managed-code).  
-  
 Można użyć reguły podstawowe reguły wskazówek dotyczących projektowania firmy Microsoft, równa się koncentrować na łatwiejsze do zrozumienia i użycia kodu. Powinien być dołączany do tej reguły, jeśli projekt zawiera kod biblioteki lub jeśli chcesz wymuszać najlepsze rozwiązania dla kodu, który jest łatwa w obsłudze.  
   
  Podstawowe reguły wskazówek dotyczących projektowania obejmują wszystkie reguły w zestawie reguł reguły Recommeded Minimum firmy Microsoft. Aby uzyskać listę minimalne reguły, zobacz [zarządzany zalecany zestaw reguł dla kodu zarządzanego](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).  

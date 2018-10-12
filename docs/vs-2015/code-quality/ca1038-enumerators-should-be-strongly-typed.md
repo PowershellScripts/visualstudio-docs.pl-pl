@@ -1,7 +1,7 @@
 ---
 title: 'CA1038: Moduły wyliczające powinny być silnie typizowane | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d0bc23e78580329443c06cd419febd50e3d3db27
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 94b154fe1069c9c9af61ca955fc25da9677c5fde
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900813"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180326"
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Wyliczenia powinny być silnie typizowane
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [CA1038: moduły wyliczające powinny być silnie typizowane](https://docs.microsoft.com/visualstudio/code-quality/ca1038-enumerators-should-be-strongly-typed).
-
 |||
 |-|-|
 |TypeName|EnumeratorsShouldBeStronglyTyped|

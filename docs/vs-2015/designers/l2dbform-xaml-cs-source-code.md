@@ -1,7 +1,7 @@
 ---
 title: Kod źródłowy L2DBForm.XAML.CS | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 741c91f290b7e509110c0320013965f8cf9bef0e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6248b61b2332694151d84bd9f5969ff18587c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685478"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180610"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Kod źródłowy L2DBForm.XAML.CS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [kod źródłowy L2DBForm.xaml.cs](https://docs.microsoft.com/visualstudio/designers/l2dbform-xaml-cs-source-code).  
-  
 Ten temat zawiera zawartość i opis kodu źródłowego języka C# w pliku L2DBForm.xaml.cs. Klasy częściowe L2XDBForm zawarte w tym pliku można podzielić na trzy logiczne sekcje: elementy członkowskie danych i `OnRemove` i `OnAddBook` procedury obsługi zdarzeń kliknięcia przycisku.  
   
 ## <a name="data-members"></a>Elementy członkowskie danych  

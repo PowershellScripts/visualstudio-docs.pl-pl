@@ -1,7 +1,7 @@
 ---
 title: Rozszerzenie Opcje i ustawienia użytkownika | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 5bb6277a-8c9d-48c8-9b4e-1cb3052caded
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84bfc4f7aaf8065fe6776cd0e058c79730674e29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: defc56dc9ebe924a4aee660c1d73072a2c3df7ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680594"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177635"
 ---
 # <a name="extending-user-settings-and-options"></a>Rozszerzanie opcji i ustawień użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [rozszerzanie ustawień użytkownika ani opcji](https://docs.microsoft.com/visualstudio/extensibility/extending-user-settings-and-options).  
-  
 W programie Visual Studio istnieją dwa główne sposoby celu obsługę preferencji użytkownika. **Narzędzia / Opcje** stron zezwolić użytkownikom na ustawianie własnych wartości dla wielu różnych rodzajów ustawień ogólnych i specyficznych dla języka. Ustawienia użytkownika Zezwalaj użytkownikom na określanie ogólne właściwości konfiguracji programu Visual Studio. Aby uzyskać więcej informacji na temat stron opcji, zobacz [opcje i strony opcji](../extensibility/internals/options-and-options-pages.md). Aby uzyskać więcej informacji na temat ustawień użytkownika, zobacz [Obsługa ustawień użytkowników](../extensibility/internals/support-for-user-settings.md).  
   
  [Tworzenie strony opcji](../extensibility/creating-an-options-page.md)  

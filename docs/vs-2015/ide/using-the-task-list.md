@@ -1,7 +1,7 @@
 ---
 title: Korzystanie z listy zadań | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f58dd84be73541a3a830c16ff629424830dce488
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5662aebeb0e7b8da36c52c0c9fd727c860a4221
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172032"
 ---
 # <a name="using-the-task-list"></a>Korzystanie z listy zadań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [korzystanie z listy zadań](https://docs.microsoft.com/visualstudio/ide/using-the-task-list).  
-  
 Użyj **listy zadań** do śledzenia komentarzy do kodu, które używać tokenów, takich jak `TODO` i `HACK`, lub tokeny niestandardowe i zarządzać skróty, które powodują przejście bezpośrednio do wstępnie zdefiniowanej lokalizacji w kodzie. Kliknij element na liście, aby przejść do jego lokalizacji w kodzie źródłowym.  
   
  W tym temacie:  
@@ -134,7 +132,7 @@ Użyj **listy zadań** do śledzenia komentarzy do kodu, które używać tokenó
      Do nawigowania w skrótach w kodzie, wybierz skrót na liście, a następnie wybierz **następne zadanie** lub **poprzednie zadanie** z menu skrótów.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Okno dialogowe Opcje środowiska, listy zadań](../ide/reference/task-list-environment-options-dialog-box.md)
+ [Lista zadań, Środowisko, Opcje — okno dialogowe](../ide/reference/task-list-environment-options-dialog-box.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Anatomia pakietu VSIX | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 645d9bff0b1f1bd3ac3afe3f5c815d9b9cd208d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 207abbda08134c2a1e065cf73050fc2451d4eaab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679620"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181463"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomia pakietu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [anatomia pakietu VSIX](https://docs.microsoft.com/visualstudio/extensibility/anatomy-of-a-vsix-package).  
-  
 Pakiet VSIX jest plik .vsix, który zawiera jeden lub więcej rozszerzeń programu Visual Studio, razem z metadanymi używanych przez program Visual Studio do klasyfikowania i zainstalować rozszerzenia. Metadane są zawarte w manifestu VSIX i pliku [Content_Types] .xml. Pakiet VSIX może również zawierać jeden lub więcej plików Extension.vsixlangpack w celu zapewnienia tekście Instalatora zlokalizowanych i może zawierać dodatkowe pakiety VSIX, aby zainstalować zależności.  
   
  Formacie pakietu VSIX postępuje zgodnie ze standardowym otwarte konwencje tworzenia pakietów (OPC). Pakiet zawiera pliki binarne i pliki pomocnicze, wraz z pliku [Content_Types] .xml i plikiem typu .vsix pliku manifestu. Jeden pakiet VSIX może zawierać dane wyjściowe z wieloma projektami lub nawet utworzyć wiele pakietów, które mają własne manifestów.  

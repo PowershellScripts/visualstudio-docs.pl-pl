@@ -1,7 +1,7 @@
 ---
 title: Tworzenie aplikacji z natywnym interfejsem użytkownika przy użyciu platformy Xamarin w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 1eb7a359b7888c50caa78f67c029a16263ef2727
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d05a04aedfc5ded6232016a0c5216306a7cf84ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680519"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193521"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika przy użyciu platformy Xamarin w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Kompilowanie aplikacji z natywnym interfejsem użytkownika przy użyciu platformy Xamarin w programie Visual Studio](https://docs.microsoft.com/visualstudio/cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio).  
-  
   
 Po wykonaniu kroków [Instalator i instalacja](../cross-platform/setup-and-install.md) i [Sprawdź swoje środowisko Xamarin](../cross-platform/verify-your-xamarin-environment.md), w tym instruktażu dowiesz się, jak utworzyć podstawową aplikację platformy Xamarin (pokazana poniżej), za pomocą natywnego warstwy interfejsu użytkownika. Z natywnym interfejsem użytkownika udostępnionego kodu, który znajduje się w bibliotece klas przenośnych (PCL) i platform poszczególnych projektów zawierają definicje interfejsu użytkownika.  
   

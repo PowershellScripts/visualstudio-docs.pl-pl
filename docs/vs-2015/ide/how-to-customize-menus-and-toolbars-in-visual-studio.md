@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Dostosowywanie menu i pasków zadań w programie Visual Studio | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -33,18 +33,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74908b64c6ef1f17d040e74abd4e9b1013929c9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7301a05ff17c20532a394fd1f26ab9fd98c3b65
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677137"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237890"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Porady: Dostosowywanie menu i pasków zadań w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Dostosowywanie menu i pasków zadań w programie Visual Studio](https://docs.microsoft.com/visualstudio/ide/how-to-customize-menus-and-toolbars-in-visual-studio).  
-  
 Można dostosować Visual Studio nie tylko przez dodawanie i usuwanie pasków narzędzi i menu na pasku menu, ale także przez dodawanie i usuwanie poleceń dowolnego danego paska narzędzi lub menu.  
   
 > [!WARNING]

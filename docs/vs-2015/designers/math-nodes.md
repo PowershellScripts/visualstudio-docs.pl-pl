@@ -1,7 +1,7 @@
 ---
 title: Węzły matematyczne | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 154f79ab5a90821ee08b7a9e802f1481baae55dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bab77bbed9f14ccc81429c37ad367d7d51709871
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694333"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305776"
 ---
 # <a name="math-nodes"></a>Węzły matematyczne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [węzły matematyczne](https://docs.microsoft.com/visualstudio/designers/math-nodes).  
-  
 W projektancie programu do cieniowania algebraicznych, wykonaj węzły matematyczne logiki trygonometryczne i inne operacje matematyczne.  
   
 > [!NOTE]
@@ -36,7 +34,7 @@ W projektancie programu do cieniowania algebraicznych, wykonaj węzły matematyc
 |Węzeł|Szczegóły|Właściwości|  
 |----------|-------------|----------------|  
 |**ABS**|Oblicza wartość bezwzględną liczby określone dane wejściowe dla danego składnika.<br /><br /> Dla każdego składnika danych wejściowych `X`, wartości ujemnych jest zmieniana na dodatnią, aby każdy składnik wyniku ma wartość dodatnią.<br /><br /> **Dane wejściowe:**<br /><br /> `X`: `float`, `float2`, `float3`, lub `float4`<br /> Wartości, do których chcesz określić wartość bezwzględna.<br /><br /> `Output:`<br /><br /> `Output`: samo jako dane wejściowe `X`<br /> Wartość bezwzględna dla danego składnika.|Brak|  
-|**Dodaj**|Oblicza sumę dotyczącą składnika w określonym danych wejściowych dla danego składnika.<br /><br /> Dla każdego składnika wyniku odpowiadających składników danych wejściowych `X` i wejściowego `Y` są sumowane.<br /><br /> **Dane wejściowe:**<br /><br /> `X`: `float`, `float2`, `float3`, lub `float4`<br /> Jedna z wartości, aby dodawać razem.<br /><br /> `Y`: samo jako dane wejściowe `X`<br /> Jedna z wartości, aby dodawać razem.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: samo jako dane wejściowe `X`<br /> Suma dla danego składnika.|Brak|  
+|**Add**|Oblicza sumę dotyczącą składnika w określonym danych wejściowych dla danego składnika.<br /><br /> Dla każdego składnika wyniku odpowiadających składników danych wejściowych `X` i wejściowego `Y` są sumowane.<br /><br /> **Dane wejściowe:**<br /><br /> `X`: `float`, `float2`, `float3`, lub `float4`<br /> Jedna z wartości, aby dodawać razem.<br /><br /> `Y`: samo jako dane wejściowe `X`<br /> Jedna z wartości, aby dodawać razem.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: samo jako dane wejściowe `X`<br /> Suma dla danego składnika.|Brak|  
 |**Ceil —**|Oblicza Zaokrąglenie w górę określone dane wejściowe dla danego składnika.<br /><br /> Limit wartości jest najmniejsza liczba całkowita, która jest większa lub równa tej wartości.<br /><br /> **Dane wejściowe:**<br /><br /> `X`: `float`, `float2`, `float3`, lub `float4`<br /> Wartości, dla którego ma zostać obliczenia limitu.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: samo jako dane wejściowe `X`<br /> Limit dla danego składnika.|Brak|  
 |**Ograniczenie**|Ogranicza każdego składnika określone dane wejściowe do wstępnie zdefiniowanego zakresu.<br /><br /> Dla każdego składnika wyniku wartości, które znajdują się poniżej zdefiniowanego zakresu podlega następującemu przekształceniu minimalną wartość z zakresu wartości, które znajdują się powyżej należy do zdefiniowanego zakresu podlega następującemu przekształceniu maksymalną wartość z zakresu i wartości, które należą do zakresu nie są zmieniane.<br /><br /> **Dane wejściowe:**<br /><br /> `X`: `float`, `float2`, `float3`, lub `float4`<br /> Wartości, aby określić ograniczenie wartości.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: samo jako dane wejściowe `X`<br /> Wartość mocowanego dla danego składnika.|**Maksymalna**<br /> Największa możliwa wartość zakresu.<br /><br /> **Min**<br /> Najmniejsza możliwa wartość zakresu.|  
 |**COS**|Oblicza cosinus określone dane wejściowe w radianach, dla danego składnika.<br /><br /> Dla każdego składnika wyniku jest obliczany kosinus odpowiadającego składnika podanego w radianach. Wynik zawiera składniki będące wartościami z zakresu [-1, 1].<br /><br /> **Dane wejściowe:**<br /><br /> `X`: `float`, `float2`, `float3`, lub `float4`<br /> Wartości do obliczenia cosinus, w radianach.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: samo jako dane wejściowe `X`<br /> Cosinus dla danego składnika.|Brak|  
@@ -58,7 +56,7 @@ W projektancie programu do cieniowania algebraicznych, wykonaj węzły matematyc
 |**Saturate**|Ogranicza każdego składnika określone dane wejściowe do zakresu [0, 1].<br /><br /> Do reprezentowania wartości procentowych i innych względnych pomiarów w obliczeniach, można użyć tego zakresu. Dla każdego składnika wyniku, odpowiednie wartości składników danych wejściowych, które jest mniejsza niż 0 podlega następującemu przekształceniu 0, wartości, które są większe niż 1 podlega następującemu przekształceniu 1 i wartości, które należą do zakresu nie są zmieniane.<br /><br /> **Dane wejściowe:**<br /><br /> `X`: `float`, `float2`, `float3`, lub `float4`<br /> Wartości, które mają saturate.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: samo jako dane wejściowe `X`<br /> Wartość nasycony poszczególnych składników.|Brak|  
 |**SIN**|Oblicza sinus określone dane wejściowe w radianach, dla danego składnika.<br /><br /> Dla każdego składnika wyniku jest obliczany sinus odpowiadającego składnika podanego w radianach. Wynik zawiera składniki, które mają wartości z zakresu [-1, 1].<br /><br /> **Dane wejściowe:**<br /><br /> `X`: `float`, `float2`, `float3`, lub `float4`<br /> Wartości do obliczenia sinus, w radianach.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: samo jako dane wejściowe `X`<br /> Sinus dla danego składnika.|Brak|  
 |**SQRT**|Oblicza pierwiastek kwadratowy określone dane wejściowe dla danego składnika.<br /><br /> Dla każdego składnika wyniku jest obliczany pierwiastek kwadratowy odpowiadającego składnika.<br /><br /> **Dane wejściowe:**<br /><br /> `X`: `float`, `float2`, `float3`, lub `float4`<br /> Wartości, dla którego ma zostać obliczenia pierwiastek kwadratowy.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: samo jako dane wejściowe `X`<br /> Pierwiastek kwadratowy poszczególnych składników.|Brak|  
-|**Odejmowanie**|Oblicza różnicę dotyczącą składnika w określonym danych wejściowych.<br /><br /> Dla każdego składnika wyniku odpowiadającego składnika danych wejściowych `Y` jest odejmowana od odpowiadającego składnika danych wejściowych `X`. Służy to do obliczenia wektora, który rozciąga się od pierwszej danej wejściowej, które są dostępne do drugiego.<br /><br /> **Dane wejściowe:**<br /><br /> `X`: `float`, `float2`, `float3`, lub `float4`<br /> Wartości, które należy odejmować.<br /><br /> `Y`: samo jako dane wejściowe `X`<br /> Wartości, którą chcesz odjąć od danych wejściowych `X`.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: samo jako dane wejściowe `X`<br /> Różnica poszczególnych składników.|Brak|  
+|**Subtract**|Oblicza różnicę dotyczącą składnika w określonym danych wejściowych.<br /><br /> Dla każdego składnika wyniku odpowiadającego składnika danych wejściowych `Y` jest odejmowana od odpowiadającego składnika danych wejściowych `X`. Służy to do obliczenia wektora, który rozciąga się od pierwszej danej wejściowej, które są dostępne do drugiego.<br /><br /> **Dane wejściowe:**<br /><br /> `X`: `float`, `float2`, `float3`, lub `float4`<br /> Wartości, które należy odejmować.<br /><br /> `Y`: samo jako dane wejściowe `X`<br /> Wartości, którą chcesz odjąć od danych wejściowych `X`.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: samo jako dane wejściowe `X`<br /> Różnica poszczególnych składników.|Brak|  
 |**Transformuj wektor 3W**|Przekształca określony wektor 3W w inne miejsce.<br /><br /> Służy to do dostosowania punktów i wektorów do wspólnej przestrzeni, dzięki czemu można ich używać do wykonywania obliczeń istotnych.<br /><br /> **Dane wejściowe:**<br /><br /> `Vector`: `float3`<br /> Wektor do przekształcenia.<br /><br /> **Dane wyjściowe:**<br /><br /> `Output`: `float3`<br /> Po przekształceniu wektora.|**Z systemu**<br /> Przestrzeń natywna wektora.<br /><br /> **Do systemu**<br /> Docelowa przestrzeń transformacji wektora.|
 
 

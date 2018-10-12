@@ -1,7 +1,7 @@
 ---
 title: Ustawianie zakładek w kodzie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 989333e23310009a4b3282fb4520395a32d6b270
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bbb6775411af7bc93cd8168af460974fb5c18d3d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676658"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219755"
 ---
 # <a name="setting-bookmarks-in-code"></a>Ustawianie zakładek w kodzie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [ustawienie zakładek w kodzie](https://docs.microsoft.com/visualstudio/ide/setting-bookmarks-in-code).  
-  
 Możesz używać zakładek, aby oznaczyć wiersze w kodzie, tak że można szybko powrócić do określonej lokalizacji oraz przeskakiwać między lokalizacjami.  
   
  Ikony i polecenia zakładek są dostępne w dwóch miejscach: okno zakładek (**okno Widok/zakładka**) i pasek narzędzi edytora tekstu.  

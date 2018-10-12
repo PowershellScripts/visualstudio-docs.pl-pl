@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Tworzenie typów za pomocą projektanta klas | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f7671b1336b0b722f02cc100c7055fef817cb582
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8288e17ecfb4c9169b2b9b8fb7cd5a3c3788f4d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685578"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175037"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Porady: tworzenie typów za pomocą Projektanta klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Tworzenie typów za pomocą projektanta klas](https://docs.microsoft.com/visualstudio/ide/how-to-create-types-by-using-class-designer).  
-  
 Do projektowania nowych typów projektów Visual Basic .NET i Visual C# .NET, należy je utworzyć na diagramie klasy. Aby wyświetlić istniejące typy, zobacz [porady: wyświetlanie istniejących typów (Projektant klas)](../ide/how-to-view-existing-types-class-designer.md).  
   
 -   [Utwórz nowy typ](#CreateType)  
@@ -73,7 +71,7 @@ Do projektowania nowych typów projektów Visual Basic .NET i Visual C# .NET, na
   
     |||  
     |-|-|  
-    |**Aby uzyskać**|**Dodaj**|  
+    |**Aby uzyskać**|**Add**|  
     |Klasy, klasy abstrakcyjne, struktury i obiekty struct|Metody, właściwości, pola, zdarzenia, konstruktory (metoda), destruktory (metoda) i stałe, które określają typ|  
     |Wyliczenia|Wartości pól, które tworzą wyliczenie|  
     |Interfejsy|Metody, właściwości i zdarzenia, które tworzą interfejs|  

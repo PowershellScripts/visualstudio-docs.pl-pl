@@ -1,7 +1,7 @@
 ---
 title: Zadanie zapisywania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab2b612ec64cfb2f818d40181d3e89e0c77ac058
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4b15434c75fb4cd2a295789794f6c9f8eb882bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629622"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254900"
 ---
 # <a name="task-writing"></a>Wpisywanie zadania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wpisywanie zadania](https://docs.microsoft.com/visualstudio/msbuild/task-writing).  
-  
   
 Zadania zapewniają kod, który jest uruchamiany w procesie kompilacji. Zadania są zawarte w elementów docelowych. Bibliotekę typowych zadań jest dołączana [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], możesz również tworzyć własnych zadań. Aby uzyskać więcej informacji na temat biblioteki zadań, które są dołączone [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], zobacz [odwołanie do zadania](../msbuild/msbuild-task-reference.md).  
   

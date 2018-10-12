@@ -1,7 +1,7 @@
 ---
 title: Rejestrowanie szablonów projektów i elementów | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c43c2fb57cecc19002c1275e3281a841244c2b60
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 42d1bbb5ab83970ff4a251f65f17f782a646e2e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880087"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306816"
 ---
 # <a name="registering-project-and-item-templates"></a>Rejestrowanie szablonów projektów i elementów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [szablonów elementów i projektów rejestrowanie](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-project-and-item-templates).  
-  
 Typy projektów, należy zarejestrować katalogi, w którym znajdują się swoje szablony projektów i elementów projektu. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] informacje rejestracji skojarzony z typów projektu są używane do określenia, jakie do wyświetlenia w **Dodaj nowy projekt** i **Dodaj nowy element** okien dialogowych.  
   
  Aby uzyskać więcej informacji na temat szablonów, zobacz [Dodawanie projektu i szablonów elementów projektów](../../extensibility/internals/adding-project-and-project-item-templates.md).  

@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Tworzenie DataTable w Projektancie obiektów Dataset | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,12 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 832dba200fca438d000bae101381389ea20cfb17
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f0f31528239794b9c7a3b4a4bf98542ed4bbcf2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696685"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299965"
 ---
 # <a name="walkthrough-creating-a-datatable-in-the-dataset-designer"></a>Wskazówki: tworzenie DataTable w projektancie obiektów Dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ W tym przewodniku opisano sposób tworzenia <xref:System.Data.DataTable> (bez Ta
   
 2.  Nadaj kolumnie nazwę `SongID`.  
   
-3.  W **właściwości** oknie <xref:System.Data.DataColumn.DataType%2A> właściwość <xref:System.Int16?displayProperty=fullName>.  
+3.  W oknie **Właściwości** ustaw właściwość <xref:System.Data.DataColumn.DataType%2A> na <xref:System.Int16?displayProperty=fullName>.   
   
 4.  Powtórz ten proces i dodaj następujące kolumny:  
   

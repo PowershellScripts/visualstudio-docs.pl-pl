@@ -1,7 +1,7 @@
 ---
 title: Oś czasu aplikacji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2310b6f1fc6808d64d3b51b488bf4e4c4726e689
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df71c984c017b731e5168d6079415ee26543bbbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627947"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226790"
 ---
 # <a name="application-timeline"></a>Oś czasu aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [analizowanie zużycia zasobów w aplikacjach XAML w programie Visual Studio](https://docs.microsoft.com/visualstudio/profiling/application-timeline).  
-  
 Użyj **oś czasu aplikacji** profiler, aby znaleźć i naprawić interakcji aplikacji dotyczące problemów z wydajnością w aplikacjach XAML. To narzędzie pomaga w zwiększeniu wydajności aplikacji XAML, zapewniając szczegółowy widok wykorzystania zasobów aplikacji. Możesz analizować czas spędzony przez aplikację na przygotowanie ramek interfejsu użytkownika (układ i renderowania), obsługi żądań dysku i sieci oraz w scenariuszach, takich jak uruchamianie aplikacji i ładowanie strony Windows zmiany rozmiaru.  
   
  **Oś czasu aplikacji** jest jednym z narzędzi, można zacząć od **debugowanie / Profiler wydajności...**  polecenia.  

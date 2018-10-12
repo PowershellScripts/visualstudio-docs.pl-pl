@@ -1,14 +1,14 @@
 ---
 title: Używanie punktów przerwania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -46,18 +46,15 @@ caps.latest.revision: 63
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c111b2704401ff6f98025026fc51d19b434503f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5fcc6803144359af25d70e68a25ffe90cf7bcca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681341"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304892"
 ---
 # <a name="using-breakpoints"></a>Używanie punktów przerwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [używanie punktów przerwania](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints). 
-
 Można ustawić punktów przerwania, jeśli chcesz zatrzymać wykonywanie debugera, być może wyświetlić stan zmiennych kodu lub Spójrz na stos wywołań. Są one jednym z najważniejszych technik debugowania dostępnych w przyborniku dla deweloperów.
   
 ##  <a name="BKMK_Overview"></a> Ustawianie punktu przerwania funkcji w kodzie źródłowym  
@@ -261,7 +258,7 @@ Można ustawić punktów przerwania, jeśli chcesz zatrzymać wykonywanie debuge
  Nie można ustawić punktu przerwania w pliku źródłowym, gdy debuger nie załadował jeszcze informacje debugowania dla modułu gdzie znajduje się kod. Objawy mogą obejmować takie jak wiadomości **nie będzie można ustawić punktu przerwania**. Glif ostrzegawczy punktu przerwania pojawia się w lokalizacji punktu przerwania. Jednak te ostrzegawcze punkty przerwania stają się rzeczywistymi punktami przerwania podczas ładowania kodu. Aby uzyskać więcej informacji na temat ładowania symboli, zobacz [Określ symboli (.pdb) i plików źródłowych](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Nawigowanie po kodzie za pomocą debugera za](../debugger/navigating-through-code-with-the-debugger.md)
+ [Nawigowanie po kodzie za pomocą debugera](../debugger/navigating-through-code-with-the-debugger.md)
 
 
 

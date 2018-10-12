@@ -1,7 +1,7 @@
 ---
 title: Programy obsługi zdarzeń propagujące zmiany poza modelem | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93b971c80cdf0c13567364d507f72027d62faae9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303202"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Programy obsługi zdarzeń propagujące zmiany poza modelem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [obsługi propagowanie zmian poza Model zdarzeń](https://docs.microsoft.com/visualstudio/modeling/event-handlers-propagate-changes-outside-the-model).  
-  
 W wizualizacji i modelowania SDK, można zdefiniować programy obsługi zdarzeń sklepu propagowanie zmian do zasobów spoza sklepu, takie jak zmienne-store, plików i modeli w innych magazynach lub inne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzenia. Programy obsługi zdarzeń Store są wykonywane po zakończeniu transakcji, w którym wystąpiło zdarzenie wyzwalania. Są one również wykonywane w operacji cofania i ponawiania. W związku z tym w przeciwieństwie do reguł magazynu zdarzenia magazynu są najbardziej przydatne w przypadku aktualizowania wartości spoza sklepu. W przeciwieństwie do zdarzenia platformy .NET, procedury obsługi zdarzeń w magazynie są zarejestrowane do nasłuchiwania na klasę: nie trzeba zarejestrować oddzielne obsługi dla każdego wystąpienia. Aby uzyskać więcej informacji o tym, jak dokonać wyboru między różne sposoby obsługi zmian, zobacz [reagowania na zagrożenia i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).  
   
  Powierzchnia graficznego i innych kontrolek interfejsu użytkownika są przykładami zasobów zewnętrznych, które są obsługiwane przez zdarzenia magazynu.  

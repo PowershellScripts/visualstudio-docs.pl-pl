@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Obsługa wczesnego testowania przy użyciu użycia funkcji generowania na podstawie | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a290eebec2c3847d41f36568196ec35935e332a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2b45b75b689279a19dc1423a0cbf2b62d14a5c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694136"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232846"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Wskazówki: wcześniejsze testowanie obsługi przy użyciu funkcji generowania na podstawie sposobu użycia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: Obsługa wczesnego testowania przy użyciu funkcji Generowanie z użycia](https://docs.microsoft.com/visualstudio/ide/walkthrough-test-first-support-with-the-generate-from-usage-feature).  
-  
 W tym temacie przedstawiono sposób użycia [Generowanie z użycia](../misc/generate-from-usage.md) funkcji, która obsługuje rozwoju pierwszego badania.  
   
  *Rozwoju pierwszego badania* to podejście do projektowania oprogramowania, w której najpierw pisanie testów jednostkowych, w oparciu o specyfikacje produktów, a następnie napisać kod źródłowy, który jest wymagana do udostępnienia testów powiodło się. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Obsługa wczesnego testowania programowania, generując nowe typy i członkowie w kodzie źródłowym, gdy użytkownik najpierw odwołać je w przypadki testowe, zanim nie zostaną zdefiniowane.  

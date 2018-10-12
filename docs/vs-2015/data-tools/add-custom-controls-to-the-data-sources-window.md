@@ -1,7 +1,7 @@
 ---
 title: Dodawanie niestandardowych formantów do okna źródeł danych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: acdab62754a8cbbe7b97ea9723fba202d5078ac0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e84224d4ebd066891d4fdf90b4ad488a79cc0b1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678682"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183641"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Dodawanie kontrolek niestandardowych do okna źródeł danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dodawanie niestandardowych formantów do okna źródeł danych](https://docs.microsoft.com/visualstudio/data-tools/add-custom-controls-to-the-data-sources-window).  
-  
   
 Podczas przeciągania elementu z **źródeł danych** okna do powierzchni projektu, aby utworzyć formant powiązany z danymi, można wybrać typ kontrolki, którą tworzysz. Każdy element w oknie ma listy zawiera formanty, które można wybierać. Zestaw mechanizmów kontrolnych, związane z każdym elementem jest określana przez typ danych elementu. Jeśli formant, który ma zostać utworzona, nie ma na liście, możesz wykonać instrukcje przedstawione w tym temacie, aby dodać formant do listy.  
   
@@ -103,5 +101,5 @@ Podczas przeciągania elementu z **źródeł danych** okna do powierzchni projek
     >  Tylko formanty, które znajdują się w obrębie bieżącego rozwiązania, lub w zestawie odwołania można dodać do listy skojarzonych formantów. (Kontrolki musi także implementować jeden z atrybutów powiązania danych w poprzedniej tabeli.) Aby powiązać dane z kontrolką niestandardową, która nie jest dostępna w **źródeł danych** okna, przeciągnij formant z **przybornika** na powierzchni projektowej, a następnie przeciągnij element można powiązać z **danych Źródła** okna w formancie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+ [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 

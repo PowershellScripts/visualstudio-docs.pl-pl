@@ -1,7 +1,7 @@
 ---
 title: Narzędzia profilowania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8672dd6d05b3a111ad5a1460a57a47b58d1d426a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: feeab1d1f00a681ee3af40436b395d0149cc3334
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678308"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244041"
 ---
 # <a name="profiling-tools"></a>narzędzia profilowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [profilowania w programie Visual Studio](https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour).  
-  
 Narzędzia profilowania i diagnostyki ułatwiają diagnozowanie użycie procesora CPU i pamięci oraz inne problemy z poziomu aplikacji. Za pomocą tych narzędzi można zbierać dane (takie jak wartości zmiennych, wywołania funkcji i zdarzenia) wraz z upływem czasu, po uruchomieniu aplikacji w debugerze. Można wyświetlić stan aplikacji w różnych momentach podczas wykonywania kodu.  
   
  Zapoznaj się z podsumowania na dole, aby zobaczyć, jakie narzędzia są dostępne dla danego typu projektu (na przykład pulpitu, platformy uniwersalnej systemu Windows, platformy ASP.NET).  
@@ -97,7 +95,7 @@ Narzędzia profilowania i diagnostyki ułatwiają diagnozowanie użycie procesor
 |[Użycie procesora CPU](../profiling/cpu-usage.md)|Tak|Tak|Usługi Azure App Service tylko|  
 |[Użycie procesora GPU](../debugger/gpu-usage.md)|Tak|Tak|Brak|  
 |[Oś czasu aplikacji](../profiling/application-timeline.md)|Tak|Tak|Brak|  
-|[PerfTips](../profiling/perftips.md)|Tak|tak, aby XAML nie dla kodu HTML|Brak|  
+|[Wskazówki dotyczące wydajności](../profiling/perftips.md)|Tak|tak, aby XAML nie dla kodu HTML|Brak|  
 |[Eksplorator wydajności](../profiling/performance-explorer.md)|Tak|Brak|Tak|  
 |[IntelliTrace](../debugger/intellitrace.md)|Tylko Enterprise platformy .NET|Tylko Enterprise platformy .NET|Tylko Enterprise platformy .NET|  
 |[Czas odpowiedzi interfejsu użytkownika HTML](../profiling/html-ui-responsiveness.md)|Brak|tak w języku HTML, nie dla XAML|Brak|  

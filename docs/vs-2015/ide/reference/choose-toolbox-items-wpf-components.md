@@ -1,7 +1,7 @@
 ---
 title: Wybierz elementy paska narzędzi, składniki WPF | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 057f354b06002c9b1708478f3e3a9592a47a7065
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c36c34f637993354b131430394e5980c9266d03
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681305"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299692"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Wybierz elementy paska narzędzi, składniki WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wybierz elementy paska narzędzi, składniki WPF](https://docs.microsoft.com/visualstudio/ide/reference/choose-toolbox-items-wpf-components).  
-  
   
 Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę formantów Windows Presentation Foundation (WPF), które są dostępne na komputerze lokalnym. Do wyświetlania tej listy, wybierz **wybierz elementy przybornika** z **narzędzia** menu, aby wyświetlić **wybierz elementy przybornika** okno dialogowe, a następnie wybierz jego **WPF Składniki** kartę. Aby posortować składniki na liście, wybierz nagłówek dowolnej kolumny.  
   

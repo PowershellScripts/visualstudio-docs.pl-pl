@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Korzystanie z wizualizatora | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,12 +28,12 @@ ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: susanno
 manager: douge
-ms.openlocfilehash: cc158e0d84db56bc26262d60acd0fb8e92e47188
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cdf4c9b3a2ea8dc1322a10799f7f7051b71e035c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676618"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306517"
 ---
 # <a name="how-to-use-a-visualizer"></a>Porady: korzystanie z wizualizatora
 Korzystanie z wizualizatora, aby wyświetlić zawartość zmiennej lub obiektu w sposób zrozumiały dla typu danych. Można użyć wizualizatorów z **DataTips**, **Obejrzyj** oknie **automatyczne** oknie lub **zmiennych lokalnych** okna.  
@@ -67,4 +67,4 @@ Korzystanie z wizualizatora, aby wyświetlić zawartość zmiennej lub obiektu w
  [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)   
  [Porady: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)   
  [Porady: pisanie wizualizatora](../debugger/how-to-write-a-visualizer.md)   
- [Podgląd wartości danych w poradach dotyczących danych](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)
+ [Wyświetlanie wartości danych w etykietkach danych](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

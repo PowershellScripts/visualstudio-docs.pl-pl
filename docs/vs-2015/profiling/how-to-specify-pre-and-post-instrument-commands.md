@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Określanie poleceń przed i po Instrumentacji | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20cf4545a217adf07cc753a1d2ab190a00e3d4f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b152b381aaca2b9e43729616979cd7765d3a8c53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677044"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305470"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Porady: określanie poleceń pre- i post-instrumentalnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Określanie poleceń przed i po Instrumentacji](https://docs.microsoft.com/visualstudio/profiling/how-to-specify-pre-and-post-instrument-commands).  
-  
 Możesz określić polecenia, które są uruchamiane przed lub po są instrumentowane pliki binarne w sesji wydajności. Wszystkie polecenia, które mogą być wystawiane z wiersza polecenia można określić jako przed Instrumentacją lub zdarzenia po instrumentacji. Na przykład można określić poleceń, które automatyzują ponownego podpisywania zestawu za pomocą klucza silnej nazwy w pliku wsadowym, który jest wykonywany po są instrumentowane pliki binarne.  
   
  Można określić poleceń dla instrumentowanych danych binarnych w trakcie uruchomienia profilowania, lub dla pojedynczych plików binarnych. Jednakże można określić tylko jedno polecenie przed Instrumentacją do uruchomienia przed i tylko jedno polecenie po Instrumentacji do uruchomienia po zakończeniu procesu instrumentacji. Nie można określić poleceń dla obu wszystkie pliki binarne i pojedynczych plików binarnych. Po określeniu polecenia dla wszystkich plików binarnych, polecenia są uruchamiane przed lub po Instrumentacji każdym pliku binarnego w sesji.  

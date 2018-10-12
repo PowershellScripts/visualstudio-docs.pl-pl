@@ -1,7 +1,7 @@
 ---
 title: Poleceń usługi w języka Legacy przechwytuje | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b1a5af3de224a27d6b0078327411891bb8d1327
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96a641778811d88c0087a23822ab789e72b066f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678051"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190011"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Przechwytywanie poleceń starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [poleceń usługi języka Legacy przechwytuje](https://docs.microsoft.com/visualstudio/extensibility/internals/intercepting-legacy-language-service-commands).  
-  
 Za pomocą [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], może mieć polecenia intercept usługi języka, które widoku tekstu w przeciwnym razie będzie obsługiwać. Jest to przydatne dla zachowania specyficzny dla języka, który nie zarządza widoku tekstu. Te polecenia mogą przechwycić, dodając co najmniej jeden filtr polecenia do widoku tekstu z usługi w języka.  
   
 ## <a name="getting-and-routing-the-command"></a>Routing poleceń i wprowadzenie  

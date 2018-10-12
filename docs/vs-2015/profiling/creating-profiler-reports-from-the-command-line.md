@@ -1,7 +1,7 @@
 ---
 title: Tworzenie raportów Profiler z poziomu wiersza polecenia | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d94a2c6c025ada73e1d43e041c2bf6e30f8b66c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb90505dacbb22268087d3eb15a8df39fdcc932
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674796"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238774"
 ---
 # <a name="creating-profiler-reports-from-the-command-line"></a>Tworzenie raportów profilera z wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [tworzenie raportów Profiler w wierszu polecenia](https://docs.microsoft.com/visualstudio/profiling/creating-profiler-reports-from-the-command-line).  
-  
 **VSPerfReport** narzędzie wiersza polecenia pozwala na tworzenie XML lub raporty wartości rozdzielanych przecinkami (.csv) z pliku danych (Vsp) profilowania. Typy raportów VSPerfReport pasować widoków opartych na tabelach interfejsu dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Możesz filtrować raport, aby wyświetlić tylko Twój kod i aby pokazać tylko jeden segment plik danych profilowania. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md).  
   
  Możesz również ułatwia plików danych profilowania do udostępniania, osadzając symboli plików Vsp i tworząc wstępnie przeanalizowany raport plików (.vsps), które są mniejsze i szybsze otworzyć.  

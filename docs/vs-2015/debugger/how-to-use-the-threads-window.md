@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Korzystanie z okna wątków | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 48
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5004f437b55709bf6db0a59fc17b42894cc17e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1073383ef8964fd6c7d754918f7550179372f9f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678998"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306257"
 ---
 # <a name="how-to-use-the-threads-window"></a>Porady: korzystanie z okna wątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [debugowania aplikacji wielowątkowych, za pomocą okna wątki](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window).  
-  
 W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, na którym wykonujesz debugowanie.  
   
  **Wątków** okno zawiera tabelę, w którym każdy wiersz reprezentuje wątek w aplikacji. Domyślnie w tabeli wymieniono wszystkie wątki w swojej aplikacji, ale można filtrować listę, aby wyświetlić wątki, które Cię interesują. Każda kolumna zawiera inny typ danych. Można także ukryć niektóre kolumny. Jeśli wyświetlane są wszystkie kolumny, zostaną wyświetlone następujące informacje, od lewej do prawej:  
@@ -169,7 +167,7 @@ W **wątków** okna, możesz sprawdzić i Praca z wątkami w aplikacji, na któr
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Wskazówki: Debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-multithreaded-application.md)
+ [Przewodnik: debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-multithreaded-application.md)
 
 
 

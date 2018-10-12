@@ -1,7 +1,7 @@
 ---
 title: Co&#39;s Nowość w źródle kontrolować wtyczki API w wersji 1.2 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 7c5fa471-456e-4f95-8309-5750ec4e5e85
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 439e91730ffa0c8ab3d73454198c09803df59f3d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9df28160f321cdd585cd9adba8d80c43cfcb18d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680023"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300160"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>Co&#39;s Nowość w źródle kontrolować wtyczki API w wersji 1.2
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [co&#39;s Nowość w źródło sterowania wtyczki interfejsu API w wersji 1.2](https://docs.microsoft.com/visualstudio/extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2).  
-  
 W tej sekcji przedstawiono funkcji kontroli kodu źródłowego Zaawansowane w interfejsie API wtyczki kontroli źródła w wersji 1.2. Poniższa lista zawiera nowe funkcje w wersji 1.2:  
   
 ## <a name="changes"></a>Zmiany  

@@ -1,7 +1,7 @@
 ---
 title: Projektanci działań przepływu sterowania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 58ddd15d37e36494fef9488638727c7bc2142aa3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e852bfa5b392c6ffa758678fa83dabd8a8c97f54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690820"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303618"
 ---
 # <a name="control-flow-activity-designers"></a>Projektanci działań przepływu sterowania
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] zawiera liczbę działań dostarczane przez system, które można użyć podczas tworzenia przepływów pracy. Ta sekcja zawiera działania dostarczane przez system, używane do kontrolowania przepływu w przepływie pracy. Poniższe tematy opisują te działania i wytyczne dotyczące sposobu ich używania.  
@@ -38,13 +38,13 @@ ms.locfileid: "42690820"
  [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)  
  Wylicza elementów kolekcji i wykonuje osadzonych instrukcji dla każdego elementu kolekcji równolegle  
   
- [Wybierz](../workflow-designer/pick-activity-designer.md)  
+ [Pick](../workflow-designer/pick-activity-designer.md)  
  Wykonuje jeden z kilku gałęzi w odpowiedzi na niektóre zdarzenia, które umożliwia sterowanie przepływem oparte na zdarzeniach.  
   
  [PickBranch](../workflow-designer/pickbranch-activity-designer.md)  
  Udostępnia potencjalnych ścieżką wykonywania w ramach <xref:System.Activities.Statements.Pick> działania.  
   
- [Sekwencja](../workflow-designer/sequence-activity-designer.md)  
+ [Sequence](../workflow-designer/sequence-activity-designer.md)  
  Zawiera uporządkowany zbiór działania podrzędne, które wykonuje się w kolejności.  
   
  [Przełącznik\<T >](http://msdn.microsoft.com/en-us/ce1aa634-c4db-4475-a1c8-a88478a57212)  
@@ -83,7 +83,7 @@ ms.locfileid: "42690820"
   
  [Schemat blokowy](../workflow-designer/flowchart-activity-designers.md)  
   
- [Obsługa wiadomości](../workflow-designer/messaging-activity-designers.md)  
+ [Obsługa komunikatów](../workflow-designer/messaging-activity-designers.md)  
   
  [Środowisko uruchomieniowe](../workflow-designer/runtime-activity-designers.md)  
   

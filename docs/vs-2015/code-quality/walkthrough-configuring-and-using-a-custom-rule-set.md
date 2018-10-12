@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Konfigurowanie i używanie niestandardowego zestawu reguł | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b17767f6bb0f8b72b9c06e2870146f6b037a7ca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5410127cd94bc8e43de4fec82597686d4c11805
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631568"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221640"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Wskazówki: konfigurowanie niestandardowego zestawu reguł i korzystanie z niego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: Konfigurowanie i używanie niestandardowego zestawu reguł](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-configuring-and-using-a-custom-rule-set).  
-  
 Ten poradnik pokazuje jak używać narzędzi analizy kodu, które zostały skonfigurowane do użycia dostosowany *zestaw reguł* w bibliotece klas. Możesz wybrać zestaw reguł, który odnosi się do typu projektu, który został określony dla rozwiązania, lub wybrać alternatywne reguły zestawy, aby spełnić szczególną potrzebę, takie jak skanowanie ze starszym kodem dla problemów, które można naprawić w sposób nieprzerywającymi działania aplikacji. W obu przypadkach można także dostosowywać w celu dostosowania ich do wymagań projektu zestawów reguł.  
   
  W tym przewodniku przechodzi przez te procesy:  

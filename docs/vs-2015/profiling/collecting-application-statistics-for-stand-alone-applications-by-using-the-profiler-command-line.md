@@ -1,7 +1,7 @@
 ---
 title: Zbieranie statystyk aplikacji dla aplikacji autonomicznych przy użyciu wiersza polecenia Profiler | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b07f38d3051e6912e6496d082d20219b308b8c2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e93a7042917daaabdd789c6990c5530b25e66fcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694219"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305841"
 ---
 # <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Zbieranie statystyk aplikacji dla aplikacji autonomicznych przy użyciu wiersza polecenia profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zbieranie statystyk aplikacji dla aplikacji autonomicznych przy użyciu wiersza polecenia Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line).  
-  
 W tej sekcji opisano procedury składowane i opcji zbierania statystyk wydajności dla aplikacji klienckiej (autonomiczny) przy użyciu metody próbkowania w wierszu polecenia.  
   
 > [!NOTE]

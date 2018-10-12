@@ -1,7 +1,7 @@
 ---
 title: Rozszerzone diagramy warstw | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,27 +17,25 @@ caps.latest.revision: 41
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: af5058ba0d88c91ea89a33523002294339dd32f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5551a982b7f7135235c116cde28c71a0695874db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680037"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301837"
 ---
 # <a name="extend-layer-diagrams"></a>Rozszerzone diagramy warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [rozszerzanie diagramów zależności](https://docs.microsoft.com/visualstudio/modeling/extend-layer-diagrams).  
-  
 Można napisać kod, do tworzenia i aktualizowania diagramy warstwowe, a do sprawdzania poprawności strukturę kodu programu względem diagramów warstwowych w Visual Studio. Możesz dodać polecenia, które są wyświetlane w menu skrótów (kontekstu), diagramy Dostosowywanie gestów przeciągania i upuszczania oraz dostęp do warstwy modelu z poziomu szablonów tekstu. Można spakować te rozszerzenia w Visual Studio Integration rozszerzenie (VSIX) i rozdystrybuować je innym użytkownikom programu Visual Studio.  
   
  Aby uzyskać więcej informacji o diagramach warstwowych zobacz:  
   
--   [Diagramy warstw: odwołanie](../modeling/layer-diagrams-reference.md)  
+-   [Diagramy warstw: informacje](../modeling/layer-diagrams-reference.md)  
   
 -   [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)  
   
--   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)  
+-   [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
   
 -   [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md)  
   

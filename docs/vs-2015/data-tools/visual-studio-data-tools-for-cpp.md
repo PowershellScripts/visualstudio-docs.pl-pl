@@ -1,7 +1,7 @@
 ---
 title: Narzędzia Visual Studio data tools dla języka C++ | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,18 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: cecad69f6df283ed005afd00a6b9bedbd51c6cd5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a059cb5c0f295bc7f14ff8a0ce30ed21e4e70145
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685322"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306192"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Narzędzia Visual Studio data tools dla języka C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [narzędzia danych programu Visual Studio dla języka C++](https://docs.microsoft.com/visualstudio/data-tools/visual-studio-data-tools-for-cpp).  
-  
   
 Natywnych języka C++ często może zapewnić największą wydajność, gdy uzyskują dostęp do źródeł danych. Jednak dane narzędzia dla aplikacji w języku C++ w programie Visual Studio nie są tak zaawansowane jak w przypadku aplikacji .NET. Na przykład okna źródeł danych nie można ich przeciąganie i upuszczanie źródeł danych na powierzchnię projektu C++. Jeśli potrzebujesz warstwa obiektowo relacyjny, należy napisać własny lub użyj innej firmy.  To samo dotyczy funkcji wiązania danych, mimo że aplikacje korzystające z biblioteki MFC można użyć niektórych klas baz danych, wraz z dokumentami i widokami, przechowywanie danych w pamięci i wyświetlania ich do użytkownika. Aby uzyskać więcej informacji, zobacz [dostęp do danych w programie Visual C++](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .  
   

@@ -1,7 +1,7 @@
 ---
 title: Omówienie usługi starszego języka | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6aa3fdcbdb40dca34e17b675478b23d1fd2eef6e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f5a060776126756b104b7f24c7b216ac881d1b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679684"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302708"
 ---
 # <a name="legacy-language-service-overview"></a>Omówienie starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [starszej wersji języka usługa omówienie](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-overview).  
-  
 Usługa języka zapewnia pomoc techniczna do edytora, które umożliwia Implementowanie pewnych [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] funkcji. Klasy usługi języka zarządzanego pakietu Framework (MPF) zapewniają pełną obsługę dla najczęściej używanych funkcji i częściowa Obsługa innych funkcji.  
   
 ## <a name="fully-supported-features-in-the-mpf"></a>Funkcje w pełni obsługiwana w MPF  

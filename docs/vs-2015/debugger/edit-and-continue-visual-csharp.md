@@ -1,7 +1,7 @@
 ---
 title: Edytuj i Kontynuuj (Visual C#) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63e82bcb86a3ddbb40d1cd5dc662d4ba8980278d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4d8e35b9447d8383ad9c4ce11042be93082535a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226047"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edytuj i kontynuuj (Visual C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Edytuj i Kontynuuj (Visual C#)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-csharp).  
-  
 Z funkcją Edytuj i Kontynuuj dla języka C# można wprowadzić zmiany do kodu w trybie przerwania podczas debugowania. Zmiany można stosować bez konieczności zatrzymania i ponownego uruchomienia sesji debugowania. W trybie uruchamiania Edytor źródła jest tylko do odczytu.  
   
  Edytuj i Kontynuuj obsługuje większość zmian, które można wprowadzić podczas sesji debugowania, ale istnieją pewne wyjątki. Aby uzyskać więcej informacji, zobacz [obsługiwane zmiany kodu (C#)](../debugger/supported-code-changes-csharp.md).  

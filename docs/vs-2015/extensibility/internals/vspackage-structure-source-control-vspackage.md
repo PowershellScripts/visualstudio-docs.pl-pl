@@ -1,7 +1,7 @@
 ---
 title: Struktura pakietu VSPackage (pakiet VSPackage kontroli) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c27eb3c0bc977f716d3437042e1e4105eb1692d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627862"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305035"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struktura pakietu VSPackage (pakiet VSPackage kontroli kodu źródłowego)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Struktura pakietu VSPackage (pakiet VSPackage kontroli)](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-structure-source-control-vspackage).  
-  
 Zestaw SDK pakietu kontroli źródła zawiera wytyczne dotyczące tworzenia pakietu VSPackage, który umożliwia implementujący kontroli źródła w celu zintegrowania jej funkcji kontroli źródła przy użyciu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] środowiska. Pakietu VSPackage jest składnik COM, który zazwyczaj jest ładowany na żądanie przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE) na podstawie usług, które są anonsowane przez pakiet w nim wpisów rejestru. Każdego pakietu VSPackage musi implementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Pakietu VSPackage zwykle korzysta z usług oferowanych przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE i proffers niektórych usług własnych.  
   
  Pakietu VSPackage deklaruje jego elementy menu i ustanawia domyślny stan elementu przy użyciu pliku vsct. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Środowisko IDE Wyświetla elementy menu w tym stanie do momentu załadowania pakietu VSPackage. Następnie VSPackage implementacji <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metoda jest wywoływana, aby włączyć lub wyłączyć elementy menu.  

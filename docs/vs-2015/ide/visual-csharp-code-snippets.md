@@ -1,7 +1,7 @@
 ---
 title: Fragmenty kodu Visual C# | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2afbadccfc894dd5ba5baba9c58ab43417f44ed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297417"
 ---
 # <a name="visual-c-code-snippets"></a>Wstawki kodu Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Visual C# — wstawki](https://docs.microsoft.com/visualstudio/ide/visual-csharp-code-snippets).  
-  
 Fragmenty kodu są gotowe fragmenty kodu, które szybko można wstawić w kodzie. Na przykład `for` fragment kodu tworzy pustą `for` pętli. Niektóre fragmenty kodu pochodzą z funkcji Otocz przez fragmenty kodu, które umożliwia wybór wierszy kodu, a następnie wybierz fragment kodu, która obejmuje też dokument wybranych wierszy kodu. Na przykład kiedy wybierz linii kodu i przy następnie uaktywnić `for` fragment kodu tworzy `for` pętli za pomocą tych wierszy kodu wewnątrz bloku pętli. Fragmenty kodu ułatwia pisanie program code szybsze, prostsze i bardziej niezawodne.  
   
  Wstaw fragment kodu w lokalizacji kursora lub Wstaw Otocz przez fragment kodu wokół zaznaczonego kodu. Wstawek kodu jest wywoływana za pomocą **Wstaw fragment kodu** lub **Otocz** polecenia na **IntelliSense** menu lub za pomocą skrótów klawiaturowych CTRL + K następnie X lub CTRL + K i następnie S odpowiednio.  

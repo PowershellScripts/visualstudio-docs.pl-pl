@@ -1,7 +1,7 @@
 ---
 title: T4 dotycząca Dyrektywa zestawu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 072f2fe9ff82a99370677c50c6c97929c8e0b330
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ede2e84ac644fc8e1438873ea561ef3010f670c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695525"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301007"
 ---
 # <a name="t4-assembly-directive"></a>Dyrektywa T4 dotycząca zestawu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dyrektywa T4 dotycząca zestawu](https://docs.microsoft.com/visualstudio/modeling/t4-assembly-directive).  
-  
 W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablon tekstowy czasu projektowania `assembly` dyrektywy ładuje zestaw, tak aby kod szablonu mógł używać jego typów. Efekt jest podobny do dodawania odwołania do zestawu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu.  
   
  Aby uzyskać ogólne omówienie pisania szablonów tekstowych, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).  

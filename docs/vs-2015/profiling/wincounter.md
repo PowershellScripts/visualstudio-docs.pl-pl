@@ -1,7 +1,7 @@
 ---
 title: WinCounter | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9a8e381ed058c30dcbf1760f380cf065c1443cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1331dcc09359868e9524f8a4fca7ed070342cbcc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683397"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300628"
 ---
 # <a name="wincounter"></a>WinCounter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [WinCounter](https://docs.microsoft.com/visualstudio/profiling/wincounter).  
-  
 **WinCounter** opcja określa Windows lub aplikacji licznika wydajności zbierane w ustalonych odstępach czasu podczas profil Uruchom. Liczniki wydajności aplikacji i Windows są wyświetlane jako znaki w pliku danych profilowania. Można określić wiele liczników wydajności do zebrania w oddzielnych opcji.  
   
  Domyślnie są zbierane liczniki co 500 milisekund. Użyj **AutoMark** opcję, aby określić interwał inną kolekcję.  

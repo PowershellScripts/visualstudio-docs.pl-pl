@@ -1,7 +1,7 @@
 ---
 title: 'Podstawy debugowania: Okno rejestrów | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 201f9b1401889aacfbf748962d472cb4323ec0bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fa204726632f55ad6aa1b79e0b9d071864a5dcaa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677045"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210304"
 ---
 # <a name="debugging-basics-registers-window"></a>Podstawy debugowania: okno rejestrów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [podstawy debugowania: okno rejestrów](https://docs.microsoft.com/visualstudio/debugger/debugging-basics-registers-window).  
-  
 **Rejestruje** okno jest dostępne tylko wtedy, gdy debugowanie na poziomie adresów jest włączone w **opcje** okno dialogowe **debugowanie** węzła.  
   
  Rejestry są specjalne lokalizacje w ramach procesora (CPU), które są używane do przechowywania małych fragmentów danych, który procesor jest już aktywnie pracują nad. Kompilowanie lub interpretowanie kod źródłowy generuje instrukcje, które przenoszą dane z pamięci do rejestrów i z powrotem, zgodnie z potrzebami. Uzyskiwanie dostępu do danych w rejestrach jest bardzo szybkie uzyskiwanie dostępu do danych w pamięci, dzięki czemu kod, który umożliwia procesora do przechowywania danych w rejestrze, a następnie wielokrotnie do niego dostęp, zwykle działają szybciej niż kod, który wymaga procesora do stale ładowanie i zwalnianie rejestrów. Aby ułatwić kompilator, aby przechowywać dane w rejestrach i wykonywać inne optymalizacje, należy unikać używania zmiennych globalnych i zależą od zmiennych lokalnych, jak to możliwe. Kod napisany w ten sposób jest nazywany ma dobrą miejscowość odwołania. W przypadku niektórych języków, takich jak C/C++ programisty należy zadeklarować zmienną rejestru, który informuje kompilator, aby spróbować doskonale zapewnienie zmiennej w rejestrze przez cały czas. Aby uzyskać więcej informacji, zobacz [zarejestrować — słowo kluczowe](http://msdn.microsoft.com/en-us/5b66905a-2f7f-4918-bb55-5e66d4bc50f9).  

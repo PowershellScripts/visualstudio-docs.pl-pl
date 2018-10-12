@@ -1,7 +1,7 @@
 ---
 title: Tworzenie prostej aplikacji danych przy użyciu platformy WPF i Entity Framework 6 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d0014df0770bb7fdb697ee05d61b1543044988ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 716e58acaddd1891f2e0d605265cb53bae4ad8d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692391"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299185"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji danych przy użyciu platformy WPF i Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Tworzenie prostej aplikacji danych przy użyciu platformy WPF i Entity Framework 6](https://docs.microsoft.com/visualstudio/data-tools/create-a-simple-data-application-with-wpf-and-entity-framework-6).  
-  
   
 To walkthough pokazuje, jak utworzyć aplikację podstawowe "formularzy nad danymi" w programie Visual Studio przy użyciu programu SQL Server LocalDB, bazy danych Northwind, platformy Entity Framework 6 i Windows Presentation Foundation. Pokazano, jak wykonać podstawowe powiązanie danych z widokiem wzorzec / szczegół i ma on także niestandardowe "powiązanie Nawigator" za pomocą przycisków dla "Przenieś dalej", "Przenieś poprzedni," "Przenieś na początek," "Przenieś na koniec," "Aktualizuj" i "Usuń".  
   

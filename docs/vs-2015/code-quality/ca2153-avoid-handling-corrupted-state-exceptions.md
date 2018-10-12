@@ -1,7 +1,7 @@
 ---
 title: 'CA2153: Unikaj obsługiwania uszkodzonych wyjątków stanu | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,18 +13,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ff16046a115a7a21939ef33fa06f6a81ec56921c
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 3f6ac08b9e71dcd9d1a84cb770e4774a7b914132
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902377"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297989"
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Unikaj obsługiwania uszkodzonych wyjątków stanu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [CA2153: Unikaj obsługi uszkodzony stan wyjątki](https://docs.microsoft.com/visualstudio/code-quality/ca2153-avoid-handling-corrupted-state-exceptions).
-
 |||
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|

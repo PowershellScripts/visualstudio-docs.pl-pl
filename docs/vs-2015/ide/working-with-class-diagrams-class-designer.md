@@ -1,7 +1,7 @@
 ---
 title: Praca z diagramami klas (Projektant klas) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf7812d7d0047b71bac846e03ec15e7b3c92869f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bf855566c24e91137d7aaeadeb2c65843eca9e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679748"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306712"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Praca z diagramami klas (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Praca z diagramami klas (Projektant klas)](https://docs.microsoft.com/visualstudio/ide/working-with-class-diagrams-class-designer).  
-  
 Klasa diagramy pomogą zorientować się w strukturze klas projektów innych użytkowników zostały napisane (lub który napisał dawno temu). Można je dostosowywać, udostępniać i prezentować informacje o projekcie z innymi osobami.  
   
  Pierwszym etapem prezentowanie informacji o projekcie jest utworzyć diagram klas, który wyświetla mają być wyświetlane. Aby uzyskać więcej informacji, zobacz [wyświetlanie typów i relacji (Projektant klas)](../ide/viewing-types-and-relationships-class-designer.md). Możesz utworzyć wiele diagramów klas do projektu, który może służyć do wyświetlania różnych widoku projektu, wybrany podzbiór typów projektów lub wybrany podzbiór elementów członkowskich typów.  

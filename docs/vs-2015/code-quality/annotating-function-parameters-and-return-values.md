@@ -1,7 +1,7 @@
 ---
 title: Dodawanie adnotacji do parametrów funkcji i zwracanych wartości | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -131,18 +131,16 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c3a0cad60dc7867b31238669a612cdb0dac4097
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682643"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297170"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dodawanie adnotacji do parametrów funkcji i zwracać wartości](https://docs.microsoft.com/visualstudio/code-quality/annotating-function-parameters-and-return-values).  
-  
 W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji proste — wartości skalarnych, a wskaźniki do struktur i klas — i większość typów buforów.  Ten artykuł zawiera również typowe wzorce użycia na potrzeby adnotacji. Dla dodatkowych adnotacji that are related to funkcji, zobacz [zachowanie funkcji dodawania adnotacji](../code-quality/annotating-function-behavior.md)  
   
 ## <a name="pointer-parameters"></a>Parametry wskaźnika  
@@ -510,7 +508,7 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
  [Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md)   
  [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)   
- [Najlepsze praktyki i przykłady](../code-quality/best-practices-and-examples-sal.md)
+ [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)
 
 
 

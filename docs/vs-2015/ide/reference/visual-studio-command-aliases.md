@@ -1,7 +1,7 @@
 ---
 title: Visual Studio — aliasy poleceń | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 62811b3ac422efe91778695ba20e3fad01f6eb37
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c2daf9aa4e92ef4a017f36cbcc806abc50d6bde
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630970"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240438"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio — Aliasy poleceń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Visual Studio — aliasy poleceń](https://docs.microsoft.com/visualstudio/ide/reference/visual-studio-command-aliases).  
-  
   
 Aliasy zapewniają środki do wprowadzania polecenia do **Find/Command** pole lub **polecenia** okna skracając tekst wymaganej do wykonania polecenia. Na przykład, zamiast wprowadzać `>File.OpenFile` do wyświetlenia **Otwórz plik** okno dialogowe, można użyć wstępnie zdefiniowanych aliasów `>of`.  
   
@@ -138,7 +136,7 @@ Aliasy zapewniają środki do wprowadzania polecenia do **Find/Command** pole lu
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)   
  [Okno polecenia](../../ide/reference/command-window.md)   
- [Znajdź/Command — pole](../../ide/find-command-box.md)
+ [Pole znajdowania i polecenia](../../ide/find-command-box.md)
 
 
 

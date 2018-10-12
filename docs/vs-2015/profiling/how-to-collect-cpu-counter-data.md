@@ -1,7 +1,7 @@
 ---
 title: 'Porady: zbieranie danych licznika Procesora | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f7c9f88dbbc3d7d2022736528f2b35fa3a325b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4cf2f6e95a9a0614c578957cabeedf91f1c90ed1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683184"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299874"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Porady: zbieranie danych licznika procesora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: zbieranie danych licznika procesora CPU](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-cpu-counter-data).  
-  
 Licznik zdarzeń procesora CPU jest używane do zbierania danych wydajności specyficzne dla sprzętu. W tym temacie opisano zbieranie danych licznika zdarzeń, gdy używasz metoda profilowania instrumentacji.  
   
  **Wymagania**  
@@ -76,7 +74,7 @@ Licznik zdarzeń procesora CPU jest używane do zbierania danych wydajności spe
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   
  [Właściwości sesji wydajności](../profiling/performance-session-properties.md)   
  [CPU i liczniki Windows](../profiling/cpu-and-windows-counters.md)   
- [Porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)
+ [Instrukcje: wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md)
 
 
 

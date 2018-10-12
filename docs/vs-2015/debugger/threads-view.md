@@ -1,7 +1,7 @@
 ---
 title: Widok wątków | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79c0443d17ed18573cdbe990474ee328f2d3678f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12ab9170c0f071ba319c0560f55291f41174ddf9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686007"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306270"
 ---
 # <a name="threads-view"></a>Widok wątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Widok wątków](https://docs.microsoft.com/visualstudio/debugger/threads-view).  
-  
 Widok wątków jest płaską listę wszystkich wątków, skojarzone z systemem windows w systemie. Identyfikator wątku i nazwa modułu dla każdego wątku są wyświetlane. Procesy nie są włączone, ale można łatwo znaleźć proces, który jest właścicielem wybranym wątku.  
   
 ## <a name="procedures"></a>Procedury  
@@ -57,10 +55,10 @@ Widok wątków programu Spy ++
  [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
  Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.  
   
- [Okno dialogowe Wyszukiwanie wątków](../debugger/thread-search-dialog-box.md)  
+ [Wyszukiwanie wątków, okno dialogowe](../debugger/thread-search-dialog-box.md)  
  Umożliwia znalezienie węzła dla określonego wątku w widoku wątków.  
   
- [Okno dialogowe właściwości wątku](../debugger/message-properties-dialog-box.md)  
+ [Właściwości wątku, okno dialogowe](../debugger/message-properties-dialog-box.md)  
  Wyświetla właściwości wątku wybrany w widoku wątków lub wiadomości.  
   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  

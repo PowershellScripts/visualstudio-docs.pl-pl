@@ -1,7 +1,7 @@
 ---
 title: Tworzenie modeli aplikacji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,18 +42,16 @@ caps.latest.revision: 60
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 769542e2f2864864146cb0f94c4dbf5bf1920b5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb7c2e0095d83ecbe21e6002f86c44682745341a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680027"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301902"
 ---
 # <a name="create-models-for-your-app"></a>Tworzenie modeli aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [tworzenie modeli aplikacji](https://docs.microsoft.com/visualstudio/modeling/create-models-for-your-app).  
-  
 Diagramy modelowania pomagają zrozumieć, objaśnić i przedstawić istotę kodu oraz wymagania użytkowników, które Twój system oprogramowania musi obsługiwać. Na przykład do opisywania i przedstawiania wymagań użytkownika, można użyć przypadek użycia języka UML (Unified Modeling), działanie, klas i diagramów sekwencji. Do opisywania i przedstawiania funkcji Twojego systemu, można użyć składnika, klasa, działanie i diagramy sekwencji UML.  
   
  Zobacz [wideo Channel 9: poprawa architektury poprzez modelowanie](http://go.microsoft.com/fwlink/?LinkID=252078).  
@@ -62,11 +60,11 @@ Diagramy modelowania pomagają zrozumieć, objaśnić i przedstawić istotę kod
   
 |**Diagram**|**Pokazuje**|  
 |-----------------|---------------|  
-|[Diagramy aktywności UML: odwołanie](../modeling/uml-activity-diagrams-reference.md)|Przepływ pracy między działaniami i uczestników procesu biznesowego|  
-|[Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)|Składniki systemu, ich interfejsy, portów i relacji|  
-|[Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)|Typy, które są używane do przechowywania i wymiany danych w systemie oraz ich wzajemne relacje|  
-|[Diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md)|Sekwencje interakcje między obiektów, składniki, systemów i aktorów|  
-|[Diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md)|Cele użytkowników i zadań, które obsługuje system|  
+|[Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)|Przepływ pracy między działaniami i uczestników procesu biznesowego|  
+|[Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)|Składniki systemu, ich interfejsy, portów i relacji|  
+|[Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)|Typy, które są używane do przechowywania i wymiany danych w systemie oraz ich wzajemne relacje|  
+|[Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)|Sekwencje interakcje między obiektów, składniki, systemów i aktorów|  
+|[Diagramy przypadków użycia UML: informacje](../modeling/uml-use-case-diagrams-reference.md)|Cele użytkowników i zadań, które obsługuje system|  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługi każdego typu diagramu, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -74,7 +72,7 @@ Diagramy modelowania pomagają zrozumieć, objaśnić i przedstawić istotę kod
   
 |**Diagram**|**Pokazuje**|  
 |-----------------|---------------|  
-|[Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy warstw: odwołanie](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|  
+|[Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy warstw: informacje](../modeling/layer-diagrams-reference.md)|Architektura wysokiego poziomu systemu|  
 |Mapy kodu<br /><br /> [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Wyszukiwanie potencjalnych problemów za pomocą analizatorów mapy kodu](../modeling/find-potential-problems-using-code-map-analyzers.md)|Zależności i inne relacje w istniejącym kodzie|  
 |Diagramy klas wygenerowany kod<br /><br /> [Praca z diagramami klas (Projektant klas)](../ide/working-with-class-diagrams-class-designer.md)|Typy i ich relacje w kodzie .NET|  
   
@@ -82,11 +80,11 @@ Diagramy modelowania pomagają zrozumieć, objaśnić i przedstawić istotę kod
   
 |**Temat**|**Zadanie**|  
 |---------------|--------------|  
-|[Tworzenie projektów modelowania UML i diagramów](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Tworzenie modeli** i dodawanie diagramów.|  
+|[Tworzenie projektów i diagramów modelowania UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Tworzenie modeli** i dodawanie diagramów.|  
 |[Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)|**Rysowanie diagramów** edytowanie modelu.|  
 |[Definiowanie pakietów i przestrzeni nazw](../modeling/define-packages-and-namespaces.md)|**Tworzenie pakietów** zostać podzielona modelu jednostek, które różni członkowie zespołu mogą pracować na.|  
-|[Generowanie kodu z diagramów klas UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Generowanie kodu w języku C# na podstawie diagramów klas** można uruchomić implementacji.|  
-|[Dostosowywanie modelu z profilami i stereotypami](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Dostosowywanie elementów modelu** przy użyciu stereotypów, aby rozszerzyć standardowych elementów modelu UML do określonych celów.|  
+|[Generowanie kodu na podstawie diagramów klas UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Generowanie kodu w języku C# na podstawie diagramów klas** można uruchomić implementacji.|  
+|[Dostosowywanie modelu za pomocą profili i stereotypów](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Dostosowywanie elementów modelu** przy użyciu stereotypów, aby rozszerzyć standardowych elementów modelu UML do określonych celów.|  
 |[Łączenie elementów modeli i elementów roboczych](../modeling/link-model-elements-and-work-items.md)|**Tworzenie łączy między elementami modelu i elementami roboczymi** ułatwiające śledzenie zadań, przypadków testowych, usterek, wymagań, problemów lub innych rodzajów pracy, które są skojarzone z określonymi częściami modelu.|  
 |[Eksportowanie diagramów jako obrazów](../modeling/export-diagrams-as-images.md)|**Zapisz swoją modeli i diagramów** tak, aby można je udostępnić innym użytkownikom, włącznie z tymi, którzy nie korzystają z [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].|  
   

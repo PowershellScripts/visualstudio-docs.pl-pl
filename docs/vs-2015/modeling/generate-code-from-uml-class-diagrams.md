@@ -1,7 +1,7 @@
 ---
 title: Generowanie kodu z diagramów klas UML | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 53
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8874e5aa1c2dcf440c7cfed1cc2ce42c4187bdc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e13ad8f658fafa2a20556e95123c5cd5965934e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631441"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222838"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generowanie kodu na podstawie diagramów klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [generowanie kodu z diagramów klas UML](https://docs.microsoft.com/visualstudio/modeling/generate-code-from-uml-class-diagrams).  
-  
 Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Studio, należy użyć **Generuj kod** polecenia. Domyślnie, polecenie generuje typ C# dla każdego wybranego typu UML. Można modyfikować i rozszerzać to zachowanie przez modyfikowanie lub kopiowanie szablonów tekstu, generujących kod. W modelu można określić różne zachowania dla typów, które są zawarte w różnych pakietach.  
   
  **Generuj kod** polecenia przystosowane jest do generowania kodu z wybranych przez użytkownika elementów oraz do generowania pliku dla każdej klasy UML lub innego elementu. Na przykład zrzut ekranu pokazuje dwa pliki C#, które zostały wygenerowane z dwóch klas UML.  
@@ -41,7 +39,7 @@ Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Stu
   
  Aby uzyskać więcej informacji dotyczących diagramów klas UML w programie Visual Studio zobacz następujące tematy:  
   
--   [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)  
+-   [Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)  
   
 -   [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)  
   
@@ -173,9 +171,9 @@ Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Stu
     |------------------|---------------------|  
     |Nazwa|Nazwa dla tego powiązania. Aby zastąpić powiązanie odziedziczone z zawartego pakietu lub modelu, użyj takiej samej nazwy, jaką ma powiązanie, które chcesz zastąpić.|  
     |Zastąp|Jeśli ma wartość true, istniejący kod jest zastępowany.|  
-    |Nazwa obiektu docelowego|Nazwa pliku, który jest generowany.<br /><br /> Można wstawiać wyrażenia, w tym ciąg takich jak `{Name}` lub `{Owner.Name}`. Na przykład można napisać: `{Owner.Name}_{Name}`. Wyrażenie jest określane na elemencie modelu. Może używać właściwości elementów, lecz nie metod. Aby dowiedzieć się, jakie właściwości mogą być używane, Przyjrzyj się właściwościom typów w **Microsoft.VisualStudio.Uml.\*** . **Ważne:** `{Name}` lub `{Owner.Name}` mogą być używane tylko w **Nazwa docelowego** właściwości.   Aby zmienić nazwę wygenerowanej klasy, musisz zmodyfikować szablon. Aby uzyskać więcej informacji, zobacz [Writing a Text Template](#writing).|  
+    |Nazwa obiektu docelowego|Nazwa pliku, który jest generowany.<br /><br /> Można wstawiać wyrażenia, w tym ciąg takich jak `{Name}` lub `{Owner.Name}`. Na przykład można napisać: `{Owner.Name}_{Name}`. Wyrażenie jest określane na elemencie modelu. Może używać właściwości elementów, lecz nie metod. Aby dowiedzieć się, jakie właściwości mogą być używane, Przyjrzyj się właściwościom typów w **Microsoft.VisualStudio.Uml.\*** . **Ważne:** `{Name}` lub `{Owner.Name}` mogą być używane tylko w **Nazwa docelowego** właściwości. Aby zmienić nazwę wygenerowanej klasy, musisz zmodyfikować szablon. Aby uzyskać więcej informacji, zobacz [Writing a Text Template](#writing).|  
     |Ścieżka projektu|Określa ścieżkę do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pliki wyjściowe projektu, który będzie zawierać transformacji. Aby utworzyć nowy projekt skorzystaj z typowanych wartości. Wybierz przycisk wielokropka (**[...]** ) aby wybrać istniejący projekt.<br /><br /> Jeśli projekt nie istnieje zostanie utworzony nowy. Będzie to projekt biblioteki klas języka C#.<br /><br /> Aby to zrobić, musisz wpisać nazwę projektu bezpośrednio. Możesz dołączyć makra zmiennej środowiska, takie jak %ProgramFiles% lub %LocalAppData%.|  
-    |Katalog docelowy|Folder, w którym generowany jest plik docelowy. Ścieżka jest względna w stosunku do folderu projektu.<br /><br /> Możesz użyć `{PackageStructure}` wyrażenie, aby wstawić ścieżkę, która odnosi się do nazw zawierających pakietów. Wartość domyślna to `\GeneratedCode\{PackageStructure}`. Można również dołączyć zmienne środowiskowe, takie jak %TEMP% lub %HomePath%. **Ważne:** `{PackageStructure}` mogą być używane tylko w **katalog docelowy** właściwości.  |  
+    |Katalog docelowy|Folder, w którym generowany jest plik docelowy. Ścieżka jest względna w stosunku do folderu projektu.<br /><br /> Możesz użyć `{PackageStructure}` wyrażenie, aby wstawić ścieżkę, która odnosi się do nazw zawierających pakietów. Wartość domyślna to `\GeneratedCode\{PackageStructure}`. Można również dołączyć zmienne środowiskowe, takie jak %TEMP% lub %HomePath%. **Ważne:** `{PackageStructure}` mogą być używane tylko w **katalog docelowy** właściwości.|  
     |Ścieżka pliku szablonu|Szablon, który będzie wykonywał przekształcenia.<br /><br /> Można użyć dostarczonych szablonów lub stworzyć własne. Dostarczone szablony można znaleźć w następującej lokalizacji:<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\|  
   
 5.  Można dołączyć dowolną liczbę powiązań do elementu.  
@@ -242,7 +240,7 @@ Aby wygenerować kod Visual C# .NET z diagramów klas UML w programie Visual Stu
 ## <a name="see-also"></a>Zobacz też  
  [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)   
  [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)   
- [Generowanie plików z modelu UML](../modeling/generate-files-from-a-uml-model.md)
+ [Generowanie plików na podstawie modelu UML](../modeling/generate-files-from-a-uml-model.md)
 
 
 

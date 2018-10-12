@@ -1,7 +1,7 @@
 ---
 title: Omówienie modelu automatyzacji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fdce23e892fe2fa14dc7f24f95d5744be2c67c39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c31d3b9f18ede2137b5cffe2dd3600de727b9de1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679561"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235693"
 ---
 # <a name="automation-model-overview"></a>Omówienie modelu automatyzacji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [omówienie modelu automatyzacji](https://docs.microsoft.com/visualstudio/extensibility/internals/automation-model-overview).  
-  
 Model automatyzacji zawiera zestaw obiektów, wobec których można napisać dodatek programu Visual Studio lub rozszerzenia. Dodatek jest aplikacja, która może manipulować środowiska Visual Studio i automatyzacji typowych zadań. Rozszerzenia programu Visual Studio można tworzyć niestandardowe składniki programu Visual Studio lub dodać do funkcji składniki standardowe, takich jak edytor tekstu.  
   
 ## <a name="objects-in-the-automation-model"></a>Obiekty w modelu automatyzacji  

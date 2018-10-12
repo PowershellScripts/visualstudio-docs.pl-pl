@@ -1,7 +1,7 @@
 ---
 title: Windows pamięci | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 180abd9aed356613456790a328fb45d1c3ffcf69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677778"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297198"
 ---
 # <a name="memory-windows"></a>Okno pamięci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wyświetlanie pamięci dla zmiennych w debugerze](https://docs.microsoft.com/visualstudio/debugger/memory-windows).  
-  
 **Pamięci** okna zapewnia wgląd w to obszar pamięci, który jest używany przez aplikację. **Obejrzyj** oknie **QuickWatch** okno dialogowe **automatyczne** oknie i **lokalne** okno Pokaż zawartość zmiennych, które są przechowywaną w określonej lokalizacji w pamięci. Ale **pamięci** okno zawiera obraz na dużą skalę. Ten widok może być wygodną badanie dużej części danych (buforów lub dużych ciągów, na przykład), które nie są wyświetlane poprawnie w innych oknach. Jednak **pamięci** okno nie jest ograniczona do wyświetlania danych. Wyświetla wszystkie elementy w obszarze pamięci czy zawartość jest dane, kod lub losowych bity wyrzucania elementów w pamięci nieprzypisane.  
   
  **Pamięci** okno jest dostępne tylko wtedy, gdy debugowanie na poziomie adresów jest włączone w **opcje**okno dialogowe**debugowanie** węzła. **Pamięci** okno nie jest dostępne dla skryptu lub SQL, które są języki, które nie rozpoznają koncepcji pamięci.  

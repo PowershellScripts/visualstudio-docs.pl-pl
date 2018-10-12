@@ -1,7 +1,7 @@
 ---
 title: Przykładowe rozszerzenie kodowanych testów UI dla programu Excel | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 451e4d14-7fac-42f9-af56-2bdc8414c6c7
 caps.latest.revision: 15
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b4da574b77d8dd2b1b14ccb0b04e449799338620
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ccc315b62ffa2e7c70f992a560e55c80eb86dc8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685395"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306621"
 ---
 # <a name="sample-coded-ui-test-extension-for-excel"></a>Przykładowe rozszerzenie kodowanych testów UI dla programu Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [rozszerzenie kodowanych testów interfejsu użytkownika przykładowe dla programu Excel](https://docs.microsoft.com/visualstudio/test/sample-coded-ui-test-extension-for-excel).  
-  
 Składnik rozszerzenia przykładu, który jest uruchamiany w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proces kodowanego testu interfejsu użytkownika i jest nieco hierarchiczne z `ExtensionPackage` klasę podstawową. `TechnologyManager`, `ActionFilter`, I `PropertyProvider` klasy są przy następnym poziomie, z elementami kontroli na najwyższym poziomie.  
   
  ![Architektura rozszerzenia Test w programie Excel](../test/media/excel-extarch.png "Excel_ExtArch")  
@@ -59,7 +57,7 @@ Architektura rozszerzenia programu Excel
  [Klasa TechnologyManager](../test/sample-excel-extension-technologymanager-class.md)   
  [Klasa ActionFilter](../test/sample-excel-extension-actionfilter-class.md)   
  [Klasy elementów](../test/sample-excel-extension-element-classes.md)   
- [Klasa PropertyProvider](../test/sample-excel-extension-propertyprovider-class.md)
+ [PropertyProvider, klasa](../test/sample-excel-extension-propertyprovider-class.md)
 
 
 

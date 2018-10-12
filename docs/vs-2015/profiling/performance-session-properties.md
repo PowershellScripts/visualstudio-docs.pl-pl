@@ -1,7 +1,7 @@
 ---
 title: Właściwości sesji wydajności | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cc3832c0e5a1c4aed99de070b15b0b83ae1254f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633961"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306153"
 ---
 # <a name="performance-session-properties"></a>Właściwości sesji wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [właściwości sesji wydajności](https://docs.microsoft.com/visualstudio/profiling/performance-session-properties).  
-  
 A **sesji wydajności** umożliwia skonfigurowanie ustawień, które określają, jak jest profilowana aplikacja. Przechowuje także raporty, które są generowane dla sesji profilowania.  
   
  **Wymagania**  
@@ -47,11 +45,11 @@ A **sesji wydajności** umożliwia skonfigurowanie ustawień, które określają
   
  Aby uzyskać więcej informacji, zobacz:  
   
- [Porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)  
+ [Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)  
   
- [Zbieranie alokacji pamięci .NET i okres istnienia obiektu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
+ [Zbieranie danych alokacji pamięci .NET i okresu istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
- [Porady: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)  
+ [Instrukcje: ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)  
   
 ## <a name="launch"></a>Uruchom  
  Te ustawienia pozwalają na wybranie z listy plików binarnych, a także określić kolejność uruchamiania plików binarnych.  
@@ -86,9 +84,9 @@ A **sesji wydajności** umożliwia skonfigurowanie ustawień, które określają
   
  Aby uzyskać więcej informacji, zobacz:  
   
- [Porady: profilowanie kodu JavaScript na stronach sieci Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
+ [Instrukcje: profilowanie kodu JavaScript na stronach internetowych](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
   
- [Porady: Określanie poleceń przed i po Instrumentacji](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
+ [Instrukcje: określanie poleceń przed i po instrumentacji](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
   
 ## <a name="cpu-counters"></a>Liczniki procesora CPU  
  Te ustawienia umożliwiają zbieranie danych dotyczących liczników wydajności procesora CPU, gdy używana jest metoda profilowania instrumentacji. Przenośne liczniki wydajności są dostępne niezależnie od tego, czy projekt procesora CPU lub producentem. Zdarzenia platformy są specyficzne dla projektu procesora CPU i producenta. Więcej informacji na temat liczników wydajności na układ znajduje się w dokumentacji określony procesor.  
@@ -100,7 +98,7 @@ A **sesji wydajności** umożliwia skonfigurowanie ustawień, które określają
   
  Aby uzyskać więcej informacji, zobacz:  
   
- [Porady: zbieranie zdarzeń śledzenia dla danych Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
+ [Instrukcje: zbieranie danych śledzenia zdarzeń dla systemu Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
   
  [VSPerfReport](../profiling/vsperfreport.md).  
   
@@ -114,9 +112,9 @@ A **sesji wydajności** umożliwia skonfigurowanie ustawień, które określają
   
  Aby uzyskać więcej informacji, zobacz:  
   
- [Porady: Określanie środowiska wykonawczego .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
+ [Instrukcje: określanie środowiska uruchomieniowego programu .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   
- [Porady: Określanie dodatkowych opcji Instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)  
+ [Instrukcje: określanie dodatkowych opcji instrumentacji](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Omówienie](../profiling/overviews-performance-tools.md)   

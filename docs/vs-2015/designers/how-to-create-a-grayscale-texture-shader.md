@@ -1,7 +1,7 @@
 ---
 title: 'Porady: tworzenie cieniowania tekstury skali szarości | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a9ec147f690612b6094925ae893d42bc4dd5145a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2fd97c38dcd61bc285b6d9a82d02a17f0fc47d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632527"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304801"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Porady: tworzenie cieniowania tekstury skali szarości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: tworzenie cieniowania tekstury skali szarości](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-grayscale-texture-shader).  
-  
 W tym dokumencie przedstawiono sposób użycia języka programu do cieniowania wykres kierowany (DGSL) i Projektant programu do cieniowania do tworzenie cieniowania tekstury skali szarości. Ten program do cieniowania Modyfikuje wartość koloru RGB próbki tekstury, a następnie używa go wraz z zostały zmodyfikowane wartości alfa, można ustawić ostateczny kolor.  
   
 ## <a name="creating-a-grayscale-texture-shader"></a>Tworzenie cieniowania tekstury skali szarości  

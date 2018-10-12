@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Pisanie wizualizatora w języku Visual Basic | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53c750a70df1845351b3c67e394c3f87af53a47d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aafc13f01d89177a144558126452d547a55f88d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680718"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266685"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Wskazówki: pisanie wizualizatora w Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: pisanie wizualizatora w języku Visual Basic](https://docs.microsoft.com/visualstudio/debugger/walkthrough-writing-a-visualizer-in-visual-basic).  
-  
 W tym przewodniku pokazano, jak pisanie prostego wizualizatora przy użyciu [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Wizualizator, która zostanie utworzona w tym przewodniku Wyświetla zawartość ciągu przy użyciu Windows Forms okno komunikatu. Ten Wizualizator prostego ciągu jest prosty przykład, aby pokazać, jak utworzyć wizualizatorów dla innych typów danych bardziej odpowiednie do swoich projektów.  
   
 > [!NOTE]
@@ -237,7 +235,7 @@ W tym przewodniku pokazano, jak pisanie prostego wizualizatora przy użyciu [!IN
 ## <a name="see-also"></a>Zobacz też  
  [Architektura wizualizatora](../debugger/visualizer-architecture.md)   
  [Porady: Instalowanie wizualizatora](../debugger/how-to-install-a-visualizer.md)   
- [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
+ [Tworzenie niestandardowych wizualizatorów](../debugger/create-custom-visualizers-of-data.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Widok funkcji - dane Instrumentacji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c99ac53b5059877a7025d978439a8c3468640eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60238ee0fab8819d2b44ff68ba5122b7f65444ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689042"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306881"
 ---
 # <a name="functions-view---instrumentation-data"></a>Widok funkcji — dane instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [widok funkcji - dane Instrumentacji](https://docs.microsoft.com/visualstudio/profiling/functions-view-instrumentation-data).  
-  
 Widok raportu funkcji Wyświetla listę danych profilowania nazwą funkcji.  
   
 ## <a name="general"></a>Ogólne  
@@ -95,7 +93,7 @@ Widok raportu funkcji Wyświetla listę danych profilowania nazwą funkcji.
  [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   
  [Widok funkcji](../profiling/functions-view-sampling-data.md)   
  [Widok funkcji - próbkowanie](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Widok funkcji - Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+ [Widok funkcji — Instrumentacja](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie ładowaniem projektu w rozwiązaniu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dab040cc22375244d0a091eeb63d8ad011c3b12f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634178"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281388"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Zarządzanie ładowaniem projektu w rozwiązaniu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Zarządzanie ładowania projektu w rozwiązaniu](https://docs.microsoft.com/visualstudio/extensibility/managing-project-loading-in-a-solution).  
-  
 Rozwiązania programu Visual Studio mogą zawierać dużą liczbę projektów. Domyślne zachowanie programu Visual Studio jest można załadować wszystkich projektów w rozwiązaniu w czasie, które rozwiązanie jest otwierane, a nie Zezwalaj użytkownikowi dostępu do żadnego z projektów wszystkich z nich ma zakończenie ładowania. Podczas procesu ładowania projektu trwa więcej niż dwie minuty, jest wyświetlany pasek postępu, przedstawiający liczbę projektów i łącznej liczby projektów. Użytkownik może zwolnienia projektów podczas pracy w ramach rozwiązania z wieloma projektami, ale ta procedura ma pewne wady: zwolniono projekty są kompilowane jako część polecenia Kompiluj rozwiązanie i zamknięcie IntelliSense opisy typów i elementów członkowskich projekty nie są wyświetlane.  
   
  Deweloperzy mogą skrócić czas ładowania rozwiązania i zarządzać ładowanie zachowanie, tworząc ładowania rozwiązań menedżera projektu. Menedżera obciążenia rozwiązania można ustawić inny projekt ładowania priorytetów dla określonych projektów i typów projektów, upewnij się, że projekty zostały załadowane przed rozpoczęciem kompilacji tła, opóźnienie w tle podczas ładowania dopiero po zakończeniu innego zadania w tle i wykonania inne zadania zarządzania ładowania projektu.  

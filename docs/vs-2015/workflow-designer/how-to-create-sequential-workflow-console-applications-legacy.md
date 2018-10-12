@@ -1,7 +1,7 @@
 ---
 title: 'Porady: tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsza wersja) | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 0882a39dfae5639fcfc72adc7ccd976f4d93e30a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e467e4a574263eaa35640bc99f99c1f599a74df9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682500"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306322"
 ---
 # <a name="how-to-create-sequential-workflow-console-applications-legacy"></a>Porady: tworzenie aplikacji konsoli sekwencyjnego przepływu pracy (starsza wersja)
 Wykonaj następujące kroki, aby utworzyć projekt sekwencyjne Aplikacja konsoli przepływu pracy za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] dostarczone przez [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

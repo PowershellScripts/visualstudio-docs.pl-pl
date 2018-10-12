@@ -1,7 +1,7 @@
 ---
 title: Zwijanie w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e450a41db4e56067424e89acf8bb4af048acfc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69ea15c814472303ffd3a0097e7e61777805d487
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681145"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263227"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Zwijanie w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zwijania w starszej wersji usługi językowej](https://docs.microsoft.com/visualstudio/extensibility/internals/outlining-in-a-legacy-language-service).  
-  
 Konspekt umożliwia zwijane złożony program Przegląd lub konspektu. Na przykład w języku C# może zostać zwinięty wszystkie metody w jeden wiersz, pokazujący tylko podpis metody. Ponadto aby pokazać tylko nazwy klasy i struktury może zostać zwinięty struktury i klasy. Wewnątrz pojedynczej metody złożonej logiki może zostać zwinięty będzie wyświetlana ogólny przepływ, takich jak wyświetlanie tylko pierwszy wiersz instrukcji `foreach`, `if`, i `while`.  
   
  Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [wskazówki: Tworzenie konspektu](../../extensibility/walkthrough-outlining.md).  

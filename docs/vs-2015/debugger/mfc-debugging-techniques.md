@@ -1,7 +1,7 @@
 ---
 title: Techniki debugowania MFC | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4828b7b5ee5d0812c8a9b1afa2ff2def783c3d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b311954172038d20327ab92283812a8b157a0d06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689003"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303917"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniki testowania MFC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [techniki testowania MFC](https://docs.microsoft.com/visualstudio/debugger/mfc-debugging-techniques).  
-  
 Jeśli debugujesz program MFC te techniki debugowania mogą być przydatne.  
   
 ##  <a name="BKMK_In_this_topic"></a> W tym temacie  

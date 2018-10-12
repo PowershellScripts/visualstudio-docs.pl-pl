@@ -1,7 +1,7 @@
 ---
 title: Moduły wyliczające | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6dcbd3dea8ad932aec5890bc085873ce3d20a8f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4dcc660ba5aacf1b8014e7c4ca15443f2fdf881b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681862"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258508"
 ---
 # <a name="enumerators"></a>Modułów wyliczających
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [moduły wyliczające](https://docs.microsoft.com/visualstudio/extensibility/enumerators).  
-  
 W tej sekcji przedstawiono typy danych modułu wyliczającego w interfejsie API wtyczki kontroli źródła wtyczka do kontroli źródła należy wiedzieć o.  
   
 ## <a name="in-this-section"></a>W tej sekcji  

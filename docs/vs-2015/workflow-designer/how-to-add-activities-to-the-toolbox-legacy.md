@@ -1,7 +1,7 @@
 ---
 title: 'Porady: dodawanie działań do przybornika (starsza wersja) | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 0bcd5f525dfb0794f06b5210287251feb883b340
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fafcc260f451c4ead24d7a9dbb72a4db22c0b79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677162"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249369"
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Porady: dodawanie działań do przybornika (starsza wersja)
 Podczas kompilowania rozwiązania z przepływu pracy, przy użyciu starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] przeznaczonego [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]niestandardowych działań może zostać dodany do projektu przepływu pracy i ich projektantów umieszczone w **przybornika** dla proste dostęp. Możesz również dodać działania bezpośrednio do **przybornika** z biblioteki dołączanej (dynamicznie DLL).  

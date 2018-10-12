@@ -1,7 +1,7 @@
 ---
 title: Zapoznanie z wartościami danych Instrumentacji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da7a4ddebb8504d4a6ac9b3d39a0ee4646f5d8f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61e942a1c3cb43bcd2d3d7ef813ed4bd98267a1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684079"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298886"
 ---
 # <a name="understanding-instrumentation-data-values"></a>Zapoznanie z wartościami danych instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wartościami danych Instrumentacji opis](https://docs.microsoft.com/visualstudio/profiling/understanding-instrumentation-data-values).  
-  
 *Instrumentacji* profilowanie metody [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rejestruje szczegółowe informacje o czasie wywołania funkcji, wierszy i zgodnie z instrukcjami w profilowanej aplikacji  
   
  **Wymagania**  
@@ -107,7 +105,7 @@ Najnowszą wersję tego tematu znajduje się w temacie [wartościami danych Inst
   
 ## <a name="see-also"></a>Zobacz też  
  [Analizowanie wydajności danych dotyczących narzędzi](../profiling/analyzing-performance-tools-data.md)   
- [Porady: Wybieranie metod kolekcji](../profiling/how-to-choose-collection-methods.md)
+ [Instrukcje: wybieranie metod zbierania](../profiling/how-to-choose-collection-methods.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Import i eksport ustawień polecenie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e4a638686bb0ec111bf551cac0b38bb5d50b1774
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2556b814059a80f2b93d0220de27cdbd8c051ea9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42674561"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305568"
 ---
 # <a name="import-and-export-settings-command"></a>Import i eksport ustawień — Polecenie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [importowania i eksportowania ustawień polecenia](https://docs.microsoft.com/visualstudio/ide/reference/import-and-export-settings-command).  
-  
   
 Importuje, eksportuje lub resetuje [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ustawienia.  
   

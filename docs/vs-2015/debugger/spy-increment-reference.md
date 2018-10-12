@@ -1,7 +1,7 @@
 ---
 title: Spy ++ — odwołanie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0b59d82b95115c230d177ea322f5f4e376b3a40d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ed0dc159521901827116fb23adc22980de84113
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630865"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301525"
 ---
 # <a name="spy-reference"></a>Spy++ — Odwołanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Spy ++ — odwołanie](https://docs.microsoft.com/visualstudio/debugger/spy-increment-reference).  
-  
 Zobacz sekcje poniżej opisy każdego Spy ++ menu i okno dialogowe:  
   
 ## <a name="in-this-section"></a>W tej sekcji  
@@ -38,22 +36,22 @@ Zobacz sekcje poniżej opisy każdego Spy ++ menu i okno dialogowe:
  [Czcionki — okno dialogowe](../debugger/font-dialog-box-microsoft-spy-increment-help.md)  
  Umożliwia skonfigurowanie czcionki znaku używany w oknie widoków programu Spy ++.  
   
- [Narzędzia wyszukiwania dotyczące widoków programu Spy ++](../debugger/search-tools-for-spy-increment-views.md)  
+ [Narzędzia wyszukiwania dotyczące widoków programu Spy++](../debugger/search-tools-for-spy-increment-views.md)  
  Okna dialogowe używane do wyszukiwania określonego węzła w oknie widoków programu Spy ++.  
   
- [Okno dialogowe właściwości](../debugger/window-properties-dialog-box.md)  
+ [Właściwości okna, okno dialogowe](../debugger/window-properties-dialog-box.md)  
  Umożliwia wyświetlenie właściwości wybranego w widoku Windows okna.  
   
- [Okno dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md)  
+ [Opcje komunikatów, okno dialogowe](../debugger/message-options-dialog-box.md)  
  Używany do wybierania, wiadomości, które są wyświetlane w widoku komunikatów.  
   
- [Okno dialogowe Właściwości komunikatu](../debugger/message-properties-dialog-box.md)  
+ [Właściwości komunikatu, okno dialogowe](../debugger/message-properties-dialog-box.md)  
  Umożliwia wyświetlenie właściwości wiadomości wybrany w widoku komunikatów.  
   
- [Okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md)  
+ [Właściwości procesu, okno dialogowe](../debugger/process-properties-dialog-box.md)  
  Umożliwia wyświetlenie właściwości procesem, który został wybrany w widoku procesów.  
   
- [Okno dialogowe właściwości wątku](../debugger/thread-properties-dialog-box.md)  
+ [Właściwości wątku, okno dialogowe](../debugger/thread-properties-dialog-box.md)  
  Umożliwia wyświetlenie właściwości wybranego w widoku wątków wątek.  
   
  [Inne okna dialogowe](../debugger/other-dialog-boxes.md)  

@@ -1,7 +1,7 @@
 ---
 title: Tworzenie szablonów elementów i projektów niestandardowych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd850cf73f9d7a9c443c374bd8a83e48c3470a31
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 3135702050caf1b1825c41eb909958a7ab5d8ffb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304632"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Tworzenie niestandardowych szablonów projektów i szablonów elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Tworzenie niestandardowych szablonów projektów i elementów](https://docs.microsoft.com/visualstudio/extensibility/creating-custom-project-and-item-templates).  
-  
 Visual Studio SDK zawiera szablony projektów, które Tworzenie szablonu niestandardowego projektu i szablonu niestandardowego elementu. Te szablony obejmują kilka typowych podstawieniach parametrów i kompilacji jako pliki zip. Nie są automatycznie wdrażane, a nie są one dostępne w doświadczalnym wystąpieniu. Należy skopiować pliku zip plik do lokalizacji  
   
  Szablony do tworzenia szablonu pozwalają obejmują szablony w rozszerzeniach większe. Pozwala to na implementowanie kontroli wersji na pliki źródłowe i utworzyć grupę z projektów szablonu w jednym pakiecie VSIX.  

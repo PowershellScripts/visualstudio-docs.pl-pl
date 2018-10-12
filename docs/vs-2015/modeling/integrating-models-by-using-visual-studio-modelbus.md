@@ -1,7 +1,7 @@
 ---
 title: Integrowanie modeli za pomocą programu Visual Studio Modelbus | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2cbc89ae03e96a574e3d63a8448628d29ecf163f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1aa105ea43eaee0c82ee4572c21beb2e7b74315a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683167"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256259"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrowanie modeli za pomocą Visual Studio Modelbus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [integrowanie modeli za pomocą programu Visual Studio Modelbus](https://docs.microsoft.com/visualstudio/modeling/integrating-models-by-using-visual-studio-modelbus).  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus udostępnia metodę tworzenia łącza między modelami i z innych narzędzi modeli. Na przykład możesz połączyć modeli języka specyficznego dla domeny (DSL) i modeli UML. Możesz utworzyć zintegrowany zestaw językami DSL.  
   
  ModelBus umożliwia utworzenie unikatowych odwołania do modelu lub do określonego elementu w modelu. To odwołanie mogą być przechowywane poza modelem, na przykład w elemencie w innym modelem. Gdy przy późniejszej okazji, narzędzie chce, aby uzyskać dostęp do elementu, infrastruktury Model Bus odpowiedni model obciążenia i zwraca element. Jeśli chcesz, możesz wyświetlić modelu do użytkownika. Jeśli plik nie jest dostępny w poprzedniej lokalizacji, ModelBus będzie monitować użytkownika o znalezienie go. Jeśli użytkownik znajduje się plik, ModelBus naprawi wszystkie odwołania do tego pliku.  

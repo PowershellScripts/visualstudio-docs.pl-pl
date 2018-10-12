@@ -1,7 +1,7 @@
 ---
 title: Nawigowanie po sesji debugowania w programie Visual Studio (Xaml i C#) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c9aed98b7f2649aa5c62e930e1833b80d58b7ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677242"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306309"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Nawigowanie po sesji debugowania w programie Visual Studio (Xaml i C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [nawigowanie po sesji debugowania w programie Visual Studio (Xaml i C#)](https://docs.microsoft.com/visualstudio/debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp).  
-  
 Ten przewodnik Szybki start pokazuje, jak nawigować po sesji debugowania programu Visual Studio i jak wyświetlić i zmienić stan programu w sesji.  
   
  Ten przewodnik Szybki start jest dla deweloperów, którzy są nowe debugowanie przy użyciu programu Visual Studio, a sesja debugowania dla deweloperów, którzy chcą dowiedzieć się więcej o przechodząc w programie Visual Studio. Techniki debugowania sam nie jest nauka. Metody w przykładowym kodzie są przeznaczone tylko do zademonstrowania debugowania procedur opisanych w tym temacie. Metody nie stosować najlepsze rozwiązania projekt aplikacji lub funkcji. W rzeczywistości zostanie szybko odkryjesz, że metody i aplikacji, nie wykonuj ilości niczego na wszystkich.  

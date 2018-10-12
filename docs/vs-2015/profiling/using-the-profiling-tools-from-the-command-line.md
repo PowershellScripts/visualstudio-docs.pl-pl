@@ -1,7 +1,7 @@
 ---
 title: Za pomocą profilowania narzędzia z wiersza polecenia | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b827f7cca775e544049a23bcc8b0a431d11b332
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c9f056bb95458ef8bbe9c221fdfbbfaa322e9e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632799"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298392"
 ---
 # <a name="using-the-profiling-tools-from-the-command-line"></a>Korzystanie z narzędzi do profilowania z wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [przy użyciu Profiling Tools z wiersza polecenia](https://docs.microsoft.com/visualstudio/profiling/using-the-profiling-tools-from-the-command-line).  
-  
 Można użyć narzędzia wiersza poleceń dla [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Profiling Tools do profilu aplikacji w wierszu polecenia i zautomatyzować profilowania przy użyciu plików wsadowych i skryptów. Można również wygenerować pliki raportu w wierszu polecenia. Uproszczone autonomicznego profilera można użyć do zbierania danych na komputerach, które nie mają [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zainstalowane.  
   
 > [!NOTE]
@@ -47,7 +45,7 @@ Można użyć narzędzia wiersza poleceń dla [!INCLUDE[vsprvs](../includes/vspr
 |**Profiluj kod na komputerach bez programu Visual Studio:** autonomicznego profilera Profiling Tools umożliwiają zbieranie danych dla aplikacji na komputerach, które nie mają [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zainstalowane.|-   [Porady: Instalowanie autonomiczny Profiler](../profiling/how-to-install-the-stand-alone-profiler.md)|  
   
 ## <a name="reference"></a>Tematy pomocy  
- [Dokumentacja wiersza polecenia narzędzia profilowania](../profiling/command-line-profiling-tools-reference.md)  
+ [Narzędzia profilowania wiersza polecenia — dokumentacja](../profiling/command-line-profiling-tools-reference.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Eksplorator wydajności](../profiling/performance-explorer.md)

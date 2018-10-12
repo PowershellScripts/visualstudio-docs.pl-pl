@@ -1,7 +1,7 @@
 ---
 title: Omówienie języka specyficznego dla domeny narzędzi interfejsu użytkownika | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 25d8f34488c0fee954eb9ab2d372750518433f4a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d88c7ee14acc1916e56010784224f8e44b73f45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627763"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251436"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Omówienie interfejsu użytkownika narzędzi językowych właściwych dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [omówienie interfejsu użytkownika narzędzi języka specyficznego dla domeny](https://docs.microsoft.com/visualstudio/modeling/overview-of-the-domain-specific-language-tools-user-interface).  
-  
 Po pierwszym otwarciu rozwiązania narzędzia języka specyficznego dla domeny (narzędzia DSL), w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], interfejs użytkownika będzie przypominał na poniższej ilustracji.  
   
  ![Projektant DSL](../modeling/media/dsl-designer.png "dsl_designer")  

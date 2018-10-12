@@ -1,7 +1,7 @@
 ---
 title: Rejestracja i wybór (pakiet VSPackage kontroli) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ef8cf369d2660523bdfe4ad6eaa83be5748eedf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b6324112bed6d201ca57fd3fb5c77696a528f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630051"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305789"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Rejestracja i wybór (pakiet VSPackage kontroli kodu źródłowego)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Rejestracja i wybór (pakiet VSPackage kontroli)](https://docs.microsoft.com/visualstudio/extensibility/internals/registration-and-selection-source-control-vspackage).  
-  
 Pakietu VSPackage musi być zarejestrowana do udostępnienia go do kontroli źródła [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Jeśli nie zarejestrowano więcej niż jeden formant źródła pakietu VSPackage, użytkownik może wybrać VSPackage, który można załadować w odpowiednim czasie. Zobacz [pakietów VSPackage](../../extensibility/internals/vspackages.md) więcej informacji na temat pakietów VSPackage i jak je zarejestrować.  
   
 ## <a name="registering-a-source-control-package"></a>Rejestrowanie pakietu kontroli źródła  

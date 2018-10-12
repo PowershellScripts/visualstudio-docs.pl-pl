@@ -1,7 +1,7 @@
 ---
 title: Rozszerzanie właściwości | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9db64799426eea6aeaecdd0890da683a7597a129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be53c59cc0a1baf5331502c3079ee741751c53eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632245"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303709"
 ---
 # <a name="extending-properties"></a>Rozszerzanie właściwości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [rozszerzanie właściwości](https://docs.microsoft.com/visualstudio/extensibility/internals/extending-properties).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Właściwości** okna jest przeglądarkę właściwości uniwersalnych dla składników COM i COM + i obsługuje wszystkie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] produktów. **Właściwości** okna współpracuje z `ITypeInfo` typu informacji i metadanych modelu COM +, aby wyświetlić listę właściwości czasu projektowania dla aktualnie wybranego obiektu w innym oknie zintegrowanego środowiska programistycznego (IDE).  
   
  **Właściwości** okno, które można otworzyć, naciskając klawisz F4 na klawiaturze lub wybierając **okno właściwości** na **widoku** menu służy do wyświetlania i edytowania niezależne od konfiguracji, w czasie projektowania, właściwości i zdarzeń zaznaczonych obiektów. Właściwości zależne od konfiguracji, skojarzone z rozwiązaniami i projektami, są wyświetlane na [stron właściwości](../../extensibility/internals/property-pages.md). Aby uzyskać więcej informacji, zobacz [właściwości NIB: projektu](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [zarządzanie opcje konfiguracji](../../extensibility/internals/managing-configuration-options.md), i [zarządzania NIB: element w projektach](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  

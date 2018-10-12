@@ -1,7 +1,7 @@
 ---
 title: Tekst interfejsu użytkownika i pomoc dotyczącą programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f3e8f7541c83372c0d822c3db4bc0e20b3af1a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 350a379e14e526385776b815ce7e356a437d12af
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303819"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Tekst interfejsu użytkownika i pomoc dotyczącą programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [tekst interfejsu użytkownika i pomoc dotyczącą programu Visual Studio](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/ui-text-and-help-for-visual-studio).  
-  
 ##  <a name="BKMK_UITextAndTerminology"></a> Tekst interfejsu użytkownika i terminologia  
  Tekst zrozumiałymi ma podstawowe znaczenie dla skutecznego interfejsu użytkownika. Użytkownicy oprogramowania mają tendencję do odczytu etykiet, a mianowicie te najistotniejsze Kończenie wykonywanego zadania. Tekst statyczny jest do odczytu z mniejszą częstotliwością. Zaplanuj użytkownikom na uruchamianie ich sesji pracy za pomocą szybkiego skanowania całego okna, następuje odczytywanie interfejsu użytkownika w tej kolejności przybliżony:  
   

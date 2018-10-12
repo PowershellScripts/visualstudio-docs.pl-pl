@@ -1,7 +1,7 @@
 ---
 title: Obsługa narzędzi do przeglądania symboli | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c406cdf7b975e37522bccc0d45687593b1a35ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2df1b61d387497c1e83519fde104ad6a66d92133
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673385"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187320"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Obsługa narzędzi do przeglądania symboli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [narzędzi do przeglądania symboli obsługi](https://docs.microsoft.com/visualstudio/extensibility/internals/supporting-symbol-browsing-tools).  
-  
 **Przeglądarka obiektów**, **Widok klas**, **przeglądarce wywołań** i **wyniki wyszukiwania symboli** narzędzia udostępniają symbol przeglądania w programie Visual Studio. Te narzędzia wyświetlanie widoków drzewa hierarchicznego symboli i pokazanie relacji między symbolami w drzewie. Symbole mogą reprezentować przestrzenie nazw, obiektów, klas, składowych klasy i inne elementy języka zawarte w różnych składników. Składniki obejmują projektów programu Visual Studio, zewnętrzne [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] składniki i biblioteki typów (.tlb). Aby uzyskać więcej informacji, zobacz [wyświetlanie struktury kodu](../../ide/viewing-the-structure-of-code.md).  
   
 ## <a name="symbol-browsing-libraries"></a>Biblioteki przeglądania symboli  

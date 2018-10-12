@@ -1,7 +1,7 @@
 ---
 title: Ogólne, debugowanie, okno dialogowe Opcje | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c765ad6431572c224fa5458b9a4c65d9bb7a8cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 222cd90f73611aa40980679795debf4cb5eb2c0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690801"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306894"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Ogólne, debugowanie, okno dialogowe Opcje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [ogólne, debugowanie, okno dialogowe Opcje](https://docs.microsoft.com/visualstudio/debugger/general-debugging-options-dialog-box).  
-  
 **Narzędzia / Opcje / Debugowanie / ogólne** strona pozwala ustawić następujące opcje:  
   
  **Pytaj przed usunięciem wszystkich punktów przerwania**  

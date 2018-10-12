@@ -1,7 +1,7 @@
 ---
 title: Rejestrowanie programu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d522a4c422994d174d358450f9eb210762d262a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29cc63b2cdc9e965ad52276390d203f41eec4553
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678371"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306465"
 ---
 # <a name="registering-the-program"></a>Rejestrowanie programu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [rejestrowanie programu](https://docs.microsoft.com/visualstudio/extensibility/debugger/registering-the-program).  
-  
 Po aparat debugowania uzyskała portu, reprezentowane przez [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfejsu, następnym krokiem podczas włączania debugowania programu jest zarejestrowanie go za pomocą portu. Po zarejestrowaniu programu jest dostępna do debugowania za pomocą jednej z następujących sposobów:  
   
 -   Proces dołączania, która pozwala debugerowi na przejęcie kontroli debugowania z działającej aplikacji.  

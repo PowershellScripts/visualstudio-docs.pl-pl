@@ -1,7 +1,7 @@
 ---
 title: 'CA1404: Wywołaj metodę GetLastError natychmiast po P-Invoke | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 848ab5a19e4e4dc51e898ce764bd381a29d1eafb
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 444617094e1f2bf3217a49f32652b240918abd8c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900883"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297781"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Należy wywołać GetLastError natychmiast po P/Invoke
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [CA1404: Wywołaj GetLastError natychmiast po P-Invoke](https://docs.microsoft.com/visualstudio/code-quality/ca1404-call-getlasterror-immediately-after-p-invoke).
-
 |||
 |-|-|
 |TypeName|CallGetLastErrorImmediatelyAfterPInvoke|
@@ -68,13 +65,13 @@ Najnowszą wersję tego tematu znajduje się w temacie [CA1404: Wywołaj GetLast
  [!code-vb[FxCop.Interoperability.LastErrorPInvoke#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.LastErrorPInvoke/vb/FxCop.Interoperability.LastErrorPInvoke.vb#1)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1060: Przenieś P/Invokes do klasy NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+ [CA1060: Przenieś wywołania P/Invoke do klasy NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
  [CA1400: Powinny istnieć punkty wejścia P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
- [CA1401: P/Invokes nie powinny być widoczne](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+ [CA1401: Metody P/Invoke nie powinny być widoczne](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
- [CA2101: Określ marshaling dla argumentów ciągu P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+ [CA2101: Określ marshaling dla argumentów ciągu wywołania P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
  [CA2205: Użyj zarządzanych odpowiedników interfejsu API Win32](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)
 

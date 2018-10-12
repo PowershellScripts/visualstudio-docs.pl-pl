@@ -1,7 +1,7 @@
 ---
 title: Funkcja SccCheckout | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4cf1d8196c855612aab93404ca24072c8262e122
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad6621b2a7e4493883bf3639f388a76fa4e552fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681944"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210545"
 ---
 # <a name="scccheckout-function"></a>SccCheckout, funkcja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [funkcja SccCheckout](https://docs.microsoft.com/visualstudio/extensibility/scccheckout-function).  
-  
 Biorąc pod uwagę listę w pełni kwalifikowanej nazwy, ta funkcja wyewidencjonowuje je na dysku lokalnym. Komentarza ma zastosowanie do wszystkich plików, które są wyewidencjonowane. Argument komentarz może być `null` ciągu.  
   
 ## <a name="syntax"></a>Składnia  

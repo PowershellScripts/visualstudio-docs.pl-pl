@@ -1,7 +1,7 @@
 ---
 title: Wątki widok (Parallel Performance) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 644308065518afa9caf6fb0db088c2ffc556a8e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c49b68e0ee595041ec6b14c9f105937bf723afa6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688713"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300251"
 ---
 # <a name="threads-view-parallel-performance"></a>Widok wątków (Parallel Performance)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Widok wątków (Parallel Performance)](https://docs.microsoft.com/visualstudio/profiling/threads-view-parallel-performance).  
-  
 Widok wątków jest najbardziej szczegółowy i bogate widoku w Wizualizatorze współbieżności. Korzystając z tego widoku, można ustalić, czy wątki są wykonywanie lub blokowania z powodu synchronizacji, operacji We/Wy lub innego powodu.  
   
  Podczas analizy profilu Concurrency Visualizer sprawdza, czy wszystkie zdarzenia przełączenie kontekstu systemu operacyjnego dla każdego wątku aplikacji. Przełączeń kontekstu może wystąpić z wielu powodów, takich jak te:  

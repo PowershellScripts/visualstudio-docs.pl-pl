@@ -1,7 +1,7 @@
 ---
 title: Plik DslDefinition.dsl | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8d6df6e4957eec471e4d0f1212493c088e19703b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bf56b06771b905ec4982f7de7f91648c2e6b3a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684941"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306127"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Plik DslDefinition.dsl
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [plik DslDefinition.dsl](https://docs.microsoft.com/visualstudio/modeling/the-dsldefinition-dsl-file).  
-  
 W tym temacie opisano strukturę plik DslDefinition.dsl w projekcie języka Dsl [!INCLUDE[dsl](../includes/dsl-md.md)] rozwiązania, które definiuje *języka specyficznego dla domeny*. Plik DslDefinition.dsl opis klas i relacji języka specyficznego dla domeny, wraz z diagramu, kształty, łączniki, format serializacji i **przybornika** języka specyficznego dla domeny i jego narzędzia do edycji. W rozwiązaniu języka dotyczącego określonej domeny jest generowany kod, który definiuje tych narzędzi, zgodnie z informacjami w plik DslDefinition.dsl.  
   
  Ogólnie rzecz biorąc, możesz użyć *projektanta języka specyficznego dla domeny* do edycji plik DslDefinition.dsl. Jednak język XML jest w postaci pierwotnej i plik DslDefinition.dsl można otworzyć w edytorze XML. Może być przydatna zrozumieć, jakie informacje zawiera plik i sposób organizowania dla celów debugowania i rozszerzenia.  

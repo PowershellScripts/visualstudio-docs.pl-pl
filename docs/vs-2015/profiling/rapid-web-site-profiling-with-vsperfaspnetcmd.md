@@ -1,7 +1,7 @@
 ---
 title: Szybkie witryny sieci Web profilowanie za pomocą polecenia VSPerfASPNETCmd | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a16bef2afa14d992300649d4ec9ffd9752def099
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 5911a574bb10e284cfd9aa2a58cff9fddba5c7ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880685"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247666"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Szybkie profilowanie witryny sieci Web za pomocą VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [szybkie profilowanie witryny sieci Web za pomocą polecenia VSPerfASPNETCmd](https://docs.microsoft.com/visualstudio/profiling/rapid-web-site-profiling-with-vsperfaspnetcmd).  
-  
 **VSPerfASPNETCmd** narzędzia wiersza polecenia umożliwia łatwe profilu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web. W porównaniu z [VSPerfCmd](../profiling/vsperfcmd.md) narzędzia wiersza polecenia Opcje są mniejsze, żadne zmienne środowiskowe muszą być ustawione i ponowne uruchomienie komputera nie jest wymagane. Za pomocą **VSPerfASPNETCmd** jest preferowana metoda profilowania za pomocą Autonomiczny profiler. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie Profiler autonomicznego](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]

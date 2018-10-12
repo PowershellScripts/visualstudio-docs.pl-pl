@@ -1,7 +1,7 @@
 ---
 title: Potwierdzenia w zarządzanym kodzie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08cdbcde693655997fd980c018935a2b1c6df768
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5cd62b5cc5eabd731e5ad398cbb9ddbe60db073
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677936"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219118"
 ---
 # <a name="assertions-in-managed-code"></a>Potwierdzenia w zarządzanym kodzie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [potwierdzenia w kodzie zarządzany](https://docs.microsoft.com/visualstudio/debugger/assertions-in-managed-code).  
-  
 Na potwierdzenie lub `Assert` instrukcji sprawdza warunek, który jest określony jako argument do `Assert` instrukcji. Jeśli warunek jest spełniony, występuje żadna akcja. Gdy warunek jest spełniony, potwierdzenie nie powiedzie się. Jeśli korzystasz z kompilacji debugowania, programach przechodzi w tryb podziału.  
   
 ##  <a name="BKMK_In_this_topic"></a> W tym temacie  
@@ -232,7 +230,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  [Śledzenie i Instrumentacja aplikacji](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)   
  [Porady: kompilowanie warunkowe ze śledzeniem i debugowaniem](http://msdn.microsoft.com/library/56d051c3-012c-42c1-9a58-7270edc624aa)   
  [C#, F # i typów projektów języka Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
+ [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Określanie zdarzeń kompilacji (C#) | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5bda99acace01e068c58bae78e20b44b28313722
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4f0a5198f1f8c402fda54f448f3c9b520baabfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297300"
 ---
 # <a name="how-to-specify-build-events-c"></a>Porady: określanie zdarzeń kompilacji (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [jak: Specify Build Events (C#)](https://docs.microsoft.com/visualstudio/ide/how-to-specify-build-events-csharp).  
-  
 Korzystanie ze zdarzeń kompilacji określić polecenia, które są uruchamiane przed rozpoczęciem kompilacji lub po zakończeniu kompilacji. Zdarzenia kompilacji są wykonywane tylko wtedy, gdy kompilacja pomyślnie osiągnie tych punktów w procesie kompilacji.  
   
  Podczas kompilowania projektu zdarzenia sprzed kompilacji są dodawane do pliku, który nosi nazwę PreBuildEvent.bat i zdarzenia mające miejsce po kompilacji są dodawane do pliku, który nosi nazwę PostBuildEvent.bat. Jeśli chcesz upewnić się, sprawdzanie błędów, należy dodać własne polecenia sprawdzania błędów do kroków kompilacji.  

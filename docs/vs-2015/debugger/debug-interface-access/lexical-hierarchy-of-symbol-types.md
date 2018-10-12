@@ -1,7 +1,7 @@
 ---
 title: Hierarchia leksykalna typów symboli | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d807841429a722f31f3aecdc08f1a0972b05378
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cfb8fd751d6230dd839d073a61e80cabf5d48892
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630261"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305490"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Hierarchia leksykalna typów symboli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [leksykalne hierarchii typów symboli](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/lexical-hierarchy-of-symbol-types).  
-  
 W poniższej tabeli przedstawiono typy symbol w hierarchia leksykalna.  
   
 ## <a name="symbol-types"></a>Typów symboli  
@@ -59,7 +57,7 @@ W poniższej tabeli przedstawiono typy symbol w hierarchia leksykalna.
  [Hierarchia klas typów symboli](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
  [Idiasymbol::get_symtag —](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
  [Symbole i tagi symboli](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
- [Symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md)
+ [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)
 
 
 

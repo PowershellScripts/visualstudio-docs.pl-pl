@@ -1,7 +1,7 @@
 ---
 title: Okno dialogowe ostrzeżenia o kod starych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 56e57eb23dc98cee800a2f25b685b001d3232d6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a93d9b6900ed3e1331f61495e4e80b96d446d410
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678346"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179624"
 ---
 # <a name="stale-code-warning-dialog-box"></a>Ostrzeżenie o kodzie nieodświeżonym — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [okno dialogowe ostrzeżenia o Nieodświeżonym kodzie](https://docs.microsoft.com/visualstudio/debugger/stale-code-warning-dialog-box).  
-  
 To okno dialogowe pojawia się po dokonaniu zmiany natywny kod, który **Edytuj i Kontynuuj** nie może od razu zastosować. Zgodnie z wynikiem, natywnego kodu w bieżącej ramki stosu jest obecnie nieaktualna, czyli starych. Aby uzyskać więcej informacji, zobacz [jak: Praca z Nieodświeżonym kodem](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4).  
   
  **Nie pokazuj ponownie tego okna dialogowego**  

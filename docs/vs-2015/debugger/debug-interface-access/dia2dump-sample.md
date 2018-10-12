@@ -1,7 +1,7 @@
 ---
 title: Dia2dump — przykład | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 410d4e8cf2a63c7d01058e501391f02543b1eee7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d2f2dab085476a3800308c5214053c8919e84d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680116"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300823"
 ---
 # <a name="dia2dump-sample"></a>Dia2dump — Przykład
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dia2dump — przykład](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/dia2dump-sample).  
-  
 Dia2dump — przykład został zainstalowany przy użyciu programu Visual Studio i zawiera plik źródłowy Dia2dump.cpp. Skompilowany plik wykonywalny jest uruchamiane z wiersza polecenia i wyświetla zawartość pliku bazy danych (PDB) całego programu.  
   
 ### <a name="to-install-the-sample"></a>Aby zainstalować przykład  
@@ -59,7 +57,7 @@ Dia2dump — przykład został zainstalowany przy użyciu programu Visual Studio
   
 ## <a name="see-also"></a>Zobacz też  
  [Plik źródłowy Dia2dump.cpp](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)   
- [Porady: Rozwiązywanie problemów z uaktualnieniami projektu powiodło się programu Visual Studio](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)
+ [Instrukcje: rozwiązywanie problemów z nieudanymi uaktualnieniami projektu programu Visual Studio](../../porting/how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades.md)
 
 
 

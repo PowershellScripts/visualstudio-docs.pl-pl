@@ -1,7 +1,7 @@
 ---
 title: Nawigowanie po modelu UML | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6c5190e1ec273ac0e0b20855c1d0764b58dda65b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 827a0f7b79f3973b98710de0fb13565145ffb1e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678583"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300264"
 ---
 # <a name="navigate-the-uml-model"></a>Nawigowanie po modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [nawigowanie po modelu UML](https://docs.microsoft.com/visualstudio/modeling/navigate-the-uml-model).  
-  
 Ten temat wprowadza główne typy modelu UML.  
   
 ## <a name="the-model-elements-model-and-model-store"></a>Elementy modelu, Model i Store modelu  
@@ -79,7 +77,7 @@ Ten temat wprowadza główne typy modelu UML.
   
 |Typ atrybutu|Czego to zapewnia dostęp do|Więcej informacji|  
 |--------------------|----------------------------------|----------------------|  
-|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> . IDiagramContext<br /><br /> (w Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Bieżący diagram fokusowy.|[Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
+|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> . IDiagramContext<br /><br /> (w Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Bieżący diagram fokusowy.|[Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
 |Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> . ILinkedUndoContext<br /><br /> (w Microsoft.VisualStudio.Modeling.Sdk. [wersja] .dll)|Pozwala na pogrupowanie zmian w transakcje.|[Łączenie aktualizacji modelu UML za pomocą transakcji](../modeling/link-uml-model-updates-by-using-transactions.md)|  
 |Microsoft.VisualStudio.Shell. SVsServiceProvider<br /><br /> (w Microsoft.VisualStudio.Shell.Immutable. [wersja] .dll)|Host [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Z tego miejsca można uzyskać dostęp, plików, projektów i innych aspektów.|[Otwieranie modelu UML za pomocą interfejsu API programu Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|  
   

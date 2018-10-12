@@ -1,7 +1,7 @@
 ---
 title: Okno dialogowe właściwości procesu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,37 +17,35 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23df984e13f2f8d022a4731926d0747450c7faaf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0c58dfd492886a5e4a222ba758c0652f73c014
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680630"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180950"
 ---
 # <a name="process-properties-dialog-box"></a>Okno dialogowe właściwości procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [okno dialogowe właściwości procesu](https://docs.microsoft.com/visualstudio/debugger/process-properties-dialog-box).  
-  
 Użyj tego okna dialogowego, aby dowiedzieć się więcej na temat określonego procesu. Aby wyświetlić to okno dialogowe, Przenieś fokus do [widok procesy](../debugger/processes-view.md) okna. Zaznacz dowolny węzeł procesu w drzewie, a następnie wybierz **właściwości** z **widoku** menu.  
   
  W systemach operacyjnych Windows 98 i Windows 95, tylko zmodyfikowanej wersji **ogólne** karta jest wyświetlana.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Karta Ogólne, okno dialogowe właściwości procesu](../debugger/general-tab-thread-properties-dialog-box.md)  
+ [Ogólne, karta, Właściwości procesu, okno dialogowe](../debugger/general-tab-thread-properties-dialog-box.md)  
  Użyj tego okna dialogowego pole znajdziesz więcej informacji na temat wybranego procesu.  
   
- [Karta pamięć, okno dialogowe właściwości procesu](../debugger/memory-tab-process-properties-dialog-box.md)  
+ [Pamięć, karta, Właściwości procesu, okno dialogowe](../debugger/memory-tab-process-properties-dialog-box.md)  
  Ta karta służy do pokazywania, jak korzysta z pamięci procesu.  
   
- [Karta plik stronicowania, okno dialogowe właściwości procesu](../debugger/page-file-tab-process-properties-dialog-box.md)  
+ [Plik stronicowania, karta, Właściwości procesu, okno dialogowe](../debugger/page-file-tab-process-properties-dialog-box.md)  
  Ta karta służy do sprawdzenia pliku stronicowania procesu.  
   
- [Karta przestrzeń, okno dialogowe właściwości procesu](../debugger/space-tab-process-properties-dialog-box.md)  
+ [Przestrzeń, karta, Właściwości procesu, okno dialogowe](../debugger/space-tab-process-properties-dialog-box.md)  
  Ta karta służy do zbadania przestrzeni adresowej procesu.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Okno dialogowe Wyszukiwanie procesów](../debugger/process-search-dialog-box.md)  
+ [Wyszukiwanie procesów, okno dialogowe](../debugger/process-search-dialog-box.md)  
  Umożliwia znalezienie węzła dla określonego procesu w widoku proces.  
   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  

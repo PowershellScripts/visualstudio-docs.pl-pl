@@ -1,7 +1,7 @@
 ---
 title: Widok podsumowania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b253767977a59ba782dbaae9eb3384bba5f313d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 242250476a55ce33344863003a90d9c829eaea1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676556"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301538"
 ---
 # <a name="summary-view"></a>Widok podsumowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Widok Podsumowanie](https://docs.microsoft.com/visualstudio/profiling/summary-view).  
-  
 Widok podsumowania Wyświetla informacje o wydajności najdroższych funkcje lub obiekty podczas uruchomienia profilowania. Ten widok zawiera wykres osi czasu i co najmniej dwóch list najbardziej kosztowne funkcje lub obiekty w oparciu metryki wydajności metody profilowania. Dane w tym widoku jest zależna od metody profilowania, który został użyty (próbkowanie, Instrumentacja lub współbieżności) i tego, czy zebrano alokacji pamięci .NET.  
   
  Wszystkie widoki podsumowanie oprócz widok podsumowania danych współbieżności wykres osi czasu w widoku podsumowania przedstawia użycie procesora (CPU) profilowanej aplikacji wraz z upływem czasu, który wystąpił profilowania.  

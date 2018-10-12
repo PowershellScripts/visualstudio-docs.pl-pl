@@ -1,14 +1,14 @@
 ---
 title: Zdalne debugowanie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
 dev_langs:
@@ -24,18 +24,16 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 58df8dd3c95d5962b5966660599c65951d659ac2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880724"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306530"
 ---
 # <a name="remote-debugging"></a>Debugowanie zdalne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zdalne debugowanie](https://docs.microsoft.com/visualstudio/debugger/remote-debugging).  
-  
 Można debugować aplikację programu Visual Studio, która została wdrożona na innym komputerze.  Aby to zrobić, należy użyć zdalnego debugera programu Visual Studio.  
   
  Informacje w tym miejscu ma zastosowanie do aplikacji ASP.NET i aplikacji klasycznych Windows.  Aby uzyskać informacje o zdalnym debugowaniu aplikacji Windows Store i aplikacje platformy Azure, zobacz [zdalne debugowanie aplikacji Windows Store i Azure](#bkmk_winstoreAzure).  

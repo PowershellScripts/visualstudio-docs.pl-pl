@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Tworzenie niestandardowego hosta szablonu tekstu | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2edd9d355fb9372ea954e2ec25c92164319297c2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1cc8f2b2efc6c538af84d54cb487a8e35dbba6f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684159"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304229"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Wskazówki: tworzenie niestandardowego hosta szablonu tekstowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: Tworzenie niestandardowego hosta szablonu tekstu](https://docs.microsoft.com/visualstudio/modeling/walkthrough-creating-a-custom-text-template-host).  
-  
 A *szablonu tekstowego**hosta* zapewnia środowisko, które umożliwia *aparat przekształcania szablonu tekstowego* do uruchomienia. Host jest odpowiedzialny za zarządzanie interakcją aparatu z systemem plików. Aparat lub *procesora dyrektywy* który wymaga pliku lub zestawu, może zażądać zasobu z hosta. Host następnie może przeszukiwać katalogi i globalną pamięć podręczną zestawu, aby zlokalizować żądany zasób. Aby uzyskać więcej informacji, zobacz [proces przekształcania szablonu tekstowego](../modeling/the-text-template-transformation-process.md).  
   
  Jeśli chcesz użyć można napisać niestandardowego hosta *przekształcenia szablonu tekstu* spoza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lub jeśli chcesz zintegrować tę funkcjonalność z niestandardowymi narzędziami. Aby utworzyć niestandardowego hosta, należy utworzyć klasę, która dziedziczy po elemencie <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Dokumentacja poszczególnych metod, zobacz <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  

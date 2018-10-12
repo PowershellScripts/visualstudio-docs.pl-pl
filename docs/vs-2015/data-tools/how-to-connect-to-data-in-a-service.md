@@ -1,7 +1,7 @@
 ---
 title: 'Porady: łączenie z danymi w usłudze | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 303e41c5d194fbb1c03e35dd37990f8b63dedf4f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ce851a864dd11759c36c7ae6cb275e9e71cd11a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630364"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301798"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Porady: łączenie z danymi w usłudze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: łączenie z danymi w usłudze](https://docs.microsoft.com/visualstudio/data-tools/how-to-connect-to-data-in-a-service).  
-  
   
 Łączenie aplikacji z danymi zwróconymi z usługi, uruchamiając [Kreatora konfiguracji źródła danych](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) i wybierając polecenie **usługi** na **wybierz typ źródła danych**strony.  
   
@@ -74,5 +72,5 @@ Najnowszą wersję tego tematu znajduje się w temacie [porady: łączenie z dan
   
 ## <a name="see-also"></a>Zobacz też  
  [Powiązywanie kontrolek WPF z usługą danych programu WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   
- [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+ [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 

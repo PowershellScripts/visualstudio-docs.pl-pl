@@ -1,7 +1,7 @@
 ---
 title: Dynamiczne dodawanie elementów Menu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: edd3a97eea69843bcd09a9483a7cea196d3a4c5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb0cd49d8ce9f1851bd54bb3362932de775eb2c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673387"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300205"
 ---
 # <a name="dynamically-adding-menu-items"></a>Dynamiczne dodawanie elementów menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dynamiczne dodawanie elementów Menu](https://docs.microsoft.com/visualstudio/extensibility/dynamically-adding-menu-items).  
-  
 Można dodać elementów menu w czasie wykonywania, określając `DynamicItemStart` polecenia Flaga w definicji symbolu zastępczego przycisku w pliku poleceń table (vsct) programu Visual Studio, a następnie definiowanie (kod) liczba menu elementów do wyświetlenia i obsługi polecenia. Po załadowaniu pakietu VSPackage, symbol zastępczy jest zastępowany elementów menu dynamiczne.  
   
  Program Visual Studio używa dynamicznej listy w **ostatnio używane** listy (MRU), który wyświetla nazwy dokumentów, które zostały ostatnio otwarte, a **Windows** listę, która wyświetla nazwy systemu windows które są aktualnie otwarte.   `DynamicItemStart` Flaga w definicji polecenia określa, czy polecenie jest symbolem zastępczym, dopóki nie zostanie otwarty pakietu VSPackage. Po otwarciu pakietu VSPackage symbol zastępczy jest zastępowany 0 lub więcej poleceń, które są tworzone w czasie wykonywania i dodawane do listy dynamicznej. Nie można zobaczyć pozycję menu, gdzie lista dynamiczna pojawia się, dopóki nie zostanie otwarty pakietu VSPackage.  Do wypełniania listy dynamicznej, program Visual Studio pyta, czy pakietu VSPackage, aby wyszukać polecenia przy użyciu Identyfikatora, w której pierwsze znaki są takie same, jak identyfikator symbol zastępczy. Gdy program Visual Studio znajdzie pasujące polecenia, dodaje nazwę polecenia, do listy dynamicznej. Następnie zwiększa identyfikator i szuka innego polecenia pasujących do dodania do listy dynamicznej, aż nie wystąpią poleceń nie bardziej dynamiczne.  

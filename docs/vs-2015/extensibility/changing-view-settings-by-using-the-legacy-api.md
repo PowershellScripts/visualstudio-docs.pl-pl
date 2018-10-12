@@ -1,7 +1,7 @@
 ---
 title: Zmienianie ustawień widoku za pomocą starszej wersji interfejsu API | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c6ffd7796e0f90748ed46050d5d07ce2df210db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550acb027d4d9b0fdaecdcd6057610413ae0da3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683180"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234848"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>Zmienianie ustawień widoku za pomocą starszej wersji interfejsu API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Zmienianie ustawień widoku przy użyciu interfejsu API starszych](https://docs.microsoft.com/visualstudio/extensibility/changing-view-settings-by-using-the-legacy-api).  
-  
 Ustawienia podstawowe funkcje edytora, takie jak zawijanie wyrazów, margines zaznaczania i wirtualną przestrzenią, można zmienić przez użytkownika przez **opcje** okno dialogowe. Jednak istnieje również możliwość zmiany tych ustawień programowo.  
   
 ## <a name="changing-settings-by-using-the-legacy-api"></a>Zmiana ustawień za pomocą starszej wersji interfejsu API  

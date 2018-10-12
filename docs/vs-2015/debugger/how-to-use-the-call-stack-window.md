@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Korzystanie z okna stosu wywołań | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75b617e9de62c20cc1e8a32cf993f5f03201f4fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0e79c491eeec373bd3753a5ea55777a079cc51ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774908"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271664"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Porady: korzystanie z okna stosu wywołań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wyświetlić stos wywołań w debugerze programu Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-call-stack-window).  
-  
 Za pomocą **stos wywołań** okna, można wyświetlić wywołania funkcji lub procedur, które obecnie znajdują się w stosie.  
   
  **Stos wywołań** okna wyświetla nazwę każdej funkcji i języka programowania, który jest zapisywany w. Nazwy funkcji lub procedury mogą towarzyszyć informacje opcjonalne, takie jak nazwa modułu, numer wiersza oraz nazwy parametrów, typy i wartości. Wyświetlanie tych informacji opcjonalnych można włączyć lub wyłączyć.  

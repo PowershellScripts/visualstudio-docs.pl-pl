@@ -1,7 +1,7 @@
 ---
 title: Wypełnij zestawów danych za pomocą adapterów TableAdapter | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c25bbba01d89935044e82a67b3ce40f99d1bf9a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 118b8165b4c5ad972aacf9a3d91cff78c1b776e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684797"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251854"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Wypełnij zestawów danych za pomocą adapterów TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wypełnienia zestawów danych przy użyciu TableAdapters](https://docs.microsoft.com/visualstudio/data-tools/fill-datasets-by-using-tableadapters).  
-  
   
 Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych na podstawie jednego lub więcej zapytań lub procedur składowanych, które określisz. TableAdapters można również wykonać dodaje, aktualizuje i usuwa w bazie danych, aby zachować zmiany wprowadzone do zestawu danych. Można także wystawić polecenia globalne, które nie są związane z żadną z tabel.  
   
@@ -118,5 +116,5 @@ Składnik TableAdapter wypełnia zestawu danych danymi z bazy danych na podstawi
  Kiedy używasz polecenia danych za pomocą `CommandType` właściwością <xref:System.Data.CommandType>, należy dokładnie sprawdzić informacje przesyłane przez klienta przed przekazaniem go do bazy danych. Złośliwi użytkownicy mogą próby wysłania przez użytkownika (wstrzyknąć) zmodyfikowany lub dodatkowych instrukcji SQL w celu uzyskania nieautoryzowanego dostępu lub uszkodzenia bazy danych. Przed przeniesieniem danych wejściowych użytkownika do bazy danych zawsze sprawdzić, czy informacje są prawidłowe. Najlepszym rozwiązaniem jest zawsze używaj sparametryzowanych zapytań lub procedur przechowywanych, gdy jest to możliwe.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+ [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 

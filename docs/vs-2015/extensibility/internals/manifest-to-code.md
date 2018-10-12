@@ -1,7 +1,7 @@
 ---
 title: Manifest kodu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f0809d44afb6777f26ea6b863ede765d93b5d24f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c6cc419104e8fe094034b7df35cb7e731228373
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631536"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281350"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [manifestu do kodu](https://docs.microsoft.com/visualstudio/extensibility/internals/manifest-to-code).  
-  
 Manifest, aby narzędzie do obsługi kodu jest aplikacja konsolowa która przyjmuje plik .imagemanifest dla usługi obrazów programu Visual Studio i generuje plik z otoką lub plików do odwoływania się do wartości manifestu obrazu w języku C++, C#, VB lub .vsct — pliki do rozszerzenia programu Visual Studio. To narzędzie generuje pliki otoki, których można użyć dla obrazów żądania z usługi Visual Studio obraz bezpośrednio lub do przekazywania wartości manifestu za pośrednictwem interfejsów API, jeśli kod nie obsługuje żadnego interfejsu użytkownika i renderowania.  
   
 ## <a name="how-to-use-the-tool"></a>Jak korzystać z narzędzia  

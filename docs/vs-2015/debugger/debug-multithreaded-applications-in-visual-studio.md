@@ -1,7 +1,7 @@
 ---
 title: Debugowanie aplikacji wielowątkowych w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff0030baec409ae54dc5ebb219f5419e583a0efd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2364fa5ed202f9821ab276fb5cfbb9346a4b258c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684060"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298145"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debuguj aplikacje wielowątkowe w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [debugowania aplikacji wielowątkowych w programie Visual Studio](https://docs.microsoft.com/visualstudio/debugger/debug-multithreaded-applications-in-visual-studio).  
-  
 Wątek jest sekwencją instrukcji, do których system operacyjny przydziela czas procesora. Każdy proces, który jest uruchomiony w systemie operacyjnym, składa się z co najmniej jeden wątek. Procesy, które mają więcej niż jeden wątek nazywane są wielowątkowymi.  
   
  Komputery z wieloma procesorami, procesory wielordzeniowe lub procesy hyperthreading mogą uruchomić wiele wątków, w tym samym czasie. Równoległe przetwarzanie wiele wątków może znacznie poprawić wydajność programów, ale może również sprawić, że debugowanie trudniejsze ponieważ wprowadza konieczność, aby śledzić wiele wątków.  
@@ -58,28 +56,28 @@ Wątek jest sekwencją instrukcji, do których system operacyjny przydziela czas
  [Debugowanie wielu procesów](../debugger/debug-multiple-processes.md)  
  Wyjaśnia, jak debugowanie wielu procesów.  
   
- [Porady: Korzystanie z okna wątków](../debugger/how-to-use-the-threads-window.md)  
+ [Instrukcje: korzystanie z okna wątków](../debugger/how-to-use-the-threads-window.md)  
  Użyteczne procedury dotyczące debugowania wątków przy użyciu **wątków** okna.  
   
- [Porady: przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
+ [Instrukcje: przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
  Trzy sposoby przełączenia kontekstu debugowania do innego wątku.  
   
- [Porady: Oflagowanie i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md)  
+ [Instrukcje: flagowanie i usuwanie oflagowania wątków](../debugger/how-to-flag-and-unflag-threads.md)  
  Oznacz lub Oflaguj wątki, które chcesz poświęcić szczególną uwagę podczas debugowania.  
   
- [Porady: Ustawianie nazw wątków w kodzie natywnym](../debugger/how-to-set-a-thread-name-in-native-code.md)  
+ [Instrukcje: ustawianie nazw wątków w kodzie natywnym](../debugger/how-to-set-a-thread-name-in-native-code.md)  
  Nadaj wątkowi nazwę, którą można wyświetlić w **wątków** okna.  
   
- [Porady: Ustawianie nazw wątków w kodzie zarządzanym](../debugger/how-to-set-a-thread-name-in-managed-code.md)  
+ [Instrukcje: ustawianie nazw wątków w kodzie zarządzanym](../debugger/how-to-set-a-thread-name-in-managed-code.md)  
  Nadaj wątkowi nazwę, którą można wyświetlić w **wątków** okna.  
   
  [Wskazówki: Debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-multithreaded-application.md).  
  Przewodnik po funkcjach debugowania wątku, z naciskiem na funkcje jak do [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)].  
   
- [Porady: debugowanie w klastrze o wysokiej wydajności](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
+ [Instrukcje: debugowanie w klastrze o wysokiej wydajności](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
  Techniki debugowania aplikacji, która działa w klastrze wysokiej wydajności.  
   
- [Porady dotyczące debugowania wątków w kodzie natywnym](../debugger/tips-for-debugging-threads-in-native-code.md)  
+ [Wskazówki dotyczące debugowania wątków w kodzie natywnym](../debugger/tips-for-debugging-threads-in-native-code.md)  
  Proste techniki, które mogą być przydatne podczas debugowania wątków natywnych.  
   
  [Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)  
@@ -88,13 +86,13 @@ Wątek jest sekwencją instrukcji, do których system operacyjny przydziela czas
  [Korzystanie z okna stosów równoległych](../debugger/using-the-parallel-stacks-window.md)  
  Wywołanie pokazuje stosy wielu wątków (lub zadaniami) w jednym widoku, a ponadto scala segmenty stosów, które są wspólne miedzy wątkami (lub zadaniami).  
   
- [Wskazówki: Debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ [Przewodnik: debugowanie aplikacji równoległych](../debugger/walkthrough-debugging-a-parallel-application.md)  
  Przewodnik, który pokazuje, jak używać okien zadań równoległych i stosów przetwarzania równoległego.  
   
- [Porady: Korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)  
+ [Instrukcje: korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)  
  Sprawdź wartości i wyrażenia przez wiele wątków.  
   
- [Porady: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
+ [Instrukcje: korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
  Badanie i Praca z wątków, które są uruchomione w procesorze GPU podczas debugowania.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

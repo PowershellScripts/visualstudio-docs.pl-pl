@@ -1,7 +1,7 @@
 ---
 title: Profiler widoki danych metody próbkowania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9ce2916705a50f01c781696770f78d4f5dff1e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f1ce001a1f5ee53c75001bb909d04eaa3d9222c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679645"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302136"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Widok danych metody próbkowania profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [widok danych metody próbkowania Profiler](https://docs.microsoft.com/visualstudio/profiling/profiler-sampling-method-data-views).  
-  
 Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody pobierania próbek.  
   
 > [!NOTE]
@@ -70,11 +68,11 @@ Ta sekcja zawiera informacje referencyjne dotyczące widoków i raportów plikó
  [Widoki danych metody instrumentacji](../profiling/instrumentation-method-data-views.md)  
  Informacje o odwołaniach dotyczące widoków i raportów plików danych profilera, które zostały wygenerowane za pomocą metody instrumentacji.  
   
- [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)  
+ [Widoki danych pamięci platformy .NET](../profiling/dotnet-memory-data-views.md)  
  Informacje o odwołaniach dotyczące widoków i raportów plików danych profilera, które zawierają dane pamięci platformy .NET.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Z wartościami danych próbkowania opis](../profiling/understanding-sampling-data-values.md)
+ [Zapoznanie z wartościami danych próbkowania](../profiling/understanding-sampling-data-values.md)
 
 
 

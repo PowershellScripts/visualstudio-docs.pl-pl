@@ -1,7 +1,7 @@
 ---
 title: Dane XML odczytu do zestawu danych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5936e0b01577c0b055a5676a6f6acfba1d32cca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a4f5a7497e24ccd8e769198938dbd20a6bdf0f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284560"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Odczytywanie danych XML do zestawu danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [XML odczytu danych do zestawu danych](https://docs.microsoft.com/visualstudio/data-tools/read-xml-data-into-a-dataset).  
-  
   
 ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzysz aplikację Windows, która ładuje dane XML do zestawu danych. Zestaw danych jest następnie wyświetlana w <xref:System.Windows.Forms.DataGridView> kontroli. Na koniec schematu XML na podstawie zawartości pliku XML jest wyświetlany w polu tekstowym.  
   
@@ -176,9 +174,9 @@ ADO.NET zapewnia proste metody do pracy z danymi XML. W tym instruktażu utworzy
     |`TextBox1`|**Wielowierszowy**|`true`|  
     ||**Paski przewijania**|**W pionie**|  
     |`Button1`|**Nazwa**|`ReadXmlButton`|  
-    ||**Tekst**|`Read XML`|  
+    ||**Text**|`Read XML`|  
     |`Button2`|**Nazwa**|`ShowSchemaButton`|  
-    ||**Tekst**|`Show Schema`|  
+    ||**Text**|`Show Schema`|  
   
 ## <a name="create-the-dataset-thatreceives-the-xml-data"></a>Utwórz thatreceives zestawu danych, dane XML  
  W tym kroku utworzysz nowy zestaw danych o nazwie `authors`. Aby uzyskać więcej informacji na temat zestawów danych, zobacz [narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  

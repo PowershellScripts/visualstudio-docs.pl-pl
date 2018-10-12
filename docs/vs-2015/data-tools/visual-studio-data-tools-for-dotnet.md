@@ -1,7 +1,7 @@
 ---
 title: Narzędzia Visual Studio data tools dla platformy .NET | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 759aaa1f6860d6b8e95aeaae786532ff406acbb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30c1a0add4dcb10b5b202b43b791c27a7c14640c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678933"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305347"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Narzędzia do obsługi danych programu Visual Studio dla platformy .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,27 +45,27 @@ Visual Studio i .NET Framework razem zapewniają szeroką interfejsu API i narz�
   
 ## <a name="in-this-section"></a>W tej sekcji  
   
--   [Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
+-   [Tworzenie prostej aplikacji do obsługi danych za pomocą pakietu ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
   
--   [Dodaj nowe połączenia](../data-tools/add-new-connections.md)  
+-   [Dodawanie nowych połączeń](../data-tools/add-new-connections.md)  
   
 -   [Dodawanie nowych źródeł danych](../data-tools/add-new-data-sources.md)  
   
--   [Narzędzia modelu danych jednostki w programie Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)  
+-   [Narzędzia modelu Entity Data Model w programie Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)  
   
--   [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
+-   [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
   
--   [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+-   [Narzędzia LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
--   [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+-   [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
   
--   [Dodatkowe zasoby dotyczące rozwiązywania problemów z błędami dostępu do danych](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+-   [Dodatkowe zasoby dla rozwiązywania problemów z błędami dostępu do danych](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
--   [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
+-   [Usługi Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
   
--   [Tworzenie i zarządzanie bazami danych i aplikacji warstwy danych w programie Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
+-   [Tworzenie baz danych i aplikacji warstw danych oraz zarządzanie nimi w programie Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
   
--   [Dodatkowe zasoby dotyczące rozwiązywania problemów z błędami dostępu do danych](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+-   [Dodatkowe zasoby dla rozwiązywania problemów z błędami dostępu do danych](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

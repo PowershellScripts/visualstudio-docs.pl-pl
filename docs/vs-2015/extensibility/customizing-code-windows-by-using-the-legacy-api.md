@@ -1,7 +1,7 @@
 ---
 title: Dostosowywanie kodu Windows za pomocą starszej wersji interfejsu API | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7738ef02b7f26e78197ca974fdc03b60c157799f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c698f9661866ad6d2900bb7feb0f0f4a17d21589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681617"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299991"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Dostosowywanie kodu Windows za pomocą starszej wersji interfejsu API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dostosowywanie Windows kodu za pomocą starszej wersji interfejsu API](https://docs.microsoft.com/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api).  
-  
 Okno kodu jest obiekt okna dokumentu, który obsługuje jeden lub więcej widoków tekstu. Dokładne funkcje okna kodu, zależą od usługi skojarzone języka. W trybie interfejsu wielu dokumentów (MDI) w oknie Kod jest podrzędna ramka MDI.  
   
  Kod systemu windows są kontrolowane przez usługi języka oraz każdej usługi w języka wprowadzić swój własny Menedżer okna kodu. Dzięki temu usługa językowa dodać własną zakończeń do okna kodu, takich jak faliste linie, kolorowanie i nie tylko. Aby uzyskać więcej informacji o tym, jak można utworzyć okna core, zobacz [wystąpienia Core edytora za pomocą starszej wersji interfejsu API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md).  
@@ -42,10 +40,10 @@ W oknie kodu
  `Customizing Code Windows by Using the Legacy API`  
  Opis sposobu dostosowywania kodu systemu windows za pomocą starszej wersji interfejsu API.  
   
- [Instrukcje: hostowanie redaktorem w innym edytorze](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Instrukcje: hostowanie edytora w innym edytorze](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Wyjaśnia, jak hostować drugi edytora w oknie edytora.  
   
- [Porady: wyzwolenie zdarzenia po utracie fokusu przez Edytor](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Instrukcje: wyzwalanie zdarzeń po utracie fokusu przez edytor](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Wyjaśnia, jak dołączyć widok dokumentu do obiektu danych dokumentu.  
   
 ## <a name="see-also"></a>Zobacz też  
@@ -54,5 +52,5 @@ W oknie kodu
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
  [Utworzenie wystąpienia podstawowy edytor za pomocą starszej wersji interfejsu API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
- [Dostęp do theText widoku przy użyciu starszej wersji interfejsu API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
+ [Uzyskiwanie dostępu do widoku tekstowego przy użyciu starszego interfejsu API](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
 

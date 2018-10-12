@@ -1,7 +1,7 @@
 ---
 title: Analiza kodu dla C i C++ — omówienie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 27
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c6764e39d55ebe2ce11776035f25d6fdf69be081
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 42de573efcc44437eddf0e7d098681d05c094131
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680984"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222043"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Analiza kodu dla C/C++ — Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [analiza kodu C/C++ — Przegląd](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-c-cpp-overview).  
-  
 Narzędzie do analizy kodu C/C++ zawiera informacje dla deweloperów o możliwych wady kodu źródłowego języka C/C++. Typowe błędy kodowania zgłoszonej przez narzędzie obejmują przepełnienia buforów i pamięci surowej zainicjowane, wyłuskania wskaźnika o wartości null i przecieków pamięci i zasobów.  
   
 ## <a name="ide-integrated-development-environment-integration"></a>Integracja z IDE (zintegrowanym środowiskiem programistycznym)  

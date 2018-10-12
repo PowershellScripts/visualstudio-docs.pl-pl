@@ -1,7 +1,7 @@
 ---
 title: Składnia ścieżki domeny | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6df1f73614a8df59ee0bff8fb76610382d58b4e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4e98715bae8869619e8d9f2852c810153984777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254777"
 ---
 # <a name="domain-path-syntax"></a>Składnia ścieżki domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [składnia ścieżki domeny](https://docs.microsoft.com/visualstudio/modeling/domain-path-syntax).  
-  
 Definicji DSL użyć składni XPath, aby zlokalizować określonych elementów w modelu.  
   
  Zazwyczaj nie trzeba pracować przy użyciu tej składni bezpośrednio. Położenia szczegóły języka DSL lub w oknie właściwości, można kliknąć strzałkę w dół i za pomocą edytora ścieżki. Jednak w tym formularzu w polu pojawia się ścieżkę, po zastosowaniu edytora.  

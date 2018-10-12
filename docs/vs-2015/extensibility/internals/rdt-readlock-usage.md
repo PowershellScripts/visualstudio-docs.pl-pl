@@ -1,7 +1,7 @@
 ---
 title: Użycie flagi RDT_ReadLock | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87f92f525d94ac81231272658c26f7484d93bef8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09bbded597fe29f01ac83589c0dc551929380030
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681644"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297794"
 ---
 # <a name="rdtreadlock-usage"></a>Użycie flagi RDT_ReadLock
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [użycie flagi RDT_ReadLock](https://docs.microsoft.com/visualstudio/extensibility/internals/rdt-readlock-usage).  
-  
 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> jest flagę, która udostępnia logikę blokowania dokumentu w systemem dokumentu tabeli (Normalizacją), który znajduje się lista wszystkich dokumentów, które są aktualnie otwarte w środowisku IDE programu Visual Studio. Ta flaga Określa, kiedy są otwarte dokumenty i tego, czy dokument jest widoczne w interfejsie użytkownika lub które odbyło się w sposób niewidoczny w pamięci.  
   
  Ogólnie rzecz biorąc, należy użyć <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> gdy jest spełniony jeden z następujących czynności:  

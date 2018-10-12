@@ -1,7 +1,7 @@
 ---
 title: Przeznaczone dla określonej wersji platformy .NET | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae41e7aea5bd4a1a355993a061829a190e1ef80b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc084c025e19e5466cd860611eeef91a3a7fedca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680949"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277930"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Tworzenie zawartości dla określonej wersji programu .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [przeznaczonych dla określonej wersji programu .NET Framework](https://docs.microsoft.com/visualstudio/ide/targeting-a-specific-dotnet-framework-version).  
-  
 W programie Visual Studio można określić wersji lub profilu .NET Framework, dla której projekt docelowy. Dla aplikacji, aby uruchomić na innym komputerze, na wersję, która celów aplikacji musi być zgodny z wersją Framework, który jest zainstalowany na komputerze.  
   
  Ta sekcja zawiera tematy, które opisują sposób pod kątem określonych wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] w swoich projektach.  

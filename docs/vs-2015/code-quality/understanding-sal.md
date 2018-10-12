@@ -1,7 +1,7 @@
 ---
 title: Zrozumienie SAL | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae6b16cc7f69aaf365188c488416d35402de9ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7551b507a90ffb5bba6a969029e4c53092f3db1c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631741"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253256"
 ---
 # <a name="understanding-sal"></a>Poznanie SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zrozumienie SAL](https://docs.microsoft.com/visualstudio/code-quality/understanding-sal).  
-  
 Język adnotacji kod źródłowy firmy Microsoft (SAL) zawiera zbiór adnotacji, które służy do opisywania, jak funkcja korzysta z jego parametrów, założeń, które ułatwia o nich i gwarancji, które to sprawia, że po zakończeniu tej operacji. Adnotacje są zdefiniowane w pliku nagłówkowym `<sal.h>`. Visual Studio analizy kodu dla języka C++ używa adnotacji SAL, aby zmodyfikować jego analiza funkcji. Aby uzyskać więcej informacji na temat SAL w wersji 2.0 dla opracowywania sterowników Windows zobacz [SAL adnotacji dla Windows sterowniki 2.0](http://go.microsoft.com/fwlink/?LinkId=250979).  
   
  Natywnie C i C++ umożliwiają tylko ograniczone dla deweloperów spójnie express intencji i inwariancja. Za korzystanie z adnotacji SAL, wystarczy opisać funkcji bardziej szczegółowo, aby deweloperzy, którzy są korzystanie z nich można lepiej zrozumieć, jak z nich korzystać.  
@@ -425,7 +423,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
  [Dodawanie adnotacji do struktur i klas](../code-quality/annotating-structs-and-classes.md)   
  [Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md)   
  [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
- [Najlepsze praktyki i przykłady](../code-quality/best-practices-and-examples-sal.md)
+ [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)
 
 
 

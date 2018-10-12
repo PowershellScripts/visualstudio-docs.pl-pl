@@ -1,7 +1,7 @@
 ---
 title: Rozwiązywanie problemów z pakietami VSPackage | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f7706a2c7bf579148b71d31fab6b172db378564
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0317b4d641cb965b5f92ad31cfab6d3580db30a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630070"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225566"
 ---
 # <a name="troubleshooting-vspackages"></a>Rozwiązywanie problemów z pakietami VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Rozwiązywanie problemów z pakietami VSPackage](https://docs.microsoft.com/visualstudio/extensibility/troubleshooting-vspackages).  
-  
 Poniżej przedstawiono typowe problemy, które może być za pomocą Twojego pakietu VSPackage i porady, aby rozwiązać problemy.  
   
 ### <a name="to-troubleshoot-a-vspackage-that-keeps-visual-studio-from-starting"></a>Aby rozwiązać pakietu VSPackage, który przechowuje programu Visual Studio z rozpoczęciem  

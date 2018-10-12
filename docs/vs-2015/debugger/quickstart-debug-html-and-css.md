@@ -1,7 +1,7 @@
 ---
 title: 'Szybki Start: Debugowanie HTML i CSS | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b331ccf0cf180364738f5ac9084b0bd2ff6b716b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683151"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225488"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Szybki Start: Debugowanie HTML i CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Szybki Start: debugowanie kodu HTML i CSS](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-html-and-css).  
-  
 Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Dla aplikacji JavaScript programu Visual Studio zapewnia kompleksowe środowisko debugowania, który zawiera funkcje, które są znane deweloperom korzystającym z programu Internet Explorer i Visual Studio. Te funkcje są obsługiwane w przypadku [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], aplikacje systemu Windows Phone Store oraz aplikacje utworzone przy użyciu programu Visual Studio Tools for Apache Cordova  
@@ -52,11 +50,11 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
  Aby uzyskać dodatkowe informacje na temat używania Eksploratora DOM zobacz następujące tematy:  
   
--   [Debugowanie stylów CSS przy użyciu Eksploratora modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md)  
+-   [Debugowanie stylów CSS przy użyciu eksploratora modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md)  
   
--   [Debugowanie układu przy użyciu Eksploratora modelu DOM](../debugger/debug-layout-using-dom-explorer.md)  
+-   [Debugowanie układu przy użyciu eksploratora modelu DOM](../debugger/debug-layout-using-dom-explorer.md)  
   
--   [Podgląd odbiorników zdarzeń DOM](../debugger/view-dom-event-listeners.md)  
+-   [Wyświetlanie odbiorników zdarzeń DOM](../debugger/view-dom-event-listeners.md)  
   
 -   [Odświeżanie aplikacji (JavaScript)](../debugger/refresh-an-app-javascript.md)  
   

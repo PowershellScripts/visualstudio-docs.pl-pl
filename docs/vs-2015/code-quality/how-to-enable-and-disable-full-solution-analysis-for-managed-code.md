@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Włączanie i wyłączanie pełnej analizy rozwiązania dla kodu zarządzanego | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4815963966c54d7c237737d85c2e573e886bc9ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af0aae4020182f6414d44a2004f98a6fc0df23ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677116"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221874"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Porady: Włączanie i wyłączanie pełnej analizy rozwiązania dla kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Włączanie i wyłączanie pełnej analizy rozwiązania dla zarządzanego kodu](https://docs.microsoft.com/visualstudio/code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code).  
-  
 UWAGA]
 >  Ten temat dotyczy tylko programu Visual Studio 2015 Update 3 RC lub nowszego.  
   

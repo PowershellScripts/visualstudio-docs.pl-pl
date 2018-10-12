@@ -1,7 +1,7 @@
 ---
 title: Dodawanie listy ostatnio używanych elementów do podmenu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa2a5f0177243c178890673986b0c04b4627505e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682828"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223737"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Dodawanie listy ostatnio używanych elementów do podmenu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dodawania najbardziej ostatnio używane listy elementów do podmenu](https://docs.microsoft.com/visualstudio/extensibility/adding-a-most-recently-used-list-to-a-submenu).  
-  
 W tym przewodniku opiera się na pokazach w [dodawanie podmenu do Menu](../extensibility/adding-a-submenu-to-a-menu.md)i przedstawiono sposób dodawania listy dynamicznych elementów do podmenu. Lista dynamiczna stanowi podstawę do tworzenia list najbardziej ostatnio używanych elementów.  
   
  Menu dynamiczne listy rozpoczyna się od symbolu zastępczego, w menu. Za każdym razem, gdy zostanie wyświetlone menu, Visual Studio zintegrowane środowisko programistyczne (IDE) pyta, czy pakietu VSPackage dla wszystkich poleceń, które mają być pokazywane na symbol zastępczy. Lista dynamiczna może występować w dowolnym miejscu w menu. Jednak listy dynamiczne są zwykle przechowywane i wyświetlane przez siebie, w podmenu lub u dołu menu. Za pomocą te wzorce projektowe, możesz włączyć dynamiczną listę poleceń, aby rozwinąć lub zwinąć bez wywierania wpływu na pozycji innych poleceń w menu. W tym przewodniku listy ostatnio używanych w dynamicznych jest wyświetlane w dolnej części istniejącego podmenu, oddzielone od reszty podmenu wiersza.  

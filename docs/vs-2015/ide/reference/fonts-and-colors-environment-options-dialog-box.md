@@ -1,7 +1,7 @@
 ---
 title: Okno dialogowe czcionki i kolory, środowisko, opcje | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8831cfdbf22d80cce39fbae81fffa46b8944e92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d080945edc13d0f4542fdd9c981037af108325c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677140"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220723"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [czcionki i kolory, środowisko, opcje, okno dialogowe](https://docs.microsoft.com/visualstudio/ide/reference/fonts-and-colors-environment-options-dialog-box).  
-  
   
 **Czcionki i kolory** strony **opcje** okno dialogowe umożliwia ustanawianie niestandardowy schemat czcionek i kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). To okno dialogowe można skorzystać, klikając **narzędzia / Opcje**, a następnie wybierając **środowisko / czcionki i kolory**. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.  
   
@@ -218,7 +216,7 @@ Najnowszą wersję tego tematu znajduje się w temacie [czcionki i kolory, środ
   
  **Domyślne** kolor, który pojawia się po raz pierwszy element Uruchom program Visual Studio. Klikając **Użyj ustawień domyślnych** przycisku powoduje przywrócenie tego koloru.  
   
- **Niestandardowy**  
+ **Custom**  
  Wyświetla okno dialogowe kolorów do umożliwiają ustawianie koloru niestandardowego elementu wybranego na liście elementów ekranu.  
   
 > [!NOTE]
@@ -231,7 +229,7 @@ Najnowszą wersję tego tematu znajduje się w temacie [czcionki i kolory, środ
   
  **Domyślne** kolor, który pojawia się po raz pierwszy element Uruchom program Visual Studio. Klikając **Użyj ustawień domyślnych** przycisku powoduje przywrócenie tego koloru.  
   
- **Niestandardowy**  
+ **Custom**  
  Wyświetla okno dialogowe kolorów do umożliwiają ustawianie koloru niestandardowego elementu wybranego na liście elementów ekranu.  
   
  **Bold**  
@@ -243,7 +241,7 @@ Najnowszą wersję tego tematu znajduje się w temacie [czcionki i kolory, środ
 ## <a name="see-also"></a>Zobacz też  
  [Okno dialogowe opcji środowiska](../../ide/reference/environment-options-dialog-box.md)   
  [Okno dialogowe Opcje](../../ide/reference/options-dialog-box-visual-studio.md)   
- [Porady: zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [Instrukcje: zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 
 

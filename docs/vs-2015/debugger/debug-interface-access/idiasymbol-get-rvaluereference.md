@@ -1,7 +1,7 @@
 ---
 title: Idiasymbol::get_rvaluereference — | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f5223c619d850c63d8a72f152c69cf3699fe319
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6fd8d54758d3d192213c20f49fed82aa05c019a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224526"
 ---
 # <a name="idiasymbolgetrvaluereference"></a>IDiaSymbol::get_RValueReference
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [idiasymbol::get_rvaluereference —](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-rvaluereference).  
-  
 Pobiera flagę określającą, czy wskaźnik typu jest odwołaniem rvalue. Zastosowania [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) jest ustawiona na typ wskaźnika.  
   
 ## <a name="syntax"></a>Składnia  

@@ -1,7 +1,7 @@
 ---
 title: Używanie automatyzacji interfejsu użytkownika do testowania kodu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 92668aad54a032ccdbda2242ffcd132b356ea331
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f98a3b2883f4b0e6e3ade0c0ca8f39f4d7efdf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221731"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Użyj interfejsu użytkownika do testów Your kodu automatyzacji](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code).  
-  
 Testy automatyczne, które kontrolują aplikację przez jej interfejs użytkownika (UI) są znane jako *kodowane testy interfejsu użytkownika* (CUITs). Te testy obejmują, aplikacja jest funkcjonalna kontrolek interfejsu użytkownika. Umożliwiają one możesz sprawdzić, czy całej aplikacji, w tym interfejs użytkownika działa poprawnie. Kodowane testy interfejsu użytkownika są szczególnie przydatne, gdy sprawdzanie poprawności lub inna logika interfejsu użytkownika, na przykład na stronie sieci web. Są one również często używane do automatyzowania istniejącego testu ręcznego.  
   
  Jak pokazano na poniższej ilustracji, w środowisku projektowym typowe może być where, początkowo wystarczy skompilować aplikację (F5) i kliknij przycisk za pomocą kontrolek interfejsu użytkownika, aby sprawdzić, czy wszystko działa poprawnie. Użytkownik może zdecydować się utworzyć kodowany test, dzięki czemu nie trzeba ręcznie przetestować aplikację w dalszym ciągu. W zależności od konkretnej funkcji testowane w aplikacji można napisać kod dla funkcjonalności testu lub test integracji, który może być lub może nie zawierać testowania na poziomie interfejsu użytkownika. Jeśli po prostu chcesz uzyskać bezpośredni dostęp do niektórych logiki biznesowej, może być kodu testu jednostkowego. Jednak w pewnych okolicznościach może być korzystne uwzględnić testowania różnych kontrolek interfejsu użytkownika w aplikacji. Kodowany test interfejsu użytkownika można zautomatyzować początkowej scenariusza (F5), sprawdzający, czy ten postęp dokonany w kodzie nie ma wpływu na funkcjonalność aplikacji.  

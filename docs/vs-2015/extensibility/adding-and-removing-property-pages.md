@@ -1,7 +1,7 @@
 ---
 title: Dodawanie i usuwanie stron właściwości | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02295041a660ff3e4e7b0565cffd260a4e64c78d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3b78fd8c6d89e93e208d00cda069f93a4deb10e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694106"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221991"
 ---
 # <a name="adding-and-removing-property-pages"></a>Dodawanie i usuwanie stron właściwości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dodawanie i usuwanie stron właściwości](https://docs.microsoft.com/visualstudio/extensibility/adding-and-removing-property-pages).  
-  
 W Projektancie projektu stanowi centralną lokalizację służącą do zarządzania właściwości projektu, ustawień i zasobów w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Będzie ono wyświetlane jako jednego okna w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowane środowisko projektowe (IDE) i zawiera szereg okienka po prawej stronie, które są dostępne za pośrednictwem na kartach po lewej stronie. Okienka (często określanymi jako strony właściwości) w Projektancie projektu zależą od typu projektu i język. W Projektancie projektu jest możliwy za pomocą **właściwości** polecenie **projektu** menu.  
   
  Często podtypu projektu musi wyświetlić dodatkowe strony właściwości w Projektancie projektu. Podobnie niektóre podtypy projektów mogą wymagać usunięcia wbudowanej właściwości strony. Albo celu usługi podtypu projektu musi implementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfejs i zastąpić <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> metody. Zastąpienie tej metody, a za pomocą `propId` parametr zawierający jedną z wartości <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> wyliczania, można filtrować, dodawać lub usuwać właściwości projektu. Na przykład może być konieczne dodawanie strony do strony właściwości zależne od konfiguracji. Aby to zrobić, należy filtrować strony właściwości zależne od konfiguracji, a następnie dodaj nową stronę do istniejącej listy.  

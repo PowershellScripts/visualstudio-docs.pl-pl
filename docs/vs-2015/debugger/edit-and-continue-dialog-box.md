@@ -1,7 +1,7 @@
 ---
 title: Edytuj i Kontynuuj — okno dialogowe | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f3e2dc09bdd40902f934e6f29067f4cb88cbbe48
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5dcb10d5703926fd862060b716e9f2203bfadd45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694025"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250474"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Edytuj i kontynuuj — okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Edytuj i Kontynuuj — okno dialogowe](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-dialog-box).  
-  
 Tylko w trybie macierzystym) to okno dialogowe pojawia się po zakończeniu edycji kodu podczas debugowania i **Edytuj i Kontynuuj** rozpoznaje, że możliwość stosowania zmian kodu. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).  
   
  **Nigdy nie pokazuj tego okna dialogowego ponownie**  

@@ -1,7 +1,7 @@
 ---
 title: Polecenia uruchamiane po zakończeniu instalacji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eccf3b8f2956dc9b004d22a2c823504666eebc30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4db28e933d1f328b71b225ceeeb2b414cd0627b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689110"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253802"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Polecenia, które należy uruchomić po instalacji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [polecenia, musi być uruchamiania po instalacji](https://docs.microsoft.com/visualstudio/extensibility/internals/commands-that-must-be-run-after-installation).  
-  
 Jeśli rozszerzenie zostanie wdrożony przy użyciu pliku msi, musisz uruchomić `devenv /setup` jako część instalacji w kolejności dla programu Visual Studio odnaleźć rozszerzeń.  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Tworzenie projektów modelowania UML i diagramów | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3cf34434bb600131bdd3a5aeeee9d2d3be98c96f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688727"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250487"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Tworzenie projektów i diagramów modelowania UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [UML tworzenie projektów i diagramów modelowania](https://docs.microsoft.com/visualstudio/modeling/create-uml-modeling-projects-and-diagrams).  
-  
 UML modeli pomagają zrozumieć, omówienia i projektowanie systemów oprogramowania. Program Visual Studio udostępnia szablony dla 5 najczęściej używanych diagramów UML: działania, klasy, składnika, sekwencja i przypadek użycia. Ponadto można tworzyć diagramy warstwowe, które ułatwiają definiują strukturę Twojego systemu.  
   
  Diagramy modelowania UML i diagramy warstwowe, może istnieć tylko wewnątrz projektu modelowania. Każdy projekt modelowania zawiera udostępnionego modelu UML i diagramów UML kilka. Każdy diagram jest widoku częściowego w modelu. UML model zawiera wszystkie elementy na diagramach UML i mogą być wyświetlane przy użyciu Eksploratora modelu UML. Aby uzyskać informacji na temat modeli i ich związek z diagramów, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md). Aby dowiedzieć się, jak modelowanie projektów pod kontrolą wersji, zobacz [Zarządzanie modelami i diagramami w ramach kontroli wersji](../modeling/manage-models-and-diagrams-under-version-control.md) i [struktury rozwiązania modelowania](../modeling/structure-your-modeling-solution.md)  

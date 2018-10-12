@@ -1,7 +1,7 @@
 ---
 title: Korzystanie z kontrolek HTML5 w kodowanych testów interfejsu użytkownika | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 14bdab12cf241914d1f41581ae5434ae1776ec2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 92ee95d4840ab9a833adc1b0060117f0d6b94fbd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681857"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254465"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [za pomocą kontrolek HTML5 w kodowanych testach interfejsu użytkownika](https://docs.microsoft.com/visualstudio/test/using-html5-controls-in-coded-ui-tests).  
-  
 Kodowane testy interfejsu użytkownika obsługują niektóre formanty języka HTML5, które są dołączone do programu Internet Explorer 9 i Internet Explorer 10.  
   
  **Wymagania**  

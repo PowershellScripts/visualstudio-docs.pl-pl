@@ -1,7 +1,7 @@
 ---
 title: 'Porady: wyświetlanie i edytowanie kodu za pomocą polecenia Zobacz definicję (Alt + F12) | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e10c19480004345d4a5df1d628972a788794e13
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc99602fe1ca2003995594f75736d581fa37e0d0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676542"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254478"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Porady: Podgląd i edycja kodu za pomocą definicji wglądu (Alt+F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: wyświetlanie i edytowanie kodu za pomocą funkcji zobacz definicję (Alt + F12)](https://docs.microsoft.com/visualstudio/ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12).  
-  
 Możesz użyć **Peek Definition** polecenie, aby wyświetlić i edytować kod bez przełączania kodu, który właśnie piszesz. **Zobacz definicję** i **przejdź do definicji** wyświetlane te same informacje, ale **zobacz definicję** pojawia się w oknie podręcznym, a **przejdź do definicji** pokazuje kod w oddzielnym oknie kodu. **Przejdź do definicji** powoduje, że kontekst (to znaczy aktywne okno kodu, bieżący wiersz i pozycja kursora) przełączyć się do okna kodu definicji. Za pomocą **Peek Definition**, można wyświetlać i edytować definicję i poruszać się wewnątrz pliku definicji, zachowując swoje miejsce w oryginalnym pliku kodu.  
   
  Możesz użyć **Peek Definition** przy użyciu kodu C#, Visual Basic i C++. W języku Visual Basic **Peek Definition** Wyświetla łącze do **przeglądarki obiektów** dla symboli, które nie mają metadanych definicji (na przykład typów programu .NET Framework, które są wbudowane).  

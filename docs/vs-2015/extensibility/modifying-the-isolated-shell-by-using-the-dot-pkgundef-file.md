@@ -1,7 +1,7 @@
 ---
 title: Modyfikowanie programu Isolated Shell przy użyciu. Pliku Pkgundef | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9cee2a20-f8ac-4d9d-aef9-068fcd9f27a4
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3741fc9abdae6693670538c80288dfdefcefd84e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5663c3e7f8dfb3460e163c851751bde95fb630d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256428"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgundef-file"></a>Modyfikowanie programu Isolated Shell przy użyciu. Pliku Pkgundef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [modyfikowanie izolowane powłoki za pomocą. Pliku Pkgundef](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file).  
-  
 Można zmodyfikować pliku pkgundef, aby wykluczyć wpisy rejestru określonego z aplikacji isolated shell. Zazwyczaj podczas pierwszego uruchomienia aplikacji na komputerze, powłoki programu Visual Studio kopiuje istniejące wpisy rejestru programu Visual Studio do głównego klucza rejestru dla aplikacji. Obejmuje to wszystkie odwołania do VSPackages aktualnie zainstalowany.  
   
  Aby wykluczyć określony wpis rejestru z aplikacji isolated shell, Dodaj do pliku pkgundef aplikacji klucza pakietu następuje zapis. Klucze i wpisy, które są reprezentowane podobnie jak w pliku .pkgdef. oznacza to jak [$RootKey$] lub [$RootKey$\\*podklucz*] i "*wpis*" =*wartość*, gdzie *podklucz* jest podklucza który wpływa na, *wpis* wpis do usunięcia, a *wartość* jest `""` lub `dword:00000000`.  

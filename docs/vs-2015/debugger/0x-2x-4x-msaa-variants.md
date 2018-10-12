@@ -1,7 +1,7 @@
 ---
 title: 0 wariantów x-2 x-4 x MSAA | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97203b9ecc44e5aa487f7fad35b47e050ce50766
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 876e901e13a2fe25957744665e54f703e209fc7d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42693731"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251189"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0 x / 2 x / 4 x MSAA wariantów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [0 x-2 x-4 x MSAA wariantów](https://docs.microsoft.com/visualstudio/debugger/graphics/0x-2x-4x-msaa-variants).  
-  
 Zastąpienia wielu przykładowe Wygładzanie (MSAA) ustawień dla wszystkich elementy docelowe renderowania i łańcuchy wymiany.  
   
 ## <a name="interpretation"></a>Interpretacja  

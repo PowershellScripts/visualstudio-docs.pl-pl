@@ -1,7 +1,7 @@
 ---
 title: Wdrażanie niestandardowego procesora dyrektywy | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b46d95aae0908a4e1e2ba72e860d56ec975b051f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631064"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251956"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Wdrażanie niestandardowego procesora dyrektywy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wdrażanie niestandardowego procesora dyrektywy](https://docs.microsoft.com/visualstudio/modeling/deploying-a-custom-directive-processor).  
-  
 Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na dowolnym komputerze, należy zarejestrować go za pomocą jednej z metod opisanych w tym temacie.  
   
  Alternatywne metody to:  

@@ -1,7 +1,7 @@
 ---
 title: BuildProjectOnload, Element (szablony Visual Studio) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1c194f4236f04eea7d8d1a156c8ee308ff58a143
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 96a58ca3baeb03f01cd2df1a5c4267d444da1728
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124991"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253269"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload, element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [BuildProjectOnload, Element (szablony Visual Studio)](https://docs.microsoft.com/visualstudio/extensibility/buildprojectonload-element-visual-studio-templates).  
-  
 Kompiluje tylko nowe projekty, jak utworzyć i dodać je do rozwiązania. Całe rozwiązanie nie jest wbudowane.  
   
  \<VSTemplate>  

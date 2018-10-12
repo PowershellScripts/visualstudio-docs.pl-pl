@@ -1,7 +1,7 @@
 ---
 title: Widok wywołującego/wywoływanego — dane Instrumentacji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9f00ecf2bf9e99fe2dc40c9a849fa6bbf576bc4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc820808db428ec1b4919c5d65ca9e12091a987e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680637"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250552"
 ---
 # <a name="callercallee-view---instrumentation-data"></a>Widok wywołujący/wywoływany - dane Instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [widok wywołującego/wywoływanego — dane Instrumentacji](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-instrumentation-data).  
-  
 Widok wywołujący/wywoływany Wyświetla profilowania informacji na temat wybranej funkcji i jej funkcji nadrzędnymi i podrzędnymi w drzewie wywołań. Widok wywołujący/wywoływany zawiera trzy siatki.  
   
  **Bieżąca funkcja** jest wyświetlany w środkowy siatkę, a pokazuje profilowania informacji na temat wybranej funkcji. Wartości obejmują wszystkie wywołania do funkcji.  

@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Korzystanie ze znaczników wizualizatora współbieżności SDK | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a8514848bd0b3fd52e7139972547586fb5bf514
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ef9e54f58571ca5b8e62c964a840b80b9b7f25f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694132"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251475"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Porady: korzystanie ze znaczników wizualizatora współbieżności SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [How to: Użyj SDK znaczników narzędzia Concurrency Visualizer](https://docs.microsoft.com/visualstudio/profiling/how-to-use-the-concurrency-visualizer-markers-sdk).  
-  
 W tym temacie pokazano, jak za pomocą SDK narzędzia Concurrency Visualizer utworzyć zakresy i zapisać flagi, wiadomości i alerty.  
   
 ### <a name="to-use-c"></a>Aby użyć języka C++  

@@ -1,7 +1,7 @@
 ---
 title: Praca z obrazami i teksturami | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7b9132ec16fa42ccff33bae226c823c710f77b18
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ff5125ce46abe993f35551a0ce46a0d211af99bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627958"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250500"
 ---
 # <a name="working-with-textures-and-images"></a>Praca z obrazami i teksturami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Praca z obrazami i teksturami](https://docs.microsoft.com/visualstudio/designers/working-with-textures-and-images).  
-  
 Można użyć edytora obrazów w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do tworzenia i modyfikowania teksturami i obrazami. Edytor obrazów obsługuje zaawansowane formatów tekstur i obrazów, takich jak te, które są używane w rozwoju aplikacji DirectX.  
   
 > [!NOTE]

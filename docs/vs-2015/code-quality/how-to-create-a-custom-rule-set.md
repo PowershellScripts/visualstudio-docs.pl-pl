@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Tworzenie niestandardowego zestawu reguł | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee21452912fa87b63b49db609828ef44cac7c4c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42686837"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255505"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Porady: tworzenie niestandardowego zestawu reguł
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Tworzenie niestandardowego zestawu reguł](https://docs.microsoft.com/visualstudio/code-quality/how-to-create-a-custom-rule-set).  
-  
 W [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], i [!INCLUDE[vsPro](../includes/vspro-md.md)], można tworzyć i modyfikować niestandardowego *zestaw reguł* do potrzeb określonego projektu skojarzony z analizy kodu. Aby utworzyć niestandardową regułę zestaw, otwórz jedną lub więcej standardowe reguły ustawia z edytora zestawu reguł. Można następnie dodać lub usunąć określone zasady i możesz zmienić akcję wykonywaną podczas analizy kodu Określa, że reguły zostały naruszone.  
   
  Aby utworzyć nową regułę niestandardową zestawu, zapisz go przy użyciu nowej nazwy pliku. Niestandardowego zestawu reguł jest przypisywany do projektu.  

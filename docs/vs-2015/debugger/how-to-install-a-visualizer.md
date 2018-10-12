@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Instalowanie wizualizatora | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5152c47635f8ca2f2bb0a6a32c7767682006860a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5539b17ee4d10f603f1adfe2ce7e459332181cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695622"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250227"
 ---
 # <a name="how-to-install-a-visualizer"></a>Porady: instalacja programu Visualizer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Instalowanie wizualizatora](https://docs.microsoft.com/visualstudio/debugger/how-to-install-a-visualizer).  
-  
 Po utworzeniu wizualizatora, należy zainstalować wizualizatora tak, że będzie on dostępny w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Instalowanie wizualizatora jest prostym procesem.  
   
 > [!NOTE]
@@ -59,7 +57,7 @@ Po utworzeniu wizualizatora, należy zainstalować wizualizatora tak, że będzi
   
 ## <a name="see-also"></a>Zobacz też  
  [Tworzenie niestandardowych Wizualizatorów](../debugger/create-custom-visualizers-of-data.md)   
- [Porady: pisanie wizualizatora](../debugger/how-to-write-a-visualizer.md)
+ [Instrukcje: pisanie wizualizatora](../debugger/how-to-write-a-visualizer.md)
 
 
 

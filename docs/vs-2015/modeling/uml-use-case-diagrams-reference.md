@@ -1,7 +1,7 @@
 ---
 title: 'Diagramy przypadków użycia UML: Odwołanie | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2bc0d23a1404925183af00ab710a422639e51654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9fbdf85b3177b88e1a7e97f3cbcd4f901961958d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684999"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256311"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>Diagramy przypadków użycia UML: Odwołanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [diagramy przypadków użycia UML: odwołanie](https://docs.microsoft.com/visualstudio/modeling/uml-use-case-diagrams-reference).  
-  
 W programie Visual Studio *diagram przypadków użycia* znajduje się podsumowanie kto korzysta z aplikacji lub systemu i jak mogą one korzystają z nich. Aby utworzyć diagram przypadków użycia UML, na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**.  
   
  Diagram przypadków użycia działa jako fokus do opisu wymagań użytkownika. Przedstawia ona relacje między wymaganiami, użytkowników i główne składniki. Nie opisano wymagania, które szczegółowo; mogą one opisane w oddzielnym diagramie lub w dokumentach, które mogą być połączone z poszczególnymi przypadkami użycia. Aby dowiedzieć się, jak jak diagramy przypadków użycia może pomóc zrozumieć, omawianiu i komunikowaniu potrzeb użytkowników, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
@@ -75,7 +73,7 @@ W programie Visual Studio *diagram przypadków użycia* znajduje się podsumowan
  [Diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md)   
  [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)   
  [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)   
- [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)
+ [Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)
 
 
 

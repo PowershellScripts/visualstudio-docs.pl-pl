@@ -1,7 +1,7 @@
 ---
 title: Dodawanie polecenia do paska narzędzi Eksploratora rozwiązań | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0dfc2aeb0b0e73e48fd0dcf64b5b7c09fcbea9f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683512"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254402"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Dodawanie polecenia do paska narzędzi Eksploratora rozwiązań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dodawanie polecenia do paska narzędzi Eksploratora rozwiązań](https://docs.microsoft.com/visualstudio/extensibility/adding-a-command-to-the-solution-explorer-toolbar).  
-  
 W tym instruktażu pokazano, jak dodać przycisk, aby **Eksploratora rozwiązań** paska narzędzi.  
   
  Dowolnego polecenia na pasku narzędzi lub menu nosi nazwę przycisku w programie Visual Studio. Po kliknięciu przycisku, jest wykonywany kod w program obsługi poleceń. Zazwyczaj powiązane polecenia są grupowane razem tworzą jedną grupę. Menu i paski narzędzi działają jak kontenery dla grupy. Priorytet określa kolejność wyświetlania pojedynczych poleceń w grupie w menu lub na pasku narzędzi. Aby uniemożliwić przycisku są wyświetlane na pasku narzędzi lub menu poprzez kontrolowanie jego widoczność. Polecenia, który znajduje się w `<VisibilityConstraints>` części pliku vsct pojawia się tylko w skojarzonego kontekstu. Widoczność nie może być stosowany do grup.  

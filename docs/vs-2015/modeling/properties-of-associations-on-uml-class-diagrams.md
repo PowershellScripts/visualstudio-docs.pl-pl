@@ -1,7 +1,7 @@
 ---
 title: Właściwości skojarzeń w UML, diagramy klas | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 96dc1d942a06e4030992889970fd3946d2e4d9d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8274cd45142886dd71e0c8ce8e1950c0fee9609
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632658"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252073"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>Właściwości skojarzeń w diagramach klas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [właściwości skojarzeń w UML, diagramy klas](https://docs.microsoft.com/visualstudio/modeling/properties-of-associations-on-uml-class-diagrams).  
-  
 Na diagramie klas UML można narysować *skojarzenia* między jakiejkolwiek parze typów. Typ jest klasą, interfejsem lub wyliczenia.  
   
  Skojarzenie wskazuje na tym, że system, które tworzysz przechowuje łącza pewnego rodzaju między wystąpieniami skojarzone typy. Ogólnie rzecz biorąc go nie oznacza niczego więcej o implementacji łącza. Na przykład mogą być wskaźniki wierszy w tabeli, zaktualizowana w informacjach odsyłaczy nazwy w formacie XML i tak dalej.  

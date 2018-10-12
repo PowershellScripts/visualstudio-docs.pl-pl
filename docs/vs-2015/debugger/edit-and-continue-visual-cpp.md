@@ -1,7 +1,7 @@
 ---
 title: Edytuj i Kontynuuj (Visual C++) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b95de832050cd6283b85ec4fe6bd99b67c8c1d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c82835c669eb1afd7f2fc558f89c3c30382a9b0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685307"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255090"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edytuj i kontynuuj (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Edytuj i Kontynuuj (Visual C++)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-cpp).  
-  
 W projektach języka Visual C++ można użyć Edytuj i Kontynuuj. Zobacz [obsługiwane zmiany kodu (C++, Distributed File System)](../debugger/supported-code-changes-cpp.md) informacji o ograniczeniach operacji Edytuj i Kontynuuj.  
   
  Począwszy od programu Visual Studio 2015 Update 1, teraz można Edytuj i Kontynuuj w aplikacji Windows Store w języku C++ i aplikacji DirectX, ponieważ teraz obsługuje **/zi** przełącznika kompilatora z **/bigobj** przełącznika. Umożliwia także Edytuj i Kontynuuj przy użyciu plików binarnych skompilowanych przy użyciu **/FASTLINK** przełącznika.  

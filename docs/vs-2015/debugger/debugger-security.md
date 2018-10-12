@@ -1,7 +1,7 @@
 ---
 title: Zabezpieczenia debugera | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f40dfc655148530045b6566ac56d77553951b93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9d446cfa4eca86ff4657fc9a8741aa965fd43de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689051"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290501"
 ---
 # <a name="debugger-security"></a>Zabezpieczenia debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zabezpieczenia debuger](https://docs.microsoft.com/visualstudio/debugger/debugger-security).  
-  
 Możliwość debugowania inny proces zapewnia bardzo szerokie uprawnienia, których możesz nie mieliby, szczególnie w przypadku debugowania zdalnego. Złośliwy debuger może skutkować problemem dla całego zniszczenia na maszynie debugowany.  
   
  Jednak wielu programistów nie należy pamiętać, że zagrożenia zabezpieczeń również może przepływać w odwrotnym kierunku. Istnieje możliwość, że złośliwy kod obiektu debugowanego procesu w celu zagrozić bezpieczeństwu komputer debugowania: kilka, które muszą być chronione przed lukami w zabezpieczeniach.  
@@ -91,7 +89,7 @@ Możliwość debugowania inny proces zapewnia bardzo szerokie uprawnienia, któr
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
  [Ostrzeżenie o zabezpieczeniach: Dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
- [Ostrzeżenie o zabezpieczeniach: Debuger musi wykonać polecenie niezaufane](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+ [Ostrzeżenie o zabezpieczeniach: debuger musi wykonać polecenie niezaufane](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
 
 
 

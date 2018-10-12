@@ -1,7 +1,7 @@
 ---
 title: ClickOnce i podpis Authenticode | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: cf05c73ee621d9eda1619627b2d0b65611e447fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694237"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289488"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce i podpis Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [ClickOnce i podpis Authenticode](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-authenticode).  
-  
 Authenticode * jest technologia firmy Microsoft, która używa branżowego standardu kryptografii do podpisania kodu aplikacji przy użyciu certyfikatów cyfrowych, które zweryfikowania autentyczności wydawcy aplikacji. Za pomocą kodu Authenticode dla wdrożenia aplikacji [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zmniejsza ryzyko konia trojańskiego. Koń trojański jest wirus lub występuje inne szkodliwe program, który złośliwy firm zniesławiającej jako program wiarygodnego źródła ustanowione, godne zaufania. Podpisywanie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia za pomocą certyfikatu cyfrowego jest opcjonalny krok, aby sprawdzić, czy zestawów i plików nie były modyfikowane.  
   
  Poniższe sekcje opisują różne typy certyfikatów cyfrowych używanych w Authenticode, w jaki sposób certyfikaty są weryfikowane przy użyciu certyfikatów urzędów certyfikacji, rola Oznaczanie sygnaturą czasową w certyfikatach oraz metody przestrzeń dyskowa dostępna dla certyfikaty.  

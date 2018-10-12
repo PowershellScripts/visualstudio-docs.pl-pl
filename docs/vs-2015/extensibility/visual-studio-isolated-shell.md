@@ -1,7 +1,7 @@
 ---
 title: Program Visual Studio Isolated Shell | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed81e88b12e371f74adb9d3911719112bca8b139
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684137"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286068"
 ---
 # <a name="visual-studio-isolated-shell"></a>Program Visual Studio Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Visual Studio Isolated Shell](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-isolated-shell).  
-  
 Powłoka programu Visual Studio, izolowany umożliwia tworzenie autonomicznych aplikacji, które można uruchomić side-by-side z innymi wersjami programu Visual Studio. Jest używany przede wszystkim do hostowania specjalistycznych narzędzi, które mogą używać usług Visual Studio, ale również mieć z dostosowanego wyglądu znakowania. Funkcje programu Visual Studio i grupami polecenia menu mogą być łatwo włączać i wyłączać. Tytuły aplikacji, ikony aplikacji i ekrany powitalne są w pełni konfigurowalne. Aby uzyskać listę funkcji można dostosowywać, zobacz [Dostosowywanie programu Isolated Shell](../extensibility/customizing-the-isolated-shell.md).  
   
  Aby pracować z projektu programu shell w trybie izolowanym, należy zainstalować zestawu SDK programu Visual Studio. Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

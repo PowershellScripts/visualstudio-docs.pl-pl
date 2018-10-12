@@ -1,7 +1,7 @@
 ---
 title: Synchronizowanie zmian między XCode i Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 10
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: a18d21dc20d6bb8a8346013130bea15f094b5fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0135aa1b2a23beb0ce9781fe07403a7ddc43acb7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42695547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268232"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>Synchronizacja zmian między XCode i Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [synchronizacja zmian między XCode i Visual Studio](https://docs.microsoft.com/visualstudio/cross-platform/sync-changes-between-xcode-and-visual-studio).  
-  
   
 Języka Microsoft Visual C++ dla opracowywania aplikacji mobilnych składnika obejmuje funkcje zdalnego synchronizowania pracy między danym Komputerem a Twojego komputera Mac. Gdy są skojarzone maszyny i programu Visual Studio na komputerze Mac, nowe opcje są dostępne dla systemu iOS projektów aplikacji w programie Visual Studio można użyć, aby otworzyć projekt w programie XCode, Przenieś swój kod między XCode i Visual Studio i oczyścić katalog tymczasowy projektu XCode.  
   

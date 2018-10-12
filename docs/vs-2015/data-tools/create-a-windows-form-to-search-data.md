@@ -1,7 +1,7 @@
 ---
 title: Tworzenie formularza Windows wyszukiwanie danych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a64377e2689ca4e5111f316c13808aee6cfb59be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c610ebecf48d8a21e8962a549d7114b8d13e3ad6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680345"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270624"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Tworzenie formularza Windows wyszukiwanie danych](https://docs.microsoft.com/visualstudio/data-tools/create-a-windows-form-to-search-data).  
-  
   
 Typowy scenariusz aplikacji jest wyświetlany wybranych danych w formularzu. Na przykład można wyświetlić zamówienia dla konkretnego klienta lub szczegóły określonej kolejności. W tym scenariuszu użytkownik wprowadza informacje w formie, a następnie zapytanie jest wykonywane przy użyciu danych wprowadzonych przez użytkownika jako parametr; oznacza to, że dane wybiera się na podstawie sparametryzowanych zapytań. Zapytanie zwraca tylko dane, które nie spełnia kryteriów wprowadzonej przez użytkownika. W tym instruktażu pokazano, jak utworzyć zapytanie, które zwraca klientów w określonym mieście i modyfikowania interfejsu użytkownika, dzięki czemu użytkownicy mogą wprowadzić nazwę miejscowości i naciśnij przycisk, aby wykonać zapytanie.  
   
@@ -159,5 +157,5 @@ Typowy scenariusz aplikacji jest wyświetlany wybranych danych w formularzu. Na 
 -   Edytowanie zestawu danych, aby dodać lub usunąć obiekty bazy danych. Aby uzyskać więcej informacji, zobacz [tworzenie i konfigurowanie zestawów danych](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Powiązywanie kontrolek formularzy Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+ [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 

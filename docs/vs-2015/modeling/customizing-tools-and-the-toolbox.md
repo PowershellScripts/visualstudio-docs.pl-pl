@@ -1,7 +1,7 @@
 ---
 title: Dostosowywanie narzędzi i przybornika | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 97682059e90bac38b0b8b00492ff9fd50a36ffab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69ee365e3bc6902ffecd755d6f788b7f9e238c52
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634276"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290735"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Dostosowywanie narzędzi i przybornika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dostosowywanie narzędzi i przybornika](https://docs.microsoft.com/visualstudio/modeling/customizing-tools-and-the-toolbox).  
-  
 Zdefiniuj elementy przybornika dla elementów, które chcesz powiadomić użytkowników, Dodaj do swoich modeli. Istnieją dwa rodzaje tools: narzędzia elementu i narzędzi do nawiązywania połączenia. W wygenerowanym projektancie użytkownika można wybrać narzędzie elementu przeciągnij kształty do diagramu, a narzędzie połączenia, aby narysować łącza między kształtami można wybrać. Ogólnie rzecz biorąc narzędzi elementów zezwolić użytkownikom na dodawanie wystąpień klas domeny do swoich modeli i narzędzi do nawiązywania połączenia pozwolić im na dodawanie wystąpienia relacji domeny.  
   
  W tym temacie:  

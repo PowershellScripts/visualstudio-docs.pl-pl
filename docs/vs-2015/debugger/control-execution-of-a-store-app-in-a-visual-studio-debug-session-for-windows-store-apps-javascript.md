@@ -1,7 +1,7 @@
 ---
 title: Kontrolowanie wykonywania aplikacji Store w trakcie sesji debugowania programu Visual Studio dla aplikacji Windows Store (JavaScript) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881140"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275525"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Kontrolowanie wykonywania aplikacji Store w trakcie sesji debugowania programu Visual Studio dla aplikacji Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [kontrolować wykonywanie programu Store app, w trakcie sesji debugowania programu Visual Studio dla aplikacji Windows Store (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript).  
-  
 Ten przewodnik Szybki start pokazuje, jak przechodzić w debugerze programu Visual Studio i jak wyświetlić stan programu w sesji.  
   
  Ten przewodnik Szybki start jest dla deweloperów, którzy są nowe debugowanie przy użyciu programu Visual Studio, a sesja debugowania dla deweloperów, którzy chcą dowiedzieć się więcej o przechodząc w programie Visual Studio. Techniki debugowania sam nie jest nauka. Funkcje w przykładowym kodzie są przeznaczone tylko do zademonstrowania debugowania procedur opisanych w tym temacie. Funkcje nie stosować najlepsze rozwiązania projekt aplikacji lub funkcji. W rzeczywistości zostanie szybko odkryjesz, że funkcje i aplikacji oraz nie wykonać wiele niczego na wszystkich.  

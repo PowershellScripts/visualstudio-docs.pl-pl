@@ -1,7 +1,7 @@
 ---
 title: CompensableActivity, Projektant działań | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 89d95d2b3e58f88687fc9236c387cc31bfc5ddbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 670d3e92b24e35979074df3817611ceff692f59d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630751"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290449"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity, projektant działań
 **CompensableActivity** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.CompensableActivity> działania.  
@@ -49,4 +49,4 @@ ms.locfileid: "42630751"
  [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)   
  [Wyrównania](../workflow-designer/compensate-activity-designer.md)   
  [Upewnij się](../workflow-designer/confirm-activity-designer.md)   
- [Element TransactionScope](../workflow-designer/transactionscope-activity-designer.md)
+ [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

@@ -1,7 +1,7 @@
 ---
 title: CV_CFL_LANG — | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aaf07a00124018e4e254cae0c059b6f1b5f1be2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6cc46ba7d6100c112a35fceadf10957d72a1fa52
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676692"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284651"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [cv_cfl_lang —](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/cv-cfl-lang).  
-  
 Określa język kodu źródłowego aplikacji lub połączone modułu.  
   
 ## <a name="syntax"></a>Składnia  

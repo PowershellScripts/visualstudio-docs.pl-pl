@@ -1,7 +1,7 @@
 ---
 title: 'DA0006: Przesłoń metody Equals() dla typów wartości | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4e7535775946c99d6b176f36ca10288a8bc9da6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2e09783d5961172033a82e8be8285d9398992ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285418"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Przesłoń metodę equals typami wartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [DA0006: Przesłoń metody Equals() dla typów wartości](https://docs.microsoft.com/visualstudio/profiling/da0006-override-equals-parens-for-value-types).  
-  
 Identyfikator reguły | DA0006 |  
 | Kategoria |. NET Framework użycia |  
 | Metody Profiiling | Próbkowanie |  

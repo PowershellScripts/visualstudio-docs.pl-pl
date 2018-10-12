@@ -1,7 +1,7 @@
 ---
 title: Widok procesów | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c83b57ade3a78a4dcc926e34547ee566326e129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4af26930fc8c9f362d91656cec758c9d4a9c437
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690082"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288993"
 ---
 # <a name="processes-view"></a>Widok procesów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [widok procesy](https://docs.microsoft.com/visualstudio/debugger/processes-view).  
-  
 Widok procesów przedstawia drzewo wszystkich aktywnych procesów w Twoim systemie. Nazwa procesu modułu i identyfikator są wyświetlane. Użyj widoku procesów, jeśli chcesz sprawdzić procesu określonym systemie zazwyczaj odnosi się do wykonywania programu. Procesy są identyfikowane przez nazwy modułów lub zostały one oznaczone "procesy systemowe".  
   
  Program Microsoft Windows obsługuje wiele procesów. Każdy proces może mieć jeden lub więcej wątków i każdy wątek może zawierać jeden lub kilka skojarzonych okien najwyższego poziomu. Każde okno najwyższego poziomu może posiadać kilka okien. A + symbol informuje, że poziom jest zwinięta. W widoku zwiniętym składa się z jeden wiersz dla każdego procesu. Kliknij pozycję + symbolu, aby rozwinąć poziomu.  
@@ -61,10 +59,10 @@ Widok procesów programu Spy ++
  [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
  Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.  
   
- [Okno dialogowe Wyszukiwanie procesów](../debugger/process-search-dialog-box.md)  
+ [Wyszukiwanie procesów, okno dialogowe](../debugger/process-search-dialog-box.md)  
  Umożliwia znalezienie węzła dla określonego procesu w widoku procesów.  
   
- [Okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md)  
+ [Właściwości procesu, okno dialogowe](../debugger/process-properties-dialog-box.md)  
  Wyświetla właściwości wybranego w widoku procesów procesu.  
   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  

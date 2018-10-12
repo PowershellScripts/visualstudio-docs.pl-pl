@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie składnikami | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be8a771c0f5de92664914f4f158db9054e321e19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45a2c4fb0f3fa54a2d2b89c8473961143ec3185c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680607"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280335"
 ---
 # <a name="component-management"></a>Zarządzanie składnikami
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Zarządzanie składnikami](https://docs.microsoft.com/visualstudio/extensibility/internals/component-management).  
-  
 Jednostki zadań w Instalatorze Windows są określane jako składniki Instalatora Windows (czasami nazywany WICs lub po prostu składników). Identyfikator GUID identyfikuje każdy składnik WIC to podstawowa jednostka instalacji i zliczanie dla ustawień, które przy użyciu Instalatora Windows.  
   
  Chociaż kilka produktów można użyć, aby utworzyć Instalatora pakietu VSPackage, przyjęto korzystania z plików Instalatora Windows (msi). Podczas tworzenia Instalatora, musi poprawnie Zarządzanie wdrażaniem pliku, tak, aby zliczanie odwołań poprawnych odbywa się na cały czas. W związku z tym różne wersje produktu nie zakłócają lub włamanie wzajemnie się kombinacji instalacji i odinstalować scenariuszy.  

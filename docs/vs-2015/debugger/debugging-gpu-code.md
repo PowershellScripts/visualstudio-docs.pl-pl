@@ -1,7 +1,7 @@
 ---
 title: Debugowanie kodu GPU | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1eead3a8f706564f9f91a385086f39ca31dc706e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0bc862e114319642ee54f8ef16824fa24065e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690713"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279269"
 ---
 # <a name="debugging-gpu-code"></a>Debugowanie kodu GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [debugowania kodu GPU](https://docs.microsoft.com/visualstudio/debugger/debugging-gpu-code).  
-  
 Można debugować kodu C++, który działa na jednostka przetwarzania grafiki (GPU). Obsługa w programie Visual Studio do debugowania GPU obejmuje wykrywania wyścigu, uruchamianie procesów i dołączanie do, a Integracja debugowania systemu windows.  
   
 ## <a name="supported-platforms"></a>Obsługiwane platformy  
@@ -63,11 +61,11 @@ Można debugować kodu C++, który działa na jednostka przetwarzania grafiki (G
   
 -   [Korzystanie z okna zadań](../debugger/using-the-tasks-window.md)  
   
--   [Porady: Korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)  
+-   [Instrukcje: korzystanie z okna równoległego wyrażenia kontrolnego](../debugger/how-to-use-the-parallel-watch-window.md)  
   
 -   [Debugowanie wątków i procesów](../debugger/debug-threads-and-processes.md) (pasek narzędzi debugowania lokalizacji)  
   
--   [Porady: Korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
+-   [Instrukcje: korzystanie z okna wątków GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Wyjątki synchronizacji danych  
  Debuger można określić wiele warunków synchronizacji danych podczas wykonywania. Gdy zostanie wykryty warunek, debuger przejdzie w stan przerwania. Dostępne są dwie opcje —**Przerwij** lub **Kontynuuj**. Za pomocą **wyjątki** okno dialogowe, możesz określić, czy debuger wykryje te warunki, a także jakich warunkach go spowoduje przerwanie dla. Aby uzyskać więcej informacji, zobacz [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md). Można również użyć **opcje** okno dialogowe, aby określić, czy debuger powinien Ignoruj wyjątki, jeśli dane, które są zapisywane nie zmienia wartość danych. Aby uzyskać więcej informacji, zobacz [ogólne, debugowanie, okno dialogowe Opcje](../debugger/general-debugging-options-dialog-box.md).  

@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie wyjątkami za pomocą debugera | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8837a633c12277a1caac2f88af3eb85a4db2dafc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678384"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285925"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Zarządzanie wyjątkami za pomocą debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Zarządzanie wyjątkami za pomocą debugera programu Visual Studio](https://docs.microsoft.com/visualstudio/debugger/managing-exceptions-with-the-debugger).  
-  
 Wyjątek jest wskazaniem stanu błędu, który występuje, gdy program jest wykonywane. Może i powinno zapewniać obsługi reagujące na najważniejszych wyjątków, ale ważne jest, aby dowiedzieć się, jak skonfigurować debuger w celu przerwania do obsługi wyjątków, które mają być wyświetlane.  
   
  Gdy wystąpi wyjątek, debuger zapisuje komunikat o wyjątku w oknie danych wyjściowych. Może je przerwać wykonywanie w następujących przypadkach:  

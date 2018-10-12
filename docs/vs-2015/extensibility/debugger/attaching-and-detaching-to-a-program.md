@@ -1,7 +1,7 @@
 ---
 title: Dołączanie i odłączanie programu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a7129fab85d405d941394c02abf79ba29e787f5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6915d54dca921f9600a51c3501ed9a4808bca199
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630617"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288707"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Dołączanie do programu i odłączanie od niego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dołączanie i odłączanie programu](https://docs.microsoft.com/visualstudio/extensibility/debugger/attaching-and-detaching-to-a-program).  
-  
 Dołączanie debugera wymaga wysyłania odpowiedniej kolejności metod i zdarzeń z odpowiednich atrybutów.  
   
 ## <a name="sequence-of-methods-and-events"></a>Sekwencja metody i zdarzenia  

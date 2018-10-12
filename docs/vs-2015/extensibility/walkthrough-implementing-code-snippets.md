@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Implementowanie fragmentów kodu | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86d0ef82422b5f9cd419bf31e8b92b789fac1226
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b11234cd9dda19d010eb8408c359067697d95d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685353"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287160"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>Przewodnik: implementowanie fragmentów kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: Implementowanie fragmentów kodu](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-implementing-code-snippets).  
-  
 Można tworzyć fragmenty kodu i dołączać do rozszerzenia edytora, tak aby użytkownicy rozszerzenia można dodać je do swój własny kod.  
   
  Fragment kodu jest fragmentem kodu lub inny tekst, który może być zawarte w pliku. Aby wyświetlić wszystkie fragmenty kodu, które zostały zarejestrowane dla określonych języków programowania, na **narzędzia** menu, kliknij przycisk **Menedżera fragmentów kodu**. Aby wstawić fragment kodu w pliku, kliknij prawym przyciskiem myszy, którego ten fragment kodu kliknij **Wstaw fragment kodu** lub **Otocz**, fragment, chcesz, aby zlokalizować i kliknij ją dwukrotnie. Naciśnij klawisz TAB lub klawisze SHIFT + TAB, aby zmodyfikować odpowiednie części fragmentu kodu, a następnie naciśnij klawisz ENTER lub ESC, aby zaakceptować ją. Aby uzyskać więcej informacji, zobacz [fragmenty kodu](../ide/code-snippets.md).  

@@ -1,7 +1,7 @@
 ---
 title: Widok alokacji pamięci platformy .NET | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e53fe27148901bc4af78f9b607c0e3a70ba4b91
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63b5938131713c32f410f89c80a3efefa8b6c346
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684000"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268245"
 ---
 # <a name="net-memory-allocations-view"></a>.NET Widok alokacji pamięci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [.NET Widok alokacji pamięci](https://docs.microsoft.com/visualstudio/profiling/dotnet-memory-allocations-view).  
-  
 Widok alokacji zawiera typy, które zostały utworzone podczas uruchomienia profilowania. Każdy typ jest węzeł główny drzewa wywołań, który wyświetla ścieżki wykonywania funkcji, które spowodowały alokacji typu.  
   
  Dane w wierszu Typ wyświetlana całkowita liczba obiektów tego typu, które zostały utworzone w trakcie uruchomienia profilowania i całkowita liczba bajtów przydzielonych do obiektów tego typu. Wartości włączne i wyłączne dla typu są zawsze takie same.  

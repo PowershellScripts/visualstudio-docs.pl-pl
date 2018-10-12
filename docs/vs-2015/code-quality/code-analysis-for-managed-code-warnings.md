@@ -1,7 +1,7 @@
 ---
 title: Analiza kodu dla kodu zarządzanego — ostrzeżenia | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4e1d74a44db244ed83e7d05fb09e66c96475466c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 300875689a8ea6e872e287eaed6d2328bdab5170
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679830"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278918"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Analiza kodu dla zarządzanego kodu — Ostrzeżenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [analiza kodu dla zarządzanego kodu ostrzeżenia](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-managed-code-warnings).  
-  
 Narzędzie do analizy kodu zarządzanego zawiera ostrzeżenia, które wskazują naruszeń reguł w bibliotekach kodu zarządzanego. Ostrzeżenia są zorganizowane w obszarach reguł, takich jak projektu, lokalizacji, wydajność i bezpieczeństwo. Każde ostrzeżenie oznacza naruszenie reguły analizy kodu zarządzanego. Ta sekcja zawiera szczegółowe omówienie i przykłady dla każdego ostrzeżenia analizy kodu zarządzanego.  
   
  W poniższej tabeli przedstawiono typ danych, który jest udostępniany dla każde ostrzeżenie.  
@@ -54,7 +52,7 @@ Narzędzie do analizy kodu zarządzanego zawiera ostrzeżenia, które wskazują 
   
 |||  
 |-|-|  
-|[Ostrzeżenia dzięki CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Wyświetla wszystkie ostrzeżenia dzięki CheckId|  
+|[Ostrzeżenia według identyfikatora CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Wyświetla wszystkie ostrzeżenia dzięki CheckId|  
 |[Ostrzeżenia dotyczące kryptografii](../code-quality/cryptography-warnings.md)|Ostrzeżenia, które obsługują bezpieczniejsze biblioteki i aplikacje przy użyciu poprawnego użycia kryptografii.|  
 |[Ostrzeżenia dotyczące projektu](../code-quality/design-warnings.md)|Ostrzeżenia, które obsługują odpowiedniej biblioteki projekt określony przez [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wytyczne dotyczące projektowania.|  
 |[Ostrzeżenia dotyczące globalizacji](../code-quality/globalization-warnings.md)|Ostrzeżenia, które obsługują gotowych do biblioteki i aplikacje.|  

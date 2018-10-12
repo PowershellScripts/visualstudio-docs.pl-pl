@@ -1,7 +1,7 @@
 ---
 title: 'Porady: dołączyć Profiler do aplikacji autonomicznej .NET Framework do zbierania danych współbieżności przy użyciu wiersza polecenia | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fbc944695293c0ead248c61bec5335749a582d9d
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4e68155fc835bd17b2ccc5dcf6f639f060774324
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43231139"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276630"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Porady: dołączanie profilera do aplikacji autonomicznej .NET Framework w celu zbierania danych współbieżności przy użyciu wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [jak: dołączyć Profiler do aplikacji autonomicznej .NET Framework do zbierania danych współbieżności przy użyciu wiersza polecenia](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line).  
-  
 W tym temacie opisano sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] narzędzi wiersza polecenia Profiling Tools, aby dołączyć Profiler do działającej aplikacji autonomicznej (klienta) .NET Framework i zbieranie danych współbieżności procesu i wątku.  
   
 > [!NOTE]

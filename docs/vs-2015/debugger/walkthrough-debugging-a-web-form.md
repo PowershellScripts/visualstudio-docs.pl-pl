@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Debugowanie formularza sieci Web | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aff54238649947f578535dee2b813aa4daa90681
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8cbda461c4472ed020087e7e606b1ab86ddb6b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634165"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275135"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Wskazówki: debugowanie formularzy sieci Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: debugowanie formularzy internetowych](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-web-form).  
-  
 Kroki opisane w tym instruktażu pokazano, jak można debugować [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacja internetowa, znany także jako formularz sieci Web. Pokazuje jak uruchomić i zatrzymać wykonywanie, ustawiać punkty przerwania i sprawdzić zmienne w **Obejrzyj** okna.  
   
 > [!NOTE]

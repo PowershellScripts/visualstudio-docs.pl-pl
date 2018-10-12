@@ -1,7 +1,7 @@
 ---
 title: Idiasymbol::get_length — | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d30c5500ade8c09daf47d3745c572a61c8944b4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a2d4c51f66016293ac5fff334ce1b379e7c865c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679070"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288058"
 ---
 # <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [idiasymbol::get_length —](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-length).  
-  
 Pobiera liczbę bitów lub bajty pamięci używane przez obiekt reprezentowany przez ten symbol.  
   
 ## <a name="syntax"></a>Składnia  
@@ -70,7 +68,7 @@ pSymbol->get_length( &length );
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [Locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md)
+ [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)
 
 
 

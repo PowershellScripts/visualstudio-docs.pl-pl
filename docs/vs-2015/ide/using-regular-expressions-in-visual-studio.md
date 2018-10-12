@@ -1,7 +1,7 @@
 ---
 title: Za pomocą wyrażeń regularnych w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,15 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c74ed503b13e9f5efab3e6bf0df2fab75d34e7cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4edf0add3e29dd7fe4156a220fe0edc60e47f117
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630171"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285470"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Używanie wyrażeń regularnych w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [za pomocą wyrażeń regularnych w programie Visual Studio](https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio).
-
 Visual Studio używa regularnego wyrażenia .NET Framework do znajdowania i zamieniania tekstu. Aby uzyskać więcej informacji o wyrażeniach regularnych programu .NET, zobacz [wyrażeń regularnych programu .NET Framework](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
 
 Przed Visual Studio 2012 Visual Studio używał niestandardowych składni wyrażeń regularnych w oknach Znajdź i Zamień. Zobacz [Visual Studio regularne wyrażenia konwersje](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx) objaśnienia dotyczące jak konwertować niektóre częściej używane niestandardowe znaki regularnych wyrażeń do wersji platformy .NET.

@@ -1,7 +1,7 @@
 ---
 title: 'CA1812: Unikaj klas wewnętrznych bez wystąpień | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4f294126c013b8fc656bf4f08dec17755a657b12
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 250a22c29c359ac099df237bd9a33e4522ee39ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902324"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287301"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Unikaj wewnętrznych klas bez wystąpień
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [CA1812: Unikaj klas wewnętrznych bez wystąpień](https://docs.microsoft.com/visualstudio/code-quality/ca1812-avoid-uninstantiated-internal-classes).
-
 |||
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|

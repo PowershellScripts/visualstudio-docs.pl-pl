@@ -1,7 +1,7 @@
 ---
 title: Wyraz uzupełniania w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd176c232bafd0d5a7a2b6735ba71b2bb490781d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 591967bd9ac61b611b1b062a006a5069fc94d114
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685582"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285301"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Uzupełnianie wyrazów w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [uzupełnianie wyrazów w starszej wersji usługi językowej](https://docs.microsoft.com/visualstudio/extensibility/internals/word-completion-in-a-legacy-language-service).  
-  
 Uzupełnianie wyrazów wypełnia brakujących znaków na częściowo wpisane programu word. Jeśli istnieje tylko jedno możliwe ukończenie, wyraz zostało zakończone, po wprowadzeniu znaku zakończenia. Jeśli wyrazów częściowych pasuje do więcej niż jedną z możliwości, zostanie wyświetlona lista możliwych ukończenia. Znak zakończenia może być dowolny znak, który nie jest używany dla identyfikatorów.  
   
  Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [rozszerzanie usług edytora i języka](../../extensibility/extending-the-editor-and-language-services.md).  

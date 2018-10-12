@@ -1,7 +1,7 @@
 ---
 title: Zalecenia dotyczące pisania szablonów tekstowych T4 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5e9d2bfcd0e036f3775de768edff320dfcf44066
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4d0b435544ffd77292e8cad217247733cac4075
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682147"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272236"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Zalecenia dotyczące pisania szablonów tekstowych T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wytyczne dotyczące szablonów tekstowych T4 pisania](https://docs.microsoft.com/visualstudio/modeling/guidelines-for-writing-t4-text-templates).  
-  
 Te ogólne wytyczne mogą być przydatne w przypadku generowania kodu programu lub innych zasobów aplikacji w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Zasady nie zostały ustalone.  
   
 ## <a name="guidelines-for-design-time-t4-templates"></a>Wytyczne dotyczące szablonów T4 w czasie projektowania  

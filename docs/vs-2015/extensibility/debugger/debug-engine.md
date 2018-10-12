@@ -1,7 +1,7 @@
 ---
 title: Aparat debugowania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89f2c2fafb397246a8a2df8dab7d59a361edc11c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 781712ad9ef199073028b62a3fc5a50b4c2cad77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676603"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282688"
 ---
 # <a name="debug-engine"></a>Aparat debugowania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [aparatu debugowania](https://docs.microsoft.com/visualstudio/extensibility/debugger/debug-engine).  
-  
 Aparat debugowania (DE) współpracuje z interpreter lub systemu operacyjnego w celu dostarczania usług debugowania, takie jak wykonanie kontroli, punkty przerwania i wyrażenie oceny. DE jest odpowiedzialny za monitorowanie stanu debugowanego programu. Aby to osiągnąć, DE używa, niezależnie od metody są dostępne obsługiwane środowisko uruchomieniowe, czy z procesora CPU lub za pomocą interfejsów API dostarczonych przez środowisko uruchomieniowe.  
   
  Na przykład środowisko uruchomieniowe języka wspólnego (CLR) dostarcza mechanizmów monitorowania za pośrednictwem interfejsów ICorDebugXXX uruchomionego programu. DE, który obsługuje środowisko CLR używa odpowiednich interfejsów ICorDebugXXX do śledzenia kodu zarządzanego debugowanego. Następnie przesyła zmiany stanu do Menedżer debugowania sesji (SDM), która przekazuje informacje do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  

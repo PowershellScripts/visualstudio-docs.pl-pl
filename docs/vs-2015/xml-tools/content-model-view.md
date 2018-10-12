@@ -1,7 +1,7 @@
 ---
 title: Widok modelu zawartości | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0f2e73749e76d4449acc2a3debbec6ba8de416dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 406c870f099d2dbb1e60b0088a68e5a5c252b907
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681047"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274407"
 ---
 # <a name="content-model-view"></a>Widok modelu zawartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [widoku modelu zawartości](https://docs.microsoft.com/visualstudio/xml-tools/content-model-view).  
-  
   
 Widok modelu zawartości zapewnia graficzną reprezentację węzłów schematu lokalne i globalne oraz ich składników, w tym proste i złożone typy, elementy, grupy modeli, atrybuty i grupy atrybutów. Komentarze XML i instrukcje przetwarzania nie można wyświetlić w widoku modelu zawartości. Widok modelu zawartości zawiera dwa panele: **obszaru roboczego** panel, który zawiera listę węzłów w [obszar roboczy Projektanta schematu XML](../xml-tools/xml-schema-designer-workspace.md)i powierzchni projektowej tam, gdzie zobaczysz model zawartości schematu węzły, które są wybrane w **obszaru roboczego** panelu. Widok modelu zawartości zawiera również pasek narzędzi Projektanta schematu XML i na pasku nawigacji.  
   

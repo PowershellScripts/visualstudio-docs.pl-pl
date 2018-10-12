@@ -1,7 +1,7 @@
 ---
 title: 'Lista kontrolna: Tworzenie nowych typów projektów | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f73462d32e0b047e0b2427646cfc5a3709c5e78a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8047ea1aeb6a163a627f9198ca3f6731419949ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629399"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285990"
 ---
 # <a name="checklist-creating-new-project-types"></a>Lista kontrolna: tworzenie nowych typów projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Lista kontrolna: tworzenie nowych typów projektów](https://docs.microsoft.com/visualstudio/extensibility/internals/checklist-creating-new-project-types).  
-  
 Należy wykonać kilka zadań, aby utworzyć nowy typ projektu. Poniższa lista kontrolna zawiera przewodnik z tymi zadaniami.  
   
 1.  Zaprojektuj funkcjonalność nowego typu projektu. Aby uzyskać więcej informacji, zobacz [decyzje projektowe dotyczące typów projektu](../../extensibility/internals/project-type-design-decisions.md).  

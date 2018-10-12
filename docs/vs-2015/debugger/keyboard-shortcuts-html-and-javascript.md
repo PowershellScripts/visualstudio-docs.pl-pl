@@ -1,7 +1,7 @@
 ---
 title: Skróty klawiaturowe (HTML i JavaScript) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b35a13c09c4d846088bb1f86bbea28193bd7e07b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57a808a8c94780f32bdb33fed948be816872150c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634053"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271638"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Skróty klawiaturowe (HTML i JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [skróty klawiaturowe (HTML i JavaScript)](https://docs.microsoft.com/visualstudio/debugger/keyboard-shortcuts-html-and-javascript).  
-  
 Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  Skróty klawiaturowe w programie Visual Studio do debugowania aplikacji Store przy użyciu języków HTML i JavaScript.  
@@ -68,7 +66,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
 ## <a name="see-also"></a>Zobacz też  
  [Szybki Start: Debugowanie HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Szybki Start: Debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+ [Szybki start: debugowanie kodu JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
 
 
 

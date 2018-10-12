@@ -1,7 +1,7 @@
 ---
 title: Architektura wtyczki kontroli źródła | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15446ac6ed0da57775416abfbe2ee737bc2fe663
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 885e761cc23d6dac86882943bf15401586acc656
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681550"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282350"
 ---
 # <a name="source-control-plug-in-architecture"></a>Architektura wtyczki kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [architektura wtyczki kontroli źródła](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-plug-in-architecture).  
-  
 Można dodać Lepsza obsługa kontroli źródła do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE) przez implementację i dołączanie wtyczki kontroli źródła. Łączy się wtyczka do kontroli źródła za pomocą dobrze zdefiniowanych interfejsu API wtyczki kontroli źródła z IDE. IDE udostępnia funkcje kontroli wersji z systemu kontroli źródła, zapewniając interfejs użytkownika (UI), który składa się z poleceń menu i paski narzędzi. Wtyczka do kontroli źródła implementuje funkcji kontroli źródła.  
   
 ## <a name="source-control-plug-in-resources"></a>Zasoby dotyczące wtyczki kontroli źródła  

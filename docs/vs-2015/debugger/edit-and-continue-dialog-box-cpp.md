@@ -1,7 +1,7 @@
 ---
 title: Edytuj i Kontynuuj — okno dialogowe (C++) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 364538c4c4b3d485d136ddfbe4acf6de81228e4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4faa19868f3520a761b40419234ce7a77125a914
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632958"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280181"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Edytuj i Kontynuuj — okno dialogowe (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Edytuj i Kontynuuj okna dialogowego pole (C++)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-dialog-box-cpp).  
-  
 Edytuj i Kontynuuj nie może zastosować zmiany wprowadzone w kodzie natywnym. Może to być tymczasowa sytuacja. Czasami Edytuj i Kontynuuj nie można zastosować zmian w kodzie macierzystym natychmiast, ale można stosować je później, podczas sesji debugowania (na przykład po bieżącym wywołaniu procedury wykonywania teraz). Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj](../debugger/edit-and-continue.md).  
   
  Możesz edytować kod, aby naprawić ten błąd nadal debugowania, Zatrzymaj debugowanie i naprawianie kodu, lub zignorować błąd i kontynuować debugowanie. Jeśli będziesz kontynuować bez wprowadzania poprawki zmian w kodzie nie zostaną zastosowane natychmiast.  

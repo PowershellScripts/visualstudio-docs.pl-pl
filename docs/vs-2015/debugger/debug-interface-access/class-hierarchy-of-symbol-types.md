@@ -1,7 +1,7 @@
 ---
 title: Klasa Hierarchia typów symboli | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35db9ca51285e10310a7fcee0c6db32dd9dff4a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6fc7ee76ae8f7b1490d61cc0cc0022b719b0d7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679190"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284040"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Hierarchia klas typów symboli
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [symboli typów klasy hierarchii](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/class-hierarchy-of-symbol-types).  
-  
 W poniższej tabeli opisano typy symbol w hierarchii klas.  
   
 ## <a name="symbol-types"></a>Typów symboli  

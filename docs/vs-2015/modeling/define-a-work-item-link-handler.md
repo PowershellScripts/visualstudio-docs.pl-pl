@@ -1,7 +1,7 @@
 ---
 title: Definiowanie procedury obsługi łącza elementu roboczego | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 73a0a71e50360f7c70b7f4e466d6000333c3b89e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eae89672a6fcbf56dcd2426547e1fb528c270db2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683116"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290423"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definiowanie procedury obsługi łącza elementu roboczego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [definiowanie procedury obsługi łącza elementu roboczego](https://docs.microsoft.com/visualstudio/modeling/define-a-work-item-link-handler).  
-  
 Można tworzyć rozszerzenia programu Visual Studio Integration które reaguje, gdy użytkownik tworzy lub usuwa łącze między elementem modelu UML i elementu roboczego. Na przykład gdy użytkownik wybierze opcję połączenia nowego elementu roboczego do elementu modelu, kod może zainicjować pola elementu roboczego z wartości w modelu.  
   
 ## <a name="set-up-a-uml-extension-solution"></a>Skonfiguruj rozwiązanie rozszerzenia UML  

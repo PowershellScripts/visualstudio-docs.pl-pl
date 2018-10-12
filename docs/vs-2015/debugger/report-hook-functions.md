@@ -1,7 +1,7 @@
 ---
 title: Raport funkcji punktów zaczepienia | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b9a87a9efe91c8a3739b88a39fac5c391218833
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 557790edc774bab9db43830a4f5fc3e21cfc9758
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680077"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279451"
 ---
 # <a name="report-hook-functions"></a>Raportowanie funkcji punktów zaczepienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [raportowanie funkcji punktów zaczepienia](https://docs.microsoft.com/visualstudio/debugger/report-hook-functions).  
-  
 Raport funkcji podłączania zainstalowane za pomocą [_CrtSetReportHook](http://msdn.microsoft.com/library/1ae7c64f-8c84-4797-9574-b59f00f7a509), jest wywoływana za każdym razem [_CrtDbgReport](http://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) generuje raport debugowania. Używając go, między innymi do filtrowania raportów skoncentrować się na określonych typów alokacji. Funkcja podłączania raport powinien mieć prototypu, jak pokazano poniżej:  
   
 ```  

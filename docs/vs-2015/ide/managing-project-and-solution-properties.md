@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie właściwościami projektów i rozwiązań | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bca50ff8128782bda1841120996f3f3dda6d4ad2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43b46fc40da93352c4748662b66df91f0d25802b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630495"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290553"
 ---
 # <a name="managing-project-and-solution-properties"></a>Zarządzanie właściwościami projektów i rozwiązań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [właściwościami Zarządzanie projektów i rozwiązań](https://docs.microsoft.com/visualstudio/ide/managing-project-and-solution-properties).  
-  
 Projekty mają właściwości, które zarządzają wiele aspektów kompilacji, debugowanie, testowanie i wdrażanie. Niektóre właściwości są wspólne dla wszystkich typów projektów, a niektóre są unikatowe dla określonych języków lub platform. Masz dostępu do właściwości projektu, kliknij prawym przyciskiem myszy węzeł projektu w Eksploratorze rozwiązań i wybierając pozycję właściwości lub wpisując właściwości w **szybkiego uruchamiania** pola wyszukiwania na pasku menu.  
   
  ![Menu kontekstowego projektu](../ide/media/vs2015-proj-prop-menu.gif "vs2015_proj_prop_menu")  

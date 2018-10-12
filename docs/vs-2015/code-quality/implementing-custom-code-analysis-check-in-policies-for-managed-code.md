@@ -1,7 +1,7 @@
 ---
 title: Implementowanie zasad ewidencjonowania analizy kodu niestandardowego dla zarządzanego kodu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6f0fe69b8afd4a33a783126b6006cbbb5545ba3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689120"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268973"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Wdrażanie niestandardowych zasad ewidencjonowania analizy kodu dla kodu zarządzanego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Implementowanie analizy kodu niestandardowe zasady ewidencjonowania dla zarządzanego kodu](https://docs.microsoft.com/visualstudio/code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code).  
-  
 Analiza kodu, że zasady ewidencjonowania określa zestaw reguł, które członkowie zespołu projektu należy uruchomić na kod źródłowy, przed jego zaewidencjonowaniem do systemu kontroli wersji. Firma Microsoft udostępnia zestaw standardu *zestawów reguł* reguł analizy kodu w tej grupie, do obszarów funkcjonalnych. *Zestawy reguł niestandardowych zasad ewidencjonowania* określić zbiór reguł analizy kodu, które są specyficzne dla projektu zespołowego. Zestaw reguł są przechowywane w plik .ruleset.  
   
  Zasady ewidencjonowania są ustawiane na poziomie projektu zespołu i określone przez lokalizację pliku .ruleset w drzewie kontroli wersji. Nie istnieją żadne ograniczenia dotyczące lokalizacji kontroli wersji team zasad niestandardowego zestawu reguł.  

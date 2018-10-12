@@ -1,7 +1,7 @@
 ---
 title: IDebugActivateDocumentEvent2 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6f37edd7-a48c-4b41-b160-dff9be63a284
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc9a93df7b99fb14f990633fdae58003ac7c04fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e64977af96ebe78a966982c429efccdab369ddcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682981"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288109"
 ---
 # <a name="idebugactivatedocumentevent2"></a>IDebugActivateDocumentEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [IDebugActivateDocumentEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugactivatedocumentevent2).  
-  
 Aparat debugowania (DE) używa tego interfejsu, aby zażądać dokumentu do załadowania.  
   
 ## <a name="syntax"></a>Składnia  
@@ -48,7 +46,7 @@ IDebugActivateDocumentEvent2 : IUnknown
   
 |Metody|Opis|  
 |-------------|-----------------|  
-|[Getdocument —](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|Pobiera dokument, aby aktywować.|  
+|[GetDocument](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocument.md)|Pobiera dokument, aby aktywować.|  
 |[GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)|Pobiera kontekst dokumentu, który opisuje sytuację, w tym dokumencie.|  
   
 ## <a name="remarks"></a>Uwagi  

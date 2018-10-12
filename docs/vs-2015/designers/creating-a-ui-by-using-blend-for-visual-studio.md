@@ -1,7 +1,7 @@
 ---
 title: Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8609163dadcfc6425874c86c4aaf49f9452401ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 206664ef95d7eda5d906bf62599819a92fc6506f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682329"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289903"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-blend-for-visual-studio).  
-  
 Program Blend for Visual Studio ułatwia projektowanie oparte na XAML Windows pulpitu, sieci web, [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx), i [Windows Store](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) aplikacji. Zapewnia takie samo środowisko projektowania podstawowe XAML w co program Visual Studio i dodaje projektantów wizualnych dotyczące zaawansowanych zadań, takich jak animacjom i zachowaniom.  
   
  Ponieważ program Blend for Visual Studio jest dostarczany jako część pakietu Visual Studio, nie trzeba go pobrać. Potrzebny ją wybrać w Instalatorze programu Visual Studio dla niego, można zainstalować w systemie.  
@@ -133,7 +131,7 @@ Program Blend for Visual Studio ułatwia projektowanie oparte na XAML Windows pu
  [Wstawianie kontrolek i modyfikowanie ich zachowania](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md)   
  [Animowanie obiektów](../designers/animate-objects-in-xaml-designer.md)   
  [Rysowanie kształtów i ścieżek](../designers/draw-shapes-and-paths.md)   
- [Projektowanie XAML w programie Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)
+ [Projektowanie XAML w programach Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)
 
 
 

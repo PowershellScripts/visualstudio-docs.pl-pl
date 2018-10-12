@@ -1,7 +1,7 @@
 ---
 title: Skróty klawiaturowe w Projektancie przepływu pracy | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: dc246b2db0d3a4df28f183b9c06daee2d63c9cc6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 955e942f3e2215fa20a95b2e25c6abddc355fd6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267803"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Skróty klawiaturowe w Projektancie przepływu pracy
 Wszystkie najważniejsze funkcje [!INCLUDE[wfd1](../includes/wfd1-md.md)] może zostać oceniony przez klawiatury.  

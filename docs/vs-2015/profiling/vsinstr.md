@@ -1,7 +1,7 @@
 ---
 title: Narzędzie VSInstr | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 49
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 73a3784b899033f405469f6bff9c5e23d5aaa596
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88e5815abbd9b773db1b6c35f2ecbbf08fd4862f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682885"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291313"
 ---
 # <a name="vsinstr"></a>VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [VSInstr](https://docs.microsoft.com/visualstudio/profiling/vsinstr).  
-  
 Narzędzie VSInstr służy do Instrumentacji danych binarnych. Jest wywoływany przy użyciu następującej składni:  
   
 ```  
@@ -57,7 +55,7 @@ VSInstr [/U] filename [/options]
 |**Pokrycie**|Wykonuje Instrumentację pokrycia. Można go używać tylko z następujących opcji: **pełne**, **OutputPath**, **wykluczyć**, i **Logfile**...|  
 |**pełne**|**Pełne**opcja jest używana, aby wyświetlić szczegółowe informacje na temat procesu instrumentacji.|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|Ukrywa wszystkie lub określone ostrzeżenia.<br /><br /> `Message Number` -numer ostrzeżenia. Jeśli `Message Number` jest pominięty, wszystkie ostrzeżenia są pomijane.<br /><br /> Aby uzyskać więcej informacji, zobacz [ostrzeżenia VSInstr](../profiling/vsinstr-warnings.md).|  
-|**Kontrolka** `:{` **wątku** `&#124;` **procesu** `&#124;` **globalne** `}`|Określa poziom profilowania z następującą kolekcją danych VSInstr opcje sterowania:<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Wstrzymywanie**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Wątek** -Określa funkcje kontroli zbierania danych na poziomie wątku. Profilowanie jest uruchomiona lub zatrzymana tylko dla bieżącego wątku. Nie dotyczy profilowania stan innych wątków. Wartość domyślna to wątku.<br /><br /> **Proces** -Określa funkcje kontroli zbierania danych poziom procesu profilowania. Profilowanie, uruchamia lub zatrzymuje działanie dla wszystkich wątków w bieżącym procesie. Nie wpływa na stan profilowania innych procesów.<br /><br /> **Globalne** -Określa funkcje kontroli danych (między procesami) poziomie globalnym w kolekcji.<br /><br /> Błąd występuje, jeśli nie określisz poziomu profilowania.|  
+|**Kontrolka** `:{` **wątku** `&#124;` **procesu** `&#124;` **globalne** `}`|Określa poziom profilowania z następującą kolekcją danych VSInstr opcje sterowania:<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Wątek** -Określa funkcje kontroli zbierania danych na poziomie wątku. Profilowanie jest uruchomiona lub zatrzymana tylko dla bieżącego wątku. Nie dotyczy profilowania stan innych wątków. Wartość domyślna to wątku.<br /><br /> **Proces** -Określa funkcje kontroli zbierania danych poziom procesu profilowania. Profilowanie, uruchamia lub zatrzymuje działanie dla wszystkich wątków w bieżącym procesie. Nie wpływa na stan profilowania innych procesów.<br /><br /> **Globalne** -Określa funkcje kontroli danych (między procesami) poziomie globalnym w kolekcji.<br /><br /> Błąd występuje, jeśli nie określisz poziomu profilowania.|  
 |**Rozpocznij** `:{` **wewnątrz** `&#124;` **poza metodą** `},funcname`|Ogranicza zbieranie danych do docelowej funkcji i funkcjach podrzędnych wywoływanych przez tę funkcję.<br /><br /> **Wewnątrz** -Wstawia funkcję StartProfile natychmiast po wejściu do funkcji docelowej. Wstawia funkcja StopProfile bezpośrednio przed każdy zwracany w docelowej funkcji.<br /><br /> **Poza metodą** -Wstawia funkcję StartProfile bezpośrednio przed każde wywołanie funkcji docelowej. Wstawia funkcję StopProfile bezpośrednio za każde wywołanie funkcji docelowej.<br /><br /> `funcname` — Nazwa docelowej funkcji.|  
 |**Wstrzymywanie** `:{` **wewnątrz** `&#124;` **poza metodą** `},funcname`|Nie obejmuje zbieranie danych dla docelowej funkcji i funkcji podrzędnych wywołanych przez funkcję.<br /><br /> **Wewnątrz** -Wstawia funkcję SuspendProfile natychmiast po wejściu do funkcji docelowej. Wstawia funkcja ResumeProfile bezpośrednio przed każdy zwracany w docelowej funkcji.<br /><br /> **Poza metodą** -Wstawia funkcję SuspendProfile bezpośrednio przed wejściem do funkcji docelowej. Wstawia funkcję ResumeProfile zaraz po wyjścia z funkcji docelowej.<br /><br /> `funcname` — Nazwa docelowej funkcji.<br /><br /> Jeśli funkcja docelowa zawiera funkcję StartProfile, funkcja SuspendProfile jest wstawiany przed nią. Jeśli funkcja docelowa zawiera funkcję StopProfile, funkcja ResumeProfile jest wstawiany po nim.|  
 |**StartOnly:** `{` **przed** `&#124;` **po** `&#124;` **górnej** `&#124;` **dołu** `},funcname`|Rozpoczyna się zbieranie danych podczas uruchomienia profilowania. Funkcja StartProfile API do wstawienia w określonej lokalizacji.<br /><br /> **Przed** — natychmiast przed wprowadzeniem funkcji docelowej.<br /><br /> **Po** — natychmiast po wyjście funkcji docelowej.<br /><br /> **TOP** — natychmiast po wejściu do funkcji docelowej.<br /><br /> **Dolny** — bezpośrednio przed każdego zwrotu w funkcji docelowej.<br /><br /> `funcname` — Nazwa docelowej funkcji.|  

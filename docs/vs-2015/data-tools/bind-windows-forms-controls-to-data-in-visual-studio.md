@@ -1,7 +1,7 @@
 ---
 title: Powiązywanie kontrolek formularzy Windows Forms z danymi w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce8945fd535f92a15d510a56e9bc39fd178317f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e63d20bc226abe0c0bdf4c77179a94b0d0e6212c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681645"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293673"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek formularzy Windows Forms z danymi w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [formanty powiązania formularzy Windows do danych w programie Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/bind-windows-forms-controls-to-data-in-visual-studio).  
-  
   
 Możesz wyświetlić dane użytkownikom aplikacji przez powiązanie danych do formularzy Windows Forms. Aby utworzyć te formanty powiązane z danymi, można przeciągnąć elementy z **źródeł danych** okna na Windows Forms Designer w programie Visual Studio. W tym temacie opisano niektóre z najbardziej typowych zadań, narzędzi i klasy związane z tworzeniem aplikacji Windows Forms powiązanych z danymi.  
   
@@ -55,11 +53,11 @@ Możesz wyświetlić dane użytkownikom aplikacji przez powiązanie danych do fo
   
 -   [Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych](../data-tools/create-a-windows-form-to-search-data.md)  
   
--   [Tworzenie kontrolki użytkownika formularzy Windows obsługującego proste powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)  
+-   [Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującego proste powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)  
   
--   [Tworzenie kontrolki użytkownika formularzy Windows obsługującego złożone powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)  
+-   [Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującego złożone powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)  
   
--   [Utwórz formant użytkownika Windows Forms, który obsługuje powiązanie danych wyszukiwania](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)  
+-   [Tworzenie kontrolki użytkownika aplikacji Windows Forms obsługującego powiązanie danych wyszukiwania](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)  
   
 -   [Przekazywanie danych między formularzami](../data-tools/pass-data-between-forms.md)  
   
@@ -83,5 +81,5 @@ Możesz wyświetlić dane użytkownikom aplikacji przez powiązanie danych do fo
  Aby wyświetlić i edytować dane tabelaryczne z wielu różnych rodzajów źródeł danych, należy użyć <xref:System.Windows.Forms.DataGridView> kontroli. Można powiązać danych <xref:System.Windows.Forms.DataGridView> przy użyciu <xref:System.Windows.Forms.DataGridView.DataSource%2A> właściwości. Aby uzyskać więcej informacji, zobacz [— informacje o formancie DataGridView](http://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+ [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 

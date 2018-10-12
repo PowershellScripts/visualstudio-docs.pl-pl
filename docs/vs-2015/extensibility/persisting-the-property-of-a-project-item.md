@@ -1,7 +1,7 @@
 ---
 title: Utrwalanie właściwości elementu projektu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 874a147883155fe59acee100e8619cc6c7e57156
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f9094dfd2ffa9edab1b884f2658f74db718ab3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632812"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285106"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Utrwalanie właściwości elementu projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [utrwalanie właściwości elementu projektu](https://docs.microsoft.com/visualstudio/extensibility/persisting-the-property-of-a-project-item).  
-  
 Można utrwalić właściwości dodawane do elementu projektu, takich jak tworzenie pliku źródłowego. Można to zrobić, umieszczając właściwość w pliku projektu.  
   
  Pierwszym krokiem do utrwalenia właściwości w pliku projektu jest uzyskanie hierarchii projektu jako <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interfejsu. Możesz uzyskać ten interfejs, za pomocą automatyzacji lub za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>. Po uzyskaniu interfejsu, służy do określenia, który element projektu jest aktualnie wybrany. Gdy masz identyfikator elementu projektu, możesz użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> można dodać właściwości.  

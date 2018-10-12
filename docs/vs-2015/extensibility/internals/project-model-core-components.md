@@ -1,7 +1,7 @@
 ---
 title: Podstawowe składniki modelu projektu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e0fd5b5963686ac38975c62bab1d8ee93224cf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2819f32993df6215e506ae6612d2716f95780bf8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631903"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283338"
 ---
 # <a name="project-model-core-components"></a>Podstawowe składniki modelu projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [podstawowe składniki modelu projektu](https://docs.microsoft.com/visualstudio/extensibility/internals/project-model-core-components).  
-  
 Rozwiń następujące tabele w modelu projektu. Tabele zawierają krótkie opisy interfejsów i usług określonych w modelu, interfejsy i usługi związane z określonymi obiektami. Ponadto tabele szczegółowo opisano inne interfejsy, które są opcjonalne w tworzenie projektu i konserwację, w zależności od wymagań danego typu określonego projektu.  
   
  Aby uzyskać więcej informacji, zobacz [narzędzi do przeglądania symboli obsługi](../../extensibility/internals/supporting-symbol-browsing-tools.md).  

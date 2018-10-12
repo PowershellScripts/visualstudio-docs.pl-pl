@@ -1,7 +1,7 @@
 ---
 title: Moduł wyliczający kod stanu pliku | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e41a0181c22f8b760156ec41e1e450aa0f3cf740
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 18e8b61c16b3a49d19b7571d529af633f6074d48
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671655"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268388"
 ---
 # <a name="file-status-code-enumerator"></a>Moduł wyliczający kod stanu pliku
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [moduł wyliczający kod stanu pliku](https://docs.microsoft.com/visualstudio/extensibility/file-status-code-enumerator).  
-  
 `SccStatus` Modułu wyliczającego zawiera nazwanych stałych, określające stan pliku w systemie kontroli źródła. To wyliczenie jest używane przez [SccQueryInfo](../extensibility/sccqueryinfo-function.md) i `POPLISTFUNC` funkcji wywołania zwrotnego (zobacz [POPLISTFUNC](../extensibility/poplistfunc.md) Aby uzyskać szczegółowe informacje).  
   
 ## <a name="syntax"></a>Składnia  

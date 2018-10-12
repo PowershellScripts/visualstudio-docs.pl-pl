@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Zarządzanie plikami danych lokalnych w projekcie | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,12 +27,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: b63a90a354935300c705c0bf96ae307e0468b4f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 16e2d38dda97bd8a7f130254b2f23be9f17e0ac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690152"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271378"
 ---
 # <a name="how-to-manage-local-data-files-in-your-project"></a>Porady: zarządzanie plikami danych lokalnych w projekcie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,4 +61,4 @@ Plik lokalnej bazy danych może być uwzględniany jako plik w projekcie. Przy p
   
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki: Łączenie z danymi w pliku lokalnej bazy danych (Windows Forms)](../data-tools/walkthrough-connecting-to-data-in-a-local-database-file-windows-forms.md)   
- [Łączenie z danymi w bazie danych programu Access (formularze Windows)](../data-tools/connect-to-data-in-an-access-database-windows-forms.md)
+ [Łączenie z danymi w bazie danych programu Access (Windows Forms)](../data-tools/connect-to-data-in-an-access-database-windows-forms.md)

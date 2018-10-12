@@ -1,7 +1,7 @@
 ---
 title: Funkcje ułatwień dostępu programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c43e4044b1b5a5414865e2e4458d716a3aec579e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91daab49dae0489fa26b8c941b3983c191c59f0b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630342"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276994"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Ułatwienia dostępu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [dostępności funkcji programu Visual Studio](https://docs.microsoft.com/visualstudio/ide/reference/accessibility-features-of-visual-studio).  
-  
   
 Oprócz funkcji ułatwień dostępu i narzędzi w Windows następujące funkcje ułatwiają programu Visual Studio 2013 dostęp dla osób niepełnosprawnych:  
   
@@ -55,7 +53,7 @@ Oprócz funkcji ułatwień dostępu i narzędzi w Windows następujące funkcje 
   
 -   [Porady i wskazówki związane z ułatwieniami dostępu](../../ide/reference/accessibility-tips-and-tricks.md)  
   
--   [Porady: zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
+-   [Instrukcje: zmiana czcionek i kolorów](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Produkty i usługi firmy Microsoft związane z ułatwieniami dostępu](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

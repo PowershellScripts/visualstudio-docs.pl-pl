@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Dodawanie obsługi przeciągania i upuszczania | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 503231fbae306c198e7c1e728f7c2b63794289b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e163386c7f00f0646bb711617e402a1873e544e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691681"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280530"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Porady: dodawanie obsługi przeciągania i upuszczania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Dodawanie obsługi przeciągania i upuszczania](https://docs.microsoft.com/visualstudio/modeling/how-to-add-a-drag-and-drop-handler).  
-  
 Możesz dodać procedury obsługi zdarzeń przeciągania i upuszczania do DSL, tak, aby użytkownicy elementy można przeciągać do diagramu z innymi diagramami lub z innymi częściami [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Można również dodać procedury obsługi dla zdarzenia takie jak kliknie dwukrotnie. Razem obsługi przeciągania i upuszczania i kliknij dwukrotnie plik, są znane jako *procedury obsługi gestów*.  
   
  W tym temacie omówiono gestów przeciągania i upuszczania, które pochodzą na inne diagramy. Przenoszenie i kopiowanie zdarzenia w obrębie jednego diagramu, należy wziąć pod uwagę alternatywne Definiowanie podklasą `ElementOperations`. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania dotyczącego kopiowania](../modeling/customizing-copy-behavior.md). Można również dostosować definicji DSL.  

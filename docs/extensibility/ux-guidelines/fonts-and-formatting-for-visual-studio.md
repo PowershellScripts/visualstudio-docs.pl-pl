@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b68e103edcd3162b72bc5fddd4d1401b2430df3
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48864001"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273094"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Czcionki i formatowanie dla programu Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Czcionka środowiska
@@ -83,7 +83,7 @@ window.ShowModal()
   
  `ShowModal` Zwraca wartość typu wartość logiczna? (wartość logiczna dopuszczającego wartość null) z `DialogResult`, których można używać w razie potrzeby. Wartość zwracana jest wartość true, jeśli okno dialogowe zostało zamknięte z **OK**.  
   
- Jeśli chcesz wyświetlić niektórych WPF UI, który nie jest wyświetlone okno dialogowe i znajduje się w jego własnej `HwndSource`, np. oknie podręcznym lub okna podrzędnego WPF w Win32/WinForms okna okna nadrzędnego, należy ustawić `FontFamily` i `FontSize` na element główny WPF e lementuj. (Powłoka ustawia właściwości w oknie głównym, ale nie będą dziedziczone ostatnie `HWND`). Powłoka zawiera zasoby, do których można powiązać właściwości, takie jak to:  
+ Jeśli chcesz wyświetlić niektórych WPF UI, który nie jest wyświetlone okno dialogowe i znajduje się w jego własnej `HwndSource`, np. oknie podręcznym lub okna podrzędnego WPF w Win32/WinForms okna nadrzędnego, należy ustawić `FontFamily` i `FontSize` dla elementu głównego elementu WPF. (Powłoka ustawia właściwości w oknie głównym, ale nie będą dziedziczone ostatnie `HWND`). Powłoka zawiera zasoby, do których można powiązać właściwości, takie jak to:  
   
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  

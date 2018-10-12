@@ -1,7 +1,7 @@
 ---
 title: Projektanci działań Messaging | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6c592c748775361f3ed6a746accd0aa30dcc42af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 254b8d819da8cd1d06d21699940c3b118aa75119
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682642"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274758"
 ---
 # <a name="messaging-activity-designers"></a>Projektanci działań Messaging
 Projektanci działań obsługi komunikatów są używane do tworzenia i konfigurowania działań dotyczących komunikatów, które wysyłania i odbierania [!INCLUDE[indigo1](../includes/indigo1-md.md)] wiadomości z poziomu [!INCLUDE[wf](../includes/wf-md.md)] aplikacji. [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] Wprowadza pięciu działań dotyczących komunikatów i [!INCLUDE[wfd1](../includes/wfd1-md.md)] zawiera dwa nowe projektantom szablonów, które umożliwiają zarządzanie komunikatów w przepływie pracy. Tematy zawarte w tej sekcji i wymienione w poniższej tabeli zawierają wskazówki dotyczące sposobu używania [!INCLUDE[wfd2](../includes/wfd2-md.md)] projektantów działań i szablonu.  
@@ -28,9 +28,9 @@ Projektanci działań obsługi komunikatów są używane do tworzenia i konfigur
 |----------------------|-----------------|  
 |[CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)|Tworzy i konfiguruje <xref:System.ServiceModel.Activities.CorrelationScope> działanie, które umożliwia niejawne Zarządzanie wiadomości działania przy użyciu elementu podrzędnego <xref:System.ServiceModel.Activities.CorrelationHandle> obiektu.|  
 |[InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)|Tworzy i konfiguruje <xref:System.ServiceModel.Activities.InitializeCorrelation> działanie, które służy do inicjowania korelacji bez wysyłania i odbierania wiadomości.|  
-|[Odbieranie](../workflow-designer/receive-activity-designer.md)|Tworzy i konfiguruje <xref:System.ServiceModel.Activities.Receive> działania, który odbiera wiadomości z usługi.|  
+|[Receive](../workflow-designer/receive-activity-designer.md)|Tworzy i konfiguruje <xref:System.ServiceModel.Activities.Receive> działania, który odbiera wiadomości z usługi.|  
 |[ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)|Tworzy parę wstępnie skonfigurowane <xref:System.ServiceModel.Activities.Send> i <xref:System.ServiceModel.Activities.ReceiveReply> działań w ramach <xref:System.Activities.Statements.Sequence> działania.|  
-|[Wyślij](../workflow-designer/send-activity-designer.md)|Tworzy i konfiguruje <xref:System.ServiceModel.Activities.Send> działań, która wysyła komunikat do usługi.|  
+|[Send](../workflow-designer/send-activity-designer.md)|Tworzy i konfiguruje <xref:System.ServiceModel.Activities.Send> działań, która wysyła komunikat do usługi.|  
 |[SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)|Tworzy parę wstępnie skonfigurowane <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działań w ramach <xref:System.Activities.Statements.Sequence> działania.|  
 |[TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)|Tworzy i konfiguruje <xref:System.ServiceModel.Activities.TransactedReceiveScope> działania, co umożliwia przepływ transakcji w przepływie pracy.|  
   

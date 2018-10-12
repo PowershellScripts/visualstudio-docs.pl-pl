@@ -1,7 +1,7 @@
 ---
 title: 'CA2108: Przejrzyj zabezpieczenia deklaratywne dla typów wartości | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 90b294d4eca3cd549b2dfe95583fbf30f8371076
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 49159696edd713c85a44e48ee0e79ccd5acf2753
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284586"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Należy przejrzeć zabezpieczenia deklaratywne typów wartościowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [CA2108: Przejrzyj zabezpieczenia deklaratywne dla typów wartości](https://docs.microsoft.com/visualstudio/code-quality/ca2108-review-declarative-security-on-value-types).
-
 |||
 |-|-|
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|

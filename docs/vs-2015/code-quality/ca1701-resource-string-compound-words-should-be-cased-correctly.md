@@ -1,7 +1,7 @@
 ---
 title: 'CA1701: Wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 525f08cfd69b8ebac30b4b3455b71b0ebb16c90e
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e33b73ddc37bb00bc4a095b58a5f7d0832f8e9ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902572"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291164"
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Wyrazy złożone ciągu zasobu należy zapisywać z uwzględnieniem wielkości liter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [CA1701: wyrazy złożone ciągu zasobu powinny mieć prawidłową wielkość liter](https://docs.microsoft.com/visualstudio/code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly).
-
 |||
 |-|-|
 |TypeName|ResourceStringCompoundWordsShouldBeCasedCorrectly|

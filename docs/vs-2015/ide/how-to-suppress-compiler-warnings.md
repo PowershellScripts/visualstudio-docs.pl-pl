@@ -1,7 +1,7 @@
 ---
 title: 'Porady: pomijanie ostrzeżeń kompilatora | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8555c07dc62237ba202487340ad77b5e04a77e4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775808"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286094"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Porady: pomijanie ostrzeżeń kompilatora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: pomijanie ostrzeżeń kompilatora](https://docs.microsoft.com/visualstudio/ide/how-to-suppress-compiler-warnings).  
-  
 Declutter z dziennika kompilacji, określając jeden lub więcej rodzajów ostrzeżenia kompilatora, że nie ma on zawierać. Na przykład użyć tej techniki, aby przejrzeć niektóre, ale nie wszystkie informacje, które jest generowany automatycznie, gdy poziom szczegółowości dziennika kompilacji jest ustawiona na normalny, szczegółowe lub diagnostyki. Aby uzyskać więcej informacji na temat poziomu szczegółowości, zobacz [porady: wyświetlanie, zapisywanie i konfigurowanie plików dziennika kompilacji](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Pomija określone ostrzeżenia dla języka Visual C# lub F #  

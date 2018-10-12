@@ -1,7 +1,7 @@
 ---
 title: Wyliczenia i struktury | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,67 +21,65 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5e72e2756be82232b6ce761e34d579c487ed7ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27f71178f0ce4da3c6085ab6b2510ee9219447f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684038"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284209"
 ---
 # <a name="enumerations-and-structures"></a>Wyliczenia i struktury
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wyliczenia i struktury](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/enumerations-and-structures).  
-  
 Są to wyliczenia i struktury używane przez DIA SDK.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
   
 ## <a name="enumerations"></a>Wyliczenia  
- [Basictype — wyliczenie](../../debugger/debug-interface-access/basictype.md)  
+ [BasicType, wyliczenie](../../debugger/debug-interface-access/basictype.md)  
  Określa podstawowy typ symbolu.  
   
- [Cv_access_e — wyliczenie](../../debugger/debug-interface-access/cv-access-e.md)  
+ [CV_access_e, wyliczenie](../../debugger/debug-interface-access/cv-access-e.md)  
  Określa zakres widoczności (poziom dostępu), funkcji składowych i zmiennych.  
   
- [Cv_call_e — wyliczenie](../../debugger/debug-interface-access/cv-call-e.md)  
+ [CV_call_e, wyliczenie](../../debugger/debug-interface-access/cv-call-e.md)  
  Określa konwencję wywołania funkcji.  
   
- [Cv_cfl_lang — wyliczenie](../../debugger/debug-interface-access/cv-cfl-lang.md)  
+ [CV_CFL_LANG, wyliczenie](../../debugger/debug-interface-access/cv-cfl-lang.md)  
  Określa język kodu źródłowego aplikacji lub połączone modułu.  
   
- [Cv_cpu_type_e — wyliczenie](../../debugger/debug-interface-access/cv-cpu-type-e.md)  
+ [CV_CPU_TYPE_e, wyliczenie](../../debugger/debug-interface-access/cv-cpu-type-e.md)  
  Określa procesor docelowy.  
   
- [Cv_hreg_e — wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md)  
+ [CV_HREG_e, wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md)  
  Określa rejestru docelowego.  
   
- [Datakind — wyliczenie](../../debugger/debug-interface-access/datakind.md)  
+ [DataKind, wyliczenie](../../debugger/debug-interface-access/datakind.md)  
  Wskazuje zakresu określonej wartości danych.  
   
- [Locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md)  
+ [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)  
  Wskazuje rodzaj informacji o lokalizacji zawarte w symbolu.  
   
- [Memorytypeenum — wyliczenie](../../debugger/debug-interface-access/memorytypeenum.md)  
+ [MemoryTypeEnum, wyliczenie](../../debugger/debug-interface-access/memorytypeenum.md)  
  Określa typ pamięci, aby uzyskać dostęp.  
   
- [Namesearchoptions — wyliczenie](../../debugger/debug-interface-access/namesearchoptions.md)  
+ [NameSearchOptions, wyliczenie](../../debugger/debug-interface-access/namesearchoptions.md)  
  Określa opcje wyszukiwania dla nazwy symboli i plików.  
   
- [Stackframetypeenum — wyliczenie](../../debugger/debug-interface-access/stackframetypeenum.md)  
+ [StackFrameTypeEnum, wyliczenie](../../debugger/debug-interface-access/stackframetypeenum.md)  
  Określa typ ramki stosu.  
   
- [Symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md)  
+ [SymTagEnum, wyliczenie](../../debugger/debug-interface-access/symtagenum.md)  
  Określa typ symbolu.  
   
- [Thunk_ordinal — wyliczenie](../../debugger/debug-interface-access/thunk-ordinal.md)  
+ [THUNK_ORDINAL, wyliczenie](../../debugger/debug-interface-access/thunk-ordinal.md)  
  Określa typy thunk.  
   
- [Udtkind — wyliczenie](../../debugger/debug-interface-access/udtkind.md)  
+ [UdtKind, wyliczenie](../../debugger/debug-interface-access/udtkind.md)  
  W tym artykule opisano różne typy zdefiniowane przez użytkownika (UDT).  
   
 ## <a name="structures"></a>Struktury  
- [Diaaddressmapentry — struktura](../../debugger/debug-interface-access/diaaddressmapentry.md)  
+ [DiaAddressMapEntry, struktura](../../debugger/debug-interface-access/diaaddressmapentry.md)  
  W tym artykule opisano wpis z mapy adresów.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  

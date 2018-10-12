@@ -1,7 +1,7 @@
 ---
 title: Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 12551e10640b522f1405cb6a4fa0476f4f7b48c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1edc6e7d66e8b371f38e16052ba26fa61287e398
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678535"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268336"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](https://docs.microsoft.com/visualstudio/modeling/design-time-code-generation-by-using-t4-text-templates).  
-  
 Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i innych plików w Twojej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. Zazwyczaj piszesz szablony, dzięki czemu mogą się różnić kodu, które generują zgodnie z danymi z *modelu*. Model jest pliku lub bazy danych, który zawiera najważniejsze informacje o wymaganiach dotyczących aplikacji.  
   
  Na przykład można mieć modelu, który definiuje przepływ pracy, jako tabelę lub diagram. Z modelu można wygenerować oprogramowania, który wykonuje przepływ pracy. Gdy zmienią się wymagania użytkowników, jest łatwa w celu omówienia nowy przepływ pracy z użytkownikami. Ponowne generowanie kodu z przepływu pracy jest bardziej niezawodną metodą od ręcznego aktualizowania kodu.  

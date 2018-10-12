@@ -1,7 +1,7 @@
 ---
 title: Opcje, Edytor tekstu, C#, formatowanie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97699f8b4e9eaf0082cadecb584f9a8133a76424
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9acd9d882fb2cf0decff4c9f4ab657cf831e74ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685418"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281258"
 ---
 # <a name="options-text-editor-c-formatting"></a>Opcje, edytor tekstu, C#, formatowanie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [opcje, Edytor tekstu, C#, formatowanie](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-csharp-formatting).  
-  
   
 Użyj **formatowanie** okno dialogowe strony właściwości można ustawić opcje formatowania kodu w edytorze kodu. Aby otworzyć to okno dialogowe, kliknij przycisk **opcje** na **narzędzia** menu rozwiń **edytora tekstów**, rozwiń węzeł **C#**, a następnie kliknij przycisk  **Formatowanie**.  
   
@@ -67,7 +65,7 @@ Użyj **formatowanie** okno dialogowe strony właściwości można ustawić opcj
  Wcięcie opcji na **karty** stron dla każdego z języków tylko określić, gdzie edytora kodu umieszcza kursor po naciśnięciu klawisza ENTER na końcu wiersza. Wcięcie opcji w obszarze **formatowanie** są stosowane, gdy kod jest formatowana automatycznie, na przykład po wklejeniu kodu do pliku podczas **dostosować wcięcia przy wklejaniu** jest zaznaczone i kiedy trwa bloku sformatowana został wpisany ręcznie.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ogólne, środowisko, okno dialogowe Opcje](../../ide/reference/general-environment-options-dialog-box.md)
+ [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
 
 
 

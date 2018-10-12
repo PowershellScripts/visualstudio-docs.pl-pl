@@ -1,7 +1,7 @@
 ---
 title: Właściwości elementów w diagramach aktywności UML | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 19
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c50a84f9e3c5425459ea458c3f6bbc282d64b0b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9f2830f66ad7f79a49b096bb489b542124efe6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630948"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269994"
 ---
 # <a name="properties-of-elements-on-uml-activity-diagrams"></a>Właściwości elementów w diagramach aktywności UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [właściwości elementów w diagramach aktywności UML](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-activity-diagrams).  
-  
 Na diagramie aktywności UML każdego elementu na diagramie ma właściwości. Aby wyświetlić właściwości elementu, kliknij prawym przyciskiem myszy element na diagramie lub w **Eksploratora modelu UML** a następnie kliknij przycisk **właściwości**. Właściwości są wyświetlane w **właściwości** okna.  
   
 > [!NOTE]

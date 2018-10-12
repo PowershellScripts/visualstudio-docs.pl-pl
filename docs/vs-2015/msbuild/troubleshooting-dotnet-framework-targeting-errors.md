@@ -1,7 +1,7 @@
 ---
 title: Rozwiązywanie problemów z błędami obiektów docelowych w programie .NET Framework | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0599e6c5e117c6ba9c4f6c0de904284c487910f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acadd858a1327380fc606bed36994ba0dda47169
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673382"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280556"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Rozwiązywanie problemów z błędami obiektów docelowych programu .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Rozwiązywanie problemów z celem błędy programu .NET Framework](https://docs.microsoft.com/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors).  
-  
   
 W tym temacie opisano błędy programu MSBuild, które mogą wystąpić z powodu odwołania problemy i jak można naprawić te błędy.  
   
@@ -68,7 +66,7 @@ W tym temacie opisano błędy programu MSBuild, które mogą wystąpić z powodu
  [Porady: docelowa wersja systemu .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [.NET framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
  [Przeznaczone dla określonej wersji platformy .NET](../ide/targeting-a-specific-dotnet-framework-version.md)   
- [Wielowersyjności kodu w programie](../msbuild/msbuild-multitargeting-overview.md)
+ [Wielowersyjność kodu](../msbuild/msbuild-multitargeting-overview.md)
 
 
 

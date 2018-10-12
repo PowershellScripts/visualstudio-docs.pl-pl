@@ -1,7 +1,7 @@
 ---
 title: 'Porady: wyłączanie procesu hostingu | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2a3c2eee43d333ee7b58907a8471f4be9815bd47
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4ad3742befbf564c7924c520fb560e69037004c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281401"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Porady: wyłączanie procesu hostingu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: wyłączanie procesu hostingu](https://docs.microsoft.com/visualstudio/ide/how-to-disable-the-hosting-process).  
-  
 Wywołania niektórych interfejsów API mogą mieć wpływ na włączenie procesu hostingu. W takich przypadkach zachodzi konieczność wyłączanie procesu hostingu, aby zwracać poprawnych wyników.  
   
 ### <a name="to-disable-the-hosting-process"></a>Aby wyłączyć procesu hostingu  

@@ -1,7 +1,7 @@
 ---
 title: Aktualizowanie wartości właściwości w oknie dialogowym właściwości | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9358e8c3-b9d2-4fd4-aaab-cf48d1526db4
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: 0272ba348e29fb1a2a118a0ff4b0989a2aa1683f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8db48e1f746afa8f8f219935555815587ce5823c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676701"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290488"
 ---
 # <a name="updating-property-values-in-the-properties-window"></a>Aktualizowanie wartości właściwości w oknie dialogowym właściwości
 Istnieją dwa sposoby, aby zachować **właściwości** okna zsynchronizowane ze zmian wartości właściwości. Pierwszy jest wywołanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interfejs, który zapewnia dostęp do funkcji obsługi okien podstawowych, w tym dostęp do i tworzenia okna dokumentów i narzędzi, które są dostarczane przez środowisko. W poniższych krokach opisano ten proces synchronizacji.  

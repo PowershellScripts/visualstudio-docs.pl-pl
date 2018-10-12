@@ -1,14 +1,14 @@
 ---
 title: Analizowanie i modelowanie architektury | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, exploring code
 - Visual Studio Ultimate, visualizing code
@@ -37,18 +37,16 @@ caps.latest.revision: 129
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d2accb12f172cc5a6e4b69026a58a1cc04937ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 070ee6a2f948bc808961e35735fea88882d68880
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633302"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278359"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analizowanie i modelowanie architektury
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [analizowanie i modelowanie architektury](https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture).  
-  
 Upewnij się, że Twoja aplikacja spełnia wymagania użytkowników przy użyciu architektury programu Visual Studio i modelowanie narzędzi do zaprojektowania i modelu aplikacji. Łatwiej zrozumieć istniejący kod programu za pomocą programu Visual Studio wizualizować strukturę kodu, zachowanie i relacje.  
   
  Twórz modele na różnych poziomach szczegółowości w całym cyklu życia aplikacji w ramach procesu tworzenia aplikacji. Śledzenie wymagań, zadań, przypadków testowych, usterek i innych zadań skojarzonych ze swoimi modelami łącząc elementy modelu z elementami roboczymi programu Team Foundation Server i plan rozwoju. Zobacz [scenariusza: zmiana projektu z wykorzystaniem wizualizacji i modelowania](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).  

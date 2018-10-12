@@ -1,7 +1,7 @@
 ---
 title: Karta System.Activities, wybierz elementy przybornika — okno dialogowe | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9c769058aaf86796780645c77b5bc2173db52048
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bed2df94edefdd074fab12244b93c032670f8cec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670814"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292048"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities, karta, Wybieranie elementów przybornika, okno dialogowe
 Ta karta **wybierz elementy przybornika** okno dialogowe wyświetla listę [!INCLUDE[wf](../includes/wf-md.md)] działań, szablonów i elementów dostępnych dla Ciebie. Do wyświetlania tej listy, wybierz **wybierz elementy przybornika** z **narzędzia** menu lub klikając prawym przyciskiem myszy **przybornika** i wybierając polecenie **wybierz elementy**do wyświetlenia **wybierz elementy przybornika** okno dialogowe, a następnie wybierz jego **System.Activities** kartę. Gotowych lista zawiera działania przepływu pracy z zestawów System.Activities, System.ServiceModel.Activities i System.Activities.Core.Presentation; jednak tylko dostarczane przez system działania wyświetlane i działań, dodawać za pośrednictwem innych zestawów, wyświetlana w **przybornika** są zaznaczone domyślnie. Ostatnio dodane działań są automatycznie sprawdzane i są wyświetlane w **przybornika** po kliknięciu **OK** w oknie dialogowym. Ponadto te elementy są wyświetlane w **przybornika** pod nową kategorię, która odnosi się do przestrzeni nazw, gdzie znajduje się działanie / / szablon elementu.  

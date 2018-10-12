@@ -1,7 +1,7 @@
 ---
 title: Specyfikatory w języku C# formatu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27c3dcf59068ca511f52850e328ef186c22b3dfa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6abc97117af62732f659ca469ab757d1ff1cdcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680382"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281194"
 ---
 # <a name="format-specifiers-in-c"></a>Specyfikatory formatu w C# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [specyfikatory formatu w języku C#](https://docs.microsoft.com/visualstudio/debugger/format-specifiers-in-csharp).  
-  
 Można zmienić format wyświetlania wartości w **Obejrzyj** okna przy użyciu specyfikatorów formatu. Możesz również użyć specyfikatorów formatu w **bezpośrednie** oknie **polecenia** okna, a nawet w oknach źródłowych. Jeśli zatrzymasz się na wyrażeniu w tych oknach, wynik pojawi się w poradzie dotyczącej danych. DataTips będzie odzwierciedlać specyfikatora formatu na wyświetlaczu DataTip.  
   
  Aby użyć specyfikatora formatu, wpisz wyrażenie rozdzielanych przecinkami. Po przecinku Dodaj specyfikator odpowiednie.  

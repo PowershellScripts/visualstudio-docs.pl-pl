@@ -1,7 +1,7 @@
 ---
 title: Wprowadzenie do języka Python | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 08e059955a6552323453e08882bc2bcebd0fc586
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5cb04bb01aaa6eb06c5e3c50aa13ab51c136678c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552050"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275291"
 ---
 # <a name="getting-started-with-python"></a>Wprowadzenie do języka Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [języka Python w programie Visual Studio](https://docs.microsoft.com/visualstudio/python/python-in-visual-studio).  
-  
 Narzędzia Python Tools for Visual Studio (narzędzi PTVS), to bezpłatny, [typu open-source](https://github.com/Microsoft/ptvs) dodatek dla programu Visual Studio środowisko zaawansowane Programowanie w języku Python.  
   
 ## <a name="python-the-language"></a>Język Python

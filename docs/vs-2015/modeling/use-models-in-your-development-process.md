@@ -1,14 +1,14 @@
 ---
 title: Używanie modeli w procesie tworzenia aplikacji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
 ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
@@ -16,18 +16,16 @@ caps.latest.revision: 31
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5ff2526d6ff7bb19448674aed043848e760b85e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94185303eeb1d9efef32adf814b23d8cb21360b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690135"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286003"
 ---
 # <a name="use-models-in-your-development-process"></a>Używanie modeli w procesie tworzenia aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [używanie modeli w procesie tworzenia aplikacji](https://docs.microsoft.com/visualstudio/modeling/use-models-in-your-development-process).  
-  
 W programie Visual Studio można użyć modelu, aby pomóc Ci zrozumieć i zmienić systemu, aplikacji lub składnika. Model może pomóc w wizualizacji na świecie, w którym działa system, wyjaśnienia potrzeb użytkowników, zdefiniuj architekturze systemu, analizowanie kodu i upewnij się, że Twój kod spełnia wymagania. Zobacz [wideo Channel 9: poprawa architektury poprzez modelowanie](http://go.microsoft.com/fwlink/?LinkID=252078).  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługuje każdy typ modelu, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  

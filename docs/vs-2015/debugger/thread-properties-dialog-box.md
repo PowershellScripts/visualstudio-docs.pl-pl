@@ -1,7 +1,7 @@
 ---
 title: Okno dialogowe właściwości wątku | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,28 +17,26 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00cf70e0373f6791397234d9a5a329e57a5d46ee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37eee1a82fab77238b992ee391a782c5af34d7d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42670815"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271703"
 ---
 # <a name="thread-properties-dialog-box"></a>Właściwości wątków — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [okno dialogowe właściwości wątku](https://docs.microsoft.com/visualstudio/debugger/thread-properties-dialog-box).  
-  
 Użyj tego okna dialogowego pole dowiedzieć się więcej o określonym wątku. Aby wyświetlić to okno dialogowe, Przenieś fokus do [Widok wątków](../debugger/threads-view.md) okna lub Otwórz [widoku komunikatów](../debugger/messages-view.md) i rozwiń wiadomość. Zaznacz dowolny węzeł wątku w drzewie, a następnie wybierz **właściwości** z **widoku** menu.  
   
  **Ogólne** tylko kartę, wyświetlany jest karta. W systemach operacyjnych Windows 98 i Windows 95 zmodyfikowaną wersję na tej karcie jest wyświetlana.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Karta Ogólne, okno dialogowe właściwości wątku](../debugger/general-tab-thread-properties-dialog-box.md)  
+ [Ogólne, karta, Właściwości wątku, okno dialogowe](../debugger/general-tab-thread-properties-dialog-box.md)  
  Aby dowiedzieć się więcej o wybranym wątku, należy użyć tego okna dialogowego.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Okno dialogowe Wyszukiwanie wątków](../debugger/thread-search-dialog-box.md)  
+ [Wyszukiwanie wątków, okno dialogowe](../debugger/thread-search-dialog-box.md)  
  Umożliwia znalezienie węzła dla określonego wątku w widoku wątków.  
   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  

@@ -1,7 +1,7 @@
 ---
 title: Co&#39;nowego w narzędziach profilowania | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ab7fe2362bbf9779854bb1c79bfb4de9ffd1600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5cb1d89409b38fea4e3745de7a619e913c6122f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290163"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>Co&#39;nowego w narzędziach profilowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [What's New in profilowania](https://docs.microsoft.com/visualstudio/profiling/what-s-new-in-profiling-tools).  
-  
 Aby uzyskać informacji o tym, co nowego w programie Visual Studio 2015 Update 1, debugowanie i Diagnostyka, zobacz [Visual Studio 2015 Update 1 informacje o wersji](https://www.visualstudio.com/news/vs2015-update1-vs#debug).  
   
  Aby uzyskać informacje o tym, co nowego w programie Visual Studio 2015, debugowanie i Diagnostyka, zobacz [Visual Studio 2015 informacje o wersji](https://www.visualstudio.com/news/vs2015-vs#Debug).  

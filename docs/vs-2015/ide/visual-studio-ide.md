@@ -1,7 +1,7 @@
 ---
 title: Visual Studio IDE | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,15 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98d0da464c5c156d959a05410326cebd4cd870f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694103"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292789"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-Najnowszą wersję tego tematu znajduje się w temacie [dokumentacja środowiska IDE programu Visual Studio](https://docs.microsoft.com/visualstudio/ide/index).
-
 Microsoft Visual Studio 2015 jest zestaw narzędzi do tworzenia oprogramowania, na podstawie za pośrednictwem projektu interfejsu użytkownika w fazie planowania, kodowania, testowanie, debugowanie, analizowanie jakości kodu i wydajność, wdrażanie klientów w celu gromadzenia telemetrii użycia. Te narzędzia są przeznaczone do współpracują ze sobą tak jak to możliwe i czy wszystkie narażonych za pomocą zintegrowanego rozwoju środowiska (IDE) Visual Studio.
 
 Visual Studio umożliwia tworzenie wiele rodzajów aplikacji, od prostych sklepu i gier dla klientów mobilnych do dużych, złożonych systemów, które centra power przedsiębiorstwa i danych. Można utworzyć:
@@ -199,14 +196,14 @@ Dane wyjściowe z kompilacji, takie jak komunikaty powodzenia lub błędu są wy
 |||
 |-|-|
 |[Konta użytkowników i aktualizacje](../ide/user-accounts-and-updates.md)|[Personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)|
-|[Porady: poruszanie się w środowisku IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Wprowadzenie do programowania w programie Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
+|[Instrukcje: poruszanie się w środowisku IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|[Wprowadzenie do programowania w programie Visual Studio](../ide/get-started-developing-with-visual-studio.md)|
 |[Znajdowanie rozszerzeń programu Visual Studio i korzystanie z nich](../ide/finding-and-using-visual-studio-extensions.md)|[Rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md)|
 |[Pisanie kodu](../ide/writing-code-in-the-code-and-text-editor.md)|[Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)|
 |[Narzędzia profilowania](../profiling/profiling-tools.md)|[Podnoszenie jakości kodu](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|
 |[Projektowanie interfejsów użytkownika](../designers/designing-user-interfaces.md)|[Analizowanie i modelowanie architektury](../modeling/analyze-and-model-your-architecture.md)|
 |[Kompilowanie i tworzenie](../ide/compiling-and-building-in-visual-studio.md)|[Wdrażanie aplikacji, usług i składników](../deployment/deploying-applications-services-and-components.md)|
 |[Obsługa 64-bitowego środowiska IDE programu Visual Studio](../ide/visual-studio-ide-64-bit-support.md)|[Zabezpieczenia](../ide/security-in-visual-studio.md)|
-|[Przykłady programu Visual Studio](../ide/visual-studio-samples.md)|[Podgląd Pomocy firmy Microsoft](../ide/microsoft-help-viewer.md)|
+|[Przykłady w Visual Studio](../ide/visual-studio-samples.md)|[Podgląd Pomocy firmy Microsoft](../ide/microsoft-help-viewer.md)|
 |[Globalizowanie i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md)|[Informacje o interfejsie użytkownika](../ide/reference/general-user-interface-elements-visual-studio.md)|
 
 ## <a name="see-also"></a>Zobacz też

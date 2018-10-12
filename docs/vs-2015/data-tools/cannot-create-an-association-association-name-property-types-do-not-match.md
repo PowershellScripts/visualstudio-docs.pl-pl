@@ -1,7 +1,7 @@
 ---
 title: Nie można utworzyć skojarzenia &lt;Nazwa skojarzenia&gt; — typy właściwości nie są zgodne. | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6254fd662e1ce021839f1cae5e77de5000453185
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 674a7de3bf3b4988bfd92390305a03c968d1dbe2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679774"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268518"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Nie można utworzyć skojarzenia &lt;Nazwa skojarzenia&gt; — typy właściwości nie są zgodne.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [nie można utworzyć skojarzenia &lt;Nazwa skojarzenia&gt; — typy właściwości nie są zgodne](https://docs.microsoft.com/visualstudio/data-tools/cannot-create-an-association-association-name-property-types-do-not-match).  
-  
   
 Nie można utworzyć skojarzenia \<Nazwa skojarzenia > — Typy właściwości nie są zgodne. Właściwości nie mają pasujących typów: \<nazwy właściwości >.  
   

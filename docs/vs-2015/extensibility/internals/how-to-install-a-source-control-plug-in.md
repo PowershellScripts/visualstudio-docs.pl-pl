@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Instalowanie wtyczki kontroli źródła | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a89244c35c504c3c98ef02e2360ab2daa2f660f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 35150331ed22960bb8556a7b1175e0ed629efca7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678349"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292984"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Porady: Instalowanie wtyczki kontroli źródła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: Instalowanie wtyczki kontroli źródła](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-install-a-source-control-plug-in).  
-  
 Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:  
   
 1.  Utworzyć bibliotekę DLL przy użyciu funkcji zdefiniowanych w sekcji odwołanie interfejsu API wtyczki kontroli źródła w niniejszej dokumentacji.  

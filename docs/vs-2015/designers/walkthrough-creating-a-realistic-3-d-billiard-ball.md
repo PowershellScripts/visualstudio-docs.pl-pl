@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Tworzenie realistycznej kuli Bilardowej w 3D | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f20907e33ba8a0f077c0d68c6fbfebf2fd1d0b44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 303d826a22ff67ec499fcd4e8d59d6a7819a822d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681401"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274121"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Wskazówki: tworzenie realistycznej kuli bilardowej w 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: tworzenie realistycznej kuli Bilardowej 3-](https://docs.microsoft.com/visualstudio/designers/walkthrough-creating-a-realistic-3-d-billiard-ball).  
-  
 W tym instruktażu przedstawiono sposób tworzenia realistycznej kuli bilardowej w 3D przy użyciu programu Shader Designer i edytora obrazów w programie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. 3-wygląd bili odbywa się przez połączenie kilku technik cieniowania z odpowiednimi zasobami tekstury.  
   
  Ten dokument przedstawia te działania:  

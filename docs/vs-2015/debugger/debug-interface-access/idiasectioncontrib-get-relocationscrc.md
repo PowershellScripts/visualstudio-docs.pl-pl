@@ -1,7 +1,7 @@
 ---
 title: Idiasectioncontrib::get_relocationscrc — | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e8bedc41121aed5001751142e57a1bed6c70dcd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ac80f809e2e70ebb4da954593d36b7b52d0a023
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673577"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273822"
 ---
 # <a name="idiasectioncontribgetrelocationscrc"></a>IDiaSectionContrib::get_relocationsCrc
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [idiasectioncontrib::get_relocationscrc —](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc).  
-  
 Pobiera wyboru cyklicznej kontroli nadmiarowości (CRC) przenoszenia informacji w sekcji.  
   
 ## <a name="syntax"></a>Składnia  

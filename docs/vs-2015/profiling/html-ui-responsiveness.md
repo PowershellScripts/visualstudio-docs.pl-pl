@@ -1,7 +1,7 @@
 ---
 title: Czas odpowiedzi interfejsu użytkownika HTML | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 52
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2c40052484cb8ee25cbb7d3ddbc353fd1dacc2c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cfff3a7267d23e424214f49fed5b0577860c0a4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631124"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269103"
 ---
 # <a name="html-ui-responsiveness"></a>Czas odpowiedzi interfejsu użytkownika HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [analizowanie HTML UI responsiveness, w aplikacjach platformy UWP](https://docs.microsoft.com/visualstudio/profiling/html-ui-responsiveness).  
-  
 W tym temacie opisano, jak można wyizolować problemy z wydajnością w aplikacjach przy użyciu Profiler czasu odpowiedzi interfejsu użytkownika, narzędzie wydajność, dostępne dla aplikacji Windows Universal.  
   
  Profiler czasu odpowiedzi interfejsu użytkownika mogą pomóc wyizolować problemy, takie jak problemy dotyczące czasu odpowiedzi interfejsu użytkownika lub platformy efekty uboczne, które zazwyczaj występują z tych objawów:  

@@ -1,7 +1,7 @@
 ---
 title: Tworzenie okna narzędzia obejmujące wiele wystąpień | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca70aa6024f083cfff7de1e2ef687371eca44c8a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb5e058924d62d4c6688c95974774579f8ae81f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286367"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Tworzenie okna narzędzia o wielu wystąpieniach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [tworzenia okna narzędzia obejmujące wiele wystąpień](https://docs.microsoft.com/visualstudio/extensibility/creating-a-multi-instance-tool-window).  
-  
 Można programować okna narzędzi, tak, aby wiele wystąpień może być otwarty jednocześnie. Domyślnie narzędzie systemu windows może mieć tylko jedno wystąpienie, Otwórz.  
   
  Korzystając z okna narzędzia obejmujące wiele wystąpień, można wyświetlić kilka powiązanych źródeł informacji w tym samym czasie. Na przykład można umieścić wiele wierszy <xref:System.Windows.Forms.TextBox> sterowania w oknie narzędzia obejmujące wiele wystąpień, co kilka fragmenty kodu są równocześnie dostępne podczas programowania sesji. Również na przykład możesz umieścić <xref:System.Windows.Forms.DataGrid> kontroli i listy rozwijanej pola w oknie narzędzia obejmujące wiele wystąpień, aby kilku źródeł danych w czasie rzeczywistym, które mogą być śledzone jednocześnie.  

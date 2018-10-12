@@ -1,7 +1,7 @@
 ---
 title: 'Porady: debugowanie pliku wykonywalnego nie jest częścią rozwiązania programu Visual Studio | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36acf39ce892afb2a2601b3149987aa8d7e9f4ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 241a1dbf3af5db726f344ab42d53de3fdd30db3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681714"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278791"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Porady: debugowanie pliku wykonywalnego, który nie jest częścią rozwiązania programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: debugowanie pliku wykonywalnego nie jest częścią rozwiązania programu Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution).  
-  
 Czasami możesz chcieć debugowanie pliku wykonywalnego, który nie jest częścią [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu. Może być wykonywalny, który został utworzony poza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lub wykonywalny, który otrzymałeś od kogoś innego.  
   
  Zwykle rozwiązaniem tego problemu jest uruchomienie pliku wykonywalnego poza programem Visual Studio i dołączenie do niego przy użyciu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] debugera. Aby uzyskać więcej informacji, zobacz[dołączenia do uruchamiania procesów](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  

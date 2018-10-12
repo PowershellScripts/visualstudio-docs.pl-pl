@@ -1,7 +1,7 @@
 ---
 title: Modyfikowanie programu Isolated Shell przy użyciu. Pliku Pkgdef | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f70036f91eb52d85054465e6eea9f82672d851f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3a9b56d946e5a337c5afeb6cdd399c3c7ba24bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679670"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291463"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Modyfikowanie programu Isolated Shell przy użyciu. Pliku Pkgdef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [modyfikowanie izolowane powłoki za pomocą. Pliku Pkgdef](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file).  
-  
 Plik .pkgdef obsługuje ustawienia, które umożliwia dostosowywanie aplikacji isolated shell. Określa wartości, które są tworzone, gdy aplikacja jest zainstalowana na komputerze, na które są przywoływane przez powłokę programu Visual Studio po uruchomieniu aplikacji. Ustawienia są zorganizowane w pliku na podstawie kluczy rejestru dotyczy.  
   
 > [!WARNING]
@@ -136,5 +134,5 @@ Plik .pkgdef obsługuje ustawienia, które umożliwia dostosowywanie aplikacji i
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowywanie programu Isolated Shell](../extensibility/customizing-the-isolated-shell.md)   
- [. Pliki Pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)
+ [Pliki pkgundef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgundef-file.md)
 

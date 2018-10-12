@@ -1,7 +1,7 @@
 ---
 title: Przeglądanie i rozmieszczanie map kodu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,12 +27,12 @@ caps.latest.revision: 91
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 68609861ed864dcd42dedcb7615720f76131932e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 784f36c022f967f59e365ac35912a9e54a81b82c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632454"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281440"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Przeglądanie i rozmieszczanie map kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -305,7 +305,7 @@ Zmień kolejność elementów na mapach kodu, aby ułatwić ich do odczytywania 
     |**To**|**Wybierz opcję**|  
     |------------|----------------|  
     |Dezaktywuj element kodu|**Wyłącz**|  
-    |Usuń code element|**Usuwanie**|  
+    |Usuń code element|**Delete**|  
     |Przenieś styl w górę|**Przenieś w górę**|  
     |Przenieś element kodu w dół|**Przenieś w dół**|  
   

@@ -1,7 +1,7 @@
 ---
 title: Zabezpieczenia, przechowywanie wersji i problemy z manifestami we wdrożeniach ClickOnce | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 1274a636dd49a2ade1f21941d24817a0d54d49c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 77685b2eb6397d1edf9a342c25838fcefac2e619
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678267"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289227"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Zabezpieczenia, przechowywanie wersji i problemy z manifestami we wdrożeniach ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zabezpieczenia, przechowywanie wersji i manifestu problemy we wdrożeniach ClickOnce](https://docs.microsoft.com/visualstudio/deployment/security-versioning-and-manifest-issues-in-clickonce-deployments).  
-  
 Istnieją różne problemy z [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zabezpieczenia, przechowywanie wersji aplikacji i manifestu składni i semantykę, która może spowodować, że [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia nie powiodła się.  
   
 ## <a name="clickonce-and-windows-vista-user-account-control"></a>ClickOnce i kontrola konta użytkownika programu Windows Vista  

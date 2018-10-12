@@ -1,7 +1,7 @@
 ---
 title: Otwieranie modelu UML za pomocą interfejsu API programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b492f7c7bcb1c6b33ee7f07b1f054027057835aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e92ece9a8097071c8d8cef5b77ca9fdb242d677f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678639"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292711"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Otwieranie modelu UML za pomocą interfejsu API programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Otwieranie modelu UML za pomocą interfejsu API programu Visual Studio](https://docs.microsoft.com/visualstudio/modeling/open-a-uml-model-by-using-the-visual-studio-api).  
-  
 Można również otworzyć modele i schematy w interfejsie użytkownika programu Visual Studio za pomocą interfejsu API.  
   
  Jeśli chcesz tylko do odczytu modelu w kodzie programu bez uwidaczniania tego użytkownika, można użyć następujących metod:  

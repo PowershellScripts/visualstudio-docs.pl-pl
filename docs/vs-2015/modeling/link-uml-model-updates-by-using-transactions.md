@@ -1,7 +1,7 @@
 ---
 title: Łączenie aktualizacji modelu UML za pomocą transakcji | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b05f0f1d178099337122cba2213b4bba22d2eead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f63b7df949f87407735c994ffe5ca7aa65fcd29a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678000"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274264"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Łączenie aktualizacji modelu UML za pomocą transakcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [aktualizacji modelu UML łącza za pomocą transakcji](https://docs.microsoft.com/visualstudio/modeling/link-uml-model-updates-by-using-transactions).  
-  
 Po zdefiniowaniu rozszerzenia projektantów UML w programie Visual Studio można zgrupować kilka zmian w pojedynczą transakcję o nazwie *kontekst połączonego cofania*. Aby dowiedzieć się, które wersje programu Visual Studio obsługują modeli UML, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
  Domyślnie każda modyfikacja kodu sprawia, że model może zostać oddzielnie cofnięta przez użytkownika. Na przykład jeśli zdefiniujesz polecenie menu, które zamienia nazwy dwóch klas UML, użytkownik może wywołać polecenie, a następnie wykonać pojedynczą czynność cofnięcia. Czy to cofnie zmianę do jednej nazwy, ale nie drugiej, pozostawiając Twój model w niezamierzonym stanie.  

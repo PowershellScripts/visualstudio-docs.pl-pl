@@ -1,7 +1,7 @@
 ---
 title: 'Instrukcje: zastępowanie parametrów w szablonie | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e7e3fea66b23d86378ff4afb81a7d4f46f5090d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bab1d1fd7cd08813dadefbcbec27dbd84bd7b66b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679269"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279750"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Porady: parametry zastępcze w szablonie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [jak: Zastąp parametry w szablonie](https://docs.microsoft.com/visualstudio/ide/how-to-substitute-parameters-in-a-template).  
-  
 Można zastąpić parametry szablonu, takich jak nazwy klasy, a przestrzenie nazw, gdy plik na podstawie szablonu zostanie utworzona. Aby uzyskać pełną listę parametrów szablonu, zobacz [parametry szablonu](../ide/template-parameters.md).  
   
 ## <a name="procedure"></a>Procedura  

@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Zapisywanie ustawień użytkownika na stronie początkowej | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 213f09b4cef1a3530e4759caf5700630fe3319d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48e5b5bf5fe6128ba25252afcf67a18eff7eb7eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677805"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283665"
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Przewodnik: zapisywanie ustawień użytkownika na stronie początkowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: zapisywanie ustawień użytkownika na stronie sieci uruchomić](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-saving-user-settings-on-a-start-page).  
-  
 Za utrwalanie ustawień użytkownika uzyskać swoją stronę początkową. Dzięki temu przewodnikowi, można utworzyć formant, który zapisuje ustawienie w rejestrze, gdy użytkownik kliknie przycisk, a następnie pobiera ustawienie za każdym razem, gdy ładowania strony początkowej. Ponieważ szablon projektu strona początkowa zawiera kontrolki użytkownika można dostosowywać, a domyślny Start strony XAML wywołuje tę kontrolkę, nie trzeba modyfikować strony początkowej, sam.  
   
  Ustawienia magazynu, który zostanie uruchomiony w ramach tego przewodnika jest wystąpieniem <xref:Microsoft.VisualStudio.Shell.Interop.IVsWritableSettingsStore> interfejs, który odczytuje i zapisuje je w następującej lokalizacji rejestru, gdy jest wywoływana: HKCU\Software\Microsoft\VisualStudio\14.0\\  *CollectionName*  

@@ -1,7 +1,7 @@
 ---
 title: Kodowania i linie podziału | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8fd03dba0dfb13723fcb44d489a7b850aebeb1e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d11bc0743faa9e512fcd144bfef09a84a316531d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679638"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284989"
 ---
 # <a name="encodings-and-line-breaks"></a>Kodowania i linie podziału
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [kodowania i podziały wierszy](https://docs.microsoft.com/visualstudio/ide/encodings-and-line-breaks).  
-  
 W programie Visual Studio można używać **pliku/zaawansowane opcje zapisywania** ma ustawienia, aby określić typ podział wiersza znakami możesz. Można również zmienić kodowanie pliku przy użyciu tych samych ustawień.  
   
 > [!NOTE]

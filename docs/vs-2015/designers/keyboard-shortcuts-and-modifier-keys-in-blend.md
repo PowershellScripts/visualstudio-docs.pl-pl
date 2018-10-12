@@ -1,7 +1,7 @@
 ---
 title: Za pomocą klawiatury klawiaturowe i klawisze modyfikujące w programie Blend | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba02644e3be4aeb5b9d6d1dced8e990065552eee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40970dbbffcb6f20fe605ac07a10ae359e300578
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42691590"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283897"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Skróty klawiaturowe i klawisze modyfikujące w programie Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [klawiatury klawiaturowe i klawisze modyfikujące w programie Blend](https://docs.microsoft.com/visualstudio/designers/keyboard-shortcuts-and-modifier-keys-in-blend).  
-  
 Skróty klawiaturowe można przyspieszyć pracę przez ograniczenie akcji, która będzie wymagać wielu kliknięcia przycisku myszy do jednego klawisza skrótu. Skróty klawiaturowe w [!INCLUDE[blend_first](../includes/blend-first-md.md)] są dostępne w następujących dwóch kategorii:  
   
 -   **Klucze dostępu** klucze dostępu umożliwia dostęp do polecenia menu lub obszar w oknie dialogowym, naciskając klawisz na klawiaturze określonego klucza. Klucze dostępu są identyfikowane przez znaki podkreślenia, które pojawiają się w aktualnie wybranego polecenia lub okno dialogowe.  
@@ -51,7 +49,7 @@ Klawisze skrótów, które pojawiają się obok elementów menu, które są skr�
   
 -   [Klawisze modyfikujące pióro](../designers/pen-tool-modifier-keys-in-blend.md)  
   
--   [Klawisze modyfikujące narzędzie Zaznaczanie bezpośrednie](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+-   [Klawisze modyfikujące narzędzia Wybór bezpośredni](../designers/direct-selection-tool-modifier-keys-in-blend.md)
 
 
 

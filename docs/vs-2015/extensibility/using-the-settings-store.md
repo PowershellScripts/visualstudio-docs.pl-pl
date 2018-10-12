@@ -1,7 +1,7 @@
 ---
 title: Za pomocą Store ustawienia | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b106604455814e8d8ed13a6c6e1eb3a2d8196b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15f0aeda589b101d9d02c9741eabf8b0e1866e4c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688718"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273367"
 ---
 # <a name="using-the-settings-store"></a>Korzystanie z magazynu ustawień
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [przy użyciu Store ustawienia](https://docs.microsoft.com/visualstudio/extensibility/using-the-settings-store).  
-  
 Istnieją dwa rodzaje ustawień magazynów:  
   
 -   Ustawienia konfiguracji, które są tylko do odczytu ustawień programu Visual Studio i pakietu VSPackage. Program Visual Studio scala ustawienia ze wszystkich wygenerowanych plików znanych .pkgdef tego magazynu.  

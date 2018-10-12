@@ -1,7 +1,7 @@
 ---
 title: Tworzenie. Pliki Vsct | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c2efb41474f9eeef29cc389529541ad460d9b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85a30c8987311ea8d6216312533dc70072c96f2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683922"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283676"
 ---
 # <a name="authoring-vsct-files"></a>Tworzenie. Pliki Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [tworzenie. Pliki Vsct](https://docs.microsoft.com/visualstudio/extensibility/internals/authoring-dot-vsct-files).  
-  
 W tym dokumencie przedstawiono sposób tworzenie pliku vsct, aby dodać elementy menu, paski narzędzi i inne elementy interfejsu użytkownika do programu Visual Studio zintegrowane środowisko programistyczne (IDE). Po dodaniu elementów interfejsu użytkownika do pakiet rozszerzeń Visual Studio (pakietu VSPackage), nie ma jeszcze pliku vsct, wykonaj następujące kroki.  
   
  Dla nowych projektów zaleca się użyć szablonu pakiet rozszerzeń Visual Studio, ponieważ generuje on pliku vsct, który w zależności od ustawień, ma już elementy wymagane dla polecenia menu, okna narzędzi lub niestandardowy Edytor. Można zmodyfikować tego pliku vsct do wymagań Twojego pakietu VSPackage. Aby uzyskać więcej informacji na temat sposobu modyfikowania pliku vsct Zobacz przykłady w [rozszerzanie menu i poleceń](../../extensibility/extending-menus-and-commands.md).  

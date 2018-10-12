@@ -1,7 +1,7 @@
 ---
 title: Produkt i pakiet — dokumentacja schematu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7812354ee1de5341838029e2198912840da6f0b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42684755"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271039"
 ---
 # <a name="product-and-package-schema-reference"></a>Produkt i pakiet — odwołanie do schematu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [produkt i pakiet — dokumentacja schematu](https://docs.microsoft.com/visualstudio/deployment/product-and-package-schema-reference).  
-  
 A *pliku produktu* jest manifestu XML opisujący wszystkie zależności zewnętrzne wymagane przez [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji. Przykłady zależności zewnętrznych [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] i Microsoft Data Access Components (MDAC). Plik pakietu jest podobny do pliku produktu, ale jest używana do instalowania składników zależnych od kultury, zależności, takich jak zestawy zlokalizowane, umów licencyjnych i dokumentacji.  
   
  Plik produktu i pakietów składa się z jednej najwyższego poziomu `Product` lub `Package` elementu, z których każdy zawiera następujące elementy.  

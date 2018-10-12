@@ -1,7 +1,7 @@
 ---
 title: Klasy Visual C++ w Projektancie klas | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 884d8cc74ea550c804aa6dd6ac735eb6f70be789
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4193dda70aeda8534b9dc2fa3428ca08a9d89fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630593"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285691"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Klasy Visual C++ w Projektancie klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Visual klasy języka C++ w Projektancie klas](https://docs.microsoft.com/visualstudio/ide/visual-cpp-classes-in-class-designer).  
-  
 Projektant klas obsługuje klasy języka C++ i umożliwia wizualizowanie klas natywnych języka C++ w taki sam sposób jak kształty klasy Visual Basic i Visual C#, z tą różnicą, że klasy C++ może istnieć wiele relacji dziedziczenia. Można rozwinąć kształt klasy, aby wyświetlić więcej pól i metod w klasie lub Zwiń go do oszczędzania przestrzeni dyskowej.  
   
 > [!NOTE]

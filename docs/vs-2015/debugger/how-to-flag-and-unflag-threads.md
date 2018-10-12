@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Oflagowanie i usuwanie oflagowania wątków | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81de0353311d11cf744487d581296500d62ecb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb6c6c3f9c333ef1613f2733a476e7843f7249b4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681199"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289136"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>Porada: Oflagowanie i usuwanie oflagowania wątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [jak: Flaga i usuwanie oflagowania wątków](https://docs.microsoft.com/visualstudio/debugger/how-to-flag-and-unflag-threads).  
-  
 Można flagę wątku, który chcesz poświęcić szczególną uwagę, oznaczając je za pomocą ikony w **wątków**, **stosów równoległych**, **równoległego wyrażenia kontrolnego**, i **procesora GPU Wątki** systemu windows. Ta ikona może pomóc i inne odróżnić oflagowane wątki z innych wątków.  
   
  Oflagowane wątki otrzymają specjalnego traktowania w **wątku** listy na **Lokalizacja debugowania** paska narzędzi. Tej listy można wyświetlić wszystkie wątki lub tylko oflagowane wątki. Gdy Flagowanie wątku, **wątku** listy przełącza się do Pokaż tylko oflagowane wątki, ale można przełączyć go ponownie, aby wyświetlić wszystkie wątki, zgodnie z potrzebami.  
@@ -69,7 +67,7 @@ Można flagę wątku, który chcesz poświęcić szczególną uwagę, oznaczają
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Wskazówki: Debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-multithreaded-application.md)
+ [Przewodnik: debugowanie aplikacji wielowątkowych](../debugger/walkthrough-debugging-a-multithreaded-application.md)
 
 
 

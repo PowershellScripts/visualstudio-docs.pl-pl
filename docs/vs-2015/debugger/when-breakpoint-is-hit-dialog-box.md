@@ -1,7 +1,7 @@
 ---
 title: Gdy punkt przerwania jest okno dialogowe trafień | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 650e390abde6f3ad99e5a0c30591c8d1530df692
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0111f2d6c7204a05d7a62ebef9327d927a5881e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678592"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281778"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Okno dialogowe wyświetlane po osiągnięciu punktu przerwania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [gdy punkt przerwania jest trafień okno dialogowe](https://docs.microsoft.com/visualstudio/debugger/when-breakpoint-is-hit-dialog-box).  
-  
 Z tego okna dialogowego, można dostosować akcję wykonywaną po trafieniu punktu przerwania.  
   
 ## <a name="uielement-list"></a>Lista elementów UI  
@@ -51,7 +49,7 @@ Z tego okna dialogowego, można dostosować akcję wykonywaną po trafieniu punk
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie punktów przerwania](../debugger/using-breakpoints.md)   
- [Korzystanie z atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
+ [Używanie atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)
 
 
 

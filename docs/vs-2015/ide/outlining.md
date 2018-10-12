@@ -1,7 +1,7 @@
 ---
 title: Konspekt | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 939bb5ac1188a54217339c1bf3e9e3a828493d90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af7f854f6e097471cdd744537a4be4cbd1646400
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629812"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282519"
 ---
 # <a name="outlining"></a>Tworzenie konspektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [konspekt](https://docs.microsoft.com/visualstudio/ide/outlining).  
-  
 Można ukryć jakiś kod w widoku, zwijając obszar kodu, aby była ona wyświetlana w obszarze znak plus (+). Zwinięty region jest rozwiniesz, klikając znak plus. (Lub można nacisnąć klawisze CTRL + M + M, aby zwinąć region, a następnie klawisz CTRL + M + M aby go rozwinąć ponownie). Można również zwinąć konspektu region przez dwukrotne kliknięcie każdego wiersza w regionie na marginesie konspektu, który jest wyświetlany z lewej strony kodu. Jako etykietka narzędzia można wyświetlić zawartość Zwinięty region, po najechaniu kursorem na zwinięty region.  
   
  Regiony na marginesie konspektu są również wyróżnione po najechaniu kursorem na marginesie za pomocą myszy. Domyślny kolor wyróżnienia, może wydawać się zamiast Blade, w niektórych konfiguracjach kolorów. Można zmienić w **narzędzia/Opcje/środowisko/czcionki i kolory/Collapsible Region**.  

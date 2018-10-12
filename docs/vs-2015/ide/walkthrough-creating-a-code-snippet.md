@@ -1,7 +1,7 @@
 ---
 title: 'Wskazówki: Tworzenie wstawek kodu | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2827b81c15a7ca9eb402c228cfa54635c9fcf2df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682291"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267751"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Wskazówki: tworzenie wstawek kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: tworzenie wstawek kodu](https://docs.microsoft.com/visualstudio/ide/walkthrough-creating-a-code-snippet).  
-  
 Fragment kodu można utworzyć za pomocą tylko kilku krokach. To wszystko, co należy zrobić, Utwórz plik XML, wypełnij odpowiednie elementy i Dodaj swój kod do niego. Możesz również dodać parametry odwołań i zastąpień w kodzie. Można dodać fragment kodu do instalacji programu Visual Studio za pomocą przycisku Importuj w Menedżerze fragmentów kodu (**narzędzia/Manager wstawek kodu**).  
   
 > [!TIP]

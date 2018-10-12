@@ -1,7 +1,7 @@
 ---
 title: Praca w reguł analizy kodu edytorze zestawu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,24 +16,22 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 098cf799ad99eb61a8aa53112eb7e44ee200c6c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd107f2ac0c377765fda2f62f175d7285eb01bb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679988"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269649"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Praca w edytorze zestawu reguł analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Praca w edytorze zestawu reguł analizy kodu](https://docs.microsoft.com/visualstudio/code-quality/working-in-the-code-analysis-rule-set-editor).  
-  
 Z edytora zestawu reguł analizy kodu pozwala określić reguły, które są objęte niestandardowego zestawu reguł i określić akcję. Można również określić akcję do wykonania podczas analizy kodu napotka naruszenie reguły.  
   
 |Akcja|Opis|  
 |------------|-----------------|  
 |**Ostrzeżenie**|Generuje ostrzeżenie w **lista błędów** okna.|  
-|**Błąd**|Generuje błąd w **lista błędów** okna.|  
+|**Error**|Generuje błąd w **lista błędów** okna.|  
 |**Brak**|Wyłącza regułę.|  
   
  W edytorze są wyświetlane reguły w strukturze drzewa, które grupy reguł w regule ustawić pola, które określisz. Aby dodać lub usunąć reguły z zestawu reguł, należy wykonać co najmniej jeden z następujących czynności:  

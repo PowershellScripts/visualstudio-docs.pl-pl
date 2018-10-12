@@ -1,7 +1,7 @@
 ---
 title: 'Przygotowanie debugowania: Aplikacje sieci Web ASP.NET | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20731f5036a89c3c19fbea0d825d67fc02c13cf9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9268cca555486e0c432e60947350bd69202c4fb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681509"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292893"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Przygotowanie debugowania: Aplikacje internetowe ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [przygotowanie debugowania: aplikacje sieci Web ASP.NET](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-aspnet-web-applications).  
-  
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Szablon witryny sieci Web tworzy aplikację formularza sieci Web. Po utworzeniu witryny sieci Web przy użyciu tego szablonu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tworzy ustawienia domyślne dla debugowania. W **właściwości projektu** okno dialogowe, można określić czy ma być stronie startowej strony sieci Web. Po rozpoczęciu debugowania [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]witryny sieci Web przy użyciu tych ustawień domyślnych [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uruchamia program Internet Explorer i dołącza debuger [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] proces roboczy (aspnet_wp.exe lub w3wp.exe). Aby uzyskać więcej informacji, zobacz [wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md).  
   
 ### <a name="to-create-a-web-forms-application"></a>Aby utworzyć aplikację formularzy sieci Web  
@@ -75,7 +73,7 @@ Najnowszą wersję tego tematu znajduje się w temacie [przygotowanie debugowani
  [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)   
  [Podstawowe informacje o debugerze](../debugger/debugger-basics.md)   
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   
- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
+ [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)
 
 
 

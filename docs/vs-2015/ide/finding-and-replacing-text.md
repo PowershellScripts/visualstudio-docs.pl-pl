@@ -1,7 +1,7 @@
 ---
 title: Znajdowanie i zastępowanie tekstu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,18 +42,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c43f98a53746e609f75118fa3a490ef99e6a4adc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4bbe1456632b2707ca548582bb278f7646ec540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692422"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273445"
 ---
 # <a name="finding-and-replacing-text"></a>Znajdowanie i zastępowanie tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Znajdowanie i zastępowanie tekstu](https://docs.microsoft.com/visualstudio/ide/finding-and-replacing-text).  
-  
 Możesz znaleźć i zamienić tekst w Edytor kodu programu Visual Studio, a niektóre oparte na tekście oknie danych wyjściowych, takich jak **Find Results** systemu windows, za pomocą **Znajdź i Zamień** kontroli lub **Znajdź / Zastąp w plikach**. Możesz również wyszukiwać i zamieniać w niektórych oknach projektantów, takich jak projektant XAML i Projektant Windows Forms i okna narzędzi  
   
  Możesz ograniczyć wyszukiwanie do bieżącego dokumentu, bieżącego rozwiązania lub niestandardowego zestawu folderów. Można również określić zestaw rozszerzeń nazw plików dla wyszukiwania wieloplikowego. Można dostosować składnię wyszukiwania za pomocą wyrażeń regularnych programu .NET.  

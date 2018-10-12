@@ -1,7 +1,7 @@
 ---
 title: Obsługa kontroli kodu źródłowego | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01941fdd4899142ae8abb96f57f93e3ebd0b6256
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12a7cb2de6f3710f7b9e608f008d72d3b0b0e777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42681742"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279581"
 ---
 # <a name="supporting-source-control"></a>Obsługa kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Obsługa kontroli źródła](https://docs.microsoft.com/visualstudio/extensibility/internals/supporting-source-control).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] obsługuje wyewidencjonowania pliku, zaewidencjonowania i inne operacje kontroli źródła dla projektu lub edytorze. Jako klient kontroli źródła [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] służy do interakcji z pakietem kontroli źródła, takich jak [!INCLUDE[vsvss](../../includes/vsvss-md.md)], które obejmują archiwizacji, przechowywanie wersji i możliwości kontroli dynamicznie definiowane zestawu plików.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
@@ -39,7 +37,7 @@ Najnowszą wersję tego tematu znajduje się w temacie [Obsługa kontroli źród
  [Szczegóły konfiguracji](../../extensibility/internals/source-control-configuration-details.md)  
  W tym artykule opisano, jak Obsługa kontroli kodu źródłowego zmienia implementacji typu projektu.  
   
- [Dodatkowe wytyczne dotyczące projektach i edytorach](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)  
+ [Dodatkowe wskazówki dotyczące projektów i edytorów](../../extensibility/internals/additional-source-control-guidelines-for-projects-and-editors.md)  
  W tym artykule omówiono najlepsze rozwiązania dotyczące typów projektów i edytorów.  
   
  [Szczegóły środowiska uruchomieniowego](../../extensibility/internals/source-control-runtime-details.md)  

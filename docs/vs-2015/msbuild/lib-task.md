@@ -1,7 +1,7 @@
 ---
 title: Lib — zadanie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dcdcece820af764e627aafc43ef405c627724b68
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 75e15c0230526fc7647144cbde566c693be58cbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775969"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285509"
 ---
 # <a name="lib-task"></a>LIB — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [lib — zadanie](https://docs.microsoft.com/visualstudio/msbuild/lib-task).  
-  
   
 Opakowuje narzędzia Microsoft 32-bitowy Library Manager, lib.exe. Menedżer biblioteki tworzy i zarządza Biblioteka plików obiektów Common Object File Format (COFF). Menedżer biblioteki można tworzyć pliki eksportu i Importuj biblioteki do definicji odwołanie, eksportowane. Aby uzyskać więcej informacji, zobacz [odwołanie do biblioteki LIB](http://msdn.microsoft.com/library/ecc7f643-bbd4-47a3-8dc6-b360f880db91) i [uruchamianie LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).  
   

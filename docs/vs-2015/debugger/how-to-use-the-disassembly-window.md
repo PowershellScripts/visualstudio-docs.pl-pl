@@ -1,7 +1,7 @@
 ---
 title: 'Porady: Korzystanie z okna dezasemblacji | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17747cdab2987a053ef5fff2bc7b8a11867d94fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa414aacc8b7ffc39132157686abee860cac994c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42692349"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287763"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Porady: korzystanie z okna dezasemblacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wyświetlanie kodu dezasemblacji w debugerze programu Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-disassembly-window).  
-  
 Ta funkcja jest dostępna tylko wtedy, gdy włączone jest debugowanie na poziomie adresów **opcje** okno dialogowe **debugowanie** węzła. Nie jest dostępna do debugowania skryptów lub SQL.  
   
  **Dezasemblacji** okno pokazuje kod zestawu odpowiadający instrukcjom utworzonym przez kompilator. Jeśli debugujesz kod zarządzany w instrukcjach zestawu odnoszą się do kodu macierzystego, utworzony przez kompilator Just-in-Time (JIT), a nie języka Microsoft intermediate language (MSIL) generowany przez kompilator programu Visual Studio.  
@@ -85,7 +83,7 @@ Ta funkcja jest dostępna tylko wtedy, gdy włączone jest debugowanie na poziom
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)   
- [Porady: Korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)
+ [Instrukcje: korzystanie z okna rejestrów](../debugger/how-to-use-the-registers-window.md)
 
 
 

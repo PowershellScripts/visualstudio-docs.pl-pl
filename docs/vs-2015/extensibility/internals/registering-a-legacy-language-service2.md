@@ -1,7 +1,7 @@
 ---
 title: Rejestrowanie starszej wersji usługi językowej2 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 59fbdb3417bbeb09a47f1c7a7b0552f230a6d269
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 833dfbfe62a7e8b669460d332ade43f670a4a13e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42678375"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287082"
 ---
 # <a name="registering-a-legacy-language-service"></a>Rejestrowanie starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [rejestrowanie starszej wersji usługi językowej2](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-legacy-language-service2).  
-  
 Poniższe sekcje zawierają listę wpisów rejestru dla różnych języków opcje usługi dostępne w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
  Na liście poniżej wpisy rejestru *katalogu głównego rejestru programu VS* jest równa HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, gdzie *X.Y* jest [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] numer wersji.  

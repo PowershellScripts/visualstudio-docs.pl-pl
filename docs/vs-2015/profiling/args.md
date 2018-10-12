@@ -1,7 +1,7 @@
 ---
 title: Argumenty | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4092a0f75808942eabf170a10f4dcec0836ca337
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 81652fea2dbc552dadeb9789ba06c27d0396e617
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631775"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284431"
 ---
 # <a name="args"></a>Args
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Args](https://docs.microsoft.com/visualstudio/profiling/args).  
-  
 VSPerfCmd.exe **Args** opcja określa listy argumentów, które są przekazywane do aplikacji docelowej z **Uruchom** podpolecenia.  
   
  **Argumenty** mogą być używane tylko podczas **Uruchom** również jest określona w wierszu polecenia. **Argumenty** jest opcjonalny, gdy **Uruchom** jest określony.  

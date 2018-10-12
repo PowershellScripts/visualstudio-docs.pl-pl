@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d0e337ebb97b487adfd79be43ddc1301612ba090
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 25ddfd7c0d45666c4dbbafe98c88dc8f66aac447
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496119"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284053"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Samouczek: Wprowadzenie do języka C# i ASP.NET Core w programie Visual Studio
 
@@ -131,7 +131,7 @@ To rozwiązanie jest zgodna **strona Razor** wzorca projektowego. Jest inny niż
 
 1. Zachowaj okna przeglądarki otwartego i z powrotem do programu Visual Studio.
 
-1. W programie Visual Studio, wybierz **About.cshtml**. Następnie usuń słowo _zmienione_ i w jego miejsce, należy dodać wyrazy _plików i katalogów_.
+1. W programie Visual Studio, wybierz **About.cshtml**. Następnie usuń słowo _dodatkowe_ i w jego miejsce, należy dodać wyrazy _plików i katalogów_.
 
     ![Zmień tekst w pliku About.cshtml](../ide/media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
@@ -197,4 +197,4 @@ Gratulujemy wykonanie kroków tego samouczka! Mamy nadzieję, że wiesz już nie
 
 ## <a name="see-also"></a>Zobacz także
 
-[Publikowanie aplikacji sieci web w usłudze Azure App Service przy użyciu programu Visual Studio](..//deployment/quickstart-deploy-to-azure.md)
+[Publikowanie aplikacji sieci web w usłudze Azure App Service przy użyciu programu Visual Studio](../deployment/quickstart-deploy-to-azure.md)

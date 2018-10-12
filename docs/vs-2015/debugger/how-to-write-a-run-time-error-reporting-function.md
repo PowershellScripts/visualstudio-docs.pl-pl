@@ -1,7 +1,7 @@
 ---
 title: 'Porady: pisanie funkcji raportowania błędów czasu wykonywania | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94bbc0ff7d5ca06ca4ff7f84e1f2cb85c254b197
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5de5ecabc9a07dce04a17394448da0deec65268
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677241"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284820"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function"></a>Porady: pisanie funkcji raportowania błędów czasu wykonywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: pisanie funkcji raportowania błędów czasu wykonywania](https://docs.microsoft.com/visualstudio/debugger/how-to-write-a-run-time-error-reporting-function).  
-  
 Raportów niestandardowych funkcji błędów czasu wykonywania musi mieć tej samej deklaracji jako `_CrtDbgReportW`. Wartość 1 powinien zostać zwrócony do debugera.  
   
  Poniższy przykład pokazuje jak zdefiniować niestandardowe funkcji raportowania.  
@@ -135,7 +133,7 @@ int main()
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Dostosowanie macierzystego sprawdzania w czasie wykonywania](../debugger/native-run-time-checks-customization.md)
+ [Dostosowywanie macierzystego sprawdzania w trakcie wykonywania](../debugger/native-run-time-checks-customization.md)
 
 
 

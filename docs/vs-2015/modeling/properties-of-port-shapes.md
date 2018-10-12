@@ -1,7 +1,7 @@
 ---
 title: Właściwości kształtów portu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eedc86aaa0c711ee847f82bf008164d2f003bb3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dcb6ad091d0b65e5b368f5822659a909e9f4c42a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683931"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290709"
 ---
 # <a name="properties-of-port-shapes"></a>Właściwości kształtów portu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [właściwości kształtów portu](https://docs.microsoft.com/visualstudio/modeling/properties-of-port-shapes).  
-  
 Kształty port służy do reprezentowania klasy domeny w wygenerowanym projektancie.  
   
  Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji o tym, jak korzystać z tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).  

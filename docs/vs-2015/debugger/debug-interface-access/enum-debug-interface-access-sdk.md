@@ -1,7 +1,7 @@
 ---
 title: Wyliczenia (dostępu do interfejsu debugowania zestawu SDK) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18c4868a30a2d363aada73473f7c4a198c76da8b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba4f198ee07337531fe0e8b6fe4ed40b0eac939d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671653"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290696"
 ---
 # <a name="enum-debug-interface-access-sdk"></a>Typ wyliczeniowy (Zestaw SDK dostępu do interfejsu debugowania)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wyliczenia (debugowanie interfejsu Access SDK)](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/enum-debug-interface-access-sdk).  
-  
 Wyliczenia są identyfikowane za pomocą `SymTagEnum` symboli. Każda wartość wyliczenia jest wyświetlany jako element podrzędny klasy z `SymTagConstant` tagu.  
   
 ## <a name="properties"></a>Właściwości  

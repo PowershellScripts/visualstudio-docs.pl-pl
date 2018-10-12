@@ -1,7 +1,7 @@
 ---
 title: Rozwiązywanie problemów z przerwanymi odwołaniami | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6cee6fcd845630b7f980fab602193f845aab458c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682874"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292945"
 ---
 # <a name="troubleshooting-broken-references"></a>Rozwiązywanie problemów z przerwanymi odwołaniami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [rozwiązywanie uszkodzenie odwołań](https://docs.microsoft.com/visualstudio/ide/troubleshooting-broken-references).  
-  
 Jeśli aplikacja próbuje użyć uszkodzone odwołanie, generowany jest błąd wyjątku. Z brakiem, aby odnaleźć składnika, do którego istnieje odwołanie jest podstawowym wyzwalacza dla błędu, ale istnieje kilka sytuacji, w których odwołanie jest uznawana za uszkodzone. Te wystąpienia są wyświetlane na poniższej liście:  
   
 -   Ścieżka odwołania projektu jest niepoprawne lub niepełne.  

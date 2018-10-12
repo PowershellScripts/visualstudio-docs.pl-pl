@@ -1,7 +1,7 @@
 ---
 title: Okno dialogowe Właściwości komunikatu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be3975be4a50fd51e7004d4a587c28a2001d932c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c5fa9f785b3b374e917c62f66c1d49dc6f8232a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42676620"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278911"
 ---
 # <a name="message-properties-dialog-box"></a>Właściwości komunikatu — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [okno dialogowe Właściwości komunikatu](https://docs.microsoft.com/visualstudio/debugger/message-properties-dialog-box).  
-  
 Aby dowiedzieć się więcej na temat szczegółowy komunikat o błędzie, należy użyć tego okna dialogowego. Aby wyświetlić to okno dialogowe, Przenieś fokus do [widoku komunikatów](../debugger/messages-view.md) okna. Zaznacz dowolny węzeł wiadomości w drzewie, a następnie wybierz **właściwości** z **widoku** menu.  
   
  **Ogólne** tylko kartę, wyświetlany jest karta. Dostępne są następujące ustawienia:  
@@ -52,10 +50,10 @@ Aby dowiedzieć się więcej na temat szczegółowy komunikat o błędzie, nale�
  Wartość *lParam* parametru, jeśli istnieje. Ta wartość jest dekodowana, gdy jest wskaźnikiem do ciągu lub struktury.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Okno dialogowe opcji komunikatów](../debugger/message-options-dialog-box.md)  
+ [Opcje komunikatów, okno dialogowe](../debugger/message-options-dialog-box.md)  
  Używany do wybierania, wiadomości, które są wymienione w bieżącym widokiem wiadomości.  
   
- [Okno dialogowe Wyszukiwanie komunikatów](../debugger/message-search-dialog-box.md)  
+ [Wyszukiwanie komunikatów, okno dialogowe](../debugger/message-search-dialog-box.md)  
  Umożliwia znalezienie węzeł, aby uzyskać szczegółowy komunikat o błędzie w widoku komunikatów.  
   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  

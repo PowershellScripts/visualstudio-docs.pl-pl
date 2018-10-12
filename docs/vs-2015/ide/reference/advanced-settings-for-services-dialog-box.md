@@ -1,7 +1,7 @@
 ---
 title: Zaawansowane ustawienia dla usług, okno dialogowe | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea79a5539ad41a4f6e56a6069889e06bc45dde65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 217d1f6f546df94a66c5b7554a7a1710747cf83c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630177"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291879"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Zaawansowane ustawienia dla usług — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Zaawansowane ustawienia dla usług, okno dialogowe](https://docs.microsoft.com/visualstudio/ide/reference/advanced-settings-for-services-dialog-box).  
-  
   
 Usługi aplikacji klienta zapewniają uproszczony dostęp do [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] logowania, ról i usług profilu z aplikacji Windows Forms i Windows Presentation Foundation (WPF). Możesz użyć **usług** strony w **projektanta projektu** do skonfigurowania usług aplikacji klienta. Aby uzyskać więcej informacji na temat **usług** stronie, zobacz [Strona usług, Projektant projektu](../../ide/reference/services-page-project-designer.md).  
   

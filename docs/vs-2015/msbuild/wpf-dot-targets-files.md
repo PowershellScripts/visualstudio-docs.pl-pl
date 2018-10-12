@@ -1,7 +1,7 @@
 ---
 title: WPF. Jest przeznaczony dla plików | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5f258c30ccde971d393a0028ef67b9ea32744e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a8bc74f8aa7bdf47feaff6c7b2896b1a197419f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630471"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281324"
 ---
 # <a name="wpf-targets-files"></a>WPF — Pliki .Targets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [WPF. Jest przeznaczony dla plików](https://docs.microsoft.com/visualstudio/msbuild/wpf-dot-targets-files).  
-  
   
 [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)] Rozszerza [!INCLUDE[TLA#tla_msbuild](../includes/tlasharptla-msbuild-md.md)] przez dodanie zestawu [!INCLUDE[TLA2#tla_wpf](../includes/tla2sharptla-wpf-md.md)]-określonych zadań, które są łączone w pliku .targets specjalne **Microsoft.WinFX.targets**. Ten plik łączy zbiór [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] zadania, które są wymagane do utworzenia [!INCLUDE[TLA2#tla_msbuild](../includes/tla2sharptla-msbuild-md.md)] projektu w [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)].  
   

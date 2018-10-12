@@ -1,7 +1,7 @@
 ---
 title: IPropertyProxyEESide::InitSourceDataProvider | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5156f593-5052-4e3a-9d02-081916fb342d
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9dde77e3468374d0e82aaaf3135407992171c837
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a14bf7dce2caa7406b15afb472203b1cfbd1e075
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683405"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281973"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [IPropertyProxyEESide::InitSourceDataProvider](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider).  
-  
 Inicjuje źródło danych pod kątem tego obiektu i zwraca obiekt zawierający dane pierwotne.  
   
 ## <a name="syntax"></a>Składnia  

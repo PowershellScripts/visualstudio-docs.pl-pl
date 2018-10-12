@@ -1,7 +1,7 @@
 ---
 title: 'Porady: ręczne pakietu rozszerzenia (VSIX wdrożenie) | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: douge
-ms.openlocfilehash: 16803e9019928da5676850899025b190df08a30a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad93bfe700c881977130ba6651bd3e271207a56f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628194"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269311"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Porady: ręczne pakietu rozszerzenia (VSIX wdrożenia)
 Możesz utworzyć pakiet VSIX do opakowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzeń dla wdrożenia. Istnieją trzy sposoby, aby utworzyć pakiet:  

@@ -1,7 +1,7 @@
 ---
 title: Program Visual Studio Wielowersyjnością kodu – Przegląd | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fcc7f1a1fb7b9f348ace817c800a5e353694e96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42685888"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277072"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Wielowersyjność kodu Visual Studio ― Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Visual Studio Wielowersyjnością kodu – Przegląd](https://docs.microsoft.com/visualstudio/ide/visual-studio-multi-targeting-overview).  
-  
 W tej wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można określić wersję [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] jest wymagane dla danej aplikacji. W związku z tym jeśli chcesz używać tej wersji [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do dalszego opracowywania projektu rozpoczętego w starszej wersji, nie należy zmieniać celu struktury. Można również utworzyć rozwiązania zawierającego projekty tego kierują do różnych wersji Framework. Adresowanie pozwala zagwarantować, że aplikacja używa tylko te funkcje, które są dostępne w określonej wersji Framework.  
   
 > [!TIP]

@@ -1,7 +1,7 @@
 ---
 title: Receive, Projektant działań | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: f285a2d900c4f286435e4e06c4db15967f1d7aab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2ccae6d53a44704aeb770fb60e5e2a0c9aecd3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694027"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287238"
 ---
 # <a name="receive-activity-designer"></a>Receive, projektant działań
 **Receive** projektanta działań służy do tworzenia i konfigurowania <xref:System.ServiceModel.Activities.Receive> działania. A <xref:System.ServiceModel.Activities.Receive> działania to działanie, które odbiera komunikat, który może być wbudowany typ taką jak <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> lub <xref:System.Xml.Linq.XElement>, lub kontraktu danych zdefiniowanych przez aplikację, kontraktu komunikatu lub klasy XML, który może być serializowany.  

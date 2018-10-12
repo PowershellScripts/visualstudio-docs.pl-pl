@@ -1,7 +1,7 @@
 ---
 title: Krok 6. Dodawanie czasomierza | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02ec36c9dbb6f659e3cc5c59d7ee82abffcac34d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 577ef28c49d769bac8d979330f181c67b8d35687
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42671055"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293384"
 ---
 # <a name="step-6-add-a-timer"></a>Krok 6. Dodawanie czasomierza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [krok 6: Dodawanie czasomierza](https://docs.microsoft.com/visualstudio/ide/step-6-add-a-timer).  
-  
 Następnie dodaj **czasomierza** formantu do gry w dopasowywanie. Czasomierz czeka określoną liczbę milisekund, a następnie uruchamia zdarzenie, określane jako *znaczników*. Jest to przydatne dla rozpoczęcia czynności lub regularnego powtarzania czynności. W tym przypadku, będziesz używał czasomierza, aby umożliwić graczom wybór dwóch ikon, a jeśli ikony nie będą pasowały, ukryć te dwie ikony po krótkiej chwili.  
   
 ### <a name="to-add-a-timer"></a>Aby dodać czasomierz  

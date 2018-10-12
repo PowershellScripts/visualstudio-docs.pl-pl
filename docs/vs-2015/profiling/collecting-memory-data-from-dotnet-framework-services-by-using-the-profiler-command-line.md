@@ -1,7 +1,7 @@
 ---
 title: Zbieranie danych pamięci z usług .NET Framework przy użyciu wiersza polecenia Profiler | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ee88087c96b05854359a7e6bcfd95b6c09925ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 303e740aa753536a9c15543a03712e7480f41e0d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42628763"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269625"
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Zbieranie danych pamięci z usług .NET Framework przy użyciu wiersza polecenia profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [zbieranie danych pamięci z usług .NET Framework przy użyciu wiersza polecenia Profiler](https://docs.microsoft.com/visualstudio/profiling/collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line).  
-  
 W tej sekcji opisano procedury składowane i opcji zbierania danych pamięci alokacji i obiekt okresu istnienia dla [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] usługi przy użyciu metody próbkowania w wierszu polecenia.  
   
 ## <a name="common-tasks"></a>Typowe zadania  
@@ -54,10 +52,10 @@ W tej sekcji opisano procedury składowane i opcji zbierania danych pamięci alo
 |**Profil aplikacji sieci Web ASP.NET**|-   [Zbieranie danych pamięci](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)|  
   
 ### <a name="analyzing-net-memory-data-views-and-reports"></a>Analizowanie danych pamięci .NET widoków i raportów  
- [Widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md)  
+ [Widoki danych pamięci platformy .NET](../profiling/dotnet-memory-data-views.md)  
   
 ## <a name="reference"></a>Tematy pomocy  
- [Dokumentacja wiersza polecenia narzędzia profilowania](../profiling/command-line-profiling-tools-reference.md)
+ [Narzędzia profilowania wiersza polecenia — dokumentacja](../profiling/command-line-profiling-tools-reference.md)
 
 
 

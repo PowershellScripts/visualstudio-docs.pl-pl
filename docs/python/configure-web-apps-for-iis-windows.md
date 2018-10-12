@@ -12,19 +12,19 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d70ef67902093cd25d9cc038e61d702e7b71e533
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: d333a6561e7fd891e4eaacf0ca1364dfec4a7b19
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101200"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293439"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Konfigurowanie aplikacji sieci web języka Python dla programu IIS
 
 Korzystając z usług Internet Information Services (IIS) jako serwera sieci web na komputerze Windows (w tym [maszyn wirtualnych Windows Azure](/azure/architecture/reference-architectures/n-tier/windows-vm), aplikacji w języku Python musi zawierać konkretne ustawienia w ich *web.config* pliki, który program IIS prawidłowo może przetworzyć kodu w języku Python. Sam komputer musi mieć zainstalowane wraz z wszelkich pakietów, których wymaga aplikacja sieci web języka Python.
 
 > [!Note]
-> Ten artykuł zawiera wcześniej wskazówki dotyczące konfigurowania środowiska Python w usłudze Azure App Service na Windows. Rozszerzenia języka Python i hostów Windows używane w tym scenariuszu zostały zaniechane i zastąpione w usłudze Azure App Service w systemie Linux. Aby uzyskać więcej informacji, zobacz [publikowania aplikacji w języku Python w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+> Ten artykuł zawiera wcześniej wskazówki dotyczące konfigurowania środowiska Python w usłudze Azure App Service na Windows. Rozszerzenia języka Python i hostów Windows używane w tym scenariuszu zostały zaniechane i zastąpione w usłudze Azure App Service w systemie Linux. Aby uzyskać więcej informacji, zobacz [publikowania aplikacji w języku Python w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). Jeśli nadal potrzebujesz informacji, które wcześniej były dostępne dla zarządzania usługi App Service na Windows za pomocą rozszerzenia języka Python, zgłoś problem w dolnej części tego artykułu.
 
 ## <a name="install-python-on-windows"></a>Instalowanie języka Python w Windows
 

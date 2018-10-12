@@ -1,7 +1,7 @@
 ---
 title: Tworzenie wystąpień projektów przy użyciu fabryk projektów | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ae36269de9d9911092bedb87f18f9aff3ca76a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28ca37af638802e3b9efd160b00d1b245d3ae4a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680158"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288343"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>Tworzenie wystąpień projektów przy użyciu fabryk projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [tworzenia projektu wystąpień, przy użyciu fabryk projektów](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-project-instances-by-using-project-factories).  
-  
 Typów projektów w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] użyj *fabryka projektu* do tworzenia wystąpień obiektów projektu. Fabryka projektu jest podobna do fabryki klas standard dla obiektów COM, cocreatable. Obiekty projektu nie są jednak cocreatable: one można tworzyć tylko za pomocą fabryki projektu.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE wywołuje fabryka projektu zaimplementowane w swojej pakietu VSPackage, gdy użytkownik wczytuje istniejący projekt lub tworzy nowy projekt w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Nowy obiekt project zawiera środowisko IDE z wystarczającą ilość informacji, aby wypełnić Eksploratora rozwiązań. Nowy obiekt projektu także interfejsami wymaganymi do obsługi wszystkich odpowiednich akcji UI inicjowane przez środowisko IDE.  

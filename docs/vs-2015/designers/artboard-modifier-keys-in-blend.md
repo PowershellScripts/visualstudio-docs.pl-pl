@@ -1,7 +1,7 @@
 ---
 title: Klawisze modyfikujące obszar kompozycji w programie Blend | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cc6939a0c9630dfde3fa482606afc72f7d6bba12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a730ec3c50880087d9200d5c7003e7b3cb631bca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42690842"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278190"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Klawisze modyfikujące obszar kompozycji w programie Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [klawisze modyfikujące obszar kompozycji w programie Blend](https://docs.microsoft.com/visualstudio/designers/artboard-modifier-keys-in-blend).  
-  
 Niektóre skróty klawiaturowe nie są skojarzone elementy menu, co oznacza, że nie używasz [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] interfejsu użytkownika do ich wykrycie. W poniższej tabeli wymieniono skróty, które modyfikują akcji, takich jak zmiana rozmiaru obiektu.  
   
 |Do tej czynności|Zrób to|  
@@ -52,7 +50,7 @@ Niektóre skróty klawiaturowe nie są skojarzone elementy menu, co oznacza, że
 ## <a name="see-also"></a>Zobacz też  
  [Skróty klawiaturowe](../designers/keyboard-shortcuts-in-blend.md)   
  [Klawisze modyfikujące pióro](../designers/pen-tool-modifier-keys-in-blend.md)   
- [Klawisze modyfikujące narzędzie Zaznaczanie bezpośrednie](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+ [Klawisze modyfikujące narzędzia Wybór bezpośredni](../designers/direct-selection-tool-modifier-keys-in-blend.md)
 
 
 

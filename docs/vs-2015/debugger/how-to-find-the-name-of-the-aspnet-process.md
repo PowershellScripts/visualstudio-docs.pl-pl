@@ -1,7 +1,7 @@
 ---
 title: 'Porady: znajdowanie nazwy procesu ASP.NET | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d29d40f55bc693040d1acce632feba72b0a58d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6b036fdd9f75afc0c9976591ae0df23194b196d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673796"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268908"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Porada: Znajdowanie nazwy procesu ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [porady: znajdowanie nazwy procesu ASP.NET](https://docs.microsoft.com/visualstudio/debugger/how-to-find-the-name-of-the-aspnet-process).  
-  
 Aby dołączyć do uruchomionej [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji, musisz znać nazwę [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu:  
   
 -   Jeśli korzystasz z usług IIS 6.0 i IIS 7.0, nazwa jest w3wp.exe.  
@@ -73,7 +71,7 @@ Aby dołączyć do uruchomionej [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]
  [Wstępne wymagania zdalne debugowanie aplikacji sieci Web](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
  [Wymagania systemowe](../debugger/aspnet-debugging-system-requirements.md)   
  [Przygotowywanie do debugowania ASP.NET](../debugger/preparing-to-debug-aspnet.md)   
- [Debugowanie aplikacji sieci Web i skryptu](../debugger/debugging-web-applications-and-script.md)
+ [Debugowanie aplikacji internetowych i skryptu](../debugger/debugging-web-applications-and-script.md)
 
 
 

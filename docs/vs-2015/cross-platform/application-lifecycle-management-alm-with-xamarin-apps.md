@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie cyklem życia aplikacji (ALM) przy użyciu aplikacji Xamarin | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: b9433539d89f7b47c79461dbf0d488791ff348db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9361c60413192aa91a618ad0c6acc074f23264a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689070"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274641"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Zarządzanie cyklem życia aplikacji (ALM) przy użyciu aplikacji Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Application Lifecycle Management (ALM) przy użyciu aplikacji Xamarin](https://docs.microsoft.com/visualstudio/cross-platform/application-lifecycle-management-alm-with-xamarin-apps).  
-  
   
 Xamarin pozwala tworzyć aplikacje mobilne dla wielu platform przeznaczonych dla systemów Android, iOS i Windows przy użyciu języka C# .NET i Visual Studio. Dużą część kodu można współużytkować na różnych platformach, tylko na niewielkim odsetku przynależności do określonych platform dzięki środowisku Xamarin. Aby uzyskać więcej informacji na środowisku Xamarin, sama zobacz [Visual Studio i Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
   

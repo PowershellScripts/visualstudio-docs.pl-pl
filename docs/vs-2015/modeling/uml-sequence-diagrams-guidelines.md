@@ -1,7 +1,7 @@
 ---
 title: 'UML Sequence Diagrams: Wytyczne dotyczące | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 55
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 388bb32aa871b220768e856e96cced2d5bced694
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d8578d81dd955cc9e7223692be1fe9f63d2bf00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632360"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278684"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagramy sekwencyjne UML: Zalecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [UML Sequence Diagrams: wskazówki dotyczące](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-guidelines).  
-  
 W programie Visual Studio, można narysować *diagram sekwencji* do przedstawiania interakcji. Interakcja to sekwencję wiadomości między wystąpieniami typowych klas, składników, podsystemów lub podmiotów.  
   
  Diagramy sekwencji UML są częścią modelu UML i istnieją tylko w projektach modelowania UML. Aby utworzyć diagram sekwencji UML, na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**. Dowiedz się więcej o [elementów diagramu sekwencji UML](../modeling/uml-sequence-diagrams-reference.md) lub [diagramów modelowania UML](../modeling/edit-uml-models-and-diagrams.md) ogólnie rzecz biorąc. Aby obejrzeć wideo demonstracyjne, zobacz [powstawać interakcje za pomocą diagramów sekwencji (2010)](http://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams).  

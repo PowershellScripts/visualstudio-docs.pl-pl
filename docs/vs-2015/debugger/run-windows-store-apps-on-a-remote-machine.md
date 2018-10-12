@@ -1,7 +1,7 @@
 ---
 title: Uruchom Windows Store apps na komputerze zdalnym z | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 289c7a4153a5a3485d80cc9c0739a37e4e9d6882
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682449"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289578"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Uruchamianie aplikacji ze Sklepu Windows na maszynie zdalnej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Uruchom Windows Store apps na komputerze zdalnym](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).  
-  
 Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content")  
   
  Aplikacja Visual Studio Remote Tools umożliwia uruchamianie, debugowanie, profilowanie i testowanie aplikacji Windows Store, która jest uruchamiana na jednym urządzeniu z drugiego komputera z programem Visual Studio. Uruchamianie na urządzeniu zdalnym może być szczególnie efektywna, gdy komputer z programem Visual Studio nie obsługuje funkcji, które są specyficzne dla aplikacji Windows Store, takich jak dotyk, lokalizacji geograficznej i fizycznej orientacji. W tym temacie opisano procedury, aby skonfigurować i uruchomić sesję zdalną.  
@@ -38,7 +36,7 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
 ##  <a name="BKMK_In_this_topic"></a> W tym temacie  
  Możesz dowiedzieć się:  
   
- [Wymagania wstępne](#BKMK_Wymagania wstępne)  
+ [Wymagania wstępne](#BKMK_Prerequisites)  
   
  [Zabezpieczenia](#BKMK_Security)  
   

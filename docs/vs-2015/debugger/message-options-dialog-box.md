@@ -1,7 +1,7 @@
 ---
 title: Okno dialogowe Opcje komunikatów | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,35 +17,33 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b0960c9fe2454affc38766da42a5035b3d95896d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7824ce5a0e65b762d992392b0d9b0e267d85e236
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632359"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286523"
 ---
 # <a name="message-options-dialog-box"></a>Opcje komunikatów — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [okno dialogowe opcji komunikatów](https://docs.microsoft.com/visualstudio/debugger/message-options-dialog-box).  
-  
 Umożliwia to okno dialogowe Wybierz wiadomości, które są wymienione w [widoku komunikatów](../debugger/messages-view.md). Aby wyświetlić to okno dialogowe, wybierz **komunikaty dziennika** z **Spy** menu.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- [Karta Windows, okno dialogowe Opcje komunikatów](../debugger/windows-tab-message-options-dialog-box.md)  
+ [Okna, karta, Opcje komunikatów, okno dialogowe](../debugger/windows-tab-message-options-dialog-box.md)  
  Umożliwia wybór wszystkich typów wiadomości, aby wyświetlić listę. Obejmuje narzędzia wyszukiwania.  
   
- [Karta komunikaty, okno dialogowe opcji komunikatów](../debugger/messages-tab-message-options-dialog-box.md)  
+ [Komunikaty, karta, Opcje komunikatów, okno dialogowe](../debugger/messages-tab-message-options-dialog-box.md)  
  Używany do wybierania typów wiadomości do wyświetlenia.  
   
- [Karta danych wyjściowych, okno dialogowe opcji komunikatów](../debugger/output-tab-message-options-dialog-box.md)  
+ [Dane wyjściowe, karta, Opcje komunikatów, okno dialogowe](../debugger/output-tab-message-options-dialog-box.md)  
  Służy do określania dane komunikat do wyświetlenia.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
- [Okno dialogowe Wyszukiwanie komunikatów](../debugger/message-search-dialog-box.md)  
+ [Wyszukiwanie komunikatów, okno dialogowe](../debugger/message-search-dialog-box.md)  
  Umożliwia znalezienie węzeł, aby uzyskać szczegółowy komunikat o błędzie w widoku komunikatów.  
   
- [Okno dialogowe Właściwości komunikatu](../debugger/message-properties-dialog-box.md)  
+ [Właściwości komunikatu, okno dialogowe](../debugger/message-properties-dialog-box.md)  
  Umożliwia wyświetlenie właściwości wiadomości wybrany w widoku komunikatów.  
   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  

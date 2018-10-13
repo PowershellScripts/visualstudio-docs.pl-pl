@@ -29,19 +29,16 @@ ms.locfileid: "42624323"
 ---
 # <a name="navigate-code"></a>Przechodzenie do kodu
 
-Visual Studio zapewnia wiele sposobów nawigowania po kodzie w edytorze. Ten temat zawiera podsumowanie różnych sposobów można poruszanie się po kodzie i zawiera łącza do tematów, które bardziej szczegółowo.
+Visual Studio zapewnia wiele sposobów nawigowania po kodzie w edytorze. Ten temat zawiera podsumowanie różnych sposobów na poruszanie się po kodzie i zawiera łącza do tematów, w których sposoby te są opisane bardziej szczegółowo.
 
-## <a name="navigate-backward-and-navigate-forward-commands"></a>Przejdź wstecz i przejdź do przodu poleceń
+## <a name="navigate-backward-and-navigate-forward-commands"></a>Przejdź wstecz i przejdź do przodu
 
-Możesz użyć **Nawiguj wstecz** (**Ctrl**+**-**) i **Nawiguj do przodu** ( **CTRL**+**Shift**+**-**) przycisków na pasku narzędzi, aby przesunąć punkt wstawiania do poprzednich lokalizacji lub powrócić do bardziej ostatnie lokalizacji z poprzedniej lokalizacji. Przyciski te zachowują ostatnich 20 lokalizacji punktu wstawiania. Te polecenia są również dostępne na **widoku** menu, w obszarze **Nawiguj wstecz** i **Nawiguj do przodu**.
-
-![Przyciski nawigacji do przodu i do tyłu](../ide/media/vs2017_nav_buttons.png)
+Możesz użyć **Nawiguj wstecz** (**Ctrl**+**-**) i **Nawiguj do przodu** ( **CTRL**+**Shift**+**-**) na pasku narzędzi, aby przesunąć punkt wstawiania do poprzednich lokalizacji lub powrócić do ostatniej lokalizacji z poprzedniej lokalizacji. Przyciski te zachowują ostatnich 20 lokalizacji. Te polecenia są również dostępne na **widoku** menu, w obszarze **Nawiguj wstecz** i **Nawiguj do przodu**.
 
 ## <a name="navigation-bar"></a>Pasek nawigacyjny
 
-Możesz użyć **pasek nawigacyjny** (pola listy rozwijanej w górnej części okna kodu) aby przejść do kodu w bazie kodu. Można wybrać typu lub elementu członkowskiego, aby przejść bezpośrednio do niego. Pasek nawigacyjny pojawia się, gdy edytujesz kod w języku Visual Basic, C# lub bazy kodu C++. W częściowej klasie mogą być wyłączone elementy członkowskie zdefiniowane poza bieżącym plikiem kodu (są wyświetlane w kolorze szarym).
+Możesz użyć **pasek nawigacyjny** (pola listy rozwijanej w górnej części okna kodu) aby przejść do kodu w bazie kodu. Możesz wybrać typ lub element członkowski, aby przejść bezpośrednio do niego. Pasek nawigacyjny pojawia się, gdy edytujesz kod w języku Visual Basic, C# lub bazy kodu C++. W częściowej klasie mogą być wyłączone elementy członkowskie zdefiniowane poza bieżącym plikiem kodu (są wyświetlane w kolorze szarym).
 
- ![Pasek nawigacyjny kodu](../ide/media/vside_navigation_bar.png)
 
 Można nawigować list rozwijanych w następujący sposób:
 
@@ -144,7 +141,6 @@ W plikach kodu języka Visual Basic należy użyć tych poleceń, aby przenieś�
 
 Funkcja Wizualizator struktury w kodzie edytor *linie prowadnic struktury* -pionowa linia przerywana wiersze, które wskazują, dopasowywanie nawiasów klamrowych w bazie kodu. Dzięki temu je łatwiej zobaczyć, gdzie rozpocząć bloków logicznych i zakończenia.
 
-![Wizualizator struktury](../ide/media/vside_structure_visualizer.png)
 
 Aby wyłączyć linie prowadnic struktury, przejdź do **narzędzia** > **opcje** > **edytora tekstów** > **ogólne** i wyczyść **Pokaż linie prowadnic struktury** pole.
 

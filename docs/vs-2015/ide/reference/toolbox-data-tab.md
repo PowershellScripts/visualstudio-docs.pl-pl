@@ -1,7 +1,7 @@
 ---
 title: Przybornik, karta dane | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b844e3c9caf20cf0fff873c6485b8324a8dbe26b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4359cb1c4623442639552e71d1b1dc902e09963e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677156"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307654"
 ---
 # <a name="toolbox-data-tab"></a>Przybornik, karta Dane
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [przybornik, karta dane](https://docs.microsoft.com/visualstudio/ide/reference/toolbox-data-tab).  
-  
   
 Wyświetla obiekty danych możesz dodać do formularzy i składników. **Danych** karcie **przybornika** pojawia się podczas tworzenia projektu, który ma skojarzony projektanta. **Przybornika** pojawia się domyślnie w programie Visual Studio zintegrowanego środowiska programistycznego; Jeśli chcesz wyświetlić **przybornika**, wybierz opcję **przybornika** z **Widoku** menu.  
   

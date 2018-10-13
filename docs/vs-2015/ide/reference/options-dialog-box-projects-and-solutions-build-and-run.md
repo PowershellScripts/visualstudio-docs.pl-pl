@@ -1,7 +1,7 @@
 ---
 title: Okno dialogowe Opcje, projekty i rozwiązania, skompilować i uruchomić | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 38374893aea62af1b664065edf0ca9195f3dd301
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9669437ff47bc141c898a61c055b3a0de8d5d235
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42689135"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189296"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Okno dialogowe Opcje, projekty i rozwiązania, kompilowanie i uruchamianie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [okno dialogowe Opcje, projekty i rozwiązania, kompilacji i uruchomienia](https://docs.microsoft.com/visualstudio/ide/reference/options-dialog-box-projects-and-solutions-build-and-run).  
-  
   
 W tym oknie można określić maksymalną liczbę projektów Visual C++ lub Visual C#, które można tworzyć w tym samym czasie, niektóre domyślne tworzenia zachowań i niektóre ustawienia dziennika kompilacji. Aby otworzyć **opcje** okna dialogowego wybierz **narzędzia**, **opcje** na pasku menu. Aby uzyskać dostęp do tego zestawu opcji, należy rozwinąć **projekty i rozwiązania**, a następnie wybierz **kompilowanie i uruchamianie**.  
   

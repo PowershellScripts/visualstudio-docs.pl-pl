@@ -1,7 +1,7 @@
 ---
 title: Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,25 +30,23 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d7c4d6e559b60844b7d6661beb29e9d6483d107
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d8f85c0a45c30b6fd80305aa1bb4d76d67e0e6cc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42683055"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270975"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [błędy zdalne debugowanie i rozwiązywanie problemów](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-errors-and-troubleshooting).  
-  
 Mogą wystąpić następujące błędy, podczas próby debugowania zdalnego.  
   
--   [Błąd: Nie można automatycznie krok po kroku do serwera](../debugger/error-unable-to-automatically-step-into-the-server.md)  
+-   [Błąd: Nie można automatycznie wkroczyć do serwera](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
 -   [Błąd: Monitor zdalnego debugowania programu Microsoft Visual Studio (MSVSMON.EXE) prawdopodobnie nie jest uruchomiony na komputerze zdalnym.](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
   
--   [Nie można nawiązać połączenia z programem Microsoft Visual Studio Monitor debugera zdalnego](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
+-   [Nie można połączyć z monitorem zdalnego debugowania programu Microsoft Visual Studio](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
   
 -   [Błąd: Komputer zdalny nie jest wyświetlany w oknie dialogowym połączeń zdalnych](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
   

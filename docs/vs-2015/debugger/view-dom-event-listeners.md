@@ -1,7 +1,7 @@
 ---
 title: Wyświetl odbiorników zdarzeń DOM | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7eeca4964df8e89511b1a077cace83484c35f44d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9d6f5c913cb2868df1af25470eb69f84575ffab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627984"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223304"
 ---
 # <a name="view-dom-event-listeners"></a>Podgląd odbiorników zdarzeń DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [odbiorników zdarzeń DOM widoku](https://docs.microsoft.com/visualstudio/debugger/view-dom-event-listeners).  
-  
 Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
  **Zdarzenia** karta Narzędzia DOM Explorer zawiera zdarzenia, które są skojarzone z elementem modelu DOM. Każdy najwyższy węzeł w **zdarzenia** karta reprezentuje zdarzenie z aktywnych subskrybentów. Najwyższy węzeł zawiera węzły podrzędne, które reprezentują detektory zdarzenia zarejestrowane dla określonego zdarzenia. Oprócz wyświetlania detektorów zdarzeń, ta karta służy do przejdź do lokalizacji odbiornik zdarzeń w kodzie JavaScript. Informacje przedstawione w tym temacie dotyczą aplikacji Store przy użyciu języków HTML i JavaScript.  
@@ -118,7 +116,7 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 ## <a name="see-also"></a>Zobacz też  
  [Szybki Start: Debugowanie HTML i CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Debugowanie stylów CSS przy użyciu Eksploratora modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
- [Debugowanie układu przy użyciu Eksploratora modelu DOM](../debugger/debug-layout-using-dom-explorer.md)
+ [Debugowanie układu przy użyciu eksploratora modelu DOM](../debugger/debug-layout-using-dom-explorer.md)
 
 
 

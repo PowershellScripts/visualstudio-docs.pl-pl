@@ -1,7 +1,7 @@
 ---
 title: Dodawanie adnotacji do struktur i klas | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24ed559321bb63d5f9871193f312356466756429
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3d20769215058cca6e30955ae37ad2a78b6bc7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42679153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287459"
 ---
 # <a name="annotating-structs-and-classes"></a>Dodawanie adnotacji struktur i klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Dodawanie adnotacji do struktur i klas](https://docs.microsoft.com/visualstudio/code-quality/annotating-structs-and-classes).  
-  
 Elementy członkowskie struktury i klasy może dodawać adnotacje, za pomocą funkcji adnotacje, przypominają invariants — jest uznawana za tę prawdziwe dowolnego wywołania funkcji i funkcji wejścia/wyjścia, która obejmuje otaczającej strukturze jako parametr lub wartość wyniku.  
   
 ## <a name="struct-and-class-annotations"></a>Struktury i klasy adnotacji  
@@ -91,7 +89,7 @@ Elementy członkowskie struktury i klasy może dodawać adnotacje, za pomocą fu
  [Dodawanie adnotacji do zachowania blokującego](../code-quality/annotating-locking-behavior.md)   
  [Określanie miejsca i warunków stosowania adnotacji](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Funkcje wewnętrzne](../code-quality/intrinsic-functions.md)   
- [Najlepsze praktyki i przykłady](../code-quality/best-practices-and-examples-sal.md)
+ [Najlepsze rozwiązania i przykłady](../code-quality/best-practices-and-examples-sal.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: Wybieranie typu kodu — okno dialogowe | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87949e312607fd3461e370481aed344c392a02ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e25ff3a0c21288744306455735324d4d72547cb3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688658"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200905"
 ---
 # <a name="select-code-type-dialog-box"></a>Wybór typu kodu — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [okno dialogowe Wybieranie typu kodu](https://docs.microsoft.com/visualstudio/debugger/select-code-type-dialog-box).  
-  
 Aby otworzyć to okno dialogowe, otwórz **dołączyć do procesu** okno dialogowe, a następnie kliknij przycisk **wybierz** przycisku.  
   
  **Automatycznie Określ typ kodu do debugowania**  

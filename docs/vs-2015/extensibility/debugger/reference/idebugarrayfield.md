@@ -1,7 +1,7 @@
 ---
 title: IDebugArrayField | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9667b0a5-4295-46cc-9388-b75c1350be15
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 041064bfd3b3e3b2a8d2a4a82a38cf0eeb70f473
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 346131bcbddd3c3aaf915dfabc606111f379e867
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42677986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208276"
 ---
 # <a name="idebugarrayfield"></a>IDebugArrayField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [IDebugArrayField](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugarrayfield).  
-  
 Ten interfejs w tym artykule opisano symbol tablicy lub typu.  
   
 ## <a name="syntax"></a>Składnia  
@@ -49,8 +47,8 @@ IDebugArrayField : IDebugContainerField
 |Metoda|Opis|  
 |------------|-----------------|  
 |[GetNumberOfElements](../../../extensibility/debugger/reference/idebugarrayfield-getnumberofelements.md)|Pobiera liczbę elementów w tablicy.|  
-|[Getelementtype —](../../../extensibility/debugger/reference/idebugarrayfield-getelementtype.md)|Pobiera typ elementu w tablicy.|  
-|[Getrank —](../../../extensibility/debugger/reference/idebugarrayfield-getrank.md)|Pobiera rangę tablicy.|  
+|[GetElementType](../../../extensibility/debugger/reference/idebugarrayfield-getelementtype.md)|Pobiera typ elementu w tablicy.|  
+|[GetRank](../../../extensibility/debugger/reference/idebugarrayfield-getrank.md)|Pobiera rangę tablicy.|  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  

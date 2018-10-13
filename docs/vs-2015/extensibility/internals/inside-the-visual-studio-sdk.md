@@ -1,7 +1,7 @@
 ---
 title: W programie Visual Studio SDK | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf54468618e12abdd29921677687201f9840a70c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d22e5c1384e4b24bd3b05cb868a40cede19ba1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42631944"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214711"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Wewnątrz zestawu Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wewnątrz programu Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/internals/inside-the-visual-studio-sdk).  
-  
 Ta sekcja zawiera szczegółowe informacje na temat rozszerzenia programu Visual Studio, w tym architektury programu Visual Studio, składniki, usługi, schematów, narzędzia i podobne.  
   
 ## <a name="extensibility-architecture"></a>Rozszerzalność architektury  
@@ -115,7 +113,7 @@ Ogólny widok architektury programu Visual Studio
 ## <a name="visual-studio-services"></a>Usługi Visual Studio  
  Usługa zawiera zbiór interfejsów składników z. Program Visual Studio udostępnia zestaw usług, które mogą być używane przez wszystkie składniki, włącznie z rozszerzeniami. Na przykład usługi Visual Studio umożliwiają okien narzędziowych, aby wyświetlony lub ukryty dynamicznie, Włącz dostęp do pomocy i pasek stanu, w tym także zdarzenia interfejsu użytkownika. Edytor programu Visual Studio udostępnia również usługi, które mogą być importowane przez rozszerzenia edytora. Aby uzyskać więcej informacji, zobacz [Using i dostarczanie usług](../../extensibility/using-and-providing-services.md).  
   
-## <a name="debugger"></a>Debugger  
+## <a name="debugger"></a>Debuger  
  Debuger jest interfejsem użytkownika ze składnikami debugowania specyficznych dla języka. Jeśli utworzono nową usługę językową, należy utworzyć aparatu debugowania określone podłączyć w do debugera. Aby uzyskać więcej informacji, zobacz [rozszerzeń debugera programu Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
   
 ## <a name="source-control"></a>Kontrola źródła  

@@ -1,7 +1,7 @@
 ---
 title: Aktywność procesora GPU (stronicowanie) | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c11bd0fd8f348ff90e95660e5df03a4aa591d96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 015fa34d2bb87cf98a64fb3431a6440202cf729b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633031"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195861"
 ---
 # <a name="gpu-activity-paging"></a>Aktywność GPU (Stronicowanie)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [aktywność procesora GPU (stronicowanie)](https://docs.microsoft.com/visualstudio/profiling/gpu-activity-paging).  
-  
 **Aktywność procesora GPU (stronicowanie)** segmentów na karcie wątków reprezentują czas, kiedy procesora GPU zostało przetwarzania żądań stronicowania.  Długość segmentu reprezentuje czas, czy procesor GPU przetwarzającą pakiet stronicowania dostępu (DMA) pamięci. Zazwyczaj stronicowania pakiety są skojarzone z transfer pamięci między GPU i CPU.  
   
  Po wybraniu segmentu stronicowania procesora GPU, raport na **bieżącego** karta zawiera informacje o pakiecie DMA, która została przetworzona. Obejmuje to ilość razem, gdy jego oczekiwania w kolejce sprzętowej, skojarzony z aparatu programu DirectX, proces, który przesłał pakiet DMA i czas wymagany do przetwarzania pakietów.  

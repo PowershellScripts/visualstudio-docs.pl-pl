@@ -1,7 +1,7 @@
 ---
 title: Znajdź i Zamień, środowisko, opcje, okno dialogowe | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 295891e6995ed30ab6fe9404c1ea14fd1bccbc58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4c60e89624c1245415ee887e44ad8d7df24bf8d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42680407"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250630"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Znajdź i zamień, Środowisko, Opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Znajdź i Zamień, środowisko, opcje, okno dialogowe](https://docs.microsoft.com/visualstudio/ide/reference/find-and-replace-environment-options-dialog-box).  
-  
   
 Ta strona **opcje** okno dialogowe, aby kontrolować okna komunikatów i innych aspektów Znajdź i Zamień operacji. Możesz uzyskać dostęp to okno dialogowe z **narzędzia** menu, klikając **opcje**, coraz **środowiska**, a następnie klikając polecenie **Znajdź i Zamień**. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.  
   

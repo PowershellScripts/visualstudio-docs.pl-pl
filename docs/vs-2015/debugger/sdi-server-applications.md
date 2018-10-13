@@ -1,7 +1,7 @@
 ---
 title: Aplikacje serwera SDI | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c6ee3ee3a1273c02dd094f89c099230024eabfc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba975d21e1fbef2d32b45dd4ebdc758e8b6cf575
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42688748"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199072"
 ---
 # <a name="sdi-server-applications"></a>Aplikacje serwera SDI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [aplikacje serwera SDI](https://docs.microsoft.com/visualstudio/debugger/sdi-server-applications).  
-  
 Jeśli debugujesz aplikację serwera SDI, należy określić `/Embedding` lub `/Automation` w **argumenty wiersza polecenia** właściwość *projektu* okno dialogowe strony właściwości dla C/C++, C#, lub Projekty języka Visual Basic.  
   
  Za pomocą tych argumentów wiersza polecenia debugera można uruchomić aplikacji serwera, tak, jakby zostały uruchomione z kontenera. Uruchamianie kontenera za pomocą Menedżera programu lub Menedżer plików następnie spowoduje, że kontener, aby użyć wystąpienia programu server uruchomiony w debugerze.  
@@ -43,7 +41,7 @@ Jeśli debugujesz aplikację serwera SDI, należy określić `/Embedding` lub `/
   
 ## <a name="see-also"></a>Zobacz też  
  [COM i debugowanie ActiveX](../debugger/com-and-activex-debugging.md)   
- [Porady: debugowanie serwerów COM](../debugger/how-to-debug-com-servers.md)
+ [Instrukcje: debugowanie serwerów COM](../debugger/how-to-debug-com-servers.md)
 
 
 

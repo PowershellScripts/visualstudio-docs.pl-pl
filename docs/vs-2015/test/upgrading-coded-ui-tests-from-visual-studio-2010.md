@@ -1,7 +1,7 @@
 ---
 title: Uaktualnianie kodowanych testów interfejsu użytkownika programu Visual Studio 2010 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9a82102259212743fe11a9936f3b24dee85340ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42673948"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298951"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Aktualizowanie kodowanych testów interfejsu użytkownika z Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [uaktualnianie kodowanych testów interfejsu użytkownika programu Visual Studio 2010](https://docs.microsoft.com/visualstudio/test/upgrading-coded-ui-tests-from-visual-studio-2010).  
-  
 Testowanie projektów zawierających kodowane testy interfejsu użytkownika, które zostały utworzone w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 dyskretnie naprawiane po otwarciu w programie Visual Studio 2012. Jeśli projekty testowe są zaewidencjonowane do kontroli źródła, pliki projektu są wyewidencjonowane dla tej naprawy. Po naprawieniu te projekty zawierające kodowanego interfejsu użytkownika testy mogą testowe, a następnie można używać zarówno w [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] z dodatkiem SP1 i [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].  
   
  **Wymagania**  

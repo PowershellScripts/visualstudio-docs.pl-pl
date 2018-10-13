@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2 | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8d73df73-cfff-4b8b-b426-d6051edb1939
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01d80ae623be1e808164f71a922353f7556b69ec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cca25e55c43a94859588aca56f432e5c86dd5f94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42629800"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213437"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [IDebugProgram2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprogram2).  
-  
 Ten interfejs reprezentuje program, który jest uruchomiony w procesie.  
   
 ## <a name="syntax"></a>Składnia  
@@ -48,16 +46,16 @@ IDebugProgram2 : IUnknown
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[Enumthreads —](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|Wylicza wątków, które są uruchomione w tym programie.|  
-|[Getname —](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|Pobiera nazwę programu.|  
+|[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)|Wylicza wątków, które są uruchomione w tym programie.|  
+|[GetName](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|Pobiera nazwę programu.|  
 |[GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|Pobiera procesu, który tego programu.|  
-|[Zakończenie](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|Przerywa ten program.|  
+|[Terminate](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|Przerywa ten program.|  
 |[Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|Dołącza do tego programu.|  
 |[CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)|Określa, jeśli aparat debugowania (DE) można odłączyć od program.|  
 |[Detach](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|Odłącza debuger z tego programu.|  
 |[GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)|Pobiera unikatowy identyfikator globalny dla tego programu.|  
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md)|Pobiera program właściwości.|  
-|[Wykonywanie](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|Nadal uruchomiony ten program w stanie zatrzymania. Jest wyczyszczone wszelkie poprzedniego stanu wykonywania.|  
+|[Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|Nadal uruchomiony ten program w stanie zatrzymania. Jest wyczyszczone wszelkie poprzedniego stanu wykonywania.|  
 |[Continue](../../../extensibility/debugger/reference/idebugprogram2-continue.md)|Nadal uruchomiony ten program w stanie zatrzymania. Dowolnego poprzedniego stanu wykonywania są zachowywane.|  
 |[Step](../../../extensibility/debugger/reference/idebugprogram2-step.md)|Wykonuje krok.|  
 |[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)|Żądania, że ten program zatrzymać wykonywanie następnej czasu jeden z jego kod uruchamia wątków.|  
@@ -65,7 +63,7 @@ IDebugProgram2 : IUnknown
 |[EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)|Wylicza kontekstów kodu dla danego stanowiska w pliku źródłowym.|  
 |[GetMemoryBytes](../../../extensibility/debugger/reference/idebugprogram2-getmemorybytes.md)|Pobiera bajtów pamięci dla tego programu.|  
 |[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)|Pobiera strumień dezasemblacji dla tego programu lub część tego programu.|  
-|[Enummodules —](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)|Wylicza modułów, w których ten program został załadowany i jest wykonywany.|  
+|[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)|Wylicza modułów, w których ten program został załadowany i jest wykonywany.|  
 |[GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md)|Pobiera aktualizację Edytuj i Kontynuuj (ENC) dla tego programu.<br /><br /> Niestandardowego aparatu debugowania nie obsługuje tej metody (zawsze powinna zwrócić `E_NOTIMPL`).|  
 |[EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)|Wylicza ścieżki kodu, w tym programie.|  
 |[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)|Zapisuje plik zrzutu.|  

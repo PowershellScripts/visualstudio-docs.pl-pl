@@ -1,7 +1,7 @@
 ---
 title: Strona odwołań, Projektant (Visual Basic) projektu | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a5e89b77749b331665869393b2b3cf7e520d3371
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db774bdfb02d762c2370ab342cc67c1a9b792bed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42694077"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254712"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Strona odwołań, Projektant projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [strona odwołań, Projektant projektu (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/references-page-project-designer-visual-basic).  
-  
   
 Użyj **odwołania** strony **projektanta projektu** Zarządzanie odwołania, odwołania sieci Web i importowanych przestrzeni nazw w projekcie. Projekty mogą zawierać odwołania do składników modelu COM, usług sieci Web XML, zestawów i biblioteki klas .NET Framework lub inne biblioteki klas. Aby uzyskać więcej informacji na temat korzystania z odwołań, zobacz [Zarządzanie odwołaniami w projekcie](../../ide/managing-references-in-a-project.md).  
   
@@ -61,7 +59,7 @@ Użyj **odwołania** strony **projektanta projektu** Zarządzanie odwołania, od
  **Odwołania**  
  Ta lista zawiera wszystkie odwołania w projekcie, używane lub nieużywane.  
   
- **Dodaj**  
+ **Add**  
  Kliknij ten przycisk, aby dodać odwołania lub odwołania sieci Web do **odwołania** listy.  
   
  Wybierz **odwołania** można dodać odwołania do projektu przy użyciu okna dialogowego Dodaj odwołanie.  

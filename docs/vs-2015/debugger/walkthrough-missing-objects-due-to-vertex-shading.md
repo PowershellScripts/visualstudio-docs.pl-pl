@@ -1,7 +1,7 @@
 ---
 title: 'Przewodnik: Brak obiektów spowodowany cieniowaniem wierzchołków | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b180eed67b617cd7e46610b78865fe0ae088d85e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 16856796cf6b31b8273fa4d2d3c35b7dd100e0cc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879827"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241972"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Wskazówki: brak obiektów spowodowany cieniowaniem wierzchołków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [wskazówki: Brak obiektów ze względu na cieniowania wierzchołków](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-vertex-shading).  
-  
 W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] narzędziami diagnostyki grafiki do zbadania obiekt, który nie istnieje ze względu na błąd występujący podczas etapu programu do cieniowania wierzchołków.  
   
  Ten instruktaż ilustruje następujące zadania:  

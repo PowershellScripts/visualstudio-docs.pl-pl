@@ -1,7 +1,7 @@
 ---
 title: Strona opcji, środowisko — właściwości węzła | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: acc91b6588e7e999f0390a3bc7d7108b4e6af2b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8deae718faceb1613f73e9be732706c7d5441c8f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42633220"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239645"
 ---
 # <a name="options-page-environment-node-properties"></a>Strona opcji, środowisko — Właściwości węzła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Strona opcji, środowisko — właściwości węzła](https://docs.microsoft.com/visualstudio/ide/reference/options-page-environment-node-properties).  
-  
   
 W tym dokumencie opisano strony (lub kolekcje właściwości), są skojarzone z **środowiska** kategorii `DTE.Properties("Environment", <Property Page>)`, z **opcje** okno dialogowe. Tytuł każdej podsekcji to wywołanie, który umożliwia dostęp do kolekcji właściwości, a tabela w każdej podsekcji zawiera listę właściwości w kolekcji.  
   

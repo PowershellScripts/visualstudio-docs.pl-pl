@@ -1,7 +1,7 @@
 ---
 title: Atrybuty pomocy technicznej dotyczącej witryn sieci Web | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3fd60c1ffcb6bb4d3c386cf55fb1f33540bb3dd2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 39ee9ee4e842dc49484170845cd451366aeb3a3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42697010"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172851"
 ---
 # <a name="web-site-support-attributes"></a>Atrybuty pomocy technicznej dotyczącej witryn internetowych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [witryny sieci Web pomocy technicznej atrybuty](https://docs.microsoft.com/visualstudio/extensibility/internals/web-site-support-attributes).  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Projekt witryny sieci Web można rozszerzony w celu zapewnienia wsparcia dla sieci Web, języków programowania. Język musi zarejestrować się przy użyciu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tak, aby szablonów projektu może znajdować się w **nową witrynę sieci Web** okno dialogowe po wybraniu języka.  
   
  Przykład IronPython Studio obejmuje obsługę witryny sieci web. Znajdziesz go za pomocą [przykłady VSSDK](../../misc/vssdk-samples.md). Obejmuje następujące klasy atrybutu do zarejestrowania IronPython jako język codebehind dla nowych projektów sieci Web.  

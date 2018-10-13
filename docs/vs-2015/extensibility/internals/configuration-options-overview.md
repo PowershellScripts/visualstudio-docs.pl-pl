@@ -1,7 +1,7 @@
 ---
 title: Opcje konfiguracji — Przegląd | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85fa1b9d19beca6bd879d98bc7a24af0fd5756c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627987"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294297"
 ---
 # <a name="configuration-options-overview"></a>Omówienie opcji konfiguracji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [Omówienie opcji konfiguracji](https://docs.microsoft.com/visualstudio/extensibility/internals/configuration-options-overview).  
-  
 Projekty w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] może obsługiwać wiele konfiguracji, które może być kompilowana, debugowania, wykonywania i/lub wdrożone. Konfiguracja jest opisane nazwany zestaw właściwości, zwykle przełączniki kompilatora i lokalizacje plików typu kompilacji. Domyślnie nowe rozwiązania zawiera dwie konfiguracje Debug i Release. Te konfiguracje mogą być stosowane przy użyciu ustawień domyślnych lub zmodyfikowane w celu spełnienia określonych wymagań rozwiązania lub projektu. Niektóre pakiety można tworzyć na dwa sposoby: jako edytora ActiveX lub jako składnik w miejscu. Projekty nie trzeba jednak obsługuje wiele konfiguracji. Jeśli jest dostępna tylko w jednej konfiguracji, że konfiguracja jest mapowany do wszystkich konfiguracji rozwiązania.  
   
  Konfiguracje zwykle składają się z dwóch części — Nazwa konfiguracji, (takie jak Debuguj lub Uwolnij) i ustawienia platformy. Nazwa platformy konfiguracji identyfikuje środowisko, które elementy docelowe konfiguracji, takich jak interfejs API zestawu lub platformy systemu operacyjnego. Użytkownicy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] nie można utworzyć platformy; musi wybrać z opcji projektu pakietu VSPackage umożliwia. Podczas instalacji przez użytkownika pakietu VSPackage, platforma dostarczania utworzonych podczas opracowywania aplikacji pakietu może pojawiać się w dowolnej nazwy platformy desired na podstawie wszystkich kryteriów ustawione przez autora pakietu. Użytkownik może następnie wybrać z listy platform udostępniane się za pomocą pakietu VSPackage, gdy są tworzone na stronach właściwości.  

@@ -1,7 +1,7 @@
 ---
 title: Wybieranie i instalowanie interpreterów języka Python
 description: Pełna lista interpreterów języka Python, które są obsługiwane w programie Visual Studio z krótkie instrukcje, gdzie można znaleźć własnych instalatorów.
-ms.date: 09/04/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1d8b9016b0ec5f8334ba94f94b89f5e18bf9fe71
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243890"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324980"
 ---
 # <a name="install-python-interpreters"></a>Instalowanie interpreterów języka Python
 
 Domyślnie instalowania obciążenia programowania języka Python w programie Visual Studio 2017 instaluje Python 3 (wersja 64-bitowa). Opcjonalnie możesz zainstalować 32-bitowych i 64-bitowe wersje języka Python 2, 3 języka Python, Anaconda 2 i Anaconda 3, zgodnie z opisem w [instalacji](installing-python-support-in-visual-studio.md).
 
-Można też ręcznie zainstalują dowolną z interpretery wymienione w poniższej tabeli opisano poza Instalatora programu Visual Studio. Na przykład po zainstalowaniu pakietu Anaconda 3 przed zainstalowaniem programu Visual Studio, nie trzeba ponownie zainstalować za pomocą Instalatora programu Visual Studio.
+Można też ręcznie zainstalują dowolną z interpretery wymienione w poniższej tabeli opisano poza Instalatora programu Visual Studio. Na przykład po zainstalowaniu pakietu Anaconda 3 przed zainstalowaniem programu Visual Studio, nie trzeba ponownie zainstalować za pomocą Instalatora programu Visual Studio. Można także zainstalować tłumacza ręcznie Jeśli, na przykład, nowsza wersja dostępna nie jeszcze są widoczne w Instalatorze programu Visual Studio.
 
 Aby uzyskać **programu Visual Studio 2015 i starsze**, należy ręcznie zainstalować jeden interpretery.
 
@@ -34,7 +34,7 @@ Visual Studio Wyświetla wszystkie znane środowisk w [ **środowiska Python** ]
 
 | Interpreter | Opis |
 | --- | --- |
-| [CPython](https://www.python.org/) | "Natywnego" i większości powszechnie stosowanych interpretera dostępne w wersjach 32-bitowych i 64-bitowych (32-bitowy zalecane). Obejmuje najnowsze funkcje języków, Maksymalna zgodność pakietu języka Python, pełna obsługa debugowania i współdziałanie z [IPython](http://ipython.org/). Zobacz również: [należy używać języka Python 2 lub 3 języka Python?](https://wiki.python.org/moin/Python2orPython3). Należy pamiętać, że Visual Studio 2015 i starsze nie obsługują środowiska Python 3.6 + i może spowodować błędy takie jak **nieobsługiwany języka python w wersji 3.6**. Korzystanie z języka Python w wersji 3.5 lub wcześniejszej zamiast tego. |
+| [CPython](https://www.python.org/) | "Natywnego" i większości powszechnie stosowanych interpretera dostępne w wersjach 32-bitowych i 64-bitowych (32-bitowy zalecane). Obejmuje najnowsze funkcje języków, Maksymalna zgodność pakietu języka Python, pełna obsługa debugowania i współdziałanie z [IPython](http://ipython.org/). Zobacz również: [należy używać języka Python 2 lub 3 języka Python?](https://wiki,python.org/moin/Python2orPython3). Należy pamiętać, że Visual Studio 2015 i starsze nie obsługują środowiska Python 3.6 + i może spowodować błędy takie jak **nieobsługiwany języka python w wersji 3.6**. Korzystanie z języka Python w wersji 3.5 lub wcześniejszej zamiast tego. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Implementacji .NET, języka Python, dostępne w wersjach 32-bitowych i 64-bitowych, zapewniając C# /F #/ Visual Basic interop dostęp do interfejsów API platformy .NET, standardowego debugowania języka Python (ale nie C++ debugowanie w trybie mieszanym) i mieszane IronPython / C# debugowania. IronPython, jednak nie obsługuje środowisk wirtualnych. |
 | [Anaconda](https://www.continuum.io) | Platforma analizy danych otwartych działającemu w języku Python i zawiera najnowszą wersję języka CPython i większość pakietów trudne do zainstalowania. Firma Microsoft zaleca Jeśli nie zdecydujesz inaczej. |
 | [PyPy](https://www.pypy.org/) | Implementacja JIT śledzenia o wysokiej wydajności, środowiska Python, którą jest dobra dla programów długotrwałych i sytuacji, w której możesz zidentyfikować wydajności problemów, ale nie może znaleźć inne rozwiązania. Współpracuje z programem Visual Studio, ale z ograniczoną obsługę zaawansowanych funkcji debugowania. |

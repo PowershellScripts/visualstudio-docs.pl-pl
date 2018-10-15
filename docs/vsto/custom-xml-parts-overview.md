@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4c32f3a9b0f0c09b7e7b58aa4c424630326d122
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b31ce44c458f7f376d98fac83670595b8a163d65
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676178"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49325006"
 ---
 # <a name="custom-xml-parts-overview"></a>Niestandardowe części XML ― omówienie
   Dane XML można osadzić w dokumentach niektórych aplikacji pakietu Microsoft Office. Osadzenie danych XML w dokumencie, dane o nazwie *niestandardowym elementem XML*.  
@@ -76,7 +76,7 @@ ms.locfileid: "35676178"
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Zmodyfikuj elementy XML bez uruchamiania aplikacji pakietu Office  
  Można dodawania lub modyfikowania z niestandardowym elementem XML bez konieczności uruchamiania programu Excel, PowerPoint lub Word. Jest to przydatne, jeśli chcesz pracować z danymi XML w dokumencie programu na komputerze, który nie ma aplikacji Microsoft Office, zainstalowane, takim jak serwer.  
   
- Aby dodać z niestandardowym elementem XML bez konieczności uruchamiania programu Microsoft Office, należy użyć klas Open XML zestawu SDK. Te klasy są przeznaczone do zapewniają dostęp do zawartości Open XML, które są specyficzne dla dokumentów pakietu Office. Na przykład, aby dodać niestandardowe części XML do skoroszytu programu Excel, należy użyć [AddNewPart\<T >](http://msdn.microsoft.com/47c348c0-77ab-a504-5097-bcd6a213921a) metody [WorkbookPart](http://msdn.microsoft.com/d011e6f4-77dd-d02d-66ef-dc4a9e7b26f2) obiektu. Aby uzyskać więcej informacji, zobacz [Open XML zestawu SDK 2.0](http://msdn.microsoft.com/f6a9ae68-7989-4208-97f5-3c945137a0ab).  
+ Aby dodać z niestandardowym elementem XML bez konieczności uruchamiania programu Microsoft Office, należy użyć klas Open XML zestawu SDK. Te klasy są przeznaczone do zapewniają dostęp do zawartości Open XML, które są specyficzne dla dokumentów pakietu Office. Na przykład, aby dodać niestandardowe części XML do skoroszytu programu Excel, należy użyć [AddNewPart\<T >](https://msdn.microsoft.com/library/office/cc562657.aspx) metody [WorkbookPart](https://msdn.microsoft.com/library/office/documentformat.openxml.packaging.workbookpart.aspx) obiektu. Aby uzyskać więcej informacji, zobacz [Open XML SDK](/office/open-xml/open-xml-sdk).  
   
 ## <a name="bind-custom-xml-parts-to-word-content-controls"></a>Niestandardowe elementy XML należy powiązać formanty zawartości programu Word  
  Możesz powiązać formanty zawartości w ramach rozwiązania programu Word do elementów w niestandardowym elementem XML. Gdy formant zawartości jest powiązana z niestandardowym elementem XML, dane w niestandardowym elementem XML są wyświetlane w interfejsie użytkownika (UI) zawartości formantu. Jeśli użytkownik dokona edycji tekstu w kontrolce, odpowiadający mu element XML jest aktualizowane automatycznie. Podobnie zmiana wartości elementów w niestandardowych części XML formanty zawartości, które są powiązane elementy XML wyświetlania nowych danych. Aby uzyskać więcej informacji, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md).  

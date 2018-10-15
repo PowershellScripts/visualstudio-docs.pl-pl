@@ -1,14 +1,14 @@
 ---
 title: 'Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania | Dokumentacja firmy Microsoft'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
 - modeling software [Visual Studio ALM]
@@ -22,18 +22,16 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 67fd284bca4e81c36cd6e7e185b9c4712f07e6b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 220666e6fe12e6a5ab3bbaf1238c19d761427cea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42696876"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303046"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Najnowszą wersję tego tematu znajduje się w temacie [scenariusza: zmiana projektu z wykorzystaniem wizualizacji i modelowania](https://docs.microsoft.com/visualstudio/modeling/scenario-change-your-design-using-visualization-and-modeling).  
-  
 Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy użyciu wizualizacji i modelowania narzędzi w programie Visual Studio. Użyj narzędzi takich jak diagramy modelowania UML (Unified Language), map kodu, diagramów warstwowych i diagramów klas do:  
   
  Aby zobaczyć, które wersje programu Visual Studio obsługuje każde narzędzie, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -104,9 +102,9 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Tworzenie projektów modelowania UML i diagramów](../modeling/create-uml-modeling-projects-and-diagrams.md)  
+-   [Tworzenie projektów i diagramów modelowania UML](../modeling/create-uml-modeling-projects-and-diagrams.md)  
   
--   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)  
+-   [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
   
 -   [Zależności mapy w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)  
   
@@ -426,7 +424,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md)  
+-   [Diagramy przypadków użycia UML: informacje](../modeling/uml-use-case-diagrams-reference.md)  
   
 -   [Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)  
   
@@ -447,7 +445,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Diagramy przypadków użycia UML: odwołanie](../modeling/uml-use-case-diagrams-reference.md)  
+-   [Diagramy przypadków użycia UML: informacje](../modeling/uml-use-case-diagrams-reference.md)  
   
 -   [Diagramy przypadków użycia UML: wskazówki](../modeling/uml-use-case-diagrams-guidelines.md)  
   
@@ -487,7 +485,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Diagramy aktywności UML: odwołanie](../modeling/uml-activity-diagrams-reference.md)  
+-   [Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)  
   
 -   [Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)  
   
@@ -512,7 +510,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Diagramy aktywności UML: odwołanie](../modeling/uml-activity-diagrams-reference.md)  
+-   [Diagramy aktywności UML: informacje](../modeling/uml-activity-diagrams-reference.md)  
   
 -   [Diagramy aktywności UML: wskazówki](../modeling/uml-activity-diagrams-guidelines.md)  
   
@@ -561,7 +559,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)  
+-   [Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)  
   
 -   [Diagramy składników UML: wskazówki](../modeling/uml-component-diagrams-guidelines.md)  
   
@@ -582,7 +580,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md)  
+-   [Diagramy składników UML: informacje](../modeling/uml-component-diagrams-reference.md)  
   
 -   [Diagramy składników UML: wskazówki](../modeling/uml-component-diagrams-guidelines.md)  
   
@@ -689,7 +687,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md)  
+-   [Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)  
   
 -   [Diagramy sekwencji UML: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md)  
   
@@ -710,7 +708,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Diagramy sekwencji UML: odwołanie](../modeling/uml-sequence-diagrams-reference.md)  
+-   [Diagramy sekwencji UML: informacje](../modeling/uml-sequence-diagrams-reference.md)  
   
 -   [Diagramy sekwencji UML: wskazówki](../modeling/uml-sequence-diagrams-guidelines.md)  
   
@@ -748,7 +746,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)  
+-   [Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)  
   
 -   [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)  
   
@@ -787,7 +785,7 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Diagramy klas UML: odwołanie](../modeling/uml-class-diagrams-reference.md)  
+-   [Diagramy klas UML: informacje](../modeling/uml-class-diagrams-reference.md)  
   
 -   [Diagramy klas UML: wskazówki](../modeling/uml-class-diagrams-guidelines.md)  
   
@@ -863,9 +861,9 @@ Upewnij się, że oprogramowanie systemu spełnia wymagania użytkowników przy 
   
  Zobacz:  
   
--   [Tworzenie diagramów warstwy na podstawie kodu](../modeling/create-layer-diagrams-from-your-code.md)  
+-   [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Diagramy warstw: odwołanie](../modeling/layer-diagrams-reference.md)  
+-   [Diagramy warstw: informacje](../modeling/layer-diagrams-reference.md)  
   
 -   [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)  
   

@@ -1,7 +1,7 @@
 ---
 title: Tworzenie aplikacji do danych | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,12 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 9e662eedef9053a460ffbb5012a079f05239a9a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e5354d167dd6d3a1bef9beeb3dcaaaf24871bab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42682897"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291320"
 ---
 # <a name="creating-data-applications"></a>Tworzenie aplikacji danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Program Visual Studio udostępnia wiele narzędzi projektowania, aby pomóc w tw
   
  Podczas tworzenia aplikacji uzyskujących dostęp do danych w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], będzie miała inne wymagania. W niektórych przypadkach można po prostu wyświetlanie danych w formularzu. W innych przypadkach może być konieczne opracowanie sposobu udostępniania informacji z innymi aplikacjami lub procesami.  
   
- Niezależnie od tego, co możesz zrobić z danymi istnieją pewne podstawowe pojęcia, które należy zrozumieć. Nigdy nie potrzebować znać niektórych szczegółów przetwarzania danych — na przykład może nigdy nie należy programowo utworzyć bazy danych — ale to bardzo przydatne do zrozumienia pojęcia podstawowe dane, a także narzędzia data tools (kreatory i projektanci) dostępne w <c1/>.  
+ Niezależnie od tego, co możesz zrobić z danymi istnieją pewne podstawowe pojęcia, które należy zrozumieć. Nigdy nie potrzebować znać niektórych szczegółów przetwarzania danych — na przykład może nigdy nie należy programowo utworzyć bazy danych — ale to bardzo przydatne do zrozumienia pojęcia podstawowe dane, a także narzędzia data tools (kreatory i projektanci) dostępne w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
  Aplikacja typowych danych wykorzystuje większość procesów przedstawionych na poniższym diagramie:  
   
@@ -126,7 +126,7 @@ Cykl danych
  [Pobieranie danych do aplikacji](../data-tools/fetching-data-into-your-application.md)  
  Zawiera łącza do tematów opisujących sposób ładowania danych do aplikacji.  
   
- [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+ [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
  Zawiera łącza do tematów, które wyjaśniają, jak do powiązania Windows kontrolek formularzy, kontrolek WPF i formanty programu Silverlight ze źródłami danych.  
   
  [Edytowanie danych w aplikacji](../data-tools/editing-data-in-your-application.md)  

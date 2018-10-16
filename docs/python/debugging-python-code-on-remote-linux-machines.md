@@ -1,7 +1,7 @@
 ---
 title: Debugowanie kodu języka Python na zdalne komputery z systemem Linux
 description: Jak używać programu Visual Studio do debugowania kodu w języku Python uruchomiona na zdalnym komputerów z systemem Linux, w tym wymagane kroki konfiguracji, zabezpieczeń i rozwiązywania problemów.
-ms.date: 09/03/2018
+ms.date: 10/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 654ac9cfd466cfdd6486ea5aa9e658495d5704fe
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549314"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356772"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Zdalne debugowanie kodu w języku Python w systemie Linux
 
@@ -74,10 +74,8 @@ Aby uzyskać więcej informacji na temat tworzenia reguł zapory na Maszynie wir
 
    ```python
    import ptvsd
-   ptvsd.enable_attach('my_secret')
+   ptvsd.enable_attach()
    ```
-
-   Pierwszy argument przekazany do `enable_attach` (nazywanych "wpis tajny") ogranicza dostęp do uruchamianie skryptu, a następnie wprowadź ten klucz tajny podczas dołączania debugera zdalnego. (Chociaż nie jest to zalecane, można zezwolić wszystkim użytkownikom połączyć, użyj `enable_attach(secret=None)`.)
 
 1. Zapisz plik i uruchom `python3 guessing-game.py`. Wywołanie `enable_attach` działa w tle, a następnie czeka na połączenia przychodzące, podczas pracy z programem. Jeśli to konieczne, `wait_for_attach` funkcja może zostać wywołana po `enable_attach` blokowania program, dopóki nie dołącza debuger.
 
@@ -96,10 +94,7 @@ W tych krokach możemy ustawić prosty punkt przerwania, aby zatrzymać proces z
 
 1. W **dołączyć do procesu** wyświetlonym oknie dialogowym Ustaw **typu połączenia** do **zdalnego języka Python (ptvsd)**. (W starszych wersjach programu Visual Studio o nazwie tych poleceń **transportu** i **zdalnego debugowania w języku Python**.)
 
-1. W **adres docelowy połączenia** pola (**kwalifikator** w starszych wersjach), wprowadź `tcp://<secret>@<ip_address>:5678` gdzie `<secret>` jest przekazany ciąg `enable_attach` w kodzie języka Python `<ip_address>` jest komputera zdalnego (która może być jawne adresu lub nazwy, takie jak myvm.cloudapp.net) i `:5678` zdalnego debugowania numer portu to.
-
-    > [!Warning]
-    > Jeśli wprowadzasz połączenie za pośrednictwem publicznej sieci internet, należy używać `tcps` zamiast tego, jak i zgodnie z instrukcjami poniżej, aby [bezpieczne połączenie debugera przy użyciu protokołu SSL](#secure-the-debugger-connection-with-ssl).
+1. W **adres docelowy połączenia** pola (**kwalifikator** w starszych wersjach), wprowadź `tcp://<ip_address>:5678` gdzie `<ip_address>` jest fakt, że komputera zdalnego (która może być jawne adres lub nazwę, np. myvm.cloudapp.NET) i `:5678` zdalnego debugowania numer portu to.
 
 1. Naciśnij klawisz **Enter** do wypełnienia listy ptvsd dostępne procesy na tym komputerze:
 
@@ -121,7 +116,7 @@ W tych krokach możemy ustawić prosty punkt przerwania, aby zatrzymać proces z
 1. Sprawdź, czy klucz tajny w **adres docelowy połączenia** (lub **kwalifikator**) dokładnie pasuje do wpisu tajnego w kodzie zdalnego.
 1. Upewnij się, że adres IP w **adres docelowy połączenia** (lub **kwalifikator**) jest zgodna z komputera zdalnego.
 1. Sprawdź otwarciu portu debugowania zdalnego na komputerze zdalnym i że zostały dołączone sufiks portu w element docelowy połączenia, takich jak `:5678`.
-    - Jeśli potrzebujesz użyć innego portu, można je było wprowadzić w `enable_attach` wywołać za pomocą `address` argumentu, jak `ptvsd.enable_attach(secret = 'my_secret', address = ('0.0.0.0', 8080))`. W tym wypadku Otwórz określonego portu w zaporze.
+    - Jeśli potrzebujesz użyć innego portu, można je było wprowadzić w `enable_attach` wywołać za pomocą `address` argumentu, jak `ptvsd.enable_attach(address = ('0.0.0.0', 8080))`. W tym wypadku Otwórz określonego portu w zaporze.
 1. Upewnij się, że wersja ptvsd zainstalowane na komputerze zdalnym, zwrócone przez `pip3 list` pasuje do używanej przez wersję narzędzi Python tools używane w programie Visual Studio w poniższej tabeli. W razie potrzeby zaktualizuj ptvsd na komputerze zdalnym.
 
     | Visual Studio w wersji | Wersja narzędzi/ptvsd języka Python |
@@ -136,9 +131,15 @@ W tych krokach możemy ustawić prosty punkt przerwania, aby zatrzymać proces z
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-## <a name="secure-the-debugger-connection-with-ssl"></a>Bezpieczne połączenie debugera przy użyciu protokołu SSL
+## <a name="using-ptvsd-3x"></a>Za pomocą ptvsd 3.x
 
-Domyślnie połączenie z serwerem zdalnego debugowania ptvsd jest chroniony tylko przez klucz tajny, a wszystkie dane są przekazywane w postaci zwykłego tekstu. W przypadku bardziej bezpieczne połączenia ptvsd obsługuje protokół SSL, który ustawia się w następujący sposób:
+Poniższe informacje dotyczą tylko do debugowania zdalnego z ptvsd 3.x, który zawiera niektóre funkcje, które zostały usunięte w ptvsd 4.x.
+
+1. Za pomocą ptvsd 3.x, `enable_attach` funkcji wymaganych do przekazania "wpis tajny" jako pierwszy argument, który ogranicza dostęp do działającego skryptu. Możesz wprowadzić ten wpis tajny podczas dołączania debugera zdalnego. Chociaż nie jest to zalecane, można zezwolić wszystkim użytkownikom połączyć, użyj `enable_attach(secret=None)`.
+
+1. Adres docelowy połączenia jest adres URL `tcp://<secret>@<ip_address>:5678` gdzie `<secret>` jest przekazany ciąg `enable_attach` w kodzie języka Python.
+
+Domyślnie połączenie z serwerem zdalnego debugowania 3.x ptvsd jest chroniony tylko przez klucz tajny, a wszystkie dane są przekazywane w postaci zwykłego tekstu. W przypadku bardziej bezpieczne połączenia ptvsd 3.x obsługuje przy użyciu protokołu SSL `tcsp` protokołu, który ustawia się w następujący sposób:
 
 1. Na komputerze zdalnym Wygeneruj oddzielny certyfikat z podpisem własnym i plików kluczy przy użyciu biblioteki openssl:
 
@@ -171,17 +172,12 @@ Domyślnie połączenie z serwerem zdalnego debugowania ptvsd jest chroniony tyl
 
     ![Wybieranie transportu debugowania zdalnego przy użyciu protokołu SSL](media/remote-debugging-qualifier-ssl.png)
 
-### <a name="warnings"></a>Ostrzeżenia
+1. Visual Studio wyświetli monit o potencjalnych problemów z certyfikatami, podczas nawiązywania połączenia za pośrednictwem protokołu SSL. Można zignorować te ostrzeżenia i kontynuować, ale mimo że nadal szyfrowany kanał przed podsłuchiwaniem może być otwarty na ataki typu man-in--middle.
 
-Visual Studio wyświetli monit o potencjalnych problemów z certyfikatami, podczas nawiązywania połączenia za pośrednictwem protokołu SSL zgodnie z poniższym opisem. Można zignorować te ostrzeżenia i kontynuować, ale mimo że nadal szyfrowany kanał przed podsłuchiwaniem może być otwarty na ataki typu man-in--middle.
+    1. Jeśli widzisz **certyfikatu zdalnego nie jest zaufany** ostrzeżenie poniżej, oznacza to, nie został poprawnie dodany certyfikatów do zaufanego głównego urzędu certyfikacji. Te kroki i spróbuj ponownie.
 
-1. Jeśli widzisz **certyfikatu zdalnego nie jest zaufany** ostrzeżenie poniżej, oznacza to, nie został poprawnie dodany certyfikatów do zaufanego głównego urzędu certyfikacji. Te kroki i spróbuj ponownie.
+        ![Ostrzeżenie zaufany certyfikat SSL](media/remote-debugging-ssl-warning.png)
 
-    ![Ostrzeżenie zaufany certyfikat SSL](media/remote-debugging-ssl-warning.png)
+    1. Jeśli widzisz **certyfikatu zdalnego nazwa jest niezgodna z nazwą hosta** ostrzeżenie poniżej, oznacza to, nie używasz prawidłowego hosta lub adres IP jako **nazwa pospolita** podczas tworzenia certyfikatu.
 
-1. Jeśli widzisz **certyfikatu zdalnego nazwa jest niezgodna z nazwą hosta** ostrzeżenie poniżej, oznacza to, nie używasz prawidłowego hosta lub adres IP jako **nazwa pospolita** podczas tworzenia certyfikatu.
-
-    ![Ostrzeżenie nazwa hosta certyfikatu SSL](media/remote-debugging-ssl-warning2.png)
-
-> [!Warning]
-> Obecnie program Visual Studio 2017 zawiesza się podczas można zignorować te ostrzeżenia. Należy rozwiązać wszystkie problemy przed podjęciem próby połączenia.
+        ![Ostrzeżenie nazwa hosta certyfikatu SSL](media/remote-debugging-ssl-warning2.png)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 907aa9eb69bbbbe23f147472995cc7a4accd3679
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860442"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356798"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Szybki Start: Pierwsze spojrzenie na narzędziach profilowania
 
@@ -34,7 +34,8 @@ Podczas debugowania, można użyć **narzędzia diagnostyczne** okna do analizow
 
 **Narzędzia diagnostyczne** okno często jest preferowanym sposobem tworzenia profilu aplikacji, ale dla kompilacji wydania można również wykonać analizy po zakończeniu działania aplikacji zamiast tego. Aby uzyskać więcej informacji na temat różnych metod, zobacz [uruchamianie narzędzi z lub bez debugera profilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Aby dowiedzieć się, profilowanie Obsługa narzędzi dla różnych typów aplikacji, zobacz [narzędzie, które należy używać?](#which-tool-should-i-use).
 
-> ! [UWAGA] Można użyć narzędzia późniejszej analizy, system Windows 7 lub nowszy. Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debugerem (**narzędzia diagnostyczne** okno).
+> [!NOTE]
+> Można użyć narzędzia późniejszej analizy, system Windows 7 lub nowszy. Windows 8 lub nowszy jest wymagany do uruchamiania narzędzi profilowania z debugerem (**narzędzia diagnostyczne** okno).
 
 ## <a name="analyze-cpu-usage"></a>Analizowanie użycia procesora CPU
 

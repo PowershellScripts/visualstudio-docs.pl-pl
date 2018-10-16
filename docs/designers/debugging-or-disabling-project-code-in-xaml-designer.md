@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4764df436a7adeb3ac65c574812c8f7d334d497b
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: da27e119c26a304f2b49f641509c87f15535cc0c
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890568"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356707"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Debugowanie lub wyłączanie kodu projektu w projektancie XAML
 
@@ -86,6 +86,19 @@ Po wyłączeniu kodu projektu programu Visual Studio zawiera symbole zastępcze.
 
     > [!NOTE]
     > Wyłączanie kodu projektu może prowadzić do utraty danych w czasie projektowania. Alternatywą jest, aby debugować kod uruchomiony w projektancie.
+
+## <a name="control-display-options"></a>Opcje wyświetlania kontrolki
+
+> [!NOTE]
+> **Kontrolowanie opcji wyświetlania** jest dostępna tylko dla aplikacji Universal Windows Platform, których platformą docelową Windows 10 Fall Creators Update (kompilacja 16299) lub nowszej. **Opcje wyświetlania kontrolki** funkcja jest dostępna w programie Visual Studio 2017 w wersji 15.9 lub nowszej. 
+
+W Projektancie XAML możesz zmienić opcje wyświetlania kontrolki, aby wyświetlić tylko kontrolek platformy z zestawu Windows SDK. Może to zwiększyć niezawodność projektanta XAML.
+
+Aby zmienić opcje wyświetlania kontrolki, kliknij ikonę w lewej dolnej części okna projektanta, a następnie wybierz **opcje wyświetlania kontrolki** przycisku:
+
+![Opcje wyświetlania kontrolki](../designers/media/control_display_options.png)
+
+Po wybraniu **tylko formanty wyświetlania platformy**, formanty użytkownika klienta wszystkie kontrolki niestandardowe pochodzące z zestawów SDK, i uzyskać więcej informacji, nie będą renderować całości. Zamiast tego są zastępowane przez rezerwowy formanty, aby zademonstrować, rozmiar i położenie formantu.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -9,16 +9,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0d5ab3c86c454a547ea80307c5440441424b1c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499568"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356759"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Tworzenie pierwszego rozszerzenia: Hello World
 
-W tym przykładzie Hello World przeprowadzi Cię przez tworzenie pierwszego rozszerzenia dla programu Visual Studio. Ten samouczek przedstawia sposób dodawania nowego polecenia do programu Visual Studio.
+W tym przykładzie Hello World przeprowadzi Cię przez tworzenie pierwszego rozszerzenia dla programu Visual Studio. Ten samouczek pokazuje, jak dodać nowe polecenie do programu Visual Studio.
 
 W procesie, dowiesz się jak:
 
@@ -35,11 +35,12 @@ W tym przykładzie użyjemy Visual C# można dodać niestandardowe menu przycisk
 
 Przed rozpoczęciem upewnij się, że zainstalowano **programowanie rozszerzeń programu Visual Studio** obciążenia, który zawiera szablon VSIX, będzie konieczne i przykładowy kod.
 
-Uwaga: Możesz użyć dowolnej wersji programu Visual Studio (Community, Professional lub Enterprise), aby utworzyć projekt rozszerzeń programu Visual Studio.
+> [!NOTE]
+> Możesz użyć dowolnej wersji programu Visual Studio (Community, Professional lub Enterprise), aby utworzyć projekt rozszerzalności programu Visual Studio.
 
 ## <a name="create-an-extensibility-project"></a>Utwórz projekt rozszerzenia
 
-Krok 1. Z **pliku** menu, kliknij przycisk **nowy projekt**. W dolnej części ekranu można wprowadzić nazwę projektu.
+Krok 1. Z **pliku** menu, kliknij przycisk **nowy projekt**. W dolnej części ekranu Podaj nazwę projektu.
 
 Krok 2. Z **szablony** menu, kliknij przycisk **Visual C#**, kliknij przycisk **rozszerzalności**, a następnie kliknij przycisk **projekt VSIX**.
 
@@ -53,15 +54,15 @@ Jeśli potrzebujesz opuścić ten samouczek i wrócić do niego, można znaleź�
 
 Krok 1. Jeśli wybierzesz manifestu, zostanie wyświetlony, jakie są opcje mogły być zmieniane dla wystąpienia, metadane, opis i wersji.
 
-Krok 2. Kliknij prawym przyciskiem myszy projekt (nie rozwiązanie). W menu kontekstowym kliknij **Dodaj**, a następnie kliknij przycisk **kontrolki użytkownika**.
+Krok 2. Kliknij prawym przyciskiem myszy projekt (nie rozwiązanie). W menu kontekstowym kliknij **Dodaj**, a następnie kliknij przycisk **nowy element**.
 
-Krok 3. Wróć do **rozszerzalności** sekcji, a następnie kliknij przycisk **polecenia niestandardowego**.
+Krok 3. Wybierz **rozszerzalności** sekcji, a następnie kliknij przycisk **polecenia niestandardowego**.
 
 Krok 4. W **nazwa** u dołu ekranu, nadaj jej nazwę, na przykład *Command.cs*.
 
 ![polecenie niestandardowe](media/hello-world-custom-command.png)
 
-Nowe polecenie, które zostaną wyświetlone w **Eksploratora rozwiązań** w obszarze **zasobów** gałęzi. Jest to również, gdzie znajdziesz innych plików związanych z polecenia, takich jak pliki PNG i ICO, jeśli chcesz zmodyfikować obraz.
+Nowe polecenie znajduje się w **Eksploratora rozwiązań** w obszarze **zasobów** gałęzi. Jest to również, gdzie znajdziesz innych plików związanych z polecenia, takich jak pliki PNG i ICO, jeśli chcesz zmodyfikować obraz.
 
 ## <a name="modify-the-source-code"></a>Modyfikowanie kodu źródłowego
 
@@ -116,7 +117,7 @@ Upewnij się zapisać zmiany do każdego pliku.
 
 Teraz możesz uruchomić kod źródłowy w wystąpienie eksperymentalne programu Visual Studio.
 
-Krok 1. Kliknij przycisk **Start** na pasku narzędzi. Spowoduje to skompilować projekt i uruchomić debuger, uruchamianie nowego wystąpienia programu Visual Studio o nazwie **wystąpienie doświadczalne**.
+Krok 1. Kliknij przycisk **Start** na pasku narzędzi. To kompiluje projekt i uruchamia debuger uruchamianie nowego wystąpienia programu Visual Studio o nazwie **wystąpienie doświadczalne**.
 
 Zostanie wyświetlone zostaną słowa **wystąpienie doświadczalne** na pasku tytułu programu Visual Studio.
 

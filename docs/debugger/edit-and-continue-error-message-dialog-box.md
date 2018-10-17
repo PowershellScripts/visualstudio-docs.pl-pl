@@ -1,7 +1,7 @@
 ---
-title: Edytuj i Kontynuuj — okno dialogowe komunikat błędu | Dokumentacja firmy Microsoft
+title: Edytuj i Kontynuuj — okno dialogowe komunikat o błędzie | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 06/22/2017
+ms.date: 06/22/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -20,46 +20,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b521eafcc62a49f2dd2a4c327158070bdbe62ce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5fd4fe31996a75c4b743f3dac12e7b945c912506
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471840"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382795"
 ---
-# <a name="edit-and-continue-error-message-dialog-box"></a>Komunikat o błędzie Edytuj i kontynuuj — Okno dialogowe
-To okno dialogowe pojawia się podczas debugowania w języku, który obsługuje Edytuj i Kontynuuj, ale **Edytuj i Kontynuuj** nie jest dostępna tylko dla typu zmiany kodu zostały wykonane. Komunikat o błędzie wewnątrz pola zawiera bardziej szczegółowy opis. Możliwe przyczyny przy przeglądaniu to okno dialogowe, które obejmują:  
+# <a name="edit-and-continue-error-message"></a>Edytuj i Kontynuuj komunikat o błędzie 
 
--   Próbowano edytować kod programu SQL Server.
+**Edytuj i Kontynuuj** błąd okno komunikatu pojawia się podczas debugowania w języku kod, który obsługuje Edytuj i Kontynuuj, ale Edytuj i Kontynuuj nie jest dostępna dla zmiany kodu wprowadzone. Komunikat o błędzie zawiera bardziej szczegółowy opis. Aby reagować na okno dialogowe, wybierz pozycję **OK** aby zamknąć okno dialogowe, a następnie anulować próba edycji.  
 
--   Próbowano edytować zoptymalizowanego kodu. (Może być konieczne przełączyć się z kompilacji wydania do kompilacji debugowanej).
+Możliwe przyczyny tego komunikatu o błędzie:  
 
--   Próbowano edytować kodu została uruchomiona (zamiast podczas wstrzymaniu w debugerze). Spróbuj [ustawienia punktu przerwania](../debugger/using-breakpoints.md) i Edycja kodu podczas wstrzymania.
-
--   Próbowano edytować kodu zarządzanego gdy włączono debugowanie niezarządzane. Edytuj i Kontynuuj nie działa z [debugowanie w trybie mieszanym](../debugger/how-to-debug-in-mixed-mode.md).
-
--   Wprowadzone zmiany kodu, który nie jest obsługiwany przez Edytuj i Kontynuuj języka programowania. Aby uzyskać więcej informacji, zobacz Tematy nieobsługiwany kod zmiany w [C#](../debugger/supported-code-changes-csharp.md), [Visual Basic](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md), i [C++](../debugger/supported-code-changes-cpp.md).
+-   Podczas próby edytowania kodu programu SQL Server.
+-   Podczas próby edytowania zoptymalizowanego kodu. Konieczne może przełączyć się z kompilację wydania do kompilacji debugowania.
+-   Próby edytowania kodu, gdy jest uruchomiona, a nie gdy wstrzymaniu w debugerze. Spróbuj [ustawienie punktu przerwania](../debugger/using-breakpoints.md)i Edycja kodu podczas wstrzymania.
+-   Podczas próby edytowania kodu zarządzanego, gdy włączone jest tylko debugowanie niezarządzane. Edytuj i Kontynuuj nie działa w przypadku [debugowanie w trybie mieszanym](../debugger/how-to-debug-in-mixed-mode.md).
+-   W języku programowania, dzięki czemu kod to zmienić, nie jest obsługiwany przez Edytuj i Kontynuuj. Aby uzyskać więcej informacji, zobacz artykuły [obsługiwane zmiany kodu w języku C#](supported-code-changes-csharp.md), [edycji w języku Visual Basic, Edytuj i Kontynuuj nieobsługiwana](unsupported-edits-in-visual-basic-edit-and-continue.md), i [obsługiwane zmiany kodu C++](supported-code-changes-cpp.md).
+-   Próba edycji kodu w aplikacji dołączysz do, zamiast uruchamiania, debugowania z **debugowania** menu.  
+-   Podczas próby edytowania kodu podczas debugowania odzyskiwania po awarii. Zrzut programu Watson.  
+-   Próby edytowania kodu po wystąpieniu nieobsługiwanego wyjątku, a opcja **Unwind na stosie wywołań dotycząca nieobsłużonych wyjątków** nie jest zaznaczone.  
+-   Podczas próby edytowania kodu podczas debugowania aplikacji osadzonego środowiska uruchomieniowego.
+-   Podczas próby edytowania kodu zarządzanego za pomocą .NET Framework w wersji wcześniejszej niż 4.5.1 z obiektem docelowym 64-bitowych aplikacji. Aby użyć Edytuj i Kontynuuj dla programu .NET Framework wcześniejszych niż 4.5.1, ustawić element docelowy **x86** w  **\<nazwa_projektu >** > **właściwości**  >  **Skompilować** karcie **zaawansowane kompilatora** ustawienie.  
+-   Podczas próby edytowania kodu w zestawie, który został zmodyfikowany podczas debugowania, a został załadowany ponownie.  
+-   Podczas próby edytowania kodu w zestawie, który nie został załadowany.  
+-   Rozpoczynanie debugowania starą wersję aplikacji, ponieważ najnowsza wersja ma błędy kompilacji.
   
--   Próbowano edytować kodu w programie dołączonego do zamiast od **debugowania** menu.  
-  
--   Próbowano edytować kodu podczas debugowania odzyskiwania po awarii. Watson zrzutu.  
-  
--   Próbowano edytować kod po Wystąpił nieobsługiwany wyjątek i opcję "**Odwiń stos wywołań w przypadku nieobsługiwanych wyjątków**" nie zostały wybrane.  
-  
--   Próbowano edytować kodu podczas debugowania aplikacji osadzonych środowiska wykonawczego.
-  
--   Próbowano edytować kodu zarządzanego za pomocą .NET Framework w wersji przed 4.5.1 i obiekt docelowy jest aplikacją 64-bitową. Jeśli chcesz Użyj Edytuj i Kontynuuj, musisz ustawić dla obiektu docelowego x86. (*projectname* **właściwości**, **skompilować** karcie **zaawansowane kompilatora** ustawienie.).  
-  
--   Próbowano edytować kod w zestawie, do którego został zmodyfikowany podczas debugowania i został ponownie załadowany.  
-  
--   Próbowano edytować kod w zestawie, który nie został załadowany.  
-  
--   Można uruchomić debugowania starą wersję aplikacji (ponieważ nowa wersja ma błędy kompilacji).
-  
-## <a name="uielement-list"></a>Lista elementów UI  
- **OK**  
- Zamknij okno dialogowe i anulować bezpośrednio poprzednie próbę edycji.  
-  
-## <a name="see-also"></a>Zobacz też  
- [C++, Edytuj i Kontynuuj blogu post](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)  
- [Obsługiwane zmiany kodu (C++)](../debugger/supported-code-changes-cpp.md)
+Aby uzyskać więcej informacji, zobacz:
+- [C++, Edytuj i Kontynuuj blog post](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)  
+- [Obsługiwane zmiany kodu (C++)](../debugger/supported-code-changes-cpp.md)
+- [Edytuj i kontynuuj](../debugger/edit-and-continue.md)

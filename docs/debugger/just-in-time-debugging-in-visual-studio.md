@@ -1,7 +1,7 @@
 ---
-title: 'Porady: odpowiadanie na debugera Just In Time | Dokumentacja firmy Microsoft'
+title: Wyłączanie debugera Just In Time | Dokumentacja firmy Microsoft
 ms.custom: ''
-ms.date: 05/23/17
+ms.date: 05/23/18
 ms.technology: vs-ide-debug
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,41 +13,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3f565d8bb58ae290b0b569bb61d4cb57e8edaa
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 147e16bab14a6a038622804cf9c57e5fdc92bf02
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179778"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382782"
 ---
-# <a name="how-to-respond-to-the-just-in-time-debugger"></a>Porady: odpowiadanie na debugera Just In Time
+# <a name="disable-the-just-in-time-debugger"></a>Wyłączanie debugera Just In Time 
 
-Działania należy podjąć, gdy pojawi się Just-in-Time okno dialogowe debuger zależą od tego, co chcesz zrobić:
+Okno dialogowe debuger just in Time może otworzyć po wystąpieniu błędu w uruchomionej aplikacji i uniemożliwić aplikacji, aby kontynuować. 
 
-#### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Jeśli chcesz naprawić lub debugowania błędu (użytkowników programu Visual Studio)
+Debuger just in Time daje możliwość uruchamiania programu Visual Studio do debugowania błędu. Konieczne jest posiadanie [programu Visual Studio](http://visualstudio.microsoft.com) lub inny wybrany debuger zainstalowana tak, aby wyświetlić szczegółowe informacje o błędzie lub spróbuj go debugować. 
 
-- Konieczne jest posiadanie [zainstalowanego programu Visual Studio](http://visualstudio.microsoft.com) Aby wyświetlić szczegółowe informacje o błędzie i spróbuj go debugować. Aby uzyskać więcej informacji, zobacz [debugowania za pomocą debugera just in Time](../debugger/debug-using-the-just-in-time-debugger.md). Jeśli nie można naprawić błąd i napraw aplikację, skontaktuj się z właścicielem aplikacji, aby rozwiązać problem.
+Jeśli jesteś użytkownikiem programu Visual Studio i chcesz wypróbować program do debugowania błędu, zobacz [debugowania za pomocą debugera just in Time](../debugger/debug-using-the-just-in-time-debugger.md). Nie można naprawić ten błąd, czy chcesz zachować debuger just in Time przed otwarciem, możesz [wyłączyć Just-In-Time, debugowanie w programie Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling). 
 
-#### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Jeśli chcesz zapobiec pojawianiu się okno dialogowe debuger just in Time
+Jeśli masz zainstalowany program Visual Studio, ale nie jest już czy może być konieczne [wyłączyć Just-In-Time, debugowanie z rejestru Windows](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry). 
 
-Możesz wykonać kroki, aby zapobiec Just-in-Time okno dialogowe debuger pojawianiu się. Jeśli aplikacja obsłuży błąd, możesz uruchomić tę aplikację normalnie.
+Jeśli nie masz zainstalowanego programu Visual Studio, można zapobiec debugowanie przez wyłączenie skryptu debugowania lub debugowania po stronie serwera Just In Time. 
 
-1. (Aplikacje sieci web) Jeśli próbujesz uruchomić aplikację sieci web, można wyłączyć debugowanie skryptu.
+- Jeśli próbujesz uruchomić aplikację sieci web, Wyłącz debugowanie skryptu:
+  
+  W Windows **Panelu sterowania** > **sieć i Internet** > **Opcje internetowe**, wybierz opcję **Wyłącz skryptu (debugowania Internet Explorer)** i **Wyłącz debugowanie skryptu (inne)**. Ustawienia i konkretne kroki zależą od używanej wersji systemu Windows i przeglądarki.
+  
+  ![Opcje internetowe JIT](../debugger/media/jitinternetoptions.png "Opcje internetowe JIT")
+  
+- Jeśli hostujesz aplikację sieci web ASP.NET w usługach IIS, należy wyłączyć debugowanie po stronie serwera:
 
-    Dla programu Internet Explorer lub Microsoft Edge Wyłącz debugowanie skryptu w oknie dialogowym Opcje internetowe. Możesz uzyskać dostęp tych ustawień w **Panelu sterowania** > **sieć i Internet** > **Opcje internetowe** (konkretne kroki zależą od użytkownika wersja systemu Windows i przeglądarki).
+  1. W Menedżerze usług IIS **widoku funkcji**w obszarze **ASP.NET** sekcji, kliknij dwukrotnie **kompilacja platformy .NET**, lub wybierz ją, a następnie wybierz **Otwórz funkcję**w **akcje** okienka. 
+  1. W obszarze **zachowanie** > **debugowania**, wybierz opcję **False**. Kroki różnią się w starszych wersjach usług IIS.
 
-    ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
+Po wyłączeniu debugowania Just-In-Time aplikacji można obsłużyć błąd i będą działać normalnie. 
 
-    Następnie ponownie otworzyć stronę sieci web, gdzie znaleźć błąd. Jeśli zmiana tego ustawienia nie rozwiąże problemu, skontaktuj się z właścicielem aplikacji sieci web, aby rozwiązać ten problem.
+Jeśli aplikacja ma nadal nieobsługiwany błąd, może zostać wyświetlony komunikat o błędzie lub aplikacja może ulec awarii lub zawieszeniu. Aplikacja nie będzie działać normalnie do czasu naprawienia błędu. Możesz spróbować skontaktować się z właścicielem aplikacji i poproś go, aby rozwiązać ten problem.
 
-3. (Użytkownicy programu visual Studio) Jeśli masz zainstalowany program Visual Studio (lub jeśli był zainstalowany wcześniej i usunął ją), [Wyłącz Just-in-Time debugging](../debugger/debug-using-the-just-in-time-debugger.md) , a następnie spróbuj ponownie uruchomić aplikację.
-
-    > [!IMPORTANT]
-    > Jeśli wyłączysz Just-in-Time debugowania i aplikacja napotkał nieobsługiwany wyjątek (błąd), zostanie wyświetlona okno dialogowe błędu standardowego zamiast tego lub aplikacji spowoduje awarię lub zawieszenie. Aplikacja nie będzie działać normalnie do czasu naprawienia błędu (przez użytkownika lub właściciela aplikacji).
-
-2. (ASP.NET i IIS) Jeśli hostujesz aplikację sieci Web platformy ASP.NET w usługach IIS, należy wyłączyć debugowanie po stronie serwera.
-
-    W Menedżerze usług IIS, kliknij prawym przyciskiem myszy węzeł serwera i wybierz polecenie **Przełącz do widoku funkcji**. W sekcji platformy ASP.NET, wybierz **kompilacja platformy .NET** i upewnij się, możesz wybrać **False** jako zachowanie debugowania (kroki różnią się w starszych wersjach usług IIS).
-
-## <a name="see-also"></a>Zobacz też
- [Podstawowe informacje o debugerze](../debugger/getting-started-with-the-debugger.md)

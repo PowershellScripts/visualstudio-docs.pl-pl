@@ -33,7 +33,7 @@ Visual Studio zapewnia wiele sposobów nawigowania po kodzie w edytorze. Ten tem
 
 ## <a name="navigate-backward-and-navigate-forward-commands"></a>Polecenia „Nawiguj wstecz” i „Nawiguj do przodu”
 
-Możesz użyć **Nawiguj wstecz** (**Ctrl**+**-**) i **Nawiguj do przodu** ( **CTRL**+**Shift**+**-**) przycisków na pasku narzędzi, aby przesunąć punkt wstawiania do poprzednich lokalizacji lub powrócić do bardziej ostatnie lokalizacji z poprzedniej lokalizacji. Przyciski te zachowują ostatnich 20 lokalizacji punktu wstawiania. Te polecenia są również dostępne na **widoku** menu, w obszarze **Nawiguj wstecz** i **Nawiguj do przodu**.
+Możesz użyć przycisków **Nawiguj wstecz** (**Ctrl**+**-**) i **Nawiguj do przodu** ( **CTRL**+**Shift**+**-**) na pasku narzędzi, aby przesunąć punkt wstawiania do poprzednich lokalizacji lub powrócić do ostatniej lokalizacji z poprzedniej lokalizacji. Przyciski te zachowują ostatnich 20 lokalizacji. Polecenia te są również dostępne w menu **Widok** jako **Nawiguj wstecz** i **Nawiguj do przodu**.
 
 ![Przyciski nawigacji do przodu i do tyłu](../ide/media/vs2017_nav_buttons.png)
 

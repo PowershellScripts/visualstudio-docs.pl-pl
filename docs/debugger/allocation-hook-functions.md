@@ -32,12 +32,12 @@ ms.lasthandoff: 07/03/2018
 ms.locfileid: "37433359"
 ---
 # <a name="allocation-hook-functions"></a>Funkcje punktu zaczepienia alokacji
-Funkcji podłączania alokacji zainstalowane za pomocą [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), jest wywoływana za każdym razem, gdy przydzielone, ponownie przydzielane lub zwolnienie pamięci. Ten typ punktu zaczepienia służy do wielu różnych celów. Go używać do testowania, jak aplikacja obsługuje sytuacje braku pamięci, takich jak do zbadania wzorców przydziału lub rejestrowania informacji o alokacji do późniejszej analizy.  
+Funkcja podłączania alokacji instalowane za pomocą [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook) jest wywoływana za każdym razem, gdy przydzielana, ponownie przydzielana lub zwalniana jest pamięć. Ten typ punktu zaczepienia służy do wielu różnych celów. Używaj go do testowania, jak aplikacja obsługuje sytuacje braku pamięci, takich jak do zbadania wzorców przydziału lub rejestrowania informacji o alokacji do późniejszej analizy.  
   
 > [!NOTE]
->  Należy pamiętać o ograniczeń dotyczących używania funkcji biblioteki wykonawczej języka C w funkcji podłączania alokacji, opisanego w [punkty zaczepienia alokacji i alokacji pamięci środowiska wykonawczego języka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
+>  Należy pamiętać o ograniczeniach dotyczących używania funkcji biblioteki wykonawczej języka C w funkcji podłączania alokacji, opisanego w [punkty zaczepienia alokacji i alokacji pamięci środowiska wykonawczego języka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
   
- Funkcji podłączania alokacji powinny mieć prototypu, jak w poniższym przykładzie:  
+ Funkcja podłączania alokacji powinna mieć prototyp, jak w poniższym przykładzie:  
   
 ```cpp
 int YourAllocHook(int nAllocType, void *pvData,  

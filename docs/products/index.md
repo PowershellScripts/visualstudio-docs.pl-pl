@@ -14,7 +14,7 @@ ms.locfileid: "44339674"
 ---
 <div id="main" class="v2">
     <div class="container">
-        <h1>Dokumentację dla produktów Visual Studio</h1>
+        <h1>Dokumentacja dla produktów Visual Studio</h1>
         <ul class="pivots">
             <li>
                 <a href="#products"></a>
@@ -72,7 +72,7 @@ ms.locfileid: "44339674"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Team Foundation Server</h3>
-                                                    <p>Instalowania, uaktualniania i zarządzanie wdrożeniami w środowisku lokalnym.</p>
+                                                    <p>Instalowanie, uaktualniania i zarządzanie wdrożeniami w środowisku lokalnym.</p>
                                                 </div>
                                             </div>
                                         </div>

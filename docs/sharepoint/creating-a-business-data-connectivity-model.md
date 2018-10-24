@@ -28,10 +28,10 @@ ms.lasthandoff: 06/22/2018
 ms.locfileid: "36326037"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Tworzenie modelu łączności danych biznesowych
-  Można utworzyć model łączności danych biznesowych (BDC) lub dostosować istniejący model BDC przy użyciu programu Visual Studio. Każdy projekt programu SharePoint może zawierać tylko jeden model. Aby uzyskać więcej informacji, zobacz [integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
+  Można utworzyć model łączności danych biznesowych (BDC) lub dostosować istniejący model BDC przy użyciu programu Visual Studio. Każdy projekt programu SharePoint może zawierać tylko jeden model. Aby uzyskać więcej informacji, zobacz [Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md). 
   
 ## <a name="create-a-new-model"></a>Utwórz nowy model
- Aby utworzyć nowy model, utwórz **model łączności danych biznesowych** lub dodaj element **model łączności danych biznesowych** do **pusty projekt SharePoint**.  
+ Aby utworzyć nowy model, utwórz projekt **modelu łączności danych biznesowych** lub dodaj element **model łączności danych biznesowych** do **pustego projektu SharePoint**. 
   
 > [!NOTE]  
 >  Musi mieć [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] zainstalowany na tym komputerze.  
@@ -47,23 +47,23 @@ ms.locfileid: "36326037"
   
  Aby zdefiniować właściwości jednostki, Edytuj plik kodu jednostki. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
- Aby pobrać, zaktualizować lub usunąć wystąpienia jednostki, należy dodać kod do pliku kodu usługi jednostki. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).  
+ Aby pobrać, zaktualizować lub usunąć wystąpienia jednostki, należy dodać kod do pliku kodu usługi jednostki. Aby uzyskać więcej informacji, zobacz [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md). 
   
- Podczas kompilowania projektu programu Visual Studio tworzy zestaw. Upewnij się, czy nie dodałeś innych elementów do projektu, które dodają kod do zestawu projektu (na przykład: elementu **sekwencyjnego przepływu pracy** lub elementu **składnika Web Part**). Nie można uruchomić kodu dla tego elementu, podczas wdrażania rozwiązania, ponieważ pakiet rozwiązania nie kopiuje zestawu dp pamięci podręcznej GAC. Pakiet rozwiązania wdraża zestaw BDC tylko do bazy danych w programie SharePoint.  
+ Podczas kompilowania projektu program Visual Studio tworzy zestaw. Upewnij się, czy do projektu nie dodano innych elementów, które dodają kod do zestawu projektu (na przykład: elementu **sekwencyjnego przepływu pracy** lub elementu **składnika Web Part**). Nie można uruchomić kodu dla tego elementu podczas wdrażania rozwiązania, ponieważ pakiet rozwiązania nie kopiuje zestawu do globalnej pamięci podręcznej zestawów. Pakiet rozwiązania wdraża zestaw tylko do bazy danych BDC w programie SharePoint. 
   
 > [!NOTE]  
->  Podczas debugowania projektu programu Visual Studio kopiuje zestaw do obu lokalizacji na lokalnym komputerze.  
+>  Podczas debugowania projektu program Visual Studio kopiuje zestaw do obu lokalizacji na lokalnym komputerze. 
   
 ## <a name="add-an-existing-model"></a>Dodawanie istniejącego modelu
  Możesz zaimportować model, który został utworzony przy użyciu innych narzędzi, takich jak SharePoint Designer. Można także zaimportować istniejący model do projektu w następujących sytuacjach:  
   
--   Aby dopasować model, który jest już wdrożony do farmy programu SharePoint.  
+-   Aby dostosować model, który jest już wdrożony do farmy serwerów programu SharePoint. 
   
--   Aby zainstalować istniejący model na wielu farmach serwerów programu SharePoint.  
+-   Aby utworzyć pakiet i wdrożyć istniejący model w wielu farmach serwerów programu SharePoint. 
   
- W obu przypadkach systemy LOB zdefiniowanego w importowanym modelu są niezmienione i będą nadal działać zgodnie z oczekiwaniami. Aby dodać istniejący model do projektu SharePoint, należy użyć okna dialogowego programu Visual Studio **Dodaj istniejący element**. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie istniejącego modelu BDC do projektu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
+ W obu przypadkach systemy LOB zdefiniowane w importowanym modelu są niezmienione i będą nadal działać zgodnie z oczekiwaniami. Aby dodać istniejący model do projektu SharePoint, należy użyć okna dialogowego programu Visual Studio **Dodaj istniejący element**. Aby uzyskać więcej informacji, zobacz [Porady: Dodawanie istniejącego pliku modelu BDC do projektu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md). 
   
-System LOB zestawu .NET Framework typu można dodać do importowanego modelu, zaznaczając odpowiednią opcję w **zestawu .NET dodać LOB**. Umożliwia to pisanie kodu niestandardowego i zdefiniowanie metadanych dla importowanego modelu przy użyciu projektanta.  
+System LOB typu zestawu .NET Framework można dodać do importowanego modelu, zaznaczając odpowiednią opcję w obszarze **Dodaj system LOB zestawu .NET **. Umożliwia to pisanie kodu niestandardowego i zdefiniowanie metadanych dla importowanego modelu przy użyciu projektanta.  
   
 ## <a name="related-topics"></a>Tematy pokrewne
   

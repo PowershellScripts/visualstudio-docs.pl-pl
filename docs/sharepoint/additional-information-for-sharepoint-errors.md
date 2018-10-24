@@ -29,7 +29,7 @@ ms.lasthandoff: 06/22/2018
 ms.locfileid: "36326024"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Dodatkowe informacje na temat błędów SharePoint
-  Możesz znaleźć pomoc w rozwiązywaniu problemów, błędów i ostrzeżeń [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzi SharePoint w tematach Rozwiązywanie problemów i publicznym forum Microsoft Developer Network (MSDN).  
+  Pomoc w zakresie rozwiązywania problemów związanych z błędami i ostrzeżeniami [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] w narzędziach SharePoint możesz znaleźć w tematach dotyczących rozwiązywania problemów i na publicznych forach Microsoft Developer Network (MSDN).  
   
 ## <a name="troubleshoot-errors-and-issues"></a>Rozwiązywanie problemów
  Aby uzyskać pomoc dotyczącą typowych błędów i innych problemów w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędziach programu SharePoint, zobacz następujące tematy:  
@@ -41,7 +41,7 @@ ms.locfileid: "36326024"
 -   [Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
 ## <a name="other-resources"></a>Inne zasoby
- W poniższej tabeli wymieniono [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] narzędzia SharePoint, fora i inne zasoby, które są dostępne w witrynie MSDN.  
+ W poniższej tabeli wymieniono fora dotyczące narzędzi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint i inne zasoby, które są dostępne w witrynie MSDN. 
   
 |Termin|Definicja|  
 |----------|----------------|  
@@ -49,7 +49,7 @@ ms.locfileid: "36326024"
 |[Visual Studio Forums](http://go.microsoft.com/fwlink/?LinkID=150452)|Udostępnia forum odpowiedzi na pytania dotyczące [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Microsoft Pomoc i obsługa techniczna](http://go.microsoft.com/fwlink/?LinkID=108287)|Umożliwia dostęp do artykułów w bazie wiedzy Knowledge Base (KB), plików do pobrania i aktualizacji, audycji pomocy technicznej i innych usług.|  
   
- Jeśli nadal nie możesz znaleźć potrzebnych odpowiedzi, możesz skorzystać z opcji pomocy technicznej online, takich jak kontakt z pomocą techniczną firmy Microsoft lub artykuły bazy wiedzy. Aby uzyskać więcej informacji, zobacz stronę [Microsoft Help i pomocy technicznej](http://go.microsoft.com/fwlink/?LinkID=155371).  
+ Jeśli nadal nie możesz znaleźć potrzebnych odpowiedzi, możesz skorzystać z opcji pomocy technicznej online, takich jak kontakt z pomocą techniczną firmy Microsoft lub artykuły bazy wiedzy. Aby uzyskać więcej informacji, zobacz stronę [Pomoc techniczna Microsoft](http://go.microsoft.com/fwlink/?LinkID=155371). 
   
 ## <a name="see-also"></a>Zobacz także
  [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  

@@ -72,7 +72,7 @@ ms.locfileid: "44339674"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Team Foundation Server</h3>
-                                                    <p>Instalowanie, uaktualniania i zarządzanie wdrożeniami w środowisku lokalnym.</p>
+                                                    <p>Instalowanie, uaktualnianie i zarządzanie wdrożeniami w środowisku lokalnym.</p>
                                                 </div>
                                             </div>
                                         </div>

@@ -42,7 +42,7 @@ Debugowanie zdalne używa modelu DCOM do komunikacji między komputerami lokalny
   
  Ten błąd występuje, gdy proces programu Visual Studio nie może uwierzytelnić się (lub podane poświadczenia są niewystarczające) do procesu zdalnego debugera za pośrednictwem modelu DCOM. Co najmniej jedno z następujących rozwiązań może rozwiązać ten problem:  
   
--   Wyłącz **natywny tryb zgodności** i **tryb zgodności zarządzanej**.  
+-   Wyłącz **natywny tryb zgodności** i **tryb zgodności zarządzanej**.
   
 -   W programie Visual Studio 2013, wyłącz **włączyć natywnego Edytuj i Kontynuuj**.  
   

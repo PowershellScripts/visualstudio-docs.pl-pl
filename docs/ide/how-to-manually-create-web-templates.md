@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d092234c183c93ce99e7d864c71c64a332aeb758
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 59315562e16a7ce3ef4e0a79551f524ca88d44bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826404"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Porady: ręczne tworzenie szablonów sieci web
 
@@ -30,33 +30,33 @@ Tworzenie szablonu sieci web jest inny niż tworzenie innych rodzajów szablonó
 
 1. Utwórz projekt sieci web.
 
-1. Modyfikować lub usuwać pliki w projekcie lub dodać nowe pliki do projektu.
+2. Modyfikować lub usuwać pliki w projekcie lub dodać nowe pliki do projektu.
 
-1. Utwórz plik XML i zapisz go z *vstemplate* plikiem, w tym samym katalogu co projekt. Nie należy dodawać go do projektu w programie Visual Studio.
+3. Utwórz plik XML i zapisz go z *vstemplate* plikiem, w tym samym katalogu co projekt. Nie należy dodawać go do projektu w programie Visual Studio.
 
-1. Edytuj *vstemplate* plik XML do udostępnienia metadanych szablonu projektu. Aby uzyskać więcej informacji, zobacz [poniższym przykładzie](#example).
+4. Edytuj *vstemplate* plik XML do udostępnienia metadanych szablonu projektu. Aby uzyskać więcej informacji, zobacz [poniższym przykładzie](#example).
 
-1. Znajdź `ProjectType` element *vstemplate* pliku i ustaw wartość tekstową na `Web`.
+5. Znajdź `ProjectType` element *vstemplate* pliku i ustaw wartość tekstową na `Web`.
 
-1. Następujące `ProjectType` elementu Dodawanie `ProjectSubType` element i ustaw wartość tekstowa do język programowania szablonu. Język programowania może być jednym z następujących wartości:
+6. Następujące `ProjectType` elementu Dodawanie `ProjectSubType` element i ustaw wartość tekstowa do język programowania szablonu. Język programowania może być jednym z następujących wartości:
 
-    - CSharp
-    - Języka Visual Basic
+   - CSharp
+   - Języka Visual Basic
 
-    Na przykład:
+     Na przykład:
 
-    ```xml
-    <TemplateData>
-        ...
-        <ProjectType>Web</ProjectType>
-        <ProjectSubType>CSharp</ProjectSubType>
-        ...
-    </TemplateData>
-    ```
+     ```xml
+     <TemplateData>
+       ...
+       <ProjectType>Web</ProjectType>
+       <ProjectSubType>CSharp</ProjectSubType>
+       ...
+     </TemplateData>
+     ```
 
-1. Wybierz pliki do szablonu (w tym *vstemplate* pliku), kliknij prawym przyciskiem myszy zaznaczenie, a wybierz **wysyłać** > **skompresowany folder (zip)**. Pliki są kompresowane do *zip* pliku.
+7. Wybierz pliki do szablonu (w tym *vstemplate* pliku), kliknij prawym przyciskiem myszy zaznaczenie, a wybierz **wysyłać** > **skompresowany folder (zip)**. Pliki są kompresowane do *zip* pliku.
 
-1. Umieść *zip* pliku szablonu w katalogu szablonu projektu programu Visual Studio. Domyślnie ten katalog jest *%USERPROFILE%\Documents\Visual Studio \<wersji\>\ProjectTemplates*.
+8. Umieść *zip* pliku szablonu w katalogu szablonu projektu programu Visual Studio. Domyślnie ten katalog jest *%USERPROFILE%\Documents\Visual Studio \<wersji\>\ProjectTemplates*.
 
 ## <a name="example"></a>Przykład
 

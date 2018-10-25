@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: e0ae541830adab222b07d1f16ce99e4957e380e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280082"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838104"
 ---
 # <a name="graphics-frame-analysis"></a>Analiza klatek grafiki
 Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do analizowania i zoptymalizować wydajność renderowania Direct3D grach i aplikacjach.  
@@ -24,17 +24,17 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
 ## <a name="frame-analysis"></a>Analiza klatek  
  Analiza klatek używa informacje, które są przechwytywane w pliku dziennika grafiki do celów diagnostycznych, ale używa go do podsumowania wydajność renderowania w zamian. Informacje o wydajności nie jest rejestrowane w dzienniku podczas przechwytywania. Zamiast tego informacje o wydajności jest generowany później, podczas analizy klatek przez zdarzenia czasowe i zbieranie statystyk jak odtworzyć ramki. Takie podejście ma kilka zalet w stosunku do rejestrowania informacji o wydajności podczas przechwytywania:  
   
--   Analiza klatek można średnie wyniki z poszczególnymi wielu odtworzeniami tego samego ramki upewnij się, że wydajność podsumowania statystycznie dźwięku.  
+- Analiza klatek można średnie wyniki z poszczególnymi wielu odtworzeniami tego samego ramki upewnij się, że wydajność podsumowania statystycznie dźwięku.  
   
--   Analiza klatek może generować informacji o wydajności, konfiguracji sprzętu i urządzeń, niż to, gdzie informacje zostały przechwycone.  
+- Analiza klatek może generować informacji o wydajności, konfiguracji sprzętu i urządzeń, niż to, gdzie informacje zostały przechwycone.  
   
--   Analiza klatek może generować nowe podsumowania wydajności z wcześniej przechwycone informacje — na przykład, gdy sterowniki procesora GPU są zoptymalizowane pod kątem lub udostępnienia dodatkowych funkcji debugowania.  
+- Analiza klatek może generować nowe podsumowania wydajności z wcześniej przechwycone informacje — na przykład, gdy sterowniki procesora GPU są zoptymalizowane pod kątem lub udostępnienia dodatkowych funkcji debugowania.  
   
- Oprócz tych korzyści analizy klatek można również zmienić sposób renderowania ramki podczas odtwarzania, aby jest obecny, aby dowiedzieć się, jak te zmiany mogą mieć wpływ na wydajność renderowania aplikacji. Te informacje służy do określania między strategii optymalizacji w potencjalne bez konieczności zaimplementować je wszystkie i następnie przechwytywanie i porównaj wszystkie wyniki samodzielnie.  
+  Oprócz tych korzyści analizy klatek można również zmienić sposób renderowania ramki podczas odtwarzania, aby jest obecny, aby dowiedzieć się, jak te zmiany mogą mieć wpływ na wydajność renderowania aplikacji. Te informacje służy do określania między strategii optymalizacji w potencjalne bez konieczności zaimplementować je wszystkie i następnie przechwytywanie i porównaj wszystkie wyniki samodzielnie.  
   
- Mimo że funkcja analizy klatek jest przeznaczona głównie do pomagają zwiększyć wydajność renderowania, może równie pomóc Ci osiągnąć lepszą jakość wizualną dla elementu docelowego wydajności danego lub ograniczyć zużycie energii procesora GPU.  
+  Mimo że funkcja analizy klatek jest przeznaczona głównie do pomagają zwiększyć wydajność renderowania, może równie pomóc Ci osiągnąć lepszą jakość wizualną dla elementu docelowego wydajności danego lub ograniczyć zużycie energii procesora GPU.  
   
- Aby wyświetlić pokaz działania analizy klatek czynności dla aplikacji, możesz obejrzeć [analiza klatek grafiki programu Visual Studio](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) wideo w witrynie Channel 9.  
+  Aby wyświetlić pokaz działania analizy klatek czynności dla aplikacji, możesz obejrzeć [analiza klatek grafiki programu Visual Studio](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) wideo w witrynie Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Za pomocą analizy klatek  
  Zanim będzie możliwe użycie analizy klatek, należy przechwytywać informacje graficzne z aplikacji po jej uruchomieniu, tak samo jak przy użyciu jednej z innych narzędzi Analizator grafiki programu. Następnie w oknie grafiki (.vsglog) dokumentu dziennika wybierz **analizy klatek** kartę.  
@@ -48,23 +48,23 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
   
  Niektóre wyniki wskazują bezpośrednio, jak wariant wpływa na wydajność renderowania:  
   
--   Jeśli wariant warianty punktowego filtrowania tekstur wykazało, że wzrost wydajności, wówczas używanie tekstury warianty punktowego filtrowania w aplikacji zostaną wyświetlone podobne wzrost wydajności.  
+- Jeśli wariant warianty punktowego filtrowania tekstur wykazało, że wzrost wydajności, wówczas używanie tekstury warianty punktowego filtrowania w aplikacji zostaną wyświetlone podobne wzrost wydajności.  
   
--   Jeśli wariantu 1 x 1 okienka ekranu wykazało, że wzrost wydajności, następnie zmniejszenie rozmiaru elementów docelowych renderowania w aplikacji będą zwiększyć jej wydajność renderowania.  
+- Jeśli wariantu 1 x 1 okienka ekranu wykazało, że wzrost wydajności, następnie zmniejszenie rozmiaru elementów docelowych renderowania w aplikacji będą zwiększyć jej wydajność renderowania.  
   
--   Jeśli wariant kompresji tekstury BC wykazało, że wzrost wydajności, następnie w aplikacji przy użyciu kompresji tekstury BC zostaną wyświetlone podobne wzrost wydajności.  
+- Jeśli wariant kompresji tekstury BC wykazało, że wzrost wydajności, następnie w aplikacji przy użyciu kompresji tekstury BC zostaną wyświetlone podobne wzrost wydajności.  
   
--   Jeśli wariant 2xMSAA ma prawie ta sama wydajność co wariant 0xMSAA, można włączyć 2xMSAA w swojej aplikacji, aby poprawiać jego jakość renderowanie, bez ponoszenia kosztów w wydajności.  
+- Jeśli wariant 2xMSAA ma prawie ta sama wydajność co wariant 0xMSAA, można włączyć 2xMSAA w swojej aplikacji, aby poprawiać jego jakość renderowanie, bez ponoszenia kosztów w wydajności.  
   
- Inne wyniki może sugerować głębiej, bardziej subtelne wpływ na wydajność Twojej aplikacji:  
+  Inne wyniki może sugerować głębiej, bardziej subtelne wpływ na wydajność Twojej aplikacji:  
   
--   Jeśli wariantu 1 x 1 okienka ekranu przedstawia bardzo dużych wzrostów wydajności, aplikacja prawdopodobnie zużywa fillrate więcej niż jest dostępne. Jeśli ten wariant wskazuje nie wzrost wydajności, aplikacja jest prawdopodobnie przetwarzania zbyt wielu wierzchołków.  
+- Jeśli wariantu 1 x 1 okienka ekranu przedstawia bardzo dużych wzrostów wydajności, aplikacja prawdopodobnie zużywa fillrate więcej niż jest dostępne. Jeśli ten wariant wskazuje nie wzrost wydajności, aplikacja jest prawdopodobnie przetwarzania zbyt wielu wierzchołków.  
   
--   Jeśli wariant formatu docelowego renderowania 16bpp wskazuje znaczący wzrost wydajności, aplikacja prawdopodobnie zużywa zbyt dużej ilości pamięci przepustowość.  
+- Jeśli wariant formatu docelowego renderowania 16bpp wskazuje znaczący wzrost wydajności, aplikacja prawdopodobnie zużywa zbyt dużej ilości pamięci przepustowość.  
   
--   Jeśli wariant wymiarów tekstury Half/Quarter pokazuje znaczący wzrost wydajności, Twoje tekstury prawdopodobnie zajmować dużo pamięci, używać zbyt dużej ilości przepustowości lub nieefektywnie Użyj pamięci podręcznej tekstury. Jeśli ten wariant wskazuje bez zmian, wydajność, prawdopodobnie można tekstury większych i bardziej szczegółowy bez konieczności płacenia spadek wydajności.  
+- Jeśli wariant wymiarów tekstury Half/Quarter pokazuje znaczący wzrost wydajności, Twoje tekstury prawdopodobnie zajmować dużo pamięci, używać zbyt dużej ilości przepustowości lub nieefektywnie Użyj pamięci podręcznej tekstury. Jeśli ten wariant wskazuje bez zmian, wydajność, prawdopodobnie można tekstury większych i bardziej szczegółowy bez konieczności płacenia spadek wydajności.  
   
- Gdy będzie dostępnych liczników sprzętowych umożliwia ich zbierania bardzo szczegółowe informacje na temat dlaczego może cierpiących wydajność renderowania Twojej aplikacji. I przez urządzenia do 9.2 lub nowszy poziom funkcji obsługi zapytań zamknięcia głębokość (**pikseli zamknięte** licznika) i sygnatury czasowe. Innych liczników sprzętowych mogą być dostępne, w zależności od tego, czy producent procesora GPU ma zaimplementowany liczników sprzętowych i udostępniane im w jej sterownika. Te liczniki można użyć, aby potwierdzić przyczynę dokładne wyniki wyświetlane w tabeli podsumowania — na przykład można określić, czy overdraw jest czynnikiem, sprawdzając wartość procentowa piksele, które zostały zamknięte przez test głębi.  
+  Gdy będzie dostępnych liczników sprzętowych umożliwia ich zbierania bardzo szczegółowe informacje na temat dlaczego może cierpiących wydajność renderowania Twojej aplikacji. I przez urządzenia do 9.2 lub nowszy poziom funkcji obsługi zapytań zamknięcia głębokość (**pikseli zamknięte** licznika) i sygnatury czasowe. Innych liczników sprzętowych mogą być dostępne, w zależności od tego, czy producent procesora GPU ma zaimplementowany liczników sprzętowych i udostępniane im w jej sterownika. Te liczniki można użyć, aby potwierdzić przyczynę dokładne wyniki wyświetlane w tabeli podsumowania — na przykład można określić, czy overdraw jest czynnikiem, sprawdzając wartość procentowa piksele, które zostały zamknięte przez test głębi.  
   
 ### <a name="timeline-and-summary-table"></a>Oś czasu i tabelę podsumowania  
  Domyślnie oś czasu i tabeli podsumowania są wyświetlane, a pozostałe sekcje są zwinięte.  
@@ -147,9 +147,9 @@ Użyj analizy klatek grafiki w analizatora grafiki programu Visual Studio do ana
   
  Ponieważ żaden komputer GPU obecnie oferowane przez firmy Intel, AMD lub nVidia obsługuje liczników sprzętowych procesora GPU niezawodne, analiza klatek nie zbiera liczniki z nich. Jednak funkcja analizy klatek zbierania liczników sprzętowych z następujących procesora GPU, która je obsługuje niezawodne:  
   
--   nVidia T40 (Tegra4)
+- nVidia T40 (Tegra4)
   
- Żadna inna platforma, która obsługuje analizy klatek zbiera dane liczników sprzętowych procesora GPU.  
+  Żadna inna platforma, która obsługuje analizy klatek zbiera dane liczników sprzętowych procesora GPU.  
   
 > [!NOTE]
 >  Ponieważ liczników sprzętowych procesora GPU zasobów sprzętowych, może upłynąć wielu przebiegów, aby zebrać pełny zestaw liczników sprzętowych dla poszczególnych wariantu renderowania. W rezultacie kolejność, w którym procesor GPU zbieranymi licznikami jest nieokreślona.  

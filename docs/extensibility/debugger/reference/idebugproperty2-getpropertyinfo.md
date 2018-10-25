@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f922731f5c595f7308f78269b8386b7da20e2398
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80f1f35e8699c04101936bcfa31abfdde751a236
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118599"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823102"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
-Pobiera [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strukturę, która opisuje właściwość.  
+Pobiera [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strukturę, która opisuje właściwość, która.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,25 +51,25 @@ int GetPropertyInfo (
   
 #### <a name="parameters"></a>Parametry  
  `dwFields`  
- [in] Kombinacja wartości z [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) wyliczenia, która określa pola, które mają zostać wypełnione `pPropertyInfo` struktury.  
+ [in] Kombinacja wartości z [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) wyliczenie, które określa pola, które są wypełniane w `pPropertyInfo` struktury.  
   
  `nRadix`  
- [in] Podstawa ma być używany podczas formatowania wszelkie informacje numeryczne.  
+ [in] Podstawy ma być używany w formatowaniu wszelkie dane liczbowe.  
   
  `dwTimeout`  
- [in] Określa maksymalny czas (w milisekundach) oczekiwania przed powrotem z tej metody. Użyj `INFINITE` będzie czekać w nieskończoność.  
+ [in] Określa maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.  
   
  `rgpArgs`  
- [w, out] Zarezerwowane do użytku w przyszłości; Ustaw wartość null.  
+ [out w] Zarezerwowane dla przyszłego użytku; Ustaw wartość null.  
   
  `dwArgCount`  
- [in] Zarezerwowane do użytku w przyszłości; ustawić na zero.  
+ [in] Zarezerwowane dla przyszłego użytku; ustawić na zero.  
   
  `pPropertyInfo`  
- [out] A [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktury, która jest wypełniane opis właściwości.  
+ [out] A [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) strukturę, która jest wypełniane opis właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

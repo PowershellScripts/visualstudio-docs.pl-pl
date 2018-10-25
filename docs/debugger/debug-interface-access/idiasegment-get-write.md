@@ -1,5 +1,5 @@
 ---
-title: IDiaSegment::get_write | Dokumentacja firmy Microsoft
+title: Idiasegment::get_write — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6023caea9a2227d1773e900214e3abf87b272d2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f4c312c0b2c6b4374ad407fa449ddbedfa774233
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462042"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826001"
 ---
 # <a name="idiasegmentgetwrite"></a>IDiaSegment::get_write
-Pobiera flagę wskazującą, czy segmentu może być modyfikowana.  
+Pobiera flagę wskazującą, czy może być modyfikowana segmentu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,7 +37,7 @@ HRESULT get_write (
  [out] Zwraca `TRUE` Jeśli segment mogą być zapisywane do; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

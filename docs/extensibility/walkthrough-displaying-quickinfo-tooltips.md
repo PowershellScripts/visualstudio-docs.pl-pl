@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ad89e544727a67611a305444f85ff022f6b2ff
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824191"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Instruktażu: Etykietek narzędzi Szybkieinfo ekran
 Skrócone informacje jest funkcja IntelliSense, który wyświetla podpisy metod i opisy, gdy użytkownik przesuwa wskaźnik myszy nad nazwą metody. Definiowanie identyfikatory, które zawierają opisy skrócone informacje, a następnie tworząc etykietka narzędzia, w której chcesz wyświetlić zawartość można zaimplementować opartych na języku funkcje, takie jak skrócone informacje. Można zdefiniować skrócone informacje w kontekście usługi językowej, można zdefiniować własny plik Nazwa rozszerzenia i zawartości typ i wyświetlić skrócone informacje dla właśnie tego typu lub skrócone informacje może wyświetlać dla istniejącego typu zawartości (na przykład "text"). W tym instruktażu przedstawiono sposób wyświetlenia sekcji szybkich informacji dla typu zawartości "text".  
   
  W przykładzie skrócone informacje w tym przewodniku Wyświetla etykietki narzędzi, gdy użytkownik przesuwa wskaźnik myszy nad nazwą metody. Ten projekt wymaga implementują te interfejsy cztery:  
   
--   interfejs źródłowy  
+- interfejs źródłowy  
   
--   interfejs dostawcy źródła  
+- interfejs dostawcy źródła  
   
--   Kontroler interfejsu  
+- Kontroler interfejsu  
   
--   Kontroler interfejsu dostawcy  
+- Kontroler interfejsu dostawcy  
   
- Dostawcy źródła i kontroler Managed Extensibility Framework (MEF) składające się jest odpowiedzialny za eksportowanie klas źródłowych i kontroler i importowanie usług i brokerzy, takich jak <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, która tworzy tekst etykietki narzędzia bufor i <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, która wyzwala sesji skrócone informacje.  
+  Dostawcy źródła i kontroler Managed Extensibility Framework (MEF) składające się jest odpowiedzialny za eksportowanie klas źródłowych i kontroler i importowanie usług i brokerzy, takich jak <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, która tworzy tekst etykietki narzędzia bufor i <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, która wyzwala sesji skrócone informacje.  
   
- W tym przykładzie źródło skrócone informacje używa stałej listy nazwy metod i opisów, ale w pełnej implementacji usługi językowej i dokumentacji języka są odpowiedzialne za świadczenie tej zawartości.  
+  W tym przykładzie źródło skrócone informacje używa stałej listy nazwy metod i opisów, ale w pełnej implementacji usługi językowej i dokumentacji języka są odpowiedzialne za świadczenie tej zawartości.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Począwszy od programu Visual Studio 2015, nie trzeba instalować programu Visual Studio SDK z Centrum pobierania. Został on uwzględniony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

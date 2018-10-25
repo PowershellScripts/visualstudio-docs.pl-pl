@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 28dbf874ab5f7f80d7f67f789e8122bcff1a2fa6
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817337"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813430"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Debugowanie aplikacji ASP.NET lub ASP.NET Core w programie Visual Studio
 
@@ -121,29 +121,29 @@ Projekty ASP.NET mają *web.config* pliki domyślne, które zawierają zarówno 
   
 3. Upewnij się, że `debug` atrybutu w `compilation` element jest ustawiony na wartość `true`. (Jeśli `compilation` nie zawiera elementu `debug` atrybutu, dodaj go i ustaw ją na `true`.) 
   
-  Jeśli używasz lokalnych usług IIS zamiast domyślnego serwera usług IIS Express, upewnij się, że `targetFramework` wartość atrybutu `compilation` pasującego elementu framework na serwerze usług IIS.
+   Jeśli używasz lokalnych usług IIS zamiast domyślnego serwera usług IIS Express, upewnij się, że `targetFramework` wartość atrybutu `compilation` pasującego elementu framework na serwerze usług IIS.
   
-  `compilation` Elementu *web.config* plik powinien wyglądać podobnie jak w poniższym przykładzie:
+   `compilation` Elementu *web.config* plik powinien wyglądać podobnie jak w poniższym przykładzie:
 
-  > [!NOTE]
-  > W tym przykładzie jest częściowym *web.config* pliku. Są zazwyczaj dodatkowe sekcje XML `configuration` i `system.web` elementów, a `compilation` element może także zawierać inne atrybuty i elementy.
+   > [!NOTE]
+   > W tym przykładzie jest częściowym *web.config* pliku. Są zazwyczaj dodatkowe sekcje XML `configuration` i `system.web` elementów, a `compilation` element może także zawierać inne atrybuty i elementy.
   
-  ```xml
-  <configuration>  
+   ```xml
+   <configuration>  
       ...  
       <system.web>  
           <compilation  debug="true"  targetFramework="4.6.1" ... > 
              ...  
           </compilation>  
       </system.web>  
-  </configuration>  
-  ```
+   </configuration>  
+   ```
 
 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] automatycznie wykrywa zmiany *web.config* plików i stosuje nowe ustawienia konfiguracji. Nie trzeba ponownie uruchomić komputer lub serwer IIS, aby zmiany zaczęły obowiązywać.  
   
 Witryny sieci Web mogą zawierać kilka wirtualne katalogi i podkatalogi, za pomocą *web.config* pliki w każdej z nich. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacje, dziedziczą ustawienia konfiguracji z *web.config* pliki na wyższym poziomie w ścieżce adresu URL. Hierarchiczna *web.config* ustawienia plików mają zastosowanie do wszystkich [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikacji pod nimi w hierarchii. Ustawienie różnych konfiguracji w *web.config* plik niżej w hierarchii zastępuje ustawienia w pliku wyższy.  
   
-Na przykład, jeśli określisz `debug="true"` w *www.microsoft.com/aaa/web.config*, dowolnej aplikacji w *aaa* folderze lub w jego podfolderze z *aaa* dziedziczy to ustawienie Jeśli jeden z tych aplikacji zastępuje ustawienie za pomocą własnego, z wyjątkiem *web.config* pliku.  
+Na przykład, jeśli określisz `debug="true"` w <em>www.microsoft.com/aaa/web.config</em>, dowolnej aplikacji w *aaa* folderze lub w jego podfolderze z *aaa* dziedziczy to ustawienie Jeśli jeden z tych aplikacji zastępuje ustawienie za pomocą własnego, z wyjątkiem *web.config* pliku.  
   
 ## <a name="publish-in-debug-mode-using-the-file-system"></a>Publikowanie w trybie debugowania przy użyciu systemu plików
 

@@ -14,12 +14,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0c8730d2a73b5e6dd2c48138c1633e24234db29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c01116ee4a4b0edc43a6277db7725e8d962bd607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839326"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Przegląd narzędzi językowych właściwych dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +39,31 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
 ## <a name="the-dsl-tools-solution"></a>Rozwiązanie narzędzi języka DSL  
  Kreator projektanta specyficznego dla domeny zawiera następujące szablony rozwiązań:  
   
--   Przepływ zadań  
+- Przepływ zadań  
   
--   Diagramy klas  
+- Diagramy klas  
   
--   Minimalny języka  
+- Minimalny języka  
   
--   Modele składnika  
+- Modele składnika  
   
--   Minimalny WPF  
+- Minimalny WPF  
   
--   Minimalny Windows.Forms  
+- Minimalny Windows.Forms  
   
--   Biblioteka DSL  
+- Biblioteka DSL  
   
- Aby uzyskać więcej informacji, zobacz [Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+  Aby uzyskać więcej informacji, zobacz [Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
- Kreator utworzy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązanie, które ma następujące projekty:  
+  Kreator utworzy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązanie, które ma następujące projekty:  
   
--   Język DSL  
+- Język DSL  
   
-     Projektu Dsl definiuje języka specyficznego dla domeny i jego narzędzi edycji i przetwarzania.  
+   Projektu Dsl definiuje języka specyficznego dla domeny i jego narzędzi edycji i przetwarzania.  
   
--   **DslPackage**  
+- **DslPackage**  
   
-     Projekt DslPackage Określa, jak narzędzia językowe zintegrować z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+   Projekt DslPackage Określa, jak narzędzia językowe zintegrować z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="the-dsl-tools-graphical-interface"></a>Interfejsu graficznego narzędzia DSL  
  Aby dodać elementy i relacje do języka specyficznego dla domeny, można użyć interfejsu graficznego narzędzia DSL. Po dodaniu elementów można zdefiniować ich wygląd, mapując je do kształtów zewnętrznych, dostosowywanie kolorów i dodawanie dekoratory. Możesz również dodać elementy do przybornika.  

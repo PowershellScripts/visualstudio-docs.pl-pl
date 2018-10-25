@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5a45466b441fc8964b0b3a715acbd95b920e3392
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa08a132c752b5bdde7ba2b497a6bd206e8f2972
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299389"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843850"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagramy składników UML: Zalecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
  Rysowanie diagramów składników ma kilka zalet:  
   
--   Myślenie o projekcie w odniesieniu do głównych bloków ułatwia zespołowi deweloperów zrozumienie istniejącego projektu i utworzenie nowego.  
+- Myślenie o projekcie w odniesieniu do głównych bloków ułatwia zespołowi deweloperów zrozumienie istniejącego projektu i utworzenie nowego.  
   
--   Myślenie o systemie jako o zbiorze składników z dobrze zdefiniowanymi interfejsami dostarczanymi i wymaganymi poprawia rozdzielenie składników. To z kolei sprawia, że projekt łatwiej zrozumieć i łatwiej go zmienić, gdy zmienią się wymagania.  
+- Myślenie o systemie jako o zbiorze składników z dobrze zdefiniowanymi interfejsami dostarczanymi i wymaganymi poprawia rozdzielenie składników. To z kolei sprawia, że projekt łatwiej zrozumieć i łatwiej go zmienić, gdy zmienią się wymagania.  
   
- Można użyć diagramu składników do reprezentowania projektu niezależnie od tego, jaki język lub platforma projektowania są lub będą używane.  
+  Można użyć diagramu składników do reprezentowania projektu niezależnie od tego, jaki język lub platforma projektowania są lub będą używane.  
   
 ##  <a name="OtherDiagrams"></a> Relacja z innymi diagramami  
  Diagramów składników możesz używać w połączeniu z innymi diagramami.  
@@ -118,32 +118,32 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
 ##### <a name="to-add-ports-to-a-component"></a>Aby dodać porty do składnika  
   
-1.  W przyborniku kliknij **interfejs dostarczany** lub **interfejs wymagany**.  
+1. W przyborniku kliknij **interfejs dostarczany** lub **interfejs wymagany**.  
   
-2.  Kliknij składnik, który chcesz do niego dodać.  
+2. Kliknij składnik, który chcesz do niego dodać.  
   
-     Port pojawia się na granicy składnika.  
+    Port pojawia się na granicy składnika.  
   
-     Nowy interfejs jest tworzony jako typ portu. Ten interfejs jest wyświetlany w **Eksploratora modelu UML**.  
+    Nowy interfejs jest tworzony jako typ portu. Ten interfejs jest wyświetlany w **Eksploratora modelu UML**.  
   
-3.  Przeciągnij port wokół granicy składnika, aby go umieścić w odpowiednim miejscu.  
+3. Przeciągnij port wokół granicy składnika, aby go umieścić w odpowiednim miejscu.  
   
-4.  Przeciągnij etykietę portu, aby dopasować jej położenie.  
+4. Przeciągnij etykietę portu, aby dopasować jej położenie.  
   
-5.  Kliknij etykietę, aby ją zmienić. Etykieta zawiera nazwę interfejsu. Jeśli ją zmienisz, zmienisz nazwę interfejsu.  
+5. Kliknij etykietę, aby ją zmienić. Etykieta zawiera nazwę interfejsu. Jeśli ją zmienisz, zmienisz nazwę interfejsu.  
   
- Jeśli chcesz wyświetlić listę atrybutów i operacji interfejsu, możesz to zrobić dodając je do interfejsu w Eksploratorze modelu UML. Możesz też przeciągnąć interfejs z Eksploratora modelu UML do diagramu klasy i dodać operacje i atrybuty.  
+   Jeśli chcesz wyświetlić listę atrybutów i operacji interfejsu, możesz to zrobić dodając je do interfejsu w Eksploratorze modelu UML. Możesz też przeciągnąć interfejs z Eksploratora modelu UML do diagramu klasy i dodać operacje i atrybuty.  
   
 ### <a name="linking-between-components"></a>Tworzenie powiązań między składnikami  
  Użyj zależność (4), aby pokazać, że wymaganie jednego składnika może być spełnione przez operacje lub usługi zapewniane przez inny składnik.  
   
 ##### <a name="to-show-that-a-provided-interface-can-satisfy-a-required-interface"></a>Aby pokazać, że interfejs dostarczany może spełnić interfejs wymagany  
   
-1.  W przyborniku kliknij **zależności**.  
+1. W przyborniku kliknij **zależności**.  
   
-2.  Kliknij port, z interfejsem wymaganym jednego ze składników, a następnie kliknij port z interfejsem dostarczanym w innym składniku.  
+2. Kliknij port, z interfejsem wymaganym jednego ze składników, a następnie kliknij port z interfejsem dostarczanym w innym składniku.  
   
- Należy unikać projektowania pętli zależności, w których każdy składnik w grupie zależy od wszystkich innych składników.  
+   Należy unikać projektowania pętli zależności, w których każdy składnik w grupie zależy od wszystkich innych składników.  
   
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>Aby dodać port dla istniejącego interfejsu do składnika  
   
@@ -269,11 +269,11 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
  Użyj diagramów sekwencji do oceny, jak praca systemu jest rozłożona się między różnymi składnikami.  
   
--   Jeśli zbyt wiele znajduje się z jednej strony, zaktualizowanie aplikacji prawdopodobnie będzie trudniejsze, niż gdy praca jest rozłożona równomiernie.  
+- Jeśli zbyt wiele znajduje się z jednej strony, zaktualizowanie aplikacji prawdopodobnie będzie trudniejsze, niż gdy praca jest rozłożona równomiernie.  
   
--   Jeżeli praca jest za bardzo rozłożona i ma wiele interakcji, system może działać źle i być trudny do zrozumienia.  
+- Jeżeli praca jest za bardzo rozłożona i ma wiele interakcji, system może działać źle i być trudny do zrozumienia.  
   
- ![Diagram przedstawiający współpracujących części sekwencji](../modeling/media/uml-compdescparts.png "UML_CompDescParts")  
+  ![Diagram przedstawiający współpracujących części sekwencji](../modeling/media/uml-compdescparts.png "UML_CompDescParts")  
   
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>Aby narysować diagram sekwencji pokazujący współpracę pomiędzy częściami  
   
@@ -327,13 +327,13 @@ W programie Visual Studio, można narysować *diagram składników* Aby wyświet
   
  Typowe rodzaje zależności obejmują:  
   
--   Jeden składnik wywołuje kod w drugim.  
+- Jeden składnik wywołuje kod w drugim.  
   
--   Jeden składnik tworzy wystąpienia klasy, która jest zdefiniowana w innej klasie.  
+- Jeden składnik tworzy wystąpienia klasy, która jest zdefiniowana w innej klasie.  
   
--   Jeden składnik używa informacji utworzonych przez inny składnik.  
+- Jeden składnik używa informacji utworzonych przez inny składnik.  
   
- Możesz użyć nazwy strzałki zależności do oznaczenia szczególnego rodzaju użycia. Aby ustawić nazwę, kliknij prawym przyciskiem myszy strzałkę, a następnie kliknij przycisk **właściwości**i ustaw **nazwa** pola w oknie dialogowym właściwości.  
+  Możesz użyć nazwy strzałki zależności do oznaczenia szczególnego rodzaju użycia. Aby ustawić nazwę, kliknij prawym przyciskiem myszy strzałkę, a następnie kliknij przycisk **właściwości**i ustaw **nazwa** pola w oknie dialogowym właściwości.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   

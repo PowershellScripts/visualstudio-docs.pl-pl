@@ -20,15 +20,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a39b0a05efd70dcbfb611fba19c5e17250be5e78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c1e31917356e3d55a7db38ba7aabc9258af1deb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263747"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827548"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Identyfikatory powinny być napisane poprawnie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
@@ -42,30 +43,30 @@ ms.locfileid: "49263747"
 ## <a name="rule-description"></a>Opis reguły
  Ta reguła analizuje identyfikator na tokeny oraz sprawdzając pisownię każdego tokenu. Algorytm analizy wykonuje następujące przekształcenia:
 
--   Wielkie litery uruchomić nowy token. Na przykład MyNameIsJoe tokenizes "Mój", "Name", "Is", "Jan".
+- Wielkie litery uruchomić nowy token. Na przykład MyNameIsJoe tokenizes "Mój", "Name", "Is", "Jan".
 
--   Wiele wielkich liter ostatni wielką literą rozpoczyna się nowy token. Na przykład GUIEditor tokenizes do "Graficznym interfejsem użytkownika", "Editor".
+- Wiele wielkich liter ostatni wielką literą rozpoczyna się nowy token. Na przykład GUIEditor tokenizes do "Graficznym interfejsem użytkownika", "Editor".
 
--   Początkowe i końcowe apostrofy są usuwane. Na przykład "nadawca" tokenizes do "sender".
+- Początkowe i końcowe apostrofy są usuwane. Na przykład "nadawca" tokenizes do "sender".
 
--   Podkreślenia oznaczającego koniec token i są usuwane. Na przykład Hello_world tokenizes do "Hello", "world".
+- Podkreślenia oznaczającego koniec token i są usuwane. Na przykład Hello_world tokenizes do "Hello", "world".
 
--   Takie osadzone znaki zostaną usunięte. Na przykład w przypadku & mat tokenizes do "format".
+- Takie osadzone znaki zostaną usunięte. Na przykład w przypadku & mat tokenizes do "format".
 
- Domyślnie używany jest język angielski (en) wersję modułu sprawdzania pisowni. Nie słowników językowych są obecnie dostępne.
+  Domyślnie używany jest język angielski (en) wersję modułu sprawdzania pisowni. Nie słowników językowych są obecnie dostępne.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, Popraw pisownię wyrazu, lub Dodaj ten wyraz do słownika niestandardowego, który nosi nazwę CustomDictionary.xml. Umieść słowniku, w katalogu instalacji narzędzia do katalogu projektu lub katalogu, który jest skojarzony z narzędzia w ramach profilu użytkownika (%USERPROFILE%\Application danych\\...). Aby dowiedzieć się, jak dodać słownika niestandardowego do projektu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zobacz [porady: dostosowywanie słownika analizy kodu](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
--   Dodaj wyrazy, które nie powinny powodować naruszenie w ścieżce słów/słownik/Recognized.
+- Dodaj wyrazy, które nie powinny powodować naruszenie w ścieżce słów/słownik/Recognized.
 
--   Dodawanie wyrazów, która powinna powodować naruszenie w ścieżce słów/słownik/nierozpoznane.
+- Dodawanie wyrazów, która powinna powodować naruszenie w ścieżce słów/słownik/nierozpoznane.
 
--   Dodaj wyrazy, które powinny zostać oznaczone jako przestarzałe w ścieżce słów/słownik/przestarzały. Zobacz temat powiązane reguły [CA1726: Używaj preferowanych terminów](../code-quality/ca1726-use-preferred-terms.md)Aby uzyskać więcej informacji.
+- Dodaj wyrazy, które powinny zostać oznaczone jako przestarzałe w ścieżce słów/słownik/przestarzały. Zobacz temat powiązane reguły [CA1726: Używaj preferowanych terminów](../code-quality/ca1726-use-preferred-terms.md)Aby uzyskać więcej informacji.
 
--   Dodać wyjątki do reguł stosowania wielkości liter akronim ścieżkę akronimów/słownik/CasingExceptions.
+- Dodać wyjątki do reguł stosowania wielkości liter akronim ścieżkę akronimów/słownik/CasingExceptions.
 
- Oto przykład struktury pliku słownika niestandardowego.
+  Oto przykład struktury pliku słownika niestandardowego.
 
 ```
 <Dictionary>

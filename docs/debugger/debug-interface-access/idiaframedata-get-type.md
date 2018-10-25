@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_type | Dokumentacja firmy Microsoft
+title: Idiaframedata::get_type — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b95262fb5cc9afce25e9f4120b981543939e5be
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0209a715ece3e1fa760080ad7ccf0803d11950df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460443"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834594"
 ---
 # <a name="idiaframedatagettype"></a>IDiaFrameData::get_type
 Pobiera typ ramki specyficznych dla kompilatora.  
@@ -34,11 +34,11 @@ HRESULT get_type (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca wartość z zakresu od [stackframetypeenum — wyliczenie](../../debugger/debug-interface-access/stackframetypeenum.md) wyliczenia wskazująca typ ramki specyficznych dla kompilatora.  
+ [out] Zwraca wartość z zakresu od [stackframetypeenum — wyliczenie](../../debugger/debug-interface-access/stackframetypeenum.md) wyliczenie, które wskazuje typ ramki specyficznych dla kompilatora.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md)   
- [Stackframetypeenum — wyliczenie](../../debugger/debug-interface-access/stackframetypeenum.md)
+ [StackFrameTypeEnum, wyliczenie](../../debugger/debug-interface-access/stackframetypeenum.md)

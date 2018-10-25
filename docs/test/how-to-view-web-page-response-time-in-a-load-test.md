@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b254856b819bda2a5d05210f9cef94968197053
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 945bbe8377d51974bdfb09b762e415da3004346b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379485"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821841"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Porady: wyświetlanie czasu odpowiedzi strony sieci web w teście obciążenia za pomocą analizatora testu obciążenia
 
@@ -39,32 +39,32 @@ Po uruchomieniu testu wydajności sieci web przy dużym obciążeniu w teście o
 
 ### <a name="to-view-response-time-data-in-a-table"></a>Aby wyświetlić dane czasu odpowiedzi w tabeli
 
-1.  W **analizatora testu obciążenia**, wybierz **tabel** na pasku narzędzi, aby upewnić się, że wyświetlana jest siatka tabeli.
+1. W **analizatora testu obciążenia**, wybierz **tabel** na pasku narzędzi, aby upewnić się, że wyświetlana jest siatka tabeli.
 
-2.  W **tabeli** listy rozwijanej wybierz pozycję **stron**.
+2. W **tabeli** listy rozwijanej wybierz pozycję **stron**.
 
-3.  Dane dla każdej strony są wyświetlane w siatce. Zazwyczaj są wyświetlane następujące kolumny.
+3. Dane dla każdej strony są wyświetlane w siatce. Zazwyczaj są wyświetlane następujące kolumny.
 
-    |Nagłówek kolumny|Opis|
-    |-|-|
-    |**Strona**|Nazwa strony sieci web.|
-    |**Scenariusz**|Nazwa scenariusza. Ważne, jeśli masz więcej niż jeden scenariusz w teście wydajności sieci web.|
-    |**Test**|Nazwa testu wydajności sieci web. Ważne, jeśli masz więcej niż jeden wydajności sieci web, testu w teście obciążenia.|
-    |**Sieci**|Typ sieci.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
-    |**Łączna liczba**|Całkowita liczba żądań, które zostały wprowadzone dla strony sieci web. Jest to suma dla wszystkich iteracji w teście obciążeniowym.|
-    |**Zapisz**|Średniego czasu odpowiedzi strony.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
-    |**Min**|Czas odpowiedzi strony minimalnej.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
-    |**Mediana**|Mediana czasu odpowiedzi strony na.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
-    |**90%**|90. percentyla dla czasu odpowiedzi. To wskazuje, że 90% stron szybciej niż ta liczba wysłanych jako odpowiedzi i 10% stron odpowiedzi wolniej.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
-    |**95%**|95. percentyl czasu odpowiedzi. To wskazuje, że 95% stron szybciej niż ta liczba wysłanych jako odpowiedzi i 5 procent stron odpowiedzi wolniej.|
-    |**99%**|99. percentylu na czas odpowiedzi. Oznacza to, że 99% stron szybciej niż ta liczba wysłanych jako odpowiedzi, a 1% stron odpowiedzi wolniej.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
-    |**Maksymalna**|Strona maksymalny czas odpowiedzi.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
-    |**Odchylenie standardowe**|Domyślnie nie są zbierane dane odchylenia standardowego. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
-    |**Czas strony**|Średni czas odpowiedzi dla wszystkich żądań, które zostały wprowadzone dla strony sieci web.|
-    |**Cel**|Cel dotyczący czasu strony. Jest to wartość stałą dla strony. **Uwaga:** cel dotyczący czasu strona jest wyświetlana tylko wtedy, gdy celem został zdefiniowany dla żądania w teście wydajności sieci web.|
-    |**% Osiągnięcia celu**|Procent żądań, które zostały wprowadzone na stronie sieci web, że zostały spełnione cel dotyczący czasu odpowiedzi.|
+   |Nagłówek kolumny|Opis|
+   |-|-|
+   |**Strona**|Nazwa strony sieci web.|
+   |**Scenariusz**|Nazwa scenariusza. Ważne, jeśli masz więcej niż jeden scenariusz w teście wydajności sieci web.|
+   |**Test**|Nazwa testu wydajności sieci web. Ważne, jeśli masz więcej niż jeden wydajności sieci web, testu w teście obciążenia.|
+   |**Sieci**|Typ sieci.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
+   |**Łączna liczba**|Całkowita liczba żądań, które zostały wprowadzone dla strony sieci web. Jest to suma dla wszystkich iteracji w teście obciążeniowym.|
+   |**Zapisz**|Średniego czasu odpowiedzi strony.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
+   |**Min**|Czas odpowiedzi strony minimalnej.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
+   |**Mediana**|Mediana czasu odpowiedzi strony na.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
+   |**90%**|90. percentyla dla czasu odpowiedzi. To wskazuje, że 90% stron szybciej niż ta liczba wysłanych jako odpowiedzi i 10% stron odpowiedzi wolniej.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
+   |**95%**|95. percentyl czasu odpowiedzi. To wskazuje, że 95% stron szybciej niż ta liczba wysłanych jako odpowiedzi i 5 procent stron odpowiedzi wolniej.|
+   |**99%**|99. percentylu na czas odpowiedzi. Oznacza to, że 99% stron szybciej niż ta liczba wysłanych jako odpowiedzi, a 1% stron odpowiedzi wolniej.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
+   |**Maksymalna**|Strona maksymalny czas odpowiedzi.<br /><br /> Te dane nie są zbierane domyślnie. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
+   |**Odchylenie standardowe**|Domyślnie nie są zbierane dane odchylenia standardowego. Aby zbierać dane, w **edytora testu obciążenia**w obszarze **parametrów uruchomieniowych** węzła, wybierz węzeł uruchomieniowy, aby zmienić. W **właściwości** oknie dla **przechowywanie informacji** wybierz **AllIndividualDetails**.|
+   |**Czas strony**|Średni czas odpowiedzi dla wszystkich żądań, które zostały wprowadzone dla strony sieci web.|
+   |**Cel**|Cel dotyczący czasu strony. Jest to wartość stałą dla strony. **Uwaga:** cel dotyczący czasu strona jest wyświetlana tylko wtedy, gdy celem został zdefiniowany dla żądania w teście wydajności sieci web.|
+   |**% Osiągnięcia celu**|Procent żądań, które zostały wprowadzone na stronie sieci web, że zostały spełnione cel dotyczący czasu odpowiedzi.|
 
- Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+   Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-response-time-data-in-a-graph"></a>Wyświetl dane czasu odpowiedzi w formie wykresu
 
@@ -72,26 +72,26 @@ Można również wyświetlić dane czasu odpowiedzi na wykresie, aby zobaczyć, 
 
 ### <a name="to-view-response-time-data-in-a-graph"></a>Aby wyświetlić dane czasu odpowiedzi w formie wykresu
 
-1.  W **analizatora testu obciążenia**, wybierz **wykresów** na pasku narzędzi, aby upewnić się, czy są wyświetlane na wykresie.
+1. W **analizatora testu obciążenia**, wybierz **wykresów** na pasku narzędzi, aby upewnić się, czy są wyświetlane na wykresie.
 
-2.  W **liczniki** okna, rozwiń węzeł scenariusz, w którym interesuje Cię (na przykład `Scenario1`).
+2. W **liczniki** okna, rozwiń węzeł scenariusz, w którym interesuje Cię (na przykład `Scenario1`).
 
-3.  Rozwiń węzeł testu wydajności sieci web, w którym interesuje Cię.
+3. Rozwiń węzeł testu wydajności sieci web, w którym interesuje Cię.
 
-4.  Rozwiń węzeł **stron**.
+4. Rozwiń węzeł **stron**.
 
-5.  Rozwiń węzeł strony, w którym interesuje Cię.
+5. Rozwiń węzeł strony, w którym interesuje Cię.
 
-6.  Kliknij prawym przyciskiem myszy **% stron osiągnięcia celu** , a następnie wybierz **Pokaż licznik na wykresie**.
+6. Kliknij prawym przyciskiem myszy **% stron osiągnięcia celu** , a następnie wybierz **Pokaż licznik na wykresie**.
 
-     Dane są dodawane do grafu.
+    Dane są dodawane do grafu.
 
-7.  (Opcjonalnie) Powtórz poprzedni krok dla **średni Czas strony**, **cel dotyczący czasu odpowiedzi strony**, i **łączna liczba stron**.
+7. (Opcjonalnie) Powtórz poprzedni krok dla **średni Czas strony**, **cel dotyczący czasu odpowiedzi strony**, i **łączna liczba stron**.
 
-    > [!NOTE]
-    > **Cel dotyczący czasu odpowiedzi strony** jest stały.
+   > [!NOTE]
+   > **Cel dotyczący czasu odpowiedzi strony** jest stały.
 
- Aby uzyskać więcej informacji, zobacz [w widoku wykresu z wynikami testów obciążeniowych analizy](../test/analyze-load-test-results-in-the-graphs-view.md).
+   Aby uzyskać więcej informacji, zobacz [w widoku wykresu z wynikami testów obciążeniowych analizy](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Zobacz także
 

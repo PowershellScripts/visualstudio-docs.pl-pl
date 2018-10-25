@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4cba83b1e2ed91e827c8dc09dc3b3e7a02bc61
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7dd5b0aa6f0ed56aaa3315c03aeef6ed1b77ad62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077493"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839612"
 ---
 # <a name="import-element-msbuild"></a>Import — element (MSBuild)
 Importuje zawartość pliku jednego projektu do innego pliku projektu.  
@@ -55,10 +55,10 @@ Importuje zawartość pliku jednego projektu do innego pliku projektu.
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 
-|Element|Opis|  
-|-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
-|[Importgroup —](../msbuild/importgroup-element.md)|Zawiera kolekcję `Import` elementy są pogrupowane w obszarze opcjonalny warunek.|  
+| Element | Opis |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu. |
+| [Importgroup —](../msbuild/importgroup-element.md) | Zawiera kolekcję `Import` elementy są pogrupowane w obszarze opcjonalny warunek. |
 
 ## <a name="remarks"></a>Uwagi  
  Za pomocą `Import` elementu, można użyć ponownie kod, który jest wspólne dla wielu plików projektu. Ułatwia utrzymanie kodu, ponieważ wszelkie aktualizacje wprowadzone współużytkowanym kodem Pobierz propagowane do wszystkich projektów, które go zaimportować.  
@@ -75,7 +75,7 @@ Importuje zawartość pliku jednego projektu do innego pliku projektu.
 
 > [!NOTE]
 >  Instrukcje warunkowe importu współdziałanie w MSBuilds wiersza polecenia, nie działają z użyciem MSBuild w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Importy warunkowego są oceniane przy użyciu wartości konfiguracji i platformy, które są ustawione, gdy projekt jest ładowany. Jeśli następnie wprowadzono zmiany wymagające ponownej oceny instrukcje warunkowe w pliku projektu, na przykład zmiana platformę [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reevaluates warunki na właściwości i elementów, ale nie w przypadku importów. Ponieważ nie jest ponownie szacowane warunkowe importu, importowania zostanie pominięta.  
->   
+> 
 >  Aby obejść ten problem, należy umieścić Importy warunkowe w *.targets* plików lub umieść kod warunkowego zablokować takie jak [wybierz element (MSBuild)](../msbuild/choose-element-msbuild.md) bloku.  
 
 ## <a name="wildcards"></a>Symboli wieloznacznych  

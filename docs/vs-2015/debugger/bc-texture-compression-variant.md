@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da5df0faa57a63f44892fa86785bccf4716f38f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67876c6b9191c8b551eb70906272751bc55ef481
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203310"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837974"
 ---
 # <a name="bc-texture-compression-variant"></a>Wariant kompresji tekstury BC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Umożliwia zablokowanie kompresji tekstury, które mają format pikseli, który 
 ## <a name="remarks"></a>Uwagi  
  Można kompresować tekstury, używając formatu kompresji opartej na blokach na każde wywołanie `ID3DDevice::CreateTexture2D` tworząca źródłową teksturę. W szczególności tekstury są kompresowane, gdy:  
   
--   `D3D11_TEXTURE2D_DESC` Obiekt przekazany w `pDesc` opisuje niezmiennych zasób programu do cieniowania; będącego:  
+- `D3D11_TEXTURE2D_DESC` Obiekt przekazany w `pDesc` opisuje niezmiennych zasób programu do cieniowania; będącego:  
   
-    -   Element członkowski BindFlags ma tylko D3D11_BIND_SHADER_RESOURCE ustawiona jest flaga.  
+  -   Element członkowski BindFlags ma tylko D3D11_BIND_SHADER_RESOURCE ustawiona jest flaga.  
   
-    -   Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT lub D3D11_USAGE_IMMUTABLE.  
+  -   Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT lub D3D11_USAGE_IMMUTABLE.  
   
-    -   Element członkowski CPUAccessFlags jest równa 0 (Brak dostępu Procesora).  
+  -   Element członkowski CPUAccessFlags jest równa 0 (Brak dostępu Procesora).  
   
-    -   Element członkowski SamplerDesc ma członków liczba równa 1 (nie próbkowanie Wygładzanie (MSAA)).  
+  -   Element członkowski SamplerDesc ma członków liczba równa 1 (nie próbkowanie Wygładzanie (MSAA)).  
   
--   Początkowe dane są dostarczane do wywołania `CreateTexture2D`.  
+- Początkowe dane są dostarczane do wywołania `CreateTexture2D`.  
   
- Poniżej przedstawiono formaty obsługiwanego źródła i ich formatów skompresowanego bloku.  
+  Poniżej przedstawiono formaty obsługiwanego źródła i ich formatów skompresowanego bloku.  
   
 |Oryginalnym formacie (od)|Format skompresowany (do)|  
 |------------------------------|------------------------------|  

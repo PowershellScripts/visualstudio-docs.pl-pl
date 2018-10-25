@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści Concierge Chat uwzględniony 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 73201570aae74645a0116c3a34aab344c07c7837
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 06b890ea79bafade2d33f341d3411c38196c7cc9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073691"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831851"
 ---
 # <a name="concierge-chat"></a>Konsjerż — Rozmowa
 
@@ -39,6 +39,7 @@ Uzyskiwanie pomocy za pośrednictwem usługi Konsjerż — Rozmowa jest bardzo p
     > ![Konsjerż — Rozmowa sesji](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>Uprawnienie
+
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |

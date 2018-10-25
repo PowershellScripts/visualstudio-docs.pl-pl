@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4abc7e2eb8b29a0a7486264732778502c032f42
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a8302d89bb90902f2a31a81545f14dd233bbe1f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820541"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
-Wybiera różnego rodzaju konstruktorów.  
+Zaznacza różne rodzaje konstruktorów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,13 +48,13 @@ public enum ConstructorMatchOptions {
  Wybiera wszystkie konstruktory.  
   
  crNonStatic  
- Wybiera niestatyczna konstruktorów.  
+ Wybiera niestatycznych konstruktorów.  
   
  crStatic  
- Wybiera konstruktory statyczne.  
+ Wybiera konstruktorów statycznych.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako argument [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) metody.  
+ Przekazywany jako argument do [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  

@@ -28,12 +28,12 @@ caps.latest.revision: 54
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 531590495cf31f0a173b9dfc1dbc995a9fb73364
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d0d1d45caa7f5bfe275cd851711dfbc9a8186d74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814951"
 ---
 # <a name="javascript-memory"></a>Pamięć języka JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,35 +42,35 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwia
   
  Analizator pamięci JavaScript możesz używać tych rzeczy:  
   
--   Pomaga szybko znajdować pamięci problemy dotyczące użycia w Twojej aplikacji przez wyróżnianie ważnych danych.  
+- Pomaga szybko znajdować pamięci problemy dotyczące użycia w Twojej aplikacji przez wyróżnianie ważnych danych.  
   
-     Otrzymasz te dane w podsumowania migawki, Pokaż różnice między dwiema migawkami, które zawierają linki do bardziej szczegółowych widoków.  
+   Otrzymasz te dane w podsumowania migawki, Pokaż różnice między dwiema migawkami, które zawierają linki do bardziej szczegółowych widoków.  
   
--   Podaj widoków dominatorów, typy i elementy główne pomóc wyizolować problemy.  
+- Podaj widoków dominatorów, typy i elementy główne pomóc wyizolować problemy.  
   
--   Zmniejsz bez podejmowania informacji w danych sterty JavaScript.  
+- Zmniejsz bez podejmowania informacji w danych sterty JavaScript.  
   
-     Obiekty, które nie są tworzone bezpośrednio w kodzie aplikacji automatycznie są odfiltrowywane. Można także filtrować dane według nazwy obiektu.  
+   Obiekty, które nie są tworzone bezpośrednio w kodzie aplikacji automatycznie są odfiltrowywane. Można także filtrować dane według nazwy obiektu.  
   
- Aby uzyskać samouczek, który poprowadzi Cię przez proces identyfikowania przeciek pamięci w działającą aplikację, zobacz [wskazówki: znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+  Aby uzyskać samouczek, który poprowadzi Cię przez proces identyfikowania przeciek pamięci w działającą aplikację, zobacz [wskazówki: znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
- W tym temacie:  
+  W tym temacie:  
   
- [Uruchom analizator pamięci JavaScript](#Run)   
- [Sprawdź użycie pamięci](#Check)   
- [Izolowanie przeciek pamięci](#Isolate)   
- [Wyświetl podsumowanie użycia pamięci na żywo](#LiveMemory)   
- [Wyświetlanie podsumowania migawki](#SnapshotSummary)   
- [Wyświetl szczegóły migawki](#SnapshotDetails)   
- [Wyświetlanie różnic migawki](#SnapshotDiff)   
- [Wyświetl obiekty wg dominatora](#FoldObjects)   
- [Filtrowanie danych według identyfikatora](#Filter)   
- [Znajdź obiekt w drzewie obiektów](#ShowInRootsView)   
- [Wyświetl odwołania do udostępnionego obiektu](#References)   
- [Pokaż wbudowanych obiektów](#BuiltInValues)   
- [Zapisz pliki sesji diagnostycznej](#Save)   
- [Skojarz kodu źródłowego z danymi użycia pamięci](#JSConsoleCommands)   
- [Wskazówki dotyczące identyfikowania problemów z pamięcią](#Tips)  
+  [Uruchom analizator pamięci JavaScript](#Run)   
+  [Sprawdź użycie pamięci](#Check)   
+  [Izolowanie przeciek pamięci](#Isolate)   
+  [Wyświetl podsumowanie użycia pamięci na żywo](#LiveMemory)   
+  [Wyświetlanie podsumowania migawki](#SnapshotSummary)   
+  [Wyświetl szczegóły migawki](#SnapshotDetails)   
+  [Wyświetlanie różnic migawki](#SnapshotDiff)   
+  [Wyświetl obiekty wg dominatora](#FoldObjects)   
+  [Filtrowanie danych według identyfikatora](#Filter)   
+  [Znajdź obiekt w drzewie obiektów](#ShowInRootsView)   
+  [Wyświetl odwołania do udostępnionego obiektu](#References)   
+  [Pokaż wbudowanych obiektów](#BuiltInValues)   
+  [Zapisz pliki sesji diagnostycznej](#Save)   
+  [Skojarz kodu źródłowego z danymi użycia pamięci](#JSConsoleCommands)   
+  [Wskazówki dotyczące identyfikowania problemów z pamięcią](#Tips)  
   
 ##  <a name="Run"></a> Uruchom analizator pamięci JavaScript  
  Można użyć analizatora pamięci, gdy masz działającą aplikację Windows Store, Otwórz w programie Visual Studio lub zainstalowany na komputerze, na którym działa [!INCLUDE[win8](../includes/win8-md.md)] lub nowszej.  
@@ -133,31 +133,31 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwia
 ##  <a name="Isolate"></a> Izolowanie przeciek pamięci  
  Poniższe kroki zawierają przepływu pracy, które mogą ułatwić bardziej efektywne wykorzystanie analizatora pamięci JavaScript. Te kroki mogą być przydatne, jeśli podejrzewasz, że Twoja aplikacja ma przeciek pamięci. Aby uzyskać samouczek, który poprowadzi Cię przez proces identyfikowania przeciek pamięci w działającą aplikację, zobacz [wskazówki: znajdowanie wycieku pamięci (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
-1.  Otwórz aplikację w programie Visual Studio.  
+1. Otwórz aplikację w programie Visual Studio.  
   
-2.  Uruchom analizator pamięci JavaScript. Aby uzyskać więcej informacji, zobacz [uruchamiania analizatora pamięci JavaScript](#Run).  
+2. Uruchom analizator pamięci JavaScript. Aby uzyskać więcej informacji, zobacz [uruchamiania analizatora pamięci JavaScript](#Run).  
   
-3.  Uruchom aplikację za pomocą tego scenariusza, który ma zostać przetestowana. Na przykład scenariusz może obejmować dużych mutacji modelu DOM, gdy dana strona ładuje lub po uruchomieniu aplikacji.  
+3. Uruchom aplikację za pomocą tego scenariusza, który ma zostać przetestowana. Na przykład scenariusz może obejmować dużych mutacji modelu DOM, gdy dana strona ładuje lub po uruchomieniu aplikacji.  
   
-4.  Powtórz scenariusza 1 – 4 dodatkowe razy.  
+4. Powtórz scenariusza 1 – 4 dodatkowe razy.  
   
-    > [!TIP]
-    >  Powtarzając scenariusza testu kilka razy, możesz pomóc, upewnij się, czy inicjowanie można filtrować poza wyniki.  
+   > [!TIP]
+   >  Powtarzając scenariusza testu kilka razy, możesz pomóc, upewnij się, czy inicjowanie można filtrować poza wyniki.  
   
-5.  Przełącz się do programu Visual Studio (naciśnij klawisze Alt + Tab).  
+5. Przełącz się do programu Visual Studio (naciśnij klawisze Alt + Tab).  
   
-6.  Utwórz migawkę sterty linii bazowej, wybierając **wykonać migawkę sterty**.  
+6. Utwórz migawkę sterty linii bazowej, wybierając **wykonać migawkę sterty**.  
   
-     Na poniższej ilustracji przedstawiono przykład migawką będącą punktem odniesienia.  
+    Na poniższej ilustracji przedstawiono przykład migawką będącą punktem odniesienia.  
   
-     ![Migawką będącą punktem odniesienia](../profiling/media/js-mem-leak-workflow-baseline.png "JS_Mem_Leak_Workflow_Baseline")  
+    ![Migawką będącą punktem odniesienia](../profiling/media/js-mem-leak-workflow-baseline.png "JS_Mem_Leak_Workflow_Baseline")  
   
-    > [!TIP]
-    >  W przypadku bardziej precyzyjną kontrolę nad chronometraż migawki, można użyć [skojarzyć kodu źródłowego z danymi użycia pamięci](#JSConsoleCommands) polecenia w kodzie.  
+   > [!TIP]
+   >  W przypadku bardziej precyzyjną kontrolę nad chronometraż migawki, można użyć [skojarzyć kodu źródłowego z danymi użycia pamięci](#JSConsoleCommands) polecenia w kodzie.  
   
-7.  Przełącz się do aplikacji i powtórz scenariusz testowania (Powtórz tylko jeden raz).  
+7. Przełącz się do aplikacji i powtórz scenariusz testowania (Powtórz tylko jeden raz).  
   
-8.  Przełącz się do programu Visual Studio i drugi migawki.  
+8. Przełącz się do programu Visual Studio i drugi migawki.  
   
 9. Przełącz się do aplikacji i powtórz scenariusz testowania (Powtórz tylko jeden raz).  
   
@@ -171,11 +171,11 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwia
   
 11. Z trzeciej migawki wybierz łącze do jednego z widoków różnicowe:  
   
-    -   Rozmiar sterty różnicowe (po lewej stronie link poniżej rozmiar stosu). Tekst linku zawiera różnicę między Rozmiar sterty bieżącej migawki i Rozmiar sterty poprzednią migawkę.  
+    - Rozmiar sterty różnicowe (po lewej stronie link poniżej rozmiar stosu). Tekst linku zawiera różnicę między Rozmiar sterty bieżącej migawki i Rozmiar sterty poprzednią migawkę.  
   
-    -   Liczba obiektów różnicowa (odpowiednie łącze poniżej liczba obiektów). Tekst linku zawiera dwie wartości (na przykład +1858 /-1765): pierwsza wartość jest liczbą nowe obiekty dodane od poprzedniej migawki, a druga wartość jest liczba obiektów usuniętych od poprzedniej migawki.  
+    - Liczba obiektów różnicowa (odpowiednie łącze poniżej liczba obiektów). Tekst linku zawiera dwie wartości (na przykład +1858 /-1765): pierwsza wartość jest liczbą nowe obiekty dodane od poprzedniej migawki, a druga wartość jest liczba obiektów usuniętych od poprzedniej migawki.  
   
-     Te linki otwarcie widoku szczegółów migawka różnicowa typów na stosie, sortowane rozmiaru zachowanego lub liczba obiektów, w zależności od tego, które łącza jest otwarty.  
+      Te linki otwarcie widoku szczegółów migawka różnicowa typów na stosie, sortowane rozmiaru zachowanego lub liczba obiektów, w zależności od tego, które łącza jest otwarty.  
   
 12. Wybierz jedną z następujących **zakres** opcje ułatwiającymi identyfikację problemów użycia pamięci filtru:  
   
@@ -244,29 +244,29 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwia
   
  W widoku szczegółów migawki możesz przeglądać dane użycia pamięci przez typ, katalog główny lub dominatora, wybierając opcję z paska narzędzi:  
   
--   **Typy**. Wskazuje rozmiar i łączna liczba wystąpień obiektów na stosie, pogrupowane według typu obiektu. Domyślnie te są sortowane według liczby wystąpień.  
+- **Typy**. Wskazuje rozmiar i łączna liczba wystąpień obiektów na stosie, pogrupowane według typu obiektu. Domyślnie te są sortowane według liczby wystąpień.  
   
-    > [!TIP]
-    >  Zazwyczaj widokach różnic typów na stosie obiektu są najbardziej przydatne widoków do identyfikowania przeciek pamięci; udostępniane przez te widoki **zakres** filtr, aby ułatwić identyfikację po lewej stronie za pośrednictwem obiektów.  
+  > [!TIP]
+  >  Zazwyczaj widokach różnic typów na stosie obiektu są najbardziej przydatne widoków do identyfikowania przeciek pamięci; udostępniane przez te widoki **zakres** filtr, aby ułatwić identyfikację po lewej stronie za pośrednictwem obiektów.  
   
--   **Obiekty główne**. Pokazuje hierarchiczny widok obiektów z obiektów głównych za pomocą odwołania podrzędne. Domyślnie węzły podrzędne są sortowane według rozmiaru zachowanego kolumny, z największych u góry.  
+- **Obiekty główne**. Pokazuje hierarchiczny widok obiektów z obiektów głównych za pomocą odwołania podrzędne. Domyślnie węzły podrzędne są sortowane według rozmiaru zachowanego kolumny, z największych u góry.  
   
--   **Dominatorów**. Przedstawia listę obiektów na stosie, który wyłączne odwołują się do innych obiektów. Dominatorów są sortowane według rozmiaru zachowanego.  
+- **Dominatorów**. Przedstawia listę obiektów na stosie, który wyłączne odwołują się do innych obiektów. Dominatorów są sortowane według rozmiaru zachowanego.  
   
-    > [!TIP]
-    >  Po usunięciu dominatora z pamięci jest odzyskanie wszystkich pamięci, która zachowuje obiektu. W przypadku kilku aplikacji widoku Dominatorów może pomóc wyjaśnić rozmiarów zachowanych pamięci, ponieważ można zapoznać się z kompletnym obiektem ciąg odwołania.  
+  > [!TIP]
+  >  Po usunięciu dominatora z pamięci jest odzyskanie wszystkich pamięci, która zachowuje obiektu. W przypadku kilku aplikacji widoku Dominatorów może pomóc wyjaśnić rozmiarów zachowanych pamięci, ponieważ można zapoznać się z kompletnym obiektem ciąg odwołania.  
   
- Wszystkie trzy widoki Pokaż podobnych typów wartości, w tym:  
+  Wszystkie trzy widoki Pokaż podobnych typów wartości, w tym:  
   
--   **Identyfikatory**. Nazwa, która najlepiej identyfikuje obiekt. Na przykład dla elementów kodu HTML szczegóły migawki Pokaż wartość atrybutu ID, jeśli jest on używany.  
+- **Identyfikatory**. Nazwa, która najlepiej identyfikuje obiekt. Na przykład dla elementów kodu HTML szczegóły migawki Pokaż wartość atrybutu ID, jeśli jest on używany.  
   
--   **Typ**. Typ obiektu (na przykład elementu łącza HTML lub div element).  
+- **Typ**. Typ obiektu (na przykład elementu łącza HTML lub div element).  
   
--   **Rozmiar**. Rozmiar obiektu, nie wliczając rozmiar wszystkie obiekty.  
+- **Rozmiar**. Rozmiar obiektu, nie wliczając rozmiar wszystkie obiekty.  
   
--   **Rozmiaru zachowanego**. Rozmiar obiektu plus rozmiar wszystkich obiektów podrzędnych, które mają bez elementów nadrzędnych. Ze względów praktycznych to ilość pamięci przechowywane przez obiekt, więc w przypadku usunięcia obiektu odzyskać określonej ilości pamięci.  
+- **Rozmiaru zachowanego**. Rozmiar obiektu plus rozmiar wszystkich obiektów podrzędnych, które mają bez elementów nadrzędnych. Ze względów praktycznych to ilość pamięci przechowywane przez obiekt, więc w przypadku usunięcia obiektu odzyskać określonej ilości pamięci.  
   
--   **Liczba**. Liczba wystąpień obiektu. Ta wartość jest wyświetlana tylko w widoku typów.  
+- **Liczba**. Liczba wystąpień obiektu. Ta wartość jest wyświetlana tylko w widoku typów.  
   
 ##  <a name="SnapshotDiff"></a> Wyświetlanie różnic migawki  
  W analizatorze pamięci JavaScript można porównać migawek względem poprzedniej migawki w widokach różnic migawki.  
@@ -281,22 +281,22 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwia
   
  W oknie różnicy migawki widoków Dominatorów, typy i elementy główne są takie same jak w [wyświetlić szczegóły migawki](#SnapshotDetails) okna. Diff migawki pokazuje tych samych informacji jako szczegóły migawki, te wartości dodatkowe:  
   
--   **Różnica w rozmiarze**. Różnica między rozmiar obiektu w bieżącej migawce i jej rozmiaru w poprzedniej migawki, nie wliczając rozmiar dowolnego odwołania do obiektów.  
+- **Różnica w rozmiarze**. Różnica między rozmiar obiektu w bieżącej migawce i jej rozmiaru w poprzedniej migawki, nie wliczając rozmiar dowolnego odwołania do obiektów.  
   
--   **Różnica w rozmiarze przechowywane**. Różnica między rozmiaru zachowanego obiektu w bieżącą migawką i jej rozmiaru zachowanego w poprzedniej migawce. Rozmiar zachowany obejmuje rozmiar obiektów plus rozmiar wszystkich obiektów podrzędnych, które mają bez elementów nadrzędnych. Ze względów praktycznych rozmiaru zachowanego to ilość pamięci przechowywane przez obiekt, więc w przypadku usunięcia obiektu odzyskać określonej ilości pamięci.  
+- **Różnica w rozmiarze przechowywane**. Różnica między rozmiaru zachowanego obiektu w bieżącą migawką i jej rozmiaru zachowanego w poprzedniej migawce. Rozmiar zachowany obejmuje rozmiar obiektów plus rozmiar wszystkich obiektów podrzędnych, które mają bez elementów nadrzędnych. Ze względów praktycznych rozmiaru zachowanego to ilość pamięci przechowywane przez obiekt, więc w przypadku usunięcia obiektu odzyskać określonej ilości pamięci.  
   
- Aby filtrować informacje różnicowe między migawkami, wybierz jedną z **zakres** filtrów w górnej części różnicowej widoków.  
+  Aby filtrować informacje różnicowe między migawkami, wybierz jedną z **zakres** filtrów w górnej części różnicowej widoków.  
   
--   **Obiekty pozostałe z migawki #\<numer >**. Ten filtr przedstawiono różnice między obiektami dodawane do sterty lub usuwane ze sterty w porównaniu z migawką będącą punktem odniesienia i poprzednią migawkę. Na przykład pokazuje, podsumowania migawki +205 /-195 liczba obiektów, ten filtr opisano dziesięć obiektów, które zostały dodane, ale nie zostaną usunięte.  
+- **Obiekty pozostałe z migawki #\<numer >**. Ten filtr przedstawiono różnice między obiektami dodawane do sterty lub usuwane ze sterty w porównaniu z migawką będącą punktem odniesienia i poprzednią migawkę. Na przykład pokazuje, podsumowania migawki +205 /-195 liczba obiektów, ten filtr opisano dziesięć obiektów, które zostały dodane, ale nie zostaną usunięte.  
   
-    > [!TIP]
-    >  Aby wyświetlić najbardziej przydatnych informacji, w tym filtrze, wykonaj czynności opisane w [izolowania przeciek pamięci](#Isolate).  
+  > [!TIP]
+  >  Aby wyświetlić najbardziej przydatnych informacji, w tym filtrze, wykonaj czynności opisane w [izolowania przeciek pamięci](#Isolate).  
   
--   **Obiekty dodane między migawka nr\<numer > i #\<numer >**. Filtr ten pokazuje wszystkie obiekty dodane do sterty z poprzednią migawkę.  
+- **Obiekty dodane między migawka nr\<numer > i #\<numer >**. Filtr ten pokazuje wszystkie obiekty dodane do sterty z poprzednią migawkę.  
   
--   **Wszystkie obiekty w migawce #\<numer >**. Ustawienie tego filtru nie odfiltrować wszystkie obiekty na stosie.  
+- **Wszystkie obiekty w migawce #\<numer >**. Ustawienie tego filtru nie odfiltrować wszystkie obiekty na stosie.  
   
- Aby wyświetlić odwołania do obiektów, które nie są zgodne z bieżącą **zakres** filtr, wybierz opcję **Pokaż niezgodne odwołania** na liście ustawień ![listy ustawień&#45;listy w analizatorze pamięci ](../profiling/media/js-mem-settings.png "JS_Mem_Settings") w prawym górnym rogu okienka. Jeśli to ustawienie jest włączone, niezgodne odwołania są wyświetlane z tekstem szary.  
+  Aby wyświetlić odwołania do obiektów, które nie są zgodne z bieżącą **zakres** filtr, wybierz opcję **Pokaż niezgodne odwołania** na liście ustawień ![listy ustawień&#45;listy w analizatorze pamięci ](../profiling/media/js-mem-settings.png "JS_Mem_Settings") w prawym górnym rogu okienka. Jeśli to ustawienie jest włączone, niezgodne odwołania są wyświetlane z tekstem szary.  
   
 > [!TIP]
 >  Firma Microsoft zaleca, postępuj zgodnie z instrukcjami w [izolowania przeciek pamięci](#Isolate) , a następnie użyj obiekty pozostawione przez **zakres** filtr, aby ułatwić identyfikację obiektów, które są przeciek pamięci.  
@@ -339,19 +339,19 @@ Analizator pamięci JavaScript jest dostępna w programie Visual Studio ułatwia
 ##  <a name="JSConsoleCommands"></a> Skojarz kodu źródłowego z danymi użycia pamięci  
  Aby wyizolować sekcji kodu, który ma problem z pamięci, należy użyć następujących metod:  
   
--   Poszukaj nazwy klas i identyfikatory dla elementów DOM w widokach różnicowej i szczegółowe informacje.  
+- Poszukaj nazwy klas i identyfikatory dla elementów DOM w widokach różnicowej i szczegółowe informacje.  
   
--   Zwróć uwagę na wartości ciągu w szczegółowe informacje i różnicowe widoków, które mogą być skojarzone z kodem źródłowym.  
+- Zwróć uwagę na wartości ciągu w szczegółowe informacje i różnicowe widoków, które mogą być skojarzone z kodem źródłowym.  
   
--   Użyj [znaleźć obiekt w drzewie obiektów](#ShowInRootsView) polecenie, aby krokowo drzewa obiektów. Może to pomóc w identyfikacji kodu skojarzone źródło.  
+- Użyj [znaleźć obiekt w drzewie obiektów](#ShowInRootsView) polecenie, aby krokowo drzewa obiektów. Może to pomóc w identyfikacji kodu skojarzone źródło.  
   
--   Dodawanie poleceń do analizatora pamięci do kodu źródłowego.  
+- Dodawanie poleceń do analizatora pamięci do kodu źródłowego.  
   
- Skorzystaj z następujących poleceń, w kodzie źródłowym:  
+  Skorzystaj z następujących poleceń, w kodzie źródłowym:  
   
--   `console.takeHeapSnapshot` tworzy migawkę sterty, która pojawia się w analizatorze pamięci JavaScript. To polecenie jest jednym z [polecenia konsoli JavaScript](../debugger/javascript-console-commands.md).  
+- `console.takeHeapSnapshot` tworzy migawkę sterty, która pojawia się w analizatorze pamięci JavaScript. To polecenie jest jednym z [polecenia konsoli JavaScript](../debugger/javascript-console-commands.md).  
   
--   `performance.mark` Ustawia znacznik użytkownika (odwrócony trójkąt), który pojawia się na osi czasu wykresu pamięci w widoku podsumowania, gdy aplikacja jest uruchomiona. To polecenie wymaga jednego argumentu ciągu opisujący zdarzenie i jest wyświetlany jako etykietka narzędzia na wykresie pamięci. Ten opis nie może przekraczać 100 znaków.  
+- `performance.mark` Ustawia znacznik użytkownika (odwrócony trójkąt), który pojawia się na osi czasu wykresu pamięci w widoku podsumowania, gdy aplikacja jest uruchomiona. To polecenie wymaga jednego argumentu ciągu opisujący zdarzenie i jest wyświetlany jako etykietka narzędzia na wykresie pamięci. Ten opis nie może przekraczać 100 znaków.  
   
 > [!TIP]
 >  Użyj `console.takeHeapSnapshot` aby przyspieszyć analizy przypadku powtarzające się scenariusze użycia pamięci.  

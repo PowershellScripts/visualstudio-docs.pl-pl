@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8ab79ace55b8248b3770f2e5911bf974e724296
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 00ecabcf90e63b18961a828c12ae300be359b5a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233129"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839989"
 ---
 # <a name="combo-element"></a>Combo, element
 Określa polecenia, które są wyświetlane w polu kombi. Istnieją cztery rodzaje pola kombi w następujący sposób: typu pole kombi, DynamicCombo, IndexCombo i MRUCombo.  
@@ -41,10 +41,10 @@ Określa polecenia, które są wyświetlane w polu kombi. Istnieją cztery rodza
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagane. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|  
-|identyfikator|Wymagane. Identyfikator GUID/ID identyfikator polecenia.|  
-|defaultWidth|Wymagane. Liczba całkowita, która określa szerokość pikseli dla pola kombi.|  
-|idCommandList|Wymagane. Identyfikator wysłaniu do docelowego polecenia active można pobrać listy elementów, które mają być wyświetlane w polu kombi. Identyfikator jest w tym samym zakresie identyfikatora GUID jako formant.|  
+|Identyfikator GUID|Wymagana. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|  
+|identyfikator|Wymagana. Identyfikator GUID/ID identyfikator polecenia.|  
+|defaultWidth|Wymagana. Liczba całkowita, która określa szerokość pikseli dla pola kombi.|  
+|idCommandList|Wymagana. Identyfikator wysłaniu do docelowego polecenia active można pobrać listy elementów, które mają być wyświetlane w polu kombi. Identyfikator jest w tym samym zakresie identyfikatora GUID jako formant.|  
 |priorytet|Opcjonalna. Wartość liczbowa określająca priorytet.|  
 |— typ|Opcjonalna. Wartość wyliczana, który określa typ przycisku.<br /><br /> Jeśli nie zostanie podana, używa przycisku.<br /><br /> Typu pole kombi<br /> Pakietu VSPackage jest odpowiedzialny za wypełnianie zawartość dla tego pola kombi. Użytkownik nie może wpisać cokolwiek w polu tekstowym w tym listy rozwijanej.<br /><br /> DynamicCombo<br /> Pakietu VSPackage jest odpowiedzialny za wypełnianie zawartość tego pola kombi. Użytkownik może edytować ten kombi i również wybrać elementy w nim.<br /><br /> IndexCombo<br /> Taka sama jak DynamicCombo, z wyjątkiem że zgłasza indeks elementu, a nie jego tekstu.<br /><br /> MRUCombo<br /> Wypełnione przez zintegrowanego środowiska programistycznego (IDE) w imieniu pakietu VSPackage.  Użytkownik może edytować w tym polu kombi. IDE zapamiętuje maksymalnie 16 ostatnich wpisów na pola kombi.<br /><br /> Gdy użytkownik wybierze element w polu kombi lub wprowadza coś nowego, IDE powiadamia odpowiednie pakietu VSPackage.|  
 |Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
@@ -54,8 +54,8 @@ Określa polecenia, które są wyświetlane w polu kombi. Istnieją cztery rodza
 |Element|Opis|  
 |-------------|-----------------|  
 |Nadrzędny|Opcjonalna. Elementu nadrzędnego przycisku.|  
-|CommandFlag|Wymagane. Zobacz [Command flag, element](../extensibility/command-flag-element.md). Prawidłowe wartości CommandFlag dla przycisku, to w następujący sposób.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -KlawiszeFiltru<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
-|Ciągi|Wymagane. Zobacz [Strings, element](../extensibility/strings-element.md). ButtonText, element podrzędny musi być zdefiniowany.|  
+|CommandFlag|Wymagana. Zobacz [Command flag, element](../extensibility/command-flag-element.md). Prawidłowe wartości CommandFlag dla przycisku, to w następujący sposób.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -KlawiszeFiltru<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
+|Ciągi|Wymagana. Zobacz [Strings, element](../extensibility/strings-element.md). ButtonText, element podrzędny musi być zdefiniowany.|  
 |Adnotacja|Opcjonalny komentarz.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  

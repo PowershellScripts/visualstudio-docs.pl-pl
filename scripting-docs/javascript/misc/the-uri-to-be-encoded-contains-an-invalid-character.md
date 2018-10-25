@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1e93d145ea6b0991123c2a7c80f8acf54a83a264
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788707"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832177"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>Identyfikator URI, który ma być zdekodowany, zawiera nieprawidłowy znak.
-Podjęto próbę zakodować ciąg jako identyfikatora URI (Uniform Resource Identifier), ale zawiera nieprawidłowe znaki. Mimo że większość znaków są prawidłowe w ciągów, które ma zostać przekonwertowane na identyfikatory URI, niektóre sekwencje znaków Unicode są niedozwolone.  
+Próbowano przeprowadzić kodowanie ciągu jako identyfikator URI (Uniform Resource Identifier), ale zawiera nieprawidłowe znaki. Mimo że większość znaki są prawidłowe wewnątrz ciągi są konwertowane na identyfikatory URI, niektóre sekwencje znaków Unicode są niedozwolone.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Upewnij się, że ciąg do zakodowania zawiera tylko prawidłowe sekwencje Unicode. Pełny identyfikator URI składa się z sekwencji składników i separatorów. Nazwy w nawiasach ostrych reprezentują składników i ":", "/", ";" i "?" są zastrzeżone znaki używane jako separatorów. Ogólny kształt jest:  
+-   Upewnij się, że ciąg do zakodowania zawiera tylko prawidłowe sekwencje Unicode. Pełny identyfikator URI składa się z sekwencji składników i separatorów. Nazwy w nawiasy ostre oznaczają składniki z i ":", "/", ";" i "?" są używane jako separatory znaków zastrzeżonych. Ogólna postać jest:  
   
     ```JavaScript  
     <Scheme>:<first>/<second>;<third>?<fourth>  
@@ -40,4 +40,4 @@ Podjęto próbę zakodować ciąg jako identyfikatora URI (Uniform Resource Iden
   
 ## <a name="see-also"></a>Zobacz też  
  [encodeURI — funkcja](../../javascript/reference/encodeuri-function-javascript.md)   
- [encodeuricomponent — funkcja](../../javascript/reference/encodeuricomponent-function-javascript.md)
+ [encodeURIComponent, funkcja](../../javascript/reference/encodeuricomponent-function-javascript.md)

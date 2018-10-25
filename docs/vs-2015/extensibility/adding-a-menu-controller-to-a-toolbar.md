@@ -17,12 +17,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5389626f31fa45f04ec58723450baba5370b24f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d6ccae3f53181863ada9dcaa93cb616431885cda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830954"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Dodawanie kontrolera menu do paska narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,82 +40,82 @@ W tym przewodniku opiera się na [Dodawanie paska narzędzi do okna narzędzi](.
   
 #### <a name="to-create-a-menu-controller"></a>Aby utworzyć kontroler menu  
   
-1.  Wykonaj procedury opisane w temacie [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md) się utworzenie okna narzędzia, które ma pasek narzędzi.  
+1. Wykonaj procedury opisane w temacie [Dodawanie paska narzędzi do okna narzędzi](../extensibility/adding-a-toolbar-to-a-tool-window.md) się utworzenie okna narzędzia, które ma pasek narzędzi.  
   
-2.  W TWTestCommandPackage.vsct przejdź do sekcji symboli. W GuidSymbol, element o nazwie **guidTWTestCommandPackageCmdSet**, Zadeklaruj kontroler menu, grupy kontrolera menu i trzech elementów menu.  
+2. W TWTestCommandPackage.vsct przejdź do sekcji symboli. W GuidSymbol, element o nazwie **guidTWTestCommandPackageCmdSet**, Zadeklaruj kontroler menu, grupy kontrolera menu i trzech elementów menu.  
   
-    ```xml  
-    <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
-    ```  
+   ```xml  
+   <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
+   ```  
   
-3.  W sekcji menu po ostatni wpis menu zdefiniować kontroler menu jako menu.  
+3. W sekcji menu po ostatni wpis menu zdefiniować kontroler menu jako menu.  
   
-    ```xml  
-    <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <CommandFlag>TextChanges</CommandFlag>  
-        <CommandFlag>TextIsAnchorCommand</CommandFlag>  
-        <Strings>  
-            <ButtonText>Test Menu Controller</ButtonText>  
-            <CommandName>Test Menu Controller</CommandName>  
-        </Strings>  
-    </Menu>  
-    ```  
+   ```xml  
+   <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TWToolbarGroup" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <CommandFlag>TextChanges</CommandFlag>  
+       <CommandFlag>TextIsAnchorCommand</CommandFlag>  
+       <Strings>  
+           <ButtonText>Test Menu Controller</ButtonText>  
+           <CommandName>Test Menu Controller</CommandName>  
+       </Strings>  
+   </Menu>  
+   ```  
   
-     `TextChanges` i `TextIsAnchorCommand` flagi należy dołączyć umożliwiające kontroler menu odzwierciedlić ostatnie wybranego polecenia.  
+    `TextChanges` i `TextIsAnchorCommand` flagi należy dołączyć umożliwiające kontroler menu odzwierciedlić ostatnie wybranego polecenia.  
   
-4.  W grupach sekcji po ostatni wpis grupy dodać grupę kontroler menu.  
+4. W grupach sekcji po ostatni wpis grupy dodać grupę kontroler menu.  
   
-    ```xml  
-    <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
-    </Group>  
-    ```  
+   ```xml  
+   <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" />  
+   </Group>  
+   ```  
   
-     Ustawiając kontroler menu jako element nadrzędny, wszelkie polecenia umieszczone w tej grupie zostaną wyświetlone w kontroler menu. `priority` Atrybut zostanie pominięty, która ustawia wartości domyślnej 0, ponieważ będzie on tylko grupy na kontrolerze menu.  
+    Ustawiając kontroler menu jako element nadrzędny, wszelkie polecenia umieszczone w tej grupie zostaną wyświetlone w kontroler menu. `priority` Atrybut zostanie pominięty, która ustawia wartości domyślnej 0, ponieważ będzie on tylko grupy na kontrolerze menu.  
   
-5.  W sekcji przyciski po ostatni wpis przycisku Dodaj element przycisku dla każdego z elementów menu.  
+5. W sekcji przyciski po ostatni wpis przycisku Dodaj element przycisku dla każdego z elementów menu.  
   
-    ```xml  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic1" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 1</ButtonText>  
-            <CommandName>MC Item 1</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPic2" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 2</ButtonText>  
-            <CommandName>MC Item 2</CommandName>  
-        </Strings>  
-    </Button>  
-    <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
-        <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
-        <Icon guid="guidImages" id="bmpPicSearch" />  
-        <CommandFlag>IconAndText</CommandFlag>  
-        <Strings>  
-            <ButtonText>MC Item 3</ButtonText>  
-            <CommandName>MC Item 3</CommandName>  
-        </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic1" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 1</ButtonText>  
+           <CommandName>MC Item 1</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem2" priority="0x0100" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPic2" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 2</ButtonText>  
+           <CommandName>MC Item 2</CommandName>  
+       </Strings>  
+   </Button>  
+   <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem3" priority="0x0200" type="Button">  
+       <Parent guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" />  
+       <Icon guid="guidImages" id="bmpPicSearch" />  
+       <CommandFlag>IconAndText</CommandFlag>  
+       <Strings>  
+           <ButtonText>MC Item 3</ButtonText>  
+           <CommandName>MC Item 3</CommandName>  
+       </Strings>  
+   </Button>  
+   ```  
   
-6.  W tym momencie możesz obejrzeć kontroler menu. Skompiluj projekt, a następnie rozpocząć debugowanie. Powinien zostać wyświetlony wystąpienie eksperymentalne.  
+6. W tym momencie możesz obejrzeć kontroler menu. Skompiluj projekt, a następnie rozpocząć debugowanie. Powinien zostać wyświetlony wystąpienie eksperymentalne.  
   
-    1.  Na **widok / inne Windows** menu Otwórz **ToolWindow testu**.  
+   1. Na **widok / inne Windows** menu Otwórz **ToolWindow testu**.  
   
-    2.  Kontroler menu pojawia się na pasku narzędzi w oknie narzędzia.  
+   2. Kontroler menu pojawia się na pasku narzędzi w oknie narzędzia.  
   
-    3.  Kliknij strzałkę po prawej stronie kontroler menu, aby wyświetlić trzy możliwe polecenia.  
+   3. Kliknij strzałkę po prawej stronie kontroler menu, aby wyświetlić trzy możliwe polecenia.  
   
-     Zwróć uwagę, że po kliknięciu polecenia, tytuł kontroler menu zmienia się do wyświetlania tego polecenia. W następnej sekcji dodamy kod, aby aktywować te polecenia.  
+      Zwróć uwagę, że po kliknięciu polecenia, tytuł kontroler menu zmienia się do wyświetlania tego polecenia. W następnej sekcji dodamy kod, aby aktywować te polecenia.  
   
 ## <a name="implementing-the-menu-controller-commands"></a>Implementowanie polecenia Menu kontrolera  
   

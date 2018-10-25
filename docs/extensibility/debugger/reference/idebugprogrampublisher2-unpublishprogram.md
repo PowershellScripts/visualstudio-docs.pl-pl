@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bff0c60ea8401896eb5399ed797d90b62bf0d0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2daec6615f98d6e253e65bdc66cb7f1f545f9857
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822218"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
-Powoduje, że program jest niedostępny do debugowania.  
+Sprawia, że program jest niedostępny do debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int UnpublishProgram(
   
 #### <a name="parameters"></a>Parametry  
  `pDebuggeeInterface`  
- [in] `IUnknown` Interfejs do programu. To jest taka sama wartość dostarczony do [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) — metoda i unikatowo identyfikuje program usuwana (to znaczy, że jest używany jako plik cookie).  
+ [in] `IUnknown` Interfejsu do programu. To jest taka sama wartość przekazana do [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metody i jednoznacznie identyfikuje programu usuwany (oznacza to, że jest ona używana jako plik cookie).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Aby udostępnić program aparatami debugowania i Menedżera sesji debugowania, należy użyć [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metody.  
+ Aby udostępnić program aparaty debugowania i Menedżer debugowania sesji, należy użyć [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

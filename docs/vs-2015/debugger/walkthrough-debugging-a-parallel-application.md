@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 613b3580d863e7d09ae62cb41182bd997f65df58
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823661"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Wskazówki: debugowanie aplikacji równoległych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,25 +68,25 @@ Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równol
   
 #### <a name="to-create-the-sample-project"></a>Aby utworzyć projekt przykładowy  
   
-1.  W programie Visual Studio na **pliku** menu wskaż **New** a następnie kliknij przycisk **projektu**.  
+1. W programie Visual Studio na **pliku** menu wskaż **New** a następnie kliknij przycisk **projektu**.  
   
-2.  W **zainstalowane szablony** okienku wybierz opcję Visual C#, Visual Basic lub Visual C++. W przypadku języków zarządzanych, upewnij się, że [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] jest wyświetlana w polu framework.  
+2. W **zainstalowane szablony** okienku wybierz opcję Visual C#, Visual Basic lub Visual C++. W przypadku języków zarządzanych, upewnij się, że [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] jest wyświetlana w polu framework.  
   
-3.  Wybierz **aplikację Konsolową** a następnie kliknij przycisk **OK**. Pozostają w konfiguracji debugowania, co jest ustawieniem domyślnym.  
+3. Wybierz **aplikację Konsolową** a następnie kliknij przycisk **OK**. Pozostają w konfiguracji debugowania, co jest ustawieniem domyślnym.  
   
-4.  Otwórz plik kodu .cpp, .cs lub .vb w projekcie. Usunąć jej zawartość, aby utworzyć plik pusty kod.  
+4. Otwórz plik kodu .cpp, .cs lub .vb w projekcie. Usunąć jej zawartość, aby utworzyć plik pusty kod.  
   
-5.  Wklej następujący kod w języku wybranym do pliku kodu pusty.  
+5. Wklej następujący kod w języku wybranym do pliku kodu pusty.  
   
- [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
- [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
- [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
+   [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
+   [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
+   [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
   
-1.  Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.  
+6. Na **pliku** menu, kliknij przycisk **Zapisz wszystko**.  
   
-2.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
+7. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
   
-     Należy zauważyć, że nie istnieją cztery wywołania `Debugger.Break` (`DebugBreak` w przykładzie w języku C++) w związku z tym, nie trzeba wstawić punktów przerwania; po prostu działania aplikacji spowoduje jego przerwanie w debugerze maksymalnie cztery razy.  
+    Należy zauważyć, że nie istnieją cztery wywołania `Debugger.Break` (`DebugBreak` w przykładzie w języku C++) w związku z tym, nie trzeba wstawić punktów przerwania; po prostu działania aplikacji spowoduje jego przerwanie w debugerze maksymalnie cztery razy.  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Za pomocą równoległych stosów okna: widoku wątków  
  Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**. Poczekaj, aż pierwszy punkt przerwania, aby zostanie osiągnięty.  
@@ -153,33 +153,33 @@ Ten poradnik pokazuje jak używać **zadań równoległych** i **stosów równol
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Aby wznowić wykonywanie aż do trzeciego punktu przerwania  
   
-1.  Aby wznowić wykonywanie do momentu trzeci punkt przerwania zostaje trafiony, na **debugowania** menu, kliknij przycisk **Kontynuuj**.  
+1. Aby wznowić wykonywanie do momentu trzeci punkt przerwania zostaje trafiony, na **debugowania** menu, kliknij przycisk **Kontynuuj**.  
   
-     Wiele wątków znajdują się w tej samej metody, ale metoda nie jest na początku stos wywołań, metoda pojawia się w różnych polach. S.L, zawiera trzy wątków, która jest wyświetlana w trzy pola to na przykład w bieżącym punkcie przerwania. Kliknij dwukrotnie opcję Brak miejsca  
+    Wiele wątków znajdują się w tej samej metody, ale metoda nie jest na początku stos wywołań, metoda pojawia się w różnych polach. S.L, zawiera trzy wątków, która jest wyświetlana w trzy pola to na przykład w bieżącym punkcie przerwania. Kliknij dwukrotnie opcję Brak miejsca  
   
-     ![Ścieżki wykonywania w okna stosów równoległych](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
+    ![Ścieżki wykonywania w okna stosów równoległych](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
   
-     Zauważ, że S.L jest pogrubiony w innych polach, dzięki czemu można zobaczyć, gdzie indziej pojawia się. Jeśli chcesz zobaczyć, który ramek wywołać S.L i który ramek wywołań, kliknij przycisk **Przełącz widok metody** przycisk na pasku narzędzi. Na poniższej ilustracji przedstawiono metodę **stosów równoległych** okna.  
+    Zauważ, że S.L jest pogrubiony w innych polach, dzięki czemu można zobaczyć, gdzie indziej pojawia się. Jeśli chcesz zobaczyć, który ramek wywołać S.L i który ramek wywołań, kliknij przycisk **Przełącz widok metody** przycisk na pasku narzędzi. Na poniższej ilustracji przedstawiono metodę **stosów równoległych** okna.  
   
-     ![Metoda widok okna stosów równoległych](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
+    ![Metoda widok okna stosów równoległych](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
   
-     Zwróć uwagę, jak diagramu przestawiać na wybranej metody i umieszczony ją w swoje własne polu w środku widoku. Wywoływane a obiektami wywołującymi są wyświetlane u góry i u dołu. Kliknij przycisk **Przełącz widok metody** przycisk ponownie, aby opuścić ten tryb.  
+    Zwróć uwagę, jak diagramu przestawiać na wybranej metody i umieszczony ją w swoje własne polu w środku widoku. Wywoływane a obiektami wywołującymi są wyświetlane u góry i u dołu. Kliknij przycisk **Przełącz widok metody** przycisk ponownie, aby opuścić ten tryb.  
   
-     Menu skrótów **stosów równoległych** okno zawiera również następujące inne elementy.  
+    Menu skrótów **stosów równoległych** okno zawiera również następujące inne elementy.  
   
-    -   **Wyświetlanie szesnastkowe** Włącza/wyłącza numery w etykietkach narzędzi od wartości dziesiętnej i szesnastkowej.  
+   - **Wyświetlanie szesnastkowe** Włącza/wyłącza numery w etykietkach narzędzi od wartości dziesiętnej i szesnastkowej.  
   
-    -   **Informacje o ładowaniu symboli** i **ustawienia symboli** otworzyć okna dialogowe.  
+   - **Informacje o ładowaniu symboli** i **ustawienia symboli** otworzyć okna dialogowe.  
   
-    -   **Przejdź do kodu źródłowego** i **przejdź do demontażu** nawigowanie w edytorze wybranej metody.  
+   - **Przejdź do kodu źródłowego** i **przejdź do demontażu** nawigowanie w edytorze wybranej metody.  
   
-    -   **Pokaż kod zewnętrzny** Wyświetla wszystkie ramki, nawet jeśli nie znajdują się w kodzie użytkownika. Wypróbuj ją, aby wyświetlić diagram Rozwiń, aby uwzględnić dodatkowe ramki, (które mogą być nieaktywne, ponieważ nie masz symboli dla nich).  
+   - **Pokaż kod zewnętrzny** Wyświetla wszystkie ramki, nawet jeśli nie znajdują się w kodzie użytkownika. Wypróbuj ją, aby wyświetlić diagram Rozwiń, aby uwzględnić dodatkowe ramki, (które mogą być nieaktywne, ponieważ nie masz symboli dla nich).  
   
      Jeśli masz dużych diagramów w kroku do następnego punktu przerwania, może być widok, aby automatycznie przewiń do aktywną ramkę stosu bieżącego wątku; oznacza to, że wątek, który najpierw trafiony punkt przerwania. W **stosów równoległych** okna, upewnij się, że **automatycznie przewiń do bieżącej ramki stosu** przycisk na pasku narzędzi znajduje się na.  
   
      ![Autoscrolling okna stosów równoległych](../debugger/media/pdb-walkthrough-4a.png "PDB_Walkthrough_4A")  
   
-2.  Przed rozpoczęciem pracy w **stosów równoległych** okna, przewijania, aż po lewej stronie i w dół do końca.  
+2. Przed rozpoczęciem pracy w **stosów równoległych** okna, przewijania, aż po lewej stronie i w dół do końca.  
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Aby wznowić wykonywanie aż do czwartej punktu przerwania  
   

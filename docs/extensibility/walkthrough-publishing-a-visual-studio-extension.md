@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80bf0d3885f9dc4e4360b8516bd13a62cfbea952
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815744"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio
 
@@ -39,7 +39,7 @@ W tym artykule użyto rozszerzenia pakietu VSPackage domyślnego, ale kroki są 
 
 1. Zaktualizuj rozszerzenie *.vsixmanifest* poprawne informacje na temat nazwy produktu, autora i wersji.
 
-  ![Aktualizacja rozszerzenia vsixmanifest](media/update-extension-vsixmanifest.png)
+   ![Aktualizacja rozszerzenia vsixmanifest](media/update-extension-vsixmanifest.png)
 
 2. Tworzenie rozszerzenia w **wersji** trybu. Teraz rozszerzenie jest ona dostępna jako pakiet VSIX w folderze \bin\Release.
 
@@ -67,7 +67,7 @@ W tym artykule użyto rozszerzenia pakietu VSPackage domyślnego, ale kroki są 
 
 5. Kliknij przycisk **publikowania rozszerzenia**.  Ta opcja powoduje przejście do strony zarządzania dla wszystkich rozszerzeń. Jeśli nie masz konta wydawcy są zostanie wyświetlony monit, aby je utworzyć w tej chwili.
 
-  ![Przekaż do witryny Marketplace](media/upload-to-marketplace.png)
+   ![Przekaż do witryny Marketplace](media/upload-to-marketplace.png)
 
 6. Wybierz wydawcę, którego chcesz użyć, aby przekazać Twoje rozszerzenie. Możesz zmienić wydawcy, klikając na liście po lewej stronie nazwy wydawcy. Kliknij pozycję **nowe rozszerzenie** i wybierz **programu Visual Studio**.
 
@@ -85,29 +85,29 @@ W tym artykule użyto rozszerzenia pakietu VSPackage domyślnego, ale kroki są 
     
    * **Logo** używany dla rozszerzenia. Jest wypełniany automatycznie z *source.extension.vsixmanifest* pliku Jeśli podano.
     
-    * **Krótki opis** funkcji co Twoje rozszerzenie. Ten opis jest wypełniany automatycznie z *source.extension.vsixmanifest* pliku.
+     * **Krótki opis** funkcji co Twoje rozszerzenie. Ten opis jest wypełniany automatycznie z *source.extension.vsixmanifest* pliku.
     
-    * **Omówienie** jest dobrym miejscem do uwzględnienia zrzutów ekranu i szczegółowe informacje na temat działania Twojego rozszerzenia.
+     * **Omówienie** jest dobrym miejscem do uwzględnienia zrzutów ekranu i szczegółowe informacje na temat działania Twojego rozszerzenia.
     
-    * **Obsługiwane wersje programu Visual Studio** pozwala wybrać, które wersje programu Visual Studio rozszerzenie będzie działać na. Rozszerzenie jest ona instalowana tylko do tych wersji.
+     * **Obsługiwane wersje programu Visual Studio** pozwala wybrać, które wersje programu Visual Studio rozszerzenie będzie działać na. Rozszerzenie jest ona instalowana tylko do tych wersji.
     
-    * ** Obsługiwane edition pozwala na wybór jakie wersje programu Visual Studio rozszerzenie będzie działać na z programu Visual Studio. Rozszerzenie jest ona instalowana tylko do tych wersji.
+     * ** Obsługiwane edition pozwala na wybór jakie wersje programu Visual Studio rozszerzenie będzie działać na z programu Visual Studio. Rozszerzenie jest ona instalowana tylko do tych wersji.
     
-    * **Typ**. Najczęściej spotykanym typem rozszerzenia są **narzędzia**.
+     * **Typ**. Najczęściej spotykanym typem rozszerzenia są **narzędzia**.
     
-    * **Kategorie**. Wybierz maksymalnie trzy, które są najlepszym rozwiązaniem dla rozszerzenia.
+     * **Kategorie**. Wybierz maksymalnie trzy, które są najlepszym rozwiązaniem dla rozszerzenia.
     
-    * **Tagi** są słowa kluczowe, które ułatwiają użytkownikom znajdowanie Twojego rozszerzenia. Tagi mogą pomóc w zwiększeniu trafności wyszukiwania rozszerzeń w portalu Marketplace.
+     * **Tagi** są słowa kluczowe, które ułatwiają użytkownikom znajdowanie Twojego rozszerzenia. Tagi mogą pomóc w zwiększeniu trafności wyszukiwania rozszerzeń w portalu Marketplace.
     
-    * **Cennik kategorii** jest koszt Twojego rozszerzenia.
+     * **Cennik kategorii** jest koszt Twojego rozszerzenia.
     
-    * **Repozytorium kodu źródłowego** umożliwia udostępnianie linku do kodu źródłowego ze społecznością.
+     * **Repozytorium kodu źródłowego** umożliwia udostępnianie linku do kodu źródłowego ze społecznością.
     
-    * **Zezwalaj na pytania i odpowiedzi dla rozszerzenia** pozwala użytkownikom na stronie wpis rozszerzenia należy pozostawić pytania.
+     * **Zezwalaj na pytania i odpowiedzi dla rozszerzenia** pozwala użytkownikom na stronie wpis rozszerzenia należy pozostawić pytania.
 
 9. Kliknij przycisk **Zapisz prze & kazywanie**. Strona Zarządzanie tym wymaga opcji, możesz z powrotem do wydawcy. Rozszerzenia nie został jeszcze opublikowany. Aby opublikować Twojego rozszerzenia, kliknij prawym przyciskiem myszy na Twoje rozszerzenie i wybierz **Upublicznij**. Można wyświetlić, jak rozszerzenie będzie wyglądało w portalu Marketplace, wybierając **rozszerzenie widoku**. W przypadku nabycia liczb, kliknij pozycję **raporty**. Aby wprowadzić zmiany do rozszerzenia, wybierz polecenie **Edytuj**.
 
-  ![Rozszerzenie wpis Menu](media/extension-entry-menu.png)
+   ![Rozszerzenie wpis Menu](media/extension-entry-menu.png)
 
 10. Po kliknięciu przycisku **Upublicznij**, rozszerzenia jest obecnie dostępna publicznie. Wyszukaj Visual Studio Marketplace dla rozszerzenia.
 
@@ -119,17 +119,17 @@ Portal Marketplace obsługuje udzielanie użytkownikom dodatkowe uprawnienia do 
 
 2. Wybierz **członków** i kliknij pozycję **Dodaj**.
 
-  ![Dodawanie dodatkowych użytkowników](media/add-users.png)
+   ![Dodawanie dodatkowych użytkowników](media/add-users.png)
 
 3. Następnie możesz określić adres e-mail użytkownika, o których chcesz dodać, a następnie przyznać odpowiedni poziom dostępu w ramach **wybierz rolę**.  Można wybrać następujące opcje:
 
-  * **Twórca**: użytkownik może publikowania rozszerzenia, ale nie wyświetlić ani nimi zarządzać rozszerzenia publikowane przez innych użytkowników.
+   * **Twórca**: użytkownik może publikowania rozszerzenia, ale nie wyświetlić ani nimi zarządzać rozszerzenia publikowane przez innych użytkowników.
   
-  * **Czytnik**: użytkownika można wyświetlanie tych rozszerzeń, ale nie można opublikować lub Zarządzaj rozszerzeniami.
+   * **Czytnik**: użytkownika można wyświetlanie tych rozszerzeń, ale nie można opublikować lub Zarządzaj rozszerzeniami.
   
-  * **Współautor**: użytkownika można publikować i zarządzania rozszerzeniami, ale nie można edytować ustawienia wydawcy lub zarządzanie dostępem.
+   * **Współautor**: użytkownika można publikować i zarządzania rozszerzeniami, ale nie można edytować ustawienia wydawcy lub zarządzanie dostępem.
   
-  * **Właściciel**: użytkownik może opublikować i zarządzać rozszerzeniami, edytować ustawienia wydawcy i zarządzanie dostępem.
+   * **Właściciel**: użytkownik może opublikować i zarządzać rozszerzeniami, edytować ustawienia wydawcy i zarządzanie dostępem.
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>Należy zainstalować rozszerzenie z witryny Marketplace programu Visual Studio
 

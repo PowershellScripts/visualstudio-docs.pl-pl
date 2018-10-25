@@ -15,12 +15,12 @@ ms.assetid: 318e41b0-acf5-4842-b85e-421c9d5927c5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6044928f6c97d5b550c326c247128eb561d0cce8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb3dc021923cebb276932071e290642daf8907ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272184"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826614"
 ---
 # <a name="properties-display-grid"></a>Siatka wyświetlania właściwości
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ ms.locfileid: "49272184"
   
  <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> składa się z trzech metod, które są wywoływane przez środowisko IDE:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.CountObjects%2A> zawiera liczbę obiekty wybrane do wyświetlenia w **właściwości** okna.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.CountObjects%2A> zawiera liczbę obiekty wybrane do wyświetlenia w **właściwości** okna.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> Zwraca `IDispatch` obiekty, które są wybrane do wyświetlenia w **właściwości** okna.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> Zwraca `IDispatch` obiekty, które są wybrane do wyświetlenia w **właściwości** okna.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> Umożliwia dowolny obiekt zwrócony przez <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> do wybrania przez użytkownika. Dzięki temu pakietu VSPackage wizualnie zaktualizować wyboru widoczny dla użytkowników w interfejsie użytkownika.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> Umożliwia dowolny obiekt zwrócony przez <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> do wybrania przez użytkownika. Dzięki temu pakietu VSPackage wizualnie zaktualizować wyboru widoczny dla użytkowników w interfejsie użytkownika.  
   
- **Właściwości** okna wyodrębnia dane z `IDispatch` obiektów, które można pobrać właściwości są przeglądane. Przez przeglądarkę właściwości `IDispatch` poprosić obiektu właściwości obsługuje, badając `ITypeInfo`, które są uzyskiwane z `IDispatch::GetTypeInfo`. Następnie używa tych wartości do wypełniania w przeglądarce **właściwości** okna i zmień wartości dla poszczególnych właściwości wyświetlane w siatce. Informacje o właściwościach jest zachowywana w obrębie samego obiektu.  
+  **Właściwości** okna wyodrębnia dane z `IDispatch` obiektów, które można pobrać właściwości są przeglądane. Przez przeglądarkę właściwości `IDispatch` poprosić obiektu właściwości obsługuje, badając `ITypeInfo`, które są uzyskiwane z `IDispatch::GetTypeInfo`. Następnie używa tych wartości do wypełniania w przeglądarce **właściwości** okna i zmień wartości dla poszczególnych właściwości wyświetlane w siatce. Informacje o właściwościach jest zachowywana w obrębie samego obiektu.  
   
- Ponieważ zwracanych obiektów obsługuje `IDispatch`, obiekt wywołujący można uzyskać informacje, takie jak nazwy obiektu przez wywołanie metody albo `IDispatch::Invoke` lub `ITypeInfo::Invoke` o identyfikatorze wysyłania wstępnie zdefiniowane (identyfikator DISPID) reprezentuje żądane informacje. Zadeklarowane DISPID jest ujemna, aby upewnić się, że nie powodują konfliktów z identyfikatorami zdefiniowanych przez użytkownika.  
+  Ponieważ zwracanych obiektów obsługuje `IDispatch`, obiekt wywołujący można uzyskać informacje, takie jak nazwy obiektu przez wywołanie metody albo `IDispatch::Invoke` lub `ITypeInfo::Invoke` o identyfikatorze wysyłania wstępnie zdefiniowane (identyfikator DISPID) reprezentuje żądane informacje. Zadeklarowane DISPID jest ujemna, aby upewnić się, że nie powodują konfliktów z identyfikatorami zdefiniowanych przez użytkownika.  
   
- **Właściwości** oknie wyświetlane różne typy pól, w zależności od atrybutów specjalnych właściwości obiektu wybranego obiektu. Tych pól należą pola tekstowe, listy rozwijane i łącza do niestandardowego edytora okien dialogowych.  
+  **Właściwości** oknie wyświetlane różne typy pól, w zależności od atrybutów specjalnych właściwości obiektu wybranego obiektu. Tych pól należą pola tekstowe, listy rozwijane i łącza do niestandardowego edytora okien dialogowych.  
   
--   Wartości zawarte w liście wyliczany są pobierane przez <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> zapytania `IDispatch`. W siatce właściwości można zmienić wartości z liście wyliczany, klikając dwukrotnie nazwę pola lub klikając wartość i wybierając nową wartość z listy rozwijanej. Dla właściwości, które zostały wstępnie zdefiniowane ustawienia z wyliczanych list klikając dwukrotnie nazwę właściwości, na liście właściwości przewijać dostępnych opcji. Wstępnie zdefiniowane właściwości tylko dwie opcje, takie jak PRAWDA/FAŁSZ kliknij dwukrotnie nazwę właściwości, aby przełączać się między wyborów.  
+- Wartości zawarte w liście wyliczany są pobierane przez <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.GetObjects%2A> zapytania `IDispatch`. W siatce właściwości można zmienić wartości z liście wyliczany, klikając dwukrotnie nazwę pola lub klikając wartość i wybierając nową wartość z listy rozwijanej. Dla właściwości, które zostały wstępnie zdefiniowane ustawienia z wyliczanych list klikając dwukrotnie nazwę właściwości, na liście właściwości przewijać dostępnych opcji. Wstępnie zdefiniowane właściwości tylko dwie opcje, takie jak PRAWDA/FAŁSZ kliknij dwukrotnie nazwę właściwości, aby przełączać się między wyborów.  
   
--   Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HasDefaultValue%2A> jest `false`, wskazującą, czy wartość została zmieniona, wartość jest wyświetlana czcionką pogrubioną. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.CanResetPropertyValue%2A> Służy do określenia, jeśli wartość można przywrócić oryginalną wartość. Jeśli tak, możesz zmienić domyślną, kliknij prawym przyciskiem myszy wartość i wybierając pozycję **resetowania** z wyświetlonego menu. W przeciwnym razie należy ręcznie zmienić wartość domyślną. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> Umożliwia także lokalizowanie i Ukryj nazwy właściwości wyświetlane w czasie projektowania, ale nie ma wpływu na nazwy właściwości wyświetlane w czasie wykonywania.  
+- Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.HasDefaultValue%2A> jest `false`, wskazującą, czy wartość została zmieniona, wartość jest wyświetlana czcionką pogrubioną. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.CanResetPropertyValue%2A> Służy do określenia, jeśli wartość można przywrócić oryginalną wartość. Jeśli tak, możesz zmienić domyślną, kliknij prawym przyciskiem myszy wartość i wybierając pozycję **resetowania** z wyświetlonego menu. W przeciwnym razie należy ręcznie zmienić wartość domyślną. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> Umożliwia także lokalizowanie i Ukryj nazwy właściwości wyświetlane w czasie projektowania, ale nie ma wpływu na nazwy właściwości wyświetlane w czasie wykonywania.  
   
--   Klikając przycisk wielokropka (...) Wyświetla listę wartości właściwości, z których użytkownik może wybrać (na przykład selektora kolorów lub Lista czcionek). <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder> udostępnia te wartości.  
+- Klikając przycisk wielokropka (...) Wyświetla listę wartości właściwości, z których użytkownik może wybrać (na przykład selektora kolorów lub Lista czcionek). <xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder> udostępnia te wartości.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie właściwości](../../extensibility/internals/extending-properties.md)

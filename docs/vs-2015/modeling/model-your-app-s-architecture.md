@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8ca228edf7e05e48a733ba4f38bdc43560ef1552
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7300af951a50fb463453e83041d0651ac2c62cef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263708"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835270"
 ---
 # <a name="model-your-app39s-architecture"></a>Model aplikacji&#39;architektury s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,49 +63,49 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   
  Model wymagań zapewnia tych podstawowych rodzajów informacji:  
   
--   Interfejs dostarczany. Interfejs dostarczany zawiera listę usług lub operacji, które system lub składnika, musisz podać swoim użytkownikom, czy są one ludzi użytkowników ani innych składników oprogramowania.  
+- Interfejs dostarczany. Interfejs dostarczany zawiera listę usług lub operacji, które system lub składnika, musisz podać swoim użytkownikom, czy są one ludzi użytkowników ani innych składników oprogramowania.  
   
--   Wymagane interfejsy. Interfejs wymagany zawiera listę usług lub operacji, które można użyć systemu lub składnika. W niektórych przypadkach można zaprojektować wszystkie te usługi w ramach własnego systemu. W innych przypadkach zwłaszcza wtedy, gdy projektujesz składnik, który może być łączone z innymi składnikami w wielu konfiguracjach wymaganego interfejsu zostaną ustawione przez zewnętrzne zagadnienia.  
+- Wymagane interfejsy. Interfejs wymagany zawiera listę usług lub operacji, które można użyć systemu lub składnika. W niektórych przypadkach można zaprojektować wszystkie te usługi w ramach własnego systemu. W innych przypadkach zwłaszcza wtedy, gdy projektujesz składnik, który może być łączone z innymi składnikami w wielu konfiguracjach wymaganego interfejsu zostaną ustawione przez zewnętrzne zagadnienia.  
   
--   Jakość wymagań dotyczących usług. Wydajności, bezpieczeństwa, niezawodności, a inne cele i ograniczenia, które muszą spełniać system.  
+- Jakość wymagań dotyczących usług. Wydajności, bezpieczeństwa, niezawodności, a inne cele i ograniczenia, które muszą spełniać system.  
   
- Modelu wymagań są zapisywane z punktu widzenia użytkowników w systemie, czy są one osób lub innymi składnikami oprogramowania. Nie wiedzą niczego wewnętrzne działanie systemu. Z drugiej strony w modelu architektury jest do opisywania wewnętrzne działanie i pokazują, jak spełniają użytkowników potrzebuje.  
+  Modelu wymagań są zapisywane z punktu widzenia użytkowników w systemie, czy są one osób lub innymi składnikami oprogramowania. Nie wiedzą niczego wewnętrzne działanie systemu. Z drugiej strony w modelu architektury jest do opisywania wewnętrzne działanie i pokazują, jak spełniają użytkowników potrzebuje.  
   
- Oddzieleniu wymagań i modeli architektury jest przydatne, ponieważ ułatwia celu omówienia ich wymagań z użytkownikami. Pomaga również Refaktoryzuj projektu i należy wziąć pod uwagę alternatywnych architektury podczas przechowywania wymagania bez zmian.  
+  Oddzieleniu wymagań i modeli architektury jest przydatne, ponieważ ułatwia celu omówienia ich wymagań z użytkownikami. Pomaga również Refaktoryzuj projektu i należy wziąć pod uwagę alternatywnych architektury podczas przechowywania wymagania bez zmian.  
   
- W dwie alternatywne metody, można oddzielić wymagania i modele architektury:  
+  W dwie alternatywne metody, można oddzielić wymagania i modele architektury:  
   
--   Zachować je w tym samym rozwiązaniu, ale różnych projektach. Będą one występować jako osobne modele w Eksploratorze modelu UML. Różni członkowie zespołu mogą działać równolegle w modelach. Ograniczone rodzaje śledzenia mogą być tworzone między modelami.  
+- Zachować je w tym samym rozwiązaniu, ale różnych projektach. Będą one występować jako osobne modele w Eksploratorze modelu UML. Różni członkowie zespołu mogą działać równolegle w modelach. Ograniczone rodzaje śledzenia mogą być tworzone między modelami.  
   
--   Umieść je w tym samym modelu UML, ale w różnych pakietach. Ułatwia to Śledzenie zależności między modelami, ale uniemożliwia więcej niż jedną osobę w czasie pracy na podstawie modelu. Ponadto bardzo dużych modeli będzie trwać dłużej obciążenia do programu Visual Studio. To podejście w związku z tym jest mniej odpowiednia w przypadku dużych projektów.  
+- Umieść je w tym samym modelu UML, ale w różnych pakietach. Ułatwia to Śledzenie zależności między modelami, ale uniemożliwia więcej niż jedną osobę w czasie pracy na podstawie modelu. Ponadto bardzo dużych modeli będzie trwać dłużej obciążenia do programu Visual Studio. To podejście w związku z tym jest mniej odpowiednia w przypadku dużych projektów.  
   
- Ilość szczegółów, które należy umieścić w wymagania lub architektury model zależy od tego, skali projektu oraz wielkość i stopień rozproszenia zespołu. Małego zespołu nad projektem krótki mogą zostać przekazane żadne dodatkowe niż powstawać diagramu klas koncepcji biznesowych i niektórych wzorców projektowych; duży projekt rozproszone na więcej niż jeden region należałoby znacznie bardziej szczegółowo.  
+  Ilość szczegółów, które należy umieścić w wymagania lub architektury model zależy od tego, skali projektu oraz wielkość i stopień rozproszenia zespołu. Małego zespołu nad projektem krótki mogą zostać przekazane żadne dodatkowe niż powstawać diagramu klas koncepcji biznesowych i niektórych wzorców projektowych; duży projekt rozproszone na więcej niż jeden region należałoby znacznie bardziej szczegółowo.  
   
 ##  <a name="BigDecisions"></a> Wzorce architektury  
  Na wczesnym etapie projektowania należy wybrać technologie główne i elementów, od których zależy od projektu. Obszary, w których należy te opcje są następujące:  
   
--   Podstawowa Wybór technologii, takich jak wybrać między bazą danych i systemu plików i wybór między aplikację sieciową i klienta sieci Web i tak dalej.  
+- Podstawowa Wybór technologii, takich jak wybrać między bazą danych i systemu plików i wybór między aplikację sieciową i klienta sieci Web i tak dalej.  
   
--   Opcje struktury, takie jak wybór między Windows Workflow Foundation lub ADO.NET Entity Framework.  
+- Opcje struktury, takie jak wybór między Windows Workflow Foundation lub ADO.NET Entity Framework.  
   
--   Wybór metody integracji na przykład między usługi enterprise service bus lub kanał point-to-point.  
+- Wybór metody integracji na przykład między usługi enterprise service bus lub kanał point-to-point.  
   
- Te opcje są często określane przez jakości wymagań, takie jak skalowalność i elastyczność i wprowadzenia szczegółowe wymagania są znane. W dużym systemie konfiguracji sprzętu i oprogramowania są silnie powiązane ze sobą.  
+  Te opcje są często określane przez jakości wymagań, takie jak skalowalność i elastyczność i wprowadzenia szczegółowe wymagania są znane. W dużym systemie konfiguracji sprzętu i oprogramowania są silnie powiązane ze sobą.  
   
- Wybrane opcje, które wpływają na sposób używania i interpretować architektury model. Na przykład w systemie, który korzysta z bazy danych, skojarzenia na diagramie klasy może reprezentować relacji lub klucze obce w bazie danych, natomiast w systemie, który jest oparty na plikach XML, skojarzenia może wskazywać odsyłaczy, które używają języka XPath. W rozproszonym systemie wiadomości w diagramie sekwencji może reprezentować komunikatów o komunikacji sieciowej; w przypadku aplikacji niezależna reprezentują wywołania funkcji.  
+  Wybrane opcje, które wpływają na sposób używania i interpretować architektury model. Na przykład w systemie, który korzysta z bazy danych, skojarzenia na diagramie klasy może reprezentować relacji lub klucze obce w bazie danych, natomiast w systemie, który jest oparty na plikach XML, skojarzenia może wskazywać odsyłaczy, które używają języka XPath. W rozproszonym systemie wiadomości w diagramie sekwencji może reprezentować komunikatów o komunikacji sieciowej; w przypadku aplikacji niezależna reprezentują wywołania funkcji.  
   
 ##  <a name="Components"></a> Składniki oraz ich interfejsów  
  Główne zalecenia przedstawione w tej sekcji są następujące:  
   
--   Tworzenie diagramów składników, aby pokazać główne części systemu.  
+- Tworzenie diagramów składników, aby pokazać główne części systemu.  
   
--   Rysuj zależności między składnikami lub ich interfejsy, aby wyświetlić strukturę systemu.  
+- Rysuj zależności między składnikami lub ich interfejsy, aby wyświetlić strukturę systemu.  
   
--   Umożliwia interfejsy na składnikach usługi pokazują, że każdy składnik udostępnia lub wymaga.  
+- Umożliwia interfejsy na składnikach usługi pokazują, że każdy składnik udostępnia lub wymaga.  
   
--   W dużych projektów możesz narysować diagramy oddzielnych do rozkładania każdy składnik na mniejsze części.  
+- W dużych projektów możesz narysować diagramy oddzielnych do rozkładania każdy składnik na mniejsze części.  
   
- Te punkty są opracowane w dalszej części tej sekcji.  
+  Te punkty są opracowane w dalszej części tej sekcji.  
   
 ### <a name="components"></a>Składniki  
  Centralna widoków architektura modelu są diagramów składników, które pokazują głównych składników systemu i jak są one zależne od siebie nawzajem. Aby uzyskać więcej informacji na temat diagramów składników zobacz [diagramy składników UML: odwołanie](../modeling/uml-component-diagrams-reference.md).  
@@ -131,13 +131,13 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   
  Dobrze architektura ma wyczyść rozmieszczenie zależności, w których te warunki są spełnione:  
   
--   Nie istnieją żadne pętle na mapie kodu.  
+- Nie istnieją żadne pętle na mapie kodu.  
   
--   Składniki mogą być ułożone w warstwach, w których każdy zależności przechodzi z składnika w jednej warstwy do składnika w ciągu następnych. Wszystkie zależności między dwóch warstw go w tym samym kierunku.  
+- Składniki mogą być ułożone w warstwach, w których każdy zależności przechodzi z składnika w jednej warstwy do składnika w ciągu następnych. Wszystkie zależności między dwóch warstw go w tym samym kierunku.  
   
- Można wyświetlić zależności między składnikami lub można wyświetlić zależności między wymagane i podano interfejsów, które są dołączone do składników. Korzystając z interfejsów, można określić, jakie operacje są używane w poszczególnych zależności. Zazwyczaj przedstawiono zależności między składnikami, gdy diagramy są rysowane najpierw, a następnie zastępuje zależności między interfejsami, po dodaniu więcej informacji. Obie wersje są poprawne opisy oprogramowania, ale wersja z interfejsami zapewnia więcej szczegółów niż starszej wersji.  
+  Można wyświetlić zależności między składnikami lub można wyświetlić zależności między wymagane i podano interfejsów, które są dołączone do składników. Korzystając z interfejsów, można określić, jakie operacje są używane w poszczególnych zależności. Zazwyczaj przedstawiono zależności między składnikami, gdy diagramy są rysowane najpierw, a następnie zastępuje zależności między interfejsami, po dodaniu więcej informacji. Obie wersje są poprawne opisy oprogramowania, ale wersja z interfejsami zapewnia więcej szczegółów niż starszej wersji.  
   
- Zarządzanie zależnościami jest najważniejsze dla środowiska produkcyjnego, łatwego w utrzymaniu oprogramowania. Diagramy składników powinny odzwierciedlać wszystkich zależności w kodzie. Jeśli kod już istnieje, upewnij się, że wszystkie zależności są wyświetlane na diagramach. Jeśli kod jest opracowywany, upewnij się, że nie zawiera zależności, które nie są planowane na diagramie składników. Państwu pomóc odkryć zależności w kodzie, można wygenerować diagramów warstwowych. Ułatwiające upewnij się, czy spełniono swoje ograniczenia planowane zależności, możesz walidować kod diagramów warstwy. Aby uzyskać więcej informacji, zobacz [diagramy warstw: odwołanie](../modeling/layer-diagrams-reference.md).  
+  Zarządzanie zależnościami jest najważniejsze dla środowiska produkcyjnego, łatwego w utrzymaniu oprogramowania. Diagramy składników powinny odzwierciedlać wszystkich zależności w kodzie. Jeśli kod już istnieje, upewnij się, że wszystkie zależności są wyświetlane na diagramach. Jeśli kod jest opracowywany, upewnij się, że nie zawiera zależności, które nie są planowane na diagramie składników. Państwu pomóc odkryć zależności w kodzie, można wygenerować diagramów warstwowych. Ułatwiające upewnij się, czy spełniono swoje ograniczenia planowane zależności, możesz walidować kod diagramów warstwy. Aby uzyskać więcej informacji, zobacz [diagramy warstw: odwołanie](../modeling/layer-diagrams-reference.md).  
   
 ### <a name="interfaces"></a>Interfejsy  
  Umieszczając interfejsy na składniki, można oddzielić i nazwy główne grupy operacji, które są dostarczane przez poszczególne składniki. Na przykład składników opartych na sieci web systemu sprzedaży może mieć interfejs, za pomocą którego klienci kupić towarów, interfejs, za pomocą którego zaktualizować ich katalogów dostawców, a trzeciego interfejsu, przez który system jest zarządzany.  
@@ -146,17 +146,17 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   
  Jeśli zdefiniujesz oba dostarczone i wymagane interfejsy, dzięki temu można oddzielić składnika nie pozostawia żadnych śladów od pozostałej części projektu, tak, aby można było używać tych metod:  
   
--   Umieść ten składnik w kontroler testu, w którym otaczającego składniki są symulowane przez kontroler testów.  
+- Umieść ten składnik w kontroler testu, w którym otaczającego składniki są symulowane przez kontroler testów.  
   
--   Tworzenie składnika niezależnie od innych składników.  
+- Tworzenie składnika niezależnie od innych składników.  
   
--   Ponowne użycie składnika w innych kontekstach przez sprzężenia interfejsy do różnych składników.  
+- Ponowne użycie składnika w innych kontekstach przez sprzężenia interfejsy do różnych składników.  
   
- Jeśli chcesz zdefiniować listę operacji w interfejsie, można utworzyć inny widok interfejsu na diagramie klas UML. Aby to zrobić, zlokalizuj interfejsu w Eksploratorze modelu UML, a następnie przeciągnij go do diagramu klas. Następnie można dodać operacje do interfejsu.  
+  Jeśli chcesz zdefiniować listę operacji w interfejsie, można utworzyć inny widok interfejsu na diagramie klas UML. Aby to zrobić, zlokalizuj interfejsu w Eksploratorze modelu UML, a następnie przeciągnij go do diagramu klas. Następnie można dodać operacje do interfejsu.  
   
- Operacja w interfejsie UML może reprezentować dowolny sposób, w którym może być wywoływany zachowanie składnika. Może on reprezentuje żądanie usługi sieci Web, sygnał lub interakcji z innego typu lub wywołania funkcji zwykłego programu.  
+  Operacja w interfejsie UML może reprezentować dowolny sposób, w którym może być wywoływany zachowanie składnika. Może on reprezentuje żądanie usługi sieci Web, sygnał lub interakcji z innego typu lub wywołania funkcji zwykłego programu.  
   
- Aby ustalić, jakie operacje można dodać, należy utworzyć diagramy sekwencji, aby pokazać, jak składniki współdziałają ze sobą. Zobacz [interakcje pomiędzy składnikami](#Interactions). Każda z tych diagramów sekwencji pokazuje interakcje występujące w przypadku użycia innego. W ten sposób można stopniowo dodajesz do listy operacji w interfejsie każdego składnika, gdy eksplorujesz przypadków użycia.  
+  Aby ustalić, jakie operacje można dodać, należy utworzyć diagramy sekwencji, aby pokazać, jak składniki współdziałają ze sobą. Zobacz [interakcje pomiędzy składnikami](#Interactions). Każda z tych diagramów sekwencji pokazuje interakcje występujące w przypadku użycia innego. W ten sposób można stopniowo dodajesz do listy operacji w interfejsie każdego składnika, gdy eksplorujesz przypadków użycia.  
   
 ### <a name="decomposing-a-component-into-parts"></a>Podzielenie składnika na części  
  Można użyć procedury opisanej w poprzedniej sekcji, aby każdy składnik.  
@@ -169,32 +169,32 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
   
  Użyj części w następujących sytuacjach:  
   
--   Projekt składnika nadrzędnego, należy zawsze używać typu składnika części. Dlatego projekt części jest integralną częścią projektu składnika nadrzędnego.  
+- Projekt składnika nadrzędnego, należy zawsze używać typu składnika części. Dlatego projekt części jest integralną częścią projektu składnika nadrzędnego.  
   
--   Składnik nadrzędny nie ma żadnych konkretnych istnienie swój własny. Na przykład można mieć koncepcyjny składnik o nazwie Warstwa prezentacji, który reprezentuje kolekcję rzeczywistych składników, które obsługi widoków i interakcje użytkownika.  
+- Składnik nadrzędny nie ma żadnych konkretnych istnienie swój własny. Na przykład można mieć koncepcyjny składnik o nazwie Warstwa prezentacji, który reprezentuje kolekcję rzeczywistych składników, które obsługi widoków i interakcje użytkownika.  
   
- Użyj oddzielnych składników dostępne za pośrednictwem interfejsów wymagane w następujących sytuacjach:  
+  Użyj oddzielnych składników dostępne za pośrednictwem interfejsów wymagane w następujących sytuacjach:  
   
--   Wymaganie składnika mogą zostać dołączone przez swoje interfejsy do różnych składników dostarczanie w czasie wykonywania.  
+- Wymaganie składnika mogą zostać dołączone przez swoje interfejsy do różnych składników dostarczanie w czasie wykonywania.  
   
--   Projekt jest taka, że będzie można łatwo zastąpić inną jednego dostawcę.  
+- Projekt jest taka, że będzie można łatwo zastąpić inną jednego dostawcę.  
   
- Korzystanie z interfejsów wymagane zwykle lepiej jest użycie części. Mimo, że projekt może trwać dłużej, wynikowy system jest bardziej elastyczna. Jest również łatwiejsze testowanie składników oddzielnie. Dzięki temu mniej sprzężenia w swoich planach rozwoju.  
+  Korzystanie z interfejsów wymagane zwykle lepiej jest użycie części. Mimo, że projekt może trwać dłużej, wynikowy system jest bardziej elastyczna. Jest również łatwiejsze testowanie składników oddzielnie. Dzięki temu mniej sprzężenia w swoich planach rozwoju.  
   
 ##  <a name="Interactions"></a> Interakcje pomiędzy składnikami  
  Główne zalecenia przedstawione w tej sekcji są następujące:  
   
--   Zidentyfikować przypadki użycia systemu.  
+- Zidentyfikować przypadki użycia systemu.  
   
--   Dla każdego przypadku użycia narysuj jeden lub więcej diagramów, aby pokazać, jak osiągnąć składnikami systemu wymagany wynik współpracując ze sobą i z użytkownikami. Zazwyczaj są to diagramów sekwencji i diagramy aktywności.  
+- Dla każdego przypadku użycia narysuj jeden lub więcej diagramów, aby pokazać, jak osiągnąć składnikami systemu wymagany wynik współpracując ze sobą i z użytkownikami. Zazwyczaj są to diagramów sekwencji i diagramy aktywności.  
   
--   Użyj interfejsów, aby określić komunikaty odbierane przez poszczególne składniki.  
+- Użyj interfejsów, aby określić komunikaty odbierane przez poszczególne składniki.  
   
--   Opisz skutków operacji w interfejsach.  
+- Opisz skutków operacji w interfejsach.  
   
--   Powtórz procedurę dla każdego składnika, przedstawiający sposób interakcji części.  
+- Powtórz procedurę dla każdego składnika, przedstawiający sposób interakcji części.  
   
- Na przykład w sieci web systemu sprzedaży, modelu wymagań zdefiniować zakupu przez klienta jako przypadek użycia. Można utworzyć diagramu sekwencji do wyświetlenia interakcji, że klient ma ze składnikami w warstwie prezentacji oraz interakcji, do których mają z magazynu i składników ewidencjonowania aktywności.  
+  Na przykład w sieci web systemu sprzedaży, modelu wymagań zdefiniować zakupu przez klienta jako przypadek użycia. Można utworzyć diagramu sekwencji do wyświetlenia interakcji, że klient ma ze składnikami w warstwie prezentacji oraz interakcji, do których mają z magazynu i składników ewidencjonowania aktywności.  
   
 ### <a name="identifying-the-initiating-events"></a>Identyfikowanie inicjujący zdarzenia  
  Pracy wykonanej przez większość systemów oprogramowania może wygodnie podzielone przez odpowiedzi, które zapewnia inne dane wejściowe lub zdarzeń. Zainicjować zdarzenie może być jednym z następujących zdarzeń:  

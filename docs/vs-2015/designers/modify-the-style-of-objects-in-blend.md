@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240156"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843650"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modyfikowanie stylu obiektów w programie Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,15 +80,15 @@ Najprostszym sposobem dostosować obiekt jest do ustawiania właściwości **wł
   
  Tworzenie stylu, wybierz obiekt, a następnie w polu **obiektu** menu, wybierz **Edytuj styl**, a następnie wybierz **Edytuj kopię** lub **Utwórz pusty**.  
   
--   Wybierz **Edytuj kopię** chcesz rozpocząć od domyślnego stylu lub szablonu kontrolki.  
+- Wybierz **Edytuj kopię** chcesz rozpocząć od domyślnego stylu lub szablonu kontrolki.  
   
--   Wybierz **Utwórz pusty** od samego początku.  
+- Wybierz **Utwórz pusty** od samego początku.  
   
- **Edytuj bieżący** opcja jest wyświetlana tylko wtedy, gdy edytujesz stylu lub szablonu, który został już utworzony. Nie będzie on widoczny dla formantu, który nadal jest używany domyślny szablon systemu.  
+  **Edytuj bieżący** opcja jest wyświetlana tylko wtedy, gdy edytujesz stylu lub szablonu, który został już utworzony. Nie będzie on widoczny dla formantu, który nadal jest używany domyślny szablon systemu.  
   
- W **tworzenie zasobu stylu** okno dialogowe można albo nazwę stylu lub szablonu, aby można jej użyć później, lub stylu lub szablonu można zastosować do wszystkich formantów tego typu.  
+  W **tworzenie zasobu stylu** okno dialogowe można albo nazwę stylu lub szablonu, aby można jej użyć później, lub stylu lub szablonu można zastosować do wszystkich formantów tego typu.  
   
- ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
+  ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
 >  Nie można utworzyć style lub szablony dla każdego typu formantu. Jeśli ich nie obsługuje formant, przycisk nawigacji nie pojawi się powyżej obszaru kompozycji.  

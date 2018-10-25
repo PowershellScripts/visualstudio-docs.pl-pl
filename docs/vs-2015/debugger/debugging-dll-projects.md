@@ -24,59 +24,59 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb1d8cf355aee56797b5c814341255cb47cf4f9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fff87db239d023dbb5aa8f13757f7af42a969dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267387"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814562"
 ---
 # <a name="debugging-dll-projects"></a>Debugowanie projektów DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Następujące szablony tworzą biblioteki DLL:  
   
--   (C++, C# i Visual Basic) Biblioteka klas  
+- (C++, C# i Visual Basic) Biblioteka klas  
   
--   (C++, C# i Visual Basic): Biblioteka formantów Windows Forms  
+- (C++, C# i Visual Basic): Biblioteka formantów Windows Forms  
   
-     Debugowanie Biblioteka formantów Windows jest podobne do debugowania projektu biblioteki klas. W większości przypadków będzie wywoływać kontrolki Windows z innego projektu. Podczas debugowania projektu wywołującego można wkroczyć do kodu kontrolki Windows, ustawić punkty przerwania i wykonywać inne operacje debugowania. Aby uzyskać więcej informacji, zobacz [kontrolek formularzy Windows Forms](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
+   Debugowanie Biblioteka formantów Windows jest podobne do debugowania projektu biblioteki klas. W większości przypadków będzie wywoływać kontrolki Windows z innego projektu. Podczas debugowania projektu wywołującego można wkroczyć do kodu kontrolki Windows, ustawić punkty przerwania i wykonywać inne operacje debugowania. Aby uzyskać więcej informacji, zobacz [kontrolek formularzy Windows Forms](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a).  
   
--   (C# i Visual Basic): Biblioteka formantów sieci Web  
+- (C# i Visual Basic): Biblioteka formantów sieci Web  
   
-     Aby uzyskać więcej informacji, zobacz [Biblioteka formantów sieci Web (kod zarządzany)](../debugger/web-control-library-managed-code.md).  
+   Aby uzyskać więcej informacji, zobacz [Biblioteka formantów sieci Web (kod zarządzany)](../debugger/web-control-library-managed-code.md).  
   
--   (C++): formant ActiveX urządzeń inteligentnych MFC i formant ActiveX MFC  
+- (C++): formant ActiveX urządzeń inteligentnych MFC i formant ActiveX MFC  
   
-     Formanty ActiveX to formanty, które można pobrane z Internetu na komputerze klienckim i wyświetlane oraz aktywowane na stronach sieci Web.  
+   Formanty ActiveX to formanty, które można pobrane z Internetu na komputerze klienckim i wyświetlane oraz aktywowane na stronach sieci Web.  
   
-     Debugowanie kontrolki ActiveX jest podobne do debugowania innych rodzajów formantów, ponieważ nie mogą być uruchamiane jako autonomiczne, ale muszą być osadzone na stronie sieci Web w formacie HTML. Aby uzyskać więcej informacji, zobacz [porady: debugowanie kontrolki ActiveX](../debugger/how-to-debug-an-activex-control.md).  
+   Debugowanie kontrolki ActiveX jest podobne do debugowania innych rodzajów formantów, ponieważ nie mogą być uruchamiane jako autonomiczne, ale muszą być osadzone na stronie sieci Web w formacie HTML. Aby uzyskać więcej informacji, zobacz [porady: debugowanie kontrolki ActiveX](../debugger/how-to-debug-an-activex-control.md).  
   
--   (C++): Biblioteka DLL urządzeń inteligentnych MFC  
+- (C++): Biblioteka DLL urządzeń inteligentnych MFC  
   
-     Aby uzyskać więcej informacji, zobacz [techniki testowania MFC](../debugger/mfc-debugging-techniques.md).  
+   Aby uzyskać więcej informacji, zobacz [techniki testowania MFC](../debugger/mfc-debugging-techniques.md).  
   
- Ta sekcja zawiera również informacje o następujących tematach:  
+  Ta sekcja zawiera również informacje o następujących tematach:  
   
--   [Instrukcje: debugowanie z projektu DLL](../debugger/how-to-debug-from-a-dll-project.md)  
+- [Instrukcje: debugowanie z projektu DLL](../debugger/how-to-debug-from-a-dll-project.md)  
   
--   [Instrukcje: debugowanie w trybie mieszanym](../debugger/how-to-debug-in-mixed-mode.md)  
+- [Instrukcje: debugowanie w trybie mieszanym](../debugger/how-to-debug-in-mixed-mode.md)  
   
- Ten temat zawiera poniższe sekcje, w których omówiono sposób przygotowania debugowania biblioteki klas:  
+  Ten temat zawiera poniższe sekcje, w których omówiono sposób przygotowania debugowania biblioteki klas:  
   
--   [Tworzenie wersji debugowania](#vxtskdebuggingdllprojectsbuildingadebugversion)  
+- [Tworzenie wersji debugowania](#vxtskdebuggingdllprojectsbuildingadebugversion)  
   
--   [Debugowanie w trybie mieszanym](#vxtskdebuggingdllprojectsmixedmodedebugging)  
+- [Debugowanie w trybie mieszanym](#vxtskdebuggingdllprojectsmixedmodedebugging)  
   
--   [Zmiana konfiguracji domyślnych](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
+- [Zmiana konfiguracji domyślnych](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
   
--   [Sposoby debugowania DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
+- [Sposoby debugowania DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
   
--   [Aplikacja wywołująca](#vxtskdebuggingdllprojectsthecallingapplication)  
+- [Aplikacja wywołująca](#vxtskdebuggingdllprojectsthecallingapplication)  
   
--   [Formanty na stronie sieci Web](#vxtskdebuggingdllprojectscontrolsonawebpage)  
+- [Formanty na stronie sieci Web](#vxtskdebuggingdllprojectscontrolsonawebpage)  
   
--   [Okno bezpośrednie](#vxtskdebuggingdllprojectstheimmediatewindow)  
+- [Okno bezpośrednie](#vxtskdebuggingdllprojectstheimmediatewindow)  
   
 ##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Tworzenie wersji debugowania  
  Niezależnie od tego, jak rozpocząć debugowanie upewnij się, najpierw Tworzenie wersji debugowania biblioteki DLL, a następnie upewnij się, że wersja do debugowania znajduje się w lokalizacji, gdzie jej szuka go znaleźć. To może wydawać się oczywiste, ale Jeśli zapomnisz tego kroku, aplikacja może znaleźć inną wersję biblioteki DLL i ją załadować. Następnie program będzie kontynuował zastanawiasz się, dlaczego nigdy nie został osiągnięty punkt przerwania. Podczas debugowania, możesz sprawdzić, które biblioteki DLL program załadował, przez otwarcie debugera **modułów** okna. **Modułów** okno zawiera listę każdego pliku DLL lub EXE załadowana w debugowanym procesie. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z okna modułów](../debugger/how-to-use-the-modules-window.md).  
@@ -103,15 +103,15 @@ Następujące szablony tworzą biblioteki DLL:
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Debugowanie aplikacji wywołującej  
  Aby debugować bibliotekę DLL, należy uruchomić debugowanie aplikacji wywołującej, zazwyczaj pliku EXE albo aplikacji sieci Web. Istnieje kilka sposobów jej debugowania.  
   
--   Jeśli masz projekt dla aplikacji wywołującej, możesz otworzyć ten projekt i rozpocząć wykonywanie z **debugowania** menu. Aby uzyskać więcej informacji, zobacz [porady: wykonywanie Start](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
+- Jeśli masz projekt dla aplikacji wywołującej, możesz otworzyć ten projekt i rozpocząć wykonywanie z **debugowania** menu. Aby uzyskać więcej informacji, zobacz [porady: wykonywanie Start](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c).  
   
--   Jeśli aplikacja wywołująca jest istniejący program już wdrożona na komputerze testowym lub produkcyjnym i działa już można dołączyć do niego. Użyj tej metody, jeśli biblioteka DLL jest formantem obsługiwanym przez program Internet Explorer lub formantem na stronie sieci Web. Aby uzyskać więcej informacji, zobacz [porady: dołączanie do procesu uruchamiania](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
+- Jeśli aplikacja wywołująca jest istniejący program już wdrożona na komputerze testowym lub produkcyjnym i działa już można dołączyć do niego. Użyj tej metody, jeśli biblioteka DLL jest formantem obsługiwanym przez program Internet Explorer lub formantem na stronie sieci Web. Aby uzyskać więcej informacji, zobacz [porady: dołączanie do procesu uruchamiania](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).  
   
--   Można to debugować z projektu DLL. Aby uzyskać więcej informacji, zobacz [porady: debugowanie z projektu DLL](../debugger/how-to-debug-from-a-dll-project.md).  
+- Można to debugować z projektu DLL. Aby uzyskać więcej informacji, zobacz [porady: debugowanie z projektu DLL](../debugger/how-to-debug-from-a-dll-project.md).  
   
--   Można to debugować z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **bezpośrednie** okna. W tym przypadku **bezpośrednie** okna odgrywa rolę aplikacji.  
+- Można to debugować z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **bezpośrednie** okna. W tym przypadku **bezpośrednie** okna odgrywa rolę aplikacji.  
   
- Przed rozpoczęciem debugowania aplikacji wywołującej, zazwyczaj można ustawić punkt przerwania w bibliotece klas. Aby uzyskać więcej informacji, zobacz [punkty przerwania i śledzenia](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Po osiągnięciu punktu przerwania można przechodzić przez kod, obserwując działanie w każdym wierszu, dopóki nie można ustalić przyczynę problemu. Aby uzyskać więcej informacji, zobacz [Przegląd przechodzenie krok po kroku kodu](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
+  Przed rozpoczęciem debugowania aplikacji wywołującej, zazwyczaj można ustawić punkt przerwania w bibliotece klas. Aby uzyskać więcej informacji, zobacz [punkty przerwania i śledzenia](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583). Po osiągnięciu punktu przerwania można przechodzić przez kod, obserwując działanie w każdym wierszu, dopóki nie można ustalić przyczynę problemu. Aby uzyskać więcej informacji, zobacz [Przegląd przechodzenie krok po kroku kodu](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9).  
   
 ###  <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Formanty na stronie sieci Web  
  Aby debugować formant strony sieci Web, należy utworzyć [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] strona, która ją osadza, jeśli taka strona jeszcze nie istnieje. Następnie umieścić punkty przerwania w kodzie strony sieci Web, a także w kodzie sterującym. Następnie wywołaj stronę sieci Web z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

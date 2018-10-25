@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bfddc0903c520469833a0f160444202edf07c32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303202"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823700"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Programy obsługi zdarzeń propagujące zmiany poza modelem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,23 +31,23 @@ W wizualizacji i modelowania SDK, można zdefiniować programy obsługi zdarzeń
   
 ### <a name="to-define-a-store-event"></a>Aby zdefiniować zdarzenia magazynu  
   
-1.  Wybierz typ zdarzenia, które chcesz monitorować. Aby uzyskać pełną listę, Przyjrzyj się właściwości <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Każda właściwość odnosi się do typu zdarzenia. Najczęściej używane zdarzenia, które typy to:  
+1. Wybierz typ zdarzenia, które chcesz monitorować. Aby uzyskać pełną listę, Przyjrzyj się właściwości <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Każda właściwość odnosi się do typu zdarzenia. Najczęściej używane zdarzenia, które typy to:  
   
-    -   `ElementAdded` — wyzwalane, gdy element modelu, relacji łączy, kształtu lub połączenia jest tworzony.  
+   -   `ElementAdded` — wyzwalane, gdy element modelu, relacji łączy, kształtu lub połączenia jest tworzony.  
   
-    -   ElementPropertyChanged — wyzwalane, gdy wartość `Normal` właściwość domeny zostanie zmieniony. Zdarzenie jest wyzwalane tylko wtedy, gdy wartości nowym i starym nie są równe. Nie można zastosować zdarzenie do obliczone i niestandardowe właściwości przechowywania.  
+   -   ElementPropertyChanged — wyzwalane, gdy wartość `Normal` właściwość domeny zostanie zmieniony. Zdarzenie jest wyzwalane tylko wtedy, gdy wartości nowym i starym nie są równe. Nie można zastosować zdarzenie do obliczone i niestandardowe właściwości przechowywania.  
   
-         Nie można zastosować do właściwości roli, które odnoszą się do relacji łączy. Zamiast tego należy użyć `ElementAdded` do monitorowania relacji domeny.  
+        Nie można zastosować do właściwości roli, które odnoszą się do relacji łączy. Zamiast tego należy użyć `ElementAdded` do monitorowania relacji domeny.  
   
-    -   `ElementDeleted` — wyzwalane po elementu modelu, relacji, kształtu lub łącznik został usunięty. Nadal możesz uzyskać dostępu do wartości właściwości elementu, ale będzie mieć żadnych relacji z innymi elementami.  
+   -   `ElementDeleted` — wyzwalane po elementu modelu, relacji, kształtu lub łącznik został usunięty. Nadal możesz uzyskać dostępu do wartości właściwości elementu, ale będzie mieć żadnych relacji z innymi elementami.  
   
-2.  Dodaj definicję klasy częściowej _YourDsl_**DocData** w osobnym pliku kodu w **DslPackage** projektu.  
+2. Dodaj definicję klasy częściowej _YourDsl_**DocData** w osobnym pliku kodu w **DslPackage** projektu.  
   
-3.  Jako metodę jak w poniższym przykładzie, należy napisać kod zdarzenia. Może być `static`, chyba że chcesz uzyskać dostęp do `DocData`.  
+3. Jako metodę jak w poniższym przykładzie, należy napisać kod zdarzenia. Może być `static`, chyba że chcesz uzyskać dostęp do `DocData`.  
   
-4.  Zastąp `OnDocumentLoaded()` zarejestrować program obsługi. Jeśli masz więcej niż jeden program obsługi, można zarejestrować je w tym samym miejscu.  
+4. Zastąp `OnDocumentLoaded()` zarejestrować program obsługi. Jeśli masz więcej niż jeden program obsługi, można zarejestrować je w tym samym miejscu.  
   
- Lokalizacja kodu rejestracji nie jest krytyczny. `DocView.LoadView()` jest alternatywną lokalizację.  
+   Lokalizacja kodu rejestracji nie jest krytyczny. `DocView.LoadView()` jest alternatywną lokalizację.  
   
 ```  
 using System;  

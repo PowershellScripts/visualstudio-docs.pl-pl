@@ -35,12 +35,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9a133b452000753eb5b7dfba579c8954791196b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93a112fac274921fe2d1075e1a1b9178c408240c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228335"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827977"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Tworzenie i konfigurowanie typów członków (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +72,11 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
   
 #### <a name="to-open-the-class-details-window"></a>Aby otworzyć okno Szczegóły klasy  
   
-1.  Kliknij prawym przyciskiem myszy w dowolnej klasie na diagramie, aby wyświetlić menu kontekstowe.  
+1. Kliknij prawym przyciskiem myszy w dowolnej klasie na diagramie, aby wyświetlić menu kontekstowe.  
   
-2.  W menu kontekstowym kliknij **okna Szczegóły klasy**.  
+2. W menu kontekstowym kliknij **okna Szczegóły klasy**.  
   
- — lub —  
+   — lub —  
   
 -   Wskaż **Windows inne** w menu Widok, a następnie kliknij przycisk **szczegóły klasy**.  
   
@@ -194,31 +194,31 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
   
  Wiersze parametrów zawierają następujące elementy:  
   
--   **Nazwa**  
+- **Nazwa**  
   
-     **Nazwa** kolumna w wierszu parametru wyświetla nazwę parametru. Ta nazwa jest wyświetlany na **nazwa** właściwości w oknie dialogowym właściwości. Ta komórka służy do zmiany nazwy któregokolwiek parametru, który ma uprawnienia odczytu i zapisu.  
+   **Nazwa** kolumna w wierszu parametru wyświetla nazwę parametru. Ta nazwa jest wyświetlany na **nazwa** właściwości w oknie dialogowym właściwości. Ta komórka służy do zmiany nazwy któregokolwiek parametru, który ma uprawnienia odczytu i zapisu.  
   
-     Wskazuje na nazwę parametru wyświetla nazwę parametru, jeśli **nazwa** kolumna jest zbyt wąska, aby wyświetlić całą nazwę.  
+   Wskazuje na nazwę parametru wyświetla nazwę parametru, jeśli **nazwa** kolumna jest zbyt wąska, aby wyświetlić całą nazwę.  
   
--   **Typ**  
+- **Typ**  
   
-     **Typ parametru** komórki korzysta z technologii Intellisense, która pozwala na wybranie z listy wszystkich typów dostępnych w bieżącym projekcie lub w projektach odwołania.  
+   **Typ parametru** komórki korzysta z technologii Intellisense, która pozwala na wybranie z listy wszystkich typów dostępnych w bieżącym projekcie lub w projektach odwołania.  
   
--   **Modyfikator**  
+- **Modyfikator**  
   
-     **Modyfikator** komórki w wierszu parametru akceptuje i wyświetla nowy modyfikator parametru. Aby wprowadzić nowy modyfikator parametru, użyj pola listy rozwijanej, aby dokonać wyboru spośród **Brak**, **ref**, **się**, lub **params** w języku C# i **ByVal**, **ByRef**, lub **ParamArray** w VB.  
+   **Modyfikator** komórki w wierszu parametru akceptuje i wyświetla nowy modyfikator parametru. Aby wprowadzić nowy modyfikator parametru, użyj pola listy rozwijanej, aby dokonać wyboru spośród **Brak**, **ref**, **się**, lub **params** w języku C# i **ByVal**, **ByRef**, lub **ParamArray** w VB.  
   
--   **Podsumowanie**  
+- **Podsumowanie**  
   
-     **Podsumowanie** komórki w wierszu parametru umożliwia wprowadzanie komentarzy do kodu, które są wyświetlane w IntelliSense podczas wprowadzania parametru w edytorze kodu.  
+   **Podsumowanie** komórki w wierszu parametru umożliwia wprowadzanie komentarzy do kodu, które są wyświetlane w IntelliSense podczas wprowadzania parametru w edytorze kodu.  
   
--   **\<Dodaj parametr >**  
+- **\<Dodaj parametr >**  
   
-     Ostatni wiersz parametru elementu członkowskiego zawiera tekst **<add parameter>** w **nazwa** komórki. Kliknięcie tej komórki pozwala utworzyć nowy parametr. Aby uzyskać więcej informacji, zobacz [Aby dodać parametr do metody](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
+   Ostatni wiersz parametru elementu członkowskiego zawiera tekst **<add parameter>** w **nazwa** komórki. Kliknięcie tej komórki pozwala utworzyć nowy parametr. Aby uzyskać więcej informacji, zobacz [Aby dodać parametr do metody](../ide/creating-and-configuring-type-members-class-designer.md#HowToAddParameterToMethod).  
   
- **Właściwości parametru w oknie dialogowym właściwości**  
+  **Właściwości parametru w oknie dialogowym właściwości**  
   
- Okno właściwości wyświetla te same właściwości parametru wyświetlane w oknie Szczegóły klasy: **nazwa**, **typu**, **modyfikator**, **Podsumowanie**, jak również **opcjonalny domyślny** właściwości. Zmiana właściwości w jednej lokalizacji aktualizuje globalnie wartość właściwości, włącznie z wyświetlaniem jej wartości w innej lokalizacji.  
+  Okno właściwości wyświetla te same właściwości parametru wyświetlane w oknie Szczegóły klasy: **nazwa**, **typu**, **modyfikator**, **Podsumowanie**, jak również **opcjonalny domyślny** właściwości. Zmiana właściwości w jednej lokalizacji aktualizuje globalnie wartość właściwości, włącznie z wyświetlaniem jej wartości w innej lokalizacji.  
   
 > [!NOTE]
 >  Aby dodać parametr do delegata, zobacz [tworzenie elementów członkowskich](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
@@ -268,62 +268,62 @@ Możesz dodać te składowe do typów w klasie na diagramie i skonfigurować te 
   
  Wszystkie komórki w oknie Szczegóły klasy są edytowalne, z kilkoma wyjątkami:  
   
--   Cały typ jest tylko do odczytu, gdy, na przykład znajduje się w zestawie odwołania (zobacz [wyświetlanie informacji tylko do odczytu (Projektant klas)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Po zaznaczeniu kształtu w Konstruktorze klasy, okno Szczegóły klasy wyświetla jego szczegóły w stanie tylko do odczytu.  
+- Cały typ jest tylko do odczytu, gdy, na przykład znajduje się w zestawie odwołania (zobacz [wyświetlanie informacji tylko do odczytu (Projektant klas)](http://msdn.microsoft.com/en-us/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Po zaznaczeniu kształtu w Konstruktorze klasy, okno Szczegóły klasy wyświetla jego szczegóły w stanie tylko do odczytu.  
   
--   Dla indeksatorów nazwa jest tylko do odczytu, a pozostałe (typ, modyfikator, podsumowanie) są edytowalne.  
+- Dla indeksatorów nazwa jest tylko do odczytu, a pozostałe (typ, modyfikator, podsumowanie) są edytowalne.  
   
--   Wszystkie elementy rodzajowe mają parametry tylko do odczytu w oknie Szczegóły klasy. Aby zmienić parametr rodzajowy, wyedytuj jego kod źródłowy.  
+- Wszystkie elementy rodzajowe mają parametry tylko do odczytu w oknie Szczegóły klasy. Aby zmienić parametr rodzajowy, wyedytuj jego kod źródłowy.  
   
--   Nazwa parametru typu, który jest zdefiniowany w typie rodzajowym, jest tylko do odczytu.  
+- Nazwa parametru typu, który jest zdefiniowany w typie rodzajowym, jest tylko do odczytu.  
   
--   Jeżeli kod typu jest uszkodzony (błędny), zawartość typu jest wyświetlana w oknie Szczegóły klasy jako tylko do odczytu.  
+- Jeżeli kod typu jest uszkodzony (błędny), zawartość typu jest wyświetlana w oknie Szczegóły klasy jako tylko do odczytu.  
   
- **Okno Szczegóły klasy i kod źródłowy**  
+  **Okno Szczegóły klasy i kod źródłowy**  
   
--   Możesz wyświetlić kod źródłowy, klikając prawym przyciskiem myszy kształt w oknie Szczegóły klasy (lub Projektant klasy), a następnie klikając przycisk Wyświetl kod. Plik źródłowy kodu otwiera się i przewija do wybranego elementu.  
+- Możesz wyświetlić kod źródłowy, klikając prawym przyciskiem myszy kształt w oknie Szczegóły klasy (lub Projektant klasy), a następnie klikając przycisk Wyświetl kod. Plik źródłowy kodu otwiera się i przewija do wybranego elementu.  
   
--   Zmiana kodu źródłowego jest natychmiast odzwierciedlana w wyświetlaniu sygnatury w Projektancie klas i w oknie Szczegóły klasy. Jeśli okno Szczegóły klasy jest akurat zamknięte, nowe informacje są widoczne przy następnym otwarciu.  
+- Zmiana kodu źródłowego jest natychmiast odzwierciedlana w wyświetlaniu sygnatury w Projektancie klas i w oknie Szczegóły klasy. Jeśli okno Szczegóły klasy jest akurat zamknięte, nowe informacje są widoczne przy następnym otwarciu.  
   
--   Jeżeli kod typu jest uszkodzony (błędny), zawartość typu jest wyświetlana w oknie Szczegóły klasy jako tylko do odczytu.  
+- Jeżeli kod typu jest uszkodzony (błędny), zawartość typu jest wyświetlana w oknie Szczegóły klasy jako tylko do odczytu.  
   
- **Funkcja Schowka w oknie Szczegóły klasy**  
+  **Funkcja Schowka w oknie Szczegóły klasy**  
   
- Można skopiować lub wyciąć pola lub wiersze w oknie Szczegóły klasy i wkleić je do innego typu. Wiersz można wyciąć tylko wtedy, gdy nie jest tylko do odczytu. Podczas wklejania wiersza, okno Szczegóły klasy przypisuje nową nazwę (pochodzącą z nazwy skopiowanego wiersza), aby uniknąć konfliktu.  
+  Można skopiować lub wyciąć pola lub wiersze w oknie Szczegóły klasy i wkleić je do innego typu. Wiersz można wyciąć tylko wtedy, gdy nie jest tylko do odczytu. Podczas wklejania wiersza, okno Szczegóły klasy przypisuje nową nazwę (pochodzącą z nazwy skopiowanego wiersza), aby uniknąć konfliktu.  
   
 ##  <a name="ReadOnlyInfo"></a> Wyświetlanie informacji tylko do odczytu  
  Projektant klasy i okno Szczegóły klasy mogą wyświetlać typy (i składowe) dla następujących składowych:  
   
--   projekt, który zawiera diagram klas  
+- projekt, który zawiera diagram klas  
   
--   projekt stanowiący odwołanie z projektu, który zawiera diagram klas  
+- projekt stanowiący odwołanie z projektu, który zawiera diagram klas  
   
--   zestaw stanowiący odwołanie z projektu, który zawiera diagram klas  
+- zestaw stanowiący odwołanie z projektu, który zawiera diagram klas  
   
- W dwóch ostatnich przypadkach, jednostka, do której istnieje odwołanie (typ lub składowa), jest tylko do odczytu na diagramie klasy, który ją reprezentuje.  
+  W dwóch ostatnich przypadkach, jednostka, do której istnieje odwołanie (typ lub składowa), jest tylko do odczytu na diagramie klasy, który ją reprezentuje.  
   
- Cały projekt lub jego części, takie jak pojedyncze pliki, mogą być tylko do odczytu. Najbardziej typowe przypadki, w których projekt lub jeden z jego plików jest tylko do odczytu, występują wtedy, gdy projekt jest pod kontrolą kodu źródłowego (i nie jest wyewidencjonowany), istnieje w zestawie zewnętrznym, lub gdy system operacyjny uzna, że pliki są tylko do odczytu.  
+  Cały projekt lub jego części, takie jak pojedyncze pliki, mogą być tylko do odczytu. Najbardziej typowe przypadki, w których projekt lub jeden z jego plików jest tylko do odczytu, występują wtedy, gdy projekt jest pod kontrolą kodu źródłowego (i nie jest wyewidencjonowany), istnieje w zestawie zewnętrznym, lub gdy system operacyjny uzna, że pliki są tylko do odczytu.  
   
- **Kontrola kodu źródłowego**  
+  **Kontrola kodu źródłowego**  
   
- Ponieważ diagram klas jest zapisywany jako plik w projekcie, należy wyewidencjonować projekt, aby zapisać zmiany wprowadzone w Projektancie klas lub oknie Szczegóły klasy.  
+  Ponieważ diagram klas jest zapisywany jako plik w projekcie, należy wyewidencjonować projekt, aby zapisać zmiany wprowadzone w Projektancie klas lub oknie Szczegóły klasy.  
   
- **Projekty tylko do odczytu**  
+  **Projekty tylko do odczytu**  
   
- Projekt może być tylko do odczytu z przyczyn innych niż kontrola kodu źródłowego. Zamknięcie projektu wyświetla okno dialogowe z pytaniem, czy zastąpić plik projektu, odrzucić zmiany (nie zapisywać), czy anulować operację zamknięcia. Jeśli wybierzesz zastąpienie, pliki projektu są zastępowane i udostępnione do odczytu i zapisu. Dodawany jest nowy plik diagramu klasy.  
+  Projekt może być tylko do odczytu z przyczyn innych niż kontrola kodu źródłowego. Zamknięcie projektu wyświetla okno dialogowe z pytaniem, czy zastąpić plik projektu, odrzucić zmiany (nie zapisywać), czy anulować operację zamknięcia. Jeśli wybierzesz zastąpienie, pliki projektu są zastępowane i udostępnione do odczytu i zapisu. Dodawany jest nowy plik diagramu klasy.  
   
- **Typy tylko do odczytu**  
+  **Typy tylko do odczytu**  
   
- Jeśli zostanie podjęta próba zapisania projektu zawierającego typ, którego plik kodu źródłowego jest tylko do odczytu, **Zapisz z uprawnieniami tylko do odczytu pliku** pojawi się okno dialogowe, które daje wybór, aby zapisać plik pod nową nazwą lub w nowej lokalizacji lub zastąpienia pliku tylko do odczytu . Jeśli plik zostanie zastąpiony, nowa kopia nie będzie już tylko do odczytu.  
+  Jeśli zostanie podjęta próba zapisania projektu zawierającego typ, którego plik kodu źródłowego jest tylko do odczytu, **Zapisz z uprawnieniami tylko do odczytu pliku** pojawi się okno dialogowe, które daje wybór, aby zapisać plik pod nową nazwą lub w nowej lokalizacji lub zastąpienia pliku tylko do odczytu . Jeśli plik zostanie zastąpiony, nowa kopia nie będzie już tylko do odczytu.  
   
- Jeśli plik kodu zawiera błąd składni, kształty wyświetlające kod w tym pliku zostaną tymczasowo ustawione tylko do odczytu, dopóki błąd składni nie zostanie poprawiony. Kształty w tym stanie wyświetlają czerwony tekst i czerwoną ikonę, która wyświetla etykietkę z napisem „plik kodu źródłowego zawiera błąd analizy składni”.  
+  Jeśli plik kodu zawiera błąd składni, kształty wyświetlające kod w tym pliku zostaną tymczasowo ustawione tylko do odczytu, dopóki błąd składni nie zostanie poprawiony. Kształty w tym stanie wyświetlają czerwony tekst i czerwoną ikonę, która wyświetla etykietkę z napisem „plik kodu źródłowego zawiera błąd analizy składni”.  
   
- Odwołanie typu (np. typ .NET Framework), które występuje w obszarze innego węzła projektu lub węzła odwołania do zestawu, jest wskazany na powierzchni projektowej Projektanta klas jako tylko do odczytu. Typ lokalny, który istnieje w otwartym projekcie, jest do odczytu i zapisu, a jego kształt na powierzchni projektowej Projektanta klas jest odpowiednio opisany.  
+  Odwołanie typu (np. typ .NET Framework), które występuje w obszarze innego węzła projektu lub węzła odwołania do zestawu, jest wskazany na powierzchni projektowej Projektanta klas jako tylko do odczytu. Typ lokalny, który istnieje w otwartym projekcie, jest do odczytu i zapisu, a jego kształt na powierzchni projektowej Projektanta klas jest odpowiednio opisany.  
   
- Indeksatory są do odczytu i zapisu w kodzie i oknie Szczegóły klasy, ale nazwa indeksatora jest tylko do odczytu.  
+  Indeksatory są do odczytu i zapisu w kodzie i oknie Szczegóły klasy, ale nazwa indeksatora jest tylko do odczytu.  
   
- Metod częściowych nie można edytować za pomocą Projektanta klas lub okna Szczegóły klasy; do ich edycji należy użyć Edytora kodu.  
+  Metod częściowych nie można edytować za pomocą Projektanta klas lub okna Szczegóły klasy; do ich edycji należy użyć Edytora kodu.  
   
- Macierzystego kodu C++ nie można edytować za pomocą Projektanta klas lub okna Szczegóły klasy; do jego edycji należy użyć Edytora kodu.  
+  Macierzystego kodu C++ nie można edytować za pomocą Projektanta klas lub okna Szczegóły klasy; do jego edycji należy użyć Edytora kodu.  
   
 ## <a name="related-topics"></a>Tematy pokrewne  
   

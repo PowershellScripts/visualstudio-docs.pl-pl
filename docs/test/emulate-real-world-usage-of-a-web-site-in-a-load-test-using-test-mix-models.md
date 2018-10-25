@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 682370de0964e8bc96a069f015f37144f4d9a83f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3e3710d82ee22975963169940bfae71b21a64279
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177269"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820905"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulowanie oczekiwanego wykorzystania rzeczywistych witryny sieci Web lub aplikacji w teście obciążenia przy użyciu modelu testu mieszanego
 
@@ -42,13 +42,13 @@ Można określić jedną z następujących opcji model testu mieszanego, dla sce
 ###  <a name="BasedOnTestsStarted"></a> Procent opartych na rozpoczętych testów
  Dla każdego testu w zestawie można określić wartość procentową, która określa, jak często testu jest wybrany jako następny test do uruchomienia. Na przykład można przypisać następujące wartości procentowe do trzech testów:
 
--   TestA (50%)
+- TestA (50%)
 
--   TestB (35%)
+- TestB (35%)
 
--   TestC (15%)
+- TestC (15%)
 
- Jeśli używasz tego ustawienia, Następny test, aby rozpocząć opiera się na przypisane wartości procentowe. W tym nie biorąc pod uwagę liczbę wirtualnych użytkowników, którzy są aktualnie uruchomione każdego testu.
+  Jeśli używasz tego ustawienia, Następny test, aby rozpocząć opiera się na przypisane wartości procentowe. W tym nie biorąc pod uwagę liczbę wirtualnych użytkowników, którzy są aktualnie uruchomione każdego testu.
 
 ###  <a name="PercentageBasedonVirtualUsers"></a> Wartość procentową na podstawie liczby użytkowników wirtualnych
  Ten model testu mieszanego Określa procent wirtualnych użytkowników, którzy uruchomią określonego testu. Jeśli używasz tego modelu testu mieszanego, Następny test, aby rozpocząć opiera się nie tylko na przypisane wartości procentowych, ale także na procent wirtualnych użytkowników, którzy są aktualnie uruchomione określonego testu. W dowolnym momencie testu obciążeniowego liczbę użytkowników, którzy uruchomili określonego testu możliwie najdokładniej pasuje do przypisanego rozkładu.
@@ -56,28 +56,28 @@ Można określić jedną z następujących opcji model testu mieszanego, dla sce
 ###  <a name="PacingTestMix"></a> Tempo testu mieszanego
  Jeśli określisz pacing mieszanki testów, możesz ustawić wskaźnik wykonania testu dla każdego wirtualnego użytkownika dla każdego testu w teście mieszanym. Dla każdego testu ten kurs jest wyrażona jako testy na wirtualnego użytkownika na godzinę. Na przykład może przypisywać pacing się test mieszany, do następujących testów:
 
--   Testu a: 4 testy na użytkownika na godzinę
+- Testu a: 4 testy na użytkownika na godzinę
 
--   Testu b.: 2 testy na użytkownika na godzinę
+- Testu b.: 2 testy na użytkownika na godzinę
 
--   TestC: 0,125 testy na użytkownika na godzinę
+- TestC: 0,125 testy na użytkownika na godzinę
 
- Jeśli używasz pacing model testu mieszanego, aparat środowiska uruchomieniowego testu obciążenia gwarantuje, że rzeczywista szybkość uruchamiania testów jest mniejsza lub równa określonej szybkości. Jeśli testy są uruchamiane zbyt długo dla przypisany numer należy wykonać, jest zwracany błąd.
+  Jeśli używasz pacing model testu mieszanego, aparat środowiska uruchomieniowego testu obciążenia gwarantuje, że rzeczywista szybkość uruchamiania testów jest mniejsza lub równa określonej szybkości. Jeśli testy są uruchamiane zbyt długo dla przypisany numer należy wykonać, jest zwracany błąd.
 
- **Traktować czas między iteracjami testu** ustawienie nie ma zastosowania, gdy używasz pacing testu mieszanego.
+  **Traktować czas między iteracjami testu** ustawienie nie ma zastosowania, gdy używasz pacing testu mieszanego.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Zastosuj rozkład do opóźnienia do
  Wartość **dystrybucji Zastosuj rozkład do opóźnienia** właściwość w scenariuszu testu obciążenia można ustawić na wartość true lub false:
 
--   **Wartość true,**: Scenariusz będzie stosowane typowe rozkłady statystyczne opóźnienia, określony przez wartość w **testy na użytkownika na godzinę** kolumny w **Edytuj Test mieszany** okna dialogowego. Aby uzyskać więcej informacji, zobacz [edytowanie modeli testów mieszanych w celu określania prawdopodobieństwa użytkownik wirtualny uruchomi testu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **Wartość true,**: Scenariusz będzie stosowane typowe rozkłady statystyczne opóźnienia, określony przez wartość w **testy na użytkownika na godzinę** kolumny w **Edytuj Test mieszany** okna dialogowego. Aby uzyskać więcej informacji, zobacz [edytowanie modeli testów mieszanych w celu określania prawdopodobieństwa użytkownik wirtualny uruchomi testu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Na przykład załóżmy, że masz **testy na użytkownika na godzinę** wartość w **Edytuj Test mieszany** okno dialogowe dla testu równa 2 użytkowników na godzinę. Jeśli **dystrybucji Zastosuj rozkład do opóźnienia** właściwość jest ustawiona na **True**, typowe rozkład statystyczny jest stosowany do czasu oczekiwania między testy. Testy będą nadal działać 2 testy na godzinę, ale nie będzie zawsze 30 minut między nimi. Pierwszy test, może uruchomić po 4 minut, a drugi test po 45 minut.
+   Na przykład załóżmy, że masz **testy na użytkownika na godzinę** wartość w **Edytuj Test mieszany** okno dialogowe dla testu równa 2 użytkowników na godzinę. Jeśli **dystrybucji Zastosuj rozkład do opóźnienia** właściwość jest ustawiona na **True**, typowe rozkład statystyczny jest stosowany do czasu oczekiwania między testy. Testy będą nadal działać 2 testy na godzinę, ale nie będzie zawsze 30 minut między nimi. Pierwszy test, może uruchomić po 4 minut, a drugi test po 45 minut.
 
--   **FALSE**: testy zostaną uruchomione w tempie określonych określony na potrzeby wartości **testy na użytkownika na godzinę** kolumny w **Edytuj Test mieszany** okna dialogowego. Aby uzyskać więcej informacji, zobacz [edytowanie modeli testów mieszanych w celu określania prawdopodobieństwa użytkownik wirtualny uruchomi testu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **FALSE**: testy zostaną uruchomione w tempie określonych określony na potrzeby wartości **testy na użytkownika na godzinę** kolumny w **Edytuj Test mieszany** okna dialogowego. Aby uzyskać więcej informacji, zobacz [edytowanie modeli testów mieszanych w celu określania prawdopodobieństwa użytkownik wirtualny uruchomi testu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
-     Na przykład załóżmy, że masz **testy na użytkownika na godzinę** wartość w **Edytuj Test mieszany** okno dialogowe dla testu równa 2 użytkowników na godzinę. Jeśli **dystrybucji Zastosuj rozkład do opóźnienia** właściwość jest ustawiona na **False**, po prostu spowoduje nadanie nie swobodę uruchamiania testów. Test zostanie uruchomiony co 30 minut. Dzięki temu wykonywania testów 2 / godz.
+   Na przykład załóżmy, że masz **testy na użytkownika na godzinę** wartość w **Edytuj Test mieszany** okno dialogowe dla testu równa 2 użytkowników na godzinę. Jeśli **dystrybucji Zastosuj rozkład do opóźnienia** właściwość jest ustawiona na **False**, po prostu spowoduje nadanie nie swobodę uruchamiania testów. Test zostanie uruchomiony co 30 minut. Dzięki temu wykonywania testów 2 / godz.
 
- Aby uzyskać więcej informacji, zobacz [jak: Zastosuj rozkład opóźnienia, korzystając z tempa model testu mieszanego użytkownika do](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
+  Aby uzyskać więcej informacji, zobacz [jak: Zastosuj rozkład opóźnienia, korzystając z tempa model testu mieszanego użytkownika do](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
 ###  <a name="SequentialOrder"></a> Kolejności
  Wybieranie oparty na test sekwencyjnych order — opcja sprawia, że każdy użytkownik wirtualny Uruchom wszystkie testy w ramach scenariusza opisywanego w kolejności, że testy zostały zdefiniowane.
@@ -88,17 +88,17 @@ Można określić jedną z następujących opcji model testu mieszanego, dla sce
 ## <a name="initialize-and-terminate-tests"></a>Testy rozpoczęcia i zakończenia
  Możesz wybrać testy do uruchomienia na początku i na końcu sesji testowania obciążenia, każdy użytkownik wirtualny. Aby uzyskać więcej informacji, zobacz [edytowanie modeli testów mieszanych w celu określania prawdopodobieństwa użytkownik wirtualny uruchomi testu](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
--   **Inicjowanie testu**. Ten test jest wykonywany przez każdy użytkownik wirtualny, przed wykonaniem dowolnego z testów w teście mieszanym.
+- **Inicjowanie testu**. Ten test jest wykonywany przez każdy użytkownik wirtualny, przed wykonaniem dowolnego z testów w teście mieszanym.
 
--   **Test zakończenia**. Ten test jest uruchamiany po uruchomieniu wszystkich testów dla danego użytkownika wirtualnego.
+- **Test zakończenia**. Ten test jest uruchamiany po uruchomieniu wszystkich testów dla danego użytkownika wirtualnego.
 
- Należy pamiętać, następujące kwestie dotyczące test rozpoczęcia i zakończenia testu:
+  Należy pamiętać, następujące kwestie dotyczące test rozpoczęcia i zakończenia testu:
 
--   Czas trwania testu obciążenia można określić czasu, a nie według liczby iteracji. W takim przypadku po zakończeniu czasu trwania przebiegu testu obciążeniowego test zakończenia nie zostanie uruchomiona.
+- Czas trwania testu obciążenia można określić czasu, a nie według liczby iteracji. W takim przypadku po zakończeniu czasu trwania przebiegu testu obciążeniowego test zakończenia nie zostanie uruchomiona.
 
--   W przypadku testu jednostkowego lub testu wydajności sieci web test rozpoczęcia stan obiektu TestContext lub WebTestContext, po zakończeniu inicjowania testu są zapisywane. Go następnie posłuży jako kontekst początkowy dla iteracji testów w teście mieszanym.
+- W przypadku testu jednostkowego lub testu wydajności sieci web test rozpoczęcia stan obiektu TestContext lub WebTestContext, po zakończeniu inicjowania testu są zapisywane. Go następnie posłuży jako kontekst początkowy dla iteracji testów w teście mieszanym.
 
--   Nowych użytkowników, zgodnie z definicją we właściwości scenariusza procent dla nowych użytkowników, zawsze wykonać test rozpoczęcia, jednej iteracji testu z test mieszany i test zakończenia.
+- Nowych użytkowników, zgodnie z definicją we właściwości scenariusza procent dla nowych użytkowników, zawsze wykonać test rozpoczęcia, jednej iteracji testu z test mieszany i test zakończenia.
 
 ## <a name="see-also"></a>Zobacz także
 

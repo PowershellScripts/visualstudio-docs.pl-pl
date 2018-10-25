@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8eee94b8d3e2b384ac645cf1178403556f0496ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b29e4e241589134c8dfa5b94e997d6603b075ee3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277423"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826357"
 ---
 # <a name="introduction-to-wpf"></a>Wprowadzenie do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Windows Presentation Foundation (WPF) pozwala tworzyć aplikacje dla Windows kli
 ##  <a name="Markup_And_Codebehind"></a> Znaczniki i związane z kodem  
  WPF umożliwia tworzenie aplikacji przy użyciu zarówno *znaczników* i *związanym z kodem*, środowisko, które deweloperów platformy ASP.NET, należy zapoznać się z. Zazwyczaj przy użyciu znaczników XAML wyglądu aplikacji podczas używania zarządzanego języków programowania (związane z kodem) w celu zaimplementować jego zachowanie. To oddzielenie wygląd i zachowanie ma następujące zalety:  
   
--   Koszty tworzenia i konserwacji są ograniczone, ponieważ specyficzne dla wyglądu znacznika nie jest ściśle powiązany z kodu specyficznego dla zachowania.  
+- Koszty tworzenia i konserwacji są ograniczone, ponieważ specyficzne dla wyglądu znacznika nie jest ściśle powiązany z kodu specyficznego dla zachowania.  
   
--   Programowanie jest bardziej wydajne, ponieważ projektantów można zaimplementować wygląd aplikacji równocześnie z deweloperów, którzy wdrażają zachowaniu aplikacji.  
+- Programowanie jest bardziej wydajne, ponieważ projektantów można zaimplementować wygląd aplikacji równocześnie z deweloperów, którzy wdrażają zachowaniu aplikacji.  
   
--   [Globalizacja i lokalizacja](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx) dla WPF jest uproszczony w aplikacji.  
+- [Globalizacja i lokalizacja](https://msdn.microsoft.com/library/ms788718\(v=vs.100\).aspx) dla WPF jest uproszczony w aplikacji.  
   
- Oto krótkie wprowadzenie do WPF w kodzie znaczników oraz związane z kodem.  
+  Oto krótkie wprowadzenie do WPF w kodzie znaczników oraz związane z kodem.  
   
 ### <a name="markup"></a>Kod znaczników  
  XAML jest językiem znaczników oparty na formacie XML, który jest używany do implementowania wygląd aplikacji deklaratywnie. Zazwyczaj służy do tworzenia systemu windows, okna dialogowe, strony i kontrolki użytkownika i wypełnianie formantów, kształty i grafiki.  
@@ -194,23 +194,23 @@ End Namespace
   
  System układu jest narażony na formantów podrzędnych za pomocą klasy bazowe WPF. W przypadku typowych układów, takich jak siatki, układanie i dokowanie WPF zawiera kilka formantów układu:  
   
--   <xref:System.Windows.Controls.Canvas>: Formanty podrzędne Podaj własne układu.  
+- <xref:System.Windows.Controls.Canvas>: Formanty podrzędne Podaj własne układu.  
   
--   <xref:System.Windows.Controls.DockPanel>: Formanty podrzędne są wyrównane do krawędzi panelu.  
+- <xref:System.Windows.Controls.DockPanel>: Formanty podrzędne są wyrównane do krawędzi panelu.  
   
--   <xref:System.Windows.Controls.Grid>: Formanty podrzędne są pozycjonowane według wierszy i kolumn.  
+- <xref:System.Windows.Controls.Grid>: Formanty podrzędne są pozycjonowane według wierszy i kolumn.  
   
--   <xref:System.Windows.Controls.StackPanel>: Formanty podrzędne są ułożone poziomo lub pionowo.  
+- <xref:System.Windows.Controls.StackPanel>: Formanty podrzędne są ułożone poziomo lub pionowo.  
   
--   <xref:System.Windows.Controls.VirtualizingStackPanel>: Formanty podrzędne są zwirtualizowane i rozmieszczone na pojedynczej linii poziomej lub pionowej.  
+- <xref:System.Windows.Controls.VirtualizingStackPanel>: Formanty podrzędne są zwirtualizowane i rozmieszczone na pojedynczej linii poziomej lub pionowej.  
   
--   <xref:System.Windows.Controls.WrapPanel>: Formanty podrzędne są rozmieszczone w kolejności od lewej do prawej i zawinięty do następnego wiersza, gdy istnieją więcej kontrolek w bieżącym wierszu, niż pozwala miejsca.  
+- <xref:System.Windows.Controls.WrapPanel>: Formanty podrzędne są rozmieszczone w kolejności od lewej do prawej i zawinięty do następnego wiersza, gdy istnieją więcej kontrolek w bieżącym wierszu, niż pozwala miejsca.  
   
- W poniższym przykładzie użyto <xref:System.Windows.Controls.DockPanel> układ kilka <xref:System.Windows.Controls.TextBox> kontrolki.  
+  W poniższym przykładzie użyto <xref:System.Windows.Controls.DockPanel> układ kilka <xref:System.Windows.Controls.TextBox> kontrolki.  
   
- [!code-xml[IntroToWPFSnippets#LayoutMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/LayoutWindow.xaml#layoutmarkup)]  
+  [!code-xml[IntroToWPFSnippets#LayoutMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/LayoutWindow.xaml#layoutmarkup)]  
   
- <xref:System.Windows.Controls.DockPanel> Umożliwia podrzędne <xref:System.Windows.Controls.TextBox> formantów stwierdzenie, sposobu ich rozmieszczenia. Aby to zrobić, <xref:System.Windows.Controls.DockPanel> implementuje <xref:System.Windows.Controls.DockPanel.Dock%2A> właściwość, która jest widoczna dla formantów podrzędnych, aby umożliwić każdej z nich, aby określić styl dokowania.  
+  <xref:System.Windows.Controls.DockPanel> Umożliwia podrzędne <xref:System.Windows.Controls.TextBox> formantów stwierdzenie, sposobu ich rozmieszczenia. Aby to zrobić, <xref:System.Windows.Controls.DockPanel> implementuje <xref:System.Windows.Controls.DockPanel.Dock%2A> właściwość, która jest widoczna dla formantów podrzędnych, aby umożliwić każdej z nich, aby określić styl dokowania.  
   
 > [!NOTE]
 >  Wywołuje się, właściwość, która jest implementowany przez kontrolki nadrzędnej, używany przez formanty podrzędne to konstrukcja WPF [dołączona właściwość](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx).  
@@ -222,33 +222,33 @@ End Namespace
 ##  <a name="Data_Binding"></a> Powiązanie danych  
  Większość aplikacji są tworzone użytkownikom sposób wyświetlić i edytować dane. Dla aplikacji WPF praca, przechowywania i uzyskiwania dostępu do danych jest już udostępniane na potrzeby technologii, takich jak SQL Server oraz obiektów ADO .NET. Po dane są dostępne, a następnie ładowane do aplikacji zarządzanych obiektów, rozpoczyna się trudną pracę dla aplikacji WPF. Obejmuje to zasadniczo dwie rzeczy:  
   
-1.  Kopiowanie danych z obiektów zarządzanych w formantach, gdzie można wyświetlane i edytowane dane.  
+1. Kopiowanie danych z obiektów zarządzanych w formantach, gdzie można wyświetlane i edytowane dane.  
   
-2.  Zapewnienie, że zmiany wprowadzone w danych za pomocą formantów są kopiowane do obiektów zarządzanych.  
+2. Zapewnienie, że zmiany wprowadzone w danych za pomocą formantów są kopiowane do obiektów zarządzanych.  
   
- Aby uprościć tworzenie aplikacji, WPF zapewnia aparat powiązania danych, aby automatycznie wykonać następujące kroki. Jednostki podstawowe aparat wiązanie danych jest <xref:System.Windows.Data.Binding> klasy, których zadaniem jest do wiązania kontrolki (cel wiążący) obiektu danych (źródło wiążące). Poniższa ilustracja przedstawia tę relację.  
+   Aby uprościć tworzenie aplikacji, WPF zapewnia aparat powiązania danych, aby automatycznie wykonać następujące kroki. Jednostki podstawowe aparat wiązanie danych jest <xref:System.Windows.Data.Binding> klasy, których zadaniem jest do wiązania kontrolki (cel wiążący) obiektu danych (źródło wiążące). Poniższa ilustracja przedstawia tę relację.  
   
- ![Diagram podstawowego powiązania danych](../designers/media/databindingmostbasic.png "DataBindingMostBasic")  
+   ![Diagram podstawowego powiązania danych](../designers/media/databindingmostbasic.png "DataBindingMostBasic")  
   
- Poniższy przykład pokazuje jak powiązać <xref:System.Windows.Controls.TextBox> do wystąpienia klasy niestandardowej `Person` obiektu. `Person` Implementację przedstawiono w poniższym kodzie.  
+   Poniższy przykład pokazuje jak powiązać <xref:System.Windows.Controls.TextBox> do wystąpienia klasy niestandardowej `Person` obiektu. `Person` Implementację przedstawiono w poniższym kodzie.  
   
- [!code-csharp[SimpleDataBindingSnippets#PersonClassCODE](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/Person.cs#personclasscode)]
- [!code-vb[SimpleDataBindingSnippets#PersonClassCODE](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/Person.vb#personclasscode)]  
+   [!code-csharp[SimpleDataBindingSnippets#PersonClassCODE](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/Person.cs#personclasscode)]
+   [!code-vb[SimpleDataBindingSnippets#PersonClassCODE](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/Person.vb#personclasscode)]  
   
- Następujące znaczniki wiąże <xref:System.Windows.Controls.TextBox> do wystąpienia klasy niestandardowej `Person` obiektu.  
+   Następujące znaczniki wiąże <xref:System.Windows.Controls.TextBox> do wystąpienia klasy niestandardowej `Person` obiektu.  
   
- [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP1](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup1)]  
-[!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP2](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup2)]  
-[!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP3](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup3)]  
+   [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP1](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup1)]  
+   [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP2](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup2)]  
+   [!code-xml[SimpleDataBindingSnippets#DataBindingMARKUP3](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml#databindingmarkup3)]  
   
- [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml.cs#databindingcodebehind)]
- [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/DataBindingWindow.xaml.vb#databindingcodebehind)]  
+   [!code-csharp[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/csharp/VS_Snippets_Wpf/SimpleDataBindingSnippets/CSharp/DataBindingWindow.xaml.cs#databindingcodebehind)]
+   [!code-vb[SimpleDataBindingSnippets#DataBindingCODEBEHIND](../snippets/visualbasic/VS_Snippets_Wpf/SimpleDataBindingSnippets/VisualBasic/DataBindingWindow.xaml.vb#databindingcodebehind)]  
   
- W tym przykładzie `Person` klasa zostanie uruchomiony w związanym z kodem i jest ustawiony jako kontekst danych dla `DataBindingWindow`. W znaczniku <xref:System.Windows.Controls.TextBox.Text%2A> właściwość <xref:System.Windows.Controls.TextBox> jest powiązany z `Person.Name` właściwości (przy użyciu "`{Binding ... }`" Składnia XAML). Ta XAML informuje WPF można powiązać <xref:System.Windows.Controls.TextBox> kontrolę `Person` obiekt, który jest przechowywany w <xref:System.Windows.FrameworkElement.DataContext%2A> właściwości okna.  
+   W tym przykładzie `Person` klasa zostanie uruchomiony w związanym z kodem i jest ustawiony jako kontekst danych dla `DataBindingWindow`. W znaczniku <xref:System.Windows.Controls.TextBox.Text%2A> właściwość <xref:System.Windows.Controls.TextBox> jest powiązany z `Person.Name` właściwości (przy użyciu "`{Binding ... }`" Składnia XAML). Ta XAML informuje WPF można powiązać <xref:System.Windows.Controls.TextBox> kontrolę `Person` obiekt, który jest przechowywany w <xref:System.Windows.FrameworkElement.DataContext%2A> właściwości okna.  
   
- Aparat powiązanie danych WPF zapewnia dodatkową obsługę, która obejmuje sprawdzanie poprawności, sortowanie, filtrowanie i grupowanie. Ponadto powiązań danych obsługuje dane szablonów do tworzenia niestandardowego interfejsu użytkownika dla powiązanych danych, gdy nie jest odpowiedni interfejs użytkownika wyświetlany przez standardowych kontrolek WPF.  
+   Aparat powiązanie danych WPF zapewnia dodatkową obsługę, która obejmuje sprawdzanie poprawności, sortowanie, filtrowanie i grupowanie. Ponadto powiązań danych obsługuje dane szablonów do tworzenia niestandardowego interfejsu użytkownika dla powiązanych danych, gdy nie jest odpowiedni interfejs użytkownika wyświetlany przez standardowych kontrolek WPF.  
   
- Aby uzyskać więcej informacji, zobacz [Przegląd wiązanie danych](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx).  
+   Aby uzyskać więcej informacji, zobacz [Przegląd wiązanie danych](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx).  
   
 ##  <a name="Graphics"></a> Grafiki  
  WPF wprowadza rozbudowane, skalowalny i elastyczny zestaw funkcje grafiki, które mają następujące korzyści:  
@@ -335,21 +335,21 @@ End Namespace
 ##  <a name="Text_and_Typography"></a> Tekst i typografii  
  W celu ułatwienia renderowanie tekstu wysokiej jakości, WPF, oferuje następujące funkcje:  
   
--   Obsługa czcionek OpenType.  
+- Obsługa czcionek OpenType.  
   
--   Ulepszenia ClearType.  
+- Ulepszenia ClearType.  
   
--   O wysokiej wydajności, który wykorzystuje przyspieszanie sprzętowe.  
+- O wysokiej wydajności, który wykorzystuje przyspieszanie sprzętowe.  
   
--   Integracja tekstu za pomocą nośników, grafiki i animacje.  
+- Integracja tekstu za pomocą nośników, grafiki i animacje.  
   
--   Międzynarodowe czcionki mechanizmów obsługi i działania rezerwowego.  
+- Międzynarodowe czcionki mechanizmów obsługi i działania rezerwowego.  
   
- Jako pokaz integracji tekstu z grafiki na poniższej ilustracji przedstawiono aplikację ozdobniki tekstu.  
+  Jako pokaz integracji tekstu z grafiki na poniższej ilustracji przedstawiono aplikację ozdobniki tekstu.  
   
- ![Tekst z różnych dekoracje tekstu](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
+  ![Tekst z różnych dekoracje tekstu](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
   
- Aby uzyskać więcej informacji, zobacz [typografii w oprogramowaniu Windows Presentation Foundation](https://msdn.microsoft.com/library/ms742190\(v=vs.100\).aspx).  
+  Aby uzyskać więcej informacji, zobacz [typografii w oprogramowaniu Windows Presentation Foundation](https://msdn.microsoft.com/library/ms742190\(v=vs.100\).aspx).  
   
 ##  <a name="WPF_Customization"></a> Dostosowywanie aplikacji WPF  
  Do tej pory przedstawiono podstawowe bloki konstrukcyjne WPF do tworzenia aplikacji. Model aplikacji umożliwia hostowanie i dostarczać zawartość aplikacji, która składa się głównie z formantów. Aby uprościć rozmieszczenie kontrolek w interfejsie użytkownika i upewnij się, że układ jest obsługiwana w przypadku zmiany rozmiaru okna i wyświetlić ustawienia, użyjesz system układu WPF. Ponieważ większość aplikacji pozwalają użytkownikom na interakcję z danymi, umożliwia powiązanie danych Zmniejsz ilość pracy integracji interfejsu użytkownika z danymi. Aby poprawić wygląd aplikacji, należy użyć kompleksowego zakresu grafiki, animacji i media pomoc techniczna jest świadczona przez WPF.  
@@ -445,51 +445,51 @@ End Namespace
   
  W tym przykładzie implementuje zasób koloru tła przy użyciu `Window.Resources` elementu właściwości. Ten zasób jest dostępny dla wszystkich obiektów podrzędnych <xref:System.Windows.Window>. Istnieje wiele zasobów zakresy, w tym następujące czynności, wymienione w kolejności, w którym są one rozwiązane:  
   
-1.  Poszczególnych kontrolek (przy użyciu dziedziczonego <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> właściwości).  
+1. Poszczególnych kontrolek (przy użyciu dziedziczonego <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> właściwości).  
   
-2.  A <xref:System.Windows.Window> lub <xref:System.Windows.Controls.Page> (również przy użyciu dziedziczonego <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> właściwości).  
+2. A <xref:System.Windows.Window> lub <xref:System.Windows.Controls.Page> (również przy użyciu dziedziczonego <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> właściwości).  
   
-3.  <xref:System.Windows.Application> (Przy użyciu <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> właściwości).  
+3. <xref:System.Windows.Application> (Przy użyciu <xref:System.Windows.Application.Resources%2A?displayProperty=fullName> właściwości).  
   
- Różne zakresy zapewnia elastyczność w odniesieniu do sposobu, w którym do definiowania i udostępniać swoje zasoby.  
+   Różne zakresy zapewnia elastyczność w odniesieniu do sposobu, w którym do definiowania i udostępniać swoje zasoby.  
   
- Zamiast bezpośrednio kojarzenie zasobów z określonego zakresu, można spakować jeden lub więcej zasobów za pomocą oddzielnego <xref:System.Windows.ResourceDictionary> , może być przywoływany w innych częściach aplikacji. Na przykład w poniższym przykładzie zdefiniowano domyślny kolor tła w słowniku zasobów.  
+   Zamiast bezpośrednio kojarzenie zasobów z określonego zakresu, można spakować jeden lub więcej zasobów za pomocą oddzielnego <xref:System.Windows.ResourceDictionary> , może być przywoływany w innych częściach aplikacji. Na przykład w poniższym przykładzie zdefiniowano domyślny kolor tła w słowniku zasobów.  
   
- [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup1)]  
-[!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup2)]  
+   [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup1)]  
+   [!code-xml[IntroToWPFSnippets#ResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/BackgroundColorResources.xaml#resourcedictionarymarkup2)]  
   
- Poniższy przykład odwołuje się do słownika zasobów, zdefiniowane w poprzednim przykładzie, dzięki czemu jest udostępniany przez aplikację.  
+   Poniższy przykład odwołuje się do słownika zasobów, zdefiniowane w poprzednim przykładzie, dzięki czemu jest udostępniany przez aplikację.  
   
- [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup1)]  
-[!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup2)]  
+   [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup1)]  
+   [!code-xml[IntroToWPFSnippets#ApplicationScopedResourceDictionaryMARKUP2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/App.xaml#applicationscopedresourcedictionarymarkup2)]  
   
- Zasoby i słowniki zasobów są podstawą Obsługa platformy WPF dla motywów i skórki.  
+   Zasoby i słowniki zasobów są podstawą Obsługa platformy WPF dla motywów i skórki.  
   
- Aby uzyskać więcej informacji, zobacz [Przegląd zasobów](https://msdn.microsoft.com/library/ms750613\(v=vs.100\).aspx).  
+   Aby uzyskać więcej informacji, zobacz [Przegląd zasobów](https://msdn.microsoft.com/library/ms750613\(v=vs.100\).aspx).  
   
 ### <a name="custom-controls"></a>Formanty niestandardowe  
  Mimo że WPF oferuje obsługę dostosowania, możesz napotkać sytuacje, gdzie istniejących kontrolek WPF nie spełnia wymagań aplikacji i jej użytkownikach. Taka sytuacja może wystąpić jeśli:  
   
--   Nie można utworzyć interfejsu użytkownika, która jest wymagana przez dostosowanie wyglądu i działania istniejących implementacji WPF.  
+- Nie można utworzyć interfejsu użytkownika, która jest wymagana przez dostosowanie wyglądu i działania istniejących implementacji WPF.  
   
--   Zachowanie, która jest wymagana jest nieobsługiwane lub nie jest obsługiwana przez istniejących implementacji WPF.  
+- Zachowanie, która jest wymagana jest nieobsługiwane lub nie jest obsługiwana przez istniejących implementacji WPF.  
   
- W tym momencie, możesz korzystać z zalet jeden z trzech modele WPF, aby utworzyć nową kontrolkę. Każdy model jest przeznaczony dla konkretnego scenariusza i wymaga niestandardową kontrolkę pochodzić z klasy bazowej konkretnego WPF. Poniżej przedstawiono trzy modele:  
+  W tym momencie, możesz korzystać z zalet jeden z trzech modele WPF, aby utworzyć nową kontrolkę. Każdy model jest przeznaczony dla konkretnego scenariusza i wymaga niestandardową kontrolkę pochodzić z klasy bazowej konkretnego WPF. Poniżej przedstawiono trzy modele:  
   
--   **Model kontroli użytkownika**. Formant niestandardowy jest pochodną <xref:System.Windows.Controls.UserControl> i składa się z co najmniej jedną kontrolkę.  
+- **Model kontroli użytkownika**. Formant niestandardowy jest pochodną <xref:System.Windows.Controls.UserControl> i składa się z co najmniej jedną kontrolkę.  
   
--   **Model sterowania**. Formant niestandardowy jest pochodną <xref:System.Windows.Controls.Control> i jest używany do tworzenia implementacji, które oddzielić ich zachowania z ich wygląd przy użyciu szablonów, podobnie jak w większości kontrolek WPF. Wyprowadzanie z <xref:System.Windows.Controls.Control> umożliwia większą swobodę do tworzenia niestandardowego interfejsu użytkownika kontrolki użytkownika, ale mogą wymagać więcej nakładu pracy.  
+- **Model sterowania**. Formant niestandardowy jest pochodną <xref:System.Windows.Controls.Control> i jest używany do tworzenia implementacji, które oddzielić ich zachowania z ich wygląd przy użyciu szablonów, podobnie jak w większości kontrolek WPF. Wyprowadzanie z <xref:System.Windows.Controls.Control> umożliwia większą swobodę do tworzenia niestandardowego interfejsu użytkownika kontrolki użytkownika, ale mogą wymagać więcej nakładu pracy.  
   
--   **Model elementu Framework**. Formant niestandardowy jest pochodną <xref:System.Windows.FrameworkElement> po jego wygląd jest definiowany przez niestandardowe renderowanie logic (nie szablonów).  
+- **Model elementu Framework**. Formant niestandardowy jest pochodną <xref:System.Windows.FrameworkElement> po jego wygląd jest definiowany przez niestandardowe renderowanie logic (nie szablonów).  
   
- Poniższy przykład pokazuje niestandardowy liczbowe w górę/dół formant, który pochodzi od klasy <xref:System.Windows.Controls.UserControl>.  
+  Poniższy przykład pokazuje niestandardowy liczbowe w górę/dół formant, który pochodzi od klasy <xref:System.Windows.Controls.UserControl>.  
   
- [!code-xml[IntroToWPFSnippets#UserControlMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml#usercontrolmarkup)]  
+  [!code-xml[IntroToWPFSnippets#UserControlMARKUP](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml#usercontrolmarkup)]  
   
- [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind1)]
- [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind1)]  
-[!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind2)]
-[!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind2)]  
+  [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind1)]
+  [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind1)]  
+  [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/csharp/VS_Snippets_Wpf/IntroToWPFSnippets/CSharp/NumericUpDown.xaml.cs#usercontrolcodebehind2)]
+  [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND2](../snippets/visualbasic/VS_Snippets_Wpf/IntroToWPFSnippets/VisualBasic/NumericUpDown.xaml.vb#usercontrolcodebehind2)]  
   
   
  Następny przykład ilustruje XAML, potrzebnego do dołączyć kontrolki użytkownika do <xref:System.Windows.Window>.  

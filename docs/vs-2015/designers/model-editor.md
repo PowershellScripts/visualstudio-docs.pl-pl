@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3fb0b83e266fbe865023d6a31f926ac31b61a10a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e947793dff1f0068c1341ba6b70c21df07463f6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264052"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844093"
 ---
 # <a name="model-editor"></a>Edytor kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,18 +157,18 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 ##### <a name="to-transform-an-object-by-setting-its-properties"></a>Aby przekształcić obiekt przez ustawienie jego właściwości  
   
-1.  W **wybierz** tryb, wybierz obiekt, który chcesz przekształcić. Nakładka szkieletowa wskazuje, że obiekt jest wybrany.  
+1. W **wybierz** tryb, wybierz obiekt, który chcesz przekształcić. Nakładka szkieletowa wskazuje, że obiekt jest wybrany.  
   
-2.  W **właściwości** okna, podaj wartości dla **obrotu**, **skalowania**, i **tłumaczenia** właściwości.  
+2. W **właściwości** okna, podaj wartości dla **obrotu**, **skalowania**, i **tłumaczenia** właściwości.  
   
-    > [!IMPORTANT]
-    >  Aby uzyskać **obrotu** właściwości, określ kąt obrotu wokół każdej z trzech osi. Obroty są stosowane w określonej kolejności, należy zapewnić, że odbywają się najpierw względem osi x, a następnie osi y i osi z.  
+   > [!IMPORTANT]
+   >  Aby uzyskać **obrotu** właściwości, określ kąt obrotu wokół każdej z trzech osi. Obroty są stosowane w określonej kolejności, należy zapewnić, że odbywają się najpierw względem osi x, a następnie osi y i osi z.  
   
- Za pomocą narzędzi modelowania, przekształcenia można tworzyć szybko, ale nie precyzyjnie. Za pomocą ustawiania właściwości obiektu przekształcenia można określić precyzyjnie, ale nie szybko. Zalecane jest używanie narzędzi do modelowania, aby uzyskać „wystarczająco bliskie” przekształcenia, a następnie dostosować wartości właściwości.  
+   Za pomocą narzędzi modelowania, przekształcenia można tworzyć szybko, ale nie precyzyjnie. Za pomocą ustawiania właściwości obiektu przekształcenia można określić precyzyjnie, ale nie szybko. Zalecane jest używanie narzędzi do modelowania, aby uzyskać „wystarczająco bliskie” przekształcenia, a następnie dostosować wartości właściwości.  
   
- Jeśli nie chcesz używać manipulatorów, można włączyć tryb dowolnego kształtu. Na **edytora modelu** narzędzi, wybierz **skrypty**, **narzędzia**, **manipulacja** włączyć (lub wyłączyć) tryb dowolnego kształtu. W trybie dowolnego kształtu można rozpocząć manipulowanie w dowolnym punkcie powierzchni projektowej zamiast w punkcie na manipulatorze. W trybie dowolnego kształtu możesz ograniczyć zmiany do niektórych osi, blokując te, których nie chcesz zmienić. Na **tryb edytora modelu** narzędzi, wybierz dowolną kombinację **Zablokuj X**, **Zablokuj Y**, i **Zablokuj Z** przycisków.  
+   Jeśli nie chcesz używać manipulatorów, można włączyć tryb dowolnego kształtu. Na **edytora modelu** narzędzi, wybierz **skrypty**, **narzędzia**, **manipulacja** włączyć (lub wyłączyć) tryb dowolnego kształtu. W trybie dowolnego kształtu można rozpocząć manipulowanie w dowolnym punkcie powierzchni projektowej zamiast w punkcie na manipulatorze. W trybie dowolnego kształtu możesz ograniczyć zmiany do niektórych osi, blokując te, których nie chcesz zmienić. Na **tryb edytora modelu** narzędzi, wybierz dowolną kombinację **Zablokuj X**, **Zablokuj Y**, i **Zablokuj Z** przycisków.  
   
- Może się to okazać przydatne w pracy z obiektami za pomocą przyciągania do siatki. Na **tryb edytora modelu** narzędzi, wybierz **przyciąganie** włączyć (lub wyłączyć) przyciąganie do siatki. Po włączeniu przyciągania do siatki, przekształcenia przesunięcia, obrotu i skalowania są ograniczone do wstępnie zdefiniowanych przyrostów.  
+   Może się to okazać przydatne w pracy z obiektami za pomocą przyciągania do siatki. Na **tryb edytora modelu** narzędzi, wybierz **przyciąganie** włączyć (lub wyłączyć) przyciąganie do siatki. Po włączeniu przyciągania do siatki, przekształcenia przesunięcia, obrotu i skalowania są ograniczone do wstępnie zdefiniowanych przyrostów.  
   
 ### <a name="working-with-the-pivot-point"></a>Praca z punktem obrotu  
  Punkt obrotu obiektu definiuje środek obrotu i skalowania. Można zmienić punkt obrotu obiektu, aby zmienić wpływ przekształceń obrotu i skalowania na obiekt. Na **tryb edytora modelu** narzędzi, wybierz **tryb obrotu** można włączyć (lub wyłączyć) tryb obrotu. Po włączeniu trybu obrotu, w punkcie obrotu wybranego obiektu pojawia się mały wskaźnik osi. Następnie można użyć **tłumaczenia** i **obrotu** narzędzia do manipulowania punktem obrotu.  
@@ -191,11 +191,11 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 ##### <a name="to-subdivide-faces"></a>Aby podpodzielić twarze  
   
-1.  W trybie zaznaczania powierzchni zaznacz powierzchnie, które chcesz podzielić na mniejsze. Ponieważ podpodział tworzy nowe dane krawędzi, podpodział jednocześnie wszystkich powierzchni zapewnia bardziej spójne wyniki, gdy powierzchnie sąsiadują.  
+1. W trybie zaznaczania powierzchni zaznacz powierzchnie, które chcesz podzielić na mniejsze. Ponieważ podpodział tworzy nowe dane krawędzi, podpodział jednocześnie wszystkich powierzchni zapewnia bardziej spójne wyniki, gdy powierzchnie sąsiadują.  
   
-2.  Na **edytora modelu** narzędzi, wybierz **skrypty**, **narzędzia**, **Podziel na mniejsze**.  
+2. Na **edytora modelu** narzędzi, wybierz **skrypty**, **narzędzia**, **Podziel na mniejsze**.  
   
- Można również przeprowadzać triangulację powierzchni, scalać obiekty i konwertować wielokątne zaznaczenia na nowe obiekty. Triangulacja tworzy dodatkowe krawędzie, w taki sposób, że powierzchnia nietrójkątna jest konwertowana na optymalną liczbę trójkątów; jednak nie zapewnia to dodatkowych szczegółów geometrycznych. Scalanie łączy zaznaczone obiekty w jeden obiekt. Nowe obiekty można tworzyć z zaznaczenia wielokątnego.  
+   Można również przeprowadzać triangulację powierzchni, scalać obiekty i konwertować wielokątne zaznaczenia na nowe obiekty. Triangulacja tworzy dodatkowe krawędzie, w taki sposób, że powierzchnia nietrójkątna jest konwertowana na optymalną liczbę trójkątów; jednak nie zapewnia to dodatkowych szczegółów geometrycznych. Scalanie łączy zaznaczone obiekty w jeden obiekt. Nowe obiekty można tworzyć z zaznaczenia wielokątnego.  
   
 ##### <a name="to-triangulate-a-face"></a>Aby przeprowadzić triangulację powierzchni  
   
@@ -259,13 +259,13 @@ W tym dokumencie opisano sposób pracy z [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 ##### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Aby utworzyć obiekty hierarchii elementów równorzędnych  
   
-1.  W **wybierz** tryb, wybierz dwa lub więcej obiektów. Obiekt zastępczy jest tworzony i staje się ich obiektem nadrzędnym.  
+1. W **wybierz** tryb, wybierz dwa lub więcej obiektów. Obiekt zastępczy jest tworzony i staje się ich obiektem nadrzędnym.  
   
-2.  Na **edytora modelu** narzędzi, wybierz **skrypty**, **Zarządzanie sceną**, **Utwórz grupę**.  
+2. Na **edytora modelu** narzędzi, wybierz **skrypty**, **Zarządzanie sceną**, **Utwórz grupę**.  
   
- Edytor modelu używa białego szkieletu do identyfikacji pierwszego wybranego obiektu, który staje się nadrzędny. Inne obiekty w zaznaczeniu mają niebieski szkielet. Domyślnie węzły zastępcze nie są wyświetlane. Aby wyświetlić węzły zastępcze na **edytora modelu** narzędzi, wybierz **skrypty**, **Zarządzanie sceną**, **Pokaż węzły zastępcze**. Z węzłami zastępczymi można pracować tak samo, jak z obiektami bez obiektu zastępczego.  
+   Edytor modelu używa białego szkieletu do identyfikacji pierwszego wybranego obiektu, który staje się nadrzędny. Inne obiekty w zaznaczeniu mają niebieski szkielet. Domyślnie węzły zastępcze nie są wyświetlane. Aby wyświetlić węzły zastępcze na **edytora modelu** narzędzi, wybierz **skrypty**, **Zarządzanie sceną**, **Pokaż węzły zastępcze**. Z węzłami zastępczymi można pracować tak samo, jak z obiektami bez obiektu zastępczego.  
   
- Aby usunąć skojarzenie nadrzędny podrzędny między dwoma obiektami, zaznacz obiekt podrzędny, a następnie na **edytora modelu** narzędzi, wybierz **skrypty**, **Zarządzanie sceną**, **Odłącz od nadrzędnego**. Po odłączeniu elementu nadrzędnego od obiektu podrzędnego obiekt podrzędny staje się obiektem głównym w scenie.  
+   Aby usunąć skojarzenie nadrzędny podrzędny między dwoma obiektami, zaznacz obiekt podrzędny, a następnie na **edytora modelu** narzędzi, wybierz **skrypty**, **Zarządzanie sceną**, **Odłącz od nadrzędnego**. Po odłączeniu elementu nadrzędnego od obiektu podrzędnego obiekt podrzędny staje się obiektem głównym w scenie.  
   
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe  
   

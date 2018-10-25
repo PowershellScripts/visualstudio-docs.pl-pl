@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 444fac0e3c99733397a9d8cda39c444206c0f3a8
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 465443211d1a3f1aff8bfa63fa6cb8068b55980b
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863901"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459767"
 ---
 # <a name="installation"></a>Instalacja
 
@@ -31,7 +31,7 @@ Możesz pobrać narzędzia z [Visual Studio Marketplace](http://aka.ms/vstoolsfo
 
 1. Wybierz **narzędzia** > **rozszerzenia i aktualizacje**.
 
-   ![Menu rozszerzenia i aktualizacje w programie Visual Studio](media\installation\extensions.png)
+   ![Menu rozszerzenia i aktualizacje w programie Visual Studio](media/installation/extensions.png)
 
 2. W **rozszerzenia i aktualizacje** okno dialogowe, wybierz opcję **Online** po lewej stronie.
 3. W polu wyszukiwania w prawym górnym rogu wpisz lub wprowadź "tools for ai".
@@ -59,7 +59,7 @@ Aby zainstalować CUDA
 - Upewnij się, że instalacji bibliotek środowiska uruchomieniowego CUDA, a następnie dodaj binarne ścieżki CUDA, aby % % lub $Path zmiennej środowiskowej PATH.
 - W Windows ta ścieżka jest "C:\Program Files\NVIDIA GPU obliczeń Toolkit\CUDA\v8.0\bin" domyślnie.
 
-![Zainstaluj CUDA na Windows](media\installation\install_cuda_win.png)
+![Zainstaluj CUDA na Windows](media/installation/install_cuda_win.png)
 
 ### <a name="cudnn"></a>cuDNN
 
@@ -85,7 +85,7 @@ Python został podstawowy język programowania przeznaczony dla aplikacji do ucz
 
 Platformy uczenia głębokiego, zależą od narzędzie pip dla ich własnych instalacji.
 
-![Instalowanie języka Python w Windows](media\installation\install_python_win.png)
+![Instalowanie języka Python w Windows](media/installation/install_python_win.png)
 
 Następnie należy sprawdzić, czy prawidłowo zainstalowano język Python 3.5 i uaktualnić pakiet pip do najnowszej wersji, wykonując następujące polecenia w terminalu:
 

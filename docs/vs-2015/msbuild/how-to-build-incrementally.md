@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fba24434b10a9606c800c1453d31d7d3b52b234
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275057"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844624"
 ---
 # <a name="how-to-build-incrementally"></a>Porady: kompilacja przyrostowa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Podczas kompilowania dużych projektów, ważne jest, że poprzednio skompilowan
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>Aby określić dane wejściowe i wyjściowe dla elementu docelowego  
   
--   Użyj `Inputs` i `Outputs` atrybuty `Target` elementu. Na przykład:  
+- Użyj `Inputs` i `Outputs` atrybuty `Target` elementu. Na przykład:  
   
-    ```  
-    <Target Name="Build"  
-        Inputs="@(CSFile)"  
-        Outputs="hello.exe">  
-    ```  
+  ```  
+  <Target Name="Build"  
+      Inputs="@(CSFile)"  
+      Outputs="hello.exe">  
+  ```  
   
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] można porównać ze znacznikami czasu plików wyjściowych znacznikami czasu plików wejściowych i określenia, czy pominąć, tworzenie lub częściowo odbudować obiektu docelowego. W poniższym przykładzie, jeśli dowolny plik w `@(CSFile)` listy elementów jest nowszy niż plik hello.exe [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] uruchomi element docelowy; w przeciwnym razie zostanie pominięte:  
+  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] można porównać ze znacznikami czasu plików wyjściowych znacznikami czasu plików wejściowych i określenia, czy pominąć, tworzenie lub częściowo odbudować obiektu docelowego. W poniższym przykładzie, jeśli dowolny plik w `@(CSFile)` listy elementów jest nowszy niż plik hello.exe [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] uruchomi element docelowy; w przeciwnym razie zostanie pominięte:  
   
 ```  
 <Target Name="Build"   
@@ -67,13 +67,13 @@ Podczas kompilowania dużych projektów, ważne jest, że poprzednio skompilowan
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie użyto projektu, który tworzy plików pomocy dla hipotetycznego system pomocy. Projekt polega na konwertowaniu pliki txt źródła w .content pośrednie pliki, które następnie są łączone z plikami metadane XML, aby wygenerować plik .help końcowe używane przez system pomocy. Projekt używa hipotetyczny następujące zadania:  
   
--   `GenerateContentFiles`: Konwertuje pliki txt .content plików.  
+- `GenerateContentFiles`: Konwertuje pliki txt .content plików.  
   
--   `BuildHelp`: Łączy .content pliki i pliki metadanych XML do tworzenia pliku .help końcowej.  
+- `BuildHelp`: Łączy .content pliki i pliki metadanych XML do tworzenia pliku .help końcowej.  
   
- Projekt używa przekształceń w celu utworzenia mapowanie jeden do jednego między dane wejściowe i dane wyjściowe w `GenerateContentFiles` zadania. Aby uzyskać więcej informacji, zobacz [przekształca](../msbuild/msbuild-transforms.md). Ponadto `Output` element jest ustawiony na wartość automatycznie korzystają z danych wyjściowych z `GenerateContentFiles` zadanie jako dane wejściowe dla `BuildHelp` zadania.  
+  Projekt używa przekształceń w celu utworzenia mapowanie jeden do jednego między dane wejściowe i dane wyjściowe w `GenerateContentFiles` zadania. Aby uzyskać więcej informacji, zobacz [przekształca](../msbuild/msbuild-transforms.md). Ponadto `Output` element jest ustawiony na wartość automatycznie korzystają z danych wyjściowych z `GenerateContentFiles` zadanie jako dane wejściowe dla `BuildHelp` zadania.  
   
- Ten plik projektu zawiera zarówno `Convert` i `Build` elementów docelowych. `GenerateContentFiles` i `BuildHelp` zadania są umieszczane w `Convert` i `Build` jest przeznaczony dla odpowiednio, tak aby w każdym obiekcie docelowym może być kompilowana przyrostowo. Za pomocą `Output` element, dane wyjściowe `GenerateContentFiles` zadania są umieszczane w `ContentFile` listy elementów, gdzie mogą być używane jako dane wejściowe dla `BuildHelp` zadania. Za pomocą `Output` element w ten sposób automatycznie udostępnia dane wyjściowe z jednego zadania jako dane wejściowe dla innego zadania tak, aby nie miały wyświetlić listę pojedynczych elementów lub elementów listy ręcznie w każdym zadaniu.  
+  Ten plik projektu zawiera zarówno `Convert` i `Build` elementów docelowych. `GenerateContentFiles` i `BuildHelp` zadania są umieszczane w `Convert` i `Build` jest przeznaczony dla odpowiednio, tak aby w każdym obiekcie docelowym może być kompilowana przyrostowo. Za pomocą `Output` element, dane wyjściowe `GenerateContentFiles` zadania są umieszczane w `ContentFile` listy elementów, gdzie mogą być używane jako dane wejściowe dla `BuildHelp` zadania. Za pomocą `Output` element w ten sposób automatycznie udostępnia dane wyjściowe z jednego zadania jako dane wejściowe dla innego zadania tak, aby nie miały wyświetlić listę pojedynczych elementów lub elementów listy ręcznie w każdym zadaniu.  
   
 > [!NOTE]
 >  Mimo że `GenerateContentFiles` docelowych można kompilować przyrostowo, zawsze wszystkie dane wyjściowe, z których obiektem docelowym są wymagane jako dane wejściowe dla `BuildHelp` docelowej. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] automatycznie zapewnia wszystkie dane wyjściowe z jeden element docelowy jako dane wejściowe dla innego elementu docelowego gdy używasz `Output` elementu.  

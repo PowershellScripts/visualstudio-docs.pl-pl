@@ -16,12 +16,12 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35150331ed22960bb8556a7b1175e0ed629efca7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f8c442aec21042faa4aa992dcdefc4f9d2ad335
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292984"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812988"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Porady: Instalowanie wtyczki kontroli źródła
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,16 +98,16 @@ Tworzenie wtyczki kontroli źródła obejmuje trzy kroki:
 ## <a name="how-an-ide-locates-the-dll"></a>Sposoby lokalizowania IDE przez biblioteki DLL  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE ma dwa sposoby znajdowania źródła kontrolować biblioteki DLL dodatku plug-in:  
   
--   Znajdź wtyczki kontroli źródła domyślne, a następnie połącz się z nim w trybie dyskretnym.  
+- Znajdź wtyczki kontroli źródła domyślne, a następnie połącz się z nim w trybie dyskretnym.  
   
--   Znajdź wszystkie zarejestrowane źródła wtyczek kontroli, z której użytkownik wybiera jeden.  
+- Znajdź wszystkie zarejestrowane źródła wtyczek kontroli, z której użytkownik wybiera jeden.  
   
- Aby zlokalizować biblioteki DLL w pierwszym sposobie, IDE wygląda ProviderRegKey wpis w podkluczu HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider. Wskazuje wartość tego wpisu do innego podklucza. Następnie IDE szuka wpisu o nazwie SccServerPath w tym drugiego podklucza w kluczu HKEY_LOCAL_MACHINE. Wartość tego wpisu wskazuje IDE biblioteki DLL.  
+  Aby zlokalizować biblioteki DLL w pierwszym sposobie, IDE wygląda ProviderRegKey wpis w podkluczu HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider. Wskazuje wartość tego wpisu do innego podklucza. Następnie IDE szuka wpisu o nazwie SccServerPath w tym drugiego podklucza w kluczu HKEY_LOCAL_MACHINE. Wartość tego wpisu wskazuje IDE biblioteki DLL.  
   
 > [!NOTE]
 >  IDE nie załadować biblioteki dll z ścieżek względnych (na przykład.\NewProvider.DLL). Należy określić pełną ścieżkę do biblioteki DLL (na przykład c:\Providers\NewProvider.DLL). To wzmacnia zabezpieczenia środowiska IDE, zapobiegając ładowanie nieautoryzowani lub spersonifikowanego wtyczki bibliotek DLL.  
   
- Aby zlokalizować bibliotekę DLL w druga metoda, IDE wygląda dla wszystkich wpisów w podkluczu HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders *.* Każdy wpis ma nazwę i wartość. Środowisko IDE Wyświetla listę tych nazw użytkownika *.* Gdy użytkownik wybierze nazwę, IDE wyszukuje wartość dla wybranej nazwy, która wskazuje podklucza. IDE szuka wpisu o nazwie SccServerPath w tym podklucza w kluczu HKEY_LOCAL_MACHINE. Wartość tego wpisu wskazuje IDE poprawne biblioteki DLL.  
+ Aby zlokalizować bibliotekę DLL w druga metoda, IDE wygląda dla wszystkich wpisów w podkluczu HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders<em>.</em> Każdy wpis ma nazwę i wartość. Środowisko IDE Wyświetla listę tych nazw użytkownika<em>.</em> Gdy użytkownik wybierze nazwę, IDE wyszukuje wartość dla wybranej nazwy, która wskazuje podklucza. IDE szuka wpisu o nazwie SccServerPath w tym podklucza w kluczu HKEY_LOCAL_MACHINE. Wartość tego wpisu wskazuje IDE poprawne biblioteki DLL.  
   
  Wtyczka do kontroli źródła musi obsługiwać obie metody wyszukiwania biblioteki DLL i w związku z tym, ustaw ProviderRegKey, zastępując wszystkie poprzednie ustawienia. Co ważniejsze jego należy dodać się do listy InstalledSccProviders, dzięki czemu użytkownik może mieć szeroki wybór wtyczki kontroli źródła do użycia.  
   

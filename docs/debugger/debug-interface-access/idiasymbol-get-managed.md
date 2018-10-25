@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_managed | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_managed — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c23f59a4506ccf369b60bf45cf9320ff407b129c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 92e833bbb37e43d61911b18f27a1f1cf5a8e5b0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468466"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823245"
 ---
 # <a name="idiasymbolgetmanaged"></a>IDiaSymbol::get_managed
 Pobiera flagę określającą, czy symbol odwołuje się do kodu zarządzanego.  
@@ -34,13 +34,13 @@ HRESULT get_managed (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca `TRUE` Jeśli symbolu odwołuje się do kodu zarządzanego; w przeciwnym razie zwraca `FALSE`.  
+ [out] Zwraca `TRUE` Jeśli symbol, który odwołuje się do zarządzanego kodu; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

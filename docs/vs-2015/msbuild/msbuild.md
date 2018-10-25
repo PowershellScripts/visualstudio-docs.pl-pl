@@ -17,12 +17,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: afa446afdf8cb9b3c17028927d9325ffd6e18323
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a2ca3a14c1e4e35da4e8cddfdecb0346740286a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253553"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837766"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49253553"
   
  Poniższe przykłady ilustrują, kiedy można uruchamiać kompilacje przy użyciu wiersza polecenia MSBuild zamiast Visual Studio IDE.  
   
--   Nie zainstalowano programu Visual Studio.  
+- Nie zainstalowano programu Visual Studio.  
   
--   Chcesz użyć 64-bitowej wersji programu MSBuild. Ta wersja programu MSBuild jest zazwyczaj zbędna, ale pozwala MSBuild na dostęp do większej ilości pamięci.  
+- Chcesz użyć 64-bitowej wersji programu MSBuild. Ta wersja programu MSBuild jest zazwyczaj zbędna, ale pozwala MSBuild na dostęp do większej ilości pamięci.  
   
--   Chcesz uruchomić kompilację w wielu procesach. Jednak można użyć środowiska IDE, aby osiągnąć ten sam wynik w projektach w językach C++ i C#.  
+- Chcesz uruchomić kompilację w wielu procesach. Jednak można użyć środowiska IDE, aby osiągnąć ten sam wynik w projektach w językach C++ i C#.  
   
--   Chcesz zmodyfikować system kompilacji. Na przykład możesz chcieć umożliwić następujące działania:  
+- Chcesz zmodyfikować system kompilacji. Na przykład możesz chcieć umożliwić następujące działania:  
   
-    -   Przetwórz wstępnie pliki, zanim dotrą do kompilatora.  
+  -   Przetwórz wstępnie pliki, zanim dotrą do kompilatora.  
   
-    -   Skopiuj skompilowane pliki w inne miejsce.  
+  -   Skopiuj skompilowane pliki w inne miejsce.  
   
-    -   Stwórz skompresowane pliki z wyjścia kompilacji.  
+  -   Stwórz skompresowane pliki z wyjścia kompilacji.  
   
-    -   Wykonaj krok przetwarzania końcowego. Na przykład możesz chcieć sygnatury zestaw z innej wersji.  
+  -   Wykonaj krok przetwarzania końcowego. Na przykład możesz chcieć sygnatury zestaw z innej wersji.  
   
- Można napisać kod w środowisku IDE programu Visual Studio, ale uruchamiać kompilacje przy użyciu programu MSBuild. Jako inną alternatywę można skompilować kod w środowisku IDE na komputerze deweloperskim, ale użyj wiersza polecenia MSBuild do kompilowania kodu, który jest zintegrowany z wielu deweloperów.  
+  Można napisać kod w środowisku IDE programu Visual Studio, ale uruchamiać kompilacje przy użyciu programu MSBuild. Jako inną alternatywę można skompilować kod w środowisku IDE na komputerze deweloperskim, ale użyj wiersza polecenia MSBuild do kompilowania kodu, który jest zintegrowany z wielu deweloperów.  
   
 > [!NOTE]
 >  Team Foundation Build służy do automatycznego kompilowania, testowania i wdrażania aplikacji. System kompilacji można automatycznie uruchamiać kompilacje, gdy deweloperzy ewidencjonują kod (na przykład, jako część strategii ciągłej integracji) lub według harmonogramu (na przykład nocna kompilacja Test weryfikacji kompilacji). Team Foundation Build kompiluje kod przy użyciu programu MSBuild. Aby uzyskać więcej informacji, zobacz [skompilować aplikację](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
@@ -182,17 +182,17 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Oto niektóre korzyści wynikające z wielowersyjności:  
   
--   Można tworzyć aplikacje przeznaczone dla wcześniejszych wersji programu .NET Framework, na przykład wersji 2.0, 3.0 i 3.5.  
+- Można tworzyć aplikacje przeznaczone dla wcześniejszych wersji programu .NET Framework, na przykład wersji 2.0, 3.0 i 3.5.  
   
--   Można wskazać platform innych niż .NET Framework, na przykład Silverlight.  
+- Można wskazać platform innych niż .NET Framework, na przykład Silverlight.  
   
--   Możesz wybrać docelową *profil framework*, czyli uprzednio zdefiniowany podzbiór platformy docelowej.  
+- Możesz wybrać docelową *profil framework*, czyli uprzednio zdefiniowany podzbiór platformy docelowej.  
   
--   Jeśli z dodatkiem Service pack dla bieżącej wersji programu .NET Framework jest zwalniana, można go wykorzystać.  
+- Jeśli z dodatkiem Service pack dla bieżącej wersji programu .NET Framework jest zwalniana, można go wykorzystać.  
   
--   Wielowersyjność gwarantuje, że aplikacja używa tylko funkcjonalności, która jest dostępna w platformę docelową i platformy.  
+- Wielowersyjność gwarantuje, że aplikacja używa tylko funkcjonalności, która jest dostępna w platformę docelową i platformy.  
   
- Aby uzyskać więcej informacji, zobacz [Wielowersyjność](../msbuild/msbuild-multitargeting-overview.md).  
+  Aby uzyskać więcej informacji, zobacz [Wielowersyjność](../msbuild/msbuild-multitargeting-overview.md).  
   
 ## <a name="related-topics"></a>Tematy pokrewne  
   

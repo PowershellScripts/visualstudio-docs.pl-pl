@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 957add624e8efa7542991cc03ca48d6835e497f0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 26ea23c6091910a83ddec41194aa43ae93c9b9eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857576"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820777"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Co nowego w dziedzinie projektowania w programie Visual Studio
 
@@ -70,7 +70,7 @@ Aby uzyskać więcej informacji, zobacz [ten wpis w blogu](https://blogs.msdn.mi
 Visual Studio 2017 jest dostępny w wielu wersjach. Nie wszystkie te zapewniają obsługę architekturę i narzędzia do modelowania. W poniższej tabeli przedstawiono Dostępność poszczególnych narzędzi.
 
 |**Funkcja**|**Wersja Enterprise**|**W wersji Professional**|**Wersja Community edition**|
-|-----------------|--------------------|----------------------|-------------------|
+|-|-|-|-|
 |**Mapy kodu**|Tak|Mapy tylko filtrowania kodu obsługuje map kodu do czytania, dodawanie nowych węzłów ogólny i tworzenie nowy Graf skierowany z zaznaczenia.|-|
 |**Diagramów zależności**|Tak|Obsługuje tylko odczytywanie diagramów zależności.|Obsługuje tylko odczytywanie diagramów zależności.|
 |**Ukierunkowanych wykresów** (diagramy DGML)|Tak|Tak|Tak|

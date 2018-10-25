@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c69f21c72e8816d9ddf6eb5b88cf7798bc7d1f4e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dac1234a765bbb3064ea4471d7531864306e0220
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127552"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842927"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
-Określa typ informacji o symbolach do pobrania.  
+Określa rodzaj informacji o symbolach w celu pobrania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,16 +47,16 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
   
 ## <a name="members"></a>Elementy członkowskie  
  SSIF_NONE  
- Wskazuje żadnych flag  
+ Wskazuje nie flagi  
   
  SSIF_VERBOSE_SEARCH_INFO  
- Zwraca wszystkie wyszukiwania ścieżek używana do znajdowania symboli  
+ Zwraca wszystkie wyszukiwania ścieżki używany do wyszukiwania symboli  
   
 ## <a name="remarks"></a>Uwagi  
- Te flagi są przekazywane jako parametr [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) zwróciła metodę, aby określić ilość informacji.  
+ Te flagi są przekazywane jako parametr do [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) zwracany przez metodę, aby określić ilość informacji.  
   
 > [!NOTE]
->  Obecnie tylko `SSIF_VERBOSE_SEARCH_INFO` jest obsługiwana i musi być określona jako `dwFlags` parametr `IDebugModule3::GetSymbolInfo`. Wszystkie inne wartości zwrócenie błędu.  
+>  Obecnie tylko `SSIF_VERBOSE_SEARCH_INFO` jest obsługiwany, a musi być określona jako `dwFlags` parametr `IDebugModule3::GetSymbolInfo`. Wszystkie pozostałe wartości zwróci błąd.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

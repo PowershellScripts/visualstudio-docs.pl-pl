@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6248b61b2332694151d84bd9f5969ff18587c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6ac13d8998972ddf60576537f8b0af55d832d820
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180610"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817540"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Kod źródłowy L2DBForm.XAML.CS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,19 +51,19 @@ Ten temat zawiera zawartość i opis kodu źródłowego języka C# w pliku L2DBF
   
  Jednak pracy core usunięcia elementu zaznaczoną książkę odbywa się przez tylko dwóch instrukcji:  
   
--   Po pierwsze element książki, skojarzone z aktualnie wybranego elementu w polu listy są pobierane:  
+- Po pierwsze element książki, skojarzone z aktualnie wybranego elementu w polu listy są pobierane:  
   
-    ```  
-    XElement selBook = (XElement)lbBooks.SelectedItem;   
-    ```  
+  ```  
+  XElement selBook = (XElement)lbBooks.SelectedItem;   
+  ```  
   
--   Następnie ten element zostanie usunięty z dostawcy danych:  
+- Następnie ten element zostanie usunięty z dostawcy danych:  
   
-    ```  
-    selBook.Remove();  
-    ```  
+  ```  
+  selBook.Remove();  
+  ```  
   
- Ponownie wiązania danych dynamicznego gwarantuje interfejsu użytkownika programu jest automatycznie aktualizowana.  
+  Ponownie wiązania danych dynamicznego gwarantuje interfejsu użytkownika programu jest automatycznie aktualizowana.  
   
 ## <a name="example"></a>Przykład  
   

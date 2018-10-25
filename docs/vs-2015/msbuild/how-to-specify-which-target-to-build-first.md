@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3978d72372f2aa9a0c57184083c67476886016aa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4ea97ed3650e74a10bfc5e49657f0ed3dce60ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232118"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840704"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Porady: określanie pierwszego obiektu docelowego do kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Plik projektu może zawierać jeden lub więcej `Target` elementy, które okreś
   
 #### <a name="to-specify-one-initial-target"></a>Aby określić jeden element docelowy początkowej  
   
--   Określ domyślny element docelowy w `InitialTargets` atrybutu `Project` elementu. Na przykład:  
+- Określ domyślny element docelowy w `InitialTargets` atrybutu `Project` elementu. Na przykład:  
   
-     `<Project InitialTargets="Clean">`  
+   `<Project InitialTargets="Clean">`  
   
- Można określić więcej niż jeden początkowego elementu docelowego w `InitialTargets` atrybut Lista elementów docelowych w kolejności, a za pomocą średnika do rozdzielenia każdego obiektu docelowego. Obiekty docelowe, na liście będą uruchamiane sekwencyjnie.  
+  Można określić więcej niż jeden początkowego elementu docelowego w `InitialTargets` atrybut Lista elementów docelowych w kolejności, a za pomocą średnika do rozdzielenia każdego obiektu docelowego. Obiekty docelowe, na liście będą uruchamiane sekwencyjnie.  
   
 #### <a name="to-specify-more-than-one-initial-target"></a>Aby określić więcej niż jeden element docelowy początkowej  
   
@@ -53,11 +53,11 @@ Plik projektu może zawierać jeden lub więcej `Target` elementy, które okreś
   
 #### <a name="to-specify-one-default-target"></a>Aby określić jeden domyślny element docelowy.  
   
--   Określ domyślny element docelowy w `DefaultTargets` atrybutu `Project` elementu. Na przykład:  
+- Określ domyślny element docelowy w `DefaultTargets` atrybutu `Project` elementu. Na przykład:  
   
-     `<Project DefaultTargets="Compile">`  
+   `<Project DefaultTargets="Compile">`  
   
- Można określić więcej niż jeden domyślny element docelowy, w `DefaultTargets` atrybut Lista elementów docelowych w kolejności, a za pomocą średnika do rozdzielenia każdego obiektu docelowego. Obiekty docelowe, na liście będą uruchamiane sekwencyjnie.  
+  Można określić więcej niż jeden domyślny element docelowy, w `DefaultTargets` atrybut Lista elementów docelowych w kolejności, a za pomocą średnika do rozdzielenia każdego obiektu docelowego. Obiekty docelowe, na liście będą uruchamiane sekwencyjnie.  
   
 #### <a name="to-specify-more-than-one-default-target"></a>Aby określić więcej niż jeden domyślny element docelowy.  
   

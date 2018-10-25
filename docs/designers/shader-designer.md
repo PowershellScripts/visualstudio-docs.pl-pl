@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57a42846833024fefb4bf73660484123474d00a
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029056"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847634"
 ---
 # <a name="shader-designer"></a>Shader Designer
 
@@ -31,7 +31,7 @@ Możesz użyć **Shader Designer** do tworzenia niestandardowych efektów wizual
 **Shader Designer** obsługuje następujące formaty programu do cieniowania:
 
 |Nazwa formatu|Rozszerzenie pliku|Obsługiwane operacje (Wyświetl, Edytuj eksport)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |Język programu do cieniowania wykresu bezpośredniego|*.dgsl*|Wyświetl, Edytuj|
 |Modułu cieniującego HLSL (kodu źródłowego)|*.hlsl*|Eksportuj|
 |Modułu cieniującego HLSL (kodu bajtowego)|*.CSO*|Eksportuj|
@@ -177,7 +177,7 @@ Aby uzyskać więcej informacji na temat eksportowania programów do cieniowania
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
 |Polecenie|Skróty klawiaturowe|
-|-------------|------------------------|
+|-------------| - |
 |Przełącz się do **wybierz** tryb|**CTRL**+**G**, **Ctrl**+**funkcji pytania i odpowiedzi**<br /><br /> **S**|
 |Przełącz się do **powiększenia** tryb|**CTRL**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Przełącz się do **Pan** tryb|**CTRL**+**G**, **Ctrl**+**P**<br /><br /> **K**|

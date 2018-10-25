@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f49e2e9e23f19a4346080b0e59435128e33849d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e597f13d2627a8b3e40aa65926d1c990be839c38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677268"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833190"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Wskazówki: Tworzenie szablonu za pomocą formantów zawartości
   W tym instruktażu pokazano, jak utworzyć dostosowywania poziomie dokumentu, który używa kontrolek zawartości do tworzenia zawartości ze strukturą i wielokrotnego użytku w szablonie programu Microsoft Office Word.  
@@ -35,17 +35,17 @@ ms.locfileid: "35677268"
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Tworzenie tabel, które zawierają zawartość kontrolki wyraz szablonu w czasie projektowania.  
+- Tworzenie tabel, które zawierają zawartość kontrolki wyraz szablonu w czasie projektowania.  
   
--   Programowe wypełnianie kontrolkę zawartości pola kombi i kontrolki zawartości listy rozwijanej.  
+- Programowe wypełnianie kontrolkę zawartości pola kombi i kontrolki zawartości listy rozwijanej.  
   
--   Uniemożliwianie użytkownikom edytowanie określonej tabeli.  
+- Uniemożliwianie użytkownikom edytowanie określonej tabeli.  
   
--   Dodawanie tabel do kolekcji bloków konstrukcyjnych szablonu.  
+- Dodawanie tabel do kolekcji bloków konstrukcyjnych szablonu.  
   
--   Tworzenie formantu zawartości, który wyświetla dostępne bloków konstrukcyjnych w szablonie.  
+- Tworzenie formantu zawartości, który wyświetla dostępne bloków konstrukcyjnych w szablonie.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
@@ -68,31 +68,31 @@ ms.locfileid: "35677268"
   
 ### <a name="to-create-the-employee-table"></a>Aby utworzyć tabelę pracownika  
   
-1.  W szablonie programu Word, który znajduje się w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer na wstążce kliknij **Wstaw** kartę.  
+1. W szablonie programu Word, który znajduje się w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer na wstążce kliknij **Wstaw** kartę.  
   
-2.  W **tabel** grupy, kliknij przycisk **tabeli**i Wstaw tabelę z dwiema kolumnami i wierszami cztery.  
+2. W **tabel** grupy, kliknij przycisk **tabeli**i Wstaw tabelę z dwiema kolumnami i wierszami cztery.  
   
-3.  Wpisz tekst w pierwszej kolumnie tak, aby wyglądała jak następujące kolumny:  
+3. Wpisz tekst w pierwszej kolumnie tak, aby wyglądała jak następujące kolumny:  
   
-    ||  
-    |-|  
-    |**Nazwisko pracownika**|  
-    |**Data zatrudnienia**|  
-    |**Tytuł**|  
-    |**Obraz**|  
+   ||  
+   |-|  
+   |**Nazwisko pracownika**|  
+   |**Data zatrudnienia**|  
+   |**Tytuł**|  
+   |**Obraz**|  
   
-4.  Kliknij pierwszą komórkę w drugiej kolumnie (obok **nazwiska pracownika**).  
+4. Kliknij pierwszą komórkę w drugiej kolumnie (obok **nazwiska pracownika**).  
   
-5.  Na wstążce kliknij **Developer** kartę.  
+5. Na wstążce kliknij **Developer** kartę.  
   
-    > [!NOTE]  
-    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: wyświetlić kartę Deweloper na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   > [!NOTE]  
+   >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: wyświetlić kartę Deweloper na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  W **kontrolki** grupy, kliknij przycisk **tekstu** przycisk ![PlainTextContentControl —](../vsto/media/plaintextcontrol.gif "PlainTextContentControl —") dodać <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do pierwszej komórki.  
+6. W **kontrolki** grupy, kliknij przycisk **tekstu** przycisk ![PlainTextContentControl —](../vsto/media/plaintextcontrol.gif "PlainTextContentControl —") dodać <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do pierwszej komórki.  
   
-7.  Kliknij komórkę drugi w drugiej kolumnie (obok **Data zatrudnienia**).  
+7. Kliknij komórkę drugi w drugiej kolumnie (obok **Data zatrudnienia**).  
   
-8.  W **kontrolki** grupy, kliknij przycisk **selektora daty** przycisk ![DatePickerContentControl —](../vsto/media/datepicker.gif "DatePickerContentControl —") dodać <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> do drugiej komórce.  
+8. W **kontrolki** grupy, kliknij przycisk **selektora daty** przycisk ![DatePickerContentControl —](../vsto/media/datepicker.gif "DatePickerContentControl —") dodać <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> do drugiej komórce.  
   
 9. Kliknij przycisk trzeciej komórce w drugiej kolumnie (obok **tytuł**).  
   
@@ -107,27 +107,27 @@ ms.locfileid: "35677268"
   
 ### <a name="to-create-the-customer-feedback-table"></a>Aby utworzyć tabelę opinie klientów  
   
-1.  W szablonie programu Word, kliknij wiersz pod tabelą pracownika, który dodano wcześniej, a następnie naciśnij klawisz **Enter** Aby dodać nowy akapit.  
+1. W szablonie programu Word, kliknij wiersz pod tabelą pracownika, który dodano wcześniej, a następnie naciśnij klawisz **Enter** Aby dodać nowy akapit.  
   
-2.  Na wstążce kliknij **Wstaw** kartę.  
+2. Na wstążce kliknij **Wstaw** kartę.  
   
-3.  W **tabel** grupy, kliknij przycisk **tabeli**i Wstaw tabelę z kolumnami i trzema wierszami.  
+3. W **tabel** grupy, kliknij przycisk **tabeli**i Wstaw tabelę z kolumnami i trzema wierszami.  
   
-4.  Wpisz tekst w pierwszej kolumnie tak, aby wyglądała jak następujące kolumny:  
+4. Wpisz tekst w pierwszej kolumnie tak, aby wyglądała jak następujące kolumny:  
   
-    ||  
-    |-|  
-    |**Nazwa klienta**|  
-    |**Ocena zadowolenia użytkowników**|  
-    |**Komentarze**|  
+   ||  
+   |-|  
+   |**Nazwa klienta**|  
+   |**Ocena zadowolenia użytkowników**|  
+   |**Komentarze**|  
   
-5.  Kliknij pierwszą komórkę drugiej kolumny (obok **nazwa klienta**).  
+5. Kliknij pierwszą komórkę drugiej kolumny (obok **nazwa klienta**).  
   
-6.  Na wstążce kliknij **Developer** kartę.  
+6. Na wstążce kliknij **Developer** kartę.  
   
-7.  W **kontrolki** grupy, kliknij przycisk **tekstu** przycisk ![PlainTextContentControl —](../vsto/media/plaintextcontrol.gif "PlainTextContentControl —") dodać <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do pierwszej komórki.  
+7. W **kontrolki** grupy, kliknij przycisk **tekstu** przycisk ![PlainTextContentControl —](../vsto/media/plaintextcontrol.gif "PlainTextContentControl —") dodać <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do pierwszej komórki.  
   
-8.  Kliknij w drugiej komórce drugiej kolumny (obok **oceny zadowolenia**).  
+8. Kliknij w drugiej komórce drugiej kolumny (obok **oceny zadowolenia**).  
   
 9. W **kontrolki** grupy, kliknij przycisk **listy rozwijanej** przycisk ![DropDownListContentControl —](../vsto/media/dropdownlist.gif "DropDownListContentControl —") do dodania <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> do drugiej komórce.  
   

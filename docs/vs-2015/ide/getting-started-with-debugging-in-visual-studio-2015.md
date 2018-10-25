@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 293df108dd0fc8671c1d11a2b336af32369aa9f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fe051a37c610fcfd3c99f2ab762982065c5caf56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281453"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824441"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Wprowadzenie do debugowania w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,15 +153,15 @@ Program Visual Studio 2015 zapewnia bogaty zestaw zintegrowanych kompilacja proj
   
  Najczęstsze zastosowania dla punktów przerwania obejmują:  
   
-1.  Aby zawęzić źródło awarię lub zawieszenie, wykres punktowy je w całej i wokół kodu wywołania metody, które Twoim zdaniem jest przyczyną błędu. Jak krok po kroku przez kod, Usuń, a następnie zresetuj punktów przerwania bliżej razem do momentu znalezienia naruszającym wierszem kodu.  
+1. Aby zawęzić źródło awarię lub zawieszenie, wykres punktowy je w całej i wokół kodu wywołania metody, które Twoim zdaniem jest przyczyną błędu. Jak krok po kroku przez kod, Usuń, a następnie zresetuj punktów przerwania bliżej razem do momentu znalezienia naruszającym wierszem kodu.  
   
-2.  Po wprowadzeniu nowego kodu, należy ustawić punkt przerwania na początku i Przechodź przez kod, aby upewnić się, że zachowuje się zgodnie z oczekiwaniami.  
+2. Po wprowadzeniu nowego kodu, należy ustawić punkt przerwania na początku i Przechodź przez kod, aby upewnić się, że zachowuje się zgodnie z oczekiwaniami.  
   
-3.  Jeśli zaimplementowano skomplikowane zachowanie, ustaw punktów przerwań dla kodu algorytmicznego, dzięki czemu można sprawdzić wartości zmiennych i danych, kiedy program przerywa.  
+3. Jeśli zaimplementowano skomplikowane zachowanie, ustaw punktów przerwań dla kodu algorytmicznego, dzięki czemu można sprawdzić wartości zmiennych i danych, kiedy program przerywa.  
   
-4.  Jeśli piszesz kod C lub C++, użyj punktów przerwania, aby zatrzymać wykonywanie kodu, dzięki czemu można sprawdzić wartości adresów (Zwróć uwagę na wartość NULL) i liczby odwołań podczas debugowania błędów związanych z pamięcią.  
+4. Jeśli piszesz kod C lub C++, użyj punktów przerwania, aby zatrzymać wykonywanie kodu, dzięki czemu można sprawdzić wartości adresów (Zwróć uwagę na wartość NULL) i liczby odwołań podczas debugowania błędów związanych z pamięcią.  
   
- Aby uzyskać więcej informacji na temat korzystania z punktów przerwania, przeczytaj [przy użyciu punktów przerwania](../debugger/using-breakpoints.md)  
+   Aby uzyskać więcej informacji na temat korzystania z punktów przerwania, przeczytaj [przy użyciu punktów przerwania](../debugger/using-breakpoints.md)  
   
 ### <a name="setting-conditional-breakpoints"></a>Ustawienie warunkowe punkty przerwania  
  Jeśli masz punkt przerwania w pętli lub rekursji lub masz wiele punktów przerwania, które często krokowo, należy użyć warunkowego punktu przerwania, aby upewnić się, że Twój kod jest wstrzymana, tylko wtedy, gdy są spełnione określone warunki. W przeciwnym razie użytkownik będzie można naciskając klawisz F11 często są bardzo wiele.  

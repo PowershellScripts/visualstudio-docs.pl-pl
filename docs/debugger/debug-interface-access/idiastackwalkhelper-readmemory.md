@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a8e435dddaf0d6fb3908a1ccb6233f08ccd28b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 76b054d004e6c62f9d36ca5fcebe1a7f0476fbfc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825860"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
-Odczytuje blok danych z obrazu wykonywalnego w pamięci.  
+Odczytuje blok danych z pliku wykonywalnego obrazu w pamięci.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,23 +38,23 @@ HRESULT readMemory(
   
 #### <a name="parameters"></a>Parametry  
  `type`  
- [in] Wartość z zakresu od [memorytypeenum — wyliczenie](../../debugger/debug-interface-access/memorytypeenum.md) wyliczenie opisujące typ pamięci odczytać.  
+ [in] Wartość z zakresu od [memorytypeenum — wyliczenie](../../debugger/debug-interface-access/memorytypeenum.md) wyliczenie opisujące typ pamięci do odczytu.  
   
- Va  
- [in] Wirtualny adres w obrazie, w którym ma rozpocząć się odczyt.  
+ oceny luk w zabezpieczeniach  
+ [in] Wirtualny adres obrazu, w którym ma rozpocząć się odczyt.  
   
  `cbData`  
  [in] Rozmiar buforu danych w bajtach.  
   
  `pcbData`  
- [out] Zwraca liczbę bajtów odczytanych w rzeczywistości. Jeśli `pbData` jest `NULL`, a następnie jest to całkowita liczba bajtów danych dostępne.  
+ [out] Zwraca liczbę bajtów odczytanych w rzeczywistości. Jeśli `pbData` jest `NULL`, a następnie jest to całkowita liczba bajtów dostępnych danych.  
   
  `pbData`  
- [w, out] Buforu, który jest wypełniane pamięci odczytać.  
+ [out w] Buforu, który jest wypełniane pamięci odczytu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [Memorytypeenum — wyliczenie](../../debugger/debug-interface-access/memorytypeenum.md)
+ [MemoryTypeEnum, wyliczenie](../../debugger/debug-interface-access/memorytypeenum.md)

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e95a8a76e7315f8963ea415f88bd9615f3b123a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8672dcdf92ce7341c7ae540c4836a1775671da7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832397"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
-Analizuje wyrażenie w postaci tekstu w nowszej wersji ewaluacyjnej.  
+Analizuje wyrażenia w postaci tekstu do późniejszego obliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,16 +51,16 @@ int ParseText(
   
 #### <a name="parameters"></a>Parametry  
  `pszCode`  
- [in] Wyrażenie, które ma zostać przeanalizowany.  
+ [in] Wyrażenie które ma być analizowany.  
   
  `dwFlags`  
- [in] Kombinacja flag z [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) wyliczenia, która kontroluje analizy.  
+ [in] Kombinacja flag z [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) wyliczenie, które kontroluje analizy.  
   
  `nRadix`  
- [in] Podstawa ma być używany podczas analizowania żadnych informacji liczbowej w `pszCode`.  
+ [in] Podstawy, który ma być używany podczas analizowania wszelkie dane liczbowe w `pszCode`.  
   
  `ppExpr`  
- [out] Zwraca [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) obiekt, który reprezentuje wyrażenie przeanalizowany jest gotowy do powiązania i oceny.  
+ [out] Zwraca [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) obiekt, który reprezentuje przeanalizowany wyrażenie, który jest gotowy do powiązania i oceny.  
   
  `pbstrError`  
  [out] Zwraca komunikat o błędzie, jeśli wyrażenie zawiera błąd.  
@@ -69,15 +69,15 @@ int ParseText(
  [out] Zwraca indeks znaków błędu w `pszCode` Jeśli wyrażenie zawiera błąd.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Gdy ta metoda jest wywoływana, aparat debugowania (DE) należy przeanalizować wyrażenia i sprawdzić jego poprawność. `pbstrError` i `pichError` parametry mogą być wypełniane, jeśli wyrażenie jest nieprawidłowe.  
+ Gdy ta metoda jest wywoływana, aparat debugowania (DE) należy przeanalizować wyrażenia i zweryfikuje go pod kątem poprawności. `pbstrError` i `pichError` parametry mogą być wypełniane, jeśli wyrażenie jest nieprawidłowe.  
   
- Należy pamiętać, że wyrażenie nie jest oceniany, tylko przeanalizować. Wywołanie nowsze [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) lub [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) metody oblicza wyrażenie przeanalizowany.  
+ Należy pamiętać, że wyrażenie nie jest oceniany, tylko przeanalizować. Nowsze wywołanie [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) lub [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) metody oblicza wyrażenie przeanalizowany.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę dla prostego `CEnvBlock` obiekt ujawniający [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfejsu. W tym przykładzie uwzględnia wyrażenie, które ma być analizowana jako nazwa zmiennej środowiskowej i pobiera wartość z tej zmiennej.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CEnvBlock` obiekt ujawniający [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) interfejsu. W tym przykładzie uwzględnia wyrażenie które ma być analizowana jako nazwę zmiennej środowiskowej i pobiera wartość z tej zmiennej.  
   
 ```cpp  
 HRESULT CEnvBlock::ParseText(  

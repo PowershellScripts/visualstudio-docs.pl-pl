@@ -17,12 +17,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f81d8998063fba9c3d51ddb1d66b2da9bd4fd8a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4938057514071836fefbca6988cf05a6399126e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811896"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Porady: dostęp do wbudowanych czcionek i schemat kolorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ Visual Studio zintegrowane środowisko programistyczne (IDE) zawiera schemat kol
   
  Aby korzystać z wbudowanych czcionek i kolorów schematu, pakietu VSPackage musi:  
   
--   Definiowanie kategorii do użycia z usługą czcionki i kolory domyślne.  
+- Definiowanie kategorii do użycia z usługą czcionki i kolory domyślne.  
   
--   Zarejestruj kategorii z domyślnego serwera czcionek i kolorów.  
+- Zarejestruj kategorii z domyślnego serwera czcionek i kolorów.  
   
--   Poinformowania środowiska IDE, że określone okno używa wbudowanego wyświetle elementy i kategorie za pomocą `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` i `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interfejsów.  
+- Poinformowania środowiska IDE, że określone okno używa wbudowanego wyświetle elementy i kategorie za pomocą `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` i `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interfejsów.  
   
- IDE używa wynikowej kategorii, jak dojścia do okna. Nazwa kategorii jest wyświetlana w **Pokaż ustawienia dla:** pole listy rozwijanej w **czcionki i kolory** stronę właściwości.  
+  IDE używa wynikowej kategorii, jak dojścia do okna. Nazwa kategorii jest wyświetlana w **Pokaż ustawienia dla:** pole listy rozwijanej w **czcionki i kolory** stronę właściwości.  
   
 ### <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Aby zdefiniować kategorii przy użyciu wbudowanych czcionki i kolory  
   
-1.  Utwórz dowolnego identyfikatora GUID.  
+1. Utwórz dowolnego identyfikatora GUID.  
   
-     Ten identyfikator GUID jest używany do jednoznacznego identyfikowania kategorii **.** Ta kategoria ponownie używa środowiska IDE domyślnej czcionki i kolory specyfikacji.  
+    Ten identyfikator GUID jest używany do jednoznacznego identyfikowania kategorii<strong>.</strong> Ta kategoria ponownie używa środowiska IDE domyślnej czcionki i kolory specyfikacji.  
   
-    > [!NOTE]
-    >  Podczas pobierania danych czcionek i kolorów, za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> lub innych interfejsów pakietów VSPackage za pomocą tego identyfikatora GUID wbudowane informacje referencyjne.  
+   > [!NOTE]
+   >  Podczas pobierania danych czcionek i kolorów, za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> lub innych interfejsów pakietów VSPackage za pomocą tego identyfikatora GUID wbudowane informacje referencyjne.  
   
-2.  Nazwa kategorii należy dodać do tabeli ciągów wewnątrz pakietu VSPackage plik zasobów (.rc), dzięki czemu może być lokalizowana w razie potrzeby wyświetlane w środowisku IDE.  
+2. Nazwa kategorii należy dodać do tabeli ciągów wewnątrz pakietu VSPackage plik zasobów (.rc), dzięki czemu może być lokalizowana w razie potrzeby wyświetlane w środowisku IDE.  
   
-     Aby uzyskać więcej informacji, zobacz [Dodawanie lub usuwanie ciągu](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
+    Aby uzyskać więcej informacji, zobacz [Dodawanie lub usuwanie ciągu](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Aby zarejestrować kategorii przy użyciu wbudowanych czcionki i kolory  
   
@@ -73,15 +73,15 @@ Visual Studio zintegrowane środowisko programistyczne (IDE) zawiera schemat kol
   
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Aby zainicjować użycie dostarczane przez system czcionek i kolorów  
   
-1.  Utwórz wystąpienie obiektu `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` interfejsu jako część wdrożenia i Inicjowanie okna.  
+1. Utwórz wystąpienie obiektu `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer` interfejsu jako część wdrożenia i Inicjowanie okna.  
   
-2.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metodę, aby uzyskać wystąpienia `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interfejsu odpowiadającą bieżącej <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> wystąpienia.  
+2. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metodę, aby uzyskać wystąpienia `T:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer` interfejsu odpowiadającą bieżącej <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> wystąpienia.  
   
-3.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> dwa razy.  
+3. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> dwa razy.  
   
-    -   Wywołaj raz za pomocą `VSEDITPROPID_ViewGeneral_ColorCategory`jako argument.  
+   - Wywołaj raz za pomocą `VSEDITPROPID_ViewGeneral_ColorCategory`jako argument.  
   
-    -   Wywołaj raz za pomocą `VSEDITPROPID_ViewGeneral_FontCategory` jako argument.  
+   - Wywołaj raz za pomocą `VSEDITPROPID_ViewGeneral_FontCategory` jako argument.  
   
      Spowoduje to i udostępnia usługi czcionki i kolory domyślne jako właściwość okna.  
   

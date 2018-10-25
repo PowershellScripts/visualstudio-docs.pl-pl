@@ -1,5 +1,5 @@
 ---
-title: 'Generowanie nowego projektu: Kulisy, część druga | Dokumentacja firmy Microsoft'
+title: 'Generowanie nowego projektu: Za kulisami, część dwóch | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69174be20a0961a6074650471bcb4b9d1df9fa98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 38f2a4a84c6223c2e195c3d703f52d7fd5b18c86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133192"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837532"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Generowanie nowego projektu: Kulisy, część druga
-W [nowej generacji projektu: pod maską, część 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) widzieliśmy jak **nowy projekt** okna dialogowego pole zostanie wypełnione. Załóżmy, że wybrano **Visual C# Windows aplikacji**, wypełnionego **nazwa** i **lokalizacji** pola tekstowe i klikniętej OK.  
+# <a name="new-project-generation-under-the-hood-part-two"></a>Generowanie nowego projektu: za kulisami, część druga
+W [Generowanie nowego projektu: pod maską, część 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) widzieliśmy sposób, w jaki **nowy projekt** okna dialogowego pole zostanie wypełnione. Załóżmy, że wybrano **Visual C# Windows Application**, wypełnionego **nazwa** i **lokalizacji** pola tekstowe i kliknięto OK.  
   
 ## <a name="generating-the-solution-files"></a>Generowanie plików rozwiązania  
- Wybieranie szablonów aplikacji kieruje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Rozpakowywanie i otwieranie odpowiedni plik .vstemplate i uruchomić szablon interpretować polecenia XML w tym pliku. Te polecenia Tworzenie projektów i elementów projektu w rozwiązaniu do nowego lub istniejącego.  
+ Wybieranie szablonu aplikacji kieruje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Rozpakowywanie i otwieranie odpowiedni plik .vstemplate i uruchom szablon, aby zinterpretować poleceń XML w tym pliku. Te polecenia powodują utworzenie projektów i elementów projektu w nowym lub istniejącym rozwiązaniu.  
   
- Szablon wypakowuje pliki źródłowe, nazywany szablonów elementów z tego samego folderu zip, który zawiera plik .vstemplate. Szablon te pliki są kopiowane do nowego projektu, dostosowywanie ich odpowiednio.  
+ Szablon wypakowuje plików źródłowych, o nazwie szablonów elementów z tego samego folderu zip, który zawiera plik .vstemplate. Ten szablon kopiuje te pliki do nowego projektu, dostosowywanie ich odpowiednio.  
   
-### <a name="template-parameter-replacement"></a>Zastępowanie parametru szablonu  
- Gdy szablon kopiuje szablonu elementów do nowego projektu, zastępuje wszelkie parametry szablonu z ciągami, aby dostosować plik. Parametr szablonu to specjalne token, który jest poprzedzony i następuje znak dolara ($), na przykład $date$.  
+### <a name="template-parameter-replacement"></a>Zastąpienie parametru szablonu  
+ Gdy szablon kopiuje szablon elementu do nowego projektu, zastępuje wszelkie parametry szablonu z ciągami, aby dostosować plik. Parametr szablonu ma specjalne token, który jest poprzedzony i następuje znak dolara, na przykład, $date$.  
   
- Oto typowy projektu szablonu elementu. Wyodrębnij i sprawdź, czy plik Program.cs w folderze Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip.  
+ Przyjrzyjmy się szablon elementu typowym projekcie. Wyodrębnianie i sprawdź plik Program.cs w folderze Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip.  
   
 ```  
 using System;  
@@ -48,7 +48,7 @@ namespace $safeprojectname$
 }  
 ```  
   
- Jeśli tworzysz nowy projekt aplikacji systemu Windows o nazwie prosty, szablon, zastępuje `$safeprojectname$` parametr o nazwie projektu.  
+ Jeśli tworzysz nowy projekt aplikacji Windows o nazwie prosty, szablon zastępuje `$safeprojectname$` parametr o nazwie projektu.  
   
 ```  
 using System;  
@@ -64,7 +64,7 @@ namespace Simple
 }  
 ```  
   
- Aby uzyskać pełną listę parametrów szablonu, zobacz [parametrów szablonu](../../ide/template-parameters.md).  
+ Aby uzyskać pełną listę parametrów szablonu, zobacz [parametry szablonu](../../ide/template-parameters.md).  
   
 ## <a name="a-look-inside-a-vstemplate-file"></a>Wygląd wewnątrz. Plik VSTemplate  
  Ten format jest plik .vstemplate podstawowe  
@@ -78,9 +78,9 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- Analizujemy \<TemplateData > w sekcji [nowej generacji projektu: pod maską, część 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Tagi w tej sekcji służą do sterować wyglądem **nowy projekt** okno dialogowe.  
+ Zobaczyliśmy \<TemplateData > sekcji [Generowanie nowego projektu: pod maską, część 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md). Znaczniki w tej sekcji są używane do kontrolowania wygląd **nowy projekt** okno dialogowe.  
   
- Tagi w \<TemplateContent > sekcji kontroli generowania nowych projektów i elementów projektu. Oto \<TemplateContent > sekcji z pliku cswindowsapplication.vstemplate w folderze 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip \Program Files\Microsoft programu Visual Studio.  
+ Znaczniki \<TemplateContent > sekcji kontroli Generowanie nowych projektów i elementów projektu. Oto \<TemplateContent > sekcji z pliku cswindowsapplication.vstemplate w folderze 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip \Program Files\Microsoft programu Visual Studio.  
   
 ```  
 <TemplateContent>  
@@ -114,26 +114,26 @@ namespace Simple
 </TemplateContent>  
 ```  
   
- \<Projektu > tag kontroluje Generowanie projektu i \<ProjectItem > tag kontroluje Generowanie elementu projektu. Parametr ReplaceParameters ma wartość true, szablon dostosować wszystkie parametry szablonu w pliku projektu lub elementu. W takim przypadku wszystkie elementy projektu są dostosowane, z wyjątkiem Settings.settings.  
+ \<Projekt > tag kontroluje Generowanie projektu i \<ProjectItem > tag kontroluje Generowanie elementu projektu. Jeśli parametr ReplaceParameters ma wartość true, szablon umożliwia dostosowywanie wszystkich parametrów szablonu w pliku projektu lub elementu. W takim przypadku wszystkie elementy projektu są dostosowywane, z wyjątkiem Settings.settings.  
   
- Parametr TargetFileName Określa nazwę i ścieżkę względną, wynikowy plik projektu lub elementu. Dzięki temu można utworzyć strukturę folderów dla projektu. Jeśli nie określisz ten argument elementu projektu ma taką samą nazwę jak szablonu elementu projektu.  
+ Parametr TargetFileName Określa nazwę i ścieżkę względną, wynikowy plik projektu lub elementu. Dzięki temu można utworzyć strukturę folderów dla Twojego projektu. Jeśli nie określisz tego argumentu, elementu projektu będzie mieć taką samą nazwę jak szablonu elementu projektu.  
   
- Wynikowa struktury folderów aplikacji systemu Windows wygląda następująco:  
+ Wynikowy strukturę folderów aplikacji Windows wygląda następująco:  
   
  ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")  
   
- Pierwszy i tylko \<projektu > tag w odczyty szablonu:  
+ Pierwszą i jedyną \<Projekt > tag w odczyty szablonu:  
   
 ```  
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">  
 ```  
   
- To powoduje, że szablon nowego projektu, aby utworzyć plik projektu Simple.csproj, kopiowanie i dostosowując windowsapplication.csproj element szablonu.  
+ To powoduje, że szablon nowy projekt, aby utworzyć plik projektu Simple.csproj, kopiowanie i dostosowując windowsapplication.csproj element szablonu.  
   
 ### <a name="designers-and-references"></a>Projektanci i odwołań  
- Widoczny w Eksploratorze rozwiązań czy folderze właściwości jest dostępny i zawiera oczekiwanych plików. Ale co projekt odwołuje się i zależności pliku projektanta, takich jak Resources.Designer.cs do Resources.resx i Form1.Designer.cs do pliku Form1.cs?  Te są zainstalowane w pliku Simple.csproj po jego wygenerowaniu.  
+ Widoczne w Eksploratorze rozwiązań, w folderze właściwości jest dostępny i zawiera oczekiwane pliki. Ale co projekt odwołuje się i zależności pliku projektanta, takie jak Resources.Designer.cs do Resources.resx i Form1.Designer.cs się Form1.cs?  Te właściwości są ustawiane w pliku Simple.csproj po jego wygenerowaniu.  
   
- Oto \<ItemGroup > z Simple.csproj, która tworzy odwołania do projektu:  
+ Oto \<ItemGroup > z Simple.csproj, który tworzy odwołania do projektu:  
   
 ```  
 <ItemGroup>  
@@ -146,7 +146,7 @@ namespace Simple
 </ItemGroup>  
 ```  
   
- Widać, że są one odwołań sześciu projektu, które są widoczne w Eksploratorze rozwiązań. Oto sekcji z innego \<ItemGroup >. Wiele wierszy kodu zostały usunięte z myślą o przejrzystości. W tej sekcji sprawia, że Settings.Designer.cs jest zależny od Settings.settings:  
+ Widać, że są one odwołań sześć projektu, które są wyświetlane w Eksploratorze rozwiązań. Poniżej przedstawiono sekcję z innego \<ItemGroup >. Wiele wierszy kodu zostały usunięte w celu uściślenia. W tej sekcji sprawia, że Settings.Designer.cs jest zależny od Settings.settings:  
   
 ```  
 <ItemGroup>  

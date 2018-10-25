@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasEHa | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_haseha — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 066f86cf61a697f686153aa9e47c7920b86ea42e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 936393d3edc9273c2240787d0d1fa42ec3691748
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462743"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813469"
 ---
 # <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
-Pobiera flagę określającą, czy funkcja zawiera Obsługa wyjątków asynchronicznych (strukturalnych).  
+Pobiera flagę określającą, czy funkcja zawiera asynchroniczne (strukturalne) wyjątków.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,16 +34,16 @@ HRESULT get_hasEHa(
   
 #### <a name="parameters"></a>Parametry  
  `pFlag`  
- [out] Zwraca `TRUE` Jeśli funkcja ma wszelkie Obsługa wyjątków asynchronicznych; w przeciwnym razie zwraca `FALSE`.  
+ [out] Zwraca `TRUE` Jeśli funkcja ma wszystkie Obsługa wyjątków asynchronicznych; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
- Można mieszać wyjątek asynchroniczny lub strukturalnych obsługi z obsługi wyjątków C++ stylu, ale wymaga przełącznika kompilatora określonych, / eha, aby je włączyć.  
+ Można mieszać ze strukturą lub asynchronicznej obsługi wyjątków za pomocą obsługi wyjątków języka c++, ale wymaga ona z przełącznikiem kompilatora określonych/eha, aby go włączyć.  
   
 ## <a name="requirements"></a>Wymagania  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81009d942a7d77bfe34d3bcc3ae16b1c824b75b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d76c3e2b6caada74deb6d7c99dead93b0cf7e65c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273016"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825330"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Wskazówki: przechwytywanie informacji graficznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,23 +43,23 @@ W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../includes/v
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>Aby włączyć przechwytywanie informacji graficznych bez ładowania projektu lub rozwiązania  
   
-1.  Na pasku menu wybierz **pliku**, **Otwórz**, **projekt/rozwiązanie**. **Otwórz projekt** pojawi się okno dialogowe.  
+1. Na pasku menu wybierz **pliku**, **Otwórz**, **projekt/rozwiązanie**. **Otwórz projekt** pojawi się okno dialogowe.  
   
-2.  Zamiast pliku projektu lub rozwiązania, należy określić plik wykonywalny aplikacji, który chcesz przechwycić informacje grafiki z, a następnie wybierz **Otwórz**.  
+2. Zamiast pliku projektu lub rozwiązania, należy określić plik wykonywalny aplikacji, który chcesz przechwycić informacje grafiki z, a następnie wybierz **Otwórz**.  
   
-3.  Na pasku menu wybierz **debugowania**, **grafiki**, **Rozpocznij diagnostykę**.  
+3. Na pasku menu wybierz **debugowania**, **grafiki**, **Rozpocznij diagnostykę**.  
   
- Po uruchomieniu aplikacji i jest renderowanie ramki, możesz przechwytywać informacje graficzne.  
+   Po uruchomieniu aplikacji i jest renderowanie ramki, możesz przechwytywać informacje graficzne.  
   
 #### <a name="to-capture-graphics-information"></a>Do przechwytywania informacji graficznych  
   
--   Na pasku narzędzi diagnostyki grafiki, wybierz **przechwytywania** przycisku. ![Ikona przycisku przechwytywania grafiki](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
+- Na pasku narzędzi diagnostyki grafiki, wybierz **przechwytywania** przycisku. ![Ikona przycisku przechwytywania grafiki](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
-     —lub—  
+   —lub—  
   
-     Gdy aplikacja w trybie koncentracji uwagi, naciśnij klawisz **klawisza Print Screen**.  
+   Gdy aplikacja w trybie koncentracji uwagi, naciśnij klawisz **klawisza Print Screen**.  
   
- Każdorazowo przechwytywania informacji na temat ramkę, Graphics Diagnostics rejestruje zdarzenia Direct3D i powiązanym stanie i dodaje dane do dziennika grafiki. Nowy dziennik grafiki jest tworzona dla każdej sesji diagnostyki grafiki. Aby uzyskać informacji na temat dzienniki grafiki, zobacz [Przegląd](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+  Każdorazowo przechwytywania informacji na temat ramkę, Graphics Diagnostics rejestruje zdarzenia Direct3D i powiązanym stanie i dodaje dane do dziennika grafiki. Nowy dziennik grafiki jest tworzona dla każdej sesji diagnostyki grafiki. Aby uzyskać informacji na temat dzienniki grafiki, zobacz [Przegląd](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="next-steps"></a>Następne kroki  
  W tym instruktażu zademonstrowano, jak przechwytywać informacje graficzne ręcznie. Kolejnym krokiem Rozważ użycie tej opcji:  

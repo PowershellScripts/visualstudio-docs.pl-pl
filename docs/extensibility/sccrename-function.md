@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c24d84ff659d287f3b32be2b5585ded16b148395
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92c19e47f680d4feb6c4a4acd6de358c1a6191ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841237"
 ---
-# <a name="sccrename-function"></a>Funkcja SccRename
+# <a name="sccrename-function"></a>SccRename, funkcja
 Ta funkcja zmienia nazwę pliku w systemie kontroli źródła.  
   
 ## <a name="syntax"></a>Składnia  
@@ -38,33 +38,33 @@ SCCRTN SccRename(
   
 #### <a name="parameters"></a>Parametry  
  pvContext  
- [in] Struktura kontekstu wtyczkę kontroli źródła.  
+ [in] Struktura kontekście wtyczki kontroli źródła.  
   
- Właściwość hWnd  
- [in] Dojście do okna IDE, które wtyczka do kontroli źródła można używać jako elementu nadrzędnego wszystkie okna dialogowe, które zawiera.  
+ hWnd  
+ [in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.  
   
  lpFileName  
- [in] W pełni kwalifikowanej nazwy pliku zmianą nazwy pliku.  
+ [in] W pełni kwalifikowaną nazwę pliku nazwa jest zmieniana.  
   
  lpNewName  
- [in] Nowa nazwa FQDN. Jeśli ścieżka do katalogu jest inny, plik został przeniesiony w z podkatalogu co do innego.  
+ [in] W pełni kwalifikowana nazwa nowego. Jeśli ścieżka katalogu jest inna, plik został przeniesiony w z jednego podkatalogu do innego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczkę kontroli źródła tej funkcji może przywrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |SCC_OK|Pomyślnie ukończono operację zmiany nazwy.|  
 |SCC_E_PROJNOTOPEN|Projekt nie jest otwarty pod kontrolą źródła.|  
 |SCC_E_FILENOTCONTROLLED|Plik nie jest pod kontrolą źródła.|  
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji.|  
-|SCC_E_NOTAUTHORIZED|Użytkownik nie ma uprawnień do ukończenia tej operacji.|  
+|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby.|  
+|SCC_E_NOTAUTHORIZED|Użytkownik nie ma uprawnień do wykonania tej operacji.|  
 |SCC_E_COULDNOTCREATEPROJECT|Nie można utworzyć projektu jako część procesu zmiany nazwy.|  
-|SCC_E_OPNOTPERFORMED|Operacja nie została wykonana.|  
-|SCC_E_NONSPECIFICERROR|Wystąpił błąd nieokreślonej lub ogólne.|  
+|SCC_E_OPNOTPERFORMED|Nie można wykonać operacji.|  
+|SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony lub ogólny błąd.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta funkcja może służyć do zmiany nazwy pliku lub przenieść go z jednej lokalizacji do innej w systemie kontroli źródła. Wtyczka do kontroli źródła nie powinny podejmować próby dostępu do pliku na dysku. Odpowiada IDE Zmień nazwę pliku lokalnego.  
+ Ta funkcja może służyć do zmiany nazwy pliku lub przenieść je z jednej lokalizacji do innej, w systemie kontroli źródła. Wtyczka do kontroli źródła nie należy próbować uzyskać dostęp do pliku na dysku. Odpowiada środowiska IDE można zmienić nazwy pliku lokalnego.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

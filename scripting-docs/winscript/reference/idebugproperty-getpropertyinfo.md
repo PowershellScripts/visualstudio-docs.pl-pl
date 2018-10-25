@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edd878419c6f2b4fd0f882a070d80c98a96eba56
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c0cdfc48b8e7d5804136e01920b5e8b178628d0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794455"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847373"
 ---
 # <a name="idebugpropertygetpropertyinfo"></a>IDebugProperty::GetPropertyInfo
-Pobiera wartość `IDebugProperty` , który opisuje metody lub właściwości indeksowanej.  
+Pobiera wartość `IDebugProperty` , który opisuje metodę lub właściwość indeksowana.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,18 +40,18 @@ HRESULT GetPropertyInfo (
   
 #### <a name="parameters"></a>Parametry  
  `dwFields`  
- [in] Określa `DBGPROP_INFO_FLAGS` stałe, które określają pola, które mają zostać wypełnione `DebugPropertyInfo` struktury.  
+ [in] Określa `DBGPROP_INFO_FLAGS` stałe, określające pola do wypełniania w `DebugPropertyInfo` struktury.  
   
  `nRadix`  
- [in] Podstawa ma być używany podczas formatowania wszelkie informacje numeryczne.  
+ [in] Podstawy ma być używany w formatowaniu wszelkie dane liczbowe.  
   
  `pPropertyInfo`  
- [out] Zwraca `DebugPropertyInfo` struktury, która opisuje właściwość.  
+ [out] Zwraca `DebugPropertyInfo` struktury, który opisuje właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zwykle `S_OK`.  
+ Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
- [Struktura DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)
+ [DebugPropertyInfo, struktura](../../winscript/reference/debugpropertyinfo-structure.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc773f9b4945a16bac0a9726e0a06f94726fad96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 230cd5ae3bd4ae0d46baf4fe48f00eca9ffe879d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825120"
 ---
 # <a name="develop-tests-from-a-model"></a>Opracowywanie testów na podstawie modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,19 +66,19 @@ Wymagania i modele architektury można użyć, aby ułatwić organizowanie test�
   
 ###### <a name="to-link-tests-to-a-use-case"></a>Aby połączyć testy przypadek użycia  
   
-1.  W [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], Utwórz wymagania i podstawą zestaw testów. Aby dowiedzieć się, jak to zrobić, zobacz [testowanie aplikacji](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. W [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], Utwórz wymagania i podstawą zestaw testów. Aby dowiedzieć się, jak to zrobić, zobacz [testowanie aplikacji](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-     Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Aby uzyskać więcej informacji, zobacz [śledzenie pracy za pomocą programu Visual Studio Team Services lub serwera Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+    Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Aby uzyskać więcej informacji, zobacz [śledzenie pracy za pomocą programu Visual Studio Team Services lub serwera Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
-2.  Elementem roboczym należy połączyć jeden lub więcej przypadków użycia w modelu.  
+2. Elementem roboczym należy połączyć jeden lub więcej przypadków użycia w modelu.  
   
-     Na diagramie przypadków użycia, kliknij prawym przyciskiem myszy przypadek użycia, a następnie kliknij przycisk **łącze do elementu roboczego**. Aby uzyskać więcej informacji, zobacz [łączenie elementów modeli i elementów roboczych](../modeling/link-model-elements-and-work-items.md).  
+    Na diagramie przypadków użycia, kliknij prawym przyciskiem myszy przypadek użycia, a następnie kliknij przycisk **łącze do elementu roboczego**. Aby uzyskać więcej informacji, zobacz [łączenie elementów modeli i elementów roboczych](../modeling/link-model-elements-and-work-items.md).  
   
-3.  Dodaj do zestawu testów, przypadki testowe, które Sprawdź przypadki użycia.  
+3. Dodaj do zestawu testów, przypadki testowe, które Sprawdź przypadki użycia.  
   
- Zwykle każdy element roboczy użytkownika, jak użycia lub wymagania połączy się z kilku przypadków użycia w modelu i każdego przypadku użycia połączy się z kilku przypadków użycia lub wymagań. Jest to spowodowane każdego przypadku użycia lub wymagania obejmuje zestaw zadań, które opracowywanie kilka przypadków użycia. Na przykład w wczesnych iteracji projektu, możesz tworzyć historii użytkownika podstawowego, w którym klient może wybierz elementy z wykazu i zostały one dostarczone. W późniejszej iteracji może ona brzmieć, że użytkownik płaci podczas realizacji zamówienia i dostawca otrzymuje pieniądze, po wysłaniu towarów.  Każdy wątek dodaje klauzulę postcondition w przypadku użycia towarów zamówienia.  
+   Zwykle każdy element roboczy użytkownika, jak użycia lub wymagania połączy się z kilku przypadków użycia w modelu i każdego przypadku użycia połączy się z kilku przypadków użycia lub wymagań. Jest to spowodowane każdego przypadku użycia lub wymagania obejmuje zestaw zadań, które opracowywanie kilka przypadków użycia. Na przykład w wczesnych iteracji projektu, możesz tworzyć historii użytkownika podstawowego, w którym klient może wybierz elementy z wykazu i zostały one dostarczone. W późniejszej iteracji może ona brzmieć, że użytkownik płaci podczas realizacji zamówienia i dostawca otrzymuje pieniądze, po wysłaniu towarów.  Każdy wątek dodaje klauzulę postcondition w przypadku użycia towarów zamówienia.  
   
- Można utworzyć osobne linki od wymagań dla klauzul postcondition, pisząc tych klauzul w oddzielnych komentarze na diagramie przypadków użycia. Każdy komentarz łącza z elementem roboczym wymagania i komentarz łącza do przypadku użycia na diagramie.  
+   Można utworzyć osobne linki od wymagań dla klauzul postcondition, pisząc tych klauzul w oddzielnych komentarze na diagramie przypadków użycia. Każdy komentarz łącza z elementem roboczym wymagania i komentarz łącza do przypadku użycia na diagramie.  
   
 ### <a name="base-tests-on-the-requirements-types"></a>Podstawowy testy na typy wymagań  
  Typy, które jest, klasy, interfejsy i wyliczenia modelu wymagania opisano pojęcia i relacje pod względem sposobu użytkowników reakcji i komunikacji dotyczących firmy. Wyklucza typy danych tylko z wewnętrzną konstrukcją systemu.  

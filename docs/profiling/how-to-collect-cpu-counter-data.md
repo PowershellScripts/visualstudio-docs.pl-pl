@@ -14,51 +14,51 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee77d340eec13c42588511575c6047b5c8f28d16
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 8d5bb2d554ee67a4a2c83decba017e9a1f0fe1e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813912"
 ---
-# <a name="how-to-collect-cpu-counter-data"></a>Porady: zbieranie danych licznika Procesora
+# <a name="how-to-collect-cpu-counter-data"></a>Porady: zbieranie danych licznika procesora CPU
 
-Licznik zdarzeń Procesora służy do zbierania danych wydajności dotyczących sprzętu. W tym artykule przedstawiono sposób zbieranie danych licznika zdarzeń, gdy używasz metoda profilowania instrumentacji.
+Licznik zdarzeń procesora CPU jest używane do zbierania danych wydajności specyficzne dla sprzętu. W tym artykule pokazano, jak zbieranie danych licznika zdarzeń, gdy używasz metoda profilowania instrumentacji.
 
-Występują dwa typy zdarzeń licznika Procesora:
+Występują dwa typy zdarzeń licznika procesora CPU:
 
-- Przenośne zdarzeń — zdarzenia Procesora, które mogą zostać pobrane niezależnie od określonego procesora CPU.
+- Zdarzenia przenośne — zdarzenia procesora CPU, które mogą być zbierane, niezależnie od określonego procesora CPU.
 
-- Platforma zdarzeń — zdarzenia Procesora, które są powiązane do określonego procesora CPU.
+- Zdarzenia platformy — zdarzenia procesora CPU, które są ściśle do określonego procesora CPU.
 
- Przenośne zdarzenia zawierają ogólne zdarzenia, takie jak instrukcje wycofane i nie został zatrzymany cykle, Procesora buforu zdarzeń rozgałęziania zdarzenia i zdarzenia pamięci podręcznej L2. Liczniki zdarzeń dostępną platformę zależą od producenta procesora.
+  Zdarzenia przenośne zawierają ogólne zdarzeń, takich jak instrukcje wycofana i nie został zatrzymany cykle, zdarzenia buforu procesora CPU, rozgałęziania zdarzeń i zdarzenia pamięci podręcznej L2. Liczniki zdarzeń dostępną platformę są określane przez producenta procesora.
 
- Kategorie zdarzeń może być współużytkowana platforma i przenośne liczniki. Na przykład następujące kategorie danych są często wspólne dla obu typów:
+  Kategorie zdarzeń mogą być współużytkowane między liczniki przenośne i platformy. Na przykład następujące kategorie danych są często wspólny dla obu typów:
 
 - Zdarzenia pamięci.
 
 - Zdarzenia frontonu.
 
-- Zdarzenia gałęzi.
+- Zdarzenia dotyczące gałęzi.
 
- Można zbierać dane liczników wydajności w profilera dwa sposoby:
+  Można zbierać dane licznika wydajności w profiler dwa sposoby:
 
-- Zbieranie danych z jednego lub kilku liczników podczas profilu za pomocą Instrumentacji.
+- Podczas profilowania za pomocą Instrumentacji, zbieranie danych z co najmniej jeden licznik.
 
-- Określ zdarzenia licznika jako interwał próbkowania, gdy profilu za pomocą próbkowania. Aby uzyskać więcej informacji, zobacz [porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md).
+- Określ zdarzeń licznika jako interwał próbkowania, podczas profilowania za pomocą próbkowania. Aby uzyskać więcej informacji, zobacz [porady: Wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md).
 
-## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Do zbierania danych licznika wydajności procesora CPU, gdy profilu za pomocą Instrumentacji
+## <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Do zbierania danych licznika wydajności procesora CPU podczas profilowania za pomocą Instrumentacji
 
-1. W tej sesji wydajności **strony właściwości**, kliknij przycisk **liczniki CPU.**
+1. W sesji wydajności **stron właściwości**, kliknij przycisk **liczniki procesora CPU.**
 
-2. Wybierz **zbieranie liczniki CPU** pole wyboru.
+2. Wybierz **zbierania liczników Procesora** pole wyboru.
 
-3. Rozwiń węzeł **dostępnych liczników wydajności** drzewa do momentu znalezienia zdarzenia próbkowania, które mają być zbierane.
+3. Rozwiń **dostępnych liczników wydajności** drzewa, aż znajdziesz próbkowane zdarzenia, które mają być zbierane.
 
-4. Dla każdego zdarzenia, które chcesz zebrać, wybierz zdarzenie, a następnie kliknij strzałkę w prawo, aby dodać zdarzenie do **wybrane liczniki** listy.
+4. Dla każdego zdarzenia, które mają być zbierane, wybierz zdarzenie, a następnie kliknij strzałkę w prawo, aby dodać wydarzenie do **wybrane liczniki** listy.
 
     > [!NOTE]
-    > **Dostępnych liczników wydajności** jest włączone, tylko jeśli wybierzesz **liczniki CPU zbieranie** pole wyboru.
+    > **Dostępne liczniki wydajności** jest włączona, tylko jeśli wybierzesz **liczniki CPU zbieranie** pole wyboru.
 
 ## <a name="see-also"></a>Zobacz także
 

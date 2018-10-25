@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5a2153b6f97727cbf436c66686160cece15c287
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8fafceac4da4b80bea73a8ab969f0ecfb52b394d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136019"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825832"
 ---
 # <a name="threadstate"></a>THREADSTATE
 Określa stan wątku.  
@@ -53,16 +53,16 @@ public enum enum_THREADSTATE {
  Wskazuje, że wątek jest uruchomiony.  
   
  THREADSTATE_STOPPED  
- Wskazuje, że wątek jest zatrzymany z powodu punktu przerwania.  
+ Wskazuje, że wątek został zatrzymany ze względu na punkt przerwania.  
   
  THREADSTATE_FRESH  
- Wskazuje, że wątku został utworzony, ale nie jest jeszcze uruchomiona kodu.  
+ Wskazuje, że wątek został utworzony, ale nie jest jeszcze uruchomiony kod.  
   
  THREADSTATE_DEAD  
- Wskazuje, że wątek jest martwy.  
+ Wskazuje, że wątek jest nieaktywny.  
   
  THREADSTATE_FROZEN  
- Wskazuje, że wątek jest zablokowana (mogą być wykonywane nie wykonywania).  
+ Wskazuje, że wątek jest zablokowane (mogą być wykonywane nie wykonywania).  
   
 ## <a name="remarks"></a>Uwagi  
  Używany do `dwThreadState` pole [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury.  

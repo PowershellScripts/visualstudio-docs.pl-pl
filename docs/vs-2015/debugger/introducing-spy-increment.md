@@ -16,33 +16,33 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5e420adb00bc8972aead555eb281826db689914
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60ad2462d5b5331401384f528c7baf93d91851df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844630"
 ---
 # <a name="introducing-spy"></a>Wprowadzenie programu Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Spy ++ umożliwia wykonywanie następujących zadań:  
   
--   Wyświetla graficzny drzewa relacji między obiektami systemu. Obejmują one [procesy](../debugger/processes-view.md), [wątków](../debugger/threads-view.md), i [windows](../debugger/windows-view.md).  
+- Wyświetla graficzny drzewa relacji między obiektami systemu. Obejmują one [procesy](../debugger/processes-view.md), [wątków](../debugger/threads-view.md), i [windows](../debugger/windows-view.md).  
   
--   Wyszukaj określone [windows](../debugger/how-to-search-for-a-window-in-windows-view.md), [wątków](../debugger/how-to-search-for-a-thread-in-threads-view.md), [procesy](../debugger/how-to-search-for-a-process-in-processes-view.md), lub [wiadomości](../debugger/how-to-search-for-a-message-in-messages-view.md).  
+- Wyszukaj określone [windows](../debugger/how-to-search-for-a-window-in-windows-view.md), [wątków](../debugger/how-to-search-for-a-thread-in-threads-view.md), [procesy](../debugger/how-to-search-for-a-process-in-processes-view.md), lub [wiadomości](../debugger/how-to-search-for-a-message-in-messages-view.md).  
   
--   Wyświetl właściwości wybranego [windows](../debugger/how-to-display-window-properties.md), [wątków](../debugger/how-to-display-thread-properties.md), [procesy](../debugger/how-to-display-process-properties.md), lub [wiadomości](../debugger/how-to-display-message-properties.md).  
+- Wyświetl właściwości wybranego [windows](../debugger/how-to-display-window-properties.md), [wątków](../debugger/how-to-display-thread-properties.md), [procesy](../debugger/how-to-display-process-properties.md), lub [wiadomości](../debugger/how-to-display-message-properties.md).  
   
--   Wybierz okno, wątek, proces lub komunikatów bezpośrednio w widoku.  
+- Wybierz okno, wątek, proces lub komunikatów bezpośrednio w widoku.  
   
--   Użyj [Wyszukiwarka](../debugger/how-to-use-the-finder-tool.md) wybrać okna, umieszczając wskaźnik myszy.  
+- Użyj [Wyszukiwarka](../debugger/how-to-use-the-finder-tool.md) wybrać okna, umieszczając wskaźnik myszy.  
   
--   Ustaw **komunikatów opcje** przy użyciu złożonych komunikatu dziennika wybór parametrów.  
+- Ustaw **komunikatów opcje** przy użyciu złożonych komunikatu dziennika wybór parametrów.  
   
- Spy ++ zawiera pasek narzędzi i hiperłączy, które pozwalają pracować szybciej. Zapewnia także **Odśwież** polecenie, aby zaktualizować widoku aktywnego **narzędzie Window Finder** umożliwiają łatwiejsze w obsłudze, szpiegowanie i **czcionki** okno dialogowe, aby dostosować widok systemu windows. Ponadto narzędzie Spy ++ umożliwia zapisywanie i przywracanie preferencji użytkownika.  
+  Spy ++ zawiera pasek narzędzi i hiperłączy, które pozwalają pracować szybciej. Zapewnia także **Odśwież** polecenie, aby zaktualizować widoku aktywnego **narzędzie Window Finder** umożliwiają łatwiejsze w obsłudze, szpiegowanie i **czcionki** okno dialogowe, aby dostosować widok systemu windows. Ponadto narzędzie Spy ++ umożliwia zapisywanie i przywracanie preferencji użytkownika.  
   
- W różnych Spy ++ w systemie windows możesz kliknąć prawym przyciskiem myszy, aby wyświetlić menu skrótów z najczęściej używanymi poleceniami. Polecenia, które są wyświetlane, zależy od tego, gdzie jest wskaźnik. Na przykład kliknij prawym przyciskiem myszy wpis w widoku okna, a wybrane okno jest widoczne, następnie kliknięcie **wyróżnić** na skrót menu powoduje, że obramowania okna wybranego do flash, aby można go odnaleźć łatwiejsze.  
+  W różnych Spy ++ w systemie windows możesz kliknąć prawym przyciskiem myszy, aby wyświetlić menu skrótów z najczęściej używanymi poleceniami. Polecenia, które są wyświetlane, zależy od tego, gdzie jest wskaźnik. Na przykład kliknij prawym przyciskiem myszy wpis w widoku okna, a wybrane okno jest widoczne, następnie kliknięcie **wyróżnić** na skrót menu powoduje, że obramowania okna wybranego do flash, aby można go odnaleźć łatwiejsze.  
   
 > [!NOTE]
 >  Istnieją dwa narzędzia, które przypominają Spy ++: PView, który przedstawia szczegółowe informacje dotyczące procesów i wątków oraz DDESPY. Plik EXE, który umożliwia monitorowanie komunikatów dynamicznej wymiany danych (DDE).  

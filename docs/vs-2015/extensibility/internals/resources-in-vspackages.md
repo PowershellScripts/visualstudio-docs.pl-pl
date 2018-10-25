@@ -17,12 +17,12 @@ ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 073245be91c1689d0dd70d30207dc4dd809c578e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d032863677a24f377da8068b4a6e5565c5a2241c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188582"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830681"
 ---
 # <a name="resources-in-vspackages"></a>Zasoby w pakietach VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,28 +31,28 @@ Zlokalizowane zasoby można osadzić w natywnych satelitarnej biblioteki DLL int
   
  Niektóre zasoby nie mogą być osadzone w pakietach VSPackage. Następujące typy zarządzane mogą być osadzone:  
   
--   Ciągi  
+- Ciągi  
   
--   Klucze ładowania pakietów, (które są również ciągi)  
+- Klucze ładowania pakietów, (które są również ciągi)  
   
--   Narzędzie okna ikony  
+- Narzędzie okna ikony  
   
--   Skompilowane pliki danych wyjściowych tabeli poleceń (stosunku)  
+- Skompilowane pliki danych wyjściowych tabeli poleceń (stosunku)  
   
--   Mapy bitowe Dyrektor ds. technologii  
+- Mapy bitowe Dyrektor ds. technologii  
   
--   Pomoc wiersza polecenia  
+- Pomoc wiersza polecenia  
   
--   Dane okna dialogowego — informacje  
+- Dane okna dialogowego — informacje  
   
- Zasoby w pakiecie zarządzane są wybierane przez identyfikator zasobu. Wyjątek stanowi pliku Dyrektor ds. technologii, który musi mieć nazwę CTMENU. Plik Dyrektor ds. technologii musi znajdować się w tabeli zasobów jako `byte[]`. Wszystkie inne elementy zasobów są identyfikowane przez typ.  
+  Zasoby w pakiecie zarządzane są wybierane przez identyfikator zasobu. Wyjątek stanowi pliku Dyrektor ds. technologii, który musi mieć nazwę CTMENU. Plik Dyrektor ds. technologii musi znajdować się w tabeli zasobów jako `byte[]`. Wszystkie inne elementy zasobów są identyfikowane przez typ.  
   
- Możesz użyć <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> atrybutu w celu wskazania [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dostępnych zasobów zarządzanych.  
+  Możesz użyć <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> atrybutu w celu wskazania [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dostępnych zasobów zarządzanych.  
   
- [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
- [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
+  [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
+  [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
   
- Ustawienie <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> w ten sposób oznacza, że [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] powinien ignorować niezarządzanych satelickich bibliotek DLL, podczas wyszukiwania zasobów, na przykład za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Jeśli [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] napotka dwóch lub więcej zasobów, które mają ten sam identyfikator zasobu używa pierwszego zasobu, które znajdzie.  
+  Ustawienie <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> w ten sposób oznacza, że [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] powinien ignorować niezarządzanych satelickich bibliotek DLL, podczas wyszukiwania zasobów, na przykład za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>. Jeśli [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] napotka dwóch lub więcej zasobów, które mają ten sam identyfikator zasobu używa pierwszego zasobu, które znajdzie.  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład jest reprezentację zarządzanych ikonę okna narzędzia.  

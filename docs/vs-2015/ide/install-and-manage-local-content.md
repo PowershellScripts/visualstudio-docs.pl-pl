@@ -29,12 +29,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8a67a9105314ad73076d3a8b12d51c23f83097
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832735"
 ---
 # <a name="install-and-manage-local-content"></a>Instalowanie zawartości lokalnej i zarządzanie nią
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,9 +109,9 @@ Za pomocą Podglądu pomocy firmy Microsoft, możesz dodać, usunąć, aktualiza
   
 #### <a name="to-update-local-content"></a>Aby zaktualizować zawartość lokalną  
   
--   W prawym dolnym rogu paska stanu, wybierz **kliknij tutaj, aby pobrać teraz** łącza.  
+- W prawym dolnym rogu paska stanu, wybierz **kliknij tutaj, aby pobrać teraz** łącza.  
   
- Czasy aktualizacji mogą się różnić, ale możesz wyświetlić postęp aktualizacji, na pasku stanu.  
+  Czasy aktualizacji mogą się różnić, ale możesz wyświetlić postęp aktualizacji, na pasku stanu.  
   
 ## <a name="moving-local-content"></a>Przenoszenie zawartości lokalnej  
  Przenosząc zainstalowaną zawartość z komputera lokalnego do udziału sieciowego lub na inną partycję na komputerze lokalnym, można zaoszczędzić miejsce na dysku.  

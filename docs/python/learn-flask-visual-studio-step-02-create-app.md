@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 61a7b36892e5cec36a4641c154227df8621c6602
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812624"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Krok 2: Tworzenie aplikacji Flask za pomocą widoków i szablonów stron
 
@@ -36,7 +36,7 @@ W kodzie, utworzona przez szablon "Pusty projekt sieci Web Flask", możesz mieć
 
 1. W folderze projektu, należy utworzyć folder aplikacji o nazwie `HelloFlask` (kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **Dodaj** > **nowy Folder** .)
 
-1. W *HelloFlask* folderze utwórz plik o nazwie  *\_ \_init\_\_.py* z następującą zawartością, które tworzy `Flask` wystąpienia i ładuje widoków aplikacji (utworzonym w następnym kroku):
+2. W *HelloFlask* folderze utwórz plik o nazwie  *\_ \_init\_\_.py* z następującą zawartością, które tworzy `Flask` wystąpienia i ładuje widoków aplikacji (utworzonym w następnym kroku):
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ W kodzie, utworzona przez szablon "Pusty projekt sieci Web Flask", możesz mieć
     import HelloFlask.views
     ```
 
-1. W *HelloFlask* folderze utwórz plik o nazwie *views.py* z następującą zawartością. Nazwa *views.py* jest ważne, ponieważ użyto `import HelloFlask.views` w ramach  *\_ \_init\_\_PY*; Jeśli zostanie wyświetlony błąd w czasie wykonywania nazwy nie są zgodne.
+3. W *HelloFlask* folderze utwórz plik o nazwie *views.py* z następującą zawartością. Nazwa *views.py* jest ważne, ponieważ użyto `import HelloFlask.views` w ramach  *\_ \_init\_\_PY*; Jeśli zostanie wyświetlony błąd w czasie wykonywania nazwy nie są zgodne.
 
     ```python
     from flask import Flask
@@ -59,9 +59,9 @@ W kodzie, utworzona przez szablon "Pusty projekt sieci Web Flask", możesz mieć
 
     Oprócz zmiana nazwy funkcji i wyznaczać trasy do `home`, ten kod zawiera kod renderowania strony z *app.py* , a następnie importuje `app` obiekt, który jest zadeklarowany w  *\_ \_init\_\_.py*.
 
-1. Utwórz podfolder w *HelloFlask* o nazwie *szablony*, pozostaną puste teraz.
+4. Utwórz podfolder w *HelloFlask* o nazwie *szablony*, pozostaną puste teraz.
 
-1. W folderze głównym projektu, Zmień nazwę *app.py* do *runserver.py*i ich zawartości, które są zgodne z poniższym kodem:
+5. W folderze głównym projektu, Zmień nazwę *app.py* do *runserver.py*i ich zawartości, które są zgodne z poniższym kodem:
 
     ```python
     import os
@@ -77,17 +77,17 @@ W kodzie, utworzona przez szablon "Pusty projekt sieci Web Flask", możesz mieć
 
         app.run(HOST, PORT)
     ```
-1. Do struktury projektu powinna wyglądać podobnie do następującego:
+6. Do struktury projektu powinna wyglądać podobnie do następującego:
 
     ![Struktura projektu po refaktoryzacji kodu](media/flask/step02-project-structure.png)
 
-1. Wybierz **debugowania** > **Rozpocznij debugowanie** (**F5**) lub użyj **serwera sieci Web** przycisk na pasku narzędzi (przeglądarka zostanie wyświetlony maja różnią się w) do uruchamiania aplikacji i Otwórz w przeglądarce. Wypróbuj oba / a/home tras adresów URL.
+7. Wybierz **debugowania** > **Rozpocznij debugowanie** (**F5**) lub użyj **serwera sieci Web** przycisk na pasku narzędzi (przeglądarka zostanie wyświetlony maja różnią się w) do uruchamiania aplikacji i Otwórz w przeglądarce. Wypróbuj oba / a/home tras adresów URL.
 
-1. Możesz również ustawić punkty przerwania w różnych części kodu i ponownie aplikację, aby stosować się do uruchomienia sekwencji. Na przykład Ustawianie punktu przerwania w pierwszym wierszu *runserver.py* i *HelloFlask\__init__.py*, a następnie na `return "Hello Flask!"` wiersza w *views.py*. Następnie ponownie uruchom aplikację (**debugowania** > **ponowne uruchomienie**, **Ctrl**+**F5**, lub przycisk paska narzędzi, pokazano poniżej) i krok po kroku (**F10**) kodu lub uruchamiania z punktu przerwania, w których używane jest **F5**.
+8. Możesz również ustawić punkty przerwania w różnych części kodu i ponownie aplikację, aby stosować się do uruchomienia sekwencji. Na przykład Ustawianie punktu przerwania w pierwszym wierszu *runserver.py* i *HelloFlask\_* init_*.py*, a następnie na `return "Hello Flask!"` wiersza w *views.py*. Następnie ponownie uruchom aplikację (**debugowania** > **ponowne uruchomienie**, **Ctrl**+**F5**, lub przycisk paska narzędzi, pokazano poniżej) i krok po kroku (**F10**) kodu lub uruchamiania z punktu przerwania, w których używane jest **F5**.
 
     ![Uruchom ponownie przycisk na pasku narzędzi debugowania w programie Visual Studio](media/debugging-restart-toolbar-button.png)
 
-1. Gdy skończysz, Zatrzymaj aplikację.
+9. Gdy skończysz, Zatrzymaj aplikację.
 
 ### <a name="commit-to-source-control"></a>Zapewnij kontrole źródła
 

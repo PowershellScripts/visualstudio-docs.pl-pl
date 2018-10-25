@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_lengthProlog | Dokumentacja firmy Microsoft
+title: Idiaframedata::get_lengthprolog — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8033e0f769c0222dc8c3ee90d680ea6f2de279fa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 635d435cd81286c96a3949168dc27f2b8983c4d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843083"
 ---
 # <a name="idiaframedatagetlengthprolog"></a>IDiaFrameData::get_lengthProlog
-Pobiera liczbę bajtów prologu kod w bloku.  
+Pobiera liczbę bajtów kod prologu w bloku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,13 +34,13 @@ HRESULT get_lengthProlog (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca liczbę bajtów kodu prologu.  
+ [out] Zwraca liczbę bajtów kod prologu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Kod prologu jest sekwencji instrukcji, który zachowuje rejestrów, ustawia stan Procesora i ustanawia stosu dla funkcji.  
+ Kod prologu jest sekwencją instrukcji, która zachowuje rejestrów, ustawia stan procesora CPU i ustanawia stosu dla funkcji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

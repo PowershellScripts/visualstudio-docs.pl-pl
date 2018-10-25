@@ -13,17 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f52b647cb6d110d111666df172d7243b0fd8ea4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: df6fce197a184167b66025191f43b07ebd08ffa7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256139"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819592"
 ---
 # <a name="nameprofile"></a>NameProfile
-`NameProfile` Funkcja przypisuje ciąg określony proces lub wątek.  
+`NameProfile` Funkcja przypisuje ciągu określonego procesu lub wątku.  
   
- Interfejs API NameProfile jest dostępna tylko w przypadku profilowanie instrumentacji. Interfejs API NameProfile nie jest obsługiwana dla profilowanie próbkowania.  
+ Interfejs API NameProfile jest dostępna tylko w przypadku profilowania instrumentacji. Interfejs API NameProfile nie jest obsługiwane dla pobierania próbek profilowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,58 +37,58 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 #### <a name="parameters"></a>Parametry  
  `pszName`  
   
- Nazwa elementu profilowania. Nazwa jest nieprawidłowa, (co spowoduje NAME_ERROR_INVALID_NAME zwrotu NameProfileA), jeśli:  
+ Nazwa elementu profilowania. Nazwa jest nieprawidłowa, (co powoduje zwrotu NAME_ERROR_INVALID_NAME NameProfileA), jeśli:  
   
--   Wskaźnik przekazany NameProfileA jest wartość NULL  
+- Wskaźnik, który został przekazany do NameProfileA jest wartość NULL  
   
--   Dane ciągu pszName rozpoczyna się od numeru  
+- Dane ciągu pszName zaczyna się od numeru  
   
--   Dane ciągu pszName zawiera spację  
+- Dane ciągu pszName zawiera spację  
   
--   Dane ciągu pszName zawiera żadnego z następujących znaków:,. ' ~! @# $% ^ & * () = []{}&#124;\\? / <>  
+- Dane ciągu pszName zawiera dowolny z następujących znaków:,. ' ~! @# $% ^ & * () = []{}&#124;\\? / <>  
   
- `Level`  
+  `Level`  
   
- Wskazuje poziom profilu do wydajności, które mogą być stosowane zbierania danych. Następujące **PROFILE_CONTROL_LEVEL** wartości można oznaczać jeden z trzech poziomów do wydajności, które mogą być stosowane zbierania danych:  
+  Wskazuje poziom profilu do wydajności, które mogą być stosowane zbierania danych. Następujące **PROFILE_CONTROL_LEVEL** wartości może służyć do wskazania jednego z trzech poziomów wydajności, które zbieranie danych można stosować:  
   
 |Moduł wyliczający|Opis|  
 |----------------|-----------------|  
-|PROFILE_GLOBALLEVEL|Globalne ustawienia poziomu dotyczą wszystkich procesów i wątków w przebiegu profilowania.|  
-|PROFILE_PROCESSLEVEL|Ustawienie poziomu proces wpływają na wszystkie wątki, które są częścią określony proces.|  
-|PROFILE_THREADLEVEL|Wątek profilowania ustawienie poziomu dotyczy określonego wątku.|  
+|PROFILE_GLOBALLEVEL|Globalne ustawienie poziomie ma wpływ na wszystkie procesy i wątki podczas uruchomienia profilowania.|  
+|PROFILE_PROCESSLEVEL|Ustawienie poziomie proces wpływają na wszystkie wątki, które są dostępne w ramach określonego procesu.|  
+|PROFILE_THREADLEVEL|Wątek ustawienie poziomie profilowania dotyczy określonego wątku.|  
   
  `dwId`  
   
- Identyfikator poziomu profilowania. Proces lub wątek identyfikator, który jest generowany przez system.  
+ Profilowanie identyfikator poziomu. Użyj proces lub wątek identyfikator, który jest generowany przez system.  
   
-## <a name="property-valuereturn-value"></a>Wartość właściwości wartość/powrotu  
- Funkcja wskazuje powodzenie lub Niepowodzenie przy użyciu **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących czynności:  
+## <a name="property-valuereturn-value"></a>Właściwość wartości/zwracana wartość  
+ Funkcja wskazuje powodzenie lub niepowodzenie, za pomocą **PROFILE_COMMAND_STATUS** wyliczenia. Zwracana wartość może być jedną z następujących czynności:  
   
 |Moduł wyliczający|Opis|  
 |----------------|-----------------|  
 |NAME_ERROR_ID_NOEXIST|Określony element profilowania nie istnieje.|  
 |NAME_ERROR_INVALID_NAME|Nazwa jest nieprawidłowa.|  
-|NAME_ERROR_LEVEL_NOEXIST|Profil określony poziom nie istnieje.|  
+|NAME_ERROR_LEVEL_NOEXIST|Poziom określony profil nie istnieje.|  
 |NAME_ERROR_NO_SUPPORT|Określona operacja nie jest obsługiwana.|  
-|NAME_ERROR_OUTOFMEMORY|Pamięć nie był dostępny do rejestrowania zdarzenia.|  
-|NAME_ERROR_REDEFINITION|Nazwa została już przypisana do elementu profilu. Nazwa tej funkcji jest ignorowana.|  
+|NAME_ERROR_OUTOFMEMORY|Pamięć nie jest dostępny do rejestrowania zdarzenia.|  
+|NAME_ERROR_REDEFINITION|Nazwa już została przypisana do elementu profilu. Nazwa tej funkcji jest ignorowana.|  
 |NAME_ERROR_TEXTTRUNCATED|Tekst nazwa przekracza 32 znaków, łącznie ze znakiem null i dlatego została obcięta.|  
 |NAME_OK|Nazwa została pomyślnie zarejestrowana.|  
   
 ## <a name="remarks"></a>Uwagi  
  Tylko jedną nazwę można przypisać do każdego proces lub wątek. Po nazwie elementu profilowania kolejnych wywołań NameProfile dla tego elementu są ignorowane.  
   
- Jeśli tej samej nazwie znajduje się na inne wątki lub procesy, w raporcie zostaną uwzględnione danych z wszystkich elementów na tym poziomie o tej nazwie.  
+ Jeśli w tej samej nazwie znajduje się w różnych wątkach lub procesach, w raporcie zostaną uwzględnione dane ze wszystkich elementów na tym samym poziomie o tej nazwie.  
   
- Jeśli określisz proces lub wątek inny niż bieżący, należy się upewnić, czy został zainicjowany i uruchomienia przed nadaj jej nazwę. W przeciwnym razie metoda NameProfile kończy się niepowodzeniem.  
+ Jeśli określisz, proces lub wątek innego niż bieżący, upewnij się, że została zainicjowana i został uruchomiony przed nadaj mu nazwę. W przeciwnym razie metoda NameProfile kończy się niepowodzeniem.  
   
 > [!IMPORTANT]
->  Funkcje CreateProcess() i interfejsu API CreateThread() może zwrócić przed wątku lub procesu jest zainicjowany.  
+>  Funkcje CreateProcess() i CreateThread() interfejsu API może zwrócić przed wątku lub proces został zainicjowany.  
   
-## <a name="net-framework-equivalent"></a>Odpowiednik w programie .NET framework  
+## <a name="net-framework-equivalent"></a>Równoważne z .NET framework  
  *Microsoft.VisualStudio.Profiler.dll*  
   
-## <a name="function-information"></a>Informacji o funkcji  
+## <a name="function-information"></a>Informacje o funkcji  
   
 |||  
 |-|-|  
@@ -97,7 +97,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |**Unicode**|Zaimplementowane jako `NameProfileW` (Unicode) i `NameProfileA` (ANSI).|  
   
 ## <a name="example"></a>Przykład  
- Poniższy kod ilustruje NameProfile wywołania funkcji. W przykładzie założono użycie makra ciąg Win32 i ustawienia kompilatora ANSI, czy kod wywołuje ANSI włączone funkcji.  
+ Poniższy kod ilustruje NameProfile wywołania funkcji. W przykładzie założono użycie makra ciągu Win32 i ustawienia kompilatora standardu ANSI ustalić, czy kod wywołuje ANSI jest włączona funkcja.  
   
 ```cpp  
 void ExerciseNameProfile()  

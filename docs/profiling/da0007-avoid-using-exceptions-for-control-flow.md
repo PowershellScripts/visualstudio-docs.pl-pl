@@ -1,5 +1,5 @@
 ---
-title: 'DA0007: Unikaj używania wyjątków do przepływu sterowania | Dokumentacja firmy Microsoft'
+title: 'DA0007: Unikanie używania wyjątków do przepływu sterowania | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,33 +15,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b7f673adc1c5f93c3cf356218c510cad7f8d229
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 55c101f62ac7c376c9af3be8a2865cb3ebf7a7f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749869"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834243"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Unikaj używania wyjątków do przepływu sterowania
+
 |||  
 |-|-|  
 |Identyfikator reguły|DA0007|  
 |Kategoria|Sposób użycia programu .NET framework|  
 |Metod profilowania|Wszystkie|  
-|Komunikat|Stale jest zgłaszana wysoka liczba wyjątków. Rozważ ograniczenie użycia wyjątków w logice programu.|  
+|Komunikat|Stale jest zgłaszana wysoka liczba wyjątków. Należy rozważyć ograniczenie użycia wyjątków w logice programu.|  
 |Typ komunikatu|Ostrzeżenie|  
-  
- Gdy profilu można za pomocą próbkowania, pamięci platformy .NET lub metody kontencji zasobów, należy zebrać co najmniej 25 próbek do wyzwolenia tej reguły.  
-  
+
+ Podczas profilowania za pomocą próbkowania pamięci platformy .NET i metod rywalizacji zasobów musi zebrać co najmniej 25 próbek do wyzwolenia tej reguły.  
+
 ## <a name="cause"></a>Przyczyna  
- Wysoki współczynnik programów obsługi wyjątków .NET Framework zostały wywołane w danych profilowania. Należy rozważyć użycie innych logika przepływu sterowania, aby zmniejszyć liczbę wyjątków, które są generowane.  
-  
+ Wysoki współczynnik obsługi wyjątków w .NET Framework zostały wywołane w danych profilowania. Należy rozważyć użycie inną logikę przepływu sterowania w celu zmniejszenia liczby wyjątków, które są generowane.  
+
 ## <a name="rule-description"></a>Opis reguły  
- Korzystanie z obsługi wyjątków, aby wykryć błędów oraz inne zdarzenia, które zakłócać działanie programu jest dobrym rozwiązaniem, korzystanie z obsługi wyjątków jako część logiki wykonywania regularnych program może być kosztowne i należy unikać. W większości przypadków wyjątki należy używać tylko w przypadku okoliczności, które są rzadko i nie są oczekiwane. Wyjątki nie powinny umożliwia zwracanie wartości jako część przepływu typowego programu. W wielu przypadkach można uniknąć występowanie wyjątków sprawdzania poprawności wartości i używając logikę warunkową wstrzymania wykonywania instrukcji, które powodują problemu.  
-  
- Aby uzyskać więcej informacji, zobacz [Zarządzanie wyjątkami](http://go.microsoft.com/fwlink/?LinkID=177825) sekcji **rozdział 5 — poprawę wydajności kodu zarządzanego** w **poprawy wydajności aplikacji .NET i skalowalności** woluminu **Microsoft Patterns and Practices** biblioteki w witrynie MSDN.  
-  
+ Korzystanie z obsługi wyjątków w celu przechwytywania błędów i innych zdarzeń, które zakłócają działanie programu jest dobrym rozwiązaniem, korzystanie z obsługi wyjątków jako część logiki wykonywania regularnych program może być kosztowne i należy ich unikać. W większości przypadków wyjątki należy używać tylko w przypadku okoliczności, które występują rzadko i nie oczekuje. Wyjątki nie stosuje się do zwracania wartości jako część przepływu typowego programu. W wielu przypadkach można uniknąć zgłaszania wyjątków, sprawdzanie poprawności wartości i przy użyciu logikę warunkową w celu wstrzymania wykonywania instrukcji, które powodują problemu.  
+
+ Aby uzyskać więcej informacji, zobacz [Zarządzanie wyjątkami](http://go.microsoft.com/fwlink/?LinkID=177825) części **rozdział 5 — poprawę wydajności kodu zarządzanego** w **poprawy wydajności aplikacji platformy .NET i skalowalności** ilości **Microsoft Patterns and Practices** biblioteki w witrynie MSDN.  
+
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do widoku znaczniki. Znajdź kolumnę, która zawiera **wyjątki środowiska CLR platformy .NET (@ProcessInstance)\\liczba Excels zgłoszony / sekundę** pomiarów. Określa, czy określone fazy wykonywania programu obsługi wyjątków w przypadku częściej niż innych. Przy użyciu profil próbkowania, spróbuj zidentyfikować Instrukcje throw i bloki generujących częste wyjątków try/catch. W razie potrzeby dodaj logikę bloki ułatwią zrozumienie wyjątki, które są najczęściej obsługiwane catch. Jeśli to możliwe, instrukcje throw Zamień często wykonywane lub bloki catch z przepływem proste kontrolować kod logiki lub sprawdzania poprawności.  
-  
- Na przykład w gdyby okazać, że aplikacja została obsługa częste wyjątków dividebyzeroexception —, dodanie logiki do programu, aby wyszukać mianownikach z wartościami zerowymi poprawia wydajność aplikacji.
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, przejdź do widoku znaczników. Znajdź kolumnę, która zawiera **wyjątki .NET CLR (@ProcessInstance)\\liczba Excels zgłoszony / sec** pomiarów. Określa, czy określone faz wykonywania programu obsługi wyjątków w przypadku częściej niż inne. Przy użyciu profilu pobierania próbek, spróbuj zidentyfikować instrukcji throw i bloki, które generują występujących wyjątków try/catch. Jeśli to konieczne, należy dodać logikę do bloki, które pomagają zrozumieć, które wyjątki, które są aktualnie obsługiwane najczęściej catch. W przypadku, gdy jest to możliwe, Zastąp często wykonywane throw instrukcje lub bloki catch prosty przepływ kontrolować kod logiki i walidacji.  
+
+ Na przykład gdyby się okazać, że aplikacji została obsługa występujących wyjątków dividebyzeroexception —, dodając logikę do programu, aby sprawdzić, czy mianownikach z wartościami zerowymi zwiększa wydajność aplikacji.

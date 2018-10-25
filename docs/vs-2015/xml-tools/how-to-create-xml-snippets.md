@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fbcb7254ad1cd417b8cdb90c3ea257868ab5a84
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38bec6de97a0b9d38891046a1a6b57f4d31541bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818162"
 ---
 # <a name="how-to-create-xml-snippets"></a>Porady: tworzenie fragmentów kodu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
   
  `Code` Element zawiera trzy zmienne.  
   
--   $name$ jest zmienną zdefiniowaną przez użytkownika. Tworzy `name` element, który ma wartość można edytować wartość domyślna to "name". Zmienne zdefiniowane przez użytkownika są definiowane przy użyciu `Literal` elementu.  
+- $name$ jest zmienną zdefiniowaną przez użytkownika. Tworzy `name` element, który ma wartość można edytować wartość domyślna to "name". Zmienne zdefiniowane przez użytkownika są definiowane przy użyciu `Literal` elementu.  
   
--   $ $wybrane to uprzednio zdefiniowanej zmiennej. Reprezentuje tekst, który został wybrany w edytorze XML przed wywołaniem do fragmentu kodu. Położenie ta zmienna Określa, gdzie zaznaczony tekst pojawia się we fragmencie kodu, który otacza wybieranie.  
+- $ $wybrane to uprzednio zdefiniowanej zmiennej. Reprezentuje tekst, który został wybrany w edytorze XML przed wywołaniem do fragmentu kodu. Położenie ta zmienna Określa, gdzie zaznaczony tekst pojawia się we fragmencie kodu, który otacza wybieranie.  
   
--   $end$ jest uprzednio zdefiniowanej zmiennej. Gdy użytkownik naciśnie ENTER, aby zakończyć edytowanie pola fragment kodu, ta zmienna Określa, gdzie daszek (^) jest przenoszony do.  
+- $end$ jest uprzednio zdefiniowanej zmiennej. Gdy użytkownik naciśnie ENTER, aby zakończyć edytowanie pola fragment kodu, ta zmienna Określa, gdzie daszek (^) jest przenoszony do.  
   
- Powyższe `Code` wstawia element następujący tekst XML:  
+  Powyższe `Code` wstawia element następujący tekst XML:  
   
 ```  
 <test>  

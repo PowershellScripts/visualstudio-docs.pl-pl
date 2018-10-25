@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43854b2d0aad0e1466f8d8b6fcb45921999aba5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2b08760e567f6e000e191703695ee0703da7215
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812143"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Porady: eksportowanie tekstury do użycia z Direct2D lub aplikacjami JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,22 +55,22 @@ Potok zawartości obrazu może generować tekstury, które są zgodne z konwencj
   
 #### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Aby utworzyć teksturę, która jest zgodna z konwencjami renderowania Direct2D  
   
-1.  Rozpocznij od podstawowej tekstury. Załaduj istniejący obraz lub Utwórz nową, zgodnie z opisem w [porady: tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md). Do obsługi kompresji bloku w formacie .dds, należy określić teksturę, która ma szerokość i wysokość będące wielokrotnościami czterech, na przykład 100 x 100, 128 x 128 lub 256 x 192. Mipmapping nie jest obsługiwane, Tekstura nie musi mieć kształtu kwadratu i nie musi być potęgą liczby dwa.  
+1. Rozpocznij od podstawowej tekstury. Załaduj istniejący obraz lub Utwórz nową, zgodnie z opisem w [porady: tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md). Do obsługi kompresji bloku w formacie .dds, należy określić teksturę, która ma szerokość i wysokość będące wielokrotnościami czterech, na przykład 100 x 100, 128 x 128 lub 256 x 192. Mipmapping nie jest obsługiwane, Tekstura nie musi mieć kształtu kwadratu i nie musi być potęgą liczby dwa.  
   
-2.  Skonfigurować pliku tekstury, jest przetwarzany przez potok zawartości obrazu. W **Eksploratora rozwiązań**, otwórz menu skrótów dla utworzonego właśnie pliku tekstury, a następnie wybierz **właściwości**. Na **właściwości konfiguracji**, **ogólne** ustaw **typu elementu** właściwości **potok zawartości obrazu**. Upewnij się, że **zawartości** właściwość jest ustawiona na **tak** i **Wyłącz z kompilacji** ustawiono **nie**, a następnie wybierz  **Zastosuj** przycisku. **Potok zawartości obrazu** zostanie wyświetlona strona właściwości konfiguracji.  
+2. Skonfigurować pliku tekstury, jest przetwarzany przez potok zawartości obrazu. W **Eksploratora rozwiązań**, otwórz menu skrótów dla utworzonego właśnie pliku tekstury, a następnie wybierz **właściwości**. Na **właściwości konfiguracji**, **ogólne** ustaw **typu elementu** właściwości **potok zawartości obrazu**. Upewnij się, że **zawartości** właściwość jest ustawiona na **tak** i **Wyłącz z kompilacji** ustawiono **nie**, a następnie wybierz  **Zastosuj** przycisku. **Potok zawartości obrazu** zostanie wyświetlona strona właściwości konfiguracji.  
   
-3.  Ustaw format wyjściowy na jeden z formatów skompresowanego bloku. Na **właściwości konfiguracji**, **potok zawartości obrazu**, **ogólne** ustaw **skompresować** właściwości  **Kompresja bc3_unorm (/ compress: BC3_UNORM)**. Możesz wybrać dowolny z innych formantów BC1, BC2 lub BC3 formatów w zależności od wymagań. Direct2D nie obsługuje obecnie tekstur BC4, BC5, BC6 lub BC7 tekstury. Aby uzyskać więcej informacji o różnych formatach kompresji Blokowej, zobacz [kompresja blokowa (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).  
+3. Ustaw format wyjściowy na jeden z formatów skompresowanego bloku. Na **właściwości konfiguracji**, **potok zawartości obrazu**, **ogólne** ustaw **skompresować** właściwości  **Kompresja bc3_unorm (/ compress: BC3_UNORM)**. Możesz wybrać dowolny z innych formantów BC1, BC2 lub BC3 formatów w zależności od wymagań. Direct2D nie obsługuje obecnie tekstur BC4, BC5, BC6 lub BC7 tekstury. Aby uzyskać więcej informacji o różnych formatach kompresji Blokowej, zobacz [kompresja blokowa (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx).  
   
-    > [!NOTE]
-    >  Format kompresji, który jest określony, określa format pliku, który jest wytwarzany przez potok zawartości obrazu. Stanowi to odmianę **Format** właściwości obrazu źródłowego w edytorze obrazu, który określa format pliku obrazu źródłowego, ponieważ przechowywane na dysku — czyli *formatu roboczego*. Nie ma zazwyczaj format roboczy był skompresowany.  
+   > [!NOTE]
+   >  Format kompresji, który jest określony, określa format pliku, który jest wytwarzany przez potok zawartości obrazu. Stanowi to odmianę **Format** właściwości obrazu źródłowego w edytorze obrazu, który określa format pliku obrazu źródłowego, ponieważ przechowywane na dysku — czyli *formatu roboczego*. Nie ma zazwyczaj format roboczy był skompresowany.  
   
-4.  Konfigurowanie potoku zawartości obrazu do generowania danych wyjściowych, która używa wstępnie przemnożonego kanału alfa. Na **właściwości konfiguracji**, **potok zawartości obrazu**, **ogólne** ustaw **przekonwertować wstępnie przemnożonego alfa format** Właściwość **tak (/ generatepremultipliedalpha)**.  
+4. Konfigurowanie potoku zawartości obrazu do generowania danych wyjściowych, która używa wstępnie przemnożonego kanału alfa. Na **właściwości konfiguracji**, **potok zawartości obrazu**, **ogólne** ustaw **przekonwertować wstępnie przemnożonego alfa format** Właściwość **tak (/ generatepremultipliedalpha)**.  
   
-5.  Konfigurowanie potoku zawartości obrazu tak, aby nie generować mipmap. Na **właściwości konfiguracji**, **potok zawartości obrazu**, **ogólne** ustaw **Generuj Mips** właściwość **Nie**.  
+5. Konfigurowanie potoku zawartości obrazu tak, aby nie generować mipmap. Na **właściwości konfiguracji**, **potok zawartości obrazu**, **ogólne** ustaw **Generuj Mips** właściwość **Nie**.  
   
-6.  Wybierz **OK** przycisku.  
+6. Wybierz **OK** przycisku.  
   
- Podczas budowania projektu potok zawartości obrazów konwertuje obraz źródłowy z formatu roboczego do formatu wyjściowego, który określiłeś, konwersja obejmuje Generowanie wstępnie przemnożonego kanału alfa, a wynik jest kopiowany do katalogu wyjściowego projektu.
+   Podczas budowania projektu potok zawartości obrazów konwertuje obraz źródłowy z formatu roboczego do formatu wyjściowego, który określiłeś, konwersja obejmuje Generowanie wstępnie przemnożonego kanału alfa, a wynik jest kopiowany do katalogu wyjściowego projektu.
 
 
 

@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c97810b69ef7256379b6d14bf29ba08a9e6e0040
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19e57f9cebf6e9a8086f736735527fb647544228
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833762"
 ---
 # <a name="just-my-code"></a>Tylko mój kod
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,13 +52,13 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
   
  Trzy atrybuty wpływa również na debuger uważa się mój kod:  
   
--   <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> Nakazuje debugerowi, że kod, który jest stosowany do nie jest mój kod.  
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> Nakazuje debugerowi, że kod, który jest stosowany do nie jest mój kod.  
   
--   <xref:System.Diagnostics.DebuggerHiddenAttribute> Ukrywa kodu z debugerem, nawet wtedy, gdy tylko mój kod jest wyłączona.  
+- <xref:System.Diagnostics.DebuggerHiddenAttribute> Ukrywa kodu z debugerem, nawet wtedy, gdy tylko mój kod jest wyłączona.  
   
--   <xref:System.Diagnostics.DebuggerStepThroughAttribute> Nakazuje debugerowi, aby przejść przez kod, który zostanie zastosowany do, a nie kod krok po kroku.  
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> Nakazuje debugerowi, aby przejść przez kod, który zostanie zastosowany do, a nie kod krok po kroku.  
   
- Inny kod jest uważane za kod użytkownika.  
+  Inny kod jest uważane za kod użytkownika.  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> Zachowanie przechodzenia krok po kroku  
  Po użytkownik **Step Into** (skrót klawiaturowy: F11) kod niezwiązany z użytkownikiem, debuger nie wchodzi WE kod do następnej instrukcji użytkownika. Gdy możesz **Step Out** (klawiatura: Shift + F11), debuger działa do następnego wiersza kodu użytkownika. Jeśli żaden kod użytkownika zostanie osiągnięty, a następnie wykonywanie jest kontynuowane do czasu jej wyjścia, punkt przerwania zostaje trafiony lub wystąpienia wyjątku.  
@@ -80,17 +80,17 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
   
  Domyślnie debuger uważa za kod niezwiązany z użytkownikiem w oknach stos wywołań tych funkcji:  
   
--   Funkcje za pomocą informacji o źródle pozbawionego włókien w pliku symboli.  
+- Funkcje za pomocą informacji o źródle pozbawionego włókien w pliku symboli.  
   
--   Funkcje, w której pliki symboli oznacza, że brak pliku źródłowego, odpowiadający ramki stosu.  
+- Funkcje, w której pliki symboli oznacza, że brak pliku źródłowego, odpowiadający ramki stosu.  
   
--   Określona w funkcji `*.natjmc` pliki `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` folderu.  
+- Określona w funkcji `*.natjmc` pliki `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` folderu.  
   
- **Przechodzenie krok po kroku**  
+  **Przechodzenie krok po kroku**  
   
- Domyślnie tylko funkcje określone w `*.natstepfilter` pliki `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` folderu są uważane za kod niezwiązany z użytkownikiem.  
+  Domyślnie tylko funkcje określone w `*.natstepfilter` pliki `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` folderu są uważane za kod niezwiązany z użytkownikiem.  
   
- Możesz utworzyć swój własny `.natstepfilter` i `.natjmc` dostosować przechodzenie krok po kroku i wywoływać zachowanie okna stosu `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
+  Możesz utworzyć swój własny `.natstepfilter` i `.natjmc` dostosować przechodzenie krok po kroku i wywoływać zachowanie okna stosu `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> Zachowanie przechodzenia krok po kroku  
  Gdy użytkownik **Step Into** (skrót klawiaturowy: F11) kod niezwiązany z użytkownikiem z kodu użytkownika, debuger nie wchodzi WE kod do następnego wiersza kodu użytkownika. Gdy możesz **Step Out** (klawiatura: Shift + F11), debuger działa do następnego wiersza kodu użytkownika. Jeśli żaden kod użytkownika zostanie osiągnięty, a następnie wykonywanie jest kontynuowane do czasu jej wyjścia, punkt przerwania zostaje trafiony lub wystąpienia wyjątku.  
@@ -103,11 +103,11 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Dostosowywanie zachowania przechodzenia krok po kroku  
  Można określić funkcji, aby przejść przez wymienienie ich jako kod niezwiązany z użytkownikiem w `*.natstepfilter` plików.  
   
--   Aby określić kod niezwiązany z użytkownikiem dla wszystkich użytkowników komputera programu Visual Studio, należy dodać plik .natstepfilter `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` folderu.  
+- Aby określić kod niezwiązany z użytkownikiem dla wszystkich użytkowników komputera programu Visual Studio, należy dodać plik .natstepfilter `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` folderu.  
   
--   Aby określić kod niezwiązany z użytkownikiem dla poszczególnych użytkowników, należy dodać plik .natstepfilter `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` folderu.  
+- Aby określić kod niezwiązany z użytkownikiem dla poszczególnych użytkowników, należy dodać plik .natstepfilter `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` folderu.  
   
- .natstepfilter pliki są plikami xml o następującej składni:  
+  .natstepfilter pliki są plikami xml o następującej składni:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -127,19 +127,19 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
   
 |Element|Opis|  
 |-------------|-----------------|  
-|Funkcja|Wymagane. Określa jedną lub więcej funkcji jako funkcje niezwiązanych z użytkownikiem.|  
-|`Name`|Wymagane. ECMA 262 sformatowane wyrażeń regularnych, określając nazwę pełne działanie do dopasowania. Na przykład:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> Nakazuje debugerowi, że wszystkie metody w `MyNS::MyClass` należy uznać za kod niezwiązany z użytkownikiem. W dopasowaniu jest uwzględniana wielkość liter.|  
+|Funkcja|Wymagana. Określa jedną lub więcej funkcji jako funkcje niezwiązanych z użytkownikiem.|  
+|`Name`|Wymagana. ECMA 262 sformatowane wyrażeń regularnych, określając nazwę pełne działanie do dopasowania. Na przykład:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> Nakazuje debugerowi, że wszystkie metody w `MyNS::MyClass` należy uznać za kod niezwiązany z użytkownikiem. W dopasowaniu jest uwzględniana wielkość liter.|  
 |`Module`|Opcjonalna. ECMA 262 sformatowane wyrażeń regularnych, określić pełną ścieżkę do modułu zawierający funkcję. Dopasowanie jest rozróżniana wielkość liter.|  
-|`Action`|Wymagane. Jedną z następujących wartości rozróżniana wielkość liter:<br /><br /> -   `NoStepInto`  — Nakazuje debugerowi na wkroczenie za pośrednictwem funkcji dopasowany.<br />-   `StepInto`  — informuje debuger, aby wejść do funkcji dopasowane zastąpienie wszelkich innych `NoStepInto` dopasowane funkcji.|  
+|`Action`|Wymagana. Jedną z następujących wartości rozróżniana wielkość liter:<br /><br /> -   `NoStepInto`  — Nakazuje debugerowi na wkroczenie za pośrednictwem funkcji dopasowany.<br />-   `StepInto`  — informuje debuger, aby wejść do funkcji dopasowane zastąpienie wszelkich innych `NoStepInto` dopasowane funkcji.|  
   
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Dostosowywanie zachowania dotyczącego stosu wywołań  
  Można określić moduły, pliki źródłowe i funkcji, które mają być traktowane jako kod niezwiązany z użytkownikiem w stosy wywołań, określając je w `*.natjmc` plików.  
   
--   Aby określić kod niezwiązany z użytkownikiem dla wszystkich użytkowników komputera programu Visual Studio, należy dodać plik .natjmc `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` folderu.  
+- Aby określić kod niezwiązany z użytkownikiem dla wszystkich użytkowników komputera programu Visual Studio, należy dodać plik .natjmc `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` folderu.  
   
--   Aby określić kod niezwiązany z użytkownikiem dla poszczególnych użytkowników, należy dodać plik .natjmc `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` folderu.  
+- Aby określić kod niezwiązany z użytkownikiem dla poszczególnych użytkowników, należy dodać plik .natjmc `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` folderu.  
   
- .natjmc pliki są plikami xml o następującej składni:  
+  .natjmc pliki są plikami xml o następującej składni:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -165,20 +165,20 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagane. Pełna ścieżka moduł lub moduły. Można używać symboli wieloznacznych Windows `?` (zero lub jeden znak) i `*` (zero lub więcej znaków). Na przykład<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> Nakazuje debugerowi Traktuj wszystkie moduły w `\3rdParty\UtilLibs` na dowolnym dysku jako kodu zewnętrznego.|  
+|`Name`|Wymagana. Pełna ścieżka moduł lub moduły. Można używać symboli wieloznacznych Windows `?` (zero lub jeden znak) i `*` (zero lub więcej znaków). Na przykład<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> Nakazuje debugerowi Traktuj wszystkie moduły w `\3rdParty\UtilLibs` na dowolnym dysku jako kodu zewnętrznego.|  
 |`Company`|Opcjonalna. Nazwa firmy, która publikuje moduł, który jest osadzony w pliku wykonywalnym. Ten atrybut służy do odróżniania modułów.|  
   
  **Atrybuty elementu pliku**  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagane. Pełna ścieżka pliku źródłowego lub pliki, które mają być traktowane jako kodu zewnętrznego. Można używać symboli wieloznacznych Windows `?` i `*` określając ścieżkę.|  
+|`Name`|Wymagana. Pełna ścieżka pliku źródłowego lub pliki, które mają być traktowane jako kodu zewnętrznego. Można używać symboli wieloznacznych Windows `?` i `*` określając ścieżkę.|  
   
  **Atrybuty elementów — funkcja**  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`Name`|Wymagane. W pełni kwalifikowaną nazwę funkcji, które mają być traktowane jako kodu zewnętrznego.|  
+|`Name`|Wymagana. W pełni kwalifikowaną nazwę funkcji, które mają być traktowane jako kodu zewnętrznego.|  
 |`Module`|Opcjonalna. Nazwa lub pełną ścieżkę do modułu, która zawiera funkcję. Ten atrybut służy do odróżniania funkcji o tej samej nazwie.|  
 |`ExceptionImplementation`|Po ustawieniu `true`, stos wywołań Wyświetla funkcja, która zgłosiła wyjątek, a nie z tej funkcji.|  
   
@@ -197,19 +197,19 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
   
  Debuger JavaScript klasyfikuje automatycznie tych typów kodu:  
   
--   Skrypt, który jest wykonywany, przekazując ciąg do hosta — pod warunkiem `eval` funkcji zostanie sklasyfikowany jako **MyCode**.  
+- Skrypt, który jest wykonywany, przekazując ciąg do hosta — pod warunkiem `eval` funkcji zostanie sklasyfikowany jako **MyCode**.  
   
--   Skrypt, który jest wykonywany, przekazując ciąg do `Function` Konstruktor jest klasyfikowana jako **LibraryCode**.  
+- Skrypt, który jest wykonywany, przekazując ciąg do `Function` Konstruktor jest klasyfikowana jako **LibraryCode**.  
   
--   Skrypt, który znajduje się w dokumentacji framework, na przykład WinJS lub zestawu Azure SDK zostanie sklasyfikowany jako **LibraryCode**.  
+- Skrypt, który znajduje się w dokumentacji framework, na przykład WinJS lub zestawu Azure SDK zostanie sklasyfikowany jako **LibraryCode**.  
   
--   Skrypt, który jest wykonywany, przekazując ciąg do `setTimeout`, `setImmediate`, lub `setInterval` funkcji zostanie sklasyfikowany jako **UnrelatedCode**.  
+- Skrypt, który jest wykonywany, przekazując ciąg do `setTimeout`, `setImmediate`, lub `setInterval` funkcji zostanie sklasyfikowany jako **UnrelatedCode**.  
   
--   `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` Określa innego użytkownika i niezwiązanych z użytkownikiem kodu dla wszystkich projektów języka JavaScript w programie Visual Studio.  
+- `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` Określa innego użytkownika i niezwiązanych z użytkownikiem kodu dla wszystkich projektów języka JavaScript w programie Visual Studio.  
   
- Możesz zmodyfikować domyślne klasyfikacje i klasyfikowania plików i adresy URL Dodaj przez plik JSON o nazwie `mycode.json` do folderu głównego projektu.  
+  Możesz zmodyfikować domyślne klasyfikacje i klasyfikowania plików i adresy URL Dodaj przez plik JSON o nazwie `mycode.json` do folderu głównego projektu.  
   
- Inny kod jest klasyfikowana jako **MyCode**.  
+  Inny kod jest klasyfikowana jako **MyCode**.  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> Zachowanie przechodzenia krok po kroku  
   
@@ -234,30 +234,30 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
 ###  <a name="BKMK_JS_Exception_behavior"></a> Zachowanie wyjątku  
  Jeśli wystąpi nieobsługiwany wyjątek w:  
   
--   **MyCode** lub **LibraryCode** kod, debuger zawsze przerywa pracę.  
+- **MyCode** lub **LibraryCode** kod, debuger zawsze przerywa pracę.  
   
--   **UnrelatedCode** kodu, i **MyCode** lub **LibraryCode** kod znajduje się na stos wywołań, podziały debugera.  
+- **UnrelatedCode** kodu, i **MyCode** lub **LibraryCode** kod znajduje się na stos wywołań, podziały debugera.  
   
- Jeśli pierwszej szansy wyjątki są włączone dla wyjątku w oknie dialogowym Wyjątki, a wyjątek jest zgłaszany w **LibraryCode** lub **UnrelatedCode** kodu:  
+  Jeśli pierwszej szansy wyjątki są włączone dla wyjątku w oknie dialogowym Wyjątki, a wyjątek jest zgłaszany w **LibraryCode** lub **UnrelatedCode** kodu:  
   
--   Jeśli wyjątek jest obsługiwany, debuger nie zostanie przerwane.  
+- Jeśli wyjątek jest obsługiwany, debuger nie zostanie przerwane.  
   
--   Jeśli wyjątek nie jest obsługiwany, debuger przerywa.  
+- Jeśli wyjątek nie jest obsługiwany, debuger przerywa.  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Dostosowywanie tylko mój kod  
  Kategoryzowanie, użytkownika i kod niezwiązany z użytkownikiem dla pojedynczego projektu programu Visual Studio, należy dodać plik JSON o nazwie `mycode.json` do folderu głównego projektu.  
   
  Klasyfikacje są wykonywane w następującej kolejności:  
   
-1.  Domyślne klasyfikacje  
+1. Domyślne klasyfikacje  
   
-2.  Klasyfikacje w `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` pliku  
+2. Klasyfikacje w `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` pliku  
   
-3.  Klasyfikacje w `mycode. json` pliku bieżącego projektu.  
+3. Klasyfikacje w `mycode. json` pliku bieżącego projektu.  
   
- Każdy krok klasyfikacji zastąpienia poprzednich kroków. Plik JSON nie konieczne utworzenie listy wszystkich pary klucz-wartość, a **MyCode**, **bibliotek**, i **Unrelated** wartości mogą być puste tablic.  
+   Każdy krok klasyfikacji zastąpienia poprzednich kroków. Plik JSON nie konieczne utworzenie listy wszystkich pary klucz-wartość, a **MyCode**, **bibliotek**, i **Unrelated** wartości mogą być puste tablic.  
   
- Pliki kodu JSON, użyj następującej składni:  
+   Pliki kodu JSON, użyj następującej składni:  
   
 ```json  
 {  
@@ -295,15 +295,15 @@ Deweloperzy korzystający z języków .NET Framework znają tylko mój kod funkc
   
  Możesz zmienić wartość, do jednego z tych słów kluczowych:  
   
--   `MyCode`  klasyfikuje skryptu jako **MyCode**.  
+- `MyCode`  klasyfikuje skryptu jako **MyCode**.  
   
--   `Library`  klasyfikuje skryptu jako **LibraryCode**.  
+- `Library`  klasyfikuje skryptu jako **LibraryCode**.  
   
--   `Unrelated`  klasyfikuje skryptu jako **UnrelatedCode**.  
+- `Unrelated`  klasyfikuje skryptu jako **UnrelatedCode**.  
   
- **MyCode, biblioteki i niepowiązanych**  
+  **MyCode, biblioteki i niepowiązanych**  
   
- **MyCode**, **bibliotek**, i **Unrelated** pary klucz-wartość Określ adresy URL lub pliki, które mają zostać uwzględnione w klasyfikacji:  
+  **MyCode**, **bibliotek**, i **Unrelated** pary klucz-wartość Określ adresy URL lub pliki, które mają zostać uwzględnione w klasyfikacji:  
   
 |||  
 |-|-|  

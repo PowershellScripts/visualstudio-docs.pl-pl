@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9925f874f2d9dfc06b56d58a20ce9248624dbc31
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 25138eb6c9f7616f68841a45fcd1001ccd3dc84f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481713"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826326"
 ---
 # <a name="how-to-display-process-properties"></a>Porady: wyświetlanie właściwości procesu
-Aby dowiedzieć się więcej na temat procesu na liście [widok procesy](../debugger/processes-view.md), użyj [okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md).  
+Aby dowiedzieć się więcej na temat procesu, na liście [widok procesy](../debugger/processes-view.md), użyj [okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md).  
   
 ### <a name="to-open-a-process-properties-dialog-box"></a>Aby otworzyć okno dialogowe właściwości procesu  
   
-1.  Wybierz proces z drzewa wyświetlane w **widok procesów**.  
+1. Wybierz proces z poziomu drzewa wyświetlany w **widok procesów**.  
   
-2.  Z **widoku** menu, wybierz **właściwości**.  
+2. Z **widoku** menu, wybierz **właściwości**.  
   
- Okno dialogowe właściwości nie są modalne, dzięki czemu możesz kliknąć innym elementem w okno widoku i zostanie wyświetlone okno dialogowe informacje wybranego elementu.
+   Okno dialogowe właściwości nie są modalne, dzięki czemu możesz kliknąć inny element w oknie Widok i zostanie wyświetlone okno dialogowe informacje wybranego elementu.

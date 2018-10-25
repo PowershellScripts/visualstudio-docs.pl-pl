@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_bitPosition | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_bitposition — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 406cfd6c94af4d9dbd3f66b7321241f906e80648
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bba39752470cf9f282245cbece7f260558b8b21d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464183"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838478"
 ---
 # <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
-Pobiera Pozycja bitu lokalizacji. Używane podczas [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) jest `LocIsBitField`.  
+Pobiera Pozycja bitu lokalizacji. Używany podczas [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) jest `LocIsBitField`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,10 +37,10 @@ HRESULT get_bitPosition (
  [out] Zwraca pozycję bit lokalizacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   
@@ -51,4 +51,4 @@ HRESULT get_bitPosition (
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [Locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md)
+ [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)

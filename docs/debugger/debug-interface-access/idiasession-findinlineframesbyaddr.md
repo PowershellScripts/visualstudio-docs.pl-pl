@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7696b73e9a6d84eff3aae7b3f0cbf393c1b935bd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 237fdb31b223db1434ec4a2c936ed956e8e339d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469012"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899178"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
-Pobiera wyliczenie umożliwia klientowi iterację wszystkie ramki wbudowane w podanym adresem.  
+Pobiera wyliczenie, które umożliwia klientowi wykonać iterację przez wszystkie ramki wbudowane danego adresu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,10 +43,10 @@ HRESULT findInlineFramesByAddr (
  [in] Określa przesunięcie składnik adresu.  
   
  `ppResult`  
- [out] Przechowuje `IDiaEnumSymbols` obiekt, który zawiera listę ramek, które są pobierane.  
+ [out] Przechowuje `IDiaEnumSymbols` obiektu, który zawiera listę ramek, które są pobierane.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   

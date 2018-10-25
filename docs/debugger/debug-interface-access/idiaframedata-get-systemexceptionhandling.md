@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::get_systemExceptionHandling | Dokumentacja firmy Microsoft
+title: Idiaframedata::get_systemexceptionhandling — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 218cc1c9bc9b031621df1d6a3722d698f82999e1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 889f2cf72d27b84cff86792f7b0ba3a43d63d09e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882733"
 ---
 # <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
-Pobiera flagę wskazującą, czy system obsługi wyjątków jest włączona.  
+Pobiera flagę wskazującą, czy system obsługi wyjątków jest aktywna.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,15 +34,15 @@ HRESULT get_systemExceptionHandling (
   
 #### <a name="parameters"></a>Parametry  
  pRetVal  
- [out] Zwraca `TRUE` Jeśli system obsługi wyjątków jest obowiązująca; w przeciwnym razie zwraca `FALSE`.  
+ [out] Zwraca `TRUE` w przypadku obsługi wyjątków systemu obowiązuje; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Obsługa wyjątków strukturalnych najczęściej nazywa system obsługi wyjątków.  
+ Obsługa wyjątków system jest bardziej znany jako strukturalna Obsługa wyjątków.  
   
- Aby ustalić, czy C++, obsługa wyjątków jest włączona, należy wywołać [IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) metody.  
+ Aby określić, jeśli obsługa wyjątków języka C++ jest aktywna, należy wywołać [idiaframedata::get_cplusplusexceptionhandling —](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md)   

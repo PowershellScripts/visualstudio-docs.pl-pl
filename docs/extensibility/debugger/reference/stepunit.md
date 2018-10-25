@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 993c92d457baa2008387aad2bc6749ce7ad9387b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a88cb7126166462e64680938eb5f1b0d456a75f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901115"
 ---
 # <a name="stepunit"></a>STEPUNIT
-Określa jednostki kroku wykonywanie krok po kroku.  
+Określa jednostki kroku przechodzenie krok po kroku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,16 +46,16 @@ enum enum_STEPUNIT {
   
 ## <a name="members"></a>Elementy członkowskie  
  STEP_STATEMENT  
- Kroki przez instrukcję.  
+ Przeprowadza użytkownika przez instrukcję.  
   
  STEP_LINE  
- Kroki za pomocą wiersza.  
+ Kroki po wierszu.  
   
  STEP_INSTRUCTION  
- Kroki według instrukcji.  
+ Przeprowadza użytkownika przez instrukcję.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako argument [krok](../../../extensibility/debugger/reference/idebugprocess3-step.md) metody.  
+ Przekazywany jako argument do [kroku](../../../extensibility/debugger/reference/idebugprocess3-step.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -66,4 +66,4 @@ enum enum_STEPUNIT {
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Krok](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+ [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

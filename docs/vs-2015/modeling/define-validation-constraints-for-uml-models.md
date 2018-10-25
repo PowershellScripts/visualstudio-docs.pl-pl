@@ -14,12 +14,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: da21c3b8646ef69432259e4430b940824ad05dd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176543"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920669"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definiowanie ograniczeń walidacji dla modeli UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,24 +51,24 @@ Można zdefiniować ograniczenia sprawdzania poprawności, które sprawdzić, cz
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Aby utworzyć rozszerzenie sprawdzania poprawności w jego własnym VSIX  
   
-1.  W **nowy projekt** dialogowego **projekty modelowania**, wybierz opcję **rozszerzenie sprawdzania poprawności**.  
+1. W **nowy projekt** dialogowego **projekty modelowania**, wybierz opcję **rozszerzenie sprawdzania poprawności**.  
   
-2.  Otwórz **.cs** plik w nowym projekcie i Modyfikuj klasę, aby wdrożyć swoje ograniczenia sprawdzania poprawności.  
+2. Otwórz **.cs** plik w nowym projekcie i Modyfikuj klasę, aby wdrożyć swoje ograniczenia sprawdzania poprawności.  
   
-     Aby uzyskać więcej informacji, zobacz [oceny ograniczenie sprawdzania poprawności](#Implementing).  
+    Aby uzyskać więcej informacji, zobacz [oceny ograniczenie sprawdzania poprawności](#Implementing).  
   
-    > [!IMPORTANT]
-    >  Upewnij się, że Twoje **.cs** pliki zawierają następujące `using` instrukcji:  
-    >   
-    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
+   > [!IMPORTANT]
+   >  Upewnij się, że Twoje **.cs** pliki zawierają następujące `using` instrukcji:  
+   >   
+   >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
-3.  Możesz dodać dodatkowe ograniczenia definiując nowe metody. Aby określić metodę jako metodę sprawdzania poprawności, jego muszą być oznakowane za pomocą atrybutów w taki sam sposób, jak metoda wstępnego sprawdzania poprawności.  
+3. Możesz dodać dodatkowe ograniczenia definiując nowe metody. Aby określić metodę jako metodę sprawdzania poprawności, jego muszą być oznakowane za pomocą atrybutów w taki sam sposób, jak metoda wstępnego sprawdzania poprawności.  
   
-4.  Przetestuj swoje ograniczenia, naciskając klawisz F5. Aby uzyskać więcej informacji, zobacz [wykonywanie ograniczenia sprawdzania poprawności](#Executing).  
+4. Przetestuj swoje ograniczenia, naciskając klawisz F5. Aby uzyskać więcej informacji, zobacz [wykonywanie ograniczenia sprawdzania poprawności](#Executing).  
   
-5.  Zainstaluj polecenie menu na innym komputerze przez skopiowanie pliku **bin\\\*\\\*.vsix** utworzonego w projekcie. Aby uzyskać więcej informacji, zobacz [Instalowanie i odinstalowywanie rozszerzenia](#Installing).  
+5. Zainstaluj polecenie menu na innym komputerze przez skopiowanie pliku **bin\\\*\\\*.vsix** utworzonego w projekcie. Aby uzyskać więcej informacji, zobacz [Instalowanie i odinstalowywanie rozszerzenia](#Installing).  
   
- Po dodaniu innych **.cs** plików, będzie zwykle wymagają następującej `using` instrukcji:  
+   Po dodaniu innych **.cs** plików, będzie zwykle wymagają następującej `using` instrukcji:  
   
 ```csharp  
 using System.Collections.Generic;  
@@ -272,13 +272,13 @@ public void ValidateSomething
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
--   `"error string"` pojawia się w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lista błędów  
+- `"error string"` pojawia się w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lista błędów  
   
--   `errorCode` jest ciągiem, który powinien być unikatowy identyfikator tego błędu  
+- `errorCode` jest ciągiem, który powinien być unikatowy identyfikator tego błędu  
   
--   `elementsWithError` identyfikuje elementy w modelu. Gdy użytkownik kliknie dwukrotnie raport o błędach, zostanie wybrany kształt reprezentujący ten element.  
+- `elementsWithError` identyfikuje elementy w modelu. Gdy użytkownik kliknie dwukrotnie raport o błędach, zostanie wybrany kształt reprezentujący ten element.  
   
- `LogError(),` `LogWarning()` i `LogMessage()` umieszczają wiadomości w różnych sekcjach listy błędów.  
+  `LogError(),` `LogWarning()` i `LogMessage()` umieszczają wiadomości w różnych sekcjach listy błędów.  
   
 ## <a name="how-validation-methods-are-applied"></a>Jak są stosowane metody sprawdzania poprawności  
  Sprawdzanie poprawności jest stosowana do każdego elementu w modelu, w tym relacji i części większych elementy, takie jak atrybuty klasy i parametry operacji.  
@@ -389,15 +389,15 @@ context.LogError(... , usecase);
   
 #### <a name="to-uninstall-an-extension"></a>Aby odinstalować rozszerzenie  
   
-1.  Na **narzędzia** menu, wybierz **rozszerzenia i aktualizacje**.  
+1. Na **narzędzia** menu, wybierz **rozszerzenia i aktualizacje**.  
   
-2.  Rozwiń **zainstalowanych rozszerzeń**.  
+2. Rozwiń **zainstalowanych rozszerzeń**.  
   
-3.  Zaznacz rozszerzenie, a następnie wybierz **Odinstaluj**.  
+3. Zaznacz rozszerzenie, a następnie wybierz **Odinstaluj**.  
   
- Rzadko wadliwe rozszerzenie nie ładuje się i tworzy raport w oknie błędów, ale nie są wyświetlane w Menedżerze rozszerzeń. W takim przypadku można usunąć rozszerzenie poprzez usunięcie pliku z następującej lokalizacji gdzie *% LocalAppData %* jest zazwyczaj *DriveName*: \Users\\*nazwyużytkownika*\AppData\Local:  
+   Rzadko wadliwe rozszerzenie nie ładuje się i tworzy raport w oknie błędów, ale nie są wyświetlane w Menedżerze rozszerzeń. W takim przypadku można usunąć rozszerzenie poprzez usunięcie pliku z następującej lokalizacji gdzie *% LocalAppData %* jest zazwyczaj *DriveName*: \Users\\*nazwyużytkownika*\AppData\Local:  
   
- *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [wersja]**  
+   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [wersja]**  
   
 ##  <a name="Example"></a> Przykład  
  W tym przykładzie wyszukuje pętli w relacji zależności między elementami.  

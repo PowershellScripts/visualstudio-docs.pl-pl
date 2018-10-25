@@ -23,30 +23,30 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f14358307c2c95e1b796695a0253a520ea00e3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8354c850d1f55d229ce3f1205ca0bf0fe5f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249434"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837077"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Porady: korzystanie z okna czujki równoległej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W oknie czujki równoległej może jednocześnie wyświetlać wartości, które zawiera jedno wyrażenie, w wielu wątkach. Każdy wiersz reprezentuje wątek, który jest uruchomiony w aplikacji, ale wątek może być reprezentowany w wielu wierszach. Dokładniej mówiąc każdy wiersz reprezentuje wywołanie funkcji, w których funkcja Podpis pasuje do funkcji w bieżącej ramki stosu. Można sortować, zmienić kolejność, Usuń i grupować elementy, które w kolumnach. Możesz Flaga, Usuń flagę, blokowanie (zawieszenie) i Odblokuj wątki (Wznów). Następujące kolumny są wyświetlane w **równoległego wyrażenia kontrolnego** okna:  
   
--   Kolumna flagi, w którym można oznaczyć wątek, który chcesz zwrócić szczególną uwagę.  
+- Kolumna flagi, w którym można oznaczyć wątek, który chcesz zwrócić szczególną uwagę.  
   
--   Kolumna ramki, w której Strzałka wskazuje wybraną ramkę.  
+- Kolumna ramki, w której Strzałka wskazuje wybraną ramkę.  
   
--   Konfigurowalna kolumna, która może wyświetlać maszynę, proces, kafelków, zadania i wątku.  
+- Konfigurowalna kolumna, która może wyświetlać maszynę, proces, kafelków, zadania i wątku.  
   
-    > [!TIP]
-    >  Należy otworzyć **zadanie równoległe** okno, aby wyświetlić informacje o zadaniu w **równoległego wyrażenia kontrolnego** okna.  
+  > [!TIP]
+  >  Należy otworzyć **zadanie równoległe** okno, aby wyświetlić informacje o zadaniu w **równoległego wyrażenia kontrolnego** okna.  
   
--   **\<Dodaj wyrażenie kontrolne >** kolumny, w którym należy wprowadzić wyrażenia, aby obejrzeć.  
+- **\<Dodaj wyrażenie kontrolne >** kolumny, w którym należy wprowadzić wyrażenia, aby obejrzeć.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>Aby wyświetlić okno czujki równoległej  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: d0732cc08c679bd3eab973632164d366efe87b3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 13db7f4e4f1676f46a8b0170ffeadd5cd9eb31b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203869"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817447"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalowanie języka Visual C++ dla opracowywania aplikacji mobilnych na wiele platform
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,18 +37,18 @@ Visual C++ for Cross-Platform Mobile Development] (http://go.microsoft.com/fwlin
   
 ##  <a name="Requirements"></a> Wymagania  
   
--   Aby uzyskać wymagania dotyczące instalacji, zobacz [wymagania systemowe programu Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
+- Aby uzyskać wymagania dotyczące instalacji, zobacz [wymagania systemowe programu Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
-    > [!IMPORTANT]
-    >  Jeśli używasz, Windows 7 lub Windows Server 2008 R2, możesz tworzyć kod dla aplikacji klasycznych Windows i aplikacji Android Native Activity i bibliotek, aplikacji i bibliotek kodu dla systemu iOS, ale nie aplikacje Windows Store lub Universal Windows.  
+  > [!IMPORTANT]
+  >  Jeśli używasz, Windows 7 lub Windows Server 2008 R2, możesz tworzyć kod dla aplikacji klasycznych Windows i aplikacji Android Native Activity i bibliotek, aplikacji i bibliotek kodu dla systemu iOS, ale nie aplikacje Windows Store lub Universal Windows.  
   
- Aby tworzyć aplikacje dla konkretnych platform sprzętowych, istnieją pewne dodatkowe wymagania:  
+  Aby tworzyć aplikacje dla konkretnych platform sprzętowych, istnieją pewne dodatkowe wymagania:  
   
--   Emulatory Windows Phone i Microsoft Visual Studio Emulator for Android wymagają komputera, która może działać na funkcji Hyper-V. Musi być włączona funkcja Hyper-V w Windows, zanim można instalować i uruchamiać emulatorów. Aby uzyskać więcej informacji, zobacz emulatora usługi [wymagania systemowe](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf).  
+- Emulatory Windows Phone i Microsoft Visual Studio Emulator for Android wymagają komputera, która może działać na funkcji Hyper-V. Musi być włączona funkcja Hyper-V w Windows, zanim można instalować i uruchamiać emulatorów. Aby uzyskać więcej informacji, zobacz emulatora usługi [wymagania systemowe](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf).  
   
--   X86 emulatorów systemu Android, które pochodzą z zestawu SDK systemu Android działają najlepiej na komputerach, które można uruchomić sterownika Intel HAXM. Ten sterownik wymaga procesora Intel x64 z obsługą Bit wykonania wyłączyć i VT-x. Aby uzyskać więcej informacji, zobacz [instrukcje dotyczące instalacji dla Intel® sprzętu Accelerated menedżera wykonywania — Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
+- X86 emulatorów systemu Android, które pochodzą z zestawu SDK systemu Android działają najlepiej na komputerach, które można uruchomić sterownika Intel HAXM. Ten sterownik wymaga procesora Intel x64 z obsługą Bit wykonania wyłączyć i VT-x. Aby uzyskać więcej informacji, zobacz [instrukcje dotyczące instalacji dla Intel® sprzętu Accelerated menedżera wykonywania — Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385).  
   
--   Tworzenie kodu dla systemu iOS wymaga identyfikatora Apple ID, konta dewelopera programu z systemem iOS i komputera Mac, która może działać [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) lub później na OS X mavericks z przeglądarką lub nowszy. Instalacja prosta kroki opisane w artykule [instalowania narzędzi dla systemu iOS](#InstallForiOS).  
+- Tworzenie kodu dla systemu iOS wymaga identyfikatora Apple ID, konta dewelopera programu z systemem iOS i komputera Mac, która może działać [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) lub później na OS X mavericks z przeglądarką lub nowszy. Instalacja prosta kroki opisane w artykule [instalowania narzędzi dla systemu iOS](#InstallForiOS).  
   
 ##  <a name="GetTheTools"></a> Pobierz narzędzia  
  W języku Visual C++ Cross-Platform Mobile Development jest składnika do zainstalowania, dostępna w wersjach programu Visual Studio Community, Professional i Enterprise. Aby uzyskać program Visual Studio, przejdź do [pobieranie Visual Studio 2015](http://go.microsoft.com/fwlink/p/?linkid=517106) strony i Pobierz program Visual Studio 2015 z aktualizacją Update 2 lub nowszym.  
@@ -101,31 +101,31 @@ Visual C++ for Cross-Platform Mobile Development] (http://go.microsoft.com/fwlin
   
  Przeczytaj poniższe informacje, a następnie użyj poniższych linków, aby ręcznie zainstalować zależności.  
   
--   [Java SE Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
+- [Java SE Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
   
-     Domyślnie Instalator narzędzia Java stosuje w przypadku \Java C:\Program Files (x86).  
+   Domyślnie Instalator narzędzia Java stosuje w przypadku \Java C:\Program Files (x86).  
   
--   [Zestaw SDK systemu android](https://developer.android.com/sdk/index.html#Other)  
+- [Zestaw SDK systemu android](https://developer.android.com/sdk/index.html#Other)  
   
-     Podczas instalacji należy zaktualizować interfejsów API, zgodnie z zaleceniami. Upewnij się, że co najmniej zainstalowano zestaw SDK dla systemu Android 5.0 Lollipop (poziom 21 interfejsu API). Domyślnie Instalator zestawu Android SDK stosuje w przypadku C:\Program Files (x86) \Android\android-sdk.  
+   Podczas instalacji należy zaktualizować interfejsów API, zgodnie z zaleceniami. Upewnij się, że co najmniej zainstalowano zestaw SDK dla systemu Android 5.0 Lollipop (poziom 21 interfejsu API). Domyślnie Instalator zestawu Android SDK stosuje w przypadku C:\Program Files (x86) \Android\android-sdk.  
   
-     Możesz uruchomić aplikację Menedżer zestawów SDK, w katalogu zestawu SDK systemu Android ponownie, aby zaktualizować zestaw SDK i zainstaluj opcjonalnych narzędzi oraz dodatkowe poziomy interfejsu API. Aktualizacji może zakończyć się niepowodzeniem do zainstalowania, chyba że używasz **Uruchom jako administrator** do uruchomienia aplikacji Menedżer zestawów SDK. Jeśli masz problemy z tworzenia aplikacji systemu Android, sprawdź Menedżer zestawów SDK, aktualizacje usługi zainstalowanych zestawów SDK.  
+   Możesz uruchomić aplikację Menedżer zestawów SDK, w katalogu zestawu SDK systemu Android ponownie, aby zaktualizować zestaw SDK i zainstaluj opcjonalnych narzędzi oraz dodatkowe poziomy interfejsu API. Aktualizacji może zakończyć się niepowodzeniem do zainstalowania, chyba że używasz **Uruchom jako administrator** do uruchomienia aplikacji Menedżer zestawów SDK. Jeśli masz problemy z tworzenia aplikacji systemu Android, sprawdź Menedżer zestawów SDK, aktualizacje usługi zainstalowanych zestawów SDK.  
   
-     Aby korzystać z niektórych z emulatorami systemu Android, które pochodzą z zestawu SDK systemu Android, należy zainstalować opcjonalne sterowniki Intel HAXM. Może być konieczne usuwania funkcji Hyper-V Windows do pomyślnego zainstalowania sterowników Intel HAXM. Należy przywrócić emulatory Windows Phone i Microsoft Visual Studio Emulator for Android używać funkcji Hyper-V.  
+   Aby korzystać z niektórych z emulatorami systemu Android, które pochodzą z zestawu SDK systemu Android, należy zainstalować opcjonalne sterowniki Intel HAXM. Może być konieczne usuwania funkcji Hyper-V Windows do pomyślnego zainstalowania sterowników Intel HAXM. Należy przywrócić emulatory Windows Phone i Microsoft Visual Studio Emulator for Android używać funkcji Hyper-V.  
   
--   [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
+- [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
   
-     Domyślnie Instalator umieszcza zestawu Android NDK w C:\ProgramData\Microsoft\AndroidNDK. Można pobrać i zainstalować zestawu Android NDK ponownie, aby zaktualizować instalację zestawu NDK.  
+   Domyślnie Instalator umieszcza zestawu Android NDK w C:\ProgramData\Microsoft\AndroidNDK. Można pobrać i zainstalować zestawu Android NDK ponownie, aby zaktualizować instalację zestawu NDK.  
   
--   [Apache Ant](http://ant.apache.org/bindownload.cgi)  
+- [Apache Ant](http://ant.apache.org/bindownload.cgi)  
   
-     Domyślnie Instalator umieszcza Apache Ant w C:\Program Files (x86) \Microsoft 14.0\Apps programu Visual Studio.  
+   Domyślnie Instalator umieszcza Apache Ant w C:\Program Files (x86) \Microsoft 14.0\Apps programu Visual Studio.  
   
--   [Microsoft Visual Studio Emulator for Android](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
+- [Microsoft Visual Studio Emulator for Android](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
   
-     Można zainstalować i zaktualizować programu Microsoft Visual Studio Emulator for Android z galerii Visual Studio.  
+   Można zainstalować i zaktualizować programu Microsoft Visual Studio Emulator for Android z galerii Visual Studio.  
   
- W większości przypadków Visual Studio może wykrywać konfiguracje dla oprogramowania innych firm, zainstalowanych i utrzymuje ścieżek instalacji w zmiennych środowiskowych wewnętrznego. Można zastąpić domyślne ścieżki tych narzędzi programowanie dla wielu platform w środowisku IDE programu Visual Studio.  
+  W większości przypadków Visual Studio może wykrywać konfiguracje dla oprogramowania innych firm, zainstalowanych i utrzymuje ścieżek instalacji w zmiennych środowiskowych wewnętrznego. Można zastąpić domyślne ścieżki tych narzędzi programowanie dla wielu platform w środowisku IDE programu Visual Studio.  
   
 #### <a name="to-set-the-paths-for-third-party-tools"></a>Można ustawić ścieżki do narzędzi innych firm  
   

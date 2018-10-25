@@ -22,25 +22,25 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6b036fdd9f75afc0c9976591ae0df23194b196d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 223e060083554169ab6ffdb95faf4979e9466d02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268908"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825624"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Porada: Znajdowanie nazwy procesu ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby dołączyć do uruchomionej [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji, musisz znać nazwę [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu:  
   
--   Jeśli korzystasz z usług IIS 6.0 i IIS 7.0, nazwa jest w3wp.exe.  
+- Jeśli korzystasz z usług IIS 6.0 i IIS 7.0, nazwa jest w3wp.exe.  
   
--   Jeśli używasz starszej wersji programu IIS, nazwa jest aspnet_wp.exe.  
+- Jeśli używasz starszej wersji programu IIS, nazwa jest aspnet_wp.exe.  
   
- Dla aplikacji skompilowanych za pomocą [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] lub nowsze wersje [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kod może znajdować się w systemie plików i działała z serwera testowego WebDev.WebServer.exe. W takim przypadku należy dołączyć do WebDev.WebServer.exe zamiast [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu. Ten scenariusz dotyczy tylko debugowania lokalnego.  
+  Dla aplikacji skompilowanych za pomocą [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)] lub nowsze wersje [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] kod może znajdować się w systemie plików i działała z serwera testowego WebDev.WebServer.exe. W takim przypadku należy dołączyć do WebDev.WebServer.exe zamiast [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] procesu. Ten scenariusz dotyczy tylko debugowania lokalnego.  
   
- Starsze aplikacje ASP uruchamiane wewnątrz inetinfo.exe proces usług IIS, gdy są uruchomione w procesie.  
+  Starsze aplikacje ASP uruchamiane wewnątrz inetinfo.exe proces usług IIS, gdy są uruchomione w procesie.  
   
 > [!NOTE]
 >  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

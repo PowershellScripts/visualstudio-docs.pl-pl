@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0445ad1cb92e2206a3e37e76a6f55c9a42ca1558
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f3694c23f52a1c34cd99d8391b14cc92ac939813
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282370"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903676"
 ---
 # <a name="how-to-stop-code-changes"></a>Porady: zatrzymywanie zmian kodu
 Gdy Edytuj i Kontynuuj Trwa stosowanie zmian kodu, można zatrzymać operacji.  
@@ -34,11 +34,11 @@ Gdy Edytuj i Kontynuuj Trwa stosowanie zmian kodu, można zatrzymać operacji.
   
 ### <a name="to-stop-applying-code-changes"></a>Aby zatrzymać stosowanie zmian kodu  
   
--   Wybierz **Zatrzymaj stosowanie zmian kodu** z **debugowania** menu.  
+- Wybierz **Zatrzymaj stosowanie zmian kodu** z **debugowania** menu.  
   
- Ten element menu jest widoczny tylko wtedy, gdy zmiany kodu są stosowane.  
+  Ten element menu jest widoczny tylko wtedy, gdy zmiany kodu są stosowane.  
   
- Jeśli ta opcja jest wybrana, żadne zmiany kodu są zatwierdzone.  
+  Jeśli ta opcja jest wybrana, żadne zmiany kodu są zatwierdzone.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytuj i Kontynuuj](../debugger/edit-and-continue.md)   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0452f6bbee3232c757c2a5483d9c08fca220ad01
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 14726d5338830eb4044d22778d886241cfd0cd83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636763"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921135"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>PROJECTTYPE — element (szablony Visual Studio)
 Klasyfikuje szablon projektu, tak aby była wyświetlana w ramach określonej grupy w **nowy projekt** lub **Dodaj nowy element** okno dialogowe.  
@@ -58,11 +58,11 @@ Klasyfikuje szablon projektu, tak aby była wyświetlana w ramach określonej gr
   
  Ta wartość określa typ projektu szablonu zostanie utworzona i musi zawierać jeden z następujących wartości:  
   
--   `CSharp`: Określa, że ten szablon tworzy [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektu lub elementu.  
+- `CSharp`: Określa, że ten szablon tworzy [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektu lub elementu.  
   
--   `VisualBasic`: Określa, że ten szablon tworzy [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu lub elementu.  
+- `VisualBasic`: Określa, że ten szablon tworzy [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu lub elementu.  
   
--   `Web`: Określa, że ten szablon tworzy projekt sieci Web lub elementu. Jeśli `ProjectType` element zawiera tę wartość, język projektu lub elementu jest zdefiniowany w [projectsubtype — Element (szablony Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
+- `Web`: Określa, że ten szablon tworzy projekt sieci Web lub elementu. Jeśli `ProjectType` element zawiera tę wartość, język projektu lub elementu jest zdefiniowany w [projectsubtype — Element (szablony Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
   
 ## <a name="remarks"></a>Uwagi  
  `ProjectType` jest wymaganym elementem podrzędnym elementu `TemplateData`.  

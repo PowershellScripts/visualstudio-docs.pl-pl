@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 63c33b98244268a086e9db63e2b56e507471c4c3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 418c0aa6660b01896252d04a711d4069da389f00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382836"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914492"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Korzystanie z kontrolek HTML5 w kodowanych testach interfejsu użytkownika
 
@@ -38,7 +38,7 @@ Kodowane testy interfejsu użytkownika obsługują niektóre formanty języka HT
  ![Dźwięk HTML5 kontroli](../test/media/codedui_html5_audio.png)
 
 |Akcja|Rejestrowanie|Wygenerowany kod|
-|------------|---------------|--------------------|
+|-|---------------|-|
 |**Odtwórz dźwięk**<br /><br /> Bezpośrednio z kontroli lub z menu kontekstowego kontrolki.|Odtwórz \<name > Audio z zakresu od 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Starać się w określonym czasie które usłyszysz**|Wyszukiwanie \<name > Audio do 00:01:48|HtmlAudio.Seek(TimeSpan)|
 |**Wstrzymaj audio**<br /><br /> Bezpośrednio z kontroli lub z menu kontekstowego kontrolki.|Wstrzymaj \<name > Audio na 00:01:53|HtmlAudio.Pause(TimeSpan)|
@@ -62,7 +62,7 @@ Zobacz [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEl
  ![Kontrolki wideo HTML5](../test/media/codedui_html5_video.png)
 
 |Akcja|Rejestrowanie|Wygenerowany kod|
-|------------|---------------|--------------------|
+|-|---------------|-|
 |**Odtwórz wideo**<br /><br /> Bezpośrednio z kontroli lub z menu kontekstowego kontrolki.|Odtwórz \<name > wideo z zakresu od 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Starać się w określonym czasie, w trakcie filmu wideo**|Wyszukiwanie \<name > film, aby 00:01:48|HtmlVideo.Seek(TimeSpan)|
 |**Wstrzymaj wideo**<br /><br /> Bezpośrednio z kontroli lub z menu kontekstowego kontrolki.|Wstrzymaj \<name > wideo o 00:01:53|HtmlVideo.Pause(TimeSpan)|

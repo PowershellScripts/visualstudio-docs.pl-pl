@@ -1,5 +1,5 @@
 ---
-title: 'Projektant przepływu pracy — porady: Użyj projektanta importów'
+title: 'Projektant przepływu pracy — porady: Używanie projektanta importów'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -12,37 +12,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d50267ca8899343d2b704aa28beabc07ed432936
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e26dafe6d8d7e455d1977f82f96f776185a5fdb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755865"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845268"
 ---
-# <a name="how-to-use-the-imports-designer"></a>Porady: Użyj projektanta importów
+# <a name="how-to-use-the-imports-designer"></a>Porady: Używanie projektanta importów
 
-Projektanta importów umożliwia wprowadzanie przestrzeni nazw dla typów, które będą używane w wyrażeniach utworzonych przez użytkownika. Podobnie jak **importuje** lub **przy użyciu** słów kluczowych w języku Visual Basic i C#, określenie obszarów nazw w projektanta importów umożliwiają wystarczy wprowadzić w wyrażeniu a nie w pełni kwalifikowaną nazwę typu Nazwa typu wersji.
+Projektanta importów umożliwia wprowadzanie przestrzeni nazw dla typów, które będą używane w wyrażenia. Podobnie jak **importuje** lub **przy użyciu** słów kluczowych w języku Visual Basic i C#, określając przestrzeniach nazw projektanta importów umożliwiają wystarczy wprowadzić nazwę typu w wyrażeniu, a nie w pełni Wersja kwalifikowana nazwa typu.
 
-Projektanta importów reaguje na zmiany w interfejsie użytkownika i zmian wprowadzonych po zapisaniu przepływ pracy. Po zapisaniu przepływu pracy przestrzeni nazw można automatycznie dodawane do projektanta importów. Należą do nich między innymi:
+Projektanta importów reaguje na zmiany w interfejsie użytkownika i zmian wprowadzonych po zapisaniu przepływu pracy. Po zapisaniu przepływu pracy, przestrzenie nazw mogą być dodawane automatycznie do projektanta importów. Należą do nich między innymi:
 
--   Przestrzenie nazw dla wszystkich typów, używany w deklaracji zmiennej i argument.
+- Przestrzenie nazw wszystkie typy używane w deklaracji zmiennej i argument.
 
--   Przestrzenie nazw dla wszystkich typów używane w wyrażeniach.
+- Przestrzenie nazw wszystkie typy używane w wyrażeniach.
 
--   Wszystkie inne obszary nazw wymagane dla serializacji przepływu pracy (na przykład przestrzenie nazw używane przez niestandardowe działania w przepływie pracy).
+- Wszystkie inne obszary nazw wymagane dla serializacji przepływu pracy (na przykład, przestrzeń nazw używaną przez niestandardowe działania w przepływie pracy).
 
- Po zapisaniu przepływu pracy można zauważyć pewne przestrzeni nazw ręcznie usuwać są automatycznie ponownie dodać do projektanta importów z powodu logiki opisane w powyższej listy.
+  Po zapisaniu przepływu pracy może się okazać, że niektóre przestrzenie nazw, który został ręcznie usunięty są automatycznie ponownie dodać do projektanta importów z powodu logiki opisane na powyższej liście.
 
-## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Aby dodać przestrzeni nazw na liście importowane przestrzenie nazw
+## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Aby dodać przestrzeń nazw do listy importowanych przestrzeni nazw
 
-1.  Otwórz aplikację usługi przepływu pracy WCF, aplikacja konsoli przepływu pracy lub działania projektu biblioteki w programie Visual Studio lub aplikacja rehosted przepływu pracy.
+1.  Otwórz aplikacja usługi przepływu pracy WCF, aplikacja konsoli przepływu pracy lub działania projektu biblioteki w programie Visual Studio lub aplikacji rehostowanym przepływu pracy.
 
-2.  Kliknij przycisk **importów** w dolnej części obszaru głównego. Projektanta importów będą wyświetlane.
+2.  Kliknij przycisk **Importy** w dolnej części kanwy głównego. Pojawi się okno projektanta importów.
 
-3.  Wprowadź lub wybierz z listy rozwijanej formantu w górnej części projektanta importów przestrzeni nazw.
+3.  Wprowadź lub wybierz przestrzeń nazw z formantu listy rozwijanej w górnej części projektanta importów.
 
-     Podczas wpisywania, zostanie wyświetlona lista prawidłowy przestrzenie nazw, które odpowiada wpisane znaki.
+     Podczas wpisywania, zostanie wyświetlona lista prawidłowe przestrzenie nazw, które dopasowuje znaki wpisane.
 
-4.  Naciśnij klawisz **Enter** do dodania do listy przestrzeni nazw.
+4.  Naciśnij klawisz **Enter** dodać przestrzeń nazw do listy.
 
-5.  Jeśli chcesz usunąć przestrzeń nazw z listy, wybierz obszar nazw, a następnie naciśnij klawisz **usunąć** klucza na klawiaturze. Należy pamiętać, że przestrzeń nazw można usunąć tylko jeśli przestrzeń nazw jest nieprawidłowy z jakiejkolwiek przyczyny, na przykład jeśli zestaw, który zawiera przestrzeń nazw jest już odwołuje się projekt.
+5.  Jeśli chcesz usunąć przestrzeni nazw z listy wybierz przestrzeń nazw, a następnie naciśnij klawisz **Usuń** kluczowe na klawiaturze. Należy pamiętać, że przestrzeń nazw można usunąć tylko jeśli przestrzeń nazw jest nieprawidłowa z jakiejkolwiek przyczyny, na przykład jeśli zestaw, który zawiera przestrzeń nazw nie jest już przywoływany przez projekt.

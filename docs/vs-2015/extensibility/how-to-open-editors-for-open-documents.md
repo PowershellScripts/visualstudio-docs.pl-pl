@@ -15,12 +15,12 @@ ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b1c0cdc94a3aa796c981dbfb83aef3dd3c2ec1a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9dfe3ee16f9e4adf4514ce85057974ef244016b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215998"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870162"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Porady: otwieranie edytorów dla otwartych dokumentów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ Przed projektu powoduje otwarcie okna dokumentów, projektu najpierw należy okr
   
 #### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>Aby otworzyć Edytor specyficzne dla projektu, dla otwartego pliku  
   
-1.  Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> metody.  
+1. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> metody.  
   
-     To wywołanie zwraca wskaźników do hierarchii, element hierarchii i ramki okna dokumentu, jeśli to stosowne.  
+    To wywołanie zwraca wskaźników do hierarchii, element hierarchii i ramki okna dokumentu, jeśli to stosowne.  
   
-2.  Jeśli dokument jest otwarty, projekt musi sprawdzić, czy istnieje tylko obiekt danych dokumentów, czy obiekt widoku dokumentu również znajduje się.  
+2. Jeśli dokument jest otwarty, projekt musi sprawdzić, czy istnieje tylko obiekt danych dokumentów, czy obiekt widoku dokumentu również znajduje się.  
   
-    -   Jeśli istnieje obiekt widoku dokumentu, a ten widok jest w innej hierarchii lub element hierarchii, projekt używa wskaźnik do ramki okna w widoku do resurface istniejące okno.  
+   - Jeśli istnieje obiekt widoku dokumentu, a ten widok jest w innej hierarchii lub element hierarchii, projekt używa wskaźnik do ramki okna w widoku do resurface istniejące okno.  
   
-    -   Jeśli istnieje obiekt widoku dokumentu, a ten widok służy do tej samej hierarchii i element hierarchii, projektu mogą otwierać drugi widok, jeśli można dołączyć do bazowego obiektu danych dokumentu. W przeciwnym razie projektu należy za pomocą wskaźnika do ramki okna widoku resurface istniejące okno.  
+   - Jeśli istnieje obiekt widoku dokumentu, a ten widok służy do tej samej hierarchii i element hierarchii, projektu mogą otwierać drugi widok, jeśli można dołączyć do bazowego obiektu danych dokumentu. W przeciwnym razie projektu należy za pomocą wskaźnika do ramki okna widoku resurface istniejące okno.  
   
-    -   Jeśli istnieje obiekt danych dokumentu, tylko projekt należy określić, czy obiekt danych dokumentu może używać jej widoku. Jeśli obiekt danych dokumentu jest zgodny, pełną kroki omówione w [otwierania Edytora specyficznych dla projektu](../extensibility/how-to-open-project-specific-editors.md).  
+   - Jeśli istnieje obiekt danych dokumentu, tylko projekt należy określić, czy obiekt danych dokumentu może używać jej widoku. Jeśli obiekt danych dokumentu jest zgodny, pełną kroki omówione w [otwierania Edytora specyficznych dla projektu](../extensibility/how-to-open-project-specific-editors.md).  
   
      Jeśli obiekt danych dokumentu nie jest zgodny, błąd powinien zostać wyświetlony do użytkownika, który wskazuje, że plik jest obecnie w użyciu. Ten błąd tylko powinna być wyświetlana w przejściowe przypadki, np. gdy plik jest kompilowany w tym samym czasie użytkownik próbuje otworzyć plik za pomocą edytora innych niż [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] podstawowy edytor tekstu. Podstawowy edytor tekstu można udostępniać obiekt danych dokumentu za pomocą kompilatora.  
   
-3.  Jeśli dokument nie jest otwarty, ponieważ nie ma obiektu danych dokumentu lub obiektu widoku dokumentu, wykonaj kroki opisane w [otwierania Edytora specyficznych dla projektu](../extensibility/how-to-open-project-specific-editors.md).  
+3. Jeśli dokument nie jest otwarty, ponieważ nie ma obiektu danych dokumentu lub obiektu widoku dokumentu, wykonaj kroki opisane w [otwierania Edytora specyficznych dla projektu](../extensibility/how-to-open-project-specific-editors.md).  
   
 ## <a name="opening-a-standard-editor"></a>Otwieranie Edytora Standard  
  Użyj poniższej procedury, aby otworzyć Edytor standardowy w pliku, który jest już Otwórz.  

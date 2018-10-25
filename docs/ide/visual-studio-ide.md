@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 751bf673cd16e50c68aff1eb5d27247cdcd1ca01
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: cccaef2d5678bffa19e822cf537f4acb3d046cca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120406"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907524"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Witamy w środowisku IDE programu Visual Studio
 
@@ -94,7 +94,7 @@ Oto niektóre z najpopularniejszych funkcji w programie Visual Studio, które u�
 
 - [Przejdź do definicji](../ide/go-to-and-peek-definition.md)
 
-  Funkcja przejdź do definicji umożliwia przejście bezpośrednio do lokalizacji, w którym funkcja lub typ jest zdefiniowany.
+   Funkcja przejdź do definicji umożliwia przejście bezpośrednio do lokalizacji, w którym funkcja lub typ jest zdefiniowany.
 
    ![Przejdź do definicji](../ide/media/go-to-definition-menu.png)
 
@@ -112,14 +112,14 @@ Przyjrzyjmy się temu bliżej i utworzyć nowe, proste program.
 
    ![Plik > Nowy projekt na pasku menu](../ide/media/file-new-project-menu.png)
 
-1. **Nowy projekt** okno dialogowe zawiera kilka projektu *szablony*. Szablon zawiera podstawowe pliki i ustawienia wymagane dla typu danego projektu. Wybierz **platformy .NET Core** kategorię w obszarze **Visual C#**, a następnie wybierz **Aplikacja konsoli (.NET Core)** szablonu. W **nazwa** polu tekstowym **HelloWorld**, a następnie wybierz pozycję **OK** przycisku.
+2. **Nowy projekt** okno dialogowe zawiera kilka projektu *szablony*. Szablon zawiera podstawowe pliki i ustawienia wymagane dla typu danego projektu. Wybierz **platformy .NET Core** kategorię w obszarze **Visual C#**, a następnie wybierz **Aplikacja konsoli (.NET Core)** szablonu. W **nazwa** polu tekstowym **HelloWorld**, a następnie wybierz pozycję **OK** przycisku.
 
    ![Szablon aplikacji .NET core](../ide/media/overview-new-project-dialog.png)
 
    Program Visual Studio tworzy projekt. Jest prostą aplikację "Hello World", która wywołuje <xref:System.Console.WriteLine?displayProperty=nameWithType> metodę w celu wyświetlenia literału ciągu "Hello World!" w oknie konsoli (dane wyjściowe programu).
 
-  > [!NOTE]
-  > Jeśli nie widzisz **platformy .NET Core** kategorii, musisz zainstalować **programowanie dla wielu platform .NET Core** obciążenia. Aby to zrobić, wybierz **Otwórz Instalator programu Visual Studio** łącza w lewym dolnym rogu **nowy projekt** okna dialogowego. Po otwarciu Instalatora programu Visual Studio, przewiń w dół i wybierz **programowanie dla wielu platform .NET Core** obciążenia, a następnie wybierz **Modyfikuj**.
+   > [!NOTE]
+   > Jeśli nie widzisz **platformy .NET Core** kategorii, musisz zainstalować **programowanie dla wielu platform .NET Core** obciążenia. Aby to zrobić, wybierz **Otwórz Instalator programu Visual Studio** łącza w lewym dolnym rogu **nowy projekt** okna dialogowego. Po otwarciu Instalatora programu Visual Studio, przewiń w dół i wybierz **programowanie dla wielu platform .NET Core** obciążenia, a następnie wybierz **Modyfikuj**.
 
    Wkrótce powinny zostać wyświetlone, podobny do poniższego:
 
@@ -127,21 +127,21 @@ Przyjrzyjmy się temu bliżej i utworzyć nowe, proste program.
 
    Zawiera kodu C# dla swojej aplikacji w oknie edytora, która zajmuje większość miejsca. Należy zauważyć, że tekst jest automatycznie w trybie kolorowym do wskazania różnych części kodu, takich jak słów kluczowych i typów. Ponadto małe, pionowe linie przerywane, w kodzie wskazują, które nawiasy klamrowe zgodne siebie nawzajem, a później zlokalizować kod pomocy numery wierszy. Możesz wybrać znaków minus małe, spakowany, aby zwinąć lub rozwinąć bloków kodu. Ten kod funkcji konspektu można ukrywać kod, który nie jest konieczne, pozwala zminimalizować bałaganu na ekranie. Pliki projektu są wyświetlane po prawej stronie w oknie o nazwie **Eksploratora rozwiązań**.
 
-  ![Visual Studio IDE z czerwone pola](../ide/media/overview-ide-console-app-red-boxes.png)
+   ![Visual Studio IDE z czerwone pola](../ide/media/overview-ide-console-app-red-boxes.png)
 
-  Brak dostępnych inne menu i okien narzędzi, ale Przejdźmy teraz.
+   Brak dostępnych inne menu i okien narzędzi, ale Przejdźmy teraz.
 
-1. Teraz uruchom aplikację. Można to zrobić, wybierając **Rozpocznij bez debugowania** z **debugowania** menu na pasku menu. Można również nacisnąć klawisz **Ctrl**+**F5**.
+3. Teraz uruchom aplikację. Można to zrobić, wybierając **Rozpocznij bez debugowania** z **debugowania** menu na pasku menu. Można również nacisnąć klawisz **Ctrl**+**F5**.
 
-  ![Debuguj > Uruchom bez debugowania menu](../ide/media/overview-start-without-debugging.png)
+   ![Debuguj > Uruchom bez debugowania menu](../ide/media/overview-start-without-debugging.png)
 
-  Program Visual Studio tworzy aplikację, a komunikat zostanie otwarte okno konsoli **Hello World!**. Masz teraz uruchomionej aplikacji.
+   Program Visual Studio tworzy aplikację, a komunikat zostanie otwarte okno konsoli **Hello World!**. Masz teraz uruchomionej aplikacji.
 
-  ![Okno konsoli](../ide/media/overview-console-window.png)
+   ![Okno konsoli](../ide/media/overview-console-window.png)
 
-1. Aby zamknąć okno konsoli, naciśnij dowolny klawisz na klawiaturze.
+4. Aby zamknąć okno konsoli, naciśnij dowolny klawisz na klawiaturze.
 
-1. Dodajmy dodatkowy kod do aplikacji. Dodaj następujący kod C# przed wierszem, który jest wyświetlany komunikat `Console.WriteLine("Hello World!");`:
+5. Dodajmy dodatkowy kod do aplikacji. Dodaj następujący kod C# przed wierszem, który jest wyświetlany komunikat `Console.WriteLine("Hello World!");`:
 
    ```csharp
    Console.WriteLine("\nWhat is your name?");
@@ -150,21 +150,21 @@ Przyjrzyjmy się temu bliżej i utworzyć nowe, proste program.
 
    Ten kod wyświetla **jak się Nazywasz?** w oknie konsoli, a następnie czeka, aż użytkownik wprowadza jakiś tekst, a następnie **Enter** klucza.
 
-1. Zmień wiersz, który jest wyświetlany komunikat `Console.WriteLine("Hello World!");` z następującym kodem:
+6. Zmień wiersz, który jest wyświetlany komunikat `Console.WriteLine("Hello World!");` z następującym kodem:
 
    ```csharp
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Ponownie uruchom aplikację, wybierając **debugowania** > **Rozpocznij bez debugowania** lub naciskając **Ctrl**+**F5**.
+7. Ponownie uruchom aplikację, wybierając **debugowania** > **Rozpocznij bez debugowania** lub naciskając **Ctrl**+**F5**.
 
    Program Visual Studio ponownie kompiluje aplikację, a okno konsoli otworzy i wyświetli monit o podanie nazwy.
 
-1. Wprowadź nazwę w oknie konsoli, a następnie naciśnij klawisz **Enter**.
+8. Wprowadź nazwę w oknie konsoli, a następnie naciśnij klawisz **Enter**.
 
    ![Dane wejściowe z okna konsoli](media/overview-console-input.png)
 
-1. Naciśnij dowolny klawisz, aby zamknąć okno konsoli i zatrzymać uruchomionego programu.
+9. Naciśnij dowolny klawisz, aby zamknąć okno konsoli i zatrzymać uruchomionego programu.
 
 ## <a name="use-refactoring-and-intellisense"></a>Refaktoryzacja i technologii IntelliSense
 
@@ -174,11 +174,11 @@ Po pierwsze możemy zmienić nazwę `name` zmiennej:
 
 1. Kliknij dwukrotnie `name` zmiennej, aby go zaznaczyć.
 
-1. Wpisz nową nazwę zmiennej, **username**.
+2. Wpisz nową nazwę zmiennej, **username**.
 
    Należy zauważyć, że szare pole pojawia się wokół zmienną i żarówka pojawia się na marginesie.
 
-1. Wybierz ikonę żarówki, aby wyświetlić dostępnych [szybkie akcje](quick-actions.md). Wybierz **Zmień nazwę "name" do "username"**.
+3. Wybierz ikonę żarówki, aby wyświetlić dostępnych [szybkie akcje](quick-actions.md). Wybierz **Zmień nazwę "name" do "username"**.
 
    ![Zmień nazwę akcji w programie Visual Studio](media/rename-quick-action.png)
 
@@ -186,15 +186,15 @@ Po pierwsze możemy zmienić nazwę `name` zmiennej:
 
    ![Animowany obraz gif przedstawiający Refaktoryzacja zmiany nazwy w programie Visual Studio](media/rename-refactoring.gif)
 
-1. Teraz Przyjrzyjmy się w technologii IntelliSense. Poniżej wiersza, który jest wyświetlany komunikat `Console.WriteLine($"\nHello {username}!");`, typ **daty/godziny teraz = daty/godziny.**.
+4. Teraz Przyjrzyjmy się w technologii IntelliSense. Poniżej wiersza, który jest wyświetlany komunikat `Console.WriteLine($"\nHello {username}!");`, typ **daty/godziny teraz = daty/godziny.**.
 
    Wyświetlone elementy członkowskie <xref:System.DateTime> klasy. Ponadto opis aktualnie zaznaczonego elementu członkowskiego, wyświetla się w osobnym oknie.
 
    ![Funkcja IntelliSense członków listy w programie Visual Studio](media/intellisense-list-members.png)
 
-1. Wybierz element członkowski o nazwie **teraz**, który jest właściwością klasy, klikając je dwukrotnie lub naciskając **kartę**. Wykonaj w wierszu kodu, dodając je średnikiem **;**.
+5. Wybierz element członkowski o nazwie **teraz**, który jest właściwością klasy, klikając je dwukrotnie lub naciskając **kartę**. Wykonaj w wierszu kodu, dodając je średnikiem **;**.
 
-1. Poniżej wpisz lub skopiuj następujące wiersze kodu:
+6. Poniżej wpisz lub skopiuj następujące wiersze kodu:
 
    ```csharp
    int dayOfYear = now.DayOfYear;
@@ -206,17 +206,17 @@ Po pierwsze możemy zmienić nazwę `name` zmiennej:
    > [!TIP]
    > <xref:System.Console.Write%2A?displayProperty=nameWithType> różni się nieco się <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> się po wydrukowaniu terminator wiersza nie jest dodawany. Oznacza to, że w następnej części tekst, który jest wysyłany do danych wyjściowych zostanie wydrukowany na tym samym wierszu. Możesz umieścić kursor każda z tych metod w kodzie, aby wyświetlić jego opis.
 
-1. Następnie użyjemy refaktoryzacji ponownie się nieco bardziej zwięzły widok kodu. Kliknij na zmiennej `now` w wierszu `DateTime now = DateTime.Now;`.
+7. Następnie użyjemy refaktoryzacji ponownie się nieco bardziej zwięzły widok kodu. Kliknij na zmiennej `now` w wierszu `DateTime now = DateTime.Now;`.
 
    Należy zauważyć, że mała ikona śrubokręt pojawia się na marginesie w danym wierszu.
 
-1. Kliknij ikonę śrubokręt, aby zobaczyć, jakie sugestie dotyczące programu Visual Studio jest dostępny. W tym przypadku jest wyświetlane [wstawiona zmienna tymczasowa](reference/inline-temporary-variable.md) refaktoryzacji, aby usunąć wiersz kodu bez zmiany zachowania ogólną:
+8. Kliknij ikonę śrubokręt, aby zobaczyć, jakie sugestie dotyczące programu Visual Studio jest dostępny. W tym przypadku jest wyświetlane [wstawiona zmienna tymczasowa](reference/inline-temporary-variable.md) refaktoryzacji, aby usunąć wiersz kodu bez zmiany zachowania ogólną:
 
    ![Wbudowane tymczasowej zmiennej Refaktoryzacja w programie Visual Studio](media/inline-temporary-variable-refactoring.png)
 
-1. Kliknij przycisk **wstawiona zmienna tymczasowa** Refaktoryzacja kodu.
+9. Kliknij przycisk **wstawiona zmienna tymczasowa** Refaktoryzacja kodu.
 
-1. Uruchom program ponownie, naciskając klawisz **Ctrl**+**F5**. Dane wyjściowe wyglądają następująco:
+10. Uruchom program ponownie, naciskając klawisz **Ctrl**+**F5**. Dane wyjściowe wyglądają następująco:
 
    ![Okno konsoli z danych wyjściowych programu](../ide/media/overview-console-final.png)
 
@@ -252,7 +252,7 @@ Możesz dostosować interfejsu użytkownika programu Visual Studio, w tym zmiany
 
 1. Na pasku menu wybierz **narzędzia** > **opcje** otworzyć **opcje** okna dialogowego.
 
-1. Na **środowiska** > **ogólne** Strona opcji, zmień **motyw kolorów** wyboru, aby **ciemny**, a następnie wybierz pozycję **OK**.
+2. Na **środowiska** > **ogólne** Strona opcji, zmień **motyw kolorów** wyboru, aby **ciemny**, a następnie wybierz pozycję **OK**.
 
    Motyw kolorów dla całej IDE zmieni się na **ciemny**.
 

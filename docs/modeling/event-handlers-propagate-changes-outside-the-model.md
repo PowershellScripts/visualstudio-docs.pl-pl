@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ab42f0a8b3dafebaf73c116e8ce3295d99ce6fdd
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 65ca1d8e1685ab52e84d4be97c6c691c1d2296c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859280"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910631"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Programy obsługi zdarzeń propagujące zmiany poza modelem
 
@@ -173,7 +173,7 @@ Jeśli piszesz zdarzenie, które aktualizuje magazynu:
 Każdy typ zdarzenia odpowiada kolekcji w Store.EventManagerDirectory. Można dodawać lub usuwać procedury obsługi zdarzeń w dowolnym czasie, ale jest zwykle, aby dodać je, gdy jest ładowany dokument.
 
 |`EventManagerDirectory` Nazwa właściwości|Kiedy wykonywane|
-|-------------------------------------------|-------------------|
+|-|-|
 |ElementAdded|Tworzone jest wystąpienie klasy domeny, relacji domeny, kształt, łącznika lub diagramu.|
 |ElementDeleted|Element modelu została usunięta z katalogu elementów sklepu i nie jest już źródłowych lub docelowych żadnych relacji. Element faktycznie nie zostanie usunięta z pamięci, ale jest zachowane w przypadku przyszłych cofania.|
 |ElementEventsBegun|Wywoływane na końcu transakcji zewnętrznym.|

@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5f82437fc2a04b1df04624b33e3069a1191e811
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910696"
 ---
 # <a name="performance-session-overview"></a>Sesja wydajności — Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,28 +33,28 @@ W tym omówieniu przedstawiono podstawowe informacje profilowania. Zobaczą dewe
   
  Poniższe kroki tworzą proces basic przy użyciu narzędzi profilowania:  
   
-1.  Konfigurowanie sesji wydajności, określając metod zbierania i dane, które mają być zbierane.  
+1. Konfigurowanie sesji wydajności, określając metod zbierania i dane, które mają być zbierane.  
   
-2.  Zbieranie danych profilowania, uruchamiając aplikację w sesji wydajności.  
+2. Zbieranie danych profilowania, uruchamiając aplikację w sesji wydajności.  
   
-3.  Analizowanie danych, aby zidentyfikować problem z wydajnością.  
+3. Analizowanie danych, aby zidentyfikować problem z wydajnością.  
   
-4.  Modyfikowanie kodu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE) do zwiększa wydajność aplikacji, kodu  
+4. Modyfikowanie kodu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zintegrowanego środowiska programistycznego (IDE) do zwiększa wydajność aplikacji, kodu  
   
-5.  Zbieranie danych profilowania na zmiany kodu i porównywanie danych profilowania, oryginalnym i zmienionych danych.  
+5. Zbieranie danych profilowania na zmiany kodu i porównywanie danych profilowania, oryginalnym i zmienionych danych.  
   
-6.  Generowanie raportu, która dokumentuje wzrost wydajności.  
+6. Generowanie raportu, która dokumentuje wzrost wydajności.  
   
- Aby pracować z informacjami, które są dostarczane przez profilowanie, powinny mieć informacji o symbolach dostępna dla plików binarnych, które chcesz przeprowadzić profilowanie, jak i dla danych binarnych systemu operacyjnego Windows.  
+   Aby pracować z informacjami, które są dostarczane przez profilowanie, powinny mieć informacji o symbolach dostępna dla plików binarnych, które chcesz przeprowadzić profilowanie, jak i dla danych binarnych systemu operacyjnego Windows.  
   
 ## <a name="configure-the-performance-session"></a>Konfigurowanie sesji wydajności  
  Aby skonfigurować sesję profilowania, wybierz metody profilowania, którego chcesz używać i dane, które mają być zbierane. Narzędzia profilowania **kreatora wydajności** mogą ukierunkować za pomocą konfiguracji podstawowej oraz na stronach właściwości sesji wydajności można użyć, aby dodać więcej opcji:  
   
--   Metody profilowania to próbkowania, śledzenie i alokacji pamięci.  
+- Metody profilowania to próbkowania, śledzenie i alokacji pamięci.  
   
--   Dane obejmują czas procesora i liczniki wydajności systemu operacyjnego i aplikacji zdarzenia, takie jak błędy stron i przejścia jądra.  
+- Dane obejmują czas procesora i liczniki wydajności systemu operacyjnego i aplikacji zdarzenia, takie jak błędy stron i przejścia jądra.  
   
- Możesz skonfigurować sesję pomiaru wydajności w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu jako część rozwiązania projektu lub dowolne dane binarne, przy użyciu profilu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Można określić właściwości sesji na stronach właściwości sesji wydajności, lub można użyć Kreatora profilowania.  
+  Możesz skonfigurować sesję pomiaru wydajności w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu jako część rozwiązania projektu lub dowolne dane binarne, przy użyciu profilu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Można określić właściwości sesji na stronach właściwości sesji wydajności, lub można użyć Kreatora profilowania.  
   
 ## <a name="collect-profiling-data"></a>Zbieranie danych profilowania  
  Rozpocznij zbierania danych z profilowania **Eksplorator wydajności**. Można wstrzymać i wznowić profilowanie, aby ograniczyć ilość zbieranych danych. Można także dołączyć do procesu, który jest już uruchomiony.  
@@ -66,11 +66,11 @@ W tym omówieniu przedstawiono podstawowe informacje profilowania. Zobaczą dewe
 ## <a name="analyze-the-data-and-identify-performance-issues"></a>Analizowanie danych i zidentyfikować problemy z wydajnością  
  Po zakończeniu przebiegu profilowania te dane są analizowane i w narzędziach profilowania zostanie wyświetlone podsumowanie **raport dotyczący wydajności** wyświetlania systemu windows. Dane profilowania są zbierane dla stosu wywołań i poszczególnych funkcji w aplikacji docelowej. Raport widoków wyświetlanie analizy wydajności zakresy danych procesy, wątki, modułów, funkcji i wierszy kodu źródłowego aplikacji. Dane profilowania wartości dla funkcji są następujące:  
   
--   Całkowity czas spędzony w funkcji i funkcji podrzędnych, które zostały wywołane przez funkcję (wartości włącznie).  
+- Całkowity czas spędzony w funkcji i funkcji podrzędnych, które zostały wywołane przez funkcję (wartości włącznie).  
   
--   Czas, jaki był poświęcony na wykonywanie tylko kod w funkcji (wyłączne wartości).  
+- Czas, jaki był poświęcony na wykonywanie tylko kod w funkcji (wyłączne wartości).  
   
- Ponad 12 różne widoki umożliwiają analizowanie danych profilowania w najbardziej efektywny sposób. Dostosowania widoków umożliwiają filtrowanie i sortowanie danych znajdują się funkcje, które mogą być przyczyną problemów z wydajnością. Filtrowanie gorącej ścieżki zawiera wyróżnienie najbardziej aktywnych ścieżek w widokach drzewo wywołań i moduł.  
+  Ponad 12 różne widoki umożliwiają analizowanie danych profilowania w najbardziej efektywny sposób. Dostosowania widoków umożliwiają filtrowanie i sortowanie danych znajdują się funkcje, które mogą być przyczyną problemów z wydajnością. Filtrowanie gorącej ścieżki zawiera wyróżnienie najbardziej aktywnych ścieżek w widokach drzewo wywołań i moduł.  
   
 ## <a name="modify-the-application-code"></a>Modyfikowanie kodu aplikacji  
  Po izolowanych jeden lub więcej problemów z wydajnością istotne, można zmodyfikować kod za pomocą [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE, a następnie zbieranie danych profilowania dla zmiany.  

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f5e06b51cfea731d94cd0eb53d91b4dbdf6b471
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6ed4e1863313dae173d6737970765ca3d5f0b0b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879457"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
-Ta metoda pobiera listę typów argumentu skojarzone z tym obiektem.  
+Ta metoda pobiera listę typów argumentów skojarzonych z tym obiektem.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,22 +47,22 @@ int GetTypeArguments(
   
 #### <a name="parameters"></a>Parametry  
  `skip`  
- [in] Numer pola, aby pominąć przed pobraniem typy argumentów.  
+ [in] Liczba pól, aby pominąć przed pobraniem typy argumentów.  
   
  `count`  
  [in] Liczba pól argument do zwrócenia (również określa rozmiar `ppFields` tablicy).  
   
  `ppFields`  
- [w, out] Tablica pola, które są wypełniane przy powrocie z tej metody.  
+ [out w] Tablica pola, które są wypełniane przy powrocie z tej metody.  
   
  `pFetched`  
- [out] \(opcjonalne) Liczba argumentów typu pola faktycznie zwracane.  
+ [out] \(opcjonalne) Liczba argumentów typu pola rzeczywistego zwrotu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Liczba typów argumentów można uzyskać z wcześniej [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).  
+ Liczba typów argumentów można uzyskać wcześniej przy użyciu [gettypeargumentcount —](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

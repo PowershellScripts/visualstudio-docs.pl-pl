@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 716e58acaddd1891f2e0d605265cb53bae4ad8d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299185"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922201"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Tworzenie prostej aplikacji danych przy użyciu platformy WPF i Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,37 +52,37 @@ To walkthough pokazuje, jak utworzyć aplikację podstawowe "formularzy nad dany
   
 ## <a name="create-the-model"></a>Tworzenie modelu  
   
-1.  Kliknij prawym przyciskiem myszy węzeł projektu w Eksploratorze rozwiązań i wybierz polecenie **Dodaj &#124; nowy element**. W okienku po lewej stronie w węźle C#, wybierz **danych** i w środkowym okienku wybierz **ADO.NET Entity Data Model**.  
+1. Kliknij prawym przyciskiem myszy węzeł projektu w Eksploratorze rozwiązań i wybierz polecenie **Dodaj &#124; nowy element**. W okienku po lewej stronie w węźle C#, wybierz **danych** i w środkowym okienku wybierz **ADO.NET Entity Data Model**.  
   
-     ![Entity Framework modelu nowy element projektu](../data-tools/media/raddata-ef-new-project-item.png "raddata EF nowy element projektu")  
+    ![Entity Framework modelu nowy element projektu](../data-tools/media/raddata-ef-new-project-item.png "raddata EF nowy element projektu")  
   
-2.  Wywoływanie modelu `Northwind_model` i wybierz przycisk OK. Spowoduje to przejście **Kreator modelu Entity Data Model**. Wybierz **projektancie platformy EF z bazy danych** a następnie kliknij przycisk **dalej**.  
+2. Wywoływanie modelu `Northwind_model` i wybierz przycisk OK. Spowoduje to przejście **Kreator modelu Entity Data Model**. Wybierz **projektancie platformy EF z bazy danych** a następnie kliknij przycisk **dalej**.  
   
-     ![Modelu platformy EF z bazy danych](../data-tools/media/raddata-ef-model-from-database.png "raddata modelu platformy EF z bazy danych")  
+    ![Modelu platformy EF z bazy danych](../data-tools/media/raddata-ef-model-from-database.png "raddata modelu platformy EF z bazy danych")  
   
-3.  Na następnym ekranie Wybierz połączenie i kliknij pozycję usługi LocalDB Northwind **dalej**.  
+3. Na następnym ekranie Wybierz połączenie i kliknij pozycję usługi LocalDB Northwind **dalej**.  
   
-4.  Na następnej stronie kreatora firma Microsoft wybierz tabele, procedury składowane i innych obiektów bazy danych, które mają zostać objęte modelu Entity Framework. Rozwiń węzeł dbo w widoku drzewa i wybierz klienci i zamówienia szczegóły zamówienia. Pozostaw wartości domyślne, zaznaczone, a następnie kliknij przycisk **Zakończ**.  
+4. Na następnej stronie kreatora firma Microsoft wybierz tabele, procedury składowane i innych obiektów bazy danych, które mają zostać objęte modelu Entity Framework. Rozwiń węzeł dbo w widoku drzewa i wybierz klienci i zamówienia szczegóły zamówienia. Pozostaw wartości domyślne, zaznaczone, a następnie kliknij przycisk **Zakończ**.  
   
-     ![Wybierz obiekty bazy danych dla modelu](../data-tools/media/raddata-choose-ef-objects.png "raddata wybierz obiekty EF")  
+    ![Wybierz obiekty bazy danych dla modelu](../data-tools/media/raddata-choose-ef-objects.png "raddata wybierz obiekty EF")  
   
-5.  Kreator generuje klas języka C#, które reprezentują model Entity Framework. Są to zwykłe stare klas języka C# i są one, firma Microsoft będzie powiązać z danymi interfejsu użytkownika WPF. Plik edmx opisano relacje i inne metadane, które kojarzy klas obiektów w bazie danych.  .TT — pliki są szablony T4, które generują kod, które będą działać na podstawie modelu i zapisać zmiany w bazie danych. Możesz zobaczyć wszystkie te pliki w Eksploratorze rozwiązań w węźle Northwind_model:  
+5. Kreator generuje klas języka C#, które reprezentują model Entity Framework. Są to zwykłe stare klas języka C# i są one, firma Microsoft będzie powiązać z danymi interfejsu użytkownika WPF. Plik edmx opisano relacje i inne metadane, które kojarzy klas obiektów w bazie danych.  .TT — pliki są szablony T4, które generują kod, które będą działać na podstawie modelu i zapisać zmiany w bazie danych. Możesz zobaczyć wszystkie te pliki w Eksploratorze rozwiązań w węźle Northwind_model:  
   
-     ![Pliki modelu platformy EF Eksploratora rozwiązania](../data-tools/media/raddata-solution-explorer-ef-model-files.png "plików modelu platformy EF Eksploratora rozwiązań raddata")  
+    ![Pliki modelu platformy EF Eksploratora rozwiązania](../data-tools/media/raddata-solution-explorer-ef-model-files.png "plików modelu platformy EF Eksploratora rozwiązań raddata")  
   
-     Powierzchni projektanta dla pliku edmx umożliwia modyfikowanie niektórych właściwości i relacje w modelu. Nie będziemy korzystać z projektanta, w tym przewodniku.  
+    Powierzchni projektanta dla pliku edmx umożliwia modyfikowanie niektórych właściwości i relacje w modelu. Nie będziemy korzystać z projektanta, w tym przewodniku.  
   
-6.  .TT — pliki są ogólnego przeznaczenia i musimy dostosować jeden z nich do pracy z powiązanie danych WPF, która wymaga ObservableCollections.  W Eksploratorze rozwiązań rozwiń węzeł Northwind_model, aż znajdziesz Northwind_model.tt. (Upewnij się, że jesteś **nie** w *. Kontekst .tt plik jest bezpośrednio poniżej pliku edmx).  
+6. .TT — pliki są ogólnego przeznaczenia i musimy dostosować jeden z nich do pracy z powiązanie danych WPF, która wymaga ObservableCollections.  W Eksploratorze rozwiązań rozwiń węzeł Northwind_model, aż znajdziesz Northwind_model.tt. (Upewnij się, że jesteś **nie** w *. Kontekst .tt plik jest bezpośrednio poniżej pliku edmx).  
   
-    -   Zastąp dwa wystąpienia <xref:System.Collections.ICollection> z <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
+   -   Zastąp dwa wystąpienia <xref:System.Collections.ICollection> z <xref:System.Collections.ObjectModel.ObservableCollection%601>.  
   
-    -   Zamień na pierwsze wystąpienie <xref:System.Collections.Generic.HashSet%601> z <xref:System.Collections.ObjectModel.ObservableCollection%601> całym wierszu 51. Nie zastępuj drugie wystąpienie hashset —  
+   -   Zamień na pierwsze wystąpienie <xref:System.Collections.Generic.HashSet%601> z <xref:System.Collections.ObjectModel.ObservableCollection%601> całym wierszu 51. Nie zastępuj drugie wystąpienie hashset —  
   
-    -   Zastąpić tylko wystąpienie <xref:System.Collections.Generic> (około wiersza 334) przy użyciu <xref:System.Collections.ObjectModel>.  
+   -   Zastąpić tylko wystąpienie <xref:System.Collections.Generic> (około wiersza 334) przy użyciu <xref:System.Collections.ObjectModel>.  
   
-7.  Naciśnij klawisz **Ctrl + Shift + B** do skompilowania projektu. Po zakończeniu kompilacji, klasy modelu są widoczne w Kreatorze źródła danych.  
+7. Naciśnij klawisz **Ctrl + Shift + B** do skompilowania projektu. Po zakończeniu kompilacji, klasy modelu są widoczne w Kreatorze źródła danych.  
   
- Teraz jesteśmy gotowi zaczepić tego modelu do strony XAML, dzięki temu możemy wyświetlić, przejdź i modyfikować dane.  
+   Teraz jesteśmy gotowi zaczepić tego modelu do strony XAML, dzięki temu możemy wyświetlić, przejdź i modyfikować dane.  
   
 ## <a name="databind-the-model-to-the-xaml-page"></a>Elementu DataBind modelu do strony XAML  
  Można napisać własny kod wiązania danych, ale jest znacznie łatwiejsze umożliwić programowi Visual Studio zrobił dla Ciebie.  

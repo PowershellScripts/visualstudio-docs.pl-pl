@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ab0bcb05332713c9bce06e24713034747b0e92c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a581b18dc331e1dd361554e1066cdbcb7b802a2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113048"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908512"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 Tworzy unikatowy identyfikator lub alias dla tego obiektu lub zwraca istniejącego aliasu.  
@@ -41,13 +41,13 @@ int CreateAlias(
   
 #### <a name="parameters"></a>Parametry  
  `ppAlias`  
- [out] Alias nowej (lub istniejącej).  
+ [out] Alias nowa (lub istniejąca).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Alias jest etykietę, którą reprezentuje określonego obiektu, gdy obiekt jest w pamięci.  
+ Alias jest etykietę, która reprezentuje określonego obiektu, gdy obiekt jest w pamięci.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   

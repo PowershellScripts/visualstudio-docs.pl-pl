@@ -16,27 +16,27 @@ ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f637c348295e709698d710016c80aa717613a068
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4915dc5131cedbdc368c4c9d651e98c2302aceba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884020"
 ---
 # <a name="ports"></a>Porty
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Pod względem architektury debugera **portu**:  
   
--   Kontener dla zestawu procesów działa na serwerze. Na przykład port może reprezentować połączenie urządzenia z systemem Windows CE, za pomocą kabla szeregowego lub na maszynie sieciowych bez DCOM. Jeden port specjalny port lokalny, nazywany zawiera wszystkie procesy, które są uruchomione na komputerze lokalnym.  
+- Kontener dla zestawu procesów działa na serwerze. Na przykład port może reprezentować połączenie urządzenia z systemem Windows CE, za pomocą kabla szeregowego lub na maszynie sieciowych bez DCOM. Jeden port specjalny port lokalny, nazywany zawiera wszystkie procesy, które są uruchomione na komputerze lokalnym.  
   
--   Można zidentyfikować sama nazwa lub identyfikator.  
+- Można zidentyfikować sama nazwa lub identyfikator.  
   
--   Można wyliczyć wszystkie procesy uruchomione na porcie uruchomienie i zakończenie tych procesów.  
+- Można wyliczyć wszystkie procesy uruchomione na porcie uruchomienie i zakończenie tych procesów.  
   
--   Jest reprezentowany przez [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfejs, który jest tworzony przez przekazanie [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) argument [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
+- Jest reprezentowany przez [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfejs, który jest tworzony przez przekazanie [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) argument [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md).  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dostarcza domyślnego portu, obsługująca wszystkich oparte na Windows procesów, natywnych i zarządzanych. Port niestandardowy, należy zaimplementować dla połączeń przy użyciu urządzeń zewnętrznych, które nie są oparte na Windows. Podać takie niestandardowych portów, dostawca niestandardowy port musi również można zaimplementować.  
+  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dostarcza domyślnego portu, obsługująca wszystkich oparte na Windows procesów, natywnych i zarządzanych. Port niestandardowy, należy zaimplementować dla połączeń przy użyciu urządzeń zewnętrznych, które nie są oparte na Windows. Podać takie niestandardowych portów, dostawca niestandardowy port musi również można zaimplementować.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Serwery](../../extensibility/debugger/servers-visual-studio-sdk.md)   

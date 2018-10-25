@@ -19,33 +19,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a8777dff45eb257a941716306f099c67e3fcda7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab2eded41d9416f03592c9346a379f8a276366a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948783"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>Wskazówki: Dodawanie odbiorców zdarzeń funkcji
   Funkcji odbiorcy zdarzeń są metodami wykonywanymi gdy wystąpi jedno z następujących zdarzeń związanych z funkcji w programie SharePoint:
 
--   Funkcja zostanie zainstalowana.
+- Funkcja zostanie zainstalowana.
 
--   Funkcja jest aktywowana.
+- Funkcja jest aktywowana.
 
--   Dezaktywacją funkcji.
+- Dezaktywacją funkcji.
 
--   Funkcja zostanie usunięta.
+- Funkcja zostanie usunięta.
 
- W tym instruktażu przedstawiono sposób dodawania odbiorców zdarzenia do funkcji w projekcie programu SharePoint. Pokazuje następujące zadania:
+  W tym instruktażu przedstawiono sposób dodawania odbiorców zdarzenia do funkcji w projekcie programu SharePoint. Pokazuje następujące zadania:
 
--   Tworzenie pustego projektu za pomocą odbiorcy zdarzeń funkcji.
+- Tworzenie pustego projektu za pomocą odbiorcy zdarzeń funkcji.
 
--   Obsługa **FeatureDeactivating** metody.
+- Obsługa **FeatureDeactivating** metody.
 
--   Dodawanie anonsu do listy anonsów przy użyciu modelu obiektu projektu programu SharePoint.
+- Dodawanie anonsu do listy anonsów przy użyciu modelu obiektu projektu programu SharePoint.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:

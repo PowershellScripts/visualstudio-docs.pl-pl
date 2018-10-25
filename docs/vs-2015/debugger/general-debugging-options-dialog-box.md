@@ -27,12 +27,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 222cd90f73611aa40980679795debf4cb5eb2c0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dab045b147b4ce929106c26befcae58c80b99239
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854328"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Ogólne, debugowanie, okno dialogowe Opcje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,55 +139,55 @@ ms.locfileid: "49306894"
  **Użyj zarządzanego trybu zgodności**  
  Zastępuje domyślny aparat starszą wersją, aby włączyć te scenariusze debugowania:  
   
--   W przypadku korzystania z języka .NET Framework innego niż C#, VB lub F # zapewniający własny Ewaluator wyrażeń (to obejmuje C + +/ CLI).  
+- W przypadku korzystania z języka .NET Framework innego niż C#, VB lub F # zapewniający własny Ewaluator wyrażeń (to obejmuje C + +/ CLI).  
   
--   Chcesz włączyć Edytuj i Kontynuuj dla projektów C++ podczas debugowania w trybie mieszanym.  
+- Chcesz włączyć Edytuj i Kontynuuj dla projektów C++ podczas debugowania w trybie mieszanym.  
   
- Należy pamiętać, że wybranie zgodności zarządzanej tryb wyłącza niektóre funkcje, które są zaimplementowane tylko w domyślnym aparacie debugowania.  
+  Należy pamiętać, że wybranie zgodności zarządzanej tryb wyłącza niektóre funkcje, które są zaimplementowane tylko w domyślnym aparacie debugowania.  
   
- **Użyj trybu zgodności natywne**  
- Gdy ta opcja jest zaznaczona, debuger używa macierzystym debugerze programu Visual Studio 2010 zamiast nowej debuger natywny.  
+  **Użyj trybu zgodności natywne**  
+  Gdy ta opcja jest zaznaczona, debuger używa macierzystym debugerze programu Visual Studio 2010 zamiast nowej debuger natywny.  
   
- Należy używać tej opcji podczas debugowania kodu w języku C++ platformy .NET, ponieważ nowy aparat debugowania nie obsługuje oceny wyrażeń języka C++ platformy .NET. Włączanie natywnego trybu zgodności wyłącza jednak wiele funkcji, które są zależne od bieżącej implementacji debugera do działania. Na przykład starszego aparatu nie posiada wiele wizualizatorów, dla wbudowanych typów, takich jak `std::string` w projektach programu Visual Studio 2015.   Użyj projektów programu Visual Studio 2013 dla zapewnienia optymalnego działania debugowania w tych przypadkach.  
+  Należy używać tej opcji podczas debugowania kodu w języku C++ platformy .NET, ponieważ nowy aparat debugowania nie obsługuje oceny wyrażeń języka C++ platformy .NET. Włączanie natywnego trybu zgodności wyłącza jednak wiele funkcji, które są zależne od bieżącej implementacji debugera do działania. Na przykład starszego aparatu nie posiada wiele wizualizatorów, dla wbudowanych typów, takich jak `std::string` w projektach programu Visual Studio 2015.   Użyj projektów programu Visual Studio 2013 dla zapewnienia optymalnego działania debugowania w tych przypadkach.  
   
- **Użyj starszych ewaluatory wyrażeń języka C# i VB**  
- Debuger użyje ewaluatory wyrażeń Visual Studio 2013 w języku C# /VB zamiast ewaluatory wyrażeń opartych na programie Visual Studio 2015 Roslyn.  
+  **Użyj starszych ewaluatory wyrażeń języka C# i VB**  
+  Debuger użyje ewaluatory wyrażeń Visual Studio 2013 w języku C# /VB zamiast ewaluatory wyrażeń opartych na programie Visual Studio 2015 Roslyn.  
   
- **Ostrzegaj, gdy niestandardowe wizualizatory debugera względem potencjalnie niebezpiecznych procesów (tylko kod zarządzany)**  
- Program Visual Studio ostrzeże Cię, gdy używasz wizualizatora niestandardowego debugera działającego kodu w procesie debugowanego obiektu, ponieważ może być uruchomiony niebezpieczny kod.  
+  **Ostrzegaj, gdy niestandardowe wizualizatory debugera względem potencjalnie niebezpiecznych procesów (tylko kod zarządzany)**  
+  Program Visual Studio ostrzeże Cię, gdy używasz wizualizatora niestandardowego debugera działającego kodu w procesie debugowanego obiektu, ponieważ może być uruchomiony niebezpieczny kod.  
   
- **Włącz alokatora sterty debugowania Windows (tylko natywne)**  
- Włącza na stercie systemu windows, lepszą diagnostykę sterty. Włączenie tej opcji będzie mieć wpływ na wydajność debugowania.  
+  **Włącz alokatora sterty debugowania Windows (tylko natywne)**  
+  Włącza na stercie systemu windows, lepszą diagnostykę sterty. Włączenie tej opcji będzie mieć wpływ na wydajność debugowania.  
   
- **Włączanie debugowania interfejsu użytkownika narzędzia dla XAML**  
- Dynamiczne drzewo wizualne i na żywo właściwość zapoznaj się z systemu windows pojawi się po rozpoczęciu debugowania (F5) typu obsługiwanych projektu. Aby uzyskać więcej informacji, zobacz [właściwości sprawdzić XAML podczas debugowania](../debugger/inspect-xaml-properties-while-debugging.md).  
+  **Włączanie debugowania interfejsu użytkownika narzędzia dla XAML**  
+  Dynamiczne drzewo wizualne i na żywo właściwość zapoznaj się z systemu windows pojawi się po rozpoczęciu debugowania (F5) typu obsługiwanych projektu. Aby uzyskać więcej informacji, zobacz [właściwości sprawdzić XAML podczas debugowania](../debugger/inspect-xaml-properties-while-debugging.md).  
   
- **Wyświetl podgląd wybranych elementów w dynamicznym drzewie wizualnym**  
- Element XAML, którego kontekst jest zaznaczona, jest również wybrany w **dynamiczne drzewo wizualne** okna.  
+  **Wyświetl podgląd wybranych elementów w dynamicznym drzewie wizualnym**  
+  Element XAML, którego kontekst jest zaznaczona, jest również wybrany w **dynamiczne drzewo wizualne** okna.  
   
- **Pokaż narzędzia środowiska uruchomieniowego w aplikacji**  
- Pokazuje **dynamiczne drzewo wizualne** polecenia na pasku narzędzi w oknie głównym aplikacji XAML, która jest debugowana. Ta opcja została wprowadzona w Visual Studio 2015 Update 2.  
+  **Pokaż narzędzia środowiska uruchomieniowego w aplikacji**  
+  Pokazuje **dynamiczne drzewo wizualne** polecenia na pasku narzędzi w oknie głównym aplikacji XAML, która jest debugowana. Ta opcja została wprowadzona w Visual Studio 2015 Update 2.  
   
- **Włącz narzędzia diagnostyczne podczas debugowania**  
- **Narzędzia diagnostyczne** zostanie wyświetlone okno podczas debugowania. Aby uzyskać więcej informacji, zobacz [zintegrowane z debugerem profilowania](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  **Włącz narzędzia diagnostyczne podczas debugowania**  
+  **Narzędzia diagnostyczne** zostanie wyświetlone okno podczas debugowania. Aby uzyskać więcej informacji, zobacz [zintegrowane z debugerem profilowania](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
- **Podczas debugowania Pokaż element perftip dla czasu upłynęło**  
- W oknie Kod wyświetla czas wywołania danej metody podczas debugowania.  
+  **Podczas debugowania Pokaż element perftip dla czasu upłynęło**  
+  W oknie Kod wyświetla czas wywołania danej metody podczas debugowania.  
   
- **Włącz funkcję Edytuj i Kontynuuj**  
- Możesz użyć edycji i kontynuowania funkcji podczas debugowania.  
+  **Włącz funkcję Edytuj i Kontynuuj**  
+  Możesz użyć edycji i kontynuowania funkcji podczas debugowania.  
   
- **Włącz natywną funkcję Edytuj i Kontynuuj**  
- Możesz użyć edycji i kontynuowania funkcji podczas debugowania kodu natywnego języka C++. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
+  **Włącz natywną funkcję Edytuj i Kontynuuj**  
+  Możesz użyć edycji i kontynuowania funkcji podczas debugowania kodu natywnego języka C++. Aby uzyskać więcej informacji, zobacz [Edytuj i Kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
   
- **Zastosuj zmiany przy kontynuowaniu (tylko natywne)**  
- Program Visual Studio kompiluje i automatycznie stosuje żadnych zmian w kodzie oczekujących, wprowadzone podczas kontynuując proces w stanie przerwania. Jeśli nie jest zaznaczone, można zastosować zmian przy użyciu elementu "Zastosowanie zmian kodu" w menu Debugowanie.  
+  **Zastosuj zmiany przy kontynuowaniu (tylko natywne)**  
+  Program Visual Studio kompiluje i automatycznie stosuje żadnych zmian w kodzie oczekujących, wprowadzone podczas kontynuując proces w stanie przerwania. Jeśli nie jest zaznaczone, można zastosować zmian przy użyciu elementu "Zastosowanie zmian kodu" w menu Debugowanie.  
   
- **Ostrzeżenie o nieodświeżonym kodzie (tylko natywne)**  
- Pobierz ostrzeżenia o nieodświeżonym kodzie.  
+  **Ostrzeżenie o nieodświeżonym kodzie (tylko natywne)**  
+  Pobierz ostrzeżenia o nieodświeżonym kodzie.  
   
- **Zezwalaj na prekompilowanie (tylko natywne)**  
- Prekompilowanie jest dozwolone.  
+  **Zezwalaj na prekompilowanie (tylko natywne)**  
+  Prekompilowanie jest dozwolone.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie w programie Visual Studio](../debugger/debugging-in-visual-studio.md)

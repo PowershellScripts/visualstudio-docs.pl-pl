@@ -16,12 +16,12 @@ ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: da04f97cc31ba235fd70aea60f01c51f8c8a2b75
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d4b955879380166aae7d9a8e210ac7d5e53f882f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291905"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873477"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>Komentowanie kodu w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ Języki programowania zwykle zapewniają oznacza dodawać adnotacje i komentarze
 ## <a name="comment-styles"></a>Style komentarz  
  Istnieją dwa ogólne style komentarza:  
   
-1.  Komentarze wiersza, gdzie jest komentarz w jednym wierszu.  
+1. Komentarze wiersza, gdzie jest komentarz w jednym wierszu.  
   
-2.  Komentarze bloku, gdzie komentarz może obejmować wiele wierszy.  
+2. Komentarze bloku, gdzie komentarz może obejmować wiele wierszy.  
   
- Wiersz komentarze zazwyczaj mają znak początkowy (lub znaków), podczas komentarze bloku znaków zarówno rozpoczęcia i zakończenia. Na przykład w języku C# wiersz komentarza rozpoczyna się od / /, a komentarza blokowego zaczyna się od / * i kończy \*/.  
+   Wiersz komentarze zazwyczaj mają znak początkowy (lub znaków), podczas komentarze bloku znaków zarówno rozpoczęcia i zakończenia. Na przykład w języku C# wiersz komentarza rozpoczyna się od / /, a komentarza blokowego zaczyna się od / * i kończy \*/.  
   
- Gdy użytkownik wybierze polecenie **Dodaj komentarz do zaznaczenia** z **Edytuj** -> **zaawansowane** menu polecenie jest kierowany do <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> metody <xref:Microsoft.VisualStudio.Package.Source> klasy. Gdy użytkownik wybierze polecenie **Usuń komentarz zaznaczenia**, polecenie jest kierowany do <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> metody.  
+   Gdy użytkownik wybierze polecenie **Dodaj komentarz do zaznaczenia** z **Edytuj** -> **zaawansowane** menu polecenie jest kierowany do <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> metody <xref:Microsoft.VisualStudio.Package.Source> klasy. Gdy użytkownik wybierze polecenie **Usuń komentarz zaznaczenia**, polecenie jest kierowany do <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> metody.  
   
 ## <a name="supporting-code-comments"></a>Obsługa komentarzy do kodu  
  Możesz mieć swoje komentarze kodu języka usługi pomocy technicznej przez `EnableCommenting` o nazwie parametru <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . To ustawienie <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> właściwość <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy. Aby uzyskać więcej informacji o ustawianiu servicce funkcje języka, zobacz [rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md)).  

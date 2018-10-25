@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 811292ff5f7dd95e127e63d30bf14ee06269ff7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4bfc596bd1b77c77ea5b54a66ca349a66e50915c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107793"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875791"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 Pobiera przyjazną nazwę dla serwera.  
@@ -44,13 +44,13 @@ int GetServerFriendlyName(
  [out] Zwraca przyjazną nazwę dla serwera.  
   
 > [!NOTE]
->  Element wywołujący jest odpowiedzialny za zwalnianie ciąg.  
+>  Obiekt wywołujący jest odpowiedzialny za zwalnianie ciągu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- W przypadku serwerów użytkownik uruchomił nazwa zwracane przez tę metodę jest pełna nazwa serwera. W przypadku serwerów uruchamiana automatycznie nazwa jest czy maszyny serwera jest uruchomiona.  
+ W przypadku serwerów uruchomione przez użytkownika nazwę zwracanego przez tę metodę jest pełna nazwa serwera. Dla serwerów z uruchamiany automatycznie nazwa to, że na komputerze serwera jest uruchomiona na.  
   
  Dla nazwy zorientowane na komputerze, należy wywołać [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) metody.  
   

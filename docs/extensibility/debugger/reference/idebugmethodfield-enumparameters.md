@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 112b91c2155c28b37b2222a99a45893fcb56e98c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7405b451a29af71a2cad3ad3e4a36692737d8d53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122200"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910462"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
 Tworzy moduł wyliczający dla parametrów metody.  
@@ -41,17 +41,17 @@ int EnumParameters(
   
 #### <a name="parameters"></a>Parametry  
  `ppParams`  
- [out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) obiekt reprezentujący listę parametrów metody; w przeciwnym razie zwraca wartość null, jeśli nie ma żadnych parametrów.  
+ [out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) obiekt reprezentujący listę parametrów do metody; w przeciwnym razie zwraca wartość null, jeśli nie ma żadnych parametrów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK lub zwraca wartości S_FALSE, jeśli nie ma żadnych parametrów. W przeciwnym razie zwraca kod błędu.  
+ Jeśli to się powiedzie, zwraca wartość S_OK lub zwraca wartość S_FALSE, jeśli nie ma żadnych parametrów. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Każdy element jest [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt reprezentujący różne typy parametrów. Wywołanie [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metody dla każdego obiektu w celu ustalenia dokładnie jakiego rodzaju parametr obiekt reprezentuje.  
+ Każdy element jest [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt reprezentujący różne typy parametrów. Wywołaj [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metody dla każdego obiektu, aby określić dokładnie rodzaj parametru obiekt reprezentuje.  
   
- Parametr zawiera nazwy zmiennej i jej typu. Pierwszy parametr metody klasy zwykle jest wskaźnik "this".  
+ Parametr obejmuje zarówno nazwy zmiennych, jak i jej typu. Pierwszy parametr metody klasy zwykle jest wskaźnik "this".  
   
- Jeśli tylko typy parametrów jest potrzebny, należy wywołać [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) metody.  
+ Jeśli tylko typy parametrów jest potrzebny, wywołaj [EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

@@ -24,12 +24,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55d10e779ebd949f3f229e0abc4822b7a2da64e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f171c337f73db495b7b71aded24f669b6e613a07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887790"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Porady: tworzenie i edycja konfiguracji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,14 +43,14 @@ Można utworzyć kilka konfiguracji kompilacji dla rozwiązania. Na przykład mo
   
 #### <a name="to-open-the-configuration-manager-dialog-box"></a>Aby otworzyć okno dialogowe programu Configuration Manager  
   
--   W **Eksploratora rozwiązań**, otwórz menu skrótów dla rozwiązania, a następnie wybierz **programu Configuration Manager**.  
+- W **Eksploratora rozwiązań**, otwórz menu skrótów dla rozwiązania, a następnie wybierz **programu Configuration Manager**.  
   
-    > [!NOTE]
-    >  Jeśli **programu Configuration Manager** polecenie nie pojawi się w menu skrótów, Szukaj w obszarze **kompilacji** menu na pasku menu. Jeśli nie pojawia się ona tam żadnego z nich, na pasku menu wybierz **narzędzia**, **opcje**, a następnie w okienku po lewej stronie **opcje** okna dialogowego rozwiń **projekty i Rozwiązania**, **ogólne**i w okienku po prawej stronie wybierz **Pokaż zaawansowane konfiguracje kompilacji** pole wyboru.  
+  > [!NOTE]
+  >  Jeśli **programu Configuration Manager** polecenie nie pojawi się w menu skrótów, Szukaj w obszarze **kompilacji** menu na pasku menu. Jeśli nie pojawia się ona tam żadnego z nich, na pasku menu wybierz **narzędzia**, **opcje**, a następnie w okienku po lewej stronie **opcje** okna dialogowego rozwiń **projekty i Rozwiązania**, **ogólne**i w okienku po prawej stronie wybierz **Pokaż zaawansowane konfiguracje kompilacji** pole wyboru.  
   
-     W **programu Configuration Manager** okno dialogowe, można użyć **Konfiguracja rozwiązania aktywnego** listy rozwijanej wybierz konfigurację kompilacji całego rozwiązania, zmodyfikować istniejące lub Utwórz nową Konfiguracja. Możesz użyć **aktywną platformą rozwiązania** listy rozwijanej, aby wybrać platformy, obiekty docelowe konfiguracji, zmodyfikuj istniejącą grupę lub Dodaj nową platformę. **Projektu kontekstów** okienko zawiera listę projektów w rozwiązaniu. Dla każdego projektu można wybrać konfiguracji specyficznych dla projektu i platform, zmodyfikuj istniejące, lub Utwórz nową konfigurację lub Dodaj nową platformę. Możesz również wybrać pola wyboru, które wskazują, czy każdy projekt jest dołączana w przypadku korzystania z konfiguracji całego rozwiązania do kompilacji lub wdrożenia rozwiązania.  
+   W **programu Configuration Manager** okno dialogowe, można użyć **Konfiguracja rozwiązania aktywnego** listy rozwijanej wybierz konfigurację kompilacji całego rozwiązania, zmodyfikować istniejące lub Utwórz nową Konfiguracja. Możesz użyć **aktywną platformą rozwiązania** listy rozwijanej, aby wybrać platformy, obiekty docelowe konfiguracji, zmodyfikuj istniejącą grupę lub Dodaj nową platformę. **Projektu kontekstów** okienko zawiera listę projektów w rozwiązaniu. Dla każdego projektu można wybrać konfiguracji specyficznych dla projektu i platform, zmodyfikuj istniejące, lub Utwórz nową konfigurację lub Dodaj nową platformę. Możesz również wybrać pola wyboru, które wskazują, czy każdy projekt jest dołączana w przypadku korzystania z konfiguracji całego rozwiązania do kompilacji lub wdrożenia rozwiązania.  
   
- Po skonfigurowaniu konfiguracje, które mają można ustawić właściwości projektu, które są odpowiednie dla tych konfiguracji.  
+  Po skonfigurowaniu konfiguracje, które mają można ustawić właściwości projektu, które są odpowiednie dla tych konfiguracji.  
   
 #### <a name="to-set-properties-based-on-configurations"></a>Aby ustawić właściwości na podstawie konfiguracji  
   

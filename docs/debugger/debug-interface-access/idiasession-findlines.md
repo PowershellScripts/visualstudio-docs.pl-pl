@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findLines | Dokumentacja firmy Microsoft
+title: Idiasession::findlines — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb256778f2bf92827ff98c5cafbb77bfdcba6c12
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e2dc5e2509e3edda0c9cd89b84a3e109e0ac2d0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828387"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
-Pobiera numerów wierszy w ramach określonej compiland i identyfikatory pliku źródłowego.  
+Pobiera numery wierszy w ramach określonego compiland — i identyfikatory plików źródłowych.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,16 +36,16 @@ HRESULT findLines (
   
 #### <a name="parameters"></a>Parametry  
  `compiland`  
- [in] [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt reprezentujący compiland. Użyj tego interfejsu jako kontekst, w których będą poszukiwane numerów wierszy.  
+ [in] [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt reprezentujący compiland —. Używaj tego interfejsu, ponieważ kontekst, w których należy szukać numery wierszy.  
   
  `file`  
- [in] [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md) obiekt reprezentujący plik źródłowy, w których będą poszukiwane numerów wierszy.  
+ [in] [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md) obiekt reprezentujący pliku źródłowego, w których należy szukać numerów wierszy.  
   
  `ppResult`  
  [out] Zwraca [idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md) pobrać obiekt, który zawiera listę numerów wierszy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   

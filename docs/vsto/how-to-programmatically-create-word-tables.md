@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d545b82c913573a5fbfb8d9397efa9ca672e1896
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a65c42f19602929b546bf105f148bf80e2d9b2db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677627"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914193"
 ---
 # <a name="how-to-programmatically-create-word-tables"></a>Instrukcje: programowe tworzenie tabel programu Word
   <xref:Microsoft.Office.Interop.Word.Tables> Kolekcji jest elementem członkowskim <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, i <xref:Microsoft.Office.Interop.Word.Range> klasy, które oznacza, że można utworzyć tabelę w dowolnym z tych kontekstach. Możesz użyć <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> metody <xref:Microsoft.Office.Interop.Word.Tables> kolekcji, aby dodać tabelę w określonym zakresie.  
@@ -32,25 +32,25 @@ ms.locfileid: "35677627"
   
 ### <a name="to-add-a-table-to-a-document"></a>Aby dodać tabelę do dokumentu  
   
--   Użyj <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> metodę, aby dodać tabelę składającą się z trzech wierszy i czterech kolumn na początku dokumentu.  
+- Użyj <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> metodę, aby dodać tabelę składającą się z trzech wierszy i czterech kolumn na początku dokumentu.  
   
-     Aby użyć w poniższym przykładzie kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.  
+   Aby użyć w poniższym przykładzie kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#86](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#86)]
-     [!code-csharp[Trin_VstcoreWordAutomation#86](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#86)]  
+   [!code-vb[Trin_VstcoreWordAutomation#86](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#86)]
+   [!code-csharp[Trin_VstcoreWordAutomation#86](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#86)]  
   
- Podczas tworzenia tabeli jest automatycznie dodawany do <xref:Microsoft.Office.Interop.Word.Tables> zbiór <xref:Microsoft.Office.Tools.Word.Document> element hosta. Możesz następnie można się odwoływać do tabeli za pomocą numeru elementu za pomocą <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> właściwości, jak pokazano w poniższym kodzie.  
+  Podczas tworzenia tabeli jest automatycznie dodawany do <xref:Microsoft.Office.Interop.Word.Tables> zbiór <xref:Microsoft.Office.Tools.Word.Document> element hosta. Możesz następnie można się odwoływać do tabeli za pomocą numeru elementu za pomocą <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> właściwości, jak pokazano w poniższym kodzie.  
   
 ### <a name="to-refer-to-a-table-by-item-number"></a>Aby odwołać się do tabeli przez liczbę elementów  
   
-1.  Użyj <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> właściwość i podaj numer tabelę, która ma dotyczyć.  
+1. Użyj <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> właściwość i podaj numer tabelę, która ma dotyczyć.  
   
-     Aby użyć w poniższym przykładzie kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.  
+    Aby użyć w poniższym przykładzie kodu, należy uruchomić go z `ThisDocument` klasy w projekcie.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#87](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#87)]
-     [!code-csharp[Trin_VstcoreWordAutomation#87](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#87)]  
+    [!code-vb[Trin_VstcoreWordAutomation#87](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#87)]
+    [!code-csharp[Trin_VstcoreWordAutomation#87](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#87)]  
   
- Każdy <xref:Microsoft.Office.Interop.Word.Table> obiekt również ma <xref:Microsoft.Office.Interop.Word.Table.Range%2A> właściwość, która pozwala ustawić formatowanie atrybutów.  
+   Każdy <xref:Microsoft.Office.Interop.Word.Table> obiekt również ma <xref:Microsoft.Office.Interop.Word.Table.Range%2A> właściwość, która pozwala ustawić formatowanie atrybutów.  
   
 ### <a name="to-apply-a-style-to-a-table"></a>Aby zastosować styl do tabeli  
   
@@ -65,25 +65,25 @@ ms.locfileid: "35677627"
   
 ### <a name="to-add-a-table-to-a-document"></a>Aby dodać tabelę do dokumentu  
   
--   Użyj <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> metodę, aby dodać tabelę składającą się z trzech wierszy i czterech kolumn na początku dokumentu.  
+- Użyj <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> metodę, aby dodać tabelę składającą się z trzech wierszy i czterech kolumn na początku dokumentu.  
   
-     Poniższy przykład kodu dodaje tabelę do aktywnego dokumentu. Aby użyć tego przykładu, należy uruchomić go z `ThisAddIn` klasy w projekcie.  
+   Poniższy przykład kodu dodaje tabelę do aktywnego dokumentu. Aby użyć tego przykładu, należy uruchomić go z `ThisAddIn` klasy w projekcie.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#86](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#86)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#86](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#86)]  
+   [!code-vb[Trin_VstcoreWordAutomationAddIn#86](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#86)]
+   [!code-csharp[Trin_VstcoreWordAutomationAddIn#86](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#86)]  
   
- Podczas tworzenia tabeli jest automatycznie dodawany do <xref:Microsoft.Office.Interop.Word.Tables> zbiór <xref:Microsoft.Office.Interop.Word.Document>. Możesz następnie można się odwoływać do tabeli za pomocą numeru elementu za pomocą <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> właściwości, jak pokazano w poniższym kodzie.  
+  Podczas tworzenia tabeli jest automatycznie dodawany do <xref:Microsoft.Office.Interop.Word.Tables> zbiór <xref:Microsoft.Office.Interop.Word.Document>. Możesz następnie można się odwoływać do tabeli za pomocą numeru elementu za pomocą <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> właściwości, jak pokazano w poniższym kodzie.  
   
 ### <a name="to-refer-to-a-table-by-item-number"></a>Aby odwołać się do tabeli przez liczbę elementów  
   
-1.  Użyj <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> właściwość i podaj numer tabelę, która ma dotyczyć.  
+1. Użyj <xref:Microsoft.Office.Interop.Word.Tables.Item%2A> właściwość i podaj numer tabelę, która ma dotyczyć.  
   
-     Poniższy przykład kodu wykorzystuje aktywnego dokumentu. Aby użyć tego przykładu, należy uruchomić go z `ThisAddIn` klasy w projekcie.  
+    Poniższy przykład kodu wykorzystuje aktywnego dokumentu. Aby użyć tego przykładu, należy uruchomić go z `ThisAddIn` klasy w projekcie.  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#87](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#87)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#87](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#87)]  
+    [!code-vb[Trin_VstcoreWordAutomationAddIn#87](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#87)]
+    [!code-csharp[Trin_VstcoreWordAutomationAddIn#87](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#87)]  
   
- Każdy <xref:Microsoft.Office.Interop.Word.Table> obiekt również ma <xref:Microsoft.Office.Interop.Word.Table.Range%2A> właściwość, która pozwala ustawić formatowanie atrybutów.  
+   Każdy <xref:Microsoft.Office.Interop.Word.Table> obiekt również ma <xref:Microsoft.Office.Interop.Word.Table.Range%2A> właściwość, która pozwala ustawić formatowanie atrybutów.  
   
 ### <a name="to-apply-a-style-to-a-table"></a>Aby zastosować styl do tabeli  
   

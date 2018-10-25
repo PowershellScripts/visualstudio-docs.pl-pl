@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: 3ae06a36155ed7270ce01178fa49e40dff06aed8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833008"
 ---
 # <a name="making-custom-projects-version-aware"></a>Tworzenie niestandardowych projektów rozpoznający wersje
 W systemie niestandardowego projektu można zezwolić projektów tego typu są ładowane w wielu wersjach programu Visual Studio. Projekty tego typu mogą również uniemożliwić ładowanie we wcześniejszej wersji programu Visual Studio. Można również włączyć tego projektu w celu zidentyfikowania się względem nowszej wersji. w przypadku, gdy projekt wymaga naprawy, konwersji i wycofywania.  
@@ -125,13 +125,13 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  Jeśli ta metoda ustawia `pUpgradeRequired` PRAWDA i zwraca `S_OK`, wynik jest traktowana jako "Uaktualnianie" i tak, jakby metody uaktualniania flagę ustawić na wartość `VSPUVF_PROJECT_ONEWAYUPGRADE`, który jest opisany w dalszej części tego tematu. Następujące zwracają wartości są obsługiwane przy użyciu tego starsza metoda, ale tylko wtedy, gdy `pUpgradeRequired` jest ustawiona na wartość TRUE:  
   
-1.  `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Tłumaczy to wartość zwracana `pUpgradeRequired` wartość true jako odpowiednik `VSPUVF_PROJECT_SAFEREPAIR`, który jest opisany w dalszej części tego tematu.  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`. Tłumaczy to wartość zwracana `pUpgradeRequired` wartość true jako odpowiednik `VSPUVF_PROJECT_SAFEREPAIR`, który jest opisany w dalszej części tego tematu.  
   
-2.  `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Tłumaczy to wartość zwracana `pUpgradeRequired` wartość true jako odpowiednik `VSPUVF_PROJECT_UNSAFEREPAIR`, który jest opisany w dalszej części tego tematu  
+2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`. Tłumaczy to wartość zwracana `pUpgradeRequired` wartość true jako odpowiednik `VSPUVF_PROJECT_UNSAFEREPAIR`, który jest opisany w dalszej części tego tematu  
   
-3.  `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Tłumaczy to wartość zwracana `pUpgradeRequired` wartość true jako odpowiednik `VSPUVF_PROJECT_ONEWAYUPGRADE`, który jest opisany w dalszej części tego tematu.  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`. Tłumaczy to wartość zwracana `pUpgradeRequired` wartość true jako odpowiednik `VSPUVF_PROJECT_ONEWAYUPGRADE`, który jest opisany w dalszej części tego tematu.  
   
- Nowe implementacje w `IVsProjectUpgradeViaFactory4` i `IVsProjectFlavorUpgradeViaFactory2` umożliwić bardziej precyzyjne określanie typu migracji.  
+   Nowe implementacje w `IVsProjectUpgradeViaFactory4` i `IVsProjectFlavorUpgradeViaFactory2` umożliwić bardziej precyzyjne określanie typu migracji.  
   
 > [!NOTE]
 >  Może buforować wynik sprawdzania zgodności przez `UpgradeProject_CheckOnly` metodę, tak że można również przez kolejne wywołanie `CreateProject`.  

@@ -15,37 +15,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fa41165041c4be1b4d527f2df20dacfcf0600af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0de2f17933977d13fb524d34887a9e9af9c88114
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923842"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951109"
 ---
 # <a name="customize-the-help-viewer"></a>Dostosowywanie podglądu pomocy
-Można dostosować układ okna podglądu pomocy, jak również inne opcje, takie jak rozmiar czcionki, maksymalna liczba wyników i czy mają zostać dołączone do zawartości w języku angielskim.
+Można dostosować układ okna podglądu pomocy, a także inne opcje, takie jak rozmiar czcionki, maksymalna liczba wyników i czy chcesz uwzględnić zawartość w języku angielskim.
 
 ## <a name="customizing-window-layout"></a>Dostosowywanie układu okna
-Można dostosować układ okna podglądu pomocy. Aby przywrócić jego domyślny układ okna podglądu pomocy, otwórz **Opcje aplikacji Viewer** okna dialogowego polu, a następnie wybierz pozycję **zresetować** przycisku.
+Można dostosować układ okna podglądu pomocy. Aby przywrócić układ domyślny okna podglądu pomocy, otwórz **Opcje podglądu** okna dialogowego pole, a następnie wybierz **resetowania** przycisku.
 
-### <a name="docking-tabs"></a>Dokowanie karty
-Podgląd pomocy obsługuje standardowe funkcje dokowania. Domyślnie wszystkie karty w Podglądzie pomocy jest zadokowany, ale można przenieść je, zmieniać ich rozmiar, dock ich w innych lokalizacjach i "float" je, aby były wyświetlane jako okien podrzędnych niezależne.
+### <a name="docking-tabs"></a>Dokowanie kart
+Podgląd pomocy obsługuje standardowe funkcje dokowania. Domyślnie wszystkie karty w Podglądzie pomocy są zadokowane, ale możesz przenieść je, zmieniać ich rozmiar, dokować w innych lokalizacjach i "zwalniać", aby były wyświetlane jako niezależne podrzędne okna.
 
 ### <a name="opening-a-topic-in-a-new-tab"></a>Otwieranie tematu na nowej karcie
-Wybierz temat w każdej z kart nawigacji, a następnie naciśnij klawisz **klawisze Ctrl + Enter**.
+Wybierz temat w dowolnej karcie nawigacji, a następnie naciśnij klawisz **Ctrl + Enter**.
 
-### <a name="minimize-a-navigation-tab"></a>Minimalizowanie karty nawigacji
-Tworzenie miejsca do wyświetlania tematów, wybierając ikonę numeru pin dla karty nawigacji. Minimalizowane tych kart tylko ich etykiety są wyświetlane na najbliższą krawędzią okna. Aby przywrócić karty, wybierz etykietę każdej z kart, a następnie wybierz ikonę pinezki ponownie.
+### <a name="minimize-a-navigation-tab"></a>Minimalizuj kartę nawigacji
+Utwórz więcej miejsca na wyświetlanie tematów wybierając ikonę pin dla kart nawigacji. Gdy te karty są zminimalizowane, tylko ich etykiety pojawiają się w najbliższej krawędzi okna. Aby przywrócić karty, wybierz etykietę dowolnej karty, a następnie ponownie wybierz ikonę pinezki.
 
-## <a name="changing-settings-in-viewer-options"></a>Zmiana ustawienia w sekcji Opcje podglądu
-Możesz otworzyć **Opcje aplikacji Viewer** okno dialogowe, wybierając **Opcje aplikacji Viewer** przycisk na pasku narzędzi.
+## <a name="changing-settings-in-viewer-options"></a>Zmiana ustawień w opcjach przeglądarki
+Możesz otworzyć **Opcje podglądu** okno dialogowe, wybierając **Opcje podglądu** przycisk na pasku narzędzi.
 
-|Aby to zrobić:|Wykonaj ten krok:|
-|---------------------------|---------------------|
-|Zmień rozmiar czcionki, w którym jest wyświetlany tekst|Wybierz rozmiar w **rozmiar tekstu** listy.|
-|Zmień maksymalną liczbę wyników wyszukiwania, które są widoczne w **wyszukiwania** kartę|Wybierz wartość w **maksymalna liczba wyników wyszukiwania** listy.|
-|Zmień maksymalną liczbę wpisów historii, które są widoczne w **ulubione** okna|Wybierz wartość w **zapisanych wpisów historii maksymalna** listy.|
-|Dołącz lub Wyklucz zawartości w języku angielskim, podczas wyświetlania zawartości dla innej niż angielska wersji produktu.|Wybierz lub wyczyść **obejmują angielskim zawartości we wszystkich kartach nawigacji i żądaniach F1** pole wyboru. **Uwaga:** tej funkcji określa, czy można pobrać zawartości w języku angielskim w **Zarządzaj zawartością** kartę.|
+|Do wykonania tego zadania:|Wykonaj następujący krok:|
+| - | - |
+|Zmień rozmiar czcionki, w którym pojawia się tekst|Wybierz rozmiar w **rozmiar tekstu** listy.|
+|Zmień maksymalną liczbę wyników wyszukiwania, które pojawiają się w **wyszukiwania** kartę|Wybierz wartość z **maksymalna liczba wyników wyszukiwania** listy.|
+|Zmień maksymalną liczbę wpisów historii, które pojawiają się w **ulubione** okna|Wybierz wartość z **zapisanych wpisów historycznych maksymalna** listy.|
+|Dołącz lub wyklucz zawartość w języku angielskim podczas przeglądania zawartości dla innej niż angielska wersji produktu.|Zaznacz lub wyczyść **zawartości Zawrzyj w języku angielskim we wszystkich kartach nawigacji i żądaniach F1** pole wyboru. **Uwaga:** ta funkcja określa również, czy użytkownik będzie mógł pobrać zawartość w języku angielskim **Zarządzaj zawartością** kartę.|
 
 ## <a name="see-also"></a>Zobacz także
 

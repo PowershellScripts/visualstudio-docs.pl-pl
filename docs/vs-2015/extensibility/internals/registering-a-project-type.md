@@ -17,12 +17,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 103792f4751d290d9d782fa4e71309ebcf3914da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911339"
 ---
 # <a name="registering-a-project-type"></a>Rejestrowanie typu projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -215,17 +215,17 @@ Gdy tworzysz nowy typ projektu, należy utworzyć wpisy rejestru, które umożli
   
  Wpis menu wskazuje IDE zasobów do pobierania informacji menu. Gdy te dane zostały połączone w bazie danych menu, ten sam klucz zostanie dodana w sekcji MenusMerged rejestru. Pakietu VSPackage niczego w sekcji MenusMerged nie należy modyfikować bezpośrednio. W polu danych w tabeli poniżej istnieją trzy przecinkami oddzielone — pola. Pierwsze pole określa pełną ścieżkę pliku zasobu menu:  
   
--   Jeśli pierwsze pole zostanie pominięty, zasobu menu jest ładowany z satelitarnej biblioteki DLL identyfikowany przez identyfikator GUID pakietu VSPackage.  
+- Jeśli pierwsze pole zostanie pominięty, zasobu menu jest ładowany z satelitarnej biblioteki DLL identyfikowany przez identyfikator GUID pakietu VSPackage.  
   
- Drugie pole określa identyfikator zasobu menu o typie CTMENU:  
+  Drugie pole określa identyfikator zasobu menu o typie CTMENU:  
   
--   Jeśli określono identyfikator zasobu, a ścieżka pliku jest dostarczany za pomocą pierwszego parametru, zasobu menu jest ładowany z pełną ścieżką do pliku.  
+- Jeśli określono identyfikator zasobu, a ścieżka pliku jest dostarczany za pomocą pierwszego parametru, zasobu menu jest ładowany z pełną ścieżką do pliku.  
   
--   Jeśli ścieżka pliku jest, ale określono identyfikator zasobu, zasobu menu jest ładowany z satelitarną bibliotekę DLL.  
+- Jeśli ścieżka pliku jest, ale określono identyfikator zasobu, zasobu menu jest ładowany z satelitarną bibliotekę DLL.  
   
--   Jeśli podano pełną ścieżkę pliku i identyfikator zasobu pominięty, plik do załadowania powinien być plikiem Dyrektor ds. technologii.  
+- Jeśli podano pełną ścieżkę pliku i identyfikator zasobu pominięty, plik do załadowania powinien być plikiem Dyrektor ds. technologii.  
   
- Ostatnie pole określa numer wersji dla zasobu CTMENU. Menu można scalać ponownie, zmieniając numer wersji.  
+  Ostatnie pole określa numer wersji dla zasobu CTMENU. Menu można scalać ponownie, zmieniając numer wersji.  
   
 |Nazwa|Typ|Dane|Opis|  
 |----------|----------|----------|-----------------|  

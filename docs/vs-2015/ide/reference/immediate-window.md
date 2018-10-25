@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87f8cd822dcd67ff7837dcaa31e47c23e0a0550b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203674"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850428"
 ---
 # <a name="immediate-window"></a>Okno bezpośrednie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,31 +58,31 @@ ms.locfileid: "49203674"
   
 #### <a name="to-execute-a-function-at-design-time"></a>Aby wykonać funkcję w czasie projektowania  
   
-1.  Skopiuj następujący kod do [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] konsoli aplikacji:  
+1. Skopiuj następujący kod do [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] konsoli aplikacji:  
   
-    ```  
-    Module Module1  
+   ```  
+   Module Module1  
   
-        Sub Main()  
-            MyFunction(5)  
-        End Sub  
+       Sub Main()  
+           MyFunction(5)  
+       End Sub  
   
-        Function MyFunction(ByVal input as Integer) As Integer  
-            Return input * 2  
-        End Function  
+       Function MyFunction(ByVal input as Integer) As Integer  
+           Return input * 2  
+       End Function  
   
-    End Module  
-    ```  
+   End Module  
+   ```  
   
-2.  Na **debugowania** menu, kliknij przycisk **Windows**, a następnie kliknij przycisk **bezpośrednie**.  
+2. Na **debugowania** menu, kliknij przycisk **Windows**, a następnie kliknij przycisk **bezpośrednie**.  
   
-3.  Typ `?MyFunction(2)` w **bezpośrednie** okna i naciśnij klawisz Enter.  
+3. Typ `?MyFunction(2)` w **bezpośrednie** okna i naciśnij klawisz Enter.  
   
-     **Bezpośrednie** uruchomi okna `MyFunction` i wyświetlić `4`.  
+    **Bezpośrednie** uruchomi okna `MyFunction` i wyświetlić `4`.  
   
- Jeśli funkcja lub podprocedura zawiera punkt przerwania, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] spowoduje przerwanie wykonywania we właściwym miejscu. Można następnie użyć okien debugera do sprawdzenia stanu programu. Aby uzyskać więcej informacji, zobacz [wskazówki: debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Jeśli funkcja lub podprocedura zawiera punkt przerwania, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] spowoduje przerwanie wykonywania we właściwym miejscu. Można następnie użyć okien debugera do sprawdzenia stanu programu. Aby uzyskać więcej informacji, zobacz [wskazówki: debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md).  
   
- Nie można użyć obliczenia wyrażenia czasu projektowania w typach projektów, które wymagają uruchamiania środowiska wykonawczego, w tym [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] projektów, projektów sieci Web, projektów urządzeń inteligentnych i projektów SQL.  
+   Nie można użyć obliczenia wyrażenia czasu projektowania w typach projektów, które wymagają uruchamiania środowiska wykonawczego, w tym [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] projektów, projektów sieci Web, projektów urządzeń inteligentnych i projektów SQL.  
   
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>Obliczanie wyrażenia czasu projektowania w rozwiązaniach dotyczących wielu projektów  
  Podczas ustanawiania kontekstu oceny wyrażenia czasu projektowania, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] odwołuje się do aktualnie wybranego projektu w Eksploratorze rozwiązań. Jeśli projekt nie jest zaznaczony w oknie Eksploratora rozwiązań [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] próbuje obliczyć funkcję względu projektu startowego. Jeśli nie można obliczyć funkcji w bieżącym kontekście, otrzymasz komunikat o błędzie. Jeśli próbujesz obliczyć wartości funkcji w projekcie, który nie jest projektem startowym rozwiązania, a otrzymasz komunikat o błędzie, spróbuj wybrać projekt w Eksploratorze rozwiązań i ponownie dokonać obliczenia.  

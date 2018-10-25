@@ -20,12 +20,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bbe14f4eec069b7a7a65beb8c5ff2e2085b17e11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37876502a464e263ebd6803216b29bd62b65af5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274615"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890182"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Wskazówki: tworzenie aplikacji warstwowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,25 +39,25 @@ N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na
   
  Z tego instruktażu wykonasz następujące czynności:  
   
--   Utwórz nowe rozwiązanie n warstwowej, który będzie zawierać wiele projektów.  
+- Utwórz nowe rozwiązanie n warstwowej, który będzie zawierać wiele projektów.  
   
--   Dodaj dwa projekty bibliotek klas do rozwiązania n warstwowej.  
+- Dodaj dwa projekty bibliotek klas do rozwiązania n warstwowej.  
   
--   Tworzenie typizowanego zestawu danych za pomocą **Kreatora konfiguracji źródła danych**.  
+- Tworzenie typizowanego zestawu danych za pomocą **Kreatora konfiguracji źródła danych**.  
   
--   Oddziel wygenerowany [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) i kod zestawu danych w dyskretne projekty.  
+- Oddziel wygenerowany [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) i kod zestawu danych w dyskretne projekty.  
   
--   Tworzenie usługi Windows Communication Foundation (WCF) do wywołania w warstwie dostępu do danych.  
+- Tworzenie usługi Windows Communication Foundation (WCF) do wywołania w warstwie dostępu do danych.  
   
--   Tworzenie funkcji w usłudze w celu pobierania danych z warstwy dostępu do danych.  
+- Tworzenie funkcji w usłudze w celu pobierania danych z warstwy dostępu do danych.  
   
--   Tworzenie aplikacji Windows Forms jako Warstwa prezentacji.  
+- Tworzenie aplikacji Windows Forms jako Warstwa prezentacji.  
   
--   Tworzenie formantów formularzy Windows, które są powiązane ze źródłem danych.  
+- Tworzenie formantów formularzy Windows, które są powiązane ze źródłem danych.  
   
--   Pisz kod, aby wypełnić tabele danych.  
+- Pisz kod, aby wypełnić tabele danych.  
   
- ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") wersja wideo tego tematu, zobacz [poradnik wideo: tworzenie aplikacji N-warstwowa danych](http://go.microsoft.com/fwlink/?LinkId=115188).  
+  ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo") wersja wideo tego tematu, zobacz [poradnik wideo: tworzenie aplikacji N-warstwowa danych](http://go.microsoft.com/fwlink/?LinkId=115188).  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby ukończyć ten przewodnik, potrzebne są:  
@@ -144,17 +144,17 @@ N-warstwy * dane aplikacji są aplikacjom dostęp do danych i są rozdzielone na
   
 #### <a name="to-separate-the-tableadapters-from-the-dataset"></a>Do oddzielania elementów TableAdapter z zestawu danych  
   
-1.  Kliknij dwukrotnie **NorthwindDataSet.xsd** w **Eksploratora rozwiązań** można otworzyć zestawu danych w **Projektanta obiektów Dataset**.  
+1. Kliknij dwukrotnie **NorthwindDataSet.xsd** w **Eksploratora rozwiązań** można otworzyć zestawu danych w **Projektanta obiektów Dataset**.  
   
-2.  Kliknij pusty obszar w projektancie.  
+2. Kliknij pusty obszar w projektancie.  
   
-3.  Znajdź **projektu DataSet** w węźle **właściwości** okna.  
+3. Znajdź **projektu DataSet** w węźle **właściwości** okna.  
   
-4.  W **projektu DataSet** kliknij **DataEntityTier**.  
+4. W **projektu DataSet** kliknij **DataEntityTier**.  
   
-5.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
+5. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
   
- Zestaw danych i TableAdapters są podzielone na dwie klasy projekty biblioteki. Projekt, który pierwotnie zawierał teraz całego zestawu danych (DataAccessTier) zawiera tylko adapterów TableAdapter. Projekt umieszczoną **projektu DataSet** właściwość (DataEntityTier) zawiera typizowany zestaw danych: NorthwindDataSet.Dataset.Designer.vb (lub NorthwindDataSet.Dataset.Designer.cs).  
+   Zestaw danych i TableAdapters są podzielone na dwie klasy projekty biblioteki. Projekt, który pierwotnie zawierał teraz całego zestawu danych (DataAccessTier) zawiera tylko adapterów TableAdapter. Projekt umieszczoną **projektu DataSet** właściwość (DataEntityTier) zawiera typizowany zestaw danych: NorthwindDataSet.Dataset.Designer.vb (lub NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
 >  Kiedy oddzielisz zestawy danych i TableAdapters (przez ustawienie **projektu DataSet** właściwości), istniejące częściowe klasy zestawu danych w projekcie nie zostaną automatycznie przeniesione. Istniejące klasy częściowego zestawu danych należy przenieść ręcznie do projektu zestawu danych.  

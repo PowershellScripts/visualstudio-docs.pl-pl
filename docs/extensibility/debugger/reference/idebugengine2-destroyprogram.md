@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e85eb457a16de03fa989d86109a8705c3b36174
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1376f6b235bc9fa492f35557118a1857a36defa7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105869"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883279"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
-Informuje o aparat debugowania (DE) nietypowo zakończone określonego programu, a DE należy wyczyścić wszystkie odwołania do programu i wysyłania program zniszcz zdarzeń.  
+Informuje aparat debugowania (DE) program określony został zakończony nietypowo i DE należy wyczyścić wszystkie odwołania do programu i zdarzenie niszczenia send programem.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,15 +41,15 @@ int DestroyProgram(
   
 #### <a name="parameters"></a>Parametry  
  `pProgram`  
- [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje program, który został zakończony nietypowo.  
+ [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje program, który ma nietypowo została przerwana.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Po ta metoda jest wywoływana, DE następnie wysyła [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) zdarzeń do Menedżera debugowania sesji (SDM).  
+ Po ta metoda jest wywoływana, DE kliencka wysyła [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) Menedżer debugowania sesji (SDM) zdarzenia.  
   
- Ta metoda nie jest zaimplementowana (zwraca `E_NOTIMPL`), gdy DE działa w tym samym procesie jako debugowany program. Ta metoda jest zaimplementowana tylko wtedy, gdy DE działa w ten sam proces jako SDM.  
+ Ta metoda nie jest zaimplementowana (zwraca `E_NOTIMPL`) Jeśli DE działa w tym samym procesie co debugowanego programu. Ta metoda jest implementowana tylko wtedy, gdy DE działa w tym samym procesie co SDM.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

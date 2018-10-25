@@ -16,12 +16,12 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6f506340e75b7d0d1001f00ff46592bc60efab77
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8ca8cd0fdb112214cd2d0f5088bf745c2643570
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294349"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827314"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Pomoc techniczna dotycząca właściwości projektu i konfiguracji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,14 +65,14 @@ ms.locfileid: "49294349"
   
  `SettingsPage` Klasy i `Microsoft.VisualStudio.Package.ProjectNode` klasy oferują te metody, aby zachować właściwości projektu i konfiguracji:  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` i `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` utrwalanie właściwości projektu.  
+- `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` i `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` utrwalanie właściwości projektu.  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` i `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` utrwalanie właściwości konfiguracji.  
+- `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` i `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` utrwalanie właściwości konfiguracji.  
   
-    > [!NOTE]
-    >  Implementacje `Microsoft.VisualStudio.Package.SettingsPage` i `Microsoft.VisualStudio.Package.ProjectNode` klasy użyj `Microsoft.Build.BuildEngine` (MSBuild) metody do pobierania i ustawiania właściwości projektu i konfiguracji z pliku projektu.  
+  > [!NOTE]
+  >  Implementacje `Microsoft.VisualStudio.Package.SettingsPage` i `Microsoft.VisualStudio.Package.ProjectNode` klasy użyj `Microsoft.Build.BuildEngine` (MSBuild) metody do pobierania i ustawiania właściwości projektu i konfiguracji z pliku projektu.  
   
- Klasa pochodzi od `SettingsPage` musi implementować `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` i `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` można utrwalić projektu lub konfiguracji właściwości pliku projektu.  
+  Klasa pochodzi od `SettingsPage` musi implementować `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` i `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` można utrwalić projektu lub konfiguracji właściwości pliku projektu.  
   
 ## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute i ścieżki rejestru  
  Klasy pochodne `SettingsPage` są przeznaczone do można współdzielić w ramach pakietów VSPackage. Aby umożliwić VSPackage utworzyć klasę pochodną `SettingsPage`, Dodaj `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` do klasy pochodzącej od `Microsoft.VisualStudio.Shell.Package`.  

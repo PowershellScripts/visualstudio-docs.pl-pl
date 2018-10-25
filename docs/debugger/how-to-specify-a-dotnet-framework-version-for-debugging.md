@@ -18,49 +18,49 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2cb8da54b53814e7f044c67855e8071c627cf2e1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 79bbe6e6feefa8e7ccab04fe5bae5c2ec7c214ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902961"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>Porady: określanie wersji programu .NET Framework do debugowania
-[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] Debuger obsługuje debugowanie starsze wersje programu Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] oraz bieżącej wersji. Po uruchomieniu aplikacji w programie Visual Studio debuger zawsze można zidentyfikować poprawną wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] debugowania aplikacji. Jeśli aplikacja jest już uruchomiona i używana będzie **dołączyć do**, debuger może nie zawsze można zidentyfikować starszej wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. W takim przypadku otrzymasz komunikat o błędzie informujący,  
+[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] Debuger obsługuje debugowanie starszych wersji programu Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] oraz bieżącej wersji. W przypadku uruchomienia aplikacji w programie Visual Studio, debuger zawsze można zidentyfikować poprawną wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dla aplikacji jest debugowany. Jeśli aplikacja jest już uruchomiona, a używasz **dołączyć do**, debuger może nie zawsze można zidentyfikować starszą wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Jeśli tak się stanie, zostanie wyświetlony komunikat o błędzie informujący, że,  
   
- Debuger wykonał nieprawidłowe założenie dotyczące [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji aplikacji zamierza użyć.  
+ Debuger podejścia biznesowego uczyniło nieprawidłowe założenie dotyczące [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] wersji aplikacji zamierza użyć.  
   
- W rzadkich przypadkach można ustawić klucz rejestru, aby wskazać debugera wersji do użycia.  
+ W tych rzadkich przypadkach można ustawić klucz rejestru, aby wskazać do debugera w wyborze wersji do użycia.  
   
-### <a name="to-specify-a-net-framework-version-for-debugging"></a>Aby określić .NET Framework w wersji do debugowania  
+### <a name="to-specify-a-net-framework-version-for-debugging"></a>Aby określić wersji programu .NET Framework do debugowania  
   
-1.  Szukaj w katalogu Windows\Microsoft.NET\Framework można odnaleźć wersji programu .NET Framework na komputerze jest zainstalowany. Numery wersji wyglądać mniej więcej tak:  
+1. Szukaj w katalogu Windows\Microsoft.NET\Framework można znaleźć wersji .NET Framework zainstalowanej na komputerze. Numery wersji wyglądać mniej więcej tak:  
   
-     `V1.1.4322`  
+    `V1.1.4322`  
   
-     Określ liczbę poprawnej wersji i zapisz go.  
+    Określ liczbę poprawnej wersji i zanotuj ją.  
   
-2.  Uruchom **Edytora rejestru** (regedit).  
+2. Rozpocznij **Edytora rejestru** (regedit).  
   
-3.  W **Edytora rejestru**, otwórz HKEY_LOCAL_MACHINE folder.  
+3. W **Edytora rejestru**, otwórz folder, w kluczu HKEY_LOCAL_MACHINE.  
   
-4.  Przejdź do: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
+4. Przejdź do: HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
   
-     Jeśli klucz nie istnieje, kliknij prawym przyciskiem myszy HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine i kliknij przycisk **nowy klucz**. Nazwa nowego klucza `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.  
+    Jeśli klucz nie istnieje, kliknij prawym przyciskiem myszy HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine i kliknij **nowy klucz**. Nazwij nowy klucz `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.  
   
-5.  Po nawigowania do {449EC4CC-30D2-4032-9256-EE18EB41B62B}, Szukaj w **nazwa** kolumny i Znajdź klucz CLRVersionForDebugging.  
+5. Po przejściu do {449EC4CC-30D2-4032-9256-EE18EB41B62B}, Szukaj w **nazwa** kolumny i Znajdź klucz CLRVersionForDebugging.  
   
-    1.  Jeśli klucz nie istnieje, kliknij prawym przyciskiem myszy {449EC4CC-30D2-4032-9256-EE18EB41B62B} i kliknij przycisk **nową wartość ciągu**. Kliknij prawym przyciskiem myszy nową wartość ciągu, kliknij przycisk **zmienić**i wpisz `CLRVersionForDebugging`.  
+   1.  Jeśli klucz nie istnieje, kliknij prawym przyciskiem myszy {449EC4CC-30D2-4032-9256-EE18EB41B62B} i kliknij przycisk **nową wartość ciągu**. Kliknij prawym przyciskiem myszy nową wartość ciągu, kliknij przycisk **Zmień nazwę**i wpisz `CLRVersionForDebugging`.  
   
-6.  Kliknij dwukrotnie **CLRVersionForDebugging**.  
+6. Kliknij dwukrotnie **CLRVersionForDebugging**.  
   
-7.  W **Edytowanie ciągu** wpisz numer wersji .NET Framework w **wartość** pole. Na przykład: V1.1.4322  
+7. W **Edytowanie ciągu** wpisz numer wersji .NET Framework w **wartość** pole. Na przykład: V1.1.4322  
   
-8.  Kliknij przycisk **OK**.  
+8. Kliknij przycisk **OK**.  
   
 9. Zamknij **Edytora rejestru**.  
   
-     Jeśli nadal zostanie wyświetlony komunikat o błędzie podczas uruchamiania debugowania, sprawdź, czy wprowadzony numer wersji, który jest poprawnie w rejestrze. Sprawdź również, że używasz wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] obsługiwane przez program Visual Studio. Debuger jest zgodny z bieżącą wersją .NET Framework i poprzednich wersji, ale może nie być zgodne wprzód w przyszłych wersjach.  
+     Jeśli nadal otrzymujesz komunikat o błędzie podczas uruchamiania debugowania, upewnij się, że wprowadzony numer wersji, który jest poprawnie w rejestrze. Sprawdź także, że używasz wersji [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] obsługiwane przez program Visual Studio. Debuger jest zgodny z bieżącen wersji .NET Framework i poprzednich wersji, ale może nie być zgodny wprzód z przyszłych wersji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Ustawienia debugowania i przygotowanie](../debugger/debugger-settings-and-preparation.md)
+ [Ustawienia debugera i przygotowanie](../debugger/debugger-settings-and-preparation.md)

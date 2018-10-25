@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a111c1f7bc228a26ab320f82f19111eafaf2ee
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 6242b80c1dcefe0e1a3a35561337a75e6098d25d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913452"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Porady: Tworzenie podstawowego modelu 3D
 
@@ -42,37 +42,37 @@ W tym artykule przedstawiono sposób używania edytora modelu do tworzenia podst
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>Aby utworzyć uproszczony model 3D w domu
 
-1.  Utwórz model 3D, z którą chcesz pracować. Aby uzyskać informacje dotyczące sposobu dodawania modelu do swojego projektu, zobacz sekcję pierwsze kroki w [edytora modelu](../designers/model-editor.md).
+1. Utwórz model 3D, z którą chcesz pracować. Aby uzyskać informacje dotyczące sposobu dodawania modelu do swojego projektu, zobacz sekcję pierwsze kroki w [edytora modelu](../designers/model-editor.md).
 
-2.  Dodaj moduł do sceny. W **przybornika** okna, w obszarze **kształty**, wybierz opcję **modułu** i przenieś go do powierzchni projektowej.
+2. Dodaj moduł do sceny. W **przybornika** okna, w obszarze **kształty**, wybierz opcję **modułu** i przenieś go do powierzchni projektowej.
 
-3.  Przełącz się do wyboru twarzy. Na pasku narzędzi edytora modelu wybierz **wybierz krój**.
+3. Przełącz się do wyboru twarzy. Na pasku narzędzi edytora modelu wybierz **wybierz krój**.
 
-4.  Należy podzielić górnej części modułu. W przypadku trybu wyboru pierwszego planu wybierz moduł raz go uaktywnić dla zaznaczenia, a następnie wybierz górnej części modułu, aby zaznacz powierzchnię, najważniejsze. Na pasku narzędzi edytora modelu wybierz **Podziel pierwszy plan**. Spowoduje to dodanie nowe wierzchołki na początku modułu, który podzielić ją na cztery partycje równej wielkości.
+4. Należy podzielić górnej części modułu. W przypadku trybu wyboru pierwszego planu wybierz moduł raz go uaktywnić dla zaznaczenia, a następnie wybierz górnej części modułu, aby zaznacz powierzchnię, najważniejsze. Na pasku narzędzi edytora modelu wybierz **Podziel pierwszy plan**. Spowoduje to dodanie nowe wierzchołki na początku modułu, który podzielić ją na cztery partycje równej wielkości.
 
-     ![Górnej części modułu zostały podzielone](../designers/media/gfx_model_demo_house_subdiv.png)
+    ![Górnej części modułu zostały podzielone](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5.  Wyciągnięcie dwóch sąsiednich boków modułu — na przykład frontonu i prawej stronie modułu. W trybu wyboru pierwszego planu wybierz moduł raz go uaktywnić dla zaznaczenia, a następnie wybierz polecenie po jednej stronie modułu. Naciśnij i przytrzymaj klawisz **Ctrl** klucza, wybierz inny boku modułu, która jest przyległa do strony, należy najpierw wybrać, a następnie na pasku narzędzi edytora modelu, wybierz **wyciągnij**.
+5. Wyciągnięcie dwóch sąsiednich boków modułu — na przykład frontonu i prawej stronie modułu. W trybu wyboru pierwszego planu wybierz moduł raz go uaktywnić dla zaznaczenia, a następnie wybierz polecenie po jednej stronie modułu. Naciśnij i przytrzymaj klawisz **Ctrl** klucza, wybierz inny boku modułu, która jest przyległa do strony, należy najpierw wybrać, a następnie na pasku narzędzi edytora modelu, wybierz **wyciągnij**.
 
-     ![Boków modułu została wyrzucane.](../designers/media/gfx_model_demo_house_extrude.png)
+    ![Boków modułu została wyrzucane.](../designers/media/gfx_model_demo_house_extrude.png)
 
-6.  Jedną z extrusions rozszerzyć. Wybierz jedną z twarzy, które właśnie, usunąć, a następnie na pasku narzędzi edytora modelu wybierz **Translate** narzędzia i Przenieś manipulator tłumaczenia w tym samym kierunku co wytłaczanie metali.
+6. Jedną z extrusions rozszerzyć. Wybierz jedną z twarzy, które właśnie, usunąć, a następnie na pasku narzędzi edytora modelu wybierz **Translate** narzędzia i Przenieś manipulator tłumaczenia w tym samym kierunku co wytłaczanie metali.
 
-     ![Dodatkowo ma zostały wyrzucane po jednej stronie modułu.](../designers/media/gfx_model_demo_house_extend.png)
+    ![Dodatkowo ma zostały wyrzucane po jednej stronie modułu.](../designers/media/gfx_model_demo_house_extend.png)
 
-7.  Przeprowadzić triangulację modelu. Na pasku narzędzi edytora modelu wybierz **zaawansowane** > **narzędzia** > **triangulacja**.
+7. Przeprowadzić triangulację modelu. Na pasku narzędzi edytora modelu wybierz **zaawansowane** > **narzędzia** > **triangulacja**.
 
-8.  Utwórz dachu domu. Przełącz do trybu wyboru krawędzi, wybierając **krawędzi wybierz pozycję** na pasku narzędzi edytora modelu, a następnie wybierz moduł, aby ją uaktywnić. Naciśnij i przytrzymaj klawisz **Ctrl** klucza podczas zaznaczania krawędzi, które przedstawiono poniżej:
+8. Utwórz dachu domu. Przełącz do trybu wyboru krawędzi, wybierając **krawędzi wybierz pozycję** na pasku narzędzi edytora modelu, a następnie wybierz moduł, aby ją uaktywnić. Naciśnij i przytrzymaj klawisz **Ctrl** klucza podczas zaznaczania krawędzi, które przedstawiono poniżej:
 
-     ![Krawędzie, tworzące Szczyt dachu](../designers/media/gfx_model_demo_house_edges.png)
+    ![Krawędzie, tworzące Szczyt dachu](../designers/media/gfx_model_demo_house_edges.png)
 
-     Po wybraniu krawędzie, na pasku narzędzi edytora modelu, wybierz **Translate** narzędzia, a następnie przenieść manipulator tłumaczenia w górę, aby utworzyć dachu domu.
+    Po wybraniu krawędzie, na pasku narzędzi edytora modelu, wybierz **Translate** narzędzia, a następnie przenieść manipulator tłumaczenia w górę, aby utworzyć dachu domu.
 
- Model DOM uproszczone zostało ukończone. Oto ponownie końcowego modelu z płaskim cieniowaniem stosowane:
+   Model DOM uproszczone zostało ukończone. Oto ponownie końcowego modelu z płaskim cieniowaniem stosowane:
 
- ![Ukończone modelu DOM uproszczony](../designers/media/gfx_model_demo_house_final.png)
+   ![Ukończone modelu DOM uproszczony](../designers/media/gfx_model_demo_house_final.png)
 
- Kolejnym krokiem może stosowanie cieniowania do modelu 3D. Aby uzyskać informacje, zobacz [porady: stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   Kolejnym krokiem może stosowanie cieniowania do modelu 3D. Aby uzyskać informacje, zobacz [porady: stosowanie cieniowania do modelu 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Zobacz także
 

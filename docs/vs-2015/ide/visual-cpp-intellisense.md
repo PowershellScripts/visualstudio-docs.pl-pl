@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 104c85f7b23af8bfb412423ad1eeb27190a235c2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ced999c20678cc64dc5f96e86070b5f39d5ca2c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881680"
 ---
 # <a name="visual-c-intellisense"></a>Intellisense dla programu Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,23 +73,23 @@ W programie Visual Studio 2015 IntelliSense dostępnej dla pojedynczego kodu pli
   
  Zapamiętaj poniższe:  
   
--   #Else gałęzi w wierszu 8 jest wygaszone, aby wskazać region nieaktywne, ponieważ __ANDROID\_ \_ jest zdefiniowany dla projektu dla systemu Android.  
+- #Else gałęzi w wierszu 8 jest wygaszone, aby wskazać region nieaktywne, ponieważ `__ANDROID__` jest zdefiniowany dla projektu dla systemu Android.  
   
--   Zmienna powitanie, w wierszu 11 jest inicjowana z identyfikatorem Witaj, mającej wężyk purpurowy. Jest to spowodowane nie identyfikatora HELLO jest zdefiniowane w projekcie obecnie nieaktywne dla systemu iOS. Gdy w systemie Android będzie skompilować projekt w wierszu 11, nie będzie w systemie iOS. Ponieważ jest to kod udostępniony, który nie jest możesz zmienić, nawet jeśli skompilowany w aktualnie aktywnej konfiguracji.  
+- Zmienna powitanie, w wierszu 11 jest inicjowana z identyfikatorem Witaj, mającej wężyk purpurowy. Jest to spowodowane nie identyfikatora HELLO jest zdefiniowane w projekcie obecnie nieaktywne dla systemu iOS. Gdy w systemie Android będzie skompilować projekt w wierszu 11, nie będzie w systemie iOS. Ponieważ jest to kod udostępniony, który nie jest możesz zmienić, nawet jeśli skompilowany w aktualnie aktywnej konfiguracji.  
   
--   W wierszu 12 ma czerwona fala na identyfikator BYE; Ten identyfikator nie jest zdefiniowany w aktualnie zaznaczonego aktywnego projektu.  
+- W wierszu 12 ma czerwona fala na identyfikator BYE; Ten identyfikator nie jest zdefiniowany w aktualnie zaznaczonego aktywnego projektu.  
   
- Teraz Zmień aktywnego projektu na iOS.StaticLibrary i zwróć uwagę, jak zmienić faliste linie.  
+  Teraz Zmień aktywnego projektu na iOS.StaticLibrary i zwróć uwagę, jak zmienić faliste linie.  
   
- ![dla systemu iOS jest wybrany jako aktywnego projektu. ](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
+  ![dla systemu iOS jest wybrany jako aktywnego projektu. ](../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")  
   
- Zapamiętaj poniższe:  
+  Zapamiętaj poniższe:  
   
--   Gałąź #ifdef w wierszu 6 jest wygaszone, aby wskazać region nieaktywne, ponieważ __ANDROID\_ \_ nie jest zdefiniowany dla projektu systemu iOS.  
+- Gałąź #ifdef w wierszu 6 jest wygaszone, aby wskazać region nieaktywne, ponieważ *_ANDROID\\*  \_ nie jest zdefiniowany dla projektu systemu iOS.  
   
--   Zmienna powitanie, w wierszu 11 jest inicjowana z identyfikatorem Witaj, który ma teraz czerwona fala. Jest to spowodowane nie identyfikatora HELLO jest zdefiniowane w projekcie aktualnie aktywne dla systemu iOS.  
+- Zmienna powitanie, w wierszu 11 jest inicjowana z identyfikatorem Witaj, który ma teraz czerwona fala. Jest to spowodowane nie identyfikatora HELLO jest zdefiniowane w projekcie aktualnie aktywne dla systemu iOS.  
   
--   Wiersz 12 ma purpurowy wężyk na identyfikatorze BYE; Ten identyfikator nie jest zdefiniowany w obecnie nieaktywne Android.NativeActivity projektu.  
+- Wiersz 12 ma purpurowy wężyk na identyfikatorze BYE; Ten identyfikator nie jest zdefiniowany w obecnie nieaktywne Android.NativeActivity projektu.  
   
 ## <a name="single-file-intellisense"></a>Pojedynczy plik IntelliSense  
  Po otwarciu pojedynczy plik poza jakiegokolwiek projektu, będzie nadal się pojawiać IntelliSense. Można włączyć lub wyłączyć określonych funkcji, przechodząc do **Edytor tekstu, C/C++, zaawansowane** można włączyć lub wyłączyć funkcje IntelliSense. Aby skonfigurować ustawienia funkcji IntelliSense dla pojedynczych plików, które nie są częścią projektu, należy wyszukać **IntelliSense i przeglądania plików poza projektami** w **zaawansowane** sekcji. Zobacz [Przewodnik po Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  

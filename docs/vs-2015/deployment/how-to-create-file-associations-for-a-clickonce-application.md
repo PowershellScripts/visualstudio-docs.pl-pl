@@ -21,12 +21,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8b6d5d7b6196b78bfaa68d944b9e652dabf54b85
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fd1bd7965f0277ce1d3d900be6ee10db097eeb3f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909110"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Porady: tworzenie skojarzeń plików dla aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,31 +35,31 @@ ms.locfileid: "49300964"
   
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>Aby utworzyć skojarzenia plików dla aplikacji ClickOnce  
   
-1.  Tworzenie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji zwykle, lub użyj istniejącej [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji.  
+1. Tworzenie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji zwykle, lub użyj istniejącej [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji.  
   
-2.  Otwórz manifest aplikacji przy użyciu tekstu lub edytorze XML, takiego jak Notatnik.  
+2. Otwórz manifest aplikacji przy użyciu tekstu lub edytorze XML, takiego jak Notatnik.  
   
-3.  Znajdź `assembly` elementu. Aby uzyskać więcej informacji, zobacz [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md).  
+3. Znajdź `assembly` elementu. Aby uzyskać więcej informacji, zobacz [Manifest aplikacji ClickOnce](../deployment/clickonce-application-manifest.md).  
   
-4.  Jako element podrzędny elementu `assembly` elementu Dodawanie `fileAssociation` elementu. `fileAssociation` Element ma cztery atrybuty:  
+4. Jako element podrzędny elementu `assembly` elementu Dodawanie `fileAssociation` elementu. `fileAssociation` Element ma cztery atrybuty:  
   
-    -   `extension`Rozszerzenie nazwy pliku, który chcesz skojarzyć z aplikacją.  
+   - `extension`Rozszerzenie nazwy pliku, który chcesz skojarzyć z aplikacją.  
   
-    -   `description`Opis typ pliku, który pojawi się w usłudze Windows shell.  
+   - `description`Opis typ pliku, który pojawi się w usłudze Windows shell.  
   
-    -   `progid`: Ciąg unikatowo identyfikujący typ pliku, aby oznaczyć go w rejestrze.  
+   - `progid`: Ciąg unikatowo identyfikujący typ pliku, aby oznaczyć go w rejestrze.  
   
-    -   `defaultIcon`: Ikony do użycia dla tego typu pliku. Ikony, należy dodać jako zasób w pliku w manifeście aplikacji. Aby uzyskać więcej informacji, zobacz [porady: uwzględnianie pliku danych w aplikacji ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+   - `defaultIcon`: Ikony do użycia dla tego typu pliku. Ikony, należy dodać jako zasób w pliku w manifeście aplikacji. Aby uzyskać więcej informacji, zobacz [porady: uwzględnianie pliku danych w aplikacji ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
      Na przykład `file` i `fileAssociation` elementów, zobacz [ \<fileassociation — > Element](../deployment/fileassociation-element-clickonce-application.md).  
   
-5.  Jeśli chcesz skojarzyć więcej niż jeden typ pliku z aplikacją, Dodaj dodatkowe `fileAssociation` elementów. Należy pamiętać, że `progid` atrybut powinien być inne dla każdego.  
+5. Jeśli chcesz skojarzyć więcej niż jeden typ pliku z aplikacją, Dodaj dodatkowe `fileAssociation` elementów. Należy pamiętać, że `progid` atrybut powinien być inne dla każdego.  
   
-6.  Po zakończeniu manifest aplikacji, należy ponownie podpisać manifest. Można to zrobić z wiersza polecenia przy użyciu Mage.exe.  
+6. Po zakończeniu manifest aplikacji, należy ponownie podpisać manifest. Można to zrobić z wiersza polecenia przy użyciu Mage.exe.  
   
-     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
+    `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-     Aby uzyskać więcej informacji, zobacz [Mage.exe (Manifest Generation i narzędzia do edytowania)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
+    Aby uzyskać więcej informacji, zobacz [Mage.exe (Manifest Generation i narzędzia do edytowania)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
   
 ## <a name="see-also"></a>Zobacz też  
  [\<fileassociation — > Element](../deployment/fileassociation-element-clickonce-application.md)   

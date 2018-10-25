@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f9a150760636fd5717c427324688c564b80aca30
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: aa8f773ba6f9d0722eb4e07e9c795d0d43860ebb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869992"
 ---
 # <a name="debugging-a-t4-text-template"></a>Debugowanie szablonu tekstowego T4
 Możesz ustawić punkty przerwania w szablonach tekstowych. Aby debugować szablon tekstowy czasu projektowania, Zapisz plik szablonu tekstu, a następnie wybierz **Debuguj szablon T4** menu skrótów pliku w Eksploratorze rozwiązań. Aby debugować szablonie tekstowym czasu wykonywania, po prostu debugowania aplikacji, do której należy.
@@ -25,7 +25,7 @@ Możesz ustawić punkty przerwania w szablonach tekstowych. Aby debugować szabl
  Debugowanie szablonu tekstu, należy zrozumieć kroki proces przekształcania szablonu. Różne rodzaje błędów może wystąpić w każdym kroku. Dostępne są następujące kroki.
 
 |Krok|Szablon czasu projektowania: gdy zdarza się to|Szablon czasu wykonywania: gdy zdarza się to|
-|----------|--------------------------------------------|-----------------------------------------|
+|-|-|-|
 |Kod jest generowany na podstawie szablonu tekstu.<br /><br /> Błędy w dyrektywach, niezgodny lub disordered `<#...#>` tagów.|Podczas zapisywania szablonu lub wywoływanie przekształcenia tekstu.|Podczas zapisywania szablonu lub wywoływanie przekształcenia tekstu.|
 |Wygenerowany kod jest kompilowany.<br /><br /> Błędy kompilacji kodu szablonu.|Bezpośrednio po poprzednim kroku.|Wraz z kodu aplikacji.|
 |Kod jest uruchamiany.<br /><br /> Błędy czasu wykonywania w kodzie szablonu.|Bezpośrednio po poprzednim kroku.|Gdy aplikacja działa i wywołuje kod szablonu.|
@@ -38,7 +38,7 @@ Możesz ustawić punkty przerwania w szablonach tekstowych. Aby debugować szabl
  W poniższej tabeli wymieniono najbardziej typowe błędy i ich poprawki.
 
 |Komunikat o błędzie|Opis|Rozwiązanie|
-|-------------------|-----------------|--------------|
+|-|-|-|
 |Nie można załadować klasy bazowej{0}"przekształcenia, które klasa dziedziczy.|Występuje, gdy nie można znaleźć klasy bazowej, określone w `inherits` parametru w dyrektywie szablonu. Komunikat zawiera numer wiersza — dyrektywa szablonu.|Upewnij się, określonej klasy istnieje i że zestaw, który znajduje się w określono w dyrektywie zestawu.|
 |Nie można rozpoznać zawierają tekst dla pliku:{0}|Występuje, gdy nie można odnaleźć dołączone szablonu. Komunikat zawiera nazwę żądanej dołączanego pliku.|Pamiętaj, że ścieżka pliku jest względną ścieżkę oryginalnego szablonu lub że plik znajduje się w lokalizacji, która jest zarejestrowana z hostem lub czy jest pełną ścieżką do pliku.|
 |Wygenerowano błędy podczas inicjowania obiektu transformacji. Transformacja nie zostanie uruchomiona.|Występuje, gdy "Initialize()" klasy przekształcenia nie powiodło się lub zwrócił wartość false.|Kod do funkcji Initialize() pochodzi z klasy bazowej przekształcania określonej w \<#@template#> dyrektywy i procesorów dyrektyw. Błąd, który spowodował zainicjować się prawdopodobnie niepowodzeniem znajduje się na liście błędów. Należy zbadać, dlaczego nie powiodło się. Można wyszukać w rzeczywistych wygenerowanego kodu Initialize() zgodnie z instrukcjami opisanymi na debugowanie szablonu.|
@@ -52,7 +52,7 @@ Możesz ustawić punkty przerwania w szablonach tekstowych. Aby debugować szabl
  W poniższej tabeli wymieniono najbardziej typowe ostrzeżenia wraz z poprawek, jeśli jest dostępny.
 
 |Komunikat ostrzegawczy|Opis|Rozwiązanie|
-|---------------------|-----------------|--------------|
+|-|-|-|
 |Podczas ładowania pliku dyrektywy include "{0}" zwrócił wartość null lub pusty ciąg.|Występuje, gdy plik szablonu dołączonym tekście jest pusta. Komunikat zawiera nazwę pliku dołączonego pliku.|Usuń dyrektywy include lub upewnij się, że plik ma odpowiednią zawartość.|
 |Kompilowanie transformacji:|Dołącza ten ciąg do wszystkich ostrzeżeń ani błędów, pochodzące z kompilatora, jeżeli kompiluje transformacji. Ten ciąg oznacza, że kompilator wygenerował błąd lub ostrzeżenie.|Jeśli masz problem ze znalezieniem biblioteki DLL, może być konieczne Podaj pełną ścieżkę lub pełną silnej nazwy, jeśli biblioteka DLL jest w GAC.|
 |Parametr "{0}" już istnieje w dyrektywie. Zduplikowany parametr zostanie zignorowany.|Występuje, gdy parametr jest określony więcej niż jeden raz w dyrektywie. Komunikat zawiera nazwę parametru i numer wiersza dyrektywy.|Usuń specyfikację zduplikowany parametr.|

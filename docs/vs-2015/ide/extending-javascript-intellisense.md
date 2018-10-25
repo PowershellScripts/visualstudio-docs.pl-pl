@@ -20,12 +20,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214256"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867081"
 ---
 # <a name="extending-javascript-intellisense"></a>Rozszerzanie JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,13 +84,13 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  W kodzie rozszerzenia można utworzyć procedury obsługi dla następujących typów zdarzeń za pomocą `addEventListener`:  
   
--   `statementcompletion`, która dodaje program obsługi zdarzeń uzupełniania instrukcji. Dokańczanie instrukcji zawiera listę elementów członkowskich dla określonego typu, który pojawia się po wpisaniu znaki specjalne, takie jak kropka (.) lub listę identyfikatorów, która pojawia się podczas wpisywania lub po naciśnięciu klawisza CTRL + J. Program obsługi odbiera zdarzenia obiektu typu `CompletionEvent`, który obsługuje następujące elementy członkowskie: [elementów właściwości](#Items), [właściwość docelowa](#Target), [targetName właściwość](#TargetName), i [zakresu właściwości](#Scope).  
+- `statementcompletion`, która dodaje program obsługi zdarzeń uzupełniania instrukcji. Dokańczanie instrukcji zawiera listę elementów członkowskich dla określonego typu, który pojawia się po wpisaniu znaki specjalne, takie jak kropka (.) lub listę identyfikatorów, która pojawia się podczas wpisywania lub po naciśnięciu klawisza CTRL + J. Program obsługi odbiera zdarzenia obiektu typu `CompletionEvent`, który obsługuje następujące elementy członkowskie: [elementów właściwości](#Items), [właściwość docelowa](#Target), [targetName właściwość](#TargetName), i [zakresu właściwości](#Scope).  
   
--   `signaturehelp`, która dodaje program obsługi dla funkcji IntelliSense o parametrach. Informacje o parametrach zapewnia informacje dotyczące liczby, nazw i typów parametrów wymaganych przez funkcję. Program obsługi odbiera zdarzenia obiektu typu `SignatureHelpEvent`, który obsługuje następujące elementy członkowskie: [właściwość docelowa](#Target), [parentObject właściwość](#ParentObject), [functionComments właściwość](#FunctionComments), [functionHelp właściwość](#FunctionHelp).  
+- `signaturehelp`, która dodaje program obsługi dla funkcji IntelliSense o parametrach. Informacje o parametrach zapewnia informacje dotyczące liczby, nazw i typów parametrów wymaganych przez funkcję. Program obsługi odbiera zdarzenia obiektu typu `SignatureHelpEvent`, który obsługuje następujące elementy członkowskie: [właściwość docelowa](#Target), [parentObject właściwość](#ParentObject), [functionComments właściwość](#FunctionComments), [functionHelp właściwość](#FunctionHelp).  
   
--   `statementcompletionhint`, która dodaje program obsługi dla szybkie informacje technologii IntelliSense. Okno podręczne szybkie informacje przedstawia pełną deklarację dla identyfikatorów w kodzie. Program obsługi odbiera zdarzenia obiektu typu `CompletionHintEvent`, który obsługuje następujące elementy członkowskie: [completionItem właściwość](#CompletionItem), i [symbolHelp właściwość](#SymbolHelp).  
+- `statementcompletionhint`, która dodaje program obsługi dla szybkie informacje technologii IntelliSense. Okno podręczne szybkie informacje przedstawia pełną deklarację dla identyfikatorów w kodzie. Program obsługi odbiera zdarzenia obiektu typu `CompletionHintEvent`, który obsługuje następujące elementy członkowskie: [completionItem właściwość](#CompletionItem), i [symbolHelp właściwość](#SymbolHelp).  
   
- Przykłady pokazujące, funkcje IntelliSense, takich jak uzupełnianie instrukcji i informacje o parametrach, szybkie informacje, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md).  
+  Przykłady pokazujące, funkcje IntelliSense, takich jak uzupełnianie instrukcji i informacje o parametrach, szybkie informacje, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md).  
   
 > [!NOTE]
 >  W języku JavaScript szybkie informacje odnosi się do wyskakujące okno, który pojawia się po prawej stronie listy uzupełniania. Nie można ręcznie wywołać Quick Info.  

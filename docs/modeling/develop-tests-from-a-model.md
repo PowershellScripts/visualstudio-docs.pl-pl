@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4f741b8b47b4ddf5b07cec2a612173a52bf5fbd9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1fd3b1cd19efa9032b7b92576a489e3b17373db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859786"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919343"
 ---
 # <a name="develop-tests-from-a-model"></a>Opracowywanie testów na podstawie modelu
 Wymagania i modele architektury można użyć, aby ułatwić organizowanie testów systemu i jego składników. Praktyka ta pomaga zagwarantować, że testowania wymagań które są ważne dla użytkowników i innych zainteresowanych stron i pomaga szybko aktualizować testów, gdy zmienią się wymagania. Jeśli używasz [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], można także utrzymać łącza między modele i testy.
@@ -59,19 +59,19 @@ Wymagania i modele architektury można użyć, aby ułatwić organizowanie test�
 
 ###### <a name="to-link-tests-to-a-use-case"></a>Aby połączyć testy przypadek użycia
 
-1.  W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], Utwórz wymagania i podstawą zestaw testów.
+1. W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], Utwórz wymagania i podstawą zestaw testów.
 
-     Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z Team Foundation. Aby uzyskać więcej informacji, zobacz [o Zwinne narzędzia i Agile zarządzanie projektem](/azure/devops/boards/backlogs/overview?view=vsts).
+    Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z Team Foundation. Aby uzyskać więcej informacji, zobacz [o Zwinne narzędzia i Agile zarządzanie projektem](/azure/devops/boards/backlogs/overview?view=vsts).
 
-2.  Elementem roboczym należy połączyć jeden lub więcej przypadków użycia w modelu.
+2. Elementem roboczym należy połączyć jeden lub więcej przypadków użycia w modelu.
 
-     Na diagramie przypadków użycia, kliknij prawym przyciskiem myszy przypadek użycia, a następnie kliknij przycisk **łącze do elementu roboczego**.
+    Na diagramie przypadków użycia, kliknij prawym przyciskiem myszy przypadek użycia, a następnie kliknij przycisk **łącze do elementu roboczego**.
 
-3.  Dodaj do zestawu testów, przypadki testowe, które Sprawdź przypadki użycia.
+3. Dodaj do zestawu testów, przypadki testowe, które Sprawdź przypadki użycia.
 
- Zwykle każdy element roboczy użytkownika, jak użycia lub wymagania połączy się z kilku przypadków użycia w modelu i każdego przypadku użycia połączy się z kilku przypadków użycia lub wymagań. Jest to spowodowane każdego przypadku użycia lub wymagania obejmuje zestaw zadań, które opracowywanie kilka przypadków użycia. Na przykład w wczesnych iteracji projektu, możesz tworzyć historii użytkownika podstawowego, w którym klient może wybierz elementy z wykazu i zostały one dostarczone. W późniejszej iteracji może ona brzmieć, że użytkownik płaci podczas realizacji zamówienia i dostawca otrzymuje pieniądze, po wysłaniu towarów.  Każdy wątek dodaje klauzulę postcondition w przypadku użycia towarów zamówienia.
+   Zwykle każdy element roboczy użytkownika, jak użycia lub wymagania połączy się z kilku przypadków użycia w modelu i każdego przypadku użycia połączy się z kilku przypadków użycia lub wymagań. Jest to spowodowane każdego przypadku użycia lub wymagania obejmuje zestaw zadań, które opracowywanie kilka przypadków użycia. Na przykład w wczesnych iteracji projektu, możesz tworzyć historii użytkownika podstawowego, w którym klient może wybierz elementy z wykazu i zostały one dostarczone. W późniejszej iteracji może ona brzmieć, że użytkownik płaci podczas realizacji zamówienia i dostawca otrzymuje pieniądze, po wysłaniu towarów.  Każdy wątek dodaje klauzulę postcondition w przypadku użycia towarów zamówienia.
 
- Można utworzyć osobne linki od wymagań dla klauzul postcondition, pisząc tych klauzul w oddzielnych komentarze na diagramie przypadków użycia. Każdy komentarz łącza z elementem roboczym wymagania i komentarz łącza do przypadku użycia na diagramie.
+   Można utworzyć osobne linki od wymagań dla klauzul postcondition, pisząc tych klauzul w oddzielnych komentarze na diagramie przypadków użycia. Każdy komentarz łącza z elementem roboczym wymagania i komentarz łącza do przypadku użycia na diagramie.
 
 ### <a name="base-tests-on-the-requirements-types"></a>Podstawowy testy na typy wymagań
  Typy, które jest, klasy, interfejsy i wyliczenia modelu wymagania opisano pojęcia i relacje pod względem sposobu użytkowników reakcji i komunikacji dotyczących firmy. Wyklucza typy danych tylko z wewnętrzną konstrukcją systemu.
@@ -147,15 +147,15 @@ Assert (countAfter == countBefore = 1);
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Aby połączyć testy elementu modelu lub relacji
 
-1.  W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], Utwórz wymagania i podstawą zestaw testów.
+1. W [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], Utwórz wymagania i podstawą zestaw testów.
 
-     Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z Team Foundation. Aby uzyskać więcej informacji, zobacz [o Zwinne narzędzia i Agile zarządzanie projektem](/azure/devops/boards/backlogs/overview?view=vsts).
+    Wymagania, którą tworzysz jest element roboczy w [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Może być elementem pracy scenariusza użycia, wymagania lub przypadek użycia, w zależności od szablonu procesu, który projekt korzysta z Team Foundation. Aby uzyskać więcej informacji, zobacz [o Zwinne narzędzia i Agile zarządzanie projektem](/azure/devops/boards/backlogs/overview?view=vsts).
 
-2.  Elementem roboczym należy połączyć jeden lub więcej elementów w modelu.
+2. Elementem roboczym należy połączyć jeden lub więcej elementów w modelu.
 
-     Na diagramie modelowania, kliknij prawym przyciskiem myszy element, komentarz lub relacji, a następnie kliknij przycisk **łącze do elementu roboczego**.
+    Na diagramie modelowania, kliknij prawym przyciskiem myszy element, komentarz lub relacji, a następnie kliknij przycisk **łącze do elementu roboczego**.
 
-3.  Dodaj do zestawu testów, przypadki testowe, które Sprawdź wymagań wyrażony w elemencie modelu.
+3. Dodaj do zestawu testów, przypadki testowe, które Sprawdź wymagań wyrażony w elemencie modelu.
 
 ## <a name="see-also"></a>Zobacz też
 

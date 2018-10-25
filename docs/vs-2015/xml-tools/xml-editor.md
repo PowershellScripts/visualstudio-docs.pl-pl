@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee20be802884e20b885e232da43f2ade9f96dbfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896331"
 ---
 # <a name="xml-editor"></a>Edytor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "49236876"
   
 Edytor XML opiera się na [!INCLUDE[msCoName](../includes/msconame-md.md)] Edytor tekstu Visual Studio i obejmuje obsługę języków XML. Edytor XML oferuje następujące funkcje:  
   
--   Sprawdzanie składni XML 1.0.  
+- Sprawdzanie składni XML 1.0.  
   
--   Weryfikacja schematu podczas wpisywania.  
+- Weryfikacja schematu podczas wpisywania.  
   
--   Obsługę fragmentów kodu XML, w tym wygenerować schematu fragmentów kodu.  
+- Obsługę fragmentów kodu XML, w tym wygenerować schematu fragmentów kodu.  
   
--   Pomoc techniczna dla definicji typu dokumentu (DTD).  
+- Pomoc techniczna dla definicji typu dokumentu (DTD).  
   
--   Obsługa schematu języka (XSD) definicji schematu XML.  
+- Obsługa schematu języka (XSD) definicji schematu XML.  
   
--   Tworzenie schematu XML z wystąpienia dokumentu XML.  
+- Tworzenie schematu XML z wystąpienia dokumentu XML.  
   
--   Konwertowanie schematu DTD lub danych XML (XDR) do schematu XML.  
+- Konwertowanie schematu DTD lub danych XML (XDR) do schematu XML.  
   
--   Sprawdzanie składni specyfikacji XSLT 1.0.  
+- Sprawdzanie składni specyfikacji XSLT 1.0.  
   
--   Dokumentu, konspektu, tak aby elementy można rozszerzyć i zwinięte.  
+- Dokumentu, konspektu, tak aby elementy można rozszerzyć i zwinięte.  
   
--   Integracja z usługą [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md). Zapewnia to hierarchiczna widok schematów XML.  
+- Integracja z usługą [Eksploratora schematu XML](../xml-tools/xml-schema-explorer.md). Zapewnia to hierarchiczna widok schematów XML.  
   
- Edytor XML jest wywoływane dla rozszerzeń dobrze znanych plików, takich jak XML, XSD, XSL i .config. Również jest ono wywoływane na każde rozszerzenie nieznanym pliku, jeśli plik może zawierać kod XML. Za pomocą edytora XML każdego pliku, można także otworzyć za pomocą **Otwórz za pomocą** opcja i wybierając edytora XML z listy.  
+  Edytor XML jest wywoływane dla rozszerzeń dobrze znanych plików, takich jak XML, XSD, XSL i .config. Również jest ono wywoływane na każde rozszerzenie nieznanym pliku, jeśli plik może zawierać kod XML. Za pomocą edytora XML każdego pliku, można także otworzyć za pomocą **Otwórz za pomocą** opcja i wybierając edytora XML z listy.  
   
 ## <a name="express-editions"></a>Edycje Express.  
  Następujące funkcje edytora XML nie są dostępne w Visual Studio Express Editions:  

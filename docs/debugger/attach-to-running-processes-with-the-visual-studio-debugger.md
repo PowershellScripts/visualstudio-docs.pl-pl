@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc638bdd70e9456ea1f2c937febbfdd974f2d20
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: bdd83cb8b2d20d3e3abcacbb69d50e1a68831ca4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443639"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843265"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 Debuger programu Visual Studio można dołączyć do procesu uruchomionego na komputerze lokalnym lub zdalnym. Po uruchomieniu procesu wybierz **debugowania** > **dołączyć do procesu** lub naciśnij **Ctrl**+**Alt** + **P** w programie Visual Studio oraz za pomocą **dołączyć do procesu** okno dialogowe, aby dołączyć debuger do procesu.
@@ -54,30 +54,30 @@ Aby debugować proces na komputerze zdalnym, zobacz [dołączyć do procesu na k
 
 **Aby dołączyć do procesu na komputerze lokalnym:**  
 
-1.  W programie Visual Studio, wybierz **debugowania** > **dołączyć do procesu** (lub naciśnij **Ctrl**+**Alt** + **P**) aby otworzyć **dołączyć do procesu** okno dialogowe.
+1. W programie Visual Studio, wybierz **debugowania** > **dołączyć do procesu** (lub naciśnij **Ctrl**+**Alt** + **P**) aby otworzyć **dołączyć do procesu** okno dialogowe.
   
-  **Typ połączenia** powinna być równa **domyślne**. **Adres docelowy połączenia** powinna być nazwą komputera lokalnego. 
+   **Typ połączenia** powinna być równa **domyślne**. **Adres docelowy połączenia** powinna być nazwą komputera lokalnego. 
   
-  ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process") 
+   ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process") 
   
-1.  W **dostępne procesy** listy, Znajdź i wybierz proces lub procesy, które chcesz dołączyć do.  
+2. W **dostępne procesy** listy, Znajdź i wybierz proces lub procesy, które chcesz dołączyć do.  
 
-  - Aby szybko wybierz proces, wpisz jego nazwę lub pierwsza litera w **Filtruj procesy** pole. 
+   - Aby szybko wybierz proces, wpisz jego nazwę lub pierwsza litera w **Filtruj procesy** pole. 
   
-  - Jeśli nie znasz nazwy procesu, przeglądać listę lub zobaczyć [typowych scenariuszy debugowania](#BKMK_Scenarios) dla niektórych typowych nazw procesów. 
+   - Jeśli nie znasz nazwy procesu, przeglądać listę lub zobaczyć [typowych scenariuszy debugowania](#BKMK_Scenarios) dla niektórych typowych nazw procesów. 
   
-  >[!TIP]
-  >Procesy mogą uruchamiać i zatrzymywać w tle podczas **dołączyć do procesu** okno dialogowe jest otwarty, więc listy uruchomionych procesów nie zawsze jest bieżąca. Możesz wybrać **Odśwież** w dowolnym momencie, aby wyświetlić bieżącą listę. 
+   >[!TIP]
+   >Procesy mogą uruchamiać i zatrzymywać w tle podczas **dołączyć do procesu** okno dialogowe jest otwarty, więc listy uruchomionych procesów nie zawsze jest bieżąca. Możesz wybrać **Odśwież** w dowolnym momencie, aby wyświetlić bieżącą listę. 
   
-1.  W **dołączyć do** pola, upewnij się, typ planu do debugowania kodu, który ma na liście. Wartość domyślna **automatyczne** ustawienie działa w przypadku większości typów aplikacji. 
+3. W **dołączyć do** pola, upewnij się, typ planu do debugowania kodu, który ma na liście. Wartość domyślna **automatyczne** ustawienie działa w przypadku większości typów aplikacji. 
   
-  Aby ręcznie wybrać typy kodu:
-    1. Kliknij przycisk **wybierz**. 
-    1. W **Wybieranie typu kodu** okno dialogowe, wybierz **debugowania tych typów kodu**.
-    1. Wybierz typy kodu, który chcesz debugować.
-    1. Wybierz **OK**.
+   Aby ręcznie wybrać typy kodu:
+   1. Kliknij przycisk **wybierz**. 
+   1. W **Wybieranie typu kodu** okno dialogowe, wybierz **debugowania tych typów kodu**.
+   1. Wybierz typy kodu, który chcesz debugować.
+   1. Wybierz **OK**.
   
-1.  Wybierz **dołączyć**.
+4. Wybierz **dołączyć**.
   
 >[!NOTE]
 >Użytkownik może zostać dołączony do wielu aplikacji na potrzeby debugowania, ale tylko jednej aplikacji jest aktywny w debugerze w danym momencie. Można ustawić aktywnej aplikacji w programie Visual Studio **Lokalizacja debugowania** paska narzędzi lub **procesy** okna.  
@@ -90,46 +90,46 @@ Więcej instrukcje dotyczące debugowania aplikacji ASP.NET, które zostały wdr
 
 **Aby dołączyć do procesu uruchomionego na komputerze zdalnym:**  
 
-1.  W programie Visual Studio, wybierz **debugowania** > **dołączyć do procesu** (lub naciśnij **Ctrl**+**Alt** + **P**) aby otworzyć **dołączyć do procesu** okno dialogowe.
+1. W programie Visual Studio, wybierz **debugowania** > **dołączyć do procesu** (lub naciśnij **Ctrl**+**Alt** + **P**) aby otworzyć **dołączyć do procesu** okno dialogowe.
   
-1.  **Typ połączenia** powinien być **domyślne** w większości przypadków. W **adres docelowy połączenia** wybierz komputera zdalnego, przy użyciu jednej z następujących metod:
+2. **Typ połączenia** powinien być **domyślne** w większości przypadków. W **adres docelowy połączenia** wybierz komputera zdalnego, przy użyciu jednej z następujących metod:
 
-  - Wybierz strzałkę listy rozwijanej obok pozycji **adres docelowy połączenia**, a następnie wybierz nazwę komputera, z listy rozwijanej.  
-  - Wpisz nazwę komputera w **adres docelowy połączenia** pole.
+   - Wybierz strzałkę listy rozwijanej obok pozycji **adres docelowy połączenia**, a następnie wybierz nazwę komputera, z listy rozwijanej.  
+   - Wpisz nazwę komputera w **adres docelowy połączenia** pole.
       
-      > [!NOTE]
-      > Jeśli nie możesz się połączyć przy użyciu nazwy komputera zdalnego, spróbuj użyć adresu IP i portu adresu (na przykład `123.45.678.9:4022`). 4022 jest domyślnym portem dla zdalnego debugera programu Visual Studio 2017 x64. Aby uzyskać inne przypisania portów debugera zdalnego, zobacz [przypisania portów debugera zdalnego](remote-debugger-port-assignments.md).  
+     > [!NOTE]
+     > Jeśli nie możesz się połączyć przy użyciu nazwy komputera zdalnego, spróbuj użyć adresu IP i portu adresu (na przykład `123.45.678.9:4022`). 4022 jest domyślnym portem dla zdalnego debugera programu Visual Studio 2017 x64. Aby uzyskać inne przypisania portów debugera zdalnego, zobacz [przypisania portów debugera zdalnego](remote-debugger-port-assignments.md).  
       
-  - Wybierz **znaleźć** znajdujący się obok **adres docelowy połączenia** , aby otworzyć okno **połączeń zdalnych** okno dialogowe. **Połączeń zdalnych** okno dialogowe wyświetla listę wszystkich urządzeń, które znajdują się w podsieci lokalnej lub podłączone bezpośrednio do komputera. Konieczne może być [Otwórz UDP port 3702](../debugger/remote-debugger-port-assignments.md) na serwerze w celu odnajdywania urządzeń zdalnych. Wybierz komputer lub urządzenie, a następnie kliknij **wybierz**. 
+   - Wybierz **znaleźć** znajdujący się obok **adres docelowy połączenia** , aby otworzyć okno **połączeń zdalnych** okno dialogowe. **Połączeń zdalnych** okno dialogowe wyświetla listę wszystkich urządzeń, które znajdują się w podsieci lokalnej lub podłączone bezpośrednio do komputera. Konieczne może być [Otwórz UDP port 3702](../debugger/remote-debugger-port-assignments.md) na serwerze w celu odnajdywania urządzeń zdalnych. Wybierz komputer lub urządzenie, a następnie kliknij **wybierz**. 
   
-  > [!NOTE]
-  > **Typu połączenia** ustawienie utrzymuje się między sesjami debugowania. **Adres docelowy połączenia** ustawienie utrzymuje się między sesjami debugowania tylko wtedy, gdy wystąpił udane połączenie debugowania, z których platformą docelową.
+   > [!NOTE]
+   > **Typu połączenia** ustawienie utrzymuje się między sesjami debugowania. **Adres docelowy połączenia** ustawienie utrzymuje się między sesjami debugowania tylko wtedy, gdy wystąpił udane połączenie debugowania, z których platformą docelową.
 
-1.  Kliknij przycisk **Odśwież** do wypełniania **dostępne procesy** listy.
+3. Kliknij przycisk **Odśwież** do wypełniania **dostępne procesy** listy.
      
-     >[!TIP]
-     >Procesy mogą uruchamiać i zatrzymywać w tle podczas **dołączyć do procesu** okno dialogowe jest otwarty, więc listy uruchomionych procesów nie zawsze jest bieżąca. Możesz wybrać **Odśwież** w dowolnym momencie, aby wyświetlić bieżącą listę. 
+    >[!TIP]
+    >Procesy mogą uruchamiać i zatrzymywać w tle podczas **dołączyć do procesu** okno dialogowe jest otwarty, więc listy uruchomionych procesów nie zawsze jest bieżąca. Możesz wybrać **Odśwież** w dowolnym momencie, aby wyświetlić bieżącą listę. 
      
-1.  W **dostępne procesy** listy, Znajdź i wybierz proces lub procesy, które chcesz dołączyć do.  
+4. W **dostępne procesy** listy, Znajdź i wybierz proces lub procesy, które chcesz dołączyć do.  
 
-  - Aby szybko wybierz proces, wpisz jego nazwę lub pierwsza litera w **Filtruj procesy** pole. 
+   - Aby szybko wybierz proces, wpisz jego nazwę lub pierwsza litera w **Filtruj procesy** pole. 
   
-  - Jeśli nie znasz nazwy procesu, przeglądać listę lub zobaczyć [typowych scenariuszy debugowania](#BKMK_Scenarios) dla niektórych typowych nazw procesów. 
+   - Jeśli nie znasz nazwy procesu, przeglądać listę lub zobaczyć [typowych scenariuszy debugowania](#BKMK_Scenarios) dla niektórych typowych nazw procesów. 
   
-  - Aby wyszukać procesy uruchomione na wszystkich kontach użytkownika, wybierz **Pokaż procesy wszystkich użytkowników** pole wyboru.
+   - Aby wyszukać procesy uruchomione na wszystkich kontach użytkownika, wybierz **Pokaż procesy wszystkich użytkowników** pole wyboru.
       
-      >[!NOTE]
-      >Jeśli próbujesz dołączyć do procesu, którego właścicielem jest niezaufane konto użytkownika, pojawi się ostrzeżenie potwierdzenie okno dialogowe zabezpieczeń. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
+     >[!NOTE]
+     >Jeśli próbujesz dołączyć do procesu, którego właścicielem jest niezaufane konto użytkownika, pojawi się ostrzeżenie potwierdzenie okno dialogowe zabezpieczeń. Aby uzyskać więcej informacji, zobacz [ostrzeżenie o zabezpieczeniach: dołączanie do procesu należącego do niezaufanego użytkownika może być niebezpieczne. Jeśli informacje wyglądają podejrzanie lub niepewne, nie dołączaj do tego procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
       
-1.  W **dołączyć do** pola, upewnij się, typ planu do debugowania kodu, który ma na liście. Wartość domyślna **automatyczne** ustawienie działa w przypadku większości typów aplikacji. 
+5. W **dołączyć do** pola, upewnij się, typ planu do debugowania kodu, który ma na liście. Wartość domyślna **automatyczne** ustawienie działa w przypadku większości typów aplikacji. 
   
-  Aby ręcznie wybrać typy kodu:
-    1. Kliknij przycisk **wybierz**. 
-    1. W **Wybieranie typu kodu** okno dialogowe, wybierz **debugowania tych typów kodu**.
-    1. Wybierz typy kodu, który chcesz debugować.
-    1. Wybierz **OK**.
+   Aby ręcznie wybrać typy kodu:
+   1. Kliknij przycisk **wybierz**. 
+   1. W **Wybieranie typu kodu** okno dialogowe, wybierz **debugowania tych typów kodu**.
+   1. Wybierz typy kodu, który chcesz debugować.
+   1. Wybierz **OK**.
   
-1.  Wybierz **dołączyć**.
+6. Wybierz **dołączyć**.
   
 >[!NOTE]
 >Użytkownik może zostać dołączony do wielu aplikacji na potrzeby debugowania, ale tylko jednej aplikacji jest aktywny w debugerze w danym momencie. Można ustawić aktywnej aplikacji w programie Visual Studio **Lokalizacja debugowania** paska narzędzi lub **procesy** okna.  

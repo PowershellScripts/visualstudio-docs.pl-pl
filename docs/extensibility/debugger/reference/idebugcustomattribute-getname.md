@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a33b4507cb54095a38671eaf310d87dae180be6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 11a4b986799cf03221b4af077fc3e1e5809c4137
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866483"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 Pobiera nazwę atrybutu niestandardowego.  
@@ -44,10 +44,10 @@ int GetName(
  [out] Zwraca ciąg zawierający nazwę atrybutu niestandardowego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Zwracany przez tę metodę o nazwie odpowiada nazwie klasy użyć do zadeklarowania atrybutu. Może nie dokładnie odpowiadać nazwę klasy atrybutu niestandardowego sam jak C# pozwala sufiksem "Atrybutu", aby porzucić na podstawie nazwy atrybutów niestandardowych, gdy jest używany w deklaracji.  
+ Zwracany przez tę metodę o nazwie odpowiada nazwie klasy używane do deklarowania atrybutu. Może nie dokładnie odpowiadać Nazwa klasy atrybutów niestandardowych, sama jak C# umożliwia sufiks "Atrybutu", który będzie można usunąć z nazwy atrybutu niestandardowego, gdy jest używany w deklaracji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

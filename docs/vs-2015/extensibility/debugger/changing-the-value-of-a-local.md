@@ -16,12 +16,12 @@ ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fcdefc93f8d9843ac18a01f52e9c2a36f59ce4ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f07801b22086aa9a1e96a2efc99093a84bc72e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843655"
 ---
 # <a name="changing-the-value-of-a-local"></a>Zmienianie wartości zmiennej lokalnej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,21 +33,21 @@ ms.locfileid: "49226216"
   
  To omówienie procesu zmiany wartości zmiennej lokalnej:  
   
-1.  Gdy użytkownik wprowadzi nową wartość, program Visual Studio wywołuje [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) na [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt skojarzony z lokalnym.  
+1. Gdy użytkownik wprowadzi nową wartość, program Visual Studio wywołuje [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) na [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) obiekt skojarzony z lokalnym.  
   
-2.  `IDebugProperty2::SetValueAsString` wykonuje następujące zadania:  
+2. `IDebugProperty2::SetValueAsString` wykonuje następujące zadania:  
   
-    1.  Wylicza wartość ciągu do uzyskiwania wartości.  
+   1.  Wylicza wartość ciągu do uzyskiwania wartości.  
   
-    2.  Wiąże skojarzonego [IDebugField](../../extensibility/debugger/reference/idebugfield.md) obiektu w celu uzyskania [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) obiektu.  
+   2.  Wiąże skojarzonego [IDebugField](../../extensibility/debugger/reference/idebugfield.md) obiektu w celu uzyskania [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) obiektu.  
   
-    3.  Konwertuje wartość na serię bajtów.  
+   3.  Konwertuje wartość na serię bajtów.  
   
-    4.  Wywołania [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) można umieścić wartości bajtów do pamięci, aby program poddawany mają do nich dostęp.  
+   4.  Wywołania [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) można umieścić wartości bajtów do pamięci, aby program poddawany mają do nich dostęp.  
   
-3.  Odświeża programu Visual Studio **zmiennych lokalnych** wyświetlania (patrz [wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md) Aby uzyskać szczegółowe informacje).  
+3. Odświeża programu Visual Studio **zmiennych lokalnych** wyświetlania (patrz [wyświetlanie zmiennych lokalnych](../../extensibility/debugger/displaying-locals.md) Aby uzyskać szczegółowe informacje).  
   
- Ta procedura umożliwia również zmienić wartość zmiennej w **Obejrzyj** okno z wyjątkiem sytuacji kiedy `IDebugProperty2` obiekt skojarzony z wartością lokalnej, która jest używana zamiast `IDebugProperty2` obiekt skojarzony z lokalnym samego siebie.  
+   Ta procedura umożliwia również zmienić wartość zmiennej w **Obejrzyj** okno z wyjątkiem sytuacji kiedy `IDebugProperty2` obiekt skojarzony z wartością lokalnej, która jest używana zamiast `IDebugProperty2` obiekt skojarzony z lokalnym samego siebie.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Przykład implementacji zmieniania wartości](../../extensibility/debugger/sample-implementation-of-changing-values.md)  

@@ -8,12 +8,12 @@ title: Dokumentacja rozszerzalności programu Visual Studio | Dokumentacja firmy
 description: Dowiedz się więcej o możliwościach rozszerzania programu Visual Studio.
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: 37f5bfbac42c55a332ddf6f1904e2008d50ae40f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 3e5973cf0e5bd5ac87a14a167af24797c1b3d7dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842953"
 ---
 # <a name="visual-studio-extensibility-documentation"></a>Dokumentacja rozszerzalności programu Visual Studio
 
@@ -49,7 +49,7 @@ Program Visual Studio zapewnia wiele opcji rozszerzalności. Można rozszerzyć 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Rozszerzalność platformy kompilatora .NET („Roslyn”)</h3>
+                        <h3>Platforma kompilatora .NET (&quot;Roslyn&quot;) rozszerzalności</h3>
                     </div>
                 </div>
             </div>

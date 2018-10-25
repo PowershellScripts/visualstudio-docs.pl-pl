@@ -9,12 +9,12 @@ description: Logowanie może zakończyć się niepowodzeniem, jeśli są używan
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854471"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Logowanie do subskrypcji programu Visual Studio może zakończyć się niepowodzeniem przy użyciu aliasów
 
@@ -116,10 +116,10 @@ Po przypisaniu subskrypcji do subskrybenta, otrzymają one wiadomość e-mail z 
 1. Przejdź do https://my.visualstudio.comi kliknij przycisk **Utwórz nowe konto Microsoft**.
 
 2. Wypełnij pola:
-    - Wprowadź adres e-mail, która otrzymała powitalnej wiadomości E-mail w Someone@example.com okno
-    - Utwórz hasło
-    - Wybierz ustawienia promocyjna
-    - Kliknij przycisk **dalej**
+   - Wprowadź adres e-mail, która otrzymała powitalnej wiadomości E-mail w Someone@example.com okno
+   - Utwórz hasło
+   - Wybierz ustawienia promocyjna
+   - Kliknij przycisk **dalej**
 
 3. Wykonaj kroki weryfikacji, a następnie kliknij przycisk **dalej**.
 
@@ -141,10 +141,10 @@ Przypisano subskrypcji programu Visual Studio i może być kierowane do zalogowa
 2. Kliknij przycisk Utwórz nowy Account firmy Microsoft po prawej stronie
 
 3. Wypełnij formularz:
-    - Użyj swojego adresu e-mail firmy w someone@example.com okno
-    - Wprowadź hasło
-    - Wybierz preferencje promocyjna
-    - Kliknij przycisk Dalej
+   - Użyj swojego adresu e-mail firmy w someone@example.com okno
+   - Wprowadź hasło
+   - Wybierz preferencje promocyjna
+   - Kliknij przycisk Dalej
 
 4. Wykonaj kroki weryfikacji konta
 

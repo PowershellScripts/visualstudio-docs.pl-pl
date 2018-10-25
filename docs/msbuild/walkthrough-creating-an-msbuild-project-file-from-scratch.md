@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1254a7c768521f4ec8b84cb0e345dbee8fb25d69
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 4e2fba3d5a80de2be973d7a1efad7290731e5a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879866"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828885"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Przewodnik: Tworzenie pliku projektu MSBuild od zera
 Języki programowania, które obsługują program .NET Framework używają plików projektu MSBuild do opisywania i kontrolowania procesu tworzenia aplikacji. Gdy używasz programu Visual Studio do tworzenia pliku projektu programu MSBuild, właściwy XML jest automatycznie dodawany do pliku. Jednak może okazać się pomocne w zrozumieniu, w jaki sposób XML jest zorganizowany i jak mogą zmienić go, aby kontrolować kompilację.  

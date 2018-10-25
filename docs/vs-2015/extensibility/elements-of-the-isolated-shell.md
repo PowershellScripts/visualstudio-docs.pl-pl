@@ -15,12 +15,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca63b6a8c973b33a9dffc98966fd0622c0a5407a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868433"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Elementy programu Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Można zmodyfikować ustawień rejestru, ustawienia środowiska wykonawczego i p
 ## <a name="run-time-settings"></a>Ustawienia środowiska wykonawczego  
  Po uruchomieniu aplikacji isolated shell wywołuje punkt wejścia uruchamiania powłoki programu Visual Studio. Ustawienia aplikacji są definiowane podczas uruchamiania aplikacji, w następujący sposób:  
   
-1.  Visual Studio shell sprawdza rejest aplikacji określonych kluczy. Jeśli ustawienie klucza jest określony w wywołaniu do rozpoczęcia punktu wejścia, ta wartość zastępuje wartość, w rejestrze.  
+1. Visual Studio shell sprawdza rejest aplikacji określonych kluczy. Jeśli ustawienie klucza jest określony w wywołaniu do rozpoczęcia punktu wejścia, ta wartość zastępuje wartość, w rejestrze.  
   
-2.  Jeśli punkt wejścia ani rejestru parametr określa wartość ustawienia, a następnie zostanie użyta domyślna wartość dla ustawienia.  
+2. Jeśli punkt wejścia ani rejestru parametr określa wartość ustawienia, a następnie zostanie użyta domyślna wartość dla ustawienia.  
   
- Gdy użytkownik uruchamia aplikację z poziomu wiersza polecenia, wszystkie przełączniki wiersza polecenia są przekazywane do powłoki programu Visual Studio, który traktuje je w taki sam sposób, który wykonuje Devenv. Aby uzyskać więcej informacji na temat parametrów Devenv zobacz [przełączników wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md) i [przełączniki wiersza polecenia Devenv dla programowania pakietu VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Aby uzyskać więcej informacji na temat sposobu pakietu rejestruje przełączniki wiersza polecenia, zobacz [Dodawanie przełączników wiersza polecenia](../extensibility/adding-command-line-switches.md).  
+   Gdy użytkownik uruchamia aplikację z poziomu wiersza polecenia, wszystkie przełączniki wiersza polecenia są przekazywane do powłoki programu Visual Studio, który traktuje je w taki sam sposób, który wykonuje Devenv. Aby uzyskać więcej informacji na temat parametrów Devenv zobacz [przełączników wiersza polecenia Devenv](../ide/reference/devenv-command-line-switches.md) i [przełączniki wiersza polecenia Devenv dla programowania pakietu VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md). Aby uzyskać więcej informacji na temat sposobu pakietu rejestruje przełączniki wiersza polecenia, zobacz [Dodawanie przełączników wiersza polecenia](../extensibility/adding-command-line-switches.md).  
   
 ## <a name="the-start-entry-point"></a>Punkt wejścia Start  
  Plik Appenvstub.dll zawiera punkty wejścia do uzyskiwania dostępu do programu isolated shell. Po uruchomieniu aplikacji wywoływanych przez nią punktu wejścia Start Appenvstub.dll.  

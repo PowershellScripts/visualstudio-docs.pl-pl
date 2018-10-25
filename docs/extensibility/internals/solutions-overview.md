@@ -13,39 +13,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d64175c570c4fbca26bae0aa587b66e04cbee2be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97070a3c47f5e102ce974e0d7eeeea0380beff57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921239"
 ---
-# <a name="solutions-overview"></a>Omówienie rozwiązania
-Rozwiązanie to grupa składająca się z jednego lub więcej projektów, które współpracują ze sobą, aby utworzyć aplikację. Projekt i stan informacje dotyczące rozwiązania są przechowywane w dwóch plikach inne rozwiązanie. Plik rozwiązania (sln) jest tekstowy umieszczony pod kontrolą kodu źródłowego i udostępniana między użytkownikami i. Plik rozwiązania użytkownika opcji (.suo) jest plikiem binarnym. W związku z tym plik .suo — nie można umieścić pod kontrolą kodu źródłowego i zawiera informacje specyficzne dla użytkownika.  
+# <a name="solutions-overview"></a>Omówienie rozwiązań
+Rozwiązanie to grupa jeden lub więcej projektów, które współpracują ze sobą, aby utworzyć aplikację. Informacje o projekcie i stanie odnoszących się do rozwiązania są przechowywane w dwóch plikach innego rozwiązania. Plik rozwiązania (.sln) są oparte na tekście umieszczone pod kontrolą kodu źródłowego i udostępniana między użytkownikami i. Plik opcji (suo) użytkownika rozwiązania jest plikiem binarnym. Co w efekcie plik .suo nie można umieścić pod kontrolą kodu źródłowego i zawiera informacje specyficzne dla użytkownika.  
   
- Wszelkie pakiet VSPackage może zapisywać do dowolnego typu pliku rozwiązania. Z powodu charakter pliki istnieją dwa różne interfejsy zaimplementowana do zapisu do nich. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> Interfejsu zapisuje informacje tekstowe plik .sln i <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interfejsu zapisuje plik .suo strumienie binarne.  
+ Dowolnego pakietu VSPackage można zapisać do dowolnego typu pliku rozwiązania. Ze względu na charakter pliki istnieją dwa różne interfejsy implementowane był na nich zapis. <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> Interfejsu zapisuje informacje tekstowe do pliku .sln i <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interfejsu zapisuje plik .suo strumieni binarnych.  
   
 > [!NOTE]
->  Projekt nie ma jawnie zapisać wpisu dla siebie w pliku rozwiązania; Środowisko obsługi, który dla projektu. W związku z tym chyba że chcesz dodać dodatkową zawartość specjalnie do pliku rozwiązania, nie trzeba zarejestrować VSPackage w ten sposób.  
+>  Projekt nie ma jawnie zapisu wykorzystywany do pliku rozwiązania. środowisko sobie z nimi poradzi dla projektu. W związku z tym chyba że chcesz dodać dodatkową zawartość do pliku rozwiązania, nie trzeba zarejestrować Twojego pakietu VSPackage w ten sposób.  
   
- Każdy pakiet VSPackage Obsługa rozwiązania trwałości używa trzech interfejsów <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interfejsu, który jest implementowany przez środowisko i wywoływana przez pakiet VSPackage, i `IVsPersistSolutionProps` i `IVsPersistSolutionOpts`, są wdrożone zarówno przez pakiet VSPackage. `IVsPersistSolutionOpts` Interfejs tylko musi zostać wdrożone, jeśli ma on zostać zapisany plik .suo przez pakiet VSPackage prywatne informacje.  
+ Każdego pakietu VSPackage obsługi trwałości rozwiązanie używa trzech interfejsów <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interfejs, który jest implementowany przez środowisko i wywoływany przez pakietu VSPackage, i `IVsPersistSolutionProps` i `IVsPersistSolutionOpts`, które są zarówno implementowane przez pakietu VSPackage. `IVsPersistSolutionOpts` Interfejsu tylko musi zostać wdrożone, jeśli ma on zostać zapisany przez pakietu VSPackage plik .suo informacje prywatne.  
   
  Po otwarciu rozwiązania odbywa się następujący proces.  
   
-1.  Środowisko odczytuje rozwiązania.  
+1. Środowisko odczytuje rozwiązania.  
   
-2.  Jeśli znajdzie środowiska `CLSID`, ładuje odpowiedni pakiet VSPackage.  
+2. Jeśli znajdzie środowiska `CLSID`, ładuje odpowiedniego pakietu VSPackage.  
   
-3.  Jeśli pakiet VSPackage zostanie załadowany, wywołania środowiska `QueryInterface` dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interfejsu, interfejsu, który wymaga pakiet VSPackage.  
+3. Jeśli pakietu VSPackage jest ładowany, wywołania środowiska `QueryInterface` dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interfejsu dla interfejsu, który wymaga pakietu VSPackage.  
   
-    1.  Podczas odczytu z pliku SLN, środowisko wywołuje `QueryInterface` dla `IVsPersistSolutionProps`.  
+   1.  Podczas odczytu z pliku SLN, środowisko wywołuje `QueryInterface` dla `IVsPersistSolutionProps`.  
   
-    2.  Podczas odczytu z pliku .suo, środowisko wywołuje `QueryInterface` dla `IVsPersistSolutionOpts`.  
+   2.  Podczas odczytywania z pliku .suo, środowisko wywołuje `QueryInterface` dla `IVsPersistSolutionOpts`.  
   
- Informacje szczegółowe dotyczące korzystania z tych plików można znaleźć w [rozwiązania (. Plik sln)](../../extensibility/internals/solution-dot-sln-file.md) i [opcji użytkownika rozwiązania (. Pliku suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
+   Szczegółowe informacje dotyczące korzystania z tych plików można znaleźć w [rozwiązania (. Plik sln)](../../extensibility/internals/solution-dot-sln-file.md) i [opcje użytkownika rozwiązania (. Plik suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
 > [!NOTE]
->  Jeśli chcesz utworzyć nową konfigurację rozwiązania składające się z dwóch projektów konfiguracje, z wyłączeniem innej z kompilacji, należy użyć interfejsu użytkownika strony właściwości lub automatyzacji. Nie można zmienić ich właściwości i konfiguracje Menedżera kompilacji rozwiązania bezpośrednio, ale można manipulować Menedżera kompilacji rozwiązania przy użyciu `SolutionBuild` klasy z DTE w modelu automatyzacji. Aby uzyskać więcej informacji na temat konfigurowania rozwiązania, zobacz [konfiguracji rozwiązania](../../extensibility/internals/solution-configuration.md).  
+>  Jeśli chcesz utworzyć nową konfigurację rozwiązania składający się z dwóch projektów konfiguracje z wyłączeniem trzecią z kompilacji, należy użyć interfejsu użytkownika strony właściwości lub automatyzacji. Nie można zmienić konfiguracji Menedżera kompilacji rozwiązania i ich właściwości bezpośrednio, ale można manipulować Menedżera kompilacji rozwiązania przy użyciu `SolutionBuild` klasy z obiektu DTE w modelu automatyzacji. Aby uzyskać więcej informacji na temat konfigurowania rozwiązania, zobacz [konfiguracji rozwiązania](../../extensibility/internals/solution-configuration.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   

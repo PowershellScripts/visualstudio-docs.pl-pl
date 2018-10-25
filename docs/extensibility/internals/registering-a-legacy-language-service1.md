@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie Service1 języka starszych | Dokumentacja firmy Microsoft
+title: Rejestrowanie starszej wersji usługi językowej1 | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,30 +13,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e12e62e24d6a0a34884c245251a9bf2930f6b0b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03e851f8da251268a44e62f9b8071648bc27a870
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821308"
 ---
-# <a name="registering-a-legacy-language-service"></a>Zarejestrowanie starsza wersja usługi języka
-W ramach zarządzanego pakietu (MPF), usługa języka jest proffered przez pakiet VSPackage (zobacz [VSPackages](../../extensibility/internals/vspackages.md)) i jest zarejestrowana w usłudze [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przez dodanie kluczy rejestru i zapisów. Ten proces rejestracji odbywa się częściowo podczas instalacji i częściowo w czasie wykonywania.  
+# <a name="registering-a-legacy-language-service"></a>Rejestrowanie starszej wersji usługi językowej
+W ramach pakietu zarządzanego (MPF), usługa języka jest proffered przez pakietu VSPackage (zobacz [pakietów VSPackage](../../extensibility/internals/vspackages.md)) i jest zarejestrowany w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] przez dodanie klucze i wpisy. Ten proces rejestracji odbywa się w częściowo podczas instalacji i częściowo w czasie wykonywania.  
   
-## <a name="register-the-language-service-by-using-attributes"></a>Zarejestruj usługę języka za pomocą atrybutów  
+## <a name="register-the-language-service-by-using-attributes"></a>Zarejestruj usługę języka przy użyciu atrybutów  
  Następujące atrybuty są używane do rejestrowania usługi języka.  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>  
   
--   <xref:Microsoft.VisualStudio.Shell.ProvideLanguageEditorOptionPageAttribute>  
+- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageEditorOptionPageAttribute>  
   
- Poniżej opisano te atrybuty  
+  Poniżej opisano te atrybuty  
   
 ### <a name="provideserviceattribute"></a>ProvideServiceAttribute  
  Ten atrybut rejestruje usługi języka jako usługa.  
@@ -58,7 +58,7 @@ namespace TestLanguagePackage
 ```  
   
 ### <a name="providelanguageserviceattribute"></a>ProvideLanguageServiceAttribute  
- Ten atrybut rejestruje usługi języka, w szczególności jako usługi języka. Umożliwia ustawianie opcji określających funkcje, które oferuje usługi języka. W przykładzie podzbiór opcje, które zapewniają usługi języka. Aby uzyskać pełny zestaw opcji usługi języka, zobacz <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>.  
+ Ten atrybut rejestruje usługi języka specjalnie jako usługa języka. Umożliwia ustawianie opcji, które określają funkcje, które oferuje usługi w języka. W przykładzie pokazano podzbiór opcje, które zapewniają usługi języka. Aby uzyskać pełny zestaw opcji usługi w języka, zobacz <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>.  
   
 ### <a name="example"></a>Przykład  
   
@@ -83,7 +83,7 @@ namespace TestLanguagePackage
 ```  
   
 ### <a name="providelanguageextensionattribute"></a>ProvideLanguageExtensionAttribute  
- Ten atrybut kojarzy usługi języka z rozszerzeniem pliku. Zawsze, gdy Załadowano plik z danym rozszerzeniem w każdym projekcie usługi języka jest uruchomiona i używany do wyświetlania zawartości pliku.  
+ Ten atrybut kojarzy usługi języka z rozszerzeniem pliku. Przy każdym załadowaniu pliku z tym rozszerzeniem w każdym projekcie usługi w języka jest uruchomiona i używany do wyświetlania zawartości pliku.  
   
 ### <a name="example"></a>Przykład  
   
@@ -102,7 +102,7 @@ namespace TestLanguagePackage
 ```  
   
 ### <a name="providelanguagecodeexpansionattribute"></a>ProvideLanguageCodeExpansionAttribute  
- Ten atrybut rejestruje lokalizacji, z których kodu są uzyskiwane rozszerzenia lub fragment szablonów. Te informacje są używane przez **przeglądarki wstawki kodu** i przez Edytor po wstawieniu fragmentu kodu w pliku źródłowym.  
+ Ten atrybut rejestruje lokalizacji, z kodu, które są uzyskiwane szablonów rozszerzeń lub wstawieniu fragmentu kodu. Te informacje są używane przez **przeglądarki fragmenty kodu** i przez Edytor po wstawieniu fragmentu kodu do pliku źródłowego.  
   
 ### <a name="example"></a>Przykład  
   
@@ -128,10 +128,10 @@ namespace TestLanguagePackage
 ```  
   
 ### <a name="providelanguageeditoroptionpageattribute"></a>ProvideLanguageEditorOptionPageAttribute  
- Ten atrybut rejestruje strony właściwości mają być wyświetlane w **opcje** okno dialogowe, w obszarze **Edytor tekstu** kategorii. Użyj jednej z tych atrybutów dla każdej strony ma być wyświetlany dla usługi języka. Jeśli potrzebujesz do organizowania stron w strukturze drzewa, użyć dodatkowych atrybutów do definiowania każdego węzła drzewa.  
+ Ten atrybut rejestruje strony właściwości mają być wyświetlane w **opcje** okno dialogowe, w obszarze **edytora tekstów** kategorii. Użyj jednej z tych atrybutów dla każdej strony ma być wyświetlany dla usługi języka. Jeśli potrzebujesz do organizowania stron w strukturze drzewa, należy użyć dodatkowych atrybutów do definiowania każdego węzła drzewa.  
   
 ### <a name="example"></a>Przykład  
- W tym przykładzie przedstawiono dwie strony właściwości, **opcje** i **Indenting**i jeden węzeł, który zawiera drugiej strony właściwości.  
+ Dwie strony właściwości, w tym przykładzie **opcje** i **Indenting**i jednego węzła, który zawiera drugiej strony właściwości.  
   
 ```csharp  
 using Microsoft.VisualStudio.Shell;  
@@ -162,11 +162,11 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="proffer-the-language-service-at-runtime"></a>Proffer usługi języka w czasie wykonywania  
- Podczas ładowania pakietu języka, należy wskazać [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oznaczającej usługi języka. W tym celu proffering usługi. Jest to wykonywane w <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody. Ponadto należy uruchomić czasomierza, który wywołuje usługi języka w okresach bezczynności, dlatego można osiągnąć analizowanie w tle. Ten czasomierz bezczynności służy również do aktualizacji właściwości dokumentu, jeśli zostały zaimplementowane żadnego za pośrednictwem <xref:Microsoft.VisualStudio.Package.DocumentProperties> klasy. Aby zapewnić obsługę czasomierz, musi implementować pakietu <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> interfejsu (tylko <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> metoda musi być w pełni wdrożone; pozostałe metody może zwracać wartości domyślne).  
+## <a name="proffer-the-language-service-at-runtime"></a>Udąło usługa językowa w czasie wykonywania  
+ Po załadowaniu pakietu języka, musisz poinformować [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , usługa języka jest gotowy. W tym celu proffering usługi. Jest to realizowane w <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody. Ponadto należy uruchomić czasomierza, który wywołuje usługi języka w okresach bezczynności, dzięki czemu analizowanie w tle można osiągnąć. Ta czasomierza bezczynności jest również używane do aktualizacji właściwości dokumentu, jeśli udało Ci się wdrożyć dowolny za pośrednictwem <xref:Microsoft.VisualStudio.Package.DocumentProperties> klasy. Aby można było obsługiwać czasomierz, musi implementować pakietu <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent> interfejsu (tylko <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponent.FDoIdle%2A> metoda musi być w pełni zaimplementowane; pozostałe metody może zwracać wartości domyślnej).  
   
 ### <a name="example"></a>Przykład  
- Ten przykład przedstawia typowy podejście do proffering usługi i dostarczenie czasomierza bezczynności.  
+ W tym przykładzie przedstawiono typowe podejście do proffering usługi i dostarczenie czasomierza bezczynności.  
   
 ```csharp  
   
@@ -215,7 +215,7 @@ namespace TestLanguagePackage
                 crinfo[0].cbSize            = (uint)Marshal.SizeOf(typeof(OLECRINFO));  
                 crinfo[0].grfcrf            = (uint)_OLECRF.olecrfNeedIdleTime |  
                                               (uint)_OLECRF.olecrfNeedPeriodicIdleTime;  
-                crinfo[0].grfcadvf          = (uint)_OLECADVF.olecadvfModal     |  
+                crinfo[0].grfcadvf          = (uint)_OLECADVF.olecadvfModal |  
                                               (uint)_OLECADVF.olecadvfRedrawOff |  
                                               (uint)_OLECADVF.olecadvfWarningsOff;  
                 crinfo[0].uIdleTimeInterval = 1000;  

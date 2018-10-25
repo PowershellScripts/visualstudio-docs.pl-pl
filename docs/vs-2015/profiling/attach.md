@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c102b00fa8ab66d5f86111a8749fcbbc23c75d6b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc3db6b677e23e0752612f688055befd366e34d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845540"
 ---
 # <a name="attach"></a>Dołącz
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 ## <a name="interval-options"></a>Opcje interwału  
  W wierszu polecenia Attach można określić jedną z następujących opcji interwału próbkowania. Domyślny interwał próbkowania wynosi 10 000 000 cykli zegara procesora.  
   
- **Czasomierz**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:** Zdarzenia]**licznika**[**:**`Name`,`Reload`,`FriendlyName`]  
+ **Czasomierz**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong> Zdarzenia]**licznika**[**:**`Name`,`Reload`,`FriendlyName`]  
  Określa numer i typ używanego interwału próbkowania.  
   
 -   **Czasomierz** — przykłady co `Cycles` cykli zegara procesora. Jeśli `Cycles` nie zostanie określony, 10 000 000 cykle są używane.  

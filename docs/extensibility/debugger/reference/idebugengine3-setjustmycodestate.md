@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fda672cc9d6861520b9da3a894b94d51f4100683
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ffad3e6be4d81e19bd6f707bd30c744904217ba5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121628"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928974"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
-Ta metoda określa, że aparat debugowania o JustMyCode informacje o stanie.  
+Ta metoda informuje aparat debugowania o stan JustMyCode.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -45,7 +45,7 @@ int SetJustMyCodeState(
   
 #### <a name="parameters"></a>Parametry  
  `fUpdate`  
- [in] Różna od zera (`TRUE`) aby zaktualizować aktualne informacje, zero (`FALSE`) do resetowania wszystkich informacji (nie dotyczy żadnych wcześniej ustawione).  
+ [in] Wartość różną od zera (`TRUE`) aby zaktualizować bieżące informacje, od zera (`FALSE`) można zresetować wszystkie informacje (bez uwzględnienia niczego ustawione wcześniej).  
   
  `dwModules`  
  [in] Liczba struktur informacji w `rgJMCSpec.`  
@@ -54,10 +54,10 @@ int SetJustMyCodeState(
  [in] Tablica [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) struktury do użycia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- JustMyCode to pojęcie debugowania tylko kodu, który należy do użytkownika i ignoruje wszystkie pośrednie kodu na przykład kod systemu — nawet, jeśli kod źródłowy jest niedostępny dla tego kodu systemu.  
+ JustMyCode to pojęcie debugowania tylko kodu, który należy do użytkownika i ignoruje wszelkie kodu pośredniego, takich jak systemu kodu — nawet jeśli kod źródłowy jest dostępny dla tego kodu systemowego.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   

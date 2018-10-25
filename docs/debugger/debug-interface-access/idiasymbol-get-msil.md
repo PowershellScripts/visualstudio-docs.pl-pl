@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_msil | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_msil — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a344937e4e388e34d4e2dbff3b56948575fe7cd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0cc7e183591b355518814b4b397b0d66d9913b32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866756"
 ---
 # <a name="idiasymbolgetmsil"></a>IDiaSymbol::get_msil
-Pobiera flagę określającą, czy symbol odwołuje się do kodu Microsoft języka pośredniego (MSIL).  
+Pobiera flagę określającą, czy symbol odwołuje się do kodu Microsoft Intermediate Language (MSIL).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,13 +34,13 @@ HRESULT get_msil (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca `TRUE` Jeśli symbolu odwołuje się do kodu MSIL; w przeciwnym razie zwraca `FALSE`.  
+ [out] Zwraca `TRUE` Jeśli symbol, który odwołuje się do kodu MSIL; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

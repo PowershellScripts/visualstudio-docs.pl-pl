@@ -1,5 +1,5 @@
 ---
-title: Dane prywatne dla raporty problemów
+title: Prywatne dane dla raportów problemów
 ms.date: 06/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,59 +12,59 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2905cd6fcf9255eb8ba76d636d908651e2254115
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 21515d6e9841d943cf91799224afdebf8326e07e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836830"
 ---
-# <a name="developer-community-data-privacy"></a>Prywatność danych społeczność deweloperów
+# <a name="developer-community-data-privacy"></a>Prywatność danych w społeczności deweloperów
 
-Domyślnie wszystkie informacje w problem raport dotyczący [społeczność deweloperów](https://developercommunity.visualstudio.com/), w tym wszelkie komentarze i odpowiedzi, jest publicznie widoczna. Jest to przydatne, ponieważ umożliwia całej Wspólnoty problemy, rozwiązań i rozwiązania, które zostały znalezione innych użytkowników. Jednak jeśli zajmującym się ochroną prywatności danych lub tożsamości, mieć opcje.
+Domyślnie, wszystkie informacje w problem raport dotyczący [społeczności deweloperów](https://developercommunity.visualstudio.com/), w tym wszelkie komentarze i odpowiedzi, jest widoczna publicznie. Jest to korzystne, ponieważ zezwala ona na całej społeczności wyświetlić problemy, rozwiązania i rozwiązania, które zostały znalezione w innych użytkowników. Jednak jeśli zajmującym się ochroną prywatności danych lub tożsamości dostępne opcje.
 
 ## <a name="identity-privacy"></a>Prywatność tożsamości
 
-Jeśli masz obawy ujawniania swoją tożsamość, [Utwórz nowe konto Microsoft](https://signup.live.com/) nie ujawnia żadnych szczegółowe informacje o Tobie. Aby utworzyć raport, należy użyć tego konta.
+Jeśli jest sprawą przedstawiania swoją tożsamość, [Utwórz nowe konto Microsoft](https://signup.live.com/) nie ujawnia żadnych informacji o Tobie. Aby utworzyć raport, należy użyć tego konta.
 
 ## <a name="data-privacy"></a>Prywatność danych
 
-Jeśli masz zajmującym się ochroną prywatności danych, nie umieszczaj wszystkich danych, które chcesz zachować prywatnych w tytule lub zawartość początkowy raport zawsze jest publiczny. Zamiast tego należy utworzyć raport, a następnie zanotuj, będzie wysyłanie szczegółów prywatnie w oddzielnych komentarza. Utworzony raport o problemie możesz określić, kto może zobaczyć odpowiedzi i załączników:
+Jeśli jesteś zajmującym się ochroną prywatności danych, nie należy umieszczać coś, co chcesz przechowywać prywatne w ramach tytułu lub zawartości elementu początkowego raportu zawsze jest publiczny. Zamiast tego należy utworzyć raport, a następnie zanotuj, będzie wysłanie szczegółów prywatnie w oddzielnych komentarz. Po utworzeniu raport o problemie możesz określić, kto może wyświetlać odpowiedzi i załączników:
 
-1. Raport został utworzony, wybierz **Dodaj komentarz** do utworzenia prywatnej opis problemu.
+1. W raporcie, możesz utworzyć, wybierz **Dodaj komentarz** do utworzenia prywatnej opis problemu.
 
-1. W edytorze odpowiedzi, za pomocą kontroli poniżej **przesyłania** i **anulować** przyciski, aby określić odbiorców dla odpowiedzi. Wybierz **Viewable moderatorów i oryginalnego plakat** Aby ograniczyć widoczność pracownikom firmy Microsoft i samodzielnie.
+2. W edytorze odpowiedzi formant poniżej **przesyłania** i **anulować** przycisków, aby określić odbiorców w odpowiedzi. Wybierz **Viewable moderatorzy i oryginalnego plakat** Aby ograniczyć widoczność, aby pracownicy firmy Microsoft i samodzielnie.
 
-   ![Kontrolka prywatności w społeczność deweloperów](media/developer-community-privacy-control.png)
+   ![Kontrolka ochrony prywatności w społeczność deweloperów](media/developer-community-privacy-control.png)
 
-   Tylko osoby, które określisz widoczny komentarz i wszystkie obrazy, łącza lub kodu, który możesz uwzględnić w nim. Wszystkie odpowiedzi w komentarz ma taką samą widoczność jak pierwotnego komentarza. Dotyczy to nawet wtedy, gdy kontrolka prywatności w odpowiedzi nie wyświetla stan ograniczona widoczność poprawnie.
+   Tylko osoby, które określisz zobaczyć komentarz i wszystkie obrazy, łącza lub kodu, które uwzględniasz w nim. Wszystkie odpowiedzi w ramach komentarza ma taką samą widoczność jak pierwotnego komentarza. Ta zasada obowiązuje, nawet wtedy, gdy kontroli prywatności w odpowiedzi na nie wyświetla stan widoczności ograniczeniami poprawnie.
 
-1. Dodaj opis i wszelkie inne informacje, obrazy i załączniki do plików potrzebnych do Twojej reprodukcja. Wybierz **przesyłania** przycisk, aby wysyłać tych informacji przez użytkowników.
+3. Dodaj opis i wszelkie inne informacje, obrazy i załączniki plików potrzebnych do odtworzenia usługi. Wybierz **przesyłania** przycisk, aby wysyłać tych informacji przez użytkowników.
 
    > [!NOTE]
-   > Brak limitu 2 GB na załączonych plików i maksymalnie 10 plików. Jeśli chcesz przekazać rozmiar pliku, możesz przesłać nowy raport o problemie lub żądanie adresu URL przesyłania z pracownikiem firmy Microsoft w komentarzu prywatnych.
+   > Istnieje limit 2 GB na dołączonych plików i maksymalnie 10 plików. Musisz przekazać większy plik, można przesłać nowy raport o problemie lub żądanie adresu URL przesyłania z pracownikiem firmy Microsoft w komentarzu prywatnych.
 
-Ochrona prywatności i przechowywać poufnych informacji poza widok publiczny, należy zachować wszystkie interakcje z firmy Microsoft do odpowiedzi, w obszarze komentarz ograniczona widoczność. Odpowiedzi na inne komentarze może spowodować przypadkowego ujawnienia informacji poufnych.
+Aby zachować prywatność i zachować poufne informacje z widoku publicznego, powinien zachować ostrożność, aby zachować wszystkie interakcje z firmy Microsoft do odpowiedzi zgodnie z ograniczeniami widoczność komentarz. Odpowiadanie na komentarze innych może spowodować przypadkowe ujawnienie poufnych informacji.
 
-## <a name="data-we-collect"></a>Dane, które zbieramy
+## <a name="data-we-collect"></a>Zbierane dane
 
-Jeśli **zgłosić problem** jest inicjowana z Instalator programu Visual Studio, zbierane są najnowsze dziennika instalacji.
+Jeśli **Zgłoś problem** jest inicjowane z Instalatora programu Visual Studio, zbierane są najnowsze dziennika instalacji.
 
-Jeśli **zgłosić problem** jest inicjowana z programu Visual Studio, zbierane są co najmniej jeden z następujących typów danych:
+Jeśli **Zgłoś problem** jest inicjowane z programu Visual Studio, zbierane są co najmniej jeden z następujących typów danych:
 
 - Watson i .NET wpisów z dziennika zdarzeń
 
 - Plik dziennika aktywności w pamięci w usłudze Visual Studio
 
-- PerfWatson pliki, jeśli kolekcja Watson jest włączona, z *VSFeedbackPerfWatsonData* folderu
+- PerfWatson plików, gdy jest włączone zbieranie Watson, z *VSFeedbackPerfWatsonData* folderu
 
 - Pliki dziennika LiveShare, jeśli istnieją, z *VSFeedbackVSRTCLogs* folderu
 
-- Pliki dziennika Xamarin, jeśli istnieją, z *%LOCALAPPDATA%\Xamarin\Logs*
+- Pliki dziennika platformy Xamarin, jeśli istnieją, z *%LOCALAPPDATA%\Xamarin\Logs*
 
 - Pliki dziennika Nuget, jeśli istnieją, z *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg*
 
-- Sieci Web debugera plików dziennika, jeśli istnieją:
+- W sieci Web debugera pliki dziennika, jeśli nie istnieją:
 
    - *%Temp%\vscode-Chrome-Debug.txt*
 
@@ -72,20 +72,20 @@ Jeśli **zgłosić problem** jest inicjowana z programu Visual Studio, zbierane 
 
    - *%Temp%\vscode-Edge-Debug.txt*
 
-- Zrzut ekranu, jeśli chcesz dołączyć go
+- Zrzut ekranu, jeśli chcesz dołączyć
 
-- Rejestrowanie danych, jeśli użytkownik chce dołączyć rejestrowania, który zawiera:
+- Rejestrowanie danych, jeśli chcesz uwzględnić nagranie, w tym:
 
-   - Kroki do odtworzenia problemu
+   - Kroki umożliwiające odtworzenie problemu
 
    - Plik śledzenia ETL
 
    - Plik zrzutu
 
-   > [!NOTE]
-   > Możesz usunąć żadnych danych rejestrowania, który nie chcesz przesłać przed wysłaniem raportu.
+    > [!NOTE]
+    > Możesz usunąć dowolne danych rejestrowania, które nie chcesz przesłać przed przesłaniem raportu.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Jak zgłosić problem z programem Visual Studio](how-to-report-a-problem-with-visual-studio-2017.md)
-- [Prywatność danych raportu problem C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)
+- [Prywatność danych raportu problemu C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

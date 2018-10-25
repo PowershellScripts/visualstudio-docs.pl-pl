@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3de9ef6128c3cd5ca6eae80a257b3dc2982cd0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8f2b46e420db8addf19ef8694112058bdb8b2f91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458193"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867627"
 ---
 # <a name="datakind"></a>DataKind
-Wskazuje określonego zakresu wartości danych.  
+Wskazuje zakresu określonej wartości danych.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,7 +43,7 @@ enum DataKind {
   
 ## <a name="elements"></a>Elementy  
  DataIsUnknown  
- Nie można określić symbolu danych.  
+ Nie można ustalić symbol danych.  
   
  DataIsLocal  
  Element danych jest zmienną lokalną.  
@@ -55,25 +55,25 @@ enum DataKind {
  Element danych jest parametrów formalnych.  
   
  DataIsObjectPtr  
- Element danych jest wskaźnik do obiektu (`this`).  
+ Element danych jest wskaźnikiem obiektu (`this`).  
   
  DataIsFileStatic  
- Element danych jest zmienną zakresu pliku.  
+ Element danych jest zmienną o zakresie pliku.  
   
  DataIsGlobal  
  Element danych jest zmienną globalną.  
   
  DataIsMember  
- Element danych jest zmienna obiektu elementu członkowskiego.  
+ Element danych jest zmienną elementu członkowskiego obiektu.  
   
  DataIsStaticMember  
- Element danych jest zmienną statyczną klasy.  
+ Element danych jest zmienna statyczna klasy.  
   
  DataIsConstant  
  Element danych jest wartością stałą.  
   
 ## <a name="remarks"></a>Uwagi  
- To wyliczenie wartości są zwracane przez [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) metody.  
+ Wartości w tym wyliczeniu są zwracane przez [idiasymbol::get_datakind —](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: cvconst.h  

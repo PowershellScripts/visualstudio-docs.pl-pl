@@ -30,12 +30,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2700076fa0cc08aa137377b9a99c1179d9b8fc12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9540e40325293795c44e0d9c2283a27f1d9ea0c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856708"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>Porady: włączanie i wyłączanie opcji edytuj i kontynuuj
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,18 +48,18 @@ Można wyłączyć lub włączyć Edytuj i Kontynuuj w **opcje** okno dialogowe,
   
 #### <a name="to-enabledisable-edit-and-continue"></a>Aby włączyć lub wyłączyć Edytuj i Kontynuuj  
   
-1.  Otwórz stronę opcji debugowania (**narzędzia / Opcje / Debugowanie**).  
+1. Otwórz stronę opcji debugowania (**narzędzia / Opcje / Debugowanie**).  
   
-2.  Przewiń w dół do **Edytuj i Kontynuuj** kategorii.  
+2. Przewiń w dół do **Edytuj i Kontynuuj** kategorii.  
   
-3.  Aby włączyć, wybierz **Włącz edytowanie i kontynuowanie** pole wyboru. Aby wyłączyć, wyczyść pole wyboru.  
+3. Aby włączyć, wybierz **Włącz edytowanie i kontynuowanie** pole wyboru. Aby wyłączyć, wyczyść pole wyboru.  
   
-    > [!NOTE]
-    >  Jeśli zbieranie zdarzeń IntelliTrace i informacje o wywołaniach funkcji IntelliTrace jest włączony, Edytuj i Kontynuuj jest wyłączona. Aby uzyskać więcej informacji, zobacz [skonfigurować IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+   > [!NOTE]
+   >  Jeśli zbieranie zdarzeń IntelliTrace i informacje o wywołaniach funkcji IntelliTrace jest włączony, Edytuj i Kontynuuj jest wyłączona. Aby uzyskać więcej informacji, zobacz [skonfigurować IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-4.  Kliknij przycisk **OK**.  
+4. Kliknij przycisk **OK**.  
   
- Aby uzyskać więcej informacji o tych opcjach, zobacz [ogólne, debugowanie, okno dialogowe Opcje](../debugger/general-debugging-options-dialog-box.md).  
+   Aby uzyskać więcej informacji o tych opcjach, zobacz [ogólne, debugowanie, okno dialogowe Opcje](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytuj i kontynuuj](../debugger/edit-and-continue.md)

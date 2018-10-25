@@ -13,12 +13,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e0e608f58f19acf0d2ae01b288943f71f9983c6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 978f4e3edeb83d5980d793d74cf209e8e8f7205e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892795"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Porady: konfigurowanie testów jednostkowych pod kątem starszej wersji oprogramowania .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ Po utworzeniu projektu testu w programie Microsoft Visual Studio najnowszą wers
   
  Jednostki można tworzyć projekty testowe, przeznaczonych dla określonej wersji programu .NET Framework. Docelowa wersja musi być w wersji 3.5 lub nowszej, a nie może być wersji klienta. Program Visual Studio umożliwia następujące podstawowa pomoc techniczna dla testów jednostkowych, przeznaczonych dla określonych wersji:  
   
--   Można tworzyć projektów testów jednostkowych i określania elementów docelowych widoków do określonej wersji programu .NET Framework.  
+- Można tworzyć projektów testów jednostkowych i określania elementów docelowych widoków do określonej wersji programu .NET Framework.  
   
--   Można uruchomić testów jednostkowych przeznaczonych określonej wersji programu .NET Framework w programie Visual Studio na komputerze lokalnym.  
+- Można uruchomić testów jednostkowych przeznaczonych określonej wersji programu .NET Framework w programie Visual Studio na komputerze lokalnym.  
   
--   Można uruchomić testów jednostkowych przeznaczonych określonej wersji programu .NET Framework przy użyciu MSTest.exe z wiersza polecenia.  
+- Można uruchomić testów jednostkowych przeznaczonych określonej wersji programu .NET Framework przy użyciu MSTest.exe z wiersza polecenia.  
   
--   Możesz uruchomić testy jednostkowe na agencie kompilacji jako część kompilacji.  
+- Możesz uruchomić testy jednostkowe na agencie kompilacji jako część kompilacji.  
   
- **Testowanie aplikacji SharePoint**  
+  **Testowanie aplikacji SharePoint**  
   
- Funkcje wymienione powyżej również umożliwiają pisanie testów jednostkowych i testów integracji aplikacji programu SharePoint przy użyciu programu Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] Tworzenie aplikacji programu SharePoint przy użyciu programu Visual Studio, zobacz [tworzenie rozwiązań programu SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [kompilowanie i debugowanie rozwiązań SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) i [Weryfikowanie i debugowanie programu SharePoint Kod](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
+  Funkcje wymienione powyżej również umożliwiają pisanie testów jednostkowych i testów integracji aplikacji programu SharePoint przy użyciu programu Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] Tworzenie aplikacji programu SharePoint przy użyciu programu Visual Studio, zobacz [tworzenie rozwiązań programu SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [kompilowanie i debugowanie rozwiązań SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) i [Weryfikowanie i debugowanie programu SharePoint Kod](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
   
- **Ograniczenia**  
+  **Ograniczenia**  
   
- Poniższe ograniczenia mają zastosowanie, gdy miejscem docelowym ponownie swoje projekty testów, aby używać starszych wersji programu .NET Framework:  
+  Poniższe ograniczenia mają zastosowanie, gdy miejscem docelowym ponownie swoje projekty testów, aby używać starszych wersji programu .NET Framework:  
   
--   W .NET Framework 3.5 wielowersyjności kodu w programie jest obsługiwana dla projektów testowych, zawierające testy jednostkowe tylko. .NET Framework 3.5 nie obsługuje inny typ testu, takie jak kodowane testy interfejsu użytkownika lub obciążenia. Ponownie wartości docelowej jest zablokowana dla typów testów niż testy jednostkowe.  
+- W .NET Framework 3.5 wielowersyjności kodu w programie jest obsługiwana dla projektów testowych, zawierające testy jednostkowe tylko. .NET Framework 3.5 nie obsługuje inny typ testu, takie jak kodowane testy interfejsu użytkownika lub obciążenia. Ponownie wartości docelowej jest zablokowana dla typów testów niż testy jednostkowe.  
   
--   Wykonywanie testów, które są przeznaczone dla starszej wersji programu .NET Framework jest obsługiwany tylko w przypadku domyślnego adaptera hosta. Nie jest obsługiwana na karcie hosta ASP.NET. Aplikacje ASP.NET, które są uruchamiane w kontekście ASP.NET Development Server muszą być zgodne z bieżącą wersją programu .NET Framework.  
+- Wykonywanie testów, które są przeznaczone dla starszej wersji programu .NET Framework jest obsługiwany tylko w przypadku domyślnego adaptera hosta. Nie jest obsługiwana na karcie hosta ASP.NET. Aplikacje ASP.NET, które są uruchamiane w kontekście ASP.NET Development Server muszą być zgodne z bieżącą wersją programu .NET Framework.  
   
--   Obsługa zbierania danych jest wyłączone, po uruchomieniu testów, które obsługują wielowersyjności kodu w programie .NET Framework 3.5. Możesz uruchomić pokrycie kodu za pomocą narzędzia wiersza polecenia programu Visual Studio.  
+- Obsługa zbierania danych jest wyłączone, po uruchomieniu testów, które obsługują wielowersyjności kodu w programie .NET Framework 3.5. Możesz uruchomić pokrycie kodu za pomocą narzędzia wiersza polecenia programu Visual Studio.  
   
--   Testy jednostkowe, które używają .NET Framework 3.5 nie można uruchomić na komputerze zdalnym.  
+- Testy jednostkowe, które używają .NET Framework 3.5 nie można uruchomić na komputerze zdalnym.  
   
--   Testy jednostkowe do wcześniejszych wersji klienta w ramach nie może być przeznaczony.  
+- Testy jednostkowe do wcześniejszych wersji klienta w ramach nie może być przeznaczony.  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Ponowne Ustawianie elementów docelowych do określonej wersji programu .NET Framework dla projektów testów jednostkowych w Visual Basic  
   

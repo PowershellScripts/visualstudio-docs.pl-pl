@@ -16,12 +16,12 @@ ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: abcc3117b46cca424388b849f9baf26d79ca270e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6956f4dd3d307808ff13aedc280a2af77fcc925d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194645"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858982"
 ---
 # <a name="usedcommand-element"></a>UsedCommand, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,8 +41,8 @@ Umożliwia pakietu VSPackage w celu dostępu do poleceń, która jest zdefiniowa
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagane. Identyfikator GUID pary identyfikator GUID, który identyfikuje polecenie.|  
-|identyfikator|Wymagane. Identyfikator pary identyfikator GUID, który identyfikuje polecenie.|  
+|Identyfikator GUID|Wymagana. Identyfikator GUID pary identyfikator GUID, który identyfikuje polecenie.|  
+|identyfikator|Wymagana. Identyfikator pary identyfikator GUID, który identyfikuje polecenie.|  
 |Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  

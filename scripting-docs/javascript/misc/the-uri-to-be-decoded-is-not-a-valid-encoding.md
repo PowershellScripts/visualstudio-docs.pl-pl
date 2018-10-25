@@ -1,5 +1,5 @@
 ---
-title: Identyfikator URI, który ma być zdekodowany jest nie prawidłowym kodowaniem | Dokumentacja firmy Microsoft
+title: Identyfikator URI, który ma być zdekodowany jest poprawnie nie zakodowany | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,27 +21,27 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2d37ca55dfd701aaeba2af729511a5ae6a4fa5f4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788842"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841822"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>Identyfikator URI, który ma być zdekodowany, nie jest poprawnie zakodowany
-Próbowano dekodowania nieprawidłowo sformułowanego identyfikatora URI (Uniform Resource Identifier). Identyfikatory URI mają specjalne składnię; musi być zakodowany znaki inne niż alfanumeryczne, przed ich użyciem w identyfikatorze URI. Można użyć `encodeURI` i `encodeURIComponent` metody służące do utworzenia identyfikatora URI z zwykłym [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ciągu.  
+Podjęto próbę zdekodowania niepoprawnie sformułowany identyfikator URI (Uniform Resource Identifier). Identyfikatory URI ma specjalnej składni; Większość znaki inne niż alfanumeryczne muszą zostać zakodowane, zanim będzie można ich użyć w identyfikatorze URI. Możesz użyć `encodeURI` i `encodeURIComponent` metody w celu utworzenia identyfikatora URI ze zwykłym [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ciągu.  
   
- Pełny identyfikator URI składa się z sekwencji składników i separatorów. Ogólny kształt jest:  
+ Pełny identyfikator URI składa się z sekwencji składników i separatorów. Ogólna postać jest:  
   
 ```JavaScript  
 <Scheme>:<first>/<second>;<third>?<fourth>  
 ```  
   
- Nazwy w nawiasach ostrych reprezentują składników i ":", "/", ";" i "?" są zastrzeżone znaki używane jako separatorów.  
+ Nazwy w nawiasy ostre oznaczają składniki z i ":", "/", ";" i "?" są używane jako separatory znaków zastrzeżonych.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Upewnij się, że próby dekodowania tylko prawidłowymi identyfikatorami URI. Nie można zdekodować normalne [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ciągów, jak mogą zawierać nieprawidłowych znaków.  
+-   Upewnij się, że chcesz odkodować tylko prawidłowymi identyfikatorami URI. Nie można zdekodować normalne [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ciągów, ponieważ mogą one zawierać nieprawidłowych znaków.  
   
 ## <a name="see-also"></a>Zobacz też  
  [decodeURI — funkcja](../../javascript/reference/decodeuri-function-javascript.md)   
- [decodeuricomponent — funkcja](../../javascript/reference/decodeuricomponent-function-javascript.md)
+ [decodeURIComponent, funkcja](../../javascript/reference/decodeuricomponent-function-javascript.md)

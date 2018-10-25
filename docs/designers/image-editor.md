@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2149410782587d8472faff678cbc20bf1ea577c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029124"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878379"
 ---
 # <a name="image-editor"></a>Edytor obrazów
 
@@ -30,7 +30,7 @@ Możesz użyć **edytora obrazów** do pracy z rodzajami zaawansowanych formaty 
 **Edytora obrazów** obsługuje następujące formaty obrazów:
 
 |Nazwa formatu|Rozszerzenie nazwy pliku|
-|-----------------|-------------------------|
+|-----------------| - |
 |Portable Network Graphics|*PNG*|
 |JPEG|*jpg*, *JPEG*, *.jpe*, *.jfif*|
 |Bezpośrednie powierzchni rysowania|*.DDS*|
@@ -146,7 +146,7 @@ W poniższej tabeli opisano elementy na **edytora obrazów** narzędzi, które s
 |**Wypełnienie**|Używa wybór koloru active do wypełnienia obszaru obrazu. Dotyczy region jest zdefiniowany jako pikseli, w których stosowane wypełnienie wraz z każdy piksel, który jest z nią połączona pikseli tego samego koloru i to ten sam kolor, sam. Jeśli wypełnienie jest stosowana w ramach aktywnego zaznaczenia, dotyczy region jest ograniczone przez zaznaczenie.<br /><br /> Domyślnie wybór koloru active jest zmieszana wraz z zainfekowanego region obrazu zgodnie z jego składnik alfa. Aby użyć wybór koloru active zastąpić dotyczy region, naciśnij i przytrzymaj klawisz **Shift** klucza podczas używania narzędzia wypełnienia.|
 |**Gumka**|Jeśli obraz, który obsługuje kanał alfa, ustawia piksele, aby całkowicie przezroczysty kolor. W przeciwnym razie piksele Ustawia kolor tła active.|
 |**Wiersz**, **prostokąt**, **prostokąt zaokrąglony**, **wielokropka**|Rysuje kształt na obrazie. Można ustawić kolor i grubość konturu w **właściwości** okna.<br /><br /> Aby narysować elementu podstawowego, który ma równa szerokość i wysokość, naciśnij i przytrzymaj **Shift** podczas rysowania.|
-|**Tekst**|Używa wybór koloru pierwszego planu, aby rysować tekst. Kolor tła jest określany przez wybór koloru tła. Dla przezroczyste tło wartość alfa wybór koloru tła musi być 0. Gdy obszaru tekstu jest aktywna, można ustalić, czy tekst jest rysowana obrysu wygładzanie i można ustawić tekst **wartość**, **czcionki**, **rozmiar**, styl i —**Bold**, **Kursywa**, lub **podkreślona**— w **właściwości** okna. Zawartość i wygląd tekstu jest aktualnie finalizowana, gdy region tekst nie jest już aktywna.|
+|**Text**|Używa wybór koloru pierwszego planu, aby rysować tekst. Kolor tła jest określany przez wybór koloru tła. Dla przezroczyste tło wartość alfa wybór koloru tła musi być 0. Gdy obszaru tekstu jest aktywna, można ustalić, czy tekst jest rysowana obrysu wygładzanie i można ustawić tekst **wartość**, **czcionki**, **rozmiar**, styl i —**Bold**, **Kursywa**, lub **podkreślona**— w **właściwości** okna. Zawartość i wygląd tekstu jest aktualnie finalizowana, gdy region tekst nie jest już aktywna.|
 |**Obróć**|Obrót 90 stopni w prawo.|
 |**TRIM**|Przycina obraz do aktywnego zaznaczenia.|
 
@@ -237,7 +237,7 @@ W poniższej tabeli opisano właściwości narzędzia:
 |----------|----------------|
 |Wszystkie narzędzia i opcje|**Obróć o**<br /> Określa, w stopniach, czy zaznaczenie lub narzędzia efekt jest obracana wskazówek zegara.|
 |**Ołówek**, **pędzla**, **Aerograf**, **Gumka**|**Grubość**<br /> Określa rozmiar obszaru, który jest zależna od narzędzia.|
-|**Tekst**|**Wygładzanie**<br /> Rysuje tekst, który ma wygładzanie krawędzi. Dzięki temu tekst gładsze wygląd.<br /><br /> **Wartość**<br /> Tekst do narysowania.<br /><br /> **Czcionka**<br /> Czcionka używana ma zostać narysowany tekst.<br /><br /> **Rozmiar**<br /> Rozmiar tekstu.<br /><br /> **Bold**<br /> Sprawia, że czcionka pogrubienie.<br /><br /> **Kursywa**<br /> Sprawia, że czcionka italic.<br /><br /> **Podkreślony**<br /> Sprawia, że czcionka podkreślone.|
+|**Text**|**Wygładzanie**<br /> Rysuje tekst, który ma wygładzanie krawędzi. Dzięki temu tekst gładsze wygląd.<br /><br /> **Wartość**<br /> Tekst do narysowania.<br /><br /> **Czcionka**<br /> Czcionka używana ma zostać narysowany tekst.<br /><br /> **Rozmiar**<br /> Rozmiar tekstu.<br /><br /> **Bold**<br /> Sprawia, że czcionka pogrubienie.<br /><br /> **Kursywa**<br /> Sprawia, że czcionka italic.<br /><br /> **Podkreślony**<br /> Sprawia, że czcionka podkreślone.|
 |**2D podstawowego**|**Wygładzanie**<br /> Rysuje podstawowych, które mają wygładzanie krawędzi. To daje im gładsze wygląd.<br /><br /> **Grubość**<br /> Określa grubość linii, który wchodzi w skład granicy podstawowego.<br /><br /> **Promień X**<br /> (Tylko w przypadku prostokąt zaokrąglony) Definiuje górną i dolną krawędzią element pierwotny zaokrąglania usługi radius.<br /><br /> **Promień Y**<br /> (Tylko w przypadku prostokąt zaokrąglony) Definiuje zaokrąglania usługi radius do lewej i prawej krawędzi element pierwotny.|
 |**Ołówek**, **pędzla**, **Aerograf**, **2D podstawowego**|**kanały**<br /> Włącza lub wyłącza określony kolor kanały do wyświetlania i rysowania. Jeśli **widoku** jest ustawiona dla określonego kanału koloru, tym kanale jest widoczne na obrazie; w przeciwnym razie nie jest on widoczny. Jeśli **Rysowanie** ustawiono dla określonego kanału koloru, że kanał jest objęte za pomocą rysowania operacji; w przeciwnym razie, nie jest.|
 |**Wybór Różdżka**, **wypełnienia**|**Na uszkodzenia**<br /> Definiuje maksymalną różnicę między sąsiadujących kolorów, w których są one traktowane jako podobnie, tak aby mniej lub bardziej podobne kolory zostały wprowadzone w ramach objęty lub wybranego regionu. Domyślnie wartość jest 32, co oznacza, że sąsiadujących pikseli w ciągu 32 odcienie koloru oryginalnego (jaśniejsze i ciemniejsze) są traktowane jako część obszaru.|
@@ -245,7 +245,7 @@ W poniższej tabeli opisano właściwości narzędzia:
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
 |Polecenie|Skróty klawiaturowe|
-|-------------|------------------------|
+|-------------| - |
 |Przełącz się do **wybierz** tryb|**S**|
 |Przełącz się do **powiększenia** tryb|**Z**|
 |Przełącz się do **Pan** tryb|**K**|

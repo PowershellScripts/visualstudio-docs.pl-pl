@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22f6cadaa88d6cc87ec70451d9da850cd49b7753
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6a93877066e90bbc72ca58181d192219e898897d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833892"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
-Ta metoda dodaje węzeł program dla każdego aparat debugowania (DE) określony.  
+Metoda ta umożliwia dodanie węzła dla każdego silnika debugowania (DE) określony program.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -45,19 +45,19 @@ int AddImplicitProgramNodes(
   
 #### <a name="parameters"></a>Parametry  
  `guidLaunchingEngine`  
- [in] `GUID` Z URZ, który ma być używany do uruchamiania programów (przyjęto, że można dodać własną węzłów program).  
+ [in] `GUID` Z DE, która ma być używany do uruchamiania programów (przyjęto, że można dodać węzły swój własny program).  
   
  `rgguidSpecificEngines`  
- [in] Tablica `GUID`s DEs dla programu, które będzie można dodać węzłów.  
+ [in] Tablica `GUID`s DEs dla programu, który zostanie dodany węzłów.  
   
  `celtSpecificEngines`  
  [in] Liczba `GUID`s w `rgguidSpecificEngines` tablicy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- [Program węzłów](../../../extensibility/debugger/program-nodes.md) zostanie dodana dla każdego DE wymienionych w `rgguidSpecificEngines`— z wyjątkiem uruchamiania aparatu (podaną w `guidLaunchingEngine`), który zakłada się, że dodanie własne węzła program jest uruchamiany program.  
+ [Program węzłów](../../../extensibility/debugger/program-nodes.md) zostanie dodana dla każdego DE wymienionych w `rgguidSpecificEngines`— z wyjątkiem uruchamiania aparatu (podany w `guidLaunchingEngine`), który zakłada się, że dodanie węzła swój własny program jest uruchamiany program.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   

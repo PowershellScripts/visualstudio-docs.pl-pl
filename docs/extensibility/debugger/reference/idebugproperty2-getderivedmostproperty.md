@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f453dacf988b80cf6837b3324a9d4b0a70e2254e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 58713b63728678ccab55435eb05b1cbb1c8920fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116711"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929884"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
-Pobiera właściwość pochodnych większość właściwości.  
+Pobiera właściwość najbardziej pochodnej właściwości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,10 +44,10 @@ int GetDerivedMostProperty (
  [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który reprezentuje właściwość najbardziej pochodnej.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `S_GETDERIVEDMOST_NO_DERIVED_MOST` Jeśli nie ma właściwości najbardziej pochodnej do pobrania.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `S_GETDERIVEDMOST_NO_DERIVED_MOST` Jeśli nie ma właściwości najbardziej pochodnej do pobrania.  
   
 ## <a name="remarks"></a>Uwagi  
- Na przykład, jeśli ta właściwość określa obiekt, który implementuje `ClassRoot` , lecz faktycznie instancją typu `ClassDerived` która pochodzi z `ClassRoot`, a następnie ta metoda zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiektu opisujące `ClassDerived` obiektu.  
+ Na przykład, jeśli ta właściwość opisuje obiekt, który implementuje `ClassRoot` , ale która jest faktycznie wystąpienia `ClassDerived` która pochodzi od `ClassRoot`, wówczas ta metoda zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiektu opisujące `ClassDerived` obiektu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

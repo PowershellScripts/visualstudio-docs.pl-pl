@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 329661e857859a1f6452506ba2984ac962bf4ff2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fcf5e120e769b69c064306432c3026194eb0d851
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853940"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Określa typ ramki stosu.  
@@ -48,16 +48,16 @@ enum StackFrameTypeEnum {
  Ramka pułapki jądra.  
   
  `FrameTypeStandard`  
- Standardowe EBP ramki stosu.  
+ Standardowa EBP ramki stosu.  
   
  `FrameTypeFrameData`  
- Wskaźnik ramki pominięta; Ramki danych informacji.  
+ Wskaźnik ramki pominięta; Ramka danych informacji.  
   
  `FrameTypeUnknown`  
- Ramki, który nie ma żadnych informacji debugowania.  
+ Ramki, który nie ma żadnych informacji o debugowaniu.  
   
 ## <a name="remarks"></a>Uwagi  
- To wyliczenie wartości są zwracane przez wywołanie do [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) metody.  
+ Wartości w tym wyliczeniu są zwracane przez wywołanie [idiastackframe::get_type —](../../debugger/debug-interface-access/idiastackframe-get-type.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: cvconst.h  

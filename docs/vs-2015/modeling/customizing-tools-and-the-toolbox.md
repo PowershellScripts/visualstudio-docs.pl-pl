@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69ee365e3bc6902ffecd755d6f788b7f9e238c52
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847815"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Dostosowywanie narzędzi i przybornika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,15 +183,15 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### <a name="custom-code-for-connection-builders"></a>Niestandardowy kod konstruktory połączeń  
  Istnieją cztery pola wyboru w interfejsie użytkownika, określające różnego rodzaju dostosowanie konstruktory połączeń:  
   
--   **akceptowanie niestandardowe** pole wyboru w dyrektywie roli źródłowej lub docelowej  
+- **akceptowanie niestandardowe** pole wyboru w dyrektywie roli źródłowej lub docelowej  
   
--   **niestandardowe połączenia** pole wyboru w dyrektywie roli źródłowej lub docelowej  
+- **niestandardowe połączenia** pole wyboru w dyrektywie roli źródłowej lub docelowej  
   
--   **używa niestandardowych connect** pole wyboru w dyrektywie connect  
+- **używa niestandardowych connect** pole wyboru w dyrektywie connect  
   
--   **jest niestandardowa** właściwości konstruktora połączeń  
+- **jest niestandardowa** właściwości konstruktora połączeń  
   
- Należy podać niektóre kodu programu, aby wykonać te dostosowania. Aby sprawdzić, jaki kod, musisz podać, zaznacz jeden z tych pól, kliknij Przekształć wszystkie szablony, a następnie Skompiluj rozwiązanie. Powoduje, że raport o błędach. Kliknij dwukrotnie raport o błędach można wyświetlić komentarz, który objaśnia, jaki kod należy dodać.  
+  Należy podać niektóre kodu programu, aby wykonać te dostosowania. Aby sprawdzić, jaki kod, musisz podać, zaznacz jeden z tych pól, kliknij Przekształć wszystkie szablony, a następnie Skompiluj rozwiązanie. Powoduje, że raport o błędach. Kliknij dwukrotnie raport o błędach można wyświetlić komentarz, który objaśnia, jaki kod należy dodać.  
   
 > [!NOTE]
 >  Aby dodać niestandardowy kod, Utwórz definicję klasy częściowej w pliku kodu niezależnie od plików kodu w folderach GeneratedCode. Aby uniknąć utraty wyników pracy, nie należy edytować pliki wygenerowanego kodu. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).  

@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 1dffa349aa94c5221e359633c7a8b4ef2e4fdde5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3fc044d7b59a1d9bfa48139c479625e47440b5e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928688"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Rozwiązywanie problemów i znane problemy (Visual Studio Tools dla Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,21 +64,21 @@ W tej sekcji możesz znaleźć rozwiązania typowych problemów z narzędziami V
   
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Aby zgłosić, że program Visual Studio zawiesza się podczas debugowania przy użyciu programu Visual Studio Tools for Unity  
   
-1.  Otwórz nowe wystąpienie programu Visual Studio.  
+1. Otwórz nowe wystąpienie programu Visual Studio.  
   
-2.  Otwórz dialogowym Dołącz do procesu. W wystąpieniu programu Visual Studio, w menu głównym wybierz **debugowania**, **dołączyć do procesu**.  
+2. Otwórz dialogowym Dołącz do procesu. W wystąpieniu programu Visual Studio, w menu głównym wybierz **debugowania**, **dołączyć do procesu**.  
   
-3.  Dołącz debuger do zamrożone wystąpieniu programu Visual Studio. W **dołączyć do procesu** okno dialogowe, wybierz zamrożone wystąpienie programu Visual Studio z **dostępne procesy** tabeli, a następnie wybierz **Dołącz** przycisku.  
+3. Dołącz debuger do zamrożone wystąpieniu programu Visual Studio. W **dołączyć do procesu** okno dialogowe, wybierz zamrożone wystąpienie programu Visual Studio z **dostępne procesy** tabeli, a następnie wybierz **Dołącz** przycisku.  
   
-4.  Zatrzymaj debuger. W wystąpieniu programu Visual Studio, w menu głównym wybierz **debugowania**, **Przerwij wszystko** lub po prostu naciśnij **Ctrl + Alt + Break**.  
+4. Zatrzymaj debuger. W wystąpieniu programu Visual Studio, w menu głównym wybierz **debugowania**, **Przerwij wszystko** lub po prostu naciśnij **Ctrl + Alt + Break**.  
   
-5.  Utwórz zrzutu wątku. W oknie wiersza polecenia wprowadź następujące polecenie i naciśnij klawisz **Enter**.  
+5. Utwórz zrzutu wątku. W oknie wiersza polecenia wprowadź następujące polecenie i naciśnij klawisz **Enter**.  
   
-    ```powershell  
-    Debug.ListCallStack /AllThreads /ShowExternalCode  
-    ```  
+   ```powershell  
+   Debug.ListCallStack /AllThreads /ShowExternalCode  
+   ```  
   
-     Konieczne może być **polecenia** okna pierwszy widoczne. W programie Visual Studio, w menu głównym wybierz **widoku**, **Windows inne**, **okna polecenia**.  
+    Konieczne może być **polecenia** okna pierwszy widoczne. W programie Visual Studio, w menu głównym wybierz **widoku**, **Windows inne**, **okna polecenia**.  
   
-6.  Na koniec Wyślij zrzutu wątku do [ vstusp@microsoft.com ](mailto:vstusp@microsoft.com), wraz z opisem czynności wykonywanych podczas zamrożone stało się programu Visual Studio.
+6. Na koniec Wyślij zrzutu wątku do [ vstusp@microsoft.com ](mailto:vstusp@microsoft.com), wraz z opisem czynności wykonywanych podczas zamrożone stało się programu Visual Studio.
 

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dc7736f9210ef15cec8cece45d7899cc116a334
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e2e103a345a3a064afb96cc7861bd3394da3a0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099525"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861621"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
-Określa przyczynę aparat debugowania (DE), można dołączyć do węzła programu.  
+Określa przyczyny aparat debugowania (DE) można dołączyć do węzła programu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -49,13 +49,13 @@ public enum enum_ATTACH_REASON {
  Dołącz, ponieważ proces jest obecnie w trybie debugowania.  
   
  ATTACH_REASON_LAUNCH  
- Dołączyć, ponieważ proces został uruchomiony.  
+ Należy dołączyć, ponieważ proces został uruchomiony.  
   
  ATTACH_REASON_USER  
  Dołącz ze względu na żądanie użytkownika.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości są używane jako parametr [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) i [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) metody.  
+ Wartości te są używane jako parametr do [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) i [Dołącz](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

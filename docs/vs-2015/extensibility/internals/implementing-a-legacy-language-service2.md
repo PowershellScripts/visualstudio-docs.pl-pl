@@ -15,31 +15,31 @@ ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35dc4c6b80975ccddc42e54d0d7f39cf9024d62d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1fb00e995e1a684438e99428437b4bca1069b970
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253126"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831383"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementowanie starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Aby zaimplementować usługi języka przy użyciu środowiska pakietu zarządzanego (MPF), należy wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.LanguageService> klasę i zaimplementować następujące metody abstrakcyjne i właściwości:  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> — Metoda  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> — Metoda  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> — Metoda  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> — Metoda  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> — Metoda  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> — Metoda  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> Właściwości  
+- <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A> Właściwości  
   
- Zobacz odpowiednią sekcje poniżej, aby uzyskać szczegółowe informacje dotyczące implementowania tych metod i właściwości.  
+  Zobacz odpowiednią sekcje poniżej, aby uzyskać szczegółowe informacje dotyczące implementowania tych metod i właściwości.  
   
- Aby obsługiwać dodatkowe funkcje, usługi w języka może być konieczne wyprowadzenia klasy z jednej z klas usługi języka MPF; na przykład, aby zapewnić obsługę dodatkowych poleceń, należy wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy i zastąpić niektóre polecenia obsługi metod (zobacz <xref:Microsoft.VisualStudio.Package.ViewFilter> Aby uzyskać szczegółowe informacje). <xref:Microsoft.VisualStudio.Package.LanguageService> Klasa udostępnia szereg metod, które są wywoływane w celu tworzenia nowych wystąpień różnych klas i zastąpić metodę tworzenia odpowiednie, aby zapewnić wystąpienia klasy. Na przykład, należy zastąpić <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.LanguageService> klasy w celu zwrócenia wystąpienia własne <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy. Zobacz sekcję "Utworzenie wystąpienia klasy niestandardowe", aby uzyskać więcej informacji.  
+  Aby obsługiwać dodatkowe funkcje, usługi w języka może być konieczne wyprowadzenia klasy z jednej z klas usługi języka MPF; na przykład, aby zapewnić obsługę dodatkowych poleceń, należy wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy i zastąpić niektóre polecenia obsługi metod (zobacz <xref:Microsoft.VisualStudio.Package.ViewFilter> Aby uzyskać szczegółowe informacje). <xref:Microsoft.VisualStudio.Package.LanguageService> Klasa udostępnia szereg metod, które są wywoływane w celu tworzenia nowych wystąpień różnych klas i zastąpić metodę tworzenia odpowiednie, aby zapewnić wystąpienia klasy. Na przykład, należy zastąpić <xref:Microsoft.VisualStudio.Package.LanguageService.CreateViewFilter%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.LanguageService> klasy w celu zwrócenia wystąpienia własne <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy. Zobacz sekcję "Utworzenie wystąpienia klasy niestandardowe", aby uzyskać więcej informacji.  
   
- Usługi języka może też podawać swój własny ikon, które są używane w wielu miejscach. Na przykład gdy jest wyświetlana lista dokańczania IntelliSense, każdy element na liście mogą mieć skojarzone z nią oznaczenie elementu jako metody, klasy, przestrzeni nazw, właściwości, ikona lub niezależnie od rodzaju jest niezbędne dla danego języka. Te ikony są używane na wszystkich listach IntelliSense, **pasek nawigacyjny**, a następnie w **lista błędów** okno zadań. Zobacz sekcję "Obrazy usługi języka" poniżej, aby uzyskać szczegółowe informacje.  
+  Usługi języka może też podawać swój własny ikon, które są używane w wielu miejscach. Na przykład gdy jest wyświetlana lista dokańczania IntelliSense, każdy element na liście mogą mieć skojarzone z nią oznaczenie elementu jako metody, klasy, przestrzeni nazw, właściwości, ikona lub niezależnie od rodzaju jest niezbędne dla danego języka. Te ikony są używane na wszystkich listach IntelliSense, **pasek nawigacyjny**, a następnie w **lista błędów** okno zadań. Zobacz sekcję "Obrazy usługi języka" poniżej, aby uzyskać szczegółowe informacje.  
   
 ## <a name="getlanguagepreferences-method"></a>Metoda GetLanguagePreferences  
  <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> Metoda zawsze zwraca to samo wystąpienie elementu <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy. Możesz użyć podstawowa <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy, jeśli nie potrzebujesz żadnych dodatkowych preferencje dotyczące usługi języka. Klasy usługi w języka MPF przyjęto założenie, co najmniej obecności base <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy.  

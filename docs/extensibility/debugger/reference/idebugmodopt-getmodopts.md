@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4be7cf2239b77314646df8285d1a89953f9401fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: db00126b72399610e0e270c1cd0f736171f52fce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112385"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903507"
 ---
 # <a name="idebugmodoptgetmodopts"></a>IDebugModOpt::GetModOpts
-Pobiera listę modyfikatorów opcjonalne.  
+Pobiera listę Modyfikatory opcjonalne.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,16 +44,16 @@ int GetModOpts(
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [in] Liczba elementów, które ma zostać zwrócona.  
+ [in] Liczba elementów do zwrócenia.  
   
  `rgelt`  
- [out] Zwraca tablicę, która zawiera opcje.  
+ [out] Zwraca tablicę, który zawiera opcje.  
   
  `pceltFetched`  
- [w, out] Liczba elementów zwracanych w `rgelt` tablicy.  
+ [out w] Liczba elementów zwróconych w `rgelt` tablicy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugModOpt](../../../extensibility/debugger/reference/idebugmodopt.md)

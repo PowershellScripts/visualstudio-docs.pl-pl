@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 58b1d329447ab73f9df93d2f75a62c2e21a6dcfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3229b8432af89857d1aadd8bf1531c8b11a29ed7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897995"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: Nie nadawać wartościom enum oznaczenia &#39;zastrzeżone&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
@@ -46,11 +47,11 @@ ms.locfileid: "49204727"
 
  Ograniczona liczba przypadków dodawania członka jest zmianą przerywającą nawet wtedy, gdy oryginalny członkowie zachować oryginalne wartości. Przede wszystkim nowy element członkowski nie może być zwracany z istniejących ścieżek kodu bez przerywania obiektów wywołujących, które używają `switch` (`Select` w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) instrukcji na wartość zwracaną obejmujący listę całego elementów członkowskich i który zgłosić wyjątek w przypadek domyślny. Pomocniczy kwestią jest, że kod klienta może nie obsługiwać zmiana w porównaniu z metody odbicia takich jak <xref:System.Enum.IsDefined%2A?displayProperty=fullName>. W związku z tym czy nowy element członkowski został zwrócony z istniejących metod niezgodności aplikacji występuje z powodu użycie odbicia niska, jedynym rozwiązaniem nierozdzielający jest:
 
-1.  Dodaj nowe wyliczenie, które zawiera elementy członkowskie oryginalnego i nowe.
+1. Dodaj nowe wyliczenie, które zawiera elementy członkowskie oryginalnego i nowe.
 
-2.  Oznacz oryginalnego wyliczenie atrybutem <xref:System.ObsoleteAttribute?displayProperty=fullName> atrybutu.
+2. Oznacz oryginalnego wyliczenie atrybutem <xref:System.ObsoleteAttribute?displayProperty=fullName> atrybutu.
 
- Wykonaj tę samą procedurę dla dowolnego typy widoczne na zewnątrz lub elementów członkowskich, które udostępnianie oryginalne wyliczenia.
+   Wykonaj tę samą procedurę dla dowolnego typy widoczne na zewnątrz lub elementów członkowskich, które udostępnianie oryginalne wyliczenia.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, usuń lub zmień nazwę elementu członkowskiego.

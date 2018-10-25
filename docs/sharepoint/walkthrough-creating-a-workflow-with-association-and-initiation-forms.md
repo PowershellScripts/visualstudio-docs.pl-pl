@@ -30,15 +30,15 @@ ms.lasthandoff: 10/23/2018
 ms.locfileid: "49873880"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Wskazówki: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia
-  W tym instruktażu pokazano, jak utworzyć podstawowy sekwencyjny przepływ pracy, który obejmuje korzystanie z formularzy skojarzenia i inicjacji. Są to formularze ASPX, umożliwiające parametry, które mają zostać dodane do przepływu pracy, gdy jest ona skojarzona najpierw przez administratora programu SharePoint (formularza skojarzenia) i po uruchomieniu przepływu pracy przez użytkownika (formularza inicjowania).  
+  W tym instruktażu pokazano, jak utworzyć podstawowy sekwencyjny przepływ pracy, który obejmuje korzystanie z formularzy skojarzenia i inicjacji. Są to formularze ASPX umożliwiające dodanie parametrów do przepływu pracy, gdy jest on pierwszy raz skojarzony przez administratora programu SharePoint (formularz skojarzenia) i po uruchomieniu przepływu pracy przez użytkownika (formularz inicjowania).  
   
- Ten przewodnik przedstawia scenariusz, w którym użytkownik chce, aby utworzyć przepływy pracy zatwierdzania w raportach wydatków ma następujące wymagania:  
+ Ten przewodnik przedstawia scenariusz, w którym użytkownik chce utworzyć przepływ pracy zatwierdzania w raportach wydatków i ma następujące wymagania:  
   
-- Gdy przepływ pracy jest skojarzona z listy, administrator jest monitowany przy użyciu formularza skojarzenia, w których użytkownik podał limit Dolar raportów wydatków.  
+- Gdy przepływ pracy jest skojarzony z listą, administrator jest proszony przy użyciu formularza skojarzenia o podanie limitu kwoty na raport wydatków.  
   
-- Pracownicy przekazać swoje raporty wydatków na listę dokumenty udostępnione, uruchomić przepływ pracy, a następnie wprowadź wydatków całkowite w formularza inicjowania przepływu pracy.  
+- Pracownicy przesyłają swoje raporty wydatków na listę Dokumenty udostępnione, uruchamiają przepływ pracy, a następnie wprowadzają całkowitą kwotę wydatków w formularzu inicjowania przepływu pracy.  
   
-- Jeśli raport wydatków pracowników łączna liczba przekracza limit wstępnie zdefiniowanych przez administratora, zadanie jest tworzone dla Menedżera pracownika zatwierdzić raportu wydatków. Jednak jeśli suma raportu wydatków pracownika jest większa niż limit wydatków, zatwierdzane automatycznie zostanie napisany komunikat do listy historii przepływu pracy.  
+- Jeśli całkowita suma wydatków w raporcie pracownika przekracza limit wstępnie zdefiniowany przez administratora, tworzone jest zadanie dla menedżera pracownika, aby zatwierdzić raport wydatków. Jeśli jednak suma wydatków w raporcie pracownika jest mniejsza od limitu wydatków lub równa temu limitowi, na liście historii przepływu pracy zostanie zapisany komunikat o automatycznym zatwierdzeniu raportu.  
   
   W instruktażu przedstawiono następujące zagadnienia:  
   

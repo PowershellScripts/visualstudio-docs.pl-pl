@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b490eb1afbe8136932cfbe4caf0b1df33fbd3e4b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781673"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841887"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Wskazówki: Złożone powiązanie danych w projekcie na poziomie dokumentu
   W tym instruktażu przedstawiono podstawowe informacje o złożone powiązanie danych w projekcie na poziomie dokumentu. Pola w bazie danych Northwind programu SQL Server można powiązać wiele komórek w arkuszu programu Microsoft Office Excel.  
@@ -32,13 +32,13 @@ ms.locfileid: "38781673"
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Dodawanie źródła danych do projektu skoroszytu.  
+- Dodawanie źródła danych do projektu skoroszytu.  
   
--   Dodawanie formantów powiązanych z danymi do arkusza.  
+- Dodawanie formantów powiązanych z danymi do arkusza.  
   
--   Zapisywanie zmian danych w bazie danych.  
+- Zapisywanie zmian danych w bazie danych.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
@@ -67,25 +67,25 @@ ms.locfileid: "38781673"
   
 ### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
   
-1.  Jeśli **źródeł danych** okno nie jest widoczne, wyświetlić je, na pasku menu, wybierając **widoku** > **Windows inne**  >   **Źródła danych**.  
+1. Jeśli **źródeł danych** okno nie jest widoczne, wyświetlić je, na pasku menu, wybierając **widoku** > **Windows inne**  >   **Źródła danych**.  
   
-2.  Wybierz **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
+2. Wybierz **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
   
-3.  Wybierz **bazy danych** a następnie kliknij przycisk **dalej**.  
+3. Wybierz **bazy danych** a następnie kliknij przycisk **dalej**.  
   
-4.  Wybierz połączenie danych z bazie danych programu SQL Server Northwind lub Dodaj nowe połączenie przy użyciu **nowe połączenie** przycisku.  
+4. Wybierz połączenie danych z bazie danych programu SQL Server Northwind lub Dodaj nowe połączenie przy użyciu **nowe połączenie** przycisku.  
   
-5.  Po zostało wybrane lub utworzyć połączenie, kliknij przycisk **dalej**.  
+5. Po zostało wybrane lub utworzyć połączenie, kliknij przycisk **dalej**.  
   
-6.  Usuń zaznaczenie opcji, aby zapisać połączenie, jeśli jest ono zaznaczone, a następnie kliknij **dalej**.  
+6. Usuń zaznaczenie opcji, aby zapisać połączenie, jeśli jest ono zaznaczone, a następnie kliknij **dalej**.  
   
-7.  Rozwiń **tabel** w węźle **obiektów bazy danych** okna.  
+7. Rozwiń **tabel** w węźle **obiektów bazy danych** okna.  
   
-8.  Zaznacz pole wyboru obok pozycji **pracowników** tabeli.  
+8. Zaznacz pole wyboru obok pozycji **pracowników** tabeli.  
   
 9. Kliknij przycisk **Zakończ**.  
   
- Kreator dodaje **pracowników** do tabeli **źródeł danych** okna. Dodaje także typizowany zestaw danych do projektu, który jest widoczny w **Eksploratora rozwiązań**.  
+   Kreator dodaje **pracowników** do tabeli **źródeł danych** okna. Dodaje także typizowany zestaw danych do projektu, który jest widoczny w **Eksploratora rozwiązań**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Dodawanie formantów do arkusza  
  Arkusz zostanie wyświetlona **pracowników** tabeli po otwarciu skoroszytu. Użytkownicy będą mogli dokonać zmian danych, a następnie zapisz te zmiany w bazie danych przez kliknięcie przycisku.  
@@ -108,27 +108,27 @@ ms.locfileid: "38781673"
   
 ### <a name="to-add-a-button"></a>Aby dodać przycisk  
   
-1.  Z **wspólnych formantów** karcie **przybornika**, Dodaj <xref:System.Windows.Forms.Button> kontrolkę komórki **A4** arkusza.  
+1. Z **wspólnych formantów** karcie **przybornika**, Dodaj <xref:System.Windows.Forms.Button> kontrolkę komórki **A4** arkusza.  
   
- Następnym krokiem jest do dodawania tekstu przycisku, po otwarciu arkusza.  
+   Następnym krokiem jest do dodawania tekstu przycisku, po otwarciu arkusza.  
   
 ## <a name="initialize-the-control"></a>Inicjowanie kontrolki  
  Dodawanie tekstu do przycisku w <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> programu obsługi zdarzeń.  
   
 ### <a name="to-initialize-the-control"></a>Aby zainicjować formant  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Sheet1.vb** lub **Sheet1.cs**, a następnie kliknij przycisk **Wyświetl kod** w menu skrótów.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **Sheet1.vb** lub **Sheet1.cs**, a następnie kliknij przycisk **Wyświetl kod** w menu skrótów.  
   
-2.  Dodaj następujący kod do `Sheet1_Startup` metodę, aby ustawić tekst za b`utton`.  
+2. Dodaj następujący kod do `Sheet1_Startup` metodę, aby ustawić tekst za b`utton`.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
-     [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
+    [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
+    [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
   
-3.  W przypadku tylko język C#, należy dodać program obsługi zdarzeń dla <xref:System.Windows.Forms.Control.Click> zdarzenia `Sheet1_Startup` metody.  
+3. W przypadku tylko język C#, należy dodać program obsługi zdarzeń dla <xref:System.Windows.Forms.Control.Click> zdarzenia `Sheet1_Startup` metody.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
+    [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
   
- Teraz Dodaj kod, aby obsłużyć <xref:System.Windows.Forms.Control.Click> zdarzenia przycisku.  
+   Teraz Dodaj kod, aby obsłużyć <xref:System.Windows.Forms.Control.Click> zdarzenia przycisku.  
   
 ## <a name="save-changes-to-the-database"></a>Zapisz zmiany w bazie danych  
  Wprowadzono zmiany dane istnieją tylko w przypadku lokalnego zestawu danych, aż jawnie są zapisywane w bazie danych.  
@@ -175,15 +175,15 @@ ms.locfileid: "38781673"
   
 ### <a name="to-add-new-rows"></a>Aby dodać nowe wiersze  
   
-1.  Zaznacz komórkę w obiekcie listy.  
+1. Zaznacz komórkę w obiekcie listy.  
   
-     W dolnej części listy z gwiazdką pojawi się nowy wiersz (**\***) w pierwszej komórki nowego wiersza.  
+    W dolnej części listy z gwiazdką pojawi się nowy wiersz (**\\***) w pierwszej komórki nowego wiersza.  
   
-2.  Dodaj następujące informacje w pusty wiersz.  
+2. Dodaj następujące informacje w pusty wiersz.  
   
-    |employeeID|Nazwisko|Imię|Tytuł|  
-    |----------------|--------------|---------------|-----------|  
-    |10|Pawłowski|Marek|Kierownikiem ds. sprzedaży|  
+   |employeeID|Nazwisko|Imię|Tytuł|  
+   |----------------|--------------|---------------|-----------|  
+   |10|Pawłowski|Marek|Kierownikiem ds. sprzedaży|  
   
 ### <a name="to-delete-rows"></a>Aby usunąć wiersze  
   

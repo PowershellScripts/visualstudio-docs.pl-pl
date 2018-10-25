@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a05e8f034ec30f0f387675759cb7601f7b3fc3e7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ffe5bdd0619ae5954a34fde50518adb3767d1825
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114628"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926504"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 Ta metoda uruchamia proces, za pomocą aparatu debugowania (DE).  
@@ -65,10 +65,10 @@ int LaunchSuspended(
   
 #### <a name="parameters"></a>Parametry  
  `pszMachine`  
- [in] Nazwa komputera, w którym można uruchomić procesu. Użyj wartości null, aby określić komputer lokalny.  
+ [in] Nazwa maszyny, w którym można uruchomić procesu. Użyj wartości null, aby określić komputer lokalny.  
   
  `pPort`  
- [in] [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interfejs reprezentujący port, którego program ma być uruchamiany w.  
+ [in] [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interfejs reprezentujący portu, który będzie uruchamiany program.  
   
  `pszExe`  
  [in] Nazwa pliku wykonywalnego do uruchomienia.  
@@ -77,39 +77,39 @@ int LaunchSuspended(
  [in] Argumenty do przekazania do pliku wykonywalnego. Może być wartością null, jeśli nie wymaga argumentów.  
   
  `pszDir`  
- [in] Nazwa katalogu roboczego używane przez plik wykonywalny. Może być wartością null, jeśli katalog roboczy nie jest wymagane.  
+ [in] Nazwa katalogu roboczego używane przez plik wykonywalny. Może być wartością null, jeśli katalog roboczy nie jest wymagana.  
   
  `bstrEnv`  
- [in] Blok środowiska ciągi zakończone wartością NULL, następuje dodatkowe terminatorem NULL.  
+ [in] Blok środowiska ciągów zakończony znakiem NULL, następuje dodatkowe terminator o wartości NULL.  
   
  `pszOptions`  
  [in] Opcje dla pliku wykonywalnego.  
   
  `dwLaunchFlags`  
- [in] Określa [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) sesji.  
+ [in] Określa [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) opłata za sesję.  
   
  `hStdInput`  
- [in] Dojście do alternatywnego strumienia wejściowego. Może być 0, jeśli przekierowanie nie jest wymagana.  
+ [in] Dojście do alternatywnego strumienia wejściowego. Może być równa 0, jeśli przekierowanie nie jest wymagana.  
   
  `hStdOutput`  
- [in] Dojście do strumienia wyjściowego alternatywny. Może być 0, jeśli przekierowanie nie jest wymagana.  
+ [in] Dojście do strumienia wyjściowego alternatywne. Może być równa 0, jeśli przekierowanie nie jest wymagana.  
   
  `hStdError`  
- [in] Dojście do strumienia wyjściowego błąd alternatywny. Może być 0, jeśli przekierowanie nie jest wymagana.  
+ [in] Dojście do błędu alternatywnego strumienia wyjściowego. Może być równa 0, jeśli przekierowanie nie jest wymagana.  
   
  `pCallback`  
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiekt, który odbiera zdarzenia debugera.  
+ [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiekt, który odbiera zdarzenia debuger.  
   
  `ppDebugProcess`  
- [out] Zwraca powstałe w ten sposób [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt, który reprezentuje uruchomionego procesu.  
+ [out] Zwraca wartość wynikowa [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt, który reprezentuje uruchomienie procesu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Zwykle [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] uruchamia program używając [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) — metoda, a następnie dołącza debuger do programu zawieszone. Istnieją jednak okoliczności, w których trzeba uruchomić program (na przykład, jeśli aparat debugowania jest częścią tłumacza, a program debugowany jest interpretowany język), w którym to przypadku aparat debugowania [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] używa `IDebugEngineLaunch2::LaunchSuspended` — metoda .  
+ Zwykle [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] uruchamia program korzysta [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) metody, a następnie dołącza debuger do wstrzymania programu. Istnieją jednak okoliczności, w których aparat debugowania może być konieczne, uruchom program (na przykład, jeśli aparat debugowania jest częścią tłumacza i debugowanego jest językiem interpretowanych), w którym to przypadku [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] używa `IDebugEngineLaunch2::LaunchSuspended` — metoda .  
   
- [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md) metoda jest wywoływana, aby uruchomić proces po procesie została pomyślnie uruchomiona w stanie wstrzymania.  
+ [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md) metoda jest wywoływana, aby rozpocząć proces po procesie została pomyślnie uruchomiona w stanie wstrzymania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)   

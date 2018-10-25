@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a40211c49f5255dba608d38529f7c56ac990e671
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8833b27d70a92091f809605edc81cd82a8a65f06
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870006"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
-Pobiera [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktury, która opisuje odwołanie. Zarezerwowane do użytku w przyszłości.  
+Pobiera [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) strukturę, która opisuje odwołania. Zarezerwowane do użytku w przyszłości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,22 +51,22 @@ int GetReferenceInfo (
   
 #### <a name="parameters"></a>Parametry  
  `dwFields`  
- [in] Kombinacja flag z [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) wyliczenia, które określają pola do wypełniania [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktury.  
+ [in] Kombinacja flag z [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) wyliczenie, które określają pola, które mają być wypełnione [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktury.  
   
  `nRadix`  
- [in] Podstawa ma być używany podczas formatowania wszelkie informacje numeryczne.  
+ [in] Podstawy, który ma być używany w formatowaniu wszelkie dane liczbowe.  
   
  `dwTimeout`  
- [in] Maksymalny czas (w milisekundach) oczekiwania przed powrotem z tej metody. Użyj `INFINITE` będzie czekać w nieskończoność.  
+ [in] Maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.  
   
  `rgpArgs`  
- [in] Tablica [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) obiektów. Zarezerwowane do użytku w przyszłości; Ustaw wartość null.  
+ [in] Tablica [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) obiektów. Zarezerwowane dla przyszłego użytku; Ustaw wartość null.  
   
  `dwArgCount`  
- [in] Liczba argumentów odwołania w `rgpArgs` tablicy. Zarezerwowane do użytku w przyszłości; ustawiona na 0.  
+ [in] Liczba argumentów odwołania w `rgpArgs` tablicy. Zarezerwowane dla przyszłego użytku; wartość 0.  
   
  `pReferenceInfo`  
- [out] A [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktury, która jest wypełniane opis właściwości.  
+ [out] A [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) strukturę, która jest wypełniane opis właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zawsze zwraca `E_NOTIMPL`.  

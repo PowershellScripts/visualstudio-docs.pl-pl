@@ -12,25 +12,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7829408a2cb4cee74c4059d03567c3fc7f6c8a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: abf531b6b509afc15da057105b014e2c2b41a2cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31581880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871475"
 ---
 # <a name="utilization-navigator"></a>Nawigator wykorzystania
-Nawigator wykorzystania w Concurrency Visualizer służy do wybierania interwał czasu w śledzenia. Narzędzia Concurrency Visualizer pokazuje wykorzystania rdzeni procesora CPU przez proces docelowy w czasie. To ułatwia zbadać wzorce użycia procesora CPU i umożliwia porównanie danych użycia i dane w innych widokach. Nawigator wykorzystania pojawia się w górnej części każdego widoku w wizualizatora współbieżności. Na poniższej ilustracji przedstawiono Nawigator wykorzystania.  
+Nawigator wykorzystania w Wizualizatorze współbieżności służy do śledzenia Wybierz przedział czasu. Wizualizator współbieżności przedstawia użycie rdzeni procesora CPU przez proces docelowy wraz z upływem czasu. Umożliwia łatwiejsze zbadanie wzorcach użycia procesora CPU, a także umożliwia porównanie danych użycia i danych w innych widokach. Nawigator wykorzystania jest wyświetlana w górnej części każdego widoku w Wizualizatorze współbieżności. Poniższa ilustracja przedstawia Nawigator wykorzystania.  
   
- ![Nawigator wykorzystania przedstawiający wybranego przedziału czasu](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  
+ ![Nawigator wykorzystania przedstawiający wybrany przedział czasu](../profiling/media/cvutilizationnavigator.png "CVUtilizationNavigator")  
 Nawigator wykorzystania i wybrany przedział czasu  
   
- Na ilustracji, wybranym zakresie jest definiowana za czerwonym prostokącie, znany jako *thumb*.  
+ Na ilustracji, wybranych zakresów jest definiowany przez czerwony prostokąt, znane jako *thumb*.  
   
- Oto jak Nawigator wykorzystania można użyć do manipulowania przedział czasu wyświetlane:  
+ Poniżej przedstawiono, jak Nawigator wykorzystania można użyć do manipulowania zakres wyświetlanych czasu:  
   
--   Można przesuwa przeciągając stronie przycisku suwaka w lewo lub w prawo. (Klawiatury: Przenieś fokus na stronie przycisku suwaka, a następnie naciśnij klawisz Strzałka w lewo lub w prawo.)  
+- Można przesuwać, przeciągając przycisku suwaka w lewo lub w prawo. (Klawiatura: Przenieś fokus do przycisku suwaka, a następnie naciśnij klawisz Strzałka w lewo lub w prawo.)  
   
--   Zakres interwał można zmienić, przeciągając jeden z uchwytów. (Klawiatury: Przenieś fokus do uchwytu, a następnie naciśnij klawisz Strzałka w lewo lub w prawo.)  
+- Zakres interwał można zmienić, przeciągając jeden z uchwytów. (Klawiatura: Przenieś fokus do uchwytu, a następnie naciśnij klawisz Strzałka w lewo lub w prawo.)  
   
- Jeśli zmienisz interwał przy użyciu różnych sterowania powiększenia Concurrency Visualizer Nawigator wykorzystania aktualizacji, aby odzwierciedlić zmianę.
+  Jeśli zmienisz interwał przy użyciu innej kontrolki powiększenia Concurrency Visualizer Nawigator wykorzystania aktualizacji w celu odzwierciedlenia zmiany.

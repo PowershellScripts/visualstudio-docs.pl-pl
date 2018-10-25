@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c718414749bb6c748f25fb90837644fe984a274
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef229fb06f8b265b76dc40019b18ae3c796740f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102005"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829966"
 ---
 # <a name="evalflags"></a>EVALFLAGS
-Określa flagi sterujące Obliczanie wyrażenia.  
+Określa flagi, które kontrolują Obliczanie wyrażenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -54,30 +54,30 @@ public enum enum_EVALFLAGS {
   
 ## <a name="members"></a>Elementy członkowskie  
  EVAL_RETURNVALUE  
- Określa przyjąć wartość zwracaną, jeśli istnieje.  
+ Określa, że wartość zwracana, jeśli istnieje, można obliczyć.  
   
  EVAL_NOSIDEEFFECTS  
- Określa, że efekty uboczne nie jest dozwolone.  
+ Określa, że efekty uboczne niemożliwe.  
   
  EVAL_ALLOWBPS  
- Określa zatrzymywania punktów przerwania.  
+ Określa zatrzymywanie punktów przerwania.  
   
  EVAL_ALLOWERRORREPORT  
- Określa raportów o błędach do hosta mogą być. Głównie używane do obliczania wyrażenia w skrypcie w programie Internet Explorer.  
+ Określa raportów o błędach do hosta mają być dozwolone. Używane głównie do obliczenia wyrażenia w skrypcie w programie Internet Explorer.  
   
  EVAL_FUNCTION_AS_ADDRESS  
- Funkcje wymusza ma zostać obliczone jako adresy, zamiast wywoływania funkcji.  
+ Funkcje wymusza, aby zostały uznane za adresów, zamiast wywoływania funkcji.  
   
  EVAL_NOFUNCEVAL  
- Funkcja zapobiega oceniane. Rozważmy na przykład `int` tokenu w wyrażeniu `myExpression(int) + 10`. Ta funkcja może zostać poprawnie oceniony jako adres, ale nie jako wartość.  
+ Funkcja zapobiega oceniane. Na przykład, rozważmy `int` tokenu w wyrażeniu `myExpression(int) + 10`. Ta funkcja może być poprawnie określona jako adres, ale nie jako wartość.  
   
  EVAL_NOEVENTS  
- Flaga wskazująca, że zdarzeń występujących podczas obliczania wyrażenia nie powinny być wysyłane do menedżera sesji debugowania (SDM) lub do środowiska IDE.  
+ Flaga wskazująca, że zdarzenia, które wystąpiły podczas obliczania wyrażenia nie powinny być wysyłane, Menedżer debugowania sesji (SDM) lub środowiska IDE.  
   
 ## <a name="remarks"></a>Uwagi  
- Te flagi są przekazywane jako argument [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) i [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) metody.  
+ Te flagi są przekazywane jako argument do [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) i [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) metody.  
   
- Te flagi mogą być łączone z bitowego OR.  
+ Te flagi mogą być łączone z bitowe OR.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

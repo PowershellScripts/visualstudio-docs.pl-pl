@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d93861fc6238949d8666072b0bf5a5cc7efdb87b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7062f44fe119858e579a53325deca0ea04b46475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498944"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873022"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Wskazówki: Dodawanie funkcji do edytora niestandardowego
 Po utworzeniu niestandardowego edytora, możesz dodać więcej funkcji do niego.  
@@ -126,34 +126,34 @@ Po utworzeniu niestandardowego edytora, możesz dodać więcej funkcji do niego.
   
 ## <a name="robust-programming"></a>Skuteczne programowanie  
   
--   Tworzone jest wystąpienie edytora, gdy wywołuje IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody. Jeśli Edytor obsługuje wiele widoków, `CreateEditorInstance` tworzy zarówno dane dokumentu, jak i obiektów widoku dokumentu. Jeśli obiekt danych dokumentu jest już otworzyć, inną niż null `punkDocDataExisting` wartość jest przekazywana do `IVsEditorFactory::CreateEditorInstance`. Wdrożenie fabryki edytora należy określić, czy istniejący obiekt danych dokumentu jest zgodny, wykonywanie zapytań dotyczących odpowiednich interfejsów na nim. Aby uzyskać więcej informacji, zobacz [Obsługa wielu widoków dokumentu](../extensibility/supporting-multiple-document-views.md).  
+- Tworzone jest wystąpienie edytora, gdy wywołuje IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody. Jeśli Edytor obsługuje wiele widoków, `CreateEditorInstance` tworzy zarówno dane dokumentu, jak i obiektów widoku dokumentu. Jeśli obiekt danych dokumentu jest już otworzyć, inną niż null `punkDocDataExisting` wartość jest przekazywana do `IVsEditorFactory::CreateEditorInstance`. Wdrożenie fabryki edytora należy określić, czy istniejący obiekt danych dokumentu jest zgodny, wykonywanie zapytań dotyczących odpowiednich interfejsów na nim. Aby uzyskać więcej informacji, zobacz [Obsługa wielu widoków dokumentu](../extensibility/supporting-multiple-document-views.md).  
   
--   Jeśli używasz uproszczone podejście osadzania, należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interfejsu.  
+- Jeśli używasz uproszczone podejście osadzania, należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> interfejsu.  
   
--   Jeśli zdecydujesz się używać aktywacji w miejscu, należy zaimplementować następujące interfejsy:  
+- Jeśli zdecydujesz się używać aktywacji w miejscu, należy zaimplementować następujące interfejsy:  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
   
-     <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
+   <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
-    > [!NOTE]
-    >  `IOleInPlaceComponent` Interfejs jest używany w celu uniknięcia scalania menu OLE 2.  
+  > [!NOTE]
+  >  `IOleInPlaceComponent` Interfejs jest używany w celu uniknięcia scalania menu OLE 2.  
   
-     Twoje `IOleCommandTarget` implementacja obsługuje poleceń, takich jak **Wytnij**, **kopiowania**, i **Wklej**. Podczas implementowania `IOleCommandTarget`, zdecyduj, czy edytor wymaga własnej *vsct* plik, aby zdefiniować własne polecenia menu struktury lub jeśli implementuje on standardowe polecenia definiowane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Zazwyczaj edytory użyć rozszerzenia menu środowiska IDE i zdefiniować własne paski narzędzi. Często jest jednak niezbędne dla edytora zdefiniować własne odpowiednie polecenia, oprócz używania zestaw standardowych poleceń środowiska IDE. Edytor musi zadeklarować standardowe polecenia używa, a następnie zdefiniować nowe polecenia, menu kontekstowe, najwyższego poziomu menu i paski narzędzi w *vsct* pliku. Jeśli aktywacja w miejscu utworzyć edytor, zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> i zdefiniuj menu i paski narzędzi edytora w *vsct* zamiast za pomocą scalania menu OLE 2 pliku.  
+   Twoje `IOleCommandTarget` implementacja obsługuje poleceń, takich jak **Wytnij**, **kopiowania**, i **Wklej**. Podczas implementowania `IOleCommandTarget`, zdecyduj, czy edytor wymaga własnej *vsct* plik, aby zdefiniować własne polecenia menu struktury lub jeśli implementuje on standardowe polecenia definiowane przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Zazwyczaj edytory użyć rozszerzenia menu środowiska IDE i zdefiniować własne paski narzędzi. Często jest jednak niezbędne dla edytora zdefiniować własne odpowiednie polecenia, oprócz używania zestaw standardowych poleceń środowiska IDE. Edytor musi zadeklarować standardowe polecenia używa, a następnie zdefiniować nowe polecenia, menu kontekstowe, najwyższego poziomu menu i paski narzędzi w *vsct* pliku. Jeśli aktywacja w miejscu utworzyć edytor, zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> i zdefiniuj menu i paski narzędzi edytora w *vsct* zamiast za pomocą scalania menu OLE 2 pliku.  
   
--   Aby zapobiec polecenia menu skupienia się w interfejsie użytkownika, należy używać istniejących poleceń w IDE przed inventing nowych poleceń. Udostępnione polecenia są zdefiniowane w *SharedCmdDef.vsct* i *ShellCmdDef.vsct*. Te pliki są instalowane domyślnie w podkatalogu VisualStudioIntegration\Common\Inc swoje [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalacji.  
+- Aby zapobiec polecenia menu skupienia się w interfejsie użytkownika, należy używać istniejących poleceń w IDE przed inventing nowych poleceń. Udostępnione polecenia są zdefiniowane w *SharedCmdDef.vsct* i *ShellCmdDef.vsct*. Te pliki są instalowane domyślnie w podkatalogu VisualStudioIntegration\Common\Inc swoje [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalacji.  
   
--   `ISelectionContainer` można wyrazić zarówno pojedynczych i wielu opcji. Każdy wybrany obiekt jest implementowany jako `IDispatch` obiektu.  
+- `ISelectionContainer` można wyrazić zarówno pojedynczych i wielu opcji. Każdy wybrany obiekt jest implementowany jako `IDispatch` obiektu.  
   
--   Implementuje IDE `IOleUndoManager` jako usługi dostępne z <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> lub jako obiekt, który może być utworzone za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Implementuje Twojego edytora `IOleUndoUnit` interfejsu dla każdego `Undo` akcji.  
+- Implementuje IDE `IOleUndoManager` jako usługi dostępne z <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> lub jako obiekt, który może być utworzone za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Implementuje Twojego edytora `IOleUndoUnit` interfejsu dla każdego `Undo` akcji.  
   
--   Istnieją dwa miejsca niestandardowy Edytor może narazić obiektów automatyzacji:  
+- Istnieją dwa miejsca niestandardowy Edytor może narazić obiektów automatyzacji:  
   
-    -   `Document.Object`  
+  -   `Document.Object`  
   
-    -   `Window.Object`  
+  -   `Window.Object`  
   
 ## <a name="see-also"></a>Zobacz także  
  [Współtworzenie modelu automatyzacji](../extensibility/internals/contributing-to-the-automation-model.md)   

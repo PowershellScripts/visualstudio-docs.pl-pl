@@ -15,12 +15,12 @@ ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ae3c50d33cefe6074f42e5923b5a0bf49cc2f22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1b707e92c3d7b576368b5d00459c2b329928a242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213775"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843174"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementowanie obsługi poleceń dla zagnieżdżonych projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,27 +36,27 @@ IDE można przekazać poleceń, które są przekazywane za pośrednictwem <xref:
   
 #### <a name="to-implement-command-handling"></a>Aby zaimplementować obsługę  
   
-1.  Gdy użytkownik wybierze projektu zagnieżdżonego lub węzła w zagnieżdżonych projektu:  
+1. Gdy użytkownik wybierze projektu zagnieżdżonego lub węzła w zagnieżdżonych projektu:  
   
-    1.  Wywołania środowiska IDE <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody.  
+   1. Wywołania środowiska IDE <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody.  
   
-     — lub —  
+      — lub —  
   
-    1.  Polecenie pochodziły w oknie hierarchii, takie jak polecenie menu skrótów w oknie Eksploratora rozwiązań IDE wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> metody nadrzędnego projektu.  
+   2. Polecenie pochodziły w oknie hierarchii, takie jak polecenie menu skrótów w oknie Eksploratora rozwiązań IDE wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> metody nadrzędnego projektu.  
   
-2.  Projekt nadrzędny można sprawdzić parametry do przekazania do `QueryStatus`, takich jak `pguidCmdGroup` i `prgCmds`, aby ustalić, czy projekt nadrzędny powinien filtrować poleceń. Jeśli projekt nadrzędny jest zaimplementowana do filtrowania poleceń, należy ustawić:  
+2. Projekt nadrzędny można sprawdzić parametry do przekazania do `QueryStatus`, takich jak `pguidCmdGroup` i `prgCmds`, aby ustalić, czy projekt nadrzędny powinien filtrować poleceń. Jeśli projekt nadrzędny jest zaimplementowana do filtrowania poleceń, należy ustawić:  
   
-    ```  
-    prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
-    // make sure it is disabled  
-    prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
-    ```  
+   ```  
+   prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
+   // make sure it is disabled  
+   prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
+   ```  
   
-     A następnie projekt nadrzędny ma zwracać `S_OK`.  
+    A następnie projekt nadrzędny ma zwracać `S_OK`.  
   
-     Jeśli projekt nadrzędny nie filtruje polecenia, powinien zostać tylko zwrócony `S_OK`. W tym przypadku IDE automatycznie kieruje polecenia do projekt podrzędny.  
+    Jeśli projekt nadrzędny nie filtruje polecenia, powinien zostać tylko zwrócony `S_OK`. W tym przypadku IDE automatycznie kieruje polecenia do projekt podrzędny.  
   
-     Projekt nadrzędny nie ma przekierowywać polecenia do projekt podrzędny. IDE wykonuje to zadanie...  
+    Projekt nadrzędny nie ma przekierowywać polecenia do projekt podrzędny. IDE wykonuje to zadanie...  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   

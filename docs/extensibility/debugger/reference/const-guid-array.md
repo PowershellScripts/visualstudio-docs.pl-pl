@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c18feedde988559ae4aff1455b7dfb1d8c6eb1e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b66713fa5929fc1397a5302732399c07c3f5a726
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100702"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885918"
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
 Struktura, która przechowuje listę `GUID`s.  
@@ -49,9 +49,9 @@ public struct CONST_GUID_ARRAY {
  Tablica `GUID`s.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest przekazywana do [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metody i jest zwracana z [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) i [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) metody.  
+ Ta struktura jest przekazywany do [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) metody i zostanie zwrócony z [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) i [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) metody.  
   
- Właściciela wystąpienia tej struktury jest odpowiedzialny za zwolnić wszystkie przydzielone pamięci.  
+ Właściciel wystąpienia tej struktury jest odpowiedzialny za zwalnianie przydzielania pamięci.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -61,7 +61,7 @@ public struct CONST_GUID_ARRAY {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)   
  [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)   
  [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)

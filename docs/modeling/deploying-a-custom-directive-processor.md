@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3f4af12b7c73aa2da7f580b11b1984aa2c8238b7
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 16ee7eae30d947e6a83444c8e744cbaca398bf94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566830"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894821"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Wdrażanie niestandardowego procesora dyrektywy
 
@@ -164,30 +164,30 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Aby zarejestrować procesor dyrektywy przez ustawienie klucza rejestru
 
-1.  Uruchom `regedit`.
+1. Uruchom `regedit`.
 
-2.  W edytorze regedit przejdź do
+2. W edytorze regedit przejdź do
 
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**
 
-     Jeśli chcesz zainstalować procesor dyrektywy w wersji doświadczalnej programu Visual Studio, Wstaw "Exp" po "11.0".
+    Jeśli chcesz zainstalować procesor dyrektywy w wersji doświadczalnej programu Visual Studio, Wstaw "Exp" po "11.0".
 
-3.  Dodaj klucz rejestru, który ma taką samą nazwę jak klasa procesora dyrektywy.
+3. Dodaj klucz rejestru, który ma taką samą nazwę jak klasa procesora dyrektywy.
 
-    -   W drzewie rejestru kliknij prawym przyciskiem myszy **DirectiveProcessors** węzła, wskaż **New**, a następnie kliknij przycisk **klucz**.
+   -   W drzewie rejestru kliknij prawym przyciskiem myszy **DirectiveProcessors** węzła, wskaż **New**, a następnie kliknij przycisk **klucz**.
 
-4.  W nowym węźle dodaj wartości ciągu dla Class i CodeBase lub Assembly, zgodnie z poniższymi tabelami.
+4. W nowym węźle dodaj wartości ciągu dla Class i CodeBase lub Assembly, zgodnie z poniższymi tabelami.
 
-    1.  Kliknij prawym przyciskiem myszy węzeł, który został utworzony, wskaż opcję **New**, a następnie kliknij przycisk **wartość ciągu**.
+   1.  Kliknij prawym przyciskiem myszy węzeł, który został utworzony, wskaż opcję **New**, a następnie kliknij przycisk **wartość ciągu**.
 
-    2.  Wyedytuj nazwę wartości.
+   2.  Wyedytuj nazwę wartości.
 
-    3.  Kliknij dwukrotnie nazwę i wyedytuj dane.
+   3.  Kliknij dwukrotnie nazwę i wyedytuj dane.
 
- Jeśli procesor dyrektywy niestandardowej nie znajduje się w pamięci podręcznej GAC, podklucze rejestru powinny wyglądać tak, jak w poniższej tabeli:
+   Jeśli procesor dyrektywy niestandardowej nie znajduje się w pamięci podręcznej GAC, podklucze rejestru powinny wyglądać tak, jak w poniższej tabeli:
 
 |Nazwa|Typ|Dane|
-|----------|----------|----------|
+|-|-|-|
 |(Domyślnie)|REG_SZ|(wartość nieustawiona)|
 |Class|REG_SZ|**\<Nazwa Namespace >. \<Nazwa klasy >**|
 |CodeBase|REG_SZ|**\<Twoja ścieżka >\\< Twoja nazwa zestawu\>**|
@@ -195,7 +195,7 @@ Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje je
  W przypadku zestawu w pamięci podręcznej GAC, podklucze rejestru powinny wyglądać tak, jak w poniższej tabeli:
 
 |Nazwa|Typ|Dane|
-|----------|----------|----------|
+|-|-|-|
 |(Domyślnie)|REG_SZ|(wartość nieustawiona)|
 |Class|REG_SZ|\<**Usługi w pełni kwalifikowaną nazwę klasy**>|
 |Zestaw|REG_SZ|\<**Twoja nazwa zestawu w GAC**>|

@@ -10,21 +10,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 6eda8e27f5fbb6132027eeca87a0e6872be2415f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 86c7eea623401edbce5638c9385dc3a5d082548f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855446"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Skróty klawiaturowe w projektancie XAML
+
 Skróty klawiaturowe w Projektancie XAML można przyspieszyć pracę przez ograniczenie akcji, która będzie wymagać wielu kliknięcia przycisku myszy do jednego klawisza skrótu.
 
 ## <a name="element-shortcuts"></a>Skróty — element
- Poniższa tabela zawiera listę skrótów klawiaturowych, które są dostępne do pracy z elementami w obszarze kompozycji.
+
+Poniższa tabela zawiera listę skrótów klawiaturowych, które są dostępne do pracy z elementami w obszarze kompozycji.
 
 |**Aby wykonać tę akcję**|**W tym**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Utwórz element|Naciśnij klawisz **Ctrl**+**N**|
 |Zduplikowany element|Naciśnij i przytrzymaj **Alt** i naciśnij klawisz strzałki.|
 |Edytowanie tekstu w kontrolce|Naciśnij klawisz **F2** (naciśnij klawisz **Esc** aby zakończyć)|
@@ -39,10 +41,11 @@ Skróty klawiaturowe w Projektancie XAML można przyspieszyć pracę przez ogran
 |Wybierz właściwość elementu|Wybrany element i skoncentrować się na oknie dialogowym właściwości, naciśnij **kartę**. (Użyj **Ctrl**+**kartę** Aby zmienić fokus w oknie dialogowym właściwości.) Wybierz wartości właściwości z listy rozwijanej, można użyć klawiszy strzałek.|
 
 ## <a name="document-outline-window-shortcuts"></a>Skróty okna konspekt dokumentu
- W poniższej tabeli wymieniono te skróty, które są dostępne podczas pracy z elementami w okno konspektu dokumentu.
+
+W poniższej tabeli wymieniono te skróty, które są dostępne podczas pracy z elementami w okno konspektu dokumentu.
 
 |**Aby wykonać tę akcję**|**W tym**|
-|--------------------------------|-----------------|
+| - |-----------------|
 |Ukryj obiektów w obszarze kompozycji, gdy fokus jest ustawiony na okno konspektu dokumentu|**CTRL**+**H**|
 |Pokaż obiekty na obszarze kompozycji, gdy fokus jest ustawiony na okno konspektu dokumentu|**SHIFT**+**Ctrl**+**H**|
 |Blokowanie obiektów w obszarze kompozycji, gdy fokus jest ustawiony na okno konspektu dokumentu|**CTRL**+**L**|

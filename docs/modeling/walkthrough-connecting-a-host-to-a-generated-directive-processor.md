@@ -15,12 +15,12 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b6a89c76cf1f292ca99664e0e75c4070bdddaa54
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896240"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Przewodnik: łączenie hosta z wygenerowanym procesorem dyrektywy
 
@@ -33,21 +33,22 @@ W tym przewodniku rozwiń niestandardowy host tak, aby go obsługuje szablony te
 
 Ten instruktaż zawiera następujące zagadnienia:
 
--   Za pomocą [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] do generowania procesor dyrektywy, która jest oparta na modelu domeny.
+- Za pomocą [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] do generowania procesor dyrektywy, która jest oparta na modelu domeny.
 
--   Łączenie niestandardowego hosta szablonu tekstowego generowanym procesorem dyrektywy.
+- Łączenie niestandardowego hosta szablonu tekstowego generowanym procesorem dyrektywy.
 
--   Testowanie niestandardowego hosta z generowanym procesorem dyrektywy.
+- Testowanie niestandardowego hosta z generowanym procesorem dyrektywy.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualisation i Modeling SDK||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio Visualisation i Modeling SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -57,34 +58,34 @@ Ponadto konieczne jest posiadanie przekształcenia szablonu tekstu niestandardow
 
 W tym przewodniku umożliwia Kreator projektanta języka specyficznego dla domeny Tworzenie języka specyficznego dla domeny dla rozwiązania DSLMinimalTest.
 
-1.  Tworzenie rozwiązania języka dotyczącego określonej domeny, które ma następujące cechy:
+1. Tworzenie rozwiązania języka dotyczącego określonej domeny, które ma następujące cechy:
 
-    -   Nazwa: DSLMinimalTest
+   -   Nazwa: DSLMinimalTest
 
-    -   Szablon rozwiązania: minimalne języka
+   -   Szablon rozwiązania: minimalne języka
 
-    -   Rozszerzenie pliku: min
+   -   Rozszerzenie pliku: min
 
-    -   Nazwa firmy: Fabrikam
+   -   Nazwa firmy: Fabrikam
 
    Aby uzyskać więcej informacji na temat tworzenia rozwiązania języka dotyczącego określonej domeny, zobacz [porady: tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
-2.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+2. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
-    > [!IMPORTANT]
-    > W tym kroku generuje procesora dyrektywy i dodaje klucz dla niego w rejestrze.
+   > [!IMPORTANT]
+   > W tym kroku generuje procesora dyrektywy i dodaje klucz dla niego w rejestrze.
 
-3.  Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
+3. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
 
-     Otwiera drugie wystąpienie programu Visual Studio.
+    Otwiera drugie wystąpienie programu Visual Studio.
 
-4.  W eksperymentalnym kompilacji w **Eksploratora rozwiązań**, kliknij dwukrotnie plik **sample.min**.
+4. W eksperymentalnym kompilacji w **Eksploratora rozwiązań**, kliknij dwukrotnie plik **sample.min**.
 
-     Plik zostanie otwarty w projektancie. Należy zauważyć, że model ma dwa elementy, ExampleElement1 i ExampleElement2 oraz połączenia między nimi.
+    Plik zostanie otwarty w projektancie. Należy zauważyć, że model ma dwa elementy, ExampleElement1 i ExampleElement2 oraz połączenia między nimi.
 
-5.  Zamknij drugie wystąpienie programu Visual Studio.
+5. Zamknij drugie wystąpienie programu Visual Studio.
 
-6.  Zapisywanie rozwiązania, a następnie zamknij projektanta języka specyficznego dla domeny.
+6. Zapisywanie rozwiązania, a następnie zamknij projektanta języka specyficznego dla domeny.
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Łączenie niestandardowego hosta szablonu tekstu z procesorem dyrektywy
 

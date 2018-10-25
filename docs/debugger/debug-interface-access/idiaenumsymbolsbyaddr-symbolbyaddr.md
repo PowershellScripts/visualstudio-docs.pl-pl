@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbolsByAddr::symbolByAddr | Dokumentacja firmy Microsoft
+title: Idiaenumsymbolsbyaddr::symbolbyaddr — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 159c6fcc65734255f5303ee267a1368078f7af10
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d15901ac321a1a5d60db6e989b24c314bcd211b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460713"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844825"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
-Umieszcza modułu wyliczającego, wykonując wyszukiwania przez numer sekcji obrazu i przesunięcie.  
+Umieszcza modułu wyliczającego, wykonując wyszukiwanie według liczby sekcji obrazu i przesunięcia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,16 +36,16 @@ HRESULT symbolByAddr (
   
 #### <a name="parameters"></a>Parametry  
  isect  
- [in] Liczba sekcji obrazu.  
+ [in] Numer części obrazu.  
   
  offsect  
  [in] Przesunięcie w sekcji.  
   
  ppsymbol  
- [out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt reprezentujący symbol znaleziono.  
+ [out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt reprezentujący odnaleziono symbolu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie można odnaleźć symbolu. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli symbol nie został odnaleziony. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenumsymbolsbyaddr —](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   

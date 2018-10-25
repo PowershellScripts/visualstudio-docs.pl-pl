@@ -15,27 +15,27 @@ ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b28fe38a9d45816481233c3ae267b3c764ee264
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89ac7468b04f9493aca0b57dca832e01d9298f83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186679"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847859"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Porady: tworzenie. Pliku Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Istnieje kilka sposobów, aby utworzyć plik konfiguracji (vsct) oparte na języku XML programu Visual Studio polecenie tabeli.  
   
--   Można utworzyć nowego pakietu VSPackage w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pakietu szablonu.  
+- Można utworzyć nowego pakietu VSPackage w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pakietu szablonu.  
   
--   Kompilator konfiguracji tabeli polecenia opartego na języku XML, Vsct.exe, można użyć, aby wygenerować plik z istniejącego pliku .ctc.  
+- Kompilator konfiguracji tabeli polecenia opartego na języku XML, Vsct.exe, można użyć, aby wygenerować plik z istniejącego pliku .ctc.  
   
--   Vsct.exe służy do generowania pliku vsct z istniejącego pliku .cto.  
+- Vsct.exe służy do generowania pliku vsct z istniejącego pliku .cto.  
   
--   Można ręcznie utworzyć nowego pliku vsct.  
+- Można ręcznie utworzyć nowego pliku vsct.  
   
- W tym temacie wyjaśniono, jak ręcznie utworzyć nowego pliku vsct.  
+  W tym temacie wyjaśniono, jak ręcznie utworzyć nowego pliku vsct.  
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>Aby ręcznie utworzyć nowego pliku vsct  
   

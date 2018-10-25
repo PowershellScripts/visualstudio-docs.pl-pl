@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2958001bfd2f9c00689e1c44bd64a5fa3c5b4d00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4e8384bc86bf59216c353b0f4610d3863445781
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635560"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889766"
 ---
 # <a name="custom-task-panes"></a>Niestandardowe okienka zadań
   Panele interfejsu użytkownika, które zwykle są zadokowane po jednej stronie okna aplikacji Microsoft Office są okienka zadań. Niestandardowe okienka zadań zapewniają możliwość tworzenia własnych okienka zadań i użytkownikom znany interfejs dostęp do funkcji tego rozwiązania. Na przykład interfejs może zawierać mechanizmy uruchamianie kodu na modyfikowanie dokumentów lub wyświetlania danych ze źródła danych.  
@@ -55,11 +55,11 @@ ms.locfileid: "42635560"
 ## <a name="create-a-custom-task-pane"></a>Tworzenie niestandardowego okienka zadań  
  Możesz utworzyć podstawowe niestandardowego okienka zadań w dwóch etapach:  
   
-1.  Tworzenie interfejsu użytkownika dla niestandardowego okienka zadań, dodając formanty Windows Forms do <xref:System.Windows.Forms.UserControl> obiektu.  
+1. Tworzenie interfejsu użytkownika dla niestandardowego okienka zadań, dodając formanty Windows Forms do <xref:System.Windows.Forms.UserControl> obiektu.  
   
-2.  Przekazując formantu użytkownika, aby utworzyć wystąpienia niestandardowego okienka zadań <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> obiektu w dodatku VSTO. Ta kolekcja zwraca nowy <xref:Microsoft.Office.Tools.CustomTaskPane> obiekt, który służy do modyfikowania wyglądu okienka zadań i reagowania na zdarzenia użytkownika.  
+2. Przekazując formantu użytkownika, aby utworzyć wystąpienia niestandardowego okienka zadań <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> obiektu w dodatku VSTO. Ta kolekcja zwraca nowy <xref:Microsoft.Office.Tools.CustomTaskPane> obiekt, który służy do modyfikowania wyglądu okienka zadań i reagowania na zdarzenia użytkownika.  
   
- Aby uzyskać więcej informacji, zobacz [porady: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
+   Aby uzyskać więcej informacji, zobacz [porady: Dodawanie niestandardowego okienka zadań do aplikacji](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
 ### <a name="create-the-user-interface"></a>Tworzenie interfejsu użytkownika  
  Wszystkie niestandardowe okienka zadań, które są tworzone za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio zawiera <xref:System.Windows.Forms.UserControl> obiektu. Ten formant użytkownika udostępnia interfejs użytkownika niestandardowego okienka zadań. Można utworzyć kontrolkę użytkownika w czasie projektowania lub w czasie wykonywania. Jeśli utworzysz formant użytkownika w czasie projektowania, można użyć programu Windows Forms Designer do utworzenia interfejsu użytkownika okienka zadań.  
@@ -77,11 +77,11 @@ ms.locfileid: "42635560"
   
  Aby określić, które okno wyświetla niestandardowego okienka zadań, użyj odpowiedniej <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> przeciążenia metody tworzenia okienka zadań:  
   
--   Aby skojarzyć okienka zadań z aktywnym oknem, należy użyć <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> metody.  
+- Aby skojarzyć okienka zadań z aktywnym oknem, należy użyć <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> metody.  
   
--   Aby skojarzyć okienka zadań z dokumentu, który jest obsługiwany przez określonego okna, należy użyć <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> metody.  
+- Aby skojarzyć okienka zadań z dokumentu, który jest obsługiwany przez określonego okna, należy użyć <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> metody.  
   
- Niektóre aplikacje pakietu Office wymaga jawne instrukcje dotyczące można utworzyć lub wyświetlić swoje okienka zadań, gdy jest otwarte okno więcej niż jeden. Dzięki temu należy rozważyć, gdzie można utworzyć wystąpienia niestandardowego okienka zadań w kodzie, aby zapewnić właściwe dokumenty lub elementy w aplikacji okienka zadań. Aby uzyskać więcej informacji, zobacz [Zarządzanie niestandardowych okienek zadań w aplikacji systemu windows](#Managing).  
+  Niektóre aplikacje pakietu Office wymaga jawne instrukcje dotyczące można utworzyć lub wyświetlić swoje okienka zadań, gdy jest otwarte okno więcej niż jeden. Dzięki temu należy rozważyć, gdzie można utworzyć wystąpienia niestandardowego okienka zadań w kodzie, aby zapewnić właściwe dokumenty lub elementy w aplikacji okienka zadań. Aby uzyskać więcej informacji, zobacz [Zarządzanie niestandardowych okienek zadań w aplikacji systemu windows](#Managing).  
   
 ## <a name="access-the-application-from-the-task-pane"></a>Uzyskaj dostęp do aplikacji z okienka zadań  
  Jeśli chcesz zautomatyzować aplikacji z kontrolki użytkownika, możesz bezpośrednio uzyskać dostęp modelu obiektów przy użyciu `Globals.ThisAddIn.Application` w kodzie. Statyczne `Globals` klasy zapewnia dostęp do `ThisAddIn` obiektu. `Application` Pola tego obiektu jest punktem wejścia do modelu obiektu aplikacji.  
@@ -136,11 +136,11 @@ ms.locfileid: "42635560"
   
  Następujące grupy aplikacji nie mają wymagania dotyczące opracowywania inną:  
   
--   [Program Outlook](#Outlook)  
+- [Program Outlook](#Outlook)  
   
--   [Word, InfoPath i PowerPoint](#WordAndInfoPath)  
+- [Word, InfoPath i PowerPoint](#WordAndInfoPath)  
   
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [w jaki sposób zarządzać I: okienka zadań w dodatkach VSTO programu Word?](http://go.microsoft.com/fwlink/?LinkId=136781).  
+  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [w jaki sposób zarządzać I: okienka zadań w dodatkach VSTO programu Word?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Program Outlook  
  Po utworzeniu niestandardowego okienka zadań programu Outlook niestandardowego okienka zadań jest skojarzony z określonym oknie Eksploratora lub Inspektora. Eksploratory usługi są systemu windows, które wyświetlają zawartość folderu i inspektorzy, wyświetlające element, taki jak wiadomość e-mail lub zadania.  
@@ -149,23 +149,23 @@ ms.locfileid: "42635560"
   
  Aby skojarzyć okienka zadań z określonym Eksploratora lub Inspektora, należy użyć <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> metodę, aby utworzyć okienka zadań i przekazać <xref:Microsoft.Office.Interop.Outlook.Explorer> lub <xref:Microsoft.Office.Interop.Outlook.Inspector> obiekt *okna* parametru. Aby uzyskać więcej informacji na temat tworzenia niestandardowych okienek zadań, zobacz [Omówienie okienka zadań niestandardowe](../vsto/custom-task-panes.md).  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Activate>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Activate>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
   
- Aby monitorować stan Inspektor systemu windows, może obsługiwać następujące zdarzenia związane z Inspektor:  
+  Aby monitorować stan Inspektor systemu windows, może obsługiwać następujące zdarzenia związane z Inspektor:  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Activate>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Activate>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
   
 ### <a name="prevent-multiple-instances-of-a-custom-task-pane-in-outlook"></a>Zapobieganie wielu wystąpień niestandardowego okienka zadań w programie Outlook  
  Aby zapobiec wyświetlania wielu wystąpień niestandardowego okienka zadań systemu windows w programie Outlook, jawnie usunąć niestandardowego okienka zadań z `CustomTaskPanes` zbiór `ThisAddIn` klasy po zamknięciu każdego okna. Wywołaj <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> in zdarzenie, które jest wywoływane, gdy okno zostanie zamknięte, takich jak metoda <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> lub <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>.  

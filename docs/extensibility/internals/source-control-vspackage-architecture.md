@@ -1,5 +1,5 @@
 ---
-title: Architektura pakiet VSPackage formantu źródła | Dokumentacja firmy Microsoft
+title: Architektura pakietu VSPackage kontroli źródła | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,42 +13,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a423b270eb8a26e9573f957da48915db37bf6851
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e8a6b4c1e36f092bce89c57a2ead07a9e1a96a0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131897"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884137"
 ---
-# <a name="source-control-vspackage-architecture"></a>Architektura pakiet VSPackage kontroli źródła
-Pakiet kontroli źródła jest pakiet VSPackage, który korzysta z usług [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zapewnia IDE. W zamian pakiet kontroli źródła zawiera jej funkcji jako usługi kontroli źródła. Ponadto pakiet kontroli źródła jest alternatywą bardziej elastyczne niż wtyczka do kontroli źródła do integracji kontroli źródła do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+# <a name="source-control-vspackage-architecture"></a>Architektura pakietu VSPackage kontroli kodu źródłowego
+Pakiet kontroli źródła jest pakietu VSPackage, który korzysta z usługi, których [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowisko IDE. W zamian pakiet kontroli źródła zapewnia jej funkcje, jak usługi kontroli źródła. Ponadto pakiet kontroli źródła jest bardziej wszechstronna alternatywna niż wtyczka do kontroli źródła do integracji kontroli źródła do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
- Wtyczka do kontroli źródła z zaimplementowanym interfejsem API dodatku typu Plug-in kontroli źródła przestrzega strict kontraktu. Na przykład wtyczka nie można zastąpić domyślną [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika (UI). Ponadto interfejs API dodatku typu Plug-in kontroli źródła nie obsługuje wtyczki do zaimplementowania własny model kontroli źródła. Pakiet kontroli źródła, jednak pozwala pokonać oba te ograniczenia. Pakiet kontroli źródła ma pełną kontrolę nad środowiskiem kontroli źródła z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] użytkownika. Ponadto pakiet kontroli źródła można użyć własnych model kontroli źródła i logiki, a następnie można określić wszystkich interfejsów użytkownika związane z kontroli źródła.  
+ Wtyczka do kontroli źródła implementującej interfejs API wtyczki kontroli źródła przestrzega strict kontraktu. Na przykład wtyczka nie można zastąpić domyślną [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interfejsu użytkownika (UI). Ponadto API wtyczki kontroli źródła nie uwzględnia wtyczki do zaimplementowania swój własny model kontroli źródła. Pakiet kontroli źródła, jednak pozwala pokonać oba te ograniczenia. Pakiet kontroli źródła, ma pełną kontrolę nad możliwości kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] użytkownika. Ponadto pakiet kontroli źródła można użyć własnej model kontroli źródła i logiki i można zdefiniować, wszystkie interfejsy użytkownika związane z kontroli źródła.  
   
 ## <a name="source-control-package-components"></a>Składniki pakietu kontroli źródła  
- Jak pokazano na diagramie architektury [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] składnika o nazwie Stub kontroli źródła jest pakiet VSPackage, zintegrowany pakiet kontroli źródła o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ Jak pokazano na diagramie architektury [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] składnika o nazwie klasy zastępczej kontroli źródła jest pakietu VSPackage, który jest zintegrowany pakiet kontroli źródła o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
- Stub kontroli źródła obsługuje następujące zadania.  
+ Klasy zastępczej kontroli źródła obsługuje następujące zadania.  
   
--   Udostępnia wspólnego interfejsu użytkownika, który jest wymagany w czasie rejestracji pakietu kontroli źródła.  
+- Udostępnia wspólny interfejs użytkownika, który jest wymagany do kontroli źródła pakietu rejestracji.  
   
--   Ładuje pakiet kontroli źródła.  
+- Ładuje pakiet kontroli źródła.  
   
--   Ustawia pakietu kontroli źródła jako aktywny/nieaktywny.  
+- Ustawia pakiet kontroli źródła jako aktywny/nieaktywny.  
   
- Stub kontroli źródła szuka usługi active pakietu kontroli źródła i kieruje wszystkie przychodzące wywołania usługi z IDE tego pakietu.  
+  Klasy zastępczej kontroli źródła szuka usługi active pakietu kontroli źródła i kieruje wszystkie przychodzące wywołania usługi z poziomu środowiska IDE tego pakietu.  
   
- Pakiet karty kontroli źródła jest specjalne kontroli źródła pakietu, który [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnia. Ten pakiet jest głównym składnikiem obsługi źródła formantu dodatków plug-in oparte na interfejsie API dodatku Plug-in kontroli źródła. Gdy wtyczka do kontroli źródła jest aktywny wtyczki, Stub kontroli źródła wysyła jego zdarzenia do pakiet karty kontroli źródła. Z kolei pakiet karty kontroli źródła komunikuje się z wtyczkę kontroli źródła przy użyciu interfejsu API dodatku typu Plug-in kontroli źródła, a także udostępnia domyślny interfejs użytkownika, który jest typowe dla wtyczki sterowania wszystkie źródła.  
+  Pakiet karty kontroli źródła jest specjalny kontroli źródła pakietu, który [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnia. Ten pakiet jest głównym składnikiem do obsługi źródła wtyczek kontroli oparte na interfejsie API wtyczki kontroli źródła. Po aktywny wtyczki, wtyczka do kontroli źródła wycinka kontroli źródła wysyła jego zdarzenia do pakietu karty kontroli źródła. Z kolei pakietu karty Kontrola źródła komunikuje się z wtyczka do kontroli źródła, za pomocą interfejsu API wtyczki kontroli źródła, a także udostępnia domyślny interfejs użytkownika, który jest typowe dla wtyczek kontroli wszystkie źródła.  
   
- Gdy pakiet kontroli źródła jest active pakietu, z drugiej strony, Stub kontroli źródła bezpośrednio komunikuje się z pakietu przy użyciu [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] interfejsy kontroli źródła pakietu. Pakiet kontroli źródła jest odpowiedzialny za hosting własnego interfejsu użytkownika kontroli źródła.  
+  Gdy pakiet kontroli źródła jest aktywny pakiet, z drugiej strony, wycinka kontroli źródła bezpośrednio komunikuje się z pakietu przy użyciu [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] interfejsy kontroli źródła pakietu. Pakiet kontroli źródła jest odpowiedzialny za hostowanie własnego źródła kontrolki interfejsu użytkownika.  
   
- ![Ilustracja architektury kontroli źródła](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
+  ![Grafika przedstawiająca architekturę kontroli źródła](../../extensibility/internals/media/vsipsccarch.gif "VSIPSCCArch")  
   
- W przypadku pakietu kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie dostarcza kod kontroli źródła lub interfejsu API dla integracji. Natomiast to do metod opisanych w [tworzenie Plug-in kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md) gdzie wtyczkę kontroli źródła musi implementować sztywne zestaw funkcji i wywołania zwrotne.  
+  W przypadku pakietu kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nie dostarcza kod do kontroli źródła lub interfejsu API do integracji. Natomiast to podejście, opisane w temacie [tworzenie wtyczki kontroli źródła](../../extensibility/internals/creating-a-source-control-plug-in.md) gdy wtyczka do kontroli źródła musi implementować sztywne zbiór funkcji i wywołania zwrotne.  
   
- Podobnie jak wszelkie VSPackage pakietu kontroli źródła jest obiekt COM, który można utworzyć przy użyciu `CoCreateInstance`. Pakiet VSPackage udostępnia siebie do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE zaimplementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Podczas tworzenia wystąpienia pakiet VSPackage otrzymuje wskaźnik lokacji i <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfejs, który udostępnia pakiet VSPackage dostępnych usług i interfejsów w IDE.  
+  Podobnie jak wszelkie VSPackage kontroli źródła pakietu jest obiekt COM, które mogą być tworzone za pomocą `CoCreateInstance`. Pakietu VSPackage udostępnia sam [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE poprzez implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. Podczas tworzenia wystąpienia pakietu VSPackage otrzymuje wskaźnik lokacji i <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interfejs zapewniający dostęp do pakietu VSPackage dostępne usługi i interfejsy w środowisku IDE.  
   
- Zapisywanie pakietu kontroli źródła na podstawie pakiet VSPackage wymaga bardziej zaawansowanych doświadczenia programowania niż zapisu oparty na interfejsach API dodatku typu Plug-in kontroli źródła wtyczek.  
+  Zapisywanie pakietu na podstawie pakietu VSPackage kontroli źródła wymaga bardziej zaawansowanych doświadczenie programowania niż pisanie oparte na interfejsie API wtyczki kontroli źródła wtyczek.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   

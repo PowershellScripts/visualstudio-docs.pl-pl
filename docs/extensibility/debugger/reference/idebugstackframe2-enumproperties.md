@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0f32eac31b9b42a263ee57925f1fa8a785a1131
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a15929623805f4f9167112de1b780ce9d971380
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909025"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
-Tworzy moduł wyliczający dla właściwości skojarzone z ramki stosu, takich jak zmiennych lokalnych.  
+Tworzy moduł wyliczający dla właściwości skojarzone z ramki stosu, takie jak zmienne lokalne.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,28 +51,28 @@ int EnumProperties (
   
 #### <a name="parameters"></a>Parametry  
  `dwFieldSpec`  
- [in] Kombinacja flag z [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) wyliczenie określający pola, które w wyliczany [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktury mają zostać wypełnione.  
+ [in] Kombinacja flag z [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) wyliczenia, która określa pola, które w wyliczany [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktur, które mają być wypełnione.  
   
  `nRadix`  
- [in] Podstawa ma być używany podczas formatowania wszelkie informacje numeryczne.  
+ [in] Podstawy, który ma być używany w formatowaniu wszelkie dane liczbowe.  
   
  `refiid`  
- [in] Identyfikator GUID używany do wybierania który filtru [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktury mają zostać wyliczone, takich jak `guidFilterLocals`.  
+ [in] Identyfikator GUID filtr umożliwia wybranie [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) struktury są do wyliczenia, takich jak `guidFilterLocals`.  
   
  `dwTimeout`  
- [in] Maksymalny czas (w milisekundach) oczekiwania przed powrotem z tej metody. Użyj `INFINITE` będzie czekać w nieskończoność.  
+ [in] Maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.  
   
  `pcelt`  
- [out] Zwraca liczbę właściwości wyliczone. Jest to ten sam co wywołanie [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) metody.  
+ [out] Zwraca liczbę właściwości wyliczenia. To jest taka sama, co wywołanie metody [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) metody.  
   
  `ppEnum`  
- [out] Zwraca [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) zawierającego listę właściwości żądanego obiektu.  
+ [out] Zwraca [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) obiektu zawierającego listę odpowiednich właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ponieważ ta metoda umożliwia wszystkich wybranych właściwości mają zostać pobrane przy użyciu jednego wywołania, jest szybsza niż sekwencyjnie wywoływania [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) i [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) metody.  
+ Ponieważ ta metoda pozwala na wszystkich wybranych właściwości, które mają zostać pobrane za pomocą jednego wywołania, jest szybsza niż sekwencyjne wywoływania [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) i [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   

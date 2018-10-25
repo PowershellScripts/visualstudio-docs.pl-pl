@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 730064f3557f6ef98579d4cbd79adb451c7c9bdc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 32116de7bb88fe937980b02e1789830a27ca36b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845878"
 ---
 # <a name="xml-schema-explorer"></a>Eksplorator schematu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,44 +29,44 @@ Eksplorator schematu XML jest zintegrowany z Microsoft Visual Studio i edytorem 
   
  Eksplorator schematu XML można wykonać następujące czynności:  
   
--   Uzyskaj krótkie omówienie zestawu schematu.  
+- Uzyskaj krótkie omówienie zestawu schematu.  
   
--   Przeglądaj i przejdź drzewa.  
+- Przeglądaj i przejdź drzewa.  
   
--   Wykonaj — słowo kluczowe i wyszukiwanie specyficzne dla schematu. Aby uzyskać więcej informacji, zobacz [wyszukiwania zestawu schematu](../xml-tools/searching-the-schema-set.md).  
+- Wykonaj — słowo kluczowe i wyszukiwanie specyficzne dla schematu. Aby uzyskać więcej informacji, zobacz [wyszukiwania zestawu schematu](../xml-tools/searching-the-schema-set.md).  
   
--   Dodaj wyniki wyszukiwania do widoku wykresu i widoku Modle zawartości  
+- Dodaj wyniki wyszukiwania do widoku wykresu i widoku Modle zawartości  
   
--   Sortuj drzewa w kolejności dokumentu, typ lub nazwa. Aby uzyskać więcej informacji, zobacz [sortowanie, filtrowanie i grupowanie](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).  
+- Sortuj drzewa w kolejności dokumentu, typ lub nazwa. Aby uzyskać więcej informacji, zobacz [sortowanie, filtrowanie i grupowanie](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md).  
   
--   Otwórz Edytor XML, a następnie przejdź do lokalizacji kodu w pliku XSD. Aby uzyskać więcej informacji, zobacz [integracja za pomocą edytora XML](../xml-tools/integration-with-xml-editor.md).  
+- Otwórz Edytor XML, a następnie przejdź do lokalizacji kodu w pliku XSD. Aby uzyskać więcej informacji, zobacz [integracja za pomocą edytora XML](../xml-tools/integration-with-xml-editor.md).  
   
--   Wygeneruj przykładowy kod XML dla elementów globalnej.  
+- Wygeneruj przykładowy kod XML dla elementów globalnej.  
   
- Eksplorator schematu XML zawiera widok hierarchiczna schematu ustawiana za pośrednictwem widoku drzewa. Eksplorator schematu XML także wyszukiwanie, filtrowanie, nawigacji i sortowania. Aby otworzyć Eksploratora schematu XML, wykonaj jedną z następujących czynności:  
+  Eksplorator schematu XML zawiera widok hierarchiczna schematu ustawiana za pośrednictwem widoku drzewa. Eksplorator schematu XML także wyszukiwanie, filtrowanie, nawigacji i sortowania. Aby otworzyć Eksploratora schematu XML, wykonaj jedną z następujących czynności:  
   
--   Jeśli użytkownik pracuje na [widoku Start](../xml-tools/start-view.md), kliknij przycisk **Eksploratora schematu XML** łącza.  
+- Jeśli użytkownik pracuje na [widoku Start](../xml-tools/start-view.md), kliknij przycisk **Eksploratora schematu XML** łącza.  
   
--   Jeśli użytkownik pracuje na [widoku wykresu](../xml-tools/graph-view.md) lub [widoku modelu zawartości](../xml-tools/content-model-view.md) i mieć węzły w obszarze roboczym, użyj menu kontekstowego, aby wybrać Eksploratora schematu XML.  
+- Jeśli użytkownik pracuje na [widoku wykresu](../xml-tools/graph-view.md) lub [widoku modelu zawartości](../xml-tools/content-model-view.md) i mieć węzły w obszarze roboczym, użyj menu kontekstowego, aby wybrać Eksploratora schematu XML.  
   
--   Możesz również wybrać Explorerfrom schematu XML **widoku** menu.  
+- Możesz również wybrać Explorerfrom schematu XML **widoku** menu.  
   
--   Możesz uzyskać dostęp Explorerfrom schemat XML pliku .vb, który ma Visual Basic literał XML skojarzony z pliku XSD. Aby wyświetlić schemat w Eksplorator schematu XML, kliknij prawym przyciskiem myszy węzeł XML w literał XML lub importu przestrzeni nazw XML i wybierz **Pokaż w Eksploratorze schematu** polecenia. Aby uzyskać więcej informacji, zobacz [integracja literałów XML z Eksploratorem schematu XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).  
+- Możesz uzyskać dostęp Explorerfrom schemat XML pliku .vb, który ma Visual Basic literał XML skojarzony z pliku XSD. Aby wyświetlić schemat w Eksplorator schematu XML, kliknij prawym przyciskiem myszy węzeł XML w literał XML lub importu przestrzeni nazw XML i wybierz **Pokaż w Eksploratorze schematu** polecenia. Aby uzyskać więcej informacji, zobacz [integracja literałów XML z Eksploratorem schematu XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md).  
   
 ## <a name="tree-view"></a>Widok drzewa  
  Eksplorator schematu XML Wyświetla informacji o zestawie wstępnie skompilowanym schematu w strukturze drzewa. Struktura drzewa jest zorganizowana w następujący sposób:  
   
--   Na najwyższym poziomie schematu ustawiono węzła.  
+- Na najwyższym poziomie schematu ustawiono węzła.  
   
--   Drugi poziom zawiera przestrzenie nazw.  
+- Drugi poziom zawiera przestrzenie nazw.  
   
--   Trzeci poziom zawiera pliki.  
+- Trzeci poziom zawiera pliki.  
   
--   Czwarty poziom zawiera globalny węzłów. Może to obejmować elementy, grupy, typów złożonych typów prostych, atrybuty, grup atrybutów i `include`, `import`, i `redefine` instrukcji.  
+- Czwarty poziom zawiera globalny węzłów. Może to obejmować elementy, grupy, typów złożonych typów prostych, atrybuty, grup atrybutów i `include`, `import`, i `redefine` instrukcji.  
   
- Oto przykład struktury drzewa:  
+  Oto przykład struktury drzewa:  
   
- ![Eksplorator schematu XML](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
+  ![Eksplorator schematu XML](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
   
 ## <a name="selection-and-activation"></a>Wybór i aktywacja  
  Aby zaznaczyć, a następnie wybierz węzeł, kliknij jeden raz w Eksploratorze schematu.  

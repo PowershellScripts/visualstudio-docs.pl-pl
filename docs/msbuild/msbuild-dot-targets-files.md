@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 835d6e80c650a18b3e595d1c6dc0c8bafd6b958a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3282495219e92da38fc90c9a98fa115791190d80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080015"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834568"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild — pliki .targets
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zawiera kilka *.targets* pliki, które zawierają elementy, właściwości, cele i zadania dla typowych scenariuszy. Te pliki są automatycznie importowane do większości [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pliki w celu uproszczenia konserwacji i czytelności projektu.  
@@ -37,11 +37,11 @@ ms.locfileid: "39080015"
 
 ## <a name="common-targets-files"></a>Wspólne pliki .targets  
 
-|*.TARGETS* pliku|Opis|  
-|-------------------|-----------------|  
-|*Microsoft.Common.targets*|Definiuje kroki w standardowym procesem kompilacji dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] i [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektów.<br /><br /> Zaimportowany przez *Microsoft.CSharp.targets* i *Microsoft.VisualBasic.targets* pliki zawierające następującą instrukcję: `<Import Project="Microsoft.Common.targets" />`|  
-|*Microsoft.CSharp.targets*|Definiuje kroki ze standardowym procesem kompilacji dla projektów języka Visual C#.<br /><br /> Zaimportowanych przez pliki projektu Visual C# (*.csproj*), który obejmuje następującą instrukcję: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`|  
-|*Microsoft.VisualBasic.targets*|Definiuje kroki w standardowym procesem kompilacji dla projektów języka Visual Basic.<br /><br /> Zaimportowanych przez pliki projektu w języku Visual Basic (*.vbproj*), który obejmuje następującą instrukcję: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`|
+| *.TARGETS* pliku | Opis |
+|---------------------------------| - |
+| *Microsoft.Common.targets* | Definiuje kroki w standardowym procesem kompilacji dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] i [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projektów.<br /><br /> Zaimportowany przez *Microsoft.CSharp.targets* i *Microsoft.VisualBasic.targets* pliki zawierające następującą instrukcję: `<Import Project="Microsoft.Common.targets" />` |
+| *Microsoft.CSharp.targets* | Definiuje kroki ze standardowym procesem kompilacji dla projektów języka Visual C#.<br /><br /> Zaimportowanych przez pliki projektu Visual C# (*.csproj*), który obejmuje następującą instrukcję: `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` |
+| *Microsoft.VisualBasic.targets* | Definiuje kroki w standardowym procesem kompilacji dla projektów języka Visual Basic.<br /><br /> Zaimportowanych przez pliki projektu w języku Visual Basic (*.vbproj*), który obejmuje następującą instrukcję: `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />` |
 
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
 *Directory.Build.targets* jest plikiem zdefiniowanych przez użytkownika zawiera dostosowania do projektów w katalogu. Ten plik jest automatycznie importowany z *Microsoft.Common.targets* chyba że właściwość **ImportDirectoryBuildTargets** ustawiono **false**.

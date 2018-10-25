@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2d195c28123cc786c9a5a97add98b7f67d499b7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ae30cd36d2a3f51b697afa3cb5f4615a5f322da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121879"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830785"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
-Ta metoda porównuje to pole z określonym polem pod kątem równości.  
+Ta metoda porównuje tego pola z określonym polem pod kątem równości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,7 +41,7 @@ int Equal(
   
 #### <a name="parameters"></a>Parametry  
  `pField`  
- [in] Pole do porównania do tego.  
+ [in] Pole do porównania z niej.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Jeśli pola są takie same, zwraca `S_OK`. Jeśli pola są różne, zwraca `S_FALSE.` w przeciwnym razie zwraca kod błędu.  

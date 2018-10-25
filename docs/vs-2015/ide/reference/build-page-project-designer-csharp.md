@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b762345c9f5c81e6244e16b2ee249f29283cc589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a377db0ac82b672d053e59c621714945fa9b515c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280621"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837187"
 ---
 # <a name="build-page-project-designer-c"></a>Strona kompilacji, Projektant projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ Użyj **kompilacji** strony **projektanta projektu** do określania właściwoś
   
  To pole wyboru jest dostępne tylko wtedy, gdy spełnione są wszystkie następujące warunki:  
   
--   Na **Stroka kompilacji**, **platformę docelową** listy jest ustawiona na **dowolny Procesor**.  
+- Na **Stroka kompilacji**, **platformę docelową** listy jest ustawiona na **dowolny Procesor**.  
   
--   Na **strony aplikacji**, **typ danych wyjściowych** lista określa, że projekt jest aplikacją.  
+- Na **strony aplikacji**, **typ danych wyjściowych** lista określa, że projekt jest aplikacją.  
   
--   Na **strony aplikacji**, **platformę docelową** lista określa .NET Framework 4.5.  
+- Na **strony aplikacji**, **platformę docelową** lista określa .NET Framework 4.5.  
   
- **Zezwalaj na niebezpieczny kod**  
- Zezwala na kod, który używa [niebezpieczne](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0) — słowo kluczowe, aby skompilować. Aby uzyskać więcej informacji, zobacz [/ unsafe (opcje kompilatora C#)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
+  **Zezwalaj na niebezpieczny kod**  
+  Zezwala na kod, który używa [niebezpieczne](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0) — słowo kluczowe, aby skompilować. Aby uzyskać więcej informacji, zobacz [/ unsafe (opcje kompilatora C#)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
   
- **Optymalizuj kod**  
- Włącza lub wyłącza optymalizacje wykonywane przez kompilator, aby plik wyjściowy był mniejszy, szybszy i bardziej wydajne. Aby uzyskać więcej informacji, zobacz [/ optimize (opcje kompilatora C#)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
+  **Optymalizuj kod**  
+  Włącza lub wyłącza optymalizacje wykonywane przez kompilator, aby plik wyjściowy był mniejszy, szybszy i bardziej wydajne. Aby uzyskać więcej informacji, zobacz [/ optimize (opcje kompilatora C#)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
   
 ## <a name="errors-and-warnings"></a>Błędy i ostrzeżenia  
  Poniższe ustawienia są używane do skonfigurowania opcji błędów i ostrzeżeń dla procesu kompilacji.  

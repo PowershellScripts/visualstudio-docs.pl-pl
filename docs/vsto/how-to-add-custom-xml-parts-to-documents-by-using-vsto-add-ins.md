@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 259058569c2c4d2a040272d87e4621b963342ba7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a559f8c074a7e80ea898f86dc205dec6ad2bb064
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42630609"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826899"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Porady: Dodawanie niestandardowych części XML do dokumentów za pomocą dodatków narzędzi VSTO
   Dane XML można przechowywać w następujące typy dokumentów, tworząc z niestandardowym elementem XML w dodatku VSTO:  
   
--   Skoroszyt programu Microsoft Office Excel.  
+- Skoroszyt programu Microsoft Office Excel.  
   
--   Dokument programu Microsoft Office Word.  
+- Dokument programu Microsoft Office Word.  
   
--   Prezentacja Microsoft PowerPoint pakietu Office.  
+- Prezentacja Microsoft PowerPoint pakietu Office.  
   
- Aby uzyskać więcej informacji, zobacz [przegląd części niestandardowy plik XML](../vsto/custom-xml-parts-overview.md).  
+  Aby uzyskać więcej informacji, zobacz [przegląd części niestandardowy plik XML](../vsto/custom-xml-parts-overview.md).  
   
- **Dotyczy:** informacje przedstawione w tym temacie dotyczą projektów na poziomie aplikacji dla programów Excel, PowerPoint i Word. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  **Dotyczy:** informacje przedstawione w tym temacie dotyczą projektów na poziomie aplikacji dla programów Excel, PowerPoint i Word. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Aby dodać niestandardowe części XML do skoroszytu programu Excel  
   

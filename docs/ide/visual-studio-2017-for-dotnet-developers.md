@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545bcaa46226b315fb338e352968c5b74dd0232f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495794"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928350"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Przewodnik dotyczący programu Visual Studio 2017 C# produktywności
 
@@ -57,7 +57,7 @@ Dostępne są następujące popularne skróty programu Visual Studio:
 > [!NOTE]
 > Niektóre rozszerzenia unbind powiązania klawiszy programu Visual Studio domyślną. Aby użyć poleceń powyżej, Przywróć usługi powiązania klawiszy programu Visual Studio domyślne, przechodząc do **narzędzia** > **Import i eksport ustawień** > **Resetuj wszystkie ustawienia**  lub **narzędzia** > **opcje** > **klawiatury** > **resetowania**.
 
-Dowiedz się więcej skrótów klawiaturowych i poleceń w programie Visual Studio w [naszej dokumentacji](..\ide\tips-and-tricks-for-visual-studio.md).
+Dowiedz się więcej skrótów klawiaturowych i poleceń w programie Visual Studio w [naszej dokumentacji](../ide/tips-and-tricks-for-visual-studio.md).
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Potrzebuję metody szybkie przechodzenie do plików lub typów
 
@@ -161,7 +161,7 @@ Poniżej przedstawiono listę funkcji edytora i produktywności, aby wprowadzić
 | Włącz nawigację do dekompilowanych źródeł | Zezwalaj na przechodzenie do definicji na typy/członków ze źródeł zewnętrznych i użyj decompiler użyciu narzędzia do dekompilacji do wyświetlenia treści metod | **Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **zaawansowane**   >  **Włącz nawigację do dekompilowanych źródeł** |
 | Tryb uzupełniania/sugestii | Zmiany zachowania uzupełnianie przez funkcję IntelliSense — deweloperom tła IntelliJ zwykle konieczna zmiana ustawienia tutaj z domyślnego | **Menu** > **Edytuj** > **IntelliSense** > **Przełącz tryb uzupełniania** |
 | [Funkcja CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Wyświetla informacje referencyjne kodu i zmień historii w edytorze | **Narzędzia** > **opcje** > **edytora tekstów** > **wszystkie języki**  >   **Funkcja CodeLens** |
-| [Fragmenty kodu](../ide/visual-csharp-code-snippets.md) | Pomoc namiastki się typowe standardowy |  Wpisz nazwy fragmentu kodu i naciśnij klawisz **kartę** dwa razy. |
+| [Fragmenty kodu](../ide/visual-csharp-code-snippets.md) | Pomoc namiastki się typowe standardowy | Wpisz nazwy fragmentu kodu i naciśnij klawisz **kartę** dwa razy. |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>Brak funkcji, dzięki której produktywność lub obciążony słabą wydajność?
 

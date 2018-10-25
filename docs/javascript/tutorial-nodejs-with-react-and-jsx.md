@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d02922d4d28f41ced952c9ef8c990d55f78a226
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 3cc92ba28246358f819e6086d19141b2a68072f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548208"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823739"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Samouczek: Tworzenie aplikacji Node.js i React w programie Visual Studio
 
@@ -354,27 +354,27 @@ W poprzedniej sekcji debuger jest dołączony do kodu w języku Node.js po stron
 
 1. Zamknij wszystkie okna przeglądarki Chrome.
 
-1. Otwórz **Uruchom** polecenia Windows **Start** przycisk (kliknij prawym przyciskiem myszy i wybierz polecenie **Uruchom**), a następnie wprowadź następujące polecenie:
+2. Otwórz **Uruchom** polecenia Windows **Start** przycisk (kliknij prawym przyciskiem myszy i wybierz polecenie **Uruchom**), a następnie wprowadź następujące polecenie:
 
     `chrome.exe --remote-debugging-port=9222`
 
     Spowoduje to uruchomienie przeglądarki Chrome z włączonym debugowaniem.
 
-1. Przełącz się do programu Visual Studio i ustaw punkt przerwania *bundle.js aplikacji* możesz pisać kod w `render()` funkcji, jak pokazano na poniższej ilustracji:
+3. Przełącz się do programu Visual Studio i ustaw punkt przerwania *bundle.js aplikacji* możesz pisać kod w `render()` funkcji, jak pokazano na poniższej ilustracji:
 
     ![Ustaw punkt przerwania](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Można znaleźć `render()` działa w programach *bundle.js aplikacji*, użyj **Ctrl**+**F** (**Edytuj**  >   **Znajdź i Zamień** > **szybkiego wyszukiwania**).
 
-1. Za pomocą przeglądarki Chrome wybrany jako cel debugowania w programie Visual Studio, naciśnij klawisz **Ctrl**+**F5** (**debugowania** > **Rozpocznij bez debugowania** ) do uruchomienia aplikacji w przeglądarce.
+4. Za pomocą przeglądarki Chrome wybrany jako cel debugowania w programie Visual Studio, naciśnij klawisz **Ctrl**+**F5** (**debugowania** > **Rozpocznij bez debugowania** ) do uruchomienia aplikacji w przeglądarce.
 
     Aplikacja zostanie otwarta nowa karta przeglądarki.
 
-1. Wybierz **debugowania** > **dołączyć do procesu**.
+5. Wybierz **debugowania** > **dołączyć do procesu**.
 
-1. W **dołączyć do procesu** okna dialogowego wybierz **kodu aparatu Webkit** w **dołączyć do** wpisz **chrome** w polu filtru, aby filtrować wyniki wyszukiwania.
+6. W **dołączyć do procesu** okna dialogowego wybierz **kodu aparatu Webkit** w **dołączyć do** wpisz **chrome** w polu filtru, aby filtrować wyniki wyszukiwania.
 
-1. Wybierz proces dla programu Chrome przy użyciu właściwy host port (1337, w tym przykładzie), a następnie wybierz pozycję **Dołącz**.
+7. Wybierz proces dla programu Chrome przy użyciu właściwy host port (1337, w tym przykładzie), a następnie wybierz pozycję **Dołącz**.
 
     ![Dołącz do procesu](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
@@ -383,20 +383,20 @@ W poprzedniej sekcji debuger jest dołączony do kodu w języku Node.js po stron
     > [!NOTE]
     > Jeśli debuger nie dołączy i zostanie wyświetlony komunikat "nie można dołączyć do procesu. Operacja jest niedozwolona w bieżącym stanie. ", zamknij wszystkie wystąpienia programu Chrome, przed rozpoczęciem Chrome w trybie debugowania za pomocą Menedżera zadań. Rozszerzenia dla programu Chrome może być uruchomiony i zapobieganie tryb pełnego debugowania.
 
-1. Ponieważ kod za pomocą punktu przerwania zostały już wykonane czynności, Odśwież stronę przeglądarki w taki sposób, aby trafiony punkt przerwania.
+8. Ponieważ kod za pomocą punktu przerwania zostały już wykonane czynności, Odśwież stronę przeglądarki w taki sposób, aby trafiony punkt przerwania.
 
     Gdy wstrzymaniu w debugerze, można sprawdzić stan swojej aplikacji, przenosząc kursor myszy nad zmienne okien i korzystanie z debugera. Debuger może przejść przez krokowe wykonywanie kodu (**F5**, **F10**, i **F11**).
 
     Może być trafiony punkt przerwania w jednym *bundle.js aplikacji* lub lokalizacji zamapowanych w *app.tsx*, w zależności od stanu usługi środowisko i przeglądarki. W obu przypadkach możesz przejść przez kod i Sprawdź zmienne.
 
-    * Jeśli potrzebujesz wszedł do kodu w *app.tsx* i nie można to zrobić, użyj **dołączyć do procesu** zgodnie z opisem w poprzednich krokach, aby dołączyć debuger. Następnie otwórz dynamicznie generowanym *app.tsx* pliku z Eksploratora rozwiązań, otwierając **dokumenty skryptów** > **app.tsx**, a następnie ustaw punkt przerwania i Odśwież strony w przeglądarce (ustawić punkt przerwania w wierszu kodu, który umożliwia punkty przerwania, takich jak `return` instrukcji lub `var` deklaracji).
+   * Jeśli potrzebujesz wszedł do kodu w *app.tsx* i nie można to zrobić, użyj **dołączyć do procesu** zgodnie z opisem w poprzednich krokach, aby dołączyć debuger. Następnie otwórz dynamicznie generowanym *app.tsx* pliku z Eksploratora rozwiązań, otwierając **dokumenty skryptów** > **app.tsx**, a następnie ustaw punkt przerwania i Odśwież strony w przeglądarce (ustawić punkt przerwania w wierszu kodu, który umożliwia punkty przerwania, takich jak `return` instrukcji lub `var` deklaracji).
 
-        Alternatywnie Jeśli potrzebujesz wszedł do kodu w *app.tsx* i nie można to zrobić, spróbuj użyć `debugger;` instrukcji w *app.tsx*, lub zamiast tego ustawić punkty przerwania w Developer Tools dla programu Chrome.
+       Alternatywnie Jeśli potrzebujesz wszedł do kodu w *app.tsx* i nie można to zrobić, spróbuj użyć `debugger;` instrukcji w *app.tsx*, lub zamiast tego ustawić punkty przerwania w Developer Tools dla programu Chrome.
 
-    * Jeśli potrzebujesz wszedł do kodu w *bundle.js aplikacji* i nie można to zrobić, usuń plik mapy źródłowej *bundle.js.map aplikacji*.
+   * Jeśli potrzebujesz wszedł do kodu w *bundle.js aplikacji* i nie można to zrobić, usuń plik mapy źródłowej *bundle.js.map aplikacji*.
 
-    > [!TIP]
-    > Po dołączeniu do procesu po raz pierwszy wykonać następujące kroki, możesz szybko dołączyć do tego samego procesu w programie Visual Studio 2017, wybierając **debugowania** > **ponownie Dołącz do procesu**.
+     > [!TIP]
+     > Po dołączeniu do procesu po raz pierwszy wykonać następujące kroki, możesz szybko dołączyć do tego samego procesu w programie Visual Studio 2017, wybierając **debugowania** > **ponownie Dołącz do procesu**.
 
 ## <a name="next-steps"></a>Następne kroki
 

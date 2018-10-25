@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 553f183eff03ae6437e7db37102005a5e901c0a4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 953f74b309d8dc147d04d86b843f138002de972f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081647"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910683"
 ---
 # <a name="access-stored-font-and-color-settings"></a>Dostęp przechowywane ustawienia czcionek i kolorów
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Zintegrowanego środowiska programistycznego (IDE) przechowuje zmodyfikowane ustawienia czcionek i kolorów w rejestrze. Możesz użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu uzyskać dostępu do tych ustawień.
@@ -49,17 +49,17 @@ ms.locfileid: "39081647"
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Aby użyć utrwalanie stanu czcionek i kolorów
  Utrwalanie czcionki i kolory obejmuje:
 
--   Synchronizacja ustawień środowiska IDE, za pomocą ustawień przechowywanych w rejestrze.
+- Synchronizacja ustawień środowiska IDE, za pomocą ustawień przechowywanych w rejestrze.
 
--   Propagowanie informacji modyfikacji rejestru.
+- Propagowanie informacji modyfikacji rejestru.
 
--   Ustawianie i pobieranie ustawień przechowywanych w rejestrze.
+- Ustawianie i pobieranie ustawień przechowywanych w rejestrze.
 
- Synchronizacja ustawień magazynu z ustawieniami środowiska IDE jest dużej mierze przejrzyste. Podstawowy IDE automatycznie zapisuje zaktualizowanych ustawień dla **Wyświetle elementy** wpisów rejestru kategorii.
+  Synchronizacja ustawień magazynu z ustawieniami środowiska IDE jest dużej mierze przejrzyste. Podstawowy IDE automatycznie zapisuje zaktualizowanych ustawień dla **Wyświetle elementy** wpisów rejestru kategorii.
 
- Jeśli wiele pakietów VSPackage mają określoną kategorię, pakietu VSPackage powinny wymagać generowane są zdarzenia podczas metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu służą do modyfikowania ustawień rejestru przechowywanych.
+  Jeśli wiele pakietów VSPackage mają określoną kategorię, pakietu VSPackage powinny wymagać generowane są zdarzenia podczas metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfejsu służą do modyfikowania ustawień rejestru przechowywanych.
 
- Generowanie zdarzeń nie jest włączona domyślnie. Aby włączyć generowanie zdarzeń, kategorii muszą być otwarte przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Otwieranie kategorii powoduje, że środowisko IDE do wywołania odpowiednie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> metody, która implementuje pakietu VSPackage.
+  Generowanie zdarzeń nie jest włączona domyślnie. Aby włączyć generowanie zdarzeń, kategorii muszą być otwarte przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Otwieranie kategorii powoduje, że środowisko IDE do wywołania odpowiednie <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> metody, która implementuje pakietu VSPackage.
 
 > [!NOTE]
 >  Modyfikacje za pośrednictwem **czcionek i kolorów** stronie właściwości generowanie zdarzeń niezależnie od <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Możesz użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interfejsu, aby ustalić, czy aktualizację pamięci podręcznej ustawienia czcionek i kolorów jest wymagana przed wywołaniem metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> klasy.

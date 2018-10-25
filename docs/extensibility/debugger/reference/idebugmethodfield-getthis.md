@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cde294ea10a6eedd1046a41686dbfa9f3b47e4e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 302486a0cd59f6bc843af6aba76f734775cf405e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118284"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842940"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
-Pobiera `this` (`Me` w [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]) wskaźnika obiektu zawierającego metodę.  
+Pobiera `this` (`Me` w [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]) wskaźnik obiekt zawierający metodę.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int GetThis(
   
 #### <a name="parameters"></a>Parametry  
  `ppClass`  
- [out] Zwraca [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) obiekt reprezentujący wskaźnik "this".  
+ [out] Zwraca [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) obiekt reprezentujący "to" wskaźnik.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- W przypadku języków zorientowane obiektowo jest zwykle domniemanych wskaźnika do bieżącego wystąpienia klasy. Jest to nazywane `this` w języku C# / C++ oraz jak `Me` w [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)].  
+ W językach obiektowych jest zazwyczaj dorozumianych wskaźnik do bieżącego wystąpienia klasy. Jest to nazywane `this` w języku C# / C++ i `Me` w [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)].  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

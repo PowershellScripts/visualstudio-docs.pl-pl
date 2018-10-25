@@ -25,12 +25,12 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c44ad4b225b3fd52f0e25369777b1a4f6df8c95e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1136cc4e55ebbdf3a5ff1b38b5802b058e9c69c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895746"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramy warstw: Odwołanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ W programie Visual Studio, można użyć *diagramu warstwowego* aby zwizualizowa
   
  Użyj diagramu warstwowego, które ułatwiają wykonywanie następujących zadań:  
   
--   Komunikować się z istniejącą lub zamierzonego logiczną architekturę systemu.  
+- Komunikować się z istniejącą lub zamierzonego logiczną architekturę systemu.  
   
--   Odkryj konfliktów między istniejący kod i planowaną architekturę.  
+- Odkryj konfliktów między istniejący kod i planowaną architekturę.  
   
--   Wizualizacja wpływu zmian na planowaną architekturę podczas refaktoryzacji, zaktualizować lub ewolucji systemu.  
+- Wizualizacja wpływu zmian na planowaną architekturę podczas refaktoryzacji, zaktualizować lub ewolucji systemu.  
   
--   Wzmocnienie planowaną architekturę podczas tworzenia i konserwacji kodu, umieszczając Weryfikacja przy użyciu zaewidencjonowania i operacji kompilacji.  
+- Wzmocnienie planowaną architekturę podczas tworzenia i konserwacji kodu, umieszczając Weryfikacja przy użyciu zaewidencjonowania i operacji kompilacji.  
   
- W tym temacie opisano elementy, które można użyć na diagramie warstwy. Aby uzyskać szczegółowe informacje o sposobie tworzenia i narysuj diagramy warstwowe, zobacz [diagramy warstw: wskazówki dotyczące](../modeling/layer-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat wzorców warstwowe, odwiedź stronę [lokacji wzorców i praktyk](http://go.microsoft.com/fwlink/?LinkId=145794).  
+  W tym temacie opisano elementy, które można użyć na diagramie warstwy. Aby uzyskać szczegółowe informacje o sposobie tworzenia i narysuj diagramy warstwowe, zobacz [diagramy warstw: wskazówki dotyczące](../modeling/layer-diagrams-guidelines.md). Aby uzyskać więcej informacji na temat wzorców warstwowe, odwiedź stronę [lokacji wzorców i praktyk](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 ## <a name="reading-layer-diagrams"></a>Odczytywanie diagramów warstw  
  ![Elementy na diagramach warstwy](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
@@ -69,17 +69,17 @@ W programie Visual Studio, można użyć *diagramu warstwowego* aby zwizualizowa
 ##  <a name="Explorer"></a> Eksplorator warstw  
  Możesz połączyć każdą warstwę artefakty w rozwiązaniu, takich jak projekty, klasy, przestrzeni nazw, pliki projektu i innymi częściami oprogramowania. Liczba na warstwie pokazuje liczbę artefaktów, które są połączone z warstwą. Jednak podczas odczytywania liczbę artefaktów na warstwie, pamiętaj o następujących kwestiach:  
   
--   Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.  
+- Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.  
   
-     Na przykład, jeżeli warstwa jest połączona z pojedynczą przestrzenią nazw, liczba połączonych artefaktów wynosi 1, nawet jeśli przestrzeń nazw zawiera klasy. Jeśli warstwa zawiera także łącza do każdej klasy w przestrzeni nazw, liczba będzie uwzględniać połączone klasy.  
+   Na przykład, jeżeli warstwa jest połączona z pojedynczą przestrzenią nazw, liczba połączonych artefaktów wynosi 1, nawet jeśli przestrzeń nazw zawiera klasy. Jeśli warstwa zawiera także łącza do każdej klasy w przestrzeni nazw, liczba będzie uwzględniać połączone klasy.  
   
--   Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.  
+- Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.  
   
- Aby uzyskać więcej informacji na temat łączenia warstwami i artefaktami zobacz:  
+  Aby uzyskać więcej informacji na temat łączenia warstwami i artefaktami zobacz:  
   
--   [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)  
+- [Diagramy warstw: wskazówki](../modeling/layer-diagrams-guidelines.md)  
   
--   [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Tworzenie diagramów warstw z kodu](../modeling/create-layer-diagrams-from-your-code.md)  
   
 #### <a name="to-examine-the-linked-artifacts"></a>Aby zbadać połączonych artefaktów  
   

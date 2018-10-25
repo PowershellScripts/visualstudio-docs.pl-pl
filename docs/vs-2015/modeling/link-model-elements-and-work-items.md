@@ -22,12 +22,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e3c2a7558adb9036cec474429da9778394e8c1f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 71500fca3318bf6f18e1c841c1ff90bd303bfaa6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891755"
 ---
 # <a name="link-model-elements-and-work-items"></a>Łączenie elementów modeli i elementów roboczych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ ms.locfileid: "49263931"
   
  Można na przykład połączyć:  
   
--   Element roboczy historii użytkownika i diagram aktywności, aby pokazać, jak zrealizować historię za pomocą sekwencji operacji.  
+- Element roboczy historii użytkownika i diagram aktywności, aby pokazać, jak zrealizować historię za pomocą sekwencji operacji.  
   
--   Przypadek użycia na diagramie przypadków użycia z elementami roboczymi przypadków testowych, aby upewnić się, że przypadek użycia jest poprawnie zaimplementowany.  
+- Przypadek użycia na diagramie przypadków użycia z elementami roboczymi przypadków testowych, aby upewnić się, że przypadek użycia jest poprawnie zaimplementowany.  
   
--   Atrybut w klasie na diagramie klas UML z elementem roboczym usterki, aby pokazać błąd w implementacji atrybutu.  
+- Atrybut w klasie na diagramie klas UML z elementem roboczym usterki, aby pokazać błąd w implementacji atrybutu.  
   
--   Składnik na diagramie składników z elementem roboczym zadania, w celu śledzenia rozwoju składnika. Takie zadanie zazwyczaj jest dzielone na mniejsze zadania.  
+- Składnik na diagramie składników z elementem roboczym zadania, w celu śledzenia rozwoju składnika. Takie zadanie zazwyczaj jest dzielone na mniejsze zadania.  
   
- Elementy robocze można połączyć z dowolnym elementem dostępnym do wybrania na diagramach modelowania lub w Eksploratorze modelu UML, jak na przykład:  
+  Elementy robocze można połączyć z dowolnym elementem dostępnym do wybrania na diagramach modelowania lub w Eksploratorze modelu UML, jak na przykład:  
   
--   Wszystkie elementy w modelach UML, takie jak klasy UML, linie życia, przypadki użycia, podsystemy, aktywności, węzły obiektów, składniki, interfejsy  
+- Wszystkie elementy w modelach UML, takie jak klasy UML, linie życia, przypadki użycia, podsystemy, aktywności, węzły obiektów, składniki, interfejsy  
   
--   Wszystkie relacje w modelach UML, takie jak skojarzenia, generalizacje, zależności, przepływy, wiadomości  
+- Wszystkie relacje w modelach UML, takie jak skojarzenia, generalizacje, zależności, przepływy, wiadomości  
   
--   Części elementów, takie jak atrybuty i operacje klas, wystąpienia wykonywania linii życia, piny wejściowe i wyjściowe aktywności oraz części i porty składników  
+- Części elementów, takie jak atrybuty i operacje klas, wystąpienia wykonywania linii życia, piny wejściowe i wyjściowe aktywności oraz części i porty składników  
   
--   Warstwy i zależności warstw  
+- Warstwy i zależności warstw  
   
--   Komentarze i łącza do komentarzy  
+- Komentarze i łącza do komentarzy  
   
--   Diagramy. Aby wybrać diagram, wybierz jego pustą część.  
+- Diagramy. Aby wybrać diagram, wybierz jego pustą część.  
   
 > [!WARNING]
 >  Możesz musi już być podłączony do TFS źródła kodu kontrolki (SCC) można utworzyć lub połączyć elementu roboczego. Jeśli próbujesz nawiązać połączenie z inną SCC TFS, Visual Studio powoduje zamknięcie bieżącego rozwiązania automatycznie. Upewnij się, że jesteś podłączony do odpowiednich SCC przed przystąpieniem do tworzenia lub łącze do elementu roboczego. W kolejnych wersjach programu Visual Studio polecenia menu nie są dostępne, jeśli nie są połączone SCC.  

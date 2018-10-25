@@ -10,12 +10,12 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9137510f8d6949271a255b14b293f59366048f77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923449"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>Uaktualnianie niestandardowych szablonów projektów i elementów dla programu Visual Studio "15"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,24 +181,24 @@ VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.c
 ## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Aktualizacje dla rozszerzeń zainstalowany za pomocą. TOŻSAMOŚCI USŁUGI ZARZĄDZANEJ  
  Niektóre rozszerzenia opartym na MSI wdrażania szablonów typowe lokalizacje szablonu, takie jak następujące:  
   
--   **\<Katalog instalacyjny usługi Visual Studio > \Common7\IDE\\< ProjectTemplates/elementów >**  
+- **\<Katalog instalacyjny usługi Visual Studio > \Common7\IDE\\< ProjectTemplates/elementów >**  
   
--   **\<Katalog instalacyjny usługi Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< Project/elementów >**  
+- **\<Katalog instalacyjny usługi Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< Project/elementów >**  
   
- Rozszerzenie wykonuje wdrożenie oparte na MSI, musisz ręcznie wygenerować manifest szablonu i upewnij się, że jest ona objęta Instalator rozszerzenia. Należy porównać przykłady vstman wymienionych powyżej i [Visual Studio Manifest odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md). Aby zobaczyć, co jest potrzebne do uwzględnienia  
+  Rozszerzenie wykonuje wdrożenie oparte na MSI, musisz ręcznie wygenerować manifest szablonu i upewnij się, że jest ona objęta Instalator rozszerzenia. Należy porównać przykłady vstman wymienionych powyżej i [Visual Studio Manifest odwołanie do schematu szablonu](../extensibility/visual-studio-template-manifest-schema-reference.md). Aby zobaczyć, co jest potrzebne do uwzględnienia  
   
- Należy utworzyć oddzielny manifesty dla szablonów projektów i elementów, a powinien wskazywać szablonu katalog główny jak określono powyżej. Należy utworzyć jeden manifest rozszerzenia i ustawień regionalnych.  
+  Należy utworzyć oddzielny manifesty dla szablonów projektów i elementów, a powinien wskazywać szablonu katalog główny jak określono powyżej. Należy utworzyć jeden manifest rozszerzenia i ustawień regionalnych.  
   
 ## <a name="troubleshooting-template-installation"></a>Rozwiązywanie problemów z instalacją szablonu  
  Jeśli napotkasz problemy z wdrażania szablonów projektu lub elementu, można włączyć rejestrowanie diagnostyczne.  
   
-1.  Uruchom następujące polecenie, aby ustawić klucz rejestru, aby włączyć rejestrowanie:  
+1. Uruchom następujące polecenie, aby ustawić klucz rejestru, aby włączyć rejestrowanie:  
   
-     **Polecenie reg add HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
+    **Polecenie reg add HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
   
-2.  Uruchom program Visual Studio i uruchamiaj oknach dialogowych nowy projekt i nowy element, aby zainicjować obu drzewach szablonu. Pojawia się w dzienniku szablonu **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. Każdy szablon drzewa inicjowania dołącza wpisy w tym dzienniku.  
+2. Uruchom program Visual Studio i uruchamiaj oknach dialogowych nowy projekt i nowy element, aby zainicjować obu drzewach szablonu. Pojawia się w dzienniku szablonu **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. Każdy szablon drzewa inicjowania dołącza wpisy w tym dzienniku.  
   
- Plik dziennika zawiera następujące kolumny:  
+   Plik dziennika zawiera następujące kolumny:  
   
 -   **FullPathToTemplate**, która zawiera następujące wartości:  
   

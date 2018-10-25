@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a6bdfb94a7164dc38bf636d12d8b99ea73aefad8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50c19fdaeaf9842c91e5dd7e9ca1472355b1b3e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296806"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815987"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Porady: znajdowanie tematów w Indeksie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,16 +35,16 @@ Indeks zawiera listę słów kluczowych, które są skojarzone z tematów w zain
   
 ### <a name="to-find-a-topic-by-using-the-index"></a>Aby znaleźć temat za pomocą indeksu  
   
-1.  Na **indeksu** karcie, wykonaj jedną z następujących czynności:  
+1. Na **indeksu** karcie, wykonaj jedną z następujących czynności:  
   
-    -   Określ słowo kluczowe do wyszukania w polu tekstowym. Na przykład określić "Aktualizuj", aby znaleźć tematy ze słowami kluczowymi, takie jak "update", "zaktualizowane" i "aktualizacji".  
+   - Określ słowo kluczowe do wyszukania w polu tekstowym. Na przykład określić "Aktualizuj", aby znaleźć tematy ze słowami kluczowymi, takie jak "update", "zaktualizowane" i "aktualizacji".  
   
-         Wybierając przycisk filtru w górnej części karty, możesz wyświetlić wszystkie wpisy, które zawierają tekst, który określisz albo tylko wpisy, rozpoczynających się od tekstu, który określisz.  
+      Wybierając przycisk filtru w górnej części karty, możesz wyświetlić wszystkie wpisy, które zawierają tekst, który określisz albo tylko wpisy, rozpoczynających się od tekstu, który określisz.  
   
-        > [!NOTE]
-        >  Gdy przycisk filtru pojawi się na tle ciemniejszego z obramowaniem, wpisy muszą zawierać tekst, który określisz. Jeśli nie ma tło i obramowanie, wpisy musi rozpoczynać tekst, który określisz.  
+     > [!NOTE]
+     >  Gdy przycisk filtru pojawi się na tle ciemniejszego z obramowaniem, wpisy muszą zawierać tekst, który określisz. Jeśli nie ma tło i obramowanie, wpisy musi rozpoczynać tekst, który określisz.  
   
-    -   Przewiń do indeksu, a następnie wybierz słowem kluczowym.  
+   - Przewiń do indeksu, a następnie wybierz słowem kluczowym.  
   
      Jeśli słowo kluczowe, które określisz jest skojarzony z tylko jednego tematu, wygląda na to. W przeciwnym razie zostanie wyświetlona lista wszystkich tematów, które są skojarzone z tym słowem kluczowym.  
   

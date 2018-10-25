@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 22290b9a65e512ba897641b076d74927aee712c0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 25fa9581dff49dbdebe9ce79f6f0143d393bb275
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860137"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823623"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Sprawdzanie poprawności w języku specyficznym dla domeny
 Autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sprawdzania poprawności, aby sprawdzić, czy model utworzony przez użytkownika jest znaczący. Na przykład modem DSL umożliwia użytkownikom rysowanie drzewa rodziny osób oraz ich elementów nadrzędnych, można zapisać ograniczenie, które gwarantuje, że elementy podrzędne daty urodzenia po ich elementy nadrzędne.
@@ -32,17 +32,17 @@ Autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sp
 ## <a name="running-validation"></a>Uruchamianie sprawdzania poprawności
  Gdy użytkownik edytuje modelu, oznacza to, wystąpienie języka specyficznego dla domeny następujące akcje można uruchomić sprawdzania poprawności:
 
--   Kliknij prawym przyciskiem myszy diagram i wybierz **Sprawdź poprawność wszystkich**.
+- Kliknij prawym przyciskiem myszy diagram i wybierz **Sprawdź poprawność wszystkich**.
 
--   Kliknij prawym przyciskiem myszy najwyższy węzeł w Eksplorator DSL i wybierz **zweryfikować wszystkie**
+- Kliknij prawym przyciskiem myszy najwyższy węzeł w Eksplorator DSL i wybierz **zweryfikować wszystkie**
 
--   Zapisz model.
+- Zapisz model.
 
--   Otwórz model.
+- Otwórz model.
 
--   Ponadto można napisać kod programu, który uruchamia sprawdzania poprawności, na przykład, jako część polecenia menu lub w odpowiedzi na zmianę.
+- Ponadto można napisać kod programu, który uruchamia sprawdzania poprawności, na przykład, jako część polecenia menu lub w odpowiedzi na zmianę.
 
- Wszelkie błędy sprawdzania poprawności, pojawi się w **lista błędów** okna. Użytkownik może kliknąć dwukrotnie komunikat o błędzie, aby wybrać elementy modelu, które są przyczyną tego błędu.
+  Wszelkie błędy sprawdzania poprawności, pojawi się w **lista błędów** okna. Użytkownik może kliknąć dwukrotnie komunikat o błędzie, aby wybrać elementy modelu, które są przyczyną tego błędu.
 
 ## <a name="defining-validation-constraints"></a>Definiowanie ograniczeń walidacji
  Należy zdefiniować ograniczenia sprawdzania poprawności, dodając metody sprawdzania poprawności do klasy domeny lub relacjami DSL. Po uruchomieniu sprawdzania poprawności przez użytkownika lub pod kontrolą programu niektóre lub wszystkie metody sprawdzania poprawności są wykonywane. Każda metoda jest stosowana do każdego wystąpienia klasy, a każda klasa może być kilka metod sprawdzania poprawności.
@@ -54,37 +54,37 @@ Autor języka specyficznego dla domeny (DSL) można zdefiniować ograniczenia sp
 
 #### <a name="to-define-a-validation-constraint"></a>Aby zdefiniować ograniczenie sprawdzania poprawności
 
-1.  Włącz sprawdzanie poprawności w **Editor\Validation** węzła:
+1. Włącz sprawdzanie poprawności w **Editor\Validation** węzła:
 
-    1.  Otwórz **Dsl\DslDefinition.dsl**.
+   1.  Otwórz **Dsl\DslDefinition.dsl**.
 
-    2.  W Eksploratorze DSL rozwiń **edytora** a następnie wybierz węzeł **weryfikacji**.
+   2.  W Eksploratorze DSL rozwiń **edytora** a następnie wybierz węzeł **weryfikacji**.
 
-    3.  W oknie właściwości ustaw **używa** właściwości `true`. Najwygodniej ustawiania tych właściwości jest.
+   3.  W oknie właściwości ustaw **używa** właściwości `true`. Najwygodniej ustawiania tych właściwości jest.
 
-    4.  Kliknij przycisk **Przekształć wszystkie szablony** w **Eksploratora rozwiązań** paska narzędzi.
+   4.  Kliknij przycisk **Przekształć wszystkie szablony** w **Eksploratora rozwiązań** paska narzędzi.
 
-2.  Napisz częściowych definicji klasy dla co najmniej jednej klasy domeny lub relacji domeny. Zapisz te definicje w nowym pliku kodu w **Dsl** projektu.
+2. Napisz częściowych definicji klasy dla co najmniej jednej klasy domeny lub relacji domeny. Zapisz te definicje w nowym pliku kodu w **Dsl** projektu.
 
-3.  Prefiks każdej klasy za pomocą tego atrybutu:
+3. Prefiks każdej klasy za pomocą tego atrybutu:
 
-    ```csharp
-    [ValidationState(ValidationState.Enabled)]
-    ```
+   ```csharp
+   [ValidationState(ValidationState.Enabled)]
+   ```
 
-    -   Domyślnie ten atrybut umożliwi sprawdzania poprawności dla klas pochodnych. Jeśli chcesz wyłączyć sprawdzanie poprawności dla określonej klasy pochodnej, możesz użyć `ValidationState.Disabled`.
+   -   Domyślnie ten atrybut umożliwi sprawdzania poprawności dla klas pochodnych. Jeśli chcesz wyłączyć sprawdzanie poprawności dla określonej klasy pochodnej, możesz użyć `ValidationState.Disabled`.
 
-4.  Dodaj metody sprawdzania poprawności do klasy. Każda metoda sprawdzania poprawności mogą mieć dowolną nazwę, ale ma jeden parametr typu <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.
+4. Dodaj metody sprawdzania poprawności do klasy. Każda metoda sprawdzania poprawności mogą mieć dowolną nazwę, ale ma jeden parametr typu <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.
 
-     Musi mieć prefiks z co najmniej `ValidationMethod` atrybuty:
+    Musi mieć prefiks z co najmniej `ValidationMethod` atrybuty:
 
-    ```csharp
-    [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]
-    ```
+   ```csharp
+   [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]
+   ```
 
-     ValidationCategories Określ, kiedy metoda jest wykonywana.
+    ValidationCategories Określ, kiedy metoda jest wykonywana.
 
- Na przykład:
+   Na przykład:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -127,27 +127,27 @@ public partial class ParentsHaveChildren
 
  Zwróć uwagę na następujące kwestie dotyczące tego kodu:
 
--   Metody sprawdzania poprawności można dodać do domeny, klas lub relacji domeny. Kod dla tych typów znajduje się w **Dsl\Generated Code\Domain\*.cs**.
+- Metody sprawdzania poprawności można dodać do domeny, klas lub relacji domeny. Kod dla tych typów znajduje się w **Dsl\Generated Code\Domain\*.cs**.
 
--   Każda metoda sprawdzania poprawności jest stosowana do każdego wystąpienia swojej klasy oraz w jej podklasach. W przypadku relacji domeny każde wystąpienie jest łącze między dwoma elementami modelu.
+- Każda metoda sprawdzania poprawności jest stosowana do każdego wystąpienia swojej klasy oraz w jej podklasach. W przypadku relacji domeny każde wystąpienie jest łącze między dwoma elementami modelu.
 
--   Metody sprawdzania poprawności nie są stosowane w dowolnej kolejności określonej, a każda metoda nie ma zastosowania do wystąpienia klasy w dowolnej kolejności przewidywalne.
+- Metody sprawdzania poprawności nie są stosowane w dowolnej kolejności określonej, a każda metoda nie ma zastosowania do wystąpienia klasy w dowolnej kolejności przewidywalne.
 
--   Jest zwykle złym zwyczajem dla metody sprawdzania poprawności w celu zaktualizowania zawartości magazynu, ponieważ może to prowadzić do niespójnych wyników. Zamiast tego raportu wszelkie błędy, wywołując metodę `context.LogError`, `LogWarning` lub `LogInfo`.
+- Jest zwykle złym zwyczajem dla metody sprawdzania poprawności w celu zaktualizowania zawartości magazynu, ponieważ może to prowadzić do niespójnych wyników. Zamiast tego raportu wszelkie błędy, wywołując metodę `context.LogError`, `LogWarning` lub `LogInfo`.
 
--   W wywołaniu LogError możesz podać listę elementów modelu lub łączy relacji, które wybrano w sytuacji, gdy użytkownik kliknie dwukrotnie komunikat o błędzie.
+- W wywołaniu LogError możesz podać listę elementów modelu lub łączy relacji, które wybrano w sytuacji, gdy użytkownik kliknie dwukrotnie komunikat o błędzie.
 
--   Aby uzyskać informacji dotyczących sposobu czytania modelu w kodzie programu, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
+- Aby uzyskać informacji dotyczących sposobu czytania modelu w kodzie programu, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- Przykład dotyczy następujących modelu domeny. Relacja ParentsHaveChildren ma role, które są nazywane nadrzędnymi i podrzędnymi.
+  Przykład dotyczy następujących modelu domeny. Relacja ParentsHaveChildren ma role, które są nazywane nadrzędnymi i podrzędnymi.
 
- ![Diagramem definicji DSL &#45; model drzewa rodziny](../modeling/media/familyt_person.png)
+  ![Diagramem definicji DSL &#45; model drzewa rodziny](../modeling/media/familyt_person.png)
 
 ## <a name="validation-categories"></a>Sprawdzanie poprawności kategorii
  W <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> atrybut, można określić podczas metody sprawdzania poprawności, które mają zostać wykonane.
 
 |Kategoria|Wykonanie|
-|--------------|---------------|
+|-|-|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Kiedy użytkownik wywoła polecenie menu sprawdzania poprawności.|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Po otwarciu pliku modelu.|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Gdy plik jest zapisywany. Jeśli występują błędy sprawdzania poprawności, użytkownik będzie mógł skorzystać możliwość zapisywania anulowanie operacji.|
@@ -173,7 +173,6 @@ public partial class Person
     {
         if (this.BirthYear <= parent.BirthYear)
         { ...
-
 ```
 
  **Agregowanie ograniczenia sprawdzania poprawności.** Aby zastosować sprawdzania poprawności w przewidywalnej kolejności, należy zdefiniować metodę sprawdzania poprawności pojedynczego w klasie właściciela, taki element główny modelu. Ta technika pozwala też zagregować wiele raportów o błędach w pojedynczym komunikacie.
@@ -189,7 +188,6 @@ erroneousLinks = new List<ParentsHaveChildren>();
 erroneousLinks.Add(this);
 context.SetCacheValue("erroneousLinks", erroneousLinks);
 if (erroneousLinks.Count < 5) { context.LogError( ... ); }
-
 ```
 
 ## <a name="validation-of-multiplicities"></a>Sprawdzanie poprawności Liczebność punktów
@@ -197,7 +195,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Jeśli ustawisz Liczebność roli relacji domeny 1.. * lub 1..1, ale użytkownik nie tworzy łącze tę relację, pojawi się komunikat o błędzie weryfikacji.
 
- Na przykład, jeśli DSL ma klas osoby i miejscowości i relacji PersonLivesInTown z relacją **1..\***  w roli miejscowości, następnie każda osoba, która jest nie miejscowości, komunikat o błędzie będzie widoczna.
+ Na przykład, jeśli DSL ma klas osoby i miejscowości i relacji PersonLivesInTown z relacją **1..\\** * w roli miejscowości, następnie każda osoba, która jest nie miejscowości, komunikat o błędzie będzie widoczna.
 
 ## <a name="running-validation-from-program-code"></a>Uruchamianie sprawdzania poprawności z kodu programu
  Uzyskiwanie dostępu do lub tworząc ValidationController można uruchomić sprawdzania poprawności. Jeśli chcesz, aby błędy, które mają być wyświetlane użytkownikowi w oknie błędów, należy użyć ValidationController, który jest dołączony do DocData dla diagramu. Na przykład jeśli piszesz polecenia menu `CurrentDocData.ValidationController` jest dostępna w klasie zestawu poleceń:
@@ -213,7 +211,6 @@ partial class MyLanguageCommandSet
   {
    ValidationController controller = this.CurrentDocData.ValidationController;
 ...
-
 ```
 
  Aby uzyskać więcej informacji, zobacz [porady: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
@@ -233,7 +230,6 @@ if (!validator.Validate(store, ValidationCategories.Save))
   // Deal with errors:
   foreach (ValidationMessage message in validator.ValidationMessages) { ... }
 }
-
 ```
 
 ## <a name="running-validation-when-a-change-occurs"></a>Uruchamianie sprawdzania poprawności, po wprowadzeniu zmiany
@@ -297,7 +293,6 @@ namespace Company.FamilyTree
     }
   }
 }
-
 ```
 
  Programy obsługi są również nazywane po cofnąć ani ponownego wykonywania operacji, które mają wpływ na łącza lub elementów.
@@ -314,7 +309,6 @@ namespace Company.FamilyTree
 [ValidationMethod(ValidationCategory.Menu)]
 private void TestForCircularLinks(ValidationContext context)
 {...}
-
 ```
 
 > [!NOTE]

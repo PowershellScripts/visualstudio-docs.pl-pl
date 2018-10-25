@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e3a58ee8093087f99ac6f002faa7fb32d053be4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a746cc5ceeba8df4a023e10c09ecfe511be557b6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462993"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848777"
 ---
 # <a name="idiastackframegetallocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
-Pobiera flagę wskazującą, czy wskaźnik podstawowy jest przydzielona dla kodu tego zakresu adresów.  
+Pobiera flagę wskazującą, czy podstawowy wskaźnik jest przydzielany dla kodu w tym zakresie adresów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,10 +34,10 @@ HRESULT get_allocatesBasePointer (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca `TRUE` gdy podstawowy wskaźnik zostanie przydzielona dla kodu w tej ramce; w przeciwnym razie zwraca `FALSE`.  
+ [out] Zwraca `TRUE` Jeśli podstawowy wskaźnik jest przydzielany dla kodu w tej ramce; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

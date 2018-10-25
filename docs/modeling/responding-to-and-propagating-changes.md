@@ -11,45 +11,45 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d87a93016f2004a45a572374d68a20d2e59073da
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 696a874df8050d9a79f7cd07b9fc168acdc6b717
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954008"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897982"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Odpowiadanie na zmiany i propagowanie zmian
-Gdy element jest tworzony, usunięte lub zaktualizowane, można napisać kod Propaguj zmiany do innych części modelu lub do zasobów zewnętrznych, takich jak pliki, bazy danych lub innych składników.
+Gdy element zostanie utworzony, usunięty lub zaktualizowany, można napisać kod, który propaguje zmiany z innymi częściami modelu lub zasobów zewnętrznych, takich jak pliki, bazy danych lub innych składników.
 
 ## <a name="in-this-section"></a>W tej sekcji
- Przyjąć należy wziąć pod uwagę następujące techniki w następującej kolejności:
+ Program narzędziowy należy wziąć pod uwagę te techniki w następującej kolejności:
 
-|Metoda|Scenariusze|Więcej informacji|
-|---------------|---------------|--------------------------|
-|Definiuje właściwości domeny obliczona.|Właściwość domeny, którego wartość jest obliczana na podstawie innych właściwości w modelu. Na przykład cen, który jest sumą ceny powiązanych elementów.|[Obliczone i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md)|
-|Zdefiniuj właściwość domeny niestandardowej magazynu.|Właściwość domeny przechowywane w innych częściach modelu lub zewnętrznie. Na przykład można przeanalizować wyrażenia ciągu w drzewie w modelu.|[Obliczone i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md)|
-|Programy obsługi, takie jak OnValueChanging i OnDeleting zmienić zastąpienia|Synchronizowanie różnych elementów i synchronizowania zewnętrznych wartości z modelu.<br /><br /> Ograniczenie wartości do określonych zakresów.<br /><br /> Wywoływana tuż przed i po wartości właściwości i innych zmian. Zmiana można rozwiązać przez Zgłaszanie wyjątku.|[Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md)|
-|Reguły|Można zdefiniować reguły, które są umieszczane w kolejce do wykonania bezpośrednio przed zakończeniem transakcji, w którym wystąpiło zdarzenie zmiany. Nie są one wykonywane na cofania lub ponownego wykonywania. Ich używać, aby zachować synchronizację z innego jedną część magazynu.|[Reguły propagujące zmiany w modelu](../modeling/rules-propagate-changes-within-the-model.md)|
-|Zdarzenia magazynu|Magazyn modelowania udostępnia powiadomienia zdarzenia, takie jak dodanie lub usunięcie elementu lub łącze lub zmiana wartości właściwości. Zdarzenie jest również wykonywane na Cofnij i ponów. Użyj magazynu, aby zaktualizować wartości, które nie znajdują się w magazynie.|[Programy obsługi zdarzeń propagujące zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
-|Zdarzenia platformy .NET|Kształty mają procedury obsługi zdarzeń, które odpowiadają na kliknięcie myszą i innych gestów. Należy zarejestrować dla tych zdarzeń dla każdego obiektu. Rejestracja jest zazwyczaj wykonywane w zastąpieniu InitializeInstanceResources i należy ją odtworzyć dla każdego elementu.<br /><br /> Zdarzenia te występują zazwyczaj poza transakcją.|[Instrukcje: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
-|Granice reguły|Zasada granic jest używany w szczególności, aby ograniczyć zakresem kształtu.|[BoundsRules — ograniczenie lokalizacji i rozmiaru kształtu](../modeling/boundsrules-constrain-shape-location-and-size.md)|
-|Reguły wyboru|W szczególności reguł wyboru ograniczyć, co użytkownik może wybrać.|[Instrukcje: Ograniczanie bieżącego wyboru i uzyskiwanie dostępu do niego](../modeling/how-to-access-and-constrain-the-current-selection.md)|
-|OnAssocatedPropertyChanged|Wskazuje stanów elementów modelu przy użyciu funkcji kształtów lub łączników, takich jak cień, strzałek, kolor i szerokości linii i styl.|[Aktualizowanie kształtów i łączników, aby odzwierciedlały model](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
+|Techniki|Scenariusze|Więcej informacji|
+|-|-|-|
+|Zdefiniuj właściwość domeny obliczeniowe.|Właściwość domeny, którego wartość jest obliczana na podstawie innych właściwości w modelu. Na przykład cena, która jest sumą ceny powiązanych elementów.|[Obliczone i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md)|
+|Zdefiniuj właściwość domeny magazynu niestandardowego.|Właściwość domeny przechowywane w innych częściach modelu lub zewnętrznie. Na przykład można przeanalizować wyrażenia ciągu w drzewie w modelu.|[Obliczone i niestandardowe właściwości przechowywania](../modeling/calculated-and-custom-storage-properties.md)|
+|Obsługa zmian, takich jak OnValueChanging i OnDeleting zastąpienia|Synchronizuj różne elementy i Synchronizuj wartości zewnętrznej za pomocą modelu.<br /><br /> Ograniczenie wartości do zdefiniowanego zakresu.<br /><br /> Wywoływana bezpośrednio przed i po wartości właściwości i inne zmiany. Możesz zakończyć zmian przez wyrzucanie wyjątku.|[Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md)|
+|reguły|Można zdefiniować reguły, które oczekują w kolejce do wykonania bezpośrednio przed zakończeniem transakcji, w którym miało miejsce zmiany. Nie są wykonywane na cofania i ponawiania. Pozwala to zachować synchronizację z innego jednej strony Sklepu.|[Reguły propagujące zmiany w modelu](../modeling/rules-propagate-changes-within-the-model.md)|
+|Zdarzenia Store|Magazyn modelowania zawiera powiadomienia o zdarzeniach, takie jak dodawanie lub usuwanie elementu lub łączenie lub zmiana wartości właściwości. Zdarzenie jest również wykonywane na operacje Cofnij i ponów. Użyj magazynu zdarzeń, aby zaktualizować wartości, które nie znajdują się w magazynie.|[Programy obsługi zdarzeń propagujące zmiany poza modelem](../modeling/event-handlers-propagate-changes-outside-the-model.md)|
+|Zdarzenia platformy .NET|Kształty mają obsługi zdarzeń, które odpowiadanie na kliknięcia myszy i innych gestów. Musisz zarejestrować te zdarzenia, dla każdego obiektu. Rejestracja odbywa się zwykle w zastąpieniu obiektu InitializeInstanceResources i należy ją odtworzyć dla każdego elementu.<br /><br /> Te zdarzenia występują zwykle poza transakcją.|[Instrukcje: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|
+|Granice reguły|Reguła granice jest używana specjalnie w celu ograniczenia granice kształtu.|[BoundsRules — ograniczenie lokalizacji i rozmiaru kształtu](../modeling/boundsrules-constrain-shape-location-and-size.md)|
+|Wybór zasad|Reguły wyboru w szczególności ograniczenie, co użytkownik może wybrać.|[Instrukcje: Ograniczanie bieżącego wyboru i uzyskiwanie dostępu do niego](../modeling/how-to-access-and-constrain-the-current-selection.md)|
+|OnAssocatedPropertyChanged|Wskazuje stany elementów modelu przy użyciu funkcji kształtów i łączników, takich jak w tle, strzałek, kolor i szerokości linii i stylu.|[Aktualizowanie kształtów i łączników, aby odzwierciedlały model](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
-## <a name="comparing-rules-and-store-events"></a>**Porównanie reguł i magazynu**
- Zmiany powiadamiających, reguł i zdarzenia są uruchamiane w przypadku wystąpienia zmian w modelu.
+## <a name="comparing-rules-and-store-events"></a>**Porównanie reguł i zdarzenia Store**
+ Zgłaszających zmiany, reguł i zdarzenia są uruchamiane po wystąpieniu zmian w modelu.
 
- Reguły są zwykle stosowane w transakcji końcowego zostało zmienione, a zdarzenia są stosowane po zmian w transakcji.
+ Reguły są zazwyczaj stosowane w transakcji end zostało zmienione, a zdarzenia są stosowane po zatwierdzeniu zmian w ramach transakcji.
 
- Użyj magazynu można zsynchronizować modelu z obiektami poza magazynu i reguł, aby zachować spójność w magazynie.
+ Używać zdarzeń store można zsynchronizować modelu obiektów poza Store i reguł do zapewniania spójności w ramach Store.
 
--   **Tworzenie niestandardowych reguł** utworzyć regułę niestandardową jako klasy pochodnej z reguły abstrakcyjny. Należy również powiadomić framework o reguły niestandardowej. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
+-   **Tworzenie niestandardowych reguł** Tworzenie niestandardowej reguły jako pochodne klasy abstrakcyjnej reguły. Musi również powiadomić framework o reguły niestandardowej. Aby uzyskać więcej informacji, zobacz [reguły propagowanie zmian w modelu](../modeling/rules-propagate-changes-within-the-model.md).
 
--   **Subskrybowanie zdarzeń** zanim będzie możliwe subskrybowanie zdarzeń, tworzenie obsługi zdarzeń i delegata. Następnie użyj <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>właściwości, aby subskrybować zdarzenia. Aby uzyskać więcej informacji, zobacz [obsługi Propaguj zmiany poza Model zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+-   **Subskrybowanie zdarzeń** przed mogą subskrybować zdarzenie, utworzyć program obsługi zdarzeń i delegata. Następnie użyj <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>właściwości do subskrybowania zdarzenia. Aby uzyskać więcej informacji, zobacz [obsługi propagowanie zmian poza Model zdarzeń](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
--   **Cofanie zmian** wycofać transakcji, zdarzenia są generowane, ale nie są stosowane zasady. Reguła zmienia wartość Cofnij tę zmianę, wartość jest resetowany do oryginalnej wartości w trakcie akcji cofania. Gdy zdarzenie jest zgłaszane, należy ręcznie zmienić wartość do oryginalnej wartości. Aby dowiedzieć się więcej na temat transactons i cofania, zobacz [porady: użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
+-   **Cofanie zmian** cofnięcie transakcji, zdarzenia są wywoływane, ale nie są stosowane zasady. Jeśli reguła zmienia wartość i Cofnij tę zmianę, wartość jest resetowany do oryginalnej wartości podczas działania cofania. Gdy zdarzenie jest wywoływane, możesz ręcznie zmienić wartość do oryginalnej wartości. Aby dowiedzieć się więcej na temat transactons i cofania, zobacz [porady: użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
 
--   **Przekazywanie argumentów zdarzenia do zasad i zdarzenia** obu zdarzeń i reguły są przekazywane `EventArgs` parametr, który zawiera informacje o tym, jak model został zmieniony.
+-   **Przekazywanie argumentów zdarzeń do zasad i zdarzenia** obu zdarzeń, a zasady są przekazywane `EventArgs` parametr, który zawiera informacje o tym, jak model został zmieniony.
 
 ## <a name="see-also"></a>Zobacz też
 

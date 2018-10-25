@@ -28,12 +28,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eea8457c988e6ce1ff5f965a0154e8f2dbe87a2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2807fa9d0085c70e3336a5f9a0d66b28a775f4fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244429"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830603"
 ---
 # <a name="how-to-debug-native-dlls"></a>Porady: Debugowanie natywnych bibliotek DLLs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,29 +43,29 @@ ms.locfileid: "49244429"
   
  Podczas debugowania biblioteki DLL, należy uruchomić debugowanie od:  
   
--   Projekt umożliwiający utworzenie pliku wykonywalnego, który wywołuje bibliotekę DLL.  
+- Projekt umożliwiający utworzenie pliku wykonywalnego, który wywołuje bibliotekę DLL.  
   
- \- lub —  
+  \- lub —  
   
--   Projekt umożliwiający utworzenie biblioteki DLL, sam.  
+- Projekt umożliwiający utworzenie biblioteki DLL, sam.  
   
- Jeśli masz projekt umożliwiający utworzenie pliku wykonywalnego, rozpocząć debugowanie z tego projektu. Następnie można otworzyć pliku źródłowego dla biblioteki DLL i ustawiać punkty przerwania w tym pliku, mimo że nie jest częścią projektu użyty do utworzenia pliku wykonywalnego. Aby uzyskać więcej informacji, zobacz [punktów przerwania](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+  Jeśli masz projekt umożliwiający utworzenie pliku wykonywalnego, rozpocząć debugowanie z tego projektu. Następnie można otworzyć pliku źródłowego dla biblioteki DLL i ustawiać punkty przerwania w tym pliku, mimo że nie jest częścią projektu użyty do utworzenia pliku wykonywalnego. Aby uzyskać więcej informacji, zobacz [punktów przerwania](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
- Jeśli uruchomisz debugowanie z projektu, który tworzy bibliotekę DLL, należy określić plik wykonywalny, który chcesz użyć podczas debugowania biblioteki DLL.  
+  Jeśli uruchomisz debugowanie z projektu, który tworzy bibliotekę DLL, należy określić plik wykonywalny, który chcesz użyć podczas debugowania biblioteki DLL.  
   
 ### <a name="to-specify-an-executable-for-the-debug-session"></a>Aby określić plik wykonywalny dla sesji debugowania  
   
-1.  W **Eksploratora rozwiązań**, wybierz projekt, który tworzy bibliotekę DLL.  
+1. W **Eksploratora rozwiązań**, wybierz projekt, który tworzy bibliotekę DLL.  
   
-2.  Z **widoku** menu, wybierz**stron właściwości**.  
+2. Z **widoku** menu, wybierz**stron właściwości**.  
   
-3.  W **stron właściwości** po otwarciu okna dialogowego **właściwości konfiguracji** i wybierz polecenie **debugowanie** kategorii.  
+3. W **stron właściwości** po otwarciu okna dialogowego **właściwości konfiguracji** i wybierz polecenie **debugowanie** kategorii.  
   
-4.  W **polecenia** należy określić ścieżkę dla kontenera. Na przykład C:\Program Files\MyApplication\MYAPP. PLIK EXE.  
+4. W **polecenia** należy określić ścieżkę dla kontenera. Na przykład C:\Program Files\MyApplication\MYAPP. PLIK EXE.  
   
-5.  W **argumenty wiersza polecenia** wprowadź wszelkie wymagane argumenty dla pliku wykonywalnego.  
+5. W **argumenty wiersza polecenia** wprowadź wszelkie wymagane argumenty dla pliku wykonywalnego.  
   
- Jeśli nie określisz pliku wykonywalnego w _projektu_**stron właściwości** okno dialogowe [pliku wykonywalnego do debugowania sesji okno dialogowe](../debugger/executable-for-debugging-session-dialog-box.md) pojawia się podczas uruchamiania debugowania.  
+   Jeśli nie określisz pliku wykonywalnego w _projektu_**stron właściwości** okno dialogowe [pliku wykonywalnego do debugowania sesji okno dialogowe](../debugger/executable-for-debugging-session-dialog-box.md) pojawia się podczas uruchamiania debugowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zabezpieczenia debugera](../debugger/debugger-security.md)   

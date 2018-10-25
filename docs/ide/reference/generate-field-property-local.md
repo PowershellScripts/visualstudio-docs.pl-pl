@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cff83eb490f8012e8679dbd0b2c6a65d27f8e14
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 00e3f1d994c854bab319b6fec823fce213f4f2ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822790"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Generowanie pola, właściwości lub zmiennej lokalnej w programie Visual Studio
 
@@ -24,49 +24,49 @@ Dotyczy to generowanie kodu:
 
 - Visual Basic
 
-**Co:** umożliwia natychmiast generowania kodu dla poprzednio niezadeklarowany pola, właściwości lub lokalnego.
+**Co:** pozwala natychmiast generowania kodu dla wcześniej niezadeklarowany pola, właściwości lub lokalnego.
 
-**Kiedy:** wprowadzenie nowego pola, właściwości lub lokalnego podczas pisania i aby poprawnie zadeklarować, automatycznie.
+**Kiedy:** wprowadzenie nowego pola, właściwości lub lokalnej podczas wpisywania i aby poprawnie Zadeklaruj go automatycznie.
 
-**Dlaczego:** przed użyciem, jednak ta funkcja zostanie Generowanie deklaracji i wpisz automatycznie można zadeklarować pola, właściwości lub lokalnego.
+**Dlaczego:** można zadeklarować pola, właściwości lub lokalnej przed użyciem, jednak wygeneruje deklaracji i automatycznie wpisz tę funkcję.
 
-## <a name="how-to"></a>Porada
+## <a name="how-to"></a>Instrukcje
 
-1. Umieść kursor w wierszu przypadku czerwona falista. Czerwona falista wskazuje pola, lokalne lub właściwość, która jeszcze nie istnieje.
+1. Umieść kursor w wierszu gdzie znajduje się czerwona fala. Czerwona fala wskazuje pola, lokalnej lub właściwości, które jeszcze nie istnieje.
 
    - C#:
 
-    ![Wyróżniony kod C#](media/field-highlight-cs.png)
+       ![Wyróżniony kod C#](media/field-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Wyróżniony Kod VB](media/field-highlight-vb.png)
+       ![Wyróżniony Kod VB](media/field-highlight-vb.png)
 
-1. Następnie wykonaj jedną z następujących czynności:
+2. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
-     - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-     - Umieść kursor nad czerwona falista, a następnie kliknij przycisk ![Żarówka](media/bulb-cs.png) ikonę, która jest wyświetlana.
-     - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikonę, która jest wyświetlana na lewym marginesie, gdy kursor tekstu jest już w wierszu zawierającym czerwona falista.
+      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
+      - Umieść kursor nad czerwona fala, a następnie kliknij przycisk ![Żarówka](media/bulb-cs.png) ikona, który jest wyświetlany.
+      - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikona, który pojawia się na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym czerwona fala.
 
-    ![Generowanie podglądu pola/właściwości/lokalnego](media/field-preview-cs.png)
+      ![Generowanie pola/właściwości/elementu lokalnego (wersja zapoznawcza)](media/field-preview-cs.png)
 
-1. Wybierz jedną z opcji generowania z menu rozwijanego.
+3. Wybierz jedną z opcji generowania z menu rozwijanego.
 
    > [!TIP]
-   > Użyj **podgląd zmian** łącze umieszczone u dołu okna podglądu [aby zobaczyć wszystkie zmiany](../../ide/preview-changes.md) która zostanie podjęta przed dokonaniem wyboru.
+   > Użyj **podgląd zmian** link w dolnej części okna podglądu [Aby wyświetlić wszystkie zmiany](../../ide/preview-changes.md) , zostaną wprowadzone przed dokonaniem wyboru.
 
-   Pola, właściwości lub lokalnym jest tworzony z typem wywnioskować na podstawie jej użycia.
+   Pola, właściwości lub lokalny jest tworzony z typu wywnioskowane z jej użycie.
 
    - C#:
 
-      ![Generowanie wynik metody C#](media/field-result-cs.png)
+       ![Generowanie metody powodują C#](media/field-result-cs.png)
 
    - Visual Basic:
 
-      ![Generowanie wynik metody VB](media/field-result-vb.png)
+       ![Generowanie metody powodują VB](media/field-result-vb.png)
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31d27f90c0c898ff053401e186d0b153939bc760
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d67626778aefe67c5f0973da8b74fc0b7e776ebb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876155"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
-Zamienia bieżące symboli debugowania w strumieniu określone dane.  
+Zamienia bieżące symbole debugowania znajdującymi się na strumieniu określone dane.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -50,13 +50,13 @@ int ReplaceSymbols(
  [in] Unikatowy identyfikator modułu.  
   
  `pStream`  
- [in] Strumień danych, który zawiera nowe symbole.  
+ [in] Strumień danych, który zawiera symbole nowe.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::ReplaceSymbols(  

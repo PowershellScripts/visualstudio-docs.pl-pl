@@ -1,5 +1,5 @@
 ---
-title: 'Porady: zezwalanie kodu do uruchomienia w tle dokumentów z ograniczonymi uprawnieniami'
+title: 'Instrukcje: zezwalanie kodu do uruchamiania w tle dokumentów z ograniczonymi uprawnieniami'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,37 +20,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b02afb7008233c720feae179b4726f9958a44af
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 831be19e4be8c746e668b946fd170fc4c86def49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255289"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855854"
 ---
-# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Porady: zezwalanie kodu do uruchomienia w tle dokumentów z ograniczonymi uprawnieniami
-  Aby ograniczyć uprawnienia do dokumentu lub skoroszytu, można użyć funkcji zarządzania prawami do informacji (IRM) pakietu Microsoft Office. Domyślnie kod związany z ograniczeniami dokumentu Microsoft Office Word lub skoroszyt programu Microsoft Office Excel nie jest dozwolone do uruchomienia. Rozszerzenia kodu zarządzanego mogą uzyskiwać dostęp do modelu obiektów, a Twoje rozwiązanie będzie działać, można zmienić domyślny.  
+# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Instrukcje: zezwalanie kodu do uruchamiania w tle dokumentów z ograniczonymi uprawnieniami
+  Aby ograniczyć uprawnienia do dokumentu lub skoroszytu, można użyć funkcji zarządzania prawami do informacji (IRM) pakietu Microsoft Office. Domyślnie kod związany z ograniczeniami dokumentu Microsoft Office Word lub skoroszytu programu Microsoft Office Excel nie ma zezwolenia na uruchomienie. Domyślne można zmienić tak, aby rozszerzenia kodu zarządzanego mogą uzyskiwać dostęp do modelu obiektów, a rozwiązania będą działać.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Musi być Autor dokumentu lub skoroszytu lub mają dostęp Pełna kontrola, aby można było zmienić ustawienia uprawnień.  
+ Musi być autorem dokument lub skoroszyt, lub mieć uprawnienie Pełna kontrola, aby można było zmienić ustawienia uprawnień.  
   
-## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Aby umożliwić kodu do uruchomienia w tle dokumentów z ograniczonymi uprawnieniami  
+## <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Aby zezwolić na kod wymagany do uruchomienia w tle dokumentów z ograniczonymi uprawnieniami  
   
-1.  Otwórz dokument lub skoroszyt w Word czy Excel.  
+1. Otwórz dokument lub skoroszyt w programie Word lub Excel.  
   
-2.  Kliknij przycisk **pliku** karcie, wskaż pozycję **Prepare**, wskaż **Ogranicz uprawnienia**, a następnie kliknij przycisk **dostęp ograniczony**.  
+2. Kliknij przycisk **pliku** kartę, wskaż opcję **przygotowanie**, wskaż polecenie **Ogranicz uprawnienia**, a następnie kliknij przycisk **ograniczony dostęp**.  
   
-    > [!NOTE]  
-    >  Przy pierwszym użyciu monit o zainstalowanie klienta usługi Windows Rights Management. Po zainstalowaniu klienta może być konieczne Powtórz kroki.  
+   > [!NOTE]  
+   >  Przy pierwszym użyciu monit o zainstalowanie klienta usługi Windows Rights Management. Po zainstalowaniu klienta, może być konieczne czynności.  
   
-3.  W **uprawnienia** okno dialogowe, wybierz opcję **Ogranicz uprawnienia do tego dokumentu**, a następnie kliknij przycisk **więcej opcji**.  
+3. W **uprawnienie** okno dialogowe, wybierz opcję **Ogranicz uprawnienia do tego dokumentu**, a następnie kliknij przycisk **więcej opcji**.  
   
-4.  W obszarze **dodatkowe uprawnienia dla użytkowników**, wybierz pozycję **programowy dostęp do zawartości**.  
+4. W obszarze **dodatkowe uprawnienia dla użytkowników**, wybierz opcję **programowy dostęp do zawartości**.  
   
- Word czy Excel pozwoli na dostęp programistyczny do modelu obiektu.  
+   Word lub Excel będzie zezwalać na dostęp programowy do modelu obiektów.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Zarządzanie prawami do informacji i rozszerzenia kodu zarządzanego ― omówienie](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+ [Zarządzanie prawami do informacji i przegląd rozszerzeń kodu zarządzanego](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [Ochrona dokumentów w rozwiązaniach na poziomie dokumentu](../vsto/document-protection-in-document-level-solutions.md)   
  [Ochrona za pomocą hasła w dokumentach pakietu Office](../vsto/password-protection-on-office-documents.md)   
  [Projektowanie i tworzenie rozwiązań pakietu Office](../vsto/designing-and-creating-office-solutions.md)   

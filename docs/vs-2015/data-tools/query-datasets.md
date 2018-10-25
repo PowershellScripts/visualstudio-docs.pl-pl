@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 21c509656ab32c1532bb9523d0bbc3d8cf94f0a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6e1ff0cd6f77d2155ff4982ca02657a741c02d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890572"
 ---
 # <a name="query-datasets"></a>Tworzenie zapytań względem zestawów danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ Aby wyszukać konkretne rekordy w zestawie danych, użyj metody FindBy DataTable
   
  Poniższe przykłady kodu pokazują, jak poruszać się po relacjach w typizowanych zestawów danych. Użyj przykłady kodu wpisane <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) i wygenerowany `FindBy` *PrimaryKey* (`FindByCustomerID`) metody znajdź żądany wiersz i zwracać powiązanych rekordów. Przykłady skompilować i uruchomić się poprawnie, tylko wtedy, gdy masz:  
   
--   Wystąpienie zestawu danych o nazwie `NorthwindDataSet` z `Customers` tabeli.  
+- Wystąpienie zestawu danych o nazwie `NorthwindDataSet` z `Customers` tabeli.  
   
--   `Orders` Tabeli.  
+- `Orders` Tabeli.  
   
--   Relacji o nazwie `FK_Orders_Customers`dotyczące dwóch tabel dostępnych w zakresie kodu  
+- Relacji o nazwie `FK_Orders_Customers`dotyczące dwóch tabel dostępnych w zakresie kodu  
   
- Ponadto obie tabele muszą zostać wypełnione danymi dla rekordów do zwrócenia.  
+  Ponadto obie tabele muszą zostać wypełnione danymi dla rekordów do zwrócenia.  
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Aby powrócić podrzędne rekordy wybrany rekord nadrzędny  
   

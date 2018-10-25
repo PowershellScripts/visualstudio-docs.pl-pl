@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 990879ca953a2d43a6dee66424fdff2e2dd3c274
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fae4a6cc21264e62c5a12db79c8a937f0a366314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778373"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843538"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Wskazówki: Zmiana formatowania arkusza za pomocą formantów CheckBox
   W tym instruktażu przedstawiono podstawy używania pola wyboru w arkuszu kalkulacyjnym programu Microsoft Office Excel, aby zmienić formatowanie. Użyjesz narzędzi programistycznych pakietu Office w programie Visual Studio do tworzenia i dodać kod do projektu. Aby wyświetlić wynik, jako przykład ukończone, zobacz przykład formanty programu Excel w [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).  
@@ -72,21 +72,21 @@ ms.locfileid: "38778373"
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**applyBoldFont**|  
-    |**Tekst**|**Bold**|  
+    |**Text**|**Bold**|  
   
 5.  Przeciągnij drugie pole wyboru na lub w pobliżu komórki **B4** i Zmień następujące właściwości:  
   
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**applyItalicFont**|  
-    |**Tekst**|**Kursywa**|  
+    |**Text**|**Kursywa**|  
   
 6.  Przeciągnij trzecie pole wyboru na lub w pobliżu komórki **B6** i Zmień następujące właściwości:  
   
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**applyUnderlineFont**|  
-    |**Tekst**|**Podkreślenie**|  
+    |**Text**|**Podkreślenie**|  
   
 7.  Wybierz wszystkie formanty trzy pola wyboru podczas przechowywania **Ctrl** klucza.  
   
@@ -101,24 +101,24 @@ ms.locfileid: "38778373"
   
 #### <a name="to-add-text-to-a-namedrange-control"></a>Aby dodać tekst do kontrolki NamedRange  
   
-1.  Z **kontrolki programu Excel** kartę przybornika przeciągnij <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę komórki **B9**.  
+1. Z **kontrolki programu Excel** kartę przybornika przeciągnij <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolkę komórki **B9**.  
   
-2.  Upewnij się, że **$B$ 9** pojawia się w polu tekst do edycji, a tej komórki **B9** jest zaznaczone. Jeśli nie, kliknij pozycję komórki **B9** aby go zaznaczyć.  
+2. Upewnij się, że **$B$ 9** pojawia się w polu tekst do edycji, a tej komórki **B9** jest zaznaczone. Jeśli nie, kliknij pozycję komórki **B9** aby go zaznaczyć.  
   
-3.  Kliknij przycisk **OK**.  
+3. Kliknij przycisk **OK**.  
   
-4.  Komórka **B9** staje się zakres o nazwie `NamedRange1`.  
+4. Komórka **B9** staje się zakres o nazwie `NamedRange1`.  
   
-     Nie ma żadnego wskazania widoczne w arkuszu, ale `NamedRange1` pojawia się w **pola Nazwa podmiotu** (tuż nad arkusz po lewej stronie) gdy komórka **B9** jest zaznaczone.  
+    Nie ma żadnego wskazania widoczne w arkuszu, ale `NamedRange1` pojawia się w **pola Nazwa podmiotu** (tuż nad arkusz po lewej stronie) gdy komórka **B9** jest zaznaczone.  
   
-5.  Upewnij się, że **NamedRange1** jest widoczna w polu listy nazwy obiektu z **właściwości** okna i Zmień następujące właściwości:  
+5. Upewnij się, że **NamedRange1** jest widoczna w polu listy nazwy obiektu z **właściwości** okna i Zmień następujące właściwości:  
   
-    |Właściwość|Wartość|  
-    |--------------|-----------|  
-    |**Nazwa**|**textFont**|  
-    |**Wartość2**|**Kliknij pole wyboru, aby zmienić formatowanie tekstu.**|  
+   |Właściwość|Wartość|  
+   |--------------|-----------|  
+   |**Nazwa**|**textFont**|  
+   |**Wartość2**|**Kliknij pole wyboru, aby zmienić formatowanie tekstu.**|  
   
- Następnie należy napisać kod do formatowania tekstu, gdy opcja jest zaznaczona.  
+   Następnie należy napisać kod do formatowania tekstu, gdy opcja jest zaznaczona.  
   
 ## <a name="format-the-text-when-an-option-is-selected"></a>Sformatuj tekst po wybraniu opcji  
  W tej sekcji trzeba napisać kod, tak aby po użytkownik wybierze opcję formatowania, zmieni się na format tekstu w arkuszu.  

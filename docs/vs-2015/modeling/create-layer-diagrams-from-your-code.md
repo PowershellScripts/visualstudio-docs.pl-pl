@@ -17,12 +17,12 @@ caps.latest.revision: 64
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 21b014e4b13544a7fe2a672674bccc34320d0083
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 27fb58e0219dd05c623a553c65e577834ee4a05f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196134"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833489"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Tworzenie diagramów warstw z kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,9 +111,9 @@ Aby zwizualizować systemu oprogramowania logiczną architekturę wysokiego, Utw
 > [!NOTE]
 >  Zależności nie mogą być odtwarzane dla niektórych rodzajów artefaktów. Na przykład nie zostaną odtworzone żadne zależności z lub do warstwy, która jest połączona z plikiem tekstowym. Aby zobaczyć, które artefakty mają zależności można odtworzyć, otwórz menu skrótów dla jednej lub wielu warstw, a następnie wybierz **Wyświetl łącza**. W **Eksplorator warstw**, sprawdź **obsługuje walidację** kolumny. Zależności nie będą odtwarzane dla artefaktów, dla których ta kolumna zawiera **False**.  
   
--   Zaznacz jedną lub wiele warstw, otwórz menu skrótów dla zaznaczonej warstwy, a następnie wybierz **Wygeneruj zależności**.  
+- Zaznacz jedną lub wiele warstw, otwórz menu skrótów dla zaznaczonej warstwy, a następnie wybierz **Wygeneruj zależności**.  
   
- Zazwyczaj zobaczysz niektóre zależności, które nie powinny istnieć. Możesz edytować te zależności, aby dopasować je do zamierzonego projektu.  
+  Zazwyczaj zobaczysz niektóre zależności, które nie powinny istnieć. Możesz edytować te zależności, aby dopasować je do zamierzonego projektu.  
   
 ##  <a name="EditDependencies"></a> Edytowanie warstw i zależności w celu przedstawienia zamierzonego projektu  
  Do opisania zmian, które planujesz wprowadzić do systemu lub zamierzonej architektury, przeprowadź edycję diagramu warstwowego:  

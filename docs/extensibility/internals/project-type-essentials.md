@@ -13,59 +13,59 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e12081c34b57ae10e57352139e0e0cccf60b6b8
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: b7daf114bb31019a499bc17e287df923107ee1a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891573"
 ---
 # <a name="project-type-essentials"></a>Podstawowe informacje o typach projektów
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zawiera kilka typów projektów w językach takich jak [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umożliwia również tworzenie własnych typów projektów.  
   
  Jeśli chcesz tylko dodać niestandardowe polecenia, edytory lub okna [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], możesz to zrobić bez tworzenia nowego typu projektu. Więcej informacji znajduje się w następujących tematach:  
   
--   [Polecenia, menu i paski narzędzi](../../extensibility/internals/commands-menus-and-toolbars.md)  
+- [Polecenia, menu i paski narzędzi](../../extensibility/internals/commands-menus-and-toolbars.md)  
   
--   [Rozszerzenia edytora i usługi językowej](../../extensibility/editor-and-language-service-extensions.md)  
+- [Rozszerzenia edytora i usługi językowej](../../extensibility/editor-and-language-service-extensions.md)  
   
--   [Rozszerzanie i dostosowywanie okien narzędzi](../../extensibility/extending-and-customizing-tool-windows.md)  
+- [Rozszerzanie i dostosowywanie okien narzędzi](../../extensibility/extending-and-customizing-tool-windows.md)  
   
- Podobnie jeśli chcesz dostosować zachowanie podane [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] typów projektów, można zrobić za pomocą podtypy projektów. Aby uzyskać więcej informacji, zobacz [podtypy projektów](../../extensibility/internals/project-subtypes.md).  
+  Podobnie jeśli chcesz dostosować zachowanie podane [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] typów projektów, można zrobić za pomocą podtypy projektów. Aby uzyskać więcej informacji, zobacz [podtypy projektów](../../extensibility/internals/project-subtypes.md).  
   
- Należy utworzyć nowy typ projektu dla projektów, które są oparte na język inny niż [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Jeśli chcesz obsługiwać co najmniej jeden z następujących czynności:  
+  Należy utworzyć nowy typ projektu dla projektów, które są oparte na język inny niż [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] i [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] Jeśli chcesz obsługiwać co najmniej jeden z następujących czynności:  
   
--   Kompilacja  
+- Kompilacja  
   
--   wdrażania  
+- wdrażania  
   
--   Wiele konfiguracji  
+- Wiele konfiguracji  
   
--   Kontrola źródła  
+- Kontrola źródła  
   
--   Debugowanie  
+- Debugowanie  
   
--   Elementy projektu w Eksploratorze rozwiązań  
+- Elementy projektu w Eksploratorze rozwiązań  
   
--   **Otwórz projekt** lub **nowy projekt** okien dialogowych  
+- **Otwórz projekt** lub **nowy projekt** okien dialogowych  
   
--   Zagnieżdżanie projektów  
+- Zagnieżdżanie projektów  
   
--   Aby uzyskać więcej informacji na temat funkcji typów projektów zobacz następujące tematy:  
+- Aby uzyskać więcej informacji na temat funkcji typów projektów zobacz następujące tematy:  
   
--   Typy projektów są obiektami w VSPackage, które implementują zbiór interfejsów [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oczekuje. Jeśli używasz języka C# do tworzenia typów projektów, klasy projektu środowiska pakietu zarządzanego implementacji interfejsów wymaganych dla Ciebie i umożliwiają dziedziczą tę implementację. Aby uzyskać więcej informacji, zobacz [Implementowanie typu projektu (C#) przy użyciu środowiska pakietu zarządzanego](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
+- Typy projektów są obiektami w VSPackage, które implementują zbiór interfejsów [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oczekuje. Jeśli używasz języka C# do tworzenia typów projektów, klasy projektu środowiska pakietu zarządzanego implementacji interfejsów wymaganych dla Ciebie i umożliwiają dziedziczą tę implementację. Aby uzyskać więcej informacji, zobacz [Implementowanie typu projektu (C#) przy użyciu środowiska pakietu zarządzanego](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
   
--   Dla deweloperów C++ klas w bibliotece HierUtil działają w podobny sposób. Aby uzyskać więcej informacji, zobacz [nie w kompilacji: Używanie klas HierUtil7 projektu do zaimplementowania typu projektu (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+- Dla deweloperów C++ klas w bibliotece HierUtil działają w podobny sposób. Aby uzyskać więcej informacji, zobacz [nie w kompilacji: Używanie klas HierUtil7 projektu do zaimplementowania typu projektu (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
--   Typy projektów może obsługiwać danych innych niż pliki kodu źródłowego typowe, które są kompilowane do zestawu .exe lub .dll. Na przykład [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektów baz danych zawierają odwołania do skryptu i zapytania plików przechowywanych na dysku i dodanie poleceń do **Eksploratora rozwiązań** do wykonywania skryptów i zapytania względem bazy danych, ale projektów nie obsługują zachowanie kompilacji. Aby uzyskać więcej informacji, zobacz [otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md).  
+- Typy projektów może obsługiwać danych innych niż pliki kodu źródłowego typowe, które są kompilowane do zestawu .exe lub .dll. Na przykład [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektów baz danych zawierają odwołania do skryptu i zapytania plików przechowywanych na dysku i dodanie poleceń do **Eksploratora rozwiązań** do wykonywania skryptów i zapytania względem bazy danych, ale projektów nie obsługują zachowanie kompilacji. Aby uzyskać więcej informacji, zobacz [otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md).  
   
--   Typ projektu nie ma do korzystania z plików w ogóle. Na przykład typ projektu można przechowywać swoje dane w bazie danych. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnia typy projektów pełną kontrolę nad jak utrzymują danych dla projektów i elementów projektu. Aby uzyskać więcej informacji, zobacz [decyzje projektowe dotyczące typów projektu](../../extensibility/internals/project-type-design-decisions.md).  
+- Typ projektu nie ma do korzystania z plików w ogóle. Na przykład typ projektu można przechowywać swoje dane w bazie danych. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnia typy projektów pełną kontrolę nad jak utrzymują danych dla projektów i elementów projektu. Aby uzyskać więcej informacji, zobacz [decyzje projektowe dotyczące typów projektu](../../extensibility/internals/project-type-design-decisions.md).  
   
--   Typy projektów należy podać *fabryka projektu*, który jest obiektem, który tworzy wystąpienie projektu zawsze, gdy typ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest poinformował próbę otwarcia lub utworzenia projektu, który jest oparty na tego typu projektu. Aby uzyskać więcej informacji, zobacz [tworzenia projektu wystąpień, przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
+- Typy projektów należy podać *fabryka projektu*, który jest obiektem, który tworzy wystąpienie projektu zawsze, gdy typ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jest poinformował próbę otwarcia lub utworzenia projektu, który jest oparty na tego typu projektu. Aby uzyskać więcej informacji, zobacz [tworzenia projektu wystąpień, przy użyciu fabryk projektów](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
--   Typy projektów, należy podać szablonów projektów i elementów projektu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gdy użytkownicy tworzyć nowe projekty i dodawania nowych elementów do istniejących projektów przy użyciu szablonów. Aby uzyskać więcej informacji, zobacz [Dodawanie projektu i szablonów elementów projektów](../../extensibility/internals/adding-project-and-project-item-templates.md).  
+- Typy projektów, należy podać szablonów projektów i elementów projektu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gdy użytkownicy tworzyć nowe projekty i dodawania nowych elementów do istniejących projektów przy użyciu szablonów. Aby uzyskać więcej informacji, zobacz [Dodawanie projektu i szablonów elementów projektów](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
--   Typy projektów może obsługiwać wiele konfiguracji, takich jak Debug i Release. Użytkownicy mogą zmieniać różne konfiguracje projektu za pomocą stron właściwości, które należy podać. Aby uzyskać więcej informacji, zobacz [zarządzanie opcje konfiguracji](../../extensibility/internals/managing-configuration-options.md).  
+- Typy projektów może obsługiwać wiele konfiguracji, takich jak Debug i Release. Użytkownicy mogą zmieniać różne konfiguracje projektu za pomocą stron właściwości, które należy podać. Aby uzyskać więcej informacji, zobacz [zarządzanie opcje konfiguracji](../../extensibility/internals/managing-configuration-options.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wdrażanie typów projektów](../../extensibility/internals/deploying-project-types.md)

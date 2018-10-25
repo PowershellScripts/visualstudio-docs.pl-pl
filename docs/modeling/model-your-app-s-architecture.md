@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8a13d617ec523a3215e28668bca179aeace656f7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7322738fe1bd17944bc5d1883bc9c16e56cc59e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859123"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855094"
 ---
 # <a name="model-your-app39s-architecture"></a>Model aplikacji&#39;architektury s
 Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytkowników potrzebuje, możesz tworzyć modele w programie Visual Studio, jako część opisie ogólną strukturę i zachowanie systemu oprogramowania lub aplikacji. Przy użyciu modeli, może również opisywać wzorców, które są używane w całym projekcie. Modele te ułatwiają zrozumienie istniejącej architektury, omówiono zmiany i wyraźnie komunikacji zamiaru.
@@ -54,30 +54,30 @@ Aby mieć pewność, że z oprogramowania systemu lub aplikacji spełnia użytko
 
  Model wymagań zapewnia tych podstawowych rodzajów informacji:
 
--   Interfejs dostarczany. Interfejs dostarczany zawiera listę usług lub operacji, które system lub składnika, musisz podać swoim użytkownikom, czy są one ludzi użytkowników ani innych składników oprogramowania.
+- Interfejs dostarczany. Interfejs dostarczany zawiera listę usług lub operacji, które system lub składnika, musisz podać swoim użytkownikom, czy są one ludzi użytkowników ani innych składników oprogramowania.
 
--   Wymagane interfejsy. Interfejs wymagany zawiera listę usług lub operacji, które można użyć systemu lub składnika. W niektórych przypadkach można zaprojektować wszystkie te usługi w ramach własnego systemu. W innych przypadkach zwłaszcza wtedy, gdy projektujesz składnik, który może być łączone z innymi składnikami w wielu konfiguracjach wymaganego interfejsu zostaną ustawione przez zewnętrzne zagadnienia.
+- Wymagane interfejsy. Interfejs wymagany zawiera listę usług lub operacji, które można użyć systemu lub składnika. W niektórych przypadkach można zaprojektować wszystkie te usługi w ramach własnego systemu. W innych przypadkach zwłaszcza wtedy, gdy projektujesz składnik, który może być łączone z innymi składnikami w wielu konfiguracjach wymaganego interfejsu zostaną ustawione przez zewnętrzne zagadnienia.
 
--   Jakość wymagań dotyczących usług. Wydajności, bezpieczeństwa, niezawodności, a inne cele i ograniczenia, które muszą spełniać system.
+- Jakość wymagań dotyczących usług. Wydajności, bezpieczeństwa, niezawodności, a inne cele i ograniczenia, które muszą spełniać system.
 
- Modelu wymagań są zapisywane z punktu widzenia użytkowników w systemie, czy są one osób lub innymi składnikami oprogramowania. Nie wiedzą niczego wewnętrzne działanie systemu. Z drugiej strony w modelu architektury jest do opisywania wewnętrzne działanie i pokazują, jak spełniają użytkowników potrzebuje.
+  Modelu wymagań są zapisywane z punktu widzenia użytkowników w systemie, czy są one osób lub innymi składnikami oprogramowania. Nie wiedzą niczego wewnętrzne działanie systemu. Z drugiej strony w modelu architektury jest do opisywania wewnętrzne działanie i pokazują, jak spełniają użytkowników potrzebuje.
 
- Oddzieleniu wymagań i modeli architektury jest przydatne, ponieważ ułatwia celu omówienia ich wymagań z użytkownikami. Pomaga również Refaktoryzuj projektu i należy wziąć pod uwagę alternatywnych architektury podczas przechowywania wymagania bez zmian.
+  Oddzieleniu wymagań i modeli architektury jest przydatne, ponieważ ułatwia celu omówienia ich wymagań z użytkownikami. Pomaga również Refaktoryzuj projektu i należy wziąć pod uwagę alternatywnych architektury podczas przechowywania wymagania bez zmian.
 
- Ilość szczegółów, które należy umieścić w wymagania lub architektury model zależy od tego, skali projektu oraz wielkość i stopień rozproszenia zespołu. Małego zespołu nad projektem krótki mogą zostać przekazane żadne dodatkowe niż powstawać diagramu klas koncepcji biznesowych i niektórych wzorców projektowych; duży projekt rozproszone na więcej niż jeden region należałoby znacznie bardziej szczegółowo.
+  Ilość szczegółów, które należy umieścić w wymagania lub architektury model zależy od tego, skali projektu oraz wielkość i stopień rozproszenia zespołu. Małego zespołu nad projektem krótki mogą zostać przekazane żadne dodatkowe niż powstawać diagramu klas koncepcji biznesowych i niektórych wzorców projektowych; duży projekt rozproszone na więcej niż jeden region należałoby znacznie bardziej szczegółowo.
 
 ## <a name="BigDecisions"></a> Wzorce architektury
  Na wczesnym etapie projektowania należy wybrać technologie główne i elementów, od których zależy od projektu. Obszary, w których należy te opcje są następujące:
 
--   Podstawowa Wybór technologii, takich jak wybrać między bazą danych i systemu plików i wybór między aplikację sieciową i klienta sieci web i tak dalej.
+- Podstawowa Wybór technologii, takich jak wybrać między bazą danych i systemu plików i wybór między aplikację sieciową i klienta sieci web i tak dalej.
 
--   Opcje struktury, takie jak wybór między Windows Workflow Foundation lub ADO.NET Entity Framework.
+- Opcje struktury, takie jak wybór między Windows Workflow Foundation lub ADO.NET Entity Framework.
 
--   Wybór metody integracji na przykład między usługi enterprise service bus lub kanał point-to-point.
+- Wybór metody integracji na przykład między usługi enterprise service bus lub kanał point-to-point.
 
- Te opcje są często określane przez jakości wymagań, takie jak skalowalność i elastyczność i wprowadzenia szczegółowe wymagania są znane. W dużym systemie konfiguracji sprzętu i oprogramowania są silnie powiązane ze sobą.
+  Te opcje są często określane przez jakości wymagań, takie jak skalowalność i elastyczność i wprowadzenia szczegółowe wymagania są znane. W dużym systemie konfiguracji sprzętu i oprogramowania są silnie powiązane ze sobą.
 
- Wybrane opcje, które wpływają na sposób używania i interpretować architektury model. Na przykład w systemie, który korzysta z bazy danych, skojarzenia na diagramie klasy może reprezentować relacji lub klucze obce w bazie danych, natomiast w systemie, który jest oparty na plikach XML, skojarzenia może wskazywać odsyłaczy, które używają języka XPath. W rozproszonym systemie wiadomości w diagramie sekwencji może reprezentować komunikatów o komunikacji sieciowej; w przypadku aplikacji niezależna reprezentują wywołania funkcji.
+  Wybrane opcje, które wpływają na sposób używania i interpretować architektury model. Na przykład w systemie, który korzysta z bazy danych, skojarzenia na diagramie klasy może reprezentować relacji lub klucze obce w bazie danych, natomiast w systemie, który jest oparty na plikach XML, skojarzenia może wskazywać odsyłaczy, które używają języka XPath. W rozproszonym systemie wiadomości w diagramie sekwencji może reprezentować komunikatów o komunikacji sieciowej; w przypadku aplikacji niezależna reprezentują wywołania funkcji.
 
 ## <a name="Patterns"></a> Wzorce projektowe
  Wzorzec projektowy jest konspektu sposobu projektowania danego aspekt tego oprogramowania, zwłaszcza taki, który występuje w różnych częściach systemu. Przyjmując jednolite podejście w projekcie, można zmniejszyć koszt projektu, zapewnienia spójności interfejsu użytkownika i zmniejszyć koszt zrozumienie i zmieniania kodu.

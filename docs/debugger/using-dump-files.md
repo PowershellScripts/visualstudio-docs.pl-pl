@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c346c74b88f899101d30a0ecfb3a46544093a596
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847863"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Za pomocą programu Visual Studio przy użyciu plików zrzutu
 Pliki zrzutu ze stertami lub bez nich; Tworzenie pliku zrzutu; Otwieranie pliku zrzutu; Znajdowanie plików binarnych, w pliku pdb i pliku źródłowego dla pliku zrzutu.
@@ -64,11 +64,11 @@ Pliki zrzutu ze stertami lub bez nich; Tworzenie pliku zrzutu; Otwieranie pliku 
 ##  <a name="BKMK_Create_a_dump_file"></a> Tworzenie pliku zrzutu
  Aby utworzyć plik zrzutu z programu Visual Studio:
 
--   Podczas debugowania procesu w Visual Studio, można zapisać plik zrzutu po zatrzymaniu debugera w sytuacji wyjątku lub w punkcie przerwania. Wybierz **debugowania**, następnie **Zapisz zrzut jako**, następnie **debugowania**. W **Zapisz zrzut jako** dialogowym **Zapisz jako typ** listy, możesz wybrać **minizrzutu** lub **minizrzutu ze stertą** (ustawienie domyślne).
+- Podczas debugowania procesu w Visual Studio, można zapisać plik zrzutu po zatrzymaniu debugera w sytuacji wyjątku lub w punkcie przerwania. Wybierz **debugowania**, następnie **Zapisz zrzut jako**, następnie **debugowania**. W **Zapisz zrzut jako** dialogowym **Zapisz jako typ** listy, możesz wybrać **minizrzutu** lub **minizrzutu ze stertą** (ustawienie domyślne).
 
--   Za pomocą [debugowanie just in Time](../debugger/just-in-time-debugging-in-visual-studio.md) włączone, można dołączyć debugera do awarii procesu, który działa poza debugera i następnie zapisać plik zrzutu. Zobacz [dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- Za pomocą [debugowanie just in Time](../debugger/just-in-time-debugging-in-visual-studio.md) włączone, można dołączyć debugera do awarii procesu, który działa poza debugera i następnie zapisać plik zrzutu. Zobacz [dołączanie do uruchomionego procesu](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 
- Można również tworzyć pliki zrzutu za pomocą dowolnego programu, który obsługuje format minizrzutu systemu Windows. Na przykład **Procdump** narzędzie wiersza polecenia z [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) można tworzyć pliki zrzutu awaryjnego procesów na podstawie wyzwalaczy lub na żądanie. Zobacz [wymagania i ograniczenia](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) w tym temacie, aby uzyskać dodatkowe informacje na temat korzystania z innych narzędzi do tworzenia plików zrzutu.
+  Można również tworzyć pliki zrzutu za pomocą dowolnego programu, który obsługuje format minizrzutu systemu Windows. Na przykład **Procdump** narzędzie wiersza polecenia z [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) można tworzyć pliki zrzutu awaryjnego procesów na podstawie wyzwalaczy lub na żądanie. Zobacz [wymagania i ograniczenia](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) w tym temacie, aby uzyskać dodatkowe informacje na temat korzystania z innych narzędzi do tworzenia plików zrzutu.
 
 ##  <a name="BKMK_Open_a_dump_file"></a> Otwieranie pliku zrzutu
 
@@ -85,31 +85,31 @@ Pliki zrzutu ze stertami lub bez nich; Tworzenie pliku zrzutu; Otwieranie pliku 
 ##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Znajdowanie plików binarnych, plików symboli (.pdb) i plików źródłowych
  Aby użyć wszystkich funkcji programu Visual Studio do debugowania pliku zrzutu, potrzebny jest dostęp do następujących elementów:
 
--   Plik .exe, dla którego zrobiono zrzut, i inne pliki binarne (biblioteki DLL itd.), które były używane w procesie zrzutu.
+- Plik .exe, dla którego zrobiono zrzut, i inne pliki binarne (biblioteki DLL itd.), które były używane w procesie zrzutu.
 
-     Jeśli debugujesz zrzut z danymi sterty, Visual Studio może poradzić sobie z brakującymi plikami binarnymi dla niektórych modułów, ale musi mieć pliki binarne dla wystarczającej liczby modułów, aby generować prawidłowe stosy wywołań. Program Visual Studio zawiera moduły macierzyste w pliku zrzutu ze stertą.
+   Jeśli debugujesz zrzut z danymi sterty, Visual Studio może poradzić sobie z brakującymi plikami binarnymi dla niektórych modułów, ale musi mieć pliki binarne dla wystarczającej liczby modułów, aby generować prawidłowe stosy wywołań. Program Visual Studio zawiera moduły macierzyste w pliku zrzutu ze stertą.
 
--   Pliki symboli (.pdb) dla pliku .exe i innych plików binarnych.
+- Pliki symboli (.pdb) dla pliku .exe i innych plików binarnych.
 
--   Pliki źródłowe dla modułów, które cię interesują.
+- Pliki źródłowe dla modułów, które cię interesują.
 
-     Plik wykonywalny i pliki .pdb muszą dokładnie odpowiadać wersji i kompilacji plików używanych podczas tworzenia zrzutu.
+   Plik wykonywalny i pliki .pdb muszą dokładnie odpowiadać wersji i kompilacji plików używanych podczas tworzenia zrzutu.
 
-     Można debugować z użyciem deasemblacji modułów, jeśli nie możesz znaleźć plików źródłowych
+   Można debugować z użyciem deasemblacji modułów, jeśli nie możesz znaleźć plików źródłowych
 
- **Domyślne ścieżki wyszukiwania dla plików wykonywalnych**
+  **Domyślne ścieżki wyszukiwania dla plików wykonywalnych**
 
- Program Visual Studio automatycznie przeszukuje następujące lokalizacje plików wykonywalnych, które nie są uwzględnione w pliku zrzutu:
+  Program Visual Studio automatycznie przeszukuje następujące lokalizacje plików wykonywalnych, które nie są uwzględnione w pliku zrzutu:
 
-1.  Katalog zawierający plik zrzutu.
+1. Katalog zawierający plik zrzutu.
 
-2.  Ścieżka modułu, który jest określony w pliku zrzutu. Jest to ścieżka modułu na komputerze, na który pobrano zrzut.
+2. Ścieżka modułu, który jest określony w pliku zrzutu. Jest to ścieżka modułu na komputerze, na który pobrano zrzut.
 
-3.  Ścieżki symboli określone w **debugowanie**, **opcje**, **symbole** stronie programu Visual Studio **narzędzia**, **opcje**  okno dialogowe. Do wyszukiwania na tej stronie można dodać więcej lokalizacji.
+3. Ścieżki symboli określone w **debugowanie**, **opcje**, **symbole** stronie programu Visual Studio **narzędzia**, **opcje**  okno dialogowe. Do wyszukiwania na tej stronie można dodać więcej lokalizacji.
 
- **Przy użyciu nie znaleziono pliku binarnego > Symbol > Źródło strony**
+   **Przy użyciu nie znaleziono pliku binarnego > Symbol > Źródło strony**
 
- Jeśli program Visual Studio nie może znaleźć plików potrzebnych do debugowania modułu w zrzucie, wyświetlana jest odpowiednia strona (**nie znaleziono pliku binarnego**, **nie znaleziono symboli**, lub **nie znaleziono źródła**). Strony te zawierają szczegółowe informacje o przyczynie problemu i zawierają łącza do czynności, które mogą pomóc w określeniu poprawnej lokalizacji plików. Zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+   Jeśli program Visual Studio nie może znaleźć plików potrzebnych do debugowania modułu w zrzucie, wyświetlana jest odpowiednia strona (**nie znaleziono pliku binarnego**, **nie znaleziono symboli**, lub **nie znaleziono źródła**). Strony te zawierają szczegółowe informacje o przyczynie problemu i zawierają łącza do czynności, które mogą pomóc w określeniu poprawnej lokalizacji plików. Zobacz [Określ symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="see-also"></a>Zobacz także
 

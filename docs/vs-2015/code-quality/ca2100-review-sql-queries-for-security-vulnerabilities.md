@@ -21,15 +21,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7d39d324942348050d05dfb5273a9b4075747b1c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c77e448a492a64e3bbdf0f86809cdf82d7fd72fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877403"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Należy przejrzeć zapytania SQL w poszukiwaniu luk w zabezpieczeniach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
@@ -43,25 +44,25 @@ ms.locfileid: "49206508"
 ## <a name="rule-description"></a>Opis reguły
  Zasada ta zakłada, że argument ciągu zawiera dane wejściowe użytkownika. Ciąg polecenia SQL zbudowany z danych wejściowych użytkownika jest narażony na ataki przez wstrzyknięcie kodu SQL. W przypadku ataku polegającego na iniekcji SQL złośliwy użytkownik dostarcza dane wejściowe, które zmienia Projekt kwerendy w celu podjęcia próby uszkodzić lub uzyskania nieautoryzowanego dostępu do podstawowej bazy danych. Typowe techniki to m.in. wprowadzanie pojedynczy cudzysłów lub apostrof, czyli Ogranicznik ciągu literału SQL; dwa łączniki, które oznacza Komentarz SQL; i średnikiem, co oznacza, że następujące nowe polecenie. Jeśli dane wejściowe użytkownika musi należeć do zapytania, użyj jednej z następujących pozycji, wymienione w kolejności skuteczności, aby zmniejszyć ryzyko ataków.
 
--   Użyj procedury składowanej.
+- Użyj procedury składowanej.
 
--   Przy użyciu parametrów poleceń sparametryzowanych.
+- Przy użyciu parametrów poleceń sparametryzowanych.
 
--   Weryfikowanie danych wejściowych użytkownika, zarówno dla typu i zawartości, przed utworzeniem ciągu polecenia.
+- Weryfikowanie danych wejściowych użytkownika, zarówno dla typu i zawartości, przed utworzeniem ciągu polecenia.
 
- Następujące [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] typy implementują <xref:System.Data.IDbCommand.CommandText%2A> właściwość lub ustaw właściwość przy użyciu argumentu ciągu konstruktorów.
+  Następujące [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] typy implementują <xref:System.Data.IDbCommand.CommandText%2A> właściwość lub ustaw właściwość przy użyciu argumentu ciągu konstruktorów.
 
--   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> i <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
+- <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> i <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> i <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> i <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> i <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> i <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
 
--   [System.Data.SqlServerCe.SqlCeCommand] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) i [System.Data.SqlServerCe.SqlCeDataAdapter] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
+- [System.Data.SqlServerCe.SqlCeCommand] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) i [System.Data.SqlServerCe.SqlCeDataAdapter] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
 
--   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> i <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
+- <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> i <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
- Należy zauważyć, że zasada ta jest naruszona stosowania metody ToString typu jest jawnie lub niejawnie do konstruowania ciągu zapytania. Oto przykład.
+  Należy zauważyć, że zasada ta jest naruszona stosowania metody ToString typu jest jawnie lub niejawnie do konstruowania ciągu zapytania. Oto przykład.
 
 ```
 int x = 10;

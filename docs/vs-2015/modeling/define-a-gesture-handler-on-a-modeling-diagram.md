@@ -15,12 +15,12 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26a60151d89ffaa89338601c4992f9c2f41b099a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812975"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definiowanie procedury obsługi gestów na diagramie modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,167 +43,167 @@ W programie Visual Studio można zdefiniować polecenia, które są wykonywane, 
   
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>Aby utworzyć obsługę gestu w jego własnym VSIX  
   
-1.  W **nowy projekt** dialogowego **projekty modelowania**, wybierz opcję **rozszerzenia gestu**.  
+1. W **nowy projekt** dialogowego **projekty modelowania**, wybierz opcję **rozszerzenia gestu**.  
   
-2.  Otwórz **.cs** plik w nowym projekcie i Modyfikuj `GestureExtension` klasę, aby wdrożyć swój plik obsługi gestów.  
+2. Otwórz **.cs** plik w nowym projekcie i Modyfikuj `GestureExtension` klasę, aby wdrożyć swój plik obsługi gestów.  
   
-     Aby uzyskać więcej informacji, zobacz [Implementowanie obsługi gest](#Implementing).  
+    Aby uzyskać więcej informacji, zobacz [Implementowanie obsługi gest](#Implementing).  
   
-3.  Przetestuj obsługę gestu naciskając klawisz F5. Aby uzyskać więcej informacji, zobacz [wykonywanie obsługi gestu](#Executing).  
+3. Przetestuj obsługę gestu naciskając klawisz F5. Aby uzyskać więcej informacji, zobacz [wykonywanie obsługi gestu](#Executing).  
   
-4.  Instalowanie obsługi gestu na innym komputerze przez skopiowanie pliku **bin\\\*\\\*.vsix** utworzonego w projekcie. Aby uzyskać więcej informacji, zobacz [Instalowanie i odinstalowywanie rozszerzenia](#Installing).  
+4. Instalowanie obsługi gestu na innym komputerze przez skopiowanie pliku **bin\\\*\\\*.vsix** utworzonego w projekcie. Aby uzyskać więcej informacji, zobacz [Instalowanie i odinstalowywanie rozszerzenia](#Installing).  
   
- W tym miejscu jest alternatywna procedura:  
+   W tym miejscu jest alternatywna procedura:  
   
 #### <a name="to-create-a-separate-class-library-dll-project-for-the-gesture-handler"></a>Aby utworzyć projekt osobnej klasy biblioteki (DLL) dla obsługi gestu  
   
-1.  Utwórz projekt biblioteki klas w nowym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania, lub w istniejącym rozwiązaniu.  
+1. Utwórz projekt biblioteki klas w nowym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania, lub w istniejącym rozwiązaniu.  
   
-    1.  Na **pliku** menu, wybierz **New**, **projektu**.  
+   1.  Na **pliku** menu, wybierz **New**, **projektu**.  
   
-    2.  W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, następnie w środkowej kolumnie Wybierz **biblioteki klas**.  
+   2.  W obszarze **zainstalowane szablony**, rozwiń węzeł **Visual C#** lub **języka Visual Basic**, następnie w środkowej kolumnie Wybierz **biblioteki klas**.  
   
-2.  Dodaj następujące odwołania do projektu.  
+2. Dodaj następujące odwołania do projektu.  
   
-     `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
+    `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
-     `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]`  
+    `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility`  
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility`  
   
-     `Microsoft.VisualStudio.Uml.Interfaces`  
+    `Microsoft.VisualStudio.Uml.Interfaces`  
   
-     `System.ComponentModel.Composition`  
+    `System.ComponentModel.Composition`  
   
-     `System.Windows.Forms`  
+    `System.Windows.Forms`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` — Jest to potrzebne tylko w przypadku rozszerzenia diagramów warstwy. Aby uzyskać więcej informacji, zobacz [rozszerzone diagramy warstw](../modeling/extend-layer-diagrams.md).  
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` — Jest to potrzebne tylko w przypadku rozszerzenia diagramów warstwy. Aby uzyskać więcej informacji, zobacz [rozszerzone diagramy warstw](../modeling/extend-layer-diagrams.md).  
   
-3.  Dodaj plik klasy do projektu i ustawi jego zawartość do następującego kodu.  
+3. Dodaj plik klasy do projektu i ustawi jego zawartość do następującego kodu.  
   
-    > [!NOTE]
-    >  Zmień nazwę przestrzeni nazw i klasy, zgodnie z preferencjami.  
+   > [!NOTE]
+   >  Zmień nazwę przestrzeni nazw i klasy, zgodnie z preferencjami.  
   
-    ```  
-    using System.ComponentModel.Composition;  
-    using System.Linq;  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Modeling.Diagrams;  
-    using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;  
-    using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
-    using Microsoft.VisualStudio.Uml.AuxiliaryConstructs;  
-    using Microsoft.VisualStudio.Modeling;  
-    using Microsoft.VisualStudio.Uml.Classes;  
-    // ADD other UML namespaces if required  
+   ```  
+   using System.ComponentModel.Composition;  
+   using System.Linq;  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Modeling.Diagrams;  
+   using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;  
+   using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
+   using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
+   using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
+   using Microsoft.VisualStudio.Uml.AuxiliaryConstructs;  
+   using Microsoft.VisualStudio.Modeling;  
+   using Microsoft.VisualStudio.Uml.Classes;  
+   // ADD other UML namespaces if required  
   
-    namespace MyGestureHandler // CHANGE  
-    {  
-      // DELETE any of these attributes if the handler  
-      // should not work with some types of diagram.  
-      [ClassDesignerExtension]  
-      [ActivityDesignerExtension]  
-      [ComponentDesignerExtension]  
-      [SequenceDesignerExtension]  
-      [UseCaseDesignerExtension]  
-      // [LayerDesignerExtension]  
+   namespace MyGestureHandler // CHANGE  
+   {  
+     // DELETE any of these attributes if the handler  
+     // should not work with some types of diagram.  
+     [ClassDesignerExtension]  
+     [ActivityDesignerExtension]  
+     [ComponentDesignerExtension]  
+     [SequenceDesignerExtension]  
+     [UseCaseDesignerExtension]  
+     // [LayerDesignerExtension]  
   
-      // Gesture handlers must export IGestureExtension:  
-      [Export(typeof(IGestureExtension))]  
-      // CHANGE class name  
-      public class MyGesture1 : IGestureExtension  
-      {  
-        [Import]  
-        public IDiagramContext DiagramContext { get; set; }  
+     // Gesture handlers must export IGestureExtension:  
+     [Export(typeof(IGestureExtension))]  
+     // CHANGE class name  
+     public class MyGesture1 : IGestureExtension  
+     {  
+       [Import]  
+       public IDiagramContext DiagramContext { get; set; }  
   
-        /// <summary>  
-        /// Called when the user double-clicks on the diagram  
-        /// </summary>  
-        /// <param name="targetElement"></param>  
-        /// <param name="diagramPointEventArgs"></param>  
-        public void OnDoubleClick(ShapeElement targetElement, DiagramPointEventArgs diagramPointEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       /// <summary>  
+       /// Called when the user double-clicks on the diagram  
+       /// </summary>  
+       /// <param name="targetElement"></param>  
+       /// <param name="diagramPointEventArgs"></param>  
+       public void OnDoubleClick(ShapeElement targetElement, DiagramPointEventArgs diagramPointEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
   
-          // Get the target shape, if any. Null if the target is the diagram.  
-          IShape targetIShape = targetElement.CreateIShape();  
+         // Get the target shape, if any. Null if the target is the diagram.  
+         IShape targetIShape = targetElement.CreateIShape();  
   
-          // Do something...  
-        }  
+         // Do something...  
+       }  
   
-        /// <summary>  
-        /// Called repeatedly when the user drags from anywhere on the screen.  
-        /// Return value should indicate whether a drop here is allowed.  
-        /// </summary>  
-        /// <param name="targetMergeElement">References the element to be dropped on.</param>  
-        /// <param name="diagramDragEventArgs">References the element to be dropped.</param>  
-        /// <returns></returns>  
-        public bool CanDragDrop(ShapeElement targetMergeElement, DiagramDragEventArgs diagramDragEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       /// <summary>  
+       /// Called repeatedly when the user drags from anywhere on the screen.  
+       /// Return value should indicate whether a drop here is allowed.  
+       /// </summary>  
+       /// <param name="targetMergeElement">References the element to be dropped on.</param>  
+       /// <param name="diagramDragEventArgs">References the element to be dropped.</param>  
+       /// <returns></returns>  
+       public bool CanDragDrop(ShapeElement targetMergeElement, DiagramDragEventArgs diagramDragEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
   
-          // Get the target element, if any. Null if the target is the diagram.  
-          IShape targetIShape = targetMergeElement.CreateIShape();  
+         // Get the target element, if any. Null if the target is the diagram.  
+         IShape targetIShape = targetMergeElement.CreateIShape();  
   
-          // This example allows drag of any UML elements.  
-          return GetModelElementsFromDragEvent(diagramDragEventArgs).Count() > 0;  
-        }  
+         // This example allows drag of any UML elements.  
+         return GetModelElementsFromDragEvent(diagramDragEventArgs).Count() > 0;  
+       }  
   
-        /// <summary>  
-        /// Execute the action to be performed on the drop.  
-        /// </summary>  
-        /// <param name="targetDropElement"></param>  
-        /// <param name="diagramDragEventArgs"></param>  
-        public void OnDragDrop(ShapeElement targetDropElement, DiagramDragEventArgs diagramDragEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
-        }  
+       /// <summary>  
+       /// Execute the action to be performed on the drop.  
+       /// </summary>  
+       /// <param name="targetDropElement"></param>  
+       /// <param name="diagramDragEventArgs"></param>  
+       public void OnDragDrop(ShapeElement targetDropElement, DiagramDragEventArgs diagramDragEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       }  
   
-        /// <summary>  
-        /// Retrieves UML IElements from drag arguments.  
-        /// Works for drags from UML diagrams.  
-        /// </summary>  
-        private IEnumerable<IElement> GetModelElementsFromDragEvent  
-                (DiagramDragEventArgs dragEvent)  
-        {  
-          //ElementGroupPrototype is the container for  
-          //dragged and copied elements and toolbox items.  
-          ElementGroupPrototype prototype =  
-             dragEvent.Data.  
-             GetData(typeof(ElementGroupPrototype))  
-                  as ElementGroupPrototype;  
-          // Locate the originals in the implementation store.  
-          IElementDirectory implementationDirectory =  
-             dragEvent.DiagramClientView.Diagram.Store.ElementDirectory;  
+       /// <summary>  
+       /// Retrieves UML IElements from drag arguments.  
+       /// Works for drags from UML diagrams.  
+       /// </summary>  
+       private IEnumerable<IElement> GetModelElementsFromDragEvent  
+               (DiagramDragEventArgs dragEvent)  
+       {  
+         //ElementGroupPrototype is the container for  
+         //dragged and copied elements and toolbox items.  
+         ElementGroupPrototype prototype =  
+            dragEvent.Data.  
+            GetData(typeof(ElementGroupPrototype))  
+                 as ElementGroupPrototype;  
+         // Locate the originals in the implementation store.  
+         IElementDirectory implementationDirectory =  
+            dragEvent.DiagramClientView.Diagram.Store.ElementDirectory;  
   
-          return prototype.ProtoElements.Select(  
-            prototypeElement =>  
-            {  
-              ModelElement element = implementationDirectory  
-                .FindElement(prototypeElement.ElementId);  
-              ShapeElement shapeElement = element as ShapeElement;  
-              if (shapeElement != null)  
-              {  
-                // Dragged from a diagram.  
-                return shapeElement.ModelElement as IElement;  
-              }  
-              else  
-              {  
-                // Dragged from UML Model Explorer.  
-                return element as IElement;  
-              }  
-            });  
-        }  
+         return prototype.ProtoElements.Select(  
+           prototypeElement =>  
+           {  
+             ModelElement element = implementationDirectory  
+               .FindElement(prototypeElement.ElementId);  
+             ShapeElement shapeElement = element as ShapeElement;  
+             if (shapeElement != null)  
+             {  
+               // Dragged from a diagram.  
+               return shapeElement.ModelElement as IElement;  
+             }  
+             else  
+             {  
+               // Dragged from UML Model Explorer.  
+               return element as IElement;  
+             }  
+           });  
+       }  
   
-      }  
-    }  
+     }  
+   }  
   
-    ```  
+   ```  
   
-     Aby uzyskać więcej informacji o tym, co umieścić w metodach, zobacz [Implementowanie obsługi gest](#Implementing).  
+    Aby uzyskać więcej informacji o tym, co umieścić w metodach, zobacz [Implementowanie obsługi gest](#Implementing).  
   
- Należy dodać polecenie menu do projektu VSIX, który działa jako kontener dla polecenia instalowania. Jeśli chcesz, możesz dodać inne składniki w tym samym VSIX.  
+   Należy dodać polecenie menu do projektu VSIX, który działa jako kontener dla polecenia instalowania. Jeśli chcesz, możesz dodać inne składniki w tym samym VSIX.  
   
 #### <a name="to-add-a-separate-gesture-handler-to-a-vsix-project"></a>Aby dodać oddzielnych gestów do projektu VSIX  
   
@@ -238,25 +238,25 @@ W programie Visual Studio można zdefiniować polecenia, które są wykonywane, 
   
 #### <a name="to-test-the-gesture-handler"></a>Testowanie obsługi gestu  
   
-1.  Naciśnij klawisz **F5**, lub na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.  
+1. Naciśnij klawisz **F5**, lub na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.  
   
-     Eksperymentalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpoczyna się.  
+    Eksperymentalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpoczyna się.  
   
-     **Rozwiązywanie problemów z**: Jeśli nowy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie można uruchomić:  
+    **Rozwiązywanie problemów z**: Jeśli nowy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie można uruchomić:  
   
-    -   Jeśli masz więcej niż jeden projekt, upewnij się, że projekt VSIX jest ustawiony jako projekt startowy rozwiązania.  
+   -   Jeśli masz więcej niż jeden projekt, upewnij się, że projekt VSIX jest ustawiony jako projekt startowy rozwiązania.  
   
-    -   W Eksploratorze rozwiązań w menu skrótów uruchamiania lub tylko projektu, wybierz polecenie Właściwości. W edytorze właściwości projektu, wybierz **debugowania** kartę. Upewnij się, że ciąg w **uruchomienia programu zewnętrznego** pole jest pełna nazwa ścieżki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zazwyczaj:  
+   -   W Eksploratorze rozwiązań w menu skrótów uruchamiania lub tylko projektu, wybierz polecenie Właściwości. W edytorze właściwości projektu, wybierz **debugowania** kartę. Upewnij się, że ciąg w **uruchomienia programu zewnętrznego** pole jest pełna nazwa ścieżki [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], zazwyczaj:  
   
-         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
+        `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  W eksperymentalnym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], Otwórz lub Utwórz projekt modelowania i otworzyć lub utworzyć diagram modelowania. Użyj diagramu, który należy do jednego z typów wymienionych w atrybucie klasy programu obsługi gestu.  
+2. W eksperymentalnym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], Otwórz lub Utwórz projekt modelowania i otworzyć lub utworzyć diagram modelowania. Użyj diagramu, który należy do jednego z typów wymienionych w atrybucie klasy programu obsługi gestu.  
   
-3.  Kliknij dwukrotnie dowolne miejsce na diagramie. Program obsługi dwukrotnego kliknięcia powinien zostać wywołany.  
+3. Kliknij dwukrotnie dowolne miejsce na diagramie. Program obsługi dwukrotnego kliknięcia powinien zostać wywołany.  
   
-4.  Przeciągnij element z Eksploratora UML na diagram. Program obsługi przeciągnięcia powinien zostać wywołany.  
+4. Przeciągnij element z Eksploratora UML na diagram. Program obsługi przeciągnięcia powinien zostać wywołany.  
   
- **Rozwiązywanie problemów z**: Jeśli program obsługi gestu nie działa, upewnij się, że:  
+   **Rozwiązywanie problemów z**: Jeśli program obsługi gestu nie działa, upewnij się, że:  
   
 -   Projekt obsługi gestu jest wymieniony jako składnik listy MEF **zasoby** karcie **source.extensions.manifest** w projekcie VSIX.  
   
@@ -374,15 +374,15 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
 #### <a name="to-uninstall-an-extension"></a>Aby odinstalować rozszerzenie  
   
-1.  Na **narzędzia** menu, wybierz **rozszerzenia i aktualizacje**.  
+1. Na **narzędzia** menu, wybierz **rozszerzenia i aktualizacje**.  
   
-2.  Rozwiń **zainstalowanych rozszerzeń**.  
+2. Rozwiń **zainstalowanych rozszerzeń**.  
   
-3.  Zaznacz rozszerzenie, a następnie wybierz **Odinstaluj**.  
+3. Zaznacz rozszerzenie, a następnie wybierz **Odinstaluj**.  
   
- Rzadko wadliwe rozszerzenie nie ładuje się i tworzy raport w oknie błędów, ale nie są wyświetlane w Menedżerze rozszerzeń. W takim przypadku należy usunąć rozszerzenie przez usunięcie pliku:  
+   Rzadko wadliwe rozszerzenie nie ładuje się i tworzy raport w oknie błędów, ale nie są wyświetlane w Menedżerze rozszerzeń. W takim przypadku należy usunąć rozszerzenie przez usunięcie pliku:  
   
- *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [wersja]**  
+   *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [wersja]**  
   
 ##  <a name="DragExample"></a> Przykład  
  Poniższy przykład pokazuje sposób tworzenia linii życia w diagramie sekwencji na podstawie części i portów składnika przeciągniętych z diagramu składników.  

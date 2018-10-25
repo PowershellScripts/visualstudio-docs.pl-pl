@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ab3e3c2f299adb8a2f0ec5703f81b14fe5fc4ff
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8acde589ebf47d4a67609e847a84bd7c7acd8482
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860358"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899646"
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>Rozwiązywanie problemów z rozszerzeniami dla diagramów zależności
 
@@ -25,22 +25,22 @@ W tym temacie omawia niektóre problemy, które można napotkać podczas tworzen
 
 ## <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-visual-studio"></a>Po naciśnięciu klawisza klawisz F5, aby debugować Moje rozszerzenia, polecenia, programy obsługi gestu, rozszerzenia sprawdzania poprawności lub właściwości niestandardowe nie są wyświetlane na wykresach zależności w doświadczalnym wystąpieniu programu Visual Studio
 
-1.  Otwórz swoje rozwiązanie rozszerzenia w doświadczalnym wystąpieniu programu Visual Studio, a także na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+1. Otwórz swoje rozwiązanie rozszerzenia w doświadczalnym wystąpieniu programu Visual Studio, a także na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
-2.  Naciśnij klawisz **F5** lub **kombinację klawiszy CTRL + F5** do uruchom wystąpienie eksperymentalne programu Visual Studio. Otwórz diagram zależności i przetestuj swoje rozszerzenia.
+2. Naciśnij klawisz **F5** lub **kombinację klawiszy CTRL + F5** do uruchom wystąpienie eksperymentalne programu Visual Studio. Otwórz diagram zależności i przetestuj swoje rozszerzenia.
 
- Przejdź do następnej procedury, jeśli to konieczne.
+   Przejdź do następnej procedury, jeśli to konieczne.
 
 ## <a name="an-old-version-of-my-extension-runs"></a>Uruchamia starą wersję mojego rozszerzenia.
 
-1.  Upewnij się, że żadne wystąpienie doświadczalne programu Visual Studio jest uruchomiony.
+1. Upewnij się, że żadne wystąpienie doświadczalne programu Visual Studio jest uruchomiony.
 
-2.  Usuń następujący folder: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [wersja]
+2. Usuń następujący folder: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [wersja]
 
-    > [!NOTE]
-    > % LocalAppData % zazwyczaj znajduje *DriveName*: \Users\\*UserName*\AppData\Local.
+   > [!NOTE]
+   > % LocalAppData % zazwyczaj znajduje *DriveName*: \Users\\*UserName*\AppData\Local.
 
- Przejdź do następnej procedury, jeśli to konieczne.
+   Przejdź do następnej procedury, jeśli to konieczne.
 
 ## <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Pojawi się stara wersja mojego wyniku weryfikacji lub Moja metoda sprawdzania poprawności nie jest wywoływana.
 

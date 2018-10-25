@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a7ec4afc044af9d63fc65826e473d9036bf9ca3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3df4ce44c0cf0b3b09442dc695f73c415035e84a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904183"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
-Odczytuje `BOOL` wartości w zestawie właściwości.  
+Odczytuje `BOOL` wartości w zbiorze właściwości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,10 +41,10 @@ HRESULT ReadBOOL (
  [out] Zwraca wartość właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_INVALIDARG` Jeśli właściwość nie jest typu `BOOL`.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_INVALIDARG` Jeśli właściwość nie jest typu `BOOL`.  
   
 ## <a name="remarks"></a>Uwagi  
- Spójne wyniki można zinterpretować `BOOL` wartości, tak aby były niezerowe wartości `TRUE` i zero jest `FALSE`.  
+ Spójne wyniki, można interpretować `BOOL` wartości, tak aby wartość różną od zera wartości są `TRUE` i zero jest `FALSE`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

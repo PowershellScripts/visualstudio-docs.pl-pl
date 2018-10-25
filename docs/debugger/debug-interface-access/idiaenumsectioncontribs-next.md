@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSectionContribs::Next | Dokumentacja firmy Microsoft
+title: Idiaenumsectioncontribs::Next — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f700ef7160cff643c2a60007d7b1f83ecbe4eeb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 630914434defea47254597ca0e392379b70a3283
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468349"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818955"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
-Pobiera określoną liczbę sekcji wkładów w kolejności wyliczenia.  
+Pobiera określoną liczbę sekcji wkład w kolejności wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,16 +36,16 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parametry  
  celt  
- [in] Liczba sekcji wkładów w moduł wyliczający, które mają zostać pobrane.  
+ [in] Liczba sekcji wkład w modułu wyliczającego do pobrania.  
   
  rgelt  
- [out] Tablica, która ma zostać wypełnione [idiasectioncontrib —](../../debugger/debug-interface-access/idiasectioncontrib.md) obiekty reprezentujące wkładów żądaną sekcji.  
+ [out] Tablica, która ma zostać wypełniony kolorem [idiasectioncontrib —](../../debugger/debug-interface-access/idiasectioncontrib.md) obiekty reprezentujące wkładów odpowiednią sekcję.  
   
  pceltFetched  
- [out] Zwraca liczbę sekcji wkładów w pobranych modułu wyliczającego.  
+ [out] Zwraca liczbę sekcji wkład w pobrania modułu wyliczającego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma żadnych więcej wkładów sekcji. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma żadnych więcej wkładów sekcji. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenumsectioncontribs —](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   

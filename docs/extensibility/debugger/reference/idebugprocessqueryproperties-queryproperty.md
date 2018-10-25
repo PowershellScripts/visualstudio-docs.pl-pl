@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58ea20def0fa79d6847a28716301f7e2b5136c0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a2ff40f850186e97888fd409d2387e15873851b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115466"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893952"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
-To odpytuje metody wartość określonej właściwości debugowania procesu.  
+Kwerendy tej metody, wartość określonej właściwości debugowania procesu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,19 +39,19 @@ int QueryProperty(
   
 #### <a name="parameters"></a>Parametry  
  `dwPropType`  
- [in] Definicja właściwości dotyczy zapytanie. Dostępne są następujące wartości:  
+ [in] Definicja właściwości zapytania. Dostępne są następujące wartości:  
   
--   PROCESS_PROPERTY_COMMAND_LINE = 1  
+- PROCESS_PROPERTY_COMMAND_LINE = 1  
   
--   PROCESS_PROPERTY_CURRENT_DIRECTORY = 2  
+- PROCESS_PROPERTY_CURRENT_DIRECTORY = 2  
   
--   PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
+- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
   
- `pvarPropValue`  
- [out] Wartość właściwości.  
+  `pvarPropValue`  
+  [out] Wartość właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
  Ta metoda jest rzadko używana.  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3002a18e4575ab57b77d90c4b7d94662683cf9d
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 81b4fb4938c1b87f4a9ca31cdc6035c4c6f124d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497930"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926465"
 ---
 # <a name="deploy-custom-start-pages"></a>Wdrażanie niestandardowych stron Start
 
@@ -42,17 +42,17 @@ Szablon projektu strona startowa można uzyskać za pomocą **Menedżera rozszer
 
  Aby utworzyć wdrożenie VSIX bez przy użyciu szablonu projektu strony początkowej, należy najpierw utworzyć *.vsix* pliku strony początkowej w jeden z następujących dwóch sposobów:
 
--   Dodając niestandardowe pliki strony początkowej do pusty projekt VSIX. Aby uzyskać więcej informacji, zobacz [szablonu projektu VSIX](../extensibility/vsix-project-template.md).
+- Dodając niestandardowe pliki strony początkowej do pusty projekt VSIX. Aby uzyskać więcej informacji, zobacz [szablonu projektu VSIX](../extensibility/vsix-project-template.md).
 
--   Za pomocą ręcznego tworzenia *.vsix* pliku. Aby utworzyć *.vsix* pliku ręcznie:
+- Za pomocą ręcznego tworzenia *.vsix* pliku. Aby utworzyć *.vsix* pliku ręcznie:
 
-    1.  Tworzenie *extension.vsixmanifest* pliku i *[Content_Types] .xml* plik w nowym folderze. Aby uzyskać więcej informacji, zobacz [anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+  1.  Tworzenie *extension.vsixmanifest* pliku i *[Content_Types] .xml* plik w nowym folderze. Aby uzyskać więcej informacji, zobacz [anatomia pakietu VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-    2.  W Eksploratorze Windows, kliknij prawym przyciskiem myszy folder, który zawiera dwa pliki XML, kliknij przycisk **Wyślij do**, a następnie kliknij Folder skompresowany (zip). Zmień nazwę wynikowy *zip* plik *Filename.vsix*, gdzie nazwa_pliku to nazwa pliku pakietu redystrybucyjnego, który instaluje pakiet.
+  2.  W Eksploratorze Windows, kliknij prawym przyciskiem myszy folder, który zawiera dwa pliki XML, kliknij przycisk **Wyślij do**, a następnie kliknij Folder skompresowany (zip). Zmień nazwę wynikowy *zip* plik *Filename.vsix*, gdzie nazwa_pliku to nazwa pliku pakietu redystrybucyjnego, który instaluje pakiet.
 
- Dla programu Visual Studio, rozpoznawał strony początkowej `Content Element` manifestu VSIX musi zawierać `CustomExtension Element` zawierający `Type` ustawioną wartość atrybutu `"StartPage"`. Rozszerzenie strony początkowej, który został zainstalowany przy użyciu wdrożenia VSIX, który pojawia się w **Dostosuj stronę początkową** listy na **uruchamiania** Opcje strony jako **[zainstalowane rozszerzenie]** *Nazwa rozszerzenia*.
+  Dla programu Visual Studio, rozpoznawał strony początkowej `Content Element` manifestu VSIX musi zawierać `CustomExtension Element` zawierający `Type` ustawioną wartość atrybutu `"StartPage"`. Rozszerzenie strony początkowej, który został zainstalowany przy użyciu wdrożenia VSIX, który pojawia się w **Dostosuj stronę początkową** listy na **uruchamiania** Opcje strony jako **[zainstalowane rozszerzenie]** *Nazwa rozszerzenia*.
 
- Jeśli pakiet strona początkowa zawiera zestawy, należy dodać powiązanie ścieżka rejestracji tak, aby były dostępne po uruchomieniu programu Visual Studio. Aby to zrobić, upewnij się, że pakiet zawiera *.pkgdef* pliku, który zawiera następujące informacje.
+  Jeśli pakiet strona początkowa zawiera zestawy, należy dodać powiązanie ścieżka rejestracji tak, aby były dostępne po uruchomieniu programu Visual Studio. Aby to zrobić, upewnij się, że pakiet zawiera *.pkgdef* pliku, który zawiera następujące informacje.
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]
@@ -85,7 +85,7 @@ Szablon projektu strona startowa można uzyskać za pomocą **Menedżera rozszer
      Oznacza to, Visual Studio do wyszukania w nowej lokalizacji strony początkowej.
 
 ## <a name="file-copy-deployment"></a>Wdrażanie kopii plików
- Nie trzeba tworzyć *.vsix* plik, aby wdrożyć niestandardowej strony początkowej. Zamiast tego można kopiować znaczników i plików pomocniczych, bezpośrednio do użytkownika * \StartPages\* folderu. **Dostosuj stronę początkową** listy na **uruchamiania** Opcje strony wyświetla każdy *.xaml* plików w tym folderze, podając ścieżkę — na przykład *% \StartPages Documents\Visual Studio {version} USERPROFILE%\My\\{nazwa pliku} .xaml*. Jeśli strona początkowa zawiera odwołania do zestawów prywatnych, należy skopiować je i wklej je w * \PrivateAssemblies\* folderu.
+ Nie trzeba tworzyć *.vsix* plik, aby wdrożyć niestandardowej strony początkowej. Zamiast tego można kopiować znaczników i plików pomocniczych, bezpośrednio do użytkownika <em>\StartPages\* folderu. **Dostosuj stronę początkową</em>*  listy na **uruchamiania** Opcje strony wyświetla każdy *.xaml* plików w tym folderze, podając ścieżkę — na przykład *\StartPages Documents\Visual Studio {version} %USERPROFILE%\My\\{nazwa pliku} .xaml*. Jeśli strona początkowa zawiera odwołania do zestawów prywatnych, należy skopiować je i wklej je w * \PrivateAssemblies\* folderu.
 
  Aby dystrybuować strony początkowej, który został utworzony bez pakowanie w *.vsix* pliku, zaleca się użyć strategii kopiowania podstawowy plik, na przykład skryptu wsadowego, lub innej technologii wdrożenia, który pozwala umieścić pliki w wymagane katalogi.
 

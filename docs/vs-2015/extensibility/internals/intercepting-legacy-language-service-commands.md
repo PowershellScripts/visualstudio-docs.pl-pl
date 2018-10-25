@@ -16,12 +16,12 @@ ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96a641778811d88c0087a23822ab789e72b066f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 45f0084d060e9727f30ba39233ec5b92818d9205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829888"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>Przechwytywanie poleceń starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Za pomocą [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], może mieć poleceni
   
  Masz następujące opcje obsługi polecenia:  
   
--   Obsługa polecenia, a następnie przekaż polecenia do następnego filtru poleceń w łańcuchu.  
+- Obsługa polecenia, a następnie przekaż polecenia do następnego filtru poleceń w łańcuchu.  
   
--   Obsługa polecenia i nie są przekazywane do polecenia do następnego filtru polecenia.  
+- Obsługa polecenia i nie są przekazywane do polecenia do następnego filtru polecenia.  
   
--   Nie obsługują polecenia, ale ona przekazać polecenie do następnego filtru polecenia.  
+- Nie obsługują polecenia, ale ona przekazać polecenie do następnego filtru polecenia.  
   
--   Ignoruj polecenia. Nie obsługują w bieżący filtr, a nie są przekazywane do następnego filtru.  
+- Ignoruj polecenia. Nie obsługują w bieżący filtr, a nie są przekazywane do następnego filtru.  
   
- Aby uzyskać informacje dotyczące polecenia powinna obsługiwać usługi w języka, zobacz [ważne polecenia dotyczące filtrów usługi językowej](../../extensibility/internals/important-commands-for-language-service-filters.md).
+  Aby uzyskać informacje dotyczące polecenia powinna obsługiwać usługi w języka, zobacz [ważne polecenia dotyczące filtrów usługi językowej](../../extensibility/internals/important-commands-for-language-service-filters.md).
 

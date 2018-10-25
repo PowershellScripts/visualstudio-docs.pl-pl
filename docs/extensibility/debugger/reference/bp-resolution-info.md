@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e163daff6466f9cc6e0f83fff20b89006a73dcc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fafba8e09ad4f0dccb40ebd6fb88b75eef70964d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099567"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896799"
 ---
 # <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
-Zawiera opis informacji powiązania punktu przerwania dla punktu przerwania kodu lub punktu przerwania danych.  
+Opisuje informacje powiązany punkt przerwania dla punktu przerwania w kodzie lub punktu przerwania danych.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,7 +47,7 @@ public struct BP_RESOLUTION_INFO {
   
 ## <a name="members"></a>Elementy członkowskie  
  `dwFields`  
- Kolekcja flagi z [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) wyliczenia, które określają pola, które są wypełnione.  
+ Kolekcja flagi z [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) wyliczenia, które określa pola, które są wypełnione.  
   
  `bpResLocation`  
  [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) strukturę, która określa lokalizację punktu przerwania w kodzie lub danych.  
@@ -56,7 +56,7 @@ public struct BP_RESOLUTION_INFO {
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje aplikacji, w którym wystąpił błąd punktu przerwania.  
   
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątku, w którym jest uruchomiona aplikacja, która zawiera błąd punktu przerwania.  
+ [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątek, w którym jest uruchomiona aplikacja, która zawiera błąd punktu przerwania.  
   
 ## <a name="remarks"></a>Uwagi  
  Ta struktura jest zwracany przez [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md).  
@@ -69,7 +69,7 @@ public struct BP_RESOLUTION_INFO {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)   
  [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)   
  [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)   

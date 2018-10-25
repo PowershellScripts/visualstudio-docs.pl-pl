@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c363da795e588963c234af05a856f3352a7b2815
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 79afce90f462f97d7a33a64875c4784a030f845e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905925"
 ---
-# <a name="sccuncheckout-function"></a>Funkcja SccUncheckout
-Ta funkcja spowoduje cofnięcie poprzedniej operacji wyewidencjonowania, a tym samym Przywracanie zawartość wybranego pliku lub plików do stanu przed wyewidencjonowanie. Wszystkie zmiany wprowadzone w pliku, ponieważ wyewidencjonowanie zostaną utracone.  
+# <a name="sccuncheckout-function"></a>SccUncheckout, funkcja
+Ta funkcja spowoduje cofnięcie poprzedniej operacji wyewidencjonowania, a tym samym Przywracanie zawartość wybranego pliku lub plików do stanu sprzed wyewidencjonowanie. Wszystkie zmiany wprowadzone do pliku, ponieważ wyewidencjonowanie zostaną utracone.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,39 +40,39 @@ SCCRTN SccUncheckout (
   
 #### <a name="parameters"></a>Parametry  
  pvContext  
- [in] Struktura kontekstu wtyczkę kontroli źródła.  
+ [in] Struktura kontekście wtyczki kontroli źródła.  
   
- Właściwość hWnd  
- [in] Dojście do okna IDE, które wtyczka do kontroli źródła można używać jako elementu nadrzędnego wszystkie okna dialogowe, które zawiera.  
+ hWnd  
+ [in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.  
   
- To  
+ Niepowodzeń  
  [in] Liczba plików określonych w `lpFileNames` tablicy.  
   
  lpFileNames  
- [in] Tablica nazw plików, do których chcesz cofnąć wyewidencjonowanie kwalifikowaną ścieżką lokalną.  
+ [in] Tablica nazw plików, do których chcesz cofnąć wyewidencjonowanie w pełni kwalifikowaną ścieżką lokalną.  
   
  fOptions  
- [in] Polecenie flag (nie).  
+ [in] Polecenie flagi (nieużywane).  
   
  pvOptions  
- [in] Opcje plug-dotyczące kontroli źródła.  
+ [in] Opcje plug-określonych kontroli źródła.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczkę kontroli źródła tej funkcji może przywrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
 |SCC_OK|Cofnięcie wyewidencjonowania powiodło się.|  
 |SCC_E_FILENOTCONTROLLED|Wybrany plik nie jest pod kontrolą kodu źródłowego.|  
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji. Ponowna próba jest zalecane.|  
-|SCC_E_NONSPECIFICERROR|Nieokreślony błąd. Cofnij wyewidencjonowanie nie powiodło się.|  
+|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby. Ponowienie próby jest zalecane.|  
+|SCC_E_NONSPECIFICERROR|Wystąpił nieokreślony błąd. Cofnij wyewidencjonowanie nie powiodło się.|  
 |SCC_E_NOTCHECKEDOUT|Użytkownik nie ma ten plik wyewidencjonowany.|  
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|  
 |SCC_E_PROJNOTOPEN|Projekt nie został otwarty z kontroli źródła.|  
 |SCC_I_OPERATIONCANCELED|Operacja została anulowana przed ukończeniem.|  
   
 ## <a name="remarks"></a>Uwagi  
- Po wykonaniu tej czynności `SCC_STATUS_CHECKEDOUT` i `SCC_STATUS_MODIFIED` flagi zostanie zarówno wyczyszczone dla plików, na których wykonano cofnięcie wyewidencjonowania.  
+ Po wykonaniu tej czynności `SCC_STATUS_CHECKEDOUT` i `SCC_STATUS_MODIFIED` flagi zostanie zarówno wyczyszczony dla plików, na których wykonano cofnięcie wyewidencjonowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

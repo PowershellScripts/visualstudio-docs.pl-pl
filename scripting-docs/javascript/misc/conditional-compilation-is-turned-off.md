@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8f2eabb900e24072c8f390061b5d6081de9bc889
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788764"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914245"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>Kompilacja warunkowa jest wyłączona
-Próbowano użyć zmiennej kompilacja warunkowa bez pierwszy zwroty kompilacji warunkowej na. Włączanie kompilacja warunkowa informuje [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kompilatora, aby zinterpretować identyfikatory począwszy jako zmienne kompilacji warunkowej. Aby to zrobić, począwszy od warunkowego kodu za pomocą instrukcji:  
+Podjęto próbę użycia zmienną kompilacji warunkowej bez pierwszej kompilacji warunkowej zwroty na. Włączanie kompilacji warunkowej informuje [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kompilatorze Interpretowanie identyfikatorów, począwszy od jako zmienne kompilacji warunkowej. Można to zrobić, począwszy od warunkowego kodu za pomocą instrukcji:  
   
 ```  
 /*@cc_on @*/  
@@ -36,7 +36,7 @@ Próbowano użyć zmiennej kompilacja warunkowa bez pierwszy zwroty kompilacji w
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Dodaj następującą instrukcję do początku warunkowego kodu:  
+-   Na początku warunkowego kodu, dodaj następującą instrukcję:  
   
     ```JavaScript  
     /*@cc_on @*/  
@@ -45,6 +45,6 @@ Próbowano użyć zmiennej kompilacja warunkowa bez pierwszy zwroty kompilacji w
 ## <a name="see-also"></a>Zobacz też  
  [Kompilacja warunkowa](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Zmienne kompilacji warunkowej](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_on— Instrukcja](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@if— Instrukcja](../../javascript/reference/at-if-statement-javascript.md)   
- [@set— Instrukcja](../../javascript/reference/at-set-statement-javascript.md)
+ [@cc_on Instrukcja](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@if Instrukcja](../../javascript/reference/at-if-statement-javascript.md)   
+ [@set, instrukcja](../../javascript/reference/at-set-statement-javascript.md)

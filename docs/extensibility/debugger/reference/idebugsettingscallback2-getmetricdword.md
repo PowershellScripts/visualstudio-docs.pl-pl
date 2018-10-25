@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0accbe60855e6467d8f3b81db61d273821650de2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3feca080ba6c6aa6b3404811bb00e5d286772007
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926933"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
-Pobiera wartość metryki otrzymuje jej nazwę.  
+Pobiera wartość metryki nadać jej nazwę.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -57,7 +57,7 @@ private int GetMetricDword(
  [out] Zwraca wartość metryki.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

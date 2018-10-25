@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f46da0c36dfdf73fc550d57e733637ec7ab1e3fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8dcc182664832775f2aa3878fb3320e01d3901dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227922"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840106"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Porady: dostosowywanie słownika analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +67,17 @@ Do sprawdzania identyfikatorów w kodzie w poszukiwaniu błędów pisowni, grama
 ## <a name="custom-dictionary-elements"></a>Słownik niestandardowy elementów  
  Można zmodyfikować zachowanie słownika analizy kodu, dodając warunki jako tekst wewnętrzny z następujących elementów do słownika:  
   
--   [Słownik/słów/rozpoznane/programu Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)  
+- [Słownik/słów/rozpoznane/programu Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)  
   
--   [Słownik/słów/nierozpoznany/programu Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
+- [Słownik/słów/nierozpoznany/programu Word](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)  
   
--   [Słownik/słów/przestarzałe/termin [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
+- [Słownik/słów/przestarzałe/termin [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)  
   
--   [Słownik/słów/złożone/termin [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
+- [Słownik/słów/złożone/termin [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)  
   
--   [Słownik/słów/DiscreteExceptions/termin](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
+- [Słownik/słów/DiscreteExceptions/termin](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)  
   
--   [Słownik/akronimów/CasingExceptions/akronim](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
+- [Słownik/akronimów/CasingExceptions/akronim](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
 ###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> Słownik/słów/rozpoznane/programu Word  
  Aby uwzględnić termin na liście terminów, które identyfikują analizy kodu jako poprawnie zapisany, należy dodać termin jako tekst wewnętrzny elementu słownik/słów/Recognized/programu Word. Warunki w elementach słownik/słów/Recognized/słowa nie jest rozróżniana wielkość liter.  
@@ -154,11 +154,11 @@ Do sprawdzania identyfikatorów w kodzie w poszukiwaniu błędów pisowni, grama
   
  Aby dołączyć proponowany termin alternatywny ostrzeżenia, należy określić alternatywna w atrybucie PreferredAlternate elementu terminu. Wartość atrybutu można pozostawić puste, jeśli nie chcesz sugerować alternatywne.  
   
--   Przestarzałe termin w słownika / / element uznane za przestarzałe/termin nie jest rozróżniana wielkość liter.  
+- Przestarzałe termin w słownika / / element uznane za przestarzałe/termin nie jest rozróżniana wielkość liter.  
   
--   Wartość atrybutu PreferredAlternate jest rozróżniana wielkość liter. Użyj pisanymi wielkimi literami dla złożonych alternatyw.  
+- Wartość atrybutu PreferredAlternate jest rozróżniana wielkość liter. Użyj pisanymi wielkimi literami dla złożonych alternatyw.  
   
- **Przykład**  
+  **Przykład**  
   
 ```  
 <Dictionary>  
@@ -189,11 +189,11 @@ Do sprawdzania identyfikatorów w kodzie w poszukiwaniu błędów pisowni, grama
 ###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Słownik/słów/złożone/termin [@CompoundAlternate]  
  Słownik wbudowany identyfikuje niektóre terminy jako pojedynczy, odrębny terminy zamiast złożone termin. Dołącz termin do listy warunków, które identyfikują analizy kodu, jako wyraz złożony i określ poprawny wielkość liter w wyrazie termin, należy dodać termin jako tekst wewnętrzny elementu słownik/słów/złożone/termin. W atrybucie CompoundAlternate elementu terminu Określ poszczególnych wyrazów składających się termin złożone przez pierwszą literę poszczególnych wyrazów (pisanymi wielkimi literami). Należy pamiętać, że okres określony w tekst wewnętrzny jest automatycznie dodawany do listy słów/słownik/DiscreteExceptions.  
   
--   Przestarzałe termin w słownika / / element uznane za przestarzałe/termin nie jest rozróżniana wielkość liter.  
+- Przestarzałe termin w słownika / / element uznane za przestarzałe/termin nie jest rozróżniana wielkość liter.  
   
--   Wartość atrybutu PreferredAlternate jest rozróżniana wielkość liter. Użyj pisanymi wielkimi literami dla złożonych alternatyw.  
+- Wartość atrybutu PreferredAlternate jest rozróżniana wielkość liter. Użyj pisanymi wielkimi literami dla złożonych alternatyw.  
   
- **Przykład**  
+  **Przykład**  
   
 ```  
 <Dictionary>  

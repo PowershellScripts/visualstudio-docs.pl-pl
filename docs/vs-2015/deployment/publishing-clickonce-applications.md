@@ -26,12 +26,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 70cf261f2d235a8ed1b27550acad916cf5a355a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4282ce38671e2270c1e91d70df8968d790c54a22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265645"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891768"
 ---
 # <a name="publishing-clickonce-applications"></a>Publikowanie aplikacji ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ Podczas publikowania [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wła
 ## <a name="publish-wizard"></a>Kreator publikacji  
  W Kreatorze publikacji można użyć do skonfigurowania podstawowych ustawień do publikowania aplikacji. Dane te obejmują następujące właściwości publikacji:  
   
--   Lokalizacja folderu publikowania — gdzie Visual Studio skopiuje pliki (komputer lokalny, sieciowego udziału plików, serwer FTP lub witryny sieci Web)  
+- Lokalizacja folderu publikowania — gdzie Visual Studio skopiuje pliki (komputer lokalny, sieciowego udziału plików, serwer FTP lub witryny sieci Web)  
   
--   Lokalizacja folderu instalacji — gdzie użytkownicy będą instalować z (sieciowym udziale plików, serwer FTP, witryny sieci Web, dysk CD/DVD)  
+- Lokalizacja folderu instalacji — gdzie użytkownicy będą instalować z (sieciowym udziale plików, serwer FTP, witryny sieci Web, dysk CD/DVD)  
   
--   Online lub Offline dostępność — Jeśli użytkownicy końcowi mogą uzyskiwać dostęp do aplikacji, z lub bez połączenia sieciowego  
+- Online lub Offline dostępność — Jeśli użytkownicy końcowi mogą uzyskiwać dostęp do aplikacji, z lub bez połączenia sieciowego  
   
--   Zaktualizuj częstotliwość — jak często Aplikacja sprawdza dostępność nowych aktualizacji.  
+- Zaktualizuj częstotliwość — jak często Aplikacja sprawdza dostępność nowych aktualizacji.  
   
- Aby uzyskać więcej informacji, zobacz [porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+  Aby uzyskać więcej informacji, zobacz [porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ## <a name="publish-page"></a>Strona publikowania  
  **Publikuj** strony **projektanta projektu** służy do konfigurowania właściwości dla wdrażania ClickOnce. Poniższa tabela zawiera listę tematów  

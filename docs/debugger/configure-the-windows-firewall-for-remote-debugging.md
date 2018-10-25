@@ -10,35 +10,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9688948ebe2fa5e045578ee808e068d59450d748
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 7f6904313ff585b8099c993f83e90bacb91a4ba2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847958"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>Skonfiguruj zaporę Windows do zdalnego debugowania
 W tym temacie opisano sposób skonfigurowania zapory w celu włączenia debugowania zdalnego na komputerach z następującymi systemami operacyjnymi:  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8/8.1  
+- Windows 8/8.1  
   
--   Windows 7   
+- Windows 7   
   
--   Windows Server 2012 z dodatkiem R2  
+- Windows Server 2012 z dodatkiem R2  
 
--   Windows Server 2012
+- Windows Server 2012
   
--   Windows Server 2008 z dodatkiem R2 
+- Windows Server 2008 z dodatkiem R2 
   
- Jeśli sieci, na którym jest debugowany, nie są chronione przez zaporę, ta konfiguracja nie jest konieczne. W przeciwnym razie komputer, który jest hostem programu Visual Studio i komputera zdalnego, który ma być debugowany wymagają zmian w konfiguracji zapory.  
+  Jeśli sieci, na którym jest debugowany, nie są chronione przez zaporę, ta konfiguracja nie jest konieczne. W przeciwnym razie komputer, który jest hostem programu Visual Studio i komputera zdalnego, który ma być debugowany wymagają zmian w konfiguracji zapory.  
   
- **Protokół IPSec** Jeśli sieć wymaga tej komunikacji jest wykonywane za pomocą protokołu IPSec, należy otworzyć dodatkowe porty na komputerze-hoście programu Visual Studio i komputera zdalnego.  
+  **Protokół IPSec** Jeśli sieć wymaga tej komunikacji jest wykonywane za pomocą protokołu IPSec, należy otworzyć dodatkowe porty na komputerze-hoście programu Visual Studio i komputera zdalnego.  
   
- **Serwer sieci Web** przypadku debugowania zdalnego serwera sieci Web, należy otworzyć port dodatkowy na komputerze zdalnym. (Dla usług IIS, port 80 musi być otwarty.)  
+  **Serwer sieci Web** przypadku debugowania zdalnego serwera sieci Web, należy otworzyć port dodatkowy na komputerze zdalnym. (Dla usług IIS, port 80 musi być otwarty.)  
   
- Należy pamiętać, że oba komputery pracują jest konieczne uruchomienie tego samego systemu operacyjnego. Na przykład komputer z programem Visual Studio może działać system Windows 10 i komputer zdalny można uruchomić system Windows Server 2012 R2.      
+  Należy pamiętać, że oba komputery pracują jest konieczne uruchomienie tego samego systemu operacyjnego. Na przykład komputer z programem Visual Studio może działać system Windows 10 i komputer zdalny można uruchomić system Windows Server 2012 R2.      
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Porty na komputerze zdalnym, na które Włączanie debugowania zdalnego  
   
@@ -114,8 +114,8 @@ Jeśli używasz trybu zgodności dla debugera (**Narzędzia > Opcje > debugowani
   
 |**Porty**|**Wychodzące/przychodzące**|**Protokół**|**Opis**|  
 |-|-|-|-|  
-|135, 139, 445|Wychodzące|TCP|Wymagane.|  
-|137, 138|Wychodzące|UDP|Wymagane.|  
+|135, 139, 445|Wychodzące|TCP|Wymagana.|  
+|137, 138|Wychodzące|UDP|Wymagana.|  
 |500, 4500|Wychodzące|UDP|Wymagane, jeśli zasady domeny wymaga komunikacji sieciowej, można wykonać przy użyciu protokołu IPSec.|  
 |80|Wychodzące|TCP|Wymagane na potrzeby debugowania na serwerze sieci Web.|
   

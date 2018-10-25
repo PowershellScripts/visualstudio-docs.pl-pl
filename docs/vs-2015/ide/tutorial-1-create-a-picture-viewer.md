@@ -14,40 +14,40 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8e881b4d8faef7ced037c8752f099af0e5e8bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cdc926121212a8082fac126e4ab91b753df7dee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884969"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Samouczek 1: Tworzenie podglądu obrazów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym samouczku kompilujesz program, który ładuje obraz z pliku i wyświetla go w oknie. Dowiesz się, jak przeciągać formanty, takie jak przyciski i pola obrazu w formularzu, ustawiać ich właściwości i używać kontenerów, aby sprawnie zmieniać rozmiar formularza. Można również rozpocząć pisanie kodu. Dowiesz się, jak:  
   
--   Utwórz nowy projekt.  
+- Utwórz nowy projekt.  
   
--   Testuj (Debuguj) aplikację.  
+- Testuj (Debuguj) aplikację.  
   
--   Dodaj podstawowe formanty, takie jak pola wyboru i przyciski do formularza.  
+- Dodaj podstawowe formanty, takie jak pola wyboru i przyciski do formularza.  
   
--   Położenie formantów w formularzu za pomocą układów.  
+- Położenie formantów w formularzu za pomocą układów.  
   
--   Dodaj **Otwórz plik** i **kolor** do formularza przy użyciu okna dialogowego.  
+- Dodaj **Otwórz plik** i **kolor** do formularza przy użyciu okna dialogowego.  
   
--   Pisz kod, używając funkcji IntelliSense i fragmentów kodu.  
+- Pisz kod, używając funkcji IntelliSense i fragmentów kodu.  
   
--   Opisz metody obsługi zdarzeń.  
+- Opisz metody obsługi zdarzeń.  
   
- Po zakończeniu program będzie wyglądać jak na poniższym obrazie.  
+  Po zakończeniu program będzie wyglądać jak na poniższym obrazie.  
   
- ![Obraz, który jest tworzony w tym samouczku](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
-Obraz tworzony w ramach tego samouczka  
+  ![Obraz, który jest tworzony w tym samouczku](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
+  Obraz tworzony w ramach tego samouczka  
   
- Aby pobrać pełną wersję przykładu, zobacz [przykładowy samouczek pełnej przeglądarki obrazów](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
+  Aby pobrać pełną wersję przykładu, zobacz [przykładowy samouczek pełnej przeglądarki obrazów](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
   
- ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [jak: tworzenie przeglądarki obrazów w języku Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) lub [jak: tworzenie przeglądarki obrazów w języku C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
+  ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [jak: tworzenie przeglądarki obrazów w języku Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) lub [jak: tworzenie przeglądarki obrazów w języku C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
   
 > [!NOTE]
 >  W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio. Visual C# i Visual Basic zostały omówione w tym samouczku, więc Skoncentruj się na informacjach specyficznych dla języka programowania, którego używasz.  

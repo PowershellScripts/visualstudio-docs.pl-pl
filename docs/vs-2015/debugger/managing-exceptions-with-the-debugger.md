@@ -38,12 +38,12 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37b815543332ff61a275fed8fdfba06c91a433b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813677"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Zarządzanie wyjątkami za pomocą debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,86 +78,86 @@ Wyjątek jest wskazaniem stanu błędu, który występuje, gdy program jest wyko
   
  Jeśli zaznaczysz dany wyjątek, wykonanie debuger przerywał działanie wszędzie tam, gdzie jest zgłaszany wyjątek, niezależnie od tego, czy jest obsługiwane i nieobsługiwane. W tym momencie wyjątek nosi nazwę wyjątku pierwszej szansy. Na przykład poniżej przedstawiono kilka scenariuszy:  
   
-1.  W poniższym aplikacji konsolowej C#, metoda Main zgłasza **AccessViolationException** wewnątrz `try/catch` bloku:  
+1. W poniższym aplikacji konsolowej C#, metoda Main zgłasza **AccessViolationException** wewnątrz `try/catch` bloku:  
   
-    ```csharp  
-    static void Main(string[] args)  
-    {  
-        try  
-        {  
-            throw new AccessViolationException();  
-            Console.WriteLine("here");  
-        }  
-        catch (Exception e)  
-        {  
-            Console.WriteLine("caught exception");  
-        }  
-        Console.WriteLine("goodbye");  
-    }  
-    ```  
+   ```csharp  
+   static void Main(string[] args)  
+   {  
+       try  
+       {  
+           throw new AccessViolationException();  
+           Console.WriteLine("here");  
+       }  
+       catch (Exception e)  
+       {  
+           Console.WriteLine("caught exception");  
+       }  
+       Console.WriteLine("goodbye");  
+   }  
+   ```  
   
-     Jeśli masz **AccessViolationException** zaewidencjonowany **ustawienia wyjątków**, po uruchomieniu tego kodu podczas wykonywania debuger przerywał działanie w `throw` wiersza. Następnie można kontynuować wykonywania. Obie linie powinien być wyświetlany w konsoli:  
+    Jeśli masz **AccessViolationException** zaewidencjonowany **ustawienia wyjątków**, po uruchomieniu tego kodu podczas wykonywania debuger przerywał działanie w `throw` wiersza. Następnie można kontynuować wykonywania. Obie linie powinien być wyświetlany w konsoli:  
   
-    ```  
-    caught exception  
-    goodbye  
-    ```  
+   ```  
+   caught exception  
+   goodbye  
+   ```  
   
-     ale nie są wyświetlane `here` wiersza.  
+    ale nie są wyświetlane `here` wiersza.  
   
-2.  Aplikacja konsolowa C# odwołuje się do biblioteki klas w języku klasę, która ma dwie metody, metoda zgłasza wyjątek, która obsługuje je i druga metoda, ten sam wyjątek, który nie obsługuje ona:  
+2. Aplikacja konsolowa C# odwołuje się do biblioteki klas w języku klasę, która ma dwie metody, metoda zgłasza wyjątek, która obsługuje je i druga metoda, ten sam wyjątek, który nie obsługuje ona:  
   
-    ```vb  
-    public class Class1  
-    {  
-        public void ThrowHandledException()  
-        {  
-            try  
-            {  
-                throw new AccessViolationException();  
-            }  
-            catch (AccessViolationException ave)  
-            {  
-                Console.WriteLine("caught exception" + ave.Message);  
-            }  
-        }  
+   ```vb  
+   public class Class1  
+   {  
+       public void ThrowHandledException()  
+       {  
+           try  
+           {  
+               throw new AccessViolationException();  
+           }  
+           catch (AccessViolationException ave)  
+           {  
+               Console.WriteLine("caught exception" + ave.Message);  
+           }  
+       }  
   
-        public void ThrowUnhandledException()  
-        {  
-            throw new AccessViolationException();  
-        }  
-    }  
-    ```  
+       public void ThrowUnhandledException()  
+       {  
+           throw new AccessViolationException();  
+       }  
+   }  
+   ```  
   
-     Poniżej przedstawiono metody Main() aplikacji konsoli:  
+    Poniżej przedstawiono metody Main() aplikacji konsoli:  
   
-    ```csharp  
-    static void Main(string[] args)  
-    {  
-        Class1 class1 = new Class1();  
-        class1.ThrowHandledException();  
-        class1.ThrowUnhandledException();  
-    }  
-    ```  
+   ```csharp  
+   static void Main(string[] args)  
+   {  
+       Class1 class1 = new Class1();  
+       class1.ThrowHandledException();  
+       class1.ThrowUnhandledException();  
+   }  
+   ```  
   
-     Jeśli masz **AccessViolationException** zaewidencjonowany **ustawienia wyjątków**, po uruchomieniu tego kodu podczas wykonywania debuger przerywał działanie w `throw` wiersza w obu  **ThrowHandledException()** i **ThrowUnhandledException()**.  
+    Jeśli masz **AccessViolationException** zaewidencjonowany **ustawienia wyjątków**, po uruchomieniu tego kodu podczas wykonywania debuger przerywał działanie w `throw` wiersza w obu  **ThrowHandledException()** i **ThrowUnhandledException()**.  
   
- Jeśli chcesz przywrócić ustawienia domyślne ustawienia wyjątków, możesz kliknąć **przywrócić** przycisk na pasku narzędzi:  
+   Jeśli chcesz przywrócić ustawienia domyślne ustawienia wyjątków, możesz kliknąć **przywrócić** przycisk na pasku narzędzi:  
   
- ![Przywróć ustawienia domyślne w ustawieniach wyjątek](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![Przywróć ustawienia domyślne w ustawieniach wyjątek](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
 ###  <a name="BKMK_UserUnhandled"></a> Ustawienia debugera, aby kontynuować na wyjątkach nieobsługiwanych przez użytkownika  
  Jeśli debugujesz kod .NET lub języka JavaScript za pomocą [tylko mój kod](../debugger/just-my-code.md), można polecić debugerowi, które nie do przerwy na wyjątki, które nie są obsługiwane w kodzie użytkownika, ale są obsługiwane w innym miejscu.  
   
-1.  W **ustawienia wyjątków** okna, otwórz menu kontekstowe, klikając prawym przyciskiem myszy w oknie, a następnie wybierając **Pokaż kolumny**. (Jeśli wyłączysz **tylko mój kod**, nie zobaczysz tego polecenia.)  
+1. W **ustawienia wyjątków** okna, otwórz menu kontekstowe, klikając prawym przyciskiem myszy w oknie, a następnie wybierając **Pokaż kolumny**. (Jeśli wyłączysz **tylko mój kod**, nie zobaczysz tego polecenia.)  
   
-2.  Powinien zostać wyświetlony drugi kolumnę o nazwie **dodatkowe akcje**. Tej kolumnie jest wyświetlana **Kontynuuj w przypadku braku obsługi przez kod użytkownika** na określone wyjątki, co oznacza, że debuger nie przerwanie działania tego wyjątku nie jest obsługiwany w kodzie użytkownika, ale jest obsługiwany w kodzie zewnętrznych.  
+2. Powinien zostać wyświetlony drugi kolumnę o nazwie **dodatkowe akcje**. Tej kolumnie jest wyświetlana **Kontynuuj w przypadku braku obsługi przez kod użytkownika** na określone wyjątki, co oznacza, że debuger nie przerwanie działania tego wyjątku nie jest obsługiwany w kodzie użytkownika, ale jest obsługiwany w kodzie zewnętrznych.  
   
-3.  Możesz zmienić to ustawienie, albo dla określonego wyjątku (wybierz wyjątek, kliknij prawym przyciskiem myszy i wybierz opcję/odznacz **Kontynuuj w przypadku braku obsługi w kodzie użytkownika**) lub dla całej kategorii wyjątków (na przykład wszystkie wspólne Wyjątki środowiska uruchomieniowego języka).  
+3. Możesz zmienić to ustawienie, albo dla określonego wyjątku (wybierz wyjątek, kliknij prawym przyciskiem myszy i wybierz opcję/odznacz **Kontynuuj w przypadku braku obsługi w kodzie użytkownika**) lub dla całej kategorii wyjątków (na przykład wszystkie wspólne Wyjątki środowiska uruchomieniowego języka).  
   
- Na przykład aplikacji sieci web ASP.NET obsługi wyjątków, konwertując je na kod stanu HTTP 500 ([obsługi wyjątków w interfejsie ASP.NET API](http://www.asp.net/web-api/overview/error-handling/exception-handling)), który może nie pomocne podczas określania źródło wyjątku. W poniższym przykładzie kod użytkownika wywołuje `String.Format()` która zgłasza <xref:System.FormatException>. Wykonanie przerywa w następujący sposób:  
+   Na przykład aplikacji sieci web ASP.NET obsługi wyjątków, konwertując je na kod stanu HTTP 500 ([obsługi wyjątków w interfejsie ASP.NET API](http://www.asp.net/web-api/overview/error-handling/exception-handling)), który może nie pomocne podczas określania źródło wyjątku. W poniższym przykładzie kod użytkownika wywołuje `String.Format()` która zgłasza <xref:System.FormatException>. Wykonanie przerywa w następujący sposób:  
   
- ![przerywa użytkownika&#45;wyjątek unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![przerywa użytkownika&#45;wyjątek unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>Dodawanie i usuwanie wyjątków  
  Można dodawać i usuwać wyjątki. Możesz usunąć dowolny typ wyjątku z każdej kategorii, wybierając wyjątek i klikając **Usuń** przycisku (znak minus) na **ustawienia wyjątków** paska narzędzi lub klikając prawym przyciskiem myszy wyjątek i Wybieranie **Usuń** z menu kontekstowego. Usuwanie wyjątek działa tak samo jako posiadające wyjątek nie jest zaznaczone, który jest debugera nie będę powodować gdy jest generowany.  

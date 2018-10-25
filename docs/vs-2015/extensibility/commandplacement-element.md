@@ -16,12 +16,12 @@ ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e52adb46f2a1e4532c5a1c4e00ddddf9e56b96b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9fcb1922c567ff93bba44ed529e8b78388008bd9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289617"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830629"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,16 +45,16 @@ CommandPlacement, element umożliwia przyciski, grup i menu, mają zostać uwzgl
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagane. Identyfikator guid zestawu poleceń, zgodnie z definicją w [Symbols, Element](../extensibility/symbols-element.md).|  
-|identyfikator|Wymagane. Identyfikator menu, grupy lub polecenie, aby umieścić zgodnie z definicją w `Symbols Element`.|  
-|priorytet|Wymagane. Określa położenie visual elementu w jego elementu nadrzędnego.|  
+|Identyfikator GUID|Wymagana. Identyfikator guid zestawu poleceń, zgodnie z definicją w [Symbols, Element](../extensibility/symbols-element.md).|  
+|identyfikator|Wymagana. Identyfikator menu, grupy lub polecenie, aby umieścić zgodnie z definicją w `Symbols Element`.|  
+|priorytet|Wymagana. Określa położenie visual elementu w jego elementu nadrzędnego.|  
 |Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|Nadrzędny|Wymagane. Menu lub grupy, która hostuje element które mają być umieszczone.|  
+|Nadrzędny|Wymagana. Menu lub grupy, która hostuje element które mają być umieszczone.|  
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   

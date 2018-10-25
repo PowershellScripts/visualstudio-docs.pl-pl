@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9bdbdd951b5d67575e9bf9283dcc054dfa25b13
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 415d03ffda6bbd2e839354b4f7cb143337ab08c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860215"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891365"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > Projektant działań
 
@@ -29,14 +29,15 @@ ms.locfileid: "47860215"
 
 ### <a name="using-the-removefromcollectiont-activity-designer"></a>Za pomocą RemoveFromCollection\<T > Projektant działań
 
-Dostęp do **RemoveFromCollection\<T >** projektanta działań w **kolekcji** kategorii **przybornika**. **RemoveFromCollection\<T >** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie działań są zwyczajowo umieszczane, takich jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.RemoveFromCollection%601> działanie przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> z RemoveFromCollection < Int32\>. <xref:System.Activities.Activity.DisplayName%2A> Wartość może być edytowana w nagłówku **RemoveFromCollection < T\>**  projektanta działań lub **DisplayName** pola siatki właściwości. W siatce właściwości, należy edytować inne właściwości.
+Dostęp do **RemoveFromCollection\<T >** projektanta działań w **kolekcji** kategorii **przybornika**.
+**RemoveFromCollection\<T >** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie działań są zwyczajowo umieszczane, takich jak wewnątrz <xref:System.Activities.Statements.Sequence>. Spowoduje to utworzenie <xref:System.Activities.Statements.RemoveFromCollection%601> działanie przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> z RemoveFromCollection < Int32\>. <xref:System.Activities.Activity.DisplayName%2A> Wartość może być edytowana w nagłówku **RemoveFromCollection < T\>**  projektanta działań lub **DisplayName** pola siatki właściwości. W siatce właściwości, należy edytować inne właściwości.
 
 ### <a name="the-removefromcollectiont-properties"></a>RemoveFromCollection < T\> właściwości
 
 W poniższej tabeli przedstawiono <xref:System.Activities.Statements.RemoveFromCollection%601> właściwości i w tym artykule opisano, jak są używane w Projektancie:
 
 |Nazwa właściwości|Wymagane|Użycie|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Opcjonalna nazwa przyjazna <xref:System.Activities.Statements.RemoveFromCollection%601> działania. Wartość domyślna to RemoveFromCollection < Int32\>.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest bezwzględnie konieczne jest najlepszym rozwiązaniem, aby użyć jednego.|
 |<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|Element do usunięcia z **kolekcji\<T >**. Ten element jest typu *T*, która jest typu *elementu typeargument w języku*. Aby określić element, wpisz wyrażenie języka Visual Basic w siatce właściwości.|
 |<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|Kolekcja, z którego można usunąć elementu. Ta kolekcja jest typu **ICollection < elementu typeargument w języku\>.** Aby określić kolekcję, wpisz wyrażenie języka Visual Basic w siatce właściwości.|

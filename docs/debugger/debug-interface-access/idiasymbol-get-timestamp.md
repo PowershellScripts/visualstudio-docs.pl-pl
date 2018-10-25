@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_timeStamp | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_timestamp — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e61deaaacfb2e6ba40366b4233fe4ffb141617
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 94150440d3fa94e8a511b62d053be01fd39ed6c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479552"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873100"
 ---
 # <a name="idiasymbolgettimestamp"></a>IDiaSymbol::get_timeStamp
-Pobiera sygnatury czasowej pliku wykonywalnego.  
+Pobiera znacznik czasu podstawowego pliku wykonywalnego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,13 +34,13 @@ HRESULT get_timeStamp (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca znacznik czasu źródłowego pliku wykonywalnego.  
+ [out] Zwraca sygnaturę czasową podstawowego pliku wykonywalnego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d0fcb648f25667d47a164c14443bafd14cc315f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3f1a8153326fbb88a569680c84376b8c7c911622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883318"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
 Pobiera opis właściwości ramki stosu.  
@@ -41,13 +41,13 @@ int GetDebugProperty (
   
 #### <a name="parameters"></a>Parametry  
  `ppDebugProp`  
- [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który zawiera opis właściwości tej ramki stosu.  
+ [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który opisuje właściwości tej ramki stosu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wywoływanie [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) metody za pomocą odpowiednich filtrów można pobrać zmiennych lokalnych, parametrów metody rejestrów i "this" wskaźnik ramki stosu.  
+ Wywoływanie [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) metody z odpowiednie filtry może pobrać zmienne lokalne, parametry metody, rejestrów i "to" wskaźnik ramki stosu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   

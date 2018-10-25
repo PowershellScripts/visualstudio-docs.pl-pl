@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c8dad80e4f9bc9d051663c2c224d7058028b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ace7528eb1685765fe5c7ff11ce9b3c3234a941
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860228"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919159"
 ---
 # <a name="the-text-template-transformation-process"></a>Proces przekształcania szablonu tekstowego
 Proces przekształcania szablonu tekstowego przyjmuje plik szablonu tekstu jako dane wejściowe i generuje nowy plik tekstowy jako dane wyjściowe. Na przykład można użyć szablonów tekstowych do generowania kodu Visual Basic lub C# lub możesz wygenerować raport HTML.
@@ -28,7 +28,7 @@ Proces przekształcania szablonu tekstowego przyjmuje plik szablonu tekstu jako 
 ## <a name="components"></a>Składniki
 
 |Składnik|Opis|Można dostosować (tak/nie)|
-|---------------|-----------------|------------------------------|
+|-|-|-|
 |Aparat|Składnik aparatu kontroluje proces przekształcania szablonu tekstowego|Nie.|
 |Host|Host jest interfejs między aparatem programu i środowisko użytkownika. Program Visual Studio jest hostem proces przekształcania tekstu.|Tak. Możesz napisać niestandardowego hosta.|
 |Procesory dyrektywy|Procesory dyrektywy są klasach, które obsługują dyrektywy w szablonach tekstowych. Dyrektywy służy do przekazywania danych do szablonu tekstu ze źródła danych wejściowych.|Tak. Możesz napisać niestandardowego procesory dyrektywy|

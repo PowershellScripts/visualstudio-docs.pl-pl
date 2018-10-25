@@ -17,12 +17,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b174145561f6005e9498384190800945e36af078
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 40d508a11807fe90981104e0cc7e6557577da103
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855602"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Dodawanie kontrolki użytkownika do strony początkowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -141,41 +141,41 @@ W tym instruktażu przedstawiono sposób dodawania odwołania biblioteki DLL do 
 ## <a name="adding-the-user-control-to-the-start-page"></a>Dodawanie kontrolki użytkownika do strony początkowej  
  Aby udostępnić ten formant do projektu strony początkowej w pliku projektu strony początkowej, należy dodać odwołanie do Nowa biblioteka kontrolki. Następnie można dodać kontrolki do znaczników Start strony XAML.  
   
-1.  W **Eksploratora rozwiązań**, w projekcie strony początkowej, kliknij prawym przyciskiem myszy **odwołania** a następnie kliknij przycisk **Dodaj odwołanie**.  
+1. W **Eksploratora rozwiązań**, w projekcie strony początkowej, kliknij prawym przyciskiem myszy **odwołania** a następnie kliknij przycisk **Dodaj odwołanie**.  
   
-2.  Na **projektów** zaznacz **WebUserControl** a następnie kliknij przycisk **OK**.  
+2. Na **projektów** zaznacz **WebUserControl** a następnie kliknij przycisk **OK**.  
   
-3.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
+3. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
   
-     Skompilować rozwiązanie udostępnia kontrolkę użytkownika do funkcji IntelliSense dla innych plików w rozwiązaniu.  
+    Skompilować rozwiązanie udostępnia kontrolkę użytkownika do funkcji IntelliSense dla innych plików w rozwiązaniu.  
   
- Aby dodać formant do znaczników Start strony XAML, Dodaj odwołanie do zestawu przestrzeni nazw, a następnie umieszczanie kontrolki na stronie.  
+   Aby dodać formant do znaczników Start strony XAML, Dodaj odwołanie do zestawu przestrzeni nazw, a następnie umieszczanie kontrolki na stronie.  
   
 #### <a name="to-add-the-control-to-the-markup"></a>Aby dodać kontrolkę znaczników  
   
-1.  W **Eksploratora rozwiązań**, otwórz plik .xaml strony początkowej.  
+1. W **Eksploratora rozwiązań**, otwórz plik .xaml strony początkowej.  
   
-2.  W **XAML** okienko, dodaj następującą deklarację przestrzeni nazw do najwyższego poziomu <xref:System.Windows.Controls.Grid> elementu.  
+2. W **XAML** okienko, dodaj następującą deklarację przestrzeni nazw do najwyższego poziomu <xref:System.Windows.Controls.Grid> elementu.  
   
-    ```xml  
-    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
-    ```  
+   ```xml  
+   xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
+   ```  
   
-3.  W **XAML** okienko, przewiń do \<siatki > sekcji.  
+3. W **XAML** okienko, przewiń do \<siatki > sekcji.  
   
-     Sekcja zawiera <xref:System.Windows.Controls.TabControl> element <xref:System.Windows.Controls.Grid> elementu.  
+    Sekcja zawiera <xref:System.Windows.Controls.TabControl> element <xref:System.Windows.Controls.Grid> elementu.  
   
-4.  Dodaj \<TabControl > zawierający element \<TabItem > zawiera odwołanie do kontrolki użytkownika.  
+4. Dodaj \<TabControl > zawierający element \<TabItem > zawiera odwołanie do kontrolki użytkownika.  
   
-    ```xml  
+   ```xml  
   
-    <TabItem Header="Web" Height="Auto">  
-        <vsc:UserControl1 />  
-    </TabItem>  
+   <TabItem Header="Web" Height="Auto">  
+       <vsc:UserControl1 />  
+   </TabItem>  
   
-    ```  
+   ```  
   
- Teraz można przetestować formant.  
+   Teraz można przetestować formant.  
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>Testowanie ręczne tworzenie niestandardowej strony początkowej  
   

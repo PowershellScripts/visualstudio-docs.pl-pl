@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7af41e9e66c22e514961dc888a42153c078667cf
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 28b42e5178808a86faff33dbb887500b8979123b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811924"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modelowanie SDK dla Visual Studio — języki specyficzne dla domeny
 Za pomocą zestawu Modeling SDK for Visual Studio, można utworzyć zaawansowane opartych na modelu narzędzia programistyczne, które można zintegrować z programem Visual Studio. W ten sam sposób można utworzyć co najmniej jedną definicję modelu i zintegrować ją w zestaw narzędzi.
@@ -26,17 +26,17 @@ Za pomocą zestawu Modeling SDK for Visual Studio, można utworzyć zaawansowane
 
  Zestaw MSDK umożliwia szybkie opracowanie modelu z użyciem języka specyficznego dla domeny (DSL). Należy rozpocząć od użycia specjalnego edytora w celu zdefiniowania schematu lub abstrakcyjnej składni wraz z notacją graficzną. Na podstawie tej definicji zestaw VMSDK generuje następujące elementy:
 
--   Implementacja modelu z silnie typizowanym interfejsem API, który działa w magazynie opartym na transakcjach.
+- Implementacja modelu z silnie typizowanym interfejsem API, który działa w magazynie opartym na transakcjach.
 
--   Eksplorator oparty na drzewie.
+- Eksplorator oparty na drzewie.
 
--   Edytor graficzny, w którym użytkownicy mogą wyświetlać zdefiniowany model lub jego części.
+- Edytor graficzny, w którym użytkownicy mogą wyświetlać zdefiniowany model lub jego części.
 
--   Metody serializacji zapisujące modele w przystosowanych do odczytu plikach XML.
+- Metody serializacji zapisujące modele w przystosowanych do odczytu plikach XML.
 
--   Możliwości generowania kodu programu i innych artefaktów przy użyciu funkcji tworzenia szablonów tekstu.
+- Możliwości generowania kodu programu i innych artefaktów przy użyciu funkcji tworzenia szablonów tekstu.
 
- Wszystkie te funkcje można dostosowywać i rozszerzać. Rozszerzenia są integrowane w taki sposób, że można aktualizować definicję DSL oraz ponownie generować funkcje bez utraty używanych rozszerzeń.
+  Wszystkie te funkcje można dostosowywać i rozszerzać. Rozszerzenia są integrowane w taki sposób, że można aktualizować definicję DSL oraz ponownie generować funkcje bez utraty używanych rozszerzeń.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

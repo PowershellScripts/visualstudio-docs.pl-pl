@@ -18,12 +18,12 @@ ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a67e25b06f9b33f184280d0182cf96bfcda154db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 278d7b723bde187fc765c610bd8bc470bb2b2059
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188763"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823587"
 ---
 # <a name="adding-command-line-switches"></a>Dodawanie przełączników wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,11 +64,11 @@ Możesz dodać przełączniki wiersza polecenia, które dotyczą Twojego pakietu
 ## <a name="retrieving-command-line-switches"></a>Trwa pobieranie przełączniki wiersza polecenia  
  Po załadowaniu pakietu można pobrać przełączniki wiersza polecenia, wykonując następujące kroki.  
   
-1.  W swojej VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementacji, wywołanie `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> można pobrać <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interfejsu.  
+1. W swojej VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementacji, wywołanie `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> można pobrać <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interfejsu.  
   
-2.  Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> można pobrać przełączniki wiersza polecenia, które użytkownik wprowadził.  
+2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> można pobrać przełączniki wiersza polecenia, które użytkownik wprowadził.  
   
- Poniższy kod przedstawia sposób dowiedzieć się, czy przełącznik wiersza polecenia MySwitch została wprowadzona przez użytkownika:  
+   Poniższy kod przedstawia sposób dowiedzieć się, czy przełącznik wiersza polecenia MySwitch została wprowadzona przez użytkownika:  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  

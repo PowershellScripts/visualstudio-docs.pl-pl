@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a899a1d37f1dc57f6aaac7bf1f5ec3823003f29
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 418ab83917d30d4e4665669eda60d69ca076d1cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818045"
 ---
 # <a name="idebugcoreserver3queryislocal"></a>IDebugCoreServer3::QueryIsLocal
-Określa, czy serwer jest lokalny dla obiekt wywołujący.  
+Określa, czy serwer lokalny do obiektu wywołującego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,7 +38,7 @@ int QueryIsLocal();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK` aby wskazać serwer jest lokalny. Zwraca `S_FALSE` Jeśli serwer działa z wystąpienia msvsmon.exe, która zwykle jest używana do zdalnego debugowania.  
+ Zwraca `S_OK` aby wskazać serwer lokalny. Zwraca `S_FALSE` Jeśli serwer jest uruchomiony z wystąpienia msvsmon.exe, który jest zazwyczaj używany do zdalnego debugowania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

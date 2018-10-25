@@ -18,25 +18,25 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cda39459d0ddc0920dbb5b47157d90160ad3d166
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862180"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Porady: tworzenie szablonów elementów wielu plików
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Szablony elementów może określić tylko jeden element, ale czasami element składa się z wielu plików. Na przykład szablon elementu formularzy Windows w języku Visual Basic wymaga następujących trzech plików:  
   
--   Plik .vb, który zawiera kod dla formularza.  
+- Plik .vb, który zawiera kod dla formularza.  
   
--   Odp. plik designer.vb, który zawiera informacje o projektancie formularza.  
+- Odp. plik designer.vb, który zawiera informacje o projektancie formularza.  
   
--   Plik Resx zawierający zasoby osadzone w formularzu.  
+- Plik Resx zawierający zasoby osadzone w formularzu.  
   
- Szablony elementów wielu plików wymagają parametry w celu zapewnienia rozszerzeń nazw plików poprawne są używane, gdy element zostanie utworzony w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Jeśli utworzysz szablon elementu za pomocą **Eksportuj szablon** kreatora, parametry te są generowane automatycznie i nie dalszej edycji jest wymagany. Poniższe kroki wyjaśniają jak używać parametrów aby upewnić się, że rozszerzeń nazw plików poprawne są tworzone.  
+  Szablony elementów wielu plików wymagają parametry w celu zapewnienia rozszerzeń nazw plików poprawne są używane, gdy element zostanie utworzony w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Jeśli utworzysz szablon elementu za pomocą **Eksportuj szablon** kreatora, parametry te są generowane automatycznie i nie dalszej edycji jest wymagany. Poniższe kroki wyjaśniają jak używać parametrów aby upewnić się, że rozszerzeń nazw plików poprawne są tworzone.  
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>Ręczne tworzenie szablonów elementów wielu plików  
   

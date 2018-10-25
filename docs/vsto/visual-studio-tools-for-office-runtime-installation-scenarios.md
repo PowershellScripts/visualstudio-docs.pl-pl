@@ -15,23 +15,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f286acae2996451688b0e1a40c4d758c4de8caf6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 145bc3c4301b337a0f882b3893910ad5bb2fc2ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857851"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools dla pakietu Office Runtime ― scenariusze instalacji
   Visual Studio 2010 Tools dla pakietu Office runtime można zainstalować na trzy sposoby:  
   
--   Po zainstalowaniu programu Visual Studio.  
+- Po zainstalowaniu programu Visual Studio.  
   
--   Po zainstalowaniu programu Microsoft Office.  
+- Po zainstalowaniu programu Microsoft Office.  
   
--   Po zainstalowaniu programu Visual Studio 2010 Tools dla pakietu Office runtime pakiet redystrybucyjny.  
+- Po zainstalowaniu programu Visual Studio 2010 Tools dla pakietu Office runtime pakiet redystrybucyjny.  
   
- Składniki środowiska uruchomieniowego, które są instalowane są zależne od konfiguracji komputera i scenariusza instalacji.  
+  Składniki środowiska uruchomieniowego, które są instalowane są zależne od konfiguracji komputera i scenariusza instalacji.  
   
 ## <a name="runtime-components-that-are-installed-in-each-installation-scenario"></a>Składniki środowiska uruchomieniowego, które są instalowane w każdym ze scenariuszy instalacji  
  Visual Studio 2010 Tools dla pakietu Office runtime ma trzy składniki: modułu ładującego rozwiązanie Office, rozszerzeń pakietu Office dla programu .NET Framework 3.5 i rozszerzeń pakietu Office dla [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej. Podczas instalowania środowiska uruchomieniowego modułu ładującego rozwiązanie Office będzie zawsze instalowana. Instalacja rozszerzenia pakietu Office dla programu .NET Framework zależy od konfiguracji komputera i scenariusza instalacji. Jeśli jedno z rozszerzeń pakietu Office nie można zainstalować po zainstalowaniu środowiska uruchomieniowego, środowisko uruchomieniowe automatycznie zainstaluje brakujące rozszerzeń pakietu Office później, gdy są spełnione określone wymagania. Ta funkcja środowiska uruchomieniowego jest nazywana *zainstalować na żądanie*.  
@@ -39,7 +39,7 @@ ms.locfileid: "35677149"
  W poniższej tabeli przedstawiono, które składniki środowiska uruchomieniowego są instalowane domyślnie w każdym ze scenariuszy instalacji środowiska uruchomieniowego. Więcej informacji na temat poszczególnych scenariuszy pojawi się później.  
   
 |Scenariusz instalacji środowiska uruchomieniowego|Modułu ładującego rozwiązania dla pakietu Office|Rozszerzenia pakietu Office dla programu .NET Framework 3.5|Rozszerzenia pakietu Office [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]|Rozszerzenia pakietu Office [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]|  
-|-----------------------------------|----------------------------|--------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------|  
+|-----------------------------------|----------------------------|--------------------------------------------------| - |---------------------------------------------------------------------------|  
 |Za pomocą [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] lub nowszy|Tak|Tak, jeśli program .NET Framework 3.5 jest już zainstalowany.|Tak|Tak|  
 |za pomocą [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Tak|Tak, jeśli program .NET Framework 3.5 jest już zainstalowany.|Nie|Nie|  
 |Za pomocą dodatku Service Pack 1 (SP1) dla pakietu Office 2010 lub nowszy|Tak|Tak, jeśli program .NET Framework 3.5 jest już zainstalowany.|Tak, jeśli [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] jest już zainstalowana.|Nie|  

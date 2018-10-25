@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb7cb76c471681fe49e5ea6957cd94f9829c64db
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 255121bb7dd504ecd96d05fb6257c3b2edeb96ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816966"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>Wskazówki: Pobieranie danych z pamięci podręcznej ze skoroszytu na serwerze
   W tym instruktażu pokazano, jak pobierać dane z zestawu danych, który jest buforowany w skoroszytu programu Microsoft Excel pakietu Office bez uruchamiania programu Excel przy użyciu <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy.  
@@ -33,17 +33,17 @@ ms.locfileid: "35677141"
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Definiowanie zestawu danych, która zawiera dane z *AdventureWorksLT* bazy danych.  
+- Definiowanie zestawu danych, która zawiera dane z *AdventureWorksLT* bazy danych.  
   
--   Tworzenie wystąpień zestawu danych w projektu skoroszytu programu Excel i projekt aplikacji konsoli.  
+- Tworzenie wystąpień zestawu danych w projektu skoroszytu programu Excel i projekt aplikacji konsoli.  
   
--   Tworzenie <xref:Microsoft.Office.Tools.Excel.ListObject> jest powiązane z zestawem danych w skoroszycie i wypełniania <xref:Microsoft.Office.Tools.Excel.ListObject> z danymi, po otwarciu skoroszytu.  
+- Tworzenie <xref:Microsoft.Office.Tools.Excel.ListObject> jest powiązane z zestawem danych w skoroszycie i wypełniania <xref:Microsoft.Office.Tools.Excel.ListObject> z danymi, po otwarciu skoroszytu.  
   
--   Dodawanie zestawu danych w skoroszycie do pamięci podręcznej danych.  
+- Dodawanie zestawu danych w skoroszycie do pamięci podręcznej danych.  
   
--   Odczytywanie danych z pamięci podręcznej zestawu danych do zestawu danych w aplikacji konsoli bez uruchamiania programu Excel.  
+- Odczytywanie danych z pamięci podręcznej zestawu danych do zestawu danych w aplikacji konsoli bez uruchamiania programu Excel.  
   
- Chociaż w tym przewodniku przyjęto założenie, że uruchomieniu kodu na komputerze deweloperskim, kod przedstawiona w tym instruktażu może być używany w taki sposób, na serwerze, który nie ma zainstalowanego programu Excel.  
+  Chociaż w tym przewodniku przyjęto założenie, że uruchomieniu kodu na komputerze deweloperskim, kod przedstawiona w tym instruktażu może być używany w taki sposób, na serwerze, który nie ma zainstalowanego programu Excel.  
   
 > [!NOTE]  
 >  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
@@ -93,29 +93,29 @@ ms.locfileid: "35677141"
   
 ### <a name="define-a-typed-dataset-in-the-class-library-project"></a>Zdefiniuj typizowany zestaw danych w projekcie biblioteki klas  
   
-1.  W **Eksploratora rozwiązań**, kliknij przycisk **AdventureWorksDataSet** projektu.  
+1. W **Eksploratora rozwiązań**, kliknij przycisk **AdventureWorksDataSet** projektu.  
   
-2.  Jeśli **źródeł danych** okno nie jest widoczne, wyświetlić je, na pasku menu, wybierając **widoku** > **Windows inne**  >   **Źródła danych**.  
+2. Jeśli **źródeł danych** okno nie jest widoczne, wyświetlić je, na pasku menu, wybierając **widoku** > **Windows inne**  >   **Źródła danych**.  
   
-3.  Wybierz **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
+3. Wybierz **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
   
-4.  Kliknij przycisk **bazy danych**, a następnie kliknij przycisk **dalej**.  
+4. Kliknij przycisk **bazy danych**, a następnie kliknij przycisk **dalej**.  
   
-5.  Jeśli masz istniejące połączenie z bazą danych AdventureWorksLT, wybierz to połączenie i kliknij przycisk **dalej**.  
+5. Jeśli masz istniejące połączenie z bazą danych AdventureWorksLT, wybierz to połączenie i kliknij przycisk **dalej**.  
   
-     W przeciwnym razie kliknij przycisk **nowe połączenie**i użyj **Dodaj połączenie** okno dialogowe, aby utworzyć nowe połączenie. Aby uzyskać więcej informacji, zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md).  
+    W przeciwnym razie kliknij przycisk **nowe połączenie**i użyj **Dodaj połączenie** okno dialogowe, aby utworzyć nowe połączenie. Aby uzyskać więcej informacji, zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md).  
   
-6.  W **Zapisz parametry połączenia do pliku konfiguracji aplikacji** kliknij **dalej**.  
+6. W **Zapisz parametry połączenia do pliku konfiguracji aplikacji** kliknij **dalej**.  
   
-7.  W **wybierz obiekty bazy danych** rozwiń **tabel** i wybierz **produktu (SalesLT)**.  
+7. W **wybierz obiekty bazy danych** rozwiń **tabel** i wybierz **produktu (SalesLT)**.  
   
-8.  Kliknij przycisk **Zakończ**.  
+8. Kliknij przycisk **Zakończ**.  
   
-     *AdventureWorksLTDataSet.xsd* plik zostanie dodany do **AdventureWorksDataSet** projektu. Ten plik definiuje następujące elementy:  
+    *AdventureWorksLTDataSet.xsd* plik zostanie dodany do **AdventureWorksDataSet** projektu. Ten plik definiuje następujące elementy:  
   
-    -   Typizowany zestaw danych o nazwie `AdventureWorksLTDataSet`. Ten zestaw danych reprezentuje zawartość Tabela produktów w bazie danych AdventureWorksLT.  
+   - Typizowany zestaw danych o nazwie `AdventureWorksLTDataSet`. Ten zestaw danych reprezentuje zawartość Tabela produktów w bazie danych AdventureWorksLT.  
   
-    -   TableAdapter o nazwie `ProductTableAdapter`. Ten obiekt TableAdapter można odczytywać i zapisywać dane `AdventureWorksLTDataSet`. Aby uzyskać więcej informacji, zobacz [TableAdapter — Przegląd](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
+   - TableAdapter o nazwie `ProductTableAdapter`. Ten obiekt TableAdapter można odczytywać i zapisywać dane `AdventureWorksLTDataSet`. Aby uzyskać więcej informacji, zobacz [TableAdapter — Przegląd](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
   
      Użyje obu tych obiektów w dalszej części tego przewodnika.  
   
@@ -236,44 +236,44 @@ ms.locfileid: "35677141"
   
 ### <a name="retrieve-data-from-the-cached-dataset"></a>Pobieranie danych z pamięci podręcznej zestawu danych  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **DataReader** projektu, a następnie kliknij przycisk **Dodaj odwołanie**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **DataReader** projektu, a następnie kliknij przycisk **Dodaj odwołanie**.  
   
-2.  Na **.NET** zaznacz **Microsoft.VisualStudio.Tools.Applications.ServerDocument**.  
+2. Na **.NET** zaznacz **Microsoft.VisualStudio.Tools.Applications.ServerDocument**.  
   
-3.  Kliknij przycisk **OK**.  
+3. Kliknij przycisk **OK**.  
   
-4.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **DataReader** projektu, a następnie kliknij przycisk **Dodaj odwołanie**.  
+4. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **DataReader** projektu, a następnie kliknij przycisk **Dodaj odwołanie**.  
   
-5.  Na **projektów** zaznacz **AdventureWorksDataSet**i kliknij przycisk **OK**.  
+5. Na **projektów** zaznacz **AdventureWorksDataSet**i kliknij przycisk **OK**.  
   
-6.  Otwórz *Program.cs* lub *Module1.vb* plik w edytorze kodu.  
+6. Otwórz *Program.cs* lub *Module1.vb* plik w edytorze kodu.  
   
-7.  Dodaj następujący kod **przy użyciu** (dla C#) lub **Importy** (dla języka Visual Basic) instrukcji na górze pliku kodu.  
+7. Dodaj następujący kod **przy użyciu** (dla C#) lub **Importy** (dla języka Visual Basic) instrukcji na górze pliku kodu.  
   
-     [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-     [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]  
+    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
+    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]  
   
-8.  Dodaj następujący kod do `Main` metody. Ten kod deklaruje następujące obiekty:  
+8. Dodaj następujący kod do `Main` metody. Ten kod deklaruje następujące obiekty:  
   
-    -   Wystąpienie `AdventureWorksLTDataSet` typu, który jest zdefiniowany w **AdventureWorksDataSet** projektu.  
+   - Wystąpienie `AdventureWorksLTDataSet` typu, który jest zdefiniowany w **AdventureWorksDataSet** projektu.  
   
-    -   Ścieżka do skoroszytu AdventureWorksReport w folderze kompilacji testowanego **AdventureWorksReport** projektu.  
+   - Ścieżka do skoroszytu AdventureWorksReport w folderze kompilacji testowanego **AdventureWorksReport** projektu.  
   
-    -   A <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> obiekt na potrzeby dostępu do pamięci podręcznej danych w skoroszycie.  
+   - A <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> obiekt na potrzeby dostępu do pamięci podręcznej danych w skoroszycie.  
   
-        > [!NOTE]  
-        >  Poniższy kod zakłada, że skoroszyt jest zapisywany przy użyciu *xlsx* rozszerzenia. Jeśli skoroszyt w projekcie ma inne rozszerzenie, zmodyfikuj ścieżkę zgodnie z potrzebami.  
+     > [!NOTE]  
+     >  Poniższy kod zakłada, że skoroszyt jest zapisywany przy użyciu *xlsx* rozszerzenia. Jeśli skoroszyt w projekcie ma inne rozszerzenie, zmodyfikuj ścieżkę zgodnie z potrzebami.  
   
      [!code-csharp[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#10)]
      [!code-vb[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#10)]  
   
 9. Dodaj następujący kod do `Main` metoda po kodzie dodanym w poprzednim kroku. Kod będzie wykonywał następujące zadania:  
   
-    -   Używa ona <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> właściwość <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy w celu dostępu do pamięci podręcznej zestawu danych w skoroszycie.  
+   - Używa ona <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> właściwość <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy w celu dostępu do pamięci podręcznej zestawu danych w skoroszycie.  
   
-    -   Odczytuje dane z pamięci podręcznej zestawu danych do lokalnego zestawu danych.  
+   - Odczytuje dane z pamięci podręcznej zestawu danych do lokalnego zestawu danych.  
   
-    -   Wyświetla liczbę wierszy w zestawie danych lokalnych, aby upewnić się, że zawiera on danych.  
+   - Wyświetla liczbę wierszy w zestawie danych lokalnych, aby upewnić się, że zawiera on danych.  
   
      [!code-csharp[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#11)]
      [!code-vb[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#11)]  

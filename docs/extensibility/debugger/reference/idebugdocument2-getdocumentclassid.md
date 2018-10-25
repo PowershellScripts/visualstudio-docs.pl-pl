@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79a80d5a37c341a46d32e9bedac8f7ff416158da
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ab5fd153706e1f28da1931165179f479c7052e82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103708"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836453"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 Pobiera identyfikator klasy dokumentu.  
@@ -44,10 +44,10 @@ int GetDocumentClassID(
  [out] Zwraca identyfikator GUID, który jest Identyfikatorem klasy dokumentu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Identyfikator GUID klasy można utworzyć wystąpienia poszczególnych klas, z których każdy reprezentuje dokumentu.  
+ Identyfikator GUID klasy może służyć do tworzenia wystąpień poszczególnych klas, z których każdy reprezentuje dokumentu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

@@ -131,12 +131,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbd84b13757e4d742896c0450bd4661b5c4d06cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900166"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Dodawanie adnotacji do parametrów funkcji i zwracanych wartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -304,92 +304,92 @@ W tym artykule opisano typowe zastosowania adnotacji dla parametrów funkcji pro
   
  **Adnotacje i opisów**  
   
--   `_Outptr_`  
+- `_Outptr_`  
   
-     Parametr nie może mieć wartości null, a w stanie po lokalizacji wskazanej nie może mieć wartości null i muszą być prawidłowe.  
+   Parametr nie może mieć wartości null, a w stanie po lokalizacji wskazanej nie może mieć wartości null i muszą być prawidłowe.  
   
--   `_Outptr_opt_`  
+- `_Outptr_opt_`  
   
-     Parametr może mieć wartości null, ale w stanie po lokalizacji wskazanej nie może mieć wartości null i muszą być prawidłowe.  
+   Parametr może mieć wartości null, ale w stanie po lokalizacji wskazanej nie może mieć wartości null i muszą być prawidłowe.  
   
--   `_Outptr_result_maybenull_`  
+- `_Outptr_result_maybenull_`  
   
-     Parametr nie może mieć wartości null, a następnie w stanie po lokalizacji wskazanej może mieć wartości null.  
+   Parametr nie może mieć wartości null, a następnie w stanie po lokalizacji wskazanej może mieć wartości null.  
   
--   `_Outptr_opt_result_maybenull_`  
+- `_Outptr_opt_result_maybenull_`  
   
-     Parametr może mieć wartości null, a następnie w stanie po lokalizacji wskazanej może mieć wartości null.  
+   Parametr może mieć wartości null, a następnie w stanie po lokalizacji wskazanej może mieć wartości null.  
   
- W poniższej tabeli dodatkowe podciągi są wstawiane do nazwę adnotacji, aby bardziej szczegółowo. znaczenie adnotacji.  Różne podciągi są `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, i `_to_`.  
+  W poniższej tabeli dodatkowe podciągi są wstawiane do nazwę adnotacji, aby bardziej szczegółowo. znaczenie adnotacji.  Różne podciągi są `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, i `_to_`.  
   
 > [!IMPORTANT]
 >  Jeśli interfejs, który jest dodawanie adnotacji do modelu COM, należy użyć formy COM tych adnotacji. Nie należy używać adnotacje COM za pomocą dowolnego typu interfejsu.  
   
  **Adnotacje i opisów**  
   
--   `_Outptr_result_z_`  
+- `_Outptr_result_z_`  
   
-     `_Outptr_opt_result_z_`  
+   `_Outptr_opt_result_z_`  
   
-     `_Outptr_result_maybenull_z_`  
+   `_Outptr_result_maybenull_z_`  
   
-     `_Ouptr_opt_result_maybenull_z_`  
+   `_Ouptr_opt_result_maybenull_z_`  
   
-     Został zwrócony wskaźnik `_Null_terminated_` adnotacji.  
+   Został zwrócony wskaźnik `_Null_terminated_` adnotacji.  
   
--   `_COM_Outptr_`  
+- `_COM_Outptr_`  
   
-     `_COM_Outptr_opt_`  
+   `_COM_Outptr_opt_`  
   
-     `_COM_Outptr_result_maybenull_`  
+   `_COM_Outptr_result_maybenull_`  
   
-     `_COM_Outptr_opt_result_maybenull_`  
+   `_COM_Outptr_opt_result_maybenull_`  
   
-     Zwrócony wskaźnik ma semantykę COM i dlatego `_On_failure_` po warunek, że zwrócony wskaźnik ma wartość null.  
+   Zwrócony wskaźnik ma semantykę COM i dlatego `_On_failure_` po warunek, że zwrócony wskaźnik ma wartość null.  
   
--   `_Outptr_result_buffer_(s)`  
+- `_Outptr_result_buffer_(s)`  
   
-     `_Outptr_result_bytebuffer_(s)`  
+   `_Outptr_result_bytebuffer_(s)`  
   
-     `_Outptr_opt_result_buffer_(s)`  
+   `_Outptr_opt_result_buffer_(s)`  
   
-     `_Outptr_opt_result_bytebuffer_(s)`  
+   `_Outptr_opt_result_bytebuffer_(s)`  
   
-     Zwrócony wskaźnik wskazuje na prawidłową bufor o rozmiarze `s` elementów lub liczbę bajtów.  
+   Zwrócony wskaźnik wskazuje na prawidłową bufor o rozmiarze `s` elementów lub liczbę bajtów.  
   
--   `_Outptr_result_buffer_to_(s, c)`  
+- `_Outptr_result_buffer_to_(s, c)`  
   
-     `_Outptr_result_bytebuffer_to_(s, c)`  
+   `_Outptr_result_bytebuffer_to_(s, c)`  
   
-     `_Outptr_opt_result_buffer_to_(s,c)`  
+   `_Outptr_opt_result_buffer_to_(s,c)`  
   
-     `_Outptr_opt_result_bytebuffer_to_(s,c)`  
+   `_Outptr_opt_result_bytebuffer_to_(s,c)`  
   
-     Zwrócony wskaźnik wskazuje bufor o rozmiarze `s` elementów lub liczbę bajtów, z których pierwszy `c` są prawidłowe.  
+   Zwrócony wskaźnik wskazuje bufor o rozmiarze `s` elementów lub liczbę bajtów, z których pierwszy `c` są prawidłowe.  
   
- Niektóre konwencje interfejsu zakładają, że parametry wyjściowe są zniesione w przypadku niepowodzenia.  Z wyjątkiem jawnie kodu COM formularze w poniższej tabeli są preferowane.  Dla kodu COM należy użyć odpowiedniej formularzy COM, które są wymienione w poprzedniej sekcji.  
+  Niektóre konwencje interfejsu zakładają, że parametry wyjściowe są zniesione w przypadku niepowodzenia.  Z wyjątkiem jawnie kodu COM formularze w poniższej tabeli są preferowane.  Dla kodu COM należy użyć odpowiedniej formularzy COM, które są wymienione w poprzedniej sekcji.  
   
- **Adnotacje i opisów**  
+  **Adnotacje i opisów**  
   
--   `_Result_nullonfailure_`  
+- `_Result_nullonfailure_`  
   
-     Modyfikuje innych adnotacji. Wynik jest ustawiany na wartość null, jeśli funkcja kończy się niepowodzeniem.  
+   Modyfikuje innych adnotacji. Wynik jest ustawiany na wartość null, jeśli funkcja kończy się niepowodzeniem.  
   
--   `_Result_zeroonfailure_`  
+- `_Result_zeroonfailure_`  
   
-     Modyfikuje innych adnotacji. Wynik jest ustawiany na zero, jeśli funkcja zawiedzie.  
+   Modyfikuje innych adnotacji. Wynik jest ustawiany na zero, jeśli funkcja zawiedzie.  
   
--   `_Outptr_result_nullonfailure_`  
+- `_Outptr_result_nullonfailure_`  
   
-     Zwrócony wskaźnik wskazuje na prawidłowego buforu, jeśli funkcja się powiedzie, lub wartość null, jeśli funkcja kończy się niepowodzeniem. Ta adnotacja jest parametru — opcjonalne.  
+   Zwrócony wskaźnik wskazuje na prawidłowego buforu, jeśli funkcja się powiedzie, lub wartość null, jeśli funkcja kończy się niepowodzeniem. Ta adnotacja jest parametru — opcjonalne.  
   
--   `_Outptr_opt_result_nullonfailure_`  
+- `_Outptr_opt_result_nullonfailure_`  
   
-     Zwrócony wskaźnik wskazuje na prawidłowego buforu, jeśli funkcja się powiedzie, lub wartość null, jeśli funkcja kończy się niepowodzeniem. Ta adnotacja jest parametrem opcjonalnym.  
+   Zwrócony wskaźnik wskazuje na prawidłowego buforu, jeśli funkcja się powiedzie, lub wartość null, jeśli funkcja kończy się niepowodzeniem. Ta adnotacja jest parametrem opcjonalnym.  
   
--   `_Outref_result_nullonfailure_`  
+- `_Outref_result_nullonfailure_`  
   
-     Zwrócony wskaźnik wskazuje na prawidłowego buforu, jeśli funkcja się powiedzie, lub wartość null, jeśli funkcja kończy się niepowodzeniem. Ta adnotacja jest parametr przekazany przez odwołanie.  
+   Zwrócony wskaźnik wskazuje na prawidłowego buforu, jeśli funkcja się powiedzie, lub wartość null, jeśli funkcja kończy się niepowodzeniem. Ta adnotacja jest parametr przekazany przez odwołanie.  
   
 ## <a name="output-reference-parameters"></a>Parametry odwołania danych wyjściowych  
  Zazwyczaj jest używane, parametru odwołania dla parametrów wyjściowych.  Dla parametrów odwołania proste dane wyjściowe — na przykład `int&`—`_Out_` zapewnia semantykę, poprawna.  Jednak, gdy wartość wyjściowa jest wskaźnikiem — na przykład `int *&`— adnotacje równoważne wskaźnika, takich jak `_Outptr_ int **` nie zapewniają poprawne semantyki.  Aby zwięźle wyrazić semantykę parametrów odwołania danych wyjściowych dla typów wskaźnika, należy użyć tych złożonych adnotacji:  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_addressSection | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_addresssection — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5b4ed00e11cc994006ee91fd315e33fadbe6bd3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e62f6738d07b2f0e4463cd685bf3111cd7011a10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820028"
 ---
 # <a name="idiasymbolgetaddresssection"></a>IDiaSymbol::get_addressSection
-Pobiera część adresu w sekcji. Używany, gdy [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) ma ustawioną wartość `LocIsStatic`.  
+Pobiera część sekcji adres lokalizacji. Zastosowania [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) ustawiono `LocIsStatic`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,18 +34,18 @@ HRESULT get_addressSection (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca część sekcji adresu.  
+ [out] Zwraca część sekcji adres lokalizacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
- Dla statycznych elementów członkowskich znajdujących się w bibliotece DLL zewnętrznych sekcji zwracane przez tę metodę może być 0, zgodnie z tej metody polega na uzyskaniu elementu członkowskiego wirtualnego adresu. Wirtualne adresy są prawidłowe tylko wtedy, gdy [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) metody w [idiasession —](../../debugger/debug-interface-access/idiasession.md) interfejsu została wywołana z parametrem różną od zera, określając adres ładowania biblioteki dll.  
+ Dla statycznych elementów członkowskich znajdujących się w zewnętrznej bibliotece DLL sekcja zwracanego przez tę metodę może mieć wartość 0, ponieważ ta metoda zależy od tego, uzyskiwanie adresu wirtualnego elementu członkowskiego. Wirtualne adresy są prawidłowe tylko wtedy, gdy [idiasession::put_loadaddress —](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) method in Class metoda [idiasession —](../../debugger/debug-interface-access/idiasession.md) interfejsu została wywołana z parametrem wartość różną od zera, określając adres obciążenia biblioteki dll.  
   
- Aby uzyskać przesunięcia część adresu, należy wywołać [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) metody.  
+ Aby uzyskać przesunięcia część adresu, należy wywołać [idiasymbol::get_addressoffset —](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
   
@@ -56,4 +56,4 @@ HRESULT get_addressSection (
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [Locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md)
+ [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)

@@ -1,5 +1,5 @@
 ---
-title: Wdrażanie aplikacji platformy uniwersalnej systemu Windows z programu Visual Studio | Dokumentacja firmy Microsoft
+title: Wdrażanie aplikacji platformy UWP w programie Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/16/2018
 ms.technology: vs-ide-debug
@@ -14,105 +14,105 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: fda8e9b09fadfb57145331b1fc09acc1687e58e7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 81d29324f0888655e729f347d1ae22e12d777be4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477284"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818422"
 ---
-# <a name="deploy-uwp-apps-from-visual-studio"></a>Wdrażanie aplikacji platformy uniwersalnej systemu Windows z programu Visual Studio
+# <a name="deploy-uwp-apps-from-visual-studio"></a>Wdrażanie aplikacji platformy UWP przy użyciu programu Visual Studio
   
- Funkcja wdrożenia programu Visual Studio tworzy i rejestruje aplikacji platformy uniwersalnej systemu Windows, które są tworzone w programie Visual Studio na urządzeniu docelowym. Dokładnie, jak jest zarejestrowana aplikacja, zależy od tego, czy urządzenie docelowe jest lokalnym lub zdalnym:  
+ Funkcjonalność wdrożenia programu Visual Studio tworzy i rejestruje aplikacje platformy uniwersalnej systemu Windows, które są tworzone za pomocą programu Visual Studio na urządzeniu docelowym. Dokładnie, jak aplikacja jest zarejestrowana, zależy od tego, czy urządzenie docelowe jest lokalnym lub zdalnym:  
   
--   Gdy element docelowy jest na komputerze lokalnym programu Visual Studio, Visual Studio rejestruje aplikacji ze swojego folderu kompilacji.  
+- Gdy element docelowy jest komputera lokalnego programu Visual Studio, Visual Studio rejestruje aplikacji z poziomu folderu jego kompilacji.  
   
--   Gdy elementem docelowym jest urządzenie zdalne, Visual Studio kopiuje pliki wymagane do maszyny zdalnej i rejestruje aplikację na tym urządzeniu.  
+- Gdy element docelowy jest urządzenie zdalne, Visual Studio kopiuje pliki wymagane do maszyny zdalnej i rejestruje aplikację na tym urządzeniu.  
   
- Wdrożenia jest automatycznie podczas debugowania aplikacji z programu Visual Studio za pomocą **Rozpocznij debugowanie** opcji (klawiatury: F5) lub **uruchomić bez debugowania** opcji (klawiatury: CTRL + F5). Można także wdrożyć aplikację ręcznie. Ręczne wdrażanie jest przydatne w następujących scenariuszach:  
+  Wdrożenia jest automatycznie podczas debugowania aplikacji w programie Visual Studio przy użyciu **Rozpocznij debugowanie** opcji (klawiatura: F5) lub **Rozpocznij bez debugowania** opcji (klawiatury: CTRL + F5). Można także wdrożyć aplikację ręcznie. Ręczne wdrażanie jest przydatne w następujących scenariuszach:  
   
--   Ad hoc testowania na komputerze lokalnym lub zdalnym.  
+- Ad hoc testów na komputerze lokalnym lub zdalnym.  
   
--   Wdrażanie aplikacji, która zostanie uruchomiony w innej aplikacji, który chcesz debugować.  
+- Wdrażanie aplikacji, która zostanie uruchomiona w innej aplikacji, który chcesz debugować.  
   
--   Wdrażanie aplikacji, która będzie debugowany po uruchomieniu przez inną aplikację lub metody.
+- Wdrażanie aplikacji, która będzie debugowany, gdy jest ona uruchamiana przez inną aplikację lub metody.
   
 ##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Jak wdrożyć aplikację platformy uniwersalnej systemu Windows  
- Ręczne wdrażanie aplikacji jest prosty proces:  
+ Ręczne wdrażanie aplikacji jest prostym procesem:  
   
-1.  Jeśli wdrażasz do zdalnego urządzenia, określ nazwę lub adres IP urządzenia, na stronie właściwości projektu Projekt startowy aplikacji. (Kroki są wymienione w dół dalsze w tym temacie).  
+1.  Jeśli są wdrażane na urządzeniu zdalnym, należy określić nazwę lub adres IP urządzenia na stronie właściwości projektu z projektu do uruchamiania aplikacji. (Kroki, aby zrobić to są wymienione dalszych szczegółów, w tym temacie).  
   
-2.  Na pasku narzędzi programu Visual Studio debugger wybierz cel wdrożenia z listy rozwijanej obok pola **Rozpocznij debugowanie** przycisku.  
+2.  Na pasku narzędzi programu Visual Studio debugger wybierz cel wdrożenia z listy rozwijanej obok **Rozpocznij debugowanie** przycisku.  
   
-     ![Uruchom na komputerze lokalnym](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")  
+     ![Uruchom na lokalnym komputerze](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")  
   
 3.  Na **kompilacji** menu, wybierz **wdrażania**  
   
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Jak określać urządzenie zdalne  
+##  <a name="BKMK_How_to_specify_a_remote_device"></a> Jak określić urządzenie zdalne  
 
 **Wymagania wstępne**  
   
-Na zdalnym urządzeniu z systemem Windows 10, należy włączyć [tryb dewelopera](/windows/uwp/get-started/enable-your-device-for-development). Na urządzeniach z systemem Windows 10 systemem twórcy aktualizacji lub później, zdalne narzędzia są instalowane automatycznie podczas wdrażania aplikacji. Aby uzyskać więcej informacji, zobacz [debugowania pakietu aplikacji zainstalowanych](../debugger/debug-installed-app-package.md).
+Na urządzeniu zdalnym systemem Windows 10, należy włączyć [tryb dewelopera](/windows/uwp/get-started/enable-your-device-for-development). Na urządzeniach Windows 10 z aktualizacją Update twórcy lub później, zdalne narzędzia są instalowane automatycznie podczas wdrażania aplikacji. Aby uzyskać więcej informacji, zobacz [debugowanie zainstalowanego pakietu aplikacji](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> Na wstępnie twórcy wersje aktualizacji systemu Windows 10 narzędzi Remote Tools for Visual Studio musi być zainstalowany na urządzeniu zdalnym i zdalnego debugera musi być uruchomiona.
+> Na wstępnie twórcy wersje aktualizacji systemu Windows 10 Remote Tools for Visual Studio musi być zainstalowany na urządzeniu zdalnym i zdalny debuger musi być uruchomiona.
   
-Wdrożenie używa zdalnego debugera kanał sieciowy do wysyłania plików aplikacji do urządzenia zdalnego.  
+Wdrożenie używa zdalny debuger kanał sieciowy do wysyłania plików aplikacji na urządzeniu zdalnym.  
   
 #### <a name="to-specify-a-remote-device"></a>Aby określić urządzenie zdalne  
   
-1.  Na stronie właściwości debugowania projektu startowego Określ nazwę lub adres IP docelowego zdalnego wdrażania.  
+1. Na stronie właściwości debugowania projektu startowego Określ nazwę lub adres IP elementu docelowego wdrażania zdalnego.  
   
-2.  Aby otworzyć stronę właściwości debugowania, wybierz projekt w Eksploratorze rozwiązań, a następnie wybierz **właściwości** z menu skrótów.  
+2. Aby otworzyć stronę właściwości debugowania, wybierz projekt w Eksploratorze rozwiązań, a następnie wybierz **właściwości** z menu skrótów.  
   
-3.  Następnie wybierz pozycję **debugowania** węzła w oknie właściwości strony.
+3. Następnie wybierz **debugowania** węzła w oknie właściwości strony.
 
-4. Dla **urządzenie docelowe**, wybierz pozycję **maszyny zdalnej**.
+4. Aby uzyskać **urządzenie docelowe**, wybierz opcję **maszyny zdalnej**.
 
 5. W obszarze **maszyny zdalnej**, kliknij przycisk **znaleźć**.
   
-4.  Możesz wpisać nazwę lub adres IP urządzenia zdalnego, lub możesz wybrać urządzenia z **połączenia zdalnego** okno dialogowe.  
+6. Możesz wpisać nazwę lub adres IP urządzenia zdalnego lub można wybrać urządzenie w **połączenia zdalnego** okno dialogowe.  
   
-     ![Wybierz okno dialogowe połączenia zdalnego debugera](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
+    ![Okno dialogowe Wybierz połączenie ze zdalnym debugerem](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
   
-     **Połączenia zdalnego** okno dialogowe wyświetla w podsieci sieci lokalnej i dowolne urządzenie, które są połączone bezpośrednio do maszyny programu Visual Studio przez kabla Ethernet urządzenia.  
+    **Połączenia zdalnego** okno dialogowe wyświetla urządzenia w podsieci sieci lokalnej i dowolnego urządzenia podłączonego bezpośrednio do maszyny programu Visual Studio za pomocą kabla Ethernet.  
   
- **Określanie zdalnego urządzenia na stronie projektu JavaScript lub Visual C++**  
+   **Określanie urządzenie zdalne, na stronie projektu języka Visual C++ lub JavaScript**  
   
- ![C&#43; &#43; właściwości do zdalnego debugowania projektu](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
+   ![C&#43; &#43; właściwości dla zdalnego debugowania projektu](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
   
-1.  Wybierz **zdalnego debugera** z **debugera, aby uruchomić** listy.  
+7. Wybierz **zdalny debuger** z **debuger do uruchomienia** listy.  
   
-2.  Wprowadź nazwę sieci urządzenie zdalne w **Nazwa maszyny** pole. Alternatywnie można wybrać strzałkę w dół w polu, aby wybrać urządzenie w oknie dialogowym Wybierz połączenia zdalnego debugera.  
+8. Wprowadź nazwę sieciową urządzenia zdalnego w **NazwaKomputera** pole. Alternatywnie można wybrać strzałkę w dół w polu, aby wybrać urządzenie w oknie dialogowym Wybierz połączenie ze zdalnym debugerem.  
   
- **Określanie zdalnego urządzenia na stronie projektu Visual C# i Visual Basic**  
+   **Określanie urządzenie zdalne na stronie projektu Visual C# i Visual Basic**  
   
- ![Właściwości projektu zdalne debugowanie zarządzane](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")  
+   ![Właściwości projektu dla zdalnego debugowania zarządzane](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-1.  Wybierz **maszyny zdalnej** z **urządzenie docelowe** listy.  
+9. Wybierz **maszyny zdalnej** z **urządzenie docelowe** listy.  
   
-2.  Wprowadź nazwę sieci urządzenie zdalne w **maszyny zdalnej** lub kliknij przycisk **znaleźć** aby wybrać urządzenie z **wybierz połączenia zdalnego debugera** okno dialogowe.  
+10. Wprowadź nazwę sieciową urządzenia zdalnego w **maszyny zdalnej** lub przycisk **znaleźć** do wyboru urządzenia z **wybierz połączenie ze zdalnym debugerem** okno dialogowe.  
   
 ##  <a name="BKMK_Deployment_options"></a> Opcje wdrażania  
  Można ustawić następujące opcje wdrażania na stronie właściwości debugowania projektu startowego.  
   
  **Zezwalaj na sprzężenie zwrotne sieci**  
- Ze względów bezpieczeństwa platformy uniwersalnej systemu Windows lub [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikację, która jest zainstalowana w standardowy sposób nie może wykonywać wywołania sieci jest zainstalowany na urządzeniu. Domyślnie wdrożenie programu Visual Studio tworzy wyjątek od tej reguły dla wdrożonej aplikacji. To wykluczenie umożliwia przetestowanie procedur komunikacji na jednym komputerze. Przed wysłaniem aplikacji [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], należy przetestować aplikację bez zwolnienia.  
+ Ze względów bezpieczeństwa, platformy uniwersalnej systemu Windows lub [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikację, która jest zainstalowana w standardowy sposób wykonywania wywołań sieci na urządzeniu jest zainstalowany na jest niedozwolone. Domyślnie wdrożenie programu Visual Studio tworzy wyjątek od tej reguły dla wdrożonej aplikacji. To wykluczenie umożliwia przetestowanie procedur komunikacji na jednym komputerze. Przed przesłaniem aplikacji do [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], należy przetestować aplikację bez zwolnienia.  
   
- Aby usunąć wykluczenia sprzężenia zwrotnego sieci z poziomu aplikacji:  
+ Aby usunąć wykluczenie sprzężenie zwrotne sieci z poziomu aplikacji:  
   
--   Na stronie właściwości C# i VB debugowania wyczyść **Zezwalaj na sprzężenie zwrotne sieci** pole wyboru.  
+- Na stronie właściwości języka C# i VB debugowania wyczyść **Zezwalaj na sprzężenie zwrotne sieci** pole wyboru.  
   
--   Na stronie właściwości JavaScript i debugowania, ustaw **Zezwalaj na sprzężenie zwrotne sieci** do wartości **nr**.  
+- Na stronie właściwości języka JavaScript i debugowania, ustaw **Zezwalaj na sprzężenie zwrotne sieci** wartość **nie**.  
   
- **Nie uruchamiaj, ale Debuguj kod przy rozpoczęciu (C# i VB) / uruchom aplikację (JavaScript i C++)**  
- Aby skonfigurować wdrożenie, aby automatycznie uruchomić sesję debugowania, po uruchomieniu aplikacji:  
+  **Nie uruchamiaj, ale Debuguj kod przy rozpoczęciu (C# i VB) / uruchamianie aplikacji (JavaScript i C++)**  
+  Aby skonfigurować wdrożenie, aby automatycznie uruchomić sesję debugowania, gdy aplikacja jest uruchamiana:  
   
--   Na stronie właściwości C# i VB debugowania Sprawdź **nie uruchamiaj, ale Debuguj kod przy rozpoczęciu** pole wyboru.  
+- Na stronie właściwości języka C# i VB debugowania, sprawdź **nie uruchamiaj, ale Debuguj kod przy rozpoczęciu** pole wyboru.  
   
--   Na stronie właściwości JavaScript i debugowania, ustaw **uruchamianie aplikacji** do wartości **tak**.  
+- Na stronie właściwości języka JavaScript i debugowania, ustaw **Uruchom aplikację** wartość **tak**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zaawansowane opcje zdalnego wdrażania](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
- [Debugowanie pakietu zainstalowanych aplikacji](../debugger/debug-installed-app-package.md)   
+ [Debugowanie zainstalowanego pakietu aplikacji](../debugger/debug-installed-app-package.md)   
  [Uruchamianie aplikacji w programie Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 196b18fcc4c284a2fe61252a7b7fd7ce142160ae
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 9a72a6a7bdaa77cb313369dda8b84aff8b405a79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39277051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835049"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line"></a>Porady: dołączanie profilera do aplikacji autonomicznej .NET Framework w celu zbierania danych pamięci przy użyciu wiersza polecenia
 
@@ -50,18 +50,20 @@ Aby zakończyć sesję profilowania, profiler musi zostać odłączony od wszyst
 
      **/ OUTPUT /start:sample VSPerfCmd:** `OutputFile` [`Options`]
 
-    - [/Start](../profiling/start.md)**: Przykładowe** opcja inicjuje profiler.
+   - [/Start](../profiling/start.md)**: Przykładowe** opcja inicjuje profiler.
 
-    - [/Output](../profiling/output.md)**:** `OutputFile` opcja jest wymagana przy użyciu **/start**. `OutputFile` Określa nazwę i lokalizację pliku danych (Vsp) profilowania.
+   - [/Output](../profiling/output.md)**:** `OutputFile` opcja jest wymagana przy użyciu **/start**. `OutputFile` Określa nazwę i lokalizację pliku danych (Vsp) profilowania.
 
      Można użyć dowolnego z następujących opcji z **/start:sample** opcji.
 
-    |Opcja|Opis|
-    |------------|-----------------|
-    |[/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Określa nazwę domeny i użytkownika konta, które jest właścicielem PROFILOWANEGO procesu. Ta opcja jest wymagana tylko wtedy, gdy proces działa jako użytkownik inny niż zalogowany użytkownik. Właściciel procesu jest wymieniony w kolumnie Nazwa użytkownika na karcie Procesy Menedżera zadań Windows.|
-    |[/ crosssession &#124; skróconej/CS](../profiling/crosssession.md)|Włącza profilowanie procesów w innych sesjach. Ta opcja jest wymagana, jeśli aplikacja jest uruchomiona w innej sesji. Identyfikator sesji jest wymieniony w kolumnie Identyfikator sesji, na karcie Procesy Menedżera zadań Windows. **Skróconej/CS** może być określona jako skrót **/crosssession**.|
-    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Określa licznik wydajności Windows mają być zbierane podczas profilowania.|
-    |[/automark](../profiling/automark.md) **:** `Interval`|Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms.|
+
+     | Opcja | Opis |
+     | - | - |
+     | [/ User](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Określa nazwę domeny i użytkownika konta, które jest właścicielem PROFILOWANEGO procesu. Ta opcja jest wymagana tylko wtedy, gdy proces działa jako użytkownik inny niż zalogowany użytkownik. Właściciel procesu jest wymieniony w kolumnie Nazwa użytkownika na karcie Procesy Menedżera zadań Windows. |
+     | [/ crosssession &#124; skróconej/CS](../profiling/crosssession.md) | Włącza profilowanie procesów w innych sesjach. Ta opcja jest wymagana, jeśli aplikacja jest uruchomiona w innej sesji. Identyfikator sesji jest wymieniony w kolumnie Identyfikator sesji, na karcie Procesy Menedżera zadań Windows. **Skróconej/CS** może być określona jako skrót **/crosssession**. |
+     | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Określa licznik wydajności Windows mają być zbierane podczas profilowania. |
+     | [/automark](../profiling/automark.md) **:** `Interval` | Za pomocą **/wincounter** tylko. Określa liczbę milisekund między zdarzeniami zbierania licznika wydajności Windows. Wartość domyślna to 500 ms. |
+
 
 4. Jeśli to konieczne, uruchom aplikację docelową w typowy sposób.
 
@@ -103,7 +105,7 @@ Aby zakończyć sesję profilowania, profiler musi zostać odłączony od wszyst
 
 2. Zamknij program profilujący. Wpisz:
 
-     **Narzędzia VSPerfCmd** [ /shutdown  ](../profiling/shutdown.md)
+     **Narzędzia VSPerfCmd** [ /shutdown](../profiling/shutdown.md)
 
 3. (Opcjonalnie) Wyczyść zmienne środowiskowe profilowania. Wpisz:
 

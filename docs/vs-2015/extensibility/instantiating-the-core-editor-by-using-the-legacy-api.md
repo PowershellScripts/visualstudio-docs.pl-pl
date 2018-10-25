@@ -15,12 +15,12 @@ ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab42c05d404492883493645731094a67f5eb368b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e929f46ae6e7f1ef374c663242abb5b332ed4ffb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246041"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828445"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>Utworzenie wystąpienia podstawowy edytor za pomocą starszej wersji interfejsu API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,34 +29,34 @@ Edytor jest odpowiedzialny za edycji funkcji, takich jak wstawianie, usuwanie, k
   
  Możliwe jest utworzenie wystąpienia podstawowy edytor w jeden z trzech sposobów:  
   
--   Jawnie utworzyć wystąpienie podstawowe edytora w oknie.  
+- Jawnie utworzyć wystąpienie podstawowe edytora w oknie.  
   
--   Podaj fabryka edytora, która zwraca wystąpienie podstawowy edytor  
+- Podaj fabryka edytora, która zwraca wystąpienie podstawowy edytor  
   
--   Otwórz plik z hierarchii projektu.  
+- Otwórz plik z hierarchii projektu.  
   
- W poniższych sekcjach omówiono, jak utworzyć wystąpienia edytora za pomocą starszej wersji interfejsu API.  
+  W poniższych sekcjach omówiono, jak utworzyć wystąpienia edytora za pomocą starszej wersji interfejsu API.  
   
 ## <a name="explicitly-opening-a-core-editor-instance"></a>Jawnie otwierania wystąpienia edytorze podstawowych funkcji  
  Podczas uzyskiwania jawnie wystąpienie podstawowy edytor:  
   
--   Uzyskaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> do przechowywania obiektu danych dokumentu edytowany.  
+- Uzyskaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> do przechowywania obiektu danych dokumentu edytowany.  
   
--   Utwórz reprezentację wiersza zorientowanej na obiekt danych dokumentów, tworząc <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interfejs z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfejsu.  
+- Utwórz reprezentację wiersza zorientowanej na obiekt danych dokumentów, tworząc <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> interfejs z <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfejsu.  
   
--   Ustaw <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> jako obiekt danych dokumentu w przypadku wystąpienia domyślna Implementacja klasy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> interfejs, za pomocą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetBuffer%2A> metody.  
+- Ustaw <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> jako obiekt danych dokumentu w przypadku wystąpienia domyślna Implementacja klasy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> interfejs, za pomocą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetBuffer%2A> metody.  
   
-     Host <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> wystąpienia w <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfejs, za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateToolWindow%2A> metody.  
+   Host <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> wystąpienia w <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfejs, za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateToolWindow%2A> metody.  
   
- W tym momencie wyświetlanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfejs zapewnia okna, który zawiera wystąpienie podstawowy edytor.  
+  W tym momencie wyświetlanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> interfejs zapewnia okna, który zawiera wystąpienie podstawowy edytor.  
   
- Jednak to nie jest wystąpieniem bardzo przydatne, ponieważ nie ma klawiszy skrótów, lub uzyskać dostęp do zaawansowanych funkcji. Aby uzyskać dostępu do skróty i zaawansowane funkcje:  
+  Jednak to nie jest wystąpieniem bardzo przydatne, ponieważ nie ma klawiszy skrótów, lub uzyskać dostęp do zaawansowanych funkcji. Aby uzyskać dostępu do skróty i zaawansowane funkcje:  
   
--   Użyj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> do kojarzenia usługi językowej i obiekt danych dokumentu, który korzysta z edytora.  
+- Użyj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> do kojarzenia usługi językowej i obiekt danych dokumentu, który korzysta z edytora.  
   
--   Tworzenie własnych skrótów klawiaturowych albo użyj domyślnego systemu przez ustawienie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> obiekty będą wyświetlane właściwości. Aby to zrobić, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty%2A> metody z <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> właściwości.  
+- Tworzenie własnych skrótów klawiaturowych albo użyj domyślnego systemu przez ustawienie <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> obiekty będą wyświetlane właściwości. Aby to zrobić, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty%2A> metody z <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID> właściwości.  
   
-     Aby uzyskać i używać niestandardowych skrótów klawiaturowych, wygenerować je przy użyciu pliku vsct. Aby uzyskać więcej informacji, zobacz [tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+   Aby uzyskać i używać niestandardowych skrótów klawiaturowych, wygenerować je przy użyciu pliku vsct. Aby uzyskać więcej informacji, zobacz [tabeli poleceń w usłudze Visual Studio (. Pliki Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 ## <a name="how-to-use-an-editor-factory-to-obtain-the-core-editor"></a>Jak uzyskać podstawowy edytor za pomocą fabryki edytora  
  Podczas implementowania podstawowy edytor z fabryki edytora przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> metody, wykonaj wszystkie kroki opisane w poprzedniej sekcji, aby jawnie obsługiwać <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> przy użyciu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> obiektu danych dokumentu, <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> obiektu.  

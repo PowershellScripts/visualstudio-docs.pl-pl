@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d028d89f149a2fe444508d09086f6bec2408889e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 220a7b7ca4fe9c6167f05ba78877994d9abe57e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511004"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854913"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Wprowadzanie zmiennej lokalnej w programie Visual Studio
 
@@ -36,23 +36,23 @@ Dotyczy to generowanie kodu:
 
    - C#:
 
-    ![Wyróżniony kod C#](media/local-highlight-cs.png)
+       ![Wyróżniony kod C#](media/local-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Wyróżniony Kod VB](media/local-highlight-vb.png)
+       ![Wyróżniony Kod VB](media/local-highlight-vb.png)
 
-1. Następnie wykonaj jedną z następujących czynności:
+2. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
-     - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-     - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikona, który pojawia się na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym czerwona fala.
+      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
+      - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikona, który pojawia się na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym czerwona fala.
 
    ![Wprowadzenie lokalnego (wersja zapoznawcza)](media/local-preview-cs.png)
 
-1. Wybierz **wprowadź element lokalny dla (wszystkie wystąpienia) "*wyrażenie*"** z menu rozwijanego.
+3. Wybierz **wprowadź element lokalny dla (wszystkie wystąpienia) "*wyrażenie*"** z menu rozwijanego.
 
    > [!TIP]
    > Użyj **podgląd zmian** link w dolnej części okna podglądu [Aby wyświetlić wszystkie zmiany](../../ide/preview-changes.md) , zostaną wprowadzone przed dokonaniem wyboru.
@@ -61,11 +61,11 @@ Dotyczy to generowanie kodu:
 
    - C#:
 
-      ![Implementuj interfejs wynik C#](media/local-result-cs.png)
+       ![Implementuj interfejs wynik C#](media/local-result-cs.png)
 
    - Visual Basic:
 
-      ![Implementuj interfejs wynik VB](media/local-result-vb.png)
+       ![Implementuj interfejs wynik VB](media/local-result-vb.png)
 
    > [!NOTE]
    > Możesz użyć **.. wyświetlacze wystąpień...**  opcję menu, aby zastąpić każde wystąpienie wybranego wyrażenia, a nie tylko jedną, specjalnie wyróżnioną pozycją.

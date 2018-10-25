@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8620a51480868302fc840bffea5bbdb427c48f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44bafccdb3c99032678a808ba3f82f9f14558b3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893432"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Wskazówki: Tworzenie rozszerzenia projektu SharePoint
   W tym instruktażu pokazano, jak można utworzyć rozszerzenia dla projektów programu SharePoint. Rozszerzenie projektu można użyć w celu reagowania na zdarzenia na poziomie projektu na przykład w przypadku projektu jest dodane, usunięte lub zmieniono jego nazwę. Można również dodać właściwości niestandardowe lub reagować po zmianie wartości właściwości. W przeciwieństwie do rozszerzenia elementu projektu projektu rozszerzenia nie może być skojarzony z określonego typu projektu programu SharePoint. Podczas tworzenia rozszerzenia projektu rozszerzenia ładuje po otwarciu dowolnego rodzaju projektu programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -53,11 +53,11 @@ ms.locfileid: "42635619"
 ## <a name="create-the-projects"></a>Tworzenie projektów
  Do przeprowadzenia tego instruktażu, należy utworzyć dwa projekty:  
   
--   Projekt VSIX do stworzenia pakietu VSIX, aby wdrożyć rozszerzenie projektu.  
+- Projekt VSIX do stworzenia pakietu VSIX, aby wdrożyć rozszerzenie projektu.  
   
--   Projekt biblioteki klas, który implementuje rozszerzenie projektu.  
+- Projekt biblioteki klas, który implementuje rozszerzenie projektu.  
   
- Instruktaż należy rozpocząć od utworzenia projektów.  
+  Instruktaż należy rozpocząć od utworzenia projektów.  
   
 #### <a name="to-create-the-vsix-project"></a>Aby utworzyć projekt VSIX  
   

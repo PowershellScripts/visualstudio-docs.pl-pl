@@ -20,4 +20,4 @@ ms.lasthandoff: 04/18/2018
 ms.locfileid: "31457361"
 ---
 # <a name="about-microsoft-spy"></a>Informacje o Microsoft Spy++
-To okno dialogowe służy do wyświetlania praw autorskich, wersji, własność i inne informacje o programie Spy ++.
+To okno dialogowe służy do wyświetlania praw autorskich, wersji, własności i innych informacji o programie Spy ++.

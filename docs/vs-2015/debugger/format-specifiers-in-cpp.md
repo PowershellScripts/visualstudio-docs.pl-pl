@@ -33,12 +33,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52320637f9de3f7c96af75dae7a53a5626dfeb36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249824"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894056"
 ---
 # <a name="format-specifiers-in-c"></a>Specyfikatory formatu w C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Można zmienić format wyświetlania wartości w **Obejrzyj** okna przy użyciu 
   
 > [!NOTE]
 >  Debuger macierzysty Visual Studio zmieniony na nowym aparacie debugowania. W ramach tej zmiany dodano pewnych nowych specyfikatorów formatu i niektórych starych zostały usunięte. Starszy debuger jest nadal używana podczas wykonywania interop (mieszane macierzyste i zarządzane) debugowanie za pomocą C + +/ interfejsu wiersza polecenia. W poniższych sekcjach, w tym temacie opisano specyfikatory formatu dla każdego silnika debugowania.  
->   
->  -   [Specyfikatory formatu](#BKMK_Visual_Studio_2012_format_specifiers) opisuje specyfikatory formatu w nowym aparacie debugowania.  
-> -   [Specyfikatory formatu dla debugowania międzyoperacyjnego przy użyciu języka C + +/ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) opisuje specyfikatory formatu w starszym silniku debugowania.  
+> 
+> - [Specyfikatory formatu](#BKMK_Visual_Studio_2012_format_specifiers) opisuje specyfikatory formatu w nowym aparacie debugowania.  
+>   -   [Specyfikatory formatu dla debugowania międzyoperacyjnego przy użyciu języka C + +/ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) opisuje specyfikatory formatu w starszym silniku debugowania.  
   
 ## <a name="using-format-specifiers"></a>Przy użyciu specyfikatorów formatu  
  Jeśli masz następujący kod:  

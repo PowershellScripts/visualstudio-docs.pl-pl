@@ -13,12 +13,12 @@ ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc1d47030cf8c71b681e7f6f2ff3c6df5dfa58eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c10611ee05178f907c36aae268b0d6990a9e6606
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905704"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Przewodnik: tworzenie zestawu SDK przy użyciu języka C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -148,27 +148,27 @@ W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne bi
   
 ##  <a name="createSample"></a> Aby utworzyć przykładową aplikację, która używa biblioteki klas  
   
-1.  Na pasku menu wybierz **pliku**, **New**, **projektu**.  
+1. Na pasku menu wybierz **pliku**, **New**, **projektu**.  
   
-2.  Na liście szablonów rozwiń **Visual C++**, **Windows Store**, a następnie wybierz pozycję **pusta aplikacja**. W **nazwa** określ **NativeMathSDKSample**, a następnie wybierz **OK** przycisku.  
+2. Na liście szablonów rozwiń **Visual C++**, **Windows Store**, a następnie wybierz pozycję **pusta aplikacja**. W **nazwa** określ **NativeMathSDKSample**, a następnie wybierz **OK** przycisku.  
   
-3.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **NativeMathSDKSample** projektu, a następnie wybierz **Dodaj**, **odwołania**.  
+3. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **NativeMathSDKSample** projektu, a następnie wybierz **Dodaj**, **odwołania**.  
   
-4.  Na **wspólne właściwości**, **szablon i odwołania** rozwiń strony właściwości, na liście typów referencyjnych **Windows**, a następnie wybierz pozycję **rozszerzenia** . W okienku szczegółów wybierz **natywnym zestawem SDK matematyczne** rozszerzenie, a następnie wybierz **Dodaj nowe odwołanie** przycisku.  
+4. Na **wspólne właściwości**, **szablon i odwołania** rozwiń strony właściwości, na liście typów referencyjnych **Windows**, a następnie wybierz pozycję **rozszerzenia** . W okienku szczegółów wybierz **natywnym zestawem SDK matematyczne** rozszerzenie, a następnie wybierz **Dodaj nowe odwołanie** przycisku.  
   
-5.  W **Dodaj odwołanie** okno dialogowe, wybierz opcję **natywnym zestawem SDK matematyczne** pole wyboru, a następnie wybierz **OK** przycisku.  
+5. W **Dodaj odwołanie** okno dialogowe, wybierz opcję **natywnym zestawem SDK matematyczne** pole wyboru, a następnie wybierz **OK** przycisku.  
   
-6.  Wyświetl właściwości projektu dla NativeMathSDKSample.  
+6. Wyświetl właściwości projektu dla NativeMathSDKSample.  
   
-     Właściwości, które zostały zdefiniowane w NativeMathSDK.props zostały zastosowane podczas dodawania odwołania. Można to sprawdzić, analizując **katalogi VC ++** właściwości projektu **właściwości konfiguracji**.  
+    Właściwości, które zostały zdefiniowane w NativeMathSDK.props zostały zastosowane podczas dodawania odwołania. Można to sprawdzić, analizując **katalogi VC ++** właściwości projektu **właściwości konfiguracji**.  
   
-7.  W **Eksploratora rozwiązań**, otwórz plik MainPage.xaml i następnie zastąp jego zawartość za pomocą następujących XAML:  
+7. W **Eksploratora rozwiązań**, otwórz plik MainPage.xaml i następnie zastąp jego zawartość za pomocą następujących XAML:  
   
-     [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml#1)]  
+    [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml#1)]  
   
-8.  Aktualizowanie pliku Mainpage.xaml.h, aby dopasować ten kod:  
+8. Aktualizowanie pliku Mainpage.xaml.h, aby dopasować ten kod:  
   
-     [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.h#2)]  
+    [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.h#2)]  
   
 9. MainPage.xaml.cpp aktualizacja odpowiadający ten kod:  
   
@@ -180,7 +180,7 @@ W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne bi
   
      Zostanie wyświetlony odpowiedni wynik.  
   
- W tym przewodniku pokazano, jak utworzyć i wywoływać przy użyciu zestawu SDK rozszerzenia [!INCLUDE[wrt](../includes/wrt-md.md)] biblioteki i innej niż[!INCLUDE[wrt](../includes/wrt-md.md)] biblioteki.  
+    W tym przewodniku pokazano, jak utworzyć i wywoływać przy użyciu zestawu SDK rozszerzenia [!INCLUDE[wrt](../includes/wrt-md.md)] biblioteki i innej niż[!INCLUDE[wrt](../includes/wrt-md.md)] biblioteki.  
   
 ## <a name="next-steps"></a>Następne kroki  
   

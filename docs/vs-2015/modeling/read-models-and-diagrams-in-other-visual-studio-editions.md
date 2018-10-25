@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e38514b2c65fb5db557d49b1ae2a7daf0b932dd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c80404320f399139a18d863d71147d33a11ce86d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277865"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885203"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Odczytywanie modeli i diagramów w innych wersjach programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,11 +52,11 @@ Po otwarciu modelu w wersji programu Visual Studio, który nie obsługuje tworze
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Zmiany wprowadzone w trybie tylko do odczytu  
  Jeśli otworzysz modelu i jego diagramy w wersjach programu Visual Studio, który nie obsługuje tworzenia modelu, nie można zmienić modelu. Oznacza to, że nie można zmienić elementów i relacji, które są wyświetlane na diagramach lub w Eksploratorze modelu. Można jednak wprowadzić pewne zmiany, układu tych diagramów:  
   
--   Rozmieszczanie kształtów i łączników na diagramie.  
+- Rozmieszczanie kształtów i łączników na diagramie.  
   
--   Rozwijanie i zwijanie kształtów.  
+- Rozwijanie i zwijanie kształtów.  
   
- Możesz zapisać te zmiany. Jeśli chcesz zmiany były widoczne dla innych użytkowników, co najmniej trzeba wysłać zaktualizowany **.layout** plików.  
+  Możesz zapisać te zmiany. Jeśli chcesz zmiany były widoczne dla innych użytkowników, co najmniej trzeba wysłać zaktualizowany **.layout** plików.  
   
 ##  <a name="RelatedTopics"></a> Tematy pokrewne  
   

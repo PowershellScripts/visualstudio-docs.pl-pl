@@ -15,27 +15,27 @@ ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 63e1bc230df89fe219607c20e1cce248fc2238e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9109ef312fb16b4b370a9a8428f3ffb202b272ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270754"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862869"
 ---
 # <a name="sending-events"></a>Wysyłanie zdarzeń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Mechanizm komunikacji między debugera i aparat debugowania (DE) to model zdarzeń oparty na modelu DCOM. Zdarzenia są wysyłane jako obiekty COM, a każde zdarzenie ma następujące parametry, które określają następujące czynności:  
   
--   DE, która wywołała zdarzenie.  
+- DE, która wywołała zdarzenie.  
   
--   Opis co się stało.  
+- Opis co się stało.  
   
--   Proces, program i informacji o wątku, który identyfikuje kontekst, w którym wystąpiło zdarzenie. Ten proces nie są wysyłane do zdarzeń wysyłanych z URZ.  
+- Proces, program i informacji o wątku, który identyfikuje kontekst, w którym wystąpiło zdarzenie. Ten proces nie są wysyłane do zdarzeń wysyłanych z URZ.  
   
--   Typ zdarzenia, która wskazuje, czy zdarzenie jest synchroniczna lub asynchroniczna.  
+- Typ zdarzenia, która wskazuje, czy zdarzenie jest synchroniczna lub asynchroniczna.  
   
- Wszystkie zdarzenia debugowania są wysyłane przy użyciu metody [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
+  Wszystkie zdarzenia debugowania są wysyłane przy użyciu metody [IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Źródła zdarzeń](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  

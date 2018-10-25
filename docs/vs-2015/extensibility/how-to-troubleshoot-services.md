@@ -15,27 +15,27 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97084a1fe66bb84c56e1f6452397df9128f4d08f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fdce9cb5e6499066c7e96abe895db1505f952011
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826627"
 ---
 # <a name="how-to-troubleshoot-services"></a>Porady: Rozwiązywanie problemów z usługami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Istnieje kilka typowych problemów, które mogą wystąpić przy próbie usługi:  
   
--   Usługa nie jest zarejestrowana na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Usługa nie jest zarejestrowana na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Według typu interfejsu, a nie przez typ usługi, wymagane są usługi.  
+- Według typu interfejsu, a nie przez typ usługi, wymagane są usługi.  
   
--   Pakietu VSPackage żądania usługi nie ma zostały ulokowany.  
+- Pakietu VSPackage żądania usługi nie ma zostały ulokowany.  
   
--   Dostawca niewłaściwej usługi jest używany.  
+- Dostawca niewłaściwej usługi jest używany.  
   
- Jeśli żądanej usługi nie można uzyskać, wywołanie <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> zwraca wartość null. Zawsze należy sprawdzić dla wartości null po zażądaniu usługi:  
+  Jeśli żądanej usługi nie można uzyskać, wywołanie <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> zwraca wartość null. Zawsze należy sprawdzić dla wartości null po zażądaniu usługi:  
   
 ```csharp  
 IVsActivityLog log =   

@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fa5e2f46f3fa5cce9a795c2353148d2bd3f47351
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 977594493279d52154de3cb5ef7bce56d4d8f985
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293114"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836843"
 ---
 # <a name="properties-of-domain-properties"></a>Właściwości właściwości domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ A *właściwość domeny* jest funkcją elementu modelu, który może zawierać 
   
  Większość właściwości domeny są implementowane jako właściwości aparatu CLR zwykłej. Jednak z programowania punktu widzenia właściwości domeny mają więcej funkcji niż właściwości zwykłego programu:  
   
--   Można zdefiniować reguły i zdarzenia, które monitorują stan właściwości. Aby uzyskać więcej informacji, zobacz [reagowania na zagrożenia i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).  
+- Można zdefiniować reguły i zdarzenia, które monitorują stan właściwości. Aby uzyskać więcej informacji, zobacz [reagowania na zagrożenia i propagowanie zmian](../modeling/responding-to-and-propagating-changes.md).  
   
--   Transakcje zapobiec niespójne stanów. Aby uzyskać więcej informacji, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+- Transakcje zapobiec niespójne stanów. Aby uzyskać więcej informacji, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
- Po wybraniu Właściwość Domain w diagramie lub w Eksploratorze DSL, zobaczysz następujące elementy w oknie dialogowym właściwości. Aby uzyskać więcej informacji na temat używania tych elementów, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).  
+  Po wybraniu Właściwość Domain w diagramie lub w Eksploratorze DSL, zobaczysz następujące elementy w oknie dialogowym właściwości. Aby uzyskać więcej informacji na temat używania tych elementów, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
 |Właściwość|Opis|Wartość domyślna|  
 |--------------|-----------------|-------------------|  

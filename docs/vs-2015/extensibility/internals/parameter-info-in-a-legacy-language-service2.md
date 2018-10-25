@@ -17,12 +17,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fabc1f5e199b9b1456db704552a288a6c9beb76f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887569"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informacje o parametrach w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,11 +101,11 @@ namespace TestLanguagePackage
 ## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>Obsługa etykietki narzędzia informacji parametru w analizatorze składni  
  <xref:Microsoft.VisualStudio.Package.Source> Klasy zakłada pewne informacje o zawartości <xref:Microsoft.VisualStudio.Package.AuthoringScope> i <xref:Microsoft.VisualStudio.Package.AuthoringSink> klas, gdy informacje o parametrach etykietki narzędzia jest wyświetlany i aktualizacji.  
   
--   Biorąc pod uwagę analizator <xref:Microsoft.VisualStudio.Package.ParseReason> po wpisaniu znaku początkowego listy parametrów.  
+- Biorąc pod uwagę analizator <xref:Microsoft.VisualStudio.Package.ParseReason> po wpisaniu znaku początkowego listy parametrów.  
   
--   Lokalizacji określonej <xref:Microsoft.VisualStudio.Package.ParseRequest> obiekt jest po liście parametrów znak początkowy. Analizator musi zebrać podpisy wszystkie dostępne w deklaracji metody, których położenie i przechowywać je na liście w używanej wersji programu <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiektu. Ta lista zawiera nazwę metody, metody typu (lub zwracany typ) oraz listę możliwych parametrów. Ta lista jest później wyszukiwana podpis metody lub podpisy do wyświetlenia w etykietce narzędzia informacje o parametrach.  
+- Lokalizacji określonej <xref:Microsoft.VisualStudio.Package.ParseRequest> obiekt jest po liście parametrów znak początkowy. Analizator musi zebrać podpisy wszystkie dostępne w deklaracji metody, których położenie i przechowywać je na liście w używanej wersji programu <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiektu. Ta lista zawiera nazwę metody, metody typu (lub zwracany typ) oraz listę możliwych parametrów. Ta lista jest później wyszukiwana podpis metody lub podpisy do wyświetlenia w etykietce narzędzia informacje o parametrach.  
   
- Analizator należy następnie przeanalizować wiersza określonego przez parametr <xref:Microsoft.VisualStudio.Package.ParseRequest> obiekt, aby zebrać nazwę metody wprowadzanych, a także jak daleko wzdłuż użytkownika znajduje się w wpisywania parametrów. Jest to realizowane przez przekazanie nazwy metody <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> metody <xref:Microsoft.VisualStudio.Package.AuthoringSink> obiektu, a następnie wywołując <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> jest analizowany metody, gdy znak początkowy listy parametrów wywołania <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> metody podczas listy parametrów Następny znak jest przeanalizowany, a na koniec wywołania <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> metody, gdy znak końcowy listy parametrów jest analizowany. Wyniki tych wywołań metody są używane przez <xref:Microsoft.VisualStudio.Package.Source> klasy odpowiednio zaktualizować informacje o parametrach etykietki narzędzia.  
+  Analizator należy następnie przeanalizować wiersza określonego przez parametr <xref:Microsoft.VisualStudio.Package.ParseRequest> obiekt, aby zebrać nazwę metody wprowadzanych, a także jak daleko wzdłuż użytkownika znajduje się w wpisywania parametrów. Jest to realizowane przez przekazanie nazwy metody <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> metody <xref:Microsoft.VisualStudio.Package.AuthoringSink> obiektu, a następnie wywołując <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A> jest analizowany metody, gdy znak początkowy listy parametrów wywołania <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A> metody podczas listy parametrów Następny znak jest przeanalizowany, a na koniec wywołania <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A> metody, gdy znak końcowy listy parametrów jest analizowany. Wyniki tych wywołań metody są używane przez <xref:Microsoft.VisualStudio.Package.Source> klasy odpowiednio zaktualizować informacje o parametrach etykietki narzędzia.  
   
 ### <a name="example"></a>Przykład  
  Oto wiersza tekstu, który użytkownik może wprowadzić. Numery poniżej wiersza wskazują, który krok jest pobierana przez analizator, w tym miejscu w wierszu (przy założeniu analizy Przenosi od lewej do prawej). Zakładamy to, że wszystko przed wierszem ma już parsowane do podpisów metod, w tym podpis metody "testfunc".  

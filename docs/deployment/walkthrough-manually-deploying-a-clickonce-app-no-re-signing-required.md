@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b23d7da819a0403366260b240fa095defd0f120a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 91f552ce30030abeae6af0d63763625e711d32e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511412"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875102"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Wskazówki: Ręczne wdrażanie aplikacji ClickOnce, które nie wymagają ponownego podpisywania i zachowują informacje o znakowaniu
 Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i nadaj mu klientowi do publikowania i wdrażania, tradycyjnie miał odbiorcy do manifestu wdrażania aktualizacji i ponownie zaloguj się. Która nadal jest preferowaną metodą w większości przypadków, .NET Framework 3.5 pozwala na tworzenie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń, które mogą być wdrażane przez klientów bez konieczności ponownie wygenerować nowy manifest wdrożenia. Aby uzyskać więcej informacji, zobacz [aplikacji wdrażania technologii ClickOnce do testowania i produkcji serwerów bez ponownego podpisywania](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
@@ -48,36 +48,36 @@ Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>Do wdrożenia z wieloma wdrożenia i obsługę znakowania przy użyciu Mage.exe aplikacji ClickOnce  
   
-1.  Otwórz wiersz polecenia programu Visual Studio lub [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] wiersz polecenia i przejdź do katalogu, w którym będą przechowywane są Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] plików.  
+1. Otwórz wiersz polecenia programu Visual Studio lub [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] wiersz polecenia i przejdź do katalogu, w którym będą przechowywane są Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] plików.  
   
-2.  Utwórz katalog o nazwie po bieżąca wersja wdrożenia. Jeśli po raz pierwszy, aplikacja jest wdrażana, prawdopodobnie wybierzesz opcję **1.0.0.0**.  
+2. Utwórz katalog o nazwie po bieżąca wersja wdrożenia. Jeśli po raz pierwszy, aplikacja jest wdrażana, prawdopodobnie wybierzesz opcję **1.0.0.0**.  
   
-    > [!NOTE]
-    >  Wersja wdrożenie może się różnić od wersji plików aplikacji.  
+   > [!NOTE]
+   >  Wersja wdrożenie może się różnić od wersji plików aplikacji.  
   
-3.  Utwórz podkatalog o nazwie **bin** i skopiuj wszystkie pliki aplikacji w tym miejscu, w tym pliki wykonywalne, zestawy, zasobów i plików danych.  
+3. Utwórz podkatalog o nazwie **bin** i skopiuj wszystkie pliki aplikacji w tym miejscu, w tym pliki wykonywalne, zestawy, zasobów i plików danych.  
   
-4.  Generuj manifest aplikacji przy użyciu wywołania programu Mage.exe.  
+4. Generuj manifest aplikacji przy użyciu wywołania programu Mage.exe.  
   
-    ```cmd  
-    mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
-    ```  
+   ```cmd  
+   mage -New Application -ToFile 1.0.0.0\WindowsFormsApp1.exe.manifest -Name "Windows Forms App 1" -Version 1.0.0.0 -FromDirectory 1.0.0.0\bin -UseManifestForTrust true -Publisher "A. Datum Corporation"  
+   ```  
   
-5.  Zaloguj się w manifeście aplikacji za pomocą certyfikatu cyfrowego.  
+5. Zaloguj się w manifeście aplikacji za pomocą certyfikatu cyfrowego.  
   
-    ```cmd  
-    mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
-    ```  
+   ```cmd  
+   mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx  
+   ```  
   
-6.  Generowanie manifestu wdrażania z wywołaniem *Mage.exe*. Domyślnie *Mage.exe* spowoduje oznaczenie Twojego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia jako zainstalowanych aplikacji, tak że można uruchomić zarówno online i offline. Aby udostępnić aplikację, tylko wtedy, gdy użytkownik jest w trybie online, należy użyć `-i` argumentu o wartości `f`. Ponieważ ta aplikacja będzie móc korzystać z funkcji wdrażania w wielu, Wyklucz `-providerUrl` argument *Mage.exe*. (W wersjach programu .NET Framework wcześniejszych niż wersja 3.5, z wyłączeniem `-providerUrl` dla aplikacji w trybie offline spowoduje wystąpienie błędu.)  
+6. Generowanie manifestu wdrażania z wywołaniem *Mage.exe*. Domyślnie *Mage.exe* spowoduje oznaczenie Twojego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia jako zainstalowanych aplikacji, tak że można uruchomić zarówno online i offline. Aby udostępnić aplikację, tylko wtedy, gdy użytkownik jest w trybie online, należy użyć `-i` argumentu o wartości `f`. Ponieważ ta aplikacja będzie móc korzystać z funkcji wdrażania w wielu, Wyklucz `-providerUrl` argument *Mage.exe*. (W wersjach programu .NET Framework wcześniejszych niż wersja 3.5, z wyłączeniem `-providerUrl` dla aplikacji w trybie offline spowoduje wystąpienie błędu.)  
   
-    ```cmd  
-    mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
-    ```  
+   ```cmd  
+   mage -New Deployment -ToFile WindowsFormsApp1.application -Name "Windows Forms App 1" -Version 1.0.0.0 -AppManifest 1.0.0.0\WindowsFormsApp1.manifest   
+   ```  
   
-7.  Zrezygnujesz z podpisania manifestu wdrażania.  
+7. Zrezygnujesz z podpisania manifestu wdrażania.  
   
-8.  Podaj wszystkie pliki do klientów, którzy wdroży aplikację w jego sieci.  
+8. Podaj wszystkie pliki do klientów, którzy wdroży aplikację w jego sieci.  
   
 9. W tym momencie klienta muszą podpisać manifest wdrożenia przy użyciu własnej automatycznie wygenerowany certyfikat. Na przykład, jeśli klient działa w przypadku firma o nazwie Adventure Works, on wygenerować certyfikat z podpisem własnym za pomocą *MakeCert.exe* narzędzia. Następnie użyj *Pvk2pfx.exe* narzędzie do łączenia plików utworzonych przez *MakeCert.exe* do pliku PFX, który może być przekazywany do *Mage.exe*.  
   
@@ -96,28 +96,28 @@ Po utworzeniu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 
   
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageuiexe"></a>Do wdrożenia z wieloma wdrożenia i obsługę znakowania przy użyciu MageUI.exe aplikacji ClickOnce  
   
-1.  Otwórz wiersz polecenia programu Visual Studio lub [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] wiersz polecenia i przejdź do katalogu, w którym będą przechowywane są Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] plików.  
+1. Otwórz wiersz polecenia programu Visual Studio lub [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] wiersz polecenia i przejdź do katalogu, w którym będą przechowywane są Twoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] plików.  
   
-2.  Utwórz podkatalog o nazwie **bin** i skopiuj wszystkie pliki aplikacji w tym miejscu, w tym pliki wykonywalne, zestawy, zasobów i plików danych.  
+2. Utwórz podkatalog o nazwie **bin** i skopiuj wszystkie pliki aplikacji w tym miejscu, w tym pliki wykonywalne, zestawy, zasobów i plików danych.  
   
-3.  Tworzenie podkatalogu nazwanym tak bieżąca wersja wdrożenia. Jeśli po raz pierwszy, aplikacja jest wdrażana, prawdopodobnie wybierzesz opcję **1.0.0.0**.  
+3. Tworzenie podkatalogu nazwanym tak bieżąca wersja wdrożenia. Jeśli po raz pierwszy, aplikacja jest wdrażana, prawdopodobnie wybierzesz opcję **1.0.0.0**.  
   
-    > [!NOTE]
-    >  Wersja wdrożenie może się różnić od wersji plików aplikacji.  
+   > [!NOTE]
+   >  Wersja wdrożenie może się różnić od wersji plików aplikacji.  
   
-4.  Przenieś \\ **bin** katalog do katalogu, który został utworzony w kroku 2.  
+4. Przenieś \\ **bin** katalog do katalogu, który został utworzony w kroku 2.  
   
-5.  Uruchom narzędzie graficzne *MageUI.exe*.  
+5. Uruchom narzędzie graficzne *MageUI.exe*.  
   
-    ```cmd  
-    MageUI.exe  
-    ```  
+   ```cmd  
+   MageUI.exe  
+   ```  
   
-6.  Utwórz nowy manifest aplikacji przez wybranie **pliku**, **New**, **Manifest aplikacji** z menu.  
+6. Utwórz nowy manifest aplikacji przez wybranie **pliku**, **New**, **Manifest aplikacji** z menu.  
   
-7.  Domyślny **nazwa** wprowadź nazwę i numer wersji tego wdrożenia. Ponadto należy podać wartość **wydawcy**, która będzie służyć jako nazwa folderu dla łącza skrót aplikacji w Start menu po jego wdrożeniu.  
+7. Domyślny **nazwa** wprowadź nazwę i numer wersji tego wdrożenia. Ponadto należy podać wartość **wydawcy**, która będzie służyć jako nazwa folderu dla łącza skrót aplikacji w Start menu po jego wdrożeniu.  
   
-8.  Wybierz **Opcje aplikacji** kartę, a następnie kliknij przycisk **Manifest aplikacji użyj uzyskać zaufania**. Spowoduje to włączenie znakowania innych firm, w tym [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
+8. Wybierz **Opcje aplikacji** kartę, a następnie kliknij przycisk **Manifest aplikacji użyj uzyskać zaufania**. Spowoduje to włączenie znakowania innych firm, w tym [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
   
 9. Wybierz **pliki** kartę, a następnie kliknij przycisk **Przeglądaj** znajdujący się obok **katalogu aplikacji** pola tekstowego.  
   

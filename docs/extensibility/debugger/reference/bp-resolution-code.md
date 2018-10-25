@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: debb6d9e8f37ed34c67c8df659160949cfcf6158
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbd9e3d683336d2009e8ff9f02665f7610f988f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915194"
 ---
 # <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
-Określa lokalizację punktu przerwania w kodzie.  
+W tym artykule opisano lokalizacji punktu przerwania w kodzie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,10 +41,10 @@ public struct BP_RESOLUTION_CODE {
   
 ## <a name="members"></a>Elementy członkowskie  
  `pCodeContext`  
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiektu, który określa położenie punktu przerwania w kodzie.  
+ [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiektu, który identyfikuje położenie punktu przerwania w kodzie.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest elementem członkowskim [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) struktury, która jest w włączyć członkiem [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) zwrócony przez strukturę [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)metody.  
+ Ta struktura jest elementem członkowskim [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) struktury, która jest w Włącz członkiem [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) zwracany przez strukturę [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -54,7 +54,7 @@ public struct BP_RESOLUTION_CODE {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)   
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)   

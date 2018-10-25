@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 45bc88be425acf8532debc47a28ee3ea20c18c71
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 09ed896c85807da5a65084360fa62e24c3cca141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859630"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896214"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Zalecenia dotyczące pisania szablonów tekstowych T4
 Te ogólne wytyczne mogą być przydatne w przypadku generowania kodu programu lub innych zasobów aplikacji w programie Visual Studio. Zasady nie zostały ustalone.
@@ -43,28 +43,28 @@ Aby sprawdzić, czy powstały kod działa zgodnie z użytkownicy muszą, należy
  Zezwalaj na niestandardowego kodu: Generuj klasy częściowe.
 Zezwalaj na kod, który można zapisać ręcznie dodatkowo do wygenerowanego kodu. Jest nietypowy dla schematu generowania kodu można było uwzględnić wszystkie ewentualne zmiany, które mogą wystąpić. Dlatego należy oczekiwać dodać lub zmienić niektóre z wygenerowanego kodu. Gdzie wygenerowanego materiału jest w języku .NET takich jak [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] lub [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], są szczególnie przydatne, dwóch strategii:
 
--   Wygenerowane klasy powinna być częściowe. Dzięki temu można dodać zawartości do wygenerowanego kodu.
+- Wygenerowane klasy powinna być częściowe. Dzięki temu można dodać zawartości do wygenerowanego kodu.
 
--   Klas powinny być generowane w parach, jeden dziedziczenie w innej. Klasa bazowa powinien zawierać wszystkie wygenerowane metody i właściwości, a klasa pochodna może zawierać tylko konstruktory. Dzięki temu kod odręcznej do żadnego z wygenerowanych metod zastąpienia.
+- Klas powinny być generowane w parach, jeden dziedziczenie w innej. Klasa bazowa powinien zawierać wszystkie wygenerowane metody i właściwości, a klasa pochodna może zawierać tylko konstruktory. Dzięki temu kod odręcznej do żadnego z wygenerowanych metod zastąpienia.
 
- W innych językach wygenerowane, takich jak XML, należy użyć `<#@include#>` dyrektywy, aby proste kombinacji odręcznej i generowanej zawartości. W bardziej złożonych przypadkach trzeba napisać kroku przetwarzania końcowego, który łączy wygenerowany plik z plikami odręcznej.
+  W innych językach wygenerowane, takich jak XML, należy użyć `<#@include#>` dyrektywy, aby proste kombinacji odręcznej i generowanej zawartości. W bardziej złożonych przypadkach trzeba napisać kroku przetwarzania końcowego, który łączy wygenerowany plik z plikami odręcznej.
 
- Przenieś materiał typowe w plikach dołączonych lub szablonów czasu wykonywania, aby uniknąć powtarzania podobne bloków tekstu i kodu w różnych szablonach, `<#@ include #>` dyrektywy. Aby uzyskać więcej informacji, zobacz [dyrektywy zawierają T4](../modeling/t4-include-directive.md).
+  Przenieś materiał typowe w plikach dołączonych lub szablonów czasu wykonywania, aby uniknąć powtarzania podobne bloków tekstu i kodu w różnych szablonach, `<#@ include #>` dyrektywy. Aby uzyskać więcej informacji, zobacz [dyrektywy zawierają T4](../modeling/t4-include-directive.md).
 
- Można również tworzyć szablony tekstowe czasu wykonywania w osobnym projekcie, a następnie wywołaj je z szablonu w czasie projektowania. Aby to zrobić, należy użyć `<#@ assembly #>` dyrektywy do dostępu do oddzielnego projektu. Aby uzyskać przykłady, zobacz ["Dziedziczenie w szablonów tekstowych" w blogu Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+  Można również tworzyć szablony tekstowe czasu wykonywania w osobnym projekcie, a następnie wywołaj je z szablonu w czasie projektowania. Aby to zrobić, należy użyć `<#@ assembly #>` dyrektywy do dostępu do oddzielnego projektu. Aby uzyskać przykłady, zobacz ["Dziedziczenie w szablonów tekstowych" w blogu Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
- Należy rozważyć przeniesienie dużych bloków kodu w osobnym zestawie.
- Jeśli masz kod dużych bloków i bloki cech klas może być przydatne przenieść niektóre ten kod do metody, które kompilujesz w osobnym projekcie. Możesz użyć `<#@ assembly #>` dyrektywy, aby uzyskiwać dostęp do kodu w szablonie. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca zestawu](../modeling/t4-assembly-directive.md).
+  Należy rozważyć przeniesienie dużych bloków kodu w osobnym zestawie.
+  Jeśli masz kod dużych bloków i bloki cech klas może być przydatne przenieść niektóre ten kod do metody, które kompilujesz w osobnym projekcie. Możesz użyć `<#@ assembly #>` dyrektywy, aby uzyskiwać dostęp do kodu w szablonie. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca zestawu](../modeling/t4-assembly-directive.md).
 
- Metody można umieścić w klasę abstrakcyjną, która może dziedziczyć szablonu. Klasa ogólna musi dziedziczyć <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca szablonu](../modeling/t4-template-directive.md).
+  Metody można umieścić w klasę abstrakcyjną, która może dziedziczyć szablonu. Klasa ogólna musi dziedziczyć <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca szablonu](../modeling/t4-template-directive.md).
 
- Generowanie kodu, nie konfiguracji plików jedną z metod zapisu zmiennych wniosek jest pisanie kodu ogólny program, który akceptuje pliku konfiguracji. Aplikacji napisanych w ten sposób jest bardzo elastyczny i można tak skonfigurować, po zmianie wymagań biznesowych, bez ponownie skompilować aplikację. Jednak wadą tego podejścia jest będą wykonywane przez aplikację również, mniej niż aplikacja bardziej szczegółowe. Ponadto jego kod programu, będzie trudniejsze do odczytu i utrzymywania częściowo, ponieważ jest ona zawsze ma do czynienia z najbardziej ogólnych typów.
+  Generowanie kodu, nie konfiguracji plików jedną z metod zapisu zmiennych wniosek jest pisanie kodu ogólny program, który akceptuje pliku konfiguracji. Aplikacji napisanych w ten sposób jest bardzo elastyczny i można tak skonfigurować, po zmianie wymagań biznesowych, bez ponownie skompilować aplikację. Jednak wadą tego podejścia jest będą wykonywane przez aplikację również, mniej niż aplikacja bardziej szczegółowe. Ponadto jego kod programu, będzie trudniejsze do odczytu i utrzymywania częściowo, ponieważ jest ona zawsze ma do czynienia z najbardziej ogólnych typów.
 
- Z drugiej strony, których części zmiennych są generowane przed kompilacją aplikacji może być silnie typizowane. Dzięki temu znacznie prostszy i bardziej niezawodne pisać kod odręcznej i zintegrować ją z wygenerowanym części oprogramowania.
+  Z drugiej strony, których części zmiennych są generowane przed kompilacją aplikacji może być silnie typizowane. Dzięki temu znacznie prostszy i bardziej niezawodne pisać kod odręcznej i zintegrować ją z wygenerowanym części oprogramowania.
 
- Aby uzyskać pełne zaletą generowania kodu, spróbuj do generowania kodu programu zamiast plików konfiguracyjnych.
+  Aby uzyskać pełne zaletą generowania kodu, spróbuj do generowania kodu programu zamiast plików konfiguracyjnych.
 
- Użyj folderu wygenerowany kod umieść szablony i wygenerowane pliki w folderze projektu o nazwie **wygenerowany kod**, aby go wyczyścić, że nie są pliki, które powinny być edytowany bezpośrednio. Jeśli tworzysz kod niestandardowy, aby zastąpić, lub dodać do wygenerowanych klas, umieszczenie tych klas w folderze o nazwie **kod niestandardowy**. Struktura w typowym projekcie wygląda następująco:
+  Użyj folderu wygenerowany kod umieść szablony i wygenerowane pliki w folderze projektu o nazwie **wygenerowany kod**, aby go wyczyścić, że nie są pliki, które powinny być edytowany bezpośrednio. Jeśli tworzysz kod niestandardowy, aby zastąpić, lub dodać do wygenerowanych klas, umieszczenie tych klas w folderze o nazwie **kod niestandardowy**. Struktura w typowym projekcie wygląda następująco:
 
 ```
 MyProject
@@ -77,7 +77,6 @@ MyProject
       Class2.tt
           Class2.cs
    AnotherClass.cs
-
 ```
 
 ## <a name="guidelines-for-run-time-preprocessed-t4-templates"></a>Wytyczne dotyczące szablonów T4 (wstępnie przetworzony) czasu wykonywania
@@ -116,7 +115,6 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 }
 ...
   string PageToDisplay = new FabrikamTemplate().TextTransform();
-
 ```
 
 ## <a name="guidelines-for-all-t4-templates"></a>Wytyczne dotyczące wszystkie szablony T4

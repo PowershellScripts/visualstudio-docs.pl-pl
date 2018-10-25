@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306f8c0497228ff67adab1b472ea74e2ba9e5d90
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 585615c07d9f11f75468bccde1bae05a355bf98f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637185"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899958"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>Projectitem — element (szablony projektu Visual Studio)
 Określa plik, który znajduje się w szablonie projektu.  
@@ -53,14 +53,14 @@ Określa plik, który znajduje się w szablonie projektu.
   
 ### <a name="attributes"></a>Atrybuty  
   
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|`TargetFileName`|Atrybut opcjonalny.<br /><br /> Określa nazwę i ścieżkę elementu projektu, gdy projekt jest tworzony na podstawie tego szablonu. Ten atrybut jest przydatne do tworzenia struktury katalogu różni się od struktury katalogów w szablonie *zip* pliku, lub za pomocą zastąpienia parametrów do utworzenia nazwy elementu.|  
-|`ReplaceParameters`|Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element ma wartości parametrów, które muszą zostać przesłonięte, gdy projekt jest tworzony na podstawie tego szablonu. Wartość domyślna to `false`.|  
-|`OpenInEditor`|Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element powinien zostać otwarty w edytorze odpowiednich w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] po utworzeniu projektu z szablonu.<br /><br /> `OpenInWebBrowser` i `OpenInHelpBrowser` atrybuty są ignorowane na element o `OpenInEditor` wartość `true`.<br /><br /> Wartość domyślna to `false`.|  
-|`OpenInWebBrowser`|Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element powinien zostać otwarty w przeglądarce sieci Web podczas tworzenia projektu z szablonu.<br /><br /> Tylko pliki HTML i pliki tekstowe, które są lokalne w projekcie można otworzyć w przeglądarce sieci Web. Zewnętrzne adresy URL nie można otworzyć za pomocą tego atrybutu.<br /><br /> Wartość domyślna to `false`.|  
-|`OpenInHelpBrowser`|Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element powinien zostać otwarty w Podglądzie pomocy, gdy projekt jest tworzony na podstawie tego szablonu.<br /><br /> Tylko pliki HTML i pliki tekstowe, które są lokalne w projekcie można otworzyć w przeglądarce pomocy. Zewnętrzne adresy URL nie można otworzyć za pomocą tego atrybutu.<br /><br /> Wartość domyślna to `false`.|  
-|`OpenOrder`|Atrybut opcjonalny.<br /><br /> Określa wartość liczbowa, która reprezentuje porządek, że elementy będą otwierane w ich odpowiednich edytorów. Wszystkie wartości musi być wielokrotnością liczby 10. Elementy z wyższej `OpenOrder` wartości są najpierw otwarte.|  
+| Atrybut | Opis |
+|---------------------| - |
+| `TargetFileName` | Atrybut opcjonalny.<br /><br /> Określa nazwę i ścieżkę elementu projektu, gdy projekt jest tworzony na podstawie tego szablonu. Ten atrybut jest przydatne do tworzenia struktury katalogu różni się od struktury katalogów w szablonie *zip* pliku, lub za pomocą zastąpienia parametrów do utworzenia nazwy elementu. |
+| `ReplaceParameters` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element ma wartości parametrów, które muszą zostać przesłonięte, gdy projekt jest tworzony na podstawie tego szablonu. Wartość domyślna to `false`. |
+| `OpenInEditor` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element powinien zostać otwarty w edytorze odpowiednich w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] po utworzeniu projektu z szablonu.<br /><br /> `OpenInWebBrowser` i `OpenInHelpBrowser` atrybuty są ignorowane na element o `OpenInEditor` wartość `true`.<br /><br /> Wartość domyślna to `false`. |
+| `OpenInWebBrowser` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element powinien zostać otwarty w przeglądarce sieci Web podczas tworzenia projektu z szablonu.<br /><br /> Tylko pliki HTML i pliki tekstowe, które są lokalne w projekcie można otworzyć w przeglądarce sieci Web. Zewnętrzne adresy URL nie można otworzyć za pomocą tego atrybutu.<br /><br /> Wartość domyślna to `false`. |
+| `OpenInHelpBrowser` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element powinien zostać otwarty w Podglądzie pomocy, gdy projekt jest tworzony na podstawie tego szablonu.<br /><br /> Tylko pliki HTML i pliki tekstowe, które są lokalne w projekcie można otworzyć w przeglądarce pomocy. Zewnętrzne adresy URL nie można otworzyć za pomocą tego atrybutu.<br /><br /> Wartość domyślna to `false`. |
+| `OpenOrder` | Atrybut opcjonalny.<br /><br /> Określa wartość liczbowa, która reprezentuje porządek, że elementy będą otwierane w ich odpowiednich edytorów. Wszystkie wartości musi być wielokrotnością liczby 10. Elementy z wyższej `OpenOrder` wartości są najpierw otwarte. |
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  
@@ -91,27 +91,27 @@ Określa plik, który znajduje się w szablonie projektu.
   
 ### <a name="to-rename-files-with-parameters"></a>Zmień nazwy plików z parametrami  
   
-1.  Użyj następujące kodu XML w *.vstemplate* pliku:  
+1. Użyj następujące kodu XML w *.vstemplate* pliku:  
   
-    ```xml  
-    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
-    ```  
+   ```xml  
+   <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
+   ```  
   
-2.  Otwórz plik projektu (*.vbproj* dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu) w edytorze tekstu lub [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+2. Otwórz plik projektu (*.vbproj* dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektu) w edytorze tekstu lub [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-3.  Znajdź wiersz w pliku projektu, który przypomina następujący kod XML:  
+3. Znajdź wiersz w pliku projektu, który przypomina następujący kod XML:  
   
-    ```xml  
-    <Compile Include="MyFile.vb">  
-    ```  
+   ```xml  
+   <Compile Include="MyFile.vb">  
+   ```  
   
-4.  Zastąp wiersz kodu następujący kod XML:  
+4. Zastąp wiersz kodu następujący kod XML:  
   
-    ```xml  
-    <Compile Include="$safeprojectname$.vb">  
-    ```  
+   ```xml  
+   <Compile Include="$safeprojectname$.vb">  
+   ```  
   
-     Gdy projekt jest tworzony za pomocą tego szablonu, nazwa pliku będzie zależeć od nazwy użytkownik wprowadzi w **nowy projekt** okno dialogowe, za pomocą wszystkich niebezpiecznych znaków i usunięte spacje. Aby uzyskać więcej informacji, zobacz [parametry szablonu](../ide/template-parameters.md).  
+    Gdy projekt jest tworzony za pomocą tego szablonu, nazwa pliku będzie zależeć od nazwy użytkownik wprowadzi w **nowy projekt** okno dialogowe, za pomocą wszystkich niebezpiecznych znaków i usunięte spacje. Aby uzyskać więcej informacji, zobacz [parametry szablonu](../ide/template-parameters.md).  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie pokazano metadanych szablon projektu służący do [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikacji.  

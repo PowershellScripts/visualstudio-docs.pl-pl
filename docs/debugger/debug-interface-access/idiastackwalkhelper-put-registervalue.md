@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c094384fd4c1e01b28edcc809d58ab56b3bb225
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 81ac9c2366f97497fca4f7faa49facf2a3f819b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838936"
 ---
 # <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
 Ustawia wartość rejestru.  
@@ -41,11 +41,11 @@ HRESULT put_registerValue (
  [in] Nowa wartość rejestru.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Niezależnie od rozmiaru wartość implementację należy przechowywać co rejestru zwykle zawiera jedynie. Na przykład rejestr 8-bitową zawiera tylko najniższy 8-bitowej danej wartości.  
+ Niezależnie od rozmiaru wartość należy przechowywać implementację, co rejestru zwykle zawiera tylko. Na przykład rejestr 8-bitowy będzie przechowywało tylko najniższy 8 bitów danej wartości.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [Cv_hreg_e — wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md)
+ [CV_HREG_e, wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md)

@@ -15,12 +15,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: da8a33d454b5c406e43fa04157ae154a709cfe1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834061"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Korzystanie z pokrycia kodu do określania, jaka część kodu jest poddawana testom
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ Aby określić, jaka część kodu projektu jest faktycznie testowana przez zako
   
 > [!TIP]
 >  Aby uzyskać dokładne wyniki:  
->   
->  -   Upewnij się, że optymalizacja kompilatora jest wyłączona.  
->   
->      Pracując z kodem niezarządzanym (natywnym), należy użyć kompilacji debugowania.  
-> -   Upewnij się, że pliki .pdb (symbol) są generowane dla każdego zestawu.  
->   
->  Jeśli nie otrzymujesz oczekiwanych wyników, zobacz [Rozwiązywanie problemów z pokryciem kodu](../test/troubleshooting-code-coverage.md). . Nie można zapominać o ponownym uruchomieniu pokrycia kodu po jego aktualizacji. Wyniki pokrycia i kolorowanie kodu nie są automatycznie aktualizowane po zmodyfikowaniu kodu ani po uruchomieniu testów.  
+> 
+> - Upewnij się, że optymalizacja kompilatora jest wyłączona.  
+> 
+>   Pracując z kodem niezarządzanym (natywnym), należy użyć kompilacji debugowania.  
+>   -   Upewnij się, że pliki .pdb (symbol) są generowane dla każdego zestawu.  
+> 
+>   Jeśli nie otrzymujesz oczekiwanych wyników, zobacz [Rozwiązywanie problemów z pokryciem kodu](../test/troubleshooting-code-coverage.md). . Nie można zapominać o ponownym uruchomieniu pokrycia kodu po jego aktualizacji. Wyniki pokrycia i kolorowanie kodu nie są automatycznie aktualizowane po zmodyfikowaniu kodu ani po uruchomieniu testów.  
   
 ## <a name="reporting-in-blocks-or-lines"></a>Raportowanie w blokach i wierszach  
  Pokrycie kodu jest liczone *bloków*. Blok jest fragmentem kodu z dokładnie jednym punktem wejścia i wyjścia.  Jeżeli przepływ kontroli programu przechodzi przez blok podczas przebiegu testu, blok jest zaliczany do pokrytych. To, ile razy użyto danego bloku, nie ma wpływu na wynik.  
@@ -255,19 +255,19 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>Analizowanie pokrycia kodu w usłudze kompilacji  
  Podczas sprawdzania kodu testy będą uruchamiane na serwerze kompilacji, razem z innymi testami pozostałych członków zespołu. (Jeśli jeszcze nie skonfigurowano już to, zobacz [Uruchom testy w procesie kompilacji](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) Analiza pokrycia kodu w usłudze kompilacji jest użyteczna, ponieważ zapewnia najbardziej aktualny i wszechstronny obraz pokrycia całego projektu. Zawiera także automatyczne testy systemu i inne zakodowane testy, których zwykle nie uruchamia się na komputerach deweloperskich.  
   
-1.  W programie Team Explorer Otwórz **kompilacje**, a następnie dodaj lub Edytuj definicję kompilacji.  
+1. W programie Team Explorer Otwórz **kompilacje**, a następnie dodaj lub Edytuj definicję kompilacji.  
   
-2.  Na **procesu** rozwiń **testy automatyczne**, **źródła testów**, **parametrów uruchomieniowych**. Ustaw **typu pliku parametrów uruchomieniowych** do **włączonym pokryciem kodu**.  
+2. Na **procesu** rozwiń **testy automatyczne**, **źródła testów**, **parametrów uruchomieniowych**. Ustaw **typu pliku parametrów uruchomieniowych** do **włączonym pokryciem kodu**.  
   
-     Jeśli masz więcej niż jedną definicję źródła testów, powtórz ten krok dla każdej z nich.  
+    Jeśli masz więcej niż jedną definicję źródła testów, powtórz ten krok dla każdej z nich.  
   
-    -   *Ale nie ma pola o nazwie **typ pliku ustawień uruchomienia**.*  
+   - <em>Ale nie ma pola o nazwie **typ pliku ustawień uruchomienia</em>*. *  
   
-         W obszarze **testy automatyczne**, wybierz opcję **zestawu testowego** i wybierz przycisk wielokropka **[...]**  na końcu wiersza. W **Dodaj/Edytuj przebieg testowy** dialogowego **Test Runner**, wybierz **Visual Studio Test Runner**.  
+      W obszarze **testy automatyczne**, wybierz opcję **zestawu testowego** i wybierz przycisk wielokropka **[...]**  na końcu wiersza. W **Dodaj/Edytuj przebieg testowy** dialogowego **Test Runner**, wybierz **Visual Studio Test Runner**.  
   
- ![Ustawienia definicji kompilacji, pokrycia kodu](../test/media/codecoverage-plaincc.png "CodeCoverage plainCC")  
+   ![Ustawienia definicji kompilacji, pokrycia kodu](../test/media/codecoverage-plaincc.png "CodeCoverage plainCC")  
   
- Po uruchomieniu kompilacji wyniki pokrycia kodu są dołączane do przebiegu testowego i pojawiają się w podsumowaniu kompilacji.  
+   Po uruchomieniu kompilacji wyniki pokrycia kodu są dołączane do przebiegu testowego i pojawiają się w podsumowaniu kompilacji.  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Analizowanie pokrycia kodu w wierszu polecenia  
  Aby uruchomić testy z wiersza polecenia, należy użyć narzędzia vstest.console.exe. Pokrycie kodu jest opcją tego narzędzia. Aby uzyskać więcej informacji, zobacz [opcje wiersza poleceń VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  

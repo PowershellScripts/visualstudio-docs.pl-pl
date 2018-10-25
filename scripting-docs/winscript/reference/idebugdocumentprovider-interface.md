@@ -14,29 +14,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 262794718e238068cfd9a8e3fae5161b9fe8cc54
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d775deb153205d0e9a452775272285c67e74a210
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949867"
 ---
 # <a name="idebugdocumentprovider-interface"></a>Interfejs IDebugDocumentProvider
 Zapewnia metodę dla wystąpienia dokumentu na żądanie.  
   
 ## <a name="remarks"></a>Uwagi  
- Oznacza to, pośrednie dla wystąpienia dokumentu:  
+ Oznacza to, pośrednie podczas tworzenia wystąpienia dokumentu:  
   
--   Umożliwia dokumentu do załadowania, gdy jest to potrzebne.  
+- Zezwala na dokument, aby załadować, gdy jest to konieczne.  
   
--   Umożliwia obiektu dokumentu muszą być zawarte w debugerze IDE.  
+- Zezwala na obiekt dokumentu, które mają zostać zawarte w debugerze IDE.  
   
--   Zezwala na wiele sposobów uzyskać dostęp do tego samego obiektu dokumentu.  
+- Zezwala na wiele sposobów, aby uzyskać dostęp do tego samego obiektu dokumentu.  
   
- To skutecznie oddziela go od jego dostawcy i dostawca może zawierać dodatkowe informacje o kontekście czasu wykonywania.  
+  To efektywnie oddziela dokument od dostawcy i umożliwia dostawcy zawierają dodatkowe informacje o kontekście czasu wykonywania.  
   
- Oprócz dziedziczone z metody `IDebugDocumentInfo`, `IDebugDocumentProvider` interfejsu udostępnia następujące metody.  
+  Oprócz metod odziedziczone `IDebugDocumentInfo`, `IDebugDocumentProvider` interfejsu udostępnia następujące metody.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IDebugDocumentProvider::GetDocument](../../winscript/reference/idebugdocumentprovider-getdocument.md)|Powoduje, że dokument utworzone, jeśli jeszcze nie istnieje.|
+|[IDebugDocumentProvider::GetDocument](../../winscript/reference/idebugdocumentprovider-getdocument.md)|Powoduje, że dokument można utworzyć wystąpienia, jeśli jeszcze nie istnieje.|

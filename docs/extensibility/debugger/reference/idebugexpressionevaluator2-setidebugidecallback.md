@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b272a7db4bfc5c7405493759d5e9c1864eaaa07d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 148d18f86ee88190aa1cf2a5a89807eb343c5d94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903488"
 ---
 # <a name="idebugexpressionevaluator2setidebugidecallback"></a>IDebugExpressionEvaluator2::SetIDebugIDECallback
-Umożliwia to aparat debugowania do przekazania wywołanie zwrotne do ewaluatora wyrażeń podczas inicjowania.  
+Umożliwia to aparat debugowania do przekazania wywołanie zwrotne do Ewaluator wyrażeń podczas inicjowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,7 +43,7 @@ int SetIDebugIDECallback (
  [in] Interfejs wywołania zwrotnego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

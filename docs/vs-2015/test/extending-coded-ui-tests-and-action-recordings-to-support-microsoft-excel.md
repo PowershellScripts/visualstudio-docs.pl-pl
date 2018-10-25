@@ -13,12 +13,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 304b01564f067206a8995662a4f3711cf041116b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872983"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Rozszerzanie zakodowanych testów interfejsu użytkownika i nagrywanie akcji obsługujących program Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ Struktura testowania kodowane testy interfejsu użytkownika i nagrywania akcji n
   
  **Wymagania**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
- W tej sekcji przedstawiono kodowane rozszerzenia testu interfejsu użytkownika, który można nagrywać i odtwarzać testy w arkuszu kalkulacyjnym programu Excel. Każda część rozszerzenie zostało wyjaśnione w tej sekcji i w komentarzach do kodu dla deweloperów, którzy chcą tworzyć tylko takie rozszerzenie.  
+  W tej sekcji przedstawiono kodowane rozszerzenia testu interfejsu użytkownika, który można nagrywać i odtwarzać testy w arkuszu kalkulacyjnym programu Excel. Każda część rozszerzenie zostało wyjaśnione w tej sekcji i w komentarzach do kodu dla deweloperów, którzy chcą tworzyć tylko takie rozszerzenie.  
   
- ![Architektura testu interfejsu użytkownika](../test/media/ui-testarch.png "UI_TestArch")  
-Omówienie architektury  
+  ![Architektura testu interfejsu użytkownika](../test/media/ui-testarch.png "UI_TestArch")  
+  Omówienie architektury  
   
 ## <a name="download-the-sample"></a>Pobieranie przykładu  
  Przykład składa się z czterema projektami w `CodedUIExtensibilitySample.sln` rozwiązania:  
   
--   CodedUIextensibilitySample  
+- CodedUIextensibilitySample  
   
--   ExcelCodedUIAddInHelper  
+- ExcelCodedUIAddInHelper  
   
--   ExcelUICommunicationHelper  
+- ExcelUICommunicationHelper  
   
--   SampleTestProject  
+- SampleTestProject  
   
- Pobierz próbkę z tego [wpis w blogu](http://go.microsoft.com/fwlink/?LinkID=185592).  
+  Pobierz próbkę z tego [wpis w blogu](http://go.microsoft.com/fwlink/?LinkID=185592).  
   
 > [!NOTE]
 >  Przykład jest przeznaczony do użytku z programem Microsoft Excel 2010. Próbki mogą działać z innymi wersjami programu Microsoft Excel, ale nie jest obecnie obsługiwane.  

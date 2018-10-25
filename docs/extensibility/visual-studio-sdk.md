@@ -17,31 +17,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 794d1bae562bf107d9986a132a44d4fa95aec20d
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: b5701044e20f2122199d9d0ca5558e453e6e5f72
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495820"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906029"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK pomaga Rozszerz funkcje programu Visual Studio lub Zintegruj nowe funkcje do programu Visual Studio. Można dystrybuować swoje rozszerzenia innym użytkownikom, a także do witryny Marketplace programu Visual Studio. Poniżej przedstawiono kilka sposobów, w którym można rozszerzyć Visual Studio:  
   
--   Dodawanie poleceń, przyciski, menu i inne elementy interfejsu użytkownika do środowiska IDE  
+- Dodawanie poleceń, przyciski, menu i inne elementy interfejsu użytkownika do środowiska IDE  
   
--   Dodaj okien narzędzi dla nowych funkcji  
+- Dodaj okien narzędzi dla nowych funkcji  
   
--   Rozszerzanie funkcji IntelliSense dla danego języka, lub udostępni funkcję IntelliSense dla nowych języków programowania  
+- Rozszerzanie funkcji IntelliSense dla danego języka, lub udostępni funkcję IntelliSense dla nowych języków programowania  
   
--   Użyj żarówki, aby zapewnić wskazówki i sugestie, które ułatwiają deweloperom pisanie kodu lepiej  
+- Użyj żarówki, aby zapewnić wskazówki i sugestie, które ułatwiają deweloperom pisanie kodu lepiej  
   
--   Włącz obsługę nowy język  
+- Włącz obsługę nowy język  
   
--   Dodawanie typu niestandardowego projektu  
+- Dodawanie typu niestandardowego projektu  
   
--   Dotrzyj do milionów deweloperów za pośrednictwem witryny Marketplace programu Visual Studio  
+- Dotrzyj do milionów deweloperów za pośrednictwem witryny Marketplace programu Visual Studio  
   
- Jeśli rozszerzenie programu Visual Studio przed nigdy nie zostały zapisane, znajdziesz więcej informacji o tych funkcjach i na [Rozpoczynanie tworzenia rozszerzeń programu Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
+  Jeśli rozszerzenie programu Visual Studio przed nigdy nie zostały zapisane, znajdziesz więcej informacji o tych funkcjach i na [Rozpoczynanie tworzenia rozszerzeń programu Visual Studio](../extensibility/starting-to-develop-visual-studio-extensions.md).  
   
 ## <a name="install-the-visual-studio-sdk"></a>Instalowanie zestawu Visual Studio SDK  
  Visual Studio SDK jest opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalacji programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

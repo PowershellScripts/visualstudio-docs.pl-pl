@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fd859492faeb5af7a74d0261ff8d86333ff5ade8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7d5b5e459d80c69f856860a9b2aa0302191a968
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222732"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858930"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Używaj właściwości wszędzie, gdzie jest to odpowiednie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
@@ -42,25 +43,25 @@ ms.locfileid: "49222732"
 ## <a name="rule-description"></a>Opis reguły
  W większości przypadków właściwości reprezentują danych i metod wykonywania akcji. Właściwości są dostępne, takich jak pola, co ułatwia ich używać. Metoda jest dobrym kandydatem do stają się właściwość, jeśli występuje jeden z tych warunków:
 
--   Nie przyjmuje żadnych argumentów i zwraca informacje o stanie obiektu.
+- Nie przyjmuje żadnych argumentów i zwraca informacje o stanie obiektu.
 
--   Akceptuje pojedynczy argument można ustawić część stanu obiektu.
+- Akceptuje pojedynczy argument można ustawić część stanu obiektu.
 
- Właściwości, powinny zachowywać się tak, jakby są pola aplikacji; Jeśli metoda nie, nie należy zmienić właściwości. Metody są lepsze niż właściwości w następujących sytuacjach:
+  Właściwości, powinny zachowywać się tak, jakby są pola aplikacji; Jeśli metoda nie, nie należy zmienić właściwości. Metody są lepsze niż właściwości w następujących sytuacjach:
 
--   Metoda wykonuje czasochłonna operacja. Metoda jest perceivably wolniej niż czas, który jest wymagany, aby ustawić lub pobrać wartości pola.
+- Metoda wykonuje czasochłonna operacja. Metoda jest perceivably wolniej niż czas, który jest wymagany, aby ustawić lub pobrać wartości pola.
 
--   Metoda przeprowadza konwersję. Uzyskiwanie dostępu do pola nie zwraca przekonwertowana wersja danych, które są przechowywane.
+- Metoda przeprowadza konwersję. Uzyskiwanie dostępu do pola nie zwraca przekonwertowana wersja danych, które są przechowywane.
 
--   Metoda Get ma dostrzegalnych efekt uboczny. Podczas pobierania wartości pola nie generuje żadnych efektów ubocznych.
+- Metoda Get ma dostrzegalnych efekt uboczny. Podczas pobierania wartości pola nie generuje żadnych efektów ubocznych.
 
--   Kolejność wykonywania jest ważna. Ustawienie wartości pola nie zależą od wystąpienia innych operacji.
+- Kolejność wykonywania jest ważna. Ustawienie wartości pola nie zależą od wystąpienia innych operacji.
 
--   Wywołanie metody dwa razy pod rząd tworzy różne wyniki.
+- Wywołanie metody dwa razy pod rząd tworzy różne wyniki.
 
--   Metoda jest statyczna, ale zwraca obiekt, który może zostać zmieniona przez obiekt wywołujący. Podczas pobierania wartości pola nie zezwala na obiekt wywołujący, aby zmienić dane, które są przechowywane przez pole.
+- Metoda jest statyczna, ale zwraca obiekt, który może zostać zmieniona przez obiekt wywołujący. Podczas pobierania wartości pola nie zezwala na obiekt wywołujący, aby zmienić dane, które są przechowywane przez pole.
 
--   Metoda zwraca tablicę.
+- Metoda zwraca tablicę.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy zmienić metodę z właściwością.

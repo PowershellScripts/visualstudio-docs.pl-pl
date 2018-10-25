@@ -10,28 +10,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b3a4be1c89d2e0a5da7de4d4793db87bf1deadce
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3ca0d99a1bab255208b8eb9f1bb7fda69a14c1c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882343"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>Wstawianie obrazów, klipów wideo i klipów audio w projektancie XAML
-Obrazów, klipów wideo i klipów audio zwiększa atrakcyjność wizualną aplikacji.
+Obrazy, filmy wideo i klipów audio Dodawanie estetyczny do aplikacji.
 
- ![Obrazy dopasowana](../designers/media/b5_memory_images_sized.png)
+ ![Obrazy o rozmiarze do rozmiaru](../designers/media/b5_memory_images_sized.png)
 
- Aby używać obrazów, klipów wideo lub audio, dodaj go do projektu, a następnie przeciągnij go z **zasoby** panelu na **kompozycji**.
+ Aby używać obrazów, klipów wideo lub audio, dodaj go do projektu, a następnie przeciągnij go z **zasoby** panelu na **obszaru kompozycji**.
 
- Te pliki wideo ułatwia wstawianie obrazów, klipów wideo i klipów audio w swojej aplikacji.
+ W tych filmach wideo może pomóc w wstawianie obrazów, filmów wideo i klipów audio w swojej aplikacji.
 
-|Zadanie|Obejrzyj krótki klip wideo|
-|----------|-------------------------|
-|Importowanie pliku FXG Adobe|![Konfigurowanie funkcji zainstalowanych](../designers/media/bldadminconsoleinitialconfigicon.png) [FXG podglądu importu w programie Blend](http://www.bing.com/videos/search?q=blend%20import%20FXG%20file&qs=n&form=QBVR&pq=blend%20import%20fxg%20file&sc=0-13&sp=-1&sk=#view=detail&mid=3C733B0B50A43166C55C3C733B0B50A43166C55C)|
-|Importowanie pliku Adobe Illustrator|![Konfigurowanie funkcji zainstalowane](../designers/media/bldadminconsoleinitialconfigicon.png) [Importowanie pliku Adobe Illustrator (ai) do programu Blend](http://www.bing.com/videos/search?q=add%20illustrator%20file%20to%20blend&qs=n&form=QBVR&pq=add%20illustrator%20file%20to%20blend&sc=0-0&sp=-1&sk=#view=detail&mid=FDB1B25D4DEB69D24515FDB1B25D4DEB69D24515)|
-|Importowanie pliku Adobe Photoshop|![Konfigurowanie funkcji zainstalowane](../designers/media/bldadminconsoleinitialconfigicon.png) [zaimportować plik programu Photoshop do programu Blend](https://www.youtube.com/watch?v=ekYyhirFKs0)|
-|Wstawianie klipów audio|![Konfigurowanie funkcji zainstalowane](../designers/media/bldadminconsoleinitialconfigicon.png) [dodać klipów audio](https://www.youtube.com/watch?v=7qW9l0tmkAI&index=52&list=PLBDF977B2F1DAB358)|
+|Zadanie|Obejrzyj krótki film wideo|
+|----------| - |
+|Importowanie pliku Adobe FXG|![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [Podgląd importu FXG w programie Blend](http://www.bing.com/videos/search?q=blend%20import%20FXG%20file&qs=n&form=QBVR&pq=blend%20import%20fxg%20file&sc=0-13&sp=-1&sk=#view=detail&mid=3C733B0B50A43166C55C3C733B0B50A43166C55C)|
+|Importowanie pliku Adobe Illustrator|![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [Importowanie pliku Adobe Illustrator (ai) w programie Blend](http://www.bing.com/videos/search?q=add%20illustrator%20file%20to%20blend&qs=n&form=QBVR&pq=add%20illustrator%20file%20to%20blend&sc=0-0&sp=-1&sk=#view=detail&mid=FDB1B25D4DEB69D24515FDB1B25D4DEB69D24515)|
+|Importowanie pliku Adobe Photoshop|![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [Importowanie pliku Photoshop w programie Blend](https://www.youtube.com/watch?v=ekYyhirFKs0)|
+|Wstaw klipów audio|![Skonfiguruj zainstalowane funkcje](../designers/media/bldadminconsoleinitialconfigicon.png) [Dodaj klipów audio](https://www.youtube.com/watch?v=7qW9l0tmkAI&index=52&list=PLBDF977B2F1DAB358)|
 
 ## <a name="see-also"></a>Zobacz także
 

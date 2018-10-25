@@ -15,18 +15,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbc19c339e5d53bc9dde13ebd4a1bbddd214810c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b48fd74c3edc3f200ef05d143464b3e5ce79bd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116389"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872255"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 Powoduje, że proces krok jednej instrukcji lub instrukcji.  
   
 > [!NOTE]
->  Ta metoda powinna być używana zamiast [krok](../../../extensibility/debugger/reference/idebugprogram2-step.md).  
+>  Ta metoda powinna być używana zamiast [kroku](../../../extensibility/debugger/reference/idebugprogram2-step.md).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,25 +48,25 @@ int Step(
   
 #### <a name="parameters"></a>Parametry  
  `pThread`  
- [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt reprezentujący wątku jest przeprowadził.  
+ [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt reprezentujący wątku jest zmieniana.  
   
  `sk`  
- [in] Jeden z [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) wartości.  
+ [in] Jedną z [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) wartości.  
   
  `step`  
- [in] Jeden z [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) wartości.  
+ [in] Jedną z [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) wartości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- W przypadku braku dowolnego synchronizacja wątku lub komunikacji między wątkami, inne wątki tego procesu należy uruchomić przy przechodzeniu jest danego wątku.  
+ W przypadku synchronizacji wątków ani komunikacji między wątkami, inne wątki w procesie należy uruchomić, gdy przechodzenie krok po kroku określonego wątku.  
   
- **Ostrzeżenie** nie wysyłaj zdarzeniem zatrzymującym lub natychmiastowego zdarzenia (synchroniczne) w celu [zdarzeń](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może się zawiesić.  
+ **Ostrzeżenie** nie będą wysyłane zdarzenia zatrzymywania lub natychmiastowego zdarzeń (synchroniczne) [zdarzeń](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) podczas obsługi tego wywołania; w przeciwnym razie debuger może się zawiesić.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)   
  [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)   
- [Zdarzenia](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

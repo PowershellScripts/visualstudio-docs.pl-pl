@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5385e006bcd2f79ab7b1c2e723e696b833991f36
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 680f57878b3dd06e2f5935874f4a3f3bb06a2a1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252352"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948229"
 ---
 # <a name="port-suppliers"></a>Dostawcy portów
 W architekturze debugera *dostawcy portu*:  
   
--   Znajduje się na serwerze i udostępnia porty na żądanie do tego serwera.  
+- Znajduje się na serwerze i udostępnia porty na żądanie do tego serwera.  
   
--   Dodawać i usuwać portów z zawierającego serwera.  
+- Dodawać i usuwać portów z zawierającego serwera.  
   
--   Można wyliczyć wszystkie porty, które udostępnił się do serwera.  
+- Można wyliczyć wszystkie porty, które udostępnił się do serwera.  
   
--   Jest reprezentowany przez [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interfejsu, który jest zarejestrowany w programie Visual Studio za pomocą rejestru. Ten interfejs można uzyskać przez wywołanie metody [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
+- Jest reprezentowany przez [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) interfejsu, który jest zarejestrowany w programie Visual Studio za pomocą rejestru. Ten interfejs można uzyskać przez wywołanie metody [GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zapewnia dostawcy portu domyślnego i domyślny port. Jeśli port niestandardowy, musi zostać wdrożone, dostawca niestandardowy port również musi zaimplementować tak, aby podać te porty niestandardowe.  
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zapewnia dostawcy portu domyślnego i domyślny port. Jeśli port niestandardowy, musi zostać wdrożone, dostawca niestandardowy port również musi zaimplementować tak, aby podać te porty niestandardowe.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Serwery](../../extensibility/debugger/servers-visual-studio-sdk.md)   

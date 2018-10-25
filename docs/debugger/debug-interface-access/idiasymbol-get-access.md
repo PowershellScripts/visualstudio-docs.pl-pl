@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_access | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_access — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ae8a1d805e548ef2dfb4c30087ef4d57625894
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 88d801ded2d871952d4737596ae13bd07b551e04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464228"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904079"
 ---
 # <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
-Pobiera modyfikator dostępu elementu członkowskiego klasy.  
+Pobiera modyfikator dostępu składowej klasy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,13 +34,13 @@ HRESULT get_access (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca wartość z zakresu od [cv_access_e — wyliczenie](../../debugger/debug-interface-access/cv-access-e.md) wyliczenia, która określa modyfikator dostępu elementu członkowskiego klasy.  
+ [out] Zwraca wartość z zakresu od [cv_access_e — wyliczenie](../../debugger/debug-interface-access/cv-access-e.md) wyliczenie, które określa modyfikator dostępu składowej klasy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   
@@ -51,4 +51,4 @@ HRESULT get_access (
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [Cv_access_e — wyliczenie](../../debugger/debug-interface-access/cv-access-e.md)
+ [CV_access_e, wyliczenie](../../debugger/debug-interface-access/cv-access-e.md)

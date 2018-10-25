@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589792a9309565496b4d1ab73e1867055bcdf3bc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: abdb437abfe2ed9980ce94c7df20a840aeec5dda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101241"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831085"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
-Ustawia lub zmienia liczba hasło skojarzone z tym powiązania punktu przerwania.  
+Ustawia lub zmienia liczba — dostęp próbny skojarzony ten powiązany punkt przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,15 +42,15 @@ int SetPassCount(
   
 #### <a name="parameters"></a>Parametry  
  `bpPassCount`  
- [in] [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) strukturę, która określa liczbę przebiegu.  
+ [in] [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) strukturę, która określa liczbę — dostęp próbny.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli stan obiektu powiązanego punktu przerwania jest równa `BPS_DELETED` (część [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) wyliczenie).  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli stan obiektu powiązany punkt przerwania jest ustawiony na `BPS_DELETED` (część [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) wyliczenia).  
   
 ## <a name="remarks"></a>Uwagi  
- Liczba przebiegu Określa, kiedy punkt przerwania jest uruchamiany. Bieżący przebieg lub liczba trafień można uzyskać przez wywołanie metody [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) metody.  
+ Count — dostęp próbny Określa, kiedy punkt przerwania jest uruchamiany. Bieżący przebieg lub liczba trafień można uzyskać przez wywołanie metody [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) metody.  
   
- Dowolnej liczbie przebiegu, który został wcześniej skojarzony z tego punktu przerwania zostaną utracone.  
+ Dowolnej liczbie — dostęp próbny, który był wcześniej skojarzony z tego punktu przerwania zostaną utracone.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   

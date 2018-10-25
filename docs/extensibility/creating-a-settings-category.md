@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef8ac70ae10389bb39a86e5ad305f3457c54bbb8
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: afbb16d3f5bd9d9278ba6e787a6bba673cc28acb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910013"
 ---
 # <a name="create-a-settings-category"></a>Tworzenie kategorii ustawień
 W tym przewodniku utworzysz kategorii ustawień programu Visual Studio i używać go do wartości, aby zapisać i przywrócić wartości z pliku ustawień. Kategoria ustawień jest grupą powiązanych właściwości, które są wyświetlane jako "punkt ustawień niestandardowych;" oznacza to, że pole wyboru w **importowanie i eksportowanie ustawień** kreatora. (Można znaleźć na **narzędzia** menu.) Ustawienia są zapisywane lub przywrócone jako kategorii, a poszczególne ustawienia nie są wyświetlane w kreatorze. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  

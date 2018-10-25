@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e495f5f07e5db2214c7eca8bc2c21df253fa49e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7eb0ae4fd357b5a021bee0f885af5586048033e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195523"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899295"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,52 +34,52 @@ Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymag
   
  [Zbieranie danych w aplikacje działające na pulpicie systemu Windows 8 lub w systemie Windows Server 2012 ze środowiska IDE programu Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
   
--   [Zbieranie danych w aplikacje działające na pulpicie systemu Windows 8 lub w systemie Windows Server 2012 za pomocą próbkowania ze środowiska IDE programu Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE)  
+- [Zbieranie danych w aplikacje działające na pulpicie systemu Windows 8 lub w systemie Windows Server 2012 za pomocą próbkowania ze środowiska IDE programu Visual Studio](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE)  
   
- [Profilowanie z wiersza polecenia](#BKMK_Profiling_from_the_command_line)  
+  [Profilowanie z wiersza polecenia](#BKMK_Profiling_from_the_command_line)  
   
- [Zbieranie danych (TIP) interakcji między warstwami](#BKMK_Collecting_tier_interaction__TIP__data)  
+  [Zbieranie danych (TIP) interakcji między warstwami](#BKMK_Collecting_tier_interaction__TIP__data)  
   
 ##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> Zbieranie danych w aplikacji Windows Store z poziomu środowiska IDE programu Visual Studio  
  Podczas profilowania aplikacji Windows Store, które napisano w języku JavaScript i HTML 5, możesz zbierać dane instrumentacji dla kodu JavaScript. Podczas profilowania aplikacji Windows Store lub składnika, który został napisany w języku Visual C++, Visual C# lub Visual Basic, można zbierać dane z próbkowania dla kodu natywnego i zarządzanego. Można profilować aplikację, lokalnie lub na komputerze zdalnym.  
   
  Te funkcje i opcje profilowania nie są obsługiwane podczas profilowania aplikacji Windows Store:  
   
--   Profilowanie aplikacji JavaScript przy użyciu metody próbkowania.  
+- Profilowanie aplikacji JavaScript przy użyciu metody próbkowania.  
   
--   Profilowania kodu zarządzanego i natywnego przy użyciu metody instrumentacji.  
+- Profilowania kodu zarządzanego i natywnego przy użyciu metody instrumentacji.  
   
--   Metoda profilowania współbieżność  
+- Metoda profilowania współbieżność  
   
--   Profilowanie pamięci .NET  
+- Profilowanie pamięci .NET  
   
--   (TIP) profilowanie interakcji między warstwami  
+- (TIP) profilowanie interakcji między warstwami  
   
--   Opcje próbkowania, takie jak ustawienie zdarzenie próbkowania i interwał czasu lub zbieranie danych licznika wydajności.  
+- Opcje próbkowania, takie jak ustawienie zdarzenie próbkowania i interwał czasu lub zbieranie danych licznika wydajności.  
   
--   Opcje instrumentacji, takie jak zbieranie danych liczników systemu windows i wydajności lub określanie dodatkowych opcji wiersza polecenia.  
+- Opcje instrumentacji, takie jak zbieranie danych liczników systemu windows i wydajności lub określanie dodatkowych opcji wiersza polecenia.  
   
- Aby uzyskać więcej informacji na temat profilowanie aplikacji Windows Store zobacz następujące tematy w Centrum deweloperów Windows:  
+  Aby uzyskać więcej informacji na temat profilowanie aplikacji Windows Store zobacz następujące tematy w Centrum deweloperów Windows:  
   
- [Uruchamianie aplikacji ze Sklepu Windows na komputerze lokalnym](../debugger/run-windows-store-apps-on-the-local-machine.md)  
+  [Uruchamianie aplikacji ze Sklepu Windows na komputerze lokalnym](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
- [Uruchamianie aplikacji ze Sklepu Windows na maszynie zdalnej](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
+  [Uruchamianie aplikacji ze Sklepu Windows na maszynie zdalnej](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
- [Analizowanie wydajności aplikacji](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
+  [Analizowanie wydajności aplikacji](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)  
   
--   [Synchronizacja funkcji JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
+- [Synchronizacja funkcji JavaScript](http://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
--   [Synchronizacja funkcji JavaScript na urządzeniu zdalnym](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [Synchronizacja funkcji JavaScript na urządzeniu zdalnym](http://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
--   [Analizowanie danych synchronizacja funkcji JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
+- [Analizowanie danych synchronizacja funkcji JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
--   [Kod profilu Visual C++, Visual C# i Visual Basic w aplikacjach Windows Store na komputerze lokalnym](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+- [Kod profilu Visual C++, Visual C# i Visual Basic w aplikacjach Windows Store na komputerze lokalnym](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
--   [Kod profilu Visual C++, Visual C# i Visual Basic w aplikacjach Windows Store na urządzeniu zdalnym](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+- [Kod profilu Visual C++, Visual C# i Visual Basic w aplikacjach Windows Store na urządzeniu zdalnym](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
--   [Analizowanie danych dotyczących wydajności dla kodu języka Visual C++, Visual C# i Visual Basic w aplikacjach Windows Store](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+- [Analizowanie danych dotyczących wydajności dla kodu języka Visual C++, Visual C# i Visual Basic w aplikacjach Windows Store](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
- [W tym temacie](#BKMK_In_this_topic)  
+  [W tym temacie](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a> Zbieranie danych w aplikacje działające na pulpicie systemu Windows 8 lub w systemie Windows Server 2012 ze środowiska IDE programu Visual Studio  
  Profilowanie przy użyciu metody Instrumentacji nie zmienił się w systemie Windows 8.  
@@ -129,25 +129,25 @@ Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymag
   
  **System Windows 8 i Windows Server 2012**  
   
-1.  Aby zebrać dane interakcji między warstwami aplikacji, które są uruchomione na pulpicie systemu Windows 8 lub Windows Server 2012, należy użyć metody instrumentacji.  
+1. Aby zebrać dane interakcji między warstwami aplikacji, które są uruchomione na pulpicie systemu Windows 8 lub Windows Server 2012, należy użyć metody instrumentacji.  
   
-2.  Nie można zebrać dane interakcji między warstwami aplikacji Windows Store.  
+2. Nie można zebrać dane interakcji między warstwami aplikacji Windows Store.  
   
-3.  Dane interakcji między warstwami można uwzględnić w wszystkich metod profilowania w innych obsługiwanych wersji systemu Windows.  
+3. Dane interakcji między warstwami można uwzględnić w wszystkich metod profilowania w innych obsługiwanych wersji systemu Windows.  
   
- **Kreator wydajności i Eksploratora wydajności**  
+   **Kreator wydajności i Eksploratora wydajności**  
   
- Należy dodać opcji zbierania danych interakcji warstwy do uruchomienia profilowania z poziomu Eksploratora wydajności. Do węzła docelowego Eksploratora wydajności, należy dodać projekt, plik wykonywalny lub witryny sieci Web. Zobacz [zbieranie danych o interakcji między warstwami](../profiling/collecting-tier-interaction-data.md).  
+   Należy dodać opcji zbierania danych interakcji warstwy do uruchomienia profilowania z poziomu Eksploratora wydajności. Do węzła docelowego Eksploratora wydajności, należy dodać projekt, plik wykonywalny lub witryny sieci Web. Zobacz [zbieranie danych o interakcji między warstwami](../profiling/collecting-tier-interaction-data.md).  
   
- **Zbieranie danych Porada na komputerze zdalnym**  
+   **Zbieranie danych Porada na komputerze zdalnym**  
   
- Aby zebrać dane interakcji między warstwami na komputerze zdalnym, należy skopiować **vs\_profiler\_**_\<platformy >_ **\_**  _\<Języka >_**.exe** plik wchodzącej w skład _VSInstallDir %_**tools\performance Tools\Setups**folder programu Visual Studio komputera na komputerze zdalnym i zainstaluj go. Nie można użyć narzędzi profilowania w [narzędzia zdalne programu Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) Pobieranie pakietu.  
+   Aby zebrać dane interakcji między warstwami na komputerze zdalnym, należy skopiować **vs\_profiler\_**_\<platformy >_ **\_**  _\<Języka >_**.exe** plik wchodzącej w skład _VSInstallDir %_**tools\performance Tools\Setups**folder programu Visual Studio komputera na komputerze zdalnym i zainstaluj go. Nie można użyć narzędzi profilowania w [narzędzia zdalne programu Visual Studio](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) Pobieranie pakietu.  
   
- Możesz użyć [VSPerfCmd](../profiling/vsperfcmd.md) lub [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) do zbierania danych profilowania.  
+   Możesz użyć [VSPerfCmd](../profiling/vsperfcmd.md) lub [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) do zbierania danych profilowania.  
   
- **Porada raportów**  
+   **Porada raportów**  
   
- Dane interakcji między warstwami można wyświetlić tylko w [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] lub [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE. Interakcje między warstwami plikowym raportów za pośrednictwem [VSPerfReport](../profiling/vsperfreport.md) nie są dostępne.  
+   Dane interakcji między warstwami można wyświetlić tylko w [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] lub [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] IDE. Interakcje między warstwami plikowym raportów za pośrednictwem [VSPerfReport](../profiling/vsperfreport.md) nie są dostępne.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Eksplorator wydajności](../profiling/performance-explorer.md)   

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08890a0be03329bd2c2c3469cc20c330223fb8a0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e72ab80cb60e1d5d85a6059e387069d335c64856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917911"
 ---
 # <a name="bpresdataflags"></a>BP_RES_DATA_FLAGS
-Określa, czy jest emulowane punktu przerwania danych lub sprzęt wdrożony w.  
+Określa, czy punkt przerwania danych jest emulowane lub wdrożonych w sprzętu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,7 +42,7 @@ public enum enum_BP_RES_DATA_FLAGS {
   
 ## <a name="members"></a>Elementy członkowskie  
  BP_RES_DATA_EMULATED  
- Określa, czy jest emulowane punktu przerwania danych.  
+ Określa, że punkt przerwania danych jest emulowane.  
   
 ## <a name="remarks"></a>Uwagi  
  Używany do `dwFlags` członkiem [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) struktury.  

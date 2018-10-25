@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 680346b640c5c6a8ad66129e30a1034b360bc084
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a83374015fcdada482099982f0294660412a0cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823713"
 ---
 # <a name="how-to-display-window-properties"></a>Porady: wyświetlanie właściwości okna
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Aby dowiedzieć się więcej na temat wymienionych w oknie [widoku Windows](../d
   
 ### <a name="to-open-the-window-properties-dialog-box"></a>Aby otworzyć okno dialogowe Właściwości okna  
   
-1.  Wybierz element, a następnie wybierz **właściwości** z **widoku** menu.  
+1. Wybierz element, a następnie wybierz **właściwości** z **widoku** menu.  
   
- Okno dialogowe właściwości nie są modalnych. Po kliknięciu elementu element w oknie widoku okna dialogowego automatycznie odświeżane informacje na temat każdego wybranego elementu.
+   Okno dialogowe właściwości nie są modalnych. Po kliknięciu elementu element w oknie widoku okna dialogowego automatycznie odświeżane informacje na temat każdego wybranego elementu.
 
 
 

@@ -15,31 +15,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b073640670d3e6e650fc4144c61e971c085aec2
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a71a31ec3caf08dd2a6f4b4e044b929dade11f0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855875"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Używaj StringBuilder do łączenia
+
 |||  
 |-|-|  
 |Identyfikator reguły|DA0001|  
 |Kategoria|Sposób użycia programu .NET framework|  
-|Metod profilowania|Pobierania próbek<br /><br /> Oprzyrządowanie|  
-|Komunikat|Należy rozważyć użycie StringBuilder do konkatenacji ciągów|  
+|Metod profilowania|Próbkowania<br /><br /> Oprzyrządowanie|  
+|Komunikat|Należy wziąć pod uwagę przy użyciu klasy StringBuilder do konkatenacji ciągów|  
 |Typ komunikatu|Ostrzeżenie|  
-  
+
 ## <a name="cause"></a>Przyczyna  
- Wywołania System.String.Concat są znaczna część danych profilowania. Należy rozważyć użycie <xref:System.Text.StringBuilder> klasy w celu tworzenia ciągów z wieloma segmentami.  
-  
+ Wywołania System.String.Concat są znaczna część danych profilowania. Należy rozważyć użycie <xref:System.Text.StringBuilder> klasy w celu tworzenia ciągów z wielu segmentów.  
+
 ## <a name="rule-description"></a>Opis reguły  
- A <xref:System.String> obiektu nie można modyfikować. W związku z tym wszelkie modyfikacje ciąg tworzy nowy obiekt ciągu i wyrzucanie elementów bezużytecznych oryginału. To zachowanie jest takie samo jawnie wywołać String.concat — lub użyj takiego jak ciąg operatory łączenia + lub +=... Może spowodować spadek wydajności programu, jeśli te metody są często nazywane, takich jak dodania znaków do ciągu w ścisłej pętli.  
-  
- Klasy StringBuilder jest obiektem modyfikowalne i, w odróżnieniu od typu System.String, większość metod na StringBuilder, które modyfikują wystąpienia tej klasy zwraca odwołanie do tego samego wystąpienia. Można wstawić znaki lub dołączać tekstu do wystąpienia klasy StringBuilder i usuń lub zastąp znaki w wystąpieniu bez konieczności podziału nowe wystąpienie i usunięcie oryginalnego wystąpienia.  
-  
+ Element <xref:System.String> obiektu jest niezmienny. W związku z tym żadnych modyfikacji ciągu tworzy nowy obiekt ciągu i wyrzucanie elementów bezużytecznych oryginału. To zachowanie jest taki sam, czy należy jawnie wywołać String.concat — lub operatory łączenia ciągów takich jak + lub +=... Można zmniejszyć wydajność programu, jeśli te metody są często wywoływane, takie jak kiedy znaki są dodawane do ciągu w pętli.  
+
+ Klasy StringBuilder jest modyfikowalny obiekt i, w odróżnieniu od System.String, większość metod StringBuilder, które modyfikują wystąpienia tej klasy zwrócić odwołanie do tego samego wystąpienia. Można Wstawianie znaków lub dołączyć tekst do wystąpienia klasy StringBuilder i usunąć lub zastąpić znaki w wystąpieniu bez konieczności alokowania nowe wystąpienie i usunięcie oryginalnego wystąpienia.  
+
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
- Kliknij dwukrotnie komunikat w **listy błędów** okna, aby przejść do [widok szczegółów funkcji](../profiling/function-details-view.md) pobierania próbek danych profilu. Znajdź sekcje programu, które wykorzystują najczęstsze ciągów. Użyj klasy StringBuilder do złożonych na ciągach, w tym operacje na ciągach częste łączenia.  
-  
- Aby uzyskać więcej informacji na temat pracy z ciągami [operacje na ciągach](http://go.microsoft.com/fwlink/?LinkId=177816) sekcji [rozdział 5 - poprawę wydajności kodu zarządzanego](http://go.microsoft.com/fwlink/?LinkId=177817) w bibliotece Microsoft Patterns and Practices.
+ Kliknij dwukrotnie komunikat w **lista błędów** okna, aby przejść do [widok szczegółów funkcji](../profiling/function-details-view.md) pobierania próbek danych jej profilu. Znajdź części programu, które najczęściej wykorzystać ciągów. Użyj klasy StringBuilder do złożonych działań na ciągach, w tym operacje na ciągach częste łączenia.  
+
+ Aby uzyskać więcej informacji na temat sposobu pracy z ciągami [operacje na ciągach](http://go.microsoft.com/fwlink/?LinkId=177816) części [rozdział 5 - poprawę wydajności kodu zarządzanego](http://go.microsoft.com/fwlink/?LinkId=177817) w bibliotece Microsoft Patterns and Practices.

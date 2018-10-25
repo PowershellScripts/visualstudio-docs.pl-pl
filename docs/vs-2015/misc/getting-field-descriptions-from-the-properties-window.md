@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: f152572198116a200f91672691b6a4787538063e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fc5d2c8553ccdb6c554f9a8364e9fd21eaa324d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814795"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>Wprowadzenie opisy pól z okna właściwości
 W dolnej części **właściwości** , obszar opisu wyświetlane są informacje związane z pól wybranych właściwości. Ta funkcja jest włączona domyślnie. Jeśli chcesz ukryć pole opisu, kliknij prawym przyciskiem myszy **właściwości** oknie i kliknij przycisk **opis**. Ten sposób spowoduje również usunięcie znacznik wyboru obok pozycji **opis** tytuł w oknie menu. Wyświetlanie pola ponownie, wykonując te same kroki, aby przełączyć **opis** ponownie.  
@@ -28,18 +28,18 @@ W dolnej części **właściwości** , obszar opisu wyświetlane są informacje 
   
 ### <a name="to-specify-localized-help-strings"></a>Aby określić parametry zlokalizowanej pomocy  
   
-1.  Dodaj `helpstringdll` atrybutu po instrukcji library w bibliotece typów (`typelib`).  
+1. Dodaj `helpstringdll` atrybutu po instrukcji library w bibliotece typów (`typelib`).  
   
-    > [!NOTE]
-    >  Ten krok jest opcjonalny, jeśli biblioteka typów znajduje się w pliku biblioteki (.olb) obiektu.  
+   > [!NOTE]
+   >  Ten krok jest opcjonalny, jeśli biblioteka typów znajduje się w pliku biblioteki (.olb) obiektu.  
   
-2.  Określ `helpstringcontext` atrybuty dla ciągów. Można również określić `helpstring` atrybutów.  
+2. Określ `helpstringcontext` atrybuty dla ciągów. Można również określić `helpstring` atrybutów.  
   
-     Te atrybuty różnią się od `helpfile` i `helpcontext` atrybuty, które znajdują się w tematach pomocy plik chm rzeczywistych.  
+    Te atrybuty różnią się od `helpfile` i `helpcontext` atrybuty, które znajdują się w tematach pomocy plik chm rzeczywistych.  
   
- Można pobrać informacji o opis ma być wyświetlany nazwę właściwości wyróżnione **właściwości** wywołania okna <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> dla właściwości, która jest zaznaczone, określając żądane `lcid` atrybutu dla Ciąg wyjściowy. Wewnętrznie <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> znajdzie plik .dll, określone w `helpstringdll` atrybutu i wywołania `DLLGetDocumentation` z tym plikiem dll, przy użyciu określonego kontekstu i `lcid` atrybutu.  
+   Można pobrać informacji o opis ma być wyświetlany nazwę właściwości wyróżnione **właściwości** wywołania okna <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A> dla właściwości, która jest zaznaczone, określając żądane `lcid` atrybutu dla Ciąg wyjściowy. Wewnętrznie <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> znajdzie plik .dll, określone w `helpstringdll` atrybutu i wywołania `DLLGetDocumentation` z tym plikiem dll, przy użyciu określonego kontekstu i `lcid` atrybutu.  
   
- Podpis i implementację `DLLGetDocumentation` są:  
+   Podpis i implementację `DLLGetDocumentation` są:  
   
 ```  
 STDAPI DLLGetDocumentation  

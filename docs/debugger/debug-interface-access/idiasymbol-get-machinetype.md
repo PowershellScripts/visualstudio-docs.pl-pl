@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_machineType | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_machinetype — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f001450f874969007e5f592824bc1a9d693e1cac
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f7969a82ac6103a81b7849bc9f983842c9ebd6e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464124"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876779"
 ---
 # <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
-Pobiera typ elementu docelowego procesora CPU.  
+Pobiera typ docelowy adres CPU.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,13 +34,13 @@ HRESULT get_machineType (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca wartość z zakresu od [cv_cpu_type_e — wyliczenie](../../debugger/debug-interface-access/cv-cpu-type-e.md) wyliczenie określająca element docelowy typ Procesora.  
+ [out] Zwraca wartość z zakresu od [cv_cpu_type_e — wyliczenie](../../debugger/debug-interface-access/cv-cpu-type-e.md) wyliczenie, które określa obiekt docelowy typ Procesora.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Cv_cpu_type_e — wyliczenie](../../debugger/debug-interface-access/cv-cpu-type-e.md)   

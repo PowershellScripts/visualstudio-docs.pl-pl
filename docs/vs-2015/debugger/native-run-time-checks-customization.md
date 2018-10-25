@@ -31,31 +31,31 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 906aca3071c9abc6bd06ac1f0dc4d75bd1920a61
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 396778e87732d73462a7ecc2a420ea22a00936b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856604"
 ---
 # <a name="native-run-time-checks-customization"></a>Dostosowanie macierzystego sprawdzania w trakcie wykonywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podczas kompilacji z **usunęliśmy** (kontrole czasu wykonywania) lub użyj `runtime_checks` pragma, biblioteki wykonawczej C zapewnia macierzyste sprawdzanie w czasie wykonywania. W niektórych przypadkach możesz chcieć dostosować sprawdzanie w czasie wykonywania:  
   
--   Można przekierować wiadomości Sprawdzanie w czasie wykonywania do pliku lub docelowy inny niż domyślny.  
+- Można przekierować wiadomości Sprawdzanie w czasie wykonywania do pliku lub docelowy inny niż domyślny.  
   
--   Aby określić dane wyjściowe miejsce docelowe dla środowiska wykonawczego, sprawdź komunikaty w debugerze innych firm.  
+- Aby określić dane wyjściowe miejsce docelowe dla środowiska wykonawczego, sprawdź komunikaty w debugerze innych firm.  
   
--   Aby zgłosić wiadomości Sprawdzanie w czasie wykonania z poziomu programu skompilowany przy użyciu wersji biblioteki wykonawczej C. Nie należy używać wersji biblioteki `_CrtDbgReportW` do raportowania błędów czasu wykonywania. Zamiast tego są one wyświetlane **Asercja** okno dialogowe dla każdego błędu czasu wykonywania.  
+- Aby zgłosić wiadomości Sprawdzanie w czasie wykonania z poziomu programu skompilowany przy użyciu wersji biblioteki wykonawczej C. Nie należy używać wersji biblioteki `_CrtDbgReportW` do raportowania błędów czasu wykonywania. Zamiast tego są one wyświetlane **Asercja** okno dialogowe dla każdego błędu czasu wykonywania.  
   
- Aby dostosować, sprawdzanie błędów czasu wykonywania, możesz wykonywać następujące czynności:  
+  Aby dostosować, sprawdzanie błędów czasu wykonywania, możesz wykonywać następujące czynności:  
   
--   Pisanie funkcji raportowania błędów czasu wykonywania. Aby uzyskać więcej informacji, zobacz [porady: pisanie funkcji raportowania błędów czasu wykonywania](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
+- Pisanie funkcji raportowania błędów czasu wykonywania. Aby uzyskać więcej informacji, zobacz [porady: pisanie funkcji raportowania błędów czasu wykonywania](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
   
--   Dostosuj docelowego komunikat błędu.  
+- Dostosuj docelowego komunikat błędu.  
   
--   Zapytanie dotyczące informacji o czasie wykonywania Sprawdź błędy.  
+- Zapytanie dotyczące informacji o czasie wykonywania Sprawdź błędy.  
   
 ## <a name="customize-the-error-message-destination"></a>Dostosowywanie docelowy komunikatu błędu  
  Jeśli używasz `_CrtDbgReportW` do zgłaszania błędów, można użyć `_CrtSetReportMode` do określenia miejsca docelowego komunikaty o błędach.  

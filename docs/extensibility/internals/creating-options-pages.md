@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 834edb926142637a250cf4a695d5d1d54e103977
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 236d9a0be82885bdf8040c97601429279e74dd15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499481"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949646"
 ---
 # <a name="create-options-pages"></a>Tworzenie stron opcji
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska pakietu zarządzanego klasy pochodne klasy <xref:Microsoft.VisualStudio.Shell.DialogPage> rozszerzyć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, dodając **opcje** strony w obszarze **narzędzia** menu.  
@@ -47,17 +47,17 @@ W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska pakie
 ## <a name="implement-dialogpage-class"></a>Implementowanie klasy elementu DialogPage  
  Obiekt dostarczający wdrożenia pakietu VSPackage <xref:Microsoft.VisualStudio.Shell.DialogPage>-typu pochodnego korzystać z zalet dziedziczone następujące funkcje:  
   
--   Domyślne okno interfejsu użytkownika.  
+- Domyślne okno interfejsu użytkownika.  
   
--   Element domyślny dostępnego mechanizmu stanu trwałego albo jeśli <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> jest stosowany do klasy, lub jeśli <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> właściwość jest ustawiona na `true` dla <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> mający zastosowanie do klasy.  
+- Element domyślny dostępnego mechanizmu stanu trwałego albo jeśli <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> jest stosowany do klasy, lub jeśli <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> właściwość jest ustawiona na `true` dla <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> mający zastosowanie do klasy.  
   
--   Obsługa automatyzacji.  
+- Obsługa automatyzacji.  
   
- Minimalne wymagania dotyczące implementowania obiektu **opcje narzędzi** strony <xref:Microsoft.VisualStudio.Shell.DialogPage> jest dodanie właściwości publiczne.  
+  Minimalne wymagania dotyczące implementowania obiektu **opcje narzędzi** strony <xref:Microsoft.VisualStudio.Shell.DialogPage> jest dodanie właściwości publiczne.  
   
- Jeśli klasa jest prawidłowo zarejestrowana jako **opcje narzędzi** strony dostawcy, a następnie jego właściwości publiczne są dostępne na **opcje** części **narzędzia** menu w formie siatki właściwości.  
+  Jeśli klasa jest prawidłowo zarejestrowana jako **opcje narzędzi** strony dostawcy, a następnie jego właściwości publiczne są dostępne na **opcje** części **narzędzia** menu w formie siatki właściwości.  
   
- Wszystkie te funkcje domyślne można przesłonić. Na przykład można utworzyć bardziej zaawansowane użytkownika interfejsu wymaga tylko zastępowanie domyślna Implementacja klasy <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
+  Wszystkie te funkcje domyślne można przesłonić. Na przykład można utworzyć bardziej zaawansowane użytkownika interfejsu wymaga tylko zastępowanie domyślna Implementacja klasy <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
   
 ## <a name="example"></a>Przykład  
  Poniżej jest implementacją proste "Hello world" na stronie opcji. Dodając następujący kod do projektu domyślne utworzone przez szablon pakietu Visual Studio za pomocą **polecenia Menu** wybrana opcja odpowiednio zademonstruje funkcji strony opcji.  

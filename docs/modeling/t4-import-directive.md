@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c14cfea94277158583717aa77edc4636f245e58a
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b0e641ca9eafb0fb78dbe42e2deb936db8fd840b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916026"
 ---
 # <a name="t4-import-directive"></a>Dyrektywa T4 dotycząca importowania
 
@@ -41,15 +41,15 @@ The file contains: <#=  fileContent #>
 ## <a name="standard-imports"></a>Standardowe importowanie
  Następująca przestrzeń nazw jest importowana automatycznie, aby nie trzeba było pisać dla niej dyrektywy importu:
 
--   `System`
+- `System`
 
- Ponadto, jeśli używasz niestandardowej dyrektywy, procesor dyrektywy mógłby automatycznie zaimportować niektóre przestrzenie nazw.
+  Ponadto, jeśli używasz niestandardowej dyrektywy, procesor dyrektywy mógłby automatycznie zaimportować niektóre przestrzenie nazw.
 
- Na przykład, jeśli piszesz szablony dla języka specyficznego dla domeny (domain-specific language — DSL), nie musisz pisać dyrektyw importu dla następujących przestrzeni nazw:
+  Na przykład, jeśli piszesz szablony dla języka specyficznego dla domeny (domain-specific language — DSL), nie musisz pisać dyrektyw importu dla następujących przestrzeni nazw:
 
--   `Microsoft.VisualStudio.Modeling`
+- `Microsoft.VisualStudio.Modeling`
 
--   Przestrzeń nazw DSL
+- Przestrzeń nazw DSL
 
 ## <a name="see-also"></a>Zobacz też
 

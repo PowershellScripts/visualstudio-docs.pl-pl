@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cb7c842d6fdcc024b4146981ece251fb5189652
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2956d5f5ce4cf8f210466f7b7006a158eee6ce43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234432"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885060"
 ---
 # <a name="collecting-thread-and-process-concurrency-data"></a>Zbieranie danych współbieżności dla wątku i procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,22 +31,22 @@ ms.locfileid: "49234432"
   
  **Wymagania**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Można określić współbieżności, metoda profilowania przy użyciu jednej z następujących procedur:  
+  Można określić współbieżności, metoda profilowania przy użyciu jednej z następujących procedur:  
   
--   Na pierwszej stronie kreatora profilowania, kliknij przycisk **współbieżności**  
+- Na pierwszej stronie kreatora profilowania, kliknij przycisk **współbieżności**  
   
--   Na **ogólne** strony okna dialogowego właściwości sesji wydajności, kliknij przycisk **współbieżności**.  
+- Na **ogólne** strony okna dialogowego właściwości sesji wydajności, kliknij przycisk **współbieżności**.  
   
--   Na **Eksplorator wydajności** narzędzi w **metoda** kliknij **współbieżności**.  
+- Na **Eksplorator wydajności** narzędzi w **metoda** kliknij **współbieżności**.  
   
 ## <a name="common-tasks"></a>Typowe zadania  
  Można określić dodatkowe opcje w _sesji wydajności_**stron właściwości** okna dialogowego sesji wydajności. Aby otworzyć to okno dialogowe:  
   
--   W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij **właściwości**.  
+- W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij **właściwości**.  
   
- Zadania przedstawione w poniższej tabeli opisano opcje, które można określić w _sesji wydajności_**stron właściwości** okno dialogowe podczas profilowania za pomocą metody współbieżności.  
+  Zadania przedstawione w poniższej tabeli opisano opcje, które można określić w _sesji wydajności_**stron właściwości** okno dialogowe podczas profilowania za pomocą metody współbieżności.  
   
 |Zadanie|Powiązana zawartość|  
 |----------|---------------------|  

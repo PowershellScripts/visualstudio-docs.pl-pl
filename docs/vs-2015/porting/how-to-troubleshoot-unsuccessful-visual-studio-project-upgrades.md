@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 4a7ab025b4d0a89555ebb29c8cda2579eb9c455c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7dab8df520105aae1ba4168c675326ad588e603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911606"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Porady: rozwiązywanie problemów z nieudanymi aktualizacjami projektu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,13 +53,13 @@ Czasami program Visual Studio w pełni nie można przekonwertować projekt z wcz
   
 #### <a name="to-resolve-incorrect-references"></a>Aby rozwiązać niepoprawne odwołania  
   
-1.  Otwórz plik projektu w edytorze tekstów.  
+1. Otwórz plik projektu w edytorze tekstów.  
   
-2.  Otwórz właściwości projektu.  
+2. Otwórz właściwości projektu.  
   
-3.  Wybierz poprawnego **platformę docelową** wartość. Alternatywnie, można zmodyfikować wartości `<TargetFrameworkVersion>` elementu bezpośrednio w pliku projektu.  
+3. Wybierz poprawnego **platformę docelową** wartość. Alternatywnie, można zmodyfikować wartości `<TargetFrameworkVersion>` elementu bezpośrednio w pliku projektu.  
   
- Jeśli chcesz, aby projekt do uruchamiania w uaktualnionego [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji, należy zaktualizować odwołania do projektu, a także aktualizacji `Imports` lub `Using` instrukcji, które wywołują odwołania. Jeśli projekt ładuje się w środowisku IDE, można zaktualizować odwołania przy użyciu **Eksploratora rozwiązań** lub **Menadżer odwołań** okno dialogowe.  
+   Jeśli chcesz, aby projekt do uruchamiania w uaktualnionego [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] wersji, należy zaktualizować odwołania do projektu, a także aktualizacji `Imports` lub `Using` instrukcji, które wywołują odwołania. Jeśli projekt ładuje się w środowisku IDE, można zaktualizować odwołania przy użyciu **Eksploratora rozwiązań** lub **Menadżer odwołań** okno dialogowe.  
   
 ## <a name="see-also"></a>Zobacz też  
  [/ Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md)   

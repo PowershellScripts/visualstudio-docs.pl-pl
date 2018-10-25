@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72e4648643e60939fb74d69f960342d14b8a5d1b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2351c048576d6cf0e93515df8bdce34eef09bfc8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854666"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>Porady: Zarządzanie galerią prywatnej za pomocą ustawień rejestru
 Jeśli jesteś administratorem lub deweloperem rozszerzenia Isolated Shell można kontrolować dostęp do formantów, szablonów i narzędzi dostępnych w galerii Visual Studio, galerii przykładów lub galerie prywatne. Aby galerii dostępne lub niedostępne, należy utworzyć *.pkgdef* pliku, który opisuje zmodyfikowanych kluczy i ich wartości.  
@@ -41,17 +41,17 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
   
  `Repositories` Klucz odnosi się do galerii, aby włączyć lub wyłączyć. W galerii Visual Studio i galerii przykładów należy użyć następujących repozytorium identyfikatorów GUID:  
   
--   Galeria Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9  
+- Galeria Visual Studio: 0F45E408-7995-4375-9485-86B8DB553DC9  
   
--   Galeria przykładów: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
+- Galeria przykładów: AEB9CB40-D8E6-4615-B52C-27E307F8506C  
   
- `Disabled` Wartość jest opcjonalna. Domyślnie galerii jest włączona.  
+  `Disabled` Wartość jest opcjonalna. Domyślnie galerii jest włączona.  
   
- `Priority` Wartość określa kolejność, w którym Galerie są wymienione w **opcje** okno dialogowe. Galeria Visual Studio ma priorytet 10 i galerii przykładów ma priorytet 20. Galerie prywatne start priorytetem 100. Jeśli kilka Galerie mają taką samą wartość priorytetu, kolejność, w jakiej są wyświetlane jest określana przez wartości ich zlokalizowane `DisplayName` atrybutów.  
+  `Priority` Wartość określa kolejność, w którym Galerie są wymienione w **opcje** okno dialogowe. Galeria Visual Studio ma priorytet 10 i galerii przykładów ma priorytet 20. Galerie prywatne start priorytetem 100. Jeśli kilka Galerie mają taką samą wartość priorytetu, kolejność, w jakiej są wyświetlane jest określana przez wartości ich zlokalizowane `DisplayName` atrybutów.  
   
- `Protocol` Wartość jest wymagana do galerii Atom lub programu SharePoint.  
+  `Protocol` Wartość jest wymagana do galerii Atom lub programu SharePoint.  
   
- Albo `DisplayName`, i / lub `DisplayNameResourceID` i `DisplayNamePackageGuid`, musi być określona. Jeśli wszystkie są określone, a następnie `DisplayNameResourceID` i `DisplayNamePackageGuid` pary jest używany.  
+  Albo `DisplayName`, i / lub `DisplayNameResourceID` i `DisplayNamePackageGuid`, musi być określona. Jeśli wszystkie są określone, a następnie `DisplayNameResourceID` i `DisplayNamePackageGuid` pary jest używany.  
   
 ## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>Wyłącz galerii Visual Studio przy użyciu pliku pkgdef  
  Można wyłączyć galerii w *.pkgdef* pliku. Następujący wpis wyłącza galerii Visual Studio:  

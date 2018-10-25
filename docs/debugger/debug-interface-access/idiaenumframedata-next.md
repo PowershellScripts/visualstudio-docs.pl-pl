@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumFrameData::Next | Dokumentacja firmy Microsoft
+title: Idiaenumframedata::Next — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6835cda6c8c2a5cb20135abf92a523a270b32c78
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 55320b4f07eb2acda1d46875fa6f3bd5eefe2813
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461245"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949984"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
 Pobiera określoną liczbę elementów danych ramki w kolejności wyliczenia.  
@@ -36,16 +36,16 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parametry  
  celt  
- [in] Liczba elementów danych ramki w moduł wyliczający, które mają zostać pobrane.  
+ [in] Liczba elementów danych ramki w modułu wyliczającego do pobrania.  
   
  rgelt  
- [out] Tablica [idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiektów w celu wprowadzenia elementy danych żądanego ramki.  
+ [out] Tablica [idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiektów, które ma zostać wypełniony przy użyciu elementów danych żądanego ramki.  
   
  pceltFetched  
- [out] Zwraca liczbę elementów danych ramki w pobranych modułu wyliczającego.  
+ [out] Zwraca liczbę elementów danych ramki w pobrano modułu wyliczającego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma żadnych więcej rekordów. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma żadnych więcej rekordów. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenumframedata —](../../debugger/debug-interface-access/idiaenumframedata.md)   

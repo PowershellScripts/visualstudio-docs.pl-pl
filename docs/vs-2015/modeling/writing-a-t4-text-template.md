@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0f7a3da89f98d469dde60b98ad68de0574d10db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231637"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897800"
 ---
 # <a name="writing-a-t4-text-template"></a>Pisanie szablonu tekstowego T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Szablon tekstu zawiera tekst, który zostanie z niego wygenerowany. Na przykład
   
  Szablony tekstu składają się z następujących elementów:  
   
--   **Dyrektywy** — elementy, które kontrolują sposób przetwarzania szablonu.  
+- **Dyrektywy** — elementy, które kontrolują sposób przetwarzania szablonu.  
   
--   **Bloki tekstu** — zawartość kopiowana bezpośrednio do wyjścia.  
+- **Bloki tekstu** — zawartość kopiowana bezpośrednio do wyjścia.  
   
--   **Bloki sterujące** — kod programu, który wstawia zmienne wartości do tekstu oraz kontroluje jego warunkowe lub powtarzające się części.  
+- **Bloki sterujące** — kod programu, który wstawia zmienne wartości do tekstu oraz kontroluje jego warunkowe lub powtarzające się części.  
   
- Aby wypróbować przykłady zamieszczone w tym temacie, skopiuj je do pliku szablonu zgodnie z opisem w [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Po zmodyfikowaniu pliku szablonu, zapisz go, a następnie sprawdź dane wyjściowe **.txt** pliku.  
+  Aby wypróbować przykłady zamieszczone w tym temacie, skopiuj je do pliku szablonu zgodnie z opisem w [generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Po zmodyfikowaniu pliku szablonu, zapisz go, a następnie sprawdź dane wyjściowe **.txt** pliku.  
   
 ## <a name="directives"></a>Dyrektyw  
  Dyrektywy szablonów tekstu przekazują do silnika tworzenia szablonów tekstu ogólne instrukcje o sposobach generowania kodu przekształcenia oraz pliku wyjściowego.  

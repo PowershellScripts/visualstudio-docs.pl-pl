@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e898620fe7b319b785e8e0d337cc04192b206bd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4a3c0e60dc9211baf0b8568b3804b1df7f82765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227750"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812169"
 ---
 # <a name="network-usage"></a>Użycie sieci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje
 ## <a name="collecting-network-tool-data"></a>Zbieranie danych z narzędzia do sieci  
  Należy uruchomić **sieci** narzędzie z otwartym projekcie programu Visual Studio na komputerze programu Visual Studio.  
   
-1.  Otwórz projekt w programie Visual Studio.  
+1. Otwórz projekt w programie Visual Studio.  
   
-2.  W menu, kliknij polecenie **debugowanie / Profiler wydajności...** . Wybierz **sieci**, a następnie wybierz **Start**.  
+2. W menu, kliknij polecenie **debugowanie / Profiler wydajności...** . Wybierz **sieci**, a następnie wybierz **Start**.  
   
-3.  Narzędzie sieci rozpoczyna zbieranie ruch HTTP Twojej aplikacji.  
+3. Narzędzie sieci rozpoczyna zbieranie ruch HTTP Twojej aplikacji.  
   
-     Podczas uruchamiania aplikacji widok podsumowania w okienku po lewej stronie automatycznie wyświetla listę przechwyconych operacji HTTP. Wybierz element w widoku podsumowania, aby uzyskać więcej informacji, w okienku szczegółów w okienku po prawej stronie.  
+    Podczas uruchamiania aplikacji widok podsumowania w okienku po lewej stronie automatycznie wyświetla listę przechwyconych operacji HTTP. Wybierz element w widoku podsumowania, aby uzyskać więcej informacji, w okienku szczegółów w okienku po prawej stronie.  
   
-4.  Wybierz **zatrzymać** aby zamknąć aplikację.  
+4. Wybierz **zatrzymać** aby zamknąć aplikację.  
   
- W oknie Raport powinien wyglądać mniej więcej tak:  
+   W oknie Raport powinien wyglądać mniej więcej tak:  
   
- ![Okno sieci](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![Okno sieci](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Analizowanie danych  
  Można analizować przechwycone ruch HTTP, gdy Twoja aplikacja jest uruchomiona lub nawet w przypadku, po zamknięciu aplikacji, wybierając dowolną z operacji sieciowych wyświetlany w widoku podsumowania.  

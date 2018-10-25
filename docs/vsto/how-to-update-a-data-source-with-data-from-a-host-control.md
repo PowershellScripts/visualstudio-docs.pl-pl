@@ -18,23 +18,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23fbe0a7563dbb1ebb3832dbe5c340e67dacac72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677608"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839768"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Porady: aktualizowanie źródła danych danymi z kontrolki hosta
   Można powiązać kontrolki hosta ze źródłem danych i zaktualizować źródło danych ze zmianami, które zostały wprowadzone do danych w formancie. Istnieją dwa podstawowe kroki w ramach tego procesu:  
   
-1.  Zaktualizuj źródło danych w pamięci przy użyciu zmodyfikowanych danych w formancie. Zazwyczaj jest źródło danych w pamięci <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, lub inny obiekt danych.  
+1. Zaktualizuj źródło danych w pamięci przy użyciu zmodyfikowanych danych w formancie. Zazwyczaj jest źródło danych w pamięci <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, lub inny obiekt danych.  
   
-2.  Aktualizacji bazy danych przy użyciu zmienionych danych w źródle danych w pamięci. Ma to zastosowanie tylko wtedy, gdy źródło danych jest podłączony do wewnętrznej bazy danych, na przykład w bazie danych programu SQL Server lub programu Microsoft Office Access.  
+2. Aktualizacji bazy danych przy użyciu zmienionych danych w źródle danych w pamięci. Ma to zastosowanie tylko wtedy, gdy źródło danych jest podłączony do wewnętrznej bazy danych, na przykład w bazie danych programu SQL Server lub programu Microsoft Office Access.  
   
- Aby uzyskać więcej informacji na temat formantów hosta i powiązania danych, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md) i [wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+   Aby uzyskać więcej informacji na temat formantów hosta i powiązania danych, zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md) i [wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
- [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
+   [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="update-the-in-memory-data-source"></a>Zaktualizuj źródło danych w pamięci  
  Domyślnie formanty hosta, które umożliwiają proste powiązanie danych (na przykład formanty zawartości w dokumencie programu Word lub kontrolka nazwany zakres na arkuszu programu Excel) nie należy zapisywać zmian danych do źródła danych w pamięci. Oznacza to po użytkownik końcowy zmienia wartość w kontrolce hosta, a następnie powoduje przejście od formantu, nową wartość w formancie nie są automatycznie zapisywane do źródła danych.  
@@ -57,14 +57,14 @@ ms.locfileid: "35677608"
   
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>Aby ustawić kontroli można automatycznie zaktualizować źródło danych w pamięci przy użyciu kodu  
   
-1.  Użyj trybu System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged <xref:System.Windows.Forms.Binding> obiekt, który wiąże formant ze źródłem danych. Dostępne są dwie opcje do aktualizowania źródła danych:  
+1. Użyj trybu System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged <xref:System.Windows.Forms.Binding> obiekt, który wiąże formant ze źródłem danych. Dostępne są dwie opcje do aktualizowania źródła danych:  
   
-    -   Aby zaktualizować źródła danych, gdy kontrolka jest weryfikowana, należy ustawić tę właściwość na System.Windows.Forms.DataSourceUpdateMode.OnValidation.  
+   - Aby zaktualizować źródła danych, gdy kontrolka jest weryfikowana, należy ustawić tę właściwość na System.Windows.Forms.DataSourceUpdateMode.OnValidation.  
   
-    -   Aby zaktualizować źródło danych, po zmianie wartości właściwości powiązanych z danymi formantu, należy ustawić tę właściwość na System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
+   - Aby zaktualizować źródło danych, po zmianie wartości właściwości powiązanych z danymi formantu, należy ustawić tę właściwość na System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.  
   
-        > [!NOTE]  
-        >  Opcja System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged nie dotyczą kontrolki hosta programu Word, ponieważ program Word jest nie oferty dokumentu zmian lub zmiana sterowania powiadomień. Jednak ta opcja może służyć dla formantów Windows Forms w dokumentach programu Word.  
+     > [!NOTE]  
+     >  Opcja System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged nie dotyczą kontrolki hosta programu Word, ponieważ program Word jest nie oferty dokumentu zmian lub zmiana sterowania powiadomień. Jednak ta opcja może służyć dla formantów Windows Forms w dokumentach programu Word.  
   
      Poniższy przykład umożliwia skonfigurowanie <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli można automatycznie zaktualizować źródła danych, po zmianie wartości w kontrolce. W tym przykładzie przyjęto założenie, iż <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu o nazwie `namedRange1` z jego <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> właściwości powiązany z polem w źródle danych.  
   

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbolsByAddr::symbolByRVA | Dokumentacja firmy Microsoft
+title: Idiaenumsymbolsbyaddr::symbolbyrva — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cdeaef2bc963eca894403bf90e1c9fb720efd4d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1e746cf0b93f5a9c0944a80c6cbaabedfbb9cc23
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459704"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895230"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
-Umieszcza modułu wyliczającego przez wykonywane jest wyszukiwanie przez wirtualny adres względny (RVA).  
+Umieszcza modułu wyliczającego, wykonując wyszukiwanie przez względnych adresów wirtualnych (RVA).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,15 +35,15 @@ HRESULT symbolByRVA (
   
 #### <a name="parameters"></a>Parametry  
  relativeVirtualAddress  
- [in] Adres względny na początek obrazu.  
+ [in] Adres względem początku obrazu.  
   
  ppsymbol  
- [out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt reprezentujący symbol znaleziono.  
+ [out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt reprezentujący odnaleziono symbolu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie można odnaleźć symbolu. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli symbol nie został odnaleziony. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenumsymbolsbyaddr —](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)   
- [IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)   
+ [Idiaenumsymbolsbyaddr::symbolbyva —](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

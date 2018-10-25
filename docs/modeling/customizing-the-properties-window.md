@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b20aed36dbde31b63956fa104c5c1a50e0088d1
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 76e7b9433fe76464e7af385081ac3577d53919e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859305"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813900"
 ---
 # <a name="customizing-the-properties-window"></a>Dostosowywanie okna właściwości
 W języku specyficznym dla domeny (DSL) w programie Visual Studio, można dostosować wygląd i zachowanie w oknie właściwości. W definicji DSL definiuje się właściwości domeny na każdej klasy domeny. Domyślnie po wybraniu wystąpienia klasy w diagramie lub w Eksploratorze modelu, dla każdej właściwości domeny znajduje się w oknie dialogowym właściwości. Dzięki temu można wyświetlić i edytować wartości właściwości domeny, nawet jeśli ma nie mapowane do pól kształtów na diagramie.
@@ -28,11 +28,11 @@ W języku specyficznym dla domeny (DSL) w programie Visual Studio, można dostos
 
  **Opis elementu**. Opis właściwości domeny pojawia się w dwóch miejscach:
 
--   W dolnej części okna właściwości, gdy użytkownik wybierze właściwości. Służy do wyjaśnienia dla użytkownika, właściwość reprezentuje.
+- W dolnej części okna właściwości, gdy użytkownik wybierze właściwości. Służy do wyjaśnienia dla użytkownika, właściwość reprezentuje.
 
--   W kodzie wygenerowanym programu. Jeśli używasz urządzenia dokumentacji można wyodrębnić dokumentacji interfejsu API, pojawi się jako opis tej właściwości w interfejsie API.
+- W kodzie wygenerowanym programu. Jeśli używasz urządzenia dokumentacji można wyodrębnić dokumentacji interfejsu API, pojawi się jako opis tej właściwości w interfejsie API.
 
- **Kategoria**. Kategoria jest pozycją w oknie dialogowym właściwości.
+  **Kategoria**. Kategoria jest pozycją w oknie dialogowym właściwości.
 
 ## <a name="exposing-style-features"></a>Udostępnianie stylu funkcji
  Niektóre funkcje dynamiczne elementy graficzne mogą być reprezentowane lub *udostępniane* jako właściwości domeny. Funkcja, która została udostępniona w ten sposób mogą być aktualizowane przez użytkownika, a więcej łatwo można zaktualizować przy użyciu kodu programu.
@@ -67,67 +67,67 @@ W języku specyficznym dla domeny (DSL) w programie Visual Studio, można dostos
 
 ##### <a name="to-forward-a-property-from-another-element"></a>Aby przekazywać właściwości z innego elementu
 
-1.  Tworzenie [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązanie, które zawiera co najmniej dwóch klas, które w tym przykładzie są nazywane **książki** i **Autor**. Powinna istnieć relacja dowolnego rodzaju między **książki** i **Autor**.
+1. Tworzenie [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązanie, które zawiera co najmniej dwóch klas, które w tym przykładzie są nazywane **książki** i **Autor**. Powinna istnieć relacja dowolnego rodzaju między **książki** i **Autor**.
 
-     Liczebność roli źródłowej (roli na **książki** po stronie) powinna być od 0 do 1 lub 1.. 1, dlatego każdy **książki** ma jeden **Autor**.
+    Liczebność roli źródłowej (roli na **książki** po stronie) powinna być od 0 do 1 lub 1.. 1, dlatego każdy **książki** ma jeden **Autor**.
 
-2.  W **Eksplorator DSL**, kliknij prawym przyciskiem myszy **książki** klasy domeny, a następnie kliknij **Dodaj nowy element DomainTypeDescriptor**.
+2. W **Eksplorator DSL**, kliknij prawym przyciskiem myszy **książki** klasy domeny, a następnie kliknij **Dodaj nowy element DomainTypeDescriptor**.
 
-     Węzeł o nazwie **ścieżki niestandardowe deskryptorów właściwości** pojawia się w obszarze **deskryptorze typu niestandardowego** węzła.
+    Węzeł o nazwie **ścieżki niestandardowe deskryptorów właściwości** pojawia się w obszarze **deskryptorze typu niestandardowego** węzła.
 
-3.  Kliknij prawym przyciskiem myszy **deskryptorze typu niestandardowego** węzłem, a następnie kliknij przycisk **dodać nowy atrybut PropertyPath**.
+3. Kliknij prawym przyciskiem myszy **deskryptorze typu niestandardowego** węzłem, a następnie kliknij przycisk **dodać nowy atrybut PropertyPath**.
 
-     Nową ścieżkę właściwość pojawia się w obszarze **ścieżki niestandardowe deskryptorów właściwości** węzła.
+    Nową ścieżkę właściwość pojawia się w obszarze **ścieżki niestandardowe deskryptorów właściwości** węzła.
 
-4.  Wybierz nową ścieżkę właściwości, a następnie w **właściwości** oknie **ścieżka do właściwości** do ścieżki elementu odpowiedniego modelu.
+4. Wybierz nową ścieżkę właściwości, a następnie w **właściwości** oknie **ścieżka do właściwości** do ścieżki elementu odpowiedniego modelu.
 
-     Ścieżka w widoku drzewa można edytować, klikając strzałkę w dół po prawej stronie tej właściwości. Aby uzyskać więcej informacji na temat ścieżek domeny Zobacz [składnia ścieżki domeny](../modeling/domain-path-syntax.md). Po zakończeniu edycji go, ścieżka powinna przypominać przedstawioną **BookReferencesAuthor.Author/! Autor**.
+    Ścieżka w widoku drzewa można edytować, klikając strzałkę w dół po prawej stronie tej właściwości. Aby uzyskać więcej informacji na temat ścieżek domeny Zobacz [składnia ścieżki domeny](../modeling/domain-path-syntax.md). Po zakończeniu edycji go, ścieżka powinna przypominać przedstawioną **BookReferencesAuthor.Author/! Autor**.
 
-5.  Ustaw **właściwość** do **nazwa** właściwość domeny **Autor**.
+5. Ustaw **właściwość** do **nazwa** właściwość domeny **Autor**.
 
-6.  Ustaw **nazwy wyświetlanej** do **nazwę autora**.
+6. Ustaw **nazwy wyświetlanej** do **nazwę autora**.
 
-7.  Transformuj wszystkie szablony, twórz i uruchamiaj język DSL.
+7. Transformuj wszystkie szablony, twórz i uruchamiaj język DSL.
 
-8.  Na diagramie modelu Tworzenie książki, autora i łączyć je przy użyciu relacji odwołania. Wybierz element książki, a następnie w oknie dialogowym właściwości powinien zostać wyświetlony nazwisko autora, oprócz właściwości książki. Zmień nazwę autora połączone lub link książki do innego autora i obserwować, że zmienia nazwę autora książki.
+8. Na diagramie modelu Tworzenie książki, autora i łączyć je przy użyciu relacji odwołania. Wybierz element książki, a następnie w oknie dialogowym właściwości powinien zostać wyświetlony nazwisko autora, oprócz właściwości książki. Zmień nazwę autora połączone lub link książki do innego autora i obserwować, że zmienia nazwę autora książki.
 
 ## <a name="custom-property-editors"></a>Edytory właściwości niestandardowej
  W oknie właściwości zawiera odpowiednią wartość domyślną edytowanie dla rodzaju właściwości każdej domeny. Na przykład dla typu wyliczeniowego, użytkownik zobaczy listy rozwijanej, a na właściwość numeryczną, użytkownik może wprowadzić cyfr. Ta zasada obowiązuje tylko dla typów wbudowanych. Jeśli określisz typ zewnętrzny, użytkownik będzie mógł wyświetlić wartości właściwości, ale nie można go edytować.
 
  Jednakże można określić następujące edytory i typy:
 
-1.  Inny edytor, który jest używany z typu Standardowy. Na przykład można określić ścieżkę edytora właściwości ciągu.
+1. Inny edytor, który jest używany z typu Standardowy. Na przykład można określić ścieżkę edytora właściwości ciągu.
 
-2.  Typ zewnętrzny dla właściwości domeny i edytor dla niego.
+2. Typ zewnętrzny dla właściwości domeny i edytor dla niego.
 
-3.  Edytor technologii .NET, takich jak edytor ścieżkę pliku, lub można utworzyć edytora właściwości niestandardowej.
+3. Edytor technologii .NET, takich jak edytor ścieżkę pliku, lub można utworzyć edytora właściwości niestandardowej.
 
-     Konwersja między typu zewnętrznego i typem, takie jak ciąg, który ma domyślny edytor.
+    Konwersja między typu zewnętrznego i typem, takie jak ciąg, który ma domyślny edytor.
 
- W języku DSL *typ zewnętrzny* jest dowolny typ, który nie jest jednym z typów prostych (na przykład atrybut typu wartość logiczna lub Int32) lub ciąg.
+   W języku DSL *typ zewnętrzny* jest dowolny typ, który nie jest jednym z typów prostych (na przykład atrybut typu wartość logiczna lub Int32) lub ciąg.
 
 #### <a name="to-define-a-domain-property-that-has-an-external-type"></a>Aby zdefiniować właściwość domeny, który ma typ zewnętrzny
 
-1.  W **Eksploratora rozwiązań**, Dodaj odwołanie do zestawu (DLL), który zawiera typ zewnętrzny w **Dsl** projektu.
+1. W **Eksploratora rozwiązań**, Dodaj odwołanie do zestawu (DLL), który zawiera typ zewnętrzny w **Dsl** projektu.
 
-     Zestawu może być zestawem .NET lub zestawu podane przez użytkownika.
+    Zestawu może być zestawem .NET lub zestawu podane przez użytkownika.
 
-2.  Dodaj typ **typy domen** listy, o ile nie zostało jeszcze to zrobione.
+2. Dodaj typ **typy domen** listy, o ile nie zostało jeszcze to zrobione.
 
-    1.  Otwórz DslDefinition.dsl, a następnie w **Eksplorator DSL**, kliknij prawym przyciskiem myszy węzeł główny, a następnie kliknij przycisk **dodać nowy typ zewnętrzny**.
+   1.  Otwórz DslDefinition.dsl, a następnie w **Eksplorator DSL**, kliknij prawym przyciskiem myszy węzeł główny, a następnie kliknij przycisk **dodać nowy typ zewnętrzny**.
 
-         Nowy wpis, który pojawia się w obszarze **typy domen** węzła.
+        Nowy wpis, który pojawia się w obszarze **typy domen** węzła.
 
-        > [!WARNING]
-        >  Element menu jest w węźle głównym języka DSL **typy domen** węzła.
+       > [!WARNING]
+       >  Element menu jest w węźle głównym języka DSL **typy domen** węzła.
 
-    2.  Ustaw nazwę i przestrzeń nazw nowego typu, w oknie dialogowym właściwości.
+   2.  Ustaw nazwę i przestrzeń nazw nowego typu, w oknie dialogowym właściwości.
 
-3.  Dodaj właściwość domeny do klasy domeny w zwykły sposób.
+3. Dodaj właściwość domeny do klasy domeny w zwykły sposób.
 
-     W oknie dialogowym właściwości wybierz typ zewnętrzny z listy rozwijanej w **typu** pola.
+    W oknie dialogowym właściwości wybierz typ zewnętrzny z listy rozwijanej w **typu** pola.
 
- Na tym etapie użytkownicy mogą wyświetlać wartości właściwości, ale nie mogą go edytować. Wyświetlane wartości są uzyskiwane z `ToString()` funkcji. Można napisać kod programu, który ustawia wartości właściwości, na przykład polecenie lub reguły.
+   Na tym etapie użytkownicy mogą wyświetlać wartości właściwości, ale nie mogą go edytować. Wyświetlane wartości są uzyskiwane z `ToString()` funkcji. Można napisać kod programu, który ustawia wartości właściwości, na przykład polecenie lub reguły.
 
 ### <a name="setting-a-property-editor"></a>Ustawienia edytora właściwości
  Dodaj atrybut CLR dla właściwości domeny, w następującej postaci:
@@ -136,7 +136,6 @@ W języku specyficznym dla domeny (DSL) w programie Visual Studio, można dostos
 [System.ComponentModel.Editor (
    typeof(AnEditor),
    typeof(System.Drawing.Design.UITypeEditor))]
-
 ```
 
  Atrybut zostanie ustawiony we właściwości, za pomocą **atrybut niestandardowy** wpis w oknie dialogowym właściwości.
@@ -173,11 +172,11 @@ W języku specyficznym dla domeny (DSL) w programie Visual Studio, można dostos
 
  Zdefiniuj edytora, pisząc klasę, która jest pochodną <xref:System.Drawing.Design.UITypeEditor>. Przesłonięcie klasy:
 
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, do interakcji z użytkownikiem i zaktualizować wartość właściwości.
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, do interakcji z użytkownikiem i zaktualizować wartość właściwości.
 
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, aby określić czy edytor będzie otworzyć okno dialogowe lub Zapewnij menu rozwijanego.
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, aby określić czy edytor będzie otworzyć okno dialogowe lub Zapewnij menu rozwijanego.
 
- Możesz też podać graficzną reprezentację wartości właściwości, która będzie wyświetlana w siatce właściwości. Aby to zrobić, należy zastąpić `GetPaintValueSupported`, i `PaintValue`.  Aby uzyskać więcej informacji, zobacz <xref:System.Drawing.Design.UITypeEditor>.
+  Możesz też podać graficzną reprezentację wartości właściwości, która będzie wyświetlana w siatce właściwości. Aby to zrobić, należy zastąpić `GetPaintValueSupported`, i `PaintValue`.  Aby uzyskać więcej informacji, zobacz <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 >  Dodaj kod w osobnym pliku kodu w **Dsl** projektu.
@@ -194,7 +193,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
     openFileDialog.Title = "Select a text file";
   }
 }
-
 ```
 
  Aby użyć tego edytora, ustaw **atrybut niestandardowy** właściwości domeny:
@@ -203,7 +201,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 [System.ComponentModel.Editor (
    typeof(MyNamespace.TextFileNameEditor)
    , typeof(System.Drawing.Design.UITypeEditor))]
-
 ```
 
  Aby uzyskać więcej informacji, zobacz <xref:System.Drawing.Design.UITypeEditor>.
@@ -219,7 +216,6 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 ```csharp
 [System.ComponentModel.TypeConverter
 (typeof(MyTypeConverter))]
-
 ```
 
  Definiowanie klasy, która jest pochodną <xref:System.ComponentModel.TypeConverter>. Dodaj kod w oddzielnym pliku w **Dsl** projektu. Na przykład:
@@ -313,7 +309,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>Zobacz też

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92d8a4bf94d821aa9732a4d908424c502f110be9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 357aec9f55cfb38fd05e6c0405bfa17f4e6e274f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825741"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
-Powiadamia pakietu debugowania wstawiony tekstu do dokumentu.  
+Powiadamia pakietu debugowania, że włożono tekstu do dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,13 +43,13 @@ int onInsert(
   
 #### <a name="parameters"></a>Parametry  
  `pos`  
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struktury, która wskazuje, gdzie został wstawiony tekst.  
+ [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) strukturę, która wskazuje, gdzie został wstawiony tekst.  
   
  `dwNumToInsert`  
  [in] Określa liczbę znaków tekstu, które zostały wprowadzone.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   

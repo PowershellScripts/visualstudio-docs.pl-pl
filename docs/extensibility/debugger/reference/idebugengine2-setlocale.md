@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eca2f05c290f27a6c3037ef14cbf32fd219b6253
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5575a96a438cc0dced0e1508776320747bf4d921
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116480"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866041"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
-Określa ustawienia regionalne aparatu debugowania (DE).  
+Ustawia ustawienia regionalne aparatu debugowania (DE).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int SetLocale(
   
 #### <a name="parameters"></a>Parametry  
  `wLangID`  
- [in] Określa ustawienia regionalne języka. Na przykład 1033 dla języka angielskiego.  
+ [in] Określa ustawienia regionalne język. Na przykład 1033 dla języka angielskiego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest wywoływana przez menedżera sesji debugowania (SDM) propagacji ustawień regionalnych IDE, aby poprawnie są zlokalizowane ciągi zwrócony przez Niemcy.  
+ Ta metoda jest wywoływana przez Menedżer debugowania sesji (SDM) do propagowania ustawień regionalnych środowiska IDE, aby ciągów zwracanych przez DE prawidłowo są zlokalizowane.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

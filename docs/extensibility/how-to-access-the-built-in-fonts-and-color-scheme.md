@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180dc474b2458ec38a8a76ed8f931a592cf29225
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911255"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Porady: dostęp do wbudowanych czcionek i kolorów ccheme
 Visual Studio zintegrowane środowisko programistyczne (IDE) zawiera schemat kolorów i czcionek, który jest skojarzony z oknem edytora. Możesz uzyskać dostęp za pośrednictwem systemu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfejsu.
 
  Aby korzystać z wbudowanych czcionek i kolorów schematu, pakietu VSPackage musi:
 
--   Definiowanie kategorii do użycia z usługą czcionki i kolory domyślne.
+- Definiowanie kategorii do użycia z usługą czcionki i kolory domyślne.
 
--   Zarejestruj kategorii z domyślnego serwera czcionek i kolorów.
+- Zarejestruj kategorii z domyślnego serwera czcionek i kolorów.
 
--   Poinformowania środowiska IDE, że określone okno używa wbudowanego wyświetle elementy i kategorie za pomocą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interfejsów.
+- Poinformowania środowiska IDE, że określone okno używa wbudowanego wyświetle elementy i kategorie za pomocą <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interfejsów.
 
- IDE używa wynikowej kategorii, jak dojścia do okna. Nazwa kategorii jest wyświetlana w **Pokaż ustawienia dla:** pole listy rozwijanej w **czcionki i kolory** stronę właściwości.
+  IDE używa wynikowej kategorii, jak dojścia do okna. Nazwa kategorii jest wyświetlana w **Pokaż ustawienia dla:** pole listy rozwijanej w **czcionki i kolory** stronę właściwości.
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Aby zdefiniować kategorii przy użyciu wbudowanych czcionki i kolory
 
@@ -67,15 +67,15 @@ Visual Studio zintegrowane środowisko programistyczne (IDE) zawiera schemat kol
 
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Aby zainicjować użycie dostarczane przez system czcionek i kolorów
 
-1.  Utwórz wystąpienie obiektu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfejsu jako część wdrożenia i Inicjowanie okna.
+1. Utwórz wystąpienie obiektu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interfejsu jako część wdrożenia i Inicjowanie okna.
 
-2.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metodę, aby uzyskać wystąpienia <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interfejsu odpowiadającą bieżącej <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> wystąpienia.
+2. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> metodę, aby uzyskać wystąpienia <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer> interfejsu odpowiadającą bieżącej <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> wystąpienia.
 
-3.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> dwa razy.
+3. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> dwa razy.
 
-    -   Wywołaj raz za pomocą `VSEDITPROPID_ViewGeneral_ColorCategory`jako argument.
+   - Wywołaj raz za pomocą `VSEDITPROPID_ViewGeneral_ColorCategory`jako argument.
 
-    -   Wywołaj raz za pomocą `VSEDITPROPID_ViewGeneral_FontCategory` jako argument.
+   - Wywołaj raz za pomocą `VSEDITPROPID_ViewGeneral_FontCategory` jako argument.
 
      Spowoduje to i udostępnia usługi czcionki i kolory domyślne jako właściwość okna.
 

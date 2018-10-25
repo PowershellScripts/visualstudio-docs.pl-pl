@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b82f18f4cc6ff5bb2666a51c4e8f37e22fd7d32b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 45ff6e07abb77623fe1007ef5e13556e26852224
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827469"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Unikaj wewnętrznych klas bez wystąpień
+
 |||
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
@@ -32,12 +33,14 @@ ms.locfileid: "47859006"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Wystąpienie typu na poziomie zestawu nie jest tworzone przez kod w zestawie.
+
+Wystąpienie typu na poziomie zestawu nie jest tworzone przez kod w zestawie.
 
 ## <a name="rule-description"></a>Opis reguły
- Ta zasada próbuje zlokalizować wywołań do jednego z konstruktorów typu i zgłasza naruszenie, jeśli brak wywołania zostanie znaleziony.
 
- Następujące typy nie są sprawdzane przez tę regułę:
+Ta zasada próbuje zlokalizować wywołań do jednego z konstruktorów typu i zgłasza naruszenie, jeśli brak wywołania zostanie znaleziony.
+
+Następujące typy nie są sprawdzane przez tę regułę:
 
 - Typy wartości
 
@@ -51,19 +54,21 @@ ms.locfileid: "47859006"
 
 - Typy, którego nie można utworzyć wystąpienia i definiują `static` (`Shared` w języku Visual Basic) tylko metody.
 
- Jeśli zastosujesz <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> do zestawu, który jest analizowana, ta zasada zostanie przeprowadzona na żadnych konstruktorów, które są oznaczone jako `internal` , ponieważ nie można sprawdzić, czy pole jest używany przez inny `friend` zestawu.
+Jeśli zastosujesz <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> do zestawu, który jest analizowana, ta zasada zostanie przeprowadzona na żadnych konstruktorów, które są oznaczone jako `internal` , ponieważ nie można sprawdzić, czy pole jest używany przez inny `friend` zestawu.
 
- Mimo że nie można obejść to ograniczenie w Visual Studio Code Analysis, zewnętrzne autonomicznego programu FxCop wystąpi na wewnętrzny konstruktory co `friend` zestawu znajduje się w analizie.
+Mimo że nie można obejść to ograniczenie w Visual Studio Code Analysis, zewnętrzne autonomicznego programu FxCop wystąpi na wewnętrzny konstruktory co `friend` zestawu znajduje się w analizie.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, Usuń typ lub Dodaj kod, który korzysta z niego. Jeśli typ zawiera tylko metody statyczne, Dodaj jedną z następujących do typu, aby uniemożliwić kompilatorowi emitowania publiczne wystąpienia domyślnego konstruktora:
+
+Aby naprawić naruszenie tej zasady, Usuń typ lub Dodaj kod, który korzysta z niego. Jeśli typ zawiera tylko metody statyczne, Dodaj jedną z następujących do typu, aby uniemożliwić kompilatorowi emitowania publiczne wystąpienia domyślnego konstruktora:
 
 - Konstruktor prywatny dla typów, których platformą docelową .NET Framework w wersji 1.0 i 1.1.
 
 - `static` (`Shared` w języku Visual Basic) modyfikator dla typów, których platformą docelową [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jest bezpieczne pominąć ostrzeżenie od tej reguły. Firma Microsoft zaleca, aby pominąć to ostrzeżenie w następujących sytuacjach:
+
+Jest bezpieczne pominąć ostrzeżenie od tej reguły. Firma Microsoft zaleca, aby pominąć to ostrzeżenie w następujących sytuacjach:
 
 - Klasa jest tworzona za pośrednictwem metody z późnym wiązaniem odbicia, takich jak <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
@@ -90,11 +95,12 @@ ms.locfileid: "47859006"
     mc.Create();
     ```
 
- W takich przypadkach zaleca się, że pominąć to ostrzeżenie.
+  W takich przypadkach zaleca się, że pominąć to ostrzeżenie.
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1811: Unikaj niewywoływanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)
+[CA1811: Unikaj niewywoływanego kodu prywatnego](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1804: Usuń nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)
+[CA1801: Przejrzyj nieużywane parametry](../code-quality/ca1801-review-unused-parameters.md)
+
+[CA1804: Usuń nieużywane zmienne lokalne](../code-quality/ca1804-remove-unused-locals.md)

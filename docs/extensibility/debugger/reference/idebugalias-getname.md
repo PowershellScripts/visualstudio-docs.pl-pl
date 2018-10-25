@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2168e972722396b4fcd21f1d37fd8c260dba72d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b6a67db70e1913f44d47dbc629b66d43d4062ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099463"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916524"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 Pobiera nazwę tego aliasu.  
@@ -44,7 +44,7 @@ int GetName(
  [out] Nazwa aliasu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

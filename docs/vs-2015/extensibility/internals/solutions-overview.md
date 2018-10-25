@@ -15,12 +15,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8204dcfc7a0d8937551914ebedbc035767127507
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7255ed981bd65e364d1028c365aab66a73a76dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292667"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816004"
 ---
 # <a name="solutions-overview"></a>Omówienie rozwiązań
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Rozwiązanie to grupa jeden lub więcej projektów, które współpracują ze so
   
  Po otwarciu rozwiązania odbywa się następujący proces.  
   
-1.  Środowisko odczytuje rozwiązania.  
+1. Środowisko odczytuje rozwiązania.  
   
-2.  Jeśli znajdzie środowiska `CLSID`, ładuje odpowiedniego pakietu VSPackage.  
+2. Jeśli znajdzie środowiska `CLSID`, ładuje odpowiedniego pakietu VSPackage.  
   
-3.  Jeśli pakietu VSPackage jest ładowany, wywołania środowiska `QueryInterface` dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interfejsu dla interfejsu, który wymaga pakietu VSPackage.  
+3. Jeśli pakietu VSPackage jest ładowany, wywołania środowiska `QueryInterface` dla <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interfejsu dla interfejsu, który wymaga pakietu VSPackage.  
   
-    1.  Podczas odczytu z pliku SLN, środowisko wywołuje `QueryInterface` dla `IVsPersistSolutionProps`.  
+   1.  Podczas odczytu z pliku SLN, środowisko wywołuje `QueryInterface` dla `IVsPersistSolutionProps`.  
   
-    2.  Podczas odczytywania z pliku .suo, środowisko wywołuje `QueryInterface` dla `IVsPersistSolutionOpts`.  
+   2.  Podczas odczytywania z pliku .suo, środowisko wywołuje `QueryInterface` dla `IVsPersistSolutionOpts`.  
   
- Szczegółowe informacje dotyczące korzystania z tych plików można znaleźć w [rozwiązania (. Plik sln)](../../extensibility/internals/solution-dot-sln-file.md) i [opcje użytkownika rozwiązania (. Plik suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
+   Szczegółowe informacje dotyczące korzystania z tych plików można znaleźć w [rozwiązania (. Plik sln)](../../extensibility/internals/solution-dot-sln-file.md) i [opcje użytkownika rozwiązania (. Plik suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
 > [!NOTE]
 >  Jeśli chcesz utworzyć nową konfigurację rozwiązania składający się z dwóch projektów konfiguracje z wyłączeniem trzecią z kompilacji, należy użyć interfejsu użytkownika strony właściwości lub automatyzacji. Nie można zmienić konfiguracji Menedżera kompilacji rozwiązania i ich właściwości bezpośrednio, ale można manipulować Menedżera kompilacji rozwiązania przy użyciu `SolutionBuild` klasy z obiektu DTE w modelu automatyzacji. Aby uzyskać więcej informacji na temat konfigurowania rozwiązania, zobacz [konfiguracji rozwiązania](../../extensibility/internals/solution-configuration.md).  

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f8d871e6193835b51336a48355fde78fe95e103
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af0f31ba2bff7effce91232fd7e5cfc6f96afd9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117751"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833866"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 Ustawia wartość tej właściwości wartość danego odwołania.  
@@ -47,7 +47,7 @@ int SetValueAsReference(
   
 #### <a name="parameters"></a>Parametry  
  `rgpArgs`  
- [in] Tablica argumenty do przekazania do metody ustawiającej właściwość kodu zarządzanego. Jeśli metoda ustawiająca właściwości nie przyjmuje argumentów lub jeśli [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiektu nie odwołuje się do takich właściwości metody ustawiającej, `rgpArgs` powinien mieć wartości null. Ten parametr jest zwykle wartość null.  
+ [in] Tablica argumentów do przekazania do metody ustawiającej właściwość kodu zarządzanego. Jeśli metoda ustawiająca właściwości nie przyjmuje argumentów, lub jeśli [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiektu nie odwołuje się do takich właściwości metody ustawiającej, `rgpArgs` powinien mieć wartość null. Ten parametr jest zazwyczaj wartość null.  
   
  `dwArgCount`  
  [in] Liczba argumentów w `rgpArgs` tablicy.  
@@ -56,15 +56,15 @@ int SetValueAsReference(
  [in] Odwołanie w formie [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) obiektu wartości do użycia, aby ustawić tę właściwość.  
   
  `dwTimeout`  
- [in] Jak długo potrwać można ustawić wartości, w milisekundach. Typowe wartości to `INFINITE`. Ma to wpływ na czas prowadzące wszystkie możliwe oceny.  
+ [in] Jak długo konieczne w celu ustawienia wartości, w milisekundach. To typowa wartość `INFINITE`. Ma to wpływ na długość czasu, przez jaki wszystkie możliwe oceny może potrwać.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca błąd kodu, zazwyczaj jedną z następujących czynności:  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca błąd kodu, zazwyczaj jedną z następujących czynności:  
   
 |Błąd|Opis|  
 |-----------|-----------------|  
-|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Ustawienie wartości z odwołania nie jest obsługiwane.|  
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Nie można ustawić wartości, ponieważ ta właściwość odwołuje się do metody.|  
+|`E_SETVALUEASREFERENCE_NOTSUPPORTED`|Ustawienie wartości z odwołania nie jest obsługiwana.|  
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|Nie można ustawić wartość, ponieważ ta właściwość odwołuje się do metody.|  
 |`E_SETVALUE_VALUE_IS_READONLY`|Wartość jest tylko do odczytu i nie można ustawić.|  
 |`E_NOTIMPL`|Metoda nie jest zaimplementowana.|  
   

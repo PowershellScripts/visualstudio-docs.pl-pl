@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 60f3014707fe9b06818bf9a47745ca8b253290d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bade19778c64b6338c29db1eef8eb09a0d95fa3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874647"
 ---
 # <a name="save-data-in-a-transaction"></a>Zapisywanie danych w ramach transakcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,14 +112,14 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
   
 #### <a name="to-modify-the-auto-generated-save-code"></a>Aby zmodyfikować wygenerowaną automatycznie zapisać kod  
   
-1.  Wybierz **Zapisz** znajdujący się na **CustomersBindingNavigator** (przycisk z ikoną dyskietki).  
+1. Wybierz **Zapisz** znajdujący się na **CustomersBindingNavigator** (przycisk z ikoną dyskietki).  
   
-2.  Zastąp `CustomersBindingNavigatorSaveItem_Click` metoda następującym kodem:  
+2. Zastąp `CustomersBindingNavigatorSaveItem_Click` metoda następującym kodem:  
   
-     [!code-csharp[VbRaddataSaving#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#4)]
-     [!code-vb[VbRaddataSaving#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#4)]  
+    [!code-csharp[VbRaddataSaving#4](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs#4)]
+    [!code-vb[VbRaddataSaving#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb#4)]  
   
- Uzgadnianie zmian do powiązanych danych kolejność jest następująca:  
+   Uzgadnianie zmian do powiązanych danych kolejność jest następująca:  
   
 -   Usuń rekordy podrzędne. (W tym przypadku usuwania rekordów z `Orders` tabeli.)  
   

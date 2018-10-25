@@ -11,45 +11,45 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e8954727d7ee38b81ba5993b41e300ef1c6d66fc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f7896c2e65f5ff01307e50cdc03483f6843fa67
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881832"
 ---
 # <a name="properties-of-connectors"></a>Właściwości łączników
-Łączniki reprezentują relacje domeny w wygenerowanym projektanta.
+Łączniki reprezentują relacje domeny w wygenerowanym projektancie.
 
- Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji na temat używania tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+ Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji o tym, jak korzystać z tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
  Łączniki mają właściwości, które są wymienione w poniższej tabeli.
 
 |Właściwość|Opis|Domyślny|
-|--------------|-----------------|-------------|
-|Kolor|Kolor tego łącznika.|czarne|
-|Styl kreskowania|Styl kreskowania dla wiersza dla tego łącznika (pełne, kreska, kropki, DashDot, DashDotDot lub niestandardowy).|Stałe|
-|Styl zakończenia źródła|Styl zakończenia źródła dla tego łącznika (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond lub brak).|Brak|
-|Styl końca docelowej|Styl zakończenia docelowego dla tego łącznika (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond lub brak).|Brak|
-|Kolor tekstu|Kolor używany do elementów decorator tekstu, które są skojarzone z tym łącznikiem.|czarne|
-|Grubość|Grubość linii dla tego łącznika, mierzony w milimetrach.|0.03125|
+|-|-|-|
+|Kolor|Kolor tego łącznika.|Czarny|
+|Styl kreskowania|Styl kreskowania dla linii tego łącznika (stałe, kreski, kropki, DashDot, DashDotDot lub niestandardowy).|Stałe|
+|Styl końca źródła|Styl końca źródła dla tego łącznika (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond lub brak).|Brak|
+|Styl końca|Styl końca tego łącznika (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond lub brak).|Brak|
+|Kolor tekstu|Kolor, który jest używany dla dekoratorów tekstu, które są skojarzone z tym łącznikiem.|Czarny|
+|Grubość|Grubość linii dla tego łącznika (w calach).|0.03125|
 |Modyfikator dostępu|Poziom dostępu klasy (`public` lub `internal`).|Public|
-|Atrybuty niestandardowe|Można dodawać atrybuty do klasy kodu źródłowego, która jest generowana z tego łącznika.|\<Brak >|
-|Generuje o podwójnej precyzji pochodnych|Jeśli `True`, zarówno klasy podstawowej i częściowej klasy (obsługuje dostosowywania przy użyciu zastąpień) zostanie wygenerowany. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzenie klasy generowane](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Ma niestandardowy konstruktora|Jeśli `True`, niestandardowe konstruktora znajdzie się w kodzie źródłowym. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzenie klasy generowane](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Modyfikator dziedziczenia|Opisuje rodzaj dziedziczenia klasy kodu źródłowego, która jest generowana z łącznika (`none`, `abstract` lub `sealed`).|brak|
-|Podstawowy łącznika|Klasa podstawowa tego łącznika.|(Brak)|
+|Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu źródłowego, która jest generowany na podstawie tego łącznika.|\<Brak >|
+|Generuje Double pochodne|Jeśli `True`, zostaną wygenerowane klasy podstawowej i klasy częściowej (obsługuje dostosowywania przy użyciu zastąpień). Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Ma konstruktora niestandardowego|Jeśli `True`, konstruktora niestandardowego, które będą dostępne w kodzie źródłowym. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Modyfikator dziedziczenia|Opisuje typ dziedziczenia klasy kodu źródłowego, która jest generowana z łącznika usługi (`none`, `abstract` lub `sealed`).|brak|
+|Podstawowy łącznik|Klasa bazowa tego łącznika.|(Brak)|
 |Nazwa|Nazwa tego łącznika.|Bieżąca nazwa|
-|Przestrzeń nazw|Przestrzeń nazw, która jest połączona z tym łącznikiem.|Bieżącej przestrzeni nazw|
-|ToolTip — typ|W jaki sposób element tooltip jest zdefiniowany (stałej, zmiennej lub brak). Jeśli następnie stałej wartości `Fixed Tooltip Text` właściwość jest używana jako etykietka narzędzia; Jeśli zmienna, następnie element tooltip jest zdefiniowany w kodu niestandardowego.|\<Brak >|
-|Uwagi|Nieformalne uwagi, które są skojarzone z tym łącznikiem.|\<Brak >|
-|Styl trasowania|Styl, który służy do routingu łącznika. A `Rectilinear` kątem prostym włącza zgodnie z wymaganiami; sprawia, że łącznik `Straight` łącznika nie ma.|Prostoliniowego|
-|Kolor narażonych jako właściwość<br /><br /> Styl kreskowania narażonych jako właściwość<br /><br /> Grubość narażonych jako właściwość<br /><br /> Opisuje kolor tekstu|Jeśli `True`, użytkownik może ustawić właściwość podane kształtu. Aby to ustawić, kliknij prawym przyciskiem myszy definicji kształtu, a następnie kliknij przycisk **dodać widoczne**.|False|
-|Opis|Używany do dokumentów wygenerowanych projektanta.|\<Brak >|
-|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektanta dla tego łącznika.|\<Brak >|
-|Stały tekst etykietki narzędzia|Tekst, który jest używany dla stałych etykietka narzędzia.|\<Brak >|
-|Słowo kluczowe pomocy|Słowo kluczowe jest używana do indeksowania pomocy F1 dla tego elementu.|\<Brak >|
+|Przestrzeń nazw|Przestrzeń nazw, która jest połączona za pomocą tego łącznika.|Bieżąca przestrzeń nazw|
+|Typ etykietki narzędzia|Jak etykietka narzędzia jest zdefiniowane (stałe, zmienna lub brak). Jeśli następnie stałej wartości `Fixed Tooltip Text` właściwość jest używana jako etykietka narzędzia; Jeśli jest to zmienna, następnie etykietki narzędzia jest definiowana w kodzie niestandardowym.|\<Brak >|
+|Uwagi|Uwagi informacyjne, które są skojarzone z tym łącznikiem.|\<Brak >|
+|Styl routingu|Styl, który jest używany do routingu łącznika. A `Rectilinear` łącznika sprawia, że prostokątnej włącza zgodnie z wymaganiami; `Straight` łącznika nie ma.|Prostoliniowego|
+|Kolor uwidocznione jako właściwość<br /><br /> Styl kreskowania uwidocznione jako właściwość<br /><br /> Grubość uwidocznione jako właściwość<br /><br /> Opisuje kolor tekstu|Jeśli `True`, użytkownik może ustawić właściwość podane kształtu. Aby to ustawić, kliknij prawym przyciskiem myszy definicję kształtu, a następnie kliknij przycisk **Dodaj udostępniane**.|False|
+|Opis|Umożliwia dokumentowanie wygenerowanego projektanta.|\<Brak >|
+|Nazwa wyświetlana|Nazwa która będzie wyświetlana w wygenerowanym projektancie dla tego łącznika.|\<Brak >|
+|Stały tekst etykietki narzędzia|Tekst, który jest używany dla ustalonej etykietki narzędzia.|\<Brak >|
+|Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tego elementu.|\<Brak >|
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

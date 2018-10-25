@@ -18,12 +18,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8eadbd73c82bc40d6b3b669968cb8808ab2991d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30a8b7a465c85e60b00f2208bd6e51cc55c4bbe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852534"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Wskazówki: tworzenie i uruchamianie testów jednostkowych dla aplikacji sklepu Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ Program Visual Studio obejmuje obsługę testów jednostkowych zarządzanych [!I
   
  Program Visual Studio oferuje następujące funkcje testowania jednostki:  
   
--   [Tworzenie projektów testów jednostkowych](#CreateAndRunUnitTestWin8Tailored_Create)  
+- [Tworzenie projektów testów jednostkowych](#CreateAndRunUnitTestWin8Tailored_Create)  
   
--   [Edytuj Manifest dla projektu testu jednostkowego](#CreateAndRunUnitTestWin8Tailored_Manifest)  
+- [Edytuj Manifest dla projektu testu jednostkowego](#CreateAndRunUnitTestWin8Tailored_Manifest)  
   
--   [Kodowanie testu jednostkowego](#CreateAndRunUnitTestWin8Tailored_Code)  
+- [Kodowanie testu jednostkowego](#CreateAndRunUnitTestWin8Tailored_Code)  
   
--   [Uruchamianie testów jednostkowych](#CreateAndRunUnitTestWin8Tailored_Run)  
+- [Uruchamianie testów jednostkowych](#CreateAndRunUnitTestWin8Tailored_Run)  
   
- W poniższych procedurach opisano kroki tworzenia, uruchamiania i debugowania testów jednostkowych dla zarządzanej systemu Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji.  
+  W poniższych procedurach opisano kroki tworzenia, uruchamiania i debugowania testów jednostkowych dla zarządzanej systemu Windows 8 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Visual Studio  

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de6698f6e635a151a0f78eecbb90f4d7bd525969
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d6338044dff5aa5b0555b15b689c04ddd406c50f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151278"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887660"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Wskazówki: Pobieranie zestawów na żądanie przy użyciu wdrażania interfejsu API ClickOnce
 Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji zostaną pobrane po pierwszym uruchomieniu aplikacji. Jednak mogą mieć części aplikacji, które są używane w małej grupie użytkowników. W tym przypadku chcesz pobrać zestaw tylko wtedy, gdy tworzysz w jednym z jej typów. Następujące Instruktaż pokazuje, jak oznaczyć określone zestawy w aplikacji jako "opcjonalny", jak je pobrać za pomocą klasy i w <xref:System.Deployment.Application> przestrzenią nazw, gdy wymagane przez środowisko uruchomieniowe języka wspólnego (CLR).  
@@ -42,40 +42,40 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly"></a>Aby utworzyć projekt, który używa zestawu na żądanie  
   
-1.  Utwórz katalog o nazwie ClickOnceOnDemand.  
+1. Utwórz katalog o nazwie ClickOnceOnDemand.  
   
-2.  Otwórz wiersz polecenia programu Windows SDK lub [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia.  
+2. Otwórz wiersz polecenia programu Windows SDK lub [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wiersza polecenia.  
   
-3.  Przejdź do katalogu ClickOnceOnDemand.  
+3. Przejdź do katalogu ClickOnceOnDemand.  
   
-4.  Wygeneruj parę kluczy publiczny/prywatny, korzystając z następującego polecenia:  
+4. Wygeneruj parę kluczy publiczny/prywatny, korzystając z następującego polecenia:  
   
-    ```cmd  
-    sn -k TestKey.snk  
-    ```  
+   ```cmd  
+   sn -k TestKey.snk  
+   ```  
   
-5.  Za pomocą Notatnika lub innego edytora tekstu, zdefiniuj klasę o nazwie `DynamicClass` za pomocą pojedynczej właściwości o nazwie `Message`.  
+5. Za pomocą Notatnika lub innego edytora tekstu, zdefiniuj klasę o nazwie `DynamicClass` za pomocą pojedynczej właściwości o nazwie `Message`.  
   
-     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
-     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]  
+    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
+    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]  
   
-6.  Zapisz tekst w pliku o nazwie *ClickOnceLibrary.cs* lub *ClickOnceLibrary.vb*, w zależności od języka, możesz użyć do *ClickOnceOnDemand* katalogu.  
+6. Zapisz tekst w pliku o nazwie *ClickOnceLibrary.cs* lub *ClickOnceLibrary.vb*, w zależności od języka, możesz użyć do *ClickOnceOnDemand* katalogu.  
   
-7.  Skompiluj plik do zestawu.  
+7. Skompiluj plik do zestawu.  
   
-    ```csharp  
-    csc /target:library /keyfile:TestKey.snk ClickOnceLibrary.cs  
-    ```  
+   ```csharp  
+   csc /target:library /keyfile:TestKey.snk ClickOnceLibrary.cs  
+   ```  
   
-    ```vb  
-    vbc /target:library /keyfile:TestKey.snk ClickOnceLibrary.vb  
-    ```  
+   ```vb  
+   vbc /target:library /keyfile:TestKey.snk ClickOnceLibrary.vb  
+   ```  
   
-8.  Aby uzyskać token klucza publicznego dla zestawu, należy użyć następującego polecenia:  
+8. Aby uzyskać token klucza publicznego dla zestawu, należy użyć następującego polecenia:  
   
-    ```cmd  
-    sn -T ClickOnceLibrary.dll  
-    ```  
+   ```cmd  
+   sn -T ClickOnceLibrary.dll  
+   ```  
   
 9. Utwórz nowy plik przy użyciu tekstu w edytorze, a następnie wprowadź poniższy kod. Ten kod tworzy aplikację Windows Forms, która pobiera zestawu ClickOnceLibrary, gdy jest to wymagane.  
   
@@ -118,15 +118,15 @@ Domyślnie wszystkie zestawy zawarte w [!INCLUDE[ndptecclick](../deployment/incl
   
 #### <a name="to-test-your-on-demand-assembly"></a>Aby przetestować zestaw na żądanie  
   
-1.  Przekaż swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia na serwerze sieci Web.  
+1. Przekaż swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia na serwerze sieci Web.  
   
-2.  Rozpocznij aplikacja wdrożona za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] z przeglądarki internetowej, wprowadzając adres URL do manifestu wdrażania. Jeśli wywołasz swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji `ClickOnceOnDemand`i przekaż go do katalogu głównego domeny adatum.com, adres URL będzie wyglądać następująco:  
+2. Rozpocznij aplikacja wdrożona za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] z przeglądarki internetowej, wprowadzając adres URL do manifestu wdrażania. Jeśli wywołasz swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji `ClickOnceOnDemand`i przekaż go do katalogu głównego domeny adatum.com, adres URL będzie wyglądać następująco:  
   
-    ```  
-    http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
-    ```  
+   ```  
+   http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
+   ```  
   
-3.  Gdy pojawi się główny formularz, naciśnij klawisz <xref:System.Windows.Forms.Button>. Powinien zostać wyświetlony ciąg w okno komunikatu, która odczytuje "Hello, World!".  
+3. Gdy pojawi się główny formularz, naciśnij klawisz <xref:System.Windows.Forms.Button>. Powinien zostać wyświetlony ciąg w okno komunikatu, która odczytuje "Hello, World!".  
   
 ## <a name="see-also"></a>Zobacz także  
  <xref:System.Deployment.Application.ApplicationDeployment>

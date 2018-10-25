@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 079c6dc3ef36c19867ed4b292040876f630e63df
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50c8db3ee875a86f072a75f084dbe0c7f68f847b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125594"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832988"
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
-Zawiera tablicę obiektów, które opisują programy zainteresowań.  
+Zawiera tablicę obiektów, które opisują interesujące programy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,10 +46,10 @@ public struct tagPROGRAM_NODE_ARRAY {
  Liczba obiektów w `Members` tablicy.  
   
  Elementy członkowskie  
- Tablica [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiektów opisujące programy wymagane.  
+ Tablica [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekty opisujące programy wymagane.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest częścią [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) strukturę, która z kolei jest wypełniane przez wywołanie do [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) metody.  
+ Ta struktura jest częścią [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) strukturę, która z kolei jest wypełniane przez wywołanie [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -59,7 +59,7 @@ public struct tagPROGRAM_NODE_ARRAY {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

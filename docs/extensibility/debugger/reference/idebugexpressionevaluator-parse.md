@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a10a65564682b5c82350eb5c22af3f217a3a993
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0e348666514ea13a901a4c0be0a680ed4f83f688
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110806"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815134"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 Ta metoda konwertuje ciąg wyrażenia przeanalizowany wyrażenia.  
@@ -51,28 +51,28 @@ int Parse(
   
 #### <a name="parameters"></a>Parametry  
  `upstrExpression`  
- [in] Ciąg wyrażenia do przeanalizowania.  
+ [in] Wyrażenie ciąg, który ma być analizowany.  
   
  `dwFlags`  
- [in] Kolekcja [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) stałe, które określają sposób wyrażenia do przeanalizowania.  
+ [in] Kolekcja [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) stałe, które określają, jak wyrażenie ma zostać przeanalizowany.  
   
  `nRadix`  
- [in] Podstawa ma być używany do interpretować wszystkie informacje numeryczne.  
+ [in] Podstawy ma być używany do interpretacji wszelkie dane liczbowe.  
   
  `pbstrError`  
- [out] Zwraca błąd jako tekst zrozumiałą dla użytkownika.  
+ [out] Zwraca błąd jako tekst czytelny dla człowieka.  
   
  `pichError`  
- [out] Zwraca ciąg wyrażenia znaku na pozycji początkowej błędu.  
+ [out] Zwraca pozycję znaku, Start błędu, w ciągu wyrażenia.  
   
  `ppParsedExpression`  
  [out] Zwraca wyrażenie przeanalizowany w [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) obiektu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda tworzy wyrażenie przeanalizowany, a nie rzeczywistą wartość. Przeanalizowana wyrażenie jest gotowy do obliczenia, oznacza to, przekonwertowana na wartość.  
+ Ta metoda tworzy wyrażenie przeanalizowany, a nie wartość rzeczywistą. Przeanalizowana wyrażenie jest gotowy do można obliczyć, oznacza to, przekonwertować na wartość.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)   

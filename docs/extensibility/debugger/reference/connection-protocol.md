@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1e1dc8cd22b529eafd6183578be7de6ffe69549
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d70aa31e7574e9fcdb0ed4e8d89847e832f3739b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832773"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
-Określa protokół używany do komunikacji między serwerem debugowania i pakietu debugowania (DE).  
+Określa protokół używany do komunikacji między serwerem debugowania i debugowanie pakietu (DE).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -53,25 +53,25 @@ public enum CONNECTION_PROTOCOL {
   
 #### <a name="parameters"></a>Parametry  
  CONNECTION_NONE  
- Połączenie nie zostało ustanowione na serwerze.  
+ Połączenie nie zostało ustanowione do serwera.  
   
  CONNECTION_UNKNOWN  
- Wprowadzono połączenie, ale jest nieznanego typu.  
+ Połączenie zostało wykonane, ale jest nieznanego typu.  
   
  CONNECTION_LOCAL  
- Połączenie jest na serwerze lokalnym.  
+ To połączenie serwera lokalnego.  
   
  CONNECTION_PIPE  
  Połączenie jest użycie nazwanego potoku.  
   
  CONNECTION_TCPIP  
- Połączenie wykorzystuje protokół TCP/IP.  
+ Połączenie używa protokołu TCP/IP.  
   
  CONNECTION_HTTP  
- Połączenia z użyciem protokołu HTTP (przez serwer sieci Web).  
+ Połączenie korzysta z protokołu HTTP (za pośrednictwem serwera sieci Web).  
   
  CONNECTION_OTHER  
- Ustanowiono innego typu połączenia (Ta wartość nie jest obecnie używany).  
+ Inny rodzaj połączenie zostało ustanowione (Ta wartość nie jest obecnie używany).  
   
 ## <a name="remarks"></a>Uwagi  
  Te wartości są zwracane z [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) metody.  

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 312c216f3670599653ddc6833f3e8f0e5cf5a8d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f360982f26cf2eb9ffe26678743bb514d9606ae7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42625927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890677"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>Rozszerzanie narzędzi SharePoint w programie Visual Studio
   Narzędzia programu SharePoint w programie Visual Studio wymagań wiele scenariuszy programowania aplikacji. Jednak można wykryć przypadki, w którym nie zapewniają funkcji, które wymagają zostanie lub innym deweloperom. W takich przypadkach można rozszerzyć narzędzia programu SharePoint do tworzenia potrzebne funkcje.
@@ -38,11 +38,11 @@ ms.locfileid: "42625927"
 ### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera
  W programie Visual Studio, można użyć **połączeń SharePoint** w węźle **Eksploratora serwera** okna, aby wyświetlić wiele składników w jednej lub więcej lokalnych witryn programu SharePoint w hierarchicznym widoku drzewa. Można także rozszerzyć **połączeń SharePoint** węzła w następujący sposób:
 
--   Przez dodanie własnych węzłów. Jest to przydatne, jeśli chcesz wyświetlić składniki witryny programu SharePoint, które nie są wyświetlane domyślnie.
+- Przez dodanie własnych węzłów. Jest to przydatne, jeśli chcesz wyświetlić składniki witryny programu SharePoint, które nie są wyświetlane domyślnie.
 
--   Rozszerzając istniejących węzłów. Na przykład można dodać nowego węzła podrzędnego do istniejącego węzła lub można dodać element menu skrótów dla węzła i wykonywać zadania, gdy deweloper kliknie element menu.
+- Rozszerzając istniejących węzłów. Na przykład można dodać nowego węzła podrzędnego do istniejącego węzła lub można dodać element menu skrótów dla węzła i wykonywać zadania, gdy deweloper kliknie element menu.
 
- Aby uzyskać więcej informacji, zobacz [rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+  Aby uzyskać więcej informacji, zobacz [rozszerzanie węzła połączeń SharePoint w Eksploratorze serwera](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
 ## <a name="development-computer-requirements"></a>Wymagania dotyczące komputera rozwoju
  Aby utworzyć rozszerzeń dla narzędzi SharePoint, komputer deweloperski musi spełniać te same wymagania dotyczące tworzenia rozwiązań programu SharePoint w Visual Studio.

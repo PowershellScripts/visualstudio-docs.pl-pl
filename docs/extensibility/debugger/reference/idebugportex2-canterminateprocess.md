@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f44df279cd8ad4721a6b4559af1dc3defb94714a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5717d5312630c3e9adaac2e1a32fa0d44a3a213
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112720"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902337"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
 Określa, czy Proces może zostać zakończone.  
@@ -41,10 +41,10 @@ HRESULT CanTerminateProcess(
   
 #### <a name="parameters"></a>Parametry  
  `pPortProcess`  
- [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt reprezentujący ma zostać zakończony.  
+ [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt reprezentujący procesu, który ma zostać zakończony.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK` Jeśli proces zakończony; w przeciwnym razie zwraca `S_FALSE`.  
+ Zwraca `S_OK` przypadku można zakończyć procesu; w przeciwnym razie zwraca `S_FALSE`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   

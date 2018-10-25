@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 97063229e2ba72263975247b71686492ee8c64f6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 47f6a975488adacbeffbdf0f04771131cd9a0ff9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279664"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926946"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Praca z elementami w Projektancie XAML
 Możesz dodawać elementy — kontrolki, układy i kształty — do aplikacji w XAML, w kodzie lub przy użyciu projektanta XAML. W tym temacie opisano sposób pracy z elementami w Projektancie XAML w programie Visual Studio lub Blend for Visual Studio.
@@ -40,21 +40,21 @@ Możesz dodawać elementy — kontrolki, układy i kształty — do aplikacji w 
 
 #### <a name="to-change-the-layering-order"></a>Aby zmienić kolejność warstw
 
--   Wykonaj jedną z następujących czynności:
+- Wykonaj jedną z następujących czynności:
 
-    -   W **konspekt dokumentu** okna, przeciągnij elementy w górę lub dół tak, aby utworzyć kolejności warstw żądaną.
+  - W **konspekt dokumentu** okna, przeciągnij elementy w górę lub dół tak, aby utworzyć kolejności warstw żądaną.
 
-    -   Kliknij prawym przyciskiem myszy element w okno konspektu dokumentu lub obszaru kompozycji, dla którego chcesz zmienić kolejności warstw, wskaż **kolejności**, a następnie kliknij jedną z następujących czynności:
+  - Kliknij prawym przyciskiem myszy element w okno konspektu dokumentu lub obszaru kompozycji, dla którego chcesz zmienić kolejności warstw, wskaż **kolejności**, a następnie kliknij jedną z następujących czynności:
 
-        -   **Przesuń na wierzch** można przenieść elementu do przodu kolejności.
+    -   **Przesuń na wierzch** można przenieść elementu do przodu kolejności.
 
-        -   **Przesuń do przodu** można przenieść elementu do przodu o jeden poziom w kolejności.
+    -   **Przesuń do przodu** można przenieść elementu do przodu o jeden poziom w kolejności.
 
-        -   **Wyślij do tyłu** wysyłać wstecz o jeden poziom elementów w kolejności.
+    -   **Wyślij do tyłu** wysyłać wstecz o jeden poziom elementów w kolejności.
 
-        -   **Przesuń na spód** do wysyłania elementu aż do tyłu kolejności.
+    -   **Przesuń na spód** do wysyłania elementu aż do tyłu kolejności.
 
-     Zmiana **wyznacza indeks** właściwość **układ** sekcji w oknie dialogowym właściwości. Nakładających się elementów **wyznacza indeks** właściwości mają pierwszeństwo przed kolejność elementów wyświetlane w oknie konspekt dokumentu. Element, który ma wyższe **wyznacza indeks** wartość pojawia się na wierzchu, gdy nakładania się elementów.
+    Zmiana **wyznacza indeks** właściwość **układ** sekcji w oknie dialogowym właściwości. Nakładających się elementów **wyznacza indeks** właściwości mają pierwszeństwo przed kolejność elementów wyświetlane w oknie konspekt dokumentu. Element, który ma wyższe **wyznacza indeks** wartość pojawia się na wierzchu, gdy nakładania się elementów.
 
 ## <a name="changing-the-alignment-of-an-element"></a>Zmiana wyrównania elementu
  Elementy w obszarze kompozycji można wyrównać za pomocą poleceń menu lub poprzez przeciąganie elementów do linii wyrównania.
@@ -109,9 +109,9 @@ Możesz dodawać elementy — kontrolki, układy i kształty — do aplikacji w 
 
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>Aby rozgrupować elementy i usunąć układ
 
--   Kliknij prawym przyciskiem myszy grupę, którą chcesz rozgrupować, a następnie kliknij przycisk **Ungroup**.
+- Kliknij prawym przyciskiem myszy grupę, którą chcesz rozgrupować, a następnie kliknij przycisk **Ungroup**.
 
- Można także grupować lub rozgrupować elementy, klikając prawym przyciskiem myszy wybranych elementów w okno konspektu dokumentu i klikając **Grupuj** lub **Ungroup**.
+  Można także grupować lub rozgrupować elementy, klikając prawym przyciskiem myszy wybranych elementów w okno konspektu dokumentu i klikając **Grupuj** lub **Ungroup**.
 
 ## <a name="resetting-the-element-layout"></a>Resetowanie układu elementu
  Resetuj układ poleceń można przywrócić wartości domyślnych dla właściwości określonego układu elementu. Za pomocą tego polecenia, możesz zresetować margines, wyrównanie, szerokość, wysokość i rozmiar elementu, pojedynczo lub zbiorczo.

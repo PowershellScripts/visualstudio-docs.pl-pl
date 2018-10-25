@@ -17,12 +17,12 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8beb028ddf2d7a7921c753b39601ee297a75746
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c062ce943e2ee42cd90877827ab7b92ee33c871b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248563"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883656"
 ---
 # <a name="elements-of-a-project-model"></a>Elementy modelu projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,20 +33,20 @@ Interfejsy i implementacje wszystkich projektów w [!INCLUDE[vsprvs](../../inclu
   
  Inne uwagi dotyczące implementacji:  
   
--   Modelu tego pojedynczego projektu może zawierać więcej niż jeden typ projektu.  
+- Modelu tego pojedynczego projektu może zawierać więcej niż jeden typ projektu.  
   
--   Typy projektów i fabryk projektów towarzyszącej zostały zarejestrowane niezależnie przy użyciu identyfikatorów GUID.  
+- Typy projektów i fabryk projektów towarzyszącej zostały zarejestrowane niezależnie przy użyciu identyfikatorów GUID.  
   
--   Każdy projekt musi mieć w pliku szablonu lub kreatora w celu inicjowania nowego pliku projektu, gdy użytkownik tworzy nowy projekt za pomocą [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interfejsu użytkownika. Na przykład [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] szablony zainicjować co przestać .VCPROJ — pliki.  
+- Każdy projekt musi mieć w pliku szablonu lub kreatora w celu inicjowania nowego pliku projektu, gdy użytkownik tworzy nowy projekt za pomocą [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interfejsu użytkownika. Na przykład [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] szablony zainicjować co przestać .VCPROJ — pliki.  
   
- Na poniższej ilustracji przedstawiono głównych interfejsów, usług i obiektów, które tworzą implementację typowym projekcie. Pomocnika aplikacji HierUtil7, można użyć do tworzenia obiektów i innych standardowy programowania. Aby uzyskać więcej informacji na temat pomocnika aplikacji HierUtil7 zobacz [nie w kompilacji: Używanie klas HierUtil7 projektu do zaimplementowania typu projektu (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+  Na poniższej ilustracji przedstawiono głównych interfejsów, usług i obiektów, które tworzą implementację typowym projekcie. Pomocnika aplikacji HierUtil7, można użyć do tworzenia obiektów i innych standardowy programowania. Aby uzyskać więcej informacji na temat pomocnika aplikacji HierUtil7 zobacz [nie w kompilacji: Używanie klas HierUtil7 projektu do zaimplementowania typu projektu (C++)](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
- ![Grafika przedstawiająca usługi Visual Studio modelu projektu](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
-model projektu  
+  ![Grafika przedstawiająca usługi Visual Studio modelu projektu](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
+  model projektu  
   
- Aby uzyskać więcej informacji dotyczących interfejsów i usług wymienionych na poprzednim rysunku, a inne opcjonalne interfejsy, które nie są uwzględnione w diagramie, zobacz [podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md).  
+  Aby uzyskać więcej informacji dotyczących interfejsów i usług wymienionych na poprzednim rysunku, a inne opcjonalne interfejsy, które nie są uwzględnione w diagramie, zobacz [podstawowe składniki modelu projektu](../../extensibility/internals/project-model-core-components.md).  
   
- Projekty mogą obsługiwać poleceń i w związku z tym należy zaimplementować <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs do wzięcia udziału w routingu poleceń za pomocą polecenia kontekstu identyfikatorów GUID.  
+  Projekty mogą obsługiwać poleceń i w związku z tym należy zaimplementować <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejs do wzięcia udziału w routingu poleceń za pomocą polecenia kontekstu identyfikatorów GUID.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   

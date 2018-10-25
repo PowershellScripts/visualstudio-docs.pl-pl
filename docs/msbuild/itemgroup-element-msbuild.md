@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90acef8176910d724a0b5419c0e91d685ca2d43e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: c8e1be72076fe1d13ef9f0c4144ce097d0743305
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078215"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825871"
 ---
 # <a name="itemgroup-element-msbuild"></a>Itemgroup — element (MSBuild)
 Zawiera zestaw zdefiniowanych przez użytkownika [elementu](../msbuild/item-element-msbuild.md) elementów. Każdy element używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekt musi być określony jako element podrzędny elementu `ItemGroup` elementu.  
@@ -59,10 +59,10 @@ Zawiera zestaw zdefiniowanych przez użytkownika [elementu](../msbuild/item-elem
   
 ### <a name="parent-elements"></a>Elementy nadrzędne  
   
-|Element|Opis|  
-|-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
-|[Docelowy](../msbuild/target-element-msbuild.md)|Począwszy od programu .NET Framework 3.5, `ItemGroup` element może znajdować się wewnątrz `Target` elementu. Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md).|  
+| Element | Opis |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu. |
+| [Docelowy](../msbuild/target-element-msbuild.md) | Począwszy od programu .NET Framework 3.5, `ItemGroup` element może znajdować się wewnątrz `Target` elementu. Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md). |
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład kodu pokazuje kolekcji elementów zdefiniowanych przez użytkownika `Res` i `CodeFiles` zadeklarowane wewnątrz `ItemGroup` elementu. Każdy z elementów w `Res` elementu Kolekcja zawiera element podrzędny zdefiniowanych przez użytkownika [itemmetadata —](../msbuild/itemmetadata-element-msbuild.md) elementu.  

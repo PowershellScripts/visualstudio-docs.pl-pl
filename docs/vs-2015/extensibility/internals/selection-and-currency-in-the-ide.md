@@ -18,12 +18,12 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fe6d5cb678cade67ef9e46e9b3c113c988bf879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bfd8b3d6a74d4be6edce66e6d921a6c608f861ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902877"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Wybór i aktualność w środowisku IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,15 +52,15 @@ ms.locfileid: "49270937"
 ### <a name="window-types-and-selection"></a>Typy okien i wybór  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE organizuje systemu windows na dwa ogólne typy:  
   
--   Typ hierarchii systemu windows  
+- Typ hierarchii systemu windows  
   
--   Okna ramowe, takich jak narzędzia i okna dokumentu  
+- Okna ramowe, takich jak narzędzia i okna dokumentu  
   
- IDE śledzi waluty inaczej dla każdego z tych typów okna.  
+  IDE śledzi waluty inaczej dla każdego z tych typów okna.  
   
- Najbardziej typowe typ projektu jest ono Eksploratorze rozwiązań, który kontroluje IDE. Okno typu projektu śledzi hierarchii globalnej i ItemID kontekst zaznaczenia globalnych i okna zależy od wybranych przez użytkownika, aby określić bieżącą hierarchią. Dla typów projektów systemu windows, środowisko udostępnia globalną usługę <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>za pośrednictwem których pakietów VSPackage można monitorować bieżące wartości dla elementów, Otwórz. Właściwość przeglądania w środowisku jest wymuszany przez tę usługę globalnego.  
+  Najbardziej typowe typ projektu jest ono Eksploratorze rozwiązań, który kontroluje IDE. Okno typu projektu śledzi hierarchii globalnej i ItemID kontekst zaznaczenia globalnych i okna zależy od wybranych przez użytkownika, aby określić bieżącą hierarchią. Dla typów projektów systemu windows, środowisko udostępnia globalną usługę <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>za pośrednictwem których pakietów VSPackage można monitorować bieżące wartości dla elementów, Otwórz. Właściwość przeglądania w środowisku jest wymuszany przez tę usługę globalnego.  
   
- Okien ramowych z drugiej strony, umożliwia element DocObject wewnątrz okna ramki wypychania wartość SelectionContext (Trójka hierarchii/ItemID/SelectionContainer). . Okna ramowe korzystania z usługi <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> do tego celu. Element DocObject można wypchnąć tylko wartości w kontenerze zaznaczenia, pozostawiając wartości lokalne dla hierarchii i identyfikator elementu bez zmian, podobnie jak w typowej dokumentów podrzędnego MDI.  
+  Okien ramowych z drugiej strony, umożliwia element DocObject wewnątrz okna ramki wypychania wartość SelectionContext (Trójka hierarchii/ItemID/SelectionContainer). . Okna ramowe korzystania z usługi <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> do tego celu. Element DocObject można wypchnąć tylko wartości w kontenerze zaznaczenia, pozostawiając wartości lokalne dla hierarchii i identyfikator elementu bez zmian, podobnie jak w typowej dokumentów podrzędnego MDI.  
   
 ### <a name="events-and-currency"></a>Zdarzenia i waluty  
  Mogą wystąpić dwa typy zdarzeń, które mają wpływ na środowisko pojęcie waluty:  

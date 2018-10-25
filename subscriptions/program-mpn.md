@@ -9,12 +9,12 @@ description: Szczegółowe informacje dotyczące subskrypcji, które są oferowa
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: b3bea3831e2d16f43d378bfe77a4dc8f84fdda3f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7175dd503c2e91091b5bb6499fa54c0e5f2586ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876772"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Subskrypcje programu Visual Studio jest oferowana dla partnerów w programie Microsoft Partner Network (MPN)
 Partnerzy, którzy Zdobądź kompetencję lub kto kupować Action Pack w programie MPN to kwalifikujących się do korzystania z subskrypcji programu Visual Studio. Te subskrypcje są licencjonowane na poszczególnych użytkowników, a także obowiązują tylko wtedy, gdy jest przypisany do określonego nazwanego użytkownika, który działa w przypadku firmy partnera.
@@ -23,11 +23,13 @@ Partnerzy, którzy Zdobądź kompetencję lub kto kupować Action Pack w program
 Gdy partner zdobywa kompetencji — poziomie silver lub gold poziom — partnerzy zdobyć liczbą rdzeni subskrypcji programu Visual Studio Enterprise. Tego podstawowego korzyści zmian, jeśli partner zdobywa co najmniej jeden kompetencji gold. Subskrypcja programu Visual Studio Enterprise jest niestandardowe oferta, która jest w przybliżeniu do [rocznej subskrypcji chmury programu Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/pricing/), ale niektóre zalety usunięte (wiele z nich są dostępne osobno do partnerzy jako ogólne korzyści MPN, a nie jako część subskrypcji programu Visual Studio Enterprise oferowane za pośrednictwem sieci MPN).
 
 ### <a name="core-visual-studio-benefit-for-earning-at-least-one-competency-of-any-kind"></a>Podstawowe korzyści z programu Visual Studio dla zarabiać co najmniej jeden kompetencji dowolnego rodzaju
+
 | Kompetencje zdobytych tylko na poziomie silver               | Co najmniej jeden kompetencji uzyskanych na poziomie gold   |
 |------------------------------------------------------------|----------------------------------------------------|
 | 5 subskrypcji programu visual Studio Enterprise                   | 10 subskrypcje programu visual Studio Enterprise          |
 
 ### <a name="additional-visual-studio-benefit-for-select-competencies"></a>Dodatkowe korzyści programu Visual Studio wybierz kompetencje
+
 | Kompetencja                                  | Dodatkowe subskrypcje zdobytych za **silver** kompetencji | Dodatkowe subskrypcje zdobytych za **gold** kompetencji |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
 | Projektowanie aplikacji                     | 5 subskrypcji programu visual Studio Enterprise                  | 25 subskrypcji programu visual Studio Enterprise               |
@@ -39,6 +41,7 @@ Gdy partner zdobywa kompetencji — poziomie silver lub gold poziom — partnerz
 Niezależnie od tego, ile kompetencji zdobywa partnera liczba subskrypcji programu Visual Studio są ograniczone w następujący sposób:
 
 ### <a name="limits-for-visual-studio-subscriptions-earned-through-competencies"></a>Limity dla subskrypcji programu Visual Studio zdobytych przez kompetencje
+
 | Maksymalnych korzyści dla partnerów przy użyciu tylko srebrne kompetencje                   | Maksymalnych korzyści dla partnerów z co najmniej jeden kompetencji gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 subskrypcji programu visual Studio Enterprise dla każdego kraju; 75 na całym świecie          | 50 subskrypcji programu visual Studio Enterprise dla każdego kraju; 150 na całym świecie         |

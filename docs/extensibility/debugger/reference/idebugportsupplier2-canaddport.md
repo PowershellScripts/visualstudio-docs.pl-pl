@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00b1c1303be8ccc326a58a20d132ad38db3b426d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f7f4494aa41613f93396389176436dcf0c40be53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902311"
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
 Sprawdza, czy dostawca portu można dodawać nowych portów.  
@@ -38,10 +38,10 @@ int CanAddPort();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli port można dodać, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` wskazująca portów nie można dodać do tego portu dostawcy.  
+ Można dodać portu, funkcja zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` do wskazania żadnych portów mogą być dodawane do tego dostawcy portu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wywołanie tej metody przed wywołaniem [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) metody, ponieważ to drugie metoda tworzy portu, a także dodawanie, który może być czasochłonna operacja.  
+ Wywołanie tej metody, przed wywołaniem [AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md) metody, ponieważ druga metoda tworzy portu, a także dodawanie, co może być czasochłonna operacja.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)   

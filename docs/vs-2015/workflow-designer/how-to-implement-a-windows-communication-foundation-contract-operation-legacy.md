@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 97e6e72a7de4a9da7dc5086a2fecaea2b378b553
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a3c3d76257f27023beca6cd480137114b0161b12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813549"
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Porady: Implementowanie Windows Communication Foundation operacji kontraktu usługi WCF (starsza wersja)
 W tym temacie opisano sposób implementacji [!INCLUDE[indigo1](../includes/indigo1-md.md)] kontrakt operacji za pomocą starszego [!INCLUDE[wfd1](../includes/wfd1-md.md)] przeznaczonego [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -26,31 +26,31 @@ W tym temacie opisano sposób implementacji [!INCLUDE[indigo1](../includes/indig
   
 ### <a name="to-implement-a-wcf-contract-operation"></a>Aby zaimplementować operacji kontraktu usługi WCF  
   
-1.  Kliknij dwukrotnie **działania ReceiveActivity** działania w Projektancie lub kliknij wielokropek obok pozycji **właściwości ServiceOperationInfo** właściwość **właściwości** okienka.  
+1. Kliknij dwukrotnie **działania ReceiveActivity** działania w Projektancie lub kliknij wielokropek obok pozycji **właściwości ServiceOperationInfo** właściwość **właściwości** okienka.  
   
-2.  Wykonaj jedną z następujących czynności:  
+2. Wykonaj jedną z następujących czynności:  
   
-    -   Kliknij przycisk **dodać umowy** w prawym górnym rogu okna dialogowego. Spowoduje to utworzenie nowego [!INCLUDE[indigo2](../includes/indigo2-md.md)] kontraktu i operacji dla Ciebie.  
+   - Kliknij przycisk **dodać umowy** w prawym górnym rogu okna dialogowego. Spowoduje to utworzenie nowego [!INCLUDE[indigo2](../includes/indigo2-md.md)] kontraktu i operacji dla Ciebie.  
   
-         —lub—  
+      —lub—  
   
-    -   Kliknij przycisk **importu** w prawym górnym rogu okna dialogowego. [Wyszukaj i wybierz .NET typu, okno dialogowe (starsza wersja)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) zostanie otwarty. Wyszukaj zestaw lub projekt, który zawiera kontrakt, który chcesz. Wybierz umowę, a następnie kliknij przycisk **OK**.  
+   - Kliknij przycisk **importu** w prawym górnym rogu okna dialogowego. [Wyszukaj i wybierz .NET typu, okno dialogowe (starsza wersja)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md) zostanie otwarty. Wyszukaj zestaw lub projekt, który zawiera kontrakt, który chcesz. Wybierz umowę, a następnie kliknij przycisk **OK**.  
   
      Po utworzeniu zamówienia lub zaimportowane, możesz dodać nowe operacje umowę utworzone lub importowane. Aby dodać nową operację, wybierz umowę, a następnie kliknij przycisk **operacji dodawania** w prawym górnym rogu okna dialogowego. Po zakończeniu dodawania operacji, przejdź do kroku 3.  
   
-3.  Wybierz operację, którą chcesz skojarzyć z **działania ReceiveActivity** działania. Możesz manipulować definicji operacji, zmieniając nazwę, parametry, właściwości i ustawienia uprawnień wykonać operację.  
+3. Wybierz operację, którą chcesz skojarzyć z **działania ReceiveActivity** działania. Możesz manipulować definicji operacji, zmieniając nazwę, parametry, właściwości i ustawienia uprawnień wykonać operację.  
   
-     Aby zmienić nazwę, wpisz nową nazwę w **nazwy operacji** pola tekstowego.  
+    Aby zmienić nazwę, wpisz nową nazwę w **nazwy operacji** pola tekstowego.  
   
-     Kliknij przycisk **parametry** kartę, aby dostęp do parametrów operacji. Możesz zmienić nazwę, typ lub kierunek parametru, a także dodawanie lub usuwanie parametrów operacji.  
+    Kliknij przycisk **parametry** kartę, aby dostęp do parametrów operacji. Możesz zmienić nazwę, typ lub kierunek parametru, a także dodawanie lub usuwanie parametrów operacji.  
   
-     Kliknij przycisk **właściwości** kartę, aby uzyskać dostęp do operacji ochrony poziomu i obsługiwanych wiadomości programu exchange funkcji operacji.  
+    Kliknij przycisk **właściwości** kartę, aby uzyskać dostęp do operacji ochrony poziomu i obsługiwanych wiadomości programu exchange funkcji operacji.  
   
-     Kliknij przycisk **uprawnienia** kartę, aby określić, grup, które są dozwolone w celu wykonania operacji.  
+    Kliknij przycisk **uprawnienia** kartę, aby określić, grup, które są dozwolone w celu wykonania operacji.  
   
-4.  Kliknij przycisk **OK** i **działania ReceiveActivity** działania będzie wyświetlana nazwa operacji do wykonania operacji, który implementuje.  
+4. Kliknij przycisk **OK** i **działania ReceiveActivity** działania będzie wyświetlana nazwa operacji do wykonania operacji, który implementuje.  
   
-5.  Umieść działań przepływu pracy ma używać do wykonania tej operacji w ramach **działania ReceiveActivity** działania.  
+5. Umieść działań przepływu pracy ma używać do wykonania tej operacji w ramach **działania ReceiveActivity** działania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wybierz operację, okno dialogowe (starsza wersja)](../workflow-designer/choose-operation-dialog-box-legacy.md)   

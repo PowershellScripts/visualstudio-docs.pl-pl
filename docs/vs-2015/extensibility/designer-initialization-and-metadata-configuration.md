@@ -16,12 +16,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96124b0b1dcad9be58759624e30180414eff1439
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 41ea3342f19639a7051e5c9dfb641620b1b6688b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260893"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821997"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicjowanie projektanta i konfiguracja metadanych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,26 +49,26 @@ Manipulowanie atrybutów metadanych i filtrów skojarzonych z projektanta lub sk
 ### <a name="designer-initialization-by-a-vspackage"></a>Inicjowanie projektanta przez pakietu VSPackage  
  Pakietu VSPackage powinna obsługiwać Inicjowanie projektanta przez:  
   
-1.  Tworzenie, wdrażanie obiektu <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> klasy.  
+1. Tworzenie, wdrażanie obiektu <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> klasy.  
   
-    > [!NOTE]
-    >  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Klasy nigdy nie powinny zostać wdrożone na tym samym obiekcie jako <xref:Microsoft.VisualStudio.Shell.Package> klasy.  
+   > [!NOTE]
+   >  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> Klasy nigdy nie powinny zostać wdrożone na tym samym obiekcie jako <xref:Microsoft.VisualStudio.Shell.Package> klasy.  
   
-2.  Rejestrowanie klasy wykonania <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> jako świadczenie pomocy technicznej dla projektanta rozszerzenia pakietu VSPackage, stosując wystąpień <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> i <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> do klasy, zapewniając wdrożenia pakietu VSPackage <xref:Microsoft.VisualStudio.Shell.Package> .  
+2. Rejestrowanie klasy wykonania <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> jako świadczenie pomocy technicznej dla projektanta rozszerzenia pakietu VSPackage, stosując wystąpień <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> i <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> do klasy, zapewniając wdrożenia pakietu VSPackage <xref:Microsoft.VisualStudio.Shell.Package> .  
   
- Po każdym utworzeniu wszelkie projektanta lub składnika projektanta [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] środowiska:  
+   Po każdym utworzeniu wszelkie projektanta lub składnika projektanta [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] środowiska:  
   
-1.  Uzyskuje dostęp do każdego dostawcy rozszerzenia powierzchni projektowania zarejestrowane.  
+3. Uzyskuje dostęp do każdego dostawcy rozszerzenia powierzchni projektowania zarejestrowane.  
   
-2.  Tworzy i inicjuje wystąpienie każdego dostawcy rozszerzenia powierzchni projektowania <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> obiektu  
+4. Tworzy i inicjuje wystąpienie każdego dostawcy rozszerzenia powierzchni projektowania <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> obiektu  
   
-3.  Wywołuje każdego dostawcy rozszerzenia powierzchni projektowania <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> metody lub <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> — metoda (odpowiednio).  
+5. Wywołuje każdego dostawcy rozszerzenia powierzchni projektowania <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A> metody lub <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A> — metoda (odpowiednio).  
   
- Podczas implementowania <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> obiekt będący członkiem pakietu VSPackage, jest ważne zrozumieć, że:  
+   Podczas implementowania <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> obiekt będący członkiem pakietu VSPackage, jest ważne zrozumieć, że:  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Środowiska nie zapewnia żadnych kontrolę nad jakie metadane lub ustawienia konfiguracji, w szczególności `DesignSurfaceExtension` modyfikuje dostawcy. Jest możliwe dla co najmniej dwóch `DesignSurfaceExtension` modyfikowanie tej samej funkcji projektanta powodujące konflikt sposoby, za pomocą końcowych modyfikacji jest ostateczne dostawców. Jest nieokreślony modyfikacji, które jest ostatnio zastosowane.  
+6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Środowiska nie zapewnia żadnych kontrolę nad jakie metadane lub ustawienia konfiguracji, w szczególności `DesignSurfaceExtension` modyfikuje dostawcy. Jest możliwe dla co najmniej dwóch `DesignSurfaceExtension` modyfikowanie tej samej funkcji projektanta powodujące konflikt sposoby, za pomocą końcowych modyfikacji jest ostateczne dostawców. Jest nieokreślony modyfikacji, które jest ostatnio zastosowane.  
   
-2.  Można jawnie ograniczyć implementację <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> obiektu określonego projektantów, stosując wystąpień <xref:System.ComponentModel.ToolboxItemFilterAttribute> tej implementacji. Aby uzyskać więcej informacji na temat **przybornika** elementu filtrowania, zobacz <xref:System.ComponentModel.ToolboxItemFilterAttribute> i <xref:System.ComponentModel.ToolboxItemFilterType>.  
+7. Można jawnie ograniczyć implementację <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> obiektu określonego projektantów, stosując wystąpień <xref:System.ComponentModel.ToolboxItemFilterAttribute> tej implementacji. Aby uzyskać więcej informacji na temat **przybornika** elementu filtrowania, zobacz <xref:System.ComponentModel.ToolboxItemFilterAttribute> i <xref:System.ComponentModel.ToolboxItemFilterType>.  
   
 ## <a name="additional-metadata-provisioning"></a>Inicjowanie obsługi administracyjnej dodatkowych metadanych  
  Pakietu VSPackage można zmienić konfigurację projektanta lub składnika projektanta innych niż w czasie projektowania.  
@@ -79,23 +79,23 @@ Manipulowanie atrybutów metadanych i filtrów skojarzonych z projektanta lub sk
   
  Modyfikacje, dostarczone przez wystąpienie <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> stosowane do wdrożenia pakietu VSPackage <xref:Microsoft.VisualStudio.Shell.Package> może mieć jedną z dwóch zakresów:  
   
--   Global — dla wszystkich nowych wystąpień danego składnika  
+- Global — dla wszystkich nowych wystąpień danego składnika  
   
--   Lokalne — dotyczy tylko wystąpienia składnika, który został utworzony na powierzchni projektowej dostarczane przez bieżącego pakietu VSPackage.  
+- Lokalne — dotyczy tylko wystąpienia składnika, który został utworzony na powierzchni projektowej dostarczane przez bieżącego pakietu VSPackage.  
   
- `IsGlobal` Właściwość <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> wystąpienia stosowane do wdrożenia pakietu VSPackage <xref:Microsoft.VisualStudio.Shell.Package> określa ten zakres.  
+  `IsGlobal` Właściwość <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> wystąpienia stosowane do wdrożenia pakietu VSPackage <xref:Microsoft.VisualStudio.Shell.Package> określa ten zakres.  
   
- Stosowanie atrybutu do implementacji <xref:Microsoft.VisualStudio.Shell.Package> z <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> właściwość <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> wartość obiektu `true`, zmienia się poniżej, przeglądarka dla całego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] środowiska:  
+  Stosowanie atrybutu do implementacji <xref:Microsoft.VisualStudio.Shell.Package> z <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A> właściwość <xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute> wartość obiektu `true`, zmienia się poniżej, przeglądarka dla całego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] środowiska:  
   
- `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`  
+  `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`  
   
- `internal class MyPackage : Package {}`  
+  `internal class MyPackage : Package {}`  
   
- Jeśli ustawiono flagę globalną `false`, a następnie zmiany metadanych jest lokalny biezacym projektantem obsługiwany przez bieżącego pakietu VSPackage:  
+  Jeśli ustawiono flagę globalną `false`, a następnie zmiany metadanych jest lokalny biezacym projektantem obsługiwany przez bieżącego pakietu VSPackage:  
   
- `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`  
+  `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`  
   
- `internal class MyPackage : Package {}`  
+  `internal class MyPackage : Package {}`  
   
 > [!NOTE]
 >  W chwili obecnej powierzchni projektowej obsługuje tylko tworzenie składników, a więc metadanymi lokalnymi tylko te elementy. W powyższym przykładzie mamy próba modyfikowanie właściwości, takie jak `Color` właściwości obiektu. Jeśli `false` została przekazana dla flagę globalną `CustomBrowser` nigdy nie zostanie wyświetlony, ponieważ projektant nigdy tworzone jest wystąpienie `Color`. Ustawienie flagi globalne `false` przydaje się do składników, takich jak formanty, czasomierze i oknach dialogowych.  

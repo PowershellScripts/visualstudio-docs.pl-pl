@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 79b129a31439b175bde61f9a995abcf98a7a9708
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 57b6d6a089570c52607cf73eeed4fc00978ab251
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676196"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924840"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Porady: zmiana rozmiaru formantów zakładki
   Ustaw rozmiar <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli po dodaniu go do dokumentu programu Microsoft Office Word. Można też zmienić w późniejszym czasie.  
@@ -30,21 +30,21 @@ ms.locfileid: "35676196"
   
  Istnieją trzy sposoby, aby zmienić rozmiar zakładkę:  
   
--   Dodaj lub usuń tekst w <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli.  
+- Dodaj lub usuń tekst w <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli.  
   
-     Gdy tylko dodasz tekstu w zakładce Rozmiar zakładki automatycznie zwiększa zawiera nowego tekstu. Po usunięciu tekstowe zmniejsza się automatycznie rozmiar zakładki  
+   Gdy tylko dodasz tekstu w zakładce Rozmiar zakładki automatycznie zwiększa zawiera nowego tekstu. Po usunięciu tekstowe zmniejsza się automatycznie rozmiar zakładki  
   
--   Zmiana <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> i <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> właściwości <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli.  
+- Zmiana <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> i <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> właściwości <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli.  
   
-     Jest to przydatne, jeśli zmieniasz rozmiar, tylko kilku znaków.  
+   Jest to przydatne, jeśli zmieniasz rozmiar, tylko kilku znaków.  
   
--   Utwórz ponownie <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli.  
+- Utwórz ponownie <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli.  
   
-     Jest to przydatne, jeśli ma poważne zmiany rozmiaru lub położenia zakładki.  
+   Jest to przydatne, jeśli ma poważne zmiany rozmiaru lub położenia zakładki.  
   
- W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO dla programów, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów dowolnego otwartego dokumentu w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [jak: Dodaj zakładkę formantów do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
+  W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO dla programów, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów dowolnego otwartego dokumentu w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [jak: Dodaj zakładkę formantów do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="change-the-start-and-end-properties"></a>Zmień właściwości rozpoczęcia i zakończenia  
   

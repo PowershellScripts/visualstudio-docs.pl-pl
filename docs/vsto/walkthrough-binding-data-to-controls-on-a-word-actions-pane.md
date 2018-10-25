@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e4202b14fce4c914737989e4a408cd74040c4d0a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 17daf186920be45a70200cd896a390ab74c4c6d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873893"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Wskazówki: Powiązywanie danych z kontrolkami w okienku akcji programu Word
   W tym instruktażu przedstawiono powiązanie danych z kontrolkami w okienku akcji programu Word. Formanty pokazują wzorzec/szczegół relacji między tabelami w bazie danych programu SQL Server.  
@@ -78,28 +78,28 @@ ms.locfileid: "38781935"
   
 ### <a name="to-add-a-data-source-to-the-project"></a>Aby dodać źródło danych do projektu  
   
-1.  Jeśli **źródeł danych** okno nie jest widoczne, wyświetlić je, na pasku menu, wybierając **widoku** > **Windows inne**  >   **Źródła danych**.  
+1. Jeśli **źródeł danych** okno nie jest widoczne, wyświetlić je, na pasku menu, wybierając **widoku** > **Windows inne**  >   **Źródła danych**.  
   
-    > [!NOTE]  
-    >  Jeśli **Pokaż źródła danych** nie jest dostępny, kliknij go, a następnie sprawdź ponownie.  
+   > [!NOTE]  
+   >  Jeśli **Pokaż źródła danych** nie jest dostępny, kliknij go, a następnie sprawdź ponownie.  
   
-2.  Kliknij przycisk **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
+2. Kliknij przycisk **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
   
-3.  Wybierz **bazy danych** a następnie kliknij przycisk **dalej**.  
+3. Wybierz **bazy danych** a następnie kliknij przycisk **dalej**.  
   
-4.  Wybierz połączenie danych z bazie danych programu SQL Server Northwind lub Dodaj nowe połączenie przy użyciu **nowe połączenie** przycisku.  
+4. Wybierz połączenie danych z bazie danych programu SQL Server Northwind lub Dodaj nowe połączenie przy użyciu **nowe połączenie** przycisku.  
   
-5.  Kliknij przycisk **Dalej**.  
+5. Kliknij przycisk **Dalej**.  
   
-6.  Usuń zaznaczenie opcji, aby zapisać połączenie, jeśli jest ono zaznaczone, a następnie kliknij **dalej**.  
+6. Usuń zaznaczenie opcji, aby zapisać połączenie, jeśli jest ono zaznaczone, a następnie kliknij **dalej**.  
   
-7.  Rozwiń **tabel** w węźle **obiektów bazy danych** okna.  
+7. Rozwiń **tabel** w węźle **obiektów bazy danych** okna.  
   
-8.  Zaznacz pole wyboru obok pozycji **dostawców** i **produktów** tabel.  
+8. Zaznacz pole wyboru obok pozycji **dostawców** i **produktów** tabel.  
   
 9. Kliknij przycisk **Zakończ**.  
   
- Kreator dodaje **dostawców** tabeli i **produktów** do tabeli **źródeł danych** okna. Dodaje także typizowany zestaw danych do projektu, który jest widoczny w **Eksploratora rozwiązań**.  
+   Kreator dodaje **dostawców** tabeli i **produktów** do tabeli **źródeł danych** okna. Dodaje także typizowany zestaw danych do projektu, który jest widoczny w **Eksploratora rozwiązań**.  
   
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Aby dodać kontrolki formularzy Windows powiązane z danymi kontrolki okienka akcji  
   
@@ -135,7 +135,7 @@ ms.locfileid: "38781935"
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**Wstaw**|  
-    |**Tekst**|**Wstaw**|  
+    |**Text**|**Wstaw**|  
   
 12. Zmień rozmiar kontrolki użytkownika, aby dopasować kontrolki.  
   

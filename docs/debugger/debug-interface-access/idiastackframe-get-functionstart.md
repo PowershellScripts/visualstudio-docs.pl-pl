@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b24bae809e234eb3e915c1d46f46041e18bd931
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c8d6502a99827d6835fb1f6d9368615fd6045203
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917209"
 ---
 # <a name="idiastackframegetfunctionstart"></a>IDiaStackFrame::get_functionStart
 Pobiera flagę wskazującą, czy blok zawiera punkt wejścia funkcji.  
@@ -37,7 +37,7 @@ HRESULT get_functionStart (
  [out] Zwraca `TRUE` Jeśli ramka stosu nie zawiera punktu wejścia funkcji; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

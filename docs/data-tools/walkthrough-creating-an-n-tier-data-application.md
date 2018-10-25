@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 007a0a85bf9d7200860194b881a3d0505f6bee45
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 87b88c6fc8c6add2c93721b46165ffd295f4d614
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942897"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Przewodnik: Tworzenie aplikacji warstwowych
 *N-warstwowa* danych aplikacji są aplikacje, uzyskiwać dostęp do danych, które są rozdzielone na wiele warstw logiczne, lub *warstwy*. Rozdzielanie składników aplikacji na dyskretne warstwy, łatwość konserwacji i zwiększa skalowalność aplikacji. Dzieje się tak, należy włączyć ułatwia przyjęcie nowych technologii, które mogą być stosowane do poszczególnych warstw, bez konieczności zmiany projektu całego rozwiązania. Architektura N-warstwowa zawiera warstwę prezentacji, warstwy środkowej i warstwy danych. Warstwa środkowa zazwyczaj zawiera warstwy dostępu do danych, warstwy logiki biznesowej i składniki współużytkowane, takie jak uwierzytelnianie i sprawdzania poprawności. Warstwa danych obejmuje relacyjnej bazy danych. N-warstwowych zazwyczaj przechowują wrażliwe informacje w warstwę dostępu do danych w warstwie środkowej do obsługi izolacji użytkowników końcowych, którzy uzyskują dostęp warstwy prezentacji. Aby uzyskać więcej informacji, zobacz [N-warstwowa danych aplikacji — omówienie](../data-tools/n-tier-data-applications-overview.md).
@@ -73,7 +73,7 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
  Pierwszym krokiem w tym instruktażu jest tworzyć rozwiązania i dwa projekty bibliotek klas. Najwyższej klasy biblioteki zawiera zestaw danych (wygenerowany wpisane `DataSet` klasy i DataTable, która przechowuje dane aplikacji). Ten projekt jest używany jako warstwy jednostek danych, aplikacji i zwykle znajduje się w warstwie środkowej. Zestaw danych tworzy początkowego zestawu danych i automatycznie oddziela kod w bibliotekach dwóch klas.
 
 > [!NOTE]
->  Pamiętaj poprawnie nazwę projektu i rozwiązania, zanim klikniesz pozycję **OK**. Ten sposób ułatwi służących do przeprowadzenia tego instruktażu.
+> Pamiętaj poprawnie nazwę projektu i rozwiązania, zanim klikniesz pozycję **OK**. Ten sposób ułatwi służących do przeprowadzenia tego instruktażu.
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Aby utworzyć rozwiązanie n warstwowe i biblioteki klas DataEntityTier
 
@@ -106,7 +106,7 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
  Następnym krokiem jest, aby utworzyć typizowany zestaw danych. Typizowane zestawy danych są tworzone za pomocą klasy zestawu danych (w tym `DataTables` klasy) oraz `TableAdapter` klas w jednym projekcie. (Wszystkie klasy są generowane w jednym pliku). Po oddzieleniu zestawu danych i TableAdapters do różnych projektów, to klasa zestawu danych, która zostanie przeniesiony do innego projektu, pozostawiając `TableAdapter` klas w oryginalnym projekcie. W związku z tym należy utworzyć zestaw danych w projekcie, który ostatecznie będzie zawierać TableAdapters (projekcie DataAccessTier). Tworzenie zestawu danych przy użyciu **Kreatora konfiguracji źródła danych**.
 
 > [!NOTE]
->  Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje dotyczące sposobu konfigurowania przykładowej bazy danych Northwind, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/installing-database-systems-tools-and-samples.md).
+> Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje dotyczące sposobu konfigurowania przykładowej bazy danych Northwind, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Aby utworzyć zestaw danych
 
@@ -129,7 +129,7 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 6.  Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie wybierz **dalej**.
 
     > [!NOTE]
-    >  W przypadku wybrania lokalnego pliku bazy danych (zamiast nawiązywania połączenia z SQL Server) może zostać poproszony, jeśli chcesz dodać plik do projektu. Wybierz **tak** możesz dodać do projektu plik bazy danych.
+    > W przypadku wybrania lokalnego pliku bazy danych (zamiast nawiązywania połączenia z SQL Server) może zostać poproszony, jeśli chcesz dodać plik do projektu. Wybierz **tak** możesz dodać do projektu plik bazy danych.
 
 7.  Wybierz **dalej** na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** strony.
 
@@ -144,20 +144,20 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 
 ### <a name="to-separate-the-tableadapters-from-the-dataset"></a>Do oddzielania elementów TableAdapter z zestawu danych
 
-1.  Kliknij dwukrotnie **NorthwindDataSet.xsd** w **Eksploratora rozwiązań** można otworzyć zestawu danych w **Projektanta obiektów Dataset**.
+1. Kliknij dwukrotnie **NorthwindDataSet.xsd** w **Eksploratora rozwiązań** można otworzyć zestawu danych w **Projektanta obiektów Dataset**.
 
-2.  Wybierz pusty obszar w projektancie.
+2. Wybierz pusty obszar w projektancie.
 
-3.  Znajdź **projektu DataSet** w węźle **właściwości** okna.
+3. Znajdź **projektu DataSet** w węźle **właściwości** okna.
 
-4.  W **projektu DataSet** listy wybierz **DataEntityTier**.
+4. W **projektu DataSet** listy wybierz **DataEntityTier**.
 
-5.  Na **kompilacji** menu, wybierz opcję **Kompiluj rozwiązanie**.
+5. Na **kompilacji** menu, wybierz opcję **Kompiluj rozwiązanie**.
 
- Zestaw danych i TableAdapters są podzielone na dwie klasy projekty biblioteki. Projekt, który pierwotnie zawierał całego zestawu danych (`DataAccessTier`) zawiera teraz tylko adapterów TableAdapter. Projekt umieszczoną **projektu DataSet** właściwości (`DataEntityTier`) zawiera typizowany zestaw danych: *NorthwindDataSet.Dataset.Designer.vb* (lub  *NorthwindDataSet.Dataset.Designer.cs*).
+   Zestaw danych i TableAdapters są podzielone na dwie klasy projekty biblioteki. Projekt, który pierwotnie zawierał całego zestawu danych (`DataAccessTier`) zawiera teraz tylko adapterów TableAdapter. Projekt umieszczoną **projektu DataSet** właściwości (`DataEntityTier`) zawiera typizowany zestaw danych: *NorthwindDataSet.Dataset.Designer.vb* (lub  *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
->  Kiedy oddzielisz zestawy danych i TableAdapters (przez ustawienie **projektu DataSet** właściwości), istniejące częściowe klasy zestawu danych w projekcie nie zostaną automatycznie przeniesione. Istniejące klasy częściowego zestawu danych należy przenieść ręcznie do projektu zestawu danych.
+> Kiedy oddzielisz zestawy danych i TableAdapters (przez ustawienie **projektu DataSet** właściwości), istniejące częściowe klasy zestawu danych w projekcie nie zostaną automatycznie przeniesione. Istniejące klasy częściowego zestawu danych należy przenieść ręcznie do projektu zestawu danych.
 
 ## <a name="create-a-new-service-application"></a>Tworzenie nowej aplikacji usługi
 W tym instruktażu przedstawiono sposób dostępu do warstwy dostępu do danych przy użyciu usługi WCF, więc Utwórz nową aplikację usługi WCF.
@@ -224,7 +224,7 @@ W tym instruktażu przedstawiono sposób dostępu do warstwy dostępu do danych 
  Teraz, gdy warstwa dostępu do danych zawiera metody, aby zwrócić dane, tworzyć metody w usłudze danych do wywołania metody w warstwie dostępu do danych.
 
 > [!NOTE]
->  Dla projektów C#, należy dodać odwołanie do `System.Data.DataSetExtensions` zestawu dla następujący kod do skompilowania.
+> Dla projektów C#, należy dodać odwołanie do `System.Data.DataSetExtensions` zestawu dla następujący kod do skompilowania.
 
 ### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Aby utworzyć funkcji GetCustomers i GetOrders usługi danych
 
@@ -323,7 +323,7 @@ Ustawimy **PresentationTier** projekt jako projekt startowy dla rozwiązania, po
 3.  Wybierz **Service1** i wybierz polecenie **OK**.
 
     > [!NOTE]
-    >  Jeśli masz wiele usług na bieżącym komputerze, wybierz usługę, utworzony wcześniej w tym przewodniku (usługa, która zawiera `GetCustomers` i `GetOrders` metody).
+    > Jeśli masz wiele usług na bieżącym komputerze, wybierz usługę, utworzony wcześniej w tym przewodniku (usługa, która zawiera `GetCustomers` i `GetOrders` metody).
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Dodaj DataGridViews do formularza w celu wyświetlenia danych zwróconych przez usługę danych
  Po dodaniu odwołania do usługi do usługi danych **źródeł danych** okno zostanie automatycznie wypełniona danych, który jest zwracany przez usługę.
@@ -361,7 +361,7 @@ Ustawimy **PresentationTier** projekt jako projekt startowy dla rozwiązania, po
 Wartością domyślną dla `maxReceivedMessageSize` nie jest wystarczająco duży, aby pomieścić dane pobrane z `Customers` i `Orders` tabel. W poniższych krokach będziesz zwiększyć wartość 6553600. Możesz zmienić wartości na komputerze klienckim, który automatycznie aktualizuje odwołanie do usługi.
 
 > [!NOTE]
->  Niższe domyślny rozmiar ma na celu ograniczenia narażenia na ataki (DoS). Aby uzyskać więcej informacji, zobacz <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
+> Niższe domyślny rozmiar ma na celu ograniczenia narażenia na ataki (DoS). Aby uzyskać więcej informacji, zobacz <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Aby zwiększyć wartości maxReceivedMessageSize
 
@@ -382,5 +382,5 @@ Uruchom aplikację, naciskając klawisz **F5**. Dane z `Customers` i `Orders` ta
 ## <a name="see-also"></a>Zobacz także
 
 - [Praca z zestawami danych w aplikacjach n-warstwowych](../data-tools/work-with-datasets-in-n-tier-applications.md)
-- [Hierarchiczna aktualizacja](../data-tools/hierarchical-update.md)
+- [Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)
 - [Uzyskiwanie dostępu do danych w programie Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

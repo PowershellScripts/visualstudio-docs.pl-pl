@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b05406af9e10a23f37d03b30518b20343b7d3f98
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 267d3e06e9f0d4733a7985f65aa81f368c3f5413
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676360"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925119"
 ---
 # <a name="event-logging-for-office-solutions"></a>Rejestrowanie zdarzeń dla rozwiązań pakietu Office
   Aby wyświetlić komunikaty o wyjątkach, które są przechwytywane przez służy Podgląd zdarzeń w Windows [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] po zainstalowaniu lub odinstalowaniu rozwiązań pakietu Office. Te komunikaty z Rejestratora zdarzeń służy do instalacji i problemy z wdrażaniem.  
@@ -51,33 +51,33 @@ ms.locfileid: "35676360"
   
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Można odczytać dziennika zdarzeń w Windows 7, Windows Vista i Windows Server 2008  
   
-1.  W Panelu sterowania otwórz **narzędzia administracyjne**.  
+1. W Panelu sterowania otwórz **narzędzia administracyjne**.  
   
-2.  Rozpocznij **Podgląd zdarzeń**.  
+2. Rozpocznij **Podgląd zdarzeń**.  
   
-3.  Rozwiń **Dzienniki Windows**.  
+3. Rozwiń **Dzienniki Windows**.  
   
-4.  Na liście dzienniki zdarzeń, wybierz **aplikacji**.  
+4. Na liście dzienniki zdarzeń, wybierz **aplikacji**.  
   
-5.  Na **akcji** menu, kliknij przycisk **Filtruj bieżący dziennik**.  
+5. Na **akcji** menu, kliknij przycisk **Filtruj bieżący dziennik**.  
   
-6.  W **źródła zdarzeń** listy wybierz **VSTO 4.0**.  
+6. W **źródła zdarzeń** listy wybierz **VSTO 4.0**.  
   
-7.  W przypadku zdarzeń instalacji w **identyfikator zdarzenia** wpisz **4096**.  
+7. W przypadku zdarzeń instalacji w **identyfikator zdarzenia** wpisz **4096**.  
   
-8.  Kliknij przycisk **OK** Aby wyświetlić widok filtrowany.  
+8. Kliknij przycisk **OK** Aby wyświetlić widok filtrowany.  
   
- Podgląd zdarzeń zawiera następujące informacje:  
+   Podgląd zdarzeń zawiera następujące informacje:  
   
--   Lokalizacja manifestu wdrażania rozwiązania.  
+- Lokalizacja manifestu wdrażania rozwiązania.  
   
--   Komunikat, który opisuje przyczynę błąd lub wyjątek.  
+- Komunikat, który opisuje przyczynę błąd lub wyjątek.  
   
- Te komunikaty o wyjątkach może pomóc zidentyfikować przyczynę problemu z instalacją, takie jak niezaufany certyfikat, z lokalizacją dokumentu niezaufanych lub manifest nieprawidłowa wdrożenia.  
+  Te komunikaty o wyjątkach może pomóc zidentyfikować przyczynę problemu z instalacją, takie jak niezaufany certyfikat, z lokalizacją dokumentu niezaufanych lub manifest nieprawidłowa wdrożenia.  
   
- Po odinstalowaniu rozwiązań pakietu Office, komunikaty o wyjątkach pozostają w dzienniku zdarzeń.  
+  Po odinstalowaniu rozwiązań pakietu Office, komunikaty o wyjątkach pozostają w dzienniku zdarzeń.  
   
- Aby wyświetlić lub dziennika komunikaty o wyjątkach, gdy działa rozwiązań pakietu Office, zobacz [projekty Office debugowania](../vsto/debugging-office-projects.md) i [projekty Office debugowania](../vsto/debugging-office-projects.md).  
+  Aby wyświetlić lub dziennika komunikaty o wyjątkach, gdy działa rozwiązań pakietu Office, zobacz [projekty Office debugowania](../vsto/debugging-office-projects.md) i [projekty Office debugowania](../vsto/debugging-office-projects.md).  
   
 ### <a name="localization"></a>Lokalizacja  
  Język komunikat o wyjątku jest określany przez Visual Studio Tools for Office runtime języka. Na przykład jeśli na komputerze użytkownika końcowego jest zainstalowany pakiet języka japońskiego, komunikat o wyjątku są zapisywane w dzienniku zdarzeń w języku japońskim.  

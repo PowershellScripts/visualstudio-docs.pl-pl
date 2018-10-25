@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreams::Item | Dokumentacja firmy Microsoft
+title: Idiaenumdebugstreams::Item — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b255a96b3bd443ff4a2782cb2161694da3694c17
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ae82df1f2af6acba7f94bf0d14682aff27a830bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466526"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916195"
 ---
 # <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
-Pobiera strumień debugowania za pomocą indeksu lub name.  
+Pobiera strumień debugowania za pomocą indeksu lub nazwy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,13 +35,13 @@ HRESULT Item (
   
 #### <a name="parameters"></a>Parametry  
  indeks  
- [in] Indeks lub nazwa strumień debugowania do pobrania. Jeśli variant liczba całkowita jest używany, musi być w zakresie od 0 do `count`-1, gdzie `count` jest zwracane przez [IDiaEnumDebugStreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) metody.  
+ [in] Indeks lub nazwę strumienia debugowania do pobrania. Jeśli jest używany typ variant liczby całkowitej, musi być z zakresu od 0 do `count`-1, gdzie `count` jest zwracana przez [idiaenumdebugstreams::get_count —](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md) metody.  
   
  strumień  
- [out] Zwraca [idiaenumdebugstreamdata —](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) obiekt reprezentujący debugowania określonego strumienia.  
+ [out] Zwraca [idiaenumdebugstreamdata —](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) obiekt reprezentujący strumień debugowania określony.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
   

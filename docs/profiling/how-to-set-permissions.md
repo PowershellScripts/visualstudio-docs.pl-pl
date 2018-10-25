@@ -15,47 +15,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c967fd06030fcedd89d95ec22ca806549f5fed4
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: a6acd54a140d3281f4fd539cc12d07adb11cfd6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845356"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897386"
 ---
 # <a name="how-to-set-permissions"></a>Porady: Ustawianie uprawnień
 
-W tym artykule opisano, jak Administrator komputera przyznaje uprawnienia zabezpieczeń wymagane do profilowania do użytkownika lub grupę, która nie ma uprawnień administratora na tym komputerze.
+W tym artykule opisano, jak Administrator komputera przyznaje uprawnienia zabezpieczeń wymagane do profilowania do użytkownika lub grupy, która nie ma uprawnienia administratora na tym komputerze.
 
-Zasady zabezpieczeń podstawowych stany aplikacje powinny być uruchamiane z nie więcej niż uprawnienia, które są im potrzebne. Ta zasada dotyczy również użytkowników. Jeśli użytkownicy mogą być skuteczne, gdy jest zalogowany jako członków grupy użytkowników zamiast do grupy administratorów, ich nie należy przyznawać uprawnienia administratora. Pierwsza procedura "Aby utworzyć konto użytkownika, które ma uprawnienia użytkownika" zawiera opis sposobu tworzenia konta użytkownika dla elementu członkowskiego do grupy użytkowników.
+Zasady zabezpieczeń podstawowych stanów, aplikacje powinny być uruchamiane z nie więcej niż uprawnienia, które są im potrzebne. Ta zasada ma zastosowanie także do użytkowników. Jeśli użytkownicy mogą być w pełni obowiązywać, gdy jest zalogowany jako członkowie grupy użytkowników, zamiast do grupy Administratorzy, ich może nie być przyznany uprawnienia administratora. Pierwszej procedury "Aby utworzyć konto użytkownika, które ma uprawnienia użytkownika" w tym artykule opisano sposób tworzenia konta użytkownika dla członka grupy użytkowników.
 
-Członkowie grupy Użytkownicy wymaga dostępu do folderów i plików na dysku, które są udostępniane innym członkom zespołu. Druga procedura "Aby udzielić dostępu do plików projektu udostępnionego" opisuje sposób przyznania dostępu.
+Członkowie grupy Użytkownicy będą potrzebowali dostępu do folderów i plików na dysku, które są współużytkowane z innymi członkami zespołu. Drugą procedurę "Aby udzielić dostępu do plików projektu udostępnionego" w tym artykule opisano jak przyznać dostęp.
 
-Członkowie grupy użytkowników można uruchomić narzędzi profilowania, jeśli administrator przyznał im dostęp do sterownika oprogramowania dla narzędzi profilowania. Ostatniej procedury "Aby udzielić dostępu do profilowania sterownik" opisano, jak uzyskać dostęp do tego sterownika.
+Jeśli administrator przyznaje im dostęp do sterownika oprogramowania dla narzędzi profilowania, członkowie grupy użytkowników można uruchomić narzędzi profilowania. Ostatniej procedury "Aby udzielić dostępu do profilowania sterownika" w tym artykule opisano jak udzielić dostępu do tego sterownika.
 
 > [!NOTE]
-> Musisz mieć uprawnienia administratora, które należy wykonać czynności opisane w tych procedurach.
+> Musisz mieć uprawnienia administratora, aby wykonać czynności opisane w tych procedurach.
 
 ## <a name="to-create-a-user-account-that-has-user-permissions"></a>Aby utworzyć konto użytkownika, które ma uprawnienia użytkownika
 
-1. Kliknij prawym przyciskiem myszy **Mój komputer** , a następnie kliknij przycisk **Zarządzaj**.
+1. Kliknij prawym przyciskiem myszy **Mój komputer** a następnie kliknij przycisk **Zarządzaj**.
 
      **Zarządzanie komputerem** zostanie otwarte okno.
 
-2. Rozwiń węzeł **lokalnych użytkowników i grup**.
+2. Rozwiń **lokalnych użytkowników i grup**.
 
 3. Kliknij prawym przyciskiem myszy **użytkowników** folder, a następnie kliknij przycisk **nowego użytkownika**.
 
-     **Nowego użytkownika** zostanie wyświetlone okno dialogowe.
+     **Nowego użytkownika** pojawi się okno dialogowe.
 
-4. Wypełnij pola w oknie dialogowym z informacjami dla konta użytkownika, które tworzysz. Określ hasło. Opcjonalnie zaznacz pole wyboru, które wymaga, aby zmiany hasła przy następnym logowaniu użytkownika.
+4. Wypełnij pola w oknie dialogowym z informacjami dla konta użytkownika, czy tworzysz. Określ hasło. Opcjonalnie zaznacz pole wyboru, które wymaga, aby zmiany hasła przy następnym logowaniu użytkownika.
 
-5. Kliknij przycisk **Utwórz** , a następnie kliknij przycisk **Zamknij**.
+5. Kliknij przycisk **Utwórz** a następnie kliknij przycisk **Zamknij**.
 
      Nowy użytkownik pojawi się w grupie Użytkownicy, grupy użytkowników, którzy nie mają uprawnień administratora.
 
 ## <a name="to-grant-access-to-shared-project-files"></a>Aby udzielić dostępu do udostępnionych plików projektu
 
-1. W Eksploratorze Windows (lub Eksploratora plików) Znajdź korzeń drzewa folder dla projektu pliki używane przez tego użytkownika i udostępnionych przez zespół projektu.
+1. W Eksploratorze Windows (lub Eksploratora plików) Znajdź katalog główny drzewa folder dla projektu pliki używane przez tego użytkownika i udostępnione przez zespół projektu.
 
      Ścieżka tego folderu może wyglądać w następujący sposób:
 
@@ -65,17 +65,17 @@ Członkowie grupy użytkowników można uruchomić narzędzi profilowania, jeśl
 
 2. Kliknij prawym przyciskiem myszy folder, a następnie kliknij przycisk **właściwości**.
 
-     **\<Nazwa folderu > właściwości** zostanie wyświetlone okno dialogowe.
+     **\<Nazwę folderu > właściwości** pojawi się okno dialogowe.
 
 3. Kliknij przycisk **zabezpieczeń** kartę.
 
-4. Kliknij nazwę konta użytkownika w **nazwy grup lub użytkowników** pole.
+4. Kliknij nazwę konta w **nazwy grupy lub użytkownika** pole.
 
-5. W **uprawnienia dla \<nazwa użytkownika >** zaznacz pole wyboru **Pełna kontrola**.
+5. W **uprawnienia dla \<nazwa użytkownika >** zaznacz pole wyboru dla **Pełna kontrola**.
 
 6. Kliknij przycisk **OK**.
 
-     Spowoduje to przydzielenie uprawnień dla użytkownika na drzewie folderu udostępnionego, który rozpoczyna się od wybrany w kroku 5 folder.
+     Spowoduje to przydzielenie uprawnień dla użytkownika na potrzeby drzewa folder udostępniony, który rozpoczyna się od folderu wybrana w kroku 5.
 
 ## <a name="to-grant-access-to-the-profiling-driver"></a>Aby udzielić dostępu do profilowania sterownika
 
@@ -95,31 +95,31 @@ Członkowie grupy użytkowników można uruchomić narzędzi profilowania, jeśl
 
      To polecenie instaluje i uruchamia sterownik dla narzędzi profilowania.
 
-     To polecenie uruchamia profilowanie sterowników i usługi, aby użytkownicy inni niż administratorzy mogą używać profilowania funkcji, które są dostępne w obszarze procesu ich użytkownika. Tylko Administrator może uruchomić polecenie; i kończy się niepowodzeniem dla użytkowników innych niż administracyjne.
+     To polecenie uruchamia profilowanie sterowników i usługi, aby użytkownicy inni niż administratorzy mogą używać profilowania funkcji, które są dostępne w przestrzeni procesu ich użytkowników. Tylko Administrator może uruchomić polecenia; i nie powiedzie się dla użytkowników innych niż administracyjne.
 
-     Należy zauważyć, że efekty w tym kroku są cofnięte po ponownym uruchomieniu komputera, chyba że również wykonania ostatniego kroku tej procedury.
+     Należy zauważyć, że efekty w tym kroku są cofnięta po ponownym uruchomieniu komputera, chyba że również wykonać ostatni krok w tej procedurze.
 
-4. Uruchom polecenie, aby zezwolić na dostęp do profilowania funkcji sterownika przez użytkownika lub grupę, która nie ma dostępu administratora do komputera:
+4. Uruchom polecenie, aby zezwolić na dostęp do profilowania funkcji sterownika przez użytkownika lub grupy, które ma dostęp administratora do komputera:
 
     ```cmd
     vsperfcmd /admin:security,allow,<right[,right],<user name|group name>
     ```
 
-     To polecenie przyznaje \<nazwa użytkownika > lub \<Nazwa grupy > konto dostępu do narzędzi profilowania. \<Prawo > Opcja określa profilowania funkcji użytkownik może uzyskać dostęp. \<Prawo > opcja może być co najmniej jeden z następujących wartości:
+     To polecenie przyznaje \<nazwa_użytkownika > lub \<Nazwa grupy > konta dostępu do narzędzi profilowania. \<Prawo > Opcja określa profilowania funkcji użytkownik może uzyskać dostęp. \<Prawo > opcja może być co najmniej jeden z następujących wartości:
 
-    - FullAccess — zezwala na dostęp do wszystkich metod profilowania zbieranie danych wydajności z usługi, w tym próbkowania i profilowania międzysesyjnego.
+    - FullAccess — zezwala na dostęp do wszystkich metod profilowania, zbieranie danych wydajności z usługi, w tym do pobierania próbek i obejmujące wiele sesji profilowania.
 
-    - SampleProfiling — zezwala na dostęp do przykładowej metod profilowania
+    - SampleProfiling — zezwala na dostęp do metod profilowania próbki
 
-    - CrossSession — zezwala na dostęp do wielu sesji profilowania, która jest wymagana dla usługi profilowania.
+    - CrossSession — zezwala na dostęp do wielu sesji profilowania, co jest wymagane dla usług profilowania.
 
-5. (Opcjonalnie) Aby zachować wyniki poprzednie kroki, po ponownym uruchomieniu komputera, uruchom następujące polecenie:
+5. (Opcjonalnie) Aby zachować wyniki dowolnego z poprzednich kroków, po ponownym uruchomieniu komputera, uruchom następujące polecenie:
 
     ```cmd
     vsperfcmd /admin:driver,autostart,on
     ```
 
- Określeni użytkownicy po zalogowaniu, teraz będzie konieczne użycie narzędzi profilowania bez uprawnień administratora.
+   Określeni użytkownicy po zalogowaniu, teraz będzie można użyć narzędzi profilowania bez uprawnień administratora.
 
 ## <a name="see-also"></a>Zobacz także
 

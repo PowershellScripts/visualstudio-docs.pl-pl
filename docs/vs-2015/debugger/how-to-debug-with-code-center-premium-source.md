@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fa890e15a27a3d54c420520a71119f794fd124c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac76a294c8f6b536da93f06afe6e423ca593b84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824168"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Porady: debugowanie przy użyciu źródła Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ Za pomocą [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] debugera, 
   
 ### <a name="to-prepare-for-debugging-with-code-center-premium"></a>Aby przygotować się do debugowania za pomocą Code Center Premium  
   
-1.  Połącz czytnika kart inteligentnych i Wstaw karty, która pochodzi z Shared Source Initiative.  
+1. Połącz czytnika kart inteligentnych i Wstaw karty, która pochodzi z Shared Source Initiative.  
   
-2.  Uruchom program Visual Studio.  
+2. Uruchom program Visual Studio.  
   
-3.  Na **narzędzia** menu, kliknij przycisk **opcje**.  
+3. Na **narzędzia** menu, kliknij przycisk **opcje**.  
   
-4.  W **opcje** po otwarciu okna dialogowego **debugowanie** węzła i kliknij przycisk **ogólne**.  
+4. W **opcje** po otwarciu okna dialogowego **debugowanie** węzła i kliknij przycisk **ogólne**.  
   
-5.  Wyczyść **Włącz tylko mój kod (tylko zarządzany)** pole wyboru.  
+5. Wyczyść **Włącz tylko mój kod (tylko zarządzany)** pole wyboru.  
   
-6.  Wybierz **Włącz obsługę serwera źródłowego**.  
+6. Wybierz **Włącz obsługę serwera źródłowego**.  
   
-7.  Wyczyść **wymaga plików źródłowych Aby dokładnie dopasować oryginalną wersję**.  
+7. Wyczyść **wymaga plików źródłowych Aby dokładnie dopasować oryginalną wersję**.  
   
-8.  W obszarze **debugowanie** węzła, kliknij przycisk **symbole**.  
+8. W obszarze **debugowanie** węzła, kliknij przycisk **symbole**.  
   
 9. W **pliku symboli (.pdb) lokalizacje** zaznaczenie pola wyboru **symboli serwera Microsoft** pole wyboru, a następnie dodaj następujące lokalizacje:  
   
@@ -60,18 +60,18 @@ Za pomocą [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] debugera, 
   
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
-    > [!NOTE]
-    >  Pamiętaj dołączyć końcowy ukośnik**/** na końcu ścieżki.  
+   > [!NOTE]
+   >  Pamiętaj dołączyć końcowy ukośnik<strong>/</strong> na końcu ścieżki.  
   
      Przenieś te lokalizacje na początku listy, aby upewnić się, że te symbole są najpierw ładowane.  
   
-    > [!NOTE]
-    >  Te lokalizacje Code Center Premium musi być wymienione jako pierwsze, aby były pierwszy lokalizacje, które są ładowane. W programie Visual Studio 2010 nie można przenieść wszystkie serwery powyżej **serwery symboli firmy Microsoft** zapisu, dlatego należy wyczyścić pole wyboru.  
-    >   
-    >  Aby załadować symbole z symboli firmy Microsoft podczas sesji debugowania, wykonaj następujące czynności:  
-    >   
-    >  1.  Na **debugowania** menu, wybierz **Windows** , a następnie wybierz **modułów**.  
-    > 2.  Wybierz moduł, który ma symbole, a następnie otwórz menu skrótów. Wybierz **Załaduj symbole z** , a następnie wybierz **serwery symboli firmy Microsoft**.  
+   > [!NOTE]
+   >  Te lokalizacje Code Center Premium musi być wymienione jako pierwsze, aby były pierwszy lokalizacje, które są ładowane. W programie Visual Studio 2010 nie można przenieść wszystkie serwery powyżej **serwery symboli firmy Microsoft** zapisu, dlatego należy wyczyścić pole wyboru.  
+   > 
+   >  Aby załadować symbole z symboli firmy Microsoft podczas sesji debugowania, wykonaj następujące czynności:  
+   > 
+   > 1. Na **debugowania** menu, wybierz **Windows** , a następnie wybierz **modułów**.  
+   >    2.  Wybierz moduł, który ma symbole, a następnie otwórz menu skrótów. Wybierz **Załaduj symbole z** , a następnie wybierz **serwery symboli firmy Microsoft**.  
   
 10. W **Buforuj symbole z serwerów symboli w tym katalogu** wprowadź lokalizację, taką jak `C:\symbols` gdzie Code Center Premium może buforować symboli. Pamięć podręczna symboli może znacznie poprawić wydajność podczas debugowania.  
   
@@ -109,22 +109,22 @@ Za pomocą [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] debugera, 
   
 ### <a name="to-debug-source-code-from-an-existing-solution"></a>Aby debugować kod źródłowy z istniejącego rozwiązania  
   
-1.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla rozwiązania, a następnie wybierz **właściwości**.  
+1. W **Eksploratora rozwiązań**, otwórz menu skrótów dla rozwiązania, a następnie wybierz **właściwości**.  
   
-2.  W oknie dialogowym strony właściwości rozwiązania wybierz **Debuguj pliki źródłowe** w **wspólne właściwości** węzła.  
+2. W oknie dialogowym strony właściwości rozwiązania wybierz **Debuguj pliki źródłowe** w **wspólne właściwości** węzła.  
   
-3.  Dodawanie następującej lokalizacji w celu **katalogi zawierające pliki źródłowe** listy:  
+3. Dodawanie następującej lokalizacji w celu **katalogi zawierające pliki źródłowe** listy:  
   
-     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
+    `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
-    > [!NOTE]
-    >  Pamiętaj dołączyć końcowy ukośnik**/** na końcu ścieżki.  
+   > [!NOTE]
+   >  Pamiętaj dołączyć końcowy ukośnik<strong>/</strong> na końcu ścieżki.  
   
-4.  Dla każdego zarządzanego projektu w rozwiązaniu wykonaj następujące czynności  
+4. Dla każdego zarządzanego projektu w rozwiązaniu wykonaj następujące czynności  
   
-    1.  W Eksploratorze rozwiązań Otwórz menu skrótów dla projektu, a następnie wybierz **właściwości**.  
+   1.  W Eksploratorze rozwiązań Otwórz menu skrótów dla projektu, a następnie wybierz **właściwości**.  
   
-    2.  Wybierz **debugowania** , a następnie wybierz **Włącz debugowanie kodu unmanged**.  
+   2.  Wybierz **debugowania** , a następnie wybierz **Włącz debugowanie kodu unmanged**.  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>Aby debugować swoje rozwiązanie przy użyciu źródła Code Center Premium  
   

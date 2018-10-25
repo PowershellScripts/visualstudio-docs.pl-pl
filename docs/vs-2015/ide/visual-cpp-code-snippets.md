@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a125223521bf73012944841c6fcf531df3a9ae8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed64d9dde53b31cfe5f52ce708e4ee96d91fe8ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861367"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmenty kodu Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ W programie Visual Studio umożliwia fragmenty kodu Dodaj kod często używane w
 ## <a name="inserting-a-code-snippet"></a>Wstawianie fragmentu kodu  
  Aby wstawić fragment kodu, otwórz plik kodu C++ (.cpp i .h), kliknij dowolne miejsce wewnątrz pliku i wykonaj jedną z następujących czynności:  
   
--   Kliknij prawym przyciskiem myszy, aby uzyskać menu kontekstowe i wybierz **Wstaw fragment kodu**  
+- Kliknij prawym przyciskiem myszy, aby uzyskać menu kontekstowe i wybierz **Wstaw fragment kodu**  
   
--   W **Edytuj / IntelliSense** menu, wybierz opcję **Wstaw fragment kodu**  
+- W **Edytuj / IntelliSense** menu, wybierz opcję **Wstaw fragment kodu**  
   
--   Użyj klawiszy dostępu: **CTRL + K + X**  
+- Użyj klawiszy dostępu: **CTRL + K + X**  
   
- Powinien zostać wyświetlony listę opcji, począwszy od **#if**. Po wybraniu **#if**, powinien zostać wyświetlony następujący kod, które są dodawane do pliku:  
+  Powinien zostać wyświetlony listę opcji, począwszy od **#if**. Po wybraniu **#if**, powinien zostać wyświetlony następujący kod, które są dodawane do pliku:  
   
 ```cpp  
 #if 0  
@@ -50,13 +50,13 @@ W programie Visual Studio umożliwia fragmenty kodu Dodaj kod często używane w
 ## <a name="using-a-code-snippet-to-surround-selected-code"></a>Przy użyciu fragmentu kodu można otoczyć zaznaczony kod  
  Na potrzeby wstawki kodu programu Otocz zaznaczony kod, wybierz linię (lub wiele wierszy), a następnie wykonaj jedną z następujących czynności:  
   
-1.  Kliknij prawym przyciskiem myszy, aby uzyskać menu kontekstowe i wybierz **z funkcji Otocz przez**  
+1. Kliknij prawym przyciskiem myszy, aby uzyskać menu kontekstowe i wybierz **z funkcji Otocz przez**  
   
-2.  W **Edytuj / IntelliSense** menu, wybierz opcję **z funkcji Otocz przez**  
+2. W **Edytuj / IntelliSense** menu, wybierz opcję **z funkcji Otocz przez**  
   
-3.  Użyj klawiszy dostępu: **CTRL + K, S**  
+3. Użyj klawiszy dostępu: **CTRL + K, S**  
   
- Wybierz **#if**. Powinien zostać wyświetlony podobny do poniższego:  
+   Wybierz **#if**. Powinien zostać wyświetlony podobny do poniższego:  
   
 ```cpp  
 #if 0  

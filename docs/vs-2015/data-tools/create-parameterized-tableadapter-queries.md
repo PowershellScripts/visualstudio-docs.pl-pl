@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 522a9035bc272d643ae3277e5471f0d67baedcde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225261"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823505"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Tworzenie sparametryzowanych zapytań adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,41 +65,41 @@ Uruchamianie zapytania parametrycznego zwraca dane spełniające warunki klauzul
   
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>Aby dodać zapytanie do istniejącego formularza powiązanych z danymi  
   
-1.  Otwórz formularz w **Windows Forms Designer**.  
+1. Otwórz formularz w **Windows Forms Designer**.  
   
-2.  Na **danych** menu, wybierz opcję**Dodaj zapytanie**lub**tagów inteligentnych danych**.  
+2. Na **danych** menu, wybierz opcję**Dodaj zapytanie**lub**tagów inteligentnych danych**.  
   
-    > [!NOTE]
-    >  Jeśli **Dodaj zapytanie** nie jest dostępny na **danych** menu, wybierz formant w formularzu, wyświetla źródła danych, możesz chcesz dodać parametry do. Na przykład, jeśli w formularzu są wyświetlane dane w <xref:System.Windows.Forms.DataGridView> sterowania, wybierz ją. Jeśli w formularzu wyświetlane dane w poszczególnych formantów, wybierz dowolny formant powiązany z danymi.  
+   > [!NOTE]
+   >  Jeśli **Dodaj zapytanie** nie jest dostępny na **danych** menu, wybierz formant w formularzu, wyświetla źródła danych, możesz chcesz dodać parametry do. Na przykład, jeśli w formularzu są wyświetlane dane w <xref:System.Windows.Forms.DataGridView> sterowania, wybierz ją. Jeśli w formularzu wyświetlane dane w poszczególnych formantów, wybierz dowolny formant powiązany z danymi.  
   
-3.  W **tabeli źródła danych wybierz** obszaru, wybierz tablethat, którą chcesz dodać parametryzacji do.  
+3. W **tabeli źródła danych wybierz** obszaru, wybierz tablethat, którą chcesz dodać parametryzacji do.  
   
-4.  Wpisz nazwę w **Nowa nazwa zapytania** pole, jeśli tworzysz nową kwerendę.  
+4. Wpisz nazwę w **Nowa nazwa zapytania** pole, jeśli tworzysz nową kwerendę.  
   
-     —lub—  
+    —lub—  
   
-     Wybierz zapytanie w **Ejąca nazwa zapytania** pole.  
+    Wybierz zapytanie w **Ejąca nazwa zapytania** pole.  
   
-5.  W **tekst zapytania** wpisz kwerendę, która przyjmuje parametry.  
+5. W **tekst zapytania** wpisz kwerendę, która przyjmuje parametry.  
   
-6.  Wybierz**OK**.  
+6. Wybierz**OK**.  
   
-     Co formantu, aby parametr wejściowy, a co **obciążenia** przycisk są dodawane do formularza w <xref:System.Windows.Forms.ToolStrip> kontroli.  
+    Co formantu, aby parametr wejściowy, a co **obciążenia** przycisk są dodawane do formularza w <xref:System.Windows.Forms.ToolStrip> kontroli.  
   
- Parametry TableAdapter można przypisać wartości null wyszukiwać rekordy, które nie mają żadnej wartości bieżącej. Na przykład, należy wziąć pod uwagę następujące zapytanie, które ma `ShippedDate` parametru w jego `WHERE` klauzuli:  
+   Parametry TableAdapter można przypisać wartości null wyszukiwać rekordy, które nie mają żadnej wartości bieżącej. Na przykład, należy wziąć pod uwagę następujące zapytanie, które ma `ShippedDate` parametru w jego `WHERE` klauzuli:  
   
- `SELECT CustomerID, OrderDate, ShippedDate`  
+   `SELECT CustomerID, OrderDate, ShippedDate`  
   
- `FROM Orders`  
+   `FROM Orders`  
   
- `WHERE (ShippedDate = @ShippedDate) OR`  
+   `WHERE (ShippedDate = @ShippedDate) OR`  
   
- `(ShippedDate IS NULL)`  
+   `(ShippedDate IS NULL)`  
   
- Gdyby to zapytanie w metodzie TableAdapter, wysłać zapytanie o wszystkie zamówienia, które nie zostały wydane z następującym kodem:  
+   Gdyby to zapytanie w metodzie TableAdapter, wysłać zapytanie o wszystkie zamówienia, które nie zostały wydane z następującym kodem:  
   
- [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
- [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
+   [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
+   [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
   
 #### <a name="to-enable-a-query-to-accept-null-values"></a>Aby włączyć zapytanie, aby akceptować wartości null  
   

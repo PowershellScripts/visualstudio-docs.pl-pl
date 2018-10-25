@@ -13,45 +13,45 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 75b72d0f999da27a1b663b4aad89e905807fa638
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e316caa9ededbb7db40490fcbcc10ec4f760497d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903754"
 ---
 # <a name="properties-of-swimlanes"></a>Właściwości torów
-Można dodać ścieżek do diagramu. Ścieżek podział diagramu obszarów pionowych lub poziomych. Można określić innych kształtów, który będzie wyświetlany w ścieżek. Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji na temat używania tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Można dodać ścieżek do diagramu. Tory podzielić diagramu obszarów pionowych lub poziomych. Można zdefiniować inne kształty, który będzie wyświetlany w ścieżek. Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji o tym, jak korzystać z tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
- Ścieżek mają właściwości, które są wymienione w poniższej tabeli.
+ Torów mają właściwości, które są wymienione w poniższej tabeli.
 
 |Właściwość|Opis|Domyślny|
-|--------------|-----------------|-------------|
-|Kolor wypełnienia treści|Kolor wypełnienia treści tor.|biały|
-|Kolor wypełnienia nagłówka|Kolor wypełnienia nagłówka tor.|DarkGray|
+|-|-|-|
+|Kolor wypełnienia treści|Kolor wypełnienia dla treści toru.|Biały|
+|Kolor wypełnienia nagłówka|Kolor wypełnienia dla nagłówka toru.|DarkGray|
 |Kolor separatora|Kolor linii separatora.|LightGray|
 |Styl linii separatora|Styl linii separatora (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot`, lub `Custom`).|`Dash`|
-|Szerokość separatora|Grubość linii separatora w calach.|0.03125|
-|Kolor tekstu|Kolor używany do elementów decorator tekstu, które są skojarzone z tym tor.|czarne|
+|Szerokość separatora|Grubość linii separatora (w calach).|0.03125|
+|Kolor tekstu|Kolor, który jest używany dla dekoratorów tekstu, które są skojarzone z tego toru.|Czarny|
 |Modyfikator dostępu|Poziom dostępu klasy (`public` lub `internal`).|Public|
-|Atrybuty niestandardowe|Można dodawać atrybuty do klasy kodu, które są generowane na podstawie tego tor.|\<Brak >|
-|Generuje o podwójnej precyzji pochodnych|Jeśli `True`, zarówno klasy podstawowej i częściowej klasy (obsługuje dostosowywania przy użyciu zastąpień) zostanie wygenerowany. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzenie klasy generowane](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Ma niestandardowy konstruktora|Jeśli `True`, niestandardowe konstruktora znajdzie się w kodzie źródłowym. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzenie klasy generowane](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Modyfikator dziedziczenia|Opisuje rodzaj dziedziczenia klasy kodu źródłowego, która jest generowana z tor (`none`, `abstract` lub `sealed`).|brak|
-|Tor podstawowej|Klasa podstawowa to tor.|(Brak)|
-|Nazwa|Nazwa tego tor.|Bieżąca nazwa|
-|Przestrzeń nazw|Przestrzeń nazw, która jest połączona z tym tor.|Bieżącej przestrzeni nazw|
-|ToolTip — typ|Jak jest zdefiniowany element tooltip (`fixed`, `variable`, lub `none`). Jeśli `fixed`, wartość `Fixed Tooltip Text` właściwość jest używana; jeśli `variable`, a następnie element tooltip jest zdefiniowany w niestandardowym.|\<Brak >|
-|Uwagi|Nieformalne uwagi, które są skojarzone z tym tor.|\<Brak >|
-|Wyrównanie|Wyrównanie w poziomie lub pionie.|Pionowe|
-|Wysokość początkowego|Początkowa wysokość tego tor w calach. Dotyczy tylko pozioma ścieżek.|0|
-|Szerokość początkowa|Szerokość początkowego tego tor w calach. Dotyczy tylko pionowy ścieżek.|0|
-|Opisuje kolor tekstu|Jeśli `True`, użytkownik może ustawić kolor tor w Projektancie wygenerowany. Aby to ustawić, kliknij prawym przyciskiem myszy kształtu tor, a następnie kliknij przycisk **dodać widoczne**.|False|
-|Opis|Używany do dokumentów wygenerowanych projektanta.|\<Brak >|
-|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektanta, aby odwoływać się do tej klasy tor.|\<Brak >|
-|Stały tekst etykietki narzędzia|Tekst, który jest używany dla stałych etykietka narzędzia.|\<Brak >|
-|Słowo kluczowe pomocy|Słowo kluczowe jest używana do indeksowania pomocy F1 dla tego tor.|\<Brak >|
+|Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kod, który jest generowany na podstawie tego toru.|\<Brak >|
+|Generuje Double pochodne|Jeśli `True`, zostaną wygenerowane klasy podstawowej i klasy częściowej (obsługuje dostosowywania przy użyciu zastąpień). Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Ma konstruktora niestandardowego|Jeśli `True`, konstruktora niestandardowego, które będą dostępne w kodzie źródłowym. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Modyfikator dziedziczenia|Opisuje typ dziedziczenia klasy kodu źródłowego, która jest generowany na podstawie tor (`none`, `abstract` lub `sealed`).|brak|
+|Tor podstawowy|Klasa bazowa tego toru.|(Brak)|
+|Nazwa|Nazwa tego toru.|Bieżąca nazwa|
+|Przestrzeń nazw|Przestrzeń nazw, która jest połączona z tego toru.|Bieżąca przestrzeń nazw|
+|Typ etykietki narzędzia|Jak jest zdefiniowany etykietki narzędzia (`fixed`, `variable`, lub `none`). Jeśli `fixed`, następnie wartość `Fixed Tooltip Text` właściwość jest używana; jeśli `variable`, a następnie etykietki narzędzia jest definiowana w kodzie niestandardowym.|\<Brak >|
+|Uwagi|Uwagi informacyjne, które są skojarzone z tego toru.|\<Brak >|
+|Wyrównanie|Wyrównanie w poziomie lub pionie.|W pionie|
+|Początkowa wysokość|Początkowa wysokość tego toru, w calach. Dotyczy tylko torów poziomych.|0|
+|Początkowa szerokość|Początkowa szerokość tego toru, w calach. Dotyczy tylko torów pionowych.|0|
+|Opisuje kolor tekstu|Jeśli `True`, użytkownik może ustawić kolor tor w wygenerowanym projektancie. Aby to ustawić, kliknij prawym przyciskiem myszy kształt toru, a następnie kliknij przycisk **Dodaj udostępniane**.|False|
+|Opis|Umożliwia dokumentowanie wygenerowanego projektanta.|\<Brak >|
+|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektancie do odwoływania się do tej klasy toru.|\<Brak >|
+|Stały tekst etykietki narzędzia|Tekst, który jest używany dla ustalonej etykietki narzędzia.|\<Brak >|
+|Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tego toru.|\<Brak >|
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be6f665d1f63966b3828868f4fb8fbf1cae002e9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: be88a76ce22dfd863e680fcc1a6794065ecaf76f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836882"
 ---
 # <a name="iperpropertybrowsing2getdisplaystring"></a>IPerPropertyBrowsing2::GetDisplayString
-Pobiera ciąg, aby wyświetlić typy, które nie są z założenia widoczny zwracanym tekście jest nazwą właściwości opisujące i mogą być wyświetlane w interfejsie użytkownika wywołującego.  
+Pobiera ciąg, aby wyświetlić typy, które nie są widoczne natury zwracanym tekście jest nazwą właściwości opisujące i mogą być wyświetlane w interfejsie użytkownika wywołującego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,13 +42,13 @@ HRESULT GetDisplayString(
  [in] Wyślij identyfikator właściwości, których nazwa wyświetlana jest wymagane.  
   
  `pBstr`  
- [out] Wskaźnik do `BSTR` zawierający nazwę wyświetlaną dla właściwości określonej przez `dispID`.  
+ [out] Wskaźnik do `BSTR` zawierający nazwę wyświetlaną dla właściwości identyfikowane przez `dispID`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zwykle `S_OK`.  
+ Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="remarks"></a>Uwagi  
- Zwracany ciąg nie jest dozwoloną wartością właściwości. Jest po prostu Wyświetl ciąg właściwości.  
+ Zwracany ciąg nie jest dozwoloną wartością właściwości. Jest po prostu wyświetlanie ciągów właściwości.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IPerPropertyBrowsing2 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)
+ [IPerPropertyBrowsing2, interfejs 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

@@ -27,12 +27,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2364fa5ed202f9821ab276fb5cfbb9346a4b258c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4d841456ab95d06a7b586f7a8566f8530acbb021
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298145"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897501"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Debuguj aplikacje wielowątkowe w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,16 +99,16 @@ Wątek jest sekwencją instrukcji, do których system operacyjny przydziela czas
  [Używanie punktów przerwania](../debugger/using-breakpoints.md)  
  -   Filtry punktów przerwania należy użyć, gdy chcesz umieścić punkt przerwania na jednym z wątków.  
   
--   Punkty śledzenia pozwalają na wykonywanie śledzenia programu bez przerywania. Może to być przydatne do badania problemów, takich jak zakleszczenia.  
+- Punkty śledzenia pozwalają na wykonywanie śledzenia programu bez przerywania. Może to być przydatne do badania problemów, takich jak zakleszczenia.  
   
- [Wątkowość](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
- Pojęcia wielowątkowości w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programowania, w tym przykładzie kodu.  
+  [Wątkowość](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
+  Pojęcia wielowątkowości w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programowania, w tym przykładzie kodu.  
   
- [Wielowątkowość w składnikach](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
- Jak używać wielowątkowości w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] składników.  
+  [Wielowątkowość w składnikach](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
+  Jak używać wielowątkowości w [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] składników.  
   
- [Obsługa wielowątkowości w przypadku starszego kodu (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
- Pojęcia wielowątkowości i przykładowy kod dla programistów C++ przy użyciu biblioteki MFC.  
+  [Obsługa wielowątkowości w przypadku starszego kodu (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
+  Pojęcia wielowątkowości i przykładowy kod dla programistów C++ przy użyciu biblioteki MFC.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie wątków i procesów](../debugger/debug-threads-and-processes.md)   

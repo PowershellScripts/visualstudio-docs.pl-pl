@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5864b3503b19e8a473f45e4167aad835181da50
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9957b0aaf81048c5040e3f7ff54f3fa9be742dc1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858566"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
-Określa, jakie informacje pobrać obiekt odwołania debug — informacje.  
+Określa, jakie informacje należy pobrać o obiektu odwołania debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -58,38 +58,38 @@ public enum enum_DEBUGREF_INFO_FLAGS {
   
 ## <a name="members"></a>Elementy członkowskie  
  DEBUGREF_INFO_NAME  
- Inicjowanie użycia `bstrName` pola w strukturze.  
+ Inicjowanie bądź użyj `bstrName` pole w strukturze.  
   
  DEBUGREF_INFO_TYPE  
- Inicjowanie użycia `bstrType` pola w strukturze.  
+ Inicjowanie bądź użyj `bstrType` pole w strukturze.  
   
  DEBUGREF_INFO_VALUE  
- Inicjowanie użycia `bstrValue` pola w strukturze.  
+ Inicjowanie bądź użyj `bstrValue` pole w strukturze.  
   
  DEBUGREF_INFO_ATTRIB  
- Inicjowanie użycia `dwAttrib` pola w strukturze.  
+ Inicjowanie bądź użyj `dwAttrib` pole w strukturze.  
   
  DEBUGREF_INFO_REFTYPE  
- Inicjowanie użycia `dwRefType` pola w strukturze.  
+ Inicjowanie bądź użyj `dwRefType` pole w strukturze.  
   
  DEBUGREF_INFO_REF  
- Inicjowanie użycia `pReference` pola w strukturze.  
+ Inicjowanie bądź użyj `pReference` pole w strukturze.  
   
  DEBUGREF_INFO_VALUE_AUTOEXPAND  
- Pole wartości powinien zawierać wartość rozwinięty automatycznie, jeśli jest dostępna dla tego typu obiektu.  
+ Pole wartości powinien zawierać wartość rozwinięte automatycznie, jeśli są dostępne dla tego typu obiektu.  
   
  DEBUGREF_INFO_NONE  
- Wskazuje, że ustawiono żadnych flag.  
+ Wskazuje, że nie flagi są ustawione.  
   
  DEBUGREF_INFO_ALL  
- Wskazuje maska flag.  
+ Określa maskę flag.  
   
 ## <a name="remarks"></a>Uwagi  
- Te flagi są przekazywane do [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) i [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) metod, aby określić, które pola [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktury mają być zainicjowany.  
+ Te flagi są przekazywane do [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) i [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) metod, aby określić które pola [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) struktury, które mają zostać zainicjowane.  
   
- Używany do `dwFields` członkiem `DEBUG_REFERENCE_INFO` struktury, aby wskazać pola, które są używane i ważne, gdy struktura jest zwracany.  
+ Używany do `dwFields` członkiem `DEBUG_REFERENCE_INFO` struktury, aby wskazać, pola, które są używane i ważne, gdy zwracany jest struktura.  
   
- Te wartości mogą być łączone z bitowego `OR`.  
+ Te wartości mogą być łączone przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

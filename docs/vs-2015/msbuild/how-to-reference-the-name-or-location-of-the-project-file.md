@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc4da4df18c2a214372ec6ea67865c10c507677e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8631d10d56a35f8cf4ef6024d087bf94ec89b9d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296013"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845735"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Porady: odwołanie do nazwy lub lokalizacji pliku projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ W pliku projektu bez konieczności tworzenia własnych właściwości, można u�
   
 #### <a name="to-use-the-msbuildprojectname-property"></a>Aby użyć MSBuildProjectName właściwość  
   
--   Odwoływać się do właściwości w pliku projektu przy użyciu notacji $ (), tak samo jak dowolnej właściwości. Na przykład:  
+- Odwoływać się do właściwości w pliku projektu przy użyciu notacji $ (), tak samo jak dowolnej właściwości. Na przykład:  
   
-    ```  
-    <CSC Sources = "@(CSFile)"   
-        OutputAssembly = "$(MSBuildProjectName).exe"/>  
-    </CSC>  
-    ```  
+  ```  
+  <CSC Sources = "@(CSFile)"   
+      OutputAssembly = "$(MSBuildProjectName).exe"/>  
+  </CSC>  
+  ```  
   
- Zaletą używania zastrzeżonych właściwości to, że wszelkie zmiany nazwy pliku projektu są włączane automatycznie. Przy następnym uruchomieniu, skompiluj projekt, plik wyjściowy będzie zawierał nową nazwę z żadnych dodatkowych czynności ze strony użytkownika.  
+  Zaletą używania zastrzeżonych właściwości to, że wszelkie zmiany nazwy pliku projektu są włączane automatycznie. Przy następnym uruchomieniu, skompiluj projekt, plik wyjściowy będzie zawierał nową nazwę z żadnych dodatkowych czynności ze strony użytkownika.  
   
 > [!NOTE]
 >  Właściwości zastrzeżone nie mogą zostać redefiniowane w pliku projektu.  

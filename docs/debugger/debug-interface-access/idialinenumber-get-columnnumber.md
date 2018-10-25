@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_columnNumber | Dokumentacja firmy Microsoft
+title: Idialinenumber::get_columnnumber — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e80b0aac64ec76504ef77b7b46ab6736a4cf6111
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e7c34c61b298f46fd10e15e31eb6fd38c65bb914
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460550"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839105"
 ---
 # <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
 Pobiera numer kolumny, w którym rozpoczyna się wyrażenia lub instrukcji.  
@@ -35,13 +35,13 @@ HRESULT get_columnNumber (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca numer kolumny, w którym rozpoczyna się wyrażenia lub instrukcji. Jeśli wartość wynosi zero, informacji o kolumnie nie jest obecny.  
+ [out] Zwraca numer kolumny, w którym rozpoczyna się wyrażenia lub instrukcji. Jeśli ta wartość wynosi zero, informacje o kolumnach nie jest obecny.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wartość kolumny zwracane przez tę metodę jest Przesunięcie bajtów do wiersza do pierwszego znaku instrukcją w wierszu.  
+ Wartość kolumny zwracane przez tę metodę jest bajt przesunięcie wiersza do pierwszego znaku instrukcji w tym wierszu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

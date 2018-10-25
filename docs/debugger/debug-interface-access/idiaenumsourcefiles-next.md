@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSourceFiles::Next | Dokumentacja firmy Microsoft
+title: Idiaenumsourcefiles::Next — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca815309009ee8e43c17fb8a579c055e75c684e0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fef2d096ca522a6f6f2a05a081fb5a5a494e168c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457527"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819931"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 Pobiera określoną liczbę plików źródłowych w kolejności wyliczenia.  
@@ -36,18 +36,18 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parametry  
  celt  
- [in] Liczba pliki źródłowe do pobrania modułu wyliczającego.  
+ [in] Liczba plików źródłowych w modułu wyliczającego do pobrania.  
   
  rgelt  
- [out] Tablica, która ma być wypełnione przy użyciu [idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md) obiekty reprezentujące pliki źródłowe żądany.  
+ [out] Tablica, która ma zostać wypełniony przy użyciu [idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md) obiektami, które reprezentują pliki źródłowe żądaną.  
   
  pceltFetched  
- [out] Zwraca liczbę plików źródłowych w pobranych modułu wyliczającego.  
+ [out] Zwraca liczbę plików źródłowych w pobrano modułu wyliczającego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma żadnych więcej plików źródła. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma żadnych więcej plików źródłowych. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenumsourcefiles —](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [Idiasession::findlinesbylinenum —](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

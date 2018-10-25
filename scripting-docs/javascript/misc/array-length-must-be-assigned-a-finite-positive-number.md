@@ -1,5 +1,5 @@
 ---
-title: Długość tablicy musi być przypisany dodatnią liczbę całkowitą | Dokumentacja firmy Microsoft
+title: Długość tablicy musi mieć przypisaną dodatnią liczbę całkowitą | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,18 +21,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 63a9d714173334192028b9096de41968befa85ef
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788884"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825507"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Długość tablicy musi być mieć przypisaną dodatnią liczbę całkowitą
-Podczas ustawiania **długość** właściwości istniejącego **tablicy** , należy określić obiekt długość tablicy, która nie jest liczbą dodatnią lub zerem. Ten błąd występuje, gdy przypisanie wartości do **długość** właściwość `Array` obiekt, który ma wartość ujemną lub niebędące liczbą (`NaN`). Należy pamiętać, że [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] powoduje automatyczną konwersję liczbami ułamkowymi do całego liczb całkowitych.  
+Podczas ustawiania **długość** właściwości istniejącego **tablicy** obiektu, określona długość tablicy, która nie jest liczbą dodatnią lub zerem. Ten błąd występuje podczas przypisywania wartości do **długość** właściwość `Array` obiekt, który jest ujemna lub nie jest liczbą (`NaN`). Należy pamiętać, że [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] automatycznie konwertuje cyfr ułamkowych do całego liczb całkowitych.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Przypisz dodatnią liczbę całkowitą do właściwości length. Nie ma żadnego górnego limitu rozmiaru tablicy, innego niż wartość maksymalna liczba całkowita (około miliarda 4). W poniższym przykładzie pokazano prawidłowy sposób, aby ustawić **długość** właściwość **tablicy** obiektu.  
+-   Dodatnia liczba całkowita należy przypisać do właściwości długości. Nie ma żadnego górnego limitu rozmiaru tablicy innej niż wartość maksymalna liczba całkowita (około 4 miliardów). Poniższy przykład przedstawia właściwy sposób można ustawić **długość** właściwość **tablicy** obiektu.  
   
     ```JavaScript  
     var my_array = new Array();  

@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e2dd3a45092c4a1a638fe6316df0dde36eb0ceb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82f72dba6b40f5b09ccc71007eb577c19cf7358e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299419"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827740"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Korzystanie z atrybutu DebuggerDisplay
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,13 +76,13 @@ csc /t:library autoexp.cs
   
  Używanie wyrażeń w DebuggerDisplay może prowadzić do następujących problemów:  
   
--   Ocenianie wyrażenia jest najbardziej kosztownych operacji w debugerze i wyrażenie jest obliczane na każdym razem, gdy jest on wyświetlany. Może to spowodować problemy z wydajnością w krokowe wykonywanie kodu. Na przykład wyrażenie złożone, który służy do wyświetlania wartości w kolekcji lub na liście może być bardzo wolno po dużą liczbę elementów.  
+- Ocenianie wyrażenia jest najbardziej kosztownych operacji w debugerze i wyrażenie jest obliczane na każdym razem, gdy jest on wyświetlany. Może to spowodować problemy z wydajnością w krokowe wykonywanie kodu. Na przykład wyrażenie złożone, który służy do wyświetlania wartości w kolekcji lub na liście może być bardzo wolno po dużą liczbę elementów.  
   
--   Wyrażenia są obliczane przez ewaluatora wyrażeń języka bieżącej ramki stosu a nie przez ewaluatora języka, w którym został zapisany wyrażenia. Może to spowodować nieprzewidywalne skutki, gdy języki są różne.  
+- Wyrażenia są obliczane przez ewaluatora wyrażeń języka bieżącej ramki stosu a nie przez ewaluatora języka, w którym został zapisany wyrażenia. Może to spowodować nieprzewidywalne skutki, gdy języki są różne.  
   
--   Obliczenia wyrażenia można zmienić stanu aplikacji. Na przykład wyrażenie, które ustawia wartości właściwości mutuje wartość właściwości wykonywanie kodu.  
+- Obliczenia wyrażenia można zmienić stanu aplikacji. Na przykład wyrażenie, które ustawia wartości właściwości mutuje wartość właściwości wykonywanie kodu.  
   
- Jednym ze sposobów, aby ograniczyć możliwe problemy obliczania wyrażenia jest utworzenie właściwości prywatnej, który wykonuje operację i zwraca ciąg. Atrybut DebuggerDisplay następnie wyświetlić wartość tej właściwości prywatnej. Poniższy przykład implementuje tego wzorca:  
+  Jednym ze sposobów, aby ograniczyć możliwe problemy obliczania wyrażenia jest utworzenie właściwości prywatnej, który wykonuje operację i zwraca ciąg. Atrybut DebuggerDisplay następnie wyświetlić wartość tej właściwości prywatnej. Poniższy przykład implementuje tego wzorca:  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

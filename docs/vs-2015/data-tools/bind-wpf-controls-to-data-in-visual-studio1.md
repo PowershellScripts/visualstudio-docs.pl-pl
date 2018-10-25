@@ -25,12 +25,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c71181a939ae91986ed31e2518456002f5bb417c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3852a02015ba175b49a8e94adf8991003707a497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237019"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914687"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Powiązywanie kontrolek WPF z danymi w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,26 +68,26 @@ Można wyświetlić dane użytkownikom aplikacji przez powiązanie danych z [!IN
 ### <a name="datasets"></a>Zestawy danych  
  Podczas przeciągania tabeli lub kolumny z **źródeł danych** okna Projektanta [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] wykonujący następujące czynności:  
   
--   Dodaje zestaw danych i nową <xref:System.Windows.Data.CollectionViewSource> do zasobów kontenera, do którego został przeciągnięty element. <xref:System.Windows.Data.CollectionViewSource> Jest obiektem, który może służyć do nawigowania i wyświetlania danych w zestawie danych.  
+- Dodaje zestaw danych i nową <xref:System.Windows.Data.CollectionViewSource> do zasobów kontenera, do którego został przeciągnięty element. <xref:System.Windows.Data.CollectionViewSource> Jest obiektem, który może służyć do nawigowania i wyświetlania danych w zestawie danych.  
   
--   Tworzy wiązania danych dla formantu. Jeśli przeciągniesz element do istniejącego formantu w projektancie, XAML powiąże formant z elementem. Jeśli przeciągniesz element do kontenera, XAML utworzy formant, który został wybrany dla przeciąganego elementu i powiąże formant z elementem. Formant zostanie utworzony wewnątrz nowego <xref:System.Windows.Controls.Grid>.  
+- Tworzy wiązania danych dla formantu. Jeśli przeciągniesz element do istniejącego formantu w projektancie, XAML powiąże formant z elementem. Jeśli przeciągniesz element do kontenera, XAML utworzy formant, który został wybrany dla przeciąganego elementu i powiąże formant z elementem. Formant zostanie utworzony wewnątrz nowego <xref:System.Windows.Controls.Grid>.  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sprawia, że następujące zmiany w pliku związanym z kodem:  
+  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sprawia, że następujące zmiany w pliku związanym z kodem:  
   
--   Tworzy <xref:System.Windows.FrameworkElement.Loaded> program obsługi zdarzeń dla [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] element, który zawiera formant. Program obsługi zdarzeń wypełnia tabelę z danymi, pobiera <xref:System.Windows.Data.CollectionViewSource> z kontenera zasobów, a następnie sprawia, że pierwszy element danych jako bieżący. Jeśli <xref:System.Windows.FrameworkElement.Loaded> istnieje już program obsługi zdarzeń, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dodaje ten kod do istniejącego programu obsługi zdarzeń.  
+- Tworzy <xref:System.Windows.FrameworkElement.Loaded> program obsługi zdarzeń dla [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] element, który zawiera formant. Program obsługi zdarzeń wypełnia tabelę z danymi, pobiera <xref:System.Windows.Data.CollectionViewSource> z kontenera zasobów, a następnie sprawia, że pierwszy element danych jako bieżący. Jeśli <xref:System.Windows.FrameworkElement.Loaded> istnieje już program obsługi zdarzeń, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dodaje ten kod do istniejącego programu obsługi zdarzeń.  
   
 ### <a name="entity-data-models"></a>Jednostki danych modeli  
  Podczas przeciągania jednostki lub właściwości jednostki z **źródeł danych** okna Projektanta [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] wykonujący następujące czynności:  
   
--   Dodaje nowy <xref:System.Windows.Data.CollectionViewSource> do zasobów kontenera, do którego został przeciągnięty element. <xref:System.Windows.Data.CollectionViewSource> Jest obiektem, który może służyć do nawigowania i wyświetlić dane w jednostce.  
+- Dodaje nowy <xref:System.Windows.Data.CollectionViewSource> do zasobów kontenera, do którego został przeciągnięty element. <xref:System.Windows.Data.CollectionViewSource> Jest obiektem, który może służyć do nawigowania i wyświetlić dane w jednostce.  
   
--   Tworzy wiązania danych dla formantu. Jeśli przeciągniesz element do istniejącego formantu w Projektancie [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] powiąże formant z elementem. Jeśli przeciągniesz element do kontenera, [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] utworzy formant, który został wybrany dla przeciąganego elementu i powiąże formant z elementem. Formant zostanie utworzony wewnątrz nowego <xref:System.Windows.Controls.Grid>.  
+- Tworzy wiązania danych dla formantu. Jeśli przeciągniesz element do istniejącego formantu w Projektancie [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] powiąże formant z elementem. Jeśli przeciągniesz element do kontenera, [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] utworzy formant, który został wybrany dla przeciąganego elementu i powiąże formant z elementem. Formant zostanie utworzony wewnątrz nowego <xref:System.Windows.Controls.Grid>.  
   
- Visual Studio wprowadza następujące zmiany w pliku powiązanym z kodem:  
+  Visual Studio wprowadza następujące zmiany w pliku powiązanym z kodem:  
   
--   Dodaje nową metodę, która zwraca kwerendy dla elementu, który został przeciągnięty do projektanta (lub elementu zawierającego właściwość, która została przeciągnięta do projektanta). Nowa metoda ma nazwę Get*EntityName*zapytania, gdzie *EntityName* jest nazwą obiektu.  
+- Dodaje nową metodę, która zwraca kwerendy dla elementu, który został przeciągnięty do projektanta (lub elementu zawierającego właściwość, która została przeciągnięta do projektanta). Nowa metoda ma nazwę Get*EntityName*zapytania, gdzie *EntityName* jest nazwą obiektu.  
   
--   Tworzy <xref:System.Windows.FrameworkElement.Loaded> program obsługi zdarzeń dla [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] element, który zawiera formant. Program obsługi zdarzeń wywołuje Get*EntityName*metody w celu wypełnienia elementu danymi, pobiera zapytania <xref:System.Windows.Data.CollectionViewSource> z kontenera zasobów, a następnie sprawia, że pierwszy element danych jako bieżący. Jeśli <xref:System.Windows.FrameworkElement.Loaded> istnieje już program obsługi zdarzeń, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dodaje ten kod do istniejącego programu obsługi zdarzeń.  
+- Tworzy <xref:System.Windows.FrameworkElement.Loaded> program obsługi zdarzeń dla [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] element, który zawiera formant. Program obsługi zdarzeń wywołuje Get*EntityName*metody w celu wypełnienia elementu danymi, pobiera zapytania <xref:System.Windows.Data.CollectionViewSource> z kontenera zasobów, a następnie sprawia, że pierwszy element danych jako bieżący. Jeśli <xref:System.Windows.FrameworkElement.Loaded> istnieje już program obsługi zdarzeń, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dodaje ten kod do istniejącego programu obsługi zdarzeń.  
   
 ### <a name="services"></a>Usługi  
  Podczas przeciągania obiektu usługi lub właściwości z **źródeł danych** okna Projektanta [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] tworzący formant powiązany z danymi (lub wiąże istniejący formant z obiektem lub właściwością). Jednak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nie generuje kodu, który wypełnia obiekt usługi serwera proxy danymi. Musisz napisać ten kod samodzielnie. Na przykład, który pokazuje, jak to zrobić, zobacz [WPF powiązać formanty do usługi danych WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).  

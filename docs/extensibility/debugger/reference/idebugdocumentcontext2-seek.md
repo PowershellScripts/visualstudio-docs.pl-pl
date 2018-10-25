@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70ba99005bfe64782bcbaf655e659ae015a6d5c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41db3997ef078976a9e419e014ae9717d2d3d019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873542"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
-Przenosi kontekstu dokumentu przez daną liczbę instrukcji lub wierszy.  
+Przenosi kontekstu dokumentu o podanej liczbie wierszy lub instrukcji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,10 +46,10 @@ int Seek(
  [in] Liczba instrukcji lub wiersze, aby przenieść w górę, w zależności od kontekstu dokumentu.  
   
  `ppDocContext`  
- [out] Zwraca nowy [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) obiektu o nowej pozycji.  
+ [out] Zwraca nowy [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) obiektu za pomocą nowej pozycji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

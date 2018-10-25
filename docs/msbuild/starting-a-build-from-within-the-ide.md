@@ -12,26 +12,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8850671c3c6e7fa93d4734c47c8052451ad74b4f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 32a2923342fd62428095babdaecc5bd9c5cac06e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154453"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850064"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Uruchom kompilację z poziomu środowiska IDE
 Niestandardowe systemy projektu muszą używać <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> do uruchomienia kompilacji. W tym artykule opisano przyczyny tego wymagania i opisano procedurę.  
-  
+
 ## <a name="parallel-builds-and-threads"></a>Kompilacje równoległe i wątki  
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Umożliwia równoległe kompilacje, które wymagają mediacji dotyczącej dostępu do wspólnych zasobów. Systemy projektu mogą kompilować asynchronicznie, ale takie systemy nie mogą wywołać funkcji kompilacji z wywołania tworzy kopię jest dostarczane do Menadżera kompilacji.  
-  
+
  Jeśli system projektu modyfikuje zmienne środowiskowe, jego musi ustawić NodeAffinity kompilacji outofproc. Wymaganie to oznacza, że nie można używać obiektów hosta, ponieważ wymagają one węzła w proc.  
-  
+
 ## <a name="use-ivsbuildmanageraccessor"></a>Użyj IVSBuildManagerAccessor  
  Poniższy kod przedstawia metodę, którą system projektu może użyć do uruchomienia kompilacji:  
-  
+
 ```csharp
-  
+
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  
     // Get the accessor from the IServiceProvider interface for the   
@@ -118,5 +118,4 @@ public bool Build(Project project, bool isDesignTimeBuild)
          }  
      }  
 }  
-  
 ```

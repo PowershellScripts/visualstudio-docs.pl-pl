@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c589e58fb1e5b6a63706889de666d4e622f0ceb5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180246"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837142"
 ---
 # <a name="edit-load-test-scenarios"></a>Edytowanie scenariuszy testu obciążenia
 
@@ -46,7 +46,7 @@ Scenariusz ma kilka właściwości, które można edytować za pomocą **edytora
 ## <a name="tasks"></a>Zadania
 
 |Zadania|Skojarzone tematy|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Dodaj sztuczne z reakcji człowieka przerw w tym scenariuszu:** czasy reakcji służą do symulowania zachowań ludzkich, który powoduje, że osoby do interakcji z witryny sieci Web. Czasy reakcji występują między żądaniami w teście wydajności sieci web i między poszczególnymi iteracjami testu w scenariuszu testu obciążenia. Użycie czasów reakcji w teście obciążeniowym może być przydatne przy tworzeniu bardziej dokładnych symulacji obciążenia.|-   [Edytowanie czasów reakcji w celu symulowania witryny sieci Web symulujący opóźnienia wynikające z](../test/edit-think-times-in-load-test-scenarios.md)|
 |**Określ liczbę użytkowników wirtualnych dla danego scenariusza:** można skonfigurować właściwości wzorca obciążenia, aby określić, jak symulowane obciążenie użytkownika jest korygowane w trakcie testu obciążenia. Możesz uzyskać trzy wbudowane wzorce ładowania: stałe, etapu i ukierunkowane na cel. Możesz wybrać wzorzec obciążenia i dostosować właściwości do odpowiednich poziomów dla swoich celów testu obciążenia.|-   [Edytowanie wzorców obciążenia w celu modelu aktywności wirtualnych użytkowników](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**Konfiguruj prawdopodobieństwo, że użytkownik wirtualny uruchomi testu w scenariuszu:** możesz użyć testu mieszanego, który określa prawdopodobieństwo, że użytkownik wirtualny uruchomi dany test w scenariuszu testu obciążenia. Dzięki temu można bardziej realistycznie symulowanie obciążenia. Zamiast tylko jedego przepływu pracy za pośrednictwem aplikacji, może mieć wiele przepływów pracy, który jest większym zbliżeniem tego jak użytkownicy końcowi są wzajemne powiązani ze swoimi aplikacjami.|-   [Edytowanie modeli testów mieszanych](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|

@@ -13,12 +13,12 @@ ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c64ed14a412902679d96a45c45d06438d57fcc64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a8371bf4fafbaf81fe63b638018789587165a89
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870877"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Wskazówki dotyczące interfejsu użytkownika w programie Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Visual Studio wskazówki dotyczące interfejsu użytkownika są przeznaczone dla
   
  Tworzenie oprogramowania dla średnich produktów firmy Microsoft, informacje o wskazówki udostępniane przez Windows. Istnieją trzy ważne zasoby, których trzeba pamiętać:  
   
--   [Windows User Experience Interaction Guidelines](https://msdn.microsoft.com/library/aa511258.aspx). Te wytyczne są jego podstawy for Windows desktop zachowania i wyglądu.  
+- [Windows User Experience Interaction Guidelines](https://msdn.microsoft.com/library/aa511258.aspx). Te wytyczne są jego podstawy for Windows desktop zachowania i wyglądu.  
   
--   Te wytyczne programu Visual Studio, które znajdują się wytyczne specyficzne dla platformy, zastępujące ogólne wytyczne Windows wszędzie, gdzie jest to odpowiednie dla naszego środowiska.  
+- Te wytyczne programu Visual Studio, które znajdują się wytyczne specyficzne dla platformy, zastępujące ogólne wytyczne Windows wszędzie, gdzie jest to odpowiednie dla naszego środowiska.  
   
--   [Wzorce i wskazówki dotyczące aplikacji Windows Store](https://dev.windows.com/design/interaction-ux) są odwołaniem pojawiających się wzorców, które mogą być używane w niektórych przypadkach, w programie Visual Studio.  
+- [Wzorce i wskazówki dotyczące aplikacji Windows Store](https://dev.windows.com/design/interaction-ux) są odwołaniem pojawiających się wzorców, które mogą być używane w niektórych przypadkach, w programie Visual Studio.  
   
- Te wytyczne podają informacje o tym, co należy zrobić podczas projektowania dla programu Visual Studio, a w niektórych przypadkach informacje na temat jak to zrobić również jest dołączony. Aby uzyskać bardziej szczegółowe informacje o implementacji i Dowiedz się więcej o określonych interfejsów programowania aplikacji (API), które umożliwiają pisanie kodu dla rozwiązania, które integrują się w programie Visual Studio zintegrowane środowisko projektowe (IDE), należy użyć [Programu visual Studio Software Development Kit (SDK)](https://msdn.microsoft.com/library/bb166441.aspx).
+  Te wytyczne podają informacje o tym, co należy zrobić podczas projektowania dla programu Visual Studio, a w niektórych przypadkach informacje na temat jak to zrobić również jest dołączony. Aby uzyskać bardziej szczegółowe informacje o implementacji i Dowiedz się więcej o określonych interfejsów programowania aplikacji (API), które umożliwiają pisanie kodu dla rozwiązania, które integrują się w programie Visual Studio zintegrowane środowisko projektowe (IDE), należy użyć [Programu visual Studio Software Development Kit (SDK)](https://msdn.microsoft.com/library/bb166441.aspx).
 

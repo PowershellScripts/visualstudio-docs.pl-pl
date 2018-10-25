@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb443816db82d6003536b36783fd6555ef45db24
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 751b4dfc641b017a4dc3f47f90b95e8447a2b1c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840431"
 ---
 # <a name="nativeaddress"></a>NATIVE_ADDRESS
 Ta struktura reprezentuje adresu natywnego.  
@@ -41,10 +41,10 @@ public struct NATIVE_ADDRESS {
   
 ## <a name="terms"></a>Warunki  
  Nieznany  
- Natywnego adresu (znaczenie to zależy od środowiska uruchomieniowego i systemu operacyjnego).  
+ Natywnego adresu (znaczenie tego zależy od środowiska uruchomieniowego i systemu operacyjnego).  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest częścią Unii w [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struktury, kiedy `dwKind` pole `DEBUG_ADDRESS_UNION` ustawiono struktury `ADDRESS_KIND_NATIVE` (wartość z zakresu od [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Wyliczenie).  
+ Ta struktura jest częścią Unii w [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struktury, kiedy `dwKind` pole `DEBUG_ADDRESS_UNION` struktury jest ustawiona na `ADDRESS_KIND_NATIVE` (wartość z zakresu od [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Wyliczenie).  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  
@@ -54,5 +54,5 @@ public struct NATIVE_ADDRESS {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

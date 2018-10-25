@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści Office 365 dla deweloperów, 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9c77062873704f6e92d04aa4e949f1db3c1c71f7
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: d75c64c3d8902432adde846badabe18a820a16b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073977"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858345"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Korzyści z subskrypcji dewelopera Office 365 w ramach subskrypcji programu Visual Studio
 
@@ -29,32 +29,32 @@ Subskrybenci z wybranych subskrypcji programu Visual Studio Enterprise uzyskują
 3. Po zakończeniu procesu logowania powinna zostać wyświetlona strona korzyści z subskrypcji.  Jeśli masz więcej niż jedną subskrypcję, możesz przełączać się między subskrypcjami, klikając strzałkę listy rozwijanej w prawym górnym rogu pod wstążką czarny.  Subskrypcja dewelopera usługi Office 365 kafelka korzyści znajduje się w kategorii narzędzi.  Użyj strzałkę po prawej stronie wiersza kafelków, aby przewiń do kafelka Office jest widoczna.
 
 4. Kliknij pozycję **Aktywuj** link w dolnej części kafelka korzyści.   
-    > [!div class="mx-imgBorder"]
-    > ![Kafelek korzyści dla deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-tile.png)
+   > [!div class="mx-imgBorder"]
+   > ![Kafelek korzyści dla deweloperów usługi Office 365](_img/vs-office-dev/vs-office-dev-tile.png)
 
-5.  Następnym krokiem jest, aby utworzyć konto.  Pojawi się swoją nazwę i adres e-mail logowania.  
-- Wybierz swój kraj.
-- Wprowadź nazwę swojej firmy. 
-- Kliknij pierwsze pole wyboru, aby zaakceptować warunki i postanowienia. 
-- Kliknij przycisk **Dalej**.
-    > [!div class="mx-imgBorder"]
-    > ![Zarejestruj się deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-signup.png)
-    
-6.  Wskazywać obszary zainteresowania i preferencjach klienta, a następnie kliknij przycisk **aktywować subskrypcję**.   
-    > [!div class="mx-imgBorder"]
-    > ![Preferencje deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-preferences.png)
+5. Następnym krokiem jest, aby utworzyć konto.  Pojawi się swoją nazwę i adres e-mail logowania.  
+6. Wybierz swój kraj.
+7. Wprowadź nazwę swojej firmy. 
+8. Kliknij pierwsze pole wyboru, aby zaakceptować warunki i postanowienia. 
+9. Kliknij przycisk **Dalej**.
+   > [!div class="mx-imgBorder"]
+   > ![Zarejestruj się deweloperów usługi Office 365](_img/vs-office-dev/vs-office-dev-signup.png)
 
-7.  Następnie będzie Sprawdź swój kraj/region i Utwórz nazwę użytkownika, domenę i hasło.
+10. Wskazywać obszary zainteresowania i preferencjach klienta, a następnie kliknij przycisk **aktywować subskrypcję**.   
     > [!div class="mx-imgBorder"]
-    > ![Nazwa użytkownika deweloperów usługi Office 365 i domeny](_img\vs-office-dev\vs-office-dev-domain.png)
+    > ![Preferencje deweloperów usługi Office 365](_img/vs-office-dev/vs-office-dev-preferences.png)
 
-8.  Wprowadź numer telefonu, a następnie kliknij przycisk **Wyślij kod**.  Ułatwia to nam upewnić się, że konto jest tworzone przez prawdziwa osoba. 
+11. Następnie będzie Sprawdź swój kraj/region i Utwórz nazwę użytkownika, domenę i hasło.
     > [!div class="mx-imgBorder"]
-    > ![Weryfikacja telefoniczna deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-send-code.png)
+    > ![Nazwa użytkownika deweloperów usługi Office 365 i domeny](_img/vs-office-dev/vs-office-dev-domain.png)
 
-9.  Wprowadź kod wyświetlany i kliknij przycisk **Konfigurowanie**.
+12. Wprowadź numer telefonu, a następnie kliknij przycisk **Wyślij kod**.  Ułatwia to nam upewnić się, że konto jest tworzone przez prawdziwa osoba. 
     > [!div class="mx-imgBorder"]
-    > ![Sprawdzanie poprawności kodu deweloperów usługi Office 365](_img\vs-office-dev\vs-office-dev-setup.png)
+    > ![Weryfikacja telefoniczna deweloperów usługi Office 365](_img/vs-office-dev/vs-office-dev-send-code.png)
+
+13. Wprowadź kod wyświetlany i kliknij przycisk **Konfigurowanie**.
+    > [!div class="mx-imgBorder"]
+    > ![Sprawdzanie poprawności kodu deweloperów usługi Office 365](_img/vs-office-dev/vs-office-dev-setup.png)
 
 To wszystko!  Zostanie wyświetlona strona wyświetlania informacji dostosowane do potrzeb użytkownika.  
 
@@ -65,6 +65,7 @@ Aby dowiedzieć się więcej na temat subskrypcji dewelopera Office 365, zapozna
 
 
 ## <a name="eligibility"></a>Uprawnienie
+
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Uwzględnione      |  Tak          |

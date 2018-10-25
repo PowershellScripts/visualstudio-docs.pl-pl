@@ -20,12 +20,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11a3a39b1b2f4d2d00f973cbaf38620641e45ca6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31d5ced897badded98aa82b2245e8f210517afd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845305"
 ---
 # <a name="code-snippet-picker"></a>Selektor wstawek kodu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49213326"
   
  Procedury, aby wyświetlić **selektor wstawek kodu** zależy od języka.  
   
--   [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] -Kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze kodu, aby wyświetlić menu skrótów i wybierz **Wstaw fragment kodu**.  
+- [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] -Kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze kodu, aby wyświetlić menu skrótów i wybierz **Wstaw fragment kodu**.  
   
--   [!INCLUDE[csprcs](../../includes/csprcs-md.md)] -Kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze kodu, aby wyświetlić menu skrótów, a następnie kliknij przycisk **Wstaw fragment kodu** lub **Otocz**.  
+- [!INCLUDE[csprcs](../../includes/csprcs-md.md)] -Kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze kodu, aby wyświetlić menu skrótów, a następnie kliknij przycisk **Wstaw fragment kodu** lub **Otocz**.  
   
--   [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] **Selektor wstawek kodu** nie jest dostępna.  
+- [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] **Selektor wstawek kodu** nie jest dostępna.  
   
--   Visual F # - **selektor wstawek kodu** nie jest dostępna.  
+- Visual F # - **selektor wstawek kodu** nie jest dostępna.  
   
--   [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] — Kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze kodu, aby wyświetlić menu skrótów, a następnie kliknij przycisk **Wstaw fragment kodu** lub **Otocz**.  
+- [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] — Kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze kodu, aby wyświetlić menu skrótów, a następnie kliknij przycisk **Wstaw fragment kodu** lub **Otocz**.  
   
--   XML - kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze kodu wyświetla menu skrótów, a następnie kliknij przycisk **Wstaw fragment kodu** lub **Otocz**.  
+- XML - kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze kodu wyświetla menu skrótów, a następnie kliknij przycisk **Wstaw fragment kodu** lub **Otocz**.  
   
--   HTML — kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze kodu wyświetla menu skrótów, a następnie kliknij przycisk **Wstaw fragment kodu** lub **Otocz**.  
+- HTML — kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze kodu wyświetla menu skrótów, a następnie kliknij przycisk **Wstaw fragment kodu** lub **Otocz**.  
   
--   SQL — kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze kodu wyświetla menu skrótów, a następnie kliknij przycisk **Wstaw fragment kodu**.  
+- SQL — kliknij prawym przyciskiem myszy w dowolnym miejscu w edytorze kodu wyświetla menu skrótów, a następnie kliknij przycisk **Wstaw fragment kodu**.  
   
- W większości języków programowania Visual Studio, można użyć **Menedżera wstawek kodu** foldery, aby dodać **listy folderów** , **selektor wstawek kodu** skanowania pod kątem XML pliki fragmentu kodu. Można również utworzyć własne fragmenty kodu, aby dodać do listy. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie wstawek kodu](../../ide/walkthrough-creating-a-code-snippet.md).  
+  W większości języków programowania Visual Studio, można użyć **Menedżera wstawek kodu** foldery, aby dodać **listy folderów** , **selektor wstawek kodu** skanowania pod kątem XML pliki fragmentu kodu. Można również utworzyć własne fragmenty kodu, aby dodać do listy. Aby uzyskać więcej informacji, zobacz [wskazówki: tworzenie wstawek kodu](../../ide/walkthrough-creating-a-code-snippet.md).  
   
 ## <a name="uielement-list"></a>Lista elementów UI  
  Nazwa elementu  

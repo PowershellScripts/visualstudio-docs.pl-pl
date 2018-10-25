@@ -13,12 +13,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb915f7d17070d78e5749834c325bfee4e8a6879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56f1afba0db8ba213a601835ca7a8df39d56f171
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224045"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860763"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Typowe wzorce kontrolki dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -218,23 +218,23 @@ ms.locfileid: "49224045"
   
 ##### <a name="visual-style"></a>Styl wizualny  
   
--   W oknie, znaki wodne powinien wyśrodkowane w poziomie.  
+- W oknie, znaki wodne powinien wyśrodkowane w poziomie.  
   
--   Znaki wodne powinna być być wyrównane, nie wyrównane do lewej.  
+- Znaki wodne powinna być być wyrównane, nie wyrównane do lewej.  
   
--   Znaki wodne, może być w pionie wyśrodkowany lub umieszczony w pobliżu górnej części obszaru. Jeśli znajduje się w górnej części obszaru, musi istnieć wystarczającej ilości miejsca powyżej, aby znak wodny detaliczny wyróżnia się.  
+- Znaki wodne, może być w pionie wyśrodkowany lub umieszczony w pobliżu górnej części obszaru. Jeśli znajduje się w górnej części obszaru, musi istnieć wystarczającej ilości miejsca powyżej, aby znak wodny detaliczny wyróżnia się.  
   
--   Użyj `Environment.GrayText` czcionka środowiska tokenu i standard kolorów. Hiperlinki należy używać tokenów hiperłącze standardowy udostępniony: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, i `Environment.PanelHyperlinkDisabled`.  
+- Użyj `Environment.GrayText` czcionka środowiska tokenu i standard kolorów. Hiperlinki należy używać tokenów hiperłącze standardowy udostępniony: `Environment.PanelHyperlink`, `Environment.PanelHyperlinkHover`, `Environment.PanelHyperlinkPressed`, i `Environment.PanelHyperlinkDisabled`.  
   
--   Nie można wybrać ze znaków wodnych w tle  
+- Nie można wybrać ze znaków wodnych w tle  
   
--   Jeśli to możliwe zawierać linki w znaku wodnego, aby pomóc użytkownikowi wprowadzenie.  
+- Jeśli to możliwe zawierać linki w znaku wodnego, aby pomóc użytkownikowi wprowadzenie.  
   
- ![Znak wodny tekstu w oknie projektanta](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
+  ![Znak wodny tekstu w oknie projektanta](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
   
- ![Znak wodny tekstu w oknie narzędzia](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
+  ![Znak wodny tekstu w oknie narzędzia](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
   
- **Przykłady tekstu znaku wodnego w programie Visual Studio**  
+  **Przykłady tekstu znaku wodnego w programie Visual Studio**  
   
 ##  <a name="BKMK_ButtonsAndHyperlinks"></a> Przyciski i hiperłączy  
   
@@ -246,25 +246,25 @@ ms.locfileid: "49224045"
   
  Kiedy należy używać przycisków poleceń:  
   
--   Podstawowe polecenia  
+- Podstawowe polecenia  
   
--   Wyświetlanie systemu windows używane do zbierania danych wejściowych i zapewnianiu, nawet jeśli leżą one dodatkowych poleceń  
+- Wyświetlanie systemu windows używane do zbierania danych wejściowych i zapewnianiu, nawet jeśli leżą one dodatkowych poleceń  
   
--   Akcje destrukcyjne lub nieodwracalne  
+- Akcje destrukcyjne lub nieodwracalne  
   
--   Przyciski zobowiązania w kreatorach i oknach przepływów stron  
+- Przyciski zobowiązania w kreatorach i oknach przepływów stron  
   
- Należy unikać przycisków poleceń w oknach narzędzi lub jeśli potrzebujesz więcej niż dwa wyrazy dla etykiety. Linki mogą mieć dłuższy etykiety.  
+  Należy unikać przycisków poleceń w oknach narzędzi lub jeśli potrzebujesz więcej niż dwa wyrazy dla etykiety. Linki mogą mieć dłuższy etykiety.  
   
- Kiedy należy używać linków:  
+  Kiedy należy używać linków:  
   
--   Nawigacja do innego okna dokumentu lub strony sieci web  
+- Nawigacja do innego okna dokumentu lub strony sieci web  
   
--   Sytuacjach wymagających dłuższego etykiety lub krótkie zdanie opisujący przeznaczenie działania  
+- Sytuacjach wymagających dłuższego etykiety lub krótkie zdanie opisujący przeznaczenie działania  
   
--   Ścisła miejsca do magazynowania, którym przycisk będzie przeciąży interfejsu użytkownika, pod warunkiem, że akcja nie jest destrukcyjne lub nieodwracalne  
+- Ścisła miejsca do magazynowania, którym przycisk będzie przeciąży interfejsu użytkownika, pod warunkiem, że akcja nie jest destrukcyjne lub nieodwracalne  
   
--   Cofnięcia myślą dodatkowych poleceń w sytuacjach, w których istnieje wiele poleceń  
+- Cofnięcia myślą dodatkowych poleceń w sytuacjach, w których istnieje wiele poleceń  
   
 #### <a name="examples"></a>Przykłady  
  ![Pasek informacyjny polecenia łącza następującego komunikatu o stanie](../../extensibility/ux-guidelines/media/070703-01-commandlinkinfobar.png "070703 01_CommandLinkInfobar")  
@@ -307,19 +307,19 @@ ms.locfileid: "49224045"
   
  Kiedy należy używać tylko do wielokropka krótki przycisk:  
   
--   Jeśli istnieje więcej niż jednego długiego **[Przeglądaj …]**  przycisku w oknie dialogowym, takie jak kiedy kilka pól umożliwiają przeglądanie. Użyj krótkiej **[...]**  przycisku dla każdego uniknąć pomylenia klucze dostępu, utworzone przez tę sytuację (**& Przeglądaj** i **prz & eglądaj** w tym samym oknie dialogowym).  
+- Jeśli istnieje więcej niż jednego długiego **[Przeglądaj …]**  przycisku w oknie dialogowym, takie jak kiedy kilka pól umożliwiają przeglądanie. Użyj krótkiej **[...]**  przycisku dla każdego uniknąć pomylenia klucze dostępu, utworzone przez tę sytuację (**& Przeglądaj** i **prz & eglądaj** w tym samym oknie dialogowym).  
   
--   W oknie dialogowym ścisłej lub po nie uzasadnione miejsce do umieszczenia długie przycisku.  
+- W oknie dialogowym ścisłej lub po nie uzasadnione miejsce do umieszczenia długie przycisku.  
   
--   Jeśli przycisk pojawi się w formancie siatki.  
+- Jeśli przycisk pojawi się w formancie siatki.  
   
- Wytyczne dotyczące przy użyciu przycisku:  
+  Wytyczne dotyczące przy użyciu przycisku:  
   
--   Nie należy używać klucza dostępu. Dostępu do niego za pomocą klawiatury, użytkownik musi kartę z sąsiadujących kontroli. Upewnij się, że kolejność tabulacji jest taka, że dowolnego przycisku Przeglądaj znajduje się natychmiast po wypełni pola. Nigdy nie używaj znaku podkreślenia poniżej pierwszego okresu.  
+- Nie należy używać klucza dostępu. Dostępu do niego za pomocą klawiatury, użytkownik musi kartę z sąsiadujących kontroli. Upewnij się, że kolejność tabulacji jest taka, że dowolnego przycisku Przeglądaj znajduje się natychmiast po wypełni pola. Nigdy nie używaj znaku podkreślenia poniżej pierwszego okresu.  
   
--   Ustaw Microsoft Active Accessibility (MSAA) **nazwa** właściwość **Przeglądaj...**  (z uwzględnieniem wielokropek), który ekran czytelnicy odczyta go jako "Przeglądaj" i "kropka kropka kropka" albo "okres czasu okres." Zarządzane formanty, oznacza to ustawienie **AccessibleName** właściwości.  
+- Ustaw Microsoft Active Accessibility (MSAA) **nazwa** właściwość **Przeglądaj...**  (z uwzględnieniem wielokropek), który ekran czytelnicy odczyta go jako "Przeglądaj" i "kropka kropka kropka" albo "okres czasu okres." Zarządzane formanty, oznacza to ustawienie **AccessibleName** właściwości.  
   
--   Nigdy nie używaj wielokropek **[...]**  przycisk końcówką akcji przeglądania. Na przykład, jeśli potrzebujesz **[nowa...]**  przycisk, ale nie ma wystarczająco dużo miejsca dla tekstu, a następnie w oknie dialogowym musi być zaprojektowane od nowa.  
+- Nigdy nie używaj wielokropek **[...]**  przycisk końcówką akcji przeglądania. Na przykład, jeśli potrzebujesz **[nowa...]**  przycisk, ale nie ma wystarczająco dużo miejsca dla tekstu, a następnie w oknie dialogowym musi być zaprojektowane od nowa.  
   
 ##### <a name="sizing-and-spacing"></a>Zmiana rozmiaru i odstępy  
  ![Ustalanie rozmiaru &#91;Przeglądaj... &#93; przyciski](../../extensibility/ux-guidelines/media/070703-06-browsesizing.png "070703 06_BrowseSizing")  
@@ -442,13 +442,13 @@ ms.locfileid: "49224045"
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid (widok drzewa i siatki)  
  Formant trid jest formant złożony, który zawiera widok drzewa w obrębie siatki. Rozwijanie, zwijanie i przechodząc drzewa należy przestrzegać tych samych poleceń klawiatury w widoku drzewa, z następującymi dodatkami:  
   
--   **Strzałka w prawo:** rozwinąć węzeł. Po rozwinięciu węzła powinno być kontynuowane, przechodząc do najbliższej kolumnę po prawej stronie. Nawigacja ma zostać zatrzymana, na końcu wiersza.  
+- **Strzałka w prawo:** rozwinąć węzeł. Po rozwinięciu węzła powinno być kontynuowane, przechodząc do najbliższej kolumnę po prawej stronie. Nawigacja ma zostać zatrzymana, na końcu wiersza.  
   
--   **Karta:** Navigates do najbliższej komórki po prawej stronie.  Na końcu wiersza nawigacji w dalszym ciągu następnego wiersza.  
+- **Karta:** Navigates do najbliższej komórki po prawej stronie.  Na końcu wiersza nawigacji w dalszym ciągu następnego wiersza.  
   
--   **Shift + Tab:** Navigates do najbliższej komórki po lewej stronie.  Na początku wiersza, nawigacji w dalszym ciągu po prawej stronie komórki w poprzednim wierszu.  
+- **Shift + Tab:** Navigates do najbliższej komórki po lewej stronie.  Na początku wiersza, nawigacji w dalszym ciągu po prawej stronie komórki w poprzednim wierszu.  
   
- ![Trid sterowania w programie Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
+  ![Trid sterowania w programie Visual Studio](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
   
- **Formant trid w programie Visual Studio**
+  **Formant trid w programie Visual Studio**
 

@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3c30b665a27f4e77d21744582a23555fdb899c9
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 61ba39bc8a312fb06499bed7ca94e33dc5e7153e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825994"
 ---
 # <a name="change-the-appearance-of-a-command"></a>Zmiana wyglądu polecenia
 Aby przekazać opinię do użytkownika, zmiana wyglądu polecenia. Na przykład możesz polecenie będzie wyglądać inaczej, gdy jest ona niedostępna. Można wprowadzić polecenia dostępne lub niedostępne, ukryć lub pokazać je, lub sprawdź lub usuń ich zaznaczenie w menu.  
   
  Zmiana wyglądu polecenia, wykonaj jedną z następujących czynności:  
   
--   Określ odpowiednie flagi w definicji polecenia w pliku poleceń w tabeli.  
+- Określ odpowiednie flagi w definicji polecenia w pliku poleceń w tabeli.  
   
--   Użyj <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> usługi.  
+- Użyj <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> usługi.  
   
--   Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu i modyfikowania obiektów pierwotnych polecenia.  
+- Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu i modyfikowania obiektów pierwotnych polecenia.  
   
- Poniższe kroki pokazują jak znaleźć i zaktualizować wyglądu polecenia przy użyciu Framework pakietu zarządzanego (MPF).  
+  Poniższe kroki pokazują jak znaleźć i zaktualizować wyglądu polecenia przy użyciu Framework pakietu zarządzanego (MPF).  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>Zmiana wyglądu polecenia menu  
   

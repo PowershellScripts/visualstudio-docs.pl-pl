@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d56356aee150680b4d3a21327e28db353da51469
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c7933b2d7082432bd4f9db567ad6bb5b7788e28b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887691"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 Tworzy obiekt ciągu.  
@@ -46,13 +46,13 @@ int CreateStringObject(
  [in] Wartość ciągu z obiektem ciągu.  
   
  `ppObject`  
- [out] Zwraca [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekt, który reprezentuje ciąg nowo utworzony obiekt.  
+ [out] Zwraca [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekt, który reprezentuje obiekt ciągu nowo utworzony.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wywołanie tej metody, aby utworzyć obiekt, który reprezentuje ciąg, który jest parametr do funkcji, która jest reprezentowana przez [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfejsu.  
+ Wywołaj tę metodę, aby utworzyć obiekt, który reprezentuje ciąg, który jest parametr do funkcji, która jest reprezentowana przez [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfejsu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

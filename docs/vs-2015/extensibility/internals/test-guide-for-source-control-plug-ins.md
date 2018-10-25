@@ -19,12 +19,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1620de29372d1d8e397ad879e3c9f413c41b1286
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1893a30ff46470949fb5aa534f61f590e7ba2d95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219586"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873555"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Przewodnik testowania wtyczek kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,19 +46,19 @@ Ta sekcja zawiera wskazówki dotyczące testowania Twojego wtyczka do kontroli �
  Projekt sieci Web  
  Istnieją cztery typy projektów sieci Web: System plików, lokalnych usług IIS, lokacjami zdalnymi i FTP.  
   
--   Projekty systemu plików są tworzone na ścieżkę lokalną, ale nie wymagają Internet Information Services (IIS) do zainstalowania, ponieważ są używane wewnętrznie za pośrednictwem ścieżki UNC i można umieścić pod kontrolą źródła z wewnątrz IDE, podobnie jak projektów klienckich.  
+- Projekty systemu plików są tworzone na ścieżkę lokalną, ale nie wymagają Internet Information Services (IIS) do zainstalowania, ponieważ są używane wewnętrznie za pośrednictwem ścieżki UNC i można umieścić pod kontrolą źródła z wewnątrz IDE, podobnie jak projektów klienckich.  
   
--   Lokalnych projektów usług IIS działają z usługami IIS zainstalowane na tym samym komputerze, które są dostępne przy użyciu adresu URL, wskazując na komputerze lokalnym.  
+- Lokalnych projektów usług IIS działają z usługami IIS zainstalowane na tym samym komputerze, które są dostępne przy użyciu adresu URL, wskazując na komputerze lokalnym.  
   
--   Zdalne projektów witryny są również tworzone w ramach usług IIS, ale są one umieszczone pod kontrolą źródła, na komputerze serwera usług IIS, a nie z wewnątrz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
+- Zdalne projektów witryny są również tworzone w ramach usług IIS, ale są one umieszczone pod kontrolą źródła, na komputerze serwera usług IIS, a nie z wewnątrz [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
   
--   Projekty FTP są dostępne za pośrednictwem zdalnego serwera FTP, ale nie mogą być umieszczone pod kontrolą źródła.  
+- Projekty FTP są dostępne za pośrednictwem zdalnego serwera FTP, ale nie mogą być umieszczone pod kontrolą źródła.  
   
- Funkcja rejestracji  
- Inna nazwa rozwiązania lub projektu objętego kontrolą źródła.  
+  Funkcja rejestracji  
+  Inna nazwa rozwiązania lub projektu objętego kontrolą źródła.  
   
- Wersja Store  
- Bazy danych kontroli źródła, jest uzyskiwany za pośrednictwem interfejsu API wtyczki kontroli źródła.  
+  Wersja Store  
+  Bazy danych kontroli źródła, jest uzyskiwany za pośrednictwem interfejsu API wtyczki kontroli źródła.  
   
 ## <a name="test-areas-covered-in-this-section"></a>Obszary testów, opisanych w tej sekcji  
   

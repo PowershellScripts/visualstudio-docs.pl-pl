@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 795b1bf9f2c3d2014e1fa2c4ccd25254a07a70a8
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f06a1da269fec2cf1966b17b9497e840808b6c73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283317"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887621"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Debugowanie aplikacji w trybie mieszanym
 Aplikacją trybu mieszanego jest każda aplikacja, która łączy w sobie kod natywny (C++) z kodem zarządzanym (takim jak Visual Basic, Visual C# lub C++ działający w środowisku uruchomieniowym języka wspólnego). Debugowanie aplikacji w trybie mieszanym jest w dużej mierze przejrzyste w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; nie jest zbytnio od debugowania aplikacji w trybie pojedynczym. Istnieje jednak kilka specjalnych okoliczności.  
@@ -48,13 +48,13 @@ Aby włączyć Edytuj i Kontynuuj dla języka C++, zobacz [Włączanie i wyłąc
   
 #### <a name="to-turn-off-property-evaluation"></a>Aby wyłączyć funkcję oceny właściwości  
   
-1.  Na **narzędzia** menu, wybierz **opcje**.  
+1. Na **narzędzia** menu, wybierz **opcje**.  
   
-2.  W **opcje** po otwarciu okna dialogowego **debugowanie** i wybierz polecenie **ogólne** kategorii.  
+2. W **opcje** po otwarciu okna dialogowego **debugowanie** i wybierz polecenie **ogólne** kategorii.  
   
-3.  Wyczyść **Włącz obliczanie właściwości i inne niejawne wywołania funkcji** pole wyboru.  
+3. Wyczyść **Włącz obliczanie właściwości i inne niejawne wywołania funkcji** pole wyboru.  
   
- Ponieważ stosy wywołania natywnego i zarządzanego się różnią, debuger nie zawsze może dostarczyć pełny stos wywołań dla kodu mieszanego. Gdy kod natywny wywołuje kod zarządzany, można zauważyć pewne rozbieżności. Aby uzyskać więcej informacji, zobacz [kod mieszany i brakujące informacje w oknie stosu wywołań](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
+   Ponieważ stosy wywołania natywnego i zarządzanego się różnią, debuger nie zawsze może dostarczyć pełny stos wywołań dla kodu mieszanego. Gdy kod natywny wywołuje kod zarządzany, można zauważyć pewne rozbieżności. Aby uzyskać więcej informacji, zobacz [kod mieszany i brakujące informacje w oknie stosu wywołań](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)

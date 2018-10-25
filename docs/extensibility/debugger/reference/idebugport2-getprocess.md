@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 586ea5bc944c152ee9ae2c8a2a4e9792b23d5b47
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4958e296e83e3de0d8c3e41b73c0b30af144d743
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863207"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
-Pobiera określony proces korzysta z portu.  
+Pobiera określony proces uruchomiony na porcie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,13 +43,13 @@ int GetProcess(
   
 #### <a name="parameters"></a>Parametry  
  `ProcessId`  
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury, która określa identyfikator procesu.  
+ [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) strukturę, która określa identyfikator procesu.  
   
  `ppProcess`  
- [out] Zwraca [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt reprezentujący procesu.  
+ [out] Zwraca [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt reprezentujący ten proces.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   

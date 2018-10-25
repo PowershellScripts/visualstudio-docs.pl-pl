@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 888d446d82a2f7b5fb6d8638a1c7472378b014de
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827938"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Porady: Określanie limitów czasu dla kontrolerów testów i agentów testowych
 
@@ -29,7 +29,7 @@ Kontroler testów i agenta testowego ma kilka ustawień limitu czasu, które okr
 -   Kontroler testów: *QTController.exe.config*
 
     |Nazwa klucza|Opis|Wartość|
-    |--------------|-----------------|-----------|
+    |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Liczba sekund oczekiwania na żądanie ping do agenta przed połączenie jest uznawane za utracone.|"n" Liczba sekund.|
     |AgentSyncTimeoutInSeconds|Podczas uruchamiania synchronizacji testu, liczba sekund oczekiwania na wszystkich agentów do synchronizacji przed przerwaniem.|"n" Liczba sekund.|
     |AgentInitializeTimeout|Liczba sekund oczekiwania dla wszystkich agentów i ich modułów zbierających dane, aby zainicjować na początku testu uruchomić przed przerwaniem przebiegu testu. Ta wartość powinna być umiarkowanie duża, jeśli za pomocą modułów zbierających dane.|"n" Liczba sekund. Wartość domyślna: "120" (dwie minuty).|
@@ -38,7 +38,7 @@ Kontroler testów i agenta testowego ma kilka ustawień limitu czasu, które okr
 -   Agent testowy: *QTAgentService.exe.config*
 
     |Nazwa klucza|Opis|Wartość|
-    |--------------|-----------------|-----------|
+    |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Liczba sekund między próbami nawiązania połączenia z kontrolerem.|"n" Liczba sekund. Wartość domyślna: "30" (trzydzieści sekund).|
     |RemotingTimeoutSeconds|Maksymalny czas wywołanie komunikacji zdalnej może trwać w sekundach.|"n" Liczba sekund. Wartość domyślna: "600" (dziesięć minut).|
     |StopTestRunCallTimeoutInSeconds|Liczba sekund oczekiwania, aż wywołanie zatrzyma przebieg testu.|"n" Liczba sekund. Wartość domyślna: "120" (dwie minuty).|

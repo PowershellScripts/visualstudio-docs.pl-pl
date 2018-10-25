@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 15d666ed4e2896a1645f1f47a5a310dc3151309f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a18ad30fac44028f4eda89da72babeb36ffe24a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677196"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873977"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Dostosowywanie funkcji interfejsu użytkownika, korzystając z rozszerzalności interfejsów
   Narzędzi programistycznych pakietu Office w programie Visual Studio zawierają klasy i projektantów, które obsługują wiele szczegółów implementacji, gdy ich użyć do tworzenia niestandardowych okienek zadań, dostosowań Wstążki i regionach formularzy programu Outlook w dodatku VSTO. Jednak możesz również wdrożyć *interfejsu rozszerzalności* dla każdej funkcji samodzielnie, jeśli masz specjalne wymagania.  
@@ -61,17 +61,17 @@ ms.locfileid: "35677196"
 ### <a name="example-of-implementing-an-extensibility-interface"></a>Przykład implementacji interfejsów rozszerzalności  
  Poniższy przykład kodu demonstruje proste wdrażanie <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> interfejs do tworzenia niestandardowego okienka zadań. Ten przykład definiuje dwie klasy:  
   
--   `TaskPaneHelper` Klasy implementuje <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> zostać utworzony i wyświetlony niestandardowego okienka zadań.  
+- `TaskPaneHelper` Klasy implementuje <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> zostać utworzony i wyświetlony niestandardowego okienka zadań.  
   
--   `TaskPaneUI` Klasa udostępnia interfejs użytkownika okienka zadań. Wartości atrybutów `TaskPaneUI` klasy widoczności klasy COM, który umożliwia aplikacji Microsoft Office odnaleźć klasy. W tym przykładzie interfejs użytkownika jest pusta <xref:System.Windows.Forms.UserControl>, ale można dodać formanty, modyfikując kod.  
+- `TaskPaneUI` Klasa udostępnia interfejs użytkownika okienka zadań. Wartości atrybutów `TaskPaneUI` klasy widoczności klasy COM, który umożliwia aplikacji Microsoft Office odnaleźć klasy. W tym przykładzie interfejs użytkownika jest pusta <xref:System.Windows.Forms.UserControl>, ale można dodać formanty, modyfikując kod.  
   
-    > [!NOTE]  
-    >  Aby udostępnić `TaskPaneUI` klasy dla modelu COM, należy także ustawić **Zarejestruj dla współdziałania COM** właściwość dla projektu.  
+  > [!NOTE]  
+  >  Aby udostępnić `TaskPaneUI` klasy dla modelu COM, należy także ustawić **Zarejestruj dla współdziałania COM** właściwość dla projektu.  
   
- [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
- [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
+  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
+  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- Aby uzyskać więcej informacji o implementowaniu <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, zobacz [Tworzenie niestandardowych okienek zadań w 2007 Office system](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) w dokumentacji programu Microsoft Office.  
+  Aby uzyskać więcej informacji o implementowaniu <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, zobacz [Tworzenie niestandardowych okienek zadań w 2007 Office system](http://msdn.microsoft.com/256313db-18cc-496c-a961-381ed9ca94be) w dokumentacji programu Microsoft Office.  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>Zastępowanie metody RequestService przykład  
  Poniższy przykład kodu demonstruje sposób zastąpienia <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metodę, aby zwrócić wystąpienia `TaskPaneHelper` klasy z poprzedniego przykładu kodu. Sprawdza wartość *serviceGuid* parametru, aby określić, który interfejs jest wymagana, a następnie zwraca obiekt, który implementuje ten interfejs.  

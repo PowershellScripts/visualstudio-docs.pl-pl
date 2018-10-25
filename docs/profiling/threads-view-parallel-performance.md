@@ -14,29 +14,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 80ce83bba65affcb47a702d572d8d962f712667e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676373"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883994"
 ---
 # <a name="threads-view-parallel-performance"></a>Widok wątków (parallel performance)
 **Widok wątków** znajduje się maksymalnie szczegółową i bogate w Wizualizatorze współbieżności (wybierz **analizy** > **Concurrency Visualizer** do uruchomienia Narzędzie CONCURRENCY visualizer). Korzystając z tego widoku, można ustalić, czy wątki są wykonywanie lub blokowania z powodu synchronizacji, operacji We/Wy lub innego powodu.  
   
  Podczas analizy profilu Concurrency Visualizer sprawdza, czy wszystkie zdarzenia przełączenie kontekstu systemu operacyjnego dla każdego wątku aplikacji. Przełączeń kontekstu może wystąpić z wielu powodów, takich jak te:  
   
--   Wątek jest zablokowany na podstawowy synchronizacji.  
+- Wątek jest zablokowany na podstawowy synchronizacji.  
   
--   Wygasa quantum wątku.  
+- Wygasa quantum wątku.  
   
--   Wątek żąda blokowania We/Wy.  
+- Wątek żąda blokowania We/Wy.  
   
- Widok wątków przypisuje kategorię dla każdego przełącznika kontekstu po zatrzymaniu wątek wykonywania. Kategorie są wyświetlane w legendzie w lewej dolnej części widoku. Narzędzie Concurrency Visualizer na działaniach kategoryzuje zdarzenia przełączenie kontekstu przez wyszukiwanie dobrze znanych interfejsów API w blokowania stos wywołań wątku. Jeśli nie zostanie odnaleziony odpowiednik stosu wywołań powód oczekiwania, które są dostarczane przez [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] jest używany. Jednak [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] kategorii mogą opierać się na szczegółowo opisuje implementacja i mogą nie odzwierciedlać intencji użytkownika. Na przykład [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] raporty powód oczekiwania dotyczące blokowania na blokadzie natywnych zapisywania kieszeń czytnika jako operacji We/Wy, zamiast synchronizacji. W większości przypadków można zidentyfikować głównych przyczyn zdarzeń blokowania, sprawdzając stosy wywołań, które odnoszą się do przełączania kontekstu zdarzenia.  
+  Widok wątków przypisuje kategorię dla każdego przełącznika kontekstu po zatrzymaniu wątek wykonywania. Kategorie są wyświetlane w legendzie w lewej dolnej części widoku. Narzędzie Concurrency Visualizer na działaniach kategoryzuje zdarzenia przełączenie kontekstu przez wyszukiwanie dobrze znanych interfejsów API w blokowania stos wywołań wątku. Jeśli nie zostanie odnaleziony odpowiednik stosu wywołań powód oczekiwania, które są dostarczane przez [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] jest używany. Jednak [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] kategorii mogą opierać się na szczegółowo opisuje implementacja i mogą nie odzwierciedlać intencji użytkownika. Na przykład [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] raporty powód oczekiwania dotyczące blokowania na blokadzie natywnych zapisywania kieszeń czytnika jako operacji We/Wy, zamiast synchronizacji. W większości przypadków można zidentyfikować głównych przyczyn zdarzeń blokowania, sprawdzając stosy wywołań, które odnoszą się do przełączania kontekstu zdarzenia.  
   
- Widok wątki pokazuje również zależności pomiędzy wątkami. Na przykład po zidentyfikowaniu wątek, który jest zablokowany na obiekt synchronizacji, można wyszukać wątku, który odblokował go, a po jej odblokowaniu jeden z nich, można sprawdzić działanie w stosie wywołań dla tego wątku w punkcie.  
+  Widok wątki pokazuje również zależności pomiędzy wątkami. Na przykład po zidentyfikowaniu wątek, który jest zablokowany na obiekt synchronizacji, można wyszukać wątku, który odblokował go, a po jej odblokowaniu jeden z nich, można sprawdzić działanie w stosie wywołań dla tego wątku w punkcie.  
   
- Wykonywaniem wątków Concurrency Visualizer służy do zbierania próbek. W widoku wątków można analizować, której kod jest wykonywany przez jeden lub więcej wątków podczas segmentu wykonania. Można także sprawdzić blokowania raporty i raporty, które profil wykonania drzewo stosu wywołań.  
+  Wykonywaniem wątków Concurrency Visualizer służy do zbierania próbek. W widoku wątków można analizować, której kod jest wykonywany przez jeden lub więcej wątków podczas segmentu wykonania. Można także sprawdzić blokowania raporty i raporty, które profil wykonania drzewo stosu wywołań.  
   
 ## <a name="usage"></a>Użycie  
  Oto kilka sposobów, że można użyć widoku wątków:  
@@ -58,26 +58,26 @@ ms.locfileid: "35676373"
 ## <a name="examine-specific-time-intervals-and-threads"></a>Sprawdź w określonych odstępach czasu i wątki  
  Widok wątki pokazuje oś czasu. Możesz powiększać i przesuń w osi czasu, aby sprawdzić w określonych odstępach czasu i wątki aplikacji. Na osi x jest czas się na osi y różnych kanałów:  
   
--   Dwa kanały operacji We/Wy dla każdego dysku twardego systemu, jeden kanał dla odczytów i jeden dla zapisu.  
+- Dwa kanały operacji We/Wy dla każdego dysku twardego systemu, jeden kanał dla odczytów i jeden dla zapisu.  
   
--   Kanał dla każdego wątku w procesie.  
+- Kanał dla każdego wątku w procesie.  
   
--   W przypadku zdarzeń znaczników w śledzeniu kanały znacznika. Kanały znacznika początkowo wyświetlane w ramach kanałów wątków, które wygenerowany tych zdarzeń.  
+- W przypadku zdarzeń znaczników w śledzeniu kanały znacznika. Kanały znacznika początkowo wyświetlane w ramach kanałów wątków, które wygenerowany tych zdarzeń.  
   
--   Kanały procesora GPU.  
+- Kanały procesora GPU.  
   
- Oto ilustrację Widok wątków:  
+  Oto ilustrację Widok wątków:  
   
- ![Widok wątków](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
-Widok wątków  
+  ![Widok wątków](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+  Widok wątków  
   
- Początkowo wątki są sortowane w kolejności, w którym są tworzone tak, aby następuje wątku głównego aplikacji. Opcja sortowania w lewym górnym rogu widoku sortowania wątki według innego kryterium (np. przez większość wykonywania pracy wykonanej).  
+  Początkowo wątki są sortowane w kolejności, w którym są tworzone tak, aby następuje wątku głównego aplikacji. Opcja sortowania w lewym górnym rogu widoku sortowania wątki według innego kryterium (np. przez większość wykonywania pracy wykonanej).  
   
- Można ukryć, wątki, które nie wykonują pracę, wybierając ich nazwy w kolumnie po lewej stronie, a następnie wybierając **Ukryj wybrane wątki** przycisk na pasku narzędzi. Firma Microsoft zaleca ukrycie wątki, które są całkowicie zablokowane, ponieważ ich statystyki są zbędne i można clog — raporty.  
+  Można ukryć, wątki, które nie wykonują pracę, wybierając ich nazwy w kolumnie po lewej stronie, a następnie wybierając **Ukryj wybrane wątki** przycisk na pasku narzędzi. Firma Microsoft zaleca ukrycie wątki, które są całkowicie zablokowane, ponieważ ich statystyki są zbędne i można clog — raporty.  
   
- Aby zidentyfikować dodatkowe wątki, aby ukryć w legendzie active wybierz **na podsumowanie wątku** sporządzić raport na temat **raport profilu** kartę. Spowoduje to wyświetlenie wykres podziału wykonywania, na którym pokazuje stan wątków dla aktualnie wybranego okresu. W niektórych poziomami powiększenia niektóre wątki mogą nie być wyświetlane. W takiej sytuacji wielokropek są wyświetlane po prawej stronie.  
+  Aby zidentyfikować dodatkowe wątki, aby ukryć w legendzie active wybierz **na podsumowanie wątku** sporządzić raport na temat **raport profilu** kartę. Spowoduje to wyświetlenie wykres podziału wykonywania, na którym pokazuje stan wątków dla aktualnie wybranego okresu. W niektórych poziomami powiększenia niektóre wątki mogą nie być wyświetlane. W takiej sytuacji wielokropek są wyświetlane po prawej stronie.  
   
- Po wybraniu interwału czasu i wątków w nim można uruchomić analizy wydajności.  
+  Po wybraniu interwału czasu i wątków w nim można uruchomić analizy wydajności.  
   
 ## <a name="analysis-tools"></a>Narzędzia do analizy  
  W tej sekcji opisano, raportów i innych narzędzi do analizy.  

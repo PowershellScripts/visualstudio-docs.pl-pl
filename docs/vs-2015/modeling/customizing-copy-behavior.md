@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b5e57f5d7b3ab3fa7f956516879f687ff9ac7491
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2478925ecf481aaf49dbfbe5818d8839b9ad54f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286471"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844094"
 ---
 # <a name="customizing-copy-behavior"></a>Dostosowywanie zachowania dotyczącego kopiowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ W języku specyficznym dla domeny (DSL) utworzone za pomocą [!INCLUDE[vsprvs](.
   
  Domyślnie gdy użytkownik kopiuje elementy do Schowka, następujące elementy są również kopiowane:  
   
--   Osadzone elementy podrzędne elementu wybranych elementów. (Oznacza to, elementy, które są cele osadzania relacje, które rozwijani w modelu są kopiowane elementy).  
+- Osadzone elementy podrzędne elementu wybranych elementów. (Oznacza to, elementy, które są cele osadzania relacje, które rozwijani w modelu są kopiowane elementy).  
   
--   Łączy relacji między skopiowane elementy.  
+- Łączy relacji między skopiowane elementy.  
   
- Ta reguła ma charakter cykliczny skopiowane elementy i łącza.  
+  Ta reguła ma charakter cykliczny skopiowane elementy i łącza.  
   
- ![Skopiować i wkleić elementy](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
+  ![Skopiować i wkleić elementy](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
   
- Skopiowane elementy i łącza są serializowane i przechowywane w <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), który znajduje się w Schowku.  
+  Skopiowane elementy i łącza są serializowane i przechowywane w <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), który znajduje się w Schowku.  
   
- Obraz przedstawiający skopiowane elementy jest również umieszczona w Schowku. Dzięki temu użytkownikowi skopiować do innych aplikacji, takich jak Word.  
+  Obraz przedstawiający skopiowane elementy jest również umieszczona w Schowku. Dzięki temu użytkownikowi skopiować do innych aplikacji, takich jak Word.  
   
- Użytkownik może Wklej skopiowane elementy do obiektu docelowego, który może akceptować elementy według definicji DSL. Na przykład DSL generowany na podstawie szablonu rozwiązania składniki, użytkownik może Wklej w porty na składniki, ale nie na diagram; i wkleić składników na diagram, ale nie do innych składników.  
+  Użytkownik może Wklej skopiowane elementy do obiektu docelowego, który może akceptować elementy według definicji DSL. Na przykład DSL generowany na podstawie szablonu rozwiązania składniki, użytkownik może Wklej w porty na składniki, ale nie na diagram; i wkleić składników na diagram, ale nie do innych składników.  
   
 ## <a name="customizing-copy-and-paste-behavior"></a>Dostosowywanie kopiowania i wklejania zachowania  
  Aby uzyskać więcej informacji na temat dostosowywania modelu przy użyciu kodu programu, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
@@ -227,15 +227,15 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   
  Istnieją trzy wartości:  
   
--   Propagowanie nie Kopiuj  
+- Propagowanie nie Kopiuj  
   
--   Propagacja kopiowania, aby połączyć tylko - po wklejeniu grupy, nowa kopia tego łącza będzie odnosił się do istniejącego elementu na drugim końcu łącza.  
+- Propagacja kopiowania, aby połączyć tylko - po wklejeniu grupy, nowa kopia tego łącza będzie odnosił się do istniejącego elementu na drugim końcu łącza.  
   
--   Propagacja kopiowania, aby połączyć, a obiekt pełniący rolę - odwrotną skopiowany grupa zawiera kopię elementu na drugim końcu łącza.  
+- Propagacja kopiowania, aby połączyć, a obiekt pełniący rolę - odwrotną skopiowany grupa zawiera kopię elementu na drugim końcu łącza.  
   
- ![Działania kopiowania przy użyciu PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
+  ![Działania kopiowania przy użyciu PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
   
- Zmiany, które wpłynie zarówno elementy, jak i obraz, który jest kopiowany.  
+  Zmiany, które wpłynie zarówno elementy, jak i obraz, który jest kopiowany.  
   
 ## <a name="programming-copy-and-paste-behavior"></a>Kopiuj programowania i zachowanie wklejania  
  Wiele aspektów zachowania DSL w odniesieniu do kopiowania, wklejania, tworzenia i usuwania obiektów są regulowane przez wystąpienie <xref:Microsoft.VisualStudio.Modeling.ElementOperations> , jest sprzężona do diagramu. Można zmodyfikować zachowanie DSL wyprowadzanie klasy z <xref:Microsoft.VisualStudio.Modeling.ElementOperations> i zastępowanie <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> właściwości diagramu klasy.  
@@ -249,13 +249,13 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   
 #### <a name="to-define-your-own-elementoperations"></a>Aby zdefiniować własne ElementOperations  
   
-1.  W nowym pliku w projekcie języka DSL, należy utworzyć klasę, która jest pochodną <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.  
+1. W nowym pliku w projekcie języka DSL, należy utworzyć klasę, która jest pochodną <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.  
   
-2.  Dodaj definicję klasy częściowej klasy diagramu. Nazwa tej klasy można znaleźć w **Dsl\GeneratedCode\Diagrams.cs**.  
+2. Dodaj definicję klasy częściowej klasy diagramu. Nazwa tej klasy można znaleźć w **Dsl\GeneratedCode\Diagrams.cs**.  
   
-     W klasie diagram zastąpić <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> do zwrócenia wystąpienia usługi podklasy ElementOperations. To samo wystąpienie w każdym wywołaniu powinna zostać zwrócona.  
+    W klasie diagram zastąpić <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> do zwrócenia wystąpienia usługi podklasy ElementOperations. To samo wystąpienie w każdym wywołaniu powinna zostać zwrócona.  
   
- Dodaj następujący kod w pliku niestandardowego kodu w projekcie DslPackage:  
+   Dodaj następujący kod w pliku niestandardowego kodu w projekcie DslPackage:  
   
 ```csharp  
   

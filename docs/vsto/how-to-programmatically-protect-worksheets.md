@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b737fc8b589d746a5fa733c835d64c4af30a221b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 819a1f4e07397720d806d887408b9e45aeda9ea5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677622"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867185"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Porady: programowane Włączanie ochrony arkuszy
   Funkcja ochrony w programie Microsoft Office Excel uniemożliwia użytkownikom i kod modyfikowanie obiektów w arkuszu. Domyślnie wszystkie komórki są blokowane po włączeniu ochrony.  
@@ -39,11 +39,11 @@ ms.locfileid: "35677622"
   
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>Aby chronić arkusz w Projektancie  
   
-1.  W **zmiany** grupy **przeglądu** kliknij pozycję **Chroń arkusz**.  
+1. W **zmiany** grupy **przeglądu** kliknij pozycję **Chroń arkusz**.  
   
-     **Chroń arkusz** pojawi się okno dialogowe. Można ustawić hasła i opcjonalnie określić pewne akcje, które użytkownicy mogą wykonywać na arkusz, takie jak format komórki lub wstawianie wierszy.  
+    **Chroń arkusz** pojawi się okno dialogowe. Można ustawić hasła i opcjonalnie określić pewne akcje, które użytkownicy mogą wykonywać na arkusz, takie jak format komórki lub wstawianie wierszy.  
   
- Możesz również zezwolić użytkownikom edytowanie określonych zakresów w arkuszach chronionych.  
+   Możesz również zezwolić użytkownikom edytowanie określonych zakresów w arkuszach chronionych.  
   
 ### <a name="to-allow-editing-in-specific-ranges"></a>Aby umożliwić edycję w określonych zakresach  
   

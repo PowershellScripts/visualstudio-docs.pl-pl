@@ -1,5 +1,5 @@
 ---
-title: Rejestracja i wybór (VSPackage kontroli źródła) | Dokumentacja firmy Microsoft
+title: Rejestracja i wybór (pakiet VSPackage kontroli) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,73 +14,73 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d7bcdb8f930430ac00335777e2c088ce52a34bb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d601aeca3864e47da77fd6418f4cfd3a5db1623
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133040"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834881"
 ---
-# <a name="registration-and-selection-source-control-vspackage"></a>Rejestracja i wybór (VSPackage kontroli źródła)
-Pakiet VSPackage musi być zarejestrowana do udostępnienia go do kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Jeśli kontroli źródła więcej niż jeden pakiet VSPackage zostanie zarejestrowany, użytkownik może wybrać których pakiet VSPackage załadować w odpowiednim czasie. Zobacz [VSPackages](../../extensibility/internals/vspackages.md) więcej szczegółów na pakiety VSPackage i jak można je zarejestrować.  
+# <a name="registration-and-selection-source-control-vspackage"></a>Rejestracja i wybór (pakiet VSPackage kontroli kodu źródłowego)
+Pakietu VSPackage musi być zarejestrowana do udostępnienia go do kontroli źródła [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Jeśli nie zarejestrowano więcej niż jeden formant źródła pakietu VSPackage, użytkownik może wybrać VSPackage, który można załadować w odpowiednim czasie. Zobacz [pakietów VSPackage](../../extensibility/internals/vspackages.md) więcej informacji na temat pakietów VSPackage i jak je zarejestrować.  
   
 ## <a name="registering-a-source-control-package"></a>Rejestrowanie pakietu kontroli źródła  
- Pakiet kontroli źródła jest zarejestrowany, aby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska można znaleźć go i zapytań obsługiwanych funkcji. Jest to zgodne z schemat opóźnienia ładowania, w której jest tworzone wystąpienie pakietu tylko wtedy, gdy jego funkcji lub polecenia wymagane są lub jawnie żądają.  
+ Pakiet kontroli źródła jest zarejestrowany, aby [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska można znaleźć go i zapytań obsługiwanych funkcji. To jest zgodna z schemat ładowanych z opóźnieniem, w której tworzone jest wystąpienie pakietu, tylko wtedy, gdy jego funkcje polecenia są wymagane lub są żądane w sposób jawny.  
   
- VSPackages umieść informacje w kluczu rejestru określonej wersji, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, gdzie *X* jest numer wersji głównej i *Y* jest podrzędny numer wersji. Takie rozwiązanie pozwala, aby możliwa była instalacja side-by-side wielu wersji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+ Pakietów VSPackage umieść informacje w kluczu rejestru specyficzny dla wersji, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, gdzie *X* to główny numer wersji i *Y* jest pomocniczy numer wersji. Praktyka ta zapewnia możliwość aby możliwa była instalacja side-by-side wielu wersji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Interfejsu użytkownika (UI) obsługuje wybór spośród wielu zainstalowanych źródła formantu wtyczek (przez pakiet karty kontroli źródła) oraz VSPackages do kontroli źródła. Może istnieć tylko jeden wtyczka do kontroli źródła active lub pakiet VSPackage naraz. Jednak zgodnie z poniższym opisem IDE pozwala na przełączanie się między plug-in kontroli źródła i VSPackages poprzez automatyczne rozwiązanie mechanizmu opartego na zamianę pakietu. Brak niektóre wymagania przez pakiet VSPackage kontroli źródła, aby włączyć ten mechanizm wyboru.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Interfejsu użytkownika (UI) obsługuje wybór spośród wielu źródła zainstalowanych wtyczek kontroli (za pośrednictwem pakietu karty kontroli źródła), a także kontroli źródła pakietów VSPackage. Może istnieć tylko jeden wtyczka do kontroli źródła active lub pakietu VSPackage w danym momencie. Jednak zgodnie z poniższym opisem IDE zezwala na przełączanie między wtyczek kontroli kodu źródłowego i pakietów VSPackage przy użyciu automatycznego oparte na rozwiązaniach zamianę pakietów mechanizmu. Istnieją pewne wymagania rekompensatę pakietu VSPackage kontroli źródła, aby włączyć ten mechanizm zaznaczania.  
   
 ### <a name="registry-entries"></a>Wpisy rejestru  
- Pakiet kontroli źródła wymaga trzech prywatnych identyfikatorów GUID:  
+ Pakiet kontrolki źródła wymaga trzech prywatnych identyfikatorów GUID:  
   
--   Identyfikator GUID pakietu: To jest główny identyfikator GUID pakietu, który zawiera implementację kontroli źródła (nazywane ID_Package w tej sekcji).  
+- Identyfikator GUID pakietu: Jest głównym identyfikator GUID pakietu, który zawiera implementację kontroli źródła (nazywane ID_Package w tej sekcji).  
   
--   Kontroli źródła identyfikator GUID: To jest identyfikator GUID dla kontroli źródła pakiet VSPackage używane do rejestrowania przy szkielet kontroli źródła programu Visual Studio i jest również używane jako kontekst interfejsu użytkownika poleceń identyfikatora GUID. Identyfikator GUID usługi kontroli źródła jest zarejestrowany pod kontrolą źródła identyfikatora GUID. W tym przykładzie kontroli źródła identyfikatora GUID jest nazywany ID_SccProvider.  
+- Kontrola źródła identyfikatora GUID: To jest identyfikator GUID dla pakietu VSPackage używane do rejestrowania w usłudze Visual Studio wycinka kontroli źródła do kontroli źródła i jest również używane jako kontekst interfejsu użytkownika poleceń identyfikator GUID. Identyfikator GUID usługi kontroli źródła jest zarejestrowany pod kontrolą źródła, identyfikatora GUID. W tym przykładzie identyfikator GUID do kontroli źródła jest wywoływana ID_SccProvider.  
   
--   Identyfikator GUID usługi kontroli źródła: to jest usługa prywatnej identyfikator GUID używany przez program Visual Studio (nazywane SID_SccPkgService w tej sekcji). Oprócz tego pakiet kontroli źródła musi definiować innych identyfikatorów GUID dla VSPackages, narzędzia windows itd.  
+- Usługa sterowania identyfikator GUID źródła: to jest usługa prywatny identyfikator GUID używany przez program Visual Studio (nazywanych SID_SccPkgService w tej sekcji). Oprócz tego pakietu kontroli źródła trzeba zdefiniować inne identyfikatory GUID pakietów VSPackage, okien narzędzi i tak dalej.  
   
- Następujące wpisy rejestru muszą być przekazywane kontroli źródła pakiet VSPackage:  
+  Przez kontrolę źródła pakietu VSPackage przeprowadza się następujące wpisy rejestru:  
   
-|Nazwa klucza|Wpisy|  
-|--------------|-------------|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(ustawienie domyślne) = rg_sz: {ID_SccProvider}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(ustawienie domyślne) = rg_sz:\<przyjazną nazwę pakietu ><br /><br /> Usługa = rg_sz: {SID_SccPkgService}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(ustawienie domyślne) = rg_sz: #\<identyfikator zlokalizowana nazwa zasobu ><br /><br /> Pakiet = rg_sz: {ID_Package}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Należy pamiętać, że nazwa klucza `SourceCodeControl`, jest już używany przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i nie jest dostępny jako rozwiązaniem dla \<PackageName >.)|(ustawienie domyślne) = rg_sz: {ID_Package}|  
+| Nazwa klucza | Wpisy |
+| - | - |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` | (ustawienie domyślne) = rg_sz: {ID_SccProvider} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` | (ustawienie domyślne) = rg_sz:\<przyjazną nazwę pakietu ><br /><br /> Usługa = rg_sz: {SID_SccPkgService} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\` | (ustawienie domyślne) = rg_sz: #\<identyfikator zasobu dla zlokalizowana nazwa ><br /><br /> Pakiet = rg_sz: {ID_Package} |
+| `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Należy pamiętać, że nazwa klucza `SourceCodeControl`, jest już używany przez [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i nie jest dostępna jako opcja dla \<Nazwa_pakietu >.) | (ustawienie domyślne) = rg_sz: {ID_Package} |
   
-## <a name="selecting-a-source-control-package"></a>Wybieranie pakietu kontroli źródła  
- Kilka na podstawie interfejsu API dodatku typu Plug-in kontroli źródła wtyczek i VSPackages można jednocześnie zarejestrować kontroli źródła. Proces wybierania wtyczka do kontroli źródła lub pakiet VSPackage upewnij się, że [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ładuje dodatku typu plug-in lub pakiet VSPackage w odpowiednim czasie i może odroczyć ładowania składników niepotrzebne, dopóki nie są one wymagane. Ponadto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] należy usunąć wszystkie interfejsu użytkownika z innych VSPackages nieaktywny, w tym elementów menu, okna dialogowe i paski narzędzi i wyświetlać interfejsu użytkownika dla active pakiet VSPackage.  
+## <a name="selecting-a-source-control-package"></a>Wybranie pakietów kontroli źródła  
+ Kilka oparte na interfejsie API wtyczki kontroli źródła wtyczek i pakietów VSPackage mogą być jednocześnie zarejestrowane kontroli źródła. Proces wyboru wtyczka do kontroli źródła lub pakietu VSPackage musi zapewnić, że [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ładowania dodatku typu plug-in lub pakietu VSPackage w odpowiednim czasie i może odroczyć ładowania składników niepotrzebne, dopóki nie są one wymagane. Ponadto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usunąć wszystkie interfejsu użytkownika z innych nieaktywne pakietów VSPackage, łącznie z elementami menu, okna dialogowe i paski narzędzi i wyświetlić interfejs użytkownika dla aktywnego pakietu VSPackage.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ładuje kontroli źródła pakiet VSPackage, gdy jest wykonywane jeden z następujących czynności:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ładuje pakietu VSPackage kontroli źródła, gdy przeprowadzane jest jednym z następujących czynności:  
   
--   Rozwiązanie jest otwarte (Jeśli rozwiązanie podlega kontroli źródła).  
+- Rozwiązanie jest otwierane (Jeśli rozwiązanie podlega kontroli źródła).  
   
-     Po otwarciu rozwiązania lub projektu pod kontrolą źródła IDE powoduje, że pakiet VSPackage, który został wybrany do rozwiązania do załadowania kontroli źródła.  
+   Po otwarciu rozwiązania lub projektu objętego kontrolą źródła, IDE powoduje, że pakietu VSPackage, który został wybrany dla tego rozwiązania, należy załadować do kontroli źródła.  
   
--   Dowolne polecenia menu kontroli źródła pakiet VSPackage są wykonywane.  
+- Dowolne polecenia menu kontroli źródła pakietu VSPackage są wykonywane.  
   
- Kontroli źródła, pakiet VSPackage powinny zostać załadowane wszystkie składniki potrzebne tylko wtedy, gdy w rzeczywistości ma być używane (w przeciwnym razie nazywane opóźnionego ładowania).  
+  Kontroli źródła pakietu VSPackage powinny zostać załadowane wszystkie składniki potrzebne tylko wtedy, gdy są naprawdę mają zostać użyte (w przeciwnym razie nazywane opóźnionego ładowania).  
   
-### <a name="automatic-solution-based-vspackage-swapping"></a>Automatyczne rozwiązanie na podstawie pakiet VSPackage wymiany  
- Można ręcznie wymienić kontroli źródła VSPackages za pośrednictwem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **opcje** okno dialogowe, w obszarze **kontroli źródła** kategorii. Automatyczne rozwiązanie pakiet wymiany oznacza, że pakiet kontroli źródła, który wyznaczono dla danego rozwiązania jest automatycznie ustawiana aktywny po otwarciu rozwiązania. Każdy pakiet kontroli źródła należy zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Przełączanie między zarówno obsługuje źródła wtyczek formantu (Implementowanie interfejsu API dodatku typu Plug-in kontroli źródła) i VSPackages kontroli źródła.  
+### <a name="automatic-solution-based-vspackage-swapping"></a>Trwa zamienianie automatyczne oparte na rozwiązaniach pakietu VSPackage  
+ Można ręcznie wymienić kontroli źródła pakietów VSPackage przy użyciu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **opcje** okno dialogowe, w obszarze **kontroli źródła** kategorii. Automatyczne rozwiązanie pakiet zamianę oznacza, że pakiet do kontroli źródła, który zostały wyznaczone dla danego rozwiązania jest automatycznie ustawiana na aktywny, po otwarciu tego rozwiązania. Należy wdrożyć każdy pakiet kontrolki źródła <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje przełącznik między obiema źródła wtyczek kontroli (Implementowanie API wtyczki kontroli źródła) i pakietów VSPackage kontroli źródła.  
   
- Aby przełączyć się do żadnych API dodatku typu Plug-in kontroli źródła na podstawie jest używany pakiet karty kontroli źródła wtyczek. Musi mieć ustawioną proces przełączanie do pośredniego pakiet karty kontroli źródła i określania, które wtyczka do kontroli źródła, aktywne lub nieaktywne jest niewidoczny dla użytkownika. Pakiet karty jest zawsze aktywna, gdy wtyczkę kontroli źródła jest aktywny. Przełączanie między dwiema kwotami dodatków plug-in kontroli źródła można po prostu ładowanie i zwalnianie biblioteki DLL dodatku. Jednak przełączanie do kontroli źródła pakiet VSPackage, wymaga interakcji z IDE załadować odpowiedni pakiet VSPackage.  
+ Jest używany pakiet karty kontroli źródła, aby przełączyć się do żadnych interfejsów API wtyczki kontroli źródła na podstawie wtyczki. Musi być równa proces przełączanie do pośredniego pakietu karty kontroli źródła i określanie, które wtyczka do kontroli źródła, aktywne lub nieaktywne jest niewidoczne dla użytkownika. Pakiet karty jest zawsze aktywny, gdy wtyczka kontroli źródła jest aktywny. Przełączanie między dwiema kwotami wtyczki kontroli źródła można po prostu ładowanie i zwalnianie biblioteki DLL dodatku plug-in. Jednak przełączenie do kontroli źródła pakietu VSPackage, wymaga interakcji z IDE, które można załadować odpowiedniego pakietu VSPackage.  
   
- Kontroli źródła pakiet VSPackage jest wywoływane, gdy żadne rozwiązanie jest otwarte, a klucz rejestru pakiet VSPackage znajduje się w pliku rozwiązania. Po otwarciu rozwiązania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] znajduje wartość rejestru i ładuje kontroli źródła odpowiedni pakiet VSPackage. Wszystkie kontroli źródła VSPackages musi mieć wpisy rejestru opisany powyżej. Rozwiązania, które jest pod kontrolą źródła jest oznaczona jako skojarzona z określonego źródła formantu pakiet VSPackage. Formant musi implementować VSPackages źródła <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> Aby włączyć automatyczne oparte na rozwiązaniu pakiet VSPackage wymiany.  
+ Kontroli źródła pakietu VSPackage jest wywoływana, gdy żadne rozwiązanie jest otwarta, a klucz rejestru dla pakietu VSPackage znajduje się w pliku rozwiązania. Po otwarciu rozwiązania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] znajduje wartość rejestru i ładuje kontroli źródła odpowiedniego pakietu VSPackage. Wszystkie kontroli źródła pakietów VSPackage musi mieć wpisy rejestru opisanych powyżej. Rozwiązanie, które jest pod kontrolą źródła jest oznaczona jako skojarzeniem go z kontroli źródła określonego pakietu VSPackage. Musisz zaimplementować pakietów VSPackage kontroli źródła <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> umożliwiające automatyczne oparte na rozwiązaniach pakietu VSPackage zamianę.  
   
-### <a name="visual-studio-ui-for-package-selection-and-switching"></a>Visual Studio interfejsu użytkownika dla wybór pakietów i przełączania  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnia interfejs dla kontroli źródła pakiet VSPackage i wyboru wtyczek w **opcje** okno dialogowe, w obszarze **kontroli źródła** kategorii. Umożliwia użytkownikowi wybranie wtyczkę kontroli źródła active lub pakiet VSPackage. Lista rozwijalna zawiera:  
+### <a name="visual-studio-ui-for-package-selection-and-switching"></a>Program Visual Studio interfejsu użytkownika dla wybór pakietów i przełączania  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] udostępnia interfejs użytkownika dla kontroli źródła pakietu VSPackage i wybór wtyczki w **opcje** okno dialogowe, w obszarze **kontroli źródła** kategorii. Umożliwia użytkownikowi wybranie wtyczka do kontroli źródła active lub pakietu VSPackage. Zawiera listy rozwijanej:  
   
--   Wszystkie zainstalowane pakiety kontroli źródła  
+- Wszystkie zainstalowane pakietów kontroli kodu źródłowego  
   
--   Wszystkie zainstalowane plug-in kontroli źródła  
+- Wszystkie zainstalowane wtyczek kontroli kodu źródłowego  
   
--   Opcję "Brak", która wyłącza kontroli kodu źródłowego  
+- Opcję "Brak", która wyłącza kontroli kodu źródłowego  
   
- Widoczny jest tylko interfejs użytkownika wyboru kontroli źródła aktywne. Wybór pakiet VSPackage ukrycie interfejsu użytkownika dla poprzedniego pakiet VSPackage i przedstawia nowego interfejsu użytkownika. Aktywne pakiet VSPackage wybranego na poszczególnych użytkowników. Jeśli użytkownik ma wiele kopii [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Otwórz współbieżnie, każda z nich mogą za pomocą różnych active pakiet VSPackage. Jeśli wielu użytkowników jest zalogowany na tym samym komputerze, każdy użytkownik może mieć różne wystąpienia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Otwórz każdy z różnych active pakiet VSPackage. Gdy wiele wystąpień [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] są zamknięte przez użytkownika, kontroli źródła pakiet VSPackage, który był aktywny dla ostatniego Otwórz rozwiązanie staje się kontroli źródła domyślny pakiet VSPackage, należy ustawić aktywne po ponownym uruchomieniu komputera.  
+  Tylko w interfejsie użytkownika dla wybranego formantu aktywne źródłowe są widoczne. Wybór pakietu VSPackage ukrycie interfejsu użytkownika dla poprzedniego pakietu VSPackage i pokazuje interfejsu użytkownika dla nowego. Aktywne pakietu VSPackage wybranego na poszczególnych użytkowników. Jeśli użytkownik ma wiele kopii [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Otwórz jednocześnie, każdy z nich mogą za pomocą inną aktywnych pakietu VSPackage. Jeśli wielu użytkowników jest zalogowany na tym samym komputerze, każdy użytkownik może mieć różne wystąpienia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Otwórz każdy z inną aktywnych pakietu VSPackage. Jeśli wiele wystąpień [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] są zamknięte przez użytkownika, do kontroli źródła pakietu VSPackage, który był aktywny dla ostatniego, otwórz rozwiązanie staje się domyślne do kontroli źródła pakietu VSPackage, należy ustawić aktywny na ponowne uruchomienie.  
   
- W przeciwieństwie do poprzednich wersji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], ponowne uruchomienie IDE nie jest już jedynym sposobem, aby przełączyć się do kontroli źródła VSPackages. Wybór pakiet VSPackage odbywa się automatycznie. Przełączanie pakietów wymaga uprawnień użytkownika systemu Windows (nie Administrator lub użytkownik zaawansowany).  
+  W przeciwieństwie do poprzednich wersji [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], ponowne uruchamianie środowiska IDE nie jest już jedynym sposobem, aby przełączyć kontroli źródła pakietów VSPackage. Wybór pakietu VSPackage odbywa się automatycznie. Przełączanie pakietów wymaga uprawnień użytkownika Windows (nie Administrator lub użytkownik zaawansowany).  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>   

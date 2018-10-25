@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcc6bd76a4a9aecade72347613ed4f36968c65eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf01cb2573922adb5d8b5b4bc26b10b839009dda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832858"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
-Określa flagi dla informacji debugowania modułu.  
+Określa flagi dla informacji debugowania w module.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -66,50 +66,50 @@ public enum enum_MODULE_INFO_FIELDS {
   
 ## <a name="members"></a>Elementy członkowskie  
  MIF_NONE  
- Inicjowanie/użycie żadne z pól w strukturze.  
+ Inicjowanie/użycie żadnego z pól w strukturze.  
   
  MIF_NAME  
- Inicjowanie użycia `m_bstrName` w [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struktury.  
+ Inicjowanie bądź użyj `m_bstrName` pole [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struktury.  
   
  MIF_URL  
- Inicjowanie użycia `m_bstrUrl` w `MODULE_INFO` struktury.  
+ Inicjowanie bądź użyj `m_bstrUrl` pole `MODULE_INFO` struktury.  
   
  MIF_VERSION  
- Inicjowanie użycia `m_bstrVersion` w `MODULE_INFO` struktury.  
+ Inicjowanie bądź użyj `m_bstrVersion` pole `MODULE_INFO` struktury.  
   
  MIF_DEBUGMESSAGE  
- Inicjowanie użycia `m_bstrDebugMessage` w `MODULE_INFO` struktury.  
+ Inicjowanie bądź użyj `m_bstrDebugMessage` pole `MODULE_INFO` struktury.  
   
  MIF_LOADADDRESS  
- Inicjowanie użycia `m_addrLoadAddress` w `MODULE_INFO` struktury.  
+ Inicjowanie bądź użyj `m_addrLoadAddress` pole `MODULE_INFO` struktury.  
   
  MIF_PREFFEREDADDRESS  
- Inicjowanie użycia `m_addrPreferredLoadAddress` w `MODULE_INFO` struktury.  
+ Inicjowanie bądź użyj `m_addrPreferredLoadAddress` pole `MODULE_INFO` struktury.  
   
  MIF_SIZE  
- Inicjowanie użycia `m_dwSize` w `MODULE_INFO` struktury.  
+ Inicjowanie bądź użyj `m_dwSize` pole `MODULE_INFO` struktury.  
   
  MIF_LOADORDER  
- Inicjowanie użycia `m_dwLoadOrder` w `MODULE_INFO` struktury.  
+ Inicjowanie bądź użyj `m_dwLoadOrder` pole `MODULE_INFO` struktury.  
   
  MIF_TIMESTAMP  
- Inicjowanie użycia `m_TimeStamp` w `MODULE_INFO` struktury.  
+ Inicjowanie bądź użyj `m_TimeStamp` pole `MODULE_INFO` struktury.  
   
  MIF_URLSYMBOLLOCATION  
- Inicjowanie użycia `m_bstrUrlSymbolLocation` w `MODULE_INFO` struktury.  
+ Inicjowanie bądź użyj `m_bstrUrlSymbolLocation` pole `MODULE_INFO` struktury.  
   
  MIF_FLAGS  
- Inicjowanie użycia `m_dwModuleFlags` w `MODULE_INFO` struktury.  
+ Inicjowanie bądź użyj `m_dwModuleFlags` pole `MODULE_INFO` struktury.  
   
  MIF_ALLFIELDS  
- Inicjowanie/Użyj wszystkich pól w `MODULE_INFO` struktury.  
+ Inicjowanie bądź Użyj wszystkich pól w `MODULE_INFO` struktury.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości są przekazywane jako argument [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) metody, aby wskazać, które pola [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struktury mają być zainicjowany.  
+ Te wartości są przekazywane jako argument do [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) metodę, aby wskazać, które pola [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struktury, które mają zostać zainicjowane.  
   
- Te wartości są również używane w `MODULE_INFO` struktury, aby wskazać pola, które są używane i prawidłowe.  
+ Te wartości są również używane w `MODULE_INFO` struktury, aby wskazać, które pola są używane i prawidłowy.  
   
- Te flagi mogą być łączone z bitowego `OR`.  
+ Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

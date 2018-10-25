@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9448b6116f59f22aed6dd0796a3409806021ba0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5877bcf4501125968e2fb14f56c41c1ccbc9e561
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885138"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Przygotowanie debugowania: aplikacje Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,23 +56,23 @@ Szablon projektu Windows Forms tworzy aplikację Windows Forms. Debugowanie tego
   
 ### <a name="to-debug-a-c-f-or-visual-basic-windows-forms-application"></a>Aby debugować aplikację języka C#, F # lub Visual Basic Windows Forms  
   
-1.  Otwórz projekt w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Otwórz projekt w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-2.  Utwórz punkty przerwania, zgodnie z potrzebami.  
+2. Utwórz punkty przerwania, zgodnie z potrzebami.  
   
-     Ponieważ aplikacje Windows Forms są oparte na zdarzeniach, punktów przerwania przejdzie do kod procedury obsługi zdarzeń, lub metody wywoływane przez kod obsługi zdarzeń. Do typowych zdarzeń, w której chcesz umieścić punkty przerwania, obejmują:  
+    Ponieważ aplikacje Windows Forms są oparte na zdarzeniach, punktów przerwania przejdzie do kod procedury obsługi zdarzeń, lub metody wywoływane przez kod obsługi zdarzeń. Do typowych zdarzeń, w której chcesz umieścić punkty przerwania, obejmują:  
   
-    1.  Zdarzenia związane z kontrolki, na przykład kliknij przycisk Enter, itp.  
+   1. Zdarzenia związane z kontrolki, na przykład kliknij przycisk Enter, itp.  
   
-    2.  Zdarzenia związane z aplikacji uruchamiania i zamykania, takich jak obciążenia, aktywowano itp.  
+   2. Zdarzenia związane z aplikacji uruchamiania i zamykania, takich jak obciążenia, aktywowano itp.  
   
-    3.  Fokus i zdarzenia sprawdzania poprawności.  
+   3. Fokus i zdarzenia sprawdzania poprawności.  
   
-     Aby uzyskać więcej informacji, zobacz [tworzenie obsługi zdarzeń w formularzach Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
+      Aby uzyskać więcej informacji, zobacz [tworzenie obsługi zdarzeń w formularzach Windows Forms](http://msdn.microsoft.com/library/6514e530-c6b8-489c-a8d2-eda7b7072701).  
   
-3.  Na **debugowania** menu, kliknij przycisk **Start**.  
+3. Na **debugowania** menu, kliknij przycisk **Start**.  
   
-4.  Debugowanie za pomocą techniki opisane w [podstawy debugera](../debugger/debugger-basics.md).  
+4. Debugowanie za pomocą techniki opisane w [podstawy debugera](../debugger/debugger-basics.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)   

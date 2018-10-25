@@ -18,56 +18,56 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 98f9ed1025c264b4fa7432e2ce397e988e6795f4
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: cf8fd8d679760a6758ffb4afb71262a897845e87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849912"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>Porady: programowane Dodawanie nagłówków i stopek do dokumentów
-  Możesz dodać tekst nagłówki i stopki w dokumencie przy użyciu <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> właściwości i <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> właściwość <xref:Microsoft.Office.Interop.Word.Section>. Każda sekcja dokumentu zawiera trzy nagłówki i stopki:  
+  Możesz dodać tekst nagłówków i stopek w dokumencie za pomocą <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> właściwości i <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> właściwość <xref:Microsoft.Office.Interop.Word.Section>. Każda sekcja dokumentu zawiera trzy nagłówki i stopki:  
   
--   <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>  
+- <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>  
   
--   <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterEvenPages>  
+- <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterEvenPages>  
   
--   <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterFirstPage>  
+- <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterFirstPage>  
   
- Dostosowywanie na poziomie dokumentu i dodatków VSTO różnią się procedury.  
+  Procedury są inne w przypadku dostosowań na poziomie dokumentu i dodatków narzędzi VSTO.  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ## <a name="document-level-customizations"></a>Dostosowania na poziomie dokumentów  
- Aby użyć następujące przykłady kodu, należy uruchomić je z `ThisDocument` klasy w projekcie.  
+ Aby użyć poniższe przykłady kodu, należy uruchomić je z `ThisDocument` klasy w projekcie.  
   
-### <a name="to-add-text-to-footers-in-the-document"></a>Aby dodać tekst do stopki w dokumencie  
+### <a name="to-add-text-to-footers-in-the-document"></a>Aby dodać tekst stopki w dokumencie  
   
-1.  Poniższy przykład kodu Ustawia czcionkę tekstu ma zostać wstawiony do głównej stopki każdej sekcji dokumentu, a następnie wstawia tekst do stopki.  
+1.  Poniższy przykład kodu Ustawia czcionkę tekstu do wstawienia do głównej stopce każdej części dokumentu, a następnie wstawia tekst do stopki.  
   
      [!code-vb[Trin_VstcoreWordAutomation#114](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#114)]
      [!code-csharp[Trin_VstcoreWordAutomation#114](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#114)]  
   
 ### <a name="to-add-text-to-headers-in-the-document"></a>Aby dodać tekst do nagłówków w dokumencie  
   
-1.  Poniższy przykładowy kod dodaje pole, aby wyświetlić numer strony w każdy nagłówek w dokumencie, a następnie Ustawia wyrównanie akapitu, aby tekst jest wyrównany do prawej nagłówka.  
+1.  Poniższy przykład kodu dodaje pole do wyświetlenia na numer strony w każdy nagłówek w dokumencie, a następnie Ustawia wyrównanie akapitu, dzięki czemu tekst jest wyrównany do prawej strony nagłówka.  
   
      [!code-vb[Trin_VstcoreWordAutomation#116](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#116)]
      [!code-csharp[Trin_VstcoreWordAutomation#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#116)]  
   
-## <a name="vsto-add-ins"></a>Dodatków VSTO  
- Aby użyć następujące przykłady kodu, należy uruchomić je z `ThisAddIn` klasy w projekcie.  
+## <a name="vsto-add-ins"></a>Dodatków narzędzi VSTO  
+ Aby użyć poniższe przykłady kodu, należy uruchomić je z `ThisAddIn` klasy w projekcie.  
   
-### <a name="to-add-text-to-footers-in-a-document"></a>Aby dodać tekst do stopki w dokumencie  
+### <a name="to-add-text-to-footers-in-a-document"></a>Aby dodać tekst stopki w dokumencie  
   
-1.  Poniższy przykład kodu Ustawia czcionkę tekstu ma zostać wstawiony do głównej stopki każdej sekcji dokumentu, a następnie wstawia tekst do stopki. W tym przykładzie kodu używane aktywny dokument.  
+1.  Poniższy przykład kodu Ustawia czcionkę tekstu do wstawienia do głównej stopce każdej części dokumentu, a następnie wstawia tekst do stopki. Ten przykład kodu używa aktywnego dokumentu.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#114](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#114)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#114](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#114)]  
   
 ### <a name="to-add-text-to-headers-in-the-document"></a>Aby dodać tekst do nagłówków w dokumencie  
   
-1.  Poniższy przykładowy kod dodaje pole, aby wyświetlić numer strony w każdy nagłówek w dokumencie, a następnie Ustawia wyrównanie akapitu, aby tekst jest wyrównany do prawej nagłówka. W tym przykładzie kodu używane aktywny dokument.  
+1.  Poniższy przykład kodu dodaje pole do wyświetlenia na numer strony w każdy nagłówek w dokumencie, a następnie Ustawia wyrównanie akapitu, dzięki czemu tekst jest wyrównany do prawej strony nagłówka. Ten przykład kodu używa aktywnego dokumentu.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#116)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#116](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#116)]  

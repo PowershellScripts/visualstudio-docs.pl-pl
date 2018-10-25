@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92f14710646925778cb55f7e6e6d16f456ef496b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: ee8ca017cd16b6d56c2e71b474d3f4283aeeb9b6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849570"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Dodaj polecenie do paska narzędzi Eksploratora rozwiązań
 W tym instruktażu pokazano, jak dodać przycisk, aby **Eksploratora rozwiązań** paska narzędzi.  
@@ -83,41 +83,41 @@ W tym instruktażu pokazano, jak dodać przycisk, aby **Eksploratora rozwiązań
   
 ### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>Aby wyświetlić przycisk, gdy jeden lub więcej projektów są otwarte  
   
-1.  W `<Buttons>` części *ToolbarButtonPackage.vsct*, dodać dwie flagi polecenia do istniejącej `<Button>` elementu, między `<Strings>` i `<Icons>` tagów.  
+1. W `<Buttons>` części *ToolbarButtonPackage.vsct*, dodać dwie flagi polecenia do istniejącej `<Button>` elementu, między `<Strings>` i `<Icons>` tagów.  
   
-    ```xml  
-    <CommandFlag>DefaultInvisible</CommandFlag>  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DefaultInvisible</CommandFlag>  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-     `DefaultInvisible` i `DynamicVisibility` flagi musi być ustawiona tak że wpisy w `<VisibilityConstraints>` sekcji zostały wprowadzone.  
+    `DefaultInvisible` i `DynamicVisibility` flagi musi być ustawiona tak że wpisy w `<VisibilityConstraints>` sekcji zostały wprowadzone.  
   
-2.  Tworzenie `<VisibilityConstraints>` sekcja, która ma dwa `<VisibilityItem>` wpisów. Umieść nową sekcję zaraz po zamykającym `</Commands>` tagu.  
+2. Tworzenie `<VisibilityConstraints>` sekcja, która ma dwa `<VisibilityItem>` wpisów. Umieść nową sekcję zaraz po zamykającym `</Commands>` tagu.  
   
-    ```xml  
-    <VisibilityConstraints>  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasSingleProject" />  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasMultipleProjects" />  
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasSingleProject" />  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasMultipleProjects" />  
+   </VisibilityConstraints>  
+   ```  
   
-     Każdy element widoczność reprezentuje warunek, pod którym jest wyświetlana określonego przycisku. Aby zastosować wiele warunków, należy utworzyć wiele pozycji dla tego samego przycisku.  
+    Każdy element widoczność reprezentuje warunek, pod którym jest wyświetlana określonego przycisku. Aby zastosować wiele warunków, należy utworzyć wiele pozycji dla tego samego przycisku.  
   
-3.  Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
+3. Skompiluj projekt, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
   
-     **Eksploratora rozwiązań** paska narzędzi nie zawiera przycisk przekreślenie.  
+    **Eksploratora rozwiązań** paska narzędzi nie zawiera przycisk przekreślenie.  
   
-4.  Otwórz dowolnego rozwiązania zawierającego projekt.  
+4. Otwórz dowolnego rozwiązania zawierającego projekt.  
   
-     Przycisk będzie już przekreślanych pojawia się na pasku narzędzi po prawej stronie istniejące przyciski.  
+    Przycisk będzie już przekreślanych pojawia się na pasku narzędzi po prawej stronie istniejące przyciski.  
   
-5.  Na **pliku** menu, kliknij przycisk **Zamknij rozwiązanie**. Przycisk zniknie z paska narzędzi.  
+5. Na **pliku** menu, kliknij przycisk **Zamknij rozwiązanie**. Przycisk zniknie z paska narzędzi.  
   
- Widoczność przycisku jest kontrolowana przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do momentu załadowania pakietu VSPackage. Po załadowaniu pakietu VSPackage widoczność przycisku jest kontrolowana przez pakietu VSPackage.  Aby uzyskać więcej informacji, zobacz [MenuCommands programu vs. OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md).  
+   Widoczność przycisku jest kontrolowana przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do momentu załadowania pakietu VSPackage. Po załadowaniu pakietu VSPackage widoczność przycisku jest kontrolowana przez pakietu VSPackage.  Aby uzyskać więcej informacji, zobacz [MenuCommands programu vs. OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Polecenia, menu i paski narzędzi](../extensibility/internals/commands-menus-and-toolbars.md)

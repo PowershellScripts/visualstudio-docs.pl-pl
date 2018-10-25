@@ -15,61 +15,61 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a100a193f5e3abcb076fb8aaf3d64a0d0c38833
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 22ccc54dee335fd8c81343557d2f32c48eb30560
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24795244"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837922"
 ---
 # <a name="idispatchex-interface"></a>Interfejs IDispatchEx
-`IDispatchEx`, rozszerzenie `IDispatch` interfejsu, obsługuje funkcje właściwe w przypadku dynamicznego języków, takich jak języki skryptów. W tej sekcji opisano `IDispatchEx` interfejsu, różnice między `IDispatch` i `IDispatchEx`oraz uzasadnienie rozszerzeń. Oczekuje się, że czytników zna `IDispatch` i mają dostęp do `IDispatch` dokumentacji.  
+`IDispatchEx`, rozszerzenie `IDispatch` interfejsu, obsługuje funkcje odpowiednie dla dynamicznych języków, takich jak językach skryptów. W tej sekcji opisano `IDispatchEx` interfejsu, różnice między `IDispatch` i `IDispatchEx`oraz uzasadnienie dla rozszerzenia. Oczekuje się, że czytelnicy zna `IDispatch` i mieć dostęp do `IDispatch` dokumentacji.  
   
 ## <a name="remarks"></a>Uwagi  
- `IDispatch`został opracowany zasadniczo dla programu Microsoft Visual Basic. Ograniczenia podstawowe `IDispatch` jest przyjęto założenie, że obiekty są statyczne. Innymi słowy ponieważ obiekty nie należy zmieniać w czasie wykonywania, informacje o typie można całkowicie opisano je w czasie kompilacji. Dynamiczne modeli środowiska wykonawczego, które znajdują się w językach skryptów, takich jak Visual Basic Scripting Edition (VBScript) i [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] i obiektu modeli, takie jak bardziej elastyczne interfejsu wymagają DHTML.  
+ `IDispatch` został opracowany, zasadniczo języka Visual Basic. Podstawowe ograniczenia `IDispatch` jest przyjęto założenie, że obiekty są statyczne. Innymi słowy ponieważ obiekty nie należy zmieniać w czasie wykonywania, informacje o typie można w pełni opisać je w czasie kompilacji. Dynamiczne modeli środowiska wykonawczego, które znajdują się w językach skryptów, takich jak Visual Basic Scripting Edition (VBScript) i [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] modele obiektów, takich jak DHTML wymagają bardziej elastyczny interfejs i.  
   
- `IDispatchEx`został opracowany, aby zapewnić wszystkich usług `IDispatch` oraz niektóre rozszerzenia, które są odpowiednie dla bardziej dynamiczne języków późnym wiązaniem, takich jak języki skryptów. Dodatkowe funkcje `IDispatchEx` innych niż te dostarczone przez `IDispatch` są:  
+ `IDispatchEx` został opracowany, aby zapewnić wszystkich usług `IDispatch` oraz niektóre rozszerzenia, które są odpowiednie dla bardziej dynamiczne języków z późnym wiązaniem, takich jak językach skryptów. Dodatkowe funkcje `IDispatchEx` innych niż te dostarczone przez `IDispatch` są:  
   
--   Dodawanie nowych elementów członkowskich do obiektu ("expando") — użyj `GetDispID` z `fdexNameEnsure` flagi.  
+- Dodawanie nowych członków do obiektu ("expando") — użyj `GetDispID` z `fdexNameEnsure` flagi.  
   
--   Usuwanie elementów członkowskich obiektu — użyj `DeleteMemberByName` lub `DeleteMemberByDispID`.  
+- Usuń elementy członkowskie obiektu — użyj `DeleteMemberByName` lub `DeleteMemberByDispID`.  
   
--   Operacje wysyłania z uwzględnieniem wielkości liter — użyj `fdexNameCaseSensitive` lub `fdexNameCaseInsensitive`.  
+- Operacje wysyłania uwzględniana wielkość liter — użyj `fdexNameCaseSensitive` lub `fdexNameCaseInsensitive`.  
   
--   Wyszukaj element członkowski o nazwie niejawne — użyj `fdexNameImplicit`.  
+- Wyszukaj element członkowski o nazwie niejawne — użyj `fdexNameImplicit`.  
   
--   Wyliczanie identyfikator DISPID obiektu — użyj `GetNextDispID`.  
+- Wyliczanie DISPID obiektu — użyj `GetNextDispID`.  
   
--   Mapowanie nazwy elementu z identyfikatorem DISPID — użyj `GetMemberName`.  
+- Mapowanie nazwy elementu z DISPID — użyj `GetMemberName`.  
   
--   Uzyskaj właściwości elementów członkowskich obiektu — użyj `GetMemberProperties`.  
+- Uzyskiwanie właściwości elementów członkowskich obiektu — użyj `GetMemberProperties`.  
   
--   Wywołanie metody z `this` wskaźnika — użyj `InvokeEx` z DISPATCH_METHOD.  
+- Wywołanie metody z `this` wskaźnik — użyj `InvokeEx` z DISPATCH_METHOD.  
   
--   Zezwalaj na przeglądarek, które obsługują pojęcie przestrzenie nazw, aby uzyskać obiekt nadrzędny przestrzeni nazw — użyj `GetNameSpaceParent`.  
+- Zezwalaj na przeglądarek, które obsługują koncepcję przestrzenie nazw, można uzyskać nadrzędnego przestrzeni nazwy obiektu — użyj `GetNameSpaceParent`.  
   
- Obiekty obsługujące `IDispatchEx` mogą także obsługiwać `IDispatch` zgodności z poprzednimi wersjami. Dynamiczne rodzaj obiektów, które obsługują `IDispatchEx` ma kilka wpływ na `IDispatch` interfejsu tych obiektów. Na przykład `IDispatch` założeń następujące:  
+  Obiekty, które obsługują `IDispatchEx` może również obsługiwać `IDispatch` zgodności z poprzednimi wersjami. Dynamiczny charakter obiektów, które obsługują `IDispatchEx` ma wpływ kilka na `IDispatch` interfejsu tych obiektów. Na przykład `IDispatch` sprawia, że następujące założenia:  
   
--   Element członkowski i parametr identyfikator DISPID musi pozostać stałej dla okresu istnienia obiektu. Dzięki temu klient może uzyskać identyfikator DISPID raz i buforowania ich do późniejszego użycia.  
+- Element członkowski i parametr DISPID musi pozostaje niezmienna przez okres istnienia obiektu. Dzięki temu klientowi uzyskać DISPID raz i zapisać je w pamięci podręcznej do późniejszego użycia.  
   
- Ponieważ `IDispatchEx` umożliwia dodawanie i usuwanie elementów członkowskich, zbiór prawidłowy identyfikator DISPID nie pozostaje stała. Jednak `IDispatchEx` wymaga stałej pozostawienie mapowanie między nazwa DISPID i element członkowski. Oznacza to, że jeśli element członkowski zostanie usunięty:  
+  Ponieważ `IDispatchEx` zezwala na dodawanie i usuwanie elementów członkowskich, zbiór prawidłowe dispid nie pozostaje niezmienna. Jednak `IDispatchEx` wymaga, że mapowanie między nazwę DISPID i elementów członkowskich pozostał bez zmian. Oznacza to, że usunięcie członka:  
   
--   Nie można użyć ponownie identyfikator DISPID, dopóki nie zostanie utworzony element członkowski o takiej samej nazwie.  
+- Nie można użyć ponownie DISPID, dopóki nie zostanie utworzony element członkowski o takiej samej nazwie.  
   
--   Identyfikator DISPID musi pozostać dotyczy `GetNextDispID`.  
+- Identyfikator DISPID musi być prawidłowy dla `GetNextDispID`.  
   
--   Identyfikator DISPID musi być bezpiecznie zaakceptowana przez żaden z `IDispatch` lub `IDispatchEx` metody — musi rozpoznać element członkowski jako usunięty i zwracają kod błędu odpowiednie (zazwyczaj DISP_E_MEMBERNOTFOUND lub wartości S_FALSE).  
+- Identyfikator DISPID musi być bezpiecznie zaakceptowana przez żaden z `IDispatch` lub `IDispatchEx` metody — musi rozpoznać elementu członkowskiego jako usunięty i zwracają kod odpowiedni komunikat o błędzie (zazwyczaj DISP_E_MEMBERNOTFOUND lub S_FALSE).  
   
 ## <a name="examples"></a>Przykłady  
- To [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kod w test() funkcja wykonuje następujące czynności:  
+ To [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] kodu w test() funkcja wykonuje następujące czynności:  
   
--   Tworzy nowy obiekt przez wywołanie metody `Object` Konstruktor i przypisuje wskaźnik do nowego obiektu do zmiennej obiektu  
+- Tworzy nowy obiekt przez wywołanie metody `Object` Konstruktor i przypisuje wskaźnik do nowego obiektu, aby zmienna obiektu  
   
--   Tworzy nowy element o nazwie elementu w obiekcie, a następnie przypisuje do tego elementu wskaźnika do funkcji cat.  
+- Tworzy nowy element w obiekcie o nazwie Elem i przypisuje do tego elementu wskaźnik do cat funkcji.  
   
--   Wywołanie tej funkcji. Ponieważ jest ona wywoływana jako metody, `this` wskaźnika odwołuje się do obiektu obiektu Funkcja dodaje nowy element, pasek do obiektu.  
+- Wywołuje tę funkcję. Ponieważ jest wywoływana jako metoda `this` wskaźnika, który odwołuje się do obiektu obiektu Funkcja dodaje nowy element paska do obiektu.  
   
- Pełny kod HTML jest:  
+  Pełny kod HTML jest:  
   
 ```  
 <html>  
@@ -100,7 +100,7 @@ test();
 </html>  
 ```  
   
- Formantu znajdującego się na tej samej stronie sieci Web można uzyskać wskaźnik wysyłania do aparatów skryptów w przeglądarce. Kontrolki można następnie wdrożyć to rozwiązanie test() funkcji:  
+ Kontrolki umieszczone na tej samej stronie sieci Web można uzyskać wskaźnik wysyłania do aparatów skryptów w przeglądarce. Formant może następnie zaimplementować test() funkcji:  
   
 ```  
 <html>  
@@ -118,25 +118,25 @@ function cat()
 </html>  
 ```  
   
- Kod z formantu, testowanie i jest odpowiednikiem [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] funkcja `test()`. Należy pamiętać, że te wysyłania wywołań do uruchamiania [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparat i Zmień stan aparatu:  
+ Kod z kontrolki, testowanie, działa tak samo jak [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] funkcja `test()`. Należy pamiętać, że te wysyłanie wywołań do uruchamiania [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparatu i zmiany stanu aparatu:  
   
--   Uzyskuje wskaźnik wysyłania przy użyciu funkcji cat `GetDispID()`.  
+- Uzyskuje wskaźnik wysyłania za pomocą funkcji cat `GetDispID()`.  
   
--   Uzyskuje wskaźnik wysyłania przy użyciu funkcji obiektu `GetDispID()`.  
+- Uzyskuje wskaźnik wysyłania za pomocą funkcji obiektu `GetDispID()`.  
   
--   Tworzy obiekt przez wywołanie funkcji z obiektu `InvokeEx()` i uzyskuje wskaźnik wysyłania do nowo skonstruowanego obiektu.  
+- Konstruuje obiekt, wywołując funkcję obiektu za pomocą `InvokeEx()` i uzyskuje wskaźnik wysyłania do nowo utworzonym obiekcie.  
   
--   Tworzy nowy element, element, za pomocą obiektu `GetDispID()` z `fdexNameEnsure` flagi.  
+- Tworzy nowy element Elem, za pomocą obiektu `GetDispID()` z `fdexNameEnsure` flagi.  
   
--   Umieszcza kursor wysyłania do cat za pomocą elementu `InvokeEx()`.  
+- Umieszcza wskaźnik wysyłania do cat przy użyciu elementu `InvokeEx()`.  
   
--   Wywołuje wskaźnik wysyłania do cat jako metoda wywołując `InvokeEx()` i przekazanie wskaźnika wysyłania do skonstruowanego obiektu jako `this` wskaźnika.  
+- Wywołuje wskaźnik wysyłania do cat jako metoda, przez wywołanie metody `InvokeEx()` i przekazując we wskaźniku wysyłania do skonstruowanego obiektu jako `this` wskaźnika.  
   
--   Metoda cat tworzy nowy element paska w bieżącej `this` obiektu.  
+- Metoda cat tworzy nowy element pasek na bieżącym `this` obiektu.  
   
--   Sprawdza, czy nowy element paska, został utworzony w obiekcie utworzone przez wyliczania elementów za pomocą `GetNextDispID()`.  
+- Sprawdza, czy nowy element paska, został utworzony w utworzonym obiekcie przez wyliczanie elementów za pomocą `GetNextDispID()`.  
   
- Kod dla formantu testu:  
+  Kod dla formantu testu:  
   
 ```  
    BOOL test(IDispatchEx *pdexScript)  

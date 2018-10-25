@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9a82f69c0a671628a29148c7b09c47db48dc787
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 88cf623bab8824e6f079a28fe491d001b47735f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870214"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
 Ta metoda mapuje adres debugowania do kontekstu dokumentu.  
@@ -43,13 +43,13 @@ int GetContextFromAddress(
   
 #### <a name="parameters"></a>Parametry  
  `pAddress`  
- [in] Adres debugowania reprezentowany przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.  
+ [in] Adres debugowania, reprezentowane przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.  
   
  `ppDocContext`  
- [out] Zwraca kontekstu dokumentu reprezentowany przez [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfejsu.  
+ [out] Zwraca kontekst dokumentu, reprezentowane przez [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfejsu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

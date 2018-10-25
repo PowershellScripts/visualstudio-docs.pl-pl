@@ -18,12 +18,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96f689d6a0b93ef91c181e536624bb09856c2f35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af377c3f0ff5e49e43d00395d8f08bf4498e6636
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257910"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883976"
 ---
 # <a name="making-commands-available"></a>Udostępnianie poleceń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ Gdy wiele pakietów VSPackage zostaną dodane do programu Visual Studio, interfe
   
  Piąty obszar głównych kontekstu jest stan interfejsu użytkownika IDE. Konteksty interfejsu użytkownika są identyfikowane za pomocą kontekstu aktywnego polecenia `GUID`s w następujący sposób:  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Dragging_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.DesignMode_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>
 
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
   
- Te identyfikatory GUID są oznaczone jako aktywną lub nieaktywną, w zależności od bieżącego stanu środowiska IDE. Wiele kontekstów interfejsu użytkownika może być aktywne w tym samym czasie.  
+  Te identyfikatory GUID są oznaczone jako aktywną lub nieaktywną, w zależności od bieżącego stanu środowiska IDE. Wiele kontekstów interfejsu użytkownika może być aktywne w tym samym czasie.  
   
 ### <a name="hiding-and-displaying-commands-based-on-context"></a>Ukrywanie i wyświetlanie poleceń na podstawie kontekstu  
  Można wyświetlić lub ukryć polecenia pakietu w środowisku IDE bez załadowania pakietu. W tym celu należy zdefiniować polecenia w pliku vsct pakietu przy użyciu `DefaultDisabled`, `DefaultInvisible`, i `DynamicVisibility` command flag i dodawania co najmniej jeden [VisibilityItem](../../extensibility/visibilityitem-element.md) elementów [ VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) sekcji. Gdy w kontekście określonego polecenia `GUID` staje się aktywny, będzie ono wyświetlane bez ładowania pakietu.  
@@ -113,13 +113,13 @@ Gdy wiele pakietów VSPackage zostaną dodane do programu Visual Studio, interfe
   
  Polecenie jest ustawiona na włączony i wyświetlany zawsze, gdy rozwiązanie istnieje; oznacza to, że zawsze, gdy jeden z następującym kontekstem polecenia identyfikatorów GUID jest aktywna:  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>  
   
--   <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
+- <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>  
   
- W tym przykładzie należy zauważyć, że flaga każdego polecenia jest oddzielny [flagi polecenia](../../extensibility/command-flag-element.md) elementu.  
+  W tym przykładzie należy zauważyć, że flaga każdego polecenia jest oddzielny [flagi polecenia](../../extensibility/command-flag-element.md) elementu.  
   
 ```  
 <Button guid="guidDynamicVisibilityCmdSet" id="cmdidMyCommand"   

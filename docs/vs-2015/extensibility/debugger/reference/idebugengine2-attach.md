@@ -17,12 +17,12 @@ ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa03f59945b1e51d0c86aee48dde27d0fa4b326b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d198baa227052fcff9e82a4d77b12624f8340616
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825699"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -73,25 +73,25 @@ int Attach(
 ## <a name="remarks"></a>Uwagi  
  Istnieją trzy powody dołączanie do programu, w następujący sposób:  
   
--   `ATTACH_REASON_LAUNCH` Wskazuje, że DE jest dołączanie do programu, ponieważ użytkownik uruchomił proces, który go zawiera.  
+- `ATTACH_REASON_LAUNCH` Wskazuje, że DE jest dołączanie do programu, ponieważ użytkownik uruchomił proces, który go zawiera.  
   
--   `ATTACH_REASON_USER` Wskazuje, że użytkownik zażądał jawnie DE można dołączyć do programu (lub proces, który zawiera program).  
+- `ATTACH_REASON_USER` Wskazuje, że użytkownik zażądał jawnie DE można dołączyć do programu (lub proces, który zawiera program).  
   
--   `ATTACH_REASON_AUTO` Wskazuje, że Niemcy jest dołączenie do określonego programu, ponieważ on już trwa debugowanie innych programów w danym procesie. Jest to również automatyczne dołączanie.  
+- `ATTACH_REASON_AUTO` Wskazuje, że Niemcy jest dołączenie do określonego programu, ponieważ on już trwa debugowanie innych programów w danym procesie. Jest to również automatyczne dołączanie.  
   
- Gdy ta metoda jest wywoływana, DE musi wysłać tych zdarzeń w sekwencji:  
+  Gdy ta metoda jest wywoływana, DE musi wysłać tych zdarzeń w sekwencji:  
   
-1.  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (jeśli go nie już zostało wysłane do konkretnego wystąpienia aparatu debugowania)  
+1. [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (jeśli go nie już zostało wysłane do konkretnego wystąpienia aparatu debugowania)  
   
-2.  [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
+2. [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
   
-3.  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
+3. [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
   
- Ponadto, jeśli jest przyczyna dołączanie `ATTACH_REASON_LAUNCH`, DE musi wysyłać [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) zdarzeń.  
+   Ponadto, jeśli jest przyczyna dołączanie `ATTACH_REASON_LAUNCH`, DE musi wysyłać [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) zdarzeń.  
   
- Gdy pobiera DE [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekt odpowiadający debugowanego, może być badana dla dowolnego prywatny interfejsu.  
+   Gdy pobiera DE [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekt odpowiadający debugowanego, może być badana dla dowolnego prywatny interfejsu.  
   
- Przed wywołaniem metody węzła programu w tablicy, biorąc pod uwagę przy `pProgram` lub `rgpProgramNodes`, personifikacji, jeśli jest to wymagane, powinna być włączona na `IDebugProgram2` interfejs, który reprezentuje węzeł program. Zwykle jednak ten krok nie jest konieczne. Aby uzyskać więcej informacji, zobacz [problemy z zabezpieczeniami](../../../extensibility/debugger/security-issues.md).  
+   Przed wywołaniem metody węzła programu w tablicy, biorąc pod uwagę przy `pProgram` lub `rgpProgramNodes`, personifikacji, jeśli jest to wymagane, powinna być włączona na `IDebugProgram2` interfejs, który reprezentuje węzeł program. Zwykle jednak ten krok nie jest konieczne. Aby uzyskać więcej informacji, zobacz [problemy z zabezpieczeniami](../../../extensibility/debugger/security-issues.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   

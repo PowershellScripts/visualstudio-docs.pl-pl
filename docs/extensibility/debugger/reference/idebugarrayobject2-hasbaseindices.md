@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69b3cf5dc0a1d86ea55f6518af30d28f2efcb959
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 381ca6922891e00469bb52cb13f0ad5890b8b3b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863519"
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
-Określa, czy tablica ma indeksy podstawowej (dolną granicę) zdefiniowane.  
+Określa, czy tablica ma podstawowy indeksów (dolne granice) zdefiniowany.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,7 +40,7 @@ int HasBaseIndices (
   
 #### <a name="parameters"></a>Parametry  
  `pfHasBaseIndices`  
- [out] Wartość TRUE, aby określić, że tablica ma indeksy podstawowej (dolną); w przeciwnym razie wartość FALSE.  
+ [out] Wartość TRUE, aby określić, czy tablica ma podstawowy indeksów (dolne granice); w przeciwnym razie wartość FALSE.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.

@@ -19,12 +19,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4c71fa8d901653babd8c3558da7eff8ff16058c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6c8aafe9eac26080bfbf57d06c7d512d1e1e62d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296832"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843434"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Używanie starszej wersji projektanta działań
 W tym temacie opisano sposób używania projektanta działań w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Podczas określania wartości za pomocą starszej wersji projektanta [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -34,17 +34,17 @@ W tym temacie opisano sposób używania projektanta działań w starszej wersji 
 ## <a name="creating-a-custom-activity"></a>Tworzenie niestandardowego działania  
  Wykonaj następujące kroki, aby utworzyć niestandardowe działanie za pomocą projektanta działań:  
   
-1.  Na **projektu** menu, kliknij przycisk **Dodaj działanie**.  
+1. Na **projektu** menu, kliknij przycisk **Dodaj działanie**.  
   
-2.  Wybierz **działania** lub **działanie (z separacją kodu)** szablonu.  
+2. Wybierz **działania** lub **działanie (z separacją kodu)** szablonu.  
   
-    1.  Użyj **działania** szablonu w celu utworzenia działanie z definicją działania i kod użytkownika, w tym samym pliku kodu.  
+   1.  Użyj **działania** szablonu w celu utworzenia działanie z definicją działania i kod użytkownika, w tym samym pliku kodu.  
   
-    2.  Użyj **działanie (z separacją kodu)** szablonu w celu utworzenia działanie z definicją działania, wyrażone jako znacznik przepływu pracy i kod użytkownika w osobnym pliku kodu.  
+   2.  Użyj **działanie (z separacją kodu)** szablonu w celu utworzenia działanie z definicją działania, wyrażone jako znacznik przepływu pracy i kod użytkownika w osobnym pliku kodu.  
   
-3.  Wpisz nazwę działania lub pozostaw nazwę domyślną, a następnie kliknij **Dodaj**.  
+3. Wpisz nazwę działania lub pozostaw nazwę domyślną, a następnie kliknij **Dodaj**.  
   
- Można również utworzyć zbiór działań niestandardowych, tworząc nowy projekt typu **biblioteki działania przepływu pracy**. Aby uzyskać więcej informacji na temat tego typu projektu, zobacz [porady: Tworzenie biblioteki działań przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
+   Można również utworzyć zbiór działań niestandardowych, tworząc nowy projekt typu **biblioteki działania przepływu pracy**. Aby uzyskać więcej informacji na temat tego typu projektu, zobacz [porady: Tworzenie biblioteki działań przepływu pracy (starsza wersja)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
   
 ## <a name="configuring-an-activity"></a>Konfigurowanie działania  
  Gdy Projektant działań jest aktywna, można użyć przeglądarki właściwości do skonfigurowania właściwości wymienione w poniższej tabeli.  

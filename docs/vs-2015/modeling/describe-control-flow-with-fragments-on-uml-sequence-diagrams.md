@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c90270876721f2a43c78375108608064d325b39a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e162b1fdc8f775fc7b4d95249ceeac8d86cd0b74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260224"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836869"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Opisywanie przepływu sterowania przy użyciu fragmentów w diagramach sekwencji UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,46 +57,46 @@ Na diagramie sekwencji UML *połączone fragmenty* pozwalają wyświetlić pętl
   
 #### <a name="to-create-a-combined-fragment"></a>Aby utworzyć połączony fragment  
   
-1.  Wybierz jeden komunikat lub sekwencję wiadomości, wszystkie rozpoczyna się w tej samej linii życia lub wykonywania wystąpienia.  
+1. Wybierz jeden komunikat lub sekwencję wiadomości, wszystkie rozpoczyna się w tej samej linii życia lub wykonywania wystąpienia.  
   
-    > [!NOTE]
-    >  Jeśli wybierzesz więcej niż jeden komunikat, tworzą one muszą nieprzerwanie sekwencji.  
+   > [!NOTE]
+   >  Jeśli wybierzesz więcej niż jeden komunikat, tworzą one muszą nieprzerwanie sekwencji.  
   
-2.  Kliknij prawym przyciskiem myszy jeden z komunikatów, wskaż opcję **Otocz**, a następnie kliknij typ połączonego fragmentu, który ma, takich jak **fragmentu połączone Alt**.  
+2. Kliknij prawym przyciskiem myszy jeden z komunikatów, wskaż opcję **Otocz**, a następnie kliknij typ połączonego fragmentu, który ma, takich jak **fragmentu połączone Alt**.  
   
-     Pojawi się nowy połączony fragment. Nagłówek wskazuje typ połączonego fragmentu wybrano, takich jak **Alt**.  
+    Pojawi się nowy połączony fragment. Nagłówek wskazuje typ połączonego fragmentu wybrano, takich jak **Alt**.  
   
-     Wewnątrz połączonego fragmentu jest fragmentu, który zawiera komunikaty, które zostały wybrane.  
+    Wewnątrz połączonego fragmentu jest fragmentu, który zawiera komunikaty, które zostały wybrane.  
   
- Możesz dodać więcej operandów interakcji do niektórych rodzajów połączonego fragmentu.  
+   Możesz dodać więcej operandów interakcji do niektórych rodzajów połączonego fragmentu.  
   
- Po zmianie rozmieszczenia wiadomości w połączony fragment, wybierz **Zmień rozmieszczanie układu** w menu skrótów, aby zmienić rozmiar ramki połączonego fragmentu.  
+   Po zmianie rozmieszczenia wiadomości w połączony fragment, wybierz **Zmień rozmieszczanie układu** w menu skrótów, aby zmienić rozmiar ramki połączonego fragmentu.  
   
 #### <a name="to-add-a-new-interaction-operand-to-a-combined-fragment"></a>Aby dodać nowe operand interakcji do połączonego fragmentu  
   
-1.  Kliknij prawym przyciskiem myszy spację wewnątrz interakcji argument operacji [2], poza wszelkie zawarte fragmentu i poniżej nagłówka połączonego fragmentu.  
+1. Kliknij prawym przyciskiem myszy spację wewnątrz interakcji argument operacji [2], poza wszelkie zawarte fragmentu i poniżej nagłówka połączonego fragmentu.  
   
-2.  Wskaż **Dodaj**.  
+2. Wskaż **Dodaj**.  
   
-3.  Kliknij przycisk **argumentu interakcji przed**, lub **Operand interakcji po**.  
+3. Kliknij przycisk **argumentu interakcji przed**, lub **Operand interakcji po**.  
   
-4.  Można dodawać komunikaty wewnątrz nowych operand interakcji za pomocą narzędzi wiadomości lub przez kopiowanie i wklejanie istniejące wiadomości.  
+4. Można dodawać komunikaty wewnątrz nowych operand interakcji za pomocą narzędzi wiadomości lub przez kopiowanie i wklejanie istniejące wiadomości.  
   
- Możesz ustawić **Guard** właściwość operandu interakcji do opisania warunków, w których są wykonywane komunikaty wewnątrz niego. Na przykład w **pętli** połączone fragmentu, osłony można użyć do określenia warunków, w którym nadal pętli. W **Alt** połączone fragmentu, można określić oddzielne warunek każdy argument interakcji.  
+   Możesz ustawić **Guard** właściwość operandu interakcji do opisania warunków, w których są wykonywane komunikaty wewnątrz niego. Na przykład w **pętli** połączone fragmentu, osłony można użyć do określenia warunków, w którym nadal pętli. W **Alt** połączone fragmentu, można określić oddzielne warunek każdy argument interakcji.  
   
 #### <a name="to-set-the-guard-of-an-interaction-operand"></a>Aby ustawić osłony operand interakcji  
   
-1.  Kliknij spację wewnątrz operand interakcji (2), poza wszelkie zawarte fragmentu.  
+1. Kliknij spację wewnątrz operand interakcji (2), poza wszelkie zawarte fragmentu.  
   
-     Obramowanie wyboru pojawia się wokół operand interakcji i wokół warunek zabezpieczenia.  
+    Obramowanie wyboru pojawia się wokół operand interakcji i wokół warunek zabezpieczenia.  
   
-     W pozycji w **właściwości** Pokazuje okno **Operand interakcji**.  
+    W pozycji w **właściwości** Pokazuje okno **Operand interakcji**.  
   
-2.  Typ warunku zabezpieczenia.  
+2. Typ warunku zabezpieczenia.  
   
-     Warunek pojawi się w górnej części fragmentu (4).  
+    Warunek pojawi się w górnej części fragmentu (4).  
   
- Można ustawić właściwości niektóre rodzaje połączonego fragmentu.  
+   Można ustawić właściwości niektóre rodzaje połączonego fragmentu.  
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>Aby ustawić lub wyświetlić właściwości połączony fragment  
   

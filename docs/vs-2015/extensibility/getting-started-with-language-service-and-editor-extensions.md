@@ -15,12 +15,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1ab7e4e0cf46d90a437f4239798c0ec8a0a28e74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862765"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Wprowadzenie do rozszerzeń usługi językowej i edytora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,17 +48,17 @@ Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspek
   
  Poniżej przedstawiono niektóre z podstawowych rodzajów rozszerzenia edytora:  
   
--   Marginesy i paski przewijania  
+- Marginesy i paski przewijania  
   
--   Znaczniki  
+- Znaczniki  
   
--   Zakończeń  
+- Zakończeń  
   
--   Opcje  
+- Opcje  
   
--   IntelliSense  
+- IntelliSense  
   
- Aby uzyskać więcej informacji na temat punktów rozszerzenia edytora, zobacz [usługi językowej i edytora punkty rozszerzenia](../extensibility/language-service-and-editor-extension-points.md).  
+  Aby uzyskać więcej informacji na temat punktów rozszerzenia edytora, zobacz [usługi językowej i edytora punkty rozszerzenia](../extensibility/language-service-and-editor-extension-points.md).  
   
 ## <a name="deploying-editor-extensions"></a>Wdrażanie rozszerzenia Edytora  
  W programie Visual Studio możesz wdrożyć rozszerzenia edytora, przez dodanie plik metadanych o nazwie source.extension.vsixmanifest do rozwiązania, kompilowania rozwiązania, a następnie dodając kopię plików binarnych i manifest w folderze, który jest znany w programie Visual Studio. Plik manifestu definiuje podstawowych informacji o rozszerzeniu (na przykład nazwy, autora, wersji i typu zawartości). Aby uzyskać więcej informacji na temat pliku manifestu VSIX i sposobu wdrażania rozszerzeń, zobacz [wysyłania rozszerzenia programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md).  

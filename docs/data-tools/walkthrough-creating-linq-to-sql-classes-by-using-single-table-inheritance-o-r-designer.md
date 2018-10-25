@@ -13,31 +13,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20565c798e9c94cb40a39deb4a80f9a83d67e161
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 943b75c9c5f9c0c32ab02b5e73c07282728e0beb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864734"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Przewodnik: Tworzenie LINQ do klas SQL za pomocą pojedynczej tabeli dziedziczenia (O/R Designer)
 [LINQ to SQL tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) obsługuje dziedziczenie pojedynczej tabeli, ponieważ jest on zwykle implementowany w systemach relacyjnych. W tym przewodniku rozszerza ogólne kroki podane w [porady: Konfigurowanie dziedziczenia za pomocą Projektanta obiektów relacyjnych](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tematu i zawiera dane rzeczywiste, aby zademonstrować użycie dziedziczenie w [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
  Z tego instruktażu należy wykonać następujące zadania:
 
--   Utwórz tabelę bazy danych i Dodaj do niego dane.
+- Utwórz tabelę bazy danych i Dodaj do niego dane.
 
--   Tworzenie aplikacji Windows Forms.
+- Tworzenie aplikacji Windows Forms.
 
--   Dodaj [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] plik do projektu.
+- Dodaj [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] plik do projektu.
 
--   Tworzenie nowych klas jednostek.
+- Tworzenie nowych klas jednostek.
 
--   Konfigurowanie do używania dziedziczenia klas jednostek.
+- Konfigurowanie do używania dziedziczenia klas jednostek.
 
--   Zapytania odziedziczoną klasę.
+- Zapytania odziedziczoną klasę.
 
--   Wyświetlanie danych w formularzu Windows.
+- Wyświetlanie danych w formularzu Windows.
 
 ## <a name="create-a-table-to-inherit-from"></a>Utwórz tabelę odziedziczone po
  Aby zobaczyć, jak działa dziedziczenie, należy utworzyć małą `Person` tabeli, użyj go jako klasę bazową, a następnie utwórz `Employee` obiektu, który dziedziczy z niego.
@@ -191,6 +191,6 @@ ms.locfileid: "37174942"
 
 - [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Wskazówki: Tworzenie LINQ do klas SQL (Projektant O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Instrukcje: przypisywanie procedur składowanych na potrzeby wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Porady: Generowanie modelu obiektu w języku Visual Basic lub C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

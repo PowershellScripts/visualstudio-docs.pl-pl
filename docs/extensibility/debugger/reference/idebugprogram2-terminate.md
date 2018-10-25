@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5eb14280947ff93a4a0c2ab6d2cf025037fc06aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 88fcbf0667c026cbbfc449936f92d440590e9a8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834269"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 Kończy program.  
@@ -38,13 +38,13 @@ int Terminate();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli to możliwe program zostanie zakończony i zwolniona z procesu; w przeciwnym razie aparat debugowania (DE) będzie wykonywać żadnych cleanup konieczne.  
+ Jeśli to możliwe program zostanie zakończony i zwolnione z procesu; w przeciwnym razie aparat debugowania (DE) będzie wykonać wszelkie niezbędne czyszczenia.  
   
- Ta metoda lub [przerwania](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) metoda jest wywoływana przez środowisko IDE, zwykle w odpowiedzi na użytkownika zatrzymywanie debugowania wszystkie. Implementacja tej metody należy zakończyć w idealnym przypadku program w ramach procesu. Jeśli nie jest to możliwe, DE należy uniemożliwić uruchamianie więcej w tym procesie programu (i wykonanie oczyszczania konieczne). Jeśli `IDebugProcess2::Terminate` wywołano metodę IDE, cały proces zostanie zakończony pewnego czasu po `IDebugProgram2::Terminate` metoda jest wywoływana.  
+ Ta metoda lub [Zakończ](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) metoda jest wywoływana przez środowisko IDE, zwykle w odpowiedzi na użytkownika zatrzymywanie debugowania wszystkie. Implementacja tej metody w idealnym przypadku należy zakończyć program w ramach procesu. Jeśli nie jest to możliwe, DE powinien uniemożliwienie program dalszych w ramach tego procesu (i wykonaj wszelkie niezbędne czyszczenia). Jeśli `IDebugProcess2::Terminate` wywołano metodę IDE, cały proces zostanie zakończony jakiś czas po `IDebugProgram2::Terminate` metoda jest wywoływana.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [Zakończenie](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)
+ [Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)

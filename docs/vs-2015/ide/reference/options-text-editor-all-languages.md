@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2584f56e31dea55ff7a4d67b61b8c7453ade4c10
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 987e0339f2d27405c81ce05b6a30181a1469be7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255713"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884176"
 ---
 # <a name="options-text-editor-all-languages"></a>Opcje, edytor tekstu, wszystkie języki
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,11 +79,11 @@ To okno dialogowe pozwala zmienić domyślne zachowanie edytora kodu. Te ustawie
  Zastosuj poleceń Wytnij lub Kopiuj do pustych wierszy, jeśli nie zaznaczono żadnego fragmentu  
  Ta opcja ustawia zachowanie edytora, gdy umieścisz kursor w pustym wierszu, wybierz nothing, a następnie skopiować lub wyciąć.  
   
--   Po wybraniu tej opcji pusty wiersz jest skopiować lub wyciąć. Jeśli następnie wkleić, jest wstawiany nowy, pusty wiersz.  
+- Po wybraniu tej opcji pusty wiersz jest skopiować lub wyciąć. Jeśli następnie wkleić, jest wstawiany nowy, pusty wiersz.  
   
--   Gdy ta opcja jest wyczyszczone, polecenie Cut usuwa pustych wierszy. Jednak dane w Schowku jest zachowywana. W związku z tym Jeśli następnie użyć polecenia Wklej, zostanie wklejony zawartości ostatnio skopiowana do Schowka. Jeśli nic nie został skopiowany wcześniej, nic nie zostanie wklejony.  
+- Gdy ta opcja jest wyczyszczone, polecenie Cut usuwa pustych wierszy. Jednak dane w Schowku jest zachowywana. W związku z tym Jeśli następnie użyć polecenia Wklej, zostanie wklejony zawartości ostatnio skopiowana do Schowka. Jeśli nic nie został skopiowany wcześniej, nic nie zostanie wklejony.  
   
- To ustawienie nie ma wpływu na Kopiuj lub Wytnij gdy wiersz nie jest pusty. Jeśli nic nie jest zaznaczone, cały wiersz jest skopiować lub wyciąć. Jeśli następnie wkleić, tekst cały wiersz i jej znak endline zostaną wklejone.  
+  To ustawienie nie ma wpływu na Kopiuj lub Wytnij gdy wiersz nie jest pusty. Jeśli nic nie jest zaznaczone, cały wiersz jest skopiować lub wyciąć. Jeśli następnie wkleić, tekst cały wiersz i jej znak endline zostaną wklejone.  
   
 > [!TIP]
 >  Aby wyświetlić wskaźniki dla miejsca do magazynowania oraz o końców linii, a zatem odróżnienia wiersze z wcięciami wiersze, które są całkowicie pusty, wybierz **zaawansowane** z **Edytuj** menu i wybierz polecenie **widoku biały Miejsce**.  

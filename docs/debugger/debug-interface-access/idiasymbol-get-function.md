@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_function | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_function — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de6d47e64a5f3b3d2db612f562f7de0e449747f1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ba2ceaa0ee7dcd3ef71afdda17d157737338920a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465645"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824248"
 ---
 # <a name="idiasymbolgetfunction"></a>IDiaSymbol::get_function
 Pobiera flagę określającą, czy symboli publicznych odwołuje się do funkcji.  
@@ -34,13 +34,13 @@ HRESULT get_function (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca `TRUE` Jeśli symbolu odwołuje się do funkcji; w przeciwnym razie zwraca `FALSE`.  
+ [out] Zwraca `TRUE` Jeśli symbol, który odwołuje się do funkcji; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   

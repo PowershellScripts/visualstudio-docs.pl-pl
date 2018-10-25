@@ -16,12 +16,12 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a903d1cfdb503650f044a17961542c9d011b55bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229258"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856668"
 ---
 # <a name="test-area-5-change-source-control"></a>Obszar testowy 5: zmienianie kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Ten obszar testowy wtyczki kontroli źródła obejmuje zmiany kontroli źródła
   
  **Zmień kontrolę źródła** polecenie dostarcza cztery podstawowe funkcje dla użytkownika:  
   
--   **Powiązania:**  
+- **Powiązania:**  
   
-     Umożliwia użytkownikowi określić lub ponownie ustanowić połączenia kontroli źródła między rozwiązania/projektu i magazynu w wersji.  
+   Umożliwia użytkownikowi określić lub ponownie ustanowić połączenia kontroli źródła między rozwiązania/projektu i magazynu w wersji.  
   
--   **Usuwanie powiązania:**  
+- **Usuwanie powiązania:**  
   
-     Usuwa projekt/rozwiązanie z kontrolą źródła w poszczególnych połączeń.  
+   Usuwa projekt/rozwiązanie z kontrolą źródła w poszczególnych połączeń.  
   
--   **Łączenie/rozłączanie połączeń:**  
+- **Łączenie/rozłączanie połączeń:**  
   
- Włącza lub wyłącza połączonych lub offline stan rozwiązania kontrolowanego, co zostało omówione w obszarze 3. Aby uzyskać więcej informacji, zobacz [testu obszarze 3: wyewidencjonowanie / Cofnij wyewidencjonowanie](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
+  Włącza lub wyłącza połączonych lub offline stan rozwiązania kontrolowanego, co zostało omówione w obszarze 3. Aby uzyskać więcej informacji, zobacz [testu obszarze 3: wyewidencjonowanie / Cofnij wyewidencjonowanie](../../extensibility/internals/test-area-3-check-out-undo-checkout.md).  
   
 ## <a name="command-menu-access"></a>Dostęp do Menu polecenia  
  Następujące [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zintegrowanego rozwoju środowiska menu Ścieżka jest używana w przypadkach testowych.  

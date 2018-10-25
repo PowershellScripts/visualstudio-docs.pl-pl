@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - azure
-ms.openlocfilehash: 871b4d2fdd180481bdd496aa45ef960a24b1ef18
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 6cf5c2529d54637e1e6ad4a111c3d3c456e6fae1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882395"
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Trenowanie modeli sztucznej Inteligencji w usłudze Azure Batch AI
 
@@ -27,16 +27,15 @@ Jest zintegrowany z Visual Studio Tools dla sztucznej Inteligencji, dzięki czem
 
 1. Uruchom program Visual Studio. Otwórz **Eksploratora serwera** , otwierając **narzędzia si** menu i wybierając pozycję **wybierz klastra**
 
-    ![Selektor klastra](media\train-model\select-cluster.png)
-
+    ![Selektor klastra](media/train-model/select-cluster.png)
 
 2. Rozwiń **narzędzia si**. Wszystkie zasoby usługi Batch AI, w których masz będzie można automatycznie wykryte i są wyświetlane w Eksploratorze serwera.
 
-    ![Galeria przykładów](media\train-model\batchai.png)
+    ![Galeria przykładów](media/train-model/batchai.png)
 
 3. Wybierz **Widok > Team Explorer...**  otworzyć **Team Explorer** okna, w którym można połączyć się z usługi GitHub lub DevOps platformy Azure lub klonowanie repozytorium.
 
-    ![Okno Eksploratora zespołu DevOps platformy Azure, usługi GitHub, wyświetlanie i klonowanie repozytorium](media\train-model\team-explorer.png)
+    ![Okno Eksploratora zespołu DevOps platformy Azure, usługi GitHub, wyświetlanie i klonowanie repozytorium](media/train-model/team-explorer.png)
 
 4. W polu adres URL w taki sposób, w obszarze **lokalne repozytoria Git**, wprowadź `https://github.com/Microsoft/samples-for-ai`, wprowadź folderu na sklonowane pliki i wybierz **klonowania**.
 
@@ -45,20 +44,19 @@ Jest zintegrowany z Visual Studio Tools dla sztucznej Inteligencji, dzięki czem
 
 5. Po ukończeniu klonowania kliknij **Plik > Otwórz rozwiązanie > Projekt / rozwiązanie**
 
-    ![Galeria przykładów](media\train-model\open-solution.png)
+    ![Galeria przykładów](media/train-model/open-solution.png)
 
-5. Otwórz **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** w katalogu sklonowane repozytorium
+6. Otwórz **samples-for-ai\TensorFlowExamples\TensorFlowExamples.sln** w katalogu sklonowane repozytorium
 
-    ![Galeria przykładów](media\train-model\tensorflowexamples.png)
+    ![Galeria przykładów](media/train-model/tensorflowexamples.png)
 
-5. Zestaw mnist ręcznie ZAPISANYCH projektu jako ** projekt startowy **
+7. Zestaw mnist ręcznie ZAPISANYCH projektu jako ** projekt startowy **
 
-    ![Galeria przykładów](media\train-model\mnist-startup.png)
+    ![Galeria przykładów](media/train-model/mnist-startup.png)
 
-1. ** Kliknij prawym przyciskiem myszy ** projektu mnist ręcznie ZAPISANYCH **Prześlij zadanie**
+8. <strong>Kliknij prawym przyciskiem myszy ** projektu mnist ręcznie ZAPISANYCH ** Prześlij zadanie</strong>
 
-    ![Galeria przykładów](media\train-model\submit-job.png)
+    ![Galeria przykładów](media/train-model/submit-job.png)
+9. Wybierz swoje **usługi Azure Batch AI** klastra, a następnie kliknij przycisk **importu**. Wybierz `AzureBatchAI_TF_MNIST.json` plik, aby szybko wypełnić niektóre wartości domyślnych, takich jak obraz platformy Docker do użycia. Następnie kliknij przycisk **przesyłania**
 
-1. Wybierz swoje **usługi Azure Batch AI** klastra, a następnie kliknij przycisk **importu**. Wybierz `AzureBatchAI_TF_MNIST.json` plik, aby szybko wypełnić niektóre wartości domyślnych, takich jak obraz platformy Docker do użycia. Następnie kliknij przycisk **przesyłania**
-
-    ![Galeria przykładów](media\train-model\submit-batch.png)
+    ![Galeria przykładów](media/train-model/submit-batch.png)

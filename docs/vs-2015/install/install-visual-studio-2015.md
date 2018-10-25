@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3d44834fe02f873007e7461c789fb94f98c9208e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df09e647908b264ade467b8fafd4487641d3be6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301869"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841107"
 ---
 # <a name="install-visual-studio-2015"></a>Instalowanie programu Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,17 +135,17 @@ Ta strona zawiera szczegółowe informacje pomocne przy instalowaniu **programu 
   
 #### <a name="to-install-or-uninstall-help-content"></a>Aby zainstalować lub odinstalować zawartość pomocy  
   
-1.  Na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu paska, wybierz polecenie **pomocy**, **Dodawanie i usuwanie zawartości Pomocy**.  
+1. Na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu paska, wybierz polecenie **pomocy**, **Dodawanie i usuwanie zawartości Pomocy**.  
   
-2.  Na **Zarządzaj zawartością** karcie **podglądu pomocy firmy Microsoft**, wybierz źródło instalacji zawartości pomocy.  
+2. Na **Zarządzaj zawartością** karcie **podglądu pomocy firmy Microsoft**, wybierz źródło instalacji zawartości pomocy.  
   
-3.  Jeśli szukasz określonej kolekcji pomocy, wpisz nazwę lub słowo kluczowe w **wyszukiwania** polu tekstowym, a następnie naciśnij klawisz **Enter**.  
+3. Jeśli szukasz określonej kolekcji pomocy, wpisz nazwę lub słowo kluczowe w **wyszukiwania** polu tekstowym, a następnie naciśnij klawisz **Enter**.  
   
-4.  Obok nazwy kolekcji pomocy, chcesz, aby wybrać **Dodaj** lub **Usuń** łącza.  
+4. Obok nazwy kolekcji pomocy, chcesz, aby wybrać **Dodaj** lub **Usuń** łącza.  
   
-5.  Kliknij przycisk **aktualizacji** przycisku.  
+5. Kliknij przycisk **aktualizacji** przycisku.  
   
- Aby uzyskać więcej informacji na temat sposobu zainstalowania lub wdrożenia pomocy w trybie offline, zobacz [Podręcznik administratora programu Podgląd Pomocy](../ide/help-viewer-administrator-guide.md).  
+   Aby uzyskać więcej informacji na temat sposobu zainstalowania lub wdrożenia pomocy w trybie offline, zobacz [Podręcznik administratora programu Podgląd Pomocy](../ide/help-viewer-administrator-guide.md).  
   
 ##  <a name="serviceReleases"></a> Wyszukiwanie poprawek i aktualizacji produktu  
  Ponieważ nie wszystkie rozszerzenia są zgodne, Visual Studio nie aktualizuje automatycznie rozszerzeń po uaktualnieniu z poprzednimi wersjami. Należy ponownie zainstalować rozszerzenia z [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkId=178891) lub od wydawcy oprogramowania.  

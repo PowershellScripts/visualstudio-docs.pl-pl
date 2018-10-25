@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 815186959d4a8cd1daea46c69bda976eb4483c1f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0389665349ae9c39a0f820bc047af6cc4db2b683
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282589"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867536"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Wdrożenie ClickOnce w systemie Windows Vista
 
@@ -32,25 +32,25 @@ Tworzenie aplikacji w programie Visual Studio dla kontroli konta użytkownika (U
 
 Visual Studio zawiera następujące opcje do generowania manifestu:  
   
--   Użyj manifestu osadzonego. Osadzone dane funkcji Kontrola konta użytkownika w pliku wykonywalnym aplikacji, a następnie uruchom jako zwykły użytkownik.  
+- Użyj manifestu osadzonego. Osadzone dane funkcji Kontrola konta użytkownika w pliku wykonywalnym aplikacji, a następnie uruchom jako zwykły użytkownik.  
   
-     To ustawienie domyślne (chyba że używasz ClickOnce). To ustawienie sprzyja zwykły sposób, w którym działa program Visual Studio w systemie Windows Vista, za pomocą Generowanie wewnętrznego i zewnętrznego manifestu za pomocą `AsInvoker`.  
+   To ustawienie domyślne (chyba że używasz ClickOnce). To ustawienie sprzyja zwykły sposób, w którym działa program Visual Studio w systemie Windows Vista, za pomocą Generowanie wewnętrznego i zewnętrznego manifestu za pomocą `AsInvoker`.  
   
--   Użyj manifestem zewnętrznym. Generowanie manifestem zewnętrznym przy użyciu *app.manifest*.  
+- Użyj manifestem zewnętrznym. Generowanie manifestem zewnętrznym przy użyciu *app.manifest*.  
   
-     Korzystając z informacji podanych w spowoduje to wygenerowanie manifestem zewnętrznym *app.manifest*. Podczas publikowania aplikacji za pomocą technologii ClickOnce lub rejestracji wolnego modelu COM, program Visual Studio dodaje *app.manifest* do projektu, a następnie dodaje tę opcję.  
+   Korzystając z informacji podanych w spowoduje to wygenerowanie manifestem zewnętrznym *app.manifest*. Podczas publikowania aplikacji za pomocą technologii ClickOnce lub rejestracji wolnego modelu COM, program Visual Studio dodaje *app.manifest* do projektu, a następnie dodaje tę opcję.  
   
--   Użyj nie manifestu. Utwórz aplikację bez manifestu.  
+- Użyj nie manifestu. Utwórz aplikację bez manifestu.  
   
-     To podejście jest nazywane również *wirtualizacji*. Użyj tej opcji w celu zgodności z istniejącymi aplikacjami z wcześniejszych wersji programu Visual Studio.  
+   To podejście jest nazywane również *wirtualizacji*. Użyj tej opcji w celu zgodności z istniejącymi aplikacjami z wcześniejszych wersji programu Visual Studio.  
   
- Nowe właściwości są dostępne na **aplikacji** strony Projektant projektu (Visual C# tylko dla projektów) i formatu pliku projektu MSBuild.  
+  Nowe właściwości są dostępne na **aplikacji** strony Projektant projektu (Visual C# tylko dla projektów) i formatu pliku projektu MSBuild.  
   
- Metoda na temat konfigurowania Generowanie manifestu UAC w środowisku IDE programu Visual Studio różni się w zależności od typu projektu (Visual C# lub Visual Basic).  
+  Metoda na temat konfigurowania Generowanie manifestu UAC w środowisku IDE programu Visual Studio różni się w zależności od typu projektu (Visual C# lub Visual Basic).  
   
-   * Aby uzyskać informacje o konfigurowaniu projektów języka Visual C# do generowania manifestu, zobacz [strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md).  
+  * Aby uzyskać informacje o konfigurowaniu projektów języka Visual C# do generowania manifestu, zobacz [strona aplikacji, Projektant projektu (C#)](../ide/reference/application-page-project-designer-csharp.md).  
   
-   * Aby uzyskać informacje o konfigurowaniu projektów języka Visual Basic do generowania manifestu, zobacz [strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+  * Aby uzyskać informacje o konfigurowaniu projektów języka Visual Basic do generowania manifestu, zobacz [strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   

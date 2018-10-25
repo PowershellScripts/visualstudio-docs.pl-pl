@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5d28ca688bbad0054f7522034bfe309dcb1fe698
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e6b7bdd99500f0be29c8101ef9993b565914300
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830590"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Nie ignoruj wyników metod
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "49250110"
 ## <a name="cause"></a>Przyczyna  
  Istnieje kilka możliwych przyczyn tego ostrzeżenia:  
   
--   Nowy obiekt jest utworzony, ale nigdy używane.  
+- Nowy obiekt jest utworzony, ale nigdy używane.  
   
--   Wywoływana jest metoda, która tworzy i zwraca nowy ciąg, a nowy ciąg nigdy nie jest używany.  
+- Wywoływana jest metoda, która tworzy i zwraca nowy ciąg, a nowy ciąg nigdy nie jest używany.  
   
--   Metody COM lub P/Invoke, która zwraca wartość HRESULT lub kodu błędu, który nigdy nie jest używany. Opis reguły  
+- Metody COM lub P/Invoke, która zwraca wartość HRESULT lub kodu błędu, który nigdy nie jest używany. Opis reguły  
   
- Tworzenie obiektów niepotrzebne i skojarzonych elementów bezużytecznych nieużywane obiektu obniżyć wydajność.  
+  Tworzenie obiektów niepotrzebne i skojarzonych elementów bezużytecznych nieużywane obiektu obniżyć wydajność.  
   
- Ciągów są niezmienne i metod, takich jak String.ToUpper zwraca nowe wystąpienie ciągu zamiast modyfikowania wystąpienie ciągu w przypadku wywołania metody.  
+  Ciągów są niezmienne i metod, takich jak String.ToUpper zwraca nowe wystąpienie ciągu zamiast modyfikowania wystąpienie ciągu w przypadku wywołania metody.  
   
- Ignorowanie HRESULT lub kod błędu może prowadzić do nieoczekiwanego zachowania w warunkach błędu lub warunki zasobów.  
+  Ignorowanie HRESULT lub kod błędu może prowadzić do nieoczekiwanego zachowania w warunkach błędu lub warunki zasobów.  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Jeśli metoda tworzy nowe wystąpienie obiektu B, który nie jest nigdy używana, przekaż wystąpienie jako argument do innej metody lub Przypisz wystąpienie do zmiennej. Jeśli tworzenie obiektów nie jest konieczne, usuń go.- lub -  

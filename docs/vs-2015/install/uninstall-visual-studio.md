@@ -19,12 +19,12 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 25fbfec12299cecf265437baa04a3dd86093f30b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ec83128682a874a5491d62762b424045f11c4b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849856"
 ---
 # <a name="uninstall-visual-studio"></a>Odinstalowywanie programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ Na tej stronie przeprowadzą odinstalowywania programu Visual Studio 2015 starsz
 ##  <a name="uninstalling"></a>   
 #### <a name="to-uninstall-visual-studio-by-using-the-standard-uninstallation-method"></a>Aby odinstalować program Visual Studio przy użyciu "standardowej" metody odinstalowywania  
   
-1.  W **Panelu sterowania**na **programy i funkcje** wybierz wydanie produktu, który chcesz odinstalować, a następnie wybierz **zmiany**.  
+1. W **Panelu sterowania**na **programy i funkcje** wybierz wydanie produktu, który chcesz odinstalować, a następnie wybierz **zmiany**.  
   
-2.  W Kreatorze instalacji wybierz **Odinstaluj**, wybierz **tak**, a następnie postępuj zgodnie z instrukcjami zawartymi w kreatorze.  
+2. W Kreatorze instalacji wybierz **Odinstaluj**, wybierz **tak**, a następnie postępuj zgodnie z instrukcjami zawartymi w kreatorze.  
   
- Ta standardowa, czyli domyślna, metoda pozostawi pewne elementy przez pierwszą instalację programu Visual Studio zainstalowane pierwotnie (na przykład program Microsoft .NET Framework, Microsoft pakiety redystrybucyjne Visual C++, program Microsoft SQL Server itp.).   Pozostawimy je zainstalować, ponieważ zależą od nich wiele innych aplikacji. Jednak jeśli chcesz je także usunąć, wybierz ich pozycje w **programy i funkcje**i Usuń każdy z nich osobno.  
+   Ta standardowa, czyli domyślna, metoda pozostawi pewne elementy przez pierwszą instalację programu Visual Studio zainstalowane pierwotnie (na przykład program Microsoft .NET Framework, Microsoft pakiety redystrybucyjne Visual C++, program Microsoft SQL Server itp.).   Pozostawimy je zainstalować, ponieważ zależą od nich wiele innych aplikacji. Jednak jeśli chcesz je także usunąć, wybierz ich pozycje w **programy i funkcje**i Usuń każdy z nich osobno.  
   
 #### <a name="to-uninstall-visual-studio-and-all-other-related-files-that-is-to-uninstall-almost-everything"></a>Aby odinstalować program Visual Studio i wszystkie powiązane pliki (czyli odinstalować prawie wszystko)  
   
@@ -66,18 +66,18 @@ Na tej stronie przeprowadzą odinstalowywania programu Visual Studio 2015 starsz
   
 #### <a name="to-roll-back-to-a-previous-version-or-release-of--visual-studio"></a>Aby wrócić do poprzedniej wersji lub wydania programu Visual Studio  
   
-1.  Odinstaluj program Visual Studio przy użyciu dowolnej metody wymienionej w tym temacie.  
+1. Odinstaluj program Visual Studio przy użyciu dowolnej metody wymienionej w tym temacie.  
   
-    > [!WARNING]
-    >  Odinstalowanie aktualnego wydania programu Visual Studio (lub programu Visual Studio Update), a następnie zainstalowanie poprzedniego wydania może nie działać zgodnie z oczekiwaniami.  
-    >   
-    >  Wynik zależy od zainstalowanej wersji lub wydania programu Visual Studio został zainstalowany, które wersje jej składniki są zainstalowane, które produkty są zainstalowane mających zależności albo wersję programu Visual Studio lub jej składniki, a na koniec na które wcześniejszej wersji programu Visual Studio planujesz zainstalować lub ponownie zainstalować.  Z powodu tych wszystkich zmiennych standardowa Dezinstalacja są będzie często pozostawia składniki, które mogą nie działać z poprzednich wersji programu Visual Studio lub wersji.  
-    >   
-    >  W związku z tym, aby uzyskać najlepsze wyniki, zaleca się używanie [dezinstalatora programu Visual Studio narzędzie](https://github.com/Microsoft/VisualStudioUninstaller/releases).  
+   > [!WARNING]
+   >  Odinstalowanie aktualnego wydania programu Visual Studio (lub programu Visual Studio Update), a następnie zainstalowanie poprzedniego wydania może nie działać zgodnie z oczekiwaniami.  
+   >   
+   >  Wynik zależy od zainstalowanej wersji lub wydania programu Visual Studio został zainstalowany, które wersje jej składniki są zainstalowane, które produkty są zainstalowane mających zależności albo wersję programu Visual Studio lub jej składniki, a na koniec na które wcześniejszej wersji programu Visual Studio planujesz zainstalować lub ponownie zainstalować.  Z powodu tych wszystkich zmiennych standardowa Dezinstalacja są będzie często pozostawia składniki, które mogą nie działać z poprzednich wersji programu Visual Studio lub wersji.  
+   >   
+   >  W związku z tym, aby uzyskać najlepsze wyniki, zaleca się używanie [dezinstalatora programu Visual Studio narzędzie](https://github.com/Microsoft/VisualStudioUninstaller/releases).  
   
-2.  Zainstaluj lub ponownie zainstaluj starszą wersję programu Visual Studio, której chcesz użyć.  
+2. Zainstaluj lub ponownie zainstaluj starszą wersję programu Visual Studio, której chcesz użyć.  
   
- Nawet wtedy, gdy możesz zainstalować poprzednią wersję programu Visual Studio, program instalacyjny może nadal próbować użyć nowszej wersji lub wydania, jeśli jest on dostępny. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie określonej wersji programu Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) tematu.  
+   Nawet wtedy, gdy możesz zainstalować poprzednią wersję programu Visual Studio, program instalacyjny może nadal próbować użyć nowszej wersji lub wydania, jeśli jest on dostępny. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie określonej wersji programu Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) tematu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instalowanie programu Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f7710a84b05743c738bd694be0e5bcc117ab19
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 23286c6b042b7064c5ebfdf758a6b82e1b97f961
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880282"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850246"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określanie plików symboli (pdb) i plików źródłowych w debugerze programu Visual Studio
 
@@ -67,24 +67,24 @@ Ponadto debuger wyszukuje pliki symboli w następujących lokalizacjach:
    
    Domyślnie jeśli skompilowałeś bibliotekę DLL lub *.exe* pliku na komputerze, konsolidator umieszcza pełną ścieżkę i nazwę skojarzonego *.pdb* pliku w bibliotece DLL lub *.exe* pliku. Debuger sprawdza, czy plik symboli znajduje się w tej lokalizacji.  
    
-1. W tym samym folderze, co biblioteki DLL lub *.exe* pliku.
+2. W tym samym folderze, co biblioteki DLL lub *.exe* pliku.
    
-1. Wszystkie lokalizacje określone w opcjach debugera dla plików symboli. Aby dodać i włączyć lokalizacje symboli, zobacz [skonfigurować lokalizacje symboli i ładowania opcji](#BKMK_Specify_symbol_locations_and_loading_behavior). 
+3. Wszystkie lokalizacje określone w opcjach debugera dla plików symboli. Aby dodać i włączyć lokalizacje symboli, zobacz [skonfigurować lokalizacje symboli i ładowania opcji](#BKMK_Specify_symbol_locations_and_loading_behavior). 
    
-    - Dowolnego folderu pamięci podręcznej symboli.  
+   - Dowolnego folderu pamięci podręcznej symboli.  
   
-    - Określonej sieci internet, lub lokalne serwery symboli i lokalizacje, takie jak serwery symboli firmy Microsoft, w przypadku wybrania. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można pobierać pliki symboli debugowania z serwerów symboli, które implementują `symsrv` protokołu. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) i [Debugging Tools for Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) to dwa narzędzia, które mogą korzystać z serwerów symboli. 
+   - Określonej sieci internet, lub lokalne serwery symboli i lokalizacje, takie jak serwery symboli firmy Microsoft, w przypadku wybrania. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można pobierać pliki symboli debugowania z serwerów symboli, które implementują `symsrv` protokołu. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6) i [Debugging Tools for Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) to dwa narzędzia, które mogą korzystać z serwerów symboli. 
       
-      Serwery symboli, które mogą obejmować:  
+     Serwery symboli, które mogą obejmować:  
       
-      **Publiczne serwery symboli firmy Microsoft**: Aby debugować awarię, która występuje podczas wywoływania biblioteki DLL systemu lub do biblioteki innych firm, często muszą system *.pdb* plików. System *.pdb* pliki zawierają symbole dla Windows dll, *.exe* plików i sterowników urządzeń. Możesz uzyskać symbole dla systemów operacyjnych Windows, MDAC, IIS i ISA i [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] z publicznych serwerów symboli firmy Microsoft. 
+     **Publiczne serwery symboli firmy Microsoft**: Aby debugować awarię, która występuje podczas wywoływania biblioteki DLL systemu lub do biblioteki innych firm, często muszą system *.pdb* plików. System *.pdb* pliki zawierają symbole dla Windows dll, *.exe* plików i sterowników urządzeń. Możesz uzyskać symbole dla systemów operacyjnych Windows, MDAC, IIS i ISA i [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] z publicznych serwerów symboli firmy Microsoft. 
       
-      **Serwery w sieci wewnętrznej lub na komputerze lokalnym symboli**: zespół lub firma mogą tworzyć serwery symboli dla własnych produktów i jako pamięci podręcznej dla symboli ze źródeł zewnętrznych. Możesz mieć serwer symboli na własnym komputerze. 
+     **Serwery w sieci wewnętrznej lub na komputerze lokalnym symboli**: zespół lub firma mogą tworzyć serwery symboli dla własnych produktów i jako pamięci podręcznej dla symboli ze źródeł zewnętrznych. Możesz mieć serwer symboli na własnym komputerze. 
       
-      **Serwery symboli firm**: dostawców aplikacji Windows i biblioteki można zapewnić dostęp do serwera symboli w Internecie. 
+     **Serwery symboli firm**: dostawców aplikacji Windows i biblioteki można zapewnić dostęp do serwera symboli w Internecie. 
     
-    > [!WARNING]
-    > Jeśli używasz serwera symboli innego niż publiczne serwery symboli firmy Microsoft, upewnij się, że serwer symboli i jego ścieżka są godne zaufania. Ponieważ pliki symboli mogą zawierać dowolny kod wykonywalny, może być narażony na zagrożenia bezpieczeństwa.  
+     > [!WARNING]
+     > Jeśli używasz serwera symboli innego niż publiczne serwery symboli firmy Microsoft, upewnij się, że serwer symboli i jego ścieżka są godne zaufania. Ponieważ pliki symboli mogą zawierać dowolny kod wykonywalny, może być narażony na zagrożenia bezpieczeństwa.  
 
 <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>
 ### <a name="configure-symbol-locations-and-loading-options"></a>Konfiguruj lokalizacje symboli i opcje ładowania
@@ -101,7 +101,7 @@ Na **narzędzia** > **opcje** > **debugowanie** > **symbole** strony, możesz:
    
    ![Narzędzia &#45; opcje &#45; debugowanie &#45; strony symbole](media/dbg-options-symbols.png "narzędzia &#45; opcje &#45; debugowanie &#45; strony symboli")  
    
-1. W obszarze **symboli (.pdb) lokalizacji**,
+2. W obszarze **symboli (.pdb) lokalizacji**,
    - Aby użyć **serwery symboli firmy Microsoft**, zaznacz pole wyboru.  
    
    - Aby dodać nowe lokalizacja serwera symboli
@@ -119,21 +119,21 @@ Na **narzędzia** > **opcje** > **debugowanie** > **symbole** strony, możesz:
    - Aby edytować adres URL lub ścieżkę, kliknij dwukrotnie wpis, lub zaznacz ją i naciśnij klawisz **F2**.  
    - Aby usunąć wpis, zaznacz go, a następnie wybierz **-** ikony.
   
-1.  (Opcjonalnie) Aby zwiększyć wydajność ładowania symboli, w obszarze **pamięci podręcznej symboli w tym katalogu**, wpisz ścieżkę folderu lokalnego, która może kopiować serwery symboli symbole.  
+3. (Opcjonalnie) Aby zwiększyć wydajność ładowania symboli, w obszarze **pamięci podręcznej symboli w tym katalogu**, wpisz ścieżkę folderu lokalnego, która może kopiować serwery symboli symbole.  
   
-    > [!NOTE]
-    > Nie należy umieszczać w folderze chronionym, na przykład C:\Windows lub podfolder folderu pamięci podręcznej symboli. Zamiast tego użyj folderu przeznaczonego do odczytu i zapisu.  
+   > [!NOTE]
+   > Nie należy umieszczać w folderze chronionym, na przykład C:\Windows lub podfolder folderu pamięci podręcznej symboli. Zamiast tego użyj folderu przeznaczonego do odczytu i zapisu.  
   
-    > [!NOTE]
-    > Dla projektów języka C++, jeśli masz `_NT_SYMBOL_PATH` środowiska zmienna jest ustawiona, jej spowoduje zastąpienie wartości ustawionych w obszarze **pamięci podręcznej symboli w tym katalogu**.
+   > [!NOTE]
+   > Dla projektów języka C++, jeśli masz `_NT_SYMBOL_PATH` środowiska zmienna jest ustawiona, jej spowoduje zastąpienie wartości ustawionych w obszarze **pamięci podręcznej symboli w tym katalogu**.
   
-1. Określ moduły, które chcesz, aby debuger można załadować z **symboli (.pdb) lokalizacji** podczas uruchamiania.  
+4. Określ moduły, które chcesz, aby debuger można załadować z **symboli (.pdb) lokalizacji** podczas uruchamiania.  
   
-  -  Wybierz **Załaduj wszystkie moduły, chyba że wykluczone** (ustawienie domyślne), aby załadować wszystkie symbole dla wszystkich modułów w lokalizacji pliku symboli, z wyjątkiem wykluczania określonych modułów. Aby wykluczyć niektóre moduły, wybierz **Określ wyłączone moduły**, wybierz opcję **+** ikony, wpisz nazwy modułów, które chcesz wykluczyć i wybierz **OK**.  
+   -  Wybierz **Załaduj wszystkie moduły, chyba że wykluczone** (ustawienie domyślne), aby załadować wszystkie symbole dla wszystkich modułów w lokalizacji pliku symboli, z wyjątkiem wykluczania określonych modułów. Aby wykluczyć niektóre moduły, wybierz **Określ wyłączone moduły**, wybierz opcję **+** ikony, wpisz nazwy modułów, które chcesz wykluczyć i wybierz **OK**.  
   
-  -  Aby załadować tylko te moduły, które określisz z lokalizacji plików symboli, wybierz **ładowania tylko określonych modułów**. Wybierz **Określ uwzględnione moduły**, wybierz opcję **+** ikony, wpisz nazwy modułów do uwzględnienia, a następnie wybierz pozycję **OK**. Pliki symboli dla innych modułów nie są ładowane.  
+   -  Aby załadować tylko te moduły, które określisz z lokalizacji plików symboli, wybierz **ładowania tylko określonych modułów**. Wybierz **Określ uwzględnione moduły**, wybierz opcję **+** ikony, wpisz nazwy modułów do uwzględnienia, a następnie wybierz pozycję **OK**. Pliki symboli dla innych modułów nie są ładowane.  
   
-1.  Wybierz **OK**.
+5. Wybierz **OK**.
 
 ## <a name="other-symbol-options-for-debugging"></a>Inne opcje symboli debugowania
   

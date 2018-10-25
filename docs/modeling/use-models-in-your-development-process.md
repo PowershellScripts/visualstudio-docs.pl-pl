@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e69fe2741329ee7e8b2cae6b99dca150caa022fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824299"
 ---
 # <a name="use-models-in-your-development-process"></a>Używanie modeli w procesie tworzenia aplikacji
 
@@ -123,7 +123,7 @@ Model można wyświetlić za pomocą kilka rodzajów diagramów. Aby uzyskać in
 Różne rodzaje diagramów są przydatne do opisywania projektu na różnych poziomach abstrakcji. Wiele typów diagram przydają się w więcej niż jeden poziom. W poniższej tabeli przedstawiono, jak używać każdego typu diagramu.
 
 |Poziom projektu|Typy diagramów|
-|------------------|-------------------|
+|-|-|
 |Proces biznesowy<br /><br /> Rozpoznając kontekst, w którym będzie używany system pomaga zrozumieć, jakie użytkownicy z niego.|— Diagramy klas koncepcyjny opisują koncepcji biznesowych używanych w ramach procesu biznesowego.|
 |Wymagania dotyczące użytkownika<br /><br /> Definicja użytkownicy muszą z systemu.|— Reguły biznesowe i jakość wymagań usługi można opisać w oddzielnych dokumentów.|
 |Wysoki poziom projektu<br /><br /> Ogólną strukturę systemu: główne składniki i sposób ich połączyć ze sobą.|— Diagramów zależności opis struktury systemu na współzależne części. Można sprawdzić poprawność kodu programu względem diagramów zależności, aby upewnić się, że są zgodne z architekturą.|
@@ -132,7 +132,7 @@ Różne rodzaje diagramów są przydatne do opisywania projektu na różnych poz
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 |**Kategoria**|**Łącza**|
-|------------------|---------------|
+|-|-|
 |**Filmy wideo**|![Link do wideo](../data-tools/media/playvideo.gif) [MSDN jak mogę wideo: sposób tworzenia i użyj modeli i diagramów UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![Link do wideo](../data-tools/media/playvideo.gif) [witryny Channel 9: UML w programie Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![Link do wideo](../data-tools/media/playvideo.gif) [serii MSDN jak mogę: narzędzi UML i rozszerzalność (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
 |**Fora**|- [Program Visual Studio visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Program Visual Studio visualization and Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**Blogi**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|

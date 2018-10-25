@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f07fc3534c7963beda0d08d4ebf659979731d7f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 33afb16b9862f418f4d661bb5432ea4bb3866f16
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676406"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878612"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Porady: dodawanie formantów zakładek do dokumentów programu Word
   W projektach na poziomie dokumentu, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO dla programów, można dodać <xref:Microsoft.Office.Tools.Word.Bookmark> formantów dowolnego otwartego dokumentu w czasie wykonywania.  
@@ -33,30 +33,30 @@ ms.locfileid: "35676406"
   
  W tym temacie opisano następujące zadania:  
   
--   [Dodawanie formantów zakładek w czasie projektowania](#designtime)  
+- [Dodawanie formantów zakładek w czasie projektowania](#designtime)  
   
--   [Dodawanie formantów zakładek w czasie wykonywania w projekcie na poziomie dokumentu](#runtimedoclevel)  
+- [Dodawanie formantów zakładek w czasie wykonywania w projekcie na poziomie dokumentu](#runtimedoclevel)  
   
--   [Dodawanie formantów zakładek w czasie wykonywania w projekcie dodatku narzędzi VSTO](#runtimeaddin)  
+- [Dodawanie formantów zakładek w czasie wykonywania w projekcie dodatku narzędzi VSTO](#runtimeaddin)  
   
- Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Word.Bookmark> formantów, zobacz [Bookmark, formant](../vsto/bookmark-control.md).  
+  Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Word.Bookmark> formantów, zobacz [Bookmark, formant](../vsto/bookmark-control.md).  
   
 ##  <a name="designtime"></a> Dodawanie formantów zakładek w czasie projektowania  
  Istnieje kilka sposobów, aby dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu w projekcie na poziomie dokumentu, w czasie projektowania:  
   
--   W programie Visual Studio **przybornika**.  
+- W programie Visual Studio **przybornika**.  
   
-     Można przeciągnąć <xref:Microsoft.Office.Tools.Word.Bookmark> z kontrolować **przybornika** do dokumentu. Należy wybrać w ten sposób, jeśli już używasz **przybornika** do dodawania formantów Windows Forms do dokumentu.  
+   Można przeciągnąć <xref:Microsoft.Office.Tools.Word.Bookmark> z kontrolować **przybornika** do dokumentu. Należy wybrać w ten sposób, jeśli już używasz **przybornika** do dodawania formantów Windows Forms do dokumentu.  
   
--   Z poziomu programu Word.  
+- Z poziomu programu Word.  
   
-     Możesz dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu w taki sam sposób należy dodać zakładki natywnych. Zaletą dodawania go w ten sposób jest to nazwy formantu w czasie jego tworzenia.  
+   Możesz dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu w taki sam sposób należy dodać zakładki natywnych. Zaletą dodawania go w ten sposób jest to nazwy formantu w czasie jego tworzenia.  
   
--   Z **źródeł danych** okna.  
+- Z **źródeł danych** okna.  
   
-     Można przeciągnąć <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu z **źródeł danych** okna. Jest to przydatne, jeśli chcesz powiązać kontrolkę z danymi w tym samym czasie. Można dodać kontrolki hosta w taki sam sposób, należy dodać kontrolkę formularza Windows z **źródeł danych** okna. Aby uzyskać więcej informacji, zobacz [powiązanie danych oraz Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
+   Można przeciągnąć <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu z **źródeł danych** okna. Jest to przydatne, jeśli chcesz powiązać kontrolkę z danymi w tym samym czasie. Można dodać kontrolki hosta w taki sam sposób, należy dodać kontrolkę formularza Windows z **źródeł danych** okna. Aby uzyskać więcej informacji, zobacz [powiązanie danych oraz Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 #### <a name="to-add-a-bookmark-control-to-a-document-from-the-toolbox"></a>Aby dodać kontrolkę zakładki w dokumencie z przybornika  
   
@@ -83,11 +83,11 @@ ms.locfileid: "35676406"
 ##  <a name="runtimedoclevel"></a> Dodawanie formantów zakładek w czasie wykonywania w projekcie na poziomie dokumentu  
  Możesz dodać <xref:Microsoft.Office.Tools.Word.Bookmark> programowo kontrolki do dokumentu w czasie wykonywania, za pomocą metody <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwość `ThisDocument` klasy w projekcie. Istnieją dwa przeciążenia metody, których można użyć, aby dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli w następujący sposób:  
   
--   Dodaj <xref:Microsoft.Office.Tools.Word.Bookmark> w określonym zakresie.  
+- Dodaj <xref:Microsoft.Office.Tools.Word.Bookmark> w określonym zakresie.  
   
--   Dodaj <xref:Microsoft.Office.Tools.Word.Bookmark> opartego na natywny zakładki w dokumencie (czyli <xref:Microsoft.Office.Interop.Word.Bookmark>).  
+- Dodaj <xref:Microsoft.Office.Tools.Word.Bookmark> opartego na natywny zakładki w dokumencie (czyli <xref:Microsoft.Office.Interop.Word.Bookmark>).  
   
- Tworzone dynamicznie <xref:Microsoft.Office.Tools.Word.Bookmark> formanty nie są zachowywane w dokumencie, gdy dokument zostanie zamknięty. Jednak macierzystej <xref:Microsoft.Office.Interop.Word.Bookmark> pozostaje w dokumencie. Można odtworzyć <xref:Microsoft.Office.Tools.Word.Bookmark> opartego na natywny zakładki przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Tworzone dynamicznie <xref:Microsoft.Office.Tools.Word.Bookmark> formanty nie są zachowywane w dokumencie, gdy dokument zostanie zamknięty. Jednak macierzystej <xref:Microsoft.Office.Interop.Word.Bookmark> pozostaje w dokumencie. Można odtworzyć <xref:Microsoft.Office.Tools.Word.Bookmark> opartego na natywny zakładki przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 #### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>Aby programowo dodać kontrolkę zakładki w dokumencie  
   
@@ -102,13 +102,13 @@ ms.locfileid: "35676406"
 ##  <a name="runtimeaddin"></a> Dodawanie formantów zakładek w czasie wykonywania w projekcie dodatku narzędzi VSTO  
  Możesz dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki programowo do dowolnego otwartego dokumentu w czasie wykonywania za pomocą dodatku narzędzi VSTO. Aby to zrobić, należy wygenerować <xref:Microsoft.Office.Tools.Word.Document> elementu, która jest oparta na otwartym dokumencie hosta, a następnie użyj metod <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwości tego elementu host. Istnieją dwa przeciążenia metody, których można użyć, aby dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontroli w następujący sposób:  
   
--   Dodaj <xref:Microsoft.Office.Tools.Word.Bookmark> w określonym zakresie.  
+- Dodaj <xref:Microsoft.Office.Tools.Word.Bookmark> w określonym zakresie.  
   
--   Dodaj <xref:Microsoft.Office.Tools.Word.Bookmark> opartego na natywny zakładki w dokumencie (czyli <xref:Microsoft.Office.Interop.Word.Bookmark>).  
+- Dodaj <xref:Microsoft.Office.Tools.Word.Bookmark> opartego na natywny zakładki w dokumencie (czyli <xref:Microsoft.Office.Interop.Word.Bookmark>).  
   
- Tworzone dynamicznie <xref:Microsoft.Office.Tools.Word.Bookmark> formanty nie są zachowywane w dokumencie, gdy dokument zostanie zamknięty. Jednak macierzystej <xref:Microsoft.Office.Interop.Word.Bookmark> pozostaje w dokumencie. Można odtworzyć <xref:Microsoft.Office.Tools.Word.Bookmark> opartego na natywny zakładki przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [kontrolek dynamicznych w dokumentach pakietu Office utrwalenia](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+  Tworzone dynamicznie <xref:Microsoft.Office.Tools.Word.Bookmark> formanty nie są zachowywane w dokumencie, gdy dokument zostanie zamknięty. Jednak macierzystej <xref:Microsoft.Office.Interop.Word.Bookmark> pozostaje w dokumencie. Można odtworzyć <xref:Microsoft.Office.Tools.Word.Bookmark> opartego na natywny zakładki przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [kontrolek dynamicznych w dokumentach pakietu Office utrwalenia](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
- Aby uzyskać więcej informacji na temat generowania elementów hosta w projektach dodatku narzędzi VSTO dla programów, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+  Aby uzyskać więcej informacji na temat generowania elementów hosta w projektach dodatku narzędzi VSTO dla programów, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 #### <a name="to-add-a-bookmark-control-at-a-specified-range"></a>Aby dodać kontrolkę zakładki w określonym zakresie  
   

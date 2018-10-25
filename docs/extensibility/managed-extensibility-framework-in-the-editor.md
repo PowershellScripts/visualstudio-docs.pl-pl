@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d107b1b55808149f480629b8a06f981598a992
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: a5ea47032ed2c5e4fb9b99afb214e068ca39d692
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638609"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857526"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework, w edytorze
 Edytor została stworzona przy użyciu składników Managed Extensibility Framework (MEF). Możesz tworzyć własne składniki MEF do rozszerzenia edytora, a Twój kod może zużywać także składniki edytora.  
@@ -33,13 +33,13 @@ Edytor została stworzona przy użyciu składników Managed Extensibility Framew
 ### <a name="component-parts-and-composition-containers"></a>Składniki i tworzenia kontenerów  
  Część jest klasa lub członek klasy, które można wykonać jedną (lub obie) z następujących czynności:  
   
--   Używanie innego składnika  
+- Używanie innego składnika  
   
--   Być wykorzystane przez inny składnik  
+- Być wykorzystane przez inny składnik  
   
- Na przykład należy wziąć pod uwagę zakupów aplikacja, która ma składnik wpisu zamówienia, który jest zależny od danych dostępności produktu, dostarczone przez składnik spisu magazynu. W warunkach MEF, część spisu można *wyeksportować* dane dostępności produktów i będzie można część wpisu zamówienia *zaimportować* danych. Wpis kolejności i część magazynu nie trzeba wiedzieć o *pojemnik składu* (udostępniany przez aplikację hosta) jest odpowiedzialny za utrzymanie zbiór eksporty i rozpoznawanie polecenie eksportuje, a następnie importuje.  
+  Na przykład należy wziąć pod uwagę zakupów aplikacja, która ma składnik wpisu zamówienia, który jest zależny od danych dostępności produktu, dostarczone przez składnik spisu magazynu. W warunkach MEF, część spisu można *wyeksportować* dane dostępności produktów i będzie można część wpisu zamówienia *zaimportować* danych. Wpis kolejności i część magazynu nie trzeba wiedzieć o *pojemnik składu* (udostępniany przez aplikację hosta) jest odpowiedzialny za utrzymanie zbiór eksporty i rozpoznawanie polecenie eksportuje, a następnie importuje.  
   
- Kontener kompozycji <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, zwykle jest własnością hosta. Kontener kompozycji przechowuje *katalogu* wyeksportowanego składniki.  
+  Kontener kompozycji <xref:System.ComponentModel.Composition.Hosting.CompositionContainer>, zwykle jest własnością hosta. Kontener kompozycji przechowuje *katalogu* wyeksportowanego składniki.  
   
 ### <a name="export-and-import-component-parts"></a>Eksportowanie i Importowanie części składowe  
  Możesz wyeksportować żadnej funkcji, tak długo, jak są one zaimplementowane jako klasę publiczną lub publicznego elementu członkowskiego klasy (właściwość lub metoda). Nie masz do wyprowadzenia użytkownika część z <xref:System.ComponentModel.Composition.Primitives.ComposablePart>. Zamiast tego należy dodać <xref:System.ComponentModel.Composition.ExportAttribute> atrybutów do klasy lub składowej klasy, który chcesz wyeksportować. Ten atrybut określa *kontraktu* , który składnik innej części można zaimportować własne funkcje.  

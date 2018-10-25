@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbols::Next | Dokumentacja firmy Microsoft
+title: Idiaenumsymbols::Next — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f419716901d35ea667f5e99a0c452d6e1b4d186c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eaa9f5f1a822660d38f954f4f6bd2ee383cd9a2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867484"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
 Pobiera określoną liczbę symboli w kolejności wyliczenia.  
@@ -36,16 +36,16 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parametry  
  celt  
- [in] Liczba symboli w moduł wyliczający, które mają zostać pobrane.  
+ [in] Liczba symboli w modułu wyliczającego do pobrania.  
   
  rgelt  
- [out] Tablica, która ma być wypełnione przy użyciu [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekty reprezentujące żądaną symboli.  
+ [out] Tablica, która ma zostać wypełniony przy użyciu [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekty reprezentujące żądaną symboli.  
   
  pceltFetched  
- [out] Zwraca liczbę symboli w pobranych modułu wyliczającego.  
+ [out] Zwraca liczbę symboli w pobrano modułu wyliczającego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` przypadku żadnych więcej symboli. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli brak symboli więcej. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
   
@@ -58,5 +58,5 @@ pEnum->Next( 1, &pSym, &celt );
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
+ [Idiasession::findlinesbylinenum —](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

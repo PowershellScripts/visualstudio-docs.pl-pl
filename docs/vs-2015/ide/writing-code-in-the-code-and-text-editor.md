@@ -65,12 +65,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220535"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838689"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Pisanie kodu w edytorze kodu i tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,7 +123,7 @@ Edytor programu Visual Studio zapewnia wiele funkcji, które ułatwiają umożli
 |Zaznacz zawartość tagu|W dokumencie, który zawiera znaczniki (na przykład XML lub HTML) zaznacza znaczniki.|  
 
 ## <a name="navigate-in-the-code-window"></a>Nawigowanie w oknie kodu  
- Może się zmieniają położenie w dokumencie na kilka różnych sposobów. Oprócz standardowych operacji można użyć **Nawiguj wstecz** (lub CTRL + MINUS) i **Nawiguj do przodu** (CTRL + SHIFT + MINUS) do poprzedniego punktu przycisków na pasku narzędzi, aby przenieść wstawiania lokalizacji lub powrócić do nowszych lokalizacji w aktywnym dokumencie. Przyciski te zachowują ostatnich 20 lokalizacji punktu wstawiania.  
+ Może się zmieniają położenie w dokumencie na kilka różnych sposobów. Oprócz standardowych operacji można użyć **Nawiguj wstecz** (lub CTRL + MINUS) i **Nawiguj do przodu** (CTRL + SHIFT + MINUS) do poprzedniego punktu przycisków na pasku narzędzi, aby przenieść wstawiania lokalizacji lub powrócić do nowszych lokalizacji w aktywnym dokumencie. Przyciski te zachowują ostatnich 20 lokalizacji.  
 
  ![Kierunek przód- tył przyciski nawigacyjne](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
@@ -146,19 +146,19 @@ Edytor programu Visual Studio zapewnia wiele funkcji, które ułatwiają umożli
 
  Aby ukryć pasek nawigacyjny, należy zmienić **pasek nawigacyjny** opcję w ustawieniach Edytor tekstu wszystkie języki (**języków/wszystkie języki narzędzia/Opcje/edytor**, lub zmienić ustawienia dla poszczególnych języków). Nawigacja w oknach list rozwijanych w następujący sposób:  
 
--   Aby przenieść fokus z okna kodu do paska nawigacji, naciśnij kombinację klawiszy skrótu CTRL + F2.  
+- Aby przenieść fokus z okna kodu do paska nawigacji, naciśnij kombinację klawiszy skrótu CTRL + F2.  
 
--   Aby zabrać fokus z paska nawigacji do okna kodu, naciśnij klawisz ESC.  
+- Aby zabrać fokus z paska nawigacji do okna kodu, naciśnij klawisz ESC.  
 
--   Aby przenieść fokus z pozycji na pozycję na pasku nawigacyjnym, naciśnij klawisz TAB.  
+- Aby przenieść fokus z pozycji na pozycję na pasku nawigacyjnym, naciśnij klawisz TAB.  
 
--   Aby zaznaczyć element paska nawigacji, który ma fokus i powrócić do IDE, naciśnij klawisz ENTER  
+- Aby zaznaczyć element paska nawigacji, który ma fokus i powrócić do IDE, naciśnij klawisz ENTER  
 
--   Aby przejść do klasy lub typu, kliknij jej nazwę w lewym menu rozwijanym.  
+- Aby przejść do klasy lub typu, kliknij jej nazwę w lewym menu rozwijanym.  
 
--   Aby przejść bezpośrednio do procedury w klasie, kliknij procedurę w prawym menu rozwijanym.  
+- Aby przejść bezpośrednio do procedury w klasie, kliknij procedurę w prawym menu rozwijanym.  
 
- W częściowej klasie mogą być wyszarzone elementy członkowskie zdefiniowane poza bieżącym plikiem kodu.  
+  W częściowej klasie mogą być wyszarzone elementy członkowskie zdefiniowane poza bieżącym plikiem kodu.  
 
 ## <a name="find-code-using-navigate-to"></a>Znajdowanie kodu za pomocą przejdź do
 Visual Studio "Przejdź do" polecenie powoduje ukierunkowane wyszukiwanie kodu, aby ułatwić szybkie znajdowanie określonych elementów w plikach kodu, ścieżki do plików i symbole, kod. W przeciwieństwie do innych tekst wyszukiwania, takie jak znaleźć lub Znajdź w plikach przejdź do ogranicza wyszukiwanie do obszarów, w którym przebywa rzeczywisty kod, takich jak pliki, formularze i modułów kodu. Na przykład jeśli wyszukasz ciąg w ASP.NET sieci web aplikacji za pomocą Znajdź lub Znajdź w plikach w całego rozwiązania, możesz otrzymać kilka trafień, w tym wystąpienia ciągu w kodzie uwagi. Za pomocą, przejdź do, jednak możesz tylko otrzymać jednej funkcji, ignorując wszystkie wystąpienia ciągu w kodzie uwagi.

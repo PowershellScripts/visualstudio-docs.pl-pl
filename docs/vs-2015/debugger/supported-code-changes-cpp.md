@@ -29,12 +29,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd4e1af62032920196dbd8171769f1dc079324e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad873a4aaa71dc03a2e7cbf213d40973d73dcdf6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225358"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840990"
 ---
 # <a name="supported-code-changes-c"></a>Obsługiwane zmiany kodu (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,31 +46,31 @@ Edytuj i Kontynuuj dla języka Visual C++ obsługuje większość typów zmian w
 ##  <a name="BKMK_Unsupported_changes"></a> Nieobsługiwane zmiany  
  Nie można zastosować następujące zmiany języka C/C++ podczas sesji debugowania:  
   
--   Większość zmian wprowadzonych do danych globalnych lub statycznych.  
+- Większość zmian wprowadzonych do danych globalnych lub statycznych.  
   
--   Zmiany do plików wykonywalnych, które są kopiowane z innego komputera i nie utworzone lokalnie.  
+- Zmiany do plików wykonywalnych, które są kopiowane z innego komputera i nie utworzone lokalnie.  
   
--   Zmiany typu danych, które mają wpływ na układ obiektu, takie jak elementy członkowskie danych klasy.  
+- Zmiany typu danych, które mają wpływ na układ obiektu, takie jak elementy członkowskie danych klasy.  
   
--   Dodawanie więcej niż 64 KB danych lub nowego kodu.  
+- Dodawanie więcej niż 64 KB danych lub nowego kodu.  
   
--   Dodawanie zmiennych, które wymagają konstruktora w momencie przed wskaźnik instrukcji.  
+- Dodawanie zmiennych, które wymagają konstruktora w momencie przed wskaźnik instrukcji.  
   
--   Zmiany, które mają wpływ na kod, który wymaga czasu wykonywania inicjowania.  
+- Zmiany, które mają wpływ na kod, który wymaga czasu wykonywania inicjowania.  
   
--   Dodawanie obsługi wyjątków w pewnych okolicznościach.  
+- Dodawanie obsługi wyjątków w pewnych okolicznościach.  
   
--   Zmiany w plikach zasobów.  
+- Zmiany w plikach zasobów.  
   
--   Zmiany kodu w plikach tylko do odczytu.  
+- Zmiany kodu w plikach tylko do odczytu.  
   
--   Zmiany kodu bez odpowiedniego pliku PDB.  
+- Zmiany kodu bez odpowiedniego pliku PDB.  
   
--   Zmiany do kodu, który nie ma obiektu pliku.  
+- Zmiany do kodu, który nie ma obiektu pliku.  
   
- Jeśli wytwarzania jednego z tych zmian, a następnie próby zastosowania zmian w kodzie, błąd lub ostrzeżenie pojawia się w **dane wyjściowe** okna.  
+  Jeśli wytwarzania jednego z tych zmian, a następnie próby zastosowania zmian w kodzie, błąd lub ostrzeżenie pojawia się w **dane wyjściowe** okna.  
   
--   Edytuj i Kontynuuj nie aktualizuje bibliotek statycznych. Jeśli wprowadzisz zmiany w bibliotece statycznej, wykonywanie jest kontynuowane przy użyciu starej wersji, a nie ostrzeżenie.  
+- Edytuj i Kontynuuj nie aktualizuje bibliotek statycznych. Jeśli wprowadzisz zmiany w bibliotece statycznej, wykonywanie jest kontynuowane przy użyciu starej wersji, a nie ostrzeżenie.  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> Nieobsługiwane scenariusze  
  Edytuj i Kontynuuj dla języka C/C++ jest niedostępna w następujących scenariuszach debugowania:  

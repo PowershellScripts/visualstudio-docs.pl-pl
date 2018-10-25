@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17a63dc86e77692538ea75ba708a1ff39f9fb1b9
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 58f3ad239802b032006a5a28816462147018982f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384256"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839534"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Dostępność produktów i usług firmy Microsoft
 
@@ -45,7 +45,6 @@ Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korz
 
 > [!NOTE]
 > Informacje w tym rozdziale mogą dotyczyć wyłącznie użytkowników, którzy uzyskali licencje na produkty firmy Microsoft w Stanach Zjednoczonych. Jeśli użytkownik uzyskał produkt poza Stanami Zjednoczonymi, może użyć karty informacji o przedstawicielstwach dołączonej do pakietu oprogramowania lub odwiedzić [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) witryny sieci Web, aby uzyskać listę usług pomocy technicznej firmy Microsoft numerów telefonów i adresów. Można się skontaktować z oddziałem firmy Microsoft i sprawdzić, czy produkty i usługi opisane w tym rozdziale są dostępne na danym terenie. Informacje o ułatwieniach dostępu są dostępne również w innych językach, między innymi w japońskim i francuskim.
-
 
 ##  <a name="windows"></a> Funkcje ułatwień dostępu systemu Windows
 
@@ -70,24 +69,24 @@ Osoby mające trudności z czytaniem lub obsługą materiałów drukowanych mog�
 Ponadto można uzyskać dodatkowe publikacje firmy Microsoft Learning Ally. Learning Ally rozpowszechnia te dokumenty zarejestrowanym, uprawnionym członkom dystrybucji usługi. Aby uzyskać informacje o dostępności dokumentacji produktów Microsoft i książek w wydawnictwie Microsoft Press, skontaktuj się z:
 
 |Learning Ally|
-|----------------------------------------------|
+| - |
 |20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Learning Ally witryny sieci Web: [ http://www.learningally.org ](http://www.learningally.org/).|
 
 Adresy sieci Web mogą ulec zmianie, więc może być nie można nawiązać połączenie z wyżej wymienionymi witrynami internetowymi witryny sieci Web.
 
 ##  <a name="hearing"></a> Obsługa klienta dla osób z wadami słuchu
 
- Jeśli niesłyszących lub twardych z słuchu pełny dostęp do produktów i obsługi klienta firmy Microsoft jest dostępna za pośrednictwem usługi telefonu (TTY/TDD) tekst:
+Jeśli niesłyszących lub twardych z słuchu pełny dostęp do produktów i obsługi klienta firmy Microsoft jest dostępna za pośrednictwem usługi telefonu (TTY/TDD) tekst:
 
--   Aby się skontaktować z obsługą klienta, należy zadzwonić do Centrum informacji sprzedażowej Microsoft pod numer (800) 892-5234 w godzinach od 6:30 do 17:30 czasu pacyficznego, od poniedziałku do piątku, z wyjątkiem świąt.
+- Aby się skontaktować z obsługą klienta, należy zadzwonić do Centrum informacji sprzedażowej Microsoft pod numer (800) 892-5234 w godzinach od 6:30 do 17:30 czasu pacyficznego, od poniedziałku do piątku, z wyjątkiem świąt.
 
--   Aby uzyskać pomoc techniczną w Stanach Zjednoczonych, należy się skontaktować z Centrum pomocy technicznej firmy Microsoft pod numerem (800) 892-5234 w godzinach od 6:00 do 18:00 czasu pacyficznego, od poniedziałku do piątku, z wyjątkiem świąt. W Kanadzie należy dzwonić pod numer (905) 568-9641 w godzinach od 8:00 do 20:00 czasu wschodniego, od poniedziałku do piątku, z wyjątkiem świąt.
+- Aby uzyskać pomoc techniczną w Stanach Zjednoczonych, należy się skontaktować z Centrum pomocy technicznej firmy Microsoft pod numerem (800) 892-5234 w godzinach od 6:00 do 18:00 czasu pacyficznego, od poniedziałku do piątku, z wyjątkiem świąt. W Kanadzie należy dzwonić pod numer (905) 568-9641 w godzinach od 8:00 do 20:00 czasu wschodniego, od poniedziałku do piątku, z wyjątkiem świąt.
 
- Usługi pomocy technicznej firmy Microsoft podlegają cenom, warunkom i postanowieniom w miejscu, w którym są świadczone.
+Usługi pomocy technicznej firmy Microsoft podlegają cenom, warunkom i postanowieniom w miejscu, w którym są świadczone.
 
 ##  <a name="moreinfo"></a> Aby uzyskać więcej informacji
 
- Aby uzyskać więcej informacji na temat jak przystępna technika komputerowa pomaga w polepszaniu życia osób niepełnosprawnych, zobacz [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) witryny sieci Web.
+Aby uzyskać więcej informacji na temat jak przystępna technika komputerowa pomaga w polepszaniu życia osób niepełnosprawnych, zobacz [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) witryny sieci Web.
 
 ## <a name="see-also"></a>Zobacz także
 

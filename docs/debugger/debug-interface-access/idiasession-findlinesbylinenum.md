@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findLinesByLinenum | Dokumentacja firmy Microsoft
+title: Idiasession::findlinesbylinenum — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d0cfcda8a48278abd8420e2c23954f5f7a22203
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 44a30929e3d6fbef3fb276fc8b468df4e8e5621c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464628"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878872"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
-Określa numery wierszy z compiland, który numer wiersza określony w pliku źródłowym znajduje się w obrębie lub w jego pobliżu.  
+Określa numerów wierszy compiland —, że podany numer wiersza w pliku źródłowym znajduje się w obrębie lub w pobliżu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,28 +38,28 @@ HRESULT findLinesByLinenum (
   
 #### <a name="parameters"></a>Parametry  
  `compiland`  
- [in] [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt, który reprezentuje compiland, w których będą poszukiwane numerów wierszy. Ten parametr nie może być `NULL`.  
+ [in] [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt, który reprezentuje compiland —, w których należy szukać numerów wierszy. Ten parametr nie może być `NULL`.  
   
  `file`  
  [in] [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md) obiekt, który reprezentuje plik źródłowy do przeszukania. Ten parametr nie może być `NULL`.  
   
  `linenum`  
- [in] Określa liczbę oparte na jeden wiersz.  
+ [in] Określa numer liczonego od jednego wiersza.  
   
 > [!NOTE]
->  Nie można użyć zero, aby określić wszystkie wiersze (Użyj [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md) metody do znalezienia wszystkich wierszy).  
+>  Nie można użyć zero, aby określić wszystkie wiersze (Użyj [idiasession::findlines —](../../debugger/debug-interface-access/idiasession-findlines.md) metody do znalezienia wszystkich wierszy).  
   
  `column`  
- [in] Określa liczbę kolumn. Użyj wartości zero, aby określić wszystkie kolumny. Kolumna jest Przesunięcie bajtów, w wierszu.  
+ [in] Określa liczbę kolumn. Użyj wartości zero, aby określić wszystkie kolumny. Kolumna jest bajt przesunięcie wiersza.  
   
  `ppResult`  
- [out] Zwraca [idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md) pobrać objta, który zawiera listę numerów wierszy.  
+ [out] Zwraca [idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md) pobrać objta zawierający listę numerów wierszy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład pokazuje, jak otworzyć pliku źródłowego, wyliczyć jednostki kompilacji, przekazanych przez ten plik i Znajdź numery wierszy w pliku źródłowym, gdzie każdy compiland uruchamiana.  
+ Poniższy przykład przedstawia sposób otwierania pliku źródłowego, wyliczanie compilands pochodzącego z tego pliku i Znajdź numery wierszy w pliku źródłowym, gdzie rozpoczyna się każdego compiland —.  
   
 ```C++  
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)  
@@ -101,6 +101,6 @@ void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   
+ [Idiasession::findlinesbyaddr —](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)   
  [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

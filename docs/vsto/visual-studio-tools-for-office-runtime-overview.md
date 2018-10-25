@@ -29,21 +29,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 219ffa4a7a9c7d32348a262ea49c6f66d20e1c7f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b169242b9828f47f1ecfb87ebf02a9f86234699f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677224"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836999"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools dla pakietu Office runtime ― omówienie
   Do uruchamiania rozwiązań, które są tworzone przy użyciu narzędzia Microsoft Office developer tools w programie Visual Studio, Visual Studio 2010 Tools dla pakietu Office runtime musi być zainstalowany na komputerach użytkowników końcowych. Aby uzyskać więcej informacji, zobacz [porady: Instalowanie Visual Studio Tools for Office runtime pakiet redystrybucyjny](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools dla pakietu Office runtime składa się z dwóch głównych składników:  
   
--   Rozszerzenia pakietu Office dla środowiska .NET Framework. To zarządzane zestawy tworzące warstwę komunikacji między rozwiązaniem a aplikacją pakietu Microsoft Office. Aby uzyskać więcej informacji, zobacz [opis rozszerzeń pakietu Office dla .NET Framework](#officeextensions).  
+- Rozszerzenia pakietu Office dla środowiska .NET Framework. To zarządzane zestawy tworzące warstwę komunikacji między rozwiązaniem a aplikacją pakietu Microsoft Office. Aby uzyskać więcej informacji, zobacz [opis rozszerzeń pakietu Office dla .NET Framework](#officeextensions).  
   
--   Moduł ładujący rozwiązanie dla pakietu Office. To zestaw niezarządzanych bibliotek DLL, przy użyciu których aplikacje pakietu Office ładują środowisko uruchomieniowe i rozwiązanie. Aby uzyskać więcej informacji, zobacz [zrozumieć modułu ładującego rozwiązanie Office](#UnmanagedLoader).  
+- Moduł ładujący rozwiązanie dla pakietu Office. To zestaw niezarządzanych bibliotek DLL, przy użyciu których aplikacje pakietu Office ładują środowisko uruchomieniowe i rozwiązanie. Aby uzyskać więcej informacji, zobacz [zrozumieć modułu ładującego rozwiązanie Office](#UnmanagedLoader).  
   
- Środowisko uruchomieniowe można zainstalować na kilka różnych sposobów. Składniki środowiska dodawane podczas jego instalacji zależą od konfiguracji komputera. Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for Office Runtime ― scenariusze instalacji](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
+  Środowisko uruchomieniowe można zainstalować na kilka różnych sposobów. Składniki środowiska dodawane podczas jego instalacji zależą od konfiguracji komputera. Aby uzyskać więcej informacji, zobacz [Visual Studio Tools for Office Runtime ― scenariusze instalacji](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
 ##  <a name="officeextensions"></a> Opis rozszerzeń pakietu Office dla programu .NET Framework  
  Visual Studio 2010 Tools dla pakietu Office runtime zawierają rozszerzenia pakietu Office dla .NET Framework 3.5 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] i nowszych. Rozwiązania przeznaczone dla poszczególnych wersji środowiska .NET Framework używają rozszerzeń odpowiednich dla danej wersji.  
@@ -65,17 +65,17 @@ ms.locfileid: "35677224"
   
  Domyślnie funkcja równoważności typu nie jest włączona podczas tworzenia projektu Office współpracującego [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej. Aby włączyć tę funkcję, należy ustawić **Osadź typy współdziałania** właściwość następujące odwołania zestawów w swoim projekcie **True**:  
   
--   Microsoft.Office.Tools.dll  
+- Microsoft.Office.Tools.dll  
   
--   Microsoft.Office.Tools.Common.dll  
+- Microsoft.Office.Tools.Common.dll  
   
--   Microsoft.Office.Tools.Excel.dll  
+- Microsoft.Office.Tools.Excel.dll  
   
--   Microsoft.Office.Tools.Outlook.dll  
+- Microsoft.Office.Tools.Outlook.dll  
   
--   Microsoft.Office.Tools.Word.dll  
+- Microsoft.Office.Tools.Word.dll  
   
- Wprowadzenie tej zmiany spowoduje, że informacje o typie dla wszystkich typów środowisk uruchomieniowych używanych w projekcie zostaną podczas kompilowania projektu osadzane w zestawie rozwiązania. Tych informacji osadzonego typu, a nie informacji o typie w przywoływanych zestawach są używane przez rozwiązanie w czasie wykonywania.  
+  Wprowadzenie tej zmiany spowoduje, że informacje o typie dla wszystkich typów środowisk uruchomieniowych używanych w projekcie zostaną podczas kompilowania projektu osadzane w zestawie rozwiązania. Tych informacji osadzonego typu, a nie informacji o typie w przywoływanych zestawach są używane przez rozwiązanie w czasie wykonywania.  
   
 ##  <a name="UnmanagedLoader"></a> Omówienie modułu ładującego rozwiązanie Office  
  Visual Studio Tools for Office runtime zawiera kilka niezarządzanych bibliotek DLL, dla których aplikacje pakietu Office ładują środowisko uruchomieniowe i rozwiązania pakietu Office. Nigdy nie powinna zajść konieczność bezpośredniej pracy z tymi bibliotekami, jednak wiedza o ich przeznaczeniu może pomóc lepiej zrozumieć architekturę rozwiązań opartych na pakiecie Office.  
@@ -90,17 +90,17 @@ ms.locfileid: "35677224"
 ### <a name="vstoloaderdll"></a>VSTOLoader.dll  
  Po *VSTOEE.dll* ładuje odpowiednią wersję [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], *VSTOLoader.dll* wykonuje większość pracy, które są wymagane do załadowania zestawu rozwiązania. *VSTOLoader.dll* wykonuje kilka rzeczy:  
   
--   Tworzy domenę aplikacji dla każdego zestawu rozwiązania.  
+- Tworzy domenę aplikacji dla każdego zestawu rozwiązania.  
   
--   Wykonuje zbiór testów kontrolnych zabezpieczeń w celu sprawdzenia, czy zestaw rozwiązania ma pozwolenie na działanie.  
+- Wykonuje zbiór testów kontrolnych zabezpieczeń w celu sprawdzenia, czy zestaw rozwiązania ma pozwolenie na działanie.  
   
--   Ładuje wersje rozszerzeń pakietu Office dla środowiska .NET Framework wymaganego przez rozwiązanie.  
+- Ładuje wersje rozszerzeń pakietu Office dla środowiska .NET Framework wymaganego przez rozwiązanie.  
   
- *VSTOLoader.dll* wpływa również kilka rzeczy, które są specyficzne dla dodatków narzędzi VSTO dla programów:  
+  *VSTOLoader.dll* wpływa również kilka rzeczy, które są specyficzne dla dodatków narzędzi VSTO dla programów:  
   
--   Implementuje <xref:Extensibility.IDTExtensibility2> interfejsu. <xref:Extensibility.IDTExtensibility2> to interfejs modelu COM, który muszą implementować wszystkie dodatki narzędzi VSTO dla aplikacji pakietu Microsoft Office. Ten interfejs definiuje metody wywoływane przez aplikację do komunikacji z dodatku narzędzi VSTO.  
+- Implementuje <xref:Extensibility.IDTExtensibility2> interfejsu. <xref:Extensibility.IDTExtensibility2> to interfejs modelu COM, który muszą implementować wszystkie dodatki narzędzi VSTO dla aplikacji pakietu Microsoft Office. Ten interfejs definiuje metody wywoływane przez aplikację do komunikacji z dodatku narzędzi VSTO.  
   
--   Implementuje imanagedaddin — interfejs. Ten interfejs jest używany przez aplikacje pakietu Office, aby ułatwić obciążenia dodatków narzędzi VSTO. Aby uzyskać więcej informacji, zobacz [imanagedaddin — interfejs](../vsto/imanagedaddin-interface.md).  
+- Implementuje imanagedaddin — interfejs. Ten interfejs jest używany przez aplikacje pakietu Office, aby ułatwić obciążenia dodatków narzędzi VSTO. Aby uzyskać więcej informacji, zobacz [imanagedaddin — interfejs](../vsto/imanagedaddin-interface.md).  
   
 ## <a name="understand-the-32-bit-and-64-bit-versions-of-the-runtime"></a>Zrozumienie 32-bitowych i 64-bitowe wersje środowiska uruchomieniowego  
  Istnieją osobne 64-bitowe i 32-bitowe wersje Visual Studio 2010 Tools dla pakietu Office runtime. Te wersje środowiska uruchomieniowego są używane do uruchamiania rozwiązań w 64-bitowe i 32-bitowe wersje pakietu Office. Pokazano w poniższej tabeli wersji środowiska wykonawczego jest wymagana dla każdej kombinacji systemu Windows i pakietu Office.  

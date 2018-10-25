@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d759a587057550930271a91205f278704c4cbc21
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3a0db7986d42b61b65241a8487bc1a595de4f655
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827951"
 ---
 # <a name="hlsl-shader-debugger"></a>Debuger programu do cieniowania HLSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ Debuger HLSL w analizatora grafiki programu Visual Studio pomaga zrozumieć, jak
   
  Jednak debuger języka HLSL jest obecnie ograniczony pod następującymi względami:  
   
--   Debuger HLSL nie obsługuje edit-and-continue, ale możesz wprowadzać zmiany z programów do cieniowania, a następnie ponownie Wygeneruj ramki, aby zobaczyć wyniki.  
+- Debuger HLSL nie obsługuje edit-and-continue, ale możesz wprowadzać zmiany z programów do cieniowania, a następnie ponownie Wygeneruj ramki, aby zobaczyć wyniki.  
   
--   Nie jest możliwe debugowanie aplikacji i jej kodu cieniowania w tym samym czasie. Można jednak używać ich zamiennie.  
+- Nie jest możliwe debugowanie aplikacji i jej kodu cieniowania w tym samym czasie. Można jednak używać ich zamiennie.  
   
--   W oknie czujki można dodać zmienne i rejestry, ale wyrażenia nie są obsługiwane.  
+- W oknie czujki można dodać zmienne i rejestry, ale wyrażenia nie są obsługiwane.  
   
- Niemniej jednak debuger języka HLSL oferuje lepsze, przypominające zachowanie znane z procesorów CPU debugowanie, niż byłoby to możliwe w innym przypadku.  
+  Niemniej jednak debuger języka HLSL oferuje lepsze, przypominające zachowanie znane z procesorów CPU debugowanie, niż byłoby to możliwe w innym przypadku.  
   
 ## <a name="hlsl-shader-edit--apply"></a>Edytowanie modułu cieniującego HLSL i Zastosuj  
  Debuger programu do cieniowania HLSL nie obsługuje Edytuj i Kontynuuj w taki sam sposób, który jest debugera procesora CPU, ponieważ model wykonywania procesora GPU nie zezwala na stan programu do cieniowania można cofnąć. Zamiast tego, Debuger języka HLSL obsługuje & Zastosuj, dzięki czemu można edytować pliki źródłowe języka HLSL, a następnie wybierz pozycję Edytuj **Zastosuj** ponownie wygenerować ramki, aby zobaczyć efekt zmian. Kod modyfikacji programu do cieniowania jest przechowywana w oddzielnym pliku w celu zachowania spójności projektu oryginalnego pliku źródłowego języka HLSL, ale po zakończeniu zmiany możesz **skopiuj...** Aby skopiować zmiany do projektu. Przy użyciu tej funkcji, można szybko powtarzanie czynności w kodu programu do cieniowania, który zawiera błędy i wyeliminować kosztownych ponownej kompilacji i przechwytywania czynności z Twojej HLSL debugowanie przepływu pracy.  
@@ -67,18 +67,18 @@ Debuger HLSL w analizatora grafiki programu Visual Studio pomaga zrozumieć, jak
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>Aby uruchomić debuger HLSL z okna Historia pikseli grafiki  
   
-1.  W **Historia pikseli grafiki** okna, rozwiń wywołanie rysowania skojarzone z modułem cieniującym, który chcesz debugować. Każde wywołanie rysowania może odpowiadać wielu obiektom pierwotnym.  
+1. W **Historia pikseli grafiki** okna, rozwiń wywołanie rysowania skojarzone z modułem cieniującym, który chcesz debugować. Każde wywołanie rysowania może odpowiadać wielu obiektom pierwotnym.  
   
-2.  W szczegółach wywołania rysowania, rozwiń prymityw, którego wynikowy kolor sugeruje błąd w kodzie modułu cieniującego. Jeśli wiele prymitywów sugeruje błąd, wybierz pierwszy prymityw, który go sugeruje, tak aby uniknąć nagromadzenia błędów, które mogą utrudnić diagnozę problemu.  
+2. W szczegółach wywołania rysowania, rozwiń prymityw, którego wynikowy kolor sugeruje błąd w kodzie modułu cieniującego. Jeśli wiele prymitywów sugeruje błąd, wybierz pierwszy prymityw, który go sugeruje, tak aby uniknąć nagromadzenia błędów, które mogą utrudnić diagnozę problemu.  
   
-3.  W szczegółach prymitywu Określ, czy chcesz debugować **program do cieniowania wierzchołków** lub **programu do cieniowania pikseli**. Debuguj program do cieniowania wierzchołków, gdy istnieje podejrzenie, że program do cieniowania pikseli jest poprawny, ale generuje niepoprawny kolor, ponieważ program do cieniowania wierzchołków przekazuje mu nieprawidłowe stałe. W przeciwnym razie debuguj program do cieniowania pikseli.  
+3. W szczegółach prymitywu Określ, czy chcesz debugować **program do cieniowania wierzchołków** lub **programu do cieniowania pikseli**. Debuguj program do cieniowania wierzchołków, gdy istnieje podejrzenie, że program do cieniowania pikseli jest poprawny, ale generuje niepoprawny kolor, ponieważ program do cieniowania wierzchołków przekazuje mu nieprawidłowe stałe. W przeciwnym razie debuguj program do cieniowania pikseli.  
   
-     Z prawej strony wybranego modułu cieniującego wybierz **Rozpocznij debugowanie**, które pojawia się jako mała zielona strzałka.  
+    Z prawej strony wybranego modułu cieniującego wybierz **Rozpocznij debugowanie**, które pojawia się jako mała zielona strzałka.  
   
-    > [!NOTE]
-    >  Ten punkt wejścia do debugera HLSL debuguje program cieniowania pikseli, który odpowiada wybranemu wywołaniu rysowania, prymitywowi i pikselowi lub wątkom cieniowania wierzchołków, których wyniki są interpolowane przez wywołanie wybranego rysowania, prymitywu i piksela. W przypadku programów do cieniowania wierzchołków można dodatkowo dostosować punkt wejścia do konkretnego przez rozwijanie szczegółów modułu cieniującego wierzchołek.  
+   > [!NOTE]
+   >  Ten punkt wejścia do debugera HLSL debuguje program cieniowania pikseli, który odpowiada wybranemu wywołaniu rysowania, prymitywowi i pikselowi lub wątkom cieniowania wierzchołków, których wyniki są interpolowane przez wywołanie wybranego rysowania, prymitywu i piksela. W przypadku programów do cieniowania wierzchołków można dodatkowo dostosować punkt wejścia do konkretnego przez rozwijanie szczegółów modułu cieniującego wierzchołek.  
   
- Aby uzyskać przykłady o sposobach używania debugera HLSL w celu debugowania błędów modułu cieniującego, zobacz [przykłady](../debugger/graphics-diagnostics-examples.md) lub powiązane instruktaże w sekcji Zobacz też.  
+   Aby uzyskać przykłady o sposobach używania debugera HLSL w celu debugowania błędów modułu cieniującego, zobacz [przykłady](../debugger/graphics-diagnostics-examples.md) lub powiązane instruktaże w sekcji Zobacz też.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Brak obiektów spowodowany cieniowaniem wierzchołków](../debugger/walkthrough-missing-objects-due-to-vertex-shading.md)   

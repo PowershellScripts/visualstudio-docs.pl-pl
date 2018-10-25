@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84ac767c8e2cd53045dec9921f6d90300f1a87e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5664710d69b8c6d7af315de600fd1fcd27a2b36d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873529"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
-Pobiera nazwę kontekstu oceny.  
+Pobiera nazwę kontekst oceny.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int GetName(
   
 #### <a name="parameters"></a>Parametry  
  `pbstrName`  
- [out] Zwraca nazwę kontekstu oceny.  
+ [out] Zwraca nazwę kontekst oceny.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Nazwa jest opis tego kontekstu oceny. Zwykle jest coś, co może zostać przeanalizowany przez ewaluatora wyrażeń, który odwołuje się do tego kontekstu dokładnej oceny. Na przykład w języku C++ nazwy jest następujący:  
+ Nazwa jest opis tego kontekstu oceny. Zwykle jest coś, co może być analizowane przez ewaluatora wyrażeń, odwołujący się do tego kontekstu dokładną ocenę. Na przykład w języku C++ nazwa jest w następujący sposób:  
   
 ```  
 "{ function-name, source-file-name, module-file-name }"  

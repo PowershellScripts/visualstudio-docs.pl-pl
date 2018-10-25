@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7901c0acaf9500673b9b6cfc551ed3151e1b3c5b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1a37dcac9d75cbd773894b3d708dd4931f77b4ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637766"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888414"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>Udostępnianie właściwości w oknie właściwości
 Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości** okna. Zmiany te właściwości są odzwierciedlane w **właściwości** okna.  
@@ -33,72 +33,72 @@ Ten przewodnik udostępnia publiczne właściwości obiektu do **właściwości*
   
 ### <a name="to-expose-properties-to-the-properties-window"></a>Aby udostępnić właściwości w oknie właściwości  
   
-1.  Każde rozszerzenie programu Visual Studio rozpoczyna się od Projekt wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Tworzenie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu VSIX, o nazwie `MyObjectPropertiesExtension`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C#** > **rozszerzalności**.  
+1. Każde rozszerzenie programu Visual Studio rozpoczyna się od Projekt wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Tworzenie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu VSIX, o nazwie `MyObjectPropertiesExtension`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C#** > **rozszerzalności**.  
   
-2.  Dodawanie okna narzędzi, dodając szablon elementu niestandardowego okna narzędzi o nazwie `MyToolWindow`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **okna dialogowego Dodaj nowy element**, przejdź do **elementy Visual C#** > **rozszerzalności** i wybierz **okna narzędzi niestandardowych**. W **nazwa** pola w dolnej części okna dialogowego, Zmień nazwę pliku, aby *MyToolWindow.cs*. Aby uzyskać więcej informacji o sposobie tworzenia niestandardowego okna narzędzi, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2. Dodawanie okna narzędzi, dodając szablon elementu niestandardowego okna narzędzi o nazwie `MyToolWindow`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **okna dialogowego Dodaj nowy element**, przejdź do **elementy Visual C#** > **rozszerzalności** i wybierz **okna narzędzi niestandardowych**. W **nazwa** pola w dolnej części okna dialogowego, Zmień nazwę pliku, aby *MyToolWindow.cs*. Aby uzyskać więcej informacji o sposobie tworzenia niestandardowego okna narzędzi, zobacz [Tworzenie rozszerzenia za pomocą okna narzędzia](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-3.  Otwórz *MyToolWindow.cs* i dodaj następującą instrukcję using:  
+3. Otwórz *MyToolWindow.cs* i dodaj następującą instrukcję using:  
   
-    ```csharp  
-    using System.Collections;  
-    using System.ComponentModel;  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    ```  
+   ```csharp  
+   using System.Collections;  
+   using System.ComponentModel;  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   ```  
   
-4.  Teraz dodaj następujące pola do `MyToolWindow` klasy.  
+4. Teraz dodaj następujące pola do `MyToolWindow` klasy.  
   
-    ```csharp  
-    private ITrackSelection trackSel;  
-    private SelectionContainer selContainer;  
+   ```csharp  
+   private ITrackSelection trackSel;  
+   private SelectionContainer selContainer;  
   
-    ```  
+   ```  
   
-5.  Dodaj następujący kod do `MyToolWindow` klasy.  
+5. Dodaj następujący kod do `MyToolWindow` klasy.  
   
-    ```csharp  
-    private ITrackSelection TrackSelection  
-    {  
-        get  
-        {  
-            if (trackSel == null)  
-                trackSel =  
-                   GetService(typeof(STrackSelection)) as ITrackSelection;  
-            return trackSel;  
-        }  
-    }  
+   ```csharp  
+   private ITrackSelection TrackSelection  
+   {  
+       get  
+       {  
+           if (trackSel == null)  
+               trackSel =  
+                  GetService(typeof(STrackSelection)) as ITrackSelection;  
+           return trackSel;  
+       }  
+   }  
   
-    public void UpdateSelection()  
-    {  
-        ITrackSelection track = TrackSelection;  
-        if (track != null)  
-            track.OnSelectChange((ISelectionContainer)selContainer);  
-    }  
+   public void UpdateSelection()  
+   {  
+       ITrackSelection track = TrackSelection;  
+       if (track != null)  
+           track.OnSelectChange((ISelectionContainer)selContainer);  
+   }  
   
-    public void SelectList(ArrayList list)  
-    {  
-        selContainer = new SelectionContainer(true, false);  
-        selContainer.SelectableObjects = list;  
-        selContainer.SelectedObjects = list;  
-        UpdateSelection();  
-    }  
+   public void SelectList(ArrayList list)  
+   {  
+       selContainer = new SelectionContainer(true, false);  
+       selContainer.SelectableObjects = list;  
+       selContainer.SelectedObjects = list;  
+       UpdateSelection();  
+   }  
   
-    public override void OnToolWindowCreated()  
-    {  
-        ArrayList listObjects = new ArrayList();  
-        listObjects.Add(this);  
-        SelectList(listObjects);  
-    }  
-    ```  
+   public override void OnToolWindowCreated()  
+   {  
+       ArrayList listObjects = new ArrayList();  
+       listObjects.Add(this);  
+       SelectList(listObjects);  
+   }  
+   ```  
   
-     `TrackSelection` Używa właściwości `GetService` uzyskać `STrackSelection` usługa, która zapewnia <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfejsu. `OnToolWindowCreated` Programu obsługi zdarzeń i `SelectList` metoda razem utworzyć listę wybranych obiektów, która zawiera tylko narzędzie okno okienka samego obiektu. `UpdateSelection` Informuje metoda **właściwości** okno, aby wyświetlić właściwości publiczne okienka okna narzędzi.  
+    `TrackSelection` Używa właściwości `GetService` uzyskać `STrackSelection` usługa, która zapewnia <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfejsu. `OnToolWindowCreated` Programu obsługi zdarzeń i `SelectList` metoda razem utworzyć listę wybranych obiektów, która zawiera tylko narzędzie okno okienka samego obiektu. `UpdateSelection` Informuje metoda **właściwości** okno, aby wyświetlić właściwości publiczne okienka okna narzędzi.  
   
-6.  Skompiluj projekt, a następnie rozpocząć debugowanie. Powinna zostać wyświetlona doświadczalnym wystąpieniu programu Visual Studio.  
+6. Skompiluj projekt, a następnie rozpocząć debugowanie. Powinna zostać wyświetlona doświadczalnym wystąpieniu programu Visual Studio.  
   
-7.  Jeśli **właściwości** okno nie jest widoczna, otwórz ją, naciskając klawisz **F4**.  
+7. Jeśli **właściwości** okno nie jest widoczna, otwórz ją, naciskając klawisz **F4**.  
   
-8.  Otwórz **MyToolWindow** okna. Znaleźć go w **widoku** > **inne Windows**.  
+8. Otwórz **MyToolWindow** okna. Znaleźć go w **widoku** > **inne Windows**.  
   
-     Zostanie otwarte okno i publicznymi właściwościami okienku okna pojawiają się w **właściwości** okna.  
+    Zostanie otwarte okno i publicznymi właściwościami okienku okna pojawiają się w **właściwości** okna.  
   
 9. Zmiana **podpis** właściwość **właściwości** okna **Moje właściwości obiektu**.  
   

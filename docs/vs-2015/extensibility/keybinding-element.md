@@ -16,12 +16,12 @@ ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808897b632353e47185cdbd5606d6f2eed1361b0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 144d9afa3b29cd5ecebd2e3c1d604b88ba0a7029
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829161"
 ---
 # <a name="keybinding-element"></a>KeyBinding, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,10 +43,10 @@ KeyBinding, element określa skróty klawiaturowe dla poleceń.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagane.|  
-|identyfikator|Wymagane.|  
-|edytor|Wymagane. Identyfikator GUID edytora wskazuje Kontekst edycyjny, dla którego ten skrót klawiaturowy zostanie uaktywniona. Wartość zakresu globalnego powiązania jest "guidVSStd97".|  
-|klucz1|Wymagane. Prawidłowe wartości to wszystkie typable znaków alfanumerycznych, a także dwucyfrowych wartości szesnastkowych, poprzedzony 0 x i VK_constants.|  
+|Identyfikator GUID|Wymagana.|  
+|identyfikator|Wymagana.|  
+|edytor|Wymagana. Identyfikator GUID edytora wskazuje Kontekst edycyjny, dla którego ten skrót klawiaturowy zostanie uaktywniona. Wartość zakresu globalnego powiązania jest "guidVSStd97".|  
+|klucz1|Wymagana. Prawidłowe wartości to wszystkie typable znaków alfanumerycznych, a także dwucyfrowych wartości szesnastkowych, poprzedzony 0 x i VK_constants.|  
 |mod1|Opcjonalna. Dowolna kombinacja CTRL, ALT i SHIFT, rozdzielone spacjami.|  
 |klucz2|Opcjonalna. Prawidłowe wartości to wszystkie typable znaków alfanumerycznych, a także dwucyfrowych wartości szesnastkowych, poprzedzony 0 x i VK_constants.|  
 |mod2|Opcjonalna. Dowolna kombinacja CTRL, ALT i SHIFT, rozdzielone spacjami.|  

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8153f0120259eec8ad284b0717e58be750e3b99d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783845"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884085"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>Przewodnik: Tworzenie menu skrótów dla zakładek
   W tym instruktażu przedstawiono sposób tworzenia menu skrótów dla <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolek w dostosowywania poziomie dokumentu dla programu Word. Gdy użytkownik kliknie prawym przyciskiem myszy tekst w zakładki, menu skrótów pojawia się i oferuje opcje użytkownika dotyczące formatowania tekstu.  
@@ -32,15 +32,15 @@ ms.locfileid: "38783845"
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   [Utwórz projekt](#BKMK_CreateProject).  
+- [Utwórz projekt](#BKMK_CreateProject).  
   
--   [Dodawanie tekstu i zakładki w dokumencie](#BKMK_addtextandbookmarks).  
+- [Dodawanie tekstu i zakładki w dokumencie](#BKMK_addtextandbookmarks).  
   
--   [Dodawanie poleceń do menu skrótów](#BKMK_AddCmndsShortMenu).  
+- [Dodawanie poleceń do menu skrótów](#BKMK_AddCmndsShortMenu).  
   
--   [Formatowanie tekstu w zakładce](#BKMK_formattextbkmk).  
+- [Formatowanie tekstu w zakładce](#BKMK_formattextbkmk).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
@@ -69,22 +69,22 @@ ms.locfileid: "38783845"
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Aby dodać kontrolkę zakładki w dokumencie  
   
-1.  W **przybornika**, z **formanty programu Word** kartę, przeciągnij <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu.  
+1. W **przybornika**, z **formanty programu Word** kartę, przeciągnij <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu.  
   
-     **Dodaj kontrolkę zakładki** pojawi się okno dialogowe.  
+    **Dodaj kontrolkę zakładki** pojawi się okno dialogowe.  
   
-2.  Zaznaczanie słów "Tworzenie menu skrótów, po kliknięciu prawym przyciskiem myszy tekst", a następnie kliknij przycisk **OK**.  
+2. Zaznaczanie słów "Tworzenie menu skrótów, po kliknięciu prawym przyciskiem myszy tekst", a następnie kliknij przycisk **OK**.  
   
-     `bookmark1` zostanie dodany do dokumentu.  
+    `bookmark1` zostanie dodany do dokumentu.  
   
-3.  Dodaj kolejną <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolę słowa "right-click tekstu zakładki".  
+3. Dodaj kolejną <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolę słowa "right-click tekstu zakładki".  
   
-     `bookmark2` zostanie dodany do dokumentu.  
+    `bookmark2` zostanie dodany do dokumentu.  
   
-    > [!NOTE]  
-    >  Wyrazy "right-click tekst" znajdują się w obu `bookmark1` i `bookmark2`.  
+   > [!NOTE]  
+   >  Wyrazy "right-click tekst" znajdują się w obu `bookmark1` i `bookmark2`.  
   
- Po dodaniu zakładki do dokumentu w czasie projektowania <xref:Microsoft.Office.Tools.Word.Bookmark> formant zostanie utworzony. Można programować względem kilka zdarzeń zakładki. Można wpisać kod w <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> zdarzeń zakładki, aby po użytkownik kliknie prawym przyciskiem myszy tekst w zakładki, zostanie wyświetlone menu skrótów.  
+   Po dodaniu zakładki do dokumentu w czasie projektowania <xref:Microsoft.Office.Tools.Word.Bookmark> formant zostanie utworzony. Można programować względem kilka zdarzeń zakładki. Można wpisać kod w <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> zdarzeń zakładki, aby po użytkownik kliknie prawym przyciskiem myszy tekst w zakładki, zostanie wyświetlone menu skrótów.  
   
 ##  <a name="BKMK_AddCmndsShortMenu"></a> Dodawanie poleceń do menu skrótów  
  Dodawanie przycisków do menu skrótów, które pojawia się po kliknięciu prawym przyciskiem myszy dokument.  

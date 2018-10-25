@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302c6c983b07e2e2a7a393fac86999df4cb2b492
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32529033107d01bb8715dad80c3202d7307c931a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099262"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880068"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
-Ta metoda pobiera [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) obiekt używany do tworzenia parametrów funkcji.  
+Ta metoda pobiera [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) obiekt wykorzystywany do tworzenia parametrów funkcji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,7 +44,7 @@ int GetFunctionObject(
  [out] Zwraca [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfejs, który jest używany do tworzenia parametrów funkcji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

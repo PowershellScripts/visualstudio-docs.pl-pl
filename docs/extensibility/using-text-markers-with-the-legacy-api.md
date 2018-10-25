@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcfae4cc786fb7a3e0c2ccd48f867bb6c32530d6
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 62b77180858b40bf2620eaed284fa35b9a48288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835933"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Znaczniki tekstu przy użyciu starszej wersji interfejsu API
 Znacznik tekstu jest ruchomy zakres tekstu w buforze, które mogą mieć wpływ na wyświetlanie i zachowanie region tekstu. Znaczniki zawierają punkty przerwania, zakładek, faliste podkreślenia i regionów tylko do odczytu. Znaczniki tekstu po prostu różnią się od kolorowanie składni. Kolorowanie składni to szybki sposób komunikowania się składni języka, która jest skojarzone z regionem tekstu. Kolorowanie składni ogólnie jest wymagany, gdy Windows odświeża ekran, gdy szybkość jest istotna. Kolorowanie składni zmienia kolor tekstu. Znaczniki tekst można zmienić innych właściwości tekstu. Znaczniki tekstu można "float" i zastosować specjalnego zachowania i kolorowania.  
@@ -30,14 +30,14 @@ Znacznik tekstu jest ruchomy zakres tekstu w buforze, które mogą mieć wpływ 
   
 ## <a name="related-topics"></a>Tematy pokrewne  
   
-|Tytuł|Opis|  
-|-----------|-----------------|  
-|[Instrukcje: dodawanie standardowych znaczników tekstu](../extensibility/how-to-add-standard-text-markers.md)|W tym artykule opisano sposób dodawania tekstu standardowego typu znaczników, dostarczone przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji do widoku tekstu.|  
-|[Instrukcje: implementowanie znaczników błędów](../extensibility/how-to-implement-error-markers.md)|W tym artykule opisano sposób wdrażania wystąpienia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] znacznik, który służy do sygnalizowania błędów przy użyciu czerwone faliste podkreślenia.|  
-|[Instrukcje: tworzenie niestandardowych znaczników tekstu](../extensibility/how-to-create-custom-text-markers.md)|W tym artykule opisano, jak utworzyć i dodać typ znacznika niestandardowego tekstu do widoku tekstu.|  
-|[Instrukcje: korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md)|Wyjaśnia, jak dodawać znaczniki tekstu.|  
-|[Wewnątrz edytora podstawowego](../extensibility/inside-the-core-editor.md)|Opisuje funkcje edytora podstawowe i szczegółowe informacje na temat sposobu dostosowywania podstawowy edytor.|  
-|[Funkcje edytora](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|W tym artykule opisano funkcje dostępne w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji.|  
+| Tytuł | Opis |
+| - | - |
+| [Instrukcje: dodawanie standardowych znaczników tekstu](../extensibility/how-to-add-standard-text-markers.md) | W tym artykule opisano sposób dodawania tekstu standardowego typu znaczników, dostarczone przez [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji do widoku tekstu. |
+| [Instrukcje: implementowanie znaczników błędów](../extensibility/how-to-implement-error-markers.md) | W tym artykule opisano sposób wdrażania wystąpienia [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] znacznik, który służy do sygnalizowania błędów przy użyciu czerwone faliste podkreślenia. |
+| [Instrukcje: tworzenie niestandardowych znaczników tekstu](../extensibility/how-to-create-custom-text-markers.md) | W tym artykule opisano, jak utworzyć i dodać typ znacznika niestandardowego tekstu do widoku tekstu. |
+| [Instrukcje: korzystanie ze znaczników tekstu](../extensibility/how-to-use-text-markers.md) | Wyjaśnia, jak dodawać znaczniki tekstu. |
+| [Wewnątrz edytora podstawowego](../extensibility/inside-the-core-editor.md) | Opisuje funkcje edytora podstawowe i szczegółowe informacje na temat sposobu dostosowywania podstawowy edytor. |
+| [Funkcje edytora](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198) | W tym artykule opisano funkcje dostępne w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji. |
   
 ## <a name="reference"></a>Tematy pomocy  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  

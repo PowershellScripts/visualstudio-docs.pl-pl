@@ -30,12 +30,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5afabc774165ac001545c084a77cba6d165cf88b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862089"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Tworzenie aplikacji ClickOnce do wdrażania przez inne osoby
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,13 +92,13 @@ Nie wszyscy deweloperzy, którzy tworzą wdrożeń technologii ClickOnce firma z
   
  Istnieją trzy sposoby, że klient może zarejestrować manifest wdrożenia w tej sytuacji:  
   
-1.  Odbiorca może używać prawidłowy certyfikat wystawiony przez urząd certyfikacji (CA).  
+1. Odbiorca może używać prawidłowy certyfikat wystawiony przez urząd certyfikacji (CA).  
   
-2.  Zmiany na temat tego podejścia klient może zdecydować się ich manifest wdrożenia przy użyciu certyfikatu z podpisem własnym. To wadą jest to, że spowoduje aplikację w celu wyświetlania słowa "Nieznany wydawca", gdy użytkownik jest pytany, czy zainstalować aplikację. Korzyścią jest jednak uniemożliwia klientom mniejszych, od konieczności poświęcania czasu i pieniędzy wymaganego certyfikatu wystawionego przez urząd certyfikacji.  
+2. Zmiany na temat tego podejścia klient może zdecydować się ich manifest wdrożenia przy użyciu certyfikatu z podpisem własnym. To wadą jest to, że spowoduje aplikację w celu wyświetlania słowa "Nieznany wydawca", gdy użytkownik jest pytany, czy zainstalować aplikację. Korzyścią jest jednak uniemożliwia klientom mniejszych, od konieczności poświęcania czasu i pieniędzy wymaganego certyfikatu wystawionego przez urząd certyfikacji.  
   
-3.  Na koniec deweloper może zawierać własne certyfikatu z podpisem własnym w pakiet instalacyjny. Wprowadza potencjalnych problemów za pomocą tożsamości aplikacji z omówionych wcześniej w tym temacie.  
+3. Na koniec deweloper może zawierać własne certyfikatu z podpisem własnym w pakiet instalacyjny. Wprowadza potencjalnych problemów za pomocą tożsamości aplikacji z omówionych wcześniej w tym temacie.  
   
- Metoda projektu wdrożenia konfiguracji wadą jest to czas i pieniądze, wymagane do kompilowania aplikacji wdrożenia niestandardowego.  
+   Metoda projektu wdrożenia konfiguracji wadą jest to czas i pieniądze, wymagane do kompilowania aplikacji wdrożenia niestandardowego.  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>Mają klienta Generuj Manifest wdrażania  
  Trzecia strategia wdrażania jest ręcznie tylko pliki aplikacji i manifest aplikacji wyłączone dla klienta. W tym scenariuszu klient jest odpowiedzialny za pomocą zestawu SDK programu .NET Framework do generowania i podpisać manifest wdrożenia.  

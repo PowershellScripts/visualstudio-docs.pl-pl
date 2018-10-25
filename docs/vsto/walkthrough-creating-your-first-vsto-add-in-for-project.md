@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bc935c50a00efea7d3124eb7d1fb3246248f0b91
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a1c6e96815c69ad6a05b3c8bc55e22f13c212e24
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884865"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Przewodnik: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla projektu
   W tym instruktażu przedstawiono sposób tworzenia dodatku narzędzi VSTO dla programu Microsoft Office Project. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, które są otwarte projekty. Aby uzyskać więcej informacji, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,15 +32,15 @@ ms.locfileid: "35676376"
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Tworzenie projektu dodatku narzędzi VSTO projektu.  
+- Tworzenie projektu dodatku narzędzi VSTO projektu.  
   
--   Pisanie kodu, który używa modelu obiektu projektu, aby dodać zadanie do nowego projektu.  
+- Pisanie kodu, który używa modelu obiektu projektu, aby dodać zadanie do nowego projektu.  
   
--   Tworzenie i uruchamianie projektu, aby ją przetestować.  
+- Tworzenie i uruchamianie projektu, aby ją przetestować.  
   
--   Czyszczenie zakończone projektu tak, aby dodatku narzędzi VSTO już nie uruchamia automatycznie na komputerze deweloperskim.  
+- Czyszczenie zakończone projektu tak, aby dodatku narzędzi VSTO już nie uruchamia automatycznie na komputerze deweloperskim.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
@@ -78,14 +78,14 @@ ms.locfileid: "35676376"
   
 ### <a name="to-add-a-task-to-a-new-project"></a>Aby dodać zadanie do nowego projektu  
   
-1.  W pliku kodu ThisAddIn, Dodaj następujący kod do `ThisAddIn` klasy. Ten kod definiuje zdarzenia obsługi dla `NewProject` zdarzenia `Microsoft.Office.Interop.MSProject.Application` klasy.  
+1. W pliku kodu ThisAddIn, Dodaj następujący kod do `ThisAddIn` klasy. Ten kod definiuje zdarzenia obsługi dla `NewProject` zdarzenia `Microsoft.Office.Interop.MSProject.Application` klasy.  
   
-     Gdy użytkownik tworzy nowy projekt, ta procedura obsługi zdarzeń dodaje zadanie do projektu.  
+    Gdy użytkownik tworzy nowy projekt, ta procedura obsługi zdarzeń dodaje zadanie do projektu.  
   
-     [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
   
- Aby zmodyfikować projekt, w tym przykładzie kodu używane następujące obiekty:  
+   Aby zmodyfikować projekt, w tym przykładzie kodu używane następujące obiekty:  
   
 -   `Application` Pole `ThisAddIn` klasy. `Application` Pole zwraca `Microsoft.Office.Interop.MSProject.Application` reprezentujący bieżące wystąpienie projektu.  
   

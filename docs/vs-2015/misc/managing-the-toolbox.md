@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: 1a42c50addeb878041087d9017321ed71daac115
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 227001e827057ffab4c851a985f7e36afaf0f351
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254414"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873425"
 ---
 # <a name="managing-the-toolbox"></a>Zarządzanie przybornika
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] Umożliwia pakietu VSPackage, przykład edytora lub projektanta, do zarządzania członkostwa i wygląd **przybornika**.  
@@ -50,29 +50,29 @@ ms.locfileid: "49254414"
   
  Istnieje kilka ważne punkty, które należy pamiętać, pracując z tych interfejsów:  
   
--   <xref:System.Drawing.Design.IToolboxService> jest dostępna tylko dla środowiska pakietu zarządzanego na podstawie pakietów VSPackage.  
+- <xref:System.Drawing.Design.IToolboxService> jest dostępna tylko dla środowiska pakietu zarządzanego na podstawie pakietów VSPackage.  
   
--   Nie można bezpośrednio dodać formanty do **przybornika** przy użyciu <xref:System.Drawing.Design.IToolboxService>.  
+- Nie można bezpośrednio dodać formanty do **przybornika** przy użyciu <xref:System.Drawing.Design.IToolboxService>.  
   
--   Pakietu VSPackage, należy użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> dodać kontrolki lub kontrolki w kontrolce otoki, która wynika z hosta <xref:System.Windows.Forms.AxHost>.  
+- Pakietu VSPackage, należy użyć <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> dodać kontrolki lub kontrolki w kontrolce otoki, która wynika z hosta <xref:System.Windows.Forms.AxHost>.  
   
-     Program Visual Studio udostępnia `Aximp.exe` narzędzi do automatyzacji zawijanie formantu ActiveX w kontrolce pochodną <xref:System.Windows.Forms.AxHost>. Aby uzyskać więcej informacji, zobacz [Aximp.exe (Importer kontrolki ActiveX formularzy Windows)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
+   Program Visual Studio udostępnia `Aximp.exe` narzędzi do automatyzacji zawijanie formantu ActiveX w kontrolce pochodną <xref:System.Windows.Forms.AxHost>. Aby uzyskać więcej informacji, zobacz [Aximp.exe (Importer kontrolki ActiveX formularzy Windows)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>, i <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> dostępnych interfejsów opartych na modelu COM przy użyciu zestawów międzyoperacyjnych.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>, i <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> dostępnych interfejsów opartych na modelu COM przy użyciu zestawów międzyoperacyjnych.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> pochodzi od klasy <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> i implementuje jej metody.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> pochodzi od klasy <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> i implementuje jej metody.  
   
-     Obiekty uzyskać tylko wystąpienia <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>.  
+   Obiekty uzyskać tylko wystąpienia <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> nie pochodzi od <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> implementuje jej metody.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> nie pochodzi od <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> implementuje jej metody.  
   
-     Obiekty wymagające funkcji w obu interfejsów musi uzyskać wystąpień dotyczą obu interfejsów ze środowiska.  
+   Obiekty wymagające funkcji w obu interfejsów musi uzyskać wystąpień dotyczą obu interfejsów ze środowiska.  
   
--   Podczas pracy z <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>, informacji na temat nazwy kanonicznej (niezlokalizowana) kart jest obsługiwany przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.GetIDOfTab%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.SetIDOfTab%2A> metody.  
+- Podczas pracy z <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>, informacji na temat nazwy kanonicznej (niezlokalizowana) kart jest obsługiwany przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.GetIDOfTab%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3.SetIDOfTab%2A> metody.  
   
--   Korzystając z <xref:System.Drawing.Design.IToolboxService>, zależy od implementujący Zarządzanie zlokalizowane informacje, takie jak nazwy kategorii.  
+- Korzystając z <xref:System.Drawing.Design.IToolboxService>, zależy od implementujący Zarządzanie zlokalizowane informacje, takie jak nazwy kategorii.  
   
- Użyj mechanizmu ustawienia, aby umożliwić użytkownikom zapisać **przybornika** ustawienia używane przez użytkowników z **importu/eksportu ustawień** znaleziono IDE polecenia **narzędzia** menu. Aby uzyskać więcej informacji na temat korzystania z ustawień, zobacz [rozszerzanie ustawień użytkownika ani opcji](../extensibility/extending-user-settings-and-options.md).  
+  Użyj mechanizmu ustawienia, aby umożliwić użytkownikom zapisać **przybornika** ustawienia używane przez użytkowników z **importu/eksportu ustawień** znaleziono IDE polecenia **narzędzia** menu. Aby uzyskać więcej informacji na temat korzystania z ustawień, zobacz [rozszerzanie ustawień użytkownika ani opcji](../extensibility/extending-user-settings-and-options.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie przybornika](../misc/extending-the-toolbox.md)

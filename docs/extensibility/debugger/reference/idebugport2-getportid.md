@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7adf52af99285add9334b30ff7b2a9f74ecd3041
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3fc7509450b7b433253c98be46e82d31952b7ead
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112981"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864663"
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
-Pobiera identyfikator portów.  
+Pobiera identyfikator portu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,7 +44,7 @@ int GetPortId(
  [out] Zwraca identyfikator GUID, który identyfikuje port.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

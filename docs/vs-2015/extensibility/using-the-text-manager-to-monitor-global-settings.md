@@ -16,12 +16,12 @@ ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc981ffd7f2e4c9ece1e559dd6b588d29edb59dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 25ba131512c8c57e9ddda21526ef76177d4ca4a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303315"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839690"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>Za pomocą Menedżera tekstu do monitorowania ustawień globalnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,19 +31,19 @@ W przypadku zastosowania edytorze podstawowych, należy monitorować zmiany wpro
 ## <a name="text-manager-functions"></a>Funkcje Menedżera tekstu  
  Menedżer tekstu wywołuje zdarzenia, dla liczby ustawienia, takie jak następujące:  
   
--   Czy bufor jest pod kontrolą kodu źródłowego  
+- Czy bufor jest pod kontrolą kodu źródłowego  
   
--   Jak zarejestrować dla powiadomień o zmianie pliku  
+- Jak zarejestrować dla powiadomień o zmianie pliku  
   
--   Sposób śledzić widoków, które są skojarzone z niektórych buforów  
+- Sposób śledzić widoków, które są skojarzone z niektórych buforów  
   
--   Preferencje Kolorowanie tekstu  
+- Preferencje Kolorowanie tekstu  
   
--   Karty w stosunku do miejsca preferencje  
+- Karty w stosunku do miejsca preferencje  
   
- Preferencje, które są unikatowe dla danego języka nie są zarządzane przez Menedżera tekstu. Te ustawienia muszą być zarządzane przez poszczególne usługi języka.  
+  Preferencje, które są unikatowe dla danego języka nie są zarządzane przez Menedżera tekstu. Te ustawienia muszą być zarządzane przez poszczególne usługi języka.  
   
- Powiadomienie o zdarzeniu Menedżera tekstu jest świadczona przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interfejsu. Implementuje ten interfejs na komputerze klienckim obiektu do obsługi zdarzeń zgłoszone przez Menedżera tekstu. Zarejestruj te zdarzenia za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interfejsu na Menedżer tekstu.  
+  Powiadomienie o zdarzeniu Menedżera tekstu jest świadczona przez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents> interfejsu. Implementuje ten interfejs na komputerze klienckim obiektu do obsługi zdarzeń zgłoszone przez Menedżera tekstu. Zarejestruj te zdarzenia za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> interfejsu na Menedżer tekstu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [W edytorze podstawowych](../extensibility/inside-the-core-editor.md)   

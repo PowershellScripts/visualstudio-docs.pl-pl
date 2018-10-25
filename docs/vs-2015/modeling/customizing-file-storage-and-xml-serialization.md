@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867450"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Dostosowywanie przechowywania plików i serializacji XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,26 +105,26 @@ Gdy użytkownik zapisuje wystąpienia lub *modelu*, języka specyficznego dla do
 ## <a name="understanding-monikers"></a>Monikery opis  
  Monikery są używane do reprezentowania odsyłacze między poszczególnymi częściami modelu i diagram plików. Są one także używane w `.diagram` pliku do odwoływania się do węzłów w pliku modelu. Istnieją dwa rodzaje monikera:  
   
--   *Identyfikator monikerów* oferta identyfikator GUID elementu docelowego. Na przykład:  
+- *Identyfikator monikerów* oferta identyfikator GUID elementu docelowego. Na przykład:  
   
-    ```  
-    <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
+  ```  
+  <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
   
-    ```  
+  ```  
   
--   *Kwalifikowana klucza monikerów* zidentyfikować elementu docelowego na podstawie wartości właściwości wyznaczoną domeną, nazywany kluczem monikera. Moniker elementu docelowego jest poprzedzony moniker odpowiedniego elementu nadrzędnego w drzewie relacji osadzania.  
+- *Kwalifikowana klucza monikerów* zidentyfikować elementu docelowego na podstawie wartości właściwości wyznaczoną domeną, nazywany kluczem monikera. Moniker elementu docelowego jest poprzedzony moniker odpowiedniego elementu nadrzędnego w drzewie relacji osadzania.  
   
-     Poniższe przykłady są pobierane z DSL w którym jest klasą domeny o nazwie fotograficzne, mającej relacji osadzania do domeny klasy o nazwie utworu:  
+   Poniższe przykłady są pobierane z DSL w którym jest klasą domeny o nazwie fotograficzne, mającej relacji osadzania do domeny klasy o nazwie utworu:  
   
-    ```  
-    <albumMoniker title="/My Favorites/Jazz after Teatime" />  
-    <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
+  ```  
+  <albumMoniker title="/My Favorites/Jazz after Teatime" />  
+  <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
   
-    ```  
+  ```  
   
-     Kwalifikowana monikerów kluczy zostaną użyte, jeśli Klasa docelowa ma właściwość domeny, dla którego opcja **jest kluczem monikera** ustawiono `true` w **zachowanie serializacji kodu Xml**. W tym przykładzie ta opcja jest ustawiona dla właściwości domeny o nazwie "Title" w klasach domeny "Albumu" i "Utwór".  
+   Kwalifikowana monikerów kluczy zostaną użyte, jeśli Klasa docelowa ma właściwość domeny, dla którego opcja **jest kluczem monikera** ustawiono `true` w **zachowanie serializacji kodu Xml**. W tym przykładzie ta opcja jest ustawiona dla właściwości domeny o nazwie "Title" w klasach domeny "Albumu" i "Utwór".  
   
- Kwalifikowana klucza krótkie nazwy to łatwiejsza do odczytania niż identyfikator monikerów. Jeśli planujesz XML plików modelu zostanie odczytany przez osoby, należy rozważyć użycie kwalifikowanej monikerów klucza. Jednak jest użytkownik, który może ustawić więcej niż jeden element do mają taki sam klucz krótkiej nazwy. Zduplikowane klucze może spowodować pliku nie można prawidłowo załadować ponownie. W związku z tym Jeśli zdefiniujesz klasę domeny, do którego odwołuje się przy użyciu kwalifikowanej monikerów klucza, należy rozważyć sposób zapobiegania użytkownika nie można zapisać pliku, który ma zduplikowane monikerów.  
+  Kwalifikowana klucza krótkie nazwy to łatwiejsza do odczytania niż identyfikator monikerów. Jeśli planujesz XML plików modelu zostanie odczytany przez osoby, należy rozważyć użycie kwalifikowanej monikerów klucza. Jednak jest użytkownik, który może ustawić więcej niż jeden element do mają taki sam klucz krótkiej nazwy. Zduplikowane klucze może spowodować pliku nie można prawidłowo załadować ponownie. W związku z tym Jeśli zdefiniujesz klasę domeny, do którego odwołuje się przy użyciu kwalifikowanej monikerów klucza, należy rozważyć sposób zapobiegania użytkownika nie można zapisać pliku, który ma zduplikowane monikerów.  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>Aby ustawić odwoływać się monikerów identyfikator klasy domeny  
   

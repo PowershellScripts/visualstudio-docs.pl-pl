@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba9cd561c80aec7a0b1b47b98f75ff8046d8a1b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081312"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880681"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Korzystanie z zasobów 3D w grach i aplikacjach
 
@@ -41,7 +41,7 @@ Przed wdrożeniem 3D zasobów jako część kompilacji programu Visual Studio mu
 2.  W obszarze **dostępne pliki dostosowania kompilacji**, zaznacz pole wyboru, które odpowiadają typom zasobów, które chcesz użyć w projekcie, zgodnie z opisem w poniższej tabeli:
 
     |Typ zasobu|Nazwa dostosowania kompilacji|
-    |----------------|------------------------------|
+    |----------------| - |
     |Obrazami i teksturami|**ImageContentTask (.targets, .props)**|
     |Modele 3D|**MeshContentTask (.targets, .props)**|
     |Programy do cieniowania|**ShaderGraphContentTask (.targets, .props)**|
@@ -67,7 +67,7 @@ Przed wdrożeniem 3D zasobów jako część kompilacji programu Visual Studio mu
 Poniżej przedstawiono trzy typy elementów potoku zawartości i ich skojarzone źródło i dane wyjściowe typów plików.
 
 |Typ elementu|Typy plików źródłowych|Format pliku wyjściowego|
-|---------------|-----------------------|------------------------|
+|---------------| - | - |
 |**Potok zawartości obrazu**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*, *JPEG*, *.jpe*, *.jfif*)<br /><br /> Bezpośrednie powierzchni do rysowania (*.dds*)<br /><br /> Format GIF (*.gif*)<br /><br /> Mapa bitowa (*.bmp*, *.dib*)<br /><br /> Plik TIFF (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|Powierzchnia DirectDraw (*.dds*)|
 |**Potok zawartości siatki**|Plik wymiany AutoDesk FBX (*.fbx*)<br /><br /> Plik Collada DAE (*.dae*)<br /><br /> Plik OBJ czoła fali (*.obj*)|Plik siatki 3D (*.cmo*)|
 |**Potok zawartości programu do cieniowania**|Wizualny wykres modułu cieniującego (*.dgsl*)|Skompilowane dane wyjściowe programu do cieniowania (*.cso*)|

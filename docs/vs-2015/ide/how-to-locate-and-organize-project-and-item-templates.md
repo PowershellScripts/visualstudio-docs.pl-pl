@@ -21,12 +21,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e497800f209c7653c1f47904df03baf604b3b134
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830980"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Porady: lokalizowanie i organizowanie szablonów projektów i elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,26 +39,26 @@ Pliki szablonu muszą być umieszczone w rozpoznawaną przez program Visual Stud
 ### <a name="installed-templates"></a>Zainstalowane szablony  
  Domyślnie szablony instalowane razem z produktu znajdują się w:  
   
--   \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*języka*\\*ustawień regionalnych*\  
+- \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*języka*\\*ustawień regionalnych*\  
   
--   \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*języka*\\*ustawień regionalnych\\*  
+- \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*języka*\\*ustawień regionalnych\\*  
   
- Na przykład następujący katalog zawiera [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablony projektów w języku angielskim:  
+  Na przykład następujący katalog zawiera [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablony projektów w języku angielskim:  
   
- C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
+  C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
   
 ### <a name="custom-templates"></a>Szablony niestandardowe  
  Domyślnie szablony niestandardowe znajdują się w:  
   
--   Studio \My *wersji*\Templates\ProjectTemplates\\*języka*\  
+- Studio \My *wersji*\Templates\ProjectTemplates\\*języka*\  
   
--   Studio \My *wersji*\Templates\ItemTemplates\\*języka*\  
+- Studio \My *wersji*\Templates\ItemTemplates\\*języka*\  
   
- Na przykład następujący katalog zawiera niestandardowe [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablony projektu:  
+  Na przykład następujący katalog zawiera niestandardowe [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablony projektu:  
   
- C:\Documents and Settings\NazwaUżytkownika\Moje dokumenty\\< wersja programu Visual Studio\>\Templates\ProjectTemplates\Visual C# \  
+  C:\Documents and Settings\NazwaUżytkownika\Moje dokumenty\\< wersja programu Visual Studio\>\Templates\ProjectTemplates\Visual C# \  
   
- Szablony niestandardowe nie dołączaj podkatalogu dla szablonów zlokalizowane. Możesz zmienić domyślny katalog dla szablonów niestandardowych w **opcje** dialogowego **Environment\Projects i rozwiązania**.  
+  Szablony niestandardowe nie dołączaj podkatalogu dla szablonów zlokalizowane. Możesz zmienić domyślny katalog dla szablonów niestandardowych w **opcje** dialogowego **Environment\Projects i rozwiązania**.  
   
 ## <a name="organizing-templates"></a>Organizowanie szablonów  
  Kategorie w **nowy projekt** i **Dodaj nowy element** okna dialogowe odzwierciedlają struktur katalogów, które istnieją w lokalizacje szablonów zainstalowanych i niestandardowe. Można modyfikować tych struktur katalogów w celu uporządkować w najwygodniejszy dla siebie sposób.  
@@ -73,25 +73,25 @@ Pliki szablonu muszą być umieszczone w rozpoznawaną przez program Visual Stud
   
 ##### <a name="to-create-new-installed-project-template-categories"></a>Aby utworzyć nowy projekt zainstalowanych kategorie szablonów  
   
-1.  Utwórz folder w folderze język katalogu zainstalowanych szablonów. Na przykład utwórz kategorię Office [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablony, należy utworzyć następujący katalog projektu:  
+1. Utwórz folder w folderze język katalogu zainstalowanych szablonów. Na przykład utwórz kategorię Office [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] szablony, należy utworzyć następujący katalog projektu:  
   
-     \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
+    \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
   
-2.  Umieścić wszystkie szablony dla tej kategorii w nowym folderze.  
+2. Umieścić wszystkie szablony dla tej kategorii w nowym folderze.  
   
-3.  Zamknij wszystkie wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Zamknij wszystkie wystąpienia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Na **Start** menu, kliknij przycisk **Uruchom**, typ **cmd**i kliknij przycisk **OK**.  
+4. Na **Start** menu, kliknij przycisk **Uruchom**, typ **cmd**i kliknij przycisk **OK**.  
   
-5.  W wierszu polecenia, znajdź katalog, który zawiera devenv.exe i typ **devenv/installvstemplates**.  
+5. W wierszu polecenia, znajdź katalog, który zawiera devenv.exe i typ **devenv/installvstemplates**.  
   
-6.  Uruchom [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Uruchom [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  Na **pliku** menu, kliknij przycisk **New**, a następnie kliknij przycisk **projektu**.  
+7. Na **pliku** menu, kliknij przycisk **New**, a następnie kliknij przycisk **projektu**.  
   
-8.  Sprawdź, czy kategoria Office jest wyświetlana w **nowy projekt** dialogowym **typów projektów** okienku w obszarze [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
+8. Sprawdź, czy kategoria Office jest wyświetlana w **nowy projekt** dialogowym **typów projektów** okienku w obszarze [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
- Można także grupować podzbiór szablony elementów projektu do folderu niestandardowego.  
+   Można także grupować podzbiór szablony elementów projektu do folderu niestandardowego.  
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>Aby utworzyć nowy element zainstalowanych kategorii szablonu  
   
@@ -120,17 +120,17 @@ Pliki szablonu muszą być umieszczone w rozpoznawaną przez program Visual Stud
   
 ##### <a name="to-create-new-custom-project-template-categories"></a>Aby utworzyć nowy projekt niestandardowe kategorie szablonów  
   
-1.  Utwórz folder w folderze język w katalogu szablonu niestandardowego projektu. Na przykład utworzyć kategorię HelloWorld [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablonów, należy utworzyć następującego katalogu:  
+1. Utwórz folder w folderze język w katalogu szablonu niestandardowego projektu. Na przykład utworzyć kategorię HelloWorld [!INCLUDE[csprcs](../includes/csprcs-md.md)] szablonów, należy utworzyć następującego katalogu:  
   
-     Dokumenty \My\\< wersja programu Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    Dokumenty \My\\< wersja programu Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
-2.  Umieścić wszystkie szablony dla tej kategorii w nowym folderze.  
+2. Umieścić wszystkie szablony dla tej kategorii w nowym folderze.  
   
-3.  Na **pliku** menu, kliknij przycisk **New**, a następnie kliknij przycisk **projektu**.  
+3. Na **pliku** menu, kliknij przycisk **New**, a następnie kliknij przycisk **projektu**.  
   
-4.  Sprawdź, czy kategoria HelloWorld znajduje się w **nowy projekt** dialogowym **typów projektów** okienku w obszarze [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
+4. Sprawdź, czy kategoria HelloWorld znajduje się w **nowy projekt** dialogowym **typów projektów** okienku w obszarze [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
   
- Można także grupować podzbiór szablonów niestandardowych elementów do folderu niestandardowego.  
+   Można także grupować podzbiór szablonów niestandardowych elementów do folderu niestandardowego.  
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>Tworzenie nowego niestandardowego elementu kategorii szablonu  
   

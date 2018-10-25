@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 6898fb890828a01f286f321f14de3999fdf1ca64
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: aafa410352be27084f2febecc734c68e4f316d6f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827964"
 ---
 # <a name="setting-up-a-git-repository"></a>Konfigurowanie repozytorium Git
 
@@ -38,7 +38,7 @@ Aby skonfigurować repozytorium Git, wykonaj następujące czynności:
 
     ![Wyświetl i skopiuj adres](media/version-control-git3.png)
 
-  Konieczne będzie z adresu HTTPS do punktu, Visual Studio dla komputerów Mac w tym repozytorium.
+   Konieczne będzie z adresu HTTPS do punktu, Visual Studio dla komputerów Mac w tym repozytorium.
 
 
 ## <a name="publishing-an-existing-project"></a>Publikowanie istniejący projekt
@@ -108,7 +108,7 @@ Jest bardzo prawdopodobne, że musisz pracować z repozytorium GitHub, która is
 5. Wprowadź katalog, który chcesz sklonować repozytorium do, a następnie naciśnij klawisz **wyewidencjonowania**.
 
 > [!NOTE]
-Mogą wystąpić problemy, jeśli repozytorium jest ponad 4GB.
+> Mogą wystąpić problemy, jeśli repozytorium jest ponad 4GB.
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 

@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 25939a2ab8c98830c00c19b3e7c76c686a2a28ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50075d46edcf6ffc73ccdcdedb0daf42c8ff6e2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827600"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Porady: Instalowanie określonej wersji programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,20 +49,20 @@ Firma Microsoft aktualizuje Instalatora programu Visual Studio często tak, aby 
   
 > [!IMPORTANT]
 >  W zależności od języka, którego chcesz używać Zastąp "tekst enu" (w języku angielskim) przy użyciu jednego z następujących wartości:  
->   
->  -   (CHS) (dla języka chińskiego (uproszczonego))  
-> -   (CHT) (w przypadku chiński tradycyjny)  
-> -   CSY (w przypadku czeski)  
-> -   DEU (dla języka niemieckiego)  
-> -   Hiszpański (dla języka hiszpańskiego)  
-> -   (FRA) (w przypadku francuski)  
-> -   (ITA) (w przypadku włoska)  
-> -   rozwiązaniami jpa (w języku japońskim)  
-> -   koreański (w przypadku koreański)  
-> -   PLK (w przypadku Polski)  
-> -   PTB (w przypadku portugalski)  
-> -   jednostki zarezerwowane (w przypadku rosyjski)  
-> -   TRK (w przypadku turecki)  
+> 
+> - (CHS) (dla języka chińskiego (uproszczonego))  
+>   -   (CHT) (w przypadku chiński tradycyjny)  
+>   -   CSY (w przypadku czeski)  
+>   -   DEU (dla języka niemieckiego)  
+>   -   Hiszpański (dla języka hiszpańskiego)  
+>   -   (FRA) (w przypadku francuski)  
+>   -   (ITA) (w przypadku włoska)  
+>   -   rozwiązaniami jpa (w języku japońskim)  
+>   -   koreański (w przypadku koreański)  
+>   -   PLK (w przypadku Polski)  
+>   -   PTB (w przypadku portugalski)  
+>   -   jednostki zarezerwowane (w przypadku rosyjski)  
+>   -   TRK (w przypadku turecki)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Podręcznik administratora programu Visual Studio](../install/visual-studio-administrator-guide.md)

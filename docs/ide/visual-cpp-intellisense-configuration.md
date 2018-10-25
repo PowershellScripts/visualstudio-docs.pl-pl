@@ -1,5 +1,5 @@
 ---
-title: Konfigurowanie projektu w języku C++ dla funkcji IntelliSense
+title: Konfigurowanie projektu w języku C++ pod kątem funkcji IntelliSense
 ms.date: 10/08/2018
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -9,13 +9,13 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3772c2c910188aacb675f267d20f5e0f16565001
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881570"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836648"
 ---
-# <a name="configure-a-c-project-for-intellisense"></a>Konfigurowanie projektu w języku C++ dla funkcji IntelliSense
+# <a name="configure-a-c-project-for-intellisense"></a>Konfigurowanie projektu w języku C++ pod kątem funkcji IntelliSense
 
 W niektórych przypadkach może być konieczne ręczne skonfigurowanie projektu języka C++ do korzystania z funkcji IntelliSense działa prawidłowo. Dla projektów programu MSBuild (oparte na pliki.vcxproj) można dostosować ustawienia we właściwościach projektu. Dla projektów niekorzystających z programu MSBuild należy dostosować ustawienia w pliku CppProperties.json w katalogu głównym projektu. W niektórych przypadkach może być konieczne utworzenie pliku wskazówki pomagające zrozumieć definicje makr w technologii IntelliSense. Visual Studio IDE ułatwia identyfikowanie i rozwiązywanie problemów IntelliSense.
 

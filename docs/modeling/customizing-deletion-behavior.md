@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f7c05d76aa74e32695d20b2d5e9ed4f030e65813
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a4b3df4661b23268fed811799c80cfc31b624a50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849154"
 ---
 # <a name="customizing-deletion-behavior"></a>Dostosowywanie zachowania dotyczącego usuwania
 Usuwanie elementu zwykle powoduje, że powiązanych elementów można również usunąć. Wszystkie relacje dołączone do niego, a wszystkie elementy podrzędne są usuwane. To zachowanie jest o nazwie *Usuń propagacji*. Można dostosować propagacji delete, na przykład aby rozmieścić, że dodatkowe powiązane elementy zostaną usunięte. Pisząc kod programu, można wprowadzić propagacji delete zależą od stanu modelu. Może również spowodować inne zmiany w odpowiedzi na usunięcie.
@@ -57,19 +57,19 @@ Usuwanie elementu zwykle powoduje, że powiązanych elementów można również 
 
 #### <a name="to-set-delete-propagation"></a>Aby ustawić propagacji delete
 
-1.  Na diagramie definicji DSL zaznacz *roli* do której należy propagacji do usunięcia. Rola jest reprezentowany przez linię po lewej stronie lub z prawej strony pola relacji domeny.
+1. Na diagramie definicji DSL zaznacz *roli* do której należy propagacji do usunięcia. Rola jest reprezentowany przez linię po lewej stronie lub z prawej strony pola relacji domeny.
 
-     Na przykład jeśli chcesz określić, że natychmiast po usunięciu albumu wykonawców powiązanych również zostaną usunięte, a następnie wybierz rolę podłączone do klasy domeny wykonawcy.
+    Na przykład jeśli chcesz określić, że natychmiast po usunięciu albumu wykonawców powiązanych również zostaną usunięte, a następnie wybierz rolę podłączone do klasy domeny wykonawcy.
 
-2.  W oknie właściwości ustaw **propaguje usunąć** właściwości.
+2. W oknie właściwości ustaw **propaguje usunąć** właściwości.
 
-3.  Naciśnij klawisz F5, a następnie upewnij się, że:
+3. Naciśnij klawisz F5, a następnie upewnij się, że:
 
-    -   Usunięcie wystąpienia tej relacji do elementu w wybranej roli, również zostaną usunięte.
+   -   Usunięcie wystąpienia tej relacji do elementu w wybranej roli, również zostaną usunięte.
 
-    -   Po usunięciu elementu na rolę odwrotną wystąpienia tej relacji zostaną usunięte, a powiązane elementy w tej roli zostaną usunięte.
+   -   Po usunięciu elementu na rolę odwrotną wystąpienia tej relacji zostaną usunięte, a powiązane elementy w tej roli zostaną usunięte.
 
- Można również wyświetlić **propaguje Usuń** opcji **szczegóły języka DSL** okna. Zaznacz klasę domeny, a następnie w oknie Szczegóły języka DSL Otwórz **zachowanie usuwaniu** strony, klikając przycisk na stronie okna. **Propagacja** opcja jest wyświetlana przeciwny roli każdej relacji. **Usuń styl** kolumna wskazuje, czy **Propagacja** opcja jest na ustawienie domyślne, ale nie ma żadnego efektu oddzielne.
+   Można również wyświetlić **propaguje Usuń** opcji **szczegóły języka DSL** okna. Zaznacz klasę domeny, a następnie w oknie Szczegóły języka DSL Otwórz **zachowanie usuwaniu** strony, klikając przycisk na stronie okna. **Propagacja** opcja jest wyświetlana przeciwny roli każdej relacji. **Usuń styl** kolumna wskazuje, czy **Propagacja** opcja jest na ustawienie domyślne, ale nie ma żadnego efektu oddzielne.
 
 ## <a name="delete-propagation-by-using-program-code"></a>Usuń propagacji przy użyciu kodu programu
  Opcje w pliku definicji DSL umożliwiają tylko wybrać, czy usunięcie propaguje do natychmiastowego sąsiada. Aby zaimplementować bardziej złożone schemat propagacji delete, można pisać kod programu.
@@ -123,7 +123,6 @@ partial class MusicLibDeleteClosure
     }
   }
 }
-
 ```
 
  Technika zamknięcia gwarantuje, że zestaw elementów i łącza do usunięcia jest określana, przed rozpoczęciem usuwania. Walker również łączy wyniki Twojego zamknięcia z tymi z innymi częściami modelu.
@@ -133,17 +132,17 @@ partial class MusicLibDeleteClosure
 ## <a name="ondeleting"></a> Przy użyciu OnDeleting i OnDeleted
  Można zastąpić `OnDeleting()` lub `OnDeleted()` klasy domeny lub w relacji domeny.
 
-1.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> jest wywoływana, gdy element ma zostać usunięty, ale zanim odłączony relacje. Nadal można nawigować do i z innych elementów i nadal znajduje się w `store.ElementDirectory`.
+1. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A> jest wywoływana, gdy element ma zostać usunięty, ale zanim odłączony relacje. Nadal można nawigować do i z innych elementów i nadal znajduje się w `store.ElementDirectory`.
 
-     Usunięcie kilku elementów w tym samym czasie OnDeleting jest wywoływana dla wszystkich z nich przed wykonaniem operacji usuwania.
+    Usunięcie kilku elementów w tym samym czasie OnDeleting jest wywoływana dla wszystkich z nich przed wykonaniem operacji usuwania.
 
-     `IsDeleting` ma wartość true.
+    `IsDeleting` ma wartość true.
 
-2.  <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> jest wywoływana, gdy element został usunięty. Pozostaje w stosie CLR, aby cofania mogą być wykonywane, jeśli jest to wymagane, ale jest rozłączony od innych elementów i usunięty z `store.ElementDirectory`. W przypadku relacji role nadal odwoływać się do starej obiekty pełniące role.`IsDeleted` ma wartość true.
+2. <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A> jest wywoływana, gdy element został usunięty. Pozostaje w stosie CLR, aby cofania mogą być wykonywane, jeśli jest to wymagane, ale jest rozłączony od innych elementów i usunięty z `store.ElementDirectory`. W przypadku relacji role nadal odwoływać się do starej obiekty pełniące role.`IsDeleted` ma wartość true.
 
-3.  OnDeleting i OnDeleted są wywoływane, gdy użytkownik wywołuje cofania po utworzeniu elementu i wcześniejsze usunięcie jest powtarzany w ponawiania. Użyj `this.Store.InUndoRedoOrRollback` w celu uniknięcia aktualizowania elementów Sklepu w tych przypadkach. Aby uzyskać więcej informacji, zobacz [porady: użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
+3. OnDeleting i OnDeleted są wywoływane, gdy użytkownik wywołuje cofania po utworzeniu elementu i wcześniejsze usunięcie jest powtarzany w ponawiania. Użyj `this.Store.InUndoRedoOrRollback` w celu uniknięcia aktualizowania elementów Sklepu w tych przypadkach. Aby uzyskać więcej informacji, zobacz [porady: użycie transakcji do aktualizacji modelu](../modeling/how-to-use-transactions-to-update-the-model.md).
 
- Na przykład poniższy kod usuwa albumu po usunięciu jej ostatniego elementu podrzędnego utworu:
+   Na przykład poniższy kod usuwa albumu po usunięciu jej ostatniego elementu podrzędnego utworu:
 
 ```
 
@@ -164,7 +163,6 @@ partial class AlbumHasSongs
       {
         this.Album.Delete();
 } } } }
-
 ```
 
  Jest często bardziej przydatne do wyzwalacza przed usunięciem relacji od elementu roli, ponieważ to działa zarówno, gdy element zostanie usunięty, a po usunięciu samą relację. W przypadku relacji odwołania może być do propagowania usunięcie po usunięciu elementów powiązanych, ale nie w przypadku, gdy zostanie usunięty sam relacji. W tym przykładzie usuwa albumu podczas jego ostatniej wykonawcy mającym swój wkład zostanie usunięty, ale nie odpowiada, jeśli relacje zostaną usunięte:
@@ -192,7 +190,6 @@ partial class Artist
     {
       album.Delete();
 } } }
-
 ```
 
  Jeśli wykonujesz <xref:Microsoft.VisualStudio.Modeling.ModelElement.Delete%2A> w elemencie OnDeleting i OnDeleted zostanie wywołana. Te metody są zawsze wykonywane wbudowane — oznacza to, bezpośrednio przed i po usunięciu rzeczywistych. Jeśli Twój kod usuwa co najmniej dwa elementy, OnDeleting i OnDeleted zostanie wywołana w zmiany na wszystkich z nich z osobna.
@@ -247,7 +244,6 @@ public partial class MusicLibDomainModel
     return types.ToArray();
   }
 }
-
 ```
 
 ### <a name="example-deleted-event"></a>Przykładowe zdarzenie usunięte
@@ -284,7 +280,6 @@ partial class NestedShapesSampleDocData
     }
   }
 }
-
 ```
 
 ## <a name="unmerge"></a> Rozdziel

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 213824ff9be80a151d20b4906839969dce3be7d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 01ae9f07d5ec1c0eb2cddda6c24831f213f4bf86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826976"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Tworzenie niestandardowych kodów i wtyczek dla testów obciążeniowych
 
@@ -27,7 +27,7 @@ Niestandardowa wtyczka używa kodu, który napiszesz i dołączysz to testu obci
 ## <a name="tasks"></a>Zadania
 
 |Zadania|Skojarzone tematy|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Utwórz niestandardową wtyczkę dla testu obciążeniowego**: można użyć interfejsu API testu obciążeniowego, aby utworzyć niestandardową wtyczkę, która doda więcej funkcjonalności testowej do testu obciążeniowego.|-   [Porady: Korzystanie z API testu obciążenia](../test/how-to-use-the-load-test-api.md)<br />-   [Porady: tworzenie wtyczki testu obciążenia](../test/how-to-create-a-load-test-plug-in.md)|
 |**Utwórz niestandardową wtyczkę dla testu wydajności sieci Web:** można użyć interfejsu API testu wydajności sieci web, aby utworzyć niestandardową wtyczkę, aby dodać więcej funkcjonalności testowej do testu wydajności sieci web, w tym na poziomie żądania. Można również utworzyć test usługi sieci web.<br /><br /> Ponadto można utworzyć sieci web dodatku plug-in rejestratora, można modyfikować test wydajności sieci web po zostało zapisane, ale przed pojawieniem się w sieci Web podglądzie wyników testu wydajności.|-   [Porady: Korzystanie z API testu wydajności sieci web](../test/how-to-use-the-web-performance-test-api.md)<br />-   [Porady: tworzenie wtyczki testu wydajności sieci web](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [Porady: tworzenie wtyczki na poziomie żądania](../test/how-to-create-a-request-level-plug-in.md)<br />-   [Porady: Tworzenie nowego testu usługi internetowej](../test/how-to-create-a-web-service-test.md)<br />-   [Porady: tworzenie wtyczki rejestratora](../test/how-to-create-a-recorder-plug-in.md)|
 |**Dodaj funkcje interfejsu użytkownika do podglądu wyników testu wydajności sieci Web:** możesz dodać więcej funkcji interfejsu użytkownika do podglądu wyników testu wydajności sieci Web za pomocą dodatku programu Visual Studio.|-   [Porady: Tworzenie dodatku programu Visual Studio dla sieci web wyników testu wydajności podglądu](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|

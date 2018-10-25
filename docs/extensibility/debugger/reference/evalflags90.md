@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 120bf38afbf05f367757de3a5e453cab8b4311b1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43c8c7dcba7ea1125c031f0cc64a902d88f67017
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849431"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 Wylicza prawidłowe wartości dla flagi sterujące Obliczanie wyrażenia. To wyliczenie rozszerza [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) wyliczenia.  
@@ -66,34 +66,34 @@ public enum enum_EVALFLAGS90
   
 #### <a name="parameters"></a>Parametry  
  EVAL90_RETURNVALUE  
- Określa przyjąć wartość zwracaną, jeśli istnieje.  
+ Określa, że wartość zwracana, jeśli istnieje, można obliczyć.  
   
  EVAL90_NOSIDEEFFECTS  
- Określa, że efekty uboczne nie jest dozwolone.  
+ Określa, że efekty uboczne niemożliwe.  
   
  EVAL90_ALLOWBPS  
- Określa zatrzymywania punktów przerwania.  
+ Określa zatrzymywanie punktów przerwania.  
   
  EVAL90_ALLOWERRORREPORT  
- Określa, że raportów o błędach do hosta mogą być. Głównie używane do obliczania wyrażenia w skrypcie w programie Internet Explorer.  
+ Określa, że raportów o błędach do hosta mają być dozwolone. Używane głównie do obliczenia wyrażenia w skrypcie w programie Internet Explorer.  
   
  EVAL90_FUNCTION_AS_ADDRESS  
- Funkcje wymusza ma zostać obliczone jako adresy, zamiast wywoływania funkcji.  
+ Funkcje wymusza, aby zostały uznane za adresów, zamiast wywoływania funkcji.  
   
  EVAL90_NOFUNCEVAL  
- Funkcja zapobiega oceniane. Rozważmy na przykład `int` tokenu w wyrażeniu `myExpression(int) + 10`. Ta funkcja może zostać poprawnie oceniony jako adres, ale nie jako wartość.  
+ Funkcja zapobiega oceniane. Na przykład, rozważmy `int` tokenu w wyrażeniu `myExpression(int) + 10`. Ta funkcja może być poprawnie określona jako adres, ale nie jako wartość.  
   
  EVAL90_NOEVENTS  
- Flaga wskazująca, że zdarzeń występujących podczas obliczania wyrażenia nie powinny być wysyłane do menedżera sesji debugowania (SDM) lub do środowiska IDE.  
+ Flaga wskazująca, że zdarzenia, które wystąpiły podczas obliczania wyrażenia nie powinny być wysyłane, Menedżer debugowania sesji (SDM) lub środowiska IDE.  
   
  EVAL90_DESIGN_TIME_EXPR_EVAL  
- Włącza Obliczanie wyrażenia czasu projektowania.  
+ Umożliwia obliczanie wyrażenia czasu projektowania.  
   
  EVAL90_ALLOW_IMPLICIT_VARS  
- Zezwala na niejawne tworzenia zmiennej.  
+ Umożliwia niejawne Tworzenie zmiennej.  
   
  EVAL90_FORCE_EVALUATION_NOW  
- Ocena wymusza natychmiastową. Jest to przydatne, gdy obsługi żądania, takie jak żądanie użytkownika.  
+ Obliczanie wymusza natychmiastowe. Jest to przydatne podczas obsługi żądania, takie jak żądania użytkownika.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: Msdbg90.h  

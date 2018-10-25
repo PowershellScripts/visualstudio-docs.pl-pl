@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0b7ac4f7cde93d4637906202f7b4c643750d8e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9c1bd0887c8d154501a87ea9a2227e079bbb083
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110565"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872762"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
-Ta metoda uzyskuje nazwę podana wartość stałej wyliczenia.  
+Ta metoda uzyskuje nazwę danego jej wartość stałej wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,16 +43,16 @@ int GetStringFromValue(
   
 #### <a name="parameters"></a>Parametry  
  `value`  
- [in] Wartość dla którego chcesz uzyskać nazwę wyliczenia stałej.  
+ [in] Wartość, dla którego należy pobrać nazwę wyliczenia stałej.  
   
  `pbstrValue`  
  [out] Zwraca nazwę stała wyliczenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` Jeśli wartość nie ma skojarzonego nazwy lub zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` Jeśli wartość nie ma skojarzonego nazwy lub zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli istnieje więcej niż jedną nazwę skojarzone z taką samą wartość, zostanie zwrócony imię zdefiniowane w wyliczeniu.  
+ Jeśli istnieje więcej niż jedną nazwę skojarzonej z taką samą wartość, zostanie zwrócony imię zdefiniowane w wyliczeniu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

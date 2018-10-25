@@ -1,5 +1,5 @@
 ---
-title: 'DA0013: Znaczące wykorzystanie String.Split lub String.Substring | Dokumentacja firmy Microsoft'
+title: 'Da0013: znaczące Wykorzystanie String.Split lub String.Substring | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,29 +18,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c218dd9a7ee3266de2cf9e07933ed69aa23e73e7
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 722277e65a30d8c40cc245123120650108ebc560
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749885"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831461"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013: Znaczące wykorzystanie String.Split lub String.Substring
+
 |||  
 |-|-|  
-|Identyfikator reguły|DA0013|  
+|Identyfikator reguły|DA0013 ZNACZĄCE|  
 |Kategoria|Wskazówki dotyczące użycia programu .NET framework|  
-|Metod profilowania|Pobierania próbek|  
-|Komunikat|Rozważ ograniczenie użycia funkcji String.Split i String.Substring.|  
+|Metod profilowania|Próbkowania|  
+|Komunikat|Należy rozważyć ograniczenie użycia funkcji String.Split i String.Substring.|  
 |Typ reguły|Ostrzeżenie|  
-  
+
 ## <a name="cause"></a>Przyczyna  
- Wywołania metod System.String.Split lub System.String.Substring są znaczna część danych profilowania. Rozważ użycie System.String.IndexOf lub System.String.IndexOfAny w przypadku testowania istnienie substring w ciągu.  
-  
+ Wywołania metod System.String.Split lub System.String.Substring jest znaczna część danych profilowania. Należy rozważyć użycie System.String.IndexOf lub System.String.IndexOfAny, jeśli testujesz istnienie podciągów w ciągu.  
+
 ## <a name="rule-description"></a>Opis reguły  
- Metody Split operuje na obiekt ciągu i zwraca nowy tablicy ciągów przechowujący podciągów oryginału. Funkcja przydziela pamięć dla obiekt array zwrócony i przydziela dla każdego elementu tablicy, który odnajdzie nowy obiekt ciągu. Podobnie Substr — metoda działa na obiekt ciągu i zwraca nowy ciąg, który jest odpowiednikiem żądanego podciąg.  
-  
- Jeśli zarządzanie przydziału pamięci jest szczególnie ważne w aplikacji, należy rozważyć użycie alternatywnych metod String.Split i String.Substr. Na przykład służy metoda IndexOf lub IndexOfAny można znaleźć określonego substring w ciągu znaków ciągu bez tworzenia nowego wystąpienia klasy String.  
-  
+ Metoda Podziel operuje na obiekt ciągu i zwraca nową tablicę ciągów, która przechowuje podciągów z oryginalnego. Funkcja przydziela pamięć dla obiektu zwróconej tablicy i przydziela nowy obiekt ciągu dla każdego elementu tablicy, które znajdzie. Podobnie SUBSTR — metoda operuje na obiekt ciągu i zwraca nowy ciąg, który jest odpowiednikiem żądanego podciąg.  
+
+ Jeśli zarządzanie alokacji pamięci ma kluczowe znaczenie dla aplikacji, należy rozważyć użycie alternatywy dla funkcji String.Split i String.Substr metod. Na przykład służy metoda IndexOf lub IndexOfAny aby zlokalizować podciąg określonego w ciągu znaków ciągu bez tworzenia nowego wystąpienia klasy String.  
+
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
- Kliknij dwukrotnie komunikat w **listy błędów** okna, aby przejść do [widok szczegółów funkcji](../profiling/function-details-view.md) pobierania próbek danych profilu. Sprawdź wywoływanie funkcji można znaleźć w sekcjach programu, które wykorzystują najczęstsze metody System.String.Split lub System.String.Substr. Jeśli to możliwe użyj metody IndexOf lub IndexOfAny można znaleźć określonego substring w ciągu znaków ciągu bez tworzenia nowego wystąpienia klasy String.
+ Kliknij dwukrotnie komunikat w **lista błędów** okna, aby przejść do [widok szczegółów funkcji](../profiling/function-details-view.md) pobierania próbek danych jej profilu. Sprawdź wywołania funkcji można znaleźć w sekcjach program najczęściej wykorzystać System.String.Split lub System.String.Substr metod. Jeśli to możliwe należy użyć metody IndexOf lub IndexOfAny aby zlokalizować podciąg określonego w ciągu znaków ciągu bez tworzenia nowego wystąpienia klasy String.

@@ -1,5 +1,5 @@
 ---
-title: 'DA0029: Nieobsługiwana wersja CLR | Dokumentacja firmy Microsoft'
+title: 'DA0029: Nieobsługiwana wersja środowiska CLR | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,27 +17,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ab40efbba692cfa85f14b750d3c853d1112704
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 5067c9f93a489c09962a9402f4fe7672cbd61108
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765742"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818448"
 ---
-# <a name="da0029-unsupported-clr-version"></a>DA0029: Nieobsługiwana wersja CLR
+# <a name="da0029-unsupported-clr-version"></a>DA0029: Nieobsługiwana wersja środowiska CLR
+
 |||  
 |-|-|  
 |Identyfikator reguły|DA0029|  
 |Kategoria|Użycie narzędzia profilowania|  
 |Metoda profilowania|Profilowanie z wiersza polecenia|  
-|Komunikat|Wykryto nieobsługiwaną wersję środowiska CLR podczas zbierania. Symbole zarządzane mogą nie być rozpoznawane poprawnie.|  
+|Komunikat|Podczas zbierania Wykryto nieobsługiwaną wersję środowiska CLR. Symbole zarządzane mogą nie być rozpoznawane poprawnie.|  
 |Typ reguły|Informacje.|  
-  
+
 ## <a name="cause"></a>Przyczyna  
- Próbujesz profilu aplikacji, która używa [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] nie jest obsługiwana za pomocą narzędzi do profilowania.  
-  
+ Chcesz profilować aplikację, która używa [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] nie jest obsługiwana przez narzędzia profilowania.  
+
 ## <a name="rule-description"></a>Opis reguły  
- To ostrzeżenie występuje, ponieważ narzędzi profilowania nie będzie można rozwiązać symboli dla kodu zarządzanego uruchomionego w aplikacji. Narzędzia profilowania nie można rozpoznać symboli zarządzanego kodu dla aplikacji, które są uruchomione [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].  
-  
-## <a name="how-to-fix-violations"></a>Jak rozwiązać naruszeń  
+ To ostrzeżenie występuje, ponieważ narzędzia profilowania nie będzie można rozwiązać symbole dla kodu zarządzanego w aplikacji. Narzędzia profilowania nie można rozpoznać symbole kodu zarządzanego dla aplikacji, które są uruchomione [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].  
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Brak.

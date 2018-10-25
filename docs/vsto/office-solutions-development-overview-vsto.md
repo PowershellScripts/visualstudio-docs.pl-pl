@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e2c960fda37a15fe129a6a2b67c4a55c297cefa
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f2ba9e49a45305c42f813f996392bb1fa5af41b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676380"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842667"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Omówienie programowania rozwiązań pakietu Office (VSTO)
   Za pomocą programu Microsoft Office jako fronton dla rozwiązania, możesz korzystać z zalet dobrze znanych interfejsów użytkownika Microsoft Office i narzędzi, takich jak funkcje przetwarzania tekstu w programach Word, funkcje analizy danych programu Excel i funkcje zarządzania pocztą e-mail programu Outlook . Można opracować rozwiązania w programie Visual Studio, aby dostosować aplikacje pakietu Office, a następnie dodaj określonych funkcji, czego potrzebujesz do procesów biznesowych. Na przykład można przekształcić w programie Word generator kontraktu, który składa umów się istniejące elementy, które mogą być wykonane edytowalne i nieedytowalne. Za pomocą programu Excel można utworzyć arkusz automatycznych budżetu dostosowane do różnych projektów. Użytkownicy mogą skorzystać z rozwiązań pakietu office w trybie offline, co sprawia, że złożonych rozwiązań jest praktyczniejsze w taki sposób, niż byłoby ich, jeśli używasz architektury opartej na sieci web.  
@@ -31,13 +31,13 @@ ms.locfileid: "35676380"
 ## <a name="choose-an-office-project-type"></a>Wybierz typ projektu pakietu Office  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zawiera następujące typy szablonów projektu do tworzenia aplikacji na podstawie narzędzi VSTO dla pakietu Office:  
   
--   **Dostosowania na poziomie dokumentu** są skojarzone z określonym dokumentem.  
+- **Dostosowania na poziomie dokumentu** są skojarzone z określonym dokumentem.  
   
--   **Dodatki narzędzi VSTO dla programów** są skojarzone z samej aplikacji.  
+- **Dodatki narzędzi VSTO dla programów** są skojarzone z samej aplikacji.  
   
- Aby zdecydować, które z tych typów projektów jest najlepsze dla Twojego rozwiązania, pomyśl o tego, czy chcesz, aby kod tylko wtedy, gdy określony dokument jest otwarty lub czy kod, który ma być dostępny zawsze, gdy aplikacja jest uruchomiona. Aby uzyskać więcej informacji na temat szablonów projektu, zobacz [Przegląd szablony projektu pakietu Office](../vsto/office-project-templates-overview.md).  
+  Aby zdecydować, które z tych typów projektów jest najlepsze dla Twojego rozwiązania, pomyśl o tego, czy chcesz, aby kod tylko wtedy, gdy określony dokument jest otwarty lub czy kod, który ma być dostępny zawsze, gdy aplikacja jest uruchomiona. Aby uzyskać więcej informacji na temat szablonów projektu, zobacz [Przegląd szablony projektu pakietu Office](../vsto/office-project-templates-overview.md).  
   
- Zależą od typów projektów, które można utworzyć, na których aplikacje pakietu Office został zainstalowany na komputerze deweloperskim. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).  
+  Zależą od typów projektów, które można utworzyć, na których aplikacje pakietu Office został zainstalowany na komputerze deweloperskim. Aby uzyskać więcej informacji, zobacz [funkcje, które są dostępne przez typ aplikacji i projektów pakietu Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ### <a name="document-level-customizations"></a>Dostosowania na poziomie dokumentów  
  Dostosowania na poziomie dokumentu składają się z zestawu, który jest skojarzony z jednym dokumencie, skoroszyt lub szablon w programie Microsoft Office Word lub Microsoft Office Excel. Zestaw jest ładowany, gdy skojarzony dokument jest otwarty. Funkcje dostosowania, które tworzysz są dostępne tylko wtedy, gdy skojarzony dokument jest otwarty. Dostosowania nie może wprowadzać zmian całej aplikacji, takich jak wyświetlanie nowej karty Wstążki lub elementu menu, gdy dowolny dokument jest otwarty.  

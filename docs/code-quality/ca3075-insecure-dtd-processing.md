@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0305c15e4230313cbe51d64a3a798d03eb3937e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b83fbf98143511bac19bef1fb2b528c71517a55f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546790"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823012"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Niezabezpieczone przetwarzanie definicji DTD
+
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|
@@ -26,10 +27,12 @@ ms.locfileid: "45546790"
 |Zmiana kluczowa|Bez podziału|
 
 ## <a name="cause"></a>Przyczyna
- Jeśli używasz niezabezpieczone <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> wystąpień lub odwołanie do jednostki zewnętrznej źródeł, analizator może akceptować niezaufanych danych wejściowych i ujawnienia poufnych informacji dla osób atakujących.
+
+Jeśli używasz niezabezpieczone <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> wystąpień lub odwołanie do jednostki zewnętrznej źródeł, analizator może akceptować niezaufanych danych wejściowych i ujawnienia poufnych informacji dla osób atakujących.
 
 ## <a name="rule-description"></a>Opis reguły
- A *definicji typu dokumentu (DTD)* jest jeden z dwóch sposobów analizatora XML można określić ważności dokumentu, zgodnie z definicją [World Wide Web Consortium (W3C) XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła szuka właściwości i wystąpienia, gdzie niezaufanych danych jest akceptowany w celu otrzymania deweloperów o potencjalnych [ujawnienie informacji](/dotnet/framework/wcf/feature-details/information-disclosure) zagrożenia, które mogą prowadzić do [przeprowadzenie ataku typu "odmowa usługi" (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) ataków. Ta zasada wyzwala, gdy:
+
+A *definicji typu dokumentu (DTD)* jest jeden z dwóch sposobów analizatora XML można określić ważności dokumentu, zgodnie z definicją [World Wide Web Consortium (W3C) XML Extensible Markup Language () 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Ta reguła szuka właściwości i wystąpienia, gdzie niezaufanych danych jest akceptowany w celu otrzymania deweloperów o potencjalnych [ujawnienie informacji](/dotnet/framework/wcf/feature-details/information-disclosure) zagrożenia, które mogą prowadzić do [przeprowadzenie ataku typu "odmowa usługi" (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) ataków. Ta zasada wyzwala, gdy:
 
 - Włączono XmlReaderSettings <xref:System.Xml.XmlReader> wystąpienia, który jest rozpoznawany jako zewnętrzne jednostki XML przy użyciu <xref:System.Xml.XmlUrlResolver>.
 
@@ -43,7 +46,7 @@ ms.locfileid: "45546790"
 
 - <xref:System.Xml.XmlReader> jest tworzona przy użyciu ustawień domyślnych niezabezpieczone lub wartości.
 
- W każdym z tych przypadków, wynik jest taki sam: zawartość z dowolnego systemu lub sieci udziały plików na komputerze, gdzie jest przetwarzany plik XML, będzie ona widoczna dla osoby atakującej, może być następnie użyta jako wektor systemu DoS.
+W każdym z tych przypadków, wynik jest taki sam: zawartość z dowolnego systemu lub sieci udziały plików na komputerze, gdzie jest przetwarzany plik XML, będzie ona widoczna dla osoby atakującej, może być następnie użyta jako wektor systemu DoS.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
 
@@ -55,23 +58,24 @@ ms.locfileid: "45546790"
 
 - Upewnij się, że <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> właściwość <xref:System.Data.DataViewManager> jest przydzielany z zaufanego źródła.
 
- .NET 3.5 i starszych
+**.NET 3.5 i starszych**
 
 - Wyłącz przetwarzanie DTD, jeśli masz do czynienia ze źródeł niezaufanych, ustawiając <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> właściwości **true** .
 
 - Klasy XmlTextReader ma dziedziczenia pełnego zaufania.
 
- .NET 4 i nowsze
+**.NET 4 i nowsze**
 
 - Unikaj włączania XmlReaderSettings, jeśli masz zajmujących źródeł niezaufanych, ustawiając <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> właściwości **Zabroń** lub **Ignoruj**.
 
 - Upewnij się, że metoda Load() przyjmuje instancję XmlReader we wszystkich przypadkach elementu.
 
 > [!NOTE]
->  Ta zasada może raportować pewnych wystąpień z prawidłową XmlSecureResolver wyników fałszywie dodatnich. Pracujemy nad rozwiązywania tego problemu przez mid 2016.
+> Ta zasada może raportować pewnych wystąpień z prawidłową XmlSecureResolver wyników fałszywie dodatnich.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Jeśli nie masz pewności, że dane wejściowe jest znany jako z zaufanego źródła, nie Pomijaj reguły z tego ostrzeżenia.
+
+Jeśli nie masz pewności, że dane wejściowe jest znany jako z zaufanego źródła, nie Pomijaj reguły z tego ostrzeżenia.
 
 ## <a name="pseudo-code-examples"></a>Przykłady pseudo-kodu
 

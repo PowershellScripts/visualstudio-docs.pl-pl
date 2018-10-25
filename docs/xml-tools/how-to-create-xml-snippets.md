@@ -10,46 +10,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae09c578eac5a4acbfa9c169ba175fe557872da5
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: db7d1cc841da888c46342ec25bf28c3af7370be9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548547"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867718"
 ---
 # <a name="how-to-create-xml-snippets"></a>Porady: tworzenie fragmentów kodu XML
 
-Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawiera fragment kodu XML, o nazwie "Fragment", czyli fragment standardowy do tworzenia nowych fragmentów kodu XML.
+Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawiera fragment XML o nazwie "Fragment", oznacza to fragment standardowy do tworzenia nowych fragmentów kodu XML.
 
 ## <a name="to-create-a-new-xml-snippet"></a>Aby utworzyć nowy fragment kodu XML
 
- Aby utworzyć nowy kod XML fragment Utwórz nowy plik XML i użyj **wstawić fragment** funkcji.
+ Aby utworzyć nowy kod XML fragment kodu tworzy nowy plik XML i użyj **Wstaw fragment kodu** funkcji.
 
-1.  Na **pliku** menu, kliknij przycisk **nowy** , a następnie kliknij przycisk **pliku**.
+1.  Na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **pliku**.
 
-2.  Kliknij przycisk **pliku XML** , a następnie kliknij przycisk **Otwórz**.
+2.  Kliknij przycisk **pliku XML** a następnie kliknij przycisk **Otwórz**.
 
-3.  Kliknij prawym przyciskiem myszy w okienku Edytora i wybierz **wstawić fragment**.
+3.  Kliknij prawym przyciskiem myszy w okienku edytora, a następnie wybierz pozycję **Wstaw fragment kodu**.
 
 4.  Wybierz **fragment** z listy i kliknij **Enter**.
 
-5.  Wprowadź wszelkie zmiany do nowego fragmentu.
+5.  Wprowadź wszelkie zmiany do nowego fragmentu kodu.
 
-6.  Z **pliku** menu wybierz opcję **zapisać XMLFile.xml**.
+6.  Z **pliku** menu wybierz opcję **Zapisz XMLFile.xml**.
 
      **Zapisz plik jako** zostanie wyświetlone okno dialogowe.
 
-7.  Wprowadź nazwę dla nowego fragmentu i wybierz **pliki fragmentu kodu** z **Zapisz jako typ** okno listy rozwijanej.
+7.  Wprowadź nazwę dla nowego fragmentu kodu, a następnie wybierz pozycję **pliki fragmentu kodu** z **Zapisz jako typ** okna listy rozwijanej.
 
-8.  Użyj **zapisać w** listy rozwijanej, aby zmienić lokalizację pliku do *Moje Documents\Visual Studio 2005\Code Snippets\XML\My XML wstawki* folder, a następnie naciśnij klawisz **zapisać**.
+8.  Użyj **Zapisz w** listy rozwijanej, aby zmienić lokalizację pliku do *fragmenty XML Snippets\XML\My 2005\Code My Documents\Visual Studio* folder, a następnie naciśnij klawisz **Zapisz**.
 
-## <a name="snippet-description"></a>Opis elementu fragment kodu
+## <a name="snippet-description"></a>Opis fragmentu kodu
 
- W tej sekcji opisano niektóre z kluczowych elementów we fragmencie standardowego. Aby uzyskać więcej informacji o elementach schematu używanego przez fragmentów kodu XML, zobacz [odwołanie do schematu wstawki kodu](../ide/code-snippets-schema-reference.md).
+ W tej sekcji opisano niektóre kluczowe elementy we fragmencie standardowy. Aby uzyskać więcej informacji na temat elementów schematu posługują się fragmentów kodu XML, zobacz [odwołanie do schematu fragmentów kodu](../ide/code-snippets-schema-reference.md).
 
-### <a name="snippettype-element"></a>SnippetType element
+### <a name="snippettype-element"></a>Snippettype — element
 
- Edytor obsługuje dwa typy fragment kodu:
+ Edytor obsługuje dwa typy fragmentu kodu:
 
 ```xml
 <SnippetTypes>
@@ -58,17 +58,17 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
 </SnippetTypes>
 ```
 
- `Expansion` Typ Określa, czy fragment pojawia się po wywołaniu **wstawić fragment** polecenia. `SurroundsWith` Typ Określa, czy fragment pojawia się po wywołaniu **obudowy z** polecenia.
+ `Expansion` Typ Określa, czy ten fragment kodu jest wyświetlany, gdy wywołujesz **Wstaw fragment kodu** polecenia. `SurroundsWith` Typ Określa, czy ten fragment kodu jest wyświetlany, gdy wywołujesz **otacza przy użyciu** polecenia.
 
 ### <a name="code-element"></a>Element Code
 
- `Code` Element definiuje tekstu XML, który zostanie wstawiony po wywołaniu fragment kodu.
+ `Code` Element definiuje tekstu XML, który zostanie wstawiony podczas wywoływania fragmencie kodu.
 
 > [!NOTE]
-> Tekst fragment kodu XML musi być ujęta w `<![CDATA[...]]>` sekcji.
+> Tekst fragment kodu XML muszą być ujęte w `<![CDATA[...]]>` sekcji.
 
 
- Poniżej przedstawiono `Code` element, który jest tworzony przez fragment standardowego.
+ Poniżej przedstawiono `Code` element, który jest tworzony przez fragment kodu standardowy.
 
 ```xml
 <Code Language="XML">
@@ -80,13 +80,13 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
 
  `Code` Element zawiera trzy zmienne.
 
--   $name$ jest zmiennej zdefiniowanej przez użytkownika. Tworzy `name` element, który ma wartość można edytować, który domyślnie "name". Zmienne zdefiniowane przez użytkownika są definiowane przy użyciu `Literal` elementu.
+- $name$ jest zmienną zdefiniowaną przez użytkownika. Tworzy `name` element, który ma wartość można edytować wartość domyślna to "name". Zmienne zdefiniowane przez użytkownika są definiowane przy użyciu `Literal` elementu.
 
--   $ $zaznaczone to uprzednio zdefiniowanej zmiennej. Reprezentuje tekst, który wybrano w edytorze XML przed wywołaniem fragment kodu. Umieszczenia tej zmiennej określa, gdzie zaznaczonego tekstu pojawi się we fragmencie kodu wokół tego zaznaczenia.
+- $ $wybrane to uprzednio zdefiniowanej zmiennej. Reprezentuje tekst, który został wybrany w edytorze XML przed wywołaniem do fragmentu kodu. Położenie ta zmienna Określa, gdzie zaznaczony tekst pojawia się we fragmencie kodu, który otacza wybieranie.
 
--   $end$ to uprzednio zdefiniowanej zmiennej. Gdy użytkownik naciśnie **Enter** aby zakończyć edytowanie pól fragment kodu, ta zmienna Określa, gdzie daszek (^) zostanie przeniesiony do.
+- $end$ jest uprzednio zdefiniowanej zmiennej. Gdy użytkownik naciśnie **Enter** aby zakończyć edytowanie pola fragment kodu, ta zmienna Określa, gdzie daszek (^) jest przenoszony do.
 
- Powyższe `Code` element wstawia następujący tekst XML:
+  Powyższe `Code` wstawia element następujący tekst XML:
 
 ```xml
 <test>
@@ -94,11 +94,11 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
 </test>
 ```
 
- Wartość elementu name jest oznaczona jako edytowalny region.
+ Wartość elementu name jest oznaczona jako regionem edytowalnym.
 
-### <a name="literal-element"></a>Element literał
+### <a name="literal-element"></a>Literal — element
 
- `Literal` Element służy do identyfikowania tekst zastępczy, który można dostosować po wstawieniu do pliku. Na przykład ciągi literału, wartości liczbowe oraz niektóre nazwy zmiennych mogą być deklarowane jako literały. Można określić dowolną liczbę literałów w Twojej fragment kodu XML i mogą odwoływać się do nich wiele razy w obrębie fragmentu. Poniżej przedstawiono przykład `Literal` element, który definiuje zmienną $ $name, którego wartość domyślna to "name".
+ `Literal` Element jest używany do identyfikowania tekst zastępczy, który można dostosować po wstawieniu do pliku. Na przykład ciągi literałowe, wartości liczbowe i nazwy niektórych zmiennych może być zadeklarowana jako literały. Można zdefiniować dowolną liczbę literałów w fragmentu kodu XML i mogą odwoływać się do nich wiele razy w tym fragmencie kodu. Oto przykład `Literal` element, który definiuje zmienną $ $name, której domyślna wartość to "name".
 
 ```xml
 <Literal>
@@ -107,7 +107,7 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
 </Literal
 ```
 
- Literały znajdują się funkcje. Edytor XML zawiera funkcji o nazwie **LookupPrefix**. **LookupPrefix** funkcja wyszukuje dany identyfikator URI przestrzeni nazw z lokalizacji w dokumencie XML ta Wstawka kodu jest wywoływany z i zwraca prefiks przestrzeni nazw, który jest zdefiniowany dla tej przestrzeni nazw, jeśli istnieje i zawiera dwukropek (:) w tej nazwie. Poniżej przedstawiono przykład `Literal` element, który używa **LookupPrefix** funkcji.
+ Literały znajdują się funkcje. Edytor XML zawiera funkcję o nazwie **LookupPrefix**. **LookupPrefix** funkcja wyszukuje dany identyfikator URI przestrzeni nazw z lokalizacji w dokumencie XML, w tym fragmencie kodu jest wywoływany z i zwraca prefiks przestrzeni nazw zdefiniowanej dla tego obszaru nazw, jeśli istnieje i zawiera dwukropek (:) w tej nazwie. Oto przykład `Literal` element, który używa **LookupPrefix** funkcji.
 
 ```xml
 <Literal Editable="false">
@@ -116,10 +116,10 @@ Edytor XML może służyć do tworzenia nowych fragmentów kodu XML. Edytor zawi
 </Literal>
 ```
 
- Zmienna $ $prefix następnie może być używana w innym miejscu w Twojej fragment kodu XML.
+ Zmienna $ $prefix mogą używane gdzie indziej w fragmentu kodu XML.
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Fragmentów kodu XML](../xml-tools/xml-snippets.md)
-- [Porady: użycie XML wstawki kodu programu](../xml-tools/how-to-use-xml-snippets.md)
-- [Porady: generowanie fragment kodu XML na podstawie schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Porady: użycie XML fragmentów kodu](../xml-tools/how-to-use-xml-snippets.md)
+- [Porady: generowanie fragmentu kodu XML na podstawie schematu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

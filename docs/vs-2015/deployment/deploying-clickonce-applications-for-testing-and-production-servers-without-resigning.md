@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 146a525394b51f71f470f1246610a855d968dddc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b2a26e847a23e8a4037958532889626a931341c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180222"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840041"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Wdrażanie technologii ClickOnce do testowania i obsługi serwerów produkcyjnych bez ponownego podpisywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ W tym temacie opisano nową funkcję wprowadzone w .NET Framework w wersji 3.5, 
   
  Poniżej przedstawiono dwa przykłady, aby wyjaśnić tego punktu. W pierwszym przykładzie publikowanie aplikacji ClickOnce, który nie ma `deploymentProvider` tagu i poproś użytkowników o zainstaluj go z http://www.adatum.com/MyApplication/. Jeśli zdecydujesz, aby opublikować na następną aktualizację aplikacji z http://subdomain.adatum.com/MyApplication/, konieczne będzie żadnej możliwości oznaczającą to w pliku manifestu wdrożenia, która znajduje się w http://www.adatum.com/MyApplication/. Możesz wykonać jedną z następujących czynności:  
   
--   Poinformuj użytkowników, aby odinstalować poprzednią wersję, a następnie zainstalowanie nowej wersji z nowej lokalizacji.  
+- Poinformuj użytkowników, aby odinstalować poprzednią wersję, a następnie zainstalowanie nowej wersji z nowej lokalizacji.  
   
--   Obejmujące aktualizację na http://www.adatum.com/MyApplication/ zawierającej `deploymentProvider` wskazujący http://www.adatum.com/MyApplication/. Zwolnij inną aktualizację później za pomocą `deploymentProvider` wskazujący http://subdomain.adatum.com/MyApplication/.  
+- Obejmujące aktualizację na http://www.adatum.com/MyApplication/ zawierającej `deploymentProvider` wskazujący http://www.adatum.com/MyApplication/. Zwolnij inną aktualizację później za pomocą `deploymentProvider` wskazujący http://subdomain.adatum.com/MyApplication/.  
   
- W drugim przykładzie publikowanie aplikacji ClickOnce, który określa `deploymentProvider`, a następnie zdecydujesz się usunąć go. Raz nowej wersji bez `deploymentProvider` została pobrana do klientów, nie można przekierować ścieżki używany do aktualizacji, dopóki nie zostanie wydana wersja Twojej aplikacji, która ma `deploymentProvider` przywrócona. Podobnie jak w pierwszym przykładzie `deploymentProvider` początkowo musi wskazywać bieżącą lokalizację aktualizacji nie nowej lokalizacji. W tym przypadku próba wstawienia `deploymentProvider` odwołujący się do http://subdomain.adatum.com/MyApplication/, Następna aktualizacja zakończy się niepowodzeniem.  
+  W drugim przykładzie publikowanie aplikacji ClickOnce, który określa `deploymentProvider`, a następnie zdecydujesz się usunąć go. Raz nowej wersji bez `deploymentProvider` została pobrana do klientów, nie można przekierować ścieżki używany do aktualizacji, dopóki nie zostanie wydana wersja Twojej aplikacji, która ma `deploymentProvider` przywrócona. Podobnie jak w pierwszym przykładzie `deploymentProvider` początkowo musi wskazywać bieżącą lokalizację aktualizacji nie nowej lokalizacji. W tym przypadku próba wstawienia `deploymentProvider` odwołujący się do http://subdomain.adatum.com/MyApplication/, Następna aktualizacja zakończy się niepowodzeniem.  
   
 ## <a name="creating-a-deployment"></a>Tworzenie wdrożenia  
  Aby uzyskać instrukcje krok po kroku dotyczące tworzenia wdrożenia, które mogą zostać wdrożone w różnych lokalizacjach sieciowych, zobacz [wskazówki: ręczne wdrażanie aplikacji ClickOnce, że jest nie wymagają Re-Signing i że zachowuje informacje o znakowaniu](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  

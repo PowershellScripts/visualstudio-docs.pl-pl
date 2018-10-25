@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d343139a23453af12555b4ffbec8e3de7e2a827
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2b3aed9e2504011a61fe13acdf4a836cb41f8df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859671"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Korzystanie z zestawów reguł do określania reguł C++ do uruchomienia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ W [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] i [!INCLUDE[vsUltShort](.
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Aby utworzyć niestandardową regułę z jednego istniejącego zestawu reguł  
   
-1.  W Eksploratorze rozwiązań Otwórz menu skrótów dla projektu, a następnie wybierz **właściwości**.  
+1. W Eksploratorze rozwiązań Otwórz menu skrótów dla projektu, a następnie wybierz **właściwości**.  
   
-2.  Na **właściwości** kartę, wybrać **analizy kodu**.  
+2. Na **właściwości** kartę, wybrać **analizy kodu**.  
   
-3.  W **zestaw reguł** listy rozwijanej, wykonaj jedną z następujących czynności:  
+3. W **zestaw reguł** listy rozwijanej, wykonaj jedną z następujących czynności:  
   
-    -   Wybierz zestaw reguł, który chcesz dostosować.  
+   - Wybierz zestaw reguł, który chcesz dostosować.  
   
      \- lub —  
   
-    -   Wybierz  **\<Przeglądaj … >** do określenia zestawu istniejącą regułę, która nie jest na liście.  
+   - Wybierz  **\<Przeglądaj … >** do określenia zestawu istniejącą regułę, która nie jest na liście.  
   
-4.  Wybierz **Otwórz** reguły są wyświetlane w edytorze zestawu reguł.  
+4. Wybierz **Otwórz** reguły są wyświetlane w edytorze zestawu reguł.  
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Aby zmodyfikować regułę ustawić w edytorze zestawu reguł  
   

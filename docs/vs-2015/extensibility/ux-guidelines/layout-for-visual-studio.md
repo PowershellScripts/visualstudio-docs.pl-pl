@@ -13,12 +13,12 @@ ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67117992e7043335152adea59d7e15f7bbdcce00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f6929054fd2983fa6b08801cd35eab7148bd8100
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829446"
 ---
 # <a name="layout-for-visual-studio"></a>Układ dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,19 +60,19 @@ Większość okien dialogowych programu Visual Studio jest [układ okna dialogow
   
 #### <a name="command-buttons"></a>Przyciski poleceń  
   
--   Przyciski poleceń działają na ramki okna dialogowego, a nie na zawartość. One będzie umieszczona w dolnej prawej i powinien mieć wystarczającej ilości miejsca zmiennej powyżej, aby ustawić wyraźnie oddzielne przycisków.  
+- Przyciski poleceń działają na ramki okna dialogowego, a nie na zawartość. One będzie umieszczona w dolnej prawej i powinien mieć wystarczającej ilości miejsca zmiennej powyżej, aby ustawić wyraźnie oddzielne przycisków.  
   
--   W przypadku przyciski poziome, które działają w obrębie okna dialogowego konfiguracji przycisku polecenia jest pionowy stos w prawym górnym rogu. Zobacz [przycisków poleceń posługiwanie się nimi](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) poniżej.  
+- W przypadku przyciski poziome, które działają w obrębie okna dialogowego konfiguracji przycisku polecenia jest pionowy stos w prawym górnym rogu. Zobacz [przycisków poleceń posługiwanie się nimi](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) poniżej.  
   
--   Miejsce na lewo od przycisków poleceń (niższe po lewej stronie/środka okna dialogowego) jest uważany za część "poza pasmem" formantów operacji okna dialogowego. Jedyną czynnością, który powinna mającym w tym miejscu jest łącza pomocy, która jest odpowiednia dla całego zadania lub okna dialogowego.  
+- Miejsce na lewo od przycisków poleceń (niższe po lewej stronie/środka okna dialogowego) jest uważany za część "poza pasmem" formantów operacji okna dialogowego. Jedyną czynnością, który powinna mającym w tym miejscu jest łącza pomocy, która jest odpowiednia dla całego zadania lub okna dialogowego.  
   
--   Przyciski poleceń powinny być 75 x 23 pikseli.  
+- Przyciski poleceń powinny być 75 x 23 pikseli.  
   
--   Przyciski poleceń powinna być 6 pikseli od siebie.  
+- Przyciski poleceń powinna być 6 pikseli od siebie.  
   
- ![Wyrównanie podstawowe przycisku](../../extensibility/ux-guidelines/media/0801-c-buttonalign.png "0801 c_ButtonAlign")  
+  ![Wyrównanie podstawowe przycisku](../../extensibility/ux-guidelines/media/0801-c-buttonalign.png "0801 c_ButtonAlign")  
   
- **Rysunek 08.01 — c: Wyrównanie podstawowe przycisku**  
+  **Rysunek 08.01 — c: Wyrównanie podstawowe przycisku**  
   
 #### <a name="labels"></a>Etykiety  
   
@@ -110,19 +110,19 @@ Większość okien dialogowych programu Visual Studio jest [układ okna dialogow
 ####  <a name="BKMK_InteriorCommandButtons"></a> Przyciski poleceń posługiwanie się nimi  
  W oknach dialogowych bardziej złożone wewnętrznej kontroli może być własną powiązane przycisków, które mogą mieć wpływ na, gdzie znajdują się okno dialogowe zatwierdzenia przycisków.  
   
--   Wyrównanie w pionie (kolumna) wnętrza przyciski, gdy użycie **OK**/**anulować** w poziomie są ukierunkowane w prawym dolnym rogu.  
+- Wyrównanie w pionie (kolumna) wnętrza przyciski, gdy użycie **OK**/**anulować** w poziomie są ukierunkowane w prawym dolnym rogu.  
   
--   Wyrównanie w poziomie (wiersz) wnętrza przyciski, gdy użycie **OK**/**anulować** w pionie są ukierunkowane w prawym górnym rogu. Ta sytuacja jest rzadziej używane.  
+- Wyrównanie w poziomie (wiersz) wnętrza przyciski, gdy użycie **OK**/**anulować** w pionie są ukierunkowane w prawym górnym rogu. Ta sytuacja jest rzadziej używane.  
   
--   Rozmiar przycisku posługiwanie się nimi powinien dotyczyć rozmiar przycisk standardowy, 75 x 23 pikseli, dopasowywanie rozmiaru **OK**/**anulować** przyciski, gdy jest to możliwe. Jeśli etykieta przycisku sprawia, że przycisk przekracza rozmiar przycisk standardowy, inne przyciski, w tym zestawie należy wyrównać za pomocą tego rozmiaru szersze.  
+- Rozmiar przycisku posługiwanie się nimi powinien dotyczyć rozmiar przycisk standardowy, 75 x 23 pikseli, dopasowywanie rozmiaru **OK**/**anulować** przyciski, gdy jest to możliwe. Jeśli etykieta przycisku sprawia, że przycisk przekracza rozmiar przycisk standardowy, inne przyciski, w tym zestawie należy wyrównać za pomocą tego rozmiaru szersze.  
   
- ![Przyciski poziome OK i Anuluj](../../extensibility/ux-guidelines/media/0801-f-horizokcan.png "0801 f_HorizOKCan")  
+  ![Przyciski poziome OK i Anuluj](../../extensibility/ux-guidelines/media/0801-f-horizokcan.png "0801 f_HorizOKCan")  
   
- **Rysunek 08.01-f: Pionowy wnętrza przycisków z poziomy OK/anulować**  
+  **Rysunek 08.01-f: Pionowy wnętrza przycisków z poziomy OK/anulować**  
   
- ![Przyciski pionowy OK i Anuluj](../../extensibility/ux-guidelines/media/0801-g-vertokcan.png "0801 g_VertOKCan")  
+  ![Przyciski pionowy OK i Anuluj](../../extensibility/ux-guidelines/media/0801-g-vertokcan.png "0801 g_VertOKCan")  
   
- **Rysunek 08.01-g: Poziomy przyciski posługiwanie się nimi pionowy OK/anulować**  
+  **Rysunek 08.01-g: Poziomy przyciski posługiwanie się nimi pionowy OK/anulować**  
   
 #### <a name="browse-button"></a>[Przeglądaj …] przycisk  
  **[Przeglądaj …]**  przycisków poniżej pola tekstowego powinien zawierają bardziej "Przeglądaj..." w całości, w tym wielokropka. Jeśli ilość miejsca jest ścisła lub dostępnych jest wiele **[Przeglądaj …]**  przyciski na ekranie przycisku można zmniejszyć do właśnie wielokropka.  

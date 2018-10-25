@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07d4cdc8551f7c8a8dbbcc14f682001a4bc8d83a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86cf4e12f412e6448f4a4b7c38af8268f10d9c56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851127"
 ---
 # <a name="call-hierarchy"></a>Hierarchia wywołań
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,24 +41,24 @@ Hierarchię wywołań umożliwia nawigowanie po kodzie, wyświetlając wszystkie
  ![Hierarchia wywołań z jednym węzłem, otwórz](../../ide/reference/media/onenode.png "OneNode")  
 Okno hierarchii wywołań  
   
--   Po rozwinięciu **wywołania do** węzeł, wszystkie elementy członkowskie, że wyświetlane są wywołania wybranego elementu członkowskiego.  
+- Po rozwinięciu **wywołania do** węzeł, wszystkie elementy członkowskie, że wyświetlane są wywołania wybranego elementu członkowskiego.  
   
--   Po rozwinięciu **wywołania z** są wyświetlane w węźle wszystkie elementy członkowskie, które są wywoływane przez wybrany element członkowski.  
+- Po rozwinięciu **wywołania z** są wyświetlane w węźle wszystkie elementy członkowskie, które są wywoływane przez wybrany element członkowski.  
   
- Następnie można rozwiń każdą z tych węzłów podrzędnych elementów członkowskich, do **wywołania do** i **wywołania z** węzłów. Dzięki temu można nawigować do stosu wywołań, jak pokazano na poniższej ilustracji.  
+  Następnie można rozwiń każdą z tych węzłów podrzędnych elementów członkowskich, do **wywołania do** i **wywołania z** węzłów. Dzięki temu można nawigować do stosu wywołań, jak pokazano na poniższej ilustracji.  
   
- ![Hierarchia wywołań z otwartymi wieloma węzłami](../../ide/media/multiplenodes.png "MultipleNodes")  
-Okno hierarchii wywołań  
+  ![Hierarchia wywołań z otwartymi wieloma węzłami](../../ide/media/multiplenodes.png "MultipleNodes")  
+  Okno hierarchii wywołań  
   
- Dla elementów członkowskich, które są zdefiniowane jako wirtualny lub abstrakcyjnej **nazwę metody zastąpienia** węzeł jest dostępny. Dla członków interfejsu **nazwę metody implementuje** węzeł jest dostępny. Te węzły można rozwijać pojawiają się na tym samym poziomie co **wywołania do** i **wywołania z** węzłów.  
+  Dla elementów członkowskich, które są zdefiniowane jako wirtualny lub abstrakcyjnej **nazwę metody zastąpienia** węzeł jest dostępny. Dla członków interfejsu **nazwę metody implementuje** węzeł jest dostępny. Te węzły można rozwijać pojawiają się na tym samym poziomie co **wywołania do** i **wywołania z** węzłów.  
   
- **Zakres wyszukiwania** na pasku narzędzi zawiera opcje dla **Moje rozwiązanie**, **bieżący projekt**, i **bieżący dokument**.  
+  **Zakres wyszukiwania** na pasku narzędzi zawiera opcje dla **Moje rozwiązanie**, **bieżący projekt**, i **bieżący dokument**.  
   
- Po wybraniu podrzędny element członkowski w **hierarchię wywołań** okienku widoku drzewa:  
+  Po wybraniu podrzędny element członkowski w **hierarchię wywołań** okienku widoku drzewa:  
   
--   **Hierarchię wywołań** okienku szczegółów zostaną wyświetlone wszystkie wiersze kodu, w którym ten podrzędny element członkowski jest wywoływana z nadrzędnego elementu członkowskiego.  
+- **Hierarchię wywołań** okienku szczegółów zostaną wyświetlone wszystkie wiersze kodu, w którym ten podrzędny element członkowski jest wywoływana z nadrzędnego elementu członkowskiego.  
   
--   **Okno definicji kodu**, jeśli jest otwarty, wyświetlany jest kod dla wybranego elementu członkowskiego. W tym oknie jest dostępna w języku C# i C++. Aby uzyskać więcej informacji na temat tego okna, zobacz [wyświetlanie struktury kodu](../../ide/viewing-the-structure-of-code.md).  
+- **Okno definicji kodu**, jeśli jest otwarty, wyświetlany jest kod dla wybranego elementu członkowskiego. W tym oknie jest dostępna w języku C# i C++. Aby uzyskać więcej informacji na temat tego okna, zobacz [wyświetlanie struktury kodu](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
 >  Hierarchię wywołań nie odnajdzie metoda odwołania do grupy, w tym miejsca, w którym metoda jest dodawana jako procedura obsługi zdarzeń lub jest przypisany do delegata. Aby znaleźć wszystkie odwołania do metody, można użyć **Znajdź wszystkie odwołania** polecenia.  

@@ -26,12 +26,12 @@ caps.latest.revision: 55
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3d8578d81dd955cc9e7223692be1fe9f63d2bf00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 529f36b476158e7333cf03210dec94ec8bab4ef2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278684"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869161"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagramy sekwencyjne UML: Zalecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,15 +60,15 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
 ##  <a name="Using"></a> Za pomocą diagramów sekwencji UML  
  Możesz użyć diagramów sekwencji do różnych celów, na różnych poziomach szczegółowości program. Typowe sytuacje rysowania diagramu sekwencji, są następujące:  
   
--   Jeśli masz diagram przypadków użycia, która zawiera podsumowanie systemu, użytkowników i ich celów, możesz narysować diagramy sekwencji do opisywania sposobu interakcji główne składniki systemu do zrealizowania celu każdego przypadku użycia. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: wskazówki dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Jeśli masz diagram przypadków użycia, która zawiera podsumowanie systemu, użytkowników i ich celów, możesz narysować diagramy sekwencji do opisywania sposobu interakcji główne składniki systemu do zrealizowania celu każdego przypadku użycia. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: wskazówki dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
   
--   Po zidentyfikowaniu komunikatów przychodzących inny interfejs składnika można narysować diagramy sekwencji do opisywania sposobu interakcji wewnętrznych części składnika, aby uzyskać ten efekt, wymagany dla każdego komunikatu przychodzącego. Aby uzyskać więcej informacji, zobacz [diagramy składników UML: wskazówki dotyczące](../modeling/uml-component-diagrams-guidelines.md).  
+- Po zidentyfikowaniu komunikatów przychodzących inny interfejs składnika można narysować diagramy sekwencji do opisywania sposobu interakcji wewnętrznych części składnika, aby uzyskać ten efekt, wymagany dla każdego komunikatu przychodzącego. Aby uzyskać więcej informacji, zobacz [diagramy składników UML: wskazówki dotyczące](../modeling/uml-component-diagrams-guidelines.md).  
   
- Rysowanie diagramów sekwencji ma kilka zalet:  
+  Rysowanie diagramów sekwencji ma kilka zalet:  
   
--   Można łatwo zobaczyć, jak zadania są dystrybuowane między składnikami.  
+- Można łatwo zobaczyć, jak zadania są dystrybuowane między składnikami.  
   
--   Można zidentyfikować wzorce interakcji, które utrudniają aktualizacji oprogramowania.  
+- Można zidentyfikować wzorce interakcji, które utrudniają aktualizacji oprogramowania.  
   
 ## <a name="relationship-to-other-diagrams"></a>Relacja z innymi diagramami  
  Można użyć diagramów sekwencji UML wraz z innymi diagramami na kilka sposobów.  
@@ -90,17 +90,17 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
   
 #### <a name="to-create-a-sequence-diagram"></a>Aby utworzyć diagram sekwencji  
   
-1.  Na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**.  
+1. Na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**.  
   
-2.  W obszarze **szablony**, kliknij przycisk **Diagram sekwencji UML**.  
+2. W obszarze **szablony**, kliknij przycisk **Diagram sekwencji UML**.  
   
-3.  Nadaj nazwę diagramowi.  
+3. Nadaj nazwę diagramowi.  
   
-4.  W **Dodaj do projektu modelowania**, wybierz istniejący projekt modelowania w rozwiązaniu, lub **Utwórz nowy projekt modelowania**, a następnie kliknij przycisk **OK**.  
+4. W **Dodaj do projektu modelowania**, wybierz istniejący projekt modelowania w rozwiązaniu, lub **Utwórz nowy projekt modelowania**, a następnie kliknij przycisk **OK**.  
   
-     Pojawi się nowy diagram sekwencji **Diagram sekwencji** przybornika. Przybornik zawiera wymagane elementy i łączniki.  
+    Pojawi się nowy diagram sekwencji **Diagram sekwencji** przybornika. Przybornik zawiera wymagane elementy i łączniki.  
   
- ![Części diagramu sekwencji](../modeling/media/uml-sequence.png "UML_Sequence")  
+   ![Części diagramu sekwencji](../modeling/media/uml-sequence.png "UML_Sequence")  
   
 #### <a name="to-draw-a-sequence-diagram"></a>Aby narysować diagram sekwencji  
   
@@ -143,15 +143,15 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
   
 #### <a name="to-display-and-edit-the-signature-text-for-a-message"></a>Aby wyświetlić i edytować tekst podpisu dla wiadomości  
   
--   Docelowe linie życia musi być powiązany lub mapowane na typy tekst podpisu była widoczna. Aby wykonać to zadanie, wykonaj jedną z następujących czynności:  
+- Docelowe linie życia musi być powiązany lub mapowane na typy tekst podpisu była widoczna. Aby wykonać to zadanie, wykonaj jedną z następujących czynności:  
   
-    -   Kliknij prawym przyciskiem myszy linii życia, a następnie wybierz **Utwórz klasę**.  
+  - Kliknij prawym przyciskiem myszy linii życia, a następnie wybierz **Utwórz klasę**.  
   
-         —lub—  
+     —lub—  
   
-    -   Wybierz linii życia, naciśnij klawisz **F4**, a następnie w polu **właściwości** oknie **typu** właściwości do istniejącego typu, lub określ nazwę dla nowego typu. Kliknij prawym przyciskiem myszy Etykieta wiadomości, a następnie wybierz **operacji tworzenia**.  
+  - Wybierz linii życia, naciśnij klawisz **F4**, a następnie w polu **właściwości** oknie **typu** właściwości do istniejącego typu, lub określ nazwę dla nowego typu. Kliknij prawym przyciskiem myszy Etykieta wiadomości, a następnie wybierz **operacji tworzenia**.  
   
-     Tekst podpisu pojawia się poniżej etykiety wiadomości. Teraz możesz edytować tekst podpisu. Aby uzyskać więcej informacji, zobacz [klasy i linie życia](#ClassesAndLifelines).  
+    Tekst podpisu pojawia się poniżej etykiety wiadomości. Teraz możesz edytować tekst podpisu. Aby uzyskać więcej informacji, zobacz [klasy i linie życia](#ClassesAndLifelines).  
   
 #### <a name="to-improve-the-layout-of-a-sequence-diagram"></a>Aby poprawić układ diagramu sekwencji  
   
@@ -227,21 +227,21 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
   
  Linie życia może reprezentować jedną z tych poziomów szczegółowości:  
   
--   Obiekty w kodzie programu, których istnieje lub jest tworzona.  
+- Obiekty w kodzie programu, których istnieje lub jest tworzona.  
   
--   Składniki lub ich podskładniki zwykle pominięcie fasad, serwery proxy i innych mechanizmów połączeń.  
+- Składniki lub ich podskładniki zwykle pominięcie fasad, serwery proxy i innych mechanizmów połączeń.  
   
--   System i aktorów  
+- System i aktorów  
   
- Komunikaty mogą reprezentować jedną z tych poziomów szczegółowości:  
+  Komunikaty mogą reprezentować jedną z tych poziomów szczegółowości:  
   
--   Oprogramowanie wiadomości w kodzie programu, na interfejs API lub interfejsu sieci Web.  
+- Oprogramowanie wiadomości w kodzie programu, na interfejs API lub interfejsu sieci Web.  
   
--   Transakcje i podrzędnych, na przykład między użytkownikami a system lub między kodem i bazy danych.  
+- Transakcje i podrzędnych, na przykład między użytkownikami a system lub między kodem i bazy danych.  
   
--   Użyj przypadków - główna interakcje między użytkownikami i systemu.  
+- Użyj przypadków - główna interakcje między użytkownikami i systemu.  
   
- Ty analizujesz istniejącego kodu czy opisujące nowy projekt, jest często przydatny do rysowania i omawiania mniej szczegółowe widoki.  
+  Ty analizujesz istniejącego kodu czy opisujące nowy projekt, jest często przydatny do rysowania i omawiania mniej szczegółowe widoki.  
   
 ## <a name="describing-variations"></a>Opisujące zmian  
  Na diagramie przedstawiono pojedynczy, typowe sekwencja zdarzeń. Jeśli chcesz wyświetlić alternatywne możliwości, takie jak scenariuszy awarii, możesz użyć jednej z tych opcji:  
@@ -275,18 +275,18 @@ W programie Visual Studio, można narysować *diagram sekwencji* do przedstawian
   
 ##### <a name="to-create-a-lifeline-from-an-existing-type"></a>Aby utworzyć linię życia z istniejącego typu  
   
--   Przeciągnij klasy, składnika lub interfejs z Eksploratora modelu UML na diagram sekwencji.  
+- Przeciągnij klasy, składnika lub interfejs z Eksploratora modelu UML na diagram sekwencji.  
   
-     \- lub —  
+   \- lub —  
   
-    1.  Kliknij prawym przyciskiem myszy klasę, składnika lub interfejsu na jego odpowiednich diagramu, a następnie kliknij przycisk **Utwórz linię życia**.  
+  1. Kliknij prawym przyciskiem myszy klasę, składnika lub interfejsu na jego odpowiednich diagramu, a następnie kliknij przycisk **Utwórz linię życia**.  
   
-    2.  W **Utwórz linię życia** okno dialogowe, wybierz diagram sekwencji, a następnie kliknij przycisk **OK**.  
+  2. W **Utwórz linię życia** okno dialogowe, wybierz diagram sekwencji, a następnie kliknij przycisk **OK**.  
   
      Nowe wystąpienia o nazwie linii życia pojawi się, którego typem jest typ, który został przeciągnięty.  
   
-    > [!NOTE]
-    >  Możesz powtórzyć tę akcję dowolną liczbę razy. Spowoduje to utworzenie linii życia przy użyciu innej nazwy.  
+  > [!NOTE]
+  >  Możesz powtórzyć tę akcję dowolną liczbę razy. Spowoduje to utworzenie linii życia przy użyciu innej nazwy.  
   
 ##### <a name="to-change-the-type-of-a-lifeline"></a>Aby zmienić typ linii życia  
   

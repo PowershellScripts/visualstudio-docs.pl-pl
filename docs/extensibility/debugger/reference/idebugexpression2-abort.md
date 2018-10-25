@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f4809fcf8e6947309182ff595ad2784b873f529
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2001992e1b5a120fd3dea588b785478e4d8ec418
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111241"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876857"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
-Ta metoda umożliwia anulowanie asynchronicznego wyrażenia uruchomienia przez wywołanie do [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) metody.  
+Ta metoda anuluje Obliczanie wyrażenia asynchroniczne jako uruchomione przez wywołanie do [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) metody.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,10 +38,10 @@ int Abort();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Podczas obliczania wyrażenia asynchroniczne zostało anulowane, nie wysyłane [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) zdarzenia do zdarzenia wywołanie zwrotne przekazane do [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) lub [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) metody.  
+ Po anulowaniu Obliczanie wyrażenia asynchroniczne niewysłane [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) zdarzenia w celu wywołania zwrotnego zdarzenia przekazane do [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) lub [Dołącz](../../../extensibility/debugger/reference/idebugengine2-attach.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   

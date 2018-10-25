@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9a8e990ee3b95d93f8757f54b92c808fb650f8
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: f9c72abaaf1a799316686c77b127952f1fe4f689
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832893"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp renderowania wariant formatu docelowego
 Zestawy piksel formatu DXGI_FORMAT_B5G6R5_UNORM wszystkie elementy docelowe renderowania i Utwórz kopię buforów.  
@@ -43,9 +43,9 @@ Aplikacje, które są częścią łańcucha wymiany mają format buforu zapasowe
 2. Kopiowanie obiektu docelowego renderowania na buforu zapasowego łańcucha wymiany w celu za pomocą rysowania cztery pełnego ekranu, za pomocą obiektu docelowego renderowania jako swoje źródła tekstury.
 3. Wywołują metody Present na swój łańcuch wymiany.
 
- Jeśli ta strategia zapisuje większą przepustowość niż jest wykorzystywane przez skopiowanie obiektu docelowego renderowania buforu zapasowego łańcucha wymiany w celu, jest lepsza wydajność renderowania.
+   Jeśli ta strategia zapisuje większą przepustowość niż jest wykorzystywane przez skopiowanie obiektu docelowego renderowania buforu zapasowego łańcucha wymiany w celu, jest lepsza wydajność renderowania.
 
- Architektury procesora GPU, korzystające z techniki fragmentacji renderowania można zobaczyć korzystny wydajności przy użyciu formatu buforu ramki 16 bpp. To ulepszenie jest, ponieważ większą część buforu ramki mieści się w pamięci podręcznej buforu ramki lokalnego każdego kafelka. Renderowanie fragmentacji architektury czasami znajdują się w procesorach GPU znajdujących się w aparaty telefoniczne przenośnych i komputerów typu tablet. rzadko pojawiają się one poza tym niche.  
+   Architektury procesora GPU, korzystające z techniki fragmentacji renderowania można zobaczyć korzystny wydajności przy użyciu formatu buforu ramki 16 bpp. To ulepszenie jest, ponieważ większą część buforu ramki mieści się w pamięci podręcznej buforu ramki lokalnego każdego kafelka. Renderowanie fragmentacji architektury czasami znajdują się w procesorach GPU znajdujących się w aparaty telefoniczne przenośnych i komputerów typu tablet. rzadko pojawiają się one poza tym niche.  
   
 ## <a name="remarks"></a>Uwagi  
  Format docelowy renderowania jest resetowana do DXGI_FORMAT_B5G6R5_UNORM na każde wywołanie `ID3D11Device::CreateTexture2D` tworząca docelowego renderowania. W szczególności format jest zastępowany podczas przekazany pDesc obiekt D3D11_TEXTURE2D_DESC opisuje cel renderowania; Czyli:  

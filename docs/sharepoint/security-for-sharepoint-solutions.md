@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3febd2a9a3d2450740b08cac4ad8d3c891386c9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b014c3b4ada42982c41928ca17472e3f585af3ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626136"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878768"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Zabezpieczenia dla rozwiązań SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obejmuje następujące funkcje, aby pomóc zwiększyć bezpieczeństwo aplikacji programu SharePoint.
@@ -34,7 +34,7 @@ ms.locfileid: "42626136"
 ## <a name="allowpartiallytrustedcallers-attribute"></a>Atrybut AllowPartiallyTrustedCallers
  Domyślnie tylko aplikacje, które są w pełni zaufana przez system zabezpieczenia dostępu kodu plików środowiska uruchomieniowego dostęp można uzyskać zestawu udostępnionego kodu zarządzanego. Oznaczanie zestawie całkowicie zaufanym o atrybucie AllowPartiallyTrustedCallers umożliwia częściowo zaufanych zestawów do niego dostęp.
 
- Wszystkie rozwiązania programu SharePoint, który nie jest wdrożony w globalnej pamięci podręcznej systemu jest dodawany atrybut AllowPartiallyTrustedCallers ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Obejmuje to rozwiązania w trybie piaskownicy lub rozwiązań wdrożonych do katalogu Bin aplikacji programu SharePoint. Aby uzyskać więcej informacji, zobacz [wersji 1 zmiany dotyczące zabezpieczeń platformy Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) i [wdrażania składników Web Part w SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
+ Wszystkie rozwiązania programu SharePoint, który nie jest wdrożony w globalnej pamięci podręcznej systemu jest dodawany atrybut AllowPartiallyTrustedCallers ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Obejmuje to rozwiązania w trybie piaskownicy lub rozwiązań wdrożonych do katalogu Bin aplikacji programu SharePoint. Aby uzyskać więcej informacji, zobacz [wersji 1 zmiany dotyczące zabezpieczeń platformy Microsoft .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177515) i [wdrażania składników Web Part w SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177509).
 
 ## <a name="safe-against-script-property"></a>Bezpieczne względem skryptu właściwości
  *Skrypt iniekcji* to wstawianie potencjalnie złośliwego kodu do kontrolki lub strony sieci Web. Aby ułatwić ochronę witryn programu SharePoint 2010 na uruchomienie skryptu, współautorzy nie Wyświetl lub Edytuj ich właściwości lub składniki Web Part domyślnie. To zachowanie jest kontrolowana przez SafeControl — atrybut o nazwie SafeAgainstScript. W [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)], ustaw ten atrybut w elemencie projektu **wpisy bezpiecznych kontrolek** podwłaściwości **bezpieczne względem skryptu**. Aby uzyskać więcej informacji, zobacz [zawierają wdrażanie pakietów i informacje w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) i [porady: oznaczanie kontrolek pojęciem bezpiecznych kontrolek](../sharepoint/how-to-mark-controls-as-safe-controls.md).

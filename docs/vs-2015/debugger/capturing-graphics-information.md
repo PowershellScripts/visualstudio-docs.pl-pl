@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aef056176df4f760941cc6775faab7b232892520
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a66d13e9fef647432f05dc01ce60732a0c40b16
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855407"
 ---
 # <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,30 +35,30 @@ Przechwytywać informacje graficzne z aplikacji Direct3D, tak aby analizator gra
   
 #### <a name="to-run-your-app-under-graphics-diagnostics"></a>Aby uruchomić aplikację w obszarze Diagnostyka grafiki  
   
--   Na pasku menu wybierz **debugowania**, **grafiki**, **Rozpocznij diagnostykę**. (Klawiatura: naciśnij klawisze Alt+F5)  
+- Na pasku menu wybierz **debugowania**, **grafiki**, **Rozpocznij diagnostykę**. (Klawiatura: naciśnij klawisze Alt+F5)  
   
--   Na **grafiki** narzędzi, wybierz **Rozpocznij diagnostykę** przycisku.  
+- Na **grafiki** narzędzi, wybierz **Rozpocznij diagnostykę** przycisku.  
   
- Gdy aplikacja jest uruchomiona w ramach diagnostyki grafiki, pewne rodzaje informacji graficznych są cały czas przechwytywane; obejmuje to konfigurację urządzenia, tworzenie łańcucha wymiany elementów, tworzenie grafiki, obiektów i zasobów oraz inne ważne wydarzenia, które wpływają na więcej niż jedną klatkę. W tym samym czasie można przechwycić szczegółowe informacje na temat konkretnych klatek. Dotyczy to wywołania rysowań i wysyłań cieniowania obliczenia, wraz z obiektami i zasobami Direct3D, które je obsługują.  
+  Gdy aplikacja jest uruchomiona w ramach diagnostyki grafiki, pewne rodzaje informacji graficznych są cały czas przechwytywane; obejmuje to konfigurację urządzenia, tworzenie łańcucha wymiany elementów, tworzenie grafiki, obiektów i zasobów oraz inne ważne wydarzenia, które wpływają na więcej niż jedną klatkę. W tym samym czasie można przechwycić szczegółowe informacje na temat konkretnych klatek. Dotyczy to wywołania rysowań i wysyłań cieniowania obliczenia, wraz z obiektami i zasobami Direct3D, które je obsługują.  
   
 #### <a name="to-capture-a-frame"></a>Aby przechwycić ramkę  
   
--   W programie Visual Studio na **grafiki** narzędzi, wybierz **Przechwyć ramkę** przycisk![ikony przycisku przechwytywania grafiki](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
+- W programie Visual Studio na **grafiki** narzędzi, wybierz **Przechwyć ramkę** przycisk![ikony przycisku przechwytywania grafiki](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
   
--   Na klawiaturze naciśnij klawisz Print Screen.  
+- Na klawiaturze naciśnij klawisz Print Screen.  
   
-    > [!NOTE]
-    >  Gdy aplikacja jest uruchomiona w ramach **Graphics Diagnostics**, klawisz Print Screen należy używać tylko do przechwytywania informacji graficznych; nie wykonuje swojego normalnego działania. To pozostaje, dopóki nie zatrzymasz przechwytywania informacji graficznych — zwykle przez zatrzymanie debugowania lub normalne wyjście z aplikacji — nawet wtedy, gdy fokus jest na innej aplikacji.  
+  > [!NOTE]
+  >  Gdy aplikacja jest uruchomiona w ramach **Graphics Diagnostics**, klawisz Print Screen należy używać tylko do przechwytywania informacji graficznych; nie wykonuje swojego normalnego działania. To pozostaje, dopóki nie zatrzymasz przechwytywania informacji graficznych — zwykle przez zatrzymanie debugowania lub normalne wyjście z aplikacji — nawet wtedy, gdy fokus jest na innej aplikacji.  
   
--   W interfejsie przechwytywania programu Visual Studio, należy wybrać **Przechwyć ramkę** znajdujący się powyżej **sesji diagnostycznej** osi czasu, lub wybierz dużych **Przechwyć ramkę** przycisku znajdujący się poniżej **klatek na sekundę** torach pływackich i w prawo wszystkie wcześniej przechwycone ramki. Przyciski są wyróżnione na poniższej ilustracji.  
+- W interfejsie przechwytywania programu Visual Studio, należy wybrać **Przechwyć ramkę** znajdujący się powyżej **sesji diagnostycznej** osi czasu, lub wybierz dużych **Przechwyć ramkę** przycisku znajdujący się poniżej **klatek na sekundę** torach pływackich i w prawo wszystkie wcześniej przechwycone ramki. Przyciski są wyróżnione na poniższej ilustracji.  
   
-     ![Przechwytywanie ramki za pomocą narzędzia użycie procesora GPU. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
+   ![Przechwytywanie ramki za pomocą narzędzia użycie procesora GPU. ](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
   
-     Gdy wszystko będzie gotowe zbadać ramki zostało przechwycone, zacznij **analizatora grafiki programu Visual Studio** wykonując **klatek...** Link powyżej miniatury obrazów lub przez dwukrotne kliknięcie miniatury.  
+   Gdy wszystko będzie gotowe zbadać ramki zostało przechwycone, zacznij **analizatora grafiki programu Visual Studio** wykonując **klatek...** Link powyżej miniatury obrazów lub przez dwukrotne kliknięcie miniatury.  
   
- Tylko całe ramki mogą być przechwytywane, więc po zainicjowaniu przechwytywania tak naprawdę to informacje grafiki z następnej ramki są rejestrowane. Zapisywanie rozpoczyna się natychmiast po zaprezentowaniu klatki, w której rozpocząłeś przechwytywanie, i kończy się po zaprezentowaniu przechwyconej klatki. Możesz przechwycić tyle klatek, ile chcesz, gdy aplikacja jest uruchomiona w ramach diagnostyki grafiki. Jeśli nie przechwycisz żadnej ramki, dziennik grafiki jest odrzucany.  
+  Tylko całe ramki mogą być przechwytywane, więc po zainicjowaniu przechwytywania tak naprawdę to informacje grafiki z następnej ramki są rejestrowane. Zapisywanie rozpoczyna się natychmiast po zaprezentowaniu klatki, w której rozpocząłeś przechwytywanie, i kończy się po zaprezentowaniu przechwyconej klatki. Możesz przechwycić tyle klatek, ile chcesz, gdy aplikacja jest uruchomiona w ramach diagnostyki grafiki. Jeśli nie przechwycisz żadnej ramki, dziennik grafiki jest odrzucany.  
   
- Podczas przechwytywania ramki, Visual Studio wyświetli okno (.diagsession) sesji diagnostyki. Jeśli zamknąć to okno, Zatrzymaj debugowanie lub zamknąć aplikację, nie może przechwytywać więcej ramek do tego dziennika. Do przechwytywania informacji graficznych, musisz uruchomić aplikację w obszarze Diagnostyka grafiki ponownie, aby rozpocząć nową sesję diagnostyki.  
+  Podczas przechwytywania ramki, Visual Studio wyświetli okno (.diagsession) sesji diagnostyki. Jeśli zamknąć to okno, Zatrzymaj debugowanie lub zamknąć aplikację, nie może przechwytywać więcej ramek do tego dziennika. Do przechwytywania informacji graficznych, musisz uruchomić aplikację w obszarze Diagnostyka grafiki ponownie, aby rozpocząć nową sesję diagnostyki.  
   
 ### <a name="graphics-diagnostics-capture-options"></a>Opcje przechwytywania diagnostyki grafiki  
  Można skonfigurować przechwytywania Zbieraj stosy wywołań dla wszystkich zdarzeń grafiki lub być podzbiorem ograniczone, wyłącz Przechwytywanie HUD oraz włączyć lub wyłączyć tryb zgodności przechwytywania.  

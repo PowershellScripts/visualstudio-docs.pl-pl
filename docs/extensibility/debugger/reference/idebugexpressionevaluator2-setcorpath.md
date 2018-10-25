@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5ecff270a07d9f10c2a7df150989813179e58f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 64c031647382ccb9b4136fdd97d5cb60fc41997b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882377"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
-Ustawia ścieżkę do środowisko uruchomieniowe języka wspólnego (CLR) załadowane w debugerze.  
+Ustawia ścieżkę do wykonywalnych języka wspólnego (CLR) załadowane w debugerze.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,13 +40,13 @@ int SetCorPath(
   
 #### <a name="parameters"></a>Parametry  
  `pcstrCorPath`  
- [in] Ścieżka do środowiska CLR załadowany w debugerze.  
+ [in] Ścieżka do środowiska CLR jest załadowany w debugerze.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **ExpressionEvaluatorPackage** obiekt ujawniający [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **ExpressionEvaluatorPackage** obiekt ujawniający [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfejsu.  
   
 ```cpp  
 STDMETHODIMP ExpressionEvaluatorPackage::SetCorPath(LPCOLESTR pcstrCorPath)  

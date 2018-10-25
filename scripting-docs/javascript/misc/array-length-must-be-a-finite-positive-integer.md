@@ -1,5 +1,5 @@
 ---
-title: Długość tablicy musi być skończony dodatnią liczbą całkowitą | Dokumentacja firmy Microsoft
+title: Długość tablicy musi być skończoną dodatnią liczbą całkowitą. | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,31 +21,31 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c6589bd2e9bb4acbec5f169087a49e64417dfae7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788599"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882564"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>Długość tablicy musi być skończony dodatnią liczbą całkowitą
-Wywołujesz **tablicy** konstruktora z argumentem, który nie jest liczbą całkowitą (liczby całkowite składają się z zero plus zbiór dodatnie liczby całkowite).  
+Wywołujesz **tablicy** Konstruktor z argumentem, który nie jest liczbą całkowitą (liczby całkowite składają się z zera, a także zestaw dodatnie liczby całkowite).  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Użyj dodatnie liczby całkowite, tylko w przypadku tworzenia nowego `Array` obiektu. Jeśli chcesz utworzyć tablicy z pojedynczym elementem, który nie jest liczbą całkowitą, należy to zrobić w dwóch etapach. Najpierw utworzyć tablicy o jeden element, a następnie umieść wartość w pierwszym elemencie (array[0]). Poniżej znajduje się przykład tego błędu.  
+-   Użyj dodatnie liczby całkowite, tylko wtedy, gdy jest to utworzenie nowego `Array` obiektu. Jeśli chcesz utworzyć tablicy z pojedynczy element, który nie jest liczbą całkowitą, należy to zrobić w dwóch etapach. Najpierw Utwórz tablicę z jednym elementem, a następnie umieść wartość w pierwszym elemencie (array[0]). Oto przykład, który generuje ten błąd.  
   
     ```JavaScript  
     var piArray = new Array(3.14159);  
     ```  
   
-     W poniższym przykładzie pokazano poprawne sposobem określania tablicy z pojedynczym elementem liczbowych.  
+     W poniższym przykładzie pokazano prawidłowym sposobem, aby określić tablicę z jednym elementem liczbowych.  
   
     ```JavaScript  
     var piArray = new Array(1);  
     piArray [0] = 3.14159;  
     ```  
   
-     Nie ma żadnego górnego limitu rozmiaru tablicy, innego niż wartość maksymalna liczba całkowita (około miliarda 4).  
+     Nie ma żadnego górnego limitu rozmiaru tablicy innej niż wartość maksymalna liczba całkowita (około 4 miliardów).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)

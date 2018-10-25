@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9fde5d5edd7e81060b088e4940d752aa05e65ded
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/10/2018
-ms.locfileid: "24788968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868108"
 ---
 # <a name="unterminated-comment"></a>Niezakończony komentarz
-Rozpoczęcia blok komentarza wiele wierszy, ale nie prawidłowo zakończyć go. Komentarze wielowierszowe rozpoczynają się od "/ *" kombinacja i kończyć się odwrotnej "\*/" kombinacji. Oto przykład:  
+Rozpoczęto blok komentarzy wielowierszowych, ale nie prawidłowo zakończyć je. Wielowierszowe komentarze zaczynają się od "/ *" połączenie oraz kończyć się odwrotnej "\*/" kombinacji. Oto przykład:  
   
 ```JavaScript  
 /* This is a comment  

@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3169ba8aaa348a6db698b968e7bec4e8273dfada
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862206"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Visual C# IntelliSense jest dostępna podczas kodowania w edytorze i podczas deb
 ## <a name="completion-lists"></a>Listy uzupełniania  
  Listy uzupełniania IntelliSense w języku Visual C# zawiera tokenów z listy elementów członkowskich, Dokończ wyraz i innych. Zapewnia ona szybki dostęp do:  
   
--   Elementy członkowskie tego typu lub przestrzeni nazw  
+- Elementy członkowskie tego typu lub przestrzeni nazw  
   
--   Nazwy funkcji, zmiennych i polecenia  
+- Nazwy funkcji, zmiennych i polecenia  
   
--   [Fragmenty kodu](#CodeSnippets),  
+- [Fragmenty kodu](#CodeSnippets),  
   
--   [Słowa kluczowe języka](#Keywords),  
+- [Słowa kluczowe języka](#Keywords),  
   
--   [Metody rozszerzeń](#ExtensionMethods)  
+- [Metody rozszerzeń](#ExtensionMethods)  
   
- Na liście uzupełniania w języku C# jest również inteligentnego odfiltrować tokenów nie ma znaczenia i wstępnie wybierz token na podstawie kontekstu. Aby uzyskać więcej informacji, zobacz [filtrowane listy uzupełniania w języku C#](../misc/filtered-completion-lists-in-csharp.md) i [Pre-selected listy uzupełniania w C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
+  Na liście uzupełniania w języku C# jest również inteligentnego odfiltrować tokenów nie ma znaczenia i wstępnie wybierz token na podstawie kontekstu. Aby uzyskać więcej informacji, zobacz [filtrowane listy uzupełniania w języku C#](../misc/filtered-completion-lists-in-csharp.md) i [Pre-selected listy uzupełniania w C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ###  <a name="CodeSnippets"></a> Fragmenty kodu w listach uzupełniania  
  W języku Visual C# na liście uzupełniania zawiera fragmenty kodu, aby pomóc łatwo Wstawianie wstępnie zdefiniowanych jednostek kodu programu. Fragmenty kodu są wyświetlane na liście uzupełniania jako ten fragment kodu [Shortcut — Element (fragmenty kodu Intellisense)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa).  Aby uzyskać więcej informacji na temat fragmentów kodu, które domyślnie są dostępne w Visual C#, zobacz [Visual C# — wstawki](../ide/visual-csharp-code-snippets.md).  
@@ -123,23 +123,23 @@ Visual C# IntelliSense jest dostępna podczas kodowania w edytorze i podczas deb
   
  Aby wyświetlić odpowiednie opcje, można użyć jednej z następujących procedur:  
   
--   Kliknij przycisk Niezdefiniowany identyfikator. Krótkie podkreślenie pojawia się w obszarze skrajnie po lewej stronie znaku. Umieść wskaźnik myszy na krótki podkreślenia i tagu inteligentnego (ikonę). Kliknij tag inteligentny.  
+- Kliknij przycisk Niezdefiniowany identyfikator. Krótkie podkreślenie pojawia się w obszarze skrajnie po lewej stronie znaku. Umieść wskaźnik myszy na krótki podkreślenia i tagu inteligentnego (ikonę). Kliknij tag inteligentny.  
   
--   Kliknij Niezdefiniowany identyfikator, a następnie naciśnij klawisze CTRL +. (okres).  
+- Kliknij Niezdefiniowany identyfikator, a następnie naciśnij klawisze CTRL +. (okres).  
   
--   Kliknij prawym przyciskiem myszy Niezdefiniowany identyfikator, a następnie kliknij przycisk **Generuj**.  
+- Kliknij prawym przyciskiem myszy Niezdefiniowany identyfikator, a następnie kliknij przycisk **Generuj**.  
   
- Opcje, które pojawiają się mogą być następujące:  
+  Opcje, które pojawiają się mogą być następujące:  
   
--   **Generowania szkieletu właściwości**  
+- **Generowania szkieletu właściwości**  
   
--   **Wygenerować klasy zastępczej pola**  
+- **Wygenerować klasy zastępczej pola**  
   
--   **Generuj szkielet metody**  
+- **Generuj szkielet metody**  
   
--   **Generuj klasę**  
+- **Generuj klasę**  
   
--   **Generuj nowy typ** (dla klasy, struktury, interfejs lub wyliczenie)  
+- **Generuj nowy typ** (dla klasy, struktury, interfejs lub wyliczenie)  
   
 ## <a name="generate-event-handlers"></a>Generuj procedury obsługi zdarzeń  
  W edytorze kodu IntelliSense może pomóc podpinanie metody (procedury obsługi zdarzeń) do pola zdarzenia.  

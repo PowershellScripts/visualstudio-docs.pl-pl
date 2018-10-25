@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f0ed351bf15ec257f79e226958b38e46ac769d0e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 81d6aefcf98b43524e7ffa1e0965e6a5df9189fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676176"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865729"
 ---
 # <a name="secure-deployment"></a>Zabezpieczanie wdrożenia
   Podczas tworzenia rozwiązań pakietu Office, komputer deweloperski jest aktualizowany automatycznie uruchamianie kodu w projekcie do uruchomienia. Jednak podczas wdrażania rozwiązania, należy podać dowód, na którym można oprzeć decyzji o zaufaniu rozwiązania przy użyciu certyfikatu podpisywania lub używając [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] klucz monitu zaufania. Aby uzyskać więcej informacji, zobacz [udzielenia zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md).  
@@ -35,17 +35,17 @@ ms.locfileid: "35676176"
 ## <a name="prevent-office-solutions-from-running-code"></a>Uniemożliwienie rozwiązań pakietu Office kodu  
  Administratorzy mogą używać rejestru, aby zapobiec wszystkich rozwiązań pakietu Office na komputerze z systemem. Gdy rozwiązań pakietu Office, który zawiera rozszerzenia kodu zarządzanego jest otwarty, Visual Studio Tools for Office runtime kontroli czy wpisu o nazwie `Disabled` istnieje w jednej z następujących kluczy rejestru na komputerze:  
   
--   **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
+- **HKEY_CURRENT_USER\Software\Microsoft\VSTO**  
   
--   **Folderze**  
+- **Folderze**  
   
- Aby uniemożliwić uruchamianie kodu rozwiązań pakietu Office, należy utworzyć `Disabled` wpis w co najmniej jeden z tych kluczy rejestru i określ jedną z następujących typów danych i wartości dla `Disabled`:  
+  Aby uniemożliwić uruchamianie kodu rozwiązań pakietu Office, należy utworzyć `Disabled` wpis w co najmniej jeden z tych kluczy rejestru i określ jedną z następujących typów danych i wartości dla `Disabled`:  
   
--   REG_SZ lub REG_EXPAND_SZ, który jest ustawiony na dowolny ciąg, innego niż "0" (zero).  
+- REG_SZ lub REG_EXPAND_SZ, który jest ustawiony na dowolny ciąg, innego niż "0" (zero).  
   
--   REG_DWORD, który jest ustawiony na wartość inną niż 0 (zero).  
+- REG_DWORD, który jest ustawiony na wartość inną niż 0 (zero).  
   
- Aby włączyć rozwiązań pakietu Office uruchomić kod, ustaw obie `Disabled` wpisy na 0 (zero), lub Usuń wpisy rejestru.  
+  Aby włączyć rozwiązań pakietu Office uruchomić kod, ustaw obie `Disabled` wpisy na 0 (zero), lub Usuń wpisy rejestru.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Wdrażanie rozwiązania do pakietu Office](../vsto/deploying-an-office-solution.md)   

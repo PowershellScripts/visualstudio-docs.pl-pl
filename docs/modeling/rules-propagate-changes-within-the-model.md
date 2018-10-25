@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e1abc17e9675423359c6f850056a2fedf062e01
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8f506b71240024206523821080cdf958660aa963
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567025"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865976"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Reguły propagujące zmiany w modelu
 Można utworzyć regułę magazynu propagowanie zmian jeden element do innego w wizualizacji i modelowania SDK (VMSDK). W przypadku zmiany dowolnego elementu w Store, zasady są zaplanowane do wykonania, zwykle w przypadku, gdy najbardziej zewnętrznej transakcja została zatwierdzona. Istnieją różne typy reguł dla różnych rodzajów zdarzeń, takich jak elementu Dodawanie lub usuwanie go. Zasady można dołączyć do określonych typów elementów, kształty i diagramy. Wiele wbudowanych funkcji są definiowane przez reguły: na przykład zasady upewnij się, że diagram jest aktualizowana po zmianie modelu. Języka specyficznego dla domeny można dostosować, dodając własnych reguł.
@@ -67,7 +67,6 @@ namespace ExampleNamespace
    }
  }
 }
-
 ```
 
 > [!NOTE]
@@ -75,13 +74,13 @@ namespace ExampleNamespace
 
 ### <a name="to-define-a-rule"></a>Aby zdefiniować regułę
 
-1.  Zdefiniuj reguły, zgodnie z prefiksem klasę `RuleOn` atrybutu. Ten atrybut kojarzy regułę z jednej klasy domeny, relacji lub elementów diagramu. Reguła będzie stosowana do każdego wystąpienia tej klasy, która może być abstrakcyjny.
+1. Zdefiniuj reguły, zgodnie z prefiksem klasę `RuleOn` atrybutu. Ten atrybut kojarzy regułę z jednej klasy domeny, relacji lub elementów diagramu. Reguła będzie stosowana do każdego wystąpienia tej klasy, która może być abstrakcyjny.
 
-2.  Zarejestruj reguły, dodając ją do zestawu, który został zwrócony przez `GetCustomDomainModelTypes()` w klasie modelu domeny.
+2. Zarejestruj reguły, dodając ją do zestawu, który został zwrócony przez `GetCustomDomainModelTypes()` w klasie modelu domeny.
 
-3.  Klasy pochodnej klasy reguł z jednego klas abstrakcyjnych reguły i pisanie kodu metody wykonywania.
+3. Klasy pochodnej klasy reguł z jednego klas abstrakcyjnych reguły i pisanie kodu metody wykonywania.
 
- W poniższych sekcjach opisano te kroki, które bardziej szczegółowo.
+   W poniższych sekcjach opisano te kroki, które bardziej szczegółowo.
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>Aby zdefiniować regułę dla klasy domeny
 
@@ -129,24 +128,26 @@ namespace ExampleNamespace
 
 ### <a name="to-write-the-code-of-the-rule"></a>Aby napisać kod reguły
 
--   Pochodną klasy reguł z jednej z następujących klas bazowych:
+- Pochodną klasy reguł z jednej z następujących klas bazowych:
 
-    |Klasa bazowa|Wyzwalacz|
-    |----------------|-------------|
-    |<xref:Microsoft.VisualStudio.Modeling.AddRule>|Element, link lub kształt zostanie dodany.<br /><br /> Umożliwia wykrywanie nowych relacji, oprócz nowych elementów.|
-    |<xref:Microsoft.VisualStudio.Modeling.ChangeRule>|Wartość właściwość domeny została zmieniona. Argument metody zawiera starej i nowej wartości.<br /><br /> Dla kształtów, ta reguła jest wyzwalana, gdy wbudowane `AbsoluteBounds` zmiany właściwości, jeśli jest przesuwany.<br /><br /> W wielu przypadkach jest bardziej wygodne zastąpić `OnValueChanged` lub `OnValueChanging` w obsłudze właściwości. Te metody są wywoływane bezpośrednio przed zmianą i po niej. Z drugiej strony gdy zasada jest wykonywana zwykle na końcu transakcji. Aby uzyskać więcej informacji, zobacz [Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md). **Uwaga:** ta reguła nie jest wyzwalana po utworzeniu lub usunięciu linku. Zamiast tego należy napisać `AddRule` i `DeleteRule` dla relacji domeny.|
-    |<xref:Microsoft.VisualStudio.Modeling.DeletingRule>|Wyzwalane, gdy element lub link ma być usunięty. Właściwość ModelElement.IsDeleting ma wartość true, aż do zakończenia transakcji.|
-    |<xref:Microsoft.VisualStudio.Modeling.DeleteRule>|Wykonywane, gdy element lub link został usunięty. Reguła będzie wykonywana po zostały wykonane wszystkie inne zasady, w tym DeletingRules. ModelElement.IsDeleting ma wartość false, a ModelElement.IsDeleted ma wartość true. Aby zezwolić na kolejne cofania, element nie jest usuwany z pamięci, ale zostanie on usunięty z Store.ElementDirectory.|
-    |<xref:Microsoft.VisualStudio.Modeling.MoveRule>|Element jest przenoszony z jednego magazynu partycji do innej.<br /><br /> (Zwróć uwagę, że to nie jest powiązana graficzny położenie kształtu).|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule>|Ta reguła ma zastosowanie tylko do relacji domeny. Zostanie on wyzwolony, jeśli element modelu jawnie przypisać do dowolnego końca łącza.|
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule>|Wyzwalane, gdy kolejność łączy do lub z elementu ulegnie zmianie za pomocą metod MoveBefore lub MoveToIndex łącze.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>|Wykonania, gdy transakcja jest tworzona.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>|Wykonania, gdy transakcja ma zostać zatwierdzone.|
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>|Wykonania, gdy transakcja zostanie wycofana.|
 
--   Każda klasa ma metodę, która można zastąpić. Typ `override` w swojej klasie, aby je odnajdą. Parametr tej metody identyfikuje element, który został zmieniony.
+  | Klasa bazowa | Wyzwalacz |
+  |-|-|
+  | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Element, link lub kształt zostanie dodany.<br /><br /> Umożliwia wykrywanie nowych relacji, oprócz nowych elementów. |
+  | <xref:Microsoft.VisualStudio.Modeling.ChangeRule> | Wartość właściwość domeny została zmieniona. Argument metody zawiera starej i nowej wartości.<br /><br /> Dla kształtów, ta reguła jest wyzwalana, gdy wbudowane `AbsoluteBounds` zmiany właściwości, jeśli jest przesuwany.<br /><br /> W wielu przypadkach jest bardziej wygodne zastąpić `OnValueChanged` lub `OnValueChanging` w obsłudze właściwości. Te metody są wywoływane bezpośrednio przed zmianą i po niej. Z drugiej strony gdy zasada jest wykonywana zwykle na końcu transakcji. Aby uzyskać więcej informacji, zobacz [Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md). **Uwaga:** ta reguła nie jest wyzwalana po utworzeniu lub usunięciu linku. Zamiast tego należy napisać `AddRule` i `DeleteRule` dla relacji domeny. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeletingRule> | Wyzwalane, gdy element lub link ma być usunięty. Właściwość ModelElement.IsDeleting ma wartość true, aż do zakończenia transakcji. |
+  | <xref:Microsoft.VisualStudio.Modeling.DeleteRule> | Wykonywane, gdy element lub link został usunięty. Reguła będzie wykonywana po zostały wykonane wszystkie inne zasady, w tym DeletingRules. ModelElement.IsDeleting ma wartość false, a ModelElement.IsDeleted ma wartość true. Aby zezwolić na kolejne cofania, element nie jest usuwany z pamięci, ale zostanie on usunięty z Store.ElementDirectory. |
+  | <xref:Microsoft.VisualStudio.Modeling.MoveRule> | Element jest przenoszony z jednego magazynu partycji do innej.<br /><br /> (Zwróć uwagę, że to nie jest powiązana graficzny położenie kształtu). |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule> | Ta reguła ma zastosowanie tylko do relacji domeny. Zostanie on wyzwolony, jeśli element modelu jawnie przypisać do dowolnego końca łącza. |
+  | <xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule> | Wyzwalane, gdy kolejność łączy do lub z elementu ulegnie zmianie za pomocą metod MoveBefore lub MoveToIndex łącze. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | Wykonania, gdy transakcja jest tworzona. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Wykonania, gdy transakcja ma zostać zatwierdzone. |
+  | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Wykonania, gdy transakcja zostanie wycofana. |
 
- Zwróć uwagę na następujące kwestie dotyczące reguł:
+
+- Każda klasa ma metodę, która można zastąpić. Typ `override` w swojej klasie, aby je odnajdą. Parametr tej metody identyfikuje element, który został zmieniony.
+
+  Zwróć uwagę na następujące kwestie dotyczące reguł:
 
 1.  Zestaw zmian w ramach transakcji może wyzwolić wiele reguł. Zazwyczaj reguły są wykonywane, gdy najbardziej zewnętrznej transakcja została zatwierdzona. Są one wykonywane w nieokreślonej kolejności.
 
@@ -208,7 +209,6 @@ namespace Company.TaskRuleExample
   }
 
 }
-
 ```
 
 ## <a name="see-also"></a>Zobacz też

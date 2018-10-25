@@ -1,5 +1,5 @@
 ---
-title: Oczekiwano &#39; @&#39; | Dokumentacja firmy Microsoft
+title: Oczekiwano &#39;@&#39; | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f007129aa8da3ac49112fbc83b7abd31e4356c4f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856850"
 ---
-# <a name="expected-3939"></a>Oczekiwano &#39; @&#39;
-Próbowano utworzyć zmienną do użycia przy użyciu instrukcji kompilacja warunkowa `@set` instrukcji, ale nie znak "**@**" przed nazwą zmiennej.  
+# <a name="expected-3939"></a>Oczekiwano &#39;@&#39;
+Próbowano utworzyć zmienną do użycia w instrukcjach kompilacji warunkowej przy użyciu `@set` instrukcji, ale nie znakiem "**@**" przed nazwą zmiennej.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
@@ -39,6 +39,6 @@ Próbowano utworzyć zmienną do użycia przy użyciu instrukcji kompilacja waru
     ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [@set— Instrukcja](../../javascript/reference/at-set-statement-javascript.md)   
+ [@set Instrukcja](../../javascript/reference/at-set-statement-javascript.md)   
  [Kompilacja warunkowa](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Zmienne kompilacji warunkowej](../../javascript/advanced/conditional-compilation-variables-javascript.md)

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 127d4c5695c870c570080c79c5f447b6173b1fb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c9f0e06a99c14c65ff04d1ea273776aca725a0af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105453"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839872"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
-Zwraca wartość wskazującą, protokół, który jest używany do komunikacji między serwerem a pakietu debugowania.  
+Zwraca wartość wskazującą, protokół, który jest używany do komunikacji między serwerem a debugowanie pakietu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,7 +44,7 @@ int GetConnectionProtocol(
  [out] Zwraca jedną z wartości z [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) wyliczenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   

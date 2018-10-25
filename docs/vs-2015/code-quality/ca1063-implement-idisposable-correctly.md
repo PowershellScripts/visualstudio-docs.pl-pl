@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e80857ae1cfafdc6733af3eec78735dc249f4905
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287485"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877299"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Należy prawidłowo zaimplementować interfejs IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
@@ -39,23 +40,23 @@ ms.locfileid: "49287485"
 ## <a name="cause"></a>Przyczyna
  `IDisposable` Nie zaimplementowano poprawnie. Poniżej przedstawiono niektóre przyczyny tego problemu:
 
--   Interfejs IDisposable, jest ponownie zaimplementowane w klasie.
+- Interfejs IDisposable, jest ponownie zaimplementowane w klasie.
 
--   Finalizowanie ponownie zostanie zastąpiona.
+- Finalizowanie ponownie zostanie zastąpiona.
 
--   Dispose zostanie zastąpiona.
+- Dispose zostanie zastąpiona.
 
--   Metody Dispose() nie jest publiczna, zapieczętowany lub o nazwie metody Dispose.
+- Metody Dispose() nie jest publiczna, zapieczętowany lub o nazwie metody Dispose.
 
--   Dispose(bool) nie jest chroniony, wirtualny lub niezapieczętowane.
+- Dispose(bool) nie jest chroniony, wirtualny lub niezapieczętowane.
 
--   Niezapieczętowane typy metody Dispose() musi wywołać metody Dispose(true).
+- Niezapieczętowane typy metody Dispose() musi wywołać metody Dispose(true).
 
--   W przypadku typów niezapieczętowanych implementacji Finalize niewywołujący jednego lub obu tych Dispose(bool) lub finalizatory klasy wielkości liter.
+- W przypadku typów niezapieczętowanych implementacji Finalize niewywołujący jednego lub obu tych Dispose(bool) lub finalizatory klasy wielkości liter.
 
- Naruszenie któregokolwiek z tych wzorców wyzwoli to ostrzeżenie.
+  Naruszenie któregokolwiek z tych wzorców wyzwoli to ostrzeżenie.
 
- Co główny niezapieczętowany typ interfejsu IDisposable, musisz podać swój własny chronionych void Dispose(bool) metodę wirtualną. Metody Dispose() powinny wywoływać Dipose(true) i Finalize powinny wywoływać metody Dispose(false). W przypadku tworzenia głównego niezapieczętowanego typu IDisposable, należy zdefiniować Dispose(bool) i wywołać go. Aby uzyskać więcej informacji, zobacz [Cleaning Up Unmanaged Resources](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) w [wytyczne dotyczące projektowania Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) części dokumentacji .NET Framework.
+  Co główny niezapieczętowany typ interfejsu IDisposable, musisz podać swój własny chronionych void Dispose(bool) metodę wirtualną. Metody Dispose() powinny wywoływać Dipose(true) i Finalize powinny wywoływać metody Dispose(false). W przypadku tworzenia głównego niezapieczętowanego typu IDisposable, należy zdefiniować Dispose(bool) i wywołać go. Aby uzyskać więcej informacji, zobacz [Cleaning Up Unmanaged Resources](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) w [wytyczne dotyczące projektowania Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) części dokumentacji .NET Framework.
 
 ## <a name="rule-description"></a>Opis reguły
  Wszystkie typy IDisposable powinny poprawnie implementować wzorzec Dispose.

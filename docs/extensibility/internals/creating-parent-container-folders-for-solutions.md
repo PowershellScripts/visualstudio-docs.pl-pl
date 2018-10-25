@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be768f684a495271f06a2a79a71647a9bbaa8552
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498873"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830694"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Tworzenie folderów kontenera dla rozwiązań nadrzędnego
 W źródło sterowania wtyczki interfejsu API w wersji 1.2 użytkownik może określić lokalizację docelową kontroli źródła z jednym elementem głównym dla wszystkich projektów sieci web w ramach rozwiązania. To z jednym elementem głównym jest nazywany Super Unified głównego (dolna Południowa).  
@@ -50,7 +50,7 @@ W źródło sterowania wtyczki interfejsu API w wersji 1.2 użytkownik może okr
 W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], zalecane jest, czy nazwa folderu SUR być taka sama jak nazwa rozwiązania bez rozszerzenia. W poniższej tabeli podsumowano zachowanie w dwóch wersjach.  
   
 |Funkcja|Wtyczka interfejsu API w wersji 1.1 kontroli źródła|Wtyczka API w wersji 1.2 kontroli źródła|  
-|-------------|----------------------------------------------|---------------------------------------------|  
+|-------------| - | - |  
 |Dodaj rozwiązanie do SCC|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
 |Dodaj projekt do rozwiązania pod kontrolą źródła|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **Uwaga:** programu Visual Studio zakłada, że rozwiązanie jest element podrzędny elementu SUR.|  
   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2184c027651bf604b6ab89e5b2e63b6e945b2355
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e73e723c25d4f84b3f98f2e22f876ad82f498158
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880120"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Porady: określanie wielkości próbki dla ustawień przebiegu testu obciążeniowego
 
@@ -28,7 +28,7 @@ Wybierz odpowiednią wartość dla **częstotliwość próbkowania** właściwo�
 Oto niektóre wytyczne dotyczące częstotliwości próbkowania:
 
 |Czas trwania testu obciążenia|Zalecana częstotliwość próbkowania|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 godzina|5 sekund|
 |1 - 8 godzin|15 sekund|
 |8 - 24 godziny|30 sekund|

@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0af0de81c0253b72fe432cb3cefe11c362bc2ec4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e66ff43cd51977bf0c23ca0e024a2e05b53f5022
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878092"
 ---
 # <a name="exdbgpropinfoflags"></a>EX_DBGPROP_INFO_FLAGS
-Służy do określania `ExtendedDebugPropertyInfo` pola.  
+Używany do określenia `ExtendedDebugPropertyInfo` pola.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,7 +48,7 @@ enum {
  Inicjuje typ właściwości.  
   
  EX_DBGPROP_INFO_NVALUE  
- Inicjuje wartości właściwości.  
+ Inicjuje wartość właściwości.  
   
  EX_DBGPROP_INFO_LOCKBYTES  
  Inicjuje `plb` pola.  
@@ -58,4 +58,4 @@ enum {
   
 ## <a name="see-also"></a>Zobacz też  
  [Struktura ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)   
- [Interfejs IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)
+ [IDebugExtendedProperty, interfejs](../../winscript/reference/idebugextendedproperty-interface.md)

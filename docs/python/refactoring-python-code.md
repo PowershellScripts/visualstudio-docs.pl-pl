@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29a7bec902f28c67e5e6d6e9d63d9a85239c32c1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: fb497953775bc283dcc908e9617fd7692fc76afe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861582"
 ---
 # <a name="refactor-python-code"></a>Refaktoryzacja kodu w języku Python
 
@@ -30,27 +30,27 @@ Program Visual Studio zapewnia kilka poleceń dla automatycznie Przekształcanie
 ## <a name="rename"></a>Zmień nazwę
 
 1. Kliknij prawym przyciskiem myszy identyfikator, który chcesz zmienić nazwę i wybierz **Zmień nazwę**, lub ustaw karetkę identyfikatora i wybierz **Edytuj** > **Refaktoryzuj**  >  **Zmień nazwę** polecenia menu (**F2**).
-1. W **Zmień nazwę** wyświetlonym oknie dialogowym wprowadź nową nazwę dla identyfikatora, a następnie wybierz pozycję **OK**:
+2. W **Zmień nazwę** wyświetlonym oknie dialogowym wprowadź nową nazwę dla identyfikatora, a następnie wybierz pozycję **OK**:
 
-  ![Zmień nazwę monit o podanie nowej nazwy identyfikator](media/code-refactor-rename-1.png)
+   ![Zmień nazwę monit o podanie nowej nazwy identyfikator](media/code-refactor-rename-1.png)
 
-1. W następnym oknie dialogowym Wybierz pliki i wystąpienia w kodzie, do którego należy zastosować, zmianę nazwy; Wybierz wszystkie poszczególne wystąpienia określonej zmiany w wersji zapoznawczej:
+3. W następnym oknie dialogowym Wybierz pliki i wystąpienia w kodzie, do którego należy zastosować, zmianę nazwy; Wybierz wszystkie poszczególne wystąpienia określonej zmiany w wersji zapoznawczej:
 
-  ![Zmienianie nazwy okna dialogowego, aby wybrać lokalizację zastosować zmiany](media/code-refactor-rename-2.png)
+   ![Zmienianie nazwy okna dialogowego, aby wybrać lokalizację zastosować zmiany](media/code-refactor-rename-2.png)
 
-1. Wybierz **Zastosuj** będzie wprowadzenie zmian do plików kodu źródłowego. (Tę akcję można cofnąć.)
+4. Wybierz **Zastosuj** będzie wprowadzenie zmian do plików kodu źródłowego. (Tę akcję można cofnąć.)
 
 ## <a name="extract-method"></a>Wyodrębnianie metody
 
 1. Wybierz wiersze kodu lub wyrażenie które ma wyodrębnić do oddzielnych metodach.
-1. Wybierz **Edytuj** > **Refaktoryzuj** > **Extrahovat metodu** polecenie menu lub typ **Ctrl** + **R** > **M**.
-1. W wyświetlonym oknie dialogowym wprowadź nową nazwę metody, wskaż, gdzie Wyodrębnij ją, a następnie wybierz pozycję Wszystkie zmienne zamknięcia. Zmienne, które nie zostały wybrane do zamknięcia są przekształcane w argumenty metody:
+2. Wybierz **Edytuj** > **Refaktoryzuj** > **Extrahovat metodu** polecenie menu lub typ **Ctrl** + **R** > **M**.
+3. W wyświetlonym oknie dialogowym wprowadź nową nazwę metody, wskaż, gdzie Wyodrębnij ją, a następnie wybierz pozycję Wszystkie zmienne zamknięcia. Zmienne, które nie zostały wybrane do zamknięcia są przekształcane w argumenty metody:
 
-  ![Wyodrębnij metodę okna dialogowego](media/code-refactor-extract-method-1.png)
+   ![Wyodrębnij metodę okna dialogowego](media/code-refactor-extract-method-1.png)
 
-1. Wybierz **OK** i kod zostanie odpowiednio zmodyfikowany:
+4. Wybierz **OK** i kod zostanie odpowiednio zmodyfikowany:
 
-  ![Efekt wyodrębnianie metody](media/code-refactor-extract-method-2.png)
+   ![Efekt wyodrębnianie metody](media/code-refactor-extract-method-2.png)
 
 ## <a name="add-import"></a>Dodaj import
 

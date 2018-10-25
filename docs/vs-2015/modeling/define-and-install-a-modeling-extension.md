@@ -15,12 +15,12 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6ed7f72a8125d2307b91cd829bd6f474145fa78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234406"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827483"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definiowanie i instalowanie rozszerzenia modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ W programie Visual Studio można zdefiniować rozszerzenia do diagramów modelow
 ## <a name="creating-a-modeling-extension-solution"></a>Tworzenie rozwiązania rozszerzenia modelowania  
  Aby zdefiniować rozszerzenia modelowania, należy utworzyć rozwiązanie zawierające projekty te:  
   
--   A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Integration rozszerzenie (VSIX) projektu. Spowoduje to wygenerowanie pliku, który działa jako Instalator składników Twojego rozszerzenia.  
+- A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Integration rozszerzenie (VSIX) projektu. Spowoduje to wygenerowanie pliku, który działa jako Instalator składników Twojego rozszerzenia.  
   
--   Projekt biblioteki klas, wymaganych dla składników, które zawierają kod programu.  
+- Projekt biblioteki klas, wymaganych dla składników, które zawierają kod programu.  
   
- Jeśli chcesz utworzyć rozszerzenie, które zawiera kilka składników, możesz tworzyć je w ramach jednego rozwiązania. Konieczne jest tylko jeden projekt VSIX.  
+  Jeśli chcesz utworzyć rozszerzenie, które zawiera kilka składników, możesz tworzyć je w ramach jednego rozwiązania. Konieczne jest tylko jeden projekt VSIX.  
   
- Składniki, które nie wymagają kodu, takich jak elementy do przybornika niestandardowego i niestandardowych profilów UML, można dodać bezpośrednio do projektu VSIX, bez użycia osobnej klasy biblioteki projektów. Składniki, które wymagają kodu programu łatwiej są zdefiniowane w projekcie osobnej klasy biblioteki. Składniki, które wymagają kodu obejmują program obsługi gestów, polecenia menu i kod sprawdzania poprawności.  
+  Składniki, które nie wymagają kodu, takich jak elementy do przybornika niestandardowego i niestandardowych profilów UML, można dodać bezpośrednio do projektu VSIX, bez użycia osobnej klasy biblioteki projektów. Składniki, które wymagają kodu programu łatwiej są zdefiniowane w projekcie osobnej klasy biblioteki. Składniki, które wymagają kodu obejmują program obsługi gestów, polecenia menu i kod sprawdzania poprawności.  
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Aby utworzyć projekt biblioteki klas dla polecenia menu, programy obsługi gestu lub sprawdzania poprawności  
   
@@ -133,15 +133,15 @@ W programie Visual Studio można zdefiniować rozszerzenia do diagramów modelow
   
 #### <a name="to-uninstall-an-extension"></a>Aby odinstalować rozszerzenie  
   
-1.  Na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.  
+1. Na **narzędzia** menu, kliknij przycisk **rozszerzenia i aktualizacje**.  
   
-2.  Rozwiń **zainstalowanych rozszerzeń**.  
+2. Rozwiń **zainstalowanych rozszerzeń**.  
   
-3.  Zaznacz rozszerzenie a następnie kliknij przycisk **Odinstaluj**.  
+3. Zaznacz rozszerzenie a następnie kliknij przycisk **Odinstaluj**.  
   
- Rzadko wadliwe rozszerzenie nie ładuje się i tworzy raport w oknie błędów, ale nie są wyświetlane w Menedżerze rozszerzeń. W takim przypadku można usunąć rozszerzenie poprzez usunięcie pliku z następującej lokalizacji gdzie *% LocalAppData %* jest zazwyczaj *DriveName*: \Users\\*nazwyużytkownika*\AppData\Local:  
+   Rzadko wadliwe rozszerzenie nie ładuje się i tworzy raport w oknie błędów, ale nie są wyświetlane w Menedżerze rozszerzeń. W takim przypadku można usunąć rozszerzenie poprzez usunięcie pliku z następującej lokalizacji gdzie *% LocalAppData %* jest zazwyczaj *DriveName*: \Users\\*nazwyużytkownika*\AppData\Local:  
   
- *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [wersja]**  
+   *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [wersja]**  
   
 ## <a name="see-also"></a>Zobacz też  
  [Definiowanie profilu w celu rozszerzenia UML](../modeling/define-a-profile-to-extend-uml.md)   

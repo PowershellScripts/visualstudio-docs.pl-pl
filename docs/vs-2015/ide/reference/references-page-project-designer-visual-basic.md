@@ -22,12 +22,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db774bdfb02d762c2370ab342cc67c1a9b792bed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dabf5b84eb1adde1d6e579b7ec5ad6a6c443723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254712"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859060"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Strona odwołań, Projektant projektu (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Użyj **odwołania** strony **projektanta projektu** Zarządzanie odwołania, od
   
 > [!NOTE]
 >  Jeśli system projektu znajdzie odwołania do zestawu, system rozwiązuje odwołania przez wyszukiwanie w następujących lokalizacjach, w następującej kolejności:  
->   
->  1.  Folder projektu. Pliki folderu projektu pojawiają się w **Eksploratora rozwiązań** podczas **Pokaż wszystkie pliki** nie ma zastosowania.  
-> 2.  Foldery, które są określone w **ścieżki odwołania** okno dialogowe.  
-> 3.  Foldery zawierające pliki w **Dodaj odwołanie** okno dialogowe.  
-> 4.  Folder obj tego projektu. (Po dodaniu do projektu odwołanie COM, jeden lub więcej zestawów można dodać do folderu obj projektu.)  
+> 
+> 1. Folder projektu. Pliki folderu projektu pojawiają się w **Eksploratora rozwiązań** podczas **Pokaż wszystkie pliki** nie ma zastosowania.  
+>    2.  Foldery, które są określone w **ścieżki odwołania** okno dialogowe.  
+>    3.  Foldery zawierające pliki w **Dodaj odwołanie** okno dialogowe.  
+>    4.  Folder obj tego projektu. (Po dodaniu do projektu odwołanie COM, jeden lub więcej zestawów można dodać do folderu obj projektu.)  
   
  **Odwołania**  
  Ta lista zawiera wszystkie odwołania w projekcie, używane lub nieużywane.  

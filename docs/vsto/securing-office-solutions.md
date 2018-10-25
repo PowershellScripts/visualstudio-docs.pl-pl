@@ -17,38 +17,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 430a4b3a1c4f0d66acfd2486c44bd8eff7df1fcb
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 13b0680e9222302feab8a7cbe1ad375a1f7255be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846203"
 ---
 # <a name="secure-office-solutions"></a>Zabezpieczanie rozwiązań pakietu Office
   Model zabezpieczeń dla rozwiązań pakietu Office obejmuje kilka technologii: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], Centrum zaufania w programie Microsoft Office i strefy witryn z ograniczeniami programu Internet Explorer. W poniższych sekcjach opisano, jak działają funkcje zabezpieczeń:  
   
--   [Udzielanie zaufania do rozwiązań pakietu Office](#GrantingTrustToSolutions)  
+- [Udzielanie zaufania do rozwiązań pakietu Office](#GrantingTrustToSolutions)  
   
--   [Udzielanie zaufania do dokumentów](#GrantingTrustToDocuments)  
+- [Udzielanie zaufania do dokumentów](#GrantingTrustToDocuments)  
   
--   [Udzielanie zaufania przy użyciu Instalatora Windows](#GrantingTrustWindowsInstaller)  
+- [Udzielanie zaufania przy użyciu Instalatora Windows](#GrantingTrustWindowsInstaller)  
   
--   [Zagadnienia dotyczące zabezpieczeń określone dla rozwiązań pakietu Office](#Security)  
+- [Zagadnienia dotyczące zabezpieczeń określone dla rozwiązań pakietu Office](#Security)  
   
--   [Zabezpieczeń w czasie projektowania](#SecurityDuringDeployment)  
+- [Zabezpieczeń w czasie projektowania](#SecurityDuringDeployment)  
   
--   [Visual Studio Tools dla pakietu Office runtime](#VisualStudioToolsForOfficeRuntime)  
+- [Visual Studio Tools dla pakietu Office runtime](#VisualStudioToolsForOfficeRuntime)  
   
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
+  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ##  <a name="GrantingTrustToSolutions"></a> Udzielanie zaufania do rozwiązań pakietu Office  
  Udzielanie zaufania do rozwiązań pakietu Office oznacza modyfikowanie zasad zabezpieczeń każdego użytkownika końcowego można ufać rozwiązania dla pakietu Office na podstawie dowodów następujące:  
   
--   Certyfikat użyty do podpisania manifestu wdrażania.  
+- Certyfikat użyty do podpisania manifestu wdrażania.  
   
--   Adres URL pliku manifestu wdrożenia.  
+- Adres URL pliku manifestu wdrożenia.  
   
- Aby uzyskać więcej informacji, zobacz [udzielenia zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md).  
+  Aby uzyskać więcej informacji, zobacz [udzielenia zaufania do rozwiązań pakietu Office](../vsto/granting-trust-to-office-solutions.md).  
   
 ##  <a name="GrantingTrustToDocuments"></a> Udzielanie zaufania do dokumentów  
  Dostosowania poziomu dokumentu wymaga, aby dokument w katalogu, który jest wyznaczone jako zaufaną lokalizację. Aby uzyskać więcej informacji, zobacz [udzielenia zaufania do dokumentów](../vsto/granting-trust-to-documents.md).  
@@ -65,11 +65,11 @@ ms.locfileid: "49074068"
 ### <a name="document-level-solutions"></a>Rozwiązaniach na poziomie dokumentu  
  W pełni kwalifikowaną ścieżkę dokumentu muszą być dodane do listy zaufanych lokalizacji w aplikacji Microsoft Office, jeśli tworzysz następujące typy projektów:  
   
--   Poziomu dokumentu rozwiązań, które są w sieciowym udziale plików, takich jak  *\\\servername\sharename*.  
+- Poziomu dokumentu rozwiązań, które są w sieciowym udziale plików, takich jak  *\\\servername\sharename*.  
   
--   Poziomu dokumentu rozwiązań dla programu Word, używanego przez *doc* lub *docm* plików.  
+- Poziomu dokumentu rozwiązań dla programu Word, używanego przez *doc* lub *docm* plików.  
   
- Uwzględnij podkatalogi, przy Dodaj lokalizację dokumentu do listy zaufanych lokalizacji lub specjalnie obejmują debugowania i tworzenia folderów. Aby uzyskać więcej informacji, zobacz artykuł pomocy Online pakietu Office Microsoft [Utwórz, usuń lub zmień zaufanej lokalizacji plików](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
+  Uwzględnij podkatalogi, przy Dodaj lokalizację dokumentu do listy zaufanych lokalizacji lub specjalnie obejmują debugowania i tworzenia folderów. Aby uzyskać więcej informacji, zobacz artykuł pomocy Online pakietu Office Microsoft [Utwórz, usuń lub zmień zaufanej lokalizacji plików](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).  
   
 ### <a name="temporary-certificates"></a>Tymczasowe certyfikaty  
  Visual Studio tworzy tymczasowy certyfikat, jeśli certyfikat podpisywania jeszcze nie istnieje. Należy użyć tego certyfikatu tymczasowe tylko podczas programowania i zakupu oficjalnych certyfikatów dla wdrożenia.  

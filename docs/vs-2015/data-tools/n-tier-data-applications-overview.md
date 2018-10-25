@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 912752c39d8180f7f3cd5dc0cca719e39e39a0e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171967"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852924"
 ---
 # <a name="n-tier-data-applications-overview"></a>Aplikacje warstwowe — Przegląd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,31 +48,31 @@ N-warstwy * dane aplikacji są sterowany danymi, które są rozdzielone na wiele
 ## <a name="presentation-tier"></a>Warstwa prezentacji  
  *Warstwa prezentacji* jest warstwą, gdzie użytkownicy dokonują interakcji z aplikacją. Często zawiera także dodatkową logikę aplikacji. Oto typowe składniki warstwy prezentacji:  
   
--   Składniki powiązania danych, takie jak <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator>.  
+- Składniki powiązania danych, takie jak <xref:System.Windows.Forms.BindingSource> i <xref:System.Windows.Forms.BindingNavigator>.  
   
--   Obiektowe reprezentacje danych, takie jak [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) klas jednostek do użycia w warstwie prezentacji.  
+- Obiektowe reprezentacje danych, takie jak [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) klas jednostek do użycia w warstwie prezentacji.  
   
- Warstwa prezentacji zwykle uzyskuje dostęp do warstwy środkowej za pomocą odwołania do usługi (na przykład [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) aplikacji). Warstwa prezentacji nie uzyskuje bezpośredniego dostępu do warstwy danych. Warstwa prezentacji komunikuje się z warstwą danych za pomocą składnika dostępu do danych w warstwie środkowej.  
+  Warstwa prezentacji zwykle uzyskuje dostęp do warstwy środkowej za pomocą odwołania do usługi (na przykład [Windows Communication Foundation i usługi danych WCF w programie Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) aplikacji). Warstwa prezentacji nie uzyskuje bezpośredniego dostępu do warstwy danych. Warstwa prezentacji komunikuje się z warstwą danych za pomocą składnika dostępu do danych w warstwie środkowej.  
   
 ## <a name="middle-tier"></a>Warstwa środkowa  
  *Warstwy środkowej* jest warstwy, która warstwa prezentacji i danych jest używany do komunikowania się ze sobą. Oto typowe składniki warstwy środkowej:  
   
--   Logika biznesowa, taka jak reguły biznesowe i mechanizmy sprawdzania poprawności danych.  
+- Logika biznesowa, taka jak reguły biznesowe i mechanizmy sprawdzania poprawności danych.  
   
--   Składniki i logika dostępu do danych, w tym:  
+- Składniki i logika dostępu do danych, w tym:  
   
-    -   [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) i [DataAdapter i DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  -   [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) i [DataAdapter i DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-    -   Obiektowe reprezentacje danych, takie jak [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) klas jednostek.  
+  -   Obiektowe reprezentacje danych, takie jak [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) klas jednostek.  
   
-    -   Wspólne usługi aplikacji, takie jak uwierzytelnianie, autoryzacja i personalizacja.  
+  -   Wspólne usługi aplikacji, takie jak uwierzytelnianie, autoryzacja i personalizacja.  
   
- Na ilustracji poniżej widać funkcje i technologie, które są dostępne w programie Visual Studio i mogą być umieszczone w środkowej warstwie aplikacji n-warstwowej.  
+  Na ilustracji poniżej widać funkcje i technologie, które są dostępne w programie Visual Studio i mogą być umieszczone w środkowej warstwie aplikacji n-warstwowej.  
   
- ![Na środku składniki warstwy](../data-tools/media/ntiermid.png "NtierMid")  
-Warstwa środkowa  
+  ![Na środku składniki warstwy](../data-tools/media/ntiermid.png "NtierMid")  
+  Warstwa środkowa  
   
- Warstwa środkowa zazwyczaj łączy się z warstwą danych przy użyciu połączenia danych. To połączenie danych jest zazwyczaj przechowywane w składniku dostępu do danych.  
+  Warstwa środkowa zazwyczaj łączy się z warstwą danych przy użyciu połączenia danych. To połączenie danych jest zazwyczaj przechowywane w składniku dostępu do danych.  
   
 ## <a name="data-tier"></a>Warstwa danych  
  *Warstwy danych* to w zasadzie serwer przechowujący dane aplikacji (na przykład serwerem z uruchomioną [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]).  

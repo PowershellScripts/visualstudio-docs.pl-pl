@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c1203b962627071d757dc1876a534977c574a813
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179494"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852859"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Obliczone i niestandardowe właściwości przechowywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,11 +93,11 @@ Wszystkie właściwości domeny w języku specyficznym dla domeny (DSL) mogą by
   
  Jednak metody Set może być również wywoływane, jeśli użytkownik wywoła cofania i ponawiania lub jeśli transakcja jest wycofywana. Gdy <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> ma wartość true, metoda zestaw powinny zachowywać się w następujący sposób:  
   
--   Nie należy wprowadzać zmian w magazynie, takich jak przypisywanie wartości do innych właściwości domeny. Menedżera cofania ustawi ich wartości.  
+- Nie należy wprowadzać zmian w magazynie, takich jak przypisywanie wartości do innych właściwości domeny. Menedżera cofania ustawi ich wartości.  
   
--   Jednakże zaktualizuj dowolnych zasobów zewnętrznych, takich jak bazy danych lub zawartości pliku lub obiektów poza magazynu. Będzie to upewnij się, że są one przechowywane w synchronism z wartościami w magazynie.  
+- Jednakże zaktualizuj dowolnych zasobów zewnętrznych, takich jak bazy danych lub zawartości pliku lub obiektów poza magazynu. Będzie to upewnij się, że są one przechowywane w synchronism z wartościami w magazynie.  
   
- Na przykład:  
+  Na przykład:  
   
 ```  
 void SetAgeValue(int value)  

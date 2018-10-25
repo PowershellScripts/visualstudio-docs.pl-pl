@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 97e011225f84f1c5f3adcfc050260e870232fa33
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: f9612c895f7453d250b4f37c06e3630901602685
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847116"
 ---
-# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: Średnie wykorzystanie CPU przez proces poddawany profilowaniu.
+# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501: Średnie wykorzystanie CPU przez profilowany proces.
+
 |||  
 |-|-|  
 |Identyfikator reguły|DA501|  
@@ -29,11 +30,11 @@ ms.locfileid: "34766103"
 |Metoda profilowania|Wszystkie|  
 |Komunikat|Średnie użycie Procesora przez profilowany proces.|  
 |Typ reguły|Informacje|  
-  
- Gdy profilu można za pomocą próbkowania, pamięci platformy .NET lub metody kontencji zasobów, należy zebrać co najmniej 10 próbek do wyzwolenia tej reguły.  
-  
+
+ Podczas profilowania za pomocą próbkowania pamięci platformy .NET i metod rywalizacji zasobów musi zebrać co najmniej 10 próbek do wyzwolenia tej reguły.  
+
 ## <a name="rule-description"></a>Opis reguły  
- Ten komunikat raporty procent czasu, który procesor był zajęty wykonywaniem instrukcji z aplikacji. Podanej wartości jest średnią we wszystkich interwałach pomiarowych, w których był aktywny PROFILOWANEGO procesu. Wartość może być większa niż 100% na maszynie z więcej niż jeden procesor.  
-  
-## <a name="how-to-use-rule-data"></a>Jak używać danych reguły  
- Porównanie wydajności z różnych wersji lub kompilacji programu lub zrozumieć wydajność aplikacji w scenariuszach różnych testu, należy użyć wartości reguły.
+ Ten komunikat raporty procent czasu procesor był zajęty, wykonując instrukcje z aplikacji. Wystąpienia wartości zgłoszonej jest średnią we wszystkich interwałach pomiarowych, w których była aktywna PROFILOWANEGO procesu. Wartość może być większa niż 100% na maszynie z więcej niż jednego procesora.  
+
+## <a name="how-to-use-rule-data"></a>Sposób użycia danych reguły  
+ Aby porównać wydajność różnych wersji lub kompilacjach programu lub aby zrozumieć wydajność aplikacji w ramach scenariuszy testowania różnych, należy użyć wartości reguły.

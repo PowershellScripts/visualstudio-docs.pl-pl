@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf32eb5d8771f95ec155a93d1fe1e770e0cc2d52
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e5fc3ab0767a7077860c82acefc9554ba1228cee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831123"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 Umożliwia automatyczne dołączanie aparatów określonego debugowania.  
@@ -47,22 +47,22 @@ int EnableAutoAttach(
   
 #### <a name="parameters"></a>Parametry  
  `rgguidSpecificEngines`  
- [in] Tablica identyfikatory GUID dla każdego aparatu debugowania można oznaczyć jako dołączanie automatycznie.  
+ [in] Tablica identyfikatorów GUID dla każdego silnika debugowania, aby oznaczyć jako automatyczne dołączanie.  
   
  `celtSpecificEngines`  
  [in] Liczba aparatów określone w `rgguidSpecificEngines`.  
   
  `pszStartPageUrl`  
- [in] Początkowy adres URL do użycia podczas podłączania automatycznie.  
+ [in] Początkowy adres URL do użycia podczas dołączania automatycznie.  
   
  `pbstrSessionID`  
- [out] Identyfikator sesji, który był dołączony automatycznie.  
+ [out] Identyfikator sesji, który został dołączony do automatycznie.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Jeden kod błędu: `E_AUTO_ATTACH_NOT_REGISTERED`, co oznacza, że fabryka klas auto-attach nie został zarejestrowany.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Jeden kod błędu: `E_AUTO_ATTACH_NOT_REGISTERED`, co oznacza, że fabryki klas auto-attach nie został zarejestrowany.  
   
 ## <a name="remarks"></a>Uwagi  
- Po uruchomieniu program skojarzony z określonym adresem URL aparatami debugowania określonego zostaną automatycznie uruchomione i dołączony.  
+ Po uruchomieniu program skojarzony z określonym adresem URL, aparaty debugowania określonego są pracę i automatycznie dołączone.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

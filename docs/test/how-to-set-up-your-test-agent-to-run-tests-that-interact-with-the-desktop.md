@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5a1be45dd85fdbc7df9870fe7d0db16b4020376c
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370682"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862102"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Porady: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem
 
@@ -48,27 +48,27 @@ Użyj poniższej procedury do ustawiania agentów, które są przypisane do roli
 
    > [!NOTE]
    > - Użytkownik, który dodasz do rozpoczęcia procesu musi być również dodany jako członek grupy TeamTestAgentService na komputerze dla kontrolera testów dla tego agenta. Jeśli ten użytkownik jest bieżącym użytkownikiem, gdy ten użytkownik zostanie dodany do komputera kontrolera testu, musisz się wylogować lub ponowne uruchomienie.
-   - Hasła puste nie są obsługiwane dla kont użytkowników.
-   - Jeśli chcesz użyć IntelliTrace lub danych emulacji sieci i adaptera diagnostycznego, konto użytkownika musi być członkiem grupy Administratorzy. Jeśli komputer, na którym jest uruchomiony agent testowy jest uruchomiony systemu operacyjnego zawierającego najmniej uprzywilejowane konto użytkownika, należy również uruchomić jako administrator (podniesione uprawnienia). Jeśli nazwa użytkownika agenta nie jest w usłudze agenta spróbuje ją dodać, co wymaga uprawnień na kontrolerze testów.
-   - Użytkownik próbujący użyć kontrolera testu musi znajdować na koncie użytkownika kontrolera testów lub nie będzie mógł uruchamiać testów dla kontrolera.
+   > - Hasła puste nie są obsługiwane dla kont użytkowników.
+   > - Jeśli chcesz użyć IntelliTrace lub danych emulacji sieci i adaptera diagnostycznego, konto użytkownika musi być członkiem grupy Administratorzy. Jeśli komputer, na którym jest uruchomiony agent testowy jest uruchomiony systemu operacyjnego zawierającego najmniej uprzywilejowane konto użytkownika, należy również uruchomić jako administrator (podniesione uprawnienia). Jeśli nazwa użytkownika agenta nie jest w usłudze agenta spróbuje ją dodać, co wymaga uprawnień na kontrolerze testów.
+   > - Użytkownik próbujący użyć kontrolera testu musi znajdować na koncie użytkownika kontrolera testów lub nie będzie mógł uruchamiać testów dla kontrolera.
 
 4. Aby upewnić się, że komputerze z agentem testowym można uruchomić testy po ponownym uruchomieniu, należy skonfigurować komputer do automatycznego logowania jako użytkownika agenta testowego. Wybierz **automatycznego logowania**. Spowoduje to przechowywanie nazwy użytkownika i hasła w postaci zaszyfrowanej w rejestrze.
 
    > [!NOTE]
    > Po nawiązaniu połączenia środowiskiem laboratoryjnym przy użyciu pulpitu zdalnego lub połączenia, mogą wystąpić częste, nieoczekiwane rozłącza. Jedną z możliwych przyczyn utraty połączenia jest, że komputer jest skonfigurowany do automatycznego logowania do sieci.
 
-7. Aby upewnić się, że wygaszacz ekranu jest wyłączony, ponieważ może to kolidować ze zautomatyzowanymi testami, które muszą współdziałać z pulpitem, wybierz **upewnij się, że wygaszacz ekranu jest wyłączony**.
+5. Aby upewnić się, że wygaszacz ekranu jest wyłączony, ponieważ może to kolidować ze zautomatyzowanymi testami, które muszą współdziałać z pulpitem, wybierz **upewnij się, że wygaszacz ekranu jest wyłączony**.
 
    > [!WARNING]
    > Istnieją zagrożenia bezpieczeństwa, jeśli logujesz się automatycznie lub wyłączysz wygaszacz ekranu. Po włączeniu automatycznego logowania na, umożliwiasz innym użytkownikom, aby uruchomić ten komputer, a aby można było korzystać z konta, które loguje się automatycznie. Po wyłączeniu wygaszacza ekranu komputer może nie monitować użytkownika do logowania się do odblokowania komputera. To umożliwia wszystkim użytkownikom dostępu do komputera, jeśli mają fizyczny dostęp do komputera. Po włączeniu tych funkcji na komputerze, należy pamiętać, że te komputery są zabezpieczony fizycznie. Na przykład komputery te znajdują się w fizycznie bezpiecznych laboratorium. Jeśli wyczyścisz **upewnij się, że wygaszacz ekranu jest wyłączony**, wygaszacz ekranu nie zostanie włączony.
 
    Aby zmienić agenta do uruchamiania jako usługa, można użyć tego narzędzia i wybrać **usługi**.
 
-8. Aby zastosować zmiany, wybierz opcję **Zastosuj ustawienia**.
+6. Aby zastosować zmiany, wybierz opcję **Zastosuj ustawienia**.
 
    A **Podsumowanie konfiguracji** wyświetlane jest okno dialogowe, pokazujący stan każdego kroki, aby skonfigurować agenta testowego.
 
-9. Aby zamknąć **Podsumowanie konfiguracji** okna dialogowego wybierz **Zamknij**. Następnie wybierz **Zamknij** ponownie, aby zamknąć **narzędzie konfiguracji agenta testowego**.
+7. Aby zamknąć **Podsumowanie konfiguracji** okna dialogowego wybierz **Zamknij**. Następnie wybierz **Zamknij** ponownie, aby zamknąć **narzędzie konfiguracji agenta testowego**.
 
    > [!NOTE]
    > Istnieje ikona obszaru powiadomień, która jest uruchamiana na komputerze dla agenta testowego, który jest uruchomiony jako proces. Pokazuje stan agenta testowego. Można uruchomić, zatrzymać lub ponownie uruchomić agenta, jeśli jest uruchomiony jako proces, za pomocą tego narzędzia. Aby uruchomić agenta testowego jako proces, jeśli nie jest uruchomiony, wybierz opcję **Start** > **programu Visual Studio** > **programu Microsoft Visual Studio Test Agent**.

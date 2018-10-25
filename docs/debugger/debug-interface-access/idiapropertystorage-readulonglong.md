@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35cff5f92f0ceeb15c185316aeb9b9fde155a1ec
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 457ca1d493498e0592c572ae0c93d7d2d6a01d30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468859"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867653"
 ---
 # <a name="idiapropertystoragereadulonglong"></a>IDiaPropertyStorage::ReadULONGLONG
-Odczytuje `ULONGLONG` wartości w zestawie właściwości.  
+Odczytuje `ULONGLONG` wartości w zbiorze właściwości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,10 +41,10 @@ HRESULT ReadULONGLONG (
  [out] Zwraca wartość właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_INVALIDARG` Jeśli właściwość nie jest typu `ULONGLONG`.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_INVALIDARG` Jeśli właściwość nie jest typu `ULONGLONG`.  
   
 ## <a name="remarks"></a>Uwagi  
- A `ULONGLONG` jest zdefiniowany przez system Windows jako 64-bitowej liczby całkowitej bez znaku.  
+ Element `ULONGLONG` jest definiowany przez Windows jako 64-bitowej nieoznaczonej liczby całkowitej.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

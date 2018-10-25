@@ -14,12 +14,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1dbbf44a4adfe20f1940da32540eaad81c97251b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 882d2c8d0dec5e4673b24436067bd6255c2052be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269376"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853158"
 ---
 # <a name="the-dsltexttransform-command"></a>DslTextTransform — Polecenie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ DslTextTransform.cmd to skrypt, który wywołuje TextTransform.exe i uruchamia j
   
  Jako dane wejściowe DslTextTransform.cmd, należy określić następujące argumenty:  
   
--   Katalog wyjściowy projektu modelu domeny.  
+- Katalog wyjściowy projektu modelu domeny.  
   
--   Katalog wyjściowy projektu Projektanta definicji.  
+- Katalog wyjściowy projektu Projektanta definicji.  
   
--   Lokalizacja pliku szablonu tekstu.  
+- Lokalizacja pliku szablonu tekstu.  
   
- DslTextTransform.cmd przetwarza plik szablonu określony tekst przy użyciu domyślnego procesorów dyrektyw i zestawów. Jeśli utworzono niestandardowe procesory dyrektyw, można utworzyć własny plik wsadowy, który wywołuje TextTransform.exe. W tym pliku wsadowego można określić zestawy i skojarzone niestandardowe procesory dyrektyw.
+  DslTextTransform.cmd przetwarza plik szablonu określony tekst przy użyciu domyślnego procesorów dyrektyw i zestawów. Jeśli utworzono niestandardowe procesory dyrektyw, można utworzyć własny plik wsadowy, który wywołuje TextTransform.exe. W tym pliku wsadowego można określić zestawy i skojarzone niestandardowe procesory dyrektyw.
 
 
 

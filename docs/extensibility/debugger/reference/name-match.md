@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a61e8a3cadeeadf0657ca6fe293a527113505a0b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2e49933c0bdc5b9a98c165aebd8e263bca2a2be5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135635"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867523"
 ---
 # <a name="namematch"></a>NAME_MATCH
-Wybiera opcję case do dopasowania nazwy.  
+Wybierze case opcję do dopasowania nazwy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,13 +48,13 @@ public enum NameMatchOptions {
  Nie określono opcji.  
   
  nmCaseSensitive  
- Wskazuje, że w nazwach można dopasować jest rozróżniana wielkość liter.  
+ Wskazuje, że nazwy do dopasowania jest rozróżniana wielkość liter.  
   
  nmCaseInsensitive  
- Wskazuje nazwy można dopasować nie jest rozróżniana.  
+ Wskazuje, czy nazwy, które mają być dopasowywane nie jest rozróżniana wielkość liter.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako argument do następujących metod:  
+ Przekazywany jako argument do następujących metod:  
   
 -   [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)  
   
@@ -75,5 +75,5 @@ public enum NameMatchOptions {
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)   
  [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)   
- [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)   
+ [Enumfields —](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)   
  [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)

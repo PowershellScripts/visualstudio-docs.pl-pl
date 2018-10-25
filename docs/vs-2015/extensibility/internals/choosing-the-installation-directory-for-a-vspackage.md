@@ -15,12 +15,12 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf9285cb19bfeb2a9d3417d90e4c69ea9abc2ad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ed255d5b8a876ff29e5230c4517ab0b5e04398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266977"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843408"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Wybieranie katalogu instalacyjnego dla pakietu VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,17 +54,17 @@ Pakietu VSPackage i towarzyszące mu pliki muszą znajdować się w systemie pli
   
  [Zarządzanie pakietami VSPackage](../../extensibility/managing-vspackages.md) wskazuje, że wpisy rejestru kontrolują lokalizację [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] faktycznie szuka pakietu VSPackage satelickiej biblioteki DLL. Jednak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] próbuje załadować satelitarnej biblioteki DLL w podkatalogu o nazwie wartości identyfikatora LCID, w następującej kolejności:  
   
-1.  Domyślny identyfikator LCID (LCID VS na przykład \1033 w języku angielskim)  
+1. Domyślny identyfikator LCID (LCID VS na przykład \1033 w języku angielskim)  
   
-2.  Domyślnie LCID podjęzyk domyślne.  
+2. Domyślnie LCID podjęzyk domyślne.  
   
-3.  Ustawienia domyślne systemu LCID.  
+3. Ustawienia domyślne systemu LCID.  
   
-4.  Ustawienia domyślne systemu LCID z odmianą języka domyślnego.  
+4. Ustawienia domyślne systemu LCID z odmianą języka domyślnego.  
   
-5.  U.S. Angielski (. \1033 lub. \0x409).  
+5. U.S. Angielski (. \1033 lub. \0x409).  
   
- Jeśli biblioteka DLL pakietu VSPackage zawiera zasoby i punkty wejścia rejestru SatelliteDll\DllName, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] próbuje załadować je w podanej kolejności.  
+   Jeśli biblioteka DLL pakietu VSPackage zawiera zasoby i punkty wejścia rejestru SatelliteDll\DllName, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] próbuje załadować je w podanej kolejności.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wybieranie między udostępnionymi i Wersjonowanymi pakietami VSPackage](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   

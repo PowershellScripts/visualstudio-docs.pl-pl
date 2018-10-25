@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4630c6a277c6d9698c7fd1d65b5a292862dc3438
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6707f585e8f432a96c2a8cdeef06acb9e903c58e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863168"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>Nawigowanie i aktualizowanie modelu w kodzie programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -223,46 +223,46 @@ using (Transaction t =
   
  Ten przykład ilustruje te podstawowe punkty o utworzenie elementu:  
   
--   Utwórz nowy element w określonej partycji Store. W przypadku elementów modelu i relacji, ale nie do kształtów zwykle jest domyślną partycję.  
+- Utwórz nowy element w określonej partycji Store. W przypadku elementów modelu i relacji, ale nie do kształtów zwykle jest domyślną partycję.  
   
--   Wprowadź element docelowy relacji osadzania. W DslDefinition w tym przykładzie każda osoba musi być elementem docelowym FamilyTreeHasPeople relacja osadzania. Aby to osiągnąć, możemy ustawić właściwość roli FamilyTreeModel obiektu osoba lub dodać osoby do roli własności obiektu FamilyTreeModel.  
+- Wprowadź element docelowy relacji osadzania. W DslDefinition w tym przykładzie każda osoba musi być elementem docelowym FamilyTreeHasPeople relacja osadzania. Aby to osiągnąć, możemy ustawić właściwość roli FamilyTreeModel obiektu osoba lub dodać osoby do roli własności obiektu FamilyTreeModel.  
   
--   Ustaw właściwości nowego elementu, szczególnie właściwość, dla którego `IsName` ma wartość true w DslDefinition. Ta flaga oznacza właściwość, która identyfikuje jednoznacznie elemencie jego właściciel. W tym przypadku właściwość Name ma tę flagę.  
+- Ustaw właściwości nowego elementu, szczególnie właściwość, dla którego `IsName` ma wartość true w DslDefinition. Ta flaga oznacza właściwość, która identyfikuje jednoznacznie elemencie jego właściciel. W tym przypadku właściwość Name ma tę flagę.  
   
--   Definicję DSL tego języka DSL muszą zostać załadowane do Store. Jeśli piszesz rozszerzenie, takie jak polecenie menu, zwykle będzie to już wartość true. W innych przypadkach możesz jawnie załadować modelu do Store lub użyj <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> go załadować. Aby uzyskać więcej informacji, zobacz [porady: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+- Definicję DSL tego języka DSL muszą zostać załadowane do Store. Jeśli piszesz rozszerzenie, takie jak polecenie menu, zwykle będzie to już wartość true. W innych przypadkach możesz jawnie załadować modelu do Store lub użyj <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> go załadować. Aby uzyskać więcej informacji, zobacz [porady: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
- Po utworzeniu elementu w ten sposób kształt zostanie utworzony automatycznie (język DSL ma diagramu). Pojawi się on przypisany automatycznie lokalizacji usługi przy użyciu domyślnego kształt, kolor i inne funkcje. Jeśli chcesz kontrolować, gdzie i jak skojarzone kształt pojawia się, zobacz [Tworzenie elementu i jego kształt](#merge).  
+  Po utworzeniu elementu w ten sposób kształt zostanie utworzony automatycznie (język DSL ma diagramu). Pojawi się on przypisany automatycznie lokalizacji usługi przy użyciu domyślnego kształt, kolor i inne funkcje. Jeśli chcesz kontrolować, gdzie i jak skojarzone kształt pojawia się, zobacz [Tworzenie elementu i jego kształt](#merge).  
   
 ##  <a name="links"></a> Tworzenie relacji łączy  
  Istnieją dwie relacje zdefiniowane w przykładzie definicji DSL. Każda relacja *właściwości roli* w klasie na każdym końcu relacji.  
   
  Istnieją trzy sposoby, w których można utworzyć wystąpienie relacji. Każda z tych trzech metod działa tak samo:  
   
--   Ustaw właściwość obiekt pełniący rolę źródłową. Na przykład:  
+- Ustaw właściwość obiekt pełniący rolę źródłową. Na przykład:  
   
-    -   `familyTree.People.Add(edward);`  
+  -   `familyTree.People.Add(edward);`  
   
-    -   `edward.Parents.Add(henry);`  
+  -   `edward.Parents.Add(henry);`  
   
--   Ustaw właściwość obiekt pełniący rolę docelową. Na przykład:  
+- Ustaw właściwość obiekt pełniący rolę docelową. Na przykład:  
   
-    -   `edward.familyTreeModel = familyTree;`  
+  -   `edward.familyTreeModel = familyTree;`  
   
-         Liczebność ta rola jest `1..1`, dzięki czemu możemy przypisać wartość.  
+       Liczebność ta rola jest `1..1`, dzięki czemu możemy przypisać wartość.  
   
-    -   `henry.Children.Add(edward);`  
+  -   `henry.Children.Add(edward);`  
   
-         Liczebność ta rola jest `0..*`, dzięki czemu możemy dodać do kolekcji.  
+       Liczebność ta rola jest `0..*`, dzięki czemu możemy dodać do kolekcji.  
   
--   Jawnie tworzyć wystąpienie relacji. Na przykład:  
+- Jawnie tworzyć wystąpienie relacji. Na przykład:  
   
-    -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
+  -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   
-    -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
+  -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
   
- Ostatnie metoda jest przydatna, jeśli chcesz ustawić właściwości relacji, sam.  
+  Ostatnie metoda jest przydatna, jeśli chcesz ustawić właściwości relacji, sam.  
   
- Po utworzeniu elementu w ten sposób jest tworzony automatycznie łącznika na diagramie, ale ma domyślne kształt, kolor i inne funkcje. Aby kontrolować sposób tworzenia łącznika skojarzone, zobacz [Tworzenie elementu i jego kształt](#merge).  
+  Po utworzeniu elementu w ten sposób jest tworzony automatycznie łącznika na diagramie, ale ma domyślne kształt, kolor i inne funkcje. Aby kontrolować sposób tworzenia łącznika skojarzone, zobacz [Tworzenie elementu i jego kształt](#merge).  
   
 ##  <a name="deleteelements"></a> Usuwanie elementów  
  Usuń element przez wywołanie metody `Delete()`:  
@@ -271,21 +271,21 @@ using (Transaction t =
   
  Ta operacja spowoduje również usunięcie:  
   
--   Relacji łącza do i z elementem. Na przykład `edward.Parents` nie będą już miały `henry`.  
+- Relacji łącza do i z elementem. Na przykład `edward.Parents` nie będą już miały `henry`.  
   
--   Elementy w ról, dla którego `PropagatesDelete` flaga ma wartość true. Na przykład kształt, który wyświetla element zostaną usunięte.  
+- Elementy w ról, dla którego `PropagatesDelete` flaga ma wartość true. Na przykład kształt, który wyświetla element zostaną usunięte.  
   
- Domyślnie każda relacja osadzania ma `PropagatesDelete` prawdziwe w roli docelowej. Usuwanie `henry` nie powoduje usunięcia `familyTree`, ale `familyTree.Delete()` spowoduje usunięcie wszystkich `Persons`. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania dotyczącego usuwania](../modeling/customizing-deletion-behavior.md).  
+  Domyślnie każda relacja osadzania ma `PropagatesDelete` prawdziwe w roli docelowej. Usuwanie `henry` nie powoduje usunięcia `familyTree`, ale `familyTree.Delete()` spowoduje usunięcie wszystkich `Persons`. Aby uzyskać więcej informacji, zobacz [Dostosowywanie zachowania dotyczącego usuwania](../modeling/customizing-deletion-behavior.md).  
   
- Domyślnie `PropagatesDelete` nie jest prawdziwe dla ról relacje odniesienia.  
+  Domyślnie `PropagatesDelete` nie jest prawdziwe dla ról relacje odniesienia.  
   
- Może spowodować reguły usuwania pominąć propagacji określonych, gdy obiekt zostanie usunięty. Jest to przydatne, jeśli są podstawianie jednego elementu na inny. Należy podać identyfikator GUID co najmniej jedną rolę, dla których powinna nie propagowane usunięcia. Identyfikator GUID można uzyskać z klasy relacji:  
+  Może spowodować reguły usuwania pominąć propagacji określonych, gdy obiekt zostanie usunięty. Jest to przydatne, jeśli są podstawianie jednego elementu na inny. Należy podać identyfikator GUID co najmniej jedną rolę, dla których powinna nie propagowane usunięcia. Identyfikator GUID można uzyskać z klasy relacji:  
   
- `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`  
+  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`  
   
- (Tym konkretnym przykładzie miałaby żadnego efektu, ponieważ `PropagatesDelete` jest `false` dla ról `ParentsHaveChildren` relacji.)  
+  (Tym konkretnym przykładzie miałaby żadnego efektu, ponieważ `PropagatesDelete` jest `false` dla ról `ParentsHaveChildren` relacji.)  
   
- W niektórych przypadkach usunięcie nie będzie mógł istnienie blokadę na element lub na element, który może zostać usunięty przez propagacji. Możesz użyć `element.CanDelete()` do sprawdzenia, czy element może zostać usunięty.  
+  W niektórych przypadkach usunięcie nie będzie mógł istnienie blokadę na element lub na element, który może zostać usunięty przez propagacji. Możesz użyć `element.CanDelete()` do sprawdzenia, czy element może zostać usunięty.  
   
 ##  <a name="deletelinks"></a> Usuwanie relacji łączy  
  Możesz usunąć relację łącza przez usunięcie elementu z właściwości roli:  
@@ -467,11 +467,11 @@ FamilyTreeDiagram diagram =
   
  Tej metody:  
   
--   Ustawia nazwę, jeśli przypisano właściwości jak nazwa elementu.  
+- Ustawia nazwę, jeśli przypisano właściwości jak nazwa elementu.  
   
--   Przestrzega wszelkie dyrektyw scalania określone w definicji DSL.  
+- Przestrzega wszelkie dyrektyw scalania określone w definicji DSL.  
   
- W tym przykładzie tworzy kształt na pozycji myszy, gdy użytkownik kliknie dwukrotnie diagramu. W definicji DSL, w tym przykładzie `FillColor` właściwość `ExampleShape` została udostępniona.  
+  W tym przykładzie tworzy kształt na pozycji myszy, gdy użytkownik kliknie dwukrotnie diagramu. W definicji DSL, w tym przykładzie `FillColor` właściwość `ExampleShape` została udostępniona.  
   
 ```  
   

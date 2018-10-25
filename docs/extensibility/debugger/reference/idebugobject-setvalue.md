@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae6f8f589c0dca8c97e1a9664d9eaa93bf9e8741
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1b78a4513aab8a9c4d2c539a592799dffdcea53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850974"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
-Ustawia wartość obiektu z szeregu kolejnych bajtów.  
+Ustawia wartość obiektu z kolejnych serię bajtów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,13 +46,13 @@ int SetValue(
  [in] Tablica bajtów reprezentujący nową wartość.  
   
  `nSize`  
- [in] Rozmiar wartości w bajtach.  
+ [in] Rozmiar wartość w bajtach.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wartości w tablicy są kopiowane do to [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiektu, zastępując istniejące wartości. Rozmiar nową wartość może być większy lub mniejszy niż istniejąca wartość. To `IDebugObject` nie może być odwołaniem o wartości zerowej.  
+ Wartości w tablicy są kopiowane do tego [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiektu, zastępując dowolnym istniejącą wartość. Rozmiar nową wartość może być większy lub mniejszy niż istniejąca wartość. To `IDebugObject` nie może być odwołaniem o wartości null.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   

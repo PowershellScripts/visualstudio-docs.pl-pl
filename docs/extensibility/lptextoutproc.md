@@ -19,12 +19,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc89caf18523e57671a18884fdb6b2961d962b99
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2d8439d706dbe8c84d807fb445eda272b96ad589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822881"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Gdy użytkownik wykonuje operacji kontroli źródła z wewnątrz zintegrowanego środowiska programistycznego (IDE), wtyczka do kontroli źródła może być błąd lub komunikatów o stanie dotyczące operacji przekazywania. Wtyczki można wyświetlać swój własny okien komunikatów w tym celu. Jednak aby uzyskać więcej bezproblemową integrację, dodatku typu plug-in można przekazać ciągów do środowiska IDE, następnie wyświetli je w swojej natywnej sposób wyświetlania informacji o stanie. Jest to mechanizm `LPTEXTOUTPROC` wskaźnika funkcji. IDE implementuje tej funkcji (opisane bardziej szczegółowo poniżej) do wyświetlania błędów i stanów.  

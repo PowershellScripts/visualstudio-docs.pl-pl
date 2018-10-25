@@ -1,5 +1,5 @@
 ---
-title: Skróty klawiaturowe i myszy dla projektanta klas
+title: Skróty myszy i klawiaturowe w Projektancie klas
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,44 +15,44 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db39f9c58c0fa2f0ea57d94cd1be404173720088
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 87b447c3cf2fbba77584675edf3d34f44a98cb64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957317"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848504"
 ---
-# <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Skróty klawiatury i myszy w oknie Diagram klas i szczegóły klasy
+# <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Skróty myszy i klawiatury w oknie Diagram klas i szczegóły klasy
 
-Klawiatury oprócz myszy można użyć do wykonania akcji nawigacji w **Projektant klas** i **szczegółów klasy** okna.
+Można użyć klawiatury, oprócz myszy do wykonania akcji nawigacji w **projektanta klas** i **szczegóły klasy** okna.
 
 ## <a name="use-the-mouse-in-class-designer"></a>Za pomocą myszy w Projektancie klas
 
-Obsługiwane są następujące akcje myszy w diagramach klas:
+W diagramach są obsługiwane następujące akcje myszy:
 
 |Kombinacja myszy|Kontekst|Opis|
-|-----------------------|-------------|-----------------|
-|Kliknij dwukrotnie|elementy kształtu|Otwiera edytora kodu.|
-|Kliknij dwukrotnie|Interfejs typu lizak łącznika|Interfejs typu lizak Rozwiń/Zwiń.|
-|Kliknij dwukrotnie|Interfejs typu lizak łącznika etykiety|Wywołuje **Pokaż interfejs** polecenia.|
-|Kółka myszy|Diagram klas|Przewiń w pionie.|
-|**SHIFT** + kółka myszy|Diagram klas|Przewijane w poziomie.|
-|**CTRL** + kółka myszy|Diagram klas|Powiększenia.|
-|**CTRL**+**Shift** i kliknięcia|Diagram klas|Powiększenia.|
+| - |-------------|-----------------|
+|Kliknij dwukrotnie plik|elementy kształtu|Zostanie otwarty Edytor kodu.|
+|Kliknij dwukrotnie plik|Łącznik interfejsu typu lizak|Interfejs typu lizak Rozwiń/Zwiń.|
+|Kliknij dwukrotnie plik|Etykieta łącznika interfejsu typu lizak|Wywołuje **pokazać interfejs** polecenia.|
+|Obrót kółkiem myszy|Diagram klas|Przewijanie w pionie.|
+|**SHIFT** + kółko myszy|Diagram klas|Być przewijane w poziomie.|
+|**CTRL** + kółko myszy|Diagram klas|Powiększenia.|
+|**CTRL**+**Shift** + kliknięcie|Diagram klas|Powiększenia.|
 
 ## <a name="use-the-mouse-in-the-class-details-window"></a>Za pomocą myszy w oknie Szczegóły klasy
 
-Za pomocą myszy, można zmienić wygląd **szczegółów klasy** okno i danych wyświetlanych w następujący sposób:
+Za pomocą myszy, można zmienić wygląd **szczegóły klasy** okna i danych wyświetlanych w następujący sposób:
 
-- Kliknij dowolną komórkę można edytować pozwala edytować zawartość tej komórki. Zmiany są odzwierciedlane we wszystkich miejscach, że dane są przechowywane lub wyświetlane, w tym w **właściwości** okna i w kodzie źródłowym.
+- Kliknięcie dowolnej komórki edytowalne pozwala edytować zawartość tej komórki. Zmiany są odzwierciedlane we wszystkich miejscach, że dane są przechowywane lub wyświetlana, tym **właściwości** okna w kodzie źródłowym.
 
 - Kliknij dowolną komórkę wiersza powoduje, że **właściwości** okno, aby wyświetlić właściwości dla elementu reprezentowanego przez ten wiersz.
 
-- Aby zmienić szerokość kolumny, przeciągnij granicę po prawej stronie nagłówka kolumny jest szerokości, który ma.
+- Aby zmienić szerokość kolumny, przeciągnij granicę po prawej stronie nagłówka kolumny kolumna jest szerokość, która ma.
 
-- Można rozwinąć lub zwinąć przedziału lub właściwość węzłów klikając symbole Strzałka w lewo wiersza.
+- Można rozwinąć lub Zwiń przedział albo przez węzły, właściwość, klikając symbole strzałkę po lewej stronie wiersza.
 
-- **Szczegółów klasy** okna oferuje kilka przycisków przy tworzeniu nowych elementów członkowskich w bieżącej klasy oraz przechodzenia między przedziałów członków w **szczegółów klasy** okna siatki.
+- **Szczegóły klasy** okna oferuje kilka przyciski do tworzenia nowych elementów członkowskich w bieżącej klasie i nawigacja pomiędzy przedziały członków w **szczegóły klasy** siatki okna.
 
 ## <a name="use-the-keyboard-in-class-designer"></a>Używanie klawiatury w Projektancie klas
 
@@ -60,48 +60,48 @@ Obsługiwane są następujące akcje klawiatury w diagramach klas:
 
 |Key|Kontekst|Opis|
 |---------|-------------|-----------------|
-|**Klawisze strzałek**|Kształty typów wewnątrz|Style drzewa nawigacji na zawartość kształtu (otaczania kształt jest obsługiwane). Lewy i prawy klucze Rozwiń/Zwiń bieżący element Jeśli rozwijania i przejdź do elementu nadrzędnego Jeśli nie (zobacz nawigacji w widoku drzewa szczegółowe zachowania).|
+|**Klawisze strzałek**|Kształty typów do wewnątrz|Styl drzewo nawigacji na zawartość kształtu (otaczania kształt jest obsługiwane). Klawisze lewy i prawy Rozwiń/Zwiń bieżący element przypadku rozwijania i przejdź do elementu nadrzędnego, jeśli nie (zobacz nawigacji w widoku drzewa zachowania szczegółowe).|
 |**Klawisze strzałek**|Kształty najwyższego poziomu|Przenoszenie kształtów na diagramie.|
-|**SHIFT**+**klawiszy strzałek**|Kształty typów wewnątrz|Kompilowanie składające się z elementów kształtu, takich jak elementy członkowskie, typy zagnieżdżone lub przedziałów ciągłego zaznaczenia. Te skróty nie obsługują otaczania.|
-|**Strona główna**|Kształty typów wewnątrz|Przejdź do tytułu kształtu najwyższego poziomu.|
+|**SHIFT**+**klawisze strzałek**|Kształty typów do wewnątrz|Wybór ciągłe kompilowanie składający się z elementów kształtu, takich jak składniki, zagnieżdżone typy lub przedziały. Te skróty nie obsługują otaczania.|
+|**Strona główna**|Kształty typów do wewnątrz|Przejdź do tytułu kształtu najwyższego poziomu.|
 |**Strona główna**|Kształty najwyższego poziomu|Przejdź do pierwszego kształtu na diagramie.|
-|**End**|Kształty typów wewnątrz|Przejdź do ostatniego elementu widoczne wewnątrz kształtu.|
-|**End**|Kształty najwyższego poziomu|Przejdź do ostatniego kształt na diagramie.|
-|**SHIFT**+**strona główna**|Typ wewnątrz kształtu|Wybiera elementów wewnątrz kształtu, począwszy od bieżącego elementu, a kończąc kształtu tego samego elementu najwyższy.|
-|**SHIFT**+**zakończenia**|Typ wewnątrz kształtu|Taki sam jak **Shift**+**Home** , ale w kierunku do góry do dołu.|
-|**Wprowadź**|Wszystkie konteksty|Wywołuje domyślną akcję kształtu, który jest również dostępny za pośrednictwem kliknij dwukrotnie. W większości przypadków jest to widok Kod, ale niektóre elementy definiować go inaczej (lizaki, nagłówki przedziału, etykiet interfejsów typu lizak).|
-|**+** I **-**|Wszystkie konteksty|W przypadku rozwijania elementem mającym aktualnie fokus, te klucze rozwiń lub Zwiń elementu.|
-|**>**|Wszystkie konteksty|W przypadku elementów z elementami podrzędnymi rozszerza elementu, gdy jest zwinięty i przechodzi do pierwszego elementu podrzędnego.|
-|**<**|Wszystkie konteksty|Przechodzi do elementu nadrzędnego.|
-|**ALT**+**Shift**+**L**|Wewnątrz kształty typów + kształtów typu.|Przechodzi do interfejs typu lizak aktualnie wybranego kształtu, jeśli jest obecny.|
-|**ALT**+**Shift**+**B**|Wewnątrz kształty typów + kształtów typu.|Jeśli listę typów podstawowych jest wyświetlany dla kształtu typu i ma więcej niż jeden element, to Przełącza stan rozszerzenia listy (Zwiń/Rozwiń).|
-|**Usuwanie**|Typ i komentarza kształtów|Wywołuje **usunąć z diagramu** polecenia.|
-|**Usuwanie**|Na wszystkich innych urządzeń.|Wywołuje **usunąć z kodu** polecenia (elementy członkowskie, parametry, skojarzenia, dziedziczenia, etykiet interfejsów typu lizak).|
-|**CTRL**+**usunąć**|Wszystkie konteksty|Wywołuje **usunąć z kodu** polecenia wyboru.|
-|**Karta**|Wszystkie konteksty|Przechodzi do następnego podrzędnych w tym samym elemencie nadrzędnym (obsługuje zawijania).|
-|**SHIFT**+**kartę**|Wszystkie konteksty|Powoduje przejście do poprzedniego podrzędnych w tym samym elemencie nadrzędnym (obsługuje zawijania).|
-|**SPACJA**|Wszystkie konteksty|Włącza/wyłącza wybór dla bieżącego elementu.|
+|**End**|Kształty typów do wewnątrz|Przejdź do ostatniego elementu widoczne wewnątrz kształtu.|
+|**End**|Kształty najwyższego poziomu|Przejdź do ostatniego kształtu na diagramie.|
+|**SHIFT**+**strona główna**|Kształt typu do wewnątrz|Wybiera elementów w obrębie kształtu, począwszy od bieżącego elementu, a kończąc na element najważniejsze na ten sam kształt.|
+|**SHIFT**+**zakończenia**|Kształt typu do wewnątrz|Taki sam jak **Shift**+**Home** , ale w kierunku do góry do dołu.|
+|**Wprowadź**|Wszystkie konteksty|Wywołuje akcję domyślną dla kształtu, która jest również dostępna za pośrednictwem kliknij dwukrotnie plik. W większości przypadków jest to widok kodu, ale niektóre elementy Definiuj inaczej (lizaki, nagłówki przedziału, etykiet interfejsów typu lizak).|
+|**+** i **-**|Wszystkie konteksty|W przypadku rozwijania elementem mającym aktualnie fokus te klucze rozwiń lub Zwiń element.|
+|**>**|Wszystkie konteksty|W przypadku elementów z elementami podrzędnymi rozszerza element jest zwinięte i przechodzi do pierwszego elementu podrzędnego.|
+|**<**|Wszystkie konteksty|Powoduje przejście do elementu nadrzędnego.|
+|**ALT**+**Shift**+**L**|Wewnątrz kształtów typu + kształtów typu.|Powoduje przejście do interfejsu typu lizak aktualnie wybranego kształtu, jeśli jest obecny.|
+|**ALT**+**Shift**+**B**|Wewnątrz kształtów typu + kształtów typu.|Jeśli listę typów podstawowych są wyświetlane na kształt typu i ma więcej niż jeden element, przełącza tego stanu rozszerzenia listy (Zwiń/Rozwiń).|
+|**Delete**|Typ i komentarz kształtów|Wywołuje **Usuń z diagramu** polecenia.|
+|**Delete**|Na całą resztą.|Wywołuje **usuwanie kodu** polecenia (elementy członkowskie, parametrów, asocjacje, dziedziczenie, etykiet interfejsów typu lizak).|
+|**CTRL**+**Usuń**|Wszystkie konteksty|Wywołuje **usuwanie kodu** na wybór polecenia.|
+|**Karta**|Wszystkie konteksty|Powoduje przejście do następnego elementu podrzędnego w obrębie tego samego nadrzędnego (obsługuje zawijania).|
+|**SHIFT**+**kartę**|Wszystkie konteksty|Powoduje przejście do poprzedniego elementu podrzędnego w obrębie tego samego nadrzędnego (obsługuje zawijania).|
+|**SPACJA**|Wszystkie konteksty|Włącza lub wyłącza zaznaczenie dla bieżącego elementu.|
 
-## <a name="use-the-keyboard-in-the-class-details-window"></a>Używanie klawiatury w okno Szczegóły klasy
+## <a name="use-the-keyboard-in-the-class-details-window"></a>Używanie klawiatury w oknie Szczegóły klasy
 
 > [!NOTE]
-> Następujące powiązań klucza zostały wybrane do specjalnie, aby używane środowisko przypominało środowisko wpisywanie kodu.
+> Następujących klawiszy dobrano w celu specjalnie, aby używane środowisko przypominało środowisko pisania kodu.
 
-Aby przejść za pomocą następujących klawiszy **szczegółów klasy** okno:
+Aby przejść za pomocą następujących klawiszy **szczegóły klasy** okna:
 
 |||
 |-|-|
 |Key|Wynik|
-|**,** (przecinek)|Jeśli kursor znajduje się w wierszu parametru, wpisz przecinek przenosi kursor do pola nazwy parametru dalej. Jeśli kursor znajduje się w ostatnim wierszu parametru metody, powoduje przeniesienie kursora prowadzącego do \<Dodaj parametr > pola, które umożliwia utworzenie nowego parametru.<br /><br /> Jeśli kursor znajduje się w innym miejscu w **szczegółów klasy** oknie dosłownie wpisując przecinek dodaje przecinka w bieżącym polu.|
-|**;**  (średnik) lub **)** (nawiasu zamykającego)|Przenieś kursor do następnego wiersza elementu członkowskiego w polu nazwy **szczegółów klasy** okna siatki.|
-|**Karta**|Przesuwa kursor do następnego pola, najpierw przenoszenie od lewej do prawej, a następnie góry do dołu. Jeśli kursor jest przenoszona z pola, w którym został wpisany tekst, **szczegółów klasy** przetwarza tekst i zapisuje go, jeśli nie generuje błędu.<br /><br /> Czy kursor znajduje się na puste pole takich jak \<Dodaj parametr >, Tab przenosi je do pierwszego pola następnego wiersza.|
-|**SPACJA**|Przesuwa kursor do następnego pola, najpierw przenoszenie od lewej do prawej, a następnie góry do dołu. Czy kursor znajduje się na puste pole takich jak \<Dodaj parametr >, powoduje przeniesienie do pierwszego pola następnego wiersza. Należy pamiętać, że \<miejsca > wpisane natychmiast po przecinek jest ignorowana.<br /><br /> Jeśli kursor znajduje się w polu podsumowania Summary, miejsce na wpisanie dodaje znak odstępu.<br /><br /> Jeśli kursor znajduje się w kolumnie Ukryj danego wiersza, miejsce na wpisanie przełącza wartość wyboru Ukryj.|
-|**CTRL**+**kartę**|Przełącz na inne okno dokumentu. Na przykład zmienić **szczegółów klasy** okno, aby otworzyć pliku kodu.|
-|**ESC**|Jeśli rozpoczęto wpisać tekst w polu, naciskając klawisz ESC działa jako klucz cofania, przywrócenie zawartość pola jego poprzednią wartość. Jeśli okno Szczegóły klasy ogólne fokus, ale nie określonej komórki ma fokus, naciskając klawisz ESC przenosi fokus od **szczegółów klasy** okna.|
-|**Strzałka w górę** i **Strzałka w dół**|Te klucze kursor jest wiersz po wierszu w pionie **szczegółów klasy** okna siatki.|
-|**Strzałka w lewo**|Jeśli kursor znajduje się w kolumnie Nazwa, naciskając klawisz strzałki w lewo Zwija bieżący węzeł w hierarchii (jeśli jest on otwarty).|
-|**Strzałka w prawo**|Jeśli kursor znajduje się w kolumnie Nazwa, naciskając klawisz strzałki w prawo rozwija bieżący węzeł w hierarchii (jeśli jest zwinięte).|
+|**,** (przecinek)|Jeśli kursor znajduje się w wierszu parametru, wpisując z przecinkiem na końcu przenosi kursor do pola nazwy parametru dalej. Jeśli kursor znajduje się w ostatnim wierszu parametru metody, przenosi kursor do \<Dodaj parametr > pola, które można użyć do utworzenia nowego parametru.<br /><br /> Jeśli kursor znajduje się gdzie indziej w **szczegóły klasy** okna, wpisując z przecinkiem na końcu dosłownie dodaje przecinek w bieżącej wartości pola.|
+|**;**  (średnik) lub **)** (zamykający nawias)|Przesuń kursor do pola nazwy następny wiersz elementu członkowskiego w **szczegóły klasy** siatki okna.|
+|**Karta**|Przenosi kursor do następnego pola, najpierw przejście od lewej do prawej, a następnie z góry na dół. Jeśli kursor jest przenoszona z polem, w jakiej został wpisany tekst, **szczegóły klasy** przetwarza ten tekst i zapisuje go, jeśli nie generuje błąd.<br /><br /> Jeśli kursor znajduje się na puste pole takie jak \<Dodaj parametr >, kartę przenosi je do pierwszego pola następnego wiersza.|
+|**SPACJA**|Przenosi kursor do następnego pola, najpierw przejście od lewej do prawej, a następnie z góry na dół. Jeśli kursor znajduje się na puste pole takie jak \<Dodaj parametr >, przenosi do pierwszego pola następnego wiersza. Należy pamiętać, że \<miejsca > wpisane natychmiast, po przecinek jest ignorowana.<br /><br /> Jeśli kursor znajduje się w polu Podsumowanie, miejsce na wpisanie dodaje znak spacji.<br /><br /> Jeśli kursor znajduje się w kolumnie Ukryj w danym wierszu, miejsce na wpisanie przełącza wartość Ukryj pola wyboru.|
+|**CTRL**+**kartę**|Przełącz do innego okna dokumentu. Na przykład zmienić **szczegóły klasy** okna można otworzyć pliku kodu.|
+|**ESC**|Jeśli rozpoczęto wpisać tekst w polu, naciskając klawisz ESC działa jako klawiszem Cofnij przywrócenie zawartości tego pola do poprzedniej wartości. Jeśli okno Szczegóły klasy zawiera ogólne fokus, ale nie określona komórka jest ustawiony fokus, naciskając klawisz ESC powoduje przeniesienie fokusu opuszczenie **szczegóły klasy** okna.|
+|**Strzałka w górę** i **Strzałka w dół**|Te klucze Przesuń kursor wiersz po wierszu w pionie w **szczegóły klasy** siatki okna.|
+|**Strzałka w lewo**|Jeśli kursor znajduje się w kolumnie Nazwa, naciskając klawisz Strzałka w lewo Zwija bieżący węzeł w hierarchii (jeśli jest otwarty).|
+|**Strzałka w prawo**|Jeśli kursor znajduje się w kolumnie Nazwa, naciskając klawisz Strzałka w prawo rozwija bieżący węzeł w hierarchii (jeśli jest zwinięte).|
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Utworzyć i skonfigurować elementy członkowskie typu](creating-and-configuring-type-members.md)
+- [Tworzenie i konfigurowanie składowych typów](creating-and-configuring-type-members.md)

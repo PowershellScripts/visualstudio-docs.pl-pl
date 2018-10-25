@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6668a5c33c34ffce3cdebba0802c57e9bbf598a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 23a24a4d88e181a447b5228080ae89b8853060ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880055"
 ---
 # <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
-Zwraca długość zakresu adresów, w którym symbol lokalnego jest poprawna.  
+Zwraca długość zakresu adresów, w którym symbolu lokalnego jest poprawna.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT get_liveRangeLength (
  [out] Zwraca długość zakresu adresów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 > [!NOTE]
->  Zwrócony kod błędu oznacza, że symbol nie ma informacji o zakresie na żywo.  
+>  Zwrócony kod błędu: oznacza, że symbol nie ma informacji o zakresie na żywo.  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: Dia2.h  
   
- Biblioteki: diaguids.lib  
+ Biblioteka: diaguids.lib  
   
  Biblioteki DLL: msdia100.dll  
   

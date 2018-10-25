@@ -1,5 +1,5 @@
 ---
-title: 'Obszar testu 6: Usuń | Dokumentacja firmy Microsoft'
+title: 'Obszar testowy 6: Usuwanie | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,46 +14,46 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97fc6ab9746e7ef2188c78dc77ec357f7d415a42
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ce67ded280fd87fbcabd72d7ca45f1af8568336
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140232"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888220"
 ---
-# <a name="test-area-6-delete"></a>Testowanie obszaru 6: usuwanie
-Ten obszar testu wtyczkę kontroli źródła obejmuje akcje usuwania.  
+# <a name="test-area-6-delete"></a>Obszar testowy 6: usuwanie
+Ten obszar testowy wtyczki kontroli źródła obejmuje akcje usuwania.  
   
- Odpowiada usunąć akcje w kontroli źródła **Eksploratora rozwiązań**.  
+ Kontrola źródła reaguje na usuwanie akcji w **Eksploratora rozwiązań**.  
   
- Poniżej znajduje się lista elementów, które mogą zostać usunięte:  
+ Poniżej przedstawiono listę elementów, które można usunąć:  
   
--   Pliki  
+- Pliki  
   
--   Foldery  
+- Foldery  
   
--   Projekt  
+- Projekt  
   
- W zależności od typu projektu może mieć możliwość **Usuń** projektu (pozostawia pliki na dysku) lub **usunąć** projektu (spowoduje usunięcie plików na dysku). Każda akcja usuwa projektów lub elementów z **Eksploratora rozwiązań**.  
+  W zależności od typu projektu może mieć możliwość **Usuń** projektu (pozostawia pliki na dysku) lub **Usuń** projektu (spowoduje to usunięcie plików na dysku). Każda z tych akcji spowoduje usunięcie projektu lub elementu z **Eksploratora rozwiązań**.  
   
 ## <a name="expected-behavior"></a>Oczekiwane zachowanie  
- Oczekiwane zachowanie dla przypadków testowych w obszarze testu delete jest:  
+ To oczekiwane zachowanie dla przypadków testowych, w obszarze badania delete:  
   
--   Usunięty element nie jest już widoczna w **Eksploratora rozwiązań**.  
+-   Usunięty element nie jest już widoczna w ramach **Eksploratora rozwiązań**.  
   
--   Usunięto projektu lub elementu nadrzędnego jest wyewidencjonowany, zgodnie z potrzebami (prawdopodobnie z wierszem.)  
+-   Element nadrzędny usuniętego projektu lub element jest wyewidencjonowany, zgodnie z potrzebami (prawdopodobnie wraz z monitem o.)  
   
--   Po usunięciu wyewidencjonowany lub dodać elementu, nie ma w **oczekujących zaewidencjonowań** okna.  
+-   Po usunięciu zaznaczenia lub dodano element, nie ma w **oczekujące elementy do zaewidencjonowania** okna.  
   
 -   Element nadal istnieje w magazynie kontroli źródła, nawet po usunięciu i musi ręcznie przeczyścić.  
   
-|Akcja|Kroki testu|Oczekiwanych rezultatów, aby sprawdzić|  
+|Akcja|Kroki testu|Oczekiwanych wyników, aby sprawdzić|  
 |------------|----------------|--------------------------------|  
-|Usuwanie projektu klienta|1.  Utwórz projekt klienta.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń cały projekt z rozwiązania|Typowe oczekiwane zachowanie.|  
+|Usuń projekt klienta|1.  Utwórz projekt klienta.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń cały projekt z rozwiązania|Typowe oczekiwane zachowanie.|  
 |Usuń pusty plik|1.  Utwórz projekt klienta.<br />2.  Dodaj plik zero bajtów do projektu.<br />3.  Dodaj rozwiązanie do kontroli źródła.<br />4.  Wybierz plik, usuń go.|Typowe oczekiwane zachowanie.|  
-|Usuwanie folderu z plikami|1.  Tworzenie rozwiązania pojedynczego projektu.<br />2.  Dodaj folder.<br />3.  Dodaj jeden plik do folderu.<br />4.  Dodaj rozwiązanie do kontroli źródła.<br />5.  Zapoznaj się z projektu, aby uniknąć monitów.<br />6.  Usuń folder.|Typowe oczekiwane zachowanie.|  
-|Usuwanie projektu sieci Web systemu plików|1.  Utwórz projekt sieci Web systemu plików (Użyj przycisk Przeglądaj, aby określić ścieżkę UNC).<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń cały projekt z rozwiązania.<br />4.  Powtórz kroki od 1 do 3 dla lokalnych projektu sieci Web (wykonuje różne ścieżki do kodu, ale ma tego samego interfejsu zewnętrznego i zachowanie).|Typowe oczekiwane zachowanie.|  
-|Usuń plik z projektu sieci Web systemu plików|1.  Utwórz projekt sieci Web systemu plików.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń plik z projektu.<br />4.  Powtórz kroki od 1 do 3 dla lokalnych projektu sieci Web (wykonuje różne ścieżki do kodu, ale ma tego samego interfejsu zewnętrznego i zachowanie).|Typowe oczekiwane zachowanie.|  
+|Usuń folder z plikami|1.  Utwórz rozwiązanie pojedynczego projektu.<br />2.  Dodaj folder.<br />3.  Dodaj jeden plik do folderu.<br />4.  Dodaj rozwiązanie do kontroli źródła.<br />5.  Zapoznaj się z projektu, aby uniknąć monity.<br />6.  Usuń folder.|Typowe oczekiwane zachowanie.|  
+|Usuwanie projektu sieci Web systemu plików|1.  Utwórz projekt sieci Web systemu plików (Użyj przycisk Przeglądaj, aby określić ścieżkę UNC).<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń cały projekt z rozwiązania.<br />4.  Powtórz kroki od 1 do 3 dla lokalnego projektu sieci Web (korzysta z różnych ścieżek za pośrednictwem kodu, ale ma ten sam interfejs zewnętrzny i zachowanie).|Typowe oczekiwane zachowanie.|  
+|Usuwanie pliku z projektem sieci Web systemu plików|1.  Utwórz projekt sieci Web systemu plików.<br />2.  Dodaj rozwiązanie do kontroli źródła.<br />3.  Usuń plik z projektu.<br />4.  Powtórz kroki od 1 do 3 dla lokalnego projektu sieci Web (korzysta z różnych ścieżek za pośrednictwem kodu, ale ma ten sam interfejs zewnętrzny i zachowanie).|Typowe oczekiwane zachowanie.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik testowania wtyczek kontroli kodu źródłowego](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

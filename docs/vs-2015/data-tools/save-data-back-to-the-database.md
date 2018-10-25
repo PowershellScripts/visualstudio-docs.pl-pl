@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d085fd350c3757af4a24d659fe8b6ee30165e7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829647"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49215166"
   
 Zestaw danych jest kopii danych w pamięci. W przypadku zmodyfikowania tych danych jest dobrą praktyką, aby zapisać te zmiany w bazie danych. Możesz to zrobić na jeden z trzech sposobów:  
   
--   Przez wywołanie jednej z `Update` metod TableAdapter  
+- Przez wywołanie jednej z `Update` metod TableAdapter  
   
--   Przez wywołanie jednej z metod TableAdapter dbdirect — metody  
+- Przez wywołanie jednej z metod TableAdapter dbdirect — metody  
   
--   Przez wywołanie metody UpdateAll na `TableAdapterManager` , program Visual Studio generuje dla Ciebie, gdy zestaw danych zawiera tabele, które są powiązane z innymi tabelami w zestawie danych  
+- Przez wywołanie metody UpdateAll na `TableAdapterManager` , program Visual Studio generuje dla Ciebie, gdy zestaw danych zawiera tabele, które są powiązane z innymi tabelami w zestawie danych  
   
- Wiążąc danych tabel w zestawie danych z kontrolkami w formularzu Windows lub XAML na stronie, architektura powiązanie danych wykonuje całą pracę za Ciebie.  
+  Wiążąc danych tabel w zestawie danych z kontrolkami w formularzu Windows lub XAML na stronie, architektura powiązanie danych wykonuje całą pracę za Ciebie.  
   
- Jeśli znasz TableAdapters, możesz przejść bezpośrednio do jednego z tych tematów:  
+  Jeśli znasz TableAdapters, możesz przejść bezpośrednio do jednego z tych tematów:  
   
 |Temat|Opis|  
 |-----------|-----------------|  
@@ -107,11 +107,11 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
   
  Aby uniknąć naruszenia ograniczeń przedwczesne można czasowo zawiesić Aktualizuj ograniczenia. Służy do dwóch celów:  
   
--   Błąd uniemożliwia zgłaszane po ukończeniu aktualizacji jedną kolumnę, ale nie zostały uruchomione aktualizowanie innego.  
+- Błąd uniemożliwia zgłaszane po ukończeniu aktualizacji jedną kolumnę, ale nie zostały uruchomione aktualizowanie innego.  
   
--   Uniemożliwia ona niektórych aktualizacji zdarzenia, które miałyby wywoływane (zdarzenia, które są często używane do sprawdzania poprawności).  
+- Uniemożliwia ona niektórych aktualizacji zdarzenia, które miałyby wywoływane (zdarzenia, które są często używane do sprawdzania poprawności).  
   
- Po zakończeniu aktualizacji, można ponownie włączyć ograniczenia sprawdzania, który również ponownie włączy zdarzeń aktualizacji i podnosi je.  
+  Po zakończeniu aktualizacji, można ponownie włączyć ograniczenia sprawdzania, który również ponownie włączy zdarzeń aktualizacji i podnosi je.  
   
 > [!NOTE]
 >  W formularzach Windows Forms, architektura powiązania danych, która jest wbudowana w elemencie datagrid wstrzymuje ograniczenia sprawdzania do momentu fokusu poza wierszem, a nie trzeba jawnie wywołać <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, lub <xref:System.Data.DataRow.CancelEdit%2A> metody.  
@@ -177,33 +177,33 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
   
  Jeśli zmiany odzwierciedlają aktualny stan źródła danych, nie będzie trzeba utrzymywać te informacje. Zazwyczaj istnieją dwa razy podczas zestawu danych i jego źródło są zsynchronizowane:  
   
--   Natychmiast po zakończeniu informacje zostały załadowane do zestawu danych, np. podczas odczytu danych ze źródła.  
+- Natychmiast po zakończeniu informacje zostały załadowane do zestawu danych, np. podczas odczytu danych ze źródła.  
   
--   Po wysłaniu zmiany z zestawu danych do źródła danych (, ale nie przed, ponieważ spowoduje utratę informacje zmiany, które są wymagane, aby wysłać zmiany z bazą danych).  
+- Po wysłaniu zmiany z zestawu danych do źródła danych (, ale nie przed, ponieważ spowoduje utratę informacje zmiany, które są wymagane, aby wysłać zmiany z bazą danych).  
   
- Możesz zatwierdzić oczekujące zmiany do zestawu danych, wywołując <xref:System.Data.DataSet.AcceptChanges%2A> metody. Zazwyczaj <xref:System.Data.DataSet.AcceptChanges%2A> jest wywoływana podczas następujących godzinach w aplikacji.  
+  Możesz zatwierdzić oczekujące zmiany do zestawu danych, wywołując <xref:System.Data.DataSet.AcceptChanges%2A> metody. Zazwyczaj <xref:System.Data.DataSet.AcceptChanges%2A> jest wywoływana podczas następujących godzinach w aplikacji.  
   
--   Po zakończeniu ładowania zestawu danych. Jeśli załadujesz zestawu danych, przez wywołanie metody TableAdapter `Fill` metody, a następnie kartę automatycznie zatwierdza zmiany za Ciebie. Jednakże jeśli zestaw danych jest załadowany przez scalenie inny zestaw danych, następnie należy ręcznie zatwierdzić zmiany.  
+- Po zakończeniu ładowania zestawu danych. Jeśli załadujesz zestawu danych, przez wywołanie metody TableAdapter `Fill` metody, a następnie kartę automatycznie zatwierdza zmiany za Ciebie. Jednakże jeśli zestaw danych jest załadowany przez scalenie inny zestaw danych, następnie należy ręcznie zatwierdzić zmiany.  
   
-    > [!NOTE]
-    >  Można zapobiec automatycznego zatwierdzania zmian po wywołaniu przez adapter `Fill` metody, ustawiając `AcceptChangesDuringFill` właściwości karty do `false`. Jeśli jest równa `false`, a następnie <xref:System.Data.DataRow.RowState%2A> każdego wiersza, który jest wstawiany podczas wypełnienia ustawiono <xref:System.Data.DataRowState>.  
+  > [!NOTE]
+  >  Można zapobiec automatycznego zatwierdzania zmian po wywołaniu przez adapter `Fill` metody, ustawiając `AcceptChangesDuringFill` właściwości karty do `false`. Jeśli jest równa `false`, a następnie <xref:System.Data.DataRow.RowState%2A> każdego wiersza, który jest wstawiany podczas wypełnienia ustawiono <xref:System.Data.DataRowState>.  
   
--   Po wysłaniu zmian w zestawie do innego procesu, takich jak usługi XML sieci Web.  
+- Po wysłaniu zmian w zestawie do innego procesu, takich jak usługi XML sieci Web.  
   
-    > [!CAUTION]
-    >  Zatwierdzanie zmian w ten sposób usuwa wszystkie informacje o zmianach. Nie zmiany aż po zakończenia wykonywania operacji, które wymagają aplikacji w taki sposób, aby dowiedzieć się, jakie zmiany zostały wprowadzone w zestawie danych.  
+  > [!CAUTION]
+  >  Zatwierdzanie zmian w ten sposób usuwa wszystkie informacje o zmianach. Nie zmiany aż po zakończenia wykonywania operacji, które wymagają aplikacji w taki sposób, aby dowiedzieć się, jakie zmiany zostały wprowadzone w zestawie danych.  
   
- Ta metoda wykonuje następujące czynności:  
+  Ta metoda wykonuje następujące czynności:  
   
--   Zapisuje <xref:System.Data.DataRowVersion> wersji rekordu do jego <xref:System.Data.DataRowVersion> wersji i zastępuje oryginalną wersję.  
+- Zapisuje <xref:System.Data.DataRowVersion> wersji rekordu do jego <xref:System.Data.DataRowVersion> wersji i zastępuje oryginalną wersję.  
   
--   Usuwa wszystkie wiersze gdzie <xref:System.Data.DataRow.RowState%2A> właściwość jest ustawiona na <xref:System.Data.DataRowState>.  
+- Usuwa wszystkie wiersze gdzie <xref:System.Data.DataRow.RowState%2A> właściwość jest ustawiona na <xref:System.Data.DataRowState>.  
   
--   Zestawy <xref:System.Data.DataRow.RowState%2A> właściwości rekordu, aby <xref:System.Data.DataRowState>.  
+- Zestawy <xref:System.Data.DataRow.RowState%2A> właściwości rekordu, aby <xref:System.Data.DataRowState>.  
   
- <xref:System.Data.DataSet.AcceptChanges%2A> Metoda jest dostępna na trzech poziomach. Można też wywołać na <xref:System.Data.DataRow> obiekt do zatwierdzenia zmian po prostu tego wiersza. Możesz także wywołać ją na <xref:System.Data.DataTable> obiektu, aby zatwierdzić wszystkie wiersze w tabeli. Na koniec można wywołać ją na <xref:System.Data.DataSet> obiektu, aby zatwierdzić wszystkie oczekujące zmiany we wszystkich rekordach wszystkie tabele zestawu danych.  
+  <xref:System.Data.DataSet.AcceptChanges%2A> Metoda jest dostępna na trzech poziomach. Można też wywołać na <xref:System.Data.DataRow> obiekt do zatwierdzenia zmian po prostu tego wiersza. Możesz także wywołać ją na <xref:System.Data.DataTable> obiektu, aby zatwierdzić wszystkie wiersze w tabeli. Na koniec można wywołać ją na <xref:System.Data.DataSet> obiektu, aby zatwierdzić wszystkie oczekujące zmiany we wszystkich rekordach wszystkie tabele zestawu danych.  
   
- W poniższej tabeli opisano, w których zmiany zostaną zatwierdzone w oparciu o co obiekt, że metoda jest wywoływana w.  
+  W poniższej tabeli opisano, w których zmiany zostaną zatwierdzone w oparciu o co obiekt, że metoda jest wywoływana w.  
   
 |Metoda|Wynik|  
 |------------|------------|  
@@ -221,16 +221,16 @@ Aktualizacja dwuetapowego procesu i roli DataRowVersion w Pomyślna aktualizacja
   
  Można sprawdzić poprawność danych na kilka sposobów:  
   
--   W warstwie biznesowej, dodając kod do aplikacji w taki sposób, aby sprawdzić poprawność danych. Zestaw danych jest w jednym miejscu, możesz to zrobić. Zestaw danych zawiera niektóre zalety weryfikacji zaplecza — takie jak możliwość sprawdzenia poprawności zmian, jak zmieniają się wartości kolumn i wierszy. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych w zestawach danych](../data-tools/validate-data-in-datasets.md).  
+- W warstwie biznesowej, dodając kod do aplikacji w taki sposób, aby sprawdzić poprawność danych. Zestaw danych jest w jednym miejscu, możesz to zrobić. Zestaw danych zawiera niektóre zalety weryfikacji zaplecza — takie jak możliwość sprawdzenia poprawności zmian, jak zmieniają się wartości kolumn i wierszy. Aby uzyskać więcej informacji, zobacz [sprawdzanie poprawności danych w zestawach danych](../data-tools/validate-data-in-datasets.md).  
   
--   W warstwie prezentacji przez dodawanie walidacji do formularzy. Aby uzyskać więcej informacji, zobacz [walidacji danych wejściowych użytkownika w formularzach Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
+- W warstwie prezentacji przez dodawanie walidacji do formularzy. Aby uzyskać więcej informacji, zobacz [walidacji danych wejściowych użytkownika w formularzach Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
--   W danych zaplecza, na wysyłanie danych do źródła danych — na przykład baza danych —, dzięki czemu jej o zaakceptowanie lub odrzucenie danych. Jeśli pracujesz z bazą danych, który zawiera zaawansowane funkcje służące do sprawdzania poprawności danych, a także informacje o błędzie, może to być praktyczne podejście, ponieważ można sprawdzić poprawność danych niezależnie od tego, gdzie pochodzi on z. Jednak to podejście nie może uwzględnić wymagania sprawdzania poprawności specyficznych dla aplikacji. Ponadto posiadanie źródła danych sprawdzania poprawności danych może spowodować wiele rund do źródła danych, w zależności od tego, jak ułatwia rozpoznawanie błędów sprawdzania poprawności wygenerowane przez usługę zaplecza w aplikacji.  
+- W danych zaplecza, na wysyłanie danych do źródła danych — na przykład baza danych —, dzięki czemu jej o zaakceptowanie lub odrzucenie danych. Jeśli pracujesz z bazą danych, który zawiera zaawansowane funkcje służące do sprawdzania poprawności danych, a także informacje o błędzie, może to być praktyczne podejście, ponieważ można sprawdzić poprawność danych niezależnie od tego, gdzie pochodzi on z. Jednak to podejście nie może uwzględnić wymagania sprawdzania poprawności specyficznych dla aplikacji. Ponadto posiadanie źródła danych sprawdzania poprawności danych może spowodować wiele rund do źródła danych, w zależności od tego, jak ułatwia rozpoznawanie błędów sprawdzania poprawności wygenerowane przez usługę zaplecza w aplikacji.  
   
-    > [!IMPORTANT]
-    >  Korzystając z polecenia danych za pomocą <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> właściwość, która jest równa <xref:System.Data.CommandType>, należy dokładnie sprawdzić informacje przesyłane przez klienta przed przekazaniem go do bazy danych. Złośliwi użytkownicy mogą próby wysłania przez użytkownika (wstrzyknąć) zmodyfikowany lub dodatkowych instrukcji SQL w celu uzyskania nieautoryzowanego dostępu lub uszkodzenia bazy danych. Przed przeniesieniem danych wejściowych użytkownika do bazy danych zawsze sprawdzić, czy informacje są prawidłowe. Jest najlepszym rozwiązaniem jest zawsze używaj sparametryzowanych zapytań lub procedur przechowywanych, gdy jest to możliwe. Aby uzyskać więcej informacji, zobacz [Przegląd wykorzystuje skryptu](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > [!IMPORTANT]
+  >  Korzystając z polecenia danych za pomocą <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> właściwość, która jest równa <xref:System.Data.CommandType>, należy dokładnie sprawdzić informacje przesyłane przez klienta przed przekazaniem go do bazy danych. Złośliwi użytkownicy mogą próby wysłania przez użytkownika (wstrzyknąć) zmodyfikowany lub dodatkowych instrukcji SQL w celu uzyskania nieautoryzowanego dostępu lub uszkodzenia bazy danych. Przed przeniesieniem danych wejściowych użytkownika do bazy danych zawsze sprawdzić, czy informacje są prawidłowe. Jest najlepszym rozwiązaniem jest zawsze używaj sparametryzowanych zapytań lub procedur przechowywanych, gdy jest to możliwe. Aby uzyskać więcej informacji, zobacz [Przegląd wykorzystuje skryptu](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- Po zmiany zostały dokonane w zestawie danych, mogą przesyłać zmiany ze źródłem danych. Najczęściej, możesz to zrobić, wywołując `Update` metodę TableAdapter (lub adapter danych). Metoda pętlę każdy rekord w tabeli danych określa, jakiego rodzaju aktualizacji jest wymagana (aktualizowania, wstawiania lub usuwania), jeśli są dostępne, a następnie uruchamia odpowiednie polecenie.  
+  Po zmiany zostały dokonane w zestawie danych, mogą przesyłać zmiany ze źródłem danych. Najczęściej, możesz to zrobić, wywołując `Update` metodę TableAdapter (lub adapter danych). Metoda pętlę każdy rekord w tabeli danych określa, jakiego rodzaju aktualizacji jest wymagana (aktualizowania, wstawiania lub usuwania), jeśli są dostępne, a następnie uruchamia odpowiednie polecenie.  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>Przesyłania aktualizacji do źródła danych  
  Ilustracją jak wprowadzone aktualizacje Załóżmy, że aplikacja korzysta z zestawu danych, który zawiera jednej tabeli danych. Aplikacja pobiera dwa wiersze z bazy danych. Po ich pobraniu tabeli danych w pamięci wygląda następująco:  

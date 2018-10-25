@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75db379b6a94d0c40fdbc1aa3946315f5fbc4edc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: adf5877ae9b01666491e5d10522ba52b58b2d917
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498473"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845228"
 ---
 # <a name="font-and-color-overview"></a>Omówienie czcionek i kolorów
 W tym temacie omówiono ustawienia czcionek i kolorów tekstu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Wprowadza pojęcia związane z kategorii i wyświetlenie elementów i opisuje, jak pakietów VSPackage i podstawowy edytor za pomocą atrybutów tekstu.  
@@ -30,55 +30,55 @@ W tym temacie omówiono ustawienia czcionek i kolorów tekstu w [!INCLUDE[vsprvs
 ## <a name="categories-and-display-items"></a>Kategorie i wyświetlenie elementów  
  Czcionki i kolory są pogrupowane w **kategorie** i **Wyświetle elementy**.  
   
--   A **kategorii** to kontener logiczny lub funkcjonalności szereg **Wyświetle elementy**.  
+- A **kategorii** to kontener logiczny lub funkcjonalności szereg **Wyświetle elementy**.  
   
-     Lista **kategorie** znajduje się w **Pokaż ustawienia dla** pole listy rozwijanej **czcionki i kolory** stronę właściwości.  
+   Lista **kategorie** znajduje się w **Pokaż ustawienia dla** pole listy rozwijanej **czcionki i kolory** stronę właściwości.  
   
--   A **wyświetlanego elementu** jest jednostką dobrze zdefiniowanych tekstu, takie jak komentarz, ciągu lub strukturę kontrolki, która jest pokolorowany, po wyświetleniu.  
+- A **wyświetlanego elementu** jest jednostką dobrze zdefiniowanych tekstu, takie jak komentarz, ciągu lub strukturę kontrolki, która jest pokolorowany, po wyświetleniu.  
   
- Każdy **wyświetlanego elementu** unikatowo zdefiniowane **kategorii** zawierający go. W związku z tym, więcej niż jeden **kategorii** może mieć **wyświetlanego elementu** o takiej samej nazwie.  
+  Każdy **wyświetlanego elementu** unikatowo zdefiniowane **kategorii** zawierający go. W związku z tym, więcej niż jeden **kategorii** może mieć **wyświetlanego elementu** o takiej samej nazwie.  
   
 ## <a name="vspackage-control-of-fonts-and-colors"></a>Pakietu VSPackage kontroli nad czcionki i kolory  
  [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] Umożliwia pakietów VSPackage do:  
   
--   Zdefiniuj czcionek i kolorów **kategorie**.  
+- Zdefiniuj czcionek i kolorów **kategorie**.  
   
--   Określ czcionek i kolorów używany do wyświetlania zawartości **Wyświetle elementy**.  
+- Określ czcionek i kolorów używany do wyświetlania zawartości **Wyświetle elementy**.  
   
--   Interakcja z **czcionki i kolory** stronę właściwości.  
+- Interakcja z **czcionki i kolory** stronę właściwości.  
   
--   Wiele agregacji **kategorie** do grup.  
+- Wiele agregacji **kategorie** do grup.  
   
--   Utrwalanie zmian w domyślnych ustawieniach.  
+- Utrwalanie zmian w domyślnych ustawieniach.  
   
- Istnieją dwa sposoby interakcji z wyborów czcionek i kolorów w ramach [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)].  
+  Istnieją dwa sposoby interakcji z wyborów czcionek i kolorów w ramach [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)].  
   
--   Jednym ze sposobów jest określany jako *kolorowanie składni*. Jest on używany przez pakietu VSPackage, który dostosowuje istniejące [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytora do wdrożenia usługi językowej i tworzenia źródła edytora.  
+- Jednym ze sposobów jest określany jako *kolorowanie składni*. Jest on używany przez pakietu VSPackage, który dostosowuje istniejące [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytora do wdrożenia usługi językowej i tworzenia źródła edytora.  
   
-     Tylko jeden **kategorii** obsługuje ten mechanizm, to znaczy, **edytora tekstów**.  
+   Tylko jeden **kategorii** obsługuje ten mechanizm, to znaczy, **edytora tekstów**.  
   
--   Bardziej ogólnych zamiast obsługuje wszystkie inne **kategorie** i składników interfejsu użytkownika inne niż Edytor źródła, podczas wyświetlania tekstu. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>.  
+- Bardziej ogólnych zamiast obsługuje wszystkie inne **kategorie** i składników interfejsu użytkownika inne niż Edytor źródła, podczas wyświetlania tekstu. Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>.  
   
 ## <a name="core-editor-text-settings"></a>Ustawienia programu Core edytora tekstu  
  Ustawienia czcionek i kolorów dla podstawowy Edytor obiektu usługi języka są regulowane przez **EditorCategory tekstu** w **Pokaż ustawienia dla** pole listy rozwijanej **czcionki i kolory** stronę właściwości.  
   
  Podczas pracy z edytory, należy użyć czcionki wyspecjalizowanych i mechanizmu kontroli kolorów, zapewniającej usługa językowa kontroli i rozszerzanie **edytora tekstów** ustawienia. Ten mechanizm jest określany jako *kolorowanie składni* oraz zapewnia:  
   
--   Uproszczona metoda zarządzania czcionki i kolory wyświetle elementy.  
+- Uproszczona metoda zarządzania czcionki i kolory wyświetle elementy.  
   
-     Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.  
+   Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem>.  
   
--   Mechanizm kolorowanie dobrze zdefiniowane i zoptymalizowane.  
+- Mechanizm kolorowanie dobrze zdefiniowane i zoptymalizowane.  
   
-     Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>.  
+   Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>.  
   
--   Możliwość zarówno Użyj wbudowanych wyświetle elementy z **EditorCategory tekst** i rozszerzyć je.  
+- Możliwość zarówno Użyj wbudowanych wyświetle elementy z **EditorCategory tekst** i rozszerzyć je.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: używanie wbudowanych elementów z możliwością kolorowania](../extensibility/internals/how-to-use-built-in-colorable-items.md) i [niestandardowe elementy z możliwością kolorowania](../extensibility/internals/custom-colorable-items.md).  
+   Aby uzyskać więcej informacji, zobacz [porady: używanie wbudowanych elementów z możliwością kolorowania](../extensibility/internals/how-to-use-built-in-colorable-items.md) i [niestandardowe elementy z możliwością kolorowania](../extensibility/internals/custom-colorable-items.md).  
   
--   Automatyczne trwałości bieżącego stanu obu wbudowanych i niestandardowych wyświetlania elementów z **edytora tekstów** kategorii.  
+- Automatyczne trwałości bieżącego stanu obu wbudowanych i niestandardowych wyświetlania elementów z **edytora tekstów** kategorii.  
   
- Aby uzyskać więcej informacji, zobacz kolorowania składni [kolorowanie składni w starszej wersji usługi językowej](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).  
+  Aby uzyskać więcej informacji, zobacz kolorowania składni [kolorowanie składni w starszej wersji usługi językowej](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Interfejsy starszej wersji w edytorze](../extensibility/legacy-interfaces-in-the-editor.md)   

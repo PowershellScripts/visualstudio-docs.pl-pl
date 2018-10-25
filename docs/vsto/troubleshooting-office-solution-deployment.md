@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bba978da26a2aa7b7263fa5d2e88fa8acdc272f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886006"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Rozwiązywanie problemów z wdrażaniem rozwiązań Office
   Ten temat zawiera informacje o tym, jak rozwiązać typowe problemy, które mogą wystąpić podczas wdrażania rozwiązań pakietu Office.  
@@ -35,11 +35,11 @@ ms.locfileid: "43774665"
 ## <a name="change-the-assembly-name-causes-conflicts"></a>Zmień nazwę zestawu powoduje, że konflikty  
  Jeśli zmienisz **nazwy zestawu** wartość w **aplikacji** strony **projektanta projektu** po zostało już wdrożone to rozwiązanie, zmodyfikuje narzędzia publikowania Pakiet instalacyjny, aby istniało jedno *Setup.exe* plików i dwa manifesty wdrożenia. Jeśli wdrożono dwa pliki manifestu, mogą wystąpić następujące warunki:  
   
--   Jeśli użytkownik końcowy instaluje obie wersje, aplikacja zostanie załadowany obu dodatków narzędzi VSTO dla programów.  
+- Jeśli użytkownik końcowy instaluje obie wersje, aplikacja zostanie załadowany obu dodatków narzędzi VSTO dla programów.  
   
--   Jeśli dodatku narzędzi VSTO została zainstalowana przed zmianą nazwy zestawu, użytkownik końcowy nigdy nie będzie otrzymywać aktualizacje.  
+- Jeśli dodatku narzędzi VSTO została zainstalowana przed zmianą nazwy zestawu, użytkownik końcowy nigdy nie będzie otrzymywać aktualizacje.  
   
- Aby uniknąć tych warunków, nie należy zmieniać tego rozwiązania **nazwy zestawu** wartość po wdrożeniu rozwiązania.  
+  Aby uniknąć tych warunków, nie należy zmieniać tego rozwiązania **nazwy zestawu** wartość po wdrożeniu rozwiązania.  
   
 ## <a name="check-for-updates-takes-a-long-time"></a>Sprawdź, czy aktualizacje zajmuje dużo czasu  
  Visual Studio 2010 Tools dla pakietu Office runtime zawiera wpis rejestru, które umożliwiają administratorom można ustawić wartość limitu czasu pobierania manifestów, jak i rozwiązania.  
@@ -63,7 +63,7 @@ ms.locfileid: "43774665"
  .NET Framework, można dodać [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]i podstawowe zestawy międzyoperacyjne pakietu Office do pakiet Instalatora jako warunki wstępne, które zostały wdrożone za pomocą rozwiązania pakietu Office. Aby uzyskać informacje o sposobie instalowania podstawowych zestawów międzyoperacyjnych, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md) i [jak: zainstalować podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 ## <a name="publish-using-localhost-can-cause-installation-problems"></a>Publikowanie za pomocą nazwy "Host_lokalny" może spowodować problemy z instalacją  
- Kiedy używać "http://localhost" jako lokalizacji publikowania lub instalacji w przypadku rozwiązań na poziomie dokumentu, **Kreatora publikacji** nie konwertuje ciąg na nazwę komputera rzeczywistych. W takim przypadku można zainstalować rozwiązania na komputerze deweloperskim. Aby wdrożonymi rozwiązaniami, które używają usług IIS na komputerze deweloperskim, należy użyć w pełni kwalifikowanej nazwy dla wszystkich lokalizacji HTTP/HTTPS/FTP zamiast nazwy localhost.  
+ Kiedy używać "<http://localhost>" jako lokalizacji publikowania lub instalacji w przypadku rozwiązań na poziomie dokumentu, **Kreatora publikacji** nie konwertuje ciąg na nazwę komputera rzeczywistych. W takim przypadku można zainstalować rozwiązania na komputerze deweloperskim. Aby wdrożonymi rozwiązaniami, które używają usług IIS na komputerze deweloperskim, należy użyć w pełni kwalifikowanej nazwy dla wszystkich lokalizacji HTTP/HTTPS/FTP zamiast nazwy localhost.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Buforowane zestawy są ładowane zamiast zaktualizowane zestawy  
  Fusion, moduł ładujący zestawu .NET Framework, ładuje pamięci podręcznej kopię zestawy ścieżki wyjściowej projektu jest w sieciowym udziale plików, zestaw zostanie podpisany silną nazwą i nie zmienia wersji zestawu dostosowywania. Jeśli aktualizujesz zestaw, który spełnia te warunki, aktualizacja nie będzie wyświetlane przy następnym uruchomieniu projektu, ponieważ kopia pamięci podręcznej jest ładowana.  
@@ -72,13 +72,13 @@ ms.locfileid: "43774665"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Aby pobrać zestawy zamiast ładowania zbuforowane kopie  
   
-1.  Na pasku menu wybierz **projektu**, _ProjectName_**właściwości**.  
+1. Na pasku menu wybierz **projektu**, _ProjectName_**właściwości**.  
   
-2.  Na **aplikacji** wybierz **informacje o zestawie**.  
+2. Na **aplikacji** wybierz **informacje o zestawie**.  
   
-3.  W pierwszym **wersji zestawu** Wprowadź znak gwiazdki (\*), a następnie wybierz **OK** przycisku.  
+3. W pierwszym **wersji zestawu** Wprowadź znak gwiazdki (\*), a następnie wybierz **OK** przycisku.  
   
- Po zmianie wersji zestawu, można kontynuować podpisać zestaw silną nazwą, a Fusion załaduje najbardziej aktualną wersję dostosowania.  
+   Po zmianie wersji zestawu, można kontynuować podpisać zestaw silną nazwą, a Fusion załaduje najbardziej aktualną wersję dostosowania.  
   
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>Instalacja kończy się niepowodzeniem, jeśli identyfikator URI zawiera znaki, które nie są US-ASCII  
  Podczas publikowania rozwiązania do pakietu Office do lokalizacji HTTP/HTTPS/FTP, ścieżka nie może zawierać dowolne znaki Unicode, których nie ma w US-ASCII. Znaki te mogą spowodować niespójne działanie Instalatora. Znaki US-ASCII ścieżki instalacji.  
@@ -91,15 +91,15 @@ ms.locfileid: "43774665"
 ## <a name="uncaught-exception-or-method-not-found-error-when-you-install-a-solution"></a>Nieprzechwycony wyjątek lub metoda nie znaleziono błąd podczas instalowania rozwiązania  
  Po zainstalowaniu rozwiązania dla pakietu Office poprzez otwarcie manifestu wdrażania ( *.vsto* pliku), mogą być wyświetlane Office aplikacji, dokument lub skoroszyt, komunikaty o błędach dla następujących warunków:  
   
--   Nie można odnaleźć metody.  
+- Nie można odnaleźć metody.  
   
--   (Wyjątek missingmethodexception).  
+- (Wyjątek missingmethodexception).  
   
--   Nieprzechwycony wyjątek.  
+- Nieprzechwycony wyjątek.  
   
- Aby uniknąć tych komunikatów o błędach, należy zainstalować rozwiązanie przez uruchomienie programu instalacyjnego.  
+  Aby uniknąć tych komunikatów o błędach, należy zainstalować rozwiązanie przez uruchomienie programu instalacyjnego.  
   
- Po zainstalowaniu rozwiązania bez konieczności uruchamiania programu instalacyjnego Instalatora nie sprawdzaj lub instalowanie wymagań wstępnych. Program instalacyjny sprawdza, czy poprawną wersję wymagań wstępnych i instaluje je w razie potrzeby.  
+  Po zainstalowaniu rozwiązania bez konieczności uruchamiania programu instalacyjnego Instalatora nie sprawdzaj lub instalowanie wymagań wstępnych. Program instalacyjny sprawdza, czy poprawną wersję wymagań wstępnych i instaluje je w razie potrzeby.  
   
 ## <a name="manifest-registry-keys-for-add-ins-change-after-an-installshield-limited-edition-project-is-built"></a>Manifest kluczy rejestru dla dodatków zmian, po utworzeniu projektu programu InstallShield Limited Edition  
  Klucz rejestru manifestu, który jest częścią konfiguracji dodatku narzędzi VSTO dla programów czasami zmian z *.vsto* do *. dll.manifest* podczas kompilowania projektu programu InstallShield Limited Edition.  

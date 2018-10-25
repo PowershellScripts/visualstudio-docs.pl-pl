@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2da464c82332f6fc4f9bcd57ee8197e111e9fa0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bc769e7386777dbf59dadbbe93b53bc9cac01ce0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116633"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875869"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
-Ta metoda jawnie wyłącza Edytuj i Kontynuuj w tym procesie (i zawiera wszystkie programy). Dostawcy niestandardowego numeru portu należy zawsze zwracają `E_NOTIMPL`.  
+Ta metoda jawnie wyłącza Edytuj i Kontynuuj na temat tego procesu (i wszystkie programy zawiera). Dostawcy niestandardowego portu powinna zawsze zwracać `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,13 +43,13 @@ HRESULT DisableENC(
  [in] Wartość z zakresu od [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) wyliczenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 > [!NOTE]
->  Dostawcy niestandardowego numeru portu należy zawsze zwracają `E_NOTIMPL`.  
+>  Dostawcy niestandardowego portu powinna zawsze zwracać `E_NOTIMPL`.  
   
 ## <a name="remarks"></a>Uwagi  
- Raz Edytuj i Kontynuuj jest wyłączona dla procesu, można ją ponownie włączyć tylko podczas uruchamiania procesu.  
+ Raz Edytuj i Kontynuuj jest wyłączona dla procesu, można ją ponownie włączyć tylko przez ponowne uruchomienie procesu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

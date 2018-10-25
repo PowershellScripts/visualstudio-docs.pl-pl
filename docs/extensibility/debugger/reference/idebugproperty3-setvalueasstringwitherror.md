@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9379d474f135c5d6bbe82fd3391e7e4d8241f1b9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5f747185dd696f6d70cc4c514f54eaddef5bfa7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119724"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864443"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
-Ustawia wartość tej właściwości i zwraca komunikat o błędzie w razie potrzeby.  
+Ustawia wartość tej właściwości i zwraca komunikat o błędzie, jeśli to konieczne.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -50,22 +50,22 @@ int SetValueAsStringWithError(
  [in] Wartość do ustawienia.  
   
  `dwRadix`  
- [in] Podstawa ustawienie wartości.  
+ [in] Podstawa jest ustawiona wartość.  
   
  `dwTimeout`  
- [in] Czas oczekiwania na ustawienie wartości (`INFINITE` oznacza czekają).  
+ [in] Czas oczekiwania na ustawienie wartości (`INFINITE` oznacza, że czekać w nieskończoność).  
   
  `errorString`  
- [out] Jeśli wystąpił błąd podczas ustawiania wartości, to dysponuje przyczynę błędu.  
+ [out] Jeśli wystąpił błąd podczas ustawiania wartości, to zawiera przyczynę niepowodzenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Przychodzące może to być wyrażenie do obliczenia.  
+ Przychodzące może to być wyrażenie ma zostać obliczone.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CProperty** obiekt ujawniający [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CProperty** obiekt ujawniający [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfejsu.  
   
 ```cpp  
 HRESULT CProperty::SetValueAsStringWithError(   

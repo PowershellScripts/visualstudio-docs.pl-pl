@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c506d0e82bd1c71431ae766be636db35d96debd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243922"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831006"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Porady: kompilacja tych samych plików źródłowych przy użyciu różnych opcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,23 +75,23 @@ Podczas kompilowania projektów kompilacji są często te same składniki z opcj
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>Aby określić więcej niż jednej właściwości projektu w wierszu polecenia  
   
--   Użyj **/property** lub **/p** przełącznika wiele razy przy użyciu właściwości i wartości właściwości lub użyć jednego **/property** lub **/p** przełącznika i wiele właściwości należy oddzielić średnikami (;). Na przykład:  
+- Użyj **/property** lub **/p** przełącznika wiele razy przy użyciu właściwości i wartości właściwości lub użyć jednego **/property** lub **/p** przełącznika i wiele właściwości należy oddzielić średnikami (;). Na przykład:  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug;Platform=x86  
+  ```  
   
-     - or-  
+   - or-  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
+  ```  
   
- Zmienne środowiskowe są także traktowane jako właściwości i są automatycznie włączone przez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Aby uzyskać więcej informacji na temat używania zmiennych środowiskowych, zobacz [porady: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Zmienne środowiskowe są także traktowane jako właściwości i są automatycznie włączone przez [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Aby uzyskać więcej informacji na temat używania zmiennych środowiskowych, zobacz [porady: Użycie zmiennych środowiskowych w kompilacji](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
- Wartość właściwości, która jest określona w wierszu polecenia mają pierwszeństwo przed wszystkie wartości, który jest skonfigurowany dla tej samej właściwości w pliku projektu, a wartość w pliku projektu mają pierwszeństwo przed wartość w zmiennej środowiskowej.  
+  Wartość właściwości, która jest określona w wierszu polecenia mają pierwszeństwo przed wszystkie wartości, który jest skonfigurowany dla tej samej właściwości w pliku projektu, a wartość w pliku projektu mają pierwszeństwo przed wartość w zmiennej środowiskowej.  
   
- To zachowanie można zmienić za pomocą `TreatAsLocalProperty` atrybutów w znaczniku projektu. Dla nazwy właściwości, które są wyświetlane z tego atrybutu wartość właściwości, która jest określona w wierszu polecenia nie pierwszeństwo przed wartością w pliku projektu. Przykład można znaleźć w dalszej części tego tematu.  
+  To zachowanie można zmienić za pomocą `TreatAsLocalProperty` atrybutów w znaczniku projektu. Dla nazwy właściwości, które są wyświetlane z tego atrybutu wartość właściwości, która jest określona w wierszu polecenia nie pierwszeństwo przed wartością w pliku projektu. Przykład można znaleźć w dalszej części tego tematu.  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład kodu, projekt "Hello World" zawiera dwie nowe grupy właściwości, które mogą służyć do tworzenia kompilacji debugowania i kompilacji wydania.  

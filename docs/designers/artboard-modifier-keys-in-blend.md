@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35699d765a8d01e212fe02257da2aa83e245ecd4
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: 88d7dd7f6fe09acd77ee37ca473fbd5290be6ee1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890191"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861114"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Klawisze modyfikujące obszar kompozycji w programie Blend
 Niektóre skróty klawiaturowe nie są skojarzone elementy menu, co oznacza, że nie używasz [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] interfejsu użytkownika do ich wykrycie. W poniższej tabeli wymieniono skróty, które modyfikują akcji, takich jak zmiana rozmiaru obiektu.
 
 |Do tej czynności|Zrób to|
-|-----------------------|-------------|
+| - |-------------|
 |Wybierz tymczasowo **wybór** narzędzia, podczas gdy inne narzędzie pozostaje wybrane (zmniejsza to liczbę razy, należy kliknąć element **narzędzia** panelu, przechodząc do i z powrotem między  **Wybór** narzędzia i innych użytkowników)|Naciśnij i przytrzymaj **Ctrl**|
 |Posuń zaznaczone obiekty podczas **wybór** wybrane narzędzie|Naciśnij klawisze strzałek|
 |Przesuwanie obszaru kompozycji|Naciśnij i przytrzymaj **spacja** i przeciągnij obszaru kompozycji|
@@ -45,4 +45,4 @@ Niektóre skróty klawiaturowe nie są skojarzone elementy menu, co oznacza, że
 
 - [Skróty klawiaturowe](../designers/keyboard-shortcuts-in-blend.md)
 - [Klawisze modyfikujące pióro](../designers/pen-tool-modifier-keys-in-blend.md)
-- [Klawisze modyfikujące narzędzie Zaznaczanie bezpośrednie](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Klawisze modyfikujące narzędzia Wybór bezpośredni](../designers/direct-selection-tool-modifier-keys-in-blend.md)

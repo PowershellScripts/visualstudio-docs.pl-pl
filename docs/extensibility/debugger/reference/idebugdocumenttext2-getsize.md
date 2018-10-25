@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe37c7157f96a905e52fb6656d5ebb8ff6f4971a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c62ca1695de65b005fa839c69cbcc02452f1207
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105622"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819670"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 Pobiera rozmiar tekstu, w tym miejscu w dokumencie.  
@@ -49,12 +49,12 @@ int GetSize(
  [out] Zwraca liczbę znaków tekstu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- [Tylko C++] Jeśli konkretną wartość nie jest wymagana, należy przekazać wartość NULL dla parametru.  
+ [Tylko w języku C++] Jeśli określonej wartości nie jest wymagana, należy przekazać wartość NULL dla parametru.  
   
- [C# tylko] Oba parametry muszą być określone.  
+ [Tylko język C#] Oba parametry muszą być określone.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

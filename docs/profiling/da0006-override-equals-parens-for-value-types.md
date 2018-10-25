@@ -1,5 +1,5 @@
 ---
-title: 'DA0006: Zastąp metodę Equals typami wartości | Dokumentacja firmy Microsoft'
+title: 'DA0006: Przesłoń metody Equals() dla typów wartości | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,29 +15,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5e0d79b164c521bd3e0da53738d49451ff2a7af
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3ab011487f33438091eb963c9ea4a7e1d1c80ec4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749986"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856278"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Przesłoń metodę equals typami wartości
+
 |||  
 |-|-|  
 |Identyfikator reguły|DA0006|  
 |Kategoria|Sposób użycia programu .NET framework|  
-|Metody Profiiling|Pobierania próbek|  
-|Komunikat|Przesłoń metodę Equals i operator równości w typach wartości.|  
+|Metody Profiiling|Próbkowania|  
+|Komunikat|Przesłoń metodę Equals i operator równości dla typów wartości.|  
 |Typ Messge|Ostrzeżenie|  
-  
+
 ## <a name="cause"></a>Przyczyna  
- Wywołania do metody Equals i operatory równości typu publicznego wartości są znaczna część danych profilowania. Rozważ zaimplementowanie bardziej efektywną metodą.  
-  
+ Wywołania do metody Equals i operatory równości typu publicznego wartości są znaczna część danych profilowania. Rozważ zaimplementowanie bardziej efektywną metodę.  
+
 ## <a name="rule-description"></a>Opis reguły  
- Dla typów wartości używa dziedziczone wykonania Equals <xref:System.Reflection> biblioteki i porównuje wartości wszystkich pól w typie. Odbicie jest obliczeniowo kosztowne, a porównanie równości każdego pola może być niepotrzebne. Jeśli użytkownicy do porównywania lub sortowanie wystąpień lub używać ich jako tabeli klawiszy skrótów, danego typu wartości powinny implementować równości. Jeśli język programowania obsługuje przeciążania operatorów, należy również zapewniać implementację elementu Operatory równości i nierówności.  
-  
- Aby uzyskać więcej informacji o sposobie Przesłoń metodę Equals i operatory równości, zobacz [wskazówki dotyczące implementowania metodę Equals i Operator równości (==)](http://go.microsoft.com/fwlink/?LinkId=177818).  
-  
+ Dla typów wartości dziedziczona implementacja operatora Equas wykorzystuje <xref:System.Reflection> biblioteki i porównuje zawartość wszystkich pól w typie. Odbicie jest obliczeniowo kosztowne, a porównanie równości każdego pola może być niepotrzebne. Jeśli oczekujesz, że użytkownicy będą porównywać lub sortować wystąpienia lub używać ich jako tabel haszowanych, typ wartości powinien implementować Equals. Jeśli język programowania obsługuje przeładowania operatora, należy również podać implementacja Operatory równości i nierówności.  
+
+ Aby uzyskać więcej informacji na temat Przesłoń metodę Equals i operatory porównania, zobacz [wytyczne dotyczące implementowania Equals i Operator równości (==)](http://go.microsoft.com/fwlink/?LinkId=177818).  
+
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
- Na przykład wykonawczych Equals i operatory równości, zobacz reguł analizy kodu [CA1815: Przesłoń metodę equals i operator równości dla typów wartości](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)
+ Na przykład implementacji Equals i operatory porównania, zobacz reguł analizy kodu [CA1815: Przesłoń metodę equals i operator równości dla typów wartości](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)

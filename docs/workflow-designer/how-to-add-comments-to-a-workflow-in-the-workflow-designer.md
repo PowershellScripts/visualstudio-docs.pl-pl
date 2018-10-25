@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0555968f67d804060437df272927aa3ee89c730c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 43b17390f077238a6874784f186eb8add3819f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883308"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Porady: dodawanie komentarzy do przepływu pracy w Projektancie przepływu pracy
 
@@ -49,13 +49,13 @@ W celu ułatwienia tworzenia większych i bardziej skomplikowanych przepływów 
 
 ## <a name="displaying-an-annotation-in-an-activitys-designer"></a>Wyświetlanie adnotacji w Projektant działań
 
-1.  Za pomocą projektanta działań, który ma wyświetlanie adnotacji poza działania, kliknij przycisk **numeru Pin** ikonę adnotacja moduł definiowania układu.
+1. Za pomocą projektanta działań, który ma wyświetlanie adnotacji poza działania, kliknij przycisk **numeru Pin** ikonę adnotacja moduł definiowania układu.
 
    Adnotacja jest wyświetlany w Projektancie tego działania. Na poniższym zrzucie ekranu adnotacji "Uruchamianie działanie w przepływie pracy" jest wyświetlany w Projektancie tego działania.
 
    ![Adnotacja objętego Projektant działań](../workflow-designer/media/annotationindesigner.png)
 
-1. Aby wyświetlić adnotacji poza projektanta działań, umieść kursor nad obszarem adnotacji w Projektancie działań, a następnie kliknij przycisk **Wypisz** ikony
+2. Aby wyświetlić adnotacji poza projektanta działań, umieść kursor nad obszarem adnotacji w Projektancie działań, a następnie kliknij przycisk **Wypisz** ikony
 
    ![Adnotacja wyświetlane poza Projektant działań](../workflow-designer/media/annotationoutsidedesigner.png)
 

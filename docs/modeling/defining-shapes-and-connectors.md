@@ -9,39 +9,39 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: db80cada3f49c8ba6488af31f399373457017c18
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 48000bbf05fd15163c0c6f61ff4a13838aaf75b6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949426"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881745"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definiowanie kształtów i łączników
-Istnieje kilka typów podstawowych kształtów, które mogą być używane do wyświetlania informacji na diagramie języka specyficznego dla domeny (DSL).
+Istnieje kilka typów podstawowych kształtów, które mogą być używane do wyświetlania informacji na diagramie w języku specyficznym dla domeny (DSL).
 
-##  <a name="shapeTypes"></a> Podstawowe typy łączników i kształtów
- DSL diagram zawiera zbiór *kształtów* powiązane liniami lub *łączniki*.  Zwykle, ale nie zawsze:
+##  <a name="shapeTypes"></a> Podstawowe typy kształtów i łączników
+ DSL diagram zawiera zbiór *kształty* powiązane liniami lub *łączników*.  Zwykle, ale nie zawsze:
 
--   Kształty są widoczne reprezentację elementy modelu.
+- Kształty są widoczne reprezentacja elementów modelu.
 
--   Łączniki reprezentowania relacji odwołania.
+- Łączniki reprezentują relacje odniesienia.
 
--   Diagram reprezentuje wystąpienie katalogu głównego modelu.
+- Diagram przedstawia wystąpienie katalogu głównego modelu.
 
--   Osadzanie relacji między elementami modelu są wyświetlane przez relację zawierania. Na przykład elementy reprezentujące porty składnika są osadzone w składniku.
+- Osadzanie relacje między elementami modelu są wyświetlane przez relację zawierania. Na przykład elementów reprezentujących porty składnika są osadzone w składniku.
 
- Te wzorce nie są wymuszane, ale więcej silnie są obsługiwane. Podczas projektowania DSL przy tym pamiętać, że projekt osadzania relacje powinny być wpływ jak mają być przedstawiane modelu na ekranie. Z kolei relacji odwołania powinien odzwierciedlać pojęcia domeny biznesowych.
+  Te wzorce nie są wymuszane, ale mocno są obsługiwane. Podczas projektowania DSL ponosi należy pamiętać, że projekt relacji osadzania powinien być wpływ, jaki chcesz przedstawić modelu na ekranie. Z drugiej strony relacje odniesienia powinien odzwierciedlać pojęcia domeny biznesowej.
 
- Dostępne są następujące typy kształtów:
+  Dostępne są następujące typy kształtów:
 
 |Typ kształtu|Opis|
-|----------------|-----------------|
-|Geometria kształtu|Kształt prostokątny lub eliptycznej ogólnego przeznaczenia. Tekst i ikona elementów decorator można wyświetlić w określonych pozycji względem granic kształtu.<br /><br /> Aby zagnieździć kształtów wewnątrz kształtów geometry, zobacz [zagnieżdżania kształtów](../modeling/nesting-shapes.md).|
-|Przedział kształtu|Prostokąt zawierająca nagłówek i działów, podobnie jak klasa UML. Każdego przedziału może zawierać listę wierszy tekstu.<br /><br /> Wiersze zwykle odpowiadają za elementy osadzone w elemencie reprezentowany przez kształtu. Na przykład utwórz DSL na podstawie diagramów klas szablon rozwiązania.|
-|Kształt obrazu|Kształt, który wyświetla obraz.|
-|Port kształtu|Mały prostokąt przeznaczone do dołączenia do konturu innego kształtu. Zwykle używanych w modelach składnika.<br /><br /> Element modelu reprezentowanego przez port zwykle jest osadzony w elemencie reprezentowany przez kształtu nadrzędnego. Na przykład utworzyć DSL przy użyciu składników szablon rozwiązania.<br /><br /> Domyślnie kształt portu można przesunąć wzdłuż krawędzi jego elementu nadrzędnego. Można zdefiniować zasadę granice, aby ograniczyć go do określonej pozycji.<br /><br /> Bardzo małe i przezroczysty, co kształt portu, można użyć go zapewnienie punktu połączenia stałej powierzchni jego kształtu nadrzędnego.|
-|Ścieżek|Ścieżek partycji diagramu na segmenty pozioma lub pionowa. Tor zawsze pozostaje poniżej innych kształtów na diagramie.<br /><br /> Zazwyczaj elementem nadrzędnym elementy modelu tor w modelu głównym, a inne elementy są elementem nadrzędnym na nich. Na przykład utworzyć DSL na podstawie szablonu rozwiązania przepływ zadań.|
-|Łączniki|Linii między kształtami zazwyczaj reprezentuje relacji odwołania. Można ustawić opcje Tworzenie łącznika prostej lub prostoliniowego i mają różne typy grot strzałki.|
+|-|-|
+|Kształt geometryczny|Kształt prostokątne lub eliptycznego ogólnego przeznaczenia. Możesz wyświetlić tekst i ikona dekoratory w określonym położeniu względem granic kształtu.<br /><br /> Aby zagnieździć kształty wewnątrz kształtów geometrycznych, zobacz [zagnieżdżanie kształtów](../modeling/nesting-shapes.md).|
+|Kształt przedziału|Prostokąt zawierający nagłówek i przedziały, takich jak klasy UML. Każdego przedziału może zawierać listę wierszy tekstu.<br /><br /> Wiersze reprezentują zazwyczaj elementy osadzone w elemencie reprezentowany przez kształt. Na przykład utworzyć DSL za pomocą szablonu rozwiązania diagramów klas.|
+|Kształt obrazu|Kształt wyświetlający obraz.|
+|Kształt portu|Niewielki prostokąt przeznaczone do dołączenia do konturu innego kształtu. Zazwyczaj używane w modelach składnika.<br /><br /> Element modelu reprezentowanego przez port jest zwykle osadzona w element reprezentowany przez kształtu nadrzędnego. Na przykład utworzyć DSL za pomocą szablonu rozwiązania składniki.<br /><br /> Domyślnie kształt portu można przesunąć wzdłuż boków jego obiektu nadrzędnego. Można zdefiniować zasadę granice, aby ograniczyć go do określonej pozycji.<br /><br /> Tworząc kształt portu bardzo małe i przejrzystości, umożliwia on stanowią punkt połączenia stałej powierzchni z boku jego kształtu nadrzędnego.|
+|Torów|Tory podzielić diagramu na poziomą lub pionową segmentów. Tor zawsze pozostaje poniżej innych kształtów na diagramie.<br /><br /> Zazwyczaj elementy modelu toru są elementem nadrzędnym w katalogu głównym modelu i inne elementy są elementem nadrzędnym na nich. Na przykład utworzyć DSL za pomocą szablonu rozwiązania przepływu zadań.|
+|Łączniki|Linii między kształtami zazwyczaj reprezentują relacje odniesienia. Można ustawić opcje, aby bezpośrednio lub prostoliniowego łącznika i mają różne typy grot strzałki.|
 
-##  <a name="shapeInheritance"></a> Dziedziczenie kształtu
- Kształt może dziedziczyć z innego kształtu. Jednak kształty muszą być tego samego rodzaju. Na przykład kształt geometrii może dziedziczyć geometrii kształtu. Kształty dziedziczone mają przedziałów i dekoratory ich kształtu podstawowego. Łączniki mogą dziedziczyć łączników.
+##  <a name="shapeInheritance"></a> Kształt dziedziczenia
+ Kształt może dziedziczyć z innego kształtu. Jednak kształty muszą być tego samego rodzaju. Na przykład kształt geometryczny może dziedziczyć kształt geometryczny. Kształty dziedziczone mają przedziały i dekoratory ich kształtu podstawowego. Łączniki mogą dziedziczyć łączników.

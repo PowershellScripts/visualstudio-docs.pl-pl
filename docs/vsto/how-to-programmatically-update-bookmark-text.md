@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aa4c2f37efe92bfbc3c06e0bc8f0657b1205652a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: efa56c94e211a40e314025ae06d263164de1afd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833021"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Porady: programowane Aktualizowanie tekstu zakładki
   Tak, aby przywrócić tekst w późniejszym czasie lub zastępowanie tekstu w zakładce, można wstawić tekst do symbolu zastępczego zakładki w dokumencie programu Microsoft Office Word. Jeśli tworzysz dostosowywania poziomie dokumentu, ale też aktualizować tekstu w <xref:Microsoft.Office.Tools.Word.Bookmark> formant, który jest powiązany z danymi. Aby uzyskać więcej informacji, zobacz [wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
@@ -31,15 +31,15 @@ ms.locfileid: "35676214"
   
  Może to być jeden z dwóch typów obiektu zakładkę:  
   
--   A <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki hosta.  
+- A <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki hosta.  
   
-     <xref:Microsoft.Office.Tools.Word.Bookmark> Formanty rozszerzać macierzysty <xref:Microsoft.Office.Interop.Word.Bookmark> obiektów po włączeniu powiązanie danych oraz udostępnianie zdarzeń. Aby uzyskać więcej informacji na temat formantów hosta zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).  
+   <xref:Microsoft.Office.Tools.Word.Bookmark> Formanty rozszerzać macierzysty <xref:Microsoft.Office.Interop.Word.Bookmark> obiektów po włączeniu powiązanie danych oraz udostępnianie zdarzeń. Aby uzyskać więcej informacji na temat formantów hosta zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).  
   
--   Natywny <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu.  
+- Natywny <xref:Microsoft.Office.Interop.Word.Bookmark> obiektu.  
   
-     <xref:Microsoft.Office.Interop.Word.Bookmark> obiekty nie mają możliwości wiązania zdarzenia lub dane.  
+   <xref:Microsoft.Office.Interop.Word.Bookmark> obiekty nie mają możliwości wiązania zdarzenia lub dane.  
   
- Po przypisaniu tekstu do zakładki zachowanie różni się między <xref:Microsoft.Office.Interop.Word.Bookmark> i <xref:Microsoft.Office.Tools.Word.Bookmark>. Aby uzyskać więcej informacji, zobacz [Bookmark, formant](../vsto/bookmark-control.md).  
+  Po przypisaniu tekstu do zakładki zachowanie różni się między <xref:Microsoft.Office.Interop.Word.Bookmark> i <xref:Microsoft.Office.Tools.Word.Bookmark>. Aby uzyskać więcej informacji, zobacz [Bookmark, formant](../vsto/bookmark-control.md).  
   
 ## <a name="use-host-controls"></a>Użyj kontrolek hosta  
   

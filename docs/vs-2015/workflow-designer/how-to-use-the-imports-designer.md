@@ -14,25 +14,25 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 776fbd9ba58268adb16957c732b96a7c8303b213
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cf0ece10310b82cd958ff528fc06f36ed1b709d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278385"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875504"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Porady: Używanie projektanta importów
 Projektanta importów umożliwia wprowadzanie przestrzeni nazw dla typów, które będą używane w wyrażenia. Podobnie jak **importuje** lub **przy użyciu** słów kluczowych w języku Visual Basic .NET i języka C#, określania przestrzeni nazw w projektanta importów umożliwiają wystarczy wprowadzić nazwę typu w wyrażeniu, a nie w pełni kwalifikowanej Nazwa typu wersji.  
   
  Projektanta importów reaguje na zmiany w interfejsie użytkownika i zmian wprowadzonych po zapisaniu przepływu pracy. Po zapisaniu przepływu pracy, przestrzenie nazw mogą być dodawane automatycznie do projektanta importów. Należą do nich między innymi:  
   
--   Przestrzenie nazw wszystkie typy używane w deklaracji zmiennej i argument.  
+- Przestrzenie nazw wszystkie typy używane w deklaracji zmiennej i argument.  
   
--   Przestrzenie nazw wszystkie typy używane w wyrażeniach.  
+- Przestrzenie nazw wszystkie typy używane w wyrażeniach.  
   
--   Wszystkie inne obszary nazw wymagane dla serializacji przepływu pracy (na przykład, przestrzeń nazw używaną przez niestandardowe działania w przepływie pracy).  
+- Wszystkie inne obszary nazw wymagane dla serializacji przepływu pracy (na przykład, przestrzeń nazw używaną przez niestandardowe działania w przepływie pracy).  
   
- Po zapisaniu przepływu pracy może się okazać, że niektóre przestrzenie nazw, który został ręcznie usunięty są automatycznie ponownie dodać do projektanta importów z powodu logiki opisane na powyższej liście.  
+  Po zapisaniu przepływu pracy może się okazać, że niektóre przestrzenie nazw, który został ręcznie usunięty są automatycznie ponownie dodać do projektanta importów z powodu logiki opisane na powyższej liście.  
   
 ### <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Aby dodać przestrzeń nazw do listy importowanych przestrzeni nazw  
   

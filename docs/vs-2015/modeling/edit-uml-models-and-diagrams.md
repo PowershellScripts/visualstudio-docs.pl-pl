@@ -24,12 +24,12 @@ caps.latest.revision: 86
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 52d83911da0f8c1a54618a389db3cff6bbcbab1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fafbccdae03c604e4d9b150b5745a75792833681
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245828"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834581"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Edytowanie modeli i diagramów UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,22 +77,22 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
   
 ##  <a name="Creating"></a> Tworzenie diagramów modelowania UML  
   
-1.  Na **architektury** menu w programie Visual Studio, kliknij **nowe UML lub diagramu warstwowego**.  
+1. Na **architektury** menu w programie Visual Studio, kliknij **nowe UML lub diagramu warstwowego**.  
   
-2.  Wybierz, a nazwa diagramu.  
+2. Wybierz, a nazwa diagramu.  
   
-3.  W **Dodaj do projektu modelowania**, wybierz istniejący projekt modelowania lub **Utwórz nowy projekt modelowania**.  
+3. W **Dodaj do projektu modelowania**, wybierz istniejący projekt modelowania lub **Utwórz nowy projekt modelowania**.  
   
-    > [!NOTE]
-    >  Na diagramie modelowania, musi istnieć w projekcie modelowania.  
+   > [!NOTE]
+   >  Na diagramie modelowania, musi istnieć w projekcie modelowania.  
   
- Diagram można również dodać do istniejącego projektu modelowania w Eksploratorze rozwiązań. Kliknij prawym przyciskiem myszy projekt modelowania, wskaż opcję **Dodaj**, a następnie kliknij przycisk **nowy element**.  
+   Diagram można również dodać do istniejącego projektu modelowania w Eksploratorze rozwiązań. Kliknij prawym przyciskiem myszy projekt modelowania, wskaż opcję **Dodaj**, a następnie kliknij przycisk **nowy element**.  
   
 #### <a name="to-create-an-empty-uml-modeling-project"></a>Aby utworzyć pusty projekt modelowania UML  
   
--   Na **pliku** menu, wskaż **nowy**, kliknij przycisk **projektu**, a następnie w **nowy projekt** okno dialogowe, kliknij dwukrotnie **modelowania Projekty**.  
+- Na **pliku** menu, wskaż **nowy**, kliknij przycisk **projektu**, a następnie w **nowy projekt** okno dialogowe, kliknij dwukrotnie **modelowania Projekty**.  
   
- Aby uzyskać więcej informacji o sposobie zarządzania projektów modelowania, zobacz [UML tworzenie projektów i diagramów modelowania](../modeling/create-uml-modeling-projects-and-diagrams.md).  
+  Aby uzyskać więcej informacji o sposobie zarządzania projektów modelowania, zobacz [UML tworzenie projektów i diagramów modelowania](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 ##  <a name="Drawing"></a> Rysowanie diagramów modelowania UML  
  Kolekcja elementów modelu połączonego przez zastosowanie relacji są wyświetlane na diagramie modelowania. Każdy element jest wyświetlana jako kształt, a każda relacja jest wyświetlana jako łącznik między dwoma kształtami.  
@@ -104,21 +104,21 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
   
 #### <a name="to-create-elements-and-relationships-in-a-uml-modeling-diagram"></a>Aby utworzyć elementów i relacji na diagramie modelowania UML  
   
-1.  Aby utworzyć element modelu, kliknij narzędzie elementu w przyborniku, a następnie kliknij przycisk diagram, w której ma się pojawić. Po utworzeniu elementu dostosować jego rozmiar i kształt, przeciągając uchwyty.  
+1. Aby utworzyć element modelu, kliknij narzędzie elementu w przyborniku, a następnie kliknij przycisk diagram, w której ma się pojawić. Po utworzeniu elementu dostosować jego rozmiar i kształt, przeciągając uchwyty.  
   
-     W niektórych przypadkach można umieścić nowy element wewnątrz innego elementu. Na przykład na diagramie klas UML, można umieścić klasy w pakiecie.  
+    W niektórych przypadkach można umieścić nowy element wewnątrz innego elementu. Na przykład na diagramie klas UML, można umieścić klasy w pakiecie.  
   
-    > [!NOTE]
-    >  Jeśli przybornik jest niewidoczny, kliknij przycisk **przybornika** na **widoku** menu.  
+   > [!NOTE]
+   >  Jeśli przybornik jest niewidoczny, kliknij przycisk **przybornika** na **widoku** menu.  
   
-2.  Można utworzyć relacji, kliknij narzędzie relację, kliknij element, którego relacji, aby rozpocząć, a następnie kliknij element, gdzie ma się zakończyć.  
+2. Można utworzyć relacji, kliknij narzędzie relację, kliknij element, którego relacji, aby rozpocząć, a następnie kliknij element, gdzie ma się zakończyć.  
   
-     Różne typy relacji mogą początku ani na końcu na różnych typach elementów. Na diagramie klas UML, relacja skojarzenia nie może na przykład uruchomić ani kończyć się w elemencie komentarz.  
+    Różne typy relacji mogą początku ani na końcu na różnych typach elementów. Na diagramie klas UML, relacja skojarzenia nie może na przykład uruchomić ani kończyć się w elemencie komentarz.  
   
-    > [!NOTE]
-    >  Aby użyć tego samego narzędzia kilka razy, kliknij dwukrotnie narzędzie. Po zakończeniu kliknij przycisk **wskaźnik** narzędzia.  
+   > [!NOTE]
+   >  Aby użyć tego samego narzędzia kilka razy, kliknij dwukrotnie narzędzie. Po zakończeniu kliknij przycisk **wskaźnik** narzędzia.  
   
- Na niektóre rodzaje diagramów można rysować kształty proste. Kształty te nie są częścią modelu, ale można je zwrócić uwagę czytelnika na części diagramu lub podziel go na różnych obszarach.  
+   Na niektóre rodzaje diagramów można rysować kształty proste. Kształty te nie są częścią modelu, ale można je zwrócić uwagę czytelnika na części diagramu lub podziel go na różnych obszarach.  
   
 ##  <a name="Editing"></a> Edytowanie kształtów i łączników  
  Podczas zmiany rozmiaru lub kolor kształtu lub przekierowywanie łącznika nie ma żadnego wpływu na odpowiedni model. Jednak po użytkownik zmieni nazwę kształtu na diagramie lub w Eksploratorze modelu UML, odpowiadający mu element jest zmieniana w Eksploratorze modelu UML i inne diagramy, które są dostępne z tego elementu.  
@@ -139,17 +139,17 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
   
 #### <a name="to-move-one-end-of-a-connector-to-another-shape"></a>Aby przenieść jednym końcu łącznika do innego kształtu  
   
-1.  Wykonaj jedną z następujących czynności:  
+1. Wykonaj jedną z następujących czynności:  
   
-    -   Naciśnij klawisz **CTRL** i Przenieś na koniec.  
+   - Naciśnij klawisz **CTRL** i Przenieś na koniec.  
   
      \- lub —  
   
-    -   Kliknij prawym przyciskiem myszy łącznik, a następnie kliknij przycisk **Reconnect**.  
+   - Kliknij prawym przyciskiem myszy łącznik, a następnie kliknij przycisk **Reconnect**.  
   
-2.  Kliknij na końcu łącznika którego chcesz przenieść.  
+2. Kliknij na końcu łącznika którego chcesz przenieść.  
   
-3.  Kliknij kształt, którego chcesz, aby łącznik aby przejść do.  
+3. Kliknij kształt, którego chcesz, aby łącznik aby przejść do.  
   
 #### <a name="to-change-color-or-other-properties-of-an-element-relationship-or-diagram"></a>Zmień kolor lub innych właściwości elementu, relacji lub diagram  
   
@@ -267,11 +267,11 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
   
 #### <a name="to-copy-an-entire-diagram"></a>Aby skopiować cały diagram  
   
-1.  Utwórz nowy diagram.  
+1. Utwórz nowy diagram.  
   
-2.  Wybierz wszystkie elementy na diagramie istniejących, skopiuj je i wklej je do nowego.  
+2. Wybierz wszystkie elementy na diagramie istniejących, skopiuj je i wklej je do nowego.  
   
- Nie można replikować diagramu przez kopiowanie i wklejanie w Eksploratorze rozwiązań.  
+   Nie można replikować diagramu przez kopiowanie i wklejanie w Eksploratorze rozwiązań.  
   
 ##  <a name="Deleting"></a> Usuwanie elementu modelu lub jego widoków  
  Niektóre rodzaje elementów, w szczególności klasyfikatorów, można usunąć z diagramu bez ich usuwania z modelu. Klasyfikatorów są elementy główne, które są wyświetlane na diagramach, diagramy składników i diagramy przypadków użycia. Może się pojawić na więcej niż jednym diagramie. W przypadku tych typów elementów, istnieją dwa osobne polecenia: **Usuń z diagramu** i **usunięte z modelu**.  
@@ -283,15 +283,15 @@ Można tworzyć i edytować modelu UML za pomocą widoków, dostarczone przez r�
   
 #### <a name="to-remove-a-classifiers-view-from-a-diagram"></a>Aby usunąć widok klasyfikatora z diagramu  
   
--   Kliknij prawym przyciskiem myszy element na diagramie, a następnie kliknij przycisk **Usuń z diagramu**.  
+- Kliknij prawym przyciskiem myszy element na diagramie, a następnie kliknij przycisk **Usuń z diagramu**.  
   
- \- lub —  
+  \- lub —  
   
--   Kliknij element na diagramie, a następnie naciśnij klawisz **Usuń** klucza.  
+- Kliknij element na diagramie, a następnie naciśnij klawisz **Usuń** klucza.  
   
-    -   Ten widok elementu znika. Jednak element pozostaje w modelu i nadal można znaleźć w **Eksploratora modelu UML**. Inne widoki, tego samego elementu też pozostać.  
+  -   Ten widok elementu znika. Jednak element pozostaje w modelu i nadal można znaleźć w **Eksploratora modelu UML**. Inne widoki, tego samego elementu też pozostać.  
   
-    -   Każdy łącznik, który kończy się na ten kształt zostanie usunięty z diagramu, ale relacji reprezentuje pozostaje w modelu. Możesz zobaczyć relację w **Eksploratora modelu UML** w obszarze **relacje**, w ramach każdego elementu, który nawiązuje połączenie.  
+  -   Każdy łącznik, który kończy się na ten kształt zostanie usunięty z diagramu, ale relacji reprezentuje pozostaje w modelu. Możesz zobaczyć relację w **Eksploratora modelu UML** w obszarze **relacje**, w ramach każdego elementu, który nawiązuje połączenie.  
   
 #### <a name="to-delete-an-element-from-the-model"></a>Aby usunąć element z modelu  
   

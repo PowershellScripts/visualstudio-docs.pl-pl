@@ -1,5 +1,5 @@
 ---
-title: Natywny środowiska wykonawczego sprawdza dostosowania | Dokumentacja firmy Microsoft
+title: Natywne środowiska wykonawczego sprawdza dostosowywania | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,39 +24,39 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f07e2e2258190196ee001a19d79989ee58239ff
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b6df61b1e0fde088fca87fa7a99f5590768889b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480905"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853932"
 ---
 # <a name="native-run-time-checks-customization"></a>Dostosowanie macierzystego sprawdzania w trakcie wykonywania
-Podczas kompilacji z **/RTC** (sprawdzania w trakcie wykonywania) lub użyj `runtime_checks` pragma, biblioteki wykonawczej języka C zapewnia macierzystego sprawdzania w trakcie wykonywania. W niektórych przypadkach można dostosować sprawdzanie czasu wykonywania:  
+Podczas kompilacji z **usunęliśmy** (kontrole czasu wykonywania) lub użyj `runtime_checks` pragma, biblioteki wykonawczej C zapewnia macierzyste sprawdzanie w czasie wykonywania. W niektórych przypadkach możesz chcieć dostosować sprawdzanie w czasie wykonywania:  
   
--   Można przekierować wiadomości wyboru środowiska wykonawczego do pliku lub docelowej innej niż domyślna.  
+- Można przekierować wiadomości Sprawdzanie w czasie wykonywania do pliku lub docelowy inny niż domyślny.  
   
--   Aby określić dane wyjściowe miejsce docelowe dla środowiska wykonawczego, sprawdź komunikaty w debugerze innych firm.  
+- Aby określić dane wyjściowe miejsce docelowe dla środowiska wykonawczego, sprawdź komunikaty w debugerze innych firm.  
   
--   Aby zgłosić wiadomości wyboru środowiska wykonawczego programu skompilowana przy użyciu wersji biblioteki wykonawcze języka C. Nie należy używać wersji biblioteki `_CrtDbgReportW` może raportować błędy czasu wykonywania. Zamiast tego są one wyświetlane **Assert** okno dialogowe dla każdego błędu czasu wykonywania.  
+- Aby zgłosić wiadomości Sprawdzanie w czasie wykonania z poziomu programu skompilowany przy użyciu wersji biblioteki wykonawczej C. Nie należy używać wersji biblioteki `_CrtDbgReportW` do raportowania błędów czasu wykonywania. Zamiast tego są one wyświetlane **Asercja** okno dialogowe dla każdego błędu czasu wykonywania.  
   
- Aby dostosować sprawdzanie błędów czasu wykonywania, można:  
+  Aby dostosować, sprawdzanie błędów czasu wykonywania, możesz wykonywać następujące czynności:  
   
--   Pisanie funkcji raportowania błędów czasu wykonywania. Aby uzyskać więcej informacji, zobacz [porady: pisanie funkcji raportowania błędów czasu wykonywania](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
+- Pisanie funkcji raportowania błędów czasu wykonywania. Aby uzyskać więcej informacji, zobacz [porady: pisanie funkcji raportowania błędów czasu wykonywania](../debugger/how-to-write-a-run-time-error-reporting-function.md).  
   
--   Dostosowywanie docelowego komunikat błędu.  
+- Dostosuj docelowego komunikat błędu.  
   
--   Zapytanie o informacje czasu wykonywania Sprawdź błędy.  
+- Zapytanie dotyczące informacji o czasie wykonywania Sprawdź błędy.  
   
-## <a name="customize-the-error-message-destination"></a>Dostosowywanie docelowego komunikat błędu  
- Jeśli używasz `_CrtDbgReportW` może raportować błędy, można użyć `_CrtSetReportMode` do określenia lokalizacji komunikaty o błędach.  
+## <a name="customize-the-error-message-destination"></a>Dostosowywanie docelowy komunikatu błędu  
+ Jeśli używasz `_CrtDbgReportW` do zgłaszania błędów, można użyć `_CrtSetReportMode` do określenia miejsca docelowego komunikaty o błędach.  
   
- Jeśli używasz niestandardowego funkcję raportowania, należy użyć `_RTC_SetErrorType` do skojarzenia z typem raportu wystąpił błąd.  
+ Jeśli używasz niestandardowych funkcji raportowania, należy użyć `_RTC_SetErrorType` skojarzyć błąd z typu raportu.  
   
-## <a name="query-for-information-about-run-time-checks"></a>Zapytanie o informacji na temat sprawdzania w trakcie wykonywania  
- `_RTC_NumErrors` Zwraca liczbę typów błędów wykrytych przez sprawdzanie błędów czasu wykonywania. Aby uzyskać krótki opis każdego błędu, można pętli z zakresu od 0 do wartość zwracaną `_RTC_NumErrors`, przekazując wartość iteracji, aby `_RTC_GetErrDesc` na każdej pętli. Aby uzyskać więcej informacji, zobacz [_rtc_numerrors —](/cpp/c-runtime-library/reference/rtc-numerrors) i [_rtc_geterrdesc —](/cpp/c-runtime-library/reference/rtc-geterrdesc).  
+## <a name="query-for-information-about-run-time-checks"></a>Zapytanie o informacje dotyczące sprawdzania w trakcie wykonywania  
+ `_RTC_NumErrors` Zwraca liczbę typów błędów, wykrytych przez sprawdzanie błędów czasu wykonywania. Aby uzyskać krótki opis każdego błędu, można pętli z zakresu od 0 do wartości zwracanej `_RTC_NumErrors`, przekazując wartość iteracji `_RTC_GetErrDesc` na każdej pętli. Aby uzyskać więcej informacji, zobacz [_rtc_numerrors —](/cpp/c-runtime-library/reference/rtc-numerrors) i [_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Porady: Użyj macierzystego sprawdzania w trakcie wykonywania](../debugger/how-to-use-native-run-time-checks.md)   
+ [Porady: Korzystanie z macierzystego sprawdzania w czasie wykonywania](../debugger/how-to-use-native-run-time-checks.md)   
  [runtime_checks](/cpp/preprocessor/runtime-checks)   
  [_CrtDbgReport, _CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

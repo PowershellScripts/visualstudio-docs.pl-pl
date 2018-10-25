@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9baade1a742a06c952906c05c574e752806bc9c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0dca3dac5c2e55e512bd4f798ca4a9bce82f7e00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791755"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874192"
 ---
 # <a name="debugpropertyinfo-structure"></a>Struktura DebugPropertyInfo
-Opis obiektu o charakterze hierarchiczna mającą nazwę, typ i wartość. Jest używany do opisu właściwości debugowania zmiennych lokalnych, parametrów i zmiennych czujki wyrażeń i rejestruje.  
+Opisuje obiekt hierarchiczny charakter, który ma nazwę, typ i wartość. Służy do opisywania właściwości debugowania zmiennych lokalnych, parametrów, obejrzyj zmiennych i wyrażeń i rejestruje.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,25 +44,25 @@ typedef struct DebugPropertyInfo{
   
 ## <a name="members"></a>Elementy członkowskie  
  dwValidFields  
- Wyliczany typ danych używany do określenia pola, które są zainicjowane.  
+ Wyliczany typ danych używany do określenia, które pola są inicjowane.  
   
  bstrName  
  Nazwa właściwości w kontekście.  
   
  bstrType  
- Typ właściwości jako ciąg sformatowany.  
+ Typ właściwości jako sformatowany ciąg.  
   
  bstrValue  
- Wartość właściwości jako ciąg sformatowany.  
+ Wartość właściwości jako sformatowany ciąg.  
   
  bstrFullName  
  Pełna nazwa właściwości.  
   
  dwAttrib  
- Wyliczenie określa flagi dla atrybutów właściwości debugowania.  
+ Wyliczenie, które określa flagi dla atrybutów właściwości debugowania.  
   
  pDebugProp  
- `IDebugProperty` Opisanego przez informacji w tym `DebugPropertyInfo` struktury.  
+ `IDebugProperty` Opisanego przez informacje zawarte w tym `DebugPropertyInfo` struktury.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   

@@ -1,5 +1,5 @@
 ---
-title: Oczekiwano identyfikatora, ciągu lub liczbę | Dokumentacja firmy Microsoft
+title: Oczekiwano identyfikatora, ciągu lub liczby | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0ea67835a0c60d45d9e79f552183e0a4d6b677ac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855134"
 ---
 # <a name="expected-identifier-string-or-number"></a>Oczekiwano identyfikatora, ciągu lub numeru
-Błędna składnia literału umożliwia deklarowanie literałów obiektu. Właściwości literału obiektu musi być identyfikatora, ciągu lub liczbą. Literał obiektu (zwane również "inicjatora obiektu") składa się z listy rozdzielanej przecinkami pary właściwość: wartość wszystkie zamknięte w nawiasach kwadratowych. Na przykład:  
+Błędna składnia literału jest używane do deklarowania obiektu jako literału. Właściwości literału obiektu musi być identyfikatora, ciągu lub liczby. Literał obiektu (zwane również "inicjatora obiektów") składa się lista rozdzielonych przecinkami pary właściwość: wartość, wszystkie ujęty w nawiasy kwadratowe. Na przykład:  
   
 ```JavaScript  
 var point = {x:1.2, y:-3.4};  
@@ -39,4 +39,4 @@ var point = {x:1.2, y:-3.4};
 -   Upewnij się, że używasz poprawnej składni literału.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Operator przecinkowy ()](../../javascript/reference/comma-operator-decrement-javascript.md)
+ [Operator przecinkowy (,)](../../javascript/reference/comma-operator-decrement-javascript.md)

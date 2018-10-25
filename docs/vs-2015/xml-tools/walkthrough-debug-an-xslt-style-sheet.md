@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b1be04d9cc723b2a741ba43676977854306cd03e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 10dad7382a30800675c257a4e2c8219d20e5b18b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198806"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887701"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Przewodnik: debugowanie arkusza stylów XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,29 @@ Kroki opisane w tym przewodniku pokazują, jak za pomocą debugera XSLT. Kroki o
   
 #### <a name="to-start-debugging"></a>Aby rozpocząć debugowanie  
   
-1.  Z **pliku** menu wskaż **Otwórz**i kliknij przycisk **pliku**.  
+1. Z **pliku** menu wskaż **Otwórz**i kliknij przycisk **pliku**.  
   
-2.  Zlokalizuj plik belowAvg.xsl, a następnie kliknij przycisk **Otwórz**.  
+2. Zlokalizuj plik belowAvg.xsl, a następnie kliknij przycisk **Otwórz**.  
   
-     Arkusz stylów jest otwarty w edytorze XML.  
+    Arkusz stylów jest otwarty w edytorze XML.  
   
-3.  Kliknij przycisk przeglądania (**...** ) na **dane wejściowe** pola w oknie właściwości dokumentu.  
+3. Kliknij przycisk przeglądania (**...** ) na **dane wejściowe** pola w oknie właściwości dokumentu.  
   
-4.  Zlokalizuj plik books.xml, a następnie kliknij przycisk **Otwórz**.  
+4. Zlokalizuj plik books.xml, a następnie kliknij przycisk **Otwórz**.  
   
-     Spowoduje to ustawienie pliku dokumentu źródłowego, który jest używany do transformacji XSLT.  
+    Spowoduje to ustawienie pliku dokumentu źródłowego, który jest używany do transformacji XSLT.  
   
-5.  Kliknij prawym przyciskiem myszy `xsl:if` tag początkowy, wskaż opcję **punktu przerwania**i kliknij przycisk **Wstaw punkt przerwania**.  
+5. Kliknij prawym przyciskiem myszy `xsl:if` tag początkowy, wskaż opcję **punktu przerwania**i kliknij przycisk **Wstaw punkt przerwania**.  
   
-6.  Kliknij przycisk **debugowania XSL** na listwie narzędziowej edytora XML.  
+6. Kliknij przycisk **debugowania XSL** na listwie narzędziowej edytora XML.  
   
- Spowoduje to uruchomienie procesu debugowania i otwiera kilka nowych oknach, które są używane przez debuger.  
+   Spowoduje to uruchomienie procesu debugowania i otwiera kilka nowych oknach, które są używane przez debuger.  
   
- Istnieją dwa okna wyświetlające wejściowych arkusza stylów i dokumentów. Debuger używa tych okien, aby wyświetlić bieżący stan wykonania. Debuger jest ustawiony na `xsl:if` element arkusza stylów i w pierwszym węźle książki w pliku books.xml.  
+   Istnieją dwa okna wyświetlające wejściowych arkusza stylów i dokumentów. Debuger używa tych okien, aby wyświetlić bieżący stan wykonania. Debuger jest ustawiony na `xsl:if` element arkusza stylów i w pierwszym węźle książki w pliku books.xml.  
   
- Okno zmiennych lokalnych, wyświetla wszystkie zmienne lokalne oraz ich bieżących wartości. Obejmuje to zmienne zdefiniowane w arkuszu stylów, a także zmienne używane przez debuger do śledzenia węzły, które są obecnie dostępne w kontekście.  
+   Okno zmiennych lokalnych, wyświetla wszystkie zmienne lokalne oraz ich bieżących wartości. Obejmuje to zmienne zdefiniowane w arkuszu stylów, a także zmienne używane przez debuger do śledzenia węzły, które są obecnie dostępne w kontekście.  
   
- **Danych wyjściowych XSL** okna wyświetla dane wyjściowe transformacji XSL. To okno jest oddzielony od **Visual Studio dane wyjściowe** okna.  
+   **Danych wyjściowych XSL** okna wyświetla dane wyjściowe transformacji XSL. To okno jest oddzielony od **Visual Studio dane wyjściowe** okna.  
   
 ## <a name="watch-window"></a>W oknie czujki  
   

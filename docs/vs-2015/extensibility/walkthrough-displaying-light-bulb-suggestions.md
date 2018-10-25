@@ -13,12 +13,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de18b0371baae2d48be9341b605f064875ef21de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252502"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869057"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Przewodnik: wyświetlanie sugestii „żarówka”
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ Ikony żarówek są ikony używane w edytorze programu Visual Studio, rozwinąć
   
  W edytorach Visual C# i Visual Basic można również użyć platformie kompilatora .NET ("Roslyn") do zapisu i tworzenia pakietów analizatorów własnego kodu z akcjami, które automatycznie wyświetlają żarówki. Aby uzyskać więcej informacji, zobacz:  
   
--   [Instrukcje: Pisanie C# diagnostyki i poprawki kodu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [Instrukcje: Pisanie C# diagnostyki i poprawki kodu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [Instrukcje: Pisanie diagnostyki programu Visual Basic i poprawki kodu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [Instrukcje: Pisanie diagnostyki programu Visual Basic i poprawki kodu](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- Innych języków, takich jak C++ także zapewnić żarówki szybkich akcji, takich jak sugestię do tworzenia szkieletu stosowania tej funkcji.  
+  Innych języków, takich jak C++ także zapewnić żarówki szybkich akcji, takich jak sugestię do tworzenia szkieletu stosowania tej funkcji.  
   
- Oto jak wygląda żarówki. W projekcie języka Visual Basic lub Visual C# czerwona fala pojawi się w obszarze Nazwa zmiennej, gdy jest on nieprawidłowy. Gdy wskaźnik myszy nad nieprawidłowy identyfikator żarówki jest wyświetlany obok kursora.  
+  Oto jak wygląda żarówki. W projekcie języka Visual Basic lub Visual C# czerwona fala pojawi się w obszarze Nazwa zmiennej, gdy jest on nieprawidłowy. Gdy wskaźnik myszy nad nieprawidłowy identyfikator żarówki jest wyświetlany obok kursora.  
   
- ![Ikona żarówki](../extensibility/media/lightbulb.png "żarówka")  
+  ![Ikona żarówki](../extensibility/media/lightbulb.png "żarówka")  
   
- Po kliknięciu strzałki w dół, żarówki zbiór sugerowanych akcji zostanie wyświetlona wraz z (wersja zapoznawcza) wybranej akcji. W tym przypadku pokazuje zmiany, które zostaną wprowadzone do kodu, jeśli wykonanie akcji.  
+  Po kliknięciu strzałki w dół, żarówki zbiór sugerowanych akcji zostanie wyświetlona wraz z (wersja zapoznawcza) wybranej akcji. W tym przypadku pokazuje zmiany, które zostaną wprowadzone do kodu, jeśli wykonanie akcji.  
   
- ![żarówka — Podgląd](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![żarówka — Podgląd](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- Żarówki służy do zapewnienia sugerowanych akcji. Na przykład można dostarczyć działania, aby przenieść, otwierając nawiasy klamrowe do nowego wiersza lub przenieść je do końca poprzedniego wiersza. Następujące instruktaż przedstawia sposób tworzenia żarówki, która pojawia się na bieżącego słowa i ma dwa sugerowanych akcji: **Konwertuj na wielkie litery** i **konwersji na małe litery**.  
+  Żarówki służy do zapewnienia sugerowanych akcji. Na przykład można dostarczyć działania, aby przenieść, otwierając nawiasy klamrowe do nowego wiersza lub przenieść je do końca poprzedniego wiersza. Następujące instruktaż przedstawia sposób tworzenia żarówki, która pojawia się na bieżącego słowa i ma dwa sugerowanych akcji: **Konwertuj na wielkie litery** i **konwersji na małe litery**.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

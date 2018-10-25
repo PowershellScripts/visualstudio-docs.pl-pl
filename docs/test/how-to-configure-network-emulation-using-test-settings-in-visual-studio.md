@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ce10d096ff646b462c7b0aff2cbcf33493aad0c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ce49eb2e6892528d95e40bc1c40e36f355495c65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829290"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Porady: Konfiguracja funkcji emulacji sieci za pomocą ustawień testów w programie Visual Studio
 
@@ -38,21 +38,21 @@ Konta mającego uprawnienia administratora może służyć do emulacji sieci. Je
 
  Visual Studio używa emulacja sieciowej true bazującej na oprogramowanie dla wszystkich typów testu. Obejmuje to testy obciążenia. Emulacja sieci true symuluje warunki w sieci przez bezpośrednią manipulację pakietami sieciowymi. Emulator sieci może emulować zachowanie zarówno sieci przewodowych i bezprzewodowych, za pomocą niezawodnego łącza fizycznego, takiego jak Ethernet. Następujące atrybuty sieci są włączone w prawdziwą emulację sieci:
 
--   Czas obustronnej konwersji w sieci (opóźnienie)
+- Czas obustronnej konwersji w sieci (opóźnienie)
 
--   Dostępna przepustowość
+- Dostępna przepustowość
 
--   Zachowanie usługi kolejkowania wiadomości
+- Zachowanie usługi kolejkowania wiadomości
 
--   Utrata pakietów
+- Utrata pakietów
 
--   Zmiana kolejności pakietów
+- Zmiana kolejności pakietów
 
--   Propagacje błędów.
+- Propagacje błędów.
 
- Emulacja sieci true również zapewnia elastyczność filtrowania pakietów sieciowych na podstawie adresów IP lub protokołów, takich jak TCP, UDP i ICMP.
+  Emulacja sieci true również zapewnia elastyczność filtrowania pakietów sieciowych na podstawie adresów IP lub protokołów, takich jak TCP, UDP i ICMP.
 
- Emulacja sieci TRUE może służyć przez sieciowych deweloperów i testerów do emulowania pożądanego środowiska testowego, oceny wydajności, przewidywania wpływu zmian lub podejmowania decyzji dotyczących optymalizacji technologii. W porównaniu z testami sprzętu, emulacji sieci true jest rozwiązaniem znacznie tańszym i bardziej elastycznym.
+  Emulacja sieci TRUE może służyć przez sieciowych deweloperów i testerów do emulowania pożądanego środowiska testowego, oceny wydajności, przewidywania wpływu zmian lub podejmowania decyzji dotyczących optymalizacji technologii. W porównaniu z testami sprzętu, emulacji sieci true jest rozwiązaniem znacznie tańszym i bardziej elastycznym.
 
 ## <a name="configure-network-emulation-for-your-test-settings"></a>Skonfiguruj emulację sieci dla ustawień testu
  Przed wykonaniem kroków w tej procedurze należy otworzyć Ustawienia testu z programu Visual Studio, a następnie wybierz **dane i Diagnostyka** strony.

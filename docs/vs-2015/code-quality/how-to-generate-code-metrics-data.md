@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4dbd9b4e0b62d1c6542231418aa99bd6d6ab0438
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14acbe1ac804ca953f7167f6ee7f849d0a615db8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189809"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836206"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Porady: generowanie metryk kodów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,15 +50,15 @@ Można zdecydować wygenerować wyniki metryki kodu dla całego rozwiązania lub
   
 ### <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>Aby wygenerować wyniki metryki kodu dla co najmniej jeden z wybranych projektów  
   
-1.  W **Eksploratora rozwiązań**, zaznacz jeden lub więcej projektów.  
+1. W **Eksploratora rozwiązań**, zaznacz jeden lub więcej projektów.  
   
-2.  Kliknij przycisk **analizy**, a następnie kliknij przycisk **Generowanie metryki kodu dla projektów zaznaczone (s)**.  
+2. Kliknij przycisk **analizy**, a następnie kliknij przycisk **Generowanie metryki kodu dla projektów zaznaczone (s)**.  
   
-     \- lub —  
+    \- lub —  
   
-     Kliknij prawym przyciskiem myszy wybrane opcje, a następnie kliknij przycisk **metryki CalculateCode**.  
+    Kliknij prawym przyciskiem myszy wybrane opcje, a następnie kliknij przycisk **metryki CalculateCode**.  
   
- Wyniki są generowane i **wyników metryk kodów** zostanie wyświetlone okno.  
+   Wyniki są generowane i **wyników metryk kodów** zostanie wyświetlone okno.  
   
 ### <a name="to-view-the-results-details"></a>Aby wyświetlić szczegółowe wyniki wyszukiwania  
   

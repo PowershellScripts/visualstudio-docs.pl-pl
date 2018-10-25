@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280574"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826495"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Zmiany w rozszerzalności programu Visual Studio 2017
 
@@ -59,13 +59,14 @@ Większość zestawów podstawowych programu Visual Studio są już zainstalowan
 > [INSTALLDIR] poniżej odwołuje się do katalogu instalacyjnego programu Visual Studio. *VSIXInstaller.exe* automatycznie wypełnić to pole, ale aby pisać kod niestandardowy wdrożenia, należy przeczytać [lokalizowanie programu Visual Studio](locating-visual-studio.md).
 
 * Zestawy, które tylko zostały zainstalowane w GAC:
-  * Te zestawy są teraz instalowane w ramach * [INSTALLDIR] \Common7\IDE\*, *\Common7\IDE\PublicAssemblies [INSTALLDIR]* lub *\Common7\IDE\PrivateAssemblies [INSTALLDIR]*. Te foldery są częścią procesu programu Visual Studio ścieżkach sondowania.
+  * Te zestawy są teraz instalowane w ramach <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> lub *\Common7\IDE\PrivateAssemblies [INSTALLDIR]*. Te foldery są częścią procesu programu Visual Studio ścieżkach sondowania.
+
 * Zestawy, które zostały zainstalowane w ścieżce sondowanie i pamięci podręcznej GAC:
   * Kopiowanie w GAC został usunięty z instalacji.
   * A *.pkgdef* plik został dodany do określenia pozycji podstawowego kodu dla zestawu.
 
     Na przykład:
-    
+
     ```xml
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
     "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
@@ -81,7 +82,7 @@ Większość zestawów podstawowych programu Visual Studio są już zainstalowan
   * Twój kod będzie szukać zestawów podstawowych programu Visual Studio.
   * Należy rozważyć użycie *.pkgdef* plik, aby określić ścieżkę do zestawów, jeśli to konieczne.
 * Jeśli rozszerzenie działa poza procesem programu Visual Studio:
-  * Należy wziąć pod uwagę wyszukiwanie zestawów podstawowych programu Visual Studio w obszarze * [INSTALLDIR] \Common7\IDE\*, *\Common7\IDE\PublicAssemblies [INSTALLDIR]* lub *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* używanie mechanizmu rozpoznawania pliku lub zestawu konfiguracji.
+  * Należy wziąć pod uwagę wyszukiwanie zestawów podstawowych programu Visual Studio w obszarze <em>\Common7\IDE [INSTALLDIR]\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> lub *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* używanie mechanizmu rozpoznawania pliku lub zestawu konfiguracji.
 
 ## <a name="change-reduce-registry-impact"></a>Zmiana: Ograniczyć wpływ rejestru
 

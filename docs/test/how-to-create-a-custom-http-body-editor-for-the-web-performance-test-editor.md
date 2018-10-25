@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 338aade9ddef3c4ef571ea2a5bffc67064c81869
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380658"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862466"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Porady: tworzenie HTTP niestandardowego edytora treści do edytora testów wydajności sieci Web
 
@@ -33,31 +33,31 @@ Te interfejsy są zawarte w <xref:Microsoft.VisualStudio.TestTools.WebTesting> p
 
 ### <a name="create-a-user-control-by-using-a-windows-control-library-project"></a>Tworzenie kontrolki użytkownika za pomocą projektu Biblioteka formantów Windows
 
-1.  W programie Visual Studio na **pliku** menu, wybierz **New** , a następnie wybierz **projektu**.
+1. W programie Visual Studio na **pliku** menu, wybierz **New** , a następnie wybierz **projektu**.
 
-     **Nowy projekt** zostanie wyświetlone okno dialogowe.
+    **Nowy projekt** zostanie wyświetlone okno dialogowe.
 
-2.  W obszarze **zainstalowane szablony**, wybierz opcję **języka Visual Basic** lub **Visual C#** zależnie od preferencji programowania, a następnie wybierz **Windows**.
+2. W obszarze **zainstalowane szablony**, wybierz opcję **języka Visual Basic** lub **Visual C#** zależnie od preferencji programowania, a następnie wybierz **Windows**.
 
-    > [!NOTE]
-    > Ta próbka używa Visual C#.
+   > [!NOTE]
+   > Ta próbka używa Visual C#.
 
-3.  Na liście szablonów wybierz **Biblioteka kontrolek formularzy Windows**.
+3. Na liście szablonów wybierz **Biblioteka kontrolek formularzy Windows**.
 
-4.  W **nazwa** polu tekstowym wpisz nazwę, na przykład `MessageEditors`i wybierz polecenie **OK**.
+4. W **nazwa** polu tekstowym wpisz nazwę, na przykład `MessageEditors`i wybierz polecenie **OK**.
 
-    > [!NOTE]
-    > Ta próbka używa MessageEditors.
+   > [!NOTE]
+   > Ta próbka używa MessageEditors.
 
-     Projekt jest dodawany do nowego rozwiązania i <xref:System.Windows.Forms.UserControl> o nazwie *UserControl1.cs* jest przedstawiany w projektancie.
+    Projekt jest dodawany do nowego rozwiązania i <xref:System.Windows.Forms.UserControl> o nazwie *UserControl1.cs* jest przedstawiany w projektancie.
 
-5.  Z **przybornika**w obszarze **wspólnych formantów** przeciągnij <xref:System.Windows.Forms.RichTextBox> na powierzchnię obiektu UserControl1.
+5. Z **przybornika**w obszarze **wspólnych formantów** przeciągnij <xref:System.Windows.Forms.RichTextBox> na powierzchnię obiektu UserControl1.
 
-6.  Wybierz symbol tagu akcji (![symbol tagu inteligentnego](../test/media/vs_winformsmttagglyph.gif)) w prawym górnym rogu <xref:System.Windows.Forms.RichTextBox> sterowania, a następnie wybierz i **Zadokuj w kontenerze nadrzędnym**.
+6. Wybierz symbol tagu akcji (![symbol tagu inteligentnego](../test/media/vs_winformsmttagglyph.gif)) w prawym górnym rogu <xref:System.Windows.Forms.RichTextBox> sterowania, a następnie wybierz i **Zadokuj w kontenerze nadrzędnym**.
 
-7.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt Biblioteka formularzy Windows i wybierz **właściwości**.
+7. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt Biblioteka formularzy Windows i wybierz **właściwości**.
 
-8.  W **właściwości**, wybierz opcję **aplikacji** kartę.
+8. W **właściwości**, wybierz opcję **aplikacji** kartę.
 
 9. W **platformę docelową** listy rozwijanej wybierz **.NET Framework 4**.
 
@@ -95,9 +95,9 @@ Te interfejsy są zawarte w <xref:Microsoft.VisualStudio.TestTools.WebTesting> p
 
 18. Dodaj następujące właściwości, aby umożliwić uzyskanie i ustawienie tekstu w RichTextBox1. <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> Interfejsu będzie używać EditString a <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> będzie używać EditByteArray:
 
-   ```csharp
-   public String EditString
-   {
+    ```csharp
+    public String EditString
+    {
        get
        {
            return this.richTextBox1.Text;
@@ -106,10 +106,10 @@ Te interfejsy są zawarte w <xref:Microsoft.VisualStudio.TestTools.WebTesting> p
        {
            this.richTextBox1.Text = value;
        }
-   }
+    }
 
-   public byte[] EditByteArray
-   {
+    public byte[] EditByteArray
+    {
        get
        {
            return System.Convert.FromBase64String(richTextBox1.Text);
@@ -118,8 +118,8 @@ Te interfejsy są zawarte w <xref:Microsoft.VisualStudio.TestTools.WebTesting> p
        {
            richTextBox1.Text = System.Convert.ToBase64String(value, 0, value.Length);
        }
-   }
-   ```
+    }
+    ```
 
 ## <a name="add-a-class-to-the-windows-control-library-project"></a>Dodaj klasę do projektu Biblioteka formantów Windows
 

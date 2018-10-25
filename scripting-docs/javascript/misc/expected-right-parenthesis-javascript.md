@@ -1,5 +1,5 @@
 ---
-title: Oczekiwano &#39;) &#39; (JavaScript) | Dokumentacja firmy Microsoft
+title: Oczekiwano &#39;)&#39; (JavaScript) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f816b4635ae219b12370d53fa8c14eb8c0112a7a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788635"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863545"
 ---
-# <a name="expected-3939-javascript"></a>Oczekiwano &#39;) &#39; (JavaScript)
-Podjęto próbę ujmij wyrażenie w ramach zestawu nawiasów, ale nie zawiera nawiasem zamykającym. Niektóre wyrażenie musi być ujęte w nawiasy otwierające i zamykające zestaw. Zwróć uwagę na nawiasów w poniższym przykładzie.  
+# <a name="expected-3939-javascript"></a>Oczekiwano &#39;)&#39; (JavaScript)
+Podjęto próbę ujmij wyrażenie w zestawie nawiasów, ale nie zawiera nawias zamykający. Niektóre wyrażenia muszą być ujęte w nawiasy otwierające i zamykające zestaw. Zwróć uwagę na użycie nawiasów w poniższym przykładzie.  
   
 ```JavaScript  
 for (initialize; test; increment) {  
@@ -38,4 +38,4 @@ statement;
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Dodaj prawych nawiasów do wyrażenia oceny.
+-   Dodaj prawych nawiasów wyrażenia oceny.

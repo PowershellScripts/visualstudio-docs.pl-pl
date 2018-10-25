@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243955"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846866"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>Sprawdź poprzednie Stany aplikacji przy użyciu funkcji IntelliTrace krok do tyłu w programie Visual Studio
 
@@ -106,17 +106,17 @@ Wpływ na ogólną wydajność wykonywania krokowego zależy od aplikacji. Koszt
 * Jeśli używasz trybu zdarzenia i migawki funkcji IntelliTrace w wersjach systemu Windows starszych niż Windows 10 Fall Creators Update (RS3) i docelowa platforma debugowania aplikacji jest równa x86, IntelliTrace nie przyjmuje migawki.
 
     Obejścia:
-    * Jeśli jesteś w usłudze Windows 10 Anniversary Update (RS1) i w wersji starszej niż 10.0.14393.2273, [zainstalować KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
-    * Jeśli jesteś na Windows 10 Creators Update (RS2) i w wersji starszej niż 10.0.15063.1112, [zainstalować KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
-    * Zainstaluj lub Uaktualnij do Windows 10 Fall Creators Update (RS3). 
-    * Alternatywnie: 
-        1. Zainstaluj zestaw narzędzi VC++ 2015.3 v140 dla składnika komputera stacjonarnego (x86, x64) przy użyciu Instalatora programu Visual Studio.
-        2. Skompiluj aplikację docelową.
-        3. W wierszu polecenia użyj narzędzia polecenia editbin można ustawić `Largeaddressaware` flagi dla elementu docelowego pliku wykonywalnego. Na przykład, można użyć tego polecenia (po zaktualizowaniu ścieżka): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / largeaddressaware "C:\Path\To\Application\app.exe".
-        4. Aby rozpocząć debugowanie, naciśnij klawisz **F5**. Teraz migawki są wykonywane na debuger nie wchodzi i punktów przerwania.
+  * Jeśli jesteś w usłudze Windows 10 Anniversary Update (RS1) i w wersji starszej niż 10.0.14393.2273, [zainstalować KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720). 
+  * Jeśli jesteś na Windows 10 Creators Update (RS2) i w wersji starszej niż 10.0.15063.1112, [zainstalować KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722).
+  * Zainstaluj lub Uaktualnij do Windows 10 Fall Creators Update (RS3). 
+  * Alternatywnie: 
+    1. Zainstaluj zestaw narzędzi VC++ 2015.3 v140 dla składnika komputera stacjonarnego (x86, x64) przy użyciu Instalatora programu Visual Studio.
+    2. Skompiluj aplikację docelową.
+    3. W wierszu polecenia użyj narzędzia polecenia editbin można ustawić `Largeaddressaware` flagi dla elementu docelowego pliku wykonywalnego. Na przykład, można użyć tego polecenia (po zaktualizowaniu ścieżka): "C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" / largeaddressaware "C:\Path\To\Application\app.exe".
+    4. Aby rozpocząć debugowanie, naciśnij klawisz **F5**. Teraz migawki są wykonywane na debuger nie wchodzi i punktów przerwania.
 
-        > [!Note]
-        > `Largeaddressaware` Musi zostać ustawiona flaga za każdym razem, plik wykonywalny zostanie odtworzony ze zmianami.
+       > [!Note]
+       > `Largeaddressaware` Musi zostać ustawiona flaga za każdym razem, plik wykonywalny zostanie odtworzony ze zmianami.
 
 * Podczas procesu aplikacji migawki w aplikacji korzystającej z utrwalonego pliku mapowane w pamięci, proces z migawką utrzymuje blokady na wyłączność plików zamapowanych w pamięci (nawet po procesie nadrzędnym został wydany blokady). Inne procesy mogą nadal odczytywać, ale nie zapisywać do pliku mapowanych na pamięć.
 

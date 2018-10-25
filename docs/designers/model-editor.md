@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: b7e3da13240eb172e29676b990d1c23be71e4542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029137"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855537"
 ---
 # <a name="model-editor"></a>Edytor modelu
 
@@ -31,7 +31,7 @@ Możesz użyć **edytora modelu** na potrzeby tworzenia podstawowych modeli 3D o
 **Edytora modelu** obsługuje kilka formatów modeli 3D, które są używane w rozwoju aplikacji DirectX:
 
 |Nazwa formatu|Rozszerzenie pliku|Obsługiwane operacje (Wyświetl, Edytuj, Utwórz)|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |Plik wymiany AutoDesk FBX|*.fbx*|Wyświetl, edytuj, utwórz|
 |Plik w formacie Collada DAE|*DAE*|Wyświetl, edytuj (modyfikacje plików Collada DAE są zapisywane przy użyciu formatu FBX).|
 |OBJ|*.obj*|Wyświetl, edytuj (modyfikacje plików OBJ są zapisywane przy użyciu formatu FBX).|
@@ -254,7 +254,7 @@ Każdy z tych materiałów stosuje jedną teksturę na powierzchni obiektu. Moż
 Aby zmodyfikować sposób reakcji określonego obiektu na różne źródła światła w scenie, możesz zmienić właściwości oświetlenia materiału niezależnie od innych obiektów używających materiału. W tej tabeli opisano typowe właściwości oświetlenia:
 
 |Właściwość oświetlenia|Opis|
-|-----------------------|-----------------|
+| - |-----------------|
 |**Otoczenia**|Opisuje wpływ oświetlenia otoczenia na powierzchnię.|
 |**Rozpraszania**|Opisuje wpływ światła kierunkowego i punktowego na powierzchnię.|
 |**Emisyjny**|W tym artykule opisano, jak powierzchnia emituje światło niezależne od innego oświetlenia.|
@@ -294,7 +294,7 @@ Aby usunąć skojarzenie nadrzędny podrzędny między dwoma obiektami, zaznacz 
 ## <a name="keyboard-shortcuts"></a>Skróty klawiaturowe
 
 |Polecenie|Skróty klawiaturowe|
-|-------------|------------------------|
+|-------------| - |
 |Przełącz się do **wybierz** tryb|**CTRL**+**G**, **Ctrl**+**funkcji pytania i odpowiedzi**<br /><br /> **S**|
 |Przełącz się do **powiększenia** tryb|**CTRL**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Przełącz się do **Pan** tryb|**CTRL**+**G**, **Ctrl**+**P**<br /><br /> **K**|

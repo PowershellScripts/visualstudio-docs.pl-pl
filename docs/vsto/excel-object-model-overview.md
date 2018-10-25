@@ -22,33 +22,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4c5dee963faaf52b6e1511d0b689ebe6ee5554e2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8ca93cae45eed272b683275896efcf83229ca9a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880796"
 ---
 # <a name="excel-object-model-overview"></a>Model obiektu Excel ― omówienie
   Do opracowywania rozwiązań korzystających z programu Microsoft Office Excel, możesz korzystać z obiektami dostarczonych przez model obiektów programu Excel. W tym temacie przedstawiono najważniejsze obiekty:  
   
--   <xref:Microsoft.Office.Interop.Excel.Application>  
+- <xref:Microsoft.Office.Interop.Excel.Application>  
   
--   <xref:Microsoft.Office.Interop.Excel.Workbook>  
+- <xref:Microsoft.Office.Interop.Excel.Workbook>  
   
--   <xref:Microsoft.Office.Interop.Excel.Worksheet>  
+- <xref:Microsoft.Office.Interop.Excel.Worksheet>  
   
--   <xref:Microsoft.Office.Interop.Excel.Range>  
+- <xref:Microsoft.Office.Interop.Excel.Range>  
   
- [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
+  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Model obiektów jest ściśle zgodna interfejsu użytkownika. <xref:Microsoft.Office.Interop.Excel.Application> Obiekt reprezentuje całej aplikacji, a każdy <xref:Microsoft.Office.Interop.Excel.Workbook> obiekt zawiera zbiór `Worksheet` obiektów. Z tego miejsca jest główną abstrakcji, który reprezentuje komórki <xref:Microsoft.Office.Interop.Excel.Range> obiektu, który umożliwia pracę z poszczególnych komórek lub grupami komórek.  
+  Model obiektów jest ściśle zgodna interfejsu użytkownika. <xref:Microsoft.Office.Interop.Excel.Application> Obiekt reprezentuje całej aplikacji, a każdy <xref:Microsoft.Office.Interop.Excel.Workbook> obiekt zawiera zbiór `Worksheet` obiektów. Z tego miejsca jest główną abstrakcji, który reprezentuje komórki <xref:Microsoft.Office.Interop.Excel.Range> obiektu, który umożliwia pracę z poszczególnych komórek lub grupami komórek.  
   
- Oprócz modelu obiektów programu Excel projektów pakietu Office w Visual Studio zapewniają *hostować elementy* i *hostowania kontrolek* które rozszerzają niektóre obiekty w modelu obiektów programu Excel. Obiekty hosta i kontrolek hosta zachowują się jak obiekty programu Excel, które rozszerzają, ale mają także dodatkowe funkcje, takie jak możliwości wiązania danych i dodatkowych zdarzeń. Aby uzyskać więcej informacji, zobacz [automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md) i [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).  
+  Oprócz modelu obiektów programu Excel projektów pakietu Office w Visual Studio zapewniają *hostować elementy* i *hostowania kontrolek* które rozszerzają niektóre obiekty w modelu obiektów programu Excel. Obiekty hosta i kontrolek hosta zachowują się jak obiekty programu Excel, które rozszerzają, ale mają także dodatkowe funkcje, takie jak możliwości wiązania danych i dodatkowych zdarzeń. Aby uzyskać więcej informacji, zobacz [automatyzowanie programu Excel za pomocą obiektów rozszerzonych](../vsto/automating-excel-by-using-extended-objects.md) i [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).  
   
- Ten temat zawiera krótkie omówienie modelu obiektów programu Excel. Dla zasobów można znaleźć więcej informacji na temat całego modelu obiektów programu Excel, zobacz [zapoznaj się z dokumentacją model obiektu Excel](#ExcelOMDocumentation).  
+  Ten temat zawiera krótkie omówienie modelu obiektów programu Excel. Dla zasobów można znaleźć więcej informacji na temat całego modelu obiektów programu Excel, zobacz [zapoznaj się z dokumentacją model obiektu Excel](#ExcelOMDocumentation).  
   
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [w jaki sposób użycia I: obsługi zdarzeń w programie Excel 2007 dodatku?](http://go.microsoft.com/fwlink/?LinkID=130291), i [jak kształty Użyj I: Tworzenie wykresu bąbelkowego w programie Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [w jaki sposób użycia I: obsługi zdarzeń w programie Excel 2007 dodatku?](http://go.microsoft.com/fwlink/?LinkID=130291), i [jak kształty Użyj I: Tworzenie wykresu bąbelkowego w programie Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="access-objects-in-an-excel-project"></a>Uzyskiwanie dostępu do obiektów w projekcie programu Excel  
  Podczas tworzenia nowego projektu dodatku narzędzi VSTO dla programu Excel, programu Visual Studio automatycznie tworzy *ThisAddIn.vb* lub *ThisAddIn.cs* pliku kodu. Dostęp do obiektu aplikacji przy użyciu `Me.Application` lub `this.Application`.  
@@ -69,15 +69,15 @@ ms.locfileid: "35677498"
   
  Ponieważ mają zaawansowaną strukturę danych w dokumencie programu Excel, model obiektów jest hierarchiczne i proste. Program Excel oferuje setki obiektów, z którymi możesz wchodzić w interakcje, ale możesz uzyskać dobry początek object model, skupiając się na małego podzbioru dostępnych obiektów. Te obiekty obejmują następujące cztery:  
   
--   Aplikacja  
+- Aplikacja  
   
--   skoroszyt  
+- skoroszyt  
   
--   arkusz  
+- arkusz  
   
--   Zakres  
+- Zakres  
   
- Większość pracy z programem Excel koncentruje się wokół tych czterech obiektów i ich elementów członkowskich.  
+  Większość pracy z programem Excel koncentruje się wokół tych czterech obiektów i ich elementów członkowskich.  
   
 ### <a name="application-object"></a>Obiekt aplikacji  
  Excel <xref:Microsoft.Office.Interop.Excel.Application> obiekt reprezentuje sama aplikacja programu Excel. <xref:Microsoft.Office.Interop.Excel.Application> Obiekt udostępnia wiele informacji na temat uruchomionej aplikacji, opcje zastosowane do tego wystąpienia, a następnie otwórz bieżące obiekty użytkownika, w ramach wystąpienia.  

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 945a4a0fd5a7de1e9d04d409390caddfc718d92d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 89dbb562dfbab83f56664aad7fdd107ea9d0e397
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124865"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873984"
 ---
 # <a name="moduleflags"></a>MODULE_FLAGS
-Używany w przypadku modułu.  
+Używane do opisywania modułu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -55,24 +55,24 @@ public enum enum_MODULE_FLAGS {
  Określa nie modułu.  
   
  MODULE_FLAG_SYSTEM  
- Określa moduł systemowy.  
+ Określa moduł systemu.  
   
  MODULE_FLAG_SYMBOLS  
- Określa moduł symbolu.  
+ Określa moduł symboli.  
   
  MODULE_FLAG_64BIT  
  Określa moduł 64-bitowych.  
   
  MODULE_FLAG_OPTIMIZED  
- Określa, że moduł został zoptymalizowany. Ten stan jest widoczny w **modułów** okna.  
+ Określa, że moduł został zoptymalizowany. Ten stan jest odzwierciedlana w **modułów** okna.  
   
  MODULE_FLAG_UNOPTIMIZED  
- Określa, że moduł nie został zoptymalizowany. Ten stan jest widoczny w **modułów** okna. Jest to domyślny stan.  
+ Określa, że moduł nie został zoptymalizowany. Ten stan jest odzwierciedlana w **modułów** okna. Jest to domyślny stan.  
   
 ## <a name="remarks"></a>Uwagi  
  Używany do `m_dwModuleFlags` członkiem [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) struktury.  
   
- Te flagi mogą być łączone z bitowego `OR`.  
+ Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

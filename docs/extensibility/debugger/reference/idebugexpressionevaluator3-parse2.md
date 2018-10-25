@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64344d66bcdd0ab64f6dd1e944f161e286c132de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 46f7b503cb1cc90ad1058761274e6974a11ee35a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122239"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867224"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
-Konwertuje ciąg wyrażenia wyrażenia przeanalizowanego danego dostawcy symboli i adres oszacowania ramki.  
+Konwertuje ciąg wyrażenia wyrażenie przeanalizowany podany dostawca symboli i adres oceny ramki.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -53,37 +53,37 @@ HRESULT Parse2 (
   
 #### <a name="parameters"></a>Parametry  
  `upstrExpression`  
- [in] Ciąg wyrażenia do przeanalizowania.  
+ [in] Wyrażenie ciąg, który ma być analizowany.  
   
  `dwFlags`  
- [in] Kolekcja [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) stałe, które określają sposób wyrażenia do przeanalizowania.  
+ [in] Kolekcja [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) stałe, które określają, jak wyrażenie ma zostać przeanalizowany.  
   
  `nRadix`  
- [in] Podstawa ma być używany do interpretować wszystkie informacje numeryczne.  
+ [in] Podstawy ma być używany do interpretacji wszelkie dane liczbowe.  
   
  `pSymbolProvider`  
- [in] Interfejs dostawcy symbolu.  
+ [in] Interfejs dostawcy symboli.  
   
  `pAddress`  
- [in] Adres oszacowania ramki.  
+ [in] Adres oceny ramki.  
   
  `pbstrError`  
- [out] Zwraca błąd jako tekst zrozumiałą dla użytkownika.  
+ [out] Zwraca błąd jako tekst czytelny dla człowieka.  
   
  `pichError`  
- [out] Zwraca ciąg wyrażenia znaku na pozycji początkowej błędu.  
+ [out] Zwraca pozycję znaku, Start błędu, w ciągu wyrażenia.  
   
  `ppParsedExpression`  
  [out] Zwraca wyrażenie przeanalizowany w [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) obiektu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda tworzy wyrażenie przeanalizowany, a nie rzeczywistą wartość. Przeanalizowana wyrażenie jest gotowy do obliczenia, oznacza to, przekonwertowana na wartość.  
+ Ta metoda tworzy wyrażenie przeanalizowany, a nie wartość rzeczywistą. Przeanalizowana wyrażenie jest gotowy do można obliczyć, oznacza to, przekonwertować na wartość.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CEE** obiekt ujawniający [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CEE** obiekt ujawniający [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) interfejsu.  
   
 ```cpp  
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,  

@@ -13,12 +13,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 806c19b7132a4541ff97c253700a5e5e980ef556
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255622"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817980"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu pliku runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Testy jednostkowe w programie Visual Studio można skonfigurować przy użyciu p
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Dostosowywanie testów przy użyciu pliku .runsettings  
   
-1.  Dodaj plik XML do rozwiązania programu Visual Studio i zmień jego nazwę na test.runsettings. (Nazwa pliku nie ma znaczenia, ale rozszerzenie musi być .runsettings).  
+1. Dodaj plik XML do rozwiązania programu Visual Studio i zmień jego nazwę na test.runsettings. (Nazwa pliku nie ma znaczenia, ale rozszerzenie musi być .runsettings).  
   
-2.  Zastąp zawartość pliku [przykład](#example).  
+2. Zastąp zawartość pliku [przykład](#example).  
   
-     Zmodyfikuj go według własnych potrzeb.  
+    Zmodyfikuj go według własnych potrzeb.  
   
-3.  Na **testu** menu, wybierz **ustawienia testu**, **zaznacz plik ustawień testu**.  
+3. Na **testu** menu, wybierz **ustawienia testu**, **zaznacz plik ustawień testu**.  
   
- Można utworzyć więcej niż jeden \*.runsettings plików w swoim rozwiązaniu i je włączyć lub wyłączyć w różnym czasie za pomocą **ustawienia testu** menu.  
+   Można utworzyć więcej niż jeden \*.runsettings plików w swoim rozwiązaniu i je włączyć lub wyłączyć w różnym czasie za pomocą **ustawienia testu** menu.  
   
- ![Włączenie pliku parametrów uruchomieniowych](../test/media/runsettings-1.png "RunSettings-1")  
+   ![Włączenie pliku parametrów uruchomieniowych](../test/media/runsettings-1.png "RunSettings-1")  
   
 ##  <a name="example"></a> Skopiuj ten przykładowy plik .runsettings  
  W tym miejscu jest plikiem typowe *.runsettings. Każdy element pliku jest opcjonalny, ponieważ każda wartość ma domyślne parametry.  

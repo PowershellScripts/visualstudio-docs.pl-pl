@@ -17,29 +17,29 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2137863e48fbedfff4736588a6f3a177786aac57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232534"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824506"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Łączenie przypadków użycia z dokumentami i diagramami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz połączyć przypadek użycia na diagramie przypadku użycia innego diagramu lub dokumentu. Na przykład można połączyć przypadek użycia, następujące diagramy i dokumenty:  
   
--   Diagram sekwencji, który pokazuje, jak cele przypadek użycia są realizowane przez interakcje między użytkownikami i system lub jej główne składniki.  
+- Diagram sekwencji, który pokazuje, jak cele przypadek użycia są realizowane przez interakcje między użytkownikami i system lub jej główne składniki.  
   
--   Diagram aktywności, który pokazuje szczegółowe akcje użytkowników i systemu lub jego głównych składnikach, czyli podczas faktycznego wykonywania przypadku użycia.  
+- Diagram aktywności, który pokazuje szczegółowe akcje użytkowników i systemu lub jego głównych składnikach, czyli podczas faktycznego wykonywania przypadku użycia.  
   
--   Strony programu OneNote lub akapit, który opisuje przypadek użycia szczegółowo.  
+- Strony programu OneNote lub akapit, który opisuje przypadek użycia szczegółowo.  
   
--   Dokument programu Word lub prezentacji programu PowerPoint, opisujący przypadek użycia szczegółowo. Możesz zachować tych dokumentów w rozwiązaniu lub w lokalizacji dostępne dla swojego zespołu, takich jak witryny programu SharePoint.  
+- Dokument programu Word lub prezentacji programu PowerPoint, opisujący przypadek użycia szczegółowo. Możesz zachować tych dokumentów w rozwiązaniu lub w lokalizacji dostępne dla swojego zespołu, takich jak witryny programu SharePoint.  
   
- Aby połączyć przypadek użycia dokumentu, tworzenie artefaktów na diagram przypadków użycia i połączyć przypadek użycia z artefaktem. Właściwości artefaktów służy do Ustaw ścieżkę do pliku diagramu lub dokumentu. Zostanie otwarty po dwukrotnym kliknięciu artefaktu, diagram lub dokumentu.  
+  Aby połączyć przypadek użycia dokumentu, tworzenie artefaktów na diagram przypadków użycia i połączyć przypadek użycia z artefaktem. Właściwości artefaktów służy do Ustaw ścieżkę do pliku diagramu lub dokumentu. Zostanie otwarty po dwukrotnym kliknięciu artefaktu, diagram lub dokumentu.  
   
- Można podłączyć jako wiele artefaktów do każdego przypadek użycia, jak chcesz. Możliwe jest także łączenie artefaktów do innych rodzajów elementów na diagramie przypadków użycia.  
+  Można podłączyć jako wiele artefaktów do każdego przypadek użycia, jak chcesz. Możliwe jest także łączenie artefaktów do innych rodzajów elementów na diagramie przypadków użycia.  
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>Aby otworzyć dokument skojarzony z artefaktem  
   

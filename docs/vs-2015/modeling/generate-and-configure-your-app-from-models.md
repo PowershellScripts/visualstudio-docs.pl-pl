@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c236a0b0896c135035d4d20eecfe5379b62522a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96dc292712a04b7a1049400b908bf5f678b63df3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240646"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857460"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generowanie i konfigurowanie aplikacji na podstawie modeli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,30 +29,30 @@ Można wygenerować lub skonfigurować poszczególnych części aplikacji z mode
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generowanie kodu aplikacji na podstawie modelu  
  Najprostszym sposobem, aby wygenerować kod jest przy użyciu szablonów tekstowych. Istnieje możliwość wygenerowania kodu, w tym samym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania, w którym są przechowywane modelu. Aby uzyskać więcej informacji, zobacz:  
   
--   [Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
+- [Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
   
--   [Generowanie plików na podstawie modelu UML](../modeling/generate-files-from-a-uml-model.md)  
+- [Generowanie plików na podstawie modelu UML](../modeling/generate-files-from-a-uml-model.md)  
   
--   [Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)  
+- [Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)  
   
- Ta metoda jest łatwy do zastosowania przyrostowo. Uruchom z aplikacją, która działa tylko dla określonych przypadków i wybierz kilka części, którą chcesz się nieznacznie różnić od modelu. Zmień nazwę plików źródłowych z tych elementów, dzięki czemu staną się tekst, pliki szablonów (.tt). W tym momencie .cs pliki źródłowe zostaną automatycznie wygenerowane z plików szablonów, dzięki czemu aplikacja będzie działać tak jak poprzednio.  
+  Ta metoda jest łatwy do zastosowania przyrostowo. Uruchom z aplikacją, która działa tylko dla określonych przypadków i wybierz kilka części, którą chcesz się nieznacznie różnić od modelu. Zmień nazwę plików źródłowych z tych elementów, dzięki czemu staną się tekst, pliki szablonów (.tt). W tym momencie .cs pliki źródłowe zostaną automatycznie wygenerowane z plików szablonów, dzięki czemu aplikacja będzie działać tak jak poprzednio.  
   
- Następnie możesz wykonać jedną z części pakietu kodu i Zamień wyrażenia szablonu tekstu, który odczytuje model i generuje część pliku źródłowego. Co najmniej jedną wartość modelu będzie generował oryginalne źródło, aby ponownie uruchomić aplikację i będzie ona działać tak jak poprzednio. Po przetestowaniu modelu różnych wartości, możesz przejść do wstawienia wyrażeń szablonu w innej części kodu.  
+  Następnie możesz wykonać jedną z części pakietu kodu i Zamień wyrażenia szablonu tekstu, który odczytuje model i generuje część pliku źródłowego. Co najmniej jedną wartość modelu będzie generował oryginalne źródło, aby ponownie uruchomić aplikację i będzie ona działać tak jak poprzednio. Po przetestowaniu modelu różnych wartości, możesz przejść do wstawienia wyrażeń szablonu w innej części kodu.  
   
- Ta metoda przyrostowe oznacza, że generowanie kodu zwykle podejścia o niskim ryzyku. Wynikowy aplikacje zwykle wykonać prawie oraz odręcznej wersji.  
+  Ta metoda przyrostowe oznacza, że generowanie kodu zwykle podejścia o niskim ryzyku. Wynikowy aplikacje zwykle wykonać prawie oraz odręcznej wersji.  
   
- Jednak w przypadku uruchomienia z istniejącą aplikacją, może się okazać, że wiele refaktoryzacji jest wymagany do oddzielania różne zachowania, które są zarządzane przez model, dzięki czemu mogą być niezależne zróżnicowane. Firma Microsoft zaleca oceny ten aspekt aplikacji, podczas szacowania kosztów projektu.  
+  Jednak w przypadku uruchomienia z istniejącą aplikacją, może się okazać, że wiele refaktoryzacji jest wymagany do oddzielania różne zachowania, które są zarządzane przez model, dzięki czemu mogą być niezależne zróżnicowane. Firma Microsoft zaleca oceny ten aspekt aplikacji, podczas szacowania kosztów projektu.  
   
 ## <a name="configuring-your-application-from-a-model"></a>Konfigurowanie własnej aplikacji z modelu  
  Jeśli chcesz zróżnicować zachowanie aplikacji w czasie wykonywania, nie można użyć generowania kodu, który generuje kod źródłowy, zanim aplikacja jest kompilowana. Zamiast tego można zaprojektować aplikację odczytywanie modelu UML lub DSL i różnią się odpowiednio jego zachowanie. Aby uzyskać więcej informacji, zobacz:  
   
--   [Odczytywanie modelu UML w kodzie programu](../modeling/read-a-uml-model-in-program-code.md)  
+- [Odczytywanie modelu UML w kodzie programu](../modeling/read-a-uml-model-in-program-code.md)  
   
--   [Instrukcje: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+- [Instrukcje: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
- Ta metoda również będą stosowane przyrostowo, ale ma więcej pracy na początku. Musisz napisać kod, który będzie odczytania modelu i skonfigurować strukturę, która zezwala na jego wartości umożliwić dostęp do zmiennej części. Zmienna części ogólnego jest droższe niż generowania kodu.  
+  Ta metoda również będą stosowane przyrostowo, ale ma więcej pracy na początku. Musisz napisać kod, który będzie odczytania modelu i skonfigurować strukturę, która zezwala na jego wartości umożliwić dostęp do zmiennej części. Zmienna części ogólnego jest droższe niż generowania kodu.  
   
- Aplikacja ogólna zwykle wykonuje mniej również niż ich odpowiedniki określone. Jeśli wydajność ma kluczowe znaczenie podczas, plan projektu powinna zawierać oceny tego ryzyka.  
+  Aplikacja ogólna zwykle wykonuje mniej również niż ich odpowiedniki określone. Jeśli wydajność ma kluczowe znaczenie podczas, plan projektu powinna zawierać oceny tego ryzyka.  
   
 ## <a name="developing-a-derived-application"></a>Opracowywanie aplikacji pochodne  
  Ogólne wytyczne mogą się okazać przydatne.  

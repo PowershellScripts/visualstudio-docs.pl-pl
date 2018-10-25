@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 78ef4b1a0e6622b077039797df2adcb02a355df0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: afe6a273716ab5e531781634be959c80d30a9e26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834024"
 ---
 # <a name="understanding-the-dsl-code"></a>Znajomość kodu DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,25 +115,25 @@ Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, któ
   
  Każda klasa domeny zawiera:  
   
--   Definicja właściwości i klasy zagnieżdżone obsługi dla każdej właściwości domeny. Można zastąpić OnValueChanging() i OnValueChanged(). Aby uzyskać więcej informacji, zobacz [Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md).  
+- Definicja właściwości i klasy zagnieżdżone obsługi dla każdej właściwości domeny. Można zastąpić OnValueChanging() i OnValueChanged(). Aby uzyskać więcej informacji, zobacz [Obsługa zmian wartości właściwości domeny](../modeling/domain-property-value-change-handlers.md).  
   
-     W przykładzie w języku DSL `Comment` klasy zawiera właściwość `Text` i klasę programu obsługi `TextPropertyHandler`.  
+   W przykładzie w języku DSL `Comment` klasy zawiera właściwość `Text` i klasę programu obsługi `TextPropertyHandler`.  
   
--   Metoda dostępu właściwości relacji, w których uczestniczy tą klasą domeny. (Brak jest nie klasy zagnieżdżonej dla właściwości roli).  
+- Metoda dostępu właściwości relacji, w których uczestniczy tą klasą domeny. (Brak jest nie klasy zagnieżdżonej dla właściwości roli).  
   
-     W przykładzie w języku DSL `Comment` klasa ma metody dostępu uzyskujących dostęp do jego nadrzędnego modelu przy użyciu relacji osadzania `ComponentModelHasComments`.  
+   W przykładzie w języku DSL `Comment` klasa ma metody dostępu uzyskujących dostęp do jego nadrzędnego modelu przy użyciu relacji osadzania `ComponentModelHasComments`.  
   
--   Konstruktory. Jeśli chcesz je zastąpić, ustaw **ma Konstruktor niestandardowy** dla klasy domeny.  
+- Konstruktory. Jeśli chcesz je zastąpić, ustaw **ma Konstruktor niestandardowy** dla klasy domeny.  
   
--   Metody obsługi grupy prototyp (EGP) elementu. Są one niezbędne, jeśli użytkownik może *scalania* (Dodaj) inny element do wystąpienia tej klasy. Zazwyczaj użytkownik robi to poprzez przeciąganie z narzędziem element lub innego kształtu lub wklejając.  
+- Metody obsługi grupy prototyp (EGP) elementu. Są one niezbędne, jeśli użytkownik może *scalania* (Dodaj) inny element do wystąpienia tej klasy. Zazwyczaj użytkownik robi to poprzez przeciąganie z narzędziem element lub innego kształtu lub wklejając.  
   
-     W przykładzie na składnika można scalić DSL, dane wejściowe portu lub dane wyjściowe. Ponadto składniki i komentarze scalimy na modelu. Program  
+   W przykładzie na składnika można scalić DSL, dane wejściowe portu lub dane wyjściowe. Ponadto składniki i komentarze scalimy na modelu. Program  
   
-     Metody obsługi EGP w klasie składnika Zezwalaj na składnik do akceptowania portów, ale nie komentarzy. Program obsługi EGP w klasie modelu głównego akceptuje komentarze i składników, ale nie portów.  
+   Metody obsługi EGP w klasie składnika Zezwalaj na składnik do akceptowania portów, ale nie komentarzy. Program obsługi EGP w klasie modelu głównego akceptuje komentarze i składników, ale nie portów.  
   
- `DomainModel.cs`  
+  `DomainModel.cs`  
   
- Klasa, która reprezentuje modelu domeny. Jest pochodną <xref:Microsoft.VisualStudio.Modeling.DomainModel>.  
+  Klasa, która reprezentuje modelu domeny. Jest pochodną <xref:Microsoft.VisualStudio.Modeling.DomainModel>.  
   
 > [!NOTE]
 >  Nie jest taka sama jak klasa główna modelu.  
@@ -166,31 +166,31 @@ Rozwiązania języka specyficznego dla domeny (DSL) generuje interfejs API, któ
   
  `SerializationHelper.cs`  
   
--   Metoda sprawdzania poprawności, aby upewnić się, czy nie dwa elementy odwołują się tej samej krótkiej nazwy. Aby uzyskać więcej informacji, zobacz [Dostosowywanie przechowywania plików i serializacji XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
+- Metoda sprawdzania poprawności, aby upewnić się, czy nie dwa elementy odwołują się tej samej krótkiej nazwy. Aby uzyskać więcej informacji, zobacz [Dostosowywanie przechowywania plików i serializacji XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
--   Klasa SerializationHelper dostarcza funkcje, które często używanych przez klasy serializacji.  
+- Klasa SerializationHelper dostarcza funkcje, które często używanych przez klasy serializacji.  
   
- `Serializer.cs`  
+  `Serializer.cs`  
   
- Klasa serializatorów dla każdej klasy domeny, relacji, kształt, łącznik, diagramu i modelu.  
+  Klasa serializatorów dla każdej klasy domeny, relacji, kształt, łącznik, diagramu i modelu.  
   
- Wiele funkcji w ramach tych zajęć kontrolowana przez ustawienia w Eksplorator DSL w obszarze **zachowanie serializacji kodu Xml**.  
+  Wiele funkcji w ramach tych zajęć kontrolowana przez ustawienia w Eksplorator DSL w obszarze **zachowanie serializacji kodu Xml**.  
   
- `Shapes.cs`  
+  `Shapes.cs`  
   
- Klasa, dla każdej klasy kształtu w definicji DSL. Kształty są uzyskiwane z <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>. Aby uzyskać więcej informacji, zobacz [Dostosowywanie przechowywania plików i serializacji XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
+  Klasa, dla każdej klasy kształtu w definicji DSL. Kształty są uzyskiwane z <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>. Aby uzyskać więcej informacji, zobacz [Dostosowywanie przechowywania plików i serializacji XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
- Aby zastąpić wygenerowane metody przy użyciu metody w klasie częściowej, należy ustawić **Generates Double Derived** dla łącznika w definicji DSL. Aby zastąpić konstruktora z własnym kodem, ustaw **ma Konstruktor niestandardowy**.  
+  Aby zastąpić wygenerowane metody przy użyciu metody w klasie częściowej, należy ustawić **Generates Double Derived** dla łącznika w definicji DSL. Aby zastąpić konstruktora z własnym kodem, ustaw **ma Konstruktor niestandardowy**.  
   
- Aby kolor i niektórych innych zmiennych funkcji stylu w czasie wykonywania, kliknij prawym przyciskiem myszy klas na diagramie w definicji DSL, a następnie wskaż **Dodaj udostępniane**.  
+  Aby kolor i niektórych innych zmiennych funkcji stylu w czasie wykonywania, kliknij prawym przyciskiem myszy klas na diagramie w definicji DSL, a następnie wskaż **Dodaj udostępniane**.  
   
- Aby wprowadzić zmienną funkcje dodatkowe style w czasie wykonywania, na przykład zobacz <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> i <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>  
+  Aby wprowadzić zmienną funkcje dodatkowe style w czasie wykonywania, na przykład zobacz <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> i <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>  
   
- `ToolboxHelper.cs`  
+  `ToolboxHelper.cs`  
   
- Konfiguruje, instalując element grupy prototypów do narzędzi elementów przybornika. Kopie tych prototypów są scalane z elementów docelowych, gdy użytkownik uruchomi narzędzie.  
+  Konfiguruje, instalując element grupy prototypów do narzędzi elementów przybornika. Kopie tych prototypów są scalane z elementów docelowych, gdy użytkownik uruchomi narzędzie.  
   
- Można zastąpić `CreateElementPrototype()` zdefiniować element przybornika, który tworzy grupę kilka obiektów. Na przykład można zdefiniować elementu do reprezentowania obiektów, które składniki podrzędne. Po zmianie kodu, zresetuj wystąpienie eksperymentalne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aby wyczyścić pamięć podręczną przybornika.  
+  Można zastąpić `CreateElementPrototype()` zdefiniować element przybornika, który tworzy grupę kilka obiektów. Na przykład można zdefiniować elementu do reprezentowania obiektów, które składniki podrzędne. Po zmianie kodu, zresetuj wystąpienie eksperymentalne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aby wyczyścić pamięć podręczną przybornika.  
   
 ## <a name="generated-files-in-the-dslpackage-project"></a>Wygenerowane pliki w projekcie DslPackage  
  DslPackage couples modelu DSL, który ma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] powłoki, zarządzanie okno przybornika i menu poleceń. Większość klas są double derived, dzięki czemu można przesłonić z ich metod.  

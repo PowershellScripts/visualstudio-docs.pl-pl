@@ -16,12 +16,12 @@ ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd93f4e0f2d9cca4d7fd12f9c69733655cb99127
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fffb77788a4ac88f2ee607dd989de8c7aab8aebf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821932"
 ---
 # <a name="custom-colorable-items"></a>Niestandardowe elementy z możliwością kolorowania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,31 +45,31 @@ Lista typów można zastąpić dla kolorowanie, takich jak słowa kluczowe i kom
   
 ## <a name="implementing-custom-colorable-items"></a>Implementowanie niestandardowych elementów z możliwością kolorowania  
   
-1.  Zdefiniuj, co musi być w trybie kolorowym w swoim języku, na przykład — słowo kluczowe, Operator i identyfikator.  
+1. Zdefiniuj, co musi być w trybie kolorowym w swoim języku, na przykład — słowo kluczowe, Operator i identyfikator.  
   
-2.  Utwórz wyliczenie z tych elementów z możliwością kolorowania.  
+2. Utwórz wyliczenie z tych elementów z możliwością kolorowania.  
   
-3.  Skojarz typy tokenów zwrócone przez analizator i skaner z wartości wyliczenia.  
+3. Skojarz typy tokenów zwrócone przez analizator i skaner z wartości wyliczenia.  
   
-     Na przykład wartości reprezentujących typy tokenów, może być takie same wartości w wyliczeniu niestandardowe elementy z możliwością kolorowania.  
+    Na przykład wartości reprezentujących typy tokenów, może być takie same wartości w wyliczeniu niestandardowe elementy z możliwością kolorowania.  
   
-4.  W danej implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> method in Class metoda swoje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> obiektu, należy wypełnić listę atrybutów przy użyciu wartości z wyliczenia swoje niestandardowe elementy z możliwością kolorowania, odpowiadające typy tokenów zwrócone przez analizator i skaner.  
+4. W danej implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> method in Class metoda swoje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> obiektu, należy wypełnić listę atrybutów przy użyciu wartości z wyliczenia swoje niestandardowe elementy z możliwością kolorowania, odpowiadające typy tokenów zwrócone przez analizator i skaner.  
   
-5.  W tej samej klasy, która implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfejsu, implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> interfejsu i jego dwóch metod <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.  
+5. W tej samej klasy, która implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfejsu, implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> interfejsu i jego dwóch metod <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A>.  
   
-6.  Implementowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> interfejsu.  
+6. Implementowanie <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> interfejsu.  
   
-7.  Jeśli chcesz obsługiwać kolor 24-bitowego lub o wysokiej wartości, również zaimplementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfejsu.  
+7. Jeśli chcesz obsługiwać kolor 24-bitowego lub o wysokiej wartości, również zaimplementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfejsu.  
   
-8.  W obiekt usługi języka, Utwórz listę zawierającą Twoje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> obiektów, po jednym dla każdego elementu z możliwością kolorowania zidentyfikuje skanera lub analizatora.  
+8. W obiekt usługi języka, Utwórz listę zawierającą Twoje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> obiektów, po jednym dla każdego elementu z możliwością kolorowania zidentyfikuje skanera lub analizatora.  
   
-     Przy użyciu odpowiedniej wartości z wyliczenia niestandardowe elementy z możliwością kolorowania można uzyskać dostęp do każdego elementu na liście. Użyj wartości wyliczenia jako indeks do listy. Pierwszy element na liście nigdy nie jest dostępne, ponieważ odnosi się do tekstu domyślnego stylu, który [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zawsze obsługuje sam. Można zniwelować to przez wstawienie elementu z możliwością kolorowania symbolu zastępczego na początku listy.  
+    Przy użyciu odpowiedniej wartości z wyliczenia niestandardowe elementy z możliwością kolorowania można uzyskać dostęp do każdego elementu na liście. Użyj wartości wyliczenia jako indeks do listy. Pierwszy element na liście nigdy nie jest dostępne, ponieważ odnosi się do tekstu domyślnego stylu, który [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zawsze obsługuje sam. Można zniwelować to przez wstawienie elementu z możliwością kolorowania symbolu zastępczego na początku listy.  
   
 9. W danej implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> metody zwracają liczbę elementów na liście niestandardowych elementów z możliwością kolorowania.  
   
 10. W danej implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> metody zwracają żądanego elementu z możliwością kolorowania z listy.  
   
- Przykładowy sposób implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfejsy, zobacz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
+    Przykładowy sposób implementacji <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> interfejsy, zobacz <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem>.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Model starszej wersji usługi językowej](../../extensibility/internals/model-of-a-legacy-language-service.md)   

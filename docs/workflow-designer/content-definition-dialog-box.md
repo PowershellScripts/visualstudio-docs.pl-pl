@@ -1,5 +1,5 @@
 ---
-title: Projektant przepływu pracy — okno dialogowe definicję zawartości
+title: Projektant przepływu pracy — okno dialogowe definicji zawartości
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,29 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc434e35755b04054d1e24da97e8a4699af7df0e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f8307db1858ba50d209e456dc17ddd36dcaab722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870780"
 ---
 # <a name="content-definition-dialog-box"></a>Definicja zawartości, okno dialogowe
 
-**Definicję zawartości** okno dialogowe służy do konfigurowania w Projektancie przepływów pracy **zawartości** właściwości <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>, i <xref:System.ServiceModel.Activities.ReceiveReply> działania. Aby uzyskać więcej informacji na temat projektantów działań, które używają tego pola, zobacz [wysyłania](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md), i [SendAndReceiveReply ](../workflow-designer/sendandreceivereply-template-designer.md) tematów.
+**Definicji zawartości** okno dialogowe służy do konfigurowania w Projektancie przepływu pracy **zawartości** właściwości <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>, i <xref:System.ServiceModel.Activities.ReceiveReply> działania. Aby uzyskać więcej informacji na temat Projektanci działań, które używają tego pola, zobacz [wysyłania](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md), i [SendAndReceiveReply ](../workflow-designer/sendandreceivereply-template-designer.md) tematów.
 
-W poniższej tabeli opisano elementy interfejsu użytkownika **inicjowania korelacji** okno dialogowe:
+W poniższej tabeli opisano elementy interfejsu użytkownika **inicjowanie korelacji** okno dialogowe:
 
 |Element interfejsu użytkownika|Opis|
-|----------------|-----------------|
-|**Komunikat**|Określa komunikat, który zawartości z **komunikatu danych** pole tekstowe wyrażenie i typu przy użyciu **typ komunikatu** pole listy rozwijanej. Domyślnie **definicję zawartości** używa <xref:System.ServiceModel.Activities.ReceiveMessageContent>, która oczekuje <xref:System.ServiceModel.Channels.Message> lub typu w definicji usługi przepływu pracy kontraktu komunikatu.|
-|**Parametry**|Kliknij przycisk **parametry** przycisk radiowy, aby użyć <xref:System.ServiceModel.Activities.ReceiveParametersContent>, która oczekuje kontraktu danych. Użyj siatki danych, aby ustawić ogólnego Kolekcja <xref:System.Activities.OutArgument> pary, których wartości są przypisane do parametrów zmiennych w przepływie pracy bieżącego klucza i wartości.|
+|-|-----------------|
+|**Komunikat**|Określa komunikat, który zawartość **komunikatu danych** pole tekstowe wyrażenie i typu przy użyciu **typ komunikatu** pole listy rozwijanej. Domyślnie **definicji zawartości** używa <xref:System.ServiceModel.Activities.ReceiveMessageContent>, która oczekuje <xref:System.ServiceModel.Channels.Message> lub typu w definicji usługi przepływu pracy kontraktu komunikatu.|
+|**Parametry**|Kliknij przycisk **parametry** przycisk radiowy, aby użyć <xref:System.ServiceModel.Activities.ReceiveParametersContent>, którego oczekuje kontraktu danych. Użyj siatki danych, aby ustawić ogólnego zbiór <xref:System.Activities.OutArgument> których wartości są przypisane do parametrów zmiennych w przepływie pracy bieżącego par klucz/wartość.|
 
-**Definicję zawartości** okno dialogowe jest używany przez **wysyłania**, **Receive**, **ReceiveAndSendReply**, i  **SendAndReceiveReply** projektantów. Uzyskiwanie dostępu do nich jest podobnie w każdym przypadku i jest tu używany w przypadku odbierania ilustrujący procedury.
+**Definicji zawartości** okno dialogowe jest używany przez **wysyłania**, **Receive**, **ReceiveAndSendReply**, i  **SendAndReceiveReply** projektantów. Uzyskiwanie dostępu do nich przypomina w każdym przypadku, a w przypadku odbierania służy tutaj, aby zilustrować procedurę.
 
-**Receive** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.Receive> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> Receive. Wybierz **Receive** Projektant działań i kliknij przycisk wielokropka obok tekstu (zawartość) dla **zawartości** właściwości w siatce właściwości **definicję zawartości**okno dialogowe okna.
+**Receive** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie działań są zazwyczaj umieszczone. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.Receive> działanie przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> Receive. Wybierz **Receive** projektanta działań i kliknij przycisk wielokropka, obok tekstu (zawartość) dla **zawartości** właściwość w siatce właściwości **definicji zawartości**wyświetlane okno dialogowe.
 
-Zawartość może być określone w **komunikat** sekcji <xref:System.ServiceModel.Activities.ReceiveMessageContent> działania lub w **parametru** sekcji <xref:System.ServiceModel.Activities.ReceiveParametersContent> działania.
+Zawartość może być określone w **komunikat** sekcji <xref:System.ServiceModel.Activities.ReceiveMessageContent> działania lub w ramach **parametru** sekcji <xref:System.ServiceModel.Activities.ReceiveParametersContent> działania.
 
 ## <a name="see-also"></a>Zobacz także
 

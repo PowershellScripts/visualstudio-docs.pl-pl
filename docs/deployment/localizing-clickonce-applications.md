@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7897869e8cc010d54c1914cbfa8ca763dd3a3bfa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2a4234d8f6ee9fa946f2accfd50a587e6dbd8068
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822115"
 ---
 # <a name="localize-clickonce-applications"></a>Lokalizowanie aplikacji ClickOnce
 Lokalizacja jest procesem tworzenia aplikacji odpowiednie dla określonej kultury. Ten proces obejmuje tłumaczenie tekstu interfejsu użytkownika na język określonego regionu, przy użyciu poprawną datę i formatowania waluty, dopasowywanie rozmiaru formantów w formularzu, a dublowania kontrolki od prawej do lewej w razie potrzeby.  
@@ -76,9 +76,9 @@ Lokalizacja jest procesem tworzenia aplikacji odpowiednie dla określonej kultur
   
  Masz trzy opcje do testowania wdrożenia zlokalizowane przed udostępnieniem aplikacji dla klientów:  
   
--   Można uruchomić usługi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji odpowiednie zlokalizowane wersje systemu Windows.  
+- Można uruchomić usługi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji odpowiednie zlokalizowane wersje systemu Windows.  
   
--   Możesz ustawić <xref:System.Threading.Thread.CurrentUICulture%2A> właściwość programowo w aplikacji. (Ta właściwość musi być ustawiona, zanim wywołasz <xref:System.Windows.Forms.Application.Run%2A> metody.)  
+- Możesz ustawić <xref:System.Threading.Thread.CurrentUICulture%2A> właściwość programowo w aplikacji. (Ta właściwość musi być ustawiona, zanim wywołasz <xref:System.Windows.Forms.Application.Run%2A> metody.)  
   
 ## <a name="see-also"></a>Zobacz także  
  [\<assemblyIdentity > element](../deployment/assemblyidentity-element-clickonce-deployment.md)   

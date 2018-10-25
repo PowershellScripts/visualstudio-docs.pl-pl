@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a9cb92b601fa8ba03e11d64e66bd24f9b9cca26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d841150a35e88a1ac5bf8a300f9c74fc8bbdf99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851065"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Szybki start: Analiza kodu dla C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,15 +81,15 @@ Aby poprawić jakość aplikacji, należy regularnie uruchamiania analizy kodu d
   
  Aby uruchomić analizę kodu na rozwiązanie:  
   
--   Na **kompilacji** menu, wybierz **Uruchom analizę kodu dla rozwiązania**.  
+- Na **kompilacji** menu, wybierz **Uruchom analizę kodu dla rozwiązania**.  
   
- Aby uruchomić analizę kodu w projekcie:  
+  Aby uruchomić analizę kodu w projekcie:  
   
--   W Eksploratorze rozwiązań wybierz nazwę projektu.  
+- W Eksploratorze rozwiązań wybierz nazwę projektu.  
   
--   Na **kompilacji** menu, wybierz **Uruchom analizę kodu dla** *Nazwa projektu*.  
+- Na **kompilacji** menu, wybierz **Uruchom analizę kodu dla** *Nazwa projektu*.  
   
- Projektu lub rozwiązania jest kompilowana i uruchamia analizy kodu. Wyniki są wyświetlane w oknie analizy kodu.  
+  Projektu lub rozwiązania jest kompilowana i uruchamia analizy kodu. Wyniki są wyświetlane w oknie analizy kodu.  
   
 ##  <a name="BKMK_Analyze"></a> Analizowanie i rozwiązywanie ostrzeżenia analizy kodu  
  Aby analizować szczególne ostrzeżenie, wybierz tytuł ostrzeżenia w oknie analizy kodu. Ostrzeżenie rozwija, aby wyświetlić dodatkowe informacje o problemie. Jeśli to możliwe, analizy kodu wyświetla numery wierszy i logika analizy, które doprowadziło do ostrzeżenia. Aby uzyskać szczegółowe informacje na temat ostrzeżenia, w tym możliwe rozwiązania problemu należy wybrać identyfikator ostrzeżenia, aby wyświetlić tematu pomocy w bibliotece MSND dla wiadomości.  
@@ -106,13 +106,13 @@ Aby poprawić jakość aplikacji, należy regularnie uruchamiania analizy kodu d
   
  Aby pominąć Ostrzeżenie:  
   
-1.  Jeśli nie są wyświetlane szczegółowe informacje, wybierz tytuł ostrzeżenie, aby ją rozwinąć.  
+1. Jeśli nie są wyświetlane szczegółowe informacje, wybierz tytuł ostrzeżenie, aby ją rozwinąć.  
   
-2.  Wybierz **akcje** widocznego u dołu ostrzeżenia.  
+2. Wybierz **akcje** widocznego u dołu ostrzeżenia.  
   
-3.  Wybierz **Pomiń komunikat** , a następnie wybierz **w źródłowej**.  
+3. Wybierz **Pomiń komunikat** , a następnie wybierz **w źródłowej**.  
   
- Pomijanie wiadomości wstawia `#pragma warning (disable:` *WarningId* `)` który umożliwia pominięcie ostrzeżenia dla wiersza kodu.  
+   Pomijanie wiadomości wstawia `#pragma warning (disable:` *WarningId* `)` który umożliwia pominięcie ostrzeżenia dla wiersza kodu.  
   
 ##  <a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a> Tworzenie elementów roboczych dla kodu ostrzeżenia analizy  
  Element roboczy, funkcja śledzenia umożliwia rejestrowanie błędów z poziomu programu Visual Studio. Aby użyć tej funkcji, należy połączyć się z wystąpieniem programu Team Foundation Server.  

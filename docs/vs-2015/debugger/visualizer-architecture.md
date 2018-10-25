@@ -19,25 +19,25 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc9f03650e4e99b7a7277f183993b84d79a67ab2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ec6a27b8fcd35b4b74108f7bc608c975e120b02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217129"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828692"
 ---
 # <a name="visualizer-architecture"></a>Architektura wizualizatora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Architektura wizualizatora debuger ma dwie części:  
   
--   *Debugera po stronie* jest uruchamiany w ramach debugera programu Visual Studio. Kod po stronie debugera tworzy i wyświetla interfejsu użytkownika dla usługi wizualizatora.  
+- *Debugera po stronie* jest uruchamiany w ramach debugera programu Visual Studio. Kod po stronie debugera tworzy i wyświetla interfejsu użytkownika dla usługi wizualizatora.  
   
--   *Po stronie debugowanego obiektu* jest uruchamiany w ramach procesu programu Visual Studio debuguje ( *obiekt debugowany*).  
+- *Po stronie debugowanego obiektu* jest uruchamiany w ramach procesu programu Visual Studio debuguje ( *obiekt debugowany*).  
   
- Wizualizatora jest składnikiem debugera, które umożliwiają debugerowi wyświetlić (*wizualizować*) zawartości obiektu danych w postaci zrozumiałe i zrozumiałej. Niektóre wizualizatorów obsługuje także edytować obiekt danych. Pisząc wizualizatory niestandardowe, można rozszerzyć debuger mógł obsłużyć własne niestandardowe typy danych.  
+  Wizualizatora jest składnikiem debugera, które umożliwiają debugerowi wyświetlić (*wizualizować*) zawartości obiektu danych w postaci zrozumiałe i zrozumiałej. Niektóre wizualizatorów obsługuje także edytować obiekt danych. Pisząc wizualizatory niestandardowe, można rozszerzyć debuger mógł obsłużyć własne niestandardowe typy danych.  
   
- Obiekt danych, aby być wizualizowane znajduje się w debugowanym procesie ( *obiekt debugowany* procesu). Interfejs użytkownika, który spowoduje wyświetlenie danych jest tworzony w ramach procesu debugera programu Visual Studio:  
+  Obiekt danych, aby być wizualizowane znajduje się w debugowanym procesie ( *obiekt debugowany* procesu). Interfejs użytkownika, który spowoduje wyświetlenie danych jest tworzony w ramach procesu debugera programu Visual Studio:  
   
 |Proces w debugerze|Obiekt debugowany proces|  
 |----------------------|----------------------|  

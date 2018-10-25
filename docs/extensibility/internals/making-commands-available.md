@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd7344fe7227f6fa7afd00684a99d8172bad8736
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c1292dc3879effa53f3b4a41b87374a3a5f46ff0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510940"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857136"
 ---
 # <a name="making-commands-available"></a>Udostępnianie poleceń
 Gdy wiele pakietów VSPackage zostaną dodane do programu Visual Studio, interfejs użytkownika (UI) mogą stać się przepełniona za pomocą poleceń. Można programować pakietu w celu ograniczenia tego problemu w następujący sposób:
@@ -54,12 +54,13 @@ Należy zauważyć, że opóźnionego ładowania może również zwiększyć wyd
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitoruje zmiany, które wynikają z akcje użytkownika, takie jak ładowania projektu lub ruch do edycji do tworzenia. Wraz ze zmianami, wygląd IDE automatycznie zostanie zmodyfikowany. W poniższej tabeli przedstawiono cztery główne kontekstach IDE zmienimy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] monitorów.
 
-|Typ kontekstu|Opis|
-|---------------------|-----------------|
-|Typ aktywnego projektu|Dla większości typów projektów to `GUID` wartość jest taka sama jak identyfikator GUID pakietu VSPackage, który implementuje projektu. Jednak [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projekty korzystają z tego typu projektu `GUID` jako wartość.|
-|Aktywne okno|Zazwyczaj są to okna dokumentów aktywnych ostatniego ustanawia bieżącego kontekstu interfejsu użytkownika dla powiązań klawiszy. Jednak może również być okna narzędzi, które zawiera tabelę powiązanie klucza, która przypomina wewnętrznej przeglądarki sieci Web. Dla systemu windows z wieloma kartami dokumentu, takich jak edytor HTML, każda karta ma innego polecenia kontekst `GUID`.|
-|Usługa Active języka|Usługa języka, który jest skojarzony z pliku który jest aktualnie wyświetlany w edytorze tekstów.|
-|Aktywnego okna narzędzi|Okna narzędzi, które jest otwarty i ma fokus.|
+
+| Typ kontekstu | Opis |
+|-------------------------| - |
+| Typ aktywnego projektu | Dla większości typów projektów to `GUID` wartość jest taka sama jak identyfikator GUID pakietu VSPackage, który implementuje projektu. Jednak [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projekty korzystają z tego typu projektu `GUID` jako wartość. |
+| Aktywne okno | Zazwyczaj są to okna dokumentów aktywnych ostatniego ustanawia bieżącego kontekstu interfejsu użytkownika dla powiązań klawiszy. Jednak może również być okna narzędzi, które zawiera tabelę powiązanie klucza, która przypomina wewnętrznej przeglądarki sieci Web. Dla systemu windows z wieloma kartami dokumentu, takich jak edytor HTML, każda karta ma innego polecenia kontekst `GUID`. |
+| Usługa Active języka | Usługa języka, który jest skojarzony z pliku który jest aktualnie wyświetlany w edytorze tekstów. |
+| Aktywnego okna narzędzi | Okna narzędzi, które jest otwarty i ma fokus. |
 
  Piąty obszar głównych kontekstu jest stan interfejsu użytkownika IDE. Konteksty interfejsu użytkownika są identyfikowane za pomocą kontekstu aktywnego polecenia `GUID`s w następujący sposób:
 

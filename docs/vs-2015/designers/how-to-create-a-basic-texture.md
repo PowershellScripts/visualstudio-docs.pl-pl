@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 143bf4f094a603c20e12b52adb452b193fb57a33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2312b82fbcb6f4cd4ed00b288cb87283538cb372
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292802"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855836"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Porady: tworzenie tekstury podstawowej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ W tym dokumencie pokazano, jak utworzyć teksturę podstawową za pomocą edytor
   
 #### <a name="to-create-a-bullseye-target-texture"></a>Aby utworzyć teksturę target "bullseye"  
   
-1.  Utwórz teksturę do pracy. Aby uzyskać informacje dotyczące sposobu dodawania tekstury do projektu, zobacz sekcję pierwsze kroki w [edytora obrazów](../designers/image-editor.md).  
+1. Utwórz teksturę do pracy. Aby uzyskać informacje dotyczące sposobu dodawania tekstury do projektu, zobacz sekcję pierwsze kroki w [edytora obrazów](../designers/image-editor.md).  
   
-2.  Ustaw wielkość obrazu do 512 x 512 pikseli. W **właściwości** okna, ustaw wartości **szerokość** i **wysokość** właściwości `512`.  
+2. Ustaw wielkość obrazu do 512 x 512 pikseli. W **właściwości** okna, ustaw wartości **szerokość** i **wysokość** właściwości `512`.  
   
-3.  Na pasku narzędzi edytora obrazów, wybierz **wypełnienia** narzędzia. **Właściwości** oknie zostaną wyświetlone właściwości **wypełnienia** narzędzie wraz z właściwości obrazu.  
+3. Na pasku narzędzi edytora obrazów, wybierz **wypełnienia** narzędzia. **Właściwości** oknie zostaną wyświetlone właściwości **wypełnienia** narzędzie wraz z właściwości obrazu.  
   
-4.  Ustaw kolor pierwszego planu, aby całkowicie przezroczysty czarny. W **właściwości** okna w **kolory** grupie właściwości, wybierz opcję **pierwszego planu**. Ustaw wartości **R**, **G**, **B**, i **A** właściwości obok selektor kolorów do `0`.  
+4. Ustaw kolor pierwszego planu, aby całkowicie przezroczysty czarny. W **właściwości** okna w **kolory** grupie właściwości, wybierz opcję **pierwszego planu**. Ustaw wartości **R**, **G**, **B**, i **A** właściwości obok selektor kolorów do `0`.  
   
-5.  Na pasku narzędzi edytora obrazów, wybierz **wypełnienia** narzędzia, a następnie naciśnij i przytrzymaj klawisz Shift i wybierz dowolny punkt na obrazie. Przy użyciu klawisza Shift powoduje, że wartość alfa odpowiadającą koloru wypełnienia zastąpić kolor obrazu. w przeciwnym razie wartość alfa odpowiadającą umożliwia mieszanie kolor wypełnienia wraz z kolorów na obrazie.  
+5. Na pasku narzędzi edytora obrazów, wybierz **wypełnienia** narzędzia, a następnie naciśnij i przytrzymaj klawisz Shift i wybierz dowolny punkt na obrazie. Przy użyciu klawisza Shift powoduje, że wartość alfa odpowiadającą koloru wypełnienia zastąpić kolor obrazu. w przeciwnym razie wartość alfa odpowiadającą umożliwia mieszanie kolor wypełnienia wraz z kolorów na obrazie.  
   
-    > [!IMPORTANT]
-    >  Ten krok, wraz z wybór koloru w poprzednim kroku gwarantuje, że podstawowy obraz jest gotowy do "bullseye" docelową teksturę będzie rysowania. Gdy obraz jest wypełniany przezroczysty czarny — i dlatego jest czarny, obramowania docelowy — nie będzie żadnych artefaktów wygładzania wokół obiektu docelowego.  
+   > [!IMPORTANT]
+   >  Ten krok, wraz z wybór koloru w poprzednim kroku gwarantuje, że podstawowy obraz jest gotowy do "bullseye" docelową teksturę będzie rysowania. Gdy obraz jest wypełniany przezroczysty czarny — i dlatego jest czarny, obramowania docelowy — nie będzie żadnych artefaktów wygładzania wokół obiektu docelowego.  
   
-6.  Na pasku narzędzi edytora obrazów, wybierz **elipsy** narzędzia.  
+6. Na pasku narzędzi edytora obrazów, wybierz **elipsy** narzędzia.  
   
-7.  Ustaw kolor pierwszego planu na całkowicie nieprzezroczysty czarny. Ustaw wartości **R**, **G**, i **B** właściwości `0` i wartość **A** właściwość `255`.  
+7. Ustaw kolor pierwszego planu na całkowicie nieprzezroczysty czarny. Ustaw wartości **R**, **G**, i **B** właściwości `0` i wartość **A** właściwość `255`.  
   
-8.  Na biały całkowicie nieprzezroczysty, ustaw kolor tła. W **właściwości** okna w **kolory** grupie właściwości, wybierz opcję **tła**. Ustaw wartości **R**, **G**, **B**, i **A** właściwości `255`.  
+8. Na biały całkowicie nieprzezroczysty, ustaw kolor tła. W **właściwości** okna w **kolory** grupie właściwości, wybierz opcję **tła**. Ustaw wartości **R**, **G**, **B**, i **A** właściwości `255`.  
   
 9. Ustaw szerokość konturu elipsy. W **właściwości** okna w **wygląd** grupy właściwość, ustaw wartość **szerokość** właściwość `8`.  
   
@@ -89,11 +89,11 @@ W tym dokumencie pokazano, jak utworzyć teksturę podstawową za pomocą edytor
   
 17. Rysowanie okrąg inny od współrzędnych pikseli `(192, 192)` do współrzędnej pikseli `(320, 320)`.  
   
- Docelową teksturę "bullseye" zostało zakończone. Oto finalnego obrazu, przedstawiono przezroczystości.  
+    Docelową teksturę "bullseye" zostało zakończone. Oto finalnego obrazu, przedstawiono przezroczystości.  
   
- ![Ukończone "bullseye" docelowej tekstury](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
+    ![Ukończone "bullseye" docelowej tekstury](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
- Kolejnym krokiem może wygenerować poziomy MIP dla tej tekstury. Aby uzyskać informacje, zobacz [instrukcje: tworzenie i poziomy MIP Modyfikuj](../designers/how-to-create-and-modify-mip-levels.md).  
+    Kolejnym krokiem może wygenerować poziomy MIP dla tej tekstury. Aby uzyskać informacje, zobacz [instrukcje: tworzenie i poziomy MIP Modyfikuj](../designers/how-to-create-and-modify-mip-levels.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytor obrazów](../designers/image-editor.md)

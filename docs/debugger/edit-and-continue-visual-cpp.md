@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b46be8e9ad7a4a437f1009eb30407428f31b425b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7e468f75abbadbe46ea973a5c04d2e286fcfaca5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279157"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867705"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edytuj i kontynuuj (Visual C++)
 W projektach języka Visual C++ można użyć Edytuj i Kontynuuj. Zobacz [obsługiwane zmiany kodu (C++, Distributed File System)](../debugger/supported-code-changes-cpp.md) informacji o ograniczeniach operacji Edytuj i Kontynuuj.
@@ -41,17 +41,17 @@ Aby uzyskać więcej informacji na temat ulepszenia programu Visual Studio 2015 
 > [!IMPORTANT]
 > Ustawienia kompilacji wymagane i inne informacje dotyczące zgodności z funkcji, zobacz [C++ Edytuj i Kontynuuj w Visual Studio 2015 Update 3] (https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/.
   
-1.  Jeśli jesteś w sesji debugowania, Zatrzymaj debugowanie (**Shift + F5**).
+1. Jeśli jesteś w sesji debugowania, Zatrzymaj debugowanie (**Shift + F5**).
 
 2. Na **narzędzia** menu, wybierz **opcje**.
   
-3.  W **opcje** okno dialogowe, wybierz opcję **debugowanie > Ogólne**.
+3. W **opcje** okno dialogowe, wybierz opcję **debugowanie > Ogólne**.
 
-4.  Aby włączyć, wybierz **Włącz edytowanie i kontynuowanie**. Aby wyłączyć, usuń zaznaczenie pola wyboru.
+4. Aby włączyć, wybierz **Włącz edytowanie i kontynuowanie**. Aby wyłączyć, usuń zaznaczenie pola wyboru.
   
-5.  W **Edytuj i Kontynuuj** grupy, zaznacz lub wyczyść **Włączanie natywnego Edytuj i Kontynuuj** pole wyboru.  
+5. W **Edytuj i Kontynuuj** grupy, zaznacz lub wyczyść **Włączanie natywnego Edytuj i Kontynuuj** pole wyboru.  
   
- Zmieniając to ustawienie ma wpływ na wszystkie projekty, którą pracujesz. Nie trzeba ponownie skompiluj aplikację po zmianie tego ustawienia. Jeśli kompilujesz aplikację z poziomu wiersza polecenia lub pliku reguł programu make, ale debugowanie w środowisku Visual Studio, nadal można Edytuj i Kontynuuj po ustawieniu **/zi** opcji.  
+   Zmieniając to ustawienie ma wpływ na wszystkie projekty, którą pracujesz. Nie trzeba ponownie skompiluj aplikację po zmianie tego ustawienia. Jeśli kompilujesz aplikację z poziomu wiersza polecenia lub pliku reguł programu make, ale debugowanie w środowisku Visual Studio, nadal można Edytuj i Kontynuuj po ustawieniu **/zi** opcji.  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Jak jawne stosowanie zmian kodu  
  W programie Visual C++ Edytuj i Kontynuuj można zastosować zmian w kodzie na dwa sposoby. Kod można zastosować zmian niejawnie, wybierając polecenie wykonania, lub jawnie przy użyciu **zastosowanie zmian kodu** polecenia.  
@@ -65,11 +65,11 @@ Aby uzyskać więcej informacji na temat ulepszenia programu Visual Studio 2015 
   
  Aby zatrzymać, stosowanie zmian kodu:  
   
--   Na **debugowania** menu, wybierz **Zatrzymaj stosowanie zmian kodu**.  
+- Na **debugowania** menu, wybierz **Zatrzymaj stosowanie zmian kodu**.  
   
- Ten element menu jest widoczny tylko wtedy, gdy zmiany kodu są stosowane.  
+  Ten element menu jest widoczny tylko wtedy, gdy zmiany kodu są stosowane.  
   
- Jeśli ta opcja jest wybrana, żadne zmiany kodu są zatwierdzone.  
+  Jeśli ta opcja jest wybrana, żadne zmiany kodu są zatwierdzone.  
   
 ##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> Jak zresetować punkty wykonywania  
  Niektóre zmiany kodu mogą spowodować punkt wykonywania, aby przejść do nowej lokalizacji, gdy Edytuj i Kontynuuj stosuje te zmiany. Edytuj i Kontynuuj umieszcza punkt wykonania jak to możliwe, ale wyniki mogą być niepoprawne we wszystkich przypadkach.  

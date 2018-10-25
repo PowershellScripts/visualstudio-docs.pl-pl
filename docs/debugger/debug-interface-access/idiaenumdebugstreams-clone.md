@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreams::Clone | Dokumentacja firmy Microsoft
+title: Idiaenumdebugstreams::clone — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd9c9f8cfe37cf54181fc9c76b450846c12d5b41
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6247e36ecc34c016cf4b976664f14d6e3fb5bb80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468657"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836138"
 ---
 # <a name="idiaenumdebugstreamsclone"></a>IDiaEnumDebugStreams::Clone
-Tworzy moduł wyliczający, który zawiera takim samym stanie wyliczenie jako bieżący modułu wyliczającego.  
+Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,7 +37,7 @@ HRESULT Clone (
  [out] Zwraca [idiaenumdebugstreams —](../../debugger/debug-interface-access/idiaenumdebugstreams.md) obiekt, który zawiera zduplikowane modułu wyliczającego. Strumienie nie są duplikowane, tylko moduł wyliczający.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

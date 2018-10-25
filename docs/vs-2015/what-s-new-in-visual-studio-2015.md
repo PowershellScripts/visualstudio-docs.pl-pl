@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f97369709390d6a3e98ff8d995000d6edc574b13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93cee87a7a68083955d8c09562a318b602427efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828744"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Co&#39;s Nowość w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -108,17 +108,17 @@ Witamy w programie Visual Studio 2015, zintegrowany pakiet narzędzi zwiększaj�
 ## <a name="connect-to-services"></a>Łączenie się z usługami  
  Program Visual Studio 2015 sprawia, że łatwiej niż kiedykolwiek do łączenie aplikacji z usług.  Nowy Kreator Dodaj podłączoną usługę skonfiguruje projekt, dodaje obsługę uwierzytelniania niezbędne i pobierze niezbędne pakiety NuGet umożliwiające szybkie i bezproblemowe rozpoczęcie kodowania dla usługi. Kreator Dodaj podłączoną usługę integruje się również za pomocą nowego Menedżera konta ułatwia pracę z wieloma kontami użytkowników i subskrypcji. W programie Visual Studio 2015 pomoc techniczna dla następujących usług znajduje się poza pole (przy założeniu, że masz konto):  
   
-1.  Usług Azure Mobile Services  
+1. Usług Azure Mobile Services  
   
-2.  Azure Storage  
+2. Azure Storage  
   
-3.  Usługi Office 365 (wiadomości e-mail, kontakty, kalendarze, plików, użytkowników i grup)  
+3. Usługi Office 365 (wiadomości e-mail, kontakty, kalendarze, plików, użytkowników i grup)  
   
-4.  Usługi SalesForce  
+4. Usługi SalesForce  
   
- Nowe usługi, które zostaną dodane w sposób ciągły, a można wykryć te, klikając przycisk "Znajdź nowych usług link" w kreatorze.  
+   Nowe usługi, które zostaną dodane w sposób ciągły, a można wykryć te, klikając przycisk "Znajdź nowych usług link" w kreatorze.  
   
- ![Dodaj okno dialogowe podłączone usługi](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
+   ![Dodaj okno dialogowe podłączone usługi](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
   
 ## <a name="design-your-ui"></a>Interfejs użytkownika projektuje się  
  Program Blend umożliwiający projektowanie interfejsów użytkownika XAML zostały znacznie rozszerzone. Program Blend został całkowicie przeprojektowany w celu zapewnienia bardziej intuicyjnego interfejsu użytkownika, bardziej zaawansowane funkcje edycji XAML, takich jak technologia IntelliSense i lepszą integrację z programem Visual Studio. Aby uzyskać więcej informacji, zobacz [projektowanie XAML w programie Visual Studio i Blend for Visual Studio](./designers/designing-xaml-in-visual-studio.md).  
@@ -188,19 +188,19 @@ Witamy w programie Visual Studio 2015, zintegrowany pakiet narzędzi zwiększaj�
   
  W programie Visual Studio Enterprise i Visual Studio Professional możesz teraz:  
   
--   Pobieranie historii dla całego pliku z kodem w edytorze programu Visual Studio.  
+- Pobieranie historii dla całego pliku z kodem w edytorze programu Visual Studio.  
   
-     ![CodeLens: Uzyskaj kod szczegółów pliku](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
+   ![CodeLens: Uzyskaj kod szczegółów pliku](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
   
--   Zobacz wykres pokazujący osoby, która zmieniła swój kod. Może to pomóc Ci znaleźć wzorce w zmiany swojego zespołu i ocena ich skutków.  
+- Zobacz wykres pokazujący osoby, która zmieniła swój kod. Może to pomóc Ci znaleźć wzorce w zmiany swojego zespołu i ocena ich skutków.  
   
-     ![CodeLens: Zmian kodu Zobacz historię jako Graf](./ide/media/codelens.png "CodeLens")  
+   ![CodeLens: Zmian kodu Zobacz historię jako Graf](./ide/media/codelens.png "CodeLens")  
   
--   Łatwo zobaczyć, kiedy ostatniej zmiany kodu.  
+- Łatwo zobaczyć, kiedy ostatniej zmiany kodu.  
   
--   Znajdź zmian w innych gałęzi, które wpływają na kodzie.  
+- Znajdź zmian w innych gałęzi, które wpływają na kodzie.  
   
- Zobacz [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md).  
+  Zobacz [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md).  
   
 ### <a name="design-and-modeling-tools-enterprise-edition-only"></a>Projektowanie i modelowanie narzędzi (tylko wersja Enterprise)  
  **Mapy kodu i wykresy zależności**  
@@ -213,35 +213,35 @@ Witamy w programie Visual Studio 2015, zintegrowany pakiet narzędzi zwiększaj�
   
  Inne ulepszenia obejmują:  
   
--   **Ulepszone diagramy widoku z góry na dół**. Dla średnich lub dużych rozwiązań programu Visual Studio można teraz używać uproszczonego menu architektura, można uzyskać kod bardziej przydatne mapy rozwiązania. Zestawy rozwiązania są grupowane według folderów rozwiązania, dzięki czemu można zobaczyć je w kontekście i wykorzystać nakład pracy, umieszczoną w tworzenie struktury rozwiązania. Natychmiast zauważysz projektu i odwołania do zestawu, a następnie zostaną wyświetlone typy linków. Dodatkowo zestawy zewnętrzne w stosunku do rozwiązania są pogrupowane w bardziej zwarty sposób.  
+- **Ulepszone diagramy widoku z góry na dół**. Dla średnich lub dużych rozwiązań programu Visual Studio można teraz używać uproszczonego menu architektura, można uzyskać kod bardziej przydatne mapy rozwiązania. Zestawy rozwiązania są grupowane według folderów rozwiązania, dzięki czemu można zobaczyć je w kontekście i wykorzystać nakład pracy, umieszczoną w tworzenie struktury rozwiązania. Natychmiast zauważysz projektu i odwołania do zestawu, a następnie zostaną wyświetlone typy linków. Dodatkowo zestawy zewnętrzne w stosunku do rozwiązania są pogrupowane w bardziej zwarty sposób.  
   
--   **Projekty testowe mają różne style i można je filtrować**. Teraz możesz łatwiej i szybciej zidentyfikować projekty testowe na mapie, ponieważ mają odrębny styl. One może je także odfiltrować, dzięki czemu możesz skupić się na działającym kodzie aplikacji.  
+- **Projekty testowe mają różne style i można je filtrować**. Teraz możesz łatwiej i szybciej zidentyfikować projekty testowe na mapie, ponieważ mają odrębny styl. One może je także odfiltrować, dzięki czemu możesz skupić się na działającym kodzie aplikacji.  
   
--   **Uproszczone linki zależności zewnętrznych**. Linki zależności nie przedstawiają już dziedziczenia z System.Object, System.ValueType, System.Enum i System.Delegate, co ułatwia dostrzeżenie zewnętrznych zależności na mapie kodu.  
+- **Uproszczone linki zależności zewnętrznych**. Linki zależności nie przedstawiają już dziedziczenia z System.Object, System.ValueType, System.Enum i System.Delegate, co ułatwia dostrzeżenie zewnętrznych zależności na mapie kodu.  
   
--   **"Testowania odzyskiwania po awarii w linków zależności" uwzględnia filtry**. Otrzymujesz przydatny, przejrzysty diagram, który umożliwia poznanie elementów składowych linku zależności. Diagram jest mniej "zatłoczony" i uwzględnia zostało wybrane opcje filtrowania linków.  
+- **"Testowania odzyskiwania po awarii w linków zależności" uwzględnia filtry**. Otrzymujesz przydatny, przejrzysty diagram, który umożliwia poznanie elementów składowych linku zależności. Diagram jest mniej "zatłoczony" i uwzględnia zostało wybrane opcje filtrowania linków.  
   
--   **Elementy kodu są umieszczone na mapie razem z ich kontekstami**. Ponieważ teraz diagramy są wyświetlane razem ze swoimi kontekstami (aż do poziomu zestawu i folderu rozwiązania, które można odfiltrować w razie potrzeby), uzyskujesz bardziej użyteczne diagramy podczas przeciągania i upuszczania elementów kodu z Eksploratora rozwiązań, widoku klas i przeglądarki obiektów; lub podczas zaznaczania elementów w Eksploratorze rozwiązań i wybierając polecenie Pokaż na mapie kodu.  
+- **Elementy kodu są umieszczone na mapie razem z ich kontekstami**. Ponieważ teraz diagramy są wyświetlane razem ze swoimi kontekstami (aż do poziomu zestawu i folderu rozwiązania, które można odfiltrować w razie potrzeby), uzyskujesz bardziej użyteczne diagramy podczas przeciągania i upuszczania elementów kodu z Eksploratora rozwiązań, widoku klas i przeglądarki obiektów; lub podczas zaznaczania elementów w Eksploratorze rozwiązań i wybierając polecenie Pokaż na mapie kodu.  
   
--   **Uzyskaj szybciej aktywne mapy kodu szybciej**. Operacja przeciągnięcia i upuszczenia daje natychmiastowy efekt, a linki między węzłami są tworzone dużo szybciej i bez wpływania na kolejne operacje użytkownika, takie jak rozwinięcie węzła lub zażądanie kolejnych węzłów. Po utworzeniu map kodu bez kompilowania rozwiązania, wszystkie przypadki brzegowe — takie jak brak skompilowanych zestawów — są obecnie przetwarzane.  
+- **Uzyskaj szybciej aktywne mapy kodu szybciej**. Operacja przeciągnięcia i upuszczenia daje natychmiastowy efekt, a linki między węzłami są tworzone dużo szybciej i bez wpływania na kolejne operacje użytkownika, takie jak rozwinięcie węzła lub zażądanie kolejnych węzłów. Po utworzeniu map kodu bez kompilowania rozwiązania, wszystkie przypadki brzegowe — takie jak brak skompilowanych zestawów — są obecnie przetwarzane.  
   
--   **Pomiń ponowną kompilację rozwiązania.** Zapewnia lepszą wydajność, podczas tworzenia i edytowania diagramów.  
+- **Pomiń ponowną kompilację rozwiązania.** Zapewnia lepszą wydajność, podczas tworzenia i edytowania diagramów.  
   
--   **Filtrowanie węzłów elementów kodu i grupy**. Możesz szybko zwiększyć przejrzystość map, pokazując lub ukrywając elementy kodu według ich kategorii, a także grupować elementy kodu według folderów rozwiązania, zestawów, przestrzeni nazw, folderów projektu i typów.  
+- **Filtrowanie węzłów elementów kodu i grupy**. Możesz szybko zwiększyć przejrzystość map, pokazując lub ukrywając elementy kodu według ich kategorii, a także grupować elementy kodu według folderów rozwiązania, zestawów, przestrzeni nazw, folderów projektu i typów.  
   
--   **Filtruj relacje, aby ułatwić interpretowanie diagramów**. Filtrowanie linku dotyczy teraz także linków między grupami, co sprawia, że praca z oknem filtru jest płynniejsza niż w poprzednich wersjach.  
+- **Filtruj relacje, aby ułatwić interpretowanie diagramów**. Filtrowanie linku dotyczy teraz także linków między grupami, co sprawia, że praca z oknem filtru jest płynniejsza niż w poprzednich wersjach.  
   
--   **Tworzenie diagramów z widoku klas i przeglądarki obiektów**. Przeciągnij i upuść pliki oraz zestawy na nową lub istniejącą mapę w oknach widoku klas i przeglądarki obiektów.  
+- **Tworzenie diagramów z widoku klas i przeglądarki obiektów**. Przeciągnij i upuść pliki oraz zestawy na nową lub istniejącą mapę w oknach widoku klas i przeglądarki obiektów.  
   
- Zobacz [mapowanie zależności w ramach rozwiązań](./modeling/map-dependencies-across-your-solutions.md).  
+  Zobacz [mapowanie zależności w ramach rozwiązań](./modeling/map-dependencies-across-your-solutions.md).  
   
- **Inne zmiany projektu i modelowania w tej wersji:**  
+  **Inne zmiany projektu i modelowania w tej wersji:**  
   
--   **Diagramy warstw**. Aktualizuj te diagramy za pomocą widoku klas i przeglądarki obiektów. Aby spełnić wymagania dotyczące projektowania oprogramowania, należy użyć diagramów warstw do opisania oczekiwanych zależności oprogramowania. Utrzymuj spójność kodu z tego projektu możliwości znalezienia kodu niespełniającego tych ograniczeń i weryfikowaniu przyszłego kodu względem tej linii bazowej.  
+- **Diagramy warstw**. Aktualizuj te diagramy za pomocą widoku klas i przeglądarki obiektów. Aby spełnić wymagania dotyczące projektowania oprogramowania, należy użyć diagramów warstw do opisania oczekiwanych zależności oprogramowania. Utrzymuj spójność kodu z tego projektu możliwości znalezienia kodu niespełniającego tych ograniczeń i weryfikowaniu przyszłego kodu względem tej linii bazowej.  
   
--   **Diagramy UML**. Użytkownik nie można już tworzyć diagramów klas UML i diagramy sekwencji z kodu. Ale wciąż można jednak tworzyć te diagramy z użyciem nowych elementów UML.  
+- **Diagramy UML**. Użytkownik nie można już tworzyć diagramów klas UML i diagramy sekwencji z kodu. Ale wciąż można jednak tworzyć te diagramy z użyciem nowych elementów UML.  
   
--   **Eksplorator architektury**. Do tworzenia diagramów nie jest już służy Eksploratora architektury. Ale nadal można korzystać z Eksploratora rozwiązań.  
+- **Eksplorator architektury**. Do tworzenia diagramów nie jest już służy Eksploratora architektury. Ale nadal można korzystać z Eksploratora rozwiązań.  
   
 ## <a name="visual-studio-extensibility-tools"></a>Visual Studio Extensibility Tools  
  Nigdy nie było łatwiejsze do zainstalowania programu Visual Studio Extensibility Tools (zestaw SDK programu VS i szablonów), ponieważ są one teraz dołączone jako składnik opcjonalny podczas instalacji.  Narzędzia rozszerzalności umożliwić programistom pisanie rozszerzeń w celu dostosowania i Dodaj funkcje do programu Visual Studio. Aby uzyskać więcej informacji o możliwościach rozszerzania programu Visual Studio, zobacz [programu Visual Studio SDK](./extensibility/visual-studio-sdk.md)  

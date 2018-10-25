@@ -18,25 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774591"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866899"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Wskazówki: Dodawanie strony aplikacji do przepływu pracy
   W tym instruktażu pokazano, jak dodać stronę aplikacja wyświetlającą dane pochodzące z przepływu pracy do projektu przepływu pracy. Opiera się na projekt, opisana w temacie [wskazówki: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
 
  W tym instruktażu pokazano następujące zagadnienia:
 
--   Dodawanie strony aplikacji ASPX do projektu przepływu pracy programu SharePoint.
+- Dodawanie strony aplikacji ASPX do projektu przepływu pracy programu SharePoint.
 
--   Uzyskiwanie danych z projektu przepływu pracy i modyfikowania go.
+- Uzyskiwanie danych z projektu przepływu pracy i modyfikowania go.
 
--   Wyświetlanie danych w tabeli na stronie aplikacji.
+- Wyświetlanie danych w tabeli na stronie aplikacji.
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Wymagania wstępne
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
@@ -305,23 +305,23 @@ ms.locfileid: "43774591"
 
 #### <a name="to-test-the-application-page"></a>Aby przetestować stronę aplikacji
 
-1.  Wybierz **F5** klucza do uruchamiania i wdrażania projektu w programie SharePoint.
+1. Wybierz **F5** klucza do uruchamiania i wdrażania projektu w programie SharePoint.
 
-2.  Wybierz **Home** przycisk, a następnie wybierz **dokumenty udostępnione** łączy na pasku szybkiego uruchamiania, aby wyświetlić listę dokumenty udostępnione w witrynie programu SharePoint.
+2. Wybierz **Home** przycisk, a następnie wybierz **dokumenty udostępnione** łączy na pasku szybkiego uruchamiania, aby wyświetlić listę dokumenty udostępnione w witrynie programu SharePoint.
 
-3.  Do reprezentowania raporty wydatków w tym przykładzie, Przekaż niektóre nowe dokumenty do listy dokumentów, wybierając **dokumenty** link **LibraryTools** kartę w górnej części strony, a następnie wybierając  **Przekaż dokument** przycisk na wstążce narzędzi.
+3. Do reprezentowania raporty wydatków w tym przykładzie, Przekaż niektóre nowe dokumenty do listy dokumentów, wybierając **dokumenty** link **LibraryTools** kartę w górnej części strony, a następnie wybierając  **Przekaż dokument** przycisk na wstążce narzędzi.
 
-4.  Po przekazaniu niektóre dokumenty wystąpienia przepływu pracy, wybierając **biblioteki** link **LibraryTools** kartę w górnej części strony, a następnie wybierając **ustawienia biblioteki**przycisk na wstążce narzędzi.
+4. Po przekazaniu niektóre dokumenty wystąpienia przepływu pracy, wybierając **biblioteki** link **LibraryTools** kartę w górnej części strony, a następnie wybierając **ustawienia biblioteki**przycisk na wstążce narzędzi.
 
-5.  W **ustawienia biblioteki dokumentów** wybierz **ustawienia przepływu pracy** łącze w **uprawnienia i zarządzanie** sekcji.
+5. W **ustawienia biblioteki dokumentów** wybierz **ustawienia przepływu pracy** łącze w **uprawnienia i zarządzanie** sekcji.
 
-6.  W **ustawienia przepływu pracy** wybierz **Dodaj przepływ pracy** łącza.
+6. W **ustawienia przepływu pracy** wybierz **Dodaj przepływ pracy** łącza.
 
-7.  W **Dodaj przepływ pracy** wybierz **ExpenseReport - Workflow1** przepływu pracy, wprowadź nazwę przepływu pracy, takich jak **ExpenseTest**, a następnie wybierz polecenie **Dalej** przycisku.
+7. W **Dodaj przepływ pracy** wybierz **ExpenseReport - Workflow1** przepływu pracy, wprowadź nazwę przepływu pracy, takich jak **ExpenseTest**, a następnie wybierz polecenie **Dalej** przycisku.
 
-     Zostanie wyświetlony formularz skojarzenia przepływu pracy. Dzięki niemu raportu kwotę limitu wydatków.
+    Zostanie wyświetlony formularz skojarzenia przepływu pracy. Dzięki niemu raportu kwotę limitu wydatków.
 
-8.  W formularzu skojarzenia wprowadź **1000** do **automatycznego zatwierdzenia limitu** , a następnie wybierz **skojarzenia przepływu pracy** przycisku.
+8. W formularzu skojarzenia wprowadź **1000** do **automatycznego zatwierdzenia limitu** , a następnie wybierz **skojarzenia przepływu pracy** przycisku.
 
 9. Wybierz **macierzystego** przycisk, aby wrócić do strony głównej programu SharePoint.
 
@@ -337,7 +337,7 @@ ms.locfileid: "43774591"
 
 14. Powtórz kroki od 11 13 z innych dokumentów na liście dokumentów udostępnionych. (Dokładna liczba dokumentów nie jest ważna.)
 
-15. Wyświetlenia strony podsumowania aplikacja raport wydatków, otwierając następujący adres URL w przeglądarce sieci Web: **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. Wyświetlenia strony podsumowania aplikacja raport wydatków, otwierając następujący adres URL w przeglądarce sieci Web: **http://**<em>SystemName</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      Na stronie podsumowania raportu wydatków zawiera listę wszystkich raportów wydatków, które przekroczyło przydzielony ilość, kwotę, które przekroczyły go i sumę dla wszystkich raportów.
 

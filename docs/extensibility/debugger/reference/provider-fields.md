@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: deda42120dc98e0222910c48b0faf574a57f03dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d71ab824017d054b8543770b7eaf1efe2856867
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860347"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
-Określa właściwości skojarzonych z dostawcą programu.  
+Określa właściwości skojarzone z dostawcą programu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -50,9 +50,9 @@ public enum enum_PROVIDER_FIELDS {
  `fIsDebuggerPresent` Pole jest prawidłowe.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości są zwracane w `Fields` członkiem [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struktury, aby wskazać, które pola struktury jawnie zostały wypełnione.  
+ Te wartości są zwracane w `Fields` członkiem [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struktury, aby wskazać, pola, które struktury jawnie zostały wypełnione.  
   
- Wartości te można łączyć z bitowego `OR`.  
+ Te wartości można łączyć przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

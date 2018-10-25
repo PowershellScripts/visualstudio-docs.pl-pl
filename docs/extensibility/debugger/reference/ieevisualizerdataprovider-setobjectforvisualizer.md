@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d1a6272f8a04316c8695f301d5c45512b05f2d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f02f90ce8325a0ba75c31904a689e84705a5273a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120731"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866171"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Ta metoda zmienia obiekt, który reprezentuje wizualizatora.  
@@ -45,7 +45,7 @@ int SetObjectForVisualizer(
   
 #### <a name="parameters"></a>Parametry  
  `pNewObject`  
- [in] Obiekt do ustawienia.  
+ [in] Obiekt, który można ustawić.  
   
  `error`  
  [out] Jeśli wystąpił błąd podczas ustawiania obiektu, ten ciąg zawiera komunikat o błędzie.  
@@ -54,10 +54,10 @@ int SetObjectForVisualizer(
  [out] Jeśli wystąpił błąd, ten obiekt przechowuje informacje o wyjątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Jest czynności, aby określić, jak informacje o błędzie jest zwracany. Jednak jest możliwe, że niektóre elementy wywołujące mogą tylko wyglądu, aby zobaczyć, jeśli obiekt wyjątku został zwrócony wiedzieć, były wystąpił błąd, dlatego ta metoda powinna zawsze zwraca obiekt wyjątku, jeśli wystąpił błąd. Ciąg błędu należy dostarczyć także, w przypadku, gdy obiekt wywołujący chce z niego korzystać.  
+ Jest implementujący, aby określić, jak informacje o błędzie jest zwracana. Jednak jest możliwe, że niektóre obiekty wywołujące mogą tylko wygląd, aby zobaczyć, jeśli obiekt wyjątku został zwrócony wiedzieć, był błąd, więc ta metoda zawsze powinna zwracać obiekt wyjątku, jeśli wystąpił błąd. W przypadku, gdy obiekt wywołujący chce mieć należy również dostarczyć ciąg błędu z niego korzystać.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   

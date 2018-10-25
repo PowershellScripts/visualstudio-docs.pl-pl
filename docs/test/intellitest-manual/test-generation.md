@@ -1,5 +1,5 @@
 ---
-title: Testowanie w generacji | Narzędzie Test Microsoft IntelliTest Developer
+title: Generowanie testu | Narzędzie Test Microsoft IntelliTest dla deweloperów
 ms.date: 05/02/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,22 +11,22 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2eab01a560cebb3bed644df044fcee0af4039ffb
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: e3f96f9ba893da2368ef7d982079cdbd834055ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815025"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881833"
 ---
 # <a name="test-generation"></a>Generowanie testu
 
-W tradycyjnych testy jednostkowe testu składa się z kilka kwestii:
+W tradycyjnych testy jednostkowe testu składa się kilka rzeczy:
 
-* A [sekwencję wywołań — metoda](test-generation.md#test-generators)
-* Argumenty, które metody są wywoływane; argumenty [test dane wejściowe](input-generation.md)
-* Weryfikacja to oczekiwane zachowanie przetestowanej aplikacji poprzez podanie zestawu [potwierdzeń](#assumptions-and-assertions)
+* A [sekwencji wywołania metody](test-generation.md#test-generators)
+* Argumenty, które metody są wywoływane; argumenty są [testowanie danych wejściowych](input-generation.md)
+* Sprawdzanie poprawności to oczekiwane zachowanie przetestowanej aplikacji poprzez podanie zestawu [potwierdzenia](#assumptions-and-assertions)
 
-Poniżej przedstawiono przykład struktury testu:
+Poniżej przedstawiono przykład struktury testów:
 
 ```csharp
 [Test]
@@ -43,23 +43,23 @@ void MyTest() {
 }
 ```
 
-IntelliTest często automatycznie można określić wartości argumentów istotne dla ogólnej [sparametryzowanych testów jednostkowych](#parameterized-unit-testing), które zapewniają sekwencję wywołań metody i potwierdzenia.
+IntelliTest często automatycznie określić wartości argumentu istotne dla bardziej ogólnej [sparametryzowanych testów jednostkowych](#parameterized-unit-testing), które zawierają sekwencję wywołań metody i potwierdzenia.
 
 <a name="test-generators"></a>
 ## <a name="test-generators"></a>Generatory testu
 
-IntelliTest generuje przypadków testowych, wybierając sekwencję metod wdrażania w ramach testu do wykonania i generować dane wejściowe dla metody podczas sprawdzania potwierdzeń za pośrednictwem pochodnej danych.
+IntelliTest generuje przypadków testowych, wybierając sekwencję metod wdrażania w ramach testu do wykonania i generować dane wejściowe dla metody podczas sprawdzania potwierdzenia pochodne danych.
 
-A [sparametryzowanego testu jednostkowego](#parameterized-unit-testing) bezpośrednio stanów sekwencję metoda wywołuje w jego treści.
+A [sparametryzowanego testu jednostkowego](#parameterized-unit-testing) bezpośrednio stany sekwencji metody wywołania w jej treści.
 
-Gdy program IntelliTest musi utworzyć obiekty, wywołania konstruktory i metody fabryki zostaną dodane automatycznie do sekwencji zgodnie z wymaganiami.
+Gdy program IntelliTest potrzebuje do konstruowania obiektów, wywołania do konstruktorów i metod fabryki zostanie dodany automatycznie sekwencji zgodnie z potrzebami.
 
 <a name="parameterized-unit-testing"></a>
 ## <a name="parameterized-unit-testing"></a>Sparametryzowane testy jednostkowe
 
-*Sparametryzowanych testów jednostkowych* (naraża) są testów, które przyjmują parametrów. W przeciwieństwie do testów jednostkowych tradycyjnych, które są zazwyczaj zamknięte metod, naraża zająć dowolny zbiór parametrów. Jest to proste? Tak — stamtąd IntelliTest spróbuje [Generowanie zestawu (minimalny) danych wejściowych](input-generation.md) który [pełni obejmują](input-generation.md#dynamic-code-coverage) kodu dostępny z testu.
+*Parametryzowane testy jednostki* (umieszcza) są testy, które przyjmują parametry. W przeciwieństwie do tradycyjnych testów, które zwykle są zamknięte metod, umieszcza wykonaj dowolny zbiór parametrów. Jest to proste? Tak — w tym miejscu, IntelliTest podejmie próbę [Generowanie (minimalny) zestaw danych wejściowych](input-generation.md) , [obejmują w pełni](input-generation.md#dynamic-code-coverage) kod nieosiągalny z testu.
 
-Naraża są definiowane przy użyciu [PexMethod](attribute-glossary.md#pexmethod) atrybutu niestandardowego w sposób podobny do MSTest (lub NUnit, xUnit). Naraża są logicznie pogrupowane w klasach z metody wystąpienia [PexClass](attribute-glossary.md#pexclass). W poniższym przykładzie przedstawiono prosty PUT przechowywane w **MyPexTest** klasy:
+Umieszcza są definiowane przy użyciu [PexMethod](attribute-glossary.md#pexmethod) atrybutu niestandardowego w sposób podobny do MSTest (lub NUnit, xUnit). Umieszcza są metody wystąpienia, które logicznie pogrupowane w klasach oznakowane za pomocą [PexClass](attribute-glossary.md#pexclass). W poniższym przykładzie przedstawiono prosty PUT, przechowywane w **MyPexTest** klasy:
 
 ```csharp
 [PexMethod]
@@ -83,7 +83,7 @@ class StringHelper {
 }
 ```
 
-Z tego testu IntelliTest może automatycznie [wygenerowanie danych wejściowych](input-generation.md) dla PUT, obejmujący wiele ścieżek wykonywania kodu przetestowane. Każdy danych wejściowych, który obejmuje wykonanie inną ścieżkę pobiera "serializacji" jako testu jednostkowego:
+Z tego testu funkcji IntelliTest mogą automatycznie [wygenerowanie danych wejściowych](input-generation.md) dla PUT, który obejmuje wiele ścieżek wykonywania kodu przetestowane. Każdy wejściowej, który obejmuje wykonanie innej ścieżki pobiera "serializacji" jako test jednostkowy:
 
 ```csharp
 [TestMethod, ExpectedException(typeof(ArgumentNullException))]
@@ -98,9 +98,9 @@ void ReplaceFirstChar10() {
 ```
 
 <a name="generic-parameterized"></a>
-## <a name="generic-parameterized-unit-testing"></a>Ogólny sparametryzowane testy jednostkowe
+## <a name="generic-parameterized-unit-testing"></a>Ogólny sparametryzowanych testów jednostkowych
 
-Sparametryzowanych testów jednostkowych może być metody ogólne. W takim przypadku użytkownik musi określić typy służy do tworzenia wystąpienia metody przy użyciu [PexGenericArguments](attribute-glossary.md#pexgenericarguments).
+Sparametryzowane testy jednostkowe mogą być metod ogólnych. W takim przypadku użytkownik musi określić typy, użytego do utworzenia wystąpienia metody przy użyciu [PexGenericArguments](attribute-glossary.md#pexgenericarguments).
 
 ```csharp
 [PexClass]
@@ -116,26 +116,26 @@ public partial class ListTest {
 <a name="allowing-exceptions"></a>
 ## <a name="allowing-exceptions"></a>Zezwalanie na wyjątki
 
-IntelliTest zawiera wiele atrybutów sprawdzania poprawności ułatwia wyjątki klasyfikacji do oczekiwane wyjątki i nieoczekiwanego wyjątku.
+Funkcja IntelliTest zawiera wiele atrybutów sprawdzania poprawności, które ułatwia klasyfikowanie wyjątki w oczekiwane wyjątki i nieoczekiwanego wyjątku.
 
-Oczekiwano wyjątki wygenerowania ujemna przypadków testowych z odpowiednią adnotacją, taką jak **ExpectedException (typeof (*xxx*))** podczas generowania wyjątków nieoczekiwany w przypadku braku przypadków testowych.
+Oczekiwane wyjątki takie jak Generowanie ujemna przypadki testowe z odpowiednią adnotacją **ExpectedException (typeof (*xxx*))**, nieoczekiwane wyjątki generować w przypadku braku przypadków testowych.
 
 ```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
 void SomeTest() {...}
 ```
 
-Moduły weryfikacji są:
+Dostępne są następujące moduły weryfikacji:
 
-* [PexAllowedException](attribute-glossary.md#pexallowedexception): umożliwia typu określonego wyjątku z dowolnego miejsca
-* [PexAllowedExceptionFromAssembly](attribute-glossary.md#pexallowedexceptionfromassembly): umożliwia typu określonego wyjątku z określonego zestawu
-* [PexAllowedExceptionFromType](attribute-glossary.md#pexallowedexceptionfromtype): umożliwia typu określonego wyjątku z określonego typu
-* [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest): umożliwia typu wyjątku określonego typu w ramach testu
+* [PexAllowedException](attribute-glossary.md#pexallowedexception): umożliwia typ określony wyjątek, z dowolnego miejsca
+* [PexAllowedExceptionFromAssembly](attribute-glossary.md#pexallowedexceptionfromassembly): pozwala na typ określony wyjątek z określonego zestawu
+* [PexAllowedExceptionFromType](attribute-glossary.md#pexallowedexceptionfromtype): pozwala na typ określony wyjątek z określonego typu
+* [PexAllowedExceptionFromTypeUnderTest](attribute-glossary.md#pexallowedexceptionfromtypeundertest): pozwala na typ określony wyjątek z testowanego typu
 
 <a name="internal-types"></a>
-## <a name="testing-internal-types"></a>Testowanie typów wewnętrznych
+## <a name="testing-internal-types"></a>Testowanie typy wewnętrzne
 
-IntelliTest można "test" wewnętrzne typy, tak długo, jak widzą je. IntelliTest wyświetlić typy następującego atrybutu został dodany do projektu produktu lub testu za pomocą kreatorów Visual Studio IntelliTest:
+IntelliTest mogą "test" typy wewnętrzne, tak długo, jak go zobaczyć je. Funkcję IntelliTest wyświetlić typy następujący atrybut zostanie dodany do projektu produktu lub testów przez kreatorów Visual Studio program IntelliTest:
 
 ```csharp
 [assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
@@ -144,9 +144,9 @@ IntelliTest można "test" wewnętrzne typy, tak długo, jak widzą je. IntelliTe
 <a name="assumptions-and-assertions"></a>
 ## <a name="assumptions-and-assertions"></a>Założenia i potwierdzeń
 
-Użytkownicy mogą używać założenia i potwierdzeń Express [warunki wstępne](#precondition) (założenia) i [postconditions](#postcondition) (potwierdzenia) dotyczących ich testów. Gdy program IntelliTest generuje zestaw wartości parametrów, a "Eksploruje" kod, mogą naruszają zasady przyjmuje testu. W takim przypadku nie będzie już generował testu dla tej ścieżki, ale dyskretne ignorowanie go.
+Użytkownicy mogą używać założenia i potwierdzeń express [warunki wstępne](#precondition) (założeń) i [warunków końcowych](#postcondition) (potwierdzenia) o swoich testów. Jeśli program IntelliTest generuje zestaw wartości parametrów, "Eksploruje" kod może naruszać założenie testu. Jeśli tak się stanie, nie zostanie wygenerowany test dla tej ścieżki, ale będzie po cichu ignorować go.
 
-Potwierdzenia są dobrze znanych pojęciem platform testów jednostkowych regularnie, więc IntelliTest już "rozumie" wbudowane **Assert** klas dostarczonych przez platformę poszczególnych obsługiwanych badania. Jednak większość struktur nie udostępniają **Przyjmij** klasy. W takim przypadku zapewnia IntelliTest [PexAssume](static-helper-classes.md#pexassume) klasy. Jeśli nie chcesz używać istniejącej struktury testowej, IntelliTest ma również [PexAssert](static-helper-classes.md#pexassert) klasy.
+Potwierdzenia są dobrze znane pojęcia w struktur testów jednostek regularnych, więc IntelliTest już "rozumie" wbudowane **Asercja** klas dostarczonych przez każdy struktury testowej obsługiwane. Jednak większość platform nie są oferowane **Przyjmij** klasy. W takim przypadku udostępnia funkcję IntelliTest [PexAssume](static-helper-classes.md#pexassume) klasy. Jeśli nie chcesz używać istniejącej struktury testowej, IntelliTest ma również [PexAssert](static-helper-classes.md#pexassert) klasy.
 
 ```csharp
 [PexMethod]
@@ -158,7 +158,7 @@ public void Test1(object o) {
 }
 ```
 
-W szczególności założeń nullness nie mogą być kodowane jako atrybut niestandardowy:
+W szczególności założeń pod nie mogą być zakodowane jako atrybut niestandardowy:
 
 ```csharp
 [PexMethod]
@@ -172,37 +172,37 @@ public void Test2([PexAssumeNotNull] object o)
 <a name="precondition"></a>
 ## <a name="precondition"></a>Warunek wstępny
 
-Warunek wstępny metody wyraża warunki, zgodnie z którymi powiedzie metody.
+Warunkiem wstępnym metody określa warunki, w których metoda zakończy się powodzeniem.
 
-Zazwyczaj warunki wstępne są realizowane przez sprawdzanie parametry i stan obiektu i zgłaszanie **ArgumentException** lub **InvalidOperationException** jeśli jego naruszenia.
+Zazwyczaj warunek konieczny jest wymuszana przez sprawdzanie parametrów i stan obiektu i zgłaszanie **ArgumentException** lub **InvalidOperationException** Jeśli jest ona naruszona.
 
-W IntelliTest, warunek wstępny z [sparametryzowanego testu jednostkowego](#parameterized-unit-testing) określony przez [PexAssume](static-helper-classes.md#pexassume).
+W funkcji IntelliTest, warunkiem wstępnym [sparametryzowanego testu jednostkowego](#parameterized-unit-testing) jest wyrażany za pomocą [PexAssume](static-helper-classes.md#pexassume).
 
 <a name="postcondition"></a>
-## <a name="postcondition"></a>Warunku końcowego
+## <a name="postcondition"></a>Postcondition
 
-Warunku końcowego metody wyraża warunki, które powinno zawierać podczas i po wykonaniu metody, przy założeniu, że jego warunki wstępne są początkowo prawidłowe.
+Postcondition metody określa warunki, które mają być przechowywane w trakcie i po nim wykonywanie metody, przy założeniu, że jego warunki wstępne zostały początkowo prawidłowe.
 
-Zwykle, warunku końcowego jest wymuszana przez wywołania **Assert** metody.
+Zazwyczaj postcondition jest wymuszana przez wywołania **Asercja** metody.
 
-Z IntelliTest, warunku końcowego z [sparametryzowanego testu jednostkowego](#parameterized-unit-testing) określony przez [PexAssert](static-helper-classes.md#pexassert).
+Z funkcją IntelliTest, postcondition z [sparametryzowanego testu jednostkowego](#parameterized-unit-testing) jest wyrażany za pomocą [PexAssert](static-helper-classes.md#pexassert).
 
 <a name="test-failures"></a>
 ## <a name="test-failures"></a>Niepowodzenia testu
-Gdy powiedzie wygenerowanego przypadek testowy
+Kiedy wygenerowany przypadek testowy nie powiódł się?
 
-1. Jeśli nie zakończy się w obrębie [skonfigurowane ścieżce zakresem](exploration-bounds.md), jest traktowane jako błąd, chyba że [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded) ustawiono opcję
+1. Jeśli nie kończy się w obrębie [skonfigurowane ścieżką granic](exploration-bounds.md), jest traktowane jako błąd, chyba że [TestExcludePathBoundsExceeded](exploration-bounds.md#testexcludepathboundsexceeded) ustawiono opcję
 
-1. Jeśli test zgłasza **PexAssumeFailedException**, próba powiedzie się. Jednak jest zwykle filtrowane się, chyba że [TestEmissionFilter](exploration-bounds.md#testemissionfilter) ustawiono **wszystkie**
+1. Jeśli test zgłosi **PexAssumeFailedException**, jego powodzenia. Jednak jest zwykle filtrowane się, chyba że [TestEmissionFilter](exploration-bounds.md#testemissionfilter) ustawiono **wszystkie**
 
-1. Jeśli test narusza [potwierdzenia](#assumptions-and-assertions), np. przez Zgłaszanie wyjątku naruszenie potwierdzenia jednostki testowania framework, działanie nie powiodło się
+1. Jeśli test narusza [potwierdzenie](#assumptions-and-assertions); na przykład, zgłaszając wyjątek asercji naruszenie testowania jednostkowego, zakończy się niepowodzeniem
 
-Jeśli żaden z powyższych utworzyć decyzji, test zakończy się powodzeniem, tylko wtedy, gdy nie zgłasza wyjątek. Potwierdzenie naruszeń są traktowane w taki sam sposób jak wyjątków.
+Jeśli żadne z powyższych decyzji, test zakończy się powodzeniem, tylko wtedy, gdy nie zostanie zgłoszony wyjątek. Potwierdzenie naruszeń są traktowane w taki sam sposób jak wyjątki.
 
 <a name="setup-teardown"></a>
-## <a name="setup-and-tear-down"></a>Konfigurowanie i zniszcz
+## <a name="setup-and-tear-down"></a>Konfigurowanie i zatrzymywania
 
-W ramach integracji z platform testów obsługuje IntelliTest wykrywania i uruchamiania instalacji i zerwanie metody.
+W ramach integracji ze środowisk testowych IntelliTest obsługuje wykrywanie i uruchamiania instalacji i zatrzymywania metody.
 
 **Przykład**
 
@@ -234,15 +234,14 @@ namespace MyTests
         }
     }
 }
-
 ```
 
 <a name="further-reading"></a>
 ## <a name="further-reading"></a>Dalsze informacje
 
-* [Testy w celu powiązania kodu](https://blogs.msdn.microsoft.com/visualstudioalm/2015/04/18/smart-unit-tests-test-to-code-binding-test-case-management/)
-* [Jeden test do wszystkich reguł](https://blogs.msdn.microsoft.com/visualstudioalm/2015/07/05/intellitest-one-test-to-rule-them-all/)
+* [Test, aby kod powiązania](https://blogs.msdn.microsoft.com/visualstudioalm/2015/04/18/smart-unit-tests-test-to-code-binding-test-case-management/)
+* [Jeden test, by wszystkimi rządzić](https://blogs.msdn.microsoft.com/visualstudioalm/2015/07/05/intellitest-one-test-to-rule-them-all/)
 
-## <a name="got-feedback"></a>Masz opinię?
+## <a name="got-feedback"></a>Czy chcesz przesłać opinię?
 
-Publikowania własnych pomysłów i funkcji żądań na [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).
+Opublikuj swoje pomysły i funkcji żądania na [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

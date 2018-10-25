@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f7d2987084235f88d8360bb344445faa311956dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c126fab0226198fc182fe2c6c956594a11dc2ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226502"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831721"
 ---
 # <a name="generate-files-from-a-uml-model"></a>Generowanie plików na podstawie modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ Z modelu UML można wygenerować kodu programu, schematów, dokumenty, zasobów 
   
  Istnieją trzy główne scenariusze:  
   
--   [Generowanie plików z polecenia menu](#Command) lub gestu. Należy zdefiniować [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] polecenia, które są dostępne w modelach UML.  
+- [Generowanie plików z polecenia menu](#Command) lub gestu. Należy zdefiniować [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] polecenia, które są dostępne w modelach UML.  
   
--   [Generowanie plików z aplikacji](#Application). Piszesz aplikację, która odczytuje modeli UML i generuje pliki.  
+- [Generowanie plików z aplikacji](#Application). Piszesz aplikację, która odczytuje modeli UML i generuje pliki.  
   
--   [Generowanie w czasie projektowania](#Design). Korzystają z modelu do zdefiniowania, niektóre funkcje aplikacji i generowania kodu, zasoby, i tak dalej w ramach Twojej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania.  
+- [Generowanie w czasie projektowania](#Design). Korzystają z modelu do zdefiniowania, niektóre funkcje aplikacji i generowania kodu, zasoby, i tak dalej w ramach Twojej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania.  
   
- W tym temacie kończy się wraz z omówieniem [sposób używania Generowanie tekstu](#What). Aby uzyskać więcej informacji, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md).  
+  W tym temacie kończy się wraz z omówieniem [sposób używania Generowanie tekstu](#What). Aby uzyskać więcej informacji, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md).  
   
 ##  <a name="Command"></a> Generowanie plików z polecenia menu  
  Możesz użyć wstępnie Przetwórz szablony tekstowe w ramach polecenia menu UML. W ramach kodu szablonu tekstu lub w osobnej klasy częściowej może odczytywać modelu, które są wyświetlane przez diagram.  
   
  Aby uzyskać więcej informacji o tych funkcjach przeczytaj następujące tematy:  
   
--   [Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
+- [Definiowanie polecenia menu w diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
   
--   [Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md)  
+- [Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4](../modeling/run-time-text-generation-with-t4-text-templates.md)  
   
--   [Nawigowanie po modelu UML](../modeling/navigate-the-uml-model.md)  
+- [Nawigowanie po modelu UML](../modeling/navigate-the-uml-model.md)  
   
- To podejście pokazano w poniższym przykładzie jest odpowiednia do generowania tekstu z jednym modelu, po zainicjowaniu operacji z jednego na diagramach modelu. Do przetwarzania modelu w kontekście oddzielne, należy wziąć pod uwagę przy użyciu [Visual Studio Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md) dostęp do modelu i jego elementów.  
+  To podejście pokazano w poniższym przykładzie jest odpowiednia do generowania tekstu z jednym modelu, po zainicjowaniu operacji z jednego na diagramach modelu. Do przetwarzania modelu w kontekście oddzielne, należy wziąć pod uwagę przy użyciu [Visual Studio Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md) dostęp do modelu i jego elementów.  
   
 ### <a name="example"></a>Przykład  
  Aby uruchomić ten przykład, utworzyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu rozszerzenia (VSIX). Nazwa projektu, który jest używany w tym przykładzie jest `VdmGenerator`. W **source.extension.vsixmanifest** plików, kliknij **Dodaj zawartość** i ustawić pole typu **składnik MEF** i ścieżki źródłowej, które odwołuje się do bieżącego projektu. Aby uzyskać więcej informacji na temat sposobu konfigurowania tego typu projektu, zobacz [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
@@ -174,41 +174,41 @@ Type Class2 ::
   
 ##### <a name="to-set-up-a-visual-studio-solution-for-this-example"></a>Aby skonfigurować rozwiązania programu Visual Studio, w tym przykładzie  
   
-1.  Utwórz diagram klas UML w projekcie modelowania w nowym rozwiązaniu.  
+1. Utwórz diagram klas UML w projekcie modelowania w nowym rozwiązaniu.  
   
-    1.  W **architektury** menu, kliknij przycisk **nowy Diagram**.  
+   1.  W **architektury** menu, kliknij przycisk **nowy Diagram**.  
   
-    2.  Wybierz **Diagram klas UML**.  
+   2.  Wybierz **Diagram klas UML**.  
   
-    3.  Postępuj zgodnie z monitami, aby utworzyć nowy projekt rozwiązania i modelowanie.  
+   3.  Postępuj zgodnie z monitami, aby utworzyć nowy projekt rozwiązania i modelowanie.  
   
-    4.  Dodaj niektórych klas do diagramu, przeciągając narzędzie klasy UML z przybornika.  
+   4.  Dodaj niektórych klas do diagramu, przeciągając narzędzie klasy UML z przybornika.  
   
-    5.  Zapisz plik.  
+   5.  Zapisz plik.  
   
-2.  Utwórz projekt C# lub Visual Basic, w tym samym rozwiązaniu.  
+2. Utwórz projekt C# lub Visual Basic, w tym samym rozwiązaniu.  
   
-    -   W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wskaż opcję **Dodaj**, a następnie kliknij przycisk **nowy projekt**. W obszarze **zainstalowane szablony**, kliknij przycisk **języka Visual Basic** lub **Visual C#,** a następnie wybierz typ projektu, takich jak **aplikację Konsolową**.  
+   -   W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy rozwiązanie, wskaż opcję **Dodaj**, a następnie kliknij przycisk **nowy projekt**. W obszarze **zainstalowane szablony**, kliknij przycisk **języka Visual Basic** lub **Visual C#,** a następnie wybierz typ projektu, takich jak **aplikację Konsolową**.  
   
-3.  Dodaj plik zwykłego tekstu, C# lub projekcie Visual Basic. Ten plik będzie zawierać kod, który jest udostępniany, jeśli chcesz napisać kilka szablonów tekstu.  
+3. Dodaj plik zwykłego tekstu, C# lub projekcie Visual Basic. Ten plik będzie zawierać kod, który jest udostępniany, jeśli chcesz napisać kilka szablonów tekstu.  
   
-    -   W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt, wskaż opcję **Dodaj**, a następnie kliknij przycisk **nowy element**. Wybierz **plik tekstowy**.  
+   - W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt, wskaż opcję **Dodaj**, a następnie kliknij przycisk **nowy element**. Wybierz **plik tekstowy**.  
   
      Wstaw tekst, który jest wyświetlany w poniższej sekcji.  
   
-4.  Dodaj plik szablonu tekstu, C# lub projekcie Visual Basic.  
+4. Dodaj plik szablonu tekstu, C# lub projekcie Visual Basic.  
   
-    -   W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt, wskaż opcję **Dodaj**, a następnie kliknij przycisk **nowy element**. Wybierz **szablonu tekstu**.  
+   - W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt, wskaż opcję **Dodaj**, a następnie kliknij przycisk **nowy element**. Wybierz **szablonu tekstu**.  
   
      Wstaw kod, znajdujący się w pliku szablonu tekstu.  
   
-5.  Zapisz plik szablonu tekstu.  
+5. Zapisz plik szablonu tekstu.  
   
-6.  Sprawdź, czy kod w pliku zależnego. Powinien zawierać klasę dla każdej klasy UML w modelu.  
+6. Sprawdź, czy kod w pliku zależnego. Powinien zawierać klasę dla każdej klasy UML w modelu.  
   
-    1.  W projekcie języka Visual Basic, kliknij przycisk **Pokaż wszystkie pliki** na pasku narzędzi Eksploratora rozwiązań.  
+   1.  W projekcie języka Visual Basic, kliknij przycisk **Pokaż wszystkie pliki** na pasku narzędzi Eksploratora rozwiązań.  
   
-    2.  Rozwiń węzeł pliku szablonu w Eksploratorze rozwiązań.  
+   2.  Rozwiń węzeł pliku szablonu w Eksploratorze rozwiązań.  
   
 #### <a name="content-of-the-shared-text-file"></a>Zawartość pliku tekstowego udostępnionego  
  W tym przykładzie plik nosi nazwę SharedTemplateCode.txt, a w tym samym folderze, co szablonów tekstowych.  

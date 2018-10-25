@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251956"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836401"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Wdrażanie niestandardowego procesora dyrektywy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../includes/
   
  Alternatywne metody to:  
   
--   [Rozszerzenie programu Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Zapewnia to sposób zainstalowania i odinstalowywania procesora dyrektywy zarówno na swoim komputerze, jak i na innych komputerach. Zazwyczaj można umieścić inne funkcje w tym samym VSIX.  
+- [Rozszerzenie programu Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Zapewnia to sposób zainstalowania i odinstalowywania procesora dyrektywy zarówno na swoim komputerze, jak i na innych komputerach. Zazwyczaj można umieścić inne funkcje w tym samym VSIX.  
   
--   [Pakietu VSPackage](../extensibility/internals/vspackages.md). W przypadku definiowania VSPackage, zawierającego inne funkcje oprócz procesora dyrektywy, istnieje wygodna metoda rejestracji procesora dyrektywy.  
+- [Pakietu VSPackage](../extensibility/internals/vspackages.md). W przypadku definiowania VSPackage, zawierającego inne funkcje oprócz procesora dyrektywy, istnieje wygodna metoda rejestracji procesora dyrektywy.  
   
--   Ustaw klucz rejestru. W tej metodzie należy dodać wpis rejestru dla procesora dyrektywy.  
+- Ustaw klucz rejestru. W tej metodzie należy dodać wpis rejestru dla procesora dyrektywy.  
   
- Należy użyć jednej z następujących metod tylko wtedy, gdy chcesz przekształcić szablon tekstowy w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lub [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Jeśli używasz niestandardowego hosta w aplikacji, niestandardowy host jest odpowiedzialny za znalezienie procesorów dyrektyw dla każdej dyrektywy.  
+  Należy użyć jednej z następujących metod tylko wtedy, gdy chcesz przekształcić szablon tekstowy w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lub [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Jeśli używasz niestandardowego hosta w aplikacji, niestandardowy host jest odpowiedzialny za znalezienie procesorów dyrektyw dla każdej dyrektywy.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Wdrażanie procesora dyrektywy w VSIX  
  Można dodać niestandardowy procesor dyrektywy do [rozszerzeniu Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Upewnij się, że w pliku .vsix znajdują się dwa następujące elementy:  
   
--   Zestaw (.dll), który zawiera niestandardową klasę procesora dyrektywy.  
+- Zestaw (.dll), który zawiera niestandardową klasę procesora dyrektywy.  
   
--   Plik .pkgdef, który rejestruje procesor dyrektywy. Główna nazwa pliku musi być zgodna z nazwą zestawu. Na przykład, pliki mogą być nazwane CDP.dll i CDP.pkgdef.  
+- Plik .pkgdef, który rejestruje procesor dyrektywy. Główna nazwa pliku musi być zgodna z nazwą zestawu. Na przykład, pliki mogą być nazwane CDP.dll i CDP.pkgdef.  
   
- Aby sprawdzić lub zmienić zawartość pliku .vsix, zmień rozszerzenie nazwy pliku na .zip, a następnie otwórz go. Po zakończeniu edycji zawartości zmień nazwę pliku z powrotem na .vsix.  
+  Aby sprawdzić lub zmienić zawartość pliku .vsix, zmień rozszerzenie nazwy pliku na .zip, a następnie otwórz go. Po zakończeniu edycji zawartości zmień nazwę pliku z powrotem na .vsix.  
   
- Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje jedną z metod.  
+  Istnieje kilka sposobów tworzenia plików .vsix. Poniższa procedura opisuje jedną z metod.  
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Aby opracować niestandardowy procesor dyrektywy w projekcie VSIX  
   
@@ -167,27 +167,27 @@ Aby użyć niestandardowego procesora dyrektywy w [!INCLUDE[vsprvs](../includes/
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Aby zarejestrować procesor dyrektywy przez ustawienie klucza rejestru  
   
-1.  Uruchom `regedit`.  
+1. Uruchom `regedit`.  
   
-2.  W edytorze regedit przejdź do  
+2. W edytorze regedit przejdź do  
   
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     Jeśli chcesz zainstalować procesor dyrektywy w wersji doświadczalnej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], Wstaw "Exp" po "11.0".  
+    Jeśli chcesz zainstalować procesor dyrektywy w wersji doświadczalnej [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], Wstaw "Exp" po "11.0".  
   
-3.  Dodaj klucz rejestru, który ma taką samą nazwę jak klasa procesora dyrektywy.  
+3. Dodaj klucz rejestru, który ma taką samą nazwę jak klasa procesora dyrektywy.  
   
-    -   W drzewie rejestru kliknij prawym przyciskiem myszy **DirectiveProcessors** węzła, wskaż **New**, a następnie kliknij przycisk **klucz**.  
+   -   W drzewie rejestru kliknij prawym przyciskiem myszy **DirectiveProcessors** węzła, wskaż **New**, a następnie kliknij przycisk **klucz**.  
   
-4.  W nowym węźle dodaj wartości ciągu dla Class i CodeBase lub Assembly, zgodnie z poniższymi tabelami.  
+4. W nowym węźle dodaj wartości ciągu dla Class i CodeBase lub Assembly, zgodnie z poniższymi tabelami.  
   
-    1.  Kliknij prawym przyciskiem myszy węzeł, który został utworzony, wskaż opcję **New**, a następnie kliknij przycisk **wartość ciągu**.  
+   1.  Kliknij prawym przyciskiem myszy węzeł, który został utworzony, wskaż opcję **New**, a następnie kliknij przycisk **wartość ciągu**.  
   
-    2.  Wyedytuj nazwę wartości.  
+   2.  Wyedytuj nazwę wartości.  
   
-    3.  Kliknij dwukrotnie nazwę i wyedytuj dane.  
+   3.  Kliknij dwukrotnie nazwę i wyedytuj dane.  
   
- Jeśli procesor dyrektywy niestandardowej nie znajduje się w pamięci podręcznej GAC, podklucze rejestru powinny wyglądać tak, jak w poniższej tabeli:  
+   Jeśli procesor dyrektywy niestandardowej nie znajduje się w pamięci podręcznej GAC, podklucze rejestru powinny wyglądać tak, jak w poniższej tabeli:  
   
 |Nazwa|Typ|Dane|  
 |----------|----------|----------|  

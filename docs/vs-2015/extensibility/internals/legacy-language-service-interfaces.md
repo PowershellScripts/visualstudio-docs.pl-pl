@@ -16,12 +16,12 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 654a0d7de3ad75c541d14a38a2a897adb731ea7a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d64ff7ec1aea24a5e98b3f37339639440e31bf42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249213"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837246"
 ---
 # <a name="legacy-language-service-interfaces"></a>Interfejsy starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ Dla określonego języka programowania jednocześnie może istnieć tylko jedno 
   
  Interfejsy usługi w języka core można zaimplementować na dowolnej liczbie osobnych klas. Jednak typowym podejściem jest wdrożenie następujących interfejsów w jednej klasy:  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (opcjonalnie)  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> (opcjonalnie)  
   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Interfejsu muszą być zaimplementowane na wszystkie usługi w języka. Zawiera informacje dotyczące usługi języka, takie jak nazwa zlokalizowanego języka rozszerzeń nazw plików, które są skojarzone z usługi języka oraz jak pobierać colorizer.  
+  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> Interfejsu muszą być zaimplementowane na wszystkie usługi w języka. Zawiera informacje dotyczące usługi języka, takie jak nazwa zlokalizowanego języka rozszerzeń nazw plików, które są skojarzone z usługi języka oraz jak pobierać colorizer.  
   
 ## <a name="additional-language-service-interfaces"></a>Interfejsy usługi dodatkowych języków  
  Inne interfejsy mogą otrzymywać przy użyciu usługi języka. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] żąda osobne wystąpienie te interfejsy, dla każdego wystąpienia bufor tekstowy. W związku z tym należy zaimplementować każdy z tych interfejsów własnego obiektu. W poniższej tabeli przedstawiono interfejsy, które wymagają jedno wystąpienie każdego wystąpienia buforu tekstu.  

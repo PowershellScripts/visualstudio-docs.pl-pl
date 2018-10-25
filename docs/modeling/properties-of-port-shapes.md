@@ -13,48 +13,48 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f070d9c8c7283542dc9f2af921698245a2075f66
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f537388d439c401df13e955db18e661863dc5ebf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951248"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820853"
 ---
 # <a name="properties-of-port-shapes"></a>Właściwości kształtów portu
-Kształty port służy do reprezentowania klasy domeny w Projektancie wygenerowany.
+Kształty port służy do reprezentowania klasy domeny w wygenerowanym projektancie.
 
- Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji na temat używania tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+ Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji o tym, jak korzystać z tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
- Port kształty mają właściwości, które są wymienione w poniższej tabeli.
+ Kształtów portu mają właściwości, które są wymienione w poniższej tabeli.
 
 |Właściwość|Opis|Domyślny|
-|--------------|-----------------|-------------|
-|Kolor wypełnienia|Kolor wypełnienia kształtu.|biały|
-|Tryb gradientu wypełnienia|Tryb gradientu wypełnienia tego kształtu.|poziomy|
-|Geometria|Geometria tego kształtu (prostokąta, zaokrąglony prostokąt, elipsy lub okręgu).|Prostokąt|
-|Ma domyślne punkty połączenia|Jeśli `True`kształt będzie używać lewej górnej i dolnej i punkty połączenia na odpowiednie w Projektancie wygenerowany.|False|
-|Kolor konturu|Kolor konturu kształtu.|czarne|
-|Styl kreskowania konspektu|Styl kreskowania konturu kształtu (pełne, kreska, kropki, DashDot, DashDotDot lub niestandardowy).|Stałe|
-|Szerokość konturu|Grubość konturu kształtu.|0.03125|
-|Kolor tekstu|Kolor używany do elementów decorator tekstu, które są skojarzone z tym kształtem.|czarne|
+|-|-|-|
+|Kolor wypełnienia|Kolor wypełnienia tego kształtu.|Biały|
+|Tryb gradientu wypełnienia|Tryb gradientu wypełnienia tego kształtu.|Poziome|
+|Geometrii|Geometria tego kształtu (prostokąt, zaokrąglony prostokąt, elipsy lub Circle).|Prostokąt|
+|Ma domyślne punkty połączenia|Jeśli `True`kształt użyje górnej, dolnej, lewej i połączenia na odpowiednie punkty w wygenerowanym projektancie.|False|
+|Kolor konturu|Kolor konturu tego kształtu.|Czarny|
+|Styl kreskowania konturu|Styl kreskowania konturu tego kształtu (stałe, kreski, kropki, DashDot, DashDotDot lub niestandardowy).|Stałe|
+|Grubość konturu|Grubość konturu tego kształtu.|0.03125|
+|Kolor tekstu|Kolor, który jest używany dla dekoratorów tekstu, które są skojarzone z tym kształtem.|Czarny|
 |Modyfikator dostępu|Poziom dostępu klasy (`public` lub `internal`).|Public|
-|Atrybuty niestandardowe|Można dodawać atrybuty do klasy kodu źródłowego, która jest generowana z tego kształtu.|\<Brak >|
-|Generuje o podwójnej precyzji pochodnych|Jeśli `True`, zarówno klasy podstawowej i częściowej klasy (obsługuje dostosowywania przy użyciu zastąpień) zostanie wygenerowany. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md)|False|
-|Ma niestandardowy konstruktora|Jeśli `True`, niestandardowe konstruktora znajdzie się w kodzie źródłowym. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzenie klasy generowane](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Modyfikator dziedziczenia|Opisuje rodzaj dziedziczenia klasy kodu źródła, która jest generowana z portu (`none`, `abstract` lub `sealed`).|brak|
-|Podstawowy Port|Klasa podstawowa tego kształtu.|(Brak)|
+|Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu źródłowego, która jest generowany na podstawie tego kształtu.|\<Brak >|
+|Generuje Double pochodne|Jeśli `True`, zostaną wygenerowane klasy podstawowej i klasy częściowej (obsługuje dostosowywania przy użyciu zastąpień). Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md)|False|
+|Ma konstruktora niestandardowego|Jeśli `True`, konstruktora niestandardowego, które będą dostępne w kodzie źródłowym. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Modyfikator dziedziczenia|Opisuje typ dziedziczenia klasy kodu źródłowego, która jest generowana z portu (`none`, `abstract` lub `sealed`).|brak|
+|Podstawowy Port|Klasa bazowa tego kształtu.|(Brak)|
 |Nazwa|Nazwa tego kształtu.|Bieżąca nazwa|
-|Przestrzeń nazw|Przestrzeń nazw, która jest połączona z tym kształtem.|Bieżącej przestrzeni nazw|
-|Typ Porada narzędzia|W jaki sposób element tooltip jest zdefiniowany (stałej, zmiennej lub brak). Jeśli następnie stałej wartości `Fixed Tooltip Text` właściwość jest używana jako etykietka narzędzia; Jeśli zmienna, następnie element tooltip jest zdefiniowany w kodu niestandardowego.|brak|
-|Uwagi|Nieformalne uwagi, które są skojarzone z tym kształtem.|\<Brak >|
-|Wysokość początkowego|Wysokość początkowego tego kształtu w calach.|1|
-|Szerokość początkowa|Szerokość początkowa tego kształtu w calach.|1.5|
-|Kolor wypełnienia dostępnego jako właściwość<br /><br /> Tryb gradientu wypełnienia dostępnego<br /><br /> Udostępniany jako właściwość kolor konturu<br /><br /> Udostępniany jako właściwość Styl kreskowany konspektu<br /><br /> Widoczne grubość konspektu jako właściwość<br /><br /> Opisuje kolor tekstu|Jeśli `True`, użytkownik może ustawić właściwość podane kształtu. Aby to ustawić, kliknij prawym przyciskiem myszy definicji kształtu, a następnie kliknij przycisk **dodać widoczne**.|False|
-|Opis|Używany do dokumentów wygenerowanych projektanta.|\<Brak >|
-|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektanta dla tego kształtu.|\<Brak >|
-|Stały tekst wskazówki|Tekst, który jest używany dla stałych etykietka narzędzia.|\<Brak >|
-|Słowo kluczowe pomocy|Słowo kluczowe jest używana do indeksowania pomocy F1 dla tego kształtu.|\<Brak >|
+|Przestrzeń nazw|Przestrzeń nazw, która jest połączona z tym kształtem.|Bieżąca przestrzeń nazw|
+|Typ Porada narzędzia|Jak etykietka narzędzia jest zdefiniowane (stałe, zmienna lub brak). Jeśli następnie stałej wartości `Fixed Tooltip Text` właściwość jest używana jako etykietka narzędzia; Jeśli jest to zmienna, następnie etykietki narzędzia jest definiowana w kodzie niestandardowym.|brak|
+|Uwagi|Uwagi informacyjne, które są skojarzone z tym kształtem.|\<Brak >|
+|Początkowa wysokość|Początkowa wysokość tego kształtu, w calach.|1|
+|Początkowa szerokość|Początkowa szerokość tego kształtu, w calach.|1.5|
+|Kolor wypełnienia uwidocznione jako właściwość<br /><br /> Tryb gradientu wypełnienia narażone<br /><br /> Widoczne kolor konturu jako właściwość<br /><br /> Widoczne stylu kreskowania konturu jako właściwość<br /><br /> Grubość konturu jako właściwość widoczne<br /><br /> Opisuje kolor tekstu|Jeśli `True`, użytkownik może ustawić właściwość podane kształtu. Aby to ustawić, kliknij prawym przyciskiem myszy definicję kształtu, a następnie kliknij przycisk **Dodaj udostępniane**.|False|
+|Opis|Umożliwia dokumentowanie wygenerowanego projektanta.|\<Brak >|
+|Nazwa wyświetlana|Nazwa która będzie wyświetlana w wygenerowanym projektancie dla tego kształtu.|\<Brak >|
+|Stały tekst wskazówki|Tekst, który jest używany dla ustalonej etykietki narzędzia.|\<Brak >|
+|Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tego kształtu.|\<Brak >|
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

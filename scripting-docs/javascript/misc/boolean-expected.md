@@ -20,28 +20,29 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 600ab26f60c2196ebc682adcffcd6b24c23cd358
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cb8ec8f7244b98cfa628794b485859dbec611c19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868095"
 ---
 # <a name="boolean-expected"></a>Oczekiwano obiektu logicznego
-Użytkownik próbował wywołać **Boolean.prototype.toString** lub **Boolean.prototype.valueOf** metody dla obiekt typu innego niż `Boolean`. Obiekt tego typu wywołania musi być typu `Boolean`. Na przykład:  
-  
-```JavaScript  
-var o = new Object;  
-o.f = Boolean.prototype.toString;  
-o.f();  
-```  
-  
-### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
-  
--   Tylko wywołania typu Boolean **. prototype.toString** lub **Boolean.prototype.valueOf** metod na obiektach typu **Boolean.**  
-  
-## <a name="see-also"></a>Zobacz też  
- [Boolean — obiekt](../../javascript/reference/boolean-object-javascript.md)   
- [Typy danych](../../javascript/data-types-javascript.md)   
- [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)   
- [Kopiowanie, przekazywanie i porównywanie danych](../../javascript/advanced/copying-passing-and-comparing-data-javascript.md)
+Podjęto próbę wywołania **Boolean.prototype.toString** lub **Boolean.prototype.valueOf** metody na obiekt typu innego niż `Boolean`. Obiekt tego typu wywołania musi być typu `Boolean`. Na przykład:
+
+```JavaScript
+var o = new Object;
+o.f = Boolean.prototype.toString;
+o.f();
+```
+
+## <a name="to-correct-this-error"></a>Aby poprawić ten błąd
+
+- Tylko wywołania **Boolean.prototype.toString** lub **Boolean.prototype.valueOf** metod obiektów typu **Boolean.**
+
+## <a name="see-also"></a>Zobacz też
+
+- [Boolean, obiekt](../../javascript/reference/boolean-object-javascript.md)
+- [Typy danych](../../javascript/data-types-javascript.md)
+- [Sterowanie przepływem programu](../../javascript/controlling-program-flow-javascript.md)
+- [Kopiowanie, przekazywanie i porównywanie danych](../../javascript/advanced/copying-passing-and-comparing-data-javascript.md)

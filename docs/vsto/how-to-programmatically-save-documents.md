@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 00ad8f91e738cb98aeba93b69cb47c6ab644aa3f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e794a995d1e978cf5aae8d1b6ec9c1711436af73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883480"
 ---
 # <a name="how-to-programmatically-save-documents"></a>Porady: programowane zapisywanie dokumentów
   Istnieje kilka sposobów, aby zapisać dokumenty Microsoft Word pakietu Office. Można zapisać dokumentu, bez zmiany nazwy dokumentu lub zapisaniu dokumentu pod nową nazwą.  
@@ -39,12 +39,12 @@ ms.locfileid: "35676187"
   
 ### <a name="to-save-the-active-document"></a>Aby zapisać aktywnego dokumentu  
   
-1.  Wywołaj <xref:Microsoft.Office.Interop.Word._Document.Save%2A> metodę dla aktywnego dokumentu. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.  
+1. Wywołaj <xref:Microsoft.Office.Interop.Word._Document.Save%2A> metodę dla aktywnego dokumentu. Aby wykorzystać ten przykład kodu, należy uruchomić go z `ThisDocument` lub `ThisAddIn` klasy w projekcie.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#8)]
-     [!code-csharp[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#8)]  
+    [!code-vb[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#8)]
+    [!code-csharp[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#8)]  
   
- Jeśli nie masz pewności, czy dokument, który ma zostać zapisany jest aktywny dokument, możesz się odwoływać do według jego nazwy.  
+   Jeśli nie masz pewności, czy dokument, który ma zostać zapisany jest aktywny dokument, możesz się odwoływać do według jego nazwy.  
   
 ### <a name="to-save-a-document-specified-by-name"></a>Można zapisać dokumentu, określonego przez nazwę  
   

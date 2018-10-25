@@ -10,12 +10,12 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: d55e21a7324143b5bbb60ed714b9c2dc070828ce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 083522aae47abdfdec37d5add756457f18590953
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279248"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856837"
 ---
 # <a name="visual-studio-subscriptions"></a>Subskrypcje programu Visual Studio
 
@@ -174,7 +174,7 @@ Do Twojej subskrypcji było jeszcze bardziej użyteczny, możemy dodać i zaktua
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Usługom DevOps platformy Azure</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Azure DevOps Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Subskrypcja dewelopera usługi Office 365</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Konto dewelopera systemu Windows</a></li>
                             <li>PowerBI Pro</li>

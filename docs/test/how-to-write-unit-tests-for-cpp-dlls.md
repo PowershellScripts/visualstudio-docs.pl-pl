@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 0d79c8a57a58e92f826a9d6bf48ac15213a2f58e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 829882cf3504583a4e9dbc3532c900df26a921f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862531"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Pisanie testów jednostkowych dla bibliotek DLL C++ w programie Visual Studio
 
@@ -42,84 +42,84 @@ ms.locfileid: "39382803"
 
 ###  <a name="staticLink"></a> Aby zmienić bibliotekę DLL do biblioteki statycznej
 
--   Jeśli testy muszą użyć elementów członkowskich, które nie są eksportowane przez projekt DLL i projekt testowany jest kompilowany jako biblioteka dynamiczna, należy wziąć pod uwagę podczas konwertowania go do biblioteki statycznej.
+- Jeśli testy muszą użyć elementów członkowskich, które nie są eksportowane przez projekt DLL i projekt testowany jest kompilowany jako biblioteka dynamiczna, należy wziąć pod uwagę podczas konwertowania go do biblioteki statycznej.
 
-    1.  W **Eksploratora rozwiązań**, w menu skrótów testowanego projektu, wybierz **właściwości**. Projekt **właściwości** zostanie otwarte okno.
+  1.  W **Eksploratora rozwiązań**, w menu skrótów testowanego projektu, wybierz **właściwości**. Projekt **właściwości** zostanie otwarte okno.
 
-    2.  Wybierz **właściwości konfiguracji** > **ogólne**.
+  2.  Wybierz **właściwości konfiguracji** > **ogólne**.
 
-    3.  Ustaw **typu konfiguracji** do **biblioteka statyczna (.lib)**.
+  3.  Ustaw **typu konfiguracji** do **biblioteka statyczna (.lib)**.
 
- Przejdź do procedury [połączyć testy z plikami obiektu lub biblioteki](#objectRef).
+  Przejdź do procedury [połączyć testy z plikami obiektu lub biblioteki](#objectRef).
 
 ###  <a name="projectRef"></a> Aby odwołać się do eksportowanych funkcji DLL z projektu testowego
 
--   Jeśli projekt DLL eksportuje funkcje, które mają zostać przetestowane, można dodać odwołanie do projektu kodu z projektu testowego.
+- Jeśli projekt DLL eksportuje funkcje, które mają zostać przetestowane, można dodać odwołanie do projektu kodu z projektu testowego.
 
-    1.  Utwórz natywny projekt testów jednostkowych.
+  1.  Utwórz natywny projekt testów jednostkowych.
 
-        1.  Na **pliku** menu, wybierz **New** > **projektu** > **Visual C++**  >  **Testu** > **projekt testu jednostkowego w języku C++**.
+      1.  Na **pliku** menu, wybierz **New** > **projektu** > **Visual C++**  >  **Testu** > **projekt testu jednostkowego w języku C++**.
 
-    2.  W **Eksploratora rozwiązań**, w menu skrótów projektu testów wybierz **odwołania**. Projekt **właściwości** zostanie otwarte okno.
+  2.  W **Eksploratora rozwiązań**, w menu skrótów projektu testów wybierz **odwołania**. Projekt **właściwości** zostanie otwarte okno.
 
-    3.  Wybierz **wspólne właściwości** > **szablon i odwołania**, a następnie wybierz **Dodaj nowe odwołanie** przycisku.
+  3.  Wybierz **wspólne właściwości** > **szablon i odwołania**, a następnie wybierz **Dodaj nowe odwołanie** przycisku.
 
-    4.  Wybierz **projektów**, a następnie projekt ma zostać przetestowana.
+  4.  Wybierz **projektów**, a następnie projekt ma zostać przetestowana.
 
-         Wybierz **Dodaj** przycisku.
+       Wybierz **Dodaj** przycisku.
 
-    5.  W oknie właściwości dla projektu testów Dodaj lokalizację testowanego projektu Dołącz katalogi.
+  5.  W oknie właściwości dla projektu testów Dodaj lokalizację testowanego projektu Dołącz katalogi.
 
-         Wybierz **właściwości konfiguracji** > **katalogi VC ++** > **katalogi plików nagłówkowych**.
+       Wybierz **właściwości konfiguracji** > **katalogi VC ++** > **katalogi plików nagłówkowych**.
 
-         Wybierz **Edytuj**, a następnie Dodaj nagłówek katalogu testowanego projektu.
+       Wybierz **Edytuj**, a następnie Dodaj nagłówek katalogu testowanego projektu.
 
- Przejdź do [pisanie testów jednostkowych](#addTests).
+  Przejdź do [pisanie testów jednostkowych](#addTests).
 
 ###  <a name="objectRef"></a> Aby powiązać testy z plikami obiektu lub biblioteki
 
--   Jeśli biblioteka DLL nie eksportuje funkcji, które chcesz przetestować, możesz dodać dane wyjściowe *.obj* lub *.lib* pliku do zależności testowanego projektu testowego.
+- Jeśli biblioteka DLL nie eksportuje funkcji, które chcesz przetestować, możesz dodać dane wyjściowe *.obj* lub *.lib* pliku do zależności testowanego projektu testowego.
 
-    1.  Utwórz natywny projekt testów jednostkowych.
+  1.  Utwórz natywny projekt testów jednostkowych.
 
-        1.  Na **pliku** menu, wybierz **New** > **projektu** > **Visual C++**  >  **Testu** > **natywny projekt testów jednostkowych**.
+      1.  Na **pliku** menu, wybierz **New** > **projektu** > **Visual C++**  >  **Testu** > **natywny projekt testów jednostkowych**.
 
-    2.  W **Eksploratora rozwiązań**, w menu skrótów projektu testów wybierz **właściwości**.
+  2.  W **Eksploratora rozwiązań**, w menu skrótów projektu testów wybierz **właściwości**.
 
-    3.  Wybierz **właściwości konfiguracji** > **konsolidatora** > **dane wejściowe** > **dodatkowe zależności**.
+  3.  Wybierz **właściwości konfiguracji** > **konsolidatora** > **dane wejściowe** > **dodatkowe zależności**.
 
-         Wybierz **Edytuj**i Dodaj nazwy **.obj** lub **.lib** plików. Nie należy używać nazw pełnej ścieżki.
+       Wybierz **Edytuj**i Dodaj nazwy **.obj** lub **.lib** plików. Nie należy używać nazw pełnej ścieżki.
 
-    4.  Wybierz **właściwości konfiguracji** > **konsolidatora** > **ogólne** > **dodatkowe katalogi biblioteki** .
+  4.  Wybierz **właściwości konfiguracji** > **konsolidatora** > **ogólne** > **dodatkowe katalogi biblioteki** .
 
-         Wybierz **Edytuj**i Dodaj ścieżkę katalogu **.obj** lub **.lib** plików. Ścieżka zazwyczaj mieści się w folderze kompilacji testowanego projektu.
+       Wybierz **Edytuj**i Dodaj ścieżkę katalogu **.obj** lub **.lib** plików. Ścieżka zazwyczaj mieści się w folderze kompilacji testowanego projektu.
 
-    5.  Wybierz **właściwości konfiguracji** > **katalogi VC ++** > **katalogi plików nagłówkowych**.
+  5.  Wybierz **właściwości konfiguracji** > **katalogi VC ++** > **katalogi plików nagłówkowych**.
 
-         Wybierz **Edytuj**, a następnie Dodaj nagłówek katalogu testowanego projektu.
+       Wybierz **Edytuj**, a następnie Dodaj nagłówek katalogu testowanego projektu.
 
- Przejdź do [pisanie testów jednostkowych](#addTests).
+  Przejdź do [pisanie testów jednostkowych](#addTests).
 
 ###  <a name="sameProject"></a> Aby dodać testy jednostkowe w tym samym projekcie
 
-1.  Zmodyfikuj właściwości projektu kodu produktu, aby uwzględnić pliki nagłówkowe i bibliotek, które są wymagane dla testów jednostkowych.
+1. Zmodyfikuj właściwości projektu kodu produktu, aby uwzględnić pliki nagłówkowe i bibliotek, które są wymagane dla testów jednostkowych.
 
-    1.  W **Eksploratora rozwiązań**, w menu skrótów testowanego projektu wybierz **właściwości**. Projekt **właściwości** zostanie otwarte okno.
+   1.  W **Eksploratora rozwiązań**, w menu skrótów testowanego projektu wybierz **właściwości**. Projekt **właściwości** zostanie otwarte okno.
 
-    2.  Wybierz **właściwości konfiguracji** > **katalogi VC ++**.
+   2.  Wybierz **właściwości konfiguracji** > **katalogi VC ++**.
 
-    3.  Edytuj katalogi dołączonych i bibliotek:
+   3.  Edytuj katalogi dołączonych i bibliotek:
 
-        |Katalog|Właściwość|
-        |-|-|
-        |**Katalogi plików nagłówkowych** | **$(VCInstallDir)UnitTest\include;$(IncludePath)**|
-        |**Katalogi bibliotek** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
+       |Katalog|Właściwość|
+       |-|-|
+       |**Katalogi plików nagłówkowych** | **$(VCInstallDir)UnitTest\include;$(IncludePath)**|
+       |**Katalogi bibliotek** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
-2.  Dodaj plik testu jednostkowego języka C++:
+2. Dodaj plik testu jednostkowego języka C++:
 
-    -   W **Eksploratora rozwiązań**, w menu skrótów projektu wybierz **Dodaj** > **nowy element** > **testu jednostkowego języka C++**.
+   -   W **Eksploratora rozwiązań**, w menu skrótów projektu wybierz **Dodaj** > **nowy element** > **testu jednostkowego języka C++**.
 
- Przejdź do [pisanie testów jednostkowych](#addTests).
+   Przejdź do [pisanie testów jednostkowych](#addTests).
 
 ##  <a name="addTests"></a> Pisanie testów jednostkowych
 

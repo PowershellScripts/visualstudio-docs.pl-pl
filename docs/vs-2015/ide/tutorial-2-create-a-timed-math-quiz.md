@@ -14,32 +14,32 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d86d42ce7e345a30c56390bede6957dff8bcd67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b0b7a5949ab8fe624a087a1e024367f896ddb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205078"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884891"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Samouczek 2: Utworzenie kwizu matematycznego z limitem czasu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym samouczku tworzysz quiz, w którym osoba wypełniająca quiz musi rozwiązać cztery losowe problemy arytmetyczne w określonym czasie. Dowiesz się, jak:  
   
--   Wygeneruj liczby losowe przy użyciu `Random` klasy.  
+- Wygeneruj liczby losowe przy użyciu `Random` klasy.  
   
--   Wyzwalanie zdarzenia w określonym czasie za pomocą **czasomierza** kontroli.  
+- Wyzwalanie zdarzenia w określonym czasie za pomocą **czasomierza** kontroli.  
   
--   Steruj przepływem wykonania programu za pomocą `if else` instrukcji.  
+- Steruj przepływem wykonania programu za pomocą `if else` instrukcji.  
   
--   Wykonywać podstawowe operacje arytmetyczne w kodzie.  
+- Wykonywać podstawowe operacje arytmetyczne w kodzie.  
   
- Gdy skończysz, quiz będzie wyglądał jak na poniższym obrazie, z wyjątkiem z różną liczbą.  
+  Gdy skończysz, quiz będzie wyglądał jak na poniższym obrazie, z wyjątkiem z różną liczbą.  
   
- ![Quiz matematyczny z czterema problemami](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
-Quiz tworzony w ramach tego samouczka  
+  ![Quiz matematyczny z czterema problemami](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
+  Quiz tworzony w ramach tego samouczka  
   
- Aby pobrać pełną wersję quizu, zobacz [przykładowy samouczek pełnej wersji quizu matematycznego](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
+  Aby pobrać pełną wersję quizu, zobacz [przykładowy samouczek pełnej wersji quizu matematycznego](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
   
 > [!NOTE]
 >  W tym samouczku omówiono zarówno Visual C# i Visual Basic, więc Skoncentruj się na informacjach, które są specyficzne dla języka programowania, którego używasz.  

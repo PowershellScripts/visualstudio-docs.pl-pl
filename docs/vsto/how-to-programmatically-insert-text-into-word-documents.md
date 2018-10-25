@@ -19,15 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 331fa8a91bb4fff51cb59b7a9f3cce23a38b3d2e
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a602f50e9d3c439fc450c286923341dafff1e116
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257215"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881667"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Porady: programowane Wstawianie tekstu w dokumentach programu Word
-  Istnieją trzy główne metody Wstawianie tekstu w dokumentach programu Microsoft Office Word:  
+  Istnieją trzy podstawowe sposoby Wstawianie tekstu w dokumentach programu Microsoft Office Word:  
   
 -   Wstawianie tekstu w zakresie.  
   
@@ -36,50 +36,50 @@ ms.locfileid: "35257215"
 -   Użyj <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> metody <xref:Microsoft.Office.Interop.Word.Selection> obiektu, aby wstawić tekst na kursora lub zaznaczenia.  
   
 > [!NOTE]  
->  Można również wstawić tekst do formantów zawartości i zakładki. Aby uzyskać więcej informacji, zobacz [formanty zawartości](../vsto/content-controls.md) i [BOOKMARK, formant:](../vsto/bookmark-control.md).  
+>  Można także wstawianie tekstu w formantach zawartości i zakładki. Aby uzyskać więcej informacji, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md) i [Bookmark, formant](../vsto/bookmark-control.md).  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ## <a name="insert-text-in-a-range"></a>Wstawianie tekstu w zakresie  
- Użyj <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwość <xref:Microsoft.Office.Interop.Word.Range> obiektu Wstawianie tekstu w dokumencie.  
+ Użyj <xref:Microsoft.Office.Interop.Word.Range.Text%2A> właściwość <xref:Microsoft.Office.Interop.Word.Range> obiektu umożliwia wstawianie tekstu w dokumencie.  
   
-### <a name="to-insert-text-in-a-range"></a>Wstawianie tekstu w zakresie  
+### <a name="to-insert-text-in-a-range"></a>Umożliwia wstawianie tekstu w zakresie  
   
-1.  Określ zakres na początku dokumentu i wstawić tekst **nowy tekst**.  
+1.  Określ zakres na początku dokumentu, a następnie wstawianie tekstu **nowy tekst**.  
   
-     Poniższy przykład kodu może służyć w dostosowaniu poziomie dokumentu.  
+     Poniższy przykład kodu może służyć w dostosowaniu na poziomie dokumentu.  
   
      [!code-vb[Trin_VstcoreWordAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#51)]
      [!code-csharp[Trin_VstcoreWordAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#51)]  
   
-     Poniższy przykład kodu można używać w dodatku VSTO. Ten kod zawiera aktywny dokument.  
+     Poniższy przykład kodu może służyć w dodatku VSTO. Ten kod używa aktywnego dokumentu.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#51)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#51)]  
   
-2.  Wybierz <xref:Microsoft.Office.Interop.Word.Range> obiektu, który ma rozszerzonej z jednego znaku do długości wstawionego tekstu.  
+2.  Wybierz <xref:Microsoft.Office.Interop.Word.Range> obiektu, który zostały rozwinięte z jednego znaku i długość wstawionego tekstu.  
   
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]  
   
-## <a name="replace-text-in-a-range"></a>Zastąp tekst w zakresie  
+## <a name="replace-text-in-a-range"></a>Zastępowanie tekstu w zakresie  
  Jeśli określony zakres zawiera tekst, cały tekst w zakresie jest zastępowany wstawionego tekstu.  
   
-### <a name="to-replace-text-in-a-range"></a>Aby zastąpić tekst w zakresie  
+### <a name="to-replace-text-in-a-range"></a>Aby zamienić tekst w zakresie  
   
-1.  Utwórz <xref:Microsoft.Office.Interop.Word.Range> obiekt, który składa się z pierwsze 12 znaków w dokumencie.  
+1.  Utwórz <xref:Microsoft.Office.Interop.Word.Range> obiekt, który składa się z pierwszych 12 znaków w dokumencie.  
   
-     Poniższy przykład kodu może służyć w dostosowaniu poziomie dokumentu.  
+     Poniższy przykład kodu może służyć w dostosowaniu na poziomie dokumentu.  
   
      [!code-vb[Trin_VstcoreWordAutomation#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomation#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#53)]  
   
-     Poniższy przykład kodu można używać w dodatku VSTO. Ten kod zawiera aktywny dokument.  
+     Poniższy przykład kodu może służyć w dodatku VSTO. Ten kod używa aktywnego dokumentu.  
   
      [!code-vb[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#53)]  
   
-2.  Zastąp te znaki z ciągiem **nowy tekst**.  
+2.  Zastąp te znaki ciągu **nowy tekst**.  
   
      [!code-vb[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#54)]
      [!code-csharp[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#54)]  
@@ -89,44 +89,44 @@ ms.locfileid: "35257215"
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]  
   
-## <a name="insert-text-using-typetext"></a>Wstaw tekst przy użyciu obiektu TypeText  
- <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> Metody wstawia tekst w zaznaczenia. <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> zachowuje się inaczej w zależności od opcji na komputerze użytkownika. Kod w poniższej procedurze deklaruje <xref:Microsoft.Office.Interop.Word.Selection> zmiennej obiektu i wyłącza **zastępowania** opcji w przypadku, gdy jest włączona. Jeśli **zastępowania** opcja jest aktywna, a następnie tekst obok kursora jest zastępowany.  
+## <a name="insert-text-using-typetext"></a>Wstaw tekst za pomocą TypeText  
+ <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> Metoda wstawia tekst na wybór. <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> zachowuje się inaczej w zależności od opcji ustawione na komputerze użytkownika. Kod w poniższej procedurze deklaruje <xref:Microsoft.Office.Interop.Word.Selection> zmiennej obiektu i wyłącza **zastępowania** opcję, jeśli jest włączona. Jeśli **zastępowania** opcja jest aktywna, a następnie dowolny tekst, obok kursor zostanie zastąpiony.  
   
-### <a name="to-insert-text-using-the-typetext-method"></a>Aby wstawić tekst przy użyciu metody obiektu TypeText  
+### <a name="to-insert-text-using-the-typetext-method"></a>Aby wstawić tekst przy użyciu metody TypeText  
   
-1.  Deklarowanie <xref:Microsoft.Office.Interop.Word.Selection> zmienna obiektu.  
+1. Zadeklaruj <xref:Microsoft.Office.Interop.Word.Selection> zmiennej obiektu.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
-     [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]  
+    [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
+    [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]  
   
-2.  Wyłącz **zastępowania** opcji w przypadku, gdy jest włączona.  
+2. Wyłącz **zastępowania** opcję, jeśli jest włączona.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#58)]
-     [!code-csharp[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#58)]  
+    [!code-vb[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#58)]
+    [!code-csharp[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#58)]  
   
-3.  Sprawdź, czy bieżące zaznaczenie jest punkt wstawiania.  
+3. Sprawdź, czy bieżące zaznaczenie jest punkt wstawiania.  
   
-     Jeśli tak jest, kod wstawia zdanie przy użyciu <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>i następnie akapitu znacznik przy użyciu <xref:Microsoft.Office.Interop.Word.Selection.TypeParagraph%2A> metody.  
+    Jeśli tak jest, kod wstawia zdania przy użyciu <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>i następnie akapitu znacznik using <xref:Microsoft.Office.Interop.Word.Selection.TypeParagraph%2A> metody.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#59)]
-     [!code-csharp[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#59)]  
+    [!code-vb[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#59)]
+    [!code-csharp[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#59)]  
   
-4.  Kod w **ElseIf** zablokować testy, aby zobaczyć, czy zaznaczenie jest zaznaczeniem normalnego. Jeśli tak jest, następnie inne **Jeśli** zablokować testy, aby sprawdzić, czy **ReplaceSelection** opcja jest włączona. Jeśli tak jest, w kodzie użyto <xref:Microsoft.Office.Interop.Word.Selection.Collapse%2A> Metoda wyboru, aby zwinąć zaznaczenie punkt wstawiania na początku bloku zaznaczonego tekstu. Wstaw tekst i znacznik akapitu.  
+4. Kod w **ElseIf** block testy, aby zobaczyć, czy zaznaczenie jest zaznaczeniem normalny. Jeśli tak jest, następnie inne **Jeśli** block testy, aby zobaczyć, czy **ReplaceSelection** opcja jest włączona. Jeśli tak jest, kod używa <xref:Microsoft.Office.Interop.Word.Selection.Collapse%2A> Metoda wyboru, aby zwinąć zaznaczenie do punktu wstawiania na początku bloku zaznaczonego tekstu. Wstaw tekst i znacznik akapitu.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#60)]
-     [!code-csharp[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#60)]  
+    [!code-vb[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#60)]
+    [!code-csharp[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#60)]  
   
-5.  Jeśli zaznaczenie nie znajduje się punkt wstawiania lub bloku zaznaczonego tekstu, a następnie kod w **Else** bloku nie działają.  
+5. Jeśli zaznaczenie nie znajduje się punkt wstawiania lub blok zaznaczonego tekstu, a następnie kod w **Else** bloku nic nie robi.  
   
-     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
-     [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
+    [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
+    [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
   
- Można również użyć <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> metody <xref:Microsoft.Office.Interop.Word.Selection> obiektu, który naśladuje funkcjonalność **Backspace** klucza na klawiaturze. Jednak jeśli chodzi o Wstawianie i operowanie nimi tekstu, <xref:Microsoft.Office.Interop.Word.Range> obiektu zapewnia większą kontrolę.  
+   Można również użyć <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> metody <xref:Microsoft.Office.Interop.Word.Selection> obiektu, który naśladuje funkcjonalność **Backspace** kluczowe na klawiaturze. Jednakże, jeśli chodzi o wstawiania i manipulowania tekstem, <xref:Microsoft.Office.Interop.Word.Range> obiektu oferuje większą kontrolę.  
   
- Poniższy przykład przedstawia kompletny kod. Aby użyć tego przykładu, należy uruchomić kod z `ThisDocument` lub `ThisAddIn` klasy w projekcie.  
+   Poniższy przykład pokazuje kompletny kod. Aby użyć tego przykładu, należy uruchomić kod z `ThisDocument` lub `ThisAddIn` klasy w projekcie.  
   
- [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
- [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
+   [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
+   [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
 ## <a name="see-also"></a>Zobacz także  
  [Porady: programowane formatowanie tekstu w dokumentach](../vsto/how-to-programmatically-format-text-in-documents.md)   

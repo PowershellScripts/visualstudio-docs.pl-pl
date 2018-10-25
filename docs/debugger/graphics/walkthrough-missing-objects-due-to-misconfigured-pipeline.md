@@ -1,5 +1,5 @@
 ---
-title: 'Wskazówki: Brak obiektów spowodowany błędnie skonfigurowanym potokiem | Dokumentacja firmy Microsoft'
+title: 'Przewodnik: Brak obiektów spowodowany błędnie skonfigurowanym potokiem | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,97 +10,97 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2833c3ae2a8f03b69314db9e3723a640c4327587
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 88e313b7db1306465bce530eea41e875227abc0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855186"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Wskazówki: brak obiektów spowodowany błędnie skonfigurowanym potokiem
-W tym przewodniku przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] narzędziami diagnostyki grafiki do sprawdzania, czy obiekt, który jest nieobecnego z powodu programu do cieniowania pikseli unset.  
+W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] narzędziami diagnostyki grafiki do zbadania obiekt, który nie istnieje ze względu na program do cieniowania pikseli nie ustawiono.  
   
- W tym przewodniku przedstawiono te zadania:  
+ Ten instruktaż ilustruje następujące zadania:  
   
--   Przy użyciu **listy zdarzeń grafiki** zlokalizować potencjalne źródła problemu.  
+-   Za pomocą **Lista zdarzeń graficznych** do lokalizowania potencjalnych źródeł problemu.  
   
--   Przy użyciu **etapy potoku grafiki** okno, aby sprawdzić efekt `DrawIndexed` wywołanie interfejsu API programu Direct3D.  
+-   Za pomocą **etapy potoku grafiki** okna, aby sprawdzić efekt `DrawIndexed` wywołania interfejsu API Direct3D.  
   
--   Sprawdzanie kontekst urządzenia, aby upewnić się, że nie ustawiono etapu programu do cieniowania.  
+-   Sprawdzanie kontekstu urządzenia, aby upewnić się, że etapu programu do cieniowania nie została ustawiona.  
   
--   Przy użyciu **etapy potoku grafiki** okna razem z **stosu wywołań zdarzeń grafiki** ułatwiają znajdowanie źródła programu do cieniowania pikseli unset.  
+-   Za pomocą **etapy potoku grafiki** okna razem z **stos wywołań zdarzenia grafiki** ułatwia znalezienie źródła programu do cieniowania pikseli nie ustawiono.  
   
 ## <a name="scenario"></a>Scenariusz  
- Gdy obiekt jest w 3-app, czasami jest ponieważ jeden z etapów programu do cieniowania nie została ustawiona przed renderowaniem obiektu. W aplikacji, które mają potrzeby renderowania proste źródło tego błędu jest zazwyczaj znajduje się gdzieś w stosie wywołań wywołania rysowania obiektu. Jednak do optymalizacji niektórych aplikacji partii razem obiektów, które mają programów do cieniowania, tekstury lub innych danych w celu zminimalizowania — zmiana stanu obciążenie. W tych aplikacjach źródła błędu może być ukryty w systemie przetwarzanie wsadowe, a nie znajduje się w stosie wywołań wywołania rysowania. Scenariusz, w tym przewodniku przedstawiono aplikację, która ma prosty renderowania potrzeb, a źródła błędu można znaleźć w stosie wywołań.  
+ Gdy obiekt jest brak w 3-w aplikacji, jest czasami ponieważ jeden z etapów modułu cieniującego nie została ustawiona przed wyświetleniem obiektu. W aplikacjach, które mają potrzeby renderowania prosty źródłem tego błędu jest zazwyczaj znajduje się gdzieś w stosie wywołań wywołania rysowania obiektu. Jednak optymalizacji, niektóre aplikacje usługi batch razem obiektów, które mają programów do cieniowania, tekstury lub inne dane w typowych w celu zminimalizowania — zmiana stanu obciążenie. W tych aplikacjach źródła błędu może być ukryty w systemu przetwarzania wsadowego, a nie znajduje się w stosie wywołań wywołania rysowania. Scenariusz, w tym przewodniku przedstawiono aplikację, która ma potrzeby renderowania proste, a źródła błędu można znaleźć w stosie wywołań.  
   
- W tym scenariuszu gdy aplikacja jest uruchamiana, aby ją przetestować, tło jest renderowane zgodnie z oczekiwaniami, ale nie pojawia się jeden z obiektów. Przy użyciu diagnostyki grafiki, przechwytywania problem do dziennika grafiki, aby umożliwić debugowanie aplikacji. Problem wygląda następująco w aplikacji:  
+ W tym scenariuszu po uruchomieniu aplikacji pod kątem testowania tej tło jest renderowana zgodnie z oczekiwaniami, ale nie pojawia się jeden z obiektów. Przy użyciu programu Graphics Diagnostics można przechwytywać problemy do dziennika grafiki tak, aby można było debugować aplikację. Problem wygląda to w aplikacji:  
   
- ![Obiekt nie może być widoczny](media/gfx_diag_demo_misconfigured_pipeline_problem.png "gfx_diag_demo_misconfigured_pipeline_problem")  
+ ![Nie można zobaczyć obiekt](media/gfx_diag_demo_misconfigured_pipeline_problem.png "gfx_diag_demo_misconfigured_pipeline_problem")  
   
 ## <a name="investigation"></a>Badanie  
- Za pomocą narzędzia diagnostyki grafiki, można załadować dokument dziennika grafiki, aby sprawdzić ramek, które zostały przechwycone podczas testu.  
+ Korzystając z narzędzi programu Graphics Diagnostics, należy załadować dokument dziennika grafiki, aby sprawdzić ramek, które zostały przechwycone podczas testu.  
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>Aby sprawdzić ramkę w dzienniku grafiki  
   
-1.  W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], załadować dokument dziennika grafiki, który zawiera ramki, który wykazuje nieistniejącego obiektu. Na nowej karcie dziennika grafiki pojawia się w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. W górnej części na tej karcie jest renderowanie danych wyjściowych zaznaczonej ramki. W dolnej części jest **listy ramek**, który będzie wyświetlany jako obraz miniatury każdego przechwyconej ramce.  
+1. W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], ładowanie dokumentu dziennika grafiki zawierający ramkę, która wykazuje Brak obiektu. Nowa karta dziennika grafiki pojawia się w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. W górnej części na tej karcie jest dane wyjściowe docelowy renderowania zaznaczonej klatki. W dolnej części jest **lista ramek**, powoduje wyświetlenie jako miniaturę każdej uchwyconej klatki.  
   
-2.  W **listy ramek**, wybierz ramki, który pokazuje, że obiekt nie jest wyświetlany. Obiektu docelowego renderowania jest aktualizowana w celu odzwierciedlenia zaznaczonej ramki. W tym scenariuszu grafiki dziennika kartę wygląda następująco:  
+2. W **lista ramek**, zaznacz klatkę, która pokazuje, że obiekt nie jest wyświetlany. Obiektu docelowego renderowania jest aktualizowana, aby odzwierciedlić wybraną ramkę. W tym scenariuszu dziennika grafiki w karcie wygląda następująco:  
   
-     ![Grafika Rejestruj dokument w programie Visual Studio](media/gfx_diag_demo_misconfigured_pipeline_step_1.png "gfx_diag_demo_misconfigured_pipeline_step_1")  
+    ![Dokument dziennika grafiki w programie Visual Studio](media/gfx_diag_demo_misconfigured_pipeline_step_1.png "gfx_diag_demo_misconfigured_pipeline_step_1")  
   
- Po wybraniu ramki demonstrujący problem, można rozpocząć diagnozowanie go za pomocą **listy zdarzeń grafiki**. **Listy zdarzeń grafiki** zawiera każdego wywołania interfejsu API programu Direct3D, wprowadzone do renderowania aktywną ramkę — na przykład, aby skonfigurować stanu urządzenia, aby tworzyć i aktualizować buforów i obiektów, które pojawiają się w ramce. Wiele rodzajów wywołań — na przykład rysowania, wysyłania, kopiowania lub wyczyść połączenia — są interesujące, ponieważ często (ale nie zawsze) odpowiadającą jej zmianę w celu renderowania, kiedy aplikacja będzie działać zgodnie z oczekiwaniami. Wywołań rysowania są zastosowanie szczególnie, ponieważ każda z nich reprezentuje geometry, który renderowany aplikacji.  
+   Po zaznaczeniu klatki, która demonstruje problem, można rozpocząć do zdiagnozowania go za pomocą **Lista zdarzeń graficznych**. **Lista zdarzeń graficznych** zawiera każde wywołanie interfejsu API Direct3D do renderowania aktywnej ramki — na przykład, aby skonfigurować stan urządzenia, do tworzenia i aktualizowania buforów i aby rysować obiekty, które pojawiają się w ramce. Wiele rodzajów wywołania — na przykład rysowania, wysyłania, kopiowanie lub wyczyść wywołania — są interesujące, ponieważ często (ale nie zawsze) analogiczna zmiana obiektu docelowego renderowania, gdy aplikacja działa zgodnie z oczekiwaniami. Wywołania rysowania są szczególnie interesujące, ponieważ każdy z nich reprezentuje geometrię, która aplikacja renderowane.  
   
- Ponieważ wiadomo, że nie zawiera obiektu docelowego renderowania brakujący obiekt, ale także że wydaje się być inne błędy, możesz użyć **listy zdarzeń grafiki** razem z **etapy potoku grafiki**narzędzia, aby sprawdzić, które rysowania wywołania odnosi się do nieistniejącego obiektu geometrycznego. **Etapy potoku grafiki** okno zawiera geometrię, która została wysłana do każdego wywołania rysunku, niezależnie od jego wpływ na obiektu docelowego renderowania. Podczas przenoszenia za pośrednictwem wywołania rysowania etapy potoku są zaktualizowane w celu wyświetlenia geometrię, która jest skojarzona z każdego wywołania, ponieważ przechodzi ona przez każdego etapu włączone i renderowania danych wyjściowych jest aktualizowana w celu wyświetlenia stanu obiektu docelowego renderowania po zakończeniu wywołania.  
+   Ponieważ wiadomo, że nie zawiera obiektu docelowego renderowania brakujący obiektu, ale też że wydaje się być inne błędy, można użyć **Lista zdarzeń graficznych** wraz z **etapy potoku grafiki**narzędzia, aby sprawdzić, które wywołania rysowania odnosi się do nieistniejącego obiektu geometrycznego. **Etapy potoku grafiki** okno pokazuje geometrię, która została wysłana do każdego wywołania rysowania, niezależnie od jego wpływ na obiektu docelowego renderowania. Po przeniesieniu za pośrednictwem wywołania rysowania etapy potoku są aktualizowane, aby pokazać geometrię, która jest skojarzona z każdym wywołaniu, podczas ich przepływu w każdym etapie włączona, a wyjście docelowego renderowania aktualizowany w celu pokazania stanu obiektu docelowego renderowania, po zakończeniu wywołanie.  
   
 #### <a name="to-find-the-draw-call-for-the-missing-geometry"></a>Aby znaleźć wywołanie rysowania Brak geometrii  
   
-1.  Otwórz **listy zdarzeń grafiki** okna. Na **diagnostyki grafiki** narzędzi wybierz **listy zdarzeń**.  
+1. Otwórz **Lista zdarzeń graficznych** okna. Na **Graphics Diagnostics** narzędzi, wybierz **listy zdarzeń**.  
   
-2.  Otwórz **etapy potoku grafiki** okna. Na **diagnostyki grafiki** narzędzi wybierz **etapy potoku**.  
+2. Otwórz **etapy potoku grafiki** okna. Na **Graphics Diagnostics** narzędzi, wybierz **etapy potoku**.  
   
-3.  Podczas przeglądania przez każdego wywołania rysowania **listy zdarzeń grafiki** okna, watch **etapy potoku grafiki** okna dla nieistniejącego obiektu. Aby ułatwić, wprowadź "Rysuj" w **wyszukiwania** polu w prawym górnym rogu **listy zdarzeń grafiki** okna. Filtruje listę, tak aby zawierała tylko zdarzenia, które mają "Rysuj" w ich tytułów.  
+3. Podczas przeglądania przez każdego wywołania rysowania **Lista zdarzeń graficznych** okna, obejrzyj **etapy potoku grafiki** okna dla nieistniejącego obiektu. Aby to ułatwić, wprowadź "Draw" w **wyszukiwania** polu w prawym górnym rogu **Lista zdarzeń graficznych** okna. Filtruje listę, tak aby zawiera tylko zdarzenia, które mają "Draw" w tytułach.  
   
-     W **etapy potoku grafiki** okna, **asemblera wprowadzania** etap wyświetlana obiektu, który przed jest przekształcane i **programu do cieniowania wierzchołków** etap zawiera takie same obiekt po jest on przekształcany. W tym scenariuszu należy zauważyć, że **etapy potoku grafiki** Pokazuje okno **asemblera wprowadzania** i **programu do cieniowania wierzchołków** etapy, ale nie **programu do cieniowania pikseli**  etapu dla jednej z tych wywołań rysowania.  
+    W **etapy potoku grafiki** oknie **asemblera dane wejściowe** etapu obiektu, który pokazuje, zanim jest przekształcane i **program do cieniowania wierzchołków** etap zawiera takie same obiekt po jest przekształcane. W tym scenariuszu należy zauważyć, że **etapy potoku grafiki** Pokazuje okno **asemblera dane wejściowe** i **program do cieniowania wierzchołków** przygotowuje, ale nie **programu do cieniowania pikseli**  etapu dla jednego wywołania rysowania.  
   
-    > [!NOTE]
-    >  Jeśli inne etapy potoku — na przykład cieniowania powłoki, cieniowania domeny lub etapach programu do cieniowania geometrycznego — przetworzyć obiektu, z nich może być przyczyną tego problemu. Zazwyczaj problem dotyczy najwcześniejszym etapie w którym wynik nie jest wyświetlany lub jest wyświetlany w nieoczekiwany sposób.  
+   > [!NOTE]
+   >  Jeśli inne etapy potoku — na przykład, moduł cieniujący kadłuba, program do cieniowania domeny lub etapów modułu cieniującego geometrii — przetworzyć obiektu, żadnego z nich mogą być przyczyną tego problemu. Zazwyczaj problem dotyczy najwcześniejszym etapie, w którym nie jest wyświetlany wynik, lub jest wyświetlany w nieoczekiwany sposób.  
   
-4.  Przerwij po przejściu wywołanie rysowania, która odnosi się do nieistniejącego obiektu. W tym scenariuszu **etapy potoku grafiki** okno oznacza, że geometrii został wystawiony dla procesora GPU (wskazywanym przez obecności **asemblera danych wejściowych** etap) i przekształcony (wskazywanym przez  **Program do cieniowania wierzchołków** etap), ale nie ma obiektu docelowego renderowania, ponieważ wygląda na to być programu do cieniowania pikseli active (wskazywanym przez braku **programu do cieniowania pikseli** etapu). W tym scenariuszu można nawet Zobacz nakładające brakuje obiektu w **połączenia danych wyjściowych** etap:  
+4. Zatrzymaj po przejściu do wywołania rysowania, która odnosi się do nieistniejącego obiektu. W tym scenariuszu **etapy potoku grafiki** okno wskazuje, czy geometrii został wydany do procesora GPU (wskazywane przez obecność **asemblera dane wejściowe** etapu) i po przekształceniu (wskazywanym przez  **Program do cieniowania wierzchołków** etapu), ale nie będzie wyświetlany w obiektu docelowego renderowania, ponieważ ma się nie podoba się program do cieniowania pikseli aktywne (wskazywanym przez brak **programu do cieniowania pikseli** etapu). W tym scenariuszu może nawet zobaczysz nakładające nieistniejącego obiektu w **scalanie danych wyjściowych** etapu:  
   
-     ![Zdarzenie DrawIndexed i jego wpływ na potok](media/gfx_diag_demo_misconfigured_pipeline_step_2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
+    ![To zdarzenie DrawIndexed i jego wpływ na potok](media/gfx_diag_demo_misconfigured_pipeline_step_2.png "gfx_diag_demo_misconfigured_pipeline_step_2")  
   
- Po upewnij się, czy aplikacja wystawiony wywołanie rysowania nieistniejącego obiektu geometrii i odnajdywanie, że etapu programu do cieniowania pikseli był nieaktywny, można zbadać stanu urządzenia, aby potwierdzić ustalenia. Można użyć **tabeli obiektów grafiki** zbadać kontekst urządzenia i inne dane obiektu Direct3D.  
+   Po upewnij się, czy aplikacja wystawiony dla nieistniejącego obiektu geometrii wywołanie rysowania i wykryć, że etapu programu do cieniowania pikseli był nieaktywny, można zbadać stanu urządzenia, aby potwierdzić swoje znaleziska. Możesz użyć **Graphics Object Table** zbadać kontekst urządzenia i inne dane obiektu Direct3D.  
   
 #### <a name="to-examine-device-context"></a>Aby zbadać kontekst urządzenia  
   
-1.  Otwórz **kontekstu urządzenia d3d11**. W **etapy potoku grafiki** okna, wybierz **ID3D11DeviceContext** łącza, który jest częścią `DrawIndexed` wywołaniu, które są wyświetlane u góry okna.  
+1. Otwórz **kontekstu urządzenia d3d11**. W **etapy potoku grafiki** oknie Wybierz **ID3D11DeviceContext** łącza, który jest częścią `DrawIndexed` wywołań, który jest wyświetlany w górnej części okna.  
   
-2.  Sprawdź stan urządzenia, która jest wyświetlana w **kontekstu urządzenia d3d11** kartę, aby potwierdzić, że nie programu do cieniowania pikseli active podczas wywołania rysunku. W tym scenariuszu **ogólne informacje programu do cieniowania**— wyświetlane w obszarze **stan programu do cieniowania pikseli**— wskazuje, że programu do cieniowania jest **NULL**:  
+2. Sprawdź stan urządzenia, która jest wyświetlana w **kontekstu urządzenia d3d11** kartę, aby potwierdzić, że nie program do cieniowania pikseli aktywne podczas wywołania rysowania. W tym scenariuszu **ogólne informacje programu do cieniowania**— wyświetlany w obszarze **stan programu do cieniowania pikseli**— wskazuje, że programu do cieniowania jest **NULL**:  
   
-     ![Kontekst urządzenia D3D 11 pokazuje stan programu do cieniowania pikseli](media/gfx_diag_demo_misconfigured_pipeline_step_4.png "gfx_diag_demo_misconfigured_pipeline_step_4")  
+    ![Kontekst urządzenia D3D 11 pokazuje stan programu do cieniowania pikseli](media/gfx_diag_demo_misconfigured_pipeline_step_4.png "gfx_diag_demo_misconfigured_pipeline_step_4")  
   
- Po upewnieniu się, że program do cieniowania pikseli została ustawiona wartość null przez aplikację, następnym krokiem jest aby znaleźć lokalizację w kodzie źródłowym aplikacji którym ustawiono programu do cieniowania. Można użyć **listy zdarzeń grafiki** razem z **stosu wywołań zdarzeń grafiki** można znaleźć w tej lokalizacji.  
+   Po upewnieniu się, że program do cieniowania pikseli została ustawiona na wartość null przez aplikację, następnym krokiem jest aby znaleźć lokalizację w kodzie źródłowym aplikacji którego ustawiono programu do cieniowania. Możesz użyć **Lista zdarzeń graficznych** wraz z **stos wywołań zdarzenia grafiki** można znaleźć w tej lokalizacji.  
   
-#### <a name="to-find-where-the-pixel-shader-is-set-in-your-apps-source-code"></a>Aby dowiedzieć się, gdy program do cieniowania pikseli jest ustawiona w kodzie źródłowym aplikacji  
+#### <a name="to-find-where-the-pixel-shader-is-set-in-your-apps-source-code"></a>Aby dowiedzieć się, gdzie program do cieniowania pikseli jest ustawiony w kodzie źródłowym aplikacji  
   
-1.  Znajdź `PSSetShader` wywołanie, która odnosi się do nieistniejącego obiektu. W **listy zdarzeń grafiki** okna, wprowadź "Rysowanie; PSSetShader"w **wyszukiwania** polu w prawym górnym rogu **listy zdarzeń grafiki** okna. Filtruje listę, tak aby zawierało tylko zdarzenia "PSSetShader" i zdarzenia, które mają "Rysuj" w ich tytułów. Wybierz pierwsze `PSSetShader` wywołania wyświetlany przed wywołanie rysowania Brak obiektu.  
+1. Znajdź `PSSetShader` wywołania, które odnosi się do nieistniejącego obiektu. W **Lista zdarzeń graficznych** oknie wprowadź "Draw; PSSetShader"w **wyszukiwania** polu w prawym górnym rogu **Lista zdarzeń graficznych** okna. Filtruje listę, tak aby zawierała tylko zdarzenia "PSSetShader" i zdarzenia, które mają "Draw" w tytułach. Wybierz pierwsze `PSSetShader` wywołania, które pojawia się przed wywołaniem rysowania brakuje obiektu.  
   
-    > [!NOTE]
-    >  `PSSetShader` nie będzie dłużej wyświetlane w **listy zdarzeń grafiki** okna, jeśli nie została ustawiona podczas tej ramki. Zazwyczaj dzieje się tak tylko, jeśli program do cieniowania pikseli tylko w jednym jest używana dla wszystkich obiektów lub `PSSetShader` wywołania przypadkowo został pominięty w trakcie tej ramki. W obu przypadkach zaleca się, że wyszukiwanie kodu źródłowego aplikacji dla `PSSetShader` wywołania i użyj tradycyjnych debugowania technik w celu badania zachowanie tych wywołań.  
+   > [!NOTE]
+   >  `PSSetShader` nie będzie wyświetlane w **Lista zdarzeń graficznych** okna, jeśli nie została ustawiona podczas tej ramki. Zwykle dzieje się tak tylko wtedy, gdy program do cieniowania pikseli tylko jeden jest używany dla wszystkich obiektów lub jeśli `PSSetShader` wywołanie przypadkowo została pominięta podczas tej ramki. W obu przypadkach firma Microsoft zaleca, wyszukiwanie kod źródłowy aplikacji `PSSetShader` wywołania i użyciu tradycyjnych technik debugowania, aby sprawdzić zachowanie tych wywołań.  
   
-2.  Otwórz **stosu wywołań zdarzeń grafiki** okna. Na **diagnostyki grafiki** narzędzi wybierz **stosu wywołań zdarzeń grafiki**.  
+2. Otwórz **stos wywołań zdarzenia grafiki** okna. Na **Graphics Diagnostics** narzędzi, wybierz **stos wywołań zdarzenia grafiki**.  
   
-3.  Użyj stos wywołań, aby zlokalizować `PSSetShader` wywołań w kodzie źródłowym aplikacji. W **stosu wywołań zdarzeń grafiki** okna, wybierz wywołania najwyższy i sprawdź, czy wartość jest ustawiana programu do cieniowania pikseli. Program do cieniowania pikseli może być ustawiony bezpośrednio na null lub wartość null, wartość mogą wystąpić z powodu argumentu przekazanego do funkcji lub inny stan. Jeśli go nie ustawiono bezpośrednio, można zlokalizować źródła wartości null gdzieś w górę stosu wywołań. W tym scenariuszu użytkownik stwierdzi, że program do cieniowania pikseli jest ustawiany bezpośrednio do `nullptr` w funkcji najwyższy, który nosi nazwę `CubeRenderer::Render`:  
+3. Użyj stos wywołań, aby zlokalizować `PSSetShader` wywołania w kodzie źródłowym aplikacji. W **stos wywołań zdarzenia grafiki** oknie Wybierz wywołanie najbardziej na wierzchu i sprawdź program do cieniowania pikseli jest ustawiana na wartość. Program do cieniowania pikseli, może być ustawione bezpośrednio na null lub wartość null, wartość mogą wystąpić z powodu argumentu, który został przekazany do funkcji lub inny stan. Jeśli go nie ustawiono bezpośrednio, może być Znajdź źródło wartość null, gdzieś w górę stosu wywołań. W tym scenariuszu użytkownik stwierdzi, że program do cieniowania pikseli jest bezpośrednio do ustawiania `nullptr` w pierwszą funkcję, która nosi nazwę `CubeRenderer::Render`:  
   
-     ![Kod, który nie zainicjować programu do cieniowania pikseli](media/gfx_diag_demo_misconfigured_pipeline_step_5.png "gfx_diag_demo_misconfigured_pipeline_step_5")  
+    ![Kod, który nie zainicjowania programu do cieniowania pikseli](media/gfx_diag_demo_misconfigured_pipeline_step_5.png "gfx_diag_demo_misconfigured_pipeline_step_5")  
   
-    > [!NOTE]
-    >  Jeśli tak, sprawdzając stosu wywołań można zlokalizować źródła o wartości null, zaleca się ustawić punkt przerwania warunkowego na `PSSetShader` wywołań w taki sposób, że wykonywanie programu dzieli podczas programu do cieniowania pikseli zostanie ustawiona na wartość null. Następnie uruchom ponownie aplikację w trybie debugowania i użyć tradycyjnych metod debugowania w celu znalezienia źródła o wartości null.  
+   > [!NOTE]
+   >  Jeśli po prostu, sprawdzając stos wywołań, nie można zlokalizować źródła wartość null, zaleca się Ustaw warunkowego punktu przerwania na `PSSetShader` wywołań w taki sposób, że wykonywanie programu przerwanie wykonywania przy programu do cieniowania pikseli zostanie ustawiona na wartość null. Następnie ponownie uruchom aplikację w trybie debugowania i użyj tradycyjne techniki debugowania, aby zlokalizować źródła wartości null.  
   
- Aby rozwiązać ten problem, należy przypisać programu do cieniowania pikseli poprawne za pomocą pierwszego parametru metody `ID3D11DeviceContext::PSSetShader` wywołanie interfejsu API.  
+   Aby rozwiązać ten problem, należy przypisać program do cieniowania pikseli poprawne za pomocą pierwszego parametru `ID3D11DeviceContext::PSSetShader` wywołania interfejsu API.  
   
- ![Poprawiony C&#43; &#43; kod źródłowy](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
+   ![Poprawiony C&#43; &#43; kod źródłowy](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
   
- Po rozwiązaniu kodu można skompilować go ponownie i uruchomić aplikację ponownie, aby sprawdzić, czy renderowanie problem został rozwiązany:  
+   Po rozwiązaniu kod można skompilować go ponownie i uruchomić aplikację ponownie, aby sprawdzić, czy został rozwiązany problem renderowania:  
   
- ![Obiekt jest teraz wyświetlany](media/gfx_diag_demo_misconfigured_pipeline_resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")
+   ![Obiekt jest teraz wyświetlany](media/gfx_diag_demo_misconfigured_pipeline_resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")

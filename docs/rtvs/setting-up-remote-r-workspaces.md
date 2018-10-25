@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6ef92d907b34705e0a0461d06827f5504b0e61c3
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978313"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827717"
 ---
 # <a name="set-up-remote-workspaces"></a>Konfigurowanie zdalnych obszarów roboczych
 
@@ -97,15 +97,15 @@ Zalety i wady używania certyfikatu z podpisem własnym dla opis Windows. `rtvs-
 Aby samodzielnie wystawiania certyfikatu z podpisem własnym:
 
 1. SSH lub logowanie na maszynie z systemem Linux.
-1. Zainstaluj `ssl-cert` pakietu:
+2. Zainstaluj `ssl-cert` pakietu:
     ```sh
     sudo apt-get install ssl-cert
     ```
-1. Uruchom `make-ssl-cert` do wygenerowania certyfikatu SSL z podpisem własnym domyślne:
+3. Uruchom `make-ssl-cert` do wygenerowania certyfikatu SSL z podpisem własnym domyślne:
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
-1. Konwertuj wygenerowany klucz i pliki PEM do pliku PFX. Wygenerowany plik PFX powinna być w folderze głównym:
+4. Konwertuj wygenerowany klucz i pliki PEM do pliku PFX. Wygenerowany plik PFX powinna być w folderze głównym:
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
@@ -135,12 +135,12 @@ Aby uruchomić kod języka R, komputer zdalny musi mieć interpreter języka R z
 
 1. Pobierz i zainstaluj jedną z następujących czynności:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [R CRAN dla Windows](https://cran.r-project.org/bin/windows/base/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [R CRAN dla Windows](https://cran.r-project.org/bin/windows/base/)
 
-    Mają identyczną funkcjonalność, ale Microsoft R Open korzyści związane z dodatkowego sprzętu accelerated bibliotek algebry liniowej dzięki uprzejmości [biblioteki jądra matematyczne Intel](https://software.intel.com/intel-mkl).
+     Mają identyczną funkcjonalność, ale Microsoft R Open korzyści związane z dodatkowego sprzętu accelerated bibliotek algebry liniowej dzięki uprzejmości [biblioteki jądra matematyczne Intel](https://software.intel.com/intel-mkl).
 
-1. Uruchom [Instalatora usługi R Services](https://aka.ms/rtvs-services) i uruchom ponownie po wyświetleniu monitu. Instalator wykonuje następujące czynności:
+2. Uruchom [Instalatora usługi R Services](https://aka.ms/rtvs-services) i uruchom ponownie po wyświetleniu monitu. Instalator wykonuje następujące czynności:
 
     - Utwórz folder w *%PROGRAMFILES%\R Tools for Visual Studio\1.0\\*  i skopiuj wszystkie wymagane pliki binarne.
     - Zainstaluj `RHostBrokerService` i `RUserProfileService` i skonfigurować do automatycznego uruchamiania.
@@ -160,12 +160,12 @@ Aby uruchomić kod języka R, komputer zdalny musi mieć interpreter języka R z
 
 1. Pobierz i zainstaluj jedną z następujących czynności:
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [R CRAN dla Windows](https://cran.r-project.org/bin/linux/ubuntu/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [R CRAN dla Windows](https://cran.r-project.org/bin/linux/ubuntu/)
 
-    Mają identyczną funkcjonalność, ale Microsoft R Open korzyści związane z dodatkowego sprzętu accelerated bibliotek algebry liniowej dzięki uprzejmości [biblioteki jądra matematyczne Intel](https://software.intel.com/intel-mkl).
+     Mają identyczną funkcjonalność, ale Microsoft R Open korzyści związane z dodatkowego sprzętu accelerated bibliotek algebry liniowej dzięki uprzejmości [biblioteki jądra matematyczne Intel](https://software.intel.com/intel-mkl).
 
-1. Postępuj zgodnie z instrukcjami [usługa zdalnego języka R dla systemu Linux](setting-up-remote-r-service-on-linux.md), która obejmuje komputery fizyczne Ubuntu maszyn wirtualnych platformy Azure Ubuntu, podsystem Windows dla systemu Linux (WSL) i kontenerów platformy Docker, łącznie z uruchomionymi na repozytorium kontenerów platformy Azure.
+2. Postępuj zgodnie z instrukcjami [usługa zdalnego języka R dla systemu Linux](setting-up-remote-r-service-on-linux.md), która obejmuje komputery fizyczne Ubuntu maszyn wirtualnych platformy Azure Ubuntu, podsystem Windows dla systemu Linux (WSL) i kontenerów platformy Docker, łącznie z uruchomionymi na repozytorium kontenerów platformy Azure.
 
 ## <a name="configure-r-services"></a>Konfigurowanie usługi języka R
 

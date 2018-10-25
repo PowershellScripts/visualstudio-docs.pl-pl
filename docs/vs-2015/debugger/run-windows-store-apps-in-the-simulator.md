@@ -19,12 +19,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74c3361e4c254841bb58f23ad789ed7a2cad584f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857396"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Uruchamianie Windows Store apps w symulatorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,35 +123,35 @@ Symulatorze programu Visual Studio dla aplikacji Windows Store to aplikacja komp
   
  Do symulacji sieci: właściwości:  
   
-1.  Na pasku narzędzi symulator wybierz **Zmień właściwości sieci** przycisku.  
+1. Na pasku narzędzi symulator wybierz **Zmień właściwości sieci** przycisku.  
   
-2.  Na **ustawić właściwości sieci** okno dialogowe, wybierz opcję **Użyj symulowane właściwości sieci**.  
+2. Na **ustawić właściwości sieci** okno dialogowe, wybierz opcję **Użyj symulowane właściwości sieci**.  
   
-     Wyczyść pole wyboru, aby usunąć symulacji i wróć do właściwości sieci aktualnie połączonych interfejsu.  
+    Wyczyść pole wyboru, aby usunąć symulacji i wróć do właściwości sieci aktualnie połączonych interfejsu.  
   
-3.  Wprowadź **nazwa profilu** do symulowanej sieci. Firma Microsoft zaleca używanie unikatową nazwę, która służy do identyfikowania symulacji w [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) właściwość [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) obiektu.  
+3. Wprowadź **nazwa profilu** do symulowanej sieci. Firma Microsoft zaleca używanie unikatową nazwę, która służy do identyfikowania symulacji w [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) właściwość [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) obiektu.  
   
-4.  Wybierz [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) wartość na profil **typ kosztu sieci** listy.  
+4. Wybierz [NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) wartość na profil **typ kosztu sieci** listy.  
   
-5.  Z **Flaga statusu limitu danych** listy, możesz ustawić [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) właściwości lub [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)właściwości na wartość true, lub możesz wybrać  **Poniżej limitu danych** do obu wartości ustawione na wartość false.  
+5. Z **Flaga statusu limitu danych** listy, możesz ustawić [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) właściwości lub [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)właściwości na wartość true, lub możesz wybrać  **Poniżej limitu danych** do obu wartości ustawione na wartość false.  
   
-6.  Z **roamingu stanu** listę, ustaw [roamingu](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) właściwości.  
+6. Z **roamingu stanu** listę, ustaw [roamingu](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) właściwości.  
   
-7.  Wybierz **ustawiania właściwości** symulowanie właściwości sieci, wyzwalając planu [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) zdarzeń i tło [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) typu  **NetworkStateChange**.  
+7. Wybierz **ustawiania właściwości** symulowanie właściwości sieci, wyzwalając planu [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) zdarzeń i tło [SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) typu  **NetworkStateChange**.  
   
- **Więcej informacji na temat zarządzania połączeniami sieciowymi**  
+   **Więcej informacji na temat zarządzania połączeniami sieciowymi**  
   
- [Szybki Start: Zarządzanie mierzone ograniczenia kosztów sieci](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Szybki Start: Zarządzanie mierzone ograniczenia kosztów sieci](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Przykładowe informacje o sieci](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Przykładowe informacje o sieci](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Analiza zużycia energii](../profiling/analyze-energy-use-in-store-apps.md)  
+   [Analiza zużycia energii](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
+   [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
- [Sposób reagowania na zdarzenia systemu przy użyciu zadań w tle](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [Sposób reagowania na zdarzenia systemu przy użyciu zadań w tle](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Porady: wyzwalanie wstrzymania, wznowienia i zdarzeń w aplikacjach Windows Store w tle](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+   [Porady: wyzwalanie wstrzymania, wznowienia i zdarzeń w aplikacjach Windows Store w tle](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Przejdź symulator za pomocą klawiatury  
  Możesz przejść na pasku narzędzi w symulatorze, naciskając klawisz **strzałkę CTRL + ALT + Strzałka w górę** można przełączać fokus z okna simulator do paska narzędzi symulatora. Użyj **Strzałka w górę** i **strzałkę w dół** przenoszenia między przyciskami na pasku narzędzi.  

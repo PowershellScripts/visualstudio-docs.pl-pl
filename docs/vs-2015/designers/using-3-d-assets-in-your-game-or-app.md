@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226313"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863598"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Korzystanie z obiektów 3-D w grach i aplikacjach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,18 +57,18 @@ W tym artykule opisano, jak można użyć [!INCLUDE[vsprvs](../includes/vsprvs-m
   
 #### <a name="to-add-an-asset-to-your-build"></a>Aby dodać składnik aktywów do kompilacji  
   
-1.  W **Eksploratora rozwiązań**w swoim projekcie Otwórz menu skrótów elementu zawartości, a następnie wybierz **właściwości**. Zasób **strona właściwości** zostanie wyświetlone okno dialogowe.  
+1. W **Eksploratora rozwiązań**w swoim projekcie Otwórz menu skrótów elementu zawartości, a następnie wybierz **właściwości**. Zasób **strona właściwości** zostanie wyświetlone okno dialogowe.  
   
-2.  Upewnij się, że **konfiguracji** i **platformy** właściwości są ustawione na wartości, które mają zostać zastosowane do zmiany.  
+2. Upewnij się, że **konfiguracji** i **platformy** właściwości są ustawione na wartości, które mają zostać zastosowane do zmiany.  
   
-3.  W obszarze **właściwości konfiguracji**, wybierz **ogólne**, a następnie w siatce właściwości w obszarze **ogólne**ustaw **typu elementu** właściwości typem elementu potoku zawartości. Na przykład pliku obrazu lub tekstury wybierz **potok zawartości obrazu**.  
+3. W obszarze **właściwości konfiguracji**, wybierz **ogólne**, a następnie w siatce właściwości w obszarze **ogólne**ustaw **typu elementu** właściwości typem elementu potoku zawartości. Na przykład pliku obrazu lub tekstury wybierz **potok zawartości obrazu**.  
   
-    > [!IMPORTANT]
-    >  Domyślnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przyjęto założenie, że wiele rodzajów plików obrazu należy podzielić na kategorie za pomocą **obraz** typu, która jest wbudowana w elementu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. W związku z tym, należy zmienić **typu elementu** właściwość każdego obrazu, który ma być przetwarzany przez potok zawartości obrazu. Inne typy zawartości potoku pliki źródłowe dla modeli 3D i wizualnego modułu cieniującego grafiki domyślnie poprawny **typu elementu**.  
+   > [!IMPORTANT]
+   >  Domyślnie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] przyjęto założenie, że wiele rodzajów plików obrazu należy podzielić na kategorie za pomocą **obraz** typu, która jest wbudowana w elementu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. W związku z tym, należy zmienić **typu elementu** właściwość każdego obrazu, który ma być przetwarzany przez potok zawartości obrazu. Inne typy zawartości potoku pliki źródłowe dla modeli 3D i wizualnego modułu cieniującego grafiki domyślnie poprawny **typu elementu**.  
   
-4.  Wybierz **OK** przycisku.  
+4. Wybierz **OK** przycisku.  
   
- Oto trzy typy elementów potoku zawartości i ich skojarzone źródło i dane wyjściowe typów plików.  
+   Oto trzy typy elementów potoku zawartości i ich skojarzone źródło i dane wyjściowe typów plików.  
   
 |Typ elementu|Typy plików źródłowych|Format pliku wyjściowego|  
 |---------------|-----------------------|------------------------|  

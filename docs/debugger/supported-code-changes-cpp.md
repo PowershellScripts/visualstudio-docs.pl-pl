@@ -25,121 +25,121 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb97c08b8673854e0fe0d0bbd64efbe038227c43
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c1d4333014f63bec73c13b3a7b1d5f9c7d59697f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477040"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854120"
 ---
 # <a name="supported-code-changes-c"></a>Obsługiwane zmiany kodu (C++)
-Edytuj i Kontynuuj dla języka Visual C++ obsługuje większość typów zmian w kodzie. Jednak niektóre zmiany nie można zastosować podczas wykonywania programu. Aby zastosować te zmiany, należy zatrzymać wykonywania i utworzyć nową wersję kodu.  
+Edytuj i Kontynuuj dla języka Visual C++ obsługuje większość typów zmian w kodzie. Jednak niektóre zmiany nie można zastosować podczas wykonywania programu. Aby zastosować te zmiany, należy zatrzymać wykonywanie i utworzenie świeżego wersji kodu.  
   
- Zobacz [Edytuj i Kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) informacje na temat pracy z opcją Edytuj i Kontynuuj dla języka C++ w programie Visual Studio.  
+ Zobacz [Edytuj i Kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) informacje na temat pracy z funkcją Edytuj i Kontynuuj dla języka C++ w programie Visual Studio.  
   
 ##  <a name="BKMK_Unsupported_changes"></a> Nieobsługiwane zmiany  
- Nie można zastosować następujące zmiany w języku C/C++ podczas sesji debugowania:  
+ Nie można zastosować następujące zmiany języka C/C++ podczas sesji debugowania:  
   
--   Większość zmian danych globalnych lub statycznych.  
+- Większość zmian wprowadzonych do danych globalnych lub statycznych.  
   
--   Zmiany plików wykonywalnych, które są kopiowane z innego komputera i nie utworzony lokalnie.  
+- Zmiany do plików wykonywalnych, które są kopiowane z innego komputera i nie utworzone lokalnie.  
   
--   Zmiany do typu danych, które mają wpływ na układ obiektu, takie jak element członkowski danych klasy.  
+- Zmiany typu danych, które mają wpływ na układ obiektu, takie jak elementy członkowskie danych klasy.  
   
--   Dodawanie więcej niż 64 KB danych lub nowy kod.  
+- Dodawanie więcej niż 64 KB danych lub nowego kodu.  
   
--   Dodawanie zmiennych, które wymagają konstruktora w momencie przed wskaźnik instrukcji.  
+- Dodawanie zmiennych, które wymagają konstruktora w momencie przed wskaźnik instrukcji.  
   
--   Zmiany, które mają wpływ na kod, który wymaga inicjowania środowiska wykonawczego.  
+- Zmiany, które mają wpływ na kod, który wymaga czasu wykonywania inicjowania.  
   
--   Dodawanie programów obsługi wyjątków, w niektórych przypadkach.  
+- Dodawanie obsługi wyjątków w pewnych okolicznościach.  
   
--   Zmiany plików zasobów.  
+- Zmiany w plikach zasobów.  
   
--   Zmiany kodu w plikach tylko do odczytu.  
+- Zmiany kodu w plikach tylko do odczytu.  
   
--   Zmiany kodu bez odpowiedniego pliku PDB.  
+- Zmiany kodu bez odpowiedniego pliku PDB.  
   
--   Zmiany kodu, który nie ma obiektu pliku.  
+- Zmiany do kodu, który nie ma obiektu pliku.  
   
- Jeśli jeden te zmiany, a następnie spróbuj zastosować zmian w kodzie, błąd lub ostrzeżenie pojawia się w **dane wyjściowe** okna.  
+  Jeśli wytwarzania jednego z tych zmian, a następnie próby zastosowania zmian w kodzie, błąd lub ostrzeżenie pojawia się w **dane wyjściowe** okna.  
   
--   Edytuj i Kontynuuj nie aktualizuje bibliotek statycznych. Jeśli wprowadzisz zmiany w bibliotece statycznej wykonywania będzie kontynuowane przy użyciu starej wersji i ostrzeżenie nie jest generowane.  
+- Edytuj i Kontynuuj nie aktualizuje bibliotek statycznych. Jeśli wprowadzisz zmiany w bibliotece statycznej, wykonywanie jest kontynuowane przy użyciu starej wersji, a nie ostrzeżenie.  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> Nieobsługiwane scenariusze  
- Edytuj i Kontynuuj dla języka C/C++ jest niedostępny w następujących scenariuszach debugowania:  
+ Edytuj i Kontynuuj dla języka C/C++ jest niedostępna w następujących scenariuszach debugowania:  
   
--   Debugowanie aplikacji natywnych skompilowane z [/Zo (zwiększenia zoptymalizowanych pod kątem debugowania)](/cpp/build/reference/zo-enhance-optimized-debugging)  
+-   Debugowanie natywne aplikacje skompilowane z [/Zo (Rozszerzanie zoptymalizowane pod kątem debugowania)](/cpp/build/reference/zo-enhance-optimized-debugging)  
   
--   W wersjach programu Visual Studio Wstecz, aby Visual Studio 2015 Update 1, debugowania aplikacji platformy uniwersalnej systemu Windows lub składników. Począwszy od programu Visual Studio 2015 Update 1, możesz użyć Edytuj i Kontynuuj w aplikacji platformy uniwersalnej systemu Windows w języku C++ oraz aplikacji DirectX, ponieważ obecnie obsługuje `/ZI` przełącznika kompilatora z `/bigobj` przełącznika. Umożliwia także Edytuj i Kontynuuj z plików binarnych skompilowanych z `/FASTLINK` przełącznika.  
+-   W wersjach programu Visual Studio przed Visual Studio 2015 Update 1, debugowanie aplikacji platformy uniwersalnej systemu Windows lub składników. Począwszy od programu Visual Studio 2015 Update 1 umożliwia Edytuj i Kontynuuj w aplikacjach C++ platformy uniwersalnej systemu Windows i aplikacjach DirectX, ponieważ teraz obsługuje `/ZI` przełącznika kompilatora z `/bigobj` przełącznika. Możesz również użyć Edytuj i Kontynuuj z plikami binarnymi kompilowany przy użyciu `/FASTLINK` przełącznika.  
   
--   Debugowanie w systemie Windows 98.  
+-   Debugowanie, Windows 98.  
   
--   Debugowanie trybu mieszanego (natywną/zarządzaną).  
+-   Debugowanie trybu mieszanego (natywnego/zarządzanego).  
   
--   Debugowanie JavaScript.  
+-   Debugowanie kodu JavaScript.  
   
 -   Debugowanie SQL.  
   
--   Debugowania pliku zrzutu.  
+-   Debugowanie plików zrzutu.  
   
--   Edytowanie kodu po wystąpieniu nieobsługiwanego wyjątku, gdy **Odwiń stos wywołań w przypadku nieobsługiwanych wyjątków** nie wybrano opcji.  
+-   Edytowanie kodu po wystąpieniu nieobsługiwanego wyjątku, gdy **Unwind na stosie wywołań dotycząca nieobsłużonych wyjątków** nie wybrano opcji.  
   
--   Debugowanie aplikacji przy użyciu **dołączyć do** zamiast uruchamiania aplikacji przez wybranie **Start** na **debugowania** menu.  
+-   Debugowanie aplikacji przy użyciu **dołączyć do** zamiast uruchamiać aplikację, wybierając **Start** na **debugowania** menu.  
   
 -   Debugowanie zoptymalizowanego kodu.  
   
--   Debugowanie starą wersję kodu po nowej wersji nie można skompilować z powodu błędów kompilacji.  
+-   Debugowanie starą wersję kodu po nowej wersji nie powiodło się skompilowanie z powodu błędów kompilacji.  
   
-##  <a name="BKMK_Linking_limitations"></a> Łączenie ograniczenia  
+##  <a name="BKMK_Linking_limitations"></a> Ograniczenia łączenia  
   
-###  <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Opcje konsolidatora wyłączyć Edytuj i Kontynuuj  
- Następujące opcje konsolidatora Wyłącz Edytuj i Kontynuuj:  
+###  <a name="BKMK_Linker_options_that_disable_Edit_and_Continue"></a> Opcje konsolidatora, które wyłączanie funkcji Edytuj i Kontynuuj  
+ Następujące opcje konsolidatora wyłączanie funkcji Edytuj i Kontynuuj:  
   
--   Ustawienie **/OPT:REF**, **/OPT: ICF**, lub **/incremental: No** wyłącza Edytuj i kontynuuj następujące ostrzeżenie:  
+-   Ustawienie **/OPT: REF**, **/OPT: ICF**, lub **/incremental: No** wyłącza Edytuj i kontynuuj następujące ostrzeżenie:  
   
-     ŁĄCZA: ostrzeżenie LNK4075: Ignorowanie/editandcontinue z powodu od  
-  
-     specyfikacja  
-  
--   Ustawienie **/kolejność**, **/RELEASE**, lub **/FORCE** wyłącza Edytuj i Kontynuuj to ostrzeżenie:  
-  
-     ŁĄCZA: ostrzeżenie LNK4075: Ignorowanie/incremental z powodu/Option  
+     LINK: ostrzeżenie LNK4075: Ignorowanie/editandcontinue z powodu od  
   
      specyfikacja  
   
--   Ustawienie każda opcja, która uniemożliwia tworzenie pliku bazy danych (.pdb) program wyłącza Edytuj i Kontynuuj bez określone ostrzeżenia.  
+-   Ustawienie **/ORDER**, **/RELEASE**, lub **/FORCE** wyłącza Edytuj i Kontynuuj tego ostrzeżenia:  
+  
+     LINK: ostrzeżenie LNK4075: Ignorowanie/incremental z powodu/Option  
+  
+     specyfikacja  
+  
+-   Ustawienie dowolnej opcji, które uniemożliwia utworzenie pliku bazy danych (PDB) program wyłącza Edytuj i Kontynuuj nie szczególne ostrzeżenie.  
   
 ###  <a name="BKMK_Auto_relinking_limitations"></a> Automatyczne ponowne łączenie ograniczenia  
- Domyślnie Edytuj i Kontynuuj relinks programu z końcem sesji debugowania, aby utworzyć plik wykonywalny aktualne.  
+ Domyślnie Edytuj i Kontynuuj relinks program na końcu sesji debugowania, aby utworzyć plik wykonywalny aktualne.  
   
- Edytuj i Kontynuuj nie może ponownie połączyć program Jeśli debugowany z lokalizacji innych niż do oryginalnej lokalizacji kompilacji. Komunikat informuje, należy odbudować ręcznie.  
+ Edytuj i Kontynuuj nie może ponownie połączyć program Jeśli debugujesz z lokalizacji innych niż oryginalnej lokalizacji kompilacji. Zostanie wyświetlony komunikat informujący, że należy ponownie skompilować ręcznie.  
   
- Edytuj i Kontynuuj nie odbudować bibliotek statycznych. Jeśli wprowadzisz zmiany w bibliotece statycznej przy użyciu Edytuj i Kontynuuj, musisz ręcznie odbudować aplikacje biblioteki i ponowna konsolidacja za jego pomocą.  
+ Edytuj i Kontynuuj nie odbudować bibliotek statycznych. W przypadku wprowadzenia zmian do biblioteki statycznej przy użyciu Edytuj i Kontynuuj, należy ręcznie ponownie skompilować aplikacje biblioteki i połącz ponownie go używać.  
   
  Edytuj i kontynuuj nie wywołuje niestandardowych kroków kompilacji. Jeśli program używa niestandardowych kroków kompilacji, można ponownie skompilować ręcznie, aby można było wywołać niestandardowe kroki kompilacji. W takim przypadku, można wyłączyć ponowne połączenie po wykonaniu Edytuj i kontynuuj, aby zapewnić, że zostaniesz poproszony o ponowną kompilację ręczną.  
   
- **Aby wyłączyć, ponowne łączenie po Edytuj i Kontynuuj**  
+ **Aby wyłączyć ponowne połączenie po wykonaniu Edytuj i Kontynuuj**  
   
 1.  Na **debugowania** menu, wybierz **opcje i ustawienia**.  
   
-2.  W **opcje** okna dialogowego, w obszarze **debugowanie** , a następnie wybierz węzeł **Edytuj i Kontynuuj** węzła.  
+2.  W **opcje** dialogowego **debugowanie** , a następnie wybierz węzeł **Edytuj i Kontynuuj** węzła.  
   
-3.  Wyczyść **Konsoliduj ponownie zmiany kodu po debugowaniu** pole wyboru.  
+3.  Wyczyść **Połącz ponownie zmiany kodu po debugowaniu** pole wyboru.  
   
 ##  <a name="BKMK_Precompiled_Header_Limitations"></a> Ograniczenia prekompilowanego nagłówka  
- Domyślnie Edytuj i Kontynuuj prekompilowanych nagłówków obciążeń i procesy w tle w celu przyspieszenia przetwarzania zmian w kodzie. Ładowanie prekompilowanych nagłówków wymaga alokacji pamięci fizycznej, może to stanowić problem, jeśli kompilacja na maszynie z ograniczoną ilością pamięci RAM. Można określić, czy może to być spowodowane problemem za pomocą Menedżera zadań systemu Windows, aby określić ilość dostępnej pamięci fizycznej podczas debugowania. Jeśli ta liczba jest większa niż rozmiar prekompilowanych nagłówków, nie powinny wystąpić problemy w trybie Edytuj i kontynuuj. Jeśli wartość jest mniejsza niż rozmiar nagłówków prekompilowanych, uniemożliwi Edytuj i Kontynuuj ładowania prekompilowanych nagłówków w tle.  
+ Domyślnie Edytuj i Kontynuuj wstępnie skompilowanych nagłówków obciążeń i procesów w tle, aby przyspieszyć przetwarzanie zmian w kodzie. Ładowanie prekompilowanych nagłówków wymaga alokacji pamięci fizycznej, który może być problemem, jeśli kompilacja przebiega na komputerze z ograniczoną ilością pamięci RAM. Można określić, jeśli może to być problem za pomocą Menedżera zadań Windows, aby określić ilość dostępnej pamięci fizycznej podczas debugowania. Jeśli ta liczba jest większa niż rozmiar prekompilowanych nagłówków, nie powinny wystąpić problemy w trybie Edytuj i kontynuuj. Jeśli ilość jest mniejsza niż rozmiar prekompilowanych nagłówków, można uniemożliwić Edytuj i Kontynuuj ładowaniu prekompilowanych nagłówków w tle.  
   
- **Aby wyłączyć ładowanie tła nagłówków prekompilowanych Edytuj i Kontynuuj**  
+ **Można wyłączyć ładowania tła prekompilowanych nagłówków na potrzeby operacji Edytuj i Kontynuuj**  
   
 1.  Na **debugowania** menu, wybierz **opcje i ustawienia**.  
   
-2.  W **opcje** okna dialogowego, w obszarze **debugowanie** , a następnie wybierz węzeł **Edytuj i Kontynuuj** węzła.  
+2.  W **opcje** dialogowego **debugowanie** , a następnie wybierz węzeł **Edytuj i Kontynuuj** węzła.  
   
-3.  Wyczyść **Zezwalaj Prekompilowanie** pole wyboru.  
+3.  Wyczyść **Zezwalaj na Prekompilowanie** pole wyboru.  
   
-##  <a name="BKMK_IDL_Attribute_Limitations"></a> Ograniczenia dotyczące atrybutów języka IDL  
- Edytuj i Kontynuuj nie ponownie wygenerować pliki definicji (IDL) interfejsu. W związku z tym zmiany atrybutów pliku IDL nie zostaną uwzględnione, podczas debugowania. Aby zobaczyć efekt zmian atrybuty IDL, musisz zatrzymać debugowanie i skompiluj ponownie aplikację. Edytuj i Kontynuuj nie generuje błąd lub ostrzeżenie, jeśli atrybuty IDL zostały zmienione. Aby uzyskać więcej informacji, zobacz [atrybuty IDL](/cpp/windows/idl-attributes).  
+##  <a name="BKMK_IDL_Attribute_Limitations"></a> Agraniczenia atrybutów języka IDL  
+ Edytuj i Kontynuuj nie jest generowany ponownie plików definicji (języka IDL) interfejsu. W związku z tym zmiany atrybutów pliku IDL nie zostaną odzwierciedlone, podczas debugowania. Aby zobaczyć efekt zmian atrybuty IDL, należy zatrzymać debugowanie i ponownie skompiluj aplikację. Edytuj i Kontynuuj nie generuje błąd lub ostrzeżenie Jeżeli zmieniono atrybuty IDL. Aby uzyskać więcej informacji, zobacz [atrybuty IDL](/cpp/windows/idl-attributes).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytuj i kontynuuj (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

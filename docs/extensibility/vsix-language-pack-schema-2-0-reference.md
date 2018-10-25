@@ -16,12 +16,12 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: e4a8bc0f4b276ed649cdff986bdfc56cf8c77e06
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 94d785ce55b57e35b0880537e099cbc3e03d20ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586225"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855820"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX language pack — dokumentacja schematu 2.0
 
@@ -34,6 +34,7 @@ Element główny pliku pakiet języka jest `<PackageLanguagePackManifest>`, z at
 ### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest element
 
 W ramach `<PackageLanguagePackManifest>` element musi istnieć następującego elementu:
+
 |Tytuł|Opis|
 |-----------|-----------------|
 |`<Metadata>`| Element zawierający dla wszystkich metadanych zlokalizowanego pakietu
@@ -41,6 +42,7 @@ W ramach `<PackageLanguagePackManifest>` element musi istnieć następującego e
 ### <a name="metadata-element"></a>Element metadanych
 
 W ramach `<Metadata>` element może mieć następujące elementy:
+
 |Tytuł|Opis|
 |-----------|-----------------|
 |`<DisplayName>`|Zlokalizowana nazwa rozszerzenia do zainstalowania|

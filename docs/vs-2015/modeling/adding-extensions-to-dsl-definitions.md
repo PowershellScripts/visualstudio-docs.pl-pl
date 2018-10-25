@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: beeee40e7318102786a1e06b36a0eba3028eb7b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c3e74f66edc0a8b33ad1fe8205cc02cd0e80054
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261082"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866158"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Dodawanie rozszerzeń do definicji DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Rozszerzenie definicji DSL umożliwia tworzenie pakietu rozszerzenia języka spe
   
  Dodatkowe funkcje mogą być następujące:  
   
--   Właściwości elementów modelu i prezentacji  
+- Właściwości elementów modelu i prezentacji  
   
--   Dekoratory dla kształtów i łączników  
+- Dekoratory dla kształtów i łączników  
   
--   Klasy, relacje, kształty i łączniki  
+- Klasy, relacje, kształty i łączniki  
   
--   Ograniczenia sprawdzania poprawności  
+- Ograniczenia sprawdzania poprawności  
   
--   Karty i elementów przybornika  
+- Karty i elementów przybornika  
   
- Użytkownik rozszerzonej DSL można utworzyć i zapisać modelu, który zawiera wystąpienia dodatkowych funkcji i może zostać odczytany przez innych użytkowników, którzy mają zainstalowane odpowiednie rozszerzenie. Użytkownicy, którzy nie zainstalowano rozszerzenia nie można użyć dodatkowych funkcji, ale można zaktualizować i zapisywanie modelu bez utraty dodatkowe funkcje.  
+  Użytkownik rozszerzonej DSL można utworzyć i zapisać modelu, który zawiera wystąpienia dodatkowych funkcji i może zostać odczytany przez innych użytkowników, którzy mają zainstalowane odpowiednie rozszerzenie. Użytkownicy, którzy nie zainstalowano rozszerzenia nie można użyć dodatkowych funkcji, ale można zaktualizować i zapisywanie modelu bez utraty dodatkowe funkcje.  
   
- Przykładowy kod i więcej informacji na temat tej funkcji można znaleźć [Visual Studio Visualization i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128) witryny sieci Web.  
+  Przykładowy kod i więcej informacji na temat tej funkcji można znaleźć [Visual Studio Visualization i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128) witryny sieci Web.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Visual Studio Visualisation i Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)

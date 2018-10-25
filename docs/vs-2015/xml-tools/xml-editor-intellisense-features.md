@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e2b3452f64e97d56cae56a2575caa6fea00d1f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296032"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830748"
 ---
 # <a name="xml-editor-intellisense-features"></a>Funkcje IntelliSense w edytorze XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Edytor XML udostępnia pełne funkcje IntelliSense porównywalne do innych edyto
 ## <a name="intellisense-in-an-xslt-document"></a>Funkcja IntelliSense w dokumencie XSLT  
  Po dodaniu szablonie o podanej nazwie lub atrybutu w dokumencie XSLT, można użyć funkcji IntelliSense do wstawienia następujące czynności:  
   
--   Ustawić atrybutu nazwy.  
+- Ustawić atrybutu nazwy.  
   
--   Tryby szablonu.  
+- Tryby szablonu.  
   
--   Nazwy szablonu.  
+- Nazwy szablonu.  
   
--   Nazwy parametrów w danym trybie.  
+- Nazwy parametrów w danym trybie.  
   
--   Nazwy parametru dla danego szablonie o podanej nazwie.  
+- Nazwy parametru dla danego szablonie o podanej nazwie.  
   
- Aby uzyskać więcej informacji, zobacz [Instruktaż: za pomocą XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tematu.  
+  Aby uzyskać więcej informacji, zobacz [Instruktaż: za pomocą XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tematu.  
   
 ## <a name="auto-completion"></a>Automatyczne uzupełnianie  
  Edytor XML sprawia, że łatwiej XML do edycji, wypełniając wymaganej składni XML dla Ciebie. Jeśli na przykład wpisz następujący tag początkowy:  
@@ -72,19 +72,19 @@ Edytor XML udostępnia pełne funkcje IntelliSense porównywalne do innych edyto
   
  Podobnie w edytorze XML również wstawia następującą składnię XML automatycznie dla Ciebie:  
   
--   Zakończenie instrukcji przetwarzania:  `?>`  
+- Zakończenie instrukcji przetwarzania:  `?>`  
   
--   Koniec bloku CDATA: `]]>`  
+- Koniec bloku CDATA: `]]>`  
   
--   Zakończenie komentarz: `-->`  
+- Zakończenie komentarz: `-->`  
   
--   Zakończenie deklaracja DTD: `>`  
+- Zakończenie deklaracja DTD: `>`  
   
- Edytor XML ma również możliwość wstawiania przestrzeń nazw deklaracji, jeśli zostanie wybrany element kwalifikowaną przestrzeń nazw lub atrybutu z listy technologii IntelliSense i przestrzeń nazw dla tego elementu lub atrybutu nie jest jeszcze w zakresie.  
+  Edytor XML ma również możliwość wstawiania przestrzeń nazw deklaracji, jeśli zostanie wybrany element kwalifikowaną przestrzeń nazw lub atrybutu z listy technologii IntelliSense i przestrzeń nazw dla tego elementu lub atrybutu nie jest jeszcze w zakresie.  
   
- Na przykład w przypadku wybrania `e:Book` elementu z listy technologii IntelliSense, w którym powiązany jest prefiks `http://books` przestrzeni nazw, która nie została zadeklarowana w dokumencie, w edytorze XML wstawia deklaracja wymaganej przestrzeni nazw. Wynikowy tekstu XML jest następująca:  
+  Na przykład w przypadku wybrania `e:Book` elementu z listy technologii IntelliSense, w którym powiązany jest prefiks `http://books` przestrzeni nazw, która nie została zadeklarowana w dokumencie, w edytorze XML wstawia deklaracja wymaganej przestrzeni nazw. Wynikowy tekstu XML jest następująca:  
   
- `<e:Book xmlns:e="http://books"`  
+  `<e:Book xmlns:e="http://books"`  
   
 ## <a name="brace-matching"></a>Parowanie nawiasów klamrowych  
  Edytor XML zawiera nawias klamrowy wyróżnianie umożliwiają natychmiastowe informacje zwrotne na elementy, które zostały zamknięte. Można również Użyj skrótu klawiaturowego (CTRL +]), aby przejść z jednego nawias klamrowy do pasującego nawiasu klamrowego.  

@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8196eb45b2fe7eccbff5c23a7ffc58fd3eb59282
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9f7ec017e67543fab60f98839581aaa85e48f87f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112704"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880329"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
-Wywołuje funkcję i zwraca wartość wynikową jako obiekt.  
+Wywołuje funkcję i zwraca wartość wynikowa jako obiekt.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,7 +47,7 @@ int Evaluate (
   
 #### <a name="parameters"></a>Parametry  
  `ppParams`  
- [in] Tablica [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiektów, które reprezentuje parametry wejściowe. Każdy z tych parametrów został utworzony przy użyciu jednej z metod tworzenia w tym interfejsie.  
+ [in] Tablica [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiektów, które reprezentuje parametrów wejściowych. Każdy z tych parametrów, który został utworzony przy użyciu jednej z metod tworzenia w tym interfejsie.  
   
  `dwParams`  
  [in] Liczba parametrów w `ppParams` tablicy.  
@@ -56,13 +56,13 @@ int Evaluate (
  [in] Kombinacja flag z [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) wyliczenie określające sposób oceny ma zostać wykonane.  
   
  `dwTimeout`  
- [in] Określa maksymalny czas (w milisekundach) oczekiwania przed powrotem z tej metody. Użyj **NIESKOŃCZONE** będzie czekać w nieskończoność.  
+ [in] Określa maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj **NIESKOŃCZONEJ** czekanie w nieskończoność.  
   
  `ppResult`  
  [out] Zwraca **IDebugObject** reprezentujący wartość funkcji jako obiekt.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

@@ -49,69 +49,69 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a3296ec07194f1815b819f69cf97224be50368f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747818"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830668"
 ---
 # <a name="options-text-editor-general"></a>Opcje, edytor tekstów, ogólne
 
-To okno dialogowe umożliwia zmianę ustawienia globalne dla edytora kodu i tekstu Visual Studio. Aby wyświetlić to okno dialogowe, zaznacz **opcje** na **narzędzia** menu, rozwiń węzeł **Edytor tekstu** folder, a następnie wybierz **ogólne**.
+To okno dialogowe umożliwia zmianę ustawień globalnych dla edytora kodu i tekstu programu Visual Studio. Aby wyświetlić to okno dialogowe, wybierz **opcje** na **narzędzia** menu, rozwiń węzeł **edytora tekstów** folder, a następnie wybierz **ogólne**.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="settings"></a>Ustawienia
 
-### <a name="drag-and-drop-text-editing"></a>Przeciągnij i upuść edycji tekstu
+### <a name="drag-and-drop-text-editing"></a>Przeciąganie i upuszczanie edycji tekstu
 
-Po wybraniu umożliwia przenoszenie tekstu, wybierając ją i przeciągając myszą do innej lokalizacji w ramach bieżącego dokumentu lub otwartego dokumentu.
+Gdy zaznaczone, umożliwia przenoszenie tekstu, wybierając ją i przeciągając je za pomocą myszy do innej lokalizacji w obrębie bieżącego dokumentu lub dowolnego otwartego dokumentu.
 
-### <a name="automatic-delimiter-highlighting"></a>Automatyczne wyróżnianie ogranicznika
+### <a name="automatic-delimiter-highlighting"></a>Automatyczne wyróżnianie ograniczników
 
-Po wybraniu znaki ogranicznik, oddzielające parametry lub pary wartości elementu, a także pasujących nawiasów klamrowych, są wyróżnione.
+Po wybraniu znaki ogranicznika, oddzielające parametry lub par wartości elementu, a także parowanych nawiasów klamrowych, zostały wyróżnione.
 
 ### <a name="track-changes"></a>Śledzenie zmian
 
-Po wybraniu edytora kodu pionowym wierszem żółty pojawia się w margines zaznaczania, aby oznaczyć kod, który zmienił się od czasu ostatniego został zapisany plik. Po zapisaniu zmian pionowych linii stają się zielony.
+Po wybraniu edytora kodu żółta linia pionowa pojawia się w margines zaznaczania, aby oznaczyć kodu, które uległy zmianie od czasu ostatniego został zapisany plik. Po zapisaniu zmian pionowe linie stają się zielony.
 
-### <a name="auto-detect-utf-8-encoding-without-signature"></a>Autowykrywanie kodowania bez podpisu UTF-8
+### <a name="auto-detect-utf-8-encoding-without-signature"></a>Automatyczne wykrywanie kodowania bez podpisu UTF-8
 
-Domyślnie Edytor wykrywa kodowania, wyszukując znaczniki kolejności bajtów lub tagi zestawu znaków. Jeśli nie zostanie znaleziony w bieżącym dokumencie, edytora kodu próbuje Autowykrywanie kodowania UTF-8 przez zeskanowanie sekwencji bajtów. Aby wyłączyć automatyczne wykrywanie kodowania, usuń zaznaczenie tej opcji.
+Domyślnie Edytor wykrywa, kodowanie, wyszukując znaczniki kolejności bajtów lub tagi zestaw znaków. Jeśli nie zostanie znaleziony w bieżącym dokumencie, Edytor kodu próbuje automatyczne wykrywanie kodowania UTF-8 przez zeskanowanie sekwencji bajtów. Aby wyłączyć automatyczne wykrywanie kodowania, usuń zaznaczenie tej opcji.
 
 ## <a name="display"></a>Monitor
 
 ### <a name="selection-margin"></a>Margines zaznaczania
 
-Po wybraniu Wyświetla pionowego marginesu wzdłuż lewej krawędzi obszaru tekstu w edytorze. Możesz kliknąć ten margines, aby zaznaczyć cały wiersz tekstu, lub kliknij i przeciągnij, aby wybrać kolejnych wierszy tekstu.
+Po wybraniu Wyświetla pionowego marginesu wzdłuż lewej krawędzi obszaru tekstu edytora. Możesz kliknąć margines w ten sposób, aby zaznaczyć cały wiersz tekstu, lub kliknij i przeciągnij, aby zaznaczyć następujące po sobie wierszy tekstu.
 
 |Margines zaznaczania na|Margines zaznaczania wyłączone|
-|-------------------------|--------------------------|
+| - | - |
 |![HTMLpageSelectionMarginOn — zrzut ekranu](../../ide/reference/media/vxselmaron.gif)|![HTMLpageSelectionMarginOff — zrzut ekranu](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>Margines wskaźnika
 
-Po wybraniu Wyświetla pionowego marginesu poza lewą krawędzią obszaru tekstu w edytorze. Po kliknięciu tego marginesie są wyświetlane ikonę i etykietkę narzędzia, które są powiązane z tekstu. Na przykład punkt przerwania lub zadanie skróty listy są wyświetlane w margines wskaźnika. Wskaźnik marginesu informacji nie do drukowania.
+Po wybraniu Wyświetla pionowego marginesu poza lewej krawędzi obszaru tekstu edytora. Po kliknięciu tego marginesie są wyświetlane ikonę i etykietkę narzędzia, które są powiązane z tekstu. Na przykład punkt przerwania lub zadania skróty listy są wyświetlane w margines wskaźnika. Informacje o margines wskaźnika do drukowania.
 
 ### <a name="vertical-scroll-bar"></a>Pionowy pasek przewijania
 
-Po wybraniu Wyświetla pionowy pasek przewijania, dzięki czemu można przewiń w górę i w dół do widoku elementy, które wykraczają poza obszar wyświetlania edytora. Jeśli pionowe paski przewijania nie są dostępne, można użyć Page Up, Page Down i klucze kursora do przewijania.
+Po wybraniu Wyświetla pionowy pasek przewijania, dzięki czemu można przewijać w górę i w dół do elementów widoku, które wykraczają poza obszar wyświetlania edytora. Jeśli pionowe paski przewijania są niedostępne, można użyć Page Up, Page Down i klawisze kursora do przewijania.
 
 ### <a name="horizontal-scroll-bar"></a>Poziomy pasek przewijania
 
-Po wybraniu Wyświetla poziomy pasek przewijania, dzięki czemu można przewiń z bok Wyświetl elementy, które wykraczają poza obszar wyświetlania edytora. Jeśli poziomych pasków przewijania są niedostępne, można klawiszy strzałek przewijania.
+Po wybraniu Wyświetla poziomy pasek przewijania, dzięki czemu można przewijać z na boki do elementów widoku, które wykraczają poza obszar wyświetlania edytora. Jeśli poziome paski przewijania są niedostępne, można użyć klawiszy strzałek do przewijania.
 
-### <a name="highlight-current-line"></a>Podświetlenie bieżącej linii
+### <a name="highlight-current-line"></a>Wyróżnij bieżący wiersz
 
-Po wybraniu Wyświetla szare pole w pobliżu wiersza kodu, w którym znajduje się kursor.
+Po wybraniu Wyświetla szary prostokąt wokół linii kodu, w którym znajduje się kursor.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Opcje, Edytor tekstu, wszystkie języki](../../ide/reference/options-text-editor-all-languages.md)
-- [Opcje, Edytor tekstu, wszystkie języki, karty](../../ide/reference/options-text-editor-all-languages-tabs.md)
-- [Opcje, Edytor tekstu, rozszerzenie pliku](../../ide/reference/options-text-editor-file-extension.md)
+- [Opcje, Edytor tekstów, Wszystkie języki](../../ide/reference/options-text-editor-all-languages.md)
+- [Opcje, Edytor tekstów, Wszystkie języki, Karty](../../ide/reference/options-text-editor-all-languages-tabs.md)
+- [Opcje, Edytor tekstów, Rozszerzenie pliku](../../ide/reference/options-text-editor-file-extension.md)
 - [Identyfikowanie i dostosowywanie skrótów klawiaturowych](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 - [Dostosowywanie edytora](../../ide/customizing-the-editor.md)
 - [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)

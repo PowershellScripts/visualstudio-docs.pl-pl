@@ -4,6 +4,8 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.Basic.IntelliSense
 helpviewer_keywords:
 - IntelliSense [Visual Basic]
 - IntelliSense [Visual Studio], Visual Basic
@@ -12,48 +14,48 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 903bfe0a0effe87ca3f56fcfca5044afdf17e347
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 1bd68ae1996ce9ca70e2a8bf1dcb66822e1a8bb1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823284"
 ---
-# <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense dla plików kodu programu Visual Basic
+# <a name="intellisense-for-visual-basic-code-files"></a>Funkcja IntelliSense w plikach kodu języka Visual Basic
 
 Edytor kodu źródłowego języka Visual Basic oferuje następujące funkcje IntelliSense:
 
 ## <a name="syntax-tips"></a>Porady dotyczące składni
 
-Porady dotyczące składni Wyświetlanie składni instrukcji, która wpisywania. Jest to przydatne dla instrukcji takich jak [Declare](/dotnet/visual-basic/language-reference/statements/declare-statement).
+Porady dotyczące składni Wyświetlanie składni instrukcji w miarę wpisywania. To jest przydatne w przypadku instrukcji takich jak [Declare](/dotnet/visual-basic/language-reference/statements/declare-statement).
 
 ## <a name="automatic-completion"></a>Automatyczne uzupełnianie
 
-- Ukończenia różnych słów kluczowych
+- Uzupełnianie na różnych słów kluczowych
 
-     Na przykład jeśli wpiszesz `goto` i miejsca, IntelliSense wyświetla listę etykiet zdefiniowanych w menu rozwijanym. Obejmują innych obsługiwanych słów kluczowych `Exit`, `Implements`, `Option`, i `Declare`.
+     Na przykład, jeśli wpiszesz `goto` i spację, IntelliSense wyświetla listę etykiet zdefiniowanych w menu rozwijanym. Obejmują innych obsługiwanych słów kluczowych `Exit`, `Implements`, `Option`, i `Declare`.
 
-- Ukończenia `Enum` i `Boolean`
+- Uzupełnianie na `Enum` i `Boolean`
 
-    Po instrukcji będzie odwoływać się do elementu członkowskiego wyliczenia, IntelliSense wyświetla listę elementów członkowskich `Enum`. Po instrukcji odnoszą się do `Boolean`, IntelliSense wyświetla menu rozwijanego PRAWDA / FAŁSZ.
+    Oświadczenie będzie odnosił się do elementu członkowskiego wyliczenia, IntelliSense wyświetla listę elementów członkowskich `Enum`. Kiedy oświadczenie będzie odnosił się do `Boolean`, IntelliSense wyświetla menu rozwijane PRAWDA / FAŁSZ.
 
-Uzupełnianie można wyłączyć domyślnie przez wyłączenie **automatyczna lista członków** z **ogólne** stronę właściwości w **Visual Basic** folderu.
+Uzupełnianie można wyłączyć domyślnie, anulując **automatyczna lista członków** z **ogólne** — strona właściwości w **języka Visual Basic** folderu.
 
-Uzupełnianie można wywołać ręcznie przez wywołanie listy elementów członkowskich, całe słowo lub **Alt**+**Strzałka w prawo**. Aby uzyskać więcej informacji, zobacz [Użyj IntelliSense](../ide/using-intellisense.md).
+Można ręcznie wywołać uzupełnianie za pomocą listy członków, Dokończ wyraz lub **Alt**+**Strzałka w prawo**. Aby uzyskać więcej informacji, zobacz [IntelliSense użyj](../ide/using-intellisense.md).
 
-## <a name="intellisense-in-zone"></a>IntelliSense w strefie
+## <a name="intellisense-in-zone"></a>Funkcja IntelliSense w strefie
 
-IntelliSense w strefie pomaga deweloperów języka Visual Basic, którzy muszą wdrażać aplikacje za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] i są ograniczone do ustawień częściowej relacji zaufania. Ta funkcja:
+Funkcja IntelliSense w strefie pomaga deweloperom języka Visual Basic, którzy muszą wdrażać aplikacje za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] i są ograniczone do ustawienia częściowej relacji zaufania. Tej funkcji:
 
-- Umożliwia wybranie uprawnienia, których aplikacja będzie uruchamiana z.
+- Umożliwia wybranie uprawnień, których aplikacja będzie uruchamiana za pomocą.
 
-- Interfejsy API wyświetlania w wybranej strefy jako dostępne w elementach członkowskich listy, a następnie wyświetlić interfejsów API, które wymagają dodatkowych uprawnień jako niedostępny.
+- API wyświetlaną w wybranej strefie jako dostępne w listę elementów członkowskich, a następnie Wyświetl interfejsów API, które wymagają dodatkowych uprawnień jako niedostępny.
 
 Aby uzyskać więcej informacji, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
 
 ## <a name="filtered-completion-lists"></a>Filtrowane listy uzupełniania
 
-W języku Visual Basic liście uzupełniania IntelliSense mają dwa formanty karty znajduje się w dolnej części listy. **Wspólnej** kartę, która jest domyślnie zaznaczone, zawiera elementy, które są najczęściej używane do wykonania instrukcji, która pisania. **Wszystkie** karcie są wyświetlane wszystkie elementy, które są dostępne do automatycznego uzupełniania, łącznie z tymi, które są również na **wspólnej** kartę.
+W języku Visual Basic listy uzupełniania IntelliSense mają dwie kontrolki karty znajduje się w dolnej części listy. **Wspólnej** kartę, która jest domyślnie zaznaczone, wyświetla elementy, które są najczęściej używane do wykonania instrukcji, która jest pisana. **Wszystkich** karcie są wyświetlane wszystkie elementy, które są dostępne do automatycznego uzupełniania, łącznie z tymi, które są również na **wspólnej** kartę.
 
 ## <a name="see-also"></a>Zobacz także
 

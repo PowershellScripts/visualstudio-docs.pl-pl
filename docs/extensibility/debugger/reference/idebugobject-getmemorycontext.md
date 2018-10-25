@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3befdcb9991f3623e78398faef7647a873d7a702
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 657b3b214cd099cf6359b7466c58a1311a8b1677
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869889"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 Pobiera kontekst pamięci, która reprezentuje adres wartość obiektu.  
@@ -44,10 +44,10 @@ int GetMemoryContext(
  [out] Zwraca [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt reprezentujący adres wartość obiektu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Kontekst zwrócony pamięci określa adres wartość reprezentowany przez to [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiektu.  
+ Kontekst zwracany pamięci określa adres wartości, reprezentowane przez to [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiektu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

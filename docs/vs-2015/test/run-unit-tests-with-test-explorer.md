@@ -15,12 +15,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 837e004dfffbaba5eac154b195ff4ed8c382430d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846840"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +67,17 @@ Eksplorator testów umożliwia uruchamianie testów jednostkowych z Visual Studi
 ###  <a name="BKMK_Run_tests"></a> Uruchom testy  
  Można uruchomić wszystkie testy w rozwiązaniu, wszystkie testy w grupie lub zestaw testów, które można wybrać. Wykonaj jedną z następujących czynności:  
   
--   Aby uruchomić wszystkie testy w rozwiązaniu, wybierz **Uruchom wszystkie**.  
+- Aby uruchomić wszystkie testy w rozwiązaniu, wybierz **Uruchom wszystkie**.  
   
--   Aby uruchomić wszystkie testy w grupie domyślnej, wybierz **uruchamianie...**  a następnie wybierz grupę, w menu.  
+- Aby uruchomić wszystkie testy w grupie domyślnej, wybierz **uruchamianie...**  a następnie wybierz grupę, w menu.  
   
--   Zaznacz poszczególne testy, które chcesz uruchomić, otwórz menu kontekstowe dla jednego z zaznaczonych testów, a następnie wybierz **Uruchom wybrane testy**.  
+- Zaznacz poszczególne testy, które chcesz uruchomić, otwórz menu kontekstowe dla jednego z zaznaczonych testów, a następnie wybierz **Uruchom wybrane testy**.  
   
--   Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małych](../test/media/ute-parallelicon-small.png "małych UTE_parallelicon") Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.  
+- Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małych](../test/media/ute-parallelicon-small.png "małych UTE_parallelicon") Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.  
   
- Pasek Powodzenie/niepowodzenie u góry okna Eksploratora testów jest animowany podczas działania testu. Po zakończeniu przebiegu testowego pasek Powodzenie/niepowodzenie zmienia kolor na zielony, jeśli wszystkie testy przekazane lub na czerwony, jeśli dowolny test nie powiodła się.  
+  Pasek Powodzenie/niepowodzenie u góry okna Eksploratora testów jest animowany podczas działania testu. Po zakończeniu przebiegu testowego pasek Powodzenie/niepowodzenie zmienia kolor na zielony, jeśli wszystkie testy przekazane lub na czerwony, jeśli dowolny test nie powiodła się.  
   
- ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
+  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
 ###  <a name="BKMK_Run_tests_after_every_build"></a> Uruchamianie testów po każdej kompilacji  
   
@@ -102,19 +102,19 @@ Eksplorator testów umożliwia uruchamianie testów jednostkowych z Visual Studi
   
  W okienku szczegółów są wyświetlane następujące informacje:  
   
--   Nazwa pliku źródłowego i numer wiersza metody testowej.  
+- Nazwa pliku źródłowego i numer wiersza metody testowej.  
   
--   Stan testu.  
+- Stan testu.  
   
--   Czas trwania metody testowej.  
+- Czas trwania metody testowej.  
   
- Jeśli test zakończy się niepowodzeniem, są wyświetlane również w okienku szczegółów:  
+  Jeśli test zakończy się niepowodzeniem, są wyświetlane również w okienku szczegółów:  
   
--   Komunikat zwracany przez strukturę testu jednostki dla testu.  
+- Komunikat zwracany przez strukturę testu jednostki dla testu.  
   
--   Ślad stosu w czasie testu nie powiodło się.  
+- Ślad stosu w czasie testu nie powiodło się.  
   
- ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
+  ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Wyświetlanie kodu źródłowego metody badawczej  
  Aby wyświetlić kod źródłowy metody testowej w edytorze programu Visual Studio, wybierz test, a następnie wybierz **Otwórz Test** w menu kontekstowym (klawiatura: F12).  
@@ -197,13 +197,13 @@ TEST_METHOD(Method1)
   
  Aby filtrować według różnych kryteriów:  
   
-1.  Otwieranie listy rozwijanej z prawej strony pola wyszukiwania.  
+1. Otwieranie listy rozwijanej z prawej strony pola wyszukiwania.  
   
-2.  Wybierz nowe kryterium.  
+2. Wybierz nowe kryterium.  
   
-3.  Wprowadź wartość filtru między znakami cudzysłowu.  
+3. Wprowadź wartość filtru między znakami cudzysłowu.  
   
- ![Filtruje testy w Eksploratorze testów](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
+   ![Filtruje testy w Eksploratorze testów](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
 >  Wyszukiwanie jest rozróżniana wielkość liter i jest zgodny z ciągiem określonym w dowolnej części wartości kryterium.  
@@ -255,16 +255,16 @@ FullName:"MyClass" - FullName:"PerfTest"
 ###  <a name="BKMK_Debug_unit_tests"></a> Debuguj testy jednostkowe  
  Eksplorator testów umożliwia uruchamianie sesji debugowania dla testów. Krokowe wykonywanie kodu za pomocą debugera programu Visual Studio bezproblemowe przejście i z powrotem między testami jednostek a testowanego projektu. Aby rozpocząć debugowanie:  
   
-1.  W edytorze programu Visual Studio Ustaw punkt przerwania w metodach testów, które chcesz debugować.  
+1. W edytorze programu Visual Studio Ustaw punkt przerwania w metodach testów, które chcesz debugować.  
   
-    > [!NOTE]
-    >  Ponieważ metody testowe można uruchomić w dowolnej kolejności, ustaw punkty przerwania w wszystkich metodach testowych, które chcesz debugować.  
+   > [!NOTE]
+   >  Ponieważ metody testowe można uruchomić w dowolnej kolejności, ustaw punkty przerwania w wszystkich metodach testowych, które chcesz debugować.  
   
-2.  W Eksploratorze testów Wybierz metody badania, a następnie wybierz **Debuguj wybrane testy** w menu kontekstowym.  
+2. W Eksploratorze testów Wybierz metody badania, a następnie wybierz **Debuguj wybrane testy** w menu kontekstowym.  
   
- Aby uzyskać więcej informacji dotyczących debugera, zobacz [debugowania w programie Visual Studio](../debugger/debugging-in-visual-studio.md).  
+   Aby uzyskać więcej informacji dotyczących debugera, zobacz [debugowania w programie Visual Studio](../debugger/debugging-in-visual-studio.md).  
   
- ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
+   ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
 ###  <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnozowanie problemów z wydajnością metoda testu  
  Aby zdiagnozować, dlaczego metoda testowa zajmuje zbyt dużo czasu, należy wybrać metodę w Eksploratorze testów, a następnie wybierz profil z menu kontekstowego. Zobacz [Eksplorator wydajności](../profiling/performance-explorer.md).  
@@ -278,19 +278,19 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  Aby uruchomić pokrycie kodu dla metod testowych w rozwiązaniu:  
   
-1.  Wybierz **testy** menu programu Visual Studio, a następnie wybierz **analiza pokrycia kodu**.  
+1. Wybierz **testy** menu programu Visual Studio, a następnie wybierz **analiza pokrycia kodu**.  
   
-2.  Wybierz jedną z następujących poleceń z podmenu:  
+2. Wybierz jedną z następujących poleceń z podmenu:  
   
-    -   **Wybrane testy** uruchamia metody testowe wybrane w Eksploratorze testów.  
+   -   **Wybrane testy** uruchamia metody testowe wybrane w Eksploratorze testów.  
   
-    -   **Wszystkie testy** uruchamia metody testowe w rozwiązaniu.  
+   -   **Wszystkie testy** uruchamia metody testowe w rozwiązaniu.  
   
- Okno wyniki pokrycia kodu Wyświetla procent bloków kodu produktu, które były wykonywane przez wiersz, funkcji, klasy, przestrzeni nazw i moduł.  
+   Okno wyniki pokrycia kodu Wyświetla procent bloków kodu produktu, które były wykonywane przez wiersz, funkcji, klasy, przestrzeni nazw i moduł.  
   
- Aby uzyskać więcej informacji, zobacz [przy użyciu pokrycia kodu, aby określić, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
+   Aby uzyskać więcej informacji, zobacz [przy użyciu pokrycia kodu, aby określić, jaka część kodu jest poddawana testom](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
+   ![Powrót do początku](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [zawartość](#BKMK_Contents)  
   
 ##  <a name="BKMK_External_resources"></a> Zasoby zewnętrzne  
   

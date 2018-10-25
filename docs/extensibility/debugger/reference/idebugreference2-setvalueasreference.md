@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ce62358df758b7f4cf3ef0883cf0ac457aaf1f5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 96245b7089ddef7d465d01203ca8b540c618b05f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122590"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820255"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
-Ustawia wartość odwołania z innego odwołania. Zarezerwowane do użytku w przyszłości.  
+Ustawia wartość odwołanie z innego odwołania. Zarezerwowane do użytku w przyszłości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,7 +47,7 @@ int SetValueAsReference (
   
 #### <a name="parameters"></a>Parametry  
  `rgpArgs`  
- [in] Tablica [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) używanych do określania, jak ustawić wartość odwołania do obiektów.  
+ [in] Tablica [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) obiekty używane do określania, jak można ustawić wartości odwołania.  
   
  `dwArgCount`  
  [in] Liczba odwołań w tablicy.  
@@ -56,7 +56,7 @@ int SetValueAsReference (
  [in] [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) obiektu, z którego można ustawić wartości właściwości.  
   
  `dwTimeout`  
- [in] Maksymalny czas (w milisekundach) oczekiwania przed powrotem z tej metody. Użyj `INFINITE` będzie czekać w nieskończoność.  
+ [in] Maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zawsze zwraca `E_NOTIMPL`.  

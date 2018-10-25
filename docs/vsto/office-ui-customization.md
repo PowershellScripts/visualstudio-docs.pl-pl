@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfbb7b1a10c27793133afdfdaf0d673fac9535c8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677593"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836771"
 ---
 # <a name="office-ui-customization"></a>Dostosowywanie interfejsu użytkownika pakietu Office
   Możesz dostosować interfejs użytkownika (UI) aplikacji pakietu Microsoft Office, przy użyciu narzędzi Office developer tools w programie Visual Studio. W tym temacie opisano funkcje interfejsu użytkownika, które można dostosować w następujących sekcjach:  
@@ -61,13 +61,13 @@ ms.locfileid: "35677593"
   
  Narzędzi programistycznych pakietu Office w programie Visual Studio zawierają dwa różne sposoby dostosowywania okienka zadań:  
   
--   Możesz dodać okienek akcji do dostosowywania poziomie dokumentu. Domyślnie po prawej stronie aplikacji, po prawej stronie dokumentu zostanie wyświetlone okienko akcji. Jednak w okienku Akcje mogą być wyświetlane na od lewej górnej i dolnej części dokumentu.  
+- Możesz dodać okienek akcji do dostosowywania poziomie dokumentu. Domyślnie po prawej stronie aplikacji, po prawej stronie dokumentu zostanie wyświetlone okienko akcji. Jednak w okienku Akcje mogą być wyświetlane na od lewej górnej i dolnej części dokumentu.  
   
--   Dodatek narzędzi VSTO dla programów, można dodać niestandardowego okienka zadań. Użytkownikom można zadokować niestandardowych okienek zadań na różnych stronach w oknie aplikacji lub ich przeciągnij niestandardowych okienek zadań w dowolnej lokalizacji w oknie.  
+- Dodatek narzędzi VSTO dla programów, można dodać niestandardowego okienka zadań. Użytkownikom można zadokować niestandardowych okienek zadań na różnych stronach w oknie aplikacji lub ich przeciągnij niestandardowych okienek zadań w dowolnej lokalizacji w oknie.  
   
- Okienka akcji niestandardowych okienek zadań funkcję udostępnia i hostowanie wielu kontrolek, aby ułatwić użytkownikom wykonywanie zadań takich jak wprowadzanie danych. W porównaniu do grupy wstążek, okienka akcji i niestandardowych okienek zadań zapewnia znacznie większy obszar tekstu i formanty.  
+  Okienka akcji niestandardowych okienek zadań funkcję udostępnia i hostowanie wielu kontrolek, aby ułatwić użytkownikom wykonywanie zadań takich jak wprowadzanie danych. W porównaniu do grupy wstążek, okienka akcji i niestandardowych okienek zadań zapewnia znacznie większy obszar tekstu i formanty.  
   
- Aby uzyskać więcej informacji na temat okienka akcji, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md). Aby uzyskać więcej informacji na temat niestandardowych okienek zadań, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).  
+  Aby uzyskać więcej informacji na temat okienka akcji, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md). Aby uzyskać więcej informacji na temat niestandardowych okienek zadań, zobacz [niestandardowych okienek zadań](../vsto/custom-task-panes.md).  
   
 ##  <a name="Ribbon"></a> Niestandardowy interfejs użytkownika wstążki.  
  Można dostosować interfejsu użytkownika wstążki, aby udostępnić funkcje, które można dodać do aplikacji pakietu Office. Wstążka jest sposób organizowania powiązane polecenia (w formie formantów), aby były one łatwiej znaleźć. Możesz utworzyć własne karty Wstążki i grupy, aby zapewnić użytkownikom dostęp do funkcji, które oferują w rozwiązaniu. Większość funkcji, które były dostępne przy użyciu menu i pasków zadań we wcześniejszych wersjach systemu Microsoft Office może teraz uzyskiwać dostęp za pomocą wstążki.  

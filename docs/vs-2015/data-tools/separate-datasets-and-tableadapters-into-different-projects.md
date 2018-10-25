@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cca40c194db476558ff14b5c92a6919c15d204a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e94c76254b14bdf82e4e7a219cbb0f35cb532f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824331"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Rozdzielanie zestawów danych i adapterów TableAdapter do różnych projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,29 +42,29 @@ Typizowane zestawy danych zostały rozszerzone, aby [TableAdapters](http://msdn.
   
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>Aby podzielić zestawu danych na inny projekt  
   
-1.  Otwórz rozwiązanie, które zawiera zestaw danych (plik XSD).  
+1. Otwórz rozwiązanie, które zawiera zestaw danych (plik XSD).  
   
-    > [!NOTE]
-    >  Jeśli rozwiązanie zawiera projekt, do którego chcesz rozdzielić swój kod w zestawie danych, tworzenia projektu lub dodać istniejący projekt do rozwiązania.  
+   > [!NOTE]
+   >  Jeśli rozwiązanie zawiera projekt, do którego chcesz rozdzielić swój kod w zestawie danych, tworzenia projektu lub dodać istniejący projekt do rozwiązania.  
   
-2.  Kliknij dwukrotnie plik typizowany zestaw danych (plik XSD) **Eksploratora rozwiązań** można otworzyć zestawu danych w **Projektanta obiektów Dataset**.  
+2. Kliknij dwukrotnie plik typizowany zestaw danych (plik XSD) **Eksploratora rozwiązań** można otworzyć zestawu danych w **Projektanta obiektów Dataset**.  
   
-3.  Wybierz pusty obszar **Projektanta obiektów Dataset**.  
+3. Wybierz pusty obszar **Projektanta obiektów Dataset**.  
   
-4.  W **właściwości** oknie Znajdź **projektu DataSet** węzła.  
+4. W **właściwości** oknie Znajdź **projektu DataSet** węzła.  
   
-5.  W **projektu DataSet** , wybierz nazwę projektu, do którego chcesz wygenerować kod zestawu danych na liście.  
+5. W **projektu DataSet** , wybierz nazwę projektu, do którego chcesz wygenerować kod zestawu danych na liście.  
   
-     Po wybraniu projektu, do którego chcesz wygenerować kod zestawu danych **plik zestawu danych** właściwość jest wypełniana przy użyciu domyślnej nazwy pliku. Jeśli to konieczne, możesz zmienić tę nazwę. Ponadto, jeśli chcesz wygenerować kod zestawu danych w określonym katalogu, można ustawić **folderu projektu** właściwość na nazwę folderu.  
+    Po wybraniu projektu, do którego chcesz wygenerować kod zestawu danych **plik zestawu danych** właściwość jest wypełniana przy użyciu domyślnej nazwy pliku. Jeśli to konieczne, możesz zmienić tę nazwę. Ponadto, jeśli chcesz wygenerować kod zestawu danych w określonym katalogu, można ustawić **folderu projektu** właściwość na nazwę folderu.  
   
-    > [!NOTE]
-    >  Kiedy oddzielisz zestawy danych i TableAdapters (przez ustawienie **projektu DataSet** właściwości), istniejące częściowe klasy zestawu danych w projekcie nie będą przenoszone automatycznie. Istniejące klasy częściowego zestawu danych należy przenieść ręcznie do projektu zestawu danych.  
+   > [!NOTE]
+   >  Kiedy oddzielisz zestawy danych i TableAdapters (przez ustawienie **projektu DataSet** właściwości), istniejące częściowe klasy zestawu danych w projekcie nie będą przenoszone automatycznie. Istniejące klasy częściowego zestawu danych należy przenieść ręcznie do projektu zestawu danych.  
   
-6.  Zapisz zestaw danych.  
+6. Zapisz zestaw danych.  
   
-     Kod zestawu danych jest generowany w wybranym projekcie w **projektu DataSet** właściwości i **TableAdapter** kod jest generowany w bieżącym projekcie.  
+    Kod zestawu danych jest generowany w wybranym projekcie w **projektu DataSet** właściwości i **TableAdapter** kod jest generowany w bieżącym projekcie.  
   
- Domyślnie po rozdzielenie zestawu danych i `TableAdapter` kod, wynik jest plik klasy dyskretnych w każdym projekcie. Oryginalny projekt zawiera plik o nazwie DatasetName.Designer.vb (lub DatasetName.Designer.cs) zawierający `TableAdapter` kodu. Projekt, który jest wyznaczone w **projektu Dataset** właściwość zawiera plik o nazwie DatasetName.DataSet.Designer.vb (lub DatasetName.DataSet.Designer.cs) zawierający kod zestawu danych.  
+   Domyślnie po rozdzielenie zestawu danych i `TableAdapter` kod, wynik jest plik klasy dyskretnych w każdym projekcie. Oryginalny projekt zawiera plik o nazwie DatasetName.Designer.vb (lub DatasetName.Designer.cs) zawierający `TableAdapter` kodu. Projekt, który jest wyznaczone w **projektu Dataset** właściwość zawiera plik o nazwie DatasetName.DataSet.Designer.vb (lub DatasetName.DataSet.Designer.cs) zawierający kod zestawu danych.  
   
 > [!NOTE]
 >  Aby wyświetlić plik wygenerowanej klasy, wybierz zestaw danych lub `TableAdapter` projektu. Następnie w **Eksploratora rozwiązań**, wybierz opcję **Pokaż wszystkie pliki** .  

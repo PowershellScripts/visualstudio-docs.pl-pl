@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382827"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877260"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Porady: pisanie testów jednostkowych dla bibliotek DLL języka C++
 
@@ -117,53 +117,53 @@ W tym przewodniku opisano sposób tworzenia natywnej biblioteki DLL C++ przy uż
 
 ##  <a name="make_functions_visible"></a> Kilka projekt testowy do projektu biblioteki DLL
 
-1.  Dodaj projekt biblioteki DLL do odwołań projektu dla projektu testowego:
+1. Dodaj projekt biblioteki DLL do odwołań projektu dla projektu testowego:
 
-    1.  Otwórz właściwości projektu testowego i wybierz polecenie **wspólne właściwości** > **szablon i odwołania**.
+   1.  Otwórz właściwości projektu testowego i wybierz polecenie **wspólne właściwości** > **szablon i odwołania**.
 
-         ![Właściwości projektu C++ | Szablon i odwołania](../test/media/utecpp08.png)
+        ![Właściwości projektu C++ | Szablon i odwołania](../test/media/utecpp08.png)
 
-    2.  Wybierz **Dodaj nowe odwołanie**.
+   2.  Wybierz **Dodaj nowe odwołanie**.
 
-         W **Dodaj odwołanie** okna dialogowego pole, zaznacz projekt DLL i wybierz **Dodaj**.
+        W **Dodaj odwołanie** okna dialogowego pole, zaznacz projekt DLL i wybierz **Dodaj**.
 
-         ![Właściwości projektu C++ | Dodaj nowe odwołanie](../test/media/utecpp09.png)
+        ![Właściwości projektu C++ | Dodaj nowe odwołanie](../test/media/utecpp09.png)
 
-2.  W teście jednostkę główną *.cpp* plików, obejmują *.h* plik z kodem biblioteki DLL:
+2. W teście jednostkę główną *.cpp* plików, obejmują *.h* plik z kodem biblioteki DLL:
 
-    ```cpp
-    #include "..\RootFinder\RootFinder.h"
-    ```
+   ```cpp
+   #include "..\RootFinder\RootFinder.h"
+   ```
 
-3.  Dodaj podstawowy test, który używa eksportowanych funkcji:
+3. Dodaj podstawowy test, który używa eksportowanych funkcji:
 
-    ```cpp
-    TEST_METHOD(BasicTest)
-    {
-       CRootFinder rooter;
-       Assert::AreEqual(
-          // Expected value:
-          0.0,
-          // Actual value:
-          rooter.SquareRoot(0.0),
-          // Tolerance:
-          0.01,
-         // Message:
-         L"Basic test failed",
-         // Line number - used if there is no PDB file:
-         LINE_INFO());
-    }
-    ```
+   ```cpp
+   TEST_METHOD(BasicTest)
+   {
+      CRootFinder rooter;
+      Assert::AreEqual(
+         // Expected value:
+         0.0,
+         // Actual value:
+         rooter.SquareRoot(0.0),
+         // Tolerance:
+         0.01,
+        // Message:
+        L"Basic test failed",
+        // Line number - used if there is no PDB file:
+        LINE_INFO());
+   }
+   ```
 
-4.  Skompiluj rozwiązanie.
+4. Skompiluj rozwiązanie.
 
-     Nowy test jest wyświetlany w **Eksploratora testów**.
+    Nowy test jest wyświetlany w **Eksploratora testów**.
 
-5.  W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
+5. W **Eksplorator testów**, wybierz **Uruchom wszystkie**.
 
-     ![Eksplorator testów jednostkowych &#45; podstawowy Test zakończony sukcesem](../test/media/utecpp10.png)
+    ![Eksplorator testów jednostkowych &#45; podstawowy Test zakończony sukcesem](../test/media/utecpp10.png)
 
- Mają ustawienie testu i projekty kodu, a następnie zweryfikować, że można uruchomić testy, które uruchamiania funkcji w projekcie kodu. Teraz możesz rozpocząć pisanie rzeczywistych testów i kodu.
+   Mają ustawienie testu i projekty kodu, a następnie zweryfikować, że można uruchomić testy, które uruchamiania funkcji w projekcie kodu. Teraz możesz rozpocząć pisanie rzeczywistych testów i kodu.
 
 ##  <a name="iterate"></a> Iteracyjne Udoskonal testy i nadawać im przekazać
 
@@ -330,7 +330,7 @@ W tym przewodniku opisano sposób tworzenia natywnej biblioteki DLL C++ przy uż
 ## <a name="see-also"></a>Zobacz także
 
 - [Dodawanie testów jednostkowych do istniejących aplikacji C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
-- [Using Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
+- [Korzystanie z elementu Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [Debugowanie kodu natywnego](../debugger/debugging-native-code.md)
 - [Wskazówki: Tworzenie i używanie biblioteki dołączanej dynamicznie (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [Importowanie i eksportowanie](/cpp/build/importing-and-exporting)

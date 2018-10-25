@@ -19,12 +19,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 15d8d4cfb1f3a9067d3fc18933a508ecf60794e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849050"
 ---
 # <a name="visual-studio-isolated-shell"></a>Program Visual Studio Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,17 +44,17 @@ Powłoka programu Visual Studio, izolowany umożliwia tworzenie autonomicznych a
 ## <a name="working-with-the-isolated-shell"></a>Praca z programu isolated shell  
  Aplikacji powłoki programu Visual Studio, izolowany ma pełny dostęp do usług Visual Studio i obsługuje specjalnego dostosowania, znakowania. Istnieje kilka sposobów, które można dostosować aplikacji isolated shell:  
   
--   Składniki pakietów VSPackage a Managed Extensibility Framework (MEF) umożliwia rozszerzanie aplikacji isolated shell, tak samo, jak mogłaby być używana w inne rozszerzenia programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Rozszerzanie programu Isolated Shell](../extensibility/extending-the-isolated-shell.md).  
+- Składniki pakietów VSPackage a Managed Extensibility Framework (MEF) umożliwia rozszerzanie aplikacji isolated shell, tak samo, jak mogłaby być używana w inne rozszerzenia programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Rozszerzanie programu Isolated Shell](../extensibility/extending-the-isolated-shell.md).  
   
--   Aby funkcje programu Visual Studio i grup poleceń menu dostępne lub niedostępne, należy zaktualizować pliku vsct w projekcie interfejsu użytkownika aplikacji.  
+- Aby funkcje programu Visual Studio i grup poleceń menu dostępne lub niedostępne, należy zaktualizować pliku vsct w projekcie interfejsu użytkownika aplikacji.  
   
--   Aby usunąć **opcje** stron lub innych składników powłoki programu Visual Studio z poziomu aplikacji, należy zaktualizować pliku pkgundef aplikacji.  
+- Aby usunąć **opcje** stron lub innych składników powłoki programu Visual Studio z poziomu aplikacji, należy zaktualizować pliku pkgundef aplikacji.  
   
--   Aby zmodyfikować inne aspekty wygląd lub zachowanie powłoki, należy zaktualizować plik .pkgdef aplikacji.  
+- Aby zmodyfikować inne aspekty wygląd lub zachowanie powłoki, należy zaktualizować plik .pkgdef aplikacji.  
   
--   Niektóre aspekty powłoki można również określić po uruchomieniu aplikacji. Aby to zrobić, zaktualizuj parametry w wywołaniu punkt wejścia Start appenvstub.dll.  
+- Niektóre aspekty powłoki można również określić po uruchomieniu aplikacji. Aby to zrobić, zaktualizuj parametry w wywołaniu punkt wejścia Start appenvstub.dll.  
   
- Aby uzyskać więcej informacji na temat różnych elementów, które można dostosować, zobacz [elementy programu Isolated Shell](../extensibility/elements-of-the-isolated-shell.md).  
+  Aby uzyskać więcej informacji na temat różnych elementów, które można dostosować, zobacz [elementy programu Isolated Shell](../extensibility/elements-of-the-isolated-shell.md).  
   
 ## <a name="standard-features-of-the-isolated-shell"></a>Standardowe funkcje programu Isolated Shell  
  Następujące funkcje są standardowe dla wszystkich edycji programu Visual Studio.  

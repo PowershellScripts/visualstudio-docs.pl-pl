@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1191727d407f8c50f3e7901f3137f54f63770639
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e222e1af1797d095f463015b161bd6379fa0ad73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468453"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888063"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
 Pobiera ramki stosu, który zawiera określony wirtualny adres.  
@@ -35,13 +35,13 @@ HRESULT frameForVA(
   
 #### <a name="parameters"></a>Parametry  
  `va`  
- [in] Wirtualny adres danych ramki.  
+ [in] Wirtualny adres ramki danych.  
   
  `ppFrame`  
- [out] [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiekt, który reprezentuje ramki stosu pod określonym adresem.  
+ [out] [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiekt, który reprezentuje ramkę stosu pod podanym adresem.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

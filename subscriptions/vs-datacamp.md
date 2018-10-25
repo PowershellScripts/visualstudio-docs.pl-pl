@@ -9,12 +9,12 @@ description: Więcej informacji na temat subskrypcja szkoleń DataCamp, które s
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 81dea4c5da7b6fe6b6c6cfe000ae953f98e6e83f
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: cd0b92d8515e488d74cc124c888bb0e8ca9537e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863912"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Korzyści szkolenia DataCamp w subskrypcji programu Visual Studio
 
@@ -27,15 +27,15 @@ Czas trwania Twój pakiet korzyści dotyczący DataCamp zależy od subskrypcji p
 1. Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź Kafelek korzyści DataCamp w kategorii "Programowanie Professional", a następnie kliknij **Aktywuj**.
-    > [!div class="mx-imgBorder"]
-    > ![Kafelek korzyści DataCamp](_img\vs-datacamp\vs-datacamp-tile-2.png)
+   > [!div class="mx-imgBorder"]
+   > ![Kafelek korzyści DataCamp](_img/vs-datacamp/vs-datacamp-tile-2.png)
 
 3. Na stronie DataCamp można utworzyć nowe konto.  Można wprowadzić adres e-mail i hasło lub zaloguj się przy użyciu istniejącego konta z usługi Facebook, LinkedIn i Google.  Gdy podano informacje logowania, kliknij przycisk **wprowadzenie**.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp Utwórz nowe konto](_img\vs-datacamp\vs-datacamp-create-account.png)
-
-    > [!NOTE]
-    > Po rozpoczęciu tworzenia konta, może zostać wyświetlony następujący komunikat o błędzie: "NIESTETY!  Kod promocyjny jest: nieprawidłowy lub wygasł."  Dzieje się tak, ponieważ po utworzeniu kodu promocyjnego wygasa po upływie kilku minut.  Jeśli zostanie wyświetlony ten komunikat, po prostu zwrócenia do [korzyści](https://my.visualstudio.com/benefits) strony, a następnie kliknij pozycję **Aktywuj** łącze na kafelku DataCamp korzyści.
+   > [!div class="mx-imgBorder"]
+   > ![DataCamp Utwórz nowe konto](_img/vs-datacamp/vs-datacamp-create-account.png)
+   > 
+   > [!NOTE]
+   > Po rozpoczęciu tworzenia konta, może zostać wyświetlony następujący komunikat o błędzie: "NIESTETY!  Kod promocyjny jest: nieprawidłowy lub wygasł."  Dzieje się tak, ponieważ po utworzeniu kodu promocyjnego wygasa po upływie kilku minut.  Jeśli zostanie wyświetlony ten komunikat, po prostu zwrócenia do [korzyści](https://my.visualstudio.com/benefits) strony, a następnie kliknij pozycję **Aktywuj** łącze na kafelku DataCamp korzyści.
 
 4. Po utworzeniu konta możesz wybrać ścieżkę nauki.  Opcje obejmują:
     - Nauka języka R do analizy danych
@@ -43,28 +43,30 @@ Czas trwania Twój pakiet korzyści dotyczący DataCamp zależy od subskrypcji p
     - Rozwijać swoje umiejętności wykorzystać do nauki o danych
 
 
-    Wystarczy kliknąć z wybranej ścieżki, aby rozpocząć pracę.
-    > [!div class="mx-imgBorder"]
-    > ![DataCamp wybierz ścieżkę](_img\vs-datacamp\vs-datacamp-choose-path.png)
+~~~
+Just click on your chosen path to get started.
+> [!div class="mx-imgBorder"]
+> ![DataCamp Choose Path](_img\vs-datacamp\vs-datacamp-choose-path.png)
+~~~
 
 5. Po wybraniu ścieżki Możesz ulepszyć swoje ścieżki szkoleniowej, wybierając pozycję celu.  Na przykład jeśli wybrana ścieżka "Tworzenie usługi danych do analizy zestawu umiejętności", zostaną wyświetlone następujące opcje. Wybierz jedną z opcji, lub kliknij przycisk **nie mam pewności.  Pokaż wszystkie ścieżki kariery** utworzyć szersze ścieżki.
-    > [!div class="mx-imgBorder"]
-    > ![Zestawu umiejętności do nauki o danych DataCamp](_img\vs-datacamp\vs-datacamp-datascience.png)
+   > [!div class="mx-imgBorder"]
+   > ![Zestawu umiejętności do nauki o danych DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png)
 
 
 6. Na podstawie ścieżki i opcje, które zostały wybrane, zobaczysz wybór ścieżki kariery.  Kliknij pozycję **Zarejestruj** przycisk ścieżki wybór.
-    > [!div class="mx-imgBorder"]
-    > ![Ścieżki kariery DataCamp](_img\vs-datacamp\vs-datacamp-all-tracks.png)
+   > [!div class="mx-imgBorder"]
+   > ![Ścieżki kariery DataCamp](_img/vs-datacamp/vs-datacamp-all-tracks.png)
 
 7. Po zarejestrowaniu się w swojej ścieżce, zostanie otwarty pierwszy kurs w tej ścieżce.  Samouczek wyjaśniające, jak korzystać z kursu, zostaną wyświetlone w tym nawigacji i wykonując ćwiczenia kursu.
 
-    > [!div class="mx-imgBorder"]
-    > ![Wprowadzenie do DataCamp](_img\vs-datacamp\vs-datacamp-getting-started.png)
+   > [!div class="mx-imgBorder"]
+   > ![Wprowadzenie do DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
 Można zatrzymać w dowolnym momencie i wznowić szkolenia w następnej sesji.  Po prostu odwiedź [ http://www.datacamp.com ](http://www.datacamp.com)i zaloguj się.  Zostanie wyświetlony pulpit nawigacyjny i może wznowić działanie prawa szkolenia którym została wstrzymana. Po prostu kliknij **kontynuować śledzenie**.
 
 > [!div class="mx-imgBorder"]   
-> ![DataCamp kontynuować szkolenie](_img\vs-datacamp\vs-datacamp-continue-training.png)
+> ![DataCamp kontynuować szkolenie](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Uprawnienie
 

@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5701efe5da55ebd85d683da55f90f41223220c91
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 485529a8be2adf57f7b79a3d2f0844d662920448
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205897"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867289"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Porady: ustawianie opcji ułatwień dostępu IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ ms.locfileid: "49205897"
  Możesz również zmienić kolory domyślne tekstu, wskaźniki margines, biały i elementy kodu w edytorze.  
   
 > [!NOTE]
->  Aby użyć dużego kontrastu kolorów dla wszystkich aplikacji systemu windows w systemie operacyjnym, naciśnij klawisz po lewej stronie **ALT +** po lewej stronie **SHIFT + PRINT SCREEN**. Jeśli [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jest otworzyć, zamknij i otwórz ponownie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] do pełnego wdrożenia dużego kontrastu kolorów.  
+>  Aby użyć dużego kontrastu kolorów dla wszystkich aplikacji systemu windows w systemie operacyjnym, naciśnij klawisz po lewej stronie <strong>ALT +</strong>po lewej stronie **SHIFT + PRINT SCREEN**. Jeśli [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jest otworzyć, zamknij i otwórz ponownie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] do pełnego wdrożenia dużego kontrastu kolorów.  
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>Aby zmienić kolor elementów w edytorze  
   

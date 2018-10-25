@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 50e75f4855079666130e063d3c2b516f317e90f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 766de62f4781dc7ce164155a2090ffabac913a22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819553"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Metody APTCA powinny wywoływać tylko metody APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AptcaMethodsShouldOnlyCallAptcaMethods|
@@ -44,13 +45,13 @@ ms.locfileid: "49217896"
 
  Gdy atrybut APTCA jest obecny w zestawie całkowicie zaufanym i wykonuje kod w innym zestawie, który nie zezwala na dostęp częściowo zaufanych wywołań, możliwe jest luki w zabezpieczeniach. Jeśli dwie metody `M1` i `M2` spełniać następujące warunki, złośliwe obiekty wywołujące za pomocą metody `M1` można pominąć zapotrzebowanie na łącza niejawne pełnego zaufania, który chroni `M2`:
 
--   `M1` Metoda publiczna zadeklarowano w pełni zaufanym zestawie, który ma atrybut APTCA.
+- `M1` Metoda publiczna zadeklarowano w pełni zaufanym zestawie, który ma atrybut APTCA.
 
--   `M1` wywołuje metodę `M2` poza `M1`w zestawie.
+- `M1` wywołuje metodę `M2` poza `M1`w zestawie.
 
--   `M2`w zestawie nie ma atrybut aptca i w związku z tym, nie powinien być wykonywany przez lub w imieniu obiektów wywołujących, które są częściowo zaufany.
+- `M2`w zestawie nie ma atrybut aptca i w związku z tym, nie powinien być wykonywany przez lub w imieniu obiektów wywołujących, które są częściowo zaufany.
 
- Częściowo zaufany obiekt wywołujący `X` można wywołać metodę `M1`, powodując `M1` do wywołania `M2`. Ponieważ `M2` nie ma atrybut APTCA jej bezpośredniego obiektu wywołującego (`M1`) musi spełniać zapotrzebowania na łącza, aby uzyskać pełne zaufanie; `M1` relacją pełnego zaufania i w związku z tym spełnia to sprawdzenie. To zagrożenie bezpieczeństwa, ponieważ `X` nie uczestniczy w spełnia żądanie łącza, które chroni `M2` z niezaufanych wywołujących. W związku z tym metody z atrybutem APTCA nie mogą wywoływać metody, które nie mają atrybutu.
+  Częściowo zaufany obiekt wywołujący `X` można wywołać metodę `M1`, powodując `M1` do wywołania `M2`. Ponieważ `M2` nie ma atrybut APTCA jej bezpośredniego obiektu wywołującego (`M1`) musi spełniać zapotrzebowania na łącza, aby uzyskać pełne zaufanie; `M1` relacją pełnego zaufania i w związku z tym spełnia to sprawdzenie. To zagrożenie bezpieczeństwa, ponieważ `X` nie uczestniczy w spełnia żądanie łącza, które chroni `M2` z niezaufanych wywołujących. W związku z tym metody z atrybutem APTCA nie mogą wywoływać metody, które nie mają atrybutu.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Jeśli atrybut APCTA jest wymagana, należy używać żądanie do ochrony metodę, która wywołuje zestawów pełnego zaufania. Uprawnienia można żądanie będzie zależeć od funkcji udostępnianych przez metodę. Jeśli jest to możliwe, należy chronić metody żądanie, aby uzyskać pełne zaufanie upewnić się, że podstawową funkcjonalność nie jest narażony na częściowo zaufanych wywołań. Jeśli nie jest to możliwe, wybierz zestaw uprawnień wydajnie chroni narażonych funkcji. Aby uzyskać więcej informacji na temat wymagań, zobacz [zapotrzebowanie](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).

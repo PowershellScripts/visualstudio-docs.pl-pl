@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9e95193b361dcfe0935d209bf1fc3687914e1c4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 240315fed330c72a8fe180056642c9aff0fb96aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864052"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
-Zwraca wyliczenie symboli dla ramki wbudowane odpowiadający wbudowanego określonej nazwy funkcji.  
+Zwraca wyliczenie symboli dla ramki wbudowane odpowiadającej nazwie funkcji określone w jednej linii.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,16 +37,16 @@ HRESULT findAcceleratorInlineeLinesByName (
  [in] Nazwa funkcji przed wstawianiem do treści do wyszukania.  
   
  `option`  
- [in] Nazwa opcji wyszukiwania, aby używane podczas wyszukiwania dla wbudowanego ramkach, które odpowiadają `name`. Aby uzyskać więcej informacji, zobacz [namesearchoptions — wyliczenie](../../debugger/debug-interface-access/namesearchoptions.md).  
+ [in] Opcje wyszukiwania nazw ma być używany podczas wyszukiwania wbudowanego w ramkach, które odpowiadają `name`. Aby uzyskać więcej informacji, zobacz [namesearchoptions — wyliczenie](../../debugger/debug-interface-access/namesearchoptions.md).  
   
  `ppResult`  
- [out] Wskaźnik do `IDiaEnumSymbols` wskaźnika interfejsu, który został zainicjowany z wynikiem.  
+ [out] Wskaźnik do `IDiaEnumSymbols` wskaźnik interfejsu, który jest inicjowany z wynikiem.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta funkcja wyszukuje wersji śródwierszowych tylko w funkcjach stub akceleratora. Ignoruje natywnych języka C++ procedury rekordów.  
+ Ta funkcja wyszukuje wersji śródwierszowych tylko w ramach funkcji klasy zastępczej akceleratora. Ignoruje natywnego języka C++ procedury rekordów.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 930e806616ef5f4c30aa39b8c6e8ac156ab4a1ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51309f1af6a96663e9d2ad71348a5b56a0fab6f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122798"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855485"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 Włącza/wyłącza włączony stan oczekujący punkt przerwania.  
@@ -42,18 +42,18 @@ int Enable(
   
 #### <a name="parameters"></a>Parametry  
  `fEnable`  
- [in] Ustaw na niezerową (`TRUE`) Aby włączyć oczekującym punktem przerwania lub zero (`FALSE`) można wyłączyć.  
+ [in] Ustaw na wartość różną od zera (`TRUE`) umożliwiające oczekujący punkt przerwania lub równą zero (`FALSE`) można wyłączyć.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli punkt przerwania został usunięty.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli punkt przerwania został usunięty.  
   
 ## <a name="remarks"></a>Uwagi  
- Gdy oczekującym punktem przerwania jest włączone lub wyłączone, powiązany z niego wszystkie punkty przerwania są ustawione na takim samym stanie.  
+ Jeśli oczekujący punkt przerwania jest włączony / wyłączony, wszystkie punkty przerwania, powiązany z niego są ustawione na takim samym stanie.  
   
- Ta metoda może zostać wywołana jako tyle razy, ile to konieczne, nawet wtedy, gdy punkt przerwania jest już włączona lub wyłączona.  
+ Ta metoda może zostać wywołana tyle razy, zgodnie z potrzebami, nawet jeśli punkt przerwania jest już włączona lub wyłączona.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę dla prostego `CPendingBreakpoint` obiekt ujawniający [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CPendingBreakpoint` obiekt ujawniający [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfejsu.  
   
 ```cpp  
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)    

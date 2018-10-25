@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cd2b4802d5078a007d6e2c4fab081b88481156de
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 35febfa4c4d13b3f5d3d279f7d1c35e96051d54b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867120"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Porady: dodawanie formantów NamedRange do arkuszy
   Możesz dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolek do arkusza programu Microsoft Office Excel, w czasie projektowania i w czasie wykonywania w projektach na poziomie dokumentu.  
@@ -33,13 +33,13 @@ ms.locfileid: "35677173"
   
  W tym temacie opisano następujące zadania:  
   
--   [Dodawanie formantów NamedRange w czasie projektowania](#designtime)  
+- [Dodawanie formantów NamedRange w czasie projektowania](#designtime)  
   
--   [Dodawanie formantów NamedRange w czasie wykonywania w projekcie na poziomie dokumentu](#runtimedoclevel)  
+- [Dodawanie formantów NamedRange w czasie wykonywania w projekcie na poziomie dokumentu](#runtimedoclevel)  
   
--   [Dodawanie formantów NamedRange w czasie wykonywania w projekcie dodatku narzędzi VSTO](#runtimeaddin)  
+- [Dodawanie formantów NamedRange w czasie wykonywania w projekcie dodatku narzędzi VSTO](#runtimeaddin)  
   
- Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Excel.NamedRange> formantów, zobacz [kontrolki NamedRange](../vsto/namedrange-control.md).  
+  Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Excel.NamedRange> formantów, zobacz [kontrolki NamedRange](../vsto/namedrange-control.md).  
   
 ##  <a name="designtime"></a> Dodawanie formantów NamedRange w czasie projektowania  
  Istnieje kilka sposobów, aby dodać <xref:Microsoft.Office.Tools.Excel.NamedRange> kontrolek do arkusza w projekcie na poziomie dokumentu, w czasie projektowania: z programu Excel, programu Visual Studio **przybornika**i z **źródeł danych** okna.  

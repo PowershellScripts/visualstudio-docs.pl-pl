@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f22afc50a1a2874d4853acbf9ff72cae622e790
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0a16241e406ea89b33c417bd873949979c3f6e82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882317"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 Uruchamia plik wykonywalny.  
@@ -55,36 +55,36 @@ int LaunchSuspended(
   
 #### <a name="parameters"></a>Parametry  
  `pszExe`  
- [in] Nazwa pliku wykonywalnego do uruchomienia. Może to być pełną ścieżkę lub względna do katalogu roboczego określone w `pszDir` parametru.  
+ [in] Nazwa pliku wykonywalnego do uruchomienia. Może to być pełna ścieżka lub względna do katalogu roboczego, określone w `pszDir` parametru.  
   
  `pszArgs`  
  [in] Argumenty do przekazania do pliku wykonywalnego. Może być wartością null, jeśli nie wymaga argumentów.  
   
  `pszDir`  
- [in] Nazwa katalogu roboczego używane przez plik wykonywalny. Może być wartością null, jeśli katalog roboczy nie jest wymagane.  
+ [in] Nazwa katalogu roboczego używane przez plik wykonywalny. Może być wartością null, jeśli katalog roboczy nie jest wymagana.  
   
  `bstrEnv`  
- [in] Blok środowiska ciągi zakończone wartością null, następuje dodatkowe terminatorem NULL.  
+ [in] Blok środowiska ciągów zakończony znakiem null, następuje dodatkowe terminator o wartości NULL.  
   
  `hStdInput`  
- [in] Dojście do alternatywnego strumienia wejściowego. Może być 0, jeśli przekierowanie nie jest wymagana.  
+ [in] Dojście do alternatywnego strumienia wejściowego. Może być równa 0, jeśli przekierowanie nie jest wymagana.  
   
  `hStdOutput`  
- [in] Dojście do strumienia wyjściowego alternatywny. Może być 0, jeśli przekierowanie nie jest wymagana.  
+ [in] Dojście do strumienia wyjściowego alternatywne. Może być równa 0, jeśli przekierowanie nie jest wymagana.  
   
  `hStdError`  
- [in] Dojście do strumienia wyjściowego błąd alternatywny. Może być 0, jeśli przekierowanie nie jest wymagana.  
+ [in] Dojście do błędu alternatywnego strumienia wyjściowego. Może być równa 0, jeśli przekierowanie nie jest wymagana.  
   
  `ppPortProcess`  
- [out] Zwraca [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) obiekt, który reprezentuje uruchomionego procesu.  
+ [out] Zwraca [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) obiekt, który reprezentuje uruchomienie procesu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda powinna Uruchom proces, że jest wstrzymana, a nie działa każdy kod. [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) metoda jest wywoływana, aby wznowić proces.  
+ Ta metoda powinna Uruchom proces, że jest zawieszony, a nie działa każdy kod. [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md) metoda jest wywoływana, aby wznowić proces.  
   
- Program można także uruchomić z aparatu debugowania. Aby uzyskać więcej informacji, zobacz [uruchomienia programu](../../../extensibility/debugger/launching-a-program.md).  
+ Program można także uruchomić z aparatu debugowania. Aby uzyskać więcej informacji, zobacz [uruchamianie programu](../../../extensibility/debugger/launching-a-program.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   

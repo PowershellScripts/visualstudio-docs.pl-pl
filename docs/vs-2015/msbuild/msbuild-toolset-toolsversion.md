@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b88587e54c19f4e5446526916f7a932b7502db63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd516501acfc7690c12a253adc5da6cf163b5592
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242778"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851832"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Zestaw narzędzi MSBuild (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,39 +65,39 @@ Program MSBuild używa narzędzi zadania, celów i narzędzi do tworzenia aplika
 ## <a name="toolset-implementation"></a>Zestaw narzędzi wdrażania  
  Implementowanie zestawu narzędzi, wybierając ścieżki różnych narzędzi, obiektów docelowych i zadań, które tworzą zestaw narzędzi. Narzędzia w zestawie narzędzi, który definiuje MSBuild pochodzić z następujących źródeł:  
   
--   Folder .NET Framework.  
+- Folder .NET Framework.  
   
--   Dodatkowe narzędzia zarządzanych.  
+- Dodatkowe narzędzia zarządzanych.  
   
- Narzędzia zarządzanych obejmują ResGen.exe i TlbImp.exe.  
+  Narzędzia zarządzanych obejmują ResGen.exe i TlbImp.exe.  
   
- MSBuild zapewnia dostęp do zestawu narzędzi na dwa sposoby:  
+  MSBuild zapewnia dostęp do zestawu narzędzi na dwa sposoby:  
   
--   Za pomocą właściwości zestawu narzędzi  
+- Za pomocą właściwości zestawu narzędzi  
   
--   Za pomocą <xref:Microsoft.Build.Utilities.ToolLocationHelper> metod  
+- Za pomocą <xref:Microsoft.Build.Utilities.ToolLocationHelper> metod  
   
- Właściwości zestawu narzędzi, określ ścieżki narzędzi. Program MSBuild używa wartości `ToolsVersion` atrybutu w pliku projektu, aby zlokalizować odpowiedni klucz rejestru, a następnie używa informacji w kluczu rejestru, aby ustawić właściwości zestawu narzędzi. Na przykład jeśli `ToolsVersion` ma wartość `12.0`, a następnie program MSBuild ustawia właściwości zestawu narzędzi, zgodnie z tego klucza rejestru: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  Właściwości zestawu narzędzi, określ ścieżki narzędzi. Program MSBuild używa wartości `ToolsVersion` atrybutu w pliku projektu, aby zlokalizować odpowiedni klucz rejestru, a następnie używa informacji w kluczu rejestru, aby ustawić właściwości zestawu narzędzi. Na przykład jeśli `ToolsVersion` ma wartość `12.0`, a następnie program MSBuild ustawia właściwości zestawu narzędzi, zgodnie z tego klucza rejestru: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
- Poniżej przedstawiono właściwości zestawu narzędzi:  
+  Poniżej przedstawiono właściwości zestawu narzędzi:  
   
--   `MSBuildToolsPath` Określa ścieżkę do plików binarnych programu MSBuild.  
+- `MSBuildToolsPath` Określa ścieżkę do plików binarnych programu MSBuild.  
   
--   `SDK40ToolsPath` Określa ścieżkę dodatkowe narzędzia zarządzanych dla platformy MSBuild 4.x, (która może być 4.0 lub 4.5).  
+- `SDK40ToolsPath` Określa ścieżkę dodatkowe narzędzia zarządzanych dla platformy MSBuild 4.x, (która może być 4.0 lub 4.5).  
   
--   `SDK35ToolsPath` Określa ścieżkę dodatkowe narzędzia zarządzanego programu MSBuild 3.5.  
+- `SDK35ToolsPath` Określa ścieżkę dodatkowe narzędzia zarządzanego programu MSBuild 3.5.  
   
- Alternatywnie można określić zestaw narzędzi programowo przez wywołanie metody <xref:Microsoft.Build.Utilities.ToolLocationHelper> klasy. Klasa zawiera następujących metod:  
+  Alternatywnie można określić zestaw narzędzi programowo przez wywołanie metody <xref:Microsoft.Build.Utilities.ToolLocationHelper> klasy. Klasa zawiera następujących metod:  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> zwraca ścieżkę do folderu .NET Framework.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> zwraca ścieżkę do folderu .NET Framework.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> zwraca ścieżkę do pliku w folderze .NET Framework.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> zwraca ścieżkę do pliku w folderze .NET Framework.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> zwraca ścieżkę do folderu Narzędzia zarządzanych.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> zwraca ścieżkę do folderu Narzędzia zarządzanych.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> zwraca ścieżkę pliku, który zazwyczaj znajduje się w folderze Narzędzia zarządzanych.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> zwraca ścieżkę pliku, który zazwyczaj znajduje się w folderze Narzędzia zarządzanych.  
   
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> zwraca ścieżkę narzędzia do kompilacji.  
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> zwraca ścieżkę narzędzia do kompilacji.  
   
 ### <a name="sub-toolsets"></a>Sub — zestawy narzędzi  
  Zgodnie z opisem we wcześniejszej części tego tematu, program MSBuild używa klucza rejestru, aby określić ścieżkę podstawowe narzędzia. Jeśli klucz ma podklucza, program MSBuild używa do określenia ścieżki podzestawu narzędzi, które zawiera dodatkowe narzędzia. W tym przypadku zestaw narzędzi jest zdefiniowany, łącząc definicji właściwości, które są zdefiniowane w obydwu kluczy.  
@@ -107,19 +107,19 @@ Program MSBuild używa narzędzi zadania, celów i narzędzi do tworzenia aplika
   
  Zestawy narzędzi Sub stają się aktywne, w przypadku obecności `VisualStudioVersion` właściwości kompilacji. Ta właściwość może mieć jedną z następujących wartości:  
   
--   "10.0" Określa podzestawu narzędzi programu .NET Framework 4  
+- "10.0" Określa podzestawu narzędzi programu .NET Framework 4  
   
--   "11.0" Określa podzestawu narzędzi programu .NET Framework 4.5  
+- "11.0" Określa podzestawu narzędzi programu .NET Framework 4.5  
   
--   "12,0" Określa podzestawu narzędzi programu .NET Framework 4.5.1  
+- "12,0" Określa podzestawu narzędzi programu .NET Framework 4.5.1  
   
- Sub — procesami 10.0 i 11.0 powinien być używany z ToolsVersion 4.0. W nowszych wersjach powinna być zgodna z wersją podzestawu narzędzi i narzędzi.  
+  Sub — procesami 10.0 i 11.0 powinien być używany z ToolsVersion 4.0. W nowszych wersjach powinna być zgodna z wersją podzestawu narzędzi i narzędzi.  
   
- Podczas kompilacji MSBuild automatycznie określa i ustawia wartość domyślną dla `VisualStudioVersion` właściwość, jeśli jeszcze nie został zdefiniowany.  
+  Podczas kompilacji MSBuild automatycznie określa i ustawia wartość domyślną dla `VisualStudioVersion` właściwość, jeśli jeszcze nie został zdefiniowany.  
   
- Program MSBuild zapewnia przeciążenia `ToolLocationHelper` metodach dodających `VisualStudioVersion` wyliczonych wartości jako parametr  
+  Program MSBuild zapewnia przeciążenia `ToolLocationHelper` metodach dodających `VisualStudioVersion` wyliczonych wartości jako parametr  
   
- Zestawy narzędzi podrzędne zostały wprowadzone w .NET Framework 4.5.  
+  Zestawy narzędzi podrzędne zostały wprowadzone w .NET Framework 4.5.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Konfiguracje standardowego i niestandardowego zestawu narzędzi.](../msbuild/standard-and-custom-toolset-configurations.md)   

@@ -21,12 +21,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 588f93a89713d42efaba61a34b0dabe5eb2af523
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238527"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862167"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Porady: używanie wyłącznie klawiatury
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49238527"
   
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Aby dodać formanty z przybornika projektanta z klawiatury  
   
-1.  Na pasku menu wybierz **widoku**, **przybornika**.  
+1. Na pasku menu wybierz **widoku**, **przybornika**.  
   
-2.  Wybierz kombinację klawiszy Ctrl + Strzałka w górę lub Ctrl + klawiszy strzałek, aby poruszać się między sekcjami w przyborniku bieżącej karcie.  
+2. Wybierz kombinację klawiszy Ctrl + Strzałka w górę lub Ctrl + klawiszy strzałek, aby poruszać się między sekcjami w przyborniku bieżącej karcie.  
   
-3.  Wybierz strzałkę w górę lub **strzałkę w dół** kluczy, aby poruszać się między kontrolki.  
+3. Wybierz strzałkę w górę lub **strzałkę w dół** kluczy, aby poruszać się między kontrolki.  
   
-4.  Po wybraniu kontrolki, naciśnij klawisz Enter.  
+4. Po wybraniu kontrolki, naciśnij klawisz Enter.  
   
- Formant jest dodawany do formularza lub projektanta.  
+   Formant jest dodawany do formularza lub projektanta.  
   
 ## <a name="dialog-box-options"></a>Opcje okien dialogowych  
  Możesz poruszać się między opcje w oknie dialogowym i zmienić ustawienia opcji za pomocą klawiatury.  

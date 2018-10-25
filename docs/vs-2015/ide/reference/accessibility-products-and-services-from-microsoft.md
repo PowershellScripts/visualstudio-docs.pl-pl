@@ -24,12 +24,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8f16fdd837b266bfcc04f7e35cfbadd12a14fa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96ad41ff6cec9a03c8d57905427dbdf45b5b4ed9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826989"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkty i usługi firmy Microsoft związane z ułatwieniami dostępu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ Firma Microsoft poświęca wiele uwagi ułatwiając wszystkim użytkownikom korz
 ##  <a name="hearing"></a> Obsługa klienta dla osób z wadami słuchu  
  Jeśli niesłyszących lub twardych z słuchu pełny dostęp do produktów i obsługi klienta firmy Microsoft jest dostępna za pośrednictwem usługi telefonu (TTY/TDD) tekst:  
   
--   Aby się skontaktować z obsługą klienta, należy zadzwonić do Centrum informacji sprzedażowej Microsoft pod numer (800) 892-5234 w godzinach od 6:30 do 17:30 czasu pacyficznego, od poniedziałku do piątku, z wyjątkiem świąt.  
+- Aby się skontaktować z obsługą klienta, należy zadzwonić do Centrum informacji sprzedażowej Microsoft pod numer (800) 892-5234 w godzinach od 6:30 do 17:30 czasu pacyficznego, od poniedziałku do piątku, z wyjątkiem świąt.  
   
--   Aby uzyskać pomoc techniczną w Stanach Zjednoczonych, należy się skontaktować z Centrum pomocy technicznej firmy Microsoft pod numerem (800) 892-5234 w godzinach od 6:00 do 18:00 czasu pacyficznego, od poniedziałku do piątku, z wyjątkiem świąt. W Kanadzie należy dzwonić pod numer (905) 568-9641 w godzinach od 8:00 do 20:00 czasu wschodniego, od poniedziałku do piątku, z wyjątkiem świąt.  
+- Aby uzyskać pomoc techniczną w Stanach Zjednoczonych, należy się skontaktować z Centrum pomocy technicznej firmy Microsoft pod numerem (800) 892-5234 w godzinach od 6:00 do 18:00 czasu pacyficznego, od poniedziałku do piątku, z wyjątkiem świąt. W Kanadzie należy dzwonić pod numer (905) 568-9641 w godzinach od 8:00 do 20:00 czasu wschodniego, od poniedziałku do piątku, z wyjątkiem świąt.  
   
- Usługi pomocy technicznej firmy Microsoft podlegają cenom, warunkom i postanowieniom w miejscu, w którym są świadczone.  
+  Usługi pomocy technicznej firmy Microsoft podlegają cenom, warunkom i postanowieniom w miejscu, w którym są świadczone.  
   
 ##  <a name="moreinfo"></a> Aby uzyskać więcej informacji  
  Aby uzyskać więcej informacji na temat jak przystępna technika komputerowa pomaga w polepszaniu życia osób niepełnosprawnych, zobacz [witryny sieci Web Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  

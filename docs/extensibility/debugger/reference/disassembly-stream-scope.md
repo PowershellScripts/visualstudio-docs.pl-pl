@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0c72d0f14da9840c0a77d5ae88cb0acb5b54cba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 860d563abd5922ecf0461ed5f03ffa231ba9450f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831162"
 ---
 # <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
 Określa zakres strumienia dezasemblacji.  
@@ -48,21 +48,21 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
   
 ## <a name="members"></a>Elementy członkowskie  
  DSS_HUGE  
- Określa, że dezasemblowanie kontekst kodu powoduje wygenerowanie moc niż zwykle chce pobierać w pojedynczym wywołaniu klienta.  
+ Określa, że deasemblowanie kontekst kodu będzie generować więcej danych wyjściowych niż klient będzie zazwyczaj ma zostać pobrane w jednym wywołaniu.  
   
  DSS_FUNCTION  
- Określa, że funkcja zawarty w kontekście kod powinien dezasemblowania. Określa, że strumienia dezasemblacji reprezentuje funkcję, gdy zwracany przez [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) metody.  
+ Określa funkcję zawarte w kontekście kod powinien zostać zdezasemblowany. Określa, że strumienia dezasemblacji reprezentuje funkcji, gdy zwracany przez [getscope —](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) metody.  
   
  DSS_MODULE  
- Zwracanie przez `IDebugDisassemblyStream2::GetScope` metody, określa, czy strumień dezasemblacji reprezentuje modułu.  
+ Po zwróceniu przez `IDebugDisassemblyStream2::GetScope` metody Określa, że strumień dezasemblacji reprezentuje moduł.  
   
  DSS_ALL  
- Określa dezasemblacji dla całej przestrzeni.  
+ Określa dezasemblację dla całą przestrzenią adresową.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako argument [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) — metoda i zwrócony przez [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) metody.  
+ Przekazywany jako argument do [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) metody i zwrócone przez [getscope —](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) metody.  
   
- Te wartości mogą być łączone z bitowego `OR`.  
+ Te wartości mogą być łączone przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

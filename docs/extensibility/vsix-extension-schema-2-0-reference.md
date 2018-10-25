@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 3227b2f17932936e54c244f385a648c583677923
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831929"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Odwołanie do schematu 2.0 rozszerzenia VSIX
 Plik manifestu VSIX wdrożenia w tym artykule opisano zawartość pakietu VSIX. Format pliku jest regulowane przez schemat. W wersji 2.0 tego schematu obsługuje dodawanie niestandardowych typów i atrybutów.  Schematu manifestu jest rozszerzalny. Moduł ładujący manifestu ignoruje elementów XML oraz atrybuty, które go nie rozumie.  
@@ -162,33 +162,33 @@ Plik manifestu VSIX wdrożenia w tym artykule opisano zawartość pakietu VSIX. 
 ### <a name="assets-element"></a>Zasoby — element  
  Element ten zawiera listę `<Asset>` tagi dla każdego elementu rozszerzenia lub zawartości udostępniane przez ten pakiet.  
   
--   `<Asset>` — Ten element zawiera następujące atrybuty i elementy:  
+- `<Asset>` — Ten element zawiera następujące atrybuty i elementy:  
   
-    -   `Type` -Typ rozszerzenia lub reprezentowany przez ten element zawartości. Każdy `<Asset>` elementu musi mieć pojedynczy `Type`, ale wiele `<Asset>` elementy mogą mieć takie same `Type`. Ten atrybut powinna być reprezentowana jako w pełni kwalifikowana nazwa, zgodnie z konwencjami przestrzeni nazw. Znane typy to:  
+  - `Type` -Typ rozszerzenia lub reprezentowany przez ten element zawartości. Każdy `<Asset>` elementu musi mieć pojedynczy `Type`, ale wiele `<Asset>` elementy mogą mieć takie same `Type`. Ten atrybut powinna być reprezentowana jako w pełni kwalifikowana nazwa, zgodnie z konwencjami przestrzeni nazw. Znane typy to:  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         Możesz utworzyć własne typy i nadaj im nazwy unikatowe. W czasie wykonywania w programie Visual Studio Twój kod można wyliczyć i dostęp do tych typów niestandardowych przy użyciu interfejsu API Menedżera rozszerzeń.  
+       Możesz utworzyć własne typy i nadaj im nazwy unikatowe. W czasie wykonywania w programie Visual Studio Twój kod można wyliczyć i dostęp do tych typów niestandardowych przy użyciu interfejsu API Menedżera rozszerzeń.  
   
-    -   `Path` -ścieżkę względną do pliku lub folderu w pakiecie, który zawiera element zawartości.  
+  - `Path` -ścieżkę względną do pliku lub folderu w pakiecie, który zawiera element zawartości.  
     
-    -   `TargetVersion` -zakres wersji, którego dotyczy dany zasób. Używany do wysyłania wielu wersji elementów zawartości do różnych wersji programu Visual Studio. Wymaga programu Visual Studio 2017.3 lub nowszej efekty.
+  - `TargetVersion` -zakres wersji, którego dotyczy dany zasób. Używany do wysyłania wielu wersji elementów zawartości do różnych wersji programu Visual Studio. Wymaga programu Visual Studio 2017.3 lub nowszej efekty.
   
-    -   `AnyAttribute*` -Nieograniczony zbiór atrybutów uwidocznionego w czasie wykonywania jako słownik par nazwa wartość.  
+  - `AnyAttribute*` -Nieograniczony zbiór atrybutów uwidocznionego w czasie wykonywania jako słownik par nazwa wartość.  
   
-         `<AnyElement>*` -Żadnej zawartości ze strukturą jest dozwolone między `<Asset>` rozpoczęcia i zakończenia znacznika. Wszystkie elementy są widoczne jako listę obiektów, XmlElement. Rozszerzenia VSIX można zdefiniować ze strukturą metadanych dla określonego typu w pliku manifestu i wyliczenia w czasie wykonywania.  
+     `<AnyElement>*` -Żadnej zawartości ze strukturą jest dozwolone między `<Asset>` rozpoczęcia i zakończenia znacznika. Wszystkie elementy są widoczne jako listę obiektów, XmlElement. Rozszerzenia VSIX można zdefiniować ze strukturą metadanych dla określonego typu w pliku manifestu i wyliczenia w czasie wykonywania.  
   
 ### <a name="sample-manifest"></a>Manifest próbki  
   

@@ -13,12 +13,12 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbe8dd5ba0687471478d87606db45aa506991c12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d52a6e8eb5be9fb6516bcbc7788cf3115e2debdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192546"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848699"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Wzorce aplikacji dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,19 +67,19 @@ ms.locfileid: "49192546"
 #### <a name="tool-window-states"></a>Stany okien narzędzi  
  Okna narzędzi w usłudze Visual Studio mają różne stany, niektóre z nich, użytkownik aktywował (np. funkcję automatycznego ukrywania). Inne stany, takie jak auto widoczne, Zezwalaj na okna narzędzi, które pojawiają się w odpowiednim kontekście i ukrywania, gdy nie jest potrzebny. Istnieje pięć stanów okna narzędzia w sumie.  
   
--   **Zadokowane przypięte** okna narzędzi mogą być dołączane do dowolnego z czterech bokach obszar dokumentu. Ikona pinezki pojawia się na pasku tytułu okna narzędzia. Okno narzędzia może być zadokowane w poziomie lub pionie wzdłuż krawędzi powłoka i innymi oknami narzędzi, a także mogą być łączone przez karty.  
+- **Zadokowane przypięte** okna narzędzi mogą być dołączane do dowolnego z czterech bokach obszar dokumentu. Ikona pinezki pojawia się na pasku tytułu okna narzędzia. Okno narzędzia może być zadokowane w poziomie lub pionie wzdłuż krawędzi powłoka i innymi oknami narzędzi, a także mogą być łączone przez karty.  
   
--   **Automatyczne ukrywane** nieprzypięte są okna narzędzi. Okno można przesunąć psuje, pozostawiając kartę (przy użyciu nazwy okna narzędzi i jego ikonę) na krawędzi obszaru dokumentu. Okno narzędzia wysuwa się, gdy użytkownik zatrzyma na karcie.  
+- **Automatyczne ukrywane** nieprzypięte są okna narzędzi. Okno można przesunąć psuje, pozostawiając kartę (przy użyciu nazwy okna narzędzi i jego ikonę) na krawędzi obszaru dokumentu. Okno narzędzia wysuwa się, gdy użytkownik zatrzyma na karcie.  
   
--   **Automatycznie widoczne** okien narzędzi automatycznie wyświetlane po innej części interfejsu użytkownika, takich jak edytor jest uruchamiana, lub uzyska fokus.  
+- **Automatycznie widoczne** okien narzędzi automatycznie wyświetlane po innej części interfejsu użytkownika, takich jak edytor jest uruchamiana, lub uzyska fokus.  
   
--   **Zmiennoprzecinkowe** okna narzędzi, umieść kursor poza IDE. Jest to przydatne w przypadku konfiguracji z wielu monitorów.  
+- **Zmiennoprzecinkowe** okna narzędzi, umieść kursor poza IDE. Jest to przydatne w przypadku konfiguracji z wielu monitorów.  
   
--   **Dokument z kartami** okien narzędzi może być zadokowane w dokumencie dobrze. Jest to przydatne w przypadku dużych okien, takie jak przeglądarki obiektów, które wymagają więcej miejsca niż pozwala Dokowanie do krawędzi ramki.  
+- **Dokument z kartami** okien narzędzi może być zadokowane w dokumencie dobrze. Jest to przydatne w przypadku dużych okien, takie jak przeglądarki obiektów, które wymagają więcej miejsca niż pozwala Dokowanie do krawędzi ramki.  
   
- ![Narzędzie Stany okien w programie Visual Studio](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702 01_ToolWindowStates")  
+  ![Narzędzie Stany okien w programie Visual Studio](../../extensibility/ux-guidelines/media/0702-01-toolwindowstates.png "0702 01_ToolWindowStates")  
   
- **Stany okien narzędzi w programie Visual Studio**  
+  **Stany okien narzędzi w programie Visual Studio**  
   
 #### <a name="single-instance-and-multi-instance"></a>Jednym wystąpieniu i obejmujące wiele wystąpień  
  Okna narzędzi są jednego wystąpienia lub wielu wystąpień. Niektóre narzędzia w jednym wystąpieniu systemu windows może być skojarzony z oknem aktywnego dokumentu, podczas gdy obejmujące wiele wystąpień narzędzia windows może nie. Obejmujące wiele wystąpień narzędzia windows odpowiadać na polecenia oknie/nowe okno, tworząc nowe wystąpienie klasy okna. Na poniższym obrazie przedstawiono Włączanie polecenie nowe okno, gdy wystąpienie okno jest aktywne okna narzędzi:  
@@ -164,19 +164,19 @@ ms.locfileid: "49192546"
 ### <a name="user-expectations-for-specific-document-types"></a>Oczekiwania użytkowników dla określonych typów dokumentów  
  Istnieje kilka różnych typów podstawowych edytorów dokumentu, a każda ma zestaw interakcji, które są zgodne z innymi osobami z tego samego typu.  
   
--   **Edytor tekstowy:** Edytor kodu, plików dziennika  
+- **Edytor tekstowy:** Edytor kodu, plików dziennika  
   
--   **Powierzchni projektowej:** WPF formularzy projektanta Windows forms  
+- **Powierzchni projektowej:** WPF formularzy projektanta Windows forms  
   
--   **Edytor stylów okna dialogowego:** projektanta manifestu, właściwości projektu  
+- **Edytor stylów okna dialogowego:** projektanta manifestu, właściwości projektu  
   
--   **Projektant modeli:** projektanta przepływów pracy, takim jak codemap, diagram architektury, postępu  
+- **Projektant modeli:** projektanta przepływów pracy, takim jak codemap, diagram architektury, postępu  
   
- Istnieje kilka typów innych niż edytora, które również korzystają z dokumentu. Podczas nie edytuje samych dokumentach, muszą one wykonaj standardowych interakcji dla okna dokumentu.  
+  Istnieje kilka typów innych niż edytora, które również korzystają z dokumentu. Podczas nie edytuje samych dokumentach, muszą one wykonaj standardowych interakcji dla okna dokumentu.  
   
--   **Raporty:** IntelliTrace raportu, raport funkcji Hyper-V raportów profilera  
+- **Raporty:** IntelliTrace raportu, raport funkcji Hyper-V raportów profilera  
   
--   **Pulpit nawigacyjny:** Centrum diagnostyki  
+- **Pulpit nawigacyjny:** Centrum diagnostyki  
   
 #### <a name="text-based-editors"></a>Edytory oparte na tekście  
   
@@ -251,13 +251,13 @@ ms.locfileid: "49192546"
   
  Jeśli już wiesz, że muszą się okno dialogowe, masz trzy opcje, w kolejności priorytetu:  
   
-1.  Integracja funkcji do jednego z udostępnionego okien dialogowych w programie Visual Studio.  
+1. Integracja funkcji do jednego z udostępnionego okien dialogowych w programie Visual Studio.  
   
-2.  Utwórz własne okna dialogowego za pomocą wzorca w istniejących podobne okno dialogowe.  
+2. Utwórz własne okna dialogowego za pomocą wzorca w istniejących podobne okno dialogowe.  
   
-3.  Utwórz nowe okno dialogowe, następujące interakcji i wytyczne dotyczące układu.  
+3. Utwórz nowe okno dialogowe, następujące interakcji i wytyczne dotyczące układu.  
   
- W tym temacie opisano, jak wybrać wzorzec poprawne okna dialogowego, w ramach przepływów pracy programu Visual Studio i typowych Konwencji projektu okna dialogowego.  
+   W tym temacie opisano, jak wybrać wzorzec poprawne okna dialogowego, w ramach przepływów pracy programu Visual Studio i typowych Konwencji projektu okna dialogowego.  
   
 ### <a name="themes"></a>Motywy  
  Okna dialogowe w programie Visual Studio, wykonaj jedną z dwa podstawowe style:  
@@ -268,15 +268,15 @@ ms.locfileid: "49192546"
 #### <a name="themed"></a>Motywów  
  Specjalizacja "podpis" w oknach dialogowych, może być motywów. Motywem okien dialogowych mają charakterystyczny wygląd ma również niektóre wzorce interakcji specjalne skojarzonych ze stylem. Motyw okna dialogowego tylko wtedy, gdy spełnia następujące wymagania:  
   
--   Okno dialogowe jest wspólne środowisko, który będzie widoczny i używany często ani przez wielu użytkowników (na przykład **nowy projekt** okna dialogowego.  
+- Okno dialogowe jest wspólne środowisko, który będzie widoczny i używany często ani przez wielu użytkowników (na przykład **nowy projekt** okna dialogowego.  
   
--   Okno dialogowe zawiera elementy marki produktu wyraźną (na przykład **ustawienia konta** okna dialogowego).  
+- Okno dialogowe zawiera elementy marki produktu wyraźną (na przykład **ustawienia konta** okna dialogowego).  
   
--   Okno dialogowe pojawia się jako integralną częścią większej przepływ, który zawiera inne motywem okien dialogowych (na przykład **Dodaj podłączoną usługę** okna dialogowego).  
+- Okno dialogowe pojawia się jako integralną częścią większej przepływ, który zawiera inne motywem okien dialogowych (na przykład **Dodaj podłączoną usługę** okna dialogowego).  
   
--   Okno dialogowe jest ważną częścią środowiska, które pełnią rolę strategiczną podwyższania poziomu lub rozróżnienie tych wersji produktu.  
+- Okno dialogowe jest ważną częścią środowiska, które pełnią rolę strategiczną podwyższania poziomu lub rozróżnienie tych wersji produktu.  
   
- Podczas tworzenia tematu okna dialogowego, Użyj kolorów odpowiednie środowisko, a następnie postępuj zgodnie z poprawną układ i wzorce interakcji. (Zobacz [układu dla programu Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
+  Podczas tworzenia tematu okna dialogowego, Użyj kolorów odpowiednie środowisko, a następnie postępuj zgodnie z poprawną układ i wzorce interakcji. (Zobacz [układu dla programu Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md))  
   
 ### <a name="dialog-design"></a>Okno dialogowe projektu  
  Dobrze zaprojektowana okien dialogowych wziąć pod uwagę następujące elementy:  
@@ -360,17 +360,17 @@ ms.locfileid: "49192546"
   
 #### <a name="title-bars"></a>Paski tytułu  
   
--   Tekst na pasku tytułu muszą odzwierciedlać nazwę polecenia, który go uruchomił.  
+- Tekst na pasku tytułu muszą odzwierciedlać nazwę polecenia, który go uruchomił.  
   
--   Brak ikony, należy używać w paski tytułu okna dialogowego. W przypadkach, w którym system wymaga jednego Użyj logo programu Visual Studio.  
+- Brak ikony, należy używać w paski tytułu okna dialogowego. W przypadkach, w którym system wymaga jednego Użyj logo programu Visual Studio.  
   
--   Okna dialogowe nie powinny mieć minimalizowanie lub maksymalizowanie przycisków.  
+- Okna dialogowe nie powinny mieć minimalizowanie lub maksymalizowanie przycisków.  
   
--   Przyciski pomocy na pasku tytułu są przestarzałe. Nie należy dodawać ich do nowego okna dialogowe. Jeśli istnieją one powinien być uruchamiany tematu pomocy, koncepcyjnie odpowiednią do zadania.  
+- Przyciski pomocy na pasku tytułu są przestarzałe. Nie należy dodawać ich do nowego okna dialogowe. Jeśli istnieją one powinien być uruchamiany tematu pomocy, koncepcyjnie odpowiednią do zadania.  
   
- ![Tytuł paska specyfikacji dla programu Visual Studio](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "0704 03_TitleBarSpecs")  
+  ![Tytuł paska specyfikacji dla programu Visual Studio](../../extensibility/ux-guidelines/media/0704-03-titlebarspecs.png "0704 03_TitleBarSpecs")  
   
- **Specyfikacje wytyczne dotyczące paski tytułu w oknach dialogowych programu Visual Studio.**  
+  **Specyfikacje wytyczne dotyczące paski tytułu w oknach dialogowych programu Visual Studio.**  
   
 #### <a name="control-buttons"></a>Kontrolki przycisków  
  Ogólnie rzecz biorąc **OK**/**anulować**/**pomocy** przyciski powinny być ułożone poziomo w prawym dolnym rogu okna dialogowego. Alternatywne pionowy stos jest dozwolone, gdy okno dialogowe ma kilka przycisków w dolnej części okna dialogowego, które przedstawiałoby visual omyłkowe przycisków kontrolnych.  
@@ -381,11 +381,11 @@ ms.locfileid: "49192546"
   
  Okno dialogowe musi zawierać domyślnego formant przycisku. Aby określić najważniejsze polecenie, aby użyć domyślnej, należy wybrać spośród następujących opcji (wymienione w kolejności):  
   
--   Wybierz polecenie najbezpieczniejszy i najbardziej bezpieczne jako domyślny. Oznacza to, wybierając polecenie najbardziej prawdopodobne zapobiec utracie danych i uniknąć dostępu do systemu niezamierzone.  
+- Wybierz polecenie najbezpieczniejszy i najbardziej bezpieczne jako domyślny. Oznacza to, wybierając polecenie najbardziej prawdopodobne zapobiec utracie danych i uniknąć dostępu do systemu niezamierzone.  
   
--   Jeśli utrata danych i zabezpieczenia nie są czynniki, wybierz polecenie domyślne, w oparciu o wygody. Tym najprawdopodobniej polecenie jako domyślny poprawi przepływu pracy użytkownika, gdy okno dialogowe obsługuje częste lub powtarzających się zadań.  
+- Jeśli utrata danych i zabezpieczenia nie są czynniki, wybierz polecenie domyślne, w oparciu o wygody. Tym najprawdopodobniej polecenie jako domyślny poprawi przepływu pracy użytkownika, gdy okno dialogowe obsługuje częste lub powtarzających się zadań.  
   
- Należy unikać egzaminacyjnym trwale destrukcyjne dla domyślnego polecenia. Jeśli ma takiego polecenia, wybierz polecenie bezpieczniejsze jako domyślny.  
+  Należy unikać egzaminacyjnym trwale destrukcyjne dla domyślnego polecenia. Jeśli ma takiego polecenia, wybierz polecenie bezpieczniejsze jako domyślny.  
   
 #### <a name="access-keys"></a>Klucze dostępu  
  Nie używaj klawiszy dostępu dla **OK**/**anulować**/**pomocy** przycisków. Przyciski te są mapowane do klawiszy skrótów domyślnie:  
@@ -437,54 +437,54 @@ ms.locfileid: "49192546"
   
  Zawsze należy projektów:  
   
--   Obsługuje możliwość dodawania foldery projektu, aby zorganizować zawartość projektu  
+- Obsługuje możliwość dodawania foldery projektu, aby zorganizować zawartość projektu  
   
--   Obsługa spójny model do trwałość projektu  
+- Obsługa spójny model do trwałość projektu  
   
- Projekty należy także korzystać z modeli spójne interakcji:  
+  Projekty należy także korzystać z modeli spójne interakcji:  
   
--   Usuwanie elementów projektu  
+- Usuwanie elementów projektu  
   
--   Zapisywanie dokumentów  
+- Zapisywanie dokumentów  
   
--   Edycja właściwości projektu  
+- Edycja właściwości projektu  
   
--   Projekt w alternatywny widok do edycji  
+- Projekt w alternatywny widok do edycji  
   
--   Operacje przeciągania i upuszczania  
+- Operacje przeciągania i upuszczania  
   
 ### <a name="drag-and-drop-interaction-model"></a>Przeciągnij i upuść modelu  
  Projekty zazwyczaj klasyfikowania siebie jako na podstawie odwołania (możliwe do utrwalenia tylko odwołania do elementów projektu w magazynie) na poziomie katalogu (mógł zachować tylko elementy projektu fizycznie przechowywane w hierarchii projektu), lub mieszany (możliwe do utrwalenia odwołania lub elementów fizycznych). Jednocześnie w ramach wszystkich trzech typów projektów obsługuje IDE **Eksploratora rozwiązań**.  
   
  Z punktu widzenia przeciągnij i upuść stosuje następujące właściwości dla każdego typu projektu w ramach **Eksploratora rozwiązań**:  
   
--   **Na podstawie odwołań projektu:** kluczowy punkt to, że projekt jest przeciąganie wokół odwołanie do elementu w magazynie. Jeśli odwołanie do projektu działa jako źródło dla operacji przenoszenia, go tylko należy usunąć odwołanie do elementu z projektu. Nie element faktycznie można usunąć z dysku twardego. Jeśli działa na podstawie odwołań projektu jako obiekt docelowy operacji przenoszenia (lub kopiowania), dodawaj odwołania do oryginalnego elementu źródłowego bez wprowadzania prywatną kopię elementu.  
+- **Na podstawie odwołań projektu:** kluczowy punkt to, że projekt jest przeciąganie wokół odwołanie do elementu w magazynie. Jeśli odwołanie do projektu działa jako źródło dla operacji przenoszenia, go tylko należy usunąć odwołanie do elementu z projektu. Nie element faktycznie można usunąć z dysku twardego. Jeśli działa na podstawie odwołań projektu jako obiekt docelowy operacji przenoszenia (lub kopiowania), dodawaj odwołania do oryginalnego elementu źródłowego bez wprowadzania prywatną kopię elementu.  
   
--   **Oparte na katalog projektu:** projekt z punktu widzenia przeciągania i upuszczania, przeciąga wokół elementu fizycznego, a nie odwołanie. Jeśli projekt na podstawie katalogu działa jako źródło dla operacji przenoszenia, powinny kończyć się się usunięcie elementu fizycznego z dysku twardego, a także usunięcie go z projektu. Jeśli działa na poziomie katalogu projektu jako obiekt docelowy operacji przenoszenia (lub kopiowania), jego Utwórz kopię elementu źródłowego, w lokalizacji docelowej.  
+- **Oparte na katalog projektu:** projekt z punktu widzenia przeciągania i upuszczania, przeciąga wokół elementu fizycznego, a nie odwołanie. Jeśli projekt na podstawie katalogu działa jako źródło dla operacji przenoszenia, powinny kończyć się się usunięcie elementu fizycznego z dysku twardego, a także usunięcie go z projektu. Jeśli działa na poziomie katalogu projektu jako obiekt docelowy operacji przenoszenia (lub kopiowania), jego Utwórz kopię elementu źródłowego, w lokalizacji docelowej.  
   
--   **Projekt docelowy mieszane:** z punktu widzenia przeciągania i upuszczania, zachowanie tego typu projektu zależy od rodzaju elementu przeciąganie (odwołanie do elementu w magazynie) albo sam element. Poprawne zachowanie elementów fizycznych i odwołania do opisanych powyżej.  
+- **Projekt docelowy mieszane:** z punktu widzenia przeciągania i upuszczania, zachowanie tego typu projektu zależy od rodzaju elementu przeciąganie (odwołanie do elementu w magazynie) albo sam element. Poprawne zachowanie elementów fizycznych i odwołania do opisanych powyżej.  
   
- Gdyby tylko jeden typ projektu w **Eksploratora rozwiązań**, wyniósłby operacji przeciągania i upuszczania proste. Ponieważ każdy system projektu ma możliwość definiowania zachowanie przeciągnij i upuść, niektóre wytyczne dotyczące (oparte na zachowanie przeciągnij i upuść Eksploratora Windows) powinna znajdować się zapewniają przewidywalne działanie:  
+  Gdyby tylko jeden typ projektu w **Eksploratora rozwiązań**, wyniósłby operacji przeciągania i upuszczania proste. Ponieważ każdy system projektu ma możliwość definiowania zachowanie przeciągnij i upuść, niektóre wytyczne dotyczące (oparte na zachowanie przeciągnij i upuść Eksploratora Windows) powinna znajdować się zapewniają przewidywalne działanie:  
   
--   Niezmodyfikowane operacji przeciągania **Eksploratora rozwiązań** (gdy Ctrl ani klawisze Shift nie są przechowywane w dół) powinno dawać wynik operacji przenoszenia.  
+- Niezmodyfikowane operacji przeciągania **Eksploratora rozwiązań** (gdy Ctrl ani klawisze Shift nie są przechowywane w dół) powinno dawać wynik operacji przenoszenia.  
   
--   Operacja przeciągania SHIFT również powinno spowodować operacji przenoszenia.  
+- Operacja przeciągania SHIFT również powinno spowodować operacji przenoszenia.  
   
--   Operacja przeciągania CTRL powinno spowodować operacji kopiowania.  
+- Operacja przeciągania CTRL powinno spowodować operacji kopiowania.  
   
--   Systemy projektu odwołania i mieszanych obsługuje pojęcia dodanie link (lub odwołania) do elementu źródłowego. Kiedy te projekty są obiekt docelowy operacji przeciągania i upuszczania (gdy **klawisze Ctrl + Shift** przytrzymanie), powinno zwrócić odwołanie do element dodawany do projektu  
+- Systemy projektu odwołania i mieszanych obsługuje pojęcia dodanie link (lub odwołania) do elementu źródłowego. Kiedy te projekty są obiekt docelowy operacji przeciągania i upuszczania (gdy **klawisze Ctrl + Shift** przytrzymanie), powinno zwrócić odwołanie do element dodawany do projektu  
   
- Nie wszystkie operacje przeciągania i upuszczania są za pośrednictwem różnych kombinacji projekty na podstawie odwołania, na podstawie katalogu i mieszanych. W szczególności jest pozwala poudawać umożliwia operacji przenoszenia między projektu na podstawie katalogu źródłowego i docelowego na podstawie odwołań projektu, ponieważ projekt oparty na katalog źródłowy będzie trzeba usunąć elementu źródłowego po ukończeniu przenoszenia. Następnie pojawiłyby docelowy projekt odniesienia z odwołaniem do usuniętego elementu.  
+  Nie wszystkie operacje przeciągania i upuszczania są za pośrednictwem różnych kombinacji projekty na podstawie odwołania, na podstawie katalogu i mieszanych. W szczególności jest pozwala poudawać umożliwia operacji przenoszenia między projektu na podstawie katalogu źródłowego i docelowego na podstawie odwołań projektu, ponieważ projekt oparty na katalog źródłowy będzie trzeba usunąć elementu źródłowego po ukończeniu przenoszenia. Następnie pojawiłyby docelowy projekt odniesienia z odwołaniem do usuniętego elementu.  
   
- Jest również mylący do poudawać umożliwia operacji kopiowania między tymi typami projektów, ponieważ docelowy projekt odwołanie, nie należy wprowadzać niezależnej kopi elementu źródłowego. Podobnie Ctrl + Shift, przeciągając go do projektu na podstawie katalog docelowy nie powinien być dozwolony ponieważ nie można utrwalić odwołania do katalogu projektu. W przypadkach, gdy operacja przeciągania i upuszczania nie jest obsługiwana IDE powinna nie zezwalaj na liście i pokazania użytkownika nieupuszczalny kursor (pokazane w poniższej tabeli wskaźnika).  
+  Jest również mylący do poudawać umożliwia operacji kopiowania między tymi typami projektów, ponieważ docelowy projekt odwołanie, nie należy wprowadzać niezależnej kopi elementu źródłowego. Podobnie Ctrl + Shift, przeciągając go do projektu na podstawie katalog docelowy nie powinien być dozwolony ponieważ nie można utrwalić odwołania do katalogu projektu. W przypadkach, gdy operacja przeciągania i upuszczania nie jest obsługiwana IDE powinna nie zezwalaj na liście i pokazania użytkownika nieupuszczalny kursor (pokazane w poniższej tabeli wskaźnika).  
   
- Aby prawidłowo zaimplementować zachowanie przeciągnij i upuść, projekt źródłowy przeciągania musi komunikować się z natury (na przykład, jest ona na podstawie odwołania lub do katalogu?) do projektu docelowego. Informacja ta jest wskazywany przez format Schowka, oferowaną w źródle. Jako źródła przeciągania (lub operacji kopiowania Schowka) projekt powinno oferować się albo **CF_VSREFPROJECTITEM**S lub **CF_VSSTGPROJECTITEMS** odpowiednio w zależności od tego, czy projekt jest oparty na odwołanie lub na podstawie katalogu. Oba te formaty mają taką samą zawartość danych, co jest podobne do Windows **CF_HDROP** formatowania z tą różnicą, że listy ciągów, zamiast nazwy plików, są double -**NULL** zakończony listę  **Projref** ciągów (postaci zwracanej przez **IVsSolution::GetProjrefOfItem** lub **:: GetProjrefOfProject** odpowiednio).  
+  Aby prawidłowo zaimplementować zachowanie przeciągnij i upuść, projekt źródłowy przeciągania musi komunikować się z natury (na przykład, jest ona na podstawie odwołania lub do katalogu?) do projektu docelowego. Informacja ta jest wskazywany przez format Schowka, oferowaną w źródle. Jako źródła przeciągania (lub operacji kopiowania Schowka) projekt powinno oferować się albo **CF_VSREFPROJECTITEM**S lub **CF_VSSTGPROJECTITEMS** odpowiednio w zależności od tego, czy projekt jest oparty na odwołanie lub na podstawie katalogu. Oba te formaty mają taką samą zawartość danych, co jest podobne do Windows **CF_HDROP** formatowania z tą różnicą, że listy ciągów, zamiast nazwy plików, są double -**NULL** zakończony listę  **Projref** ciągów (postaci zwracanej przez **IVsSolution::GetProjrefOfItem** lub **:: GetProjrefOfProject** odpowiednio).  
   
- Jako element docelowy upuszczania (lub operacji wklejania Schowka) projektu należy zaakceptować oba te elementy **CF_VSREFPROJECTITEMS** i **CF_VSSTGPROJECTITEMS**, ale różni się dokładnie obsługi operacji przeciągania i upuszczania w zależności od charakteru projekt docelowy i projektu źródłowego. Projekt źródła deklaruje natury, czy oferuje **CF_VSREFPROJECTITEMS** lub **CF_VSSTGPROJECTITEMS**. Celem listy rozumie swój własny charakter i dlatego ma za mało informacji do podejmowania decyzji, aby, czy przenoszenie, kopiowanie lub łącze powinno być przeprowadzane. Użytkownik modyfikuje również kolejnej operacji przeciągania i upuszczania powinna być wykonywana przez naciśnięcie klawisza Ctrl, Shift, lub zarówno klawisze Ctrl i Shift. Ważne jest, aby element docelowy upuszczania prawidłowo wskazać operację, która odbędzie się wcześniej w jego **DragEnter** i **DragOver** metody. **Eksploratora rozwiązań** automatycznie wykrywa, czy projekt źródłowy i docelowy projekt są tym samym projekcie.  
+  Jako element docelowy upuszczania (lub operacji wklejania Schowka) projektu należy zaakceptować oba te elementy **CF_VSREFPROJECTITEMS** i **CF_VSSTGPROJECTITEMS**, ale różni się dokładnie obsługi operacji przeciągania i upuszczania w zależności od charakteru projekt docelowy i projektu źródłowego. Projekt źródła deklaruje natury, czy oferuje **CF_VSREFPROJECTITEMS** lub **CF_VSSTGPROJECTITEMS**. Celem listy rozumie swój własny charakter i dlatego ma za mało informacji do podejmowania decyzji, aby, czy przenoszenie, kopiowanie lub łącze powinno być przeprowadzane. Użytkownik modyfikuje również kolejnej operacji przeciągania i upuszczania powinna być wykonywana przez naciśnięcie klawisza Ctrl, Shift, lub zarówno klawisze Ctrl i Shift. Ważne jest, aby element docelowy upuszczania prawidłowo wskazać operację, która odbędzie się wcześniej w jego **DragEnter** i **DragOver** metody. **Eksploratora rozwiązań** automatycznie wykrywa, czy projekt źródłowy i docelowy projekt są tym samym projekcie.  
   
- Przeciąganie elementów projektu w wystąpieniach programu Visual Studio (na przykład z jednego wystąpienia devenv.exe do drugiego) specjalnie nie jest obsługiwane. **Eksploratora rozwiązań** także bezpośrednio powoduje to wyłączenie.  
+  Przeciąganie elementów projektu w wystąpieniach programu Visual Studio (na przykład z jednego wystąpienia devenv.exe do drugiego) specjalnie nie jest obsługiwane. **Eksploratora rozwiązań** także bezpośrednio powoduje to wyłączenie.  
   
- Użytkownik powinien zawsze można ustalić skutek operacji przeciągania i upuszczania, wybierając element, przeciągając je do lokalizacji docelowej i przestrzegając następujących wskaźników myszy widocznego przed upuszczeniu elementu:  
+  Użytkownik powinien zawsze można ustalić skutek operacji przeciągania i upuszczania, wybierając element, przeciągając je do lokalizacji docelowej i przestrzegając następujących wskaźników myszy widocznego przed upuszczeniu elementu:  
   
 |Wskaźnik myszy|Polecenie|Opis|  
 |-------------------|-------------|-----------------|  
@@ -583,33 +583,33 @@ ms.locfileid: "49192546"
   
  Te informacje powinny należy brać pod uwagę podczas implementowania przeciąganie w **Eksploratora rozwiązań**:  
   
--   Projektowanie pod kątem scenariuszy z wieloma zaznaczenia.  
+- Projektowanie pod kątem scenariuszy z wieloma zaznaczenia.  
   
--   Nazwy plików (pełna ścieżka) musi być unikatowa dla projektu docelowego lub listy nie powinien być dozwolony.  
+- Nazwy plików (pełna ścieżka) musi być unikatowa dla projektu docelowego lub listy nie powinien być dozwolony.  
   
--   Nazwy folderów muszą być unikatowe (bez uwzględniania wielkości liter) na poziomie są usuwane.  
+- Nazwy folderów muszą być unikatowe (bez uwzględniania wielkości liter) na poziomie są usuwane.  
   
--   Ma zachowanie różnic między plikami, które są otwarte lub zamknięte w czasie przeciągania (niewymienione w powyższych scenariuszy).  
+- Ma zachowanie różnic między plikami, które są otwarte lub zamknięte w czasie przeciągania (niewymienione w powyższych scenariuszy).  
   
--   Pliki najwyższego poziomu zachowywać się inaczej niż pliki w folderach.  
+- Pliki najwyższego poziomu zachowywać się inaczej niż pliki w folderach.  
   
- Inny problem, aby wiedzieć, jest sposób obsługi operacji przenoszenia elementów, które mają otwartych oknach projektantów i edytorów. To oczekiwane zachowanie w następujący sposób (dotyczy to wszystkich typów projektów):  
+  Inny problem, aby wiedzieć, jest sposób obsługi operacji przenoszenia elementów, które mają otwartych oknach projektantów i edytorów. To oczekiwane zachowanie w następujący sposób (dotyczy to wszystkich typów projektów):  
   
-1.  Jeśli Otwórz Edytor/projektanta nie ma wszystkie niezapisane zmiany, następnie w oknie Projektant/Edytor powinien zostać dyskretnie zamknięty.  
+1. Jeśli Otwórz Edytor/projektanta nie ma wszystkie niezapisane zmiany, następnie w oknie Projektant/Edytor powinien zostać dyskretnie zamknięty.  
   
-2.  Jeśli Otwórz Edytor/projektanta niezapisane zmiany, źródła przeciągania powinien Zaczekaj, aż upuszczania do wystąpienia, a następnie poproś użytkownika, aby zapisać niezatwierdzone zmiany w otwartych dokumentach przed zamknięciem okna z monit podobny do następującego :  
+2. Jeśli Otwórz Edytor/projektanta niezapisane zmiany, źródła przeciągania powinien Zaczekaj, aż upuszczania do wystąpienia, a następnie poproś użytkownika, aby zapisać niezatwierdzone zmiany w otwartych dokumentach przed zamknięciem okna z monit podobny do następującego :  
   
-    ```  
-    ==========================================================   
-         One or more open documents have unsaved changes.  
-    Do you want to save uncommitted changes before proceeding?   
-                      [Yes]  [No]  [Cancel]   
-    ==========================================================  
-    ```  
+   ```  
+   ==========================================================   
+        One or more open documents have unsaved changes.  
+   Do you want to save uncommitted changes before proceeding?   
+                     [Yes]  [No]  [Cancel]   
+   ==========================================================  
+   ```  
   
- Dzięki temu użytkownik można zapisać pracę w toku, zanim obiekt docelowy sprawia, że jego kopii. Nowa metoda **IVsHierarchyDropDataSource2::OnBeforeDropNotify** została dodana do włączenia tej obsługi.  
+   Dzięki temu użytkownik można zapisać pracę w toku, zanim obiekt docelowy sprawia, że jego kopii. Nowa metoda **IVsHierarchyDropDataSource2::OnBeforeDropNotify** została dodana do włączenia tej obsługi.  
   
- Element docelowy następnie skopiuj stan elementu, ponieważ jest on magazynu (bez uwzględnienia niezapisane zmiany w edytorze, jeśli użytkownik wybrał **nr**). Po zakończeniu docelowej, jej skopiowanie (w **IVsHierarchyDropDataSource::Drop**), źródło jest możliwość wykonania Usuń część operacji przenoszenia (w **IVsHierarchyDropDataSource::O nDropNotify**).  
+   Element docelowy następnie skopiuj stan elementu, ponieważ jest on magazynu (bez uwzględnienia niezapisane zmiany w edytorze, jeśli użytkownik wybrał **nr**). Po zakończeniu docelowej, jej skopiowanie (w **IVsHierarchyDropDataSource::Drop**), źródło jest możliwość wykonania Usuń część operacji przenoszenia (w **IVsHierarchyDropDataSource::O nDropNotify**).  
   
- Wszelkie edytorów z niezapisanymi zmianami należy pozostawić otwarty. W tych dokumentach z niezapisanymi zmianami to oznacza, że odbędzie się kopiowania część operacji przenoszenia, ale część usuwania zostanie przerwane. W przypadku zaznaczenia wielu gdy użytkownik wybierze **nie**, te dokumenty przy użyciu niezapisanych zmian nie powinny zostać zamknięte lub usunięte, ale użytkownicy bez niezapisane zmiany powinny być zamknięte i usunięte.
+   Wszelkie edytorów z niezapisanymi zmianami należy pozostawić otwarty. W tych dokumentach z niezapisanymi zmianami to oznacza, że odbędzie się kopiowania część operacji przenoszenia, ale część usuwania zostanie przerwane. W przypadku zaznaczenia wielu gdy użytkownik wybierze **nie**, te dokumenty przy użyciu niezapisanych zmian nie powinny zostać zamknięte lub usunięte, ale użytkownicy bez niezapisane zmiany powinny być zamknięte i usunięte.
 

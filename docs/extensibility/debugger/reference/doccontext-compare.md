@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 966d31889d7979732af20f5e3f95546e87af6598
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f092666833b80dd59ed4b7b3345c379078ce2bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103656"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862960"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 Określa kryteria do porównywania dwóch kontekstów dokumentu.  
@@ -48,21 +48,21 @@ enum enum_DOCCONTEXT_COMPARE {
   
 ## <a name="members"></a>Elementy członkowskie  
  DOCCONTEXT_EQUAL  
- Znajdź pierwszy kontekstu dokumentu na liście równą docelowy kontekstu dokumentu.  
+ Znajdź pierwszy kontekstu dokumentu na liście, która jest równa docelowej kontekstu dokumentu.  
   
  DOCCONTEXT_LESS_THAN  
- Znajdź na liście, która jest mniejsza niż docelowy kontekstu dokumentu pierwszy kontekstu dokumentu.  
+ Znajdź pierwszy kontekstu dokumentu na liście, która jest mniejsza niż docelowy kontekstu dokumentu.  
   
  DOCCONTEXT_GREATER_THAN  
- Znajdź na liście, która jest większa niż docelowy kontekstu dokumentu pierwszy kontekstu dokumentu.  
+ Znajdź pierwszy kontekstu dokumentu na liście, która jest większa niż docelowy kontekstu dokumentu.  
   
  DOCCONTEXT_SAME_DOCUMENT  
- Znajdź pierwszy kontekstu dokumentu na liście, który znajduje się w tym samym dokumencie jako docelowy kontekstu dokumentu.  
+ Znajdź pierwszy kontekstu dokumentu na liście znajduje się w tym samym dokumencie co kontekstu dokumentu docelowego.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako argument [porównania](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) metody.  
+ Przekazywany jako argument do [porównania](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) metody.  
   
- Te wartości są używane do kryteria porównania do znajdowania pierwszego kontekstu dokumentu w postaci listy. Kontekstu dokumentu znajduje się lista kontekstów dokumentu do porównania się przed za pośrednictwem `IDebugDocumentContext2::Compare` metody. Pierwszy kontekstu dokumentu na liście, dla którego jest operator porównania `true` jest następnie zwracany.  
+ Te wartości są używane do określenia kryteria porównania na potrzeby znajdowania pierwszy kontekstu dokumentu na liście. Kontekstu dokumentu znajduje się lista kontekstów dokumentu do porównania sam względem za pośrednictwem `IDebugDocumentContext2::Compare` metody. Pierwszy kontekstu dokumentu na liście, dla którego operator porównania jest `true` jest zwracana.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

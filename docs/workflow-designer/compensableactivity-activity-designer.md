@@ -1,5 +1,5 @@
 ---
-title: Projektant przepływu pracy — działania CompensableActivity Projektant działań
+title: Projektant przepływu pracy — CompensableActivity, Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,41 +12,41 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d723b50fe0267939119239861c5ae951e01cd445
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 7257e7cc31e0503c7e466bbf4f8c9dd02e5fe15a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836137"
 ---
 # <a name="compensableactivity-activity-designer"></a>CompensableActivity, projektant działań
 
-**Działanie CompensableActivity** Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.CompensableActivity> działania.
+**CompensableActivity** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.CompensableActivity> działania.
 
-## <a name="the-compensableactivity-activity"></a>Działanie CompensableActivity działania
- <xref:System.Activities.Statements.CompensableActivity> Definiuje jednostkę pracy, które mogą być potwierdzone lub skompensowane po pomyślnym ukończeniu.
+## <a name="the-compensableactivity-activity"></a>Działanie CompensableActivity
+ <xref:System.Activities.Statements.CompensableActivity> Definiuje jednostkę pracy, która potwierdzenia lub płatne po pomyślnym ukończeniu.
 
-### <a name="using-the-compensableactivity-activity-designer"></a>Przy użyciu narzędzia Projektant działań działanie CompensableActivity
- **Działanie CompensableActivity** Projektant działań można znaleźć w **transakcji** kategorii **przybornika**. Aby otworzyć **przybornika**, wybierz pozycję **przybornika** karcie po lewej stronie projektanta przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
+### <a name="using-the-compensableactivity-activity-designer"></a>Za pomocą CompensableActivity, Projektant działań
+ **CompensableActivity** projektanta działań można znaleźć w **transakcji** kategorii **przybornika**. Aby otworzyć **przybornika**, wybierz opcję **przybornika** karty w lewej części projektanta przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
 
- **Działanie CompensableActivity** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy. Projektant działań wewnątrz można porzucić <xref:System.Activities.Statements.Sequence>. Projektant działań porzucenie tworzy <xref:System.Activities.Statements.CompensableActivity> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> z działania CompensableActivity. Edytuj <xref:System.Activities.Activity.DisplayName%2A> wartość w nagłówku **działanie CompensableActivity** Projektant działań. Mogą być edytowane także w **DisplayName** pola siatki właściwości.
+ **CompensableActivity** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy. Można usunąć, Projektant działań wewnątrz <xref:System.Activities.Statements.Sequence>. Projektant działań porzucenie tworzy <xref:System.Activities.Statements.CompensableActivity> działanie przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> z CompensableActivity. Edytuj <xref:System.Activities.Activity.DisplayName%2A> wartością w nagłówku **CompensableActivity** projektanta działań. Ponadto można je edytować w **DisplayName** pola siatki właściwości.
 
-### <a name="the-compensableactivity-properties"></a>Działanie CompensableActivity właściwości
- W poniższej tabeli przedstawiono <xref:System.Activities.Statements.CompensableActivity> właściwości oraz opis korzystania z nich w projektancie. <xref:System.Activities.Activity.DisplayName%2A> i <xref:System.Activities.Activity%601.Result%2A> właściwości można edytować w siatce właściwości, ale inne właściwości, należy edytować na powierzchni projektanta przepływów pracy.
+### <a name="the-compensableactivity-properties"></a>Właściwości CompensableActivity
+ W poniższej tabeli przedstawiono <xref:System.Activities.Statements.CompensableActivity> właściwości i w tym artykule opisano, jak są używane w projektancie. <xref:System.Activities.Activity.DisplayName%2A> i <xref:System.Activities.Activity%601.Result%2A> właściwości można edytować w siatce właściwości, ale inne właściwości, należy edytować na powierzchni projektanta przepływów pracy.
 
 |Nazwa właściwości|Wymagane|Użycie|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Opcjonalne przyjazna nazwa <xref:System.Activities.Statements.CompensableActivity> działania. Wartość domyślna to działanie CompensableActivity.|
-|<xref:System.Activities.Activity%601.Result%2A>|False|Określa wartość zwracaną <xref:System.Activities.Statements.CompensableActivity>. Ta właściwość musi być edytowany w siatce właściwości.|
-|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|Określa działania, dla których dostępny jest logiki kompensacji, anulowanie i potwierdzenia. Aby dodać <xref:System.Activities.Statements.CompensableActivity.Body%2A> działania, Porzuć działanie z **przybornika** do **treści** polu na **działanie CompensableActivity** Projektant działań. Dodaj tekst podpowiedzi "Upuść działanie tutaj".|
-|<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|False|Określa działania, która jest wykonywana w przypadku anulowania. Aby dodać działanie, Porzuć jego projektanta z **przybornika** do **CancellationHandler** polu na **działanie CompensableActivity** Projektant działań. Dodaj tekst podpowiedzi "Upuść tutaj działanie".|
-|<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|False|Określa działanie ma być wykonywana w przypadku kompensowanie dla <xref:System.Activities.Statements.CompensableActivity.Body%2A> działania. Ten program obsługi można jawnie wywołać przy użyciu <xref:System.Activities.Statements.Compensate> działania.<br /><br /> Aby dodać działanie, Porzuć jego Projektant działań z **przybornika** do **CompensationHandler** polu na **działanie CompensableActivity** Projektant działań. Dodaj tekst podpowiedzi "Upuść tutaj działanie".|
-|<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|False|Określa działanie do wykonania podczas potwierdzania <xref:System.Activities.Statements.CompensableActivity.Body%2A> działania. Ten program obsługi można jawnie wywołać przy użyciu <xref:System.Activities.Statements.Confirm> działania.<br /><br /> Aby dodać działanie, Porzuć jego Projektant działań z **przybornika** do **ConfirmationHandler** polu na **działanie CompensableActivity** Projektant działań. Dodaj tekst podpowiedzi "Upuść tutaj działanie".|
+|-|--------------|-|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Opcjonalna nazwa przyjazna <xref:System.Activities.Statements.CompensableActivity> działania. Wartość domyślna to CompensableActivity.|
+|<xref:System.Activities.Activity%601.Result%2A>|False|Określa wartość zwracaną przez <xref:System.Activities.Statements.CompensableActivity>. Można edytować tej właściwości, w siatce właściwości.|
+|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|Określa działania, dla których dostępny jest logiki wynagrodzenie, anulowanie i potwierdzenia. Aby dodać <xref:System.Activities.Statements.CompensableActivity.Body%2A> działania, listy działanie z **przybornika** do **treści** polu na **CompensableActivity** Projektant działań. Dodaj tekst wskazówki "W tym miejscu listy activity".|
+|<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|False|Określa działania, który jest wykonywany po anulowania. Aby dodać działanie, Porzuć swojego projektanta z **przybornika** do **CancellationHandler** polu na **CompensableActivity** projektanta działań. Dodaj tekst wskazówki "Upuść działanie tutaj".|
+|<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|False|Określa działania, które zostaną wykonane podczas kompensowania <xref:System.Activities.Statements.CompensableActivity.Body%2A> działania. Ten program obsługi może być jawnie wywołana, za pomocą <xref:System.Activities.Statements.Compensate> działania.<br /><br /> Aby dodać działanie, Porzuć swojego projektanta działań z **przybornika** do **CompensationHandler** polu na **CompensableActivity** projektanta działań. Dodaj tekst wskazówki "Upuść działanie tutaj".|
+|<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|False|Określa działanie do wykonania podczas potwierdzania <xref:System.Activities.Statements.CompensableActivity.Body%2A> działania. Ten program obsługi może być jawnie wywołana, za pomocą <xref:System.Activities.Statements.Confirm> działania.<br /><br /> Aby dodać działanie, Porzuć swojego projektanta działań z **przybornika** do **ConfirmationHandler** polu na **CompensableActivity** projektanta działań. Dodaj tekst wskazówki "Upuść działanie tutaj".|
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Transakcja](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)
-- [Wyrównania](../workflow-designer/compensate-activity-designer.md)
+- [Compensate](../workflow-designer/compensate-activity-designer.md)
 - [Confirm](../workflow-designer/confirm-activity-designer.md)
-- [Element TransactionScope](../workflow-designer/transactionscope-activity-designer.md)
+- [TransactionScope](../workflow-designer/transactionscope-activity-designer.md)

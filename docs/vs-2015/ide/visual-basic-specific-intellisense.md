@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d9d9d41b6b98396d253b810fb8ea9485a3d9e0df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7fbeae534915863ec8a49e529bef4f6eb0c0fcb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239490"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852495"
 ---
 # <a name="visual-basic-specific-intellisense"></a>IntelliSense specyficzne dla Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,26 +35,26 @@ Edytor kodu źródłowego języka Visual Basic oferuje następujące funkcje Int
   
 ## <a name="automatic-completion"></a>Automatyczne uzupełnianie  
   
--   Uzupełnianie na różnych słów kluczowych  
+- Uzupełnianie na różnych słów kluczowych  
   
-     Na przykład, jeśli wpiszesz `goto` i spację, funkcję IntelliSense wyświetli listę etykiet zdefiniowanych w menu rozwijanym. Obejmują innych obsługiwanych słów kluczowych `Exit`, `Implements`, `Option`, i `Declare`.  
+   Na przykład, jeśli wpiszesz `goto` i spację, funkcję IntelliSense wyświetli listę etykiet zdefiniowanych w menu rozwijanym. Obejmują innych obsługiwanych słów kluczowych `Exit`, `Implements`, `Option`, i `Declare`.  
   
--   Uzupełnianie na `Enum` i `Boolean`  
+- Uzupełnianie na `Enum` i `Boolean`  
   
-     Po instrukcji będzie odnosił się do elementu członkowskiego wyliczenia, IntelliSense wyświetli się lista elementów członkowskich `Enum`. Kiedy oświadczenie będzie odnosił się do `Boolean`, funkcja IntelliSense wyświetli menu rozwijanego PRAWDA / FAŁSZ.  
+   Po instrukcji będzie odnosił się do elementu członkowskiego wyliczenia, IntelliSense wyświetli się lista elementów członkowskich `Enum`. Kiedy oświadczenie będzie odnosił się do `Boolean`, funkcja IntelliSense wyświetli menu rozwijanego PRAWDA / FAŁSZ.  
   
- Uzupełnianie można wyłączyć domyślnie, anulując **automatyczna lista członków** z **ogólne** — strona właściwości w **języka Visual Basic** folderu.  
+  Uzupełnianie można wyłączyć domyślnie, anulując **automatyczna lista członków** z **ogólne** — strona właściwości w **języka Visual Basic** folderu.  
   
- Można ręcznie wywołać uzupełniania, wywołując listę elementów członkowskich, Dokończ wyraz lub ALT + Strzałka w prawo. Aby uzyskać więcej informacji, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md).  
+  Można ręcznie wywołać uzupełniania, wywołując listę elementów członkowskich, Dokończ wyraz lub ALT + Strzałka w prawo. Aby uzyskać więcej informacji, zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md).  
   
 ## <a name="intellisense-in-zone"></a>Funkcja IntelliSense w strefie  
  Funkcja IntelliSense w strefie pomaga deweloperom języka Visual Basic, którzy muszą wdrażać aplikacje za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] i są ograniczone do ustawienia częściowej relacji zaufania. Tej funkcji:  
   
--   Umożliwia wybranie uprawnień, których aplikacja będzie uruchamiana za pomocą.  
+- Umożliwia wybranie uprawnień, których aplikacja będzie uruchamiana za pomocą.  
   
--   API wyświetlaną w wybranej strefie jako dostępne w listę elementów członkowskich, a następnie Wyświetl interfejsów API, które wymagają dodatkowych uprawnień jako niedostępny.  
+- API wyświetlaną w wybranej strefie jako dostępne w listę elementów członkowskich, a następnie Wyświetl interfejsów API, które wymagają dodatkowych uprawnień jako niedostępny.  
   
- Aby uzyskać więcej informacji, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
+  Aby uzyskać więcej informacji, zobacz [zabezpieczenia dostępu kodu dla aplikacji ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Korzystanie z funkcji IntelliSense](../ide/using-intellisense.md)

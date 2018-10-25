@@ -21,12 +21,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 96cde88c86552b7fad16a58839dc190d421b2bde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857864"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Usuwanie obiektów przed utratą zakresu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,17 +81,17 @@ ms.locfileid: "49190882"
   
  W metodzie OpenPort2 dwa obiekty portu SerialPort są zadeklarowane i ustawienie wartości null:  
   
--   `tempPort`, która używany do sprawdzania, czy operacje metoda kończą się pomyślnie.  
+- `tempPort`, która używany do sprawdzania, czy operacje metoda kończą się pomyślnie.  
   
--   `port`, która jest użyta wartość zwracaną metody.  
+- `port`, która jest użyta wartość zwracaną metody.  
   
- `tempPort` Jest tworzony i otwierany `try` bloku i wszelkich innych wymaganych praca jest wykonywana w tym samym `try` bloku. Na koniec `try` blok, otwartego portu jest przypisany do `port` obiektu, który zostanie zwrócony i `tempPort` obiekt jest ustawiony na `null`.  
+  `tempPort` Jest tworzony i otwierany `try` bloku i wszelkich innych wymaganych praca jest wykonywana w tym samym `try` bloku. Na koniec `try` blok, otwartego portu jest przypisany do `port` obiektu, który zostanie zwrócony i `tempPort` obiekt jest ustawiony na `null`.  
   
- `finally` Bloku sprawdza wartość `tempPort`. Jeśli nie ma wartość null, operacja w metodzie zakończyło się niepowodzeniem, a `tempPort` jest zamknięty, aby upewnić się, że wszystkie zasoby są zwalniane. Obiekt zwrócony portu będzie zawierać otwarty obiekt portu SerialPort operacje metody zakończyło się pomyślnie, czy będzie to być wartość null, jeśli operacja nie powiodła się.  
+  `finally` Bloku sprawdza wartość `tempPort`. Jeśli nie ma wartość null, operacja w metodzie zakończyło się niepowodzeniem, a `tempPort` jest zamknięty, aby upewnić się, że wszystkie zasoby są zwalniane. Obiekt zwrócony portu będzie zawierać otwarty obiekt portu SerialPort operacje metody zakończyło się pomyślnie, czy będzie to być wartość null, jeśli operacja nie powiodła się.  
   
- [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
+  [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
   
 ## <a name="example"></a>Przykład  
  Domyślnie [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kompilatora zawiera operatory arytmetyczne wszystkie sprawdzaj przepełnienie. W związku z tym, może zgłaszać żadnych operacji arytmetycznej języka Visual Basic <xref:System.OverflowException>. Może to prowadzić do nieoczekiwanych naruszeń w zasadach, takie jak CA2000. Na przykład następująca funkcja CreateReader1 dadzą naruszenie CA2000, ponieważ kompilator Visual Basic jest emitowania przepełnienie sprawdzanie instrukcji do dodania, który może zgłosić wyjątek, które spowodują TextWriter nie można usunąć.  

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ccc491ec9e966b8d893b6d669aafc64ebc5c8cf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: af5f68aaf5b2caed50d28a1a53022a095d478e60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887920"
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
 Pobiera wartość rejestru.  
@@ -35,17 +35,17 @@ HRESULT get_registerValue (
   
 #### <a name="parameters"></a>Parametry  
  `index`  
- [in] Wartość z zakresu od [cv_hreg_e — wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md) określenie, które Zarejestruj, aby pobrać wartości z wyliczenia.  
+ [in] Wartość z zakresu od [cv_hreg_e — wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md) wyliczenie opisujące który Zarejestruj, aby pobrać wartość z.  
   
  `pRetVal`  
  [out] Zwraca bieżącą wartość rejestru.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Niezależnie od rozmiaru `pRetVal` parametru, co rejestru zwykle zawiera jedynie implementację powinny być przechowywane. Na przykład rejestr 8-bitową zawiera tylko najniższy 8-bitowej danej wartości. Ta wartość 8-bitowych jest rozwinięty, 64-bitowej, gdy zwracany przez tę metodę.  
+ Niezależnie od rozmiaru `pRetVal` parametru, co rejestru zwykle zawiera jedynie implementację powinny być przechowywane. Na przykład rejestr 8-bitowy przechowuje tylko najniższy 8 bitów danej wartości. Ta wartość 8-bitową można rozszerzyć, aby 64-bitowego, gdy zwracany z tej metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
- [Cv_hreg_e — wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md)
+ [CV_HREG_e, wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md)

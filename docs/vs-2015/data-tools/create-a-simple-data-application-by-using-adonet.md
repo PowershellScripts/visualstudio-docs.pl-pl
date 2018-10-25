@@ -17,12 +17,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204312"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824285"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,41 +52,41 @@ Gdy tworzysz aplikację, która manipuluje danymi w bazie danych, wykonujesz pod
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby utworzyć aplikację, będą potrzebne:  
   
--   Visual Studio Community Edition.  
+- Visual Studio Community Edition.  
   
--   SQL Server Express LocalDB.  
+- SQL Server Express LocalDB.  
   
--   Mała przykładowa baza danych, którą tworzysz, wykonując kroki opisane w [utworzyć bazę danych SQL za pomocą skryptu](../data-tools/create-a-sql-database-by-using-a-script.md).  
+- Mała przykładowa baza danych, którą tworzysz, wykonując kroki opisane w [utworzyć bazę danych SQL za pomocą skryptu](../data-tools/create-a-sql-database-by-using-a-script.md).  
   
--   Parametry połączenia dla bazy danych po jej skonfigurowaniu. Możesz znaleźć tę wartość otwierając **Eksplorator obiektów SQL Server**, otwierając menu skrótów dla bazy danych, wybierając **właściwości**i przewijając do **ConnectionString** właściwości.  
+- Parametry połączenia dla bazy danych po jej skonfigurowaniu. Możesz znaleźć tę wartość otwierając **Eksplorator obiektów SQL Server**, otwierając menu skrótów dla bazy danych, wybierając **właściwości**i przewijając do **ConnectionString** właściwości.  
   
- W tym temacie założono, że znasz podstawowe funkcje środowiska IDE programu Visual Studio i można utworzyć aplikacji Windows Forms, dodawać formularze do tego projektu, umieszczać przyciski i inne kontrolki na tych formularzach, ustawiać właściwości tych kontrolek i kodować proste zdarzenia . Jeśli nie masz doświadczenia z tych zadań, zalecamy wykonanie [wprowadzenie do języka Visual C# i Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) przed rozpoczęciem tego tematu.  
+  W tym temacie założono, że znasz podstawowe funkcje środowiska IDE programu Visual Studio i można utworzyć aplikacji Windows Forms, dodawać formularze do tego projektu, umieszczać przyciski i inne kontrolki na tych formularzach, ustawiać właściwości tych kontrolek i kodować proste zdarzenia . Jeśli nie masz doświadczenia z tych zadań, zalecamy wykonanie [wprowadzenie do języka Visual C# i Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) przed rozpoczęciem tego tematu.  
   
 ##  <a name="BKMK_setupthesampledatabase"></a> Konfigurowanie przykładowej bazy danych  
  Przykładowa baza danych, w tym przewodniku składa się z tabel klienta i zamówień. Tabele nie zawierają początkowo żadnych danych, ale zostaną one dodane po uruchomieniu aplikacji, który utworzysz. Baza danych zawiera także pięć prostych przechowywanych procedur. [Tworzenie bazy danych SQL za pomocą skryptu](../data-tools/create-a-sql-database-by-using-a-script.md) zawiera skrypt języka Transact-SQL, który tworzy tabele, główne i obce klucze, ograniczenia i procedur składowanych.  
   
 ##  <a name="BKMK_createtheformsandaddcontrols"></a> Tworzenie formularzy i dodawanie formantów  
   
-1.  Utwórz projekt dla aplikacji Windows Forms, a następnie nadaj mu nazwę SimpleDataApp.  
+1. Utwórz projekt dla aplikacji Windows Forms, a następnie nadaj mu nazwę SimpleDataApp.  
   
-     Program Visual Studio tworzy projekt i kilka plików, w tym pusty formularz Windows, który nosi nazwę Form1.  
+    Program Visual Studio tworzy projekt i kilka plików, w tym pusty formularz Windows, który nosi nazwę Form1.  
   
-2.  Dodaj dwie formy Windows do projektu tak, że ma trzy formy, a następnie nadaj im następujące nazwy:  
+2. Dodaj dwie formy Windows do projektu tak, że ma trzy formy, a następnie nadaj im następujące nazwy:  
   
-    -   Nawigacja  
+   -   Nawigacja  
   
-    -   NewCustomer  
+   -   NewCustomer  
   
-    -   FillOrCancel  
+   -   FillOrCancel  
   
-3.  Dla każdego formularza należy dodać pola tekstowe, przyciski i inne formanty, które pojawiają się na poniższych ilustracjach. Dla każdego formantu należy ustawić właściwości opisywane przez tabele.  
+3. Dla każdego formularza należy dodać pola tekstowe, przyciski i inne formanty, które pojawiają się na poniższych ilustracjach. Dla każdego formantu należy ustawić właściwości opisywane przez tabele.  
   
-    > [!NOTE]
-    >  Formanty etykiety i pole grupy zwiększają przejrzystość, ale nie są używane w kodzie.  
+   > [!NOTE]
+   >  Formanty etykiety i pole grupy zwiększają przejrzystość, ale nie są używane w kodzie.  
   
- **Formularz nawigacji**  
+   **Formularz nawigacji**  
   
- ![Okno dialogowe nawigacji](../data-tools/media/simpleappnav.png "SimpleAppNav")  
+   ![Okno dialogowe nawigacji](../data-tools/media/simpleappnav.png "SimpleAppNav")  
   
 |Formanty formularza nawigacji|Właściwości|  
 |--------------------------------------|----------------|  

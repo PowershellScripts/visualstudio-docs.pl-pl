@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d787a18e506baa3fd131c50332afa7fe51b7ca05
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: beba04bab85b3fd09aafb195039ad6e34106e293
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850532"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Porady: modyfikowanie punktu obrotu modelu 3-D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,22 +37,22 @@ W tym dokumencie przedstawiono sposób używania edytora modelu do modyfikowania
   
 #### <a name="to-modify-the-pivot-point-of-a-3-d-model"></a>Aby zmodyfikować punktu obrotu modelu 3-D  
   
-1.  Zacznij od istniejącego modelu 3-w, takiego jak opisany w [porady: Tworzenie podstawowego modelu 3-D](../designers/how-to-create-a-basic-3-d-model.md).  
+1. Zacznij od istniejącego modelu 3-w, takiego jak opisany w [porady: Tworzenie podstawowego modelu 3-D](../designers/how-to-create-a-basic-3-d-model.md).  
   
-2.  Wprowadź tryb obrotu. Na **tryb edytora modelu** narzędzi, wybierz **tryb obrotu** przycisk, aby uaktywnić tryb obrotu. Zostanie wyświetlone okno z całym **tryb obrotu** przycisk, aby wskazać, że edytor modelu jest teraz tryb obrotu. W tryb obrotu operacji, takich jak tłumaczenia wpływają na punkt obrotu obiektu zamiast struktury obiektów w przestrzeni świata.  
+2. Wprowadź tryb obrotu. Na **tryb edytora modelu** narzędzi, wybierz **tryb obrotu** przycisk, aby uaktywnić tryb obrotu. Zostanie wyświetlone okno z całym **tryb obrotu** przycisk, aby wskazać, że edytor modelu jest teraz tryb obrotu. W tryb obrotu operacji, takich jak tłumaczenia wpływają na punkt obrotu obiektu zamiast struktury obiektów w przestrzeni świata.  
   
-3.  Modyfikowanie punktu obrotu obiektu. W **wybierz** tryb, wybierz obiekt, a następnie na **przeglądarka modelu** narzędzi, wybierz **Translate** narzędzia. Pole, który reprezentuje punkt obrotu jest wyświetlany na powierzchni projektowej. Przenieś pole, aby zmodyfikować punkt obrotu obiektu.  
+3. Modyfikowanie punktu obrotu obiektu. W **wybierz** tryb, wybierz obiekt, a następnie na **przeglądarka modelu** narzędzi, wybierz **Translate** narzędzia. Pole, który reprezentuje punkt obrotu jest wyświetlany na powierzchni projektowej. Przenieś pole, aby zmodyfikować punkt obrotu obiektu.  
   
-     Przenosząc pole, możesz przenieść punkt obrotu we wszystkich trzech wymiarach. Do translacji punktu obrotu wzdłuż osi, Przenieś strzałkę, która odnosi się do tej osi. Strzałki i pole Zmień kolor żółty, aby wskazać osi, który jest zależna od tłumaczenia.  
+    Przenosząc pole, możesz przenieść punkt obrotu we wszystkich trzech wymiarach. Do translacji punktu obrotu wzdłuż osi, Przenieś strzałkę, która odnosi się do tej osi. Strzałki i pole Zmień kolor żółty, aby wskazać osi, który jest zależna od tłumaczenia.  
   
-     Można również określić przy użyciu punktu obrotu **Translacja punktu centralnego** właściwość **właściwości** okna.  
+    Można również określić przy użyciu punktu obrotu **Translacja punktu centralnego** właściwość **właściwości** okna.  
   
-    > [!TIP]
-    >  Aby wyświetlić efekt nowego punktu obrotu, obracanie obiektu. Aby obrócić go, należy użyć **Obróć** narzędzia lub zmodyfikować **obrotu** właściwości.  
+   > [!TIP]
+   >  Aby wyświetlić efekt nowego punktu obrotu, obracanie obiektu. Aby obrócić go, należy użyć **Obróć** narzędzia lub zmodyfikować **obrotu** właściwości.  
   
- Oto modelu, który ma punkt obrotu zmodyfikowane:  
+   Oto modelu, który ma punkt obrotu zmodyfikowane:  
   
- ![Model DOM, zawierający punkt obrotu zmodyfikowane](../designers/media/digit-modified-model.png "cyfrę modyfikacji — Model")  
+   ![Model DOM, zawierający punkt obrotu zmodyfikowane](../designers/media/digit-modified-model.png "cyfrę modyfikacji — Model")  
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: Tworzenie podstawowego modelu 3-D](../designers/how-to-create-a-basic-3-d-model.md)   

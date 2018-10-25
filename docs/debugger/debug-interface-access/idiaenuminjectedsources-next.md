@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumInjectedSources::Next | Dokumentacja firmy Microsoft
+title: Idiaenuminjectedsources::Next — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f199ffcc61f11d14c010e2eea3626e0016272826
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 42b0e76bea62e27d0afe12b8c16eb4e6775edd61
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845090"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
-Pobiera określoną liczbę źródeł wprowadzony w kolejności wyliczenia.  
+Pobiera określoną liczbę źródeł wprowadzonego w kolejności wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,16 +36,16 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parametry  
  celt  
- [in] Liczba źródeł wprowadzony w moduł wyliczający, które mają zostać pobrane.  
+ [in] Liczba źródeł wprowadzonego w modułu wyliczającego do pobrania.  
   
  rgelt  
- [out] Zwraca tablicę [idiainjectedsource —](../../debugger/debug-interface-access/idiainjectedsource.md) obiektów, które reprezentuje żądany wprowadzony źródeł.  
+ [out] Zwraca tablicę [idiainjectedsource —](../../debugger/debug-interface-access/idiainjectedsource.md) obiektów, które reprezentuje żądany wprowadzonego źródeł.  
   
  pceltFetched  
- [out] Zwraca liczbę źródeł wprowadzony w pobranych modułu wyliczającego.  
+ [out] Zwraca liczbę źródeł wprowadzonego w pobrano modułu wyliczającego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli istnieją już wprowadzony źródła. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` przypadku nie ma więcej wprowadzonego źródeł. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0701706deee68cf2dde522d48f9aa62b9a00142
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a92e0fa81bdfc7c33e790c5022c2fbe341d632be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847713"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 Określa typy thunk.  
@@ -42,13 +42,13 @@ typedef enum THUNK_ORDINAL {
   
 ## <a name="elements"></a>Elementy  
  THUNK_ORDINAL_NOTYPE  
- Konwersja standardowa.  
+ Standardowe wywołanie.  
   
  THUNK_ORDINAL_ADJUSTOR  
  A `this` adjustor thunk.  
   
  THUNK_ORDINAL_VCALL  
- Konwersja wirtualnego wywołania.  
+ Thunk wywołanie wirtualne.  
   
  THUNK_ORDINAL_PCODE  
  Thunk P-code.  
@@ -57,13 +57,13 @@ typedef enum THUNK_ORDINAL {
  Thunk obciążenia opóźnienia.  
   
  THUNK_ORDINAL_TRAMP_INCREMENTAL  
- Thunk przyrostowe trampoline (trampoline thunk służy do Odbijanie wywołania z miejsca w pamięci na inny).  
+ Thunk trampoline przyrostowej (trampoline sekcją thunk służy do Odbijanie wywołania z miejsca w pamięci z jednego do drugiego).  
   
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
  Thunk trampoline punktu gałęzi.  
   
 ## <a name="remarks"></a>Uwagi  
- To wyliczenie wartości są zwracane po wywołaniu [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) metody.  
+ Wartości w tym wyliczeniu są zwracane z wywołania [idiasymbol::get_thunkordinal —](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: cvconst.h  

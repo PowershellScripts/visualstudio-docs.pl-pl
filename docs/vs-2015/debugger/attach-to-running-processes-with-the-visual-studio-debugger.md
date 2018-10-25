@@ -34,12 +34,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26e3efd74d020678d6c908ccf77eb6f35349b9b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2c5c15e9ec78efa2fa3c12c0c70d2573bd50697
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825708"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Dołączanie do uruchomionego procesu za pomocą debugera programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,31 +83,31 @@ Ta funkcja umożliwia debugowanie aplikacji, które są uruchomione na komputerz
 
 1. W programie Visual Studio, wybierz **debugowanie / dołączanie do procesu** (lub naciśnij **CTRL + ALT + P**).
 
-2.  W **dołączyć do procesu** okno dialogowe, wybierz odpowiedni typ połączenia z **transportu** listy. **Domyślne** jest poprawne ustawienia dla większości przypadków.
+2. W **dołączyć do procesu** okno dialogowe, wybierz odpowiedni typ połączenia z **transportu** listy. **Domyślne** jest poprawne ustawienia dla większości przypadków.
 
-    **Transportu** ustawienie utrzymuje się między sesjami debugowania. 
+   **Transportu** ustawienie utrzymuje się między sesjami debugowania. 
   
-3.  Użyj **kwalifikator** pola listy, aby wybrać nazwę komputera zdalnego za pomocą jednej z następujących metod:  
+3. Użyj **kwalifikator** pola listy, aby wybrać nazwę komputera zdalnego za pomocą jednej z następujących metod:  
   
-    1.  Wpisz nazwę w **kwalifikator** pola listy.
+   1. Wpisz nazwę w **kwalifikator** pola listy.
     
-        >**Uwaga** Jeśli w kolejnych krokach, nie możesz się połączyć przy użyciu nazwy komputera zdalnego, użyj adresu IP. (Numer portu może pojawić się automatycznie po wybraniu procesu. Możesz również wprowadzić go ręcznie. Na poniższej ilustracji 4020 jest domyślnym portem dla zdalnego debugera).  
+      >**Uwaga** Jeśli w kolejnych krokach, nie możesz się połączyć przy użyciu nazwy komputera zdalnego, użyj adresu IP. (Numer portu może pojawić się automatycznie po wybraniu procesu. Możesz również wprowadzić go ręcznie. Na poniższej ilustracji 4020 jest domyślnym portem dla zdalnego debugera).  
   
-    2.  Kliknij strzałkę listy rozwijanej, dołączone do **kwalifikator** pola listy, a następnie wybierz nazwę komputera, z listy rozwijanej.  
+   2. Kliknij strzałkę listy rozwijanej, dołączone do **kwalifikator** pola listy, a następnie wybierz nazwę komputera, z listy rozwijanej.  
   
-    3.  Kliknij przycisk **znaleźć** znajdujący się obok**kwalifikator** liście, aby otworzyć **wybierz połączenie ze zdalnym debugerem** okno dialogowe. **Wybierz połączenie ze zdalnym debugerem** okno dialogowe wyświetla listę wszystkich urządzeń, które znajdują się w lokalnej podsieci i dowolnego urządzenia, który jest podłączony bezpośrednio do komputera za pomocą kabla Ethernet. Kliknij komputer lub urządzenie, a następnie kliknij **wybierz**. 
+   3. Kliknij przycisk **znaleźć** znajdujący się obok**kwalifikator** liście, aby otworzyć **wybierz połączenie ze zdalnym debugerem** okno dialogowe. **Wybierz połączenie ze zdalnym debugerem** okno dialogowe wyświetla listę wszystkich urządzeń, które znajdują się w lokalnej podsieci i dowolnego urządzenia, który jest podłączony bezpośrednio do komputera za pomocą kabla Ethernet. Kliknij komputer lub urządzenie, a następnie kliknij **wybierz**. 
   
-     **Kwalifikator** ustawienie utrzymuje się między sesjami debugowania tylko wtedy, gdy nastąpi udane połączenie debugowania z tym kwalifikatorem.
+      **Kwalifikator** ustawienie utrzymuje się między sesjami debugowania tylko wtedy, gdy nastąpi udane połączenie debugowania z tym kwalifikatorem.
      
-4.  Kliknij przycisk **Odśwież**.
+4. Kliknij przycisk **Odśwież**.
 
-      **Dostępne procesy** zostanie wyświetlona lista automatycznie po otwarciu **procesy** okno dialogowe. Procesy można uruchomić i zatrzymać w tle, gdy jest otwarte okno dialogowe. Jednakże zawartość nie jest zawsze aktualna. Można odświeżyć listę w dowolnym momencie, aby wyświetlić bieżącą listę procesów, klikając **Odśwież**. 
+     **Dostępne procesy** zostanie wyświetlona lista automatycznie po otwarciu **procesy** okno dialogowe. Procesy można uruchomić i zatrzymać w tle, gdy jest otwarte okno dialogowe. Jednakże zawartość nie jest zawsze aktualna. Można odświeżyć listę w dowolnym momencie, aby wyświetlić bieżącą listę procesów, klikając **Odśwież**. 
      
-4.  W **dołączyć do procesu** okno dialogowe Znajdź program, który chcesz połączyć się z **dostępne procesy** listy.  
+5. W **dołączyć do procesu** okno dialogowe Znajdź program, który chcesz połączyć się z **dostępne procesy** listy.  
   
-     Jeśli proces działa przy użyciu konta innego użytkownika, wybierz opcję **Pokaż procesy wszystkich użytkowników** pole wyboru.
+    Jeśli proces działa przy użyciu konta innego użytkownika, wybierz opcję **Pokaż procesy wszystkich użytkowników** pole wyboru.
      
-5.  Kliknij przycisk **dołączyć**.  
+6. Kliknij przycisk **dołączyć**.  
 
 ## <a name="additional-info"></a>Dodatkowe informacje
 
@@ -164,21 +164,21 @@ W niektórych scenariuszach debugowania lokalnego można debugować w programie 
   
  **Aby uzyskać szczegółowe informacje na temat przyczyny niepowodzenia dołączenia typu kodu**  
   
-1.  Odłączyć od procesu. Na **debugowania** menu, kliknij przycisk **Odłącz wszystkie**.  
+1. Odłączyć od procesu. Na **debugowania** menu, kliknij przycisk **Odłącz wszystkie**.  
   
-2.  Ponownie Dołącz do procesu, wybierając tylko pojedynczy typ kodu.  
+2. Ponownie Dołącz do procesu, wybierając tylko pojedynczy typ kodu.  
   
-    1.  W **dołączyć do procesu** okna dialogowego Wybierz ten proces w **dostępne procesy** listy.  
+   1. W **dołączyć do procesu** okna dialogowego Wybierz ten proces w **dostępne procesy** listy.  
   
-    2.  Kliknij przycisk **wybierz**.  
+   2. Kliknij przycisk **wybierz**.  
   
-    3.  W **Wybieranie typu kodu** okno dialogowe, wybierz **debugowania tych typów kodu** i typy kodu, których nie można dołączyć. Wyczyść inny kod.  
+   3. W **Wybieranie typu kodu** okno dialogowe, wybierz **debugowania tych typów kodu** i typy kodu, których nie można dołączyć. Wyczyść inny kod.  
   
-    4.  Kliknij przycisk **OK**. **Wybieranie typu kodu** zamyka okno dialogowe.  
+   4. Kliknij przycisk **OK**. **Wybieranie typu kodu** zamyka okno dialogowe.  
   
-    5.  W **dołączyć do procesu** okno dialogowe, kliknij przycisk **Dołącz**.  
+   5. W **dołączyć do procesu** okno dialogowe, kliknij przycisk **Dołącz**.  
   
-     Tym razem dołączanie nie powiedzie się całkowicie i otrzymasz komunikat o błędzie.  
+      Tym razem dołączanie nie powiedzie się całkowicie i otrzymasz komunikat o błędzie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie wielu procesów](../debugger/debug-multiple-processes.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findLinesByVA | Dokumentacja firmy Microsoft
+title: Idiasession::findlinesbyva — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d88a93e5bd22befb661505bb09cdce6f5d3b544
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c199411504db6d4465b6e02f4ffaad988c48b46c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462785"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870656"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
-Pobiera informacje o numer wiersza dla wierszy znajdujących się w zakresie określonym wirtualnego adresu (VA).  
+Pobiera informacje o numerze wiersza dla wierszy znajdujących się w zakresie określony adres wirtualny (oceny luk w zabezpieczeniach).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,10 +42,10 @@ HRESULT findLinesByVA (
  [in] Określa liczbę bajtów zakres adresów, aby pokrywał się z tym zapytaniem.  
   
  `ppResult`  
- [out] Zwraca [idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md) obiekt, który zawiera listę wszystkich linii numery ochrona ta określony zakres adresów.  
+ [out] Zwraca [idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md) obiektu, który zawiera listę wszystkich linii numery określające określony zakres adresów.  
   
 ## <a name="example"></a>Przykład  
- Ten przykład przedstawia funkcję, która uzyskuje wszystkie numery wierszy zawartych w funkcji za pomocą funkcji wirtualnego adresu i długości.  
+ W tym przykładzie pokazano funkcję, która uzyskuje wszystkie numery wierszy zawartych w funkcji za pomocą funkcji wirtualny adres i długość.  
   
 ```C++  
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)  

@@ -1,5 +1,5 @@
 ---
-title: Obsługa wstawki kodu za pośrednictwem usługi języka starszych | Dokumentacja firmy Microsoft
+title: Obsługa fragmentów kodu w starszej wersji usługi językowej | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,53 +15,53 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb62481b9ba2c42ed067275480ba137b151a483b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7ad314e5a160ae280b33586fb7dfe1b42ec470f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858111"
 ---
-# <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Obsługa wstawki kodu za pośrednictwem usługi języka starsza wersja
-Fragment kodu jest fragment kodu, który znajduje się w pliku źródłowym. Fragment kodu, sam jest oparte na języku XML szablonu z zestawu pól. Te pola są wyróżnione po fragment kodu zostanie wstawiony i może mieć różne wartości w zależności od kontekstu, w którym wstawieniu fragmentu. Natychmiast po wstawieniu fragmentu, usługa języka można sformatować fragment kodu.  
+# <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Obsługa fragmentów kodu w starszej wersji usługi językowej
+Fragment kodu jest fragmentem kodu, który jest wstawiany do pliku źródłowego. Fragmentem jest oparty na składni XML szablonu przy użyciu zestawu pól. Te pola są wyróżnione po tym fragmencie kodu jest wstawiany i mogą mieć różne wartości w zależności od kontekstu, w którym wstawieniu fragmentu kodu. Po wstawieniu fragmentu kodu, usługa językowa można sformatować fragment kodu.  
   
- Fragment kodu zostanie wstawiony w trybie edycji specjalny, który umożliwia pola fragment kodu, który ma zostać przesłane za pomocą klawisza TAB. Pola może obsługiwać menu rozwijanych IntelliSense stylu. Użytkownik zatwierdza fragment kodu do pliku źródłowego, wpisując ENTER lub klawisz ESC. Aby dowiedzieć się więcej o fragmentów, zobacz [wstawki kodu](../../ide/code-snippets.md).  
+ Fragment kodu jest wstawiana w trybie edycji specjalne, który umożliwia pola fragment kodu, aby można go znaleźć za pomocą klawisza TAB. Pola może obsługiwać menu rozwijane w stylu funkcji IntelliSense. Użytkownik zobowiązuje fragment kodu do pliku źródłowego, wpisując ENTER lub klawisz ESC. Aby dowiedzieć się więcej na temat fragmentów kodu, zobacz [fragmenty kodu](../../ide/code-snippets.md).  
   
- Usługi w starszej wersji języka są zaimplementowane jako część pakiet VSPackage, ale jest nowsza sposób implementowania funkcji usługi języka Aby korzystać z rozszerzeń MEF. Aby dowiedzieć się więcej, zobacz [wskazówki: implementacja wstawki kodu](../../extensibility/walkthrough-implementing-code-snippets.md).  
+ Usługi starszego języka są implementowane jako część pakietu VSPackage, ale nowszych sposobem realizowania funkcji Usługa języka jest użycie rozszerzenia MEF. Aby dowiedzieć się więcej, zobacz [wskazówki: Implementowanie fragmentów kodu](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
->  Zaleca się zacząć Edytor nowy interfejs API tak szybko, jak to możliwe. Spowoduje to poprawić wydajność usługi języka i pozwala korzystać z nowych funkcji edytora.  
+>  Zalecamy zacząć tak szybko, jak to możliwe za pomocą edytora nowego interfejsu API. Spowoduje to poprawić wydajność usługi języka i pozwalają korzystać z nowych funkcji edytora.  
   
-## <a name="managed-package-framework-support-for-code-snippets"></a>Obsługa Framework pakietu dla wstawki kodu zarządzanego  
- Struktura pakietu zarządzanych (MPF) obsługuje większość funkcji fragment, na podstawie odczytu szablon do wstawiania wstawki kodu i specjalną włączenie trybu edycji. Obsługa odbywa się za pośrednictwem <xref:Microsoft.VisualStudio.Package.ExpansionProvider> klasy.  
+## <a name="managed-package-framework-support-for-code-snippets"></a>Obsługa fragmentów kodu w ramach pakietu zarządzane  
+ Środowiska pakietu zarządzanego (MPF) obsługuje większość funkcji fragment kodu, na podstawie odczytu szablon do wstawiania fragmentu kodu i włączeniu specjalne trybu edycji. Obsługa odbywa się za pośrednictwem <xref:Microsoft.VisualStudio.Package.ExpansionProvider> klasy.  
   
- Gdy <xref:Microsoft.VisualStudio.Package.Source> tworzenia wystąpienia klasy <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> metody w <xref:Microsoft.VisualStudio.Package.LanguageService> klasy jest wywoływana w celu uzyskania <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiektu (należy pamiętać, że podstawowym <xref:Microsoft.VisualStudio.Package.LanguageService> klasy zawsze zwraca nową <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiekt dla każdego <xref:Microsoft.VisualStudio.Package.Source> obiekt).  
+ Gdy <xref:Microsoft.VisualStudio.Package.Source> tworzenia wystąpienia klasy <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.LanguageService> klasy jest wywoływana w celu uzyskania <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiektu (należy pamiętać, że base <xref:Microsoft.VisualStudio.Package.LanguageService> klasy zawsze zwraca nowy <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiekt dla każdego <xref:Microsoft.VisualStudio.Package.Source> obiekt).  
   
- MPF nie obsługuje rozszerzania funkcji. Funkcja rozszerzenia jest nazwane funkcję, która jest osadzony w szablonie fragment i zwraca jedną lub więcej wartości do umieszczenia w polu. Wartości są zwracane przez język się za pośrednictwem usługi <xref:Microsoft.VisualStudio.Package.ExpansionFunction> obiektu. <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Obiektu musi być implementowana przez usługę język do obsługi funkcji rozszerzenia.  
+ MPF nie obsługuje rozszerzania funkcji. Funkcja rozszerzenia jest o nazwie funkcji, zostanie osadzony w szablon fragmentu kodu, która zwraca jedną lub więcej wartości do umieszczenia w polu. Wartości są zwracane przez język usługi za pośrednictwem <xref:Microsoft.VisualStudio.Package.ExpansionFunction> obiektu. <xref:Microsoft.VisualStudio.Package.ExpansionFunction> Obiekt musi zostać wdrożone przez usługę języka do obsługi funkcji rozszerzenia.  
   
-## <a name="providing-support-for-code-snippets"></a>Zapewnianie obsługi w przypadku wstawki kodu  
- Aby włączyć obsługę wstawki kodu, należy podać albo zainstalować fragmenty kodu i musisz podać środki do wstawienia tych fragmentów kodu użytkownika. Istnieją trzy kroki umożliwiające włączenie obsługi fragmentów kodu:  
+## <a name="providing-support-for-code-snippets"></a>Zapewnianie obsługi w przypadku fragmentów kodu  
+ Aby włączyć obsługę fragmenty kodu, należy podać albo zainstalować program fragmenty kodu i podać oznacza, że dla użytkownika wstawić tych fragmentów kodu. Istnieją trzy kroki, aby włączyć obsługę fragmenty kodu:  
   
-1.  Instalowanie plików fragment kodu.  
+1.  Instalowanie plików fragmentu kodu.  
   
-2.  Włączanie wstawki kodu usługi języka.  
+2.  Włączanie fragmentów kodu usługi języka.  
   
 3.  Wywoływanie <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiektu.  
   
-### <a name="installing-the-snippet-files"></a>Instalowanie plików fragment kodu  
- Wszystkie fragmenty kodu języka są przechowywane jako szablon w plikach XML zwykle jeden fragment szablon dla każdego pliku. Aby uzyskać więcej informacji o schemat XML używane dla szablonów fragmentów kodu, zobacz [fragmenty kodu — odwołanie do schematu](../../ide/code-snippets-schema-reference.md). Każdy szablon fragment jest identyfikowany przy użyciu identyfikatora języka. Język ten identyfikator jest określona w rejestrze i są umieszczane w `Language` atrybutu \<kod > tag w szablonie.  
+### <a name="installing-the-snippet-files"></a>Instalowanie plików fragmentu kodu  
+ Wszystkie fragmenty kodu w języku są przechowywane jako szablonów w plikach XML zwykle jeden szablon fragmentu kodu na plik. Aby uzyskać szczegółowe informacje dotyczące schematu XML, używany do szablonów fragmentów kodu, zobacz [dokumentacja schematu fragmentów kodu](../../ide/code-snippets-schema-reference.md). Każdy szablon fragmentu kodu jest identyfikowany za pomocą identyfikatora języka. Ten język identyfikator jest określone w rejestrze i są umieszczane w `Language` atrybutu \<kodu > tagu w szablonie.  
   
- Zazwyczaj są dwóch lokalizacjach, w którym są przechowywane pliki szablonów fragment: 1) Jeśli został zainstalowany język i 2) w folderze użytkownika. Lokalizacje te są dodawane do rejestru tak że Visual Studio **Menedżerze fragmentów kodu** można znaleźć fragmenty kodu. Folder użytkownika jest przechowywania wstawki utworzone przez użytkownika.  
+ Zazwyczaj są dwie lokalizacje, w którym są przechowywane pliki szablon fragmentu kodu: 1) Jeśli został zainstalowany język i (2) w folderze użytkownika. Te lokalizacje są dodawane w rejestrze tak, program Visual Studio **Menedżera wstawek kodu** można znaleźć fragmenty kodu. Folder użytkownika jest przechowywania fragmenty utworzone przez użytkownika.  
   
- Układ typowy folder plików szablonów zainstalowanych fragment wygląda następująco: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
+ Układ typowy folder plików szablonów zainstalowanych fragment kodu wygląda następująco: *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
   
- *[InstallRoot]*  jest folder języka jest zainstalowany w.  
+ *[Element InstallRoot]*  jest folderem, język jest zainstalowany w.  
   
  *[TestLanguage]*  to nazwa języka jako nazwa folderu.  
   
- *[LCID]*  to identyfikator ustawień regionalnych. Jest to sposób zlokalizowane wersje programu fragmentów są przechowywane. Na przykład identyfikator ustawień regionalnych dla języka angielskiego jest 1033, więc *[LCID]* zastępuje 1033.  
+ *[LCID]*  to identyfikator ustawień regionalnych. Jest to jak zlokalizowane wersje swoje fragmenty są przechowywane. Na przykład identyfikator ustawień regionalnych dla języka angielskiego to 1033, więc *[LCID]* zastępuje 1033.  
   
- Należy podać jedną dodatkowego pliku i jest plikiem indeksu pliku, zwykle nazywane SnippetsIndex.xml lub ExpansionsIndex.xml (możesz użyć dowolnego prawidłowy pliku z rozszerzeniem .xml). Ten plik znajduje się zwykle w *[InstallRoot]*\\ *[TestLanguage]* folderu i umożliwia określenie dokładnej lokalizacji folderu fragmentów, jak również identyfikator języka i identyfikator GUID języka Usługa, która używa fragmenty kodu. Dokładnej ścieżki pliku indeksu są umieszczane w rejestrze, zgodnie z opisem w dalszej części "Instalowanie wpisy rejestru". Oto przykład pliku SnippetsIndex.xml:  
+ Należy podać jeden dodatkowy plik i który jest plikiem indeksu pliku, zwykle nazywane SnippetsIndex.xml lub ExpansionsIndex.xml (możesz użyć dowolnego prawidłowe pliku z rozszerzeniem .xml). Ten plik zwykle znajduje się w *[InstallRoot]*\\ *[TestLanguage]* folder i umożliwia określenie dokładnej lokalizacji folderu fragmentów kodu, jak również identyfikator języka i identyfikator GUID języka Usługa, która używa fragmenty kodu. Dokładnej ścieżki pliku indeksu są umieszczane w rejestrze, zgodnie z opisem w dalszej części "Instalowanie wpisy rejestru". Poniżej przedstawiono przykładowy plik SnippetsIndex.xml:  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -78,26 +78,26 @@ Fragment kodu jest fragment kodu, który znajduje się w pliku źródłowym. Fra
 </SnippetCollection>  
 ```  
   
- \<Języka > tag Określa identyfikator języka ( `Lang` atrybut) i identyfikator GUID usługi języka.  
+ \<Języka > tag Określa identyfikator języka ( `Lang` atrybutu) i usługi językowej identyfikatora GUID.  
   
- W tym przykładzie przyjęto założenie, że zainstalowano usługi języka w folderze instalacji programu Visual Studio. Identyfikator LCID % zostanie zastąpiony identyfikator użytkownika bieżącego ustawienia regionalne. Wiele \<SnippetDir > tagi do dodania, po jednej dla każdego innego katalogu i ustawień regionalnych. Ponadto folder fragment może zawierać podfolderów, z których każdy jest określone w pliku indeksu o \<SnippetSubDir > tag, który jest osadzony w \<SnippetDir > tagu.  
+ W tym przykładzie przyjęto założenie, że zainstalowano usługi języka w folderze instalacyjnym programu Visual Studio. Identyfikator LCID % jest zastępowana identyfikatorem ustawień regionalnych z bieżącego użytkownika Wiele \<SnippetDir > tagi mogą być dodawane, jeden dla każdego innego katalogu i ustawień regionalnych. Ponadto folder fragment może zawierać podfoldery, z których każdy jest identyfikowana w pliku indeksu z \<SnippetSubDir > tag, który jest osadzony w \<SnippetDir > tag.  
   
- Użytkownicy mogą także tworzyć własne wstawki dla danego języka. Te są zwykle przechowywane w folderze ustawień użytkownika, na przykład *[TestDocs]* \Code wstawki\\ *[TestLanguage]* \Test wstawki kodu, gdy *[TestDocs]* jest lokalizacja folderu Ustawienia użytkownika dla programu Visual Studio.  
+ Użytkownicy mogą również tworzyć własne fragmentów dla danego języka. Te są zwykle przechowywane w folderze Ustawienia użytkownika, na przykład *[TestDocs]* \Code fragmenty\\ *[TestLanguage]* \Test fragmenty kodu, gdzie *[TestDocs]* to lokalizacja folderu Ustawienia użytkownika dla programu Visual Studio.  
   
- Następujące elementy podstawienia można umieścić w ścieżce przechowywane w \<DirPath > znacznika w pliku indeksu.  
+ Następujące elementy podstawienia można umieścić w ścieżce, przechowywane w \<DirPath > znacznika w pliku indeksu.  
   
 |Element|Opis|  
 |-------------|-----------------|  
 |IDENTYFIKATOR LCID %|Identyfikator ustawień regionalnych.|  
-|% InstallRoot %|Główny folder instalacji programu Visual Studio, na przykład C:\Program Files\Microsoft Visual Studio 8.|  
-|% ProjDir %|Folder zawierający bieżącego projektu.|  
-|% ProjItem %|Folder zawierający element bieżącego projektu.|  
-|% TestDocs %|Folderu w folderze ustawień użytkownika, na przykład C:\Documents and Settings\\ *[username]* \My Studio\8.|  
+|Element InstallRoot %|Główny folder instalacji programu Visual Studio, na przykład C:\Program Files\Microsoft Visual Studio 8.|  
+|ProjDir %|Folder zawierający bieżącego projektu.|  
+|ProjItem %|Folder zawierający bieżącego elementu projektu.|  
+|TestDocs %|Folderu w folderze Ustawienia użytkownika, na przykład C:\Documents and Settings\\ *[username]* \My Studio\8.|  
   
-### <a name="enabling-code-snippets-for-your-language-service"></a>Włączanie usługi języka wstawki kodu  
- Wstawki kodu można włączyć usługi języka, dodając <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> atrybutu VSPackage (zobacz [zarejestrowanie starsza wersja usługi języka](../../extensibility/internals/registering-a-legacy-language-service1.md) szczegółowe informacje). <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> i <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parametry są opcjonalne, ale powinna zawierać `SearchPaths` nazwany parametr, aby poinformować **Menedżerze fragmentów kodu** lokalizacji z fragmentów.  
+### <a name="enabling-code-snippets-for-your-language-service"></a>Włączanie fragmentów kodu dla usługi w języka  
+ Fragmenty kodu można włączyć usługi języka, dodając <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> atrybutu do Twojego pakietu VSPackage (zobacz [rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md) Aby uzyskać szczegółowe informacje). <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> i <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> parametry są opcjonalne, ale powinien zawierać `SearchPaths` o nazwie parametru, aby poinformować **Menedżera wstawek kodu** lokalizacji z fragmentów kodu.  
   
- Poniżej przedstawiono przykład sposobu użycia tego atrybutu:  
+ Oto przykład sposobu użycia tego atrybutu:  
   
 ```  
 [ProvideLanguageCodeExpansion(  
@@ -110,17 +110,17 @@ Fragment kodu jest fragment kodu, który znajduje się w pliku źródłowym. Fra
 ```  
   
 ### <a name="calling-the-expansion-provider"></a>Wywoływania dostawcy rozszerzeń  
- Usługa języka steruje wstawiania żadnych fragment kodu, a także sposób, który jest wywoływany wstawiania.  
+ Usługa językowa steruje wstawiania wszystkie fragmenty kodu, a także sposób wstawiania jest wywoływana.  
   
-## <a name="calling-the-expansion-provider-for-code-snippets"></a>Wywoływania dostawcy rozszerzeń dla wstawki kodu  
- Istnieją dwa sposoby do wywoływania dostawcy rozszerzeń: za pomocą polecenia menu lub przy użyciu skrótu z listy uzupełniania.  
+## <a name="calling-the-expansion-provider-for-code-snippets"></a>W przypadku fragmentów kodu podczas wywoływania dostawcy rozszerzeń  
+ Istnieją dwa sposoby, aby wywołać dostawcę rozszerzeń: za pomocą polecenia menu lub za pomocą skrótu z listy uzupełniania.  
   
-### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Wstawianie wstawek kodu za pomocą polecenia Menu  
- Polecenia menu do wyświetlenia w przeglądarce fragment, możesz dodać polecenie menu, a następnie wywołać <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> metoda <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interfejsu w odpowiedzi na polecenie menu.  
+### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Wstawianie fragmentu kodu przy użyciu polecenia Menu  
+ Aby polecenie menu do wyświetlenia w przeglądarce fragment kodu, możesz dodać polecenie menu a następnie wywołać <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interfejsu w odpowiedzi na polecenie menu.  
   
-1.  Dodaj polecenie i przycisk do pliku vsct. Można znaleźć instrukcje dotyczące wykonywania, dlatego w [Tworzenie rozszerzenia za pomocą polecenia Menu](../../extensibility/creating-an-extension-with-a-menu-command.md).  
+1.  Dodaj przycisk i polecenia do pliku vsct. Można znaleźć instrukcje dotyczące wykonywania, dlatego w [Tworzenie rozszerzenia za pomocą polecenia Menu](../../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Klasa wyprowadzona z <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy i zastąpić <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> metodę, aby wskazać obsługę nowego polecenia menu. W tym przykładzie zawsze włączone polecenie menu.  
+2.  Wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy, a także Przesłoń <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> metodę w celu wskazania obsługę nowego polecenia menu. W tym przykładzie zawsze uruchamia polecenia menu.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -156,7 +156,7 @@ Fragment kodu jest fragment kodu, który znajduje się w pliku źródłowym. Fra
     }  
     ```  
   
-3.  Zastąpienie <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> metody w <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy w celu uzyskania <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiekt i wywołanie <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> metody dla tego obiektu.  
+3.  Zastąp <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.ViewFilter> klasy w celu uzyskania <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiektu, a następnie wywołać <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> metody dla tego obiektu.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -206,7 +206,7 @@ Fragment kodu jest fragment kodu, który znajduje się w pliku źródłowym. Fra
   
     ```  
   
-     Następujące metody w <xref:Microsoft.VisualStudio.Package.ExpansionProvider> klasy są wywoływane przez Visual Studio w podanej kolejności podczas wstawiania wstawki kodu:  
+     Następujące metody w klasie <xref:Microsoft.VisualStudio.Package.ExpansionProvider> klasy są wywoływane przez program Visual Studio w podanej kolejności podczas wstawiania fragmentu kodu:  
   
 4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
   
@@ -218,16 +218,16 @@ Fragment kodu jest fragment kodu, który znajduje się w pliku źródłowym. Fra
   
 8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
-     Po <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> metoda jest wywoływana, wstawiono fragment kodu i <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiekt jest w trybie edycji specjalne używane do modyfikowania fragment kodu, który właśnie został wstawiony.  
+     Po <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> metoda jest wywoływana, fragment kodu został wstawiony i <xref:Microsoft.VisualStudio.Package.ExpansionProvider> obiekt jest w trybie edycji specjalne, używane do modyfikowania fragment kodu, który właśnie został wstawiony.  
   
-### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>Wstawianie wstawek kodu za pomocą skrótu  
- Implementacja skrót z listy uzupełniania jest znacznie bardziej skomplikowane niż wykonania polecenia menu. Najpierw należy dodać fragment skróty do listy uzupełniania IntelliSense programu word. Następnie należy Wykryj, kiedy w wyniku zakończenia wstawiono fragment krótką nazwę. Na koniec należy uzyskać fragment tytuł i ścieżki przy użyciu nazwy skrótów i przekazać te informacje do <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> metoda <xref:Microsoft.VisualStudio.Package.ExpansionProvider> metody.  
+### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>Wstawianie fragmentu kodu przy użyciu skrótu  
+ Implementacja skrótu z listy uzupełniania jest znacznie bardziej skomplikowane niż wdrażanie polecenia menu. Skrótach do fragmentów kodu należy najpierw dodać do listy uzupełniania IntelliSense programu word. Następnie musi wykryć, kiedy nazwa skrótu fragmentu kodu został wstawiony w wyniku zakończenia. Na koniec należy uzyskać tytuł fragmentu kodu i ścieżki przy użyciu nazwy skrótu i przekazać te informacje do <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> metody <xref:Microsoft.VisualStudio.Package.ExpansionProvider> metody.  
   
- Aby dodać fragment skróty do listy uzupełniania word, dodaj je do <xref:Microsoft.VisualStudio.Package.Declarations> obiektu w Twojej <xref:Microsoft.VisualStudio.Package.AuthoringScope> klasy. Należy się upewnić się, że można zidentyfikować skrótów jako nazwa fragment kodu. Na przykład zobacz [wskazówki: pobieranie listy z zainstalowanych fragmentów kodu (starsza wersja implementacji)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+ Aby dodać skrótach do fragmentów kodu do listy uzupełniania słów, należy dodać je do <xref:Microsoft.VisualStudio.Package.Declarations> obiektu w swojej <xref:Microsoft.VisualStudio.Package.AuthoringScope> klasy. Musi upewnij się, że można zidentyfikować skrót jako nazwy fragmentu kodu. Aby uzyskać przykład, zobacz [wskazówki: pobieranie listy z zainstalowane fragmenty kodu (starsza wersja implementacji)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
- Wykrywa wstawiania skrótów fragmentu kodu w <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> metody <xref:Microsoft.VisualStudio.Package.Declarations> klasy. Ponieważ nazwy fragment został już wstawiony do pliku źródłowego, należy usunąć po wstawieniu rozszerzenia. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> Metoda przyjmuje zakresu, który opisuje punkt wstawiania dla fragmentu; Jeśli zakres zawiera nazwę fragment całego pliku źródłowego, ta nazwa jest zamieniana fragment kodu.  
+ Można wykryć wstawiania skrótów fragmentu kodu w <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> metody <xref:Microsoft.VisualStudio.Package.Declarations> klasy. Ponieważ nazwy fragmentu kodu został już wstawiony do pliku źródłowego, należy usunąć, gdy rozszerzenie zostanie wstawiona. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> Metoda przyjmuje zakres, który opisuje punkt wstawiania fragmentu; Jeśli zakres zawiera nazwy całego fragmentu kodu w pliku źródłowym, że nazwa zostanie zastąpiona przez fragment.  
   
- W tym miejscu jest wersja <xref:Microsoft.VisualStudio.Package.Declarations> klasa, która obsługuje wstawiania wstawek podane krótką nazwę. Inne metody w <xref:Microsoft.VisualStudio.Package.Declarations> klasy zostały pominięte dla uzyskania przejrzystości. Należy pamiętać, że trwa konstruktorze tej klasy <xref:Microsoft.VisualStudio.Package.LanguageService> obiektu. To może zostać przekazane za z wersji systemu <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiektu (na przykład implementacji <xref:Microsoft.VisualStudio.Package.AuthoringScope> klasy może potrwać <xref:Microsoft.VisualStudio.Package.LanguageService> obiektu w swoich konstruktorach i przekazać do obiektu z `TestDeclarations` konstruktora klasy).  
+ W tym miejscu jest wersją <xref:Microsoft.VisualStudio.Package.Declarations> klasa, która obsługuje wstawiania fragmentu kodu, otrzymuje nazwę skrótów. Inne metody w <xref:Microsoft.VisualStudio.Package.Declarations> dla jasności pominięto klasy. Należy zauważyć, że Konstruktor tej klasy przyjmuje <xref:Microsoft.VisualStudio.Package.LanguageService> obiektu. To mogą być przekazane z wersją programu <xref:Microsoft.VisualStudio.Package.AuthoringScope> obiektu (na przykład implementacji <xref:Microsoft.VisualStudio.Package.AuthoringScope> klasy może potrwać <xref:Microsoft.VisualStudio.Package.LanguageService> w jego konstruktorze i przekazać ten obiekt do Twojej `TestDeclarations` konstruktora klasy).  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -328,25 +328,25 @@ namespace TestLanguagePackage
 }  
 ```  
   
- Gdy usługa języka pobiera nazwę skrótów, wywołuje <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> metodę, aby uzyskać tytuł wstawki nazwę pliku i kod. Usługa języka następnie wywołuje <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> metoda <xref:Microsoft.VisualStudio.Package.ExpansionProvider> klasy, aby wstawić fragment kodu. Następujące metody są wywoływane przez program Visual Studio w podanej kolejności w <xref:Microsoft.VisualStudio.Package.ExpansionProvider> klasy podczas wstawiania wstawki kodu:  
+ Gdy usługa językowa pobiera nazwę skrótów, wywołuje <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> metodę, aby uzyskać nazwę pliku i kod tytuł fragmentu kodu. Następnie wywołuje usługa językowa <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.ExpansionProvider> klasy, aby wstawić fragment kodu. Następujące metody są wywoływane przez program Visual Studio w podanej kolejności w <xref:Microsoft.VisualStudio.Package.ExpansionProvider> klasy podczas wstawiania fragmentu kodu:  
   
-1.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-2.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+2. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-3.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+3. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
- Aby uzyskać więcej informacji na temat pobierania listy fragmentów kodu zainstalowane usługi języka, zobacz [wskazówki: pobieranie listy z zainstalowanych fragmentów kodu (starsza wersja implementacji)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+   Aby uzyskać więcej informacji na temat pobierania listy zainstalowanych fragmentów kodu dla usługi w języka, zobacz [wskazówki: pobieranie listy z zainstalowane fragmenty kodu (starsza wersja implementacji)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
-## <a name="implementing-the-expansionfunction-class"></a>Implementująca klasa ExpansionFunction  
- Funkcja rozszerzenia jest nazwane funkcję, która jest osadzony w szablonie fragment i zwraca jedną lub więcej wartości do umieszczenia w polu. Aby zapewnić obsługę funkcji rozszerzenia w usłudze języka, musi pochodzić z klasy <xref:Microsoft.VisualStudio.Package.ExpansionFunction> klasy i wdrożenie <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> metody. Następnie należy zastąpić <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> metody w <xref:Microsoft.VisualStudio.Package.LanguageService> służącą do zwracania nowego wystąpienia tej wersji systemu <xref:Microsoft.VisualStudio.Package.ExpansionFunction> klasy dla każdej funkcji rozszerzenia obsługiwanych. Jeśli obsługują listę możliwych wartości z funkcji rozszerzenia, należy również zmienić <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> metoda <xref:Microsoft.VisualStudio.Package.ExpansionFunction> klasę, aby zwrócić listę tych wartości.  
+## <a name="implementing-the-expansionfunction-class"></a>Implementacja klasy ExpansionFunction  
+ Funkcja rozszerzenia jest o nazwie funkcji, zostanie osadzony w szablon fragmentu kodu, która zwraca jedną lub więcej wartości do umieszczenia w polu. W celu obsługi funkcji rozszerzeń w usłudze języka, należy wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.ExpansionFunction> klasę i zaimplementować <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> metody. Musisz przesłonić <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.LanguageService> klasy w celu zwracania nowego wystąpienia wersji <xref:Microsoft.VisualStudio.Package.ExpansionFunction> klasy dla każdej funkcji rozszerzenia, które obsługujesz. Jeśli obsługujesz listę możliwych wartości z funkcji rozszerzenia, konieczne jest również przesłonięcie <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.ExpansionFunction> klasy, aby powrócić do listy tych wartości.  
   
- Funkcja rozszerzenia, która przyjmuje argumenty lub musi mieć dostęp inne pola nie powinna być skojarzona z edycji pole jako dostawca rozszerzeń nie może być pełni zainicjowana w czasie, gdy zostanie wywołana funkcja rozszerzenia. W związku z tym funkcja rozszerzenia nie będzie mógł uzyskać wartości argumentów lub inne pole.  
+ Funkcja rozszerzenia, która przyjmuje argumenty musi uzyskać dostęp do innych pól lub nie powinien być skojarzony z polem edycji, jako dostawca rozszerzeń może nie być w pełni zainicjowana przez czas, gdy zostanie wywołana funkcja rozszerzenia. W wyniku funkcji rozszerzania nie będzie mógł uzyskać wartości argumentów lub każdego innego pola.  
   
 ### <a name="example"></a>Przykład  
- Oto jak wywołuje funkcję rozszerzeń prosty przykład `GetName` może być zaimplementowany. Ta funkcja rozszerzenia dołącza numer na nazwę klasy podstawowej zawsze funkcji rozszerzenia zostanie uruchomiony (które odpowiada zawsze fragmentu kodu skojarzony jest wstawiany).  
+ Oto przykład jak funkcja proste rozszerzenie wywoływana `GetName` mogą zostać zaimplementowane. Ta funkcja rozszerzania dołącza numer na nazwę klasy bazowej każdorazowo zostanie uruchomiony, funkcja rozszerzenia (co odpowiada każdorazowo fragment kodu skojarzone jest wstawiany).  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  
@@ -392,7 +392,7 @@ namespace TestLanguagePackage
 ```  
   
 ## <a name="see-also"></a>Zobacz też  
- [Funkcje usługi starszej wersji języka](../../extensibility/internals/legacy-language-service-features1.md)   
- [Zarejestrowanie starsza wersja usługi języka](../../extensibility/internals/registering-a-legacy-language-service1.md)   
- [Wstawki kodu](../../ide/code-snippets.md)   
+ [Funkcje usługi starszego języka](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Rejestrowanie starszej wersji usługi językowej](../../extensibility/internals/registering-a-legacy-language-service1.md)   
+ [Fragmenty kodu](../../ide/code-snippets.md)   
  [Przewodnik: pobieranie listy zainstalowanych fragmentów kodu (starsza wersja implementacji)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

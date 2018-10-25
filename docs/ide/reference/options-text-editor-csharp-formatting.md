@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f302445ebc8de788fc6776900f73b45550d73fa3
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: bcd63e9a155843d715e63fb6514e22f356847d2f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821386"
 ---
 # <a name="options-text-editor-c-formatting"></a>Opcje, edytor tekstu, C#, formatowanie
 
@@ -50,19 +50,19 @@ Te ustawienia skonfigurować **Formatuj dokument** polecenia do wykonywania oczy
 
 |Etykieta|Opis|Odpowiednie polecenie EditorConfig i narzędzia > Opcje zasad|
 |-----------|-----------------|-----------------|-----------------|
-|**Zastosuj wszystkie C# (wcięcia zawijania, odstępy) reguły formatowania**|**Formatuj dokument** polecenia zawsze poprawek formatowania problemów. Nie można zmienić tego ustawienia.| [Podstawowe opcje polecenia EditorConfig](../../ide/create-portable-custom-editor-options.md)<br/>[Opcje formatowania narzędzia .NET EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#formatting-conventions)<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **formatowania**  > [**Wcięcia** lub **nowe wiersze** lub **odstępy** lub **zawijania**]|
+|**Zastosuj wszystkie C# (wcięcia zawijania, odstępy) reguły formatowania**|**Formatuj dokument** polecenia zawsze poprawek formatowania problemów. Nie można zmienić tego ustawienia.| [Podstawowe opcje polecenia EditorConfig](../../ide/create-portable-custom-editor-options.md)<br/>[Opcje formatowania narzędzia .NET EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#formatting-conventions)<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów**  >  **C#**  >   **Formatowanie** > [**wcięcia** lub **nowe wiersze** lub **odstępy** lub **zawijania**]|
 |**Wykonania oczyszczania kodu dodawania podczas formatowania**|Po wybraniu stosuje poprawki dla reguł określonych poniżej na **Edit.FormatDocument** polecenia.| Brak |
 |**Usuń niepotrzebne użycia**|Po wybraniu usuwa niepotrzebne `using` dyrektywy podczas **Edit.FormatDocument** zostanie wywołany.| Brak |
 |**Sortuj deklaracje Using**|Po wybraniu sortuje `using` dyrektywy podczas **Edit.FormatDocument** zostanie wywołany.| dotnet_sort_system_directives_first<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **zaawansowane**   >  **Miejsce "System" dyrektywy pierwsze podczas sortowania deklaracji Using** |
 |**Dodaj/Usuń nawiasy klamrowe dla instrukcji sterowania jednowierszowy**|Po wybraniu dodaje lub usuwa nawiasy klamrowe z instrukcji sterowania jednowierszowego podczas **Edit.FormatDocument** zostanie wywołany.| csharp_prefer_braces<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **styl kodu**   >  **Preferencje bloku kodu** > **Preferuj klamry** |
 |**Dodaj modyfikatory dostępności**|Po wybraniu dodaje brakujące modyfikatory dostępności podczas **Edit.FormatDocument** zostanie wywołany.| dotnet_style_require_accessibility_modifiers |
 |**Modyfikatory dostępności sortowania**|Po wybraniu sortuje modyfikatory dostępności podczas **Edit.FormatDocument** zostanie wywołany.| csharp_preferred_modifier_order<br/>visual_basic_preferred_modifier_order |
-|**Zastosuj preferencje treści wyrażenia lub blokowanie ich**|Po wybraniu konwertuje wyrażeniem elementów członkowskich, aby zablokować treści, lub na odwrót, gdy **Edit.FormatDocument** zostanie wywołany.| [Opcje polecenia EditorConfig wyrażeniem składowej](../../ide/editorconfig-code-style-settings-reference.md#expression_bodied_members)<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **styl kodu**   >  **Preferencje wyrażeń** > **Użyj treści wyrażenia dla metod, konstruktory itp.**  |
-|**Zastosuj niejawnej/jawnej preferencjach**|Po wybraniu konwertuje `var` na typ jawny lub na odwrót, gdy **Edit.FormatDocument** zostanie wywołany.| [Opcje polecenia EditorConfig jawnego typu](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types)<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **styl kodu**   >  **preferencje "var"**  |
+|**Zastosuj preferencje treści wyrażenia lub blokowanie ich**|Po wybraniu konwertuje wyrażeniem elementów członkowskich, aby zablokować treści, lub na odwrót, gdy **Edit.FormatDocument** zostanie wywołany.| [Opcje polecenia EditorConfig wyrażeniem składowej](../../ide/editorconfig-code-style-settings-reference.md#expression_bodied_members)<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **styl kodu**   >  **Preferencje wyrażeń** > **Użyj treści wyrażenia dla metod, konstruktory itp.** |
+|**Zastosuj niejawnej/jawnej preferencjach**|Po wybraniu konwertuje `var` na typ jawny lub na odwrót, gdy **Edit.FormatDocument** zostanie wywołany.| [Opcje polecenia EditorConfig jawnego typu](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types)<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **styl kodu**   >  **preferencje "var"** |
 |**Zastosuj wbudowane zmienne preferencji "out"**|Po wybraniu inlines `out` zmienne gdzie to możliwe, gdy **Edit.FormatDocument** zostanie wywołany.| csharp_style_inlined_variable_declaration<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **styl kodu**   >  **Preferencje zmiennej** > **Preferuj śródwierszową deklarację zmiennej** |
 |**Zastosuj preferencjach języka/platformy**|Po wybraniu konwertuje typy języka na typy framework lub na odwrót, gdy **Edit.FormatDocument** zostanie wywołany.| dotnet_style_predefined_type_for_locals_parameters_members<br/>dotnet_style_predefined_type_for_member_access<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **styl kodu**   >  **wstępnie zdefiniowane preferencjach** |
 |**Zastosuj preferencje inicjowania obiektu/kolekcji**|Po wybraniu używa inicjatorów obiektów i kolekcji, jeśli jest to możliwe po **Edit.FormatDocument** zostanie wywołany.| dotnet_style_object_initializer<br/>dotnet_style_collection_initializer<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **styl kodu**   >  **Preferencje wyrażeń** > **Preferuj Inicjator obiektu** lub **Preferuj inicjator kolekcji** |
-|**Zastosuj "this." Preferencje kwalifikacji**|Po wybraniu stosuje `this.` preferencje podczas **Edit.FormatDocument** zostanie wywołany.| [Ta. Opcje polecenia EditorConfig kwalifikacji](../../ide/editorconfig-code-style-settings-reference.md#this_and_me)<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **styl kodu**   >  **preferencje "this".**  |
+|**Zastosuj "this." Preferencje kwalifikacji**|Po wybraniu stosuje `this.` preferencje podczas **Edit.FormatDocument** zostanie wywołany.| [Ta. Opcje polecenia EditorConfig kwalifikacji](../../ide/editorconfig-code-style-settings-reference.md#this_and_me)<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **styl kodu**   >  **preferencje "this".** |
 |**Wprowadź pola prywatne tylko do odczytu, gdy jest to możliwe**|Po wybraniu sprawia, że pola prywatne `readonly` gdzie to możliwe, gdy **Edit.FormatDocument** zostanie wywołany.| dotnet_style_readonly_field<br/><br/>**Narzędzia** > **opcje** > **edytora tekstów** > **C#** > **styl kodu**   >  **Pola preferencje** > **Preferuj tylko do odczytu** |
 |**Usuń niepotrzebne rzutowanie**|Po wybraniu usuwa niepotrzebne rzutowanie, gdzie to możliwe po **Edit.FormatDocument** zostanie wywołany.| Brak |
 |**Usuń nieużywane zmienne**|Po wybraniu usuwa zmienne, które nie są używane, kiedy **Edit.FormatDocument** zostanie wywołany.| Brak |

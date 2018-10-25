@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edcff4b5058d87f467e4b8e94637a1dc74cee98f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1c25121e96005486450397938aad3c24f89d26cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828471"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Przewodnik: Wyświetlanie niestandardowych okienek zadań z wiadomościami e-mail w programie Outlook
   W tym instruktażu przedstawiono sposób wyświetlania unikatowego wystąpienia niestandardowego okienka zadań z każdej wiadomości e-mail, który został utworzony lub otwarty. Użytkowników można wyświetlić lub ukryć niestandardowego okienka zadań, za pomocą przycisku na Wstążce każdej wiadomości e-mail.  
@@ -56,11 +56,11 @@ ms.locfileid: "35677459"
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] lub programu Microsoft Outlook 2010.  
+- Microsoft [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] lub programu Microsoft Outlook 2010.  
   
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [w jaki sposób użycia I: okienka zadań w programie Outlook?](http://go.microsoft.com/fwlink/?LinkID=130309).  
+  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [w jaki sposób użycia I: okienka zadań w programie Outlook?](http://go.microsoft.com/fwlink/?LinkID=130309).  
   
 ## <a name="create-the-project"></a>Utwórz projekt  
  Niestandardowe okienka zadań są implementowane w dodatkach VSTO. Rozpocznij od utworzenia projektu dodatku narzędzi VSTO dla programu Outlook.  
@@ -121,13 +121,13 @@ ms.locfileid: "35677459"
 ## <a name="create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Utwórz klasę do zarządzania windows Inspektor i niestandardowych okienek zadań  
  Istnieje kilka przypadków, w których dodatku narzędzi VSTO dla programów należy określić które niestandardowego okienka zadań jest skojarzony z określoną wiadomością e-mail. Te przypadki są następujące:  
   
--   Gdy użytkownik zamknie wiadomości e-mail. W tym przypadku dodatku narzędzi VSTO dla programów należy usunąć odpowiedniego niestandardowego okienka zadań, aby upewnić się, że zasoby używane przez dodatek narzędzi VSTO dla programów są poprawnie czyszczone.  
+- Gdy użytkownik zamknie wiadomości e-mail. W tym przypadku dodatku narzędzi VSTO dla programów należy usunąć odpowiedniego niestandardowego okienka zadań, aby upewnić się, że zasoby używane przez dodatek narzędzi VSTO dla programów są poprawnie czyszczone.  
   
--   Gdy użytkownik zamknie niestandardowego okienka zadań. W tym przypadku dodatku narzędzi VSTO dla programów należy zaktualizować stan przycisku przełącznika na Wstążce wiadomości e-mail.  
+- Gdy użytkownik zamknie niestandardowego okienka zadań. W tym przypadku dodatku narzędzi VSTO dla programów należy zaktualizować stan przycisku przełącznika na Wstążce wiadomości e-mail.  
   
--   Kiedy użytkownik klika przycisk przełączania na Wstążce. W tym przypadku dodatku narzędzi VSTO musi ukryć lub wyświetlić odpowiednie okienka zadań.  
+- Kiedy użytkownik klika przycisk przełączania na Wstążce. W tym przypadku dodatku narzędzi VSTO musi ukryć lub wyświetlić odpowiednie okienka zadań.  
   
- Aby włączyć dodatek narzędzi VSTO dla programów do śledzenia które niestandardowego okienka zadań jest skojarzony z każdej otwartej wiadomości e-mail, należy utworzyć klasę niestandardową, która otacza pary <xref:Microsoft.Office.Interop.Outlook.Inspector> i <xref:Microsoft.Office.Tools.CustomTaskPane> obiektów. Ta klasa tworzy nowy obiekt w okienku zadania niestandardowego dla każdej wiadomości e-mail, a następnie usuwa niestandardowego okienka zadań, gdy odpowiednia wiadomość e-mail jest zamknięty.  
+  Aby włączyć dodatek narzędzi VSTO dla programów do śledzenia które niestandardowego okienka zadań jest skojarzony z każdej otwartej wiadomości e-mail, należy utworzyć klasę niestandardową, która otacza pary <xref:Microsoft.Office.Interop.Outlook.Inspector> i <xref:Microsoft.Office.Tools.CustomTaskPane> obiektów. Ta klasa tworzy nowy obiekt w okienku zadania niestandardowego dla każdej wiadomości e-mail, a następnie usuwa niestandardowego okienka zadań, gdy odpowiednia wiadomość e-mail jest zamknięty.  
   
 ### <a name="to-create-a-class-to-manage-inspector-windows-and-custom-task-panes"></a>Aby utworzyć klasę do zarządzania windows Inspektor i niestandardowych okienek zadań  
   
@@ -168,36 +168,36 @@ ms.locfileid: "35677459"
   
 ### <a name="to-initialize-and-clean-up-resources-used-by-the-vsto-add-in"></a>Aby zainicjować i wyczyścić zasoby używane przez dodatku narzędzi VSTO  
   
-1.  W *ThisAddIn.cs* lub *ThisAddIn.vb* pliku, Znajdź definicję `ThisAddIn` klasy.  
+1. W *ThisAddIn.cs* lub *ThisAddIn.vb* pliku, Znajdź definicję `ThisAddIn` klasy.  
   
-2.  Dodaj następujące deklaracje na `ThisAddIn` klasy:  
+2. Dodaj następujące deklaracje na `ThisAddIn` klasy:  
   
-    -   `inspectorWrappersValue` Pole zawiera wszystkie <xref:Microsoft.Office.Interop.Outlook.Inspector> i `InspectorWrapper` obiekty, które są zarządzane przez dodatku narzędzi VSTO.  
+   - `inspectorWrappersValue` Pole zawiera wszystkie <xref:Microsoft.Office.Interop.Outlook.Inspector> i `InspectorWrapper` obiekty, które są zarządzane przez dodatku narzędzi VSTO.  
   
-    -   `inspectors` Pola obsługuje odwołania do kolekcji Inspektor okna w bieżącym wystąpieniu programu Outlook. Zapobiega to odwołanie moduł zbierający elementy bezużyteczne zwalnianie pamięci, który zawiera program obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzenie, które ciąg zostanie zadeklarowany w następnym kroku.  
+   - `inspectors` Pola obsługuje odwołania do kolekcji Inspektor okna w bieżącym wystąpieniu programu Outlook. Zapobiega to odwołanie moduł zbierający elementy bezużyteczne zwalnianie pamięci, który zawiera program obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzenie, które ciąg zostanie zadeklarowany w następnym kroku.  
   
      [!code-csharp[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#8)]
      [!code-vb[Trin_OutlookMailItemTaskPane#8](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#8)]  
   
-3.  Zastąp `ThisAddIn_Startup` metoda następującym kodem. Ten kod dołącza program obsługi zdarzeń do <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzenia i przekazuje co istniejące <xref:Microsoft.Office.Interop.Outlook.Inspector> obiektu do narzędzia obsługi zdarzeń. Jeśli użytkownik załaduje dodatku narzędzi VSTO po program Outlook jest już uruchomiony, dodatku narzędzi VSTO używa tych informacji do tworzenia niestandardowych okienek zadań dla wszystkich wiadomości e-mail, które są już otwarte.  
+3. Zastąp `ThisAddIn_Startup` metoda następującym kodem. Ten kod dołącza program obsługi zdarzeń do <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzenia i przekazuje co istniejące <xref:Microsoft.Office.Interop.Outlook.Inspector> obiektu do narzędzia obsługi zdarzeń. Jeśli użytkownik załaduje dodatku narzędzi VSTO po program Outlook jest już uruchomiony, dodatku narzędzi VSTO używa tych informacji do tworzenia niestandardowych okienek zadań dla wszystkich wiadomości e-mail, które są już otwarte.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#9)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#9](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#9)]  
   
-4.  Zastąp `ThisAddIn_ShutDown` metoda następującym kodem. Ten kod powoduje odłączenie <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> program obsługi zdarzeń i czyści obiekty używane przez dodatek narzędzi VSTO dla programów.  
+4. Zastąp `ThisAddIn_ShutDown` metoda następującym kodem. Ten kod powoduje odłączenie <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> program obsługi zdarzeń i czyści obiekty używane przez dodatek narzędzi VSTO dla programów.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#10)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#10](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#10)]  
   
-5.  Dodaj następujący kod <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> procedurę obsługi zdarzeń do `ThisAddIn` klasy. Jeśli nowy <xref:Microsoft.Office.Interop.Outlook.Inspector> zawiera wiadomości e-mail, ta metoda tworzy wystąpienie nowej `InspectorWrapper` obiektu do relacji między wiadomości e-mail i odpowiednie okienko zadań zarządzania.  
+5. Dodaj następujący kod <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> procedurę obsługi zdarzeń do `ThisAddIn` klasy. Jeśli nowy <xref:Microsoft.Office.Interop.Outlook.Inspector> zawiera wiadomości e-mail, ta metoda tworzy wystąpienie nowej `InspectorWrapper` obiektu do relacji między wiadomości e-mail i odpowiednie okienko zadań zarządzania.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#11)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#11](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#11)]  
   
-6.  Dodaj następującą właściwość do `ThisAddIn` klasy. Ta właściwość udostępnia prywatna `inspectorWrappersValue` pole kodu poza `ThisAddIn` klasy.  
+6. Dodaj następującą właściwość do `ThisAddIn` klasy. Ta właściwość udostępnia prywatna `inspectorWrappersValue` pole kodu poza `ThisAddIn` klasy.  
   
-     [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]
-     [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]  
+    [!code-csharp[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/CSharp/Trin_OutlookMailItemTaskPane/ThisAddIn.cs#12)]
+    [!code-vb[Trin_OutlookMailItemTaskPane#12](../vsto/codesnippet/VisualBasic/Trin_OutlookMailItemTaskPane/ThisAddIn.vb#12)]  
   
 ## <a name="checkpoint"></a>Punkt kontrolny  
  Skompilować projekt, aby upewnić się, że kompiluje bez błędów.  
@@ -230,29 +230,29 @@ ms.locfileid: "35677459"
   
 ### <a name="to-test-the-vsto-add-in"></a>Aby przetestować dodatku narzędzi VSTO  
   
-1.  Naciśnij klawisz **F5**.  
+1. Naciśnij klawisz **F5**.  
   
-2.  W programie Outlook, kliknij przycisk **New** do tworzenia nowych wiadomości e-mail.  
+2. W programie Outlook, kliknij przycisk **New** do tworzenia nowych wiadomości e-mail.  
   
-3.  Na Wstążce wiadomości e-mail, kliknij przycisk **Add-Ins** kartę, a następnie kliknij przycisk **Pokaż okienko zadań** przycisku.  
+3. Na Wstążce wiadomości e-mail, kliknij przycisk **Add-Ins** kartę, a następnie kliknij przycisk **Pokaż okienko zadań** przycisku.  
   
-     Upewnij się, że okienka zadań z tytułem **okienko zadań** jest wyświetlany z wiadomością e-mail.  
+    Upewnij się, że okienka zadań z tytułem **okienko zadań** jest wyświetlany z wiadomością e-mail.  
   
-4.  W okienku zadań wpisz **pierwszego okienka zadań** w polu tekstowym.  
+4. W okienku zadań wpisz **pierwszego okienka zadań** w polu tekstowym.  
   
-5.  Zamknij okienko zadań.  
+5. Zamknij okienko zadań.  
   
-     Upewnij się, że stan **Pokaż okienko zadań** przycisku zmienia się tak, aby nie był wciśnięty.  
+    Upewnij się, że stan **Pokaż okienko zadań** przycisku zmienia się tak, aby nie był wciśnięty.  
   
-6.  Kliknij przycisk **Pokaż okienko zadań** ponownie przycisk.  
+6. Kliknij przycisk **Pokaż okienko zadań** ponownie przycisk.  
   
-     Sprawdź, czy zostanie otwarte okienko zadania i pola tekstowego będzie nadal zawiera ciąg **pierwszego okienka zadań**.  
+    Sprawdź, czy zostanie otwarte okienko zadania i pola tekstowego będzie nadal zawiera ciąg **pierwszego okienka zadań**.  
   
-7.  W programie Outlook, kliknij przycisk **New** do utworzenia drugiej wiadomości e-mail.  
+7. W programie Outlook, kliknij przycisk **New** do utworzenia drugiej wiadomości e-mail.  
   
-8.  Na Wstążce wiadomości e-mail, kliknij przycisk **Add-Ins** kartę, a następnie kliknij przycisk **Pokaż okienko zadań** przycisku.  
+8. Na Wstążce wiadomości e-mail, kliknij przycisk **Add-Ins** kartę, a następnie kliknij przycisk **Pokaż okienko zadań** przycisku.  
   
-     Upewnij się, że okienka zadań z tytułem **okienko zadań** jest wyświetlany za pomocą wiadomości e-mail i pole tekstowe, w tym okienku zadań jest puste.  
+    Upewnij się, że okienka zadań z tytułem **okienko zadań** jest wyświetlany za pomocą wiadomości e-mail i pole tekstowe, w tym okienku zadań jest puste.  
   
 9. W okienku zadań wpisz **drugi okienka zadań** w polu tekstowym.  
   
@@ -260,7 +260,7 @@ ms.locfileid: "35677459"
   
      Sprawdź, czy okienko zadań, który jest skojarzony z tej wiadomości e-mail, nadal wyświetlany **pierwszego okienka zadań** w polu tekstowym.  
   
- Ten dodatek narzędzi VSTO dla programów obsługuje także kilka zaawansowanych scenariuszy, które możesz wypróbować. Na przykład, testowanie zachowania podczas wyświetlania wiadomości e-mail przy użyciu **następny element** i **poprzedni element** przycisków. Możesz także testować zachowanie, gdy zwolnienie dodatku narzędzi VSTO dla programów, otwórz kilka wiadomości e-mail i ponownie załadować dodatku narzędzi VSTO.  
+    Ten dodatek narzędzi VSTO dla programów obsługuje także kilka zaawansowanych scenariuszy, które możesz wypróbować. Na przykład, testowanie zachowania podczas wyświetlania wiadomości e-mail przy użyciu **następny element** i **poprzedni element** przycisków. Możesz także testować zachowanie, gdy zwolnienie dodatku narzędzi VSTO dla programów, otwórz kilka wiadomości e-mail i ponownie załadować dodatku narzędzi VSTO.  
   
 ## <a name="next-steps"></a>Następne kroki  
  Możesz dowiedzieć się więcej na temat sposobu tworzenia niestandardowych okienek zadań z tych tematów:  

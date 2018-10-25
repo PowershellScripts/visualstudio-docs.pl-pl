@@ -28,12 +28,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860334"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Tworzenie bazy danych SQL za pomocą projektanta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,23 +58,23 @@ Możesz eksplorować podstawowe zadania, takie jak dodawanie tablic i definiowan
   
 #### <a name="to-create-a-project-and-a-database-file"></a>Aby utworzyć projekt i plik bazy danych  
   
-1.  Utwórz projekt Windows Forms o nazwie `SampleDatabaseWalkthrough`.  
+1. Utwórz projekt Windows Forms o nazwie `SampleDatabaseWalkthrough`.  
   
-2.  Na pasku menu wybierz **projektu** > **Dodaj nowy element**.  
+2. Na pasku menu wybierz **projektu** > **Dodaj nowy element**.  
   
-3.  Na liście szablonów elementów przewiń w dół i wybierz **usługową bazę danych**.  
+3. Na liście szablonów elementów przewiń w dół i wybierz **usługową bazę danych**.  
   
-     ![Okno dialogowe Szablony elementu](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
+    ![Okno dialogowe Szablony elementu](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
   
-4.  Nazwij bazę danych **SampleDatabase**, a następnie wybierz pozycję **Dodaj** przycisku.  
+4. Nazwij bazę danych **SampleDatabase**, a następnie wybierz pozycję **Dodaj** przycisku.  
   
-5.  Jeśli **źródeł danych** okno nie jest otwarte, otwórz go, wybierając klawisze Shift + Alt + D lub na pasku menu, wybierając **widoku** > **Windows inne**  >  **Źródeł danych**.  
+5. Jeśli **źródeł danych** okno nie jest otwarte, otwórz go, wybierając klawisze Shift + Alt + D lub na pasku menu, wybierając **widoku** > **Windows inne**  >  **Źródeł danych**.  
   
-6.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** łącza.  
+6. W **źródeł danych** wybierz **Dodaj nowe źródło danych** łącza.  
   
-7.  W **Kreatora konfiguracji źródła danych**, wybierz opcję **dalej** cztery razy, aby zaakceptować ustawienia domyślne, a następnie wybierz przycisk **Zakończ** przycisku.  
+7. W **Kreatora konfiguracji źródła danych**, wybierz opcję **dalej** cztery razy, aby zaakceptować ustawienia domyślne, a następnie wybierz przycisk **Zakończ** przycisku.  
   
- Otwierając okno właściwości bazy danych, możesz wyświetlić parametry połączenia i lokalizację głównego pliku bazy danych (mdf). Zobaczysz, że plik bazy danych znajduje się w folderze projektu.  
+   Otwierając okno właściwości bazy danych, możesz wyświetlić parametry połączenia i lokalizację głównego pliku bazy danych (mdf). Zobaczysz, że plik bazy danych znajduje się w folderze projektu.  
   
 -   W programie Visual Studio, wybierz **widoku** > **Eksplorator obiektów SQL Server** Jeśli to okno nie jest jeszcze otwarte. Otwórz okno właściwości, rozwijając **połączeń danych** węzła, otwierając menu skrótów pliku sampledatabase.mdf i wybierając **właściwości**.  
   

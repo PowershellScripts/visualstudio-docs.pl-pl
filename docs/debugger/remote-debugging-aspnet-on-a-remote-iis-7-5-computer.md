@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: d64850910d1a6a25514eb48e46f70168d245e168
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 1a13488f632e3cf1f244449b2a7a4dbfd7869428
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826512"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Zdalne debugowanie platformy ASP.NET na komputerze zdalnym usług IIS
 Do debugowania aplikacji ASP.NET, która została wdrożona w usługach IIS, zainstalować i uruchomić narzędzia zdalne na komputerze, w której została wdrożona aplikacja, a następnie dołącz do uruchomionej aplikacji w programie Visual Studio.
@@ -47,7 +47,7 @@ Ten artykuł zawiera instrukcje dotyczące konfigurowania podstawowej konfigurac
 
 ## <a name="create-the-aspnet-452-application-on-the-visual-studio-computer"></a>Tworzenie platformy ASP.NET 4.5.2 aplikacji na komputerze programu Visual Studio
   
-1. Utwórz nową aplikację MVC ASP.NET. (**Plik > Nowy > Projekt**, a następnie wybierz ** Visual C# > sieci Web > Aplikacja sieci Web ASP.NET. W **ASP.NET 4.5.2** szablony zaznacz **MVC**. Upewnij się, że **włączyć obsługę platformy Docker** nie jest zaznaczone i **uwierzytelniania** ustawiono **bez uwierzytelniania**. Nadaj projektowi nazwę **MyASPApp**.)
+1. Utwórz nową aplikację MVC ASP.NET. (**Plik > Nowy > Projekt**, a następnie wybierz <strong>Visual C# > sieci Web > Aplikacja sieci Web ASP.NET. W **ASP.NET 4.5.2</strong> szablony zaznacz **MVC**. Upewnij się, że **włączyć obsługę platformy Docker** nie jest zaznaczone i **uwierzytelniania** ustawiono **bez uwierzytelniania**. Nadaj projektowi nazwę **MyASPApp**.)
 
 2. Otwórz plik HomeController.cs, a następnie ustaw punkt przerwania `About()` metody.
 

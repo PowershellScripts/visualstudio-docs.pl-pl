@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d4496c42bfcc0baecd69770ff529c189d85da026
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23d810c6bbb460f01528d5f9fb55bb8ca482e383
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220873"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880757"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Porady: ręczne tworzenie szablonów sieci Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ Tworzenie szablonu sieci Web jest inny niż tworzenie innych rodzajów szablonó
   
 ### <a name="to-manually-create-a-web-template"></a>Aby ręcznie utworzyć szablon sieci Web  
   
-1.  Utwórz projekt sieci Web.  
+1. Utwórz projekt sieci Web.  
   
-2.  Modyfikować lub usuwać pliki w projekcie lub dodać nowe pliki do projektu.  
+2. Modyfikować lub usuwać pliki w projekcie lub dodać nowe pliki do projektu.  
   
-3.  Utwórz plik XML i zapisz go przy użyciu rozszerzenia nazwy pliku .vstemplate, w tym samym katalogu co projekt. Nie należy dodawać go do projektu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Utwórz plik XML i zapisz go przy użyciu rozszerzenia nazwy pliku .vstemplate, w tym samym katalogu co projekt. Nie należy dodawać go do projektu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Tworzenie pliku XML .vstemplate do udostępnienia metadanych szablonu projektu. Aby uzyskać więcej informacji zobacz przykład w poniższej sekcji.  
+4. Tworzenie pliku XML .vstemplate do udostępnienia metadanych szablonu projektu. Aby uzyskać więcej informacji zobacz przykład w poniższej sekcji.  
   
-5.  Znajdź `ProjectType` element w pliku .vstemplate i ustaw wartość tekstu `Web`.  
+5. Znajdź `ProjectType` element w pliku .vstemplate i ustaw wartość tekstu `Web`.  
   
-6.  Następujące `ProjectType` elementu Dodawanie `ProjectSubType` element i ustaw wartość tekstowa do język programowania szablonu. Język programowania może być jednym z następujących wartości:  
+6. Następujące `ProjectType` elementu Dodawanie `ProjectSubType` element i ustaw wartość tekstowa do język programowania szablonu. Język programowania może być jednym z następujących wartości:  
   
-    -   CSharp  
+   - CSharp  
   
-    -   Języka Visual Basic  
+   - Języka Visual Basic  
   
      Na przykład:  
   
-    ```  
-    <TemplateData>  
-        ...  
-        <ProjectType>Web</ProjectType>  
-        <ProjectSubType>CSharp</ProjectSubType>  
-        ...  
-    </TemplateData>  
-    ```  
+   ```  
+   <TemplateData>  
+       ...  
+       <ProjectType>Web</ProjectType>  
+       <ProjectSubType>CSharp</ProjectSubType>  
+       ...  
+   </TemplateData>  
+   ```  
   
-7.  Wybierz pliki do szablonu (w tym pliku .vstemplate), kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**. Pliki są kompresowane w pliku zip.  
+7. Wybierz pliki do szablonu (w tym pliku .vstemplate), kliknij prawym przyciskiem myszy zaznaczenie, kliknij przycisk **Wyślij do**, a następnie kliknij przycisk **skompresowany Folder (zip)**. Pliki są kompresowane w pliku zip.  
   
-8.  Umieść plik zip szablonu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] katalogu szablonu projektu. Domyślnie ten katalog jest \My Studio *wersji*\My wyeksportowane szablony\\.  
+8. Umieść plik zip szablonu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] katalogu szablonu projektu. Domyślnie ten katalog jest \My Studio *wersji*\My wyeksportowane szablony\\.  
   
 ## <a name="example"></a>Przykład  
  Poniższy przykład pokazuje plik .vstemplate podstawowe dla szablonu projektu sieci Web.  

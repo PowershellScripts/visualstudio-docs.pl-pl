@@ -1,36 +1,36 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: 999e57f9b9b873f44f5a1ef0edac94c7e2b53ac4
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 5e4623715133f6203e4e967eb29eca20cb2f181e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29709365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821360"
 ---
-# <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Tworzenie projektu AI z szablonu w programie Visual Studio
+# <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Tworzenie projektu sztucznej Inteligencji z szablonu w programie Visual Studio
 
-Po wprowadzeniu [zainstalowany program Visual Studio Tools dla AI](installation.md), ułatwia tworzenie nowego projektu AI przy użyciu różnych szablonów.
+Po [zainstalowany program Visual Studio Tools for AI](installation.md), ułatwia utworzenie nowego projektu sztucznej Inteligencji przy użyciu różnych szablonów.
 
 1. Uruchom program Visual Studio.
 
-1. Wybierz **Plik > Nowy > Projekt** (Ctrl + Shift + N). W **nowy projekt** okno dialogowe, wyszukaj "**narzędzia AI**" i wybierz szablon ma. Należy pamiętać, że wybranie szablonu wyświetla krótki opis zawiera jakie szablonu.
+2. Wybierz **Plik > Nowy > Projekt** (Ctrl + Shift + N). W **nowy projekt** okno dialogowe, wyszukaj "**narzędzia si**", a następnie wybierz szablon ma. Należy pamiętać, że wybranie szablonu wyświetla krótki opis, w jaki szablon zawiera.
 
-    ![Okno dialogowe Nowy projekt VS2017 z szablonu Python](media\create-project\new-ai-project.png)
+    ![Program VS2017 okna dialogowego Nowy projekt z szablonu języka Python](media/create-project/new-ai-project.png)
 
-1. Dla tego przewodnika Szybki Start, wybierz "**aplikacji TensorFlow**" szablonu, nadaj projektu nazwę (na przykład "MNIST") i lokalizację, a następnie wybierz **OK**.
+3. W tym przewodniku Szybki Start wybierz pozycję "**aplikacji TensorFlow**" szablonu, należy nadać projektowi nazwę (na przykład "mnist ręcznie ZAPISANYCH") i lokalizację, a następnie wybierz pozycję **OK**.
 
-1. Program Visual Studio tworzy plik projektu ( `.pyproj` pliku na dysku) oraz inne pliki zgodnie z opisem w szablonie. Przy użyciu szablonu "TensorFlow aplikacji" Projekt zawiera jeden plik o nazwie takiej jak projektu. Plik jest otwarty w edytorze programu Visual Studio domyślnie.
+4. Program Visual Studio tworzy pliku projektu ( `.pyproj` pliku na dysku) wraz z innymi plikami zgodnie z opisem w szablonie. Z szablonem "TensorFlow aplikacja" projektu zawiera jeden plik o nazwie taka sama jak projekt. Plik jest otwarty w edytorze programu Visual Studio domyślnie.
 
-    ![Projekt wynikowy przy użyciu szablonu aplikacji Python](media\create-project\new-tensorflowapp.png)
+    ![Projekt wynikowy, korzystając z szablonu aplikacji w języku Python](media/create-project/new-tensorflowapp.png)
 
-1. Należy zauważyć, że kod importuje już kilka bibliotek, w tym TensorFlow numpy sys i systemu operacyjnego. Ponadto możesz już aplikacji rozpoczyna się od niektóre argumenty wejściowe umożliwia łatwe przełączenie lokalizacji danych wejściowych szkolenia, modeli danych wyjściowych i pliki dziennika. Te parametry są przydatne podczas przesyłania zadań do wielu kontekstów obliczeń (ie inny katalog z pola lokalnego deweloperów niż w udziale plików Azure).
+5. Zwróć uwagę, że kod importuje już kilka bibliotek, takich jak TensorFlow, numpy, sys i systemu operacyjnego. Ponadto możesz już aplikacji rozpoczynają się one od niektórych argumentów wejściowych umożliwiające łatwe przełączanie lokalizacji danych wejściowych szkoleniowych, modele danych wyjściowych i pliki dziennika. Te parametry są przydatne podczas przesyłania zadań do wielu konteksty obliczeniowe (ie inny katalog w swojej lokalnej okna niż w udziale plików platformy Azure).
 
-1. Projekt zawiera także niektóre właściwości utworzony ułatwia debugowanie aplikacji przez automatyczne przekazywanie argumentów wiersza polecenia dla tych parametrów wejściowych. **Kliknij prawym przyciskiem myszy** następnie wybierz projekt **właściwości**
+6. Projekt zawiera również właściwościami, który został utworzony, aby ułatwić debugowanie aplikacji automatycznie przekazując argumenty wiersza polecenia do tych parametrów wejściowych. **Kliknij prawym przyciskiem myszy** projekt następnie wybierz pozycję **właściwości**
 
-    ![Właściwości](media\create-project\project-properties.png)
+    ![Właściwości](media/create-project/project-properties.png)
 
-1. Kliknij przycisk **debugowania** kartę, aby wyświetlić argumenty skryptu automatycznie dodane. Możesz je zmienić zgodnie z potrzebami, na którym znajduje się dane wejściowe i gdzie chcesz przechowywane dane wyjściowe.
+7. Kliknij przycisk **debugowania** dodano kartę, aby zobaczyć argumenty skryptu automatycznie. można je zmienić zgodnie z potrzebami, na którym znajduje się dane wejściowe i gdzie ma się dane wyjściowe przechowywane.
 
-    ![Właściwości](media\create-project\/project-properties_1.png)
+    ![Właściwości](media/create-project//project-properties_1.png)
 
-1. Uruchom program, naciskając klawisze Ctrl + F5 lub wybranie **Debuguj > Uruchom bez debugowania** w menu. Wyniki są wyświetlane w oknie konsoli.
+8. Uruchom program, naciskając klawisze Ctrl + F5 lub wybierając **Debuguj > Uruchom bez debugowania** w menu. Wyniki są wyświetlane w oknie konsoli.

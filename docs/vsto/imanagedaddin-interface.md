@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b113d0d62156d77d08fa2fcdbb415d0518eba3a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ddede8542cda7499a9781c19a6baf1c58acfd125
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676193"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839547"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin — interfejs
   Implementowanie imanagedaddin — interfejs do tworzenia składnika, który ładuje zarządzanych dodatków narzędzi VSTO. Ten interfejs został dodany w Microsoft Office system 2007.  
@@ -57,25 +57,25 @@ interface IManagedAddin : IUnknown
 ## <a name="how-managed-add-ins-are-loaded"></a>W jaki sposób zarządzane dodatki są ładowane.  
  Po uruchomieniu aplikacji, wykonywane są następujące kroki:  
   
-1.  Aplikacja umożliwia odnalezienie dodatków narzędzi VSTO dla programów, wyszukując wpisy w następującym kluczu rejestru:  
+1. Aplikacja umożliwia odnalezienie dodatków narzędzi VSTO dla programów, wyszukując wpisy w następującym kluczu rejestru:  
   
-     **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<Nazwa aplikacji >_ \Addins\**  
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<Nazwa aplikacji >* \Addins\\**  
   
-     Każdy wpis w ramach tego klucza rejestru jest unikatowy identyfikator dodatku narzędzi VSTO. Zazwyczaj jest to nazwa zestawu dodatków narzędzi VSTO dla programów.  
+    Każdy wpis w ramach tego klucza rejestru jest unikatowy identyfikator dodatku narzędzi VSTO. Zazwyczaj jest to nazwa zestawu dodatków narzędzi VSTO dla programów.  
   
-2.  Aplikacja szuka `Manifest` wejścia we wpisie dla każdego dodatku narzędzi VSTO.  
+2. Aplikacja szuka `Manifest` wejścia we wpisie dla każdego dodatku narzędzi VSTO.  
   
-     Pełna ścieżka manifestu w mogą być przechowywane w zarządzanych dodatków narzędzi VSTO dla programów `Manifest` wpis w **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<Nazwa aplikacji >_ \Addins\\  _\<identyfikator dodatku >_**. Manifestu to plik (zazwyczaj plik XML), który zawiera informacje, które są używane do ładowania dodatku narzędzi VSTO.  
+    Pełna ścieżka manifestu w mogą być przechowywane w zarządzanych dodatków narzędzi VSTO dla programów `Manifest` wpis w **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<Nazwa aplikacji >_ \Addins\\  _\<identyfikator dodatku >_**. Manifestu to plik (zazwyczaj plik XML), który zawiera informacje, które są używane do ładowania dodatku narzędzi VSTO.  
   
-3.  Jeśli aplikacja wykryje `Manifest` wpisu, aplikacja próbuje załadować zarządzanego dodatku narzędzi VSTO programu ładującego składnika. Aplikacja wykonuje to zadanie w trakcie tworzenia obiektów COM, który implementuje imanagedaddin — interfejs.  
+3. Jeśli aplikacja wykryje `Manifest` wpisu, aplikacja próbuje załadować zarządzanego dodatku narzędzi VSTO programu ładującego składnika. Aplikacja wykonuje to zadanie w trakcie tworzenia obiektów COM, który implementuje imanagedaddin — interfejs.  
   
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zawiera składnik modułu ładującego dodatku narzędzi VSTO (*VSTOLoader.dll*), lub możesz utworzyć własne, implementowanie imanagedaddin — interfejs.  
+    [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zawiera składnik modułu ładującego dodatku narzędzi VSTO (*VSTOLoader.dll*), lub możesz utworzyć własne, implementowanie imanagedaddin — interfejs.  
   
-4.  Wywołania aplikacji [IManagedAddin::Load](../vsto/imanagedaddin-load.md) metody i przekazuje wartości `Manifest` wpisu.  
+4. Wywołania aplikacji [IManagedAddin::Load](../vsto/imanagedaddin-load.md) metody i przekazuje wartości `Manifest` wpisu.  
   
-5.  [IManagedAddin::Load](../vsto/imanagedaddin-load.md) metoda wykonuje zadania wymagane do załadowania dodatku narzędzi VSTO dla programów, takich jak Konfigurowanie zasad aplikacji domen i zabezpieczeń dla dodatku narzędzi VSTO dla programów, który jest ładowany.  
+5. [IManagedAddin::Load](../vsto/imanagedaddin-load.md) metoda wykonuje zadania wymagane do załadowania dodatku narzędzi VSTO dla programów, takich jak Konfigurowanie zasad aplikacji domen i zabezpieczeń dla dodatku narzędzi VSTO dla programów, który jest ładowany.  
   
- Aby uzyskać więcej informacji na temat rejestru klucze, korzystających z aplikacji Microsoft Office wykrycie i załadowanie zarządzanych dodatków narzędzi VSTO dla programów, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
+   Aby uzyskać więcej informacji na temat rejestru klucze, korzystających z aplikacji Microsoft Office wykrycie i załadowanie zarządzanych dodatków narzędzi VSTO dla programów, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
   
 ## <a name="guidance-to-implement-imanagedaddin"></a>Wskazówki dotyczące implementacji imanagedaddin —  
  W przypadku zaimplementowania imanagedaddin — należy zarejestrować bibliotekę DLL, która zawiera implementację przy użyciu następujących CLSID:  

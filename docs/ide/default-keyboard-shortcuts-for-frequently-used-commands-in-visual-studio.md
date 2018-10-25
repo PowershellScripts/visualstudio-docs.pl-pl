@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50e9a56d6682c32d4f02f5d45899867ce21768ec
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: f917486a6b4a539401c8652f70ca95b2e7bc7bc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370981"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843206"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Domyślne skróty klawiaturowe dla często używanych poleceń w programie Visual Studio
 
@@ -26,7 +26,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 ## <a name="build"></a>Kompilacja
 
 |Polecenia|Skróty klawiaturowe [konteksty]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Build.BuildSolution|**Ctrl + Shift + B** [globalny]|
 |Build.Cancel|**Ctrl + Break** [globalny]|
 |Build.Compile|**CTRL + F7** [globalny]|
@@ -35,7 +35,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 ## <a name="debug"></a>Debugowanie
 
 |Polecenia|Skróty klawiaturowe [konteksty]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Debug.BreakatFunction|**CTRL + B** [globalny]|
 |Debug.BreakAll|**Ctrl + Alt + Break** [globalny]|
 |Debug.DeleteAllBreakpoints|**Ctrl + Shift + F9** [globalny]|
@@ -55,7 +55,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 ## <a name="edit"></a>Edytowanie
 
 |Polecenia|Skróty klawiaturowe [konteksty]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Edit.BreakLine|**Wprowadź** [Edytor tekstu, Projektant raportów, Windows Forms Designer]<br /><br /> lub **Shift + Enter** [Edytor tekstu]|
 |Edit.CollapseToDefinitions|**CTRL + M**, **klawisze Ctrl + O** [Edytor tekstu]|
 |Edit.CommentSelection|**CTRL + K**, **klawisze Ctrl + C** [Edytor tekstu]|
@@ -106,7 +106,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 ## <a name="file"></a>Plik
 
 |Polecenia|Skróty klawiaturowe [konteksty]|
-|--------------|-------------------------------------|
+|--------------| - |
 |File.Exit|**ALT + F4** [globalny]|
 |File.NewFile|**CTRL + N** [globalny]|
 |File.NewProject|**Ctrl + Shift + N** [globalny]|
@@ -122,26 +122,26 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 ## <a name="project"></a>Projekt
 
 |Polecenia|Skróty klawiaturowe [konteksty]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Project.AddExistingItem|**Shift + Alt + A** [globalny]|
 |Project.AddNewItem|**Ctrl + Shift + A** [globalny]|
 
 ## <a name="refactor"></a>Refaktoryzacja
 
 |Polecenie|Skrót klawiaturowy [kontekst]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Refactor.ExtractMethod|**CTRL + R, Ctrl + M** [globalny]|
 
 ## <a name="tools"></a>Narzędzia
 
 |Polecenie|Skrót klawiaturowy [kontekst]|
-|-------------|-----------------------------------|
+|-------------| - |
 |Tools.AttachtoProcess|**Ctrl + Alt + P** [globalny]|
 
 ## <a name="view"></a>Widok
 
 |Polecenia|Skróty klawiaturowe [konteksty]|
-|--------------|-------------------------------------|
+|--------------| - |
 |View.ClassView|**Ctrl + Shift + C** [globalny]|
 |View.EditLabel|**F2** [globalny]|
 |View.ErrorList|**CTRL +\\, Ctrl + E** [globalny]<br /><br /> lub **Ctrl +\\, E** [globalny]|
@@ -162,7 +162,7 @@ Wybierając te domyślne skróty klawiaturowe, możesz uzyskać dostęp do częs
 ## <a name="window"></a>Okno
 
 |Polecenia|Skróty klawiaturowe [konteksty]|
-|--------------|-------------------------------------|
+|--------------| - |
 |Window.ActivateDocumentWindow|**ESC** [globalny]|
 |Window.CloseDocumentWindow|**CTRL + F4** [globalny]|
 |Window.NextDocumentWindow|**CTRL + F6** [globalny]|

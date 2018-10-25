@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c5044479ca08933f5088101cc088ea3011b4c4
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 73d1462cd6a5dacf57939ae06e7b490235483a60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495547"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843135"
 ---
 # <a name="windows-installer-basics"></a>Podstawowe informacje dotyczące Instalatora Windows
 Instalator Windows instaluje i odinstalowuje aplikacje lub produkty oprogramowania na komputerze użytkownika wykonywania tych zadań w jednostce o nazwie składniki Instalatora Windows (czasami nazywany WICs lub po prostu składników). Identyfikator GUID identyfikuje każdy składnik WIC to podstawowa jednostka instalacji i zliczanie dla konfiguracji za pomocą Instalatora Windows.  
@@ -29,17 +29,17 @@ Instalator Windows instaluje i odinstalowuje aplikacje lub produkty oprogramowan
 ## <a name="authoring-a-vspackage"></a>Tworzenie pakietu VSPackage  
  Instalator Windows używa pakietów instalacyjnych, które zawierają informacje wymagające Instalatora Windows, aby zainstalować, odinstalować lub napraw produkt oraz do uruchamiania Instalatora interfejsu użytkownika (UI). Każdy pakiet instalacyjny zawiera plik msi, który zawiera bazę danych instalacji, strumień informacji podsumowujących i strumieni danych dla różnych części instalacji. Aby użyć Instalatora, możesz tworzyć instalacji. Ponieważ Instalator organizuje instalacje myślą o składniki i przechowuje informacje o instalacji w relacyjnej bazie danych, proces tworzenia pakietu instalacyjnego szeroko pociąga za sobą następujące czynności:  
   
-1.  Planowanie ustawień tworzenia do obsługi wersji i strategie side-by-side.  
+1. Planowanie ustawień tworzenia do obsługi wersji i strategie side-by-side.  
   
-2.  Identyfikowanie funkcji, które mają zostać wyświetlone użytkownikom.  
+2. Identyfikowanie funkcji, które mają zostać wyświetlone użytkownikom.  
   
-3.  Organizuj pakietu VSPackage i zależności w składników.  
+3. Organizuj pakietu VSPackage i zależności w składników.  
   
-4.  Wypełnianie bazy danych instalacji z informacjami.  
+4. Wypełnianie bazy danych instalacji z informacjami.  
   
-5.  Sprawdzanie poprawności pakietu instalacyjnego.  
+5. Sprawdzanie poprawności pakietu instalacyjnego.  
   
- Ta dokumentacja dotyczy przede wszystkim pierwszy i trzeci kroków procesu. Podczas tych czynności możesz organizować funkcje pakietu VSPackage w WICs, dzięki czemu można ramki Twojej wersji i obsługi strategii do konta w kolejnych wersjach [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Pozostałe trzy kroki są zostały szczegółowo opisane w dokumentacji tego Instalatora Windows w zestawie SDK platformy.  
+   Ta dokumentacja dotyczy przede wszystkim pierwszy i trzeci kroków procesu. Podczas tych czynności możesz organizować funkcje pakietu VSPackage w WICs, dzięki czemu można ramki Twojej wersji i obsługi strategii do konta w kolejnych wersjach [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Pozostałe trzy kroki są zostały szczegółowo opisane w dokumentacji tego Instalatora Windows w zestawie SDK platformy.  
   
 ## <a name="key-terms"></a>Kluczowe terminy  
  Poniżej przedstawiono definicjami najważniejszych terminów związanych z technologii Instalatora Windows.  

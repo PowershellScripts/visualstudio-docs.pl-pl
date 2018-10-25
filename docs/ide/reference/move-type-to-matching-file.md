@@ -1,5 +1,5 @@
 ---
-title: Typ przenoszenia do refaktoryzacji pasującego pliku w programie Visual Studio
+title: Przeniesienie typu do pasującego pliku Refaktoryzacja w programie Visual Studio
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,55 +12,55 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00fab87a8fed4d1dcd9b4899551d68eaab28d46a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73e1d9d67d905fed5eb37e29c1be1ba7677da3e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945340"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884152"
 ---
-# <a name="move-a-type-to-a-matching-file-refactoring"></a>Przenieś typu do refaktoryzacji pasującego pliku
+# <a name="move-a-type-to-a-matching-file-refactoring"></a>Przeniesienie typu do pasującego pliku refaktoryzacji
 
-Dotyczy to refaktoryzacji:
+Ta Refaktoryzacja mają zastosowanie do:
 
 - C#
 
 - Visual Basic
 
-**Co:** umożliwia przenoszenie wybranego typu do osobnego pliku o tej samej nazwie.
+**Co:** umożliwia przeniesienie wybranego typu do osobnego pliku o takiej samej nazwie.
 
-**Kiedy:** ma wiele klasy, struktury, interfejsy, itp. w tym samym pliku, który chcesz oddzielić.
+**Kiedy:** masz wiele klas, struktur, interfejsów, itp. w tym samym pliku, który chcesz oddzielić.
 
-**Dlaczego:** umieszczenie wiele typów w tym samym pliku może utrudnić można znaleźć następujących typów. Przenosząc typy plików o takiej samej nazwie, kod będzie bardziej czytelny i łatwiej Przejdź.
+**Dlaczego:** umieszczenie różnych typów, w tym samym pliku może utrudnić można znaleźć tych typów. Przenosząc typów plików o takiej samej nazwie, kod staje się bardziej czytelny i łatwiejszą nawigacją.
 
-## <a name="how-to"></a>Porada
+## <a name="how-to"></a>Instrukcje
 
-1. Zaznacz lub umieść kursor tekst wewnątrz nazwę typu, aby przenieść:
+1. Umieść kursor wewnątrz nazwę typu, w którym jest zdefiniowana. Na przykład:
+
+   ```csharp
+   class Person
+   ```
+
+   ```vb
+   Class Person
+   ```
+
+2. Następnie wykonaj jedną z następujących czynności:
+
+   - Naciśnij klawisz **Ctrl**+**.**
+   - Kliknij prawym przyciskiem myszy nazwę typu, a następnie wybierz pozycję **szybkie akcje i operacje refaktoryzacji**
+
+1. Wybierz **przeniesienie typu do *TypeName*.cs** z menu, gdzie *TypeName* jest nazwa typu, który wybrano.
+
+   Typ jest przenoszona do nowego pliku w projekcie, który ma taką samą nazwę jak typ.
 
    - C#:
 
-    ![Wyróżniony kod - C#](media/movetype-highlight-cs.png)
+      ![Wynik wbudowane-C#](media/movetype-result-cs.png)
 
    - Visual Basic:
 
-    ![Wyróżniony kod - języka Visual Basic](media/movetype-highlight-vb.png)
-
-1. Następnie wykonaj jedną z następujących czynności:
-
-   - **Keyboard**
-     - Naciśnij klawisz **Ctrl**+**.** do wyzwalania **szybkie akcje i Refaktoryzacje** menu i wybierz **Przenieś typu *TypeName*.cs** z menu podręcznego okna podglądu gdzie *TypeName* to nazwa wybranego typu.
-   - **Myszy**
-     - Kliknij prawym przyciskiem myszy kod, wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz **Przenieś typu *TypeName*.cs** z menu podręcznego okna podglądu gdzie  *Właściwość TypeName* to nazwa wybranego typu.
-
-   Typ jest przenoszona do nowego pliku o tej samej nazwie, w ramach rozwiązania.
-
-   - C#:
-
-    ![Wbudowany wynik - C#](media/movetype-result-cs.png)
-
-   - Visual Basic:
-
-    ![Wynik wbudowanego - Visual Basic](media/movetype-result-vb.png)
+      ![Wynik wbudowane - Visual Basic](media/movetype-result-vb.png)
 
 ## <a name="see-also"></a>Zobacz także
 

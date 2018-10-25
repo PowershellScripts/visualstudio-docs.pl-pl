@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::get_loadAddress | Dokumentacja firmy Microsoft
+title: Idiasession::get_loadaddress — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88ba73b7d848388d1f4b5c039723243690345517
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2de904777cf09e3289efae71bf585ece9c6444a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461600"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864299"
 ---
 # <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
-Pobiera adres obciążenia dla pliku wykonywalnego, który odpowiada symboli w tym magazynie symboli.  
+Pobiera adres obciążenia dla pliku wykonywalnego, który odnosi się do symboli w tym magazynie symboli.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,13 +34,13 @@ HRESULT get_loadAddress (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca wirtualnego adresu (VA), gdzie jest ładowany pliku .exe lub .dll.  
+ [out] Zwraca adresów wirtualnych (oceny luk w zabezpieczeniach), gdzie jest ładowany pliku .exe lub .dll.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Adres obciążenia zwracane jest zawsze zero, chyba że w szczególności ustawić za pomocą [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) metody.  
+ Adres zwrócone obciążenia zawsze wynosi zero, chyba że specjalnie można ustawić przy użyciu [idiasession::put_loadaddress —](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   

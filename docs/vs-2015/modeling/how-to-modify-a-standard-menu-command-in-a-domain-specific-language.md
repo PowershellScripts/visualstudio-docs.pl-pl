@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d1f16efc07f45fc3b2b80a58b50e4f28b1d57de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837571"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Porady: modyfikowanie standardowego polecenia menu w języku specyficznym dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Można zmodyfikować zachowanie niektóre standardowe polecenia, które są auto
   
  W podsumowaniu, aby zmodyfikować polecenie:  
   
-1.  [Odkryj, jakie polecenia, można zmodyfikować](#what).  
+1. [Odkryj, jakie polecenia, można zmodyfikować](#what).  
   
-2.  [Utwórz deklarację częściowe klasy zestawu, odpowiednie polecenie](#extend).  
+2. [Utwórz deklarację częściowe klasy zestawu, odpowiednie polecenie](#extend).  
   
-3.  [Przesłaniaj metody ProcessOnStatus i ProcessOnMenu](#override) dla polecenia.  
+3. [Przesłaniaj metody ProcessOnStatus i ProcessOnMenu](#override) dla polecenia.  
   
- W tym temacie opisano tę procedurę.  
+   W tym temacie opisano tę procedurę.  
   
 > [!NOTE]
 >  Jeśli chcesz utworzyć własne polecenia menu, zobacz [porady: Dodawanie polecenia do Menu skrótów](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
@@ -139,19 +139,19 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Pisanie kodu metody  
  Następujące fragmenty są często przydatne w przypadku tych metod:  
   
--   `this.CurrentSelection`. Kształt, który kliknięto prawym przyciskiem myszy użytkownika, zawsze znajduje się na tej liście kształtów i łączników. Gdy użytkownik kliknie pustą część diagramu, Diagram jest jedynym członkiem listy.  
+- `this.CurrentSelection`. Kształt, który kliknięto prawym przyciskiem myszy użytkownika, zawsze znajduje się na tej liście kształtów i łączników. Gdy użytkownik kliknie pustą część diagramu, Diagram jest jedynym członkiem listy.  
   
--   `this.IsDiagramSelected()` - `true` Jeśli użytkownik kliknął pustą część diagramu.  
+- `this.IsDiagramSelected()` - `true` Jeśli użytkownik kliknął pustą część diagramu.  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` — użytkownik nie został wybrany wiele kształtów  
+- `this.IsSingleSelection()` — użytkownik nie został wybrany wiele kształtów  
   
--   `this.SingleSelection` -kształt lub diagram, który kliknięto prawym przyciskiem myszy użytkownika  
+- `this.SingleSelection` -kształt lub diagram, który kliknięto prawym przyciskiem myszy użytkownika  
   
--   `shape.ModelElement as MyLanguageElement` — element modelu, reprezentowane przez kształty.  
+- `shape.ModelElement as MyLanguageElement` — element modelu, reprezentowane przez kształty.  
   
- Aby uzyskać więcej informacji na temat sposobu nawigowania element po elemencie oraz o sposobie tworzenia obiektów i łączy, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+  Aby uzyskać więcej informacji na temat sposobu nawigowania element po elemencie oraz o sposobie tworzenia obiektów i łączy, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:System.ComponentModel.Design.MenuCommand>   

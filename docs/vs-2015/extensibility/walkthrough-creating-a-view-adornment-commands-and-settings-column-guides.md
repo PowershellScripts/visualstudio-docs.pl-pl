@@ -13,12 +13,12 @@ ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c4e0950010247387d8ddc1380589a6f684ab8ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e31588850d47276d63bda724e61e502c38a4575
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265126"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862323"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Przewodnik: tworzenie zakończeń, poleceń i ustawień widoku (prowadnice kolumn)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ Możesz rozszerzyć o edytorze tekstu/kodu programu Visual Studio z poleceniami 
   
  W tym instruktażu wykonasz następujące czynności:  
   
--   Utwórz projekt VSIX  
+- Utwórz projekt VSIX  
   
--   Dodaj zakończeń widoku edytora  
+- Dodaj zakończeń widoku edytora  
   
--   Dodano obsługę zapisywanie i pobieranie ustawień (w przypadku gdy w celu ich kolor i Rysuj prowadnice kolumn)  
+- Dodano obsługę zapisywanie i pobieranie ustawień (w przypadku gdy w celu ich kolor i Rysuj prowadnice kolumn)  
   
--   Dodawanie poleceń (Dodawanie/usuwanie kolumn, zmienianie ich koloru)  
+- Dodawanie poleceń (Dodawanie/usuwanie kolumn, zmienianie ich koloru)  
   
--   Umieść poleceń w menu Edycja i menu kontekstowe dokumentu tekstowego  
+- Umieść poleceń w menu Edycja i menu kontekstowe dokumentu tekstowego  
   
--   Dodano obsługę wywoływania poleceń w oknie polecenia programu Visual Studio  
+- Dodano obsługę wywoływania poleceń w oknie polecenia programu Visual Studio  
   
- Możesz wypróbować wersję funkcji prowadnice kolumn z tej galerii Visual Studio[rozszerzenia](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
+  Możesz wypróbować wersję funkcji prowadnice kolumn z tej galerii Visual Studio[rozszerzenia](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home).  
   
- **Uwaga**: w tym przewodniku wklejania duże ilości kodu do kilku plików generowane przez Szablony rozszerzenia programu visual studio, ale wkrótce w tym przewodniku będzie odnosił się do ukończone rozwiązanie w witrynie github wraz z innymi przykładami rozszerzenia.  Kompletny kod jest nieco inne w zawierającym ikony poleceń rzeczywiste zamiast generictemplate ikony.  
+  **Uwaga**: w tym przewodniku wklejania duże ilości kodu do kilku plików generowane przez Szablony rozszerzenia programu visual studio, ale wkrótce w tym przewodniku będzie odnosił się do ukończone rozwiązanie w witrynie github wraz z innymi przykładami rozszerzenia.  Kompletny kod jest nieco inne w zawierającym ikony poleceń rzeczywiste zamiast generictemplate ikony.  
   
 ## <a name="getting-started"></a>Wprowadzenie  
  Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -49,21 +49,21 @@ Możesz rozszerzyć o edytorze tekstu/kodu programu Visual Studio z poleceniami 
 ## <a name="setting-up-the-solution"></a>Konfigurowanie rozwiązania  
  Zostanie najpierw Utwórz projekt VSIX, Dodaj zakończeń widoku edytora, a następnie dodaj polecenie (które dodaje VSPackage, być właścicielem polecenie).  Podstawowa architektura jest następująca:  
   
--   Masz odbiornik tworzenia widoku tekstu, który tworzy `ColumnGuideAdornment` obiekt widoku.  Ten obiekt będzie nasłuchiwać pod kątem zdarzeń o zmienianiu widoku lub zmianę ustawienia, aktualizacji lub ponownego narysowania kolumna zawiera informacje na temat zgodnie z potrzebami.  
+- Masz odbiornik tworzenia widoku tekstu, który tworzy `ColumnGuideAdornment` obiekt widoku.  Ten obiekt będzie nasłuchiwać pod kątem zdarzeń o zmienianiu widoku lub zmianę ustawienia, aktualizacji lub ponownego narysowania kolumna zawiera informacje na temat zgodnie z potrzebami.  
   
--   Brak `GuidesSettingsManager` obsługująca odczytu i zapisu z magazynu ustawień programu Visual Studio.  Menedżer ustawień są również operacje aktualizowania ustawień, które obsługują polecenia użytkownika (Dodaj kolumnę, usunąć kolumny, zmienić kolor).  
+- Brak `GuidesSettingsManager` obsługująca odczytu i zapisu z magazynu ustawień programu Visual Studio.  Menedżer ustawień są również operacje aktualizowania ustawień, które obsługują polecenia użytkownika (Dodaj kolumnę, usunąć kolumny, zmienić kolor).  
   
--   Dostępny jest pakiet VSIP, które są niezbędne, jeśli masz poleceń użytkownika, ale jest po prostu standardowy kod, który inicjuje obiekt poleceń w implementacji.  
+- Dostępny jest pakiet VSIP, które są niezbędne, jeśli masz poleceń użytkownika, ale jest po prostu standardowy kod, który inicjuje obiekt poleceń w implementacji.  
   
--   Brak `ColumnGuideCommands` obiekt, który implementuje polecenia użytkownika i przechwytuje się programy obsługi poleceń dla polecenia zadeklarowanych w pliku vsct.  
+- Brak `ColumnGuideCommands` obiekt, który implementuje polecenia użytkownika i przechwytuje się programy obsługi poleceń dla polecenia zadeklarowanych w pliku vsct.  
   
- **VSIX**.  Użyj **pliku &#124; nowy...** polecenie, aby utworzyć projekt.  W okienku nawigacji po lewej stronie wybierz węzeł rozszerzalność w języku C# i wybierz polecenie **projekt VSIX** w okienku po prawej stronie.  Wprowadź nazwę ColumnGuides, a następnie wybierz **OK** do tworzenia projektu.  
+  **VSIX**.  Użyj **pliku &#124; nowy...** polecenie, aby utworzyć projekt.  W okienku nawigacji po lewej stronie wybierz węzeł rozszerzalność w języku C# i wybierz polecenie **projekt VSIX** w okienku po prawej stronie.  Wprowadź nazwę ColumnGuides, a następnie wybierz **OK** do tworzenia projektu.  
   
- **Wyświetl zakończeń**.  Naciśnij przycisk prawo wskaźnika na węzeł projektu w Eksploratorze rozwiązań.  Wybierz **Dodaj &#124; nowy element...** polecenie, aby dodać nowy element zakończeń widoku.  Wybierz **rozszerzalności &#124; edytora** w okienku nawigacji po lewej stronie i wybierz polecenie **zakończeń okienka ekranu edytora** w okienku po prawej stronie.  Wprowadź nazwę ColumnGuideAdornment jako nazwa elementu i wybierz polecenie **Dodaj** ją dodać.  
+  **Wyświetl zakończeń**.  Naciśnij przycisk prawo wskaźnika na węzeł projektu w Eksploratorze rozwiązań.  Wybierz **Dodaj &#124; nowy element...** polecenie, aby dodać nowy element zakończeń widoku.  Wybierz **rozszerzalności &#124; edytora** w okienku nawigacji po lewej stronie i wybierz polecenie **zakończeń okienka ekranu edytora** w okienku po prawej stronie.  Wprowadź nazwę ColumnGuideAdornment jako nazwa elementu i wybierz polecenie **Dodaj** ją dodać.  
   
- Możesz zobaczyć ten szablon elementu dodane dwa pliki do projektu (a także odwołań i tak dalej): ColumnGuideAdornment.cs i ColumnGuideAdornmentTextViewCreationListener.cs.  Szablony tylko Rysuj prostokąt purpurowy w widoku.  Poniżej spowoduje zmienić kilka wierszy w widoku odbiornika tworzenia i zastąp jego zawartość ColumnGuideAdornment.cs.  
+  Możesz zobaczyć ten szablon elementu dodane dwa pliki do projektu (a także odwołań i tak dalej): ColumnGuideAdornment.cs i ColumnGuideAdornmentTextViewCreationListener.cs.  Szablony tylko Rysuj prostokąt purpurowy w widoku.  Poniżej spowoduje zmienić kilka wierszy w widoku odbiornika tworzenia i zastąp jego zawartość ColumnGuideAdornment.cs.  
   
- **Polecenia**.  Naciśnij przycisk prawo wskaźnika na węzeł projektu w Eksploratorze rozwiązań.  Wybierz **Dodaj &#124; nowy element...** polecenie, aby dodać nowy element zakończeń widoku.  Wybierz **rozszerzalności &#124; pakietu VSPackage** w okienku nawigacji po lewej stronie i wybierz polecenie **polecenia niestandardowego** w okienku po prawej stronie.  Wprowadź nazwę ColumnGuideCommands jako nazwa elementu i wybierz polecenie **Dodaj** ją dodać.  Oprócz kilka odwołań polecenia i pakiet dodane ColumnGuideCommands.cs ColumnGuideCommandsPackage.cs i ColumnGuideCommandsPackage.vsct.  Poniżej spowoduje zastąpienie zawartości plików imię i nazwisko, definiować ani implementować poleceń.  
+  **Polecenia**.  Naciśnij przycisk prawo wskaźnika na węzeł projektu w Eksploratorze rozwiązań.  Wybierz **Dodaj &#124; nowy element...** polecenie, aby dodać nowy element zakończeń widoku.  Wybierz **rozszerzalności &#124; pakietu VSPackage** w okienku nawigacji po lewej stronie i wybierz polecenie **polecenia niestandardowego** w okienku po prawej stronie.  Wprowadź nazwę ColumnGuideCommands jako nazwa elementu i wybierz polecenie **Dodaj** ją dodać.  Oprócz kilka odwołań polecenia i pakiet dodane ColumnGuideCommands.cs ColumnGuideCommandsPackage.cs i ColumnGuideCommandsPackage.vsct.  Poniżej spowoduje zastąpienie zawartości plików imię i nazwisko, definiować ani implementować poleceń.  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>Konfigurowanie odbiornika tworzenia widoku tekstu  
  Otwórz ColumnGuideAdornmentTextViewCreationListener.cs w edytorze.  Ten kod implementuje program obsługi, aby zawsze, gdy program Visual Studio tworzy widoki tekstowe.  Brak atrybutów, które kontrolują, gdy program obsługi jest wywoływana w zależności od charakterystyki widoku.  

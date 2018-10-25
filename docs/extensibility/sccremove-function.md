@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71a79ac1b61b3f8f69d0698ead6fa3284fe37ce0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28aa5c5aa887b08992b15adeb48128168b8cfa29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835062"
 ---
-# <a name="sccremove-function"></a>Funkcja SccRemove
+# <a name="sccremove-function"></a>SccRemove, funkcja
 Ta funkcja usuwa pliki z systemu kontroli źródła.  
   
 ## <a name="syntax"></a>Składnia  
@@ -41,42 +41,42 @@ SCCRTN SccRemove(
   
 #### <a name="parameters"></a>Parametry  
  pvContext  
- [in] Struktura kontekstu wtyczkę kontroli źródła.  
+ [in] Struktura kontekście wtyczki kontroli źródła.  
   
- Właściwość hWnd  
- [in] Dojście do okna IDE, które wtyczka do kontroli źródła można używać jako elementu nadrzędnego wszystkie okna dialogowe, które zawiera.  
+ hWnd  
+ [in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.  
   
- To  
+ Niepowodzeń  
  [in] Liczba plików określonych w `lpFileNames` tablicy.  
   
  lpFileNames  
  [in] Tablica nazw w pełni kwalifikowaną ścieżką lokalną plików do usunięcia.  
   
  lpComment  
- [in] Komentarz, który ma zostać zastosowany do każdego pliku, zostaną usunięte.  
+ [in] Komentarz, które mają być stosowane do każdego pliku usuwany.  
   
  fOptions  
- [in] Flagi polecenie (i nieużywanych).  
+ [in] Polecenie flagi (nieużywane).  
   
  pvOptions  
- [in] Opcje plug-dotyczące kontroli źródła.  
+ [in] Opcje plug-określonych kontroli źródła.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczkę kontroli źródła tej funkcji może przywrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|SCC_OK|Usunięcie zakończyło się pomyślnie.|  
+|SCC_OK|Usuwanie zakończyło się pomyślnie.|  
 |SCC_E_FILENOTCONTROLLED|Wybrany plik nie jest pod kontrolą źródła.|  
 |SCC_E_OPNOTSUPPORTED|System kontroli źródła nie obsługuje tej operacji.|  
-|SCC_E_ISCHECKEDOUT|Nie można usunąć pliku, ponieważ użytkownik został on wyewidencjonowany.|  
-|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji.|  
+|SCC_E_ISCHECKEDOUT|Nie można usunąć pliku, ponieważ użytkownik ma aktualnie jego wyewidencjonowania.|  
+|SCC_E_ACCESSFAILURE|Wystąpił problem podczas uzyskiwania dostępu do systemu kontroli źródła, prawdopodobnie z powodu problemów z siecią lub rywalizacji o zasoby.|  
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać tej operacji.|  
 |SCC_E_NONSPECIFICERROR|Nieokreślony błąd; plik nie został usunięty.|  
 |SCC_I_OPERATIONCANCELED|Operacja została anulowana przed ukończeniem.|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta funkcja usuwa pliki z systemu kontroli źródła, ale nie powoduje usunięcia ich z lokalnego dysku twardego użytkownika.  
+ Ta funkcja usuwa pliki z systemu kontroli źródła, ale nie spowoduje usunięcia z lokalnym dysku twardym użytkownika.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

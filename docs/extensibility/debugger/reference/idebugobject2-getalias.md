@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5917e0f78a2872cbd684830c8a03b1156a83734
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0919fe9617231a94f39b08b83c10e3b5ef645792
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112372"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854341"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
-Pobiera aliasu skojarzonego z tym obiektem, jeśli istnieje.  
+Pobiera alias skojarzony z tym obiektem, jeśli istnieje.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,10 +44,10 @@ int GetAlias(
  [out] Zwraca [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) obiekt reprezentujący alias dla tego obiektu; w przeciwnym razie zwraca wartość null.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Alias dla obiekt jest tworzony w wyniku wywołania [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) metody.  
+ Alias dla obiektu jest tworzony przy użyciu wywołania do [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   

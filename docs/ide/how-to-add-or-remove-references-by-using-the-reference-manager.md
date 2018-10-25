@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f84c3e9c01158ae8de1ff949c497d7af5859433
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 3668b5e4275071513deb31e2e479adcd91d11589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839274"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Porady: Dodawanie lub usuwanie odwołań za pomocą Menedżera odwołań
 
@@ -100,7 +100,7 @@ Niektóre składniki na liście mogą nie być wyświetlane, w zależności od w
 
     Podczas tworzenia nowej aplikacji docelowej niektóre projekty kierują [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] domyślnie.
 
-- Dodawanie odwołań do pliku do danych wyjściowych innego projektu w tym samym rozwiązaniu, należy unikać, ponieważ w ten sposób może spowodować błędy kompilacji. Zamiast tego należy użyć **projektów** karcie **Dodaj odwołanie** okno dialogowe, aby utworzyć odwołania projekt projekt. Ułatwia to Projektowanie zespołowe poprzez umożliwienie lepszego zarządzania bibliotekami klas, utworzone w projekcie. Aby uzyskać więcej informacji, zobacz [rozwiązywanie uszkodzenie odwołań](../ide/troubleshooting-broken-references.md).
+Dodawanie odwołań do pliku do danych wyjściowych innego projektu w tym samym rozwiązaniu, należy unikać, ponieważ w ten sposób może spowodować błędy kompilacji. Zamiast tego należy użyć **projektów** karcie **Dodaj odwołanie** okno dialogowe, aby utworzyć odwołania projekt projekt. Ułatwia to Projektowanie zespołowe poprzez umożliwienie lepszego zarządzania bibliotekami klas, utworzone w projekcie. Aby uzyskać więcej informacji, zobacz [rozwiązywanie uszkodzenie odwołań](../ide/troubleshooting-broken-references.md).
 
 > [!NOTE]
 > W programie Visual Studio 2015 lub nowszym odwołanie pliku zamiast odwołania projektu jest tworzony, jeśli wersji docelowej programu .NET Framework jednego projektu jest w wersji 4.5 lub nowszej, a wersję docelową innego projektu jest w wersji 2, 3, 3.5 lub 4.0.
@@ -109,9 +109,9 @@ Niektóre składniki na liście mogą nie być wyświetlane, w zależności od w
 
 - Przenoszenie lub kopiowanie zestawu do jednej z następujących lokalizacji:
 
-    - Katalog aktualnego projektu. (Zestawy te można znaleźć przy użyciu **Przeglądaj** karty.)
+   - Katalog aktualnego projektu. (Zestawy te można znaleźć przy użyciu **Przeglądaj** karty.)
 
-    - Inne katalogi projektu w tym samym rozwiązaniu. (Zestawy te można znaleźć przy użyciu **projektów** karty.)
+   - Inne katalogi projektu w tym samym rozwiązaniu. (Zestawy te można znaleźć przy użyciu **projektów** karty.)
 
     \- lub —
 

@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e452b0e1ab6de862723cfdc36f7b7226a01d676
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e7872b7d697d0989f0efb9985a8b1b253a27322
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854614"
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
-Pobiera atrybut niestandardowy otrzymuje jej nazwę.  
+Pobiera atrybut niestandardowy nadać jej nazwę.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,16 +47,16 @@ int GetCustomAttributeByName(
  [in] Nazwa atrybutu niestandardowego.  
   
  `ppBlob`  
- [w, out] Tablica bajtów, które zawierają dane atrybutu niestandardowego.  
+ [out w] Tablica bajtów, które zawierają dane atrybutu niestandardowego.  
   
  `pdwLen`  
  [out] Długość w bajtach `ppBlob` parametru.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Jeśli atrybut niestandardowy nie istnieje, zwraca `S_FALSE`. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Jeśli nie ma atrybutów niestandardowych, zwraca `S_FALSE`. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CDebugClassFieldSymbol** obiekt ujawniający [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugClassFieldSymbol** obiekt ujawniający [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interfejsu.  
   
 ```cpp  
 HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(  

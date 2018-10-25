@@ -1,5 +1,5 @@
 ---
-title: Konfiguracja wyświetlania okna narzędzia | Dokumentacja firmy Microsoft
+title: Narzędzie konfiguracji wyświetlania okna | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 175e2005047312f6815e90c21c60ab831c036064
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 087fc8bc20b8ed70001b44ae06c614fad58c1439
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31143696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839703"
 ---
-# <a name="tool-window-display-configuration"></a>Konfiguracja wyświetlania okna narzędzi
-Kiedy pakiet VSPackage rejestruje okna narzędzia, pozycja domyślny rozmiar, styl dokowania i inne informacje widoczność określono opcjonalnych wartości. Aby uzyskać więcej informacji o rejestracji okna narzędzia, zobacz [okna narzędzi w rejestrze](../extensibility/tool-windows-in-the-registry.md)  
-  
+# <a name="tool-window-display-configuration"></a>Konfiguracja ekranu okna narzędzi
+Kiedy pakietu VSPackage rejestruje okna narzędzi, domyślne położenie, rozmiar, styl dokowania i inne informacje o widoczności określono opcjonalnych wartości. Aby uzyskać więcej informacji na temat rejestrowanie okna narzędzi, zobacz [narzędzie Windows w rejestrze](../extensibility/tool-windows-in-the-registry.md)  
+
 ## <a name="window-display-information"></a>Wyświetl informacje o oknie  
- Konfiguracja podstawowa ekranu okna narzędzia są przechowywane w sześciu opcjonalnych wartości:  
-  
+ Konfiguracja podstawowa ekranu okna narzędzi są przechowywane w sześciu wartości opcjonalne:  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -37,21 +37,22 @@ HKEY_LOCAL_MACHINE\
             <Tool Window GUID>\  
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
-  
-|Nazwa|Typ|Dane|Opis|  
-|----------|----------|----------|-----------------|  
-|Nazwa|REG_SZ|"Krótkiej nazwy tu"|Krótką nazwę, która opisuje okna narzędzia. Używana tylko w przypadku odwołania w rejestrze.|  
-|Float|REG_SZ|"X1, Y1, X2, Y2"|Cztery wartości rozdzielonych przecinkami. X1, Y1 jest współrzędne górnego lewego rogu okna narzędzia. X2, Y2 jest współrzędną prawym dolnym rogu. Wszystkie wartości są we współrzędnych ekranu.|  
-|Styl|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Połączone"<br /><br /> "Na kartach"<br /><br /> "AlwaysFloat"|Słowo kluczowe Określanie początkowej wyświetlanie stanu okna narzędzia.<br /><br /> "MDI" = zadokowane okna MDI.<br /><br /> "Float" = zmiennoprzecinkową.<br /><br /> "Połączone" = połączone z innym oknie (określone we wpisie okno).<br /><br /> "Na kartach" = połączone z innego okna narzędzia.<br /><br /> "AlwaysFloat" = nie może być zadokowany.<br /><br /> Aby uzyskać więcej informacji zobacz sekcję komentarze poniżej.|  
-|Okno|REG_SZ|*\<IDENTYFIKATOR GUID &GT;*|Identyfikator GUID okna, do którego można połączone lub kartach okna narzędzia. Identyfikator GUID może należeć do jednego z własnego systemu windows lub jeden z przedziałów czasu w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
-|Orientacja|REG_SZ|"Lewo"<br /><br /> "Prawej"<br /><br /> "Top"<br /><br /> "Bottom"|Zobacz uwagi poniżej.|  
-|DontForceCreate|REG_DWORD|0 lub 1|Gdy ten wpis jest dostępny i jego wartość nie jest równa zero, okna są załadowane, ale nie natychmiast wyświetlone.|  
-  
+
+
+| Nazwa | Typ | Dane | Opis |
+|-----------------|-----------| - | - |
+| Nazwa | REG_SZ | "Krótką nazwę miejsce" | Krótka nazwa opisująca okna narzędzia. Używany tylko w przypadku odwołania w rejestrze. |
+| float | REG_SZ | "X1, Y1, X2, Y2" | Cztery wartości rozdzielonych przecinkami. X1, Y1 jest współrzędnych w lewym górnym rogu okna narzędzia. X2, Y2 jest współrzędną prawym dolnym rogu. Wszystkie wartości są we współrzędnych ekranu. |
+| Styl | REG_SZ | "MDI"<br /><br /> "Float"<br /><br /> "Połączone"<br /><br /> "Z kartami"<br /><br /> "AlwaysFloat" | Słowo kluczowe określający początkowej wyświetlenia stanu okna narzędzi.<br /><br /> "MDI" = zadokowane okna MDI.<br /><br /> "Float" = liczb zmiennoprzecinkowych.<br /><br /> "Połączone" = powiązanym z innego okna (określony we wpisie okno).<br /><br /> "Z kartami" = w połączeniu z innego okna narzędzi.<br /><br /> "AlwaysFloat" = nie może być zadokowane.<br /><br /> Aby uzyskać więcej informacji zobacz sekcję uwagi poniżej. |
+| Okno | REG_SZ | *\<IDENTYFIKATOR GUID &GT;* | Identyfikator GUID okna, do którego okna narzędzi mogą być połączone lub z zakładkami. Identyfikator GUID może należeć do jednej z własnego systemu windows, czy systemu windows w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. |
+| Orientacja | REG_SZ | "Left"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Dolnej" | Zobacz sekcję uwagi poniżej. |
+| DontForceCreate | REG_DWORD | 0 lub 1 | Gdy ten wpis jest obecny, a jego wartość nie wynosi zero, okno jest załadowany, ale nie natychmiast wyświetlone. |
+
 ### <a name="comments"></a>Komentarze  
- Wpis orientacji definiuje pozycji, gdy okno narzędzia stacje dokujące po dwukrotnym kliknięciu pasku tytułu. Pozycja jest określana względem okna określony we wpisie okna. Jeśli wpis styl jest ustawiony na "Połączonej", wpis orientacji może być "Lewo", "Prawej", "Top" lub "Bottom". Jeśli wpis stylu "Kartach" orientację wpis może być "Left" lub "Prawej" i określa, gdzie jest dodawany karcie. W przypadku wejścia styl "Float", najpierw przesunięty okna narzędzia. Po dwukrotnym kliknięciu paska tytułu Zastosuj wpisy orientację i okna, a okno używa stylu "Kartach". Jeżeli styl jest "AlwaysFloat", nie zadokowane okna narzędzia. Jeżeli styl jest "MDI", okna narzędzi jest powiązana z obszarem MDI i okno wpis zostanie zignorowany.  
-  
+ Wpis orientacji definiuje położenie, gdy okno narzędzia dokowane po dwukrotnym kliknięciu paska tytułu. Pozycja jest określana względem okna określony we wpisie okna. Jeśli wpis stylu jest ustawiony na "Połączone", wpis orientacji może być "Left", "Right", "Top" lub "Dolnej". Jeśli wpis styl "Kartach", orientacja wpis może być "Left" lub "Kliknij prawym przyciskiem myszy" i określa, gdzie dodaniu karty. W przypadku wpisu styl "Float", najpierw liczby zmiennoprzecinkowe okna narzędzia. Po dwukrotnym kliknięciu na pasku tytułu Zastosuj wpisy orientacji i okna, a okno używa stylu "Kartach". Okna narzędzi nie może być zadokowane, jeśli wpis stylu jest "AlwaysFloat". Jeśli wpis stylu jest "MDI", okna narzędzi jest połączony obszar MDI i jest ignorowany wpis okna.  
+
 ### <a name="example"></a>Przykład  
-  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -68,10 +69,10 @@ HKEY_LOCAL_MACHINE\
               Style           = reg_sz: Tabbed  
               Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}  
 ```  
-  
+
 ## <a name="tool-window-visibility"></a>Widoczność okna narzędzi  
- Wartości w podkluczu widoczność Opcjonalnie określ ustawienia widoczności okna narzędzia. Nazwy wartości są używane do przechowywania identyfikatorów GUID poleceń, które wymagają widoczność okna. Jeśli polecenie zostanie wykonane, IDE gwarantuje, że okno narzędzia jest utworzony i stają się widoczne.  
-  
+ Wartości w podkluczu widoczność Opcjonalnie określ ustawienia widoczność okna narzędzi. Nazwy wartości są używane do przechowywania identyfikatorów GUID poleceń, które wymagają widoczność okna. Jeśli polecenie jest wykonywane, IDE gwarantuje, że okno narzędzia jest utworzony i widoczne.  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -86,14 +87,14 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_dword:  
                 <GUID>    = reg_sz:  
 ```  
-  
+
 |Nazwa|Typ|Dane|Opis|  
 |----------|----------|----------|-----------------|  
-|(Domyślnie)|REG_SZ|Brak|Pozostaw pole puste.|  
-|*\<IDENTYFIKATOR GUID &GT;*|REG_DWORD lub REG_SZ|0 lub ciąg opisujący.|Opcjonalny. Nazwa wejścia musi być identyfikator GUID polecenia wymagające widoczności. Wartość zawiera tylko ciąg informacyjny. Wartość jest zazwyczaj `reg_dword` równa 0.|  
-  
+|(Domyślnie)|REG_SZ|Brak|Pozostaw puste.|  
+|*\<IDENTYFIKATOR GUID &GT;*|REG_DWORD lub REG_SZ|0 lub opisowy ciąg.|Opcjonalna. Nazwa wejścia musi być identyfikator GUID polecenia wymagające widoczności. Wartość zawiera tylko ciąg informacyjny. Zazwyczaj wartość `reg_dword` równa 0.|  
+
 ### <a name="example"></a>Przykład  
-  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -108,6 +109,6 @@ HKEY_LOCAL_MACHINE\
                 {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000  
                 {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
 ```  
-  
+
 ## <a name="see-also"></a>Zobacz też  
  [Pakiety VSPackage](../extensibility/internals/vspackages.md)

@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 78d190e843aa51c794fc41c803cef3fce21005f9
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174387"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864130"
 ---
 # <a name="create-relationships-between-datasets"></a>Tworzenie relacji między zestawami danych
 Zestawy danych, które zawierają dane powiązane tabele użyj <xref:System.Data.DataRelation> obiekty do reprezentowania relacji nadrzędny/podrzędny między tabelami i zwrócić powiązanych rekordów od siebie nawzajem. Dodawanie powiązanych tabel do zestawów danych przy użyciu **Kreatora konfiguracji źródła danych**, lub **Projektanta obiektów Dataset**, tworzy i konfiguruje <xref:System.Data.DataRelation> obiekt dla Ciebie.
@@ -58,7 +58,7 @@ W ramach ograniczeń klucza obcego można określić reguły więzów integralno
 Reguły, które można wprowadzić są określone w <xref:System.Data.Rule> wyliczenie i są wymienione w poniższej tabeli.
 
 |Zasada ograniczenia PRIMARY key obcych|Akcja|
-|----------------------------------|------------|
+| - |------------|
 |<xref:System.Data.Rule.Cascade>|Zmiana (update lub delete), wprowadzone do nadrzędnego rekordu jest również w powiązanych rekordach w tabeli podrzędnej.|
 |<xref:System.Data.Rule.SetNull>|Rekordy podrzędne nie są usuwane, ale ustawiono klucza obcego w rekordy podrzędne <xref:System.DBNull>. To ustawienie, rekordy podrzędne może pozostać "porzucone" — oznacza to, że ich nie mają relacji z rekordów nadrzędnych. **Uwaga:** przy użyciu tej reguły może spowodować nieprawidłowe dane w tabeli podrzędnej.|
 |<xref:System.Data.Rule.SetDefault>|Klucza obcego w powiązanych rekordach podrzędnych jest ustawiona na wartość domyślną (jak ustalono przez wartość z kolumny <xref:System.Data.DataColumn.DefaultValue%2A> właściwości).|

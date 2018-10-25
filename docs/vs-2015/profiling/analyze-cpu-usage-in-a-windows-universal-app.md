@@ -20,12 +20,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a7f39e3210d898e07f96f3ff787915953148e008
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250721"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833606"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analizowanie użycia procesora CPU w aplikacji Windows Universal
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,27 +55,27 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> Zbieranie danych użycia procesora CPU  
  ![Uruchamianie kompilacji wydania aplikacji w symulatorze](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
-1.  W programie Visual Studio, Ustaw cel wdrożenia **symulator** i konfigurację rozwiązania na **wersji**.  
+1. W programie Visual Studio, Ustaw cel wdrożenia **symulator** i konfigurację rozwiązania na **wersji**.  
   
-    -   Uruchamianie aplikacji w symulatorze pozwala łatwo przełączać się między aplikacją i środowisku IDE programu Visual Studio.  
+   -   Uruchamianie aplikacji w symulatorze pozwala łatwo przełączać się między aplikacją i środowisku IDE programu Visual Studio.  
   
-    -   Ta aplikacja działa w **wersji** tryb zapewnia lepsze widok rzeczywistej wydajności aplikacji.  
+   -   Ta aplikacja działa w **wersji** tryb zapewnia lepsze widok rzeczywistej wydajności aplikacji.  
   
-2.  Na **debugowania** menu, wybierz **Profiler wydajności...** .  
+2. Na **debugowania** menu, wybierz **Profiler wydajności...** .  
   
-3.  W Centrum wydajności i diagnostyki, wybierz **użycie procesora CPU** , a następnie wybierz **Start**.  
+3. W Centrum wydajności i diagnostyki, wybierz **użycie procesora CPU** , a następnie wybierz **Start**.  
   
-     ![Uruchamianie sesji diagnostyki CpuUsage](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
+    ![Uruchamianie sesji diagnostyki CpuUsage](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
   
-4.  Po uruchomieniu aplikacji, kliknij przycisk **uzyskać maksymalna liczba**. Poczekaj około sekundy po wyświetleniu danych wyjściowych, a następnie wybierz **uzyskać maksymalny numer Async**. Oczekiwania między kliknięć przycisków sprawia, że ułatwiają izolowanie przycisk kliknij procedur w raport diagnostyczny.  
+4. Po uruchomieniu aplikacji, kliknij przycisk **uzyskać maksymalna liczba**. Poczekaj około sekundy po wyświetleniu danych wyjściowych, a następnie wybierz **uzyskać maksymalny numer Async**. Oczekiwania między kliknięć przycisków sprawia, że ułatwiają izolowanie przycisk kliknij procedur w raport diagnostyczny.  
   
-5.  Gdy zostanie wyświetlony drugi wiersz danych wyjściowych, wybierz **Zatrzymaj Kolekcjonowanie** w Centrum wydajności i diagnostyki.  
+5. Gdy zostanie wyświetlony drugi wiersz danych wyjściowych, wybierz **Zatrzymaj Kolekcjonowanie** w Centrum wydajności i diagnostyki.  
   
- ![Zatrzymaj zbieranie danych CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Zatrzymaj zbieranie danych CpuUsage](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- Narzędzie użycie procesora CPU analizuje dane i wyświetla raport.  
+   Narzędzie użycie procesora CPU analizuje dane i wyświetla raport.  
   
- ![Raport CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![Raport CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a> Analizowanie raportu użycia procesora CPU  
   

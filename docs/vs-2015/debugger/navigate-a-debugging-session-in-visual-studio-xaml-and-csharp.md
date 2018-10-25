@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7e0acee43c05332dd3f9f10eecb7ea55b02671f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306309"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842643"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Nawigowanie po sesji debugowania w programie Visual Studio (Xaml i C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,29 +93,29 @@ Ten przewodnik Szybki start pokazuje, jak nawigować po sesji debugowania progra
   
  Gdy wchodzisz do wiersza kodu debuger wykonuje jedną z następujących czynności:  
   
--   Następna instrukcja nie jest wywołanie funkcji w rozwiązaniu, debuger wykonuje instrukcję, przechodzi do następnej instrukcji, a następnie zawiesza wykonywanie.  
+- Następna instrukcja nie jest wywołanie funkcji w rozwiązaniu, debuger wykonuje instrukcję, przechodzi do następnej instrukcji, a następnie zawiesza wykonywanie.  
   
--   Jeśli instrukcja jest wywołaniem funkcji w rozwiązaniu, debuger przechodzi do punktu wejścia wywoływanej funkcji, a następnie zawieszenie wykonywania.  
+- Jeśli instrukcja jest wywołaniem funkcji w rozwiązaniu, debuger przechodzi do punktu wejścia wywoływanej funkcji, a następnie zawieszenie wykonywania.  
   
- Kontynuuj wkraczać do instrukcji przykład1, aż do osiągnięcia punktu wyjścia. Do usuwania błędów podkreśli zamykający nawias klamrowy metody.  
+  Kontynuuj wkraczać do instrukcji przykład1, aż do osiągnięcia punktu wyjścia. Do usuwania błędów podkreśli zamykający nawias klamrowy metody.  
   
- **Sprawdź wartości zmiennych w poradach dotyczących danych.** Po umieszczeniu wskaźnika myszy nazwę zmiennej, nazwę, wartość i typ zmiennej jest wyświetlany w oknie z poradami danych.  
+  **Sprawdź wartości zmiennych w poradach dotyczących danych.** Po umieszczeniu wskaźnika myszy nazwę zmiennej, nazwę, wartość i typ zmiennej jest wyświetlany w oknie z poradami danych.  
   
- ![Porada danych debugera](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
+  ![Porada danych debugera](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
   
- Umieść kursor myszy nad zmienną `a`. Należy pamiętać, wpisz nazwę, wartość i dane. Umieść kursor myszy nad zmienną `methodTrack`. Ponownie należy pamiętać, wpisz nazwę, wartość i dane.  
+  Umieść kursor myszy nad zmienną `a`. Należy pamiętać, wpisz nazwę, wartość i dane. Umieść kursor myszy nad zmienną `methodTrack`. Ponownie należy pamiętać, wpisz nazwę, wartość i dane.  
   
- **Sprawdź wartości zmiennej w oknie zmienne lokalne.** Na **debugowania** menu wskaż **Windows**, a następnie wybierz **lokalne**. (Klawiatura: Alt + 4).  
+  **Sprawdź wartości zmiennej w oknie zmienne lokalne.** Na **debugowania** menu wskaż **Windows**, a następnie wybierz **lokalne**. (Klawiatura: Alt + 4).  
   
- ![Okno zmiennych lokalnych](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
+  ![Okno zmiennych lokalnych](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
   
- Zmienne lokalne systemu windows jest widok drzewa, parametrów i zmiennych w funkcji. Węzły podrzędne samego obiektu są właściwości zmiennej obiektu. `this` Zmienna jest ukryty parametr w każdej metody obiektu, który reprezentuje sam obiekt. W tym przypadku reprezentuje klasy MainPage. Ponieważ `methodTrack` jest elementem członkowskim typu klasy, jego wartość i dane MainPage są wymienione w wierszu poniżej `this`. Rozwiń `this` węzeł, aby wyświetlić `methodTrack` informacji.  
+  Zmienne lokalne systemu windows jest widok drzewa, parametrów i zmiennych w funkcji. Węzły podrzędne samego obiektu są właściwości zmiennej obiektu. `this` Zmienna jest ukryty parametr w każdej metody obiektu, który reprezentuje sam obiekt. W tym przypadku reprezentuje klasy MainPage. Ponieważ `methodTrack` jest elementem członkowskim typu klasy, jego wartość i dane MainPage są wymienione w wierszu poniżej `this`. Rozwiń `this` węzeł, aby wyświetlić `methodTrack` informacji.  
   
- **Dodaj wyrażenie kontrolne dla zmiennej methodTrack.** `methodWatch` Zmienna jest używana w tym przewodniku Szybki start, aby pokazać metody o nazwie w przykładach. Aby ułatwić wyświetlić wartość zmiennej, należy go dodać do okna czujki. Kliknij prawym przyciskiem myszy nazwę zmiennej w oknie zmienne lokalne, a następnie wybierz **Dodaj czujkę**.  
+  **Dodaj wyrażenie kontrolne dla zmiennej methodTrack.** `methodWatch` Zmienna jest używana w tym przewodniku Szybki start, aby pokazać metody o nazwie w przykładach. Aby ułatwić wyświetlić wartość zmiennej, należy go dodać do okna czujki. Kliknij prawym przyciskiem myszy nazwę zmiennej w oknie zmienne lokalne, a następnie wybierz **Dodaj czujkę**.  
   
- ![W oknie czujki](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
+  ![W oknie czujki](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
   
- Możesz obejrzeć wiele zmiennych w oknie czujki. Wartości zmiennych obserwowana, takie jak wartości zmiennych lokalnych i okien Porada danych, są aktualizowane, zawsze wtedy, gdy wykonanie programu jest zawieszone. Zmienne można również dodać do okna czujki, z poziomu edytora kodu. Wybierz zmienną, aby obejrzeć, kliknij prawym przyciskiem myszy, a następnie wybierz **Dodaj czujkę**.  
+  Możesz obejrzeć wiele zmiennych w oknie czujki. Wartości zmiennych obserwowana, takie jak wartości zmiennych lokalnych i okien Porada danych, są aktualizowane, zawsze wtedy, gdy wykonanie programu jest zawieszone. Zmienne można również dodać do okna czujki, z poziomu edytora kodu. Wybierz zmienną, aby obejrzeć, kliknij prawym przyciskiem myszy, a następnie wybierz **Dodaj czujkę**.  
   
 ##  <a name="BKMK_StepIntoOverOut"></a> Krok do, przez niego lub poza metody  
  W przeciwieństwie do przechodzenie krok po kroku, do metody wywoływane przez metody nadrzędnego, pominięcie metody wykonuje metodę podrzędnej, a następnie zawieszenie wykonywania w przypadku wywoływania metody jako element nadrzędny wznawia działanie. Jeśli znasz sposób metoda działa i pewności, czy jego wykonanie nie ma wpływu na problem, który badania, może przekraczanie metody.  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b5647a62064857bca6a6352a14fe56eff4386f9
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: fa564919abcfb4c8bd94fbaf139b69f2375deebd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497999"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825819"
 ---
 # <a name="how-to-use-the-activity-log"></a>Porady: Korzystanie z dziennika aktywności
 Pakietów VSPackage może zapisywać komunikaty w dzienniku aktywności. Ta funkcja jest szczególnie przydatna podczas debugowania pakietów VSPackage w środowisku handlu detalicznego.  
@@ -47,15 +47,15 @@ Pakietów VSPackage może zapisywać komunikaty w dzienniku aktywności. Ta funk
   
 ## <a name="to-examine-the-activity-log"></a>Aby sprawdzić dziennik aktywności  
   
-1.  Uruchom program Visual Studio z [/Log](../ide/reference/log-devenv-exe.md) przełącznik wiersza polecenia, aby zapisać plik ActivityLog.xml na dysku podczas sesji.
+1. Uruchom program Visual Studio z [/Log](../ide/reference/log-devenv-exe.md) przełącznik wiersza polecenia, aby zapisać plik ActivityLog.xml na dysku podczas sesji.
 
-2.  Po zamknięciu programu Visual Studio, Znajdź dziennika aktywności w podfolderze dla danych programu Visual Studio: **% AppData %* \Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
+2. Po zamknięciu programu Visual Studio, Znajdź dziennika aktywności w podfolderze dla danych programu Visual Studio:  <em>*% AppData %</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*.  
   
-3.  Otwórz dziennik aktywności, za pomocą dowolnego edytora tekstów. Poniżej przedstawiono typowe wpis:  
+3. Otwórz dziennik aktywności, za pomocą dowolnego edytora tekstów. Poniżej przedstawiono typowe wpis:  
   
-    ```  
-    Called for: Company.MyApp.MyAppPackage ...  
-    ```  
+   ```  
+   Called for: Company.MyApp.MyAppPackage ...  
+   ```  
   
 ## <a name="robust-programming"></a>Skuteczne programowanie  
  Ponieważ dziennik aktywności jest usługą, dziennik aktywności jest niedostępna w Konstruktorze pakietu VSPackage.  

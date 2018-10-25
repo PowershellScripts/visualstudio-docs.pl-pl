@@ -25,12 +25,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8ece4edf9ee91446565f2790392bd6d478fd3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818331"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Szybki start: Debugowanie kodu JavaScript przy użyciu konsoli
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
  Okna konsoli języka JavaScript umożliwia:  
   
--   Wysyłanie obiektów, wartości i komunikaty z aplikacji w oknie konsoli.  
+- Wysyłanie obiektów, wartości i komunikaty z aplikacji w oknie konsoli.  
   
--   Wyświetlanie i modyfikowanie wartości zmiennych lokalnych i globalnych w działającej aplikacji.  
+- Wyświetlanie i modyfikowanie wartości zmiennych lokalnych i globalnych w działającej aplikacji.  
   
--   Wizualizatory obiekt widoku.  
+- Wizualizatory obiekt widoku.  
   
--   Uruchom kod JavaScript, który jest wykonywany w ramach bieżącego kontekstu skryptu.  
+- Uruchom kod JavaScript, który jest wykonywany w ramach bieżącego kontekstu skryptu.  
   
--   Wyświetl błędy języka JavaScript i wyjątków, oprócz wyjątków modelu DOM (Document Object) i środowiska wykonawczego Windows.  
+- Wyświetl błędy języka JavaScript i wyjątków, oprócz wyjątków modelu DOM (Document Object) i środowiska wykonawczego Windows.  
   
--   Wykonywanie innych zadań, takich jak wyczyścić ekran. Zobacz [polecenia konsoli JavaScript](../debugger/javascript-console-commands.md) pełną listę poleceń.  
+- Wykonywanie innych zadań, takich jak wyczyścić ekran. Zobacz [polecenia konsoli JavaScript](../debugger/javascript-console-commands.md) pełną listę poleceń.  
   
- W tym temacie:  
+  W tym temacie:  
   
--   [Debugowanie przy użyciu okna konsoli języka JavaScript](#InteractiveConsole)  
+- [Debugowanie przy użyciu okna konsoli języka JavaScript](#InteractiveConsole)  
   
--   [Tryb interaktywny debugowania i podziału](#InteractiveDebuggingBreakMode)  
+- [Tryb interaktywny debugowania i podziału](#InteractiveDebuggingBreakMode)  
   
--   [Tryb jednowierszowy i trybu wielowierszowego w oknie konsoli JavaScript](#SinglelineMultilineMode)  
+- [Tryb jednowierszowy i trybu wielowierszowego w oknie konsoli JavaScript](#SinglelineMultilineMode)  
   
--   [Przełączanie kontekstu wykonywania skryptu](#Switching)  
+- [Przełączanie kontekstu wykonywania skryptu](#Switching)  
   
 > [!TIP]
 >  Jeśli okno konsoli JavaScript jest zamknięta, wybierz **debugowania**>**Windows** > **konsoli JavaScript** otworzyć go ponownie. Okno jest wyświetlane tylko podczas sesji debugowania skryptu.  

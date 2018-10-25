@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb4788e872e18d5db9c6d7c4452defc415290188
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: d009351efdd36e0d415d0e2e457f7974608ab665
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566567"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886503"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Przewodnik: Używanie klawisza skrótu z rozszerzeniem edytora
 Klawisze skrótów można odpowiedzieć w rozszerzeniu edytora. Następujące Instruktaż pokazuje, jak dodać zakończeń widok na widok tekstu przy użyciu klawisza skrótu. Ten przewodnik jest oparty na szablonie edytora zakończeń okienka ekranu, i umożliwia dodawanie zakończeń przy użyciu + znak.  
@@ -28,21 +28,21 @@ Klawisze skrótów można odpowiedzieć w rozszerzeniu edytora. Następujące In
   
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Utwórz projekt Framework (MEF) zarządzanych rozszerzeń  
   
-1.  Utwórz projekt VSIX języka C#. (W **nowy projekt** okno dialogowe, wybierz opcję **Visual C# / rozszerzalności**, następnie **projekt VSIX**.) Nazwij rozwiązanie `KeyBindingTest`.  
+1. Utwórz projekt VSIX języka C#. (W **nowy projekt** okno dialogowe, wybierz opcję **Visual C# / rozszerzalności**, następnie **projekt VSIX**.) Nazwij rozwiązanie `KeyBindingTest`.  
   
-2.  Szablon elementu zakończeń tekstu Edytor umożliwia dodanie do projektu i nadaj mu nazwę `KeyBindingTest`. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Szablon elementu zakończeń tekstu Edytor umożliwia dodanie do projektu i nadaj mu nazwę `KeyBindingTest`. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą szablonu elementu edytora](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Dodaj następujące odwołania i ustaw **CopyLocal** do `false`:  
+3. Dodaj następujące odwołania i ustaw **CopyLocal** do `false`:  
   
-     Microsoft.VisualStudio.Editor  
+    Microsoft.VisualStudio.Editor  
   
-     Microsoft.VisualStudio.OLE.Interop  
+    Microsoft.VisualStudio.OLE.Interop  
   
-     Microsoft.VisualStudio.Shell.14.0  
+    Microsoft.VisualStudio.Shell.14.0  
   
-     Microsoft.VisualStudio.TextManager.Interop  
+    Microsoft.VisualStudio.TextManager.Interop  
   
- W pliku klasy KeyBindingTest należy zmienić nazwę klasy do PurpleCornerBox. Umożliwia żarówki, która pojawia się na lewym marginesie wprowadzić odpowiednie zmiany. W konstruktorze, Zmień nazwę warstwy zakończeń z **KeyBindingTest** do **PurpleCornerBox**:  
+   W pliku klasy KeyBindingTest należy zmienić nazwę klasy do PurpleCornerBox. Umożliwia żarówki, która pojawia się na lewym marginesie wprowadzić odpowiednie zmiany. W konstruktorze, Zmień nazwę warstwy zakończeń z **KeyBindingTest** do **PurpleCornerBox**:  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
@@ -204,73 +204,73 @@ Najpierw zaktualizuj odwołań Nuget projektu do odwołania najnowsze Edytor int
 
 Program obsługi poleceń jest implementacją <xref:Microsoft.VisualStudio.Commanding.ICommandHandler%601>, która obsługuje polecenie przez utworzenie wystąpienia zakończeń.  
   
-1.  Dodaj plik klasy i nadaj mu nazwę `KeyBindingCommandHandler`.  
+1. Dodaj plik klasy i nadaj mu nazwę `KeyBindingCommandHandler`.  
   
-2.  Dodaj następujące instrukcje using.  
+2. Dodaj następujące instrukcje using.  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Commanding;
-    using Microsoft.VisualStudio.Text.Editor;
-    using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
-    using Microsoft.VisualStudio.Utilities;
-    using System.ComponentModel.Composition;   
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Commanding;
+   using Microsoft.VisualStudio.Text.Editor;
+   using Microsoft.VisualStudio.Text.Editor.Commanding.Commands;
+   using Microsoft.VisualStudio.Utilities;
+   using System.ComponentModel.Composition;   
+   ```  
   
-3.  Klasa o nazwie KeyBindingCommandHandler powinien dziedziczyć `ICommandHandler<TypeCharCommandArgs>`i wyeksportuj go jako <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
+3. Klasa o nazwie KeyBindingCommandHandler powinien dziedziczyć `ICommandHandler<TypeCharCommandArgs>`i wyeksportuj go jako <xref:Microsoft.VisualStudio.Commanding.ICommandHandler>:
   
-    ```csharp  
-    [Export(typeof(ICommandHandler))]
-    [ContentType("text")]
-    [Name("KeyBindingTest")]
-    internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
-    ```  
+   ```csharp  
+   [Export(typeof(ICommandHandler))]
+   [ContentType("text")]
+   [Name("KeyBindingTest")]
+   internal class KeyBindingCommandHandler : ICommandHandler<TypeCharCommandArgs>  
+   ```  
   
-4.  Dodaj nazwę wyświetlaną program obsługi poleceń:  
+4. Dodaj nazwę wyświetlaną program obsługi poleceń:  
   
-    ```csharp  
-    public string DisplayName => "KeyBindingTest";
-    ```  
+   ```csharp  
+   public string DisplayName => "KeyBindingTest";
+   ```  
     
-5.  Implementowanie `GetCommandState()` metody w następujący sposób. Ponieważ ten program obsługi poleceń obsługuje polecenie TYPECHAR Edytor rdzeni, można delegować, umożliwiając polecenie, aby podstawowy edytor.
+5. Implementowanie `GetCommandState()` metody w następujący sposób. Ponieważ ten program obsługi poleceń obsługuje polecenie TYPECHAR Edytor rdzeni, można delegować, umożliwiając polecenie, aby podstawowy edytor.
   
-    ```csharp  
-    public CommandState GetCommandState(TypeCharCommandArgs args)
-    {
-        return CommandState.Unspecified;
-    } 
-    ```  
+   ```csharp  
+   public CommandState GetCommandState(TypeCharCommandArgs args)
+   {
+       return CommandState.Unspecified;
+   } 
+   ```  
   
-6.  Implementowanie `ExecuteCommand()` metodę, tak że dodaje purpurowy pola do widoku, jeśli znak plus (**+**) wpisany znak. 
+6. Implementowanie `ExecuteCommand()` metodę, tak że dodaje purpurowy pola do widoku, jeśli znak plus (**+**) wpisany znak. 
   
-    ```csharp  
-    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
-    {
-        if (args.TypedChar == '+')
-        {
-            bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
-                "KeyBindingTextAdorned", out bool adorned) && adorned;
-            if (!alreadyAdorned)
-            {
-                new PurpleCornerBox((IWpfTextView)args.TextView);
-                args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
-            }
-        }
+   ```csharp  
+   public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)
+   {
+       if (args.TypedChar == '+')
+       {
+           bool alreadyAdorned = args.TextView.Properties.TryGetProperty(
+               "KeyBindingTextAdorned", out bool adorned) && adorned;
+           if (!alreadyAdorned)
+           {
+               new PurpleCornerBox((IWpfTextView)args.TextView);
+               args.TextView.Properties.AddProperty("KeyBindingTextAdorned", true);
+           }
+       }
 
-        return false;
-    }
-    ```  
- 7. Skopiuj definicję warstwy zakończeń z *KeyBindingTestTextViewCreationListener.cs* plik *KeyBindingCommandHandler.cs* , a następnie usuń  *KeyBindingTestTextViewCreationListener.cs* pliku:
+       return false;
+   }
+   ```  
+   7. Skopiuj definicję warstwy zakończeń z *KeyBindingTestTextViewCreationListener.cs* plik *KeyBindingCommandHandler.cs* , a następnie usuń  *KeyBindingTestTextViewCreationListener.cs* pliku:
  
-    ```csharp  
-    /// <summary>
-    /// Defines the adornment layer for the adornment. This layer is ordered
-    /// after the selection layer in the Z-order.
-    /// </summary>
-    [Export(typeof(AdornmentLayerDefinition))]
-    [Name("PurpleCornerBox")]
-    [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
-    private AdornmentLayerDefinition editorAdornmentLayer;    
-    ```  
+   ```csharp  
+   /// <summary>
+   /// Defines the adornment layer for the adornment. This layer is ordered
+   /// after the selection layer in the Z-order.
+   /// </summary>
+   [Export(typeof(AdornmentLayerDefinition))]
+   [Name("PurpleCornerBox")]
+   [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
+   private AdornmentLayerDefinition editorAdornmentLayer;    
+   ```  
 
 ## <a name="make-the-adornment-appear-on-every-line"></a>Wprowadź zakończeń są wyświetlane w każdym wierszu  
 

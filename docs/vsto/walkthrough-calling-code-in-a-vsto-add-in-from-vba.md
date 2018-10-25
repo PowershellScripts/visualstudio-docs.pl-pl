@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3bc8154be515bcf0509b2458534fed7c1c520e4e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513649"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843824"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Wskazówki: Wywoływanie kodu w dodatku narzędzi VSTO dla programów z VBA
   W tym przewodniku pokazano, jak udostępnić obiektu w dodatku narzędzi VSTO dla programów do innych rozwiązań programu Microsoft Office, w tym Visual Basic for Applications (VBA) i dodatki COM, VSTO.  
@@ -37,13 +37,13 @@ ms.locfileid: "39513649"
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Definiowanie klasy, które mogą być udostępniane do innych rozwiązań pakietu Office.  
+- Definiowanie klasy, które mogą być udostępniane do innych rozwiązań pakietu Office.  
   
--   Udostępnia klasy do innych rozwiązań pakietu Office.  
+- Udostępnia klasy do innych rozwiązań pakietu Office.  
   
--   Wywoływanie metody klasy z kodu VBA.  
+- Wywoływanie metody klasy z kodu VBA.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  

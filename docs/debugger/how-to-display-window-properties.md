@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a345f5ac8fc6a77b10ef549a6c2be859106ee00
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 204121f40fa1cfc32040185286e7c566bbb59214
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872424"
 ---
 # <a name="how-to-display-window-properties"></a>Porady: wyświetlanie właściwości okna
-Aby dowiedzieć się więcej na temat okna na liście [widoku systemu Windows](../debugger/windows-view.md), użyj [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md).  
+Aby dowiedzieć się więcej na temat wymienionych w oknie [widoku Windows](../debugger/windows-view.md), użyj [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md).  
   
 ### <a name="to-open-the-window-properties-dialog-box"></a>Aby otworzyć okno dialogowe Właściwości okna  
   
-1.  Wybierz element, a następnie wybierz pozycję **właściwości** z **widoku** menu.  
+1. Wybierz element, a następnie wybierz **właściwości** z **widoku** menu.  
   
- Okno dialogowe właściwości nie są modalne. Kliknij element element w widoku okna, okno dialogowe automatycznie odświeżane informacje na temat wybranego elementu.
+   Okno dialogowe właściwości nie są modalnych. Po kliknięciu elementu element w oknie widoku okna dialogowego automatycznie odświeżane informacje na temat każdego wybranego elementu.

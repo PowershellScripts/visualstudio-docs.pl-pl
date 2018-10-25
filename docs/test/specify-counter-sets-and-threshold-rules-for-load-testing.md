@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4277935750aa4d0ba081f5117806892bbf948556
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382373"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879847"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Określanie zbiorów liczników oraz zasad progu dla komputerów w teście obciążeniowym
 
@@ -38,7 +38,7 @@ Należy dodać serwery w ramach testu do listy komputerów, na których można z
 ## <a name="tasks"></a>Zadania
 
 |Zadania|Skojarzone tematy|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Zarządzanie zbiorami liczników dla testu obciążeniowego:** po utworzeniu testu obciążenia, można edytować zestaw liczników w edytorze testu obciążeniowego. Zarządzanie zbiorami liczników obejmuje, wybierając zestaw komputerów, z których chcesz zbierać dane dotyczące wydajności i przypisywanie zbiór zestawów liczników, które mają być zbierane z każdego komputera. Zarządzasz licznikami w edytorze testu obciążenia.|-   [Porady: Zarządzanie zbiorami liczników](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Dodawanie zestawów liczników do testu obciążeniowego:** podczas tworzenia testu obciążeniowego za pomocą **Kreatora nowego testu obciążeniowego**, jest dodawany początkowy zestaw liczników. Oferują one zestawy wstępnie zdefiniowanych zbiorów liczników dla testu obciążeniowego. Po utworzeniu testu obciążenia, można dodać nowe liczniki do istniejących zestawów liczników za pomocą edytora testu obciążenia.|-   [Porady: Dodawanie liczników do zestawów liczników](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Porady: Dodawanie zbiorów liczników niestandardowych](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Określ reguły progu za pomocą liczników dla testu obciążeniowego:** reguły progu jest regułą, która jest ustawiona na licznik wydajności poszczególnych do monitorowania użycia zasobów systemowych podczas testu obciążeniowego. Definicje zestawu liczników zawiera wstępnie zdefiniowany próg reguły dla wielu kluczowych liczników wydajności. Reguły progów w testach obciążenia porównanie wartości licznika wydajności za pomocą wartości stałej lub inną wartość licznika wydajności.|-   [Porady: Dodawanie reguły progu](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
@@ -67,7 +67,7 @@ Wybierz odpowiednią **częstotliwość próbkowania** uruchomieniowe właściwo
 Poniżej przedstawiono niektóre wytyczne dotyczące częstotliwości próbkowania.
 
 |Czas trwania testu obciążenia|Częstotliwość próbkowania zalecane|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 godzina|5 sekund|
 |1−8 godzin|15 sekund|
 |8−24 godzin|30 sekund|

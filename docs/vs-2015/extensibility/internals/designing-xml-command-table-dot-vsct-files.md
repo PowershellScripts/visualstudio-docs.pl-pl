@@ -15,12 +15,12 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb75a161feffa049ebf7152d6a76d70f364a98ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8626a7c1c4fd38e5955a364699eb1b047bc2e5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839209"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Projektowanie tabeli poleceń XML (. Pliki Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,41 +37,41 @@ Pliku XML polecenia tabeli (vsct) opisano układ i wygląd elementów polecenia 
 ## <a name="differences-between-ctc-and-vsct-files"></a>Różnice między plikami .ctc i vsct  
  Znaczenie za tagi XML w pliku vsct są takie same, zgodnie z programami znajdującymi się na obecnie przestarzały format pliku .ctc, ich wdrażania jest nieco inna.  
   
--   Nowy  **\<extern >** tag jest, gdzie możesz się odwoływać inne pliki .h kompilację, takie jak te dla [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] paska narzędzi.  
+- Nowy  **\<extern >** tag jest, gdzie możesz się odwoływać inne pliki .h kompilację, takie jak te dla [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] paska narzędzi.  
   
--   Gdy vsct pliki pomocy technicznej **/ include** instrukcji, jak pliki .ctc zawiera także funkcje nową \< **importowanie >** elementu. Różnica polega na tym, **/ include** wiąże **wszystkie** informacji, ale \< **importowania >** wiąże tylko nazwy.  
+- Gdy vsct pliki pomocy technicznej **/ include** instrukcji, jak pliki .ctc zawiera także funkcje nową \< **importowanie >** elementu. Różnica polega na tym, **/ include** wiąże **wszystkie** informacji, ale \< **importowania >** wiąże tylko nazwy.  
   
--   Gdy pliki .ctc wymagają pliku nagłówka, w której definiujesz swoje dyrektywy preprocesora, jeden nie jest wymagane dla .vsct — pliki. Zamiast tego należy umieścić swoje dyrektywy w tabeli symboli znajduje się w  **\<Symbol >** elementów znajdujących się w dolnej części pliku vsct.  
+- Gdy pliki .ctc wymagają pliku nagłówka, w której definiujesz swoje dyrektywy preprocesora, jeden nie jest wymagane dla .vsct — pliki. Zamiast tego należy umieścić swoje dyrektywy w tabeli symboli znajduje się w  **\<Symbol >** elementów znajdujących się w dolnej części pliku vsct.  
   
--   Funkcja pliki vsct  **\<adnotacja >** znacznik, który umożliwia osadzanie wszelkie informacje, które lubisz, takie jak informacje o lub nawet obrazy.  
+- Funkcja pliki vsct  **\<adnotacja >** znacznik, który umożliwia osadzanie wszelkie informacje, które lubisz, takie jak informacje o lub nawet obrazy.  
   
--   Wartości są przechowywane jako atrybuty w elemencie.  
+- Wartości są przechowywane jako atrybuty w elemencie.  
   
--   Flag poleceń mogą być przechowywane osobno lub skumulowany.  Funkcja IntelliSense, jednak nie działa na flag skumulowany poleceń. Aby uzyskać więcej informacji na temat flag poleceń, zobacz [Command Flag, Element](../../extensibility/command-flag-element.md).  
+- Flag poleceń mogą być przechowywane osobno lub skumulowany.  Funkcja IntelliSense, jednak nie działa na flag skumulowany poleceń. Aby uzyskać więcej informacji na temat flag poleceń, zobacz [Command Flag, Element](../../extensibility/command-flag-element.md).  
   
--   Można określić wiele typów, takie jak podział listy rozwijane, combos itp.  
+- Można określić wiele typów, takie jak podział listy rozwijane, combos itp.  
   
--   Identyfikatory GUID nie sprawdzania poprawności.  
+- Identyfikatory GUID nie sprawdzania poprawności.  
   
--   Każdy element interfejsu użytkownika ma ciąg, który reprezentuje tekst, który jest wyświetlany z nim.  
+- Każdy element interfejsu użytkownika ma ciąg, który reprezentuje tekst, który jest wyświetlany z nim.  
   
--   Nadrzędny jest opcjonalne. W przypadku pominięcia jest używana wartość "Nieznany grupy".  
+- Nadrzędny jest opcjonalne. W przypadku pominięcia jest używana wartość "Nieznany grupy".  
   
--   Ikona argument jest opcjonalny.  
+- Ikona argument jest opcjonalny.  
   
--   Sekcja mapy bitowej — taka sama jak .ctc pliku, z tą różnicą, że można teraz określić nazwę pliku, za pośrednictwem href, który będzie pobierany przez kompilator vsct.exe w czasie kompilacji.  
+- Sekcja mapy bitowej — taka sama jak .ctc pliku, z tą różnicą, że można teraz określić nazwę pliku, za pośrednictwem href, który będzie pobierany przez kompilator vsct.exe w czasie kompilacji.  
   
--   ResID — stary identyfikator zasobu mapy bitowej mogą być używane i nadal działa tak samo jak w poniższym .ctc plików.  
+- ResID — stary identyfikator zasobu mapy bitowej mogą być używane i nadal działa tak samo jak w poniższym .ctc plików.  
   
--   HRef — nową metodę, która pozwala określić nazwę pliku zasobu mapy bitowej. Przyjęto założenie, że wszystkie są używane, dzięki czemu można pominąć używanej sekcji. Kompilator wyszuka najpierw zasoby lokalne dla pliku, następnie na net udziałów, a wszelkie zasoby zdefiniowane przez przełącznik/i.  
+- HRef — nową metodę, która pozwala określić nazwę pliku zasobu mapy bitowej. Przyjęto założenie, że wszystkie są używane, dzięki czemu można pominąć używanej sekcji. Kompilator wyszuka najpierw zasoby lokalne dla pliku, następnie na net udziałów, a wszelkie zasoby zdefiniowane przez przełącznik/i.  
   
--   Powiązanie klawiszy — Nie trzeba już Określ emulator. Jeśli określono, kompilator zakłada, że edytor i emulatora są takie same.  
+- Powiązanie klawiszy — Nie trzeba już Określ emulator. Jeśli określono, kompilator zakłada, że edytor i emulatora są takie same.  
   
--   Keychord — został porzucony. Nowy format jest klucz1, Mod1, klucz2, Mod2.  Można określić znak, szesnastkowo lub VK stałą.  
+- Keychord — został porzucony. Nowy format jest klucz1, Mod1, klucz2, Mod2.  Można określić znak, szesnastkowo lub VK stałą.  
   
- Nowy kompilator, vsct.exe, kompiluje pliki vsct i .ctc. Stary kompilatora ctc.exe, jednak nie rozpoznaje ani nie Kompiluj .vsct — pliki.  
+  Nowy kompilator, vsct.exe, kompiluje pliki vsct i .ctc. Stary kompilatora ctc.exe, jednak nie rozpoznaje ani nie Kompiluj .vsct — pliki.  
   
- Kompilator vsct.exe służy do konwertowania istniejącego pliku .cto do pliku vsct. Aby uzyskać więcej informacji na ten temat, zobacz [porady: tworzenie. Plik Vsct z istniejącej. Dyrektor ds. technologii pliku](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  Kompilator vsct.exe służy do konwertowania istniejącego pliku .cto do pliku vsct. Aby uzyskać więcej informacji na ten temat, zobacz [porady: tworzenie. Plik Vsct z istniejącej. Dyrektor ds. technologii pliku](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>Elementy pliku vsct  
  Tabeli poleceń ma następujące hierarchii i elementy:  

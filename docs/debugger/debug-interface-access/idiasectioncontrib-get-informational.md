@@ -1,5 +1,5 @@
 ---
-title: IDiaSectionContrib::get_informational | Dokumentacja firmy Microsoft
+title: Idiasectioncontrib::get_informational — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b8d991a5444c719696db62ab6f9c3374015ea7e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4e077e0d2ac410601698d50c2c6ee0d8ede5cbe9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462146"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875161"
 ---
 # <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
 Pobiera flagę wskazującą, czy sekcja zawiera komentarze lub podobne informacje.  
@@ -37,10 +37,10 @@ HRESULT get_informational(
  [out] Zwraca `TRUE` Jeśli sekcja zawiera komentarze lub inne informacje; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Zazwyczaj .directive sekcja zawiera informacje.  
+ Zazwyczaj sekcji .directive zawiera informacje.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

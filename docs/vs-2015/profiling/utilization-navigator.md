@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55a5c6eada52cead60abb830a5a873cc71cac194
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c6550e4d9af994be1b703b56ab91cb33e6fdf5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238592"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824223"
 ---
 # <a name="utilization-navigator"></a>Nawigator wykorzystania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Nawigator wykorzystania i wybrany przedział czasu
   
  Poniżej przedstawiono, jak Nawigator wykorzystania można użyć do manipulowania zakres wyświetlanych czasu:  
   
--   Można przesuwać, przeciągając przycisku suwaka w lewo lub w prawo. (Klawiatura: Przenieś fokus do przycisku suwaka, a następnie naciśnij klawisz Strzałka w lewo lub w prawo.)  
+- Można przesuwać, przeciągając przycisku suwaka w lewo lub w prawo. (Klawiatura: Przenieś fokus do przycisku suwaka, a następnie naciśnij klawisz Strzałka w lewo lub w prawo.)  
   
--   Zakres interwał można zmienić, przeciągając jeden z uchwytów. (Klawiatura: Przenieś fokus do uchwytu, a następnie naciśnij klawisz Strzałka w lewo lub w prawo.)  
+- Zakres interwał można zmienić, przeciągając jeden z uchwytów. (Klawiatura: Przenieś fokus do uchwytu, a następnie naciśnij klawisz Strzałka w lewo lub w prawo.)  
   
- Jeśli zmienisz interwał przy użyciu innej kontrolki powiększenia Concurrency Visualizer Nawigator wykorzystania aktualizacji w celu odzwierciedlenia zmiany.
+  Jeśli zmienisz interwał przy użyciu innej kontrolki powiększenia Concurrency Visualizer Nawigator wykorzystania aktualizacji w celu odzwierciedlenia zmiany.
 
 
 

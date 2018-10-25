@@ -17,12 +17,12 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: faa6c3a39b7aa8a0ca7b2788cd9946421cfe6b7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202582"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844162"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramy warstw: Zalecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +92,9 @@ Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w pr
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Aby odtwarzać istniejące zależności między warstwami  
   
--   Wybierz warstwę jednego lub wielu warstw, kliknij prawym przyciskiem myszy zaznaczonej warstwy, a następnie kliknij **Wygeneruj zależności**.  
+- Wybierz warstwę jednego lub wielu warstw, kliknij prawym przyciskiem myszy zaznaczonej warstwy, a następnie kliknij **Wygeneruj zależności**.  
   
- Zazwyczaj zobaczysz niektóre zależności, które nie powinny istnieć. Możesz edytować te zależności, aby dopasować je do zamierzonego projektu.  
+  Zazwyczaj zobaczysz niektóre zależności, które nie powinny istnieć. Możesz edytować te zależności, aby dopasować je do zamierzonego projektu.  
   
 ##  <a name="EditArchitecture"></a> Edytowanie warstw i zależności w celu przedstawienia zamierzonego projektu  
  Aby opisać zmiany, które planujesz wprowadzić do systemu lub zamierzonej architektury, umożliwia edytowanie diagramu warstwowego następujące kroki. Można też rozważyć wprowadzamy zmiany refaktoryzacji w celu struktury kodu przed jej rozszerzeniem. Zobacz [poprawy struktury kodu](#Improving).  
@@ -151,11 +151,11 @@ Opis architektury aplikacji na wysokim poziomie, tworząc *diagramy warstw* w pr
 ##  <a name="UpdateCode"></a> Aktualizowanie kodu do nowej architektury  
  Zazwyczaj błędy pojawią się sprawdzanie poprawności kodu na podstawie diagramu warstwowego zaktualizowane po raz pierwszy. Te błędy mogą mieć kilka przyczyn:  
   
--   Artefakt jest przypisany do niewłaściwej warstwy. W takim przypadku przenieś artefakt.  
+- Artefakt jest przypisany do niewłaściwej warstwy. W takim przypadku przenieś artefakt.  
   
--   Artefakt, taki jak klasa, używa innej klasy w sposób, który powoduje konflikt z architekturą. W tym przypadku zrefaktoryzuj kod, aby usunąć zależność.  
+- Artefakt, taki jak klasa, używa innej klasy w sposób, który powoduje konflikt z architekturą. W tym przypadku zrefaktoryzuj kod, aby usunąć zależność.  
   
- Aby rozwiązać te błędy, aktualizuj kod, dopóki nie przestaną pojawiać się błędy podczas walidacji. Zazwyczaj jest procesem iteracyjnym. Aby uzyskać więcej informacji na temat tych błędów, zobacz [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md).  
+  Aby rozwiązać te błędy, aktualizuj kod, dopóki nie przestaną pojawiać się błędy podczas walidacji. Zazwyczaj jest procesem iteracyjnym. Aby uzyskać więcej informacji na temat tych błędów, zobacz [Weryfikacja kodu przy użyciu diagramów warstw](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
 >  Tworzenie lub refaktoryzować kod, Niewykluczone, że nowe artefaktów połączyć diagram warstwy. Jednak może to nie być konieczne, na przykład w przypadku warstwy, które reprezentują istniejącej przestrzeni nazw, a nowy kod dodaje więcej materiału tylko z tymi przestrzeniami nazw.  

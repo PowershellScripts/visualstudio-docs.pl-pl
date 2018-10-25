@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d126a4691332f1121ebfc99a84b180d1e99f3d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f8067464802899ce8966d63d702679d216b6377
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136669"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875980"
 ---
-# <a name="sccproperties-function"></a>Funkcja SccProperties
-Ta funkcja zawiera właściwości kontroli źródła dla pliku lub projektu.  
+# <a name="sccproperties-function"></a>SccProperties, funkcja
+Funkcja ta wyświetla właściwości kontroli źródła dla pliku lub projektu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,30 +37,30 @@ SCCRTN SccProperties (
   
 #### <a name="parameters"></a>Parametry  
  pvContext  
- [in] Struktura kontekstu wtyczkę kontroli źródła.  
+ [in] Struktura kontekście wtyczki kontroli źródła.  
   
- Właściwość hWnd  
- [in] Dojście do okna IDE, które wtyczka do kontroli źródła można używać jako elementu nadrzędnego wszystkie okna dialogowe, które zawiera.  
+ hWnd  
+ [in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.  
   
  lpFileName  
  [in] W pełni kwalifikowana nazwa pliku lub projektu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczkę kontroli źródła tej funkcji może przywrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|SCC_OK|Właściwości pomyślnie zostały wyświetlone.|  
+|SCC_OK|Właściwości pomyślnie były wyświetlane.|  
 |SCC_I_RELOADFILE|System kontroli wersji zmodyfikował właściwości pliku, więc IDE należy załadować ponownie ten plik.|  
 |SCC_E_PROJNOTOPEN|Określony projekt nie został otwarty w kontroli źródła.|  
-|SCC_E_NOTAUTHORIZED|Użytkownik nie ma uprawnień do wyświetlania właściwości tego pliku lub projektu.|  
+|SCC_E_NOTAUTHORIZED|Użytkownik nie ma autoryzacji do wyświetlania właściwości tego pliku lub projektu.|  
 |SCC_E_FILENOTCONTROLLED|Określony plik lub projektu nie jest pod kontrolą źródła.|  
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Wystąpił nieznany lub ogólny błąd.|  
   
 ## <a name="remarks"></a>Uwagi  
- Wtyczka do kontroli źródła są wyświetlane właściwości w jego własnej okno dialogowe.  
+ Wtyczka do kontroli źródła Wyświetla właściwości swoje własne w oknie dialogowym.  
   
- Właściwości są definiowane przez wtyczkę kontroli źródła i może różnić się od wtyczki do wtyczki. Jeśli wtyczka umożliwia użytkownikowi zmianę właściwości kontroli źródła pliku, powinien on zwrócić `SCC_I_RELOAD` sygnalizują IDE, do którego ten plik lub projekt musi zostać ponownie załadowana.  
+ Właściwości są definiowane przez wtyczka do kontroli źródła i może różnić się od wtyczki do wtyczki. Jeśli wtyczka pozwala użytkownikowi na zmianę właściwości kontroli źródła pliku, powinna zwrócić `SCC_I_RELOAD` celu sygnalizowania, że środowisko IDE, wymagających ponownego załadowania tego pliku lub projektu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

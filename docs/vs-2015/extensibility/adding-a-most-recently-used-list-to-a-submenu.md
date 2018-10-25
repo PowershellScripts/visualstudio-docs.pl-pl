@@ -17,12 +17,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327d312ec13e449f0e116a11f920f17a439f569c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818109"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Dodawanie listy ostatnio używanych elementów do podmenu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ W tym przewodniku opiera się na pokazach w [dodawanie podmenu do Menu](../exten
   
 ## <a name="creating-an-extension"></a>Tworzenie rozszerzenia  
   
--   Postępuj zgodnie z procedurami w [dodawanie podmenu do Menu](../extensibility/adding-a-submenu-to-a-menu.md) utworzyć podmenu, który jest modyfikowany w poniższych procedurach.  
+- Postępuj zgodnie z procedurami w [dodawanie podmenu do Menu](../extensibility/adding-a-submenu-to-a-menu.md) utworzyć podmenu, który jest modyfikowany w poniższych procedurach.  
   
- W procedurach przedstawionych w tym przewodniku przyjęto założenie, że nazwa pakietu VSPackage jest `TopLevelMenu`, czyli nazwę, która jest używana w [Dodawanie Menu na pasku Menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
+  W procedurach przedstawionych w tym przewodniku przyjęto założenie, że nazwa pakietu VSPackage jest `TopLevelMenu`, czyli nazwę, która jest używana w [Dodawanie Menu na pasku Menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
   
 ## <a name="creating-a-dynamic-item-list-command"></a>Tworzenie polecenia List elementów dynamicznych  
   

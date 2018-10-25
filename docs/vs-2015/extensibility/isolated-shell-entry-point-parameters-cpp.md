@@ -16,55 +16,55 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f19165a5941f62fd5594a715c8812c065b371608
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 879d9e2cc40ebce42565d5eb8c607502ae17c2df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247695"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830759"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Parametry punktu wejścia Isolated Shell (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Po uruchomieniu aplikacji opartych na powłoce Visual Studio wywołuje punkt wejścia uruchamiania powłoki programu Visual Studio. Następujące ustawienia można zastąpić w wywołaniu do punktu wejścia uruchamiania powłoki. Aby uzyskać opis każdego ustawienia, zobacz [. Pliki Pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  
   
--   AddinsAllowed  
+- AddinsAllowed  
   
--   AllowsDroppedFilesOnMainWindow  
+- AllowsDroppedFilesOnMainWindow  
   
--   AppName  
+- AppName  
   
--   CommandLineLogo  
+- CommandLineLogo  
   
--   DefaultHomePage  
+- DefaultHomePage  
   
--   DefaultProjectsLocation  
+- DefaultProjectsLocation  
   
--   DefaultSearchPage  
+- DefaultSearchPage  
   
--   DefaultUserFilesFolderRoot  
+- DefaultUserFilesFolderRoot  
   
--   DisableOutputWindow  
+- DisableOutputWindow  
   
--   HideMiscellaneousFilesByDefault  
+- HideMiscellaneousFilesByDefault  
   
--   HideSolutionConcept  
+- HideSolutionConcept  
   
--   NewProjDlgInstalledTemplatesHdr  
+- NewProjDlgInstalledTemplatesHdr  
   
--   NewProjDlgSlnTreeNodeTitle  
+- NewProjDlgSlnTreeNodeTitle  
   
--   SolutionFileCreatorIdentifier  
+- SolutionFileCreatorIdentifier  
   
--   SolutionFileExt  
+- SolutionFileExt  
   
--   UserFilesSubFolderName  
+- UserFilesSubFolderName  
   
--   UserOptsFileExt  
+- UserOptsFileExt  
   
- Visual Studio Shell izolowane szablon tworzy plik źródłowy *solutionName*.cpp, gdzie *solutionName* jest nazwą rozwiązania dla aplikacji. Ten plik definiuje główny punkt wejścia dla aplikacji funkcji _tWinMain. Ta funkcja wywołuje punkt wejścia początkowy powłoki.  
+  Visual Studio Shell izolowane szablon tworzy plik źródłowy *solutionName*.cpp, gdzie *solutionName* jest nazwą rozwiązania dla aplikacji. Ten plik definiuje główny punkt wejścia dla aplikacji funkcji _tWinMain. Ta funkcja wywołuje punkt wejścia początkowy powłoki.  
   
- Sposób działania aplikacji można zmienić, zmieniając tych ustawień podczas uruchamiania aplikacji.  
+  Sposób działania aplikacji można zmienić, zmieniając tych ustawień podczas uruchamiania aplikacji.  
   
 ## <a name="parameters"></a>Parametry  
  Punkt wejścia uruchamiania powłoki programu Visual Studio definiuje pięć parametrów. Nie zmieniaj pierwsze cztery parametry. Piąty parametr przyjmuje listę zastąpienie ustawień. Punkt wejścia początkowy powłoki jest wywoływana z główny punkt wejścia aplikacji.  

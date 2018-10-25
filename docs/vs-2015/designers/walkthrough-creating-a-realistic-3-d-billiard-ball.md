@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 303d826a22ff67ec499fcd4e8d59d6a7819a822d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 29d45f4d5df6131182dfe70467e655bd23f6fcf2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829589"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Wskazówki: tworzenie realistycznej kuli bilardowej w 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,49 +54,49 @@ W tym instruktażu przedstawiono sposób tworzenia realistycznej kuli bilardowej
   
 #### <a name="to-preview-the-shader-by-using-a-sphere"></a>Aby wyświetlić podgląd modułu cieniującego za pomocą kuli  
   
--   Na pasku narzędzi Projektanta modułu cieniującego wybierz **podglądu ze sferą.**  
+- Na pasku narzędzi Projektanta modułu cieniującego wybierz **podglądu ze sferą.**  
   
- W następnym kroku utworzysz program do cieniowania, który będzie stosował teksturę do modelu, ale najpierw należy utworzyć teksturę, która umożliwia. W tym instruktażu pokazano, jak utworzyć teksturę przy użyciu edytora obrazów, który jest częścią [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ale można użyć dowolnego edytora obrazów, który potrafi zapisać teksturę w odpowiednim formacie.  
+  W następnym kroku utworzysz program do cieniowania, który będzie stosował teksturę do modelu, ale najpierw należy utworzyć teksturę, która umożliwia. W tym instruktażu pokazano, jak utworzyć teksturę przy użyciu edytora obrazów, który jest częścią [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ale można użyć dowolnego edytora obrazów, który potrafi zapisać teksturę w odpowiednim formacie.  
   
- Upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.  
+  Upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.  
   
 #### <a name="to-create-a-billiard-ball-texture-by-using-the-image-editor"></a>Aby utworzyć teksturę kuli bilardowej przy użyciu edytora obrazów  
   
-1.  Utwórz teksturę do pracy. Aby uzyskać informacje dotyczące sposobu dodawania tekstury do projektu, zobacz sekcję pierwsze kroki w [edytora obrazów](../designers/image-editor.md).  
+1. Utwórz teksturę do pracy. Aby uzyskać informacje dotyczące sposobu dodawania tekstury do projektu, zobacz sekcję pierwsze kroki w [edytora obrazów](../designers/image-editor.md).  
   
-2.  Ustaw wielkość obrazu tak, aby jej szerokość była dwukrotnością jej wysokości; jest to konieczne ze względu na sposób, że tekstura jest zmapowana na sferyczną powierzchnię kuli bilardowej. Aby zmienić rozmiar obrazu, w **właściwości** okna, określ nowe wartości **szerokość** i **wysokość** właściwości. Na przykład Ustaw szerokość na 512 i wysokość na 256.  
+2. Ustaw wielkość obrazu tak, aby jej szerokość była dwukrotnością jej wysokości; jest to konieczne ze względu na sposób, że tekstura jest zmapowana na sferyczną powierzchnię kuli bilardowej. Aby zmienić rozmiar obrazu, w **właściwości** okna, określ nowe wartości **szerokość** i **wysokość** właściwości. Na przykład Ustaw szerokość na 512 i wysokość na 256.  
   
-3.  Narysuj teksturę kuli bilardowej, pamiętając o tym, jak tekstura jest mapowana na sferę.  
+3. Narysuj teksturę kuli bilardowej, pamiętając o tym, jak tekstura jest mapowana na sferę.  
   
-     Tekstura powinna wyglądać mniej więcej tak:  
+    Tekstura powinna wyglądać mniej więcej tak:  
   
-     ![Teksturę kuli bilardowej](../designers/media/gfx-shader-demo-billiard-art-ball-texture.png "gfx_shader_demo_billiard_art_ball_texture")  
+    ![Teksturę kuli bilardowej](../designers/media/gfx-shader-demo-billiard-art-ball-texture.png "gfx_shader_demo_billiard_art_ball_texture")  
   
-4.  Opcjonalnie można zmniejszyć wymogi pamięci dla danej tekstury. Możesz tworzyć, zmniejszając szerokość tekstury zgodnie z jego wysokością. Kompresuje teksturę wzdłuż jej szerokości, ale ze względu na sposób, że tekstura jest mapowana do kuli, zostanie rozszerzona, gdy Bila będzie renderowana. Po zmianie rozmiaru Tekstura powinno wyglądać następująco:  
+4. Opcjonalnie można zmniejszyć wymogi pamięci dla danej tekstury. Możesz tworzyć, zmniejszając szerokość tekstury zgodnie z jego wysokością. Kompresuje teksturę wzdłuż jej szerokości, ale ze względu na sposób, że tekstura jest mapowana do kuli, zostanie rozszerzona, gdy Bila będzie renderowana. Po zmianie rozmiaru Tekstura powinno wyglądać następująco:  
   
-     ![Teksturę kuli skompresowany do kwadratu](../designers/media/gfx-shader-demo-billiard-art-ball-texture-square.png "gfx_shader_demo_billiard_art_ball_texture_square")  
+    ![Teksturę kuli skompresowany do kwadratu](../designers/media/gfx-shader-demo-billiard-art-ball-texture-square.png "gfx_shader_demo_billiard_art_ball_texture_square")  
   
- Teraz można utworzyć modułu cieniującego, który zastosuje tę teksturę do modelu.  
+   Teraz można utworzyć modułu cieniującego, który zastosuje tę teksturę do modelu.  
   
 #### <a name="to-create-a-basic-texture-shader"></a>Aby utworzyć cieniowania tekstury podstawowej  
   
-1.  Tworzenie modułu cieniującego DGSL chcesz pracować. Aby uzyskać informacje dotyczące sposobu dodawania modułu cieniującego DGSL do projektu, zobacz sekcję pierwsze kroki w [Shader Designer](../designers/shader-designer.md).  
+1. Tworzenie modułu cieniującego DGSL chcesz pracować. Aby uzyskać informacje dotyczące sposobu dodawania modułu cieniującego DGSL do projektu, zobacz sekcję pierwsze kroki w [Shader Designer](../designers/shader-designer.md).  
   
-     Domyślnie wykres cieniowania wygląda następująco:  
+    Domyślnie wykres cieniowania wygląda następująco:  
   
-     ![Wykres modułu cieniującego domyślne](../designers/media/gfx-shader-demo-billiard-step-0.png "gfx_shader_demo_billiard_step_0")  
+    ![Wykres modułu cieniującego domyślne](../designers/media/gfx-shader-demo-billiard-step-0.png "gfx_shader_demo_billiard_step_0")  
   
-2.  Zmodyfikuj domyślne cieniowanie, aby stosowało wartość próbki tekstury do bieżącego piksela. Wykres modułu cieniującego powinien wyglądać następująco:  
+2. Zmodyfikuj domyślne cieniowanie, aby stosowało wartość próbki tekstury do bieżącego piksela. Wykres modułu cieniującego powinien wyglądać następująco:  
   
-     ![Wykres modułu cieniującego, który stosuje tekstury do obiektu](../designers/media/gfx-shader-demo-billiard-step-1.png "gfx_shader_demo_billiard_step_1")  
+    ![Wykres modułu cieniującego, który stosuje tekstury do obiektu](../designers/media/gfx-shader-demo-billiard-step-1.png "gfx_shader_demo_billiard_step_1")  
   
-3.  Zastosuj teksturę utworzoną w poprzedniej procedurze przez skonfigurowanie właściwości tekstury. Ustaw wartość **tekstury** właściwość **próbki tekstury** węzeł **Texture1**, a następnie określ plik tekstury za pomocą **Filename**właściwość **Texture1** grupy właściwości w tym samym oknie właściwości.  
+3. Zastosuj teksturę utworzoną w poprzedniej procedurze przez skonfigurowanie właściwości tekstury. Ustaw wartość **tekstury** właściwość **próbki tekstury** węzeł **Texture1**, a następnie określ plik tekstury za pomocą **Filename**właściwość **Texture1** grupy właściwości w tym samym oknie właściwości.  
   
- Aby uzyskać więcej informacji dotyczących sposobu stosowania tekstury w cieniowaniu, zobacz [porady: Tworzenie podstawowego cieniowania tekstury](../designers/how-to-create-a-basic-texture-shader.md).  
+   Aby uzyskać więcej informacji dotyczących sposobu stosowania tekstury w cieniowaniu, zobacz [porady: Tworzenie podstawowego cieniowania tekstury](../designers/how-to-create-a-basic-texture-shader.md).  
   
- Twoja Bila powinna wyglądać mniej więcej tak:  
+   Twoja Bila powinna wyglądać mniej więcej tak:  
   
- ![Zbliżenie teksturą kuli bilardowej](../designers/media/gfx-shader-demo.png "gfx_shader_demo_")  
+   ![Zbliżenie teksturą kuli bilardowej](../designers/media/gfx-shader-demo.png "gfx_shader_demo_")  
   
 ## <a name="creating-depth-with-the-lambert-lighting-model"></a>Tworzenie głębi przy użyciu modelu oświetlenia Lamberta  
  Do tej pory utworzono łatwo rozpoznawalną kulę bilardową. Jednakże wydaje się płaskie i mało interesujące — bardziej jak obraz kuli bilardowej kreskówki niż przekonująca replika. Płaski wygląd wynika z prostego modułu cieniowania, który zachowuje się tak, jakby wszystkie piksele na powierzchni kuli bilardowej odbiera tę samą ilość światła.  
@@ -107,17 +107,17 @@ W tym instruktażu przedstawiono sposób tworzenia realistycznej kuli bilardowej
   
 #### <a name="to-add-lambert-lighting-to-your-shader"></a>Aby dodać oświetlenie Lamberta do modułu cieniującego  
   
--   Zmodyfikuj cieniowanie tak, aby modulowało wartość próbki tekstury przy użyciu wartości oświetlenia Lamberta. Wykres modułu cieniującego powinien wyglądać następująco:  
+- Zmodyfikuj cieniowanie tak, aby modulowało wartość próbki tekstury przy użyciu wartości oświetlenia Lamberta. Wykres modułu cieniującego powinien wyglądać następująco:  
   
-     ![Wykres modułu cieniującego oświetlenia Lamberta dodano](../designers/media/gfx-shader-demo-billiard-step-2.png "gfx_shader_demo_billiard_step_2")  
+   ![Wykres modułu cieniującego oświetlenia Lamberta dodano](../designers/media/gfx-shader-demo-billiard-step-2.png "gfx_shader_demo_billiard_step_2")  
   
--   Opcjonalnie można dostosować, jak oświetlenie, konfigurując **MaterialDiffuse** właściwości wykresu cieniowanego. Aby uzyskiwać dostęp do właściwości wykresu cieniowanego, wybierz pusty obszar powierzchni projektu, a następnie zlokalizuj właściwość, do której chcesz uzyskać dostęp w **właściwości** okna.  
+- Opcjonalnie można dostosować, jak oświetlenie, konfigurując **MaterialDiffuse** właściwości wykresu cieniowanego. Aby uzyskiwać dostęp do właściwości wykresu cieniowanego, wybierz pusty obszar powierzchni projektu, a następnie zlokalizuj właściwość, do której chcesz uzyskać dostęp w **właściwości** okna.  
   
- Aby uzyskać więcej informacji na temat zastosowania oświetlenia Lambert w cieniowaniu, zobacz [porady: Tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).  
+  Aby uzyskać więcej informacji na temat zastosowania oświetlenia Lambert w cieniowaniu, zobacz [porady: Tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).  
   
- Zastosowania oświetlenia Lamberta Bila powinna wyglądać mniej więcej tak:  
+  Zastosowania oświetlenia Lamberta Bila powinna wyglądać mniej więcej tak:  
   
- ![Zbliżenie teksturą i oświetlenie kuli bilardowej](../designers/media/gfx-shader-demo-billiard-ball-2.png "gfx_shader_demo_billiard_ball_2")  
+  ![Zbliżenie teksturą i oświetlenie kuli bilardowej](../designers/media/gfx-shader-demo-billiard-ball-2.png "gfx_shader_demo_billiard_ball_2")  
   
 ## <a name="enhancing-the-basic-appearance-with-specular-highlights"></a>Poprawa wyglądu podstawowego przy użyciu światła odbitego  
  Model oświetlenia Lambert zapewnia poczucie kształtu i wymiarów, którego nie było w cieniowania tylko tekstur. Bila nadal ma jednak nieco bezwyrazowy wygląd.  
@@ -128,17 +128,17 @@ W tym instruktażu przedstawiono sposób tworzenia realistycznej kuli bilardowej
   
 #### <a name="to-add-specular-highlights-to-your-shader"></a>Aby dodać światło odbite do modułu cieniującego  
   
-1.  Zmodyfikuj cieniowanie tak, aby uwzględniało udział odbicia światła przy użyciu mieszania sumującego. Wykres modułu cieniującego powinien wyglądać następująco:  
+1. Zmodyfikuj cieniowanie tak, aby uwzględniało udział odbicia światła przy użyciu mieszania sumującego. Wykres modułu cieniującego powinien wyglądać następująco:  
   
-     ![Wykres modułu cieniującego za pomocą odblasków oświetlenia dodano](../designers/media/gfx-shader-demo-billiard-step-3.png "gfx_shader_demo_billiard_step_3")  
+    ![Wykres modułu cieniującego za pomocą odblasków oświetlenia dodano](../designers/media/gfx-shader-demo-billiard-step-3.png "gfx_shader_demo_billiard_step_3")  
   
-2.  Opcjonalnie można dostosować sposób, który odblasków zachowuje się przez skonfigurowanie właściwości odblasków (**MaterialSpecular** i **MaterialSpecularPower**) modułu cieniującego. Do dostępu do właściwości wykresu cieniowanego, wybierz pusty obszar powierzchni projektu, a następnie w **właściwości** okna, zlokalizuj właściwość, której chcesz uzyskać dostęp.  
+2. Opcjonalnie można dostosować sposób, który odblasków zachowuje się przez skonfigurowanie właściwości odblasków (**MaterialSpecular** i **MaterialSpecularPower**) modułu cieniującego. Do dostępu do właściwości wykresu cieniowanego, wybierz pusty obszar powierzchni projektu, a następnie w **właściwości** okna, zlokalizuj właściwość, której chcesz uzyskać dostęp.  
   
- Aby uzyskać więcej informacji na temat sposobu stosowania światła odbitego w cieniowaniu, zobacz [porady: Tworzenie podstawowego modułu cieniowanie Phong](../designers/how-to-create-a-basic-phong-shader.md).  
+   Aby uzyskać więcej informacji na temat sposobu stosowania światła odbitego w cieniowaniu, zobacz [porady: Tworzenie podstawowego modułu cieniowanie Phong](../designers/how-to-create-a-basic-phong-shader.md).  
   
- Wyróżnieniem odblasków zastosowane, oświetlenia zwierciadlanego Bila powinna wyglądać mniej więcej tak:  
+   Wyróżnieniem odblasków zastosowane, oświetlenia zwierciadlanego Bila powinna wyglądać mniej więcej tak:  
   
- ![Dodano zbliżenie kuli bilardowej przy użyciu odblasków](../designers/media/gfx-shader-demo-billiard-ball-3.png "gfx_shader_demo_billiard_ball_3")  
+   ![Dodano zbliżenie kuli bilardowej przy użyciu odblasków](../designers/media/gfx-shader-demo-billiard-ball-3.png "gfx_shader_demo_billiard_ball_3")  
   
 ## <a name="creating-a-sense-of-space-by-reflecting-the-environment"></a>Tworzenie poczucie przestrzeni przez odzwierciedlenie otoczenia  
  Przy użyciu światła odbitego stosowane oświetlenia zwierciadlanego Bila wygląda dość przekonująco. Otrzymano właściwy kształt, wykończenie, kolor i. Istnieje jednak jeszcze jedna technika, która spowoduje, że kula bilardowa wyglądała bardziej jak część jego środowiska.  
@@ -153,71 +153,71 @@ W tym instruktażu przedstawiono sposób tworzenia realistycznej kuli bilardowej
   
 #### <a name="to-create-textures-for-an-environment-map-by-using-the-image-editor"></a>Aby utworzyć tekstury dla mapy środowiska przy użyciu edytora obrazów  
   
-1.  Utwórz teksturę do pracy. Aby uzyskać informacje dotyczące sposobu dodawania tekstury do projektu, zobacz sekcję pierwsze kroki w [edytora obrazów](../designers/image-editor.md).  
+1. Utwórz teksturę do pracy. Aby uzyskać informacje dotyczące sposobu dodawania tekstury do projektu, zobacz sekcję pierwsze kroki w [edytora obrazów](../designers/image-editor.md).  
   
-2.  Ustaw wielkość obrazu tak, aby jej szerokość jest równa jego wysokości i była potęgą liczby dwa; jest to konieczne ze względu na sposób, że mapa sześcienna jest indeksowana. Aby zmienić rozmiar obrazu, w **właściwości** okna, określ nowe wartości **szerokość** i **wysokość** właściwości. Na przykład, ustaw wartość **szerokość** i **wysokość** właściwości do 256.  
+2. Ustaw wielkość obrazu tak, aby jej szerokość jest równa jego wysokości i była potęgą liczby dwa; jest to konieczne ze względu na sposób, że mapa sześcienna jest indeksowana. Aby zmienić rozmiar obrazu, w **właściwości** okna, określ nowe wartości **szerokość** i **wysokość** właściwości. Na przykład, ustaw wartość **szerokość** i **wysokość** właściwości do 256.  
   
-3.  Użyj jednolitego koloru, aby wypełnić teksturę. Tekstura ta będzie dołem mapy modułu, który odpowiada powierzchni stołu bilardowego. Należy pamiętać użyty kolor dla następnej tekstury.  
+3. Użyj jednolitego koloru, aby wypełnić teksturę. Tekstura ta będzie dołem mapy modułu, który odpowiada powierzchni stołu bilardowego. Należy pamiętać użyty kolor dla następnej tekstury.  
   
-4.  Utwórz drugą teksturę, która ma taki sam rozmiar jak pierwsza. Ta Tekstura zostanie powtórzona na czterech bokach mapy modułu, które odnoszą się do powierzchni i bokom stołu bilardowego oraz do obszaru wokół stołu bilardowego. Pamiętaj narysować powierzchnię stołu bilardowego w tej teksturze przy użyciu tego samego koloru, jak Tekstura dolnej. Tekstura powinna wyglądać mniej więcej tak:  
+4. Utwórz drugą teksturę, która ma taki sam rozmiar jak pierwsza. Ta Tekstura zostanie powtórzona na czterech bokach mapy modułu, które odnoszą się do powierzchni i bokom stołu bilardowego oraz do obszaru wokół stołu bilardowego. Pamiętaj narysować powierzchnię stołu bilardowego w tej teksturze przy użyciu tego samego koloru, jak Tekstura dolnej. Tekstura powinna wyglądać mniej więcej tak:  
   
-     ![Tekstury na boki mapy sześciennej](../designers/media/gfx-shader-demo-billiard-art-env-texture-side.png "gfx_shader_demo_billiard_art_env_texture_side")  
+    ![Tekstury na boki mapy sześciennej](../designers/media/gfx-shader-demo-billiard-art-env-texture-side.png "gfx_shader_demo_billiard_art_env_texture_side")  
   
-     Należy pamiętać, że mapa odzwierciedlenia nie musi być realistyczna, aby była skuteczna; na przykład mapa sześcianu, używana do tworzenia obrazów w tym artykule zawiera tylko cztery kieszenie zamiast sześciu.  
+    Należy pamiętać, że mapa odzwierciedlenia nie musi być realistyczna, aby była skuteczna; na przykład mapa sześcianu, używana do tworzenia obrazów w tym artykule zawiera tylko cztery kieszenie zamiast sześciu.  
   
-5.  Utwórz trzecią teksturę, która ma taki sam rozmiar jak pozostałe. Tekstura ta będzie górą mapy modułu, która odpowiada sufitowi nad stołem bilardowym. Aby ta część refleksji była bardziej interesujące, można narysować dodatkowe światło, aby wzmocnić oświetlenie zwierciadlane dodane do modułu cieniującego w poprzedniej procedurze. Tekstura powinna wyglądać mniej więcej tak:  
+5. Utwórz trzecią teksturę, która ma taki sam rozmiar jak pozostałe. Tekstura ta będzie górą mapy modułu, która odpowiada sufitowi nad stołem bilardowym. Aby ta część refleksji była bardziej interesujące, można narysować dodatkowe światło, aby wzmocnić oświetlenie zwierciadlane dodane do modułu cieniującego w poprzedniej procedurze. Tekstura powinna wyglądać mniej więcej tak:  
   
-     ![Tekstury do górnej części mapy sześciennej](../designers/media/gfx-shader-demo-billiard-art-env-texture-top2.png "gfx_shader_demo_billiard_art_env_texture_top2")  
+    ![Tekstury do górnej części mapy sześciennej](../designers/media/gfx-shader-demo-billiard-art-env-texture-top2.png "gfx_shader_demo_billiard_art_env_texture_top2")  
   
- Teraz, gdy utworzono poszczególne tekstury na boki mapy modułu, można użyć narzędzia, aby połączyć je w mapę modułu, które mogą być przechowywane w pojedynczym pliku tekstury .dds. Można użyć dowolnego programu, aby utworzyć mapę sześcianu tak długo, jak jego zapisanie mapy sześcianu w formacie tekstury .dds. W tym instruktażu pokazano, jak utworzyć teksturę za pomocą narzędzia DirectX Texture, który jest częścią czerwca 2010 zestawu SDK programu DirectX.  
+   Teraz, gdy utworzono poszczególne tekstury na boki mapy modułu, można użyć narzędzia, aby połączyć je w mapę modułu, które mogą być przechowywane w pojedynczym pliku tekstury .dds. Można użyć dowolnego programu, aby utworzyć mapę sześcianu tak długo, jak jego zapisanie mapy sześcianu w formacie tekstury .dds. W tym instruktażu pokazano, jak utworzyć teksturę za pomocą narzędzia DirectX Texture, który jest częścią czerwca 2010 zestawu SDK programu DirectX.  
   
 #### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>Aby zestawić mapę modułu za pomocą narzędzia DirectX Texture  
   
-1.  W narzędziu DirectX Texture w menu głównym wybierz **pliku**, **nowa Tekstura**. **Nowa Tekstura** pojawi się okno dialogowe.  
+1. W narzędziu DirectX Texture w menu głównym wybierz **pliku**, **nowa Tekstura**. **Nowa Tekstura** pojawi się okno dialogowe.  
   
-2.  W **typ tekstury** grupy, wybierz **Tekstura mapy modułu**.  
+2. W **typ tekstury** grupy, wybierz **Tekstura mapy modułu**.  
   
-3.  W **wymiary** grupy, wprowadź prawidłową wartość **szerokość** i **wysokość**, a następnie wybierz **OK**. Pojawi się nowy dokument tekstury. Domyślnie Tekstura najpierw pokazana w dokumencie tekstur odpowiada **dodatnie X** powierzchni modułu.  
+3. W **wymiary** grupy, wprowadź prawidłową wartość **szerokość** i **wysokość**, a następnie wybierz **OK**. Pojawi się nowy dokument tekstury. Domyślnie Tekstura najpierw pokazana w dokumencie tekstur odpowiada **dodatnie X** powierzchni modułu.  
   
-4.  Załaduj teksturę utworzoną dla boku części modułu tekstury do powierzchni. W menu głównym wybierz **pliku**, **Otwórz na tej powierzchni**, wybierz teksturę utworzoną dla boku modułu, a następnie wybierz **Otwórz**.  
+4. Załaduj teksturę utworzoną dla boku części modułu tekstury do powierzchni. W menu głównym wybierz **pliku**, **Otwórz na tej powierzchni**, wybierz teksturę utworzoną dla boku modułu, a następnie wybierz **Otwórz**.  
   
-5.  Powtórz krok 4 dla **ujemne X**, **pozytywne Z**, i **negatywne Z** powierzchni sześcianu. Aby to zrobić, należy wyświetlić twarz, którą chcesz załadować. Aby wyświetlić inną twarz mapy modułu, w menu głównym, wybierz **widoku**, **twarz mapy modułu**, a następnie wybierz twarz, którą chcesz wyświetlić.  
+5. Powtórz krok 4 dla **ujemne X**, **pozytywne Z**, i **negatywne Z** powierzchni sześcianu. Aby to zrobić, należy wyświetlić twarz, którą chcesz załadować. Aby wyświetlić inną twarz mapy modułu, w menu głównym, wybierz **widoku**, **twarz mapy modułu**, a następnie wybierz twarz, którą chcesz wyświetlić.  
   
-6.  Aby uzyskać **dodatnie Y** powierzchni modułu, załaduj teksturę utworzoną dla górnej części modułu tekstury.  
+6. Aby uzyskać **dodatnie Y** powierzchni modułu, załaduj teksturę utworzoną dla górnej części modułu tekstury.  
   
-7.  Aby uzyskać **ujemne Y** powierzchni modułu, załaduj teksturę utworzoną dla dolnej części modułu tekstury.  
+7. Aby uzyskać **ujemne Y** powierzchni modułu, załaduj teksturę utworzoną dla dolnej części modułu tekstury.  
   
-8.  Zapisz teksture.  
+8. Zapisz teksture.  
   
- Można sobie wyobrazić układ mapy modułu następująco:  
+   Można sobie wyobrazić układ mapy modułu następująco:  
   
- ![Układ mapy modułu środowiska](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")  
+   ![Układ mapy modułu środowiska](../designers/media/gfx-shader-demo-billiard-art-env-texture-top.png "gfx_shader_demo_billiard_art_env_texture_top")  
   
- Obraz u góry to dodatnia Ściana sześcianu Y (+ Y); w środku od lewej do prawej jest – X + Z, + X i – Z modułu twarzy; u dołu znajduje się ściana sześcianu – Y.  
+   Obraz u góry to dodatnia Ściana sześcianu Y (+ Y); w środku od lewej do prawej jest – X + Z, + X i – Z modułu twarzy; u dołu znajduje się ściana sześcianu – Y.  
   
- Teraz można zmodyfikować cieniowanie tak, aby łączyć się próbkę mapy modułu z pozostałą częścią cieniowania.  
+   Teraz można zmodyfikować cieniowanie tak, aby łączyć się próbkę mapy modułu z pozostałą częścią cieniowania.  
   
 #### <a name="to-add-environment-mapping-to-your-shader"></a>Aby dodać mapowanie środowiska do modułu cieniującego  
   
-1.  Zmodyfikuj cieniowanie tak, aby uwzględniało mapowania środowiska przy użyciu mieszania sumującego. Wykres modułu cieniującego powinien wyglądać następująco:  
+1. Zmodyfikuj cieniowanie tak, aby uwzględniało mapowania środowiska przy użyciu mieszania sumującego. Wykres modułu cieniującego powinien wyglądać następująco:  
   
-     ![Zbliżenie zarówno rodzaj węzłów cieniowania odbijającą](../designers/media/gfx-shader-demo-billiard-step-4b.png "gfx_shader_demo_billiard_step_4b")  
+    ![Zbliżenie zarówno rodzaj węzłów cieniowania odbijającą](../designers/media/gfx-shader-demo-billiard-step-4b.png "gfx_shader_demo_billiard_step_4b")  
   
-     Należy zauważyć, że można użyć **mnożenie-Dodawanie** węzła w celu uproszczenia wykresu cieniowania.  
+    Należy zauważyć, że można użyć **mnożenie-Dodawanie** węzła w celu uproszczenia wykresu cieniowania.  
   
-     Poniżej przedstawiono bardziej szczegółowy widok węzłów cieniowania implementujących mapowanie środowiska:  
+    Poniżej przedstawiono bardziej szczegółowy widok węzłów cieniowania implementujących mapowanie środowiska:  
   
-     ![Wykres modułu cieniującego za pomocą mapowania środowiska dodawane](../designers/media/gfx-shader-demo-billiard-step-4a.png "gfx_shader_demo_billiard_step_4a")  
+    ![Wykres modułu cieniującego za pomocą mapowania środowiska dodawane](../designers/media/gfx-shader-demo-billiard-step-4a.png "gfx_shader_demo_billiard_step_4a")  
   
-2.  Zastosuj teksturę utworzoną w poprzedniej procedurze przez skonfigurowanie właściwości tekstury mapy modułu. Ustaw wartość **tekstury** właściwość **Przykładowa mapa sześcienna** węzeł **Texture2**, a następnie określ plik tekstury za pomocą **Filename**właściwość **Texture2** grupy właściwości.  
+2. Zastosuj teksturę utworzoną w poprzedniej procedurze przez skonfigurowanie właściwości tekstury mapy modułu. Ustaw wartość **tekstury** właściwość **Przykładowa mapa sześcienna** węzeł **Texture2**, a następnie określ plik tekstury za pomocą **Filename**właściwość **Texture2** grupy właściwości.  
   
-3.  Opcjonalnie można dostosować współczynnik odbicia kuli bilardowej, konfigurując **dane wyjściowe** właściwość **stałej** węzła. Przejdź do właściwości węzła, należy wybrać a następnie w polu **właściwości** okna, zlokalizuj właściwość, której chcesz uzyskać dostęp.  
+3. Opcjonalnie można dostosować współczynnik odbicia kuli bilardowej, konfigurując **dane wyjściowe** właściwość **stałej** węzła. Przejdź do właściwości węzła, należy wybrać a następnie w polu **właściwości** okna, zlokalizuj właściwość, której chcesz uzyskać dostęp.  
   
- Za pomocą zastosowania mapowania środowiska Bila powinna wyglądać mniej więcej tak:  
+   Za pomocą zastosowania mapowania środowiska Bila powinna wyglądać mniej więcej tak:  
   
- ![Zbliżenie środowiska mapowane kuli bilardowej](../designers/media/gfx-shader-demo-billiard-ball-4.png "gfx_shader_demo_billiard_ball_4")  
+   ![Zbliżenie środowiska mapowane kuli bilardowej](../designers/media/gfx-shader-demo-billiard-ball-4.png "gfx_shader_demo_billiard_ball_4")  
   
- W tym obrazie końcowym Zwróć uwagę, jak efektów dodanych łączą się do tworzenia bardzo przekonującą kulę bilardową. Kształt, Tekstura i oświetlenie tworzą podstawowy wygląd obiektu 3-D i światłem odbitym i odbić wprowadzić bili bardziej interesujące i wygląda jak część jego środowiska.  
+   W tym obrazie końcowym Zwróć uwagę, jak efektów dodanych łączą się do tworzenia bardzo przekonującą kulę bilardową. Kształt, Tekstura i oświetlenie tworzą podstawowy wygląd obiektu 3-D i światłem odbitym i odbić wprowadzić bili bardziej interesujące i wygląda jak część jego środowiska.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: eksport cieniowania](../designers/how-to-export-a-shader.md)   

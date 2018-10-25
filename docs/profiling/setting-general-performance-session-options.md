@@ -11,40 +11,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5268e6821714dc6850541c319dba450bcc04490b
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: d6c44435f69b5a94433081a518be14f8ffd1756e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263563"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834230"
 ---
-# <a name="set-general-performance-session-options"></a>Ustawianie opcji sesji ogólnej wydajności
+# <a name="set-general-performance-session-options"></a>Ustawianie opcji sesji wydajności ogólnej
 
-Można ustawić metod gromadzenia danych i profilowanie danych konwencje nazewnictwa dla programu Visual Studio Profiling Tools sesji wydajności na **ogólne** strony okna dialogowego właściwości sesji wydajności. Aby otworzyć to okno dialogowe z **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij przycisk **właściwości**.
+Można ustawić metod zbierania i profilowanie danych konwencje nazewnictwa dla sesji wydajności programu Visual Studio Profiling Tools **ogólne** strony okna dialogowego właściwości sesji wydajności. Aby otworzyć to okno dialogowe z **Eksplorator wydajności**, kliknij prawym przyciskiem myszy sesję wydajności, a następnie kliknij **właściwości**.
 
 ## <a name="choosing-data-collection-methods"></a>Wybieranie metody zbierania danych
 
-Ustawianie metody podstawowej kolekcji, wybierając jedną z opcji w obszarze **kolekcja profilowania**. Opcje zostały opisane w następujących w poniższej tabeli:
+Ustawianie metody podstawowej kolekcji, wybierając jedną z opcji w obszarze **kolekcja profilowania**. Opcje te są opisane, zgodnie z poniższą tabelą:
 
 |||
 |-|-|
-|**Próbkowanie**. Metoda pobierania próbek zbiera informacje dotyczące profilowania w regularnych odstępach czasu. Ta metoda jest przydatna do znajdowania problemy dotyczące użycia procesora i Sugerowane metody uruchamiania większości dochodzenia wydajności.|- [Zbieranie statystyk wydajności za pomocą metody pobierania próbek](../profiling/collecting-performance-statistics-by-using-sampling.md)|
-|**Instrumentacja**. Metoda Instrumentacji injects do kopii modułu profilowania kodu, który rejestruje każdy wpis, zakończenia i wywołanie funkcji funkcji w module podczas przebiegu profilowania. Ta metoda jest przydatne do zbierania czasu szczegółowe informacje o sekcji kodu i zrozumienie wpływu wejściowymi i wyjściowymi operacje na wydajność aplikacji.|- [Zbieranie szczegółowych danych o chronometrażu przy użyciu Instrumentacji](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)|
-|**Współbieżność**. Metoda współbieżności zbiera dane dla każdego zdarzenia, że wykonanie bloki kodu, na przykład jeśli wątek oczekuje na zablokowany dostęp do zasobów aplikacji ma zostać zwolniony. Ta metoda jest przydatna do analizowania aplikacji wielowątkowych.|- [Zbieranie danych współbieżności procesu i wątku](../profiling/collecting-thread-and-process-concurrency-data.md)|
+|**Próbkowanie**. Metoda pobierania próbek zbiera informacje dotyczące profilowania w regularnych odstępach czasu. Ta metoda jest przydatna do znajdowania problemy dotyczące użycia procesora i jest metodą sugerowane na uruchamianie większości badania wydajności.|- [Zbieranie statystyk wydajności za pomocą metody pobierania próbek](../profiling/collecting-performance-statistics-by-using-sampling.md)|
+|**Instrumentacja**. Metoda Instrumentacja wprowadza do kopii modułu profilowania kodu, który rejestruje każdego wpisu, zakończenia i wywołanie funkcji funkcje w module podczas uruchomienia profilowania. Ta metoda jest przydatne do zbierania informacji chronometrażu o sekcji kodu i zrozumienie wpływu na operacje wejścia i wyjścia na wydajność aplikacji.|- [Zbieranie szczegółowych danych o chronometrażu przy użyciu Instrumentacji](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)|
+|**Współbieżność**. Metody współbieżności zbiera dane dla każdego zdarzenia, że bloki wykonywania kodu, takie jak kiedy wątek czeka na zablokowany dostęp do zasobu aplikacji ma zostać zwolniony. Ta metoda jest przydatna do analizowania aplikacji wielowątkowych.|- [Zbieranie danych współbieżności procesu i wątku](../profiling/collecting-thread-and-process-concurrency-data.md)|
 
- Możliwość zbierania danych pamięci .NET przy użyciu metody próbkowania i instrumentacji. Wybierz typ danych w ramach **profilowania pamięci .NET**.
+ Może zbierać dane pamięci platformy .NET przy użyciu metody próbkowania i instrumentacji. Wybierz typ danych w ramach **profilowania pamięci środowiska .NET**.
 
 |||
 |-|-|
-|**Zbierz informacje dotyczące alokacji obiektów platformy .NET**. Domyślnie dane obejmują liczbę i rozmiar przydzielonych obiektów. Wybierz lub wyczyść to pole wyboru, aby włączyć lub wyłączyć zbieranie danych pamięci .NET. |- [Zbieranie alokacji pamięci .NET i okres istnienia obiektu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)|
-|**Zbierz również informacje dotyczące okresu istnienia obiektu platformy .NET**. Zaznacz to pole wyboru, aby dołączyć dane o generacje kolekcji garbage użytych w celu odzyskania pamięci obiektów.|- [Zbieranie alokacji pamięci .NET i okres istnienia obiektu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  |
+|**Zbierz informacje dotyczące alokacji obiektów platformy .NET**. Domyślnie dane obejmują liczbę i rozmiar istnienia przydzielonych obiektów. Zaznacz lub wyczyść to pole wyboru, aby włączyć lub wyłączyć zbieranie danych pamięci .NET. |- [Zbieranie alokacji pamięci .NET i okres istnienia obiektu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)|
+|**Również zbierać informacje dotyczące okresu istnienia obiektu platformy .NET**. Zaznacz to pole wyboru, aby dołączyć dane dotyczące generacje kolekcji wyrzucania elementów, które zostały użyte do odzyskania obiektów pamięci.|- [Zbieranie alokacji pamięci .NET i okres istnienia obiektu](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) |
 
- Strona sesji profilowania jest wyświetlany po rozpoczęciu do profilu aplikacji, w którym można wstrzymać, wznowić i zatrzymanie profilowania.
+ Stroną sesji profilowania pojawia się po uruchomieniu profil aplikacji, którym można wstrzymać, wznowić i zatrzymanie profilowania.
 
- ![Strona sesji profilowania](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
+ ![Stronie sesji profilowania](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
 ## <a name="set-profiling-data-file-options"></a>Ustawianie opcji pliku danych profilowania
 
 |||
 |-|-|
-|**Raport**. Domyślnie plik danych (Vsp) profilowania podano nazwę PROFILOWANEGO aplikacji i znajduje się w folderze rozwiązania lub projektu. Ciąg daty również jest dołączany do nazwy, a numer zwiększany jest dodawany do plików danych, które w przeciwnym razie byłyby takich samych nazwach. Te opcje można zmienić.|- [Porady: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)|
+|**Raport**. Domyślnie plik profilowania (.vsp) danych o nazwie profilowanej aplikacji i znajduje się w folderze rozwiązania lub projektu. Ciąg daty jest również dołączana do nazwy, a zwiększona liczba jest dodawany do plików danych, które w przeciwnym razie byłyby takich samych nazwach. Te opcje można zmienić.|- [Porady: Ustawianie opcji nazwy pliku danych wydajności](../profiling/how-to-set-performance-data-file-name-options.md)|

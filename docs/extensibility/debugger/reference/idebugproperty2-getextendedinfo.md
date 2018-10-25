@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6865361ac0b518f4fa78a3521973d756e6ab780
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77ed932909845dc992c62ba884d6d48e2b788a61
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825975"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Pobiera rozszerzone informacje dla właściwości.  
@@ -43,26 +43,26 @@ int GetExtendedInfo (
   
 #### <a name="parameters"></a>Parametry  
  `guidExtendedInfo`  
- [in] Identyfikator GUID, który określa typ danych rozszerzonych do pobrania. Aby uzyskać więcej informacji, zobacz uwagi.  
+ [in] Identyfikator GUID, który określa typ danych rozszerzonych do pobrania. Aby uzyskać szczegółowe informacje, zobacz uwagi.  
   
  `pExtendedInfo`  
- [out] Zwraca `VARIANT` (C++) lub obiektu (C#), który można pobrać informacji o rozszerzonych właściwości. Na przykład ten parametr może zwrócić `IUnknown` interfejs, który można wykonać zapytania o [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interfejsu. Aby uzyskać więcej informacji, zobacz uwagi.  
+ [out] Zwraca `VARIANT` (C++) lub obiekt (C#), który może służyć do pobierania informacji właściwości rozszerzonej. Na przykład, ten parametr może zwrócić `IUnknown` interfejsu, który może być odpytywany dla [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interfejsu. Aby uzyskać szczegółowe informacje, zobacz uwagi.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` Jeśli nie ma żadnych rozszerzonych informacji do pobrania.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` Jeśli rozszerzonych informacji do pobrania.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda istnieje na potrzeby pobierania informacji, które nie nadają się do pobieranych przez wywołanie metody [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) metody.  
+ Ta metoda istnieje na potrzeby pobierania informacji, która nie jest przystosowany do pobieranych przez wywołanie metody [getpropertyinfo —](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) metody.  
   
- Następujące identyfikatory GUID zwykle są rozpoznawane przez tę metodę (identyfikator GUID wartości są określone dla C#, ponieważ nazwa nie jest dostępna w żadnych zestawów). Można tworzyć dodatkowe identyfikatorów GUID do użytku wewnętrznego.  
+ Następujące identyfikatory GUID zwykle są rozpoznawane przez tę metodę (wartości identyfikatora GUID są określone dla języka C#, ponieważ ta nazwa nie jest dostępna w każdym zestawie). Można utworzyć dodatkowe identyfikatorów GUID do użytku wewnętrznego.  
   
 |Nazwa|Identyfikator GUID|Opis|  
 |----------|----------|-----------------|  
-|guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|Zwraca `IUnknown` interfejs do dokumentu. Zazwyczaj [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interfejsu można uzyskać z tego `IUnknown` interfejsu.|  
+|guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|Zwraca `IUnknown` interfejsu dokumencie. Zazwyczaj [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interfejsu można uzyskać z tego `IUnknown` interfejsu.|  
 |guidCodeContext|{e2fc65e-56ce - 11d 1-b528-00aax004a8797}|Zwraca `IUnknown` interfejs do kontekstu dokumentu. Zazwyczaj [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfejsu można uzyskać z tego `IUnknown` interfejsu.|  
-|guidCustomViewerSupported|{d9c9da31-ffbe-4eeb-9186-23121e3c088c}|Zwraca ciąg zawierający identyfikator CLSID podglądu niestandardowego zwykle implementowany przez ewaluatora wyrażeń.|  
-|guidExtendedInfoSlot|{6df235ad-82c6-4292-9c97-7389770bc42f}|Zwraca liczbę 32-bitowa reprezentująca numer gniazda żądaną, jeśli ta właściwość reprezentuje adres lokalny kodu zarządzanego.|  
-|guidExtendedInfoSignature|{b5fb6d46-f805-417f-96a3-8ba737073ffd}|Zwraca ciąg zawierający podpis skojarzony z obiektem właściwość zmiennej.|  
+|guidCustomViewerSupported|{d9c9da31-ffbe-4eeb-9186-23121e3c088c}|Zwraca ciąg zawierający identyfikator CLSID Przeglądarka niestandardowa zwykle implementowany przez ewaluatora wyrażeń.|  
+|guidExtendedInfoSlot|{6df235ad-82c6-4292-9c97-7389770bc42f}|Zwraca 32-bitową liczbą, reprezentujący liczbę żądane miejsce, jeśli ta właściwość reprezentuje adresu lokalnego kodu zarządzanego.|  
+|guidExtendedInfoSignature|{b5fb6d46-f805-417f-96a3-8ba737073ffd}|Zwraca ciąg zawierający podpis zmiennej skojarzone z obiektu właściwości.|  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

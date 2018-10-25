@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cd391cd922d32dc466a30e5ff1bf037cbd22a33
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: bc225862ee4b9fbc2c4c94aaab4f410719391ee7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926595"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Zarządzanie kontrolerami testów i agentami testowymi
 
@@ -52,7 +52,7 @@ Możesz chcieć dodać agenta testowego do innego kontrolera testów lub może b
       2. Wprowadź hasło w **hasło**.
 
         |**Informacje o koncie użytkownika ważne**|
-        |--------------------------------------------|
+        |-|
         |-O wartości null hasła nie są obsługiwane dla kont użytkowników.|
         |— Jeśli chcesz użyć narzędzia zbierającego IntelliTrace lub emulacji sieci, konto użytkownika musi być członkiem grupy Administratorzy.|
         |— Jeśli nazwa użytkownika agenta nie jest w usłudze agenta spróbuje ją dodać, co wymaga uprawnień na kontrolerze testów.|
@@ -115,7 +115,7 @@ Agent testowy musi być równa stanu offline, można było usunąć.
 Stan agenta testowego może być jednym z następujących wartości:
 
 |Stan|Opis|
-|------------|-----------------|
+|-|-----------------|
 |Uruchamianie testu|Uruchamianie testów|
 |Gotowe|Dostępne do uruchomienia testów lub zbierania danych i informacji diagnostycznych|
 |Offline|Dostępne do uruchomienia testów lub zbierania danych i informacji diagnostycznych|
@@ -141,7 +141,7 @@ Można zmienić stan i inne ustawienia dla agenta testowego, korzystając z poni
 1. Zmień następujące właściwości agenta badania zgodnie z wymaganiami:
 
 |Właściwości agenta testowego|Opis|
-|-------------------------|-----------------|
+|-|-----------------|
 |**Wagi**|Używane do dystrybucji obciążenia, podczas korzystania z agentów testowych z różnymi poziomami osiągów. Na przykład agent testowy przy zastosowaniu wagi 100 otrzymuje dwa razy obciążenia jako agent testowy przy zastosowaniu wagi 50.|
 |**Przełączanie adresów IP**|Używane do konfigurowania przełączania IP. Przełączanie IP pozwala agentowi testowemu wysyłać żądania do serwera przy użyciu zakresu adresów IP. Symuluje to wywołania, które pochodzą z różnych komputerów klienckich.<br /><br /> Przełączanie IP jest ważne, jeśli test obciążenia uzyskuje dostęp do farmy sieci web. Większość usług równoważenia obciążenia ustanawia koligację między klientem i serwerem namierzenie internetowego przy użyciu adresu IP klienta. Jeśli wszystkie żądania wydają się przychodzić od jednego klienta, moduł równoważenia obciążenia nie zrównoważy obciążenia. Aby uzyskać równowagę obciążenia w kolektywie serwerów sieci web, upewnij się, że żądania pochodzą z zakresu adresów IP. **Uwaga:** możesz określić kartę sieciową lub użyć **(wszystkie nieprzypisane)** Aby automatycznie wybrać taką, która obecnie nie jest używany. <br /><br /> Aby użyć funkcji przełączania IP, usługa Visual Studio Test Agent musi działać jako użytkownik w grupie Administratorzy dla tego komputera agenta. Ten użytkownik jest zaznaczany podczas instalacji agenta, ale może zostać zmieniona przez zmodyfikowanie właściwości usługi i ponowne jej uruchomienie.<br /><br /> Aby sprawdzić, czy przełączanie IP działa poprawnie, Włącz rejestrowanie na serwerze sieci web usług IIS, sprawdź, że żądania pochodzą z adresów IP, które skonfigurowano przy użyciu funkcji rejestrowania usług IIS.|
 |**Atrybuty**|Zestaw par nazwa/wartość, które mogą być używane podczas wybierania agenta testowego. Na przykład test może wymagać określonego systemu operacyjnego. Możesz dodać atrybuty w **role** kartę testu pliku ustawień i może służyć do wybierania agenta testowego, który ma pasujące atrybuty. Jeśli chcesz uruchomić test na wielu komputerach, Utwórz atrybut w roli ustawień testów, który jest skonfigurowany do uruchamiania testów, a następnie skonfiguruj pasujący atrybut na każdym agencie testowym, którego chcesz użyć w tej roli... **Uwaga:** to ustawienie jest dostępna tylko dla agentów testowych, które są zarejestrowane z kontrolerem testów, który nie jest zarejestrowany do projektu, ponieważ te atrybuty są używane tylko w ustawieniach testu dla programu Visual Studio.|

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a8735992574699ba2b108fc493e9003ca52c9b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9489b8c4399ae72bf7f6a70011eec347d870ca80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928337"
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
-Określa, jakie informacje pobrać o polu dezasemblacji.  
+Określa, jakie informacje należy pobrać o polu dezasemblacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -66,37 +66,37 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
   
 ## <a name="members"></a>Elementy członkowskie  
  DSF_ADDRESS  
- Inicjowanie użycia `bstrAddress` pola.  
+ Inicjowanie bądź użyj `bstrAddress` pola.  
   
  DSF_ADDRESSOFFSET  
- Inicjowanie użycia `bstrAddressOffset` pola.  
+ Inicjowanie bądź użyj `bstrAddressOffset` pola.  
   
  DSF_CODEBYTES  
- Inicjowanie użycia `bstrCodeBytes` pola.  
+ Inicjowanie bądź użyj `bstrCodeBytes` pola.  
   
  DSF_OPCODE  
- Inicjowanie użycia `bstrOpCode` pola.  
+ Inicjowanie bądź użyj `bstrOpCode` pola.  
   
  DSF_OPERANDS  
- Inicjowanie użycia `bstrOperands` pola.  
+ Inicjowanie bądź użyj `bstrOperands` pola.  
   
  DSF_SYMBOL  
- Inicjowanie użycia `bstrSymbol` pola.  
+ Inicjowanie bądź użyj `bstrSymbol` pola.  
   
  DSF_CODELOCATIONID  
- Inicjowanie użycia `uCodeLocationId` pola.  
+ Inicjowanie bądź użyj `uCodeLocationId` pola.  
   
  DSF_POSITION  
- Inicjowanie użycia `posBeg` i `posEnd` pól.  
+ Inicjowanie bądź użyj `posBeg` i `posEnd` pola.  
   
  DSF_DOCUMENTURL  
- Inicjowanie użycia `bstrDocumentUrl` pola.  
+ Inicjowanie bądź użyj `bstrDocumentUrl` pola.  
   
  DSF_BYTEOFFSET  
- Inicjowanie użycia `dwByteOffset` pola.  
+ Inicjowanie bądź użyj `dwByteOffset` pola.  
   
  DSF_FLAGS  
- Inicjowanie użycia `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) pola.  
+ Inicjowanie bądź użyj `dwFlags` ([DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)) pola.  
   
  DSF_OPERANDS_SYMBOLS  
  Dołącz nazwy symbolu w `bstrOperands` pola.  
@@ -105,11 +105,11 @@ public enum enum_DISASSEMBLY_STREAM_FIELDS {
  Określa wszystkie pola dla strumienia dezasemblacji.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako parametr [odczytu](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metody, aby wskazać, które pola [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury mają być zainicjowany.  
+ Przekazany jako parametr do [odczytu](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metodę, aby wskazać, które pola [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury, które mają zostać zainicjowane.  
   
- Używany do `dwFields` członkiem `DisassemblyData` struktury, aby wskazać pola, które są używane i ważne, gdy struktura jest zwracany.  
+ Używany do `dwFields` członkiem `DisassemblyData` struktury, aby wskazać, pola, które są używane i ważne, gdy zwracany jest struktura.  
   
- Te wartości mogą być łączone z bitowego `OR`.  
+ Te wartości mogą być łączone przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

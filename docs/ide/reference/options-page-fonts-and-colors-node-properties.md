@@ -13,19 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf39d9a01794e34a50d81489214bb006e4c6448
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 05724c81b9983414c4e0c86870b630e29c33ade3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926582"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Strona opcji, czcionki i kolory — Właściwości węzła
-Ten dokument zawiera opis właściwości czcionek i kolorów dla okna narzędzia, która jest zarejestrowana są wyświetlane w obszarze **czcionki i kolory** w **środowiska** kategorii **opcje** okno dialogowe. W ten sposób realizowany dynamiczny charakter grup colorable elementów, które można zmienić, jeśli pakiety VSPackage są zainstalowane lub odinstalowane.
+Ten dokument zawiera opis właściwości czcionek i kolorów dla okna narzędzi, które jest zarejestrowana w celu są wyświetlane w obszarze **czcionki i kolory** w **środowiska** kategorii **opcje** okno dialogowe. Obejmuje to obsługę dynamiczny charakter grup z możliwością kolorowania elementów, które można zmienić w przypadku instalowania lub odinstalowywania pakietów VSPackage.
 
- Poniższej sekcji przedstawiono przykład typu zarejestrowanych okna i właściwości, które są dostępne dla każdego okna.
+ W poniższej sekcji pokazano przykład typu zarejestrowanych okna i właściwości, które są dostępne dla każdego okna.
 
-## <a name="text-editor-or-printer-or-dialogs-and-tool-windows"></a>Edytor tekstu lub drukarki lub okien dialogowych i okien narzędzi
+## <a name="text-editor-or-printer-or-dialogs-and-tool-windows"></a>Edytor tekstu lub drukarki lub oknami dialogowymi i narzędzie Windows
  `DTE.Properties("FontsAndColors", "TextEditor")`
 
  —lub—
@@ -37,14 +37,14 @@ Ten dokument zawiera opis właściwości czcionek i kolorów dla okna narzędzia
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
-|------------------------|-----------|-----------------|
-|FontFamily|Pobierz/Ustaw (ciąg)|Nazwa czcionki do użycia, takie jak "Courier New."|
-|FontCharacterSet|Pobierz/Ustaw (<xref:EnvDTE.vsFontCharSet>)|A <xref:EnvDTE.vsFontCharSet> określająca typ zestaw znaków używany, takich jak hebrajski lub rosyjski.|
-|FontSize|Pobierz/Ustaw (Short)|Rozmiar czcionki do użycia w punktach. Na przykład, 10 lub 12.|
+| - |-----------|-----------------|
+|fontFamily|Get/Set (ciąg)|Nazwa czcionki do użycia, takie jak "Courier New."|
+|FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|A <xref:EnvDTE.vsFontCharSet> określająca typ znaku skonfigurowany do używania takich jak hebrajski lub rosyjski.|
+|FontSize|Get/Set (krótki)|Rozmiar czcionki do użycia w punktach. Na przykład 10 lub 12.|
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Kontrolowanie opcji ustawienia](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [Określanie nazwy właściwości elementów na stronach opcje](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Kontrolowanie ustawień opcji](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Określanie nazw elementów właściwości na stronach opcji](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [Strona opcji, środowisko — Właściwości węzła](../../ide/reference/options-page-environment-node-properties.md)
 - [Strona opcji, edytor tekstu — Właściwości węzła](../../ide/reference/options-page-text-editor-node-properties.md)

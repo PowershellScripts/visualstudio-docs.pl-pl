@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c617bb84a3d7aad10769ef5dbceec657e49aa21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42624451"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927349"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>Przewodnik: Debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace
 
@@ -46,7 +46,7 @@ Za pomocą funkcji IntelliTrace, można łatwiej debugować rozwiązania program
 
 - [Debugowanie i naprawa rozwiązania SharePoint](#BKMK_DebugSolution)
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -265,15 +265,15 @@ Teraz, gdy kod jest dodawany do odbiorcy funkcji i modułów zbierających dane 
 
 3. Dezaktywuj tę funkcję, wykonując następujące czynności:
 
-    1. Na **Akcje witryny** menu w programie SharePoint, wybierz opcję **ustawienia lokacji**.
+   1. Na **Akcje witryny** menu w programie SharePoint, wybierz opcję **ustawienia lokacji**.
 
-    2. W obszarze **Akcje witryny**, wybierz **Zarządzanie funkcjami witryny** łącza.
+   2. W obszarze **Akcje witryny**, wybierz **Zarządzanie funkcjami witryny** łącza.
 
-    3. Obok pozycji **IntelliTraceTest Feature1**, wybierz **Dezaktywuj** przycisku.
+   3. Obok pozycji **IntelliTraceTest Feature1**, wybierz **Dezaktywuj** przycisku.
 
-    4. Na stronie Ostrzeżenie Wybierz **Dezaktywuj tę funkcję** łącza.
+   4. Na stronie Ostrzeżenie Wybierz **Dezaktywuj tę funkcję** łącza.
 
-     Program obsługi zdarzeń FeatureDeactivating() zgłasza błąd.
+      Program obsługi zdarzeń FeatureDeactivating() zgłasza błąd.
 
 ## <a name="collect-intellitrace-data-by-using-microsoft-monitoring-agent"></a>Zbieranie danych IntelliTrace za pomocą programu Microsoft Monitoring Agent
 
@@ -286,15 +286,15 @@ Jeśli zainstalujesz program Microsoft Monitoring Agent w systemie, na którym u
 
 2. Dezaktywowanie funkcji:
 
-    1. Na **Akcje witryny** menu w programie SharePoint, wybierz opcję **ustawienia lokacji**.
+   1. Na **Akcje witryny** menu w programie SharePoint, wybierz opcję **ustawienia lokacji**.
 
-    2. W obszarze **Akcje witryny**, wybierz **Zarządzanie funkcjami witryny** łącza.
+   2. W obszarze **Akcje witryny**, wybierz **Zarządzanie funkcjami witryny** łącza.
 
-    3. Obok pozycji **IntelliTraceTest Feature1**, wybierz **Dezaktywuj** przycisku.
+   3. Obok pozycji **IntelliTraceTest Feature1**, wybierz **Dezaktywuj** przycisku.
 
-    4. Na stronie Ostrzeżenie Wybierz **Dezaktywuj tę funkcję** łącza.
+   4. Na stronie Ostrzeżenie Wybierz **Dezaktywuj tę funkcję** łącza.
 
-     (W tym przypadku ze względu na zgłoszony błąd w obsłudze zdarzeń FeatureDeactivating()), wystąpi błąd.
+      (W tym przypadku ze względu na zgłoszony błąd w obsłudze zdarzeń FeatureDeactivating()), wystąpi błąd.
 
 3. W oknie programu PowerShell, uruchom [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) polecenie, aby utworzyć plik .iTrace, Zatrzymaj monitorowanie i ponownie uruchom swoje rozwiązanie programu SharePoint.
 

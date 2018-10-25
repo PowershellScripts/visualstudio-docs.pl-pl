@@ -1,5 +1,5 @@
 ---
-title: '&lt;Zaktualizuj&gt; elementu (Office development w Visual Studio)'
+title: '&lt;Aktualizuj&gt; — element (Office development w programie Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,15 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c51a7f79165d421f080d05088418d02a48680b66
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ac15ee59299653c71c2d1036e8318a0fee2b693c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927570"
 ---
-# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Zaktualizuj&gt; elementu (Office development w Visual Studio)
-  `update` Element Określa interwał aktualizacji sprawdza rozwiązania.  
+# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;Aktualizuj&gt; — element (Office development w programie Visual Studio)
+  `update` Element Określa interwał, w którym rozwiązanie będzie sprawdzać, które aktualizacje.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,31 +39,31 @@ ms.locfileid: "34767611"
 </update>  
 ```  
   
-## <a name="elements-and-attributes"></a>Elementy i atrybuty  
+## <a name="elements-and-attributes"></a>Atrybuty i elementy  
  `update` Element jest wymagany i znajduje się w `vstav3` przestrzeni nazw.  
   
  `update` Element ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`enabled`|Wymagana. Włącz na jedną z następujących wartości:<br /><br /> -   **wartość true,** do sprawdzania aktualizacji.<br />-   **FALSE** zapobiegające sprawdzania aktualizacji.|  
+|`enabled`|Wymagana. Dla węzła enabled Ustaw na jedną z następujących wartości:<br /><br /> -   **wartość true,** pod kątem aktualizacji.<br />-   **FALSE** zapobiegające sprawdzania dostępności aktualizacji.|  
   
- `update` Element ma następujące elementy podrzędne.  
+ `update` Element ma następujących elementów podrzędnych.  
   
-### <a name="expiration"></a>wygaśnięcia  
- `expiration` Element jest wymagany i znajduje się w `vstav3` przestrzeni nazw. Ten element Określa interwał sprawdza rozwiązania, w którym aktualizacje.  
+### <a name="expiration"></a>wygaśnięcie  
+ `expiration` Element jest wymagany i znajduje się w `vstav3` przestrzeni nazw. Ten element Określa interwał, z jaką rozwiązanie będzie sprawdzać dostępność aktualizacji.  
   
  `expiration` Element ma następujące atrybuty.  
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|`maximumAge`|   Wymagana. Ustaw to na liczbę całkowitą.|  
-|`unit`|Wymagana. Ustaw `unit` do jednej z następujących wartości:<br /><br /> -   **Godziny**<br />-   **dni korzystania z**<br />-   **Tygodni**|  
+|`maximumAge`| Wymagana. Ustaw to na liczbę całkowitą.|  
+|`unit`|Wymagana. Ustaw `unit` do jednej z następujących wartości:<br /><br /> -   **godz.**<br />-   **dni**<br />-   **tyg.**|  
   
 ## <a name="example-of-always-checking-for-updates"></a>Przykład zawsze sprawdzania dostępności aktualizacji  
   
 ### <a name="description"></a>Opis  
- Poniższy przykład kodu pokazuje `update` element, który ma ustawioną wartość sprawdzać dostępność aktualizacji w rozwiązaniach pakietu Office.  
+ W poniższym przykładzie kodu pokazano `update` element, który jest ustawiony na Zawsze sprawdzaj dostępność aktualizacji w rozwiązaniach pakietu Office.  
   
 ### <a name="code"></a>Kod  
   
@@ -74,7 +74,7 @@ ms.locfileid: "34767611"
 ## <a name="example-of-setting-a-default-update-interval"></a>Przykładowa konfiguracja domyślny interwał aktualizacji  
   
 ### <a name="description"></a>Opis  
- Poniższy przykład kodu pokazuje `update` elementu w manifeście aplikacji dla rozwiązań pakietu Office. Ten przykładowy kod jest częścią większego przykładu udostępnionego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).  
+ W poniższym przykładzie kodu pokazano `update` elementu w manifeście aplikacji dla rozwiązań pakietu Office. Ten przykład kodu jest częścią większego przykładu przewidzianego w [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).  
   
 ### <a name="code"></a>Kod  
   

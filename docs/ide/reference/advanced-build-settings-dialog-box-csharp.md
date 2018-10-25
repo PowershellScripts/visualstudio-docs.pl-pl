@@ -14,72 +14,86 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c39e68c05f438b787bb7a0930f2ad0ba6a324ee1
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: cf4fd5b48dc3bfcfbfe1809eebe656a5b8f2079d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057544"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928285"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Zaawansowane ustawienia kompilacji (C#) — Okno dialogowe
 
-Użyj **Zaawansowane ustawienia kompilacji** okna dialogowego **projektanta projektu** do określenia zaawansowane właściwości konfiguracji kompilacji projektu. Dotyczy to okno dialogowe [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] tylko projekty.
+Użyj **Zaawansowane ustawienia kompilacji** okna dialogowego **projektanta projektu** określić najbardziej zaawansowane właściwości konfiguracji kompilacji projektu. Dotyczy to okno dialogowe [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] wyłącznie dla projektów.
 
 ## <a name="general"></a>Ogólne
 
- Poniższe opcje pozwalają na ogólne ustawienia zaawansowane.
+Poniższe opcje umożliwiają konfigurowanie ogólnych ustawień zaawansowanych.
 
- **Wersja językowa** Określa wersję języka. Zestaw funkcji różni się w każdej wersji, ta opcja może służyć do wymusić kompilatora, aby zezwolić tylko podzbiór funkcji zaimplementowanych lub Włącz tylko te funkcje, które są zgodne ze standardem istniejących. To ustawienie ma następujące opcje:
+**Wersja językowa**
 
- - **default**
+Określa wersję języka. Zestaw funkcji różni się w każdej wersji, ta opcja może służyć do wymusić na kompilatorze, aby zezwolić tylko podzbiór funkcji zaimplementowano lub włączyć tylko te funkcje, które są zgodne ze standardem istniejących. To ustawienie ma następujące opcje:
 
-   Przeznaczony dla bieżącej wersji.
+- **default**
+
+   Jest przeznaczony dla bieżącej wersji.
 
 - **ISO-1** i **ISO-2**
 
-  Dotyczy funkcji standardowe ISO-1 i ISO 2 odpowiednio.
+   Jest przeznaczony dla funkcji standard ISO-1 i ISO 2 odpowiednio.
 
-- **C# [numer wersji]**
+- **C#[numer wersji]**
 
- Dotyczy określonej wersji języka C#. Aby uzyskać więcej informacji, zobacz [/langversion (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
+   Jest przeznaczony dla określonej wersji C#. Aby uzyskać więcej informacji, zobacz [/langversion (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
 
+**Wewnętrznych kompilatora raportowanie błędów**
 
- **Raportowanie wewnętrznych błędów kompilatora** Określa, czy do raportów o błędach kompilatora do firmy Microsoft. Jeśli ustawiono **wiersza** (ustawienie domyślne), jeśli zostanie wyświetlony monit o wystąpi błąd wewnętrzny kompilatora, dzięki któremu można elektronicznie wysyłania raportów o błędach do firmy Microsoft. Jeśli ustawiono **wysyłania**, raport o błędzie wysyłany jest automatycznie. Jeśli ustawiono **kolejki**, raporty o błędach zostaną umieszczone w kolejce. Jeśli ustawiono **Brak**, błąd jest zgłaszany tylko przez kompilator tekstowych danych wyjściowych. Aby uzyskać więcej informacji, zobacz [/errorreport (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option).
+Określa, czy należy zgłaszać błędy kompilatora do firmy Microsoft. Jeśli ustawiono **wiersza** (ustawienie domyślne), jeśli zostanie wyświetlony monit o wystąpi błąd wewnętrzny kompilatora, co daje możliwość elektronicznie wysłaniem raportu o błędach do firmy Microsoft. Jeśli ustawiono **wysyłania**, raport o błędzie zostanie automatycznie wysłane. Jeśli ustawiono **kolejki**, raporty o błędach zostanie umieszczona w kolejce. Jeśli ustawiono **Brak**, błąd jest zgłaszany tylko na kompilatora tekst wyjściowy. Aby uzyskać więcej informacji, zobacz [/errorreport (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option).
 
- **Sprawdzaj przepełnienie/niedopełnienie arytmetyczne** Określa, czy instrukcji arytmetyczne całkowitą nie jest w zakresie [zaznaczone](/dotnet/csharp/language-reference/keywords/checked) lub [niezaznaczone](/dotnet/csharp/language-reference/keywords/unchecked) słów kluczowych i czy wynikiem jest wartość poza obszarem danych typu spowoduje, że wyjątek czasu wykonywania. Aby uzyskać więcej informacji, zobacz [/ checked (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
+**Sprawdzaj przepełnienie/niedopełnienie arytmetyczne**
 
- **Nie odwołuj się do pliku mscorlib.dll** Określa, czy mscorlib.dll zostaną zaimportowane do programu Definiowanie całą <xref:System> przestrzeni nazw. Zaznacz to pole wyboru, jeśli chcesz zdefiniować lub utworzyć własne <xref:System> przestrzeni nazw i obiektów. Aby uzyskać więcej informacji, zobacz [/nostdlib (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
+Określa, czy liczba całkowita arytmetyczne instrukcja, nie jest w zakresie [zaznaczone](/dotnet/csharp/language-reference/keywords/checked) lub [unchecked](/dotnet/csharp/language-reference/keywords/unchecked) słów kluczowych i że wyniki w wartość spoza zakresu typu danych spowoduje, że środowiska wykonawczego wyjątek. Aby uzyskać więcej informacji, zobacz [/ checked (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
+
+**Nie odwołuj się do biblioteki mscorlib.dll**
+
+Określa, czy biblioteka mscorlib.dll zostaną zaimportowane do programu, definiując całą <xref:System> przestrzeni nazw. Zaznacz to pole wyboru, jeśli chcesz zdefiniować lub utworzyć własne <xref:System> przestrzeni nazw i obiektów. Aby uzyskać więcej informacji, zobacz [/nostdlib (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
 
 ## <a name="output"></a>Dane wyjściowe
 
- Poniższe opcje pozwalają określić opcje wyjściowe zaawansowanych.
+Poniższe opcje umożliwiają określenie opcji zaawansowanych danych wyjściowych.
 
- **Informacje o debugowaniu** Określa typ informacji dotyczących debugowania generowanych przez kompilator. Aby uzyskać informacje na temat konfigurowania wydajność debugowania aplikacji, zobacz [ułatwiając obraz do debugowania](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). To ustawienie ma następujące opcje:
+**Informacje o debugowaniu**
+
+Określa typ informacji o debugowaniu generowanych przez kompilator. Aby uzyskać informacje dotyczące sposobu konfigurowania wydajność debugowania aplikacji, zobacz [ułatwianie obrazu do debugowania](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). To ustawienie ma następujące opcje:
 
 - **Brak**
 
-  Określa, że żadne informacje debugowania będą generowane.
+   Określa, zostanie wygenerowany nie informacji debugowania.
 
 - **full**
 
-  Umożliwia dołączenie debugera do działającego programu.
+   Umożliwia dołączanie debugera do uruchomionego programu.
 
-- **pdbonly**
+- **"pdbonly"**
 
-  Umożliwia debugowanie, gdy program jest uruchamiany w debugerze, ale będą wyświetlane tylko asemblera jeśli uruchomiony program jest podłączony do debugera kodu źródłowego.
-- **przenośne**
+   Umożliwia kodu źródłowego, debugowanie, gdy program jest uruchomiony w debugerze, ale będą wyświetlane tylko asemblera, gdy uruchomiony program jest dołączony do debugera.
 
-  Tworzy. Plik PDB, plik symboli nie poszczególnych platform, przenośne z innych narzędzi, szczególnie debuger, informacje o tym, co w głównym pliku wykonywalnego i jak został utworzony. Zobacz [przenośnych PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) Aby uzyskać więcej informacji.
+-  **Przenośna**
 
-- **osadzone**
+   Tworzy. Plik PDB, plik symboli nie określonej platformy, przenośną, który zawiera inne narzędzia, szczególnie debugery, informacje o tym, co znajduje się w głównym pliku wykonywalnego i jak został utworzony. Zobacz [przenośnego pliku PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) Aby uzyskać więcej informacji.
 
-  Osadza informacje o symbolach przenośny w zestawie. Nie zewnętrznych. Plik PDB jest generowany.
+- **Osadzony**
+
+   Osadza informacje o symbolach przenośne w zestawie. Nie zewnętrznych. Generowany jest plik PDB.
 
 Aby uzyskać więcej informacji, zobacz [/Debug (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option).
 
-**Plik wyrównanie** Określa rozmiar sekcji w pliku wyjściowym. Prawidłowe wartości to **512**, **1024**, **2048**, **4096**, i **8192**. Te wartości są mierzone w bajtach. Każdej sekcji będzie wyrównany na granicy, który jest wielokrotnością tej wartości mające wpływ na rozmiar pliku wyjściowego. Aby uzyskać więcej informacji, zobacz [/filealign (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
+**Wyrównanie pliku**
 
-**Adres podstawowy biblioteki** Określa preferowany adres podstawowy, w którym można załadować biblioteki DLL. Domyślny adres podstawowy biblioteki DLL jest ustawiana przez [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] środowisko uruchomieniowe języka wspólnego. Aby uzyskać więcej informacji, zobacz [/baseAddress (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
+Określa rozmiar sekcji w pliku wyjściowym. Prawidłowe wartości to **512**, **1024**, **2048**, **4096**, i **8192**. Te wartości są mierzone w bajtach. Każda sekcja będzie wyrównany na granicy, która jest wielokrotnością liczby tę wartość, mających wpływ na rozmiar pliku wyjściowego. Aby uzyskać więcej informacji, zobacz [/filealign (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option).
+
+**Adres podstawowy biblioteki**
+
+Określa preferowany adres podstawowy, w którym można załadować biblioteki DLL. Domyślny adres podstawowy dla biblioteki DLL jest ustawiana przez [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] środowiska uruchomieniowego języka wspólnego. Aby uzyskać więcej informacji, zobacz [/baseAddress (opcje kompilatora C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
 ## <a name="see-also"></a>Zobacz też
 

@@ -16,12 +16,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fea3271ed628455d53a927fd5993e887564d27ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7260ba1dd2f5485c42c25dd3319f0aeb00ff9f05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927206"
 ---
 # <a name="vsix-project-template"></a>Szablon projektu VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Można użyć szablonu projektu VSIX do opakowania jedno lub więcej rozszerzeń
 ## <a name="uses-of-the-vsix-project-template"></a>Używa szablonu projektu VSIX  
  Szablon projektu VSIX ma dwa podstawowe zastosowania:  
   
--   Aby wdrożyć szablony projektów, szablonów elementów i inne rozszerzenia, które nie zostały jeszcze obsługi VSIX.  
+- Aby wdrożyć szablony projektów, szablonów elementów i inne rozszerzenia, które nie zostały jeszcze obsługi VSIX.  
   
--   Aby opakować dane wyjściowe z wielu rozszerzeń w pakiecie jedno wdrożenie.  
+- Aby opakować dane wyjściowe z wielu rozszerzeń w pakiecie jedno wdrożenie.  
   
- Nie trzeba użyć szablonu projektu VSIX do wdrożenia pakietów VSPackage lub innych rodzajów rozszerzenia, które mają już VSIX obsługi.  
+  Nie trzeba użyć szablonu projektu VSIX do wdrożenia pakietów VSPackage lub innych rodzajów rozszerzenia, które mają już VSIX obsługi.  
   
 ## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>Pakowanie rozszerzenia w projekcie VSIX pusty  
  Można spakować istniejące rozszerzenie lub rozszerzenie, które nie ma jeszcze VSIX obsługi, opakowując go w projekcie VSIX jest pusty. Rozszerzenia w celu jej opakowania musi być typu, który jest obsługiwany przez [schematu VSIX](../extensibility/vsix-extension-schema-2-0-reference.md).  

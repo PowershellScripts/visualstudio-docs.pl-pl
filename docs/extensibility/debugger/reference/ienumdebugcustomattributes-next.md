@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ff7d39bcfe255ced2f38c39cd29cd6571111978
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 107ab2c7ad882705d67924528ac16893a26451e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121082"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927583"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
-Pobiera określoną liczbę atrybutów niestandardowych w kolejności wyliczenia.  
+Pobiera określoną liczbę atrybutów niestandardowych, w kolejności wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -45,16 +45,16 @@ int Next(
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [in] Liczba elementów do pobrania. Określa maksymalny rozmiar `rgelt` tablicy.  
+ [in] Liczba elementów do pobrania. Również określa maksymalny rozmiar `rgelt` tablicy.  
   
  `rgelt`  
  [out] Tablica [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) obiekty do wypełnienia.  
   
  `pceltFetched`  
- [out] Zwraca liczbę elementów, w rzeczywistości zwracane w `rgelt`.  
+ [out] Zwraca liczbę elementów, w rzeczywistości są zwracane w `rgelt`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli mniej niż żądana liczba elementów mogą być zwracane; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli mniej niż żądana liczba elementów, które mogą być zwracane; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)   

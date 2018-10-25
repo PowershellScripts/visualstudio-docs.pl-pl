@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e0a9c128e2662400e8c13cf09e0c5272078ee07
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 4f5a059562db2409dca8eca1fb53c007059456b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928116"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Tworzenie systemu podstawowego projektu, część 2
 Pierwszy instrukcje przedstawione w tej serii [tworzenie systemu podstawowego projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md), pokazuje, jak tworzenie systemu podstawowego projektu. W tym przewodniku opiera się na systemu podstawowego projektu, dodając szablonu programu Visual Studio, strony właściwości i inne funkcje. Pierwszym przewodniku należy wykonać przed rozpoczęciem korzystania z niej.  
@@ -47,73 +47,73 @@ Pierwszy instrukcje przedstawione w tej serii [tworzenie systemu podstawowego pr
   
  Przy użyciu szablonu programu Visual Studio (*.vstemplate* pliku) zamiast szablonu podstawowego projektu, można kontrolować, jak szablon jest wyświetlany w **nowy projekt** okno dialogowe i jak są parametry szablonu zastąpione.  A *.vstemplate* plik jest plikiem XML, który opisuje, jak mają być włączone, gdy projekt jest tworzony przy użyciu szablonu projektu systemu plików źródłowych. Sam system projekt jest kompilowany przez zbieranie *.vstemplate* plików i plików źródłowych w *zip* pliku, a następnie wdrażane przez skopiowanie *zip* plik do lokalizacji, która jest znane w programie Visual Studio. Ten proces opisano szczegółowo w dalszej części tego przewodnika.  
   
-1.  W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otwórz rozwiązanie SimpleProject, który został utworzony, postępując zgodnie z [tworzenie systemu podstawowego projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md).  
+1. W [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otwórz rozwiązanie SimpleProject, który został utworzony, postępując zgodnie z [tworzenie systemu podstawowego projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md).  
   
-2.  W *SimpleProjectPackage.cs* plików, znajdowanie atrybutu ProvideProjectFactory. Zamień na drugi parametr (nazwa projektu) z wartością null, a czwarty parametr (ścieżka do folderu szablonu projektu) ". \\\NullPath ", wykonując następujące czynności.  
+2. W *SimpleProjectPackage.cs* plików, znajdowanie atrybutu ProvideProjectFactory. Zamień na drugi parametr (nazwa projektu) z wartością null, a czwarty parametr (ścieżka do folderu szablonu projektu) ". \\\NullPath ", wykonując następujące czynności.  
   
-    ```  
-    [ProvideProjectFactory(typeof(SimpleProjectFactory), null,  
-        "Simple Project Files (*.myproj);*.myproj", "myproj", "myproj",  
-        ".\\NullPath",  
-    LanguageVsTemplate = "SimpleProject")]  
-    ```  
+   ```  
+   [ProvideProjectFactory(typeof(SimpleProjectFactory), null,  
+       "Simple Project Files (*.myproj);*.myproj", "myproj", "myproj",  
+       ".\\NullPath",  
+   LanguageVsTemplate = "SimpleProject")]  
+   ```  
   
-3.  Dodaj plik XML o nazwie *SimpleProject.vstemplate* do *\\Templates\Projects\SimpleProject\\* folderu.  
+3. Dodaj plik XML o nazwie *SimpleProject.vstemplate* do *\\Templates\Projects\SimpleProject\\* folderu.  
   
-4.  Zastąp zawartość *SimpleProject.vstemplate* następującym kodem.  
+4. Zastąp zawartość *SimpleProject.vstemplate* następującym kodem.  
   
-    ```xml  
-    <VSTemplate Version="2.0.0" Type="Project"  
-        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-      <TemplateData>  
-        <Name>SimpleProject Application</Name>  
-        <Description>  
-            A project for creating a SimpleProject application  
-         </Description>  
-         <Icon>SimpleProject.ico</Icon>  
-         <ProjectType>SimpleProject</ProjectType>  
-      </TemplateData>  
-      <TemplateContent>  
-        <Project File="SimpleProject.myproj" ReplaceParameters="true">  
-          <ProjectItem ReplaceParameters="true" OpenInEditor="true">  
-              Program.cs  
-          </ProjectItem>  
-          <ProjectItem ReplaceParameters="true" OpenInEditor="false">  
-             AssemblyInfo.cs  
-          </ProjectItem>  
-        </Project>  
-      </TemplateContent>  
-    </VSTemplate>  
-    ```  
+   ```xml  
+   <VSTemplate Version="2.0.0" Type="Project"  
+       xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+     <TemplateData>  
+       <Name>SimpleProject Application</Name>  
+       <Description>  
+           A project for creating a SimpleProject application  
+        </Description>  
+        <Icon>SimpleProject.ico</Icon>  
+        <ProjectType>SimpleProject</ProjectType>  
+     </TemplateData>  
+     <TemplateContent>  
+       <Project File="SimpleProject.myproj" ReplaceParameters="true">  
+         <ProjectItem ReplaceParameters="true" OpenInEditor="true">  
+             Program.cs  
+         </ProjectItem>  
+         <ProjectItem ReplaceParameters="true" OpenInEditor="false">  
+            AssemblyInfo.cs  
+         </ProjectItem>  
+       </Project>  
+     </TemplateContent>  
+   </VSTemplate>  
+   ```  
   
-5.  W **właściwości** okna, wybierz wszystkie pięć plików *\\Templates\Projects\SimpleProject\\* folder i ustaw **Akcja kompilacji** Aby **ZipProject**.  
+5. W **właściwości** okna, wybierz wszystkie pięć plików *\\Templates\Projects\SimpleProject\\* folder i ustaw **Akcja kompilacji** Aby **ZipProject**.  
   
- ![Prostego projektu w folderze](../extensibility/media/simpproj2.png "SimpProj2")  
+   ![Prostego projektu w folderze](../extensibility/media/simpproj2.png "SimpProj2")  
   
- \<TemplateData > sekcja określa lokalizację i wygląd SimpleProject typ projektu w **nowy projekt** okno dialogowe, w następujący sposób:  
+   \<TemplateData > sekcja określa lokalizację i wygląd SimpleProject typ projektu w **nowy projekt** okno dialogowe, w następujący sposób:  
   
--   \<Name > szablon projektu, który ma być aplikacji SimpleProject nazwy elementu.  
+- \<Name > szablon projektu, który ma być aplikacji SimpleProject nazwy elementu.  
   
--   \<Opis > element zawiera opis wyświetlany w **nowy projekt** okno dialogowe, gdy zaznaczony jest szablon projektu.  
+- \<Opis > element zawiera opis wyświetlany w **nowy projekt** okno dialogowe, gdy zaznaczony jest szablon projektu.  
   
--   \<Ikonę > element Określa ikonę, która jest wyświetlana wraz z SimpleProject typu projektu.  
+- \<Ikonę > element Określa ikonę, która jest wyświetlana wraz z SimpleProject typu projektu.  
   
--   \<ProjectType > typ projektu w nazwy elementu **nowy projekt** okno dialogowe. Ta nazwa zastępuje atrybutu ProvideProjectFactory parametr nazwy projektu.  
+- \<ProjectType > typ projektu w nazwy elementu **nowy projekt** okno dialogowe. Ta nazwa zastępuje atrybutu ProvideProjectFactory parametr nazwy projektu.  
   
-    > [!NOTE]
-    >  \<ProjectType > element musi być zgodna `LanguageVsTemplate` argument `ProvideProjectFactory` atrybut w pliku SimpleProjectPackage.cs.  
+  > [!NOTE]
+  >  \<ProjectType > element musi być zgodna `LanguageVsTemplate` argument `ProvideProjectFactory` atrybut w pliku SimpleProjectPackage.cs.  
   
- \<TemplateContent > sekcji opisano te pliki, które są generowane podczas tworzenia nowego projektu:  
+  \<TemplateContent > sekcji opisano te pliki, które są generowane podczas tworzenia nowego projektu:  
   
--   *SimpleProject.myproj*  
+- *SimpleProject.myproj*  
   
--   *Program.cs*  
+- *Program.cs*  
   
--   *AssemblyInfo.cs*  
+- *AssemblyInfo.cs*  
   
- Wszystkie trzy pliki mają `ReplaceParameters` ustawiona na wartość true, co umożliwia Podstawienie parametru.  *Program.cs* plik ma `OpenInEditor` ustawiona na wartość true, co powoduje, że plik ma zostać otwarty w edytorze kodu, gdy projekt jest tworzony.  
+  Wszystkie trzy pliki mają `ReplaceParameters` ustawiona na wartość true, co umożliwia Podstawienie parametru.  *Program.cs* plik ma `OpenInEditor` ustawiona na wartość true, co powoduje, że plik ma zostać otwarty w edytorze kodu, gdy projekt jest tworzony.  
   
- Aby uzyskać więcej informacji na temat elementów w schemacie szablon programu Visual Studio, zobacz [odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
+  Aby uzyskać więcej informacji na temat elementów w schemacie szablon programu Visual Studio, zobacz [odwołanie do schematu szablonu Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
 > [!NOTE]
 >  Jeśli projekt zawiera więcej niż jeden szablon programu Visual Studio, każdy szablon jest w oddzielnym folderze. Każdy plik w tym folderze muszą mieć **Build Action** równa **ZipProject**.  
@@ -155,15 +155,15 @@ Pierwszy instrukcje przedstawione w tej serii [tworzenie systemu podstawowego pr
 ## <a name="examine-the-visual-studio-template-build-steps"></a>Sprawdź kroki kompilacji szablonu programu Visual Studio  
  System kompilacji projektu pakietu VSPackage zwykle działa w programie Visual Studio w trybie instalacji po *.vstemplate* zmiany pliku lub projektu, który zawiera *.vstemplate* plik zostanie ponownie skompilowany. Możesz kontynuować pracę przez ustawienie poziomu szczegółowości MSBuild do normalnego lub nowszej.  
   
-1.  Na **narzędzia** menu, kliknij przycisk **opcje**.  
+1. Na **narzędzia** menu, kliknij przycisk **opcje**.  
   
-2.  Rozwiń **projekty i rozwiązania** węzeł, a następnie wybierz **kompilowanie i uruchamianie**.  
+2. Rozwiń **projekty i rozwiązania** węzeł, a następnie wybierz **kompilowanie i uruchamianie**.  
   
-3.  Ustaw **poziom szczegółowości danych wyjściowych kompilacji projektu programu MSBuild** do **normalny**. Kliknij przycisk **OK**.  
+3. Ustaw **poziom szczegółowości danych wyjściowych kompilacji projektu programu MSBuild** do **normalny**. Kliknij przycisk **OK**.  
   
-4.  Ponownie skompiluj projekt SimpleProject.  
+4. Ponownie skompiluj projekt SimpleProject.  
   
- Krok kompilacji, aby utworzyć *zip* pliku projektu powinna wyglądać następująco.  
+   Krok kompilacji, aby utworzyć *zip* pliku projektu powinna wyglądać następująco.  
   
 ```  
 ZipProjects:  
@@ -185,23 +185,23 @@ ZipProjects:
 ## <a name="test-a-visual-studio-template"></a>Testowanie szablonu programu Visual Studio  
  Przetestuj fabryką projektu, aby zobaczyć, czy tworzy hierarchii projektu przy użyciu szablonu programu Visual Studio.  
   
-1.  Zresetuj wystąpienie eksperymentalne programu Visual Studio SDK.  
+1. Zresetuj wystąpienie eksperymentalne programu Visual Studio SDK.  
   
-     Na [!INCLUDE[win7](../debugger/includes/win7_md.md)]: na **Start** menu, Znajdź **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** folder, a następnie wybierz **resetowania eksperymentalne programu Microsoft Visual Studio wystąpienie**.  
+    Na [!INCLUDE[win7](../debugger/includes/win7_md.md)]: na **Start** menu, Znajdź **Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools** folder, a następnie wybierz **resetowania eksperymentalne programu Microsoft Visual Studio wystąpienie**.  
   
-     W nowszych wersjach systemu Windows: na **Start** ekranu, wpisz **zresetować programu Microsoft Visual Studio \<wersji > eksperymentalne wystąpienie**.  
+    W nowszych wersjach systemu Windows: na **Start** ekranu, wpisz **zresetować programu Microsoft Visual Studio \<wersji > eksperymentalne wystąpienie**.  
   
-2.  Zostanie wyświetlone okno wiersza polecenia. Po wyświetleniu wyrazy **naciśnij dowolny klawisz, aby kontynuować**, kliknij przycisk **ENTER**. Po zamknięciu okna, Otwórz program Visual Studio.  
+2. Zostanie wyświetlone okno wiersza polecenia. Po wyświetleniu wyrazy **naciśnij dowolny klawisz, aby kontynuować**, kliknij przycisk **ENTER**. Po zamknięciu okna, Otwórz program Visual Studio.  
   
-3.  Ponownie skompiluj projekt SimpleProject, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
+3. Ponownie skompiluj projekt SimpleProject, a następnie rozpocząć debugowanie. Zostanie wyświetlone wystąpienie eksperymentalne.  
   
-4.  W doświadczalnym wystąpieniu Utwórz projekt SimpleProject. W **nowy projekt** okno dialogowe, wybierz opcję **SimpleProject**.  
+4. W doświadczalnym wystąpieniu Utwórz projekt SimpleProject. W **nowy projekt** okno dialogowe, wybierz opcję **SimpleProject**.  
   
-5.  Nowe wystąpienie klasy SimpleProject powinny być widoczne.  
+5. Nowe wystąpienie klasy SimpleProject powinny być widoczne.  
   
- ![Nowe wystąpienie prostego projektu](../extensibility/media/simpproj2_newproj.png "SimpProj2_NewProj")  
+   ![Nowe wystąpienie prostego projektu](../extensibility/media/simpproj2_newproj.png "SimpProj2_NewProj")  
   
- ![Nowe wystąpienie mój projekt](../extensibility/media/simpproj2_myproj.png "SimpProj2_MyProj")  
+   ![Nowe wystąpienie mój projekt](../extensibility/media/simpproj2_myproj.png "SimpProj2_MyProj")  
   
 ## <a name="create-a-project-type-child-node"></a>Utwórz węzeł podrzędny typu projektu  
  Można dodać węzła podrzędnego do węzła typu projektu w **nowy projekt** okno dialogowe.  Na przykład dla typu projektu SimpleProject, może mieć węzłów podrzędnych dla aplikacji konsoli, okna aplikacji, aplikacje sieci web i tak dalej.  
@@ -259,30 +259,30 @@ ZipProjects:
 ## <a name="test-the-project-type-child-node"></a>Test węzła podrzędnego typu projektu  
  Testowanie zmodyfikowany plik projektu aby zobaczyć, czy **konsoli** węzeł podrzędny pojawia się w **nowy projekt** okno dialogowe.  
   
-1.  Uruchom **Zresetuj Microsoft Visual Studio wystąpienie eksperymentalne programu** narzędzia.  
+1. Uruchom **Zresetuj Microsoft Visual Studio wystąpienie eksperymentalne programu** narzędzia.  
   
-2.  Ponownie skompiluj projekt SimpleProject, a następnie rozpocząć debugowanie. Wystąpienie eksperymentalne powinna zostać wyświetlona.  
+2. Ponownie skompiluj projekt SimpleProject, a następnie rozpocząć debugowanie. Wystąpienie eksperymentalne powinna zostać wyświetlona.  
   
-3.  W **nowy projekt** okno dialogowe, kliknij przycisk **SimpleProject** węzła. **Aplikację Konsolową** szablon powinien pojawić się w **szablony** okienka.  
+3. W **nowy projekt** okno dialogowe, kliknij przycisk **SimpleProject** węzła. **Aplikację Konsolową** szablon powinien pojawić się w **szablony** okienka.  
   
-4.  Rozwiń **SimpleProject** węzła. **Konsoli** węzeł podrzędny powinna zostać wyświetlona. **Aplikacji SimpleProject** szablon będzie wyświetlany w **szablony** okienka.  
+4. Rozwiń **SimpleProject** węzła. **Konsoli** węzeł podrzędny powinna zostać wyświetlona. **Aplikacji SimpleProject** szablon będzie wyświetlany w **szablony** okienka.  
   
-5.  Kliknij przycisk **anulować** i zatrzymać debugowanie.  
+5. Kliknij przycisk **anulować** i zatrzymać debugowanie.  
   
- ![Pakiet zbiorczy prostego projektu](../extensibility/media/simpproj2_rollup.png "SimpProj2_Rollup")  
+   ![Pakiet zbiorczy prostego projektu](../extensibility/media/simpproj2_rollup.png "SimpProj2_Rollup")  
   
- ![Węzeł konsoli prostego projektu](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")  
+   ![Węzeł konsoli prostego projektu](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")  
   
 ## <a name="substitute-project-template-parameters"></a>Zastąp parametry szablonu projektu  
  [Tworzenie systemu podstawowego projektu, część 1](../extensibility/creating-a-basic-project-system-part-1.md) pokazano, jak zastąpić `ProjectNode.AddFileFromTemplate` metodę, aby wykonać podstawowe rodzaj Podstawienie parametru szablonu. W tej sekcji omawia sposób używania bardziej zaawansowanych parametrów szablonu programu Visual Studio.  
   
  Po utworzeniu projektu przy użyciu szablonu programu Visual Studio w **nowy projekt** ciągi szablonu, parametry są zastępowane okno dialogowe, aby dostosować projekt. Parametr szablonu ma specjalne token, który rozpoczyna się i kończy znak dolara, na przykład $time$. Następujące dwa parametry są szczególnie przydatne w przypadku włączania dostosowania w projektach, które są oparte na szablonie:  
   
--   $ $GUID [1 – 10] jest zastępowana przez nowy identyfikator Guid. Można określić maksymalnie 10 unikatowych identyfikatorów GUID, na przykład $guid1$.  
+- $ $GUID [1 – 10] jest zastępowana przez nowy identyfikator Guid. Można określić maksymalnie 10 unikatowych identyfikatorów GUID, na przykład $guid1$.  
   
--   $safeprojectname$ to nazwa podana przez użytkownika w **nowy projekt** dialogowym zmodyfikowane w celu usunięcia wszystkich niebezpiecznych znaków i spacji.  
+- $safeprojectname$ to nazwa podana przez użytkownika w **nowy projekt** dialogowym zmodyfikowane w celu usunięcia wszystkich niebezpiecznych znaków i spacji.  
   
- Aby uzyskać pełną listę parametrów szablonu, zobacz [parametry szablonu](../ide/template-parameters.md).  
+  Aby uzyskać pełną listę parametrów szablonu, zobacz [parametry szablonu](../ide/template-parameters.md).  
   
 ### <a name="to-substitute-project-template-parameters"></a>Aby zastąpić parametry szablonu projektu  
   
@@ -355,144 +355,144 @@ ZipProjects:
   
 -   RootNamespace.  
   
-1.  W *SimpleProjectPackage.cs* plików, Dodaj tę `ProvideObject` atrybutu `SimpleProjectPackage` klasy:  
+1. W *SimpleProjectPackage.cs* plików, Dodaj tę `ProvideObject` atrybutu `SimpleProjectPackage` klasy:  
   
-    ```  
-    [ProvideObject(typeof(GeneralPropertyPage))]  
-    public sealed class SimpleProjectPackage : ProjectPackage  
-    ```  
+   ```  
+   [ProvideObject(typeof(GeneralPropertyPage))]  
+   public sealed class SimpleProjectPackage : ProjectPackage  
+   ```  
   
-     Rejestruje to klasy strony właściwości `GeneralPropertyPage` w modelu COM.  
+    Rejestruje to klasy strony właściwości `GeneralPropertyPage` w modelu COM.  
   
-2.  W *SimpleProjectNode.cs* Dodaj te dwie metody zgodnym z przesłoniętą `SimpleProjectNode` klasy:  
+2. W *SimpleProjectNode.cs* Dodaj te dwie metody zgodnym z przesłoniętą `SimpleProjectNode` klasy:  
   
-    ```csharp  
-    protected override Guid[] GetConfigurationIndependentPropertyPages()  
-    {  
-        Guid[] result = new Guid[1];  
-        result[0] = typeof(GeneralPropertyPage).GUID;  
+   ```csharp  
+   protected override Guid[] GetConfigurationIndependentPropertyPages()  
+   {  
+       Guid[] result = new Guid[1];  
+       result[0] = typeof(GeneralPropertyPage).GUID;  
+       return result;  
+   }  
+   protected override Guid[] GetPriorityProjectDesignerPages()  
+   {  
+       Guid[] result = new Guid[1];  
+       result[0] = typeof(GeneralPropertyPage).GUID;  
         return result;  
-    }  
-    protected override Guid[] GetPriorityProjectDesignerPages()  
-    {  
-        Guid[] result = new Guid[1];  
-        result[0] = typeof(GeneralPropertyPage).GUID;  
-         return result;  
-    }  
-    ```  
+   }  
+   ```  
   
-     Obie te metody zwracają tablicę identyfikatorów GUID strony właściwości.  Identyfikator GUID GeneralPropertyPage jest jedynym elementem w tablicy, więc **stron właściwości** zostanie wyświetlone okno dialogowe tylko jedną stronę.  
+    Obie te metody zwracają tablicę identyfikatorów GUID strony właściwości.  Identyfikator GUID GeneralPropertyPage jest jedynym elementem w tablicy, więc **stron właściwości** zostanie wyświetlone okno dialogowe tylko jedną stronę.  
   
-3.  Dodaj plik klasy o nazwie *GeneralPropertyPage.cs* do projektu SimpleProject.  
+3. Dodaj plik klasy o nazwie *GeneralPropertyPage.cs* do projektu SimpleProject.  
   
-4.  Zastąp zawartość tego pliku przy użyciu następującego kodu:  
+4. Zastąp zawartość tego pliku przy użyciu następującego kodu:  
   
-    ```csharp  
-    using System;  
-    using System.Runtime.InteropServices;  
-    using Microsoft.VisualStudio;  
-    using Microsoft.VisualStudio.Project;  
-    using System.ComponentModel;  
+   ```csharp  
+   using System;  
+   using System.Runtime.InteropServices;  
+   using Microsoft.VisualStudio;  
+   using Microsoft.VisualStudio.Project;  
+   using System.ComponentModel;  
   
-    namespace SimpleProject  
-    {  
-        [ComVisible(true)]  
-        [Guid("6BC7046B-B110-40d8-9F23-34263D8D2936")]  
-        public class GeneralPropertyPage : SettingsPage  
-        {  
-            private string assemblyName;  
-            private OutputType outputType;  
-            private string defaultNamespace;  
+   namespace SimpleProject  
+   {  
+       [ComVisible(true)]  
+       [Guid("6BC7046B-B110-40d8-9F23-34263D8D2936")]  
+       public class GeneralPropertyPage : SettingsPage  
+       {  
+           private string assemblyName;  
+           private OutputType outputType;  
+           private string defaultNamespace;  
   
-            public GeneralPropertyPage()  
-            {  
-                this.Name = "General";  
-            }  
+           public GeneralPropertyPage()  
+           {  
+               this.Name = "General";  
+           }  
   
-            [Category("AssemblyName")]  
-            [DisplayName("AssemblyName")]  
-            [Description("The output file holding assembly metadata.")]  
-            public string AssemblyName  
-            {  
-                get { return this.assemblyName; }  
-            }  
-            [Category("Application")]  
-            [DisplayName("OutputType")]  
-            [Description("The type of application to build.")]  
-            public OutputType OutputType  
-            {  
-                get { return this.outputType; }  
-                set { this.outputType = value; this.IsDirty = true; }  
-            }  
-            [Category("Application")]  
-            [DisplayName("DefaultNamespace")]  
-            [Description("Specifies the default namespace for added items.")]  
-            public string DefaultNamespace  
-            {  
-                get { return this.defaultNamespace; }  
-                set { this.defaultNamespace = value; this.IsDirty = true; }  
-            }  
+           [Category("AssemblyName")]  
+           [DisplayName("AssemblyName")]  
+           [Description("The output file holding assembly metadata.")]  
+           public string AssemblyName  
+           {  
+               get { return this.assemblyName; }  
+           }  
+           [Category("Application")]  
+           [DisplayName("OutputType")]  
+           [Description("The type of application to build.")]  
+           public OutputType OutputType  
+           {  
+               get { return this.outputType; }  
+               set { this.outputType = value; this.IsDirty = true; }  
+           }  
+           [Category("Application")]  
+           [DisplayName("DefaultNamespace")]  
+           [Description("Specifies the default namespace for added items.")]  
+           public string DefaultNamespace  
+           {  
+               get { return this.defaultNamespace; }  
+               set { this.defaultNamespace = value; this.IsDirty = true; }  
+           }  
   
-            protected override void BindProperties()  
-            {  
-                this.assemblyName = this.ProjectMgr.GetProjectProperty(  
-    "AssemblyName", true);  
-                this.defaultNamespace = this.ProjectMgr.GetProjectProperty(  
-    "RootNamespace", false);  
+           protected override void BindProperties()  
+           {  
+               this.assemblyName = this.ProjectMgr.GetProjectProperty(  
+   "AssemblyName", true);  
+               this.defaultNamespace = this.ProjectMgr.GetProjectProperty(  
+   "RootNamespace", false);  
   
-                string outputType = this.ProjectMgr.GetProjectProperty(  
-    "OutputType", false);  
-                this.outputType =   
-    (OutputType)Enum.Parse(typeof(OutputType), outputType);  
-            }  
+               string outputType = this.ProjectMgr.GetProjectProperty(  
+   "OutputType", false);  
+               this.outputType =   
+   (OutputType)Enum.Parse(typeof(OutputType), outputType);  
+           }  
   
-            protected override int ApplyChanges()  
-            {  
-                this.ProjectMgr.SetProjectProperty(  
-    "AssemblyName", this.assemblyName);  
-                this.ProjectMgr.SetProjectProperty(  
-    "OutputType", this.outputType.ToString());  
-                this.ProjectMgr.SetProjectProperty(  
-    "RootNamespace", this.defaultNamespace);  
-                this.IsDirty = false;  
+           protected override int ApplyChanges()  
+           {  
+               this.ProjectMgr.SetProjectProperty(  
+   "AssemblyName", this.assemblyName);  
+               this.ProjectMgr.SetProjectProperty(  
+   "OutputType", this.outputType.ToString());  
+               this.ProjectMgr.SetProjectProperty(  
+   "RootNamespace", this.defaultNamespace);  
+               this.IsDirty = false;  
   
-                return VSConstants.S_OK;  
-            }  
-        }  
-    }  
-    ```  
+               return VSConstants.S_OK;  
+           }  
+       }  
+   }  
+   ```  
   
-     `GeneralPropertyPage` Klasa udostępnia trzy właściwości publiczne AssemblyName, atrybut OutputType i RootNamespace. AssemblyName jest brak metody set, dlatego jest ona wyświetlana jako właściwość tylko do odczytu. Atrybut OutputType jest stała wyliczeniowa, dzięki czemu będzie ono wyświetlane jako lista rozwijana.  
+    `GeneralPropertyPage` Klasa udostępnia trzy właściwości publiczne AssemblyName, atrybut OutputType i RootNamespace. AssemblyName jest brak metody set, dlatego jest ona wyświetlana jako właściwość tylko do odczytu. Atrybut OutputType jest stała wyliczeniowa, dzięki czemu będzie ono wyświetlane jako lista rozwijana.  
   
-     `SettingsPage` Udostępnia klasę bazową `ProjectMgr` można utrwalić właściwości. `BindProperties` Metoda używa `ProjectMgr` do pobierania wartości właściwości utrwalonych i ustaw odpowiednie właściwości.  `ApplyChanges` Metoda używa `ProjectMgr` pobrać wartości właściwości do utrwalenia ich w pliku projektu. Właściwością metody ustawia `IsDirty` na wartość true, aby wskazać, że właściwości musi być utrwalone.  Trwałość występuje, gdy zapisujesz projekt lub rozwiązanie.  
+    `SettingsPage` Udostępnia klasę bazową `ProjectMgr` można utrwalić właściwości. `BindProperties` Metoda używa `ProjectMgr` do pobierania wartości właściwości utrwalonych i ustaw odpowiednie właściwości.  `ApplyChanges` Metoda używa `ProjectMgr` pobrać wartości właściwości do utrwalenia ich w pliku projektu. Właściwością metody ustawia `IsDirty` na wartość true, aby wskazać, że właściwości musi być utrwalone.  Trwałość występuje, gdy zapisujesz projekt lub rozwiązanie.  
   
-5.  Ponownie skompiluj rozwiązanie SimpleProject, a następnie rozpocząć debugowanie. Wystąpienie eksperymentalne powinna zostać wyświetlona.  
+5. Ponownie skompiluj rozwiązanie SimpleProject, a następnie rozpocząć debugowanie. Wystąpienie eksperymentalne powinna zostać wyświetlona.  
   
-6.  W doświadczalnym wystąpieniu należy utworzyć nową aplikację SimpleProject.  
+6. W doświadczalnym wystąpieniu należy utworzyć nową aplikację SimpleProject.  
   
-7.  Program Visual Studio wywołuje fabryką projektu, aby utworzyć projekt przy użyciu szablonu programu Visual Studio. Nowy *Program.cs* plik jest otwarty w edytorze kodu.  
+7. Program Visual Studio wywołuje fabryką projektu, aby utworzyć projekt przy użyciu szablonu programu Visual Studio. Nowy *Program.cs* plik jest otwarty w edytorze kodu.  
   
-8.  Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań**, a następnie kliknij przycisk **właściwości**. **Stron właściwości** zostanie wyświetlone okno dialogowe.  
+8. Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań**, a następnie kliknij przycisk **właściwości**. **Stron właściwości** zostanie wyświetlone okno dialogowe.  
   
- ![Strona właściwości prostego projektu](../extensibility/media/simpproj2_proppage.png "SimpProj2_PropPage")  
+   ![Strona właściwości prostego projektu](../extensibility/media/simpproj2_proppage.png "SimpProj2_PropPage")  
   
 ## <a name="test-the-project-property-page"></a>Na stronie właściwości projektu testu
  Teraz możesz sprawdzić, czy można zmodyfikować, a zmiany wartości właściwości.  
   
-1.  W **stron właściwości MyConsoleApplication** okno dialogowe, zmiana **DefaultNamespace** do **MyApplication**.  
+1. W **stron właściwości MyConsoleApplication** okno dialogowe, zmiana **DefaultNamespace** do **MyApplication**.  
   
-2.  Wybierz **OutputType** właściwości, a następnie wybierz **biblioteki klas**.  
+2. Wybierz **OutputType** właściwości, a następnie wybierz **biblioteki klas**.  
   
-3.  Kliknij przycisk **Zastosuj**, a następnie kliknij przycisk **OK**.  
+3. Kliknij przycisk **Zastosuj**, a następnie kliknij przycisk **OK**.  
   
-4.  Otwórz ponownie **stron właściwości** okna dialogowego pole i sprawdź, czy zmiany zostały utrwalone.  
+4. Otwórz ponownie **stron właściwości** okna dialogowego pole i sprawdź, czy zmiany zostały utrwalone.  
   
-5.  Zamknij wystąpienie doświadczalne programu Visual Studio.  
+5. Zamknij wystąpienie doświadczalne programu Visual Studio.  
   
-6.  Otwórz ponownie wystąpienie eksperymentalne.  
+6. Otwórz ponownie wystąpienie eksperymentalne.  
   
-7.  Otwórz ponownie **stron właściwości** okna dialogowego pole i sprawdź, czy zmiany zostały utrwalone.  
+7. Otwórz ponownie **stron właściwości** okna dialogowego pole i sprawdź, czy zmiany zostały utrwalone.  
   
-8.  Zamknij wystąpienie doświadczalne programu Visual Studio.  
+8. Zamknij wystąpienie doświadczalne programu Visual Studio.  
   
- ![Zamknij wystąpienie doświadczalne](../extensibility/media/simpproj2_proppage2.png "SimpProj2_PropPage2")
+   ![Zamknij wystąpienie doświadczalne](../extensibility/media/simpproj2_proppage2.png "SimpProj2_PropPage2")

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumLineNumbers::Skip | Dokumentacja firmy Microsoft
+title: Idiaenumlinenumbers::SKIP — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebaa7366128a02b9ac0af253c418650a747b657e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a52c09bcff6ff617c1f43dcad84de441f1432a1f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927180"
 ---
 # <a name="idiaenumlinenumbersskip"></a>IDiaEnumLineNumbers::Skip
-Pomija określoną liczbę numerów wierszy w kolejności wyliczenia.  
+Pomija określoną liczbę numery wierszy w kolejności wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>Parametry  
  celt  
- [in] Liczba numerów wierszy w kolejności wyliczenie do pominięcia.  
+ [in] Liczba numerów wierszy w kolejności wyliczenia do pominięcia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` przypadku bez więcej numerów wierszy do pominięcia.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` przypadku bez więcej numerów wierszy do pominięcia.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

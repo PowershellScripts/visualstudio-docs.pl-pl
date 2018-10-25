@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8acd51675aaca979a1dce0edddb9d7d937422d49
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: add008f6e5728d8c53f0f4ad3c9f590ecd7dc919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929208"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Strona opcji, edytor tekstu — Właściwości węzła
 W tym dokumencie opisano niektóre strony (lub kolekcje właściwości), są skojarzone z **edytora tekstów** kategorii `DTE.Properties("TextEditor", <Property Page>)`, z **opcje** okno dialogowe. Tytuł każdej podsekcji to wywołanie, które jest używane do dostępu `Properties` kolekcji, a tabela w każdej podsekcji zawiera listę właściwości w kolekcji.
@@ -29,7 +29,7 @@ W tym dokumencie opisano niektóre strony (lub kolekcje właściwości), są sko
  `DTE.Properties("TextEditor", "General")`
 
 |Nazwa elementu właściwości|Wartość|Opis|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |GoToAnchorAfterEscape|Get/Set (wartość logiczna)|Jeśli `True`, wciśnięcie klawisza escape, gdy coś jest zaznaczone powoduje, że punkt wstawiania przejść do której zainicjowano akcję, która utworzyła zaznaczenie. `False` Przenosi punkt wstawiania na drugi koniec zaznaczenia.|
 |DragNDropTextEditing|Get/Set (wartość logiczna)|Określa, czy można przeciągać wybrany region tekstu z jednego miejsca do innego dokumentu w celu wykonania operacji Kopiuj lub Wytnij i Wklej.|
 |HorizontalScrollBar|Get/Set (wartość logiczna)|Określa, czy w oknach edytora jest poziomy pasek przewijania.|
@@ -48,7 +48,7 @@ W tym dokumencie opisano niektóre strony (lub kolekcje właściwości), są sko
  `PlainText` Opcji edytora wpływają na ustawienia edytora podczas edytowania plików tekstowych. Każdy język programowania i [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pakiet ma swoje własne szczególne **edytora tekstów** ustawienia. Na przykład, aby wyświetlić lub zmienić [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ustawienia edytora, użyj `DTE.Properties("TextEditor", "CSharp") or DTE.Properties("TextEditor", "CSharp-Specific")`. Aby uzyskać **skrypt SQL** ustawienia edytora, użyj `DTE.Properties("TextEditor", "SQL ")`.
 
 |Nazwa elementu właściwości|Wartość|Opis|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |AutoListMembers|Get/Set (wartość logiczna)|Określa, czy dostępna lista elementów członkowskich automatycznie się pojawia, gdy użytkownik wpisze kropkę po zmiennej odwołania.|
 |AutoListParams|Get/Set (wartość logiczna)|Określa, czy opis listy argumentów automatycznie się pojawia, gdy użytkownik wpisze „(” po nazwie funkcji.|
 |HideAdvancedMembers|Get/Set (wartość logiczna)|Określa, czy dokańczanie instrukcji zawiera listę wszystkich elementów członkowskich, czy tylko te często używane.|

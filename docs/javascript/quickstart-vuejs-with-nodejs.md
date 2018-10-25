@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b4e08b0ad058566bdd74522b94e0010d5cdc2f91
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: 3862f62439bd9b919d3c0534a8c2fe2d3c16fea9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168360"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926621"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Szybki Start: Używanie programu Visual Studio do utworzenia pierwszej aplikacji Vue.js
 
@@ -64,13 +64,13 @@ Najpierw utworzysz Vue.js projektu aplikacji sieci web.
 
      ![Rozwiązanie VUE.js](../javascript/media/vuejs-solution.png)
 
-  - Wyróżnione czcionką pogrubioną jest projektu, przy użyciu nazwę nadaną w **nowy projekt** okno dialogowe. Na dysku, ten projekt jest reprezentowany przez. *njsproj* pliku w folderze projektu.
+   - Wyróżnione czcionką pogrubioną jest projektu, przy użyciu nazwę nadaną w **nowy projekt** okno dialogowe. Na dysku, ten projekt jest reprezentowany przez. *njsproj* pliku w folderze projektu.
 
-  - Na najwyższym poziomie to rozwiązanie, która domyślnie ma taką samą nazwę jak projektu. To rozwiązanie, reprezentowane przez. *sln* plików na dysku, to kontener dla jednego lub kilku powiązanych projektów.
+   - Na najwyższym poziomie to rozwiązanie, która domyślnie ma taką samą nazwę jak projektu. To rozwiązanie, reprezentowane przez. *sln* plików na dysku, to kontener dla jednego lub kilku powiązanych projektów.
 
-  - **Npm** węzeł zawiera wszystkie pakiety npm zainstalowane. Możesz kliknąć prawym przyciskiem myszy węzeł npm, aby wyszukać i zainstalować pakiety npm przy użyciu okna dialogowego.
+   - **Npm** węzeł zawiera wszystkie pakiety npm zainstalowane. Możesz kliknąć prawym przyciskiem myszy węzeł npm, aby wyszukać i zainstalować pakiety npm przy użyciu okna dialogowego.
 
-1. Jeśli chcesz zainstalować pakiety npm lub Uruchom polecenia Node.js z poziomu wiersza polecenia, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Otwórz wiersz polecenia w tym miejscu**.
+2. Jeśli chcesz zainstalować pakiety npm lub Uruchom polecenia Node.js z poziomu wiersza polecenia, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Otwórz wiersz polecenia w tym miejscu**.
 
 ## <a name="add-a-vue-file-to-the-project"></a>Dodaj plik .vue do projektu
 

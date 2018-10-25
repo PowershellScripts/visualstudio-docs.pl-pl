@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f8034ae225707ec6030daba39ed09bab3bd161c4
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859526"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926686"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Tworzenie języka specyficznego dla domeny opartego na formularzach systemu Windows
 Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla domeny (DSL), zamiast DSL diagram. Ten temat przeprowadzi Cię przez powiązanie formularza Windows DSL za pomocą Visual Studio Visualization i Modeling SDK.
@@ -26,30 +26,32 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
 
 #### <a name="to-create-a-minimal-winforms-dsl"></a>Aby utworzyć minimalny DSL WinForms
 
-1.  Utwórz DSL z **minimalny projektanta WinForm** szablonu.
+1. Utwórz DSL z **minimalny projektanta WinForm** szablonu.
 
-     W tym przewodniku przyjęto są następujące nazwy:
+    W tym przewodniku przyjęto są następujące nazwy:
 
-    |||
-    |-|-|
-    |Nazwa rozwiązania i DSL|FarmApp|
-    |Przestrzeń nazw|Company.FarmApp|
 
-2.  Poeksperymentuj z początkowej przykładu, który zawiera szablon:
+   | | |
+   |-|-|
+   | Nazwa rozwiązania i DSL | FarmApp |
+   | Przestrzeń nazw | Company.FarmApp |
 
-    1.  Transformuj wszystkie szablony.
 
-    2.  Tworzenie i uruchamianie aplikacji przykładowej (**kombinację klawiszy CTRL + F5**).
+2. Poeksperymentuj z początkowej przykładu, który zawiera szablon:
 
-    3.  W doświadczalnym wystąpieniu programu Visual Studio, otwórz `Sample` plik debugowania projektu.
+   1.  Transformuj wszystkie szablony.
 
-         Należy zauważyć, że jest wyświetlany w kontrolce Windows Forms.
+   2.  Tworzenie i uruchamianie aplikacji przykładowej (**kombinację klawiszy CTRL + F5**).
 
-         Widać również elementy modelu są wyświetlane w Eksploratorze.
+   3.  W doświadczalnym wystąpieniu programu Visual Studio, otwórz `Sample` plik debugowania projektu.
 
-         Dodaj niektóre elementy w formularzu lub programu Explorer i zwróć uwagę, że pojawiają się na innym ekranie.
+        Należy zauważyć, że jest wyświetlany w kontrolce Windows Forms.
 
- W głównym wystąpieniu programu Visual Studio Zwróć uwagę na następujące kwestie dotyczące rozwiązania DSL:
+        Widać również elementy modelu są wyświetlane w Eksploratorze.
+
+        Dodaj niektóre elementy w formularzu lub programu Explorer i zwróć uwagę, że pojawiają się na innym ekranie.
+
+   W głównym wystąpieniu programu Visual Studio Zwróć uwagę na następujące kwestie dotyczące rozwiązania DSL:
 
 -   `DslDefinition.dsl` nie zawiera żadnych elementów diagramu. Jest to spowodowane DSL diagramów nie będzie używać do wyświetlania wystąpienia modele tego języka DSL. Zamiast tego formularza Windows będzie powiązać modelu i elementów w formularzu będą wyświetlane w modelu.
 
@@ -132,30 +134,30 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
 
 #### <a name="to-connect-your-model-to-a-form"></a>Aby połączyć swój model do formularza
 
-1.  W **interfejsu użytkownika** projektu, Usuń wszystkie istniejące pliki CS.
+1. W **interfejsu użytkownika** projektu, Usuń wszystkie istniejące pliki CS.
 
-2.  Dodaj nową **kontrolki użytkownika** plik o nazwie `FarmControl` do **interfejsu użytkownika** projektu.
+2. Dodaj nową **kontrolki użytkownika** plik o nazwie `FarmControl` do **interfejsu użytkownika** projektu.
 
-3.  W **źródeł danych** okna w menu rozwijanego **farmy**, wybierz **szczegóły**.
+3. W **źródeł danych** okna w menu rozwijanego **farmy**, wybierz **szczegóły**.
 
-     Pozostaw ustawienia domyślne dla innych właściwości.
+    Pozostaw ustawienia domyślne dla innych właściwości.
 
-4.  Otwórz FarmControl.cs w widoku Projekt.
+4. Otwórz FarmControl.cs w widoku Projekt.
 
-     Przeciągnij **farmy** z okna źródeł danych na FarmControl.
+    Przeciągnij **farmy** z okna źródeł danych na FarmControl.
 
-     Zestaw formantów zostanie wyświetlona, jeden dla każdej właściwości. Właściwości relacji nie generują kontrolki.
+    Zestaw formantów zostanie wyświetlona, jeden dla każdej właściwości. Właściwości relacji nie generują kontrolki.
 
-5.  Usuń **farmBindingNavigator**. To jest automatycznie generowany w `FarmControl` projektanta, ale nie jest przydatne w przypadku tej aplikacji.
+5. Usuń **farmBindingNavigator**. To jest automatycznie generowany w `FarmControl` projektanta, ale nie jest przydatne w przypadku tej aplikacji.
 
-6.  Korzystanie z przybornika, Utwórz dwa wystąpienia **DataGridView**i nazwij je `AnimalGridView` i `FieldGridView`.
+6. Korzystanie z przybornika, Utwórz dwa wystąpienia **DataGridView**i nazwij je `AnimalGridView` i `FieldGridView`.
 
-    > [!NOTE]
-    >  Etap alternatywne jest przeciągnij zwierząt i pól elementów z okna źródeł danych w formancie. Ta akcja tworzy automatycznie siatek danych i powiązania między widokiem siatki i źródła danych. Jednak tego powiązania nie działa prawidłowo dla języków DSL. W związku z tym zaleca się tworzenie siatek danych i powiązania ręcznie.
+   > [!NOTE]
+   >  Etap alternatywne jest przeciągnij zwierząt i pól elementów z okna źródeł danych w formancie. Ta akcja tworzy automatycznie siatek danych i powiązania między widokiem siatki i źródła danych. Jednak tego powiązania nie działa prawidłowo dla języków DSL. W związku z tym zaleca się tworzenie siatek danych i powiązania ręcznie.
 
-7.  Jeśli przybornik nie zawiera **ModelingBindingSource** narzędzia, dodaj ją. W menu skrótów **danych** kartę, wybrać **wybierz elementy**. W **wybierz elementy przybornika** okno dialogowe, wybierz opcję **ModelingBindingSource** z **.NET Framework kartę**.
+7. Jeśli przybornik nie zawiera **ModelingBindingSource** narzędzia, dodaj ją. W menu skrótów **danych** kartę, wybrać **wybierz elementy**. W **wybierz elementy przybornika** okno dialogowe, wybierz opcję **ModelingBindingSource** z **.NET Framework kartę**.
 
-8.  Korzystanie z przybornika, Utwórz dwa wystąpienia **ModelingBindingSource**i nazwij je `AnimalBinding` i `FieldBinding`.
+8. Korzystanie z przybornika, Utwórz dwa wystąpienia **ModelingBindingSource**i nazwij je `AnimalBinding` i `FieldBinding`.
 
 9. Ustaw **DataSource** właściwości każdego **ModelingBindingSource** do **farmBindingSource**.
 
@@ -165,15 +167,15 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
 
 11. Dostosowywanie układu formantu farmy, aby Twoje smak.
 
- **ModelingBindingSource** to karta, która wykonuje kilka zadań, które są specyficzne dla języków DSL:
+    **ModelingBindingSource** to karta, która wykonuje kilka zadań, które są specyficzne dla języków DSL:
 
--   W ramach transakcji Store VMSDK opakowuje aktualizacji.
+- W ramach transakcji Store VMSDK opakowuje aktualizacji.
 
-     Na przykład gdy użytkownik usuwa wiersz z widoku siatki danych, regularne powiązania mogłyby spowodować wyjątek transakcji.
+   Na przykład gdy użytkownik usuwa wiersz z widoku siatki danych, regularne powiązania mogłyby spowodować wyjątek transakcji.
 
--   Zapewnia, że gdy użytkownik wybierze wiersz, w oknie właściwości wyświetla właściwości odpowiedniego elementu modelu, a nie wiersz siatki danych.
+- Zapewnia, że gdy użytkownik wybierze wiersz, w oknie właściwości wyświetla właściwości odpowiedniego elementu modelu, a nie wiersz siatki danych.
 
- ![DslWpf4](../modeling/media/dslwpf4.png) schematu łącza między źródłami danych i widoków.
+  ![DslWpf4](../modeling/media/dslwpf4.png) schematu łącza między źródłami danych i widoków.
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Aby ukończyć powiązania z język DSL
 
@@ -247,62 +249,60 @@ Windows Forms służy do wyświetlania stanu modelu języka specyficznego dla do
 
 #### <a name="to-provide-add-buttons"></a>Aby zapewnić Dodaj przyciski
 
-1.  W widoku Projekt FarmControl.cs Użyj przybornika, aby utworzyć przycisk w formularzu.
+1. W widoku Projekt FarmControl.cs Użyj przybornika, aby utworzyć przycisk w formularzu.
 
-     Edytuj nazwę i tekstu przycisku na przykład, aby `New Sheep`.
+    Edytuj nazwę i tekstu przycisku na przykład, aby `New Sheep`.
 
-2.  Otwórz kod związany z przycisku (np. przez dwukrotne kliknięcie).
+2. Otwórz kod związany z przycisku (np. przez dwukrotne kliknięcie).
 
-     Edytuj w następujący sposób:
+    Edytuj w następujący sposób:
 
-    ```csharp
-    private void NewSheepButton_Click(object sender, EventArgs e)
-    {
-      using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
-      {
-        elementOperations.MergeElementGroup(farm,
-          new ElementGroup(new Sheep(farm.Partition)));
-        t.Commit();
-      }
-    }
+   ```csharp
+   private void NewSheepButton_Click(object sender, EventArgs e)
+   {
+     using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
+     {
+       elementOperations.MergeElementGroup(farm,
+         new ElementGroup(new Sheep(farm.Partition)));
+       t.Commit();
+     }
+   }
 
-    // The following code is shared with other add buttons:
-    private ElementOperations operationsCache = null;
-    private ElementOperations elementOperations
-    {
-      get
-      {
-        if (operationsCache == null)
-        {
-          operationsCache = new ElementOperations(farm.Store, farm.Partition);
-        }
-        return operationsCache;
-      }
-    }
-    private Farm farm
-    {
-      get { return this.farmBindingSource.DataSource as Farm; }
-    }
+   // The following code is shared with other add buttons:
+   private ElementOperations operationsCache = null;
+   private ElementOperations elementOperations
+   {
+     get
+     {
+       if (operationsCache == null)
+       {
+         operationsCache = new ElementOperations(farm.Store, farm.Partition);
+       }
+       return operationsCache;
+     }
+   }
+   private Farm farm
+   {
+     get { return this.farmBindingSource.DataSource as Farm; }
+   }
+   ```
 
-    ```
+    Należy również Wstaw następujące dyrektywy:
 
-     Należy również Wstaw następujące dyrektywy:
+   ```csharp
 
-    ```csharp
+   using Microsoft.VisualStudio.Modeling;
+   ```
 
-    using Microsoft.VisualStudio.Modeling;
+3. Dodaj przyciski podobne do kóz i pól.
 
-    ```
+4. Skompiluj i uruchom rozwiązanie.
 
-3.  Dodaj przyciski podobne do kóz i pól.
+5. Upewnij się, że nowy przycisk dodaje element. Nowy element powinien pojawić się w Eksploratorze FarmApp i w widoku siatki danych.
 
-4.  Skompiluj i uruchom rozwiązanie.
+    Powinien móc edytować nazwę tego elementu w widoku siatki danych. Można również usunąć z tego miejsca.
 
-5.  Upewnij się, że nowy przycisk dodaje element. Nowy element powinien pojawić się w Eksploratorze FarmApp i w widoku siatki danych.
-
-     Powinien móc edytować nazwę tego elementu w widoku siatki danych. Można również usunąć z tego miejsca.
-
- ![Język DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![Język DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>Kod, aby dodać element — informacje
  Nowy element przycisków poniższy kod alternatywne jest nieco prostsze.
@@ -316,7 +316,6 @@ private void NewSheepButton_Click(object sender, EventArgs e)
     t.Commit();
   }
 }
-
 ```
 
  Ten kod nie ustawiać, domyślna nazwa dla nowego elementu. Nie działa on dostosowany scalania, który został zdefiniowany w **dyrektywy scalania elementów** elementu DSL, a nie działa on żadnych niestandardowych scalać kod, który może być zdefiniowany.

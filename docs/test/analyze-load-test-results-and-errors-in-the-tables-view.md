@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1b111aad6da99f54edfe8dc4fd4b63ff7a495f34
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179664"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928675"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizowanie wyników testów obciążenia oraz błędów w widoku tabeli analizatora testu obciążenia
 
@@ -51,7 +51,7 @@ Większość wartości liczbowych, wyświetlane w formie tabeli liczników wydaj
  Poniższa tabela zawiera listę tabel, które są dostępne do analizowania przebiegów testów obciążeniowych.
 
 |Nazwa tabeli|Opis|
-|----------------|-----------------|
+|-|-|
 |błędy|Wyświetla listę błędów, które wystąpiły podczas przebiegu testu obciążeniowego. Aby uzyskać więcej informacji, zobacz [tabeli błędów](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) w tym temacie i [wyniki testu obciążenia analizy](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
 |Strony|Wyświetla listę stron dostęp podczas przebiegu testu obciążeniowego. Niektóre dane w tej tabeli jest dostępna tylko wtedy, gdy test obciążenia został ukończony. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie odpowiedzi strony web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Żądania|Wyświetla szczegóły dotyczące poszczególnych żądań wystawiony podczas testu obciążeniowego. Obejmuje to wszystkie żądania HTTP i zależne żądania, taką jak obrazy. Aby uzyskać więcej informacji, zobacz [tabeli Requests](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) w tym temacie.|
@@ -73,7 +73,7 @@ Większość wartości liczbowych, wyświetlane w formie tabeli liczników wydaj
  W poniższej tabeli wymieniono w kolumnach **żądań** tabeli:
 
 |Kolumny|Opis|Domyślnie widoczny|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Żądanie**|Adres URL żądania. Na przykład *home.html*, lub *arrow.gif pomarańczowy*.|Tak|
 |**Scenariusz**|Nazwa scenariusza.|Tak|
 |**Test**|Nazwa testu.|Tak|
@@ -95,7 +95,7 @@ Większość wartości liczbowych, wyświetlane w formie tabeli liczników wydaj
  W poniższej tabeli wymieniono w kolumnach **testy** tabeli.
 
 |Kolumny|Opis|Domyślnie widoczny|
-|------------|-----------------|------------------------|
+|-|-|-|
 |**Test**|Nazwa testu.|Tak|
 |**Scenariusz**|Nazwa scenariusza.|Tak|
 |**Łączna liczba**|Całkowita liczba przypadków, gdy test został uruchomiony w scenariuszu. W tym liczba testu przekazywane, a nie powiodło się.|Tak|
@@ -119,7 +119,7 @@ Większość wartości liczbowych, wyświetlane w formie tabeli liczników wydaj
 > Aby wyświetlić wszystkie kolumny, należy włączyć właściwości przechowywanie informacji, które jest skojarzone z aktywnego parametru uruchomieniowego. Aby uzyskać więcej informacji, zobacz [porady: Określanie właściwości magazynowania szczegółów chronometrażu](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Kolumny|Opis|Widoczna bez szczegółowych informacji o czasie|
-|------------|-----------------|------------------------------------|
+|-|-|-|
 |**Transakcja**|Nazwa transakcji.|Tak|
 |**Scenariusz**|Nazwa scenariusza.|Tak|
 |**Test**|Nazwa testu.|Tak|
@@ -145,7 +145,7 @@ Większość wartości liczbowych, wyświetlane w formie tabeli liczników wydaj
  Tabela błędów zawiera następujące kolumny:
 
 |Kolumny|Opis|Domyślnie widoczny|
-|------------|-----------------|------------------------|
+|-|-|-|
 |Typ|Typ błędu. Na przykład HttpError.|Tak|
 |SubType|Podtyp błędu. Na przykład LoadTestException.|Tak|
 |Liczba|Liczba błędów tego typu, który wystąpił podczas testu obciążeniowego. W tej kolumnie są wyświetlane jako hiperlinki. Można wybrać dowolne hiperłącze, aby wyświetlić listę poszczególnych błędów.|Tak|
@@ -163,7 +163,7 @@ Błędy tabeli grup błędów, typ i podtyp błędu. Aby wyświetlić tabelę po
 **Błędy testu obciążenia** tabeli zawiera następujące kolumny:
 
 |Kolumny|Opis|
-|------------|-----------------|
+|-|-|
 |**czas**|Czas podczas ładowania testu w którym wystąpił błąd.|
 |**Agent**|Nazwa komputera agenta, na którym wystąpił błąd. Jest to ważne w przypadku uruchamiania testów obciążenia z wykorzystaniem kontrolerów testów i agentów testowych. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).|
 |**Test**|Nazwa wydajności sieci web testu, w którym wystąpił błąd.|
@@ -171,7 +171,7 @@ Błędy tabeli grup błędów, typ i podtyp błędu. Aby wyświetlić tabelę po
 |**Żądanie**|Adres URL żądania, w którym wystąpił błąd.|
 |**Typ**|Typ błędu. Na przykład HttpError.|
 |**SubType**|Podtyp błędu. Na przykład LoadTestException.|
-|**Tekst**|Tekst komunikatu o błędzie. Na przykład 404 - NotFound.|
+|**Text**|Tekst komunikatu o błędzie. Na przykład 404 - NotFound.|
 |**Stos**|W tej kolumnie są puste lub słowo **stosu** jest sformatowana jako hiperłącze. Możesz wybrać hiperlink, aby wyświetlić ślad stosu błędu.|
 |**Szczegółowe informacje**|W tej kolumnie są puste lub słowo **TestLog** jest sformatowana jako hiperłącze. Ten link może pomóc wyizolować błędy w teście obciążeniowym. Na przykład wybranie **TestLog** łącze na błąd żądania testu wydajności sieci web spowoduje to otwarcie wyniki dla testów wydajności sieci web w sieci Web podgląd wyników testu wydajności i wyróżnić błąd żądania.|
 

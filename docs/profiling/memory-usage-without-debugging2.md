@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b19b0c8371cc4f3b496255e37f06f7b1cbc1fa9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827739"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analizowanie użycia pamięci bez debugera programu Visual Studio
 Możesz użyć **użycie pamięci** narzędzia bez debugowania, aby wykonać następujące czynności  
   
--   Monitorowanie aplikacji w pamięci podczas opracowywania scenariusza użycia bezpośrednio w programie Visual Studio.  
+- Monitorowanie aplikacji w pamięci podczas opracowywania scenariusza użycia bezpośrednio w programie Visual Studio.  
   
--   Utworzyć szczegółowe migawki stanu pamięci aplikacji.  
+- Utworzyć szczegółowe migawki stanu pamięci aplikacji.  
   
--   Porównywanie migawek do znalezienia głównej przyczyny problemów z pamięcią.  
+- Porównywanie migawek do znalezienia głównej przyczyny problemów z pamięcią.  
   
- Obecnie do mierzenia użycia pamięci dla aplikacji platformy .NET Core, należy użyć narzędzia w debugerze. W przypadku innych aplikacji zarządzanych i natywnych można użyć narzędzia, z lub bez w debugerze. Zrzuty ekranu, w tym temacie pokazują aplikacji w języku XAML platformy uniwersalnej systemu Windows. Jeśli chcesz analizować wykorzystanie pamięci w aplikacji platformy uniwersalnej systemu Windows, który używa języka JavaScript i HTML, zobacz [Analizowanie użycia pamięci (JavaScript)](../profiling/javascript-memory.md).
+  Obecnie do mierzenia użycia pamięci dla aplikacji platformy .NET Core, należy użyć narzędzia w debugerze. W przypadku innych aplikacji zarządzanych i natywnych można użyć narzędzia, z lub bez w debugerze. Zrzuty ekranu, w tym temacie pokazują aplikacji w języku XAML platformy uniwersalnej systemu Windows. Jeśli chcesz analizować wykorzystanie pamięci w aplikacji platformy uniwersalnej systemu Windows, który używa języka JavaScript i HTML, zobacz [Analizowanie użycia pamięci (JavaScript)](../profiling/javascript-memory.md).
   
 ## <a name="start-a-memory-usage-diagnostic-session"></a>Uruchamianie sesji diagnostyki użycia pamięci  
   
@@ -69,13 +69,13 @@ Możesz użyć **użycie pamięci** narzędzia bez debugowania, aby wykonać nas
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Widoki migawki użycia pamięci  
  Używasz widoków migawki do otwierania szczegółowe raporty w nowych oknach programu Visual Studio. Istnieją dwa rodzaje widoków migawki:  
   
--   A [migawki szczegóły raporty](#snapshot-reports) zawiera typy i wystąpienia w jedną migawkę.  
+- A [migawki szczegóły raporty](#snapshot-reports) zawiera typy i wystąpienia w jedną migawkę.  
   
--   A [różnica (różnica) raporty migawki](#snapshot-difference-diff-reports) porównuje typy i wystąpienia w dwóch migawek.  
+- A [różnica (różnica) raporty migawki](#snapshot-difference-diff-reports) porównuje typy i wystąpienia w dwóch migawek.  
   
- ![Wyświetl linki migawki](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Wyświetl linki migawki](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Ponumerowane elementy na ilustracji widoku migawki są łącza, które otwierają widoków raportów użycia pamięci.  
+  Ponumerowane elementy na ilustracji widoku migawki są łącza, które otwierają widoków raportów użycia pamięci.  
   
 |||  
 |-|-|  

@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści priorytetowej pomocy technicz
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9377302cdee771e282ab622df0b76ecf2ca3460b
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074042"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866743"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Priorytetowa pomoc techniczna w ramach subskrypcji programu Visual Studio
 
@@ -37,7 +37,7 @@ Subskrybenci z wybranych subskrypcji programu Visual Studio kwalifikujesz się d
 
 ### <a name="microsoft-azure"></a>Microsoft Azure
    - [Usługi w chmurze (role sieci Web i proces roboczy)](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredevelopment&filter=alltypes&sort=lastpostdesc)
-   
+
    - [Usługa Azure SQL Database](https://social.msdn.microsoft.com/Forums/en-US/home?forum=ssdsgetstarted&filter=alltypes&sort=lastpostdesc)
 
    - [Azure Storage](https://social.msdn.microsoft.com/Forums/en-US/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)
@@ -229,6 +229,7 @@ Subskrybenci z wybranych subskrypcji programu Visual Studio kwalifikujesz się d
 
 
 ## <a name="eligibility"></a>Uprawnienie
+
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Uwzględnione       |  Tak          |

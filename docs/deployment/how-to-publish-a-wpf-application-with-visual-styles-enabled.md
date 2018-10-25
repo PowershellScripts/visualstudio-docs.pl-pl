@@ -10,27 +10,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c97725f4d78923384d7a3ec9f327a7dd2aca7b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: af0a07abe1cbb380acde91067e3e6252d0cd8596
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512961"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830057"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Porady: publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych
 Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależności od motywu, wybierany przez użytkownika. Domyślnie style wizualne nie są włączone dla aplikacji Windows Presentation Foundation (WPF), więc należy włączyć je ręcznie. Włączanie stylów wizualnych dla aplikacji WPF i opublikować rozwiązanie spowoduje wystąpienie błędu. W tym temacie opisano sposób rozwiązania tego błędu, a proces publikowania aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych. Aby uzyskać więcej informacji na temat funkcji stylów wizualnych zobacz [style wizualne omówienie](/windows/desktop/Controls/visual-styles-overview). Aby uzyskać więcej informacji na temat komunikatu o błędzie, zobacz [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).  
   
  Aby naprawić błąd i opublikować rozwiązanie, należy wykonać następujące zadania:  
   
--   [Publikowanie rozwiązania bez włączonej funkcji stylów wizualnych](#publish-the-solution-without-visual-styles-enabled).  
+- [Publikowanie rozwiązania bez włączonej funkcji stylów wizualnych](#publish-the-solution-without-visual-styles-enabled).  
   
--   [Utwórz plik manifestu](#create-a-manifest-file).  
+- [Utwórz plik manifestu](#create-a-manifest-file).  
   
--   [Osadzanie pliku manifestu w pliku wykonywalnego opublikowane rozwiązania](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution).  
+- [Osadzanie pliku manifestu w pliku wykonywalnego opublikowane rozwiązania](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution).  
   
--   [Podpisywanie manifestów aplikacji i wdrożenia](#sign-the-application-and-deployment-manifests).  
+- [Podpisywanie manifestów aplikacji i wdrożenia](#sign-the-application-and-deployment-manifests).  
   
- Następnie można przenieść opublikowane pliki do lokalizacji, z którego chcesz zainstalować aplikację użytkownikom końcowym.  
+  Następnie można przenieść opublikowane pliki do lokalizacji, z którego chcesz zainstalować aplikację użytkownikom końcowym.  
   
 ##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Publikowanie rozwiązania bez włączonej funkcji stylów wizualnych  
   
@@ -94,72 +94,72 @@ Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależnośc
   
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>Osadzanie pliku manifestu w pliku wykonywalnego opublikowane rozwiązania  
   
-1.  Otwórz **wiersz polecenia programu Visual Studio**.  
+1. Otwórz **wiersz polecenia programu Visual Studio**.  
   
-     Aby uzyskać więcej informacji o sposobie otwierania **Visual Studio Command Prompt**, zobacz [wiersz polecenia](/dotnet/framework/tools/developer-command-prompt-for-vs).  
+    Aby uzyskać więcej informacji o sposobie otwierania **Visual Studio Command Prompt**, zobacz [wiersz polecenia](/dotnet/framework/tools/developer-command-prompt-for-vs).  
   
-    > [!NOTE]
-    >  Pozostałe kroki zakładają następujące rozwiązania:  
-    >   
-    >  -   Nazwa rozwiązania jest **MyWPFProject**.  
-    > -   Rozwiązanie znajduje się w następującym katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
-    >   
-    >      To rozwiązanie jest publikowane do następującego katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   Najnowszą wersję plików opublikowanej aplikacji znajduje się w następującym katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
-    >   
-    >  Nie trzeba używać nazwy lub lokalizacje katalogu opisanych powyżej. Nazwy i lokalizacje opisanych powyżej są używane tylko w celu zilustrowania kroki wymagane do publikowania rozwiązania.  
+   > [!NOTE]
+   >  Pozostałe kroki zakładają następujące rozwiązania:  
+   > 
+   > - Nazwa rozwiązania jest **MyWPFProject**.  
+   >   -   Rozwiązanie znajduje się w następującym katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
+   > 
+   >   To rozwiązanie jest publikowane do następującego katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
+   >   -   Najnowszą wersję plików opublikowanej aplikacji znajduje się w następującym katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+   > 
+   >   Nie trzeba używać nazwy lub lokalizacje katalogu opisanych powyżej. Nazwy i lokalizacje opisanych powyżej są używane tylko w celu zilustrowania kroki wymagane do publikowania rozwiązania.  
   
-2.  W wierszu polecenia należy zmienić ścieżkę do katalogu, który zawiera najnowszą wersję plików opublikowanej aplikacji. Poniższy przykład pokazuje, w tym kroku.  
+2. W wierszu polecenia należy zmienić ścieżkę do katalogu, który zawiera najnowszą wersję plików opublikowanej aplikacji. Poniższy przykład pokazuje, w tym kroku.  
   
-    ```cmd  
-cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
-    ```  
+   ```cmd  
+   cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+   ```  
   
-3.  W wierszu polecenia Uruchom następujące polecenie, aby osadzić pliku manifestu w pliku wykonywalnego aplikacji.  
+3. W wierszu polecenia Uruchom następujące polecenie, aby osadzić pliku manifestu w pliku wykonywalnego aplikacji.  
   
-    ```cmd
-    mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
-    ```  
+   ```cmd
+   mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
+   ```  
   
 ## <a name="sign-the-application-and-deployment-manifests"></a>Podpisywanie manifestów aplikacji i wdrożenia  
   
-1.  W wierszu polecenia Uruchom następujące polecenie, aby usunąć *.deploy* rozszerzenie z pliku wykonywalnego w bieżącym katalogu.  
+1. W wierszu polecenia Uruchom następujące polecenie, aby usunąć *.deploy* rozszerzenie z pliku wykonywalnego w bieżącym katalogu.  
   
-    ```cmd  
-    ren MyWPFApp.exe.deploy MyWPFApp.exe  
-    ```  
+   ```cmd  
+   ren MyWPFApp.exe.deploy MyWPFApp.exe  
+   ```  
   
-    > [!NOTE]
-    >  W tym przykładzie założono, że tylko jeden plik ma *.deploy* rozszerzenie pliku. Upewnij się, zmiana nazwy wszystkich plików w tym katalogu, które mają *.deploy* rozszerzenie pliku.  
+   > [!NOTE]
+   >  W tym przykładzie założono, że tylko jeden plik ma *.deploy* rozszerzenie pliku. Upewnij się, zmiana nazwy wszystkich plików w tym katalogu, które mają *.deploy* rozszerzenie pliku.  
   
-2.  W wierszu polecenia Uruchom następujące polecenie, aby podpisać manifest aplikacji.  
+2. W wierszu polecenia Uruchom następujące polecenie, aby podpisać manifest aplikacji.  
   
-    ```cmd  
-    mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```cmd  
+   mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  W tym przykładzie przyjęto założenie, podpisać manifest za pomocą *PFX* pliku projektu. Jeśli nie są podpisywania manifestu, można pominąć `-cf` parametr, który jest używany w tym przykładzie. W przypadku podpisywania manifestu za pomocą certyfikatu, który wymaga hasła, podaj `-password` opcji (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`).  
+   > [!NOTE]
+   >  W tym przykładzie przyjęto założenie, podpisać manifest za pomocą *PFX* pliku projektu. Jeśli nie są podpisywania manifestu, można pominąć `-cf` parametr, który jest używany w tym przykładzie. W przypadku podpisywania manifestu za pomocą certyfikatu, który wymaga hasła, podaj `-password` opcji (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`).  
   
-3.  W wierszu polecenia Uruchom następujące polecenie, aby dodać *.deploy* rozszerzenie nazwy pliku, którego nazwa została zmieniona w poprzednim kroku tej procedury.  
+3. W wierszu polecenia Uruchom następujące polecenie, aby dodać *.deploy* rozszerzenie nazwy pliku, którego nazwa została zmieniona w poprzednim kroku tej procedury.  
   
-    ```  
-    ren MyWPFApp.exe MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   ren MyWPFApp.exe MyWPFApp.exe.deploy  
+   ```  
   
-    > [!NOTE]
-    >  W tym przykładzie przyjęto założenie, że tylko jeden plik miał *.deploy* rozszerzenie pliku. Upewnij się, zmiana nazwy wszystkich plików w tym katalogu, który stracił *.deploy* rozszerzenie nazwy pliku.  
+   > [!NOTE]
+   >  W tym przykładzie przyjęto założenie, że tylko jeden plik miał *.deploy* rozszerzenie pliku. Upewnij się, zmiana nazwy wszystkich plików w tym katalogu, który stracił *.deploy* rozszerzenie nazwy pliku.  
   
-4.  W wierszu polecenia Uruchom następujące polecenie, aby podpisać manifest wdrożenia.  
+4. W wierszu polecenia Uruchom następujące polecenie, aby podpisać manifest wdrożenia.  
   
-    ```  
-    mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  W tym przykładzie przyjęto założenie, podpisać manifest za pomocą *PFX* pliku projektu. Jeśli nie są podpisywania manifestu, można pominąć `-cf` parametr, który jest używany w tym przykładzie. W przypadku podpisywania manifestu za pomocą certyfikatu, który wymaga hasła, podaj `-password` opcji, jak w poniższym przykładzie:`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`.  
+   > [!NOTE]
+   >  W tym przykładzie przyjęto założenie, podpisać manifest za pomocą *PFX* pliku projektu. Jeśli nie są podpisywania manifestu, można pominąć `-cf` parametr, który jest używany w tym przykładzie. W przypadku podpisywania manifestu za pomocą certyfikatu, który wymaga hasła, podaj `-password` opcji, jak w poniższym przykładzie:`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`.  
   
- Po wykonaniu tych kroków można umieścić opublikowanych pliki do lokalizacji, z którego chcesz zainstalować aplikację użytkownikom końcowym. Jeśli zamierzasz często aktualizacji rozwiązania, można przenieść te polecenia do skryptu i uruchom skrypt na każdym publikowaniu nowej wersji.  
+   Po wykonaniu tych kroków można umieścić opublikowanych pliki do lokalizacji, z którego chcesz zainstalować aplikację użytkownikom końcowym. Jeśli zamierzasz często aktualizacji rozwiązania, można przenieść te polecenia do skryptu i uruchom skrypt na każdym publikowaniu nowej wersji.  
   
 ## <a name="see-also"></a>Zobacz także
 

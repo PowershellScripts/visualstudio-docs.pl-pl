@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b7e42c274bd1ef5bb2d04db2e856418ea6719f8
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384295"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856174"
 ---
 # <a name="install-visual-studio-2017"></a>Instalowanie programu Visual Studio 2017
 
@@ -63,11 +63,11 @@ Następnie uruchom plik inicjujący, aby zainstalować Instalatora programu Visu
 
 1. Z usługi **pliki do pobrania** folderu, kliknij dwukrotnie program inicjujący, który jest zgodny lub podobny do jednego z następujących plików:
 
-  * **vs_enterprise.exe** programu Visual Studio Enterprise
-  * **vs_professional.exe** for Visual Studio Professional
-  * **vs_community.exe** dla Visual Studio Community  <br><br>
+   * **vs_enterprise.exe** programu Visual Studio Enterprise
+   * **vs_professional.exe** for Visual Studio Professional
+   * **vs_community.exe** dla Visual Studio Community  <br><br>
 
-  Jeśli pojawi się powiadomienie Kontrola konta użytkownika, kliknij przycisk **tak**.
+   Jeśli pojawi się powiadomienie Kontrola konta użytkownika, kliknij przycisk **tak**.
 
 2. Poprosimy Cię potwierdzić Microsoft [postanowienia licencyjne](https://visualstudio.microsoft.com/license-terms/) i Microsoft [zasady zachowania poufności informacji](https://privacy.microsoft.com/privacystatement). Kliknij przycisk **Kontynuuj**.
 
@@ -79,7 +79,7 @@ Po zainstalowaniu Instalatora, można go dostosować instalację, wybierając ze
 
 1. Znajdź obciążenie w **Instalowanie programu Visual Studio** ekranu.
 
- ![Wybierz obciążenie w oknie dialogowym Instalator programu Visual Studio 2017](../install/media/install-visual-studio-community.png)
+   ![Wybierz obciążenie w oknie dialogowym Instalator programu Visual Studio 2017](../install/media/install-visual-studio-community.png)
 
      Na przykład wybierz obciążenie "Programowanie aplikacji klasycznych .NET". Dołączono edytora podstawowych domyślny, który zawiera podstawowe obsługę edytowania kodu dla ponad 20 języków, możliwość otwierania i edytowania kodu z dowolnego folderu bez konieczności korzystania z projektu i zintegrowane kontroli kodu źródłowego.
 
@@ -130,15 +130,17 @@ Aby uzyskać więcej informacji, zobacz [zmiana lokalizacji instalacji programu 
 
 ## <a name="step-8---start-developing"></a>Krok 8 — zacznij programować
 
-1. Po zakończeniu instalacji programu Visual Studio kliknij **Uruchom** przycisk, aby [Rozpocznij tworzenie aplikacji za pomocą programu Visual Studio](../ide/get-started-developing-with-visual-studio.md).
+1. Po zakończeniu instalacji programu Visual Studio kliknij **Uruchom** przycisk, aby rozpocząć tworzenie aplikacji za pomocą programu Visual Studio.
 
 2. Kliknij przycisk **pliku**, a następnie kliknij przycisk **nowy projekt**.
 
-3. Wybierz typ projektu. <br><br>
-   Na przykład, aby [kompilacji aplikacji w języku C++](../ide/getting-started-with-cpp-in-visual-studio.md), kliknij przycisk **zainstalowane**, rozwiń węzeł **Visual C++**, a następnie wybierz typ projektu C++, który chcesz skompilować. <br><br>
-   Aby [tworzenie aplikacji C#](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), kliknij przycisk **zainstalowane**, rozwiń węzeł **Visual C#**, a następnie wybierz typ projektu C#, który chcesz skompilować.
+3. Wybierz typ projektu.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)] 
+   Na przykład, aby [kompilacji aplikacji w języku C++](../ide/getting-started-with-cpp-in-visual-studio.md), kliknij przycisk **zainstalowane**, rozwiń węzeł **Visual C++**, a następnie wybierz typ projektu C++, który chcesz skompilować.
+
+   Do [kompilacji C# aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md), kliknij przycisk **zainstalowane**, rozwiń węzeł **Visual C#** , a następnie wybierz pozycję C# typ, który chcesz skompilować projektu.
+
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Zobacz także
 

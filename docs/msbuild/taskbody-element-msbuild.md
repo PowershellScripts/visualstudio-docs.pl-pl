@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a545a8ff4b4666db168a15e8cc75689d33e89fe
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 4f0a3f24c5c8634301663f19dab9078bb37405b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876558"
 ---
 # <a name="taskbody-element-msbuild"></a>Taskbody — element (MSBuild)
 Zawiera dane, które są przekazywane do `UsingTask` `TaskFactory`. Aby uzyskać więcej informacji, zobacz [usingtask — element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
@@ -55,9 +55,9 @@ Zawiera dane, które są przekazywane do `UsingTask` `TaskFactory`. Aby uzyskać
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 
-|Element|Opis|  
-|-------------|-----------------|  
-|[UsingTask](../msbuild/usingtask-element-msbuild.md)|Zapewnia sposób zarejestrować zadań w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Może wynosić zero lub więcej `UsingTask` elementy w projekcie.|  
+| Element | Opis |
+| - | - |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Zapewnia sposób zarejestrować zadań w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Może wynosić zero lub więcej `UsingTask` elementy w projekcie. |
 
 ## <a name="example"></a>Przykład  
  Poniższy przykład pokazuje, jak używać `TaskBody` element z `Evaluate` atrybutu.  

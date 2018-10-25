@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80b26d0113e9d627a567a1381ec04eec54b062b0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6e47b8a18c631fe99b67020a4805d019b29fc234
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115778"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816800"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
-Pobiera nazwę proces obsługujący program.  
+Pobiera nazwę procesu hostingu programu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,16 +43,16 @@ int GetHostName (
   
 #### <a name="parameters"></a>Parametry  
  `dwHostNameType`  
- [in] Wartość z zakresu od [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) wyliczenie określający typ nazwy do zwrócenia.  
+ [in] Wartość z zakresu od [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) wyliczenie, które określa typ nazwy do zwrócenia.  
   
  `pbstrHostName`  
  [out] Zwraca nazwę procesu hostingu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę dla prostego `CProgram` obiekt ujawniający [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfejsu. W tym przykładzie ignoruje `dwHostNameType` parametrów i zwraca tylko nazwę programu, zgodnie z podstawowej nazwy ścieżki pliku modułu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CProgram` obiekt ujawniający [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interfejsu. W tym przykładzie ignoruje `dwHostNameType` parametr i zwraca tylko nazwę programu, ponieważ pobierane z podstawowej nazwy ścieżki pliku modułu.  
   
 ```cpp  
 HRESULT CProgram::GetHostName(DWORD dwHostNameType, BSTR* pbstrHostName) {    

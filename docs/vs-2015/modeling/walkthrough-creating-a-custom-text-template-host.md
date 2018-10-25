@@ -15,17 +15,17 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1cc8f2b2efc6c538af84d54cb487a8e35dbba6f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee1a6ebfdcad2f9ec50c5a76d5c14cd44028eeb7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304229"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817278"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Wskazówki: tworzenie niestandardowego hosta szablonu tekstowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A *szablonu tekstowego**hosta* zapewnia środowisko, które umożliwia *aparat przekształcania szablonu tekstowego* do uruchomienia. Host jest odpowiedzialny za zarządzanie interakcją aparatu z systemem plików. Aparat lub *procesora dyrektywy* który wymaga pliku lub zestawu, może zażądać zasobu z hosta. Host następnie może przeszukiwać katalogi i globalną pamięć podręczną zestawu, aby zlokalizować żądany zasób. Aby uzyskać więcej informacji, zobacz [proces przekształcania szablonu tekstowego](../modeling/the-text-template-transformation-process.md).  
+A *szablon tekstowy*<em>hosta</em> zapewnia środowisko, które umożliwia *aparatu przekształceń szablonu tekstu* do uruchomienia. Host jest odpowiedzialny za zarządzanie interakcją aparatu z systemem plików. Aparat lub *procesora dyrektywy* który wymaga pliku lub zestawu, może zażądać zasobu z hosta. Host następnie może przeszukiwać katalogi i globalną pamięć podręczną zestawu, aby zlokalizować żądany zasób. Aby uzyskać więcej informacji, zobacz [proces przekształcania szablonu tekstowego](../modeling/the-text-template-transformation-process.md).  
   
  Jeśli chcesz użyć można napisać niestandardowego hosta *przekształcenia szablonu tekstu* spoza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lub jeśli chcesz zintegrować tę funkcjonalność z niestandardowymi narzędziami. Aby utworzyć niestandardowego hosta, należy utworzyć klasę, która dziedziczy po elemencie <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Dokumentacja poszczególnych metod, zobacz <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Porady: wyświetlanie właściwości komunikatów | Dokumentacja firmy Microsoft'
+title: 'Porady: wyświetlanie właściwości komunikatu | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3caac9eab324b7656a92cb36e9c36e87d759b9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 54294ec72df4abfd6ba96e334017e58fca3d18c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473280"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864169"
 ---
 # <a name="how-to-display-message-properties"></a>Porady: wyświetlanie właściwości komunikatów
-Aby dowiedzieć się więcej na temat wiadomości na liście [widoku komunikatów](../debugger/messages-view.md), użyj [komunikatów — okno dialogowe właściwości](../debugger/message-properties-dialog-box.md).  
+Aby dowiedzieć się więcej na temat wiadomości na liście [widoku komunikatów](../debugger/messages-view.md), użyj [okno dialogowe Właściwości komunikatu](../debugger/message-properties-dialog-box.md).  
   
-### <a name="to-open-a-message-properties-dialog-box"></a>Aby otworzyć okno dialogowe właściwości wiadomości  
+### <a name="to-open-a-message-properties-dialog-box"></a>Aby otworzyć okno dialogowe Właściwości komunikatu  
   
-1.  Wybierz wiadomość z drzewa wyświetlane w widoku komunikatów.  
+1. Zaznacz wiadomość z drzewa wyświetlany w widoku komunikatów.  
   
-2.  Z **widoku** menu, wybierz **właściwości**.  
+2. Z **widoku** menu, wybierz **właściwości**.  
   
- Okno dialogowe właściwości nie są modalne, dzięki czemu możesz kliknąć innym elementem w okno widoku i zostanie wyświetlone okno dialogowe informacje wybranego elementu.
+   Okno dialogowe właściwości nie są modalne, dzięki czemu możesz kliknąć inny element w oknie Widok i zostanie wyświetlone okno dialogowe informacje wybranego elementu.

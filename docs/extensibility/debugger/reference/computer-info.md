@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f9f81532608a4919707b5acafbde7ce1d8fe400
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a52247f36f3628d91e83a89ded88a35c6ee8e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102044"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864221"
 ---
 # <a name="computerinfo"></a>COMPUTER_INFO
-W tym artykule opisano komputera, na którym działa debugera.  
+W tym artykule opisano komputera, na którym uruchomiony jest debugera.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -45,10 +45,10 @@ public struct COMPUTER_INFO
   
 ## <a name="terms"></a>Warunki  
  wProcessorArchitecture  
- Identyfikuje architektury procesora.  
+ Określa z architekturą procesora.  
   
  wSuiteMask  
- Identyfikuje pakiet maski.  
+ Określa maskę pakietu.  
   
  dwOperatingSystemVersion  
  Numer wersji systemu operacyjnego.  
@@ -64,5 +64,5 @@ public struct COMPUTER_INFO
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

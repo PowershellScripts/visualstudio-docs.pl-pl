@@ -20,12 +20,12 @@ caps.latest.revision: 56
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a9c7b5f5a88e8563930615c883c6911956932d17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cba454162cb9116dc1d2946a5c136b377354d7d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852183"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagramy klas UML: Zalecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,17 +122,17 @@ W programie Visual Studio, można użyć *diagram klas UML* do opisu typów dany
   
  ![Klasa, wyliczenia i interfejs](../modeling/media/uml-classguidetypes.png "UML_ClassGuideTypes")  
   
--   Użyj **klasy** (1) do reprezentowania typów danych lub obiektów w większości przypadków.  
+- Użyj **klasy** (1) do reprezentowania typów danych lub obiektów w większości przypadków.  
   
--   Użyj **interfejsów** (2) w kontekście, w którym trzeba odróżnić czyste interfejsy od konkretnych klas, które mają wewnętrzne implementacje. Różnica ta jest przydatna, gdy diagram służy do opisywania implementacji oprogramowania. Mniej przydatna jest, kiedy modelowane są dane pasywne lub kiedy definiuje się koncepcje używane do opisu wymagań użytkownika.  
+- Użyj **interfejsów** (2) w kontekście, w którym trzeba odróżnić czyste interfejsy od konkretnych klas, które mają wewnętrzne implementacje. Różnica ta jest przydatna, gdy diagram służy do opisywania implementacji oprogramowania. Mniej przydatna jest, kiedy modelowane są dane pasywne lub kiedy definiuje się koncepcje używane do opisu wymagań użytkownika.  
   
--   Użyj **wyliczenie** (3) do reprezentacji typu, który ma ograniczoną liczbę wartości literałowych, na przykład `Stop` i `Go`.  
+- Użyj **wyliczenie** (3) do reprezentacji typu, który ma ograniczoną liczbę wartości literałowych, na przykład `Stop` i `Go`.  
   
-    -   Dodaj wartości literałów do wyliczenia. Każdemu z nich nadaj odrębną nazwę.  
+  -   Dodaj wartości literałów do wyliczenia. Każdemu z nich nadaj odrębną nazwę.  
   
-    -   W razie potrzeby możesz również podać wartość liczbową dla każdej wartości literału. Otwórz menu skrótów dla literału w wyliczeniu, wybierz opcję **właściwości**, a następnie wpisz liczbę w **wartość** pole **właściwości** okna.  
+  -   W razie potrzeby możesz również podać wartość liczbową dla każdej wartości literału. Otwórz menu skrótów dla literału w wyliczeniu, wybierz opcję **właściwości**, a następnie wpisz liczbę w **wartość** pole **właściwości** okna.  
   
- Każdemu typowi nadaj unikatową nazwę.  
+  Każdemu typowi nadaj unikatową nazwę.  
   
 ### <a name="getting-types-from-other-diagrams"></a>Pobieranie typów z innych diagramów  
  Można spowodować pojawienie się typów z innego diagramu w diagramie klas UML.  
@@ -166,7 +166,7 @@ W programie Visual Studio, można użyć *diagram klas UML* do opisu typów dany
   
  Aby wyświetlić jego właściwości, otwórz menu skrótów dla atrybutu lub operacji, a następnie wybierz **właściwości**. Właściwości są wyświetlane w **właściwości** okna.  
   
- Aby wyświetlić właściwości parametrów operacji, wybierz opcję **[...]** w **parametry** właściwości. Zostanie wyświetlone nowe okno dialogowe właściwości.  
+ Aby wyświetlić właściwości parametrów operacji, wybierz opcję <strong>[...]</strong> w **parametry** właściwości. Zostanie wyświetlone nowe okno dialogowe właściwości.  
   
  Aby uzyskać szczegółowe informacje dotyczące wszystkich właściwości, które można ustawiać, zobacz:  
   
@@ -177,15 +177,15 @@ W programie Visual Studio, można użyć *diagram klas UML* do opisu typów dany
 ### <a name="types-of-attributes-and-operations"></a>Typy atrybutów i operacji  
  Każdy *typu* atrybutu lub operacji i każdy typ parametru może być jedną z następujących czynności:  
   
--   **(Brak)**  — Można zostawić typ nieokreślony w podpisie, pomijając poprzedzający dwukropek (`:`).  
+- **(Brak)**  — Można zostawić typ nieokreślony w podpisie, pomijając poprzedzający dwukropek (`:`).  
   
--   Jednym ze standardowych typów pierwotnych: **logiczna**, **całkowitą**, **ciąg**.  
+- Jednym ze standardowych typów pierwotnych: **logiczna**, **całkowitą**, **ciąg**.  
   
--   Typem zdefiniowanym w modelu.  
+- Typem zdefiniowanym w modelu.  
   
--   Sparametryzowaną wartością typu szablonowego, zapisaną w postaci szablon\<parametr >. Zobacz [typy szablonów](#Templates).  
+- Sparametryzowaną wartością typu szablonowego, zapisaną w postaci szablon\<parametr >. Zobacz [typy szablonów](#Templates).  
   
- Możesz także wpisać nazwę typu, który nie został jeszcze zdefiniowany w modelu. Nazwa będzie wyświetlana w obszarze **nieokreślonym** w Eksploratorze modelu UML.  
+  Możesz także wpisać nazwę typu, który nie został jeszcze zdefiniowany w modelu. Nazwa będzie wyświetlana w obszarze **nieokreślonym** w Eksploratorze modelu UML.  
   
 > [!NOTE]
 >  Jeśli klasa lub interfejs o tej nazwie zostaną następnie zdefiniowane w modelu, starsze atrybuty i operacje będą nadal odwoływały się do elementu o typie Nieokreślonym. Jeśli chcesz, ab odwoływały się do nowej klasy, dla każdego atrybutu lub operacji musisz zresetować typ, wybierając nową klasę z menu rozwijalnego.  
@@ -343,15 +343,15 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
  Niektóre właściwości poszczególnych ról są bezpośrednio widoczne na diagramie. Są one następujące:  
   
--   Nazwa roli. Pojawia się na odpowiednim końcu asocjacji na diagramie. Można ustawić na diagramie lub w **właściwości** okna.  
+- Nazwa roli. Pojawia się na odpowiednim końcu asocjacji na diagramie. Można ustawić na diagramie lub w **właściwości** okna.  
   
--   **Element multiplicity**, które domyślnie używa **1**. Również pojawia się na diagramie, w pobliżu odpowiedniego końca asocjacji.  
+- **Element multiplicity**, które domyślnie używa **1**. Również pojawia się na diagramie, w pobliżu odpowiedniego końca asocjacji.  
   
--   **Agregacja**. Pojawia się jako kształt rombu na jednym końcu łącznika. Można jej używać do wskazania, że wystąpienia w roli agregacji posiadają lub zawierają wystąpienia innych.  
+- **Agregacja**. Pojawia się jako kształt rombu na jednym końcu łącznika. Można jej używać do wskazania, że wystąpienia w roli agregacji posiadają lub zawierają wystąpienia innych.  
   
--   **Można nawigować**. Jeśli ma wartość true dla tylko jednej roli, pojawia się strzałka w kierunku, dla którego nawigacja jest możliwa. Służy to do wskazania możliwości nawigacji dla łączy i relacji bazodanowych w oprogramowaniu.  
+- **Można nawigować**. Jeśli ma wartość true dla tylko jednej roli, pojawia się strzałka w kierunku, dla którego nawigacja jest możliwa. Służy to do wskazania możliwości nawigacji dla łączy i relacji bazodanowych w oprogramowaniu.  
   
- Aby uzyskać szczegółowe informacje o tych i innych właściwości, zobacz [właściwości skojarzeń w UML, diagramy klas](../modeling/properties-of-associations-on-uml-class-diagrams.md).  
+  Aby uzyskać szczegółowe informacje o tych i innych właściwości, zobacz [właściwości skojarzeń w UML, diagramy klas](../modeling/properties-of-associations-on-uml-class-diagrams.md).  
   
 ### <a name="navigability"></a>Możliwość nawigacji  
  Podczas rysowania asocjacji, ma ona strzałkę na jednym końcu, oznaczającą, że nawigacja jest możliwa w tym kierunku. Jest to przydatne, jeśli diagram klas reprezentuje klasy w oprogramowaniu, a asocjacje reprezentują wskaźniki lub odwołania. Ale kiedy diagram klas służy do reprezentacji obiektów i relacji lub koncepcji biznesowych, reprezentacja możliwości nawigacji jest mniej znacząca. W takim przypadku można preferować rysowanie asocjacji bez strzałek. Możesz to zrobić, ustawiając **jest Nawigowalna** właściwości na obu końcach asocjacji na wartość True. Aby to ułatwić, możesz pobrać przykładowy kod [modelowanie domeny UML](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4).  
@@ -368,13 +368,13 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 ##  <a name="Inheritance"></a> Dziedziczenie  
  Użyj **dziedziczenia** narzędzia do tworzenia się następująco:  
   
--   A *Generalizacja* relację między typem wyspecjalizowanym a typem ogólnym  
+- A *Generalizacja* relację między typem wyspecjalizowanym a typem ogólnym  
   
-     \- lub —  
+   \- lub —  
   
--   A *realizacja* relacji między klasą a interfejsem, który implementuje.  
+- A *realizacja* relacji między klasą a interfejsem, który implementuje.  
   
- Nie można tworzyć pętli w relacjach dziedziczenia.  
+  Nie można tworzyć pętli w relacjach dziedziczenia.  
   
 ### <a name="generalization"></a>Generalizacja  
  Generalizacja oznacza, że typ wyspecjalizowany lub pochodny dziedziczy atrybuty, operacje i asocjacje typu ogólnego lub podstawowego.  
@@ -385,17 +385,17 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 ##### <a name="to-override-an-operations-definition-in-a-specializing-type"></a>Aby zastąpić definicję operacji w typie wyspecjalizowanym  
   
-1.  Kliknij relację generalizacji.  
+1. Kliknij relację generalizacji.  
   
-     Pojawi się wyróżniona, a tag Akcja zostanie wyświetlony w pobliżu.  
+    Pojawi się wyróżniona, a tag Akcja zostanie wyświetlony w pobliżu.  
   
-2.  Kliknij tag akcji, a następnie kliknij przycisk **Zastąp operacje**.  
+2. Kliknij tag akcji, a następnie kliknij przycisk **Zastąp operacje**.  
   
-     **Zastąp operacje** pojawi się okno dialogowe.  
+    **Zastąp operacje** pojawi się okno dialogowe.  
   
-3.  Wybierz operacje, które mają być wyświetlane w typie wyspecjalizowanym, a następnie kliknij przycisk **OK**.  
+3. Wybierz operacje, które mają być wyświetlane w typie wyspecjalizowanym, a następnie kliknij przycisk **OK**.  
   
- Operacje, które wybrano, pojawią się w typie wyspecjalizowanym.  
+   Operacje, które wybrano, pojawią się w typie wyspecjalizowanym.  
   
 ### <a name="realization"></a>Realizacja  
  Realizacja oznacza, że klasa implementuje atrybuty i operacje, określone przez interfejs. Interfejs znajduje się na końcu łącznika ze strzałką.  
@@ -417,23 +417,23 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
 #### <a name="to-create-a-template-type"></a>Aby utworzyć typ szablonu  
   
-1.  Utwórz klasę lub interfejs. Będzie to typ szablonu. Nadaj mu odpowiednią nazwę, na przykład `Dictionary`.  
+1. Utwórz klasę lub interfejs. Będzie to typ szablonu. Nadaj mu odpowiednią nazwę, na przykład `Dictionary`.  
   
-2.  Otwórz menu skrótów dla nowego typu, a następnie wybierz **właściwości**.  
+2. Otwórz menu skrótów dla nowego typu, a następnie wybierz **właściwości**.  
   
-3.  W **właściwości** okna, kliknij przycisk **[...]**  w **parametry szablonu** pola.  
+3. W **właściwości** okna, kliknij przycisk **[...]**  w **parametry szablonu** pola.  
   
-     **Edytor kolekcji parametrów szablonu** pojawi się okno dialogowe.  
+    **Edytor kolekcji parametrów szablonu** pojawi się okno dialogowe.  
   
-4.  Wybierz **Dodaj**.  
+4. Wybierz **Dodaj**.  
   
-5.  Na przykład ustaw właściwość nazwa na nazwę parametru swojego typu szablonu `Key`.  
+5. Na przykład ustaw właściwość nazwa na nazwę parametru swojego typu szablonu `Key`.  
   
-6.  Ustaw **rodzaj parametru**. Wartość domyślna to **klasy**.  
+6. Ustaw **rodzaj parametru**. Wartość domyślna to **klasy**.  
   
-7.  Jeśli chcesz, aby parametr ma akceptować tylko klasy pochodne konkretnej klasy bazowej, ustaw **wartość ograniczona** na wybraną klasę bazową.  
+7. Jeśli chcesz, aby parametr ma akceptować tylko klasy pochodne konkretnej klasy bazowej, ustaw **wartość ograniczona** na wybraną klasę bazową.  
   
-8.  Dodaj tyle parametrów, ile potrzebujesz, następnie wybierz **OK**.  
+8. Dodaj tyle parametrów, ile potrzebujesz, następnie wybierz **OK**.  
   
 9. Dodaj atrybuty i operacje do typu szablonu, tak jak w przypadku innych klas.  
   
@@ -443,9 +443,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
   
      Można użyć parametru, którego rodzaj jest **całkowitą** jako granicę liczebności. Na przykład, całkowitoliczbowy parametr max może służyć do definiowania liczebności atrybutu jako `[0..max]`.  
   
- Po utworzeniu typów szablonu, można ich używać do definiowania powiązań szablonów:  
+   Po utworzeniu typów szablonu, można ich używać do definiowania powiązań szablonów:  
   
- ![Klasy związane z szablonu słownika](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")  
+   ![Klasy związane z szablonu słownika](../modeling/media/uml-classguidetemplate2.png "UML_ClassGuideTemplate2")  
   
 #### <a name="to-use-a-template-type"></a>Aby użyć typu szablonu  
   

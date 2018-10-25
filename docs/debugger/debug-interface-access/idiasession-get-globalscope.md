@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::get_globalScope | Dokumentacja firmy Microsoft
+title: Idiasession::get_globalscope — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c8777ad9309f97c1339b03124bd4bb073df7b9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d5e52f966a129490907615f6c40f52c7710c09ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850376"
 ---
 # <a name="idiasessiongetglobalscope"></a>IDiaSession::get_globalScope
 Pobiera odwołanie do zakresu globalnego.  
@@ -37,9 +37,9 @@ HRESULT get_globalScope (
  [out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt, który reprezentuje zakresu globalnego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wywołanie pliku exe](../../debugger/debug-interface-access/exe.md)   
+ [plik exe](../../debugger/debug-interface-access/exe.md)   
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

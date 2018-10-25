@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fdd13647eb485fa20da9c95a1c67ccc3e5f38cc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251839"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812429"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Tworzenie modelu Entity Data Model, który jest generowany na podstawie danych w przykładowej bazie danych AdventureWorksLT.  
+- Tworzenie modelu Entity Data Model, który jest generowany na podstawie danych w przykładowej bazie danych AdventureWorksLT.  
   
--   Tworzenie [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] który uwidacznia dane w modelu Entity Data Model do aplikacji WPF.  
+- Tworzenie [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] który uwidacznia dane w modelu Entity Data Model do aplikacji WPF.  
   
--   Tworzenie zestawu formantów powiązanych z danymi przez przeciąganie elementów z **źródeł danych** okna Projektanta WPF.  
+- Tworzenie zestawu formantów powiązanych z danymi przez przeciąganie elementów z **źródeł danych** okna Projektanta WPF.  
   
--   Tworzenie przycisków, które przejdź do przodu i wstecz za pośrednictwem rekordów klientów.  
+- Tworzenie przycisków, które przejdź do przodu i wstecz za pośrednictwem rekordów klientów.  
   
--   Tworzenie przycisku, który zapisuje zmiany danych w kontrolkach do [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] i źródle danych.  
+- Tworzenie przycisku, który zapisuje zmiany danych w kontrolkach do [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] i źródle danych.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   Dostęp do uruchomionego wystąpienia programu SQL Server lub SQL Server Express, który ma przykładowej bazy danych AdventureWorksLT podłączone do niego. Możesz pobrać bazy danych AdventureWorksLT z [witryny sieci CodePlex Web](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Dostęp do uruchomionego wystąpienia programu SQL Server lub SQL Server Express, który ma przykładowej bazy danych AdventureWorksLT podłączone do niego. Możesz pobrać bazy danych AdventureWorksLT z [witryny sieci CodePlex Web](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- Znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończeni instruktażu:  
+  Znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończeni instruktażu:  
   
--   Usługi danych WCF. Aby uzyskać więcej informacji, zobacz [Przegląd](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- Usługi danych WCF. Aby uzyskać więcej informacji, zobacz [Przegląd](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Modele danych w [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
+- Modele danych w [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].  
   
--   Jednostki danych modeli i ADO.NET Entity Framework. Aby uzyskać więcej informacji, zobacz [Omówienie programu Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Jednostki danych modeli i ADO.NET Entity Framework. Aby uzyskać więcej informacji, zobacz [Omówienie programu Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
--   Praca z projektanta WPF. Aby uzyskać więcej informacji, zobacz [WPF i Silverlight projektanta Przegląd](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Praca z projektanta WPF. Aby uzyskać więcej informacji, zobacz [WPF i Silverlight projektanta Przegląd](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [Przegląd wiązanie danych](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [Przegląd wiązanie danych](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-service-project"></a>Tworzenie projektu usługi  
  Skorzystaniem z tego przewodnika, tworząc projekt [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
@@ -207,39 +207,39 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
   
 #### <a name="to-create-the-data-bound-controls"></a>Aby utworzyć formanty powiązane z danymi  
   
-1.  W **źródeł danych** okna, kliknij przycisk menu rozwijanej dla **SalesOrderHeaders** , a następnie wybierz węzeł **szczegóły**.  
+1. W **źródeł danych** okna, kliknij przycisk menu rozwijanej dla **SalesOrderHeaders** , a następnie wybierz węzeł **szczegóły**.  
   
-2.  Rozwiń **SalesOrderHeaders** węzła.  
+2. Rozwiń **SalesOrderHeaders** węzła.  
   
-3.  Na przykład niektóre pola nie zostaną wyświetlone, więc kliknij menu rozwijane obok następujących węzłów i wybierz pozycję **Brak**:  
+3. Na przykład niektóre pola nie zostaną wyświetlone, więc kliknij menu rozwijane obok następujących węzłów i wybierz pozycję **Brak**:  
   
-    -   **CreditCardApprovalCode**  
+   - **CreditCardApprovalCode**  
   
-    -   **Data modyfikacji**  
+   - **Data modyfikacji**  
   
-    -   **OnlineOrderFlag**  
+   - **OnlineOrderFlag**  
   
-    -   **RevisionNumber**  
+   - **RevisionNumber**  
   
-    -   **ROWGUID**  
+   - **ROWGUID**  
   
      Ta akcja uniemożliwia tworzenie formantów powiązanych z danymi dla tych węzłów w następnym kroku programu Visual Studio. W tym przewodniku założono, że użytkownik końcowy nie musi widzieć tych danych.  
   
-4.  Z **źródeł danych** okna, przeciągnij **SalesOrderHeaders** węzeł, aby wiersz siatki w ramach wiersza, który zawiera przyciski.  
+4. Z **źródeł danych** okna, przeciągnij **SalesOrderHeaders** węzeł, aby wiersz siatki w ramach wiersza, który zawiera przyciski.  
   
-     Program Visual Studio generuje XAML i kodu, który tworzy zestaw elementów sterujących, które są powiązane z danymi w **produktu** tabeli. Aby uzyskać więcej informacji na temat wygenerowany XAML i kodu, zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+    Program Visual Studio generuje XAML i kodu, który tworzy zestaw elementów sterujących, które są powiązane z danymi w **produktu** tabeli. Aby uzyskać więcej informacji na temat wygenerowany XAML i kodu, zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-5.  W projektancie, kliknij pole tekstowe **identyfikator klienta** etykiety.  
+5. W projektancie, kliknij pole tekstowe **identyfikator klienta** etykiety.  
   
-6.  W **właściwości** okna, zaznacz pole wyboru obok pozycji **IsReadOnly** właściwości.  
+6. W **właściwości** okna, zaznacz pole wyboru obok pozycji **IsReadOnly** właściwości.  
   
-7.  Ustaw **IsReadOnly** właściwości dla każdego z następujących pól tekstowych:  
+7. Ustaw **IsReadOnly** właściwości dla każdego z następujących pól tekstowych:  
   
-    -   **Numer zamówienia zakupu**  
+   -   **Numer zamówienia zakupu**  
   
-    -   **Identyfikator zamówienia sprzedaży**  
+   -   **Identyfikator zamówienia sprzedaży**  
   
-    -   **Numer zamówienia sprzedaży**  
+   -   **Numer zamówienia sprzedaży**  
   
 ## <a name="load-the-data-from-the-service"></a>Załaduj dane z usługi  
  Aby załadować dane sprzedaży z usługi, należy użyć obiektu serwera proxy usługi. Następnie przypisz zwróconych danych do źródła danych dla <xref:System.Windows.Data.CollectionViewSource> okna WPF.  

@@ -9,35 +9,35 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f108e1385c74df7d627f35cd21e18638e50264fe
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7808c4485a00c080a8a5b260a6472d81bfb7fd44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816836"
 ---
 # <a name="image-library-viewer"></a>Przeglądarka biblioteki obrazów
 Narzędzie przeglądarka biblioteki obrazów programu Visual Studio można załadować i wyszukaj obraz o nazwie manifesty umożliwienie użytkownikowi nimi manipulować w taki sam sposób, który będzie programu Visual Studio. Użytkownik może zmienić tła, rozmiary, DPI, duży kontrast i inne ustawienia. Narzędzie również Wyświetla informacje ładowania dla każdego z manifestu obrazu i wyświetla informacje dotyczące źródła dla każdego obrazu w manifeście obrazu. To narzędzie jest przydatne w przypadku:  
   
-1.  Diagnozowanie błędów  
+1. Diagnozowanie błędów  
   
-2.  Zapewnianie atrybuty są prawidłowo ustawione w manifestach obrazu niestandardowego  
+2. Zapewnianie atrybuty są prawidłowo ustawione w manifestach obrazu niestandardowego  
   
-3.  Wyszukiwanie obrazów w Visual Studio katalogu obrazu tak, aby rozszerzenia programu Visual Studio mogą używać obrazów, które mieszczą się stylu programu Visual Studio  
+3. Wyszukiwanie obrazów w Visual Studio katalogu obrazu tak, aby rozszerzenia programu Visual Studio mogą używać obrazów, które mieszczą się stylu programu Visual Studio  
   
- ![Obraz Hero podglądu biblioteki](../../extensibility/internals/media/image-library-viewer-hero.png "Hero przeglądarka biblioteki obrazów")  
+   ![Obraz Hero podglądu biblioteki](../../extensibility/internals/media/image-library-viewer-hero.png "Hero przeglądarka biblioteki obrazów")  
   
- **Moniker obrazu**  
+   **Moniker obrazu**  
   
- Moniker obrazu (lub krótkiej nazwy w skrócie) jest parą GUID:ID, która jednoznacznie identyfikuje zasób obrazu lub obraz listy zasobów w bibliotece obrazów.  
+   Moniker obrazu (lub krótkiej nazwy w skrócie) jest parą GUID:ID, która jednoznacznie identyfikuje zasób obrazu lub obraz listy zasobów w bibliotece obrazów.  
   
- **Pliki manifestu obrazu**  
+   **Pliki manifestu obrazu**  
   
- Pliki manifestu (.imagemanifest) obrazów są pliki XML, które definiują zestaw zasoby obrazów, monikerów, które reprezentują te zasoby i rzeczywistego obrazu lub obrazów, które reprezentują każdego zasobu. Manifesty obrazu można zdefiniować obrazy autonomiczne lub listy obrazów do obsługi starszych wersji interfejsu użytkownika. Ponadto są atrybuty, które mogą być ustawione na zasób lub na poszczególnych obrazów za każdy zasób do zmiany, kiedy i jak te zasoby są wyświetlane.  
+   Pliki manifestu (.imagemanifest) obrazów są pliki XML, które definiują zestaw zasoby obrazów, monikerów, które reprezentują te zasoby i rzeczywistego obrazu lub obrazów, które reprezentują każdego zasobu. Manifesty obrazu można zdefiniować obrazy autonomiczne lub listy obrazów do obsługi starszych wersji interfejsu użytkownika. Ponadto są atrybuty, które mogą być ustawione na zasób lub na poszczególnych obrazów za każdy zasób do zmiany, kiedy i jak te zasoby są wyświetlane.  
   
- **Obraz schematu manifestu**  
+   **Obraz schematu manifestu**  
   
- Manifest pełny obraz wygląda następująco:  
+   Manifest pełny obraz wygląda następująco:  
   
 ```xml  
 <ImageManifest>  

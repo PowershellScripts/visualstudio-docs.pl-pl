@@ -16,12 +16,12 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e1956130203498d32d1ee39d67121f7797dd41fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d92d895b0986a8a6df888d4bea258f9dab067e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187479"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880562"
 ---
 # <a name="detecting-system-requirements"></a>Wykrywanie wymagań systemowych
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Pakietu VSPackage nie może działać, jeśli nie zainstalowano programu Visual 
 ## <a name="detecting-visual-studio-editions"></a>Wykrywanie wersje programu Visual Studio  
  Aby ustalić, czy wersja programu Visual Studio jest zainstalowany, sprawdź wartość klucza rejestru instalacji (REG_DWORD) 1 w odpowiednim folderze, zgodnie z opisem w poniższej tabeli. Zwróć uwagę, że hierarchia wersje programu Visual Studio:  
   
-1.  Enterprise  
+1. Enterprise  
   
-2.  Professional Edition  
+2. Professional Edition  
   
-3.  Społeczność  
+3. Społeczność  
   
- Po zainstalowaniu wersji "wyżej" klucze rejestru, w przypadku tej wersji, a także jak w przypadku wersji "niżej" są dodawane. Oznacza to jeśli jest zainstalowany w wersji Enterprise, klucz instalacji jest równa 1 dla przedsiębiorstw, a także wersje Professional i społeczności. W związku z tym należy sprawdzić tylko w przypadku wersji "najwyższą", których potrzebujesz.  
+   Po zainstalowaniu wersji "wyżej" klucze rejestru, w przypadku tej wersji, a także jak w przypadku wersji "niżej" są dodawane. Oznacza to jeśli jest zainstalowany w wersji Enterprise, klucz instalacji jest równa 1 dla przedsiębiorstw, a także wersje Professional i społeczności. W związku z tym należy sprawdzić tylko w przypadku wersji "najwyższą", których potrzebujesz.  
   
 > [!NOTE]
 >  W 64-bitową wersję Edytora rejestru w 32-bitowe klucze są wyświetlane w obszarze HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\. Klucze programu Visual Studio, podlegają HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\.  

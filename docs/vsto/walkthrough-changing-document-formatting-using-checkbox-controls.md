@@ -19,27 +19,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 459253c6a84add4fcca68565d5bf082dc0931f22
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 86cf89f7853308e93c55e30deae17786fdb3e413
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263867"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863935"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>Wskazówki: Zmiana formatowania dokumentu za pomocą formantów CheckBox
-  W tym przewodniku pokazano, jak używać formanty formularzy systemu Windows w dostosowaniu poziomie dokumentu dla programu Microsoft Office Word do zmiany formatowania tekstu.  
+  W tym instruktażu pokazano, jak użyć kontrolek formularzy Windows Forms w dostosowywania poziomie dokumentu dla programu Microsoft Office Word, aby zmienić formatowanie tekstu.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Dodawanie tekstu i formantu do dokumentu w projektach na poziomie dokumentu w czasie projektowania.  
+- Dodawanie tekstu i kontrolki do dokumentu w projekcie na poziomie dokumentu, w czasie projektowania.  
   
--   Formatowanie tekstu, po wybraniu opcji.  
+- Formatowanie tekstu, gdy opcja jest zaznaczona.  
   
- Aby zobaczyć wynik jako ukończonego próbka, zobacz przykład formanty programu Word w [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md).  
+  Aby wyświetlić wynik, jako przykład ukończone, zobacz przykład formanty programu Word w [Office development ― przykłady i wskazówki dotyczące](../vsto/office-development-samples-and-walkthroughs.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
@@ -53,107 +53,107 @@ ms.locfileid: "34263867"
   
 ### <a name="create-a-new-project"></a>Tworzenie nowego projektu  
   
-1.  Tworzenie projektu dokument programu Word o nazwie **Moje formatowania Word**. W kreatorze Wybierz **Utwórz nowy dokument**.  
+1.  Tworzenie projektu dokument programu Word z nazwą **Moje formatowania Word**. W kreatorze Wybierz **Utwórz nowy dokument**.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektach pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     Aby uzyskać więcej informacji, zobacz [porady: tworzenie projekty pakietu Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio zostanie otwarty nowy dokument programu Word w Projektancie i dodaje **Moje formatowania Word** projektu do **Eksploratora rozwiązań**.  
+     Visual Studio otwiera nowy dokument programu Word w Projektancie i dodaje **Moje formatowania Word** projekt **Eksploratora rozwiązań**.  
   
-## <a name="add-text-and-controls-to-the-word-document"></a>Dodawanie tekstu i formantów do dokumentu programu Word  
- W ramach tego przewodnika, Dodaj trzy pola wyboru i tekst w <xref:Microsoft.Office.Tools.Word.Bookmark> formantu do dokumentu programu Word. Pola wyboru będą widoczne dla użytkownika opcje formatowania tekstu.  
+## <a name="add-text-and-controls-to-the-word-document"></a>Dodawanie tekstu i kontrolki do dokumentu programu Word  
+ Na potrzeby tego przewodnika, Dodaj trzy pola wyboru i tekst w <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu programu Word. Pola wyboru spowoduje wyświetlenie użytkownikowi opcje formatowania tekstu.  
   
 ### <a name="add-three-check-boxes"></a>Dodaj trzy pola wyboru  
   
-1.  Sprawdź, czy dokument jest otwarty w projektancie programu Visual Studio.  
+1.  Sprawdź, czy dokument jest otwarty w Projektancie Visual Studio.  
   
-2.  Z **formanty standardowe** karcie **przybornika**, przeciągnij pierwszy <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> formantu do dokumentu.  
+2.  Z **wspólnych formantów** karcie **przybornika**, przeciągnij pierwszy <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> kontrolki do dokumentu.  
   
 3.  W **właściwości** okna, Zmień następujące właściwości.  
   
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**applyBoldFont**|  
-    |**Tekst**|**Bold**|  
+    |**Text**|**Bold**|  
   
 4.  Naciśnij klawisz **Enter** przenieść punkt wstawiania poniżej pierwsze pole wyboru.  
   
-5.  Dodawanie drugiego pola wyboru w dokumencie poniżej `ApplyBoldFont` pole wyboru i zmienić następujących właściwości.  
+5.  Dodawanie drugiego pola wyboru do dokumentu poniżej `ApplyBoldFont` pole wyboru, a następnie Zmień następujące właściwości.  
   
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**applyItalicFont**|  
-    |**Tekst**|**Kursywa**|  
+    |**Text**|**Kursywa**|  
   
 6.  Naciśnij klawisz **Enter** przenieść punkt wstawiania poniżej drugiego pola wyboru.  
   
-7.  Dodaj do dokumentu poniżej trzecie pole wyboru `ApplyItalicFont` pole wyboru i zmienić następujących właściwości.  
+7.  Dodaj trzecie pole wyboru do dokumentu poniżej `ApplyItalicFont` pole wyboru, a następnie Zmień następujące właściwości.  
   
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**applyUnderlineFont**|  
-    |**Tekst**|**Podkreślenie**|  
+    |**Text**|**Podkreślenie**|  
   
-### <a name="add-text-and-a-bookmark-control"></a>Dodawanie tekstu i formant zakładki  
+### <a name="add-text-and-a-bookmark-control"></a>Dodawanie tekstu i sterującymi zakładki  
   
-1.  Przenieś punkt wstawiania poniżej formanty pól wyboru i wpisz następujący tekst:  
+1. Przesuń punkt wstawiania poniżej formanty pól wyboru, a następnie wpisz następujący tekst:  
   
-     **Kliknij pole wyboru, aby zmienić formatowanie ten tekst.**  
+    **Kliknij pole wyboru, aby zmienić formatowanie tekstu.**  
   
-2.  Z **formanty Word** karcie **przybornika**, przeciągnij <xref:Microsoft.Office.Tools.Word.Bookmark> formantu do dokumentu.  
+2. Z **formanty programu Word** karcie **przybornika**, przeciągnij <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu.  
   
-     **Dodaj formant zakładki** zostanie wyświetlone okno dialogowe.  
+    **Dodaj kontrolkę zakładki** pojawi się okno dialogowe.  
   
-3.  Zaznacz tekst dodany do dokumentu, a następnie kliknij przycisk **OK**.  
+3. Zaznacz tekst, dodać do dokumentu, a następnie kliknij przycisk **OK**.  
   
-     A <xref:Microsoft.Office.Tools.Word.Bookmark> formantu o nazwie **Bookmark1** jest dodawany do zaznaczonego tekstu w dokumencie.  
+    A <xref:Microsoft.Office.Tools.Word.Bookmark> formantu o nazwie **Bookmark1** jest dodawany do zaznaczonego tekstu w dokumencie.  
   
-4.  W **właściwości** okna, zmień wartość **(nazwa)** właściwości **fontText.**  
+4. W **właściwości** okna, zmień wartość właściwości **(nazwa)** właściwości **fontText.**  
   
- Następnie należy napisać kod do formatowania tekstu, gdy pole wyboru jest zaznaczone lub wyczyszczone.  
+   Następnie należy napisać kod do formatowania tekstu, gdy pole wyboru jest zaznaczone lub wyczyszczone.  
   
-## <a name="format-the-text-when-a-check-box-is-checked-or-cleared"></a>Formatowanie tekstu, gdy pole wyboru jest zaznaczone lub wyczyszczone  
+## <a name="format-the-text-when-a-check-box-is-checked-or-cleared"></a>Formatuj tekst, gdy pole wyboru jest zaznaczone, lub wyczyszczone  
  Gdy użytkownik wybierze opcję formatowania, Zmień format tekstu w dokumencie.  
   
-### <a name="change-formatting-when-a-check-box-is-selected"></a>Zmienianie formatowania po zaznaczeniu pola wyboru  
+### <a name="change-formatting-when-a-check-box-is-selected"></a>Zmienianie formatowania, gdy zaznaczono pole wyboru  
   
-1.  Kliknij prawym przyciskiem myszy `ThisDocument` w **Eksploratora rozwiązań**, a następnie kliknij przycisk **kod widoku** menu skrótów.  
+1.  Kliknij prawym przyciskiem myszy `ThisDocument` w **Eksploratora rozwiązań**, a następnie kliknij przycisk **Wyświetl kod** w menu skrótów.  
   
-2.  Język C# tylko, Dodaj następujące ograniczenia, aby **ThisDocument** klasy.  
+2.  Aby uzyskać C# , Dodaj następujące stałe do **ThisDocument** klasy.  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#2)]  
   
-3.  Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> obsługi zdarzeń `applyBoldFont` pole wyboru.  
+3.  Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń `applyBoldFont` pole wyboru.  
   
      [!code-vb[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#3)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#3)]  
   
-4.  Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> obsługi zdarzeń `applyItalicFont` pole wyboru.  
+4.  Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń `applyItalicFont` pole wyboru.  
   
      [!code-vb[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#4)]  
   
-5.  Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> obsługi zdarzeń `applyUnderlineFont` pole wyboru.  
+5.  Dodaj następujący kod do <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń `applyUnderlineFont` pole wyboru.  
   
      [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]  
   
-6.  W języku C#, należy dodać obsługę zdarzeń dla pola tekstowego <xref:Microsoft.Office.Tools.Word.Document.Startup> zdarzeń. Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+6.  W C#, należy dodać procedury obsługi zdarzeń dla pól tekstowych do <xref:Microsoft.Office.Tools.Word.Document.Startup> zdarzeń. Aby uzyskać informacje o sposobie tworzenia procedury obsługi zdarzeń, zobacz [porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
 ## <a name="test-the-application"></a>Testowanie aplikacji  
- Teraz możesz przetestować dokument, aby sprawdzić, czy tekst jest prawidłowo sformatowane, zaznacz lub usuń zaznaczenie pola wyboru.  
+ Teraz możesz przetestować dokument, aby sprawdzić, czy tekst jest poprawnie sformatowane, zaznacz lub usuń zaznaczenie pola wyboru.  
   
-### <a name="test-your-document"></a>Dokument należy przetestować  
+### <a name="test-your-document"></a>Testowanie dokumentu  
   
-1.  Naciśnij klawisz **F5** do uruchomienia projektu.  
+1.  Naciśnij klawisz **F5** Aby uruchomić projekt.  
   
-2.  Wybierz lub wyczyść pole wyboru.  
+2.  Zaznacz lub wyczyść pole wyboru.  
   
 3.  Upewnij się, że tekst jest prawidłowo sformatowany.  
   
 ## <a name="next-steps"></a>Następne kroki  
- W tym przewodniku przedstawiono podstawy za pomocą pola wyboru i programowane Zmienianie formatowania tekstu na dokumentów programu Word. Poniżej przedstawiono niektóre zadania, które mogą występować:  
+ W tym instruktażu przedstawiono podstawy korzystania z pola wyboru oraz programowe Zmienianie tekstu w dokumentach programu Word. Poniżej przedstawiono niektóre zadania, które mogą pochodzić dalej:  
   
 -   Użyj przycisku, aby wypełnić pole tekstowe. Aby uzyskać więcej informacji, zobacz [wskazówki: wyświetlanie tekstu w polu tekstowym w dokumencie za pomocą przycisku](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
@@ -162,8 +162,8 @@ ms.locfileid: "34263867"
 
 ## <a name="see-also"></a>Zobacz także  
  [Wskazówki dotyczące przy użyciu programu Word](../vsto/walkthroughs-using-word.md)   
- [Office development ― przykłady i wskazówki](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Office development ― przykłady i przewodniki](../vsto/office-development-samples-and-walkthroughs.md)   
  [Namedrange — formant](../vsto/namedrange-control.md)   
- [Ograniczenia formantów formularzy systemu Windows w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+ [Ograniczenia kontrolek Windows Forms w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

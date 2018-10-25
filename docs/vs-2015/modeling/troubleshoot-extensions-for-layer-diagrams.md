@@ -15,12 +15,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c8ea8f4e6b102dd9bb4a84154096d5cef906eeab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b4d7dbe7fc11a41d44063aab558389555a4b7af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879106"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Rozwiązywanie problemów z rozszerzeniami dla diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ W tym temacie omawia niektóre problemy, które można napotkać podczas tworzen
   
 #### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>Po naciśnięciu klawisza klawisz F5, aby debugować Moje rozszerzenia, polecenia, programy obsługi gestu, rozszerzenia sprawdzania poprawności lub właściwości niestandardowe nie są wyświetlane na diagramach warstwy w doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
-1.  Otwórz swoje rozwiązanie rozszerzenia w doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], a następnie na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
+1. Otwórz swoje rozwiązanie rozszerzenia w doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], a następnie na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
   
-2.  Naciśnij klawisz **F5** lub **kombinację klawiszy CTRL + F5** do uruchom wystąpienie eksperymentalne programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Otwórz diagram warstwy i przetestuj swoje rozszerzenia.  
+2. Naciśnij klawisz **F5** lub **kombinację klawiszy CTRL + F5** do uruchom wystąpienie eksperymentalne programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Otwórz diagram warstwy i przetestuj swoje rozszerzenia.  
   
- Przejdź do następnej procedury, jeśli to konieczne.  
+   Przejdź do następnej procedury, jeśli to konieczne.  
   
 #### <a name="an-old-version-of-my-extension-runs"></a>Uruchamia starą wersję mojego rozszerzenia.  
   
-1.  Upewnij się, że żadne wystąpienie doświadczalne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jest uruchomiona.  
+1. Upewnij się, że żadne wystąpienie doświadczalne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jest uruchomiona.  
   
-2.  Usuń następujący folder: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [wersja]  
+2. Usuń następujący folder: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [wersja]  
   
-    > [!NOTE]
-    >  % LocalAppData % zazwyczaj znajduje *DriveName*: \Users\\*UserName*\AppData\Local.  
+   > [!NOTE]
+   >  % LocalAppData % zazwyczaj znajduje *DriveName*: \Users\\*UserName*\AppData\Local.  
   
- Przejdź do następnej procedury, jeśli to konieczne.  
+   Przejdź do następnej procedury, jeśli to konieczne.  
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Pojawi się stara wersja mojego wyniku weryfikacji lub Moja metoda sprawdzania poprawności nie jest wywoływana.  
   

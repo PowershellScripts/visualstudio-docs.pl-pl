@@ -13,12 +13,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40d9a160d839b965c4b5f6db2413237af0af30ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e32c55e0e159ebaa59e0a70e41a05249bb46c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837948"
 ---
 # <a name="managing-universal-windows-projects"></a>Zarządzanie uniwersalnymi projektami systemu Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -416,116 +416,116 @@ Universal Windows apps to aplikacje, przeznaczonych dla Windows 8.1 i Windows Ph
   
 ### <a name="detecting-changes-in-platform-projects-and-shared-projects"></a>Wykrywanie zmian w projektach platformy i projekty udostępnione  
   
-1.  Zdarzenia hierarchii i projektu służy do wykrywania zmian w udostępnionych projektach, tak jak w przypadku projektów platformy. Jednak elementy projektu w projekcie udostępnionym nie są widoczne, co oznacza, że określone zdarzenia nie zostać wywołane podczas elementy projektu udostępnionego są zmieniane.  
+1. Zdarzenia hierarchii i projektu służy do wykrywania zmian w udostępnionych projektach, tak jak w przypadku projektów platformy. Jednak elementy projektu w projekcie udostępnionym nie są widoczne, co oznacza, że określone zdarzenia nie zostać wywołane podczas elementy projektu udostępnionego są zmieniane.  
   
-     Należy wziąć pod uwagę kolejność zdarzeń przy zmianie ich nazwy pliku w projekcie:  
+    Należy wziąć pod uwagę kolejność zdarzeń przy zmianie ich nazwy pliku w projekcie:  
   
-    1.  Nazwa pliku zostanie zmieniona na dysku.  
+   1. Nazwa pliku zostanie zmieniona na dysku.  
   
-    2.  Plik projektu zostanie zaktualizowany do uwzględnienia nową nazwę pliku.  
+   2. Plik projektu zostanie zaktualizowany do uwzględnienia nową nazwę pliku.  
   
-     Zdarzenia hierarchii (na przykład <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) ogólnie śledzenia zmian wyświetlany w Interfejsie użytkownika, podobnie jak w **Eksploratora rozwiązań**. Zdarzenia w hierarchii należy wziąć pod uwagę operacji zmiany nazwy pliku składającej się ze usunięcie pliku, a następnie dodanie pliku. Jednak po zmianie elementów niewidoczne uruchamia system zdarzeń hierarchii <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> zdarzenia, ale nie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> zdarzeń. W związku z tym, jeśli zmienisz nazwę pliku w projekcie platformy, możesz uzyskać zarówno <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, ale w przypadku zmiany nazwy pliku w projekcie udostępnionym, otrzymasz tylko <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>.  
+      Zdarzenia hierarchii (na przykład <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) ogólnie śledzenia zmian wyświetlany w Interfejsie użytkownika, podobnie jak w **Eksploratora rozwiązań**. Zdarzenia w hierarchii należy wziąć pod uwagę operacji zmiany nazwy pliku składającej się ze usunięcie pliku, a następnie dodanie pliku. Jednak po zmianie elementów niewidoczne uruchamia system zdarzeń hierarchii <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> zdarzenia, ale nie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> zdarzeń. W związku z tym, jeśli zmienisz nazwę pliku w projekcie platformy, możesz uzyskać zarówno <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>, ale w przypadku zmiany nazwy pliku w projekcie udostępnionym, otrzymasz tylko <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>.  
   
-     Aby śledzić zmiany w elementach projektu, które ułatwią Ci obsługę zdarzenia elementu projektu obiektu DTE (te znalezione w <xref:EnvDTE.ProjectItemsEventsClass>). Jednak jeśli obsługi dużej liczby zdarzeń, możesz ją uzyskać lepszą wydajność obsługi zdarzeń w <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>. W tym instruktażu przedstawiono tylko zdarzenia hierarchii i zdarzenia DTE. W ramach tej procedury dodasz odbiornik zdarzeń do projektu udostępnionego i projekt platformy. Następnie po zmianie nazwy jeden plik w projekcie udostępnionym i inny plik w projekcie platformy, widać zdarzenia, które są uruchamiane dla każdej operacji zmiany nazwy.  
+      Aby śledzić zmiany w elementach projektu, które ułatwią Ci obsługę zdarzenia elementu projektu obiektu DTE (te znalezione w <xref:EnvDTE.ProjectItemsEventsClass>). Jednak jeśli obsługi dużej liczby zdarzeń, możesz ją uzyskać lepszą wydajność obsługi zdarzeń w <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>. W tym instruktażu przedstawiono tylko zdarzenia hierarchii i zdarzenia DTE. W ramach tej procedury dodasz odbiornik zdarzeń do projektu udostępnionego i projekt platformy. Następnie po zmianie nazwy jeden plik w projekcie udostępnionym i inny plik w projekcie platformy, widać zdarzenia, które są uruchamiane dla każdej operacji zmiany nazwy.  
   
-     W ramach tej procedury dodasz odbiornik zdarzeń do projektu udostępnionego i projekt platformy. Następnie po zmianie nazwy jeden plik w projekcie udostępnionym i inny plik w projekcie platformy, widać zdarzenia, które są uruchamiane dla każdej operacji zmiany nazwy.  
+      W ramach tej procedury dodasz odbiornik zdarzeń do projektu udostępnionego i projekt platformy. Następnie po zmianie nazwy jeden plik w projekcie udostępnionym i inny plik w projekcie platformy, widać zdarzenia, które są uruchamiane dla każdej operacji zmiany nazwy.  
   
-2.  Dodaj odbiornik zdarzeń. Dodaj nowy plik klasy do projektu i wywołać go HierarchyEventListener.cs.  
+2. Dodaj odbiornik zdarzeń. Dodaj nowy plik klasy do projektu i wywołać go HierarchyEventListener.cs.  
   
-3.  Otwórz plik HierarchyEventListener.cs i dodaj następujące instrukcje using:  
+3. Otwórz plik HierarchyEventListener.cs i dodaj następujące instrukcje using:  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    using Microsoft.VisualStudio;  
-    using System.IO;  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   using Microsoft.VisualStudio;  
+   using System.IO;  
   
-    ```  
+   ```  
   
-4.  Masz `HierarchyEventListener` implementacji klasy <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
+4. Masz `HierarchyEventListener` implementacji klasy <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    { }  
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   { }  
   
-    ```  
+   ```  
   
-5.  Implementowanie członkowie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>, jak w poniższym kodzie.  
+5. Implementowanie członkowie <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>, jak w poniższym kodzie.  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    {  
-        private IVsHierarchy hierarchy;  
-        IVsOutputWindowPane output;   
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   {  
+       private IVsHierarchy hierarchy;  
+       IVsOutputWindowPane output;   
   
-        internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
-             this.hierarchy = hierarchy;  
-             this.output = outputWindow;  
-        }  
+       internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
+            this.hierarchy = hierarchy;  
+            this.output = outputWindow;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
-    }  
+       int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
+   }  
   
-    ```  
+   ```  
   
-6.  W tej samej klasie dodać innego programu obsługi zdarzeń dla zdarzenia DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, która pojawia się w każdym przypadku, gdy element projektu została zmieniona.  
+6. W tej samej klasie dodać innego programu obsługi zdarzeń dla zdarzenia DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, która pojawia się w każdym przypadku, gdy element projektu została zmieniona.  
   
-    ```csharp  
-    public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
-    {  
-        output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
-             oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
-    }  
-    ```  
+   ```csharp  
+   public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
+   {  
+       output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
+            oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
+   }  
+   ```  
   
-7.  Zarejestruj się w przypadku zdarzeń hierarchii. Musisz zarejestrować się osobno dla każdego projektu, które są śledzone. Dodaj następujący kod w `ShowMessageBox`, jeden dla projektu udostępnionego, a drugi dla jednego z projektów platformy.  
+7. Zarejestruj się w przypadku zdarzeń hierarchii. Musisz zarejestrować się osobno dla każdego projektu, które są śledzone. Dodaj następujący kod w `ShowMessageBox`, jeden dla projektu udostępnionego, a drugi dla jednego z projektów platformy.  
   
-    ```csharp  
-    // hook up the event listener for hierarchy events on the shared project  
-    HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
-    uint cookie1;  
-    sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
+   ```csharp  
+   // hook up the event listener for hierarchy events on the shared project  
+   HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
+   uint cookie1;  
+   sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
   
-    // hook up the event listener for hierarchy events on the   
-    active project  
-    HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
-    uint cookie2;  
-    activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
-    ```  
+   // hook up the event listener for hierarchy events on the   
+   active project  
+   HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
+   uint cookie2;  
+   activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
+   ```  
   
-8.  Zamów zdarzenie elementu projektu obiektu DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>. Dodaj następujący kod po podpiąć drugiego odbiornika.  
+8. Zamów zdarzenie elementu projektu obiektu DTE <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>. Dodaj następujący kod po podpiąć drugiego odbiornika.  
   
-    ```csharp  
-    // hook up DTE events for project items  
-    Events2 dteEvents = (Events2)dte.Events;  
-    dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
+   ```csharp  
+   // hook up DTE events for project items  
+   Events2 dteEvents = (Events2)dte.Events;  
+   dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
   
-    ```  
+   ```  
   
 9. Modyfikowanie udostępnionego elementu. Nie można zmodyfikować udostępnione elementy w projekcie platformy; Zamiast tego należy je zmodyfikować w projekcie udostępnionym, który jest rzeczywista właścicielem tych elementów. Możesz pobrać odpowiedni identyfikator elementu w ramach projektu udostępnionego z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, nadając mu pełna ścieżka udostępnionego elementu. Następnie można zmodyfikować udostępniony element. Zmiana jest propagowana do projektów platformy.  
   

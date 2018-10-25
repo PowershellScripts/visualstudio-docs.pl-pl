@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 47dc7d38a2ae9b842891d2e36aebd9b009297cbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512174"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817044"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>Konfigurowanie i używanie zasady działania analizatora Roslyn
 
@@ -121,15 +121,15 @@ Istnieje wiele sposobów, aby pominąć naruszeń reguł:
 
 Można pominąć Diagnostyka jednej lub wielu z **lista błędów** , wybierając do pominięcia, a następnie kliknij prawym przyciskiem myszy i wybierając **Pomiń** > **w źródłowej**  lub **Pomiń** > **w pliku pominięć**.
 
-   - Jeśli wybierzesz **w źródłowej**, **podgląd zmian** okno dialogowe otwiera i pokazuje jego podgląd języka C# [ostrzeżenie #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) lub Visual Basic [ostrzeżenie #Disable](/dotnet/visual-basic/language-reference/directives/directives) dyrektywę, który zostanie dodany do kodu źródłowego.
+- Jeśli wybierzesz **w źródłowej**, **podgląd zmian** okno dialogowe otwiera i pokazuje jego podgląd języka C# [ostrzeżenie #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) lub Visual Basic [ostrzeżenie #Disable](/dotnet/visual-basic/language-reference/directives/directives) dyrektywę, który zostanie dodany do kodu źródłowego.
 
-      ![Dodawanie ostrzeżenie #pragma w pliku kodu w wersji zapoznawczej](media/pragma-warning-preview.png)
+   ![Dodawanie ostrzeżenie #pragma w pliku kodu w wersji zapoznawczej](media/pragma-warning-preview.png)
 
-   - Jeśli wybierzesz **w pliku pominięć**, **podgląd zmian** okno dialogowe otwiera i pokazuje jego podgląd <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybut, który jest dodawany do pliku pominięć globalnych.
+- Jeśli wybierzesz **w pliku pominięć**, **podgląd zmian** okno dialogowe otwiera i pokazuje jego podgląd <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atrybut, który jest dodawany do pliku pominięć globalnych.
 
-      ![Dodawanie atrybutu SuppressMessage do pliku pominięć w wersji zapoznawczej](media/preview-changes-in-suppression-file.png)
+   ![Dodawanie atrybutu SuppressMessage do pliku pominięć w wersji zapoznawczej](media/preview-changes-in-suppression-file.png)
 
-   W **podgląd zmian** okno dialogowe, wybierz opcję **Zastosuj**.
+W **podgląd zmian** okno dialogowe, wybierz opcję **Zastosuj**.
 
 **Lista błędów** Wyświetla diagnostyki lub reguła naruszeń z obu analizy kodu na żywo i kompilacji. Ponieważ diagnostyki kompilacji mogą być nieaktualne, na przykład, jeśli zakończeniu edycji kodu, aby naprawić naruszenie, ale nie został ponownie skompilowany, nie można ukryć te Diagnostyka z **lista błędów**. Jednak diagnostyka z analizy na żywo lub funkcja IntelliSense, są zawsze aktualne z bieżącego źródła i można pominąć z **lista błędów**. Wyłączenie opcji pomijania w menu kliknij prawym przyciskiem myszy lub kontekstu, prawdopodobnie masz jedną lub więcej kompilacji diagnostyki w zaznaczonym obszarze. Aby wykluczyć diagnostyki kompilacji z wyboru, przełączać **lista błędów** Filtr źródła z **kompilacja + IntelliSense** do **tylko Intellisense**. Następnie wybierz diagnostyki, które chcesz pominąć i postępować zgodnie z opisem w poprzedniej sekcji.
 

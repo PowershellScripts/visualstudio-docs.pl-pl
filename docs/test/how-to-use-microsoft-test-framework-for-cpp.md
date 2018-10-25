@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6087b864ba497d3754adfa01dc0168da5317aa5e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 53243502e0368d3cb988950edf266cc56adbaa22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379556"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812455"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Użyj testów jednostkowych Microsoft Framework dla języka C++ w programie Visual Studio
 
@@ -28,20 +28,22 @@ Zazwyczaj uruchamiasz swój kod testu we własnym projekcie, w tym samym rozwią
 
 W niektórych przypadkach, na przykład podczas testowania — eksportowane funkcje w bibliotece DLL może być konieczne Utwórz testy w tym samym projekcie jako program, które testujesz. Pisanie testów jednostkowych w tym samym projekcie:
 
-1.  Zmodyfikuj właściwości projektu, aby uwzględnić pliki nagłówkowe i bibliotek, które są wymagane dla testów jednostkowych.
+1. Zmodyfikuj właściwości projektu, aby uwzględnić pliki nagłówkowe i bibliotek, które są wymagane dla testów jednostkowych.
 
-    1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu dla programu, które testujesz, a następnie wybierz **właściwości** > **właściwości konfiguracji**  >  **Katalogi VC ++**.
+   1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu dla programu, które testujesz, a następnie wybierz **właściwości** > **właściwości konfiguracji**  >  **Katalogi VC ++**.
 
-    3.  Kliknij strzałkę w dół w następujących wierszach i wybierz polecenie **<Edit>** :
+   2. Kliknij strzałkę w dół w następujących wierszach i wybierz polecenie **<Edit>** :
 
-        |Katalog|Właściwość|
-        |-|-|
-        |**Katalogi plików nagłówkowych**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
-        |**Katalogi bibliotek**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
-2.  Dodaj plik testu jednostkowego języka C++:
+      | Katalog | Właściwość |
+      |-| - |
+      | **Katalogi plików nagłówkowych** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
+      | **Katalogi bibliotek** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-    -   Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy element** > **testu jednostkowego języka C++**.
+
+2. Dodaj plik testu jednostkowego języka C++:
+
+   -   Kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz polecenie **Dodaj** > **nowy element** > **testu jednostkowego języka C++**.
 
 ## <a name="write-the-tests"></a>Pisanie testów
 
@@ -53,13 +55,13 @@ Użyj metod statycznych w [Asercja](microsoft-visualstudio-testtools-cppunittest
 
 ## <a name="run-the-tests"></a>Uruchom testy
 
-1.  Na **testu** menu, wybierz **Windows** > **Eksplorator testów**.
+1. Na **testu** menu, wybierz **Windows** > **Eksplorator testów**.
 2. Jeśli wszystkie testy nie są widoczne w oknie, tworzenia projektu badania, klikając prawym przyciskiem myszy jego węzła w **Eksploratora rozwiązań** i wybierając pozycję **kompilacji** lub **odbudować**.
 
-2.  W **Eksplorator testów**, wybierz **Uruchom wszystkie**, lub wybierz określonych testów, które chcesz uruchomić. Kliknij prawym przyciskiem myszy na test dla innych opcji, w tym uruchamianie w trybie debugowania, z punktami przerwania jest włączony.
-3. W **okno danych wyjściowych** wybierz **testy** w rozwijanego wyświetlanie komunikatów o napisanych przez `Logger` klasy:
+3. W **Eksplorator testów**, wybierz **Uruchom wszystkie**, lub wybierz określonych testów, które chcesz uruchomić. Kliknij prawym przyciskiem myszy na test dla innych opcji, w tym uruchamianie w trybie debugowania, z punktami przerwania jest włączony.
+4. W **okno danych wyjściowych** wybierz **testy** w rozwijanego wyświetlanie komunikatów o napisanych przez `Logger` klasy:
 
-  ![Okno danych wyjściowych C++ wyświetlanie wiadomości testowe](media/cpp-test-output-window.png)
+   ![Okno danych wyjściowych C++ wyświetlanie wiadomości testowe](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>Definiowanie cech, aby włączyć grupowanie
 
@@ -90,7 +92,7 @@ TEST_METHOD(Method1)
 Następujące cechy wstępnie zdefiniowane, znajdują się w `CppUnitTest.h`. Aby uzyskać więcej informacji, zobacz [Microsoft Framework testów jednostkowych dla odwołania do interfejsu API języka C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
 |Macro|Opis|
-|-----------|-----------------|
+|-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Użyj makra test_method_attribute, aby zdefiniować cechę.|
 |`TEST_OWNER(ownerAlias)`|Użyj wstępnie zdefiniowana cecha właściciela do określania właściciela metody badania.|
 |`TEST_PRIORITY(priority)`|Użyj wstępnie zdefiniowanego cecha priorytetu jest używana do przypisywania względnych priorytetów do metod badania.|

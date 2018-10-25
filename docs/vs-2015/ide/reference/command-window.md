@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0f2149c1645639111e9e050b88632ed911d1157b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b83a9e86aea02e27242a0c1f02ca3f8459152214
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248576"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870188"
 ---
 # <a name="command-window"></a>Okno polecenia
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,22 +101,22 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   
  W tym przykładzie  
   
--   `Edit.ReplaceInFiles` polecenie  
+- `Edit.ReplaceInFiles` polecenie  
   
--   `/case` i `/pattern:regex` parametry (poprzedzony znakiem ukośnika [/])  
+- `/case` i `/pattern:regex` parametry (poprzedzony znakiem ukośnika [/])  
   
--   `regex` jest to wartość `/pattern` przełączyć; `/case` przełącznik nie ma wartości  
+- `regex` jest to wartość `/pattern` przełączyć; `/case` przełącznik nie ma wartości  
   
--   `var[1-3]+` i `oldpar` parametrów  
+- `var[1-3]+` i `oldpar` parametrów  
   
-    > [!NOTE]
-    >  Polecenia, parametr, przełącznika lub wartość, która zawiera spacje, musi mieć podwójny cudzysłów po obu stronach.  
+  > [!NOTE]
+  >  Polecenia, parametr, przełącznika lub wartość, która zawiera spacje, musi mieć podwójny cudzysłów po obu stronach.  
   
- Pozycja przełączników i parametry mogą być stosowane zamiennie za darmo w wierszu polecenia, z wyjątkiem produktów [powłoki](../../ide/reference/shell-command.md) polecenia, które wymaga jej przełączniki i parametry w określonej kolejności.  
+  Pozycja przełączników i parametry mogą być stosowane zamiennie za darmo w wierszu polecenia, z wyjątkiem produktów [powłoki](../../ide/reference/shell-command.md) polecenia, które wymaga jej przełączniki i parametry w określonej kolejności.  
   
- Prawie każdy przełącznik obsługiwanych przez polecenie ma dwie formy: krótka (jeden znak) i długich fragmentów. W grupie można łączyć wielu przełącznikach krótkiej postaci. Na przykład `/p /g /m` może też wyrażona jako `/pgm`.  
+  Prawie każdy przełącznik obsługiwanych przez polecenie ma dwie formy: krótka (jeden znak) i długich fragmentów. W grupie można łączyć wielu przełącznikach krótkiej postaci. Na przykład `/p /g /m` może też wyrażona jako `/pgm`.  
   
- Jeśli krótkich przełączniki są łączone w grupie, danej wartości tej wartości ma zastosowanie do każdego przełącznika. Na przykład `/pgm:123` jest równa `/p:123 /g:123 /m:123`. Błąd występuje, jeśli dowolny z przełączników w grupie nie akceptuje wartości.  
+  Jeśli krótkich przełączniki są łączone w grupie, danej wartości tej wartości ma zastosowanie do każdego przełącznika. Na przykład `/pgm:123` jest równa `/p:123 /g:123 /m:123`. Błąd występuje, jeśli dowolny z przełączników w grupie nie akceptuje wartości.  
   
 ## <a name="escape-characters"></a>Znaki specjalne  
  W wierszu polecenia znak karetki (^) oznacza, że znak natychmiast po jego jest interpretowany dosłownie, a nie jako znak kontrolny. Może to służyć do osadzania prostych znaków cudzysłowu ("), spacji, ukośników wiodących, daszków lub innych znaków literałowych w wartości parametru lub przełącznika, z wyjątkiem nazw przełączników. Na przykład  

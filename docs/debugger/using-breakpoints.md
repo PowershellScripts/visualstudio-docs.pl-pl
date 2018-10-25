@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a84c87ecc3c5ca0ab1d2fe52e1ff56265c9365d
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816687"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Używanie punktów przerwania w debugerze programu Visual Studio
 Punkty przerwania są jednym z najważniejszych technik debugowania dostępnych w przyborniku dla deweloperów. Ustaw punkty przerwania, wszędzie tam, gdzie chcesz wstrzymać wykonanie w debugerze. Na przykład można wyświetlić stan zmiennych kodu lub Spójrz na stos wywołań w niektórych punkcie przerwania.  
@@ -203,15 +203,15 @@ Etykiety można użyć do sortowania i filtrowania listy punktów przerwania w *
 
 **Aby ustawić warunek punktu przerwania:**
 
-1.  Kliknij prawym przyciskiem myszy symbol punktu przerwania i wybierz **warunki**. Lub ustaw kursor myszy symbol punktu przerwania, wybierz opcję **ustawienia** ikonę, a następnie wybierz **warunki** w **ustawienia punktu przerwania** okna.  
+1. Kliknij prawym przyciskiem myszy symbol punktu przerwania i wybierz **warunki**. Lub ustaw kursor myszy symbol punktu przerwania, wybierz opcję **ustawienia** ikonę, a następnie wybierz **warunki** w **ustawienia punktu przerwania** okna.  
 
-    Można również ustawić warunki, w **punktów przerwania** okna, kliknij prawym przyciskiem myszy punkt przerwania i wybierając **ustawienia**, a następnie wybierając **warunki**. 
+   Można również ustawić warunki, w **punktów przerwania** okna, kliknij prawym przyciskiem myszy punkt przerwania i wybierając **ustawienia**, a następnie wybierając **warunki**. 
   
-  ![Ustawienia punktu przerwania](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+   ![Ustawienia punktu przerwania](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
-1. Z listy rozwijanej wybierz **wyrażenia warunkowego**, **liczba trafień**, lub **filtru**i odpowiednio ustawić wartości. 
+2. Z listy rozwijanej wybierz **wyrażenia warunkowego**, **liczba trafień**, lub **filtru**i odpowiednio ustawić wartości. 
   
-1. Wybierz **Zamknij** lub naciśnij **Ctrl**+**Enter** zamknąć **ustawienia punktu przerwania** okna. Lub z **punktów przerwania** wybierz **OK** aby zamknąć okno dialogowe. 
+3. Wybierz **Zamknij** lub naciśnij **Ctrl**+**Enter** zamknąć **ustawienia punktu przerwania** okna. Lub z **punktów przerwania** wybierz **OK** aby zamknąć okno dialogowe. 
 
 Punkty przerwania z zestawem warunków są wyświetlane razem ze **+** symbol w kodzie źródłowym i **punktów przerwania** systemu windows. 
 

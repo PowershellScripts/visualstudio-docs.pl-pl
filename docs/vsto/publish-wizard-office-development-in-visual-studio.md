@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edd88755fbc3065cf6d9ff95b9859b7e70393300
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9b7d898f4be4a314a8f046399f9d82ca9a9a84f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811584"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Kreator publikacji (Office development w programie Visual Studio)
   Użyj **Kreatora publikacji** Aby skopiować pliki rozwiązania do określonej lokalizacji, Utwórz pliki manifestu i Utwórz program instalacyjny.  
@@ -37,17 +37,17 @@ ms.locfileid: "35676937"
   
 ## <a name="where-do-you-want-to-publish-the-application"></a>Gdzie chcesz opublikować aplikację?  
  **Określ lokalizację do publikowania tej aplikacji**  
- Wymagane. Lokalizacji publikowania jest katalogiem gdzie **Kreatora publikacji** kopiuje pliki rozwiązania, takie jak manifestów, zestawy, tymczasowy certyfikat i innych plików z kompilacji. Musi mieć dostęp do zapisu do tego katalogu.  
+ Wymagana. Lokalizacji publikowania jest katalogiem gdzie **Kreatora publikacji** kopiuje pliki rozwiązania, takie jak manifestów, zestawy, tymczasowy certyfikat i innych plików z kompilacji. Musi mieć dostęp do zapisu do tego katalogu.  
   
  Wpisz lokalizację jako ścieżka na dysku, udziału plików, witryny FTP lub adres URL witryny sieci web, lub kliknij przycisk **Przeglądaj** przycisk, aby wyszukać lokalizację. Ścieżka może być w tych formatach:  
   
--   Względna lub bezwzględna ścieżka w standardzie Windows formatowania, takich jak *C:\Deploy\MyApplication* lub *\MyApplication*.  
+- Względna lub bezwzględna ścieżka w standardzie Windows formatowania, takich jak *C:\Deploy\MyApplication* lub *\MyApplication*.  
   
--   Ścieżka Universal Naming Convention (UNC), takie jak  *\\\ServerName\MyApplication\\*.  
+- Ścieżka Universal Naming Convention (UNC), takie jak  *\\\ServerName\MyApplication\\*.  
   
--   Adres URL sieci Web site, takich jak http://www.microsoft.com/MyApplication.  
+- Adres URL sieci Web site, takich jak http://www.microsoft.com/MyApplication.  
   
- Domyślnie jest lokalizacja publikowania *http://localhost/projectname/* usługi IIS są zainstalowane, czy katalog publish\, jeśli to zrobisz nie IIS zainstalowany.  
+  Domyślnie jest lokalizacja publikowania *http://localhost/projectname/* usługi IIS są zainstalowane, czy katalog publish\, jeśli to zrobisz nie IIS zainstalowany.  
   
 > [!NOTE]  
 >  Jeśli na komputerze docelowym systemem Windows Vista jest więcej istotnych kwestii. Musisz być administratorem na komputerze Windows Vista do korzystania z opcji publikowania lokalnych. Ponadto domyślna lokalizacja to zawsze *publikowania\\*  katalogu, niezależnie od tego, czy zostały zainstalowane usługi IIS.  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_guid | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_guid — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e16fa27bf7938a0e7e6202daa4284cd3f2e6634b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e9498e8795daf5e1d566782461f2505bc8753135
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884384"
 ---
 # <a name="idiasymbolgetguid"></a>IDiaSymbol::get_guid
 Pobiera symbolu Unikatowy identyfikator globalny (GUID).  
@@ -37,10 +37,10 @@ HRESULT get_guid (
  [out] Zwraca identyfikator GUID symbolu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   

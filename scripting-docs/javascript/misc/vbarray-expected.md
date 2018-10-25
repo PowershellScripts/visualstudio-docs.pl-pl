@@ -21,25 +21,25 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9b07c5e08e4178c9c31045317627424f5192f5e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788794"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844149"
 ---
 # <a name="vbarray-expected"></a>Oczekiwano VBArray
-Należy podać obiekt, który nie był safeArray Visual Basic, gdy oczekiwano jednej.  
+Należy podać obiekt, który nie był safeArray języka Visual Basic, gdy oczekiwano jednej.  
   
 ```  
 new VBArray(safeArray);  
 ```  
   
- VBArrays są tylko do odczytu i nie można utworzyć bezpośrednio. SafeArray argument jest wartością VBArray i musi mieć wartość VBArray uzyskane przed przesłaniem do `VBArray` konstruktora. To jest możliwe tylko przez pobieranie wartości z istniejących ActiveX lub innego obiektu.  
+ VBArrays są przeznaczone tylko do odczytu i nie można utworzyć bezpośrednio. SafeArray argument jest wartością VBArray i uzyskać wartość VBArray przed przesłaniem do `VBArray` konstruktora. Tylko można to zrobić poprzez pobranie wartości z istniejących ActiveX lub innego obiektu.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Upewnij się, możesz przekazać tylko **VBArray** obiekty do **VBArray** konstruktora.  
+-   Upewnij się, należy przekazać tylko **VBArray** obiekty do **VBArray** konstruktora.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Obiekt VBArray](../../javascript/reference/vbarray-object-javascript.md)   
+ [VbArray — obiekt](../../javascript/reference/vbarray-object-javascript.md)   
  [Używanie tablic](../../javascript/advanced/using-arrays-javascript.md)

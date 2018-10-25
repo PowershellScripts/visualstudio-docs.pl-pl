@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7347ad8bb8bbe39208d8d4d562ac580d520cc5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a560b9c1f576ee35acec4a95ef1c0a3870423680
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114751"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860581"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
-Pobiera nazwę i identyfikator GUID aparatu debugowania (DE) uruchomieniem tego programu.  
+Pobiera nazwę i identyfikator GUID aparat debugowania (DE), program został uruchomiony.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,16 +43,16 @@ int GetEngineInfo(
   
 #### <a name="parameters"></a>Parametry  
  `pbstrEngine`  
- [out] Zwraca nazwę DE uruchomieniem tego programu.  
+ [out] Zwraca nazwę DE program został uruchomiony.  
   
  `pguidEngine`  
- [out] Zwraca identyfikator GUID DE uruchomieniem tego programu.  
+ [out] Zwraca identyfikator GUID DE program został uruchomiony.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Każdy DE definiuje własnego identyfikatora GUID do identyfikacji.  
+ DE każdy definiuje swój własny identyfikator GUID do identyfikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

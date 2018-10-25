@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d641fa8dc0f999d55d177e9a3f48e0227e17f159
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d82df4cef343965d9fdf88357154a9a3a399d9eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112067"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842160"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
-Tworzy obiekt z żaden konstruktor.  
+Tworzy obiekt, za pomocą nie konstruktora.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -49,10 +49,10 @@ int CreateObjectNoConstructor(
  [out] Zwraca [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący nowo utworzony obiekt.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wywołanie tej metody, aby utworzyć obiekt, który reprezentuje wystąpienie struktury lub typ złożony (który nie wymaga konstruktora) będący parametr do funkcji, która jest reprezentowana przez [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfejsu.  
+ Wywołaj tę metodę, aby utworzyć obiekt, który reprezentuje wystąpienie elementu struktury lub typ złożony (który nie wymaga konstruktora), jest to parametr do funkcji, która jest reprezentowana przez [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfejsu.  
   
  Jeśli parametr obiektu wymaga konstruktora, wywołaj [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) metody.  
   

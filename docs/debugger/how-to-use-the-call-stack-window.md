@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 168f89512dee8331448db1becabdc7262b5e4744
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d390ba4cd47297c6d653cb68693439fd01c16815
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774736"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853613"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>Wyświetl stos wywołań i korzystanie z okna stosu wywołań w debugerze programu Visual Studio
 
@@ -45,17 +45,17 @@ Gdy [symboli debugowania](#bkmk_symbols) nie są dostępne dla części stosu wy
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
->  [!NOTE]
+> [!NOTE]
 > **Stos wywołań** jest podobne do perspektywy debugowania w niektórych środowiskach IDE, takich jak Eclipse. 
-
+> 
 > [!NOTE]
 >  Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w tym miejscu, w zależności od ustawień aktywnych lub wersji. Aby zmienić swoje ustawienia, wybierz pozycję **Import i eksport ustawień** na **narzędzia** menu.  Zobacz [personalizowanie środowiska IDE](../ide/personalizing-the-visual-studio-ide.md)
   
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>Wyświetl stos wywołań, znajduje się w debugerze 
   
--   Podczas debugowania w **debugowania** menu, wybierz opcję **Windows > stos wywołań**.
+- Podczas debugowania w **debugowania** menu, wybierz opcję **Windows > stos wywołań**.
 
- ![Okno stosu wywołań](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+  ![Okno stosu wywołań](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
 Żółta strzałka identyfikuje ramkę stosu, w którym aktualnie znajduje się wskaźnik wykonania. Domyślnie to jest ramka stosu, w której informacje pojawią się w źródle, **lokalne**, **Autos**, **Obejrzyj**, i **dezasemblacji** systemu windows . Jeśli chcesz zmienić kontekst debugera do innej ramki na stosie, użytkownik może zrobić, [przełączanie do innej ramki stosu](#bkmk_switch).   
   

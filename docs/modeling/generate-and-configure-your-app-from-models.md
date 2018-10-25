@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b4ab0a7cf012d2230437bceb96da80c78a4b493a
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 78dc0907fa717f61b6cf883994a3ac2fd6072ba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47858506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872801"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generowanie i konfigurowanie aplikacji na podstawie modeli
 Można wygenerować lub skonfigurować poszczególnych części aplikacji z modelu.
@@ -24,26 +24,26 @@ Można wygenerować lub skonfigurować poszczególnych części aplikacji z mode
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generowanie kodu aplikacji na podstawie modelu
  Najprostszym sposobem, aby wygenerować kod jest przy użyciu szablonów tekstowych. Istnieje możliwość wygenerowania kodu, w tym samym rozwiązaniu Visual Studio, w którym są przechowywane modelu. Aby uzyskać więcej informacji, zobacz:
 
--   [Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+- [Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
--   [Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)
+- [Generowanie kodu z języka specyficznego dla domeny](../modeling/generating-code-from-a-domain-specific-language.md)
 
- Ta metoda jest łatwy do zastosowania przyrostowo. Uruchom z aplikacją, która działa tylko dla określonych przypadków i wybierz kilka części, którą chcesz się nieznacznie różnić od modelu. Zmień nazwę plików źródłowych z tych elementów, dzięki czemu staną się tekst, pliki szablonów (.tt). W tym momencie .cs pliki źródłowe zostaną automatycznie wygenerowane z plików szablonów, dzięki czemu aplikacja będzie działać tak jak poprzednio.
+  Ta metoda jest łatwy do zastosowania przyrostowo. Uruchom z aplikacją, która działa tylko dla określonych przypadków i wybierz kilka części, którą chcesz się nieznacznie różnić od modelu. Zmień nazwę plików źródłowych z tych elementów, dzięki czemu staną się tekst, pliki szablonów (.tt). W tym momencie .cs pliki źródłowe zostaną automatycznie wygenerowane z plików szablonów, dzięki czemu aplikacja będzie działać tak jak poprzednio.
 
- Następnie możesz wykonać jedną z części pakietu kodu i Zamień wyrażenia szablonu tekstu, który odczytuje model i generuje część pliku źródłowego. Co najmniej jedną wartość modelu będzie generował oryginalne źródło, aby ponownie uruchomić aplikację i będzie ona działać tak jak poprzednio. Po przetestowaniu modelu różnych wartości, możesz przejść do wstawienia wyrażeń szablonu w innej części kodu.
+  Następnie możesz wykonać jedną z części pakietu kodu i Zamień wyrażenia szablonu tekstu, który odczytuje model i generuje część pliku źródłowego. Co najmniej jedną wartość modelu będzie generował oryginalne źródło, aby ponownie uruchomić aplikację i będzie ona działać tak jak poprzednio. Po przetestowaniu modelu różnych wartości, możesz przejść do wstawienia wyrażeń szablonu w innej części kodu.
 
- Ta metoda przyrostowe oznacza, że generowanie kodu zwykle podejścia o niskim ryzyku. Wynikowy aplikacje zwykle wykonać prawie oraz odręcznej wersji.
+  Ta metoda przyrostowe oznacza, że generowanie kodu zwykle podejścia o niskim ryzyku. Wynikowy aplikacje zwykle wykonać prawie oraz odręcznej wersji.
 
- Jednak w przypadku uruchomienia z istniejącą aplikacją, może się okazać, że wiele refaktoryzacji jest wymagany do oddzielania różne zachowania, które są zarządzane przez model, dzięki czemu mogą być niezależne zróżnicowane. Firma Microsoft zaleca oceny ten aspekt aplikacji, podczas szacowania kosztów projektu.
+  Jednak w przypadku uruchomienia z istniejącą aplikacją, może się okazać, że wiele refaktoryzacji jest wymagany do oddzielania różne zachowania, które są zarządzane przez model, dzięki czemu mogą być niezależne zróżnicowane. Firma Microsoft zaleca oceny ten aspekt aplikacji, podczas szacowania kosztów projektu.
 
 ## <a name="configuring-your-application-from-a-model"></a>Konfigurowanie własnej aplikacji z modelu
  Jeśli chcesz zróżnicować zachowanie aplikacji w czasie wykonywania, nie można użyć generowania kodu, który generuje kod źródłowy, zanim aplikacja jest kompilowana. Zamiast tego można zaprojektować aplikację do odczytania modelu i różnią się odpowiednio jego zachowanie. Aby uzyskać więcej informacji, zobacz:
 
--   [Instrukcje: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Instrukcje: Otwieranie modelu z pliku w kodzie programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
- Ta metoda również będą stosowane przyrostowo, ale ma więcej pracy na początku. Musisz napisać kod, który będzie odczytania modelu i skonfigurować strukturę, która zezwala na jego wartości umożliwić dostęp do zmiennej części. Zmienna części ogólnego jest droższe niż generowania kodu.
+  Ta metoda również będą stosowane przyrostowo, ale ma więcej pracy na początku. Musisz napisać kod, który będzie odczytania modelu i skonfigurować strukturę, która zezwala na jego wartości umożliwić dostęp do zmiennej części. Zmienna części ogólnego jest droższe niż generowania kodu.
 
- Aplikacja ogólna zwykle wykonuje mniej również niż ich odpowiedniki określone. Jeśli wydajność ma kluczowe znaczenie podczas, plan projektu powinna zawierać oceny tego ryzyka.
+  Aplikacja ogólna zwykle wykonuje mniej również niż ich odpowiedniki określone. Jeśli wydajność ma kluczowe znaczenie podczas, plan projektu powinna zawierać oceny tego ryzyka.
 
 ## <a name="developing-a-derived-application"></a>Opracowywanie aplikacji pochodne
  Ogólne wytyczne mogą się okazać przydatne.

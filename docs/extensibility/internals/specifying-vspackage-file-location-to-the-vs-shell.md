@@ -1,5 +1,5 @@
 ---
-title: Określanie lokalizacji pliku pakiet VSPackage powłoki programu VS | Dokumentacja firmy Microsoft
+title: Określanie lokalizacji pliku pakietu VSPackage dla powłoki VS Shell | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,22 +14,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a4270fbd723e6c5aa6f16066066e0ca4ac74e5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 63948a464a43284f3b9205d185e4b0a4e39155e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132005"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856239"
 ---
-# <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Określanie lokalizacji pliku pakiet VSPackage powłoki programu VS
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] musi mieć możliwość zlokalizować zestawu DLL załadować pakiet VSPackage. Można znaleźć go na różne sposoby, zgodnie z opisem w poniższej tabeli.  
-  
-|Metoda|Opis|  
-|------------|-----------------|  
-|Użyj klucza rejestru CodeBase.|Klucz CodeBase może służyć do kierowania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] można załadować zestawu pakiet VSPackage z dowolną pliku w pełni kwalifikowaną ścieżkę. Wartość klucza powinien być ścieżka do pliku DLL. Jest to najlepszy sposób, aby mieć [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] załadować zestawu z pakietu. Ta metoda jest czasami określane jako "CodeBase/private instalacji directory technika." Podczas rejestracji wartość codebase jest przekazywana do klas atrybutów rejestracji wystąpienia <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext> typu.|  
-|Umieść biblioteki DLL do **PrivateAssemblies** katalogu.|Umieść zestawu w **PrivateAssemblies** podkatalog [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] katalogu. Zestawy znajduje się w **PrivateAssemblies** są wykrywane automatycznie, ale nie są widoczne w **Dodaj odwołania** okno dialogowe. Różnica między **PrivateAssemblies** i **PublicAssemblies** jest to, że zestawy w **PublicAssemblies** znajduje się w **Dodaj odwołania**  okno dialogowe. Jeśli wybrano opcję Użyj techniki "katalog instalacyjny prywatnych/CodeBase", a następnie należy zainstalować w **PrivateAssemblies** katalogu.|  
-|Użyj zestawu z silną nazwą i zestawu klucza rejestru.|Klucz zestawu może służyć do kierowania jawnie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] załadować silne o nazwie zestawu pakiet VSPackage. Wartość klucza należy silnej nazwy zestawu.|  
-|Umieść biblioteki DLL do **PublicAssemblies** katalogu.|Na koniec zestawu mogą również być umieszczane w **PublicAssemblies** podkatalogu. Zestawy znajduje się w **PublicAssemblies** są wykrywane automatycznie, a także będą wyświetlane w **Dodaj odwołania** okno dialogowe w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].<br /><br /> Zestawy pakiet VSPackage można umieścić wyłącznie w **PublicAssemblies** katalogu, jeśli zawierają one zarządzane składniki, które mają być ponownie używane przez innych pakiet VSPackage. Większość zestawów nie spełnia tego kryterium.|  
-  
+# <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Określanie lokalizacji pliku pakietu VSPackage dla powłoki VS Shell
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] musi mieć możliwość zlokalizować zestawu biblioteki DLL, można załadować pakietu VSPackage. Możesz znaleźć je na różne sposoby, zgodnie z opisem w poniższej tabeli.  
+
+
+| Metoda | Opis |
+| - | - |
+| Użyj klucza rejestru bazy kodu. | Klucz CodeBase może służyć do kierowania [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] można załadować zestawu pakietu VSPackage z dowolnym w pełni kwalifikowaną ścieżkę. Wartość klucza powinna być ścieżką pliku do biblioteki DLL. Jest to najlepszy sposób mają [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] załadować zestaw pakietów. Ta technika jest czasami określane jako "CodeBase/prywatny instalacji katalogu technika." Podczas rejestracji została przekazana wartość bazy kodu do klasy atrybutów rejestracji za pośrednictwem wystąpienia <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext> typu. |
+| Umieszczenie biblioteki DLL do **PrivateAssemblies** katalogu. | Umieszczenie zestawu w **PrivateAssemblies** podkatalog [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] katalogu. Zestawy znajdujące się w **PrivateAssemblies** są wykrywane automatycznie, ale nie są widoczne w **Add References** okno dialogowe. Różnica między **PrivateAssemblies** i **PublicAssemblies** jest fakt, że zestawy w **PublicAssemblies** są wymienione **Add References**  okno dialogowe. Jeśli wybierzesz nie należy używać techniki "CodeBase/prywatny katalog instalacji", a następnie należy zainstalować na **PrivateAssemblies** katalogu. |
+| Użyj zestawu z silną nazwą i zestawu klucza rejestru. | Klucz zestawu może służyć do kierowania jawnie [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] załadować silne silną pakietu VSPackage. Wartość klucza należy silną nazwę zestawu. |
+| Umieszczenie biblioteki DLL do **PublicAssemblies** katalogu. | Na koniec zestawu mogą również być umieszczane **PublicAssemblies** podkatalogu. Zestawy znajdujące się w **PublicAssemblies** są wykrywane automatycznie, a następnie pojawi się również w **Add References** okno dialogowe w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].<br /><br /> Zestawy pakietu VSPackage tylko powinny być umieszczone w **PublicAssemblies** katalogu, jeśli zawierają one zarządzane składniki, które mają być ponownie używane przez innych programistów pakietu VSPackage. Większość zestawów nie spełnia tego kryterium. |
+
 > [!NOTE]
->  Zestawy o silnych nazwach, podpisem używać dla wszystkich sieci zestawów zależnych. Te zestawy należy również zainstalować w własnego katalogu lub globalnej pamięci podręcznej zestawów (GAC). Chroni to przed powoduje konflikt z zestawów, które mają taką samą nazwę pliku podstawowego, znany jako powiązania nazwy niska.
+>  Na użytek zestawy o silnych nazwach, podpisem wszystkie zależne zestawy. Te zestawy należy również zainstalować w własnego katalogu lub globalnej pamięci podręcznej zestawów (GAC). Chroni to przed powoduje konflikt z zestawów, które mają taką samą nazwę pliku podstawowego, znane jako powiązania weak nazwy.

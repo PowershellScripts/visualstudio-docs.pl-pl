@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbcd41c44392ee342bfa26def5fbb60cd030d48b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3210d152001b7c2bf65103d3f846749676786f3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109601"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814834"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
-Pobiera obiekt, którego dotyczy ten alias.  
+Pobiera obiekt, który dotyczy tego aliasu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,7 +44,7 @@ int GetObject(
  [out] [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) reprezentuje ten alias.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)   

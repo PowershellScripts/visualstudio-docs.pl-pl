@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4fa433a3eb2318c36545a285cfd57386c169eb2
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 31856366712da0a2287f73906c6e3a5f81f63a00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857591"
 ---
 # <a name="customize-your-build"></a>Dostosowywanie kompilacji
 
@@ -46,13 +46,13 @@ Na przykład, jeśli chcesz włączyć wszystkie Twoje projekty dostęp do nowyc
 1. Utwórz nowy plik w folderze głównym repozytorium o nazwie *Directory.Build.props*.
 2. Dodaj następujący kod XML do pliku.
 
-  ```xml
-  <Project>
+   ```xml
+   <Project>
     <PropertyGroup>
       <Deterministic>true</Deterministic>
     </PropertyGroup>
-  </Project>
-  ```
+   </Project>
+   ```
 3. Uruchom program MSBuild. Importy istniejącego projektu *Microsoft.Common.props* i *Microsoft.Common.targets* znaleźć pliku i zaimportuj go.
 
 ### <a name="search-scope"></a>Zakres wyszukiwania

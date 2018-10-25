@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 370bb8d9194ff442a3e8674a95b67f4eec595d60
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370760"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865352"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Zbieranie informacji diagnostycznych za pomocą ustawień testów
 
@@ -42,7 +42,7 @@ Do uruchomienia danej jednostki, coded UI, wydajności sieci web lub testy obci�
 Poniższa tabela zawiera omówienie różnych sposobów, które można skonfigurować do użytku z rolami na komputerze lokalnym lub zdalnym adapterów danych diagnostycznych.
 
 |Adapter danych diagnostycznych, który jest używany w ustawieniach testu|Ręczne testy na komputerze lokalnym|Testy automatyczne|Testy ręczne: Zbieranie danych przy użyciu zestawu ról i środowiska|Uwagi|
-|----------------------------------------------------------|-----------------------------------|---------------------|------------------------------------------------------------------------------|-----------|
+|-|-|-|-|-|
 |**Serwer Proxy klienta ASP.NET dla IntelliTrace i wpływu Test:** ten serwer proxy umożliwia zbieranie informacji na temat połączeń http od klienta do serwera sieci web dla adapterów danych diagnostycznych IntelliTrace i badanie wpływu.|Tak|Tak|Tak|— Użyj tego tylko wtedy, gdy wybrano karty danych diagnostycznych IntelliTrace lub wpływ na testowanie dla roli klienta.|
 |**ASP.NET profiler:** można utworzyć ustawienie testu zawierające profilowania, ASP.NET, która zbiera dane dotyczące wydajności w aplikacji sieci web platformy ASP.NET.|Nie|Tak (zobacz Uwagi)|Nie|— Ta karta danych diagnostycznych jest obsługiwana tylko wtedy, gdy uruchamiasz testy obciążenia w programie Visual Studio.|
 |**Pokrycie kodu:** można utworzyć ustawienie testu, zawierające informacje kodu zapotrzebowania, które są używane do badania, jaka część kodu jest objęta testami.|Nie|Tak (zobacz Uwagi)|Nie|— Możesz użyć pokrycia kodu tylko po uruchomieniu automatycznych testów z programu Visual Studio lub *mstest.exe*i tylko z komputera, na której uruchamiany jest test. Zdalne zbieranie nie jest obsługiwane.<br />— Zbierania danych pokrycie kodu nie działa, jeśli masz również ustawienie testu skonfigurowane do zbierania informacji IntelliTrace. **Uwaga:** tego adaptera danych diagnostycznych ma zastosowanie tylko do ustawień testowych Visual Studio. Nie jest używana do ustawień testu w Microsoft Test Manager. Ponadto ta karta jest potrzeby utrzymywania zgodności z projektami testowymi programu Visual Studio 2010. **Uwaga:** dla zgodności pokrycie kodu ma zastosowanie, gdy testy automatyczne są uruchamiane z programu Microsoft Test Manager lub na zdalnym agencie testowym z programu Visual Studio przy użyciu starszego modułu uruchamiającego MSTest.|

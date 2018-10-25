@@ -13,54 +13,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f85e7c6e4ba62842986db8e6090415d2e33f1c1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 18587516298fa58e8a5e783ffb1f7c37d5a6b497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498957"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859684"
 ---
 # <a name="inside-the-editor"></a>Wewnątrz edytora
 Edytor składa się z liczbą różne podsystemy, które pozwalają zapobiec edytora tekstu modelu oddzielne widoku tekstu i interfejsu użytkownika.  
   
  W tych sekcjach opisano różne aspekty Edytor:  
   
--   [Omówienie podsystemów](../extensibility/inside-the-editor.md#overview-of-the-subsystems)  
+- [Omówienie podsystemów](../extensibility/inside-the-editor.md#overview-of-the-subsystems)  
   
--   [Model tekstu](../extensibility/inside-the-editor.md#the-text-model)  
+- [Model tekstu](../extensibility/inside-the-editor.md#the-text-model)  
   
--   [Widok tekstu](../extensibility/inside-the-editor.md#the-text-view)  
+- [Widok tekstu](../extensibility/inside-the-editor.md#the-text-view)  
   
- W tych sekcjach opisano funkcje edytora:  
+  W tych sekcjach opisano funkcje edytora:  
   
--   [Znaczniki i klasyfikatorów](../extensibility/inside-the-editor.md#tags-and-classifiers)  
+- [Znaczniki i klasyfikatorów](../extensibility/inside-the-editor.md#tags-and-classifiers)  
   
--   [Zakończeń](../extensibility/inside-the-editor.md#adornments)  
+- [Zakończeń](../extensibility/inside-the-editor.md#adornments)  
   
--   [Projekcja](../extensibility/inside-the-editor.md#projection)  
+- [Projekcja](../extensibility/inside-the-editor.md#projection)  
   
--   [Obramowanie](../extensibility/inside-the-editor.md#outlining)  
+- [Obramowanie](../extensibility/inside-the-editor.md#outlining)  
   
--   [Powiązania myszy](../extensibility/inside-the-editor.md#mousebindings)  
+- [Powiązania myszy](../extensibility/inside-the-editor.md#mousebindings)  
   
--   [Operacje edytora](../extensibility/inside-the-editor.md#editoroperations)  
+- [Operacje edytora](../extensibility/inside-the-editor.md#editoroperations)  
   
--   [Funkcja IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
+- [Funkcja IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
 ## <a name="overview-of-the-subsystems"></a>Omówienie podsystemów  
   
 ### <a name="text-model-subsystem"></a>Podsystem modelu tekstu  
  Podsystem modelu tekstu jest odpowiedzialny za reprezentowania tekstu i włączając jego manipulacji. Podsystem modelu tekst zawiera <xref:Microsoft.VisualStudio.Text.ITextBuffer> interfejs, który opisuje sekwencji znaków, który ma być wyświetlana przez edytor. Ten tekst można modyfikować, śledzone i inny sposób modyfikować na wiele sposobów. Model tekst zawiera także typy następujące aspekty:  
   
--   Usługa, która kojarzy tekstu z plików i zarządza odczytywania i zapisywania ich w systemie plików.  
+- Usługa, która kojarzy tekstu z plików i zarządza odczytywania i zapisywania ich w systemie plików.  
   
--   Różnicowe usługa, która umożliwia znalezienie minimalny różnice między dwoma sekwencjami obiektów.  
+- Różnicowe usługa, która umożliwia znalezienie minimalny różnice między dwoma sekwencjami obiektów.  
   
--   System do opisywania tekstu w buforze pod względem podzbiorem tekstu w innych buforów.  
+- System do opisywania tekstu w buforze pod względem podzbiorem tekstu w innych buforów.  
   
- Podsystem modelu tekstu jest bezpłatny pojęcia dotyczące interfejsu użytkownika. Na przykład nie jest odpowiedzialny za formatowania tekstu lub układu tekstu, a następnie go nie zna visual zakończeń, które mogą być skojarzone z tekstem.  
+  Podsystem modelu tekstu jest bezpłatny pojęcia dotyczące interfejsu użytkownika. Na przykład nie jest odpowiedzialny za formatowania tekstu lub układu tekstu, a następnie go nie zna visual zakończeń, które mogą być skojarzone z tekstem.  
   
- Typy publiczne podsystemu modelu tekstu są zawarte w *Microsoft.VisualStudio.Text.Data.dll* i *Microsoft.VisualStudio.CoreUtility.dll*, które zależą od tylko podstawowy .NET Framework Biblioteka klas i Managed Extensibility Framework (MEF).  
+  Typy publiczne podsystemu modelu tekstu są zawarte w *Microsoft.VisualStudio.Text.Data.dll* i *Microsoft.VisualStudio.CoreUtility.dll*, które zależą od tylko podstawowy .NET Framework Biblioteka klas i Managed Extensibility Framework (MEF).  
   
 ### <a name="text-view-subsystem"></a>Podsystem widoku tekstu  
  Podsystem widoku tekstu jest odpowiedzialny za formatowania i wyświetlania tekstu. Typy w tym podsystemu są podzielone na dwie warstwy, w zależności od tego, czy typy polegają na Windows Presentation Foundation (WPF). Najważniejsze typy są <xref:Microsoft.VisualStudio.Text.Editor.ITextView> i <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, które kontrolują zestaw wierszy tekstu, które mają być wyświetlane i również karetki, wybór i urządzenia adorning tekst przy użyciu elementów interfejsu użytkownika WPF. Podsystem ten znajdują się również obszar wyświetlania marginesy wokół tekstu. Marginesy te można rozszerzyć i może zawierać różne rodzaje efekty zawartości i visual. Przykłady marginesy wiersza numer Wyświetla i pasków przewijania.  

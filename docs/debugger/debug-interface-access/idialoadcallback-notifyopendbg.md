@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback::NotifyOpenDBG | Dokumentacja firmy Microsoft
+title: Idialoadcallback::notifyopendbg — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 717c9395805b3fe12640164261d3ec916bd8067c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2a51692b7ff554e656690898993d9dfb4a0eda57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468544"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883253"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
-Wywoływane, gdy plik .dbg candidate został otwarty.  
+Wywołuje się, gdy został otwarty plik .dbg Release candidate.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,10 +38,10 @@ HRESULT NotifyOpenDBG (
  [in] Pełna ścieżka pliku .dbg.  
   
  `resultCode`  
- [in] Kod, który wskazuje Powodzenie (`S_OK`) lub niepowodzenie ładowania stosowane do tego pliku.  
+ [in] Kod, który pokazuje Powodzenie (`S_OK`) lub niepowodzenie obciążenia, jakie mają zastosowanie do tego pliku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Kod powrotny zwykle jest ignorowana.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Kod powrotny zwykle jest ignorowany.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

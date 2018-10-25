@@ -10,12 +10,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e9d86204eb79eb0dd20db45d4ffe5c1f80c2e9dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c3fb7c8ba5ad0a4992368b2dba9da2d2b09c7980
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884286"
 ---
 # <a name="addressing-dpi-issues"></a>Rozwiązywanie problemów z technologią DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,29 +24,29 @@ Zwiększa liczbę urządzeń, które jest dostarczany z ekranami "o wysokiej roz
   
  Windows 8.1 lub nowszy zawiera kilka funkcji, aby włączyć te maszyny pracować z Wyświetla i środowiska, w której komputer jest podłączony do obu o wysokiej gęstości i gęstość standardowa wyświetla się w tym samym czasie.  
   
--   Windows można umożliwiają Skaluj zawartość do urządzenia przy użyciu "Przechowuj tekst i inne elementy większy lub mniejszy" ustawienie (dostępny od Windows XP).  
+- Windows można umożliwiają Skaluj zawartość do urządzenia przy użyciu "Przechowuj tekst i inne elementy większy lub mniejszy" ustawienie (dostępny od Windows XP).  
   
--   Windows 8.1 lub nowszy jest automatycznie skalowany w zawartości w przypadku większości aplikacji były zgodne po przeniesieniu między wyświetla różne gęstości pikseli. Gdy ekran główny jest wysoka gęstość (200% skalowanie) i wyświetlanie dodatkowych jest gęstość standardowa (100%), Windows automatycznie skalowane wraz ze zawartość okna aplikacji w dół na ekranie dodatkowej (1 piksel wyświetlane dla każdego 4 pikseli renderowany przez Aplikacja).  
+- Windows 8.1 lub nowszy jest automatycznie skalowany w zawartości w przypadku większości aplikacji były zgodne po przeniesieniu między wyświetla różne gęstości pikseli. Gdy ekran główny jest wysoka gęstość (200% skalowanie) i wyświetlanie dodatkowych jest gęstość standardowa (100%), Windows automatycznie skalowane wraz ze zawartość okna aplikacji w dół na ekranie dodatkowej (1 piksel wyświetlane dla każdego 4 pikseli renderowany przez Aplikacja).  
   
--   Windows jest domyślnie po prawej stronie skalowanie gęstość pikseli i wyświetlanie odległości ekranu (Windows 7 lub nowszy, można skonfigurować OEM).  
+- Windows jest domyślnie po prawej stronie skalowanie gęstość pikseli i wyświetlanie odległości ekranu (Windows 7 lub nowszy, można skonfigurować OEM).  
   
--   Windows może automatycznie skalować zawartość w górę do 250% na nowych urządzeniach, które przekraczają 280 ppi (począwszy od S14 Windows 8.1).  
+- Windows może automatycznie skalować zawartość w górę do 250% na nowych urządzeniach, które przekraczają 280 ppi (począwszy od S14 Windows 8.1).  
   
- Windows ma sposób postępowania z skalowanie w górę interfejsu użytkownika z zalet zwiększonej pikseli liczby. Aplikacja powoduje do tego systemu przez zadeklarowanie sam "systemu DPI aware". Aplikacje, które nie rób tego są skalowane w górę przez system. Może to spowodować, że środowisko użytkownika "rozmytego", gdzie całej aplikacji jest równomiernie rozciągnięte pikseli. Na przykład:  
+  Windows ma sposób postępowania z skalowanie w górę interfejsu użytkownika z zalet zwiększonej pikseli liczby. Aplikacja powoduje do tego systemu przez zadeklarowanie sam "systemu DPI aware". Aplikacje, które nie rób tego są skalowane w górę przez system. Może to spowodować, że środowisko użytkownika "rozmytego", gdzie całej aplikacji jest równomiernie rozciągnięte pikseli. Na przykład:  
   
- ![DPI wystawia rozmyte](../extensibility/media/dpi-issues-fuzzy.png "DPI wystawia rozmytego")  
+  ![DPI wystawia rozmyte](../extensibility/media/dpi-issues-fuzzy.png "DPI wystawia rozmytego")  
   
- Program Visual Studio powoduje zasubskrybowanie trwa skalowanie obsługujących DPI i w związku z tym nie jest "zwirtualizowany."  
+  Program Visual Studio powoduje zasubskrybowanie trwa skalowanie obsługujących DPI i w związku z tym nie jest "zwirtualizowany."  
   
- Windows (i programu Visual Studio) korzystać z kilku technologii interfejsu użytkownika, które mają różne sposoby radzenia sobie ze skalowaniem czynniki ustawiony przez system. Na przykład:  
+  Windows (i programu Visual Studio) korzystać z kilku technologii interfejsu użytkownika, które mają różne sposoby radzenia sobie ze skalowaniem czynniki ustawiony przez system. Na przykład:  
   
--   WPF środki kontroli w sposób niezależny od urządzenia (jednostki, nie pikseli). WPF UI jest skalowana automatycznie w miarę potrzeby bieżącej DPI.  
+- WPF środki kontroli w sposób niezależny od urządzenia (jednostki, nie pikseli). WPF UI jest skalowana automatycznie w miarę potrzeby bieżącej DPI.  
   
--   Wszystkich rozmiarów tekstu, niezależnie od tego, w ramach interfejsu użytkownika są wyrażone w punktach i dlatego są traktowane przez system jako niezależne od rozdzielczości DPI. Tekst w Win32, WinForms, WPF już skalowanie w górę poprawnie podczas rysowania do urządzenia.  
+- Wszystkich rozmiarów tekstu, niezależnie od tego, w ramach interfejsu użytkownika są wyrażone w punktach i dlatego są traktowane przez system jako niezależne od rozdzielczości DPI. Tekst w Win32, WinForms, WPF już skalowanie w górę poprawnie podczas rysowania do urządzenia.  
   
--   Win32/WinForms okien dialogowych windows się włączenie układ, który zmienia rozmiar tekstu — na przykład przy użyciu siatki, przepływ i panele układu tabeli. Włącz te, unikając lokalizacje ustaloną pikseli, które nie są skalowane przy zwiększa się rozmiary czcionek.  
+- Win32/WinForms okien dialogowych windows się włączenie układ, który zmienia rozmiar tekstu — na przykład przy użyciu siatki, przepływ i panele układu tabeli. Włącz te, unikając lokalizacje ustaloną pikseli, które nie są skalowane przy zwiększa się rozmiary czcionek.  
   
--   Ikony udostępnianej przez system lub zasobów w oparciu metryki systemu (na przykład SM_CXICON i SM_CXSMICON) są już skalowany w górę.  
+- Ikony udostępnianej przez system lub zasobów w oparciu metryki systemu (na przykład SM_CXICON i SM_CXSMICON) są już skalowany w górę.  
   
 ## <a name="older-win32-gdi-gdi-and-winforms-based-ui"></a>Starsze Win32 (GDI, GDI +) i interfejsu użytkownika opartego na WinForms  
  WPF już jest wysoka obsługującą ustawienia DPI, większość naszego kodu oparte na Win32/interfejsu GDI nie przewodnik pierwotnie został napisany z świadomości DPI na uwadze. Windows oferuje Skalowanie DPI z interfejsów API. Problemów z Win32 należy używać tych spójnego w ramach produktu. Program Visual Studio udostępnia pomocnika biblioteki klas, aby uniknąć duplikowania funkcjonalność i zapewnienie spójności w ramach produktu.  
@@ -88,21 +88,21 @@ ImageList_Create(VsUI::DpiHelper::LogicalToDeviceUnitsX(16),VsUI::DpiHelper::Log
 ## <a name="layout-issues"></a>Problemy z rozmieszczeniem  
  Typowe problemy z rozmieszczeniem można uniknąć przede wszystkim przez utrzymywanie punktów w interfejsie użytkownika, skalowania i względem siebie nawzajem, a nie przy użyciu bezwzględny lokalizacji (w szczególności w jednostkach pikseli). Na przykład:  
   
--   Układ i tekstu pozycji wymagane jest dostosowanie do konta w celu skalowania w górę obrazów.  
+- Układ i tekstu pozycji wymagane jest dostosowanie do konta w celu skalowania w górę obrazów.  
   
--   Kolumny w siatkach konieczne szerokości dostosowana tekstu skalowany w górę.  
+- Kolumny w siatkach konieczne szerokości dostosowana tekstu skalowany w górę.  
   
--   Odstęp między elementami i zakodowanych rozmiarów będzie również trzeba skalowany w górę. Rozmiary oparte tylko na tekst wymiary są zazwyczaj odpowiedni, ponieważ czcionki są automatycznie skalowane w górę.  
+- Odstęp między elementami i zakodowanych rozmiarów będzie również trzeba skalowany w górę. Rozmiary oparte tylko na tekst wymiary są zazwyczaj odpowiedni, ponieważ czcionki są automatycznie skalowane w górę.  
   
- Funkcje pomocnicze są dostępne w <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> klasy, aby umożliwić skalowanie na osi X i Y:  
+  Funkcje pomocnicze są dostępne w <xref:Microsoft.VisualStudio.PlatformUI.DpiHelper> klasy, aby umożliwić skalowanie na osi X i Y:  
   
--   LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (funkcje zezwalają na skalowanie X / osi Y)  
+- LogicalToDeviceUnitsX/LogicalToDeviceUnitsY (funkcje zezwalają na skalowanie X / osi Y)  
   
--   miejsce int = DpiHelper.LogicalToDeviceUnitsX (10);  
+- miejsce int = DpiHelper.LogicalToDeviceUnitsX (10);  
   
--   wysokość int = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
+- wysokość int = VsUI::DpiHelper::LogicalToDeviceUnitsY(5);  
   
- Istnieją przeciążenia LogicalToDeviceUnits, aby zezwolić na skalowanie obiektów, takich jak prostokąt, pkt i rozmiaru.  
+  Istnieją przeciążenia LogicalToDeviceUnits, aby zezwolić na skalowanie obiektów, takich jak prostokąt, pkt i rozmiaru.  
   
 ## <a name="using-the-dpihelper-libraryclass-to-scale-images-and-layout"></a>Używanie klasy DPIHelper biblioteki/skalowanie obrazów i układ  
  Biblioteka pomocnicza DPI usługi Visual Studio jest dostępny w formularzach macierzystymi i zarządzanymi i mogą być używane poza Visual Studio shell przez inne aplikacje.  
@@ -147,15 +147,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  Zalecenia:  
   
--   Logo obrazu i banery kompozycji, domyślnie <xref:System.Windows.Media.BitmapScalingMode> zmiany rozmiaru w trybie może być używana.  
+- Logo obrazu i banery kompozycji, domyślnie <xref:System.Windows.Media.BitmapScalingMode> zmiany rozmiaru w trybie może być używana.  
   
--   Elementy menu i obrazy nadruków <xref:System.Windows.Media.BitmapScalingMode> należy używać, gdy nie powoduje innych artefaktów zakłócenia wyeliminować rozmycia (w 200% i 300%).  
+- Elementy menu i obrazy nadruków <xref:System.Windows.Media.BitmapScalingMode> należy używać, gdy nie powoduje innych artefaktów zakłócenia wyeliminować rozmycia (w 200% i 300%).  
   
--   • Dla dużych powiększenia poziomy nie wielokrotność 100% (na przykład 250% lub 350%), skalowanie obrazów nadruków z wynikami dwusześcienne rozmyte, rozmycia interfejsu użytkownika. Lepszych wyników można uzyskać przez pierwszy skalowanie obrazu z NearestNeighbor do największych wielokrotność 100%, (na przykład 200% lub 300%) i skalowanie przy użyciu dwusześcienne z tego miejsca. Zobacz szczególny przypadek: prescaling obrazów WPF dla dużych DPI poziomy, aby uzyskać więcej informacji.  
+- • Dla dużych powiększenia poziomy nie wielokrotność 100% (na przykład 250% lub 350%), skalowanie obrazów nadruków z wynikami dwusześcienne rozmyte, rozmycia interfejsu użytkownika. Lepszych wyników można uzyskać przez pierwszy skalowanie obrazu z NearestNeighbor do największych wielokrotność 100%, (na przykład 200% lub 300%) i skalowanie przy użyciu dwusześcienne z tego miejsca. Zobacz szczególny przypadek: prescaling obrazów WPF dla dużych DPI poziomy, aby uzyskać więcej informacji.  
   
- Klasa DpiHelper w przestrzeni nazw Microsoft.VisualStudio.PlatformUI oferuje członka <xref:System.Windows.Media.BitmapScalingMode> które mogą być używane dla wiązania. Umożliwia powłoki programu Visual Studio do kontrolowania mapy bitowej tryb skalowania w produkcie jednolicie, w zależności od współczynnik skalowania DPI.  
+  Klasa DpiHelper w przestrzeni nazw Microsoft.VisualStudio.PlatformUI oferuje członka <xref:System.Windows.Media.BitmapScalingMode> które mogą być używane dla wiązania. Umożliwia powłoki programu Visual Studio do kontrolowania mapy bitowej tryb skalowania w produkcie jednolicie, w zależności od współczynnik skalowania DPI.  
   
- Aby użyć go w XAML, należy dodać:  
+  Aby użyć go w XAML, należy dodać:  
   
 ```xaml  
 xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"  

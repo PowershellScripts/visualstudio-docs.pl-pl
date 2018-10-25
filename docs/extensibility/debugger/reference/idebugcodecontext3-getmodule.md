@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a3dd353e3b329208ca71553ea7f441a054feb4a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ac20e93b7785a9b39b736effb2d351593ad4563a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103984"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857019"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
 Pobiera odwołanie do interfejsu debugowania modułu.  
@@ -39,13 +39,13 @@ public int GetModule(
   
 #### <a name="parameters"></a>Parametry  
  `ppModule`  
- [out] Odwołanie do interfejsu debugowania modułu.  
+ [out] Odwołanie do debugowania interfejsu modułu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CDebugCodeContext** obiekt ujawniający [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugCodeContext** obiekt ujawniający [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interfejsu.  
   
 ```cpp  
 HRESULT CDebugCodeContext::GetModule(IDebugModule2** ppModule)  

@@ -15,12 +15,12 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ceb59310597cd0481007ec9c08f5312a8d75090
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f26f37a945ce9ec665e924662d117f43e49ab77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839339"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Przewodnik: wyświetlanie uzupełniania instrukcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,48 +152,48 @@ Uzupełnianie instrukcji opartych na języku można zaimplementować poprzez okr
   
 #### <a name="to-implement-the-completion-command-handler"></a>Aby zaimplementować polecenia procedury obsługi zakończenia  
   
-1.  Dodaj klasę o nazwie `TestCompletionCommandHandler` implementującej <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. Dodaj klasę o nazwie `TestCompletionCommandHandler` implementującej <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#15)]
-     [!code-vb[VSSDKCompletionTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#15)]  
+    [!code-csharp[VSSDKCompletionTest#15](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#15)]
+    [!code-vb[VSSDKCompletionTest#15](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#15)]  
   
-2.  Dodaj pola prywatne, kolejna procedura obsługi polecenia (do którego należy przekazać polecenie), widoku tekstu, dostawcy obsługi polecenia (który umożliwia dostęp do różnych usług), a sesja kończenia:  
+2. Dodaj pola prywatne, kolejna procedura obsługi polecenia (do którego należy przekazać polecenie), widoku tekstu, dostawcy obsługi polecenia (który umożliwia dostęp do różnych usług), a sesja kończenia:  
   
-     [!code-csharp[VSSDKCompletionTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#16)]
-     [!code-vb[VSSDKCompletionTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#16)]  
+    [!code-csharp[VSSDKCompletionTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#16)]
+    [!code-vb[VSSDKCompletionTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#16)]  
   
-3.  Dodaj Konstruktor, który ustawia widok tekstu i pola dostawcy i dodaje polecenia do tworzenia łańcucha polecenia:  
+3. Dodaj Konstruktor, który ustawia widok tekstu i pola dostawcy i dodaje polecenia do tworzenia łańcucha polecenia:  
   
-     [!code-csharp[VSSDKCompletionTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#17)]
-     [!code-vb[VSSDKCompletionTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#17)]  
+    [!code-csharp[VSSDKCompletionTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#17)]
+    [!code-vb[VSSDKCompletionTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#17)]  
   
-4.  Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody przez przekazanie polecenia wzdłuż:  
+4. Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody przez przekazanie polecenia wzdłuż:  
   
-     [!code-csharp[VSSDKCompletionTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#18)]
-     [!code-vb[VSSDKCompletionTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#18)]  
+    [!code-csharp[VSSDKCompletionTest#18](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#18)]
+    [!code-vb[VSSDKCompletionTest#18](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#18)]  
   
-5.  Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody. Gdy ta metoda odbiera naciśnięcie klawisza, wykonaj jedną z tych czynności:  
+5. Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody. Gdy ta metoda odbiera naciśnięcie klawisza, wykonaj jedną z tych czynności:  
   
-    -   Zezwalaj na znak do zapisania w buforze i następnie wyzwolić lub filtrowanie uzupełniania. (Znaki niedrukowane to zrobić.)  
+   - Zezwalaj na znak do zapisania w buforze i następnie wyzwolić lub filtrowanie uzupełniania. (Znaki niedrukowane to zrobić.)  
   
-    -   Zatwierdź zakończenia, ale nie zezwalają na znak do zapisania w buforze. (Białe znaki, Tab lub Enter to wykonać po wyświetleniu sesja kończenia).  
+   - Zatwierdź zakończenia, ale nie zezwalają na znak do zapisania w buforze. (Białe znaki, Tab lub Enter to wykonać po wyświetleniu sesja kończenia).  
   
-    -   Zezwalaj na polecenie, aby być przekazywane do następnej procedury obsługi. (Wszystkie inne polecenia.)  
+   - Zezwalaj na polecenie, aby być przekazywane do następnej procedury obsługi. (Wszystkie inne polecenia.)  
   
      Ponieważ ta metoda może wyświetlić interfejs użytkownika, wywołaj <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> aby upewnić się, że nie jest wywoływana w kontekście usługi automation:  
   
      [!code-csharp[VSSDKCompletionTest#19](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#19)]
      [!code-vb[VSSDKCompletionTest#19](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#19)]  
   
-6.  Ten kod jest metody prywatnej, która wyzwala sesja kończenia:  
+6. Ten kod jest metody prywatnej, która wyzwala sesja kończenia:  
   
-     [!code-csharp[VSSDKCompletionTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#20)]
-     [!code-vb[VSSDKCompletionTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#20)]  
+    [!code-csharp[VSSDKCompletionTest#20](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#20)]
+    [!code-vb[VSSDKCompletionTest#20](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#20)]  
   
-7.  Następny przykład jest metodą prywatnej, która anuluje subskrypcje ze <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> zdarzeń:  
+7. Następny przykład jest metodą prywatnej, która anuluje subskrypcje ze <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> zdarzeń:  
   
-     [!code-csharp[VSSDKCompletionTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#21)]
-     [!code-vb[VSSDKCompletionTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#21)]  
+    [!code-csharp[VSSDKCompletionTest#21](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#21)]
+    [!code-vb[VSSDKCompletionTest#21](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#21)]  
   
 ## <a name="building-and-testing-the-code"></a>Tworzenie i testowanie kodu  
  Aby przetestować ten kod, Kompiluj rozwiązanie CompletionTest, a następnie uruchomić go w doświadczalnym wystąpieniu.  

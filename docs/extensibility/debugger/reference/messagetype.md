@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fa09d938e0e7c3853431369c7e0634242df2ee0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 66c254b56d5f7755a3578814ad5f3de7898f2f88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872229"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
-Określa typ wiadomości i przyczyny.  
+Określa typ komunikatu i przyczynę.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -52,27 +52,27 @@ public enum enum_MESSAGETYPE {
   
 ## <a name="members"></a>Elementy członkowskie  
  MT_OUTPUTSTRING  
- Wskazuje, czy można wysłać komunikatu, w oknie danych wyjściowych. Jest to wykluczają się wzajemnie z `MT_MESSAGEBOX`.  
+ Wskazuje, że w oknie danych wyjściowych powinna zostać wysłana wiadomość. To jest wzajemnie wykluczających się z `MT_MESSAGEBOX`.  
   
  MT_MESSAGEBOX  
- Wskazuje, że komunikat powinien być wyświetlany w oknie komunikatu. Jest to wykluczają się wzajemnie z `MT_OUTPUTSTRING`.  
+ Wskazuje, że komunikat powinien być wyświetlany w oknie komunikatu. To jest wzajemnie wykluczających się z `MT_OUTPUTSTRING`.  
   
  MT_TYPE_MASK  
  Wartość maski do izolowania miejsce docelowe dla wiadomości.  
   
  MT_REASON_EXCEPTION  
- Wskazuje, czy okno komunikatu jest pokazywane w wyniku wystąpienia wyjątku. Jest to wykluczają się wzajemnie z `MT_REASON_TRACEPOINT`.  
+ Wskazuje, że okno komunikatu jest pokazywane w wyniku wystąpienia wyjątku. To jest wzajemnie wykluczających się z `MT_REASON_TRACEPOINT`.  
   
  MT_REASON_TRACEPOINT  
- Wskazuje, że jest wyświetlane okno komunikatu wyniku naciśnięcie śledzenia. Jest to wzajemnie wykluczające się `MT_REASON_EXCEPTION`.  
+ Wskazuje, że okno komunikatu jest pokazywane w wyniku osiągnięcia punkt śledzenia. To jest wzajemnie wykluczających się do `MT_REASON_EXCEPTION`.  
   
  MT_REASON_MASK  
- Wartość maski do izolowania Przyczyna komunikat jest wyświetlany.  
+ Wartość maski do izolowania Przyczyna wiadomości są wyświetlane.  
   
 ## <a name="remarks"></a>Uwagi  
  Te wartości są zwracane z [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) i [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) metody.  
   
- Jedna z wartości Przyczyna można łączyć z jedną z wartości docelowe danych wyjściowych za pomocą bitowej `OR`.  
+ Jedna z wartości Przyczyna może być łączone z jedną z wartości docelowe danych wyjściowych za pomocą bitowej `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

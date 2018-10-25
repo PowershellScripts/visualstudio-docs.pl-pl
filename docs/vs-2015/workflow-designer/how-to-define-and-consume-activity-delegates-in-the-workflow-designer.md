@@ -12,33 +12,33 @@ caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5f7b69d0fb1ccd547d522d65fab803bd79a10ed2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f99816153870884f868a6b229068bdc281408337
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183381"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865495"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Porady: Definiowanie oraz stosowanie delegowania działania w Projektancie przepływu pracy
 [!INCLUDE[net_v45](../includes/net-v45-md.md)] zawiera nowe Projektant out-of-box <xref:System.Activities.Statements.InvokeDelegate> działania. Projektant można przypisać delegatów do działania, który pochodzi od <xref:System.Activities.ActivityDelegate>, takich jak <xref:System.Activities.ActivityAction> lub <xref:System.Activities.ActivityFunc%601>.  
   
 ### <a name="define-an-activity-delegate"></a>Zdefiniowanie pełnomocnika działania  
   
-1.  W [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], wybierz opcję **pliku**, **New**, **projektu**. Wybierz **przepływu pracy** węzła po lewej stronie, a **Aplikacja konsoli przepływu pracy** szablonu po prawej stronie. Nazwij projekt (w razie potrzeby), a następnie kliknij przycisk **Ok**.  
+1. W [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], wybierz opcję **pliku**, **New**, **projektu**. Wybierz **przepływu pracy** węzła po lewej stronie, a **Aplikacja konsoli przepływu pracy** szablonu po prawej stronie. Nazwij projekt (w razie potrzeby), a następnie kliknij przycisk **Ok**.  
   
-2.  Kliknij prawym przyciskiem myszy nad projektem w **Eksploratora rozwiązań** i wybierz **Dodaj**, **nowy element...** . Wybierz **przepływu pracy** węzła po lewej stronie, a **działania** szablonu po prawej stronie. Nazwa nowego działania **MyForEach.xaml** i kliknij przycisk **Ok**. Działanie zostanie otwarty w Projektancie przepływu pracy.  
+2. Kliknij prawym przyciskiem myszy nad projektem w **Eksploratora rozwiązań** i wybierz **Dodaj**, **nowy element...** . Wybierz **przepływu pracy** węzła po lewej stronie, a **działania** szablonu po prawej stronie. Nazwa nowego działania **MyForEach.xaml** i kliknij przycisk **Ok**. Działanie zostanie otwarty w Projektancie przepływu pracy.  
   
-3.  W Projektancie przepływu pracy kliknij **argumenty** kartę.  
+3. W Projektancie przepływu pracy kliknij **argumenty** kartę.  
   
-4.  Kliknij przycisk **utworzenia argumentu**. Nazwij nowy argument **elementów**.  
+4. Kliknij przycisk **utworzenia argumentu**. Nazwij nowy argument **elementów**.  
   
-5.  W **typ argumentu** kolumny wybierz **tablica [T]**.  
+5. W **typ argumentu** kolumny wybierz **tablica [T]**.  
   
-6.  W przeglądarce typu wybierz **obiektu**. Kliknij przycisk **Ok**.  
+6. W przeglądarce typu wybierz **obiektu**. Kliknij przycisk **Ok**.  
   
-7.  Kliknij przycisk **Utwórz Argument** ponownie. Nazwij nowy argument **treści**. W **kierunek** kolumny jako argumentu nowy, wybierz opcję **właściwość**.  
+7. Kliknij przycisk **Utwórz Argument** ponownie. Nazwij nowy argument **treści**. W **kierunek** kolumny jako argumentu nowy, wybierz opcję **właściwość**.  
   
-8.  W kolumnie Typ argumentu wybierz **vyhledat typy...**  
+8. W kolumnie Typ argumentu wybierz **vyhledat typy...**  
   
 9. W przeglądarce typu wprowadź **elementu ActivityAction** w **nazwy typu** pola. Wybierz **elementu ActivityAction\<T >** w widoku drzewa. Wybierz **obiektu** na liście rozwijanej, który wygląda jak przypisać typu **elementu ActivityAction\<obiektu >** do argumentu.  
   
@@ -64,23 +64,23 @@ ms.locfileid: "49183381"
   
 20. Ustaw **do** właściwość <xref:System.Activities.Statements.Assign> działanie **indeksu**. Ustaw **wartość** właściwość **przypisać** działanie **indeksu + 1**.  
   
- Niestandardowy **MyForEach** działania wywoła teraz dowolne działanie, jeden raz dla każdej wartości przekazywane do niego za pośrednictwem **elementów** kolekcji przy użyciu wartości w kolekcji jako dane wejściowe dla działania.  
+    Niestandardowy **MyForEach** działania wywoła teraz dowolne działanie, jeden raz dla każdej wartości przekazywane do niego za pośrednictwem **elementów** kolekcji przy użyciu wartości w kolekcji jako dane wejściowe dla działania.  
   
 ### <a name="use-the-custom-activity-in-a-workflow"></a>Używanie niestandardowych działań w przepływie pracy  
   
-1.  Skompiluj projekt, naciskając klawisz **Ctrl + Shift + B**.  
+1. Skompiluj projekt, naciskając klawisz **Ctrl + Shift + B**.  
   
-2.  W **Eksploratora rozwiązań**, otwórz **Workflow1.xaml** w projektancie.  
+2. W **Eksploratora rozwiązań**, otwórz **Workflow1.xaml** w projektancie.  
   
-3.  Przeciągnij **MyForEach** działania z przybornika do powierzchni projektanta. Działanie pojawią się w sekcji przybornika z taką samą nazwę jak projektu.  
+3. Przeciągnij **MyForEach** działania z przybornika do powierzchni projektanta. Działanie pojawią się w sekcji przybornika z taką samą nazwę jak projektu.  
   
-4.  Ustaw **elementów** właściwość **MyForEach** działanie **nowy obiekt [] {1, "abc"}**.  
+4. Ustaw **elementów** właściwość **MyForEach** działanie **nowy obiekt [] {1, "abc"}**.  
   
-5.  Przeciągnij <xref:System.Activities.Statements.WriteLine> działanie z **podstawowych** sekcji przybornika, aby **delegata: treść** części **MyForEach** działania.  
+5. Przeciągnij <xref:System.Activities.Statements.WriteLine> działanie z **podstawowych** sekcji przybornika, aby **delegata: treść** części **MyForEach** działania.  
   
-6.  Ustaw **tekstu** właściwość <xref:System.Activities.Statements.WriteLine> działanie **Argument.ToString()**.  
+6. Ustaw **tekstu** właściwość <xref:System.Activities.Statements.WriteLine> działanie **Argument.ToString()**.  
   
- Podczas wykonywania przepływu pracy, konsolę będzie następujący:  
+   Podczas wykonywania przepływu pracy, konsolę będzie następujący:  
   
- **1**   
-**abc**
+   **1**   
+   **abc**

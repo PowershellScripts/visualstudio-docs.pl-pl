@@ -17,26 +17,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e80344b8cec1bc013e044be39638879b049c8d0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d352e22b95540cfc1901eb214c2d5180b6024f27
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821529"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Pomocnicy zestawu SDK do debugowania
-Te funkcje i deklaracje są funkcje globalne pomocy wykonywania aparatami debugowania, ewaluatorów wyrażeń i dostawców symbol w języku C++.  
+Te funkcje i deklaracji są funkcje pomocnicze globalnego dotyczące implementowania silniki debugowania, ewaluatory wyrażeń i dostawców symboli w języku C++.  
   
 > [!NOTE]
->  Obecnie nie istnieje są ma zarządzanej wersji tych funkcji i deklaracji.  
+>  W tej chwili istnieje nie zarządzanych wersje tych funkcji i deklaracji.  
   
 ## <a name="overview"></a>Omówienie  
- Aby aparatami debugowania, ewaluatorów wyrażeń i symbol dostawców ma być używany przez Visual Studio muszą być zarejestrowane. Odbywa się przez ustawienie rejestru podklucze i wpisy, znanej także jako "ustawienie metryki". Następujące funkcje globalne są przeznaczone do jej obsługi ułatwiają proces aktualizacji tych metryk. Zobacz sekcję dotyczącą lokalizacje rejestru, aby dowiedzieć się, układ każdego podklucza rejestru, która jest aktualizowana przez te funkcje.  
+ Aby silniki debugowania, ewaluatory wyrażeń i dostawców symbol ma być używany przez program Visual Studio musi zostać zarejestrowany. Jest to realizowane przez ustawienie podklucze i wpisy, znanych także jako "ustawienie metryki". Następujące funkcje globalne są przeznaczone do jej obsługi ułatwiają realizację procesu aktualizacji tych metryk. Zobacz sekcję dotyczącą lokalizacji rejestru, aby dowiedzieć się, układ każdej podklucza rejestru, która jest aktualizowana przez te funkcje.  
   
-## <a name="general-metric-functions"></a>Funkcje Metryka ogólne  
- Są to ogólne funkcje używane przez aparaty debugowania. Specjalizowany funkcje dla ewaluatorów wyrażeń i dostawców symbol wyszczególnione później.  
+## <a name="general-metric-functions"></a>Ogólne metryki funkcji  
+ Są to ogólne funkcje używane przez aparaty debugowania. Wyspecjalizowane funkcje dla ewaluatory wyrażeń i dostawców symboli są szczegółowo opisane później.  
   
-### <a name="getmetric-method"></a>GetMetric — metoda  
+### <a name="getmetric-method"></a>Metoda GetMetric  
  Pobiera wartość metryki z rejestru.  
   
 ```cpp  
@@ -52,14 +52,14 @@ HRESULT GetMetric(
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|pszMachine|[in] Nazwa komputera prawdopodobnie zdalnego, którego rejestru zostanie zapisany (`NULL` oznacza, że komputer lokalny).|  
+|pszMachine|[in] Nazwa komputera prawdopodobnie zdalnego, w których rejestru zostanie zapisany (`NULL` oznacza, że komputer lokalny).|  
 |pszType|[in] Jeden z typów metryki.|  
-|guidSection|[in] Identyfikator GUID aparat ewaluatora, wyjątek, itp. To ustawienie określa podsekcji metryki typu dla określonego elementu.|  
+|guidSection|[in] Identyfikator GUID konkretnego aparatu ewaluatora, wyjątków, itp. To ustawienie określa podsekcji w ramach typu metryki dla określonego elementu.|  
 |pszMetric|[in] Metryki, które mają zostać uzyskane. Odpowiada nazwie określonej wartości.|  
-|pdwValue|[in] Lokalizacja magazynu wartość metryki. Istnieje kilka odmian GetMetric mogą zwracać wartość typu DWORD (jak w poniższym przykładzie), BSTR, identyfikator GUID lub tablicę identyfikatorów GUID.|  
-|pszAltRoot|[in] Alternatywny katalog główny rejestru do użycia. Ustaw `NULL` o użyciu domyślnej.|  
+|pdwValue|[in] Lokalizacja magazynu wartość metryki. Istnieje kilka odmian systemu GetMetric, która może zwracać wartość typu DWORD (jak w poniższym przykładzie), ciąg BSTR, identyfikator GUID lub tablicę identyfikatorów GUID.|  
+|pszAltRoot|[in] Rejestr alternatywny katalog główny. Ustaw `NULL` Aby użyć domyślnej.|  
   
-### <a name="setmetric-method"></a>SetMetric — metoda  
+### <a name="setmetric-method"></a>Metoda SetMetric  
  Ustawia określoną wartość metryki w rejestrze.  
   
 ```cpp  
@@ -76,14 +76,14 @@ HRESULT SetMetric(
 |Parametr|Opis|  
 |---------------|-----------------|  
 |pszType|[in] Jeden z typów metryki.|  
-|guidSection|[in] Identyfikator GUID aparat ewaluatora, wyjątek, itp. To ustawienie określa podsekcji metryki typu dla określonego elementu.|  
+|guidSection|[in] Identyfikator GUID konkretnego aparatu ewaluatora, wyjątków, itp. To ustawienie określa podsekcji w ramach typu metryki dla określonego elementu.|  
 |pszMetric|[in] Metryki, które mają zostać uzyskane. Odpowiada nazwie określonej wartości.|  
-|dwValue|[in] Lokalizacja magazynu wartość metryki. Istnieje kilka odmian SetMetric, w którym można przechowywać wartość typu DWORD (w tym przykładzie), BSTR, identyfikator GUID lub tablicę identyfikatorów GUID.|  
-|fUserSpecific|[in] Wartość TRUE, jeśli metryka jest specyficzne dla użytkownika i powinna być zapisana do gałęzi użytkownika zamiast gałąź komputera lokalnego.|  
-|pszAltRoot|[in] Alternatywny katalog główny rejestru do użycia. Ustaw `NULL` o użyciu domyślnej.|  
+|dwValue|[in] Lokalizacja magazynu wartość metryki. Istnieje kilka odmian systemu SetMetric, które mogą być przechowywane DWORD (w tym przykładzie), ciąg BSTR, identyfikator GUID lub tablicę identyfikatorów GUID.|  
+|fUserSpecific|[in] Wartość TRUE, jeśli metryka jest specyficzne dla użytkownika, a jeśli będą zapisywane w gałęzi użytkownika zamiast hive komputera lokalnego.|  
+|pszAltRoot|[in] Rejestr alternatywny katalog główny. Ustaw `NULL` Aby użyć domyślnej.|  
   
-### <a name="removemetric-method"></a>RemoveMetric — metoda  
- Usuwa określony Metryka z rejestru.  
+### <a name="removemetric-method"></a>Metoda RemoveMetric  
+ Usuwa określony metryki z rejestru.  
   
 ```cpp  
 HRESULT RemoveMetric(  
@@ -97,11 +97,11 @@ HRESULT RemoveMetric(
 |Parametr|Opis|  
 |---------------|-----------------|  
 |pszType|[in] Jeden z typów metryki.|  
-|guidSection|[in] Identyfikator GUID aparat ewaluatora, wyjątek, itp. To ustawienie określa podsekcji metryki typu dla określonego elementu.|  
-|pszMetric|[in] Metryka ma zostać usunięty. Odpowiada nazwie określonej wartości.|  
-|pszAltRoot|[in] Alternatywny katalog główny rejestru do użycia. Ustaw `NULL` o użyciu domyślnej.|  
+|guidSection|[in] Identyfikator GUID konkretnego aparatu ewaluatora, wyjątków, itp. To ustawienie określa podsekcji w ramach typu metryki dla określonego elementu.|  
+|pszMetric|[in] Metryki, które ma zostać usunięty. Odpowiada nazwie określonej wartości.|  
+|pszAltRoot|[in] Rejestr alternatywny katalog główny. Ustaw `NULL` Aby użyć domyślnej.|  
   
-### <a name="enummetricsections-method"></a>EnumMetricSections — metoda  
+### <a name="enummetricsections-method"></a>Metoda EnumMetricSections  
  Wylicza różnych sekcji metryki w rejestrze.  
   
 ```cpp  
@@ -116,101 +116,101 @@ HRESULT EnumMetricSections(
   
 |Parametr|Opis|  
 |---------------|-----------------|  
-|pszMachine|[in] Nazwa komputera prawdopodobnie zdalnego, którego rejestru zostanie zapisany (`NULL` oznacza, że komputer lokalny).|  
+|pszMachine|[in] Nazwa komputera prawdopodobnie zdalnego, w których rejestru zostanie zapisany (`NULL` oznacza, że komputer lokalny).|  
 |pszType|[in] Jeden z typów metryki.|  
-|rgguidSections|[w, out] Przydzielony wstępnie tablicę identyfikatorów GUID zostać wypełnione.|  
+|rgguidSections|[out w] Przydzielony wstępnie tablicę identyfikatorów GUID do wypełnienia.|  
 |pdwSize|[in] Maksymalna liczba identyfikatorów GUID, które mogą być przechowywane w `rgguidSections` tablicy.|  
-|pszAltRoot|[in] Alternatywny katalog główny rejestru do użycia. Ustaw `NULL` o użyciu domyślnej.|  
+|pszAltRoot|[in] Rejestr alternatywny katalog główny. Ustaw `NULL` Aby użyć domyślnej.|  
   
-## <a name="expression-evaluator-functions"></a>Funkcje ewaluatora wyrażenia  
+## <a name="expression-evaluator-functions"></a>Funkcje ewaluatora wyrażeń  
   
 |Funkcja|Opis|  
 |--------------|-----------------|  
 |GetEEMetric|Pobiera wartość metryki z rejestru.|  
 |SetEEMetric|Ustawia określoną wartość metryki w rejestrze.|  
-|RemoveEEMetric|Usuwa określony Metryka z rejestru.|  
-|GetEEMetricFile|Pobiera nazwę pliku z określonej metryki i ładuje, zwracając zawartość pliku jako ciąg.|  
+|RemoveEEMetric|Usuwa określony metryki z rejestru.|  
+|GetEEMetricFile|Pobiera nazwę pliku z określonej metryki i ładuje, zwraca zawartość pliku jako ciąg.|  
   
-## <a name="exception-functions"></a>Funkcje wyjątku  
+## <a name="exception-functions"></a>Wyjątek funkcji  
   
 |Funkcja|Opis|  
 |--------------|-----------------|  
 |GetExceptionMetric|Pobiera wartość metryki z rejestru.|  
 |SetExceptionMetric|Ustawia określoną wartość metryki w rejestrze.|  
-|RemoveExceptionMetric|Usuwa określony Metryka z rejestru.|  
+|RemoveExceptionMetric|Usuwa określony metryki z rejestru.|  
 |RemoveAllExceptionMetrics|Usuwa wszystkie metryki wyjątek z rejestru.|  
   
-## <a name="symbol-provider-functions"></a>Symbol funkcji dostawcy  
+## <a name="symbol-provider-functions"></a>Funkcje dostawcy symboli  
   
 |Funkcja|Opis|  
 |--------------|-----------------|  
 |GetSPMetric|Pobiera wartość metryki z rejestru.|  
 |SetSPMetric|Ustawia określoną wartość metryki w rejestrze.|  
-|RemoveSPMetric|Usuwa określony Metryka z rejestru.|  
+|RemoveSPMetric|Usuwa określony metryki z rejestru.|  
   
-## <a name="enumeration-functions"></a>Funkcje — wyliczenie  
+## <a name="enumeration-functions"></a>Wyliczenie funkcji  
   
 |Funkcja|Opis|  
 |--------------|-----------------|  
 |EnumMetricSections|Wylicza wszystkie metryki dla określonego typu metryki.|  
-|EnumDebugEngine|Wylicza aparaty debugowania w zarejestrowany.|  
-|EnumEEs|Wylicza ewaluatorów wyrażeń zarejestrowany.|  
+|EnumDebugEngine|Wylicza aparaty debugowania zarejestrowane.|  
+|EnumEEs|Wylicza ewaluatory wyrażeń zarejestrowane.|  
 |EnumExceptionMetrics|Wylicza wszystkie metryki wyjątku.|  
   
 ## <a name="metric-definitions"></a>Definicje metryk  
- Te definicje może służyć do wstępnie zdefiniowanych nazw metryki. Nazwy odpowiadają różne klucze rejestru i wartości nazwy i są zdefiniowane jako ciągi znaków typu wide: na przykład `extern LPCWSTR metrictypeEngine`.  
+ Te definicje mogą służyć do wstępnie zdefiniowanych nazw metryki. Nazwy odpowiadają różne klucze rejestru i wartości nazwy i są definiowane jako ciągi znaków dwubajtowych: na przykład `extern LPCWSTR metrictypeEngine`.  
   
 |Wstępnie zdefiniowanych typów metryki|Opis: Podstawowy klucz dla...|  
 |-----------------------------|---------------------------------------|  
-|metrictypeEngine|Wszystkie debugowania aparatu metryki.|  
-|metrictypePortSupplier|Wszystkie metryki portu dostawcy.|  
+|metrictypeEngine|Debuguj wszystkie metryki aparatu.|  
+|metrictypePortSupplier|Wszystkie metryki dostawcy portu.|  
 |metrictypeException|Wszystkie metryki wyjątku.|  
 |metricttypeEEExtension|Wszystkie rozszerzenia ewaluatora wyrażenia.|  
   
 |Właściwości aparatu debugowania|Opis|  
 |-----------------------------|-----------------|  
-|metricAddressBP|Ustaw wartość niezerową, aby wskazać obsługę punktów przerwania adresu.|  
-|metricAlwaysLoadLocal|Ustaw wartość niezerową, aby zawsze załadować aparat debugowania lokalnie.|  
+|metricAddressBP|Ustaw wartość różną od zera, aby wskazać obsługi punktów przerwania adresu.|  
+|metricAlwaysLoadLocal|Ustaw wartość różną od zera, aby można było zawsze Ładuj lokalnie za pomocą aparatu debugowania.|  
 |metricLoadInDebuggeeSession|NIE JEST UŻYWANY|  
-|metricLoadedByDebuggee|Ustaw wartość niezerową, aby wskazać, że aparat debugowania zawsze będzie można załadować z lub przez debugowany program.|  
-|metricAttach|Ustaw wartość niezerową, aby wskazać obsługę dołączanie do istniejących programów.|  
-|metricCallStackBP|Ustaw wartość niezerową, aby wskazać obsługę punktów przerwania stosu wywołań.|  
-|metricConditionalBP|Ustaw wartość niezerową, aby wskazać obsługę ustawienie warunkowych punktów przerwania.|  
-|metricDataBP|Ustaw wartość niezerową, aby wskazać, pomocy technicznej dla ustawienia punktów przerwania na temat zmian w danych.|  
-|metricDisassembly|Ustaw do różną od zera, aby wskazać obsługę produkcji lista dezasemblacji.|  
-|metricDumpWriting|Ustaw wartość niezerową, aby wskazać obsługę zrzutu zapisywania (zrzucanie pamięci na urządzeniach).|  
-|metricENC|Ustaw do różną od zera, aby wskazać obsługę Edytuj i Kontynuuj. **Uwaga:** aparat debugowania niestandardowych nie należy konfigurować to lub zawsze należy ustawić na wartość 0.|  
-|metricExceptions|Ustaw wartość niezerową, aby wskazać, obsługa wyjątków.|  
-|metricFunctionBP|Ustaw wartość niezerową, aby wskazać obsługę nazwanego punktów przerwania (punktów kontrolnych, które Przerwij, gdy nosi nazwę funkcji).|  
-|metricHitCountBP|Ustaw wartość niezerową, aby wskazać, pomocy technicznej dla ustawienia "trafień punktu" punktów przerwania (punkty przerwania, które są uruchamiane wyłącznie po trafienia wiele razy).|  
-|metricJITDebug|Ustaw do różną od zera, aby wskazać, obsługę debugowania just in time (debugera jest uruchamiana po wystąpieniu wyjątku w proces uruchamiania).|  
+|metricLoadedByDebuggee|Ustaw wartość różną od zera, aby wskazać, że aparat debugowania zostaną zawsze załadowane z lub debugowanego programu.|  
+|metricAttach|Ustaw wartość różną od zera, aby wskazać, obsługa załącznika do istniejących programów.|  
+|metricCallStackBP|Ustaw wartość różną od zera, aby wskazać obsługi punktów przerwania stosu wywołań.|  
+|metricConditionalBP|Ustaw wartość różną od zera, aby wskazać, obsługę ustawień warunkowe punkty przerwania.|  
+|metricDataBP|Ustaw wartość różną od zera, aby wskazać, obsługa ustawienie punktów przerwania na zmiany w danych.|  
+|metricDisassembly|Ustaw na różną od zera, aby wskazać, wsparcie dla wersji produkcyjnej, lista dezasemblacji.|  
+|metricDumpWriting|Ustaw wartość różną od zera, aby wskazać, obsługa zrzutu zapisywania (zrzucania pamięci na urządzeniach).|  
+|metricENC|Ustaw na różną od zera, aby wskazać, pomocy technicznej na potrzeby operacji Edytuj i Kontynuuj. **Uwaga:** niestandardowego aparatu debugowania nigdy nie ustawiać lub zawsze należy ustawić na wartość 0.|  
+|metricExceptions|Ustaw wartość różną od zera, aby wskazać, obsługa wyjątków.|  
+|metricFunctionBP|Ustaw wartość różną od zera, aby wskazać, Obsługa nazwanych punkty przerwania (punktów przerwania podziału, gdy wywoływana jest nazwą funkcji).|  
+|metricHitCountBP|Ustaw wartość różną od zera, aby wskazać, pomocy technicznej dla ustawienia "Traf punkt" punkty przerwania (punktów przerwania, które są wyzwalane tylko wtedy, gdy trafienia określonej liczby razy).|  
+|metricJITDebug|Ustaw na różną od zera, aby wskazać, obsługę debugowania just in time, (debuger jest uruchamiany, gdy wystąpi wyjątek w procesie uruchomione).|  
 |metricMemory|NIE JEST UŻYWANY|  
-|metricPortSupplier|Ustaw identyfikator CLSID dostawcy portu Jeśli jedną jest zaimplementowana.|  
+|metricPortSupplier|Ustaw tę opcję na identyfikator CLSID dostawcy portu, jeśli jeden jest zaimplementowana.|  
 |metricRegisters|NIE JEST UŻYWANY|  
-|metricSetNextStatement|Ustaw wartość niezerową, aby wskazać obsługę ustawienie następnej instrukcji (które pomija wykonywania instrukcji pośrednich).|  
-|metricSuspendThread|Ustaw wartość niezerową, aby wskazać obsługę wstrzymywania wykonanie wątku.|  
-|metricWarnIfNoSymbols|Ustaw wartość niezerową, aby wskazać, że użytkownik powiadomienia, jeśli istnieją żadnych symboli.|  
-|metricProgramProvider|Ustaw identyfikator CLSID dostawcy programu.|  
-|metricAlwaysLoadProgramProviderLocal|Ustaw tę wartość na niezerową, aby wskazać, że program powinien zawsze można załadować dostawcy lokalnie.|  
-|metricEngineCanWatchProcess|Ustaw tę wartość na niezerową, aby wskazać, że aparat debugowania będzie oczekiwał na przetwarzania zdarzeń dostawcy programu.|  
-|metricRemoteDebugging|Ustaw tę wartość na niezerową, aby wskazać, obsługę debugowania zdalnego.|  
-|metricEncUseNativeBuilder|Ustaw tę wartość na niezerową, aby wskazać, że Edytuj i Kontynuuj Manager powinien używać encbuild.dll aparat debugowania dla Edytuj i Kontynuuj. **Uwaga:** aparat debugowania niestandardowych nie należy konfigurować to lub zawsze należy ustawić na wartość 0.|  
-|metricLoadUnderWOW64|Ustaw tę wartość na niezerową, aby wskazać, że aparat debugowania powinny być ładowane w procesie debugowanego obiektu w środowisku WOW podczas debugowania procesu 64-bitowego; w przeciwnym razie aparat debugowania będą ładowane w procesie programu Visual Studio (co działa w emulatorze WOW64).|  
-|metricLoadProgramProviderUnderWOW64|Ustaw tę wartość na niezerową, aby wskazać, że dostawca programu powinna być załadowany w procesie debugowanego obiektu podczas debugowania procesu 64-bitowe w środowisku WOW; w przeciwnym razie zostanie załadowany w procesie programu Visual Studio.|  
-|metricStopOnExceptionCrossingManagedBoundary|Ustaw tę wartość na niezerową, aby wskazać, że proces ma zostać zatrzymana, jeśli wystąpił nieobsługiwany wyjątek jest zgłaszany w granicach zarządzanych/niezarządzanych kodu.|  
-|metricAutoSelectPriority|Ustaw tę wartość na priorytet dla wyboru automatycznego aparatu debugowania (wyższe wartości equals wyższy priorytet).|  
-|metricAutoSelectIncompatibleList|Klucza rejestru zawierającego wpisów, które określone identyfikatory GUID dla aparatami debugowania mają być ignorowane w automatyczny wybór. Te wpisy są liczbą (0, 1, 2 itd.) z identyfikatorem GUID wyrażonej w postaci ciągu.|  
-|metricIncompatibleList|Klucza rejestru zawierającego wpisów, które określić identyfikatory GUID dla aparatami debugowania, które nie są zgodne z tym aparatem debugowania.|  
-|metricDisableJITOptimization|Ustaw tę wartość na niezerową, aby wskazać, że podczas debugowania powinny być wyłączone optymalizacje just in time (dla zarządzanego kodu).|  
+|metricSetNextStatement|Ustaw wartość różną od zera, aby wskazać, obsługa ustawienie następnej instrukcji, (które pomija wykonanie pośrednich instrukcji).|  
+|metricSuspendThread|Ustaw wartość różną od zera, aby wskazać obsługę wstrzymywania wykonanie wątku.|  
+|metricWarnIfNoSymbols|Ustaw wartość różną od zera, aby wskazać, że użytkownik powinien otrzymywać powiadomienia, gdy istnieją żadnych symboli.|  
+|metricProgramProvider|Ustaw tę pozycję na identyfikator CLSID dostawcy program.|  
+|metricAlwaysLoadProgramProviderLocal|Ustaw tę pozycję do różną od zera, aby wskazać, że dostawca programu powinna zawsze być załadowane lokalnie.|  
+|metricEngineCanWatchProcess|Ustaw tę opcję na wartość różną od zera do wskazania, że aparat debugowania będzie oczekiwał na przetwarzanie zdarzeń, a nie dostawcy programu.|  
+|metricRemoteDebugging|Ustaw tę opcję na wartość różną od zera do wskazania obsługę zdalnego debugowania.|  
+|metricEncUseNativeBuilder|Ustaw tę pozycję do różną od zera, aby wskazać, że Edytuj i Kontynuuj Manager powinien używać encbuild.dll aparat debugowania do kompilacji na potrzeby operacji Edytuj i Kontynuuj. **Uwaga:** niestandardowego aparatu debugowania nigdy nie ustawiać lub zawsze należy ustawić na wartość 0.|  
+|metricLoadUnderWOW64|Ustaw tę opcję na wartość różną od zera do wskazania, że aparat debugowania powinny być załadowane w procesie debugowanego obiektu w środowisku WOW podczas debugowania procesu 64-bitowego; w przeciwnym razie aparat debugowania zostanie załadowany w procesie programu Visual Studio (który działa w emulatorze WOW64).|  
+|metricLoadProgramProviderUnderWOW64|Ustaw tę opcję na wartość różną od zera do wskazania, że dostawcy programu powinny być załadowane w procesie debugowanego obiektu podczas debugowania procesu 64-bitowego, w środowisku WOW; w przeciwnym razie zostanie załadowany w procesie programu Visual Studio.|  
+|metricStopOnExceptionCrossingManagedBoundary|Ustaw tę opcję na wartość różną od zera do wskazania, że proces ma zostać zatrzymana, jeśli wystąpił nieobsługiwany wyjątek jest zgłaszany w granicach zarządzanych/niezarządzanych kodu.|  
+|metricAutoSelectPriority|Wartość priorytetu do automatycznego wybierania aparat debugowania (wyższe wartości equals wyższy priorytet).|  
+|metricAutoSelectIncompatibleList|Klucz rejestru zawierające wpisy, które są określone identyfikatory GUID silniki debugowania mają być ignorowane w wybieranego automatycznie. Te wpisy są liczbą (0, 1, 2 i tak dalej) z identyfikatorem GUID wyrażone jako ciąg.|  
+|metricIncompatibleList|Klucz rejestru zawierające wpisy, które określają identyfikatorów GUID dla aparaty debugowania, które są niezgodne z tym aparat debugowania.|  
+|metricDisableJITOptimization|Ustaw tę opcję na wartość różną od zera do wskazania, że podczas debugowania powinny być wyłączone optymalizacje just-in-time (dla kodu zarządzanego).|  
   
 |Właściwości ewaluatora wyrażenia|Opis|  
 |-------------------------------------|-----------------|  
-|metricEngine|To przechowuje liczbę aparatów debugowania, które obsługują ewaluatora określone wyrażenie.|  
-|metricPreloadModules|Ustaw tę wartość na niezerową, aby wskazać, że modułów powinien załadowane po uruchomieniu ewaluatora wyrażeń względem programu.|  
-|metricThisObjectName|Ustaw tę wartość na "this" Nazwa obiektu.|  
+|metricEngine|To przechowuje liczbę aparatów debugowania, które obsługują Ewaluator wyrażeń określony.|  
+|metricPreloadModules|Ustaw tę opcję na wartość różną od zera do wskazania, że moduły powinny zostać wstępnie załadowane po uruchomieniu ewaluatora wyrażeń względem programu.|  
+|metricThisObjectName|Wartość "to" Nazwa obiektu.|  
   
-|Właściwości rozszerzenia ewaluatora wyrażenia|Opis|  
-|-----------------------------------------------|-----------------|  
+|Właściwości rozszerzenia ewaluatora wyrażeń|Opis|  
+| - |-----------------|  
 |metricExtensionDll|Nazwa biblioteki dll, która obsługuje tego rozszerzenia.|  
 |metricExtensionRegistersSupported|Lista rejestrów obsługiwane.|  
 |metricExtensionRegistersEntryPoint|Punkt wejścia do uzyskiwania dostępu do rejestrów.|  
@@ -219,28 +219,28 @@ HRESULT EnumMetricSections(
   
 |Właściwości dostawcy portu|Opis|  
 |------------------------------|-----------------|  
-|metricPortPickerCLSID|Identyfikator CLSID selektora portu (okno dialogowe użytkownika umożliwia wybranie portów i dodać porty używane do debugowania).|  
-|metricDisallowUserEnteredPorts|Różna od zera, jeśli portów wprowadzonych przez użytkownika nie można dodać do portu dostawcy (to sprawia, że okno dialogowe selektora portu zasadniczo tylko do odczytu).|  
-|metricPidBase|Identyfikator procesu podstawowy używany przez port dostawcy podczas przydzielania identyfikatorów procesów.|  
+|metricPortPickerCLSID|Identyfikator CLSID selektora portu (okno dialogowe użytkownika umożliwia wybierz porty, a następnie dodać porty używane do debugowania).|  
+|metricDisallowUserEnteredPorts|Wartość różną od zera, jeśli użytkownik wprowadził portów nie można dodać do dostawcy portu (sprawia to, że okno dialogowe selektora portu zasadniczo tylko do odczytu).|  
+|metricPidBase|Identyfikator podstawowy proces używany przez dostawcę portu podczas przydzielania identyfikatorów procesów.|  
   
-|Wstępnie zdefiniowane SP typów magazynu|Opis|  
+|SP wstępnie zdefiniowanych typów Store|Opis|  
 |-------------------------------|-----------------|  
-|storetypeFile|Symbole są przechowywane w osobnym pliku.|  
-|storetypeMetadata|Symbole są przechowywane jako metadanych w zestawie.|  
+|storetypeFile|Symbole są przechowywane w oddzielnym pliku.|  
+|storetypeMetadata|Symbole są przechowywane jako metadane w zestawie.|  
   
 |Różne właściwości|Opis|  
 |------------------------------|-----------------|  
-|metricShowNonUserCode|Ustaw tę wartość na niezerową, aby wyświetlić kod nonuser.|  
-|metricJustMyCodeStepping|Ustaw tę wartość na niezerową, aby wskazać, że krokowego wykonywania może wystąpić tylko w kodzie użytkownika.|  
-|metricCLSID|Identyfikator CLSID obiektu określonego typu metryki.|  
-|metricName|Przyjazna nazwa dla obiektu określonego typu metryki.|  
+|metricShowNonUserCode|Ustaw tę opcję na wartość różną od zera do wyświetlenia nonuser kodu.|  
+|metricJustMyCodeStepping|Ustaw tę opcję na wartość różną od zera do wskazania, że przechodzenie krok po kroku może wystąpić tylko w kodzie użytkownika.|  
+|metricCLSID|Identyfikator klasy obiektu określonego typu metryki.|  
+|MetricName|Przyjazna nazwa dla obiektu określonego typu metryki.|  
 |metricLanguage|Nazwa języka.|  
   
 ## <a name="registry-locations"></a>W lokalizacji rejestru  
- Metryki są odczytywane i zapisywane w rejestrze, w szczególności w `VisualStudio` podkluczu.  
+ Metryki są odczytywane i zapisywane w rejestrze, w szczególności w `VisualStudio` podklucza.  
   
 > [!NOTE]
->  W większości przypadków, metryki zostanie zapisany w kluczu HKEY_LOCAL_MACHINE. Jednak czasami HKEY_CURRENT_USER będą klucz miejsca docelowego. Dbgmetric.lib obsługuje zarówno kluczy. Podczas pobierania metrykę, przeszukiwane HKEY_CURRENT_USER pierwszy, a następnie HKEY_LOCAL_MACHINE. Gdy to ustawienie metryki parametr określa klucz, do którego najwyższego poziomu do użycia.  
+>  W większości przypadków, metryki będą zapisywane w kluczu HKEY_LOCAL_MACHINE. Jednak czasami HKEY_CURRENT_USER będzie klucz miejsca docelowego. Dbgmetric.lib obsługuje oba klucze. Podczas pobierania metrykę, przeszukuje HKEY_CURRENT_USER pierwszy, a następnie HKEY_LOCAL_MACHINE. Podczas metrykę, parametr określa, które klucz najwyższego poziomu do użycia.  
   
  *[klucz rejestru]*\  
   
@@ -250,11 +250,11 @@ HRESULT EnumMetricSections(
   
  `VisualStudio`\  
   
- *[wersja głównego]*\  
+ *[wersja główny]*\  
   
- *[metryki głównego]*\  
+ *[metryki główny]*\  
   
- *[typ metryki]*\  
+ *[type metryki]*\  
   
  *[Metryka] = [wartość metryki]*  
   
@@ -265,17 +265,17 @@ HRESULT EnumMetricSections(
 |Symbol zastępczy|Opis|  
 |-----------------|-----------------|  
 |*[klucz rejestru]*|`HKEY_CURRENT_USER` lub `HKEY_LOCAL_MACHINE`.|  
-|*[wersja głównego]*|Wersja programu Visual Studio (na przykład `7.0`, `7.1`, lub `8.0`). Jednak ten katalog główny może również zostać zmodyfikowany za pomocą **/rootsuffix** przełączyć się do **devenv.exe**. W przypadku VSIP, modyfikator jest zwykle **Exp**, więc głównej wersji może być na przykład 8.0Exp.|  
-|*[metryki głównego]*|Jest to `AD7Metrics` lub `AD7Metrics(Debug)`, w zależności od tego, czy używana wersja debugowania dbgmetric.lib. **Uwaga:** czy dbgmetric.lib jest używana, tę konwencję nazewnictwa powinien wywiązuje się Jeśli masz różnice między debug i release wersje, które musi mieć odzwierciedlenie w rejestrze.|  
-|*[typ metryki]*|Typ metryki do zapisania: `Engine`, `ExpressionEvaluator`, `SymbolProvider`itp. Są one wszystkie zdefiniowane jak dbgmetric.h jako `metricTypeXXXX`, gdzie `XXXX` jest nazwą określonego typu.|  
-|*[Metryka]*|Nazwa wpisu do przypisania wartości w celu ustawienia metryki. Rzeczywiste organizacji metryki zależy od typu metryki.|  
-|*[wartość metryki]*|Wartość przypisana do metryki. Metryka zależy od typu wartości powinny mieć (string, number, itp.).|  
+|*[wersja główny]*|Wersja programu Visual Studio (na przykład `7.0`, `7.1`, lub `8.0`). Jednak ten główny można także modyfikować za pomocą **/rootsuffix** przełączyć się do **devenv.exe**. W przypadku VSIP, ten modyfikator, jest zwykle **Exp**, więc głównej wersji może być na przykład 8.0Exp.|  
+|*[metryki główny]*|Jest to `AD7Metrics` lub `AD7Metrics(Debug)`, w zależności od tego, czy wersja debugowania dbgmetric.lib jest używana. **Uwaga:** czy dbgmetric.lib jest używany, następująca Konwencja nazewnictwa powinien należy przestrzegać w przypadku różnic między debugowaniem i wydawaniem wersje, które musi mieć odzwierciedlenie w rejestrze.|  
+|*[type metryki]*|Typ metryki, które ma zostać zapisany: `Engine`, `ExpressionEvaluator`, `SymbolProvider`itp. Są one wszystkie zdefiniowane tak jak dbgmetric.h jako `metricTypeXXXX`, gdzie `XXXX` jest nazwą określonego typu.|  
+|*[Metryka]*|Nazwa wpisu do przypisania wartości, aby można było ustawić wartość metryki. Rzeczywiste organizacji metryk zależy od typu metryki.|  
+|*[wartość metryki]*|Wartość przypisana do metrykę. Metryka zależy od typu wartości powinny mieć (ciąg, liczba itp.).|  
   
 > [!NOTE]
 >  Wszystkie identyfikatory GUID są przechowywane w formacie `{GUID}`. Na przykład `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
   
 ### <a name="debug-engines"></a>Aparaty debugowania  
- Poniżej znajduje się organizacja metryki aparaty debugowania w rejestrze. `Engine` jest nazwa typu metryki dla aparatu debugowania i odpowiada *[typ metryki]* w powyższym poddrzewo rejestru.  
+ Poniżej znajduje się organizacja metryki aparaty debugowania w rejestrze. `Engine` jest to nazwa typu metryki dla aparatu debugowania i odpowiada *[type metryki]* w zainstalowanym poddrzewie rejestru powyżej.  
   
  `Engine`\  
   
@@ -291,22 +291,22 @@ HRESULT EnumMetricSections(
   
  `PortSupplier`\  
   
- `0` = *[port dostawcy guid]*  
+ `0` = *[guid dostawcy portu]*  
   
- `1` = *[port dostawcy guid]*  
+ `1` = *[guid dostawcy portu]*  
   
 |Symbol zastępczy|Opis|  
 |-----------------|-----------------|  
-|*[identyfikator guid aparatu]*|Identyfikator GUID aparat debugowania.|  
+|*[identyfikator guid aparatu]*|Identyfikator GUID aparatu debugowania.|  
 |*[identyfikator guid klasy]*|Identyfikator GUID klasy, która implementuje ten aparat debugowania.|  
-|*[port dostawcy guid]*|Identyfikator GUID dostawcy port, jeśli istnieje. Wiele aparatami debugowania przy użyciu domyślnego portu dostawcy, a w związku z tym nie należy określać własne dostawcy. W tym przypadku podklucz `PortSupplier` będą nieobecne.|  
+|*[guid dostawcy portu]*|Identyfikator GUID dostawcy portu, jeśli istnieje. Wiele aparaty debugowania Użyj dostawcy portu domyślnego i w związku z tym nie należy określać ich własnego dostawcy. W tym przypadku podklucz `PortSupplier` będą nieobecne.|  
   
-### <a name="port-suppliers"></a>Port dostawcy  
- Poniżej znajduje się organizacja metryki dostawcy portu w rejestrze. `PortSupplier` jest nazwa typu metryki dla dostawcy portu i odpowiada *[typ metryki]*.  
+### <a name="port-suppliers"></a>Dostawcy portów  
+ Poniżej znajduje się organizacja metryki dostawcy portu w rejestrze. `PortSupplier` jest to nazwa typu metryki dla dostawcy portu i odpowiada *[type metryki]*.  
   
  `PortSupplier`\  
   
- *[port dostawcy guid]*\  
+ *[guid dostawcy portu]*\  
   
  `CLSID` = *[identyfikator guid klasy]*  
   
@@ -316,11 +316,11 @@ HRESULT EnumMetricSections(
   
 |Symbol zastępczy|Opis|  
 |-----------------|-----------------|  
-|*[port dostawcy guid]*|Identyfikator GUID dostawcy portu|  
-|*[identyfikator guid klasy]*|Identyfikator GUID klasy, która implementuje ten dostawca portu|  
+|*[guid dostawcy portu]*|Identyfikator GUID dostawcy portu|  
+|*[identyfikator guid klasy]*|Identyfikator GUID klasy, która implementuje ten dostawcy portu|  
   
 ### <a name="symbol-providers"></a>Symbol dostawców  
- Poniżej znajduje się organizacja metryki dostawcy symbol w rejestrze. `SymbolProvider` jest nazwa typu metryki dla dostawcy symboli i odpowiada *[typ metryki]*.  
+ Poniżej znajduje się organizacja metryki dostawca symboli w rejestrze. `SymbolProvider` jest nazwą typu metryki dla dostawcy symboli i odpowiada *[type metryki]*.  
   
  `SymbolProvider`\  
   
@@ -344,14 +344,14 @@ HRESULT EnumMetricSections(
   
 |Symbol zastępczy|Opis|  
 |-----------------|-----------------|  
-|*[identyfikator guid dostawcy symbol]*|Identyfikator GUID dostawcy symbol|  
-|*[identyfikator guid klasy]*|Identyfikator GUID klasy, która implementuje dostawcę tego symbolu|  
+|*[identyfikator guid dostawcy symbol]*|Identyfikator GUID dostawcy symboli|  
+|*[identyfikator guid klasy]*|Identyfikator GUID klasy, która implementuje ten dostawca symboli|  
   
 ### <a name="expression-evaluators"></a>Ewaluatory wyrażeń  
- Poniżej znajduje się organizacja metryki ewaluatora wyrażenia w rejestrze. `ExpressionEvaluator` jest nazwa typu metryki dla ewaluatora wyrażeń i odpowiada *[typ metryki]*.  
+ Poniżej znajduje się organizacja metryki ewaluatora wyrażeń w rejestrze. `ExpressionEvaluator` jest to nazwa typu metryki dla Ewaluator wyrażeń i odpowiada *[type metryki]*.  
   
 > [!NOTE]
->  Typem metryki dla `ExpressionEvaluator` nie jest zdefiniowany w dbgmetric.h, ponieważ zakłada się, że wszystkie zmiany metryki dla ewaluatorów wyrażeń zostanie wysłany za pomocą funkcji metryki ewaluatora wyrażenia odpowiednie (układ `ExpressionEvaluator` podklucz jest nieco skomplikowane, więc szczegóły są ukryte wewnątrz dbgmetric.lib).  
+>  Typ metryki `ExpressionEvaluator` nie jest zdefiniowany w dbgmetric.h, ponieważ zakłada się, że wszystkie zmiany metryki dla ewaluatory wyrażeń zostanie wysłany za pomocą funkcji metryki ewaluatora wyrażeń odpowiednie (układ `ExpressionEvaluator` podklucz jest nieco skomplikowane, dzięki czemu szczegółowe informacje są ukryte wewnątrz dbgmetric.lib).  
   
  `ExpressionEvaluator`\  
   
@@ -367,23 +367,23 @@ HRESULT EnumMetricSections(
   
  `Engine`\  
   
- `0` = *[identyfikator guid aparatu debugowania]*  
+ `0` = *[guid aparatu debugowania]*  
   
- `1` = *[identyfikator guid aparatu debugowania]*  
+ `1` = *[guid aparatu debugowania]*  
   
 |Symbol zastępczy|Opis|  
 |-----------------|-----------------|  
 |*[identyfikator guid języka]*|Identyfikator GUID języka|  
 |*[identyfikator guid dostawcy]*|Identyfikator GUID dostawcy|  
 |*[identyfikator guid klasy]*|Identyfikator GUID klasy, która implementuje ten Ewaluator wyrażeń|  
-|*[identyfikator guid aparatu debugowania]*|Identyfikator GUID aparat debugowania, który działa ta ewaluatora wyrażenia z|  
+|*[guid aparatu debugowania]*|Identyfikator GUID działającego w tym ewaluatora wyrażenia z aparatu debugowania|  
   
-### <a name="expression-evaluator-extensions"></a>Rozszerzenia ewaluatora wyrażenia  
- Poniżej znajduje się organizacja metryki rozszerzenia ewaluatora wyrażenia w rejestrze. `EEExtensions` jest nazwa typu metryki dla wyrażenia rozszerzeń ewaluatora i odpowiada *[typ metryki]*.  
+### <a name="expression-evaluator-extensions"></a>Rozszerzenia ewaluatora wyrażeń  
+ Poniżej znajduje się organizacja metryki rozszerzenia ewaluatora wyrażenia, w rejestrze. `EEExtensions` jest nazwą typu metryki dla wyrażenia rozszerzenia ewaluatora i odpowiada *[type metryki]*.  
   
  `EEExtensions`\  
   
- *[identyfikator guid rozszerzenia]*\  
+ *[identyfikator guid rozszerzenie]*\  
   
  *[Metryka] = [wartość metryki]*  
   
@@ -391,14 +391,14 @@ HRESULT EnumMetricSections(
   
 |Symbol zastępczy|Opis|  
 |-----------------|-----------------|  
-|*[identyfikator guid rozszerzenia]*|Identyfikator GUID rozszerzenia ewaluatora wyrażenia|  
+|*[identyfikator guid rozszerzenie]*|Identyfikator GUID rozszerzenie ewaluatora wyrażeń|  
   
 ### <a name="exceptions"></a>Wyjątki  
- Poniżej znajduje się organizacja metryki wyjątków w rejestrze. `Exception` jest nazwa typu metryki dla wyjątków i odpowiada *[typ metryki]*.  
+ Poniżej znajduje się organizacja metryki wyjątki w rejestrze. `Exception` jest to nazwa typu metryki dla wyjątków i odpowiada *[type metryki]*.  
   
  `Exception`\  
   
- *[identyfikator guid aparatu debugowania]*\  
+ *[guid aparatu debugowania]*\  
   
  *[typów wyjątków]*\  
   
@@ -416,12 +416,12 @@ HRESULT EnumMetricSections(
   
 |Symbol zastępczy|Opis|  
 |-----------------|-----------------|  
-|*[identyfikator guid aparatu debugowania]*|Identyfikator GUID aparat debugowania, który obsługuje wyjątków.|  
-|*[typów wyjątków]*|Ogólne tytuł podklucza identyfikacji klasy wyjątków, które są obsługiwane. Typowe nazwy są **wyjątków języka C++**, **wyjątki Win32**, **wspólnego języka środowiska uruchomieniowego wyjątki**, i **natywnego sprawdza Run-Time**. Te nazwy są również używane do identyfikowania danej klasy wyjątku dla użytkownika.|  
-|*[wyjątek]*|Nazwa wyjątku: na przykład **_com_error** lub **Ctrl-Break**. Te nazwy są również używane do identyfikowania określonego wyjątku dla użytkownika.|  
+|*[guid aparatu debugowania]*|Identyfikator GUID aparatu debugowania, który obsługuje wyjątki.|  
+|*[typów wyjątków]*|Ogólny tytuł podklucza który identyfikuje klasy wyjątków, które są obsługiwane. Typowe nazwy są **wyjątki C++**, **wyjątki Win32**, **wyjątki środowiska uruchomieniowego języka wspólnego**, i **macierzystego sprawdzania w trakcie wykonywania**. Te nazwy są również używane do identyfikowania konkretnej klasy wyjątku dla użytkownika.|  
+|*[wyjątek]*|Nazwa, dla wyjątku: na przykład **_com_error** lub **klawisze CTRL + Break**. Te nazwy są również używane do identyfikować określony wyjątek dla użytkownika.|  
   
 ## <a name="requirements"></a>Wymagania  
- Te pliki znajdują się w [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] katalogu instalacyjnego zestawu SDK (domyślnie *[dysk]* \Program Files\Microsoft programu Visual Studio 2010 SDK\\).  
+ Te pliki znajdują się w [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] katalogu instalacji zestawu SDK (domyślnie *[dysk]* \Program Files\Microsoft programu Visual Studio 2010 SDK\\).  
   
  Nagłówek: includes\dbgmetric.h  
   

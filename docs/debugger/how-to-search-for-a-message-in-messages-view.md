@@ -14,41 +14,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 368d10f2285c94f053e536da77966e9b2fb26da9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f9c00eea2034651298ff62bc50741971fc0369a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844916"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Porady: wyszukiwanie komunikatu w widoku komunikatów
-Możesz wyszukać określonego komunikatu w widoku komunikatów za pomocą jego uchwytu, typu lub identyfikator komunikatu jako kryterium wyszukiwania. Jeden z tych — lub kombinacji — będą prawidłowe kryteria. Można również określić początkowego kierunku wyszukiwania. Pola w oknie dialogowym są wstępnie ładowane z atrybutami wybranego komunikatu.  
+Możesz wyszukać szczegółowy komunikat o błędzie w widoku komunikatów za pomocą jego uchwytu, typ lub identyfikator komunikatu jako kryterium wyszukiwania. Jeden z nich — lub kombinacji — będą prawidłowe kryteria. Można również określić początkową kierunek wyszukiwania. Pola w oknie dialogowym są wstępnie ładowane z atrybutami komunikatów aktualnie wybrany.  
   
 ### <a name="to-search-for-a-message-in-messages-view"></a>Aby wyszukać komunikatu w widoku komunikatów  
   
-1.  Rozmieścić okna, tak że Spy ++ i aktywne [widoku komunikatów](../debugger/messages-view.md) okna są widoczne.  
+1. Rozmieść aplikacji dla systemu windows, więc tego programu Spy ++ i aktywne [widoku komunikatów](../debugger/messages-view.md) okna są widoczne.  
   
-2.  Z **wyszukiwania** menu, wybierz **Znajdź komunikat**.  
+2. Z **wyszukiwania** menu, wybierz **Znajdź komunikat**.  
   
-     [Wyszukiwanie komunikatów — okno dialogowe](../debugger/message-search-dialog-box.md) otwiera.  
+    [Wyszukiwanie komunikatów — okno dialogowe](../debugger/message-search-dialog-box.md) zostanie otwarty.  
   
-3.  Przeciągnij **narzędzia wyszukiwania** przez odpowiednie okna. Przeciągnij narzędzie, **wyszukiwania wiadomości** okno dialogowe wyświetla szczegóły w oknie wybrane.  
+3. Przeciągnij **Wyszukiwarka** przedziale żądaną. Przeciągnij narzędzie **Wyszukiwarka komunikatów** okno dialogowe wyświetla szczegóły wybranego okna.  
   
-     - lub -  
+   - lub —  
   
-     Jeśli masz uchwyt okna komunikatów, których chcesz zbadać, wpisz ją w **obsługi** pola tekstowego.  
+     Jeśli uchwyt okna komunikatów, którego chcesz zbadać, wpisz go w **obsługi** pola tekstowego.  
   
-     - lub -  
+   - lub —  
   
-     Znając typ komunikatu i/lub identyfikator wiadomości ma, wybierz je z **typu** i **komunikat** menu rozwijanych i wyczyść **obsługi** pola tekstowego.  
+     Jeśli znasz typ komunikatu i/lub identyfikator wiadomości, które chcesz, aby wybrać je z **typu** i **komunikat** menu rozwijanych i wyczyść **obsługi** pola tekstowego.  
   
-4.  Wyczyść wszystkie pola, dla których nie chcesz określać wartości.  
+4. Wyczyść wszystkie pola, dla których nie chcesz określać wartości.  
   
-    > [!TIP]
-    >  Aby zwiększyć czytelność ekranu, wybierz **Ukryj Spy** opcji. Ta opcja zawiera Spy ++ okno główne, pozostawiając tylko **Znajdź okno** okno dialogowe widoczne na innych aplikacji. Okno główne programu Spy ++ zostanie przywrócona po kliknięciu **OK** lub **anulować**, lub po usunięciu zaznaczenia **Ukryj Spy ++** opcji.  
+   > [!TIP]
+   >  Aby zwiększyć czytelność ekranu, wybierz pozycję **Ukryj Spy** opcji. Ta opcja zawiera narzędzie Spy ++ oknie głównym, pozostawiając tylko **Znajdź okno** okno dialogowe widoczne na podstawie innych aplikacji. Okno główne programu Spy ++ jest przywracany po kliknięciu **OK** lub **anulować**, lub po usunięciu zaznaczenia **Ukryj Spy ++** opcji.  
   
-5.  Wybierz **się** lub **dół** dla początkowego kierunku wyszukiwania.  
+5. Wybierz **się** lub **dół** dla początkowej kierunek wyszukiwania.  
   
-6.  Kliknij przycisk **OK**.  
+6. Kliknij przycisk **OK**.  
   
- Jeśli zgodny komunikat zostanie znaleziony, zostanie wyróżniona w oknie widoku komunikatów. Zobacz [widoku komunikatów](../debugger/messages-view.md).
+   Jeśli zostanie znaleziona pasująca wiadomość, jest wyróżniona w oknie Widok komunikatów. Zobacz [widoku komunikatów](../debugger/messages-view.md).

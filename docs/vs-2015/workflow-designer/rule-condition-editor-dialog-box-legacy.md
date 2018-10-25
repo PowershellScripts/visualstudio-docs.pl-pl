@@ -16,33 +16,33 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: a604ce47b6a96182d7e362d5d1dbcb00f052cf85
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0503f6ca9a209c62f842c9428cf1af9fe2a07ccc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231097"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838546"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Edytor warunku reguły, okno dialogowe (starsza wersja)
 W tym temacie opisano sposób użycia **Edytor warunku reguły** okno dialogowe w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Tworzenie i modyfikowanie warunki reguły deklaratywnej za pomocą **Edytor warunku reguły** okno dialogowe. Te warunki reguły są widoczne jako właściwości na następujących działaniach out-of-box Windows Workflow Foundation:  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
- Możesz uzyskać dostęp do **Edytor warunku reguły** okno dialogowe, za pomocą [wybierz warunek okno dialogowe (starsza wersja)](../workflow-designer/select-condition-dialog-box-legacy.md).  
+  Możesz uzyskać dostęp do **Edytor warunku reguły** okno dialogowe, za pomocą [wybierz warunek okno dialogowe (starsza wersja)](../workflow-designer/select-condition-dialog-box-legacy.md).  
   
- W poniższej tabeli opisano elementy interfejsu użytkownika **Edytor warunku reguły** okno dialogowe.  
+  W poniższej tabeli opisano elementy interfejsu użytkownika **Edytor warunku reguły** okno dialogowe.  
   
 |Element interfejsu użytkownika|Opis|  
 |----------------|-----------------|  
@@ -56,33 +56,33 @@ W tym temacie opisano sposób użycia **Edytor warunku reguły** okno dialogowe 
   
  Edytor warunku reguły obsługuje następujące operatory:  
   
--   Operatory relacyjne: ==, =,! =  
+- Operatory relacyjne: ==, =,! =  
   
--   Operatory porównania: <, \<=, >, > =  
+- Operatory porównania: <, \<=, >, > =  
   
--   Operatory arytmetyczne: +, -, *, / MOD  
+- Operatory arytmetyczne: +, -, *, / MOD  
   
--   Operatory logiczne: I, & &, OR &#124; &#124;, nie!  
+- Operatory logiczne: I, & &, OR &#124; &#124;, nie!  
   
--   Operatory bitowe: &,&#124;  
+- Operatory bitowe: &,&#124;  
   
- Kolejność wykonywania wyrażenia następuje reguły pierwszeństwa operatorów języka C#.  
+  Kolejność wykonywania wyrażenia następuje reguły pierwszeństwa operatorów języka C#.  
   
- Edytor warunku reguły obsługuje następujące wyrażenia liczbowego:  
+  Edytor warunku reguły obsługuje następujące wyrażenia liczbowego:  
   
- this.i == 1D (rozwiązuje 1.0)  
+  this.i == 1D (rozwiązuje 1.0)  
   
- this.i == 1E1 (jest rozpoznawana jako 10.0)  
+  this.i == 1E1 (jest rozpoznawana jako 10.0)  
   
- this.i == 1L (rozwiązuje jako wartość długa)  
+  this.i == 1L (rozwiązuje jako wartość długa)  
   
- this.i == 1 mln (rozwiązuje jako ułamek dziesiętny)  
+  this.i == 1 mln (rozwiązuje jako ułamek dziesiętny)  
   
- this.i == 1F (jest rozpoznawana jako pojedynczy)  
+  this.i == 1F (jest rozpoznawana jako pojedynczy)  
   
- this.i == 1U (jest rozpoznawana jako unsigned int)  
+  this.i == 1U (jest rozpoznawana jako unsigned int)  
   
- Aby uzyskać więcej informacji o warunkach, zobacz [za pomocą warunków w przepływach pracy](http://go.microsoft.com/fwlink?LinkID=65009).  
+  Aby uzyskać więcej informacji o warunkach, zobacz [za pomocą warunków w przepływach pracy](http://go.microsoft.com/fwlink?LinkID=65009).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)   

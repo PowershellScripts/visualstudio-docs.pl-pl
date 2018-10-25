@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dd2dcaa930db97ee8bab9b2bba168c80444dda8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e245087cdd74ced1b47e2cd02da1e450474fa1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121901"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875141"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
-Umożliwia procesu ma być powiadamiany o zdarzeniach portu.  
+Umożliwia procesu otrzymywać powiadomienia o zdarzeniach portu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -56,33 +56,33 @@ int WatchForProviderEvents(
 |Flaga|Opis|  
 |----------|-----------------|  
 |`PFLAG_REMOTE_PORT`|Obiekt wywołujący jest uruchomiona na komputerze zdalnym.|  
-|`PFLAG_DEBUGGEE`|Obiekt wywołujący jest obecnie debugowany (dodatkowe informacje dotyczące kierowania są zwracane w każdym węźle).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Dołączony do obiektu wywołującego, ale nie jest uruchomiony przez debuger.|  
-|`PFLAG_REASON_WATCH`|Obiekt wywołujący chce, aby śledzić zdarzenia. Jeśli ta flaga nie jest ustawiona. następnie zdarzenia wywołania zwrotnego jest usuwany, a obiekt wywołujący nie będzie już otrzymywać powiadomienia.|  
+|`PFLAG_DEBUGGEE`|Obiekt wywołujący jest teraz debugowana (dodatkowe informacje na temat kierowania jest zwracana dla każdego węzła).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Dołączony do obiektu wywołującego, ale nie jest uruchomiona przez debuger.|  
+|`PFLAG_REASON_WATCH`|Obiekt wywołujący chce obejrzeć dla zdarzeń. Jeśli ta flaga nie jest ustawiona. następnie zdarzeń wywołania zwrotnego jest usuwany, a obiekt wywołujący nie będzie już otrzymywać powiadomień.|  
   
  `pPort`  
  [in] Port procesu wywołującego jest uruchomiona na.  
   
  `processId`  
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury zawierający identyfikator procesu, który zawiera program jest zagrożona.  
+ [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury zawierający identyfikator procesu, który zawiera program zagrożona.  
   
  `EngineFilter`  
- [in] Tablica identyfikatory GUID aparatami debugowania skojarzonych z procesem.  
+ [in] Tablica identyfikatorów GUID aparaty debugowania skojarzonego z procesem.  
   
  `guidLaunchingEngine`  
- [in] Identyfikator GUID aparatu debugowania uruchomienia tego procesu (jeśli istnieje).  
+ [in] Identyfikator GUID aparatu debugowania, który uruchomił ten proces (jeśli istnieje).  
   
  `pEventCallback`  
- [in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) obiekt, który odbiera powiadomienia o zdarzeniach.  
+ [in] [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) obiekt, który otrzymuje powiadomienia o zdarzeniach.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Gdy obiekt wywołujący chce usunąć program obsługi zdarzeń, które zostało ustanowione poprzednie wywołanie tej metody, wywołujący te same parametry, jak podczas pierwszej, ale pozostawia poza `PFLAG_REASON_WATCH` flagi.  
+ Gdy obiekt wywołujący chce, aby usunąć program obsługi zdarzeń, który został ustanowiony z poprzedniego wywołania tej metody, obiekt wywołujący przekazuje te same parametry, tak jak podczas pierwszego, ale pozostawia poza `PFLAG_REASON_WATCH` flagi.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CDebugEngine** obiekt ujawniający [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugEngine** obiekt ujawniający [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interfejsu.  
   
 ```cpp  
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(  

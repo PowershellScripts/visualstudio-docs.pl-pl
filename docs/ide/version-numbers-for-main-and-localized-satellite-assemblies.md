@@ -16,26 +16,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db2d6c8da22278d830423643fb8ad869d5123a19
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: cbc74d746453c5d8e60161004a5b56a2c21915dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32424942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882607"
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Numery wersji dla głównych i zlokalizowanych zestawów satelickich
-<xref:System.Resources.SatelliteContractVersionAttribute> Klasa obsługuje przechowywanie wersji zestawu głównego, który używa zlokalizowane zasoby za pomocą Menedżera zasobów. Stosowanie <xref:System.Resources.SatelliteContractVersionAttribute> do aplikacji w zestawie głównym pozwala zaktualizować i ponownie wdrożyć zestawu bez aktualizowania jego zestawy satelickie. Na przykład można użyć <xref:System.Resources.SatelliteContractVersionAttribute> klasy z dodatkiem service pack, który nie wprowadzenia nowych zasobów, bez odbudowywania ani ponownego wdrażania ponownie zestawy satelickie. Zlokalizowanych zasobów była dostępna, musi odpowiadać wersji kontraktu satelickiego zestawu głównego <xref:System.Reflection.AssemblyVersionAttribute> klasy z zestawami satelity. Określ numer wersji dokładnie w <xref:System.Resources.SatelliteContractVersionAttribute>; symbol wieloznaczny znaków, takich jak "*" nie są dozwolone. Aby uzyskać więcej informacji, zobacz [pobrać zasobów](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).
+<xref:System.Resources.SatelliteContractVersionAttribute> Klasy obsługuje przechowywanie wersji głównej zestawu, który używa zlokalizowane zasoby przy użyciu usługi Resource Manager. Stosowanie <xref:System.Resources.SatelliteContractVersionAttribute> dla aplikacji zestawu głównego pozwala na aktualizowanie i ponowne wdrażanie zestawu bez aktualizowania swoich zestawów satelickich. Na przykład, można użyć <xref:System.Resources.SatelliteContractVersionAttribute> klasy dodatku service pack, który nie wprowadzają nowych zasobów bez ponownego kompilowania lub wdrażania zestawów satelickich. Zlokalizowanych zasobów była dostępna, musi być zgodna wersja kontraktu satelickie zestawu głównego <xref:System.Reflection.AssemblyVersionAttribute> klasy zestawów satelickich. Określ numer wersji dokładnie w <xref:System.Resources.SatelliteContractVersionAttribute>; znaki symboli wieloznacznych, takich jak "*" nie są dozwolone. Aby uzyskać więcej informacji, zobacz [pobierania zasobów](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).
 
 ## <a name="update-assemblies"></a>Aktualizowanie zestawów
- <xref:System.Resources.SatelliteContractVersionAttribute> Klasa umożliwia zaktualizowanie główny zestaw bez konieczności aktualizacji z zestawu satelickiego lub na odwrót. Po zaktualizowaniu główny zestaw jej numer wersji zestawu zostanie zmieniona. Jeśli chcesz nadal używać istniejących zestawów satelickich zmienić numer wersji zestawu głównego, ale numer wersji kontraktu satelity pozostaną bez zmian. Na przykład w Twojej wersji pierwszej wersji główny zestaw może być 1.0.0.0. Wersji kontraktu satelickiego i wersja zestawu z zestawu satelickiego będzie również 1.0.0.0. Jeśli musisz zaktualizować Twojego główny zestaw z dodatkiem Service Pack, można zmienić wersję zestawu na 1.0.0.1, przy jednoczesnym zachowaniu wersji kontraktu satelickiego i wersja zestawu satelity jako 1.0.0.0.
+ <xref:System.Resources.SatelliteContractVersionAttribute> Klasy umożliwia zaktualizowanie głównym zestawie bez konieczności aktualizowania Twojego zestawu satelickiego i na odwrót. Po zaktualizowaniu zestawu głównego, jego numer wersji zestawu jest zmieniany. Jeśli chcesz kontynuować korzystanie z istniejących zestawów satelickich, należy zmienić numer wersji zestawu głównego, ale numer wersji kontraktu satelitarnej pozostaną bez zmian. Na przykład w swojej pierwszej wersji używanej wersji zestawu głównego może być 1.0.0.0. Wersja kontraktu satelitarne i wersji zestawu zestawu satelickiego będzie również 1.0.0.0. Jeśli musisz zaktualizować swojego głównego zestawu z dodatkiem Service Pack, możesz zmienić wersję zestawu do 1.0.0.1, przy jednoczesnym zachowaniu wersja kontraktu satelitarne i wersję zestawu satelickiego jako 1.0.0.0.
 
- Jeśli musisz zaktualizować zestaw satelicki, ale nie zestawie głównym, należy zmienić <xref:System.Reflection.AssemblyVersionAttribute> zestawu satelity. Wraz z zestawu satelickiego należy wysłać zestaw zasad, stwierdzający, że Twoje nowe zestawu satelickiego jest zgodna z Twoje stare zestawu satelickiego. Aby uzyskać więcej informacji dotyczących zasad, zobacz [jak środowisko uruchomieniowe lokalizuje zestawy](/dotnet/framework/deployment/how-the-runtime-locates-assemblies).
+ W razie potrzeby można zaktualizować zestawu satelickiego, ale nie głównym zestawie, zmienić <xref:System.Reflection.AssemblyVersionAttribute> zestawu satelickiego. Wraz z zestawem satelickim trzeba będzie wysłać zestaw zasad, z informacją o tym, że Twojego nowego zestawu satelickiego jest zgodna z swoje stare zestawu satelickiego. Aby uzyskać więcej informacji na temat zasad, zobacz [jak środowisko uruchomieniowe lokalizuje zestawy](/dotnet/framework/deployment/how-the-runtime-locates-assemblies).
 
- Poniższy kod przedstawia sposób ustawiania wersji kontraktu satelickiego. Kod można umieścić w skrypcie kompilacji lub w *AssemblyInfo.vb* lub *AssemblyInfo.cs* pliku.
+ Poniższy kod przedstawia sposób ustawiania wersja kontraktu satelity. Kod można umieścić w skrypcie kompilacji lub w *AssemblyInfo.vb* lub *AssemblyInfo.cs* pliku.
 
 ```vb
 <Assembly: SatelliteContractVersionAttribute("4.3.2.1")>
-
 ```
 
 ```csharp
@@ -44,8 +43,8 @@ ms.locfileid: "32424942"
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Jak lokalizuje zestawów przez środowisko uruchomieniowe](/dotnet/framework/deployment/how-the-runtime-locates-assemblies)
+- [Jak środowisko uruchomieniowe lokalizuje zestawy](/dotnet/framework/deployment/how-the-runtime-locates-assemblies)
 - [Zestaw atrybutów zestawu](/dotnet/framework/app-domains/set-assembly-attributes)
 - [Zabezpieczenia a zlokalizowane zestawy satelickie](../ide/security-and-localized-satellite-assemblies.md)
 - [Lokalizowanie aplikacji](../ide/localizing-applications.md)
-- [Globalize i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md)
+- [Sprzedawać i lokalizowanie aplikacji](../ide/globalizing-and-localizing-applications.md)

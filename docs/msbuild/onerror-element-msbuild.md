@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c57c7dcb9c6eadc3242bc09a1356d3a08399616
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c33f32e46621bb2f56231b2c992712fd42126f1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841393"
 ---
 # <a name="onerror-element-msbuild"></a>OnError — element (MSBuild)
 Powoduje, że jeden lub więcej celów do wykonania, jeśli `ContinueOnError` atrybut jest `false` dla zadania nie powiodło się.  
@@ -56,9 +56,9 @@ Powoduje, że jeden lub więcej celów do wykonania, jeśli `ContinueOnError` at
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 
-|Element|Opis|  
-|-------------|-----------------|  
-|[Docelowy](../msbuild/target-element-msbuild.md)|Element kontenera służy do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadania.|  
+| Element | Opis |
+| - | - |
+| [Docelowy](../msbuild/target-element-msbuild.md) | Element kontenera służy do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadania. |
 
 ## <a name="remarks"></a>Uwagi  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wykonuje `OnError` elementu, jeśli jest to jeden z `Target` elementu zadań kończy się niepowodzeniem z `ContinueOnError` ustawioną wartość atrybutu `ErrorAndStop` (lub `false`). Jeśli zadanie nie powiedzie się, obiektów docelowych określonych w `ExecuteTargets` atrybutu jest wykonywany. Jeśli istnieje więcej niż jedna `OnError` elementu w miejscu docelowym, `OnError` elementy są wykonywane sekwencyjnie, gdy zadanie nie powiodło się.  

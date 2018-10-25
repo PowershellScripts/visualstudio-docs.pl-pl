@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5551a982b7f7135235c116cde28c71a0695874db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3c149558f53effff29d15bfce0d05f0dada0f7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847074"
 ---
 # <a name="extend-layer-diagrams"></a>Rozszerzone diagramy warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Można napisać kod, do tworzenia i aktualizowania diagramy warstwowe, a do spra
 ##  <a name="prereqs"></a> Wymagania  
  Musisz mieć zainstalowane na komputerze, gdzie chcesz rozwijać swoje rozszerzenia warstwy następujące elementy:  
   
--   Visual Studio  
+- Visual Studio  
   
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  
   
--   [Modeling SDK for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)  
+- [Modeling SDK for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)  
   
- Konieczne jest posiadanie odpowiedniej wersji programu Visual Studio zainstalowany na komputerze, na którym chcesz uruchomić swoje rozszerzenia warstwy. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzenia modelu warstwy](../modeling/deploy-a-layer-model-extension.md).  
+  Konieczne jest posiadanie odpowiedniej wersji programu Visual Studio zainstalowany na komputerze, na którym chcesz uruchomić swoje rozszerzenia warstwy. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzenia modelu warstwy](../modeling/deploy-a-layer-model-extension.md).  
   
- Aby dowiedzieć się, które wersje programu Visual Studio obsługują diagramy warstwowe, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  Aby dowiedzieć się, które wersje programu Visual Studio obsługują diagramy warstwowe, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Dodawanie poleceń i gestów do diagramów warstw](../modeling/add-commands-and-gestures-to-layer-diagrams.md)  

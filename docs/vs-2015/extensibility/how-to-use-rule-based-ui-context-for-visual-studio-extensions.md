@@ -9,12 +9,12 @@ ms.topic: article
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: e9a0f740232493d24cf1bdcd6decba338036e6c9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f662a4383c56c21528b3dab556928fdaa043095
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194704"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884098"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Porady: Użyj kontekstu oparty na regułach interfejsu użytkownika dla rozszerzenia programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,75 +28,75 @@ Program Visual Studio umożliwia ładowanie pakietów VSPackage przy pewnych dob
   
  Oparty na regułach kontekstu interfejsu użytkownika może służyć w na różne sposoby:  
   
-1.  Określ ograniczeń widoczność dla poleceń i okien narzędzi. Można ukryć polecenia/narzędzi systemu windows, dopóki nie zostanie spełniony reguły kontekstu interfejsu użytkownika.  
+1. Określ ograniczeń widoczność dla poleceń i okien narzędzi. Można ukryć polecenia/narzędzi systemu windows, dopóki nie zostanie spełniony reguły kontekstu interfejsu użytkownika.  
   
-2.  Jak automatycznie załadować ograniczeń: automatyczne ładowanie pakietów tylko wtedy, gdy reguła jest spełniony  
+2. Jak automatycznie załadować ograniczeń: automatyczne ładowanie pakietów tylko wtedy, gdy reguła jest spełniony  
   
-3.  Opóźnionego zadania: opóźnienie ładowania, dopóki nie został przekazany w określonych odstępach czasu i reguły nadal jest spełniony.  
+3. Opóźnionego zadania: opóźnienie ładowania, dopóki nie został przekazany w określonych odstępach czasu i reguły nadal jest spełniony.  
   
- Mechanizm, może być używany przez wszystkie rozszerzenia programu Visual Studio.  
+   Mechanizm, może być używany przez wszystkie rozszerzenia programu Visual Studio.  
   
 ## <a name="create-a-rule-based-ui-context"></a>Utwórz kontekst oparty na regułach interfejsu użytkownika  
  Załóżmy, że możesz mieć rozszerzenie o nazwie TestPackage, która oferuje polecenia menu, które dotyczą tylko pliki z rozszerzeniem "config". Przed VS2015, najlepszym rozwiązaniem było załadować TestPackage podczas <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> kontekstu interfejsu użytkownika został aktywowany. To nie jest efektywne, ponieważ załadowanego rozwiązania nie może nawet zawierać pliku Config. Daj nam znaleźć sposób kontekstu interfejsu użytkownika opartego na regułach może służyć do aktywowania kontekstu interfejsu użytkownika, tylko wtedy, gdy plik z rozszerzeniem .config jest zaznaczone, a obciążenia TestPackage, po aktywowaniu tego kontekstu interfejsu użytkownika.  
   
-1.  Zdefiniuj nowy identyfikator GUID UIContext i Dodaj do klasy pakietu VSPackage <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> i <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
+1. Zdefiniuj nowy identyfikator GUID UIContext i Dodaj do klasy pakietu VSPackage <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> i <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
   
-     Na przykład, załóżmy, że nowe UIContext "UIContextGuid" ma zostać dodany. Utworzony identyfikator GUID (identyfikator GUID można utworzyć, klikając pozycję Narzędzia -> Utwórz identyfikator guid) jest "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B". Następnie należy dodać następujące wewnątrz klasy pakietu:  
+    Na przykład, załóżmy, że nowe UIContext "UIContextGuid" ma zostać dodany. Utworzony identyfikator GUID (identyfikator GUID można utworzyć, klikając pozycję Narzędzia -> Utwórz identyfikator guid) jest "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B". Następnie należy dodać następujące wewnątrz klasy pakietu:  
   
-    ```csharp  
-    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
-    ```  
+   ```csharp  
+   public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
+   ```  
   
-     W przypadku atrybutów, Dodaj następujący kod: (szczegółowe informacje o tych atrybutów zostaną wyjaśnione później)  
+    W przypadku atrybutów, Dodaj następujący kod: (szczegółowe informacje o tych atrybutów zostaną wyjaśnione później)  
   
-    ```csharp  
-    [ProvideAutoLoad(TestPackage.UIContextGuid)]      
-    [ProvideUIContextRule(TestPackage.UIContextGuid,  
-        name: "Test auto load",   
-        expression: "DotConfig",  
-        termNames: new[] { "DotConfig" },  
-        termValues: new[] { "HierSingleSelectionName:.config$" })]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(TestPackage.UIContextGuid)]      
+   [ProvideUIContextRule(TestPackage.UIContextGuid,  
+       name: "Test auto load",   
+       expression: "DotConfig",  
+       termNames: new[] { "DotConfig" },  
+       termValues: new[] { "HierSingleSelectionName:.config$" })]  
+   ```  
   
-     Te metadane określają nowy identyfikator GUID UIContext (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) i wyrażenie odnoszące się do pojedynczego termin "DotConfig". Termin "DotConfig" zwraca wartość true, gdy bieżące zaznaczenie w aktywnej hierarchii ma nazwę, która pasuje do wzorca wyrażenia regularnego "\\.config$" (kończy się ciągiem "config"). Wartość (wartość domyślna) Określa opcjonalną nazwę dla tej reguły, które są przydatne podczas debugowania.  
+    Te metadane określają nowy identyfikator GUID UIContext (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) i wyrażenie odnoszące się do pojedynczego termin "DotConfig". Termin "DotConfig" zwraca wartość true, gdy bieżące zaznaczenie w aktywnej hierarchii ma nazwę, która pasuje do wzorca wyrażenia regularnego "\\.config$" (kończy się ciągiem "config"). Wartość (wartość domyślna) Określa opcjonalną nazwę dla tej reguły, które są przydatne podczas debugowania.  
   
-     Wartości atrybutu są dodawane do pkgdef wygenerowane później w czasie kompilacji.  
+    Wartości atrybutu są dodawane do pkgdef wygenerowane później w czasie kompilacji.  
   
-2.  W pliku VSCT TestPackage poleceń Dodaj flagę "DynamicVisibility" do odpowiednich poleceń:  
+2. W pliku VSCT TestPackage poleceń Dodaj flagę "DynamicVisibility" do odpowiednich poleceń:  
   
-    ```xml  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-3.  W sekcji widoczności VSCT powiązanie odpowiednie polecenia, aby nowe UIContext zdefiniowane w #1 identyfikator GUID:  
+3. W sekcji widoczności VSCT powiązanie odpowiednie polecenia, aby nowe UIContext zdefiniowane w #1 identyfikator GUID:  
   
-    ```xml  
-    <VisibilityConstraints>   
-        <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>   
+       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
+   </VisibilityConstraints>  
+   ```  
   
-4.  W sekcji symbole Dodaj definicję UIContext:  
+4. W sekcji symbole Dodaj definicję UIContext:  
   
-    ```xml  
-    <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
-    ```  
+   ```xml  
+   <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
+   ```  
   
-     Teraz polecenia menu kontekstowego dla plików *.config, będą widoczne tylko wtedy, gdy wybrany element w Eksploratorze rozwiązań jest plikiem "config" i nie będzie można załadować pakietu, do momentu wybrania debugowanej jedno z tych poleceń.  
+    Teraz polecenia menu kontekstowego dla plików *.config, będą widoczne tylko wtedy, gdy wybrany element w Eksploratorze rozwiązań jest plikiem "config" i nie będzie można załadować pakietu, do momentu wybrania debugowanej jedno z tych poleceń.  
   
- Następnie użyjemy debugera, aby upewnić się, że pakiet ładuje, tylko gdy oczekujemy, że jego. Aby debugować TestPackage:  
+   Następnie użyjemy debugera, aby upewnić się, że pakiet ładuje, tylko gdy oczekujemy, że jego. Aby debugować TestPackage:  
   
-1.  Ustaw punkt przerwania <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.  
+5. Ustaw punkt przerwania <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.  
   
-2.  Twórz TestPackage i Rozpocznij debugowanie.  
+6. Twórz TestPackage i Rozpocznij debugowanie.  
   
-3.  Utwórz projekt lub otwórz je.  
+7. Utwórz projekt lub otwórz je.  
   
-4.  Wybierz dowolny plik z rozszerzeniem innym niż .config. Punkt przerwania powinien nie są osiągane.  
+8. Wybierz dowolny plik z rozszerzeniem innym niż .config. Punkt przerwania powinien nie są osiągane.  
   
-5.  Wybierz plik App.Config.  
+9. Wybierz plik App.Config.  
   
- TestPackage ładuje i zatrzymuje się w punkcie przerwania.  
+   TestPackage ładuje i zatrzymuje się w punkcie przerwania.  
   
 ## <a name="adding-more-rules-for-ui-context"></a>Dodawanie więcej reguł dla kontekstu interfejsu użytkownika  
  Ponieważ wyrażenia logiczne dostępne są następujące reguły kontekstu interfejsu użytkownika, możesz dodać bardziej ograniczony reguły dla kontekstu interfejsu użytkownika. Na przykład w powyższej kontekstu interfejsu użytkownika, można określić czy reguła dotyczy tylko po załadowaniu rozwiązania z projektem. W ten sposób polecenia nie będą wyświetlane Jeśli otworzysz plik "config" jako autonomiczny plik, a nie jako część projektu.  

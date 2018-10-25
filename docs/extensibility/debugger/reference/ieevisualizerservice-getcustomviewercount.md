@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2c2b116a27ced7caf41b264017f5ce7766d827d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a53bfccceab5771c0a0f6ac8c609089098625597
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829992"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
-Ta metoda pobiera liczbę dostępnych wizualizatorach typu z tej usługi.  
+Ta metoda pobiera liczbę typu wizualizatory są dostępne z tej usługi.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int GetCustomViewerCount(
   
 #### <a name="parameters"></a>Parametry  
  `pcelt`  
- [out] Zwraca liczbę dostępnych wizualizatorach typu.  
+ [out] Zwraca liczbę typu wizualizatory są dostępne.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) przekazuje żądanie do tej metody w jego pomocy technicznej dla wizualizatorach typu.  
+ [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) przekazuje żądanie do tej metody w jego pomocy technicznej dla wizualizatorów typu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   

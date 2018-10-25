@@ -1,7 +1,7 @@
 ---
-title: Konfigurowanie języka Python w usłudze Azure App Service
+title: Konfigurowanie języka Python w usłudze Azure App Service (Windows)
 description: Jak zainstalować interpreter języka Python i bibliotek w usłudze Azure App Service i konfigurowanie aplikacji sieci web, aby poprawnie odwołać się do tego interpretera.
-ms.date: 07/26/2018
+ms.date: 10/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 96c3ce9a8272493b66607ab9513ce1bb7f46817e
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 10da39ca8074148ac11e69be559af8da9931213e
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228906"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459871"
 ---
-# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Jak skonfigurować środowisko Python w usłudze Azure App Service
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>Jak skonfigurować środowisko Python w usłudze Azure App Service (Windows)
 
 > [!Important]
-> Firma Microsoft planuje wycofana rozszerzenia języka Python dla usługi App Service, zgodnie z opisem w tym artykule na rzecz bezpośrednim wdrożeniu do usługi App Service w systemie Linux. Rozszerzenia nadal działają w tym samym czasie. Aby wdrożyć usługę App Service w systemie Linux, zobacz [tworzenie aplikacji sieci web w języku Python w usłudze Azure App Service w systemie Linux](/azure/app-service/containers/quickstart-python).
+> Microsoft jest przestarzała rozszerzenia języka Python dla usługi App Service na Windows zgodnie z opisem w tym artykule na rzecz bezpośrednim wdrożeniu do [usługi App Service w systemie Linux](publishing-python-web-applications-to-azure-from-visual-studio.md).
 
 [Usługa Azure App Service](https://azure.microsoft.com/services/app-service/) to oferta platformy jako usługi dla aplikacji sieci web, czy są one dostępne za pośrednictwem przeglądarki, interfejsów API REST używany przez własnych klientów lub wyzwalane przez zdarzenia przetwarzania witryn. Usługa App Service w pełni obsługuje przy użyciu języka Python do wdrożenia aplikacji.
 

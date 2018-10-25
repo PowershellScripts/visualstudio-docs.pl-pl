@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_offset | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_offset — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e1cf6b88a306fbb6cb127ec8174b5030a6d4d88
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0b2fa3ed234532ad3de02a31d4600f10f5375ad3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850077"
 ---
 # <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
-Pobiera przesunięcie Lokalizacja symbolu. Używany, gdy [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) jest `LocIsRegRel` lub `LocIsBitField`.  
+Pobiera przesunięcie lokalizacji symboli. Zastosowania [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) jest `LocIsRegRel` lub `LocIsBitField`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,16 +34,16 @@ HRESULT get_offset (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca Przesunięcie bajtów Lokalizacja symbolu.  
+ [out] Zwraca przesunięcie w bajtach lokalizacji symboli.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
- Przesunięcie jest z pewnym momencie znanych wcześniej określona. Na przykład przesunięcie `LocIsBitField` typu lokalizacji jest zwykle od początku zawierające klasy.  
+ Przesunięcie jest w pewnym momencie znane wcześniej określana. Na przykład przesunięcie `LocIsBitField` typ lokalizacji jest zazwyczaj od samego początku zawierający klasy.  
   
 ## <a name="requirements"></a>Wymagania  
   
@@ -54,4 +54,4 @@ HRESULT get_offset (
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [Locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md)
+ [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)

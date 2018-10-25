@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 12363adb78c4fca7d5ef3416a2642a68a7c3eab7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1101a3e21fa75a180ec2421cdce37aa40bc9656
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860527"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861283"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Opis modeli, klas i relacji
 Języka specyficznego dla domeny (DSL) jest definiowany przez jego pliku definicji DSL, wraz z wszelki kod niestandardowy program, który może zapisać. Większość kodu programu w rozwiązaniu DSL jest generowany na podstawie tego pliku.
@@ -135,7 +135,7 @@ Języka specyficznego dla domeny (DSL) jest definiowany przez jego pliku definic
  Konfigurowanie Liczebność roli, wpisując na diagramie lub modyfikując `Multiplicity` właściwość **właściwości** okna. W poniższej tabeli opisano ustawienia dla tej właściwości.
 
 |Typ liczebność|Opis|
-|-----------------------|-----------------|
+|-|-|
 |0.. * (zero do wielu)|Każde wystąpienie klasy domeny może mieć wiele wystąpień tej relacji lub nie wystąpienia relacji.|
 |Od 0 do 1 (zero do jednego)|Każde wystąpienie klasy domeny może mieć nie więcej niż jedno wystąpienie relacji lub nie wystąpienia relacji.|
 |1..1 (po jednym)|Każde wystąpienie klasy domeny może mieć jedno wystąpienie relacji. Nie można utworzyć więcej niż jedno wystąpienie tej relacji z dowolnej instancji klasy roli. Jeśli włączono weryfikację błąd sprawdzania poprawności pojawi się, gdy dowolne wystąpienie klasy roli ma żadne wystąpienie relacji.|

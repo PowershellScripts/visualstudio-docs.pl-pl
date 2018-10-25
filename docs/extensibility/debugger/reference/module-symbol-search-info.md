@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb62fb0a830c8c3bf6bb9b7ca186e001573b7b37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9deadc13f8cbe3678282bb2d9ac619959ecd26b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126243"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875921"
 ---
 # <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
-Zawiera informacje dotyczące ścieżki wyszukiwania symboli, które Przeszukano stanu.  
+Zawiera informacje o stanie dotyczące ścieżki wyszukiwania symboli, które zostały przeszukiwane.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,21 +44,21 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
   
 #### <a name="parameters"></a>Parametry  
  `dwValidFields`  
- Kombinacja flag z [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) wyliczenie opisujące rodzaj wyszukiwania informacje opisane w tej struktury.  
+ Kombinacja flag z [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) wyliczenie opisujące rodzaju informacje o wyszukiwaniu opisane w tej strukturze.  
   
  `bstrVerboseSearchInfo`  
- Ścieżka wyszukiwania i wyników połączonych w jednym ciągu.  
+ Ścieżka wyszukiwania i wyników połączonych w jeden ciąg.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest zwracana z wywołania [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) metody.  
+ Ta struktura jest zwracany z wywołania [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) metody.  
   
- Jeśli `bstrVerboseSearchInfo` pole nie jest puste, a następnie znajduje się lista ścieżek przeszukiwane i wyniki tego wyszukiwania. Lista jest sformatowany w systemie ścieżkę, a następnie wielokropkiem ("..."), a następnie wynik. Jeśli istnieje więcej niż jedna para wyników ścieżki, następnie każda para jest oddzielona parę "\r\n" (karetki return/wysuw wiersza). Wzorzec wygląda następująco:  
+ Jeśli `bstrVerboseSearchInfo` pole nie jest puste, a następnie zawiera listę ścieżek przeszukiwane i wyniki tego wyszukiwania. Lista jest formatowana ze ścieżką, w którym następuje wielokropek ("..."), a następnie wynik. W przypadku więcej niż jedną parę wynik ścieżki każdej pary jest oddzielony przez parę "\r\n" (powrót karetki return/wysuw wiersza). Wzorzec wygląda następująco:  
   
  \<Ścieżka >... \<wyniku > \r\n\<ścieżka >... \<wyniku > \r\n\<ścieżka >... \<wyniku >  
   
  Należy pamiętać, że ostatni wpis nie ma sekwencji \r\n.  
   
- W tym miejscu jest potencjalnie `bstrVerboseSearchInfo` ciąg, który został wysłany do wyjście standardowe.  
+ Poniżej przedstawiono możliwe `bstrVerboseSearchInfo` ciąg, który została wysłana na standardowe wyjście.  
   
  `c:\symbols\user32.pdb... File not found.`  
   
@@ -74,5 +74,5 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md)

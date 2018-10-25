@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: dc7351c9449993b624569cc13ac5ced7d169b129
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321180"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837116"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Użyć środowiska laboratoryjnego dla Twojego metodyki devops
 
@@ -36,9 +36,9 @@ Oto przykłady typowych topologii środowiska laboratorium:
 |![Środowisko laboratoryjne chmury](../media/topology_cloud.png)| To środowisko laboratoryjne zapewnia podobne możliwości i funkcji jako _topologii serwerów_, ale eliminuje konieczność fizycznych lub maszyn wirtualnych działających w środowisku lokalnym; można skrócić czas instalacji, Uprość Konserwacja i zminimalizowania kosztów. Konfigurowanie wielu witryn sieci Web i maszyn wirtualnych, wraz z niestandardowych sieci jest szybkie i łatwe w środowisku chmury, takich jak Microsoft Azure.|
 |![Środowisko laboratoryjne klient serwer](../media/topology_clientserver.png)| To środowisko laboratoryjne ma *topologii klient serwer*, która jest często używana do testowania aplikacji, która ma składników serwera i klienta. W topologii klient/serwer wszystkich komputerów klienckich i serwerów, umożliwia przetestowanie aplikacji znajdują się w swoim środowisku laboratoryjnym. Gdy używasz tej topologii, możesz zebrać dane testowe z każdej maszynie, która ma wpływ na testy.|
 
-|   |   |
+| | |
 |---|---|
-|  ![Ikona aparatu filmu wideo](../../install/media/video-icon.png)  |    [Obejrzyj film wideo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) na zarządzanie środowiskami laboratoryjnymi na potrzeby testowania. |
+| ![Ikona aparatu filmu wideo](../../install/media/video-icon.png) | [Obejrzyj film wideo](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing) na zarządzanie środowiskami laboratoryjnymi na potrzeby testowania. |
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>Korzystaj z chmury, za pomocą potoków usługi Azure lub kompilacji programu Team Foundation Server i wersji
 
@@ -95,7 +95,7 @@ Aby uzyskać informacji na temat programu SCVMM, zobacz [programu Virtual Machin
 Środowiska standardowe oraz środowiska SCVMM obsługuje wiele z tych samych funkcji. Istnieją jednak pewne ważne różnice wziąć pod uwagę. W poniższej tabeli porównano funkcje, które są dostępne dla środowiska standardowe oraz środowiska SCVMM.
 
 |Możliwość|Środowiska SCVMM|Środowisk standardowych|
-|----------------|------------------------|---------------------------|
+|-|------------------------|-|
 |**Testowanie**|||
 |Uruchamianie testów ręcznych|Obsługiwane|Obsługiwane|
 |Uruchom kodowane interfejsu użytkownika i innych testów automatycznych|Obsługiwane|Obsługiwane|
@@ -117,7 +117,7 @@ Aby uzyskać informacji na temat programu SCVMM, zobacz [programu Virtual Machin
 Poniżej przedstawiono niektóre dodatkowe pojęcia, które należy poznać przed kontynuowaniem:
 
 |Termin|Opis|
-|----------|-----------------|
+|-|-----------------|
 |Centrum laboratoryjnego|Obszar programu Microsoft Test Manager którym tworzyć i zarządzać środowiskami laboratoryjnymi.|
 |Laboratorium projektu DevOps platformy Azure|Kolekcja środowiska laboratoryjne, które tak skonfigurowany, można połączyć z nich i uruchamianie maszyn wirtualnych.|
 |Biblioteki projektu DevOps platformy Azure|Archiwum przechowywanych maszyn wirtualnych, szablonów i środowisk laboratoryjnych przechowywanych, które zostały zaimportowane do grupy hostów projektu. Można użyć elementów w bibliotece z SCVMM environments; jednak nie możesz dodać je bezpośrednio do standardowego środowiska. Nie można uruchomić elementy w bibliotece; Zamiast tego możesz użyć je do wdrożenia nowego środowiska.|

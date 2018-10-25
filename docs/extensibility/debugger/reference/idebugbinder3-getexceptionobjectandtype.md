@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 519281487e85ec7dffc0e7bb470d044dc2bae885
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61f82cdeda76cd8660fff47e30edf37c81d154f5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099288"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867796"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 Ta metoda pobiera wyjątku skojarzonego z obiektem, jeśli istnieje.  
@@ -46,13 +46,13 @@ int GetExceptionObjectAndType(
  [out] Zwraca obiekt reprezentujący wyjątek.  
   
  `ppField`  
- [out] Zwraca obiekt reprezentujący określonego pola, którego może spowodować wyjątek (może to być wartość null).  
+ [out] Zwraca obiekt reprezentujący określonego pola, które mogą być przyczyną wyjątku (może to być wartość null).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 > [!NOTE]
->  Aby sprawdzić, czy jest to wyjątek, sprawdź wartość zwrócona przez `ppException`: Jeśli jest to wartość null, a następnie wyjątku nie jest skojarzony z tym obiektem.  
+>  Aby sprawdzić, czy występuje wyjątek, należy sprawdzić wartość zwrócona przez obiekt `ppException`: Jeśli jest to wartość null, wówczas żaden wyjątek nie jest skojarzony z tym obiektem.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

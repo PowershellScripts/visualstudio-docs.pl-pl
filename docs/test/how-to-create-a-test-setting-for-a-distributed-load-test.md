@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d2ee44fd277766cb206f3e1e71ed52be6d406a08
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b7d7592d1bdbce0a5a80b304a89c7eaa28875502
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816058"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Porady: Tworzenie ustawień testu dla testu obciążenia rozłożonego
 
@@ -124,7 +124,7 @@ Wykonaj następujące kroki, aby utworzyć i usuwania ustawień testowych w rozw
      **Adaptery danych diagnostycznych dla testów obciążenia**
 
     |Adapter danych diagnostycznych|Używanie w testach obciążeniowych|Skojarzonego tematu|
-    |-----------------------------|-------------------------|----------------------|
+    |-|-------------------------|-|
     |**Serwer Proxy klienta ASP.NET dla IntelliTrace i wpływu Test:** ten serwer proxy umożliwia zbieranie informacji na temat połączeń http od klienta do serwera sieci web dla adapterów danych diagnostycznych IntelliTrace i badanie wpływu.|![Ikona informacji](../test/media/vc364f4.gif)<br /><br /> Jeśli nie ma określonych specjalnych potrzeb zbierania informacji systemowych maszyny agenta testowego nie zawierają tej karty. **Uwaga:** nie zalecamy użycia karty IntelliTrace w testach obciążenia z powodu problemów, które występują ze względu na dużą ilość danych, które są zbierane. <br /><br /> Dane dotyczące wpływu wywieranego nie są zbierane za pomocą testów obciążenia.||
     |**IntelliTrace:** można skonfigurować informacji diagnostycznych śledzenia, który jest przechowywany w pliku dziennika. Plik dziennika ma rozszerzenie *.tdlog*. Kiedy uruchamiasz test i krok testu zakończy się niepowodzeniem, można utworzyć usterkę. Plik dziennika, który zawiera śledzenia diagnostycznego jest automatycznie dołączany do tej usterki. Dane, które są zbierane w pliku dziennika zwiększają produktywność debugowania, skracając czas wymagany do odtworzenia i diagnozy błędu w kodzie. W tym dzienniku plików sesja lokalna może być odtworzona na innym komputerze. Zmniejsza to ryzyko, że błędu nie można odtworzyć.<br /><br /> Aby uzyskać więcej informacji, zobacz [danych zbierania IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Ikona ważnej informacji](../test/media/vc364f3.gif)<br /><br /> Zalecamy użycia karty IntelliTrace w testach obciążenia z powodu problemów, które występują ze względu na dużą ilość danych, które są zbierane i rejestrowane. Należy podjąć próbę używania karty IntelliTrace tylko w testach obciążenia, które nie trwają długo i nie używają wielu agentów testowych.|[Porady: zbieranie danych IntelliTrace aby pomóc w debugowaniu trudnych problemów](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**Profiler ASP.NET:** można utworzyć ustawienie testu zawierające profilowania, ASP.NET, która zbiera dane dotyczące wydajności w aplikacji sieci web platformy ASP.NET.|Adapter danych diagnostycznych profilera ASP.NET profile proces Internet Information Services (IIS), dzięki czemu nie będą działać względem serwera wdrożeniowego sieci web. Profilowanie witryny sieci Web w teście obciążenia, musisz zainstalować agenta testowego na komputerze, na którym jest zasilany z usług IIS. Agent testowy nie będzie generować obciążenia, ale będzie wyłącznie agentem kolekcji. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).|[Porady: Konfiguracja profilera ASP.NET do testów obciążenia za pomocą ustawień testu](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|

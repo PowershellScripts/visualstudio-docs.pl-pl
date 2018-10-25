@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb29d4245529e53a9313ae18638066979caab7a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ad47eb92af6c9ad37bafe293e6c7392613718c30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846450"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
-Zwraca kontekst kodu reprezentujący lokalizacji, jeśli operacja Odwiń stos wystąpił.  
+Zwraca kontekst kodu reprezentujący lokalizację, w przypadku operacji rozwijania stosu wystąpił.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int GetUnwindCodeContext(
   
 #### <a name="parameters"></a>Parametry  
  `ppCodeContext`  
- [out] Zwraca [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który reprezentuje lokalizacji kontekst kodu, jeśli wystąpił odwijania stosu.  
+ [out] Zwraca [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który reprezentuje lokalizacji kontekst kodu, jeśli wystąpił podczas odwijania stosu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Mimo że ta metoda może zwracać kontekst kodu dla lokalizacji po odwijania stosu, go nie musi oznaczać unwind stosu faktycznie może wystąpić w bieżącej ramki stosu.  
+ Mimo że ta metoda może zwrócić kontekst kodu w lokalizacji po odwijania stosu, go nie musi oznaczać, że odwijania stosu faktycznie mogą występować w bieżącej ramki stosu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)   

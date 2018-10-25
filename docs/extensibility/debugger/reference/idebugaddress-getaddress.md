@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7f93b57d3cdbea71d3cf9cbe3d51645251c9628
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 869094fabca44eca352a9610ac59a6627df74dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873360"
 ---
 # <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
-Zwraca struktury opisujące obiekt i jego lokalizacji w jego zakresie lub kontenera.  
+Zwraca strukturę opisujący obiekt i jego lokalizację w jego zakres lub kontenera.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int GetAddress(
   
 #### <a name="parameters"></a>Parametry  
  `pAddress`  
- [w, out] A [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struktury, która jest wstawiana przez tę metodę.  
+ [out w] A [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) strukturę, która jest wypełniane przez tę metodę.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struktury są przekazywane do tej metody, która wypełnia je za pomocą odpowiednich informacji. Jak te informacje jest interpretowany zależy od rodzaju zwrócone informacje i procedury obsługi symboli, sam. Zobacz [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) więcej szczegółów.  
+ [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) struktury jest przekazywany do tej metody, która wypełnia go przy użyciu odpowiednich informacji. Interpretacji tych informacji, zależy od rodzaju informacje zwrócone i symbol program obsługi. Zobacz [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) Aby uzyskać więcej informacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

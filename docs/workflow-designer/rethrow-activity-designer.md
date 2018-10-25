@@ -1,5 +1,5 @@
 ---
-title: Projektant przepływu pracy — Projektant działania Rethrow
+title: Projektant przepływu pracy — Zgłoś ponownie projektanta działań
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,32 +12,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c13b629047b73b3f3ee15f2fc25a0120a2c177
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2b1d1832a7c0c44abb1e8c97ec4c8265262d117e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755258"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857552"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow, projektant działań
 
-**Rethrow** Projektant działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Rethrow> działania.
+**Zgłoś ponownie** projektanta działań służy do tworzenia i konfigurowania <xref:System.Activities.Statements.Rethrow> działania.
 
-## <a name="the-rethrow-activity"></a>Działanie Rethrow
+## <a name="the-rethrow-activity"></a>Działanie ponownego zgłoszenia
 
-<xref:System.Activities.Statements.Rethrow> Działania zgłasza wcześniej zwrócony wyjątek. To działanie może być używane tylko w <xref:System.Activities.Statements.Catch> obsługi w <xref:System.Activities.Statements.TryCatch> działania.
+<xref:System.Activities.Statements.Rethrow> Działanie zgłasza wcześniej zgłoszony wyjątek. To działanie można używać tylko w <xref:System.Activities.Statements.Catch> obsługi w <xref:System.Activities.Statements.TryCatch> działania.
 
-### <a name="use-the-rethrow-activity-designer"></a>Za pomocą projektanta działania ReThrow
+### <a name="use-the-rethrow-activity-designer"></a>Za pomocą projektanta działań Zgłoś ponownie
 
-Dostęp **Rethrow** Projektant działań w **obsługi błędu** kategorii **przybornika**. **Rethrow** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Projektant działań porzucenie tworzy <xref:System.Activities.Statements.Rethrow> działania z domyślną **DisplayName** z Throw. <xref:System.Activities.Activity.DisplayName%2A> Wartość można edytować w nagłówku **Rethrow** Projektant działań lub **DisplayName** pola siatki właściwości.
+Dostęp do **Zgłoś ponownie** projektanta działań w **obsługę błędów** kategorii **przybornika**. **Zgłoś ponownie** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie działań są zazwyczaj umieszczane, takie jak wewnątrz <xref:System.Activities.Statements.Sequence>. Projektant działań porzucenie tworzy <xref:System.Activities.Statements.Rethrow> działanie przy użyciu domyślnego **DisplayName** z Throw. <xref:System.Activities.Activity.DisplayName%2A> Wartość może być edytowana w nagłówku **Zgłoś ponownie** Projektant działań lub **DisplayName** pola siatki właściwości.
 
-### <a name="the-rethrow-properties"></a>Właściwości Rethrow
+### <a name="the-rethrow-properties"></a>Zgłoś ponownie właściwości
 
-W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Rethrow> właściwości oraz opisano, jak są używane w Projektancie:
+W poniższej tabeli przedstawiono <xref:System.Activities.Statements.Rethrow> właściwości, a w tym artykule opisano, jak są używane w Projektancie:
 
 |Nazwa właściwości|Wymagane|Użycie|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa opcjonalne przyjazna nazwa <xref:System.Activities.Statements.Rethrow> działania. Wartość domyślna to Rethrow.|
+|-|--------------|-|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa opcjonalny przyjazna nazwa <xref:System.Activities.Statements.Rethrow> działania. Wartość domyślna to Zgłoś ponownie.|
 
 ## <a name="see-also"></a>Zobacz także
 

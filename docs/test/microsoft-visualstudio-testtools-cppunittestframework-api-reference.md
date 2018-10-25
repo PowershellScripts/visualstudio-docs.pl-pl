@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 8309ee96b0948739124e0e23c4a57dd136f63362
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: b2225ec5db308b290e932cb9d29d1c50e32d4608
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820268"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Dokumentacja interfejsu API z Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -29,72 +29,73 @@ Nagłówek i lib ścieżki są konfigurowane automatycznie w projekcie testowym 
 ##  <a name="In_this_topic"></a> W tym temacie
  [CppUnitTest.h](#cppUnitTest_h)
 
--   [Tworzenie klasy testów i metody](#create_test_classes_and_methods)
+- [Tworzenie klasy testów i metody](#create_test_classes_and_methods)
 
--   [Inicjowanie i oczyszczanie](#Initialize_and_cleanup)
+- [Inicjowanie i oczyszczanie](#Initialize_and_cleanup)
 
-    -   [Metody testowe](#test_methods)
+  -   [Metody testowe](#test_methods)
 
-    -   [Klas testowych](#test_classes)
+  -   [Klas testowych](#test_classes)
 
-    -   [Testowanie modułów](#test_modules)
+  -   [Testowanie modułów](#test_modules)
 
--   [Utwórz atrybuty testu](#create_test_attributes)
+- [Utwórz atrybuty testu](#create_test_attributes)
 
-    -   [Atrybuty metody testu](#test_method_attributes)
+  - [Atrybuty metody testu](#test_method_attributes)
 
-    -   [Atrybuty klasy testu](#test_class_attributes)
+  - [Atrybuty klasy testu](#test_class_attributes)
 
-    -   [Atrybuty modułów testu](#test_module_attributes)
+  - [Atrybuty modułów testu](#test_module_attributes)
 
-    -   [Wstępnie zdefiniowanych atrybutów](#pre_defined_attributes)
+  - [Wstępnie zdefiniowanych atrybutów](#pre_defined_attributes)
 
-     [CppUnitTestAssert.h](#cppUnitTestAssert_h)
+    [CppUnitTestAssert.h](#cppUnitTestAssert_h)
 
-    -   [Potwierdza ogólne](#general_asserts)
+  - [Potwierdza ogólne](#general_asserts)
 
-        -   [Są takie same](#general_are_equal)
+    -   [Są takie same](#general_are_equal)
 
-        -   [Nie są takie same](#general_are_not_equal)
+    -   [Nie są takie same](#general_are_not_equal)
 
-        -   [Są takie Same](#general_are_same)
+    -   [Są takie Same](#general_are_same)
 
-        -   [Nie są takie Same](#general_are_not_same)
+    -   [Nie są takie Same](#general_are_not_same)
 
-        -   [Ma wartość Null](#general_is_null)
+    -   [Ma wartość Null](#general_is_null)
 
-        -   [Nie ma wartości Null](#general_is_not_null)
+    -   [Nie ma wartości Null](#general_is_not_null)
 
-        -   [Ma wartość True](#general_is_True)
+    -   [Ma wartość True](#general_is_True)
 
-        -   [Ma wartość False](#general_is_false)
+    -   [Ma wartość False](#general_is_false)
 
-        -   [Niepowodzenie](#general_Fail)
+    -   [Niepowodzenie](#general_Fail)
 
-    -   [Potwierdza Windows Runtime](#winrt_asserts)
+  - [Potwierdza Windows Runtime](#winrt_asserts)
 
-        -   [Są takie same](#winrt_are_equal)
+    -   [Są takie same](#winrt_are_equal)
 
-        -   [Są takie Same](#winrt_are_same)
+    -   [Są takie Same](#winrt_are_same)
 
-        -   [Nie są takie same](#winrt_are_not_equal)
+    -   [Nie są takie same](#winrt_are_not_equal)
 
-        -   [Nie są takie Same](#winrt_are_not_same)
+    -   [Nie są takie Same](#winrt_are_not_same)
 
-        -   [Ma wartość Null](#winrt_is_null)
+    -   [Ma wartość Null](#winrt_is_null)
 
-        -   [Nie ma wartości Null](#winrt_is_not_null)
+    -   [Nie ma wartości Null](#winrt_is_not_null)
 
-    -   [Wyjątek asercji](#exception_asserts)
+  - [Wyjątek asercji](#exception_asserts)
 
-        -   [Oczekiwany wyjątek](#expect_exception)
+    - [Oczekiwany wyjątek](#expect_exception)
 
-         [CppUnitTestLogger.h](#cppunittestlogger_h)
+      [CppUnitTestLogger.h](#cppunittestlogger_h)
 
-        -   [Logger](#logger)
+    - [Logger](#logger)
 
-        -   [Napisz wiadomość](#write_message)
-    -    [Przykład użycia](#example)
+    - [Napisz wiadomość](#write_message)
+
+  - [Przykład użycia](#example)
 
 ##  <a name="cppUnitTest_h"></a> CppUnitTest.h
 
@@ -111,7 +112,6 @@ TEST_METHOD(methodName)
 {
     // test method body
 }
-
 ```
 
  Definiuje *methodName* jako metoda testowa. `TEST_METHOD` musi być zadeklarowana w zakresie metody klasy.
@@ -125,7 +125,6 @@ TEST_METHOD_INITIALIZE(methodName)
 {
     // method initialization code
 }
-
 ```
 
  Definiuje *methodName* jako metodę, która jest uruchamiana przed uruchomieniem każdej metody testowej. `TEST_METHOD_INITIALIZE` mogą być definiowane tylko raz w klasie testu i musi być zdefiniowany w klasie testu.
@@ -135,7 +134,6 @@ TEST_METHOD_CLEANUP(methodName)
 {
     // test method cleanup  code
 }
-
 ```
 
  Definiuje *methodName* jako metodę, która jest uruchamiana po uruchomieniu każdej metody testowej. `TEST_METHOD_CLEANUP` mogą być definiowane tylko raz w klasie testu i musi być zdefiniowany w zakresie klasy testowej.

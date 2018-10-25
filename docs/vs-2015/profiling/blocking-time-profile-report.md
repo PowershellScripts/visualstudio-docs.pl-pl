@@ -18,23 +18,23 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6cf06fc37a10f6bf028d3f4ef7174e73574b604b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5be0649cd9d3fb7aa5f4e3f52496ec43658a41ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842875"
 ---
 # <a name="blocking-time-profile-report"></a>Raport profilowania czasu blokowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Profilu, raportów Obejmij zagregowane dane czasu blokowania stosy wywołań, które są specyficzne dla każdej kategorii blokowania (na przykład "We/wy" lub "Synchronizacji"). Raport Wywłaszczania zawiera listę procesów, które przerywane bieżący proces wraz z liczbą wystąpień wywłaszczania. Aby skompilować blokowania raport profilu, narzędzie umożliwia zbieranie informacji o blokadzie wywołań interfejsu API i gromadzi ich do drzewa stosów wywołań. Dane wyświetlane w tych raportach różni się przez bieżącego zakresu czasu, ukrytych wątków i następujące dwa filtry, które mogą być stosowane:  
   
--   Jeśli wybrano opcję tylko mój kod, prezentowane są tylko ramki stosu, które mają kod użytkownika i jeden poziom poniżej kod użytkownika.  
+- Jeśli wybrano opcję tylko mój kod, prezentowane są tylko ramki stosu, które mają kod użytkownika i jeden poziom poniżej kod użytkownika.  
   
--   Jeśli ustawiono wartość redukcji szumu, sortowane stosów, które mają mniej niż z określoną częstotliwością są pomijane.  
+- Jeśli ustawiono wartość redukcji szumu, sortowane stosów, które mają mniej niż z określoną częstotliwością są pomijane.  
   
- Rozwiń drzewo wywołań zapis wiersza kodu, w którym blokowania jest zużywany czas. Aby zlokalizować wiersz źródła dla wpisu w jego menu skrótów, wybierz opcję **Wyświetl źródło**. Aby zlokalizować wiersza kodu, który wywołał tego jednego, w menu skrótów wybierz **widok wywołań witryn**. Jeśli tylko jedna lokacja wywołania jest dostępna, polecenie łączy się z wyróżniony wiersz kodu do witryny wywołania. Jeśli dostępnych jest wiele wywołań, polecenie powoduje otwarcie okna dialogowego, w którym możesz wybierz wpis, a następnie wybrać **przejdź do źródła** przycisk, aby zlokalizować wyróżnione wywołania. Często jest najbardziej użyteczna wyświetlić kod źródłowy dla lokacji wywołania, która ma najwięcej wystąpień i/lub najwięcej czasu.  
+  Rozwiń drzewo wywołań zapis wiersza kodu, w którym blokowania jest zużywany czas. Aby zlokalizować wiersz źródła dla wpisu w jego menu skrótów, wybierz opcję **Wyświetl źródło**. Aby zlokalizować wiersza kodu, który wywołał tego jednego, w menu skrótów wybierz **widok wywołań witryn**. Jeśli tylko jedna lokacja wywołania jest dostępna, polecenie łączy się z wyróżniony wiersz kodu do witryny wywołania. Jeśli dostępnych jest wiele wywołań, polecenie powoduje otwarcie okna dialogowego, w którym możesz wybierz wpis, a następnie wybrać **przejdź do źródła** przycisk, aby zlokalizować wyróżnione wywołania. Często jest najbardziej użyteczna wyświetlić kod źródłowy dla lokacji wywołania, która ma najwięcej wystąpień i/lub najwięcej czasu.  
   
 ## <a name="blocking-time-report-columns"></a>Kolumny raportu czas blokowania  
  W poniższej tabeli przedstawiono kolumny dla każdego blokowania czasie — raport.  

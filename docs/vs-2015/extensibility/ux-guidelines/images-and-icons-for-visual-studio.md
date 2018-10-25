@@ -13,12 +13,12 @@ ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a818bf9b1975692c220b2be82b2fed7ca97fad13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8a1336ca880a3824e16f432c07ccf0caa769f60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255752"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872541"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Obrazy i ikony dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,21 +45,21 @@ ms.locfileid: "49255752"
 ### <a name="overview"></a>Omówienie  
  Visual Studio używa współczesny styl ikony, które geometrii czyste i 50/50 saldo plus/minus (jasny/ciemny) i użyj metafory bezpośrednie i zrozumiałej. Ikona kluczowe znaczenie podczas projektowania Centrum punktów wokół uściślenia i uproszczenie i kontekstu.  
   
--   **W celu uściślenia:** skupić się na podstawowych metaphor, zapewniająca ikony jego znaczenie i indywidualizm.  
+- **W celu uściślenia:** skupić się na podstawowych metaphor, zapewniająca ikony jego znaczenie i indywidualizm.  
   
--   **Uproszczenie:** zmniejszyć ikonę jego znaczenie core — Pobierz motyw tylko niezbędne elementy i nie frills.  
+- **Uproszczenie:** zmniejszyć ikonę jego znaczenie core — Pobierz motyw tylko niezbędne elementy i nie frills.  
   
--   **Kontekst:** należy wziąć pod uwagę wszystkie aspekty ról ikonę podczas tworzenia koncepcji, który jest kluczowy podczas podczas podejmowania decyzji o elementy, które stanowią metaphor core ikony.  
+- **Kontekst:** należy wziąć pod uwagę wszystkie aspekty ról ikonę podczas tworzenia koncepcji, który jest kluczowy podczas podczas podejmowania decyzji o elementy, które stanowią metaphor core ikony.  
   
- Za pomocą ikony istnieje kilka punktów zaprojektowanych w celu uniknięcia:  
+  Za pomocą ikony istnieje kilka punktów zaprojektowanych w celu uniknięcia:  
   
--   Nie należy używać ikony, które oznaczają elementy interfejsu użytkownika, z wyjątkiem sytuacji, gdy jest to konieczne. Wybierz podejście bardziej abstrakcyjne lub symbolicznych, gdy element interfejsu użytkownika nie jest wspólnego, wyraźne, ani unikatowy.  
+- Nie należy używać ikony, które oznaczają elementy interfejsu użytkownika, z wyjątkiem sytuacji, gdy jest to konieczne. Wybierz podejście bardziej abstrakcyjne lub symbolicznych, gdy element interfejsu użytkownika nie jest wspólnego, wyraźne, ani unikatowy.  
   
--   Nie nadużyciami wspólnych elementów, takich jak dokumenty, folderów, strzałki i ikonę lupy. Za pomocą tych elementów tylko wtedy, gdy jest to istotne znaczenie ikony. Na przykład szkła powiększającego skierowaną w prawo powinna być widoczna tylko wyszukiwanie, przeglądanie i znajdowanie.  
+- Nie nadużyciami wspólnych elementów, takich jak dokumenty, folderów, strzałki i ikonę lupy. Za pomocą tych elementów tylko wtedy, gdy jest to istotne znaczenie ikony. Na przykład szkła powiększającego skierowaną w prawo powinna być widoczna tylko wyszukiwanie, przeglądanie i znajdowanie.  
   
--   Mimo że niektóre elementy starsza wersja ikony Obsługa korzystanie z punktu widzenia, nie należy tworzyć nowe ikony z punktu widzenia, chyba że element nie posiada przejrzystości bez niego.  
+- Mimo że niektóre elementy starsza wersja ikony Obsługa korzystanie z punktu widzenia, nie należy tworzyć nowe ikony z punktu widzenia, chyba że element nie posiada przejrzystości bez niego.  
   
--   Nie zwiększały zbyt dużej ilości informacji do ikony. Proste obrazu, który można łatwo rozpoznane lub rozpoznane jako symbol separatora rozpoznawalnych jest znacznie bardziej przydatne niż obraz zbyt skomplikowana. Ikona nie przekazuje wszystkich informacji.  
+- Nie zwiększały zbyt dużej ilości informacji do ikony. Proste obrazu, który można łatwo rozpoznane lub rozpoznane jako symbol separatora rozpoznawalnych jest znacznie bardziej przydatne niż obraz zbyt skomplikowana. Ikona nie przekazuje wszystkich informacji.  
   
 ### <a name="icon-creation"></a>Ikona tworzenia  
   
@@ -266,19 +266,19 @@ ms.locfileid: "49255752"
 ### <a name="icon-construction"></a>Ikona tworzenia  
  Najmniejszy rozmiar ikony w programie Visual Studio jest 16 x 16. Największy wspólne użycie jest 32 x 32. Należy pamiętać, nie w celu wypełnienia całe ramki 16 x 16, 24 x 24 lub 32 x 32 podczas projektowania ikony. Konstrukcja czytelny, jednolity ikona jest niezbędne do rozpoznawania użytkownika. Podczas kompilowania ikony, należy stosować się do następujących punktów.  
   
--   Ikony powinny być jasne, do zrozumienia i spójne.  
+- Ikony powinny być jasne, do zrozumienia i spójne.  
   
--   Zaleca się, użyj elementów powiadomień stanu jako pojedynczy ikony, a nie stosu je na górze ikonę elementu podstawowego. W niektórych kontekstach interfejsu użytkownika mogą wymagać elementu stanu, aby łączyć się z elementu podstawowego.  
+- Zaleca się, użyj elementów powiadomień stanu jako pojedynczy ikony, a nie stosu je na górze ikonę elementu podstawowego. W niektórych kontekstach interfejsu użytkownika mogą wymagać elementu stanu, aby łączyć się z elementu podstawowego.  
   
--   Ikony projektu są zazwyczaj pliki .ico, które zawierają wiele rozmiarów. Trwa aktualizowanie tylko ikony 16 x 16, 24 x 24 oraz 32 × 32. Większość ikon 16 x 16 i 24 x 24 będzie zawierać te same elementy. Ikony 32 x 32 zawiera bardziej szczegółowe informacje, łącznie z typem języka projektu, jeśli ma to zastosowanie.  
+- Ikony projektu są zazwyczaj pliki .ico, które zawierają wiele rozmiarów. Trwa aktualizowanie tylko ikony 16 x 16, 24 x 24 oraz 32 × 32. Większość ikon 16 x 16 i 24 x 24 będzie zawierać te same elementy. Ikony 32 x 32 zawiera bardziej szczegółowe informacje, łącznie z typem języka projektu, jeśli ma to zastosowanie.  
   
--   Ikony 32 x 32 podstawowych elementów ma zazwyczaj grubość linii 2 pikseli. Grubość linii pikseli 1 lub 2 może służyć do szczegółów elementów. Zdrowym rozsądkiem najlepiej, aby określić, która jest bardziej odpowiednia.  
+- Ikony 32 x 32 podstawowych elementów ma zazwyczaj grubość linii 2 pikseli. Grubość linii pikseli 1 lub 2 może służyć do szczegółów elementów. Zdrowym rozsądkiem najlepiej, aby określić, która jest bardziej odpowiednia.  
   
--   Ma co najmniej 1-pikselowe odstępy elementy dla 16 x 16 i 24 x 24 ikon. Ikony 32 x 32 można użyć w 2-pikselowe odstępy między elementami oraz między modyfikator i elementu podstawowego.  
+- Ma co najmniej 1-pikselowe odstępy elementy dla 16 x 16 i 24 x 24 ikon. Ikony 32 x 32 można użyć w 2-pikselowe odstępy między elementami oraz między modyfikator i elementu podstawowego.  
   
- ![Odstępy dla 16 x 16, 24 x 24 oraz 32 × 32 ikon](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "0404 47_ElementSpacing")  
+  ![Odstępy dla 16 x 16, 24 x 24 oraz 32 × 32 ikon](../../extensibility/ux-guidelines/media/0404-47-elementspacing.png "0404 47_ElementSpacing")  
   
- **Odstępy dla ikon o rozmiarze 16 x 16, 24 x 24 oraz 32 × 32**  
+  **Odstępy dla ikon o rozmiarze 16 x 16, 24 x 24 oraz 32 × 32**  
   
 #### <a name="color-and-accessibility"></a>Kolor i ułatwienia dostępu  
  Wytycznych dotyczących zgodności programu Visual Studio wymagają, że wszystkie ikony w produkcie przekazywać wymagania dotyczące ułatwień dostępu dla koloru i kontrast. Jest to realizowane poprzez odwrócenie ikonę, a podczas projektowania, należy pamiętać, że będą one można programowo odwrócony w produkcie.  

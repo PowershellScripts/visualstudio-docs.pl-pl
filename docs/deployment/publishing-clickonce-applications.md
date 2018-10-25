@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8ef8f2ae6ed1f198fc5f7661b79764d0a790bd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: da23fa30b3266d9ce8eaae1356a92a583d7b940f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876922"
 ---
 # <a name="publish-clickonce-applications"></a>Publikowanie aplikacji ClickOnce
 Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] właściwości publikowania aplikacji po raz pierwszy, można ustawić za pomocą Kreatora publikacji. Tylko niektóre właściwości są dostępne w Kreatorze; wszystkie pozostałe właściwości są ustawione na wartości domyślne.  
@@ -37,15 +37,15 @@ Podczas publikowania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 ## <a name="publish-wizard"></a>Kreator publikacji  
  W Kreatorze publikacji można użyć do skonfigurowania podstawowych ustawień do publikowania aplikacji. Dane te obejmują następujące właściwości publikacji:  
   
--   Lokalizacja folderu publikowania — gdzie Visual Studio skopiuje pliki (komputer lokalny, sieciowego udziału plików, serwer FTP lub witryny sieci Web)  
+- Lokalizacja folderu publikowania — gdzie Visual Studio skopiuje pliki (komputer lokalny, sieciowego udziału plików, serwer FTP lub witryny sieci Web)  
   
--   Lokalizacja folderu instalacji — gdzie użytkownicy będą instalować z (sieciowym udziale plików, serwer FTP, witryny sieci Web, dysk CD/DVD)  
+- Lokalizacja folderu instalacji — gdzie użytkownicy będą instalować z (sieciowym udziale plików, serwer FTP, witryny sieci Web, dysk CD/DVD)  
   
--   Online lub Offline dostępność — Jeśli użytkownicy końcowi mogą uzyskiwać dostęp do aplikacji, z lub bez połączenia sieciowego  
+- Online lub Offline dostępność — Jeśli użytkownicy końcowi mogą uzyskiwać dostęp do aplikacji, z lub bez połączenia sieciowego  
   
--   Zaktualizuj częstotliwość — jak często Aplikacja sprawdza dostępność nowych aktualizacji.  
+- Zaktualizuj częstotliwość — jak często Aplikacja sprawdza dostępność nowych aktualizacji.  
   
- Aby uzyskać więcej informacji, zobacz [porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+  Aby uzyskać więcej informacji, zobacz [porady: publikowanie aplikacji ClickOnce za pomocą Kreatora publikacji](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 ## <a name="publish-page"></a>Strona publikowania  
  **Publikuj** strony **projektanta projektu** służy do konfigurowania właściwości dla wdrażania ClickOnce. Poniższa tabela zawiera listę tematów.  

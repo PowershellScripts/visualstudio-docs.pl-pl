@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e52c074b7243162aa80bae67923b0d61daae564
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 504fa6855ad8b1fb38428e6e7ec7b3ac9721f644
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103893"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864260"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
-Określa, że funkcja pod adresem określonym debugowania została usunięta.  
+Określa, że funkcja pod adresem określonym debugowania zostanie usunięta.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,13 +39,13 @@ int IsFunctionDeleted(
   
 #### <a name="parameters"></a>Parametry  
  `pAddress`  
- [in] Adres debugowania reprezentowany przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu. Ten adres musi być METHOD_ADDRESS.  
+ [in] Adres debugowania reprezentowany przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu. Adres ten musi być METHOD_ADDRESS.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli funkcja zostaje usunięta, zwraca `S_OK`. Jeśli funkcja jest istnieje, zwraca `S_FALSE`.  
+ Jeśli funkcja zostanie usunięta, zwraca `S_OK`. Jeśli funkcja jest istnieje, zwraca `S_FALSE`.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::IsFunctionDeleted(  

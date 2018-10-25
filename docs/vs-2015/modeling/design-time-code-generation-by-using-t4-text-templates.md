@@ -20,12 +20,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1edc6e7d66e8b371f38e16052ba26fa61287e398
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859281"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generowanie kodu czasu projektowania przy użyciu szablonów tekstowych T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,66 +82,66 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
 ### <a name="regenerating-the-code"></a>Trwa ponowne generowanie kodu  
  Szablon zostanie wykonana, generowanie plików pomocniczych, w dowolnym z następujących przypadkach:  
   
--   Edytowanie szablonu, a następnie zmień fokus na inne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna.  
+- Edytowanie szablonu, a następnie zmień fokus na inne [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] okna.  
   
--   Zapisz szablon.  
+- Zapisz szablon.  
   
--   Kliknij przycisk **Przekształć wszystkie szablony** w **kompilacji** menu. To spowoduje przekształcenie wszystkie szablony w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania.  
+- Kliknij przycisk **Przekształć wszystkie szablony** w **kompilacji** menu. To spowoduje przekształcenie wszystkie szablony w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania.  
   
--   W **Eksploratora rozwiązań**menu skrótów w dowolnych plików, wybierz **Uruchom narzędzie niestandardowe**. Ta metoda umożliwia przekształcanie podzbiór wybranych szablonów.  
+- W **Eksploratora rozwiązań**menu skrótów w dowolnych plików, wybierz **Uruchom narzędzie niestandardowe**. Ta metoda umożliwia przekształcanie podzbiór wybranych szablonów.  
   
- Możesz również skonfigurować [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu, dzięki czemu szablony są wykonywane, gdy zostały zmienione pliki danych, które będzie ją odczytać. Aby uzyskać więcej informacji, zobacz [ponowne generowanie kodu automatycznie](#Regenerating).  
+  Możesz również skonfigurować [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projektu, dzięki czemu szablony są wykonywane, gdy zostały zmienione pliki danych, które będzie ją odczytać. Aby uzyskać więcej informacji, zobacz [ponowne generowanie kodu automatycznie](#Regenerating).  
   
 ## <a name="generating-variable-text"></a>Generowanie tekstu o zmiennym  
  Szablony tekstowe umożliwiają używanie kodu programu do zmiany zawartości w wygenerowanym pliku.  
   
 #### <a name="to-generate-text-by-using-program-code"></a>Aby wygenerować tekst przy użyciu kodu programu  
   
-1.  Zmień zawartość `.tt` pliku:  
+1. Zmień zawartość `.tt` pliku:  
   
-    ```csharp  
-    <#@ template hostspecific="false" language="C#" #>  
-    <#@ output extension=".txt" #>  
-    <#int top = 10;  
+   ```csharp  
+   <#@ template hostspecific="false" language="C#" #>  
+   <#@ output extension=".txt" #>  
+   <#int top = 10;  
   
-    for (int i = 0; i<=top; i++)   
-    { #>  
+   for (int i = 0; i<=top; i++)   
+   { #>  
+      The square of <#= i #> is <#= i*i #>  
+   <# } #>  
+   ```  
+  
+   ```vb  
+   <#@ template hostspecific="false" language="VB" #>  
+   <#@ output extension=".txt" #>  
+   <#Dim top As Integer = 10  
+  
+   For i As Integer = 0 To top  
+   #>  
        The square of <#= i #> is <#= i*i #>  
-    <# } #>  
-    ```  
+   <#  
+   Next  
+   #>  
   
-    ```vb  
-    <#@ template hostspecific="false" language="VB" #>  
-    <#@ output extension=".txt" #>  
-    <#Dim top As Integer = 10  
+   ```  
   
-    For i As Integer = 0 To top  
-    #>  
-        The square of <#= i #> is <#= i*i #>  
-    <#  
-    Next  
-    #>  
+2. Zapisz plik .tt i sprawdź plik txt wygenerowane ponownie. Wyświetla listę kwadratów liczb z zakresu od 0 do 10.  
   
-    ```  
+   Należy zauważyć, że instrukcje są ujęte w `<#...#>`i jednego wyrażenia w `<#=...#>`. Aby uzyskać więcej informacji, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).  
   
-2.  Zapisz plik .tt i sprawdź plik txt wygenerowane ponownie. Wyświetla listę kwadratów liczb z zakresu od 0 do 10.  
-  
- Należy zauważyć, że instrukcje są ujęte w `<#...#>`i jednego wyrażenia w `<#=...#>`. Aby uzyskać więcej informacji, zobacz [pisanie szablonu tekstowego T4](../modeling/writing-a-t4-text-template.md).  
-  
- Jeśli piszesz kod [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], `template` dyrektywy powinien zawierać `language="VB"`. `"C#"` jest ustawieniem domyślnym.  
+   Jeśli piszesz kod [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], `template` dyrektywy powinien zawierać `language="VB"`. `"C#"` jest ustawieniem domyślnym.  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>Debugowanie szablonu tekstowego T4 w czasie projektowania  
  Debugowanie szablonu tekstowego:  
   
--   Wstaw `debug="true"` do `template` dyrektywy. Na przykład:  
+- Wstaw `debug="true"` do `template` dyrektywy. Na przykład:  
   
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`  
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`  
   
--   Ustaw punkty przerwania w szablonie, w taki sam sposób jak w przypadku zwykłego kodu.  
+- Ustaw punkty przerwania w szablonie, w taki sam sposób jak w przypadku zwykłego kodu.  
   
--   Wybierz **Debuguj szablon T4** przejdź do menu skrótów w pliku szablonu tekstu w oknie Eksploratora rozwiązań.  
+- Wybierz **Debuguj szablon T4** przejdź do menu skrótów w pliku szablonu tekstu w oknie Eksploratora rozwiązań.  
   
- Szablon ma uruchamiać i zatrzymywał w punktach przerwania. Można zbadać zmienne i przejść przez kod w zwykły sposób.  
+  Szablon ma uruchamiać i zatrzymywał w punktach przerwania. Można zbadać zmienne i przejść przez kod w zwykły sposób.  
   
 > [!TIP]
 >  `debug="true"` sprawia, że wygenerowany kod mapowania dokładniej szablonu tekstu, wstawiając więcej dyrektywy numerację wierszy w wygenerowanym kodzie. Pozostawienie go punktów przerwania może spowodować zatrzymanie wykonywania w nieodpowiednim stanie.  
@@ -208,13 +208,13 @@ Szablony tekstowe T4 projektowania umożliwiają generowanie kodu programu i inn
 ### <a name="structuring-text-templates"></a>Tworzenie struktury szablonów tekstowych  
  Jako dobrą praktyką dążymy do oddzielania kod szablonu na dwie części:  
   
--   Konfiguracja lub część gromadzenia danych, która ustawia wartości w zmiennych, ale nie zawiera bloki tekstu. W poprzednim przykładzie, ta część jest zainicjowanie `properties`.  
+- Konfiguracja lub część gromadzenia danych, która ustawia wartości w zmiennych, ale nie zawiera bloki tekstu. W poprzednim przykładzie, ta część jest zainicjowanie `properties`.  
   
-     Jest to czasem nazywane sekcji "model", ponieważ tworzy model w sklepie i zazwyczaj odczytuje plik modelu.  
+   Jest to czasem nazywane sekcji "model", ponieważ tworzy model w sklepie i zazwyczaj odczytuje plik modelu.  
   
--   Generowanie tekstu części (`foreach(...){...}` w przykładzie), który używa wartości zmiennych.  
+- Generowanie tekstu części (`foreach(...){...}` w przykładzie), który używa wartości zmiennych.  
   
- To nie jest konieczne separacji, ale jest styl, dzięki czemu łatwiej odczytać szablonu, co zmniejsza złożoność part, który zawiera tekst.  
+  To nie jest konieczne separacji, ale jest styl, dzięki czemu łatwiej odczytać szablonu, co zmniejsza złożoność part, który zawiera tekst.  
   
 ## <a name="reading-files-or-other-sources"></a>Odczytywanie plików lub innych źródeł  
  Aby uzyskać dostęp do pliku modelu lub bazy danych, kod szablonu użyć zestawy, takie jak System.XML. Aby uzyskać dostęp do tych zestawów, należy wstawić dyrektyw, takich jak te:  

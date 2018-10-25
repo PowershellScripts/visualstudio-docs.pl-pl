@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3fe8a0d33b0e9be8eecdc55ac68d23138f6506d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eed16e010c4fc070b9cc8be57731c97c2f03b2ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177843"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862284"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagramy aktywności UML: Odnośnik
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "49177843"
   
  Diagram aktywności służy do opisywania procesów kilka typów, takich jak następujące przykłady:  
   
--   Proces biznesowy lub przepływ pracy między użytkownikami i systemu. Aby uzyskać więcej informacji, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
+- Proces biznesowy lub przepływ pracy między użytkownikami i systemu. Aby uzyskać więcej informacji, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
   
--   Kroki wykonywane w przypadku użycia. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: wskazówki dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
+- Kroki wykonywane w przypadku użycia. Aby uzyskać więcej informacji, zobacz [diagramy przypadków użycia UML: wskazówki dotyczące](../modeling/uml-use-case-diagrams-guidelines.md).  
   
--   Protokół oprogramowania, oznacza to, że dozwolone sekwencje interakcje pomiędzy składnikami.  
+- Protokół oprogramowania, oznacza to, że dozwolone sekwencje interakcje pomiędzy składnikami.  
   
--   Algorytm oprogramowania.  
+- Algorytm oprogramowania.  
   
- W tym temacie opisano elementy, które można użyć w diagramach aktywności. Aby uzyskać bardziej szczegółowe uzyskać informacje na temat działania rysowania diagramów zobacz [diagramy aktywności UML: wskazówki dotyczące](../modeling/uml-activity-diagrams-guidelines.md). Aby utworzyć diagram aktywności UML na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**. Aby uzyskać więcej informacji na temat narysować diagramy modelowania ogólnie rzecz biorąc, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
+  W tym temacie opisano elementy, które można użyć w diagramach aktywności. Aby uzyskać bardziej szczegółowe uzyskać informacje na temat działania rysowania diagramów zobacz [diagramy aktywności UML: wskazówki dotyczące](../modeling/uml-activity-diagrams-guidelines.md). Aby utworzyć diagram aktywności UML na **architektury** menu, kliknij przycisk **nowe UML lub diagramu warstwowego**. Aby uzyskać więcej informacji na temat narysować diagramy modelowania ogólnie rzecz biorąc, zobacz [modeli i diagramów UML Edytuj](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-activity-diagrams"></a>Odczytywanie diagramów aktywności  
  W tabelach w poniższych sekcjach opisano elementy, które można używać na diagramie aktywności i ich właściwości głównego. Aby uzyskać pełną listę właściwości elementów, zobacz [właściwości elementów w diagramach aktywności UML](../modeling/properties-of-elements-on-uml-activity-diagrams.md).  

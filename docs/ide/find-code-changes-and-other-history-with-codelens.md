@@ -4,17 +4,19 @@ ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b50ea1ae20f6d8a03609dfd37a080108ca2e58e
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384204"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853522"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 
@@ -162,7 +164,7 @@ Porównaj zmiany przychodzące z lokalnej wersji, naciskając klawisz **Shift**+
 Ikona w **gałęzi** kolumny informuje, jak gałęzi jest powiązany do gałęzi, w której pracujesz.
 
 |**Ikona**|**Zmiana pochodzi od:**|
-|--------------|-----------------------------------------|
+|--------------| - |
 |![CodeLens: Zmienić z bieżącej gałęzi ikona](../ide/media/codelensbranchcurrenticon.png)|Current branch|
 |![CodeLens: Zmiana nadrzędnej gałęzi ikona](../ide/media/codelensbranchparenticon.png)|Gałąź nadrzędna|
 |![CodeLens: Zmienić ikony gałęzi podrzędnej](../ide/media/codelensbranchchildicon.png)|Gałęzi podrzędnej|

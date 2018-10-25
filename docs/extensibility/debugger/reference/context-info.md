@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb634f59a3a7eb3b37e70dd87f48b22a07251d0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b9ed1b803905f403e68053c157b40ec30dc03fbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100435"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840067"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
-Ta struktura opisuje kontekstu pamięci lub kontekst kodu.  
+Ta struktura zawiera opis kontekście pamięci lub kontekst kodu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -53,7 +53,7 @@ public struct CONTEXT_INFO {
   
 ## <a name="members"></a>Elementy członkowskie  
  dwFields  
- Kombinacja flag z on [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) wyliczenia, która określa pola, które są wypełnione **.**  
+ Kombinacja flag z on [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) wyliczenia, która określa pola, które są wypełnione<strong>.</strong>  
   
  bstrModuleUrl  
  Nazwa modułu, w którym znajduje się kontekst.  
@@ -62,21 +62,21 @@ public struct CONTEXT_INFO {
  Nazwa funkcji, w którym znajduje się kontekst.  
   
  posFunctionOffset  
- A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struktura, która identyfikuje przesunięcie wierszy i kolumn funkcji skojarzony z kontekstem kodu.  
+ A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struktura, która identyfikuje przesunięcie wiersza i kolumny funkcji skojarzonego z kontekstem kodu.  
   
  bstrAddress  
- Adres w kodzie, w którym znajduje się w danym kontekście.  
+ Adres w kodzie, w którym znajduje się dany kontekst.  
   
  bstrAddressOffset  
- Przesunięcie adresu w kodzie, w którym znajduje się w danym kontekście.  
+ Przesunięcie adresu w kodzie, w którym znajduje się dany kontekst.  
   
  bstrAddressAbsolute  
- Bezwzględny adres w pamięci, w którym znajduje się w danym kontekście.  
+ Bezwzględny adres w pamięci, w którym znajduje się dany kontekst.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest zwracana z wywołania [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) metody.  
+ Ta struktura jest zwracany z wywołania [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) metody.  
   
- Typowym zastosowaniem ta struktura jest wspierających **pamięci** okna debugowania.  
+ Typowym zastosowaniem dla tej struktury jest wspierających **pamięci** okna debugowania.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -86,7 +86,7 @@ public struct CONTEXT_INFO {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)   
  [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

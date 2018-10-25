@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6567be5a82d4b344b3850a1a66e0b5b23f1b8f9d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7f2a22a39b30d6a1910a95d5c30992bbd14dbc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859097"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828680"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definiowanie zasad blokowania na potrzeby tworzenia segmentów tylko do odczytu
 Interfejs API niezmienności programu Visual Studio Visualization i Modeling SDK umożliwia programowi można zablokować część lub całość model języka specyficznego dla domeny (DSL), tak aby można go odczytać ale niezmienione. Tej opcji tylko do odczytu może służyć, na przykład, aby poprosić współpracowników, aby dodać adnotacje i przejrzeć modelu DSL użytkownika, ale może zabronić im zmianę oryginału.
@@ -71,14 +71,14 @@ partition.SetLocks(Locks.Delete);
 ## <a name="lock-values"></a>Blokady wartości
  Można ustawić blokady na Store, partycji lub poszczególnych ModelElement. Blokady jest `Flags` wyliczenia: można połączyć wartości za pomocą "&#124;".
 
--   Blokady ModelElement zawsze zawierać blokady jego partycji.
+- Blokady ModelElement zawsze zawierać blokady jego partycji.
 
--   Blokady partycji zawsze zawierać blokady Store.
+- Blokady partycji zawsze zawierać blokady Store.
 
- Nie można ustawić blokadę na partycję lub przechowywać i w tym samym czasie wyłączyć blokadę pojedynczego elementu.
+  Nie można ustawić blokadę na partycję lub przechowywać i w tym samym czasie wyłączyć blokadę pojedynczego elementu.
 
 |Wartość|Co oznacza, jeśli `IsLocked(Value)` ma wartość true|
-|-----------|------------------------------------------|
+|-|-|
 |Brak|Bez ograniczeń.|
 |Właściwość|Nie można zmienić właściwości domeny elementów. To nie ma zastosowania do właściwości, które są generowane przez rolę klasy domeny w relacji.|
 |Dodaj|Nie można utworzyć nowych elementów i łącza w partycji lub przechowywania.<br /><br /> Nie dotyczy `ModelElement`.|
@@ -142,7 +142,6 @@ namespace Company.YourDsl.DslPackage // Change
       return Environment.UserName == "aUser"
            ? proposedLocks : Locks.All;
     }
-
 ```
 
  Aby upewnić się, że użytkownicy zawsze możesz usunąć elementy, nawet jeśli inne kod wywołuje metodę `SetLocks(Lock.Delete):`

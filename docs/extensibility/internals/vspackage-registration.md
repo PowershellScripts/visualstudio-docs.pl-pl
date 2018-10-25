@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73a2dd2288ae54c184405793323cd3084b90e35a
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 67b80eb48129fb989822e28bcb0ac0e330c426bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828434"
 ---
 # <a name="vspackage-registration"></a>Rejestracja pakietu VSPackage
 Poinformowanie pakietów VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] są zainstalowane i powinny zostać załadowany. Ten proces odbywa się przez zapisywania informacji w rejestrze. To typowe zadanie Instalatora.  
@@ -48,15 +48,15 @@ Poinformowanie pakietów VSPackage [!INCLUDE[vsprvs](../../code-quality/includes
   
  Podczas dobre teorii Autorejestracja ma kilka wad, które nie nadaje się do instalacji pakietu VSPackage:  
   
--   Poprawnie obsługi instalacji, odinstalowywania, wycofywanie instalacji i dezinstalacji wycofywania wymaga utworzenia cztery akcje niestandardowe dla każdego zarządzanego pakietu VSPackage samodzielnie rejestruje przez wywołanie metody RegPkg.  
+- Poprawnie obsługi instalacji, odinstalowywania, wycofywanie instalacji i dezinstalacji wycofywania wymaga utworzenia cztery akcje niestandardowe dla każdego zarządzanego pakietu VSPackage samodzielnie rejestruje przez wywołanie metody RegPkg.  
   
--   Swoje podejście do działu pomocy technicznej side-by-side mogą wymagać zredagujesz cztery akcje niestandardowe, które wywołują RegSvr32 lub RegPkg dla każdej obsługiwanej wersji programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+- Swoje podejście do działu pomocy technicznej side-by-side mogą wymagać zredagujesz cztery akcje niestandardowe, które wywołują RegSvr32 lub RegPkg dla każdej obsługiwanej wersji programu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
--   Instalacja z własnym zarejestrowany moduł nie może bezpiecznie wycofana, ponieważ nie istnieje sposób z informacją, jeśli zarejestrują klucze są używane przez inną funkcję lub aplikację.  
+- Instalacja z własnym zarejestrowany moduł nie może bezpiecznie wycofana, ponieważ nie istnieje sposób z informacją, jeśli zarejestrują klucze są używane przez inną funkcję lub aplikację.  
   
--   Biblioteki DLL zarejestrują połączyć czasami pomocnicze w ramach biblioteki dll, które nie są obecne lub niewłaściwej wersji. Z kolei Instalator Windows można zarejestrować biblioteki DLL przy użyciu tabel rejestru za pomocą niezależne od bieżącego stanu systemu.  
+- Biblioteki DLL zarejestrują połączyć czasami pomocnicze w ramach biblioteki dll, które nie są obecne lub niewłaściwej wersji. Z kolei Instalator Windows można zarejestrować biblioteki DLL przy użyciu tabel rejestru za pomocą niezależne od bieżącego stanu systemu.  
   
--   Można odmówić dostępu do zasobów sieciowych, takich jak biblioteki typów, jeśli składnik jest określony jako przebieg ze źródła i znajduje się w tabeli SelfReg kodu rejestracji automatycznej. Może to spowodować, że instalacja składnika się kończyć niepowodzeniem podczas instalacji administracyjnej.  
+- Można odmówić dostępu do zasobów sieciowych, takich jak biblioteki typów, jeśli składnik jest określony jako przebieg ze źródła i znajduje się w tabeli SelfReg kodu rejestracji automatycznej. Może to spowodować, że instalacja składnika się kończyć niepowodzeniem podczas instalacji administracyjnej.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instalator Windows](/windows/desktop/Msi/windows-installer-portal)   

@@ -17,12 +17,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5ea3d2f52df217b8df6d3d12909671f4e493ae18
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843044"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Wskazówki: korzystanie z pliku konfiguracji do określania źródła danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ W tym instruktażu pokazano, jak korzystających ze źródła danych, zdefiniowa
   
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Aby dodać do pliku app.config sekcję Konfiguracja niestandardowa  
   
-1.  Element główny pliku app.config powinny być `configuration` elementu. Tworzenie `configSections` elemencie `configuration` elementu. `configSections` Powinien być pierwszym elementem w pliku app.config.  
+1. Element główny pliku app.config powinny być `configuration` elementu. Tworzenie `configSections` elemencie `configuration` elementu. `configSections` Powinien być pierwszym elementem w pliku app.config.  
   
-2.  W ramach `configSections` elementu, Utwórz `section` elementu.  
+2. W ramach `configSections` elementu, Utwórz `section` elementu.  
   
-3.  W `section` elementu Dodawanie atrybutu o nazwie `name` i przypisać jej wartość równą `microsoft.visualstudio.testtools`. Dodaj inny atrybut o nazwie `type` i przypisać jej wartość równą `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`  
+3. W `section` elementu Dodawanie atrybutu o nazwie `name` i przypisać jej wartość równą `microsoft.visualstudio.testtools`. Dodaj inny atrybut o nazwie `type` i przypisać jej wartość równą `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`  
   
- `section` Element powinien wyglądać mniej więcej tak:  
+   `section` Element powinien wyglądać mniej więcej tak:  
   
 ```  
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>  
@@ -117,15 +117,15 @@ W tym instruktażu pokazano, jak korzystających ze źródła danych, zdefiniowa
 ## <a name="define-data-sources"></a>Definiowanie źródeł danych  
  Sekcja źródła danych zawiera cztery atrybuty, które są używane przez silnik testowy można pobrać danych ze źródła danych.  
   
--   `name` Określa tożsamość używana przez <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> do określenia danych, które źródło do użycia.  
+- `name` Określa tożsamość używana przez <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> do określenia danych, które źródło do użycia.  
   
--   `connectionString` Określa parametry połączenia, utworzony w poprzedniej sekcji zdefiniować parametry połączenia.  
+- `connectionString` Określa parametry połączenia, utworzony w poprzedniej sekcji zdefiniować parametry połączenia.  
   
--   `dataTableName` Definiuje tabeli lub arkusza, która przechowuje dane do użycia w teście.  
+- `dataTableName` Definiuje tabeli lub arkusza, która przechowuje dane do użycia w teście.  
   
--   `dataAccessMethod` Definiuje technik do uzyskania dostępu do wartości danych w źródle danych.  
+- `dataAccessMethod` Definiuje technik do uzyskania dostępu do wartości danych w źródle danych.  
   
- W tej sekcji omówiono definiowanie dwóch źródeł danych do użycia podczas testów jednostkowych.  
+  W tej sekcji omówiono definiowanie dwóch źródeł danych do użycia podczas testów jednostkowych.  
   
 #### <a name="to-define-data-sources"></a>Aby zdefiniować źródła danych  
   

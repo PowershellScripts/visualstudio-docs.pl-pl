@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c333d38dde1d440d5bac10770d0b3386f82ad4ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1210d95a73038ea21c0455e944eb46b1791b426
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844519"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Przewodnik: Rozszerzanie typu elementu projektu SharePoint
   Możesz użyć **Model usługi łączności danych biznesowych** elementu projektu, aby utworzyć model usługi łączności danych biznesowych (BDC) w programie SharePoint. Domyślnie podczas tworzenia modelu przy użyciu tego elementu projektu danych w modelu jest niewidoczne dla użytkowników. Należy także utworzyć listy zewnętrznej w SharePoint, aby umożliwić użytkownikom wyświetlanie danych.  
@@ -42,24 +42,24 @@ ms.locfileid: "42626149"
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Potrzebne są następujące składniki na komputerze deweloperskim w celu przeprowadzenia tego instruktażu:  
   
--   Obsługiwane wersje systemu Microsoft Windows, SharePoint i Visual Studio.  
+- Obsługiwane wersje systemu Microsoft Windows, SharePoint i Visual Studio.  
   
--   [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. W tym instruktażu wykorzystano **projekt VSIX** szablonu w zestawie SDK, aby utworzyć pakiet VSIX do wdrożenia elementu projektu. Aby uzyskać więcej informacji, zobacz [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. W tym instruktażu wykorzystano **projekt VSIX** szablonu w zestawie SDK, aby utworzyć pakiet VSIX do wdrożenia elementu projektu. Aby uzyskać więcej informacji, zobacz [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, aby ukończyć Instruktaż:  
+  Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, aby ukończyć Instruktaż:  
   
--   Usługa łączności danych biznesowych w [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Aby uzyskać więcej informacji, zobacz [architektura BDC](http://go.microsoft.com/fwlink/?LinkId=177798).  
+- Usługa łączności danych biznesowych w [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]. Aby uzyskać więcej informacji, zobacz [architektura BDC](http://go.microsoft.com/fwlink/?LinkId=177798).  
   
--   Schemat XML dla modeli usługi łączności danych biznesowych. Aby uzyskać więcej informacji, zobacz [infrastruktura modelu usługi BDC](http://go.microsoft.com/fwlink/?LinkId=177799).  
+- Schemat XML dla modeli usługi łączności danych biznesowych. Aby uzyskać więcej informacji, zobacz [infrastruktura modelu usługi BDC](http://go.microsoft.com/fwlink/?LinkId=177799).  
   
 ## <a name="create-the-projects"></a>Tworzenie projektów
  Aby ukończyć ten Instruktaż, musisz utworzyć dwa projekty:  
   
--   Projekt VSIX do stworzenia pakietu VSIX do wdrożenia rozszerzenia elementu projektu.  
+- Projekt VSIX do stworzenia pakietu VSIX do wdrożenia rozszerzenia elementu projektu.  
   
--   Projekt biblioteki klas, który implementuje rozszerzenie elementu projektu.  
+- Projekt biblioteki klas, który implementuje rozszerzenie elementu projektu.  
   
- Instruktaż należy rozpocząć od utworzenia projektów.  
+  Instruktaż należy rozpocząć od utworzenia projektów.  
   
 #### <a name="to-create-the-vsix-project"></a>Aby utworzyć projekt VSIX  
   

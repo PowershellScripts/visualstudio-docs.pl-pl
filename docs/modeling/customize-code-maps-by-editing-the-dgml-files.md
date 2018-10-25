@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 19278cc1fd08a0dd4d4d18e11c7cb7a3e09ae7e0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 21a32cf13f598c894ebc7841f5ef4a0af3af82ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859773"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878976"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Dostosowanie map kodu przez edycję plików DGML
 
@@ -41,43 +41,43 @@ Edytuj plik .dgml mapy kodu w edytorze tekstu lub edytorze XML. Jeśli mapa jest
 ## <a name="OrganizeNodes"></a> Grupować elementy kodu
  Można dodać nowe grupy lub przekonwertować istniejące węzły w grupie.
 
-1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
+1. Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
-2.  Aby przekonwertować element kodu z grupą, Znajdź `<Node/>` element dla tego elementu kodu.
+2. Aby przekonwertować element kodu z grupą, Znajdź `<Node/>` element dla tego elementu kodu.
 
-     \- lub —
+    \- lub —
 
-     Aby dodać nową grupę, Znajdź `<Nodes>` sekcji. Dodaj nową `<Node/>` elementu.
+    Aby dodać nową grupę, Znajdź `<Nodes>` sekcji. Dodaj nową `<Node/>` elementu.
 
-3.  W `<Node/>` elementu Dodawanie `Group` atrybutu, aby określić, czy grupa pojawia się rozwinięta czy zwinięta. Na przykład:
+3. W `<Node/>` elementu Dodawanie `Group` atrybutu, aby określić, czy grupa pojawia się rozwinięta czy zwinięta. Na przykład:
 
-    ```xml
-    <Nodes>
-       <Node Id="MyFirstGroup" Group="Expanded" />
-       <Node Id="MySecondGroup" Group="Collapsed" />
-    </Nodes>
-    ```
+   ```xml
+   <Nodes>
+      <Node Id="MyFirstGroup" Group="Expanded" />
+      <Node Id="MySecondGroup" Group="Collapsed" />
+   </Nodes>
+   ```
 
-4.  W `<Links>` sekcji, upewnij się, że `<Link/>` element, który ma następujące atrybuty, istnieje dla każdej relacji między elementem grupy kodu i jego elementy podrzędne w kodzie:
+4. W `<Links>` sekcji, upewnij się, że `<Link/>` element, który ma następujące atrybuty, istnieje dla każdej relacji między elementem grupy kodu i jego elementy podrzędne w kodzie:
 
-    -   A `Source` atrybut, który określa element kodu grupy
+   - A `Source` atrybut, który określa element kodu grupy
 
-    -   A `Target` atrybut, który określa element podrzędny kodu
+   - A `Target` atrybut, który określa element podrzędny kodu
 
-    -   A `Category` atrybut, który określa `Contains` relacji między elementem kodu grupy i jego podrzędny element kodu
+   - A `Category` atrybut, który określa `Contains` relacji między elementem kodu grupy i jego podrzędny element kodu
 
      Na przykład:
 
-    ```xml
-    <Links>
-       <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />
-       <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />
-       <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />
-       <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />
-    </Links>
-    ```
+   ```xml
+   <Links>
+      <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />
+      <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />
+      <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />
+      <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />
+   </Links>
+   ```
 
-     Aby uzyskać więcej informacji na temat `Category` atrybutów, zobacz [przypisywać kategorie elementów kodu i linków](#AssignCategories).
+    Aby uzyskać więcej informacji na temat `Category` atrybutów, zobacz [przypisywać kategorie elementów kodu i linków](#AssignCategories).
 
 ## <a name="ChangeGraphStyle"></a> Zmień styl mapy
  Możesz zmienić kolor tła i koloru obramowania mapy, edytując plik .dgml mapy. Aby zmienić styl elementów kodu i linków, zobacz [Zmienianie stylu elementów kodu i linków](#Highlight).
@@ -248,81 +248,81 @@ Edytuj plik .dgml mapy kodu w edytorze tekstu lub edytorze XML. Jeśli mapa jest
 
 ##### <a name="to-apply-custom-styles-to-a-group-of-code-elements-or-links"></a>Aby zastosować niestandardowe style do grupy elementów kodu lub łączy
 
-1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
+1. Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
-2.  Jeśli `<Styles></Styles>` element nie istnieje, należy dodać go pod `<DirectedGraph></DirectedGraph>` elementu po `<Links></Links>` elementu.
+2. Jeśli `<Styles></Styles>` element nie istnieje, należy dodać go pod `<DirectedGraph></DirectedGraph>` elementu po `<Links></Links>` elementu.
 
-3.  W `<Styles></Styles>` elementu w obszarze `<Style/>` elementu i określić następujące atrybuty:
+3. W `<Styles></Styles>` elementu w obszarze `<Style/>` elementu i określić następujące atrybuty:
 
-    -   `TargetType="Node` &#124; `Link | Graph"`
+   - `TargetType="Node` &#124; `Link | Graph"`
 
-    -   `GroupLabel="` *NameInLegendBox* `"`
+   - `GroupLabel="` *NameInLegendBox* `"`
 
-    -   `ValueLabel="` *NameInStylePickerBox* `"`
+   - `ValueLabel="` *NameInStylePickerBox* `"`
 
      Aby zastosować niestandardowy styl do wszystkich typów docelowych, nie należy używać warunku.
 
 ##### <a name="to-apply-a-conditional-style-to-groups-of-code-elements-or-links"></a>Aby zastosować styl warunkowy do grupy elementów kodu lub łączy
 
-1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
+1. Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
-2.  W `<Style/>` elementu Dodawanie `<Condition/>` element, który zawiera `Expression` atrybutu, aby określić wyrażenie zwracające wartość logiczną.
+2. W `<Style/>` elementu Dodawanie `<Condition/>` element, który zawiera `Expression` atrybutu, aby określić wyrażenie zwracające wartość logiczną.
 
-     Na przykład:
+    Na przykład:
 
-    ```xml
-    <Condition Expression="MyCategory"/>
-    ```
+   ```xml
+   <Condition Expression="MyCategory"/>
+   ```
 
-     - lub —
+    - lub —
 
-    ```xml
-    <Condition Expression="MyCategory > 100"/>
-    ```
+   ```xml
+   <Condition Expression="MyCategory > 100"/>
+   ```
 
-     - lub —
+    - lub —
 
-    ```xml
-    <Condition Expression="HasCategory('MyCategory')"/>
-    ```
+   ```xml
+   <Condition Expression="HasCategory('MyCategory')"/>
+   ```
 
-     Wyrażenie to używa następującej składni notacji Backusa-Naura (BNF):
+    Wyrażenie to używa następującej składni notacji Backusa-Naura (BNF):
 
-     <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>
+    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>
 
-     <BinaryExpression> ::= <Expression> <Operator> <Expression>
+    <BinaryExpression> ::= <Expression> <Operator> <Expression>
 
-     <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
+    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
 
-     <Operator> :: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "or" &#124; "i" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    <Operator> :: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "or" &#124; "i" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-     <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
+    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
 
-     <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>
+    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>
 
-     <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"
+    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"
 
-     <PropertyGet> :: = Identyfikator
+    <PropertyGet> :: = Identyfikator
 
-     <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>
+    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>
 
-     <Identifier> ::= [^. ]*
+    <Identifier> ::= [^. ]*
 
-     <Literal> :: = literał ciągu pojedynczym lub podwójnym cudzysłowem
+    <Literal> :: = literał ciągu pojedynczym lub podwójnym cudzysłowem
 
-     <Number> :: = ciąg cyfr z opcjonalnym przecinkiem dziesiętnym
+    <Number> :: = ciąg cyfr z opcjonalnym przecinkiem dziesiętnym
 
-     Można określić wiele `<Condition/>` elementy, które muszą być spełnione, aby zastosować styl.
+    Można określić wiele `<Condition/>` elementy, które muszą być spełnione, aby zastosować styl.
 
-3.  W następnym wierszu po `<Condition/>` elementu, Dodaj jeden lub wiele `<Setter/>` elementy, aby określić `Property` atrybut i stałym `Value` atrybutu lub obliczanej `Expression` atrybutu, aby zastosować do mapy, elementy kodu lub łączy, które spełniają warunek.
+3. W następnym wierszu po `<Condition/>` elementu, Dodaj jeden lub wiele `<Setter/>` elementy, aby określić `Property` atrybut i stałym `Value` atrybutu lub obliczanej `Expression` atrybutu, aby zastosować do mapy, elementy kodu lub łączy, które spełniają warunek.
 
-     Na przykład:
+    Na przykład:
 
-    ```xml
-    <Setter Property="BackGround" Value="Green"/>
-    ```
+   ```xml
+   <Setter Property="BackGround" Value="Green"/>
+   ```
 
- Jako prosty, kompletny przykład, następujący warunek określa, że element kodu pojawi się jako zielony lub czerwony, w zależności od tego, czy jego `Passed` kategoria jest ustawiona na `True` lub `False`:
+   Jako prosty, kompletny przykład, następujący warunek określa, że element kodu pojawi się jako zielony lub czerwony, w zależności od tego, czy jego `Passed` kategoria jest ustawiona na `True` lub `False`:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -571,74 +571,74 @@ Edytuj plik .dgml mapy kodu w edytorze tekstu lub edytorze XML. Jeśli mapa jest
 
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>Aby połączyć element kodu dokumentu lub adresu URL
 
-1.  Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
+1. Otwórz plik .dgml w edytorze tekstu lub edytorze XML.
 
-2.  Znajdź `<Node/>` elementu dla elementu kodu, który ma.
+2. Znajdź `<Node/>` elementu dla elementu kodu, który ma.
 
-3.  Wykonaj jedno z zadań z tabeli poniżej:
+3. Wykonaj jedno z zadań z tabeli poniżej:
 
-     Pojedynczego elementu kodu
+    Pojedynczego elementu kodu
 
-    -   W `<Node/>` lub `<Link/>` elementu Dodawanie `Reference` atrybutu, aby określić lokalizację elementu kodu.
+   - W `<Node/>` lub `<Link/>` elementu Dodawanie `Reference` atrybutu, aby określić lokalizację elementu kodu.
 
-        > [!NOTE]
-        >  Może mieć tylko jeden `Reference` atrybutu dla każdego elementu.
-
-     Na przykład:
-
-    ```xml
-    <Nodes>
-       <Node Id="MyNode" Reference="MyDocument.txt" />
-    </Nodes>
-    <Properties>
-       <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />
-    </Properties>
-    ```
-
-     Wiele elementów kodu
-
-    1.  W `<Node/>` lub `<Link/>` elementu, Dodaj nowy atrybut, aby określić lokalizację każdego odwołania.
-
-    2.  W `<Properties>` sekcji:
-
-        1.  Dodaj `<Property/>` elementu dla każdego nowego typu odwołania.
-
-        2.  Ustaw `Id` atrybutu na nazwę nowego atrybutu odwołania.
-
-        3.  Dodaj `IsReference` atrybutu i ustaw ją na `True` aby odwołanie pojawiało się w elemencie kod **przejdź do odwołania** menu skrótów.
-
-        4.  Użyj `Label` atrybutu, aby określić tekst wyświetlany w elemencie kod **przejdź do odwołania** menu skrótów.
+     > [!NOTE]
+     >  Może mieć tylko jeden `Reference` atrybutu dla każdego elementu.
 
      Na przykład:
 
-    ```xml
-    <Nodes>
-       <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>
-    </Nodes>
-    <Properties>
-       <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />
-       <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />
-    </Properties>
-    ```
+   ```xml
+   <Nodes>
+      <Node Id="MyNode" Reference="MyDocument.txt" />
+   </Nodes>
+   <Properties>
+      <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />
+   </Properties>
+   ```
 
-     Na mapie nazwa elementu kodu jest podkreślana. Po otwarciu menu skrótów dla elementu kodu lub link, zostanie wyświetlony **przejdź do odwołania** menu skrótów, które zawierają elementy kodu połączone, można wybrać.
+    Wiele elementów kodu
 
-4.  Użyj `ReferenceTemplate` atrybutu, aby określić wspólny ciąg, takie jak adres URL, który jest używany przez wiele odwołań zamiast powtarzania tego ciągu w odwołaniu.
+   1. W `<Node/>` lub `<Link/>` elementu, Dodaj nowy atrybut, aby określić lokalizację każdego odwołania.
 
-     `ReferenceTemplate` Atrybut Określa symbol zastępczy dla wartości odwołania. W poniższym przykładzie `{0}` symbol zastępczy w `ReferenceTemplate` atrybut zostanie zastąpiona przez wartości `MyFirstReference` i `MySecondReference` atrybutów w `<Node/>` elementu, aby utworzyć pełną ścieżkę:
+   2. W `<Properties>` sekcji:
 
-    ```xml
-    <Nodes>
-       <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>
-       <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>
-    </Nodes>
-    <Properties>
-       <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>
-       <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>
-    </Properties>
-    ```
+      1.  Dodaj `<Property/>` elementu dla każdego nowego typu odwołania.
 
-5.  Aby wyświetlić kod przywoływanego elementu lub elementów kodu z mapy, otwórz menu skrótów dla elementu kodu lub łącza. Wybierz **przejdź do odwołania** i następnie elementu kodu.
+      2.  Ustaw `Id` atrybutu na nazwę nowego atrybutu odwołania.
+
+      3.  Dodaj `IsReference` atrybutu i ustaw ją na `True` aby odwołanie pojawiało się w elemencie kod **przejdź do odwołania** menu skrótów.
+
+      4.  Użyj `Label` atrybutu, aby określić tekst wyświetlany w elemencie kod **przejdź do odwołania** menu skrótów.
+
+      Na przykład:
+
+   ```xml
+   <Nodes>
+      <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>
+   </Nodes>
+   <Properties>
+      <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />
+      <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />
+   </Properties>
+   ```
+
+    Na mapie nazwa elementu kodu jest podkreślana. Po otwarciu menu skrótów dla elementu kodu lub link, zostanie wyświetlony **przejdź do odwołania** menu skrótów, które zawierają elementy kodu połączone, można wybrać.
+
+4. Użyj `ReferenceTemplate` atrybutu, aby określić wspólny ciąg, takie jak adres URL, który jest używany przez wiele odwołań zamiast powtarzania tego ciągu w odwołaniu.
+
+    `ReferenceTemplate` Atrybut Określa symbol zastępczy dla wartości odwołania. W poniższym przykładzie `{0}` symbol zastępczy w `ReferenceTemplate` atrybut zostanie zastąpiona przez wartości `MyFirstReference` i `MySecondReference` atrybutów w `<Node/>` elementu, aby utworzyć pełną ścieżkę:
+
+   ```xml
+   <Nodes>
+      <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>
+      <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>
+   </Nodes>
+   <Properties>
+      <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>
+      <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>
+   </Properties>
+   ```
+
+5. Aby wyświetlić kod przywoływanego elementu lub elementów kodu z mapy, otwórz menu skrótów dla elementu kodu lub łącza. Wybierz **przejdź do odwołania** i następnie elementu kodu.
 
 ## <a name="see-also"></a>Zobacz też
 

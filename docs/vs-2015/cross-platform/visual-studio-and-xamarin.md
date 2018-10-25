@@ -13,12 +13,12 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 2b9682f17716946c642186ee91c84b8060879b0d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 704eaae88850463ba7ff251fee13500759de3286
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850662"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio i Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ Xamarin to platforma do tworzenia aplikacji mobilnych, do tworzenia natywnych dl
   
  Ta dokumentacja pomoże Ci ocenić pełnego zestawu funkcji **programu Visual Studio za pomocą platformy Xamarin** do tworzenia tych środowisk.  
   
--   Rozpoczynać [Instalator i instalacja](../cross-platform/setup-and-install.md), proces, który zajmie trochę czasu (zwykle 2 – 4 godzin w zależności od szybkości połączenia internetowego, co została już zainstalowana i wybrane opcje).  
+- Rozpoczynać [Instalator i instalacja](../cross-platform/setup-and-install.md), proces, który zajmie trochę czasu (zwykle 2 – 4 godzin w zależności od szybkości połączenia internetowego, co została już zainstalowana i wybrane opcje).  
   
--   Gdy pliki instalacyjne są uruchomione, można [Dowiedz się więcej o programowaniu rozwiązań mobilnych za pomocą platformy Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) który poinformuje o rodzaju Xamarin, porównaj zestawu narzędzi Xamarin.Forms do natywnego interfejsu użytkownika i nie tylko.  
+- Gdy pliki instalacyjne są uruchomione, można [Dowiedz się więcej o programowaniu rozwiązań mobilnych za pomocą platformy Xamarin](../cross-platform/learn-about-mobile-development-with-xamarin.md) który poinformuje o rodzaju Xamarin, porównaj zestawu narzędzi Xamarin.Forms do natywnego interfejsu użytkownika i nie tylko.  
   
--   Po zakończeniu instalacji [Sprawdź swoje środowisko Xamarin](../cross-platform/verify-your-xamarin-environment.md).  
+- Po zakończeniu instalacji [Sprawdź swoje środowisko Xamarin](../cross-platform/verify-your-xamarin-environment.md).  
   
--   Zakończ za pośrednictwem tego samouczka [opanowaniu podstaw tworzenia aplikacji przy użyciu zestawu narzędzi Xamarin.Forms w programie Visual Studio](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).  
+- Zakończ za pośrednictwem tego samouczka [opanowaniu podstaw tworzenia aplikacji przy użyciu zestawu narzędzi Xamarin.Forms w programie Visual Studio](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).  
   
- Możesz pracować z wszystkie funkcje platformy Xamarin przy użyciu [dowolnej wersji programu Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community, Professional i Enterprise). Należy zauważyć, że począwszy od 31 marca 2016 r. platformy Xamarin jest zawarty we wszystkich edycjach Visual Studio 2015 i nie wymaga już oddzielnej licencji. Dla programu Visual Studio 2013, możesz zainstalować program Xamarin oddzielnie, jako [Instalator i instalacja](../cross-platform/setup-and-install.md) temacie.  
+  Możesz pracować z wszystkie funkcje platformy Xamarin przy użyciu [dowolnej wersji programu Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community, Professional i Enterprise). Należy zauważyć, że począwszy od 31 marca 2016 r. platformy Xamarin jest zawarty we wszystkich edycjach Visual Studio 2015 i nie wymaga już oddzielnej licencji. Dla programu Visual Studio 2013, możesz zainstalować program Xamarin oddzielnie, jako [Instalator i instalacja](../cross-platform/setup-and-install.md) temacie.  
   
 > [!NOTE]
 >  W instrukcjach opisano konfigurację komputera Najłatwiejszym i najbardziej prostego te, które mają tło Windows i programu Visual Studio. W przypadku tej konfiguracji cały proces tworzenia jest uproszczone, ponieważ należy do interakcji z komputerem Mac, aby użyć symulatora systemu iOS i urządzenie powiązane. Zamiast tego pochodzących z komputerów Mac w tle, firma Microsoft zaleca uruchamianie programu Visual Studio wewnątrz równoleżników/VMWare lub za pomocą platformy Xamarin Studio Community. Zapoznaj się [Instalator, instalacja i weryfikacja dla użytkowników komputerów Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md) instrukcje.  

@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 262dfd7860c5bd16c210e7305599eeb1003372fe
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863337"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramy zależności: wskazówki
 
@@ -105,7 +105,7 @@ Zazwyczaj zobaczysz niektóre zależności, które nie powinny istnieć. Możesz
 Aby opisać zmiany, które planujesz wprowadzić do systemu lub zamierzonej architektury, umożliwia edytowanie diagram zależności następujące kroki. Można też rozważyć wprowadzamy zmiany refaktoryzacji w celu struktury kodu przed jej rozszerzeniem. Zobacz [poprawy struktury kodu](#Improving).
 
 |**To**|**Wykonaj następujące kroki**|
-|------------|-----------------------------|
+|-|-|
 |Usuń zależności, które nie powinny istnieć|Kliknij zależności, a następnie naciśnij klawisz **Usuń**.|
 |Zmień lub ogranicz kierunek zależności|Ustaw jego **kierunek** właściwości.|
 |Tworzenie nowych zależności|Użyj **zależności** i **zależność dwukierunkowa** narzędzia.<br /><br /> Aby narysować wiele zależności, kliknij dwukrotnie narzędzie. Gdy skończysz, kliknij przycisk **wskaźnik** narzędzi lub naciśnij klawisz **ESC** klucza.|

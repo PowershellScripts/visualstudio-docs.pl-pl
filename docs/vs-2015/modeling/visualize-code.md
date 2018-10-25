@@ -18,29 +18,29 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7caa6af725fc1af5551e9b705e609e25f74121b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82ce653eda1ec074f050809845610fbc1ab1bc0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303449"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833661"
 ---
 # <a name="visualize-code"></a>Tworzenie wizualizacji kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby pomóc Ci zrozumieć istniejący kod i opisać swoją aplikację, można użyć wizualizacji i modelowania narzędzi w programie Visual Studio. Dzięki temu możesz wzrokowo sprawdzić, jak Twoje zmiany mogą wpłynąć na kod i ocenić nakład pracy oraz zagrożenia związane z tymi zmianami. Na przykład:  
   
--   Aby zrozumieć relacje w kodzie, mapować te relacje wizualnie.  
+- Aby zrozumieć relacje w kodzie, mapować te relacje wizualnie.  
   
--   Do opisywania architektury Twojego systemu i zachować zgodność kodu z projektem, tworzyć diagramy warstwowe, a następnie walidować kod dla tych diagramów.  
+- Do opisywania architektury Twojego systemu i zachować zgodność kodu z projektem, tworzyć diagramy warstwowe, a następnie walidować kod dla tych diagramów.  
   
--   Do opisania klasy, struktury, tworzenie diagramów klasy.  
+- Do opisania klasy, struktury, tworzenie diagramów klasy.  
   
--   Aby modelować i komunikują się różnymi aspektami systemu, narysować diagramy modelowania UML (Unified Language). Można na przykład model, składników, typów, interakcji i procesów systemu.  
+- Aby modelować i komunikują się różnymi aspektami systemu, narysować diagramy modelowania UML (Unified Language). Można na przykład model, składników, typów, interakcji i procesów systemu.  
   
- Te narzędzia ułatwiają także łatwiejszą komunikację z osobami, które są związane z projektem. Na przykład służy diagramów klas UML do utworzenia wspólny słownik dyskusyjnym systemu z zainteresowanymi stronami projektu, użytkowników i członków zespołu.  
+  Te narzędzia ułatwiają także łatwiejszą komunikację z osobami, które są związane z projektem. Na przykład służy diagramów klas UML do utworzenia wspólny słownik dyskusyjnym systemu z zainteresowanymi stronami projektu, użytkowników i członków zespołu.  
   
- Aby dowiedzieć się, które wersje programu Visual Studio obsługują każdej funkcji, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
+  Aby dowiedzieć się, które wersje programu Visual Studio obsługują każdej funkcji, zobacz [obsługiwana wersja dla narzędzia architektury i modelowania](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
   
 ## <a name="what-do-you-want-to-do"></a>Co chcesz zrobić?  
   

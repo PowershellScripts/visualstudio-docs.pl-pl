@@ -12,19 +12,19 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d333a6561e7fd891e4eaacf0ca1364dfec4a7b19
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4452eca221a772c2f0fd519df533e35468f3ecd8
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293439"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459569"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Konfigurowanie aplikacji sieci web języka Python dla programu IIS
 
 Korzystając z usług Internet Information Services (IIS) jako serwera sieci web na komputerze Windows (w tym [maszyn wirtualnych Windows Azure](/azure/architecture/reference-architectures/n-tier/windows-vm), aplikacji w języku Python musi zawierać konkretne ustawienia w ich *web.config* pliki, który program IIS prawidłowo może przetworzyć kodu w języku Python. Sam komputer musi mieć zainstalowane wraz z wszelkich pakietów, których wymaga aplikacja sieci web języka Python.
 
 > [!Note]
-> Ten artykuł zawiera wcześniej wskazówki dotyczące konfigurowania środowiska Python w usłudze Azure App Service na Windows. Rozszerzenia języka Python i hostów Windows używane w tym scenariuszu zostały zaniechane i zastąpione w usłudze Azure App Service w systemie Linux. Aby uzyskać więcej informacji, zobacz [publikowania aplikacji w języku Python w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md). Jeśli nadal potrzebujesz informacji, które wcześniej były dostępne dla zarządzania usługi App Service na Windows za pomocą rozszerzenia języka Python, zgłoś problem w dolnej części tego artykułu.
+> Ten artykuł zawiera wcześniej wskazówki dotyczące konfigurowania środowiska Python w usłudze Azure App Service na Windows. Rozszerzenia języka Python i hostów Windows używane w tym scenariuszu zostały zaniechane i zastąpione w usłudze Azure App Service w systemie Linux. Aby uzyskać więcej informacji, zobacz [publikowania aplikacji w języku Python w usłudze Azure App Service (Linux)](publishing-python-web-applications-to-azure-from-visual-studio.md). Jednak poprzednim artykule, jest nadal dostępne w [zarządzania usługi App Service w Windows za pomocą rozszerzenia języka Python](managing-python-on-azure-app-service.md).
 
 ## <a name="install-python-on-windows"></a>Instalowanie języka Python w Windows
 

@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7a1a559b6ed3b9d92299fe9d4c2cc13c11319e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73c1242a21dbbcc52a81e5515c19c6fd8084da74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106516"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842992"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
-Określa, czy kod pod adresem określonym debugera jest ukryty.  
+Określa, jeśli kod pod adresem określonym debugera jest ukryta.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,13 +39,13 @@ int IsHiddenCode(
   
 #### <a name="parameters"></a>Parametry  
  `pAddress`  
- [in] Adres debugowania, który jest reprezentowana przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.  
+ [in] Adres debugowania, który jest reprezentowany przez [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli kod jest ukryty, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`.  
+ Jeśli kod jest ukryta, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::IsHiddenCode(  

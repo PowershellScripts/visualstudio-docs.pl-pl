@@ -25,12 +25,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93ddc0af7daecaeb64586d84e210180d7025ad81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51707a1df9c9f7144dc9a3af021262ca818f03b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301395"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850519"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opcje, edytor tekstu, C#, zaawansowane
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ Aby zmodyfikować ustawienia formatowania edytora, refaktoryzacji kodu i komenta
  Underline błędy w edytorze  
  Identyfikuje błędy kompilacji w kodzie. Gdy ta opcja jest zaznaczona, faliste podkreślenia są wyświetlane w kolorów, które mają określone znaczenie:  
   
--   Błędy analizy są oznaczone kolorem czerwonym.  
+- Błędy analizy są oznaczone kolorem czerwonym.  
   
--   Błędy kompilacji są niebieski.  
+- Błędy kompilacji są niebieski.  
   
--   Ostrzeżenia kompilacji są zielone.  
+- Ostrzeżenia kompilacji są zielone.  
   
--   Nieprawidłowy [Edytuj i Kontynuuj](../../debugger/edit-and-continue.md) Edycje elementów purpurowy.  
+- Nieprawidłowy [Edytuj i Kontynuuj](../../debugger/edit-and-continue.md) Edycje elementów purpurowy.  
   
- Przesuń wskaźnik nad segment podkreślony kodu, aby wyświetlić etykietkę narzędzia, za pomocą informacji o błędzie.  
+  Przesuń wskaźnik nad segment podkreślony kodu, aby wyświetlić etykietkę narzędzia, za pomocą informacji o błędzie.  
   
- Pokaż błędy semantyczne na żywo  
- Identyfikuje pewne błędy kompilacji bez kompilację typu explicit, na przykład deklarowania i przy użyciu nieznanego typu lub odwołuje się do nieznanej właściwości.  
+  Pokaż błędy semantyczne na żywo  
+  Identyfikuje pewne błędy kompilacji bez kompilację typu explicit, na przykład deklarowania i przy użyciu nieznanego typu lub odwołuje się do nieznanej właściwości.  
   
- Wyróżnij odwołania do symbolu pod kursorem  
- Gdy kursor znajduje się wewnątrz symbolu lub po kliknięciu symbolu, zostały wyróżnione wszystkich wystąpień symbolu w pliku kodu.  
+  Wyróżnij odwołania do symbolu pod kursorem  
+  Gdy kursor znajduje się wewnątrz symbolu lub po kliknięciu symbolu, zostały wyróżnione wszystkich wystąpień symbolu w pliku kodu.  
   
 ## <a name="refactoring"></a>Refaktoryzacja  
  Sprawdź wyniki refaktoryzacji  

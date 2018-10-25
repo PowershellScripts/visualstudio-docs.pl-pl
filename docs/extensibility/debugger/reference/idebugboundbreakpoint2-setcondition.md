@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94b131820fdd6bd2b83a9e54fd450cbb19c8064a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07512dbec66d3abd3c380629a32bd8468b253eb1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882633"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
-Ustawia lub zmienia warunek skojarzony z tym powiązania punktu przerwania.  
+Ustawia lub zmienia warunek skojarzony z ten powiązany punkt przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -45,10 +45,10 @@ int SetCondition(
  [in] Wartość z zakresu od [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) wyliczenie opisujące stan.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli stan obiektu powiązanego punktu przerwania jest równa `BPS_DELETED` (część [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) wyliczenie).  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli stan obiektu powiązany punkt przerwania jest ustawiony na `BPS_DELETED` (część [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) wyliczenia).  
   
 ## <a name="remarks"></a>Uwagi  
- Wszelkie warunek, który został wcześniej skojarzony z tego punktu przerwania zostaną utracone.  
+ Dowolny warunek, który był wcześniej skojarzony z tego punktu przerwania zostaną utracone.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   

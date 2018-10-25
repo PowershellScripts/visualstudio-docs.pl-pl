@@ -13,12 +13,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 589e09f2eb6dae64a9f199b64a93238161d4731d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3932272acbfbfb7108b4b8d38ce526b51ef6e45c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852020"
 ---
 # <a name="creating-a-software-development-kit"></a>Tworzenie zestawu SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Zestaw software development kit (SDK) to zbiór interfejsów API, którego możn
   
  Istnieją dwa rodzaje zestawów SDK:  
   
--   Zestawy SDK platformy są wymagane składniki do tworzenia aplikacji dla platformy. Na przykład [!INCLUDE[win81](../includes/win81-md.md)] zestawu SDK jest wymagany do tworzenia [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji.  
+- Zestawy SDK platformy są wymagane składniki do tworzenia aplikacji dla platformy. Na przykład [!INCLUDE[win81](../includes/win81-md.md)] zestawu SDK jest wymagany do tworzenia [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji.  
   
--   Zestawy SDK rozszerzenia są opcjonalne składniki, rozszerzyć platformę usługi, które nie są wymagane do tworzenia aplikacji dla danej platformy.  
+- Zestawy SDK rozszerzenia są opcjonalne składniki, rozszerzyć platformę usługi, które nie są wymagane do tworzenia aplikacji dla danej platformy.  
   
- W poniższych sekcjach opisano ogólne infrastruktury zestawów SDK oraz sposób tworzenia zestawu SDK platformy i zestawu SDK rozszerzenia.  
+  W poniższych sekcjach opisano ogólne infrastruktury zestawów SDK oraz sposób tworzenia zestawu SDK platformy i zestawu SDK rozszerzenia.  
   
--   [Zestawy SDK platformy](#PlatformSDKs)  
+- [Zestawy SDK platformy](#PlatformSDKs)  
   
--   [Zestawów SDK rozszerzeń](#ExtensionSDKs)  
+- [Zestawów SDK rozszerzeń](#ExtensionSDKs)  
   
 ##  <a name="PlatformSDKs"></a> Zestawy SDK platformy  
  Zestawy SDK platformy są wymagane do tworzenia aplikacji dla platformy. Na przykład [!INCLUDE[win81](../includes/win81-md.md)] zestawu SDK jest wymagany do tworzenia aplikacji dla [!INCLUDE[win81](../includes/win81-md.md)].  

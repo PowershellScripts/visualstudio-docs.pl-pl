@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8684f85c7e5ccb8b4ca93ccc51a24c17ac40f633
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 339b0e9a3637ef375ee3ceee8c5fb84c2670c34f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859617"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838247"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Porady: tworzenie rozwiązania języka właściwego dla domeny
 Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu specjalnych rozwiązania programu Visual Studio.
@@ -28,12 +28,12 @@ Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu specjalnych ro
 ## <a name="prerequisites"></a>Wymagania wstępne
  Przed rozpoczęciem tej procedury, należy najpierw zainstalować te składniki:
 
-|||
-|-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|Visual Studio Visualisation i Modeling SDK||
 
+| | |
+|-|-|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| Visual Studio Visualisation i Modeling SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -42,43 +42,43 @@ Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu specjalnych ro
 
 #### <a name="to-create-a-domain-specific-language-solution"></a>Tworzenie rozwiązań języka dotyczącego określonej domeny
 
-1.  Uruchom Kreatora DSL.
+1. Uruchom Kreatora DSL.
 
-    1.  Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.
+   1. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.
 
-    2.  **Nowy projekt** pojawi się okno dialogowe.
+   2. **Nowy projekt** pojawi się okno dialogowe.
 
-    3.  W obszarze **typów projektów**, rozwiń węzeł **inne typy projektów** węzeł, a następnie kliknij przycisk **rozszerzalności**.
+   3. W obszarze **typów projektów**, rozwiń węzeł **inne typy projektów** węzeł, a następnie kliknij przycisk **rozszerzalności**.
 
-    4.  Kliknij przycisk **projektanta języka specyficznego dla domeny**.
+   4. Kliknij przycisk **projektanta języka specyficznego dla domeny**.
 
-    5.  W **nazwa** wpisz nazwę dla rozwiązania. Kliknij przycisk **OK**.
+   5. W **nazwa** wpisz nazwę dla rozwiązania. Kliknij przycisk **OK**.
 
-         **Kreator projektanta języka specyficznego dla domeny** pojawia się.
+       **Kreator projektanta języka specyficznego dla domeny** pojawia się.
 
-        > [!NOTE]
-        >  Najlepiej możesz wpisać nazwę powinny być prawidłowym Visual C# identyfikatorem, ponieważ może służyć do generowania kodu.
+      > [!NOTE]
+      >  Najlepiej możesz wpisać nazwę powinny być prawidłowym Visual C# identyfikatorem, ponieważ może służyć do generowania kodu.
 
-     ![Tworzenie okna dialogowego DSL](../modeling/media/create_dsldialog.png)
+      ![Tworzenie okna dialogowego DSL](../modeling/media/create_dsldialog.png)
 
-2.  Wybierz szablon DSL.
+2. Wybierz szablon DSL.
 
-     Na **wybierz opcje języka specyficznego dla domeny** wybierz jeden z szablonów rozwiązań, takich jak **minimalny języka**. Wybierz szablon, który przypomina język DSL, który chcesz utworzyć.
+    Na **wybierz opcje języka specyficznego dla domeny** wybierz jeden z szablonów rozwiązań, takich jak **minimalny języka**. Wybierz szablon, który przypomina język DSL, który chcesz utworzyć.
 
-     Aby uzyskać więcej informacji na temat szablonów rozwiązań, zobacz [Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md).
+    Aby uzyskać więcej informacji na temat szablonów rozwiązań, zobacz [Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
-3.  Wprowadź rozszerzenie nazwy pliku na **rozszerzenie pliku** strony. Powinien on być unikatowy w komputerze i w każdym komputerze, na którym chcesz zainstalować język DSL. Powinien zostać wyświetlony komunikat **Brak aplikacji lub edytorów programu Visual Studio za pomocą tego rozszerzenia**.
+3. Wprowadź rozszerzenie nazwy pliku na **rozszerzenie pliku** strony. Powinien on być unikatowy w komputerze i w każdym komputerze, na którym chcesz zainstalować język DSL. Powinien zostać wyświetlony komunikat **Brak aplikacji lub edytorów programu Visual Studio za pomocą tego rozszerzenia**.
 
-    -   Jeśli rozszerzenie nazwy pliku jest używany, poprzednie eksperymentalne językami DSL, które nie zostały w pełni zainstalowane, można wyczyścić je na zewnątrz przy użyciu **Zresetuj wystąpienie eksperymentalne** narzędzia, które znajdują się w menu programu Visual Studio SDK.
+   -   Jeśli rozszerzenie nazwy pliku jest używany, poprzednie eksperymentalne językami DSL, które nie zostały w pełni zainstalowane, można wyczyścić je na zewnątrz przy użyciu **Zresetuj wystąpienie eksperymentalne** narzędzia, które znajdują się w menu programu Visual Studio SDK.
 
-    -   Jeśli inny rozszerzenie programu Visual Studio, która używa tego rozszerzenia pliku pełni zainstalowaną na komputerze, należy rozważyć odinstalowanie go. Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.
+   -   Jeśli inny rozszerzenie programu Visual Studio, która używa tego rozszerzenia pliku pełni zainstalowaną na komputerze, należy rozważyć odinstalowanie go. Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.
 
-4.  Zbadaj i w razie potrzeby dostosować, pola na pozostałych stronach kreatora. Gdy jesteś zadowolony z ustawień, kliknij przycisk **Zakończ**. Aby uzyskać więcej informacji na temat ustawień, zobacz [stron kreatora Projektant DSL](#settings).
+4. Zbadaj i w razie potrzeby dostosować, pola na pozostałych stronach kreatora. Gdy jesteś zadowolony z ustawień, kliknij przycisk **Zakończ**. Aby uzyskać więcej informacji na temat ustawień, zobacz [stron kreatora Projektant DSL](#settings).
 
-     Kreator utworzy rozwiązanie, które ma dwa projekty, które noszą nazwy **Dsl** i **DslPackage**.
+    Kreator utworzy rozwiązanie, które ma dwa projekty, które noszą nazwy **Dsl** i **DslPackage**.
 
-    > [!NOTE]
-    >  Jeśli zobaczysz komunikat z ostrzeżeniem, nie można uruchomić szablony tekstowe ze źródeł niezaufanych, kliknij przycisk **OK**. Można ustawić ten komunikat, aby nie pojawiają się ponownie.
+   > [!NOTE]
+   >  Jeśli zobaczysz komunikat z ostrzeżeniem, nie można uruchomić szablony tekstowe ze źródeł niezaufanych, kliknij przycisk **OK**. Można ustawić ten komunikat, aby nie pojawiają się ponownie.
 
 ## <a name="settings"></a> Na stronach kreatora projektanta DSL
  Możesz pozostawić kilka pól, bez zmian wartości domyślne. Jednak należy się upewnić, czy ustawić pola rozszerzenie pliku.

@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 081a3dfd809cc936f11d436e593d2be258452f85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677474"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847581"
 ---
 # <a name="build-office-solutions"></a>Tworzenie rozwiązań pakietu Office
   Ogólnie rzecz biorąc kompilowanie i debugowanie projektów pakietu Office jest taka sama jak kompilowania i debugowania innych rodzajów projektów w programie Visual Studio, takich jak Windows Forms. W tematach w tej sekcji opisano różnice, które istnieją. Aby uzyskać ogólne informacje o sposobie tworzenia aplikacji, zobacz [skompilować i utworzyć w programie Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -64,23 +64,23 @@ ms.locfileid: "35677474"
 ### <a name="application-level-projects"></a>Projektów na poziomie aplikacji  
  Podczas tworzenia dodatku narzędzi VSTO dla programów project w danych wyjściowych projektu obejmuje następujące elementy:  
   
--   Zestaw projektu i wszystkie zestawy referencyjne, które mają ich **Kopiuj lokalnie** właściwością **true**.  
+- Zestaw projektu i wszystkie zestawy referencyjne, które mają ich **Kopiuj lokalnie** właściwością **true**.  
   
--   Manifest aplikacji, który ma rozszerzenie nazwy pliku *.manifest*. Aby uzyskać więcej informacji, zobacz [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).  
+- Manifest aplikacji, który ma rozszerzenie nazwy pliku *.manifest*. Aby uzyskać więcej informacji, zobacz [manifesty aplikacji dla rozwiązań pakietu Office](../vsto/application-manifests-for-office-solutions.md).  
   
--   Manifest wdrożenia, który ma rozszerzenie nazwy pliku *.vsto*. Aby uzyskać więcej informacji, zobacz [manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md).  
+- Manifest wdrożenia, który ma rozszerzenie nazwy pliku *.vsto*. Aby uzyskać więcej informacji, zobacz [manifesty wdrożenia dla rozwiązań pakietu Office](../vsto/deployment-manifests-for-office-solutions.md).  
   
--   Bazę danych programu (*PDB*) w pliku zestawu projektu.  
+- Bazę danych programu (*PDB*) w pliku zestawu projektu.  
   
- Proces kompilacji w projektach dodatku narzędzi VSTO tworzy również zestaw wpisów rejestru na komputerze deweloperskim, które są wymagane do załadowania dodatku narzędzi VSTO. Aby uzyskać więcej informacji, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
+  Proces kompilacji w projektach dodatku narzędzi VSTO tworzy również zestaw wpisów rejestru na komputerze deweloperskim, które są wymagane do załadowania dodatku narzędzi VSTO. Aby uzyskać więcej informacji, zobacz [wpisy rejestru dotyczące dodatków narzędzi VSTO](../vsto/registry-entries-for-vsto-add-ins.md).  
   
- W przypadku tworzenia projektu dodatku narzędzi VSTO dla programu Outlook zawierający regionów formularzy w procesie kompilacji dodaje następujące dodatkowe informacje do rejestru:  
+  W przypadku tworzenia projektu dodatku narzędzi VSTO dla programu Outlook zawierający regionów formularzy w procesie kompilacji dodaje następujące dodatkowe informacje do rejestru:  
   
--   Klucz dla każdej klasy wiadomości, który jest skojarzony z co najmniej jeden region formularza.  
+- Klucz dla każdej klasy wiadomości, który jest skojarzony z co najmniej jeden region formularza.  
   
--   Wpis dla każdego regionu formularza i skojarzoną wartość, która reprezentuje nazwę dodatku narzędzi VSTO dla programu Outlook.  
+- Wpis dla każdego regionu formularza i skojarzoną wartość, która reprezentuje nazwę dodatku narzędzi VSTO dla programu Outlook.  
   
- Program Outlook musi tych informacji, aby załadować regionów formularza.  
+  Program Outlook musi tych informacji, aby załadować regionów formularza.  
   
 ## <a name="referenced-assemblies"></a>przywoływanych zestawach  
  Możesz odwoływać się zestawów (w tym projekty bibliotek klas) z projektu kompilowanie rozwiązań pakietu Office. Co przywoływany zestaw ma właściwość o nazwie **Kopiuj lokalnie**. **Kopia lokalna** wskazuje, czy zestaw jest kopiowany do katalogu wyjściowego. Domyślnie jest ustawiona **true**. Co przywoływany zestaw, który ma **Kopiuj lokalnie** równa **true** jest kopiowany do katalogu wyjściowego.  

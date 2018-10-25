@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_container | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_container — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4a04a505b694d5ed4081b12a39815256ed68d3e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d293971cfcd0723485d4a5b21d4e431de64ddd65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822738"
 ---
 # <a name="idiasymbolgetcontainer"></a>IDiaSymbol::get_container
 Ta funkcja pobiera wskaźnik do symbolu reprezentujący/kontenera nadrzędnego tego symbolu.  
@@ -37,10 +37,10 @@ HRESULT get_container(
  [out] Zwraca wskaźnik do `IDiaSymbol` zawierający informacje o kontenerze tego symbolu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca wartości S_FALSE lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca wartość S_FALSE lub kod błędu.  
   
 > [!NOTE]
->  Zwracane wartości S_FALSE oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość S_FALSE oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   

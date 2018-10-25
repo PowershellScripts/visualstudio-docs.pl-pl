@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf7647371246e74ba99bc79233007539e03f9782
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 18342a7879458f7463ccf76baa17afd0d7f8be96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106555"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855511"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
-Pobiera moduł wyliczający dla wszystkich atrybutów niestandardowych dołączony do tego pola.  
+Pobiera moduł wyliczający dla wszystkich atrybutów niestandardowych, dołączony do tego pola.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,10 +41,10 @@ int EnumCustomAttributes(
   
 #### <a name="parameters"></a>Parametry  
  `ppEnum`  
- [out] Zwraca [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) obiekt reprezentujący listę atrybutów niestandardowych; w przeciwnym razie zwraca wartość null, jeśli nie ma żadnych atrybutów niestandardowych.  
+ [out] Zwraca [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) obiekt reprezentujący listę atrybutów niestandardowych; w przeciwnym razie zwraca wartość null, jeśli istnieją żadne atrybuty niestandardowe.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca S_OK lub wartości S_FALSE, jeśli nie ma żadnych atrybutów niestandardowych dla tego pola. W przeciwnym razie zwraca błąd o kodzie;  
+ Jeśli to się powiedzie, zwraca S_OK lub S_FALSE, jeśli istnieją żadne atrybuty niestandardowe dla tego pola. W przeciwnym razie zwraca kod błędu;  
   
 ## <a name="remarks"></a>Uwagi  
  Pole może mieć wiele atrybutów niestandardowych.  

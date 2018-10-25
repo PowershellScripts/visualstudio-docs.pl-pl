@@ -16,12 +16,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3e03ea9985840d20c812f56d7a0f9cae66420cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ff386c2f333d3558aa6631dd2e4c13f8bfd595c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838754"
 ---
 # <a name="test-area-6-delete"></a>Obszar testowy 6: usuwanie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Ten obszar testowy wtyczki kontroli źródła obejmuje akcje usuwania.
   
  Poniżej przedstawiono listę elementów, które można usunąć:  
   
--   Pliki  
+- Pliki  
   
--   Foldery  
+- Foldery  
   
--   Projekt  
+- Projekt  
   
- W zależności od typu projektu może mieć możliwość **Usuń** projektu (pozostawia pliki na dysku) lub **Usuń** projektu (spowoduje to usunięcie plików na dysku). Każda z tych akcji spowoduje usunięcie projektu lub elementu z **Eksploratora rozwiązań**.  
+  W zależności od typu projektu może mieć możliwość **Usuń** projektu (pozostawia pliki na dysku) lub **Usuń** projektu (spowoduje to usunięcie plików na dysku). Każda z tych akcji spowoduje usunięcie projektu lub elementu z **Eksploratora rozwiązań**.  
   
 ## <a name="expected-behavior"></a>Oczekiwane zachowanie  
  To oczekiwane zachowanie dla przypadków testowych, w obszarze badania delete:  

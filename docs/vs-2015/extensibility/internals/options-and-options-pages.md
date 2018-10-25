@@ -19,12 +19,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d61d2c89a163cf111a2d33701a463e018f8f1488
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9cd4ea3b1465686ee2c0a0ebcfdc4e3aa2e9e56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261043"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816355"
 ---
 # <a name="options-and-options-pages"></a>Opcje i strony opcji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,21 +59,21 @@ Klikając **opcje** na **narzędzia** zostanie otwarte menu **opcje** okno dialo
 ## <a name="option-attributes-and-layout"></a>Opcja atrybutów i układu  
  Interfejs użytkownika (UI), który zawiera strony określa wygląd opcje na stronie Opcje niestandardowe. Układ, etykietowania i opis opcji na stronie opcji ogólnych są określane przez następujące atrybuty:  
   
--   <xref:System.ComponentModel.CategoryAttribute> Określa kategorię opcji.  
+- <xref:System.ComponentModel.CategoryAttribute> Określa kategorię opcji.  
   
--   <xref:System.ComponentModel.DisplayNameAttribute> Określa nazwę wyświetlaną opcji.  
+- <xref:System.ComponentModel.DisplayNameAttribute> Określa nazwę wyświetlaną opcji.  
   
--   <xref:System.ComponentModel.DescriptionAttribute> Określa opis opcji.  
+- <xref:System.ComponentModel.DescriptionAttribute> Określa opis opcji.  
   
-    > [!NOTE]
-    >  Atrybuty równoważne, SRCategory, LocDisplayName i SRDescription, korzystać z zasobów ciągu dla lokalizacji i są definiowane w [przykładowym projekcie zarządzanych](http://go.microsoft.com/fwlink/?LinkId=122774).  
+  > [!NOTE]
+  >  Atrybuty równoważne, SRCategory, LocDisplayName i SRDescription, korzystać z zasobów ciągu dla lokalizacji i są definiowane w [przykładowym projekcie zarządzanych](http://go.microsoft.com/fwlink/?LinkId=122774).  
   
- Rozważmy następujący fragment kodu:  
+  Rozważmy następujący fragment kodu:  
   
- [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
- [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
+  [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
+  [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
   
- Opcja OptionInteger pojawia się na stronie Opcje jako **opcji całkowitą** w **Moje opcje** kategorii. Jeśli wybrano opcję opisu, **Moje opcji całkowitą**, jest wyświetlany w polu opisu.  
+  Opcja OptionInteger pojawia się na stronie Opcje jako **opcji całkowitą** w **Moje opcje** kategorii. Jeśli wybrano opcję opisu, **Moje opcji całkowitą**, jest wyświetlany w polu opisu.  
   
 ## <a name="accessing-options-pages-from-another-vspackage"></a>Uzyskiwanie dostępu do stron opcji z innego pakietu VSPackage  
  Pakietu VSPackage, który hostuje i zarządza strony opcji programowo możliwy od innego pakietu VSPackage przy użyciu modelu automatyzacji. Na przykład w poniższym kodzie pakietu VSPackage jest zarejestrowany jako stanowiącego host strony opcji.  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5d738751a4873858aaa1ad80179663d9a7b767
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 3c65f827af864a32bb13a90a0ba9818467298527
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495950"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835161"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Przewodnik: Tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic
 W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matematyczne przy użyciu języka Visual C# i następnie pakietu SDK jako programu Visual Studio rozszerzenia (VSIX). Wykonasz następujące procedury:  
@@ -31,29 +31,29 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
   
 ##  <a name="createClassLibrary"></a> Aby utworzyć składnika środowiska wykonawczego Windows SimpleMath  
   
-1.  Na pasku menu wybierz **pliku** > **New** > **nowy projekt**.  
+1. Na pasku menu wybierz **pliku** > **New** > **nowy projekt**.  
   
-2.  Na liście szablonów rozwiń **Visual C#** lub **języka Visual Basic**, wybierz **Windows Store** węzła, a następnie wybierz **składnika środowiska wykonawczego Windows** szablonu.  
+2. Na liście szablonów rozwiń **Visual C#** lub **języka Visual Basic**, wybierz **Windows Store** węzła, a następnie wybierz **składnika środowiska wykonawczego Windows** szablonu.  
   
-3.  W **nazwa** określ **SimpleMath**, a następnie wybierz **OK** przycisku.  
+3. W **nazwa** określ **SimpleMath**, a następnie wybierz **OK** przycisku.  
   
-4.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SimpleMath** węzła projektu, a następnie wybierz **właściwości**.  
+4. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SimpleMath** węzła projektu, a następnie wybierz **właściwości**.  
   
-5.  Zmień nazwę **Class1.cs** do **Arithmetic.cs** i zaktualizować je, aby dopasować następujący kod:  
+5. Zmień nazwę **Class1.cs** do **Arithmetic.cs** i zaktualizować je, aby dopasować następujący kod:  
   
-     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
-     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
+    [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
+    [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
   
-6.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **rozwiązania "SimpleMath"** węzła, a następnie wybierz **programu Configuration Manager**.  
+6. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **rozwiązania "SimpleMath"** węzła, a następnie wybierz **programu Configuration Manager**.  
   
-     **Programu Configuration Manager** zostanie otwarte okno dialogowe.  
+    **Programu Configuration Manager** zostanie otwarte okno dialogowe.  
   
-7.  W **Konfiguracja rozwiązania aktywnego** wybierz **wersji**.  
+7. W **Konfiguracja rozwiązania aktywnego** wybierz **wersji**.  
   
-8.  W **konfiguracji** kolumny, upewnij się, że **SimpleMath** wiersza jest ustawiona na **wersji**, a następnie wybierz **Zamknij** przycisk, aby zaakceptować Zmiana.  
+8. W **konfiguracji** kolumny, upewnij się, że **SimpleMath** wiersza jest ustawiona na **wersji**, a następnie wybierz **Zamknij** przycisk, aby zaakceptować Zmiana.  
   
-    > [!IMPORTANT]
-    >  Zestaw SDK dla składnika SimpleMath zawiera tylko jedną konfigurację. Ta konfiguracja musi być kompilacji wydania lub aplikacje, które używają składnika nie przekaże certyfikacji[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].  
+   > [!IMPORTANT]
+   >  Zestaw SDK dla składnika SimpleMath zawiera tylko jedną konfigurację. Ta konfiguracja musi być kompilacji wydania lub aplikacje, które używają składnika nie przekaże certyfikacji[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].  
   
 9. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **SimpleMath** węzła projektu, a następnie wybierz **kompilacji**.  
   
@@ -154,23 +154,23 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
   
 ##  <a name="createSample"></a> Aby utworzyć przykładową aplikację, która używa biblioteki klas  
   
-1.  Na pasku menu wybierz **pliku** > **New** > **nowy projekt**.  
+1. Na pasku menu wybierz **pliku** > **New** > **nowy projekt**.  
   
-2.  Na liście szablonów rozwiń **Visual C#** lub **języka Visual Basic**, a następnie wybierz **Windows Store** węzła.  
+2. Na liście szablonów rozwiń **Visual C#** lub **języka Visual Basic**, a następnie wybierz **Windows Store** węzła.  
   
-3.  Wybierz **pusta aplikacja** szablonu, nazwę projektu **ArithmeticUI**, a następnie wybierz **OK** przycisku.  
+3. Wybierz **pusta aplikacja** szablonu, nazwę projektu **ArithmeticUI**, a następnie wybierz **OK** przycisku.  
   
-4.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **ArithmeticUI** projektu, a następnie wybierz **Dodaj** > **odwołania**.  
+4. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **ArithmeticUI** projektu, a następnie wybierz **Dodaj** > **odwołania**.  
   
-5.  Na liście typów referencyjnych rozwiń **Windows**, a następnie wybierz **rozszerzenia**.  
+5. Na liście typów referencyjnych rozwiń **Windows**, a następnie wybierz **rozszerzenia**.  
   
-6.  W okienku szczegółów wybierz **proste SDK matematyczne** rozszerzenia.  
+6. W okienku szczegółów wybierz **proste SDK matematyczne** rozszerzenia.  
   
-     Pojawi się dodatkowe informacje na temat zestawu SDK. Możesz wybrać **więcej informacji o** link umożliwiający otworzenie https://msdn.microsoft.com/, jak określono w pliku SDKManifest.xml we wcześniejszej części tego przewodnika.  
+    Pojawi się dodatkowe informacje na temat zestawu SDK. Możesz wybrać **więcej informacji o** link umożliwiający otworzenie https://msdn.microsoft.com/, jak określono w pliku SDKManifest.xml we wcześniejszej części tego przewodnika.  
   
-7.  W **Menadżer odwołań** okno dialogowe, wybierz opcję **proste SDK matematyczne** pole wyboru, a następnie wybierz **OK** przycisku.  
+7. W **Menadżer odwołań** okno dialogowe, wybierz opcję **proste SDK matematyczne** pole wyboru, a następnie wybierz **OK** przycisku.  
   
-8.  Na pasku menu wybierz **widoku** > **przeglądarki obiektów**.  
+8. Na pasku menu wybierz **widoku** > **przeglądarki obiektów**.  
   
 9. W **Przeglądaj** wybierz **proste matematyczne**.  
   
@@ -239,7 +239,7 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
   
      Zostanie wyświetlony odpowiedni wynik.  
   
- Pomyślnie tworzone i używane rozszerzenie SDK.  
+    Pomyślnie tworzone i używane rozszerzenie SDK.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Przewodnik: Tworzenie zestawu SDK przy użyciu języka C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

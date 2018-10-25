@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 486c8e32b577b6c794a03c080a909023b40eafde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b05c0f1782382f437a5e1d90bf19c724a05ca6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826393"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Zapisywanie rejestratorów uwzględniających wiele procesorów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,13 +71,13 @@ public interface INodeLogger: ILogger
   
  Istnieją dwa sposoby korzystania z rejestrowania rozproszonych, w następujący sposób:  
   
--   Dostosowywanie rejestratora wstępnie metalowych przesyłania dalej o nazwie <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.  
+- Dostosowywanie rejestratora wstępnie metalowych przesyłania dalej o nazwie <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.  
   
--   Napisać własne niestandardowe przekazywania rejestratora.  
+- Napisać własne niestandardowe przekazywania rejestratora.  
   
- Można zmodyfikować ConfigurableForwardingLogger ze swoimi potrzebami. Aby to zrobić, należy wywołać rejestratora w wierszu polecenia przy użyciu MSBuild.exe, a listy zdarzeń kompilacji, które rejestratora do przekazywania na węźle centralnym.  
+  Można zmodyfikować ConfigurableForwardingLogger ze swoimi potrzebami. Aby to zrobić, należy wywołać rejestratora w wierszu polecenia przy użyciu MSBuild.exe, a listy zdarzeń kompilacji, które rejestratora do przekazywania na węźle centralnym.  
   
- Alternatywnie można utworzyć rejestratora przekazywanie niestandardowych. Tworząc rejestratora przekazywanie niestandardowych, można dostosować zachowanie programu rejestrującego. Jednak tworzenie rejestratora przekazywanie niestandardowych jest bardziej skomplikowane niż po prostu Dostosowywanie ConfigurableForwardingLogger. Aby uzyskać więcej informacji, zobacz [tworzenie przekazywania rejestratorów](../msbuild/creating-forwarding-loggers.md).  
+  Alternatywnie można utworzyć rejestratora przekazywanie niestandardowych. Tworząc rejestratora przekazywanie niestandardowych, można dostosować zachowanie programu rejestrującego. Jednak tworzenie rejestratora przekazywanie niestandardowych jest bardziej skomplikowane niż po prostu Dostosowywanie ConfigurableForwardingLogger. Aby uzyskać więcej informacji, zobacz [tworzenie przekazywania rejestratorów](../msbuild/creating-forwarding-loggers.md).  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>Przy użyciu ConfigurableForwardingLogger proste rozproszone rejestrowania  
  Aby dołączyć ConfigurableForwardingLogger lub rejestratora przekazywanie niestandardowych, należy użyć `/distributedlogger` przełącznika (`/dl` w skrócie) MSBuild.exe kompilacji wiersza polecenia. Format określająca nazwy klasy i typy rejestratora jest taka sama jak dla `/logger` przełącznika, z tą różnicą, że rozproszonych rejestratora zawsze ma dwie klasy rejestrowania zamiast jednym Rejestrator przekazywania i rejestratora centralnego. Oto przykładowy sposób dołączyć Rejestrator przekazywanie niestandardowej o nazwie XMLForwardingLogger.  

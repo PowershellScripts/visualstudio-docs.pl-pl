@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fa0e7899e2f6e52536e2296519a1697e27a3643
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: ae7b54e6311a58d93c5cc11cfc073c4032df32dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855992"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>Projectitem — element (szablony elementów Visual Studio)
 Określa plik, który znajduje się w szablonie elementu.  
@@ -51,13 +51,13 @@ Określa plik, który znajduje się w szablonie elementu.
   
 ### <a name="attributes"></a>Atrybuty  
   
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|`SubType`|Atrybut opcjonalny.<br /><br /> Określa podtyp elementu w szablonie elementów wielu plików. Ta wartość służy do określania edytora, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] będzie używać, aby otworzyć element.|  
-|`CustomTool`|Atrybut opcjonalny.<br /><br /> Ustawia CustomTool dla elementu w pliku projektu.|  
-|`ItemType`|Atrybut opcjonalny.<br /><br /> Ustawia ItemType dla elementu w pliku projektu.|  
-|`ReplaceParameters`|Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element ma wartości parametrów, które muszą zostać przesłonięte, gdy projekt jest tworzony na podstawie tego szablonu. Wartość domyślna to `false`.|  
-|`TargetFileName`|Atrybut opcjonalny.<br /><br /> Określa nazwę elementu, który jest tworzone na podstawie szablonu. Ten atrybut jest przydatne w przypadku za pomocą zastąpienia parametrów do utworzenia nazwy elementu.|  
+| Atrybut | Opis |
+|---------------------| - |
+| `SubType` | Atrybut opcjonalny.<br /><br /> Określa podtyp elementu w szablonie elementów wielu plików. Ta wartość służy do określania edytora, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] będzie używać, aby otworzyć element. |
+| `CustomTool` | Atrybut opcjonalny.<br /><br /> Ustawia CustomTool dla elementu w pliku projektu. |
+| `ItemType` | Atrybut opcjonalny.<br /><br /> Ustawia ItemType dla elementu w pliku projektu. |
+| `ReplaceParameters` | Atrybut opcjonalny.<br /><br /> Wartość logiczna określająca, czy element ma wartości parametrów, które muszą zostać przesłonięte, gdy projekt jest tworzony na podstawie tego szablonu. Wartość domyślna to `false`. |
+| `TargetFileName` | Atrybut opcjonalny.<br /><br /> Określa nazwę elementu, który jest tworzone na podstawie szablonu. Ten atrybut jest przydatne w przypadku za pomocą zastąpienia parametrów do utworzenia nazwy elementu. |
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  Brak.  

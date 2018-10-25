@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8449abf6fe178225f84aa65caa4d027df5021d4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f62018eb3e58f69758bd07faebc7bd77fb26b33b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845852"
 ---
 # <a name="performance-report-overview"></a>Raport dotyczący wydajności — omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Można wyświetlić danych profilowania w sesji pomiaru wydajności **raport dot
 ### <a name="callercallee-view"></a>Widok wywołujący/wywoływany  
  Widok wywołujący/wywoływany Wyświetla drzewo wywołań dla poszczególnych funkcji. Widok jest podzielony na trzy części:  
   
--   Funkcja docelowa jest wyświetlany w środku widoku.  
+- Funkcja docelowa jest wyświetlany w środku widoku.  
   
--   Funkcje, które wywołuje funkcję (obiekty wywołujące) są wyświetlane powyżej docelowej funkcji.  
+- Funkcje, które wywołuje funkcję (obiekty wywołujące) są wyświetlane powyżej docelowej funkcji.  
   
--   Funkcje, które są wywoływane przez funkcję target (wywoływane) są wyświetlane poniżej wartości docelowej.  
+- Funkcje, które są wywoływane przez funkcję target (wywoływane) są wyświetlane poniżej wartości docelowej.  
   
- Możesz wybrać inną funkcję przez dwukrotne kliknięcie dowolnej funkcji, na liście o nazwie lub na liście / / wywoływany. Aby uzyskać więcej informacji, zobacz [widok wywołujący/wywoływany](../profiling/caller-callee-view.md).  
+  Możesz wybrać inną funkcję przez dwukrotne kliknięcie dowolnej funkcji, na liście o nazwie lub na liście / / wywoływany. Aby uzyskać więcej informacji, zobacz [widok wywołujący/wywoływany](../profiling/caller-callee-view.md).  
   
 ### <a name="call-tree-view"></a>Widok drzewa wywołań  
  Widok drzewa wywołania Wyświetla ścieżki wykonywania funkcji, które zostały przesunięta w profilowanej aplikacji. Główny drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcji Wyświetla wszystkie funkcje, które go wywołały i dane wydajności dotyczące tych wywołań funkcji.  

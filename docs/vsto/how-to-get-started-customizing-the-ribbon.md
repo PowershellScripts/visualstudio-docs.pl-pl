@@ -18,65 +18,65 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0ee9866c01031948fc47bbe95bf762c9328b99a8
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7a4c7edbc78182908ea7bce9b91945bbbccdb54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254608"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838351"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Porady: wprowadzenie do dostosowywania wstążki
-  Aby dostosować Wstążki aplikacji pakietu Microsoft Office, dodawanie **wstążki (projektanta wizualnego)** lub **wstążki (XML)** elementu do projektu pakietu Office.  
+  Aby dostosować Wstążki aplikacji pakietu Microsoft Office, należy dodać **Wstążka (Projektant graficzny)** lub **wstążki (XML)** elementu do projektu programu pakietu Office.  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
 ### <a name="to-add-a-ribbon-to-a-project"></a>Aby dodać wstążki do projektu  
   
-1.  Na **projektu** Menu, kliknij przycisk **Dodaj nowy element**.  
+1. Na **projektu** Menu, kliknij przycisk **Dodaj nowy element**.  
   
-2.  W **Dodaj nowy element** okno dialogowe, wybierz opcję **wstążki (projektanta wizualnego)** lub **wstążki (XML)**. Aby uzyskać więcej informacji na temat tych szablonów, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).  
+2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **Wstążka (Projektant graficzny)** lub **wstążki (XML)**. Aby uzyskać więcej informacji na temat tych szablonów, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).  
   
-3.  W **nazwa** wpisz nazwę elementu wstążki.  
+3. W **nazwa** wpisz nazwę elementu wstążki.  
   
-     Nazwy nie mogą zawierać następujących znaków:  
+    Nazwy nie mogą zawierać następujących znaków:  
   
-    -   Krzyżyka (#)  
+   -   Krzyżyk (#)  
   
-    -   Znaku procentu (%)  
+   -   Procentu (%)  
   
-    -   Handlowe "i" (&)  
+   -   Handlowe "i" (&)  
   
-    -   Znak gwiazdki (*)  
+   -   Gwiazdka (*)  
   
-    -   Pionowej kreski (|)  
+   -   Kreski pionowej (|)  
   
-    -   Ukośnik odwrotny (\\)  
+   -   Ukośnik odwrotny (\\)  
   
-    -   Dwukropka (:)  
+   -   Dwukropek (:)  
   
-    -   Podwójny cudzysłów (")  
+   -   Podwójny cudzysłów (")  
   
-    -   Mniej niż (\<)  
+   -   Mniej niż (\<)  
   
-    -   Większości (>)  
+   -   Większe niż (>)  
   
-    -   Znak zapytania (?)  
+   -   Znak zapytania (?)  
   
-    -   Ukośnik (/)  
+   -   Do przodu ukośnika (/)  
   
-    -   Początkowe lub końcowe spacje ("")  
+   -   Spacji wiodących albo końcowych ("")  
   
-    -   Nazwy zarezerwowane dla systemu Windows lub DOS, np. ("nul", "aux", "con", "com1", "lpt1" i tak dalej)  
+   -   Nazwy zarezerwowane dla Windows lub systemu DOS, np. ("nul", "aux", "con", "com1", "lpt1" i tak dalej)  
   
-4.  Kliknij przycisk **OK**.  
+4. Kliknij przycisk **OK**.  
   
- Zostanie wyświetlony element wstążki w **Eksploratora rozwiązań**. Aby uzyskać informacje o następnych krokach, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).  
+   Element wstążki, który pojawia się w **Eksploratora rozwiązań**. Aby uzyskać informacje o następnych krokach, zobacz [Wstążka ― omówienie](../vsto/ribbon-overview.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Dostęp do wstążki w czasie wykonywania](../vsto/accessing-the-ribbon-at-run-time.md)   
  [Projektant wstążki](../vsto/ribbon-designer.md)   
- [XML wstążki](../vsto/ribbon-xml.md)   
- [Wskazówki: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Wskazówki: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+ [XML — Wstążka](../vsto/ribbon-xml.md)   
+ [Przewodnik: Tworzenie kart niestandardowych za pomocą projektanta wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Przewodnik: Tworzenie kart niestandardowych za pomocą XML wstążki](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   

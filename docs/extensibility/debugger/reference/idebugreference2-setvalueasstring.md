@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21d4e3f23ae8a66ff4bfa26bdaf6d906a2b008a2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b4c7af3a7cedd56b72032ad51ecc6ef4df04d8c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837935"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
-Ustawia wartość odwołanie z ciągu. Zarezerwowane do użytku w przyszłości.  
+Ustawia wartość odniesienia z ciągu. Zarezerwowane do użytku w przyszłości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,10 +48,10 @@ int SetValueAsString (
  [in] Wartość jako ciąg.  
   
  `dwRadix`  
- [in] Podstawa ma być używany podczas formatowania wszelkie informacje numeryczne.  
+ [in] Podstawy, który ma być używany w formatowaniu wszelkie dane liczbowe.  
   
  `dwTimeout`  
- [in] Maksymalny czas (w milisekundach) oczekiwania przed powrotem z tej metody. Użyj `INFINITE` będzie czekać w nieskończoność.  
+ [in] Maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zawsze zwraca `E_NOTIMPL`.  

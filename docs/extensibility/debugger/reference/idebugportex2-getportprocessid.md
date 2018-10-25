@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d41f01727ed5ee6a1db348da1c253120b1b13c2a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 40135e1b6f9eee192dfa35ac7cae6a80a693f840
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122577"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818968"
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
 Pobiera identyfikator procesu samego portu.  
@@ -41,13 +41,13 @@ int GetPortProcessId (
   
 #### <a name="parameters"></a>Parametry  
  `pdwProcessId`  
- [out] Zwraca identyfikator procesu fizycznego samego portu.  
+ [out] Zwraca identyfikator procesu fizyczny port sam.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- W środowisku wykonawczym Win32 na przykład tej metody zwykle wywołania funkcji Win32 `GetCurrentProcessId` można pobrać identyfikatora procesu fizycznego.  
+ W środowisku uruchomieniowym Win32 na przykład tej metody zwykle wywołuje funkcję Win32 `GetCurrentProcessId` można pobrać identyfikatora procesu fizycznych.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 0b50e5e1c0198f1a8c6e33254f0cdab17bc38535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863905"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883357"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Przewodnik: Publikowanie rozszerzenia programu Visual Studio za pomocą wiersza polecenia
 
@@ -33,12 +33,12 @@ VsixPublisher.exe to narzędzie wiersza polecenia do publikowania rozszerzenia p
 
 Publikuje rozszerzenia w portalu Marketplace. Rozszerzenie może być vsix, plik exe/msi lub łącza. Jeśli rozszerzenie jest już w tej samej wersji, zastąpi rozszerzenia. Jeśli rozszerzenie nie istnieje, utworzy nowe rozszerzenie.
 
-|Opcje polecenia                    |Opis  |
+|Opcje polecenia |Opis |
 |---------|---------|
-|ładunek (wymagane)                 |  Albo ścieżka do ładunku do opublikowania lub link do użycia jako "Więcej informacji o adres URL".      |
-|publishManifest (wymagane)         |  Ścieżka do publikowania manifestu plik do użycia.       |
-|ignoreWarnings                     |  Lista ostrzeżeń do zignorowania podczas publikowania rozszerzenia. Ostrzeżenia te są wyświetlane jako komunikaty wiersza polecenia przy publikowaniu rozszerzeniem. (na przykład "VSIXValidatorWarning01, VSIXValidatorWarning02")  
-|personalAccesToken                 |  Osobisty Token dostępu, który jest używany do uwierzytelniania wydawcy. Jeśli nie zostanie podana, osobisty token dostępu jest uzyskanych z zalogowanych użytkowników.       |
+|ładunek (wymagane) | Albo ścieżka do ładunku do opublikowania lub link do użycia jako "Więcej informacji o adres URL". |
+|publishManifest (wymagane) | Ścieżka do publikowania manifestu plik do użycia. |
+|ignoreWarnings | Lista ostrzeżeń do zignorowania podczas publikowania rozszerzenia. Ostrzeżenia te są wyświetlane jako komunikaty wiersza polecenia przy publikowaniu rozszerzeniem. (na przykład "VSIXValidatorWarning01, VSIXValidatorWarning02")  
+|personalAccesToken | Osobisty Token dostępu, który jest używany do uwierzytelniania wydawcy. Jeśli nie zostanie podana, osobisty token dostępu jest uzyskanych z zalogowanych użytkowników. |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
@@ -48,13 +48,13 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 Tworzy wydawcy w portalu Marketplace. Na komputerze dla przyszłych akcji (na przykład, usunięcie/publikowanie rozszerzenia) rejestruje wydawcy.
 
-|Opcje polecenia                    |Opis  |
+|Opcje polecenia |Opis |
 |---------|---------|
-|Nazwa wyświetlana (wymagane)             |  Nazwa wyświetlana wydawcy.      |
-|Nazwa_wydawcy (wymagane)           |  Nazwa wydawcy (na przykład identyfikator).      |
-|personalAccessToken (wymagane)     |  Osobisty Token dostępu, który jest używany do uwierzytelniania wydawcy.      |
-|shortDescription                   |  Krótki opis wydawcy (nie plik).       |
-|longDescription                    |  Długi opis wydawcy (nie plik).      |
+|Nazwa wyświetlana (wymagane) | Nazwa wyświetlana wydawcy. |
+|Nazwa_wydawcy (wymagane) | Nazwa wydawcy (na przykład identyfikator). |
+|personalAccessToken (wymagane) | Osobisty Token dostępu, który jest używany do uwierzytelniania wydawcy. |
+|shortDescription | Krótki opis wydawcy (nie plik). |
+|longDescription | Długi opis wydawcy (nie plik). |
 
 ```
 VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName "{Publisher Display Name}" -personalAccessToken "{Personal Access Token}"
@@ -64,10 +64,10 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 Usuwa wydawcy w portalu Marketplace.
 
-|Opcje polecenia                    |Opis  |
+|Opcje polecenia |Opis |
 |---------|---------|
-|Nazwa_wydawcy (wymagane)           |  Nazwa wydawcy (na przykład identyfikator).      |
-|personalAccessToken (wymagane)     |  Osobisty Token dostępu, który jest używany do uwierzytelniania wydawcy.      |
+|Nazwa_wydawcy (wymagane) | Nazwa wydawcy (na przykład identyfikator). |
+|personalAccessToken (wymagane) | Osobisty Token dostępu, który jest używany do uwierzytelniania wydawcy. |
 
 ```
 VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAccessToken "{Personal Access Token}"
@@ -77,11 +77,11 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 Usuwa rozszerzenie z witryny Marketplace.
 
-|Opcje polecenia                    |Opis  |
+|Opcje polecenia |Opis |
 |---------|---------|
-|extensionName (wymagane)           |  Nazwa rozszerzenia do usunięcia.      |
-|Nazwa_wydawcy (wymagane)           |  Nazwa wydawcy (na przykład identyfikator).      |
-|personalAccessToken                |  Osobisty Token dostępu, który jest używany do uwierzytelniania wydawcy. Jeśli nie zostanie podana, osobisty token dostępu jest uzyskanych z zalogowanych użytkowników.     |
+|extensionName (wymagane) | Nazwa rozszerzenia do usunięcia. |
+|Nazwa_wydawcy (wymagane) | Nazwa wydawcy (na przykład identyfikator). |
+|personalAccessToken | Osobisty Token dostępu, który jest używany do uwierzytelniania wydawcy. Jeśli nie zostanie podana, osobisty token dostępu jest uzyskanych z zalogowanych użytkowników. |
 
 ```
 VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherName "{Publisher Name}"
@@ -91,11 +91,11 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 Wydawca loguje się do komputera.
 
-|Opcje polecenia                    |Opis  |
+|Opcje polecenia |Opis |
 |---------|---------|
-|personalAccessToken (wymagane      |  Osobisty Token dostępu, który jest używany do uwierzytelniania wydawcy.      |
-|Nazwa_wydawcy (wymagane)           |  Nazwa wydawcy (na przykład identyfikator).      |
-|Zastąp                          |  Określa, że wszelkie istniejącego wydawcę powinny być zastąpione przy użyciu nowego osobisty token dostępu.     |
+|personalAccessToken (wymagane | Osobisty Token dostępu, który jest używany do uwierzytelniania wydawcy. |
+|Nazwa_wydawcy (wymagane) | Nazwa wydawcy (na przykład identyfikator). |
+|Zastąp | Określa, że wszelkie istniejącego wydawcę powinny być zastąpione przy użyciu nowego osobisty token dostępu. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -105,10 +105,10 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 Rejestruje wydawcy z komputera.
 
-|Opcje polecenia                    |Opis  |
+|Opcje polecenia |Opis |
 |---------|---------|
-|Nazwa_wydawcy (wymagane)           |  Nazwa wydawcy (na przykład identyfikator).      |
-|ignoreMissingPublisher             |  Określa, że narzędzie powinien błędu, jeśli określony wydawca są nie już zalogowany.     |
+|Nazwa_wydawcy (wymagane) | Nazwa wydawcy (na przykład identyfikator). |
+|ignoreMissingPublisher | Określa, że narzędzie powinien błędu, jeśli określony wydawca są nie już zalogowany. |
 
 ```
 VsixPublisher.exe logout -publisherName "{Publisher Name}"

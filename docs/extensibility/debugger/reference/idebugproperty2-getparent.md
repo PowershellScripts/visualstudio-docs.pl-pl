@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad6e4688a840f9fb90a46f94d4a2d48eb1be702a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92e3ffde948d7f36e02a4b76086e7b4cee290fa1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864143"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 Pobiera właściwość nadrzędna właściwości.  
@@ -44,7 +44,7 @@ int GetParent (
  [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który reprezentuje element nadrzędny właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `S_GETPARENT_NO_PARENT` Jeśli brak.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `S_GETPARENT_NO_PARENT` Jeśli brak elementu nadrzędnego.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

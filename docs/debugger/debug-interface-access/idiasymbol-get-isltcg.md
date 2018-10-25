@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isLTCG | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_isltcg — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a799cf16dbf603f75cd810f9c249f4c0e8ba49ec
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7eb1d7308eb03d396ca8a08f915a294ec1debd82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877741"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
-Pobiera flagę określającą, czy [Compiland](../../debugger/debug-interface-access/compiland.md) została połączona z przełącznikiem konsolidatora [opcję/LTCG (Generowanie kodu w czasie Link)](/cpp/build/reference/ltcg-link-time-code-generation), która pomaga w optymalizacja całego programu. Ta opcja dotyczy tylko kodu zarządzanego.  
+Pobiera flagę określającą, czy [compiland —](../../debugger/debug-interface-access/compiland.md) została połączona z przełącznikiem konsolidatora [opcję/LTCG (Generowanie kodu Link-time)](/cpp/build/reference/ltcg-link-time-code-generation), która pomaga w optymalizacji całego programu. Ten przełącznik dotyczy tylko kodu zarządzanego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,10 +37,10 @@ HRESULT get_iSLTCG(
  [out] Zwraca `TRUE` Jeśli `compiland` został połączony z przełącznikiem konsolidatora opcję/LTCG; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   

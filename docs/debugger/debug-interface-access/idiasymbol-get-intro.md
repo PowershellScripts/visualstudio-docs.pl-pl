@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_intro | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_intro — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f43aeb33ce7727133a7ed2a4e4eba0cac53cda
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2b025ebf2a3d800743c625fab97dc271f8320e75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467579"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813378"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
-Pobiera flagę określającą, czy funkcja jest wprowadzenie funkcję wirtualną.  
+Pobiera flagę określającą, czy funkcja jest wprowadzenie do funkcji wirtualnej.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,10 +37,10 @@ HRESULT get_intro (
  [out] Zwraca `TRUE` Jeśli funkcja jest wprowadzenie wirtualnych; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="example"></a>Przykład  
   
@@ -53,7 +53,7 @@ class B : public A {
 }  
 ```  
   
- Zarówno `A::f1` i `B::f1` są funkcje wirtualne, ale `A::f1` jest wprowadzenie wirtualnego.  
+ Zarówno `A::f1` i `B::f1` funkcji wirtualnych, ale `A::f1` jest wprowadzenie wirtualny.  
   
 ## <a name="requirements"></a>Wymagania  
   

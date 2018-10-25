@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e55a214d2b35e26dcc1a3b381f74a7ccd021c864
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3608399613063a0fa572fe4de12b77187f8b4b41
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811506"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Porady: zmiana rozmiaru formantów ListObject
   Ustaw rozmiar <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli po dodaniu go do programu Microsoft Office Excel; Jednakże, możesz chcieć zmienić jej rozmiar w późniejszym czasie. Na przykład można zmienić listę dwóch kolumn na trzy kolumny.  
@@ -32,15 +32,15 @@ ms.locfileid: "35677188"
   
  W tym temacie opisano następujące zadania:  
   
--   [Zmiana rozmiaru formantów ListObject w czasie projektowania](#designtime)  
+- [Zmiana rozmiaru formantów ListObject w czasie projektowania](#designtime)  
   
--   [Zmiana rozmiaru formantów ListObject w czasie wykonywania w projekcie na poziomie dokumentu](#runtimedoclevel)  
+- [Zmiana rozmiaru formantów ListObject w czasie wykonywania w projekcie na poziomie dokumentu](#runtimedoclevel)  
   
--   [Zmiana rozmiaru formantów ListObject w czasie wykonywania w projekcie dodatku narzędzi VSTO](#runtimeaddin)  
+- [Zmiana rozmiaru formantów ListObject w czasie wykonywania w projekcie dodatku narzędzi VSTO](#runtimeaddin)  
   
- Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Excel.ListObject> formantów, zobacz [kontrolki ListObject](../vsto/listobject-control.md).  
+  Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Excel.ListObject> formantów, zobacz [kontrolki ListObject](../vsto/listobject-control.md).  
   
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [w jaki sposób dodać I: kolumn z obiektem listy powiązanych z danymi w czasie wykonywania?](http://go.microsoft.com/fwlink/?LinkID=130318).  
+  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [w jaki sposób dodać I: kolumn z obiektem listy powiązanych z danymi w czasie wykonywania?](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
 ##  <a name="designtime"></a> Zmienianie rozmiaru kontrolki ListObject w czasie projektowania  
  Aby zmienić rozmiar listy, możesz kliknąć i przeciągnij jeden z uchwytów zmiany rozmiaru lub ponownie zdefiniować jej rozmiar w **Zmień rozmiar listy** okno dialogowe.  

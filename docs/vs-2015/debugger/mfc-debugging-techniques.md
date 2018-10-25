@@ -32,12 +32,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b311954172038d20327ab92283812a8b157a0d06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac5c208478147e0b264165383df7deea23720c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303917"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867900"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniki testowania MFC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,23 +51,23 @@ Jeśli debugujesz program MFC te techniki debugowania mogą być przydatne.
   
  [Wykrywanie przecieków pamięci w MFC](#BKMK_Memory_leak_detection_in_MFC)  
   
--   [Śledzenia alokacji pamięci](#BKMK_Tracking_memory_allocations)  
+- [Śledzenia alokacji pamięci](#BKMK_Tracking_memory_allocations)  
   
--   [Włączenie diagnostyki pamięci](#BKMK_Enabling_memory_diagnostics)  
+- [Włączenie diagnostyki pamięci](#BKMK_Enabling_memory_diagnostics)  
   
--   [Tworzenie migawek pamięci](#BKMK_Taking_memory_snapshots)  
+- [Tworzenie migawek pamięci](#BKMK_Taking_memory_snapshots)  
   
--   [Wyświetlanie statystyk pamięci](#BKMK_Viewing_memory_statistics)  
+- [Wyświetlanie statystyk pamięci](#BKMK_Viewing_memory_statistics)  
   
--   [Pobieranie obiektu zrzutów](#BKMK_Taking_object_dumps)  
+- [Pobieranie obiektu zrzutów](#BKMK_Taking_object_dumps)  
   
-    -   [Interpretowanie pamięci zrzutów](#BKMK_Interpreting_memory_dumps)  
+  - [Interpretowanie pamięci zrzutów](#BKMK_Interpreting_memory_dumps)  
   
-    -   [Dostosowywanie obiektu zrzutów](#BKMK_Customizing_object_dumps)  
+  - [Dostosowywanie obiektu zrzutów](#BKMK_Customizing_object_dumps)  
   
-     [Zmniejszenie rozmiaru kompilacji debugowania MFC](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
+    [Zmniejszenie rozmiaru kompilacji debugowania MFC](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
   
-    -   [Tworzenie aplikacji MFC za pomocą informacji o debugowaniu dla wybranych modułów](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
+  - [Tworzenie aplikacji MFC za pomocą informacji o debugowaniu dla wybranych modułów](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> Afxdebugbreak —  
  Biblioteka MFC zawiera specjalny [afxdebugbreak —](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) funkcja, przypadku kodować punktów przerwania w kodzie źródłowym:  
@@ -145,62 +145,62 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **Aby włączyć lub wyłączyć Diagnostyka pamięci**  
   
--   Wywołaj funkcję globalnego [afxenablememorytracking —](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) Aby włączyć lub wyłączyć alokatora pamięci diagnostycznych. Ponieważ Diagnostyka pamięci są włączone domyślnie w bibliotece debugowania, zwykle użyjesz tej funkcji, aby tymczasowo wyłączyć je, zwiększa szybkość wykonywania programu, która ogranicza dane wyjściowe diagnostyki.  
+- Wywołaj funkcję globalnego [afxenablememorytracking —](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) Aby włączyć lub wyłączyć alokatora pamięci diagnostycznych. Ponieważ Diagnostyka pamięci są włączone domyślnie w bibliotece debugowania, zwykle użyjesz tej funkcji, aby tymczasowo wyłączyć je, zwiększa szybkość wykonywania programu, która ogranicza dane wyjściowe diagnostyki.  
   
- **Aby wybrać funkcje diagnostyczne dotyczące pamięci za pomocą afxmemdf —**  
+  **Aby wybrać funkcje diagnostyczne dotyczące pamięci za pomocą afxmemdf —**  
   
--   Jeśli chcesz bardziej precyzyjną kontrolę nad funkcji diagnostycznych pamięci, można selektywnie włączyć funkcje diagnostyczne poszczególnych pamięci włączać i wyłączać, ustawiając wartość zmiennej globalnej MFC [afxmemdf —](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086). Ta zmienna może mieć następujące wartości, określony przez Typ wyliczany **afxmemdf —**.  
+- Jeśli chcesz bardziej precyzyjną kontrolę nad funkcji diagnostycznych pamięci, można selektywnie włączyć funkcje diagnostyczne poszczególnych pamięci włączać i wyłączać, ustawiając wartość zmiennej globalnej MFC [afxmemdf —](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086). Ta zmienna może mieć następujące wartości, określony przez Typ wyliczany **afxmemdf —**.  
   
-    |Wartość|Opis|  
-    |-----------|-----------------|  
-    |**allocMemDF**|Włącz alokatora pamięci diagnostyczne (ustawienie domyślne).|  
-    |**delayFreeMemDF**|Opóźnienie zwalnianie pamięci podczas wywoływania `delete` lub `free` dopóki program jest zamykany. Spowoduje to program, aby przydzielić maksymalną ilość pamięci.|  
-    |**checkAlwaysMemDF**|Wywołaj [afxcheckmemory —](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) za każdym razem, gdy przydzielone lub zwolnienie pamięci.|  
+  |Wartość|Opis|  
+  |-----------|-----------------|  
+  |**allocMemDF**|Włącz alokatora pamięci diagnostyczne (ustawienie domyślne).|  
+  |**delayFreeMemDF**|Opóźnienie zwalnianie pamięci podczas wywoływania `delete` lub `free` dopóki program jest zamykany. Spowoduje to program, aby przydzielić maksymalną ilość pamięci.|  
+  |**checkAlwaysMemDF**|Wywołaj [afxcheckmemory —](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) za każdym razem, gdy przydzielone lub zwolnienie pamięci.|  
   
-     Te wartości mogą służyć w połączeniu za pomocą operacji logiczne OR, jak pokazano poniżej:  
+   Te wartości mogą służyć w połączeniu za pomocą operacji logiczne OR, jak pokazano poniżej:  
   
-    ```cpp  
-    afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;  
-    ```  
+  ```cpp  
+  afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;  
+  ```  
   
- [W tym temacie](#BKMK_In_this_topic)  
+  [W tym temacie](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> Tworzenie migawek pamięci  
   
-1.  Tworzenie [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) obiektu, a następnie wywołać [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) funkcja elementu członkowskiego. Spowoduje to utworzenie pierwszego migawkę pamięci.  
+1. Tworzenie [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) obiektu, a następnie wywołać [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) funkcja elementu członkowskiego. Spowoduje to utworzenie pierwszego migawkę pamięci.  
   
-2.  Po program wykonuje jego operacji alokacji i dezalokacji pamięci, należy utworzyć inny `CMemoryState` obiektu, a następnie wywołać `Checkpoint` dla tego obiektu. Pobiera to drugi migawki użycia pamięci.  
+2. Po program wykonuje jego operacji alokacji i dezalokacji pamięci, należy utworzyć inny `CMemoryState` obiektu, a następnie wywołać `Checkpoint` dla tego obiektu. Pobiera to drugi migawki użycia pamięci.  
   
-3.  Utwórz trzecią `CMemoryState` obiektu, a następnie wywołać jej [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) funkcji członkowskiej, podając jako argumenty dwóch poprzednich `CMemoryState` obiektów. Jeśli istnieje różnica pomiędzy stanami dwóch pamięci `Difference` funkcja zwraca wartość różną od zera. Oznacza to, że, niektóre bloki pamięci ma nie została wycofana.  
+3. Utwórz trzecią `CMemoryState` obiektu, a następnie wywołać jej [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) funkcji członkowskiej, podając jako argumenty dwóch poprzednich `CMemoryState` obiektów. Jeśli istnieje różnica pomiędzy stanami dwóch pamięci `Difference` funkcja zwraca wartość różną od zera. Oznacza to, że, niektóre bloki pamięci ma nie została wycofana.  
   
-     Ten przykład przedstawia kod wygląda następująco:  
+    Ten przykład przedstawia kod wygląda następująco:  
   
-    ```  
-    // Declare the variables needed  
-    #ifdef _DEBUG  
-        CMemoryState oldMemState, newMemState, diffMemState;  
-        oldMemState.Checkpoint();  
-    #endif  
+   ```  
+   // Declare the variables needed  
+   #ifdef _DEBUG  
+       CMemoryState oldMemState, newMemState, diffMemState;  
+       oldMemState.Checkpoint();  
+   #endif  
   
-        // Do your memory allocations and deallocations.  
-        CString s("This is a frame variable");  
-        // The next object is a heap object.  
-       CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
+       // Do your memory allocations and deallocations.  
+       CString s("This is a frame variable");  
+       // The next object is a heap object.  
+      CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
   
-    #ifdef _DEBUG  
-        newMemState.Checkpoint();  
-        if( diffMemState.Difference( oldMemState, newMemState ) )  
-        {  
-            TRACE( "Memory leaked!\n" );  
-        }  
-    #endif  
-    ```  
+   #ifdef _DEBUG  
+       newMemState.Checkpoint();  
+       if( diffMemState.Difference( oldMemState, newMemState ) )  
+       {  
+           TRACE( "Memory leaked!\n" );  
+       }  
+   #endif  
+   ```  
   
-     Należy zauważyć, że instrukcje sprawdzanie pamięci jest oddzielona przez `#ifdef` [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** blokuje, dzięki czemu są one kompilowane tylko w wersji debugowania programu.  
+    Należy zauważyć, że instrukcje sprawdzanie pamięci jest oddzielona przez `#ifdef` [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** blokuje, dzięki czemu są one kompilowane tylko w wersji debugowania programu.  
   
-     Teraz, gdy wiesz, występuje przeciek pamięci, można użyć innej funkcji członkowskiej, [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) pomoże Ci go zlokalizować.  
+    Teraz, gdy wiesz, występuje przeciek pamięci, można użyć innej funkcji członkowskiej, [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) pomoże Ci go zlokalizować.  
   
- [W tym temacie](#BKMK_In_this_topic)  
+   [W tym temacie](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Viewing_memory_statistics"></a> Wyświetlanie statystyk pamięci  
  [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) funkcji analizuje dwa obiekty stanu pamięci i wykrywa wszystkie obiekty nie cofnięto przydziału ze stosu między Stanami początku i na końcu. Po migawki pamięci oraz ich porównanie przy użyciu `CMemoryState::Difference`, można wywołać [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) można pobrać informacji o obiektach, które nie została wycofana.  
@@ -424,72 +424,72 @@ pMyPerson->Dump( afxDump );
 ##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Zmniejszenie rozmiaru kompilacji debugowania MFC  
  Informacje o debugowaniu dla dużych aplikacji MFC mogą zajmować dużo miejsca na dysku. Można użyć jednej z tych procedur, aby zmniejszyć rozmiar:  
   
-1.  Odbuduj biblioteki MFC, za pomocą [/z7, / zi, /ZI (Format informacji debugowania)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) opcji zamiast **/z7**. Te opcje kompilacji pliku bazy danych (PDB) jednego programu, który zawiera informacje o debugowaniu dla całej biblioteki, ograniczenie nadmiarowości i oszczędzanie miejsca.  
+1. Odbuduj biblioteki MFC, za pomocą [/z7, / zi, /ZI (Format informacji debugowania)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) opcji zamiast **/z7**. Te opcje kompilacji pliku bazy danych (PDB) jednego programu, który zawiera informacje o debugowaniu dla całej biblioteki, ograniczenie nadmiarowości i oszczędzanie miejsca.  
   
-2.  Ponownie skompiluj biblioteki MFC, bez informacji o debugowaniu (nie [/z7, / zi, /ZI (Format informacji debugowania)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) opcji). W przypadku braku informacji o debugowaniu uniemożliwi przy użyciu większość funkcji debugera w obrębie kodu biblioteki MFC, ale ponieważ biblioteki MFC są już dokładnie debugowany, nie może to być problem.  
+2. Ponownie skompiluj biblioteki MFC, bez informacji o debugowaniu (nie [/z7, / zi, /ZI (Format informacji debugowania)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) opcji). W przypadku braku informacji o debugowaniu uniemożliwi przy użyciu większość funkcji debugera w obrębie kodu biblioteki MFC, ale ponieważ biblioteki MFC są już dokładnie debugowany, nie może to być problem.  
   
-3.  Tworzenie aplikacji przy użyciu informacji o debugowaniu dla wybranych modułów tylko zgodnie z poniższym opisem.  
+3. Tworzenie aplikacji przy użyciu informacji o debugowaniu dla wybranych modułów tylko zgodnie z poniższym opisem.  
   
- [W tym temacie](#BKMK_In_this_topic)  
+   [W tym temacie](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Tworzenie aplikacji MFC za pomocą informacji o debugowaniu dla wybranych modułów  
  Tworzenie modułów wybranych z biblioteki debugowania MFC umożliwia używanie przechodzenie krok po kroku i innych narzędzi debugowania w tych modułach. Ta procedura korzysta z obu Debuguj i zwolnij tryby pliku reguł programu make Visual C++, co wymaga zmiany opisane w następujące czynności (i również niezbędne wprowadzania "Kompiluj wszystko ponownie", gdy wymagana jest pełna kompilacja wydania).  
   
-1.  W Eksploratorze rozwiązań wybierz projekt.  
+1. W Eksploratorze rozwiązań wybierz projekt.  
   
-2.  Z **widoku** menu, wybierz opcję **stron właściwości**.  
+2. Z **widoku** menu, wybierz opcję **stron właściwości**.  
   
-3.  Najpierw należy utworzyć nową konfigurację projektu.  
+3. Najpierw należy utworzyć nową konfigurację projektu.  
   
-    1.  W  **\<Projekt > strony właściwości** okno dialogowe, kliknij przycisk **programu Configuration Manager** przycisku.  
+   1.  W  **\<Projekt > strony właściwości** okno dialogowe, kliknij przycisk **programu Configuration Manager** przycisku.  
   
-    2.  W [programu Configuration Manager, okno dialogowe](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b), Znajdź projekt w siatce. W **konfiguracji** kolumny wybierz  **\<nowy... >**.  
+   2.  W [programu Configuration Manager, okno dialogowe](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b), Znajdź projekt w siatce. W **konfiguracji** kolumny wybierz  **\<nowy... >**.  
   
-    3.  W [nowa konfiguracja projektu, okno dialogowe](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), wpisz nazwę dla nowej konfiguracji, takich jak "Częściowe Debug", **Nazwa konfiguracji projektu** pole.  
+   3.  W [nowa konfiguracja projektu, okno dialogowe](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), wpisz nazwę dla nowej konfiguracji, takich jak "Częściowe Debug", **Nazwa konfiguracji projektu** pole.  
   
-    4.  W **Skopiuj ustawienia z** wybierz **wersji**.  
+   4.  W **Skopiuj ustawienia z** wybierz **wersji**.  
   
-    5.  Kliknij przycisk **OK** zamknąć **nowa konfiguracja projektu**okno dialogowe.  
+   5.  Kliknij przycisk **OK** zamknąć **nowa konfiguracja projektu**okno dialogowe.  
   
-    6.  Zamknij **programu Configuration Manager** okno dialogowe.  
+   6.  Zamknij **programu Configuration Manager** okno dialogowe.  
   
-4.  Teraz będzie ustawić opcje dla całego projektu.  
+4. Teraz będzie ustawić opcje dla całego projektu.  
   
-    1.  W **stron właściwości** dialogowego **właściwości konfiguracji** folderu, wybierz **ogólne** kategorii.  
+   1.  W **stron właściwości** dialogowego **właściwości konfiguracji** folderu, wybierz **ogólne** kategorii.  
   
-    2.  W siatce ustawienia projektu, rozwiń węzeł **domyślne wartości projektu** (jeśli jest to konieczne).  
+   2.  W siatce ustawienia projektu, rozwiń węzeł **domyślne wartości projektu** (jeśli jest to konieczne).  
   
-    3.  W obszarze **domyślne wartości projektu**, Znajdź **użycie MFC**. Bieżące ustawienie pojawia się w prawej kolumnie siatki. Kliknij pozycję bieżące ustawienia i zmień go na **Użyj MFC w bibliotece statycznej**.  
+   3.  W obszarze **domyślne wartości projektu**, Znajdź **użycie MFC**. Bieżące ustawienie pojawia się w prawej kolumnie siatki. Kliknij pozycję bieżące ustawienia i zmień go na **Użyj MFC w bibliotece statycznej**.  
   
-    4.  W okienku po lewej stronie **strony właściwości** po otwarciu okna dialogowego **C/C++** i wybierz polecenie **preprocesora**. W siatce właściwości Znajdź **definicje preprocesora** i zastąp "NDEBUG" "_DEBUG".  
+   4.  W okienku po lewej stronie **strony właściwości** po otwarciu okna dialogowego **C/C++** i wybierz polecenie **preprocesora**. W siatce właściwości Znajdź **definicje preprocesora** i zastąp "NDEBUG" "_DEBUG".  
   
-    5.  W okienku po lewej stronie **strony właściwości** po otwarciu okna dialogowego **konsolidatora** i wybierz polecenie **dane wejściowe** kategorii. W siatce właściwości Znajdź **dodatkowe zależności**. W **dodatkowe zależności** ustawienie, wpisz "NAFXCWD. LIB"i"LIBCMT."  
+   5.  W okienku po lewej stronie **strony właściwości** po otwarciu okna dialogowego **konsolidatora** i wybierz polecenie **dane wejściowe** kategorii. W siatce właściwości Znajdź **dodatkowe zależności**. W **dodatkowe zależności** ustawienie, wpisz "NAFXCWD. LIB"i"LIBCMT."  
   
-    6.  Kliknij przycisk **OK** nowych opcji kompilacji Zapisz i Zamknij **stron właściwości** okno dialogowe.  
+   6.  Kliknij przycisk **OK** nowych opcji kompilacji Zapisz i Zamknij **stron właściwości** okno dialogowe.  
   
-5.  Z **kompilacji** menu, wybierz opcję **odbudować**. Usuwa wszystkie informacje debugowania z moduły, ale nie ma wpływu na bibliotece MFC.  
+5. Z **kompilacji** menu, wybierz opcję **odbudować**. Usuwa wszystkie informacje debugowania z moduły, ale nie ma wpływu na bibliotece MFC.  
   
-6.  Teraz należy dodać informacje o debugowaniu do wybranych modułów w aplikacji. Należy pamiętać, że można ustawić punkty przerwania i wykonywać inne funkcje debugera, tylko w modułach, które mają skompilowany według informacji o debugowaniu. Dla każdego pliku projektu, w której chcesz dołączyć informacje o debugowaniu, wykonaj następujące czynności:  
+6. Teraz należy dodać informacje o debugowaniu do wybranych modułów w aplikacji. Należy pamiętać, że można ustawić punkty przerwania i wykonywać inne funkcje debugera, tylko w modułach, które mają skompilowany według informacji o debugowaniu. Dla każdego pliku projektu, w której chcesz dołączyć informacje o debugowaniu, wykonaj następujące czynności:  
   
-    1.  W Eksploratorze rozwiązań Otwórz **pliki źródłowe** folder znajdujący się w projekcie.  
+   1.  W Eksploratorze rozwiązań Otwórz **pliki źródłowe** folder znajdujący się w projekcie.  
   
-    2.  Wybierz plik, aby ustawić informacje o debugowaniu dla.  
+   2.  Wybierz plik, aby ustawić informacje o debugowaniu dla.  
   
-    3.  Z **widoku** menu, wybierz opcję **stron właściwości**.  
+   3.  Z **widoku** menu, wybierz opcję **stron właściwości**.  
   
-    4.  W **stron właściwości** dialogowego **ustawienia konfiguracji** folder, otwórz **C/C++** następnie wybierz folder **ogólne** Kategoria.  
+   4.  W **stron właściwości** dialogowego **ustawienia konfiguracji** folder, otwórz **C/C++** następnie wybierz folder **ogólne** Kategoria.  
   
-    5.  W siatce właściwości Znajdź **formatu informacji debugowania.**  
+   5.  W siatce właściwości Znajdź **formatu informacji debugowania.**  
   
-    6.  Kliknij przycisk **formatu informacji debugowania** ustawienia i wybierz odpowiednią opcję (zazwyczaj **/zi**) dla informacji debugowania.  
+   6.  Kliknij przycisk **formatu informacji debugowania** ustawienia i wybierz odpowiednią opcję (zazwyczaj **/zi**) dla informacji debugowania.  
   
-    7.  Jeśli używasz aplikacji generowanych przez Kreatora aplikacji lub mają prekompilowanych nagłówków, musisz wyłączyć wstępnie skompilowanych nagłówków, lub ponownie skompilować je przed skompilowaniem innych modułów. W przeciwnym razie ostrzeżenie C4650 i otrzymasz komunikat o błędzie C2855. Można wyłączyć wstępnie skompilowanych nagłówków, zmieniając **Utwórz bądź Użyj wstępnie skompilowanych nagłówków** w  **\<projektu > właściwości** okno dialogowe (**właściwości konfiguracji**  folderze **C/C++** podfolder, **prekompilowanych nagłówków** kategorii).  
+   7.  Jeśli używasz aplikacji generowanych przez Kreatora aplikacji lub mają prekompilowanych nagłówków, musisz wyłączyć wstępnie skompilowanych nagłówków, lub ponownie skompilować je przed skompilowaniem innych modułów. W przeciwnym razie ostrzeżenie C4650 i otrzymasz komunikat o błędzie C2855. Można wyłączyć wstępnie skompilowanych nagłówków, zmieniając **Utwórz bądź Użyj wstępnie skompilowanych nagłówków** w  **\<projektu > właściwości** okno dialogowe (**właściwości konfiguracji**  folderze **C/C++** podfolder, **prekompilowanych nagłówków** kategorii).  
   
-7.  Z **kompilacji** menu, wybierz opcję **kompilacji** odbudować pliki projektu, które są nieaktualne.  
+7. Z **kompilacji** menu, wybierz opcję **kompilacji** odbudować pliki projektu, które są nieaktualne.  
   
- Jako alternatywa techniki opisanej w tym temacie, można użyć zewnętrznego pliku reguł programu make do definiowania poszczególne opcje dla każdego pliku. W takim przypadku należy połączyć się z biblioteki debugowania MFC, należy zdefiniować [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) flagi dla każdego modułu. Jeśli chcesz korzystać z bibliotek wersji MFC, należy zdefiniować NDEBUG. Aby uzyskać więcej informacji na temat pisania zewnętrznych plików reguł programu make, zobacz [odwołanie NMAKE](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c).  
+   Jako alternatywa techniki opisanej w tym temacie, można użyć zewnętrznego pliku reguł programu make do definiowania poszczególne opcje dla każdego pliku. W takim przypadku należy połączyć się z biblioteki debugowania MFC, należy zdefiniować [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) flagi dla każdego modułu. Jeśli chcesz korzystać z bibliotek wersji MFC, należy zdefiniować NDEBUG. Aby uzyskać więcej informacji na temat pisania zewnętrznych plików reguł programu make, zobacz [odwołanie NMAKE](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c).  
   
- [W tym temacie](#BKMK_In_this_topic)  
+   [W tym temacie](#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie języka Visual C++](../debugger/debugging-native-code.md)

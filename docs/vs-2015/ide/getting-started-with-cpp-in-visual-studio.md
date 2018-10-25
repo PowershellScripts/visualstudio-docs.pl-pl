@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cebb5624471277717395bd11c76e717692600977
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f061382ab5df74b7a94d8578624fb5a0f2dc71f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240451"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816608"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Wprowadzenie do korzystania z C++ w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,23 +52,23 @@ Przez ukończenie tego instruktażu, zapoznasz się z wielu narzędzi i oknach d
   
 #### <a name="to-create-a-console-app"></a>Aby utworzyć aplikację konsoli  
   
-1.  Na pasku menu wybierz **pliku**, **New**, **projektu**.  
+1. Na pasku menu wybierz **pliku**, **New**, **projektu**.  
   
-     ![Na pasku menu wybierz kolejno opcje Plik, nowe, projektów](../ide/media/exploreide-filenewproject.png "ExploreIDE FileNewProject")  
+    ![Na pasku menu wybierz kolejno opcje Plik, nowe, projektów](../ide/media/exploreide-filenewproject.png "ExploreIDE FileNewProject")  
   
-2.  W **Visual C++** kategorii, wybierz **Aplikacja konsoli Win32** szablonu, a następnie nazwę projektu `GreetingsConsoleApp`.  
+2. W **Visual C++** kategorii, wybierz **Aplikacja konsoli Win32** szablonu, a następnie nazwę projektu `GreetingsConsoleApp`.  
   
-     ![Szablon Aplikacja konsoli Win32](../ide/media/c-ide-newprojectdlg.png "IDE_NewProjectDlg C ++")  
+    ![Szablon Aplikacja konsoli Win32](../ide/media/c-ide-newprojectdlg.png "IDE_NewProjectDlg C ++")  
   
-3.  Gdy pojawi się Kreator aplikacji Win32, wybierz **Zakończ** przycisku.  
+3. Gdy pojawi się Kreator aplikacji Win32, wybierz **Zakończ** przycisku.  
   
-     ![Kreator aplikacji konsoli Win32](../ide/media/c-ide-win32consoleappwizard.png "IDE_Win32ConsoleAppWizard C ++")  
+    ![Kreator aplikacji konsoli Win32](../ide/media/c-ide-win32consoleappwizard.png "IDE_Win32ConsoleAppWizard C ++")  
   
- GreetingsConsoleApp projektu i rozwiązania przy użyciu podstawowych plików dla aplikacji konsoli Win32 są tworzone i ładowane automatycznie do **Eksploratora rozwiązań**. Plik GreetingsConsoleApp.cpp jest otwarty w edytorze kodu. Następujące elementy są wyświetlane w **Eksploratora rozwiązań**:  
+   GreetingsConsoleApp projektu i rozwiązania przy użyciu podstawowych plików dla aplikacji konsoli Win32 są tworzone i ładowane automatycznie do **Eksploratora rozwiązań**. Plik GreetingsConsoleApp.cpp jest otwarty w edytorze kodu. Następujące elementy są wyświetlane w **Eksploratora rozwiązań**:  
   
- Rysunek 4: Elementy projektu  
+   Rysunek 4: Elementy projektu  
   
- ![Pliki rozwiązania w Eksploratorze rozwiązań](../ide/media/c-ide-solutioncontents.png "IDE_SolutionContents C ++")  
+   ![Pliki rozwiązania w Eksploratorze rozwiązań](../ide/media/c-ide-solutioncontents.png "IDE_SolutionContents C ++")  
   
 ##  <a name="BKMK_AddCode"></a> Dodaj kod do aplikacji  
  Następnie dodasz kod, aby wyświetlić słowo "Cześć" w oknie konsoli.  
@@ -117,40 +117,40 @@ Przez ukończenie tego instruktażu, zapoznasz się z wielu narzędzi i oknach d
   
 #### <a name="to-add-a-breakpoint"></a>Aby dodać punkt przerwania  
   
-1.  Dodaj punkt przerwania na pasku menu, w wierszu `return 0;`. Możesz też po prostu kliknąć na lewym marginesie, aby ustawić punkt przerwania.  
+1. Dodaj punkt przerwania na pasku menu, w wierszu `return 0;`. Możesz też po prostu kliknąć na lewym marginesie, aby ustawić punkt przerwania.  
   
-     ![Przełącz punkt przerwania — polecenie w menu Debugowanie](../ide/media/exploreide-togglebreakpoint.png "togglebreakpoint — ExploreIDE")  
+    ![Przełącz punkt przerwania — polecenie w menu Debugowanie](../ide/media/exploreide-togglebreakpoint.png "togglebreakpoint — ExploreIDE")  
   
-     Obok wiersza kodu na marginesie po lewej stronie okna edytora jest wyświetlane czerwone koło.  
+    Obok wiersza kodu na marginesie po lewej stronie okna edytora jest wyświetlane czerwone koło.  
   
-2.  Wybierz klawisz F5, aby rozpocząć debugowanie.  
+2. Wybierz klawisz F5, aby rozpocząć debugowanie.  
   
-     Uruchamia debuger, i okno konsoli wyświetlona wyraz **Hello**.  
+    Uruchamia debuger, i okno konsoli wyświetlona wyraz **Hello**.  
   
-     ![Tekst w oknie wiersza polecenia Windows Hello](../ide/media/c-ide-hellocommandwindow.png "IDE_HelloCommandWindow C ++")  
+    ![Tekst w oknie wiersza polecenia Windows Hello](../ide/media/c-ide-hellocommandwindow.png "IDE_HelloCommandWindow C ++")  
   
-3.  Naciśnij klawisze SHIFT + F5, aby zatrzymać debugowanie.  
+3. Naciśnij klawisze SHIFT + F5, aby zatrzymać debugowanie.  
   
- Aby uzyskać więcej informacji, zobacz [projekty startowe](../debugger/debugging-preparation-console-projects.md).  
+   Aby uzyskać więcej informacji, zobacz [projekty startowe](../debugger/debugging-preparation-console-projects.md).  
   
 ##  <a name="BKMK_BuildRelease"></a> Tworzenie dystrybucyjnej wersji aplikacji  
  Teraz, gdy masz już pewność, że wszystko działa, możesz przygotować wersję dystrybucyjną aplikacji.  
   
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Aby wyczyścić pliki rozwiązań i zbudować wersję przeznaczoną do publikacji  
   
-1.  Na pasku menu należy usunąć pliki pośrednie i pliki wyjściowe, które zostały utworzone podczas poprzednich kompilacji.  
+1. Na pasku menu należy usunąć pliki pośrednie i pliki wyjściowe, które zostały utworzone podczas poprzednich kompilacji.  
   
-     ![Polecenie Wyczyść rozwiązanie, w menu kompilacja](../ide/media/exploreide-cleansolution.png "ExploreIDE CleanSolution")  
+    ![Polecenie Wyczyść rozwiązanie, w menu kompilacja](../ide/media/exploreide-cleansolution.png "ExploreIDE CleanSolution")  
   
-2.  Zmień konfigurację kompilacji dla GreetingsConsoleApp z **debugowania** do **wersji**.  
+2. Zmień konfigurację kompilacji dla GreetingsConsoleApp z **debugowania** do **wersji**.  
   
-     ![Tworzenie dystrybucyjnej wersji aplikacji](../ide/media/c-ide-changingbuildtorelease.png "IDE_ChangingBuildtoRelease C ++")  
+    ![Tworzenie dystrybucyjnej wersji aplikacji](../ide/media/c-ide-changingbuildtorelease.png "IDE_ChangingBuildtoRelease C ++")  
   
-3.  Skompiluj rozwiązanie.  
+3. Skompiluj rozwiązanie.  
   
-     ![Kompiluj rozwiązanie, polecenie w menu kompilacja](../ide/media/exploreide-buildsolution.png "Skompiluj rozwiązanie ExploreIDE")  
+    ![Kompiluj rozwiązanie, polecenie w menu kompilacja](../ide/media/exploreide-buildsolution.png "Skompiluj rozwiązanie ExploreIDE")  
   
- Gratulujemy zakończenia instruktażu! Jeśli chcesz poznać więcej przykładów, zobacz [Visual Studio Samples](../ide/visual-studio-samples.md).  
+   Gratulujemy zakończenia instruktażu! Jeśli chcesz poznać więcej przykładów, zobacz [Visual Studio Samples](../ide/visual-studio-samples.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki: Tworzenie prostej aplikacji](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)   

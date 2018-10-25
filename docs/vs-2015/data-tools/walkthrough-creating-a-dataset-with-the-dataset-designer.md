@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 1a9d47431497f05fd5538510b39b44298587dd0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d77d63cc82b7af6281183b3eae67d09b0454fffb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868264"
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Wskazówki: tworzenie zestawu danych za pomocą narzędzia Projektant obiektów Dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ W tym przewodniku zostanie utworzony zestaw danych przy użyciu **Projektanta ob
   
  Zadania zilustrowane w tym przewodniku obejmują:  
   
--   Tworzenie nowego **aplikacji Windows** projektu.  
+- Tworzenie nowego **aplikacji Windows** projektu.  
   
--   Dodawanie pustego **DataSet** do projektu.  
+- Dodawanie pustego **DataSet** do projektu.  
   
--   Tworzenie i konfigurowanie źródła danych w aplikacji, tworząc zestaw danych o **Projektanta obiektów Dataset**.  
+- Tworzenie i konfigurowanie źródła danych w aplikacji, tworząc zestaw danych o **Projektanta obiektów Dataset**.  
   
--   Tworzenie połączenia z bazą danych Northwind w **Eksploratora serwera**.  
+- Tworzenie połączenia z bazą danych Northwind w **Eksploratora serwera**.  
   
--   Tworzenie tabel z elementami TableAdapter w zestawie danych na podstawie tabel istniejących w bazie danych.  
+- Tworzenie tabel z elementami TableAdapter w zestawie danych na podstawie tabel istniejących w bazie danych.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  W celu przeprowadzenia tego instruktażu, należy:  

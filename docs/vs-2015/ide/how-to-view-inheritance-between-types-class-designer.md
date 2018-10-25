@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 31d5c57408765b74ec736b8ec5c6dd8edc9d8a01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 59d07bd9b4f069773593359e396b63df6407b1ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823076"
 ---
 # <a name="how-to-view-inheritance-between-types-class-designer"></a>Porady: wyświetlanie dziedziczenia pomiędzy typami (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,23 +34,23 @@ Jeśli istnieje między typem podstawowym i jego typów pochodnych na diagramie 
   
 ### <a name="to-find-the-base-type"></a>Aby znaleźć typ podstawowy  
   
-1.  Na diagramie klas kliknij typ, dla którego chcesz wyświetlić klasy bazowej lub interfejsu.  
+1. Na diagramie klas kliknij typ, dla którego chcesz wyświetlić klasy bazowej lub interfejsu.  
   
-2.  Na **Diagram klas** menu, wybierz **Pokaż klasy podstawowe** lub **Pokaż interfejsy Base**.  
+2. Na **Diagram klas** menu, wybierz **Pokaż klasy podstawowe** lub **Pokaż interfejsy Base**.  
   
-     Typ klasy bazowej lub interfejsu widoczny jako zaznaczony na diagramie. Wszystkie linie dziedziczenia ukryte pojawiają się między dwoma kształtami.  
+    Typ klasy bazowej lub interfejsu widoczny jako zaznaczony na diagramie. Wszystkie linie dziedziczenia ukryte pojawiają się między dwoma kształtami.  
   
- Również kliknięciu prawym przyciskiem myszy typ, którego typ podstawowy, które chcesz wyświetlić, a następnie wybierz **Pokaż klasy bazowej** lub **Pokaż interfejsy podstawowe**.  
+   Również kliknięciu prawym przyciskiem myszy typ, którego typ podstawowy, które chcesz wyświetlić, a następnie wybierz **Pokaż klasy bazowej** lub **Pokaż interfejsy podstawowe**.  
   
 ### <a name="to-find-the-derived-types"></a>Aby znaleźć typy pochodne  
   
-1.  Na diagramie klas kliknij typ, dla którego chcesz wyświetlić klas pochodnych lub interfejsów.  
+1. Na diagramie klas kliknij typ, dla którego chcesz wyświetlić klas pochodnych lub interfejsów.  
   
-2.  Na **Diagram klas** menu, wybierz **Pokaż klasy pochodne** lub **Pokaż interfejsy pochodne**.  
+2. Na **Diagram klas** menu, wybierz **Pokaż klasy pochodne** lub **Pokaż interfejsy pochodne**.  
   
-     Klasy pochodne typu lub interfejsy są wyświetlane na diagramie. Wszystkie linie dziedziczenia ukryte pojawiają się między kształtów.  
+    Klasy pochodne typu lub interfejsy są wyświetlane na diagramie. Wszystkie linie dziedziczenia ukryte pojawiają się między kształtów.  
   
- Również kliknięciu prawym przyciskiem myszy typ, dla którego chcesz wyświetlić jego typów pochodnych, a następnie wybierz **Pokaż klasy pochodne** lub **Pokaż interfejsy pochodne**.  
+   Również kliknięciu prawym przyciskiem myszy typ, dla którego chcesz wyświetlić jego typów pochodnych, a następnie wybierz **Pokaż klasy pochodne** lub **Pokaż interfejsy pochodne**.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: Tworzenie skojarzeń między typami (Projektant klas)](../ide/how-to-create-associations-between-types-class-designer.md)   

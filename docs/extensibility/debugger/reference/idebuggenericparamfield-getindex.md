@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7dc623eca2221c0ca9c073e830683739d048f84b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 197796549ce865733f037d99e20382ac74b8a74d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857253"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 Pobiera indeks tego parametru ogólnego.  
@@ -39,16 +39,16 @@ int GetIndex(
   
 #### <a name="parameters"></a>Parametry  
  `pIndex`  
- [out] Wartość tego parametru ogólnego indeksu.  
+ [out] Indeks wartości tego parametru ogólnego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Na przykład dla Dictionary(K,V), indeksem 0 jest K, V jest indeksem 1.  
+ Na przykład dla Dictionary(K,V), K jest indeksem 0, V jest indeks 1.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CDebugGenericParamFieldType** obiekt ujawniający [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugGenericParamFieldType** obiekt ujawniający [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfejsu.  
   
 ```cpp  
 HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)  

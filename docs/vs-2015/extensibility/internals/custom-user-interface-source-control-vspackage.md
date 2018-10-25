@@ -16,12 +16,12 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 06d23b6d936b981cf44dbff74c3a39cdf74e53ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303956"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852261"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Niestandardowy interfejs użytkownika (pakiet VSPackage kontroli kodu źródłowego)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ Pakietu VSPackage deklaruje jego elementy menu i ich stany domyślny za pomocą 
   
  Na poniższej liście przedstawiono interfejsów wpływ aktywny stan pakietu VSPackage kontroli źródła:  
   
--   Śledzenie zdarzeń dokumenty projektu.  
+- Śledzenie zdarzeń dokumenty projektu.  
   
--   Rozwiązanie zdarzenia.  
+- Rozwiązanie zdarzenia.  
   
--   Interfejsy stanu trwałego rozwiązania. Gdy nieaktywna, pakiety nie powinien zapisu .sln i .suo plików.  
+- Interfejsy stanu trwałego rozwiązania. Gdy nieaktywna, pakiety nie powinien zapisu .sln i .suo plików.  
   
--   Właściwości rozszerzeń.  
+- Właściwości rozszerzeń.  
   
- Wymagane <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, a także żadnych interfejsów opcjonalnie skojarzony z kontroli źródła nie są wywoływane, gdy pakietu VSPackage kontroli źródła jest nieaktywny.  
+  Wymagane <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, a także żadnych interfejsów opcjonalnie skojarzony z kontroli źródła nie są wywoływane, gdy pakietu VSPackage kontroli źródła jest nieaktywny.  
   
- Gdy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] uruchamia IDE [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ustawia kontekst interfejsu użytkownika poleceń Identyfikator bieżącej kontroli źródła domyślny identyfikator pakietu VSPackage. Powoduje to statycznych interfejsu użytkownika formantu aktywne źródłowe pakietu VSPackage pojawią się w środowisku IDE bez faktycznego ładowania pakietu VSPackage. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Wstrzymuje dla pakietu VSPackage zarejestrować za pomocą [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> przed jego sprawia, że wszelkie wywołania do pakietu VSPackage.  
+  Gdy [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] uruchamia IDE [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ustawia kontekst interfejsu użytkownika poleceń Identyfikator bieżącej kontroli źródła domyślny identyfikator pakietu VSPackage. Powoduje to statycznych interfejsu użytkownika formantu aktywne źródłowe pakietu VSPackage pojawią się w środowisku IDE bez faktycznego ładowania pakietu VSPackage. [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Wstrzymuje dla pakietu VSPackage zarejestrować za pomocą [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> przed jego sprawia, że wszelkie wywołania do pakietu VSPackage.  
   
- W poniższej tabeli opisano konkretne szczegółowe informacje o tym, jak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE ukrywa różne elementy interfejsu użytkownika.  
+  W poniższej tabeli opisano konkretne szczegółowe informacje o tym, jak [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE ukrywa różne elementy interfejsu użytkownika.  
   
 |Element interfejsu użytkownika|Opis|  
 |-------------|-----------------|  

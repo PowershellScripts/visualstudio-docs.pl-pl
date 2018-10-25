@@ -18,33 +18,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 16469da5a4724a2bf536fed3b5e28da0fec68aed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4d7de98fb6fbc8bcb5466b83ac406c0e7c98475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878066"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Przewodnik: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1
   Możesz rozszerzyć systemu projektu programu SharePoint w programie Visual Studio, tworząc własny projekt typów elementów. W tym instruktażu utworzysz element projektu, który można dodać do projektu programu SharePoint w celu utworzenia akcji niestandardowej w witrynie programu SharePoint. Akcja niestandardowa dodaje element menu do **Akcje witryny** menu witryny programu SharePoint.  
   
  W tym instruktażu pokazano następujące zagadnienia:  
   
--   Tworzenie rozszerzenia programu Visual Studio, który definiuje nowy typ elementu projektu programu SharePoint dla akcji niestandardowej. Nowy typ elementu projektu implementuje kilka niestandardowych funkcji:  
+- Tworzenie rozszerzenia programu Visual Studio, który definiuje nowy typ elementu projektu programu SharePoint dla akcji niestandardowej. Nowy typ elementu projektu implementuje kilka niestandardowych funkcji:  
   
-    -   Menu skrótów, która służy jako punkt początkowy dla dodatkowych zadań związanych z elementu projektu, takich jak wyświetlanie projektanta dla akcji niestandardowej w programie Visual Studio.  
+  -   Menu skrótów, która służy jako punkt początkowy dla dodatkowych zadań związanych z elementu projektu, takich jak wyświetlanie projektanta dla akcji niestandardowej w programie Visual Studio.  
   
-    -   Kod, który jest uruchamiany, gdy deweloper zmiany niektórych właściwości elementu projektu i projektu, który go zawiera.  
+  -   Kod, który jest uruchamiany, gdy deweloper zmiany niektórych właściwości elementu projektu i projektu, który go zawiera.  
   
-    -   Ikony niestandardowej, która pojawia się obok elementu projektu w **Eksploratora rozwiązań**.  
+  -   Ikony niestandardowej, która pojawia się obok elementu projektu w **Eksploratora rozwiązań**.  
   
--   Tworzenie szablonu elementu programu Visual Studio dla elementu projektu.  
+- Tworzenie szablonu elementu programu Visual Studio dla elementu projektu.  
   
--   Tworzenie pakietu Visual Studio rozszerzenia (VSIX) do wdrożenia szablonu elementu projektu i zestawu rozszerzeń.  
+- Tworzenie pakietu Visual Studio rozszerzenia (VSIX) do wdrożenia szablonu elementu projektu i zestawu rozszerzeń.  
   
--   Debugowanie i testowanie elementu projektu.  
+- Debugowanie i testowanie elementu projektu.  
   
- Jest to przewodnik autonomicznej. Po ukończeniu tego przewodnika, można zwiększyć elementu projektu, dodając Kreatora szablonu elementu. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
+  Jest to przewodnik autonomicznej. Po ukończeniu tego przewodnika, można zwiększyć elementu projektu, dodając Kreatora szablonu elementu. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
 > [!NOTE]  
 >  Możesz pobrać próbkę z [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) pokazujący sposób tworzenia działań niestandardowych do przepływu pracy.  
@@ -52,26 +52,26 @@ ms.locfileid: "42635333"
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Potrzebne są następujące składniki na komputerze deweloperskim w celu przeprowadzenia tego instruktażu:  
   
--   Obsługiwane wersje systemu Microsoft Windows, SharePoint i Visual Studio.
+- Obsługiwane wersje systemu Microsoft Windows, SharePoint i Visual Studio.
   
--   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. W tym instruktażu wykorzystano **projekt VSIX** szablonu w zestawie SDK, aby utworzyć pakiet VSIX do wdrożenia elementu projektu. Aby uzyskać więcej informacji, zobacz [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. W tym instruktażu wykorzystano **projekt VSIX** szablonu w zestawie SDK, aby utworzyć pakiet VSIX do wdrożenia elementu projektu. Aby uzyskać więcej informacji, zobacz [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, aby ukończyć Instruktaż:  
+  Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, aby ukończyć Instruktaż:  
   
--   Akcje niestandardowe w programie SharePoint. Aby uzyskać więcej informacji, zobacz [Akcja niestandardowa](http://go.microsoft.com/fwlink/?LinkId=177800).  
+- Akcje niestandardowe w programie SharePoint. Aby uzyskać więcej informacji, zobacz [Akcja niestandardowa](http://go.microsoft.com/fwlink/?LinkId=177800).  
   
--   Szablony elementów w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [tworzenie projektów i szablonów elementów](/visualstudio/ide/creating-project-and-item-templates).  
+- Szablony elementów w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [tworzenie projektów i szablonów elementów](/visualstudio/ide/creating-project-and-item-templates).  
   
 ## <a name="create-the-projects"></a>Tworzenie projektów
  Aby ukończyć ten Instruktaż, musisz utworzyć trzy projekty:  
   
--   Projekt VSIX. Ten projekt tworzy pakiet VSIX do wdrożenia elementu projektu programu SharePoint.  
+- Projekt VSIX. Ten projekt tworzy pakiet VSIX do wdrożenia elementu projektu programu SharePoint.  
   
--   Element projektu szablonu. Ten projekt tworzy szablon elementu, który może służyć do dodawania elementu projektu programu SharePoint do projektu programu SharePoint.  
+- Element projektu szablonu. Ten projekt tworzy szablon elementu, który może służyć do dodawania elementu projektu programu SharePoint do projektu programu SharePoint.  
   
--   Projekt biblioteki klas. Ten projekt implementuje rozszerzenie programu Visual Studio, która definiuje zachowanie elementu projektu programu SharePoint.  
+- Projekt biblioteki klas. Ten projekt implementuje rozszerzenie programu Visual Studio, która definiuje zachowanie elementu projektu programu SharePoint.  
   
- Instruktaż należy rozpocząć od utworzenia projektów.  
+  Instruktaż należy rozpocząć od utworzenia projektów.  
   
 #### <a name="to-create-the-vsix-project"></a>Aby utworzyć projekt VSIX  
   

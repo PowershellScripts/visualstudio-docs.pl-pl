@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9dd371d55ee4a59baf800e26b666be28aeb6cbb3
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175751"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870058"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizowanie wyników testów obciążenia w widoku wykresu analizatora testu obciążenia
 
@@ -39,7 +39,7 @@ Kilka wbudowanych wykresy. Można użyć wbudowanego wykresów, ponieważ jest l
 Poniższa tabela zawiera listę wbudowanych wykresów, które są dostępne do analizowania wyników testów obciążenia.
 
 |Nazwa wykresu|Opis|
-|----------------|-----------------|
+|-|-|
 |Kluczowe wskaźniki|Liczniki, które opisują podstawowych aspektów testowanie wydajności, takie jak czas ładowania, przepływność i odpowiedzi użytkownika.|
 |Czas odpowiedzi testu|Dane dotyczące ilości czasu testy wykonać, aby uruchomić.|
 |Czas odpowiedzi strony|Średni czas odpowiedzi dla stron sieci web, które są dostępne podczas testu obciążeniowego.|
@@ -63,7 +63,7 @@ Poniższa tabela zawiera listę wbudowanych wykresów, które są dostępne do a
  Legenda zawiera następujące kolumny:
 
 |Licznik|Nazwa licznika|
-|-------------|-----------------------------|
+|-|-|
 |Wystąpienie|Nazwa wystąpienia licznika.|
 |Kategoria|Nazwa kategorii licznika.|
 |Komputer|Nazwa komputera, do którego zbierane są licznika.|
@@ -77,7 +77,7 @@ Poniższa tabela zawiera listę wbudowanych wykresów, które są dostępne do a
 ## <a name="tasks"></a>Zadania
 
 |Zadania|Skojarzone tematy|
-|-----------|-----------------------|
+|-|-|
 |**Dostosowywanie wykresów za pomocą legendy:** widoku wykresu, Legenda zawiera informacje dla każdego licznika wydajności, który jest skojarzony z wykresu. Aby usunąć liczniki wydajności, wyróżnij liczników wydajności na wykresie i Dostosuj opcje wykreślania, można użyć legendy.|-   [Korzystanie z legendy wykresu do analizowania testów obciążenia](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
 |**Wyświetlanie liczników na wykresach:** możesz dodać różne rodzaje danych do testu obciążenia powoduje wykresu, umieszczając liczniki na wykresie.|-   [Porady: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Powiększ na wykresach:** po zakończeniu testu obciążeniowego umożliwia powiększenie paski powiększyć obraz i przewiń do obszaru wykresu. Przez powiększyć, można sprawdzić dane, który został wygenerowany podczas testu obciążenia uruchamiane w bardziej szczegółowo.|-   [Porady: powiększanie obszaru wykresu](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|

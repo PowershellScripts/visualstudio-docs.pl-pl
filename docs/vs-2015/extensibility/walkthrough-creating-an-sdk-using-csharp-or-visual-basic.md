@@ -13,12 +13,12 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96b4ded80d3c00c0f2c7a5c9037758f72907ea28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8f792553e29a4b24d30a25dd835db0b96befcbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215608"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824272"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Przewodnik: tworzenie zestawu SDK przy użyciu języka C# lub Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,23 +138,23 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
   
 ##  <a name="createSample"></a> Aby utworzyć przykładową aplikację, która używa biblioteki klas  
   
-1.  Na pasku menu wybierz **pliku**, **New**, **nowy projekt**.  
+1. Na pasku menu wybierz **pliku**, **New**, **nowy projekt**.  
   
-2.  Na liście szablonów rozwiń **Visual C#** lub **języka Visual Basic**, a następnie wybierz **Windows Store** węzła.  
+2. Na liście szablonów rozwiń **Visual C#** lub **języka Visual Basic**, a następnie wybierz **Windows Store** węzła.  
   
-3.  Wybierz **pusta aplikacja** szablonu, nazwę projektu **ArithmeticUI**, a następnie wybierz **OK** przycisku.  
+3. Wybierz **pusta aplikacja** szablonu, nazwę projektu **ArithmeticUI**, a następnie wybierz **OK** przycisku.  
   
-4.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **ArithmeticUI** projektu, a następnie wybierz **Dodaj**, **odwołania**.  
+4. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **ArithmeticUI** projektu, a następnie wybierz **Dodaj**, **odwołania**.  
   
-5.  Na liście typów referencyjnych rozwiń **Windows**, a następnie wybierz **rozszerzenia**.  
+5. Na liście typów referencyjnych rozwiń **Windows**, a następnie wybierz **rozszerzenia**.  
   
-6.  W okienku szczegółów wybierz **proste SDK matematyczne** rozszerzenia.  
+6. W okienku szczegółów wybierz **proste SDK matematyczne** rozszerzenia.  
   
-     Pojawi się dodatkowe informacje na temat zestawu SDK. Możesz wybrać **więcej informacji o** link umożliwiający otworzenie http://www.msdn.microsoft.com, jak określono w pliku SDKManifest.xml we wcześniejszej części tego przewodnika.  
+    Pojawi się dodatkowe informacje na temat zestawu SDK. Możesz wybrać **więcej informacji o** link umożliwiający otworzenie http://www.msdn.microsoft.com, jak określono w pliku SDKManifest.xml we wcześniejszej części tego przewodnika.  
   
-7.  W **Menadżer odwołań** okno dialogowe, wybierz opcję **proste SDK matematyczne** pole wyboru, a następnie wybierz **OK** przycisku.  
+7. W **Menadżer odwołań** okno dialogowe, wybierz opcję **proste SDK matematyczne** pole wyboru, a następnie wybierz **OK** przycisku.  
   
-8.  Na pasku menu wybierz **widoku**, **przeglądarki obiektów**.  
+8. Na pasku menu wybierz **widoku**, **przeglądarki obiektów**.  
   
 9. W **Przeglądaj** wybierz **proste matematyczne**.  
   
@@ -176,7 +176,7 @@ W tym przewodniku dowiesz się, jak utworzyć prosty zestaw SDK biblioteki matem
   
      Zostanie wyświetlony odpowiedni wynik.  
   
- Pomyślnie tworzone i używane rozszerzenie SDK.  
+    Pomyślnie tworzone i używane rozszerzenie SDK.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wskazówki: Tworzenie zestawu SDK przy użyciu języka C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   

@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2c0192aca40c6f58468fba35ee1fd174b0445bf1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed469b4621205539e3f7a2ce59878bd318ba556f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241525"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860039"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Udostępnianie klas między językami DSL za pomocą biblioteki DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,21 +52,21 @@ W [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wizualizacji i modelowania SDK, m
   
 #### <a name="to-import-a-dsl-library"></a>Aby zaimportować biblioteki DSL  
   
-1.  W innej definicji DSL w **Eksplorator DSL**, kliknij prawym przyciskiem myszy klasę głównego język DSL, a następnie kliknij przycisk **Dodaj nowy element DslLibrary Import**.  
+1. W innej definicji DSL w **Eksplorator DSL**, kliknij prawym przyciskiem myszy klasę głównego język DSL, a następnie kliknij przycisk **Dodaj nowy element DslLibrary Import**.  
   
-2.  W oknie właściwości ustaw **ścieżka pliku** biblioteki. Można użyć względna lub bezwzględna.  
+2. W oknie właściwości ustaw **ścieżka pliku** biblioteki. Można użyć względna lub bezwzględna.  
   
-     Zaimportowanej biblioteki pojawia się w Eksplorator DSL w trybie tylko do odczytu.  
+    Zaimportowanej biblioteki pojawia się w Eksplorator DSL w trybie tylko do odczytu.  
   
-3.  Zaimportowane klasy można użyć jako klasy bazowej. Utwórz klasę domeny w importowania DSL, a w oknie właściwości ustaw oknie **klasa bazowa** do zaimportowanej klasy.  
+3. Zaimportowane klasy można użyć jako klasy bazowej. Utwórz klasę domeny w importowania DSL, a w oknie właściwości ustaw oknie **klasa bazowa** do zaimportowanej klasy.  
   
-4.  Kliknij przycisk Przekształć wszystkie szablony.  
+4. Kliknij przycisk Przekształć wszystkie szablony.  
   
-5.  Dodaj do projektu DSL odwołanie do zestawu (DLL), który został zbudowany przez projekt biblioteki DSL.  
+5. Dodaj do projektu DSL odwołanie do zestawu (DLL), który został zbudowany przez projekt biblioteki DSL.  
   
-6.  Skompiluj rozwiązanie.  
+6. Skompiluj rozwiązanie.  
   
- Biblioteka DSL można zaimportować innych bibliotek. Podczas importowania biblioteki jego importów również automatycznie są wyświetlane w Eksploratorze DSL.  
+   Biblioteka DSL można zaimportować innych bibliotek. Podczas importowania biblioteki jego importów również automatycznie są wyświetlane w Eksploratorze DSL.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)

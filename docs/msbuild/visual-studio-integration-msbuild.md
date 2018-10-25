@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65dd8415dc57c026d2a913b209340e381b07bc6a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 874642371f173b56a174dabdd17ee1cf50cc79fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179144"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875479"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integracja programu Visual Studio (MSBuild)
 Visual Studio zawiera [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do ładowania i kompilacji projektów zarządzanych. Ponieważ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] jest odpowiedzialna za projekt, niemal każdy projekt w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formatu może być pomyślnie używany w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], nawet jeśli projekt został utworzony przez inne narzędzie i ma niestandardowy proces kompilacji.  
@@ -68,9 +68,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>Wewnątrz – procesowe  
  Jeśli to możliwe, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] spróbuje użyć wewnątrzprocesowej wersji z [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilatora w celu zwiększenia wydajności. (Nie dotyczy [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Aby to działało poprawnie muszą być spełnione następujące warunki:  
   
--   W obiekcie docelowym projektu musi być zadanie o nazwie `Vbc` dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektów.  
+- W obiekcie docelowym projektu musi być zadanie o nazwie `Vbc` dla [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projektów.  
   
--   `UseHostCompilerIfAvailable` Parametr zadania musi być ustawiony na wartość true.  
+- `UseHostCompilerIfAvailable` Parametr zadania musi być ustawiony na wartość true.  
   
 ## <a name="design-time-intellisense"></a>Funkcja IntelliSense czasu projektowania  
  Aby uzyskać obsługę technologii IntelliSense w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zanim kompilacja wygeneruje zestaw danych wyjściowych, muszą być spełnione następujące warunki:  
@@ -157,23 +157,23 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>Rozpoznawanie odwołania  
  Rozpoznawanie odwołania jest proces przy użyciu elementów odwołania zapisanych w pliku projektu do zlokalizowania rzeczywistych zestawów. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] musi wywołać rozdzielczość odniesienia w celu pokazania szczegółowych właściwości dla każdego odniesienia w **właściwości** okna. Na poniższej liście opisano trzy typy odwołań i jak są rozwiązywane.  
   
--   Odwołania do zestawów:  
+- Odwołania do zestawów:  
   
-     System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveAssemblyReferences`. Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `ReferencePath`. Każdy z tych elementów powinien mieć specyfikację elementu (wartość `Include` atrybutu elementu) zawierającą pełną ścieżkę do odwołania. Elementy powinny mieć wszystkie metadane z elementów wejściowych przekazywanych wraz z następującymi nowymi metadanymi:  
+   System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveAssemblyReferences`. Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `ReferencePath`. Każdy z tych elementów powinien mieć specyfikację elementu (wartość `Include` atrybutu elementu) zawierającą pełną ścieżkę do odwołania. Elementy powinny mieć wszystkie metadane z elementów wejściowych przekazywanych wraz z następującymi nowymi metadanymi:  
   
-    -   `CopyLocal`, wskazujące, czy zestaw powinien być skopiowany do folderu wyjściowego, ustaw wartość true lub false.  
+  - `CopyLocal`, wskazujące, czy zestaw powinien być skopiowany do folderu wyjściowego, ustaw wartość true lub false.  
   
-    -   `OriginalItemSpec`, zawierające pierwotną specyfikację elementu odniesienia.  
+  - `OriginalItemSpec`, zawierające pierwotną specyfikację elementu odniesienia.  
   
-    -   `ResolvedFrom`, ustawiona na "{TargetFrameworkDirectory}", jeśli została rozwiązana z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] katalogu.  
+  - `ResolvedFrom`, ustawiona na "{TargetFrameworkDirectory}", jeśli została rozwiązana z [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] katalogu.  
   
--   Odniesienia modelu COM:  
+- Odniesienia modelu COM:  
   
-     System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveCOMReferences`. Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `ComReferenceWrappers`. Każdy z tych elementów powinien mieć specyfikację elementu zawierającą pełną ścieżkę do zestawu współdziałania dla odwołania COM. Elementy powinny mieć wszystkie metadane z elementów wejściowych przekazanych, dodatkowo do nowych metadanych o nazwie `CopyLocal`, wskazującą, czy zestaw powinien być skopiowany do folderu wyjściowego, ustaw wartość true lub false.  
+   System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveCOMReferences`. Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `ComReferenceWrappers`. Każdy z tych elementów powinien mieć specyfikację elementu zawierającą pełną ścieżkę do zestawu współdziałania dla odwołania COM. Elementy powinny mieć wszystkie metadane z elementów wejściowych przekazanych, dodatkowo do nowych metadanych o nazwie `CopyLocal`, wskazującą, czy zestaw powinien być skopiowany do folderu wyjściowego, ustaw wartość true lub false.  
   
--   Odwołania natywne  
+- Odwołania natywne  
   
-     System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveNativeReferences`. Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `NativeReferenceFile`. Elementy powinny mieć wszystkie metadane z elementów wejściowych przekazywanych wraz z nowym fragmentem metadanych o nazwie `OriginalItemSpec`, zawierające pierwotną specyfikację elementu odniesienia.  
+   System projektu wywołuje obiekt docelowy z dobrze znaną nazwą `ResolveNativeReferences`. Ten element docelowy powinien tworzyć elementy o nazwie typu elementu `NativeReferenceFile`. Elementy powinny mieć wszystkie metadane z elementów wejściowych przekazywanych wraz z nowym fragmentem metadanych o nazwie `OriginalItemSpec`, zawierające pierwotną specyfikację elementu odniesienia.  
   
 ## <a name="performance-shortcuts"></a>Skróty wydajności  
  Jeśli uruchomisz debugowanie w interfejsie użytkownika programu Visual Studio (albo wybierając klawisz F5 lub wybierając **debugowania** > **Rozpocznij debugowanie** na pasku menu), proces kompilacji używa szybkiego sprawdzania aktualizacji w celu poprawienia wydajności wydajność. W niektórych przypadkach, gdzie niestandardowe kompilacje tworzą pliki, które z kolei kompilowane szybkie sprawdzenie aktualizacji niepoprawnie identyfikuje zmienione pliki. Projekty, które wymagają bardziej szczegółowego sprawdzania aktualizacji można wyłączyć szybkie sprawdzanie przez ustawienie zmiennej środowiskowej `DISABLEFASTUPTODATECHECK=1`. Alternatywnie projekty mogą ją ustawiać jako właściwość narzędzia MSBuild w projekcie lub w pliku, który projekt importuje.  

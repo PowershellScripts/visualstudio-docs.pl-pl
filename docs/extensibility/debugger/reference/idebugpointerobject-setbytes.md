@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8234117d7965c4f2e471855d39ed0c3cee1f88c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9f3a496eb0212863f2ed08479216ac6ca546009f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114297"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891508"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
-Ustawia wartość wskazywał z szeregu kolejnych bajtów.  
+Ustawia wartość wskazywana z szeregu kolejnych bajtów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,22 +47,22 @@ int SetBytes(
   
 #### <a name="parameters"></a>Parametry  
  `dwStart`  
- [in] Przesunięcie w bajtach, od początku odnosi się do obiektu.  
+ [in] Przesunięcie w bajtach od początku, jaki wskazał obiekt.  
   
  `dwCount`  
- [in] Liczba bajtów do ustawienia.  
+ [in] Liczba bajtów do zestawu.  
   
  `pBytes`  
- [in] Tablica bajtów reprezentujący nową wartość. Ta wartość jest przechowywana do obiektu, zaczynając od danego przesunięcia.  
+ [in] Tablica bajtów reprezentujący nową wartość. Ta wartość jest przechowywana do obiektu, rozpoczynając od danego przesunięcia.  
   
  `pdwBytes`  
- [out] Zwraca liczbę bajtów faktycznie ustawić.  
+ [out] Zwraca liczbę bajtów faktycznie zestawu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest używana, jeśli wskaźnik reprezentowany przez to [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) wskazuje typ pierwotny lub prostego tablicę typy pierwotne (to znaczy tablicę, która może być reprezentowany przez prosty sekwencję bajtów). To `IDebugPointerObject` obiekt nie może być odwołanie o wartości null (go musi wskazywać adres w pamięci).  
+ Ta metoda jest używana, jeśli wskaźnik, reprezentowane przez to [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) wskazuje typ pierwotny lub prostej tablicy typów pierwotnych (czyli tablicę, która może być reprezentowany za pomocą prostych sekwencji bajtów). To `IDebugPointerObject` obiekt nie może być odwołaniem do wartości null (go musi wskazywać adres w pamięci).  
   
 ## <a name="see-also"></a>Zobacz też  
  [GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)   

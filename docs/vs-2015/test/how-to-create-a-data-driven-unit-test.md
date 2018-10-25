@@ -20,12 +20,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b8831493b9d065c8a87157dbb8c38bf0b06f0cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177674"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889363"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Porady: tworzenie testu jednostkowego opartego na danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Za pomocą środowiska testów jednostkowych Microsoft dla kodu zarządzanego, m
   
  Ten temat zawiera następujące sekcje:  
   
--   [Testowaną metodę](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
+- [Testowaną metodę](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
   
--   [Tworzenie źródła danych](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
+- [Tworzenie źródła danych](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
   
--   [Dodawanie TestContext do klasy testowej](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
+- [Dodawanie TestContext do klasy testowej](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
   
--   [Pisanie metody testowej](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
+- [Pisanie metody testowej](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-    -   [Określanie DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  -   [Określanie DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-    -   [Aby uzyskać dostęp do danych za pomocą TestContext.DataRow](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  -   [Aby uzyskać dostęp do danych za pomocą TestContext.DataRow](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
--   [Uruchamianie testu i wyświetlania wyników](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
+- [Uruchamianie testu i wyświetlania wyników](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
- Tworzenie testu jednostkowego opartego na danych obejmuje następujące czynności:  
+  Tworzenie testu jednostkowego opartego na danych obejmuje następujące czynności:  
   
 1.  Utwórz źródło danych, który zawiera wartości, których używasz w metodzie testowej. Źródła danych mogą być dowolnego typu, który jest zarejestrowany na komputerze, na którym uruchamiany jest test.  
   
@@ -61,17 +61,17 @@ Za pomocą środowiska testów jednostkowych Microsoft dla kodu zarządzanego, m
 ##  <a name="BKMK_The_method_under_test"></a> Testowaną metodę  
  Na przykład załóżmy, że utworzono:  
   
-1.  To rozwiązanie o nazwie `MyBank` , akceptuje i przetwarzania transakcji dla różnych typów kont.  
+1. To rozwiązanie o nazwie `MyBank` , akceptuje i przetwarzania transakcji dla różnych typów kont.  
   
-2.  Projekt w `MyBank` o nazwie `BankDb` który zarządza transakcji dla kont.  
+2. Projekt w `MyBank` o nazwie `BankDb` który zarządza transakcji dla kont.  
   
-3.  Klasa o nazwie `Maths` w `DbBank` projektu, który wykonuje funkcje matematyczne w celu zapewnienia korzystne bank każdej transakcji.  
+3. Klasa o nazwie `Maths` w `DbBank` projektu, który wykonuje funkcje matematyczne w celu zapewnienia korzystne bank każdej transakcji.  
   
-4.  To test jednostkowy projekt o nazwie `BankDbTests` się testowanie zachowania `BankDb` składnika.  
+4. To test jednostkowy projekt o nazwie `BankDbTests` się testowanie zachowania `BankDb` składnika.  
   
-5.  To test jednostkowy klasę o nazwie `MathsTests` Aby sprawdzić zachowanie `Maths` klasy.  
+5. To test jednostkowy klasę o nazwie `MathsTests` Aby sprawdzić zachowanie `Maths` klasy.  
   
- Testujemy metody w `Maths` , dodanie dwóch liczb całkowitych, za pomocą pętli:  
+   Testujemy metody w `Maths` , dodanie dwóch liczb całkowitych, za pomocą pętli:  
   
 ```  
 public int AddIntegers(int first, int second)  

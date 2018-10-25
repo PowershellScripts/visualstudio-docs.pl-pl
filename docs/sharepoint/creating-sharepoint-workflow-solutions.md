@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4e808d93d2ae3039d4c5d79d1c14c65360bba32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892314"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Tworzenie rozwiązań przepływu pracy SharePoint
 
@@ -70,25 +70,25 @@ Aby uzyskać więcej informacji na temat programu SharePoint, zobacz [Microsoft 
 
  Istnieją dwa typy działań:
 
--   *Proste działania* wykonać pojedynczą jednostkę pracy, takich jak "Opóźnij przez 1 dzień" lub "uruchomić usługi sieci Web".
+- *Proste działania* wykonać pojedynczą jednostkę pracy, takich jak "Opóźnij przez 1 dzień" lub "uruchomić usługi sieci Web".
 
--   *Działań złożonych* zawierają inne działania; na przykład warunkowego działanie może zawierać dwie gałęzie.
+- *Działań złożonych* zawierają inne działania; na przykład warunkowego działanie może zawierać dwie gałęzie.
 
- Oba rodzaje działań są dostępne w **przybornika**.
+  Oba rodzaje działań są dostępne w **przybornika**.
 
- Działania mogą mieć właściwości, metody i zdarzenia. Użyj **właściwości** okna do ustawiania właściwości działania.
+  Działania mogą mieć właściwości, metody i zdarzenia. Użyj **właściwości** okna do ustawiania właściwości działania.
 
- Można również utworzyć niestandardowe działanie. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie niestandardowego przepływu pracy działania witryny](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
+  Można również utworzyć niestandardowe działanie. Aby uzyskać więcej informacji, zobacz [wskazówki: Tworzenie niestandardowego przepływu pracy działania witryny](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md).
 
- Działania są pogrupowane w następującej karcie we **przybornika**:
+  Działania są pogrupowane w następującej karcie we **przybornika**:
 
--   **Przepływ pracy programu SharePoint**
+- **Przepływ pracy programu SharePoint**
 
--   **Windows Workflow 3.0**
+- **Windows Workflow 3.0**
 
--   **Windows Workflow 3.5**
+- **Windows Workflow 3.5**
 
- Nie wszystkie działania przepływu pracy podstawowej są obsługiwane przez program SharePoint. Aby uzyskać więcej informacji, zobacz [działań dla Windows SharePoint przegląd usług przepływu pracy](http://go.microsoft.com/fwlink/?LinkID=156094).
+  Nie wszystkie działania przepływu pracy podstawowej są obsługiwane przez program SharePoint. Aby uzyskać więcej informacji, zobacz [działań dla Windows SharePoint przegląd usług przepływu pracy](http://go.microsoft.com/fwlink/?LinkID=156094).
 
 #### <a name="sharepoint-workflow-activities"></a>Działania przepływu pracy programu SharePoint
  **Przepływu pracy programu SharePoint** karty zawierają wyspecjalizowanych działań do użycia w [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]. Te działania upraszczającego i usprawniającego rozwoju cyklu życia dokumentu w przepływach pracy. Aby uzyskać więcej informacji o działaniach na liście **przepływu pracy programu SharePoint** kartę, zobacz [działań dla Windows SharePoint przegląd usług przepływu pracy](http://go.microsoft.com/fwlink/?LinkID=156094).
@@ -111,15 +111,15 @@ Aby uzyskać więcej informacji na temat programu SharePoint, zobacz [Microsoft 
 
  Istnieją cztery rodzaje formularzy, które mogą być używane w przepływie pracy:
 
--   Skojarzenie
+- Skojarzenie
 
--   Inicjowania
+- Inicjowania
 
--   Modyfikacja
+- Modyfikacja
 
--   Zadanie
+- Zadanie
 
- Z tych opcji [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obejmuje szablony elementów dla formularzy skojarzenia i inicjacji. Przykładem *formularza skojarzenia* jest taki, który umożliwia administratorowi zainstalowanie przepływu pracy wprowadź parametry, które odnoszą się do przepływu pracy, takie jak limit wydatków dla przepływu pracy wydatków. Przykładem *formularza inicjowania* to taki, który umożliwia użytkownikowi wydatków przepływu pracy wprowadź kwotę poświęcony do przepływu pracy. Aby uzyskać więcej informacji na temat tego rodzaju formularzy zobacz [SharePoint szablony elementu projektu i projektu](../sharepoint/sharepoint-project-and-project-item-templates.md).
+  Z tych opcji [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obejmuje szablony elementów dla formularzy skojarzenia i inicjacji. Przykładem *formularza skojarzenia* jest taki, który umożliwia administratorowi zainstalowanie przepływu pracy wprowadź parametry, które odnoszą się do przepływu pracy, takie jak limit wydatków dla przepływu pracy wydatków. Przykładem *formularza inicjowania* to taki, który umożliwia użytkownikowi wydatków przepływu pracy wprowadź kwotę poświęcony do przepływu pracy. Aby uzyskać więcej informacji na temat tego rodzaju formularzy zobacz [SharePoint szablony elementu projektu i projektu](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
 ### <a name="item-properties"></a>Właściwości elementu.
  Może również zbierać informacje od użytkowników za pomocą właściwości elementu w bibliotece programu SharePoint lub na liście. Pliku głównego kodu (Workflow1.cs lub Workflow1.vb) oświadcza, wystąpienie klasy Microsoft.SharePoint.Workflow.SPWorkflowActivationProperties.WorkflowProperties o nazwie `workflowProperties`. Użyj `workflowProperties` obiekt, aby uzyskać dostęp do właściwości biblioteki lub listy w kodzie. Aby uzyskać przykład, zobacz [wskazówki: tworzenie i debugowanie rozwiązania przepływu pracy programu SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md).

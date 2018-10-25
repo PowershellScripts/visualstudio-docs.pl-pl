@@ -19,25 +19,25 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e9b2cd003011d610b56ac97ed95e3008b5cabc6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 583296b47c2d230a48c21952613954b17ebfe622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267426"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892340"
 ---
 # <a name="memory-usage-without-debugging"></a>Użycie pamięci bez debugowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Możesz użyć **użycie pamięci** narzędzia bez debugowania, aby wykonać następujące czynności  
   
--   Monitorowanie aplikacji w pamięci podczas opracowywania scenariusza użycia bezpośrednio w programie Visual Studio.  
+- Monitorowanie aplikacji w pamięci podczas opracowywania scenariusza użycia bezpośrednio w programie Visual Studio.  
   
--   Utworzyć szczegółowe migawki stanu pamięci aplikacji.  
+- Utworzyć szczegółowe migawki stanu pamięci aplikacji.  
   
--   Porównywanie migawek do znalezienia głównej przyczyny problemów z pamięcią.  
+- Porównywanie migawek do znalezienia głównej przyczyny problemów z pamięcią.  
   
- W tym temacie opisano sposób analizowania aplikacji w języku XAML Universal Windows za pomocą narzędzia użycie pamięci. Jeśli chcesz analizować wykorzystanie pamięci w aplikacjach Windows Universal, korzystające z języków JavaScript i HTML, zobacz [Analizowanie użycia pamięci (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
+  W tym temacie opisano sposób analizowania aplikacji w języku XAML Universal Windows za pomocą narzędzia użycie pamięci. Jeśli chcesz analizować wykorzystanie pamięci w aplikacjach Windows Universal, korzystające z języków JavaScript i HTML, zobacz [Analizowanie użycia pamięci (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx).  
   
 ##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a> Uruchamianie sesji diagnostyki użycia pamięci  
   
@@ -76,13 +76,13 @@ Możesz użyć **użycie pamięci** narzędzia bez debugowania, aby wykonać nas
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a> Widoki migawki użycia pamięci  
  Używasz widoków migawki do otwierania szczegółowe raporty w nowych oknach programu Visual Studio. Istnieją dwa rodzaje widoków migawki:  
   
--   A [migawki szczegóły raporty](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) zawiera typy i wystąpienia w jedną migawkę.  
+- A [migawki szczegóły raporty](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports) zawiera typy i wystąpienia w jedną migawkę.  
   
--   A [różnica (różnica) raporty migawki](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) porównuje typy i wystąpienia w dwóch migawek.  
+- A [różnica (różnica) raporty migawki](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) porównuje typy i wystąpienia w dwóch migawek.  
   
- ![Wyświetl linki migawki](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Wyświetl linki migawki](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- Ponumerowane elementy na ilustracji widoku migawki są łącza, które otwierają widoków raportów użycia pamięci.  
+  Ponumerowane elementy na ilustracji widoku migawki są łącza, które otwierają widoków raportów użycia pamięci.  
   
 |||  
 |-|-|  

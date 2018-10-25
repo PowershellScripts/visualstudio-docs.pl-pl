@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a13ac0e3a1af8dc20fe63f832e7a19d7bf40c271
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4d51eaed785932703a5eb97714be8dc7b407fc81
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465580"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891820"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
-Pobiera odpowiednie nazwy ciągów dla danego identyfikatory właściwości.  
+Pobiera odpowiadający nazwy ciągu dla danej właściwości identyfikatorów.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,13 +42,13 @@ HRESULT ReadPropertyNames (
  [in] Tablica identyfikatory właściwości, dla którego można pobrać nazwy (`PROPID` jest zdefiniowany w WTypes.h jako `ULONG`).  
   
  `rglpwstrName`  
- [w, out] Tablica nazw właściwości identyfikatorów określonej właściwości. Tablica musi można wstępnie przydzielić do przechowywania żądaną liczbę nazw właściwości i musi być w stanie co najmniej `cpropid``BSTR` ciągów.  
+ [out w] Tablica nazwy właściwości dla identyfikatorów określonej właściwości. Tablica musi być wstępnie przydzielić do przechowywania żądana liczba nazw właściwości i musi być w stanie co najmniej `cpropid``BSTR` ciągów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Nazwy właściwości zwrócony musi zostać zwolniony (wywołując `SysFreeString` funkcji) po są już potrzebne.  
+ Nazwy właściwości zwracanego należy oddzielić (przez wywołanie metody `SysFreeString` funkcji) kiedy są już potrzebne.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

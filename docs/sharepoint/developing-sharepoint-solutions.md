@@ -1,5 +1,5 @@
 ---
-title: Tworzenie rozwiązań programu SharePoint | Dokumentacja firmy Microsoft
+title: Opracowywanie rozwiązań SharePoint | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,93 +18,93 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1be2a91408202ce42d7371154d0201e778381300
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b9eb1de3f18c487a2e6d3cdf3d0ce7ef95e578b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327258"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890000"
 ---
-# <a name="develop-sharepoint-solutions"></a>Tworzenie rozwiązań programu SharePoint
-  Kilka szablonów typ projektu programu SharePoint są dostępne w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do tworzenia witryn programu SharePoint i elementy lokacji. Aby uzyskać listę typów projektów dostępne w temacie [SharePoint elementu szablonów projektu i projektu](../sharepoint/sharepoint-project-and-project-item-templates.md). Poniżej przedstawiono opis elementów i właściwości elementu projektu SharePoint.  
+# <a name="develop-sharepoint-solutions"></a>Opracowywanie rozwiązań SharePoint
+  Kilka szablonów typu projektu programu SharePoint są dostępne w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] do tworzenia witryn programu SharePoint oraz elementów witryny. Aby uzyskać listę typów dostępnych projektów, zobacz [SharePoint szablony elementu projektu i projektu](../sharepoint/sharepoint-project-and-project-item-templates.md). Poniżej znajduje się opis elementów i właściwości projektu programu SharePoint.  
   
- Aby informacji na temat programu SharePoint 2013 i dodatki programu SharePoint, zobacz [programu SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) i [dodatki kompilacji programu SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
+ Aby uzyskać informacji na temat programu SharePoint 2013 i dodatków programu SharePoint, zobacz [programu SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) i [dodatków programu SharePoint z kompilacji](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
   
-## <a name="elements-of-a-sharepoint-project"></a>Elementy projektu SharePoint
- Węzły w projekcie programu SharePoint są określane jako *SharePoint — elementy*. SharePoint — elementy mogą także zawierać jeden lub więcej plików podrzędnych, określany jako *pliki elementu programu SharePoint*, takich jak [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliki konfiguracji, formularze aspx i inne.  
+## <a name="elements-of-a-sharepoint-project"></a>Elementy projektu programu SharePoint
+ Węzły w projekcie programu SharePoint są znane jako *elementów programu SharePoint*. Elementy programu SharePoint mogą także zawierać jeden lub więcej podplików określanych jako *pliki elementu programu SharePoint*, takich jak [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliki konfiguracyjne, formularze .aspx i inne.  
   
- Zamiast tworzenia projektów przy użyciu szablonów projektu, które są już wypełnione z plikami elementu projektu, możesz użyć **pusty projekt** szablon, Utwórz pusty projekt programu SharePoint, a następnie ręcznie Dodaj elementy projektu. SharePoint — projekty również opcjonalnie może zawierać jeden lub więcej plików funkcji (dla aktywacji w programie SharePoint) i plik pakietu, w którym do dystrybucji projektu.  
+ Zamiast tworzenia projektów przy użyciu szablonów projektów, które są już wypełnione plikami z elementami projektu, możesz użyć **pusty projekt** szablon, aby utworzyć pusty projekt programu SharePoint, a następnie ręcznie dodać elementy projektu. Projekty programu SharePoint mogą również opcjonalnie zawierać jeden lub więcej plików funkcji (do aktywacji w programie SharePoint) i plik pakietu, w którym można rozpowszechnić projekt.  
   
-### <a name="special-nodes"></a>Specjalne węzłów
- Każdy projekt programu SharePoint zawiera dwa węzły, które nie może być zmieniona, usunięty, Wytnij, skopiowany lub przeciągnięte z projektu. Te węzły są następujące:  
+### <a name="special-nodes"></a>Węzły specjalne
+ Każdy projekt programu SharePoint zawiera dwa węzły, które nie może być zmieniona, usunięte, wycinanie, skopiowane lub przeciągnięte z projektu. Te węzły są następujące:  
   
--   Funkcje    
--   Package  
+- Funkcje    
+- Package  
   
- Oba węzły są wyświetlane we wszystkich projektach SharePoint zawsze, nawet jeśli nie funkcji lub pakietów, które są zdefiniowane dla projektu.  
+  Oba węzły są wyświetlane we wszystkich projektach SharePoint zawsze, nawet jeśli żadna funkcja ani opakowanie są zdefiniowane dla projektu.  
   
-#### <a name="features-node"></a>Funkcje węzła
- **Funkcje** węzeł zawiera jedną lub więcej funkcji projektu programu SharePoint. Funkcja jest kontenerem rozszerzeń dla programu SharePoint. Po wdrożeniu funkcji programu SharePoint server można w definicjach lokacji lub indywidualnie aktywowany przez administratorów programu SharePoint w witrynach programu SharePoint. Aby uzyskać więcej informacji, zobacz [pracy z funkcjami](http://go.microsoft.com/fwlink/?LinkID=147704).  
+#### <a name="features-node"></a>Węzeł funkcji
+ **Funkcji** węzeł zawiera jeden lub więcej funkcji projektu SharePoint. Funkcja jest kontenerem rozszerzeń dla programu SharePoint. Po wdrożeniu funkcji do serwera programu SharePoint, mogą być zawarte w definicji witryny lub aktywowane indywidualnie przez administratorów programu SharePoint w witrynach programu SharePoint. Aby uzyskać więcej informacji, zobacz [Praca z funkcjami](http://go.microsoft.com/fwlink/?LinkID=147704).  
   
- Po dodaniu elementu, takiego jak typ zawartości lub wystąpienia listy, do projektu SharePoint, jest ona dodawana do funkcji w **funkcje** węzła. Zakres element określa, czy jest ona dodawana do nowej lub istniejącej funkcji. Jeśli nowy element jest tym samym zakresie co istniejących funkcji, następnie jest ona dodawana do tej funkcji. W przeciwnym razie element został dodany do nowej funkcji.  
+ Po dodaniu elementu, takiego jak typ zawartości lub wystąpienia listy, do projektu programu SharePoint zostanie dodany do funkcji w **funkcji** węzła. Zakres elementu Określa, czy jest ona dodawana do nowej lub istniejącej funkcji. Jeśli nowy element ma taki sam zakres jak funkcja istniejąca, to jest dodawany do tej funkcji. W przeciwnym razie element jest dodawany do nowej funkcji.  
   
- Aby ręcznie dodać funkcję, należy wykonać **dodać funkcję** polecenia menu skrótów węzła funkcji. Można wyświetlić lub zmienić treść funkcji przy użyciu narzędzia Projektant funkcji. Aby uzyskać więcej informacji, zobacz [porady: dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
+ Aby dodać funkcję ręcznie, wykonaj **Dodaj funkcję** polecenia menu skrótów węzła funkcji. Można wyświetlać lub zmieniać zawartość funkcji przy użyciu projektanta funkcji. Aby uzyskać więcej informacji, zobacz [porady: dostosowywanie funkcji SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
- Gdy funkcja zostanie dodany do projektu SharePoint, pojawi się w **Eksploratora rozwiązań** węzła przy użyciu domyślnego nazwij funkcji*x*.feature, gdzie *x* to unikatowa liczba. Po wdrożeniu funkcji programu SharePoint Server administratorem programu SharePoint można aktywować, udostępniając użytkowników witryny programu SharePoint.  
+ Gdy funkcja zostanie dodany do projektu programu SharePoint, pojawi się w **Eksploratora rozwiązań** jako węzeł z domyślna nazwa funkcji*x*.feature, gdzie *x* to unikatowa liczba. Po wdrożeniu funkcji do serwera programu SharePoint, administrator programu SharePoint można uaktywnić, udostępniając użytkownikom witryny programu SharePoint.  
   
-#### <a name="package-node"></a>Węzeł pakietów
- **Pakietu** węzła zawiera pojedynczy plik, która służy jako mechanizm dystrybucji projektu SharePoint. Ten plik, znany jako *pakietu rozwiązania*, jest. Na podstawie pliku CAB z. Rozszerzenie WSP. Pakiet rozwiązania jest możliwe, wielokrotnego użytku plik, który zawiera zestaw funkcji, definicje witryny i zestawy, które są stosowane do witryny programu SharePoint i że można włączyć lub wyłączyć indywidualnie. **Pakietu** węzła zawsze zawiera plik o nazwie Package.wspdef, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliku definicji pakietu. Po wdrożeniu pakietu na serwerze z programem SharePoint administratora programu SharePoint można go zainstalować i aktywować jego funkcje.  
+#### <a name="package-node"></a>Węzeł pakietu
+ **Pakietu** węzeł zawiera pojedynczy plik, który służy jako mechanizm rozkładu dla projektu programu SharePoint. Ten plik, nazywany *pakietu rozwiązania*, jest. Na podstawie pliku CAB z. Rozszerzenie WSP. Pakiet rozwiązania jest plikiem rozmieszczenia, wielokrotnego użytku, który zawiera zestaw funkcji, definicji witryny i zestawy, które są stosowane do witryny programu SharePoint i które można włączać lub wyłączać indywidualnie. **Pakietu** węzła również zawsze zawiera plik o nazwie Package.wspdef, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pliku definicji pakietu. Po wdrożeniu pakietu do serwera, na którym uruchomiony jest SharePoint, administratora programu SharePoint można go zainstalować i uaktywnić jego funkcje.  
   
- Można wyświetlić lub zmienić zawartość pakietu w Projektancie pakiet, klikając węzeł pakietu lub otwieranie menu skrótów, a następnie wybierając **Otwórz**. Aby uzyskać więcej informacji, zobacz [pakietów rozwiązania SharePoint Utwórz](../sharepoint/creating-sharepoint-solution-packages.md).  
+ Możesz wyświetlić lub zmienić zawartość pakietu w Projektancie pakietu podwójnie na węzeł pakietu albo otwierając jego menu skrótów, a następnie wybierając **Otwórz**. Aby uzyskać więcej informacji, zobacz [pakietów rozwiązania SharePoint Utwórz](../sharepoint/creating-sharepoint-solution-packages.md).  
   
 ## <a name="sharepoint-project-and-project-item-properties"></a>Projekt programu SharePoint i właściwości elementu projektu
- SharePoint — projekty, podobnie jak inne [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektów, Wyświetl właściwości w oknie właściwości i strony właściwości. Właściwości, które są wyświetlane zależą od węzła, który jest zaznaczone.  
+ Projekty programu SharePoint, podobnie jak inne [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektów, wyświetlanie właściwości w oknie dialogowym właściwości i strony właściwości. Właściwości, które są wyświetlane, zależą od wybranego węzła.  
   
- Po projektu programu SharePoint, element projektu lub węzeł pliku element projektu jest zaznaczona w **Eksploratora rozwiązań**, w oknie właściwości lub na stronie właściwości są wyświetlane następujące właściwości:  
+ Po wybraniu projektu SharePoint, elementu projektu lub węzła pliku elementu projektu w **Eksploratora rozwiązań**, następujące właściwości wyświetlają się w oknie dialogowym właściwości lub na stronie właściwości:  
   
 ### <a name="project-properties"></a>Właściwości projektu
   
 |Nazwa właściwości|Opis|  
 |-------------------|-----------------|  
-|Konfiguracja Active wdrożenia|Określa serii czynności wykonywanych podczas wdrażania. Aby uzyskać więcej informacji, zobacz [porady: edytowanie konfiguracji wdrażania SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).|  
-|Cel wdrożenia zestawu|Określa, gdzie *zestawów aplikacji SharePoint* znajdują się. Wartości lokalizacji prawidłowy zestaw to *GlobalAssemblyCache* (ustawienie domyślne) lub *WebApplication*.<br /><br /> Jeśli *rozwiązania typu piaskownica* właściwość jest ustawiona na **true**, następnie właściwość ta jest wyłączona.|  
-|Wycofać automatycznie po debugowaniu|Określa, czy wdrożone rozwiązanie automatycznie wycofuje z programu SharePoint po uruchomieniu aplikacji w trybie debugowania w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Po wybraniu rozwiązania wycofuje podczas IDE wraca do widoku po debugowaniu projektu. Po wyczyszczeniu rozwiązania nie wycofać. Aby uzyskać więcej informacji, zobacz [odwołaniem rozwiązania](http://go.microsoft.com/fwlink/?LinkId=183819).|  
-|Edycja konfiguracji|Określa konfigurację wdrożenia do użycia dla projektu. Aby uzyskać więcej informacji, zobacz [porady: edytowanie konfiguracji wdrażania SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) i [wdrażanie, publikowanie oraz aktualizowanie pakietów rozwiązania SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).|  
-|Włączyć debugowanie Silverlight (zamiast debugowanie skryptów)|Po wybraniu debugera Silverlight dołącza do debugowania procesu. Po wyczyszczeniu Script debugger dołącza do debugowania procesu. Aby uzyskać więcej informacji, zobacz [przegląd debugowania Silverlight](http://go.microsoft.com/fwlink/?LinkId=179826).|  
-|Zawiera zestaw w pakiecie|Określa, czy zestaw projektu jest dostarczana w czasie kompilacji lub nie.|  
-|Po wdrożeniu wiersza polecenia|Określa polecenie do uruchomienia, po wdrożeniu rozwiązania programu SharePoint. Ten wiersz obsługuje wszystkie pliki wsadowe, a także rozpoznawania zmiennych MSBuild. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie poleceń wdrażania SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
-|Przed wdrożeniem wiersza polecenia|Określa polecenia do uruchomienia przed wdrożeniem rozwiązania programu SharePoint. Ten wiersz obsługuje wszystkie pliki wsadowe, a także rozpoznawania zmiennych MSBuild. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie poleceń wdrażania SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
+|Konfiguracja aktywnego wdrożenia|Określa serię kroków wykonywanych podczas wdrażania. Aby uzyskać więcej informacji, zobacz [porady: edytowanie konfiguracji wdrażania SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).|  
+|Zestaw docelowy wdrażania|Określa, gdzie *zestawy aplikacji SharePoint* znajdują się. Wartości prawidłowej lokalizacji zestawu są albo *GlobalAssemblyCache* (ustawienie domyślne) lub *WebApplication*.<br /><br /> Jeśli *rozwiązanie w trybie piaskownicy* właściwość jest ustawiona na **true**, wówczas właściwość ta jest wyłączona.|  
+|Automatycznie wycofać po debugowania|Określa, czy wdrożone rozwiązanie automatycznie wycofuje się z programu SharePoint po uruchomieniu aplikacji w trybie debugowania w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Po wybraniu, rozwiązanie wycofuje się kiedy IDE wraca do widoku projektowania po debugowaniu. Po wyczyszczeniu, rozwiązanie nie wycofuje się. Aby uzyskać więcej informacji, zobacz [wycofywanie rozwiązania](http://go.microsoft.com/fwlink/?LinkId=183819).|  
+|Edytuj konfiguracje|Określa konfigurację wdrożenia do użycia w projekcie. Aby uzyskać więcej informacji, zobacz [porady: edytowanie konfiguracji wdrażania SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) i [wdrażanie, publikowanie oraz aktualizowanie pakietów rozwiązania SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).|  
+|Włącz debugowanie programu Silverlight (zamiast debugowanie skryptów)|Po wybraniu, Silverlight debugger dołącza do procesu debugowania. Po zdeklarowaniu, debugger scenariusza dołącza do procesu debugowania. Aby uzyskać więcej informacji, zobacz [omówienie debugowania Silverlight](http://go.microsoft.com/fwlink/?LinkId=179826).|  
+|Zawiera zestaw w pakiecie|Określa, czy zestaw projektów jest spakowany w czasie kompilacji, czy nie.|  
+|Wiersz polecenia po wdrożeniu|Określa polecenia do uruchomienia po wdrożeniu rozwiązania SharePoint. Linia obsługuje wszystkie polecenia usługi batch, jak również rozdzielczość zmiennych MSBuild. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie poleceń wdrażania SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
+|Wiersz polecenia przed wdrożeniem|Określa polecenia do uruchomienia przed wdrożeniem rozwiązania SharePoint. Linia obsługuje wszystkie polecenia usługi batch, jak również rozdzielczość zmiennych MSBuild. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie poleceń wdrażania SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).|  
 |Plik projektu|Nazwa pliku zawierającego kompilację, konfigurację i inne informacje o projekcie.|  
 |Folder projektu|Lokalizacja pliku projektu w systemie. (Tylko do odczytu).|  
-|Rozwiązania piaskownicy|Określa, czy projekt powinien być wdrożony jako *rozwiązania typu piaskownica*, znanej także jako *utworzonych przez użytkownika rozwiązania*. Rozwiązania piaskownicy nie są zawsze godne zaufania. Wartość **true** oznacza, że projekt jest wdrażany jako rozwiązania typu piaskownica wartość **false** oznacza, że projekt jest wdrażany jako rozwiązanie farmy. Aby uzyskać więcej informacji, zobacz [uwagi dotyczące rozwiązania piaskownicy](../sharepoint/sandboxed-solution-considerations.md) i [różnice między rozwiązaniami w trybie piaskownicy oraz rozwiązaniami farmy](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).|  
-|Adres URL witryny|Określa [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] lokacji docelowej dla tego projektu.|  
+|Rozwiązanie w trybie piaskownicy|Określa, czy projekt powinien być wdrażany jako *rozwiązanie w trybie piaskownicy*, znane również jako *rozwiązań utworzonych przez użytkownika*. Rozwiązania piaskownicy nie są końca wiarygodne. Wartość **true** oznacza, że projekt został wdrożony jako rozwiązanie w trybie piaskownicy, wartość **false** oznacza, że projekt został wdrożony jako rozwiązanie farmy. Aby uzyskać więcej informacji, zobacz [uwagi dotyczące rozwiązania piaskownicy](../sharepoint/sandboxed-solution-considerations.md) i [różnice między piaskownicy oraz rozwiązaniami farmy](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).|  
+|Adres URL witryny|Określa [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] docelowej witryny dla tego projektu.|  
 |Element startowy|Określa pierwszy element w projekcie do uruchomienia.|  
   
- Po wybraniu pliku elementu programu SharePoint (na przykład przepływu pracy lub funkcji w węźle funkcje) w oknie właściwości są wyświetlane następujące właściwości:  
+ Po wybraniu pliku elementów SharePoint (takich jak przepływ pracy lub funkcji w węźle funkcji), następujące właściwości wyświetlają się w oknie dialogowym właściwości:  
   
 ### <a name="project-item-properties"></a>Właściwości elementu projektu
   
 |Nazwa właściwości|Opis|  
 |-------------------|-----------------|  
-|Rozwiązywanie konfliktów wdrożenia|Określa akcję do wykonania podczas wdrażania elementu projektu, którego właściwości są identyczne z właściwościami elementu znajdującego się już na serwerze. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).|  
-|Właściwości funkcji|Określa zbiór wartości (przechowywane jako pary klucz/wartość), która jest zawarta w funkcji podczas wdrażania w programie SharePoint. Po wdrożeniu funkcji można uzyskać dostępu do wartości właściwości, w kodzie. Aby uzyskać więcej informacji, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
-|Odbiorca funkcji|Zawiera kod wykonywany po wystąpieniu określonego zdarzenia na element projektu zawierającego funkcji. Aby uzyskać więcej informacji, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
-|Nazwa folderu|Nazwa folderu elementu projektu SharePoint.|  
-|Preferencje danych wyjściowych projektu|Określa zależność, takich jak zestawu, który tego elementu projektu musi być uruchamiane. Aby uzyskać więcej informacji, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
-|Wpisy kontroli bezpieczne|Określa formantów, które są bezpieczne dla niezaufanym użytkownikom do edycji. Aby uzyskać więcej informacji, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
+|Rozwiązywanie konfliktów wdrożenia|Określa akcję wykonywaną przy wdrażaniu elementu projektu, którego właściwości są identyczne z właściwościami elementu znajdującego się już na serwerze. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z pakowaniem i wdrażaniem SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).|  
+|Właściwości funkcji|Określa zestaw wartości (przechowywanych jako pary klucz/wartość) jest uwzględniany w funkcji podczas wdrażania w programie SharePoint. Po wdrożeniu funkcji wartości właściwości są dostępne w kodzie. Aby uzyskać więcej informacji, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
+|Odbiorca funkcji|Oferuje kod wykonywany po wystąpieniu określonego zdarzenia z elementem projektu zawierającym funkcję. Aby uzyskać więcej informacji, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
+|Nazwa folderu|Nazwa folderu elementów projektów programu SharePoint.|  
+|Odwołania danych wyjściowych projektu|Określa zależność, takich jak zestaw, który element projektu musi zostać uruchomiony. Aby uzyskać więcej informacji, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
+|Wpisy bezpiecznych kontrolek|Określa formanty, które są bezpieczne dla niezaufanch użytkowników do edycji. Aby uzyskać więcej informacji, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md).|  
   
 ### <a name="project-item-file-properties"></a>Właściwości pliku element projektu
   
 |Nazwa właściwości|Opis|  
 |-------------------|-----------------|  
 |Akcja kompilacji|Określa, jak plik odnosi się do procesów kompilacji i wdrożenia. Aby uzyskać więcej informacji, zobacz [właściwości pliku](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Kopiuj do katalogu wyjściowego|Określa, czy pliki źródłowego zostaną skopiowane do katalogu wyjściowego. Może to być jedna z następujących wartości:<br /><br /> -   *Nie Kopiuj*<br />-   *Zawsze Kopiuj*<br />-   *Kopiuj, jeśli nowszy*<br /><br /> Aby uzyskać więcej informacji, zobacz [właściwości pliku](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Narzędzie niestandardowe|Określa nazwę narzędzia, jeśli istnieje, które przekształca plik w czasie projektowania i umieszcza wynik przekształcenia w innym pliku. Na przykład zestawu danych (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) plik ma domyślne narzędzie niestandardowe. Aby uzyskać więcej informacji, zobacz [właściwości pliku](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Namespace narzędzie niestandardowe|Przestrzeń nazw, do którego zostanie skopiowana dane wyjściowe narzędzia niestandardowego. Aby uzyskać więcej informacji, zobacz [właściwości pliku](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
-|Lokalizacja wdrożenia|Pełna ścieżka pliku na serwerze programu SharePoint. Ta ścieżka składa się z właściwości podrzędnych główny wdrożenia i ścieżka do wdrożenia.|  
-|Ścieżka do wdrożenia|Względna ścieżka pliku do pliku programu SharePoint Server, takich jak Workflow1\\. Pełna ścieżka pliku jest tworzony przez łączenie *Deployment ścieżkę* wartość na koniec *główny wdrożenia* wartość.<br /><br /> Wybranie wartości *RootFile* dla *typu wdrożenia* zmiany właściwości *główny wdrożenia* właściwości \<SharePointRoot >\\, który znajduje się w pełni kwalifikowaną ścieżkę \<SharePointRoot > \Workflow1\\. Aby uzyskać więcej informacji, zobacz [pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
-|Główny wdrożenia|Ciąg. Folder główny, gdy plik jest wdrożony na serwerze programu SharePoint. Na przykład \<SharePointRoot > \Template\Features\\\<Nazwa_funkcji >\\.<br /><br /> Wartość *główny wdrożenia* właściwość jest określana przez *typu wdrożenia* ustawienie.|  
-|Typ wdrożenia|Typ wdrożenia pliku, który określa jego *główny wdrożenia* wartość. Może to być jedna z następujących wartości:<br /><br /> NoDeployment:  *\<żadnej wartości >*<br /><br /> ElementManifest:  *\<SharePointRoot > \Template\Features\\\<Nazwa_funkcji >*\\<br /><br /> ElementFile:  *\<SharePointRoot > \Template\Features\\\<Nazwa_funkcji >\\*<br /><br /> TemplateFile:  *\<SharePointRoot > \Template\\*<br /><br /> RootFile:  *\<SharePointRoot >\\*<br /><br /> GlobalResource:  *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource:  *\<ClassResourcePath >\\*<br /><br /> Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
+|Kopiuj do katalogu wyjściowego|Określa, czy plik źródłowy zostanie skopiowany do katalogu wyjściowego. Może być jednym z następujących wartości:<br /><br /> -   *Nie Kopiuj*<br />-   *Zawsze Kopiuj*<br />-   *Kopiuj Jeśli nowszy*<br /><br /> Aby uzyskać więcej informacji, zobacz [właściwości pliku](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
+|Narzędzie niestandardowe|Określa nazwę narzędzia, jeśli istnieje, które przekształca plik w czasie projektowania i umieszcza przekształcenie w innym pliku. Na przykład zestaw danych (.[!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) plik ma domyślne narzędzie niestandardowe. Aby uzyskać więcej informacji, zobacz [właściwości pliku](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
+|Namespace narzędzie niestandardowe|Przestrzeń nazw, do którego są kopiowane dane wyjściowe narzędzia niestandardowego. Aby uzyskać więcej informacji, zobacz [właściwości pliku](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx).|  
+|Lokalizacja wdrożenia|Pełna ścieżka pliku na serwerze programu SharePoint. Ta ścieżka składa się z właściwości podrzędnych główny wdrożenia i ścieżka wdrożenia.|  
+|Ścieżka do wdrożenia|Ścieżka względna pliku w pliku serwera SharePoint, takich jak Workflow1\\. W pełni kwalifikowanej ścieżki pliku jest tworzona przez dołączenie *Ścieżka rozmieszczania* wartość na końcu *główny wdrożenia* wartość.<br /><br /> Wybranie wartości z *RootFile* dla *typu wdrożenia* zmiany właściwości *główny wdrożenia* właściwości \<SharePointRoot >\\, dając w efekcie w pełni kwalifikowaną ścieżką \<SharePointRoot > \Workflow1\\. Aby uzyskać więcej informacji, zobacz [pakowania i wdrażania rozwiązań programu SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md).|  
+|Główny wdrożenia|ciąg. Folder główny, gdzie plik jest wdrożony na serwerze programu SharePoint. Na przykład \<SharePointRoot > \Template\Features\\\<FeatureName >\\.<br /><br /> Wartość *główny wdrożenia* właściwość jest określana przez *typu wdrożenia* ustawienie.|  
+|Typ wdrożenia|Typ wdrażania pliku, który określa jego *główny wdrożenia* wartość. Może być jednym z następujących wartości:<br /><br /> NoDeployment:  *\<żadnej wartości >*<br /><br /> Manifest elementu:  *\<SharePointRoot > \Template\Features\\\<FeatureName >*\\<br /><br /> Plik elementu:  *\<SharePointRoot > \Template\Features\\\<FeatureName >\\*<br /><br /> TemplateFile:  *\<SharePointRoot > \Template\\*<br /><br /> RootFile:  *\<SharePointRoot >\\*<br /><br /> GlobalResource:  *\<SharePointRoot > \Resources\\*<br /><br /> ClassResource:  *\<ClassResourcePath >\\*<br /><br /> Aby uzyskać więcej informacji, zobacz <xref:Microsoft.VisualStudio.SharePoint.DeploymentType>.|  
 |Nazwa pliku|Nazwa pliku lub folderu dla pliku elementu.|  
 |Pełna ścieżka|Lokalizacja pliku dla elementu. (Tylko do odczytu).|  
   
@@ -112,29 +112,29 @@ ms.locfileid: "36327258"
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Projekt SharePoint oraz szablony elementów projektu](../sharepoint/sharepoint-project-and-project-item-templates.md)|W tym artykule opisano projekt SharePoint oraz szablony elementów projektu jest dostępne w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Instrukcje: Dodawanie elementów do projektu SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Opisuje sposób dodawania nowych lub istniejących elementów do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.|  
-|[Wskazówki: Tworzenie kolumny witryny, typu zawartości i listy dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Prowadzi instrukcje tworzenia klienta pola, typu zawartości, definicji listy i wystąpienia listy.|  
-|[Porady: tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)|Opisuje sposób dodawania obsługiwanego odbiornika dla projektu utworzonych w [wskazówki: Tworzenie kolumny witryny, typu zawartości i listy dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
-|[Tworzenie rozwiązań przepływu pracy programu SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Opisuje sposób tworzenia projektów przepływu pracy, który zawiera formularze przypisania przepływu pracy i formularze inicjalizacji przepływu pracy.|  
-|[Tworzenie stron dla SharePoint](../sharepoint/creating-pages-for-sharepoint.md)|Opisuje sposób tworzenia stron, takich jak stron aplikacji, stron w witrynie, stron wzorcowych i układy stron dla programu SharePoint.|  
-|[Tworzenie składników web Part dla SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Opisuje sposób dodawania kontrolek, które użytkownicy mogą bezpośrednio modyfikować zawartość, wyglądu i zachowania stron w witrynie programu SharePoint za pomocą przeglądarki.|  
-|[Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Opisuje sposób tworzenia kontrolki użytkownika, które mogą być używane przez stron aplikacji i składników Web Part, które są uruchamiane w programie SharePoint.|  
-|[Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Opisuje sposób integrowania danych z usług sieci Web i aplikacji serwera zaplecza do aplikacji programu SharePoint.|  
-|[Tworzenie definicji witryny dla SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md)|Opisuje sposób tworzenia definicji witryny: szablonów, które są używane do tworzenia witryny programu SharePoint.|  
-|[Importowanie elementów z istniejącej witryny SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|Opisuje sposób importowania elementów, takich jak typy zawartości i moduły z istniejącej witryny SharePoint do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.|  
-|[Stosowanie modułów podczas dołączania plików do rozwiązania](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Informacje dotyczące używania modułów do wdrażania plików z Twojej [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu do witryny programu SharePoint.|  
+|[Projekt SharePoint oraz szablony elementów projektu](../sharepoint/sharepoint-project-and-project-item-templates.md)|Opisuje projekt programu SharePoint oraz szablony elementów projektu jest dostępne w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
+|[Instrukcje: Dodawanie elementów do projektu SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|W tym artykule opisano sposób dodawania nowych lub istniejących elementów do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.|  
+|[Przewodnik: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Prowadzi użytkownika krok po kroku podczas tworzenia odbiorcy, pole, typ zawartości, definicji listy i instancji list.|  
+|[Porady: tworzenie obsługiwanego odbiornika](../sharepoint/how-to-create-an-event-receiver.md)|Zawiera opis sposobu dodawania odbiorców zdarzenia dla projektu utworzonego w [wskazówki: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
+|[Tworzenie rozwiązań przepływu pracy SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|W tym artykule opisano sposób tworzenia projektów przepływu pracy zawierający skojarzenie przepływu pracy i formularze inicjacji przepływu pracy.|  
+|[Tworzenie stron dla SharePoint](../sharepoint/creating-pages-for-sharepoint.md)|W tym artykule opisano sposób tworzenia stron, takich jak strony aplikacji, stron witryny, strony wzorcowe i układy stron programu SharePoint.|  
+|[Tworzenie składników web Part programu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|W tym artykule opisano sposób dodawania formantów, które umożliwiają użytkownikom bezpośrednio modyfikować zawartość, wygląd i zachowanie stron w witrynie programu SharePoint za pomocą przeglądarki.|  
+|[Tworzenie formantów wielokrotnych dla części sieciowych lub stron aplikacji](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|W tym artykule opisano sposób tworzenia kontrolki użytkownika, które mogą być wykorzystane przez strony aplikacji i składników Web Part, które są uruchamiane w programie SharePoint.|  
+|[Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|W tym artykule opisano sposób integrowania danych z usług sieci Web i aplikacji serwera zaplecza do aplikacji programu SharePoint.|  
+|[Tworzenie definicji witryny dla SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md)|Zawiera opis sposobu tworzenia definicji witryny: szablonów, które są używane do tworzenia witryn programu SharePoint.|  
+|[Importowanie elementów z istniejącej witryny SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|W tym artykule opisano sposób importu elementy, takie jak modułów i typów zawartości z istniejącej witryny programu SharePoint do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu programu SharePoint.|  
+|[Stosowanie modułów podczas dołączania plików do rozwiązania](../sharepoint/using-modules-to-include-files-in-the-solution.md)|W tym artykule opisano sposób używania modułów, aby wdrożyć pliki z usługi [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu do witryny programu SharePoint.|  
 |[Przeglądanie połączeń SharePoint za pomocą Eksploratora serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Opisuje sposób przeglądania lokalnych witryn programu SharePoint za pomocą Eksploratora serwera.|  
-|[Podaj informacje pakowania i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|W tym artykule opisano sposób użycia właściwości elementu projektu o podanie informacji pakowania i wdrażania dla projektów, takich jak wpisy kontroli bezpieczne, preferencje danych wyjściowych projektu i właściwości funkcji.|  
-|[Porady: Dodawanie i usuwanie folderów mapowanych](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Opisuje sposób zmapowane katalogi do dodania do projektu w celu zapewnienia dostępu do zasobów programu SharePoint.|  
-|[Zagadnienia dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md)|W tym artykule opisano problemy związane z rozwiązań w trybie piaskownicy.|  
+|[Podaj informacji opakowań i wdrażania w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|Opisuje sposób używania właściwości elementu projektu w celu zapewnienia informacji opakowań i wdrażania projektów, takich jak wpisy kontroli bezpiecznego, odwołania do projektu danych wyjściowych i właściwości funkcji.|  
+|[Porady: Dodawanie i usuwanie folderów mapowanych](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Opisuje jak mapowane foldery można dodać do projektu w celu zapewnienia łatwiejszego dostępu do zasobów programu SharePoint.|  
+|[Uwagi dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md)|W tym artykule opisano zagadnienia związane z rozwiązania w trybie piaskownicy.|  
 |[Zabezpieczenia dla rozwiązań SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|W tym artykule opisano zagadnienia dotyczące zabezpieczeń związane z opracowywaniem rozwiązań SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Okno dialogowe selektora URL &#40;programowanie SharePoint w Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|W tym artykule opisano okno dialogowe, którego można użyć, aby dodać ścieżkę odwołania do zasobów w projekcie, lub na lokalnym serwerze programu SharePoint.|  
+|[Okno dialogowe selektora URL &#40;programowanie SharePoint w programie Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|W tym artykule opisano okno dialogowe, które służy do dodawania ścieżki odwołania do zasobów w projekcie lub na lokalnym serwerze programu SharePoint.|  
   
 ## <a name="see-also"></a>Zobacz także
- [Rozpoczynanie pracy &#40;programowanie SharePoint w Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
+ [Rozpoczynanie pracy &#40;programowanie SharePoint w programie Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [Przeglądanie połączeń SharePoint za pomocą Eksploratora serwera](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Kompilowanie i debugowanie rozwiązań SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Pakiet i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+ [Pakowanie i wdrażanie rozwiązań SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

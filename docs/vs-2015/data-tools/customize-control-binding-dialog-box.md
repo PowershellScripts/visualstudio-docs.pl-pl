@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8cc2e591c144afeb0720cdbf05280a499d10c70c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ca2da23040f3e7a57fe5da2ff8b87cc7fc38099
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247016"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889714"
 ---
 # <a name="customize-control-binding-dialog-box"></a>Dostosuj powiązania kontrolki — Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,22 +44,22 @@ Użyj **Dostosuj powiązania kontrolki** okno dialogowe, aby określić, które 
  **Typ danych**  
  Wyświetla listę typów, które skojarzysz z kontrolkami:  
   
--   Tabele, jednostek i obiektów, które są reprezentowane jako **[lista]** typów.  
+- Tabele, jednostek i obiektów, które są reprezentowane jako **[lista]** typów.  
   
--   Kolumny lub właściwości publicznej, jednostek i obiektów są reprezentowane jako typ danych rzeczywistych kolumny lub właściwości w podstawowym magazynie danych.  
+- Kolumny lub właściwości publicznej, jednostek i obiektów są reprezentowane jako typ danych rzeczywistych kolumny lub właściwości w podstawowym magazynie danych.  
   
--   Obiekty kształtów zdefiniowane przez użytkownika są reprezentowane jako **(inne)**. Na przykład jeśli aplikacja ma formant niestandardowy, który wyświetla dane z więcej niż jedną właściwość obiektu, wybierz pozycję **(inne)** typ danych dla formantu.  
+- Obiekty kształtów zdefiniowane przez użytkownika są reprezentowane jako **(inne)**. Na przykład jeśli aplikacja ma formant niestandardowy, który wyświetla dane z więcej niż jedną właściwość obiektu, wybierz pozycję **(inne)** typ danych dla formantu.  
   
- **Skojarzonych formantów**  
- Wyświetla listę elementów sterujących, które można skojarzyć z określonego typu danych. Jeśli chcesz skojarzyć określonego formantu z typem danych wybranym w **— typ danych** , wybierz odpowiednie pole wyboru na liście. Wyczyść pole wyboru, aby usunąć skojarzenie. Sprawdzane, formanty są wyświetlane w menu skrótów przedstawiony przez **źródeł danych** okna dla elementu typu powiązane dane.  
+  **Skojarzonych formantów**  
+  Wyświetla listę elementów sterujących, które można skojarzyć z określonego typu danych. Jeśli chcesz skojarzyć określonego formantu z typem danych wybranym w **— typ danych** , wybierz odpowiednie pole wyboru na liście. Wyczyść pole wyboru, aby usunąć skojarzenie. Sprawdzane, formanty są wyświetlane w menu skrótów przedstawiony przez **źródeł danych** okna dla elementu typu powiązane dane.  
   
- Formanty można dodać do listy, dodając formanty, które mają jeden z kilku atrybutów powiązania danych, które mają **przybornika**. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowych formantów do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+  Formanty można dodać do listy, dodając formanty, które mają jeden z kilku atrybutów powiązania danych, które mają **przybornika**. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowych formantów do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
- **Ustaw wartość domyślną**  
- Przypisuje wybrany formant typ jako domyślny dla elementów typu wybranych danych. Domyślny formant, który jest wyświetlany jako pierwszy wybór w menu skrótów przedstawiony przez **źródeł danych** okna dla elementu. Tylko jeden formant typu mogą być przypisane jako wartość domyślna dla typu danych.  
+  **Ustaw wartość domyślną**  
+  Przypisuje wybrany formant typ jako domyślny dla elementów typu wybranych danych. Domyślny formant, który jest wyświetlany jako pierwszy wybór w menu skrótów przedstawiony przez **źródeł danych** okna dla elementu. Tylko jeden formant typu mogą być przypisane jako wartość domyślna dla typu danych.  
   
- **Wyczyść domyślne**  
- Usuwa oznaczenie formantu jako domyślne dla wybranego typu danych. Jeśli nie istnieje domyślny dla wybranego typu danych, **[Brak]** jest wyświetlany jako pierwszy wybór w menu skrótów przedstawiony przez **źródeł danych** okna dla elementu skojarzonego typu.  
+  **Wyczyść domyślne**  
+  Usuwa oznaczenie formantu jako domyślne dla wybranego typu danych. Jeśli nie istnieje domyślny dla wybranego typu danych, **[Brak]** jest wyświetlany jako pierwszy wybór w menu skrótów przedstawiony przez **źródeł danych** okna dla elementu skojarzonego typu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Okno źródeł danych](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)   

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d14dd126806e2c7b9a903e415dbc7a8a6f834517
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 32bba243cd38132a4c64a0b8706f9dbdca823ad3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566898"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942377"
 ---
 # <a name="customizing-text-and-image-fields"></a>Dostosowywanie pól tekstowych i obrazu
 Po zdefiniowaniu dekoratora tekstu w kształcie jest reprezentowana przez element TextField. Przykłady inicjalizacji TextFields i innych ShapeFields należy sprawdzić Dsl\GeneratedCode\Shapes.cs w rozwiązaniu języka DSL.
@@ -80,7 +80,6 @@ public virtual Font GetFont(ShapeElement shape)
 // To change per shape or dynamically, override this.
 public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
 { return DefaultFontId; }
-
 ```
 
  Istnieje kilka innych pary `Get` metod i `Default` właściwości, takie jak `DefaultMultipleLine/GetMultipleLine()`. Można przypisać wartości do właściwości domyślne, aby zmienić wartość dla wszystkich wystąpień pole kształtu. Aby wprowadzić wartości różnią się od wystąpienia jeden kształt do innego lub zależny od stanu kształtu lub jego element modelu, należy zastąpić `Get` metody.
@@ -106,7 +105,6 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
       TextField commentField = ShapeElement.FindShapeField(shapeFields, "CommentDecorator") as TextField;
       // Use the standard font for comments:
       commentField.DefaultFontId = DiagramFonts.CommentText;
-
 ```
 
 ## <a name="dynamic-customizations"></a>Dynamicznego dostosowania
@@ -169,7 +167,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     }
 
   }
-
 ```
 
 ## <a name="style-sets"></a>Ustawia styl
@@ -264,7 +261,6 @@ partial class ExampleShape
     }
   }
 }
-
 ```
 
 ## <a name="see-also"></a>Zobacz też

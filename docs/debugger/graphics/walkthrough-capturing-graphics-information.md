@@ -10,55 +10,55 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 037bdbbfb81c36e4f8e4d124801907ca0600aee7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 81e647f1e98a13a87c1b526630eee349fde3fd69
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932932"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Wskazówki: przechwytywanie informacji graficznych
-W tym przewodniku przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki do ręcznie przechwytywanie informacji graficznych z aplikacji Direct3D.  
+W tym instruktażu przedstawiono sposób użycia [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostyki grafiki, aby ręcznie przechwytywać informacje graficzne z aplikacji Direct3D.  
   
- W tym przewodniku przedstawiono te zadania:  
+ Ten instruktaż ilustruje następujące zadania:  
   
 -   Przechwytywanie diagnostyki grafiki do aplikacji  
   
 -   Przechwytywanie informacji graficznych  
   
 ## <a name="capturing-graphics-information"></a>Przechwytywanie informacji graficznych  
- Aby korzystać z narzędziami diagnostyki grafiki, należy najpierw przechwytywanie informacji graficznych, która opiera się na. Aby włączyć przechwytywania, należy użyć **Rozpocznij diagnostykę** polecenie, aby utworzenie punktu zaczepienia diagnostyki grafiki do aplikacji podczas jej uruchamiania.  
+ Aby korzystać z narzędzi programu Graphics Diagnostics, najpierw musisz przechwytywanie informacji graficznych, która opiera się na. Aby włączyć funkcję przechwytywania, należy użyć **Rozpocznij diagnostykę** polecenie, aby podłączyć Graphics Diagnostics do aplikacji podczas jej uruchamiania.  
   
-#### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>Aby włączyć przechwytywanie informacji graficznych po projekt lub rozwiązanie jest załadowany  
+#### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>Aby włączyć funkcję przechwytywania informacji graficznych po projekt lub rozwiązanie jest ładowany  
   
-1.  W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], obciążenia aplikacji, który ma być przechwytywanie informacji graficznych z pliku projektu lub rozwiązania.  
+1. W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], załaduj plik projektu lub rozwiązania, którą chcesz przechwytywać informacje graficzne z aplikacji.  
   
-2.  Na pasku narzędzi diagnostyki grafiki, wybierz **Rozpocznij diagnostykę**.  
+2. Na pasku narzędzi diagnostyki grafiki, wybierz **Rozpocznij diagnostykę**.  
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>Aby włączyć przechwytywanie informacji graficznych bez ładowania projektu lub rozwiązania  
   
-1.  Na pasku menu wybierz **pliku**, **Otwórz**, **projektu/rozwiązania**. **Otwórz projekt** zostanie wyświetlone okno dialogowe.  
+1. Na pasku menu wybierz **pliku**, **Otwórz**, **projekt/rozwiązanie**. **Otwórz projekt** pojawi się okno dialogowe.  
   
-2.  Zamiast pliku projektu lub rozwiązania, określ plik wykonywalny dla aplikacji, który ma zostać przechwytywanie informacji graficznych z, a następnie wybierz pozycję **Otwórz**.  
+2. Zamiast pliku projektu lub rozwiązania, należy określić plik wykonywalny aplikacji, który chcesz przechwycić informacje grafiki z, a następnie wybierz **Otwórz**.  
   
-3.  Na pasku menu wybierz **debugowania**, **grafiki**, **Rozpocznij diagnostykę**.  
+3. Na pasku menu wybierz **debugowania**, **grafiki**, **Rozpocznij diagnostykę**.  
   
- Po uruchomieniu aplikacji i jest renderowanie ramki, można przechwycić informacji graficznych.  
+   Po uruchomieniu aplikacji i jest renderowanie ramki, możesz przechwytywać informacje graficzne.  
   
-#### <a name="to-capture-graphics-information"></a>Aby przechwytywanie informacji graficznych  
+#### <a name="to-capture-graphics-information"></a>Do przechwytywania informacji graficznych  
   
--   Na pasku narzędzi diagnostyki grafiki, wybierz **przechwytywania** przycisku. ![Ikona przycisku przechwytywania grafiki](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
+- Na pasku narzędzi diagnostyki grafiki, wybierz **przechwytywania** przycisku. ![Ikona przycisku przechwytywania grafiki](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
-     —lub—  
+   —lub—  
   
-     Za pomocą aplikacji fokus naciśnij **Print Screen**.  
+   Gdy aplikacja w trybie koncentracji uwagi, naciśnij klawisz **klawisza Print Screen**.  
   
- Zawsze przechwytywanie informacji na temat ramki, diagnostyki grafiki rejestruje zdarzenia Direct3D i skojarzony stan i dodaje dane do dziennika grafiki. Dla każdej sesji diagnostyki grafiki jest tworzony nowy dziennik grafiki. Aby uzyskać informacje o dziennikach grafiki, zobacz [omówienie](overview-of-visual-studio-graphics-diagnostics.md).  
+  Każdorazowo przechwytywania informacji na temat ramkę, Graphics Diagnostics rejestruje zdarzenia Direct3D i powiązanym stanie i dodaje dane do dziennika grafiki. Nowy dziennik grafiki jest tworzona dla każdej sesji diagnostyki grafiki. Aby uzyskać informacji na temat dzienniki grafiki, zobacz [Przegląd](overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="next-steps"></a>Następne kroki  
- W tym przewodniku przedstawiono ręcznie przechwytywanie informacji graficznych. Jako kolejny krok Rozważ użycie tej opcji:  
+ W tym instruktażu zademonstrowano, jak przechwytywać informacje graficzne ręcznie. Kolejnym krokiem Rozważ użycie tej opcji:  
   
--   Dowiedz się, jak do analizowania informacji przechwyconych grafiki przy użyciu narzędzia diagnostyki grafiki. Zobacz [omówienie](overview-of-visual-studio-graphics-diagnostics.md).  
+-   Dowiedz się, jak analizować przechwycone informacje graficzne przy użyciu narzędzi programu Graphics Diagnostics. Zobacz [Przegląd](overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przechwytywanie informacji graficznych](capturing-graphics-information.md)

@@ -14,64 +14,64 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 780c9c98bc6be110a0c8bc987a70aeea3344d0e8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7e492996a194c6602af3ec412b86f7477ef233e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952631"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928714"
 ---
 # <a name="properties-of-image-shapes"></a>Właściwości kształtów obrazu
-Kształty obraz umożliwia określić wygląd klasy domeny w Projektancie wygenerowany. Zdefiniuj obraz kształtu przez ustawienie `Image` właściwości klasy do pliku obrazu wstępnie zdefiniowane. Obsługiwane są następujące formaty:
+Można użyć kształtów obrazu, aby określić, jak klasy domeny są wyświetlane w wygenerowanym projektancie. Zdefiniuj kształt obrazu, ustawiając `Image` właściwość klasy do pliku obrazu wstępnie zdefiniowane. Obsługiwane są następujące formaty:
 
--   .gif
+- .gif
 
--   .jpg
+- .jpg
 
--   JPEG
+- JPEG
 
--   .bmp
+- .bmp
 
--   .wmf
+- .wmf
 
--   .emf
+- .emf
 
--   .png
+- .png
 
- Domyślnie pliki projektanta zasobów, takich jak pliki obrazów, znajdują się w **zasobów**folderu w **Dsl** projektu.
+  Domyślnie pliki projektanta zasobów, takich jak pliki obrazów, znajdują się w **zasobów**folderu w **Dsl** projektu.
 
- Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji na temat używania tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+  Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji o tym, jak korzystać z tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
- Kształty obrazu mają właściwości, które są wymienione w poniższej tabeli.
+  Kształty obrazu mają właściwości, które są wymienione w poniższej tabeli.
 
 |Właściwość|Opis|Domyślny|
-|--------------|-----------------|-------------|
-|Kolor wypełnienia|Kolor wypełnienia kształtu.|biały|
-|Tryb gradientu wypełnienia|Tryb gradientu wypełnienia tego kształtu.|poziomy|
-|Ma domyślne punkty połączenia|Jeśli `True`kształt będzie używać lewej górnej i dolnej i punkty połączenia na odpowiednie w Projektancie wygenerowany.|False|
-|Kolor konturu|Kolor konturu kształtu.|czarne|
-|Styl kreskowania konspektu|Styl kreskowania konturu kształtu (pełne, kreska, kropki, DashDot, DashDotDot lub niestandardowy).|Stałe|
-|Szerokość konturu|Grubość konturu kształtu.|0.03125|
-|Kolor tekstu|Kolor używany do elementów decorator tekstu, które są skojarzone z tym kształtem.|czarne|
-|Modyfikator dostępu|Modyfikator dostępu geometrii kształtu (wewnętrzny lub publiczny).|Public|
-|Atrybuty niestandardowe|Można dodawać atrybuty do klasy kodu źródłowego, która jest generowana z tego kształtu.|\<Brak >|
-|Generuje o podwójnej precyzji pochodnych|Jeśli `True`, zarówno klasy podstawowej i częściowej klasy (obsługuje dostosowywania przy użyciu zastąpień) zostanie wygenerowany. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzenie klasy generowane](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Ma niestandardowy konstruktora|Jeśli `True`, niestandardowe konstruktora znajdzie się w kodzie źródłowym. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzenie klasy generowane](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Modyfikator dziedziczenia|Opisuje rodzaj dziedziczenia klasy kodu źródłowego, która jest generowany na podstawie kształtu obrazu (`none`, `abstract` lub `sealed`).|brak|
-|Obraz podstawowy kształtu|Klasa podstawowa tego kształtu.|(Brak)|
+|-|-|-|
+|Kolor wypełnienia|Kolor wypełnienia tego kształtu.|Biały|
+|Tryb gradientu wypełnienia|Tryb gradientu wypełnienia tego kształtu.|Poziome|
+|Ma domyślne punkty połączenia|Jeśli `True`kształt użyje górnej, dolnej, lewej i połączenia na odpowiednie punkty w wygenerowanym projektancie.|False|
+|Kolor konturu|Kolor konturu tego kształtu.|Czarny|
+|Styl kreskowania konturu|Styl kreskowania konturu tego kształtu (stałe, kreski, kropki, DashDot, DashDotDot lub niestandardowy).|Stałe|
+|Grubość konturu|Grubość konturu tego kształtu.|0.03125|
+|Kolor tekstu|Kolor, który jest używany dla dekoratorów tekstu, które są skojarzone z tym kształtem.|Czarny|
+|Modyfikator dostępu|Modyfikator dostępu elementu kształt geometryczny (wewnętrznego lub publicznego).|Public|
+|Atrybuty niestandardowe|Służy do dodawania atrybutów do klasy kodu źródłowego, która jest generowany na podstawie tego kształtu.|\<Brak >|
+|Generuje Double pochodne|Jeśli `True`, zostaną wygenerowane klasy podstawowej i klasy częściowej (obsługuje dostosowywania przy użyciu zastąpień). Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Ma konstruktora niestandardowego|Jeśli `True`, konstruktora niestandardowego, które będą dostępne w kodzie źródłowym. Aby uzyskać więcej informacji, zobacz [zastępowanie i rozszerzanie wygenerowanych klas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Modyfikator dziedziczenia|Opisuje typ dziedziczenia klasy kodu źródłowego, która jest generowany na podstawie kształt obrazu (`none`, `abstract` lub `sealed`).|brak|
+|Podstawowy kształt obrazu|Klasa bazowa tego kształtu.|(Brak)|
 |Nazwa|Nazwa tego kształtu.|Bieżąca nazwa|
-|Przestrzeń nazw|Przestrzeń nazw, która jest połączona z tym kształtem.|Bieżącej przestrzeni nazw|
-|ToolTip — typ|Miejsce gdzie element tooltip jest zdefiniowane (stałej, zmiennej lub brak). Jeśli następnie stałej wartości `Fixed Tooltip Text` właściwość jest używana jako etykietka narzędzia; Jeśli zmienna, następnie element tooltip jest zdefiniowany w kodu niestandardowego.|brak|
-|Uwagi|Nieformalne uwagi, które są skojarzone z tym kształtem.|\<Brak >|
-|Wysokość początkowego|Wysokość początkowego tego kształtu w calach.|1|
-|Szerokość początkowa|Szerokość początkowa tego kształtu w calach.|1.5|
-|Kolor wypełnienia dostępnego jako właściwość<br /><br /> Tryb gradientu wypełnienia dostępnego<br /><br /> Udostępniany jako właściwość kolor konturu<br /><br /> Udostępniany jako właściwość Styl kreskowany konspektu<br /><br /> Widoczne grubość konspektu jako właściwość<br /><br /> Opisuje kolor tekstu|Jeśli `True`, użytkownik może ustawić właściwość podane kształtu. Aby to ustawić, kliknij prawym przyciskiem myszy definicji kształtu, a następnie kliknij przycisk **dodać widoczne**.|False|
-|Opis|Używany do dokumentów wygenerowanych projektanta.|\<Brak >|
-|Nazwa wyświetlana|Nazwa, która będzie wyświetlana w wygenerowanym projektanta dla tego kształtu.|\<Brak >|
-|Stały tekst etykietki narzędzia|Tekst, który jest używany dla stałych etykietka narzędzia.|\<Brak >|
-|Słowo kluczowe pomocy|Słowo kluczowe jest używana do indeksowania pomocy F1 dla tego elementu.|\<Brak >|
+|Przestrzeń nazw|Przestrzeń nazw, która jest połączona z tym kształtem.|Bieżąca przestrzeń nazw|
+|Typ etykietki narzędzia|Miejsce, gdzie został zdefiniowany etykietki narzędzia (stałe, zmienna lub brak). Jeśli następnie stałej wartości `Fixed Tooltip Text` właściwość jest używana jako etykietka narzędzia; Jeśli jest to zmienna, następnie etykietki narzędzia jest definiowana w kodzie niestandardowym.|brak|
+|Uwagi|Uwagi informacyjne, które są skojarzone z tym kształtem.|\<Brak >|
+|Początkowa wysokość|Początkowa wysokość tego kształtu, w calach.|1|
+|Początkowa szerokość|Początkowa szerokość tego kształtu, w calach.|1.5|
+|Kolor wypełnienia uwidocznione jako właściwość<br /><br /> Tryb gradientu wypełnienia narażone<br /><br /> Widoczne kolor konturu jako właściwość<br /><br /> Widoczne stylu kreskowania konturu jako właściwość<br /><br /> Grubość konturu jako właściwość widoczne<br /><br /> Opisuje kolor tekstu|Jeśli `True`, użytkownik może ustawić właściwość podane kształtu. Aby to ustawić, kliknij prawym przyciskiem myszy definicję kształtu, a następnie kliknij przycisk **Dodaj udostępniane**.|False|
+|Opis|Umożliwia dokumentowanie wygenerowanego projektanta.|\<Brak >|
+|Nazwa wyświetlana|Nazwa która będzie wyświetlana w wygenerowanym projektancie dla tego kształtu.|\<Brak >|
+|Stały tekst etykietki narzędzia|Tekst, który jest używany dla ustalonej etykietki narzędzia.|\<Brak >|
+|Słowo kluczowe pomocy|Słowo kluczowe, które jest używane do indeksowania pomocy F1 dla tego elementu.|\<Brak >|
 |Obraz|Ścieżka do pliku obrazu, który służy do tego kształtu.|\<Brak >|
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

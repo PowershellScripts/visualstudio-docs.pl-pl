@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64c3ac876f0d7be8582ca8162fd93c83cb6d343e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ff46d6cae842d258aab8fb03409ff263670c410
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100897"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939777"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 Określa styl warunku punktu przerwania dla oczekujące i powiązane punkty przerwania.  
@@ -46,13 +46,13 @@ public enum enum_BP_COND_STYLE {
   
 ## <a name="members"></a>Elementy członkowskie  
  BP_COND_NONE  
- Po osiągnięciu punktu przerwania pozycji, generowane punktu przerwania. Nie określono warunku punktu przerwania.  
+ Uruchamia punkt przerwania, po osiągnięciu punktu przerwania pozycji. Nie określono warunek punktu przerwania.  
   
  BP_COND_WHEN_TRUE  
- Generowane punkt przerwania, tylko jeśli wyrażenie warunkowe skojarzone z punktu przerwania daje w wyniku `true`.  
+ Uruchamia punkt przerwania, tylko jeśli wyrażenie warunkowe skojarzony punkt przerwania daje w wyniku `true`.  
   
  BP_COND_WHEN_CHANGED  
- Uruchamiany punkt przerwania tylko wtedy, gdy wartość wyrażenia warunkowego skojarzone z punkt przerwania został zmieniony z jego poprzedniej oceny.  
+ Uruchamiany punkt przerwania tylko wtedy, gdy wartość wyrażenia warunkowego skojarzony punkt przerwania został zmieniony z jego poprzedniej oceny.  
   
 ## <a name="remarks"></a>Uwagi  
  Używany do `styleCondition` członkiem [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struktury.  

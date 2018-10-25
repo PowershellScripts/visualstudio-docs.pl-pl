@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6ed72cc65535849516de35c861942913ca750fba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7faef9f085f21db4d4f819746acf52c119189f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216856"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940999"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Aktualizowanie modelu UML z wątku w tle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,35 +35,35 @@ Czasami może być przydatny do wprowadzania zmian do modelu w wątku w tle. Na 
   
 #### <a name="to-run-the-example"></a>Aby uruchomić przykład  
   
-1.  Utwórz procedurę obsługi poleceń w projekcie języka C#, zgodnie z opisem w [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+1. Utwórz procedurę obsługi poleceń w projekcie języka C#, zgodnie z opisem w [Definiowanie polecenia menu na diagramie modelowania](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
-2.  Upewnij się, że projekt zawiera odwołania do tych zestawów:  
+2. Upewnij się, że projekt zawiera odwołania do tych zestawów:  
   
-    -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
   
-    -   Microsoft.VisualStudio.Uml.Interfaces  
+   -   Microsoft.VisualStudio.Uml.Interfaces  
   
-    -   System.ComponentModel.Composition  
+   -   System.ComponentModel.Composition  
   
-    -   System.Windows.Forms  
+   -   System.Windows.Forms  
   
-3.  Dodaj do projektu formularz Windows o nazwie **ProgressForm**. Powinna zostać wyświetlona komunikat informujący o tym, że aktualizacje są w toku. Nie ma mieć żadnych innych formantów.  
+3. Dodaj do projektu formularz Windows o nazwie **ProgressForm**. Powinna zostać wyświetlona komunikat informujący o tym, że aktualizacje są w toku. Nie ma mieć żadnych innych formantów.  
   
-4.  Dodaj plik języka C#, który zawiera kod, który jest wyświetlany po kroku 7.  
+4. Dodaj plik języka C#, który zawiera kod, który jest wyświetlany po kroku 7.  
   
-5.  Skompiluj i uruchom projekt.  
+5. Skompiluj i uruchom projekt.  
   
-     Nowe wystąpienie klasy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpocznie się w trybie doświadczalnym.  
+    Nowe wystąpienie klasy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpocznie się w trybie doświadczalnym.  
   
-6.  Utwórz lub Otwórz diagram klas UML w doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Utwórz lub Otwórz diagram klas UML w doświadczalnym wystąpieniu programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  Kliknij prawym przyciskiem myszy w dowolnym miejscu na diagramie klas UML, a następnie kliknij przycisk **Dodaj kilka klas UML**.  
+7. Kliknij prawym przyciskiem myszy w dowolnym miejscu na diagramie klas UML, a następnie kliknij przycisk **Dodaj kilka klas UML**.  
   
- Kilka nowych pól klasy pojawi się na diagramie, po kolei w odstępach co pół sekundy.  
+   Kilka nowych pól klasy pojawi się na diagramie, po kolei w odstępach co pół sekundy.  
   
 ```csharp  
 using System;  

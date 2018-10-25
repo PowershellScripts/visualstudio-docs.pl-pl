@@ -21,12 +21,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12c22b8ef7aa545e4256c8b122395a72508b94ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214763"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938386"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Wyzwalanie wstrzymania, wznowienia i zdarzeń w tle w aplikacjach Sklepu Windows w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Jeśli nie debugowania, Windows **Zarządzanie okresem istnienia procesu** (elem
   
  [Zadania w tle wyzwalacza](#BKMK_Trigger_background_tasks)  
   
--   [Wyzwalacz zdarzenia zadań tła, z sesji debugowania standardowe](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
+- [Wyzwalacz zdarzenia zadań tła, z sesji debugowania standardowe](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
   
--   [Wyzwalanie zadania w tle, gdy aplikacja nie jest uruchomiony.](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
+- [Wyzwalanie zadania w tle, gdy aplikacja nie jest uruchomiony.](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
   
- [Wyzwalaj zdarzenia Zarządzanie okresem istnienia procesu i zadania z zainstalowaną aplikację w tle](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
+  [Wyzwalaj zdarzenia Zarządzanie okresem istnienia procesu i zadania z zainstalowaną aplikację w tle](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
   
- [Diagnozowanie błędów aktywacji zadania w tle](#BKMK_Diagnosing_background_task_activation_errors)  
+  [Diagnozowanie błędów aktywacji zadania w tle](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Zdarzenia Zarządzanie okresem istnienia procesu wyzwalacza  
  Windows można wstrzymać aplikacji, gdy użytkownik zmienia się od jego lub Windows wejścia w stan niskiego zużycia energii. Może odpowiadać na `Suspending` zdarzeń, aby zapisać odpowiednie dane aplikacji i użytkownika do magazynu trwałego i zwolnić zasoby. Po wznowieniu aplikacji **zawieszone** stanu, wejdzie ona **systemem** stanu i jest kontynuowane od gdzie jaką miały w chwili zawieszenia. Może odpowiadać na `Resuming` zdarzenia w celu przywrócenia lub Odśwież stan aplikacji i odzyskać zasoby.  

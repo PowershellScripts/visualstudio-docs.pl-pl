@@ -9,12 +9,12 @@ description: Zarejestruj się otrzymać Subskrypcja magazynu MSDN Magazine zawar
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 65c1b2a37c11c70ab8cc8f67be21bc3ef9a35d60
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: e51a928e00d97b801d112d426a9ba414d1c44f04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073951"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941272"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Korzyść MSDN Magazine w subskrypcji programu Visual Studio
 
@@ -31,23 +31,24 @@ Wersja cyfrowa jest dostępne dla członków programu Visual Studio Dev Essentia
 2.  Znajdź Kafelek magazynu MSDN Magazine w sekcji Projektowanie Professional, a następnie kliknij przycisk **dostępu**.
 
 ### <a name="printed-edition"></a>Drukowane edition
-1.  Aby zacząć, odbierać z subskrypcji MSDN Magazine, zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-2.  Znajdź Kafelek magazynu MSDN Magazine w sekcji Projektowanie Professional, a następnie kliknij **Subskrybuj** na kafelku Subskrypcja magazynu MSDN Magazine. (Kliknij pozycję "!" w prawym dolnym rogu Kafelek, aby uzyskać dostęp wersja cyfrowa.)
-    > [!div class="mx-imgBorder"]
-    > ![MSDN Magazine korzyści kafelka](_img\vs-msdn\vs-msdn-tile.png)
+1. Aby zacząć, odbierać z subskrypcji MSDN Magazine, zaloguj się do [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+2. Znajdź Kafelek magazynu MSDN Magazine w sekcji Projektowanie Professional, a następnie kliknij **Subskrybuj** na kafelku Subskrypcja magazynu MSDN Magazine. (Kliknij pozycję "!" w prawym dolnym rogu Kafelek, aby uzyskać dostęp wersja cyfrowa.)
+   > [!div class="mx-imgBorder"]
+   > ![MSDN Magazine korzyści kafelka](_img/vs-msdn/vs-msdn-tile.png)
 
 
-3.  Na stronie magazynu MSDN Magazine wybierz typ preferowanych subskrypcji.  Możesz wybrać wersja cyfrowa bez dodatkowych opłat, niezależnie od miejsca zamieszkania.  Wersja drukowana jest dostępna bezpłatnie dla mieszkańcy USA.  Wysyłanie opłaty za drukowane wersje wysyłany na adresy-US.
-    > [!div class="mx-imgBorder"]
-    > ![MSDN Magazine korzyści z subskrypcji](_img\vs-msdn\vs-msdn-subs-page-resized.png)
+3. Na stronie magazynu MSDN Magazine wybierz typ preferowanych subskrypcji.  Możesz wybrać wersja cyfrowa bez dodatkowych opłat, niezależnie od miejsca zamieszkania.  Wersja drukowana jest dostępna bezpłatnie dla mieszkańcy USA.  Wysyłanie opłaty za drukowane wersje wysyłany na adresy-US.
+   > [!div class="mx-imgBorder"]
+   > ![MSDN Magazine korzyści z subskrypcji](_img/vs-msdn/vs-msdn-subs-page-resized.png)
 
-4.  Podaj żądane informacje kontaktowe, a następnie kliknij przycisk **przesyłania**.  (Wersja magazyn, które wybrano pojawia się w sekcji Subskrypcja magazynu.  Jeśli została wybrana opcja drukowanych edition, pierwsza opcja będzie odczytywał element **tak!  Chcę otrzymywać 1 rok (12 zagadnień) magazynu MSDN Magazine za darmo**.)
-    > [!div class="mx-imgBorder"]
-    > ![MSDN Magazine korzyści profilu](_img\vs-msdn\vs-msdn-profile.png)
+4. Podaj żądane informacje kontaktowe, a następnie kliknij przycisk **przesyłania**.  (Wersja magazyn, które wybrano pojawia się w sekcji Subskrypcja magazynu.  Jeśli została wybrana opcja drukowanych edition, pierwsza opcja będzie odczytywał element **tak!  Chcę otrzymywać 1 rok (12 zagadnień) magazynu MSDN Magazine za darmo**.)
+   > [!div class="mx-imgBorder"]
+   > ![MSDN Magazine korzyści profilu](_img/vs-msdn/vs-msdn-profile.png)
 
-5.  To wszystko jest do niego.  Zależności od instalowanej wersji magazynu została wybrana opcja albo zaczną odbieranie czasopisma drukowanych lub wiadomości e-mail wraz z łączami do najnowszej wersji online z następnej wersji.  Ciesz się!
+5. To wszystko jest do niego.  Zależności od instalowanej wersji magazynu została wybrana opcja albo zaczną odbieranie czasopisma drukowanych lub wiadomości e-mail wraz z łączami do najnowszej wersji online z następnej wersji.  Ciesz się!
 
 ## <a name="eligibility"></a>Uprawnienie
+
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> |Drukowane edition       |  Nie.  Dostępne tylko dla nowych subskrybentów          |

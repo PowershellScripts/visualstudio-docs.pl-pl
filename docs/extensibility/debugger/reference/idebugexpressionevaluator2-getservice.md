@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfde812730a5f9d2fbad3144cf4298472ec2f8c5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa07c11f6d7bc0cbbac2f55158012d7ce78a0e1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936696"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
-Pobiera obiekt usługi na podstawie jego unikatowy identyfikator.  
+Pobiera obiekt usługi, na podstawie jego unikatowy identyfikator.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,10 +48,10 @@ int GetService (
  [out] Zwraca obiekt, który reprezentuje usługę.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- To może być zużyte przez ewaluatora wyrażenia innych firm, można uzyskać usług z innego ewaluatora wyrażenia. Na przykład tej metody może zostać użyty do uzyskania interfejsu usługi wizualizatora z domyślnego ewaluatora wyrażenia. Ewaluatory wyrażeń innych firm prawdopodobnie nie muszą zawierać implementację tego interfejsu.  
+ To mogą być używane przez ewaluatora wyrażeń innych firm, można uzyskać usługi z innego Ewaluator wyrażeń. Na przykład tej metody może służyć do uzyskiwania interfejsu usługi Wizualizator z domyślną Ewaluator wyrażeń. Ewaluatory wyrażeń firm prawdopodobnie nie trzeba implementować ten interfejs.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

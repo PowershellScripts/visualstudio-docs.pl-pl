@@ -15,17 +15,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a79c073048fe30a4abed069487ad09943253475
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 20981c744408e8d25e6e851c39532db939c71b2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939961"
 ---
 # <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
 
 > [!Note]
-> PRZESTARZAŁE. NIE UŻYWAJ.
+> PRZESTARZAŁE. NIE NALEŻY UŻYWAĆ.
 
 ## <a name="syntax"></a>Składnia
 
@@ -48,7 +48,7 @@ Implementacja zawsze powinna zwrócić `E_NOTIMPL`.
 > [!WARNING]
 > Począwszy od programu Visual Studio 2005, ta metoda nie jest już używany i powinien zawsze zwracają `E_NOTIMPL`.
 
-Ta metoda jest wywoływana, gdy debuger jest nieoczekiwanie zamykany. Gdy ta metoda jest wywoływana, DE powinien wznowić program tak, jakby użytkownik odłączyć od niego. Powinny być przesyłane bez więcej zdarzeń debugowania. Program powinien być w stanie, w których jest możliwe do dołączenia z innego wystąpienia debugera.
+Ta metoda jest wywoływana, gdy debuger jest nieoczekiwanie zamykany. Gdy ta metoda jest wywoływana, DE powinna zostać wznowiona program, jak gdyby użytkownik jest odłączony od niego. Powinny być przesyłane bez więcej zdarzeń debugowania. Program, należy w stanie, gdy jest można dołączyć z innego wystąpienia debugera.
 
 ## <a name="see-also"></a>Zobacz też
 

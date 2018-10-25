@@ -32,85 +32,86 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 59b161c1f2dedd0b9c14f9949cfcc164f39b26ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 272fb5368b73e483bb7d2f44c475d5e4e7bfdfcc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950036"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933576"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opcje, edytor tekstu, XAML, formatowanie
-Użyj **formatowanie** strony właściwości, aby określić sposób formatowania elementów i atrybutów w dokumencie XAML. Aby otworzyć **opcje** okno dialogowe, kliknij przycisk **narzędzia** menu, a następnie kliknij przycisk **opcje**. Aby uzyskać dostęp do **formatowanie** właściwości rozwiń pozycję **Edytor tekstu**, **XAML**, **formatowanie** węzła.
+Użyj **formatowanie** stronę właściwości, aby określić, jak sformatowane elementów i atrybutów w dokumencie XAML. Aby otworzyć **opcje** okno dialogowe, kliknij przycisk **narzędzia** menu, a następnie kliknij przycisk **opcje**. Aby uzyskać dostęp do **formatowanie** właściwości rozwiń **edytora tekstów**, **XAML**, **formatowanie** węzła.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 
 ## <a name="auto-formatting-events"></a>Automatyczne formatowanie zdarzeń
- Automatyczne formatowanie może wystąpić, gdy dowolne z następujących zdarzeń wykryciu.
+ Automatyczne formatowanie może wystąpić, gdy dowolne z następujących zdarzeń wykryte.
 
--   Zakończenie tagu końcowego lub prostego.
+-   Uzupełnianie tagu końcowego lub prostego.
 
--   Zakończeniu tagu początkowego.
+-   Uzupełnianie tagu początkowego.
 
 -   Wklejanie ze Schowka.
 
--   Formatowanie polecenia klawiatury.
+-   Formatowanie klawiaturowych.
 
-Można określić zdarzenia, które powodują automatyczne formatowanie.
+Można określić, zdarzenia, które powodują automatyczne formatowanie.
 
 |||
 |-|-|
 |**Po zakończeniu tagu końcowego lub prostego**|Automatyczne formatowanie występuje po zakończeniu wpisywania tagu końcowego lub prostego tagu. Prostych tagów nie ma atrybutów, na przykład `<Button />`.|
 |**Po zakończeniu tagu początkowego**|Automatyczne formatowanie występuje po zakończeniu wpisywania tagu początkowego.|
-|**Po wklejeniu ze Schowka**|Automatyczne formatowanie występuje podczas wklejania XAML ze Schowka do widoku XAML.|
+|**Przy wklejaniu ze Schowka**|Automatyczne formatowanie występuje podczas wklejania XAML ze Schowka w widoku XAML.|
 
-## <a name="quotation-mark-style"></a>Styl znaku cudzysłowu
- To ustawienie wskazuje, czy wartości atrybutów są ujęte w cudzysłów pojedynczym lub podwójnym. Program formatujący automatycznie i automatycznego uzupełniania IntelliSense Użyj tego ustawienia.
+## <a name="quotation-mark-style"></a>Styl cudzysłowu
+ To ustawienie wskazuje, czy wartości atrybutów są ujęte w pojedyncze lub podwójne znaki cudzysłowu. Użyj tego ustawienia, element formatujący automatycznie i automatycznego uzupełniania IntelliSense.
 
  Po ustawieniu tej opcji tylko atrybuty później dodane przy użyciu narzędzia Projektant lub ręcznie w widoku XAML dotyczy problem.
 
 |||
 |-|-|
 |**Podwójny cudzysłów (")**|Wartości atrybutów są ujęte w cudzysłów.<br /><br /> `<Button Name="button1">Hello</Button>`|
-|**Pojedynczych cudzysłowów (')**|Wartości atrybutów są ujęte w apostrofy.<br /><br /> `<Button Name='button1'>Hello</Button>`|
+|**Pojedynczy cudzysłów (')**|Wartości atrybutów są ujęte w apostrofy.<br /><br /> `<Button Name='button1'>Hello</Button>`|
 
-## <a name="tag-wrapping"></a>Zawijanie taga
- Można podać długość wiersza zawijanie znacznika. Po włączeniu zawijanie tagów żadnych XAML dodane przy użyciu projektanta będzie odpowiednio zawijany.
-
-|||
-|-|-|
-|**Zawijaj tagi przekraczające określoną długość**|Określa, czy wiersze są ujęte w wierszu długości określonej przez **długość**.|
-|**długość**|Liczba znaków, które mogą zawierać wiersza. W razie potrzeby wiersze XAML może przekraczać długości określonej linii.|
-
-## <a name="attribute-spacing"></a>Odstępy atrybutów
- Użyj tego ustawienia, aby kontrolować sposób rozmieszczenia atrybutów w dokumencie XAML
+## <a name="tag-wrapping"></a>Zawijanie tagów
+ Można określić długość wiersza zawijanie tagów. Po włączeniu zawijanie tagów XAML, wszystkie dodane przy użyciu narzędzia Projektant zostanie zawinięta odpowiednio.
 
 |||
 |-|-|
-|**Zachowaj newlines i spacji między atrybutami**|Nowe wiersze i spacji między atrybutami nie dotyczy automatyczne formatowanie.<br /><br /> `<Button Height="23"   Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
-|**Wstaw odstęp między atrybutami**|Atrybuty zajmują jeden wiersz z jednego miejsca oddzielanie atrybuty sąsiadujących ze sobą. Ustawienia zawijania tagów są stosowane.<br /><br /> `<Button Height="23" Name="button1" Width="75">Hello</Button>`|
-|**Umieść każdy atrybut w osobnym wierszu**|Każdy atrybut zajmuje w osobnym wierszu. Jest to przydatne, gdy wiele atrybutów są obecne.<br /><br /> `<Button`<br /><br /> `Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
-|**Pozycja pierwszego atrybutu w tym samym wierszu co tag początkowy**|Po zaznaczeniu tej opcji, zostanie wyświetlony pierwszy atrybut w tym samym wierszu co tag początkowy elementu.<br /><br /> `<Button Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
+|**Zawijaj tagi przekraczające określoną długość**|Określa, czy wiersze są opakowane w określonej przez długość wiersza **długość**.|
+|**Długość**|Liczba znaków, które mogą zawierać wiersz. Jeśli to konieczne, niektóre linie XAML może przekraczać długości określonej linii.|
 
-## <a name="element-spacing"></a>Odstępy elementów
+## <a name="attribute-spacing"></a>Odstępy między atrybutami
+ To ustawienie służy do kontrolowania, jak atrybuty są rozmieszczone w dokumencie XAML
+
+|||
+|-|-|
+|**Zachowaj tabulacji i spacje między atrybutami**|Nowe wiersze i spacje między atrybutami nie dotyczy automatyczne formatowanie.<br /><br /> `<Button Height="23"   Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
+|**Wstaw odstęp między atrybutami**|Atrybuty zajmują jeden wiersz z jednego miejsca oddzielenie sąsiadujących atrybutów. Ustawienia zawijania tag są stosowane.<br /><br /> `<Button Height="23" Name="button1" Width="75">Hello</Button>`|
+|**Umieść każdy atrybut w osobnym wierszu**|Każdy atrybut zajmuje swój własny wiersz. Jest to przydatne, jeśli podano wiele atrybutów.<br /><br /> `<Button`<br /><br /> `Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
+|**Pozycja pierwszego atrybutu w tym samym wierszu co tag początkowy**|Po zaznaczeniu tej opcji, w tym samym wierszu co tag początkowy element pojawi się pierwszy atrybut.<br /><br /> `<Button Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|
+
+## <a name="element-spacing"></a>Odstępy między elementami
  Użyj tego ustawienia, aby kontrolować sposób rozmieszczenia elementów w dokumencie XAML
 
-|||
-|-|-|
-|**Zachowaj nowe wiersze w zawartości**|Puste wiersze w zawartości elementu nie są usuwane.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**Zwiń wiele puste wiersze w zawartości do jednej linii**|Puste wiersze w zawartości elementu są zwijane do jednego wiersza.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**Usuń puste wiersze w zawartości**|Zostaną usunięte wszystkie puste wiersze w zawartości elementu.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|
+
+| | |
+| - | - |
+| **Zachowaj nowe wiersze w zawartości** | Puste wiersze w zawartości elementu nie są usuwane.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>\` |
+| **Zwiń wiele puste wiersze w zawartości w jeden wiersz** | Puste wiersze w zawartości elementu są zwinięte do pojedynczego wiersza.<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>` |
+| **Usuń puste wiersze w zawartości** | Wszystkie puste wiersze w zawartości elementu są usuwane.<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>` |
 
 ## <a name="miscellaneous-section-auto-insert"></a>Różne części, automatyczne wstawianie
  To ustawienie służy do kontrolowania, kiedy tagów i cudzysłowy są generowane automatycznie.
 
 |||
 |-|-|
-|**Zamykanie tagów**|Określa, czy tagu zamykającego element jest generowany automatycznie podczas zamykania otwierający tag o większej niż znaku (>).|
-|**Cudzysłowy atrybutu**|Określa, czy otaczającego cudzysłowy są generowane w przypadku wybrania wartości atrybutu z listy rozwijanej uzupełniania instrukcji.|
-|**Klamrowe nawiasy zamykające do wyrażenia MarkupExtension**|Określa, czy rozszerzenie znacznika zamykającego nawiasu (}) jest generowana automatycznie po wpisaniu otwarcia nawiasy znak ({}).|
-|**Oddzielać parametry wyrażeń MarkupExtension**|Określa, czy przecinkami są generowane po wpisaniu więcej niż jeden parametr w rozszerzeniu znaczników.|
+|**Taga zamykającego**|Określa, czy tag zamykający elementu jest generowana automatycznie, gdy zamkniesz otwierający tag o rozmiarze większym niż znak większości (>).|
+|**Cudzysłowy atrybutu**|Określa, czy otaczającej cudzysłowy są generowane w przypadku wybrania wartości atrybutu z listy rozwijanej uzupełniania instrukcji.|
+|**Zamykające nawiasy klamrowe dla wyrażeń MarkupExtension**|Określa, czy jako rozszerzenie znacznika zamykającego nawiasu klamrowego (}) jest generowany automatycznie po wpisaniu otwierający nawias klamrowy znak ({}).|
+|**Przecinków do oddzielenia parametry wyrażeń MarkupExtension**|Określa, czy przecinkami są generowane, gdy więcej niż jeden parametr jest typu rozszerzenia znaczników.|
 
 ## <a name="see-also"></a>Zobacz także
 

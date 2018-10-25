@@ -14,25 +14,25 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 37d47adff9bf8bc364e1972a6ab588a3591c120b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6172188fb7d06122cdcc178889b2a5b37ca1bb0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203271"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933550"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8. Wpisywanie kodu dla obsługi zdarzeń pokazywania przycisków obrazowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym kroku wprowadzisz **Pokaż obraz** przycisk pracował jak to:  
   
--   Gdy użytkownik wybierze ten przycisk, program otworzy **Otwórz plik** okno dialogowe.  
+- Gdy użytkownik wybierze ten przycisk, program otworzy **Otwórz plik** okno dialogowe.  
   
--   Jeśli użytkownik otworzy plik obrazu, spowoduje wyświetlenie tego obrazu w elemencie PictureBox.  
+- Jeśli użytkownik otworzy plik obrazu, spowoduje wyświetlenie tego obrazu w elemencie PictureBox.  
   
- IDE ma potężne narzędzie o nazwie IntelliSense, które ułatwia pisanie kodu. Gdy wprowadzasz kod, IDE otwiera pole z sugerowanymi uzupełnieniami częściowych wyrazów, które należy wprowadzić. Próbuje określić, co chcesz zrobić dalej i automatycznie przechodzi do ostatniego elementu wybranego z listy. Można użyć w górę lub strzałkę w dół, aby przenieść na liście, lub możesz wpisywać litery, aby ograniczyć zakres wyboru. Po wyświetleniu wyboru, który chcesz wybrać klawisz TAB, aby go zaznaczyć. Lub możesz zignorować sugestie, jeśli nie są potrzebne.  
+  IDE ma potężne narzędzie o nazwie IntelliSense, które ułatwia pisanie kodu. Gdy wprowadzasz kod, IDE otwiera pole z sugerowanymi uzupełnieniami częściowych wyrazów, które należy wprowadzić. Próbuje określić, co chcesz zrobić dalej i automatycznie przechodzi do ostatniego elementu wybranego z listy. Można użyć w górę lub strzałkę w dół, aby przenieść na liście, lub możesz wpisywać litery, aby ograniczyć zakres wyboru. Po wyświetleniu wyboru, który chcesz wybrać klawisz TAB, aby go zaznaczyć. Lub możesz zignorować sugestie, jeśli nie są potrzebne.  
   
- ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: tworzenie przeglądarki obrazów w Visual Basic – wideo 4](http://go.microsoft.com/fwlink/?LinkId=205215) lub [samouczek 1: tworzenie przeglądarki obrazów w języku C# - Film wideo 4](http://go.microsoft.com/fwlink/?LinkId=205203). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
+  ![Link do wideo](../data-tools/media/playvideo.gif "PlayVideo")wersja wideo tego tematu, zobacz [samouczek 1: tworzenie przeglądarki obrazów w Visual Basic – wideo 4](http://go.microsoft.com/fwlink/?LinkId=205215) lub [samouczek 1: tworzenie przeglądarki obrazów w języku C# - Film wideo 4](http://go.microsoft.com/fwlink/?LinkId=205203). W tych filmach wideo użyj wcześniejszej wersji programu Visual Studio, więc istnieją drobne różnice w niektórych poleceniach menu i innych elementach interfejsu użytkownika. Jednakże pojęcia i procedury działają podobnie w bieżącej wersji programu Visual Studio.  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Aby napisać kod dla programu obsługi zdarzeń przycisku obrazu  
   

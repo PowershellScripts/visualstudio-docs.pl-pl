@@ -3,23 +3,23 @@ layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
-title: Użyj narzędzia danych w programie Visual Studio umożliwiające tworzenie rozwiązań danych
-description: Więcej informacji na temat narzędzia do rozwiązania danych w programie Visual Studio.
+title: Użyj narzędzia danych w programie Visual Studio do opracowywania rozwiązań danych
+description: Dowiedz się więcej o narzędziach dla rozwiązań danych w programie Visual Studio.
 ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 87a928f1d987d496bee40c4236f53b5e14cb034d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bb2a5c33f0cdfe75f6e2bf6713ab92e36b588986
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948411"
 ---
-# <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Użyj narzędzia danych w programie Visual Studio umożliwiające tworzenie rozwiązań danych
+# <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Użyj narzędzia danych w programie Visual Studio do opracowywania rozwiązań danych
 
-Dowiedz się, jak za pomocą narzędzi danych programu Visual Studio umożliwiające opracowanie i przetestowanie rozwiązania danych przy użyciu programu SQL Server, usługi Azure Data Lake lub Hadoop.
+Dowiedz się, jak używać narzędzi danych w programie Visual Studio umożliwia projektowanie i testowanie rozwiązań danych przy użyciu programu SQL Server, usługa Azure Data Lake lub usługi Hadoop.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -33,7 +33,7 @@ Dowiedz się, jak za pomocą narzędzi danych programu Visual Studio umożliwiaj
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Dowiedz się więcej o programie Visual Studio i narzędzi programu .NET Framework i interfejs API obsługuje umożliwiający projektowanie aplikacji danych</h3>
+                        <h3>Dowiedz się więcej o programie Visual Studio i .NET Framework&#39;s narzędzi i interfejsów API obsługę tworzenia aplikacji danych</h3>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,7 @@ Dowiedz się, jak za pomocą narzędzi danych programu Visual Studio umożliwiaj
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Więcej informacji na temat projektowania, wdrażania i konserwowania baz danych programu SQL Server Data Tools</h3>
+                        <h3>Więcej informacji na temat projektowania, wdrażania i utrzymywania baz danych przy użyciu programu SQL Server Data Tools</h3>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@ Dowiedz się, jak za pomocą narzędzi danych programu Visual Studio umożliwiaj
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Dowiedz się więcej o tworzeniu aplikacji Big Data U-SQL i .NET przy użyciu usługi Azure Data Lake</h3>
+                        <h3>Informacje na temat tworzenia aplikacji danych Big Data przy użyciu języka U-SQL i .NET, przy użyciu usługi Azure Data Lake</h3>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@ Dowiedz się, jak za pomocą narzędzi danych programu Visual Studio umożliwiaj
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Więcej informacji na temat tworzenia rozwiązania typu big data w czasie niemal rzeczywistym z analiza strumienia Azure</h3>
+                        <h3>Informacje na temat tworzenia rozwiązania typu big data niemal w czasie rzeczywistym za pomocą usługi Azure Stream Analytics</h3>
                     </div>
                 </div>
             </div>

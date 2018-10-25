@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933433"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Zastępowanie i rozszerzanie wygenerowanych klas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ Definicji DSL jest platformy, na której można budować z zaawansowanego zestaw
   
  Na przykład, na przykład Library.dsl `CirculationBook` klasa domeny ma `Generates``Double Derived` właściwością `true`. Kod generowany dla tej klasy domeny zawiera dwie klasy:  
   
--   `CirculationBookBase`, która jest abstrakcyjny i który zawiera wszystkie metody i właściwości.  
+- `CirculationBookBase`, która jest abstrakcyjny i który zawiera wszystkie metody i właściwości.  
   
--   `CirculationBook`, który pochodzi od `CirculationBookBase`. Jest pusta, z wyjątkiem jego konstruktorów.  
+- `CirculationBook`, który pochodzi od `CirculationBookBase`. Jest pusta, z wyjątkiem jego konstruktorów.  
   
- Aby zastąpić dowolną metodę, tworzysz częściową definicję klasy pochodnej, takich jak `CirculationBook`. Można zastąpić wygenerowane metody i metod odziedziczone framework modelowania.  
+  Aby zastąpić dowolną metodę, tworzysz częściową definicję klasy pochodnej, takich jak `CirculationBook`. Można zastąpić wygenerowane metody i metod odziedziczone framework modelowania.  
   
- Metoda ta jest przydatna ze wszystkimi typami elementu, w tym elementy modelu, relacje, kształty, diagramy i łączniki. Można również zastąpić metod innych wygenerowanych klas. Niektóre generowane klasy, takie jak ToolboxHelper są zawsze pochodzi podwójnej precyzji.  
+  Metoda ta jest przydatna ze wszystkimi typami elementu, w tym elementy modelu, relacje, kształty, diagramy i łączniki. Można również zastąpić metod innych wygenerowanych klas. Niektóre generowane klasy, takie jak ToolboxHelper są zawsze pochodzi podwójnej precyzji.  
   
 ### <a name="custom-constructors"></a>Konstruktory niestandardowe  
  Nie można zastąpić konstruktora. Nawet w przypadku klas pochodnych podwójnej precyzji Konstruktor musi być w klasie pochodnej.  

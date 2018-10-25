@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 160609032a4118c0a15abe88115971f267b90f4c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928818"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Word
   Ten Przewodnik wprowadzający dowiesz się, jak utworzyć dostosowywania poziomie dokumentu dla programu Microsoft Office Word. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne tylko wtedy, gdy określony dokument jest otwarty. Nie możesz użyć dostosowywania poziomie dokumentu do zmiany całej aplikacji, na przykład wyświetlanie Nowa karta wstążki, gdy dowolny dokument jest otwarty.  
@@ -31,17 +31,17 @@ ms.locfileid: "38778110"
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Tworzenie projektu dokumentu programu Word.  
+- Tworzenie projektu dokumentu programu Word.  
   
--   Dodawanie tekstu do dokumentu, który znajduje się w Projektancie Visual Studio.  
+- Dodawanie tekstu do dokumentu, który znajduje się w Projektancie Visual Studio.  
   
--   Pisanie kodu, który używa modelu obiektów programu Word do dodawania tekstu dostosowany dokument po jego otwarciu.  
+- Pisanie kodu, który używa modelu obiektów programu Word do dodawania tekstu dostosowany dokument po jego otwarciu.  
   
--   Tworzenie i uruchamianie projektu, aby ją przetestować.  
+- Tworzenie i uruchamianie projektu, aby ją przetestować.  
   
--   Czyszczenie projektu, aby usunąć z komputera dewelopera kompilacji niepotrzebne pliki i ustawienia zabezpieczeń.  
+- Czyszczenie projektu, aby usunąć z komputera dewelopera kompilacji niepotrzebne pliki i ustawienia zabezpieczeń.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  

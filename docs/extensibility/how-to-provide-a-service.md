@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbad09a19aeaf297505de215566b14df067c760a
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2408eace3ecea447c9b49ff17c729e3f4661b5d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639591"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942559"
 ---
 # <a name="how-to-provide-a-service"></a>Porady: świadczenia usług
 Pakietu VSPackage oferuje usługi, które można użyć innych pakietów VSPackage. Do świadczenia usług, pakietu VSPackage należy zarejestrować usługę za pomocą programu Visual Studio, a następnie Dodaj usługę.  
@@ -32,50 +32,50 @@ Pakietu VSPackage oferuje usługi, które można użyć innych pakietów VSPacka
   
 ## <a name="implement-a-service"></a>Implementowanie usługi  
   
-1.  Utwórz projekt VSIX (**pliku** > **New** > **projektu** > **Visual C#**  >  **Rozszerzalności** > **projekt VSIX**).  
+1. Utwórz projekt VSIX (**pliku** > **New** > **projektu** > **Visual C#**  >  **Rozszerzalności** > **projekt VSIX**).  
   
-2.  Dodanie pakietu VSPackage do projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań** i kliknij przycisk **Dodaj** > **nowy element** > **elementy Visual C#**  >  **Rozszerzalności** > **pakietu Visual Studio**.  
+2. Dodanie pakietu VSPackage do projektu. Wybierz węzeł projektu w **Eksploratora rozwiązań** i kliknij przycisk **Dodaj** > **nowy element** > **elementy Visual C#**  >  **Rozszerzalności** > **pakietu Visual Studio**.  
   
-3.  Aby wdrożyć usługi, musisz utworzyć trzy typy:  
+3. Aby wdrożyć usługi, musisz utworzyć trzy typy:  
   
-    -   Interfejs, który zawiera opis usługi. Wiele z tych interfejsów są puste, oznacza to, ponieważ mają one żadnych metod.  
+   - Interfejs, który zawiera opis usługi. Wiele z tych interfejsów są puste, oznacza to, ponieważ mają one żadnych metod.  
   
-    -   Interfejs, który opisuje interfejs usługi. Ten interfejs zawiera metody do zaimplementowania.  
+   - Interfejs, który opisuje interfejs usługi. Ten interfejs zawiera metody do zaimplementowania.  
   
-    -   Klasa, która implementuje interfejs usługi i usługi.  
+   - Klasa, która implementuje interfejs usługi i usługi.  
   
      Poniższy przykład pokazuje podstawową implementację trzy typy. Konstruktor klasy usługi należy ustawić dostawcę usług.  
   
-    ```csharp  
-    public class MyService : SMyService, IMyService  
-    {  
-        private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
-        private string myString;  
-        public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
-        {  
-            Trace.WriteLine(  
-                   "Constructing a new instance of MyService");  
-            serviceProvider = sp;  
-        }  
-        public void Hello()  
-        {  
-            myString = "hello";  
-        }  
-        public string Goodbye()  
-        {  
-           return "goodbye";  
-        }  
-    }  
-    public interface SMyService  
-    {  
-    }  
-    public interface IMyService  
-    {  
-        void Hello();  
-        string Goodbye();  
-    }  
+   ```csharp  
+   public class MyService : SMyService, IMyService  
+   {  
+       private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
+       private string myString;  
+       public MyService(Microsoft.VisualStudio.OLE.Interop.IServiceProvider sp)  
+       {  
+           Trace.WriteLine(  
+                  "Constructing a new instance of MyService");  
+           serviceProvider = sp;  
+       }  
+       public void Hello()  
+       {  
+           myString = "hello";  
+       }  
+       public string Goodbye()  
+       {  
+          return "goodbye";  
+       }  
+   }  
+   public interface SMyService  
+   {  
+   }  
+   public interface IMyService  
+   {  
+       void Hello();  
+       string Goodbye();  
+   }  
   
-    ```  
+   ```  
   
 ### <a name="register-a-service"></a>Zarejestruj usługę  
   

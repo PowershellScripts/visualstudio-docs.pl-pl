@@ -17,12 +17,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52f9c4ffef27b7b17bbcb75d734b4d0b7e41a3ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a57f84901f2ac6bc691c50fa6d1e3c8b94db6c50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939909"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;pole&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,44 +52,44 @@ Określa informacje w dokumentacji, w tym opis, pola lub elementu członkowskieg
  `type`  
  Opcjonalna. Typ danych pola. Typ może być jednym z następujących czynności:  
   
--   Wpisz w specyfikacji ECMAScript 5, takie jak z językiem ECMAScript `Number` i `Object`.  
+- Wpisz w specyfikacji ECMAScript 5, takie jak z językiem ECMAScript `Number` i `Object`.  
   
--   Obiekt modelu DOM, takich jak `HTMLElement`, `Window`, i `Document`.  
+- Obiekt modelu DOM, takich jak `HTMLElement`, `Window`, i `Document`.  
   
--   Funkcja konstruktora języka JavaScript.  
+- Funkcja konstruktora języka JavaScript.  
   
- `integer`  
- Opcjonalna. Jeśli `type` jest `Number`, określa, czy pole jest liczbą całkowitą. Ustaw `true` do wskazania, że pole jest liczba całkowita; w przeciwnym wypadku ustaw `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
+  `integer`  
+  Opcjonalna. Jeśli `type` jest `Number`, określa, czy pole jest liczbą całkowitą. Ustaw `true` do wskazania, że pole jest liczba całkowita; w przeciwnym wypadku ustaw `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
   
- `domElement`  
- Opcjonalna. Ten atrybut jest przestarzała; `type` atrybut mają pierwszeństwo przed tego atrybutu. Ten atrybut określa, czy pole udokumentowanego jest DOM element. Ustaw `true` do określenia, że pole jest element DOM w LICZBIE; w przeciwnym wypadku ustaw `false`. Jeśli `type` atrybut nie jest ustawiony i `domElement` ustawiono `true`, IntelliSense traktuje udokumentowanego pola jako `HTMLElement` podczas wykonywania instrukcji.  
+  `domElement`  
+  Opcjonalna. Ten atrybut jest przestarzała; `type` atrybut mają pierwszeństwo przed tego atrybutu. Ten atrybut określa, czy pole udokumentowanego jest DOM element. Ustaw `true` do określenia, że pole jest element DOM w LICZBIE; w przeciwnym wypadku ustaw `false`. Jeśli `type` atrybut nie jest ustawiony i `domElement` ustawiono `true`, IntelliSense traktuje udokumentowanego pola jako `HTMLElement` podczas wykonywania instrukcji.  
   
- `mayBeNull`  
- Opcjonalna. Określa, czy udokumentowanego pole można ustawić na wartość null. Ustaw `true` aby wskazać, że pole można ustawić na wartość null; w przeciwnym razie, należy ustawić na `false`. Wartość domyślna to `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
+  `mayBeNull`  
+  Opcjonalna. Określa, czy udokumentowanego pole można ustawić na wartość null. Ustaw `true` aby wskazać, że pole można ustawić na wartość null; w przeciwnym razie, należy ustawić na `false`. Wartość domyślna to `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
   
- `elementType`  
- Opcjonalna. Jeśli `type` jest `Array`, ten atrybut określa typ elementów w tablicy.  
+  `elementType`  
+  Opcjonalna. Jeśli `type` jest `Array`, ten atrybut określa typ elementów w tablicy.  
   
- `elementInteger`  
- Opcjonalna. Jeśli `type` jest `Array` i `elementType` jest `Number`, ten atrybut określa, czy elementy w tablicy są liczbami całkowitymi. Ustaw `true` do wskazania elementów w tablicy są liczbami całkowitymi; w przeciwnym wypadku ustaw `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
+  `elementInteger`  
+  Opcjonalna. Jeśli `type` jest `Array` i `elementType` jest `Number`, ten atrybut określa, czy elementy w tablicy są liczbami całkowitymi. Ustaw `true` do wskazania elementów w tablicy są liczbami całkowitymi; w przeciwnym wypadku ustaw `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
   
- `elementDomElement`  
- Opcjonalna. Ten atrybut jest przestarzała; `elementType` atrybut mają pierwszeństwo przed tego atrybutu. Jeśli `type` jest `Array`, ten atrybut określa, czy elementy w tablicy elementów DOM w LICZBIE. Ustaw `true` określić elementy są elementów DOM; w przeciwnym wypadku ustaw `false`. Jeśli `elementType` atrybut nie jest ustawiony i `elementDomElement` ustawiono `true`, IntelliSense traktuje każdy element w tablicy jako `HTMLElement` podczas wykonywania instrukcji.  
+  `elementDomElement`  
+  Opcjonalna. Ten atrybut jest przestarzała; `elementType` atrybut mają pierwszeństwo przed tego atrybutu. Jeśli `type` jest `Array`, ten atrybut określa, czy elementy w tablicy elementów DOM w LICZBIE. Ustaw `true` określić elementy są elementów DOM; w przeciwnym wypadku ustaw `false`. Jeśli `elementType` atrybut nie jest ustawiony i `elementDomElement` ustawiono `true`, IntelliSense traktuje każdy element w tablicy jako `HTMLElement` podczas wykonywania instrukcji.  
   
- `elementMayBeNull`  
- Opcjonalna. Jeśli `type` jest `Array`, określa, czy elementy w tablicy może być ustawiona na wartość null. Ustaw `true` aby wskazać, że elementy w tablicy można ustawić na wartość null; w przeciwnym razie, należy ustawić na `false`. Wartość domyślna to `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
+  `elementMayBeNull`  
+  Opcjonalna. Jeśli `type` jest `Array`, określa, czy elementy w tablicy może być ustawiona na wartość null. Ustaw `true` aby wskazać, że elementy w tablicy można ustawić na wartość null; w przeciwnym razie, należy ustawić na `false`. Wartość domyślna to `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
   
- `helpKeyword`  
- Opcjonalna. Słowo kluczowe dla pomocy F1.  
+  `helpKeyword`  
+  Opcjonalna. Słowo kluczowe dla pomocy F1.  
   
- `locid`  
- Opcjonalna. Identyfikator informacji o lokalizacji na temat pola. Identyfikator jest albo identyfikatorem elementu członkowskiego albo odpowiada wartości atrybutu `name` w wiązce wiadomości zdefiniowanej przez metadane OpenAjax. Identyfikator typu zależy od formatu określonego w [ \<lokalizacja >](../ide/loc-javascript.md) tagu.  
+  `locid`  
+  Opcjonalna. Identyfikator informacji o lokalizacji na temat pola. Identyfikator jest albo identyfikatorem elementu członkowskiego albo odpowiada wartości atrybutu `name` w wiązce wiadomości zdefiniowanej przez metadane OpenAjax. Identyfikator typu zależy od formatu określonego w [ \<lokalizacja >](../ide/loc-javascript.md) tagu.  
   
- `value`  
- Opcjonalna. Określa kod, który ma zostać obliczona dla użycia przez funkcję IntelliSense zamiast sam kod funkcji. Aby uzyskać `<field>`, ten atrybut jest obsługiwana w przypadku funkcji konstruktora, ale nie jest obsługiwana dla literałów obiektu. Możesz użyć tego atrybutu jest zapewnienie informacji o typie, gdy zdefiniowano typ pola. Na przykład, można użyć `value=’1’` traktowanie typ pola jako liczby.  
+  `value`  
+  Opcjonalna. Określa kod, który ma zostać obliczona dla użycia przez funkcję IntelliSense zamiast sam kod funkcji. Aby uzyskać `<field>`, ten atrybut jest obsługiwana w przypadku funkcji konstruktora, ale nie jest obsługiwana dla literałów obiektu. Możesz użyć tego atrybutu jest zapewnienie informacji o typie, gdy zdefiniowano typ pola. Na przykład, można użyć `value=’1’` traktowanie typ pola jako liczby.  
   
- `description`  
- Opcjonalna. Opis pola.  
+  `description`  
+  Opcjonalna. Opis pola.  
   
 ## <a name="remarks"></a>Uwagi  
  `name` Atrybut jest wymagany, gdy masz dokumentowanie pola w funkcji konstruktora. W innych sytuacjach, wszystkie atrybuty dla `<field>` elementu są opcjonalne.  

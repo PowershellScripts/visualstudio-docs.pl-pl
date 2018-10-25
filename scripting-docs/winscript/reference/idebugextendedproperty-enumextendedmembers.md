@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81b1cbb9b36d7ae237551aad2677f9480c615b88
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 400145cf3981b7266a796f66576eb12f979d2750
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794284"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949842"
 ---
 # <a name="idebugextendedpropertyenumextendedmembers"></a>IDebugExtendedProperty::EnumExtendedMembers
-Wylicza członkami właściwości rozszerzonej.  
+Wylicza członkowie właściwości rozszerzonej.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,18 +40,18 @@ HRESULT EnumExtendedMembers(
   
 #### <a name="parameters"></a>Parametry  
  `dwFieldSpec`  
- [in] Określa, że mają zostać wypełnione stałe EX_DBGPROP_INFO_FLAGS, które określają, że pola wyliczany rozszerzony struktury właściwości debugowania.  
+ [in] Określa, że stałe EX_DBGPROP_INFO_FLAGS, które określają, że pola w wyliczany rozszerzony struktury właściwości debugowania mają być wypełnione.  
   
  `nRadix`  
- [in] Podstawa ma być używana podczas interpretacji wszelkie informacje numeryczne.  
+ [in] Podstawy do użycia w interpretacji wszelkie dane liczbowe.  
   
  `ppeepi`  
- [out] Zwraca `IEnumDebugExtendedPropertyInfo` interfejsu, który wylicza właściwości elementów członkowskich.  
+ [out] Zwraca `IEnumDebugExtendedPropertyInfo` interfejs, który wylicza właściwości elementu członkowskiego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zwykle `S_OK`.  
+ Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)   
  [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
- [Struktura ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)
+ [ExtendedDebugPropertyInfo, struktura](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

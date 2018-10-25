@@ -15,17 +15,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e77acd4091abd7da5c9d302fb4c4dd6eb66af379
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ea09304d4481ed649f24985b3cabb2a6b1944311
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122993"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941636"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 
 > [!Note]
-> PRZESTARZAŁE. NIE UŻYWAJ.
+> PRZESTARZAŁE. NIE NALEŻY UŻYWAĆ.
 
 ## <a name="syntax"></a>Składnia
 
@@ -47,11 +47,11 @@ int Attach_V7 (
 
 #### <a name="parameters"></a>Parametry
 
-`pMDMProgram` [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfejs, który reprezentuje program można dołączyć do.
+`pMDMProgram` [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interfejs, który reprezentuje program, który można dołączyć do.
 
  `pCallback` [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) interfejs służący do wysyłania zdarzeń debugowania do SDM.
 
- `dwReason` [in] Wartość z zakresu od [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) wyliczenie określający przyczynę dołączania.
+ `dwReason` [in] Wartość z zakresu od [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) wyliczenie, które określa przyczynę dołączania.
 
 ## <a name="return-value"></a>Wartość zwracana
 
@@ -60,15 +60,15 @@ Implementacja zawsze powinna zwrócić `E_NOTIMPL`.
 ## <a name="remarks"></a>Uwagi
 
 > [!WARNING]
-> Począwszy od programu Visual Studio 2005, ta metoda nie jest już używany i powinien zawsze zwracają `E_NOTIMPL`. Zobacz [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interfejs dla o innym podejściu, jeśli węzeł program musi wskazywać, nie można dołączyć do lub węzeł program po prostu ustawia program `GUID`. W przeciwnym razie zaimplementować [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) metody.
+> Począwszy od programu Visual Studio 2005, ta metoda nie jest już używany i powinien zawsze zwracają `E_NOTIMPL`. Zobacz [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interfejs dla alternatywne podejście, jeśli węzeł program musi wskazywać, nie można dołączyć do lub węzeł program po prostu ustawia program `GUID`. W przeciwnym razie zaimplementować [Dołącz](../../../extensibility/debugger/reference/idebugengine2-attach.md) metody.
 
-## <a name="prior-to-visual-studio-2005"></a>Przed programu Visual Studio 2005
+## <a name="prior-to-visual-studio-2005"></a>Przed Visual Studio 2005
 
-Ta metoda musi być zaimplementowany tylko wtedy, gdy DE działa w przestrzeni adresowej debugowanego programu. W przeciwnym razie ta metoda powinna zwrócić `S_FALSE`.
+Ta metoda musi zaimplementować tylko wtedy, gdy DE działa w przestrzeni adresowej debugowanego programu. W przeciwnym razie ta metoda powinna zwracać `S_FALSE`.
 
-Gdy ta metoda jest wywoływana, DE musi wysłać [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) obiektu zdarzenia, jeśli go nie ma już wysłane dla tego wystąpienia [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interfejsu, jak również [ IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) i [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) obiektów zdarzeń. [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) zdarzenia obiektu jest następnie wysyłana, jeśli `dwReason` parametr jest `ATTACH_REASON_LAUNCH`.
+Gdy ta metoda jest wywoływana, DE musi wysłać [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) obiektu zdarzenia, jeśli go nie ma już wysłane dla tego wystąpienia [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interfejsu, jak również [ IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) i [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md) obiekty zdarzeń. [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) obiektu zdarzenia jest następnie wysyłana, gdy `dwReason` parametr `ATTACH_REASON_LAUNCH`.
 
-Niemcy należy wywołać [GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) metoda [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) dostarczony przez obiekt [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) zdarzeń obiektu i identyfikator GUID tego programu muszą zostać zapisane w danych wystąpienia `IDebugProgram2` implementowane przez DE obiektu.
+DE musi wywołać [GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) metody [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) dostarczonych przez obiekt [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md) zdarzenia obiektu, a musi być przechowywany identyfikator GUID tego programu w danych wystąpienia dla `IDebugProgram2` implementowany przez DE obiektu.
 
 ## <a name="see-also"></a>Zobacz też
 

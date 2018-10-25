@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a972d529b93445c1c66e9418b7d8f3e068b005c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 73a50b3daf77fdd1a1e0a058bd64ddd068467c2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932991"
 ---
 # <a name="lines-view---sampling-data"></a>Widok linii — dane próbkowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,21 +33,21 @@ Uruchom wiersze widok pobierania próbek danych zawiera dane o wydajności dla i
   
  W pliku źródłowym instrukcji może obejmować więcej niż jeden wiersz w pliku źródłowym, a jeden wiersz może zawierać więcej niż jedną instrukcję. Instrukcja jest identyfikowane przez następujące elementy:  
   
--   Plik źródłowy, który zawiera deklarację funkcji.  
+- Plik źródłowy, który zawiera deklarację funkcji.  
   
--   Funkcja, która zawiera instrukcję.  
+- Funkcja, która zawiera instrukcję.  
   
--   Wiersza źródłowego, od której rozpoczyna się wykonywanie instrukcji.  
+- Wiersza źródłowego, od której rozpoczyna się wykonywanie instrukcji.  
   
--   Znak w wierszu źródłowym, w którym rozpoczyna się wykonywanie instrukcji.  
+- Znak w wierszu źródłowym, w którym rozpoczyna się wykonywanie instrukcji.  
   
--   Wiersza źródłowego, w którym kończy się instrukcji.  
+- Wiersza źródłowego, w którym kończy się instrukcji.  
   
--   Znak w wierszu źródłowym, w którym kończy się instrukcji.  
+- Znak w wierszu źródłowym, w którym kończy się instrukcji.  
   
- Kolumna Nazwa wiersza zawiera wzorzec sortowalnej łączenia danych identyfikator.  
+  Kolumna Nazwa wiersza zawiera wzorzec sortowalnej łączenia danych identyfikator.  
   
- Zgodnie z definicją instrukcja wywołuje inne funkcje. W związku z tym są wyświetlane tylko wyłączne wartości.  
+  Zgodnie z definicją instrukcja wywołuje inne funkcje. W związku z tym są wyświetlane tylko wyłączne wartości.  
   
 |Kolumny|Opis|  
 |------------|-----------------|  

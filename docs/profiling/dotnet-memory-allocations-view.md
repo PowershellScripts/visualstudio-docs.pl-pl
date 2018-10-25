@@ -1,5 +1,5 @@
 ---
-title: Widok alokacji pamięci .NET | Dokumentacja firmy Microsoft
+title: Widok alokacji pamięci platformy .NET | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,44 +17,44 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bda60d1e18f18d602f95d1eafb5843811cdc5f24
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b7a473a7c6758fe58c82f8894822d3a250165a43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933680"
 ---
 # <a name="net-memory-allocations-view"></a>.NET Widok alokacji pamięci
-Widok alokacji zawiera typy, które zostały utworzone podczas przebiegu profilowania. Każdy typ jest węzeł główny drzewa wywołań, który wyświetla ścieżek wykonywania funkcji, które spowodowało alokacje typu.  
+Widok alokacji zawiera typy, które zostały utworzone podczas uruchomienia profilowania. Każdy typ jest węzeł główny drzewa wywołań, który wyświetla ścieżki wykonywania funkcji, które spowodowały alokacji typu.  
   
- Dane w wierszu typu Wyświetla całkowita liczba obiektów tego typu, które zostały utworzone w przebiegu profilowania i łączna liczba bajtów przydzielonych w przypadku obiektów tego typu. Włącznie i wyłącznego wartości dla typu zawsze są takie same.  
+ Dane w wierszu Typ wyświetlana całkowita liczba obiektów tego typu, które zostały utworzone w trakcie uruchomienia profilowania i całkowita liczba bajtów przydzielonych do obiektów tego typu. Wartości włączne i wyłączne dla typu są zawsze takie same.  
   
--   Wartości z wartościami granicznymi są przeznaczone dla obiektów utworzonych w wystąpieniach funkcji i jej funkcji podrzędnych, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań.  
+- Wartości włączne dotyczą obiektów utworzonych w wystąpieniach funkcji i jej funkcji podrzędnych, które zostały wywołane przez funkcję nadrzędnego w drzewie wywołań.  
   
--   Wyłączny wartości są dla obiektów, które zostały utworzone bezpośrednio przez funkcję, jeśli zostały one wywołane przez funkcję nadrzędnej. Obiektów utworzonych w funkcji podrzędnej nie są uwzględniane.  
+- Wyłączne wartości są obiekty, które zostały utworzone bezpośrednio za pomocą funkcji, jeśli zostały one wywoływane przez nadrzędne funkcję. Obiekty utworzone w funkcji podrzędnej nie są uwzględniane.  
   
- Dane dla funkcji Wyświetla liczbę obiektów utworzonych i liczba bajtów przydzielonych dla obiektów typu nadrzędnego.  
+  Dane dla funkcji Wyświetla liczbę obiektów utworzonych i liczba bajtów przydzielonych dla obiektów typu nadrzędnego.  
   
 ## <a name="highlight-the-execution-hot-path"></a>Wyróżnij ścieżkę aktywną wykonywania  
- Można znaleźć ścieżki wykonywania drzewa wywołań utworzony większość obiektów o typie elementu nadrzędnego.  
+ Można znaleźć ścieżki wykonywania drzewo wywołań, utworzony większość obiektów o typie elementu nadrzędnego.  
   
--   Aby wyświetlić najbardziej aktywne ścieżki, kliknij prawym przyciskiem myszy typu lub funkcji, a następnie kliknij przycisk **rozwiń aktywnej ścieżki**.  
+-   Aby wyświetlić najbardziej aktywne ścieżkę, kliknij prawym przyciskiem myszy typu lub funkcji, a następnie kliknij **Rozwiń ścieżkę aktywną**.  
   
 |Kolumny|Opis|  
 |------------|-----------------|  
 |**Nazwa**|Nazwa przydzielonego typu lub funkcji.|  
-|**Identyfikator procesu**|Identyfikator PID profilowania Uruchom proces.|  
+|**Identyfikator procesu**|Identyfikator procesu (PID) uruchomienia profilowania.|  
 |**Nazwa procesu**|Nazwa procesu.|  
-|**Nazwa modułu**|Nazwa modułu, który zawiera typu lub funkcji.|  
-|**Ścieżka modułu**|Ścieżka moduł zawierający typu lub funkcji.|  
+|**Nazwa modułu**|Nazwa modułu, który zawiera typ lub funkcja.|  
+|**Ścieżka modułu**|Ścieżka modułu, który zawiera typu lub funkcji.|  
 |**Plik źródłowy**|Plik źródłowy, który zawiera definicję dla typu lub funkcji.|  
-|**Numer wiersza — funkcja**|Numer wiersza początku tej definicji typu lub funkcji w pliku źródłowym.|  
-|**poziom**|Wskazuje, czy dane dla typu lub funkcji.|  
-|**Alokacje włącznie**|— Dla funkcji, całkowita liczba obiektów o typie elementu nadrzędnego, które zostały utworzone przez funkcję. Liczba ta obejmuje obiektów utworzonych w funkcji podrzędnych.<br />— Dla typu, całkowita liczba wystąpień tego typu, które zostały utworzone.|  
-|**% Alokacji włącznie**|— Dla funkcji odsetek wszystkich obiektów utworzonych w przebiegu profilowania, które były włącznie alokacje typu nadrzędnego przez funkcję.<br />— W przypadku typu procent całkowitej liczby obiektów, które zostały utworzone w przebiegu, który profilowania były wystąpienia typu.|  
-|**Wyłączny alokacji**|— Dla funkcji, liczbę obiektów, które zostały utworzone podczas wykonywania bezpośrednio w górnej części stosu wywołań funkcji. Ta liczba nie ma obiektów utworzonych w funkcji podrzędnych.<br />— Dla typu, całkowita liczba wystąpień tego typu, które zostały utworzone.|  
-|**% Wyłącznego alokacji**|— Dla funkcji odsetek wszystkich obiektów utworzonych w przebiegu profilowania, które były wyłącznego alokacje typu nadrzędnego przez funkcję.<br />— W przypadku typu procent całkowitej liczby obiektów, które zostały utworzone w przebiegu, który profilowania były wystąpienia typu.|  
-|**Bajty włącznie**|— Dla funkcji, liczba bajtów pamięci, które zostały przydzielone przez funkcję dla obiektów typu nadrzędnego. Liczba ta obejmuje pamięci, która została przydzielona przez jej funkcji podrzędnych.<br />— Dla typu całkowita liczba bajtów, które zostało przydzielone w profilowania uruchomione dla wystąpienia typu.|  
-|**% Bajtów włącznie**|-Funkcja wartości procentowej pamięci wszystkie przydzielone, w którym profilowania zostało włącznie alokacje typu nadrzędnego przez funkcję.<br />— W przypadku typu wartości procentowej pamięci wszystkie przydzielone w profilowania uruchamiania, która została przydzielona do wystąpienia typu.|  
-|**Wyłączny bajtów**|— Dla funkcji, liczba bajtów pamięci, które zostały przydzielone przez funkcję dla obiektów typu nadrzędnego. Ta liczba nie obejmuje pamięci, która została przydzielona przez jej funkcji podrzędnych.<br />— Dla typu całkowita liczba bajtów przydzielonych w profilowania uruchomione dla wystąpienia typu.|  
-|**% Wyłącznego bajtów**|— Dla funkcji wartości procentowej pamięci wszystkie przydzielone, w którym profilowania został wyłącznego alokacje typu nadrzędnego przez funkcję.<br />— W przypadku typu wartości procentowej pamięci wszystkie przydzielone w profilowania uruchamiania, która została przydzielona do wystąpienia typu.|
+|**Numer wiersza funkcji**|Numer wiersza początku tej definicji typu lub funkcji w pliku źródłowym.|  
+|**poziom**|Wskazuje, czy dane są dla typu lub funkcji.|  
+|**Przydziały włączne**|— Dla funkcji, całkowita liczba obiektów o typie elementu nadrzędnego, które zostały utworzone przez funkcję. Liczba ta obejmuje obiektów utworzonych w funkcji podrzędnych.<br />— Dla typu, całkowita liczba wystąpień tego typu, które zostały utworzone.|  
+|**% Przydziałów włącznych**|— Dla funkcji, wartość procentowa wszystkie obiekty utworzone w trakcie uruchomienia profilowania, które zostały przydziałów włącznych typu nadrzędnego przez funkcję.<br />— Dla typu procent całkowitej liczby obiektów, które zostały utworzone w profilowania, były wystąpienia typu.|  
+|**Przydziały wyłączne**|— W przypadku funkcji liczbę obiektów, które zostały utworzone podczas wykonywania bezpośrednio w górnej części stosu wywołań funkcji. Ta liczba nie ma obiektów utworzonych w funkcji podrzędnych.<br />— Dla typu, całkowita liczba wystąpień tego typu, które zostały utworzone.|  
+|**% Przydziałów wyłącznych**|— Dla funkcji, wartość procentowa wszystkie obiekty utworzone w trakcie uruchomienia profilowania, które zostały przydziałów wyłącznych typu nadrzędnego przez funkcję.<br />— Dla typu procent całkowitej liczby obiektów, które zostały utworzone w profilowania, były wystąpienia typu.|  
+|**Bajty włączne**|— W przypadku funkcji liczba bajtów pamięci, które zostały przydzielone przez funkcję dla obiektów typu nadrzędnego. Liczba ta obejmuje pamięć, która została przydzielona przez jej funkcji podrzędnych.<br />— Dla typu, całkowita liczba bajtów, która została przydzielona w profilowania dla wystąpień tego typu.|  
+|**% Bajtów włącznych**|— W przypadku funkcji procent wszystkich przydzielonej pamięci w profilowania, był przydziałów włącznych typu nadrzędnego przez funkcję.<br />— Dla typu, procent wszystkich przydzielonej pamięci w profilowania, została przydzielona dla wystąpienia typu.|  
+|**Bajty wyłączne**|— W przypadku funkcji liczba bajtów pamięci, które zostały przydzielone przez funkcję dla obiektów typu nadrzędnego. Ta liczba nie obejmuje pamięć, która została przydzielona przez jej funkcji podrzędnych.<br />— Dla typu całkowita liczba bajtów przydzielonych w profilowania są uruchamiane dla wystąpień tego typu.|  
+|**% Bajtów wyłącznych**|— W przypadku funkcji procent wszystkich przydzielonej pamięci w profilowania, był przydziałów wyłącznych typu nadrzędnego przez funkcję.<br />— Dla typu, procent wszystkich przydzielonej pamięci w profilowania, została przydzielona dla wystąpienia typu.|

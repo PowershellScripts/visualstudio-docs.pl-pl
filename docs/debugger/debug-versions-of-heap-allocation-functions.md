@@ -25,29 +25,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e426da9491c13e0d6f9377814673ca41512e5e09
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 12b997b2aeb2b34305eafc2dc478460d9f450677
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941472"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Wersja debugowania funkcji alokacji sterty
-Biblioteki wykonawcze języka C zawiera specjalne wersje debugowania funkcji alokacji stosu. Te funkcje mają takie same nazwy co wydanie z _dbg dołączany do ich wersje. W tym temacie opisano różnice między wersji funkcji CRT i wersji _dbg przy użyciu `malloc` i `_malloc_dbg` jako przykłady.  
+Biblioteki wykonawczej C zawiera specjalne wersje do debugowania funkcji alokacji sterty. Te funkcje mają takie same nazwy co wersję, wersje _dbg dołączany do nich. W tym temacie opisano różnice między wersji funkcji CRT i wersja _dbg przy użyciu `malloc` i `_malloc_dbg` jako przykłady.  
   
- Gdy [_DEBUG](/cpp/c-runtime-library/debug) jest zdefiniowany, CRT mapuje wszystkie [— funkcja malloc](/cpp/c-runtime-library/reference/malloc) wywołań [_malloc_dbg —](/cpp/c-runtime-library/reference/malloc-dbg). W związku z tym nie trzeba ponownie zapisuje przy użyciu kodu `_malloc_dbg` zamiast `malloc` uzyskanie korzyści podczas debugowania.  
+ Gdy [_DEBUG](/cpp/c-runtime-library/debug) jest zdefiniowany, CRT mapuje wszystkie [— funkcja malloc](/cpp/c-runtime-library/reference/malloc) wywołania [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg). W związku z tym, nie trzeba ponownie zapisuje kodzie przy użyciu `_malloc_dbg` zamiast `malloc` otrzymywać korzyści podczas debugowania.  
   
  Należy wywołać `_malloc_dbg` jawnie, jednak. Wywoływanie `_malloc_dbg` jawnie niektóre dodał korzyści:  
   
--   Śledzenie `_CLIENT_BLOCK` typu alokacji.  
+- Śledzenie `_CLIENT_BLOCK` typu alokacji.  
   
--   Przechowywanie plików i wierszy numer źródłowego której wystąpiło żądanie alokacji.  
+- Przechowywanie źródłowego pliku i numer wiersza której wystąpiło żądanie alokacji.  
   
- Jeśli nie chcesz konwertować z `malloc` wywołań `_malloc_dbg`, można uzyskać informacji o pliku źródłowym, definiując [_crtdbg_map_alloc —](/cpp/c-runtime-library/crtdbg-map-alloc), co powoduje, że mapa preprocesora bezpośrednio wszystkie wywołania `malloc` do `_malloc_dbg` zamiast polegania na otokę `malloc`.  
+  Jeśli nie chcesz przekształcać swoje `malloc` wywołania `_malloc_dbg`, można uzyskać informacji o pliku źródłowym, definiując [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), co powoduje, że mapa preprocesora aby bezpośrednio wszystkie wywołania do `malloc` do `_malloc_dbg` zamiast polegania na otokę `malloc`.  
   
- Aby śledzić oddzielne typy alokacji w blokach klienta, należy wywołać `_malloc_dbg` bezpośrednio i ustaw `blockType` parametr `_CLIENT_BLOCK`.  
+  Aby śledzić oddzielne typy alokacji w blokach klienta, należy wywołać `_malloc_dbg` bezpośrednio i ustaw `blockType` parametr `_CLIENT_BLOCK`.  
   
- Jeśli nie zdefiniowano _DEBUG, wywołań `malloc` nie zostaną zakłócone, wywołań `_malloc_dbg` ich do `malloc`, definicji [_crtdbg_map_alloc —](/cpp/c-runtime-library/crtdbg-map-alloc) zostanie zignorowana i w pliku informacji dotyczących źródła nie podano żądanie alokacji. Ponieważ `malloc` nie ma parametru typu bloku, żądania dotyczące `_CLIENT_BLOCK` typy są traktowane jako standardowe alokacji.  
+  Gdy _DEBUG nie jest zdefiniowany, wywołania `malloc` nie zostaną zakłócone, wywołania `_malloc_dbg` są rozwiązywane do `malloc`, definicja [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc) jest ignorowany i źródła odnoszących się do informacji o pliku żądanie alokacji nie została podana. Ponieważ `malloc` , nie ma parametr typu blok, żądań dla `_CLIENT_BLOCK` typy są traktowane jako standardowe alokacji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Techniki testowania CRT](../debugger/crt-debugging-techniques.md)
+ [Techniki debugowania CRT](../debugger/crt-debugging-techniques.md)

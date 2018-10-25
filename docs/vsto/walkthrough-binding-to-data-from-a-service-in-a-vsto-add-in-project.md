@@ -17,27 +17,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d3c7ed095d0efe756e7a23409cd5a54f9e6dcda8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: c4ebf998dc7c278fda1e605d18198945958a7fed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933186"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Wskazówki: Powiązywanie z danymi z usług w projektach dodatku narzędzi VSTO
   Dane można powiązać kontrolki hosta w projektach dodatku narzędzi VSTO. W tym instruktażu pokazano, jak dodać kontrolki do dokumentu programu Microsoft Office Word, powiązać formanty danych pobranych z usługi zawartości MSDN i reagowania na zdarzenia w czasie wykonywania.  
   
- **Dotyczy:** informacje przedstawione w tym temacie dotyczą projektów na poziomie aplikacji dla programu Word 2010. Aby uzyskać więcej informacji, zobacz [dostępność funkcji według aplikacji pakietu Office i typów projektów](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Dotyczy:** informacje przedstawione w tym temacie dotyczą projektów na poziomie aplikacji dla programu Word 2010. Aby uzyskać więcej informacji, zobacz [Dostępne funkcje uporządkowane według aplikacji pakietu Office i typu projektu](../vsto/features-available-by-office-application-and-project-type.md).  
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Dodawanie <xref:Microsoft.Office.Tools.Word.RichTextContentControl> kontrolki do dokumentu w czasie wykonywania.  
+- Dodawanie <xref:Microsoft.Office.Tools.Word.RichTextContentControl> kontrolki do dokumentu w czasie wykonywania.  
   
--   Powiązanie <xref:Microsoft.Office.Tools.Word.RichTextContentControl> kontrolki z danymi z usługi sieci web.  
+- Powiązanie <xref:Microsoft.Office.Tools.Word.RichTextContentControl> kontrolki z danymi z usługi sieci web.  
   
--   Odpowiadanie na <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> zdarzenia <xref:Microsoft.Office.Tools.Word.RichTextContentControl> kontroli.  
+- Odpowiadanie na <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> zdarzenia <xref:Microsoft.Office.Tools.Word.RichTextContentControl> kontroli.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  

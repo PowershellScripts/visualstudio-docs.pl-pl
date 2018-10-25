@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b2c826174f65155e2a832ec55471246ffad9568b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0711a16206ae1f6fc1efba0b3422c650c993396d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942000"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Edytowanie diagramów sekwencji UML przy użyciu interfejsu API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,13 +121,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>Aktualizowanie interakcji i jego układ  
  Po zaktualizowaniu interakcji zawsze zakończyć operację, aktualizując jej układ przy użyciu jednej z następujących metod:  
   
--   `ISequenceDiagram.UpdateShapePositions()` Ustawia położenie kształty, które niedawno zostało wstawionych lub przeniesiona i ich kształtów sąsiednich.  
+- `ISequenceDiagram.UpdateShapePositions()` Ustawia położenie kształty, które niedawno zostało wstawionych lub przeniesiona i ich kształtów sąsiednich.  
   
--   `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` odrysowuje cały diagram. Parametr służy do określania położenia linie życia i/lub komunikaty.  
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` odrysowuje cały diagram. Parametr służy do określania położenia linie życia i/lub komunikaty.  
   
- Jest to szczególnie ważne podczas wstawiania nowych elementów lub Przenieś istniejące elementy. Nie będą w właściwe pozycje na diagramie do momentu, kiedy została wykonana jedna z tych operacji. Musisz wywołać jedną z tych operacji, po upływie szereg zmian.  
+  Jest to szczególnie ważne podczas wstawiania nowych elementów lub Przenieś istniejące elementy. Nie będą w właściwe pozycje na diagramie do momentu, kiedy została wykonana jedna z tych operacji. Musisz wywołać jedną z tych operacji, po upływie szereg zmian.  
   
- Aby uniknąć bemusing użytkownika wykonującego cofania po polecenia, użyj `ILinkedUndoTransaction` należy ująć zmiany, a końcowe `Layout()` lub `UpdateShapePositions()` operacji. Na przykład:  
+  Aby uniknąć bemusing użytkownika wykonującego cofania po polecenia, użyj `ILinkedUndoTransaction` należy ująć zmiany, a końcowe `Layout()` lub `UpdateShapePositions()` operacji. Na przykład:  
   
 ```  
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  

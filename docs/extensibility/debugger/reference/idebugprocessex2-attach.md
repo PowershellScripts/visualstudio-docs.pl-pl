@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c19f5f3c8beedf4a7de5dc5631ed1d795a125d56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0432fe2861b10b4dedd2151033bf61665465f3b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937216"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
-Ta metoda informuje proces czy sesji jest teraz debugowania procesu.  
+Ta metoda informuje proces, że sesji jest teraz debugowanie procesu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int Attach(
   
 #### <a name="parameters"></a>Parametry  
  `pSession`  
- [in] Wartość, która unikatowo identyfikuje sesji dołączenie do tego procesu.  
+ [in] Wartość, która jednoznacznie identyfikuje sesji dołączenie do tego procesu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany interfejs `pSession` powinien być traktowany jako plik cookie, który unikatowo identyfikuje Menedżera debugowania sesji dołączenie do tego procesu; wartość żaden z metod interfejsu podany nie jest funkcjonalności.  
+ Przekazanego interfejsu `pSession` jest traktowane tylko jako plik cookie, a wartość, która jednoznacznie identyfikuje Menedżer debugowania sesji, dołączenie do tego procesu; Brak metody w interfejsie podane są funkcjonalne.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

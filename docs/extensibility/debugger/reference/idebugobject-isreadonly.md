@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84cac5c66dd20dc9641fee7f05b456b25cbe2ffc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4238895b236db6dd75cbf384adc78284f34d073f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113666"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936020"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
-Określa, czy ten obiekt jest tylko do odczytu.  
+Określa, czy ten obiekt tylko do odczytu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int IsReadOnly(
   
 #### <a name="parameters"></a>Parametry  
  `pfIsReadOnly`  
- [out] Zwraca wartość inną niż zero (`TRUE`) Jeśli ten obiekt jest tylko do odczytu; w przeciwnym razie, zwraca zero (`FALSE`).  
+ [out] Zwraca wartość różna od zera (`TRUE`) Jeśli ten obiekt jest tylko do odczytu; w przeciwnym razie, zwraca wartość zero (`FALSE`).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Obiekt tylko do odczytu nie może mieć wartość zmienić po jego utworzeniu.  
+ Obiekt tylko do odczytu nie może mieć wartość ulegnie zmianie po jego utworzeniu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

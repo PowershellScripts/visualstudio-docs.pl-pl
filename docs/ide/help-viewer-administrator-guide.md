@@ -1,5 +1,5 @@
 ---
-title: Przewodnik administratora podglądu pomocy
+title: Podręcznik administratora programu Podgląd pomocy
 ms.date: 11/01/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
@@ -10,55 +10,54 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bccbd4f1365ea42b3e0331283a5659502038e133
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 897de3b54781cf5738e80ffcc878fd8d34f6168f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951096"
 ---
-# <a name="help-viewer-administrator-guide"></a>Przewodnik administratora podglądu pomocy
+# <a name="help-viewer-administrator-guide"></a>Podręcznik administratora programu Podgląd pomocy
 
-Podgląd Pomocy umożliwia zarządzanie lokalnym instalacje pomocy dla środowisk sieci lub bez dostępu do Internetu. Lokalnej zawartości pomocy jest skonfigurowany na podstawie na komputerze. Domyślnie użytkownicy muszą mieć uprawnienia administratora do ich lokalnej pomocy instalacji aktualizacji.
+Podgląd Pomocy umożliwia zarządzanie lokalnymi instalacjami pomocy dla środowisk sieciowych, z lub bez dostępu do Internetu. Zawartość pomocy lokalnej jest skonfigurowana na kompurtera. Domyślnie użytkownicy muszą mieć uprawnienia administratora, aby zaktualizować ich lokalną instalację pomocy.
 
-Jeśli środowisko sieciowe umożliwia klientom dostęp do Internetu, możesz użyć **menedżera zawartości Pomocy** pliku wykonywalnego wdrożyć zawartość lokalnej pomocy z Internetu. Aby uzyskać więcej informacji na temat *HlpCtntMgr.exe* składnia wiersza polecenia, zobacz [argumenty wiersza polecenia do menedżera zawartości Pomocy](../ide/command-line-arguments-for-the-help-content-manager.md).
+Jeśli środowisko sieciowe pozwala klientom na dostęp do Internetu, można użyć **menedżera zawartości Pomocy** pliku wykonywalnego do wdrażania lokalnie zawartości pomocy z Internetu. Aby uzyskać więcej informacji na temat *HlpCtntMgr.exe* składnia wiersza polecenia, zobacz [argumenty wiersza polecenia dla menedżera zawartości Pomocy](../ide/command-line-arguments-for-the-help-content-manager.md).
 
-Tworzenie punktu końcowego usługi w sieci intranet i podobne typy działań, zobacz informacji o tworzeniu zawartości, [SDK podglądu pomocy](../extensibility/internals/microsoft-help-viewer-sdk.md).
+Aby uzyskać informacje dotyczące tworzenia zawartości, tworzenia punktu końcowego usługi sieci intranet i podobnych rodzajów działań, zobacz [zestaw SDK podglądu pomocy](../extensibility/internals/microsoft-help-viewer-sdk.md).
 
-Jeśli nie masz dostępu do Internetu w danym środowisku sieciowym, podglądu pomocy można wdrożyć zawartość lokalnej pomocy w intranecie lub w udziale sieciowym. Można również wyłączyć za pomocą opcji Pomoc programu Visual Studio IDE [przesłania klucza rejestru](../ide/help-content-manager-overrides.md) funkcji, takich jak:
+Jeśli nie masz dostępu do Internetu w danym środowisku sieciowym, w Podglądzie pomocy można wdrażać lokalnie zawartości pomocy z intranetu lub udziału sieciowego. Można także wyłączyć opcje pomocy programu Visual Studio IDE, za pomocą [przesłania klucza rejestru](../ide/help-content-manager-overrides.md) dla funkcji, takich jak:
 
 - online i pomoc w trybie offline
 
-- do instalacji zawartości podczas pierwszego uruchomienia IDE
+- instalację zawartości podczas pierwszego uruchomienia środowiska IDE
 
-- Określanie intranetową usługę zawartości
+- Określanie usługi zawartości intranetu
 
 - Zarządzanie zawartością
 
-## <a name="deploy-local-help-content-from-the-internet"></a>Wdróż zawartość lokalnej pomocy z Internetu
+## <a name="deploy-local-help-content-from-the-internet"></a>Wdrażanie lokalnej zawartości pomocy z Internetu
 
-Można użyć **menedżera zawartości Pomocy** (*HlpCtntMgr.exe*) do wdrożenia lokalnego zawartość pomocy z Internetu na komputerach klienckich. Należy użyć następującej składni:
+Możesz użyć **menedżera zawartości Pomocy** (*HlpCtntMgr.exe*) do wdrożenia lokalnej zawartości pomocy z Internetu do komputerów klienckich. Należy użyć następującej składni:
 
 ```cmd
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
 
-Aby uzyskać więcej informacji na temat *HlpCtntMgr.exe* składnia wiersza polecenia, zobacz [argumenty wiersza polecenia do menedżera zawartości Pomocy](../ide/command-line-arguments-for-the-help-content-manager.md).
+Aby uzyskać więcej informacji na temat *HlpCtntMgr.exe* składnia wiersza polecenia, zobacz [argumenty wiersza polecenia dla menedżera zawartości Pomocy](../ide/command-line-arguments-for-the-help-content-manager.md).
 
 Wymagania:
 
 -   Komputery klienckie muszą mieć dostęp do Internetu.
 
--   Użytkownicy muszą mieć uprawnienia administratora do aktualizacji, Dodaj lub usuń zawartość lokalnej pomocy, po zakończeniu instalacji.
-
+-   Użytkownicy muszą mieć uprawnienia administratora, aby zaktualizować, Dodaj lub usuń lokalną zawartość pomocy po zakończeniu instalacji.
 
 Ostrzeżenia:
 
--   Domyślne źródło pomocy nadal być w trybie online.
+-   Domyślnym źródłem pomocy będzie nadal online.
 
 ### <a name="example"></a>Przykład
 
-W poniższym przykładzie instalowana zawartości w języku angielskim dla programu Visual Studio na komputerze klienckim.
+Poniższy przykład instaluje zawartość w języku angielskim dla programu Visual Studio na komputerze klienckim.
 
 #### <a name="to-install-english-content-from-the-internet"></a>Aby zainstalować zawartość w języku angielskim z Internetu
 
@@ -70,55 +69,54 @@ W poniższym przykładzie instalowana zawartości w języku angielskim dla progr
 
 3.  Naciśnij klawisz **wprowadź**.
 
-## <a name="deploy-pre-installed-local-help-content-on-client-computers"></a>Wdrażanie wstępnie zainstalować zawartość lokalnej pomocy na komputerach klienckich
+## <a name="deploy-pre-installed-local-help-content-on-client-computers"></a>Wdrażanie wstępnie zainstalowanych lokalnie zawartości pomocy, na komputerach klienckich
 
-Można zainstalować zestaw zawartości online do jednego komputera, a następnie skopiuj zainstalowanego zestawu zawartości do innych komputerów.
+Można zainstalować zestaw treści z online do jednego komputera, a następnie skopiować ten zainstalowany zestaw treści na inne komputery.
 
 Wymagania:
 
--   Komputer, na którym należy zainstalować zestaw zawartości do musi mieć dostęp do Internetu.
+-   Komputer, na którym jest instalowany zestaw zawartości musi mieć dostęp do Internetu.
 
--   Użytkownicy muszą mieć uprawnienia administratora do aktualizacji, Dodaj lub usuń zawartość lokalnej pomocy, po zakończeniu instalacji.
+-   Użytkownicy muszą mieć uprawnienia administratora, aby zaktualizować, Dodaj lub usuń lokalną zawartość pomocy po zakończeniu instalacji.
 
     > [!TIP]
-    > Jeśli użytkownicy nie mają uprawnień administratora, zaleca się wyłączenie **zarządzania zawartością** karcie podglądu pomocy. Aby uzyskać więcej informacji, zobacz [zastąpienia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).
+    > Jeśli użytkownicy nie mają praw administratora, zalecane jest wyłączenie **zarządzanie zawartością** karty w Podglądzie pomocy. Aby uzyskać więcej informacji, zobacz [przesłonięcia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).
 
 Ostrzeżenia:
 
--   Domyślne źródło pomocy nadal być w trybie online.
+-   Domyślnym źródłem pomocy będzie nadal online.
 
-### <a name="create-the-content-set"></a>Tworzenie zestawu zawartości.
+### <a name="create-the-content-set"></a>Utwórz zestaw zawartości
 
-Przed utworzeniem podstawowego zestawu zawartości, należy najpierw odinstalować wszystkie lokalne zawartości programu Visual Studio na komputerze docelowym.
+Przed utworzeniem zestawu podstawowego zawartości, należy najpierw odinstalować wszystkie lokalne zawartości programu Visual Studio na komputerze docelowym.
 
-#### <a name="to-uninstall-local-help"></a>Aby odinstalować pomocy lokalnej
+#### <a name="to-uninstall-local-help"></a>Aby odinstalować Pomoc lokalną
 
-1.  W Podglądzie pomocy, wybierz opcję **zarządzania zawartością** kartę.
+1. W Podglądzie pomocy wybierz **zarządzanie zawartością** kartę.
 
-2.  Przejdź do zestawu dokumentów programu Visual Studio.
+2. Przejdź do zestawu dokumentów programu Visual Studio.
 
-3.  Wybierz **Usuń** obok każdego elementu podrzędnego.
+3. Wybierz **Usuń** obok każdej podpozycji.
 
-4.  Wybierz **aktualizacji** do odinstalowania.
+4. Wybierz **aktualizacji** do odinstalowania.
 
-5.  Przejdź do *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* i sprawdź, czy folder tylko zawiera plik *catalogType.xml*.
+5. Przejdź do *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* i sprawdź, czy folder zawiera tylko plik *catalogType.xml*.
 
- Po usunięciu wszystkich zainstalowanych wcześniej lokalnej pomocy programu Visual Studio zawartości, można przystąpić do pobierania podstawowego zestawu zawartości.
+   Po usunięciu wszystkich uprzednio zainstalowanych pomocy programu Visual Studio zawartości lokalnej, jesteś gotowy do pobrania podstawowego zestawu zawartości.
 
 #### <a name="to-download-the-content"></a>Aby pobrać zawartość
 
-1.  W Podglądzie pomocy, wybierz opcję **zarządzania zawartością** kartę.
+1.  W Podglądzie pomocy wybierz **zarządzanie zawartością** kartę.
 
-2.  W obszarze **zalecane dokumentacji** lub **dostępnej dokumentacji**, przejdź do zestawów dokumentacji, aby pobrać, a następnie wybierz pozycję **Dodaj**.
+2.  W obszarze **zalecana dokumentacja** lub **dostępnej dokumentacji**, przejdź do zestawów dokumentacji, aby pobrać, a następnie wybierz **Dodaj**.
 
 3.  Wybierz **aktualizacji**.
 
+Następnie należy spakować zawartości, aby można było wdrożyć na komputerach klienckich.
 
-Następnie należy do pakietu zawartości, dlatego może być wdrożony na komputerach klienckich.
+#### <a name="to-package-the-content"></a>Aby spakować zawartość
 
-#### <a name="to-package-the-content"></a>Do pakietu zawartości
-
-1.  Utwórz folder do skopiowania zawartości do późniejszego wdrożenia. Na przykład: *C:\VSHelp*.
+1.  Utwórz folder do skopiowania do niego zawartość na potrzeby późniejszego wdrożenia. Na przykład: *C:\VSHelp*.
 
 2.  Otwórz *cmd.exe* z uprawnieniami administratora.
 
@@ -136,7 +134,7 @@ Następnie należy do pakietu zawartości, dlatego może być wdrożony na kompu
 
      Na przykład skopiuj zawartość *C:\VSHelp* do  *\\\myserver\VSHelp*.
 
-2.  Utwórz *bat* plik zawiera skrypt wdrażania zawartości pomocy. Ponieważ klient może prawdopodobnie mają blokady odczytu na dowolny plik usuwane w ramach powiadomienia wypychanego, powinny być zamknięty przed wypychania aktualizacji klienta. Na przykład:
+2.  Tworzenie *.bat* plik będzie zawierał skrypt wdrażania dla zawartości pomocy. Ponieważ klient prawdopodobnie nałożył blokadę odczytu na dowolnym pliki usuwane w ramach wypychania, należy zamknąć klienta przed wypchnięciem aktualizacji. Na przykład:
 
     ```cmd
     REM - copy pre-ripped content to ProgramData
@@ -144,11 +142,11 @@ Następnie należy do pakietu zawartości, dlatego może być wdrożony na kompu
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3.  Uruchom *bat* plików na maszynach lokalnych, które chcesz zainstalować zawartości pomocy na.
+3.  Uruchom *.bat* plików na komputerach lokalnych, które chcesz zainstalować zawartości pomocy na.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Argumenty wiersza polecenia do menedżera zawartości pomocy](../ide/command-line-arguments-for-the-help-content-manager.md)
-- [Zastąpienia menedżera zawartości pomocy](../ide/help-content-manager-overrides.md)
+- [Argumenty wiersza polecenia dla menedżera zawartości pomocy](../ide/command-line-arguments-for-the-help-content-manager.md)
+- [Przesłonięcia menedżera zawartości pomocy](../ide/help-content-manager-overrides.md)
 - [Podgląd Pomocy firmy Microsoft](../ide/microsoft-help-viewer.md)
-- [Podgląd Pomocy zestawu SDK](../extensibility/internals/microsoft-help-viewer-sdk.md)
+- [Zestaw SDK podglądu pomocy](../extensibility/internals/microsoft-help-viewer-sdk.md)

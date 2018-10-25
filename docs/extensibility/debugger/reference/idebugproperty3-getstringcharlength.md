@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1694a39af0dff4577ea767efb34a048e29bbb07
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8400a9d0e8123d3803403a3e73c90cc1beea84c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935058"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 Zwraca liczbę znaków w ciągu skojarzonej właściwości.  
@@ -46,13 +46,13 @@ int GetStringCharLength(
 |`pLen`|[out] Zwraca liczbę znaków w ciągu właściwości.|  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Zwykle ta metoda jest używana jako prelude do alokacji buforu na wywołanie [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) metody.  
+ Zazwyczaj ta metoda jest używana jako prelude do alokacji bufora na wywołanie [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) metody.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CProperty** obiekt ujawniający [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CProperty** obiekt ujawniający [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfejsu.  
   
 ```cpp  
 STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)  

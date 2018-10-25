@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fdc37c35d2563780804c38fb6a74e1574cfaa6ad
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 02fdc0d7cd8a16ec7a00191a364def22ad2d8192
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546680"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939400"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Krok 5: Instalowanie pakietów w środowisku Python
 
@@ -26,29 +26,29 @@ Fora społeczności deweloperów języka Python tworzył tysiące przydatne paki
 
 1. Wybierz **widoku** > **Windows inne** > **środowiska Python** polecenia menu. **Środowiska Python** zostanie otwarte okno jako element równorzędny do **Eksploratora rozwiązań** i pokazuje różnych środowisk dostępnych dla Ciebie. Lista obejmuje zarówno środowisk, w których został zainstalowany przy użyciu Instalatora programu Visual Studio i te, które należy zainstalować osobno. Środowisko wytłuszczonym drukiem jest środowiska domyślnego, który jest używany dla nowych projektów.
 
-  ![Okno środowiska Python](media/environments-default-view-blue.png)
+   ![Okno środowiska Python](media/environments-default-view-blue.png)
 
-1. Środowisko **Przegląd** kartę zapewnia szybki dostęp do **Interactive** okna dla danego środowiska, wraz z folderu instalacji i interpreterów środowiska. Na przykład wybierz **Otwórz okno interaktywne** i **Interactive** w programie Visual Studio pojawia się okno na tym konkretnym środowisku.
+2. Środowisko **Przegląd** kartę zapewnia szybki dostęp do **Interactive** okna dla danego środowiska, wraz z folderu instalacji i interpreterów środowiska. Na przykład wybierz **Otwórz okno interaktywne** i **Interactive** w programie Visual Studio pojawia się okno na tym konkretnym środowisku.
 
-1. Wybierz **pakietów** kartę i wyświetlić listę pakietów, które są aktualnie zainstalowane w środowisku.
+3. Wybierz **pakietów** kartę i wyświetlić listę pakietów, które są aktualnie zainstalowane w środowisku.
 
-  ![Zainstalowane pakiety w środowisku](media/environments-installed-packages-blue.png)
+   ![Zainstalowane pakiety w środowisku](media/environments-installed-packages-blue.png)
 
-1. Zainstaluj `matplotlib` , wprowadzając jego nazwę w polu wyszukiwania, następnie wybierz pozycję **instalowanie narzędzia pip**
+4. Zainstaluj `matplotlib` , wprowadzając jego nazwę w polu wyszukiwania, następnie wybierz pozycję **instalowanie narzędzia pip**
 
-  ![Instalowanie matplotlib w środowisku](media/environments-add-matplotlib1.png)
+   ![Instalowanie matplotlib w środowisku](media/environments-add-matplotlib1.png)
 
-1. Zgoda na podniesienie uprawnień, jeśli zostanie wyświetlony monit, aby to zrobić.
+5. Zgoda na podniesienie uprawnień, jeśli zostanie wyświetlony monit, aby to zrobić.
 
-1. Po zainstalowaniu pakietu pojawia się w **środowiska Python** okna. **X** po prawej stronie pakietu odinstalowuje go.
+6. Po zainstalowaniu pakietu pojawia się w **środowiska Python** okna. **X** po prawej stronie pakietu odinstalowuje go.
 
-  ![Ukończenie instalacji matplotlib w środowisku](media/environments-add-matplotlib2.png)
+   ![Ukończenie instalacji matplotlib w środowisku](media/environments-add-matplotlib2.png)
 
-  Pasek postępu małych może pojawić się poniżej środowiska, aby wskazać, że Visual Studio tworzy jego bazy danych IntelliSense dla nowo zainstalowanego pakietu. **IntelliSense** karcie znajdują się też więcej szczegółowych informacji. Należy pamiętać, że do czasu ukończenia tej bazy danych IntelliSense funkcje, takie jak automatyczne uzupełnianie i sprawdzanie składni nie będzie aktywny w edytor dla tego pakietu.
+   Pasek postępu małych może pojawić się poniżej środowiska, aby wskazać, że Visual Studio tworzy jego bazy danych IntelliSense dla nowo zainstalowanego pakietu. **IntelliSense** karcie znajdują się też więcej szczegółowych informacji. Należy pamiętać, że do czasu ukończenia tej bazy danych IntelliSense funkcje, takie jak automatyczne uzupełnianie i sprawdzanie składni nie będzie aktywny w edytor dla tego pakietu.
 
-  Należy pamiętać, że **programu Visual Studio 2017 w wersji 15.6** później używa różnych i szybsze metody do pracy z obsługą technologii IntelliSense i wyświetla komunikat w tym celu na **IntelliSense** kartę.
+   Należy pamiętać, że **programu Visual Studio 2017 w wersji 15.6** później używa różnych i szybsze metody do pracy z obsługą technologii IntelliSense i wyświetla komunikat w tym celu na **IntelliSense** kartę.
 
-1. Utwórz nowy projekt za pomocą **pliku** > **New** > **projektu**, wybierając opcję **aplikację w języku Python** szablon. W pliku kodu, który pojawia się Wklej następujący kod, który tworzy tylko tym razem, które są oznaczane na wykresach graficznie wave cosinus, takich jak poprzednie kroki samouczka:
+7. Utwórz nowy projekt za pomocą **pliku** > **New** > **projektu**, wybierając opcję **aplikację w języku Python** szablon. W pliku kodu, który pojawia się Wklej następujący kod, który tworzy tylko tym razem, które są oznaczane na wykresach graficznie wave cosinus, takich jak poprzednie kroki samouczka:
 
     ```python
     from math import radians
@@ -63,9 +63,9 @@ Fora społeczności deweloperów języka Python tworzył tysiące przydatne paki
     main()
     ```
 
-1. Uruchom program z (**F5**) lub bez debugera (**Ctrl**+**F5**) aby wyświetlić dane wyjściowe:
+8. Uruchom program z (**F5**) lub bez debugera (**Ctrl**+**F5**) aby wyświetlić dane wyjściowe:
 
-  ![Dane wyjściowe z przykładu matplotlib](media/environments-add-matplotlib3.png)
+   ![Dane wyjściowe z przykładu matplotlib](media/environments-add-matplotlib3.png)
 
 ## <a name="next-step"></a>Następny krok
 

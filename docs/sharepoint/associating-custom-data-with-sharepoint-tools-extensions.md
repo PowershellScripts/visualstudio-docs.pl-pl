@@ -19,24 +19,24 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b72e058a2ef025b0118dac8fd419e75d1ad53349
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3e174440411e54d0f3960035874bd3b84b392c57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327232"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939504"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>Kojarzenie danych niestandardowych z rozszerzeniami narzędzi SharePoint
-  Niestandardowe dane można dodać do niektórych obiektów w rozszerzeń narzędzi SharePoint. Jest to przydatne, gdy znajdują się dane w jednym z rozszerzenia, które ma dostęp do później z poziomu innego kodu w Twoje rozszerzenie. Zamiast Implementowanie niestandardowych sposób przechowywania i uzyskać dostęp do danych, można skojarzyć dane z obiektu w rozszerzenia i następnie pobierają dane z tego samego obiektu później.  
+  Możesz dodać niestandardowe dane do niektórych obiektów w rozszerzenia narzędzi programu SharePoint. Jest to przydatne, gdy masz dane w jednej części Twojego rozszerzenia, który chcesz uzyskać dostęp później z innym kodem Twojego rozszerzenia. Zamiast wykonywania niestandardowych sposób przechowywania i dostępu do danych, można skojarzyć dane z obiektu w rozszerzeniu i następnie później pobrać dane z tego samego obiektu.  
   
- Dodawanie niestandardowych danych do obiektów jest również przydatne, jeśli chcesz zachować dane, które ma zastosowanie do określonego elementu w programie Visual Studio. Rozszerzeń narzędzi SharePoint są ładowane tylko raz w programie Visual Studio, więc rozszerzenia może działać na kilka różnych elementów (takich jak projekty, projektu elementy, lub **Eksploratora serwera** węzłów) w dowolnym momencie. Jeśli masz niestandardowe dane, które ma zastosowanie tylko do określonego elementu, możesz dodać dane do obiektu, który reprezentuje element.  
+ Dodawanie niestandardowych danych do obiektów jest również przydatne, jeśli chcesz zachować dane, która jest odpowiednia dla określonego elementu w programie Visual Studio. Rozszerzenia narzędzi programu SharePoint są ładowane tylko w przypadku, gdy w programie Visual Studio, więc rozszerzenie może pracować kilka różnych elementów (takich jak projekty, elementy, projektu lub **Eksploratora serwera** węzłach) w dowolnym momencie. Jeśli masz niestandardowe dane, które ma zastosowanie tylko do określonego elementu, można dodać dane do obiektu, który reprezentuje dany element.  
   
- Po dodaniu niestandardowych danych do obiektów w rozszerzeń narzędzi SharePoint danych nie jest trwały. Dane są dostępne tylko podczas cykl życia obiektu. Po obiektu jest odzyskana przez wyrzucanie elementów bezużytecznych, dane zostaną utracone.  
+ Po dodaniu danych niestandardowych do obiektów w rozszerzenia narzędzi programu SharePoint, dane nie są zachowywane. Dane są dostępne tylko w czasie trwania obiektu. Po obiektu jest odzyskiwane przez wyrzucanie elementów bezużytecznych, dane zostaną utracone.  
   
- W rozszerzeniach systemu projektu SharePoint można także zapisać dane ciąg będzie nadal występować po rozszerzenie zostanie zwolniona. Aby uzyskać więcej informacji, zobacz [zapisywanie danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ W rozszerzeniach systemu projektu programu SharePoint można także zapisać dane ciągu, która utrzymuje się po rozszerzenia jest zwalniana. Aby uzyskać więcej informacji, zobacz [zapisywanie danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
-## <a name="objects-that-can-contain-custom-data"></a>Obiekty, które mogą zawierać niestandardowe dane
- Niestandardowe dane można dodać do każdego obiektu w modelu obiektów programu SharePoint narzędzia, która implementuje <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> interfejsu. Ten interfejs definiuje tylko jedną właściwość <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>, która jest kolekcja obiektów danych niestandardowych. Następujące typy wdrożenia <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:  
+## <a name="objects-that-can-contain-custom-data"></a>Obiekty, które mogą zawierać dane niestandardowe
+ Możesz dodać niestandardowe dane do dowolnego obiektu w modelu obiektów programu SharePoint narzędzia, która implementuje <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> interfejsu. Ten interfejs definiuje tylko jedną właściwość <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>, który jest kolekcją obiektów danych niestandardowych. Następujące typy implementują <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:  
   
 -   <xref:Microsoft.VisualStudio.SharePoint.IMappedFolder>  
   
@@ -68,24 +68,24 @@ ms.locfileid: "36327232"
   
 -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>  
   
-## <a name="add-and-retrieve-custom-data"></a>Dodaj i pobrać niestandardowych danych
- Aby dodać niestandardowe dane do obiektu w rozszerzeniu narzędzia programu SharePoint, należy pobrać <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwość obiektu, który chcesz dodać dane, a następnie użyć <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A> metodę, aby dodać dane do obiektu.  
+## <a name="add-and-retrieve-custom-data"></a>Dodawanie i pobieranie danych niestandardowych
+ Aby dodać niestandardowe dane do obiektu w rozszerzenia narzędzi programu SharePoint, Pobierz <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwość obiektu, aby dodać dane do, a następnie użyj <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A> metodę, aby dodać dane do obiektu.  
   
- Można pobrać niestandardowych danych z obiektu w rozszerzeniu narzędzia programu SharePoint, należy pobrać <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwości tego obiektu i skorzystaj z jednej z następujących metod:  
+ Aby pobrać dane niestandardowe z obiektu rozszerzenia narzędzi programu SharePoint, Pobierz <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwości tego obiektu i skorzystaj z jednej z następujących metod:  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. Ta metoda zwraca **true** Jeśli obiekt danych nie istnieje, lub **false** Jeśli nie istnieje. Ta metoda służy do pobierania wystąpień typów wartości i typy referencyjne.  
+- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. Ta metoda zwraca **true** istnienia obiektu danych lub **false** Jeśli nie istnieje. Ta metoda służy do pobierania wystąpień typów wartości lub typów referencyjnych.  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. Ta metoda zwraca dane obiektu, jeśli jej zakończenia, lub **null** Jeśli nie istnieje. Ta metoda służy tylko do pobierania wystąpień typów referencyjnych.  
+- <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. Ta metoda zwraca dane obiektu, jeśli kończy pracę, lub **null** Jeśli nie istnieje. Tej metody można użyć tylko w celu pobrania wystąpienia typu referencyjnego.  
   
- Poniższy przykład kodu Określa, czy obiekt danych jest już skojarzony z elementem projektu. Jeśli obiekt danych nie jest już skojarzony z elementem projektu, a następnie kod dodaje obiekt do <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwości elementu projektu. Aby wyświetlić ten przykład w kontekście większego przykładu, zobacz [porady: Dodawanie właściwości do niestandardowego typu elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
+  Poniższy przykład kodu Określa, czy obiekt danych jest już skojarzony z elementem projektu. Jeśli obiekt danych nie jest już skojarzona z elementem projektu, a następnie ten kod dodaje obiekt do <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwości elementu projektu. Aby wyświetlić ten przykład w kontekście większego przykładu, zobacz [porady: Dodawanie właściwości do niestandardowego typu elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
   
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
+  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
+  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
 ## <a name="see-also"></a>Zobacz także
  [Koncepcje programowania oraz funkcje dla rozszerzeń narzędzi SharePoint](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
- [Wskazówki: Tworzenie elementu projektu akcji niestandardowej z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
- [Wskazówki: Rozszerzanie Eksploratora serwera do wyświetlania elementów sieci web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
+ [Wskazówki: Tworzenie niestandardowej akcji elementu projektu z szablonem elementu, część 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
+ [Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Porady: Dodawanie właściwości do projektów SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
  [Porady: Dodawanie właściwości do niestandardowego typu elementu projektu SharePoint](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)
    

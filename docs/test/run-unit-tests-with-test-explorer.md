@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a0feb539be589a4eab51544f1a04154c11f6f9c7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382337"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939520"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów
 
@@ -100,7 +100,7 @@ Eksplorator testów umożliwia grupowanie testów we wstępnie zdefiniowanych ka
 ### <a name="test-explorer-groups"></a>Grupy Eksploratora testów
 
 |Grupa|Opis|
-|-----------|-----------------|
+|-|-----------------|
 |**Czas trwania**|Grupuje testy według czasu wykonywania: **Fast**, **średni**, i **wolna**.|
 |**Wynik**|Grupuje testy według wyników wykonania: **testy zakończone niepomyślnie**, **testy pominięte**, **testy zakończone powodzeniem**.|
 |**Cechy**|Grupuje testy według par kategoria/wartość, należy zdefiniować. Składnia określająca kategorie i wartości cech jest zdefiniowana przez strukturę testu jednostki.|
@@ -115,7 +115,7 @@ Eksplorator testów umożliwia grupowanie testów we wstępnie zdefiniowanych ka
  W środowisko testów jednostkowych Microsoft dla zarządzanych aplikacji, można zdefiniować nazwę cechy / wartość pary w <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> atrybutu. Struktura testu zawiera również następujące cechy wstępnie zdefiniowane:
 
 |Cechy|Opis|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|Kategoria właściciel jest zdefiniowana przez strukturę testów jednostek i wymaga podania wartości ciągu właściciela.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|Kategoria priorytet jest zdefiniowana przez strukturę testów jednostek i wymaga podania wartości całkowitej priorytetu.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|Atrybut TestCategory umożliwia podanie kategorii bez wartości. Kategoria określona przez atrybut TestCategory może być również kategorii atrybut TestProperty.|
@@ -143,7 +143,7 @@ Aby filtrować według różnych kryteriów:
 > Wyszukiwanie jest rozróżniana wielkość liter i jest zgodny z ciągiem określonym w dowolnej części wartości kryterium.
 
 |Kwalifikator|Opis|
-|---------------|-----------------|
+|-|-----------------|
 |**Cechy**|Wyszukuje zarówno w kategoriach cech, jak i wartość dopasowania. Składnia określająca kategorie i wartości cech są definiowane przez strukturę testu jednostki.|
 |**Project**|Wyszukuje dopasowania w nazwach projektów testów.|
 |**Komunikat o błędzie**|Wyszukiwanie komunikatów o błędach zdefiniowane przez użytkownika zwracanych przez nieudane potwierdzenia dopasowań.|
@@ -187,7 +187,7 @@ Eksplorator testów umożliwia uruchamianie sesji debugowania dla testów. Kroko
 
 2. W Eksploratorze testów Wybierz metody badania, a następnie wybierz **Debuguj wybrane testy** w menu kontekstowym.
 
- Aby uzyskać więcej informacji dotyczących debugera, zobacz [debugowania w programie Visual Studio](../debugger/debugging-in-visual-studio.md).
+   Aby uzyskać więcej informacji dotyczących debugera, zobacz [debugowania w programie Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnozowanie problemów z wydajnością metoda testu
 
@@ -216,7 +216,7 @@ Aby uzyskać więcej informacji, zobacz [użycie pokrycia kodu, aby ustalić, il
 Testy mogą być uruchamiane z **Eksploratora testów**, klikając prawym przyciskiem myszy w edytorze kodu dla testu i wybierając polecenie **Uruchom test**, lub przy użyciu domyślnej [skróty programu Test Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) w Program Visual Studio. Niektóre skróty są oparte na kontekście. Oznacza to, uruchomić lub debugować testy, w oparciu o którym kursor w edytorze kodu. Jeśli kursor znajduje się wewnątrz metody testowej, następnie, metoda przebiegów testów. Jeśli kursor znajduje się na poziomie klasy, a następnie uruchom wszystkie testy w tej klasie. Jest taka sama dla danego poziomu przestrzeni nazw.
 
 |Częste odzyskiwanie pamięci poleceń| Skróty klawiaturowe|
-|--------------|------------------------|
+|-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**CTRL**+**R**, **Ctrl**+**T**|
 |TestExplorer.RunAllTestsInContext|**CTRL**+**R**, **T**|
 

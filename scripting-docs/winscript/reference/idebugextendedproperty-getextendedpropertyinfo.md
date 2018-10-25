@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7109346dd8189395cfdd366ff622dfac00744382
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f314a9c777eef1716a382c74b9ea250846542da7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794278"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935476"
 ---
 # <a name="idebugextendedpropertygetextendedpropertyinfo"></a>IDebugExtendedProperty::GetExtendedPropertyInfo
-Pobiera informacje rozszerzone właściwości rozszerzonej, czyli więcej informacji niż jest to prostsze `IDebugProperty`.  
+Pobiera rozszerzone informacje dotyczące właściwości rozszerzonej, czyli więcej informacji, niż jest to prostsze `IDebugProperty`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,18 +40,18 @@ HRESULT GetExtendedPropertyInfo(
   
 #### <a name="parameters"></a>Parametry  
  `dwFieldSpec`  
- [in] Określa stałe EX_DBGPROP_INFO_FLAGS, które określają pola, które mają zostać wypełnione `ExtendedDebugPropertyInfo` struktury.  
+ [in] Określa stałe EX_DBGPROP_INFO_FLAGS określające pola do wypełniania w `ExtendedDebugPropertyInfo` struktury.  
   
  `nRadix`  
- [in] Podstawa ma być używana podczas interpretacji wszelkie informacje numeryczne.  
+ [in] Podstawy do użycia w interpretacji wszelkie dane liczbowe.  
   
  `pExtendedPropertyInfo`  
- [out] Zwraca `ExtendedDebugPropertyInfo` struktury, która opisuje właściwość.  
+ [out] Zwraca `ExtendedDebugPropertyInfo` struktury, który opisuje właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zwykle `S_OK`.  
+ Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)   
  [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
- [Struktura ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)
+ [ExtendedDebugPropertyInfo, struktura](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea9df0bac68f9c16f5442d04fa4229f21bb29b2
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c3f85c2568e9066384d65027ff69e8cd4c16c13e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942104"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Porady: tworzenie źródła danych dla galerii prywatnej Atom
 Można utworzyć kanału Atom (RSS) do lokalizacji intranetowej, która nie zawiera rozszerzenia i Dodaj źródło danych do **rozszerzenia i aktualizacje** jako prywatną galerię. Aby uzyskać więcej informacji, zobacz [galerie prywatne](../extensibility/private-galleries.md).  
@@ -27,17 +27,17 @@ Można utworzyć kanału Atom (RSS) do lokalizacji intranetowej, która nie zawi
 ## <a name="create-an-atom-feed"></a>Tworzenie źródła danych Atom  
  Aby utworzyć źródła danych jako prywatną galerię Atom, najpierw Zbierz rozszerzeń (*.vsix* plików) do folderu. Możesz organizować je w podfolderach chcącym. Należy również następujące zasoby:  
   
--   *Atom.xml* pliku, który udostępnia rozszerzenia jako prywatną galerię. Aby uzyskać informacje o tym, jak połączyć *atom.xml* plik **rozszerzenia i aktualizacje**, zobacz [galerie prywatne](../extensibility/private-galleries.md).  
+- *Atom.xml* pliku, który udostępnia rozszerzenia jako prywatną galerię. Aby uzyskać informacje o tym, jak połączyć *atom.xml* plik **rozszerzenia i aktualizacje**, zobacz [galerie prywatne](../extensibility/private-galleries.md).  
   
--   Folder, który zawiera pliki obrazów, które zostały wyodrębnione ze rozszerzenia (na przykład zrzuty ekranu). *Atom.xml* plik zawiera linków względnych do tych obrazów, tak aby były dostępne w **rozszerzenia i aktualizacje**.  
+- Folder, który zawiera pliki obrazów, które zostały wyodrębnione ze rozszerzenia (na przykład zrzuty ekranu). *Atom.xml* plik zawiera linków względnych do tych obrazów, tak aby były dostępne w **rozszerzenia i aktualizacje**.  
   
- Na przykład załóżmy, że zostały zebrane następujące dwa rozszerzenia do folderu:  
+  Na przykład załóżmy, że zostały zebrane następujące dwa rozszerzenia do folderu:  
   
--   *Template_Wizard_239.vsix*, który jest pusty szablon projektu VSIX.  
+- *Template_Wizard_239.vsix*, który jest pusty szablon projektu VSIX.  
   
--   *SelectionHighlight.vsix*, czyli narzędzie, aby wyróżnić wszystkie wystąpienia wybranego programu word.  
+- *SelectionHighlight.vsix*, czyli narzędzie, aby wyróżnić wszystkie wystąpienia wybranego programu word.  
   
- Zawartość *atom.xml* plik będzie wyglądać następująco:  
+  Zawartość *atom.xml* plik będzie wyglądać następująco:  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>   

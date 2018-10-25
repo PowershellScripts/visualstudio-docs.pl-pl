@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a34d9a6f403345bb84f172c416dda62f0109ec2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f70f685fe8792f698dcc397b2f3fc9ccb6de8dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122171"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927726"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
-Ta metoda pobiera bieżący stan Edytuj i Kontynuuj proces. Dostawcy niestandardowego numeru portu należy zawsze zwracają `E_NOTIMPL`.  
+Ta metoda pobiera bieżący stan Edytuj i Kontynuuj proces. Dostawcy niestandardowego portu powinna zawsze zwracać `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,10 +44,10 @@ int GetENCAvailableState(
  [out] Wartość z zakresu od [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) wyliczenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 > [!NOTE]
->  Dostawcy niestandardowego numeru portu należy zawsze zwracają `E_NOTIMPL`.  
+>  Dostawcy niestandardowego portu powinna zawsze zwracać `E_NOTIMPL`.  
   
 ## <a name="remarks"></a>Uwagi  
  Ten stan może mieć wpływ [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md).  

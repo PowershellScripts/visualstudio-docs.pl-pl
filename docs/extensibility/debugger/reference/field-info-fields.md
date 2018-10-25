@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d74f39ce8e9e350c791371f20b7401d685fb1d18
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 78ea2148290402f2a8e5c08474de125fc52bca47
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102496"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936514"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
-Określa, jakie informacje pobrać o [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu.  
+Określa, jakie informacje należy pobrać o [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -52,23 +52,23 @@ public enum enum_FIELD_INFO_FIELDS {
   
 ## <a name="members"></a>Elementy członkowskie  
  FIF_FULLNAME  
- Inicjowanie użycia `bstrFullName` w [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury.  
+ Inicjowanie bądź użyj `bstrFullName` pole [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury.  
   
  FIF_NAME  
- Inicjowanie użycia `bstrName` w `FIELD_INFO` struktury.  
+ Inicjowanie bądź użyj `bstrName` pole `FIELD_INFO` struktury.  
   
  FIF_TYPE  
- Inicjowanie użycia `bstrType` w `FIELD_INFO` struktury.  
+ Inicjowanie bądź użyj `bstrType` pole `FIELD_INFO` struktury.  
   
  FIF_MODIFIERS  
- Inicjowanie użycia `bstrModifiers` w `FIELD_INFO` struktury.  
+ Inicjowanie bądź użyj `bstrModifiers` pole `FIELD_INFO` struktury.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości są również przekazywane jako argument [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) metodę, aby określić, które pola [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury mają być zainicjowany.  
+ Te wartości również są przekazywane jako argument do [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) metodę, aby określić które pola [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury, które mają zostać zainicjowane.  
   
- Te wartości są również używane w `dwFields` członkiem `FIELD_INFO` struktury, aby wskazać pola, które są używane i prawidłowe.  
+ Te wartości są również używane w `dwFields` członkiem `FIELD_INFO` struktury, aby wskazać, które pola są używane i prawidłowy.  
   
- Te flagi mogą być łączone z bitowego `OR`.  
+ Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  

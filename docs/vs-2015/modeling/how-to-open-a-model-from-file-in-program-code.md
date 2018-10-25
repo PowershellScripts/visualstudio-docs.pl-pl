@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8f3397cb520014ee9997a116ebbbfbc1c20dc9f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c084e756492a03abc86f7281728222632e12ec1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940869"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Porady: otwieranie modelu z pliku w kodzie programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,13 +63,13 @@ W dowolnej aplikacji, możesz otworzyć modeli języka DSL.
 ## <a name="reading-from-a-file"></a>Odczytywanie z pliku  
  Poniższy przykład jest przeznaczony do odczytu DSL, w którym klasy ważne są następujące:  
   
--   FamilyTreeModel  
+- FamilyTreeModel  
   
--   FamilyTreeSerializationHelper  
+- FamilyTreeSerializationHelper  
   
--   FamilyTreeDomainModel  
+- FamilyTreeDomainModel  
   
- Inne klasy domeny tego języka DSL jest osobą.  
+  Inne klasy domeny tego języka DSL jest osobą.  
   
 ```  
 using System;  

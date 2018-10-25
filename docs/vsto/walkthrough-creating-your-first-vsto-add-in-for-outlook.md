@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25155e6dee56fd816425f795a5082667c90c242a
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: fc0f2e7cc7dc40dc305f7860223b5d4acf19a573
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778131"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950966"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>Przewodnik: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu Outlook
   W tym instruktażu przedstawiono sposób tworzenia dodatku narzędzi VSTO dla programu Microsoft Office Outlook. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, który jest otwarty elementu programu Outlook. Aby uzyskać więcej informacji, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,15 +32,15 @@ ms.locfileid: "38778131"
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Tworzenie projektu dodatku narzędzi VSTO dla programu Outlook dla programu Outlook.  
+- Tworzenie projektu dodatku narzędzi VSTO dla programu Outlook dla programu Outlook.  
   
--   Pisanie kodu, który używa modelu obiektów programu Outlook do dodawania tekstu tematu i treści nową wiadomość e-mail.  
+- Pisanie kodu, który używa modelu obiektów programu Outlook do dodawania tekstu tematu i treści nową wiadomość e-mail.  
   
--   Tworzenie i uruchamianie projektu, aby ją przetestować.  
+- Tworzenie i uruchamianie projektu, aby ją przetestować.  
   
--   Czyszczenie zakończone projektu tak, aby dodatku narzędzi VSTO już nie uruchamia automatycznie na komputerze deweloperskim.  
+- Czyszczenie zakończone projektu tak, aby dodatku narzędzi VSTO już nie uruchamia automatycznie na komputerze deweloperskim.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
@@ -78,24 +78,24 @@ ms.locfileid: "38778131"
   
 ### <a name="to-add-text-to-the-subject-and-body-of-each-new-mail-message"></a>Aby dodać tekst na jej temat i treść każdej nowej wiadomości e-mail  
   
-1.  W plik kodu ThisAddIn zadeklarować pole o nazwie `inspectors` w `ThisAddIn` klasy. `inspectors` Pola obsługuje odwołania do kolekcji Inspektor okna w bieżącym wystąpieniu programu Outlook. Zapobiega to odwołanie moduł zbierający elementy bezużyteczne zwalnianie pamięci, który zawiera program obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzeń.  
+1. W plik kodu ThisAddIn zadeklarować pole o nazwie `inspectors` w `ThisAddIn` klasy. `inspectors` Pola obsługuje odwołania do kolekcji Inspektor okna w bieżącym wystąpieniu programu Outlook. Zapobiega to odwołanie moduł zbierający elementy bezużyteczne zwalnianie pamięci, który zawiera program obsługi zdarzeń dla <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzeń.  
   
-     [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_OutlookAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  Zastąp `ThisAddIn_Startup` metoda następującym kodem. Ten kod dołącza program obsługi zdarzeń do <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzeń.  
+2. Zastąp `ThisAddIn_Startup` metoda następującym kodem. Ten kod dołącza program obsługi zdarzeń do <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzeń.  
   
-     [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
-     [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-vb[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#2)]
+    [!code-csharp[Trin_OutlookAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#2)]  
   
-3.  W pliku kodu ThisAddIn, Dodaj następujący kod do `ThisAddIn` klasy. Ten kod definiuje zdarzenia obsługi dla <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzeń.  
+3. W pliku kodu ThisAddIn, Dodaj następujący kod do `ThisAddIn` klasy. Ten kod definiuje zdarzenia obsługi dla <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector> zdarzeń.  
   
-     Gdy użytkownik tworzy nową wiadomość e-mail, ta procedura obsługi zdarzeń dodaje tekst wiersza tematu i treści wiadomości.  
+    Gdy użytkownik tworzy nową wiadomość e-mail, ta procedura obsługi zdarzeń dodaje tekst wiersza tematu i treści wiadomości.  
   
-     [!code-vb[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#3)]  
+    [!code-vb[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/VisualBasic/Trin_OutlookAddInTutorial/ThisAddIn.vb#3)]
+    [!code-csharp[Trin_OutlookAddInTutorial#3](../vsto/codesnippet/CSharp/Trin_OutlookAddInTutorial/ThisAddIn.cs#3)]  
   
- Aby zmodyfikować każdej nowej wiadomości e-mail, w poprzednich przykładach kodu za pomocą następujących obiektów:  
+   Aby zmodyfikować każdej nowej wiadomości e-mail, w poprzednich przykładach kodu za pomocą następujących obiektów:  
   
 -   `Application` Pole `ThisAddIn` klasy. `Application` Pole zwraca <xref:Microsoft.Office.Interop.Outlook.Application> reprezentujący bieżące wystąpienie programu Outlook.  
   

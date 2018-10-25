@@ -23,12 +23,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231533"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948944"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemy konfiguracji serwera i klienta we wdrożeniach ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
   
  Niektóre serwery internetowe mogą blokować pliki z rozszerzeniem .dll, config i .mdf. Aplikacje systemu Windows obejmują zazwyczaj pliki z niektórymi z tych rozszerzeń. Jeśli użytkownik podejmie próbę uruchomienia [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji, która uzyskuje dostęp do zablokowanych plików na serwerze sieci Web, spowoduje zgłoszenie błędu. Zamiast odblokowywania wszystkich rozszerzeń plików [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] publikuje każdy plik aplikacji z rozszerzeniem pliku ".deploy" domyślnie. W związku z tym administrator musi tylko skonfigurować serwer sieci Web, aby odblokować następujące trzy rozszerzenia:  
   
--   .Application  
+- .Application  
   
--   Manifest  
+- Manifest  
   
--   .Deploy  
+- .Deploy  
   
- Jednak tę opcję można wyłączyć, usuwając zaznaczenie **rozszerzenie pliku ".deploy"** opcja [okno dialogowe Opcje publikowania](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), w którym to przypadku należy skonfigurować serwer sieci Web, aby odblokować wszystkie rozszerzenia plików używane w aplikacji.  
+  Jednak tę opcję można wyłączyć, usuwając zaznaczenie **rozszerzenie pliku ".deploy"** opcja [okno dialogowe Opcje publikowania](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), w którym to przypadku należy skonfigurować serwer sieci Web, aby odblokować wszystkie rozszerzenia plików używane w aplikacji.  
   
- Trzeba będzie skonfigurować manifest, .application i .deploy, na przykład korzystania z usług IIS, w którym nie zainstalowano [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], lub jeśli używasz innego serwera sieci Web (np. Apache).  
+  Trzeba będzie skonfigurować manifest, .application i .deploy, na przykład korzystania z usług IIS, w którym nie zainstalowano [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], lub jeśli używasz innego serwera sieci Web (np. Apache).  
   
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce i protokołu Secure Sockets Layer (SSL)  
  A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacja będzie działać prawidłowo za pośrednictwem protokołu SSL, z wyjątkiem sytuacji, gdy program Internet Explorer zgłasza monit o certyfikat SSL. Monit może być wywoływane, gdy ma się, że wystąpił problem z certyfikatem, takie jak kiedy nazwy lokacji nie są zgodne lub certyfikat wygasł. Zapewnienie [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] działa za pośrednictwem połączenia SSL, upewnij się, że certyfikat jest aktualny i że dane certyfikatu są zgodne dane lokacji.  
@@ -122,11 +122,11 @@ Jeśli używasz usług Internet Information Services (IIS) w systemie Windows Se
   
  W przypadku wdrożenia przy użyciu serwera usług IIS, uruchom inetmgr.exe, a następnie dodaj nowe typy plików dla domyślnej strony sieci Web:  
   
--   .Application i .manifest rozszerzeń typu MIME powinien być "application/x-ms aplikacji." Dla pozostałych typów plików w typie MIME powinien być "application/octet-stream".  
+- .Application i .manifest rozszerzeń typu MIME powinien być "application/x-ms aplikacji." Dla pozostałych typów plików w typie MIME powinien być "application/octet-stream".  
   
--   W przypadku utworzenia typu MIME rozszerzenia "*" i typ MIME "application/octet-stream" umożliwi plików odblokowany typu do pobrania. (Jednak zablokowane plików, których nie można pobrać typów, takie jak aspx i .asmx).  
+- W przypadku utworzenia typu MIME rozszerzenia "*" i typ MIME "application/octet-stream" umożliwi plików odblokowany typu do pobrania. (Jednak zablokowane plików, których nie można pobrać typów, takie jak aspx i .asmx).  
   
- Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania typy MIME w systemie Windows Server, zapoznaj się do artykułu bazy wiedzy Microsoft Knowledge Base KB326965, "Usług IIS 6.0 jest nie obsługiwać nieznane typy MIME" w [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+  Aby uzyskać szczegółowe instrukcje dotyczące konfigurowania typy MIME w systemie Windows Server, zapoznaj się do artykułu bazy wiedzy Microsoft Knowledge Base KB326965, "Usług IIS 6.0 jest nie obsługiwać nieznane typy MIME" w [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
   
 ## <a name="content-type-mappings"></a>Mapowanie typu zawartości  
  Podczas publikowania, za pośrednictwem protokołu HTTP, typu zawartości (znany także jako typ MIME) dla pliku .application powinien być "application/x-ms aplikacji." Jeśli masz [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] zainstalowane na serwerze, to zostanie ustawiona dla Ciebie automatycznie. Jeśli to nie jest zainstalowany, a następnie należy utworzyć skojarzenia typu MIME dla [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] katalog główny aplikacji (lub cały serwer).  

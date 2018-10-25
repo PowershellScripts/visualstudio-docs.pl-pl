@@ -16,12 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 435e4d852464a74a1dc4f418ffa9906c1e22791a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a05729efcc475fa99026d99abc24d09c2511a2b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939257"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Porady: tworzenie testu jednostkowego opartego na danych
 
@@ -69,7 +69,7 @@ public int AddIntegers(int first, int second)
  Aby przetestować `AddIntegers` metody, Utwórz źródło danych, która określa zakres wartości dla parametrów i sum, którzy mają być zwracane. W tym przykładzie utworzymy o nazwie bazy danych Sql Compact `MathsData` i tabelę o nazwie `AddIntegersData` zawierający następujące kolumny nazwy i wartości
 
 |Pierwszaliczba|SecondNumber|Suma|
-|-----------------|------------------|---------|
+|-|------------------|-|
 |0|1|1|
 |1|1|2|
 |2|-3|-1|

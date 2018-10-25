@@ -13,33 +13,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78ddc7ed811086622454e31d12ca5f1324d00da5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a2fafdaaa2d54cd445017ebd9120d8648bf7067
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141723"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942351"
 ---
 # <a name="supporting-multiple-document-views"></a>Obsługa wielu widoków dokumentu
-Musisz podać więcej niż jeden widok dokumentu przez utworzenie oddzielnych dokumentu danych i obiektów widoku dokumentu tego edytora. Niektórych przypadkach, w których byłoby widok dokumentu dodatkowe są:  
+Możesz podać więcej niż jeden widok dokumentu, tworząc oddzielny dokument dane i obiekty widoku dokumentu dla edytora. Czasami, w których będzie przydatny widok dokumentu dodatkowe są następujące:  
   
--   Nowa funkcja obsługi okna: ma edytora, aby zapewnić co najmniej dwa widoki tego samego typu, dzięki czemu użytkownik, który jest już otwarte w edytorze okna można otworzyć nowe okno, wybierając **nowe okno** polecenie **okna** menu.  
+- Nowe okno obsługi: ma tego edytora, aby zapewnić co najmniej dwa widoki tego samego typu, aby użytkownik, który jest już otwarte w edytorze okna można otworzyć nowe okno, wybierając **nowe okno** polecenia **okna** menu.  
   
--   Formularz i kod Wyświetlanie pomocy technicznej: ma edytora, aby zapewnić widoków o różnych typach. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], na przykład obejmuje zarówno w widoku formularza, jak i w widoku kodu.  
+- Formularz i kodu umożliwia wyświetlenie pomocy technicznej: ma tego edytora, aby zawierają widoki różnych typów. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], na przykład zawiera widok formularza i widoku kodu.  
   
- Aby uzyskać więcej informacji na ten temat zobacz procedurę CreateEditorInstance w pliku EditorFactory.cs w projekcie niestandardowego edytora utworzone przez szablon pakietu Visual Studio. Aby uzyskać więcej informacji na temat tego projektu, zobacz [wskazówki: tworzenie edytora niestandardowego](../extensibility/walkthrough-creating-a-custom-editor.md).  
+  Aby uzyskać więcej informacji na ten temat zobacz procedurę CreateEditorInstance w pliku EditorFactory.cs w projekcie niestandardowy edytor, utworzona przez szablon pakietu Visual Studio. Aby uzyskać więcej informacji na temat tego projektu, zobacz [wskazówki: Tworzenie niestandardowego edytora](../extensibility/walkthrough-creating-a-custom-editor.md).  
   
 ## <a name="synchronizing-views"></a>Synchronizowanie widoków  
- Podczas implementowania wiele widoków, obiekt danych dokumentu jest musi zachować wszystkie widoki zsynchronizowane z danymi. Można użyć obsługi interfejsy na zdarzeń <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> zsynchronizować wiele widoków z danymi.  
+ Podczas implementowania wielu widoków dokumentu obiekt danych jest musi zachować wszystkie widoki zsynchronizowane z danymi. Można użyć obsługi interfejsy na zdarzeń <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> do synchronizowania wielu widoków z danymi.  
   
- Jeśli nie używasz <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektu do synchronizowania wiele widoków, a następnie musi implementować własny system zdarzeń obsługiwać zmiany do obiektu danych dokumentu. Korzystając z różną szczegółowością aktualności wiele widoków. Ustawienie maksymalnej szczegółowości podczas wpisywania, w jednym widoku inne widoki są natychmiast zaktualizować. Innych widoków z minimalny poziom szczegółowości, nie zostaną zaktualizowane, dopóki ich aktywacji.  
+ Jeśli nie używasz <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiekt, aby zsynchronizować wiele widoków, a następnie należy zaimplementować własny system zdarzeń do obsługi zmiany wprowadzone do obiektu danych dokumentu. Różne poziomy szczegółowości umożliwia aktualizowanie wielu widoków. Ustawienie maksymalnej szczegółowości, podczas wpisywania w jednym widoku inne widoki zostaną zaktualizowane od razu. Za pomocą minimalna szczegółowość innych widoków nie są aktualizowane, dopóki ich aktywacji.  
   
 ## <a name="determining-whether-document-data-is-already-open"></a>Określanie, czy dane dokumentu jest już otwarty  
- Uruchomionej tabeli dokumentu (Normalizacją) w zintegrowane środowisko programistyczne (IDE) pomaga sprawdzić, czy dane dokumentu jest już otwarty, jak pokazano na poniższym diagramie.  
+ Uruchamianie tabeli dokumentu (Normalizacją) w zintegrowanym środowisku programistycznym (IDE) pomaga śledzić, czy dane dla dokumentu jest jeszcze otwarty, jak pokazano na poniższym diagramie.  
   
  ![DocDataView — grafika](../extensibility/media/docdataview.gif "DocDataView —")  
 Wiele widoków  
   
- Domyślnie każdy widok (obiekt widoku dokument) znajduje się w ramki okna (<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>). Jak już zanotowane, jednak dokumentu dane mogą być wyświetlane w wielu widoków. Aby włączyć tę opcję, Visual Studio sprawdza Normalizacją, aby określić, czy danego dokumentu jest już otwarty w edytorze. Gdy wywołuje IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> do tworzenia edytora, wartość inną niż NULL zwracane w `punkDocDataExisting` parametr wskazuje, że dokument jest już otwarty w innym edytorze. Aby uzyskać więcej informacji na temat funkcji Normalizacją zobacz [systemem tabeli dokumentu](../extensibility/internals/running-document-table.md).  
+ Domyślnie każdego widoku (obiekt widoku dokumentu) znajduje się w jego własnej ramki okna (<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>). Jak już wspomniano, jednak dokumentu dane mogą być wyświetlane w wielu widoków. Aby włączyć tę opcję, Visual Studio sprawdza Normalizacją, aby ustalić, czy danego dokumentu jest już otwarty w edytorze. Kiedy wywołuje IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> do tworzenia edytora, zwracane wartości innej niż NULL, w `punkDocDataExisting` parametr wskazuje, czy dokument jest już otwarty w innym edytorze. Aby uzyskać więcej informacji na temat funkcji Normalizacją, zobacz [uruchamianie tabeli dokumentu](../extensibility/internals/running-document-table.md).  
   
- W Twojej <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> implementacji badają obiekt danych dokumentu zwracane w `punkDocDataExisting` do ustalenia, czy dane dokumentu jest odpowiedni dla edytora. (Na przykład tylko dane HTML powinna być wyświetlana w przez edytor HTML.) Jeśli jest to odpowiednie, fabryką edytora powinien zapewnić drugi widok do danych. Jeśli `punkDocDataExisting` parametr nie jest `NULL`, istnieje możliwość, albo czy obiekt danych dokumentu jest otwarty w innym edytorze lub, bardziej prawdopodobne, dane dokumentu jest już otwarty w innym widoku o tym samym edytora. Jeśli dane dokumentu jest otwarty w edytorze różnych fabryką edytora nie obsługuje, Visual Studio nie można otworzyć fabryką edytora. Aby uzyskać więcej informacji, zobacz [porady: dołączanie widoków danych dokumentu](../extensibility/how-to-attach-views-to-document-data.md).
+ W swojej <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> implementacji, sprawdź obiekt danych dokumentu, które są zwracane w `punkDocDataExisting` ustalenie, czy dane dokumentu są odpowiednie dla Twojego edytora. (Na przykład HTML wyświetlone tylko dane powinny przez edytor HTML.) Jeśli jest to odpowiednie, fabryką Edytor powinien zapewniają drugi widok danych. Jeśli `punkDocDataExisting` parametr nie jest `NULL`, istnieje możliwość, albo czy obiekt danych dokument jest otwarty w innym edytorze, a bardziej prawdopodobne, dane dokumentu jest już otwarty w innym widoku z tym samym edytora. Jeśli dane dokumentu jest otwarty w innej edytor, który nie obsługuje usługi fabryka edytora, Visual Studio nie można otworzyć usługi fabryka edytora. Aby uzyskać więcej informacji, zobacz [porady: dołączanie widoków do danych dokumentu](../extensibility/how-to-attach-views-to-document-data.md).

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f6c23ea3ad48c361c12912926e0642f35f853a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 396a516efb166f382c7c9a9c76c30a874db7155a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283460"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938269"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Dodawanie rozszerzenia protokołu Language Server Protocol
 
@@ -132,10 +132,10 @@ LSP nie zawiera specyfikacji dostarczania tekstu kolorowania dla języków. Aby 
 
 4. Tworzenie *.pkgdef* pliku i Dodaj wiersz podobny do poniższego:
 
-  ```xml
-  [$RootKey$\TextMate\Repositories]
-  "MyLang"="$PackageFolder$\Grammars"
-  ```
+   ```xml
+   [$RootKey$\TextMate\Repositories]
+   "MyLang"="$PackageFolder$\Grammars"
+   ```
 
 5. Kliknij prawym przyciskiem myszy na pliki i wybierz **właściwości**. Zmiana **kompilacji** akcji **zawartości** i **Include w VSIX** właściwości na wartość true.
 
@@ -295,40 +295,40 @@ Wykonaj następujące kroki poniżej, aby dodać obsługę ustawień do rozszerz
 
 1. Dodaj plik w formacie JSON (na przykład *MockLanguageExtensionSettings.json*) w projekcie, który zawiera ustawienia i wartości domyślnych. Na przykład:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": -1
-  }
-  ```
+   }
+   ```
 2. Kliknij prawym przyciskiem myszy plik JSON, a następnie wybierz pozycję **właściwości**. Zmiana **kompilacji** akcji "Treści" i "Dołącz VSIX" właściwości na wartość true.
 
 3. Implementowanie elementów ConfigurationSections i zwrócić listę prefiksów dla ustawień zdefiniowanych w pliku JSON (w programie Visual Studio Code to mapującej nazwę sekcji konfiguracji w pliku package.json):
 
-  ```csharp
-  public IEnumerable<string> ConfigurationSections
-  {
+   ```csharp
+   public IEnumerable<string> ConfigurationSections
+   {
       get
       {
           yield return "foo";
       }
-  }
-  ```
+   }
+   ```
 4. Dodaj plik .pkgdef do projektu (Dodaj nowy plik tekstowy i zmień rozszerzenie pliku .pkgdef). Plik pkgdef powinien zawierać te informacje:
 
-  ```xml
+   ```xml
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\[settings-name]]
     @="$PackageFolder$\[settings-file-name].json"
-  ```
+   ```
 
 5. Kliknij prawym przyciskiem myszy plik .pkgdef i wybierz **właściwości**. Zmiana **kompilacji** akcji **zawartości** i **Include w VSIX** właściwości na wartość true.
 
 6. Otwórz *source.extension.vsixmanifest* pliku i Dodaj zasób w **zasobów** karty:
 
-  ![Edytowanie zasobów pakietu vspackage](media/lsp-add-vspackage-asset.png)
+   ![Edytowanie zasobów pakietu vspackage](media/lsp-add-vspackage-asset.png)
 
-  * **Type**: Microsoft.VisualStudio.VsPackage
-  * **Źródło**: plik w systemie plików
-  * **Ścieżka**: [ścieżka do Twojej *.pkgdef* plików]
+   * **Type**: Microsoft.VisualStudio.VsPackage
+   * **Źródło**: plik w systemie plików
+   * **Ścieżka**: [ścieżka do Twojej *.pkgdef* plików]
 
 ### <a name="user-editing-of-settings-for-a-workspace"></a>Edytowanie ustawień dla obszaru roboczego użytkownika
 
@@ -336,16 +336,16 @@ Wykonaj następujące kroki poniżej, aby dodać obsługę ustawień do rozszerz
 2. Użytkownik doda plik w *.vs* folder o nazwie *VSWorkspaceSettings.json*.
 3. Użytkownik dodaje wiersz do *VSWorkspaceSettings.json* pliku ustawienia zawiera serwer. Na przykład:
 
-  ```json
-  {
+   ```json
+   {
     "foo.maxNumberOfProblems": 10
-  }
-  ```
-### <a name="enabling-diagnostics-tracing"></a>Włączanie śledzenia diagnostyki
-Śledzenie diagnostyczne można włączyć w taki sposób, aby dane wyjściowe wszystkich wiadomości między klientem i serwerem, które mogą być przydatne podczas debugowania problemów.  Aby włączyć śledzenie diagnostyczne, wykonaj następujące czynności:
+   }
+   ```
+   ### <a name="enabling-diagnostics-tracing"></a>Włączanie śledzenia diagnostyki
+   Śledzenie diagnostyczne można włączyć w taki sposób, aby dane wyjściowe wszystkich wiadomości między klientem i serwerem, które mogą być przydatne podczas debugowania problemów.  Aby włączyć śledzenie diagnostyczne, wykonaj następujące czynności:
 
-1. Otwórz lub Utwórz plik ustawień obszaru roboczego *VSWorkspaceSettings.json* (patrz "Użytkownika edytowania ustawień dla obszaru roboczego").
-2. Dodaj następujący wiersz w pliku ustawień json:
+4. Otwórz lub Utwórz plik ustawień obszaru roboczego *VSWorkspaceSettings.json* (patrz "Użytkownika edytowania ustawień dla obszaru roboczego").
+5. Dodaj następujący wiersz w pliku ustawień json:
 
 ```json
 {

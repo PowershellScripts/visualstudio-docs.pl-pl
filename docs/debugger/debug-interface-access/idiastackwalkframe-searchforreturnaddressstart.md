@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkFrame::searchForReturnAddressStart | Dokumentacja firmy Microsoft
+title: Idiastackwalkframe::searchforreturnaddressstart — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2581233ceaba4ccf7d4e8593caf7f8b4dd306364
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b8c3bb2f26d67d08c0308ec3b47877d12ee81164
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463725"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936502"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
-Wyszukuje ramka stosu określony dla adres zwrotny lub prawie określony adres.  
+Wyszukuje ramki określonego stosu, dla adres zwrotny po lub w pobliżu podanym adresem.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,16 +36,16 @@ HRESULT searchForReturnAddressStart (
   
 #### <a name="parameters"></a>Parametry  
  `frame`  
- [in] [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiekt, który reprezentuje bieżącej ramki stosu.  
+ [in] [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiekt, który reprezentuje bieżącą ramkę stosu.  
   
  `startAddress`  
- [in] Jest adresem pamięci wirtualnej, z którego można rozpocząć wyszukiwanie.  
+ [in] Adres pamięci wirtualnej, z którego należy rozpocząć wyszukiwanie.  
   
  `returnAddress`  
- [out] Zwraca adres, aby zwracany najbliższej funkcji `startAddress`.  
+ [out] Zwraca funkcję najbliższej zwrotny adres, który `startAddress`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiastackwalkframe —](../../debugger/debug-interface-access/idiastackwalkframe.md)   

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c70d13237b1d6fb3bfac130e97d3516efd306569
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 2d686d51216141ccf2960a9b6cffd0ea9aafb329
+ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101176"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991617"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
@@ -64,7 +64,7 @@ Informacje dodatkowe:
 
 ## <a name="interactive-window"></a>Okno interaktywne
 
-Dla każdego środowiska Python, wiadomo, że program Visual Studio możesz łatwo otworzyć tego samego środowiska interaktywnego (REPL) dla interpretera języka Python, bezpośrednio z poziomu programu Visual Studio, a nie przy użyciu oddzielnych wiersza polecenia. Można łatwo przełączać się między środowiskami, jak również. (Aby otworzyć osobnym wierszu polecenia, wybierz żądane środowiska w **środowiska Python** okna, następnie wybierz pozycję **Otwórz w programie PowerShell** polecenia jak wyjaśniono wcześniej w [pomocy technicznej dla wielu interpretery](#support-for-multipleiinterpreters).)
+Dla każdego środowiska Python, wiadomo, że program Visual Studio możesz łatwo otworzyć tego samego środowiska interaktywnego (REPL) dla interpretera języka Python, bezpośrednio z poziomu programu Visual Studio, a nie przy użyciu oddzielnych wiersza polecenia. Można łatwo przełączać się między środowiskami, jak również. (Aby otworzyć osobnym wierszu polecenia, wybierz żądane środowiska w **środowiska Python** okna, następnie wybierz pozycję **Otwórz w programie PowerShell** polecenia jak wyjaśniono wcześniej w [pomocy technicznej dla wielu interpretery](#support-for-multiple-interpreters).)
 
 ![Oknie interakcyjnym środowiska Python w programie Visual Studio](media/interactive-window.png)
 
@@ -179,102 +179,123 @@ Visual Studio 2015 i starsze są dostępne pod adresem [visualstudio.microsoft.c
 > [!Important]
 > Funkcje są w pełni obsługiwane i zarządzania dla najnowszej wersji programu Visual Studio. Funkcje są dostępne w starszych wersjach, ale nie są zachowywane aktywnie.
 
-| Obsługa w języku Python | 2017 | 2015 | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Zarządzanie wieloma interpretery | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Automatyczne wykrywanie popularnych interpretery | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Dodaj niestandardowe interpretery | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Środowiska wirtualne | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Instalowanie narzędzia PIP/łatwe | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+|          Obsługa w języku Python          |   2017   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|----------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+|   Zarządzanie wieloma interpretery   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| Automatyczne wykrywanie popularnych interpretery | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|     Dodaj niestandardowe interpretery      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|       Środowiska wirtualne       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|         Instalowanie narzędzia PIP/łatwe         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| System projektu | 2017 | 2015 | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Nowy projekt z istniejącego kodu | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Pokaż wszystkie pliki | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Kontrola źródła | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Integracja z usługą Git | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004;<sup>1</sup> | &#10007; |
+
+|         System projektu         |   2017   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ |      2012 Pro+       | 2010 SP1 Pro+ |
+|--------------------------------|----------|----------|-----------|--------------|----------|-----------|----------------------|---------------|
+| Nowy projekt z istniejącego kodu | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
+|         Pokaż wszystkie pliki         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
+|         Kontrola źródła         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
+|        Integracja z usługą Git         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;<sup>1</sup> |   &#10007;    |
+
 <br/>
 
-| Edytowanie | 2017 | 2015 | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Wyróżnianie składni | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Autouzupełnianie | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Pomocy dotyczącej sygnatur | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Szybkie informacje | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Widok przeglądarki/class obiektu | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Pasek nawigacyjny | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Przejdź do definicji | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Przejdź do | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Znajdź wszystkie odwołania | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Automatyczne wcięcie | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Formatowanie kodu | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Refaktoryzuj — zmiana nazwy | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Refaktoryzacja - extrahovat metodu | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Refaktoryzuj — Dodaj/Usuń import | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| PyLint | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+
+|           Edytowanie            |   2017   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+|     Wyróżnianie składni      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|        Autouzupełnianie         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|        Pomocy dotyczącej sygnatur        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|          Szybkie informacje          | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|  Widok przeglądarki/class obiektu   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|        Pasek nawigacyjny        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|       Przejdź do definicji       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|         Przejdź do          | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|     Znajdź wszystkie odwołania      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|       Automatyczne wcięcie       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|       Formatowanie kodu        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|      Refaktoryzuj — zmiana nazwy       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|  Refaktoryzacja - extrahovat metodu   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| Refaktoryzuj — Dodaj/Usuń import | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|            PyLint            | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Okno interaktywne | 2017 | 2015 | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Okno interaktywne | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Program IPython z wykresami wbudowane | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+
+|     Okno interaktywne     |   2017   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|----------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+|     Okno interaktywne     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| Program IPython z wykresami wbudowane | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Pulpitu | 2017 | 2015 | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Aplikacja konsoli/Windows | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| WPF v Ironpythonu (przy użyciu projektanta XAML) | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| IronPython Windows Forms | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+
+|               Pulpitu               |   2017   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|-------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+|     Aplikacja konsoli/Windows     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| WPF v Ironpythonu (przy użyciu projektanta XAML) | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|      IronPython Windows Forms       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| sieć Web | 2017 | 2015 | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Projekt sieci web Django | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Projekt sieci web Bottle | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Projekt sieci web Flask | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Projekt sieci web ogólnego | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
+
+|         sieć Web         |   2017   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|---------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+| Projekt sieci web Django  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| Projekt sieci web Bottle  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|  Projekt sieci web Flask  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+| Projekt sieci web ogólnego | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Azure | 2017 | 2015 | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Wdrażanie witryny sieci web | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004;<sup>2</sup> |
-| Wdrażanie w roli sieci web | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
-| Wdrażanie do roli procesu roboczego | ? | ? | ? | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
-| Uruchamianie w emulatorze platformy Azure | ? | ? | ? | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
-| Debugowanie zdalne | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>6</sup> | &#10004;<sup>8</sup> | &#10004;<sup>8</sup> | &#10007; |
-| Dołącz Eksploratora serwera | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>7</sup> | &#10004;<sup>7</sup> | &#10007; | &#10007; |
+
+|         Azure          |   2017   |   2015   | 2013 Comm | Pulpit 2013 |       2013 w sieci web       |      2013 Pro+       |      2012 Pro+       |    2010 SP1 Pro+     |
+|------------------------|----------|----------|-----------|--------------|----------------------|----------------------|----------------------|----------------------|
+|   Wdrażanie witryny sieci web   | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       |       &#10004;       | &#10004;<sup>2</sup> |
+|   Wdrażanie w roli sieci web   | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
+| Wdrażanie do roli procesu roboczego  |    ?     |    ?     |     ?     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
+| Uruchamianie w emulatorze platformy Azure  |    ?     |    ?     |     ?     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
+|    Debugowanie zdalne    | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>6</sup> | &#10004;<sup>8</sup> | &#10004;<sup>8</sup> |       &#10007;       |
+| Dołącz Eksploratora serwera | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>7</sup> | &#10004;<sup>7</sup> |       &#10007;       |       &#10007;       |
+
 <br/>
 
-| Szablony Django | 2017 | 2015 | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Debugowanie | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Autouzupełnianie | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10004; | &#10004; |
-| Autouzupełnianie dla CSS i JavaScript | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007; | &#10007; |
+
+|           Szablony Django           |   2017   |   2015   | 2013 Comm | Pulpit 2013 |       2013 w sieci web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
+|--------------------------------------|----------|----------|-----------|--------------|----------------------|----------------------|-----------|---------------|
+|              Debugowanie               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
+|            Autouzupełnianie             | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10004;  |   &#10004;    |
+| Autouzupełnianie dla CSS i JavaScript | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007;  |   &#10007;    |
+
 <br/>
 
-| Debugowanie | 2017 | 2015 | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Debugowanie | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Debugowanie bez projektu | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
-| Debugowanie — Dołącz do edycji | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; |
-| Debugowanie w trybie mieszanym | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
-| Zdalne debugowanie (Windows, Mac OS X, Linux) | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; |
-| Okno interaktywne debugowania | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+
+|                  Debugowanie                  |   2017   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|---------------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+|                  Debugowanie                  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|         Debugowanie bez projektu         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|        Debugowanie — Dołącz do edycji        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
+|            Debugowanie w trybie mieszanym             | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
+| Zdalne debugowanie (Windows, Mac OS X, Linux) | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
+|          Okno interaktywne debugowania           | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
 <a name="matrix-profiling"></a>
 
-| Profilowanie | 2017 | 2015 | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Profilowanie | &#10004; | &#10004; | &#10004; | &#10007; | &#10007; | &#10004; | &#10004; | &#10004; |
+
+| Profilowanie |   2017   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|-----------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+| Profilowanie | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
+
 <br/>
 
-| Test | 2017 | 2015 | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Eksplorator testów | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
-| Uruchom test | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
-| Debuguj test | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
+
+|     Test      |   2017   |   2015   | 2013 Comm | Pulpit 2013 | 2013 w sieci web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|---------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
+| Eksplorator testów | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
+|   Uruchom test    | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
+|  Debuguj test   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
+
 <br/>
 
 1. Obsługa Git programu Visual Studio 2012 jest dostępny w Visual Studio Tools dla rozszerzenia cyfry, dostępne na [galerii Visual Studio](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).

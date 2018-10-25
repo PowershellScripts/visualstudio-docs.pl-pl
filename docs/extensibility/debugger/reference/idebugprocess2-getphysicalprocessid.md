@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f35f88f735e16590549a3787a2a829e896ba943
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0aa4cd077a047345efe91cc0214d7761faf63f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931730"
 ---
 # <a name="idebugprocess2getphysicalprocessid"></a>IDebugProcess2::GetPhysicalProcessId
 Pobiera identyfikator procesu systemu.  
@@ -41,10 +41,10 @@ int GetPhysicalProcessId(
   
 #### <a name="parameters"></a>Parametry  
  `pdwProcessId`  
- [out] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury, która jest wypełniane informacje o identyfikatorze procesu systemu.  
+ [out] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) strukturę, która jest wypełniane informacje identyfikujące procesu systemu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

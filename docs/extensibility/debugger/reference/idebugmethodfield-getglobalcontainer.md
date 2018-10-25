@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb97f61c7c475f41280b78d43c0842e5546fab2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc7ead16cf796d5ecdd98adfd98bc28b6b2d9fbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113295"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947887"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
-Pobiera kontener globalnej metody.  
+Pobiera kontener globalnego metody.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int GetGlobalContainer(
   
 #### <a name="parameters"></a>Parametry  
  `ppClass`  
- [out] Zwraca [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) reprezentujący modułu, w którym ta metoda jest zdefiniowany.  
+ [out] Zwraca [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) modułu, w którym zdefiniowano tej metody reprezentująca.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Zwrócona [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) obiekt reprezentuje cały moduł i jest obiektem sztuczne, oznacza to, moduł sam nie rzeczywiste klasy ale może być reprezentowany przez `IDebugClassField` obiektu, dzięki czemu różne elementy modułu wyliczone i odnalezione.  
+ Zwrócony [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) obiekt reprezentuje cały moduł i jest obiektem sztuczny, oznacza to, że moduł sam nie rzeczywista klasa ale może być reprezentowany przez `IDebugClassField` obiektu, dzięki czemu różne elementy modułu być wyliczone i odnalezione.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

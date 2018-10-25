@@ -12,50 +12,50 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a10c8db7a9706c406cb192f9418c1fd8d04e888a
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 0920c9a506adaf562a8acc77b2b030e461f11ed1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934897"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Porady: zbieranie danych pobierania próbek na poziomie wiersza
-Próbkowanie na poziomie wiersza jest możliwość określenia, gdzie w kodzie funkcji obciążenie procesora, takich jak funkcja, która ma wysoką wyłącznych próbek, procesor ma poświęcić większość czasu profilera.  
+Próbkowanie na poziomie wiersza jest możliwość określenia, gdzie w kodzie funkcji obciążającą procesor, takich jak funkcja, która ma wysoką wyłącznych próbek, procesor musi spędzają większość czasu profilera.  
   
 ## <a name="overview"></a>Omówienie  
- Próbkowanie na poziomie wiersza, profilera przeprowadzi program stos wywołań w ustalonych odstępach czasu i agreguje wyniki. Te wyniki wskazują, jakie instrukcje procesor było wykonywane, gdy zostały próbki. Zebrane dane dotyczące wyłącznych próbek jest następnie analizę w celu identyfikowania wierszy kodu i wskaźnik instrukcji (IP).  
+ Pobierania próbek na poziomie wiersza, program profilujący przedstawia stos wywołań programu w ustalonych odstępach czasu i agreguje tych wyników. Te wyniki wskazują, jakie instrukcje procesor był wykonywany, gdy zostały pobrane próbki. Zebrane dane dotyczące próbek wyłącznych są następnie analizowane w celu identyfikacji wierszy kodu i wskaźnik instrukcji (IP).  
   
- Próbkowanie na poziomie wiersza działa w przypadku zarządzanych, jak również natywnego kodu. Raporty wydajności, które zawierają te dane obejmują widok linii i widok modułów.  
+ Próbkowanie na poziomie wiersza działa dla kodu zarządzanego, jak również natywnych. Raporty dotyczące wydajności, które wyświetlają dane te obejmują widok wierszy i widok modułów.  
   
- Informacje o begin/end znaku nie jest dostępna dla kodu natywnego. Wielowierszowy instrukcje wiersza rozpocząć informacji nie jest dostępna dla kodu natywnego; tylko wiersza końcowego informacje są dostępne.  
+ Informacje o znaku rozpoczęcia/zakończenia nie jest dostępne dla kodu natywnego. Dla instrukcji wielowierszowego wiersz rozpocząć informacji jest niedostępna dla kodu natywnego; dostępne są tylko informacje zakończenia wiersza.  
   
-### <a name="available-data"></a>Dostępnych danych  
- Dostępne próbkowania na poziomie wiersza danych obejmuje następujące informacje:  
+### <a name="available-data"></a>Dostępne dane  
+ Dane dostępne próbkowania na poziomie wiersza zawiera następujące informacje:  
   
--   Nazwa funkcji.  
+- Nazwa funkcji.  
   
--   Adres funkcji.  
+- Adres funkcji.  
   
--   Wiersze rozpocząć — numer wiersza próbki kodu.  
+- Rozpocznij wiersze — numer wiersza, próbki kodu.  
   
--   Koniec linii - końcowy numer wiersza źródłowego. Zazwyczaj jest taka sama jak danych "Wiersza begin", z wyjątkiem po jednej instrukcji program obejmuje wiele wierszy kodu źródłowego.  
+- Koniec linii — końcowy numer wiersza źródła. Ogólnie jest taka sama jak "Początek wiersza" danych, z wyjątkiem sytuacji, gdy pojedynczej instrukcji program obejmuje kilka wierszy kodu źródłowego.  
   
--   Znaki rozpocząć - kolumnę początku próbka. Zwykle jest to 0 z wyjątkiem przypadków, gdy jeden wiersz zawiera wiele instrukcji programu.  
+- Rozpocznij znaków — kolumnę początku próbka. Zwykle jest to 0, z wyjątkiem sytuacji, gdy jeden wiersz zawiera wiele instrukcji programu.  
   
--   Znak end - końcowy kolumny próbka.  
+- Końcowy znak — w końcowej kolumny próbka.  
   
--   Adres IP — adres, w której próbka została wykonana (tylko w widoku IP).  
+- Adres IP — adres, w której próbka została wykonana (tylko w widoku adresów IP).  
   
- W **modułów** wyświetlić, jeśli funkcja statystyki na poziomie wiersza, statystyki są zagnieżdżone w każdej funkcji. Ponadto przedstawiono statystyki na poziomie protokołu IP, które są zagnieżdżone w każdym wierszu.  
+  W **modułów** wyświetlić, jeśli funkcja statystyki na poziomie wiersza, statystyki są zagnieżdżone w każdej funkcji. Ponadto przedstawiono statystyki na poziomie adresów IP, które zostały zagnieżdżone w każdym wierszu.  
   
-### <a name="turn-off-line-level-sampling-for-managed-code"></a>Wyłącz pobierania próbek na poziomie wiersza dla zarządzanego kodu  
- Próbkowanie na poziomie wiersza jest domyślnie włączona. Można wyłączyć kolekcji danych na poziomie wiersza dla zarządzanego kodu za pomocą jednej z następujących poleceń:  
+### <a name="turn-off-line-level-sampling-for-managed-code"></a>Wyłącz próbkowanie poziomie wiersza dla kodu zarządzanego  
+ Próbkowanie na poziomie wiersza jest domyślnie włączona. Można wyłączyć zbieranie danych na poziomie wiersza dla kodu zarządzanego przy użyciu jednej z następujących poleceń:  
   
 -   Przed rozpoczęciem profilowania, wpisz **VSPerfCLREnv /samplelineoff**. Dotyczy to zarówno aplikacji i usług.  
   
      — lub —  
   
--   Podczas uruchamiania aplikacji, wpisz **VSPerfCmd /lineoff \<inne argumenty >**.  
+-   Podczas uruchamiania aplikacji, wpisz **VSPerfCmd/lineoff \<inne argumenty >**.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   

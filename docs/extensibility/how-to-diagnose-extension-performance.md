@@ -11,12 +11,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 8ef7b61eca40c1a5c74deeb0b3e61de0df8a6be1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934928"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Mierzenie wpływu rozszerzenie przy uruchamianiu
 
@@ -169,11 +169,11 @@ W przykładzie powyżej niektóre ciekawe wywołania będą stosów:
 
 1. We/Wy przy użyciu `System.IO` klasy: całkowity koszt te klatki nie może być zbyt drogie w śledzeniu, są potencjalną przyczyną problemu, ponieważ szybkość operacji We/Wy pliku będą się różnić od maszyny.
 
-  ![system We/Wy ramki](media/perfview-system-io-frames.png)
+   ![system We/Wy ramki](media/perfview-system-io-frames.png)
 
 2. Blokuje wywołania oczekiwanie na inne zadanie asynchroniczne: W tym przypadku całkowity czas reprezentuje czas główny wątek jest zablokowany na ukończenie zadań asynchronicznych.
 
-  ![blokowanie ramek wywołania](media/perfview-blocking-call-frames.png)
+   ![blokowanie ramek wywołania](media/perfview-blocking-call-frames.png)
 
 Jedną z innymi widokami w śledzenia, które mogą być przydatne do określenia wpływu będzie **stosy ładowania obrazów**. Można zastosować tych samych filtrów, jakie mają zastosowanie do **wątku stosów czasu** służy do wyświetlania i Dowiedz się, wszystkie zestawy, ładowane z powodu kod wykonywany przez pakiet załadowane automatycznie.
 

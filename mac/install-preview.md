@@ -1,5 +1,5 @@
 ---
-title: Zwalnia instalowania wersji zapoznawczej
+title: Instalowanie wersji zapoznawczej
 description: Instrukcje dotyczące aktualizacji programu Visual Studio dla komputerów Mac i uzyskiwania dostępu do wersji w wersji zapoznawczej.
 author: conceptdev
 ms.author: crdun
@@ -7,16 +7,16 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: 9771040b9e60b7942810335967b3c5478c4c72d9
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: db90e2d4a1c6d80e579c125668b48c057595cc18
+ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624358"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991539"
 ---
-# <a name="installing-preview-releases"></a>Zwalnia instalowania wersji zapoznawczej
+# <a name="install-a-preview-release"></a>Instalowanie wersji zapoznawczej
 
-Przed oficjalnym wydaniu nowej wersji programu Visual Studio dla komputerów Mac, jest on zwalniany w wersji zapoznawczej. Wersja zapoznawcza daje szansę wypróbować nowe funkcje i uzyskać najnowsze poprawki błędów, aby w pełni są włączone do produktu.
+Przed oficjalnym wydaniu nowej wersji programu Visual Studio dla komputerów Mac, jest dostępne w wersji zapoznawczej. Wersja zapoznawcza daje szansę wypróbować nowe funkcje i uzyskać najnowsze poprawki błędów, aby w pełni są włączone do produktu.
 
 Wersji zapoznawczych programu Visual Studio dla komputerów Mac są dystrybuowane jako aktualizację, a nie za pośrednictwem osobnego pobrania. Program Visual Studio for Mac ma trzy updater kanały, zgodnie z opisem w [aktualizacji](update.md) artykułu: stabilne, Beta i Alpha.
 

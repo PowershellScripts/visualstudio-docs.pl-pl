@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c61d2ab349a245f4720c69479519c54cc078f882
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd62abec72694689f810073a375f7ed9e4173bf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228510"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950397"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Wariant wymiarów tekstury połowie/kwartał
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Maksymalne wymiary tekstury na tekstury, które nie są renderowane elementów d
 ## <a name="remarks"></a>Uwagi  
  Wymiary tekstury są ograniczane na każde wywołanie `ID3D11Device::CreateTexture2D` tworząca źródłową teksturę. W szczególności wymiarów tekstury są ograniczone, gdy obiekt D3D11_TEXTURE2D_DESC przekazany w `pDesc` tekstury, które jest używane w czasie renderowania; opis:  
   
--   Element członkowski BindFlags ma tylko D3D11_BIND_SHADER_RESOURCE ustawiona jest flaga.  
+- Element członkowski BindFlags ma tylko D3D11_BIND_SHADER_RESOURCE ustawiona jest flaga.  
   
--   Element członkowski MiscFlags nie ma flagi D3D11_RESOURCE_MISC_TILE_POOL lub ustawiona flaga D3D11_RESOURCE_MISC_TILED (fragmentacji zasobów nie są rozmiaru).  
+- Element członkowski MiscFlags nie ma flagi D3D11_RESOURCE_MISC_TILE_POOL lub ustawiona flaga D3D11_RESOURCE_MISC_TILED (fragmentacji zasobów nie są rozmiaru).  
   
--   Format tekstury jest obsługiwany jako obiekt docelowy renderowania — zgodnie z ustaleniami D3D11_FORMAT_SUPPORT_RENDER_TARGET — co jest niezbędne do zmniejszenia rozmiaru tekstury. Formaty BC1, BC2 i BC3 również są obsługiwane, nawet jeśli nie są obsługiwane jako elementy docelowe renderowania.  
+- Format tekstury jest obsługiwany jako obiekt docelowy renderowania — zgodnie z ustaleniami D3D11_FORMAT_SUPPORT_RENDER_TARGET — co jest niezbędne do zmniejszenia rozmiaru tekstury. Formaty BC1, BC2 i BC3 również są obsługiwane, nawet jeśli nie są obsługiwane jako elementy docelowe renderowania.  
   
- Jeśli początkowe dane są dostarczane przez aplikację, ten wariant skaluje danych tekstury do odpowiedniego rozmiaru, zanim utworzy tekstury. Jeśli początkowe dane są dostarczane w formacie skompresowanego bloku, takich jak BC1, BC2 lub BC3, dekodowana, skalować i ponownie zakodowany, zanim zostaną one użyte do utworzenia mniejszych tekstury. (Rodzaj kompresji opartej na blokach oznacza, że proces bardzo dekodowania skalowania zakodować w prawie zawsze powoduje, że obniżyć jakość obrazu niż gdy tekstury skompresowanego bloku jest generowany na podstawie skalowana wersja teksturę, która nie była wcześniej zakodowany).  
+  Jeśli początkowe dane są dostarczane przez aplikację, ten wariant skaluje danych tekstury do odpowiedniego rozmiaru, zanim utworzy tekstury. Jeśli początkowe dane są dostarczane w formacie skompresowanego bloku, takich jak BC1, BC2 lub BC3, dekodowana, skalować i ponownie zakodowany, zanim zostaną one użyte do utworzenia mniejszych tekstury. (Rodzaj kompresji opartej na blokach oznacza, że proces bardzo dekodowania skalowania zakodować w prawie zawsze powoduje, że obniżyć jakość obrazu niż gdy tekstury skompresowanego bloku jest generowany na podstawie skalowana wersja teksturę, która nie była wcześniej zakodowany).  
   
- Włączenie mapy mip dla tekstury wariant odpowiednio zmniejsza liczbę poziomów mip — co mniej podczas skalowania w połowie lub dwóch mniejszej podczas skalowania do rozmiaru kwartału.  
+  Włączenie mapy mip dla tekstury wariant odpowiednio zmniejsza liczbę poziomów mip — co mniej podczas skalowania w połowie lub dwóch mniejszej podczas skalowania do rozmiaru kwartału.  
   
 ## <a name="example"></a>Przykład  
  Ten wariant zmienia rozmiar tekstury w czasie wykonywania przed wywołaniem do `CreateTexture2D`. Zalecamy takie podejście dla kodu produkcyjnego, ponieważ pełnym wymiarze tekstury zużywać więcej miejsca na dysku i dodatkowego kroku może zwiększyć czas ładowania w swojej aplikacji — zwłaszcza w przypadku skompresowanych tekstury, które wymagają znaczących obliczeniową zasoby do zakodowania. Zamiast tego zaleca się rozmiar tekstury w trybie offline przy użyciu edytora obrazów lub procesor obrazów, który jest częścią potoku kompilacji. Tych metod zmniejszyć wymagania dotyczące miejsca na dysku i wyeliminować koszty środowiska uruchomieniowego w aplikacji i zapewniają więcej czasu na przetwarzanie tak, aby można zachować najlepszej jakości obrazu podczas zmniejszania lub kompresowanie swoje tekstury.  

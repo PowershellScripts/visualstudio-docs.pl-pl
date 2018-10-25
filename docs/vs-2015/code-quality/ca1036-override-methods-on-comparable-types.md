@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1069316d0a027678b1161a948765bb81f1de68de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67fa52a674b9e3d77d7e3eed7493bf28c1b2514d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948789"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Przesłaniaj metody na typach porównywalnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|
@@ -45,15 +46,15 @@ ms.locfileid: "49202829"
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy zastąpić <xref:System.Object.Equals%2A>. Jeśli język programowania obsługuje przeładowania operatora, należy podać następujące operatory:
 
--   op_equality —
+- op_equality —
 
--   op_inequality —
+- op_inequality —
 
--   op_LessThan
+- op_LessThan
 
--   op_greaterthan —
+- op_greaterthan —
 
- W języku C# tokenów, które są używane do reprezentowania tych operatorów są następujące: ==,! =, \<, oraz >.
+  W języku C# tokenów, które są używane do reprezentowania tych operatorów są następujące: ==,! =, \<, oraz >.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Jest bezpieczne pominąć ostrzeżenie od tej reguły, gdy naruszenia przyczyną jest brak operatory języka programowania nie obsługuje przeładowania operatora, jak w przypadku języka Visual Basic .NET. Jest również bezpiecznie Pomijaj ostrzeżeń dla tej reguły, gdy generowane na operatory równości, inne niż op_equality — Jeśli stwierdzisz, że implementacja operatorów nie ma sensu w kontekście swojej aplikacji. Jednak należy zawsze za pośrednictwem op_equality — i == — operator w przypadku przesłania metody Object.Equals.

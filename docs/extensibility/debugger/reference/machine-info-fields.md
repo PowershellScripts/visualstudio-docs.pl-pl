@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d0ff6f75c0ee17bef57b1f2632c4d6926948528
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 631ef4bbb23d4b0cedbf86d7eedb019580cf7e5b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125755"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942507"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
-Określa, jakie informacje do pobrania dla określonego komputera.  
+Określa, jakiego rodzaju informacje należy pobrać dla określonego komputera.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,20 +46,20 @@ public enum enum_MACHINE_INFO_FIELDS {
   
 ## <a name="members"></a>Elementy członkowskie  
  MCIF_NAME  
- Inicjowanie użycia `bstrName` pola w strukturze.  
+ Inicjowanie bądź użyj `bstrName` pole w strukturze.  
   
  MCIF_FLAGS  
- Inicjowanie użycia `Flags` pola w strukturze.  
+ Inicjowanie bądź użyj `Flags` pole w strukturze.  
   
  MIF_ALL  
- Inicjowanie/użycie wszystkich pól w strukturze.  
+ Inicjowanie bądź użyj wszystkie pola w strukturze.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości są przekazywane do [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) metody, aby wskazać, którzy członkowie [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) struktury mają być zainicjowany.  
+ Te wartości są przekazywane do [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) metodę, aby wskazać, którzy członkowie [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) struktury, które mają zostać zainicjowane.  
   
- Również w `Fields` członkiem `MACHINE_INFO` struktury, aby wskazać pola, które są używane i prawidłowe.  
+ Używany również w `Fields` członkiem `MACHINE_INFO` struktury, aby wskazać, które pola są używane i prawidłowy.  
   
- Te flagi mogą być łączone z bitowego `OR`.  
+ Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

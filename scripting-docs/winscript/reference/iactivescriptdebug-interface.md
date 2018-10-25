@@ -14,28 +14,28 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1e1d0c1cf51c63f1bb3fcd90ae72520da907e50
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0e21f4c99da886bc4907acf8b0934e1b46d57689
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24793339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942091"
 ---
 # <a name="iactivescriptdebug-interface"></a>Interfejs IActiveScriptDebug
-Implementowana przez aparatów skryptów, w tym obsługi debugowania. Zazwyczaj obiekt, który implementuje `IActiveScriptDebug` również interfejs implementuje `IActiveScript` interfejsu. Jeśli jest to możliwe, należy wywołać `IActiveScript::QueryInterface` metodę, aby uzyskać `IActiveScriptDebug` interfejsu.  
+Implementowany przez aparatów skryptów, w tym obsługę debugowania. Zazwyczaj obiekt, który implementuje `IActiveScriptDebug` również interfejs implementuje `IActiveScript` interfejsu. Jeśli jest to możliwe, należy wywołać `IActiveScript::QueryInterface` metodę, aby uzyskać `IActiveScriptDebug` interfejsu.  
   
- `IActiveScriptDebug` Interfejsu udostępnia środki do:  
+ `IActiveScriptDebug` Interfejs udostępnia środki do:  
   
--   Hostów inteligentnych na przejęcie zarządzania dokumentu.  
+- Inteligentne hosty do zarządzania dokumentami.  
   
--   Menedżera debugowania procesu synchronizacji debugowania z wielu aparatów skryptów.  
+- Menedżer debugowania procesów do synchronizowania debugowanie wielu aparatów skryptów.  
   
- Oprócz dziedziczone z metody `IUnknown`, `IActiveScriptDebug` interfejsu udostępnia następujące metody.  
+  Oprócz metod odziedziczone `IUnknown`, `IActiveScriptDebug` interfejsu udostępnia następujące metody.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[IActiveScriptDebug::GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)|Zwraca atrybuty tekstu dla dowolnego bloku skryptu tekstu.|  
-|[IActiveScriptDebug::GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)|Zwraca atrybuty tekstu dla dowolnego skryptlet.|  
+|[IActiveScriptDebug::GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)|Zwraca atrybuty tekstu dla dowolnego bloku tekst skryptu.|  
+|[IActiveScriptDebug::GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)|Zwraca atrybuty tekstu dla dowolnego scriptlet.|  
 |[IActiveScriptDebug::EnumCodeContextsOfPosition](../../winscript/reference/iactivescriptdebug-enumcodecontextsofposition.md)|Deleguje do `IDebugDocumentContext::EnumCodeContexts`.|

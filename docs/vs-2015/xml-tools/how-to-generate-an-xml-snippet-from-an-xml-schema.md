@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7911a23530a8aea7aa93e52f23f4aeb473e35c6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb03fba400e20227155a2528b8aaf0b28f7761a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951473"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Porady: generowanie fragmentu kodu XML na podstawie schematu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,25 +29,25 @@ Edytor XML ma możliwość generowania fragmentów kodu XML na podstawie schemat
   
  Ta funkcja jest dostępna tylko w przypadku elementów. Ponadto obowiązują następujące reguły:  
   
--   Element musi mieć powiązany typ schematu; oznacza to, że element musi być prawidłowa dla niektórych skojarzonego schematu. Typ schematu nie może być abstrakcyjny i typ musi zawierać wymaganych atrybutów i/lub wymaganych elementów podrzędnych.  
+- Element musi mieć powiązany typ schematu; oznacza to, że element musi być prawidłowa dla niektórych skojarzonego schematu. Typ schematu nie może być abstrakcyjny i typ musi zawierać wymaganych atrybutów i/lub wymaganych elementów podrzędnych.  
   
--   Bieżący element w edytorze może być pusty, bez atrybutów. Na przykład poniżej przedstawiono wszystkie ważne  
+- Bieżący element w edytorze może być pusty, bez atrybutów. Na przykład poniżej przedstawiono wszystkie ważne  
   
-    -   `<Account`  
+  -   `<Account`  
   
-    -   `<Account>`  
+  -   `<Account>`  
   
-    -   `<Account></Account>`  
+  -   `<Account></Account>`  
   
--   Kursor musi znajdować się natychmiast na prawo od nazwy elementu.  
+- Kursor musi znajdować się natychmiast na prawo od nazwy elementu.  
   
- Wygenerowany fragment kodu zawiera wszystkie wymagane atrybuty i elementy. Jeśli `minOccurs` jest większa niż jeden, minimalna wymagana liczba wystąpień tego elementu znajduje się we fragmencie, maksymalnie 100 wystąpień. Naprawiono dowolnej wartości znajdujące się w wyniku schematu w stałych wartości w tym fragmencie kodu. `xsd:any` i `xsd:anyAttribute` elementy są ignorowane i spowodować konstrukcje nie dodatkowe fragmentu kodu.  
+  Wygenerowany fragment kodu zawiera wszystkie wymagane atrybuty i elementy. Jeśli `minOccurs` jest większa niż jeden, minimalna wymagana liczba wystąpień tego elementu znajduje się we fragmencie, maksymalnie 100 wystąpień. Naprawiono dowolnej wartości znajdujące się w wyniku schematu w stałych wartości w tym fragmencie kodu. `xsd:any` i `xsd:anyAttribute` elementy są ignorowane i spowodować konstrukcje nie dodatkowe fragmentu kodu.  
   
- Wartości domyślne są generowane i oznaczane jako wartości można edytować. Jeśli schemat określa wartość domyślną, ta wartość domyślna jest używana. Jednak jeśli wartości domyślne schematu jest pustym ciągiem, Edytor generuje wartości domyślne w następujący sposób:  
+  Wartości domyślne są generowane i oznaczane jako wartości można edytować. Jeśli schemat określa wartość domyślną, ta wartość domyślna jest używana. Jednak jeśli wartości domyślne schematu jest pustym ciągiem, Edytor generuje wartości domyślne w następujący sposób:  
   
--   Jeśli typ schematu zawiera wszystkie aspekty wyliczenia bezpośrednio lub pośrednio za pomocą dowolnego z elementów członkowskich typu złożenia, pierwsza wartość wyliczenia w modelu obiektów schematu jest używany jako domyślny.  
+- Jeśli typ schematu zawiera wszystkie aspekty wyliczenia bezpośrednio lub pośrednio za pomocą dowolnego z elementów członkowskich typu złożenia, pierwsza wartość wyliczenia w modelu obiektów schematu jest używany jako domyślny.  
   
--   Jeśli typ schematu, który jest typem niepodzielnym, Edytor pobiera typ niepodzielny i wstawia nazwę typu atomic. Dla typu prostego pochodnej używa podstawowego typu prostego. Typ listy Typ niepodzielny to `itemType`. Dla Unii, typ niepodzielny to typ niepodzielny pierwszego `memberType`.  
+- Jeśli typ schematu, który jest typem niepodzielnym, Edytor pobiera typ niepodzielny i wstawia nazwę typu atomic. Dla typu prostego pochodnej używa podstawowego typu prostego. Typ listy Typ niepodzielny to `itemType`. Dla Unii, typ niepodzielny to typ niepodzielny pierwszego `memberType`.  
   
 ## <a name="example"></a>Przykład  
  Kroki opisane w tej sekcji pokazują, jak używać wygenerować schematu XML fragmentu kodu funkcji edytora XML.  

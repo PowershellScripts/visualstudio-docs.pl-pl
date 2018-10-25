@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 331df62dabcdb919f2d8489de02ab7f2f815ef40
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03d05cf8c224a24d143feb3d22df4357d623d308
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110019"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933212"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
-Określa, w którym znajduje się zestaw.  
+Określa, gdzie znajduje się zestaw.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -62,7 +62,7 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 ## <a name="remarks"></a>Uwagi  
  Te wartości są zwracane przez [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) i [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) metody.  
   
- Wartości te można łączyć z `OR` operacji.  
+ Te wartości mogą być łączone z `OR` operacji.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

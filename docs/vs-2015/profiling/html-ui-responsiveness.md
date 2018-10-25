@@ -25,12 +25,12 @@ caps.latest.revision: 52
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cfff3a7267d23e424214f49fed5b0577860c0a4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a8d8bd033c79257336b71e3f62099bd3eaf3808
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937580"
 ---
 # <a name="html-ui-responsiveness"></a>Czas odpowiedzi interfejsu użytkownika HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -211,36 +211,36 @@ if (performance.mark && performance.measure) {
   
  Użyj tego wykresu, aby:  
   
--   Określ ogólne obszary zainteresowania.  
+- Określ ogólne obszary zainteresowania.  
   
--   Wybierz określonego przedziału czasu do wyświetlenia na wykresie szczegółów osi czasu. Aby wybrać okres czasu, wybierz częścią wykresu, a następnie przeciągnij wskaźnik, aby dokonać wyboru.  
+- Wybierz określonego przedziału czasu do wyświetlenia na wykresie szczegółów osi czasu. Aby wybrać okres czasu, wybierz częścią wykresu, a następnie przeciągnij wskaźnik, aby dokonać wyboru.  
   
--   Uzyskać bardziej szczegółowy widok w wybranym okresie, wybierając **powiększyć** przycisku.  
+- Uzyskać bardziej szczegółowy widok w wybranym okresie, wybierając **powiększyć** przycisku.  
   
- Aby uzyskać więcej informacji na temat korzystania z programu graph, zobacz [wyizolować problem czasu odpowiedzi interfejsu użytkownika](#Workflow) w tym temacie.  
+  Aby uzyskać więcej informacji na temat korzystania z programu graph, zobacz [wyizolować problem czasu odpowiedzi interfejsu użytkownika](#Workflow) w tym temacie.  
   
 ###  <a name="VisualThroughput"></a> Wyświetl przepustowość wizualna (kl. / s)  
  Wykres przepustowość wizualna umożliwiają zidentyfikowanie okresy czasu, w którym porzucony szybkość klatek. Pokazuje liczbę klatek na sekundę (kl. / s) dla aplikacji. Ten wykres jest najbardziej użyteczne dla opracowywania gier i multimediów aplikacji.  
   
  Wyświetlana wartość kl. / s może różnić się od liczba klatek na sekundę. Podczas badania danych na tym wykresie, należy pamiętać o tych informacji:  
   
--   Na wykresie widać kl. / s, czy aplikacja ma możliwość osiągnięcia określonej godzinie. Gdy aplikacja jest w stanie bezczynności, kl. / s jest taka sama jak częstotliwość odświeżania monitora.  
+- Na wykresie widać kl. / s, czy aplikacja ma możliwość osiągnięcia określonej godzinie. Gdy aplikacja jest w stanie bezczynności, kl. / s jest taka sama jak częstotliwość odświeżania monitora.  
   
--   Na wykresie przedstawiono rzeczywiste kl. / s, jeśli pracy, który wymaga aktualizacji visual działania aplikacji.  
+- Na wykresie przedstawiono rzeczywiste kl. / s, jeśli pracy, który wymaga aktualizacji visual działania aplikacji.  
   
--   Na wykresie widać wartość zero, jeśli ramki są usuwane.  
+- Na wykresie widać wartość zero, jeśli ramki są usuwane.  
   
- Ten przykład pokazuje, jak wygląda wykres przepustowość wizualna:  
+  Ten przykład pokazuje, jak wygląda wykres przepustowość wizualna:  
   
- ![Wykres przepustowość wizualna](../profiling/media/js-htmlvizprof-vizthru.png "JS_HTMLVizProf_VizThru")  
+  ![Wykres przepustowość wizualna](../profiling/media/js-htmlvizprof-vizthru.png "JS_HTMLVizProf_VizThru")  
   
- Użyj wykresu przepustowość wizualna do:  
+  Użyj wykresu przepustowość wizualna do:  
   
--   Określ ogólne obszary zainteresowania.  
+- Określ ogólne obszary zainteresowania.  
   
--   Wybierz określonego przedziału czasu do wyświetlenia na wykresie szczegółów osi czasu. Aby wybrać okres czasu, wybierz częścią wykresu, a następnie przeciągnij wskaźnik, aby dokonać wyboru.  
+- Wybierz określonego przedziału czasu do wyświetlenia na wykresie szczegółów osi czasu. Aby wybrać okres czasu, wybierz częścią wykresu, a następnie przeciągnij wskaźnik, aby dokonać wyboru.  
   
--   Uzyskać bardziej szczegółowy widok w wybranym okresie, wybierając **powiększyć** przycisku.  
+- Uzyskać bardziej szczegółowy widok w wybranym okresie, wybierając **powiększyć** przycisku.  
   
 ###  <a name="TimelineDetails"></a> Wyświetl szczegóły osi czasu  
  Wykres szczegóły osi czasu pojawi się w dolnym okienku Profiler czasu odpowiedzi interfejsu użytkownika. Zawiera sekwencyjne i hierarchiczne informacje o zdarzeniach, które są używane najwięcej czasu Procesora w wybranych okresach. Ten wykres może pomóc w określeniu przyczyny ich wyzwolenia konkretnego zdarzenia, a niektóre zdarzenia, jak zdarzenia mapuje do kodu źródłowego. Ten wykres pomaga określić czas wymagany do malowania aktualizacji visual na ekranie.  
@@ -317,23 +317,23 @@ if (performance.mark && performance.measure) {
 ##  <a name="ProfilerEvents"></a> Odwołanie do zdarzenia Profiler  
  Profiler zdarzenia są skategoryzowane i oznaczone kolorami w Profiler czasu odpowiedzi interfejsu użytkownika. Poniżej przedstawiono kategorie zdarzeń:  
   
--   **Podczas ładowania.** Wskazuje czas spędzony na zasoby aplikacji podczas pobierania i analizowania HTML i CSS po pierwszym załadowaniu aplikacji. Może to obejmować żądania sieciowe.  
+- **Podczas ładowania.** Wskazuje czas spędzony na zasoby aplikacji podczas pobierania i analizowania HTML i CSS po pierwszym załadowaniu aplikacji. Może to obejmować żądania sieciowe.  
   
--   **Obsługa skryptów.** Wskazuje czas poświęcony na analizowanie i uruchamianie kodu języka JavaScript. Obejmuje to zdarzenia modelu DOM, czasomierze, wyznaczanie wartości skryptu i pracy ramki animacji. Obejmuje ona zarówno kod użytkownika oraz kod biblioteki.  
+- **Obsługa skryptów.** Wskazuje czas poświęcony na analizowanie i uruchamianie kodu języka JavaScript. Obejmuje to zdarzenia modelu DOM, czasomierze, wyznaczanie wartości skryptu i pracy ramki animacji. Obejmuje ona zarówno kod użytkownika oraz kod biblioteki.  
   
--   **GC.** Wskazuje czas spędzony na wyrzucanie elementów bezużytecznych.  
+- **GC.** Wskazuje czas spędzony na wyrzucanie elementów bezużytecznych.  
   
--   **Ustawianie stylów.** Wskazuje czas spędzony analizy składni CSS i obliczanie prezentacji i układu elementu.  
+- **Ustawianie stylów.** Wskazuje czas spędzony analizy składni CSS i obliczanie prezentacji i układu elementu.  
   
--   **Renderowanie.** Wskazuje czas spędzony na malowaniu ekranu.  
+- **Renderowanie.** Wskazuje czas spędzony na malowaniu ekranu.  
   
--   **Dekodowanie obrazu.** Wskazuje czas spędzony na dekompresowaniu i dekodowaniu obrazów.  
+- **Dekodowanie obrazu.** Wskazuje czas spędzony na dekompresowaniu i dekodowaniu obrazów.  
   
- Dla skryptów i stylów kategorii Profiler czasu odpowiedzi interfejsu użytkownika może zawierać dane, które możesz działać na wykresie szczegółów osi czasu. Po zidentyfikowaniu zagadnienia dotyczące skryptów jako problem, można uruchomić program profilujący próbkowanie Procesora z Profiler czasu odpowiedzi interfejsu użytkownika. Alternatywnie można użyć programu Visual Studio profiler funkcji w celu uzyskania bardziej szczegółowych danych. Aby uzyskać więcej informacji, zobacz [danych analizowanie synchronizacja funkcji JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
+  Dla skryptów i stylów kategorii Profiler czasu odpowiedzi interfejsu użytkownika może zawierać dane, które możesz działać na wykresie szczegółów osi czasu. Po zidentyfikowaniu zagadnienia dotyczące skryptów jako problem, można uruchomić program profilujący próbkowanie Procesora z Profiler czasu odpowiedzi interfejsu użytkownika. Alternatywnie można użyć programu Visual Studio profiler funkcji w celu uzyskania bardziej szczegółowych danych. Aby uzyskać więcej informacji, zobacz [danych analizowanie synchronizacja funkcji JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
   
- W przypadku innych kategorii zdarzeń może być w stanie zidentyfikować efekty uboczne platformy, które powodują dodawanie funkcji do aplikacji, ale w takich przypadkach nie można rozwiązać problemy z wydajnością określonej za pomocą Profiler czasu odpowiedzi interfejsu użytkownika.  
+  W przypadku innych kategorii zdarzeń może być w stanie zidentyfikować efekty uboczne platformy, które powodują dodawanie funkcji do aplikacji, ale w takich przypadkach nie można rozwiązać problemy z wydajnością określonej za pomocą Profiler czasu odpowiedzi interfejsu użytkownika.  
   
- Ta tabela zawiera zdarzenia i ich opisy:  
+  Ta tabela zawiera zdarzenia i ich opisy:  
   
 |Zdarzenie|Kategoria zdarzenia|Występuje, gdy|  
 |-----------|--------------------|-----------------|  

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6d0972b4e326cabd00341db685a0b73c8c104c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd694d88348a13aefa1dfd7851c6897523009919
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930040"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
-Określa lokalizację punktu przerwania pod adresem w kodzie.  
+W tym artykule opisano lokalizacji punktu przerwania pod adresem w kodzie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,10 +47,10 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
  Nazwa funkcji, która zawiera punkt przerwania.  
   
  `bstrAddress`  
- Adres punktu przerwania, która jest analizowana przez ewaluatora wyrażenia, aby powiązać go do [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiektu.  
+ Adres punktu przerwania, który jest analizowany przez ewaluatora wyrażeń, aby powiązać [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiektu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest elementem członkowskim [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktury jako część Unii.  
+ Ta struktura jest elementem członkowskim [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktur w ramach złożenia.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -60,6 +60,6 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

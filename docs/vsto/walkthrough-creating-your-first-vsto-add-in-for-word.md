@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22e44ace13e0f70bf74b71f17975b3a45cb76471
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808901"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940973"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word
   Ten Przewodnik wprowadzający przedstawia sposób tworzenia dodatku narzędzi VSTO dla programu Microsoft Office Word. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, które są otwarte dokumenty.  
@@ -32,15 +32,15 @@ ms.locfileid: "38808901"
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Tworzenie projektu dodatku narzędzi VSTO programu Word.  
+- Tworzenie projektu dodatku narzędzi VSTO programu Word.  
   
--   Pisanie kodu, który używa modelu obiektów programu Word do dodawania tekstu do dokumentu, podczas zapisywania.  
+- Pisanie kodu, który używa modelu obiektów programu Word do dodawania tekstu do dokumentu, podczas zapisywania.  
   
--   Tworzenie i uruchamianie projektu, aby ją przetestować.  
+- Tworzenie i uruchamianie projektu, aby ją przetestować.  
   
--   Czyszczenie zakończone projektu tak, aby dodatku narzędzi VSTO już nie uruchamia automatycznie na komputerze deweloperskim.  
+- Czyszczenie zakończone projektu tak, aby dodatku narzędzi VSTO już nie uruchamia automatycznie na komputerze deweloperskim.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
@@ -78,21 +78,21 @@ ms.locfileid: "38808901"
   
 ### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>Aby dodać akapit tekstu do zapisanego dokumentu  
   
-1.  W pliku kodu ThisAddIn, Dodaj następujący kod do `ThisAddIn` klasy. Nowy kod definiuje zdarzenia obsługi dla <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> zdarzenie, które jest wywoływane, gdy dokument zostanie zapisany.  
+1. W pliku kodu ThisAddIn, Dodaj następujący kod do `ThisAddIn` klasy. Nowy kod definiuje zdarzenia obsługi dla <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> zdarzenie, które jest wywoływane, gdy dokument zostanie zapisany.  
   
-     Gdy użytkownik zapisuje dokument, program obsługi zdarzeń dodaje nowy tekst na początku dokumentu.  
+    Gdy użytkownik zapisuje dokument, program obsługi zdarzeń dodaje nowy tekst na początku dokumentu.  
   
-     [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
   
-    > [!NOTE]  
-    >  Ten kod zawiera wartość indeksu, od 1 do dostępu do pierwszego akapitu w <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> kolekcji. Chociaż Visual Basic i Visual C# należy używać tablic oparty na 0, niższe granice tablicy w większości kolekcji w modelu obiektów programu Word to 1. Aby uzyskać więcej informacji, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).  
+   > [!NOTE]  
+   >  Ten kod zawiera wartość indeksu, od 1 do dostępu do pierwszego akapitu w <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> kolekcji. Chociaż Visual Basic i Visual C# należy używać tablic oparty na 0, niższe granice tablicy w większości kolekcji w modelu obiektów programu Word to 1. Aby uzyskać więcej informacji, zobacz [pisanie kodu w rozwiązaniach pakietu Office](../vsto/writing-code-in-office-solutions.md).  
   
-2.  Jeśli używasz języka C#, Dodaj następujący kod wymagany do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod służy do łączenia `Application_DocumentBeforeSave` programu obsługi zdarzeń z <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> zdarzeń.  
+2. Jeśli używasz języka C#, Dodaj następujący kod wymagany do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod służy do łączenia `Application_DocumentBeforeSave` programu obsługi zdarzeń z <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> zdarzeń.  
   
-     [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
   
- Do modyfikacji dokumentu po jego zapisaniu, w poprzednich przykładach kodu za pomocą następujących obiektów:  
+   Do modyfikacji dokumentu po jego zapisaniu, w poprzednich przykładach kodu za pomocą następujących obiektów:  
   
 -   `Application` Pole `ThisAddIn` klasy. `Application` Pole zwraca <xref:Microsoft.Office.Interop.Word.Application> reprezentujący bieżące wystąpienie programu Word.  
   

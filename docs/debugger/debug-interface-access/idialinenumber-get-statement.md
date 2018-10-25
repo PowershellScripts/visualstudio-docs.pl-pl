@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_statement | Dokumentacja firmy Microsoft
+title: Idialinenumber::get_statement — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c259c7157ad98dee3830e96ca8922b88a2fe56c4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4b1c2602f9336d5e59a9e692f13170aacf68a1c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947936"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
-Pobiera flagę wskazującą, czy te informacje w tym artykule opisano początku instrukcję, zamiast wyrażenia w źródle programu.  
+Pobiera flagę wskazującą, czy te informacje w tym artykule opisano początku instrukcji zamiast wyrażenia w źródle programu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,13 +34,13 @@ HRESULT get_statement (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca `TRUE` Jeśli te informacje w tym artykule opisano na początku instrukcji w źródle programu.  
+ [out] Zwraca `TRUE` Jeśli te informacje w tym artykule opisano początku instrukcji w źródle programu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Instrukcje może obejmować wiele wierszy. Ta metoda wskazuje, jeśli numer wiersza skojarzone oznacza początek instrukcji wiele wierszy.  
+ Instrukcje mogą znajdować się na wiele wierszy. Ta metoda wskazuje, jeśli numer wiersza skojarzone oznacza początek instrukcji wiele wierszy.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

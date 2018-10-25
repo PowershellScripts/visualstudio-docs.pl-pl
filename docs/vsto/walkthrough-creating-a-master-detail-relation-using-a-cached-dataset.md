@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 534398e57c1a8111f2b1f83a61322a581539c962
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808268"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933160"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Wskazówki: Tworzenie relacji wzorzec szczegół za pomocą pamięci podręcznej zestawu danych
   W tym instruktażu przedstawiono tworzenie relacji wzorzec/szczegół w arkuszu, a buforowanie danych, dzięki czemu rozwiązanie może służyć w trybie offline.  
@@ -57,34 +57,34 @@ ms.locfileid: "38808268"
   
 ### <a name="to-create-a-new-project"></a>Aby utworzyć nowy projekt  
   
-1.  Utwórz projektu skoroszytu programu Excel o nazwie **Moje wzorzec / szczegół**, za pomocą języka Visual Basic lub C#. Upewnij się, że **Utwórz nowy dokument** jest zaznaczone. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1. Utwórz projektu skoroszytu programu Excel o nazwie **Moje wzorzec / szczegół**, za pomocą języka Visual Basic lub C#. Upewnij się, że **Utwórz nowy dokument** jest zaznaczone. Aby uzyskać więcej informacji, zobacz [porady: tworzenie projektów Office w Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Visual Studio zostanie otwarty nowy skoroszyt programu Excel w Projektancie i dodaje **Moje wzorzec / szczegół** projekt **Eksploratora rozwiązań**.  
+   Visual Studio zostanie otwarty nowy skoroszyt programu Excel w Projektancie i dodaje **Moje wzorzec / szczegół** projekt **Eksploratora rozwiązań**.  
   
 ## <a name="create-the-data-source"></a>Utwórz źródło danych  
  Użyj **źródeł danych** okna, aby dodać typizowany zestaw danych do projektu.  
   
 ### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
   
-1.  Jeśli **źródeł danych** okno nie jest widoczne, wyświetlić je, na pasku menu, wybierając **widoku** > **Windows inne**  >   **Źródła danych**.  
+1. Jeśli **źródeł danych** okno nie jest widoczne, wyświetlić je, na pasku menu, wybierając **widoku** > **Windows inne**  >   **Źródła danych**.  
   
-2.  Wybierz **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
+2. Wybierz **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
   
-3.  Wybierz **bazy danych** a następnie kliknij przycisk **dalej**.  
+3. Wybierz **bazy danych** a następnie kliknij przycisk **dalej**.  
   
-4.  Wybierz połączenie danych z bazie danych programu SQL Server Northwind lub Dodaj nowe połączenie przy użyciu **nowe połączenie** przycisku.  
+4. Wybierz połączenie danych z bazie danych programu SQL Server Northwind lub Dodaj nowe połączenie przy użyciu **nowe połączenie** przycisku.  
   
-5.  Po wybraniu lub utworzenie połączenia, kliknij przycisk **dalej**.  
+5. Po wybraniu lub utworzenie połączenia, kliknij przycisk **dalej**.  
   
-6.  Usuń zaznaczenie opcji, aby zapisać połączenie, jeśli jest ono zaznaczone, a następnie kliknij **dalej**.  
+6. Usuń zaznaczenie opcji, aby zapisać połączenie, jeśli jest ono zaznaczone, a następnie kliknij **dalej**.  
   
-7.  Rozwiń **tabel** w węźle **obiektów bazy danych** okna.  
+7. Rozwiń **tabel** w węźle **obiektów bazy danych** okna.  
   
-8.  Wybierz **zamówienia** tabeli i **Orderdetails** tabeli.  
+8. Wybierz **zamówienia** tabeli i **Orderdetails** tabeli.  
   
 9. Kliknij przycisk **Zakończ**.  
   
- Kreator dodaje dwie tabele, aby **źródeł danych** okna. Dodaje także typizowany zestaw danych do projektu, który jest widoczny w **Eksploratora rozwiązań**.  
+   Kreator dodaje dwie tabele, aby **źródeł danych** okna. Dodaje także typizowany zestaw danych do projektu, który jest widoczny w **Eksploratora rozwiązań**.  
   
 ## <a name="add-controls-to-the-worksheet"></a>Dodawanie formantów do arkusza  
  W tym kroku dodasz nazwanym zakresem, obiekt listy oraz dwa przyciski do pierwszego arkusza. Najpierw dodaj nazwany zakres i obiekt listy z **źródeł danych** okna tak, aby automatycznie są one powiązane ze źródłem danych. Następnie dodaj przyciski z **przybornika**.  
@@ -109,30 +109,30 @@ ms.locfileid: "38808268"
   
 ### <a name="to-add-two-buttons"></a>Aby dodać dwa przyciski  
   
-1.  Z **wspólnych formantów** karcie **przybornika**, Dodaj <xref:System.Windows.Forms.Button> kontrolkę komórki **A3** arkusza.  
+1. Z **wspólnych formantów** karcie **przybornika**, Dodaj <xref:System.Windows.Forms.Button> kontrolkę komórki **A3** arkusza.  
   
-     Ta pozycja nosiła `Button1`.  
+    Ta pozycja nosiła `Button1`.  
   
-2.  Dodaj kolejną <xref:System.Windows.Forms.Button> kontrolkę komórki **B3** arkusza.  
+2. Dodaj kolejną <xref:System.Windows.Forms.Button> kontrolkę komórki **B3** arkusza.  
   
-     Ta pozycja nosiła `Button2`.  
+    Ta pozycja nosiła `Button2`.  
   
- Następnie oznaczyć zestaw danych w pamięci podręcznej w dokumencie.  
+   Następnie oznaczyć zestaw danych w pamięci podręcznej w dokumencie.  
   
 ## <a name="cache-the-dataset"></a>Zestaw danych w pamięci podręcznej  
  Oznacz zestaw danych przechowywanie w pamięci podręcznej w dokumencie, wprowadzając zestawu danych publicznych i ustawienie **CacheInDocument** właściwości.  
   
 ### <a name="to-cache-the-dataset"></a>Do zestawu danych w pamięci podręcznej  
   
-1.  Wybierz **NorthwindDataSet** w zasobniku składnika.  
+1. Wybierz **NorthwindDataSet** w zasobniku składnika.  
   
-2.  W **właściwości** oknie zmiany **Modyfikatory** właściwości **publicznych**.  
+2. W **właściwości** oknie zmiany **Modyfikatory** właściwości **publicznych**.  
   
-     Zestawy danych muszą być publiczne, zanim buforowanie jest włączone.  
+    Zestawy danych muszą być publiczne, zanim buforowanie jest włączone.  
   
-3.  Zmiana **CacheInDocument** właściwości **True**.  
+3. Zmiana **CacheInDocument** właściwości **True**.  
   
- Następnym krokiem jest, aby dodać tekst do przycisków, a w języku C# Dodaj kod, aby Podłączanie programów obsługi zdarzeń.  
+   Następnym krokiem jest, aby dodać tekst do przycisków, a w języku C# Dodaj kod, aby Podłączanie programów obsługi zdarzeń.  
   
 ## <a name="initialize-the-controls"></a>Inicjowanie kontrolki  
  Ustawianie tekstu przycisku i dodawanie obsługi zdarzeń podczas <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> zdarzeń.  

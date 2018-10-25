@@ -1,13 +1,13 @@
 
 1. Zamknij i Otwórz konsolę zarządzania usług IIS, aby wyświetlić zaktualizowaną konfiguracją opcje w interfejsie użytkownika.
 
-1. W usługach IIS, kliknij prawym przyciskiem myszy **domyślna witryna sieci Web**, wybierz **Wdróż** > **skonfigurować wdrażanie publikowania w sieci Web**.
+2. W usługach IIS, kliknij prawym przyciskiem myszy **domyślna witryna sieci Web**, wybierz **Wdróż** > **skonfigurować wdrażanie publikowania w sieci Web**.
 
     ![Konfigurację narzędzia Web Deploy](../../deployment/media/tutorial-configure-web-deploy-publishing.png)
 
-1. W **skonfigurować wdrażanie publikowania w sieci Web** okna dialogowego Sprawdź ustawienia.
+3. W **skonfigurować wdrażanie publikowania w sieci Web** okna dialogowego Sprawdź ustawienia.
 
-1. Kliknij przycisk **Instalatora**.
+4. Kliknij przycisk **Instalatora**.
 
     W **wyniki** panelu pokazano w danych wyjściowych, które uprawnienia są przyznawane określonego użytkownika, a plik z *.publishsettings* rozszerzenie pliku został wygenerowany w lokalizacji przedstawionej w oknie dialogowym pole.
 
@@ -28,12 +28,12 @@
 
     W zależności od konfiguracji systemu Windows Server i usług IIS zostaną wyświetlone różne wartości w pliku XML. Poniżej przedstawiono kilka informacji o wartościach, które są wyświetlane:
 
-    * *Msdeploy.axd* pliku, do którego odwołuje się `publishUrl` atrybut jest dynamicznie generowanych plików programu obsługi HTTP dla narzędzia Web Deploy. (Do celów testowych `http://myhostname:8172` zazwyczaj działa tak dobrze.)
-    * `publishUrl` Ustawiony jest port portu 8172, co jest ustawieniem domyślnym dla narzędzia Web Deploy.
-    * `destinationAppUrl` Ustawiony jest port 80, port, co jest ustawieniem domyślnym dla usług IIS.
-    * Jeśli nie można nawiązać połączenia z hostem zdalnym w programie Visual Studio przy użyciu nazwy hosta (w kolejnych krokach), przetestuj adres IP zamiast nazwy hosta.
+   * *Msdeploy.axd* pliku, do którego odwołuje się `publishUrl` atrybut jest dynamicznie generowanych plików programu obsługi HTTP dla narzędzia Web Deploy. (Do celów testowych `http://myhostname:8172` zazwyczaj działa tak dobrze.)
+   * `publishUrl` Ustawiony jest port portu 8172, co jest ustawieniem domyślnym dla narzędzia Web Deploy.
+   * `destinationAppUrl` Ustawiony jest port 80, port, co jest ustawieniem domyślnym dla usług IIS.
+   * Jeśli nie można nawiązać połączenia z hostem zdalnym w programie Visual Studio przy użyciu nazwy hosta (w kolejnych krokach), przetestuj adres IP zamiast nazwy hosta.
 
-    > [!NOTE]
-    > W przypadku publikowania w programie IIS działającym na Maszynie wirtualnej platformy Azure, możesz otworzyć narzędzia Web Deploy oraz porty usługi IIS w grupie zabezpieczeń sieci. Aby uzyskać szczegółowe informacje, zobacz [instalacji i uruchomienia usług IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
+     > [!NOTE]
+     > W przypadku publikowania w programie IIS działającym na Maszynie wirtualnej platformy Azure, możesz otworzyć narzędzia Web Deploy oraz porty usługi IIS w grupie zabezpieczeń sieci. Aby uzyskać szczegółowe informacje, zobacz [instalacji i uruchomienia usług IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
 
-1. Skopiuj ten plik na komputerze, na którym uruchomiony jest program Visual Studio.
+5. Skopiuj ten plik na komputerze, na którym uruchomiony jest program Visual Studio.

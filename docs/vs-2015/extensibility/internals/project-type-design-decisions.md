@@ -18,12 +18,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b5738f3119a8e5f1f6c1d8cb3ee47d64df1541d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c7e3c0804fb354bc1f17fa4769ce118e13b3352
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195484"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939556"
 ---
 # <a name="project-type-design-decisions"></a>Decyzje projektowe dotyczące typów projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ Przed przystąpieniem do tworzenia nowych typów projektów należy kilka decyzj
   
  Istnieje kilka opcji do rozważenia dotyczące stanów trwałych dla elementów w projekcie. Możesz wykonać dowolne spośród następujących opcji:  
   
--   Zapisz każdego pliku osobno, po zmianie.  
+- Zapisz każdego pliku osobno, po zmianie.  
   
--   Przechwytywanie wiele transakcji w ramach pojedynczej **Zapisz** operacji.  
+- Przechwytywanie wiele transakcji w ramach pojedynczej **Zapisz** operacji.  
   
--   Zapisywanie plików lokalnie, a następnie opublikować na serwerze lub użyj innego podejścia do zapisywania elementów projektu, gdy element reprezentuje połączenie danych z obiektu zdalnego.  
+- Zapisywanie plików lokalnie, a następnie opublikować na serwerze lub użyj innego podejścia do zapisywania elementów projektu, gdy element reprezentuje połączenie danych z obiektu zdalnego.  
   
- Aby uzyskać więcej informacji na temat stanu trwałego zobacz [trwałość projektu](../../extensibility/internals/project-persistence.md) i [otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md).  
+  Aby uzyskać więcej informacji na temat stanu trwałego zobacz [trwałość projektu](../../extensibility/internals/project-persistence.md) i [otwieranie i zapisywanie elementów projektu](../../extensibility/internals/opening-and-saving-project-items.md).  
   
 ## <a name="project-commitment-model"></a>Model zobowiązania projektu  
  Zostanie otwarty obiekty utrwalone dane w trybie bezpośredniego lub transakcyjne?  

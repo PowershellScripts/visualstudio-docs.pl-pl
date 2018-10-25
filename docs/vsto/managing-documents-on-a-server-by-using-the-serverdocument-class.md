@@ -17,57 +17,57 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97eed0e4cec143e51195347bfb90d430d8e1eadb
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e983f4cf1b90150113fcfa33702d85bb41a30924
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939140"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument
-  Można użyć `ServerDocument` klasy w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] do zarządzania kilka aspektów dostosowań na poziome dokumentu, nawet jeśli nie zainstalowano programu Microsoft Office Word i Microsoft Office Excel. Można wykonywać następujące zadania:  
+  Możesz użyć `ServerDocument` klasy w [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zarządzanie kilka aspektów dostosowywania poziomie dokumentu, nawet jeśli nie zainstalowano programu Microsoft Office Word i Microsoft Office Excel. Można wykonać następujące zadania:  
   
--   Dostęp i modyfikowanie danych w pamięci podręcznej danych dokumentu lub skoroszytu. Aby uzyskać więcej informacji, zobacz [pracować z buforowane dane w dokumencie](#CachedData).  
+- Dostęp i modyfikować dane w pamięci podręcznej danych w dokumencie lub skoroszycie. Aby uzyskać więcej informacji, zobacz [pracować dane w pamięci podręcznej w dokumencie](#CachedData).  
   
--   Zarządzanie zestawu dostosowania, który jest skojarzony z dokumentem. Aby uzyskać więcej informacji, zobacz [Zarządzanie dostosowania dokumentu](#CustomizationInfo).  
+- Zarządzaj zestaw dostosowania, który jest skojarzony z dokumentem. Aby uzyskać więcej informacji, zobacz [Zarządzanie dostosowywania dokumentu](#CustomizationInfo).  
   
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
+  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
 ## <a name="understand-the-serverdocument-class"></a>Zrozumienie klasy ServerDocument  
- `ServerDocument` Klasy jest przeznaczony do użycia na komputerach, które nie mają zainstalowany pakiet Office. W związku z tym używane zwykle do tej klasy w aplikacjach, które obsługują pakiet Office, takich jak projekty konsoli lub projektów formularzy systemu Windows, a nie projektów pakietu Office. Użyj <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy w *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* zestawu.  
+ `ServerDocument` Klasy jest przeznaczone do użytku na komputerach, które nie mają zainstalowanym pakietem Office. W związku zazwyczaj używasz tej klasy w aplikacjach, które nie są zintegrowane z pakietem Office, takich jak projekty startowe lub projektów Windows Forms, zamiast projektów pakietu Office. Użyj <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> klasy w *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* zestawu.  
   
- `ServerDocument` Klasa może być używana do działania na poziomie dokumentu, które zostały utworzone przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
+ `ServerDocument` Klasa może być używana do wykonywania operacji dostosowywania na poziomie dokumentu, które zostały utworzone przy użyciu [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
   
- Aby uzyskać więcej informacji dotyczących programu Visual Studio 2010 Tools for Office Runtime oraz rozszerzenia pakietu Office dla programu .NET Framework, zobacz [Visual Studio Tools for Office runtime ― Przegląd](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
+ Aby uzyskać więcej informacji o Visual Studio 2010 Tools for Office Runtime oraz rozszerzeń pakietu Office dla programu .NET Framework, zobacz [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
 > [!NOTE]  
->  Jeśli masz starszej wersji aplikacji, która używa `ServerDocument` klasy w `Visual Studio Tools for Office` system (w wersji 3.0 Runtime), `Visual Studio Tools for Office` system (wersja 3.0 runtime) musi być zainstalowany na komputerach z systemem aplikacji. `Visual Studio 2010 Tools for Office runtime` Nie można uruchomić te aplikacje.  
+>  Jeśli masz starszą aplikację, która używa `ServerDocument` klasy w `Visual Studio Tools for Office` system (w wersji 3.0 Runtime), `Visual Studio Tools for Office` system (wersja 3.0 runtime) musi być zainstalowany na komputerach z pakietem aplikacji. `Visual Studio 2010 Tools for Office runtime` Nie mogą uruchamiać tych aplikacji.  
   
 ##  <a name="CachedData"></a> Praca z pamięci podręcznej danych w dokumencie  
- `ServerDocument` Klasa udostępnia służy do pracy z pamięci podręcznej danych w dokumentach dostosowane elementy członkowskie. Aby uzyskać więcej informacji o pamięci podręcznej danych, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md) i [dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md).  
+ `ServerDocument` Klasa oferuje elementy członkowskie, można użyć do pracy z pamięcią podręczną danych w dokumentach dostosowane. Aby uzyskać więcej informacji dotyczących buforowanych danych, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md) i [dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md).  
   
- W poniższej tabeli przedstawiono składniki, które służy do pracy z pamięci podręcznej danych.  
+ W poniższej tabeli wymieniono elementy członkowskie, które można użyć do pracy z danymi w pamięci podręcznej.  
   
-|Zadanie|Elementu członkowskiego do użycia|  
+|Zadanie|Element członkowski do użycia|  
 |----------|-------------------|  
 |Aby określić, czy dokument ma pamięci podręcznej danych.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> Metody.|  
-|Aby uzyskać dostęp do pamięci podręcznej danych dokumentu.<br /><br /> Aby uzyskać więcej informacji, zobacz [dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> Właściwości.|  
+|Aby uzyskać dostęp do pamięci podręcznej danych w dokumencie.<br /><br /> Aby uzyskać więcej informacji, zobacz [dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> Właściwości.|  
   
-##  <a name="CustomizationInfo"></a> Zarządzanie dostosowania dokumentu  
- Korzystając z członkami `ServerDocument` klasy do zarządzania zestawu dostosowania, który jest skojarzony z dokumentem. Na przykład można programistycznie usunąć dostosowań z dokumentu, aby dokument nie jest już częścią dostosowanie.  
+##  <a name="CustomizationInfo"></a> Zarządzanie dostosowywania dokumentu  
+ Można użyć elementów członkowskich `ServerDocument` klasy do zarządzania zestaw dostosowania, który jest skojarzony z dokumentem. Na przykład można programowo usunąć dostosowania z dokumentu, aby dokument nie jest już częścią dostosowania.  
   
- W poniższej tabeli wymieniono elementy członkowskie, których można użyć do zarządzania zestawu dostosowania.  
+ W poniższej tabeli wymieniono elementy członkowskie, których można użyć do zarządzania zestaw dostosowania.  
   
-|Zadanie|Elementu członkowskiego do użycia|  
+|Zadanie|Element członkowski do użycia|  
 |----------|-------------------|  
-|Aby określić, czy dokument jest częścią dostosowania poziomie dokumentu.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> Metody.|  
-|Aby programowo dołączyć dostosowanie do dokumentów w czasie wykonywania.<br /><br /> Aby uzyskać więcej informacji, zobacz [jak: dołączanie rozszerzenia kodu do dokumentów zarządzanych](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|Jeden z <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> metody.|  
-|Aby programowo usunąć dostosowanie dokumentu w czasie wykonywania.<br /><br /> Aby uzyskać więcej informacji, zobacz [porady: usuwanie kodu rozszerzeń zarządzanego z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> Metody.|  
-|Aby uzyskać adres URL manifestu rozmieszczenia, który jest skojarzony z dokumentem.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A> Właściwości.|  
+|Aby określić, czy dokument jest częścią dostosowywania poziomie dokumentu.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.GetCustomizationVersion%2A> Metody.|  
+|Aby programowo dołączyć dostosowanie do dokumentu w czasie wykonywania.<br /><br /> Aby uzyskać więcej informacji, zobacz [porady: dołączanie rozszerzenia kodu do dokumentów zarządzanego](../vsto/how-to-attach-managed-code-extensions-to-documents.md)|Jedną z <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> metody.|  
+|Aby programowo usunąć dostosowania dokumentu w czasie wykonywania.<br /><br /> Aby uzyskać więcej informacji, zobacz [porady: usuwanie zarządzanego kodu rozszerzenia z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> Metody.|  
+|Aby uzyskać adres URL manifestu wdrażania, który jest skojarzony z dokumentem.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A> Właściwości.|  
   
 ## <a name="see-also"></a>Zobacz także  
- [Porady: dołączanie rozszerzenia kodu do dokumentów zarządzanych](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
- [Porady: Usuwanie rozszerzenia managed extensions kodu z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
- [Visual Studio Tools for Office runtime ― Przegląd](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
+ [Porady: dołączanie rozszerzenia kodu do dokumentów zarządzanego](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
+ [Porady: Usuwanie rozszerzenia kodu zarządzanego z dokumentów](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [Dane w pamięci podręcznej](../vsto/caching-data.md)  
   

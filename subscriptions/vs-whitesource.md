@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować subskrypcję WhiteSource Bolt zawartyc
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fccd62c67258d2df24055ccb4fc725ec7b3b82a4
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 981d6a655a203a7d44728fa7d12761fba2918d76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935781"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Użyj narzędzia WhiteSource Bolt w subskrypcji programu Visual Studio
 
@@ -22,49 +22,51 @@ Znajdowanie i eliminowanie luk w zabezpieczeniach typu open source oraz generowa
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
 
-1.  Aby aktywować swoje korzyści WhiteSource Bolt, zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .
+1. Aby aktywować swoje korzyści WhiteSource Bolt, zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) .
 
-2.  Znajdź Kafelek WhiteSource Bolt w sekcji narzędzia, a następnie kliknij **uzyskać kod** link w dolnej części kafelka korzyści.
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource korzyści kafelka](_img\vs-whitesource\vs-whitesource-tile.png)
+2. Znajdź Kafelek WhiteSource Bolt w sekcji narzędzia, a następnie kliknij **uzyskać kod** link w dolnej części kafelka korzyści.
+   > [!div class="mx-imgBorder"]
+   > ![WhiteSource korzyści kafelka](_img/vs-whitesource/vs-whitesource-tile.png)
 
-2.  Otrzymasz powiadomienie o wyświetlaniu kodu aktywacji.  **Skopiuj kod do Schowka**, następnie kliknij przycisk **Aktywuj**.
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource korzyści kodu ](_img\vs-whitesource\vs-whitesource-code.png)
+3. Otrzymasz powiadomienie o wyświetlaniu kodu aktywacji.  **Skopiuj kod do Schowka**, następnie kliknij przycisk **Aktywuj**.
+   > [!div class="mx-imgBorder"]
+   > ![WhiteSource korzyści kodu ](_img/vs-whitesource/vs-whitesource-code.png)
 
-3.  Na stronie sieci web WhiteSource kliknij **Aktywuj** przycisk lub przewiń w dół do **aktywować konta** części strony.
-    > [!div class="mx-imgBorder"]
-    > ![Aktywuj korzyść WhiteSource](_img\vs-whitesource\vs-whitesource-activate-page-cropped.png)
+4. Na stronie sieci web WhiteSource kliknij **Aktywuj** przycisk lub przewiń w dół do **aktywować konta** części strony.
+   > [!div class="mx-imgBorder"]
+   > ![Aktywuj korzyść WhiteSource](_img/vs-whitesource/vs-whitesource-activate-page-cropped.png)
 
-4.  W **aktywować konta** sekcji strony poprowadzą Cię przez cztery kroki:
+5. W **aktywować konta** sekcji strony poprowadzą Cię przez cztery kroki:
 
-    - [Zainstaluj](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) rozszerzenia WhiteSource Bolt z programu Microsoft Visual Studio marketplace. Jeśli nie masz uprawnienia do instalowania rozszerzeń, zobacz [instalowanie bezpłatnych rozszerzeń dla usługi Azure DevOps Services](/azure/devops/marketplace/install-vsts-extension?view=vsts).
+   - [Zainstaluj](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) rozszerzenia WhiteSource Bolt z programu Microsoft Visual Studio marketplace. Jeśli nie masz uprawnienia do instalowania rozszerzeń, zobacz [instalowanie bezpłatnych rozszerzeń dla usługi Azure DevOps Services](/azure/devops/marketplace/install-vsts-extension?view=vsts).
 
 
-    Kliknij zielony **zainstalować** przycisk, jeśli używasz usługi DevOps platformy Azure, lub **Pobierz** przycisk programu Team Foundation Server.  W tym przykładzie używamy usługom DevOps platformy Azure.
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource korzyści instalowanie rozszerzeń](_img\vs-whitesource\vs-whitesource-download-install.png)
+~~~
+Click the green **Install** button if you are using Azure DevOps Services, or the **Download** button for Team Foundation Server.  For this example, we will use Azure DevOps Services.
+> [!div class="mx-imgBorder"]
+> ![WhiteSource Benefit Install Extension](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - Następnie wybierz organizację DevOps platformy Azure, które chcesz użyć, a następnie kliknij przycisk **Potwierdź**.  (Jeśli usługom DevOps platformy Azure nie mają jeszcze skonfigurowany, odwiedź stronę [korzyści](https://my.visualstudio.com/benefits) strony i aktywować swoje korzyści usługom DevOps platformy Azure.)
+- Next, select the Azure DevOps organization you want to use and click **Confirm**.  (If you have not yet set up Azure DevOps Services, visit the [Benefits](https://my.visualstudio.com/benefits) page and activate your Azure DevOps Services benefit.)
 
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource korzyści Potwierdź konto](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+> [!div class="mx-imgBorder"]
+> ![WhiteSource Benefit Confirm Account](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
-    - Otrzymasz potwierdzenie, że rozszerzenie jest zainstalowane i gotowe do użycia.  Kliknij przycisk **wprowadzenie** wróć do strony WhiteSource Bolt i kontynuować.
-    > [!div class="mx-imgBorder"]
-    > ![Ukończono instalację WhiteSource korzyści](_img\vs-whitesource\vs-whitesource-install-complete.png)
+- You’ll receive a confirmation that the extension is installed and ready to use.  Click **Get started** to return to the WhiteSource Bolt page and continue.
+> [!div class="mx-imgBorder"]
+> ![WhiteSource Benefit Install Complete](_img\vs-whitesource\vs-whitesource-install-complete.png)
+~~~
 
-5.  Otwórz pulpit nawigacyjny projektu DevOps platformy Azure, kliknij pozycję **potoki Azure** menu i wybierz polecenie **WhiteSource Bolt**.
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource korzyści Dodaj rozszerzenie](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
+5. Otwórz pulpit nawigacyjny projektu DevOps platformy Azure, kliknij pozycję **potoki Azure** menu i wybierz polecenie **WhiteSource Bolt**.
+   > [!div class="mx-imgBorder"]
+   > ![WhiteSource korzyści Dodaj rozszerzenie](_img/vs-whitesource/vs-whitesource-installed-cropped.png)
 
 6. Wklej kod aktywacji za pomocą kafelka korzyści WhiteSource Bolt, a następnie kliknij przycisk **Aktywuj**. Każdy z kolejnych kodów aktywacji można aktywować tylko jeden projekt.
-    > [!div class="mx-imgBorder"]
-    > ![Aktywować korzyści WhiteSource](_img\vs-whitesource\vs-whitesource-activate-code-cropped.png)
+   > [!div class="mx-imgBorder"]
+   > ![Aktywować korzyści WhiteSource](_img/vs-whitesource/vs-whitesource-activate-code-cropped.png)
 
-7.  Proces aktywacji jest teraz gotowy i będzie mieć 180 dni pozostałych w ramach Twojej subskrypcji.
+7. Proces aktywacji jest teraz gotowy i będzie mieć 180 dni pozostałych w ramach Twojej subskrypcji.
 
-8.  Należy dodać rozszerzenie WhiteSource Bolt jako jeden z kroków kompilacji.  Film wideo jest dostępna w [strony WhiteSource Bolt](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate) aby pokazać, jak.
+8. Należy dodać rozszerzenie WhiteSource Bolt jako jeden z kroków kompilacji.  Film wideo jest dostępna w [strony WhiteSource Bolt](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate) aby pokazać, jak.
 
 9. Po uruchomieniu kompilacji, następujące kompleksowych raportów i pulpitów nawigacyjnych będą automatycznie generowane:
     - Pulpit nawigacyjny luk w zabezpieczeniach

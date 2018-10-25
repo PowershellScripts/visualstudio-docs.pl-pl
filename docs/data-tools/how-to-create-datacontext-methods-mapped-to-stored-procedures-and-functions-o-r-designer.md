@@ -1,5 +1,5 @@
 ---
-title: 'Porady: tworzenie metodę DataContext mapowane na procedury składowane i funkcje (Projektant O-R)'
+title: 'Porady: Tworzenie metod DataContext zamapowanych na procedury składowane i funkcje (Projektant O-R)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
@@ -10,51 +10,53 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 53829ffaeab44eb758b1850f5619de43db31e589
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 8ae5fb4b3785bde0e092f68b62a9b030069a52aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942702"
 ---
-# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Porady: tworzenie metodę DataContext mapowane na procedury składowane i funkcje (Projektanta obiektów relacyjnych)
-Można dodać procedury składowane i funkcje do **Projektanta obiektów relacyjnych** jako <xref:System.Data.Linq.DataContext> metody. Wywołanie metody i przekazując wymaganych parametrów uruchamia procedura składowana lub funkcja w bazie danych i zwraca dane typu zwracanego przez <xref:System.Data.Linq.DataContext> metody. Aby uzyskać szczegółowe informacje o <xref:System.Data.Linq.DataContext> metod, zobacz [metodę DataContext (Projektanta obiektów relacyjnych)](../data-tools/datacontext-methods-o-r-designer.md).
+# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Porady: Tworzenie metod DataContext zamapowanych na procedury składowane i funkcje (O/R Designer)
+
+Można dodać procedur przechowywanych i funkcji do **O/R Designer** jako <xref:System.Data.Linq.DataContext> metody. Wywołanie metody i przekazując wymaganych parametrów uruchamia procedurę składowaną lub funkcję w bazie danych i zwraca dane w typie zwracanym <xref:System.Data.Linq.DataContext> metody. Aby uzyskać szczegółowe informacje na temat <xref:System.Data.Linq.DataContext> metod, zobacz [metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
 > [!NOTE]
->  Umożliwia także procedury składowane można zastąpić domyślną [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] zachowanie środowiska uruchomieniowego, które wykonuje wstawiania, aktualizacji i usuwa podczas zmiany są zapisywane z klasami jednostki bazy danych. Aby uzyskać więcej informacji, zobacz [porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawienia i usunięcia (Projektanta obiektów relacyjnych)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+> Można również użyć procedur składowanych Aby zastąpić domyślne [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] zachowania w czasie wykonywania, który wykonuje wstawiania, aktualizacji i usuwa podczas zmiany są zapisywane z klas jednostek bazy danych. Aby uzyskać więcej informacji, zobacz [porady: przypisywanie procedur składowanych do wykonywania aktualizacji, wstawiania i usuwania (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
-## <a name="create-datacontext-methods"></a>Utwórz metody DataContext
- Można utworzyć <xref:System.Data.Linq.DataContext> metody, przeciągając przechowywane procedury lub funkcji z ** Eksploratora serwera lub **Eksploratora bazy danych** na **Projektanta obiektów relacyjnych**.
+## <a name="create-datacontext-methods"></a>Tworzenie metod DataContext
+
+Możesz utworzyć <xref:System.Data.Linq.DataContext> metody, przeciągając przechowywane procedury lub funkcji z <strong>Eksploratora serwera lub ** Eksplorator bazy danych</strong> na **O/R Designer**.
 
 > [!NOTE]
->  Zwracany typ wygenerowany <xref:System.Data.Linq.DataContext> metoda zależy od tego, gdzie porzucić procedury składowanej lub funkcji na **Projektanta obiektów relacyjnych**. Usunięcie elementów bezpośrednio na istniejącej klasy jednostki tworzy <xref:System.Data.Linq.DataContext> metoda ze zwracanym typem klasy jednostka. Usunięcie elementów na pustym obszarem **Projektanta obiektów relacyjnych** tworzy <xref:System.Data.Linq.DataContext> metodę zwracającą automatycznie wygenerowanego typu. Można zmienić zwracany typ <xref:System.Data.Linq.DataContext> metody po dodaniu go do **metody** okienka. Aby sprawdzić lub zmienić zwracany typ <xref:System.Data.Linq.DataContext> metody, zaznacz go i sprawdzić **typu zwracanego** właściwości w **właściwości** okna. Aby uzyskać więcej informacji, zobacz [porady: Zmienianie zwracanego typu metody DataContext (Projektanta obiektów relacyjnych)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
+> Zwracany typ wygenerowany <xref:System.Data.Linq.DataContext> metoda różni się w zależności od tego, gdzie porzucić procedury składowanej lub funkcji na **O/R Designer**. Upuszczenie elementów bezpośrednio na istniejącej klasy jednostki tworzy <xref:System.Data.Linq.DataContext> metody z typem zwracanym klasy jednostki. Upuszczenie elementów na pustym obszarem **O/R Designer** tworzy <xref:System.Data.Linq.DataContext> metodę, która zwraca typ wygenerowany automatycznie. Możesz zmienić typ zwracany <xref:System.Data.Linq.DataContext> metoda po dodaniu go do **metody** okienka. Aby sprawdzić lub zmienić typ zwracany <xref:System.Data.Linq.DataContext> metody, zaznacz ją i sprawdź **typie zwracanym** właściwość **właściwości** okna. Aby uzyskać więcej informacji, zobacz [porady: zmiana zwracanego typu metody DataContext (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 ### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Aby utworzyć element DataContext metody, które zwracają automatycznie wygenerowane typy
 
-1.  W **Eksploratora serwera** lub **Eksploratora bazy danych**, rozwiń węzeł **procedur składowanych** węzła bazy danych, z którym pracujesz.
+1.  W **Eksploratora serwera** lub **Eksplorator bazy danych**, rozwiń węzeł **procedur składowanych** węzeł bazy danych, z którym pracujesz.
 
-2.  Znajdź odpowiednie procedury składowanej i przeciągnij go na pustym obszarem **Projektanta obiektów relacyjnych**.
+2.  Zlokalizuj odpowiednią procedurę składowaną i przeciągnij go na pustym obszarem **O/R Designer**.
 
-     <xref:System.Data.Linq.DataContext> Metody jest tworzony z automatycznie wygenerowanym typem zwracanym i wyświetlany w **metody** okienka.
+     <xref:System.Data.Linq.DataContext> Metody jest tworzone z automatycznie wygenerowanego zwracany typ i pojawia się w **metody** okienka.
 
-### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Aby utworzyć metodę DataContext, które mają zwracany typ klasy jednostki
+### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Aby utworzyć metody DataContext, które mają zwracany typ klasę jednostki
 
-1.  W **Eksploratora serwera** lub **Eksploratora bazy danych**, rozwiń węzeł **procedur składowanych** węzła bazy danych, z którym pracujesz.
+1.  W **Eksploratora serwera** lub **Eksplorator bazy danych**, rozwiń węzeł **procedur składowanych** węzeł bazy danych, z którym pracujesz.
 
-2.  Znajdź odpowiednie procedury składowanej i przeciągnij go do istniejącej klasy jednostki w **Projektanta obiektów relacyjnych**.
+2.  Zlokalizuj odpowiednią procedurę składowaną i przeciągnij go do istniejącej klasy jednostki w **O/R Designer**.
 
-     <xref:System.Data.Linq.DataContext> Metody jest tworzony z typem zwracanym klasy wybranej jednostki i wyświetlany w **metody** okienka.
+     <xref:System.Data.Linq.DataContext> Metody jest tworzony z typem zwracanym klasy wybranej jednostki i pojawia się w **metody** okienka.
 
 > [!NOTE]
->  Informacje o zmianie typu zwracanego przez istniejące <xref:System.Data.Linq.DataContext> metod, zobacz [porady: zmienić zwracany typ metody DataContext (Projektanta obiektów relacyjnych)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
+> Informacje dotyczące zmiany istniejącego typu zwracanego <xref:System.Data.Linq.DataContext> metod, zobacz [porady: zmiana zwracanego typu metody DataContext (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
 
 ## <a name="see-also"></a>Zobacz także
 
-- [LINQ do SQL narzędzi w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Metody DataContext (Projektanta obiektów relacyjnych)](../data-tools/datacontext-methods-o-r-designer.md)
-- [Wskazówki: Tworzenie LINQ w klasach SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Narzędzi LINQ to SQL w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Metody DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)
+- [Wskazówki: Tworzenie LINQ do klas SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Wprowadzenie do LINQ w Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)
 - [LINQ w C#](/dotnet/csharp/linq/linq-in-csharp)

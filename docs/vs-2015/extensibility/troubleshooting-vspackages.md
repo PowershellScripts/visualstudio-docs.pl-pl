@@ -16,12 +16,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0317b4d641cb965b5f92ad31cfab6d3580db30a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cc3395f065d211c2d8e7d4f68a6b3ec8c25474d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225566"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949316"
 ---
 # <a name="troubleshooting-vspackages"></a>Rozwiązywanie problemów z pakietami VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,19 +116,19 @@ Poniżej przedstawiono typowe problemy, które może być za pomocą Twojego pak
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>Aby rozwiązać brakuje pakietu VSPackage lub jednej z jego zależności  
   
-1.  Dla kodu zarządzanego upewnij się, że ścieżki odwołania są poprawne.  
+1. Dla kodu zarządzanego upewnij się, że ścieżki odwołania są poprawne.  
   
-    1.  Na **projektu** menu, kliknij przycisk **właściwości**.  
+   1.  Na **projektu** menu, kliknij przycisk **właściwości**.  
   
-    2.  Wybierz **odwołania** karcie **stron właściwości** okno dialogowe i upewnij się, że wszystkie ścieżki są prawidłowe. Alternatywnie, można użyć **przeglądarki obiektów** Aby przeglądać w poszukiwaniu przywoływanych obiektów.  
+   2.  Wybierz **odwołania** karcie **stron właściwości** okno dialogowe i upewnij się, że wszystkie ścieżki są prawidłowe. Alternatywnie, można użyć **przeglądarki obiektów** Aby przeglądać w poszukiwaniu przywoływanych obiektów.  
   
-         Dla kodu zarządzanego, możesz użyć [Fuslogvw.exe (Podgląd dziennika powiązań zestawów)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) do wyświetlania szczegółów ładowania zestawu nie powiodło się.  
+        Dla kodu zarządzanego, możesz użyć [Fuslogvw.exe (Podgląd dziennika powiązań zestawów)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) do wyświetlania szczegółów ładowania zestawu nie powiodło się.  
   
-2.  Dla niezarządzanego kodu można znaleźć identyfikator CLSID pakietu VSPackage w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] węzła rejestru CLSID:  
+2. Dla niezarządzanego kodu można znaleźć identyfikator CLSID pakietu VSPackage w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] węzła rejestru CLSID:  
   
-     HKLM\Software\Microsoft\Visual Studio\\*\<wersji >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<wersji >* \CLSID  
   
- Upewnij się, że wpis InprocServer32 ma poprawną ścieżkę biblioteki dll pakietu VSPackage.  
+   Upewnij się, że wpis InprocServer32 ma poprawną ścieżkę biblioteki dll pakietu VSPackage.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Pakiety VSPackage](../extensibility/internals/vspackages.md)

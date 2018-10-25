@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6ca08103614989ddbfd096a08a1531e756c9f67c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7f3d3f8dc34cf354fd6cb6b6689701dab791132d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942533"
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Projekty baz danych i aplikacji warstwy danych w programie Visual Studio
 
@@ -30,11 +30,11 @@ Aby uzyskać listę funkcji bazy danych, które są obsługiwane przez aplikacje
 
 ## <a name="common-high-level-tasks"></a>Typowe zadania wysokiego poziomu
 
-|Ogólne zadania|Zawartość pomocnicza|
-|----------------------|------------------------|
-|**Rozpocznij tworzenie aplikacji warstwy danych:** DAC to nowe pojęcie wprowadzone w programie [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] zawierający definicję [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] bazy danych i towarzyszące wystąpienia obiektów, które są używane przez serwer do klienta lub 3-warstwowej aplikacja. Aplikacji DAC programu zawiera obiekty bazy danych, takich jak tabele i widoki, wraz z wystąpienia jednostki, takie jak nazwy logowania. Używasz programu Visual Studio Utwórz projekt aplikacji DAC, tworzenie pliku pakietu aplikacji DAC i wysyłać ten plik pakietu aplikacji DAC administrator bazy danych w celu wdrożenia na wystąpienie [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] aparatu bazy danych.|-   [Tworzenie i zarządzanie nimi aplikacji warstwy danych](http://go.microsoft.com/fwlink/?LinkId=160741)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**Wykonywanie programowanie iteracyjne bazy danych:** Jeśli jesteś deweloperem lub tester, zapoznaj się z części projektu, a następnie zaktualizuj je w środowisku izolowanym rozwoju. Za pomocą tego typu środowiska, możesz testować wprowadzane zmiany, bez wywierania wpływu na innych członków zespołu. Po zakończeniu wprowadzania zmian, możesz sprawdzić pliki do kontroli wersji, gdy inni członkowie zespołu mogą uzyskać zmiany i tworzyć i wdrażać je na serwer testowy.|-   [Zapytania i edytorów tekstu (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)<br />-   [Debuger języka Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324)|
-|**Tworzenie prototypów, sprawdzanie wyników testów i modyfikowania skryptów bazy danych i obiektów:** można użyć [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] edytora, aby wykonać dowolne spośród tych wspólnych zadań.|-   [Zapytania i edytorów tekstu (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)|
+| Ogólne zadania | Zawartość pomocnicza |
+| - | - |
+| **Rozpocznij tworzenie aplikacji warstwy danych:** DAC to nowe pojęcie wprowadzone w programie [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] zawierający definicję [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] bazy danych i towarzyszące wystąpienia obiektów, które są używane przez serwer do klienta lub 3-warstwowej aplikacja. Aplikacji DAC programu zawiera obiekty bazy danych, takich jak tabele i widoki, wraz z wystąpienia jednostki, takie jak nazwy logowania. Używasz programu Visual Studio Utwórz projekt aplikacji DAC, tworzenie pliku pakietu aplikacji DAC i wysyłać ten plik pakietu aplikacji DAC administrator bazy danych w celu wdrożenia na wystąpienie [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] aparatu bazy danych. | -   [Tworzenie i zarządzanie nimi aplikacji warstwy danych](http://go.microsoft.com/fwlink/?LinkId=160741)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328) |
+| **Wykonywanie programowanie iteracyjne bazy danych:** Jeśli jesteś deweloperem lub tester, zapoznaj się z części projektu, a następnie zaktualizuj je w środowisku izolowanym rozwoju. Za pomocą tego typu środowiska, możesz testować wprowadzane zmiany, bez wywierania wpływu na innych członków zespołu. Po zakończeniu wprowadzania zmian, możesz sprawdzić pliki do kontroli wersji, gdy inni członkowie zespołu mogą uzyskać zmiany i tworzyć i wdrażać je na serwer testowy. | -   [Zapytania i edytorów tekstu (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327)<br />-   [Debuger języka Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) |
+| **Tworzenie prototypów, sprawdzanie wyników testów i modyfikowania skryptów bazy danych i obiektów:** można użyć [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] edytora, aby wykonać dowolne spośród tych wspólnych zadań. | -   [Zapytania i edytorów tekstu (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) |
 
 ## <a name="see-also"></a>Zobacz także
 

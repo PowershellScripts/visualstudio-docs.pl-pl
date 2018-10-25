@@ -13,12 +13,12 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b391c11fe47914df9c7b3ab1af12d8cbb5a55d9c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b44c9d400f5983feeada9557a79de9df50cfe8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934356"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Często zadawane pytania: konwertowanie dodatków na rozszerzenia pakietu VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,94 +62,94 @@ Dodatki są one przestarzałe. Aby wprowadzić nowe rozszerzenie programu Visual
 ##  <a name="BKMK_RunAddin"></a> Jak mogę uruchomić Moje kodu dodatku w VSPackage  
  Kodu dodatku jest zwykle uruchamiane w jednym z dwóch sposobów:  
   
--   Wyzwalane za pomocą polecenia menu (kod znajduje się w `IDTCommandTarget.Exec` metoda)  
+- Wyzwalane za pomocą polecenia menu (kod znajduje się w `IDTCommandTarget.Exec` metoda)  
   
--   Automatycznie podczas uruchamiania (kod znajduje się w `OnConnection` programu obsługi zdarzeń.)  
+- Automatycznie podczas uruchamiania (kod znajduje się w `OnConnection` programu obsługi zdarzeń.)  
   
- Możesz tworzyć tych samych czynności w VSPackage. Poniżej przedstawiono sposób dodawania kodu dodatku w metodzie wywołania zwrotnego:  
+  Możesz tworzyć tych samych czynności w VSPackage. Poniżej przedstawiono sposób dodawania kodu dodatku w metodzie wywołania zwrotnego:  
   
 #### <a name="to-implement-a-menu-command-in-a-vspackage"></a>Implementowanie polecenia menu w VSPackage  
   
-1.  Tworzenie pakietu VSPackage, który zawiera polecenie menu. (Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).)  
+1. Tworzenie pakietu VSPackage, który zawiera polecenie menu. (Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).)  
   
-2.  Otwórz plik, który zawiera definicję pakietu VSPackage. (W projekcie języka C# ma  *\<Nazwa projektu >* Package.cs.)  
+2. Otwórz plik, który zawiera definicję pakietu VSPackage. (W projekcie języka C# ma  <em>\<Nazwa projektu ></em>Package.cs.)  
   
-3.  Dodaj następujący kod `using` instrukcje do pliku:  
+3. Dodaj następujący kod `using` instrukcje do pliku:  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-4.  Znajdź `MenuItemCallback` metody. Dodaj wywołanie do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> można pobrać <xref:EnvDTE80.DTE2> obiektu:  
+4. Znajdź `MenuItemCallback` metody. Dodaj wywołanie do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> można pobrać <xref:EnvDTE80.DTE2> obiektu:  
   
-    ```csharp  
-    DTE2 dte = (DTE2)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE2 dte = (DTE2)GetService(typeof(DTE));  
+   ```  
   
-5.  Dodaj kod, który dodatku była w jego `IDTCommandTarget.Exec` metody. Na przykład poniżej przedstawiono niektóre kod, który dodaje nowe okienko do **dane wyjściowe** okno i wyświetla "Niektóre Text" w nowym okienku.  
+5. Dodaj kod, który dodatku była w jego `IDTCommandTarget.Exec` metody. Na przykład poniżej przedstawiono niektóre kod, który dodaje nowe okienko do **dane wyjściowe** okno i wyświetla "Niektóre Text" w nowym okienku.  
   
-    ```csharp  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        DTE2 dte = (DTE2) GetService(typeof(DTE));  
-        OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
+   ```csharp  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       DTE2 dte = (DTE2) GetService(typeof(DTE));  
+       OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
   
-        OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
-        outputWindowPane.OutputString("Some Text");  
-    }  
+       OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
+       outputWindowPane.OutputString("Some Text");  
+   }  
   
-    ```  
+   ```  
   
-6.  Twórz i uruchamiaj tego projektu. Naciśnij klawisz F5 lub wybierz **Start** na **debugowania** paska narzędzi. W doświadczalnym wystąpieniu programu Visual Studio **narzędzia** menu powinien mieć przycisk o nazwie **nazwa polecenia Moje**. Po wybraniu tego przycisku wyrazy **niektóre tekstu** powinna zostać wyświetlona w **dane wyjściowe** okienko. (Może być konieczne otwarcie **dane wyjściowe** okna.)  
+6. Twórz i uruchamiaj tego projektu. Naciśnij klawisz F5 lub wybierz **Start** na **debugowania** paska narzędzi. W doświadczalnym wystąpieniu programu Visual Studio **narzędzia** menu powinien mieć przycisk o nazwie **nazwa polecenia Moje**. Po wybraniu tego przycisku wyrazy **niektóre tekstu** powinna zostać wyświetlona w **dane wyjściowe** okienko. (Może być konieczne otwarcie **dane wyjściowe** okna.)  
   
- Mogą też istnieć uruchomienia przy uruchamianiu kodu. To podejście zazwyczaj jest zalecane dla rozszerzenia pakietu VSPackage. Jeśli zbyt wiele rozszerzeń próbuje załadować po uruchomieniu programu Visual Studio, czas rozpoczęcia mogą stać się znacznie dłużej. Jest to lepsze rozwiązanie do automatycznego ładowania pakietu VSPackage, tylko wtedy, gdy spełniony jest jakiś warunek (np. rozwiązanie jest otwarte).  
+   Mogą też istnieć uruchomienia przy uruchamianiu kodu. To podejście zazwyczaj jest zalecane dla rozszerzenia pakietu VSPackage. Jeśli zbyt wiele rozszerzeń próbuje załadować po uruchomieniu programu Visual Studio, czas rozpoczęcia mogą stać się znacznie dłużej. Jest to lepsze rozwiązanie do automatycznego ładowania pakietu VSPackage, tylko wtedy, gdy spełniony jest jakiś warunek (np. rozwiązanie jest otwarte).  
   
- Ta procedura pokazuje sposób uruchamiania kodu dodatku w pakietu VSPackage, który ładuje się automatycznie po otwarciu rozwiązania:  
+   Ta procedura pokazuje sposób uruchamiania kodu dodatku w pakietu VSPackage, który ładuje się automatycznie po otwarciu rozwiązania:  
   
 #### <a name="to-autoload-a-vspackage"></a>Aby automatycznie załadować pakietu VSPackage  
   
-1.  Utwórz projekt VSIX z elementem projektu pakietu Visual Studio. (Aby uzyskać instrukcje to zrobić, zobacz [jak rozpocząć tworzenie rozszerzeń VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping). Wystarczy dodać atrybut **pakiet rozszerzeń Visual Studio** zamiast tego elementu projektu.) Nazwij projekt VSIX **TestAutoload**.  
+1. Utwórz projekt VSIX z elementem projektu pakietu Visual Studio. (Aby uzyskać instrukcje to zrobić, zobacz [jak rozpocząć tworzenie rozszerzeń VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping). Wystarczy dodać atrybut **pakiet rozszerzeń Visual Studio** zamiast tego elementu projektu.) Nazwij projekt VSIX **TestAutoload**.  
   
-2.  Otwórz TestAutoloadPackage.cs. Znajdź wiersz, w którym jest zadeklarowana w klasie pakietu:  
+2. Otwórz TestAutoloadPackage.cs. Znajdź wiersz, w którym jest zadeklarowana w klasie pakietu:  
   
-    ```csharp  
-    public sealed class <name of your package>Package : Package  
-    ```  
+   ```csharp  
+   public sealed class <name of your package>Package : Package  
+   ```  
   
-3.  Powyżej tego wiersza to zestaw atrybutów. Dodaj ten atrybut:  
+3. Powyżej tego wiersza to zestaw atrybutów. Dodaj ten atrybut:  
   
-    ```csharp  
-    [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
+   ```  
   
-4.  Ustaw punkt przerwania `Initialize()` metody i rozpoczęcia debugowania (F5).  
+4. Ustaw punkt przerwania `Initialize()` metody i rozpoczęcia debugowania (F5).  
   
-5.  W doświadczalnym wystąpieniu Otwórz projekt. Pakietu VSPackage powinny zostać załadowane, a powinien trafiony punkt przerwania.  
+5. W doświadczalnym wystąpieniu Otwórz projekt. Pakietu VSPackage powinny zostać załadowane, a powinien trafiony punkt przerwania.  
   
- Można określić innych kontekstach, w której chcesz załadować Twojego pakietu VSPackage przy użyciu pól <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>. Aby uzyskać więcej informacji, zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md).  
+   Można określić innych kontekstach, w której chcesz załadować Twojego pakietu VSPackage przy użyciu pól <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>. Aby uzyskać więcej informacji, zobacz [ładowanie pakietów VSPackage](../extensibility/loading-vspackages.md).  
   
 ## <a name="how-can-i-get-the-dte-object"></a>Jak uzyskać obiekt DTE  
  Jeśli dodatek nie powoduje wyświetlenia interfejsu użytkownika — na przykład, polecenia menu, przyciski paska narzędzi lub okna narzędzi — można użyć kodu jako — jest tak długo, jak pobrać obiektu automatyzacji DTE z pakietu VSPackage. Oto jak:  
   
 #### <a name="to-get-the-dte-object-from-a-vspackage"></a>Aby uzyskać obiekt DTE z pakietu VSPackage  
   
-1.  W projekcie VSIX z szablonem elementu pakiet rozszerzeń Visual Studio, wyszukaj  *\<Nazwa projektu >* Package.cs plik. Jest to klasa, która pochodzi od klasy <xref:Microsoft.VisualStudio.Shell.Package>; może pomóc w interakcji z programem Visual Studio. W tym przypadku używasz jego <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> można pobrać <xref:EnvDTE80.DTE2> obiektu.  
+1. W projekcie VSIX z szablonem elementu pakiet rozszerzeń Visual Studio, wyszukaj  <em>\<Nazwa projektu ></em>Package.cs plik. Jest to klasa, która pochodzi od klasy <xref:Microsoft.VisualStudio.Shell.Package>; może pomóc w interakcji z programem Visual Studio. W tym przypadku używasz jego <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> można pobrać <xref:EnvDTE80.DTE2> obiektu.  
   
-2.  Dodaj następujące `using` instrukcji:  
+2. Dodaj następujące `using` instrukcji:  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-3.  Znajdź `Initialize` metody. Ta metoda obsługuje polecenie, które określiłeś w kreatorze pakietu. Dodaj wywołanie do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> można pobrać obiektu DTE:  
+3. Znajdź `Initialize` metody. Ta metoda obsługuje polecenie, które określiłeś w kreatorze pakietu. Dodaj wywołanie do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> można pobrać obiektu DTE:  
   
-    ```csharp  
-    DTE dte = (DTE)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE dte = (DTE)GetService(typeof(DTE));  
+   ```  
   
- Po utworzeniu <xref:EnvDTE.DTE> obiektu automatyzacji, pozostała część kodu dodatku można dodać do projektu. Jeśli potrzebujesz <xref:EnvDTE80.DTE2> obiektu, możesz zrobić to samo.  
+   Po utworzeniu <xref:EnvDTE.DTE> obiektu automatyzacji, pozostała część kodu dodatku można dodać do projektu. Jeśli potrzebujesz <xref:EnvDTE80.DTE2> obiektu, możesz zrobić to samo.  
   
 ## <a name="how-do-i-change-menu-commands-and-toolbar-buttons-in-my-add-in-to-the-vspackage-style"></a>Jak zmienić poleceń menu i przycisków paska narzędzi w mojej dodatku na VSPackage styl?  
  Rozszerzenia pakietu VSPackage Użyj pliku vsct, aby utworzyć większość poleceń menu, paski narzędzi, przyciski paska narzędzi i innych interfejsu użytkownika. **Polecenia niestandardowego** szablonu elementu projektu udostępnia opcję, aby utworzyć polecenie na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
@@ -164,91 +164,91 @@ Dodatki są one przestarzałe. Aby wprowadzić nowe rozszerzenie programu Visual
   
 #### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>Aby wstawić kod zarządzania systemem Windows z dodatek do VSPackage  
   
-1.  Tworzenie pakietu VSPackage, który zawiera polecenie menu, podobnie jak w [jak rozpocząć tworzenie rozszerzeń VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sekcji.  
+1. Tworzenie pakietu VSPackage, który zawiera polecenie menu, podobnie jak w [jak rozpocząć tworzenie rozszerzeń VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sekcji.  
   
-2.  Otwórz plik, który zawiera definicję pakietu VSPackage. (W projekcie języka C# ma  *\<Nazwa projektu >* Package.cs.)  
+2. Otwórz plik, który zawiera definicję pakietu VSPackage. (W projekcie języka C# ma  <em>\<Nazwa projektu ></em>Package.cs.)  
   
-3.  Dodaj następujące `using` instrukcji:  
+3. Dodaj następujące `using` instrukcji:  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-4.  Znajdź `MenuItemCallback` metody. Dodaj wywołanie do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> można pobrać <xref:EnvDTE80.DTE2> obiektu:  
+4. Znajdź `MenuItemCallback` metody. Dodaj wywołanie do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> można pobrać <xref:EnvDTE80.DTE2> obiektu:  
   
-    ```csharp  
-    DTE2 dte = (DTE2)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE2 dte = (DTE2)GetService(typeof(DTE));  
+   ```  
   
-5.  Dodawanie kodu za pomocą dodatku. Na przykład poniżej przedstawiono niektóre kod, który dodaje nowe zadania do **listy zadań**, wyświetla liczbę zadań, a następnie usuwa jedno zadanie.  
+5. Dodawanie kodu za pomocą dodatku. Na przykład poniżej przedstawiono niektóre kod, który dodaje nowe zadania do **listy zadań**, wyświetla liczbę zadań, a następnie usuwa jedno zadanie.  
   
-    ```csharp  
-    private void MenuItemCallback(object sender, EventArgs e)   
-    {  
-        DTE2 dte = (DTE2) GetService(typeof(DTE));   
+   ```csharp  
+   private void MenuItemCallback(object sender, EventArgs e)   
+   {  
+       DTE2 dte = (DTE2) GetService(typeof(DTE));   
   
-        TaskList tl = (TaskList)dte.ToolWindows.TaskList;   
-        askItem tlItem;   
+       TaskList tl = (TaskList)dte.ToolWindows.TaskList;   
+       askItem tlItem;   
   
-        // Add a couple of tasks to the Task List.   
-        tlItem = tl.TaskItems.Add(" ", " ", "Test task 1.",    
-            vsTaskPriority.vsTaskPriorityHigh, vsTaskIcon.vsTaskIconUser,   
-            true, "", 10, true, true);  
-        tlItem = tl.TaskItems.Add(" ", " ", "Test task 2.",   
-            vsTaskPriority.vsTaskPriorityLow, vsTaskIcon.vsTaskIconComment, true, "", 20, true,true);  
+       // Add a couple of tasks to the Task List.   
+       tlItem = tl.TaskItems.Add(" ", " ", "Test task 1.",    
+           vsTaskPriority.vsTaskPriorityHigh, vsTaskIcon.vsTaskIconUser,   
+           true, "", 10, true, true);  
+       tlItem = tl.TaskItems.Add(" ", " ", "Test task 2.",   
+           vsTaskPriority.vsTaskPriorityLow, vsTaskIcon.vsTaskIconComment, true, "", 20, true,true);  
   
-        // List the total number of task list items after adding the new task items.  
-        System.Windows.Forms.MessageBox.Show("Task Item 1 description: "+tl.TaskItems.Item(2).Description);  
-        System.Windows.Forms.MessageBox.Show("Total number of task items: "+tl.TaskItems.Count);   
+       // List the total number of task list items after adding the new task items.  
+       System.Windows.Forms.MessageBox.Show("Task Item 1 description: "+tl.TaskItems.Item(2).Description);  
+       System.Windows.Forms.MessageBox.Show("Total number of task items: "+tl.TaskItems.Count);   
   
-        // Remove the second task item. The items list in reverse numeric order.   
-        System.Windows.Forms.MessageBox.Show("Deleting the second task item");  
-        tl.TaskItems.Item(2).Delete();  
-        System.Windows.Forms.MessageBox.Show("Total number of task items: "+tl.TaskItems.Count);   
-    }  
-    ```  
+       // Remove the second task item. The items list in reverse numeric order.   
+       System.Windows.Forms.MessageBox.Show("Deleting the second task item");  
+       tl.TaskItems.Item(2).Delete();  
+       System.Windows.Forms.MessageBox.Show("Total number of task items: "+tl.TaskItems.Count);   
+   }  
+   ```  
   
 ## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>Jak zarządzać projektami i rozwiązaniami w VSPackage  
  Jeśli dodatek programu zarządza projekty i rozwiązania, kod dodatku powinien działać w VSPackage. Na przykład ta procedura pokazuje, jak dodać kod, który pobiera projekt startowy.  
   
-1.  Tworzenie pakietu VSPackage, który zawiera polecenie menu, podobnie jak w [jak rozpocząć tworzenie rozszerzeń VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sekcji.  
+1. Tworzenie pakietu VSPackage, który zawiera polecenie menu, podobnie jak w [jak rozpocząć tworzenie rozszerzeń VSIX?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) sekcji.  
   
-2.  Otwórz plik, który zawiera definicję pakietu VSPackage. (W projekcie języka C# ma  *\<Nazwa projektu >* Package.cs.)  
+2. Otwórz plik, który zawiera definicję pakietu VSPackage. (W projekcie języka C# ma  <em>\<Nazwa projektu ></em>Package.cs.)  
   
-3.  Dodaj następujące `using` instrukcji:  
+3. Dodaj następujące `using` instrukcji:  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-4.  Znajdź `MenuItemCallback` metody. Dodaj wywołanie do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> można pobrać <xref:EnvDTE80.DTE2> obiektu:  
+4. Znajdź `MenuItemCallback` metody. Dodaj wywołanie do <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> można pobrać <xref:EnvDTE80.DTE2> obiektu:  
   
-    ```csharp  
-    DTE2 dte = (DTE2)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE2 dte = (DTE2)GetService(typeof(DTE));  
+   ```  
   
-5.  Dodawanie kodu za pomocą dodatku. Na przykład poniższy kod umożliwia pobranie nazwy projektu startowego w rozwiązaniu. (Rozwiązanie z wieloma projektami musi być otwarty po uruchomieniu tego pakietu.)  
+5. Dodawanie kodu za pomocą dodatku. Na przykład poniższy kod umożliwia pobranie nazwy projektu startowego w rozwiązaniu. (Rozwiązanie z wieloma projektami musi być otwarty po uruchomieniu tego pakietu.)  
   
-    ```csharp  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        DTE2 dte = (DTE2) GetService(typeof(DTE));   
+   ```csharp  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       DTE2 dte = (DTE2) GetService(typeof(DTE));   
   
-        SolutionBuild2 sb = (SolutionBuild2)dte.Solution.SolutionBuild;   
-        Project startupProj;   
-        string msg = "";  
+       SolutionBuild2 sb = (SolutionBuild2)dte.Solution.SolutionBuild;   
+       Project startupProj;   
+       string msg = "";  
   
-        foreach (String item in (Array)sb.StartupProjects)   
-        {  
-            msg += item;   
-        }  
-        System.Windows.Forms.MessageBox.Show("Solution startup Project: "+msg);   
-        startupProj = dte.Solution.Item(msg);   
-        System.Windows.Forms.MessageBox.Show("Full name of solution's startup project: "+"/n"+startupProj.FullName);   
-    }  
-    ```  
+       foreach (String item in (Array)sb.StartupProjects)   
+       {  
+           msg += item;   
+       }  
+       System.Windows.Forms.MessageBox.Show("Solution startup Project: "+msg);   
+       startupProj = dte.Solution.Item(msg);   
+       System.Windows.Forms.MessageBox.Show("Full name of solution's startup project: "+"/n"+startupProj.FullName);   
+   }  
+   ```  
   
 ## <a name="how-do-i-set-keyboard-shortcuts-in-a-vspackage"></a>Jak ustawić skróty klawiaturowe w VSPackage?  
  Możesz użyć `<KeyBindings>` element pliku vsct. W poniższym przykładzie skrótu klawiaturowego dla polecenia `idCommand1` Alt + A, a skrótu klawiaturowego dla polecenia `idCommand2` jest Alt + klawisze Ctrl + A. Zwróć uwagę, składnia nazwy kluczy.  

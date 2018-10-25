@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5725d6e143f10cd3a3fae18398ec0cb08729fa34
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e53fa8c1adcf9e66b06fb2b3c286c74dbc4ab7dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942117"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
-Określa, że wydawca programu czy debugera jest obecna i uruchomiona.  
+Informuje wydawca programu, że debuger jest obecna i uruchomiona.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int SetDebuggerPresent(
   
 #### <a name="parameters"></a>Parametry  
  `fDebuggerPresent`  
- [in] Niezerowa (`TRUE`) Jeśli jest obecny debuger, zero (`FALSE`) Jeśli nie jest.  
+ [in] Niezerowa Koniunkcja (`TRUE`) jest obecny debuger, wartość zero (`FALSE`) Jeśli nie jest.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Obecności lub braku debugera jest widoczny w dane zwrócone w wyniku [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) metody: wartości zwracanej jest ustawiona lub usunięte przez poprzednie wywołanie `SetDebuggerPresent` metody.  
+ Obecność lub brak debugera jest widoczny w danych zwracanych przez [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) metoda: wartość zwracana jest ustawiony lub wyczyścić przy wywołaniu `SetDebuggerPresent` metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

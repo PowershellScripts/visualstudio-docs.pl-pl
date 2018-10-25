@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie wdrożenia programu Project konfiguracji | Dokumentacja firmy Microsoft
+title: Projekt konfiguracji do zarządzania wdrożeniem | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,33 +14,33 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 723edd078636eb324fc2d5dfca2ae81ef3249a43
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d3f632f7b271e3272a38dd79653b4c2ff238220
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132261"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951538"
 ---
-# <a name="project-configuration-for-managing-deployment"></a>Konfiguracja projektu do zarządzania wdrożenia
-Wdrożenie jest czynnością fizycznie przeniesienie elementów dane wyjściowe z procesu kompilacji do oczekiwanej lokalizacji do debugowania i instalacji. Na przykład aplikacji sieci Web może być oparty na komputerze lokalnym i następnie umieszczone na serwerze.  
+# <a name="project-configuration-for-managing-deployment"></a>Konfigurowanie projektu do zarządzania wdrożeniem
+Wdrożenie jest fizycznie przeniesienie elementów wyjściowych z procesu kompilacji w oczekiwanej lokalizacji debugowania i podczas instalacji. Na przykład aplikacja sieci Web może być oparta na komputerze lokalnym i następnie umieszczone na serwerze.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje dwa sposoby, które projekty może być włączony we wdrożeniu:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsługuje dwie metody, które projekty mogą brać udział we wdrożeniu:  
   
--   Jako podmiot procesu wdrażania.  
+- Jako podmiot w procesie wdrażania.  
   
--   Menedżer procesu wdrażania.  
+- Jako Menedżer ds. procesu wdrażania.  
   
- Przed wdrożeniem rozwiązania, należy najpierw dodać projekt wdrożenia, aby skonfigurować opcje wdrażania. Jeśli projekt Wdróż jeszcze nie istnieje, zostanie wyświetlona prośba, jeśli chcesz utworzyć po wybraniu **wdrożyć rozwiązanie** z **kompilacji** menu lub kliknij prawym przyciskiem myszy rozwiązanie. Kliknięcie przycisku **tak** otwiera **Dodawanie nowego projektu** okno dialogowe z **zdalnego Kreatora wdrażania** wybranego projektu.  
+  Przed wdrożeniem rozwiązania, należy najpierw dodać projekt wdrożenia, aby skonfigurować opcje wdrażania. Jeśli projekt Wdróż jeszcze nie istnieje, zostanie wyświetlony monit Jeśli chcesz utworzyć po wybraniu **wdrożyć rozwiązanie** z **kompilacji** menu lub kliknij prawym przyciskiem myszy rozwiązanie. Klikając **tak** otwiera **Dodaj nowy projekt** okno dialogowe z **Kreator zdalnego wdrażania** wybranego projektu.  
   
- Zdalne Kreatora wdrażania prośba dla typu aplikacji (Windows lub aplikacji internetowej), grupy dane wyjściowe projektu do dołączenia, wszelkie dodatkowe pliki, które chcesz uwzględnić i komputera zdalnego, który chcesz wdrożyć. Ostatniej strony kreatora Wyświetla podsumowanie wybrane opcje.  
+  Kreator zdalnego wdrażania pyta dla typu aplikacji (Windows lub w sieci Web), grupy danych wyjściowych projektu do uwzględnienia, wszelkie dodatkowe pliki, które mają zostać uwzględnione i komputer zdalny, którą chcesz wdrożyć. Ostatnia strona kreatora Wyświetla podsumowanie wybrane opcje.  
   
- Projekty, które są objęte procesem wdrażania utworzyć elementy danych wyjściowych, które muszą zostać przeniesione do środowiska alternatywny. Te dane wyjściowe elementy są opisane jako parametry <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> interfejsu, którego podstawowy cel if zezwolić na dane wyjściowe grupy projektów. Aby uzyskać więcej informacji dotyczących stosowania `IVsProjectCfg2`, zobacz [konfiguracji projektu dla danych wyjściowych](../../extensibility/internals/project-configuration-for-output.md).  
+  Projekty, które są objęte procesem wdrażania generuje elementy danych wyjściowych, które należy przenieść do środowiska alternatywne. Te dane wyjściowe elementy są określane jako parametry <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> interfejsu, którego podstawowy cel if umożliwić projekty do grupy danych wyjściowych. Aby uzyskać więcej informacji dotyczących implementacji `IVsProjectCfg2`, zobacz [konfiguracji projektu dla danych wyjściowych](../../extensibility/internals/project-configuration-for-output.md).  
   
- Projekty wdrażania, które zarządzają procesu wdrażania, włącz polecenie Wdróż i odpowiedzi w przypadku wybrania tego polecenia. Implementowanie projekty wdrażania <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfejsu, aby wykonać wdrożenie i wykonywania wywołań do <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback> zdarzenia stanu wdrażania interfejsu do raportu.  
+  Projekty wdrażania, których zarządzanie procesem wdrażania, włącz polecenie wdrożenia i reagować po wybraniu tego polecenia. Projekty wdrażania w implementacji <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfejsu, aby wykonać wdrożenie i wykonywać wywołania do <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback> interfejsu do raportu wdrażania stan zdarzenia.  
   
- Konfiguracje można określić zależności, które mają wpływ na operacje kompilacji lub wdrożenia. Kompilacji lub wdrożenia zależności są projektów, które muszą być skompilowane lub wdrożone przed lub po same konfiguracje są wbudowane lub wdrożyć. Opisano kompilacji współzależności między projektami o <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> interfejsu i wdrożyć zależności z <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfejsu. Aby uzyskać więcej informacji, zobacz [konfiguracji projektu dla tworzenia](../../extensibility/internals/project-configuration-for-building.md).  
+  Konfiguracje można określić zależności, które mają wpływ na operacje kompilacji lub wdrożenia. Kompilowania lub wdrażania zależności są projektami, które muszą być skompilowane lub wdrożone przed lub po same konfiguracje są kompilowania lub wdrażania. Opisano zależności kompilacji między projektami za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> interfejs i wdrożenie zależności za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfejsu. Aby uzyskać więcej informacji, zobacz [Konfigurowanie projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Opcje konfiguracji zarządzania](../../extensibility/internals/managing-configuration-options.md)   
- [Konfiguracja projektu dla tworzenia](../../extensibility/internals/project-configuration-for-building.md)   
+ [Zarządzanie opcjami konfiguracji](../../extensibility/internals/managing-configuration-options.md)   
+ [Konfigurowanie projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md)   
  [Konfigurowanie projektu dla danych wyjściowych](../../extensibility/internals/project-configuration-for-output.md)

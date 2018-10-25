@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f43a0fe3d7d2ad7c54ee9203037595dade7c6486
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 434a53803dcc08a5d4b07b531b56e913d5311d1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934798"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
-Pobiera rozmiar w instrukcjach tego strumienia dezasemblacji.  
+Pobiera rozmiar w instrukcjach ten strumień dezasemblacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,15 +41,15 @@ int GetSize(
   
 #### <a name="parameters"></a>Parametry  
  `pnSize`  
- [out] Zwraca rozmiar w instrukcji.  
+ [out] Zwraca rozmiar w instrukcjach.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wartość zwrócona przez tę metodę można przydzielić tablicy [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury, które są następnie przekazywane do [odczytu](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metody.  
+ Wartość zwracana z tej metody może służyć do przydzielania tablicy [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktur, które są następnie przekazywane do [odczytu](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
- [Odczyt](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
+ [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

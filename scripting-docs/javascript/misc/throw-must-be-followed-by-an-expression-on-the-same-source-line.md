@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7179a22d2713c9ddc894618bd6921f3f873f2ad8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788770"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951057"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>Po instrukcji Throw musi występować wyrażenie w tym samym wierszu źródłowym
-Możesz użyć `throw` — słowo kluczowe, ale nie wykonać go z wyrażeniem na tym samym wierszu źródłowym. A `throw` instrukcji składa się z dwóch części: `throw` — słowo kluczowe, a następnie wyrażenie, które ma zostać wygenerowany. Na przykład:  
+Użyte `throw` — słowo kluczowe, ale nie korzystał z go za pomocą wyrażenia w tym samym wierszu źródłowym. A `throw` instrukcji składa się z dwóch części: `throw` — słowo kluczowe, a następnie wyrażenie które ma zostać wygenerowany. Na przykład:  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -40,9 +40,9 @@ if (denominator == 0) {
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Upewnij się, że `throw` — słowo kluczowe i wyrażenie, które ma zostać zgłoszony, pojawi się w tym samym wierszu.  
+-   Upewnij się, że `throw` — słowo kluczowe i wyrażenie które ma zostać wygenerowany pojawia się na tym samym wierszu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Error — obiekt](../../javascript/reference/error-object-javascript.md)   
- [throw — instrukcja](../../javascript/reference/throw-statement-javascript.md)   
- [try... catch... finally — instrukcja](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)
+ [Throw — instrukcja](../../javascript/reference/throw-statement-javascript.md)   
+ [Try...Catch...Finally, instrukcja](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

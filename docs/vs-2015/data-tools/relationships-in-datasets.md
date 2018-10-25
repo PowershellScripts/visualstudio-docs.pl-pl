@@ -24,12 +24,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cfa1f6fa49c8fab1bd93a0d2a38b85ec958a6fed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275707"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935409"
 ---
 # <a name="relationships-in-datasets"></a>Relacje w zestawach danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,33 +39,33 @@ Zestawy danych, które zawierają dane powiązane tabele użyj <xref:System.Data
   
  <xref:System.Data.DataRelation> Obiektu wykonuje dwie funkcje:  
   
--   Może sprawić, że dostępne rekordy związane z rekordu, którą pracujesz. Zawiera rekordy podrzędne, jeśli rekord nadrzędny (<xref:System.Data.DataRow.GetChildRows%2A>) i rekord nadrzędny, jeśli pracujesz z podrzędnego rekordu (<xref:System.Data.DataRow.GetParentRow%2A>).  
+- Może sprawić, że dostępne rekordy związane z rekordu, którą pracujesz. Zawiera rekordy podrzędne, jeśli rekord nadrzędny (<xref:System.Data.DataRow.GetChildRows%2A>) i rekord nadrzędny, jeśli pracujesz z podrzędnego rekordu (<xref:System.Data.DataRow.GetParentRow%2A>).  
   
--   Jak również wymuszać ograniczenia integralności referencyjnej, takie jak usuwanie powiązane rekordy podrzędne, po usunięciu rekordu nadrzędnego.  
+- Jak również wymuszać ograniczenia integralności referencyjnej, takie jak usuwanie powiązane rekordy podrzędne, po usunięciu rekordu nadrzędnego.  
   
- Należy zrozumieć różnicę między true dołączania i funkcja <xref:System.Data.DataRelation> obiektu. Wartość true, sprzężenia rekordy są pobierane z nadrzędną i podrzędną i umieszczane w jednej, prostego zestawu rekordów. Kiedy używasz <xref:System.Data.DataRelation> obiektu nie nowy zestaw rekordów jest tworzony. Zamiast tego należy DataRelation śledzi relacje między tabelami i elementy nadrzędne i podrzędne rekordy w synchronizacji.  
+  Należy zrozumieć różnicę między true dołączania i funkcja <xref:System.Data.DataRelation> obiektu. Wartość true, sprzężenia rekordy są pobierane z nadrzędną i podrzędną i umieszczane w jednej, prostego zestawu rekordów. Kiedy używasz <xref:System.Data.DataRelation> obiektu nie nowy zestaw rekordów jest tworzony. Zamiast tego należy DataRelation śledzi relacje między tabelami i elementy nadrzędne i podrzędne rekordy w synchronizacji.  
   
 ## <a name="datarelation-objects-and-constraints"></a>DataRelation — obiekty i ograniczenia  
  Element <xref:System.Data.DataRelation> obiektu umożliwia również tworzenie i wymuszanie następujące ograniczenia:  
   
--   Ograniczenia unique, co gwarantuje, że kolumna w tabeli nie zawiera duplikatów.  
+- Ograniczenia unique, co gwarantuje, że kolumna w tabeli nie zawiera duplikatów.  
   
--   Ograniczenie klucza obcego, która może służyć do zachowania więzów integralności między tabelą nadrzędną i podrzędną w zestawie danych.  
+- Ograniczenie klucza obcego, która może służyć do zachowania więzów integralności między tabelą nadrzędną i podrzędną w zestawie danych.  
   
- Ograniczenia, które są określone w <xref:System.Data.DataRelation> obiektu są implementowane przez automatyczne tworzenie odpowiednich obiektów lub ustawienie właściwości. Jeśli tworzysz ograniczenie klucza obcego przy użyciu <xref:System.Data.DataRelation> object, wystąpień <xref:System.Data.ForeignKeyConstraint> klasy są dodawane do <xref:System.Data.DataRelation> obiektu <xref:System.Data.DataRelation.ChildKeyConstraint%2A> właściwości.  
+  Ograniczenia, które są określone w <xref:System.Data.DataRelation> obiektu są implementowane przez automatyczne tworzenie odpowiednich obiektów lub ustawienie właściwości. Jeśli tworzysz ograniczenie klucza obcego przy użyciu <xref:System.Data.DataRelation> object, wystąpień <xref:System.Data.ForeignKeyConstraint> klasy są dodawane do <xref:System.Data.DataRelation> obiektu <xref:System.Data.DataRelation.ChildKeyConstraint%2A> właściwości.  
   
- Zaimplementowano ograniczenia unique albo po prostu ustawiając <xref:System.Data.DataColumn.Unique%2A> właściwości kolumny danych `true` lub dodając wystąpienie <xref:System.Data.UniqueConstraint> klasy <xref:System.Data.DataRelation> obiektu <xref:System.Data.DataRelation.ParentKeyConstraint%2A> właściwości. Aby uzyskać informacji na temat wstrzymywania ograniczenia w zestawie danych, zobacz [wyłączanie ograniczeń podczas zapełniania zestawu danych](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
+  Zaimplementowano ograniczenia unique albo po prostu ustawiając <xref:System.Data.DataColumn.Unique%2A> właściwości kolumny danych `true` lub dodając wystąpienie <xref:System.Data.UniqueConstraint> klasy <xref:System.Data.DataRelation> obiektu <xref:System.Data.DataRelation.ParentKeyConstraint%2A> właściwości. Aby uzyskać informacji na temat wstrzymywania ograniczenia w zestawie danych, zobacz [wyłączanie ograniczeń podczas zapełniania zestawu danych](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
 ### <a name="referential-integrity-rules"></a>Zasady integralności referencyjnej  
  W ramach ograniczeń klucza obcego można określić reguły więzów integralności, które są stosowane w trzech miejscach:  
   
--   Gdy rekord nadrzędny jest aktualizowany  
+- Gdy rekord nadrzędny jest aktualizowany  
   
--   Gdy rekord nadrzędny jest usunięty  
+- Gdy rekord nadrzędny jest usunięty  
   
--   Po zmianie jest zaakceptowane lub odrzucone  
+- Po zmianie jest zaakceptowane lub odrzucone  
   
- Reguły, które można wprowadzić są określone w <xref:System.Data.Rule> wyliczenie i są wymienione w poniższej tabeli.  
+  Reguły, które można wprowadzić są określone w <xref:System.Data.Rule> wyliczenie i są wymienione w poniższej tabeli.  
   
 |Zasada ograniczenia PRIMARY key obcych|Akcja|  
 |----------------------------------|------------|  

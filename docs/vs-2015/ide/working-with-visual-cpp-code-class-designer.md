@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3190aebd98270dee4bb5148868c04a4f5e430781
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f777c9bdd0cf2ea300d2df8e7cbfbc8900c25c2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929533"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Praca z kodem Visual C++ (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,23 +68,23 @@ Projektant klasy Wyświetla powierzchni projektowej o nazwie *diagram klas* zape
 ### <a name="type-resolution-issues"></a>Typ rozwiązywania problemów  
  Projektant klas może nie być w stanie rozpoznać typów z następujących powodów:  
   
--   Typ jest w projekcie lub w zestawie, który nie odwołuje się projekt, który zawiera diagram klas. Aby rozwiązać ten problem, Dodaj odwołanie do projektu lub zestawu, który zawiera tekst. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodaj odwołanie](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Typ jest w projekcie lub w zestawie, który nie odwołuje się projekt, który zawiera diagram klas. Aby rozwiązać ten problem, Dodaj odwołanie do projektu lub zestawu, który zawiera tekst. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodaj odwołanie](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
--   Typ nie jest w niewłaściwym zakresie, więc Projektant klas nie może go zlokalizować. Upewnij się, że kod nie jest Brak `using`, `imports`, lub `#include` instrukcji. Upewnij się, że nie zostały przeniesione typu (lub powiązanego typu) z przestrzeni nazw, w którym został on pierwotnie znajduje się również.  
+- Typ nie jest w niewłaściwym zakresie, więc Projektant klas nie może go zlokalizować. Upewnij się, że kod nie jest Brak `using`, `imports`, lub `#include` instrukcji. Upewnij się, że nie zostały przeniesione typu (lub powiązanego typu) z przestrzeni nazw, w którym został on pierwotnie znajduje się również.  
   
--   Typ nie istnieje lub została ujęta w komentarz. Aby rozwiązać ten problem, upewnij się, że nie oznaczone jako komentarz lub usunięty typ.  
+- Typ nie istnieje lub została ujęta w komentarz. Aby rozwiązać ten problem, upewnij się, że nie oznaczone jako komentarz lub usunięty typ.  
   
--   Typ znajduje się w bibliotece odwołuje się #import — dyrektywa. Możliwym obejściem jest ręcznie dodać wygenerowanego kodu (plik .tlh) # dyrektywy include w pliku nagłówka.  
+- Typ znajduje się w bibliotece odwołuje się #import — dyrektywa. Możliwym obejściem jest ręcznie dodać wygenerowanego kodu (plik .tlh) # dyrektywy include w pliku nagłówka.  
   
- Ten błąd jest najbardziej prawdopodobne zobaczyć problemu rozpoznawania typu jest **nie można odnaleźć kodu dla jednego lub więcej kształtów na diagramie klasy "\<element >"**. Ten komunikat o błędzie nie musi oznaczać, że Twój kod jest błąd. Wskazuje on, że tego projektanta klas nie może wyświetlić kodu. Spróbuj wykonać następujące działania.  
+  Ten błąd jest najbardziej prawdopodobne zobaczyć problemu rozpoznawania typu jest **nie można odnaleźć kodu dla jednego lub więcej kształtów na diagramie klasy "\<element >"**. Ten komunikat o błędzie nie musi oznaczać, że Twój kod jest błąd. Wskazuje on, że tego projektanta klas nie może wyświetlić kodu. Spróbuj wykonać następujące działania.  
   
--   Upewnij się, że typ istnieje. Upewnij się, że nie przypadkowo oznaczone jako komentarz lub usunięty kodu źródłowego.  
+- Upewnij się, że typ istnieje. Upewnij się, że nie przypadkowo oznaczone jako komentarz lub usunięty kodu źródłowego.  
   
--   Upewnij się, że Projektant klasy obsługuje typ, który wprowadzono. Zobacz [ograniczenia dla elementów kodu w języku C++](#limitations).  
+- Upewnij się, że Projektant klasy obsługuje typ, który wprowadzono. Zobacz [ograniczenia dla elementów kodu w języku C++](#limitations).  
   
--   Spróbuj rozwiązać tego typu. Typ może być w projekcie lub w zestawie, który nie odwołuje się projekt, który zawiera diagram klas. Aby rozwiązać ten problem, Dodaj odwołanie do projektu lub zestawu, który zawiera tekst. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodaj odwołanie](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Spróbuj rozwiązać tego typu. Typ może być w projekcie lub w zestawie, który nie odwołuje się projekt, który zawiera diagram klas. Aby rozwiązać ten problem, Dodaj odwołanie do projektu lub zestawu, który zawiera tekst. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodaj odwołanie](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
--   Upewnij się, że typ jest w niewłaściwym zakresie tak, aby zlokalizować projektanta klas. Upewnij się, że kod nie jest Brak `using`, `imports`, lub `#include` instrukcji. Upewnij się, że nie zostały przeniesione typu (lub powiązanego typu) z przestrzeni nazw, w którym został on pierwotnie znajduje się również.  
+- Upewnij się, że typ jest w niewłaściwym zakresie tak, aby zlokalizować projektanta klas. Upewnij się, że kod nie jest Brak `using`, `imports`, lub `#include` instrukcji. Upewnij się, że nie zostały przeniesione typu (lub powiązanego typu) z przestrzeni nazw, w którym został on pierwotnie znajduje się również.  
   
 ### <a name="troubleshooting-other-error-messages"></a>Rozwiązywanie problemów z inne komunikaty o błędach  
  Pomoc dotyczącą rozwiązywania problemów z błędów i ostrzeżeń można znaleźć w publiczne fora Microsoft Developer Network (MSDN). Zobacz [Forum projektanta klas programu Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).  

@@ -15,27 +15,27 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5617019d15648b3aabd5d06df0f3662c4883183
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b7b77f096d70b15272e0cce1b985f3c32f89e495
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940934"
 ---
 # <a name="dispatch-extension-interfaces"></a>Interfejsy rozszerzenia wysyłki
-Plik nagłówka DispEx.h zawiera interfejsów wymienionych w tej sekcji.  
-  
+Plik nagłówkowy DispEx.h udostępnia interfejsy wymienione w tej sekcji.  
+
 ## <a name="in-this-section"></a>W tej sekcji  
- Następujące interfejsy są Host skryptów systemu Windows i aparaty skryptów systemu Windows.  
-  
--   [Interfejs ICanHandleException](../../winscript/reference/icanhandleexception-interface.md)  
-  
--   [Interfejs IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
-  
--   [Interfejs IDispError](../../winscript/reference/idisperror-interface.md)  
-  
--   [Interfejs IVariantChangeType](../../winscript/reference/ivariantchangetype-interface.md)  
-  
- Następujące interfejsy są specyficzne dla hosta skryptów systemu Windows:  
-  
--   [Interfejs IObjectIdentity](../../winscript/reference/iobjectidentity-interface.md)
+ Następujące interfejsy są przeznaczone dla systemu Microsoft Windows Script Host i aparatów skryptów Windows.  
+
+- [ICanHandleException, interfejs](../../winscript/reference/icanhandleexception-interface.md)  
+
+- [IDispatchEx, interfejs](../../winscript/reference/idispatchex-interface.md)  
+
+- [IDispError, interfejs](../../winscript/reference/idisperror-interface.md)  
+
+- [IVariantChangeType, interfejs](../../winscript/reference/ivariantchangetype-interface.md)  
+
+  Następujące interfejsy są specyficzne dla hosta skryptów Windows:  
+
+- [IObjectIdentity, interfejs](../../winscript/reference/iobjectidentity-interface.md)

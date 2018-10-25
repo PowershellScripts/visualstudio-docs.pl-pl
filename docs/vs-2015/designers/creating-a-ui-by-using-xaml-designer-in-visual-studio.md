@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d59798e5ecf503b1dcb6b76e9d0d8fb448cc1e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e362ca665d7012e52d7ed49cce66adc4632b013
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937892"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,31 +133,31 @@ Projektant XAML w programie Visual Studio udostępnia interfejs graficzny, aby u
 ## <a name="document-outline-window"></a>Okno konspektu dokumentu  
  Okno konspektu dokumentu w Projektancie XAML pomaga wykonywać następujące zadania:  
   
--   Wyświetlanie hierarchicznej struktury wszystkich elementów w obszarze kompozycji.  
+- Wyświetlanie hierarchicznej struktury wszystkich elementów w obszarze kompozycji.  
   
--   Wybierz elementy, dzięki czemu możesz modyfikować je (przeniesienie ich wokół w hierarchii, zmodyfikuj je w obszarze kompozycji, ustawiać ich właściwości w oknie dialogowym właściwości i tak dalej). Aby uzyskać więcej informacji, zobacz [Praca z elementami w Projektancie XAML](../designers/working-with-elements-in-xaml-designer.md)  
+- Wybierz elementy, dzięki czemu możesz modyfikować je (przeniesienie ich wokół w hierarchii, zmodyfikuj je w obszarze kompozycji, ustawiać ich właściwości w oknie dialogowym właściwości i tak dalej). Aby uzyskać więcej informacji, zobacz [Praca z elementami w Projektancie XAML](../designers/working-with-elements-in-xaml-designer.md)  
   
--   Tworzenie i modyfikowanie szablonów elementów będących kontrolkami.  
+- Tworzenie i modyfikowanie szablonów elementów będących kontrolkami.  
   
--   Użyj menu kontekstowego dla wybranych elementów. Tego samego menu jest również dostępny dla wybranych elementów w obszarze kompozycji.  
+- Użyj menu kontekstowego dla wybranych elementów. Tego samego menu jest również dostępny dla wybranych elementów w obszarze kompozycji.  
   
- Aby wyświetlić okno konspektu dokumentu, na pasku menu wybierz **widoku**, **Windows inne**, **konspekt dokumentu**.  
+  Aby wyświetlić okno konspektu dokumentu, na pasku menu wybierz **widoku**, **Windows inne**, **konspekt dokumentu**.  
   
- ![Okno konspektu dokumentu](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
+  ![Okno konspektu dokumentu](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
   
- Oto opcje dostępne w oknie konspekt dokumentu:  
+  Oto opcje dostępne w oknie konspekt dokumentu:  
   
- **Konspekt dokumentu**  
- Widok główny okno konspektu dokumentu Wyświetla hierarchię dokumentu w strukturze drzewa. Hierarchiczny charakter konspekt dokumentu można użyć, aby zbadać dokument na różnych poziomach szczegółowości i blokowanie i ukrywanie elementów, pojedynczo lub w grupach.  
+  **Konspekt dokumentu**  
+  Widok główny okno konspektu dokumentu Wyświetla hierarchię dokumentu w strukturze drzewa. Hierarchiczny charakter konspekt dokumentu można użyć, aby zbadać dokument na różnych poziomach szczegółowości i blokowanie i ukrywanie elementów, pojedynczo lub w grupach.  
   
- **Pokaż/Ukryj**  
- Wyświetla lub ukrywa elementy obszaru kompozycji, które odpowiadają elementom konspekt dokumentu. Użyj **Pokaż/Ukryj** przycisków, które wyświetlanie symboli oka po pokazano lub naciśnij klawisze CTRL + H, aby ukryć elementy i SHIFT + klawisze CTRL + H, aby je wyświetlić.  
+  **Pokaż/Ukryj**  
+  Wyświetla lub ukrywa elementy obszaru kompozycji, które odpowiadają elementom konspekt dokumentu. Użyj **Pokaż/Ukryj** przycisków, które wyświetlanie symboli oka po pokazano lub naciśnij klawisze CTRL + H, aby ukryć elementy i SHIFT + klawisze CTRL + H, aby je wyświetlić.  
   
- **Zablokuj/Odblokuj**  
- Blokuje albo odblokowuje elementy obszaru kompozycji, które odpowiadają elementom konspekt dokumentu. Nie można zmodyfikować zablokowanych elementów. Użyj **Zablokuj/Odblokuj** przycisków, które zawierają kłódka symboli, gdy zablokowany lub naciśnij klawisze CTRL + L, elementy blokady i SHIFT + klawisze CTRL + L, aby je odblokować.  
+  **Zablokuj/Odblokuj**  
+  Blokuje albo odblokowuje elementy obszaru kompozycji, które odpowiadają elementom konspekt dokumentu. Nie można zmodyfikować zablokowanych elementów. Użyj **Zablokuj/Odblokuj** przycisków, które zawierają kłódka symboli, gdy zablokowany lub naciśnij klawisze CTRL + L, elementy blokady i SHIFT + klawisze CTRL + L, aby je odblokować.  
   
- **Zwróć zakres do pageRoot**  
- Opcja u góry okna konspekt dokumentu, który znajduje się symbol strzałki, zwraca konspekt dokumentu do poprzedniego zakresu. Zakresu działa ma zastosowanie tylko wtedy, gdy jesteś w zakresie stylu lub szablonu.  
+  **Zwróć zakres do pageRoot**  
+  Opcja u góry okna konspekt dokumentu, który znajduje się symbol strzałki, zwraca konspekt dokumentu do poprzedniego zakresu. Zakresu działa ma zastosowanie tylko wtedy, gdy jesteś w zakresie stylu lub szablonu.  
   
 ## <a name="properties-window"></a>Okno właściwości  
  W oknie właściwości służy do ustawiania wartości właściwości kontrolek. Poniżej przedstawiono wygląda następująco:  

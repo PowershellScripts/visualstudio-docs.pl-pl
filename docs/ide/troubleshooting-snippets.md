@@ -1,5 +1,5 @@
 ---
-title: Rozwiązywanie problemów z wstawki kodu programu
+title: Rozwiązywanie problemów z fragmentami kodu
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,28 +14,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dea93f5c575afc96af188ab2e92e2ee12b929549
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 61485e50c61580b69c1dfcb5434849ea9122bde7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942338"
 ---
-# <a name="troubleshoot-snippets"></a>Rozwiązywanie problemów z wstawki kodu programu
+# <a name="troubleshoot-snippets"></a>Rozwiązywanie problemów z fragmentami kodu
 
-Problemy z wstawki kodu IntelliSense są zazwyczaj spowodowane dwa problemy: uszkodzony fragment pliku lub Zła zawartość pliku fragment kodu.
+Problemy z fragmenty kodu IntelliSense są zazwyczaj spowodowane dwa problemy: plik fragmentu w uszkodzona lub zły zawartość pliku fragmentu kodu.
 
-## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>Fragment kodu nie mogą być przeciągnięte z Eksploratora plików do pliku źródłowego programu Visual Studio
+## <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>Fragment kodu nie można przeciągnąć z Eksploratora plików do pliku źródłowego programu Visual Studio
 
--   Kod XML w pliku fragment może być uszkodzony. **Edytora XML** w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można zlokalizować problemów w strukturze XML.
+- Kod XML w pliku fragmentu kodu może być uszkodzony. **Edytora XML** w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mogą zlokalizować problemów w strukturze XML.
 
--   Fragment pliku może nie być zgodne ze schematem fragment kodu. **Edytora XML** w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można zlokalizować problemów w strukturze XML.
+- Plik fragmentu kodu nie może być zgodny ze schematem fragmentu kodu. **Edytora XML** w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mogą zlokalizować problemów w strukturze XML.
 
 ## <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>Kod ma błędy kompilatora, które nie są wyróżnione
 
--   Być może brakuje odwołania projektu. Sprawdź dokumentację dotyczącą fragment kodu. Jeśli na komputerze nie znaleziono odwołania, należy go zainstalować. Wstawianie wstawek należy dodać do projektu wszystkie niezbędne odwołania. Jeśli informacje, które mogą być zgłaszane do twórcy fragment jako błąd Brak fragmentu.
+-   Być może brakuje odwołania projektu. Sprawdź dokumentację dotyczącą fragmentu kodu. Odwołanie nie zostanie znaleziony na komputerze, należy go zainstalować. Wstawianie fragmentu należy dodać do projektu wszystkie odwołania potrzebne. Jeżeli ten fragment kodu brakuje zawiera informacje, które mogą zostać zgłoszone do autora fragmentu kodu jako błąd.
 
--   Zmienna może być niezdefiniowana. Niezdefiniowany zmiennych w fragment powinien być zaznaczony. Jeśli nie, które mogą być zgłaszane do twórcy fragment jako błąd.
+-   Zmienna może być niezdefiniowana. Powinien być wyróżniony niezdefiniowane zmienne we fragmencie. Jeśli nie, które mogą zostać zgłoszone do autora fragmentu kodu jako błąd.
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści społeczności platformy Azur
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 71082ba5cadc96af27e48fc005b69fb6434e1cfe
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 693e51d969481d6511e3663d2f675861821c99fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937463"
 ---
 # <a name="azure-community"></a>Azure Community
 
@@ -51,15 +51,17 @@ Rozpoczynanie pracy ze społecznością platformy Azure jest łatwe.
 ## <a name="eligibility"></a>Uprawnienie
 Dostępność korzyści społeczności platformy Azure zależy od poziomu subskrypcji jak pokazano poniżej:
 
-| Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | VL, Azure, Retail   | Jeden rok      |  Tak          |
-| Program Visual Studio Professional (standardowy, roczna w chmurze)  | VL, Azure, Retail                                      | Jeden rok                                                           |  Tak          |
-| Visual Studio Test Professional (standardowa)                         | Licencjonowania zbiorowego, handlu detalicznego                                              | Jeden rok                                             |  Tak          |
-| Platformy MSDN (standardowa)                                          | Licencjonowania zbiorowego, handlu detalicznego                                              |Jeden rok                                              |  Tak          |
-| Program Visual Studio Enterprise (miesięcznych w chmurze), program Visual Studio Professional (miesięcznych w chmurze), NFR<sup>1</sup>                                          | Wszystkie                                              |Niedostępne                                              |  Nie          |
-| Visual Studio Dev Essentials                                        | Brak                                              |Niedostępne                                              |  Nie          |
-|
+
+|                                          Poziom subskrypcji                                           |     Kanały      |    Korzyść    | Podlega odnowieniu? |
+|-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
+|                           Program Visual Studio Enterprise (standardowy, roczna w chmurze)                           | VL, Azure, Retail |   Jeden rok    |    Tak     |
+|                          Program Visual Studio Professional (standardowy, roczna w chmurze)                          | VL, Azure, Retail |   Jeden rok    |    Tak     |
+|                              Visual Studio Test Professional (standardowa)                               |    Licencjonowania zbiorowego, handlu detalicznego     |   Jeden rok    |    Tak     |
+|                                       Platformy MSDN (standardowa)                                       |    Licencjonowania zbiorowego, handlu detalicznego     |   Jeden rok    |    Tak     |
+| Program Visual Studio Enterprise (miesięcznych w chmurze), program Visual Studio Professional (miesięcznych w chmurze), NFR<sup>1</sup> |        Wszystkie        | Niedostępne |     Nie     |
+|                                     Visual Studio Dev Essentials                                      |        Brak        | Niedostępne |     Nie     |
+|                                                                                                       |                   |               |            |
+
 <sup>1</sup>*obejmuje: nie, for Resale (NFR), Microsoft ekwiwalentu pełnego wymiaru czasu, Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)* 
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.

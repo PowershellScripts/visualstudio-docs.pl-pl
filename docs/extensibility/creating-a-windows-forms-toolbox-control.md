@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f23cae01c9356da26c42ca299a6ac6bb7c190f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936053"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>Tworzenie kontrolki przybornika Windows Forms
 Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje się w Visual Studio Tools Extensibility (zestaw SDK programu VS) pozwala utworzyć formant, który jest automatycznie dodawany do **przybornika** po zainstalowaniu rozszerzenia. W tym temacie pokazano, jak utworzyć formant prostego licznika, który można rozdystrybuować innym użytkownikom za pomocą szablonu.  
@@ -56,9 +56,9 @@ Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje
   
     |Formant|Właściwość|Wartość|  
     |-------------|--------------|-----------|  
-    |`Label1`|**Tekst**|""|  
+    |`Label1`|**Text**|""|  
     |`Button1`|**Nazwa**|btnReset|  
-    |`Button1`|**Tekst**|Resetuj|  
+    |`Button1`|**Text**|Resetuj|  
   
 ### <a name="code-the-user-control"></a>Kod kontroli użytkownika  
  `Counter` Kontroli udostępni metodę, aby zwiększyć licznik, wystąpienie zdarzenia wywoływane, gdy licznik jest zwiększany, **resetowania** przycisk i trzy właściwości do przechowywania bieżąca liczba, tekst wyświetlany i czy ma być wyświetlana lub ukryć **resetowania** przycisku. `ProvideToolboxControl` Atrybut określa, w którym miejscu **przybornika** `Counter` pojawi się kontrolka.  
@@ -209,7 +209,7 @@ Szablon elementu kontrolki formularzy Windows Forms przybornika, który znajduje
      Resetuje licznik **0**.  
   
 ## <a name="next-steps"></a>Następne kroki  
- Podczas kompilowania **przybornika** formant, Visual Studio tworzy plik o nazwie *ProjectName.vsix* w * \bin\debug\* folderze projektu. Kontrolki można wdrożyć, przekazując *.vsix* plików do sieci lub do witryny sieci Web. Gdy użytkownik uruchomi *.vsix* plik, formant został zainstalowany i dodane do programu Visual Studio **przybornika** na komputerze użytkownika. Alternatywnie, możesz przekazać *.vsix* plik [galerii programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witryny sieci Web, tak aby użytkownicy mogli ją znaleźć, przechodząc w **narzędzia**  >  **Rozszerzenia i aktualizacje** okna dialogowego.  
+ Podczas kompilowania **przybornika** formant, Visual Studio tworzy plik o nazwie *ProjectName.vsix* w <em>\bin\debug\* folderze projektu. Kontrolki można wdrożyć, przekazując *.vsix</em> plików do sieci lub do witryny sieci Web. Gdy użytkownik uruchomi *.vsix* plik, formant został zainstalowany i dodane do programu Visual Studio **przybornika** na komputerze użytkownika. Alternatywnie, możesz przekazać *.vsix* plik [galerii programu Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witryny sieci Web, tak aby użytkownicy mogli ją znaleźć, przechodząc w **narzędzia**  >  **Rozszerzenia i aktualizacje** okna dialogowego.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Rozszerzanie innych części programu Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: dd42bc89eb853a5d65f8e15eab3fdf2cd054f278
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495261"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927804"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Rejestrowanie zleceń dla rozszerzeń nazw plików
 Skojarzenie rozszerzenia nazwy pliku z aplikacją zazwyczaj ma preferowanego akcję, która występuje po dwukrotnym kliknięciu pliku. Preferowane to, że akcja jest połączony z czasownika, na przykład otwarty, która odnosi się do akcji.  
@@ -28,17 +28,17 @@ Skojarzenie rozszerzenia nazwy pliku z aplikacją zazwyczaj ma preferowanego akc
 ## <a name="register-standard-verbs"></a>Rejestrowanie zleceń standardowych  
  System operacyjny rozpoznaje następujących zleceń standardowych:  
   
--   Otwarcie  
+- Otwarcie  
   
--   Edytowanie  
+- Edytowanie  
   
--   Odtwarzanie  
+- Odtwarzanie  
   
--   Drukuj  
+- Drukuj  
   
--   Wersja zapoznawcza  
+- Wersja zapoznawcza  
   
- Jeśli to możliwe, należy zarejestrować standardowy czasownika. Najbardziej typowe to Open zlecenie. Czasownik edycji należy użyć tylko wtedy, gdy istnieje wyraźna różnica pomiędzy otwierania pliku i edytowania pliku. Na przykład, otwierając *.htm* pliku wyświetla go w przeglądarce, natomiast edycji *.htm* rozpocznie edytora HTML. Zleceń standardowych są lokalizowane za pomocą ustawień regionalnych systemu operacyjnego.  
+  Jeśli to możliwe, należy zarejestrować standardowy czasownika. Najbardziej typowe to Open zlecenie. Czasownik edycji należy użyć tylko wtedy, gdy istnieje wyraźna różnica pomiędzy otwierania pliku i edytowania pliku. Na przykład, otwierając *.htm* pliku wyświetla go w przeglądarce, natomiast edycji *.htm* rozpocznie edytora HTML. Zleceń standardowych są lokalizowane za pomocą ustawień regionalnych systemu operacyjnego.  
   
 > [!NOTE]
 >  Podczas rejestrowania zleceń standardowych, nie należy ustawiać wartość domyślna dla otworzyć klucza. Wartość domyślna zawiera ciąg wyświetlany w menu. System operacyjny dostarcza ten ciąg dla zleceń standardowych.  

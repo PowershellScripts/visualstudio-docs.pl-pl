@@ -1,5 +1,5 @@
 ---
-title: Projektant przepływu pracy — Projektant działań CorrelationScope
+title: Projektant przepływu pracy — CorrelationScope, Projektant działań
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,46 +12,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eae1f0d61492eba29b442d0fbfb22b77377228fc
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: d1da881dfb7f7a8c063b94e49198d1b299b2e47b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117065"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942052"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope, projektant działań
 
-**CorrelationScope** Projektant działań służy do tworzenia i konfigurowania <xref:System.ServiceModel.Activities.CorrelationScope> działanie, które umożliwia zarządzanie niejawne komunikatów działań podrzędnych za pomocą <xref:System.ServiceModel.Activities.CorrelationHandle> obiektu.
+**CorrelationScope** projektanta działań służy do tworzenia i konfigurowania <xref:System.ServiceModel.Activities.CorrelationScope> działanie, które umożliwia niejawne Zarządzanie podrzędnych działań dotyczących komunikatów za pomocą <xref:System.ServiceModel.Activities.CorrelationHandle> obiektu.
 
 ## <a name="the-correlationscope-activity"></a>Działanie CorrelationScope
 
-<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> Właściwość określa <xref:System.ServiceModel.Activities.CorrelationHandle> używany do zarządzania wiadomości działań podrzędnych. <xref:System.ServiceModel.Activities.Send> i <xref:System.ServiceModel.Activities.Receive> działań zawartych w <xref:System.ServiceModel.Activities.CorrelationScope.Body%2A> są skonfigurowane do używania <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> właściwość zawierający <xref:System.ServiceModel.Activities.CorrelationScope> działanie korelacji.
+<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> Właściwość określa <xref:System.ServiceModel.Activities.CorrelationHandle> używany do zarządzania działań dotyczących komunikatów podrzędnych. <xref:System.ServiceModel.Activities.Send> i <xref:System.ServiceModel.Activities.Receive> działań zawartych w <xref:System.ServiceModel.Activities.CorrelationScope.Body%2A> są skonfigurowane do używania <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> właściwości zawierającego <xref:System.ServiceModel.Activities.CorrelationScope> działania do wykonania korelacji.
 
-### <a name="use-the-correlationscope-activity-designer"></a>Za pomocą projektanta CorrelationScope działania
+### <a name="use-the-correlationscope-activity-designer"></a>Użyj CorrelationScope, Projektant działań
 
-**CorrelationScope** Projektant działań można znaleźć w **wiadomości** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika** karcie po lewej stronie projektanta przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
+**CorrelationScope** projektanta działań można znaleźć w **komunikatów** kategorii **przybornika**, które jest dostępne po kliknięciu **przybornika** karty w lewej części projektanta przepływów pracy. Można także wybrać **przybornika** z **widoku** menu lub naciśnij klawisz **Ctrl**+**Alt** + **X**.
 
-**CorrelationScope** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.CorrelationScope> działania z domyślną **DisplayName** z CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A> Można edytowane w nagłówku **CorrelationScope** Projektant działań lub **DisplayName** pole **właściwości** okna.
+**CorrelationScope** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy. Spowoduje to utworzenie <xref:System.ServiceModel.Activities.CorrelationScope> działanie przy użyciu domyślnego **DisplayName** z CorrelationScope. <xref:System.Activities.Activity.DisplayName%2A> Mogą być edytowane w nagłówku **CorrelationScope** projektanta działań lub **DisplayName** pole **właściwości** okna.
 
-Aby określić <xref:System.ServiceModel.Activities.CorrelationHandle> używany przez podrzędny działań dotyczących komunikatów, kliknij przycisk wielokropka obok **CorrelatesWith** w **właściwości** okno, aby wyświetlić **wyrażenia Edytor** okno dialogowe. Tej właściwości można ustawić w taki sposób, na powierzchni projektowej działania.
+Aby określić <xref:System.ServiceModel.Activities.CorrelationHandle> używany przez podrzędny działań dotyczących komunikatów, kliknij przycisk wielokropka obok **CorrelatesWith** pole **właściwości** okno, aby wyświetlić **wyrażenia Edytor** okno dialogowe. Można również ustawić tę właściwość na powierzchni projektanta działań.
 
-Zakres w korelacji działania są określane przez usunięcie ich projektantów w **treści** polu w **CorrelationScope** projektanta.
+Działania o określonym zakresie w ramach korelację są określone przez usunięcie ich projektantów w ramach **treści** polu w ramach **CorrelationScope** projektanta.
 
 ### <a name="the-correlationscope-properties"></a>Właściwości CorrelationScope
 
-W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.CorrelationScope> właściwości oraz opis korzystania z nich w projektancie. Te właściwości mogą być edytowane w **właściwości** oknie lub na powierzchni projektanta przepływów pracy, a często w obu.
+W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.CorrelationScope> właściwości i w tym artykule opisano, jak są używane w projektancie. Te właściwości mogą być edytowane w **właściwości** oknie lub na powierzchni projektanta przepływów pracy i często w obu.
 
 |Nazwa właściwości|Wymagane|Użycie|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Opcjonalne przyjazna nazwa <xref:System.ServiceModel.Activities.InitializeCorrelation> działania.|
-|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Określa <xref:System.ServiceModel.Activities.CorrelationHandle> używany do zarządzania wiadomości działań podrzędnych. Jeśli ta właściwość nie jest ustawiona <xref:System.ServiceModel.Activities.CorrelationScope> tworzy niejawny <xref:System.ServiceModel.Activities.CorrelationHandle> automatycznie.|
+|-|--------------|-|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Opcjonalna nazwa przyjazna <xref:System.ServiceModel.Activities.InitializeCorrelation> działania.|
+|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|Określa <xref:System.ServiceModel.Activities.CorrelationHandle> używany do zarządzania działań dotyczących komunikatów podrzędnych. Jeśli nie ustawisz tę właściwość, <xref:System.ServiceModel.Activities.CorrelationScope> tworzy ukrytego <xref:System.ServiceModel.Activities.CorrelationHandle> automatycznie.|
 |<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|False|Określa działań w zakresie korelacji.|
 
 ## <a name="see-also"></a>Zobacz także
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [Odbieranie](../workflow-designer/receive-activity-designer.md)
+- [Receive](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [Wyślij](../workflow-designer/send-activity-designer.md)
+- [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

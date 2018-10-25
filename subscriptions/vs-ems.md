@@ -9,12 +9,12 @@ description: Informacje na temat pakietu Enterprise Mobility + Security korzyśc
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c85643a13adec8913477d7201a224a6689d3d46f
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 96f093f6f267e80c5136bd87a009dd25e43ab2cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073795"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930118"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Pakiet Enterprise Mobility + Security (EMS) w subskrypcji programu Visual Studio
 
@@ -27,31 +27,32 @@ Visual Studio Enterprise roczna w chmurze i subskrypcji standardowych obejmują 
 
 Aby korzystać z pakietu EMS, należy skonfigurować konto lub zaloguj się przy użyciu istniejącego konta.
 
-1.  Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Znajdź Kafelek rozwiązania Enterprise Mobility i zabezpieczeń w sekcji narzędzia i kliknij **uzyskać kod** link w dolnej części kafelka.   Otrzymasz powiadomienie, że kod został pomyślnie pobrany.  Kliknij przycisk **aktywować**.
-    > [!div class="mx-imgBorder"]
-    > ![Kafelek korzyści z pakietu EMS](_img\vs-ems\vs-ems-tile.png)
+2. Znajdź Kafelek rozwiązania Enterprise Mobility i zabezpieczeń w sekcji narzędzia i kliknij **uzyskać kod** link w dolnej części kafelka.   Otrzymasz powiadomienie, że kod został pomyślnie pobrany.  Kliknij przycisk **aktywować**.
+   > [!div class="mx-imgBorder"]
+   > ![Kafelek korzyści z pakietu EMS](_img/vs-ems/vs-ems-tile.png)
 
-2.  W pakiecie Enterprise Mobility + Security E5 strony możesz zalogować się przy użyciu istniejącej subskrypcji lub utworzyć nową.  Aby utworzyć nową, wykonaj wymagane informacje i kliknij **dalej**.
-    > [!div class="mx-imgBorder"]
-    > ![Korzyści z pakietu EMS, Utwórz konto](_img\vs-ems\vs-ems-create-account-cropped.png)
+3. W pakiecie Enterprise Mobility + Security E5 strony możesz zalogować się przy użyciu istniejącej subskrypcji lub utworzyć nową.  Aby utworzyć nową, wykonaj wymagane informacje i kliknij **dalej**.
+   > [!div class="mx-imgBorder"]
+   > ![Korzyści z pakietu EMS, Utwórz konto](_img/vs-ems/vs-ems-create-account-cropped.png)
 
-3. Utwórz swoją nazwę użytkownika i hasło.  Kliknij przycisk **Utwórz moje konto** aby kontynuować.
-    > [!div class="mx-imgBorder"]
-    > ![Korzyści z pakietu EMS Utwórz identyfikator użytkownika](_img\vs-ems\vs-ems-userID-cropped.png)
+4. Utwórz swoją nazwę użytkownika i hasło.  Kliknij przycisk **Utwórz moje konto** aby kontynuować.
+   > [!div class="mx-imgBorder"]
+   > ![Korzyści z pakietu EMS Utwórz identyfikator użytkownika](_img/vs-ems/vs-ems-userID-cropped.png)
 
-4.  Następnie podaj numer telefonu, aby uzyskać kod weryfikacyjny, za pomocą telefonu lub tekstu.  Wprowadź kod, a następnie kliknij przycisk **dalej**.
-    > [!div class="mx-imgBorder"]
-    > ![Weryfikacja korzyści z pakietu EMS](_img\vs-ems\vs-ems-robot-cropped.png)
+5. Następnie podaj numer telefonu, aby uzyskać kod weryfikacyjny, za pomocą telefonu lub tekstu.  Wprowadź kod, a następnie kliknij przycisk **dalej**.
+   > [!div class="mx-imgBorder"]
+   > ![Weryfikacja korzyści z pakietu EMS](_img/vs-ems/vs-ems-robot-cropped.png)
 
-5.  Następnej strony wyświetli swoje identyfikator logowania stron i użytkowników.  Zapisz te informacje w celu późniejszego użycia.  Kliknij przycisk **wszystko będzie gotowe przejść...**
-    > [!div class="mx-imgBorder"]
-    > ![Utworzono konto korzyści z pakietu EMS](_img\vs-ems\vs-ems-save-info-cropped.png)
+6. Następnej strony wyświetli swoje identyfikator logowania stron i użytkowników.  Zapisz te informacje w celu późniejszego użycia.  Kliknij przycisk **wszystko będzie gotowe przejść...**
+   > [!div class="mx-imgBorder"]
+   > ![Utworzono konto korzyści z pakietu EMS](_img/vs-ems/vs-ems-save-info-cropped.png)
 
-6.  Pakiet EMS wymaga dostępu do firmy Microsoft [witryny Azure Portal](https://azure.microsoft.com).  Należy wykonać trzy czynności na strona docelowa pakietu EMS do aktywowania subskrypcji platformy Azure, dodawanie użytkowników i konfigurowanie pakietu EMS.
+7. Pakiet EMS wymaga dostępu do firmy Microsoft [witryny Azure Portal](https://azure.microsoft.com).  Należy wykonać trzy czynności na strona docelowa pakietu EMS do aktywowania subskrypcji platformy Azure, dodawanie użytkowników i konfigurowanie pakietu EMS.
 
 ## <a name="eligibility"></a>Uprawnienie
+
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Dostępne       |  Tak          |

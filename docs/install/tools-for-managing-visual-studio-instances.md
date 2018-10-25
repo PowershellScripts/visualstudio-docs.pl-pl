@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9b9a49ee6a59870d37676e2ca969e99a1516658
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 9f7696018ec191e851c0d5864ad36e3eeb31b599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941740"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Narzędzia do wykrywania wystąpień programu Visual Studio i zarządzania nimi
 
@@ -61,8 +61,8 @@ Ponieważ te wpisy nie są przechowywane w rejestrze globalnego, istnieją specj
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
 
-  > [!NOTE]
-  > `<config>` odnosi się do wystąpienia programu Visual Studio, które chcesz przeglądać.
+   > [!NOTE]
+   > `<config>` odnosi się do wystąpienia programu Visual Studio, które chcesz przeglądać.
 
 Zostanie wyświetlony monit podaj nazwę gałęzi, która stanie się nazwą swojej gałęzi izolowanym. Po wykonaniu tej czynności powinno być możliwe do przeglądania w rejestrze w izolowanej hive, który został utworzony.
 

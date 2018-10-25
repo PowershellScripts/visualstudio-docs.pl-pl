@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cfaa2957f1dcb5fcfd9e7404f061d67cc44094
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: cc27aa96b0e893ada745533d070b3b7aa29264e2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924385"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937814"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Porady: Tworzenie podstawowego modułu cieniowanie Phong
 
@@ -29,19 +29,19 @@ Aby uzyskać więcej informacji na temat modelu oświetlenia Lamberta zobacz [po
 
 Przed rozpoczęciem upewnij się, że **właściwości** okna i **przybornika** są wyświetlane.
 
-1.  Tworzenie modułu cieniującego Lamberta zgodnie z opisem w [porady: Tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).
+1. Tworzenie modułu cieniującego Lamberta zgodnie z opisem w [porady: Tworzenie podstawowego cieniowania Lamberta](../designers/how-to-create-a-basic-lambert-shader.md).
 
-2.  Odłącz **Lamberta** węzła z **ostateczny kolor** węzła. Wybierz **RGB** terminali z **Lamberta** węzła, a następnie wybierz **Przerwij linki**. To sprawia, że miejsce na węzeł, który zostanie dodany do następnego kroku.
+2. Odłącz **Lamberta** węzła z **ostateczny kolor** węzła. Wybierz **RGB** terminali z **Lamberta** węzła, a następnie wybierz **Przerwij linki**. To sprawia, że miejsce na węzeł, który zostanie dodany do następnego kroku.
 
-3.  Dodaj **Dodaj** węzła do wykresu. W **przybornika**w obszarze **matematyczne**, wybierz opcję **Dodaj** i przenieś go do powierzchni projektowej.
+3. Dodaj **Dodaj** węzła do wykresu. W **przybornika**w obszarze **matematyczne**, wybierz opcję **Dodaj** i przenieś go do powierzchni projektowej.
 
-4.  Dodaj **Specular** węzła do wykresu. W **przybornika**w obszarze **narzędzie**, wybierz opcję **Specular** i przenieś go do powierzchni projektowej.
+4. Dodaj **Specular** węzła do wykresu. W **przybornika**w obszarze **narzędzie**, wybierz opcję **Specular** i przenieś go do powierzchni projektowej.
 
-5.  Dodaj udział odblasków. Przenieś **dane wyjściowe** terminali z **Specular** węzeł, aby **X** terminali z **Dodaj** węzeł, a następnie przenieść **danych wyjściowych**  terminali z **Lamberta** węzeł **Y** terminali z **Dodaj** węzła. Te połączenia łączyć wkładów całkowita kolor rozpraszania i odblasków dla piksela.
+5. Dodaj udział odblasków. Przenieś **dane wyjściowe** terminali z **Specular** węzeł, aby **X** terminali z **Dodaj** węzeł, a następnie przenieść **danych wyjściowych**  terminali z **Lamberta** węzeł **Y** terminali z **Dodaj** węzła. Te połączenia łączyć wkładów całkowita kolor rozpraszania i odblasków dla piksela.
 
-6.  Połącz się ostateczny kolor z wartości obliczanej koloru. Przenieś **dane wyjściowe** terminali z **Dodaj** węzeł **RGB** terminali z **ostateczny kolor** węzła.
+6. Połącz się ostateczny kolor z wartości obliczanej koloru. Przenieś **dane wyjściowe** terminali z **Dodaj** węzeł **RGB** terminali z **ostateczny kolor** węzła.
 
- Poniższej ilustracji ukończone programu do cieniowania programu graph i wersję zapoznawczą programu do cieniowania, zastosowano do modelu czajniczek.
+   Poniższej ilustracji ukończone programu do cieniowania programu graph i wersję zapoznawczą programu do cieniowania, zastosowano do modelu czajniczek.
 
 > [!NOTE]
 > Aby lepiej zaprezentować efekt programu cieniującego na tej ilustracji, została określona za pomocą koloru pomarańczowego **MaterialDiffuse** parametr programu do cieniowania i wyszukiwanie metal zakończenia została określona za pomocą **MaterialSpecular** i **MaterialSpecularPower** parametrów. Informacje o parametrach materiału sekcja Podgląd cieniowania w [Shader Designer](../designers/shader-designer.md).

@@ -12,47 +12,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f358adbd8721a55d278c392018463d49e5a8a60e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 54e002682b45d03ef5f9bc93a36bbd9781b46d62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943079"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Porady: korzystanie z narzędzia wyszukiwania
-Można użyć narzędzia wyszukiwania w **Znajdź okno** okno dialogowe, aby wyświetlić okno właściwości lub komunikaty. Narzędzie wyszukiwania można również Znajdź okno podrzędne wyłączone i wykrycia, które okno, aby wyróżnić, jeśli wyłączono podrzędnych przedziały czasu nakładają na.  
+Można użyć narzędzia wyszukiwania w **Znajdź okno** okno dialogowe, aby wyświetlić okno właściwości lub komunikaty. Narzędzia wyszukiwania można zlokalizować okien podrzędnych wyłączone i określenia, które okno, aby wyróżnić Jeśli wyłączone podrzędnych nakładają się z systemu windows.  
   
- ![Spy&#43; &#43; Znajdź okno dialogowe](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find")  
-Narzędzia wyszukiwania w oknie dialogowym Znajdź okno  
+ ![Szpieguj&#43; &#43; okno dialogowe Znajdź okno](../debugger/media/icon_spy--_find.png "Icon_Spy ++ _Find")  
+Narzędzie do wyszukiwania w oknie dialogowym Znajdź okno  
   
- Na ilustracji powyżej przedstawiono okno dialogowe Znajdź okno po wykonaniu kroku 3 poniżej.  
+ Powyższy rysunek przedstawia okno dialogowe Znajdź okno po wykonaniu kroku 3 poniżej.  
   
 ### <a name="to-display-window-properties-or-messages"></a>Aby wyświetlić okno właściwości lub komunikaty  
   
-1.  Rozmieść systemu windows, tak aby zarówno Spy ++ i okno docelowe są widoczne.  
+1. Rozmieść aplikacji dla systemu windows, tak że Spy ++ i okno docelowe są widoczne.  
   
-2.  Z **Spy** menu, wybierz **Znajdź okno**.  
+2. Z **Spy** menu, wybierz **Znajdź okno**.  
   
-     [Znajdź okno dialogowe](../debugger/find-window-dialog-box.md) otwiera.  
+    [Okna dialogowego Znajdowanie](../debugger/find-window-dialog-box.md) zostanie otwarty.  
   
-3.  Przeciągnij **narzędzia wyszukiwania** za pośrednictwem docelowego okna.  
+3. Przeciągnij **Wyszukiwarka** przedziale docelowego.  
   
-     Przeciągnij narzędzie, **Znajdź okno** okno dialogowe wyświetla szczegóły w oknie wybrane.  
+    Przeciągnij narzędzie **Znajdź okno** okno dialogowe wyświetla szczegóły wybranego okna.  
   
-     - lub -  
+   - lub —  
   
-     Jeśli masz uchwyt okna, które chcesz sprawdzić (na przykład skopiowane z debugera), wpisz ją w **obsługi** pola tekstowego.  
+     Jeśli uchwyt okna, które chcesz zbadać (na przykład, które są kopiowane z debugera), wpisz go w **obsługi** pola tekstowego.  
   
-    > [!TIP]
-    >  Aby zwiększyć czytelność ekranu, wybierz **Ukryj Spy** opcji. Ta opcja zawiera Spy ++ okno główne, pozostawiając tylko **Znajdź okno** okno dialogowe widoczne na innych aplikacji. Okno główne programu Spy ++ zostanie przywrócona po kliknięciu **OK** lub **anulować**, lub po usunięciu zaznaczenia **Ukryj Spy ++** opcji.  
+   > [!TIP]
+   >  Aby zwiększyć czytelność ekranu, wybierz pozycję **Ukryj Spy** opcji. Ta opcja zawiera narzędzie Spy ++ oknie głównym, pozostawiając tylko **Znajdź okno** okno dialogowe widoczne na podstawie innych aplikacji. Okno główne programu Spy ++ jest przywracany po kliknięciu **OK** lub **anulować**, lub po usunięciu zaznaczenia **Ukryj Spy ++** opcji.  
   
-4.  W obszarze **Pokaż**, wybierz opcję **właściwości** lub **wiadomości**.  
+4. W obszarze **Pokaż**, wybierz opcję **właściwości** lub **wiadomości**.  
   
-5.  Press **OK**.  
+5. Naciśnij klawisz **OK**.  
   
-     W przypadku wybrania **właściwości**, [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md) otwiera. W przypadku wybrania **wiadomości**, [widoku komunikatów](../debugger/messages-view.md) zostanie otwarte okno.  
+    W przypadku wybrania **właściwości**, [okno dialogowe właściwości](../debugger/window-properties-dialog-box.md) zostanie otwarty. W przypadku wybrania **wiadomości**, [widoku komunikatów](../debugger/messages-view.md) zostanie otwarte okno.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Widoków Spy ++](../debugger/spy-increment-views.md)   
+ [Widoków programu Spy ++](../debugger/spy-increment-views.md)   
  [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)

@@ -29,12 +29,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f9d881970e24a00223a17cbf3873bdb842ed32e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173631"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940400"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Wyrażenie kontrolne i QuickWatch Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,19 +92,19 @@ static void Main(string[] args)
   
  Dodaj wartości trzy zmienne w oknie czujki w następujący sposób:  
   
-1.  Ustaw punkt przerwania na `c = a + b;` wiersza.  
+1. Ustaw punkt przerwania na `c = a + b;` wiersza.  
   
-2.  Rozpocznij debugowanie (**F5**). Zatrzymuje wykonywanie w punkcie przerwania.  
+2. Rozpocznij debugowanie (**F5**). Zatrzymuje wykonywanie w punkcie przerwania.  
   
-3.  Otwórz okno czujki (**debugowanie / Windows / Obejrzyj / obejrzeć 1**, lub **CTRL + ALT + W, 1**).  
+3. Otwórz okno czujki (**debugowanie / Windows / Obejrzyj / obejrzeć 1**, lub **CTRL + ALT + W, 1**).  
   
-4.  Dodaj `a` zmiennej w pierwszym wierszu `b` zmiennej do drugiego wiersza i `c` zmienną trzeciego wiersza.  
+4. Dodaj `a` zmiennej w pierwszym wierszu `b` zmiennej do drugiego wiersza i `c` zmienną trzeciego wiersza.  
   
-5.  Kontynuuj, debugowanie.  
+5. Kontynuuj, debugowanie.  
   
- Powinien zostać wyświetlony wartości zmiennych zmieniają się wraz z iteracyjne przeglądanie `for` pętli.  
+   Powinien zostać wyświetlony wartości zmiennych zmieniają się wraz z iteracyjne przeglądanie `for` pętli.  
   
- Jeśli programujesz w kodzie macierzystym, czasami konieczne może być zakwalifikowanie kontekstu nazwy zmiennej lub wyrażenia zawierającego nazwę zmiennej. Kontekst jest funkcja, plik źródłowy i moduł, w którym znajduje się zmienna. Jeśli trzeba to zrobić, można użyć składni operatora kontekstu. Aby uzyskać więcej informacji zobacz wyrażenia w języku C++.  
+   Jeśli programujesz w kodzie macierzystym, czasami konieczne może być zakwalifikowanie kontekstu nazwy zmiennej lub wyrażenia zawierającego nazwę zmiennej. Kontekst jest funkcja, plik źródłowy i moduł, w którym znajduje się zmienna. Jeśli trzeba to zrobić, można użyć składni operatora kontekstu. Aby uzyskać więcej informacji zobacz wyrażenia w języku C++.  
   
 ## <a name="observing-expressions-with-the-watch-window"></a>Monitorowanie wyrażenia w oknie czujki  
  Teraz Wypróbujmy użycie zamiast tego wyrażenia. Możesz dodać dowolne prawidłowe wyrażenie rozpoznawanym przez debuger.  
@@ -138,15 +138,15 @@ static void Main(string[] args)
   
  Po wskazaniu ikonę etykietka narzędzia informacje na temat przyczyny nie zostało obliczone wyrażenie.  Jeśli circling strzałki na liście, wyrażenie nie zostało ocenione pod kątem jednego z następujących powodów:  
   
--   • Błąd wystąpił, ponieważ obliczania wyrażenia. Na przykład limit czasu może wystąpić lub zmienną mogły być poza zakres tej asysty.  
+- • Błąd wystąpił, ponieważ obliczania wyrażenia. Na przykład limit czasu może wystąpić lub zmienną mogły być poza zakres tej asysty.  
   
--   • Wyrażenie zawiera wywołanie funkcji, które może wywołać efekt uboczny, w aplikacji (zobacz [efekty uboczne i wyrażenia](#bkmk_sideEffects)).  
+- • Wyrażenie zawiera wywołanie funkcji, które może wywołać efekt uboczny, w aplikacji (zobacz [efekty uboczne i wyrażenia](#bkmk_sideEffects)).  
   
--   Automatycznej oceny właściwości i wywołania niejawnych funkcji przez debuger jest wyłączona (**narzędzia / Opcje / Debugowanie / Włącz obliczanie właściwości i inne niejawne wywołania funkcji**), a następnie nie może być wyrażenie obliczane automatycznie.  
+- Automatycznej oceny właściwości i wywołania niejawnych funkcji przez debuger jest wyłączona (**narzędzia / Opcje / Debugowanie / Włącz obliczanie właściwości i inne niejawne wywołania funkcji**), a następnie nie może być wyrażenie obliczane automatycznie.  
   
- Aby odświeżyć wartość, kliknij ikonę odświeżania, lub naciśnij klawisz spacji. Debuger spróbuje ponownie oceń wyrażenie. Jeśli ikona odświeżania znajdowała się, ponieważ automatycznej oceny właściwości i niejawne efekty uboczne została wyłączona, można obliczyć wyrażenia.  
+  Aby odświeżyć wartość, kliknij ikonę odświeżania, lub naciśnij klawisz spacji. Debuger spróbuje ponownie oceń wyrażenie. Jeśli ikona odświeżania znajdowała się, ponieważ automatycznej oceny właściwości i niejawne efekty uboczne została wyłączona, można obliczyć wyrażenia.  
   
- Jeśli widzisz ikonę która zostanie koło z dwóch falistych linii, które przypominają wątków, wyrażenie nie zostało ocenione ze względu na potencjalne zależności między wątkami. Innymi słowy obliczenie kodu wymaga innych wątków w aplikacji w celu tymczasowego uruchomienia. Podczas pracy w trybie przerwania, wszystkie wątki w aplikacji zwykle są zatrzymywane. Zezwolenie tymczasowego uruchomienia innych wątków może mieć nieoczekiwane wpływ na stan programu i powoduje, że debuger Ignoruj zdarzenia, takie jak punkty przerwania i wyjątków zgłaszanych na te wątki.  
+  Jeśli widzisz ikonę która zostanie koło z dwóch falistych linii, które przypominają wątków, wyrażenie nie zostało ocenione ze względu na potencjalne zależności między wątkami. Innymi słowy obliczenie kodu wymaga innych wątków w aplikacji w celu tymczasowego uruchomienia. Podczas pracy w trybie przerwania, wszystkie wątki w aplikacji zwykle są zatrzymywane. Zezwolenie tymczasowego uruchomienia innych wątków może mieć nieoczekiwane wpływ na stan programu i powoduje, że debuger Ignoruj zdarzenia, takie jak punkty przerwania i wyjątków zgłaszanych na te wątki.  
   
 ##  <a name="bkmk_sideEffects"></a> Efekty uboczne i wyrażenia  
  Obliczenie niektórych wyrażeń może zmienić wartość zmiennej lub inaczej wpłynąć na stan programu. Na przykład obliczenie następującego wyrażenia zmienia wartość `var1`:  
@@ -238,11 +238,11 @@ public class Program
   
  Jeśli chcesz wyświetlić tylko **dynamiczny widok** dla obiektu, możesz użyć **dynamiczne** specyfikatora formatu:  
   
--   C#: **ObjectName dynamiczne**  
+- C#: **ObjectName dynamiczne**  
   
--   Visual Basic:: **$dynamic, nazwa obiektu**  
+- Visual Basic:: **$dynamic, nazwa obiektu**  
   
- **Dynamiczny widok** również poprawia środowisko debugowania dla obiektów COM. Jeśli debuger napotka zapakowane w obiekt COM **.__ComObject**, dodaje **dynamiczny widok** węzła dla obiektu.  
+  **Dynamiczny widok** również poprawia środowisko debugowania dla obiektów COM. Jeśli debuger napotka zapakowane w obiekt COM **.__ComObject**, dodaje **dynamiczny widok** węzła dla obiektu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Okna debugera](../debugger/debugger-windows.md)

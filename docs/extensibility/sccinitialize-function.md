@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1146573f3d969ffc5cd56576ba92faa4e6ffdce0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 136978a6d1dc19a414079ba424ebcd5d50f6840a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139126"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934577"
 ---
-# <a name="sccinitialize-function"></a>Funkcja SccInitialize
-Ta funkcja inicjuje wtyczkę kontroli źródła i zapewnia możliwości i ograniczeń dotyczących zintegrowane środowisko programistyczne (IDE).  
+# <a name="sccinitialize-function"></a>SccInitialize, funkcja
+Ta funkcja inicjuje wtyczka do kontroli źródła i udostępnia możliwości i ograniczeń do zintegrowanego środowiska programistycznego (IDE).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,52 +42,52 @@ SCCRTN SccInitialize (
   
 #### <a name="parameters"></a>Parametry  
  `ppvContext`  
- [in] Wtyczka do kontroli źródła może tutaj umieść wskaźnik do struktury jego kontekstu.  
+ [in] Wtyczka do kontroli źródła można umieścić wskaźnik do jego strukturę context tutaj.  
   
  `hWnd`  
- [in] Dojście do okna IDE, które wtyczka do kontroli źródła można używać jako elementu nadrzędnego wszystkie okna dialogowe, które zawiera.  
+ [in] Uchwyt okna środowiska IDE, które wtyczka do kontroli źródła można użyć jako element nadrzędny dla wszystkie okna dialogowe, które zawiera.  
   
  `lpCallerName`  
- [in] Nazwa programu wywoływania wtyczka do kontroli źródła.  
+ [in] Nazwa programu wywołanie wtyczek do kontroli źródła.  
   
  `lpSccName`  
- [w, out] Buforu, w którym wtyczkę kontroli źródła umieszcza własną nazwę (aby nie przekroczyć `SCC_NAME_LEN`).  
+ [out w] Bufor, w którym wtyczka do kontroli źródła umieszcza własną nazwę (aby nie przekroczyć `SCC_NAME_LEN`).  
   
  `lpSccCaps`  
- [out] Zwraca dodatku plug-in flagi możliwości kontroli źródła.  
+ [out] Zwraca do kontroli źródła w dodatku plug-in flag funkcji.  
   
  `lpAuxPathLabel`  
- [w, out] Buforu, w którym wtyczkę kontroli źródła umieszcza ciąg opisujący `lpAuxProjPath` zwrócona przez parametr [SccOpenProject](../extensibility/sccopenproject-function.md) i [SccGetProjPath](../extensibility/sccgetprojpath-function.md) (aby nie przekroczyć `SCC_AUXLABEL_LEN`).  
+ [out w] Bufor, w którym wtyczka do kontroli źródła umieszcza ciąg, który opisuje `lpAuxProjPath` parametr zwracany przez [SccOpenProject](../extensibility/sccopenproject-function.md) i [SccGetProjPath](../extensibility/sccgetprojpath-function.md) (aby nie przekroczyć `SCC_AUXLABEL_LEN`).  
   
  `pnCheckoutCommentLen`  
- [out] Zwraca wartość maksymalna dopuszczalna długość komentarz wyewidencjonowania.  
+ [out] Zwraca maksymalną dopuszczalną długość dla komentarz do wyewidencjonowania.  
   
  `pnCommentLen`  
- [out] Zwraca maksymalną długość dopuszczalną wartość dla innych komentarzy.  
+ [out] Zwraca maksymalną dopuszczalną długość dla innych komentarzy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczkę kontroli źródła tej funkcji może przywrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|SCC_OK|Inicjowanie kontroli źródła zakończyła się pomyślnie.|  
+|SCC_OK|Inicjalizacja kontroli źródła zakończyła się pomyślnie.|  
 |SCC_E_INITIALIZEFAILED|Nie można zainicjować systemu.|  
 |SCC_E_NOTAUTHORIZED|Użytkownik nie może wykonać podanej operacji.|  
 |SCC_E_NONSPECFICERROR|Nieokreślony błąd; Nie można zainicjować systemu kontroli źródła.|  
   
 ## <a name="remarks"></a>Uwagi  
- IDE wywołanie tej funkcji po pierwszym załadowaniu wtyczkę kontroli źródła. Umożliwia on IDE w celu przekazania pewne informacje, takie jak nazwa wywołującego, wtyczki. IDE pobiera ponownie również pewne informacje, takie jak maksymalną dozwoloną długość komentarze oraz funkcje do podłączenia do firmy.  
+ IDE wywołuje tę funkcję, po pierwszym załadowaniu wtyczka do kontroli źródła. Dzięki temu środowisko IDE do przekazania pewne informacje, takie jak nazwa obiektu wywołującego, do wtyczki. IDE także otrzymuje pewne informacje, takie jak maksymalna dozwolona liczba znaków dla komentarzy i możliwości podłączenia do firmy.  
   
- `ppvContext` Wskazuje `NULL` wskaźnika. Wtyczka do kontroli źródła można przydzielić do własnego użytku struktury i przechowywać wskaźnik do tej struktury w `ppvContext`. IDE przechodzą ten wskaźnik co innych funkcji VSSCI interfejsu API, umożliwiając wtyczki ma dostępne informacje o kontekście bez konieczności przechowywania globalnej i obsługuje wiele wystąpień wtyczki. Ta struktura powinien alokację kiedy [SccUninitialize](../extensibility/sccuninitialize-function.md) jest wywoływana.  
+ `ppvContext` Wskazuje `NULL` wskaźnika. Wtyczka do kontroli źródła można przydzielić struktury na własny użytek i przechowują wskaźnik do tej struktury w `ppvContext`. IDE zostanie przekazany this, wskaźnik do każdej innych funkcji VSSCI API co dodatek typu plug-in mają dostępne informacje o kontekście bez konieczności uciekania się do globalnej pamięci masowej i obsługuje wiele wystąpień wtyczki. Ta struktura powinna cofnięta kiedy [SccUninitialize](../extensibility/sccuninitialize-function.md) jest wywoływana.  
   
- `lpCallerName` i `lpSccName` parametry włączyć IDE i wtyczkę kontroli źródła do wymiany nazwy. Te nazwy mogą być stosowane jedynie w celu rozróżnienia wielu wystąpień lub może faktycznie pojawią się one w menu lub w oknach dialogowych.  
+ `lpCallerName` i `lpSccName` parametry Włącz IDE i wtyczka do kontroli źródła do wymiany nazwy. Te nazwy mogą być stosowane po prostu w celu rozróżnienia wielu wystąpień lub mogą faktycznie pojawiają się w menu i okien dialogowych.  
   
- `lpAuxPathLabel` Parametr jest używany jako komentarz do identyfikowania ścieżkę pomocniczą projektu, który jest przechowywany w pliku rozwiązania przekazany do kontroli źródła wtyczek w wywołaniu ciąg [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] ciąg "SourceSafe projektu:"; inne źródła formantu dodatków plug-in powinien zaniechania przy użyciu tego określonego ciągu.  
+ `lpAuxPathLabel` Jest ciągiem, jako komentarz używany do identyfikowania ścieżka pomocnicze w ramach projektu, który jest przechowywany w pliku rozwiązania i przekazywane do kontroli źródła wtyczek w wywołaniu [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] ciąg "SourceSafe projektu:"; inne źródła wtyczek kontroli powinien punktowanych za pomocą tego określonego ciągu.  
   
- `lpSccCaps` Parametru zapewnia kontrolę źródła wtyczki miejsce do przechowywania flag bitowych wskazującą możliwości podłączenia do firmy. (Aby uzyskać pełną listę możliwości flag bitowych, zobacz [flagi możliwości](../extensibility/capability-flags.md)). Na przykład jeśli wtyczka planów zapis wyniki do funkcję wywołania zwrotnego dostarczane przez obiekt wywołujący wtyczki ustawiał możliwości bit SCC_CAP_TEXTOUT. Spowoduje to sygnał IDE można utworzyć okna dla wyników kontroli wersji.  
+ `lpSccCaps` Parametr zapewnia kontrolę źródła wtyczki miejsce do przechowywania flag bitowych wskazujący możliwości podłączenia do firmy. (Aby uzyskać pełną listę flag bitowych możliwości, zobacz [flagi możliwości](../extensibility/capability-flags.md)). Na przykład jeśli wtyczka plany można zapisać wyniki do funkcji wywołania zwrotnego dostarczane przez obiekt wywołujący, wtyczka ustawiał możliwości bit SCC_CAP_TEXTOUT. Spowoduje to sygnał środowisku IDE nad tworzeniem okna, w którym wyniki kontroli wersji.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Funkcje API wtyczkę kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
+ [Funkcje interfejsu API wtyczki kontroli źródła](../extensibility/source-control-plug-in-api-functions.md)   
  [SccUninitialize](../extensibility/sccuninitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
  [Flagi możliwości](../extensibility/capability-flags.md)

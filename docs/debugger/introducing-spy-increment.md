@@ -12,49 +12,49 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 826ef03bcca176d095c2110ed14227bb5faa2dbd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3b431e8223c0cacf28d5e8251b655e2d86769e04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481450"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935709"
 ---
 # <a name="introducing-spy"></a>Wprowadzenie programu Spy++
 Spy ++ umożliwia wykonywanie następujących zadań:  
   
--   Wyświetla graficzny drzewa relacje między obiektami systemu. Obejmują one [procesów](../debugger/processes-view.md), [wątków](../debugger/threads-view.md), i [windows](../debugger/windows-view.md).  
+- Wyświetla graficzny drzewa relacji między obiektami systemu. Obejmują one [procesy](../debugger/processes-view.md), [wątków](../debugger/threads-view.md), i [windows](../debugger/windows-view.md).  
   
--   Wyszukaj określone [windows](../debugger/how-to-search-for-a-window-in-windows-view.md), [wątków](../debugger/how-to-search-for-a-thread-in-threads-view.md), [procesów](../debugger/how-to-search-for-a-process-in-processes-view.md), lub [wiadomości](../debugger/how-to-search-for-a-message-in-messages-view.md).  
+- Wyszukaj określone [windows](../debugger/how-to-search-for-a-window-in-windows-view.md), [wątków](../debugger/how-to-search-for-a-thread-in-threads-view.md), [procesy](../debugger/how-to-search-for-a-process-in-processes-view.md), lub [wiadomości](../debugger/how-to-search-for-a-message-in-messages-view.md).  
   
--   Wyświetl właściwości wybranego [windows](../debugger/how-to-display-window-properties.md), [wątków](../debugger/how-to-display-thread-properties.md), [procesów](../debugger/how-to-display-process-properties.md), lub [wiadomości](../debugger/how-to-display-message-properties.md).  
+- Wyświetl właściwości wybranego [windows](../debugger/how-to-display-window-properties.md), [wątków](../debugger/how-to-display-thread-properties.md), [procesy](../debugger/how-to-display-process-properties.md), lub [wiadomości](../debugger/how-to-display-message-properties.md).  
   
--   Wybierz okno, wątek, proces lub komunikat bezpośrednio w widoku.  
+- Wybierz okno, wątek, proces lub komunikatów bezpośrednio w widoku.  
   
--   Użyj [narzędzia wyszukiwania](../debugger/how-to-use-the-finder-tool.md) wybierz okno, umieszczając kursor myszy.  
+- Użyj [Wyszukiwarka](../debugger/how-to-use-the-finder-tool.md) wybrać okna, umieszczając wskaźnik myszy.  
   
--   Ustaw [komunikatu opcja](../debugger/how-to-open-messages-view-from-find-window.md) przy użyciu parametrów wyboru dziennika złożonych wiadomości.  
+- Ustaw [komunikatu opcji](../debugger/how-to-open-messages-view-from-find-window.md) przy użyciu złożonych komunikatu dziennika wybór parametrów.  
   
- Spy ++ ma paska narzędzi i hiperłącza do pomagających w pracy szybciej. Zapewnia także **Odśwież** polecenie, aby zaktualizować widoku aktywnego **narzędzie Window Finder** aby łatwiej, spying i **czcionki** okno dialogowe, aby dostosować wyświetlanie systemu windows. Ponadto Spy ++ umożliwia zapisywanie i przywracanie preferencji użytkownika.  
+  Spy ++ zawiera pasek narzędzi i hiperłączy, które pozwalają pracować szybciej. Zapewnia także **Odśwież** polecenie, aby zaktualizować widoku aktywnego **narzędzie Window Finder** umożliwiają łatwiejsze w obsłudze, szpiegowanie i **czcionki** okno dialogowe, aby dostosować widok systemu windows. Ponadto narzędzie Spy ++ umożliwia zapisywanie i przywracanie preferencji użytkownika.  
   
- W różnych Spy ++ systemu windows należy kliknąć prawym przyciskiem myszy, aby wyświetlić menu skrótów często używanych poleceń. Polecenia są wyświetlane zależy od tego, gdzie jest wskaźnik. Na przykład, kliknij prawym przyciskiem myszy wpis w widoku okna wybrane okno jest widoczne, następnie klikając pozycję **zaznacz** na skrót menu powoduje, że obramowanie okna wybranych do flash, dzięki czemu można go zlokalizować łatwiej.  
+  W różnych Spy ++ w systemie windows możesz kliknąć prawym przyciskiem myszy, aby wyświetlić menu skrótów z najczęściej używanymi poleceniami. Polecenia, które są wyświetlane, zależy od tego, gdzie jest wskaźnik. Na przykład kliknij prawym przyciskiem myszy wpis w widoku okna, a wybrane okno jest widoczne, następnie kliknięcie **wyróżnić** na skrót menu powoduje, że obramowania okna wybranego do flash, aby można go odnaleźć łatwiejsze.  
   
 > [!NOTE]
->  Istnieją dwa narzędzia, które przypominają Spy ++: PView, która przedstawia szczegółowe informacje dotyczące procesów i wątków oraz DDESPY. EXE, który umożliwia monitorowanie dynamicznej wymiany danych (DDE) wiadomości.  
+>  Istnieją dwa narzędzia, które przypominają Spy ++: PView, który przedstawia szczegółowe informacje dotyczące procesów i wątków oraz DDESPY. Plik EXE, który umożliwia monitorowanie komunikatów dynamicznej wymiany danych (DDE).  
   
-## <a name="64-bit-operating-systems"></a>64-bitowe systemy operacyjne  
- Istnieją dwie wersje programu Spy ++. Pierwszą wersję, nazwę programu Spy ++ (spyxx.exe), służy do wyświetlania wiadomości wysyłane do okna, który działa w procesie 32-bitowych. Na przykład Visual Studio działa w procesie 32-bitowych. W związku z tym służy narzędzie Spy ++ do wyświetlenia wiadomości wysyłane do **Eksploratora rozwiązań**. Ponieważ konfigurację domyślną dla większości kompilacje w Visual Studio jest uruchamiane w procesie 32-bitowy, to pierwszej wersji programu Spy ++ jest jedną, która jest [dostępne na **narzędzia** menu](../debugger/how-to-start-spy-increment.md) w programie Visual Studio.  
+## <a name="64-bit-operating-systems"></a>64-bitowych systemach operacyjnych  
+ Istnieją dwie wersje programu Spy ++. Pierwsza wersja, o nazwie Spy ++ (spyxx.exe) jest przeznaczony do wyświetlania komunikatów wysłanych do okno, w którym jest uruchomiony w procesie 32-bitowym. Na przykład programu Visual Studio działa w procesie 32-bitowych. W związku z tym, służy narzędzie Spy ++ do wyświetlania komunikatów wysłanych do **Eksploratora rozwiązań**. Ponieważ konfigurację domyślną dla większości kompilacje w programie Visual Studio jest uruchamiane w procesie 32-bitowych, pierwszej wersji programu Spy ++ jest jedną, która jest [dostępne na **narzędzia** menu](../debugger/how-to-start-spy-increment.md) w programie Visual Studio.  
   
- Druga wersja o nazwie Spy ++ (64-bitowy) (spyxx_amd64.exe), służy do wyświetlania wiadomości wysyłane do okna, który działa w procesie 64-bitowych. Na przykład na 64-bitowym systemie operacyjnym, Notatnik działa w procesie 64-bitowych. W związku z tym służy narzędzie Spy ++ (64-bitowy) do wyświetlenia wiadomości wysyłane do Notatnika. Spy ++ (64-bitowy) znajduje się w  
+ Druga wersja, o nazwie Spy ++ (64-bitowy) (spyxx_amd64.exe) jest przeznaczony do wyświetlania komunikatów wysłanych do okno, w którym jest uruchomiony w procesie 64-bitowym. Na przykład na 64-bitowym systemie operacyjnym Notatnik działa w procesie 64-bitowych. W związku z tym służy narzędzie Spy ++ (64-bitowy) aby wyświetlić komunikaty wysyłane do Notatnika. Spy ++ (64-bitowy) znajduje się w  
   
  .. \\ *Folder instalacji programu visual Studio*\Common7\Tools\spyxx_amd64.exe.  
   
- Danej wersji programu Spy ++ można uruchomić bezpośrednio z poziomu wiersza polecenia.  
+ Uruchom z dowolnej wersji programu Spy ++, bezpośrednio z poziomu wiersza polecenia.  
   
 > [!NOTE]
->  Mimo że nazwa pliku (64-bitowy) Spy ++ zawiera "amd", uruchomieniu na dowolnym x64 systemu operacyjnego Windows.  
+>  Mimo że Spy ++ (64-bitowy) nazwa zawiera "amd", działa na dowolnej x64 systemu operacyjnego Windows.  
   
 ## <a name="see-also"></a>Zobacz też 
  [Porady: Uruchom narzędzie Spy ++](../debugger/how-to-start-spy-increment.md)   
  [Korzystanie z programu Spy ++](../debugger/using-spy-increment.md)   
- [Widoków Spy ++](../debugger/spy-increment-views.md)   
+ [Widoków programu Spy ++](../debugger/spy-increment-views.md)   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa911dba9d56996e048326737c1dd99ca89c49c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e2bfca2c360741b92c3a7ce3c4773671d8bf4d6f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101181"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928129"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
-Ta metoda określa typ obiektu środowiska wykonawczego.  
+Ta metoda określa typu run-time obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -49,10 +49,10 @@ int ResolveRuntimeType(
  [out] Zwraca typ obiektu jako [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Zawsze typu run-time obiektu nie jest znany w czasie kompilacji. Na przykład przy użyciu polimorfizm, argument można przekazać do funkcji jako swojej klasy podstawowej, takie jak klasa przycisk. Rzeczywisty argument może być klasy pochodnej, takich jak klasy przycisk radiowy.  
+ Zawsze typu run-time obiektu nie jest znany w czasie kompilacji. Na przykład za pomocą polimorfizm, argument można przekazać do funkcji jako swojej klasy bazowej, takie jak klasa przycisków. Rzeczywisty argument może być klasy pochodnej, takich jak klasa przycisków radiowych.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

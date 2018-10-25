@@ -15,29 +15,29 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d0f89d02d0fcccc66ddd1f66b411f6b3f542cff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939270"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Dodawanie funkcji wyszukiwania do okna narzędzi
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podczas tworzenia lub aktualizowania okna narzędzi w rozszerzeniu, możesz dodać te same funkcje wyszukiwania, który pojawia się gdzie indziej w programie Visual Studio. Ta funkcja obejmuje następujące funkcje:  
   
--   Pole wyszukiwania znajduje się zawsze w obszarze niestandardowego paska narzędzi.  
+- Pole wyszukiwania znajduje się zawsze w obszarze niestandardowego paska narzędzi.  
   
--   Wskaźnik postępu, który jest nałożony na samo pole wyszukiwania.  
+- Wskaźnik postępu, który jest nałożony na samo pole wyszukiwania.  
   
--   Możliwość Pokaż wyniki, natychmiast po wprowadzeniu każdego znaku (Wyszukaj), lub tylko wtedy, gdy wciśnij klawisz Enter (Wyszukaj na żądanie).  
+- Możliwość Pokaż wyniki, natychmiast po wprowadzeniu każdego znaku (Wyszukaj), lub tylko wtedy, gdy wciśnij klawisz Enter (Wyszukaj na żądanie).  
   
--   Lista, która wyświetla warunki, dla których wyszukaniu ostatnio.  
+- Lista, która wyświetla warunki, dla których wyszukaniu ostatnio.  
   
--   Możliwość filtrowania wyszukiwania według określonych pól lub aspektów celów wyszukiwania.  
+- Możliwość filtrowania wyszukiwania według określonych pól lub aspektów celów wyszukiwania.  
   
- Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:  
+  Dzięki temu przewodnikowi dowiesz się, jak wykonywać następujące zadania:  
   
 1.  Tworzenie projektu pakietu VSPackage.  
   

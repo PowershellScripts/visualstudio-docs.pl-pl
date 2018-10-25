@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: abeb26d0e8078eeaaf6ba6c8850b3636367bebc7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51aed81c26a4f62185d3dd7bcd588b7e955a92d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111797"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934343"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
-Pobiera flagi dla tego parametru ogólnego.  
+Pobranie flagi dla tego parametru ogólnego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,16 +40,16 @@ int GetFlags(
   
 #### <a name="parameters"></a>Parametry  
  `pdwFlags`  
- [out] Zwraca flagi dla tego parametru ogólnego.  
+ [out] Zwraca wartość flagi dla tego parametru ogólnego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Te flagi, zawierają informacje o różnych ograniczeń specjalnych.  
+ Te flagi, zawierają informacje dotyczące różnych ograniczeń specjalnych.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CDebugGenericParamFieldType** obiekt ujawniający [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugGenericParamFieldType** obiekt ujawniający [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interfejsu.  
   
 ```cpp  
 HRESULT CDebugGenericParamFieldType::GetFlags(DWORD *pdwFlags)  

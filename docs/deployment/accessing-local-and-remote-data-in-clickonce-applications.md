@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7829c9fce0c8315ac42fc1c376987e4e30b4be8e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b6f25bb2920f8f50afbd8bfb820e7c852e160865
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081241"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943053"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Dostęp do danych lokalnych i zdalnych w aplikacjach ClickOnce
 Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zapewnia różne opcje do odczytywania i zapisywania danych, zarówno lokalnie, jak i zdalnie.  
@@ -30,11 +30,11 @@ Większość aplikacji tworzą lub wykorzystują dane. [!INCLUDE[ndptecclick](..
 ## <a name="local-data"></a>Dane lokalne  
  Za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], możesz załadować i przechowywać dane lokalnie, używając jednej z następujących metod:  
   
--   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Katalog danych  
+- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Katalog danych  
   
--   Izolowany magazyn  
+- Izolowany magazyn  
   
--   Inne pliki lokalne  
+- Inne pliki lokalne  
   
 ### <a name="clickonce-data-directory"></a>Katalog danych ClickOnce  
  Każdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji zainstalowanej na komputerze lokalnym ma katalog danych, przechowywany w katalogu Documents and Settings użytkownika. Każdy plik objęte [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji i oznaczony jako plik "dane" jest kopiowany do tego katalogu, gdy aplikacja jest zainstalowana. Pliki danych może być dowolnego typu pliku, najczęściej używane są tekstu, XML i pliki bazy danych, takich jak pliki .mdb Microsoft Access.  

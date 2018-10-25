@@ -41,25 +41,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b1006a8c4b04fcb935d651f65031764a874b75f8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677489"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940232"
 ---
 # <a name="content-controls"></a>Formanty zawartości
   Formanty zawartości umożliwiają dla Ciebie dokumentów projektów i szablonów, które mają następujące funkcje:  
   
--   Interfejs użytkownika (UI), który jest kontrolowany dane wejściowe, takich jak formularz.  
+- Interfejs użytkownika (UI), który jest kontrolowany dane wejściowe, takich jak formularz.  
   
--   Ograniczenia, które uniemożliwiają użytkownikom edytowanie chronionych sekcji dokumentu lub szablonu. Aby uzyskać więcej informacji, zobacz [ochrona części dokumentów za pomocą formantów zawartości](#Protection).  
+- Ograniczenia, które uniemożliwiają użytkownikom edytowanie chronionych sekcji dokumentu lub szablonu. Aby uzyskać więcej informacji, zobacz [ochrona części dokumentów za pomocą formantów zawartości](#Protection).  
   
--   Wiązanie danych do źródła danych. Aby uzyskać więcej informacji, zobacz [wiązanie danych z kontrolkami zawartości](#DataBinding).  
+- Wiązanie danych do źródła danych. Aby uzyskać więcej informacji, zobacz [wiązanie danych z kontrolkami zawartości](#DataBinding).  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [powiązywanie danych do programu Word 2007 zawartości kontrolki przy użyciu programu Visual Studio Tools dla pakietu Office (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).  
+  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [powiązywanie danych do programu Word 2007 zawartości kontrolki przy użyciu programu Visual Studio Tools dla pakietu Office (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).  
   
 ## <a name="overview-of-content-controls"></a>Omówienie kontrolek zawartości  
  Formanty zawartości zapewniają interfejs użytkownika, który jest zoptymalizowany dla obu użytkownika, danych wejściowych i drukowania. Po dodaniu kontrolki zawartości do dokumentu, kontrolka jest identyfikowana przez obramowanie, tytuł i tymczasowe tekst, który można dołączyć instrukcje dla użytkownika. Obramowania i tytułu formantu nie są wyświetlane w drukowanej wersji dokumentu.  
@@ -68,11 +68,11 @@ ms.locfileid: "35677489"
   
  Zawartość pomagają w zapobieganiu naruszeniom również należy wykonać następujące czynności:  
   
--   Uniemożliwianie użytkownikom edytowanie lub usuwanie części dokumentu. Jest to przydatne, jeśli informacje w dokumencie lub szablon, który użytkownicy powinni być w stanie odczytane, ale nie edytować, lub jeśli chcesz, aby użytkownicy mogli edytować formanty zawartości, ale nie ich usuwać.  
+- Uniemożliwianie użytkownikom edytowanie lub usuwanie części dokumentu. Jest to przydatne, jeśli informacje w dokumencie lub szablon, który użytkownicy powinni być w stanie odczytane, ale nie edytować, lub jeśli chcesz, aby użytkownicy mogli edytować formanty zawartości, ale nie ich usuwać.  
   
--   Powiąż części dokumentu lub szablonu z danymi. Formanty zawartości można powiązać obiekty zarządzane w polach bazy danych [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], elementy XML, które są przechowywane w dokumencie i innych źródeł danych.  
+- Powiąż części dokumentu lub szablonu z danymi. Formanty zawartości można powiązać obiekty zarządzane w polach bazy danych [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)], elementy XML, które są przechowywane w dokumencie i innych źródeł danych.  
   
- W projektach na poziomie dokumentu można dodać kontrolek zawartości do dokumentu w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO formanty zawartości można dodać do dowolnego otwartego dokumentu w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+  W projektach na poziomie dokumentu można dodać kontrolek zawartości do dokumentu w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO formanty zawartości można dodać do dowolnego otwartego dokumentu w czasie wykonywania. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie kontrolek zawartości do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 > [!NOTE]  
 >  Formanty zawartości można użyć tylko w dokumentach, które są zapisane w formacie Open XML. Formanty zawartości nie można używać w dokumentach, które są zapisane w dokumencie programu Word 97 – 2003 (*doc*) format.  
@@ -133,11 +133,11 @@ ms.locfileid: "35677489"
   
  Jeśli obszar, który ma być chroniony, znajduje się wewnątrz formantu zawartości, można użyć właściwości formantu zawartości, aby uniemożliwić użytkownikom edytowanie lub usuwanie kontrolki:  
   
--   **LockContents** właściwość uniemożliwia użytkownikom edytowania zawartości.  
+- **LockContents** właściwość uniemożliwia użytkownikom edytowania zawartości.  
   
--   **LockContentControl** właściwość uniemożliwia użytkownikom usunięcie formantu.  
+- **LockContentControl** właściwość uniemożliwia użytkownikom usunięcie formantu.  
   
- Jeśli obszar, który chcesz chronić nie znajduje się wewnątrz formantu zawartości lub jeśli chcesz chronić obszar, który zawiera formanty zawartości i inne typy zawartości, możesz umieścić cały obszar w <xref:Microsoft.Office.Tools.Word.GroupContentControl>. W przeciwieństwie do innych kontrolek zawartości <xref:Microsoft.Office.Tools.Word.GroupContentControl> zapewnia nie interfejsu użytkownika, który jest widoczny dla użytkownika. Jego służy wyłącznie do definiowania region, który użytkownicy nie mogą edytować.  
+  Jeśli obszar, który chcesz chronić nie znajduje się wewnątrz formantu zawartości lub jeśli chcesz chronić obszar, który zawiera formanty zawartości i inne typy zawartości, możesz umieścić cały obszar w <xref:Microsoft.Office.Tools.Word.GroupContentControl>. W przeciwieństwie do innych kontrolek zawartości <xref:Microsoft.Office.Tools.Word.GroupContentControl> zapewnia nie interfejsu użytkownika, który jest widoczny dla użytkownika. Jego służy wyłącznie do definiowania region, który użytkownicy nie mogą edytować.  
   
 > [!NOTE]  
 >  Jeśli tworzysz <xref:Microsoft.Office.Tools.Word.GroupContentControl> zawierającą osadzone formanty zawartości, embedded formanty zawartości nie są automatycznie chronione. Należy użyć **LockContents** właściwości każdego z osadzonych formantu, aby uniemożliwić użytkownikom edytowanie ich zawartości.  
@@ -149,11 +149,11 @@ ms.locfileid: "35677489"
   
  Formanty zawartości zapewniają następujące opcje powiązania danych:  
   
--   Możesz powiązać formanty zawartości pól bazy danych lub obiekty zarządzane przy użyciu tego samego modelu powiązania danych jako Windows Forms.  
+- Możesz powiązać formanty zawartości pól bazy danych lub obiekty zarządzane przy użyciu tego samego modelu powiązania danych jako Windows Forms.  
   
--   Formanty zawartości można powiązać elementy w częściach XML (o nazwie *niestandardowe elementy XML*), są osadzone w dokumencie.  
+- Formanty zawartości można powiązać elementy w częściach XML (o nazwie *niestandardowe elementy XML*), są osadzone w dokumencie.  
   
- Omówienie powiązanie kontrolki hosta w rozwiązaniach pakietu Office z danymi, zobacz [wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
+  Omówienie powiązanie kontrolki hosta w rozwiązaniach pakietu Office z danymi, zobacz [wiązanie danych do kontrolek w rozwiązaniach pakietu Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
   
 ### <a name="use-the-windows-forms-data-binding-model"></a>Przy użyciu modelu Windows Forms powiązania danych  
  Większość zawartości kontrolki obsługuje model powiązania proste dane, który korzysta z Windows Forms. Proste powiązanie danych oznacza, że kontrolka jest powiązana z elementu danych jednego, takiego jak wartość w kolumnie tabeli danych. Aby uzyskać więcej informacji, zobacz [powiązanie danych oraz Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  

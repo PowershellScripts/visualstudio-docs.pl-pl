@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07c94dda2a04ca1b69c2dbfd59b0df575f1b6c73
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 9f4dc0eca2c74161abb9cc4afe3917a160a18422
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933134"
 ---
 # <a name="editor-factories"></a>Fabryki edytora
 Fabryka edytora tworzy obiekty edytora i umieszcza je w ramkę okna, znane jako fizyczny widok. Tworzy dane dokumentu i obiekty widoku dokumentu, które są niezbędne do utworzenia w edytorach i projektantach. Fabryka edytora jest wymagana do utworzenia podstawowy edytor programu Visual Studio i dowolnego edytora standardowego. Niestandardowy Edytor również opcjonalnie mogą być tworzone za pomocą fabryki edytora.  
@@ -46,13 +46,13 @@ Fabryka edytora tworzy obiekty edytora i umieszcza je w ramkę okna, znane jako 
 ## <a name="the-editor-factory-registration-process"></a>Proces rejestracji fabryki edytora  
  Następujący proces występuje, gdy program Visual Studio ładuje edytora przy użyciu usługi fabryka edytora:  
   
-1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projektu wywołań systemowych <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
+1. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Projektu wywołań systemowych <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
-2.  Ta metoda zwraca fabryka edytora. Visual Studio opóźnia ładowanie pakiet edytora, dopóki system projektu jest faktycznie potrzebny edytora.  
+2. Ta metoda zwraca fabryka edytora. Visual Studio opóźnia ładowanie pakiet edytora, dopóki system projektu jest faktycznie potrzebny edytora.  
   
-3.  Jeśli system projektu musi edytora, Visual Studio wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, wyspecjalizowanych metodę zwracającą widok dokumentu i dokumentu obiektów danych.  
+3. Jeśli system projektu musi edytora, Visual Studio wywołuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, wyspecjalizowanych metodę zwracającą widok dokumentu i dokumentu obiektów danych.  
   
-4.  Jeśli wywołuje przez program Visual Studio z fabryki edytora za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> zwracają obiekt danych dokumentu i obiekt widoku dokumentu, Visual Studio następnie tworzy okno dokumentu, umieszcza obiekt widoku dokumentu w nim i sprawia, że wpis do uruchomionego dokumentu Tabela (Normalizacją) dla obiektu danych dokumentu.  
+4. Jeśli wywołuje przez program Visual Studio z fabryki edytora za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> zwracają obiekt danych dokumentu i obiekt widoku dokumentu, Visual Studio następnie tworzy okno dokumentu, umieszcza obiekt widoku dokumentu w nim i sprawia, że wpis do uruchomionego dokumentu Tabela (Normalizacją) dla obiektu danych dokumentu.  
   
 ## <a name="see-also"></a>Zobacz także  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   

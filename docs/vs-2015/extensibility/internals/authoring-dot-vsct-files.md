@@ -15,12 +15,12 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85a30c8987311ea8d6216312533dc70072c96f2c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b860e279696b4f8c325995ecd09fe257621adab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941337"
 ---
 # <a name="authoring-vsct-files"></a>Tworzenie. Pliki Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,159 +86,159 @@ W tym dokumencie przedstawiono sposób tworzenie pliku vsct, aby dodać elementy
   
 ##### <a name="to-define-ui-elements"></a>Aby zdefiniować elementy interfejsu użytkownika  
   
-1.  Jeśli definiujesz nowe menu, podmenu, menu skrótów i paski narzędzi, należy dodać `Menus` elementu `Commands` elementu. Następnie dla każdego menu, który ma zostać utworzony, Dodaj [Menu](../../extensibility/menu-element.md) elementu `Menus` elementu.  
+1. Jeśli definiujesz nowe menu, podmenu, menu skrótów i paski narzędzi, należy dodać `Menus` elementu `Commands` elementu. Następnie dla każdego menu, który ma zostać utworzony, Dodaj [Menu](../../extensibility/menu-element.md) elementu `Menus` elementu.  
   
-     Ustaw `guid` i `id` atrybuty `Menu` elementu, a następnie ustaw `type` atrybutu rodzaj elementu menu, które chcesz. Możesz też ustawić opcję `priority` atrybutu, aby ustanowić względne położenie menu w grupie nadrzędnej.  
+    Ustaw `guid` i `id` atrybuty `Menu` elementu, a następnie ustaw `type` atrybutu rodzaj elementu menu, które chcesz. Możesz też ustawić opcję `priority` atrybutu, aby ustanowić względne położenie menu w grupie nadrzędnej.  
   
-    > [!NOTE]
-    >  `priority` Atrybut nie ma zastosowania do pasków narzędzi i menu kontekstowego.  
+   > [!NOTE]
+   >  `priority` Atrybut nie ma zastosowania do pasków narzędzi i menu kontekstowego.  
   
-2.  Wszystkie polecenia w środowisku IDE programu Visual Studio musi być hostowany przez polecenie grup, które są bezpośrednimi elementami podrzędnymi menu i paski narzędzi. Jeśli dodajesz nowe menu i paski narzędzi do środowiska IDE programu zawierają one nowe grupy polecenia. Może również dodać grup poleceń do istniejącego menu i paski narzędzi, dzięki czemu można pogrupować poleceń.  
+2. Wszystkie polecenia w środowisku IDE programu Visual Studio musi być hostowany przez polecenie grup, które są bezpośrednimi elementami podrzędnymi menu i paski narzędzi. Jeśli dodajesz nowe menu i paski narzędzi do środowiska IDE programu zawierają one nowe grupy polecenia. Może również dodać grup poleceń do istniejącego menu i paski narzędzi, dzięki czemu można pogrupować poleceń.  
   
-     Po dodaniu nowych grup poleceń, należy najpierw utworzyć `Groups` elementu, a następnie dodać do niego [grupy](../../extensibility/group-element.md) elementu dla każdej grupy polecenia.  
+    Po dodaniu nowych grup poleceń, należy najpierw utworzyć `Groups` elementu, a następnie dodać do niego [grupy](../../extensibility/group-element.md) elementu dla każdej grupy polecenia.  
   
-     Ustaw `guid` i `id` atrybuty każdego `Group` elementu, a następnie ustaw `priority` atrybutu, aby ustanowić względne położenie grupy menu nadrzędnego. Aby uzyskać więcej informacji, zobacz [tworzenia wielokrotnego użytku, do grup przycisków](../../extensibility/creating-reusable-groups-of-buttons.md).  
+    Ustaw `guid` i `id` atrybuty każdego `Group` elementu, a następnie ustaw `priority` atrybutu, aby ustanowić względne położenie grupy menu nadrzędnego. Aby uzyskać więcej informacji, zobacz [tworzenia wielokrotnego użytku, do grup przycisków](../../extensibility/creating-reusable-groups-of-buttons.md).  
   
-3.  Jeśli dodajesz nowe polecenia do IDE, Dodaj `Buttons` elementu `Commands` elementu. Następnie dla każdego polecenia, należy dodać [przycisk](../../extensibility/button-element.md) elementu `Buttons` elementu.  
+3. Jeśli dodajesz nowe polecenia do IDE, Dodaj `Buttons` elementu `Commands` elementu. Następnie dla każdego polecenia, należy dodać [przycisk](../../extensibility/button-element.md) elementu `Buttons` elementu.  
   
-    1.  Ustaw `guid` i `id` atrybuty każdego `Button` elementu, a następnie ustaw `type` atrybutu z rodzajem przycisku. Możesz też ustawić opcję `priority` atrybutu, aby ustanowić względne położenie polecenia w grupie nadrzędnej.  
+   1. Ustaw `guid` i `id` atrybuty każdego `Button` elementu, a następnie ustaw `type` atrybutu z rodzajem przycisku. Możesz też ustawić opcję `priority` atrybutu, aby ustanowić względne położenie polecenia w grupie nadrzędnej.  
   
-        > [!NOTE]
-        >  Użyj `type="button"` polecenia standardowe menu i przycisków na paskach narzędzi.  
+      > [!NOTE]
+      >  Użyj `type="button"` polecenia standardowe menu i przycisków na paskach narzędzi.  
   
-    2.  W `Button` elementu Dodawanie [ciągi](../../extensibility/strings-element.md) element, który zawiera [ButtonText](../../extensibility/buttontext-element.md) elementu i [CommandName](../../extensibility/commandname-element.md) elementu. `ButtonText` Element udostępnia etykietę tekstową dla elementu menu lub etykietkę narzędzia dla przycisku paska narzędzi. `CommandName` Element zawiera nazwę polecenia można również użyć w poleceniu.  
+   2. W `Button` elementu Dodawanie [ciągi](../../extensibility/strings-element.md) element, który zawiera [ButtonText](../../extensibility/buttontext-element.md) elementu i [CommandName](../../extensibility/commandname-element.md) elementu. `ButtonText` Element udostępnia etykietę tekstową dla elementu menu lub etykietkę narzędzia dla przycisku paska narzędzi. `CommandName` Element zawiera nazwę polecenia można również użyć w poleceniu.  
   
-    3.  Jeśli polecenie będzie miał ikony, należy utworzyć [ikonę](../../extensibility/icon-element.md) elementu w `Button` elementu, a następnie ustaw jego `guid` i `id` atrybuty do `Bitmap` element ikony.  
+   3. Jeśli polecenie będzie miał ikony, należy utworzyć [ikonę](../../extensibility/icon-element.md) elementu w `Button` elementu, a następnie ustaw jego `guid` i `id` atrybuty do `Bitmap` element ikony.  
   
-        > [!NOTE]
-        >  Przyciski paska narzędzi muszą mieć ikon.  
+      > [!NOTE]
+      >  Przyciski paska narzędzi muszą mieć ikon.  
   
-     Aby uzyskać więcej informacji, zobacz [MenuCommands programu Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
+      Aby uzyskać więcej informacji, zobacz [MenuCommands programu Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
   
-4.  Jeśli dowolny poleceń wymagają ikony, należy dodać [mapy bitowe](../../extensibility/bitmaps-element.md) elementu `Commands` elementu. Następnie dla każdej ikony, należy dodać [mapy bitowej](../../extensibility/bitmap-element.md) elementu `Bitmaps` elementu. Jest to, gdzie możesz określić lokalizację zasób mapy bitowej. Aby uzyskać więcej informacji, zobacz [dodawanie ikon do poleceń Menu](../../extensibility/adding-icons-to-menu-commands.md).  
+4. Jeśli dowolny poleceń wymagają ikony, należy dodać [mapy bitowe](../../extensibility/bitmaps-element.md) elementu `Commands` elementu. Następnie dla każdej ikony, należy dodać [mapy bitowej](../../extensibility/bitmap-element.md) elementu `Bitmaps` elementu. Jest to, gdzie możesz określić lokalizację zasób mapy bitowej. Aby uzyskać więcej informacji, zobacz [dodawanie ikon do poleceń Menu](../../extensibility/adding-icons-to-menu-commands.md).  
   
- Możesz polegać na strukturze element nadrzędny poprawnie umieścić Większość menu, grupy i polecenia. Dla polecenia bardzo dużych zestawów lub gdy menu, grupy lub polecenia musi znajdować się w wielu miejscach, firma Microsoft zaleca, aby określić położenie polecenia.  
+   Możesz polegać na strukturze element nadrzędny poprawnie umieścić Większość menu, grupy i polecenia. Dla polecenia bardzo dużych zestawów lub gdy menu, grupy lub polecenia musi znajdować się w wielu miejscach, firma Microsoft zaleca, aby określić położenie polecenia.  
   
 ##### <a name="to-rely-on-parenting-to-place-ui-elements-in-the-ide"></a>Opierać się na element nadrzędny, aby umieścić elementy interfejsu użytkownika w środowisku IDE  
   
-1.  W przypadku typowej element nadrzędny, utworzyć `Parent` elementu w każdym `Menu`, `Group`, i `Command` element, który jest zdefiniowany w pakiecie.  
+1. W przypadku typowej element nadrzędny, utworzyć `Parent` elementu w każdym `Menu`, `Group`, i `Command` element, który jest zdefiniowany w pakiecie.  
   
-     Celem `Parent` element jest menu lub grupy, która będzie zawierać menu, grupy lub polecenia.  
+    Celem `Parent` element jest menu lub grupy, która będzie zawierać menu, grupy lub polecenia.  
   
-    1.  Ustaw `guid` atrybutu nazwy `GuidSymbol` element, który definiuje zestaw poleceń. Jeśli element docelowy nie jest częścią pakietu, należy użyć identyfikatora guid dla tego zestawu poleceń, zgodnie z definicją w odpowiedniego pliku vsct.  
+   1.  Ustaw `guid` atrybutu nazwy `GuidSymbol` element, który definiuje zestaw poleceń. Jeśli element docelowy nie jest częścią pakietu, należy użyć identyfikatora guid dla tego zestawu poleceń, zgodnie z definicją w odpowiedniego pliku vsct.  
   
-    2.  Ustaw `id` atrybutu do dopasowania `id` atrybut menu docelowego lub grupy. Aby uzyskać listę menu i grup, które są dostępne w programie Visual Studio, zobacz [identyfikatory GUID i identyfikatory Visual Studio menu](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) lub [identyfikatory GUID i identyfikatory programu Visual Studio pasków narzędzi](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).  
+   2.  Ustaw `id` atrybutu do dopasowania `id` atrybut menu docelowego lub grupy. Aby uzyskać listę menu i grup, które są dostępne w programie Visual Studio, zobacz [identyfikatory GUID i identyfikatory Visual Studio menu](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) lub [identyfikatory GUID i identyfikatory programu Visual Studio pasków narzędzi](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).  
   
- Jeśli masz dużą liczbę elementów interfejsu użytkownika można umieścić w IDE lub w przypadku elementów, które powinny się wyświetlać w wielu miejscach, zdefiniuj ich rozmieszczenia w [CommandPlacements](../../extensibility/commandplacements-element.md) elementu, jak pokazano w poniższych krokach.  
+   Jeśli masz dużą liczbę elementów interfejsu użytkownika można umieścić w IDE lub w przypadku elementów, które powinny się wyświetlać w wielu miejscach, zdefiniuj ich rozmieszczenia w [CommandPlacements](../../extensibility/commandplacements-element.md) elementu, jak pokazano w poniższych krokach.  
   
 ##### <a name="to-use-command-placement-to-place-ui-elements-in-the-ide"></a>Aby użyć położenie polecenia można umieścić elementy interfejsu użytkownika w środowisku IDE  
   
-1.  Po `Commands` elementu Dodawanie `CommandPlacements` elementu.  
+1. Po `Commands` elementu Dodawanie `CommandPlacements` elementu.  
   
-2.  W `CommandPlacements` elementu Dodawanie `CommandPlacement` elementu dla każdego menu, grupy lub polecenie, aby umieścić.  
+2. W `CommandPlacements` elementu Dodawanie `CommandPlacement` elementu dla każdego menu, grupy lub polecenie, aby umieścić.  
   
-     Każdy `CommandPlacement` element lub `Parent` element umieszcza jeden menu, grupy lub polecenia w jednym miejscu środowiska IDE. Element interfejsu użytkownika może mieć tylko jedną jednostkę nadrzędną, ale może mieć wiele angażowania polecenia. Aby umieścić element interfejsu użytkownika w wielu lokalizacjach, należy dodać `CommandPlacement` elementu dla każdej lokalizacji.  
+    Każdy `CommandPlacement` element lub `Parent` element umieszcza jeden menu, grupy lub polecenia w jednym miejscu środowiska IDE. Element interfejsu użytkownika może mieć tylko jedną jednostkę nadrzędną, ale może mieć wiele angażowania polecenia. Aby umieścić element interfejsu użytkownika w wielu lokalizacjach, należy dodać `CommandPlacement` elementu dla każdej lokalizacji.  
   
-3.  Ustaw `guid` i `id` atrybuty każdego `CommandPlacement` elementu do hostingu menu lub grupy, podobnie jak w przypadku `Parent` elementu. Można również ustawić `priority` atrybutu, aby ustanowić względne położenie elementu interfejsu użytkownika.  
+3. Ustaw `guid` i `id` atrybuty każdego `CommandPlacement` elementu do hostingu menu lub grupy, podobnie jak w przypadku `Parent` elementu. Można również ustawić `priority` atrybutu, aby ustanowić względne położenie elementu interfejsu użytkownika.  
   
- Możesz mieszać umieszczania przez element nadrzędny i położenie polecenia. Dla polecenia bardzo dużych zestawów, zalecamy użycie tylko położenie polecenia.  
+   Możesz mieszać umieszczania przez element nadrzędny i położenie polecenia. Dla polecenia bardzo dużych zestawów, zalecamy użycie tylko położenie polecenia.  
   
 ### <a name="adding-specialized-behaviors"></a>Dodawanie zachowania specjalne  
  Możesz użyć [CommandFlag](../../extensibility/command-flag-element.md) elementów, aby zmodyfikować zachowanie, menu i poleceń, na przykład, aby zmienić ich wyglądu i widoczność. Użytkownik może również wpływać na gdy polecenie jest widoczna przy użyciu [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md), lub dodawać skróty klawiaturowe przy użyciu [powiązania klawiszy](../../extensibility/keybindings-element.md). Niektóre rodzaje menu i poleceń już mieć wyspecjalizowane wbudowanych zachowań.  
   
 ##### <a name="to-add-specialized-behaviors"></a>Aby dodać zachowania specjalne  
   
-1.  Aby element interfejsu użytkownika było widoczne tylko w określonych kontekstach interfejsu użytkownika, na przykład po załadowaniu rozwiązania, użyj ograniczeń widoczność.  
+1. Aby element interfejsu użytkownika było widoczne tylko w określonych kontekstach interfejsu użytkownika, na przykład po załadowaniu rozwiązania, użyj ograniczeń widoczność.  
   
-    1.  Po `Commands` elementu Dodawanie `VisibilityConstraints` elementu.  
+   1.  Po `Commands` elementu Dodawanie `VisibilityConstraints` elementu.  
   
-    2.  Dla każdego elementu interfejsu użytkownika w celu ograniczenia Dodaj [VisibilityItem](../../extensibility/visibilityitem-element.md) elementu.  
+   2.  Dla każdego elementu interfejsu użytkownika w celu ograniczenia Dodaj [VisibilityItem](../../extensibility/visibilityitem-element.md) elementu.  
   
-    3.  Dla każdego `VisibilityItem` elementu, ustaw `guid` i `id` atrybutów, które mają menu, grupy lub polecenia, a następnie ustaw `context` atrybutu kontekstu interfejsu użytkownika, należy zgodnie z definicją w <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> klasy. Aby uzyskać więcej informacji, zobacz [VisibilityItem, Element](../../extensibility/visibilityitem-element.md).  
+   3.  Dla każdego `VisibilityItem` elementu, ustaw `guid` i `id` atrybutów, które mają menu, grupy lub polecenia, a następnie ustaw `context` atrybutu kontekstu interfejsu użytkownika, należy zgodnie z definicją w <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> klasy. Aby uzyskać więcej informacji, zobacz [VisibilityItem, Element](../../extensibility/visibilityitem-element.md).  
   
-2.  Aby ustawić widoczność i dostępność elementów interfejsu użytkownika w kodzie, należy użyć co najmniej jeden z następujących flag poleceń:  
+2. Aby ustawić widoczność i dostępność elementów interfejsu użytkownika w kodzie, należy użyć co najmniej jeden z następujących flag poleceń:  
   
-    -   DefaultDisabled  
+   - DefaultDisabled  
   
-    -   DefaultInvisible  
+   - DefaultInvisible  
   
-    -   DynamicItemStart  
+   - DynamicItemStart  
   
-    -   DynamicVisibility  
+   - DynamicVisibility  
   
-    -   NoShowOnMenuController  
+   - NoShowOnMenuController  
   
-    -   NotInTBList  
-  
-     Aby uzyskać więcej informacji, zobacz [Command Flag, Element](../../extensibility/command-flag-element.md).  
-  
-3.  Aby zmienić sposób element jest wyświetlany lub dynamicznie zmieniać jego wygląd, należy użyć co najmniej jeden z następujących flag poleceń:  
-  
-    -   AlwaysCreate  
-  
-    -   CommandWellOnly  
-  
-    -   DefaultDocked  
-  
-    -   DontCache  
-  
-    -   DynamicItemStart  
-  
-    -   FixMenuController  
-  
-    -   IconAndText  
-  
-    -   PICT  
-  
-    -   StretchHorizontally  
-  
-    -   TextMenuUseButton  
-  
-    -   TextChanges  
-  
-    -   TextOnly  
+   - NotInTBList  
   
      Aby uzyskać więcej informacji, zobacz [Command Flag, Element](../../extensibility/command-flag-element.md).  
   
-4.  Aby zmienić, jak element reaguje, gdy otrzyma poleceń, należy użyć co najmniej jeden z następujących flag poleceń:  
+3. Aby zmienić sposób element jest wyświetlany lub dynamicznie zmieniać jego wygląd, należy użyć co najmniej jeden z następujących flag poleceń:  
   
-    -   AllowParams  
+   - AlwaysCreate  
   
-    -   CaseSensitive  
+   - CommandWellOnly  
   
-    -   CommandWellOnly  
+   - DefaultDocked  
   
-    -   KlawiszeFiltru  
+   - DontCache  
   
-    -   NoAutoComplete  
+   - DynamicItemStart  
   
-    -   NoButtonCustomize  
+   - FixMenuController  
   
-    -   NoKeyCustomize  
+   - IconAndText  
   
-    -   NoToolbarClose  
+   - PICT  
   
-    -   PostExec  
+   - StretchHorizontally  
   
-    -   RouteToDocs  
+   - TextMenuUseButton  
   
-    -   TextIsAnchorCommand  
+   - TextChanges  
+  
+   - TextOnly  
   
      Aby uzyskać więcej informacji, zobacz [Command Flag, Element](../../extensibility/command-flag-element.md).  
   
-5.  Aby dołączyć skrót klawiaturowy zależnych od menu do menu lub elementu menu, Dodaj znak handlowe "i" ("&") w `ButtonText` elementu menu lub elementu menu. Znak, który następuje handlowe "i" skrót klawiaturowy aktywne po otwarciu menu nadrzędnego.  
+4. Aby zmienić, jak element reaguje, gdy otrzyma poleceń, należy użyć co najmniej jeden z następujących flag poleceń:  
   
-6.  Aby dołączyć skrót klawiaturowy niezależne od menu do polecenia, użyj [powiązania klawiszy](../../extensibility/keybindings-element.md). Aby uzyskać więcej informacji, zobacz [KeyBinding, Element](../../extensibility/keybinding-element.md).  
+   - AllowParams  
   
-7.  Aby zlokalizować tekst menu, użyj `LocCanonicalName` elementu. Aby uzyskać więcej informacji, zobacz [Strings, Element](../../extensibility/strings-element.md).  
+   - CaseSensitive  
   
- Niektóre typy menu i przycisk to specjalne zachowania. W poniższej tabeli opisano niektóre menu wyspecjalizowanych i typach przycisków. Dla innych typów, zobacz `types` atrybutu opisy w [Menu Element](../../extensibility/menu-element.md), [Button Element](../../extensibility/button-element.md), i [Combo, Element](../../extensibility/combo-element.md).  
+   - CommandWellOnly  
   
- Pole kombi  
- Pole kombi jest listy rozwijanej, która może być używany na pasku narzędzi. Aby dodać pola kombi w interfejsie użytkownika, Utwórz [Combos](../../extensibility/combos-element.md) element `Commands` elementu. Następnie dodaj do `Combos` element `Combo` elementu dla każdego pola kombi dodać. `Combo` elementy mają te same atrybuty i elementy podrzędne, jak `Button` elementy oraz mają także `DefaultWidth` i `idCommandList` atrybutów. `DefaultWidth` Atrybut Ustawia szerokość w pikselach i `idCommandList` atrybutu punktów do Identyfikatora polecenia, który jest używany do wypełnienia pola kombi. Aby uzyskać więcej informacji, zobacz `Combo` dokumentację elementu.  
+   - KlawiszeFiltru  
   
- MenuController  
- Kontroler menu jest przycisk, który zawiera strzałkę obok niej. Kliknięcie strzałki powoduje otwarcie listy. Aby dodać kontroler menu w interfejsie użytkownika, Utwórz `Menu` element i ustaw jego `type` atrybutu **MenuController** lub **MenuControllerLatched**, w zależności od żądane zachowanie. Aby wypełnić kontroler menu, należy ustawić go jako element nadrzędny `Group` elementu. Kontroler menu spowoduje wyświetlenie wszystkich elementów podrzędnych tej grupy na liście rozwijanej.  
+   - NoAutoComplete  
+  
+   - NoButtonCustomize  
+  
+   - NoKeyCustomize  
+  
+   - NoToolbarClose  
+  
+   - PostExec  
+  
+   - RouteToDocs  
+  
+   - TextIsAnchorCommand  
+  
+     Aby uzyskać więcej informacji, zobacz [Command Flag, Element](../../extensibility/command-flag-element.md).  
+  
+5. Aby dołączyć skrót klawiaturowy zależnych od menu do menu lub elementu menu, Dodaj znak handlowe "i" ("&") w `ButtonText` elementu menu lub elementu menu. Znak, który następuje handlowe "i" skrót klawiaturowy aktywne po otwarciu menu nadrzędnego.  
+  
+6. Aby dołączyć skrót klawiaturowy niezależne od menu do polecenia, użyj [powiązania klawiszy](../../extensibility/keybindings-element.md). Aby uzyskać więcej informacji, zobacz [KeyBinding, Element](../../extensibility/keybinding-element.md).  
+  
+7. Aby zlokalizować tekst menu, użyj `LocCanonicalName` elementu. Aby uzyskać więcej informacji, zobacz [Strings, Element](../../extensibility/strings-element.md).  
+  
+   Niektóre typy menu i przycisk to specjalne zachowania. W poniższej tabeli opisano niektóre menu wyspecjalizowanych i typach przycisków. Dla innych typów, zobacz `types` atrybutu opisy w [Menu Element](../../extensibility/menu-element.md), [Button Element](../../extensibility/button-element.md), i [Combo, Element](../../extensibility/combo-element.md).  
+  
+   Pole kombi  
+   Pole kombi jest listy rozwijanej, która może być używany na pasku narzędzi. Aby dodać pola kombi w interfejsie użytkownika, Utwórz [Combos](../../extensibility/combos-element.md) element `Commands` elementu. Następnie dodaj do `Combos` element `Combo` elementu dla każdego pola kombi dodać. `Combo` elementy mają te same atrybuty i elementy podrzędne, jak `Button` elementy oraz mają także `DefaultWidth` i `idCommandList` atrybutów. `DefaultWidth` Atrybut Ustawia szerokość w pikselach i `idCommandList` atrybutu punktów do Identyfikatora polecenia, który jest używany do wypełnienia pola kombi. Aby uzyskać więcej informacji, zobacz `Combo` dokumentację elementu.  
+  
+   MenuController  
+   Kontroler menu jest przycisk, który zawiera strzałkę obok niej. Kliknięcie strzałki powoduje otwarcie listy. Aby dodać kontroler menu w interfejsie użytkownika, Utwórz `Menu` element i ustaw jego `type` atrybutu **MenuController** lub **MenuControllerLatched**, w zależności od żądane zachowanie. Aby wypełnić kontroler menu, należy ustawić go jako element nadrzędny `Group` elementu. Kontroler menu spowoduje wyświetlenie wszystkich elementów podrzędnych tej grupy na liście rozwijanej.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzanie menu i poleceń](../../extensibility/extending-menus-and-commands.md)   

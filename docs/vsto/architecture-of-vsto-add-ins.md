@@ -19,25 +19,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce7024f54eccf595fefa8fa45c438bcb2d55adf3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fdde21ef6e65a741b7a9ac08bfc69de4dd1f9856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676349"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933446"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architektura dodatków narzędzi VSTO
   Dodatków narzędzi VSTO utworzony przy użyciu narzędzi Office developer tools w programie Visual Studio oferuje funkcje architektury, które podkreślić stabilność i bezpieczeństwo i umożliwia im ściśle współpracować z programem Microsoft Office. W tym temacie opisano następujące aspekty dodatków narzędzi VSTO dla programów:  
   
--   [Omówienie dodatków narzędzi VSTO](#UnderstandingAddIns)  
+- [Omówienie dodatków narzędzi VSTO](#UnderstandingAddIns)  
   
--   [Składniki dodatków narzędzi VSTO](#AddinComponents)  
+- [Składniki dodatków narzędzi VSTO](#AddinComponents)  
   
--   [Jak działają dodatków narzędzi VSTO za pomocą aplikacji Microsoft Office](#HowAddinsWork)  
+- [Jak działają dodatków narzędzi VSTO za pomocą aplikacji Microsoft Office](#HowAddinsWork)  
   
- [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
+  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- Aby uzyskać ogólne informacje o tworzeniu dodatków narzędzi VSTO dla programów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) i [wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md).  
+  Aby uzyskać ogólne informacje o tworzeniu dodatków narzędzi VSTO dla programów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) i [wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md).  
   
 ##  <a name="UnderstandingAddIns"></a> Omówienie dodatków narzędzi VSTO  
  Korzystając z narzędzia Office developer tools w programie Visual Studio do tworzenia dodatku narzędzi VSTO dla programów, możesz utworzyć zestawu kodu zarządzanego, który jest ładowany przez aplikacji pakietu Microsoft Office. Po załadowaniu zestawu dodatku narzędzi VSTO mogą reagować na zdarzenia, które są wywoływane w aplikacji (na przykład, gdy użytkownik kliknie element menu). Dodatek narzędzi VSTO dla programów można również wywołać modelu obiektów automatyzacji i rozszerzania aplikacji i może używać dowolnej klasy w [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  

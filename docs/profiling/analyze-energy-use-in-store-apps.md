@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3578573a2020dbf048e3da4e0bf44a54df07860b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 5e74ec5e1e4efe4cbdf98125aa17cb3646fbc136
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676245"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930911"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analizowanie zużycia energii w aplikacjach platformy uniwersalnej systemu Windows
 Visual Studio **zużycie energii** profiler pomaga analizować zużycie mocy i energii w aplikacjach platformy UWP na urządzeniach tablecie o niskim poziomie zasilania, które działają ciągle lub czasu na własnych bateriach. Działająca na urządzeniu zasilanym z baterii aplikacja, która zużywa zbyt dużo energii, może powodować niezadowolenia klienta, przez co klient może ją nawet odinstalować. Optymalizacja zużycia energii może zwiększyć liczbę użytkowników w Twojej aplikacji i używany przez klientów.  
@@ -35,15 +35,15 @@ Visual Studio **zużycie energii** profiler pomaga analizować zużycie mocy i e
   
  Profiler zużycie energii są używane następujące definicje *power* i *energii*:  
   
--   *Power* środki siły służy do wykonywania pracy, które odbywa się w danym okresie czasu. W naukach elektrycznych standardową jednostką mocy jest *wata*, która została zdefiniowana jako szybkość jaką praca jest wykonywana, gdy jeden ampere bieżącego przepływów za pomocą różnica potencjałów volt jeden. W **zużycia energii** wykres, jednostki są miliwaty **mW** , które są tysięczną jednego wata.  
+- *Power* środki siły służy do wykonywania pracy, które odbywa się w danym okresie czasu. W naukach elektrycznych standardową jednostką mocy jest *wata*, która została zdefiniowana jako szybkość jaką praca jest wykonywana, gdy jeden ampere bieżącego przepływów za pomocą różnica potencjałów volt jeden. W **zużycia energii** wykres, jednostki są miliwaty **mW** , które są tysięczną jednego wata.  
   
-     Należy zauważyć, że moc jest stosunkiem, więc ma kierunek (praca w danym czasie może wzrosnąć lub zmaleć) i szybkość (ilość, o jaką praca rośnie lub maleje).  
+   Należy zauważyć, że moc jest stosunkiem, więc ma kierunek (praca w danym czasie może wzrosnąć lub zmaleć) i szybkość (ilość, o jaką praca rośnie lub maleje).  
   
--   *Energii* środków łączną ilość mocy, lub możliwości, tak jak pojemność mocy baterii, lub łączna wyniósł mocy pojemnościowej czasu. Jednostką energii jest watogodzina, czyli moc jednego wata stosowana równomiernie przez jedną godzinę. W **podsumowanie energii**, jednostki są wyświetlane jako miliwatogodzinach **mwh**.  
+- *Energii* środków łączną ilość mocy, lub możliwości, tak jak pojemność mocy baterii, lub łączna wyniósł mocy pojemnościowej czasu. Jednostką energii jest watogodzina, czyli moc jednego wata stosowana równomiernie przez jedną godzinę. W **podsumowanie energii**, jednostki są wyświetlane jako miliwatogodzinach **mwh**.  
   
- ![Pojemność energii możliwości korzystać, całkowita ilość zużytej energii](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![Pojemność energii możliwości korzystać, całkowita ilość zużytej energii](../profiling/media/energyprof_capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
- Na przykład w pełni naładowana bateria w tablecie zawiera pewną ilość zmagazynowanej energii. Gdy energia jest zużywana na potrzeby wykonywania zadań, takich jak komunikacja przez sieć, obliczanie wartości czy wyświetlanie grafiki, moc z baterii jest zużywana z różną szybkością. Dla dowolnego okresu mierzone jest także łączne zużycie mocy.  
+  Na przykład w pełni naładowana bateria w tablecie zawiera pewną ilość zmagazynowanej energii. Gdy energia jest zużywana na potrzeby wykonywania zadań, takich jak komunikacja przez sieć, obliczanie wartości czy wyświetlanie grafiki, moc z baterii jest zużywana z różną szybkością. Dla dowolnego okresu mierzone jest także łączne zużycie mocy.  
   
 ## <a name="identify-scenarios-with-user-marks"></a>Identyfikowanie scenariuszy ze znacznikami użytkownika  
  Możesz dodać *znaczniki użytkownika* do danych profilowania, aby ułatwić sobie znajdowanie obszarów na linijce osi czasu.  
@@ -59,8 +59,8 @@ Visual Studio **zużycie energii** profiler pomaga analizować zużycie mocy i e
  Gdy jest wykonywana metoda, znacznik użytkownika jest dodawany do danych profilowania wraz z komunikatem.  
   
 > [!NOTE]
->  -   Loggingchannel w przestrzeni nazw Windows.Foundation.Diagnostics implementuje [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) interfejsu (nazywany [System.IDisposable](/dotnet/api/system.idisposable) w języku C# i VB). Aby uniknąć przecieku zasobów systemu operacyjnego, należy wywołać [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) w języku C# i VB) po zakończeniu za pomocą funkcji rejestrowania kanał.  
-> -   Każdy otwarty kanał rejestrowania musi mieć unikatową nazwę. Próba utworzenia nowego kanału rejestrowania o takiej samej nazwie, jak nazwa aktualnie otwartego kanału, powoduje wyjątek.  
+> - Loggingchannel w przestrzeni nazw Windows.Foundation.Diagnostics implementuje [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) interfejsu (nazywany [System.IDisposable](/dotnet/api/system.idisposable) w języku C# i VB). Aby uniknąć przecieku zasobów systemu operacyjnego, należy wywołać [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) ([Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel) w języku C# i VB) po zakończeniu za pomocą funkcji rejestrowania kanał.  
+>   -   Każdy otwarty kanał rejestrowania musi mieć unikatową nazwę. Próba utworzenia nowego kanału rejestrowania o takiej samej nazwie, jak nazwa aktualnie otwartego kanału, powoduje wyjątek.  
   
  Zobacz przykładową zestaw SDK Windows [przykładowe LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) przykłady.  
   
@@ -80,9 +80,9 @@ if (performance && performance.mark) {
  Aby uzyskać dobre szacunki, będziesz chciał profilować zużycie energii przez aplikację na niskim poziomie zasilania urządzeń, które jest zasilane z baterii. Ponieważ program Visual Studio nie działa na większości z tych urządzeń, należy podłączyć komputer Visual Studio do urządzenia przy użyciu narzędzia zdalne programu Visual Studio. Aby podłączyć urządzenie zdalne, należy skonfigurować zarówno projekt programu Visual Studio, jak i urządzenie zdalne. Zobacz [uruchamianie aplikacji platformy UWP na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md) Aby uzyskać więcej informacji.  
   
 > [!TIP]
->  -   Nie zaleca się profilowania energii w symulatorze platformy uniwersalnej systemu Windows lub na komputerze programu Visual Studio. Profilowanie na rzeczywistym urządzeniu umożliwia uzyskanie bardziej realistycznych danych.  
-> -   Profiluj urządzenie docelowe zasilane z baterii.  
-> -   Zamknij inne aplikacje, które mogą używać tych samych zasobów (sieci, procesora lub wyświetlacza).  
+> - Nie zaleca się profilowania energii w symulatorze platformy uniwersalnej systemu Windows lub na komputerze programu Visual Studio. Profilowanie na rzeczywistym urządzeniu umożliwia uzyskanie bardziej realistycznych danych.  
+>   -   Profiluj urządzenie docelowe zasilane z baterii.  
+>   -   Zamknij inne aplikacje, które mogą używać tych samych zasobów (sieci, procesora lub wyświetlacza).  
   
 ## <a name="collect-energy-profile-data-for-your-app"></a>Zbieranie danych profilu energetycznego aplikacji  
   
@@ -106,15 +106,15 @@ if (performance && performance.mark) {
 ## <a name="collect-energy-profile-data-for-an-installed-app"></a>Zbieranie danych profilu energetycznego zainstalowanej aplikacji  
  Narzędzie zużycia energii można uruchomić tylko w aplikacjach platformy uniwersalnej systemu Windows, które będą uruchamiane z poziomu rozwiązania programu Visual Studio lub zainstalowanych ze Microsoft Store. Gdy rozwiązanie jest otwarte w programie Visual Studio, domyślnym obiektem docelowym jest **projekt startowy**. Aby określić zainstalowaną aplikację jako obiekt docelowy:  
   
-1.  Wybierz **Zmień cel** , a następnie wybierz **zainstalowana aplikacja**.  
+1. Wybierz **Zmień cel** , a następnie wybierz **zainstalowana aplikacja**.  
   
-2.  Z **Wybierz zainstalowany pakiet aplikacji** listy, wybierz obiekt docelowy.  
+2. Z **Wybierz zainstalowany pakiet aplikacji** listy, wybierz obiekt docelowy.  
   
-3.  Wybierz **zużycie energii** na stronie Centrum diagnostyki.  
+3. Wybierz **zużycie energii** na stronie Centrum diagnostyki.  
   
-4.  Wybierz **Start** aby rozpocząć profilowanie.  
+4. Wybierz **Start** aby rozpocząć profilowanie.  
   
- Aby zatrzymać profilowanie, przełącz się do programu Visual Studio (Alt + Tab) i wybierz polecenie **Zatrzymaj Kolekcjonowanie** na stronie Centrum diagnostyki.  
+   Aby zatrzymać profilowanie, przełącz się do programu Visual Studio (Alt + Tab) i wybierz polecenie **Zatrzymaj Kolekcjonowanie** na stronie Centrum diagnostyki.  
   
 ## <a name="analyze-energy-profile-data"></a>Analizowanie danych profilu energetycznego  
  Dane profilu energetycznego są wyświetlane w oknie dokumentu programu Visual Studio:  

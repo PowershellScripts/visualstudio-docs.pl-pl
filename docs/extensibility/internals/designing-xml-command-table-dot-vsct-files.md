@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7a28e8ea14d27eb96100a4f1f67a875746dc5f6
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4e94d93d407f7499afbd43c8af2b7532ca1b4d8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934564"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Projektowanie plików (vsct) tabeli poleceń XML
 Tabeli poleceń XML (*vsct*) pliku w tym artykule opisano układ i wygląd elementów polecenia dla pakietu VSPackage. Polecenie elementy obejmują przyciski, pola kombi, menu, paski narzędzi i grup elementów polecenia. W tym artykule opisano XML pliki tabeli poleceń, jak wpływają na elementy polecenia i menu oraz jak je utworzyć.
@@ -33,37 +33,37 @@ Tabeli poleceń XML (*vsct*) pliku w tym artykule opisano układ i wygląd eleme
 ## <a name="differences-between-ctc-and-vsct-files"></a>Różnice między plikami .ctc i vsct
  Gdy znaczenie za XML tagów w *vsct* pliku są takie same jak te znaczniki w obecnie przestarzałe *.ctc* format pliku jest nieco inna ich implementacji:
 
--   Nowy  **\<extern >** tag jest, gdzie możesz odwoływać się do innych *.h* pliki, które mają być skompilowane, takie jak te pliki dla [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] paska narzędzi.
+- Nowy  **\<extern >** tag jest, gdzie możesz odwoływać się do innych *.h* pliki, które mają być skompilowane, takie jak te pliki dla [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] paska narzędzi.
 
--   Gdy *vsct* pliki pomocy technicznej **/ include** instrukcji, jako *.ctc* plików, ale także nową  **\<zaimportować >** element. Różnica polega na tym, **/ include** wiąże *wszystkie* informacji, gdy  **\<zaimportować >** wiąże tylko nazwy.
+- Gdy *vsct* pliki pomocy technicznej **/ include** instrukcji, jako *.ctc* plików, ale także nową  **\<zaimportować >** element. Różnica polega na tym, **/ include** wiąże *wszystkie* informacji, gdy  **\<zaimportować >** wiąże tylko nazwy.
 
--   Gdy *.ctc* plików wymaga pliku nagłówka, w której definiujesz swoje dyrektywy preprocesora, jedna nie jest wymagane dla *vsct* plików. Zamiast tego należy umieścić swoje dyrektywy w tabeli symboli znajduje się w  **\<Symbol >** elementów znajdujących się w dolnej części *vsct* pliku.
+- Gdy *.ctc* plików wymaga pliku nagłówka, w której definiujesz swoje dyrektywy preprocesora, jedna nie jest wymagane dla *vsct* plików. Zamiast tego należy umieścić swoje dyrektywy w tabeli symboli znajduje się w  **\<Symbol >** elementów znajdujących się w dolnej części *vsct* pliku.
 
--   *vsct* funkcji pliki  **\<adnotacja >** znacznik, który umożliwia osadzanie wszelkie informacje, które lubisz, takie jak informacje o lub nawet obrazy.
+- *vsct* funkcji pliki  **\<adnotacja >** znacznik, który umożliwia osadzanie wszelkie informacje, które lubisz, takie jak informacje o lub nawet obrazy.
 
--   Wartości są przechowywane jako atrybuty w elemencie.
+- Wartości są przechowywane jako atrybuty w elemencie.
 
--   Flag poleceń mogą być przechowywane osobno lub skumulowany.  Funkcja IntelliSense, jednak nie działa na flag skumulowany poleceń. Aby uzyskać więcej informacji na temat flag poleceń, zobacz [elementu CommandFlag](../../extensibility/command-flag-element.md).
+- Flag poleceń mogą być przechowywane osobno lub skumulowany.  Funkcja IntelliSense, jednak nie działa na flag skumulowany poleceń. Aby uzyskać więcej informacji na temat flag poleceń, zobacz [elementu CommandFlag](../../extensibility/command-flag-element.md).
 
--   Można określić wiele typów, takie jak podział listy rozwijane, combos itp.
+- Można określić wiele typów, takie jak podział listy rozwijane, combos itp.
 
--   Identyfikatory GUID nie sprawdzania poprawności.
+- Identyfikatory GUID nie sprawdzania poprawności.
 
--   Każdy element interfejsu użytkownika ma ciąg, który reprezentuje tekst, który jest wyświetlany z nim.
+- Każdy element interfejsu użytkownika ma ciąg, który reprezentuje tekst, który jest wyświetlany z nim.
 
--   Element nadrzędny jest opcjonalne. W przypadku pominięcia wartości *grupy nieznany* jest używany.
+- Element nadrzędny jest opcjonalne. W przypadku pominięcia wartości *grupy nieznany* jest używany.
 
--   *Ikonę* argument jest opcjonalny.
+- *Ikonę* argument jest opcjonalny.
 
--   Mapa bitowa sekcji: w tej sekcji jest taka sama, jak w *.ctc* pliku, z tą różnicą, że można teraz określić nazwę pliku, za pośrednictwem Href, który będzie pobierany w przez *vsct.exe* kompilatora w czasie kompilacji.
+- Mapa bitowa sekcji: w tej sekcji jest taka sama, jak w *.ctc* pliku, z tą różnicą, że można teraz określić nazwę pliku, za pośrednictwem Href, który będzie pobierany w przez *vsct.exe* kompilatora w czasie kompilacji.
 
--   ResID: Starych map bitowych zasobu, identyfikator może być używane i nadal działa tak samo, jak w *.ctc* plików.
+- ResID: Starych map bitowych zasobu, identyfikator może być używane i nadal działa tak samo, jak w *.ctc* plików.
 
--   HRef: Nową metodę, która pozwala określić nazwę pliku zasobu mapy bitowej. Przyjęto założenie, że wszystkie są używane, dzięki czemu można pominąć używanej sekcji. Kompilator wyszuka najpierw zasoby lokalne dla pliku, a następnie netto udziałów, a wszelkie zasoby zdefiniowane przez **/I** przełącznika.
+- HRef: Nową metodę, która pozwala określić nazwę pliku zasobu mapy bitowej. Przyjęto założenie, że wszystkie są używane, dzięki czemu można pominąć używanej sekcji. Kompilator wyszuka najpierw zasoby lokalne dla pliku, a następnie netto udziałów, a wszelkie zasoby zdefiniowane przez **/I** przełącznika.
 
--   Powiązanie klawiszy: Nie masz już do określenia emulator. Jeśli określono, kompilator zakłada, że edytor i emulatora są takie same.
+- Powiązanie klawiszy: Nie masz już do określenia emulator. Jeśli określono, kompilator zakłada, że edytor i emulatora są takie same.
 
--   Keychord: Keychord został porzucony. Nowy format jest *klucz1, Mod1, klucz2, Mod2*.  Można określić znak, szesnastkowo lub VK stałą.
+- Keychord: Keychord został porzucony. Nowy format jest *klucz1, Mod1, klucz2, Mod2*.  Można określić znak, szesnastkowo lub VK stałą.
        
 Nowy kompilator *vsct.exe*, kompiluje zarówno *.ctc* i *vsct* plików. Stary *ctc.exe* kompilatora, jednak nie rozpoznaje i skompilować *vsct* plików.
 

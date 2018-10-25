@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791132d94526126e8fc611b2becbb8b7545bb578
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4129839094b7f5cf9907f6b92fa11fe1847f5806
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938815"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
-Używany do określenia, czy program można zatrzymać wykonywania po osiągnięciu określonego punktu w realizacji.  
+Używany do określenia, jeśli program zatrzymać wykonywanie po osiągnięciu określonego punktu w realizacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,13 +44,13 @@ public enum enum_CANSTOP_REASON {
   
 ## <a name="members"></a>Elementy członkowskie  
  CANSTOP_ENTRYPOINT  
- Określa punkt wejścia danego programu.  
+ Określa punkt wejścia w danym programu.  
   
  CANSTOP_STEPIN  
- Określa Wkraczanie do funkcji.  
+ Określa, przechodzenie krok po kroku do funkcji.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako argument [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metodę, aby potwierdzić z sesji debugowania Menedżera (SDM), jeśli można zatrzymać po osiągnięciu punktu wejścia programu lub Wkraczanie do metody lub funkcji.  
+ Przekazywany jako argument do [getreason —](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) metodę, aby potwierdzić z sesji debugowania Manager (SDM), jeśli ma nic złego zatrzymać po osiągnięciu punktu wejścia programu, lub po przejściu do funkcji lub metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

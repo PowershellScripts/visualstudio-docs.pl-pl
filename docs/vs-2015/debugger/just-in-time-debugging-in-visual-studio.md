@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a2fdbbd98833ff43e07b17f605b6c3a105eb3efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294050"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940584"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Debugowanie just in time w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ Działania należy podjąć, gdy pojawi się programu Visual Studio Just-in-Time
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Aby włączyć lub wyłączyć Just-In-Time debugowanie  
   
-1.  Otwórz program Visual Studio. Na **narzędzia** menu, kliknij przycisk **opcje**.  
+1. Otwórz program Visual Studio. Na **narzędzia** menu, kliknij przycisk **opcje**.  
   
-2.  W **opcje** okno dialogowe, wybierz opcję **debugowanie** folderu.  
+2. W **opcje** okno dialogowe, wybierz opcję **debugowanie** folderu.  
   
-3.  W **debugowanie** folderu, wybierz **Just-In-Time** strony.  
+3. W **debugowanie** folderu, wybierz **Just-In-Time** strony.  
   
-4.  W **włączyć debugowanie just in Time tych rodzajów kodu** zaznacz lub wyczyść typy odpowiednich programów: **zarządzane**, **natywnych**, lub **skryptu**.  
+4. W **włączyć debugowanie just in Time tych rodzajów kodu** zaznacz lub wyczyść typy odpowiednich programów: **zarządzane**, **natywnych**, lub **skryptu**.  
   
-     Aby wyłączyć debugowanie po jego włączeniu Just-In-Time, musi działać z uprawnieniami administratora. Włączanie Just-In-Time debugging Ustawia klucz rejestru, a wymagane są uprawnienia administratora, aby zmienić ten klucz.  
+    Aby wyłączyć debugowanie po jego włączeniu Just-In-Time, musi działać z uprawnieniami administratora. Włączanie Just-In-Time debugging Ustawia klucz rejestru, a wymagane są uprawnienia administratora, aby zmienić ten klucz.  
   
-5.  Kliknij przycisk **OK**.  
+5. Kliknij przycisk **OK**.  
   
- Debugowanie Just In Time może być wciąż włączone, nawet jeśli program Visual Studio nie jest już zainstalowane na tym komputerze. Jeśli nie zainstalowano programu Visual Studio, nie można wyłączyć debugowanie w programie Visual Studio Just In Time **opcje** okno dialogowe. W takiej sytuacji można wyłączyć debugowanie, edytując Rejestr Windows Just In Time.  
+   Debugowanie Just In Time może być wciąż włączone, nawet jeśli program Visual Studio nie jest już zainstalowane na tym komputerze. Jeśli nie zainstalowano programu Visual Studio, nie można wyłączyć debugowanie w programie Visual Studio Just In Time **opcje** okno dialogowe. W takiej sytuacji można wyłączyć debugowanie, edytując Rejestr Windows Just In Time.  
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Aby wyłączyć debugowanie, edytując rejestr Just In Time  
   

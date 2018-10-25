@@ -20,15 +20,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9821cde6c159712ff44438b74eea0f8e01247155
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 377815adc7751841e2a2a3bb2f4dc8b51beecdea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24791827"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941285"
 ---
 # <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
-Służy do określania `DebugPropertyInfo` pól  
+Używany do określenia `DebugPropertyInfo` pola  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -64,8 +64,8 @@ enum {
  Inicjuje `pDebugProp` pola, które zawiera `IDebugProperty` interfejsu.  
   
  DBGPROP_INFO_AUTOEXPAND  
- Oznacza, że pole wartości może zawierać wartość rozwinięty automatycznie, jeśli jest dostępna dla tego typu obiektu.  
+ Oznacza, że wartość pola może zawierać wartość rozwinięte automatycznie, jeśli są dostępne dla tego typu obiektu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Struktura DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)   
- [Interfejs IDebugProperty](../../winscript/reference/idebugproperty-interface.md)
+ [IDebugProperty, interfejs](../../winscript/reference/idebugproperty-interface.md)

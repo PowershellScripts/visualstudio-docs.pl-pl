@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: b6885968385725f4aa7d991309902ca712849c8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008271"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941194"
 ---
 # <a name="outlook-object-model-overview"></a>Model obiektu Outlook ― omówienie
   Tworzenie dodatków narzędzi VSTO dla programu Microsoft Office Outlook, możesz korzystać z obiektami, które są dostarczane przez model obiektów programu Outlook. Model obiektu Outlook zawiera klasy i interfejsy, które reprezentują elementy interfejsu użytkownika. Na przykład <xref:Microsoft.Office.Interop.Outlook.Application> obiekt reprezentuje całej aplikacji, <xref:Microsoft.Office.Interop.Outlook.Folder> obiekt reprezentuje folder, który zawiera wiadomości e-mail lub innych elementów i <xref:Microsoft.Office.Interop.Outlook.MailItem> obiekt reprezentuje wiadomości e-mail.  
@@ -59,13 +59,13 @@ ms.locfileid: "40008271"
 ### <a name="application-object"></a>Obiekt aplikacji  
  <xref:Microsoft.Office.Interop.Outlook.Application> Obiekt reprezentuje aplikacji Outlook i jest obiektem najwyższego poziomu w modelu obiektów programu Outlook. Najważniejsze elementy członkowskie tego obiektu należą:  
   
--   [Createitem —](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) metodę, która służy do tworzenia nowych elementów takich jak wiadomości e-mail, zadania lub terminu.  
+- [Createitem —](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) metodę, która służy do tworzenia nowych elementów takich jak wiadomości e-mail, zadania lub terminu.  
   
--   <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> Właściwość, która umożliwia dostęp do systemu windows, które wyświetlają zawartość folderu w interfejsie użytkownika (UI) programu Outlook.  
+- <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> Właściwość, która umożliwia dostęp do systemu windows, które wyświetlają zawartość folderu w interfejsie użytkownika (UI) programu Outlook.  
   
--   <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> Właściwość, która umożliwia dostęp do systemu windows, które wyświetlają zawartość pojedynczy element, takich jak wiadomości e-mail wiadomości lub żądania spotkania.  
+- <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> Właściwość, która umożliwia dostęp do systemu windows, które wyświetlają zawartość pojedynczy element, takich jak wiadomości e-mail wiadomości lub żądania spotkania.  
   
- Aby pobrać wystąpienie obiektu <xref:Microsoft.Office.Interop.Outlook.Application> obiektu, należy użyć aplikacji zakresie `ThisAddIn` klasy w projekcie. Aby uzyskać więcej informacji, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).  
+  Aby pobrać wystąpienie obiektu <xref:Microsoft.Office.Interop.Outlook.Application> obiektu, należy użyć aplikacji zakresie `ThisAddIn` klasy w projekcie. Aby uzyskać więcej informacji, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).  
   
 > [!NOTE]  
 >  Aby uniknąć wyświetlania ostrzeżenia o zabezpieczeniach podczas korzystania z właściwości i metod, które są blokowane przez strażnik modelu obiektów programu Outlook, uzyskiwanie obiektów programu Outlook w polu aplikacji `ThisAddIn` klasy. Aby uzyskać więcej informacji, zobacz [zagadnienia dotyczące zabezpieczeń określone dla rozwiązań pakietu Office](../vsto/specific-security-considerations-for-office-solutions.md).  

@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bccb790a374e9ce6b197927760f9c3cc15d5a7eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1178fc6ff2cb5b4664930eaa70fd3de5ebed0f5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198043"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949074"
 ---
 # <a name="ltparamgt-javascript"></a>&lt;param&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,52 +44,52 @@ Określa informacje o dokumentacji dla parametru w funkcji lub metody.
   
 #### <a name="parameters"></a>Parametry  
  `name`  
- Wymagane. Nazwa parametru.  
+ Wymagana. Nazwa parametru.  
   
  `type`  
  Opcjonalna. Typ danych parametru. Typ może być jednym z następujących czynności:  
   
--   Wpisz w specyfikacji ECMAScript 5, takie jak z językiem ECMAScript `Number` i `Object`.  
+- Wpisz w specyfikacji ECMAScript 5, takie jak z językiem ECMAScript `Number` i `Object`.  
   
--   Obiekt modelu DOM, takich jak `HTMLElement`, `Window`, i `Document`.  
+- Obiekt modelu DOM, takich jak `HTMLElement`, `Window`, i `Document`.  
   
--   Funkcja konstruktora języka JavaScript.  
+- Funkcja konstruktora języka JavaScript.  
   
- `integer`  
- Opcjonalna. Jeśli `type` jest `Number`, określa, czy parametr jest liczbą całkowitą. Ustaw `true` do wskazania, że parametr jest liczbą całkowitą; w przeciwnym wypadku ustaw `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
+  `integer`  
+  Opcjonalna. Jeśli `type` jest `Number`, określa, czy parametr jest liczbą całkowitą. Ustaw `true` do wskazania, że parametr jest liczbą całkowitą; w przeciwnym wypadku ustaw `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
   
- `domElement`  
- Opcjonalna. Ten atrybut jest przestarzała; `type` atrybut mają pierwszeństwo przed tego atrybutu. Ten atrybut określa, czy parametr udokumentowanego jest DOM element. Ustaw `true` do określenia, czy parametr jest element DOM w LICZBIE; w przeciwnym wypadku ustaw `false`. Jeśli `type` atrybut nie jest ustawiony i `domElement` ustawiono `true`, IntelliSense traktuje udokumentowanego parametr jako `HTMLElement` podczas wykonywania instrukcji.  
+  `domElement`  
+  Opcjonalna. Ten atrybut jest przestarzała; `type` atrybut mają pierwszeństwo przed tego atrybutu. Ten atrybut określa, czy parametr udokumentowanego jest DOM element. Ustaw `true` do określenia, czy parametr jest element DOM w LICZBIE; w przeciwnym wypadku ustaw `false`. Jeśli `type` atrybut nie jest ustawiony i `domElement` ustawiono `true`, IntelliSense traktuje udokumentowanego parametr jako `HTMLElement` podczas wykonywania instrukcji.  
   
- `mayBeNull`  
- Opcjonalna. Określa, czy udokumentowanego parametr może być ustawiony na wartość null. Ustaw `true` aby wskazać, że parametr można ustawić na wartość null; w przeciwnym razie, należy ustawić na `false`. Wartość domyślna to `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
+  `mayBeNull`  
+  Opcjonalna. Określa, czy udokumentowanego parametr może być ustawiony na wartość null. Ustaw `true` aby wskazać, że parametr można ustawić na wartość null; w przeciwnym razie, należy ustawić na `false`. Wartość domyślna to `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
   
- `elementType`  
- Opcjonalna. Jeśli `type` jest `Array`, ten atrybut określa typ elementów w tablicy.  
+  `elementType`  
+  Opcjonalna. Jeśli `type` jest `Array`, ten atrybut określa typ elementów w tablicy.  
   
- `elementInteger`  
- Opcjonalna. Jeśli `type` jest `Array` i `elementType` jest `Number`, ten atrybut określa, czy elementy w tablicy są liczbami całkowitymi. Ustaw `true` do wskazania elementów w tablicy są liczbami całkowitymi; w przeciwnym wypadku ustaw `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
+  `elementInteger`  
+  Opcjonalna. Jeśli `type` jest `Array` i `elementType` jest `Number`, ten atrybut określa, czy elementy w tablicy są liczbami całkowitymi. Ustaw `true` do wskazania elementów w tablicy są liczbami całkowitymi; w przeciwnym wypadku ustaw `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
   
- `elementDomElement`  
- Opcjonalna. Ten atrybut jest przestarzała; `elementType` atrybut mają pierwszeństwo przed tego atrybutu. Jeśli `type` jest `Array`, ten atrybut określa, czy elementy w tablicy elementów DOM w LICZBIE. Ustaw `true` określić elementy są elementów DOM; w przeciwnym wypadku ustaw `false`. Jeśli `elementType` atrybut nie jest ustawiony i `elementDomElement` ustawiono `true`, IntelliSense traktuje każdy element w tablicy jako `HTMLElement` podczas wykonywania instrukcji.  
+  `elementDomElement`  
+  Opcjonalna. Ten atrybut jest przestarzała; `elementType` atrybut mają pierwszeństwo przed tego atrybutu. Jeśli `type` jest `Array`, ten atrybut określa, czy elementy w tablicy elementów DOM w LICZBIE. Ustaw `true` określić elementy są elementów DOM; w przeciwnym wypadku ustaw `false`. Jeśli `elementType` atrybut nie jest ustawiony i `elementDomElement` ustawiono `true`, IntelliSense traktuje każdy element w tablicy jako `HTMLElement` podczas wykonywania instrukcji.  
   
- `elementMayBeNull`  
- Opcjonalna. Jeśli `type` jest `Array`, określa, czy elementy w tablicy może być ustawiona na wartość null. Ustaw `true` aby wskazać, że elementy w tablicy można ustawić na wartość null; w przeciwnym razie, należy ustawić na `false`. Wartość domyślna to `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
+  `elementMayBeNull`  
+  Opcjonalna. Jeśli `type` jest `Array`, określa, czy elementy w tablicy może być ustawiona na wartość null. Ustaw `true` aby wskazać, że elementy w tablicy można ustawić na wartość null; w przeciwnym razie, należy ustawić na `false`. Wartość domyślna to `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
   
- `locid`  
- Opcjonalna. Identyfikator informacji o lokalizacji na temat parametru. Identyfikator jest albo identyfikatorem elementu członkowskiego albo odpowiada wartości atrybutu `name` w wiązce wiadomości zdefiniowanej przez metadane OpenAjax. Identyfikator typu zależy od formatu określonego w [ \<lokalizacja >](../ide/loc-javascript.md) elementu.  
+  `locid`  
+  Opcjonalna. Identyfikator informacji o lokalizacji na temat parametru. Identyfikator jest albo identyfikatorem elementu członkowskiego albo odpowiada wartości atrybutu `name` w wiązce wiadomości zdefiniowanej przez metadane OpenAjax. Identyfikator typu zależy od formatu określonego w [ \<lokalizacja >](../ide/loc-javascript.md) elementu.  
   
- `parameterArray`  
- Opcjonalna. Określa, czy udokumentowanego parametr można powtarzać w wywołaniu funkcji, podobnie jak powtarzające się parametry są obsługiwane w `String.format` funkcji. Ustaw `true` aby wskazać, że parametr może być powtarzane; w przeciwnym razie, należy ustawić na `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
+  `parameterArray`  
+  Opcjonalna. Określa, czy udokumentowanego parametr można powtarzać w wywołaniu funkcji, podobnie jak powtarzające się parametry są obsługiwane w `String.format` funkcji. Ustaw `true` aby wskazać, że parametr może być powtarzane; w przeciwnym razie, należy ustawić na `false`. Ten atrybut nie jest używany przez program Visual Studio zapewnienie informacji IntelliSense.  
   
- `optional`  
- Opcjonalna. Określa, czy udokumentowanego parametr jest opcjonalny w funkcji wywołującej. Ustaw `true` aby wskazać, że parametr jest opcjonalny; w przeciwnym razie, należy ustawić na `false`.  
+  `optional`  
+  Opcjonalna. Określa, czy udokumentowanego parametr jest opcjonalny w funkcji wywołującej. Ustaw `true` aby wskazać, że parametr jest opcjonalny; w przeciwnym razie, należy ustawić na `false`.  
   
- `value`  
- Opcjonalna. Określa kod, który ma zostać obliczona dla użycia przez funkcję IntelliSense zamiast sam kod funkcji. Możesz użyć tego atrybutu jest zapewnienie informacji o typie, gdy zdefiniowano typ parametru. Na przykład, można użyć `value=’1’` traktowanie typ parametru jako liczby.  
+  `value`  
+  Opcjonalna. Określa kod, który ma zostać obliczona dla użycia przez funkcję IntelliSense zamiast sam kod funkcji. Możesz użyć tego atrybutu jest zapewnienie informacji o typie, gdy zdefiniowano typ parametru. Na przykład, można użyć `value=’1’` traktowanie typ parametru jako liczby.  
   
- `description`  
- Opcjonalna. Opis parametru.  
+  `description`  
+  Opcjonalna. Opis parametru.  
   
 ## <a name="remarks"></a>Uwagi  
  Jest to jedyny atrybut wymagane `name`. Wszystkie inne atrybuty są opcjonalne.  

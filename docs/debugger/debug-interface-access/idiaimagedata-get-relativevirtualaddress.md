@@ -1,5 +1,5 @@
 ---
-title: IDiaImageData::get_relativeVirtualAddress | Dokumentacja firmy Microsoft
+title: Idiaimagedata::get_relativevirtualaddress — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2651b0ab8ee65967bba08dd415a574171759e218
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 032b4db0a69dd1aeec6b312b8506fd29d079cf0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458469"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935605"
 ---
 # <a name="idiaimagedatagetrelativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
 Pobiera lokalizację w pamięci wirtualnej modułu względem aplikacji.  
@@ -34,10 +34,10 @@ HRESULT get_relativeVirtualAddress (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca przesunięcie pamięci wirtualnej modułu.  
+ [out] Zwraca przesunięcie względne pamięci wirtualnej modułu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

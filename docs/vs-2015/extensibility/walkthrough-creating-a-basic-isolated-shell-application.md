@@ -17,12 +17,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7158dcbd55229998e49e2d2891ae46d88c7fbc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0a23acf29b0ffc3a763b34ca12e08abd5a81b5d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942574"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Wskazówki: Tworzenie podstawowej aplikacji Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ W tym instruktażu pokazano, jak utworzyć rozwiązanie izolowanej powłoki, dos
   
 #### <a name="to-customize-the-default-web-browser-home-page"></a>Aby dostosować domyślną stronę główną przeglądarki sieci Web  
   
-1.  W pliku MyVSShellStub.Application.pkgdef zmienić `DefaultHomePage` wartość elementu "http://www.microsoft.com".  
+1. W pliku MyVSShellStub.Application.pkgdef zmienić `DefaultHomePage` wartość elementu "<http://www.microsoft.com>".  
   
-2.  Ponownie skompiluj projekt MyVSShellStub.  
+2. Ponownie skompiluj projekt MyVSShellStub.  
   
-3.  Skompiluj rozwiązanie, a następnie rozpocząć debugowanie.  
+3. Skompiluj rozwiązanie, a następnie rozpocząć debugowanie.  
   
-4.  W **widok / inne Windows**, kliknij przycisk **przeglądarki sieci Web**. **Przeglądarki sieci Web** oknie zostanie wyświetlona strona główna firmy Microsoft Corporation.  
+4. W **widok / inne Windows**, kliknij przycisk **przeglądarki sieci Web**. **Przeglądarki sieci Web** oknie zostanie wyświetlona strona główna firmy Microsoft Corporation.  
   
 ## <a name="removing-the-print-command"></a>Usuwanie polecenia drukowania  
  Zawiera zestaw deklaracji w postaci pliku vsct w projekcie interfejsu użytkownika programu shell w trybie izolowanym `<Define name=No_` *elementu*`>`, gdzie *elementu* jest jednym z menu programu Visual Studio standardowe i polecenia.  
@@ -173,26 +173,26 @@ W tym instruktażu pokazano, jak utworzyć rozwiązanie izolowanej powłoki, dos
 ## <a name="deploying-the-isolated-shell-application"></a>Wdrażanie aplikacji Isolated Shell  
  Możesz wdrożyć Twojej aplikacji isolated shell na komputerze docelowym, tworząc projekt Instalatora. Należy określić te rzeczy:  
   
--   Układ foldery i pliki na komputerze docelowym.  
+- Układ foldery i pliki na komputerze docelowym.  
   
--   Warunki uruchamiania, które gwarantuje, że .NET Framework i Visual Studio powłoki środowiska uruchomieniowego są instalowane na komputerze docelowym.  
+- Warunki uruchamiania, które gwarantuje, że .NET Framework i Visual Studio powłoki środowiska uruchomieniowego są instalowane na komputerze docelowym.  
   
- W poniższej procedurze należy zainstalować InstallShield Limited Edition na komputerze.  
+  W poniższej procedurze należy zainstalować InstallShield Limited Edition na komputerze.  
   
 #### <a name="to-create-the-setup-project"></a>Aby utworzyć projekt instalacji  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania, a następnie kliknij przycisk **Dodaj nowy projekt**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł rozwiązania, a następnie kliknij przycisk **Dodaj nowy projekt**.  
   
-2.  W **nowy projekt** okna dialogowego rozwiń **inne typy projektów** , a następnie wybierz **instalacja i wdrożenie**. Wybierz szablon InstallShield. Nazwa nowego projektu `MySetup` a następnie kliknij przycisk **OK**.  
+2. W **nowy projekt** okna dialogowego rozwiń **inne typy projektów** , a następnie wybierz **instalacja i wdrożenie**. Wybierz szablon InstallShield. Nazwa nowego projektu `MySetup` a następnie kliknij przycisk **OK**.  
   
-3.  Jeśli InstallShield Limited Edition jest już zainstalowany, przejdź do następnego kroku.  
+3. Jeśli InstallShield Limited Edition jest już zainstalowany, przejdź do następnego kroku.  
   
-     Jeśli nie zainstalowano jeszcze programu InstallShield Limited Edition, zostanie wyświetlona strona pobierania programu InstallShield. Postępuj zgodnie z instrukcjami, aby pobrać i zainstalować produkt, wybierając wersję InstallShield, który jest zgodny z wersją programu Visual Studio. Należy określić, czy można zarejestrować instalacji programu InstallShield lub użyć go w wersji ewaluacyjnej. Po zakończeniu instalacji należy ponownie uruchomić program Visual Studio.  
+    Jeśli nie zainstalowano jeszcze programu InstallShield Limited Edition, zostanie wyświetlona strona pobierania programu InstallShield. Postępuj zgodnie z instrukcjami, aby pobrać i zainstalować produkt, wybierając wersję InstallShield, który jest zgodny z wersją programu Visual Studio. Należy określić, czy można zarejestrować instalacji programu InstallShield lub użyć go w wersji ewaluacyjnej. Po zakończeniu instalacji należy ponownie uruchomić program Visual Studio.  
   
-    > [!IMPORTANT]
-    >  Przed utworzeniem projektu InstallShield, należy uruchomić program Visual Studio jako administrator. Jeśli nie zrobisz, zostanie wyświetlony błąd, podczas kompilowania projektu.  
+   > [!IMPORTANT]
+   >  Przed utworzeniem projektu InstallShield, należy uruchomić program Visual Studio jako administrator. Jeśli nie zrobisz, zostanie wyświetlony błąd, podczas kompilowania projektu.  
   
- Następne kroki pokazują, jak skonfigurować projekt Instalatora.  
+   Następne kroki pokazują, jak skonfigurować projekt Instalatora.  
   
 > [!IMPORTANT]
 >  Upewnij się, czy został wcześniej utworzony konfiguracji wydania projektu izolowanej powłoki co najmniej raz przed rozpoczęciem konfigurowania projektu Instalatora.  

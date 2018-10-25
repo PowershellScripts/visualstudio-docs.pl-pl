@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f39ff75eaa6efe0d71d884fd5d6d76f65e5dad50
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3a5d07e4267291e30f85b1b16b49213ab119cd1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380204"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932354"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Porady: powiększanie obszaru wykresu w wynikach testów obciążenia
 
@@ -94,15 +94,15 @@ Po zakończeniu testu obciążeniowego umożliwia powiększenie paski powiększy
 
 ### <a name="to-zoom-to-a-region-of-the-graph-by-choosing-and-dragging"></a>Aby powiększyć do obszaru wykresu, wybierając i przeciągając
 
-1.  Wybierz wykres na jednym końcu obszaru powiększenia.
+1. Wybierz wykres na jednym końcu obszaru powiększenia.
 
-2.  Przeciągnij kursor na końcu w obszarze powiększenia.
+2. Przeciągnij kursor na końcu w obszarze powiększenia.
 
-3.  Zwolnij przycisk myszy.
+3. Zwolnij przycisk myszy.
 
-     To zwiększa obszar zdefiniowany przez wybranie i przeciągając.
+    To zwiększa obszar zdefiniowany przez wybranie i przeciągając.
 
- Poniższa procedura opisuje sposób szybko pomniejszyć bez konieczności dostosować zakończenia pasek powiększenia.
+   Poniższa procedura opisuje sposób szybko pomniejszyć bez konieczności dostosować zakończenia pasek powiększenia.
 
 ### <a name="to-zoom-out"></a>Aby pomniejszyć
 

@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d080945edc13d0f4542fdd9c981037af108325c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220723"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949438"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,47 +53,47 @@ ms.locfileid: "49220723"
  **Pokaż ustawienia dla**  
  Wyświetla listę wszystkich elementów interfejsu użytkownika, dla których można zmienić czcionkę i kolor schematów. Po wybraniu elementu z tej listy można dostosować ustawienia kolorów dla elementu zaznaczonego w **wyświetlania elementów**.  
   
--   **Edytor tekstu**  
+- **Edytor tekstu**  
   
-     Zmiany styl czcionki, rozmiaru i koloru ustawienia wyświetlania do edytora tekstów wpływają na wygląd tekstu w edytorze tekstu domyślnego. Te ustawienia nie wpłynie dokumentów otwartych w edytorze tekstów poza IDE.  
+   Zmiany styl czcionki, rozmiaru i koloru ustawienia wyświetlania do edytora tekstów wpływają na wygląd tekstu w edytorze tekstu domyślnego. Te ustawienia nie wpłynie dokumentów otwartych w edytorze tekstów poza IDE.  
   
--   **Drukarki**  
+- **Drukarki**  
   
-     Zmiany styl czcionki, rozmiaru i wyświetlania kolorów dla drukarki na wygląd tekstu w dokumentach.  
+   Zmiany styl czcionki, rozmiaru i wyświetlania kolorów dla drukarki na wygląd tekstu w dokumentach.  
   
-    > [!NOTE]
-    >  W razie potrzeby można wybrać czcionkę różne domyślne związane z drukowaniem niż ten używany do wyświetlania w edytorze tekstów. Może to być przydatne podczas drukowania kodu, który zawiera znaków jednobajtowych i dwubajtowych.  
+  > [!NOTE]
+  >  W razie potrzeby można wybrać czcionkę różne domyślne związane z drukowaniem niż ten używany do wyświetlania w edytorze tekstów. Może to być przydatne podczas drukowania kodu, który zawiera znaków jednobajtowych i dwubajtowych.  
   
--   **Uzupełnianie instrukcji**  
+- **Uzupełnianie instrukcji**  
   
-     Zmienia styl i rozmiar czcionki dla tekstu, który pojawia się w uzupełniania wyskakujących w edytorze.  
+   Zmienia styl i rozmiar czcionki dla tekstu, który pojawia się w uzupełniania wyskakujących w edytorze.  
   
--   **Etykietki narzędzi edytora**  
+- **Etykietki narzędzi edytora**  
   
-     Zmienia styl i rozmiar czcionki dla tekstu wyświetlanego w etykietkach narzędzi jest wyświetlany w edytorze.  
+   Zmienia styl i rozmiar czcionki dla tekstu wyświetlanego w etykietkach narzędzi jest wyświetlany w edytorze.  
   
--   **Czcionka środowiska**  
+- **Czcionka środowiska**  
   
-     Zmienia styl czcionki i rozmiar wszystkie elementy interfejsu użytkownika IDE, które nie mają już osobną opcją w **Pokaż ustawienia dla.** Na przykład, ta opcja ma zastosowanie do **strona startowa** , ale nie wpłynie niekorzystnie **dane wyjściowe** okna.  
+   Zmienia styl czcionki i rozmiar wszystkie elementy interfejsu użytkownika IDE, które nie mają już osobną opcją w **Pokaż ustawienia dla.** Na przykład, ta opcja ma zastosowanie do **strona startowa** , ale nie wpłynie niekorzystnie **dane wyjściowe** okna.  
   
--   **[Wszystkie tekstowe narzędzie Windows]**  
+- **[Wszystkie tekstowe narzędzie Windows]**  
   
-     Zmiany styl czcionki, rozmiaru i koloru ustawienia wyświetlania na ten element wpływ wygląd tekstu w oknach narzędzi, których okienka danych wyjściowych w środowisku IDE. Na przykład okno danych wyjściowych, okno polecenia, okno bezpośrednie itp.  
+   Zmiany styl czcionki, rozmiaru i koloru ustawienia wyświetlania na ten element wpływ wygląd tekstu w oknach narzędzi, których okienka danych wyjściowych w środowisku IDE. Na przykład okno danych wyjściowych, okno polecenia, okno bezpośrednie itp.  
   
-    > [!NOTE]
-    >  Zmiany w tekście z **[wszystkie tekstowe narzędzie Windows]** elementy zostaną wprowadzone podczas sesji, w której należy. Możesz ocenić takie zmiany, otwierając innego wystąpienia programu Visual Studio.  
+  > [!NOTE]
+  >  Zmiany w tekście z **[wszystkie tekstowe narzędzie Windows]** elementy zostaną wprowadzone podczas sesji, w której należy. Możesz ocenić takie zmiany, otwierając innego wystąpienia programu Visual Studio.  
   
- **Użyj wartości domyślnych**  
- Powoduje zresetowanie wartości czcionkę i kolor elementu listy, który wybrano w **Pokaż ustawienia dla**. **Użyj** przycisk jest wyświetlany, gdy do wyboru dostępne są inne systemy wyświetlania. Na przykład można wybierać spośród dwóch systemów dla drukarki.  
+  **Użyj wartości domyślnych**  
+  Powoduje zresetowanie wartości czcionkę i kolor elementu listy, który wybrano w **Pokaż ustawienia dla**. **Użyj** przycisk jest wyświetlany, gdy do wyboru dostępne są inne systemy wyświetlania. Na przykład można wybierać spośród dwóch systemów dla drukarki.  
   
- **Czcionka (Pogrubienie oznacza czcionki o stałej szerokości)**  
- Wyświetla listę wszystkich czcionek, które są zainstalowane w systemie. Kiedy menu rozwijane po raz pierwszy występuje, bieżącą czcionkę dla elementu wybranego w **Pokaż ustawienia dla** pola zostanie wyróżniona. Naprawiono czcionki — które są łatwiejsze do wyrównania w edytorze — są wyświetlane pogrubioną czcionką.  
+  **Czcionka (Pogrubienie oznacza czcionki o stałej szerokości)**  
+  Wyświetla listę wszystkich czcionek, które są zainstalowane w systemie. Kiedy menu rozwijane po raz pierwszy występuje, bieżącą czcionkę dla elementu wybranego w **Pokaż ustawienia dla** pola zostanie wyróżniona. Naprawiono czcionki — które są łatwiejsze do wyrównania w edytorze — są wyświetlane pogrubioną czcionką.  
   
- **Rozmiar**  
- Listy dostępnych punktów rozmiarów wyróżnione czcionki. Zmiana rozmiaru czcionki wpływa na wszystkie **wyświetlania elementów** dla **Pokaż ustawienia dla** zaznaczenia.  
+  **Rozmiar**  
+  Listy dostępnych punktów rozmiarów wyróżnione czcionki. Zmiana rozmiaru czcionki wpływa na wszystkie **wyświetlania elementów** dla **Pokaż ustawienia dla** zaznaczenia.  
   
- **Wyświetl elementy**  
- Wyświetla listę elementów, dla których można zmodyfikować kolor pierwszego planu i tła.  
+  **Wyświetl elementy**  
+  Wyświetla listę elementów, dla których można zmodyfikować kolor pierwszego planu i tła.  
   
 > [!NOTE]
 >  **Zwykły tekst** elementu wyświetlana domyślna. W efekcie właściwości przypisane do **PlainText** zostaną zastąpione przez właściwości, przypisane do innych elementów wyświetlana. Na przykład, jeśli przypisujesz kolor niebieski na **PlainText** i kolor na zielony do **identyfikator**, wszystkie identyfikatory będą wyświetlane w kolorze zielonym. W tym przykładzie **identyfikator** zastąpienie właściwości **PlainText** właściwości.  

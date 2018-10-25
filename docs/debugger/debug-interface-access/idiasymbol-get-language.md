@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_language | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_language — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b7797e4b6eb2aa35f13350580b110c757d7a5db
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1b214e16538ba6447ce97ed6569bfbb580cf222e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465099"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935877"
 ---
 # <a name="idiasymbolgetlanguage"></a>IDiaSymbol::get_language
 Pobiera języka źródłowego.  
@@ -34,14 +34,14 @@ HRESULT get_language (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca wartość z zakresu od [cv_cfl_lang — wyliczenie](../../debugger/debug-interface-access/cv-cfl-lang.md) wyliczenia, który określa języka źródłowego.  
+ [out] Zwraca wartość z zakresu od [cv_cfl_lang — wyliczenie](../../debugger/debug-interface-access/cv-cfl-lang.md) wyliczenie, które określa języka źródłowego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [Cv_cfl_lang — wyliczenie](../../debugger/debug-interface-access/cv-cfl-lang.md)
+ [CV_CFL_LANG, wyliczenie](../../debugger/debug-interface-access/cv-cfl-lang.md)

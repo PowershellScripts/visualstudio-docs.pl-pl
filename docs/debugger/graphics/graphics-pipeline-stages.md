@@ -12,119 +12,119 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c708320442c32158ef193ccf7f08669882135d82
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: da74af0f77586e518365fa669c84309e7751b319
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941564"
 ---
 # <a name="graphics-pipeline-stages"></a>Etapy potoku grafiki
-W oknie etapy potoku grafiki pomaga zrozumieć, jak wywołanie rysowania poszczególnych jest przekształcana przez każdy etap potoku grafiki Direct3D.  
+W oknie etapy potoku grafiki pomaga zrozumieć, jak wywołanie rysowania poszczególnych jest przekształcana w każdym etapie potoku grafiki Direct3D.  
   
- Jest to oknie etapy potoku:  
+ Jest to w oknie etapy potoku:  
   
  ![Obiekt 3D przechodzi przez kolejne etapy potoku.](media/gfx_diag_demo_pipeline_stages_orientation.png)
   
-## <a name="understanding-the-graphics-pipeline-stages-window"></a>Opis oknie etapy potoku grafiki  
- Oknie etapy potoku wizualizuje wynik każdego etapu w potoku grafiki osobno dla każdego wywołania rysowania. Zwykle wyniki etapy środku potoku są ukryte, co utrudnia stwierdzić, gdzie rozpoczynają się problem podczas renderowania. Przez wizualizacja osobno na każdym z etapów, oknie etapy potoku ułatwia Zobacz, w którym rozpoczyna się problem — na przykład łatwo widoczny podczas etapu programu do cieniowania wierzchołków nieoczekiwanie powoduje, że obiekt jest narysowanie ekranem.  
+## <a name="understanding-the-graphics-pipeline-stages-window"></a>Opis w oknie etapy potoku grafiki  
+ W oknie etapy potoku wizualizuje wynik każdego etapu potoku grafiki oddzielnie dla każdego wywołania rysowania. Zazwyczaj wyniki etapów w trakcie wykonywania potoku są ukryte, co utrudnia powiedzieć, którym jest uruchomiony z problemem renderowania. Dzięki wizualizowaniu osobno każdy z etapów, w oknie etapy potoku można łatwo zobaczyć, gdzie rozpoczyna się problem — na przykład, można łatwo zobaczyć, kiedy etapu programu do cieniowania wierzchołków nieoczekiwanie powoduje, że obiektu do narysowania ekranem.  
   
- Po wyłaniają etap, w którym występuje problem, można narzędzia Analizator grafiki sprawdzić jak interpretować lub przekształcone dane. Problemy z renderowaniem, które są widoczne w etapy potoku są często wierzchołków związanych z niepoprawny format deskryptory, programów do cieniowania buggy lub stan nieprawidłowo skonfigurowane.  
+ Po zidentyfikowaniu etapu, w której występuje ten problem, można użyć innych narzędzi Analizator grafiki do sprawdzenia, jak interpretować lub przekształcone dane. Problemy z renderowaniem, które pojawiają się na etapy potoku są często deskryptory format powiązane niepoprawne wierzchołka, programy pracowały programu do cieniowania lub nieprawidłowo stanu.  
   
 ### <a name="links-to-related-graphics-objects"></a>Linki do powiązanych grafikach obiektów  
- Czasami dodatkowy kontekst jest wymagany do ustalenia, dlaczego wywołanie rysowania wchodzi w interakcję w określony sposób z potoku grafiki. Aby ułatwić znajdowanie ten dodatkowy kontekst, łącza oknie etapy potoku grafiki do co najmniej jednego obiektu, które zapewniają dodatkowy kontekst związane z tym, co się dzieje w potoku grafiki.  
+ Aby ustalić, dlaczego wywołanie rysowania wchodzi w interakcje w sposób przy użyciu potoku grafiki potrzebna jest czasami dodatkowy kontekst. Aby ułatwić znajdowanie ten dodatkowy kontekst, łącza okna etapy potoku grafiki, aby jeden lub więcej obiektów, które zapewniają dodatkowy kontekst związane z tym, co się dzieje w potoku grafiki.  
   
--   W Direct3D 12 ten obiekt jest zwykle listę poleceń.  
+- W Direct3D 12 ten obiekt jest zwykle listę poleceń.  
   
--   Programu Direct3D 11 ten obiekt jest zwykle kontekstu urządzenia grafiki.  
+- W interfejsie Direct3D 11 ten obiekt jest zwykle kontekstu urządzenia grafiki.  
   
- Łącza te są częścią bieżącego podpis zdarzeń grafiki, który znajduje się w lewym górnym rogu oknie etapy potoku grafiki. Wykonaj jedną z poniższych linków, aby sprawdzić dodatkowe szczegółowe informacje o obiekcie.  
+  Te linki stanowią część bieżącego podpis zdarzenia grafiki, który znajduje się w lewym górnym rogu okna etapy potoku grafiki. Wykonaj jedną z poniższych linków, aby sprawdzić szczegółowe informacje o obiekcie.  
   
 ### <a name="viewing-and-debugging-shader-code"></a>Wyświetlanie i debugowanie kodu programu do cieniowania  
- Możesz sprawdzić i debugowania kodu dla wierzchołków, powłoki, domeny, programów do cieniowania geometrycznego i pikseli za pomocą formantów w dolnej części ich odpowiednich etapach w oknie etapy potoku.  
+ Można zbadać i debugowania kodu dla wierzchołków, kadłuba, domeny, programów do cieniowania geometrii i piksela za pomocą kontrolek na dole ich odpowiednich etapów w oknie etapy potoku.  
   
-#### <a name="to-view-a-shaders-source-code"></a>Aby wyświetlić kod źródłowy programu do cieniowania  
+#### <a name="to-view-a-shaders-source-code"></a>Aby wyświetlić kod źródłowy modułu cieniującego  
   
--   W **etapy potoku grafiki** okna, zlokalizuj etapu programu do cieniowania, który odpowiada programu do cieniowania do sprawdzenia. Następnie poniżej obrazu podglądu kliknij link tytuł etapu programu do cieniowania — na przykład, kliknij link **obj:30 programu do cieniowania wierzchołków** Aby wyświetlić kod źródłowy programu do cieniowania wierzchołków.  
+-   W **etapy potoku grafiki** oknie Znajdź etapu programu do cieniowania, który odnosi się do programu do cieniowania do sprawdzenia. Następnie poniżej obrazu podglądu wykonaj link tytułu etapu programu do cieniowania — na przykład, kliknij link **obj:30 program do cieniowania wierzchołków** Aby wyświetlić kod źródłowy modułu cieniującego wierzchołek.  
   
     > [!TIP]
-    >  Liczba obiektów **obj:30**, identyfikuje to cieniowanie w interfejsie analizatora grafiki takich jak obiekt tabeli i piksela okno Historia.  
+    >  Liczba obiektów **obj:30**, identyfikuje ten program do cieniowania w całym interfejsu analizatora grafiki przykład w oknie historii tabeli i piksela obiektu.  
   
 #### <a name="to-debug-a-shader"></a>Do debugowania cieniowania  
   
--   W **etapy potoku grafiki** okna, zlokalizuj etapu programu do cieniowania, który odpowiada programu do cieniowania chcesz debugować. Następnie poniżej podglądu, wybierz **Rozpocznij debugowanie**. Ten punkt wejścia do wartości domyślnych debuger HLSL dla pierwszego wywołania funkcji programu do cieniowania dla odpowiedniego etapu, oznacza to, pierwszy pikseli, wierzchołków lub typów pierwotnych przetwarzanego przez programu do cieniowania podczas tego wywołania rysowania. Wywołania tego programu do cieniowania pikseli lub wierzchołek jest możliwy za pośrednictwem **Historia pikseli grafiki**.  
+-   W **etapy potoku grafiki** oknie Znajdź etapu programu do cieniowania, który odnosi się do programu do cieniowania chcesz debugować. Następnie poniżej obrazu (wersja zapoznawcza) wybierz **Rozpocznij debugowanie**. Ten punkt wejścia do debugera HLSL ustawienia domyślne pierwsze wywołanie modułu cieniującego dla odpowiedniego etapu, czyli pierwszy pikseli, wierzchołków lub podstawowego, który jest przetwarzany przez moduł cieniujący podczas tego wywołania rysowania. Wywołania tego programu do cieniowania pikseli lub wierzchołka jest możliwy za pośrednictwem **Historia pikseli grafiki**.  
   
 ### <a name="the-pipeline-stages"></a>Etapy potoku  
- W oknie etapy potoku wizualizuje tylko etapy potoku, które były aktywne podczas wywołania rysunku. Każdy etap potoku grafiki przekształca danych wejściowych z poprzedniego etapu i przekazuje jego wynik do kolejnego etapu. Podczas pierwszego etap — asemblera wejściowego — pobiera indeks i wierzchołków dane z aplikacji jako dane wejściowe; ostatni etap — połączenie danych wyjściowych — łączy nowo renderowane pikseli wraz z bieżącą zawartość obiektu lub elementem docelowym renderowania jako dane wyjściowe, aby utworzyć obraz końcowy zostanie wyświetlony na ekranie.  
+ W oknie etapy potoku wizualizuje tylko etapy potoku, które były aktywne podczas wywołania rysowania. Każdy etap potoku grafiki przekształca dane wejściowe z poprzedniego etapu i przekazuje jego wynik do kolejnego etapu. Podczas pierwszego etapu — asemblera wejściowego — indeks i wierzchołka dane z aplikacji jako dane wejściowe; ostatni etap — scalanie danych wyjściowych — łączy w sobie nowo renderowane pikseli wraz z bieżącą zawartość obiektu lub obiekt docelowy renderowania jako dane wyjściowe, aby wygenerować ostateczny obraz zostanie wyświetlony na ekranie.  
   
 > [!NOTE]
->  Programów do cieniowania obliczeniowe są nieobsługiwane w **etapy potoku grafiki** okna.  
+>  Obliczających programów cieniujących nie są obsługiwane w **etapy potoku grafiki** okna.  
   
- **Asemblera wejściowego**  
- Asembler danych wejściowych odczytuje dane indeksu i wierzchołka określony przez aplikację i składana go dla sprzętu grafiki.  
+ **Asembler wejściowy**  
+ Asembler dane wejściowe odczytuje dane indeksu i wierzchołka, określony przez aplikację i składa się ona do sprzętu graficznego.  
   
- W oknie etapy potoku jako model szkielet wizualizacji wynik zestawów danych wejściowych. Aby móc bliższe spojrzenie na wynik, wybierz **asemblera danych wejściowych** w **etapy potoku grafiki** okna, aby wyświetlić złożony wierzchołków w pełnej 3D za pomocą edytora modelu.  
+ W oknie etapy potoku wyjściowy asemblera dane wejściowe są wizualizowane jako model szkielet. Aby Przyjrzyj się bliżej wynik, wybierz pozycję **asemblera dane wejściowe** w **etapy potoku grafiki** przeglądać zmontowanych wierzchołków w pełnej 3D za pomocą edytora modelu.  
   
 > [!NOTE]
->  Jeśli `POSITION` semantycznego nie jest obecny w danych wyjściowych asemblera wejściowego, a następnie nie będą wyświetlane żadne w **asemblera wejściowego** etapu.  
+>  Jeśli `POSITION` semantycznego nie jest obecny w danych wyjściowych asemblera wejściowego, a następnie będą wyświetlane żadne informacje w **asemblera wejściowego** etapu.  
   
  **Program do cieniowania wierzchołków**  
- Etapu programu do cieniowania wierzchołków przetwarza wierzchołków zwykle wykonywania operacji, takich jak przekształcania ujęć i oświetlenia. Programów do cieniowania wierzchołków utworzyć taką samą liczbę wierzchołków, których one przyjmuje jako dane wejściowe.  
+ Etapu programu do cieniowania wierzchołków przetwarza wierzchołków, zwykle wykonywanie operacji, takich jak przekształcenie, powłoka i oświetlenia. Programów do cieniowania wierzchołków utworzyć taką samą liczbę wierzchołków, których one przyjmuje jako dane wejściowe.  
   
- W oknie etapy potoku jako obraz szkielet wizualizacji danych wyjściowych programu do cieniowania wierzchołków. Aby móc bliższe spojrzenie na wynik, wybierz **programu do cieniowania wierzchołków** w **etapy potoku grafiki** systemu windows, aby wyświetlić przetworzonych wierzchołki edytor obrazów.  
+ W oknie etapy potoku dane wyjściowe programu do cieniowania wierzchołków są wizualizowane jako obraz szkielet. Aby Przyjrzyj się bliżej wynik, wybierz pozycję **program do cieniowania wierzchołków** w **etapy potoku grafiki** systemu windows, aby wyświetlić przetworzonych wierzchołków w edytorze obrazu.  
   
 > [!NOTE]
->  Jeśli `POSITION` lub `SV_POSITION` semantyki nie występują w danych wyjściowych programu do cieniowania wierzchołków, a następnie nie będą wyświetlane żadne w **programu do cieniowania wierzchołków** etapu.  
+>  Jeśli `POSITION` lub `SV_POSITION` semantyki nie są obecne w danych wyjściowych programu do cieniowania wierzchołków, a następnie będą wyświetlane żadne informacje w **program do cieniowania wierzchołków** etapu.  
   
- **Program do cieniowania powłoki są** (Direct3D 11 i Direct3D 12 tylko)  
- Procesy etapu programu do cieniowania powłoki są kontrolować punktów definiujące powierzchni znaczącymi bitami, takich jak linii, trójkąt lub quad. Jako dane wyjściowe tworzy poprawki geometrii wyższego rzędu i stałych poprawki, które są przekazywane do etapu tworzenia mozaiki stałej funkcji.  
+ **Moduł cieniujący kadłuba** (Direct3D 11 i Direct3D 12 tylko)  
+ Procesy etapu programu do cieniowania powłoki kontrolować punkty, które definiują powierzchni niskiego rzędu, takich jak linii, trójkąt lub cztery. Jako dane wyjściowe generuje poprawki geometrii wyższego rzędu i stałe poprawki, które są przekazywane do etapu tworzenia mozaiki stałej funkcji.  
   
- W oknie etapy potoku nie wizualizacji etapu programu do cieniowania powłoki.  
+ Etapu programu do cieniowania powłoki nie są wizualizowane w oknie etapy potoku.  
   
  **Etap tessellator** (Direct3D 11 i Direct3D 12 tylko)  
- Etap tessellator to jednostki sprzętu fixed — funkcja (nieprzewidywalnych), która przetwarza wstępnie domeny reprezentowany przez dane wyjściowe programu do cieniowania powłoki. Jako dane wyjściowe, tworzy wzorca próbkowania domeny i zestaw elementów podstawowych mniejszych — punkty, linii, trójkąty — które łączyć te przykłady.  
+ Na etapie tessellator jest jednostka sprzętu fixed — funkcja (nieprzewidywalnych), który wstępnie przetwarza domeny reprezentowany przez dane wyjściowe programu do cieniowania powłoki. Jako dane wyjściowe, tworzy wzorzec próbkowania, domeny i zestawu mniejszych elementów podstawowych — punkty, linii, trójkąty — połączone z tych przykładów.  
   
- Na etapie tessellator nie wizualizacji w oknie etapy potoku.  
+ Na etapie tessellator nie są wizualizowane w oknie etapy potoku.  
   
- **Domeny programu do cieniowania** (Direct3D 11 i Direct3D 12 tylko)  
- Etapu programu do cieniowania domeny przetwarza geometrii wyższego rzędu poprawki z cieniowania powłoki współczynniki mozaikowania razem z etap tworzenia mozaiki. Tworzenia mozaiki, może być czynniki tessellator wejściowych czynniki jak również output czynników. Jako dane wyjściowe jest obliczana położenia wierzchołka punktu poprawki dane wyjściowe, zgodnie z tessellator czynników.  
+ **Program do cieniowania domeny** (Direct3D 11 i Direct3D 12 tylko)  
+ Etapu programu do cieniowania domeny przetwarza geometrii wyższego rzędu poprawki z moduł cieniujący kadłuba współczynniki mozaikowania razem z etapu tworzenia mozaiki. Mozaikowania, które czynniki mogą być tessellator czynniki wejściowe także dane wyjściowe czynników. Jako dane wyjściowe jest ona obliczana położenie wierzchołka punkcie poprawki dane wyjściowe, zgodnie z czynniki tessellator.  
   
- W oknie etapy potoku nie wizualizacji etapu programu do cieniowania domeny.  
+ Etapu programu do cieniowania domeny nie są wizualizowane w oknie etapy potoku.  
   
- **Cieniowania geometrycznego**  
- Etapu programu do cieniowania geometrycznego przetwarza cały podstawowych — punkty, linie lub trójkąty — wraz z danymi wierzchołków opcjonalne dla krawędzi sąsiadujących elementów podstawowych. W odróżnieniu od programów do cieniowania wierzchołków programów do cieniowania geometrycznego można utworzyć więcej lub mniej elementów podstawowych nie podejmują jako danych wejściowych.  
+ **Program do cieniowania geometrii**  
+ Etapu programu do cieniowania geometrii przetwarza całego podstawowych — punkty, linie lub trójkąty — wraz z danymi wierzchołek opcjonalne dla krawędzi sąsiadujących elementów podstawowych. Inaczej niż w przypadku programów do cieniowania wierzchołków programów do cieniowania geometrii może wygenerować więcej lub mniej elementów podstawowych nie przyjmują jako dane wejściowe.  
   
- W oknie etapy potoku dane wyjściowe programu do cieniowania geometrycznego wizualizacji jako obraz szkielet. Aby móc bliższe spojrzenie na wynik, wybierz **cieniowania geometrycznego** w **etapy potoku grafiki** okna, aby wyświetlić podstawowych przetworzonych w edytorze obrazów.  
+ W oknie etapy potoku dane wyjściowe programu do cieniowania geometrii są wizualizowane jako obraz szkielet. Aby Przyjrzyj się bliżej wynik, wybierz pozycję **cieniowania geometrycznego** w **etapy potoku grafiki** okna, aby wyświetlić w edytorze obrazu przetworzonej podstawowych.  
   
- **Strumień wyjściowy etap**  
- Etap strumienia wyjściowego można przechwytywać przekształcone w nim elementów podstawowych przed rasteryzacji i zapisać je w pamięci; z tego miejsca dane mogą być ponownie skierowany jako dane wejściowe do wcześniejszych etapy potoku grafiki lub odczytywane przez procesor CPU.  
+ **Stream dane wyjściowe etapu**  
+ Na etapie dane wyjściowe strumienia może przechwytywać przekształcone w nim elementów podstawowych, przed rasteryzacji i zapisanie ich do pamięci. stamtąd dane mogą być ponownie skierowany jako dane wejściowe do wcześniejszych etapach potoku grafiki lub odczytywane przez procesor CPU.  
   
- W oknie etapy potoku nie wizualizacji fazie strumienia wyjściowego.  
+ Na etapie dane wyjściowe strumienia nie są wizualizowane w oknie etapy potoku.  
   
- **Etap rasteryzator**  
- Etap rasteryzator jest jednostką sprzętu (nieprzewidywalnych) fixed — Funkcja konwertująca podstawowych wektor — punkty, linii, trójkąty — do obraz, wykonując konwersji linii skanowania. Podczas rasteryzacji wierzchołków są przekształceniu jednorodnego przestrzeni przycinania i przycięta. Jako dane wyjściowe są mapowane programów do cieniowania pikseli i wierzchołków atrybuty są interpolowane przez element pierwotny i gotowy do programu do cieniowania pikseli.  
+ **Etap rasteryzatora**  
+ Etap rasteryzatora jest jednostki sprzętu (nieprzewidywalnych) fixed — funkcja, która konwertuje podstawowych wektor — punkty, linii, trójkąty — do rastrowych obrazu przez wykonanie konwersji skanowania linii. Podczas rasteryzacji wierzchołki są przekształcane na jednorodnego przestrzeni przycinania i przycięte. Jako dane wyjściowe są mapowane do cieniowania pikseli i atrybuty każdego wierzchołka są interpolowane przez element pierwotny i udostępnienie do programu do cieniowania pikseli.  
   
- Na etapie rasteryzator nie wizualizacji w oknie etapy potoku.  
+ Na etapie rasteryzatora nie są wizualizowane w oknie etapy potoku.  
   
  **Program do cieniowania pikseli**  
- Wartości pikseli programu do cieniowania etap procesy rasteryzacji podstawowych oraz dane interpolowane wierzchołków do generowania każdego piksela np. kolor i głębokość.  
+ Piksel programu do cieniowania etapu procesy rasteryzowany prymitywów wraz z danymi wierzchołek interpolowanego do generowania każdego piksela wartości takich jak kolor i głębi.  
   
- W oknie etapy potoku dane wyjściowe programu do cieniowania pikseli wizualizacji jako obraz pełnego koloru. Aby móc bliższe spojrzenie na wynik, wybierz **programu do cieniowania pikseli** w **etapy potoku grafiki** okna, aby wyświetlić podstawowych przetworzonych w edytorze obrazów.  
+ W oknie etapy potoku dane wyjściowe programu do cieniowania pikseli są wizualizowane jako obraz kolorowych rastrowych. Aby Przyjrzyj się bliżej wynik, wybierz pozycję **programu do cieniowania pikseli** w **etapy potoku grafiki** okna, aby wyświetlić w edytorze obrazu przetworzonej podstawowych.  
   
- **Połączenie danych wyjściowych**  
- Etap połączenia danych wyjściowych łączy efekt renderowania nowo pikseli wraz z istniejącą zawartość elementu ich odpowiednich buforów — kolor, głębi i wzornika — Aby utworzyć nowe wartości na liście bufory.  
+ **Scalanie danych wyjściowych**  
+ Etap połączenia danych wyjściowych łączy efekt nowo renderowane pikseli, wraz z istniejącą zawartość elementu ich odpowiednich buforów — kolor, głębi i wzornika — Aby utworzyć nowe wartości na liście bufory.  
   
- W oknie etapy potoku jako obraz pełny kolor wizualizacji danych wyjściowych połączenia danych wyjściowych. Aby móc bliższe spojrzenie na wyniki, wybierz **połączenia danych wyjściowych** w **etapy potoku grafiki** okna, aby wyświetlić scalonych obiektu.  
+ W oknie etapy potoku danych wyjściowych połączenia dane wyjściowe są wizualizowane jako obraz kolorowych rastrowych. Aby Przyjrzyj się bliżej wyniki, wybierz pozycję **scalanie danych wyjściowych** w **etapy potoku grafiki** okna, aby wyświetlić scalonych bufor ramki.  
   
-### <a name="vertex-and-geometry-shader-preview"></a>Wierzchołka i programu do cieniowania geometrycznego w wersji zapoznawczej  
- Po wybraniu etapu programu do cieniowania wierzchołków lub geometrii w **etapy potoku** okna, można wyświetlić danych wejściowych w celu i dane wyjściowe programu do cieniowania w panelu poniżej.  W tym miejscu można znaleźć szczegółowe informacje o liście wierzchołków dostarczony do programów do cieniowania po zostały zgromadzone przez etap asemblera wejściowego.  
+### <a name="vertex-and-geometry-shader-preview"></a>Wierzchołka i programu do cieniowania geometrii w wersji zapoznawczej  
+ Po wybraniu etapu programu do cieniowania wierzchołków lub geometrii w **etapy potoku** okna, można wyświetlić dane wejściowe i dane wyjściowe z programu do cieniowania w panelu poniżej.  W tym miejscu znajdziesz szczegółowe informacje dotyczące listy wierzchołków dostarczane do programów do cieniowania, po zostały zgromadzone przez etap asemblera wejściowego.  
 
- ![Podglądu buforu wejściowego etapu programu do cieniowania wierzchołków](media/gfx_diag_vertex_shader_inbuffers.png)  
+ ![Podgląd buforu wejściowego etapu programu do cieniowania wierzchołków](media/gfx_diag_vertex_shader_inbuffers.png)  
   
- Aby wyświetlić wynik etapu programu do cieniowania wierzchołków, wybierz miniatur etapu programu do cieniowania wierzchołków do wyświetlenia w pełnym rozmiarze, szkielet rasteryzacji z sieci po jego zostały przekształcone przez program do cieniowania wierzchołków.  
+ Aby wyświetlić wynik etapu programu do cieniowania wierzchołków, wybierz program do cieniowania wierzchołków etapu miniaturę, aby wyświetlić w pełnym rozmiarze, szkielet rasteryzowany oczek po jego został przekształcony przez program do cieniowania wierzchołków.  
   
- ![Podgląd wyników etapu programu do cieniowania wierzchołków](media/gfx_diag_vertex_shader_preview.png)  
+ ![Podgląd wyników etapu programu do cieniowania wierzchołka](media/gfx_diag_vertex_shader_preview.png)  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Brak obiektów spowodowany cieniowaniem wierzchołków](walkthrough-missing-objects-due-to-vertex-shading.md)   
+ [Przewodnik: Brak obiektów spowodowany cieniowaniem wierzchołków](walkthrough-missing-objects-due-to-vertex-shading.md)   
  [Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)

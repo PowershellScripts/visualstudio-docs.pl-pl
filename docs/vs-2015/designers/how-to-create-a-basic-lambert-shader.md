@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8706e596946c7231e501c59536a4d79253c0337f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f4fbf209e970367ded8e019087287d429bad8fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929728"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Porady: tworzenie podstawowego modułu cieniującego Lamberta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ W tym dokumencie przedstawiono sposób użycia Shader Designer i język programu
   
 #### <a name="to-create-a-lambert-shader"></a>Aby utworzyć modułu cieniującego Lamberta  
   
-1.  Tworzenie modułu cieniującego DGSL chcesz pracować. Aby uzyskać informacje dotyczące sposobu dodawania modułu cieniującego DGSL do projektu, zobacz sekcję pierwsze kroki w [Shader Designer](../designers/shader-designer.md).  
+1. Tworzenie modułu cieniującego DGSL chcesz pracować. Aby uzyskać informacje dotyczące sposobu dodawania modułu cieniującego DGSL do projektu, zobacz sekcję pierwsze kroki w [Shader Designer](../designers/shader-designer.md).  
   
-2.  Odłącz **koloru punktu** węzła z **ostateczny kolor** węzła. Wybierz **RGB** terminali z **koloru punktu** węzła, a następnie wybierz **Przerwij linki**. Pozostaw **alfa** terminalu połączone.  
+2. Odłącz **koloru punktu** węzła z **ostateczny kolor** węzła. Wybierz **RGB** terminali z **koloru punktu** węzła, a następnie wybierz **Przerwij linki**. Pozostaw **alfa** terminalu połączone.  
   
-3.  Dodaj **Lamberta** węzła do wykresu. W **przybornika**w obszarze **narzędzie**, wybierz opcję **Lamberta** i przenieś go do powierzchni projektowej. Węzeł Lamberta oblicza udział łączny kolor rozpraszania piksela na podstawie parametrów otoczenia i rozpraszania oświetlenia.  
+3. Dodaj **Lamberta** węzła do wykresu. W **przybornika**w obszarze **narzędzie**, wybierz opcję **Lamberta** i przenieś go do powierzchni projektowej. Węzeł Lamberta oblicza udział łączny kolor rozpraszania piksela na podstawie parametrów otoczenia i rozpraszania oświetlenia.  
   
-4.  Połącz **koloru punktu** węzeł **Lamberta** węzła. W **wybierz** tryb, Przenieś **RGB** terminali z **koloru punktu** węzeł, aby **kolor rozpraszania** terminali z **Lamberta**  węzła. To połączenie zawiera węzeł Lamberta kolorem rozpraszania interpolowane piksela.  
+4. Połącz **koloru punktu** węzeł **Lamberta** węzła. W **wybierz** tryb, Przenieś **RGB** terminali z **koloru punktu** węzeł, aby **kolor rozpraszania** terminali z **Lamberta**  węzła. To połączenie zawiera węzeł Lamberta kolorem rozpraszania interpolowane piksela.  
   
-5.  Połącz się ostateczny kolor z wartości obliczanej koloru. Przenieś **dane wyjściowe** terminali z **Lamberta** węzeł **RGB** terminali z **ostateczny kolor** węzła.  
+5. Połącz się ostateczny kolor z wartości obliczanej koloru. Przenieś **dane wyjściowe** terminali z **Lamberta** węzeł **RGB** terminali z **ostateczny kolor** węzła.  
   
- Poniższej ilustracji ukończone programu do cieniowania programu graph i wersję zapoznawczą programu do cieniowania, zastosowano do modelu czajniczek.  
+   Poniższej ilustracji ukończone programu do cieniowania programu graph i wersję zapoznawczą programu do cieniowania, zastosowano do modelu czajniczek.  
   
 > [!NOTE]
 >  Aby lepiej zaprezentować efekt programu cieniującego na tej ilustracji, została określona za pomocą koloru pomarańczowego **MaterialDiffuse** parametr programu do cieniowania. Gry lub aplikacji można Użyj tego parametru, aby podać wartość koloru unikatowy dla każdego obiektu. Informacje o parametrach materiału sekcja Podgląd cieniowania w [Shader Designer](../designers/shader-designer.md).  

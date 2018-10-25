@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0040795564aa1d1d599a55928b888ec7cfcfd97e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6403beec680341416940a2cb4f65476408e095be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949087"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 Określa Modyfikatory dla typu pola.  
@@ -106,22 +106,22 @@ public enum enum_FIELD_MODIFIERS {
   
 ## <a name="members"></a>Elementy członkowskie  
  FIELD_MOD_ACCESS_TYPE  
- Wskazuje, czy pole nie jest dostępna.  
+ Wskazuje, że pole nie jest dostępny.  
   
  FIELD_MOD_ACCESS_PUBLIC  
- Wskazuje, czy pole ma dostęp do publicznego.  
+ Wskazuje, że pole ma dostęp publiczny.  
   
  FIELD_MOD_ACCESS_PROTECTED  
- Wskazuje ochronę w polu dostępu.  
+ Wskazuje, czy pole zabezpieczył dostępu.  
   
  FIELD_MOD_ACCESS_PRIVATE  
- Wskazuje, czy pole ma dostęp do prywatnego.  
+ Wskazuje, czy pole ma dostęp do prywatnych.  
   
  FIELD_MOD_NOMODIFIERS  
- Wskazuje, czy pole nie ma żadnych modyfikatorów.  
+ Wskazuje, że pole ma brak modyfikatorów.  
   
  FIELD_MOD_STATIC  
- Wskazuje, czy pole ma statycznej.  
+ Wskazuje, że pole jest statyczne.  
   
  FIELD_MOD_CONSTANT  
  Wskazuje, że pole jest stałą.  
@@ -133,7 +133,7 @@ public enum enum_FIELD_MODIFIERS {
  Wskazuje, że pole jest nietrwały.  
   
  FIELD_MOD_ABSTRACT  
- Wskazuje, że pole jest abstrakcyjny.  
+ Wskazuje, że pole jest abstrakcyjna.  
   
  FIELD_MOD_NATIVE  
  Wskazuje, że pole jest native.  
@@ -142,51 +142,51 @@ public enum enum_FIELD_MODIFIERS {
  Wskazuje, że pole jest zsynchronizowany.  
   
  FIELD_MOD_VIRTUAL  
- Wskazuje, że pole jest wirtualna.  
+ Wskazuje, że pole jest wirtualny.  
   
  FIELD_MOD_INTERFACE  
- Wskazuje, że pole jest interfejsem.  
+ Wskazuje, że pole jest interfejs.  
   
  FIELD_MOD_FINAL  
- Wskazuje, że pole jest końcowym.  
+ Wskazuje, że pole jest ostateczna.  
   
  FIELD_MOD_SENTINEL  
- Wskazuje, że pole jest wartownik.  
+ Wskazuje, że pole jest wskaźnikowych.  
   
  FIELD_MOD_INNERCLASS  
- Wskazuje, że pole jest klasą wewnętrzny.  
+ Wskazuje, że pole jest klasy wewnętrznej.  
   
  FIELD_TYPE_OPTIONAL  
  Wskazuje, że pole jest opcjonalne.  
   
  FIELD_MOD_BYREF  
- Wskazuje, że pole jest argument odwołania. Jest to specjalnie z myślą o argumenty metody.  
+ Wskazuje, że pole jest argument odwołania. Jest to szczególnie argumenty metody.  
   
  FIELD_MOD_HIDDEN  
- Wskazuje, że pole musi ukryte lub w innym kontekście; na przykład [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] statycznych zmiennych lokalnych.  
+ Wskazuje, czy pole musi być ukryty lub znajdujące się w innym kontekście; na przykład [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] statyczne zmienne lokalne.  
   
  FIELD_MOD_MARSHALASOBJECT  
  Wskazuje, że pole reprezentuje obiekt z `IUnknown` interfejsu.  
   
  FIELD_MOD_SPECIAL_NAME  
- Wskazuje, czy pole ma specjalną nazwę, na przykład `.ctor` dla konstruktora ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] tylko).  
+ Wskazuje, że pole ma specjalną nazwę, na przykład `.ctor` dla konstruktora ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] tylko).  
   
  FIELD_MOD_HIDEBYSIG  
- Wskazuje, czy pole ma `Overloads` zastosować dla niego — słowo kluczowe ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] tylko).  
+ Wskazuje, że pole ma `Overloads` zastosowano — słowo kluczowe ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] tylko).  
   
  FIELD_MOD_WRITEONLY  
- Wskazuje, że pole jest tylko do zapisu. Ta wartość nie jest objęta `FIELD_MOD_ALL`, ponieważ jest użycie tylko takie pola tylko do zapisu do obliczania funkcji. Użytkownik musi jawnie poprosić o `FIELD_MOD_WRITEONLY` pola.  
+ Wskazuje, że pole jest tylko do zapisu. Ta wartość nie jest objęta `FIELD_MOD_ALL`, ponieważ tylko używać tych pól tylko do zapisu jest funkcja oceny. Użytkownik musi jawnie poprosić o `FIELD_MOD_WRITEONLY` pola.  
   
  FIELD_MOD_ACCESS_MASK  
- Wskazuje maskę dla dostępu do pola.  
+ Określa maskę, aby uzyskać dostęp do pola.  
   
  FIELD_MOD_MASK  
- Wskazuje maskę dla modyfikatorów pól.  
+ Określa maskę modyfikatorów pól.  
   
 ## <a name="remarks"></a>Uwagi  
  Używany do `dwModifiers` członkiem [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) struktury.  
   
- Te wartości są również przekazywane do [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) metody, aby filtrować pod kątem określonych pól.  
+ Te wartości również są przekazywane do [enumfields —](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md) metody, aby filtrować pod kątem konkretnych pól.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  

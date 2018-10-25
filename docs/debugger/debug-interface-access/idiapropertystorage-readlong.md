@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9f9e6b91492651e82368a0b10148cbb4e069b5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5ee4ff1b6553968ad64f2fba5b005478bbba54e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937931"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
-Odczytuje `LONG` wartości w zestawie właściwości.  
+Odczytuje `LONG` wartości w zbiorze właściwości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,10 +41,10 @@ HRESULT ReadDLONG (
  [out] Zwraca wartość właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_INVALIDARG` Jeśli właściwość nie jest typu `LONG`.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_INVALIDARG` Jeśli właściwość nie jest typu `LONG`.  
   
 ## <a name="remarks"></a>Uwagi  
- A `LONG` jest zdefiniowany przez system Windows jako całkowita 32-bitowych.  
+ Element `LONG` jest definiowany przez Windows jako liczba całkowita 32-bitowe podpisane.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

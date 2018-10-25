@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c0e1d4d5ff0aae952294ef3ee127a0d325a3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ba5c208e6354e0588f939074ac73a49c5b24b049
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859903"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929975"
 ---
 # <a name="customizing-the-model-explorer"></a>Dostosowywanie Eksploratora modelu
 Możesz zmienić wygląd i zachowanie Eksploratora dla projektanta języka specyficznego dla domeny w następujący sposób:
@@ -42,23 +42,23 @@ Możesz zmienić wygląd i zachowanie Eksploratora dla projektanta języka specy
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Aby dodać ikonę do węzła Eksploratora
 
-1.  Utwórz [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązania za pomocą szablonu rozwiązania przepływu zadań.
+1. Utwórz [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązania za pomocą szablonu rozwiązania przepływu zadań.
 
-2.  Umieść plik .bmp, który zawiera ikonę 16 x 16 pikseli **Dsl\Resources** folder w rozwiązaniu.
+2. Umieść plik .bmp, który zawiera ikonę 16 x 16 pikseli **Dsl\Resources** folder w rozwiązaniu.
 
-3.  W **Eksplorator DSL**, kliknij prawym przyciskiem myszy **zachowanie Eksploratora** a następnie kliknij przycisk **Dodaj nowe ustawienia węzła Eksploratora**.
+3. W **Eksplorator DSL**, kliknij prawym przyciskiem myszy **zachowanie Eksploratora** a następnie kliknij przycisk **Dodaj nowe ustawienia węzła Eksploratora**.
 
-     **ExplorerNodeSettings** pojawia się pod węzłem **niestandardowe ustawienia węzła** węzła.
+    **ExplorerNodeSettings** pojawia się pod węzłem **niestandardowe ustawienia węzła** węzła.
 
-4.  Wybierz **ExplorerNodeSettings**, a następnie w polu **właściwości** oknie **klasy** do **aktora**.
+4. Wybierz **ExplorerNodeSettings**, a następnie w polu **właściwości** oknie **klasy** do **aktora**.
 
-5.  Ustaw **ikonę do wyświetlenia** ścieżkę pliku ikony.
+5. Ustaw **ikonę do wyświetlenia** ścieżkę pliku ikony.
 
-6.  Transformuj wszystkie szablony, a następnie, skompiluj i uruchom rozwiązanie.
+6. Transformuj wszystkie szablony, a następnie, skompiluj i uruchom rozwiązanie.
 
-7.  Otwórz przykładowy diagram w wygenerowanym projektancie.
+7. Otwórz przykładowy diagram w wygenerowanym projektancie.
 
-     Eksplorator powinny być widoczne trzy **aktora** węzły, które mają ikona.
+    Eksplorator powinny być widoczne trzy **aktora** węzły, które mają ikona.
 
 > [!NOTE]
 >  Jeśli zostały ustawione ikoną węzła dla każdego elementu wyświetlanego w Eksploratorze wygenerowane, wszystkie węzły w Eksploratorze zostanie wyświetlona ikona. Jeśli nie ustawiono żadnej ikony, węzły, zostanie wyświetlona ikona domyślna.

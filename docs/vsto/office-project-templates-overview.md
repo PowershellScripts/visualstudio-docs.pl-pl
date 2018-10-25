@@ -33,25 +33,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e9295b71248650b078415d4539f72d2b94dc315
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d1ad35b9aecc9e7559902104f447cbbec3415b49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676340"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934330"
 ---
 # <a name="office-project-templates-overview"></a>Omówienie szablonów projektu pakietu Office
   Microsoft Office developer tools w programie Visual Studio obejmują szablony projektów umożliwiające tworzenie następujących typów rozwiązań dla pakietu Office:  
   
--   [Dostosowania na poziomie dokumentu](#DocLevel)  
+- [Dostosowania na poziomie dokumentu](#DocLevel)  
   
--   [Dodatków narzędzi VSTO](#AppLevel)  
+- [Dodatków narzędzi VSTO](#AppLevel)  
   
- Aby uzyskać szczegółowe porównanie tych typów rozwiązań dla pakietu Office, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  Aby uzyskać szczegółowe porównanie tych typów rozwiązań dla pakietu Office, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
- Szablony projektów pakietu Office są dostępne w **nowy projekt** dialogowego **Office** węźle **Visual C#** i **języka Visual Basic**węzłach języków. Każdy szablon generuje projekt o konfiguracji odpowiedniej dla aplikacji docelowej, razem z odwołaniami do zestawów i ustawieniami debugowania.  
+  Szablony projektów pakietu Office są dostępne w **nowy projekt** dialogowego **Office** węźle **Visual C#** i **języka Visual Basic**węzłach języków. Każdy szablon generuje projekt o konfiguracji odpowiedniej dla aplikacji docelowej, razem z odwołaniami do zestawów i ustawieniami debugowania.  
   
- Każdy projekt zawiera pliki i kod źródłowy niezbędne do rozpoczęcia tworzenia określonego typu rozwiązania. Kod generowany dla każdego projektu obejmuje programy obsługi zdarzeń uruchamiania i zamykania. Do programów obsługi można dodać kod, który będzie inicjował rozwiązanie podczas jego ładowania, a czyścił je podczas usuwania z pamięci. Aby uzyskać więcej informacji, zobacz [projekty pakietu Office w środowisku Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md) i [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).  
+  Każdy projekt zawiera pliki i kod źródłowy niezbędne do rozpoczęcia tworzenia określonego typu rozwiązania. Kod generowany dla każdego projektu obejmuje programy obsługi zdarzeń uruchamiania i zamykania. Do programów obsługi można dodać kod, który będzie inicjował rozwiązanie podczas jego ładowania, a czyścił je podczas usuwania z pamięci. Aby uzyskać więcej informacji, zobacz [projekty pakietu Office w środowisku Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md) i [zdarzenia w projektach pakietu Office](../vsto/events-in-office-projects.md).  
   
 > [!NOTE]  
 >  Narzędzia programistyczne pakietu Office są dołączane do niektórych wydań programu Visual Studio. Aby uzyskać więcej informacji, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -59,25 +59,25 @@ ms.locfileid: "35676340"
 ##  <a name="DocLevel"></a> Dostosowania na poziomie dokumentu  
  **Office** w węźle **nowy projekt** okno dialogowe zawiera następujące szablony projektów w ułatwią Ci rozpoczęcie tworzenia dostosowań poziomie dokumentu dla programów Word i Excel:  
   
--   **Word 2013 i 2016 VSTO dokumentu**  
+- **Word 2013 i 2016 VSTO dokumentu**  
   
--   **Word 2013 i 2016 szablon narzędzi VSTO**  
+- **Word 2013 i 2016 szablon narzędzi VSTO**  
   
--   **Excel 2013 i 2016 skoroszyt narzędzi VSTO**  
+- **Excel 2013 i 2016 skoroszyt narzędzi VSTO**  
   
--   **Excel 2013 i 2016 szablon narzędzi VSTO**  
+- **Excel 2013 i 2016 szablon narzędzi VSTO**  
   
--   **Dokument narzędzi VSTO programu Word 2010**  
+- **Dokument narzędzi VSTO programu Word 2010**  
   
--   **Szablon VSTO programu Word 2010**  
+- **Szablon VSTO programu Word 2010**  
   
--   **Skoroszyt narzędzi VSTO dla programu Excel 2010**  
+- **Skoroszyt narzędzi VSTO dla programu Excel 2010**  
   
--   **Szablon narzędzi VSTO dla programu Excel 2010**  
+- **Szablon narzędzi VSTO dla programu Excel 2010**  
   
- Szablony projektów dokumentów programu Word i skoroszytów programu Excel zawierają kod źródłowy, który pomoże rozpocząć tworzenie rozwiązania opartego na konkretnym dokumencie lub skoroszycie. W tego typu rozwiązaniach kod działa tylko wtedy, gdy powiązany dokument zostanie otwarty w programie Word lub Excel.  
+  Szablony projektów dokumentów programu Word i skoroszytów programu Excel zawierają kod źródłowy, który pomoże rozpocząć tworzenie rozwiązania opartego na konkretnym dokumencie lub skoroszycie. W tego typu rozwiązaniach kod działa tylko wtedy, gdy powiązany dokument zostanie otwarty w programie Word lub Excel.  
   
- Szablony projektów programów Word i Excel zachowują się identycznie jak szablony projektów dokumentów programu Word i skoroszytów programów Excel. Jednak szablony projektów programów Word i Excel bardzo ułatwiają użytkownikom tworzenie nowych spersonalizowanych lokalnych kopii dokumentów lub skoroszytów w rozwiązaniu. Funkcje w rozwiązaniu są dostępne z nowego dokumentu, który użytkownik utworzył na podstawie szablonu.  
+  Szablony projektów programów Word i Excel zachowują się identycznie jak szablony projektów dokumentów programu Word i skoroszytów programów Excel. Jednak szablony projektów programów Word i Excel bardzo ułatwiają użytkownikom tworzenie nowych spersonalizowanych lokalnych kopii dokumentów lub skoroszytów w rozwiązaniu. Funkcje w rozwiązaniu są dostępne z nowego dokumentu, który użytkownik utworzył na podstawie szablonu.  
   
 > [!NOTE]  
 >  Szablony programu Word, które odwołują się rozszerzenia kodu zarządzanego nie można użyć jako globalnych dodatków narzędzi VSTO dla programów. Wywołanie zestawu nie następuje, jeśli szablon jest ładowany z katalogu Startup programu Word. Aby uzyskać więcej informacji, zobacz [ograniczenia szablonów globalnych i dodatków programu Excel (plików .xla)](#Limitations)  
@@ -97,51 +97,51 @@ ms.locfileid: "35676340"
 ##  <a name="AppLevel"></a> Dodatków narzędzi VSTO  
  **Office/SharePoint** w węźle **nowy projekt** okno dialogowe zawiera następujące szablony projektów pomagające w pracy, tworzenie dodatków narzędzi VSTO.  
   
--   **Dodatek narzędzi VSTO dla programów Excel 2013 i 2016**  
+- **Dodatek narzędzi VSTO dla programów Excel 2013 i 2016**  
   
--   **Dodatek programu InfoPath 2013 VSTO**  
+- **Dodatek programu InfoPath 2013 VSTO**  
   
--   **Dodatek narzędzi VSTO dla programów Outlook 2013 i 2016**  
+- **Dodatek narzędzi VSTO dla programów Outlook 2013 i 2016**  
   
--   **Dodatek programu PowerPoint 2013 i 2016**  
+- **Dodatek programu PowerPoint 2013 i 2016**  
   
--   **Project 2013 i 2016 Add-in**  
+- **Project 2013 i 2016 Add-in**  
   
--   **Dodatek programu Visio 2013 i 2016**  
+- **Dodatek programu Visio 2013 i 2016**  
   
--   **Dodatek programu Word 2013 i 2016**  
+- **Dodatek programu Word 2013 i 2016**  
   
--   **Dodatek programu Excel 2010**  
+- **Dodatek programu Excel 2010**  
   
--   **Dodatek programu InfoPath 2010**  
+- **Dodatek programu InfoPath 2010**  
   
--   **Dodatek programu Outlook 2010**  
+- **Dodatek programu Outlook 2010**  
   
--   **Dodatek programu PowerPoint 2010**  
+- **Dodatek programu PowerPoint 2010**  
   
--   **Dodatek Project 2010**  
+- **Dodatek Project 2010**  
   
--   **Dodatek Visio 2010**  
+- **Dodatek Visio 2010**  
   
--   **Dodatek programu Word 2010**  
+- **Dodatek programu Word 2010**  
   
- W projekcie opartym na jednym z tych szablonów projektu kod w rozwiązaniu jest uruchamiany po otwarciu powiązanej aplikacji. W przeciwieństwie do projektów na poziomie dokumentu kod nie jest kojarzony z jednym dokumentem.  
+  W projekcie opartym na jednym z tych szablonów projektu kod w rozwiązaniu jest uruchamiany po otwarciu powiązanej aplikacji. W przeciwieństwie do projektów na poziomie dokumentu kod nie jest kojarzony z jednym dokumentem.  
   
- Więcej informacji na temat rozpoczynania pracy z tego typu projektami znajdują się w następujących tematach:  
+  Więcej informacji na temat rozpoczynania pracy z tego typu projektami znajdują się w następujących tematach:  
   
--   [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+- [Wprowadzenie do programowania dodatków narzędzi VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
--   [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)  
+- [Program dodatków narzędzi VSTO](../vsto/programming-vsto-add-ins.md)  
   
--   [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+- [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [Przewodnik: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+- [Przewodnik: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla programu Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+- [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [Przewodnik: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla projektu](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+- [Przewodnik: Tworzenie Twojego pierwszego dodatku narzędzi VSTO dla projektu](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+- [Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
 ## <a name="document-vs-template-solutions"></a>Dokumentu, a szablon rozwiązania  
  Projektując rozwiązanie w oparciu o dokument programu Word lub skoroszyt programu Excel, należy wybrać najlepszy sposób udostępnienia tego dokumentu użytkownikom.  

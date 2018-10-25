@@ -12,16 +12,17 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f60fa346df7d2b9e89f3d6905e273d0191bdf3b
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 4bca48113349607de2f5ada53356f1d24eb82088
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933992"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Uczenie modelu TensorFlow lokalnie
 
 W tym przewodniku Szybki Start będzie uczenie modelu TensorFlow z [mnist ręcznie ZAPISANYCH](http://yann.lecun.com/exdb/mnist/) zestawu danych lokalnie w programie Visual Studio Tools for AI.
+
 Bazy danych mnist ręcznie ZAPISANYCH ma zestaw szkolenia 60 000 przykłady i zbiór 10 000 przykłady pisma odręcznego cyfr.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
@@ -30,7 +31,8 @@ Przed rozpoczęciem upewnij się, że masz zainstalowane następujące oprogramo
 
 ### <a name="google-tensorflow"></a>Google TensorFlow
 
-Uruchom następujące polecenie w terminalu.
+Uruchom następujące polecenie w terminalu:
+
 ```cmd
 C:\>pip.exe install tensorflow
 ```
@@ -47,9 +49,9 @@ Pobierz ten [repozytorium GitHub](https://github.com/Microsoft/samples-for-ai) z
 
 - Wybierz **przykłady Tensorflow** folderu z repozytorium przykładów pobrany i otwarty **TensorflowExamples.sln** pliku.
 
-![Otwórz projekt](media\tensorflow-local\open-project.png)
+   ![Otwórz projekt](media/tensorflow-local/open-project.png)
 
-![Otwórz rozwiązanie](media\tensorflow-local\open-solution.png)
+   ![Otwórz rozwiązanie](media/tensorflow-local/open-solution.png)
 
 - Znajdź projekt mnist ręcznie ZAPISANYCH w **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy i wybierz **Ustaw jako projekt startowy**.
 
@@ -57,7 +59,7 @@ Pobierz ten [repozytorium GitHub](https://github.com/Microsoft/samples-for-ai) z
 
 - Dane wyjściowe będą drukowane w konsoli.
 
-![Przykładowe dane wyjściowe z konsoli](media\tensorflow-local\console-output.png)
+   ![Przykładowe dane wyjściowe z konsoli](media/tensorflow-local/console-output.png)
 
 > [!div class="nextstepaction"]
 > [Uczenie modelu TensorFlow w chmurze](tensorflow-vm.md)

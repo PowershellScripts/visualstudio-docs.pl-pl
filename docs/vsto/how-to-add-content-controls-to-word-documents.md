@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9d3cce301d5d49a7660751ee1580c99794c16d38
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f654efacace3e4b7cbdfff8919309a09d4a544ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936969"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Porady: Dodawanie zawartości formantów do dokumentów programu Word
   W projektach programu Word na poziomie dokumentu można dodać formanty zawartości do dokumentu w projekcie w czasie projektowania lub w czasie wykonywania. W projektach dodatku narzędzi VSTO programu Word można dodać formanty zawartości dowolnego otwartego dokumentu w czasie wykonywania.  
@@ -43,24 +43,24 @@ ms.locfileid: "35676379"
   
  W tym temacie opisano następujące zadania:  
   
--   [Dodawanie formantów zawartości w czasie projektowania](#designtime)  
+- [Dodawanie formantów zawartości w czasie projektowania](#designtime)  
   
--   [Dodawanie formantów zawartości w czasie wykonywania w projekcie na poziomie dokumentu](#runtimedoclevel)  
+- [Dodawanie formantów zawartości w czasie wykonywania w projekcie na poziomie dokumentu](#runtimedoclevel)  
   
--   [Dodawanie formantów zawartości w czasie wykonywania w projekcie dodatku narzędzi VSTO](#runtimeaddin)  
+- [Dodawanie formantów zawartości w czasie wykonywania w projekcie dodatku narzędzi VSTO](#runtimeaddin)  
   
- Aby uzyskać informacje o formantach zawartości, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md).  
+  Aby uzyskać informacje o formantach zawartości, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md).  
   
 ##  <a name="designtime"></a> Dodaj zawartość kontrolki w czasie projektowania  
  Istnieje kilka sposobów, aby dodać formanty zawartości do dokumentu w projekcie na poziomie dokumentu w czasie projektowania:  
   
--   Dodaj kontrolkę zawartości z **formanty programu Word** karcie **przybornika**.  
+- Dodaj kontrolkę zawartości z **formanty programu Word** karcie **przybornika**.  
   
--   Dodawanie zawartości kontrolki do dokumentu w taki sam sposób możesz dodać macierzystym formancie zawartości w programie Word.  
+- Dodawanie zawartości kontrolki do dokumentu w taki sam sposób możesz dodać macierzystym formancie zawartości w programie Word.  
   
--   Przeciągnij formant zawartości do dokumentu z **źródeł danych** okna. Jest to przydatne, jeśli chcesz powiązać kontrolkę z danymi, po utworzeniu kontrolki. Aby uzyskać więcej informacji, zobacz [porady: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md) i [porady: zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
+- Przeciągnij formant zawartości do dokumentu z **źródeł danych** okna. Jest to przydatne, jeśli chcesz powiązać kontrolkę z danymi, po utworzeniu kontrolki. Aby uzyskać więcej informacji, zobacz [porady: zapełnianie dokumentów danymi z obiektów](../vsto/how-to-populate-documents-with-data-from-objects.md) i [porady: zapełnianie dokumentów danymi z bazy danych](../vsto/how-to-populate-documents-with-data-from-a-database.md).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-content-control-to-a-document-by-using-the-toolbox"></a>Aby dodać kontrolkę zawartości w dokumencie za pomocą przybornika  
   
@@ -100,13 +100,13 @@ ms.locfileid: "35676379"
 ##  <a name="runtimedoclevel"></a> Dodawanie formantów zawartości w czasie wykonywania w projekcie na poziomie dokumentu  
  Można dodać formanty zawartości programowo do dokumentu w czasie wykonywania za pomocą metody <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwość `ThisDocument` klasy w projekcie. Każda metoda charakteryzuje się trzech przeciążeń, które można użyć, aby dodać kontrolkę zawartości w następujący sposób:  
   
--   Dodaj kontrolkę na bieżącym zaznaczeniu.  
+- Dodaj kontrolkę na bieżącym zaznaczeniu.  
   
--   Dodawanie kontrolki w określonym zakresie.  
+- Dodawanie kontrolki w określonym zakresie.  
   
--   Dodaj kontrolkę, która opiera się na macierzystym formancie zawartości w dokumencie.  
+- Dodaj kontrolkę, która opiera się na macierzystym formancie zawartości w dokumencie.  
   
- Tworzone dynamicznie zawartość, którą formanty nie są zachowywane w dokumencie, gdy dokument zostanie zamknięty. Jednak macierzystym formancie zawartości pozostaje w dokumencie. Można ponownie utworzyć kontrolkę zawartości, która opiera się na macierzystym formancie zawartości przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Tworzone dynamicznie zawartość, którą formanty nie są zachowywane w dokumencie, gdy dokument zostanie zamknięty. Jednak macierzystym formancie zawartości pozostaje w dokumencie. Można ponownie utworzyć kontrolkę zawartości, która opiera się na macierzystym formancie zawartości przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 > [!NOTE]  
 >  Aby dodać kontrolkę zawartości pola wyboru do dokumentu w projekcie programu Word 2010, należy utworzyć <xref:Microsoft.Office.Tools.Word.ContentControl> obiektu. Aby uzyskać więcej informacji, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md).  
@@ -141,15 +141,15 @@ ms.locfileid: "35676379"
 ##  <a name="runtimeaddin"></a> Dodawanie formantów zawartości w czasie wykonywania w projekcie dodatku narzędzi VSTO  
  Można dodać formanty zawartości programowo dowolnego otwartego dokumentu w czasie wykonywania za pomocą dodatku narzędzi VSTO. Aby to zrobić, należy wygenerować <xref:Microsoft.Office.Tools.Word.Document> elementu, która jest oparta na otwartym dokumencie hosta, a następnie użyj metod <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> właściwości tego elementu host. Każda metoda charakteryzuje się trzech przeciążeń, które można użyć, aby dodać kontrolkę zawartości w następujący sposób:  
   
--   Dodaj kontrolkę na bieżącym zaznaczeniu.  
+- Dodaj kontrolkę na bieżącym zaznaczeniu.  
   
--   Dodawanie kontrolki w określonym zakresie.  
+- Dodawanie kontrolki w określonym zakresie.  
   
--   Dodaj kontrolkę, która opiera się na macierzystym formancie zawartości w dokumencie.  
+- Dodaj kontrolkę, która opiera się na macierzystym formancie zawartości w dokumencie.  
   
- Tworzone dynamicznie zawartość, którą formanty nie są zachowywane w dokumencie, gdy dokument zostanie zamknięty. Jednak macierzystym formancie zawartości pozostaje w dokumencie. Można ponownie utworzyć kontrolkę zawartości, która opiera się na macierzystym formancie zawartości przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [kontrolek dynamicznych w dokumentach pakietu Office utrwalenia](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+  Tworzone dynamicznie zawartość, którą formanty nie są zachowywane w dokumencie, gdy dokument zostanie zamknięty. Jednak macierzystym formancie zawartości pozostaje w dokumencie. Można ponownie utworzyć kontrolkę zawartości, która opiera się na macierzystym formancie zawartości przy następnym otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [kontrolek dynamicznych w dokumentach pakietu Office utrwalenia](../vsto/persisting-dynamic-controls-in-office-documents.md).  
   
- Aby uzyskać więcej informacji na temat generowania elementów hosta w projektach dodatku narzędzi VSTO dla programów, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+  Aby uzyskać więcej informacji na temat generowania elementów hosta w projektach dodatku narzędzi VSTO dla programów, zobacz [Rozszerzanie dokumentów programu Word i skoroszytów programu Excel w dodatkach VSTO w czasie wykonywania](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 > [!NOTE]  
 >  Aby dodać kontrolkę zawartości pola wyboru do dokumentu, należy utworzyć <xref:Microsoft.Office.Tools.Word.ContentControl> obiektu. Aby uzyskać więcej informacji, zobacz [udostępnia mechanizmy kontroli zawartości](../vsto/content-controls.md).  

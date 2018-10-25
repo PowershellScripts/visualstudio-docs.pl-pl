@@ -1,5 +1,5 @@
 ---
-title: Rejestrowanie typ projektu | Dokumentacja firmy Microsoft
+title: Rejestrowanie typu projektu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,20 +15,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e6c91f2c92dd121cd135aef4291c7f7983206ff
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1839ed51b3bd8b26bd67583054fa142f5853a2de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134636"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939687"
 ---
-# <a name="registering-a-project-type"></a>Rejestrowanie typ projektu
-Podczas tworzenia nowego typu projektu, należy utworzyć wpisy rejestru, które umożliwiają [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozpoznaje i pracy z danego typu projektu. Wpisy rejestru są zazwyczaj tworzone przy użyciu pliku skryptu (.rgs) z rejestru.  
+# <a name="registering-a-project-type"></a>Rejestrowanie typu projektu
+Gdy tworzysz nowy typ projektu, należy utworzyć wpisy rejestru, które umożliwiają [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozpoznaje i pracować z danego typu projektu. Wpisy rejestru są zazwyczaj tworzone przy użyciu pliku skryptu (.rgs) z rejestru.  
   
- W poniższym przykładzie instrukcji z rejestru Podaj domyślnych ścieżek i danych w przypadku, gdy ma to zastosowanie, a następnie tabelę, która zawiera wpisy z rejestru skryptu dla każdej instrukcji. Tabele zawierają wpisy skryptu i dodatkowe informacje na temat oświadczeń.  
+ W poniższym przykładzie instrukcji z rejestru zapewnienia domyślnych ścieżek i danych w przypadku, gdy to stosowne, a następnie tabeli, która zawiera wpisy z rejestru skryptu dla każdej instrukcji. Tabele zawierają wpisy skryptu i dodatkowe informacje na temat oświadczeń.  
   
 > [!NOTE]
->  Następujące informacje rejestru jest przeznaczonych do przykład typu i celów wpisów w skryptach rejestru, który będzie można zapisywania zarejestrować danego typu projektu. Rzeczywiste wpisy i ich zastosowań mogą się różnić w zależności od specyficznych wymagań danego typu projektu. Należy Przejrzyj przykłady można znaleźć, który jest bardzo podobny typ projektu, które tworzysz, a następnie przejrzyj skrypt rejestru dla tego przykładu.  
+>  Następujące informacje do rejestru jest przeznaczonych do przykładu i celów wpisów w skryptach rejestru, który będzie zapisywać do zarejestrowania typu projektu. Rzeczywiste wpisy i ich zastosowań mogą się różnić w zależności od określonych wymagań tego typu projektu. Należy przejrzeć przykłady można znaleźć taki, który przypomina typu projektu, które tworzysz, a następnie przejrzyj skrypt rejestru dla tego przykładu.  
   
  Poniższe przykłady pochodzą z HKEY_CLASSES_ROOT.  
   
@@ -52,14 +52,14 @@ Podczas tworzenia nowego typu projektu, należy utworzyć wpisy rejestru, które
   
 |Nazwa|Typ|Dane|Opis|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|`FigPrjFile`|Nazwa i opis plików typu projektu, które mają .figp rozszerzenia.|  
-|`Content Type`|REG_SZ|`Text/plain`|Typ zawartości dla plików projektu.|  
+|`@`|REG_SZ|`FigPrjFile`|Nazwa i opis projektu typu plików, które mają .figp rozszerzenia.|  
+|`Content Type`|REG_SZ|`Text/plain`|Typ zawartości plików projektu.|  
 |`NullFile`|REG_SZ|`Null`||  
-|`@`|REG_SZ|`%MODULE%,-206`|Ikona domyślna używana dla projektu tego typu. Instrukcja % modułu % zostanie ukończona w rejestrze w domyślnej lokalizacji projektu typu DLL.|  
+|`@`|REG_SZ|`%MODULE%,-206`|Ikona domyślna używana dla projektu tego typu. Instrukcja % modułu % zakończeniu w rejestrze w domyślnej lokalizacji projektu typu DLL.|  
 |`@`|REG_SZ|`&Open in Visual Studio`|Domyślna aplikacja, w którym zostanie otwarty ten typ projektu.|  
-|`@`|REG_SZ|`devenv.exe "%1"`|Polecenie domyślne, które będą uruchamiane po otwarciu projektu tego typu.|  
+|`@`|REG_SZ|`devenv.exe "%1"`|Polecenie domyślnej, która będzie uruchamiana po otwarciu projektu tego typu.|  
   
- Poniższe przykłady z HKEY_LOCAL_MACHINE i znajdują się w rejestrze w kluczu [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\99.0Exp\Packages].  
+ Poniższe przykłady pochodzą z HKEY_LOCAL_MACHINE i znajdują się w rejestrze w kluczu [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\99.0Exp\Packages].  
   
 ## <a name="example"></a>Przykład  
   
@@ -84,17 +84,17 @@ Podczas tworzenia nowego typu projektu, należy utworzyć wpisy rejestru, które
   
 |Nazwa|Typ|Dane|Opis|  
 |----------|----------|----------|-----------------|  
-|`@` (Ustawienie domyślne)|REG_SZ|`FigPrj Project VSPackage`|Nazwa Lokalizowalny to zarejestrowanej pakiet VSPackage (typ projektu).|  
-|`InprocServer32`|REG_SZ|`%MODULE%`|Ścieżka do projektu typu DLL. IDE ładuje tę bibliotekę DLL i przekazuje CLSID pakiet VSPackage do `DllGetClassObject` uzyskanie <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> do skonstruowania <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> obiektu.|  
+|`@` (Ustawienie domyślne)|REG_SZ|`FigPrj Project VSPackage`|Możliwa do zlokalizowania nazwę tego zarejestrowany pakietu VSPackage (typ projektu).|  
+|`InprocServer32`|REG_SZ|`%MODULE%`|Ścieżka projektu typu DLL. IDE ładuje tę bibliotekę DLL i przekazuje CLSID pakietu VSPackage do `DllGetClassObject` można pobrać <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> do konstruowania <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> obiektu.|  
 |`CompanyName`|REG_SZ|`Microsoft`|Nazwa firmy, która opracowała typu projektu.|  
 |`ProductName`|REG_SZ|`Figure Project Sample`|Nazwa typu projektu.|  
-|`ProductVersion`|REG_SZ|`9.0`|Zwolnij numer wersji tego typu projektu.|  
-|`MinEdition`|REG_SZ|`professional`|Edycja pakiet VSPackage, jest zarejestrowany.|  
-|`ID`|REG_DWORD|`%IDS_PACKAGE_LOAD_KEY%`|Pakiet załadować kluczy dla projektu pakiet VSPackage. Klucz sprawdzania poprawności po załadowaniu projektu po uruchomieniu środowiska.|  
-|`DllName`|REG_SZ|`%RESOURCE_DLL%`|Nazwa pliku satelitarnej biblioteki DLL zawierającej zlokalizowane zasoby dla typu projektu.|  
-|`Path`|REG_SZ|`%RESOURCE_PATH%`|Ścieżka satelitarnej biblioteki DLL.|  
-|`FigProjectsEvents`|REG_SZ|Zobacz instrukcji dla wartości.|Określa ciąg tekstowy zwrócony dla tego zdarzenia automatyzacji.|  
-|`FigProjectItemsEvents`|REG_SZ|Zobacz instrukcji dla wartości.|Określa ciąg tekstowy zwrócony dla tego zdarzenia automatyzacji.|  
+|`ProductVersion`|REG_SZ|`9.0`|Zwolnij numer wersji typu projektu.|  
+|`MinEdition`|REG_SZ|`professional`|Wersja pakietu VSPackage, jest zarejestrowany.|  
+|`ID`|REG_DWORD|`%IDS_PACKAGE_LOAD_KEY%`|Pakiet załadować klucza dla projektu pakietu VSPackage. Klucz jest weryfikowana, gdy projekt jest ładowany po uruchomieniu środowiska.|  
+|`DllName`|REG_SZ|`%RESOURCE_DLL%`|Nazwa pliku satelitarnej biblioteki DLL zawierającej zlokalizowane zasoby dla tego typu projektu.|  
+|`Path`|REG_SZ|`%RESOURCE_PATH%`|Ścieżka satelitarną bibliotekę DLL.|  
+|`FigProjectsEvents`|REG_SZ|Zobacz poufności informacji dla wartości.|Określa ciąg tekstowy, zwrócony dla tego zdarzenia automatyzacji.|  
+|`FigProjectItemsEvents`|REG_SZ|Zobacz poufności informacji dla wartości.|Określa ciąg tekstowy, zwrócony dla tego zdarzenia automatyzacji.|  
   
  Poniższe przykłady znajdują się w rejestrze w kluczu [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].  
   
@@ -136,29 +136,29 @@ Podczas tworzenia nowego typu projektu, należy utworzyć wpisy rejestru, które
 |Nazwa|Typ|Dane|Opis|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`FigPrj Project`|Domyślna nazwa projektów tego typu.|  
-|`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|Identyfikator zasobu nazwy mają zostać pobrane z satelitarnej biblioteki DLL zarejestrowany pod pakietów.|  
-|`Package`|REG_SZ|`%CLSID_Package%`|Identyfikator klasy pakiet VSPackage zarejestrowany pod pakietów.|  
-|`ProjectTemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Domyślna ścieżka plików szablonów projektu. Są to pliki, wyświetlane przez szablon nowego projektu.|  
-|`ItemTemplatesDir`|REG_SZ|`%TEMPLATE_PATH% \FigPrjProjectItems`|Domyślna ścieżka plików szablonu elementu projektu. Są to pliki, wyświetlane przez szablon Dodaj nowy element.|  
-|`DisplayProjectFileExtensions`|REG_SZ|`#%IDS_DISPLAY_PROJ_FILE_EXT%`|Włącza IDE zaimplementować **Otwórz** okno dialogowe.|  
-|`PossibleProjectExtensions`|REG_SZ|`figp`|Używany przez IDE w celu określenia, czy projekt otwierany jest obsługiwany przez ten typ projektu (fabrykę projektów). Format dla więcej niż jednego wpisu znajduje się lista rozdzielanych średnikami. Na przykład "vdproj; vdp".|  
-|`DefaultProjectExtension`|REG_SZ|`.figp`|Używane przez IDE jako domyślne rozszerzenie nazwy pliku dla operacji Zapisz jako.|  
-|`Filter Settings`|REG_DWORD|Różne, zobacz instrukcje i komentarze w poniższej tabeli.|Te ustawienia są używane do definiowania różnych filtrów do wyświetlania plików w oknach dialogowych interfejsu użytkownika.|  
+|`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|Identyfikator zasobu o nazwie mają zostać pobrane satelitarną bibliotekę DLL jest zarejestrowany w ramach pakietów.|  
+|`Package`|REG_SZ|`%CLSID_Package%`|Identyfikator pakietu VSPackage zarejestrowany w ramach pakietów.|  
+|`ProjectTemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Domyślna ścieżka pliku szablonu projektu. Są to pliki wyświetlane przez szablon nowego projektu.|  
+|`ItemTemplatesDir`|REG_SZ|`%TEMPLATE_PATH% \FigPrjProjectItems`|Domyślna ścieżka pliku szablonu elementu projektu. Są to pliki wyświetlane przez szablon Dodaj nowy element.|  
+|`DisplayProjectFileExtensions`|REG_SZ|`#%IDS_DISPLAY_PROJ_FILE_EXT%`|Włącza środowisko IDE do zaimplementowania **Otwórz** okno dialogowe.|  
+|`PossibleProjectExtensions`|REG_SZ|`figp`|Używane przez IDE, aby ustalić, czy projektu otwierany jest obsługiwany przez ten typ projektu (project factory). Format dla więcej niż jeden wpis jest rozdzielaną średnikami listę. Na przykład "vdproj; vdp".|  
+|`DefaultProjectExtension`|REG_SZ|`.figp`|IDE używa jako domyślne rozszerzenie nazwy pliku dla operacji Zapisz jako.|  
+|`Filter Settings`|REG_DWORD|Różne, zobacz instrukcje i uwagi pod tabelą.|Te ustawienia są używane do definiowania różnych filtrów do wyświetlania plików w oknach dialogowych interfejsu użytkownika.|  
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Identyfikator zasobu dla szablonów Dodaj element.|  
-|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Ścieżka projektu elementy wyświetlane w oknie dialogowym **Dodaj nowy element** szablonu.|  
-|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Określa porządek sortowania, w węźle drzewa plików wyświetlanych w **Dodaj nowy element** okno dialogowe.|  
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Ścieżka wyświetlanych w oknie dialogowym dla elementów projektu **Dodaj nowy element** szablonu.|  
+|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Określa porządek sortowania w węźle drzewa pliki wyświetlane w **Dodaj nowy element** okno dialogowe.|  
   
- W poniższej tabeli przedstawiono opcje filtry dostępne w poprzednich segment kodu.  
+ W poniższej tabeli przedstawiono opcje filtry dostępne w poprzedniego segmentu kodu.  
   
 |Opcja filtra|Opis|  
 |-------------------|-----------------|  
-|`CommonFindFilesFilter`|Wskazuje, że filtr jest jednym z typowych filtrów w **Znajdź w plikach** okno dialogowe. Filtry wspólne są wyświetlane na liście filtrów przed filtrami nieoznaczona jako wspólne.|  
-|`CommonOpenFilesFilter`|Wskazuje, że filtr jest jednym z typowych filtrów w **Otwórz plik** okno dialogowe. Filtry wspólne są wyświetlane na liście filtrów przed filtrami nieoznaczona jako wspólne.|  
-|`FindInFilesFilter`|Wskazuje, że filtr będzie jeden z filtrów w **Znajdź w plikach** okna dialogowego polu i zostaną wyświetlone po wspólnej filtrów.|  
-|`NotOpenFileFilter`|Wskazuje, że filtr nie można użyć w **Otwórz plik** okno dialogowe.|  
-|`NotAddExistingItemFilter`|Wskazuje, czy filtr nie będzie używany w dodawania **istniejący element** okno dialogowe.|  
+|`CommonFindFilesFilter`|Wskazuje, że filtr jest jednym z typowych filtrów w **Znajdź w plikach** okno dialogowe. Wspólne filtry są wymienione na liście filtrów przed filtrami niezaznaczonych jako wspólne.|  
+|`CommonOpenFilesFilter`|Wskazuje, że filtr jest jednym z typowych filtrów w **Otwórz plik** okno dialogowe. Wspólne filtry są wymienione na liście filtrów przed filtrami niezaznaczonych jako wspólne.|  
+|`FindInFilesFilter`|Wskazuje, że filtr będzie jednego z filtrów w **Znajdź w plikach** okna dialogowego pole, a zostaną wyświetlone po wspólnych filtrów.|  
+|`NotOpenFileFilter`|Wskazuje, że filtr nie zostanie użyty w **Otwórz plik** okno dialogowe.|  
+|`NotAddExistingItemFilter`|Wskazuje, że filtr nie zostanie użyty w dodawania **istniejący element** okno dialogowe.|  
   
- Domyślnie, jeśli filtr nie ma jedną lub więcej te flagi zestawu, filtr jest używane w **Dodaj istniejący element** okno dialogowe i **Otwórz plik** okno dialogowe po typowe filtry są widoczne. Filtr nie jest używany w **Znajdź w plikach** okno dialogowe.  
+ Domyślnie, jeśli filtr nie mieć co najmniej jeden z tych flag zestawu, filtr jest używany w **Dodaj istniejący element** okno dialogowe i **Otwórz plik** po wspólne filtry są wyświetlane okno dialogowe. Filtr nie jest używany w **Znajdź w plikach** okno dialogowe.  
   
  Poniższe przykłady znajdują się w rejestrze w kluczu [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].  
   
@@ -176,7 +176,7 @@ Podczas tworzenia nowego typu projektu, należy utworzyć wpisy rejestru, które
 |Nazwa|Typ|Dane|Opis|  
 |----------|----------|----------|-----------------|  
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|Identyfikator zasobu dla szablonów nowy projekt.|  
-|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Domyślna ścieżka dla projektów typu projektu w zarejestrowany.|  
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Domyślna ścieżka dla projektów typu projektu zarejestrowane.|  
 |`SortPriority`|REG_DWORD|`41 (x29)`|Ustawia sortowania kolejności projektów wyświetlane w oknie dialogowym Kreatora nowych projektów.|  
 |`NewProjectDialogOnly`|REG_DWORD|`0`|wartość 0 wskazuje, że projekty tego typu są wyświetlane tylko w oknie dialogowym Nowy projekt.|  
   
@@ -196,10 +196,10 @@ Podczas tworzenia nowego typu projektu, należy utworzyć wpisy rejestru, które
   
 |Nazwa|Typ|Dane|Opis|  
 |----------|----------|----------|-----------------|  
-|`@`|REG_SZ|Brak|Wartość domyślna, który wskazuje, że następujące wpisy dla pozycji projektów różne pliki.|  
-|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Wartość Identyfikatora zasobu pliki szablonów Dodaj nowe elementy.|  
+|`@`|REG_SZ|Brak|Domyślna wartość oznacza, że następujące wpisy są wpisy projektów różne pliki.|  
+|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Wartość Identyfikatora zasobu dla plików szablonów Dodaj nowe elementy.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Domyślna ścieżka elementów, które będą wyświetlane w **Dodaj nowy element** okno dialogowe.|  
-|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Określa porządek sortowania dla wyświetlana w węźle drzewa **Dodaj nowy element** okno dialogowe.|  
+|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Określa porządek sortowania w celu wyświetlenia w węźle drzewa **Dodaj nowy element** okno dialogowe.|  
   
  Poniższy przykład znajduje się w rejestrze w kluczu [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Menus].  
   
@@ -209,23 +209,23 @@ Podczas tworzenia nowego typu projektu, należy utworzyć wpisy rejestru, które
 "{ACEF4EB2-57CF-11D2-96F4-000000000000}"=",1000,1"  
 ```  
   
- Pozycja menu wskazuje IDE zasobów do pobierania informacji menu. W przypadku tych danych została scalona menu bazy danych, ten sam klucz zostanie dodany w sekcji MenusMerged rejestru. Pakiet VSPackage niczego w sekcji MenusMerged nie należy modyfikować bezpośrednio. W polu danych w poniższej tabeli istnieją trzy przecinkami — oddzielone pola. Pierwsze pole określa pełną ścieżkę pliku zasobu menu:  
+ Wpis menu wskazuje IDE zasobów do pobierania informacji menu. Gdy te dane zostały połączone w bazie danych menu, ten sam klucz zostanie dodana w sekcji MenusMerged rejestru. Pakietu VSPackage niczego w sekcji MenusMerged nie należy modyfikować bezpośrednio. W polu danych w tabeli poniżej istnieją trzy przecinkami oddzielone — pola. Pierwsze pole określa pełną ścieżkę pliku zasobu menu:  
   
--   W przypadku pominięcia pierwsze pole menu zasobów są ładowane z satelitarnej biblioteki DLL identyfikowany przez identyfikator GUID pakietu VSPackage.  
+- Jeśli pierwsze pole zostanie pominięty, zasobu menu jest ładowany z satelitarnej biblioteki DLL identyfikowany przez identyfikator GUID pakietu VSPackage.  
   
- Drugie pole identyfikuje menu identyfikator zasobu typu CTMENU:  
+  Drugie pole określa identyfikator zasobu menu o typie CTMENU:  
   
--   Jeśli jest określony identyfikator zasobu i ścieżka pliku jest dostarczana przez pierwszy parametr, zasobów menu są ładowane z pełną ścieżką do pliku.  
+- Jeśli określono identyfikator zasobu, a ścieżka pliku jest dostarczany za pomocą pierwszego parametru, zasobu menu jest ładowany z pełną ścieżką do pliku.  
   
--   Jeżeli identyfikator zasobu, ale nie jest ścieżka do pliku, zasobów menu są ładowane z satelitarnej biblioteki DLL.  
+- Jeśli ścieżka pliku jest, ale określono identyfikator zasobu, zasobu menu jest ładowany z satelitarną bibliotekę DLL.  
   
--   Jeśli podano pełną ścieżkę pliku i pominięcia identyfikator zasobu, załadowania pliku oczekuje pliku CTO.  
+- Jeśli podano pełną ścieżkę pliku i identyfikator zasobu pominięty, plik do załadowania powinien być plikiem Dyrektor ds. technologii.  
   
- Ostatnie pole określa numer wersji dla zasobu CTMENU. Menu można scalać ponownie, zmieniając numer wersji.  
+  Ostatnie pole określa numer wersji dla zasobu CTMENU. Menu można scalać ponownie, zmieniając numer wersji.  
   
 |Nazwa|Typ|Dane|Opis|  
 |----------|----------|----------|-----------------|  
-|% CLSID_Package %|REG_SZ|`,1000,1`|Zasób, który można pobrać informacji o menu.|  
+|CLSID_Package %|REG_SZ|`,1000,1`|Zasób, który można pobrać informacji o menu.|  
   
  Poniższe przykłady znajdują się w rejestrze w kluczu [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].  
   
@@ -242,7 +242,7 @@ Podczas tworzenia nowego typu projektu, należy utworzyć wpisy rejestru, które
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Wartość Identyfikatora zasobu dla szablonów rysunki nowy projekt.|  
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Domyślna ścieżka katalogu nowych projektów. Elementy w tym katalogu będą wyświetlane w **Kreatora nowego projektu** okno dialogowe.|  
 |`SortPriority`|REG_DWORD|`41 (x29)`|Określa kolejność wyświetlania projektów w węźle drzewa **nowy projekt** okno dialogowe.|  
-|`NewProjectDialogOnly`|REG_DWORD|`0`|0 wskazuje, że projekty tego typu są wyświetlane tylko w **nowy projekt** okno dialogowe.|  
+|`NewProjectDialogOnly`|REG_DWORD|`0`|wartość 0 wskazuje, że projekty tego typu nie są wyświetlane tylko w **nowy projekt** okno dialogowe.|  
   
  Poniższy przykład znajduje się w rejestrze w kluczu [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\InstalledProducts].  
   
@@ -254,10 +254,10 @@ Podczas tworzenia nowego typu projektu, należy utworzyć wpisy rejestru, które
   
 |Nazwa|Typ|Dane|Opis|  
 |----------|----------|----------|-----------------|  
-|`Package`|REG_SZ|`%CLSID_Package%`|Identyfikator klasy zarejestrowanych pakiet VSPackage.|  
-|`UseInterface`|REG_DWORD|`1`|wartość 1 oznacza, że interfejs użytkownika będzie służyć do interakcji z tego projektu. 0 wskazuje, że nie interfejs użytkownika.|  
+|`Package`|REG_SZ|`%CLSID_Package%`|Identyfikator klasy zarejestrowanych pakietu VSPackage.|  
+|`UseInterface`|REG_DWORD|`1`|1 wskazuje, że interfejs użytkownika będzie służyć do interakcji z tego projektu. wartość 0 wskazuje, że nie ma żadnych interfejs użytkownika.|  
   
- Pliki the.vsz, określające nowe typy projektu często zawierają wpis RELATIVE_PATH. Ta ścieżka jest określana względem ścieżki określonej w pozycji \ProductDir typu projektu w następującym kluczu Instalatora:  
+ Pliki the.vsz, określające nowych typów projektów często zawierają wpis RELATIVE_PATH. Ta ścieżka jest określana względem ścieżki określonej wpisie \ProductDir typu projektu w następującym kluczu instalacji:  
   
  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup  
   
@@ -265,7 +265,7 @@ Podczas tworzenia nowego typu projektu, należy utworzyć wpisy rejestru, które
   
  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir = C:\Program Files\Microsoft Visual Studio\EnterpriseFrameworks\  
   
- Oznacza to, że Jeśli dołączysz PROJECT_TYPE = EF wpis w pliku .vsz, znalezione środowiska użytkownika .vsz pliki w katalogu ProductDir określony wcześniej.  
+ Oznacza to, że Jeśli dołączysz PROJECT_TYPE = EF wpisu w pliku .vsz znajduje środowiska .vsz swoje pliki w katalogu ProductDir określony wcześniej.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Lista kontrolna: Tworzenie nowych typów projektów](../../extensibility/internals/checklist-creating-new-project-types.md)   

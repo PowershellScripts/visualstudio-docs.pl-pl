@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 966f9dd422137b2966deb23a7c29e328a21957a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef2a2800ecb46f12f9dde4357bf54711a1df8797
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635271"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934681"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Przewodnik: Wywoływanie modelu obiektu klienta SharePoint w rozszerzeniu Eksploratora serwera
   W tym instruktażu pokazano, jak wywołać modelu obiektu klienta SharePoint z rozszerzeniem dla **połączeń SharePoint** w węźle **Eksploratora serwera**. Aby uzyskać więcej informacji o sposobie używania modelu obiektu klienta SharePoint, zobacz [wywoływanie modeli obiektów SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -57,11 +57,11 @@ Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, ab
 ## <a name="create-the-projects"></a>Tworzenie projektów
  Do przeprowadzenia tego instruktażu, należy utworzyć dwa projekty:  
   
--   Projekt VSIX do stworzenia pakietu VSIX do wdrożenia **Eksploratora serwera** rozszerzenia.  
+- Projekt VSIX do stworzenia pakietu VSIX do wdrożenia **Eksploratora serwera** rozszerzenia.  
   
--   Projekt biblioteki klas, który implementuje **Eksploratora serwera** rozszerzenia.  
+- Projekt biblioteki klas, który implementuje **Eksploratora serwera** rozszerzenia.  
   
- Instruktaż należy rozpocząć od utworzenia projektów.  
+  Instruktaż należy rozpocząć od utworzenia projektów.  
   
 #### <a name="to-create-the-vsix-project"></a>Aby utworzyć projekt VSIX  
   

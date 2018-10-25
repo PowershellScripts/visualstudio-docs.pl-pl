@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9da35b83eead06f40452696bb9559d409da8e38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294583"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942403"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Edytor zestawu reguł, okno dialogowe (starsza wersja)
 W tym temacie opisano sposób użycia **Edytor zestawu reguł** okno dialogowe w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -67,19 +67,19 @@ W tym temacie opisano sposób użycia **Edytor zestawu reguł** okno dialogowe w
   
  Wyrażenia obsługują następujące operatory:  
   
--   Operatory relacyjne: ==, =,! =  
+- Operatory relacyjne: ==, =,! =  
   
--   Operatory porównania: <, \<=, >, > =  
+- Operatory porównania: <, \<=, >, > =  
   
--   Operatory arytmetyczne: +, -, *, / MOD  
+- Operatory arytmetyczne: +, -, *, / MOD  
   
--   Operatory logiczne: I, & &, OR &#124; &#124;, nie!  
+- Operatory logiczne: I, & &, OR &#124; &#124;, nie!  
   
--   Operatory bitowe: &,&#124;  
+- Operatory bitowe: &,&#124;  
   
- Kolejność wykonywania wyrażenia następuje reguły pierwszeństwa operatorów języka C#.  
+  Kolejność wykonywania wyrażenia następuje reguły pierwszeństwa operatorów języka C#.  
   
- Aby uzyskać więcej informacji o warunkach, zobacz [za pomocą warunków w przepływach pracy](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
+  Aby uzyskać więcej informacji o warunkach, zobacz [za pomocą warunków w przepływach pracy](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Zatrzymaj i aktualizacji funkcji  
  **Następnie akcje:** i **inne akcje:** wyrażenia obsługują **zatrzymanie** i **aktualizacji** funkcji. Do użycia **zatrzymanie** funkcji, wpisz **zatrzymanie** do **następnie akcji:** lub **Else akcji:** pola tekstowego. **Zatrzymanie** czynność powoduje wykonanie zestawu reguł zatrzymać natychmiast, a sterowanie powraca do wywołującego kodu. Możesz użyć **aktualizacji** funkcji z łańcucha do przodu.  

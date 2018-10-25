@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61e942a1c3cb43bcd2d3d7ef813ed4bd98267a1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75a1fddc6195805b786f4ad343c1c8917129dcdb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949243"
 ---
 # <a name="understanding-instrumentation-data-values"></a>Zapoznanie z wartościami danych instrumentacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,37 +31,37 @@ ms.locfileid: "49298886"
   
  **Wymagania**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Metoda Instrumentacja wprowadza kod na początku i końca funkcji docelowego profilowanych plików binarnych, a przed i po każdym wywołaniu przez te funkcje do innych funkcji. Wprowadzony kod rejestruje następujące czynności:  
+  Metoda Instrumentacja wprowadza kod na początku i końca funkcji docelowego profilowanych plików binarnych, a przed i po każdym wywołaniu przez te funkcje do innych funkcji. Wprowadzony kod rejestruje następujące czynności:  
   
--   Interwał między to zdarzenie kolekcji, a poprzednią.  
+- Interwał między to zdarzenie kolekcji, a poprzednią.  
   
--   Czy system operacyjny wykonał operację w interwale. Na przykład system operacyjny może odczytu lub zapisu na dysku lub przełącznika między wątek docelowy i inny wątek w innym procesie.  
+- Czy system operacyjny wykonał operację w interwale. Na przykład system operacyjny może odczytu lub zapisu na dysku lub przełącznika między wątek docelowy i inny wątek w innym procesie.  
   
- **Wymagania**  
+  **Wymagania**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Dla każdego interwału analizy profiler rekonstruuje stos wywołań, który nie ma pod koniec interwału. Stos wywołań znajduje się lista funkcji, które są aktywne w wyjątkach procesora w punkcie w czasie. Wykonuje kod; w tylko jednej funkcji — (bieżącej funkcji) inne funkcje są łańcuch wywołań funkcji, które wpłynęły na wywołanie funkcji bieżącej (stosu wywołań).  
+  Dla każdego interwału analizy profiler rekonstruuje stos wywołań, który nie ma pod koniec interwału. Stos wywołań znajduje się lista funkcji, które są aktywne w wyjątkach procesora w punkcie w czasie. Wykonuje kod; w tylko jednej funkcji — (bieżącej funkcji) inne funkcje są łańcuch wywołań funkcji, które wpłynęły na wywołanie funkcji bieżącej (stosu wywołań).  
   
- Dla każdej funkcji na stosie wywołań zameldowania interwał analizy profiler dodaje interwał do co najmniej jednej wartości czterech danych dla tej funkcji. Analiza dodaje interwał do wartości danych dla funkcji na podstawie dwóch kryteriów:  
+  Dla każdej funkcji na stosie wywołań zameldowania interwał analizy profiler dodaje interwał do co najmniej jednej wartości czterech danych dla tej funkcji. Analiza dodaje interwał do wartości danych dla funkcji na podstawie dwóch kryteriów:  
   
--   Czy wystąpił interwału w kodzie, funkcji lub w *funkcji podrzędnych* (funkcja została wywołana przy użyciu funkcji).  
+- Czy wystąpił interwału w kodzie, funkcji lub w *funkcji podrzędnych* (funkcja została wywołana przy użyciu funkcji).  
   
--   Czy wystąpiło zdarzenie systemu operacyjnego w interwale.  
+- Czy wystąpiło zdarzenie systemu operacyjnego w interwale.  
   
- Wartości danych dla interwału zakresu funkcję lub dane są nazywane *upłynęło włącznie*, *upłynęło wyłączne*, *aplikacji włącznie*, i  *Aplikacja wyłącznie*:  
+  Wartości danych dla interwału zakresu funkcję lub dane są nazywane *upłynęło włącznie*, *upłynęło wyłączne*, *aplikacji włącznie*, i  *Aplikacja wyłącznie*:  
   
--   Wszystkich interwałów w funkcji są dodawane do wartości danych upłynęło włącznie.  
+- Wszystkich interwałów w funkcji są dodawane do wartości danych upłynęło włącznie.  
   
--   W przypadku interwału w kodzie funkcji i nie znajduje się w funkcji podrzędnych, interwał jest dodawany do wartość danych, który upłynął wyłączne funkcji.  
+- W przypadku interwału w kodzie funkcji i nie znajduje się w funkcji podrzędnych, interwał jest dodawany do wartość danych, który upłynął wyłączne funkcji.  
   
--   Jeśli zdarzenia systemu operacyjnego nie wystąpił w danym okresie, interwał jest dodawany do wartości danych aplikacji (włącznie).  
+- Jeśli zdarzenia systemu operacyjnego nie wystąpił w danym okresie, interwał jest dodawany do wartości danych aplikacji (włącznie).  
   
--   Jeśli zdarzenia systemu operacyjnego nie były wykonywane w zakresie, a interwał podczas bezpośrednie wykonywanie kodu funkcji (czyli go nie wystąpił w funkcji podrzędnych), interwał zostanie dodany do aplikacji wyłączne wartości danych.  
+- Jeśli zdarzenia systemu operacyjnego nie były wykonywane w zakresie, a interwał podczas bezpośrednie wykonywanie kodu funkcji (czyli go nie wystąpił w funkcji podrzędnych), interwał zostanie dodany do aplikacji wyłączne wartości danych.  
   
- Narzędzia profilowania raporty agregują sumę wartości funkcji w sesji profilowania i procesy, wątki i pliki binarne sesji.  
+  Narzędzia profilowania raporty agregują sumę wartości funkcji w sesji profilowania i procesy, wątki i pliki binarne sesji.  
   
 ## <a name="elapsed-inclusive-values"></a>Upłynęło włącznie wartości  
  Całkowity czas, który był poświęcony na wykonywanie funkcji i jej funkcji podrzędnych.  

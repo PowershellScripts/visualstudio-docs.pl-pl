@@ -15,12 +15,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 09cf6f69348c08ec284e074feea8d9a33c488f0b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3674d6ccbda89a2a3ee1de551587ba034ba51c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932627"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Tworzenie kodowanego testu interfejsu użytkownika opartego na danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -204,13 +204,13 @@ Na potrzeby testowania różnych warunków, można uruchomić testy wiele razy z
   
 #### <a name="step-5--run-the-data-driven-test"></a>Krok 5 — Uruchamianie testu opartego na danych  
   
-1.  Sprawdź, czy test jest teraz opartych na danych, ponownie uruchamiając test.  
+1. Sprawdź, czy test jest teraz opartych na danych, ponownie uruchamiając test.  
   
-     Powinien zostać wyświetlony testu za pomocą trzech iteracji, używając wartości z pliku CSV. Sprawdzanie poprawności powinno działać tak dobrze w i testu powinien być wyświetlany jako zakończony powodzeniem w Eksploratorze testów.  
+    Powinien zostać wyświetlony testu za pomocą trzech iteracji, używając wartości z pliku CSV. Sprawdzanie poprawności powinno działać tak dobrze w i testu powinien być wyświetlany jako zakończony powodzeniem w Eksploratorze testów.  
   
- **Wskazówki**  
+   **Wskazówki**  
   
- Aby uzyskać więcej informacji, zobacz [testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 2: Unit Testing: testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188) i [testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 5: Automatyzacja testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196)  
+   Aby uzyskać więcej informacji, zobacz [testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 2: Unit Testing: testowanie wnętrza](http://go.microsoft.com/fwlink/?LinkID=255188) i [testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 5: Automatyzacja testów systemowych](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ## <a name="q--a"></a>Pytania i odpowiedzi  
   

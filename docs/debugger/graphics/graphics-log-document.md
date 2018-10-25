@@ -14,105 +14,106 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 772287d31a3428c3791ead08103f2318763e1701
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eab888fa800e8be695b6dca4cf38f2a0ed478ebb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931106"
 ---
 # <a name="graphics-log-document"></a>Dokument dziennika grafiki
-Dokument dziennika grafiki jest rekord zdarzenia grafiki, które wystąpiły podczas, gdy aplikacja była uruchomiona w obszarze sesję diagnostyki grafiki. Po rejestrowane, można sprawdzić dziennik w analizatora grafiki programu Visual Studio do diagnozowania problemów renderowania i wydajność.  
-  
- To jest jakie dokument dziennika grafiki prawdopodobnie w analizatorze grafiki domen:  
-  
- ![Dziennik grafiki zawierających dwie ramki przechwycone. ] (media/gfx_diag_demo_graphics_log_orientation.png "gfx_diag_demo_graphics_log_orientation")  
-  
-## <a name="understanding-graphics-log-documents"></a>Opis grafiki dziennika dokumentów  
- Za pomocą analizatora grafiki do sprawdzenia dokument dziennika grafiki, można zwizualizować skutków Direct3D zdarzeń w celu renderowania, który wystąpił podczas przechwytywania. Można wskazać regiony obiektu docelowego renderowania, które zawierają nieoczekiwane dane wyjściowe. Po wybraniu piksel w regionie, których dotyczy, można użyć diagnostyki grafiki do zbadania go, jego programów do cieniowania zdarzenia Direct3D, których ona dotyczy, stos wywołań aplikacji, które doprowadziło do tych zdarzeń i obiektów programu DirectX, które obsługują te zdarzenia. Te informacje można użyć do diagnozowania problemów renderowania w aplikacji lub gry.  
-  
- W górnej części okna (**Experiment.vsglog grafiki**) Wyświetla bieżący renderowania danych wyjściowych zaznaczonej ramki i wyświetla część dolnej **listy ramek** zawierający obrazy miniatur ramki przechwycone.  
-  
-#### <a name="to-inspect-a-frame"></a>Aby sprawdzić ramki  
-  
--   W **listy ramek**, wybierz ramki, w której chcesz sprawdzić. Renderowanie danych wyjściowych w górnej części dokument dziennika grafiki zostało zaktualizowane do wyświetlenia zaznaczonej ramki.  
-  
+Dokument dziennika grafiki jest rekord zdarzenia grafiki, które wystąpiły, gdy aplikacja została uruchomiona w ramach sesji diagnostyki grafiki. Po rejestrowane, można sprawdzić dziennik w analizatora grafiki programu Visual Studio do diagnozowania problemów z renderowaniem i wydajności.  
+
+ Jest to, jakie dokument dziennika grafiki wygląda w analizatorze grafiki domen:  
+
+ ![Dziennik grafiki zawierający dwa przechwyconych klatek. ](media/gfx_diag_demo_graphics_log_orientation.png "gfx_diag_demo_graphics_log_orientation")  
+
+## <a name="understanding-graphics-log-documents"></a>Dokumenty dziennika grafiki opis  
+ Za pomocą analizatora grafiki do zbadania dokument dziennika grafiki, można wizualizować skutków zdarzenia Direct3D dla obiektu docelowego renderowania, który wystąpił podczas przechwytywania. Można wyznaczyć regiony obiektu docelowego renderowania, które zawierają nieoczekiwane dane wyjściowe. Po wybraniu piksel w regionie, których to dotyczy, umożliwia Graphics Diagnostics sprawdź go, jego programów do cieniowania, zdarzenia Direct3D, które jej wpływ, stos wywołań aplikacji, które doprowadziło do tych zdarzeń i obiektów programu DirectX, które obsługują te zdarzenia. Te informacje można użyć do diagnozowania problemów z renderowaniem w grach i aplikacjach.  
+
+ W górnej części okna (**Experiment.vsglog grafiki**) Wyświetla bieżącego dane wyjściowe docelowy renderowania zaznaczonej klatki i wyświetla część dolnej **lista ramek** zawierający obrazy miniatur przechwycone ramki.  
+
+#### <a name="to-inspect-a-frame"></a>Aby sprawdzić ramkę  
+
+-   W **lista ramek**, wybierz ramkę, która ma zostać sprawdzony. Dane wyjściowe docelowego renderowania w górnej części dokumentu dziennika grafiki jest zaktualizowany i będzie pokazywał zaznaczonej klatki.  
+
 #### <a name="to-inspect-a-pixel"></a>Aby sprawdzić piksel  
-  
--   W górnej części dokument dziennika grafiki wybierz pikseli, który ma z danych wyjściowych docelowego renderowania. Po wybraniu piksel służy **Historia pikseli grafiki** okna, aby wyświetlić szczegółowe informacje na temat wybranego piksela. Aby uzyskać więcej informacji, zobacz [historii pikseli](graphics-pixel-history.md).  
-  
-## <a name="playback-machine"></a>Maszyny odtwarzania  
- Wyświetlany również w prawym górnym rogu **listy ramek** jest **maszyny odtwarzania**. Maszynie odtwarzającej jest komputera lub urządzenia, które służy do odtwarzania zdarzeń grafiki z plikiem dziennika grafiki podczas sesji diagnostyki grafiki nowsze. Przy użyciu innego urządzenia zamiast komputerze deweloperskim, aby odtworzyć zdarzeń przechwyconych, dokładniej odtworzyć środowiska wykonawczego, w której występuje problem — na przykład można użyć na komputerze, który ma inną grafiki sprzętu lub sterowników niż te, które używa na komputerze deweloperskim, lub inne rodzaje urządzeń, takich jak urządzenia z systemem tablet opartego na architekturze ARM Windows RT lub Windows Phone.  
-  
+
+-   W górnej części dokumentu dziennika grafiki wybierz piksel, który chcesz z danych wyjściowych docelowego renderowania. Po wybraniu pikseli, można użyć **Historia pikseli grafiki** okna, aby wyświetlić szczegółowe informacje na temat wybranego piksela. Aby uzyskać więcej informacji, zobacz [historii pikseli](graphics-pixel-history.md).  
+
+## <a name="playback-machine"></a>Maszyna odtwarzająca  
+ Wyświetlany w prawym górnym rogu **lista ramek** jest **maszynę odtwarzającą**. Maszyna odtwarzania jest komputerem lub urządzeniem, który służy do odtwarzania zdarzenia grafiki z pliku dziennika grafiki podczas sesji diagnostyki grafiki nowsze. Za pomocą innego urządzenia zamiast komputera deweloperskiego do odtwarzania przechwytywanych zdarzeń, bardziej precyzyjne można odtworzyć środowiska wykonawczego, w której występuje problem — na przykład, można użyć maszyny, sprzęt graficzny różnych lub sterowniki niż te, które korzysta z komputera deweloperskiego lub inne rodzaje urządzeń, takich jak tablety przeznaczone dla komputerów z procesorem ARM z systemem Windows RT lub urządzenia Windows Phone.  
+
  Aby uzyskać informacje o sposobie określania maszyny odtwarzania, zobacz [porady: zmiana maszyny odtwarzania diagnostyki grafiki](how-to-change-the-graphics-diagnostics-playback-machine.md).  
-  
-## <a name="graphics-log-summary-information"></a>Podsumowanie informacji dziennika grafiki  
- Gdy plik dziennika grafiki jest aktywny dokument **właściwości** okno wyświetla informacje o środowisku, które hostowana Sesja przechwytywania diagnostyki grafiki. Kilka kategorii informacji są wyświetlane.  
-  
- **Direct3D informacji**  
- Wyświetla informacje o funkcjach sprzętu i sterownik karty wideo, który został użyty podczas sesji przechwytywania.  
-  
+
+## <a name="graphics-log-summary-information"></a>Podsumowanie dziennika grafiki  
+ Gdy plik dziennika grafiki jest aktywny dokument **właściwości** okna wyświetla informacje o środowisku, który hostuje sesji przechwytywania diagnostyki grafiki. Zostaną wyświetlone różne kategorie informacji.  
+
+ **Informacje o programie Direct3D**  
+ Wyświetla informacje na temat funkcji sprzętu i sterownik karty wideo, który został użyty podczas sesji przechwytywania.  
+
 |Właściwość|Opis|  
 |--------------|-----------------|  
-|**Format 10-bitowy XR High Color**|**Wartość true,** Jeśli 10-bitowy XR kolor wysokiej format jest obsługiwany; w przeciwnym razie **False**.|  
-|**DirectCompute CS 4.x**|**Wartość true,** Jeśli obliczeniowe programu do cieniowania 4.0 jest obsługiwany; w przeciwnym razie **False**.|  
-|**Podwójne dokładności programów do cieniowania**|**Wartość true,** Jeśli karta graficzna obsługuje podwójnej precyzji wartości zmiennoprzecinkowych (64-bitowy); w przeciwnym razie **False**.|  
-|**Sterownik list poleceń**|**Wartość true,** , gdy sterownik obsługuje list poleceń; w przeciwnym razie **False**.|  
-|**Tworzy współbieżnych sterownik**|**Wartość true,** , gdy sterownik obsługuje równoczesnych tworzenia (asynchronicznej); w przeciwnym razie **False**.|  
-|**Rozszerzone formaty (BGRA itp.)**|**Wartość true,** Jeśli rozszerzonej formatach, takich jak BGRA są obsługiwane; w przeciwnym razie **False**.|  
-|**Maksymalny poziom funkcjonalności Sprzętowej**|Wyświetla najwyższego poziomu funkcji, która jest obsługiwana przez kartę wideo.|  
-  
+|**Format 10-bitowy XR High Color**|**Wartość true,** Jeśli format trybie high-color XR 10-bitowy jest obsługiwana; w przeciwnym razie **False**.|  
+|**DirectCompute CS 4.x**|**Wartość true,** Jeśli 4.0 programu do cieniowania obliczenia jest obsługiwana; w przeciwnym razie **False**.|  
+|**Podwójne dokładności programów do cieniowania**|**Wartość true,** Jeśli karty graficznej obsługuje wartości zmiennoprzecinkowych (64-bitowy) podwójnej precyzji; w przeciwnym razie **False**.|  
+|**Listy poleceń sterownika**|**Wartość true,** , gdy sterownik obsługuje listy poleceń; w przeciwnym razie **False**.|  
+|**Tworzenie współbieżne sterownika**|**Wartość true,** Jeśli sterownik obsługuje równoczesne tworzenie (asynchroniczny); w przeciwnym razie **False**.|  
+|**Formaty rozszerzone (BGRA itd.)**|**Wartość true,** Jeśli formaty rozszerzone, takich jak BGRA są obsługiwane; w przeciwnym razie **False**.|  
+|**Maksymalny poziom funkcjonalności Sprzętowej**|Wyświetla najwyższy poziom funkcji, która jest obsługiwana przez kartę wideo.|  
+
  **Wyświetlanie informacji**  
- Zawiera informacje dotyczące karty graficznej, który został użyty podczas sesji przechwytywania.  
-  
+ Wyświetla informacje dotyczące karty graficznej, który został użyty podczas sesji przechwytywania.  
+
 |Właściwość|Opis|  
 |--------------|-----------------|  
 |**Opis**|Ciąg opisu karty wyświetlania.|  
-|**Wyświetlanie pamięci**|Ilość pamięci, która jest zainstalowana na karty graficznej.|  
+|**Pamięć karty graficznej**|Ilość pamięci, która jest zainstalowana na karty graficznej.|  
 |**Nazwa sterownika**|Nazwa sterownika karty graficznej.|  
 |**Wersja sterownika**|Wersja sterownika karty graficznej.|  
 |**Nazwa**|Nazwa karty graficznej.|  
-  
- **Plik eksperymentu**  
- Zawiera informacje o pliku eksperymentu, który został skojarzony z sesją przechwytywania.  
-  
+
+ **Plik eksperymentalny**  
+ Zawiera informacje o pliku eksperymentu, która jest skojarzona z sesji przechwytywania.  
+
 |Właściwość|Opis|  
 |--------------|-----------------|  
-|**Path**|Ścieżka pliku .vsglog. **Uwaga:** w obszarze przechwytywania starszej wersji, ta właściwość jest używana.|  
-  
+|**Path**|Ścieżka pliku .vsglog. **Uwaga:** w starszej wersji przechwytywania, ta właściwość jest używana.|  
+
  **Informacje o module**  
- Wyświetla nazwę i wersję bibliotek dołączanych dynamicznie (dll), które zostały załadowane przez aplikację podczas sesji przechwytywania.  
-  
+ Wyświetla nazwę i wersję biblioteki dołączanej dynamicznie (dll), które zostały załadowane przez aplikację podczas sesji przechwytywania.  
+
  **Informacje o systemie**  
- Zawiera informacje dotyczące sprzętu i systemu operacyjnego, hostującego aplikację podczas sesji przechwytywania.  
-  
+ Wyświetla informacje dotyczące sprzętu i systemu operacyjnego, który obsługiwał aplikację podczas sesji przechwytywania.  
+
 |Właściwość|Opis|  
 |--------------|-----------------|  
-|**Pamięci**|Ilość pamięci zainstalowanej w komputerze.|  
-|**Architektura systemu operacyjnego**|Wartość docelowa architektura Procesora systemu operacyjnego.|  
+|**Pamięć**|Ilość pamięci, który jest zainstalowany na komputerze.|  
+|**Architektura systemu operacyjnego**|Obiekt docelowy architekturze Procesora systemu operacyjnego.|  
 |**Wersja systemu operacyjnego**|Wersja systemu operacyjnego.|  
 |**Procesor**|Procesor, który jest zainstalowany na komputerze.|  
-|**Architektura aplikacji docelowej**|Architektura Procesora w aplikacji docelowej. Może to być inna niż **architektury systemu operacyjnego**.|  
-  
+|**Architektura aplikacji docelowej**|Obiekt docelowy architektury procesora CPU w aplikacji. Może to być inny niż **architektury systemu operacyjnego**.|  
+
  **Aplikacja docelowa**  
- Wyświetla informacje o aplikacji, która jest przedmiotem sesję przechwytywania.  
-  
+ Wyświetla informacje o aplikacji, które stanowią przedmiot sesji przechwytywania.  
+
 |Właściwość|Opis|  
 |--------------|-----------------|  
 |**Data/godzina ostatniej modyfikacji**|Data i godzina, że aplikacja została skompilowana.|  
 |**Path**|Ścieżka aplikacji.|  
-|**Identyfikator procesu**|Identyfikator procesu, który zostało przekazane do aplikacji.|  
+|**Identyfikator procesu**|Identyfikator procesu, który został określony dla aplikacji.|  
 |**Wersja**|Wersja aplikacji.|  
-  
+
  **Plik dziennika VSG**  
  Wyświetla informacje o dokument dziennika grafiki.  
-  
-|Właściwość|Opis|  
-|--------------|-----------------|  
-|**Utworzone przez**|Nazwa aplikacji, która utworzona grafiki dziennika dokumentu. Na przykład, jeśli sesja przechwytywania zostało zainicjowane w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (Ręczne przechwytywania) wartość tej właściwości jest [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].|  
-|**Czas rozpoczęcia sesji**|Data i godzina rozpoczęcia sesji przechwytywania.|  
-|**Rozmiar**|Rozmiar dokument dziennika grafiki.|  
-  
+
+
+| Właściwość | Opis |
+|------------------------| - |
+| **Utworzone przez** | Nazwa aplikacji, utworzenia grafiki dziennika dokumentu. Załóżmy, że sesja przechwytywania zostało zainicjowane z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (Ręczne przechwytywanie) wartość tej właściwości jest [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
+| **Czas rozpoczęcia sesji** | Data i godzina rozpoczęcia sesji przechwytywania. |
+| **Rozmiar** | Rozmiar dokument dziennika grafiki. |
+
 ## <a name="see-also"></a>Zobacz też  
- [Wskazówki: Brak obiektów spowodowany cieniowaniem wierzchołków](walkthrough-missing-objects-due-to-vertex-shading.md)   
+ [Przewodnik: Brak obiektów spowodowany cieniowaniem wierzchołków](walkthrough-missing-objects-due-to-vertex-shading.md)   
  [Przewodnik: debugowanie błędów renderowania spowodowanych cieniowaniem](walkthrough-debugging-rendering-errors-due-to-shading.md)

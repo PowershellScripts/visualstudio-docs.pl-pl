@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 014f7d7c76577cd9a749807eb994785d45f56e68
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9bb652ee6b7ea9500d2ac153ca06d8b11430c9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182493"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942552"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Odczytywanie modelu UML w kodzie programu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,31 +81,31 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
 #### <a name="to-add-references-to-read-a-model-in-a-stand-alone-application"></a>Aby dodać odwołania do odczytu modelu w aplikacji autonomicznej.  
   
-1.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt, w którym jest kompilowana aplikacja, a następnie kliknij przycisk **właściwości**. W edytorze właściwości w **aplikacji** kartę, należy ustawić **platformę docelową** do wymaganej wersji systemu .NET Framework.  
+1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt, w którym jest kompilowana aplikacja, a następnie kliknij przycisk **właściwości**. W edytorze właściwości w **aplikacji** kartę, należy ustawić **platformę docelową** do wymaganej wersji systemu .NET Framework.  
   
-2.  Dodaj [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] odwołania potrzebne do uzyskania dostępu do modeli UML, zazwyczaj:  
+2. Dodaj [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] odwołania potrzebne do uzyskania dostępu do modeli UML, zazwyczaj:  
   
-    -   Microsoft.VisualStudio.Uml.Interfaces.dll  
+   -   Microsoft.VisualStudio.Uml.Interfaces.dll  
   
-    -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
+   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
   
-3.  Oprócz odniesień wymienionych w poprzednich sekcjach, Dodaj następujące odwołania do projektu z **\Common7\IDE\PrivateAssemblies programu Visual Studio [wersja] \Program Files\Microsoft**:  
+3. Oprócz odniesień wymienionych w poprzednich sekcjach, Dodaj następujące odwołania do projektu z **\Common7\IDE\PrivateAssemblies programu Visual Studio [wersja] \Program Files\Microsoft**:  
   
-    -   Microsoft.VisualStudio.Uml.dll  
+   - Microsoft.VisualStudio.Uml.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.ModelStore.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.ModelStore.Dsl.dll  
   
      Jeśli chcesz odczytać diagramy w aplikacji może potrzebować także tych odwołań:  
   
-    -   Microsoft.VisualStudio.TeamArchitect.ActivityDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.ActivityDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.ComponentDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.ComponentDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.LogicalClassDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.LogicalClassDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.SequenceDesigner.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.SequenceDesigner.Dsl.dll  
   
-    -   Microsoft.VisualStudio.TeamArchitect.UseCase.Dsl.dll  
+   - Microsoft.VisualStudio.TeamArchitect.UseCase.Dsl.dll  
   
 ## <a name="see-also"></a>Zobacz też  
  [Programowanie za pomocą interfejsu API UML](../modeling/programming-with-the-uml-api.md)   

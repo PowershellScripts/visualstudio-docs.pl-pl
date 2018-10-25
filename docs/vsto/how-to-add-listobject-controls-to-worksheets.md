@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce398f18913063d770aa180a06ff8e2017aebd86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949256"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Porady: dodawanie formantów ListObject do arkuszy
   Możesz dodać <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolek do arkusza programu Microsoft Office Excel, w czasie projektowania i w czasie wykonywania w projektach na poziomie dokumentu.  
@@ -32,13 +32,13 @@ ms.locfileid: "35677132"
   
  W tym temacie opisano następujące zadania:  
   
--   [Dodawanie formantów ListObject w czasie projektowania](#designtime)  
+- [Dodawanie formantów ListObject w czasie projektowania](#designtime)  
   
--   [Dodawanie formantów ListObject w czasie wykonywania w projekcie na poziomie dokumentu](#runtimedoclevel)  
+- [Dodawanie formantów ListObject w czasie wykonywania w projekcie na poziomie dokumentu](#runtimedoclevel)  
   
--   [Dodawanie formantów ListObject w czasie wykonywania w projekcie dodatku narzędzi VSTO](#runtimeaddin)  
+- [Dodawanie formantów ListObject w czasie wykonywania w projekcie dodatku narzędzi VSTO](#runtimeaddin)  
   
- Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Excel.ListObject> formantów, zobacz [kontrolki ListObject](../vsto/listobject-control.md).  
+  Aby uzyskać więcej informacji na temat <xref:Microsoft.Office.Tools.Excel.ListObject> formantów, zobacz [kontrolki ListObject](../vsto/listobject-control.md).  
   
 ##  <a name="designtime"></a> Dodawanie formantów ListObject w czasie projektowania  
  Istnieje kilka sposobów, aby dodać <xref:Microsoft.Office.Tools.Excel.ListObject> kontrolek do arkusza w projekcie na poziomie dokumentu, w czasie projektowania: Z programu Excel, programu Visual Studio **przybornika**i z **źródeł danych** okna.  

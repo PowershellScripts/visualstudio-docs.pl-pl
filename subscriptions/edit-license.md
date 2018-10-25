@@ -9,12 +9,12 @@ description: Dowiedz się, jak Administratorzy mogą edytować przypisania subsk
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d5d781f682372203e118fc6aaf1bfb51ea8bf652
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 588568521b52b6c21c93b6488829b5055d12048b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942468"
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Edytowanie przypisania subskrypcji programu Visual Studio
 
@@ -25,7 +25,7 @@ Można edytować informacje o subskrybenta, aby poprawić błędy lub zaktualizo
 
 Aby edytować subskrybenta, wybierz wielokropek (...), które pojawiają się obok adres e-mail subskrybenta, po umieszczeniu wskaźnika myszy nad nim. Pojawi się listy rozwijanej.  Wybierz **Edytuj** Aby zmodyfikować szczegóły subskrybenta. Możesz także dwukrotnie kliknąć na subskrybenta wierszy w siatce, aby otworzyć okno edycji.
 > [!div class="mx-imgBorder"]
-> ![Wybierz subskrybenta do edycji](_img\edit-license\select-subscriber.png)
+> ![Wybierz subskrybenta do edycji](_img/edit-license/select-subscriber.png)
 
 Możesz zaktualizować imię, nazwisko subskrybenta, kraj, język i pliki do pobrania. Edytuj informacje na subskrybenta, a następnie kliknij przycisk **Zapisz**.
 
@@ -39,17 +39,17 @@ Możesz edytować wielu subskrybentów jednocześnie przy użyciu procesu edycji
    > [!IMPORTANT]
    > Subskrypcja poziomy (tj. Enterprise, Professional, itp.) i identyfikatorów GUID subskrypcji nie może być zmieniona.  Jeśli spróbujesz przekazać pliki z następującymi elementami zmienione przekazywanie zakończy się niepowodzeniem.  
 
-1.  Aby edytować wielu subskrybentów jednocześnie, przejdź do karty subskrybentów. Na Wstążce u góry kliknij **zbiorczo edytować**. 
+1. Aby edytować wielu subskrybentów jednocześnie, przejdź do karty subskrybentów. Na Wstążce u góry kliknij **zbiorczo edytować**. 
 
-2.  Edycja zbiorcza korzysta z szablonu programu Excel, należy edytować informacje abonenta. W polu edycji zbiorczej kliknij **eksportu ten skoroszyt programu excel** można pobrać bieżącą listę subskrybentów wraz ze wszystkimi informacjami. 
-    > [!div class="mx-imgBorder"]
-    > ![Edytowanie eksportu licencję — lista Edycja zbiorcza](_img\edit-license\edit-license-bulk-edit-export.png)
+2. Edycja zbiorcza korzysta z szablonu programu Excel, należy edytować informacje abonenta. W polu edycji zbiorczej kliknij **eksportu ten skoroszyt programu excel** można pobrać bieżącą listę subskrybentów wraz ze wszystkimi informacjami. 
+   > [!div class="mx-imgBorder"]
+   > ![Edytowanie eksportu licencję — lista Edycja zbiorcza](_img/edit-license/edit-license-bulk-edit-export.png)
 
-3.  Następnie należy zapisać plik lokalnie, można łatwo znaleźć go i wprowadź niezbędne zmiany przed ich przekazaniem. Do zapewnienia pomyślnego wysłania **nie należy ich edytować poziomie subskrypcji lub identyfikator GUID subskrypcji** jako spowodowałoby przekazywania nie powiedzie się. 
+3. Następnie należy zapisać plik lokalnie, można łatwo znaleźć go i wprowadź niezbędne zmiany przed ich przekazaniem. Do zapewnienia pomyślnego wysłania **nie należy ich edytować poziomie subskrypcji lub identyfikator GUID subskrypcji** jako spowodowałoby przekazywania nie powiedzie się. 
 
-4.  Wróć do portalu administratora subskrypcji programu Visual Studio i w oknie dialogowym Edycja zbiorcza, kliknij przycisk **Przeglądaj**. Wybierz plik programu Excel został zapisany, a następnie kliknij przycisk **OK**. Postęp przekazywania zobaczą na ekranie.
-    > [!div class="mx-imgBorder"]    
-    > ![Edytowanie licencję — przekazywanie pliku Edycja zbiorcza](_img\edit-license\edit-license-bulk-file-upload1.png)
+4. Wróć do portalu administratora subskrypcji programu Visual Studio i w oknie dialogowym Edycja zbiorcza, kliknij przycisk **Przeglądaj**. Wybierz plik programu Excel został zapisany, a następnie kliknij przycisk **OK**. Postęp przekazywania zobaczą na ekranie.
+   > [!div class="mx-imgBorder"]    
+   > ![Edytowanie licencję — przekazywanie pliku Edycja zbiorcza](_img/edit-license/edit-license-bulk-file-upload1.png)
 
-5.  Po przekazaniu pliku, zobaczysz powiadomienie z informacją o tym, że było pomyślne. W tym momencie zmiany zostaną odzwierciedlone w informacji dotyczących subskrybenta. 
+5. Po przekazaniu pliku, zobaczysz powiadomienie z informacją o tym, że było pomyślne. W tym momencie zmiany zostaną odzwierciedlone w informacji dotyczących subskrybenta. 
 

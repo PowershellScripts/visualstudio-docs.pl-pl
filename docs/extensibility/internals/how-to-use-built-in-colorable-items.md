@@ -14,26 +14,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 658b024a57912bf96a7988363f2bf363e9cb1f0a
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b537c28f34faff1eff0502642236413f2ade2da1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942169"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Porady: używanie wbudowanych elementów z możliwością kolorowania
 Przed użyciem wbudowanych elementów z możliwością kolorowania użytkownik musi najpierw zasygnalizowania do zintegrowanego środowiska programistycznego (IDE) są one udostępniane własne niestandardowe elementy z możliwością kolorowania, w tym przypadku byłaby <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> obiektów. Możesz to zrobić, ustawiając wpis rejestru dla usługi w języka.  
   
 ## <a name="to-use-built-in-colorable-items"></a>Aby użyć wbudowanych elementów z możliwością kolorowania  
   
-1.  W obszarze **HKEY_LOCAL_MACHINE\VisualStudio\\usług \Languages\Language < X.Y >\\< nazwa języka\>**, gdzie \<X.Y > wersja [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i \<Nazwa języka > jest nazwą Twojego języka, Utwórz wartości wpisu rejestru DWORD o nazwie **RequestStockColors**.  
+1. W obszarze **HKEY_LOCAL_MACHINE\VisualStudio\\usług \Languages\Language < X.Y >\\< nazwa języka\>**, gdzie \<X.Y > wersja [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] i \<Nazwa języka > jest nazwą Twojego języka, Utwórz wartości wpisu rejestru DWORD o nazwie **RequestStockColors**.  
   
-2.  Ustaw **RequestStockColors** wartości wpisu rejestru w celu *1*.  
+2. Ustaw **RequestStockColors** wartości wpisu rejestru w celu *1*.  
   
-     Po utworzeniu wpisu rejestru colorizer Twojej firmy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metoda może używać członkowie <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> wyliczeniu, aby wypełnić tablicę atrybutów koloru do użycia przez edytor.  
+    Po utworzeniu wpisu rejestru colorizer Twojej firmy <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> metoda może używać członkowie <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> wyliczeniu, aby wypełnić tablicę atrybutów koloru do użycia przez edytor.  
   
-    > [!NOTE]
-    >  Nie należy ustawiać ten wpis rejestru, jeśli udostępniasz niestandardowe elementy z możliwością kolorowania. Aby uzyskać więcej informacji, zobacz [niestandardowe elementy z możliwością kolorowania](../../extensibility/internals/custom-colorable-items.md).  
+   > [!NOTE]
+   >  Nie należy ustawiać ten wpis rejestru, jeśli udostępniasz niestandardowe elementy z możliwością kolorowania. Aby uzyskać więcej informacji, zobacz [niestandardowe elementy z możliwością kolorowania](../../extensibility/internals/custom-colorable-items.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Kolorowanie składni w edytorach niestandardowych](../../extensibility/syntax-coloring-in-custom-editors.md)   

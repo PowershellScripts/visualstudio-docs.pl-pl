@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c38affa6611f716b6d66eebcc16d5d82c2a8ae6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e10387a775c13fd67218b0a52626b4537b01273a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293881"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938477"
 ---
 # <a name="historical-debugging"></a>Debugowanie historyczne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,29 +69,29 @@ private static int AddInt(int add)
   
  Firma Microsoft będzie przyjęto założenie, że oczekiwana wartość `resultInt` po wywołaniu `AddAll()` wynosi 20 (zwiększanie wyniku `testInt` 20 razy). (Przyjmiemy również, że nie widzisz usterkę w `AddInt()`). Jednak wynik jest faktycznie 44. Jak możemy znaleźć usterki bez krokowe `AddAll()` 10 razy? Możemy użyć debugowania historycznego, aby znaleźć usterki szybciej i łatwiej. Oto jak:  
   
-1.  W menu Narzędzia / Opcje / IntelliTrace / ogólne, upewnij się, że IntelliTrace jest włączony i wybierz zdarzenia IntelliTrace i wywołania opcji informacje. Jeśli nie zaznaczysz tej opcji, nie będzie można zobaczyć trasę nawigacji (jak wyjaśniono poniżej).  
+1. W menu Narzędzia / Opcje / IntelliTrace / ogólne, upewnij się, że IntelliTrace jest włączony i wybierz zdarzenia IntelliTrace i wywołania opcji informacje. Jeśli nie zaznaczysz tej opcji, nie będzie można zobaczyć trasę nawigacji (jak wyjaśniono poniżej).  
   
-2.  Ustaw punkt przerwania na `Console.WriteLine(resultInt);` wiersza.  
+2. Ustaw punkt przerwania na `Console.WriteLine(resultInt);` wiersza.  
   
-3.  Rozpocznij debugowanie. Kod jest wykonywany punkt przerwania. W **lokalne** okna, możesz zobaczyć, że wartość `resultInt` jest 44.  
+3. Rozpocznij debugowanie. Kod jest wykonywany punkt przerwania. W **lokalne** okna, możesz zobaczyć, że wartość `resultInt` jest 44.  
   
-4.  Otwórz **narzędzia diagnostyczne** okna (**debugowanie / Pokaż narzędzia diagnostyczne**). W oknie Kod powinien wyglądać następująco:  
+4. Otwórz **narzędzia diagnostyczne** okna (**debugowanie / Pokaż narzędzia diagnostyczne**). W oknie Kod powinien wyglądać następująco:  
   
-     ![Okno kodu w punkcie przerwania](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+    ![Okno kodu w punkcie przerwania](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
-5.  Powinien zostać wyświetlony podwójną strzałkę obok lewy margines, tuż nad punktu przerwania. Ten obszar nosi nazwę trasę nawigacji i jest używana do debugowania historycznego. Kliknij strzałkę.  
+5. Powinien zostać wyświetlony podwójną strzałkę obok lewy margines, tuż nad punktu przerwania. Ten obszar nosi nazwę trasę nawigacji i jest używana do debugowania historycznego. Kliknij strzałkę.  
   
-     W oknie Kod powinien zostać wyświetlony, poprzedni wiersz kodu (`int resultInt = AddIterative(testInt);`) jest kolor różowy. Nad oknem powinien zostać wyświetlony komunikat, który nastąpi przekierowanie do debugowania historycznego.  
+    W oknie Kod powinien zostać wyświetlony, poprzedni wiersz kodu (`int resultInt = AddIterative(testInt);`) jest kolor różowy. Nad oknem powinien zostać wyświetlony komunikat, który nastąpi przekierowanie do debugowania historycznego.  
   
-     W oknie kod wygląda teraz następująco:  
+    W oknie kod wygląda teraz następująco:  
   
-     ![Okno kodu w trybie debugowania historycznego](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+    ![Okno kodu w trybie debugowania historycznego](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6.  Teraz możesz wejść do `AddAll()` — metoda (**F11**, lub **Step Into** przycisk trasę nawigacji. Krok do przodu (**F10**, lub **przejdź do następnego wywołania** w trasę nawigacji. Różowa linia jest teraz dostępny w `j = AddInt(j);` wiersza. **F10** w tym przypadku nie wkracza do następnego wiersza kodu. Zamiast tego przechodzi do następnego wywołania funkcji. Debugowanie historyczne przechodzi z wywołaniami i pomija wierszy kodu, które nie obejmują wywołania funkcji.  
+6. Teraz możesz wejść do `AddAll()` — metoda (**F11**, lub **Step Into** przycisk trasę nawigacji. Krok do przodu (**F10**, lub **przejdź do następnego wywołania** w trasę nawigacji. Różowa linia jest teraz dostępny w `j = AddInt(j);` wiersza. **F10** w tym przypadku nie wkracza do następnego wiersza kodu. Zamiast tego przechodzi do następnego wywołania funkcji. Debugowanie historyczne przechodzi z wywołaniami i pomija wierszy kodu, które nie obejmują wywołania funkcji.  
   
-7.  Teraz Wkrocz `AddInt()` metody. Powinien zostać wyświetlony błąd, w tym kodzie natychmiast.  
+7. Teraz Wkrocz `AddInt()` metody. Powinien zostać wyświetlony błąd, w tym kodzie natychmiast.  
   
- Procedura ta po prostu rysy powierzchni co można zrobić za pomocą debugowania historycznego. Aby dowiedzieć się więcej o różnych ustawieniach i efekty różnych przycisków w trasę nawigacji, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).
+   Procedura ta po prostu rysy powierzchni co można zrobić za pomocą debugowania historycznego. Aby dowiedzieć się więcej o różnych ustawieniach i efekty różnych przycisków w trasę nawigacji, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).
 
 
 

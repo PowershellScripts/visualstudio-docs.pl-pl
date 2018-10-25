@@ -15,12 +15,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 37fe948838a5263eca2107e2e868e2dc49cdf2a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932556"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Wskazówki: generowanie kodu przy użyciu szablonów tekstowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,15 +100,15 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-add-an-xml-file"></a>Aby dodać plik XML  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, kliknij przycisk **Dodaj** a następnie kliknij przycisk **nowy element**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, kliknij przycisk **Dodaj** a następnie kliknij przycisk **nowy element**.  
   
-2.  W **Dodaj nowy element** okno dialogowe, wybierz opcję **pliku XML** z **szablony** okienka.  
+2. W **Dodaj nowy element** okno dialogowe, wybierz opcję **pliku XML** z **szablony** okienka.  
   
-3.  Dodaj zawartość próbki do pliku.  
+3. Dodaj zawartość próbki do pliku.  
   
-4.  W ramach tego przewodnika nadaj plikowi nazwę `exampleXml.xml`. Ustaw zawartość pliku do pliku XML, pokazano w poprzedniej sekcji.  
+4. W ramach tego przewodnika nadaj plikowi nazwę `exampleXml.xml`. Ustaw zawartość pliku do pliku XML, pokazano w poprzedniej sekcji.  
   
- .  
+   .  
   
 ### <a name="add-a-test-code-file"></a>Dodaj plik kodu testu  
  Dodaj plik języka C# do projektu i zapisać w nim próbki kodu, który chcesz mieć możliwość zapisywania. Na przykład:  
@@ -140,33 +140,33 @@ namespace MyProject
   
 ##### <a name="to-add-a-text-template-file-to-your-project"></a>Aby dodać plik szablonu tekstu do projektu  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, kliknij przycisk **Dodaj**, a następnie kliknij przycisk **nowy element**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy projekt, kliknij przycisk **Dodaj**, a następnie kliknij przycisk **nowy element**.  
   
-2.  W **Dodaj nowy element** wybierz okno dialogowe **szablon tekstowy** z **szablony** okienka.  
+2. W **Dodaj nowy element** wybierz okno dialogowe **szablon tekstowy** z **szablony** okienka.  
   
-    > [!NOTE]
-    >  Upewnij się, że dodano szablonu tekstu, a nie wstępnie przetworzony szablon tekstu.  
+   > [!NOTE]
+   >  Upewnij się, że dodano szablonu tekstu, a nie wstępnie przetworzony szablon tekstu.  
   
-3.  W pliku, w dyrektywie szablonu, należy zmienić `hostspecific` atrybutu `true`.  
+3. W pliku, w dyrektywie szablonu, należy zmienić `hostspecific` atrybutu `true`.  
   
-     Ta zmiana spowoduje włączenie kod szablonu w celu uzyskania dostępu do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usług.  
+    Ta zmiana spowoduje włączenie kod szablonu w celu uzyskania dostępu do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usług.  
   
-4.  W dyrektywie wyjścia Zmień rozszerzenie atrybut "CS", tak, aby szablon generuje plik języka C#. W projekcie języka Visual Basic może go zmienić na ".vb".  
+4. W dyrektywie wyjścia Zmień rozszerzenie atrybut "CS", tak, aby szablon generuje plik języka C#. W projekcie języka Visual Basic może go zmienić na ".vb".  
   
-5.  Zapisz plik. Na tym etapie pliku szablonu tekstu powinien zawierać następujące wiersze:  
+5. Zapisz plik. Na tym etapie pliku szablonu tekstu powinien zawierać następujące wiersze:  
   
-    ```  
-    <#@ template debug="false" hostspecific="true" language="C#" #>  
-    <#@ output extension=".cs" #>  
-    ```  
+   ```  
+   <#@ template debug="false" hostspecific="true" language="C#" #>  
+   <#@ output extension=".cs" #>  
+   ```  
   
- .  
+   .  
   
- Należy zauważyć, że pliku CS pojawia się w Eksploratorze rozwiązań jako podmiot zależny firmy pliku szablonu. Można go było wyświetlić, klikając przycisk [+] obok nazwy pliku szablonu. Ten plik jest generowany na podstawie pliku szablonu Zapisz lub zespół odbiegać od pliku szablonu. Wygenerowany plik zostanie skompilowany w ramach projektu.  
+   Należy zauważyć, że pliku CS pojawia się w Eksploratorze rozwiązań jako podmiot zależny firmy pliku szablonu. Można go było wyświetlić, klikając przycisk [+] obok nazwy pliku szablonu. Ten plik jest generowany na podstawie pliku szablonu Zapisz lub zespół odbiegać od pliku szablonu. Wygenerowany plik zostanie skompilowany w ramach projektu.  
   
- Dla wygody, podczas tworzenia pliku szablonu, Rozmieść okna tak, plik szablonu i pliku wygenerowanego, dzięki czemu można je wyświetlić obok siebie. Dzięki temu można natychmiast zobaczyć dane wyjściowe szablonu. Zauważysz również, czy gdy szablon generuje nieprawidłowy kod C#, błędy pojawią się w oknie komunikat o błędzie.  
+   Dla wygody, podczas tworzenia pliku szablonu, Rozmieść okna tak, plik szablonu i pliku wygenerowanego, dzięki czemu można je wyświetlić obok siebie. Dzięki temu można natychmiast zobaczyć dane wyjściowe szablonu. Zauważysz również, czy gdy szablon generuje nieprawidłowy kod C#, błędy pojawią się w oknie komunikat o błędzie.  
   
- Wszelkie zmiany, które wykonać bezpośrednio w wygenerowanym pliku zostaną utracone przy każdym zapisaniu pliku szablonu. Użytkownik powinien w związku z tym należy unikać edytowania wygenerowany plik albo go edytować tylko w przypadku krótkich eksperymentów. Czasami warto spróbuj krótki fragment kodu w wygenerowanym pliku, w którym IntelliSense jest używany w operacji, a następnie skopiuj go do pliku szablonu.  
+   Wszelkie zmiany, które wykonać bezpośrednio w wygenerowanym pliku zostaną utracone przy każdym zapisaniu pliku szablonu. Użytkownik powinien w związku z tym należy unikać edytowania wygenerowany plik albo go edytować tylko w przypadku krótkich eksperymentów. Czasami warto spróbuj krótki fragment kodu w wygenerowanym pliku, w którym IntelliSense jest używany w operacji, a następnie skopiuj go do pliku szablonu.  
   
 ## <a name="developing-the-text-template"></a>Tworzenie szablonu tekstowego  
  Następujące najlepsze porad na programowanie metodą agile firma Microsoft opracuje szablonu w proces na niewielkie etapy, niektóre błędy na każdy przyrost czyszczenie, dopóki nie kompiluje kod testu i działa poprawnie.  
@@ -408,17 +408,17 @@ namespace MyProject
 ## <a name="conclusion"></a>Wniosek  
  W tym instruktażu przedstawiono kilka technik i korzyści wynikające z generowania kodu:  
   
--   *Generowanie kodu* jest tworzenie części kodu źródłowego aplikacji *modelu*. Model zawiera informacje w postaci nadaje się do domeny aplikacji i mogą ulec zmianie w okresie istnienia aplikacji.  
+- *Generowanie kodu* jest tworzenie części kodu źródłowego aplikacji *modelu*. Model zawiera informacje w postaci nadaje się do domeny aplikacji i mogą ulec zmianie w okresie istnienia aplikacji.  
   
--   Silne wpisywanie jest jedną z zalet generowania kodu. Gdy model reprezentuje informacje w postaci bardziej odpowiednie dla użytkownika, wygenerowany kod umożliwia innych części aplikacji, aby poradzić sobie z informacjami o przy użyciu zestawu typów.  
+- Silne wpisywanie jest jedną z zalet generowania kodu. Gdy model reprezentuje informacje w postaci bardziej odpowiednie dla użytkownika, wygenerowany kod umożliwia innych części aplikacji, aby poradzić sobie z informacjami o przy użyciu zestawu typów.  
   
--   Funkcja IntelliSense i kompilator pomocne podczas tworzenia kodu, który jest zgodna ze schematem modelu, i kiedy piszesz nowy kod po zaktualizowaniu schematu.  
+- Funkcja IntelliSense i kompilator pomocne podczas tworzenia kodu, który jest zgodna ze schematem modelu, i kiedy piszesz nowy kod po zaktualizowaniu schematu.  
   
--   Dodanie jednego prostotę pliku szablonu projektu może zapewnić te korzyści.  
+- Dodanie jednego prostotę pliku szablonu projektu może zapewnić te korzyści.  
   
--   Szablon tekstowy można opracowany i przetestowany szybko i przyrostowo.  
+- Szablon tekstowy można opracowany i przetestowany szybko i przyrostowo.  
   
- W tym instruktażu kodu programu faktycznie jest generowany z wystąpienia modelu reprezentatywna próbka pliki XML, które aplikacja może przetworzyć. W podejściu bardziej formalne schematu XML jest wprowadzanie do szablonu w postaci pliku XSD lub definicji języka specyficznego dla domeny. Takie podejście może ułatwić szablonu określić właściwości, takie jak liczebność relacji.  
+  W tym instruktażu kodu programu faktycznie jest generowany z wystąpienia modelu reprezentatywna próbka pliki XML, które aplikacja może przetworzyć. W podejściu bardziej formalne schematu XML jest wprowadzanie do szablonu w postaci pliku XSD lub definicji języka specyficznego dla domeny. Takie podejście może ułatwić szablonu określić właściwości, takie jak liczebność relacji.  
   
 ## <a name="troubleshooting-the-text-template"></a>Rozwiązywanie problemów z szablonu tekstowego  
  Jeśli wiesz już błędy kompilacji lub przekształcania szablonu w **lista błędów**, lub jeśli plik wyjściowy nie został poprawnie wygenerowany, można rozwiązać szablon tekstowy, za pomocą metod opisanych w [wygenerowany Pliki za pomocą narzędzia TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).  

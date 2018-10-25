@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cf2f6e95a9a0614c578957cabeedf91f1c90ed1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89750ad7ee47f1238d75d3c51ae0b6ee291944fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940947"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Porady: zbieranie danych licznika procesora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,29 +33,29 @@ Licznik zdarzeń procesora CPU jest używane do zbierania danych wydajności spe
   
  **Wymagania**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Występują dwa typy zdarzeń licznika procesora CPU:  
+  Występują dwa typy zdarzeń licznika procesora CPU:  
   
--   Zdarzenia przenośne — zdarzenia procesora CPU, które mogą być zbierane, niezależnie od określonego procesora CPU.  
+- Zdarzenia przenośne — zdarzenia procesora CPU, które mogą być zbierane, niezależnie od określonego procesora CPU.  
   
--   Zdarzenia platformy — zdarzenia procesora CPU, które są ściśle do określonego procesora CPU.  
+- Zdarzenia platformy — zdarzenia procesora CPU, które są ściśle do określonego procesora CPU.  
   
- Zdarzenia przenośne zawierają ogólne zdarzeń, takich jak instrukcje wycofana i nie został zatrzymany cykle, zdarzenia buforu procesora CPU, rozgałęziania zdarzeń i zdarzenia pamięci podręcznej L2. Liczniki zdarzeń dostępną platformę są określane przez producenta procesora.  
+  Zdarzenia przenośne zawierają ogólne zdarzeń, takich jak instrukcje wycofana i nie został zatrzymany cykle, zdarzenia buforu procesora CPU, rozgałęziania zdarzeń i zdarzenia pamięci podręcznej L2. Liczniki zdarzeń dostępną platformę są określane przez producenta procesora.  
   
- Kategorie zdarzeń mogą być współużytkowane między liczniki przenośne i platformy. Na przykład następujące kategorie danych są często wspólny dla obu typów:  
+  Kategorie zdarzeń mogą być współużytkowane między liczniki przenośne i platformy. Na przykład następujące kategorie danych są często wspólny dla obu typów:  
   
--   Zdarzenia pamięci.  
+- Zdarzenia pamięci.  
   
--   Zdarzenia frontonu.  
+- Zdarzenia frontonu.  
   
--   Zdarzenia dotyczące gałęzi.  
+- Zdarzenia dotyczące gałęzi.  
   
- Można zbierać dane licznika wydajności w Profiler dwa sposoby:  
+  Można zbierać dane licznika wydajności w Profiler dwa sposoby:  
   
--   Podczas profilowania za pomocą Instrumentacji, zbieranie danych z co najmniej jeden licznik.  
+- Podczas profilowania za pomocą Instrumentacji, zbieranie danych z co najmniej jeden licznik.  
   
--   Określ zdarzeń licznika jako interwał próbkowania, podczas profilowania za pomocą próbkowania. Aby uzyskać więcej informacji, zobacz [porady: Wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md).  
+- Określ zdarzeń licznika jako interwał próbkowania, podczas profilowania za pomocą próbkowania. Aby uzyskać więcej informacji, zobacz [porady: Wybieranie zdarzeń próbkowania](../profiling/how-to-choose-sampling-events.md).  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>Do zbierania danych licznika wydajności procesora CPU podczas profilowania za pomocą Instrumentacji  
   

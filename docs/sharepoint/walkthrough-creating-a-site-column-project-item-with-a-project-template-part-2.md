@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7616dd184bae2cabb433879ceadae79dbeb23b93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626019"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942078"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Przewodnik: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 2
   Po zdefiniowaniu niestandardowy typ elementu projektu programu SharePoint i skojarzyć go z szablonem projektu w programie Visual Studio, można również podać Kreatora szablonu. Kreator służy do zbierania informacji od użytkowników, używając szablonu do utworzenia nowego projektu, który zawiera element projektu. Informacje zbierane, może służyć do zainicjowania elementu projektu.  
@@ -48,15 +48,15 @@ ms.locfileid: "42626019"
   
  Wymagane są również następujące składniki na komputerze deweloperskim w celu przeprowadzenia tego instruktażu:  
   
--   Obsługiwane wersje systemu Windows, SharePoint i Visual Studio.
+- Obsługiwane wersje systemu Windows, SharePoint i Visual Studio.
   
--   Program Visual Studio SDK. W tym instruktażu wykorzystano **projekt VSIX** szablonu w zestawie SDK, aby utworzyć pakiet VSIX do wdrożenia elementu projektu. Aby uzyskać więcej informacji, zobacz [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Program Visual Studio SDK. W tym instruktażu wykorzystano **projekt VSIX** szablonu w zestawie SDK, aby utworzyć pakiet VSIX do wdrożenia elementu projektu. Aby uzyskać więcej informacji, zobacz [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, aby ukończyć Instruktaż:  
+  Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, aby ukończyć Instruktaż:  
   
--   Kreatorzy szablonów projektów i elementów w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md) i <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu.  
+- Kreatorzy szablonów projektów i elementów w programie Visual Studio. Aby uzyskać więcej informacji, zobacz [porady: Korzystanie z kreatorów z szablonami projektu](../extensibility/how-to-use-wizards-with-project-templates.md) i <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejsu.  
   
--   Kolumny witryny w programie SharePoint. Aby uzyskać więcej informacji, zobacz [kolumn](http://go.microsoft.com/fwlink/?LinkId=183547).  
+- Kolumny witryny w programie SharePoint. Aby uzyskać więcej informacji, zobacz [kolumn](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
 ## <a name="understand-the-wizard-components"></a>Opis składników Kreatora
  Kreator przedstawionej w tym przewodniku zawiera kilka składników. W poniższej tabeli opisano te składniki.  
@@ -72,11 +72,11 @@ ms.locfileid: "42626019"
 ## <a name="create-the-projects"></a>Tworzenie projektów
  Do przeprowadzenia tego instruktażu, należy dodać kilka projektów w rozwiązaniu SiteColumnProjectItem, który został utworzony w [wskazówki: Tworzenie elementu projektu kolumn witryny z szablonem projektu — część 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
--   Projekt WPF. Zostaną zaimplementowane <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejs i zdefiniuj Kreatora interfejsu użytkownika w tym projekcie.  
+- Projekt WPF. Zostaną zaimplementowane <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interfejs i zdefiniuj Kreatora interfejsu użytkownika w tym projekcie.  
   
--   Projekt biblioteki klas, który definiuje poleceń programu SharePoint. Ten projekt musi być przeznaczony dla środowiska.NET Framework 3.5.  
+- Projekt biblioteki klas, który definiuje poleceń programu SharePoint. Ten projekt musi być przeznaczony dla środowiska.NET Framework 3.5.  
   
- Instruktaż należy rozpocząć od utworzenia projektów.  
+  Instruktaż należy rozpocząć od utworzenia projektów.  
   
 #### <a name="to-create-the-wpf-project"></a>Aby utworzyć projekt WPF
   
@@ -192,13 +192,13 @@ ms.locfileid: "42626019"
 ## <a name="create-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>Tworzenie modelu kreatora, Menedżer podpisywania i identyfikatory poleceń programu SharePoint
  Dodaj kod do projektu ProjectTemplateWizard, aby zaimplementować następujące składniki w przykładzie:  
   
--   Identyfikatory poleceń programu SharePoint. Te ciągi zidentyfikować poleceń programu SharePoint, które korzysta z kreatora. W dalszej części tego przewodnika dodasz kod do projektu SharePointCommands do wykonania polecenia.  
+- Identyfikatory poleceń programu SharePoint. Te ciągi zidentyfikować poleceń programu SharePoint, które korzysta z kreatora. W dalszej części tego przewodnika dodasz kod do projektu SharePointCommands do wykonania polecenia.  
   
--   Kreator modelu danych.  
+- Kreator modelu danych.  
   
--   Menedżer podpisywania projektu.  
+- Menedżer podpisywania projektu.  
   
- Aby uzyskać więcej informacji dotyczących tych składników, zobacz [opis składników kreatora](#wizardcomponents).  
+  Aby uzyskać więcej informacji dotyczących tych składników, zobacz [opis składników kreatora](#wizardcomponents).  
   
 #### <a name="to-define-the-sharepoint-command-ids"></a>Aby zdefiniować identyfikatory poleceń programu SharePoint
   
@@ -485,29 +485,29 @@ ms.locfileid: "42626019"
   
 #### <a name="to-test-the-wizard-in-visual-studio"></a>Aby przetestować kreatora w programie Visual Studio  
   
-1.  W doświadczalnym wystąpieniu programu Visual Studio, na pasku menu wybierz **pliku** > **New** > **projektu**.  
+1. W doświadczalnym wystąpieniu programu Visual Studio, na pasku menu wybierz **pliku** > **New** > **projektu**.  
   
-2.  Rozwiń **Visual C#** węzła lub **języka Visual Basic** węzeł (w zależności od języka obsługującego przez szablon projektu), rozwiń węzeł **programu SharePoint** węzła, a następnie wybierz pozycję **2010** węzła.  
+2. Rozwiń **Visual C#** węzła lub **języka Visual Basic** węzeł (w zależności od języka obsługującego przez szablon projektu), rozwiń węzeł **programu SharePoint** węzła, a następnie wybierz pozycję **2010** węzła.  
   
-3.  Na liście szablonów projektu wybierz **kolumny witryny**, nadaj projektowi nazwę **SiteColumnWizardTest**, a następnie wybierz **OK** przycisku.  
+3. Na liście szablonów projektu wybierz **kolumny witryny**, nadaj projektowi nazwę **SiteColumnWizardTest**, a następnie wybierz **OK** przycisku.  
   
-4.  Sprawdź, czy kod w innym wystąpieniu programu Visual Studio zatrzymuje się na punkcie przerwania, który wcześniej w ustawieniu `RunStarted` metody.  
+4. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio zatrzymuje się na punkcie przerwania, który wcześniej w ustawieniu `RunStarted` metody.  
   
-5.  Kontynuuj debugowanie projektu, wybierając **F5** klucza lub na pasku menu, wybierając **debugowania** > **Kontynuuj**.  
+5. Kontynuuj debugowanie projektu, wybierając **F5** klucza lub na pasku menu, wybierając **debugowania** > **Kontynuuj**.  
   
-6.  W **Kreator ustawień niestandardowych SharePoint**, wprowadź adres URL witryny, której chcesz używać do debugowania, a następnie wybierz **dalej** przycisku.  
+6. W **Kreator ustawień niestandardowych SharePoint**, wprowadź adres URL witryny, której chcesz używać do debugowania, a następnie wybierz **dalej** przycisku.  
   
-7.  W drugiej stronie **Kreator ustawień niestandardowych SharePoint**, wybierz następujące opcje:  
+7. W drugiej stronie **Kreator ustawień niestandardowych SharePoint**, wybierz następujące opcje:  
   
-    -   W **typu** wybierz **logiczna**.  
+   - W **typu** wybierz **logiczna**.  
   
-    -   W **grupy** wybierz **kolumn Yes/No niestandardowe**.  
+   - W **grupy** wybierz **kolumn Yes/No niestandardowe**.  
   
-    -   W **nazwa** wprowadź **Moje kolumny Yes/No**, a następnie wybierz **Zakończ** przycisku.  
+   - W **nazwa** wprowadź **Moje kolumny Yes/No**, a następnie wybierz **Zakończ** przycisku.  
   
      W **Eksploratora rozwiązań**, pojawia się nowy projekt i zawiera element projektu o nazwie **pole1**, i Visual Studio otwiera projektu *Elements.xml* plik w edytorze.  
   
-8.  Upewnij się, że *Elements.xml* zawiera wartości, które są określone w kreatorze.  
+8. Upewnij się, że *Elements.xml* zawiera wartości, które są określone w kreatorze.  
   
 #### <a name="to-test-the-site-column-in-sharepoint"></a>Aby przetestować kolumny witryny w programie SharePoint  
   

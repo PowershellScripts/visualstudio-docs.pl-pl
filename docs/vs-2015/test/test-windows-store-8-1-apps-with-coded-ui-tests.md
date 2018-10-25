@@ -13,12 +13,12 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d177fc191eab84d864ad57bf5ad301dcb0b310e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70973305764319ecb8ebf902945c92eb4723af7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934304"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Testowanie Windows platformy UWP i 8.1 Store Apps za pomocą kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,37 +69,37 @@ Użyj tego przewodnika dotyczący tworzenia testów interfejsu użytkownika dla 
 
 [Jak utworzyć kodowane testy interfejsu użytkownika dla aplikacji uniwersalnych platformy Windows (UWP)?](#uwpapps)
   
-1.  Utwórz nowy kodowane testy interfejsu użytkownika dla aplikacji Windows Store.  
+1. Utwórz nowy kodowane testy interfejsu użytkownika dla aplikacji Windows Store.  
   
-     ![Nowy projekt kodowanego interfejsu użytkownika tet &#40;aplikacji Windows Store Apps&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")  
+    ![Nowy projekt kodowanego interfejsu użytkownika tet &#40;aplikacji Windows Store Apps&#41;](../test/media/cuit-windowsstore-newproject.png "CUIT_WindowsStore_NewProject")  
   
-2.  Wybrać opcję Edytuj mapę interfejsu użytkownika przy użyciu narzędzia krzyżyk.  
+2. Wybrać opcję Edytuj mapę interfejsu użytkownika przy użyciu narzędzia krzyżyk.  
   
-     ![Wybierz opcję Edytuj mapę interfejsu użytkownika lub Dodaj potwierdzenia](../test/media/cuit-windowsstoreapp-createproject-gencodedialog.png "CUIT_WindowsStoreApp_CreateProject_GenCodeDialog")  
+    ![Wybierz opcję Edytuj mapę interfejsu użytkownika lub Dodaj potwierdzenia](../test/media/cuit-windowsstoreapp-createproject-gencodedialog.png "CUIT_WindowsStoreApp_CreateProject_GenCodeDialog")  
   
-3.  Użyj narzędzia krzyżyk w Konstruktorze kodowanego testu interfejsu użytkownika wybierz Kafelek aplikacji, kliknij prawym przyciskiem myszy **AutomationId** i wybierz polecenie **wartość kopiowania do Schowka**. Wartość w Schowku będzie później używane podczas pisania akcji do uruchomienia aplikacji na potrzeby testowania.  
+3. Użyj narzędzia krzyżyk w Konstruktorze kodowanego testu interfejsu użytkownika wybierz Kafelek aplikacji, kliknij prawym przyciskiem myszy **AutomationId** i wybierz polecenie **wartość kopiowania do Schowka**. Wartość w Schowku będzie później używane podczas pisania akcji do uruchomienia aplikacji na potrzeby testowania.  
   
-     ![Kopiuj AutomationId do Schowka](../test/media/cuit-windows-store-tileautomationid.png "CUIT_Windows_Store_TileAutomationID")  
+    ![Kopiuj AutomationId do Schowka](../test/media/cuit-windows-store-tileautomationid.png "CUIT_Windows_Store_TileAutomationID")  
   
-4.  W uruchomionej aplikacji Windows Store należy użyć narzędzia krzyżyka zaznacz formant przycisku i formant pola tekstowego. Po dodaniu każdego formantu wybierz **dodać formant do mapy formantów UI** przycisku na pasku narzędzi Konstruktor kodowanego testu interfejsu użytkownika.  
+4. W uruchomionej aplikacji Windows Store należy użyć narzędzia krzyżyka zaznacz formant przycisku i formant pola tekstowego. Po dodaniu każdego formantu wybierz **dodać formant do mapy formantów UI** przycisku na pasku narzędzi Konstruktor kodowanego testu interfejsu użytkownika.  
   
-     ![Dodać formant do mapy interfejsu użytkownika](../test/media/cuit-windowsstoreapp-uimap.png "CUIT_WindowsStoreApp_UIMap")  
+    ![Dodać formant do mapy interfejsu użytkownika](../test/media/cuit-windowsstoreapp-uimap.png "CUIT_WindowsStoreApp_UIMap")  
   
-5.  Wybierz **Generuj kod** przycisk na pasku narzędzi Konstruktor kodowanego testu interfejsu użytkownika, a następnie wybierz **Generuj** utworzyć kod dla zmiany mapy formantów interfejsu użytkownika.  
+5. Wybierz **Generuj kod** przycisk na pasku narzędzi Konstruktor kodowanego testu interfejsu użytkownika, a następnie wybierz **Generuj** utworzyć kod dla zmiany mapy formantów interfejsu użytkownika.  
   
-     ![Generuj kod dla mapy interfejsu użytkownika](../test/media/cuit-windowsstoreapp-generate.png "CUIT_WindowsStoreApp_Generate")  
+    ![Generuj kod dla mapy interfejsu użytkownika](../test/media/cuit-windowsstoreapp-generate.png "CUIT_WindowsStoreApp_Generate")  
   
-6.  Wybierz przycisk, aby ustawić wartość w polu tekstowym.  
+6. Wybierz przycisk, aby ustawić wartość w polu tekstowym.  
   
-     ![Kliknij formant przycisku, aby ustawić wartość w polu tekstowym](../test/media/cuit-windowsstoreapp-clickbutton.png "CUIT_WindowsStoreApp_ClickButton")  
+    ![Kliknij formant przycisku, aby ustawić wartość w polu tekstowym](../test/media/cuit-windowsstoreapp-clickbutton.png "CUIT_WindowsStoreApp_ClickButton")  
   
-7.  Użyj narzędzia krzyżyk aby zaznaczyć formant pola tekstowego, a następnie wybierz **tekstu** właściwości.  
+7. Użyj narzędzia krzyżyk aby zaznaczyć formant pola tekstowego, a następnie wybierz **tekstu** właściwości.  
   
-     ![Wybierz właściwość Text](../test/media/cuit-windowsstoreapp-selecttextproperty.png "CUIT_WindowsStoreApp_SelectTextProperty")  
+    ![Wybierz właściwość Text](../test/media/cuit-windowsstoreapp-selecttextproperty.png "CUIT_WindowsStoreApp_SelectTextProperty")  
   
-8.  Dodaj potwierdzenie. Będzie on używany w teście Aby sprawdzić, czy wartość jest poprawna.  
+8. Dodaj potwierdzenie. Będzie on używany w teście Aby sprawdzić, czy wartość jest poprawna.  
   
-     ![Wybierz testbox za pomocą wielu&#45;włosów i Dodaj potwierdzenie](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")  
+    ![Wybierz testbox za pomocą wielu&#45;włosów i Dodaj potwierdzenie](../test/media/cuit-windowsstoreapp-textbox-addassertion.png "CUIT_WindowsStoreApp_Textbox_AddAssertion")  
   
 9. Dodaj i wygeneruj kod dla potwierdzenia.  
   
@@ -217,37 +217,37 @@ Użyj tego przewodnika dotyczący tworzenia testów interfejsu użytkownika dla 
   
 11. W Eksploratorze rozwiązań Otwórz plik CodedUITest1.cs lub CodedUITest1.vb. Teraz można dodać kod do metody codeduttestmethod1 gdyż działania muszą uruchomić test za pomocą formantów dodanych do UIMap:  
   
-    1.  Uruchom aplikację Windows Store za pomocą właściwości automatyzacji Identyfikatora poprzednio skopiowane do Schowka:  
+    1. Uruchom aplikację Windows Store za pomocą właściwości automatyzacji Identyfikatora poprzednio skopiowane do Schowka:  
   
-        ```csharp  
-        XamlWindow.Launch("8ebca7c4-effe-4c86-9998-068daccee452_cyrqexqw8cc7c!App")  
-        ```  
+       ```csharp  
+       XamlWindow.Launch("8ebca7c4-effe-4c86-9998-068daccee452_cyrqexqw8cc7c!App")  
+       ```  
   
-        ```vb  
-        XamlWindow myAppWindow = XamlWindow.Launch("7254db3e-20a7-424e-8e05-7c4dabf4f28d_cyrqexqw8cc7c!App");  
-        ```  
+       ```vb  
+       XamlWindow myAppWindow = XamlWindow.Launch("7254db3e-20a7-424e-8e05-7c4dabf4f28d_cyrqexqw8cc7c!App");  
+       ```  
   
-    2.  Dodaj gest, aby dotknąć przycisku sterowania:  
+    2. Dodaj gest, aby dotknąć przycisku sterowania:  
   
-        ```csharp  
-        Gesture.Tap(this.UIMap.UIApp1Window. UIButtonButton);  
-        ```  
+       ```csharp  
+       Gesture.Tap(this.UIMap.UIApp1Window. UIButtonButton);  
+       ```  
   
-        ```vb  
-        Gesture.Tap(Me.UIMap.UIApp2Window. UIButtonButton)  
-        ```  
+       ```vb  
+       Gesture.Tap(Me.UIMap.UIApp2Window. UIButtonButton)  
+       ```  
   
-    3.  Sprawdź, czy wywołanie metody assert, które zostało wygenerowane automatycznie przychodzi po uruchomieniu aplikacji, a następnie wybierz gest na przycisku:  
+    3. Sprawdź, czy wywołanie metody assert, które zostało wygenerowane automatycznie przychodzi po uruchomieniu aplikacji, a następnie wybierz gest na przycisku:  
   
-        ```csharp  
-        this.UIMap.AssertMethod1();  
-        ```  
+       ```csharp  
+       this.UIMap.AssertMethod1();  
+       ```  
   
-        ```vb  
-        Me.UIMap.AssertMethod1()  
-        ```  
+       ```vb  
+       Me.UIMap.AssertMethod1()  
+       ```  
   
-     Po dodaniu kodu metoda testu CodedUITestMethod1 powinna wyglądać następująco:  
+       Po dodaniu kodu metoda testu CodedUITestMethod1 powinna wyglądać następująco:  
   
     ```csharp  
     [TestMethod]  
@@ -312,19 +312,19 @@ Użyj tego przewodnika dotyczący tworzenia testów interfejsu użytkownika dla 
      **Element**: nie, szablony projekt kodowanego testu interfejsu użytkownika są dostępne tylko na Windows 8.1 i Windows 10. Aby utworzyć automatyzacji dla aplikacji uniwersalnych platformy Windows (UWP), należy systemu Windows 10.  
 
 <a name="uwpapps"></a>
--   **P: jak utworzyć kodowane testy interfejsu użytkownika dla aplikacji uniwersalnych platformy Windows (UWP)?**  
+- **P: jak utworzyć kodowane testy interfejsu użytkownika dla aplikacji uniwersalnych platformy Windows (UWP)?**  
   
-     **A**: w zależności od platformy, na którym testujesz aplikację platformy uniwersalnej systemu Windows, należy utworzyć kodowane testy interfejsu użytkownika w jednym z następujących sposobów:  
+   **A**: w zależności od platformy, na którym testujesz aplikację platformy uniwersalnej systemu Windows, należy utworzyć kodowane testy interfejsu użytkownika w jednym z następujących sposobów:  
   
-    -   Aplikacja platformy uniwersalnej systemu Windows, uruchomiony na komputerze lokalnym zostanie uruchomiony jako Store app. Aby to przetestować, należy użyć **projekt kodowanego interfejsu użytkownika testu (Windows)** szablonu. Aby znaleźć ten szablon, podczas tworzenia nowego projektu, przejdź do **Windows**, **Universal** węzła. Lub przejdź do **Windows**, **systemu Windows 8**, **Windows** węzła.  
+  - Aplikacja platformy uniwersalnej systemu Windows, uruchomiony na komputerze lokalnym zostanie uruchomiony jako Store app. Aby to przetestować, należy użyć **projekt kodowanego interfejsu użytkownika testu (Windows)** szablonu. Aby znaleźć ten szablon, podczas tworzenia nowego projektu, przejdź do **Windows**, **Universal** węzła. Lub przejdź do **Windows**, **systemu Windows 8**, **Windows** węzła.  
   
-    -   Uruchamianie na urządzeniu przenośnym lub w emulatorze aplikacji platformy UWP działa jako aplikację na telefon. Aby to przetestować, należy użyć **projekt kodowanego interfejsu użytkownika testu (Windows Phone)** szablonu. Aby znaleźć ten szablon, podczas tworzenia nowego projektu, przejdź do **Windows**, **Universal** węzła. Lub przejdź do **Windows**, **systemu Windows 8**, **Windows Phone** węzła.  
+  - Uruchamianie na urządzeniu przenośnym lub w emulatorze aplikacji platformy UWP działa jako aplikację na telefon. Aby to przetestować, należy użyć **projekt kodowanego interfejsu użytkownika testu (Windows Phone)** szablonu. Aby znaleźć ten szablon, podczas tworzenia nowego projektu, przejdź do **Windows**, **Universal** węzła. Lub przejdź do **Windows**, **systemu Windows 8**, **Windows Phone** węzła.  
   
-     Po utworzeniu projektu, tworzenia testu pozostaje taka sama jak przed.  
+    Po utworzeniu projektu, tworzenia testu pozostaje taka sama jak przed.  
   
--   **P: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer?**  
+- **P: Dlaczego nie można zmodyfikować kod w pliku UIMap.Designer?**  
   
-     **A**: wszelkie zmiany kodu wprowadzone w pliku UIMapDesigner.cs zostaną zastąpione za każdym razem, gdy generowanie kodu za pomocą UIMap - kodowanego testu interfejsu użytkownika. Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku UIMap.cs i zmienić jej nazwę. Plik UIMap.cs może służyć do zastępowania metod i właściwości w pliku UIMapDesigner.cs. Musisz usunąć odwołanie do oryginalnej metody w pliku Coded UITest.cs, a następnie zastąpić je zmienioną nazwą metody.  
+   **A**: wszelkie zmiany kodu wprowadzone w pliku UIMapDesigner.cs zostaną zastąpione za każdym razem, gdy generowanie kodu za pomocą UIMap - kodowanego testu interfejsu użytkownika. Jeśli trzeba zmodyfikować nagraną metodę, należy skopiować ją do pliku UIMap.cs i zmienić jej nazwę. Plik UIMap.cs może służyć do zastępowania metod i właściwości w pliku UIMapDesigner.cs. Musisz usunąć odwołanie do oryginalnej metody w pliku Coded UITest.cs, a następnie zastąpić je zmienioną nazwą metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Używanie automatyzacji interfejsu użytkownika do testowania kodu](../test/use-ui-automation-to-test-your-code.md)   

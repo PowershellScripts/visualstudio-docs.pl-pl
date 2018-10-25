@@ -25,12 +25,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ac0eb6ee06d22eefb3b402df74ae4bf9735ff9c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2a23a779058276460f33b18ed881abcc4d40eca7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677209"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941181"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Dodawanie formantów do dokumentów pakietu Office w czasie wykonywania
   Można dodać kontrolki do dokumentu Microsoft Office Word i Microsoft Office Excel skoroszyt w czasie wykonywania. Można również usunąć je w czasie wykonywania. Formanty, które są dodawane lub usuwane w czasie wykonywania są nazywane *kontrolek dynamicznych*.  
@@ -39,13 +39,13 @@ ms.locfileid: "35677209"
 
  W tym temacie opisano następujące czynności:  
 
--   [Zarządzanie formantów w czasie wykonywania za pomocą kolekcje kontrolek](#ControlsCollection).  
+- [Zarządzanie formantów w czasie wykonywania za pomocą kolekcje kontrolek](#ControlsCollection).  
 
--   [Dodawanie hosta formantów do dokumentów](#HostControls).  
+- [Dodawanie hosta formantów do dokumentów](#HostControls).  
 
--   [Dodawanie kontrolek formularzy Windows Forms do dokumentów](#WindowsForms).  
+- [Dodawanie kontrolek formularzy Windows Forms do dokumentów](#WindowsForms).  
 
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak I: dodać kontrolki do dokumentu powierzchni w czasie wykonywania?](http://go.microsoft.com/fwlink/?LinkId=132782).  
+  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") powiązane demonstracyjne wideo – zobacz [jak I: dodać kontrolki do dokumentu powierzchni w czasie wykonywania?](http://go.microsoft.com/fwlink/?LinkId=132782).  
 
 ##  <a name="ControlsCollection"></a> Zarządzanie formantów w czasie wykonywania za pomocą kolekcje kontrolek  
  Aby dodać, pobrać lub usuwanie formantów w czasie wykonywania, należy użyć metody pomocnika <xref:Microsoft.Office.Tools.Excel.ControlCollection> i <xref:Microsoft.Office.Tools.Word.ControlCollection> obiektów.  
@@ -82,19 +82,19 @@ ms.locfileid: "35677209"
 ##  <a name="HostControls"></a> Dodawanie hosta formantów do dokumentów  
  Po dodaniu programowego kontrolki hosta do dokumentów, musisz podać nazwę, która jednoznacznie identyfikuje formant. Ponadto musisz określić, gdzie można dodać kontrolki do dokumentu. Aby uzyskać szczegółowe instrukcje zobacz następujące tematy:  
 
--   [Porady: dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [Porady: dodawanie formantów ListObject do arkuszy](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
 
--   [Porady: dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [Porady: dodawanie formantów NamedRange do arkuszy](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
 
--   [Porady: dodawanie formantów wykresu do arkuszy](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [Porady: dodawanie formantów wykresu do arkuszy](../vsto/how-to-add-chart-controls-to-worksheets.md)  
 
--   [Porady: Dodawanie zawartości formantów do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [Porady: Dodawanie zawartości formantów do dokumentów programu Word](../vsto/how-to-add-content-controls-to-word-documents.md)  
 
--   [Porady: dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [Porady: dodawanie formantów zakładek do dokumentów programu Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
 
- Aby uzyskać więcej informacji na temat formantów hosta zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).  
+  Aby uzyskać więcej informacji na temat formantów hosta zobacz [elementów, a omówienie kontrolek](../vsto/host-items-and-host-controls-overview.md).  
 
- Po zapisaniu dokumentu i następnie zamknięte, wszystkie formanty hosta dynamicznie utworzoną zostały odłączone od ich zdarzenia i utracą ich funkcji wiązania danych. Można dodać kod do rozwiązania, aby ponownie utworzyć kontrolki hosta po otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [kontrolek dynamicznych w dokumentach pakietu Office utrwalenia](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+  Po zapisaniu dokumentu i następnie zamknięte, wszystkie formanty hosta dynamicznie utworzoną zostały odłączone od ich zdarzenia i utracą ich funkcji wiązania danych. Można dodać kod do rozwiązania, aby ponownie utworzyć kontrolki hosta po otwarciu dokumentu. Aby uzyskać więcej informacji, zobacz [kontrolek dynamicznych w dokumentach pakietu Office utrwalenia](../vsto/persisting-dynamic-controls-in-office-documents.md).  
 
 > [!NOTE]  
 >  Metody pomocnicze nie są dostarczane dla następujących hostować formantów, ponieważ te kontrolki nie programowo dodać do dokumentów: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, i <xref:Microsoft.Office.Tools.Word.XMLNodes>.  
@@ -110,36 +110,36 @@ ms.locfileid: "35677209"
 ### <a name="add-custom-controls"></a>Dodaj formanty niestandardowe  
  Jeśli chcesz dodać <xref:System.Windows.Forms.Control> nie jest obsługiwana przez metody pomocnika dostępne, takie jak formant użytkownika niestandardowego, należy użyć następujących metod:  
 
--   Dla programu Excel, użyj jednej z <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> metody <xref:Microsoft.Office.Tools.Excel.ControlCollection> obiektu.  
+- Dla programu Excel, użyj jednej z <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> metody <xref:Microsoft.Office.Tools.Excel.ControlCollection> obiektu.  
 
--   Dla programu Word, użyj jednej z <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> metody <xref:Microsoft.Office.Tools.Word.ControlCollection> obiektu.  
+- Dla programu Word, użyj jednej z <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> metody <xref:Microsoft.Office.Tools.Word.ControlCollection> obiektu.  
 
- Aby dodać kontrolkę, należy przekazać <xref:System.Windows.Forms.Control>lokalizację dla formantu i jego nazwę, która jednoznacznie identyfikuje formant `AddControl` metody. `AddControl` Metoda zwraca obiekt, który definiuje, jak kontrolka współdziała z arkusza kalkulacyjnego lub dokumentu. `AddControl` Metoda zwraca <xref:Microsoft.Office.Tools.Excel.ControlSite> (dla programu Excel) lub <xref:Microsoft.Office.Tools.Word.ControlSite> obiektu (dla programu Word).  
+  Aby dodać kontrolkę, należy przekazać <xref:System.Windows.Forms.Control>lokalizację dla formantu i jego nazwę, która jednoznacznie identyfikuje formant `AddControl` metody. `AddControl` Metoda zwraca obiekt, który definiuje, jak kontrolka współdziała z arkusza kalkulacyjnego lub dokumentu. `AddControl` Metoda zwraca <xref:Microsoft.Office.Tools.Excel.ControlSite> (dla programu Excel) lub <xref:Microsoft.Office.Tools.Word.ControlSite> obiektu (dla programu Word).  
 
- Poniższy przykład kodu demonstruje sposób używania <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> metoda dynamicznie dodać formant użytkownika niestandardowego do arkusza w projekcie programu Excel z poziomu dokumentu. W tym przykładzie formant użytkownika nazwano `UserControl1`i <xref:Microsoft.Office.Interop.Excel.Range> nosi nazwę `range1`. Aby użyć tego przykładu, należy uruchomić go z `Sheet` *n* klasy w projekcie.  
+  Poniższy przykład kodu demonstruje sposób używania <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> metoda dynamicznie dodać formant użytkownika niestandardowego do arkusza w projekcie programu Excel z poziomu dokumentu. W tym przykładzie formant użytkownika nazwano `UserControl1`i <xref:Microsoft.Office.Interop.Excel.Range> nosi nazwę `range1`. Aby użyć tego przykładu, należy uruchomić go z `Sheet` *n* klasy w projekcie.  
 
- [!code-vb[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#2)]
- [!code-csharp[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#2)]  
+  [!code-vb[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#2)]
+  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#2)]  
 
 ### <a name="use-members-of-custom-controls"></a>Użyj składowych kontrolek niestandardowych  
  Po zakończeniu korzystania z jednego z `AddControl` metody, aby dodać formant do arkusza lub dokument, możesz teraz mieć dwa obiekty innej kontrolki:  
 
--   <xref:System.Windows.Forms.Control> Reprezentujący kontrolki niestandardowej.  
+- <xref:System.Windows.Forms.Control> Reprezentujący kontrolki niestandardowej.  
 
--   `ControlSite`, `OLEObject`, Lub `OLEControl` obiekt, który reprezentuje kontrolkę, po została dodana do arkusza lub dokumentu.  
+- `ControlSite`, `OLEObject`, Lub `OLEControl` obiekt, który reprezentuje kontrolkę, po została dodana do arkusza lub dokumentu.  
 
- Wiele właściwości i metody są udostępniane między tymi kontrolkami. Jest ważne, dostęp do tych elementów członkowskich przy użyciu właściwej opcji kontroli:  
+  Wiele właściwości i metody są udostępniane między tymi kontrolkami. Jest ważne, dostęp do tych elementów członkowskich przy użyciu właściwej opcji kontroli:  
 
--   Aby uzyskać dostęp do elementów członkowskich, które należą wyłącznie do kontrolki niestandardowej, należy użyć <xref:System.Windows.Forms.Control>.  
+- Aby uzyskać dostęp do elementów członkowskich, które należą wyłącznie do kontrolki niestandardowej, należy użyć <xref:System.Windows.Forms.Control>.  
 
--   Aby uzyskać dostęp do elementów członkowskich, które są udostępniane przez formanty, należy użyć `ControlSite`, `OLEObject`, lub `OLEControl` obiektu.  
+- Aby uzyskać dostęp do elementów członkowskich, które są udostępniane przez formanty, należy użyć `ControlSite`, `OLEObject`, lub `OLEControl` obiektu.  
 
- Jeśli masz dostępu do udostępnionego elementu członkowskiego z <xref:System.Windows.Forms.Control>, może się nie udać bez ostrzeżenia lub powiadomienie lub może utworzyć nieprawidłowe wyniki. Należy zawsze używać metody lub właściwości `ControlSite`, `OLEObject`, lub `OLEControl` obiektu, chyba że potrzebne metodę lub właściwość nie jest dostępna; dopiero wtedy należy odniesienia możesz <xref:System.Windows.Forms.Control>.  
+  Jeśli masz dostępu do udostępnionego elementu członkowskiego z <xref:System.Windows.Forms.Control>, może się nie udać bez ostrzeżenia lub powiadomienie lub może utworzyć nieprawidłowe wyniki. Należy zawsze używać metody lub właściwości `ControlSite`, `OLEObject`, lub `OLEControl` obiektu, chyba że potrzebne metodę lub właściwość nie jest dostępna; dopiero wtedy należy odniesienia możesz <xref:System.Windows.Forms.Control>.  
 
- Na przykład zarówno <xref:Microsoft.Office.Tools.Excel.ControlSite> klasy i <xref:System.Windows.Forms.Control> klasa ma `Top` właściwości. Aby pobrać lub ustawić odległość między górną krawędzią formantu a górnej części dokumentu, należy użyć <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> właściwość <xref:Microsoft.Office.Tools.Excel.ControlSite>, a nie <xref:System.Windows.Forms.Control.Top%2A> właściwość <xref:System.Windows.Forms.Control>.  
+  Na przykład zarówno <xref:Microsoft.Office.Tools.Excel.ControlSite> klasy i <xref:System.Windows.Forms.Control> klasa ma `Top` właściwości. Aby pobrać lub ustawić odległość między górną krawędzią formantu a górnej części dokumentu, należy użyć <xref:Microsoft.Office.Tools.Excel.ControlSite.Top%2A> właściwość <xref:Microsoft.Office.Tools.Excel.ControlSite>, a nie <xref:System.Windows.Forms.Control.Top%2A> właściwość <xref:System.Windows.Forms.Control>.  
 
- [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
- [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]  
+  [!code-vb[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#3)]
+  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#3)]  
 
 ## <a name="see-also"></a>Zobacz także  
  [Formanty w dokumentach pakietu Office](../vsto/controls-on-office-documents.md)   

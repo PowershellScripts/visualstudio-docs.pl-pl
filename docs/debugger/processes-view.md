@@ -14,50 +14,50 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cd848f2e771a2207e89d67eddbead22d2180990
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 003ea4962766d9c0b8adef698912024fecd1508e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474849"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936709"
 ---
 # <a name="processes-view"></a>Widok procesów
-Widok procesy Wyświetla drzewa wszystkich aktywnych procesów w systemie. Nazwa procesu modułu i identyfikator są wyświetlane. Użyj widoku procesów, jeśli chcesz sprawdzić proces określony system, który zazwyczaj odpowiada zakresowi wykonywania programu. Procesy są identyfikowane za pomocą nazwy modułu lub są wyznaczone "procesy systemowe".  
+Widok procesów przedstawia drzewo wszystkich aktywnych procesów w Twoim systemie. Nazwa procesu modułu i identyfikator są wyświetlane. Użyj widoku procesów, jeśli chcesz sprawdzić procesu określonym systemie zazwyczaj odnosi się do wykonywania programu. Procesy są identyfikowane przez nazwy modułów lub zostały one oznaczone "procesy systemowe".  
   
- Microsoft Windows obsługuje wiele procesów. Każdy proces może mieć jeden lub więcej wątków i każdy wątek może zawierać jeden lub kilka skojarzonych okien najwyższego poziomu. Każde okno najwyższego poziomu może posiadać kilka okien. A + symbol wskazuje, że poziom jest zwinięty. W widoku zwiniętym zawiera jeden wiersz dla każdego procesu. Kliknij pozycję + symbol do zwiększenia poziomu.  
+ Program Microsoft Windows obsługuje wiele procesów. Każdy proces może mieć jeden lub więcej wątków i każdy wątek może zawierać jeden lub kilka skojarzonych okien najwyższego poziomu. Każde okno najwyższego poziomu może posiadać kilka okien. A + symbol informuje, że poziom jest zwinięta. W widoku zwiniętym składa się z jeden wiersz dla każdego procesu. Kliknij pozycję + symbolu, aby rozwinąć poziomu.  
   
- Użyj widoku procesów, jeśli chcesz sprawdzić proces określony system, który zazwyczaj odpowiada zakresowi wykonywania programu. Procesy są identyfikowane za pomocą nazwy modułu lub są wyznaczone "procesy systemowe". Aby znaleźć proces, należy Zwiń drzewa i listy wyszukiwania.  
+ Użyj widoku procesów, jeśli chcesz sprawdzić procesu określonym systemie zazwyczaj odnosi się do wykonywania programu. Procesy są identyfikowane przez nazwy modułów lub zostały one oznaczone "procesy systemowe". Aby znaleźć proces, Zwiń drzewo i listę można przeszukiwać.  
   
 ## <a name="procedures"></a>Procedury  
   
 #### <a name="to-open-the-processes-view"></a>Aby otworzyć widok procesów  
   
-1.  Z **Spy** menu, wybierz **procesy**.  
+1. Z **Spy** menu, wybierz **procesy**.  
   
- ![Spy&#43; &#43; widok procesów](../debugger/media/spy--_processes.png "Spy ++ _Processes")  
-Widok procesy Spy ++  
+   ![Szpieguj&#43; &#43; widok procesów](../debugger/media/spy--_processes.png "Spy ++ _Processes")  
+   Widok procesów programu Spy ++  
   
- Na rysunku powyżej przedstawiono widoku procesów z węzłami procesów i wątków rozwinięty.  
+   Powyższy rysunek przedstawia widok procesów z węzłami procesu i wątku, rozwinięty.  
   
 ### <a name="in-this-section"></a>W tej sekcji  
- [Wyszukiwanie procesu w widoku procesów](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- Wyjaśniono, jak można znaleźć określonego procesu w widoku procesów.  
+ [Trwa wyszukiwanie procesu w widoku procesów](../debugger/how-to-search-for-a-process-in-processes-view.md)  
+ Wyjaśnia, jak można znaleźć określonego procesu w widoku procesów.  
   
  [Wyświetlanie właściwości procesu](../debugger/how-to-display-process-properties.md)  
- Wyjaśniono, jak można wyświetlić więcej informacji na temat wiadomości.  
+ Wyjaśnia, jak wyświetlić więcej informacji na temat wiadomości.  
   
 ### <a name="related-sections"></a>Sekcje pokrewne  
  [Widoki w programie Spy++](../debugger/spy-increment-views.md)  
- W tym artykule wyjaśniono widoków Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
+ W tym artykule wyjaśniono widoków programu Spy ++ drzewa systemu windows, wiadomości, procesów i wątków.  
   
  [Korzystanie z programu Spy++](../debugger/using-spy-increment.md)  
- Wprowadzono narzędzie Spy ++ i opisano, jak mogą być używane.  
+ Wprowadza narzędzie Spy ++ i wyjaśnia, jak mogą być używane.  
   
- [Wyszukiwanie procesów — okno dialogowe](../debugger/process-search-dialog-box.md)  
+ [Wyszukiwanie procesów, okno dialogowe](../debugger/process-search-dialog-box.md)  
  Umożliwia znalezienie węzła dla określonego procesu w widoku procesów.  
   
- [Okno dialogowe właściwości procesu](../debugger/process-properties-dialog-box.md)  
- Wyświetla właściwości procesu, który wybrano w widoku procesów.  
+ [Właściwości procesu, okno dialogowe](../debugger/process-properties-dialog-box.md)  
+ Wyświetla właściwości wybranego w widoku procesów procesu.  
   
  [Spy++ — dokumentacja](../debugger/spy-increment-reference.md)  
- Zawiera sekcje zawierająca opis każdego Spy ++ menu i okno dialogowe.
+ Zawiera sekcje, zawierająca opis każdego Spy ++ menu i okno dialogowe.

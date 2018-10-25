@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d46ae2f3ae0c63c798fc42b93d50e5aee398ccf5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 06d6c67724e6d8b66a34fc31412a1a925ba7c78c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934486"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
-Wywoływane przez debuger na bieżącej ramki stosu, gdy chce się przechwycić bieżącego wyjątku.  
+Jest wywoływana przez debuger w bieżącej ramki stosu, gdy chce przechwycić bieżący wyjątek.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,28 +46,28 @@ int InterceptCurrentException(
  [in] Określa różne akcje. Obecnie tylko [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) wartość `IEA_INTERCEPT` jest obsługiwana i musi być określona.  
   
  `pqwCookie`  
- [out] Unikatowa wartość identyfikujący określonego wyjątku.  
+ [out] Unikatowa wartość identyfikujący określony wyjątek.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
  Poniżej przedstawiono najbardziej typowe zwraca błąd.  
   
 |Błąd|Opis|  
 |-----------|-----------------|  
-|`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|Bieżący wyjątek nie może zostać przechwycony.|  
-|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|Bieżąca ramka wykonywania nie jeszcze przeszukiwane obsługi.|  
+|`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|Nie można przechwytywać bieżący wyjątek.|  
+|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|Bieżąca ramka wykonanie nie zostało jeszcze przeszukiwane obsługi.|  
 |`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|Ta metoda nie jest obsługiwana dla tej ramki.|  
   
 ## <a name="remarks"></a>Uwagi  
- Gdy jest zgłaszany wyjątek, debuger uzyska kontrolę w czasie wykonywania w punktach klucza podczas procesu obsługi wyjątków. Podczas tych kluczy momentach debuger poproś bieżącej ramki stosu, jeśli ramki chce przechwycenia wyjątek. W ten sposób przechwycone wyjątek jest zasadniczo obsługi wyjątków na bieżąco ramki stosu, nawet jeśli tą ramką stosu nie ma obsługi wyjątków (na przykład blok try/catch w kodzie programu).  
+ Gdy wyjątek jest zgłaszany, debuger przejmie kontrolę, w czasie wykonywania w kluczowych punktach podczas procesu obsługi wyjątków. Podczas tych kluczowymi momentami debugera można zadawać bieżącej ramki stosu Jeśli ramki chce, aby przechwycić wyjątek. W ten sposób przechwycone wyjątek jest przede wszystkim na bieżąco aparatu obsługi wyjątków ramkę stosu, nawet jeśli tej ramki stosu nie ma obsługi wyjątków (na przykład bloku try/catch w kodzie programu).  
   
- Gdy debuger chce wiedzieć, jeśli wyjątek powinien zostać przechwycone, wywołuje tę metodę w bieżącym obiekcie ramki stosu. Ta metoda jest odpowiedzialna za obsługę wszystkie szczegóły wyjątku. Jeśli [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) interfejsu nie jest zaimplementowana lub `InterceptStackException` metoda zwraca wszelkie błędy, a następnie debuger nadal normalnie przetwarzania wyjątek.  
+ Gdy debuger chce wiedzieć, jeśli wyjątek powinien zostać przechwycone, wywołuje tę metodę w bieżącym obiekcie ramki stosu. Ta metoda jest odpowiedzialna za obsługę wszystkich szczegółów wyjątku. Jeśli [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) nie zaimplementowano interfejsu lub `InterceptStackException` metoda zwraca wszelkie błędy, a następnie Debuger kontynuuje normalne przetwarzanie wyjątku.  
   
 > [!NOTE]
->  Wyjątki mogą zostać przechwycone tylko w kodzie zarządzanym, oznacza to, gdy debugowany program działa w ramach wykonawczego platformy .NET. Oczywiście można zaimplementować implementacje języka innych firm `InterceptStackException` w ich własnych aparatami debugowania, gdy wybiera on.  
+>  Wyjątki mogą zostać przechwycone tylko w kodzie zarządzanym, oznacza to, gdy debugowanego jest uruchomiona w ramach platformy .NET, w czasie wykonywania. Oczywiście można zaimplementować implementacji języka innych firm `InterceptStackException` w ich własnych silniki debugowania, jeśli dokonają takiego wyboru.  
   
- Po zakończeniu zatrzymania [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) zostanie zasygnalizowane.  
+ Po zakończeniu przechwytywaniu [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) jest sygnalizowane.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)   

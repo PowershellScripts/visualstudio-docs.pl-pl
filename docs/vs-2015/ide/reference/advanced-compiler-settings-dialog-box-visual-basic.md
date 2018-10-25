@@ -18,12 +18,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f64f5510974af133100a355656bf3689d928869
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd910b0e0295ca12807b96af189032ffec766429
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261589"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949828"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Zaawansowane ustawienia kompilatora (Visual Basic) — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ Użyj **ustawienia AdvancedCompiler** okna dialogowego **projektanta projektu** 
   
 ### <a name="to-access-this-dialog-box"></a>Dostęp do tego okna dialogowego  
   
-1.  W **Eksploratora rozwiązań**, wybierz węzeł projektu (nie **rozwiązania** węzła).  
+1. W **Eksploratora rozwiązań**, wybierz węzeł projektu (nie **rozwiązania** węzła).  
   
-2.  Na **projektu** menu, kliknij przycisk **właściwości**. Gdy **projektanta projektu** pojawi się, kliknij przycisk **skompilować** kartę.  
+2. Na **projektu** menu, kliknij przycisk **właściwości**. Gdy **projektanta projektu** pojawi się, kliknij przycisk **skompilować** kartę.  
   
-3.  Na [strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), wybierz opcję **konfiguracji** i **platformy**. W uproszczonych konfiguracjach kompilacji **konfiguracji** i **platformy** listy nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+3. Na [strona kompilowania, Projektant projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), wybierz opcję **konfiguracji** i **platformy**. W uproszczonych konfiguracjach kompilacji **konfiguracji** i **platformy** listy nie są wyświetlane. Aby uzyskać więcej informacji, zobacz [konfiguracji Debug i Release projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
   
-4.  Kliknij przycisk **zaawansowane opcje kompilacji**.  
+4. Kliknij przycisk **zaawansowane opcje kompilacji**.  
   
- [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
   
 ## <a name="optimizations"></a>Optymalizacje  
  Następujące opcje określają optymalizacje, które można w niektórych przypadkach zmniejszyć pliku programu, napisać program, który działają szybciej i przyspieszyć proces kompilacji.  

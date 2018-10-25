@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1669a13b047236044e5f7c65c2d27e187096b62b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 140dea9d65260a4ea5140e09df5876a59e64b2de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267465"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938607"
 ---
 # <a name="graphics-pipeline-stages"></a>Etapy potoku grafiki
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ W oknie etapy potoku grafiki pomaga zrozumieć, jak wywołanie rysowania poszcze
 ### <a name="links-to-related-graphics-objects"></a>Linki do powiązanych grafikach obiektów  
  Aby ustalić, dlaczego wywołanie rysowania wchodzi w interakcje w sposób przy użyciu potoku grafiki potrzebna jest czasami dodatkowy kontekst. Aby ułatwić znajdowanie ten dodatkowy kontekst, łącza okna etapy potoku grafiki, aby jeden lub więcej obiektów, które zapewniają dodatkowy kontekst związane z tym, co się dzieje w potoku grafiki.  
   
--   W Direct3D 12 ten obiekt jest zwykle listę poleceń.  
+- W Direct3D 12 ten obiekt jest zwykle listę poleceń.  
   
--   W interfejsie Direct3D 11 ten obiekt jest zwykle kontekstu urządzenia grafiki.  
+- W interfejsie Direct3D 11 ten obiekt jest zwykle kontekstu urządzenia grafiki.  
   
- Te linki stanowią część bieżącego podpis zdarzenia grafiki, który znajduje się w lewym górnym rogu okna etapy potoku grafiki. Wykonaj jedną z poniższych linków, aby sprawdzić szczegółowe informacje o obiekcie.  
+  Te linki stanowią część bieżącego podpis zdarzenia grafiki, który znajduje się w lewym górnym rogu okna etapy potoku grafiki. Wykonaj jedną z poniższych linków, aby sprawdzić szczegółowe informacje o obiekcie.  
   
 ### <a name="viewing-and-debugging-shader-code"></a>Wyświetlanie i debugowanie kodu programu do cieniowania  
  Można zbadać i debugowania kodu dla wierzchołków, kadłuba, domeny, programów do cieniowania geometrii i piksela za pomocą kontrolek na dole ich odpowiednich etapów w oknie etapy potoku.  

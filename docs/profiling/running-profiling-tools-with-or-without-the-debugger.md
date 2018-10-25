@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5197ba9e1a2fda9cb6a41cfe903bd772db53331
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 92744b9fdbfa0e383ba061cfe51c80c9b8cd9976
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624046"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929429"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 Program Visual Studio teraz oferuje możliwość wyboru wydajności narzędzia, z których niektóre (na przykład **użycie procesora CPU** i **użycie pamięci**) można uruchamiać z lub bez debugera. Narzędzia do oceny wydajności bez debugera są przeznaczone do uruchamiania na konfiguracje wydania, podczas gdy narzędzia zintegrowane z debugerem są przeznaczone do uruchamiania w konfiguracji debugowania.  
@@ -42,60 +42,60 @@ Można użyć narzędzi profilowania bez debugera, system Windows 7 lub nowszy. 
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Zbieranie danych profilowania podczas debugowania  
  Poniższa sekcja dotyczy debugowania lokalnego. Możesz dowiedzieć się o debugowaniu na urządzeniu lub zdalnego debugowania w kolejnych sekcjach.  
   
-1.  Otwórz projekt, który chcesz debugować, następnie kliknij przycisk **debugowania** > **Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).  
+1. Otwórz projekt, który chcesz debugować, następnie kliknij przycisk **debugowania** > **Rozpocznij debugowanie** (lub **Start** na pasku narzędzi lub **F5**).  
   
-2.  **Narzędzia diagnostyczne** okno pojawia się automatycznie, o ile nie została ona wyłączona. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.  
+2. **Narzędzia diagnostyczne** okno pojawia się automatycznie, o ile nie została ona wyłączona. Aby wyświetlić okno ponownie, kliknij przycisk **debugowania** > **Windows** > **Pokaż narzędzia diagnostyczne**.  
   
-3.  Uruchamianie scenariuszy, które mają być zbierane dane.  
+3. Uruchamianie scenariuszy, które mają być zbierane dane.  
   
-     Podczas uruchamiania sesji możesz sprawdzić informacje dotyczące zdarzenia, pamięć procesu i użycie procesora CPU.  
+    Podczas uruchamiania sesji możesz sprawdzić informacje dotyczące zdarzenia, pamięć procesu i użycie procesora CPU.  
   
-     Pokazano grafiki **narzędzia diagnostyczne** okna w Visual Studio 2015 Update 1:  
+    Pokazano grafiki **narzędzia diagnostyczne** okna w Visual Studio 2015 Update 1:  
   
-     ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  Można wybrać, czy wyświetlane są **użycie pamięci** lub **użycie procesora CPU** (lub obie) za pomocą **wybierz narzędzia** ustawienie na pasku narzędzi. Jeśli używasz programu Visual Studio Enterprise można włączyć lub wyłączyć IntelliTrace w **narzędzia** > **opcje** > **IntelliTrace**.  
+4. Można wybrać, czy wyświetlane są **użycie pamięci** lub **użycie procesora CPU** (lub obie) za pomocą **wybierz narzędzia** ustawienie na pasku narzędzi. Jeśli używasz programu Visual Studio Enterprise można włączyć lub wyłączyć IntelliTrace w **narzędzia** > **opcje** > **IntelliTrace**.  
   
-5.  Sesja diagnostyczna kończy się po zatrzymaniu debugowania.  
+5. Sesja diagnostyczna kończy się po zatrzymaniu debugowania.  
   
- W programie Visual Studio 2015 Update 1 **narzędzia diagnostyczne** okna ułatwia dla możesz skoncentrować się na zdarzenia Cię interesuje.   Nazwy zdarzeń są teraz wyświetlane z prefiksami kategorii (**gestu**, **danych wyjściowych programu**, **punktu przerwania**, **pliku**, itp.), dzięki czemu można szybko Przejrzyj listę w danej kategorii lub pominąć kategorie, które nie interesują.  
+   W programie Visual Studio 2015 Update 1 **narzędzia diagnostyczne** okna ułatwia dla możesz skoncentrować się na zdarzenia Cię interesuje.   Nazwy zdarzeń są teraz wyświetlane z prefiksami kategorii (**gestu**, **danych wyjściowych programu**, **punktu przerwania**, **pliku**, itp.), dzięki czemu można szybko Przejrzyj listę w danej kategorii lub pominąć kategorie, które nie interesują.  
   
- Okno ma teraz pole wyszukiwania, aby mógł znaleźć określony ciąg, w dowolnym miejscu listy zdarzeń. Na przykład na poniższym rysunku przedstawiono wyniki wyszukiwania dla ciągu "Zainstaluj" który jest zgodny z czterech zdarzenia:  
+   Okno ma teraz pole wyszukiwania, aby mógł znaleźć określony ciąg, w dowolnym miejscu listy zdarzeń. Na przykład na poniższym rysunku przedstawiono wyniki wyszukiwania dla ciągu "Zainstaluj" który jest zgodny z czterech zdarzenia:  
   
- ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+   ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
- Można również filtrować zdarzenia z widoku w oknie. W **filtru** listy rozwijanej można zaznacz lub wyczyść konkretne kategorie zdarzeń:. Nazwy kategorii są takie same jak nazwy prefiksu.  
+   Można również filtrować zdarzenia z widoku w oknie. W **filtru** listy rozwijanej można zaznacz lub wyczyść konkretne kategorie zdarzeń:. Nazwy kategorii są takie same jak nazwy prefiksu.  
   
- ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+   ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
- Aby uzyskać więcej informacji, zobacz [wyszukiwanie i filtrowanie na karcie zdarzenia w oknie narzędzia diagnostyczne](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+   Aby uzyskać więcej informacji, zobacz [wyszukiwanie i filtrowanie na karcie zdarzenia w oknie narzędzia diagnostyczne](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
   
 ## <a name="collect-profiling-data-without-debugging"></a>Zbieranie danych profilowania bez debugowania  
  Niektóre narzędzia profilowania wymagają uprawnień administratora do uruchomienia. Możesz uruchomić program Visual Studio jako administrator lub użytkownik może uruchomić narzędzia jako administrator, podczas uruchamiania sesji diagnostycznej.  
   
-1.  Otwórz projekt w programie Visual Studio.  
+1. Otwórz projekt w programie Visual Studio.  
   
-2.  Na **debugowania** menu, wybierz **Profiler wydajności** (klawisz skrótu: **Alt**+**F2**).  
+2. Na **debugowania** menu, wybierz **Profiler wydajności** (klawisz skrótu: **Alt**+**F2**).  
   
-3.  Na stronie diagnostyki uruchamiania wybierz co najmniej jedno narzędzie do uruchamiania w sesji. Wyświetlane są tylko narzędzia, które mają zastosowanie do typu projektu, systemu operacyjnego i język programowania. Po wybraniu narzędziem diagnostycznym, opcje narzędzi, których nie można uruchomić w tej samej sesji diagnostycznej są wyłączone. Poniżej przedstawiono wybrane opcje może wyglądać dla aplikacji platformy uniwersalnej systemu Windows C#:  
+3. Na stronie diagnostyki uruchamiania wybierz co najmniej jedno narzędzie do uruchamiania w sesji. Wyświetlane są tylko narzędzia, które mają zastosowanie do typu projektu, systemu operacyjnego i język programowania. Po wybraniu narzędziem diagnostycznym, opcje narzędzi, których nie można uruchomić w tej samej sesji diagnostycznej są wyłączone. Poniżej przedstawiono wybrane opcje może wyglądać dla aplikacji platformy uniwersalnej systemu Windows C#:  
   
-     ![Wybierz narzędzia diagnostyczne](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
+    ![Wybierz narzędzia diagnostyczne](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
   
-4.  Aby uruchomić sesji diagnostycznej, kliknij przycisk **Start**.  
+4. Aby uruchomić sesji diagnostycznej, kliknij przycisk **Start**.  
   
-5.  Uruchamianie scenariuszy, w których mają być zbierane dane.  
+5. Uruchamianie scenariuszy, w których mają być zbierane dane.  
   
-     Podczas uruchamiania sesji niektóre narzędzia wyświetlanie wykresów danych w czasie rzeczywistym na stronie uruchamiania narzędzia diagnostyczne.  
+    Podczas uruchamiania sesji niektóre narzędzia wyświetlanie wykresów danych w czasie rzeczywistym na stronie uruchamiania narzędzia diagnostyczne.  
   
-     ![Zbieranie danych o wydajności i diagnostyki strona początkowa](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
+    ![Zbieranie danych o wydajności i diagnostyki strona początkowa](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
   
-6.  Aby zakończyć sesji diagnostycznej, kliknij przycisk **Zatrzymaj Kolekcjonowanie**.  
+6. Aby zakończyć sesji diagnostycznej, kliknij przycisk **Zatrzymaj Kolekcjonowanie**.  
   
- Po zatrzymaniu zbierania danych w sesji diagnostyki, dane są analizowane, a raport jest wyświetlany na stronie diagnostyki.  
+   Po zatrzymaniu zbierania danych w sesji diagnostyki, dane są analizowane, a raport jest wyświetlany na stronie diagnostyki.  
   
- Można również otworzyć sesji .diagnostic zapisane pliki z listy ostatnio otwieranych na narzędzia diagnostyczne uruchomić stronę.  
+   Można również otworzyć sesji .diagnostic zapisane pliki z listy ostatnio otwieranych na narzędzia diagnostyczne uruchomić stronę.  
   
- ![Otwórz plik sesji diagnostyki zapisane](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![Otwórz plik sesji diagnostyki zapisane](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>Raport profilowania  
  ![Raport narzędzia diagnostyczne](../profiling/media/diag_report.png "DIAG_Report")  

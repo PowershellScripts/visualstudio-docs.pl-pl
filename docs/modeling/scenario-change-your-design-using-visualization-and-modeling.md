@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7a79ddd1644103d3e60f42c909706f2a3d771e9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 933c18a43cb8ebacd32914cb487fb0216b538b25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942481"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scenariusz: Zmiana projektu z wykorzystaniem wizualizacji i modelowania
 
@@ -82,7 +82,7 @@ Aby uzyskać więcej informacji na temat serwera Team Foundation Server zobacz:
 W poniższej tabeli opisano role, które mogą pełnić te narzędzia wielu i różnych etapach cyklu życia tworzenia oprogramowania:
 
 ||**Modelowanie wymagań użytkowników**|**Modelowanie procesów biznesowych**|**Architektura i projektowanie**|**Kod — Wizualizacja i eksploracja**|**Weryfikacja**|
-|------|------------------------------------|-----------------------------------|--------------------------------------|------------------------------------------|----------------------|
+|------|-|-|-|-|-|
 |Diagram języka specyficznego dla domeny (DSL)|Tak|Tak|Tak|||
 |Diagram zależności, sprawdzanie poprawności warstwy|||Tak|Tak|Tak|
 |Mapy kodu|||Tak|Tak|Tak|
@@ -145,7 +145,7 @@ Zanim zespoły zaewidencjonują zmiany, sprawdzają poprawność kodu w stosunku
 Dinner Now musi oszacować koszty realizacji nowego wymagania. Zależy to częściowo ile ta zmiana wpłynie na inne części systemu. Aby pomóc im to zrozumieć, jeden z deweloperów Dinner Now tworzy te mapy i diagramy z istniejącego kodu:
 
 |**Mapa lub diagramu**|**Pokazuje**|
-|------------------------|---------------|
+|-|-|
 |*Mapy kodu*<br /><br /> Zobacz:<br /><br /> - [Mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />- [Przeglądanie i rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)<br />- [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|Zależności i inne relacje w kodzie.<br /><br /> Na przykład Dinner Now może rozpocząć od przejrzenia mapy kodu zestawu omówienie zestawów i ich zależności. Może przechodzić do mapy do zbadania przestrzeni nazw i klas w tych zestawach.<br /><br /> Dinner Now, można również utworzyć mapy na zbadanie szczególnych obszarów i innych rodzajów relacji w kodzie. Używają Eksploratora rozwiązań, aby znaleźć i wybrać obszary i relacje, które ich interesują.|
 |*Diagram klas oparty na kodzie*<br /><br /> Zobacz [porady: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Istniejące klasy w kodzie|
 
@@ -166,14 +166,14 @@ Dinner Now musi oszacować koszty realizacji nowego wymagania. Zależy to częś
  Aby opisać zmiany dotyczące innych części systemu, takie jak składniki lub interakcje, zespół może narysować je na tablicach. Dzięki temu szczegółowe informacje mogą być przechwytywane, zarządzane i rozpoznawane przez oba zespoły może również narysować następujące diagramy w programie Visual Studio:
 
 |**Diagramy**|**W tym artykule opisano**|
-|------------------|-------------------|
+|-|-|
 |*Diagram klas oparty na kodzie*<br /><br /> Zobacz [porady: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|Istniejące klasy w kodzie.|
 
 ### <a name="ValidatingCode"></a> Utrzymuj spójność kodu z projektem
  Dinner Now, musisz upewnić się, że zaktualizowany kod pozostaje zgodny z projektem. Tworzą diagramów zależności, które opisują warstwy funkcji w systemie, określa dozwolone zależności między nimi i kojarzy artefakty rozwiązania z tymi warstwami.
 
 |**Diagram**|**W tym artykule opisano**|
-|-----------------|-------------------|
+|-|-|
 |*Diagram zależności*<br /><br /> Zobacz:<br /><br /> - [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|Logiczna architektura kodu.<br /><br /> Diagram zależności organizuje i mapuje artefakty w rozwiązaniu Visual Studio, grup abstrakcyjnych nazywanych *warstwy*. Te warstwy określają role, zadania lub funkcje, które te artefakty pełnią w systemie.<br /><br /> Diagramy warstwy są przydatne do opisywania zamierzonego projektu systemu i sprawdzenia poprawności zmian kodu w stosunku do projektu.<br /><br /> Aby utworzyć warstwy, przeciągnij elementy z Eksploratora rozwiązań, map kodu, widoku klas i przeglądarki obiektów. Aby narysować nowe warstwy, Użyj przybornika lub kliknij prawym przyciskiem myszy powierzchnię diagramu.<br /><br /> Aby wyświetlić istniejące zależności, kliknij prawym przyciskiem myszy powierzchnię diagramu warstwy, a następnie kliknij przycisk **Wygeneruj zależności**. Aby określić zależności zamierzone, narysuj nowe.|
 
  Na przykład poniższy diagram zależności opisuje zależności między warstwami i liczbą artefaktów, które są skojarzone z poszczególnymi warstwami:
@@ -330,7 +330,7 @@ Ta mapa pokazuje, że klasa PaymentApprover znajduje się teraz w przestrzeni na
 #### <a name="relationship-to-other-diagrams"></a>Związek z innymi diagramami
 
 |**Diagram**|**W tym artykule opisano**|
-|-----------------|-------------------|
+|-|-|
 |Diagram zależności|Logiczna architektura systemu. Użyj weryfikacji zależności, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Aby ułatwić identyfikację istniejących dependencys lub dependencys zamierzony, utwórz mapę kodu i pogrupować pokrewne elementy. Aby utworzyć diagram zależności, zobacz:<br /><br /> - [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)|
 |Diagram klasy (oparty na kodzie)|Istniejące klasy w kodzie dla konkretnego projektu.<br /><br /> Wizualizację i modyfikowanie istniejącej klasy w kodzie, za pomocą projektanta klas.<br /><br /> Zobacz [porady: Dodawanie diagramów klas do projektu (Projektant klas)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md).|
 
@@ -369,11 +369,11 @@ Diagram klas ma następujące cechy główne:
 
 - *Skojarzenia* oznacza pewnego rodzaju relację między dwoma klasyfikatorami.
 
-    - *Agregacji* jest skojarzeniem, które wskazuje wspólną własność między klasyfikatorami.
+  - *Agregacji* jest skojarzeniem, które wskazuje wspólną własność między klasyfikatorami.
 
-    - A *kompozycji* to skojarzenie ukazujące relacje między klasyfikatorami.
+  - A *kompozycji* to skojarzenie ukazujące relacje między klasyfikatorami.
 
-     Aby wyświetlić agregacje lub kompozycje, ustaw **agregacji** właściwości skojarzenia. **Udostępnione** pokazuje agregacje i **złożonego** — kompozycje.
+    Aby wyświetlić agregacje lub kompozycje, ustaw **agregacji** właściwości skojarzenia. **Udostępnione** pokazuje agregacje i **złożonego** — kompozycje.
 
 - A *zależności* wskazuje, że zmiana definicji jednego klasyfikatora może zmienić definicję innego klasyfikatora.
 
@@ -399,7 +399,7 @@ Jako punktu wyjścia do badania i omawiania istniejących klas można użyć pro
 #### <a name="relationship-to-other-diagrams"></a>Związek z innymi diagramami
 
 |**Diagram**|**Opis**|
-|-----------------|---------------------|
+|-|-|
 |Diagram zależności|Definiuj logiczną architekturę systemu, w odniesieniu do klasy.<br /><br /> Użyj weryfikacji zależności, aby upewnić się, że kod pozostaje zgodny z projektem.<br /><br /> Zobacz:<br /><br /> - [Tworzenie diagramów zależności z kodu](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramy zależności: odwołanie](../modeling/layer-diagrams-reference.md)<br />- [Diagramy zależności: wskazówki](../modeling/layer-diagrams-guidelines.md)<br />- [Weryfikacja kodu przy użyciu diagramów zależności](../modeling/validate-code-with-layer-diagrams.md)|
 |Mapy kodu|Umożliwia wizualizację organizacji i relacjach w istniejącym kodzie.<br /><br /> Aby zidentyfikować klasy, ich relacje i ich metod, utwórz mapę kodu, pokazujący te elementy.<br /><br /> Zobacz:<br /><br /> - [Mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)|
 
@@ -440,13 +440,13 @@ Diagram zależności ma następujące cechy główne:
 
      Liczba na warstwie pokazuje liczbę artefaktów, które są połączone z warstwą. Te artefakty mogą być przestrzenie nazw, projekty, klasy, metody i tak dalej. Interpretując liczbę artefaktów na warstwie, pamiętaj o następujących kwestiach:
 
-    - Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.
+  - Jeśli warstwa jest połączona z artefaktem zawierającym inne artefakty, ale warstwy nie łączy się bezpośrednio z innymi artefaktami, wówczas liczba uwzględnia tylko połączony artefakt. Jednak inne artefakty są uwzględniane w analizie podczas walidacji warstwy.
 
-         Na przykład, jeżeli warstwa jest połączona z pojedynczą przestrzenią nazw, liczba połączonych artefaktów wynosi 1, nawet jeśli przestrzeń nazw zawiera klasy. Jeśli warstwa zawiera także łącza do każdej klasy w przestrzeni nazw, liczba będzie uwzględniać połączone klasy.
+       Na przykład, jeżeli warstwa jest połączona z pojedynczą przestrzenią nazw, liczba połączonych artefaktów wynosi 1, nawet jeśli przestrzeń nazw zawiera klasy. Jeśli warstwa zawiera także łącza do każdej klasy w przestrzeni nazw, liczba będzie uwzględniać połączone klasy.
 
-    - Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.
+  - Jeśli warstwa zawiera inne warstwy, które są połączone z artefaktami, warstwa kontenerów jest także połączona z tymi artefaktami, mimo że liczba na warstwie kontenerów nie uwzględnia tych artefaktów.
 
-     Aby zobaczyć artefakty, które są połączone z warstwą, kliknij prawym przyciskiem myszy zależności, a następnie kliknij przycisk **Wyświetl łącza** otworzyć **Eksplorator warstw**.
+    Aby zobaczyć artefakty, które są połączone z warstwą, kliknij prawym przyciskiem myszy zależności, a następnie kliknij przycisk **Wyświetl łącza** otworzyć **Eksplorator warstw**.
 
 - A *zależności* wskazuje, że jedna warstwę może korzystać z funkcji w innej warstwie, ale nie odwrotnie. A *zależność dwukierunkowa* wskazuje, że jedna warstwę może korzystać z funkcji w innej warstwie i odwrotnie.
 
@@ -473,13 +473,13 @@ Diagramy zależności ułatwiają:
 #### <a name="relationship-to-other-diagrams"></a>Związek z innymi diagramami
 
 |**Diagram**|**Opis**|
-|-----------------|---------------------|
+|-|-|
 |Mapy kodu|Umożliwia wizualizację organizacji i relacjach w istniejącym kodzie.<br /><br /> Aby utworzyć warstwy, Generuj mapę kodu, a następnie zgrupuj elementy na mapie jako potencjalne warstwy. Przeciągnij grupy z mapy na diagram zależności.<br /><br /> Zobacz:<br /><br /> - [Mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md)<br />- [Przeglądanie i rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)|
 
 ## <a name="external-resources"></a>Zasoby zewnętrzne
 
 |**Kategoria**|**Łącza**|
-|------------------|---------------|
+|-|-|
 |**Fora**|- [Program Visual Studio visualization and Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Program Visual Studio visualization and Modeling SDK (narzędzia DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
 
 ## <a name="see-also"></a>Zobacz także

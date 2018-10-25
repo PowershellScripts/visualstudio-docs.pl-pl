@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31e7985491833be8243a30bd3134db2d1af1d2cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86cf8b1421769ac9a4b302e0da3676d826b9bea6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111267"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942234"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 Ta metoda zwraca wartość skojarzoną z nazwą stała wyliczenia.  
@@ -43,16 +43,16 @@ int GetValueFromString(
   
 #### <a name="parameters"></a>Parametry  
  `pszValue`  
- [in] Ciąg określający nazwę, dla którego można uzyskać wartość. Należy pamiętać, że dla języka C++, jest to ciąg znaków dwubajtowych.  
+ [in] Ciąg określający nazwę, dla którego ma zostać pobrana wartość. Należy pamiętać, że dla języka C++, jest to ciąg znaku dwubajtowego.  
   
  `pValue`  
- [out] Zwraca wartość skojarzoną wartość liczbową.  
+ [out] Zwraca wartość liczbową skojarzoną.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`, jeśli nazwa nie jest częścią wyliczenia lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`, jeśli nazwa nie jest częścią wyliczenia lub kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest rozróżniana wielkość liter. Jeśli wymagane jest wyszukiwania bez uwzględniania wielkości liter (na przykład w języku takich jak Visual Basic, których nazwy nie są z uwzględnieniem wielkości liter), użyj [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).  
+ Ta metoda jest rozróżniana wielkość liter. Użyj razie wyszukiwanie bez uwzględniania wielkości liter (na przykład w języku, takie jak Visual Basic, których nazwy nie są z uwzględnieniem wielkości liter) [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)   

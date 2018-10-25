@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSectionContribs::Skip | Dokumentacja firmy Microsoft
+title: Idiaenumsectioncontribs::SKIP — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b089309fbbee5f0b4b607c97658721bdc276ce41
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3af4bd0c836d6c63870147d0eeb825c1cbc7b26a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456558"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951343"
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
-Pomija określoną liczbę sekcji wkładów w kolejności wyliczenia.  
+Pomija określoną liczbę sekcji wkład w kolejności wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,10 +34,10 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [in] Liczba sekcji wkładów w kolejności wyliczenie pomijania.  
+ [in] Liczba sekcji wkład w kolejności wyliczenie, aby pominąć.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` Jeśli nie ma żadnych więcej wkładów sekcji, aby pominąć.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` Jeśli nie ma żadnych więcej wkładów sekcji, aby pominąć.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

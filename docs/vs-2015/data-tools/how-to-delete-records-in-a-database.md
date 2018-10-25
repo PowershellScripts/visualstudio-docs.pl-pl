@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: aff5a67d54376488ccce2bca5dd67b84d6c73949
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 87ab5ccde2c1100fbd0efc5f4272efe27803b717
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938620"
 ---
 # <a name="how-to-delete-records-in-a-database"></a>Porady: usuwanie rekordów znajdujących się w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,12 +49,12 @@ Aby usunąć rekordy z bazy danych, użyj `TableAdapter.Update` metody lub `Tabl
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterupdate-method"></a>Do usuwania rekordów z bazy danych przy użyciu TableAdapter.Update — metoda  
   
--   Usuwanie rekordów z żądaną <xref:System.Data.DataTable> , usuwając <xref:System.Data.DataRow> obiektów z tabeli. Aby uzyskać więcej informacji, zobacz [porady: usuwanie wierszy w DataTable](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). Po usunięciu wierszy z <xref:System.Data.DataTable>, wywołaj `TableAdapter.Update` metody. Możesz kontrolować ilość danych do aktualizacji, przekazując cały <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, tablicę <xref:System.Data.DataRow>s lub pojedynczej <xref:System.Data.DataRow>. Poniższy kod przedstawia sposób usuwania rekordu z <xref:System.Data.DataTable> , a następnie wywołać `TableAdapter.Update` metodę komunikacji zmiany i usunąć wiersz z bazy danych. (W tym przykładzie użyto bazy danych Northwind `Region` tabeli.)  
+- Usuwanie rekordów z żądaną <xref:System.Data.DataTable> , usuwając <xref:System.Data.DataRow> obiektów z tabeli. Aby uzyskać więcej informacji, zobacz [porady: usuwanie wierszy w DataTable](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e). Po usunięciu wierszy z <xref:System.Data.DataTable>, wywołaj `TableAdapter.Update` metody. Możesz kontrolować ilość danych do aktualizacji, przekazując cały <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, tablicę <xref:System.Data.DataRow>s lub pojedynczej <xref:System.Data.DataRow>. Poniższy kod przedstawia sposób usuwania rekordu z <xref:System.Data.DataTable> , a następnie wywołać `TableAdapter.Update` metodę komunikacji zmiany i usunąć wiersz z bazy danych. (W tym przykładzie użyto bazy danych Northwind `Region` tabeli.)  
   
-     [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
-     [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
+   [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
+   [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
   
- Jeśli aplikacja używa obiektów do przechowywania danych w aplikacji, można użyć TableAdapter dbdirect — metody, aby usunąć dane bezpośrednio z bazy danych. Wywoływanie `Delete` metoda usuwa rekordy z bazy danych na podstawie wartości parametru przekazanego.  
+  Jeśli aplikacja używa obiektów do przechowywania danych w aplikacji, można użyć TableAdapter dbdirect — metody, aby usunąć dane bezpośrednio z bazy danych. Wywoływanie `Delete` metoda usuwa rekordy z bazy danych na podstawie wartości parametru przekazanego.  
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterdelete-method"></a>Do usuwania rekordów z bazy danych przy użyciu TableAdapter.delete — metoda  
   

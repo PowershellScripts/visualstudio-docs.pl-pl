@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: a197952bcc392f84db3f612a158817237e077d36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60bb855202cfb333820fe2292fedc0b31608c5c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202283"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949022"
 ---
 # <a name="how-to-save-dataset-changes-to-a-database"></a>Porady: zapisywanie zmian w zestawie danych w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,15 +69,15 @@ Po danych w zestawie danych, został zmodyfikowany i zweryfikowany, prawdopodobn
 ## <a name="updating-two-related-tables-in-a-dataset"></a>Aktualizowanie powiązanych tabel w zestawie danych  
  Podczas aktualizowania tabelach pokrewnych w zestawie danych, należy zaktualizować w prawidłowej sekwencji, aby zmniejszyć prawdopodobieństwo naruszenie ograniczenia integralności referencyjnej. Kolejność wykonywania polecenia zostanie również wykonać indeksy <xref:System.Data.DataRowCollection> w zestawie danych. Aby zapobiec są zgłaszane błędy integralności danych, najlepszym rozwiązaniem jest można zaktualizować bazy danych w następującej kolejności:  
   
-1.  Tabela podrzędna: usuwania rekordów.  
+1. Tabela podrzędna: usuwania rekordów.  
   
-2.  Tabela nadrzędna: wstawianie, aktualizowanie i usuwanie rekordów.  
+2. Tabela nadrzędna: wstawianie, aktualizowanie i usuwanie rekordów.  
   
-3.  Tabela podrzędna: wstawiania i aktualizowania rekordów.  
+3. Tabela podrzędna: wstawiania i aktualizowania rekordów.  
   
- Aby uzyskać szczegółowe informacje na temat zapisywania danych z wielu tabel, zobacz [zapisywanie danych w bazie danych (wiele tabel)](../data-tools/save-data-to-a-database-multiple-tables.md).  
+   Aby uzyskać szczegółowe informacje na temat zapisywania danych z wielu tabel, zobacz [zapisywanie danych w bazie danych (wiele tabel)](../data-tools/save-data-to-a-database-multiple-tables.md).  
   
- Jeśli aktualizujesz dwóch lub więcej powiązanych tabel, należy uwzględnić logika aktualizacji w obrębie transakcji. Transakcja jest procesem, który zapewnia wszystkie powiązane zmiany w bazie danych są pomyślnie przed zatwierdzeniem zmian. Aby uzyskać więcej informacji, zobacz [transakcje i współbieżność](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
+   Jeśli aktualizujesz dwóch lub więcej powiązanych tabel, należy uwzględnić logika aktualizacji w obrębie transakcji. Transakcja jest procesem, który zapewnia wszystkie powiązane zmiany w bazie danych są pomyślnie przed zatwierdzeniem zmian. Aby uzyskać więcej informacji, zobacz [transakcje i współbieżność](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
   
 #### <a name="to-update-two-related-tables-using-a-tableadapter"></a>Aby zaktualizować powiązanych tabel, za pomocą adaptera TableAdapter  
   

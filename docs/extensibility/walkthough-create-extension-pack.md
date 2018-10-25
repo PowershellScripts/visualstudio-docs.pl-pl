@@ -13,14 +13,14 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87f359d9c143adc9093b08ef58ebca89dca524e
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: 2e0215b22c66d6b555650e05985a674f2ad9aed4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943105"
 ---
-# <a name="walkthrough-create-an-extension-pack"></a>Przewodnik: Tworzenie pakietu rozszerzenia
+# <a name="walkthrough-create-an-extension-pack"></a>Przewodnik: tworzenie pakietu rozszerzeń
 
 Pakiet rozszerzenia jest zestaw rozszerzeń, które mogą być instalowane razem. Pakietów rozszerzeń pozwalają na łatwe udostępnianie Ulubione rozszerzenia innym użytkownikom lub pakietu zestaw rozszerzeń, które ze sobą dla danego scenariusza.
   
@@ -40,8 +40,8 @@ Szablon elementu pakietu rozszerzenia tworzy pakiet rozszerzenia z zestaw rozsze
   
 3. ExtensionPack1.vsext plik zostanie dodany, który zawiera następujący kod
 
-  ```json
-  {
+   ```json
+   {
     "id": "ExtensionPack1",
     "name": "ExtensionPack1",
     "description": "Read about creating extension packs at https://aka.ms/vsextpack",
@@ -56,8 +56,8 @@ Szablon elementu pakietu rozszerzenia tworzy pakiet rozszerzenia z zestaw rozsze
         "name": "CopyAsHtml"
       }
     ]
-  }  
-  ```
+   }  
+   ```
 
 4. Vsixid rozszerzenia do uwzględnienia w pakiecie rozszerzenia można znaleźć na [Visual Studio Marketplace](https://marketplace.visualstudio.com/). Znajdź rozszerzenia mają do uwzględnienia, a następnie kliknij pozycję **identyfikator kopii**. Możesz zaktualizować istniejące **vsixId** powyżej pliku lub dodać innego rozszerzenia do listy.
 

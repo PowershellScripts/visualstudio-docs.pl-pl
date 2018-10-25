@@ -15,12 +15,12 @@ ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81d6a1f540314863e4e24b3b91c7f4112e0af8f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7f848c64072ebd77dfa3494b5dfc390c34855948
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197616"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940856"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Stosowanie ustawień do wielu połączeń projektu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Wtyczka do kontroli źródła utworzone przy użyciu 1.2 interfejsu API wtyczki 
 ## <a name="new-functions"></a>Nowe funkcje  
  Następujące nowe funkcje obsługi operacji zbiorczej:  
   
--   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)  
+- [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)  
   
--   [SccEndBatch](../../extensibility/sccendbatch-function.md)  
+- [SccEndBatch](../../extensibility/sccendbatch-function.md)  
   
- `SCCBeginBatch` Funkcja rozpoczyna grupy operacji kontroli źródła. `SccEndBatch` Zamyka grupy. Grupy nie mogą być zagnieżdżone.  
+  `SCCBeginBatch` Funkcja rozpoczyna grupy operacji kontroli źródła. `SccEndBatch` Zamyka grupy. Grupy nie mogą być zagnieżdżone.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Nowości dotyczące wtyczki kontroli kodu źródłowego w interfejsie API w wersji 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

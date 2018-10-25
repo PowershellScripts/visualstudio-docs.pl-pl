@@ -1,5 +1,5 @@
 ---
-title: 'Porady: należy użyć funkcji wyszukiwania w Projektancie przepływów pracy'
+title: 'Porady: Użyj wyszukiwania w Projektancie przepływu pracy'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,22 +10,22 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3e8e44586f6b0f2f8aea5ab13eb27886d7b3a6e8
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: ecf4839cec08e9ffb0419aebcff9da145214b117
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757971"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943066"
 ---
-# <a name="how-to-use-search-in-the-workflow-designer"></a>Porady: należy użyć funkcji wyszukiwania w Projektancie przepływów pracy
+# <a name="how-to-use-search-in-the-workflow-designer"></a>Porady: Użyj wyszukiwania w Projektancie przepływu pracy
 
-W celu ułatwienia tworzenia większych i bardziej skomplikowanych przepływów pracy, możesz wyszukać w Projektancie przepływów pracy, aby znaleźć elementy według słów kluczowych. Należy pamiętać, że projektant nie obsługuje Zamień.
+W celu ułatwienia tworzenia większych i bardziej skomplikowanych przepływów pracy, można wyszukać w Projektancie przepływu pracy, aby znaleźć elementy według słów kluczowych. Należy pamiętać, że projektant nie obsługuje Zastąp.
 
 ## <a name="quick-find"></a>Szybkie wyszukiwanie
 
-Szybkie find znajduje następujące w Projektancie:
+Szybkiego wyszukiwania umożliwia znalezienie następujące w Projektancie:
 
--   Właściwości <xref:System.Activities.Activity> obiektów, <xref:System.Activities.Statements.FlowNode> obiektów, <xref:System.Activities.Statements.State> obiektów, przejścia i inne elementy niestandardowe sterowanie przepływem.
+-   Właściwości <xref:System.Activities.Activity> obiektów <xref:System.Activities.Statements.FlowNode> obiektów <xref:System.Activities.Statements.State> obiektów, przejścia i inne elementy niestandardowe sterowanie przepływem.
 
 -   Zmienne
 
@@ -33,15 +33,15 @@ Szybkie find znajduje następujące w Projektancie:
 
 -   Wyrażenia
 
-### <a name="use-quick-find"></a>Użyj szybkiego wyszukiwania
+### <a name="use-quick-find"></a>Zastosowanie szybkiego wyszukiwania
 
-1.  Otwórz projektanta przepływów pracy naciśnij **Ctrl + F**, lub wybierz **Edytuj** > **Znajdź i Zamień** > **szybkiego wyszukiwania**.
+1. Otwórz projektanta przepływów pracy naciśnij **Ctrl + F**, lub wybierz **Edytuj** > **Znajdź i Zamień** > **szybkie znajdowanie**.
 
-2.  Wprowadź wyszukiwany termin do **Znajdź** pole tekstowe i kliknij przycisk **Znajdź następny**.
+2. Wprowadź wyszukiwany termin do **Znajdź** polu tekstowym i kliknij przycisk **Znajdź następny**.
 
-3.  Wyszukiwany termin znajduje się w bieżącym przepływu pracy. Na poniższej ilustracji przedstawiono znajdujących się w Projektancie Nazwa wyświetlana działania:
+3. Termin wyszukiwania znajduje się w bieżącym przepływu pracy. Na poniższej ilustracji przedstawiono wyświetlana nazwa działania znajdujących się w Projektancie:
 
-   ![Wynik wyszukiwania w Projektancie przepływów pracy](../workflow-designer/media/designersearch.png)
+   ![Wynik wyszukiwania w Projektancie przepływu pracy](../workflow-designer/media/designersearch.png)
 
 ## <a name="find-in-files"></a>Znajdź w plikach
 
@@ -51,6 +51,6 @@ Znajdź w plikach lokalizuje ciągów w pliki przepływu pracy, w tym plików XA
 
 1.  W programie Visual Studio, naciśnij klawisz **Ctrl**+**Shift**+**F**, lub wybierz **Edytuj**  >   **Znajdź i Zamień** > **Znajdź w plikach**.
 
-2.  Wprowadź szukany element do **Znajdź** pole tekstowe i kliknij przycisk **Znajdź wszystkie**.
+2.  Wprowadź szukany element do **Znajdź** polu tekstowym i kliknij przycisk **Znajdź wszystkie**.
 
-3.  Znajdź wynik jest wyświetlany w **Znajdź wynik** widoku. Dwukrotne kliknięcie elementu wynik przechodzi do dopasowania w Projektancie przepływów pracy zawiera działanie.
+3.  Wynik wyszukiwania jest wyświetlany w **Znajdź wynik** widoku. Dwukrotne kliknięcie elementu wyniku powoduje przejście do działania, który zawiera dopasowanie w Projektancie przepływu pracy.

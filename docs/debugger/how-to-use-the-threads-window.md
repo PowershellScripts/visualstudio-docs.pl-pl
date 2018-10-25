@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65626bc483d7794c2adae141903783238a97eddd
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468468"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933563"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Przewodnik: Debugowanie aplikacji wielowątkowych w programie Visual Studio za pomocą okna wątków
 Program Visual Studio udostępnia **wątków** okna i inny użytkownik interfejsu elementy, aby pomóc w debugowaniu aplikacji wielowątkowych. W tym samouczku pokazano, jak używać **wątków** okna i **Lokalizacja debugowania** paska narzędzi. Aby uzyskać informacje na temat innych narzędzi, zobacz [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md). Ten samouczek zawiera tylko kilka minut, ale jego ukończenia umożliwia zapoznanie się z funkcjami debugowania aplikacji wielowątkowych.   
@@ -72,29 +72,29 @@ Do wykonywania kroków opisanych w tym samouczku, potrzebny jest projektu aplika
   
 #### <a name="to-start-debugging"></a>Aby rozpocząć debugowanie  
   
-1.  Kliknij na lewym marginesie z `Console.WriteLine` instrukcję, aby wstawić nowy punkt przerwania.  
+1. Kliknij na lewym marginesie z `Console.WriteLine` instrukcję, aby wstawić nowy punkt przerwania.  
   
-     Na marginesie po lewej stronie Edytor kodu źródłowego pojawi się czerwone kółko. Oznacza to, że punkt przerwania są teraz ustawione w tej lokalizacji.  
+    Na marginesie po lewej stronie Edytor kodu źródłowego pojawi się czerwone kółko. Oznacza to, że punkt przerwania są teraz ustawione w tej lokalizacji.  
   
-2.  Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie** (**F5**).  
+2. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie** (**F5**).  
   
-     Rozpoczyna debugowania, uruchamiania aplikacji konsoli, aby uruchomić i następnie zatrzymuje w punkcie przerwania.  
+    Rozpoczyna debugowania, uruchamiania aplikacji konsoli, aby uruchomić i następnie zatrzymuje w punkcie przerwania.  
   
-3.  Jeśli okno konsoli w aplikacji ma fokus w tym momencie, kliknij w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okna powrót do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+3. Jeśli okno konsoli w aplikacji ma fokus w tym momencie, kliknij w [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okna powrót do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-4.  W Edytor kodu źródłowego zlokalizuj wiersz, który zawiera następujący kod:  
+4. W Edytor kodu źródłowego zlokalizuj wiersz, który zawiera następujący kod:  
   
-    ```VB  
-    Thread.Sleep(5000)   
-    ```  
+   ```VB  
+   Thread.Sleep(5000)   
+   ```  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    Thread::Sleep(3000);  
-    ```
+   ```C++  
+   Thread::Sleep(3000);  
+   ```
   
 #### <a name="to-discover-the-thread-marker"></a>Aby odnaleźć znacznika wątku  
 
@@ -261,4 +261,4 @@ Można blokowanie i odblokowywanie (Wstrzymanie i wznowienie) wątków, aby kont
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie aplikacji wielowątkowych](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [Porady: przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Instrukcje: przełączanie na inny wątek w trakcie debugowania](../debugger/how-to-switch-to-another-thread-while-debugging.md)

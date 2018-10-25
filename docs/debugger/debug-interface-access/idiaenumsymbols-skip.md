@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbols::Skip | Dokumentacja firmy Microsoft
+title: Idiaenumsymbols::SKIP — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65e96f2f03229b12c378a096ecfd7555af1f5cce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 64d30183d01e74bf5e6171d98b5df21c678c8dbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459025"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937970"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
 Pomija określoną liczbę symboli w kolejności wyliczenia.  
@@ -34,10 +34,10 @@ HRESULT Skip (
   
 #### <a name="parameters"></a>Parametry  
  celt  
- [in] Liczba symboli w kolejności wyliczenie do pominięcia.  
+ [in] Liczba symboli w kolejności wyliczenie, aby pominąć.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` przypadku żadnych więcej symboli, aby pominąć.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` przypadku żadnych więcej symboli, aby pominąć.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

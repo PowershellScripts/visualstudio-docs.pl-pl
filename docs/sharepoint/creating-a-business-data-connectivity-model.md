@@ -20,58 +20,58 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8d76c6f7d28b990d133780c25577cab4e8c3cad
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 68940d6e48f1f3a3e51017e1cc838976735de104
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326037"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930209"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Tworzenie modelu łączności danych biznesowych
-  Można utworzyć modelu łączności danych biznesowych (BDC) lub dostosowanie istniejącego modelu BDC przy użyciu programu Visual Studio. Każdy projekt programu SharePoint może zawierać tylko jeden model. Aby uzyskać więcej informacji, zobacz [integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
+  Można Tworzenie modelu łączności danych biznesowych (BDC) lub dostosować istniejący model usługi łączności danych biznesowych przy użyciu programu Visual Studio. Każdy projekt programu SharePoint może zawierać tylko jeden model. Aby uzyskać więcej informacji, zobacz [integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
   
 ## <a name="create-a-new-model"></a>Utwórz nowy model
- Aby utworzyć nowy model, utworzyć **modelu łączności danych biznesowych** lub Dodaj **modelu łączności danych biznesowych** elementu do **pusty projekt SharePoint**.  
+ Aby utworzyć nowy model, Utwórz **Model usługi łączności danych biznesowych** projektu lub dodać **Model usługi łączności danych biznesowych** elementu do **pusty projekt programu SharePoint**.  
   
 > [!NOTE]  
->  Musi mieć [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] zainstalowany na tym komputerze.  
+>  Konieczne jest posiadanie [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] zainstalowana na danym komputerze.  
   
- Visual Studio dodaje folder do projektu. Ten folder ma nazwę, którą określisz dla **modelu łączności danych biznesowych** elementu **Dodaj nowy element** okno dialogowe. Jeśli tworzysz nową **modelu łączności danych biznesowych** projektu programu Visual Studio nazwy folderu **BdcModel1**.  
+ Visual Studio dodaje folder do projektu. Ten folder zawiera nazwę która jest określona dla **Model usługi łączności danych biznesowych** pozycja **Dodaj nowy element** okno dialogowe. Jeśli tworzysz nową **Model usługi łączności danych biznesowych** projektu, Visual Studio nazwy folderu **BdcModel1**.  
   
- Visual Studio dodaje następujące pliki do nowego folderu:  
+ Program Visual Studio dodaje następujące pliki do nowego folderu:  
   
 |Plik|Opis|  
 |----------|-----------------|  
-|Plik definicji modelu|Zawiera kod XML, który definiuje jednostek, metod obiektów systemowych Linia biznesowych (LOB) i innych metadanych, które opisują modelu.<br /><br /> Modyfikowanie metadanych w tym pliku przy użyciu narzędzia Projektant BDC **Eksplorator modelu BDC**, **szczegóły metody usługi łączności danych biznesowych** okno i **właściwości** okna.|  
-|Plik kodu usługi jednostki|Zawiera metody stanowiące pobrać, aktualizowanie i usuwanie wystąpienia jednostki domyślnej.|  
+|Plik definicji modelu|Zawiera kod XML, który określa jednostki, metody, obiekty systemowe Line of Business (LOB) i innych metadanych, który opisuje model.<br /><br /> Modyfikowanie metadanych, w tym pliku przy użyciu projektanta łączności danych biznesowych **Eksplorator BDC**, **szczegóły metody BDC** oknie i **właściwości** okna.|  
+|Pliku kodu usługi jednostki|Zawiera metody, które pobierać, aktualizować i usuwać wystąpień jednostki domyślnej.|  
   
- Aby zdefiniować właściwości jednostki, Edytuj plik kodu jednostki. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
+ Aby zdefiniować właściwości jednostki, przeprowadź edycję pliku kodu jednostki. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie jednostki do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md).  
   
- Aby pobrać, aktualizowanie i usuwanie wystąpienia jednostki, należy dodać kod do pliku kodu usługi jednostki. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).  
+ Aby pobrać, aktualizować i usuwać wystąpień jednostki, Dodaj kod do pliku kodu usługi jednostki. Aby uzyskać więcej informacji, zobacz [projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
- Podczas kompilowania projektu programu Visual Studio tworzy zestawu. Upewnij się, czy nie dodawaj innych elementów do projektu, który Dodawanie kodu do zestawów projektu (na przykład: **sekwencyjnego przepływu pracy** elementu lub **składnika Web Part** elementu). Nie można uruchomić kod dla tego elementu, podczas wdrażania rozwiązania, ponieważ pakiet rozwiązania nie kopiuje zestawu w pamięci podręcznej GAC.  Pakiet rozwiązania wdraża zestaw BDC tylko na bazę danych w programie SharePoint.  
+ Podczas kompilowania projektu programu Visual Studio tworzy zestaw. Upewnij się, że nie należy dodawać innych elementów do projektu, który Dodaj kod, aby zestaw projektu (na przykład: **sekwencyjnego przepływu pracy** elementu lub **składnika Web Part** elementu). Kod dla tego elementu nie będzie działać w przypadku wdrażania rozwiązania, ponieważ pakiet rozwiązania nie kopiuje zestawu do globalnej pamięci podręcznej.  Pakiet rozwiązania wdraża zestaw usługi łączności danych biznesowych tylko na bazę danych w programie SharePoint.  
   
 > [!NOTE]  
->  Podczas debugowania projektu programu Visual Studio kopiuje do zestawu do zarówno w lokalizacji na komputerze lokalnym.  
+>  Program Visual Studio kopiuje zestawu do obu lokalizacjach na komputerze lokalnym podczas debugowania projektu.  
   
 ## <a name="add-an-existing-model"></a>Dodawanie istniejącego modelu
- Możesz zaimportować modelu, który został utworzony przy użyciu innych narzędzi, takich jak SharePoint Designer. Można także zaimportować istniejący model do projektu w następujących sytuacjach:  
+ Można zaimportować modelu, który został utworzony przy użyciu innych narzędzi, takich jak SharePoint Designer. Można także zaimportować istniejący model do projektu w następujących sytuacjach:  
   
--   Aby dostosować modelu, który jest już wdrożony do farmy programu SharePoint.  
+- Aby dostosować model, który jest już wdrożony do farmy serwerów programu SharePoint.  
   
--   Do pakietu i wdrażanie istniejącego modelu dla wielu farm serwerów programu SharePoint.  
+- Do pakietu i wdrożenie istniejącego modelu wielu farm serwerów programu SharePoint.  
   
- W obu przypadkach systemów LOB zdefiniowanego w modelu, który można zaimportować nie dotyczy i będą nadal działać zgodnie z oczekiwaniami. Aby dodać istniejącego modelu do projektu SharePoint, należy użyć programu Visual Studio **Dodaj istniejący element** okno dialogowe. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie istniejącego modelu BDC do projektu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
+  W obu przypadkach systemami LOB, zdefiniowane w modelu, który można zaimportować nie ulegają zmianom i będą nadal działać zgodnie z oczekiwaniami. Aby dodać istniejący model do projektu programu SharePoint, należy użyć programu Visual Studio **Dodaj istniejący element** okno dialogowe. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie istniejącego modelu BDC do projektu programu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md).  
   
- System LOB zestawu .NET Framework typu można dodać do importowanego modelu, zaznaczając odpowiednią opcję w **zestawu .NET dodać LOB**. Umożliwia pisanie kodu niestandardowego i zdefiniuj metadanych dla importowanego modelu przy użyciu projektanta.  
+  Systemem LOB, typ zestawu .NET Framework można dodać do importowanych modelu, wybierając opcję **element LobSystem zestawu .NET Dodawanie**. Dzięki temu można pisać kod niestandardowy i zdefiniuj metadanych dla importowanego modelu za pomocą projektanta.  
   
 ## <a name="related-topics"></a>Tematy pokrewne
   
 |Tytuł|Opis|  
 |-----------|-----------------|  
-|[Porady: Tworzenie modelu BDC](../sharepoint/how-to-create-a-bdc-model.md)|Pokazuje, jak utworzyć nowy model usługi łączności danych biznesowych.|  
-|[Porady: Dodawanie istniejącego modelu BDC do projektu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Pokazuje, jak zaimportować istniejący model do projektu programu SharePoint.|  
-|[Porady: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości i uprawnień](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|Opisuje sposób udostępnić ciągów, które są łączone w metadanych modelu, jeśli model jest używany przez składnik Web Part lub strony sieci Web.|  
-|[Porady: Dołączanie niestandardowego zestawu w funkcji BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Pokazuje, jak Dołączanie niestandardowego zestawu w funkcji.|  
+|[Porady: Tworzenie modelu BDC](../sharepoint/how-to-create-a-bdc-model.md)|Dowiesz się, jak utworzyć nowy model usługi łączności danych biznesowych.|  
+|[Porady: Dodawanie istniejącego modelu BDC do projektu programu SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)|Dowiesz się, jak zaimportować istniejący model do projektu programu SharePoint.|  
+|[Porady: Korzystanie z pliku zasobu do określania zlokalizowanych nazw, właściwości oraz uprawnień](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md)|W tym artykule opisano, jak zapewnić ciągów, które są łączone ze sobą przy użyciu metadanych modelu, gdy model jest używane przez składnik Web Part lub strony sieci Web.|  
+|[Porady: Dołączanie niestandardowego zestawu w funkcji BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)|Dowiesz się, jak Dołączanie niestandardowego zestawu w funkcji.|  
   
  

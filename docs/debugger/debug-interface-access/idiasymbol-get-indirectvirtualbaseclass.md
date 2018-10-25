@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_indirectVirtualBaseClass | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_indirectvirtualbaseclass — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7806d8e8faa64dbf1f7faaaf3afdb128f8a03b5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d7dcde1aa61ed9ce39fea15a6a21776afba24786
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468310"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933472"
 ---
 # <a name="idiasymbolgetindirectvirtualbaseclass"></a>IDiaSymbol::get_indirectVirtualBaseClass
-Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika jest pośrednia wirtualna klasa podstawowa.  
+Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika jest pośredniej wirtualnej klasy bazowej.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,13 +34,13 @@ HRESULT get_indirectVirtualBaseClass (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca `TRUE` Jeśli typ danych zdefiniowany przez użytkownika jest pośrednia wirtualna klasa podstawowa; w przeciwnym razie zwraca `FALSE`.  
+ [out] Zwraca `TRUE` Jeśli typ danych zdefiniowany przez użytkownika jest pośrednia wirtualna klasa bazowa; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 882a355742a100f7a105abab541832f86740afe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280171"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942765"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Samouczek: Rozpoczynanie pracy z usługą struktura sieci web Django w programie Visual Studio
 
@@ -163,16 +163,16 @@ Po zakończeniu tworzenia projektu, należy zbadać standardowy kod projektu Dja
 
     ![Polecenia Django w języku Python projektu menu kontekstowe](media/django/step01-django-commands-menu.png)
 
-1. W projekcie jest folder o nazwie taka sama jak projekt. Zawiera podstawowe pliki projektu Django:
+2. W projekcie jest folder o nazwie taka sama jak projekt. Zawiera podstawowe pliki projektu Django:
 
-    - *__init.PY*: pusty plik Python informuje, czy ten folder jest pakiet języka Python.
-    - *wsgi.PY*: punkt wejścia dla zgodnego z WSGI serwerów sieci web do obsługi projektu. Zazwyczaj pozostaw ten plik jako — jest jak udostępnia punkty zaczepienia do produkcyjnych serwerów sieci web.
-    - *Settings.PY*: zawiera ustawienia dla projektu Django, co możesz zmodyfikować w trakcie opracowywania aplikacji sieci web.
-    - *URLs.PY*: zawiera spis treści dla projektu Django, która jest modyfikowana w trakcie opracowywania.
+   - *__init.PY*: pusty plik Python informuje, czy ten folder jest pakiet języka Python.
+   - *wsgi.PY*: punkt wejścia dla zgodnego z WSGI serwerów sieci web do obsługi projektu. Zazwyczaj pozostaw ten plik jako — jest jak udostępnia punkty zaczepienia do produkcyjnych serwerów sieci web.
+   - *Settings.PY*: zawiera ustawienia dla projektu Django, co możesz zmodyfikować w trakcie opracowywania aplikacji sieci web.
+   - *URLs.PY*: zawiera spis treści dla projektu Django, która jest modyfikowana w trakcie opracowywania.
 
-    ![Django pliki projektu w Eksploratorze rozwiązań](media/django/step01-django-project-in-solution-explorer.png)
+     ![Django pliki projektu w Eksploratorze rozwiązań](media/django/step01-django-project-in-solution-explorer.png)
 
-1. Jak wspomniano wcześniej, szablon programu Visual Studio dodaje również *requirements.txt* plik do projektu określenie Django zależności pakietów. Obecność tego pliku to, co zachęca do tworzenia środowiska wirtualnego, tworząc po raz pierwszy projekt.
+3. Jak wspomniano wcześniej, szablon programu Visual Studio dodaje również *requirements.txt* plik do projektu określenie Django zależności pakietów. Obecność tego pliku to, co zachęca do tworzenia środowiska wirtualnego, tworząc po raz pierwszy projekt.
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Pytanie: Visual Studio wygenerować plik Requirements.txt znajduje się w środowisku wirtualnym po zainstalowaniu innych pakietów?
 

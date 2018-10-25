@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbed7c0ed53bed792baf4eefa9d1337127df88f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 214bf72d6310206b5fe85de40ef65b4e2442c46b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935728"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 Pobiera opis procesu.  
@@ -43,13 +43,13 @@ int GetInfo(
   
 #### <a name="parameters"></a>Parametry  
  `Fields`  
- [in] Kombinacja wartości z [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) wyliczenia, która określa, które pola `pProcessInfo` parametru mają zostać wypełnione.  
+ [in] Kombinacja wartości z [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) wyliczenie, które określa, które pola `pProcessInfo` parametru są wypełniane.  
   
  `pProcessInfo`  
- [out] A [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struktury, która jest wypełniane opis procesu.  
+ [out] A [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) strukturę, która jest wypełniane opis procesu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

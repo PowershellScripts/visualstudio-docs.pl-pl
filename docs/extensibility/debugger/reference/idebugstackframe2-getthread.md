@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83f07db11fd19c12f5161467107a5deccc192b8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: db6652696631d9ff6cb993c8691ad9af3f689094
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942162"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 Pobiera wątek skojarzony z ramki stosu.  
@@ -44,7 +44,7 @@ int GetThread (
  [out] Zwraca [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b67294b6bb22ff9607be726415b6aae8a2a9524
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cdf9fa9057e946d68da9f1e02d5aaf90b34e569a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115245"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931769"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 Ta metoda oblicza wyrażenie przeanalizowany i opcjonalnie rzutuje wynik, który ma inny typ danych.  
@@ -53,31 +53,31 @@ int EvaluateSync(
   
 #### <a name="parameters"></a>Parametry  
  `dwEvalFlags`  
- [in] Kombinację [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) stałe, które kontrolują sposób wyrażenie, które ma zostać obliczone.  
+ [in] Kombinacji [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) stałe, które kontrolują sposób ma zostać obliczone wyrażenie.  
   
  `dwTimeout`  
- [in] Określa maksymalny czas (w milisekundach) oczekiwania przed powrotem z tej metody. Użyj `INFINITE` będzie czekać w nieskończoność.  
+ [in] Określa maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.  
   
  `pSymbolProvider`  
- [in] Dostawca symbolu, wyrażony jako [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) interfejsu.  
+ [in] Dostawca symboli, wyrażone jako [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) interfejsu.  
   
  `pAddress`  
- [in] Bieżąca lokalizacja wykonywania w metodzie, wyrażony jako [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.  
+ [in] Bieżąca lokalizacja wykonywania w metodzie, wyrażone jako [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfejsu.  
   
  `pBinder`  
- [in] Obiekt wiążący, wyrażony jako [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interfejsu.  
+ [in] Obiekt wiążący wyrażonej w postaci [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interfejsu.  
   
  `bstrResultType`  
- [in] Typ wyniku powinny być rzutowane na. Ten argument może być wartością null.  
+ [in] Typ wyniku powinna być rzutowany. Ten argument może być wartością null.  
   
  `ppResult`  
  [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfejs, który reprezentuje wyniki oceny.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Kontekst oceny wyrażenia jest określany przez `pAddress`, co umożliwia ustalenie zawierające metody i następnie użyj języka zakresu reguły do określenia wartości symboli w wyrażeniu.  
+ Kontekst oceny wyrażeń jest nadawana przez `pAddress`, która sprawia, że można określić zawierającego metodę, i następnie zakresu języka Użyj reguły do określenia wartości symboli w wyrażeniu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

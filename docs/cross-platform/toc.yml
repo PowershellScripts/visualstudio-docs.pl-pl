@@ -1,23 +1,9 @@
 items:
 - name: Tworzenie aplikacji mobilnych na wiele platform w programie Visual Studio
   href: cross-platform-mobile-development-in-visual-studio.md
-- name: Visual Studio i Xamarin
-  href: visual-studio-and-xamarin.md
-  items:
-  - name: Instalator i instalacja
-    href: setup-and-install.md
-  - name: Informacje dotyczące programowania mobilnego za pomocą platformy Xamarin
-    href: learn-about-mobile-development-with-xamarin.md
-  - name: Sprawdzanie środowiska Xamarin
-    href: verify-your-xamarin-environment.md
-  - name: Podstawowe informacje dotyczące tworzenia aplikacji za pomocą platformy Xamarin.Forms w programie Visual Studio
-    href: learn-app-building-basics-with-xamarin-forms-in-visual-studio.md
-  - name: Tworzenie aplikacji za pomocą natywnego interfejsu użytkownika przy użyciu platformy Xamarin w programie Visual Studio
-    href: build-apps-with-native-ui-using-xamarin-in-visual-studio.md
-  - name: Metodyka DevOps z użyciem platformy Xamarin
-    href: application-lifecycle-management-alm-with-xamarin-apps.md
-  - name: Instalator, instalacja i weryfikacja dla użytkowników komputerów Mac
-    href: setup-install-and-verifications-for-mac-users.md
+- name: Visual Studio Tools for Xamarin
+  displayName: .NET Mobile Developer Tools (Android & iOS)
+  href: /xamarin/
 - name: Visual Studio Tools for Apache Cordova
   href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Narzędzia Visual Studio Tools for Unity
@@ -88,9 +74,9 @@ items:
     href: system-requirements-for-the-visual-studio-emulator-for-android.md
   - name: Rozwiązywanie problemów z narzędziem Visual Studio Emulator for Android
     href: troubleshooting-the-visual-studio-emulator-for-android.md
-ms.openlocfilehash: d0c4b3ba48784ec7b168a167373816c652a5f11b
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 0126179459596c389703c065e85e2f5da41e070c
+ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
 ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43224978"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991526"

@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5283d72972e1ba579cafa82648cbf0ec0fcf80c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 35dac5f88a755ac0622fcf752f3bcc409341441c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113474"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948983"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
-Tworzy obiekt, który używa konstruktora podanych ustawień flagi wersji ewaluacyjnej i wartość limitu czasu.  
+Tworzy obiekt, który używa konstruktora, używając podanej wartości ustawień flagi wersji ewaluacyjnej oraz wartość limitu czasu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -53,25 +53,25 @@ int CreateObject (
  [in] [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) obiekt, który reprezentuje konstruktora obiektu, który ma zostać utworzony.  
   
  `dwArgs`  
- [in] Liczba parametrów w `pArg` tablicy. Przedstawia liczbę parametrów przekazanych do konstruktora.  
+ [in] Liczba parametrów w `pArg` tablicy. Reprezentuje liczbę parametrów przekazanych do konstruktora.  
   
  `pArgs`  
- [in] Tablica [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiektów, które reprezentuje parametr przekazany do konstruktora.  
+ [in] Tablica [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiektów, które reprezentują parametry przekazywane do konstruktora.  
   
  `dwEvalFlags`  
  [in] Kombinacja flag z [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) wyliczenie określające sposób oceny ma zostać wykonane.  
   
  `dwTimeout`  
- [in] Maksymalny czas (w milisekundach) oczekiwania przed powrotem z tej metody. Użyj **NIESKOŃCZONE** będzie czekać w nieskończoność.  
+ [in] Maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj **NIESKOŃCZONEJ** czekanie w nieskończoność.  
   
  `ppObject`  
  [out] Zwraca **IDebugObject** reprezentujący nowo utworzony obiekt.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wywołaj tę metodę, aby utworzyć obiekt, który reprezentuje wystąpienie klasy lub innych typ złożony, który wymaga konstruktora, który jest parametrem.  
+ Wywołaj tę metodę, aby utworzyć obiekt, który reprezentuje wystąpienie klasy lub inne typ złożony, który wymaga konstruktora, który jest parametrem.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fcc49f96faf043101ffb2462d544e41394b38e7b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e0f2e81d82db81859ff5833903d00b8bf149436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290397"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941246"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Jak zgłosić Problem w programie Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Jeśli wystąpi problem z programem Visual Studio 2015, chcemy o tym wiedzieć, 
   
 ###  <a name="describe_the_problem"></a>  
   
-1.  Nadaj opisowy tytuł problemu, który pomoże nam go przesłać do właściwego zespołu w programie Visual Studio.  
+1. Nadaj opisowy tytuł problemu, który pomoże nam go przesłać do właściwego zespołu w programie Visual Studio.  
   
-2.  Podać dodatkowe szczegóły i jeśli to możliwe, kroki do odtworzenia problemu.  
+2. Podać dodatkowe szczegóły i jeśli to możliwe, kroki do odtworzenia problemu.  
   
-3.  Wybierz obszar problemu z listy rozwijanej. Jeśli nie masz pewności, należy wprowadzić najbardziej prawdopodobny wybór.  
+3. Wybierz obszar problemu z listy rozwijanej. Jeśli nie masz pewności, należy wprowadzić najbardziej prawdopodobny wybór.  
   
- ![Zgłoś Problem okna dialogowego](../ide/media/report-a-problem-dialog.png "zgłosić Problem okna dialogowego")  
+   ![Zgłoś Problem okna dialogowego](../ide/media/report-a-problem-dialog.png "zgłosić Problem okna dialogowego")  
   
 ## <a name="provide-a-screenshot-optional"></a>Podaj zrzut ekranu (opcjonalnie)  
  Wybierz **Dołącz zrzut ekranu** wysyłać bieżącego ekranu do firmy Microsoft. To narzędzie umożliwia Przytnij obraz, aby wyświetlić tylko część ekranu ukazujący problem. Możesz dołączyć dodatkowe zrzuty ekranu lub inne pliki, klikając **Dołącz dodatkowe pliki** przycisku.  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findChildren | Dokumentacja firmy Microsoft
+title: Idiasymbol::findchildren — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 042b02bda59bf064897b0badb24394fc10fb9197
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 107770d880a6ceae9cf58b3c56821c8077dfd272
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941350"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 Pobiera elementy podrzędne symbolu.  
@@ -37,26 +37,26 @@ HRESULT findChildren (
   
 #### <a name="parameters"></a>Parametry  
  `symtag`  
- [in] Określa znaczników symbol elementów podrzędnych, które mają zostać pobrane, zgodnie z definicją w [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md). Ustaw `SymTagNull` dla wszystkich elementów podrzędnych do pobrania.  
+ [in] Określa tagi symboli elementów podrzędnych, które mają zostać pobrane, zgodnie z definicją w [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md). Ustaw `SymTagNull` dla wszystkich elementów podrzędnych do pobrania.  
   
  `name`  
- [in] Określa nazwę elementu podrzędnego, które mają zostać pobrane. Ustaw `NULL` dla wszystkich elementów podrzędnych do pobrania.  
+ [in] Określa nazwę elementy podrzędne, które mają zostać pobrane. Ustaw `NULL` dla wszystkich elementów podrzędnych do pobrania.  
   
  `compareFlags`  
- [in] Określa opcje porównania stosowane do dopasowania nazwy. Wartości z [namesearchoptions — wyliczenie](../../debugger/debug-interface-access/namesearchoptions.md) wyliczenie można samodzielnie lub w połączeniu.  
+ [in] Określa opcje porównywania stosowany do pasujących nazwy. Wartości z kolekcji [namesearchoptions — wyliczenie](../../debugger/debug-interface-access/namesearchoptions.md) wyliczenia można samodzielnie lub w połączeniu.  
   
  `ppResult`  
  [out] Zwraca [idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md) pobrać obiekt, który zawiera listę symbolami podrzędnymi.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK` Jeśli co najmniej jeden element podrzędny symbol został znaleziony lub zwraca `S_FALSE` jeśli bez żadnych elementów podrzędnych nie znaleziono; w przeciwnym razie zwraca kod błędu.  
+ Zwraca `S_OK` Jeśli co najmniej jeden element podrzędny symbol został znaleziony lub zwraca `S_FALSE` Jeśli żadne elementy podrzędne nie znaleziono; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest taki sam jak wywołanie [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md) metodę z tego symbolu jako pierwszym parametrem.  
+ Metoda ta jest identyczna z wywoływaniem [idiasession::findchildren —](../../debugger/debug-interface-access/idiasession-findchildren.md) metody za pomocą tego symbolu jako pierwszy parametr.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
  [Symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md)   
  [Idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md)   
- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [Namesearchoptions — wyliczenie](../../debugger/debug-interface-access/namesearchoptions.md)
+ [Idiasession::findchildren —](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [NameSearchOptions, wyliczenie](../../debugger/debug-interface-access/namesearchoptions.md)

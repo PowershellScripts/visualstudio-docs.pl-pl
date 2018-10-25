@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 63c1b27d762f79a8933a31bb33850ad4604a9c37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6821d218c22f2d83108205d8753fc2d5beac4f28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301564"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939439"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Porady: tworzenie lub aktualizowanie standardowych zasad ewidencjonowania analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Możesz wymagać, można uruchomić analizę kodu dla wszystkich projektów kodu
   
  Zasady ewidencjonowania analizy kodu są ustawiane w ustawieniach projektu zespołowego i mają zastosowanie do każdego projektu kodu w projekcie zespołowym. Przebiegi analizy kodu są skonfigurowane dla projektów kodu w pliku projektu (.xxproj) dla projektu kodu. Przebiegi analizy kodu są wykonywane na komputerze lokalnym. Po włączeniu zasad analizy kodu ewidencjonowania, muszą być skompilowane pliki w projekcie kodu, które mają być sprawdzane po ich ostatniej modyfikacji i uruchomienia analizy kodu zwrócić, zawiera co najmniej reguły w ustawieniach projektu zespołowego, należy wykonać na komputerze, gdzie c zmiany zostały wprowadzone.  
   
--   Dla kodu zarządzanego, Ustaw zasady ewidencjonowania, określając *zestaw reguł* zawierającą podzbiór reguł analizy kodu.  
+- Dla kodu zarządzanego, Ustaw zasady ewidencjonowania, określając *zestaw reguł* zawierającą podzbiór reguł analizy kodu.  
   
--   Dla kodu C/C++ zasad ewidencjonowania wymaga, że są uruchomione wszystkie reguły analizy kodu. Możesz dodać wstępne procesora dyrektywy można wyłączyć określone zasady dla poszczególnych projektów kodu w projekcie zespołowym.  
+- Dla kodu C/C++ zasad ewidencjonowania wymaga, że są uruchomione wszystkie reguły analizy kodu. Możesz dodać wstępne procesora dyrektywy można wyłączyć określone zasady dla poszczególnych projektów kodu w projekcie zespołowym.  
   
- Po określeniu zasad ewidencjonowania dla kodu zarządzanego, członkowie zespołu mogą wykonywać synchronizację z ich ustawienia analizy kodu dla projektów kodu, aby ustawienia zasad projektu zespołowego.  
+  Po określeniu zasad ewidencjonowania dla kodu zarządzanego, członkowie zespołu mogą wykonywać synchronizację z ich ustawienia analizy kodu dla projektów kodu, aby ustawienia zasad projektu zespołowego.  
   
 ### <a name="to-open-the-check-in-policy-editor"></a>Aby otworzyć Edytor zasad ewidencjonowania  
   

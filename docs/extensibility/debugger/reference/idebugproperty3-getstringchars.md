@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f7d5430326f57acf686b90f911445cc36dbf02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d6df39bcd02fe74e2c6ada24d341cd3d2fdfb75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118248"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932939"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Pobiera parametry skojarzone z tą właściwością i zapisuje go w buforze dostarczone przez użytkownika.  
@@ -50,19 +50,19 @@ int GetStringChars(
  `rgString`  
  [out] Zwraca ciąg.  
   
- [C++ tylko], `rgString` jest wskaźnikiem do buforu, który odbiera znaki Unicode w ciągu. Bufor musi wynosić co najmniej `buflen` znaki (nie w bajtach) rozmiar.  
+ [C++ tylko], `rgString` to wskaźnik do buforu, który otrzymuje z ciągu znaków Unicode. Tego buforu musi wynosić co najmniej `buflen` rozmiar znaków (nie w bajtach).  
   
  `pceltFetched`  
- [out] Gdzie jest zwracana liczba znaków, przechowywane w buforze. (Może być `NULL` w języku C++.)  
+ [out] Gdzie jest zwracana liczba znaków rzeczywiście jest przechowywana w buforze. (Może być `NULL` w języku C++.)  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- W języku C++, należy zadbać, aby mieć pewność, że bufor jest co najmniej `buflen` znaków Unicode. Należy pamiętać, że znaku Unicode 2 bajty.  
+ W języku C++, należy uważać, aby mieć pewność, że rozmiar buforu jest co najmniej `buflen` znaków Unicode. Należy pamiętać, że znak Unicode 2 bajtów.  
   
 > [!NOTE]
->  W języku C++ zwracany ciąg nie zawiera znak końcowy null. Jeśli podany, `pceltFetched` określa liczbę znaków w ciągu.  
+>  W języku C++ zwracanego ciągu nie obejmuje kończącego znaku null. Jeśli określony, `pceltFetched` określą liczbę znaków w ciągu.  
   
 ## <a name="example"></a>Przykład  
  

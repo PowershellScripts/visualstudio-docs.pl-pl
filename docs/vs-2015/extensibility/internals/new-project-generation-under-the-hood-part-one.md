@@ -16,12 +16,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 122ef6b8f1e597006fd53e6360d10d304cc760b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c69df0e8c1aace595a1c79d52b7ca4cd08b7a004
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302617"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941232"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Generowanie nowego projektu: za kulisami, część pierwsza
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -175,35 +175,35 @@ devenv /installvstemplates
 #### <a name="a-quick-review"></a>Szybki przegląd  
  Zmodyfikujmy **nowy projekt** okna dialogowego pole, a następnie utwórz nowy szablon projektu użytkownika.  
   
-1.  Dodaj obiekt MyProjectNode podfolderu do folderu 14.0\Common7\IDE\ProjectTemplates\CSharp programu Visual Studio \Program Files\Microsoft.  
+1. Dodaj obiekt MyProjectNode podfolderu do folderu 14.0\Common7\IDE\ProjectTemplates\CSharp programu Visual Studio \Program Files\Microsoft.  
   
-2.  Utwórz plik MyProject.vstdir w folderze Obiekt MyProjectNode za pomocą dowolnego edytora tekstów.  
+2. Utwórz plik MyProject.vstdir w folderze Obiekt MyProjectNode za pomocą dowolnego edytora tekstów.  
   
-3.  Dodaj następujące wiersze do pliku .vstdir:  
+3. Dodaj następujące wiersze do pliku .vstdir:  
   
-    ```  
-    <TemplateDir Version="1.0.0">  
-        <SortOrder>6</SortOrder>  
-    </TemplateDir>  
-    ```  
+   ```  
+   <TemplateDir Version="1.0.0">  
+       <SortOrder>6</SortOrder>  
+   </TemplateDir>  
+   ```  
   
-4.  Zapisz i zamknij plik .vstdir.  
+4. Zapisz i zamknij plik .vstdir.  
   
-5.  Utwórz plik MyProject.vstemplate w folderze Obiekt MyProjectNode za pomocą dowolnego edytora tekstów.  
+5. Utwórz plik MyProject.vstemplate w folderze Obiekt MyProjectNode za pomocą dowolnego edytora tekstów.  
   
-6.  Dodaj następujące wiersze do pliku .vstemplate:  
+6. Dodaj następujące wiersze do pliku .vstemplate:  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-        <TemplateData>  
-            <ProjectType>CSharp</ProjectType>  
-        </TemplateData>  
-    </VSTemplate>  
-    ```  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+       <TemplateData>  
+           <ProjectType>CSharp</ProjectType>  
+       </TemplateData>  
+   </VSTemplate>  
+   ```  
   
-7.  Zapisz plik the.vstemplate i zamknij Edytor.  
+7. Zapisz plik the.vstemplate i zamknij Edytor.  
   
-8.  Wyślij plik .vstemplate do nowego folderu MyProjectNode\MyProject.zip skompresowany.  
+8. Wyślij plik .vstemplate do nowego folderu MyProjectNode\MyProject.zip skompresowany.  
   
 9. W oknie wiersza polecenia programu Visual Studio wpisz:  
   
@@ -211,13 +211,13 @@ devenv /installvstemplates
     devenv /installvstemplates  
     ```  
   
- Otwórz program Visual Studio.  
+   Otwórz program Visual Studio.  
   
-1.  Otwórz **nowy projekt** okna dialogowego pole, a następnie rozwiń węzeł **Visual C#** węzeł projektu.  
+10. Otwórz **nowy projekt** okna dialogowego pole, a następnie rozwiń węzeł **Visual C#** węzeł projektu.  
   
- ![Obiekt MyProjectNode](../../extensibility/internals/media/myprojectnode.png "Obiekt MyProjectNode")  
+    ![Obiekt MyProjectNode](../../extensibility/internals/media/myprojectnode.png "Obiekt MyProjectNode")  
   
- **Obiekt MyProjectNode** jest wyświetlany jako węzeł podrzędny programu Visual C# tuż pod węzeł Windows.  
+    **Obiekt MyProjectNode** jest wyświetlany jako węzeł podrzędny programu Visual C# tuż pod węzeł Windows.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Generowanie nowego projektu: za kulisami, część druga](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

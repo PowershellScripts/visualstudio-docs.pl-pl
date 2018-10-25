@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9f32a0049b614c1afa4d7eb62bdeda2d55b651e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4971b2b6c045bc0b583d616a05a5075ce60b750
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942738"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 Ta metoda zwraca następny zestaw elementów z wyliczenia.  
@@ -45,16 +45,16 @@ int Next(
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [in] Liczba elementów do pobrania. Określa maksymalny rozmiar `rgelt` tablicy.  
+ [in] Liczba elementów do pobrania. Również określa maksymalny rozmiar `rgelt` tablicy.  
   
  `rgelt`  
- [w, out] Tablica [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) elementy do wypełnienia.  
+ [out w] Tablica [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) elementami do wypełnienia.  
   
  `pceltFetched`  
- [out] Zwraca liczbę elementów, w rzeczywistości zwracane w `rgelt`.  
+ [out] Zwraca liczbę elementów, w rzeczywistości są zwracane w `rgelt`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli mniej niż żądana liczba elementów mogą być zwracane; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli mniej niż żądana liczba elementów, które mogą być zwracane; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   

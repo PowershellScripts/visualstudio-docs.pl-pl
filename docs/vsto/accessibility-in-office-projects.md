@@ -18,72 +18,72 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 34a1ea090e85168b5fd0bf2e55c22d0a38ff331f
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: e7d056d8f5cb014d48827faf0ec10a8a23bd8d03
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262321"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938828"
 ---
 # <a name="accessibility-in-office-projects"></a>Ułatwienia dostępu w projektach pakietu Office
-  Microsoft Visual Studio i Microsoft Office, zawierają wiele funkcji ułatwień dostępu, które umożliwiają tworzenie niestandardowych rozwiązań, które spełniają wymagania standardowe ułatwień dostępu. Firma Microsoft publikuje wytyczne dotyczące ułatwień dostępu w sieci Web. Aby uzyskać więcej informacji, zobacz [dostępności witryny sieci Web](http://go.microsoft.com/fwlink/?LinkID=37113).  
+  Microsoft Visual Studio i Microsoft Office zawiera wiele funkcji ułatwień dostępu, które umożliwiają tworzenie niestandardowych rozwiązań, które spełniają wymagania standardowych ułatwień dostępu. Firma Microsoft publikuje wytyczne dotyczące ułatwień dostępu w sieci Web. Aby uzyskać więcej informacji, zobacz [WWW ułatwień dostępu](http://go.microsoft.com/fwlink/?LinkID=37113).  
 
- W większości przypadków projektów pakietu Office w Visual Studio spełnia właściwości standardów lub ujawnia ułatwień dostępu, które można ustawić, aby udostępnić rozwiązań. Istnieją jednak niektóre funkcje, które mają ograniczoną dostępność.  
+ W większości przypadków projektów pakietu Office w Visual Studio spełnia ułatwień dostępu standardów lub udostępnia właściwości, które można ustawić, aby udostępnić swoje rozwiązania. Istnieją jednak pewne funkcje, które mają ograniczoną dostępność.  
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
 
 ## <a name="accessibility-at-design-time"></a>Ułatwienia dostępu w czasie projektowania  
 
 ### <a name="use-shortcut-keys-in-document-level-projects"></a>Klawisze skrótów w projektach na poziomie dokumentu  
- Gdy dokument programu Microsoft Word pakietu Office lub programu Microsoft Office Excel jest otwarty w programie Visual Studio, tylko jedną aplikację naraz odbiera poleceń klawiszy skrótów. Domyślnie program Visual Studio odbiera wszystkie polecenia klawiszy skrótu, ale możesz wprowadzić Word czy Excel ich odbierania, gdy dokument ma fokus, wybierając **schemat klawiatury dynamiczne** na **ustawienia klawiatury** strony z **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [program Klawiatura Microsoft Office Word, ustawienia klawiatury Microsoft Office, opcje — Okno dialogowe](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md) i [program Klawiatura Microsoft Office Excel, ustawienia klawiatury Microsoft Office, opcje — Okno dialogowe](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md).  
+ Gdy dokument programu Microsoft Office Word lub skoroszytu programu Microsoft Office Excel jest otwarty w programie Visual Studio, tylko jedną aplikację naraz otrzymuje polecenia klawiszy skrótów. Domyślnie program Visual Studio odbiera wszystkie polecenia klawiszy skrótów, ale możesz wprowadzać programu Word lub Excel ich otrzymywania, gdy dokument ma fokus, wybierając **dynamiczny schemat klawiatury** na **ustawienia klawiatury** strony z **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [klawiatura programu Microsoft Office Word, ustawienia klawiatury Microsoft Office, okno dialogowe Opcje](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md) i [klawiatura programu Microsoft Office Excel, ustawienia klawiatury Microsoft Office, okno dialogowe Opcje](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md).  
 
-### <a name="display-shortcut-keys-for-the-ribbon-in-document-level-projects"></a>Wyświetlanie klawiszy skrótów do wstążki w projektach na poziomie dokumentu  
- Gdy dokument programu Word lub skoroszyt programu Excel jest otwarty w programie Visual Studio, nie można nacisnąć **Alt** klawisz, aby wyświetlić skróty klawiaturowe kart i kontrolek na Wstążce. Aby wyświetlić klawisze skrótów, gdy dokument lub skoroszyt jest otwarty w projektancie, wykonaj następujące kroki.  
+### <a name="display-shortcut-keys-for-the-ribbon-in-document-level-projects"></a>Wyświetla klawiszy skrótów dla wstążki w projektach na poziomie dokumentu  
+ Gdy dokument programu Word lub skoroszytu programu Excel jest otwarty w programie Visual Studio, nie można nacisnąć klawisza **Alt** klawisz, aby wyświetlić klawisze skrótów dla kart i kontrolek na Wstążce. Aby wyświetlić klawisze skrótów, gdy dokument lub skoroszyt jest otwarty w projektancie, wykonaj następujące czynności.  
 
-#### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Aby wyświetlić klawisze skrótu dla karty Wstążki i formantów w Projektancie  
+#### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Aby wyświetlić klawisze skrótów dla karty Wstążki i formantów w Projektancie  
 
 1.  W programie Visual Studio na **narzędzia** menu, kliknij przycisk **opcje**.  
 
-2.  Rozwiń węzeł **narzędzia Office** , a następnie wybierz węzeł **Microsoft Office Excel klawiatury** lub **Microsoft Office Word klawiatury**odpowiednio.  
+2.  Rozwiń **narzędzia Office** , a następnie wybierz węzeł **klawiatura programu Microsoft Office Excel** lub **klawiatura programu Microsoft Office Word**, odpowiednio.  
 
-3.  Wybierz **schemat klawiatury dynamiczne**.  
+3.  Wybierz **dynamiczny schemat klawiatury**.  
 
-     Pojawi się komunikat z informacją o ponowne uruchomienie programu Visual Studio aby zmiany zaczęły obowiązywać.  
+     Pojawi się komunikat z informacją, że należy ponownie uruchomić Visual Studio aby zmiany zaczęły obowiązywać.  
 
 4.  Kliknij przycisk **OK**.  
 
-5.  Uruchom ponownie program Visual Studio i ponownie otwórz projekt.  
+5.  Uruchom ponownie program Visual Studio i otwórz ponownie projekt.  
 
-6.  Otwórz dokument lub skoroszyt projektanta projektu.  
+6.  Otwórz dokument lub skoroszyt, Projektant projektu.  
 
-7.  Naciśnij klawisz **F6** do wyświetlenia klawiszy skrótów dla wstążki.  
+7.  Naciśnij klawisz **F6** spowoduje wyświetlanie klawiszy skrótów dla wstążki.  
 
 ## <a name="accessibility-at-runtime"></a>Ułatwienia dostępu w czasie wykonywania  
 
-### <a name="windows-forms-controls-on-office-documents"></a>Formanty formularzy systemu Windows w dokumentach pakietu Office  
- Formanty formularzy systemu Windows udostępniają właściwości ułatwień dostępu, aby podać informacje dotyczące sterowania do narzędzi ułatwień dostępu, takich jak czytniki. Możliwość korzystania z tych właściwości ułatwień dostępu, gdy formanty znajdują się w dokumencie programu Word w dostosowaniu poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [zawierają informacje ułatwień dostępu dla formantów w formularzu systemu Windows](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form).  
+### <a name="windows-forms-controls-on-office-documents"></a>Formanty Windows Forms w dokumentach pakietu Office  
+ Formanty Windows Forms zmieniają właściwości ułatwień dostępu w celu dostarczenia informacji o kontroli do narzędzi ułatwień dostępu, takich jak czytniki zawartości ekranu. Możesz korzystać z zalet tych właściwości ułatwień dostępu w przypadku kontrolek w dokumencie programu Word w dostosowaniu na poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [Podaj informacje o ułatwieniach dostępu dla formantów w formularzu Windows](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form).  
 
- Istnieją pewne ograniczenia ułatwień dostępu w czasie wykonywania, gdy formanty formularzy systemu Windows znajdują się w skoroszycie programu Excel lub dokumentu programu Word:  
+ Istnieją pewne ograniczenia ułatwień dostępu w czasie wykonywania w przypadku kontrolek formularzy Windows Forms znajdują się w skoroszycie programu Excel lub dokumentu programu Word:  
 
--   Z jednego formantu nie karcie do innego.  
+- Nie można kartę z jednego formantu do drugiego.  
 
--   Formanty w dokumencie są wyłączone, jeśli zmienisz ustawienie powiększenia dokumentu na inny niż 100%.  
+- Kontrolki do dokumentu są wyłączone, gdy ustawienie powiększenia dokumentu zostanie zmieniony na coś innego niż 100%.  
 
- Aby uzyskać informacje o ograniczeniach formanty formularzy systemu Windows w dokumentach, zobacz [formanty ograniczenia formularzy systemu Windows w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).  
+  Aby uzyskać informacje o ograniczeniach formanty Windows Forms w dokumentach, zobacz [ograniczenia Windows Forms kontrolki w dokumentach pakietu Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).  
 
 ### <a name="actions-panes-and-custom-task-panes"></a>Okienka akcji i niestandardowych okienek zadań  
- Gdy okienka Akcje lub niestandardowego okienka zadań ma fokus, możesz uzyskać dostęp do formantów taki sam sposób czy dostęp do formantów w aplikacji formularzy systemu Windows. Aby przenieść kursor między panelu actions i dokumentu, można nacisnąć klawisz **F6**.  
+ Gdy okienko akcji lub niestandardowego okienka zadań ma fokus, możesz uzyskać dostęp formantów taki sam sposób, dostęp do formantów w aplikacji Windows Forms. Aby przenieść kursor między panelu actions i dokumentu, możesz nacisnąć przycisk **F6**.  
 
- Aby uzyskać więcej informacji na temat okienka akcji i niestandardowych okienek zadań, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md) i [niestandardowego okienka zadań](../vsto/custom-task-panes.md).  
+ Aby uzyskać więcej informacji na temat okienka akcji i niestandardowych okienek zadań, zobacz [okienko akcji ― omówienie](../vsto/actions-pane-overview.md) i [niestandardowych okienek zadań](../vsto/custom-task-panes.md).  
 
-### <a name="display-modes"></a>Wyświetlanie trybów  
- Visual Studio ma następujące ograniczenia związane z tryby wyświetlania:  
+### <a name="display-modes"></a>Tryby wyświetlania  
+ Program Visual Studio ma następujące ograniczenia związane z tryby wyświetlania:  
 
--   Formantów w arkuszu programu Excel lub dokumentu programu Word są wyłączone, gdy zmienisz ustawienie powiększenia dokumentu na inny niż 100%.  
+- Formanty w dokumencie programu Word lub arkusz programu Excel są wyłączone, gdy ustawienie powiększenia dokumentu zostanie zmieniony na coś innego niż 100%.  
 
--   **Nowy projekt** okno dialogowe wyświetlane formanty nieprawidłowo, jeśli użytkownik zmieni opcje ułatwień dostępu komputera **Użyj funkcji Duży kontrast**.  
+- **Nowy projekt** okno dialogowe nie są wyświetlane formantów poprawnie, jeśli użytkownik zmieni opcji ułatwień dostępu komputera do **użycie o wysokim kontraście**.  
 
- Program Lupa można użyć, aby wyeliminować te ograniczenia. Lupa jest narzędziem wyświetlania w systemie Windows, która tworzy osobne okno wyświetlający powiększony części ekranu.  
+  Program Lupa można użyć, aby wyeliminować te ograniczenia. Lupa jest narzędzie do wyświetlania w Windows, która tworzy osobne okno, które wyświetla powiększony część ekranu.  
 
 ## <a name="see-also"></a>Zobacz także  
  [Opracowywania rozwiązań pakietu Office](../vsto/developing-office-solutions.md)   

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 479206b75325c1b7e6bba0e4cc4e9b53944d73d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7fa10fb5ebe2f9a78d44997c29ae51bc02e2c842
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119165"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934941"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
-Ten interfejs umożliwia sesji debugowania Menedżera (SDM) powiadomić procesu, który jest dołączenie do lub odłączanie od procesu.  
+Ten interfejs umożliwia sesji debugowania manager (SDM) powiadamiać procesu, który jest dołączenie do lub odłączenie od procesu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -32,26 +32,26 @@ IDebugProcessEx2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Uwagi dotyczące implementacji  
- Dostawcy niestandardowego numeru portu implementuje ten interfejs dla tego samego obiektu jako [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) interfejsu w celu:  
+ Dostawcy niestandardowego portu implementuje ten interfejs na ten sam obiekt jako [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) interfejs w celu:  
   
--   Obsługa śledzenia sesji połączenia z procesem  
+- Obsługa śledzenia sesji podłączony do procesu  
   
--   Obsługa automatyczne dołączanie w wielu aparatami debugowania  
+- Obsługa automatyczne dołączanie w wielu aparatów debugowania  
   
- Jeśli wybiera dostawcy niestandardowego numeru portu może zawierać implementację tego interfejsu.  
+  Dostawca numery portów mogą implementować ten interfejs, jeśli go wybierze.  
   
 ## <a name="notes-for-callers"></a>Uwagi dotyczące wywoływania  
   
--   Wywołania SDM [QueryInterface](/cpp/atl/queryinterface) na `IDebugProcess2` interfejs do uzyskania tego interfejsu.  
+-   Wywołania SDM [QueryInterface](/cpp/atl/queryinterface) na `IDebugProcess2` interfejsu w celu uzyskania tego interfejsu.  
   
-## <a name="methods-in-vtable-order"></a>Metody w kolejności Vtable  
+## <a name="methods-in-vtable-order"></a>Metody w Vtable kolejności  
  W poniższej tabeli przedstawiono metody `IDebugProcessEx2`.  
   
 |Metoda|Opis|  
 |------------|-----------------|  
-|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informuje o tym procesie czy sesji jest teraz debugowania procesu.|  
-|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informuje o tym procesie czy sesja jest już debugowania procesu.|  
-|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Dodaje węzłów programu listę aparaty debugowania.|  
+|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informuje proces, że sesja jest teraz debugowanie procesu.|  
+|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informuje proces, czy sesja jest już debugowanie procesu.|  
+|[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Dodaje węzły programu, aby uzyskać listę aparaty debugowania.|  
   
 ## <a name="remarks"></a>Uwagi  
  Ten interfejs jest prywatny między SDM i procesu.  
@@ -64,5 +64,5 @@ IDebugProcessEx2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejsy Core](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [Interfejsy podstawowe](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

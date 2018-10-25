@@ -14,34 +14,34 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8742924e1693a79268d6a35bc266caf5c5f32ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5bd7243e49c447dc8c362b0c98bf2cc7d77d76d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939502"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Samouczek 3: Tworzenie gry w dopasowywanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W tym samouczku stworzysz grę w dopasowywanie, gdzie gracz musi dopasować pary ukrytych ikon. Dowiesz się, jak:  
   
--   Store obiektów, takich jak ikony, w `List` obiektu.  
+- Store obiektów, takich jak ikony, w `List` obiektu.  
   
--   Użyj `foreach` pętli w języku Visual C# lub `For Each` pętli w języku Visual Basic do iteracji przez elementy na liście.  
+- Użyj `foreach` pętli w języku Visual C# lub `For Each` pętli w języku Visual Basic do iteracji przez elementy na liście.  
   
--   Śledzić stan formularza za pomocą zmiennych odwołania.  
+- Śledzić stan formularza za pomocą zmiennych odwołania.  
   
--   Stworzyć program obsługi zdarzeń w celu reagowania na zdarzenia, którego możesz używać z wieloma obiektami.  
+- Stworzyć program obsługi zdarzeń w celu reagowania na zdarzenia, którego możesz używać z wieloma obiektami.  
   
--   Stworzyć czasomierz, który odlicza czas do zera, a następnie uruchamia zdarzenie dokładnie jeden raz po uruchomieniu.  
+- Stworzyć czasomierz, który odlicza czas do zera, a następnie uruchamia zdarzenie dokładnie jeden raz po uruchomieniu.  
   
- Po zakończeniu samouczka program będzie wyglądać tak, jak na poniższej ilustracji.  
+  Po zakończeniu samouczka program będzie wyglądać tak, jak na poniższej ilustracji.  
   
- ![Gra tworzona w ramach tego samouczka](../ide/media/express-finishedgame.png "Express_FinishedGame")  
-Gra tworzona w ramach tego samouczka  
+  ![Gra tworzona w ramach tego samouczka](../ide/media/express-finishedgame.png "Express_FinishedGame")  
+  Gra tworzona w ramach tego samouczka  
   
- Aby pobrać pełną wersję przykładu, zobacz [przykładowy samouczek gry w dopasowywanie pełną](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
+  Aby pobrać pełną wersję przykładu, zobacz [przykładowy samouczek gry w dopasowywanie pełną](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
   
 > [!NOTE]
 >  W tym samouczku omówiono zarówno Visual C#, jak i Visual Basic, więc skoncentruj się na informacjach specyficznych dla języka programowania, którego używasz.  

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8318efdc64adf9792e44ccf2f4ad4aa9f74dd67
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1fa934610778479551d411a4b231a4b190f29bcd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937411"
 ---
 # <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
-Określa sposób interpretowania procesu o identyfikatorze w [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury.  
+Określa, jak interpretować procesu o identyfikatorze w [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,13 +44,13 @@ public enum enum_AD_PROCESS_ID {
   
 ## <a name="members"></a>Elementy członkowskie  
  AD_PROCESS_ID_SYSTEM  
- Identyfikator procesu jest identyfikatora systemowego. Użyj `ProcessId.dwProcessId` pole [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury.  
+ Identyfikator procesu jest identyfikator systemu. Użyj `ProcessId.dwProcessId` pole [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury.  
   
  AD_PROCESS_ID_GUID  
  Identyfikator procesu jest identyfikatorem GUID. Użyj `ProcessId.guidProcessId` pole `AD_PROCESS_ID` struktury.  
   
 ## <a name="remarks"></a>Uwagi  
- Używany do `ProcessIdType` członkiem [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury w celu określenia typu Identyfikator procesu, który jest zawarty w strukturze. Określa, jak interpretować `ProcessId` Unii w strukturze.  
+ Używany do `ProcessIdType` członkiem [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury w celu określenia typu Identyfikator procesu, który znajduje się w strukturze. Określa, jak interpretować `ProcessId` Unii w strukturze.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

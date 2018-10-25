@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a4b163aef25972968933d3352486aab9ebbf962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950979"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Porady: dostosowywanie diagramów klasy (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,11 +129,11 @@ Można zmienić sposób wyświetlania informacji na diagramach klas. Można dost
   
 ##  <a name="DisplayAssociationAndInheritance"></a> Pokazywanie ukrytych relacji  
   
-1.  Otwórz i wybierz plik diagramu klasy w Projektancie klas.  
+1. Otwórz i wybierz plik diagramu klasy w Projektancie klas.  
   
-2.  Kliknij prawym przyciskiem myszy typ z ukrytym skojarzeniem lub dziedziczeniem.  
+2. Kliknij prawym przyciskiem myszy typ z ukrytym skojarzeniem lub dziedziczeniem.  
   
- Kliknij przycisk **Pokaż wszystkie elementy członkowskie** linii skojarzeń, a następnie kliknij przycisk **Pokaż klasy podstawowe** lub **Pokaż klasy pochodne** dla linii dziedziczenia.  
+   Kliknij przycisk **Pokaż wszystkie elementy członkowskie** linii skojarzeń, a następnie kliknij przycisk **Pokaż klasy podstawowe** lub **Pokaż klasy pochodne** dla linii dziedziczenia.  
   
 ##  <a name="RemoveCodeAndShape"></a> Usuwanie kształtu z diagramu klasy  
  Możesz usunąć kształt typu z diagramu klasy bez wpływu na podstawowy kod typu. Usuwanie kształtów typu z diagramu klasy dotyczy tylko tego diagramu: podstawowy kod, który określa typ, i inne diagramy, które wyświetlają typ, nie są modyfikowane.  

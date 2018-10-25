@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8f5f13915d248ff59e7a3ca1bde8ad4ee92c201e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380361"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950020"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Zarządzaj wynikami testu obciążenia w repozytorium wyników testów obciążenia
 
@@ -44,7 +44,7 @@ Kiedy uruchamiasz testy obciążenia, wszystkie informacje zebrane podczas uruch
 ## <a name="load-test-analyzer-tasks"></a>Zadania analizatora testu obciążenia
 
 |Zadania|Skojarzone tematy|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Konfigurowanie testu obciążeniowego repozytorium wyników:** możesz skonfigurować repozytorium wyników testu obciążenia w bazie danych SQL. **Uwaga:** po zainstalowaniu kontrolera testów można również tworzyć repozytorium testu obciążenia. Aby uzyskać więcej informacji, zobacz [Instalowanie i konfigurowanie agentów testowych](../test/lab-management/install-configure-test-agents.md).||
 |**Zaznaczanie i wyświetlanie repozytorium wyników:** możesz wybrać repozytorium określonych wyników. Nie jesteś ograniczony do magazynu wyników lokalnych. Często testy obciążenia są uruchamiane na zbiorze zdalnym komputerów agentów. Wyniki testów z agentów lub z komputera lokalnego można zapisać na dowolnym serwerze SQL, na którym utworzono Magazyn wyników testu obciążenia. W obu przypadkach należy wskazać, gdzie przechowywać wyniki testu obciążenia przy użyciu **Administrowanie kontrolerami testów** okna.|-   [Porady: Wybieranie repozytorium wyników testu obciążenia](../test/how-to-select-a-load-test-results-repository.md)<br />-   [Porady: dostęp do wyników testów obciążenia do analizy](../test/how-to-access-load-test-results-for-analysis.md)|
 |**Usuwanie wyników testu obciążenia z repozytorium:** można usunąć wyniku testu obciążeniowego z **edytora testu obciążenia** przy użyciu **Otwórz i Zarządzaj wynikami testu obciążenia** okno dialogowe.|-   [Porady: z wynikami testów obciążeniowych usunięcia z repozytorium](../test/how-to-delete-load-test-results-from-a-repository.md)|

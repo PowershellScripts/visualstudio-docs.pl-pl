@@ -1,5 +1,5 @@
 ---
-title: Okno dialogowe właściwości CorrelationInitializers Dodawanie projektanta przepływów pracy —
+title: Projektant przepływu pracy — Dodawanie CorrelationInitializers, okno dialogowe
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,39 +12,39 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d54724655db7147c06687aa88a4fe623bb277a45
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 724c4e3ac911e5fda62304a08565937f38425368
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948957"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Dodawanie CorrelationInitializers, okno dialogowe
 
-**Dodać inicjatorów korelacji** okno dialogowe służy do konfigurowania w Projektancie przepływów pracy **CorrelationInitializers** właściwości <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>, i <xref:System.ServiceModel.Activities.ReceiveReply> działań. Aby uzyskać więcej informacji na temat projektantów działań, które używają tego pola, zobacz [wysyłania](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md), i [SendAndReceiveReply ](../workflow-designer/sendandreceivereply-template-designer.md) tematów.
+**Dodaj inicjatory korelacji** okno dialogowe służy do konfigurowania w Projektancie przepływu pracy **CorrelationInitializers** właściwości <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>, i <xref:System.ServiceModel.Activities.ReceiveReply> działań. Aby uzyskać więcej informacji na temat Projektanci działań, które używają tego pola, zobacz [wysyłania](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md), i [SendAndReceiveReply ](../workflow-designer/sendandreceivereply-template-designer.md) tematów.
 
-Inicjatory korelacji w kolekcji określony za pomocą tego okna dialogowego można zainicjować następujące korelacji między działaniami komunikatów:
+Inicjatory korelacji w kolekcji określonej z tego okna dialogowego, można zainicjować następujących korelacji między działań dotyczących komunikatów:
 
 - oparte na zapytaniach
 - kontekst
 - Kontekst wywołania zwrotnego
 - "żądanie-odpowiedź"
 
-W poniższej tabeli opisano elementy interfejsu użytkownika **dodać inicjatorów korelacji** okno dialogowe:
+W poniższej tabeli opisano elementy interfejsu użytkownika **Dodaj inicjatory korelacji** okno dialogowe:
 
 |Element interfejsu użytkownika|Opis|
-|----------------|-----------------|
-|**Dodaj inicjatora**|Kliknij przycisk **zainicjować Dodaj** pole, aby dodać dodatkowe inicjatora kolekcji.|
-|**Typ korelacji**|Określa typ inicjatora korelacji. Istnieją cztery typy do wyboru:<br /><br /> 1. Inicjatora korelacji wywołania zwrotnego, aby określić <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer>.<br />2. Inicjatora korelacji kontekstu, aby określić <xref:System.ServiceModel.Activities.CorrelationInitializer>.<br />3. Inicjatora korelacji "żądanie-odpowiedź", aby określić <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer>.<br />4. Inicjatora korelacji zapytań, aby określić <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.<br /><br /> Aby edytować **CorrelationType**<br /><br /> 1. Karta do określonego wiersza w **dodać inicjatora** DataGrid.<br />2. Aby ustawić fokus na **CorrelationTypeComboBox**, naciśnij klawisz **Ctrl**+**kartę**.<br />3. Naciśnij klawisze Alt + Strzałka w dół, aby wyskakujące **ComboBox** i go edytować.|
-|**Kwerendy XPath**|Para klucza i wartości zawierający zapytania, używane do wyodrębniania danych korelacji wiadomości przychodzących i wychodzących. Ta lista jest prawidłowy tylko w przypadku korzystania z <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> typów.|
+|-|-----------------|
+|**Dodaj inicjator**|Kliknij przycisk **Dodaj inicjowanie** pole, aby dodać dodatkowe inicjatora do kolekcji.|
+|**Typ korelace**|Określa typ inicjatora korelacji. Istnieją cztery typy do wyboru:<br /><br /> 1. Wywołanie zwrotne inicjatora korelacji, aby określić <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer>.<br />2. Kontekst inicjatora korelacji, aby określić <xref:System.ServiceModel.Activities.CorrelationInitializer>.<br />3. Inicjator korelacji "żądanie-odpowiedź", aby określić <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer>.<br />4. Inicjator korelacji zapytania, aby określić <xref:System.ServiceModel.Activities.QueryCorrelationInitializer>.<br /><br /> Aby edytować **CorrelationType**<br /><br /> 1. Karta do określonego wiersza w **Dodaj inicjator** DataGrid.<br />2. Aby ustawić fokus na **CorrelationTypeComboBox**, naciśnij klawisz **Ctrl**+**kartę**.<br />3. Naciśnij klawisze Alt + Strzałka w dół, przeskoczyć do góry **ComboBox** i go edytować.|
+|**Zapytania XPath**|Parą klucz/wartość, która zawiera zapytania, używany do wyodrębniania danych korelacji z komunikatów przychodzących i wychodzących. Ta lista jest prawidłowy tylko w przypadku korzystania z <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> typów.|
 
-## <a name="to-launch-the-add-correlation-initializers-dialog-box"></a>Aby uruchomić okno dialogowe Dodawanie inicjatorów korelacji
+## <a name="to-launch-the-add-correlation-initializers-dialog-box"></a>Aby uruchomić okno dialogowe Dodaj inicjatory korelacji
 
- **Dodać inicjatorów korelacji** okno dialogowe jest używany przez **wysyłania**, **Receive**, **ReceiveAndSendReply**, i  **SendAndReceiveReply** projektantów. Uzyskiwanie dostępu do nich przypomina w każdym przypadku i przypadku, która obejmuje **Receive** Projektant służy w tym miejscu ilustrujący procedury.
+ **Dodaj inicjatory korelacji** okno dialogowe jest używany przez **wysyłania**, **Receive**, **ReceiveAndSendReply**, i  **SendAndReceiveReply** projektantów. Uzyskiwanie dostępu do nich przypomina w każdym przypadku i przypadek, który obejmuje **Receive** projektanta jest używany w tym miejscu, aby zilustrować procedurę.
 
- **Receive** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie są umieszczone działania. Porzucanie **Receive** tworzy Projektant działań <xref:System.ServiceModel.Activities.Receive> działania z domyślną <xref:System.Activities.Activity.DisplayName%2A> Receive. Wybierz **Receive** Projektant działań i kliknij przycisk wielokropka obok tekstu (kolekcja) dla **CorrelationInitializers** właściwości w siatce właściwości **Dodaj Inicjatory korelacji** okno dialogowe okna.
+ **Receive** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie są umieszczone działań. Upuszczanie **Receive** tworzy projektanta działań <xref:System.ServiceModel.Activities.Receive> działanie przy użyciu domyślnego <xref:System.Activities.Activity.DisplayName%2A> Receive. Wybierz **Receive** projektanta działań i kliknij przycisk wielokropka, obok tekstu (kolekcji) dla **CorrelationInitializers** właściwość w siatce właściwości **Dodaj Inicjatory korelacji** wyświetlane okno dialogowe.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Dodaj korelacji — okno dialogowe](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)
+- [Dodaj korelacji, okno dialogowe](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)
 - [Inicjowanie korelacji, okno dialogowe](../workflow-designer/initialize-correlation-dialog-box.md)

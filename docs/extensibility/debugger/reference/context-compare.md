@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0563f037f77c18cc5e686c1ea6acf429c91ad06d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a17d0b422b65093721a55d4bf8d632aba271a55
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108586"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950813"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 Określa kryteria do porównywania dwóch kontekstów pamięci.  
@@ -58,36 +58,36 @@ public enum enum_CONTEXT_COMPARE {
   
 ## <a name="members"></a>Elementy członkowskie  
  CONTEXT_EQUAL  
- Znajdź pierwszy kontekstu pamięci na liście równą kontekst pamięci docelowy.  
+ Znajdź pierwszy kontekstu pamięci na liście, która jest równa docelowej kontekstu pamięci.  
   
  CONTEXT_LESS_THAN  
- Znajdź pierwszy kontekstu pamięci na liście, która jest mniejsza niż kontekst pamięci docelowy.  
+ Znajdź pierwszy kontekstu pamięci na liście, która jest mniejsza niż docelowy kontekstu pamięci.  
   
  CONTEXT_GREATER_THAN  
- Znajdź pierwszy kontekstu pamięci na liście, która jest większa niż kontekst docelowy pamięci.  
+ Znajdź pierwszy kontekstu pamięci na liście, która jest większa niż docelowy kontekstu pamięci.  
   
  CONTEXT_LESS_THAN_OR_EQUAL  
- Znajdź pierwszy kontekstu pamięci na liście, która jest mniejsza lub równa kontekst pamięci docelowy.  
+ Znajdź pierwszy kontekstu pamięci na liście, która jest mniejsza niż lub równa docelowej kontekstu pamięci.  
   
  CONTEXT_GREATER_THAN_OR_EQUAL  
- Znajdź pierwszy kontekstu pamięci na liście jest większa niż lub równa kontekst pamięci docelowy.  
+ Znajdź pierwszy kontekstu pamięci na liście, która jest większa lub równa docelowej kontekstu pamięci.  
   
  CONTEXT_SAME_SCOPE  
- Znajdź pierwszy kontekstu pamięci na liście, który znajduje się w tym samym zakresie co kontekst pamięci docelowy.  
+ Znajdź pierwszy kontekstu pamięci na liście znajduje się w taki sam zakres jak kontekstu pamięci docelowego.  
   
  CONTEXT_SAME_FUNCTION  
- Znajdź pierwszy kontekstu pamięci na liście w taką samą funkcję jak zasięg docelowy w pamięci.  
+ Znajdź pierwszy kontekstu pamięci na liście znajduje się w taką samą funkcję jak zakres docelowy w pamięci.  
   
  CONTEXT_SAME_MODULE  
- Znajdź pierwszy kontekstu pamięci na liście, który znajduje się w tym samym module jako docelowy kontekst pamięci.  
+ Znajdź pierwszy kontekstu pamięci na liście znajduje się w tym samym modułem kontekstu pamięci docelowego.  
   
  CONTEXT_SAME_PROCESS  
- Znajdź pierwszy kontekstu pamięci na liście, który znajduje się w ten sam proces jako docelowy kontekst pamięci.  
+ Znajdź pierwszy kontekstu pamięci na liście znajduje się w tym samym procesie co kontekstu pamięci docelowego.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako argument [porównania](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) metody.  
+ Przekazywany jako argument do [porównania](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) metody.  
   
- Te wartości są używane można znaleźć na liście, który spełnia kryteria porównania określony pierwszy kontekstu pamięci. Kontekst pamięci uzyskuje listę konteksty pamięci do porównania się przed za pośrednictwem `IDebugMemoryContext2::Compare` metody. Kontekst pamięci pierwszy na liście, dla którego jest operator porównania `true` jest następnie zwracany.  
+ Te wartości są używane do odszukać pierwszy kontekst pamięci na liście, który spełnia kryteria porównania określony. Kontekst pamięci podano listę konteksty pamięci do porównania sam względem za pośrednictwem `IDebugMemoryContext2::Compare` metody. Kontekst pamięci pierwszy na liście, dla którego operator porównania jest `true` jest zwracana.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

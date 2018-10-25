@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99c8a008cf48d596569e61534d7bfbf7cb9e45c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eee52a4f77c7d3a07b237f01877c5cba30e53900
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256571"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950852"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Porady: tworzenie szablonów wielu projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,55 +32,55 @@ Szablony wieloprojektowe działają jak kontenery dla dwóch lub więcej projekt
   
  Szablonu wieloprojektowego musi zawierać następujące elementy, skompresowany do pliku zip:  
   
--   Główny plik .vstemplate szablonu wieloprojektowego całego. Ten główny plik .vstemplate szablonu zawiera metadane, **nowy projekt** okno dialogowe wyświetla i określa, gdzie można znaleźć plików .vstemplate dla projektów w tym szablonie. Ten plik musi znajdować się w katalogu głównym pliku zip.  
+- Główny plik .vstemplate szablonu wieloprojektowego całego. Ten główny plik .vstemplate szablonu zawiera metadane, **nowy projekt** okno dialogowe wyświetla i określa, gdzie można znaleźć plików .vstemplate dla projektów w tym szablonie. Ten plik musi znajdować się w katalogu głównym pliku zip.  
   
--   Jeden lub więcej folderów zawierających pliki, które są wymagane przez szablon kompletnego projektu. W tym wszystkie pliki kodu dla projektu i pliku .vstemplate dla projektu.  
+- Jeden lub więcej folderów zawierających pliki, które są wymagane przez szablon kompletnego projektu. W tym wszystkie pliki kodu dla projektu i pliku .vstemplate dla projektu.  
   
- Na przykład plik zip szablonu wieloprojektowego, który ma dwa projekty mają następujące pliki i katalogi:  
+  Na przykład plik zip szablonu wieloprojektowego, który ma dwa projekty mają następujące pliki i katalogi:  
   
- MultiProjectTemplate.vstemplate  
+  MultiProjectTemplate.vstemplate  
   
- \Project1\Project1.vstemplate  
+  \Project1\Project1.vstemplate  
   
- \Project1\Project1.vbproj  
+  \Project1\Project1.vbproj  
   
- \Project1\Class.VB  
+  \Project1\Class.VB  
   
- \Project2\Project2.vstemplate  
+  \Project2\Project2.vstemplate  
   
- \Project2\Project2.vbproj  
+  \Project2\Project2.vbproj  
   
- \Project2\Class.VB  
+  \Project2\Class.VB  
   
- Główny plik .vstemplate szablonu wieloprojektowego różni się od szablonu jednego projektu w następujący sposób:  
+  Główny plik .vstemplate szablonu wieloprojektowego różni się od szablonu jednego projektu w następujący sposób:  
   
--   `Type` Atrybutu `VSTemplate` element zawiera wartość `ProjectGroup`. Na przykład:  
+- `Type` Atrybutu `VSTemplate` element zawiera wartość `ProjectGroup`. Na przykład:  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="ProjectGroup"  
-        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    ```  
+  ```  
+  <VSTemplate Version="2.0.0" Type="ProjectGroup"  
+      xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+  ```  
   
--   `TemplateContent` Element zawiera `ProjectCollection` element, który ma co najmniej jeden `ProjectTemplateLink` elementy, które definiują ścieżki do plików .vstemplate uwzględnione projektów. Na przykład:  
+- `TemplateContent` Element zawiera `ProjectCollection` element, który ma co najmniej jeden `ProjectTemplateLink` elementy, które definiują ścieżki do plików .vstemplate uwzględnione projektów. Na przykład:  
   
-    ```  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <ProjectTemplateLink>  
-                Project1\Project1.vstemplate  
-            </ProjectTemplateLink>  
-            <ProjectTemplateLink>  
-                Project2\Project2.vstemplate  
-            </ProjectTemplateLink>  
-        </ProjectCollection>  
-    </TemplateContent>  
-    ```  
+  ```  
+  <TemplateContent>  
+      <ProjectCollection>  
+          <ProjectTemplateLink>  
+              Project1\Project1.vstemplate  
+          </ProjectTemplateLink>  
+          <ProjectTemplateLink>  
+              Project2\Project2.vstemplate  
+          </ProjectTemplateLink>  
+      </ProjectCollection>  
+  </TemplateContent>  
+  ```  
   
- Szablony wielu projektów również będą działały inaczej niż normalny szablonów. Szablony wielu projektów mają następujące cechy unikatowy:  
+  Szablony wielu projektów również będą działały inaczej niż normalny szablonów. Szablony wielu projektów mają następujące cechy unikatowy:  
   
--   Poszczególnych projektów w szablonie wieloprojektowym nie można przypisać nazwy **nowy projekt** okno dialogowe. Zamiast tego należy użyć `ProjectName` atrybutu na `ProjectTemplateLink` elementu, aby określić nazwę dla każdego projektu. Aby uzyskać więcej informacji Zobacz pierwszy przykład w poniższej sekcji.  
+- Poszczególnych projektów w szablonie wieloprojektowym nie można przypisać nazwy **nowy projekt** okno dialogowe. Zamiast tego należy użyć `ProjectName` atrybutu na `ProjectTemplateLink` elementu, aby określić nazwę dla każdego projektu. Aby uzyskać więcej informacji Zobacz pierwszy przykład w poniższej sekcji.  
   
--   Szablony wielu projektów może zawierać projekty napisane w różnych językach, ale cały samego szablonu tylko można umieścić w jednej kategorii, za pomocą `ProjectType` elementu.  
+- Szablony wielu projektów może zawierać projekty napisane w różnych językach, ale cały samego szablonu tylko można umieścić w jednej kategorii, za pomocą `ProjectType` elementu.  
   
 ### <a name="to-create-a-multi-project-template"></a>Aby utworzyć szablon wielu projektów  
   

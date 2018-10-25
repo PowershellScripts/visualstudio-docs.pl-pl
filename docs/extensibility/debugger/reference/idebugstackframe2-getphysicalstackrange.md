@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be53b50bc21d81c60f7131e8ed437ecb2ac2f16c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1b46dd9993eb8a7611b4d84211016168d609101
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120845"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950384"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
-Pobiera reprezentację maszyny zależne od zakresu adresów fizycznych skojarzonych z ramki stosu.  
+Pobiera reprezentację zależnych od maszyny, zakresu adresów fizycznych skojarzonych z ramki stosu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,18 +43,18 @@ int GetPhysicalStackRange (
   
 #### <a name="parameters"></a>Parametry  
  `paddrMin`  
- [out] Zwraca adres fizyczny najniższy skojarzone z tą ramką stosu.  
+ [out] Zwraca najniższy adres fizyczny skojarzone z tą ramką stosu.  
   
  `paddrMax`  
- [out] Zwraca adres fizyczny najwyższy skojarzone z tą ramką stosu.  
+ [out] Zwraca najwyższy adres fizyczny skojarzone z tą ramką stosu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Informacje zwracane przez tę metodę jest używane przez menedżera sesji debugowania (SDM) do sortowania ramki stosu.  
+ Informacje zwracane przez tę metodę jest używany przez Menedżer debugowania sesji (SDM) do sortowania ramki stosu.  
   
- Zakłada się, że stos wywołań rozwoju, oznacza to, dodania nowej ramki stosu w coraz niższych adresów pamięci. Architektura środowiska wykonawczego podać zakresy stosu fizycznych, które odpowiada to założenie.  
+ Zakłada się, że stos wywołań rośnie, oznacza to, dodania nowej ramki stosu w coraz większym stopniu niższe adresów pamięci. Architektura środowiska wykonawczego, musisz podać zakresy adresów fizycznych stosu, które odpowiadają tym założeń.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa44dfa59f4883fa29a1724344124267f28bce9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5e886649a7eaa5f9f99eb2e2bfcc48985f12a5e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099639"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949555"
 ---
 # <a name="dumptype"></a>DUMPTYPE
-Określa, ile stanu programu (na przykład uruchomionych wątków ramek stosu i bieżący adres instrukcji) zrzutu.  
+Określa, ile stanu programu (np. uruchamianie wątków, ramek stosu i bieżący adres instrukcji) zrzutu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,10 +47,10 @@ public enum enum_DUMPTYPE {
  Określa zrzutu małe, compact.  
   
  DUMP_FULLDUMP  
- Określa zrzutu pełną, duża.  
+ Określa duża, pełny zrzut.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako argument [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) metody.  
+ Przekazywany jako argument do [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

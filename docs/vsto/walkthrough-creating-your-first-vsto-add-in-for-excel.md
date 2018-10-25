@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6421df0109d68d2647cafff5713aecb297c3536d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797802"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949906"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu Excel
   Ten Przewodnik wprowadzający dowiesz się, jak utworzyć dodatek poziomu aplikacji dla programu Microsoft Office Excel. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, które są otwarte skoroszyty.  
@@ -32,15 +32,15 @@ ms.locfileid: "38797802"
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Tworzenie projektu dodatku narzędzi VSTO programu Excel dla programu Excel.  
+- Tworzenie projektu dodatku narzędzi VSTO programu Excel dla programu Excel.  
   
--   Pisanie kodu, który używa modelu obiektów programu Excel Aby dodać tekst w skoroszycie, podczas zapisywania.  
+- Pisanie kodu, który używa modelu obiektów programu Excel Aby dodać tekst w skoroszycie, podczas zapisywania.  
   
--   Tworzenie i uruchamianie projektu, aby ją przetestować.  
+- Tworzenie i uruchamianie projektu, aby ją przetestować.  
   
--   Czyszczenie zakończone projektu tak, aby dodatku narzędzi VSTO już nie uruchamia automatycznie na komputerze deweloperskim.  
+- Czyszczenie zakończone projektu tak, aby dodatku narzędzi VSTO już nie uruchamia automatycznie na komputerze deweloperskim.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
@@ -78,18 +78,18 @@ ms.locfileid: "38797802"
   
 ### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>Aby dodać wiersz tekstu do zapisanego skoroszytu  
   
-1.  W pliku kodu ThisAddIn, Dodaj następujący kod do `ThisAddIn` klasy. Nowy kod definiuje zdarzenia obsługi dla <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> zdarzenie, które jest wywoływane, gdy skoroszyt jest zapisywany.  
+1. W pliku kodu ThisAddIn, Dodaj następujący kod do `ThisAddIn` klasy. Nowy kod definiuje zdarzenia obsługi dla <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> zdarzenie, które jest wywoływane, gdy skoroszyt jest zapisywany.  
   
-     Gdy użytkownik zapisuje skoroszyt, program obsługi zdarzeń dodaje nowy tekst na początku aktywnego arkusza.  
+    Gdy użytkownik zapisuje skoroszyt, program obsługi zdarzeń dodaje nowy tekst na początku aktywnego arkusza.  
   
-     [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  Jeśli używasz języka C#, Dodaj następujący kod wymagany do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod służy do łączenia `Application_WorkbookBeforeSave` programu obsługi zdarzeń z <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> zdarzeń.  
+2. Jeśli używasz języka C#, Dodaj następujący kod wymagany do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod służy do łączenia `Application_WorkbookBeforeSave` programu obsługi zdarzeń z <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> zdarzeń.  
   
-     [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
   
- Aby zmodyfikować skoroszytu, po zapisaniu go, w poprzednich przykładach kodu za pomocą następujących obiektów:  
+   Aby zmodyfikować skoroszytu, po zapisaniu go, w poprzednich przykładach kodu za pomocą następujących obiektów:  
   
 -   `Application` Pole `ThisAddIn` klasy. `Application` Pole zwraca <xref:Microsoft.Office.Interop.Excel.Application> reprezentujący bieżące wystąpienie programu Excel.  
   

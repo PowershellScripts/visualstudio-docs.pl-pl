@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6e51fdad7d4eaaec306de396c4693d00f0b434b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 453b8b8ef4667b7f049fbd4b62dbdc582c0a84ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198864"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942884"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Jak odblokować program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ Możesz ocenić programu Visual Studio bezpłatnie do 30 dni. Po zalogowaniu si�
   
  Ten komunikat oznacza, że gdy Twoja subskrypcja może nadal znajdować się prawidłowy token program Visual Studio używa na bieżąco swoją subskrypcję licencji nie została odświeżona i stała się przestarzała z jednego z następujących powodów:  
   
-1.  Bez użycia programu Visual Studio lub mieli Brak połączenia internetowego, Przedłuż okres.  
+1. Bez użycia programu Visual Studio lub mieli Brak połączenia internetowego, Przedłuż okres.  
   
-2.  Nastąpiło wylogowanie programu Visual Studio.  
+2. Nastąpiło wylogowanie programu Visual Studio.  
   
- Token licencji przejdzie starych, Visual Studio najpierw wyświetli ostrzeżenie komunikat z prośbą o ponowne wprowadzenie poświadczeń.  
+   Token licencji przejdzie starych, Visual Studio najpierw wyświetli ostrzeżenie komunikat z prośbą o ponowne wprowadzenie poświadczeń.  
   
- Jeśli nie ponownie wprowadzić swoje poświadczenia token zostanie uruchomiony do starych. W takim przypadku okno dialogowe Ustawienia konta informujący o tym ile dni pozostało przed pełni wygaśnięcia tokenu. Po wygaśnięciu tokenu programu, należy ponownie wprowadzić swoje poświadczenia dla tego konta lub aktywnej licencji przy użyciu innej metody powyżej, przed kontynuowaniem za pomocą programu Visual Studio.  
+   Jeśli nie ponownie wprowadzić swoje poświadczenia token zostanie uruchomiony do starych. W takim przypadku okno dialogowe Ustawienia konta informujący o tym ile dni pozostało przed pełni wygaśnięcia tokenu. Po wygaśnięciu tokenu programu, należy ponownie wprowadzić swoje poświadczenia dla tego konta lub aktywnej licencji przy użyciu innej metody powyżej, przed kontynuowaniem za pomocą programu Visual Studio.  
   
 > [!IMPORTANT]
 >  Jeśli używasz programu Visual Studio przez dłuższy czas, w środowiskach o ograniczonym lub Brak dostępu do Internetu, należy użyć klucza produktu odblokować program Visual Studio, aby uniknąć przerw w działaniu.  

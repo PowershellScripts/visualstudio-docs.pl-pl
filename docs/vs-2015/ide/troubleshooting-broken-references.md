@@ -20,29 +20,29 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae619be498fcb1c48bbea8b706f0b0b5fa4db54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292945"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950670"
 ---
 # <a name="troubleshooting-broken-references"></a>Rozwiązywanie problemów z przerwanymi odwołaniami
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Jeśli aplikacja próbuje użyć uszkodzone odwołanie, generowany jest błąd wyjątku. Z brakiem, aby odnaleźć składnika, do którego istnieje odwołanie jest podstawowym wyzwalacza dla błędu, ale istnieje kilka sytuacji, w których odwołanie jest uznawana za uszkodzone. Te wystąpienia są wyświetlane na poniższej liście:  
   
--   Ścieżka odwołania projektu jest niepoprawne lub niepełne.  
+- Ścieżka odwołania projektu jest niepoprawne lub niepełne.  
   
--   Usunięto plik, do którego nastąpiło odwołanie.  
+- Usunięto plik, do którego nastąpiło odwołanie.  
   
--   Zmieniono nazwę pliku, którego dotyczy odwołanie.  
+- Zmieniono nazwę pliku, którego dotyczy odwołanie.  
   
--   Połączenie sieciowe lub uwierzytelnianie nie powiodło się.  
+- Połączenie sieciowe lub uwierzytelnianie nie powiodło się.  
   
--   Odwołanie jest składnika modelu COM, który nie jest zainstalowany na komputerze.  
+- Odwołanie jest składnika modelu COM, który nie jest zainstalowany na komputerze.  
   
- Dostępne są następujące środki zaradcze tych problemów.  
+  Dostępne są następujące środki zaradcze tych problemów.  
   
 > [!NOTE]
 >  Pliki w zestawach są przywoływane przy użyciu ścieżek bezwzględnych w pliku projektu. Dlatego jest możliwe dla użytkowników, którzy pracują w środowisku projektowanie brakuje przywoływanego zestawu w środowisku lokalnym. Aby uniknąć tych błędów, lepiej jest w takich przypadkach można dodać odwołania projektu do projektu. Aby uzyskać więcej informacji, zobacz [NIB jak: Dodawanie lub usuwanie odwołań za pomocą okna dialogowego Dodaj odwołanie](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) i [programowanie za pomocą zestawów](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  

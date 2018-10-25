@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: abc993d13752cdae00ea75c1eba8e39901f562c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321115"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942988"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Konfigurowanie agentów testowych i kontrolerów do prowadzenia testów obciążeniowych testów
 
@@ -35,25 +35,25 @@ Architektura symulacji obciążenia składa się z klienta programu Visual Studi
 
 Taka architektura ma szereg zalet:
 
--   Możliwość skalowania generowanego obciążenia przez dodawanie kolejnych agentów testowych do kontrolera testów.
+- Możliwość skalowania generowanego obciążenia przez dodawanie kolejnych agentów testowych do kontrolera testów.
 
--   Elastyczność instalowania oprogramowania klienta, kontrolera testów i agentów testowych na tym samym lub różnych komputerach. Na przykład:
+- Elastyczność instalowania oprogramowania klienta, kontrolera testów i agentów testowych na tym samym lub różnych komputerach. Na przykład:
 
-     **Konfiguracja lokalna:**
+   **Konfiguracja lokalna:**
 
-    -   Komputer 1: program Visual Studio, kontroler, agent.
+  - Komputer 1: program Visual Studio, kontroler, agent.
 
-     ![Za pomocą kontrolera i agenta komputera lokalnego](./media/load-test-configa.png)
+    ![Za pomocą kontrolera i agenta komputera lokalnego](./media/load-test-configa.png)
 
-     **Typowa konfiguracja zdalna:**
+    **Typowa konfiguracja zdalna:**
 
-    -   Komputery 1 i 2: program Visual Studio (wielu testerów może używać tego samego kontrolera).
+  - Komputery 1 i 2: program Visual Studio (wielu testerów może używać tego samego kontrolera).
 
-    -   Komputer 3: kontroler (mogą być na nim również zainstalowani agenci).
+  - Komputer 3: kontroler (mogą być na nim również zainstalowani agenci).
 
-    -   Komputer 4 n: Agent lub agenci skojarzeni z kontrolerem na KOMPUTER3.
+  - Komputer 4 n: Agent lub agenci skojarzeni z kontrolerem na KOMPUTER3.
 
-     ![Maszyny zdalne przy użyciu kontrolera i agentów](./media/load-test-configb.png)
+    ![Maszyny zdalne przy użyciu kontrolera i agentów](./media/load-test-configb.png)
 
 Mimo że kontroler testów zarządza zwykle kilkoma agentami testowymi, każdy agent może być powiązany tylko z jednym kontrolerem. Każdego agenta testowego może używać cały zespół deweloperów. Taka architektura pozwala łatwo zwiększać liczbę agentów testowych, a efekcie generować większe obciążenia.
 

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_types | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_types — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6521d2a7ffdf5bb285f571e0d3975626f34d84d1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 773144f81e51167016df3dca1b6ea7beedb3661c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470039"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951317"
 ---
 # <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
-Pobiera tablicę typów kompilatora specyficzne dla tego symbolu.  
+Pobiera tablicę typów specyficznych dla kompilatora dla tego symbolu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,16 +39,16 @@ HRESULT get_types (
  [in] Rozmiar buforu do przechowywania danych.  
   
  `pcTypes`  
- [out] Zwraca liczbę typów zapisywane, lub jeśli `types` parametr jest `NULL`, następnie całkowita liczba dostępnych typów.  
+ [out] Zwraca liczbę typów napisane, lub jeśli `types` parametr jest `NULL`, następnie całkowita liczba dostępnych typów.  
   
  `types[]`  
- [out] Tablica, która ma być wypełnione przy użyciu [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiektów, które reprezentują wszystkie typy dla tego symbolu.  
+ [out] Tablica, która ma zostać wypełniony przy użyciu [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekty reprezentujące wszystkie typy dla tego symbolu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

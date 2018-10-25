@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94041c195d608b0641ab500dc8ab066adc87db36
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 872547326edb54fc5b843bdd74a8035e1119dca0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465281"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948073"
 ---
 # <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
-Zwraca początek zakresu adresów, w którym symbol lokalnego jest poprawna.  
+Zwraca początek zakresu adresów, w którym symbolu lokalnego jest poprawna.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,17 +37,17 @@ HRESULT get_liveRangeStartRelativeVirtualAddress (
  [out] Zwraca początek zakresu adresów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Wirtualny adres względny zwracane jest początek zakresu, w którym symbol jest nieprawidłowy.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Względny adres wirtualny, zwracany jest początek zakresu, w którym symbol jest poprawna.  
   
 > [!NOTE]
->  Zwrócony kod błędu oznacza, że symbol nie ma informacji o zakresie na żywo.  
+>  Zwrócony kod błędu: oznacza, że symbol nie ma informacji o zakresie na żywo.  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: Dia2.h  
   
- Biblioteki: diaguids.lib  
+ Biblioteka: diaguids.lib  
   
  Biblioteki DLL: msdia100.dll  
   

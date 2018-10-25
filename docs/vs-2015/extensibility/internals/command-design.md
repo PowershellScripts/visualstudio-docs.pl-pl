@@ -16,12 +16,12 @@ ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d46bbe3c9898fae2974b482e1ead607ea486fef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eacde73ded992eb72396cdb5f84dc01b145cf874
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252471"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949269"
 ---
 # <a name="command-design"></a>Projektowanie poleceń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,15 +48,15 @@ Dodając polecenie do VSPackage, należy określić, gdzie jest wyświetlane, gd
 ### <a name="command-organization"></a>Polecenie organizacji  
  Środowisko umieszcza polecenia według grupy, priorytetu i menu.  
   
--   Grupy są logicznymi kolekcjami powiązane polecenia, na przykład, **Wytnij**, **kopiowania**, i **Wklej** grupy poleceń. Grupy są poleceniami, które są wyświetlane w menu.  
+- Grupy są logicznymi kolekcjami powiązane polecenia, na przykład, **Wytnij**, **kopiowania**, i **Wklej** grupy poleceń. Grupy są poleceniami, które są wyświetlane w menu.  
   
--   Priorytet określa kolejność wyświetlania pojedynczych poleceń w grupie menu.  
+- Priorytet określa kolejność wyświetlania pojedynczych poleceń w grupie menu.  
   
--   Menu działają jak kontenery dla grupy.  
+- Menu działają jak kontenery dla grupy.  
   
- Środowisko powoduje wstępne definiowanie niektórych poleceń, grup i menu. Aby uzyskać więcej informacji, zobacz [polecenie domyślne, grupy i położenie paska narzędzi](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
+  Środowisko powoduje wstępne definiowanie niektórych poleceń, grup i menu. Aby uzyskać więcej informacji, zobacz [polecenie domyślne, grupy i położenie paska narzędzi](../../extensibility/internals/default-command-group-and-toolbar-placement.md).  
   
- Polecenia można przypisać do grupy podstawowej. Grupa podstawowa określa położenie polecenia w strukturze menu głównego, a w **Dostosuj** okno dialogowe. Polecenie może znajdować się w wielu grupach; na przykład polecenie może być menu głównego, w menu skrótów i na pasku narzędzi. Aby uzyskać więcej informacji, zobacz [jak pakietów VSPackage dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
+  Polecenia można przypisać do grupy podstawowej. Grupa podstawowa określa położenie polecenia w strukturze menu głównego, a w **Dostosuj** okno dialogowe. Polecenie może znajdować się w wielu grupach; na przykład polecenie może być menu głównego, w menu skrótów i na pasku narzędzi. Aby uzyskać więcej informacji, zobacz [jak pakietów VSPackage dodać elementy interfejsu użytkownika](../../extensibility/internals/how-vspackages-add-user-interface-elements.md).  
   
 ### <a name="command-routing"></a>Routing poleceń  
  Proces wywoływania i routing poleceń dla pakietów VSPackage różni się od proces wywoływania metod dla wystąpienia obiektu.  

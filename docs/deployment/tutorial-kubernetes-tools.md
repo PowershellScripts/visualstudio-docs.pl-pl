@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 079ae6affd5c495136d97a00eae2ddccfa2c9066
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 8cf4192ce0f925624dbbe890381d3557f2a27223
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356785"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942936"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Rozpoczynanie pracy z usługą Visual Studio Tools rozwiązania Kubernetes
 
@@ -90,21 +90,21 @@ Aby to zrobić, należy najpierw upewnić się, że zainstalowano wszystkie elem
 
    ![Zrzut ekranu opublikować element menu](media/k8s-tools-publish-project.png)
 
-1. W **Publikuj** ekranu, wybierz **Container Registry** jako publikowania docelowy, a następnie postępuj zgodnie z monitami, aby wybrać usługi container registry. Jeśli nie masz jeszcze rejestru kontenerów, wybierz opcję **Tworzenie nowej usługi Azure Container Registry** ją utworzyć za pomocą programu Visual Studio. Aby uzyskać więcej informacji, zobacz [opublikowany kontener w usłudze Azure Container Registry](#publish-your-container-to-azure-container-registry).
+2. W **Publikuj** ekranu, wybierz **Container Registry** jako publikowania docelowy, a następnie postępuj zgodnie z monitami, aby wybrać usługi container registry. Jeśli nie masz jeszcze rejestru kontenerów, wybierz opcję **Tworzenie nowej usługi Azure Container Registry** ją utworzyć za pomocą programu Visual Studio. Aby uzyskać więcej informacji, zobacz [opublikowany kontener w usłudze Azure Container Registry](#publish-your-container-to-azure-container-registry).
 
    ![Zrzut ekranu przedstawiający wybierz ekran docelowy publikowania](media/k8s-tools-publish-to-acr.png)
 
-1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy użytkownika *rozwiązania* i kliknij przycisk **publikowanie w usłudze Azure AKS**.
+3. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy użytkownika *rozwiązania* i kliknij przycisk **publikowanie w usłudze Azure AKS**.
 
    ![Zrzut ekranu z opublikować element menu platformy Azure w usłudze AKS](media/k8s-tools-publish-solution.png)
 
-1. Wybierz subskrypcję i klastra usługi AKS, wraz z rekordu ACR opublikować profil, który został utworzony. Następnie kliknij przycisk **OK**.
+4. Wybierz subskrypcję i klastra usługi AKS, wraz z rekordu ACR opublikować profil, który został utworzony. Następnie kliknij przycisk **OK**.
 
    ![Zrzut ekranu z publikowania do ekranu usługi AKS](media/k8s-tools-publish-to-aks.png)
 
    Spowoduje to przejście do **publikowanie w usłudze Azure AKS** ekranu.
 
-1.  Wybierz **skonfigurować Helm** łącze, aby zaktualizować wiersza polecenia używane do instalowania wykresów rozwiązania Helm na serwerze.
+5. Wybierz **skonfigurować Helm** łącze, aby zaktualizować wiersza polecenia używane do instalowania wykresów rozwiązania Helm na serwerze.
 
    ![Zrzut ekranu z skonfigurować narzędzia Helm łącza](media/k8s-tools-configure-helm.png)
 
@@ -112,7 +112,7 @@ Aby to zrobić, należy najpierw upewnić się, że zainstalowano wszystkie elem
 
    ![Zrzut ekranu narzędzia Helm, skonfigurować ekran](media/k8s-tools-helm-configure-screen.png)
 
-1. Gdy wszystko jest gotowe do wdrożenia, kliknij przycisk **Publikuj** przycisk, aby opublikować aplikację w usłudze AKS.
+6. Gdy wszystko jest gotowe do wdrożenia, kliknij przycisk **Publikuj** przycisk, aby opublikować aplikację w usłudze AKS.
 
    ![Zrzut ekranu przedstawiający publikowanie do usługi Azure AKS ekranu](media/k8s-tools-publish-screen.png)
 

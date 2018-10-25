@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3cd83a16ff3d497bd9e6a46f3a66a3d99506a1f
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 0f18aaff185e6591d43f10c979c00b654d5608a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582398"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949386"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 
@@ -52,13 +52,13 @@ Następujące składniki są wymagane do przeprowadzenia tego instruktażu:
 
 Znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończeni instruktażu:
 
--   Usługi danych WCF. Aby uzyskać więcej informacji, zobacz [Przegląd](/dotnet/framework/data/wcf/wcf-data-services-overview).
+- Usługi danych WCF. Aby uzyskać więcej informacji, zobacz [Przegląd](/dotnet/framework/data/wcf/wcf-data-services-overview).
 
--   Modele danych w [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
+- Modele danych w [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].
 
--   Jednostki danych modeli i ADO.NET Entity Framework. Aby uzyskać więcej informacji, zobacz [Omówienie programu Entity Framework](/dotnet/framework/data/adonet/ef/overview).
+- Jednostki danych modeli i ADO.NET Entity Framework. Aby uzyskać więcej informacji, zobacz [Omówienie programu Entity Framework](/dotnet/framework/data/adonet/ef/overview).
 
--   Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [powiązanie danych — omówienie](/dotnet/framework/wpf/data/data-binding-overview).
+- Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [powiązanie danych — omówienie](/dotnet/framework/wpf/data/data-binding-overview).
 
 ## <a name="create-the-service-project"></a>Tworzenie projektu usługi
 
@@ -171,23 +171,23 @@ Aby wyświetlić dane z usługi danych WCF, należy utworzyć nową aplikację W
 
 Dodaj kilku przycisków do okna, modyfikując XAML w Projektancie WPF. W dalszej części tego przewodnika dodasz kod, który umożliwia użytkownikom wyświetlanie i aktualizowanie rekordów sprzedaży przy użyciu tych przycisków.
 
-1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie **MainWindow.xaml**.
+1. W **Eksploratora rozwiązań**, kliknij dwukrotnie **MainWindow.xaml**.
 
-     Okno zostanie otwarty w Projektancie WPF.
+    Okno zostanie otwarty w Projektancie WPF.
 
-2.  W [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] wyświetlić projektanta, Dodaj następujący kod między `<Grid>` tagi:
+2. W [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] wyświetlić projektanta, Dodaj następujący kod między `<Grid>` tagi:
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="525" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="525" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  Skompiluj projekt.
+3. Skompiluj projekt.
 
 ## <a name="create-the-data-bound-controls"></a>Tworzenie formantów powiązanych z danymi
 
@@ -311,7 +311,7 @@ Po ukończeniu tego przewodnika, należy wykonać następujące zadania:
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
+- [Wiązanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Powiązywanie kontrolek WPF z zestawem danych](../data-tools/bind-wpf-controls-to-a-dataset.md)
 - [Omówienie usługi WCF (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
 - [Omówienie programu Entity Framework (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)

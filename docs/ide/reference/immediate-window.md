@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37dfbb9fda19363aefa1600fe9b0186862963cc1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943001"
 ---
 # <a name="immediate-window"></a>Okno bezpośrednie
 **Bezpośrednie** okno służy do debugowania i obliczać wyrażeń, wykonywania instrukcji, drukowania wartości zmiennych i tak dalej. Umożliwia wprowadzenie wyrażenia, aby je ocenić lub wykonać przy pomocy języka programowania podczas debugowania. Aby wyświetlić **bezpośrednie** okna, otwórz projekt do edycji, a następnie wybierz **Windows** z **debugowania** menu, a następnie wybierz **bezpośrednie**, lub naciśnij klawisze CTRL + ALT + I.
@@ -54,27 +54,27 @@ ms.locfileid: "39177701"
 
 #### <a name="to-execute-a-function-at-design-time"></a>Aby wykonać funkcję w czasie projektowania
 
-1.  Skopiuj następujący kod do [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] konsoli aplikacji:
+1. Skopiuj następujący kod do [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] konsoli aplikacji:
 
-    ```vb
-    Module Module1
+   ```vb
+   Module Module1
 
-        Sub Main()
-            MyFunction(5)
-        End Sub
+       Sub Main()
+           MyFunction(5)
+       End Sub
 
-        Function MyFunction(ByVal input as Integer) As Integer
-            Return input * 2
-        End Function
+       Function MyFunction(ByVal input as Integer) As Integer
+           Return input * 2
+       End Function
 
-    End Module
-    ```
+   End Module
+   ```
 
-2.  Na **debugowania** menu, kliknij przycisk **Windows**, a następnie kliknij przycisk **bezpośrednie**.
+2. Na **debugowania** menu, kliknij przycisk **Windows**, a następnie kliknij przycisk **bezpośrednie**.
 
-3.  Typ `?MyFunction(2)` w **bezpośrednie** okna i naciśnij klawisz Enter.
+3. Typ `?MyFunction(2)` w **bezpośrednie** okna i naciśnij klawisz Enter.
 
-     **Bezpośrednie** uruchomi okna `MyFunction` i wyświetlić `4`.
+    **Bezpośrednie** uruchomi okna `MyFunction` i wyświetlić `4`.
 
 Jeśli funkcja lub podprocedura zawiera punkt przerwania, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] spowoduje przerwanie wykonywania we właściwym miejscu. Można następnie użyć okien debugera do sprawdzenia stanu programu. Aby uzyskać więcej informacji, zobacz [wskazówki: debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md).
 
@@ -126,10 +126,10 @@ Nie można użyć obliczenia wyrażenia czasu projektowania w typach projektów,
 
 ## <a name="see-also"></a>Zobacz też
 
-- [Nawigowanie po kodzie za pomocą debugera za](../../debugger/navigating-through-code-with-the-debugger.md)
+- [Nawigowanie po kodzie za pomocą debugera](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
 - [Debugowanie w programie Visual Studio](../../debugger/debugging-in-visual-studio.md)
 - [Podstawowe informacje o debugerze](../../debugger/getting-started-with-the-debugger.md)
-- [Wskazówki: Debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Przewodnik: debugowanie w czasie projektowania](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)
 - [Używanie wyrażeń regularnych w programie Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

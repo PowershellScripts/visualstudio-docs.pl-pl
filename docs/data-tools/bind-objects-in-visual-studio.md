@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6d69167189c24d2a78a5ba02a34f6d95268d72e5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b7790f5205aa24a68505a1b34e97283aff05e13c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950144"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Powiązanie obiektów jako źródła danych w programie Visual Studio
 
@@ -137,7 +137,7 @@ Zapisywanie danych w bazie danych przez przekazanie wartości z obiektu do Table
 Program Visual Studio tworzy dbdirect — metody, które mogą być wykonywane bezpośrednio w bazie danych. Te metody nie wymagają obiektów DataSet lub DataTable.
 
 |TableAdapter dbdirect — metody|Opis|
-|----------------------------------|-----------------|
+| - |-----------------|
 |`TableAdapter.Insert`|Dodaje nowe rekordy w bazie danych, dzięki czemu możesz podawać wartości poszczególnych kolumn jako parametry metody.|
 |`TableAdapter.Update`|Aktualizuje istniejące rekordy w bazie danych. Metoda aktualizacji przyjmuje wartości oryginalnego i nowych kolumn jako parametry metody. Oryginalne wartości są używane do lokalizowania oryginalnego rekordu, a nowe wartości są używane na zaktualizowanie rekordu.<br /><br /> `TableAdapter.Update` Metoda umożliwia również uzgadniają zmiany w zestawie danych w bazie danych, wykonując <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, tablica lub <xref:System.Data.DataRow>określane jako parametry metody.|
 |`TableAdapter.Delete`|Usuwa istniejące rekordy z bazy danych oparte na oryginalnych wartości kolumny przekazanych jako parametry metody.|
@@ -151,4 +151,4 @@ Poniższy przykład pokazuje, jak używać `TableAdapter.Insert` dbdirect — me
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+- [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

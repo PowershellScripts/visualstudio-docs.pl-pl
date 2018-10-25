@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1dfee6c4b05325b170efea314ccbc814b0ebc56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4987074e63f26a91d890066b3b74240989745197
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120718"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947956"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
-Ta metoda pobiera język używany do kompilowania kodu pod adresem debugowania.  
+Ta metoda pobiera języka, który został użyty do kompilowania kodu pod adresem debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,13 +51,13 @@ int GetLanguage(
  [out] Zwraca `GUID` , który określa język.  
   
  `pguidLanguageVendor`  
- [out] Zwraca `GUID` , który określa dostawcy języka.  
+ [out] Zwraca `GUID` określający dostawcy języka.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Aparat debugowania wywołuje tę metodę, aby uzyskać informacje potrzebne do wybierz ewaluatora wyrażenia poprawne.  
+ Aparat debugowania wywołuje tę metodę, aby uzyskać informacje potrzebne do wybrania Ewaluator wyrażeń poprawne.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

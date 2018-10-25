@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38f28748914566162cbe070dd3d2e606eb8ce118
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b69f90633c08eda3b27c0292be44743b2cd38509
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134942"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948372"
 ---
 # <a name="stepkind"></a>STEPKIND
-Określa rodzaj krok wykonywanie krok po kroku.  
+Określa rodzaj kroku przechodzenie krok po kroku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,16 +51,16 @@ public enum enum_STEPKIND {
  Kroki do funkcji.  
   
  STEP_OVER  
- Kroki za pośrednictwem funkcji.  
+ Pomija funkcji.  
   
  STEP_OUT  
- Kroki poza funkcją.  
+ Kroki z funkcji.  
   
  STEP_BACKWARDS  
- Kroki z wcześniejszymi wersjami funkcji.  
+ Kroki wstecz do funkcji.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako argument [krok](../../../extensibility/debugger/reference/idebugprocess3-step.md) metody.  
+ Przekazywany jako argument do [kroku](../../../extensibility/debugger/reference/idebugprocess3-step.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -71,4 +71,4 @@ public enum enum_STEPKIND {
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [Krok](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+ [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

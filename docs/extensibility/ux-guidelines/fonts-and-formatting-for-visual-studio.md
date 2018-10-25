@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942832"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Czcionki i formatowanie dla programu Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Czcionka środowiska
@@ -325,13 +325,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>Wielkimi literami  
  Wielkość liter jest styl z tym pierwsze litery większość lub wszystkie wyrazy w frazę. W programie Visual Studio wielkość liter jest używany dla wielu elementów, w tym:  
   
--   **Etykietki narzędzi.** Przykład: "podgląd wybranych elementów"  
+- **Etykietki narzędzi.** Przykład: "podgląd wybranych elementów"  
   
--   **Nagłówki kolumn.** Przykład: "System Response"  
+- **Nagłówki kolumn.** Przykład: "System Response"  
   
--   **Elementy menu.** Przykład: "Zapisz wszystko"  
+- **Elementy menu.** Przykład: "Zapisz wszystko"  
   
- Korzystając z wielkimi literami, poniżej przedstawiono wskazówki dotyczące kiedy na wielką słów i kiedy należy pozostawić je jako małe litery:  
+  Korzystając z wielkimi literami, poniżej przedstawiono wskazówki dotyczące kiedy na wielką słów i kiedy należy pozostawić je jako małe litery:  
   
 |Wielkie litery|Komentarze i przykłady|  
 |---------------|---------------------------|  

@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 05e27b822f933ade811084552f6f0379257ae82e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788797"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947644"
 ---
 # <a name="date-object-expected"></a>Oczekiwany obiekt Date
-Użytkownik próbował wywołać **Date.prototype.toString** lub **Date.prototype.valueOf** metody dla obiekt typu innego niż `Date`. Obiekt tego typu wywołania musi być typu `Date`. Na przykład:  
+Podjęto próbę wywołania **Date.prototype.toString** lub **Date.prototype.valueOf** metody na obiekt typu innego niż `Date`. Obiekt tego typu wywołania musi być typu `Date`. Na przykład:  
   
 ```JavaScript  
 var o = new Object;  
@@ -38,9 +38,9 @@ o.f();
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
--   Tylko wywołania **Date.prototype.toString** lub **Date.prototype.valueOf** metod na obiektach typu `Date`.  
+-   Tylko wywołania **Date.prototype.toString** lub **Date.prototype.valueOf** metod obiektów typu `Date`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Date — obiekt](../../javascript/reference/date-object-javascript.md)   
- [getDate — metoda (Data)](../../javascript/reference/getdate-method-date-javascript.md)   
+ [GETDATE — metoda (Date)](../../javascript/reference/getdate-method-date-javascript.md)   
  [Obiekty wewnętrzne](../../javascript/intrinsic-objects-javascript.md)

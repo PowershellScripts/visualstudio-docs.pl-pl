@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f8615c341ff6dbde47140801054fbd47b51022f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 63446ddedaafe94b98dcbfe1f315fd5958fdb2d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106370"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949932"
 ---
 # <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
-Pobiera nazwę komputera, core server na którym działa.  
+Pobiera nazwę maszyny, która jest systemem core server.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,7 +44,7 @@ int GetName(
  [out] Zwraca ciąg zawierający nazwę komputera.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

@@ -26,12 +26,12 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2da6004598d04ca91cea6e29e07ae9fcc1fb28e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acae33e015b158c36b5e8c27b5b88131c863fc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949893"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Podgląd wartości danych w poradach dotyczących danych w edytorze kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,16 +42,16 @@ DataTips zapewniają wygodny sposób wyświetlania informacji na temat zmiennych
   
 ### <a name="to-display-a-datatip-in-break-mode-only"></a>Aby wyświetlić etykietki danych (tylko w trybie przerwania)  
   
-1.  W oknie źródła umieść wskaźnik myszy na dowolnej zmiennej w bieżącym zakresie.  
+1. W oknie źródła umieść wskaźnik myszy na dowolnej zmiennej w bieżącym zakresie.  
   
-     Pojawi się DataTip.  
+    Pojawi się DataTip.  
   
-    > [!NOTE]
-    >  Porady dotyczące danych są zawsze obliczane w kontekście, w przypadku, gdy wykonanie programu jest zawieszone, a nie w przypadku, gdy kursor znajduje się. Po umieszczeniu wskaźnika myszy nad zmienną w innej funkcji o tej samej nazwie jako zmiennej, która znajduje się w bieżącym kontekście, wartość zmiennej w innych funkcji jest wyświetlany jako wartość zmiennej w bieżącym kontekście.  
+   > [!NOTE]
+   >  Porady dotyczące danych są zawsze obliczane w kontekście, w przypadku, gdy wykonanie programu jest zawieszone, a nie w przypadku, gdy kursor znajduje się. Po umieszczeniu wskaźnika myszy nad zmienną w innej funkcji o tej samej nazwie jako zmiennej, która znajduje się w bieżącym kontekście, wartość zmiennej w innych funkcji jest wyświetlany jako wartość zmiennej w bieżącym kontekście.  
   
-2.  DataTip zniknie po usunięciu wskaźnika myszy. Aby przypiąć DataTip pozostaje otwarty, kliknij przycisk **Przypnij do źródła** ikony, lub  
+2. DataTip zniknie po usunięciu wskaźnika myszy. Aby przypiąć DataTip pozostaje otwarty, kliknij przycisk **Przypnij do źródła** ikony, lub  
   
-    -   Kliknij prawym przyciskiem myszy na zmiennej, a następnie kliknij przycisk **Przypnij do źródła**.  
+   - Kliknij prawym przyciskiem myszy na zmiennej, a następnie kliknij przycisk **Przypnij do źródła**.  
   
      Przypiętych etykietki danych zostanie zamknięte po zakończeniu sesji debugowania.  
   

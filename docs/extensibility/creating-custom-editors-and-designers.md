@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56d191d8019b4b87cc31e0e383637515a10f4147
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 05eeae4901af8780927e0ce0577b385ee9ffa371
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497615"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950906"
 ---
 # <a name="create-custom-editors-and-designers"></a>Tworzenie niestandardowych edytorów i projektantów
 Visual Studio zintegrowane środowisko programistyczne (IDE) mogą obsługiwać różne rodzaje Edytor:  
   
--   Podstawowy edytor programu Visual Studio  
+- Podstawowy edytor programu Visual Studio  
   
--   Edytorach niestandardowych  
+- Edytorach niestandardowych  
   
--   Edytory zewnętrzne  
+- Edytory zewnętrzne  
   
--   Projektanci  
+- Projektanci  
   
- Poniższe informacje pomaga wybrać typu edytora, których potrzebujesz.  
+  Poniższe informacje pomaga wybrać typu edytora, których potrzebujesz.  
   
 ## <a name="types-of-editor"></a>Typy edytora  
  Aby uzyskać informacji na temat podstawowy edytor programu Visual Studio, zobacz [rozszerzanie usług edytora i języka](../extensibility/extending-the-editor-and-language-services.md).  
@@ -52,25 +52,25 @@ Visual Studio zintegrowane środowisko programistyczne (IDE) mogą obsługiwać 
 ## <a name="editor-design-decisions"></a>Decyzje dotyczące projektu w edytorze  
  Na następujące pytania projekt ułatwią wybierz typ edytora najlepiej nadaje się do aplikacji:  
   
--   Aplikacja zapisze dane w plikach czy nie? Jeśli będzie zapisywał dane w plikach, będą one w formacie niestandardowych lub standardowych?  
+- Aplikacja zapisze dane w plikach czy nie? Jeśli będzie zapisywał dane w plikach, będą one w formacie niestandardowych lub standardowych?  
   
-     Jeśli używasz formatu standardowego pliku, innych typów projektów, oprócz projektu będzie można otworzyć i odczytu/zapisu danych do nich. Jeśli używasz formatu niestandardowego pliku, jednak tylko typ projektu będzie do otwierania i odczytu/zapisu danych do nich.  
+   Jeśli używasz formatu standardowego pliku, innych typów projektów, oprócz projektu będzie można otworzyć i odczytu/zapisu danych do nich. Jeśli używasz formatu niestandardowego pliku, jednak tylko typ projektu będzie do otwierania i odczytu/zapisu danych do nich.  
   
-     Jeśli projekt używa plików, należy dostosować standardowy edytor. Jeśli projekt nie korzysta z plików, ale raczej używa elementów w bazie danych lub w innym repozytorium, należy utworzyć niestandardowy Edytor.  
+   Jeśli projekt używa plików, należy dostosować standardowy edytor. Jeśli projekt nie korzysta z plików, ale raczej używa elementów w bazie danych lub w innym repozytorium, należy utworzyć niestandardowy Edytor.  
   
--   Czy edytor potrzebuje do hostowania kontrolki ActiveX?  
+- Czy edytor potrzebuje do hostowania kontrolki ActiveX?  
   
-     Jeśli Edytor obsługuje formanty ActiveX, implementować edytora aktywacji w miejscu, co zostało opisane w [Aktywacja w miejscu](../extensibility/in-place-activation.md). Jeśli nie obsługuje kontrolki ActiveX, następnie użyj uproszczony Edytor osadzania lub dostosować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] domyślnego edytora.  
+   Jeśli Edytor obsługuje formanty ActiveX, implementować edytora aktywacji w miejscu, co zostało opisane w [Aktywacja w miejscu](../extensibility/in-place-activation.md). Jeśli nie obsługuje kontrolki ActiveX, następnie użyj uproszczony Edytor osadzania lub dostosować [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] domyślnego edytora.  
   
--   Edytor obejmie wiele widoków? Musi obsługiwać wiele widoków, jeśli chcesz, aby widoki tego edytora, aby być widoczne w tym samym czasie jako domyślny edytor.  
+- Edytor obejmie wiele widoków? Musi obsługiwać wiele widoków, jeśli chcesz, aby widoki tego edytora, aby być widoczne w tym samym czasie jako domyślny edytor.  
   
-     Jeśli Edytor musi obsługiwać wiele widoków, dane dokumentu i dokumentu obiektów widoku edytora musi być oddzielnych obiektach. Aby uzyskać więcej informacji, zobacz [obsługi wielu widoków dokumentu](../extensibility/supporting-multiple-document-views.md).  
+   Jeśli Edytor musi obsługiwać wiele widoków, dane dokumentu i dokumentu obiektów widoku edytora musi być oddzielnych obiektach. Aby uzyskać więcej informacji, zobacz [obsługi wielu widoków dokumentu](../extensibility/supporting-multiple-document-views.md).  
   
-     Jeśli Edytor obsługuje wiele widoków, czy zamierzasz używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podstawowe implementację buforu tekstu edytora (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektów) dla obiektu danych dokumentu? Oznacza to, że chcesz obsługiwać usługi Edytor widoku side-by-side przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji? W tym celu jest podstawą projektanta formularzy...  
+   Jeśli Edytor obsługuje wiele widoków, czy zamierzasz używać [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podstawowe implementację buforu tekstu edytora (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> obiektów) dla obiektu danych dokumentu? Oznacza to, że chcesz obsługiwać usługi Edytor widoku side-by-side przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] edytorze podstawowych funkcji? W tym celu jest podstawą projektanta formularzy...  
   
--   Jeśli musisz hostować edytor zewnętrzny edytor można osadzić wewnątrz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]?  
+- Jeśli musisz hostować edytor zewnętrzny edytor można osadzić wewnątrz [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]?  
   
-     Jeśli mogą być osadzone, należy utworzyć okno hosta zewnętrznego edytora, a następnie wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> metody i ustaw <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> wartość wyliczenia do `DP_External`. Jeśli Edytor nie może zostać osadzony, IDE automatycznie utworzy oddzielne okno dla niego.  
+   Jeśli mogą być osadzone, należy utworzyć okno hosta zewnętrznego edytora, a następnie wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> metody i ustaw <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> wartość wyliczenia do `DP_External`. Jeśli Edytor nie może zostać osadzony, IDE automatycznie utworzy oddzielne okno dla niego.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Przewodnik: Tworzenie edytora niestandardowego](../extensibility/walkthrough-creating-a-custom-editor.md)  

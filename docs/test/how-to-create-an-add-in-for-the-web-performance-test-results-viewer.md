@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0ea42942fc06225bc5c64c02eba85a766a94ef1
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949319"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Porady: Tworzenie dodatku programu Visual Studio dla podglądu wyników testu wydajności sieci Web
 
@@ -49,28 +49,28 @@ Dodatek jest skompilowaną biblioteką DLL, która działa w programie Visual St
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Aby utworzyć dodatek za pomocą Kreatora dodatek
 
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz pozycję **Dodaj**, a następnie wybierz pozycję **nowy projekt**.
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy rozwiązanie, wybierz pozycję **Dodaj**, a następnie wybierz pozycję **nowy projekt**.
 
-     **Nowy projekt** zostanie wyświetlone okno dialogowe.
+    **Nowy projekt** zostanie wyświetlone okno dialogowe.
 
-2.  W obszarze **zainstalowane szablony**, rozwiń węzeł **inne typy projektów** i wybierz **rozszerzalności**.
+2. W obszarze **zainstalowane szablony**, rozwiń węzeł **inne typy projektów** i wybierz **rozszerzalności**.
 
-3.  Na liście szablonów wybierz **dodatku Visual Studio**.
+3. Na liście szablonów wybierz **dodatku Visual Studio**.
 
-4.  W obszarze **nazwa**, wpisz nazwę dla dodatku. Na przykład **WebPerfTestResultsViewerAddin**.
+4. W obszarze **nazwa**, wpisz nazwę dla dodatku. Na przykład **WebPerfTestResultsViewerAddin**.
 
-5.  Wybierz **OK**.
+5. Wybierz **OK**.
 
-     Visual Studio **kreatora dodatków** rozpoczyna się.
+    Visual Studio **kreatora dodatków** rozpoczyna się.
 
-6.  Wybierz **dalej**.
+6. Wybierz **dalej**.
 
-7.  Na **wybierz język programowania** wybierz język programowania, który chcesz użyć do pisania dodatku.
+7. Na **wybierz język programowania** wybierz język programowania, który chcesz użyć do pisania dodatku.
 
-    > [!NOTE]
-    > Ten temat używa języka Visual C# dla przykładowego kodu.
+   > [!NOTE]
+   > Ten temat używa języka Visual C# dla przykładowego kodu.
 
-8.  Na **wybierz aplikację hosta** wybierz **programu Visual Studio** i wyczyść **makra programu Visual Studio**.
+8. Na **wybierz aplikację hosta** wybierz **programu Visual Studio** i wyczyść **makra programu Visual Studio**.
 
 9. Wybierz **dalej**.
 
@@ -96,18 +96,18 @@ Dodatek jest skompilowaną biblioteką DLL, która działa w programie Visual St
 
      Możesz dodać kod, aby *Connect.cs* plik po poniższej procedury, która tworzy kontrolkę użytkownika, który będzie się odnosić projekt WebPerfTestResultsViewerAddin.
 
- Gdy dodatek zostanie utworzona, należy zarejestrować go za pomocą programu Visual Studio można ją aktywować na **Add-In Manager**. Możesz to zrobić przy użyciu pliku XML, który ma *.addin* rozszerzenie nazwy pliku.
+    Gdy dodatek zostanie utworzona, należy zarejestrować go za pomocą programu Visual Studio można ją aktywować na **Add-In Manager**. Możesz to zrobić przy użyciu pliku XML, który ma *.addin* rozszerzenie nazwy pliku.
 
- *.Addin* pliku w tym artykule opisano informacje, które wymaga programu Visual Studio, aby wyświetlić dodatek w **Add-In Manager**. Po uruchomieniu programu Visual Studio szuka w *.addin* lokalizacji dla każdego pliku dostępne *.addin* plików. Jeśli jakiekolwiek znajdzie, odczytuje plik XML i daje **Add-In Manager** informacje, które ten wymaga do uruchomienia dodatku po kliknięciu.
+    *.Addin* pliku w tym artykule opisano informacje, które wymaga programu Visual Studio, aby wyświetlić dodatek w **Add-In Manager**. Po uruchomieniu programu Visual Studio szuka w *.addin* lokalizacji dla każdego pliku dostępne *.addin* plików. Jeśli jakiekolwiek znajdzie, odczytuje plik XML i daje **Add-In Manager** informacje, które ten wymaga do uruchomienia dodatku po kliknięciu.
 
- *.Addin* pliku jest tworzony automatycznie podczas tworzenia dodatku za pomocą **kreatora dodatków**.
+    *.Addin* pliku jest tworzony automatycznie podczas tworzenia dodatku za pomocą **kreatora dodatków**.
 
 ### <a name="add-in-file-locations"></a>Lokalizacje pliku dodatku
 
 Dwie kopie *.addin* pliki są tworzone automatycznie przez **kreatora dodatków**, wykonując następujące czynności:
 
 |**. Lokalizacja pliku dodatku**|**Opis**|
-|------------------------------|----------------------------|---------------------|
+|-|----------------------------|-|
 |Głównego folderu projektu|Używany do wdrażania projektu dodatek. Uwzględnione w projekcie w celu ułatwienia edycji i ma ścieżkę lokalną dla wdrażania w formacie xcopy.|
 |Folder dodatków|Używane do uruchamiania dodatku w środowisku debugowania. Zawsze powinien wskazywać ścieżkę wyjściową bieżącej konfiguracji kompilacji.|
 

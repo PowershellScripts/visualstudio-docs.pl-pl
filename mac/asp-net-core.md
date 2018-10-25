@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 231994db8192f5c44919efcf5823e4e57342f2b1
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 694f6f10a482318f6c6a1c40e6796e09daac0913
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942949"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Wprowadzenie do platformy ASP.NET Core
 
@@ -64,12 +64,12 @@ public static void Main(string[] args)
 ```
 Aplikacji ASP.NET Core tworzy serwer sieci web w jego głównej metody, konfigurowania i uruchamiania hosta za pośrednictwem wystąpienia [ `WebHostBuilder` ](https://docs.microsoft.com/aspnet/core/fundamentals/hosting). Ten konstruktor zapewnia metody do Zezwalaj na hoście należy skonfigurować. W szablonie aplikacji są używane następujące konfiguracje:
 
- * `UseKestrel`: Określa, że serwer Kestrel będzie używany przez aplikację
- * `UseContentRoot(Directory.GetCurrentDirectory())`: Folder główny projektu sieci web podczas używa jako zawartość katalogu głównego aplikacji Aplikacja została uruchomiona z tego folderu
- * `.UseIISIntegration()`: Określa, czy aplikacja powinna współdziałać z usług IIS. Usługi IIS za pomocą platformy ASP.NET Core zarówno `UseKestrel` i `UseIISIntegration` muszą być określone.
- * `.UseStartup<Startup>()`: Określa klasę uruchamiania.
+* `UseKestrel`: Określa, że serwer Kestrel będzie używany przez aplikację
+* `UseContentRoot(Directory.GetCurrentDirectory())`: Folder główny projektu sieci web podczas używa jako zawartość katalogu głównego aplikacji Aplikacja została uruchomiona z tego folderu
+* `.UseIISIntegration()`: Określa, czy aplikacja powinna współdziałać z usług IIS. Usługi IIS za pomocą platformy ASP.NET Core zarówno `UseKestrel` i `UseIISIntegration` muszą być określone.
+* `.UseStartup<Startup>()`: Określa klasę uruchamiania.
 
- Kompilowanie i uruchamianie metody tworzenia IWebHost, który będzie hostować aplikację i uruchom ją nasłuchuje przychodzących żądań HTTP.
+  Kompilowanie i uruchamianie metody tworzenia IWebHost, który będzie hostować aplikację i uruchom ją nasłuchuje przychodzących żądań HTTP.
 
 ### <a name="startupcs"></a>Startup.CS
 

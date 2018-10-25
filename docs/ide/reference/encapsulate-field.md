@@ -1,5 +1,5 @@
 ---
-title: Refaktoryzuj pola do właściwości w programie Visual Studio
+title: Refaktoryzuj pole do właściwości w programie Visual Studio
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,65 +14,65 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 316c1f4a6927805c75feee143f92a8e31ac4dc20
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0c6594521774ca7e4fe91bc47776c4f0c4a489a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945249"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942923"
 ---
-# <a name="encapsulate-a-field-refactoring"></a>Hermetyzuj pole refaktoryzacji elementu
+# <a name="encapsulate-a-field-refactoring"></a>Hermetyzuj pole refaktoryzacji
 
-Dotyczy to refaktoryzacji:
+Ta Refaktoryzacja mają zastosowanie do:
 
 - C#
 
 - Visual Basic
 
-**Co:** umożliwia przekształcić pola właściwości, a następnie zaktualizować wszystkie użycia tego pola, aby użyć nowo utworzonego właściwości.
+**Co:** umożliwia przekształcając pole właściwości i aktualizowanie wszystkich użycia tego pola, aby używać nowo utworzonej właściwości.
 
-**Kiedy:** chcesz przenieść pole do właściwości, a następnie zaktualizuj wszystkie odwołania do tego pola.
+**Kiedy:** chcesz przenieść pole do właściwości i zaktualizuj wszystkie odwołania do tego pola.
 
-**Dlaczego:** chcesz przyznać dostęp do innych klas do pola, ale nie ma tych klas bezpośredni dostęp.  Zawijania pola we właściwości, można napisać kod, aby sprawdzić wartości jest przypisany, na przykład.
+**Dlaczego:** ma zostać zapewniony dostęp innych klas do pola, ale nie mają bezpośredniego dostępu do tych klas.  Dzięki zawijaniu pola we właściwości, można napisać kod, aby sprawdzić wartość jest przypisany, na przykład.
 
-## <a name="how-to"></a>Porada
+## <a name="how-to"></a>Instrukcje
 
-1. Zaznacz lub umieść kursor tekst wewnątrz Nazwa pola w celu hermetyzacji:
+1. Zaznacz lub umieść kursor tekst wewnątrz nazwy pola do hermetyzacji:
 
    - C#:
 
-    ![Wyróżniony kod - C#](media/encapsulate-highlight-cs.png)
+       ![Wyróżniony kod-C#](media/encapsulate-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Wyróżniony kod - języka Visual Basic](media/encapsulate-highlight-vb.png)
+       ![Wyróżniony kod - języka Visual Basic](media/encapsulate-highlight-vb.png)
 
-1. Następnie wykonaj jedną z następujących czynności:
+2. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl + R**, następnie **Ctrl + E**.  (Należy pamiętać, że skrót klawiaturowy mogą być różne oparte na profil, który wybrano).
-     - Naciśnij klawisz **Ctrl**+**.** Aby wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz opcję **hermetyzowania pola** wpisu z menu podręcznego okna podglądu.
+      - Naciśnij klawisz **Ctrl + R**, następnie **klawisze Ctrl + E**.  (Należy pamiętać, że skrót klawiaturowy może różnić się w oparciu o profilu, który wybrano.)
+      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu i wybierz opcję **hermetyzowania pola** wpis z menu podręcznego okna podglądu.
    - **Myszy**
-     - Wybierz **Edytuj > Refaktoryzuj > hermetyzowania pola**.
-     - Kliknij prawym przyciskiem myszy kod, wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz opcję **hermetyzowania pola** wpisu z menu podręcznego okna podglądu.
+      - Wybierz **Edytuj > Refaktoryzuj > Hermetyzuj pole**.
+      - Kliknij prawym przyciskiem myszy ten kod, wybierz **szybkie akcje i Refaktoryzacje** menu i wybierz opcję **hermetyzowania pola** wpis z menu podręcznego okna podglądu.
 
    Wybór | Opis
    --------- | -----------
-   **Hermetyzuj pola (i używaj właściwości)** | Hermetyzuje pola z właściwością i aktualizuje wszystkie użycia pola Użyj wygenerowanej właściwości
-   **Hermetyzuj pola (ale nadal używaj pola)** | Hermetyzuje pola z właściwością, ale pozostawia niezmienionej użycia wszystkie pola
+   **Hermetyzuj pola (i używaj właściwości)** | Hermetyzuje pola z właściwością i aktualizuje wszystkie użycia pola, aby używać wygenerowanej właściwości
+   **Hermetyzuj pola (ale nadal używaj pola)** | Hermetyzuje pola z właściwością, ale pozostawia użycia wszystkie pola w charakterze
 
    Właściwość jest tworzony i odwołania do pola są aktualizowane, jeśli wybrana.
 
    > [!TIP]
-   > Użyj **podgląd zmian** łącza w oknie podręcznym [aby zobaczyć, co zostanie](../../ide/preview-changes.md) przed zatwierdzeniem do niego.
+   > Użyj **podgląd zmian** link w oknie podręcznym [aby zobaczyć, jaki będzie wynik](../../ide/preview-changes.md) przed zatwierdzeniem do niego.
 
    - C#:
 
-    ![Hermetyzuj właściwość result - C#](media/encapsulate-result-cs.png)
+      ![Hermetyzuj wynik właściwości-C#](media/encapsulate-result-cs.png)
 
    - Visual Basic:
 
-    ![Hermetyzuj właściwość result - Visual Basic](media/encapsulate-result-vb.png)
+      ![Hermetyzuj właściwość wynik - Visual Basic](media/encapsulate-result-vb.png)
 
 ## <a name="see-also"></a>Zobacz także
 

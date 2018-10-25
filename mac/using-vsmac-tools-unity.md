@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: cd368c6b6bfd8d38817ef1b7014e9f1c91cac2ab
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f91651d72cff067bcc0e679fa66f250a8a1a55d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898827"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Używanie programu Visual Studio dla komputerów Mac Tools for Unity
 
@@ -33,31 +33,31 @@ Aparat Unity emituje komunikaty do obiekt MonoBehaviour skryptów, dzięki czemu
 
 Jednak program Visual Studio dla komputerów Mac Tools for Unity rozszerza jej funkcji IntelliSense, aby komunikaty aparatu Unity. Łatwo Implementuj komunikaty aparatu Unity w skryptach obiekt MonoBehaviour i pomaga nauki interfejsu API aparatu Unity. Aby użyć funkcji IntelliSense dla komunikatów Unity:
 
-1.  Umieść kursor w nowym wierszu w treści klasy, która jest pochodną obiekt MonoBehaviour.
+1. Umieść kursor w nowym wierszu w treści klasy, która jest pochodną obiekt MonoBehaviour.
 
-2.  Rozpocznij wpisywanie nazwy Unity komunikatów, takie jak `OnTriggerEnter`.
+2. Rozpocznij wpisywanie nazwy Unity komunikatów, takie jak `OnTriggerEnter`.
 
-3.  Gdy litery "**ont**" został wpisany, zostanie wyświetlona lista sugestie funkcji IntelliSense.
+3. Gdy litery "**ont**" został wpisany, zostanie wyświetlona lista sugestie funkcji IntelliSense.
 
-  ![Korzystanie z IntelliSense](media/using-vsmac-tools-unity-image2.png)
+   ![Korzystanie z IntelliSense](media/using-vsmac-tools-unity-image2.png)
 
-4.  Wybór na liście, można zmienić na trzy sposoby:
+4. Wybór na liście, można zmienić na trzy sposoby:
 
-    * Za pomocą **się** i **dół** klawiszy strzałek.
+   * Za pomocą **się** i **dół** klawiszy strzałek.
 
-    * Przez kliknięcie myszą do żądanego elementu.
+   * Przez kliknięcie myszą do żądanego elementu.
 
-    * Kontynuując wpisz nazwę żądanego elementu.
+   * Kontynuując wpisz nazwę żądanego elementu.
 
-5.  Technologia IntelliSense można wstawić wybrane wiadomości Unity, w tym wszelkie niezbędne parametry:
+5. Technologia IntelliSense można wstawić wybrane wiadomości Unity, w tym wszelkie niezbędne parametry:
 
-    * Naciskając **kartę**.
+   * Naciskając **kartę**.
 
-    * Naciskając **zwracają**.
+   * Naciskając **zwracają**.
 
-    * Klikając wybrany element.
+   * Klikając wybrany element.
 
-  ![Wstaw komunikatów aparatu Unity z technologii IntelliSense](media/using-vsmac-tools-unity-image3.png)
+   ![Wstaw komunikatów aparatu Unity z technologii IntelliSense](media/using-vsmac-tools-unity-image3.png)
 
 ## <a name="adding-new-unity-files-and-folders"></a>Dodawanie nowych plików Unity i folderów
 
@@ -93,22 +93,22 @@ Projekty Unity można debugować za pomocą programu Visual Studio dla komputer�
 
 Aby rozpocząć debugowanie:
 
-1.  Łączenie programu Visual Studio do aparatu Unity, klikając **Odtwórz** przycisku lub typ **polecenia + Return**, lub **F5**.
+1. Łączenie programu Visual Studio do aparatu Unity, klikając **Odtwórz** przycisku lub typ **polecenia + Return**, lub **F5**.
 
-  ![Kliknij przycisk odtwarzania w programie Visual Studio](media/using-vsmac-tools-unity-image5.png)
+   ![Kliknij przycisk odtwarzania w programie Visual Studio](media/using-vsmac-tools-unity-image5.png)
 
-2.  Przełącz do aparatu Unity i kliknij przycisk **Odtwórz** przycisk, aby uruchomić grę w edytorze.
+2. Przełącz do aparatu Unity i kliknij przycisk **Odtwórz** przycisk, aby uruchomić grę w edytorze.
 
-  ![Kliknij przycisk Play na platformie Unity](media/using-vsmac-tools-unity-image6.png)
+   ![Kliknij przycisk Play na platformie Unity](media/using-vsmac-tools-unity-image6.png)
 
-3.  Uruchamiając gry w Edytor platformy Unity podczas połączenia z programu Visual Studio, wszelkie punkty przerwania, napotkała spowoduje wstrzymać wykonanie w gry i przywołać wiersza kodu, w którym gry trafiony punkt przerwania w programie Visual Studio dla komputerów Mac.
+3. Uruchamiając gry w Edytor platformy Unity podczas połączenia z programu Visual Studio, wszelkie punkty przerwania, napotkała spowoduje wstrzymać wykonanie w gry i przywołać wiersza kodu, w którym gry trafiony punkt przerwania w programie Visual Studio dla komputerów Mac.
 
 ### <a name="stop-debugging"></a>Zatrzymaj debugowanie
 
 Aby zatrzymać debugowanie:
 
-1.  Kliknij przycisk **zatrzymać** przycisku w programie Visual Studio for Mac lub naciśnij **Shift + polecenia + Return**.
+1. Kliknij przycisk **zatrzymać** przycisku w programie Visual Studio for Mac lub naciśnij **Shift + polecenia + Return**.
 
-  ![Kliknij przycisk Zatrzymaj w programie Visual Studio](media/using-vsmac-tools-unity-image7.png)
+   ![Kliknij przycisk Zatrzymaj w programie Visual Studio](media/using-vsmac-tools-unity-image7.png)
 
 Aby dowiedzieć się więcej o debugowaniu w programie Visual Studio dla komputerów Mac, zobacz [za pomocą debugera](https://docs.microsoft.com/visualstudio/mac/debugging).

@@ -80,12 +80,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a97054db575d1d92f2077efe46d89573fba02dfd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 900127801a232ed41f119def930f8bbfe8e93550
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923007"
 ---
 # <a name="crt-debug-heap-details"></a>Szczegóły dotyczące sterty debugowania CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,19 +214,19 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  **Aby używać debugowania sterty**  
   
--   Połącz debugera kompilacji swojej aplikacji przy użyciu debugowania wersji biblioteki wykonawczej C.  
+- Połącz debugera kompilacji swojej aplikacji przy użyciu debugowania wersji biblioteki wykonawczej C.  
   
- **Aby zmienić jedno lub więcej pól bitowych _crtDbgFlag i utworzyć nowy stan flagi**  
+  **Aby zmienić jedno lub więcej pól bitowych _crtDbgFlag i utworzyć nowy stan flagi**  
   
-1.  Wywołaj `_CrtSetDbgFlag` z `newFlag` parametr `_CRTDBG_REPORT_FLAG` (Aby uzyskać bieżący `_crtDbgFlag` stanu) i przechowuj zwracaną wartość w zmiennej tymczasowej.  
+1. Wywołaj `_CrtSetDbgFlag` z `newFlag` parametr `_CRTDBG_REPORT_FLAG` (Aby uzyskać bieżący `_crtDbgFlag` stanu) i przechowuj zwracaną wartość w zmiennej tymczasowej.  
   
-2.  Włącz wszystkie bity, używając `OR`- ing (bitowe &#124; symbol) zmienną tymczasową i odpowiednimi maskami bitowymi (reprezentowane przez stałe manifestu w kodzie aplikacji).  
+2. Włącz wszystkie bity, używając `OR`- ing (bitowe &#124; symbol) zmienną tymczasową i odpowiednimi maskami bitowymi (reprezentowane przez stałe manifestu w kodzie aplikacji).  
   
-3.  Wyłącz usługi bits przez `AND`- ing (bitowe & symbol) zmiennej `NOT` (bitowe ~ symbol) z odpowiednią masek bitowych.  
+3. Wyłącz usługi bits przez `AND`- ing (bitowe & symbol) zmiennej `NOT` (bitowe ~ symbol) z odpowiednią masek bitowych.  
   
-4.  Wywołaj `_CrtSetDbgFlag` z `newFlag` parametr ustawiony na wartość przechowywana w zmiennej tymczasowej, aby utworzyć nowy stan dla `_crtDbgFlag`.  
+4. Wywołaj `_CrtSetDbgFlag` z `newFlag` parametr ustawiony na wartość przechowywana w zmiennej tymczasowej, aby utworzyć nowy stan dla `_crtDbgFlag`.  
   
- Na przykład następujące wiersze kodu, włączyć funkcję automatycznego wykrywania przecieków i wyłączają sprawdzanie bloków typu `_CRT_BLOCK`:  
+   Na przykład następujące wiersze kodu, włączyć funkcję automatycznego wykrywania przecieków i wyłączają sprawdzanie bloków typu `_CRT_BLOCK`:  
   
 ```  
 // Get current flag  

@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 942cd4846b091e31bc74ab3d45860e2782767079
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: efd6bc680be42f1074da8d2313b1a4b8e9307580
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305061"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894849"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Komunikaty o błędach w Projektancie przepływu pracy
 W tym temacie opisano rodzaje komunikatów o błędach, które można napotkać podczas pracy z [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -29,17 +29,17 @@ W tym temacie opisano rodzaje komunikatów o błędach, które można napotkać 
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>Sytuacje, w których występują błędy w Projektancie przepływu pracy  
  Błędy w [!INCLUDE[wfd2](../includes/wfd2-md.md)] wystąpić w następujących sytuacjach:  
   
-1.  Istnieje błąd w wyrażeniu.  
+1. Istnieje błąd w wyrażeniu.  
   
-2.  Ograniczenia sprawdzania poprawności działania nie zostały spełnione.  
+2. Ograniczenia sprawdzania poprawności działania nie zostały spełnione.  
   
-3.  Wystąpiły błędy w pliku XAML, które powodują działania nie można załadować.  
+3. Wystąpiły błędy w pliku XAML, które powodują działania nie można załadować.  
   
-4.  Wystąpiły błędy w pliku XAML, które powodują nie można załadować przepływu pracy.  
+4. Wystąpiły błędy w pliku XAML, które powodują nie można załadować przepływu pracy.  
   
- Nieprawidłowa wyrażeń i ograniczeń walidacji niezadowolony nie powodują przepływ pracy, aby kompilacja się nie powieść. Tworzenie przepływu pracy zakończy się powodzeniem, ale <xref:System.Activities.InvalidWorkflowException> jest generowany w czasie wykonywania. Jeśli występują błędy w pliku XAML, kompilacja kończy się niepowodzeniem.  
+   Nieprawidłowa wyrażeń i ograniczeń walidacji niezadowolony nie powodują przepływ pracy, aby kompilacja się nie powieść. Tworzenie przepływu pracy zakończy się powodzeniem, ale <xref:System.Activities.InvalidWorkflowException> jest generowany w czasie wykonywania. Jeśli występują błędy w pliku XAML, kompilacja kończy się niepowodzeniem.  
   
- Wewnątrz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], gdy przepływ pracy jest ładowany, jego błędy są wyświetlane w **lista błędów**. Aby przejść do działania, który jest źródłem błędu, klikaj dwukrotnie poszczególne błędy w **lista błędów**.  
+   Wewnątrz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], gdy przepływ pracy jest ładowany, jego błędy są wyświetlane w **lista błędów**. Aby przejść do działania, który jest źródłem błędu, klikaj dwukrotnie poszczególne błędy w **lista błędów**.  
   
 ### <a name="expression-errors"></a>Wyrażenie błędy  
  Nieprawidłowe wyrażenie jest wskazywane przez czerwone kółko z białym wykrzyknika, obok wyrażenia. Przenosząc kursor myszy nad tą ikoną, wyświetla etykietkę narzędzia, która opisuje przyczynę błędu. Wewnątrz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], kliknij przycisk wyrażenie, aby wyświetlić wiersz, który podkreśla źródła błędu. Kursor Wyświetla linie tekstu etykietki narzędzia, która opisuje przyczynę błędu.  

@@ -15,173 +15,173 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4a3d17a8ff43bb3bd18641c2298f5436f40d925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f260df5a23ef6b5ef6ef7253726b1fea7bc00269
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24792349"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855433"
 ---
 # <a name="active-script-debugger-interfaces"></a>Interfejsy debugera aktywnego skryptu
-Pliki nagłówkowe activdbg.h i activdbg100.h zapewniają interfejsy, wyliczenia i struktury wymienione w tej sekcji. Są one do debugowania skryptów.  
+Pliki nagłówkowe activdbg.h i zestawie activdbg100.h zapewniają interfejsy, wyliczenia i struktury wymienione w tej sekcji. Są one do debugowania skryptu.  
   
 > [!NOTE]
->  `IJSDebug*` Interfejsów i `IEnumJsStackFrames` interfejsu pierwszy zostały wydane w programie Internet Explorer 11 dla debugowanie kodu natywnego przy użyciu skryptu. Plik nagłówka do tych interfejsów jest jscript9diag.h.  
+>  `IJSDebug*` Interfejsów i `IEnumJsStackFrames` interfejsu pierwszy zostały wydane w programie Internet Explorer 11 dla debugowanie kodu natywnego za pomocą skryptu. Plik nagłówka dla tych interfejsów znajduje się jscript9diag.h.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
- Następujące interfejsy Zezwalaj niezależny od języka, niezależny od hosta debugowania:  
+ Zezwalaj na następujących interfejsów, niezależny od języka, niezależny od hosta debugowania:  
   
--   [Stałe debugera aktywnego skryptu, wyliczenia i struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
+- [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
   
--   [Interfejs IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)  
+- [IActiveScriptDebug, interfejs](../../winscript/reference/iactivescriptdebug-interface.md)  
   
--   [Interfejs IActiveScriptErrorDebug](../../winscript/reference/iactivescripterrordebug-interface.md)  
+- [IActiveScriptErrorDebug, interfejs](../../winscript/reference/iactivescripterrordebug-interface.md)  
   
--   [Interfejs IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md)  
+- [IActiveScriptErrorDebug110, interfejs](../../winscript/reference/iactivescripterrordebug110-interface.md)  
   
--   [Interfejs IActiveScriptSiteDebug](../../winscript/reference/iactivescriptsitedebug-interface.md)  
+- [IActiveScriptSiteDebug, interfejs](../../winscript/reference/iactivescriptsitedebug-interface.md)  
   
--   [Interfejs IActiveScriptSiteDebug32](../../winscript/reference/iactivescriptsitedebug32-interface.md)  
+- [IActiveScriptSiteDebug32, interfejs](../../winscript/reference/iactivescriptsitedebug32-interface.md)  
   
--   [Interfejs IActiveScriptSiteDebugEx](../../winscript/reference/iactivescriptsitedebugex-interface.md)  
+- [IActiveScriptSiteDebugEx, interfejs](../../winscript/reference/iactivescriptsitedebugex-interface.md)  
   
--   [Interfejs IActiveScriptWinRTErrorDebug](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)  
+- [IActiveScriptWinRTErrorDebug, interfejs](../../winscript/reference/iactivescriptwinrterrordebug-interface.md)  
   
--   [Interfejs IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)  
+- [IApplicationDebugger, interfejs](../../winscript/reference/iapplicationdebugger-interface.md)  
   
--   [Interfejs IApplicationDebuggerUI](../../winscript/reference/iapplicationdebuggerui-interface.md)  
+- [IApplicationDebuggerUI, interfejs](../../winscript/reference/iapplicationdebuggerui-interface.md)  
   
--   [Interfejs IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
+- [IDebugApplication, interfejs](../../winscript/reference/idebugapplication-interface.md)  
   
--   [Interfejs IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md)  
+- [IDebugApplication110, interfejs](../../winscript/reference/idebugapplication110-interface.md)  
   
--   [Interfejs IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)  
+- [IDebugApplicationNode, interfejs](../../winscript/reference/idebugapplicationnode-interface.md)  
   
--   [Interfejs IDebugApplicationNode100](../../winscript/reference/idebugapplicationnode100-interface.md)  
+- [IDebugApplicationNode100, interfejs](../../winscript/reference/idebugapplicationnode100-interface.md)  
   
--   [Interfejs IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
+- [IDebugApplicationNodeEvents, interfejs](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
   
--   [Interfejs IDebugApplicationThread](../../winscript/reference/idebugapplicationthread-interface.md)  
+- [IDebugApplicationThread, interfejs](../../winscript/reference/idebugapplicationthread-interface.md)  
   
--   [Interfejs IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md)  
+- [IDebugApplicationThread110, interfejs](../../winscript/reference/idebugapplicationthread110-interface.md)  
   
--   [Interfejs IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md)  
+- [IDebugApplicationThreadEvents110, interfejs](../../winscript/reference/idebugapplicationthreadevents110-interface.md)  
   
--   [Interfejs IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)  
+- [IDebugAsyncOperation, interfejs](../../winscript/reference/idebugasyncoperation-interface.md)  
   
--   [Interfejs IDebugAsyncOperationCallBack](../../winscript/reference/idebugasyncoperationcallback-interface.md)  
+- [IDebugAsyncOperationCallBack, interfejs](../../winscript/reference/idebugasyncoperationcallback-interface.md)  
   
--   [Interfejs IDebugCodeContext](../../winscript/reference/idebugcodecontext-interface.md)  
+- [IDebugCodeContext, interfejs](../../winscript/reference/idebugcodecontext-interface.md)  
   
--   [Interfejs IDebugCookie](../../winscript/reference/idebugcookie-interface.md)  
+- [IDebugCookie, interfejs](../../winscript/reference/idebugcookie-interface.md)  
   
--   [Interfejs IDebugDocument](../../winscript/reference/idebugdocument-interface.md)  
+- [IDebugDocument, interfejs](../../winscript/reference/idebugdocument-interface.md)  
   
--   [Interfejs IDebugDocumentContext](../../winscript/reference/idebugdocumentcontext-interface.md)  
+- [IDebugDocumentContext, interfejs](../../winscript/reference/idebugdocumentcontext-interface.md)  
   
--   [Interfejs IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+- [IDebugDocumentHelper, interfejs](../../winscript/reference/idebugdocumenthelper-interface.md)  
   
--   [Interfejs IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)  
+- [IDebugDocumentHost, interfejs](../../winscript/reference/idebugdocumenthost-interface.md)  
   
--   [Interfejs IDebugDocumentInfo](../../winscript/reference/idebugdocumentinfo-interface.md)  
+- [IDebugDocumentInfo, interfejs](../../winscript/reference/idebugdocumentinfo-interface.md)  
   
--   [Interfejs IDebugDocumentProvider](../../winscript/reference/idebugdocumentprovider-interface.md)  
+- [IDebugDocumentProvider, interfejs](../../winscript/reference/idebugdocumentprovider-interface.md)  
   
--   [Interfejs IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)  
+- [IDebugDocumentText, interfejs](../../winscript/reference/idebugdocumenttext-interface.md)  
   
--   [Interfejs IDebugDocumentTextAuthor](../../winscript/reference/idebugdocumenttextauthor-interface.md)  
+- [IDebugDocumentTextAuthor, interfejs](../../winscript/reference/idebugdocumenttextauthor-interface.md)  
   
--   [Interfejs IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)  
+- [IDebugDocumentTextEvents, interfejs](../../winscript/reference/idebugdocumenttextevents-interface.md)  
   
--   [Interfejs IDebugDocumentTextExternalAuthor](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)  
+- [IDebugDocumentTextExternalAuthor, interfejs](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)  
   
--   [Interfejs IDebugExpression](../../winscript/reference/idebugexpression-interface.md)  
+- [IDebugExpression, interfejs](../../winscript/reference/idebugexpression-interface.md)  
   
--   [Interfejs IDebugExpressionCallBack](../../winscript/reference/idebugexpressioncallback-interface.md)  
+- [IDebugExpressionCallBack, interfejs](../../winscript/reference/idebugexpressioncallback-interface.md)  
   
--   [Interfejs IDebugExpressionContext](../../winscript/reference/idebugexpressioncontext-interface.md)  
+- [IDebugExpressionContext, interfejs](../../winscript/reference/idebugexpressioncontext-interface.md)  
   
--   [Interfejs IDebugFormatter](../../winscript/reference/idebugformatter-interface.md)  
+- [IDebugFormatter, interfejs](../../winscript/reference/idebugformatter-interface.md)  
   
--   [Interfejs IDebugHelper](../../winscript/reference/idebughelper-interface.md)  
+- [IDebugHelper, interfejs](../../winscript/reference/idebughelper-interface.md)  
   
--   [Interfejs IDebugSessionProvider](../../winscript/reference/idebugsessionprovider-interface.md)  
+- [IDebugSessionProvider, interfejs](../../winscript/reference/idebugsessionprovider-interface.md)  
   
--   [Interfejs IDebugSessionProviderEx](../../winscript/reference/idebugsessionproviderex-interface.md)  
+- [IDebugSessionProviderEx, interfejs](../../winscript/reference/idebugsessionproviderex-interface.md)  
   
--   [Interfejs IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)  
+- [IDebugStackFrame, interfejs](../../winscript/reference/idebugstackframe-interface.md)  
   
--   [Interfejs IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)  
+- [IDebugStackFrameSniffer, interfejs](../../winscript/reference/idebugstackframesniffer-interface.md)  
   
--   [Interfejs IDebugStackFrameSnifferEx](../../winscript/reference/idebugstackframesnifferex-interface.md)  
+- [IDebugStackFrameSnifferEx, interfejs](../../winscript/reference/idebugstackframesnifferex-interface.md)  
   
--   [Interfejs IDebugSyncOperation](../../winscript/reference/idebugsyncoperation-interface.md)  
+- [IDebugSyncOperation, interfejs](../../winscript/reference/idebugsyncoperation-interface.md)  
   
--   [Interfejs IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md)  
+- [IDebugThreadCall, interfejs](../../winscript/reference/idebugthreadcall-interface.md)  
   
--   [Interfejs IEnumDebugApplicationNodes](../../winscript/reference/ienumdebugapplicationnodes-interface.md)  
+- [IEnumDebugApplicationNodes, interfejs](../../winscript/reference/ienumdebugapplicationnodes-interface.md)  
   
--   [Interfejs IEnumDebugCodeContexts](../../winscript/reference/ienumdebugcodecontexts-interface.md)  
+- [IEnumDebugCodeContexts, interfejs](../../winscript/reference/ienumdebugcodecontexts-interface.md)  
   
--   [Interfejs IEnumDebugExpressionContexts](../../winscript/reference/ienumdebugexpressioncontexts-interface.md)  
+- [IEnumDebugExpressionContexts, interfejs](../../winscript/reference/ienumdebugexpressioncontexts-interface.md)  
   
--   [Interfejs IEnumDebugStackFrames](../../winscript/reference/ienumdebugstackframes-interface.md)  
+- [IEnumDebugStackFrames, interfejs](../../winscript/reference/ienumdebugstackframes-interface.md)  
   
--   [Ienumjsstackframes — interfejs](../../winscript/reference/ienumjsstackframes-interface.md)  
+- [IEnumJsStackFrames, interfejs](../../winscript/reference/ienumjsstackframes-interface.md)  
   
--   [Interfejs IEnumRemoteDebugApplications](../../winscript/reference/ienumremotedebugapplications-interface.md)  
+- [IEnumRemoteDebugApplications, interfejs](../../winscript/reference/ienumremotedebugapplications-interface.md)  
   
--   [Interfejs IEnumRemoteDebugApplicationThreads](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)  
+- [IEnumRemoteDebugApplicationThreads, interfejs](../../winscript/reference/ienumremotedebugapplicationthreads-interface.md)  
   
--   [Ijsdebug — interfejs](../../winscript/reference/ijsdebug-interface.md)  
+- [IJsDebug, interfejs](../../winscript/reference/ijsdebug-interface.md)  
   
--   [Ijsdebugbreakpoint — interfejs](../../winscript/reference/ijsdebugbreakpoint-interface.md)  
+- [IJsDebugBreakPoint, interfejs](../../winscript/reference/ijsdebugbreakpoint-interface.md)  
   
--   [Ijsdebugdatatarget — interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)  
+- [IJsDebugDataTarget, interfejs](../../winscript/reference/ijsdebugdatatarget-interface.md)  
   
--   [Ijsdebugframe — interfejs](../../winscript/reference/ijsdebugframe-interface.md)  
+- [IJsDebugFrame, interfejs](../../winscript/reference/ijsdebugframe-interface.md)  
   
--   [Ijsdebugprocess — interfejs](../../winscript/reference/ijsdebugprocess-interface.md)  
+- [IJsDebugProcess, interfejs](../../winscript/reference/ijsdebugprocess-interface.md)  
   
--   [Ijsdebugproperty — interfejs](../../winscript/reference/ijsdebugproperty-interface.md)  
+- [IJsDebugProperty, interfejs](../../winscript/reference/ijsdebugproperty-interface.md)  
   
--   [Ijsdebugstackwalker — interfejs](../../winscript/reference/ijsdebugstackwalker-interface.md)  
+- [IJsDebugStackWalker, interfejs](../../winscript/reference/ijsdebugstackwalker-interface.md)  
   
--   [Ijsenumdebugproperty — interfejs](../../winscript/reference/ijsenumdebugproperty-interface.md)  
+- [IJsEnumDebugProperty, interfejs](../../winscript/reference/ijsenumdebugproperty-interface.md)  
   
--   [Interfejs IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)  
+- [IMachineDebugManager, interfejs](../../winscript/reference/imachinedebugmanager-interface.md)  
   
--   [Interfejs IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
+- [IMachineDebugManagerCookie, interfejs](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
   
--   [Interfejs IMachineDebugManagerEvents](../../winscript/reference/imachinedebugmanagerevents-interface.md)  
+- [IMachineDebugManagerEvents, interfejs](../../winscript/reference/imachinedebugmanagerevents-interface.md)  
   
--   [Interfejs IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)  
+- [IProcessDebugManager, interfejs](../../winscript/reference/iprocessdebugmanager-interface.md)  
   
--   [Interfejs IProvideExpressionContexts](../../winscript/reference/iprovideexpressioncontexts-interface.md)  
+- [IProvideExpressionContexts, interfejs](../../winscript/reference/iprovideexpressioncontexts-interface.md)  
   
--   [Interfejs IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)  
+- [IRemoteDebugApplication, interfejs](../../winscript/reference/iremotedebugapplication-interface.md)  
   
--   [Interfejs IRemoteDebugApplication110](../../winscript/reference/iremotedebugapplication110-interface.md)  
+- [IRemoteDebugApplication110, interfejs](../../winscript/reference/iremotedebugapplication110-interface.md)  
   
--   [Interfejs IRemoteDebugApplicationEx](../../winscript/reference/iremotedebugapplicationex-interface.md)  
+- [IRemoteDebugApplicationEx, interfejs](../../winscript/reference/iremotedebugapplicationex-interface.md)  
   
--   [Interfejs IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)  
+- [IRemoteDebugApplicationEvents, interfejs](../../winscript/reference/iremotedebugapplicationevents-interface.md)  
   
--   [Interfejs IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)  
+- [IRemoteDebugApplicationThread, interfejs](../../winscript/reference/iremotedebugapplicationthread-interface.md)  
   
--   [Interfejs IRemoteDebugApplicationThreadEx](../../winscript/reference/iremotedebugapplicationthreadex-interface.md)  
+- [IRemoteDebugApplicationThreadEx, interfejs](../../winscript/reference/iremotedebugapplicationthreadex-interface.md)  
   
--   [Interfejs ISetNextStatement](../../winscript/reference/isetnextstatement-interface.md)  
+- [ISetNextStatement, interfejs](../../winscript/reference/isetnextstatement-interface.md)  
   
--   [Interfejs ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)  
+- [ISimpleConnectionPoint, interfejs](../../winscript/reference/isimpleconnectionpoint-interface.md)  
   
--   [Interfejs IWebAppDiagnosticsSetup](../../winscript/reference/iwebappdiagnosticssetup-interface.md)  
+- [IWebAppDiagnosticsSetup, interfejs](../../winscript/reference/iwebappdiagnosticssetup-interface.md)  
   
--   [Interfejs IWebAppDiagnosticsObjectInitialization](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md)  
+- [IWebAppDiagnosticsObjectInitialization, interfejs](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md)  
   
- W poniższej sekcji przedstawiono stałe, wyliczenia i struktury używane do debugowania:  
+  W poniższej sekcji przedstawiono stałe, wyliczenia i struktury, używane do debugowania:  
   
--   [Stałe debugera aktywnego skryptu, wyliczenia i struktury](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
+- [Stałe, wyliczenia i struktury debugera aktywnego skryptu](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przegląd debugowania aktywnego skryptu](../../winscript/active-script-debugging-overview.md)

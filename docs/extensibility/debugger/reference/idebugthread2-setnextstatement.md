@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e59d4087e44458ecd49efd5d7be9f45e68c6da2b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bfc2afb15dbacde1eb0a96178d2769365deb4e31
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119536"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893796"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
-Ustawia bieżący wskaźnik instrukcji w kontekście podanego kodu.  
+Ustawia bieżący wskaźnik instrukcji do kontekstu danego kodu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,22 +43,22 @@ int SetNextStatement (
   
 #### <a name="parameters"></a>Parametry  
  `pStackFrame`  
- Zarezerwowane do użytku w przyszłości; Ustaw wartość null.  
+ Zarezerwowane dla przyszłego użytku; Ustaw wartość null.  
   
  `pCodeContext`  
- [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiektu, który opisuje lokalizacji kodu o do wykonania i jego kontekstu.  
+ [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który opisuje lokalizacji kodu, który ma zostać wykonany i kontekst.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono innych możliwych wartości.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono inne możliwe wartości.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|Następna instrukcja nie może być w ramce stosu głębiej ramki stosu.|  
-|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|Następna instrukcja nie jest skojarzony z dowolnym ramki stosu.|  
+|E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|Następna instrukcja nie może być w ramce stosu, lepiej stosu ramki.|  
+|E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|Następna instrukcja nie jest skojarzona z wszystkie ramki stosu.|  
 |E_CANNOT_SET_NEXT_STATEMENT_ON_EXCEPTION|Niektóre aparaty debugowania nie można ustawić następnej instrukcji po wystąpieniu wyjątku.|  
   
 ## <a name="remarks"></a>Uwagi  
- Wskaźnik instrukcji wskazuje następnej instrukcji lub instrukcji do wykonania. Ta metoda jest używana, aby ponowić próbę wykonania wiersza kodu źródłowego lub aby wymusić wykonanie, aby kontynuować w innej funkcji, na przykład.  
+ Wskaźnik instrukcji wskazuje następnej instrukcji lub instrukcji do wykonania. Ta metoda jest używana, aby ponowić próbę wiersz kodu źródłowego lub aby wymusić kontynuowanie w innej funkcji, na przykład wykonywania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

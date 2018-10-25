@@ -32,12 +32,12 @@ caps.latest.revision: 245
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ae5e9491b8a02293a48a3ccc3e5e21a87fa5e878
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f160ff1b8ea66eecaacd4aa7ccccdf1f52bb6134
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200775"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894030"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Zależności mapy w ramach rozwiązań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,13 +66,13 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
   
  **Można mapować zależności dla kodu w tych językach**:  
   
--   Visual C# .NET lub Visual Basic .NET z rozwiązaniem lub zestawy (.dll lub .exe)  
+- Visual C# .NET lub Visual Basic .NET z rozwiązaniem lub zestawy (.dll lub .exe)  
   
--   Macierzysty lub zarządzany kod C lub C++ w projektach języka Visual C++, pliki nagłówkowe (.h lub `#include`), lub pliki binarne  
+- Macierzysty lub zarządzany kod C lub C++ w projektach języka Visual C++, pliki nagłówkowe (.h lub `#include`), lub pliki binarne  
   
--   Projekty X ++ i zestawy wykonane z modułów .NET dla systemu Microsoft Dynamics AX  
+- Projekty X ++ i zestawy wykonane z modułów .NET dla systemu Microsoft Dynamics AX  
   
- **Uwaga:** dla innych projektów C# lub Visual Basic .NET, dostępnych jest mniej opcji Uruchamianie mapy kodu lub dodawania elementów do istniejącej mapy kodu. Nie można na przykład, kliknij prawym przyciskiem myszy obiekt w edytorze tekstów projektu w języku C++ i dodać go do mapy kodu. Jednak możesz przeciągać i upuszczać elementy poszczególnych kodu lub pliki w Eksploratorze rozwiązań, widoku klas i przeglądarki obiektów.  
+  **Uwaga:** dla innych projektów C# lub Visual Basic .NET, dostępnych jest mniej opcji Uruchamianie mapy kodu lub dodawania elementów do istniejącej mapy kodu. Nie można na przykład, kliknij prawym przyciskiem myszy obiekt w edytorze tekstów projektu w języku C++ i dodać go do mapy kodu. Jednak możesz przeciągać i upuszczać elementy poszczególnych kodu lub pliki w Eksploratorze rozwiązań, widoku klas i przeglądarki obiektów.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Aby wyświetlić ogólne zależności między rozwiązania  
   
@@ -122,51 +122,51 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
   
 ###  <a name="OverviewSource"></a> Wyświetlanie zależności w rozwiązaniu  
   
-1.  Na **architektury** menu, wybierz **Generuj mapę kodu dla rozwiązania**.  
+1. Na **architektury** menu, wybierz **Generuj mapę kodu dla rozwiązania**.  
   
-     ![Generowanie polecenia mapy kodu](../modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
+    ![Generowanie polecenia mapy kodu](../modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
   
-     Możesz uzyskać mapę, pokazujący zestawy najwyższego poziomu i zagregowane łącza między nimi. Szerszy łącze zagregowane, więcej zależności reprezentuje.  
+    Możesz uzyskać mapę, pokazujący zestawy najwyższego poziomu i zagregowane łącza między nimi. Szerszy łącze zagregowane, więcej zależności reprezentuje.  
   
-2.  Użyj **legendy** znajdujący się na pasku narzędzi mapy kodu, aby pokazać lub ukryć listy ikony typu projektu (na przykład Test sieci Web i projekt telefonu), elementy kodu (na przykład klas, metod i właściwości) i typy relacji (np. dziedziczy z Implementuje i wywołania).  
+2. Użyj **legendy** znajdujący się na pasku narzędzi mapy kodu, aby pokazać lub ukryć listy ikony typu projektu (na przykład Test sieci Web i projekt telefonu), elementy kodu (na przykład klas, metod i właściwości) i typy relacji (np. dziedziczy z Implementuje i wywołania).  
   
-     ![TOP&#45;wykres zależności na poziomie zestawów](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
+    ![TOP&#45;wykres zależności na poziomie zestawów](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
   
-     To przykładowe rozwiązanie zawiera foldery rozwiązania (**testy** i **składniki**), projekty testowe, projekty sieci Web i zestawów. Domyślnie wszystkie relacje zawierania są wyświetlane jako *grup*, które można rozwijać i zwijać. **Zewnętrzne** grupa zawiera wszystkie rozwiązania, w tym zależności platformy. Zestawy zewnętrzne pokazują tylko te elementy, które są używane. Domyślnie system typów podstawowych są ukryte na mapie, aby zwiększyć czytelność.  
+    To przykładowe rozwiązanie zawiera foldery rozwiązania (**testy** i **składniki**), projekty testowe, projekty sieci Web i zestawów. Domyślnie wszystkie relacje zawierania są wyświetlane jako *grup*, które można rozwijać i zwijać. **Zewnętrzne** grupa zawiera wszystkie rozwiązania, w tym zależności platformy. Zestawy zewnętrzne pokazują tylko te elementy, które są używane. Domyślnie system typów podstawowych są ukryte na mapie, aby zwiększyć czytelność.  
   
-3.  Aby przejść do mapy, rozwiń węzeł grupy, które reprezentują projektów i zespołów. Można rozwinąć wszystko, naciskając klawisz **CTRL + A** zaznacz wszystkie węzły jak i następnie wybierając **grupy**, **rozwiń** z menu skrótów.  
+3. Aby przejść do mapy, rozwiń węzeł grupy, które reprezentują projektów i zespołów. Można rozwinąć wszystko, naciskając klawisz **CTRL + A** zaznacz wszystkie węzły jak i następnie wybierając **grupy**, **rozwiń** z menu skrótów.  
   
-     ![Rozwinięcie wszystkich grup w mapie kodu](../modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
+    ![Rozwinięcie wszystkich grup w mapie kodu](../modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
   
-4.  Jednak może to nie być przydatne w przypadku dużych rozwiązań. W rzeczywistości złożonych rozwiązań ograniczenia pamięci może uniemożliwić rozwinięcie wszystkich grup. Zamiast tego aby wyświetlić wewnątrz jednego węzła, je rozwinąć. Umieść wskaźnik myszy na węzeł, a następnie kliknij przycisk cudzysłów ostrokątny (strzałkę), gdy pojawia się.  
+4. Jednak może to nie być przydatne w przypadku dużych rozwiązań. W rzeczywistości złożonych rozwiązań ograniczenia pamięci może uniemożliwić rozwinięcie wszystkich grup. Zamiast tego aby wyświetlić wewnątrz jednego węzła, je rozwinąć. Umieść wskaźnik myszy na węzeł, a następnie kliknij przycisk cudzysłów ostrokątny (strzałkę), gdy pojawia się.  
   
-     ![Rozwinięcie węzła w mapie kodu](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
+    ![Rozwinięcie węzła w mapie kodu](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
   
-     Lub za pomocą klawiatury, wybierając element, a następnie naciskając klawisz znaku plus (**+**). Aby zapoznać się z bardziej poziomy kodu, zrób to samo dla przestrzeni nazw, typów i elementów członkowskich.  
+    Lub za pomocą klawiatury, wybierając element, a następnie naciskając klawisz znaku plus (**+**). Aby zapoznać się z bardziej poziomy kodu, zrób to samo dla przestrzeni nazw, typów i elementów członkowskich.  
   
-    > [!TIP]
-    >  Aby uzyskać więcej informacji o pracy z kodem mapy za pomocą myszy, klawiatury i dotyku, zobacz [przeglądanie i zmianę położenia map kodu](../modeling/browse-and-rearrange-code-maps.md).  
+   > [!TIP]
+   >  Aby uzyskać więcej informacji o pracy z kodem mapy za pomocą myszy, klawiatury i dotyku, zobacz [przeglądanie i zmianę położenia map kodu](../modeling/browse-and-rearrange-code-maps.md).  
   
-5.  Aby uprościć mapy i skupić się na poszczególnych częściach, wybierz opcję **filtry** na pasku narzędzi Mapa kodu i po prostu wybierz typy węzłów i łączy Cię interesuje. Na przykład można ukryć kontenerów w folderze rozwiązania i zestawu.  
+5. Aby uprościć mapy i skupić się na poszczególnych częściach, wybierz opcję **filtry** na pasku narzędzi Mapa kodu i po prostu wybierz typy węzłów i łączy Cię interesuje. Na przykład można ukryć kontenerów w folderze rozwiązania i zestawu.  
   
-     ![Uprość mapy, filtrując kontenery](../modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
+    ![Uprość mapy, filtrując kontenery](../modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
   
-     Aby uprościć mapy, możesz również ukrywać lub usuwanie poszczególne grupy i elementy z mapy, bez wywierania wpływu na podstawowy kod rozwiązania.  
+    Aby uprościć mapy, możesz również ukrywać lub usuwanie poszczególne grupy i elementy z mapy, bez wywierania wpływu na podstawowy kod rozwiązania.  
   
-6.  Aby wyświetlić relacje między elementami, zaznacz je w mapie. Kolory łącza typy relacji wskazują, jak pokazano w **legendy** okienka.  
+6. Aby wyświetlić relacje między elementami, zaznacz je w mapie. Kolory łącza typy relacji wskazują, jak pokazano w **legendy** okienka.  
   
-     ![Wyświetlanie zależności w ramach rozwiązań](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
+    ![Wyświetlanie zależności w ramach rozwiązań](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
   
-     W tym przykładzie purpurowy łącza są wywołania kropkowana łącza są odwołaniami i dostęp do pola są światła łącza niebieski. Zielony mogą to być dziedziczenie lub mogą one być *zagregowane łącza* wskazujące więcej niż jeden typ relacji (lub *kategorii*).  
+    W tym przykładzie purpurowy łącza są wywołania kropkowana łącza są odwołaniami i dostęp do pola są światła łącza niebieski. Zielony mogą to być dziedziczenie lub mogą one być *zagregowane łącza* wskazujące więcej niż jeden typ relacji (lub *kategorii*).  
   
-    > [!TIP]
-    >  Jeśli zostanie wyświetlony link zielony, nie może oznaczać jest po prostu relacji dziedziczenia. Może również być wywołania metody, ale są one ukryte przez relację dziedziczenia. Aby wyświetlić określone typy łączy, użyj pól wyboru w **filtry** okienko, aby ukryć typy nie są zainteresowani.  
+   > [!TIP]
+   >  Jeśli zostanie wyświetlony link zielony, nie może oznaczać jest po prostu relacji dziedziczenia. Może również być wywołania metody, ale są one ukryte przez relację dziedziczenia. Aby wyświetlić określone typy łączy, użyj pól wyboru w **filtry** okienko, aby ukryć typy nie są zainteresowani.  
   
-7.  Aby uzyskać więcej informacji dotyczących łącza lub elementu, umieść kursor na on, aż pojawi się etykietka narzędzia. To pokazuje szczegóły elementu kodu lub kategorii, które reprezentuje łącze.  
+7. Aby uzyskać więcej informacji dotyczących łącza lub elementu, umieść kursor na on, aż pojawi się etykietka narzędzia. To pokazuje szczegóły elementu kodu lub kategorii, które reprezentuje łącze.  
   
-     ![Pokaż kategorie relacji](../modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
+    ![Pokaż kategorie relacji](../modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
   
-8.  Aby sprawdzić elementy i zależności reprezentowane przez łącze zagregowane, najpierw zaznacz łącze, a następnie otwórz jego menu skrótów. Wybierz **Pokaż linki** (lub **Pokaż linki na nowej mapie kodu**). To rozwija grupy na obu końcach połączenia i pokazuje tylko te elementy i zależności, które uczestniczą w linku.  
+8. Aby sprawdzić elementy i zależności reprezentowane przez łącze zagregowane, najpierw zaznacz łącze, a następnie otwórz jego menu skrótów. Wybierz **Pokaż linki** (lub **Pokaż linki na nowej mapie kodu**). To rozwija grupy na obu końcach połączenia i pokazuje tylko te elementy i zależności, które uczestniczą w linku.  
   
 9. Chcesz się skupić w określonych części mapy, możesz w dalszym ciągu usunąć elementy, których nie chcesz. Na przykład, aby przejść do widoku klas i składowych, po prostu filtrować wszystkie węzły przestrzeni nazw w **filtry** okienka.  
   
@@ -184,7 +184,7 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
   
      ![Wybierz elementy, aby wyświetlać relacje](../modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")  
   
- Zobacz też:  
+    Zobacz też:  
   
 -   [Przeglądanie i ponowne rozmieszczanie map kodu](../modeling/browse-and-rearrange-code-maps.md)  
   
@@ -304,11 +304,11 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
 ###  <a name="Troubleshooting"></a> Rozwiązywanie problemów z mapami kodu C i C++  
  Te elementy nie są obsługiwane dla kodu C i C++:  
   
--   Typy podstawowe nie pojawiają się na mapach, zawierających hierarchię nadrzędną.  
+- Typy podstawowe nie pojawiają się na mapach, zawierających hierarchię nadrzędną.  
   
--   Większość **Pokaż** elementów menu nie są dostępne dla kodu C i C++.  
+- Większość **Pokaż** elementów menu nie są dostępne dla kodu C i C++.  
   
- Te problemy mogą się zdarzyć, gdy tworzone mapy kodu dla kodu C i C++:  
+  Te problemy mogą się zdarzyć, gdy tworzone mapy kodu dla kodu C i C++:  
   
 |**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|  
 |---------------|------------------------|--------------------|  
@@ -324,23 +324,23 @@ Jeśli chcesz poznać zależności w kodzie, utwórz ich wizualizację przez utw
 ##  <a name="RenderMoreQuickly"></a> Wprowadź kod, który map render szybciej  
  Podczas generowania mapy po raz pierwszy, program Visual Studio indeksuje wszystkie zależności, które znajdzie. Ten proces może zająć trochę czasu, szczególnie w przypadku dużych rozwiązań, ale poprawi wydajność później. Jeśli kod ulegnie zmianie, program Visual Studio indeksuje ponownie tylko zaktualizowany kod. Aby zminimalizować czas potrzebny na mapie, aby zakończyć renderowania, należy rozważyć następujące kwestie:  
   
--   [Mapowanie zależności, które Cię interesują.](#SeeSpecificSource)  
+- [Mapowanie zależności, które Cię interesują.](#SeeSpecificSource)  
   
--   Przed wygenerowaniem mapy dla całego rozwiązania Zmniejsz zakres rozwiązania.  
+- Przed wygenerowaniem mapy dla całego rozwiązania Zmniejsz zakres rozwiązania.  
   
--   Wyłącz automatyczne kompilacji w celu rozwiązania obejmującego **pominięcia kompilacji** przycisk na pasku narzędzi mapy kodu.  
+- Wyłącz automatyczne kompilacji w celu rozwiązania obejmującego **pominięcia kompilacji** przycisk na pasku narzędzi mapy kodu.  
   
--   Wyłącz opcję automatycznego dodawania elementów nadrzędnych za pomocą **obejmują elementy nadrzędne** przycisk na pasku narzędzi mapy kodu.  
+- Wyłącz opcję automatycznego dodawania elementów nadrzędnych za pomocą **obejmują elementy nadrzędne** przycisk na pasku narzędzi mapy kodu.  
   
--   Edytuj plik mapy kodu bezpośrednio po to, aby usunąć węzły i łącza, które nie są potrzebne. Zmiana na mapie nie ma wpływu na odpowiedni kod. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+- Edytuj plik mapy kodu bezpośrednio po to, aby usunąć węzły i łącza, które nie są potrzebne. Zmiana na mapie nie ma wpływu na odpowiedni kod. Zobacz [Dostosowanie map kodu przez edycję plików DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
- ![Przyciski pominięcia kompilacji i obejmują elementy nadrzędne](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
+  ![Przyciski pominięcia kompilacji i obejmują elementy nadrzędne](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
   
- Mimo że program Visual Studio można uruchomić z 1 GB pamięci, zalecane jest, aby komputer miał co najmniej 2 GB pamięci, aby uniknąć opóźnień, podczas gdy program Visual Studio tworzy indeks kodu i generuje mapy.  
+  Mimo że program Visual Studio można uruchomić z 1 GB pamięci, zalecane jest, aby komputer miał co najmniej 2 GB pamięci, aby uniknąć opóźnień, podczas gdy program Visual Studio tworzy indeks kodu i generuje mapy.  
   
- Może upłynąć więcej czasu na tworzenie map lub dodawanie elementów do mapy za pomocą Eksploratora rozwiązań, gdy element projektu **Kopiuj do katalogu wyjściowego** właściwość jest ustawiona na **zawsze Kopiuj**. Może to spowodować problemy z kompilacjami przyrostowymi i każdorazowe ponowne kompilowanie projektu przez program Visual Studio. Aby zwiększyć wydajność, należy zmienić tę właściwość na **Kopiuj Jeśli nowszy** lub `PreserveNewest`. Zobacz [kompilacje przyrostowe](../msbuild/incremental-builds.md).  
+  Może upłynąć więcej czasu na tworzenie map lub dodawanie elementów do mapy za pomocą Eksploratora rozwiązań, gdy element projektu **Kopiuj do katalogu wyjściowego** właściwość jest ustawiona na **zawsze Kopiuj**. Może to spowodować problemy z kompilacjami przyrostowymi i każdorazowe ponowne kompilowanie projektu przez program Visual Studio. Aby zwiększyć wydajność, należy zmienić tę właściwość na **Kopiuj Jeśli nowszy** lub `PreserveNewest`. Zobacz [kompilacje przyrostowe](../msbuild/incremental-builds.md).  
   
- Ukończone mapy pokażą zależności tylko w przypadku kodu pomyślnie skompilowane. Jeśli wystąpią błędy kompilacji dla niektórych składników, te błędy są wyświetlane na mapie. Upewnij się, że składnik rzeczywiście kompiluje i ma zależności od tego, przed wprowadzeniem decyzji architektury oparte na mapie.  
+  Ukończone mapy pokażą zależności tylko w przypadku kodu pomyślnie skompilowane. Jeśli wystąpią błędy kompilacji dla niektórych składników, te błędy są wyświetlane na mapie. Upewnij się, że składnik rzeczywiście kompiluje i ma zależności od tego, przed wprowadzeniem decyzji architektury oparte na mapie.  
   
 ##  <a name="SavingExporting"></a> Udostępnianie map kodu  
   

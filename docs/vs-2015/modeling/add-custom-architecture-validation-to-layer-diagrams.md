@@ -14,12 +14,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2012ff0729853d365ed9bb32a9420f5b41bf47fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26be7c766127c1da5d7aa4f26b2fb49cf510b850
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231104"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897918"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Dodawanie niestandardowej walidacji architektury do diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,26 +44,26 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>Aby zdefiniować rozszerzenie przy użyciu szablonu projektu  
   
-1.  Tworzenie projektu w nowym rozwiązaniu za pomocą **nowy projekt** polecenie **pliku** menu.  
+1. Tworzenie projektu w nowym rozwiązaniu za pomocą **nowy projekt** polecenie **pliku** menu.  
   
-2.  W **nowy projekt** dialogowego **projekty modelowania**, wybierz opcję **rozszerzenie sprawdzania poprawności projektanta warstwy**.  
+2. W **nowy projekt** dialogowego **projekty modelowania**, wybierz opcję **rozszerzenie sprawdzania poprawności projektanta warstwy**.  
   
-     Ten szablon tworzy projekt zawierający krótki przykład.  
+    Ten szablon tworzy projekt zawierający krótki przykład.  
   
-    > [!WARNING]
-    >  Do szablonu makethe działać prawidłowo:  
-    >   
-    >  -   Edytuj wywołania `LogValidationError` Aby usunąć opcjonalne argumenty `errorSourceNodes` i `errorTargetNodes`.  
-    > -   Jeśli używasz właściwości niestandardowych, Zastosuj aktualizacje wymienione w [Dodawanie właściwości niestandardowych do diagramów warstw](../modeling/add-custom-properties-to-layer-diagrams.md).  
+   > [!WARNING]
+   >  Do szablonu makethe działać prawidłowo:  
+   > 
+   > - Edytuj wywołania `LogValidationError` Aby usunąć opcjonalne argumenty `errorSourceNodes` i `errorTargetNodes`.  
+   >   -   Jeśli używasz właściwości niestandardowych, Zastosuj aktualizacje wymienione w [Dodawanie właściwości niestandardowych do diagramów warstw](../modeling/add-custom-properties-to-layer-diagrams.md).  
   
-3.  Edytowanie kodu w celu zdefiniowania walidacji. Aby uzyskać więcej informacji, zobacz [programowanie walidacji](#programming).  
+3. Edytowanie kodu w celu zdefiniowania walidacji. Aby uzyskać więcej informacji, zobacz [programowanie walidacji](#programming).  
   
-4.  Aby przetestować rozszerzenie, zobacz [debugowanie walidacji warstwowej](#debugging).  
+4. Aby przetestować rozszerzenie, zobacz [debugowanie walidacji warstwowej](#debugging).  
   
-    > [!NOTE]
-    >  Metoda zostanie wywołana tylko w szczególnych okolicznościach, a punkty przerwania nie będą działać automatycznie. Aby uzyskać więcej informacji, zobacz [debugowanie walidacji warstwowej](#debugging).  
+   > [!NOTE]
+   >  Metoda zostanie wywołana tylko w szczególnych okolicznościach, a punkty przerwania nie będą działać automatycznie. Aby uzyskać więcej informacji, zobacz [debugowanie walidacji warstwowej](#debugging).  
   
-5.  Aby zainstalować rozszerzenie w głównym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin\\\***. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, należy użyć **rozszerzenia i aktualizacje** na **narzędzia** menu.  
+5. Aby zainstalować rozszerzenie w głównym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku *bin\\*. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, należy użyć **rozszerzenia i aktualizacje** na **narzędzia** menu.  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Dodawanie warstwowego modułu Walidującego do oddzielnego VSIX  
  Jeśli chcesz utworzyć jeden VSIX zawierający moduły sprawdzania warstwy, polecenia oraz inne rozszerzenia, zaleca się utworzenie jednego projektu do definiowania VSIX i oddzielnych projektów dla programów obsługi. Aby uzyskać informacje na temat innych rodzajów rozszerzenia modelowania, zobacz [modeli i diagramów UML rozszerzyć](../modeling/extend-uml-models-and-diagrams.md).  
@@ -127,42 +127,42 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
 ##  <a name="programming"></a> Sprawdzanie poprawności programowania  
  Aby zdefiniować rozszerzenie warstwy sprawdzania poprawności, zdefiniujesz klasę, która ma następujące cechy:  
   
--   Ogólny formularz zgłoszenia jest następujący:  
+- Ogólny formularz zgłoszenia jest następujący:  
   
-    ```  
+  ```  
   
-    using System.ComponentModel.Composition;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
-    using Microsoft.VisualStudio.GraphModel;  
-    ...  
-     [Export(typeof(IValidateArchitectureExtension))]  
-      public partial class Validator1Extension :  
-                      IValidateArchitectureExtension  
+  using System.ComponentModel.Composition;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
+  using Microsoft.VisualStudio.GraphModel;  
+  ...  
+   [Export(typeof(IValidateArchitectureExtension))]  
+    public partial class Validator1Extension :  
+                    IValidateArchitectureExtension  
+    {  
+      public void ValidateArchitecture(Graph graph)  
       {  
-        public void ValidateArchitecture(Graph graph)  
-        {  
-           GraphSchema schema = graph.DocumentSchema;  
-          ...  
-      } }  
-    ```  
+         GraphSchema schema = graph.DocumentSchema;  
+        ...  
+    } }  
+  ```  
   
--   Po wykryciu błędu, możesz go zgłosić za pomocą `LogValidationError()`.  
+- Po wykryciu błędu, możesz go zgłosić za pomocą `LogValidationError()`.  
   
-    > [!WARNING]
-    >  Nie używaj parametrów opcjonalnych `LogValidationError`.  
+  > [!WARNING]
+  >  Nie używaj parametrów opcjonalnych `LogValidationError`.  
   
- Kiedy użytkownik wywoła **sprawdzanie poprawności architektury** polecenia menu, system plików środowiska uruchomieniowego warstwy analizuje warstwy i ich artefakty w celu przedstawienia na wykresie. Wykres ma cztery części:  
+  Kiedy użytkownik wywoła **sprawdzanie poprawności architektury** polecenia menu, system plików środowiska uruchomieniowego warstwy analizuje warstwy i ich artefakty w celu przedstawienia na wykresie. Wykres ma cztery części:  
   
--   Modele warstwy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązanie, które są reprezentowane jako węzły i łącza na wykresie.  
+- Modele warstwy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązanie, które są reprezentowane jako węzły i łącza na wykresie.  
   
--   Kod, elementy projektów i innych artefaktów, które są zdefiniowane w rozwiązaniu i reprezentowane jako węzły i łącza, które reprezentują zależności odnalezione przez proces analizy.  
+- Kod, elementy projektów i innych artefaktów, które są zdefiniowane w rozwiązaniu i reprezentowane jako węzły i łącza, które reprezentują zależności odnalezione przez proces analizy.  
   
--   Łączy z węzłów warstwy do węzłów artefaktu kodu.  
+- Łączy z węzłów warstwy do węzłów artefaktu kodu.  
   
--   Węzły, które reprezentują błędy wykryte przez Walidatora.  
+- Węzły, które reprezentują błędy wykryte przez Walidatora.  
   
- Gdy wykres został skonstruowany, wywoływana jest standardowa metoda sprawdzania poprawności. Po zakończeniu tej operacji, wszystkie metody sprawdzania poprawności zainstalowanych rozszerzeń są wywoływane w nieokreślonej kolejności. Wykres jest przekazywany do każdej `ValidateArchitecture` metody, która pozwala na skanowanie wykresu i zgłasza wszelkie błędy, które znajdzie.  
+  Gdy wykres został skonstruowany, wywoływana jest standardowa metoda sprawdzania poprawności. Po zakończeniu tej operacji, wszystkie metody sprawdzania poprawności zainstalowanych rozszerzeń są wywoływane w nieokreślonej kolejności. Wykres jest przekazywany do każdej `ValidateArchitecture` metody, która pozwala na skanowanie wykresu i zgłasza wszelkie błędy, które znajdzie.  
   
 > [!NOTE]
 >  To nie jest taki sam jak proces sprawdzania poprawności, który jest stosowany do diagramów UML i nie jest taki sam jak proces sprawdzania poprawności, który może służyć w językach specyficznych dla domeny.  
@@ -173,25 +173,25 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
   
  Każdy węzeł i każde łącze posiada jedną lub więcej kategorii, które określają typ elementu lub relacji, który reprezentuje. Węzły typowych wykresów mają następujące kategorie:  
   
--   Dsl.LayerModel  
+- Dsl.LayerModel  
   
--   Dsl.Layer  
+- Dsl.Layer  
   
--   Dsl.Reference  
+- Dsl.Reference  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Namespace  
+- CodeSchema_Namespace  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Method  
+- CodeSchema_Method  
   
--   CodeSchema_Field  
+- CodeSchema_Field  
   
--   CodeSchema_Property  
+- CodeSchema_Property  
   
- Łączy z warstwy do elementów w kodzie należą do kategorii "Reprezentuje".  
+  Łączy z warstwy do elementów w kodzie należą do kategorii "Reprezentuje".  
   
 ##  <a name="debugging"></a> Debugowanie sprawdzania poprawności  
  Aby debugować rozszerzenie warstwy sprawdzania poprawności, naciśnij kombinację klawiszy CTRL + F5. Eksperymentalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zostanie otwarty. W tym wypadku Otwórz lub Utwórz model warstwy. Ten model musi być skojarzony z kodem i musi mieć co najmniej jedną zależność.  
@@ -199,11 +199,11 @@ W programie Visual Studio użytkownicy mogą sprawdzić poprawność kodu źród
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Testowanie za pomocą rozwiązania, które zawiera zależności  
  Sprawdzanie poprawności nie jest wykonywane, chyba że występują następujące cechy:  
   
--   Istnieje co najmniej jedno łącze zależności na diagramie warstwowym.  
+- Istnieje co najmniej jedno łącze zależności na diagramie warstwowym.  
   
--   Istnieją warstwy w modelu, które są skojarzone z elementami kodu.  
+- Istnieją warstwy w modelu, które są skojarzone z elementami kodu.  
   
- Przy pierwszym uruchomieniu wystąpienia doświadczalnego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do testowania Twojego rozszerzenia sprawdzania poprawności, Otwórz lub Utwórz rozwiązanie, które ma te cechy.  
+  Przy pierwszym uruchomieniu wystąpienia doświadczalnego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do testowania Twojego rozszerzenia sprawdzania poprawności, Otwórz lub Utwórz rozwiązanie, które ma te cechy.  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>Uruchom czyste rozwiązanie przez sprawdzeniem poprawności architektury  
  Kiedy należy zaktualizować kod sprawdzania poprawności, używać **czyste rozwiązanie** na polecenia **kompilacji** menu w eksperymentalnym rozwiązaniu, zanim zaczniesz testować polecenie sprawdzania poprawności. Jest to konieczne, ponieważ wyniki weryfikacji są buforowane. Jeśli test diagramu warstwy lub jego kod nie zostały zaktualizowane, nie można wykonać metody sprawdzania poprawności.  

@@ -23,12 +23,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d11bc0743faa9e512fcd144bfef09a84a316531d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17deca1afc78e238e098285e760a791504b61fe8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284989"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880731"
 ---
 # <a name="encodings-and-line-breaks"></a>Kodowania i linie podziału
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ W programie Visual Studio można używać **pliku/zaawansowane opcje zapisywania
   
  W programie Visual Studio, następujące znaki są interpretowane jako podziały wierszy:  
   
--   CRLF: Znaku powrotu karetki i wysuwu wiersza znaki Unicode 000 D + 000A  
+- CRLF: Znaku powrotu karetki i wysuwu wiersza znaki Unicode 000 D + 000A  
   
--   LF: Znak nowego wiersza, Unicode 000A  
+- LF: Znak nowego wiersza, Unicode 000A  
   
--   Ustaw: Następny wiersz znaków Unicode 0085  
+- Ustaw: Następny wiersz znaków Unicode 0085  
   
--   LS: Separator wiersza, znaków Unicode 2028  
+- LS: Separator wiersza, znaków Unicode 2028  
   
--   PS: Separator akapitu, znaków Unicode 2029  
+- PS: Separator akapitu, znaków Unicode 2029  
   
- Tekst, który jest kopiowany z innych aplikacji zachowuje oryginalne kodowanie i znaki podziału wiersza. Na przykład po Kopiuj tekst ze Schowka i wklej go do pliku tekstowego w programie Visual Studio tekst ma tych samych ustawień, których go w Notatniku.  
+  Tekst, który jest kopiowany z innych aplikacji zachowuje oryginalne kodowanie i znaki podziału wiersza. Na przykład po Kopiuj tekst ze Schowka i wklej go do pliku tekstowego w programie Visual Studio tekst ma tych samych ustawień, których go w Notatniku.  
   
- Po otwarciu pliku, który zawiera znaki podziału wiersza w innej, zobaczysz okno dialogowe z pytaniem, czy znaki podziału wiersza niespójne powinny być znormalizowane i jakiego typu podziałów wiersza, aby wybrać.
+  Po otwarciu pliku, który zawiera znaki podziału wiersza w innej, zobaczysz okno dialogowe z pytaniem, czy znaki podziału wiersza niespójne powinny być znormalizowane i jakiego typu podziałów wiersza, aby wybrać.
 
 
 

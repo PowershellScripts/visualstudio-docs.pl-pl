@@ -16,12 +16,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b731f10a30f20e3c5a9670a91400e86be004852e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7105299956a338d0dd4a637b404f9ccad2447662
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839144"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Obsługa paska nawigacyjnego w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,11 +69,11 @@ namespace TestLanguagePackage
   
  Jak zmieni się zaznaczenie w typach listy rozwijanej listy elementów członkowskich należy zaktualizować tak, aby odzwierciedlić nowego typu. Co to jest wyświetlany na liście elementów członkowskich mogą być:  
   
--   Lista elementów członkowskich dla bieżącego typu.  
+- Lista elementów członkowskich dla bieżącego typu.  
   
--   Wszystkie elementy członkowskie dostępne w źródle pliku, ale przy użyciu wszystkich elementów członkowskich nie w bieżącym typem wyświetlane w tekście wyszarzona. Użytkownik może wybrać nadal członków wyszarzona, co umożliwia ich szybkie nawigowanie, ale kolor oznacza, że nie są częścią aktualnie wybranego typu.  
+- Wszystkie elementy członkowskie dostępne w źródle pliku, ale przy użyciu wszystkich elementów członkowskich nie w bieżącym typem wyświetlane w tekście wyszarzona. Użytkownik może wybrać nadal członków wyszarzona, co umożliwia ich szybkie nawigowanie, ale kolor oznacza, że nie są częścią aktualnie wybranego typu.  
   
- Implementacja <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metoda przeważnie wykonuje następujące czynności:  
+  Implementacja <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> metoda przeważnie wykonuje następujące czynności:  
   
 1.  Zostanie wyświetlona lista bieżącej deklaracji dla pliku źródłowego.  
   

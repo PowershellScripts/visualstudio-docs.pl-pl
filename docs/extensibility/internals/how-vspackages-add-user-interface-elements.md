@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c595018dc588b6b6fbb014e074c737a53ea2013
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8b498f9df752fd5ac1f1212649aa5b8bb62d27fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512125"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839118"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Jak dodać elementy interfejsu użytkownika w pakietach VSPackage
 Dodać elementy interfejsu użytkownika, na przykład menu, paski narzędzi i narzędzi systemu windows, do programu Visual Studio poprzez pakietu VSPackage *vsct* pliku.  
@@ -90,15 +90,15 @@ Dodać elementy interfejsu użytkownika, na przykład menu, paski narzędzi i na
 #### <a name="menus"></a>Menu  
  Każde menu jest zdefiniowany jako [Menu element](../../extensibility/menu-element.md) w `Menus` sekcji. Menu musi mieć `guid`, `id`, i `priority` atrybutów, a `Parent` elementu, a także następujących dodatkowych atrybutów i elementy podrzędne:  
   
--   A `type` atrybut, który określa, czy menu mają pojawiać się w środowisku IDE jako rodzaju menu lub paska narzędzi.  
+- A `type` atrybut, który określa, czy menu mają pojawiać się w środowisku IDE jako rodzaju menu lub paska narzędzi.  
   
--   A [Strings, element](../../extensibility/strings-element.md) zawierający [ButtonText, element](../../extensibility/buttontext-element.md), która określa tytuł menu w IDE i [CommandName, element](../../extensibility/commandname-element.md), który określa nazwę, która jest używane w **polecenia** okna, aby uzyskać dostęp do menu.  
+- A [Strings, element](../../extensibility/strings-element.md) zawierający [ButtonText, element](../../extensibility/buttontext-element.md), która określa tytuł menu w IDE i [CommandName, element](../../extensibility/commandname-element.md), który określa nazwę, która jest używane w **polecenia** okna, aby uzyskać dostęp do menu.  
   
--   Flagi opcjonalne. A [elementu CommandFlag](../../extensibility/command-flag-element.md) może występować w definicji menu, aby zmienić jego wygląd lub zachowanie w środowisku IDE.  
+- Flagi opcjonalne. A [elementu CommandFlag](../../extensibility/command-flag-element.md) może występować w definicji menu, aby zmienić jego wygląd lub zachowanie w środowisku IDE.  
   
- Każdy `Menu` elementu musi mieć grupę jako klasy nadrzędnej, chyba że jest to element dokowalne, takie jak pasek narzędzi. Dokowalne menu jest jego własny element nadrzędny. Aby uzyskać więcej informacji na temat menu i wartości dla `type` atrybutów, zobacz [Menu element](../../extensibility/menu-element.md) dokumentacji.  
+  Każdy `Menu` elementu musi mieć grupę jako klasy nadrzędnej, chyba że jest to element dokowalne, takie jak pasek narzędzi. Dokowalne menu jest jego własny element nadrzędny. Aby uzyskać więcej informacji na temat menu i wartości dla `type` atrybutów, zobacz [Menu element](../../extensibility/menu-element.md) dokumentacji.  
   
- W poniższym przykładzie pokazano menu, która pojawia się na pasku menu programu Visual Studio **narzędzia** menu.  
+  W poniższym przykładzie pokazano menu, która pojawia się na pasku menu programu Visual Studio **narzędzia** menu.  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -159,11 +159,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Combos  
  Combos są zdefiniowane w `Combos` sekcji. Każdy `Combo` element reprezentuje pole listy rozwijanej w środowisku IDE. Pole listy mogą być lub zapis danych przez użytkowników, w zależności od wartości `type` atrybut kombi. Combos mają te same elementy i zachowanie, że przyciski ma, a także mogą mieć następujących dodatkowych atrybutów:  
   
--   A `defaultWidth` atrybut, który określa szerokość w pikselach.  
+- A `defaultWidth` atrybut, który określa szerokość w pikselach.  
   
--   `idCommandList` Atrybut, który określa listę, która zawiera elementy, które są wyświetlane w polu listy. Lista poleceń musi być zadeklarowany w tym samym `GuidSymbol` węzeł, który zawiera kombi.  
+- `idCommandList` Atrybut, który określa listę, która zawiera elementy, które są wyświetlane w polu listy. Lista poleceń musi być zadeklarowany w tym samym `GuidSymbol` węzeł, który zawiera kombi.  
   
- W poniższym przykładzie zdefiniowano combo, element.  
+  W poniższym przykładzie zdefiniowano combo, element.  
   
 ```xml  
 <Combos>  
@@ -192,7 +192,7 @@ priority="0x0100" type="Menu">
  Następujące reguły określają, jak wywołać inny element jako jego element nadrzędny elementu.  
   
 |Element|Zdefiniowane w tej sekcji tabeli poleceń|Mogą znajdować się (jako element nadrzędny lub umieszczania w `CommandPlacements` sekcji i / lub)|Może zawierać (określony jako element nadrzędny)|  
-|-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
+|-------------| - | - | - |  
 |Grupa|[Element grupy](../../extensibility/groups-element.md), IDE, innych pakietów VSPackage|Menu, grupy, sam element|Menu, grupy i polecenia|  
 |Menu|[Element menu](../../extensibility/menus-element.md), IDE, innych pakietów VSPackage|1, aby *n* grup|0, aby *n* grup|  
 |Pasek narzędzi|[Element menu](../../extensibility/menus-element.md), IDE, innych pakietów VSPackage|Sam element|0, aby *n* grup|  
@@ -290,17 +290,17 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>Wygląd elementów interfejsu  
  Zagadnienia związane z wybraniu i pozycjonowanie elementów polecenia są następujące:  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oferuje wiele elementów interfejsu użytkownika, które pojawiają się inaczej w zależności od położenia.  
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] oferuje wiele elementów interfejsu użytkownika, które pojawiają się inaczej w zależności od położenia.  
   
--   Element interfejsu użytkownika, która jest zdefiniowana za pomocą `DefaultInvisible` flagi nie będą wyświetlane w środowisku IDE, chyba że jest to albo wyświetlany przez jego implementacja pakietu VSPackage <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metody lub skojarzone z określonym kontekstem interfejsu użytkownika w `VisibilityConstraints` sekcji.  
+- Element interfejsu użytkownika, która jest zdefiniowana za pomocą `DefaultInvisible` flagi nie będą wyświetlane w środowisku IDE, chyba że jest to albo wyświetlany przez jego implementacja pakietu VSPackage <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metody lub skojarzone z określonym kontekstem interfejsu użytkownika w `VisibilityConstraints` sekcji.  
   
--   Pomyślnie pozycjonowane polecenia mogą być niewidoczne. Ponieważ IDE automatycznie ukrywa lub wyświetla niektórych poleceń, w zależności od interfejsów, które pakietu VSPackage ma (lub nie) implementacja. Na przykład wdrożenie pakietu VSPackage niektórych twórz interfejsy elementy menu dotyczące kompilacji powoduje, że mają być automatycznie wyświetlane.  
+- Pomyślnie pozycjonowane polecenia mogą być niewidoczne. Ponieważ IDE automatycznie ukrywa lub wyświetla niektórych poleceń, w zależności od interfejsów, które pakietu VSPackage ma (lub nie) implementacja. Na przykład wdrożenie pakietu VSPackage niektórych twórz interfejsy elementy menu dotyczące kompilacji powoduje, że mają być automatycznie wyświetlane.  
   
--   Stosowanie `CommandWellOnly` Flaga w definicji elementu interfejsu użytkownika oznacza, że polecenia mogą być dodawane tylko przez dostosowanie.  
+- Stosowanie `CommandWellOnly` Flaga w definicji elementu interfejsu użytkownika oznacza, że polecenia mogą być dodawane tylko przez dostosowanie.  
   
--   Polecenia mogą być dostępne tylko w określonych kontekstach interfejsu użytkownika, na przykład, tylko wtedy, gdy okno dialogowe jest wyświetlane, gdy IDE jest w widoku Projekt.  
+- Polecenia mogą być dostępne tylko w określonych kontekstach interfejsu użytkownika, na przykład, tylko wtedy, gdy okno dialogowe jest wyświetlane, gdy IDE jest w widoku Projekt.  
   
--   Aby spowodować, że niektóre elementy interfejsu użytkownika będzie wyświetlana w środowisku IDE, możesz zaimplementować jeden lub więcej interfejsów lub napisanie kodu.  
+- Aby spowodować, że niektóre elementy interfejsu użytkownika będzie wyświetlana w środowisku IDE, możesz zaimplementować jeden lub więcej interfejsów lub napisanie kodu.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Rozszerzenie menu i poleceń](../../extensibility/extending-menus-and-commands.md)

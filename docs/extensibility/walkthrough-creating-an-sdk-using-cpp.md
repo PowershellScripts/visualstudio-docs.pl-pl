@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c320400ee7337ec3f4ac3b6a77f1863b732c99c5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6311526df299da860c829520a2087ecc8d786600
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930649"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Przewodnik: Tworzenie zestawu SDK przy użyciu języka C++
 W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne biblioteki zestawu SDK pakietu SDK jako Visual Studio rozszerzenia (VSIX), a następnie użyć go do tworzenia aplikacji. Instruktażu jest podzielony na następujące kroki:  
@@ -142,25 +142,25 @@ W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne bi
   
 ##  <a name="createSample"></a> Aby utworzyć przykładową aplikację, która używa biblioteki klas  
   
-1.  Na pasku menu wybierz **pliku** > **New** > **projektu**.  
+1. Na pasku menu wybierz **pliku** > **New** > **projektu**.  
   
-2.  Na liście szablonów rozwiń **Visual C++** > **Windows Universal** , a następnie wybierz **pusta aplikacja**. W **nazwa** określ **NativeMathSDKSample**, a następnie wybierz **OK** przycisku.  
+2. Na liście szablonów rozwiń **Visual C++** > **Windows Universal** , a następnie wybierz **pusta aplikacja**. W **nazwa** określ **NativeMathSDKSample**, a następnie wybierz **OK** przycisku.  
   
-3.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **NativeMathSDKSample** projektu, a następnie wybierz **Dodaj** > **odwołania**.  
+3. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **NativeMathSDKSample** projektu, a następnie wybierz **Dodaj** > **odwołania**.  
   
-4.  W **Dodaj odwołanie** Rozwiń okno dialogowe, na liście typów referencyjnych **Universal Windows**, a następnie wybierz pozycję **rozszerzenia**. Na koniec wybierz pozycję **natywnym zestawem SDK matematyczne** pole wyboru, a następnie wybierz **OK** przycisku.
+4. W **Dodaj odwołanie** Rozwiń okno dialogowe, na liście typów referencyjnych **Universal Windows**, a następnie wybierz pozycję **rozszerzenia**. Na koniec wybierz pozycję **natywnym zestawem SDK matematyczne** pole wyboru, a następnie wybierz **OK** przycisku.
   
-5.  Wyświetl właściwości projektu dla NativeMathSDKSample.  
+5. Wyświetl właściwości projektu dla NativeMathSDKSample.  
   
-     Właściwości, które zostały zdefiniowane w *NativeMathSDK.props* zostały zastosowane podczas dodawania odwołania. Możesz sprawdzić właściwości zostały zastosowane, sprawdzając **katalogi VC ++** właściwości projektu **właściwości konfiguracji**.  
+    Właściwości, które zostały zdefiniowane w *NativeMathSDK.props* zostały zastosowane podczas dodawania odwołania. Możesz sprawdzić właściwości zostały zastosowane, sprawdzając **katalogi VC ++** właściwości projektu **właściwości konfiguracji**.  
   
-6.  W **Eksploratora rozwiązań**, otwórz **MainPage.xaml**, a następnie zastąp jego zawartość za pomocą następujących XAML:  
+6. W **Eksploratora rozwiązań**, otwórz **MainPage.xaml**, a następnie zastąp jego zawartość za pomocą następujących XAML:  
   
-     [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]  
+    [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]  
   
-7.  Aktualizacja *pliku Mainpage.xaml.h* do dopasowania ten kod:  
+7. Aktualizacja *pliku Mainpage.xaml.h* do dopasowania ten kod:  
   
-     [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]  
+    [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]  
   
 8. Aktualizacja *MainPage.xaml.cpp* do dopasowania ten kod:  
   
@@ -172,7 +172,7 @@ W tym instruktażu pokazano, jak tworzenie natywnych języka C++ matematyczne bi
   
      Zostanie wyświetlony odpowiedni wynik.  
   
- W tym przewodniku pokazano, jak utworzyć i wywoływać przy użyciu zestawu SDK rozszerzenia [!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] biblioteki i innej niż[!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] biblioteki.  
+    W tym przewodniku pokazano, jak utworzyć i wywoływać przy użyciu zestawu SDK rozszerzenia [!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] biblioteki i innej niż[!INCLUDE[wrt](../extensibility/includes/wrt_md.md)] biblioteki.  
   
 ## <a name="next-steps"></a>Następne kroki  
   

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 3ce10e56d197b720922356b72ab7245036c4f7d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542510"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865365"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnozowanie problemów po wdrożeniu za pomocą funkcji IntelliTrace
 
@@ -264,100 +264,100 @@ Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która został
 
 3.  Upewnij się, że plik ma wymagane informacje:
 
--   **ProjectName**
+- **ProjectName**
 
-     Nazwa projektu w programie Visual Studio. Na przykład:
+   Nazwa projektu w programie Visual Studio. Na przykład:
+
+  ```xml
+  <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+  ```
+
+- **SourceControl**
+
+- Informacje o systemie kontroli źródła i są wymagane właściwości:
+
+  - **TFS**
+
+    - **ProjectCollectionUri**: identyfikator URI dla kolekcji serwera Team Foundation Server i project
+
+    - **ProjectItemSpec**: ścieżka do pliku projektu aplikacji (.csproj lub .vbproj)
+
+    - **ProjectVersionSpec**: wersja projektu
+
+      Na przykład:
 
     ```xml
-    <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+    <SourceControl type="TFS">
+       <TfsSourceControl>
+          <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
+          <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
+          <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
+       </TfsSourceControl>
+    </SourceControl>
     ```
 
--   **SourceControl**
+  - **Git**
 
--   Informacje o systemie kontroli źródła i są wymagane właściwości:
+    - **GitSourceControl**: lokalizacja **GitSourceControl** schematu
 
-    -   **TFS**
+    - **RepositoryUrl**: identyfikator URI dla serwera Team Foundation Server, kolekcji projektów i repozytorium Git
 
-        -   **ProjectCollectionUri**: identyfikator URI dla kolekcji serwera Team Foundation Server i project
+    - **ProjectPath**: ścieżka do pliku projektu aplikacji (.csproj lub .vbproj)
 
-        -   **ProjectItemSpec**: ścieżka do pliku projektu aplikacji (.csproj lub .vbproj)
+    - **CommitId**: identyfikator zatwierdzenie
 
-        -   **ProjectVersionSpec**: wersja projektu
+      Na przykład:
 
-         Na przykład:
+    ```xml
+    <SourceControl type="Git">
+       <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
+          <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
+          <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
+          <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
+       </GitSourceControl>
+    </SourceControl>
+    ```
 
-        ```xml
-        <SourceControl type="TFS">
-           <TfsSourceControl>
-              <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
-              <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
-              <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
-           </TfsSourceControl>
-        </SourceControl>
-        ```
+- **Kompilacja**
 
-    -   **Git**
+   Informacje o Twoim systemie kompilacji albo `"TeamBuild"` lub `"MSBuild"`, oraz następujące wymagane właściwości:
 
-        -   **GitSourceControl**: lokalizacja **GitSourceControl** schematu
+  - **BuildLabel** (dla TeamBuild): Nazwa i numer kompilacji. Ta etykieta jest również używane jako nazwa zdarzenia wdrażania. Aby uzyskać więcej informacji na temat numerów kompilacji, zobacz [Użyj kompilacji cyfry jako opisowych nazw zakończonych kompilacji](/azure/devops/pipelines/build/options?view=vsts).
 
-        -   **RepositoryUrl**: identyfikator URI dla serwera Team Foundation Server, kolekcji projektów i repozytorium Git
+  - **SymbolPath** (zalecane): Lista identyfikatorów URI dla lokalizacji symboli (plik PDB), rozdzielając je średnikami. Te identyfikatory URI może być adresy URL lub UNC. Ułatwia dla programu Visual Studio można znaleźć pasującego symbole, aby pomóc w debugowaniu.
 
-        -   **ProjectPath**: ścieżka do pliku projektu aplikacji (.csproj lub .vbproj)
+  - **BuildReportUrl** (dla TeamBuild): Lokalizacja raportu kompilacji w programie TFS
 
-        -   **CommitId**: identyfikator zatwierdzenie
+  - **BuildId** (dla TeamBuild): identyfikator URI kompilacji szczegółowych informacji w programie TFS. Ten identyfikator URI jest również używane jako identyfikator zdarzenia wdrażania. To musi identyfikator musi być unikatowy, jeśli nie korzystasz z TeamBuild.
 
-         Na przykład:
+  - **BuiltSolution**: ścieżka do pliku rozwiązania programu Visual Studio używa do znajdowania i otwierania pasującego rozwiązania. To jest zawartość **SolutionPath** właściwości programu MsBuild.
 
-        ```xml
-        <SourceControl type="Git">
-           <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
-              <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
-              <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
-              <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
-           </GitSourceControl>
-        </SourceControl>
-        ```
+    Na przykład:
 
--   **Kompilacja**
+  - **TFS**
 
-     Informacje o Twoim systemie kompilacji albo `"TeamBuild"` lub `"MSBuild"`, oraz następujące wymagane właściwości:
+    ```xml
+    <Build type="TeamBuild">
+       <MsBuild>
+          <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
+          <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
+          <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
+          <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MsBuild>
+    </Build>
+    ```
 
-    -   **BuildLabel** (dla TeamBuild): Nazwa i numer kompilacji. Ta etykieta jest również używane jako nazwa zdarzenia wdrażania. Aby uzyskać więcej informacji na temat numerów kompilacji, zobacz [Użyj kompilacji cyfry jako opisowych nazw zakończonych kompilacji](/azure/devops/pipelines/build/options?view=vsts).
+  - **Git**
 
-    -   **SymbolPath** (zalecane): Lista identyfikatorów URI dla lokalizacji symboli (plik PDB), rozdzielając je średnikami. Te identyfikatory URI może być adresy URL lub UNC. Ułatwia dla programu Visual Studio można znaleźć pasującego symbole, aby pomóc w debugowaniu.
-
-    -   **BuildReportUrl** (dla TeamBuild): Lokalizacja raportu kompilacji w programie TFS
-
-    -   **BuildId** (dla TeamBuild): identyfikator URI kompilacji szczegółowych informacji w programie TFS. Ten identyfikator URI jest również używane jako identyfikator zdarzenia wdrażania. To musi identyfikator musi być unikatowy, jeśli nie korzystasz z TeamBuild.
-
-    -   **BuiltSolution**: ścieżka do pliku rozwiązania programu Visual Studio używa do znajdowania i otwierania pasującego rozwiązania. To jest zawartość **SolutionPath** właściwości programu MsBuild.
-
-     Na przykład:
-
-    -   **TFS**
-
-        ```xml
-        <Build type="TeamBuild">
-           <MsBuild>
-              <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
-              <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
-              <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
-              <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MsBuild>
-        </Build>
-        ```
-
-    -   **Git**
-
-        ```xml
-        <Build type="MSBuild">
-           <MSBuild>
-              <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MSBuild>
-        </Build>
-        ```
+    ```xml
+    <Build type="MSBuild">
+       <MSBuild>
+          <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MSBuild>
+    </Build>
+    ```
 
 ####  <a name="IneligibleWorkspace"></a> Pytanie: Dlaczego Visual Studio wskazuje, że moje wybrany obszar roboczy jest nieodpowiedni?
  **Odp.:** wybranego obszaru roboczego nie zawiera wszystkich mapowań między folderem kontroli źródła i folderem lokalnym. Aby utworzyć mapowanie dla tego obszaru roboczego, wybierz opcję **Zarządzaj**. W przeciwnym wypadku wybierz już zmapowany obszar roboczy lub utwórz nowy.

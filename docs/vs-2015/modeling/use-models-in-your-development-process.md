@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94185303eeb1d9efef32adf814b23d8cb21360b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e731803e58ac641034699719a9fb0cbfe3cb6f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286003"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872287"
 ---
 # <a name="use-models-in-your-development-process"></a>Używanie modeli w procesie tworzenia aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ W programie Visual Studio można użyć modelu, aby pomóc Ci zrozumieć i zmien
 ## <a name="how-to-use-models"></a>Jak korzystać z modeli  
  Modele mogą pomóc na kilka sposobów:  
   
--   Rysowanie diagramów modelowania pomaga wyjaśnienie pojęcia związane z wymaganiami, architektury i projektowania wysokiego poziomu. Aby uzyskać więcej informacji, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
+- Rysowanie diagramów modelowania pomaga wyjaśnienie pojęcia związane z wymaganiami, architektury i projektowania wysokiego poziomu. Aby uzyskać więcej informacji, zobacz [modelowanie wymagań użytkowników](../modeling/model-user-requirements.md).  
   
--   Praca z modelami może pomóc w ujawnić niespójności w wymaganiach.  
+- Praca z modelami może pomóc w ujawnić niespójności w wymaganiach.  
   
--   Podczas komunikowania się z modelami pomaga przekazać ważne pojęcia poniżej ambiguously za pomocą języka naturalnego. Aby uzyskać więcej informacji, zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).  
+- Podczas komunikowania się z modelami pomaga przekazać ważne pojęcia poniżej ambiguously za pomocą języka naturalnego. Aby uzyskać więcej informacji, zobacz [modelowanie architektury aplikacji](../modeling/model-your-app-s-architecture.md).  
   
--   Czasami służy modeli do generowania kodu lub inne artefakty, takie jak schematy bazy danych lub dokumentów. Na przykład modelowania składniki [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] są generowane na podstawie modelu.  Aby uzyskać więcej informacji, zobacz [Generowanie i konfigurowanie aplikacji na podstawie modeli](../modeling/generate-and-configure-your-app-from-models.md).  
+- Czasami służy modeli do generowania kodu lub inne artefakty, takie jak schematy bazy danych lub dokumentów. Na przykład modelowania składniki [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] są generowane na podstawie modelu.  Aby uzyskać więcej informacji, zobacz [Generowanie i konfigurowanie aplikacji na podstawie modeli](../modeling/generate-and-configure-your-app-from-models.md).  
   
- Można używać modeli, w wielu różnych procesów w ekstremalnych procedury agile wysoki.  
+  Można używać modeli, w wielu różnych procesów w ekstremalnych procedury agile wysoki.  
   
 ### <a name="use-models-to-reduce-ambiguity"></a>Używanie modeli, aby ograniczyć niejednoznaczność  
  Język modelowania jest mniej niejednoznaczna niż języka naturalnego i jest przeznaczony do realizowania pomysłów, zwykle wymagana podczas tworzenia oprogramowania.  

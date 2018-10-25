@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 237d38fe601b8ae2d530cc735701fe236572601a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6795675d8cf2b41310dadfc7aec44eb9ae8a0f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928766"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: aplikacja 32-bitowa działająca w limitach pamięci zarządzanych przez proces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,23 +57,23 @@ Identyfikator reguły | DA0018 |
   
  W przypadku zbyt dużej ilości pamięci zarządzanej obciążenie problemu wziąć pod uwagę jedną z następujących opcji:  
   
--   Optymalizacja użycia aplikacji zasobów pamięci zarządzanej  
+- Optymalizacja użycia aplikacji zasobów pamięci zarządzanej  
   
-     —lub—  
+   —lub—  
   
--   wykonanie czynności, aby zwolnić architektury ograniczenia dotyczące maksymalnego rozmiaru pamięci wirtualnej dla procesu 32-bitowego  
+- wykonanie czynności, aby zwolnić architektury ograniczenia dotyczące maksymalnego rozmiaru pamięci wirtualnej dla procesu 32-bitowego  
   
- Aby zoptymalizować użycie zasobów pamięci zarządzanej aplikacji, zbierać dane alokacji pamięci zarządzanej w alokacji pamięci .NET przebiegu profilowania. Przegląd [widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md) raportów, aby poznać wzorce przydzielania pamięci w aplikacji.  
+  Aby zoptymalizować użycie zasobów pamięci zarządzanej aplikacji, zbierać dane alokacji pamięci zarządzanej w alokacji pamięci .NET przebiegu profilowania. Przegląd [widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md) raportów, aby poznać wzorce przydzielania pamięci w aplikacji.  
   
- Użyj [widok okresu istnienia obiektu](../profiling/object-lifetime-view.md) umożliwia określenie, które uszkodziło danych obiekty są pozostałych do generacji, a następnie odzyskać z tego miejsca.  
+  Użyj [widok okresu istnienia obiektu](../profiling/object-lifetime-view.md) umożliwia określenie, które uszkodziło danych obiekty są pozostałych do generacji, a następnie odzyskać z tego miejsca.  
   
- Użyj [Widok alokacji](../profiling/dotnet-memory-allocations-view.md) można ustalić ścieżki wykonywania, które spowodowały tych przydziałów.  
+  Użyj [Widok alokacji](../profiling/dotnet-memory-allocations-view.md) można ustalić ścieżki wykonywania, które spowodowały tych przydziałów.  
   
- Aby uzyskać więcej informacji na temat zwiększania wydajności kolekcji wyrzucania elementów, zobacz artykułu technicznego na .NET Framework, [podstawy modułu odśmiecania pamięci i wskazówki dotyczące wydajności](http://go.microsoft.com/fwlink/?LinkId=177946) w witrynie MSDN w sieci Web.  
+  Aby uzyskać więcej informacji na temat zwiększania wydajności kolekcji wyrzucania elementów, zobacz artykułu technicznego na .NET Framework, [podstawy modułu odśmiecania pamięci i wskazówki dotyczące wydajności](http://go.microsoft.com/fwlink/?LinkId=177946) w witrynie MSDN w sieci Web.  
   
- Aby uzyskać architektury zwolnienia z ograniczenia pamięci wirtualnej na podstawie rozmiaru części prywatnej przestrzeni adresowej procesu, spróbuj uruchomienie tego procesu 32-bitowego na komputerze 64-bitowym.  32-bitowy proces na komputerze 64-bitowym, mogą uzyskiwać maksymalnie 4 GB pamięci wirtualnej prywatny.  
+  Aby uzyskać architektury zwolnienia z ograniczenia pamięci wirtualnej na podstawie rozmiaru części prywatnej przestrzeni adresowej procesu, spróbuj uruchomienie tego procesu 32-bitowego na komputerze 64-bitowym.  32-bitowy proces na komputerze 64-bitowym, mogą uzyskiwać maksymalnie 4 GB pamięci wirtualnej prywatny.  
   
- 64-bitowych proces uruchomiony na komputerze 64-bitowym, mogą uzyskiwać do 8 TB pamięci wirtualnej. Należy rozważyć ponowne kompilowanie aplikacji ma działać jako natywnych aplikacji 64-bitowych. Ta reguła jest wyłącznie w celach informacyjnych i może nie wymagać działań korygujących.
+  64-bitowych proces uruchomiony na komputerze 64-bitowym, mogą uzyskiwać do 8 TB pamięci wirtualnej. Należy rozważyć ponowne kompilowanie aplikacji ma działać jako natywnych aplikacji 64-bitowych. Ta reguła jest wyłącznie w celach informacyjnych i może nie wymagać działań korygujących.
 
 
 

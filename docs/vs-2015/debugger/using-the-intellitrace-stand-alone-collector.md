@@ -18,12 +18,12 @@ caps.latest.revision: 111
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b35b6b42126bb0a1b159e3bf90e67aee15dd540
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69fd91f60750da0f6301527bb7a7c4a9ba97bb6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267478"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938919"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Korzystanie z autonomicznego modułu zbierającego funkcji IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,22 +39,22 @@ ms.locfileid: "49267478"
   
  **Wymagania**  
   
--   .NET framework 3.5, 4 lub 4.5  
+- .NET framework 3.5, 4 lub 4.5  
   
--   Visual Studio Enterprise (ale nie Professional lub Community Edition) na komputerze deweloperskim lub innym komputerze, aby otworzyć pliki .iTrace  
+- Visual Studio Enterprise (ale nie Professional lub Community Edition) na komputerze deweloperskim lub innym komputerze, aby otworzyć pliki .iTrace  
   
-    > [!NOTE]
-    >  Upewnij się, że zapisano symbole plików (.pdb). Aby debugować za pomocą IntelliTrace i przejść przez kod, musisz mieć pasujące pliki źródłowe i pliki symboli. Zobacz [diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md).  
+  > [!NOTE]
+  >  Upewnij się, że zapisano symbole plików (.pdb). Aby debugować za pomocą IntelliTrace i przejść przez kod, musisz mieć pasujące pliki źródłowe i pliki symboli. Zobacz [diagnozowanie problemów po wdrożeniu](../debugger/diagnose-problems-after-deployment.md).  
   
- **FAQ**  
+  **FAQ**  
   
--   [Jakie aplikacje działają z modułem zbierającym?](#WhatApps)  
+- [Jakie aplikacje działają z modułem zbierającym?](#WhatApps)  
   
--   [Jak rozpocząć pracę?](#GetStarted)  
+- [Jak rozpocząć pracę?](#GetStarted)  
   
--   [Jak uzyskać większość danych bez spowalniania mojej aplikacji?](#Minimizing)  
+- [Jak uzyskać większość danych bez spowalniania mojej aplikacji?](#Minimizing)  
   
--   [Gdzie indziej można uzyskać dane IntelliTrace?](#WhereElse)  
+- [Gdzie indziej można uzyskać dane IntelliTrace?](#WhereElse)  
   
 ##  <a name="WhatApps"></a> Jakie aplikacje działają z modułem zbierającym?  
   
@@ -84,40 +84,40 @@ ms.locfileid: "49267478"
   
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Zainstaluj moduł zbierający  
   
-1.  Na serwerze swojej aplikacji Utwórz katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**  
+1. Na serwerze swojej aplikacji Utwórz katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**  
   
-2.  Pobierz moduł zbierający, z Microsoft Download Center lub z folderu instalacyjnego programu Visual Studio 2103 Update 3. [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909)::  
+2. Pobierz moduł zbierający, z Microsoft Download Center lub z folderu instalacyjnego programu Visual Studio 2103 Update 3. [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/download/details.aspx?id=44909)::  
   
-    -   **Centrum pobierania Microsoft**:  
+   - **Centrum pobierania Microsoft**:  
   
-        1.  Obok pozycji **IntelliTraceCollector.exe**, wybierz **Pobierz**.  
+     1. Obok pozycji **IntelliTraceCollector.exe**, wybierz **Pobierz**.  
   
-        2.  Zapisz IntelliTraceCollector.exe w katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**  
+     2. Zapisz IntelliTraceCollector.exe w katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**  
   
-        3.  Run IntelliTraceCollector.exe. Wyodrębnia plik IntelliTraceCollection.cab.  
+     3. Run IntelliTraceCollector.exe. Wyodrębnia plik IntelliTraceCollection.cab.  
   
-         \- lub —  
+        \- lub —  
   
-    -   **Folder instalacyjny Visual Studio**:  
+   - **Folder instalacyjny Visual Studio**:  
   
-        1.  Skopiuj IntelliTraceCollection.cab z następującego folderu:  
+     1.  Skopiuj IntelliTraceCollection.cab z następującego folderu:  
   
-             **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
+          **..\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**  
   
-        2.  Umieścić IntelliTraceCollection.cab w katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**  
+     2.  Umieścić IntelliTraceCollection.cab w katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**  
   
-3.  Rozwiń IntelliTraceCollection.cab:  
+3. Rozwiń IntelliTraceCollection.cab:  
   
-    1.  Na serwerze swojej aplikacji Otwórz okno wiersza polecenia jako administrator.  
+   1.  Na serwerze swojej aplikacji Otwórz okno wiersza polecenia jako administrator.  
   
-    2.  Przejdź do katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**  
+   2.  Przejdź do katalogu modułu zbierającego, na przykład: **C:\IntelliTraceCollector**  
   
-    3.  Użyj **rozwiń** polecenia, w tym okresie (**.**) na końcu, aby rozwinąć IntelliTraceCollection.cab:  
+   3.  Użyj **rozwiń** polecenia, w tym okresie (**.**) na końcu, aby rozwinąć IntelliTraceCollection.cab:  
   
-         `expand  /f:* IntelliTraceCollection.cab .`  
+        `expand  /f:* IntelliTraceCollection.cab .`  
   
-        > [!NOTE]
-        >  Okres (**.**) zachowuje podfoldery, które zawierają zlokalizowane plany kolekcji.  
+       > [!NOTE]
+       >  Okres (**.**) zachowuje podfoldery, które zawierają zlokalizowane plany kolekcji.  
   
 ##  <a name="ConfigurePermissionsRunningCollector"></a> Skonfiguruj uprawnienia dla katalogu kolektora  
   
@@ -173,47 +173,47 @@ ms.locfileid: "49267478"
   
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Skonfiguruj uprawnienia dla katalogu plików .iTrace  
   
-1.  Na serwerze swojej aplikacji Utwórz katalog plików .iTrace, na przykład: **C:\IntelliTraceLogFiles**  
+1. Na serwerze swojej aplikacji Utwórz katalog plików .iTrace, na przykład: **C:\IntelliTraceLogFiles**  
   
-    > [!NOTE]
-    >  -   Aby nie spowalniać pracy swojej aplikacji, wybierz lokalizację na lokalnym dysku o dużej szybkości, który nie jest bardzo obciążony.  
-    > -   Pliki .iTrace i pliki modułów zbierających można umieścić w tym samym miejscu. Jednak jeśli masz aplikację sieci Web lub aplikacji programu SharePoint, upewnij się, że to miejsce jest poza katalogiem, który obsługuje aplikacja.  
+   > [!NOTE]
+   > - Aby nie spowalniać pracy swojej aplikacji, wybierz lokalizację na lokalnym dysku o dużej szybkości, który nie jest bardzo obciążony.  
+   >   -   Pliki .iTrace i pliki modułów zbierających można umieścić w tym samym miejscu. Jednak jeśli masz aplikację sieci Web lub aplikacji programu SharePoint, upewnij się, że to miejsce jest poza katalogiem, który obsługuje aplikacja.  
+   > 
+   > [!IMPORTANT]
+   > - Ogranicz katalogu plików .iTrace tylko do tych tożsamości, które należy skontaktować się z modułem zbierającym. Plik .iTrace może zawierać informacje poufne, takie jak dane od użytkowników, bazy danych, inne lokalizacje źródłowe i parametry połączenia, ponieważ IntelliTrace może rejestrować wszelkie dane, które przekazuje parametrami metody lub wartościami zwrotnymi.  
+   >   -   Upewnij się, że tych, którzy mogą otwierać pliki .iTrace mają uprawnienia do danych poufnych. Należy zachować ostrożność podczas udostępniania plików .iTrace. Jeśli inne osoby muszą mieć dostęp, skopiuj pliki do bezpiecznej lokalizacji udostępnionej.  
   
-    > [!IMPORTANT]
-    >  -   Ogranicz katalogu plików .iTrace tylko do tych tożsamości, które należy skontaktować się z modułem zbierającym. Plik .iTrace może zawierać informacje poufne, takie jak dane od użytkowników, bazy danych, inne lokalizacje źródłowe i parametry połączenia, ponieważ IntelliTrace może rejestrować wszelkie dane, które przekazuje parametrami metody lub wartościami zwrotnymi.  
-    > -   Upewnij się, że tych, którzy mogą otwierać pliki .iTrace mają uprawnienia do danych poufnych. Należy zachować ostrożność podczas udostępniania plików .iTrace. Jeśli inne osoby muszą mieć dostęp, skopiuj pliki do bezpiecznej lokalizacji udostępnionej.  
+2. Dla aplikacji sieci Web lub aplikacji programu SharePoint należy nadać jej puli aplikacji pełne uprawnienia do katalogu plików .iTrace. Możesz użyć Windows **icacls** polecenia lub za pomocą Eksploratora Windows (lub Eksploratora plików).  
   
-2.  Dla aplikacji sieci Web lub aplikacji programu SharePoint należy nadać jej puli aplikacji pełne uprawnienia do katalogu plików .iTrace. Możesz użyć Windows **icacls** polecenia lub za pomocą Eksploratora Windows (lub Eksploratora plików).  
+    Na przykład:  
   
-     Na przykład:  
+   - Aby skonfigurować uprawnienia za pomocą Windows **icacls** polecenia:  
   
-    -   Aby skonfigurować uprawnienia za pomocą Windows **icacls** polecenia:  
+     - Dla aplikacji sieci Web **DefaultAppPool** puli aplikacji:  
   
-        -   Dla aplikacji sieci Web **DefaultAppPool** puli aplikacji:  
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`  
   
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`  
+     - Dla aplikacji programu SharePoint w **SharePoint — 80** puli aplikacji:  
   
-        -   Dla aplikacji programu SharePoint w **SharePoint — 80** puli aplikacji:  
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`  
   
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`  
+       —lub—  
   
-         —lub—  
+   - Aby skonfigurować uprawnienia za pomocą Eksploratora Windows (lub Eksploratora plików):  
   
-    -   Aby skonfigurować uprawnienia za pomocą Eksploratora Windows (lub Eksploratora plików):  
+     1.  Otwórz **właściwości** dla katalogu plików .iTrace.  
   
-        1.  Otwórz **właściwości** dla katalogu plików .iTrace.  
+     2.  Na **zabezpieczeń** kartę, wybrać **Edytuj**, **Dodaj**.  
   
-        2.  Na **zabezpieczeń** kartę, wybrać **Edytuj**, **Dodaj**.  
+     3.  Upewnij się, że **wbudowane zabezpieczenia główne** pojawia się w **wybierz ten typ obiektu** pole. Jeśli nie ma tam, wybierz **wybierane** ją dodać.  
   
-        3.  Upewnij się, że **wbudowane zabezpieczenia główne** pojawia się w **wybierz ten typ obiektu** pole. Jeśli nie ma tam, wybierz **wybierane** ją dodać.  
+     4.  Upewnij się, że komputer lokalny pojawi się w **z tej lokalizacji** pole. Jeśli nie ma tam, wybierz **lokalizacje** go zmienić.  
   
-        4.  Upewnij się, że komputer lokalny pojawi się w **z tej lokalizacji** pole. Jeśli nie ma tam, wybierz **lokalizacje** go zmienić.  
+     5.  W **wprowadź nazwy obiektów do wybrania** Dodaj pulę aplikacji dla aplikacji sieci Web lub aplikacji programu SharePoint.  
   
-        5.  W **wprowadź nazwy obiektów do wybrania** Dodaj pulę aplikacji dla aplikacji sieci Web lub aplikacji programu SharePoint.  
+     6.  Wybierz **Sprawdź nazwy** do rozpoznania nazwy. Wybierz **OK**.  
   
-        6.  Wybierz **Sprawdź nazwy** do rozpoznania nazwy. Wybierz **OK**.  
-  
-        7.  Upewnij się, że pula aplikacji ma **Pełna kontrola**.  
+     7.  Upewnij się, że pula aplikacji ma **Pełna kontrola**.  
   
 ##  <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Zbieranie danych z aplikacji sieci Web lub aplikacji programu SharePoint  
   
@@ -297,92 +297,92 @@ ms.locfileid: "49267478"
   
  Oto kilka sposobów na zdobycie większości danych bez spowalniania aplikacji:  
   
--   Uruchom moduł zbierający, tylko wtedy, gdy uważasz, że występuje problem lub można odtworzyć problem.  
+- Uruchom moduł zbierający, tylko wtedy, gdy uważasz, że występuje problem lub można odtworzyć problem.  
   
-     Rozpocznij zbieranie danych, odtworzenie problemu, a następnie Zatrzymaj kolekcję. Otwórz plik .iTrace w Visual Studio Enterprise i zbadaj dane. Zobacz [Otwórz plik .iTrace w Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files).  
+   Rozpocznij zbieranie danych, odtworzenie problemu, a następnie Zatrzymaj kolekcję. Otwórz plik .iTrace w Visual Studio Enterprise i zbadaj dane. Zobacz [Otwórz plik .iTrace w Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files).  
   
--   Dla aplikacji sieci Web i aplikacji SharePoint moduł gromadzący zapisuje dane dla każdej aplikacji, która udostępnia określona pula aplikacji. Może to spowolnić każdej aplikacji, która udostępnia tej samej puli aplikacji, mimo że można określić tylko moduły dla pojedynczej aplikacji planu kolekcji.  
+- Dla aplikacji sieci Web i aplikacji SharePoint moduł gromadzący zapisuje dane dla każdej aplikacji, która udostępnia określona pula aplikacji. Może to spowolnić każdej aplikacji, która udostępnia tej samej puli aplikacji, mimo że można określić tylko moduły dla pojedynczej aplikacji planu kolekcji.  
   
-     Aby zapobiec sytuacji, w której moduł zbierający spowalniania innych aplikacji, Hostuj każdą aplikację we własnej puli aplikacji.  
+   Aby zapobiec sytuacji, w której moduł zbierający spowalniania innych aplikacji, Hostuj każdą aplikację we własnej puli aplikacji.  
   
--   Przejrzyj zdarzenia w planie kolekcji, dla którego IntelliTrace zbiera dane. Edytuj plan kolekcji, aby wyłączyć zdarzenia, które nie są odpowiednie ani interesujące.  
+- Przejrzyj zdarzenia w planie kolekcji, dla którego IntelliTrace zbiera dane. Edytuj plan kolekcji, aby wyłączyć zdarzenia, które nie są odpowiednie ani interesujące.  
   
-     Aby wyłączyć zdarzenie, ustaw `enabled` atrybutu dla `<DiagnosticEventSpecification>` elementu `false`:  
+   Aby wyłączyć zdarzenie, ustaw `enabled` atrybutu dla `<DiagnosticEventSpecification>` elementu `false`:  
   
-     `<DiagnosticEventSpecification enabled="false">`  
+   `<DiagnosticEventSpecification enabled="false">`  
   
-     Jeśli `enabled` atrybut nie istnieje, zdarzenie jest włączone.  
+   Jeśli `enabled` atrybut nie istnieje, zdarzenie jest włączone.  
   
-     *Jak zwiększa to wydajność?*  
+   *Jak zwiększa to wydajność?*  
   
-    -   Aby ograniczyć czas uruchamiania, wyłączając zdarzenia, które nie są odpowiednie dla aplikacji. Na przykład wyłącz zdarzenia Windows Workflow dla aplikacji, które nie używają Windows Workflow.  
+  -   Aby ograniczyć czas uruchamiania, wyłączając zdarzenia, które nie są odpowiednie dla aplikacji. Na przykład wyłącz zdarzenia Windows Workflow dla aplikacji, które nie używają Windows Workflow.  
   
-    -   Może poprawić wydajność uruchamiania i wykonywania, wyłączając zdarzenia rejestru dla aplikacji, które uzyskują dostęp do rejestru, ale nie wyświetlają problemów z ustawieniami rejestru.  
+  -   Może poprawić wydajność uruchamiania i wykonywania, wyłączając zdarzenia rejestru dla aplikacji, które uzyskują dostęp do rejestru, ale nie wyświetlają problemów z ustawieniami rejestru.  
   
--   Przeanalizuj moduły w planie kolekcji, dla którego IntelliTrace zbiera dane. Edytuj plan kolekcji, aby uwzględnić tylko interesujące Cię moduły:  
+- Przeanalizuj moduły w planie kolekcji, dla którego IntelliTrace zbiera dane. Edytuj plan kolekcji, aby uwzględnić tylko interesujące Cię moduły:  
   
-    1.  Otwórz plan kolekcji. Znajdź `<ModuleList>` elementu.  
+  1. Otwórz plan kolekcji. Znajdź `<ModuleList>` elementu.  
   
-    2.  W `<ModuleList>`ustaw `isExclusionList` atrybutu `false`.  
+  2. W `<ModuleList>`ustaw `isExclusionList` atrybutu `false`.  
   
-    3.  Użyj `<Name>` elementu, aby określić każdy moduł przy użyciu jednego z następujących czynności: Nazwa pliku wartość ciągu, aby uwzględnić dowolny moduł, którego nazwa zawiera dany ciąg lub klucz publiczny.  
+  3. Użyj `<Name>` elementu, aby określić każdy moduł przy użyciu jednego z następujących czynności: Nazwa pliku wartość ciągu, aby uwzględnić dowolny moduł, którego nazwa zawiera dany ciąg lub klucz publiczny.  
   
      Na przykład aby zebrać dane po prostu głównego modułu sieci Web aplikacji sieci Web Fabrikam Fiber, Utwórz listę podobny do poniższego:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>FabrikamFiber.Web.dll</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>FabrikamFiber.Web.dll</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Aby zebrać dane z każdego modułu, którego nazwa zawiera "Fabrikam", Utwórz listę podobny do poniższego:  
+   Aby zebrać dane z każdego modułu, którego nazwa zawiera "Fabrikam", Utwórz listę podobny do poniższego:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>Fabrikam</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>Fabrikam</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Aby zebrać dane z modułów, określając tokeny klucza publicznego, Utwórz listę podobny do poniższego:  
+   Aby zebrać dane z modułów, określając tokeny klucza publicznego, Utwórz listę podobny do poniższego:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>PublicKeyToken:B77A5C561934E089</Name>  
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>  
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>  
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>PublicKeyToken:B77A5C561934E089</Name>  
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>  
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>  
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     *Jak zwiększa to wydajność?*  
+   *Jak zwiększa to wydajność?*  
   
-     Zmniejsza to ilość informacji wywołania metody oraz innych danych instrumentacji, gromadzi IntelliTrace, gdy aplikacja jest uruchomiona i. Dane te umożliwiają:  
+   Zmniejsza to ilość informacji wywołania metody oraz innych danych instrumentacji, gromadzi IntelliTrace, gdy aplikacja jest uruchomiona i. Dane te umożliwiają:  
   
-    -   Przejść przez kod po zebraniu danych.  
+  - Przejść przez kod po zebraniu danych.  
   
-    -   Sprawdzić wartości przekazane do i zwrócony z wywołania funkcji.  
+  - Sprawdzić wartości przekazane do i zwrócony z wywołania funkcji.  
   
-     *Dlaczego nie wykluczyć modułów?*  
+    *Dlaczego nie wykluczyć modułów?*  
   
-     Plany kolekcji domyślnie wykluczają moduły przez ustawienie `isExclusionList` atrybutu `true`. Jednak wyłączenie modułów może nadal prowadzić do zbierania danych z modułów, które nie spełniają kryteriów listy i może nie być interesujące, takie jak moduły strony trzeciej lub typu open source.  
+    Plany kolekcji domyślnie wykluczają moduły przez ustawienie `isExclusionList` atrybutu `true`. Jednak wyłączenie modułów może nadal prowadzić do zbierania danych z modułów, które nie spełniają kryteriów listy i może nie być interesujące, takie jak moduły strony trzeciej lub typu open source.  
   
--   *Czy są jakieś dane, które IntelliTrace nie zbiera?*  
+- *Czy są jakieś dane, które IntelliTrace nie zbiera?*  
   
-     Tak, aby zmniejszyć wpływ na wydajność, IntelliTrace ogranicza zbieranie danych do wartości pierwotnych typów danych przekazany do i zwrócony z metody i wartości typów danych pierwotnych w polach obiektów najwyższego poziomu, przekazywane do metod oraz zwracanych przez.  
+   Tak, aby zmniejszyć wpływ na wydajność, IntelliTrace ogranicza zbieranie danych do wartości pierwotnych typów danych przekazany do i zwrócony z metody i wartości typów danych pierwotnych w polach obiektów najwyższego poziomu, przekazywane do metod oraz zwracanych przez.  
   
-     Załóżmy, że masz `AlterEmployee` podpis metody, która akceptuje liczbę całkowitą `id` i `Employee` obiektu `oldemployee`:  
+   Załóżmy, że masz `AlterEmployee` podpis metody, która akceptuje liczbę całkowitą `id` i `Employee` obiektu `oldemployee`:  
   
-     `public Employee AlterEmployee(int id, Employee oldemployee)`  
+   `public Employee AlterEmployee(int id, Employee oldemployee)`  
   
-     `Employee` Typ ma następujące atrybuty: `Id`, `Name`, i `HomeAddress`. Istnieje relacja skojarzenia między `Employee` i `Address` typu.  
+   `Employee` Typ ma następujące atrybuty: `Id`, `Name`, i `HomeAddress`. Istnieje relacja skojarzenia między `Employee` i `Address` typu.  
   
-     ![Relacja między pracowników i adres](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
+   ![Relacja między pracowników i adres](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
   
-     Moduł zbierający zapisuje wartości `id`, `Employee.Id`, `Employee.Name` i `Employee` obiekt zwracany z `AlterEmployee` metody. Jednak moduł zbierający nie zapisuje informacje o `Address` innych obiektów niż posiadającym wartość zerową lub nie. Moduł zbierający nie zapisuje również dane dotyczące zmiennych lokalnych w `AlterEmployee` metody, chyba że inne metody używają tych zmiennych lokalnych jako parametrów w tym momencie są zapisywane jako parametry metody.  
+   Moduł zbierający zapisuje wartości `id`, `Employee.Id`, `Employee.Name` i `Employee` obiekt zwracany z `AlterEmployee` metody. Jednak moduł zbierający nie zapisuje informacje o `Address` innych obiektów niż posiadającym wartość zerową lub nie. Moduł zbierający nie zapisuje również dane dotyczące zmiennych lokalnych w `AlterEmployee` metody, chyba że inne metody używają tych zmiennych lokalnych jako parametrów w tym momencie są zapisywane jako parametry metody.  
   
 ##  <a name="WhereElse"></a> Gdzie indziej można uzyskać dane IntelliTrace?  
   

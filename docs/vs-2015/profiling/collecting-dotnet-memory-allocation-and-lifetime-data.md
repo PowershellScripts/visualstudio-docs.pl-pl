@@ -17,25 +17,25 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53443ed1681e5709edc0581fca8e2fd46a51834d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e0bda22a63b5286db9336bc0924ce11bc05e2bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844578"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Zbieranie alokacji pamięci .NET i okres istnienia obiektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Narzędzia profilowania obsługują zbieranie alokacji pamięci .NET i danych o okresie istnienia obiektu, który ułatwia wykrywanie problemów z wydajnością związane z pamięcią w aplikacji.  
   
--   Dane o alokacji pamięci .NET zawiera, rozmiar i liczba przydzielonych obiektów pamięci .NET Framework.  
+- Dane o alokacji pamięci .NET zawiera, rozmiar i liczba przydzielonych obiektów pamięci .NET Framework.  
   
--   Danych o okresie istnienia obiektu zawiera, rozmiar i liczba obiektów pamięci .NET Framework, które zostały odzyskane w trzy generacje wyrzucania elementów w kolekcji.  
+- Danych o okresie istnienia obiektu zawiera, rozmiar i liczba obiektów pamięci .NET Framework, które zostały odzyskane w trzy generacje wyrzucania elementów w kolekcji.  
   
- **Wymagania**  
+  **Wymagania**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Ulepszone funkcje zabezpieczeń w systemie Windows 8 i Windows Server 2012 wymagają znaczących zmian w taki sposób, programu Visual Studio profiler zbiera dane na tych platformach. Aplikacje Windows Store również wymagają nowych technik zbierania. Zobacz [narzędzia do oceny wydajności w aplikacjach systemu Windows 8 i Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -64,9 +64,9 @@ ms.locfileid: "49245562"
 ## <a name="common-tasks"></a>Typowe zadania  
  Można określić dodatkowe opcje w _sesji wydajności_**stron właściwości** okna dialogowego sesji wydajności. Aby otworzyć to okno dialogowe:  
   
--   W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij **właściwości**.  
+- W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij **właściwości**.  
   
- Zadania przedstawione w poniższej tabeli opisano opcje, które można określić w _sesji wydajności_**stron właściwości** okno dialogowe podczas zbierania danych pamięci .NET.  
+  Zadania przedstawione w poniższej tabeli opisano opcje, które można określić w _sesji wydajności_**stron właściwości** okno dialogowe podczas zbierania danych pamięci .NET.  
   
 |Zadanie|Powiązana zawartość|  
 |----------|---------------------|  

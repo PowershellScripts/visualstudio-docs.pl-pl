@@ -21,21 +21,21 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d25489065ceece41108a75c9d3763a95e4adb924
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24788773"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949427"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Odwołanie cykliczne w argumencie wartości nie jest obsługiwane
-Została podjęta próba wywołania `JSON.stringify` z wartością, która jest nieprawidłowa. `value` Argumentu, tablicy lub obiekt, zawiera odwołanie cykliczne.  
+Podjęto próbę wywołania `JSON.stringify` z wartością, która jest nieprawidłowa. `value` Argumentów, tablicę lub obiekt, zawiera odwołanie cykliczne.  
   
 ### <a name="to-correct-this-error"></a>Aby poprawić ten błąd  
   
 -   Usuń odwołanie cykliczne w argumencie.  
   
 ## <a name="example"></a>Przykład  
- Kod w tym przykładzie powoduje błąd w czasie wykonywania, ponieważ `john` odwołuje się do `mary` i `mary` odwołuje się do `john`. Aby usunąć odwołanie cykliczne, albo usuń lub Cofnij ustawienie właściwości `brother` z `mary` obiektu lub `sister` właściwość z `john` obiektu.  
+ Kod, w tym przykładzie powoduje błąd w czasie wykonywania, ponieważ `john` odwołuje się do `mary` i `mary` odwołuje się do `john`. Aby usunąć odwołanie cykliczne, usunąć lub nie ustawiono właściwości `brother` z `mary` obiektu lub `sister` właściwość `john` obiektu.  
   
 ```JavaScript  
 var john = new Object();  
@@ -49,5 +49,5 @@ var error = JSON.stringify(john);
   
 ## <a name="see-also"></a>Zobacz też  
  [Obiekt JSON](../../javascript/reference/json-object-javascript.md)   
- [JSON.Parse — funkcja](../../javascript/reference/json-parse-function-javascript.md)   
- [Błędy środowiska wykonawczego języka JavaScript](../../javascript/reference/javascript-run-time-errors.md)
+ [JSON.parse — funkcja](../../javascript/reference/json-parse-function-javascript.md)   
+ [Błędy czasu wykonania JavaScript](../../javascript/reference/javascript-run-time-errors.md)

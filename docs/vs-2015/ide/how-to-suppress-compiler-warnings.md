@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cb1bbc637b51ecf75c0b491a5918ceaa147aa8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932315"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Porady: pomijanie ostrzeżeń kompilatora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,59 +57,59 @@ Declutter z dziennika kompilacji, określając jeden lub więcej rodzajów ostrz
   
 #### <a name="to-suppress-specific-warnings-for-visual-basic"></a>Pomija określone ostrzeżenia dla języka Visual Basic  
   
-1.  W **Eksploratora rozwiązań**, wybierz projekt, w którym chcesz pominąć ostrzeżenia.  
+1. W **Eksploratora rozwiązań**, wybierz projekt, w którym chcesz pominąć ostrzeżenia.  
   
-2.  Na pasku menu wybierz **projektu**, **Zwolnij projekt**.  
+2. Na pasku menu wybierz **projektu**, **Zwolnij projekt**.  
   
-3.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **Edytuj**_ProjectName_**.vbproj**.  
+3. W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu, a następnie wybierz **Edytuj**_ProjectName_**.vbproj**.  
   
-     Plik projektu jest otwarty w edytorze kodu.  
+    Plik projektu jest otwarty w edytorze kodu.  
   
-4.  Znajdź `<NoWarn></NoWarn>` element konfiguracji kompilacji, z którym tworzysz.  
+4. Znajdź `<NoWarn></NoWarn>` element konfiguracji kompilacji, z którym tworzysz.  
   
-     W poniższym przykładzie przedstawiono `<NoWarn></NoWarn>` element pogrubioną czcionką dla konfiguracji kompilacji debugowania na x86 platformy:  
+    W poniższym przykładzie przedstawiono `<NoWarn></NoWarn>` element pogrubioną czcionką dla konfiguracji kompilacji debugowania na x86 platformy:  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn></NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn></NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-5.  Dodaj co najmniej jeden numery ostrzeżeń jako wartość `<NoWarn>` elementu. Jeśli określisz wiele numerów ostrzeżeń, oddziel je przecinkami, co ilustruje poniższy przykład.  
+5. Dodaj co najmniej jeden numery ostrzeżeń jako wartość `<NoWarn>` elementu. Jeśli określisz wiele numerów ostrzeżeń, oddziel je przecinkami, co ilustruje poniższy przykład.  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn>40059,42024</NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn>40059,42024</NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-6.  Zapisz zmiany w pliku .vbproj.  
+6. Zapisz zmiany w pliku .vbproj.  
   
-7.  Na pasku menu wybierz **projektu**, **Załaduj ponownie projekt**.  
+7. Na pasku menu wybierz **projektu**, **Załaduj ponownie projekt**.  
   
-8.  Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**.  
+8. Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie**.  
   
-     **Dane wyjściowe** okna nie powoduje już zgłaszania ostrzeżeń, określonych przez użytkownika.  
+    **Dane wyjściowe** okna nie powoduje już zgłaszania ostrzeżeń, określonych przez użytkownika.  
   
- Aby uzyskać więcej informacji, zobacz [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
+   Aby uzyskać więcej informacji, zobacz [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przewodnik: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md)   

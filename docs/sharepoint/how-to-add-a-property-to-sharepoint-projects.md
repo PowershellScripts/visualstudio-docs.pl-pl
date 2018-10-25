@@ -1,5 +1,5 @@
 ---
-title: 'Porady: Dodawanie właściwości do projektów SharePoint | Dokumentacja firmy Microsoft'
+title: 'Porady: Dodawanie właściwości do projektów programu SharePoint | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,58 +17,58 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 015725197c2c269a7b6aed2e20f0159e2a9f2fe6
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c956da1df5507d2efecb3ff72f034d54fb377eb5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898417"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Porady: Dodawanie właściwości do projektów SharePoint
-  Rozszerzenia projektu umożliwia dodawanie właściwości do żadnego projektu programu SharePoint. Pojawi się ona w **właściwości** okna, gdy projekt jest wybrany w **Eksploratora rozwiązań**.  
+  Można użyć rozszerzenia projektu, aby dodać właściwość do każdego projektu programu SharePoint. Właściwość pojawia się w **właściwości** okna, jeśli projekt jest wybrany w **Eksploratora rozwiązań**.  
   
  W następujących krokach założono, że utworzono już rozszerzenia projektu. Aby uzyskać więcej informacji, zobacz [porady: Tworzenie rozszerzenia projektu SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   
-### <a name="to-add-a-property-to-a-sharepoint-project"></a>Aby dodać właściwość do projektu SharePoint  
+### <a name="to-add-a-property-to-a-sharepoint-project"></a>Aby dodać właściwość do projektu programu SharePoint  
   
-1.  Definiowanie klasy, z właściwością publiczny odpowiadający właściwości, które dodajesz do projektów SharePoint. Jeśli chcesz dodać wiele właściwości, można zdefiniować wszystkie właściwości w tej samej lub różnych klas.  
+1.  Zdefiniuj klasę z właściwością publiczną, reprezentujący właściwość, którą chcesz dodać do projektów programu SharePoint. Jeśli chcesz dodać wiele właściwości, można zdefiniować wszystkie właściwości w tej samej klasy lub w różnych klas.  
   
-2.  W <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> metody z <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementacji, dojście <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> zdarzenie *projectService* parametru.  
+2.  W <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> metody usługi <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementacji, uchwyt <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> zdarzenia *projectService* parametru.  
   
-3.  W obsłudze zdarzeń dla <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> zdarzeń, dodać wystąpienia klasy właściwości, aby <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> kolekcji parametr argumentów zdarzenia.  
+3.  W procedurze obsługi zdarzeń dla <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> zdarzenia dodaje wystąpienie klasy właściwości do <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> zbiór parametr argumenty zdarzenia.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład kodu pokazuje sposób dodawania dwóch właściwości do projektów SharePoint. Dane w pliku projektu użytkownika opcji będzie się powtarzać jedną właściwość ( *. csproj.user* pliku lub *. vbproj.user* pliku). Inne właściwości będzie się powtarzać, jego dane w pliku projektu (*.csproj* pliku lub *vbproj* pliku).  
+ Poniższy przykład kodu demonstruje sposób dodawania dwóch właściwości do projektów programu SharePoint. Jedna właściwość będzie się powtarzał swoje dane w pliku projektu użytkownika opcji ( *. csproj.user* pliku lub *. vbproj.user* pliku). Innych właściwości będzie się powtarzał swoje dane w pliku projektu (*.csproj* pliku lub *.vbproj* pliku).  
   
  [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
  [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]  
   
-### <a name="understand-the-code"></a>Kodu  
- Aby upewnić się, że to samo wystąpienie elementu `CustomProjectProperties` klasa jest używana zawsze <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> zdarzenie, przykładowy kod dodaje właściwości obiektu do <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwości czasu pierwszy projekt, to zdarzenie występuje. Kod pobiera tego obiektu, gdy to zdarzenie wystąpi ponownie. Aby uzyskać więcej informacji o korzystaniu z <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwość do skojarzenia danych z projektów, zobacz [rozszerzeń narzędzi kojarzenie danych niestandardowych z programem SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
+### <a name="understand-the-code"></a>Rozumienie kodu  
+ Aby upewnić się, że to samo wystąpienie elementu `CustomProjectProperties` klasa jest używana zawsze <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> wystąpi zdarzenie, przykładowy kod dodaje właściwości obiektu do <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwości podczas pierwszego projektu to zdarzenie występuje. Kod pobiera ten obiekt zawsze wtedy, gdy ponownego wystąpienia tego zdarzenia. Aby uzyskać więcej informacji o korzystaniu z <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> właściwość do skojarzenia danych z projektami, zobacz [rozszerzeń narzędzi kojarzenie danych niestandardowych z programem SharePoint](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
   
- Aby zachować zmiany wartości właściwości **ustawić** metod dostępu właściwości przy użyciu następujących interfejsów API:  
+ Aby zachować zmiany wartości właściwości **ustaw** metod dostępu właściwości przy użyciu następujących interfejsów API:  
   
--   `CustomUserFileProperty` używa <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> właściwości można zapisać wartości w pliku opcji użytkownika projektu.  
+- `CustomUserFileProperty` używa <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> właściwości, aby zapisać plik opcji użytkownika projektu jego wartość.  
   
--   `CustomProjectFileProperty` używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metodę, aby zapisać jego wartości w pliku projektu.  
+- `CustomProjectFileProperty` używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metodę, aby zapisać jego wartość do pliku projektu.  
   
- Aby uzyskać więcej informacji na temat trwałych danych w tych plikach, zobacz [zapisywać danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+  Aby uzyskać więcej informacji na temat utrwalanie danych w tych plikach, zobacz [zapisywać danych w rozszerzeniach systemu projektu SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
 ### <a name="specify-the-behavior-of-custom-properties"></a>Określ zachowanie właściwości niestandardowe  
- Można określić, jak właściwości niestandardowej pojawia się i zachowuje się tak **właściwości** okna przez zastosowanie atrybutów z <xref:System.ComponentModel> przestrzeni nazw do definicji property. Następujące atrybuty są przydatne w wielu scenariuszach:  
+ Można zdefiniować jak właściwość niestandardową wygląda i zachowuje się tak **właściwości** okna przez zastosowanie atrybutów z <xref:System.ComponentModel> przestrzeń nazw do definicji właściwości. Następujące atrybuty są przydatne w wielu scenariuszach:  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>: Określa nazwę właściwości, która jest wyświetlana w **właściwości** okna.  
+-   <xref:System.ComponentModel.DisplayNameAttribute>: Określa nazwę właściwości, która pojawia się w **właściwości** okna.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>: Określa ciąg opisu, który pojawia się w dolnej części **właściwości** okna, jeśli właściwość jest zaznaczone.  
+-   <xref:System.ComponentModel.DescriptionAttribute>: Określa ciąg opisu, który pojawia się w dolnej części **właściwości** okno po wybraniu właściwości.  
   
--   <xref:System.ComponentModel.DefaultValueAttribute>: Określa wartość domyślną właściwości.  
+-   <xref:System.ComponentModel.DefaultValueAttribute>: Określa domyślną wartość właściwości.  
   
--   <xref:System.ComponentModel.TypeConverterAttribute>: Określa niestandardowy konwersji między ciąg, który jest wyświetlany w **właściwości** okno i wartość właściwości innych niż ciąg.  
+-   <xref:System.ComponentModel.TypeConverterAttribute>: Określa niestandardowy konwersji między ciąg, który jest wyświetlany w **właściwości** okna, a wartość właściwości innych niż ciąg.  
   
--   <xref:System.ComponentModel.EditorAttribute>: Określa niestandardowego edytora do zmodyfikowania właściwości.  
+-   <xref:System.ComponentModel.EditorAttribute>: Określa niestandardowy Edytor służące do modyfikowania właściwości.  
   
-## <a name="compile-the-code"></a>Kompilowanie kodu  
- W tym przykładzie wymaga odwołania do następujących zestawów:  
+## <a name="compile-the-code"></a>Skompilować kod  
+ Ten przykład wymaga odwołania do następujących zestawów:  
   
 -   Microsoft.VisualStudio.SharePoint
 -    
@@ -81,7 +81,7 @@ ms.locfileid: "36758562"
 -   System.ComponentModel.Composition  
   
 ## <a name="deploy-the-extension"></a>Wdrażanie rozszerzenia  
- Aby wdrożyć rozszerzenie, należy utworzyć [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pakietu rozszerzenia (VSIX) dla zestawu i inne pliki, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Aby wdrożyć rozszerzenie, należy utworzyć [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] rozszerzenie (VSIX), pakiet dla zestawu i innych plików, które chcesz dystrybuować z rozszerzeniem. Aby uzyskać więcej informacji, zobacz [wdrażanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Zobacz także
  [Rozszerzanie projektów SharePoint](../sharepoint/extending-sharepoint-projects.md)   

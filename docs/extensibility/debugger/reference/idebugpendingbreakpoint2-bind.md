@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4170fce2fad18abdf54508ee7377c96367f3bf83
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e822686cf331794ff221c94ccdbd3ddd25e2f6bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933706"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
-Co najmniej jedna lokalizacja kodu wiąże ten oczekujący punkt przerwania.  
+Tworzy powiązanie ten oczekujący punkt przerwania z jedną lub więcej lokalizacji kodu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,12 +39,12 @@ int Bind();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli punkt przerwania został usunięty.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli punkt przerwania został usunięty.  
   
 ## <a name="remarks"></a>Uwagi  
- Gdy ta metoda jest wywoływana, aparat debugowania (DE) powinien próbować powiązać ten oczekujący punkt przerwania do wszystkich lokalizacji kodu zgodne.  
+ Gdy ta metoda jest wywoływana, aparat debugowania (DE) ma podejmować próbę powiązania ten oczekujący punkt przerwania do wszystkich lokalizacji kodu, które odpowiadają.  
   
- Po powrocie z tej metody, wywołujący musi czekać na zdarzeniach wskazującą, czy oczekujący punkt przerwania został powiązany lub jest błąd przed przy założeniu, wywołań [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) lub [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md).methods powoduje wyliczenie wszystkich granicę lub błąd punktów przerwania, odpowiednio.  
+ Po powrocie z tej metody wywołujący musi czekać na zdarzeniach wskazującą, czy oczekujący punkt przerwania została powiązana lub jest błędny przed zakładając, że wywołania [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) lub [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md).methods powoduje wyliczenie wszystkich powiązanych z lub błąd punktów przerwania, odpowiednio.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e317f360eaa796eb8bdbea2a58950c8b72a3fef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf2138a96245e46057fb8ca4bca73b7146a48318
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877780"
 ---
 # <a name="bprequestinfo"></a>BP_REQUEST_INFO
 Zawiera informacje wymagane do zaimplementowania punktu przerwania.  
@@ -62,36 +62,36 @@ public struct BP_REQUEST_INFO {
  Kombinacja flag z [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) wyliczenia, która określa pola, które są wypełnione.  
   
  `guidLanguage`  
- Język identyfikatora GUID.  
+ Identyfikator GUID języka.  
   
  `bpLocation`  
- [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktury, która określa typ lokalizacji punktu przerwania.  
+ [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) strukturę, która określa typ lokalizacji punktu przerwania.  
   
  `pProgram`  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje aplikacji, w którym występuje punktu przerwania.  
+ [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje aplikacji, w której występuje punkt przerwania.  
   
  `bstrProgramName`  
- Nazwa aplikacji, w którym występuje punktu przerwania.  
+ Nazwa aplikacji, w której występuje punkt przerwania.  
   
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątku, w którym występuje punktu przerwania.  
+ [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątek, w której występuje punkt przerwania.  
   
  `bstrThreadName`  
- Nazwa wątku, w którym występuje punktu przerwania.  
+ Nazwa wątku, w której występuje punkt przerwania.  
   
  `bpCondition`  
- [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) struktury opisujące warunki, w których zostanie zastosowana punktu przerwania.  
+ [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) strukturę, która opisuje warunki, na których zostanie uruchomiony punkt przerwania.  
   
  `bpPassCount`  
- [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) strukturę, która zawiera informacje o liczbie przebiegu dla punktu przerwania.  
+ [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) strukturę, która zawiera informacje o liczby — dostęp próbny dla punktu przerwania.  
   
  `dwFlags`  
- Kombinacja flag z [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) wyliczenia, który określa flagi dla żądanego punktu przerwania.  
+ Kombinacja flag z [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) wyliczenie, które określa flagi dla żądanego punktu przerwania.  
   
 ## <a name="remarks"></a>Uwagi  
  Ta struktura jest zwracany przez [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) metody.  
   
- Jeśli trzeba uzyskać dostawcę aparatu debugowania identyfikatora GUID, ograniczenie punkt przerwania lub śledzenia, zobacz [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.  
+ Jeśli potrzebujesz uzyskać dostawcy aparatu debugowania identyfikator GUID, ograniczenie punktu przerwania lub punkt śledzenia, zobacz [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -101,7 +101,7 @@ public struct BP_REQUEST_INFO {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)   
  [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   

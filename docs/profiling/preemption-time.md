@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac7152ec663a0a7b7bbbeee5c30a38885623cb9
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 0d0959f5e2725401424d0231ccd286b7835a7315
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254762"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894394"
 ---
 # <a name="preemption-time"></a>Czas wywłaszczania
-Te segmenty na osi czasu są skojarzone z blokowaniem czas, który jest skategoryzowany jako poboru. Ta kategoria oznacza, że wątek przełączono się z powodu jednego z następujących powodów:  
+Te segmenty na osi czasu są skojarzone z czasu blokowania, które należą do kategorii wywłaszczania. Ta kategoria wynika, że wątek jest przełączenie ze względu na jeden z następujących powodów:  
   
--   Planista zastępuje go przy użyciu wyższy priorytet wątku.  
+- Harmonogram zastąpiono ją za pomocą wyższy priorytet wątku.  
   
--   Ważność quantum wykonanie wątku i inne wątki były gotowe do wykonania.  
+- Wygasłe quantum wykonanie wątku, i inne wątki były gotowe do wykonania.  
   
- W tym czasie wątek został zablokowany przez Przyczyna oczekiwania jądra, który Concurrency Visualizer jest liczy się jako poboru. Segmenty poboru Uruchom, gdy wątek spoczywa poza rdzenia logicznego, a zakończy się wątek wznawia wykonywanie.  
+  W tym czasie wątek został zablokowany przez jądro powód oczekiwania, który zlicza Concurrency Visualizer jako wywłaszczania. Segmenty wywłaszczania Uruchom gdy wątek jest przekazywane poza rdzeń logiczny, a kończyć, kiedy wątek wznawia działanie.  
   
- Etykietka narzędzia dla segmentu opóźnieniem Wyświetla nazwę proces lub wątek, który spowodował poboru. Jednak to oznacza, że proces lub wątek, który przejął faktycznie uruchomione przez cały okres preempted.  
+  Etykietka narzędzia dla segmentu wyparte Wyświetla nazwę proces lub wątek, który spowodował wywłaszczania. Jednak to nie oznacza, że proces lub wątek, który zajął stanowisko dyrektora faktycznie uruchomiła przez cały okres preempted.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Widok wątków](../profiling/threads-view-parallel-performance.md)

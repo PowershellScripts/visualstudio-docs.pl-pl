@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c3bf48cf5f8acd24661adf2d9ae36324fadfd72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: dcb2e0a3c381b1dd07c7724c3a64c53307856014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951395"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Zagadnienia dotyczące zabezpieczeń określone dla rozwiązań pakietu Office
   Funkcjach zabezpieczeń zapewnianych przez program Microsoft .NET Framework i Microsoft Office może pomóc chronić swoje rozwiązania pakietu Office na potencjalne zagrożenia. W tym temacie opisano niektóre z tych zagrożeń i zapewnia zalecenia, aby zapewnić ochronę przed nimi. Zawiera także informacje o wpływie ustawienia zabezpieczeń Microsoft Office na rozwiązań pakietu Office.  
@@ -55,11 +55,11 @@ ms.locfileid: "35676399"
   
  Strażnik modelu obiektów może mieć wpływ na dodatków narzędzi VSTO na różne sposoby, w zależności od tego, czy program Outlook jest używany z programem Microsoft Exchange Server:  
   
--   Jeśli program Outlook nie jest używany z programem Exchange, administratora można włączyć lub wyłączyć strażnik modelu obiektów dla wszystkich dodatków narzędzi VSTO na komputerze.  
+- Jeśli program Outlook nie jest używany z programem Exchange, administratora można włączyć lub wyłączyć strażnik modelu obiektów dla wszystkich dodatków narzędzi VSTO na komputerze.  
   
--   Jeśli program Outlook jest używany z programem Exchange, administrator może włączyć lub wyłączyć strażnik modelu obiektów dla wszystkich dodatków narzędzi VSTO na komputerze, lub administrator może określić, że niektóre dodatków narzędzi VSTO dla programów może działać bez napotkania strażnik modelu obiektów. Administratorzy mogą również modyfikować zachowanie strażnik modelu obiektów dla niektórych obszarów modelu obiektów. Na przykład Administratorzy automatycznie umożliwia dodatków narzędzi VSTO dla programów do wysyłania wiadomości e-mail programowo, nawet jeśli jest włączona strażnik modelu obiektów.  
+- Jeśli program Outlook jest używany z programem Exchange, administrator może włączyć lub wyłączyć strażnik modelu obiektów dla wszystkich dodatków narzędzi VSTO na komputerze, lub administrator może określić, że niektóre dodatków narzędzi VSTO dla programów może działać bez napotkania strażnik modelu obiektów. Administratorzy mogą również modyfikować zachowanie strażnik modelu obiektów dla niektórych obszarów modelu obiektów. Na przykład Administratorzy automatycznie umożliwia dodatków narzędzi VSTO dla programów do wysyłania wiadomości e-mail programowo, nawet jeśli jest włączona strażnik modelu obiektów.  
   
- Począwszy od programu Outlook 2007, zachowanie strażnik modelu obiektów został zmieniony na ulepszaniu środowiska programistów i użytkowników, jednocześnie zachowując bezpieczeństwo programu Outlook. Aby uzyskać więcej informacji, zobacz [kodu zmiany zabezpieczeń w programie Outlook 2007](http://go.microsoft.com/fwlink/?LinkId=73429).  
+  Począwszy od programu Outlook 2007, zachowanie strażnik modelu obiektów został zmieniony na ulepszaniu środowiska programistów i użytkowników, jednocześnie zachowując bezpieczeństwo programu Outlook. Aby uzyskać więcej informacji, zobacz [kodu zmiany zabezpieczeń w programie Outlook 2007](http://go.microsoft.com/fwlink/?LinkId=73429).  
   
 ### <a name="minimize-object-model-guard-warnings"></a>Minimalizuj ostrzeżenia guard modelu obiektu  
  Aby uniknąć wyświetlania ostrzeżenia o zabezpieczeniach podczas korzystania z ograniczeniami właściwości i metod, upewnij się, dodatku narzędzi VSTO dla programów uzyskuje obiektów programu Outlook z `Application` pole `ThisAddIn` klasy w projekcie. Aby uzyskać więcej informacji na temat tego pola, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).  
@@ -94,15 +94,15 @@ ms.locfileid: "35676399"
   
  Jeśli użytkownik uniemożliwia dodatków narzędzi VSTO ładowania przy użyciu **Centrum zaufania**, nie załaduje dodatków narzędzi VSTO dla następujących typów:  
   
--   Zarządzane i niezarządzane COM dodatków narzędzi VSTO.  
+- Zarządzane i niezarządzane COM dodatków narzędzi VSTO.  
   
--   Dokumenty inteligentne zarządzanych i niezarządzanych.  
+- Dokumenty inteligentne zarządzanych i niezarządzanych.  
   
--   Zarządzane i niezarządzane automatyzacji dodatków narzędzi VSTO.  
+- Zarządzane i niezarządzane automatyzacji dodatków narzędzi VSTO.  
   
--   Składniki zarządzane i niezarządzane danych w czasie rzeczywistym.  
+- Składniki zarządzane i niezarządzane danych w czasie rzeczywistym.  
   
- W poniższych procedurach opisano sposób używania przez użytkowników **Centrum zaufania** ograniczyć dodatków narzędzi VSTO ładowania w usłudze Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i Microsoft Office 2010. Procedury te nie wpływają na dodatków narzędzi VSTO dla programów lub dostosowania utworzone za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio.  
+  W poniższych procedurach opisano sposób używania przez użytkowników **Centrum zaufania** ograniczyć dodatków narzędzi VSTO ładowania w usłudze Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] i Microsoft Office 2010. Procedury te nie wpływają na dodatków narzędzi VSTO dla programów lub dostosowania utworzone za pomocą narzędzi programistycznych pakietu Office w programie Visual Studio.  
   
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>Aby wyłączyć dodatków narzędzi VSTO dla programów w pakiecie Microsoft Office 2010 i Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplikacji  
   

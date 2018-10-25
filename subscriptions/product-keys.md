@@ -9,12 +9,12 @@ description: Dowiedz się, jak uzyskać i zarządzać kluczami produktu w ramach
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7726470eaaec90ba5138a84901745bbde61201bd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637841"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900855"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Korzystanie z kluczy produktów w subskrypcji programu Visual Studio
 
@@ -79,11 +79,11 @@ Jedynie subskrybenci posiadający aktywne subskrypcje można pobrać produkty i 
 
 
 Aby skorzystać z klucza produktu:
-1.  Zaloguj się do subskrypcji programu Visual Studio.  Musi być zalogowano na pobieranie produkty i zgłaszać klucze produktów.
-2.  Kliknij pozycję [klucze produktów](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) kartę.
-3.  Klucze produktów są wymieniane alfabetycznie według nazwy produktu.  Możesz albo przewiń w dół do nazwy żądany produkt lub wyszukaj go, korzystając z paska wyszukiwania w górnej części strony.
-    > [!div class="mx-imgBorder"]
-    > ![Wyszukiwanie klucza produktu](_img\product-keys\visio-product-key-cropped.png)
+1. Zaloguj się do subskrypcji programu Visual Studio.  Musi być zalogowano na pobieranie produkty i zgłaszać klucze produktów.
+2. Kliknij pozycję [klucze produktów](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) kartę.
+3. Klucze produktów są wymieniane alfabetycznie według nazwy produktu.  Możesz albo przewiń w dół do nazwy żądany produkt lub wyszukaj go, korzystając z paska wyszukiwania w górnej części strony.
+   > [!div class="mx-imgBorder"]
+   > ![Wyszukiwanie klucza produktu](_img/product-keys/visio-product-key-cropped.png)
 
 W tym przykładzie firma Microsoft został użyty na pasku wyszukiwania, aby zlokalizować klucz produktu dla programu Visio 2010.
 Jak widać, istnieją różne wersje programu Visio 2010, na liście.  Jeden klucz został już przejęty Visio Standard 2010 i Visio 2010 — wersja Premium, a jednocześnie ma cztery klucze pozostałe.  Klucze, które zostały zgłoszone są oba klucze detaliczne i są wyświetlane na stronie.  Zwróć uwagę, czy można zarejestrować krótkie notatki dotyczące zgłoszone klucze w **uwagi** kolumny.  Możesz użyć tej funkcji w połączeniu z datą w **Claimed** kolumny, aby śledzić klucze zostały zgłoszone.  Na przykład, być może robić notatki, podczas instalacji produktu przy użyciu klucza aktywacji.

@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 511234a1a577bbad87fa9ceecc2afe34945cce5c
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 7a613874a45939d9c9f2546edbb5545d8be31ccb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951174"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Tworzenie diagramów zależności z kodu
 
@@ -88,7 +88,7 @@ Przed utworzeniem diagram zależności, upewnij się, że rozwiązanie ma projek
  Aby sprawdzić, czy połączony element obsługuje walidację, otwórz **Eksplorator warstw** i zbadaj **obsługuje walidację** właściwości elementu. Zobacz [Zarządzanie łączami do artefaktów](#Managing).
 
 |**To**|**Wykonaj następujące kroki**|
-|------------|----------------------------|
+|-|-|
 |Utworzyć warstwę dla pojedynczego artefakt|<ol><li>Przeciągnij element na diagram zależności z tych źródeł:<br /><br /> <ul><li>**Eksplorator rozwiązań**<br /><br />         Możesz na przykład przeciągać pliki lub projekty.</li><li>Mapy kodu<br /><br />         Zobacz [mapowanie zależności w ramach rozwiązań](../modeling/map-dependencies-across-your-solutions.md) i [mapy Użyj kodu do debugowania aplikacji](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>**Widok klas** lub **przeglądarka obiektów**</li></ul><br />     Warstwy jest wyświetlana na diagramie i jest połączona z artefaktem.</li><li>Zmień nazwę warstwy, aby odzwierciedlała obowiązki skojarzonego kodu lub artefaktów.</li></ol> **Ważne:** przeciąganie plików binarnych do diagramu zależności nie powoduje automatycznego dodania odniesień do nich do projektu modelowania. Musisz ręcznie dodać do projektu modelowania pliki binarne, które chcesz walidować. **Aby dodać pliki binarne do projektu modelowania** <ol><li>W **Eksploratora rozwiązań**, otwórz menu skrótów dla projektu modelowania, a następnie wybierz **Dodaj istniejący element**.</li><li>W **Dodaj istniejący element** okno dialogowe, przejdź do plików binarnych, zaznacz je, a następnie wybierz **OK**.     Pliki binarne pojawią się w projekcie modelowania.</li><li>W **Eksploratora rozwiązań**, wybierz plik binarny, który zostanie dodany, a następnie naciśnij **F4** otworzyć **właściwości** okna.</li><li>Dla każdego pliku binarnego ustaw **Build Action** właściwości **weryfikacji**.</li></ol>|
 |Utwórz jedną warstwę dla wszystkich zaznaczonych artefaktów|Przeciągnij wszystkie artefakty do diagramu zależności, w tym samym czasie.<br /><br /> Warstw pojawi się na diagramie i będzie połączona z artefaktami.|
 |Tworzenie warstwy dla każdego zaznaczonego artefaktu|Naciśnij i przytrzymaj klawisz **SHIFT** klucza podczas przeciągania wszystkich artefaktów na diagram zależności w tym samym czasie. **Uwaga:** Jeśli używasz **SHIFT** klawisz, aby wybrać zakres elementów, zwolnij klawisz po zaznaczeniu artefaktów. Naciśnij i przytrzymaj go ponownie podczas przeciągania artefaktów do diagramu. <br /><br /> Warstwa dla każdego artefaktu pojawia się na diagramie i jest połączona z poszczególnymi artefaktami.|
@@ -118,7 +118,7 @@ Przed utworzeniem diagram zależności, upewnij się, że rozwiązanie ma projek
 2.  Wykonaj następujące zadania, aby zarządzać tymi łączami:
 
 |**To**|**W Eksploratorze warstw**|
-|------------|---------------------------|
+|-|-|
 |Usuwanie łącza między warstwą i artefaktem|Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz **Usuń**.|
 |Przenoszenie łącza z jednej warstwy na drugą|Przeciągnij łącze artefaktu do istniejącej warstwy na diagramie.<br /><br /> - lub -<br /><br /> 1.  Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz **Wytnij**.<br />2.  Na diagramie zależności, otwórz menu skrótów dla warstwy, a następnie wybierz **Wklej**.|
 |Kopiowanie łącza z jednej warstwy na drugą|1.  Otwórz menu skrótów dla łącza artefaktu, a następnie wybierz **kopiowania**.<br />2.  Na diagramie zależności, otwórz menu skrótów dla warstwy, a następnie wybierz **Wklej**.|
@@ -131,15 +131,15 @@ Przed utworzeniem diagram zależności, upewnij się, że rozwiązanie ma projek
 > [!NOTE]
 > Zależności nie mogą być odtwarzane dla niektórych rodzajów artefaktów. Na przykład nie zostaną odtworzone żadne zależności z lub do warstwy, która jest połączona z plikiem tekstowym. Aby zobaczyć, które artefakty mają zależności można odtworzyć, otwórz menu skrótów dla jednej lub wielu warstw, a następnie wybierz **Wyświetl łącza**. W **Eksplorator warstw**, sprawdź **obsługuje walidację** kolumny. Zależności nie będą odtwarzane dla artefaktów, dla których ta kolumna zawiera **False**.
 
--   Zaznacz jedną lub wiele warstw, otwórz menu skrótów dla zaznaczonej warstwy, a następnie wybierz **Wygeneruj zależności**.
+- Zaznacz jedną lub wiele warstw, otwórz menu skrótów dla zaznaczonej warstwy, a następnie wybierz **Wygeneruj zależności**.
 
- Zazwyczaj zobaczysz niektóre zależności, które nie powinny istnieć. Możesz edytować te zależności, aby dopasować je do zamierzonego projektu.
+  Zazwyczaj zobaczysz niektóre zależności, które nie powinny istnieć. Możesz edytować te zależności, aby dopasować je do zamierzonego projektu.
 
 ## <a name="EditDependencies"></a> Edytowanie warstw i zależności w celu przedstawienia zamierzonego projektu
  Aby opisać zmiany, które planujesz wprowadzić do systemu lub zamierzonej architektury, należy edytować diagram zależności:
 
 |**To**|**Wykonaj następujące kroki**|
-|------------|-----------------------------|
+|-|-|
 |Zmień lub ogranicz kierunek zależności|Ustaw jego **kierunek** właściwości.|
 |Tworzenie nowych zależności|Użyj **zależności** i **zależność dwukierunkowa** narzędzia.<br /><br /> Aby narysować wiele zależności, kliknij dwukrotnie narzędzie. Gdy skończysz, wybierz pozycję **wskaźnik** narzędzi lub naciśnij klawisz **ESC** klucza.|
 |Określanie, że artefakty skojarzone z warstwą nie mogą zależeć od określonych przestrzeni nazw|Wpisz przestrzenie nazw w warstwie **zabronione zależności Namespace** właściwości. Użyj średnika (**;**) do oddzielenia przestrzeni nazw.|

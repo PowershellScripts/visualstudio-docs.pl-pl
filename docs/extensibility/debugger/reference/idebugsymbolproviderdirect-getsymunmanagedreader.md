@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 311b03657cef0d0ec6785cad332cbf7c9530b48e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 705c5d1184f159309d289d70c7a787dc3fce03b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872723"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
-Pobiera czytnika symboli dla niezarządzanego kodu.  
+Pobiera czytnik symbolu dla niezarządzanego kodu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -50,10 +50,10 @@ int GetSymUnmanagedReader (
  [in] Unikatowy identyfikator modułu.  
   
  `ppSymUnmanagedReader`  
- [out] Zwraca obiekt reprezentujący czytnika symboli dla niezarządzanego kodu.  
+ [out] Zwraca obiekt, który reprezentuje czytnika symboli dla niezarządzanego kodu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

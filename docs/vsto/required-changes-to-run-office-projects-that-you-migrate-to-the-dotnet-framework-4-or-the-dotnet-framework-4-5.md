@@ -15,25 +15,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10c21ef1ced2e5237ac0cf940d7561d39e863d4f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 675831a8e094728a142bebf0432838030ae8791d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677476"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883487"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Zmiany wymagane w celu uruchamiania projektów pakietu Office, które przenoszonych do oprogramowania .NET Framework 4 lub .NET Framework 4.5
   Jeśli platforma docelowa projektu pakietu Office jest zmieniana na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszy z wcześniejszej wersji programu .NET Framework, należy wykonać następujące zadania, aby upewnić się, że rozwiązanie można uruchomić na komputerze deweloperskim i na komputerach użytkowników końcowych:  
   
--   Usuń <xref:System.Security.SecurityTransparentAttribute> z projektu w przypadku uaktualnienia z programu Visual Studio 2008.  
+- Usuń <xref:System.Security.SecurityTransparentAttribute> z projektu w przypadku uaktualnienia z programu Visual Studio 2008.  
   
--   Wykonaj **czysty** polecenia w programie Visual Studio, aby można było uruchomić ani debugować projektu na komputerze deweloperskim.  
+- Wykonaj **czysty** polecenia w programie Visual Studio, aby można było uruchomić ani debugować projektu na komputerze deweloperskim.  
   
--   Aktualizacja programu .NET Framework wymagań wstępnych dla projektu.  
+- Aktualizacja programu .NET Framework wymagań wstępnych dla projektu.  
   
--   Użytkownicy końcowi również należy ponownie zainstalować rozwiązania, jeśli została wcześniej wdrożona przy użyciu technologii ClickOnce, przed zmianą platformy docelowej.  
+- Użytkownicy końcowi również należy ponownie zainstalować rozwiązania, jeśli została wcześniej wdrożona przy użyciu technologii ClickOnce, przed zmianą platformy docelowej.  
   
- Aby uzyskać więcej informacji na temat każdego z tych zadań zobacz poniższe sekcje odpowiednie.  
+  Aby uzyskać więcej informacji na temat każdego z tych zadań zobacz poniższe sekcje odpowiednie.  
   
 ## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Usuń atrybut atrybutów SecurityTransparent projektach, które uaktualniania z programu Visual Studio 2008  
  Jeśli uaktualniasz projekt Office z programu Visual Studio 2008 i docelowa platforma projektu później zmieni się na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] lub nowszej, musisz usunąć <xref:System.Security.SecurityTransparentAttribute> z projektu. Program Visual Studio nie są automatycznie usuwane ten atrybut za Ciebie. Jeśli ten atrybut nie zostanie usunięty, otrzymasz komunikat o błędzie, podczas kompilowania projektu.  

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f231a1d6ee27c56f423a64cc430ba8e743e308f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6b2dfa661b6dc21b50dec33afc736e0cc3be90a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926322"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
-Pobiera przyczyny, dla której punkt przerwania został niepowiązanych.  
+Pobiera powodów, dla którego punkt przerwania został niepowiązanej.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,16 +41,16 @@ int GetReason(
   
 #### <a name="parameters"></a>Parametry  
  `pdwUnboundReason`  
- [out] Zwraca wartość z zakresu od [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) wyliczenie opisujące Przyczyna punkt przerwania został niepowiązanych.  
+ [out] Zwraca wartość z zakresu od [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) wyliczenie opisujące przyczynę punkt przerwania został niepowiązanych.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Przyczyny punkt przerwania jest odbitych do innej lokalizacji po operacji edit-and-continue lub określenie, czy punkt przerwania został powiązany z błędami.  
+ Przyczyny punkt przerwania jest odbitych do innej lokalizacji po operacji Edytuj i Kontynuuj lub określenie, że punkt przerwania był powiązany z błędami.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CBreakpointUnboundDebugEventBase** obiekt ujawniający [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CBreakpointUnboundDebugEventBase** obiekt ujawniający [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) interfejsu.  
   
 ```cpp  
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(  

@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c9bb5fab8386046f9b409e0d3ef801b4020e88c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 189bae80873e100be3371813add133982926edab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109788"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915233"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
-Pobiera typ informacji o określonej podstawie jego adresu debugowania tablicy.  
+Pobiera typ informacji o określonej tablicy, na podstawie jego adresu debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -57,13 +57,13 @@ int GetArrayTypeFromAddress(
  [in] Długość w bajtach `pSig` tablicy.  
   
  `ppField`  
- [out] Zwraca typ tablicy reprezentowany przez [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfejsu.  
+ [out] Zwraca typ tablicy, reprezentowane przez [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) interfejsu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetArrayTypeFromAddress(  

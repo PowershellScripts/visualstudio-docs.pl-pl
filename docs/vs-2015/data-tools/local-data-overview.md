@@ -30,12 +30,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 312dbee46f13bf1f8f5d0666dcba18adc1116cdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94b3f066a66a380875609b4f6485d56a19ebde3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210486"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885580"
 ---
 # <a name="local-data-overview"></a>Dane lokalne — Przegląd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ Podczas tworzenia aplikacji do danych, jest zazwyczaj najlepiej jest używać lo
   
 2.  
   
--  
+- 
   
--  
+- 
   
--   Utwórz projekt bazy danych programu SQL Server, klikając węzeł rozwiązania w Eksploratorze rozwiązań i wybierając pozycję **Dodaj &#124; nowy projekt**.  W okienku po lewej stronie wybierz **programu SQL Server &#124; bazy danych** projektu, a następnie kliknij przycisk OK. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy węzeł projektu bazy danych, aby zaimportować plik lokalnej bazy danych, a następnie tworzenia aplikacji, który nawiązuje połączenie z bazą danych wytworzonych przez projekt. Dobre podczas ich tworzenia i modyfikowania schematu bazy danych w tym samym czasie, czy tworzysz aplikację.  
+- Utwórz projekt bazy danych programu SQL Server, klikając węzeł rozwiązania w Eksploratorze rozwiązań i wybierając pozycję **Dodaj &#124; nowy projekt**.  W okienku po lewej stronie wybierz **programu SQL Server &#124; bazy danych** projektu, a następnie kliknij przycisk OK. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy węzeł projektu bazy danych, aby zaimportować plik lokalnej bazy danych, a następnie tworzenia aplikacji, który nawiązuje połączenie z bazą danych wytworzonych przez projekt. Dobre podczas ich tworzenia i modyfikowania schematu bazy danych w tym samym czasie, czy tworzysz aplikację.  
   
-     ![Importowanie bazy danych do projektu bazy danych](../data-tools/media/raddata-import-database-into-database-project.png "raddata Importuj bazę danych do projektu bazy danych")  
+   ![Importowanie bazy danych do projektu bazy danych](../data-tools/media/raddata-import-database-into-database-project.png "raddata Importuj bazę danych do projektu bazy danych")  
   
--   Jeśli tworzysz nową bazę danych, najpierw dodać **usługową bazę danych pliku** do projektu (**projektu &#124; Dodaj nowy element)**. Spowoduje to utworzenie nowego pliku mdf, który jest dołączony do domyślnego wystąpienia programu SQL Server na maszynie lokalnej, która domyślnie jest \MSSQLocalDB (localdb). Baza danych powinna zostać wyświetlona w oknie Eksploratora serwera. Rozwiń węzeł, a następnie kliknij prawym przyciskiem myszy na węzłach, aby dodać nowe obiekty bazy danych, takich jak tabele, widoki, funkcje i tak dalej.  
+- Jeśli tworzysz nową bazę danych, najpierw dodać **usługową bazę danych pliku** do projektu (**projektu &#124; Dodaj nowy element)**. Spowoduje to utworzenie nowego pliku mdf, który jest dołączony do domyślnego wystąpienia programu SQL Server na maszynie lokalnej, która domyślnie jest \MSSQLocalDB (localdb). Baza danych powinna zostać wyświetlona w oknie Eksploratora serwera. Rozwiń węzeł, a następnie kliknij prawym przyciskiem myszy na węzłach, aby dodać nowe obiekty bazy danych, takich jak tabele, widoki, funkcje i tak dalej.  
   
- Aby uzyskać więcej informacji na temat programu SQL Server Express LocalDB, zobacz [wprowadzenie do LocalDB, ulepszonej wersji SQL Express](http://go.microsoft.com/fwlink/?LinkId=234375) i [LocalDB: gdzie jest Moja bazy danych?](http://go.microsoft.com/fwlink/?LinkId=234376) w witrynie internetowej firmy Microsoft.  
+  Aby uzyskać więcej informacji na temat programu SQL Server Express LocalDB, zobacz [wprowadzenie do LocalDB, ulepszonej wersji SQL Express](http://go.microsoft.com/fwlink/?LinkId=234375) i [LocalDB: gdzie jest Moja bazy danych?](http://go.microsoft.com/fwlink/?LinkId=234376) w witrynie internetowej firmy Microsoft.  
   
- Poniższa tabela zawiera łącza do tematów opisujących sposób łączenia aplikacji z danymi lokalnymi:  
+  Poniższa tabela zawiera łącza do tematów opisujących sposób łączenia aplikacji z danymi lokalnymi:  
   
 |Temat|Opis|  
 |-----------|-----------------|  

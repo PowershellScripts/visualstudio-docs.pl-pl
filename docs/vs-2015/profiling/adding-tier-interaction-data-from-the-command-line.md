@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b22de4b3dd94ba39015605353a71412836a9ff4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7ac10e62c1c982f1b2357fcaea17b6b54865dec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228423"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872073"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Dodawanie danych o interakcji między warstwami za pośrednictwem wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,36 +55,36 @@ Profilowanie interakcji pomiędzy warstwami zawiera dodatkowe informacje dotycz�
   
 ##### <a name="profiling-a-windows-desktop-application-example"></a>Przykład aplikacji pulpitu Windows profilowania  
   
-1.  Otwórz okno wiersza polecenia z uprawnieniami administratora. Kliknij przycisk **Start**, wskaż polecenie **wszystkie programy**, a następnie wskaż **Akcesoria**. Kliknij prawym przyciskiem myszy **polecenia**, a następnie kliknij przycisk **Uruchom jako Administrator**.  
+1. Otwórz okno wiersza polecenia z uprawnieniami administratora. Kliknij przycisk **Start**, wskaż polecenie **wszystkie programy**, a następnie wskaż **Akcesoria**. Kliknij prawym przyciskiem myszy **polecenia**, a następnie kliknij przycisk **Uruchom jako Administrator**.  
   
-2.  Zainicjuj profilowanie platformy .NET i zmiennych środowiskowych porada. Wpisz następujące polecenia:  
+2. Zainicjuj profilowanie platformy .NET i zmiennych środowiskowych porada. Wpisz następujące polecenia:  
   
-    ```  
-    vsperfclrenv /traceon  
-    vsperfclrenv /interactionon  
-    ```  
+   ```  
+   vsperfclrenv /traceon  
+   vsperfclrenv /interactionon  
+   ```  
   
-3.  Uruchom program profiler. Wpisz następujące polecenie:  
+3. Uruchom program profiler. Wpisz następujące polecenie:  
   
-    ```  
-    vsperfcmd /start:trace /output:Desktop_tip.vsp   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:Desktop_tip.vsp   
+   ```  
   
-4.  Uruchom aplikację za pomocą narzędzia VSPerfCmd. Wpisz następujące polecenie:  
+4. Uruchom aplikację za pomocą narzędzia VSPerfCmd. Wpisz następujące polecenie:  
   
-    ```  
-    vsperfcmd /launch:DesktopApp.exe  
-    ```  
+   ```  
+   vsperfcmd /launch:DesktopApp.exe  
+   ```  
   
-5.  Wykonywanie aplikacji do zbierania danych profilowania, a następnie zamknij aplikację w zwykły sposób.  
+5. Wykonywanie aplikacji do zbierania danych profilowania, a następnie zamknij aplikację w zwykły sposób.  
   
-6.  Wyczyść zmienne środowiskowe porada. Wpisz następujące polecenie:  
+6. Wyczyść zmienne środowiskowe porada. Wpisz następujące polecenie:  
   
-    ```  
-    vsperfclrenv /off  
-    ```  
+   ```  
+   vsperfclrenv /off  
+   ```  
   
- Aby uzyskać więcej informacji, zobacz [profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md).  
+   Aby uzyskać więcej informacji, zobacz [profilowanie aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md).  
   
 ### <a name="profiling-services"></a>Usługi profilowania  
  Do profilu usługi, w tym [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji, używa **VSPerfClrEnv /GlobalInteractionOn** opcję, aby ustawić zmienne środowiskowe i **VSPerfClrEnv /GlobalInteractionOff** możliwość ich usunięcia.  
@@ -95,33 +95,33 @@ Profilowanie interakcji pomiędzy warstwami zawiera dodatkowe informacje dotycz�
   
 ##### <a name="profiling-a-windows-service-example"></a>Przykład usługi Windows profilowania  
   
-1.  Jeśli to konieczne, zainstaluj usługę.  
+1. Jeśli to konieczne, zainstaluj usługę.  
   
-2.  Otwórz okno wiersza polecenia z uprawnieniami administratora. Kliknij przycisk **Start**, wskaż polecenie **wszystkie programy**, a następnie wskaż **Akcesoria**. Kliknij prawym przyciskiem myszy **polecenia**, a następnie kliknij przycisk **Uruchom jako Administrator**.  
+2. Otwórz okno wiersza polecenia z uprawnieniami administratora. Kliknij przycisk **Start**, wskaż polecenie **wszystkie programy**, a następnie wskaż **Akcesoria**. Kliknij prawym przyciskiem myszy **polecenia**, a następnie kliknij przycisk **Uruchom jako Administrator**.  
   
-3.  Zainicjuj profilowanie zmiennych środowiskowych .NET. Wpisz następujące polecenie:  
+3. Zainicjuj profilowanie zmiennych środowiskowych .NET. Wpisz następujące polecenie:  
   
-    ```  
-    vsperfclrenv /globaltraceon  
-    ```  
+   ```  
+   vsperfclrenv /globaltraceon  
+   ```  
   
-4.  Inicjowanie zmiennych środowiskowych porada. Wpisz następujące polecenie  
+4. Inicjowanie zmiennych środowiskowych porada. Wpisz następujące polecenie  
   
-    ```  
-    vsperfclrenv /globalinteractionon  
-    ```  
+   ```  
+   vsperfclrenv /globalinteractionon  
+   ```  
   
-5.  Uruchom ponownie komputer, aby zarejestrować zmienne środowiskowe.  
+5. Uruchom ponownie komputer, aby zarejestrować zmienne środowiskowe.  
   
-6.  Otwórz okno wiersza polecenia z uprawnieniami administratora.  
+6. Otwórz okno wiersza polecenia z uprawnieniami administratora.  
   
-7.  Uruchom program profiler. Wpisz następujące polecenie:  
+7. Uruchom program profiler. Wpisz następujące polecenie:  
   
-    ```  
-    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
+   ```  
   
-8.  Jeśli to konieczne, uruchom usługę.  
+8. Jeśli to konieczne, uruchom usługę.  
   
 9. Dołącz profiler do usługi. Wpisz następujące polecenie:  
   
@@ -143,11 +143,11 @@ Profilowanie interakcji pomiędzy warstwami zawiera dodatkowe informacje dotycz�
   
 13. Uruchom ponownie komputer, aby zarejestrować zmienne środowiskowe wyczyszczone.  
   
- Aby uzyskać więcej informacji, zobacz jeden z następujących tematów:  
+    Aby uzyskać więcej informacji, zobacz jeden z następujących tematów:  
   
- [Profilowanie aplikacji internetowej ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+    [Profilowanie aplikacji internetowej ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
- [Usługi profilowania](../profiling/command-line-profiling-of-services.md)  
+    [Usługi profilowania](../profiling/command-line-profiling-of-services.md)  
   
 ## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Dodawanie danych o interakcji między warstwami za pomocą polecenia VSPerfASPNETCmd  
  Narzędzie wiersza polecenia VSPerfASPNETCmd umożliwia łatwe profilu [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplikacji sieci Web. W porównaniu z **VSPerfCmd** narzędzia wiersza polecenia, opcje są mniejsze, żadne zmienne środowiskowe muszą być ustawione i ponowne uruchomienie komputera nie jest wymagane. Te funkcje VSPerfASPNETCmd ułatwić zbierania danych o interakcji między warstwami wyjątkowo.  

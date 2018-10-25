@@ -16,62 +16,62 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d0432a3e07d10db9daa03395f182836726bdf753
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f06408b65d3cda1f2ee807daac7ab39ce2182a90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891782"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Porady: ograniczanie instrumentacji do określonych funkcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można ograniczyć Instrumentacji i gromadzenia danych do co najmniej jedną funkcję, ustawiając opcje w **zaawansowane** strony **sesji wydajności** ani kierowania stron właściwości binarnych:  
   
--   Jeśli określisz funkcje na stronie właściwości sesji wydajności, tylko te funkcje są instrumentowane w instrumentowanych danych binarnych na sesji.  
+- Jeśli określisz funkcje na stronie właściwości sesji wydajności, tylko te funkcje są instrumentowane w instrumentowanych danych binarnych na sesji.  
   
--   Jeśli określisz funkcje na stronie właściwości obiektu docelowego binarne tylko funkcje, które są w tym, że są instrumentowane określonego pliku binarnego. Funkcje w innych plików binarnych wydajności działają w zwykły sposób.  
+- Jeśli określisz funkcje na stronie właściwości obiektu docelowego binarne tylko funkcje, które są w tym, że są instrumentowane określonego pliku binarnego. Funkcje w innych plików binarnych wydajności działają w zwykły sposób.  
   
- Ograniczenie zbierania danych w ten sposób jest obsługiwana tylko wtedy, gdy metoda profilowania Instrumentacja jest zaznaczone.  
+  Ograniczenie zbierania danych w ten sposób jest obsługiwana tylko wtedy, gdy metoda profilowania Instrumentacja jest zaznaczone.  
   
 > [!NOTE]
 >  Można również użyć **zaawansowane** strony **sesji wydajności** strony właściwości można ustawić inne opcje, które są dostępne dla narzędzi profilowania [VSInstr](../profiling/vsinstr.md) wiersza polecenia Narzędzie do Instrumentacji.  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-performance-session"></a>Ograniczenie Instrumentacji do określonych funkcji w ramach sesji wydajności  
   
-1.  W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji, a następnie kliknij przycisk **właściwości**.  
+1. W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji, a następnie kliknij przycisk **właściwości**.  
   
-     **Stron właściwości** zostanie wyświetlone okno dialogowe.  
+    **Stron właściwości** zostanie wyświetlone okno dialogowe.  
   
-2.  Na **stron właściwości** okno dialogowe, kliknij przycisk **zaawansowane**.  
+2. Na **stron właściwości** okno dialogowe, kliknij przycisk **zaawansowane**.  
   
-3.  W **dodatkowych opcji Instrumentacji** tekst pola, użyj następującej składni o wpisanie nazwy funkcji, które mają być Instrumentacji:  
+3. W **dodatkowych opcji Instrumentacji** tekst pola, użyj następującej składni o wpisanie nazwy funkcji, które mają być Instrumentacji:  
   
-     **/ include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
+    **/ include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-     `FuncSpec` jest to nazwa przestrzeni nazw i funkcji. Ma on format `Namespace` **::**`FunctionName`. Użyj średnika do rozdzielenia wielu funkcji. Gwiazdka (\*) do określenia co najmniej jeden znak symbolu wieloznacznego. Na przykład **/ include: MyNS::\***  określa wszystkie funkcje w obszarze nazw MyNS.  
+    `FuncSpec` jest to nazwa przestrzeni nazw i funkcji. Ma on format `Namespace` **::**`FunctionName`. Użyj średnika do rozdzielenia wielu funkcji. Gwiazdka (\*) do określenia co najmniej jeden znak symbolu wieloznacznego. Na przykład **/ include: MyNS::\\*** określa wszystkie funkcje w obszarze nazw MyNS.  
   
-    > [!NOTE]
-    >  Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnym Profiling Tools (zazwyczaj tools\performance Tools katalogu w obszarze [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] katalog instalacyjny), a następnie wpisz **vsinstr / DumpFuncs**  
+   > [!NOTE]
+   >  Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnym Profiling Tools (zazwyczaj tools\performance Tools katalogu w obszarze [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] katalog instalacyjny), a następnie wpisz **vsinstr / DumpFuncs**  
   
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>Ograniczenie Instrumentacji do określonych funkcji w pliku binarnym  
   
-1.  W **Eksplorator wydajności**, zlokalizuj nazwa pliku binarnego w **cele** węzła sesji wydajności.  
+1. W **Eksplorator wydajności**, zlokalizuj nazwa pliku binarnego w **cele** węzła sesji wydajności.  
   
-2.  Kliknij prawym przyciskiem myszy nazwa pliku binarnego, a następnie kliknij przycisk **właściwości**.  
+2. Kliknij prawym przyciskiem myszy nazwa pliku binarnego, a następnie kliknij przycisk **właściwości**.  
   
-     **Stron właściwości** zostanie wyświetlone okno dialogowe.  
+    **Stron właściwości** zostanie wyświetlone okno dialogowe.  
   
-3.  Na **stron właściwości** okno dialogowe, kliknij przycisk **zaawansowane**.  
+3. Na **stron właściwości** okno dialogowe, kliknij przycisk **zaawansowane**.  
   
-4.  W **dodatkowych opcji Instrumentacji** tekst pola, użyj następującej składni o wpisanie nazwy funkcji, które mają być Instrumentacji:  
+4. W **dodatkowych opcji Instrumentacji** tekst pola, użyj następującej składni o wpisanie nazwy funkcji, które mają być Instrumentacji:  
   
-     **/ include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
+    **/ include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-     `FuncSpec` jest to nazwa przestrzeni nazw i funkcji. Ma on format `Namespace` **::**`FunctionName`. Użyj średnika do rozdzielenia wielu funkcji. Gwiazdka (\*) do określenia co najmniej jeden znak symbolu wieloznacznego. Na przykład **/ include: MyNS::\***  określa wszystkie funkcje w obszarze nazw MyNS.  
+    `FuncSpec` jest to nazwa przestrzeni nazw i funkcji. Ma on format `Namespace` **::**`FunctionName`. Użyj średnika do rozdzielenia wielu funkcji. Gwiazdka (\*) do określenia co najmniej jeden znak symbolu wieloznacznego. Na przykład **/ include: MyNS::\\*** określa wszystkie funkcje w obszarze nazw MyNS.  
   
-    > [!NOTE]
-    >  Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnym Profiling Tools (zazwyczaj tools\performance Tools katalogu w obszarze [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] katalog instalacyjny), a następnie wpisz **vsinstr / DumpFuncs**  
+   > [!NOTE]
+   >  Aby wyświetlić listę funkcji w pliku binarnym, Otwórz okno wiersza polecenia w katalogu instalacyjnym Profiling Tools (zazwyczaj tools\performance Tools katalogu w obszarze [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)] katalog instalacyjny), a następnie wpisz **vsinstr / DumpFuncs**  
   
 ## <a name="see-also"></a>Zobacz też  
  [Kontrolowanie zbierania danych](../profiling/controlling-data-collection.md)   

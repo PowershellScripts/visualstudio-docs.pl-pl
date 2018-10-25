@@ -33,12 +33,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9bdff85f80999d312a6c09c0c92e39fedfa37439
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901648"
 ---
 # <a name="viewing-the-structure-of-code"></a>Wyświetlanie struktury kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,23 +145,23 @@ Okno hierarchii wywołań
   
  Można filtrować, mają być wyświetlane w **przeglądarki obiektów**. Za pomocą listy rozwijanej w górnej części okna, możesz wybrać spośród następujących opcji:  
   
--   Wszystkie środowiska .NET Framework  
+- Wszystkie środowiska .NET Framework  
   
--   Silverlight  
+- Silverlight  
   
--   Aktywne rozwiązanie  
+- Aktywne rozwiązanie  
   
--   Niestandardowy zbiór składników  
+- Niestandardowy zbiór składników  
   
- Składniki niestandardowe mogą obejmować pliki wykonywalne kodu zarządzanego, zestawy bibliotek, bibliotek typów i .ocx plików. Nie jest możliwe dodać niestandardowe składniki C++. Ustawienia niestandardowe są zapisywane w katalogu aplikacji użytkownika programu Visual Studio, % APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat.  
+  Składniki niestandardowe mogą obejmować pliki wykonywalne kodu zarządzanego, zestawy bibliotek, bibliotek typów i .ocx plików. Nie jest możliwe dodać niestandardowe składniki C++. Ustawienia niestandardowe są zapisywane w katalogu aplikacji użytkownika programu Visual Studio, % APPDATA%\Roaming\Microsoft\VisualStudio\11.0\ObjBrowEX.dat.  
   
- Okienka po lewej stronie z **przeglądarki obiektów** pokazuje kontenery fizyczne, takie jak składniki .NET Framework i COM. Można rozwinąć węzły kontenerów, aby wyświetlić przestrzenie nazw, które zawierają, a następnie rozwiń przestrzenie nazw, aby wyświetlić typy, które zawierają. Po wybraniu typu, jej elementów członkowskich (na przykład właściwości i metody) są wyświetlane w okienku po prawej stronie. Dolnym okienku po prawej stronie wyświetla szczegółowe informacje na temat wybranego elementu.  
+  Okienka po lewej stronie z **przeglądarki obiektów** pokazuje kontenery fizyczne, takie jak składniki .NET Framework i COM. Można rozwinąć węzły kontenerów, aby wyświetlić przestrzenie nazw, które zawierają, a następnie rozwiń przestrzenie nazw, aby wyświetlić typy, które zawierają. Po wybraniu typu, jej elementów członkowskich (na przykład właściwości i metody) są wyświetlane w okienku po prawej stronie. Dolnym okienku po prawej stronie wyświetla szczegółowe informacje na temat wybranego elementu.  
   
- Możesz wyszukać konkretny element przy użyciu **wyszukiwania** polu w górnej części okna. Wyszukiwanie jest rozróżniana wielkość liter. Wyniki wyszukiwania są wyświetlane w okienku po lewej stronie. Aby wyczyścić wyszukiwanie, wybierz opcję **Wyczyść wyszukiwanie** (X) przycisk Dalej, aby **wyszukiwania** pole.  
+  Możesz wyszukać konkretny element przy użyciu **wyszukiwania** polu w górnej części okna. Wyszukiwanie jest rozróżniana wielkość liter. Wyniki wyszukiwania są wyświetlane w okienku po lewej stronie. Aby wyczyścić wyszukiwanie, wybierz opcję **Wyczyść wyszukiwanie** (X) przycisk Dalej, aby **wyszukiwania** pole.  
   
- **Przeglądarki obiektów** śledzi mają dokonanych wyborów i nawigować między opcje przy użyciu **do przodu** i **ponownie** przycisków na pasku narzędzi.  
+  **Przeglądarki obiektów** śledzi mają dokonanych wyborów i nawigować między opcje przy użyciu **do przodu** i **ponownie** przycisków na pasku narzędzi.  
   
- Możesz użyć **przeglądarki obiektów** można dodać odwołania do zestawu otwartego rozwiązania zaznaczenie elementu (zestawu, przestrzeni nazw, typ lub składowa) i wybierając polecenie **Dodaj odwołanie** przycisk na pasku narzędzi.  
+  Możesz użyć **przeglądarki obiektów** można dodać odwołania do zestawu otwartego rozwiązania zaznaczenie elementu (zestawu, przestrzeni nazw, typ lub składowa) i wybierając polecenie **Dodaj odwołanie** przycisk na pasku narzędzi.  
   
 ### <a name="object-browser-settings"></a>Ustawienia przeglądarki obiektów  
  Za pomocą **ustawienia przeglądarki obiektów** przycisk na pasku narzędzi, możesz określić jedną z następujących widoków.  

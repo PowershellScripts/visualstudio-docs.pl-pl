@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76b2f11e53f8fca5fdf277ce982bcb767d7c8828
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 169c33bc000e45ea44600b738a05bd25fd0f6a0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234608"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864589"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Pobiera właściwości, które opisują tego wątku.  
@@ -43,19 +43,19 @@ int GetThreadProperties (
   
 #### <a name="parameters"></a>Parametry  
  `dwFields`  
- [in] Kombinacja flag z [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) wyliczenia, która określa, które pola `ptp` mają zostać wypełnione.  
+ [in] Kombinacja flag z [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) wyliczenie, które określa, które pola `ptp` mają być wypełnione.  
   
  `ptp`  
- [w, out] A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury, która jest wypełniane właściwości wątku.  
+ [out w] A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) strukturę, która jest wypełniane właściwości wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Informacje zwrócone z tej metody jest zazwyczaj wyświetlana **wątków** okna debugowania.  
+ Informacje zwracane z tej metody jest zazwyczaj wyświetlana **wątków** okna debugowania.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę dla prostego `CProgram` obiekt, który implementuje [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CProgram` obiekt, który implementuje [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interfejsu.  
   
 ```cpp  
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,  

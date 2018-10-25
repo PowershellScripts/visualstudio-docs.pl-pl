@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b9641ccc9064f576f471c7e75d59c3d5b8f0db6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 473cc26a9d3e7b7bc5ec97d1608706aea2ca3009
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898723"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>Dodawanie właściwości śledzenia do definicji języka specyficznego dla domeny
 
@@ -30,29 +30,30 @@ W narzędzia języka specyficznego dla domeny (narzędzia DSL), nazwy wyświetla
 
 W tym instruktażu utworzysz języka specyficznego dla domeny (DSL), który ma Namespace, właściwość, która ma wartość domyślną, w oparciu o właściwość Namespace domyślny model śledzenia. Aby uzyskać więcej informacji na temat śledzenia właściwości, zobacz [Definiowanie właściwości śledzenia](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).
 
--   Obsługa narzędzia DSL, śledzenie deskryptorów właściwości. Jednak projektanta DSL nie można dodać właściwości śledzenia do języka. W związku z tym należy dodać niestandardowy kod definiować ani implementować właściwości śledzenia.
+- Obsługa narzędzia DSL, śledzenie deskryptorów właściwości. Jednak projektanta DSL nie można dodać właściwości śledzenia do języka. W związku z tym należy dodać niestandardowy kod definiować ani implementować właściwości śledzenia.
 
- Właściwości śledzenia ma dwa stany: śledzenie i zaktualizowane przez użytkownika. Śledzenie właściwości oferują następujące funkcje:
+  Właściwości śledzenia ma dwa stany: śledzenie i zaktualizowane przez użytkownika. Śledzenie właściwości oferują następujące funkcje:
 
--   W stanie śledzenia, obliczana jest wartość właściwości śledzenia, a wartość jest aktualizowana co inne właściwości, zmiana modelu.
+- W stanie śledzenia, obliczana jest wartość właściwości śledzenia, a wartość jest aktualizowana co inne właściwości, zmiana modelu.
 
--   Gdy na zaktualizowanej według stanu użytkownika, wartość właściwości śledzenia zachowuje wartość, do którego użytkownik ostatnim ustawieniu właściwości.
+- Gdy na zaktualizowanej według stanu użytkownika, wartość właściwości śledzenia zachowuje wartość, do którego użytkownik ostatnim ustawieniu właściwości.
 
--   W **właściwości** oknie **resetowania** polecenia właściwości śledzenia jest włączone tylko, gdy właściwość jest na zaktualizowanej według stanu użytkownika. **Resetowania** polecenie ustawia parametry logowania właściwości śledzenia do śledzenia stanu.
+- W **właściwości** oknie **resetowania** polecenia właściwości śledzenia jest włączone tylko, gdy właściwość jest na zaktualizowanej według stanu użytkownika. **Resetowania** polecenie ustawia parametry logowania właściwości śledzenia do śledzenia stanu.
 
--   W **właściwości** okna, gdy właściwość śledzenia jest w stanie śledzenia, a jego wartość jest wyświetlana w regularnych czcionki.
+- W **właściwości** okna, gdy właściwość śledzenia jest w stanie śledzenia, a jego wartość jest wyświetlana w regularnych czcionki.
 
--   W **właściwości** okna, gdy właściwość śledzenia na zaktualizowanej według stanu użytkownika, jego wartość jest wyświetlany czcionką pogrubioną.
+- W **właściwości** okna, gdy właściwość śledzenia na zaktualizowanej według stanu użytkownika, jego wartość jest wyświetlany czcionką pogrubioną.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
 Przed rozpoczęciem tego instruktażu, należy najpierw zainstalować te składniki:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581) |
 
 ## <a name="create-the-project"></a>Utwórz projekt
 
@@ -718,33 +719,33 @@ Dodaj kod do obsługi niestandardowe zachowanie po załadowaniu do serializacji 
 
 Następnym krokiem jest, aby skompilować i uruchomić projektanta DSL w nowe wystąpienie klasy [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] tak, aby sprawdzić, czy właściwości śledzenia działa poprawnie.
 
-1.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
+1. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.
 
-2.  Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
+2. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.
 
-     Eksperymentalne kompilacji [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] otwiera **debugowanie** rozwiązania, które zawiera plik pusty test.
+    Eksperymentalne kompilacji [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] otwiera **debugowanie** rozwiązania, które zawiera plik pusty test.
 
-3.  W **Eksploratora rozwiązań**, kliknij dwukrotnie plik Test.trackingPropertyDsl, aby otworzyć go w projektancie, a następnie kliknij na powierzchnię projektową.
+3. W **Eksploratora rozwiązań**, kliknij dwukrotnie plik Test.trackingPropertyDsl, aby otworzyć go w projektancie, a następnie kliknij na powierzchnię projektową.
 
-     Należy zauważyć, że w **właściwości** okna diagramu, **domyślne Namespace** właściwość jest **DefaultNamespace**i **elementy niestandardowe** właściwość **0/0**.
+    Należy zauważyć, że w **właściwości** okna diagramu, **domyślne Namespace** właściwość jest **DefaultNamespace**i **elementy niestandardowe** właściwość **0/0**.
 
-4.  Przeciągnij **ExampleElement** elementu z **przybornika** na powierzchni diagramu.
+4. Przeciągnij **ExampleElement** elementu z **przybornika** na powierzchni diagramu.
 
-5.  W **właściwości** okna dla elementu, wybierz opcję **Element Namespace** właściwości i zmień wartość z **DefaultNamespace** do  **OtherNamespace**.
+5. W **właściwości** okna dla elementu, wybierz opcję **Element Namespace** właściwości i zmień wartość z **DefaultNamespace** do  **OtherNamespace**.
 
-     Należy zauważyć, że wartość **Element Namespace** są teraz wyświetlane pogrubioną czcionką.
+    Należy zauważyć, że wartość **Element Namespace** są teraz wyświetlane pogrubioną czcionką.
 
-6.  W **właściwości** okna, kliknij prawym przyciskiem myszy **Element Namespace**, a następnie kliknij przycisk **resetowania**.
+6. W **właściwości** okna, kliknij prawym przyciskiem myszy **Element Namespace**, a następnie kliknij przycisk **resetowania**.
 
-     Wartość właściwości jest zmieniana na **DefaultNamespace**, a wartość jest przedstawiana w regularnych czcionki.
+    Wartość właściwości jest zmieniana na **DefaultNamespace**, a wartość jest przedstawiana w regularnych czcionki.
 
-     Kliknij prawym przyciskiem myszy **Element Namespace** ponownie. **Resetowania** polecenie teraz jest wyłączone, ponieważ właściwość jest obecnie w stanie śledzenia.
+    Kliknij prawym przyciskiem myszy **Element Namespace** ponownie. **Resetowania** polecenie teraz jest wyłączone, ponieważ właściwość jest obecnie w stanie śledzenia.
 
-7.  Przeciągnij kolejny **ExampleElement** z **przybornika** na powierzchni diagramu, a następnie zmień jego **Element Namespace** do **OtherNamespace**.
+7. Przeciągnij kolejny **ExampleElement** z **przybornika** na powierzchni diagramu, a następnie zmień jego **Element Namespace** do **OtherNamespace**.
 
-8.  Kliknij przycisk powierzchni projektowej.
+8. Kliknij przycisk powierzchni projektowej.
 
-     W **właściwości** okna dla diagramu, a wartość **elementy niestandardowe** jest teraz **1/2**.
+    W **właściwości** okna dla diagramu, a wartość **elementy niestandardowe** jest teraz **1/2**.
 
 9. Zmiana **domyślne Namespace** dla diagramu z **DefaultNamespace** do **NewNamespace**.
 

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b238012a844016324bbdee4df3cc167051815f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f382c83813eb794fc48e33310ba8381030b424fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109834"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846125"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
-Określa warunek skojarzony z licznikiem przebiegu punktu przerwania powodujący uruchomienie punktu przerwania.  
+Określa warunek skojarzony z liczbą — dostęp próbny punkt przerwania, który powoduje, że punkt przerwania uruchomić.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,16 +48,16 @@ public enum enum_BP_PASSCOUNT_STYLE {
   
 ## <a name="members"></a>Elementy członkowskie  
  BP_PASSCOUNT_NONE  
- Określa styl licznika przebiegu nie punktu przerwania.  
+ Określa styl liczba — dostęp próbny nie w punkt przerwania.  
   
  BP_PASSCOUNT_EQUAL  
- Ustawia styl punktu przerwania przebiegu liczba równe. Punkt przerwania generowane, gdy liczba przebieg jest równe ile razy punkt przerwania zostaje trafiony.  
+ Ustawia styl punkt przerwania — dostęp próbny liczba wartość. Punkt przerwania jest uruchamiana, gdy liczba przypadków, gdy zostanie osiągnięty punkt przerwania jest równa Liczba — dostęp próbny.  
   
  BP_PASSCOUNT_EQUAL_OR_GREATER  
- Ustawia styl licznika przebiegu punktu przerwania równą lub większą. Punkt przerwania generowane, gdy liczba razy punkt przerwania zostaje trafiony jest równa lub większa niż liczba przebiegu.  
+ Ustawia styl liczba — dostęp próbny punktu przerwania równym lub większym. Punkt przerwania jest uruchamiana, gdy liczba przypadków, gdy zostanie osiągnięty punkt przerwania jest równa lub większa niż liczba — dostęp próbny.  
   
  BP_PASSCOUNT_MOD  
- Określa modulo Liczba przebiegów. Na przykład, jeśli liczba przebieg jest typu `BP_PASSCOUNT_MOD` i przekaż wartość licznika jest 4, uruchamiany punkt przerwania za każdym razem, gdy liczba trafień jest wielokrotnością liczby 4.  
+ Określa modulo Liczba przebiegów. Na przykład, jeśli liczba — dostęp próbny jest typu `BP_PASSCOUNT_MOD` i przekaż wartość licznika jest 4, uruchamiany punkt przerwania, za każdym razem, gdy liczba trafień jest wielokrotnością liczby 4.  
   
 ## <a name="remarks"></a>Uwagi  
  Używany do `stylePassCount` członkiem [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) strukturę, która z kolei jest elementem członkowskim [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.  

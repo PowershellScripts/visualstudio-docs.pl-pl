@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3dcaf561e54f160e19e2c330486179609c810109
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a4e4268220531db9cdedeeb8fa6e1db27e6ebf87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853203"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Korzystanie z programu Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,33 +87,33 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
 ####  <a name="FullPermissionsITLog"></a> Pytanie: jak skonfigurować uprawnienia dla puli aplikacji  
  **Odp.:** używać Windows **icacls** polecenia lub za pomocą Eksploratora Windows (lub Eksploratora plików). Na przykład:  
   
--   Aby skonfigurować uprawnienia za pomocą Windows **icacls** polecenia:  
+- Aby skonfigurować uprawnienia za pomocą Windows **icacls** polecenia:  
   
-    -   Dla aplikacji sieci web **DefaultAppPool** puli aplikacji:  
+  - Dla aplikacji sieci web **DefaultAppPool** puli aplikacji:  
   
-         `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
+     `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
   
-    -   Dla aplikacji programu SharePoint w **SharePoint — 80** puli aplikacji:  
+  - Dla aplikacji programu SharePoint w **SharePoint — 80** puli aplikacji:  
   
-         `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
+     `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-     —lub—  
+    —lub—  
   
--   Aby skonfigurować uprawnienia za pomocą Eksploratora Windows (lub Eksploratora plików):  
+- Aby skonfigurować uprawnienia za pomocą Eksploratora Windows (lub Eksploratora plików):  
   
-    1.  Otwórz **właściwości** dla katalogu dziennika funkcji IntelliTrace.  
+  1.  Otwórz **właściwości** dla katalogu dziennika funkcji IntelliTrace.  
   
-    2.  Na **zabezpieczeń** kartę, wybrać **Edytuj**, **Dodaj**.  
+  2.  Na **zabezpieczeń** kartę, wybrać **Edytuj**, **Dodaj**.  
   
-    3.  Upewnij się, że **wbudowane zabezpieczenia główne** pojawia się w **wybierz ten typ obiektu** pole. Jeśli nie ma tam, wybierz **wybierane** ją dodać.  
+  3.  Upewnij się, że **wbudowane zabezpieczenia główne** pojawia się w **wybierz ten typ obiektu** pole. Jeśli nie ma tam, wybierz **wybierane** ją dodać.  
   
-    4.  Upewnij się, że komputer lokalny pojawi się w **z tej lokalizacji** pole. Jeśli nie ma tam, wybierz **lokalizacje** go zmienić.  
+  4.  Upewnij się, że komputer lokalny pojawi się w **z tej lokalizacji** pole. Jeśli nie ma tam, wybierz **lokalizacje** go zmienić.  
   
-    5.  W **wprowadź nazwy obiektów do wybrania** Dodaj pulę aplikacji dla aplikacji sieci web lub aplikacji programu SharePoint.  
+  5.  W **wprowadź nazwy obiektów do wybrania** Dodaj pulę aplikacji dla aplikacji sieci web lub aplikacji programu SharePoint.  
   
-    6.  Wybierz **Sprawdź nazwy** do rozpoznania nazwy. Wybierz **OK**.  
+  6.  Wybierz **Sprawdź nazwy** do rozpoznania nazwy. Wybierz **OK**.  
   
-    7.  Upewnij się, że pula aplikacji ma **odczytu & wykonać** uprawnienia.  
+  7.  Upewnij się, że pula aplikacji ma **odczytu & wykonać** uprawnienia.  
   
 ##  <a name="MonitorEvents"></a> Krok 2. Rozpoczynanie monitorowania aplikacji  
  Za pomocą programu Windows PowerShell [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) polecenie, aby rozpocząć monitorowanie aplikacji. Jeśli używasz programu System Center 2012, zobacz [monitorowanie aplikacji sieci Web za pomocą programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
@@ -157,83 +157,83 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
 ####  <a name="Minimizing"></a> P: jak uzyskać większość danych bez spowalniania mojej aplikacji?  
  **Odp.:** Microsoft Monitoring Agent może zbierać dużą ilość danych i ma wpływ na wydajność aplikacji, w zależności od zbierania danych i jak je zebrać. Oto kilka sposobów na zdobycie większości danych bez spowalniania aplikacji:  
   
--   Dla aplikacji sieci web i aplikacji programu SharePoint agent rejestruje dane dla każdej aplikacji, która udostępnia określona pula aplikacji. Może to spowolnić każdej aplikacji, która udostępnia tej samej puli aplikacji, mimo że można ograniczyć kolekcji do modułów, w ramach jednej aplikacji. Aby nie spowalniać inne aplikacje, Hostuj każdą aplikację we własnej puli aplikacji.  
+- Dla aplikacji sieci web i aplikacji programu SharePoint agent rejestruje dane dla każdej aplikacji, która udostępnia określona pula aplikacji. Może to spowolnić każdej aplikacji, która udostępnia tej samej puli aplikacji, mimo że można ograniczyć kolekcji do modułów, w ramach jednej aplikacji. Aby nie spowalniać inne aplikacje, Hostuj każdą aplikację we własnej puli aplikacji.  
   
--   Przejrzyj zdarzenia, dla których agent zbiera dane w planie kolekcji. Edytuj plan kolekcji, aby wyłączyć zdarzenia, które nie są odpowiednie ani interesujące. Może to poprawić wydajność uruchamiania i wydajność środowiska uruchomieniowego.  
+- Przejrzyj zdarzenia, dla których agent zbiera dane w planie kolekcji. Edytuj plan kolekcji, aby wyłączyć zdarzenia, które nie są odpowiednie ani interesujące. Może to poprawić wydajność uruchamiania i wydajność środowiska uruchomieniowego.  
   
-     Aby wyłączyć zdarzenie, ustaw `enabled` atrybutu dla `<DiagnosticEventSpecification>` elementu `false`:  
+   Aby wyłączyć zdarzenie, ustaw `enabled` atrybutu dla `<DiagnosticEventSpecification>` elementu `false`:  
   
-     `<DiagnosticEventSpecification enabled="false">`  
+   `<DiagnosticEventSpecification enabled="false">`  
   
-     Jeśli `enabled` atrybut nie istnieje, zdarzenie jest włączone.  
+   Jeśli `enabled` atrybut nie istnieje, zdarzenie jest włączone.  
   
-     Na przykład:  
+   Na przykład:  
   
-    -   Wyłącz zdarzenia Windows Workflow dla aplikacji, które nie używają Windows Workflow.  
+  -   Wyłącz zdarzenia Windows Workflow dla aplikacji, które nie używają Windows Workflow.  
   
-    -   Wyłącz zdarzenia rejestru dla aplikacji, które uzyskują dostęp do rejestru, ale nie wyświetlają problemów z ustawieniami rejestru.  
+  -   Wyłącz zdarzenia rejestru dla aplikacji, które uzyskują dostęp do rejestru, ale nie wyświetlają problemów z ustawieniami rejestru.  
   
--   Przegląd moduły, dla których agent zbiera dane w planie kolekcji. Edytuj plan kolekcji, aby uwzględnić tylko moduły, które Cię interesują.  
+- Przegląd moduły, dla których agent zbiera dane w planie kolekcji. Edytuj plan kolekcji, aby uwzględnić tylko moduły, które Cię interesują.  
   
-     Zmniejsza to ilość informacji wywołania metody oraz innych danych instrumentacji, które agent zbiera, gdy aplikacja jest uruchomiona i. Te dane ułatwiają przejść przez kod podczas debugowania i przeglądając wartości przekazywane do i zwrócony z wywołania funkcji.  
+   Zmniejsza to ilość informacji wywołania metody oraz innych danych instrumentacji, które agent zbiera, gdy aplikacja jest uruchomiona i. Te dane ułatwiają przejść przez kod podczas debugowania i przeglądając wartości przekazywane do i zwrócony z wywołania funkcji.  
   
-    1.  Otwórz plan kolekcji. Znajdź `<ModuleList>` elementu.  
+  1. Otwórz plan kolekcji. Znajdź `<ModuleList>` elementu.  
   
-    2.  W `<ModuleList>`ustaw `isExclusionList` atrybutu `false`.  
+  2. W `<ModuleList>`ustaw `isExclusionList` atrybutu `false`.  
   
-    3.  Użyj `<Name>` elementu, aby określić każdy moduł przy użyciu jednego z następujących czynności: Nazwa pliku wartość ciągu, aby uwzględnić dowolny moduł, którego nazwa zawiera dany ciąg lub klucz publiczny.  
+  3. Użyj `<Name>` elementu, aby określić każdy moduł przy użyciu jednego z następujących czynności: Nazwa pliku wartość ciągu, aby uwzględnić dowolny moduł, którego nazwa zawiera dany ciąg lub klucz publiczny.  
   
      W tym przykładzie tworzy listę, która gromadzi dane tylko z głównego modułu aplikacji sieci web Fabrikam Fiber:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>FabrikamFiber.Web.dll</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>FabrikamFiber.Web.dll</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Aby zebrać dane z każdego modułu, którego nazwa zawiera "Fabrikam", Utwórz listę podobny do poniższego:  
+   Aby zebrać dane z każdego modułu, którego nazwa zawiera "Fabrikam", Utwórz listę podobny do poniższego:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>Fabrikam</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>Fabrikam</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     Aby zebrać dane z modułów, określając tokeny klucza publicznego, Utwórz listę podobny do poniższego:  
+   Aby zebrać dane z modułów, określając tokeny klucza publicznego, Utwórz listę podobny do poniższego:  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>PublicKeyToken:B77A5C561934E089</Name>  
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>  
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>  
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>PublicKeyToken:B77A5C561934E089</Name>  
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>  
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>  
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     **P: Dlaczego nie po prostu wykluczyć modułów?**  
+   **P: Dlaczego nie po prostu wykluczyć modułów?**  
   
-     **Odp.:** plany kolekcji domyślnie wykluczają moduły przez ustawienie `isExclusionList` atrybutu `true`. Jednak to może nadal zbierać dane z modułów, które nie spełniają kryteriów listy lub które mogą nie być interesujące, takie jak moduły strony trzeciej lub typu open source.  
+   **Odp.:** plany kolekcji domyślnie wykluczają moduły przez ustawienie `isExclusionList` atrybutu `true`. Jednak to może nadal zbierać dane z modułów, które nie spełniają kryteriów listy lub które mogą nie być interesujące, takie jak moduły strony trzeciej lub typu open source.  
   
 #### <a name="q-what-values-does-the-agent-collect"></a>Pytanie: jakie wartości jest zbieranie agenta?  
  **Odp.:** Aby zmniejszyć wpływ na wydajność, agent zbiera tylko następujące wartości:  
   
--   Pierwotne typy danych, które są przekazywane do metod oraz zwracanych przez  
+- Pierwotne typy danych, które są przekazywane do metod oraz zwracanych przez  
   
--   Typy danych pierwotnych w polach obiektów najwyższego poziomu przekazywane do metod oraz zwracanych przez  
+- Typy danych pierwotnych w polach obiektów najwyższego poziomu przekazywane do metod oraz zwracanych przez  
   
- Załóżmy, że masz `AlterEmployee` podpis metody, która akceptuje liczbę całkowitą `id` i `Employee` obiektu `oldemployee`:  
+  Załóżmy, że masz `AlterEmployee` podpis metody, która akceptuje liczbę całkowitą `id` i `Employee` obiektu `oldemployee`:  
   
- `public Employee AlterEmployee(int id, Employee oldemployee)`  
+  `public Employee AlterEmployee(int id, Employee oldemployee)`  
   
- `Employee` Typ ma następujące atrybuty: `Id`, `Name`, i `HomeAddress`. Istnieje relacja skojarzenia między `Employee` i `Address` typu.  
+  `Employee` Typ ma następujące atrybuty: `Id`, `Name`, i `HomeAddress`. Istnieje relacja skojarzenia między `Employee` i `Address` typu.  
   
- ![Relacja między pracowników i adres](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
+  ![Relacja między pracowników i adres](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
   
- Agent zapisuje wartości dla `id`, `Employee.Id`, `Employee.Name` i `Employee` obiekt zwracany z `AlterEmployee` metody. Jednak agent nie zapisuje informacje o `Address` innych obiektów niż posiadającym wartość zerową lub nie. Agent nie zapisuje również dane dotyczące zmiennych lokalnych w `AlterEmployee` metody, chyba że inne metody używają tych zmiennych lokalnych jako parametrów w tym momencie są zapisywane jako parametry metody.  
+  Agent zapisuje wartości dla `id`, `Employee.Id`, `Employee.Name` i `Employee` obiekt zwracany z `AlterEmployee` metody. Jednak agent nie zapisuje informacje o `Address` innych obiektów niż posiadającym wartość zerową lub nie. Agent nie zapisuje również dane dotyczące zmiennych lokalnych w `AlterEmployee` metody, chyba że inne metody używają tych zmiennych lokalnych jako parametrów w tym momencie są zapisywane jako parametry metody.  
   
 ##  <a name="SaveEvents"></a> Krok 3: Zapisz zarejestrowane zdarzenia  
  Po znalezieniu błędu lub problemu z wydajnością, Zapisz zarejestrowane zdarzenia w dzienniku IntelliTrace. Agent tworzy dziennik tylko wtedy, gdy zarejestrował zdarzenia. Jeśli używasz programu System Center 2012, zobacz [monitorowanie aplikacji sieci Web za pomocą programu Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
@@ -241,63 +241,63 @@ Aplikacje sieci web ASP.NET hostowanych przez usługi IIS i programu SharePoint 
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Zapisz zarejestrowane zdarzenia, ale Kontunuuj monitorowanie  
  Wykonaj następujące kroki, gdy chcesz utworzyć dziennik IntelliTrace, ale nie chcesz ponownie uruchomić aplikacji lub zatrzymywania monitorowania. Agent kontynuuje monitorowanie, nawet jeśli ponowne uruchomienie serwera lub aplikacji.  
   
-1.  Na serwerze sieci web Otwórz okno wiersza polecenia programu Windows PowerShell jako administrator.  
+1. Na serwerze sieci web Otwórz okno wiersza polecenia programu Windows PowerShell jako administrator.  
   
-2.  Uruchom [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) polecenie, aby zapisać migawkę dziennika IntelliTrace:  
+2. Uruchom [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) polecenie, aby zapisać migawkę dziennika IntelliTrace:  
   
-     **CheckPoint-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **CheckPoint-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \- lub —  
+    \- lub —  
   
-     **CheckPoint-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **CheckPoint-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
-     Na przykład:  
+    Na przykład:  
   
-     **PS C:\\> Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
+    **PS C:\\> Checkpoint-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
-     —lub—  
+    —lub—  
   
-     **PS C: > Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
+    **PS C: > Checkpoint-WebApplicationMonitoring "IIS:sitesFabrikamFabrikamFiber.Web"**  
   
-     Aby uzyskać więcej informacji, uruchom **get-help Checkpoint-WebApplicationMonitoring — szczegółowe** polecenia lub **get-help Checkpoint-WebApplicationMonitoring — przykłady** polecenia.  
+    Aby uzyskać więcej informacji, uruchom **get-help Checkpoint-WebApplicationMonitoring — szczegółowe** polecenia lub **get-help Checkpoint-WebApplicationMonitoring — przykłady** polecenia.  
   
-3.  Kopiuj dziennik do bezpiecznego folderu udostępnionego, a następnie otwórz dziennik z komputera, który ma Visual Studio Enterprise (ale nie w wersji Professional lub Community).  
+3. Kopiuj dziennik do bezpiecznego folderu udostępnionego, a następnie otwórz dziennik z komputera, który ma Visual Studio Enterprise (ale nie w wersji Professional lub Community).  
   
-    > [!IMPORTANT]
-    >  Należy zachować ostrożność podczas udostępniania dzienników IntelliTrace, ponieważ mogą one zawierać dane osobowe i wrażliwe. Upewnij się, kto mogą uzyskiwać dostęp do tych dzienników ma uprawnienia do wzięcia pod tych danych. Sprawdź zasady zachowania poufności informacji firmy.  
+   > [!IMPORTANT]
+   >  Należy zachować ostrożność podczas udostępniania dzienników IntelliTrace, ponieważ mogą one zawierać dane osobowe i wrażliwe. Upewnij się, kto mogą uzyskiwać dostęp do tych dzienników ma uprawnienia do wzięcia pod tych danych. Sprawdź zasady zachowania poufności informacji firmy.  
   
- **Następnie:** [diagnozowanie rejestrowane zdarzenia w programie Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **Następnie:** [diagnozowanie rejestrowane zdarzenia w programie Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ### <a name="save-recorded-events-and-stop-monitoring"></a>Zapisz zarejestrowane zdarzenia i zatrzymać monitorowanie  
  Jeśli po prostu chcesz uzyskać informacje diagnostyczne podczas odtwarzania konkretnego problemu, wykonaj następujące kroki. To spowoduje ponowne uruchomienie wszystkich aplikacji sieci web na serwerze sieci web.  
   
-1.  Na serwerze sieci web Otwórz okno wiersza polecenia programu Windows PowerShell jako administrator.  
+1. Na serwerze sieci web Otwórz okno wiersza polecenia programu Windows PowerShell jako administrator.  
   
-2.  Uruchom [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) polecenie, aby utworzyć dziennik IntelliTrace i zatrzymać monitorowanie aplikacji internetowej:  
+2. Uruchom [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) polecenie, aby utworzyć dziennik IntelliTrace i zatrzymać monitorowanie aplikacji internetowej:  
   
-     **Stop-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Stop-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \- lub —  
+    \- lub —  
   
-     **Stop-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Stop-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
-     Lub aby zatrzymać monitorowanie wszystkich aplikacji sieci web:  
+    Lub aby zatrzymać monitorowanie wszystkich aplikacji sieci web:  
   
-     **Stop-WebApplicationMonitoring - wszystkie**  
+    **Stop-WebApplicationMonitoring - wszystkie**  
   
-     Na przykład:  
+    Na przykład:  
   
-     **PS C:\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
+    **PS C:\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
-     \- lub —  
+    \- lub —  
   
-     **PS C:\\> Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
+    **PS C:\\> Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   
-     Aby uzyskać więcej informacji, uruchom **get-help Stop-WebApplicationMonitoring — szczegółowe** polecenia lub **get-help Stop-WebApplicationMonitoring — przykłady** polecenia.  
+    Aby uzyskać więcej informacji, uruchom **get-help Stop-WebApplicationMonitoring — szczegółowe** polecenia lub **get-help Stop-WebApplicationMonitoring — przykłady** polecenia.  
   
-3.  Kopiuj dziennik do bezpiecznego folderu udostępnionego, a następnie otwórz dziennik z komputera, który ma Visual Studio Enterprise.  
+3. Kopiuj dziennik do bezpiecznego folderu udostępnionego, a następnie otwórz dziennik z komputera, który ma Visual Studio Enterprise.  
   
- **Następnie:** [diagnozowanie rejestrowane zdarzenia w programie Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **Następnie:** [diagnozowanie rejestrowane zdarzenia w programie Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ## <a name="q--a"></a>Pytania i odpowiedzi  
   

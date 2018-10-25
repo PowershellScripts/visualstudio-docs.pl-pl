@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc549ecc4cfa3b3cbbb754585c751b16df2fd8a6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c66ea53bde17f2936567cd93ae0be166f35382ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794320"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925545"
 ---
 # <a name="idebugpropertygetextendedinfo"></a>IDebugProperty::GetExtendedInfo
 Pobiera rozszerzone informacje dla właściwości.  
@@ -43,16 +43,16 @@ HRESULT GetExtendedInfo (
  [in] Liczba obiektów rozszerzonych informacji.  
   
  `rgguidExtendedInfo`  
- [in] Tablica `GUID`s jest przekazywana, dzięki czemu wiele elementów rozszerzone informacje mogą być pobierane w tym samym czasie.  
+ [in] Tablica `GUID`s jest przekazywana tak, aby wiele elementów rozszerzone informacje mogą być pobierane, w tym samym czasie.  
   
  `pExtendedInfo`  
- [out] Zwraca tablicę `VARIANT`s, którego można pobrać informacji o rozszerzonych właściwości.  
+ [out] Zwraca tablicę `VARIANT`s, którego można pobrać informacji o właściwości rozszerzonej.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zwykle `S_OK`.  
+ Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="remarks"></a>Uwagi  
- Ten interfejs pobiera rozszerzone informacje dla tego obiektu. Interfejs API istnieje tylko na potrzeby pobierania informacji, które nie nadają się do pobierania za pomocą `IDebugProperty::GetPropertyInfo`).  
+ Ten interfejs pobiera rozszerzone informacje dla tego obiektu. Interfejs API istnieje wyłącznie na potrzeby pobierania informacji, które nie jest przystosowany do pobierania przy użyciu `IDebugProperty::GetPropertyInfo`).  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugProperty](../../winscript/reference/idebugproperty-interface.md)
+ [IDebugProperty, interfejs](../../winscript/reference/idebugproperty-interface.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae99e144e2eb96d898df157c263348cdccc7ecde
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 82ddeb3bb9a813cf2faa7a1f77364dc792792f5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978193"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894654"
 ---
 # <a name="l2dbformxaml-source-code"></a>Kod źródłowy L2DBForm.xaml
 
@@ -238,7 +238,6 @@ Ostatnia sekcja interfejsu użytkownika **Dodawanie nowej książki**, nie używ
         </DockPanel>
     </StackPanel>
 </Window>
-
 ```
 
 ### <a name="comments"></a>Komentarze

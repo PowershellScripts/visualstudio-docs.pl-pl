@@ -14,23 +14,23 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e34be1203ba97c23302bd28dcf7578ba6cffd2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa16c4c02f92f71d3288896d56b94a6d570c7dd4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205585"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930417"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>Poradnik: Równoczesne kompilowanie wielu konfiguracji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Większość typów projektów z wieloma lub nawet wszystkich ich konfiguracje kompilacji, w tym samym czasie można tworzyć przy użyciu **tworzenie partii** okno dialogowe. Jednak nie można utworzyć następujące typy projektów w wielu konfiguracjach kompilacji, w tym samym czasie:  
   
-1.  [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacje są kompilowane dla Windows przy użyciu języka JavaScript.  
+1. [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacje są kompilowane dla Windows przy użyciu języka JavaScript.  
   
-2.  Wszystkie projekty języka Visual Basic.  
+2. Wszystkie projekty języka Visual Basic.  
   
- Aby uzyskać więcej informacji o konfiguracjach kompilacji, zobacz [ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md).  
+   Aby uzyskać więcej informacji o konfiguracjach kompilacji, zobacz [ogólne informacje o konfiguracjach kompilacji](../ide/understanding-build-configurations.md).  
   
 ### <a name="to-build-a-project-in-multiple-build-configurations"></a>Aby skompilować projekt w wielu konfiguracjach kompilacji  
   

@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: b880353b227eae86c7c35f274271fb404b62ede0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b62dc86425dcbebb225c66eecd51505f674e20ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199525"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949035"
 ---
 # <a name="how-to-update-records-in-a-database"></a>Porady: aktualizacja rekordów w bazie danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,18 +62,18 @@ Możesz użyć `TableAdapter.Update` metodę, aby aktualizować (edytować) reko
   
 #### <a name="to-update-records-in-a-database-with-the-tableadapterupdate-method-that-takes-dataset-datatable-datarow-or-datarows"></a>Aby zaktualizować rekordy w bazie danych przy użyciu TableAdapter.Update — metoda, która przyjmuje DataSet, DataTable, DataRow lub DataRows()  
   
-1.  Może edytować rekordy w żądany <xref:System.Data.DataTable> przez bezpośrednią edycję <xref:System.Data.DataRow> w <xref:System.Data.DataTable>. Aby uzyskać więcej informacji, zobacz [porady: edytowanie wierszy w DataTable](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c).  
+1. Może edytować rekordy w żądany <xref:System.Data.DataTable> przez bezpośrednią edycję <xref:System.Data.DataRow> w <xref:System.Data.DataTable>. Aby uzyskać więcej informacji, zobacz [porady: edytowanie wierszy w DataTable](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c).  
   
-2.  Po edycji wiersze <xref:System.Data.DataTable>, wywołaj `TableAdapter.Update` metody. Możesz kontrolować ilość danych, które można zaktualizować przez przekazanie albo cały <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, tablicę <xref:System.Data.DataRow>s lub pojedynczej <xref:System.Data.DataRow>.  
+2. Po edycji wiersze <xref:System.Data.DataTable>, wywołaj `TableAdapter.Update` metody. Możesz kontrolować ilość danych, które można zaktualizować przez przekazanie albo cały <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, tablicę <xref:System.Data.DataRow>s lub pojedynczej <xref:System.Data.DataRow>.  
   
-     Poniższy kod przedstawia sposób edytowania rekordu w <xref:System.Data.DataTable> , a następnie wywołać `TableAdapter.Update` metodę, aby zapisać zmiany w bazie danych. (W tym przykładzie użyto tabeli Region bazy danych Northwind.)  
+    Poniższy kod przedstawia sposób edytowania rekordu w <xref:System.Data.DataTable> , a następnie wywołać `TableAdapter.Update` metodę, aby zapisać zmiany w bazie danych. (W tym przykładzie użyto tabeli Region bazy danych Northwind.)  
   
-     [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
-     [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
+    [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
+    [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
   
- Jeśli aplikacja używa obiektów do przechowywania danych w aplikacji, możesz użyć TableAdapter `DBDirect` metody służące do wysyłania danych z obiektów bezpośrednio do bazy danych. Te metody umożliwiają poszczególne wartości dla każdej kolumny są przekazywane jako parametry metody. Wywołanie tej metody aktualizuje istniejący rekord w bazie danych przy użyciu wartości kolumn, przekazana do metody.  
+   Jeśli aplikacja używa obiektów do przechowywania danych w aplikacji, możesz użyć TableAdapter `DBDirect` metody służące do wysyłania danych z obiektów bezpośrednio do bazy danych. Te metody umożliwiają poszczególne wartości dla każdej kolumny są przekazywane jako parametry metody. Wywołanie tej metody aktualizuje istniejący rekord w bazie danych przy użyciu wartości kolumn, przekazana do metody.  
   
- W poniższej procedurze użyto Northwind `Region` tabeli jako przykład.  
+   W poniższej procedurze użyto Northwind `Region` tabeli jako przykład.  
   
 #### <a name="to-update-records-in-a-database-using-the-tableadapterupdate-method-that-takes-column-values"></a>Do aktualizowania rekordów w bazie danych przy użyciu TableAdapter.Update — metoda, która przyjmuje wartości w kolumnie  
   

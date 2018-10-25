@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81417fbb025fdea70a4b9fb51f0b49fb0257cd8a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f77d7f89bd7970a17c78414393cd8856a6f62b4d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872331"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
-Pobiera nazwę pliku plik źródłowy, który zawiera położenie dokumentu.  
+Pobiera nazwę pliku pliku źródłowego, który zawiera położenie dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,10 +44,10 @@ int GetFileName(
  [out] Zwraca nazwę pliku źródłowego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Plik źródłowy nie może zawsze być nazwa pliku (plik źródłowy może nie istnieje na dysku, na przykład).  
+ Plik źródłowy nie może mieć zawsze nazwę pliku (pliku źródłowego może nie istnieć na dysku, na przykład).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

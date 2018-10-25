@@ -23,12 +23,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c0ae1272820b7d8ec5ef124aaaa77d44a1285dde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9613d154cd0d9bb307fbde6d7255a8f1ecce000
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297404"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891482"
 ---
 # <a name="insert-new-records-into-a-database"></a>Wstawianie nowych rekordów do bazy danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,18 +51,18 @@ Wstawianie nowych rekordów do bazy danych, umożliwia `TableAdapter.Update` met
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>Wstawianie nowych rekordów do bazy danych za pomocą TableAdapter.Update — metoda  
   
-1.  Dodawanie nowych rekordów do żądaną <xref:System.Data.DataTable> przez utworzenie nowego <xref:System.Data.DataRow> i dodanie go do <xref:System.Data.DataTable.Rows%2A> kolekcji. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie wierszy do DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
+1. Dodawanie nowych rekordów do żądaną <xref:System.Data.DataTable> przez utworzenie nowego <xref:System.Data.DataRow> i dodanie go do <xref:System.Data.DataTable.Rows%2A> kolekcji. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie wierszy do DataTable](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf).  
   
-2.  Po dodaniu nowych wierszy do <xref:System.Data.DataTable>, wywołaj `TableAdapter.Update` metody. Możesz kontrolować ilość danych, które można zaktualizować przez przekazanie albo cały <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, tablicę <xref:System.Data.DataRow>s lub pojedynczej <xref:System.Data.DataRow>.  
+2. Po dodaniu nowych wierszy do <xref:System.Data.DataTable>, wywołaj `TableAdapter.Update` metody. Możesz kontrolować ilość danych, które można zaktualizować przez przekazanie albo cały <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, tablicę <xref:System.Data.DataRow>s lub pojedynczej <xref:System.Data.DataRow>.  
   
-     Poniższy kod przedstawia sposób dodawania nowego rekordu do <xref:System.Data.DataTable> , a następnie wywołać `TableAdapter.Update` metodę, aby zapisać nowy wiersz w bazie danych. (W tym przykładzie użyto `Region` tabeli w bazie danych Northwind.)  
+    Poniższy kod przedstawia sposób dodawania nowego rekordu do <xref:System.Data.DataTable> , a następnie wywołać `TableAdapter.Update` metodę, aby zapisać nowy wiersz w bazie danych. (W tym przykładzie użyto `Region` tabeli w bazie danych Northwind.)  
   
-     [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
-     [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
+    [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
+    [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
   
- Jeśli aplikacja używa obiektów do przechowywania danych, możesz użyć `TableAdapter.Insert` metodę w celu utworzenia nowych wierszy bezpośrednio w bazie danych. `Insert` Metoda przyjmuje jako parametry poszczególne wartości dla każdej kolumny. Wywołanie metody Wstawia nowy rekord do bazy danych przy użyciu wartości parametrów przekazanych.  
+   Jeśli aplikacja używa obiektów do przechowywania danych, możesz użyć `TableAdapter.Insert` metodę w celu utworzenia nowych wierszy bezpośrednio w bazie danych. `Insert` Metoda przyjmuje jako parametry poszczególne wartości dla każdej kolumny. Wywołanie metody Wstawia nowy rekord do bazy danych przy użyciu wartości parametrów przekazanych.  
   
- W poniższej procedurze użyto `Region` tabeli w bazie danych Northwind jako przykład.  
+   W poniższej procedurze użyto `Region` tabeli w bazie danych Northwind jako przykład.  
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>Wstawianie nowych rekordów do bazy danych za pomocą TableAdapter.INSERT — metoda  
   

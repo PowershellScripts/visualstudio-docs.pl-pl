@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1409431b0cdaec775ecd420fb9b6ea1ded0868de
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 1f63e4f43db3f8c4b24b43bda02cf00b52befc94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842186"
 ---
 # <a name="analyze-cpu-usage"></a>Analizowanie użycia procesora CPU
 Jeśli musisz zbadać problemy z wydajnością w aplikacji, dobrym miejscem do rozpoczęcia jest zrozumienie, sposobem użycia procesora CPU. **Użycie procesora CPU** narzędzie pokazuje, gdzie Procesor spędza czasu wykonywania Visual C++, Visual C# / Visual Basic oraz kodu JavaScript. Począwszy od programu Visual Studio 2015 Update 1, możesz zobaczyć podział użycia procesora CPU dla poszczególnych funkcji bez opuszczania debugera. Włącz profilowanie procesora CPU włączać i wyłączać podczas debugowania i wyświetlania wyników, gdy wykonanie zostanie zatrzymana, na przykład w punkcie przerwania.  
@@ -28,33 +28,33 @@ Windows 7 lub nowszy jest wymagany do korzystania z narzędzia profilowania, prz
   
 ##  <a name="collect-cpu-usage-data"></a>Zbieranie danych użycia procesora CPU  
   
-1.  W programie Visual Studio, należy ustawić Konfiguracja rozwiązania **wersji** i wybierz cel wdrożenia.  
+1. W programie Visual Studio, należy ustawić Konfiguracja rozwiązania **wersji** i wybierz cel wdrożenia.  
   
-     ![Wybieranie wersji i komputer lokalny](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![Wybieranie wersji i komputer lokalny](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   Aplikacja uruchomiona w **wersji** tryb zapewnia lepsze widok rzeczywistej wydajności aplikacji.  
+   -   Aplikacja uruchomiona w **wersji** tryb zapewnia lepsze widok rzeczywistej wydajności aplikacji.  
   
-    -   Uruchamianie aplikacji na komputerze lokalnym, najlepiej replikuje wykonywanie zainstalowanych aplikacji.  
+   -   Uruchamianie aplikacji na komputerze lokalnym, najlepiej replikuje wykonywanie zainstalowanych aplikacji.  
   
-    -   Jeśli dane są zbierane z urządzeniem zdalnym, uruchom aplikację bezpośrednio na urządzeniu, a nie za pomocą połączenia pulpitu zdalnego.  
+   -   Jeśli dane są zbierane z urządzeniem zdalnym, uruchom aplikację bezpośrednio na urządzeniu, a nie za pomocą połączenia pulpitu zdalnego.  
   
-    -   W przypadku aplikacji Windows Phone, zbieranie danych bezpośrednio z **urządzenia** zapewnia najbardziej dokładnych danych.  
+   -   W przypadku aplikacji Windows Phone, zbieranie danych bezpośrednio z **urządzenia** zapewnia najbardziej dokładnych danych.  
   
-2.  Na **debugowania** menu, wybierz **Profiler wydajności**.  
+2. Na **debugowania** menu, wybierz **Profiler wydajności**.  
   
-3.  Wybierz **użycie procesora CPU** , a następnie wybierz **Start**.  
+3. Wybierz **użycie procesora CPU** , a następnie wybierz **Start**.  
   
-     ![Wybierz opcję użycia procesora CPU](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![Wybierz opcję użycia procesora CPU](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  Po uruchomieniu aplikacji, kliknij przycisk **uzyskać maksymalna liczba**. Poczekaj około sekundy po wyświetleniu danych wyjściowych, a następnie wybierz **uzyskać maksymalny numer Async**. Oczekiwania między kliknięć przycisków sprawia, że ułatwiają izolowanie przycisk kliknij procedur w raport diagnostyczny.  
+4. Po uruchomieniu aplikacji, kliknij przycisk **uzyskać maksymalna liczba**. Poczekaj około sekundy po wyświetleniu danych wyjściowych, a następnie wybierz **uzyskać maksymalny numer Async**. Oczekiwania między kliknięć przycisków sprawia, że ułatwiają izolowanie przycisk kliknij procedur w raport diagnostyczny.  
   
-5.  Gdy zostanie wyświetlony drugi wiersz danych wyjściowych, wybierz **Zatrzymaj Kolekcjonowanie** w Centrum wydajności i diagnostyki.  
+5. Gdy zostanie wyświetlony drugi wiersz danych wyjściowych, wybierz **Zatrzymaj Kolekcjonowanie** w Centrum wydajności i diagnostyki.  
   
- ![Zatrzymaj zbieranie danych CpuUsage](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![Zatrzymaj zbieranie danych CpuUsage](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
   
- Narzędzie użycie procesora CPU analizuje dane i wyświetla raport.  
+   Narzędzie użycie procesora CPU analizuje dane i wyświetla raport.  
   
- ![Raport CpuUsage](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
+   ![Raport CpuUsage](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analizowanie raportu użycia procesora CPU  
   

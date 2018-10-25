@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c57ab701ead4a9e60a163c50f4f241fbe60a012b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f36192a194e1ced3815813f87925496d2ce07979
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843031"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 Ustawia typ odwołania. Zarezerwowane do użytku w przyszłości.  
@@ -41,7 +41,7 @@ int SetReferenceType (
   
 #### <a name="parameters"></a>Parametry  
  `dwRefType`  
- [in] Wartość z zakresu od [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) wyliczenia, która określa typ odwołania.  
+ [in] Wartość z zakresu od [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) wyliczenie, który określa typ odwołania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zawsze zwraca `E_NOTIMPL`.  

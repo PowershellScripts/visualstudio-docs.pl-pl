@@ -2,7 +2,8 @@
 # [Samouczek środowiska IDE](ide-tour.md)
 
 # [Instalacja](installation.md)
-## [Podgląd instalacji](install-preview.md)
+## [Instalowanie i używanie programu za zaporą lub serwerem proxy](install-behind-a-firewall-or-proxy-server.md)
+## [Instalowanie wersji zapoznawczej](install-preview.md)
 ## [Aktualizacja](update.md)
 ## [Dezinstalacja](uninstall.md)
 

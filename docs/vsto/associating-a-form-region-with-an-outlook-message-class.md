@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a3b14086957d37809c8fbcba88386daff57be4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892002"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050265"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Kojarzenie regionu formularza z klasą wiadomości programu Outlook
   Można określić elementy, które program Microsoft Office Outlook wyświetlania regionu formularza przez kojarzenie regionu formularza z klasą wiadomości dla każdego elementu. Na przykład, jeśli chcesz dołączyć regionu formularza do dolnej części elementu poczty, można skojarzyć regionu formularza z `IPM.Note` klasą wiadomości.  
@@ -111,7 +111,7 @@ ms.locfileid: "49892002"
  [Tworzenie regionów formularzy programu Outlook](../vsto/creating-outlook-form-regions.md)   
  [Wskazówki: Projektowanie regionów formularzy programu Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [Wytyczne dotyczące tworzenia regionów formularzy programu Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [Nazwa formularza i komunikat klasy — omówienie](http://msdn.microsoft.com/library/office/ff867629.aspx)   
- [Jak formularzy programu Outlook i elementy współpracują ze sobą](http://msdn.microsoft.com/library/office/ff869706.aspx)  
+ [Nazwa formularza i komunikat klasy — omówienie](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)   
+ [Jak formularzy programu Outlook i elementy współpracują ze sobą](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)  
   
   

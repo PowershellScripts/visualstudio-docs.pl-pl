@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bef854fd04ce8ac2ddf6fe834b3bede0f371eefe
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945549"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050303"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Używanie wyrażeń regularnych w programie Visual Studio
 
@@ -49,7 +49,8 @@ Oto kilka przykładów:
 |Dopasowuje zero lub więcej wystąpień poprzedniego wyrażenia (dopasowuje tak małą znaków, jak to możliwe)|*?|`e.*?e` pasuje do "ee" w "feeder" ale nie do "eede".|
 |Pasuje jedno lub więcej wystąpień poprzedniego wyrażenia (dopasowuje tak małą znaków, jak to możliwe)|+?|`e.+?e` pasuje "do ente" i "erprise" w "enterprise", ale nie całego słowa "enterprise".|
 |Zakotwiczenia ciągu dopasowania do początku wiersza lub ciągu|^|`^car` Dopasowuje słowa "samochód" tylko wtedy, gdy pojawia się na początku wiersza.|
-|Zakotwiczenia ciągu dopasowania na końcu wiersza|\r?$|`End\r?$` pasuje do "end" tylko wtedy, gdy pojawia się na końcu wiersza.|
+|Zakotwiczenia ciągu dopasowania na końcu wiersza|\r?$|`end\r?$` pasuje do "end" tylko wtedy, gdy pojawia się na końcu wiersza.|
+|Zakotwiczenia ciągu dopasowania na końcu pliku|$|`end$` pasuje do "end" tylko wtedy, gdy pojawia się na końcu pliku.|
 |Dopasuj jeden dowolny znak, które są dostępne w zestawie|[abc]|`b[abc]` pasuje do "ba", "bb" i "bc".|
 |Dopasuj dowolny znak zakresu znaków|[a-f]|`be[n-t]` Dopasowuje "bet" w "between", "ben" w "beneath" i "bes" w "beside", ale nie "below".|
 |Przechwytywanie i niejawne numerowanie wyrażenia zawartgoe w nawiasach|()|`([a-z])X\1` pasuje "do aXa" i "bXb", ale nie "aXb". "\1" odnosi się do pierwszej grupy wyrażenie "[a-z]".|
@@ -58,8 +59,8 @@ Oto kilka przykładów:
 |Dopasowuje wyrażenie przed lub po symbolu.|&#124;|`(sponge\|mud) bath` pasuje "sponge bath" i "mud bath."|
 |Uniknij znaku następującej odwróconej kreski ukośnej| \\ |`\^` pasuje do znaku ^.|
 |Określ liczbę wystąpień poprzedzającego znaku lub grupy|{x},, gdzie x jest liczbą wystąpień|`x(ab){2}x` odpowiada "xababx" i `x(ab){2,3}x` odpowiada "xababx" i "xabababx", ale nie "xababababx".|
-|Dopasowuje tekst w klasie znaku Unicode, gdzie "X" jest numerem kodu Unicode. Aby uzyskać więcej informacji dotyczących klas znaków Unicode zobacz<br /><br /> [Właściwości znaków standardu Unicode 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}|`\p{Lu}` pasuje do "T" i "D" w "Thomas Doe".|
-|Dopasuj granicę wyrazu|`\b` (Poza klasą znak \b Określa granicy słowa i wewnątrz znak klasy określa backspace).|`\bin` pasuje do "w" w "wewnątrz" ale nie "pinto".|
+|Dopasowuje tekst w klasie znaku Unicode. Aby uzyskać więcej informacji dotyczących klas znaków Unicode zobacz<br /><br /> [Właściwości znaków standardu Unicode 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, gdzie "X" jest numerem kodu Unicode.|`\p{Lu}` pasuje do "T" i "D" w "Thomas Doe".|
+|Dopasuj granicę wyrazu|\b (poza klasą znak `\b` określa granicy słowa i wewnątrz znak klasy `\b` określa backspace.)|`\bin` pasuje do "w" w "wewnątrz" ale nie "pinto".|
 |Dopasowuje znak końca wiersza (czyli znak powrotu karetki następuje nowy wiersz).|\r?\n|`End\r?\nBegin` pasuje do "Koniec" i "Początek" tylko wtedy, gdy "Koniec" jest ostatnim ciągiem w wierszu a "Początek" jest pierwszym ciągiem w następnym wierszu.|
 |Pasuje do dowolnego znaku alfanumerycznego|\w|`a\wd` Dopasowuje "add" i "a1d" ale nie "d".|
 |Dopasowuje dowolny biały znak.|(? ([^ \r\n])\s)|`Public\sInterface` pasuje do frazy "Interfejs publiczny".|

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3acd9add6f19ec258f808fd55a955eac14b6e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e95677bde8fbd1a05e83ab460396201316a7786d
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831747"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050316"
 ---
 # <a name="project-element-msbuild"></a>Project — element (MSBuild)
 Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.  
@@ -59,7 +59,7 @@ Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
 | Atrybut | Opis |
 |------------------------| - |
 | `DefaultTargets` | Atrybut opcjonalny.<br /><br /> Domyślny element docelowy lub cele, które mają być punktem wejścia kompilacji, jeśli żadne miejsce docelowe nie zostało określone. Wiele elementów docelowych są rozdzielonych średnikami (;) rozdzielonych.<br /><br /> Jeśli określono nie domyślnego obiektu docelowego w jednym `DefaultTargets` atrybutu lub [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] wiersza polecenia, aparat wykonuje pierwszego obiektu docelowego w pliku projektu po [importu](../msbuild/import-element-msbuild.md) elementy zostały ocenione. |
-| `InitialTargets` | Atrybut opcjonalny.<br /><br /> Początkowa docelowego lub obiekty docelowe do uruchomienia przed obiektów docelowych określonych w `DefaultTargets` atrybutu lub w wierszu polecenia. Wiele elementów docelowych są rozdzielonych średnikami (;) rozdzielonych. |
+| `InitialTargets` | Atrybut opcjonalny.<br /><br /> Początkowa docelowego lub obiekty docelowe do uruchomienia przed obiektów docelowych określonych w `DefaultTargets` atrybutu lub w wierszu polecenia. Wiele elementów docelowych to rozdzielana średnikami (`;`) rozdzielonych. Jeśli zdefiniowano wielu plików zaimportowanych `InitialTargets`, zostaną uruchomione wszystkie elementy docelowe, które wspomniano, w kolejności polecenie importuje napotkaniu. |
 | `Sdk` | Atrybut opcjonalny. <br /><br /> Nazwa zestawu SDK i opcjonalnie wersja służące do tworzenia niejawne zaimportuj instrukcje, które są dodawane do pliku .proj. Jeśli wersja nie jest określona, program MSBuild będzie podejmować próby rozwiązania domyślnej wersji.  Na przykład `<Project Sdk="Microsoft.NET.Sdk" />` lub `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Atrybut opcjonalny.<br /><br /> Można określić wartości dla $(MSBuildBinPath) i $(MSBuildToolsPath) korzysta z wersji programu MSBuild zestawu narzędzi. |
 | `TreatAsLocalProperty` | Atrybut opcjonalny.<br /><br /> Nazwy właściwości, które nie były uznawane za będzie globalnym. Ten atrybut zapobiega zastępowanie wartości właściwości, które są ustawione w pliku projektu lub miejsc docelowych i wszystkie Importy kolejnych określonych właściwości wiersza polecenia. Wiele właściwości są rozdzielonych średnikami (;) rozdzielonych.<br /><br /> Zwykle globalne właściwości zastępują wartości właściwości, które są ustawione w pliku projektu lub miejsc docelowych. Jeśli właściwość jest wymieniona w `TreatAsLocalProperty` wartość, wartość właściwości globalnej nie zastępuje wartości właściwości, które są ustawiane w pliku i wszystkie Importy kolejne. Aby uzyskać więcej informacji, zobacz [porady: kompilacja tych samych plików źródłowych przy użyciu różnych opcji](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Uwaga:** ustawić globalne właściwości w wierszu polecenia, używając **— właściwość** (lub **-p**) przełącznika. Możesz również ustawić lub zmodyfikować globalnych właściwości dla projektów podrzędnych w kompilacji wielu projektów za pomocą `Properties` atrybut zadanie programu MSBuild. Aby uzyskać więcej informacji, zobacz [zadanie MSBuild](../msbuild/msbuild-task.md). |

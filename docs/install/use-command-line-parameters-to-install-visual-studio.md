@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3822e7d3c4ac027dbb010c642de6d9bf0ff1d13a
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 051935a2c7022af3c6811e90a89697a08f52fa9a
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138927"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050368"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017
 
@@ -33,9 +33,9 @@ Po zainstalowaniu programu Visual Studio 2017 z poziomu wiersza polecenia można
 
 Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instalatora, który jest plikiem mała liczba godzin (około 1MB), który inicjuje proces pobierania. Program inicjujący jest pierwszy plik wykonywalny, który jest uruchamiany, gdy można pobrać z witryny Visual Studio. Aby uzyskać bezpośredni link do najnowszej wersji program inicjujący dla wydanie produktu, który instalujesz, użyj następujących linków:
 
-* [Visual Studio 2017 Enterprise](https://aka.ms/vs/15/release/vs_enterprise.exe)
-* [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
-* [Visual Studio 2017 Community](https://aka.ms/vs/15/release/vs_community.exe)
+- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 
 ## <a name="list-of-command-line-parameters"></a>Lista parametrów wiersza polecenia
 
@@ -149,7 +149,7 @@ Każda operacja generuje kilka plików dziennika w `%TEMP%` katalogu, który wsk
 
 ## <a name="see-also"></a>Zobacz także
 
-* [Przykładowe parametry wiersza polecenia dla instalacji programu Visual Studio 2017](command-line-parameter-examples.md)
-* [Tworzenie instalacji offline programu Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
-* [Zautomatyzowana instalacja programu Visual Studio przy użyciu pliku odpowiedzi](automated-installation-with-response-file.md)
-* [Visual Studio 2017 obciążeń i składników identyfikatorów](workload-and-component-ids.md)
+- [Przykładowe parametry wiersza polecenia dla instalacji programu Visual Studio 2017](command-line-parameter-examples.md)
+- [Tworzenie instalacji offline programu Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+- [Zautomatyzowana instalacja programu Visual Studio przy użyciu pliku odpowiedzi](automated-installation-with-response-file.md)
+- [Visual Studio 2017 obciążeń i składników identyfikatorów](workload-and-component-ids.md)

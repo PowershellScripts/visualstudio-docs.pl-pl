@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c8a051641811da3658ffe556982c67649704069
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 0d49bbff482683c4ac3e0f5f6a4060b176db0d94
+ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/03/2018
+ms.lasthandoff: 10/25/2018
 ms.locfileid: "37433359"
 ---
 # <a name="allocation-hook-functions"></a>Funkcje punktu zaczepienia alokacji
@@ -56,4 +56,4 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
   
 ## <a name="see-also"></a>Zobacz też  
  [Punkty zaczepienia alokacji i alokacji pamięci środowiska wykonawczego języka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
- [Debugowanie pisanie funkcji punktów zaczepienia](../debugger/debug-hook-function-writing.md)   
+ [Pisanie funkcji debugowania punktów zaczepienia](../debugger/debug-hook-function-writing.md)   

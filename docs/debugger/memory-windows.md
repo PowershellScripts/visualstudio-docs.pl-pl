@@ -1,7 +1,7 @@
 ---
 title: Wyświetlanie pamięci dla zmiennych w debugerze | Dokumentacja firmy Microsoft
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 10/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -25,97 +25,98 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a64442aacc9c39efb78be133e4a79576e0956af
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 04ba88470a6b83a49d7c233266b144387586137f
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919471"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050122"
 ---
-# <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Użyj Windows pamięć w debugerze programu Visual Studio
-**Pamięci** okna zapewnia wgląd w to obszar pamięci, który jest używany przez aplikację. **Obejrzyj** oknie **QuickWatch** okno dialogowe **automatyczne** oknie i **lokalne** okno Pokaż zawartość zmiennych, które są przechowywaną w określonej lokalizacji w pamięci. Ale **pamięci** okno zawiera obraz na dużą skalę. Ten widok może być wygodną badanie dużej części danych (buforów lub dużych ciągów, na przykład), które nie są wyświetlane poprawnie w innych oknach. Jednak **pamięci** okno nie jest ograniczona do wyświetlania danych. Wyświetla wszystkie elementy w obszarze pamięci czy zawartość jest dane, kod lub losowych bity wyrzucania elementów w pamięci nieprzypisane.  
+# <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Używanie okien pamięci w debugerze programu Visual Studio
+
+Podczas debugowania, **pamięci** okno pokazuje aplikacja używa miejsce w pamięci. 
+
+Debugera, takie jak **Obejrzyj**, **Autos**, **lokalne**i **QuickWatch** okna dialogowego dowiesz się, zmienne, które są przechowywane w określonych lokalizacje w pamięci. **Pamięci** okno przedstawia ogólny obraz. Widok pamięci jest wygodne w przypadku badanie dużej części danych (buforów lub dużych ciągów, na przykład), które nie są wyświetlane poprawnie w innych oknach. 
+
+**Pamięci** okno nie jest ograniczona do wyświetlania danych. Wyświetla wszystkie elementy w obszarze pamięci, włącznie z danymi, kodu i losowe bity wyrzucania elementów w pamięci nieprzypisane.  
+
+**Pamięci** okno nie jest dostępna dla skryptu lub debugowania SQL. Te języki nie rozpoznają koncepcji pamięci.  
   
- **Pamięci** okno jest dostępne tylko wtedy, gdy debugowanie na poziomie adresów jest włączone w **opcje** okno dialogowe **debugowanie** węzła. **Pamięci** okno nie jest dostępne dla skryptu lub SQL, które są języki, które nie rozpoznają koncepcji pamięci.  
+## <a name="open-a-memory-window"></a>Otwórz okno pamięci  
   
-## <a name="opening-a-memory-window"></a>Otwierając okno pamięci  
+Inne okna debugera, takie jak **pamięci** systemu windows są dostępne tylko podczas sesji debugowania. 
+
+>[!IMPORTANT]
+>Aby włączyć **pamięci** systemu windows, **Włącz debugowanie na poziomie adresów** należy wybrać w **narzędzia** > **opcje** (lub **Debugowania** > **opcje**) > **debugowania** > **ogólne**. 
+
+**Aby otworzyć okno pamięci**
   
-#### <a name="to-open-a-memory-window"></a>Aby otworzyć okno pamięci  
+1. Upewnij się, że **Włącz debugowanie na poziomie adresów** wybrano **narzędzia** > **opcje** (lub **debugowania**  >  **Opcje**) > **debugowania** > **ogólne**. 
+   
+1. Rozpocznij debugowanie wybierając zielona strzałka, naciskając klawisz **F5**, lub wybierając **debugowania** > **Rozpocznij debugowanie**.  
+   
+2. W obszarze **debugowania** > **Windows** > **pamięci**, wybierz opcję **pamięci 1**, **pamięci 2**, **Pamięci 3**, lub **pamięci 4**. (Niektóre wersje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oferować tylko jeden **pamięci** okna.)  
+
+## <a name="move-around-in-the-memory-window"></a>Poruszanie się w oknie pamięci  
+
+Przestrzeni adresowej komputera jest duży i mogą łatwo utracić swoje miejsce, przewijając w **pamięci** okna. 
+
+Wyższe adresy pamięci są wyświetlane w dolnej części okna. Aby wyświetlić adres wyższe, przewiń w dół. Aby wyświetlić adres niższy, przewiń w górę.  
+
+Możesz natychmiast przejść do określonego adresu w **pamięci** okna przy użyciu przeciągania i upuszczania lub wprowadzając adres w **adres** pola. **Adres** polu można podawać adresów alfanumeryczne i wyrażeń, które dają adresów, takich jak `e.User.NonroamableId`. 
+
+Aby wymusić natychmiastowe ponownej oceny wyrażenia w **adres** wybierz zaokrąglone strzałkę **automatycznie Oblicz ponownie** ikony. 
+
+Domyślnie **pamięci** traktuje okna **adres** wyrażenia jako wyrażenia na żywo, które są ponownie oceniane jako uruchomienia aplikacji. Wyrażenia na żywo mogą być przydatne, na przykład, aby wyświetlić pamięci, która jest korzystały zmiennej wskaźnika.  
+
+**Przeciągnij i upuść, aby przejść do lokalizacji w pamięci:**  
+   
+1. W dowolnym oknie debugera wybierz adres pamięci lub zmiennej wskaźnika, który zawiera adres pamięci.  
+   
+2. Przeciąganie i upuszczanie adres lub wskaźnika w **pamięci** okna. Pojawi się w tym adresem **adres** pola i **pamięci** okna dostosowuje się do tego adresu jest wyświetlana u góry. 
   
-1. Uruchom profilowanie, jeśli nie jesteś już w trybie debugowania.  
+**Aby przejść do lokalizacji w pamięci, wprowadzając ją w polu adresu:**
   
-2. W **debugowania** menu wskaż **Windows**. Następnie wskaż **pamięci** a następnie kliknij przycisk **pamięci 1**, **pamięci 2**, **3 pamięci**, lub **pamięci 4**. (Niższe wersje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mieć tylko jeden **pamięci** okna. Jeśli używasz jednego z tych wersji, wystarczy kliknąć **pamięci**.)  
+- Wpisz lub wklej adres lub wyrażenia w **adres** pole i naciśnij klawisz **Enter**, lub wybierz go z listy rozwijanej w **adres** pola. **Pamięci** okna dostosowuje się do tego adresu jest wyświetlana u góry.
   
-## <a name="paging-in-the-memory-window"></a>Stronicowanie w oknie pamięci  
- **Pamięci** okno ma pionowy pasek przewijania, który działa w sposób niestandardowy. Przestrzeń adresowa nowoczesnych komputera jest bardzo duże, a użytkownik może łatwo giną Przechwytywanie przycisku przewijania suwaka, a następnie przeciągając go do losowo wybranej lokalizacji. Z tego powodu uchwytu jest "obciążony" i zawsze pozostaje w środkowej części paska przewijania. W aplikacjach kodu macierzystego można stronę w górę lub w dół, ale nie można swobodnie Przewiń o.  
+## <a name="customize-the-memory-window"></a>Dostosowywanie okna pamięci 
+
+Domyślnie zawartość pamięci są wyświetlane jako 1-bajtowe liczby całkowite w formacie szesnastkowym, a szerokość okna określa liczbę kolumn. Można dostosować sposób **pamięci** okno wyświetla zawartość pamięci.  
   
- Wyższe adresy pamięci są wyświetlane w dolnej części okna. Aby wyświetlić adres wyższe, przewiń w dół, nie rozmiarze.  
+**Aby zmienić format zawartości pamięci:**  
   
-#### <a name="to-page-up-or-down-in-memory"></a>Stronę w górę lub w dół w pamięci  
+-  Kliknij prawym przyciskiem myszy **pamięci** okna, a następnie wybierz formaty, które mają z menu kontekstowego.  
   
-1.  Na stronie szczegółów (przeniesienie na wyższe adresu pamięci), kliknij w obszarze przycisku przewijania w pionowy pasek przewijania.  
+**Aby zmienić liczbę kolumn w oknie pamięci:**
   
-2.  Stronę w górę (przeniesienie na niższym adresu pamięci), kliknij powyżej przycisku suwaka pionowy pasek przewijania.  
+- Wybierz strzałkę listy rozwijanej obok pozycji **kolumn** pola, a następnie wybierz liczbę kolumn do wyświetlenia lub wybierz **automatycznie** automatycznego dostosowania oparte na szerokość okna.  
   
-## <a name="selecting-a-memory-location"></a>Wybieranie lokalizacji w pamięci  
- Jeśli chcesz przechodzić bezpośrednio do wybranej lokalizacji w pamięci, możesz to zrobić przy użyciu operacji przeciągania i upuszczania lub też edytując wartość **adres** pole. **Adres** w polu można nie tylko wartości liczbowe, ale także wyrażeń, które dają adresów. Domyślnie **pamięci** traktuje okna **adres** wyrażenia jako wyrażenia na żywo jest ponownie oceniane, gdy program jest wykonywana. Wyrażenia na żywo mogą być bardzo przydatne. Na przykład umożliwia im wyświetlanie pamięci, która jest korzystały wskaźnik.  
+Jeśli nie chcesz, aby zawartość **pamięci** okna, aby zmienić co aplikacja zostanie uruchomiona, można wyłączyć oceny wyrażenia na żywo. 
+
+**Aby przełączyć na żywo oceny:**  
   
-#### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>Aby wybrać lokalizację pamięci przez przeciąganie i upuszczanie  
+- Kliknij prawym przyciskiem myszy **pamięci** okna, a następnie wybierz **automatycznie Oblicz ponownie** w menu kontekstowym. 
+
+  >[!NOTE]
+  >Na żywo wyrażenie oceny jest przełącznik i jest domyślnie, więc wybranie **automatycznie Oblicz ponownie** wyłączenie rejestrowania. Wybieranie **automatycznie Oblicz ponownie** ponownie włącza je ponownie. 
   
-1.  W dowolnym oknie Wybierz pamięci adres lub wskaźnik zmienna, która zawiera adres pamięci.  
+Można ukryć lub wyświetlić pasek narzędzi w górnej części **pamięci** okna. Nie będziesz mieć dostęp do **adres** pól lub innych narzędzi, gdy pasek narzędzi jest ukryty.  
   
-2.  Przeciągnij adres lub wskaźnik do **pamięci** okna.  
+**Aby przełączać wyświetlanie paska narzędzi:**  
   
-#### <a name="to-select-a-memory-location-by-editing"></a>Aby wybrać lokalizację pamięci, edytując  
+- Kliknij prawym przyciskiem myszy **pamięci** okna, a następnie wybierz **Pokaż pasek narzędzi** w menu kontekstowym. Pasek narzędzi pojawi się lub znika, w zależności od poprzedniego stanu.  
   
-1.  W **pamięci** wybierz **adres** pole.  
+## <a name="follow-a-pointer-through-memory"></a>Podążał za wskaźnikiem za pośrednictwem pamięci  
+
+W aplikacji kod macierzysty można użyć nazw rejestrów jako wyrażenia na żywo. Na przykład można użyć wskaźnik stosu do wykonania na stosie.  
   
-2.  Wpisz lub wklej adres, aby zobaczyć, a następnie naciśnij klawisz **ENTER**.  
+**Aby podążał za wskaźnikiem za pośrednictwem pamięci:**
   
-## <a name="changing-the-way-the-memory-window-displays-information"></a>Zmienia sposób Wyświetla informacje okna pamięci  
- Można dostosować sposób **pamięci** okno wyświetla zawartość pamięci. Domyślnie zawartość pamięci są wyświetlane jako jedna bajtowe liczby całkowite w formacie szesnastkowym, a liczba kolumn jest określana automatycznie przez bieżący szerokość okna.  
+1. W **pamięci** okna **adres** wprowadź wyrażenie wskaźnika, który znajduje się w bieżącym zakresie. W zależności od języka może być konieczne odwołania do niego.  
   
-#### <a name="to-change-the-format-of-the-memory-contents"></a>Aby zmienić format zawartość pamięci  
+2. Naciśnij klawisz **wprowadź**.  
+   
+   Kiedy używasz polecenia debug takich jak **kroku**, adres pamięci, wyświetlana w **adres** pól i w górnej części **pamięci** okno automatycznie zmienia się, gdy wskaźnik myszy zmiany.  
   
-1.  Kliknij prawym przyciskiem myszy **pamięci** okna.  
-  
-2.  Wybierz żądany format.  
-  
-#### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>Aby zmienić liczbę kolumn w oknie pamięci  
-  
-1. Na pasku narzędzi u góry **pamięci** oknie Znajdź **kolumn** listy.  
-  
-2. W **kolumn** , wybierz liczbę kolumn, które chcesz wyświetlić, lub zaznacz na liście **automatycznie** automatycznego dostosowania do Dopasuj szerokość okna.  
-  
-   Jeśli nie chcesz, aby zawartość **pamięci** wykonuje okna, aby zmienić jako program, można wyłączyć oceny wyrażenia na żywo.  
-  
-#### <a name="to-toggle-live-evaluation"></a>Aby przełączyć na żywo oceny  
-  
-1. Kliknij prawym przyciskiem myszy **pamięci** okna.  
-  
-2. W menu skrótów kliknij **automatycznie Oblicz ponownie**.  
-  
-    Jeśli ocena na żywo jest włączona, zostanie wybrana opcja, a kliknięcie powoduje wyłączenie oceny na żywo. Jeśli oceny na żywo jest wyłączona, nie zaznaczono opcji, a następnie klikając go Włącza obliczanie na żywo.  
-  
-   Można ukryć lub wyświetlić pasek narzędzi w górnej części **pamięci** okna. Nie masz dostępu do adresu pola lub innych narzędzi, tak długo, jak pasek narzędzi jest ukryty.  
-  
-#### <a name="to-toggle-the-toolbar"></a>Aby przełączyć na pasku narzędzi  
-  
-1.  Kliknij prawym przyciskiem myszy **pamięci** okna.  
-  
-2.  W menu skrótów kliknij **Pokaż pasek narzędzi**.  
-  
-     Pasek narzędzi pojawi się lub znika, w zależności od poprzedniego stanu.  
-  
-## <a name="following-a-pointer-through-memory"></a>Śledzenie wskaźnika za pomocą pamięci  
- W aplikacji kod macierzysty można użyć nazw rejestrów jako wyrażenia na żywo. Na przykład można użyć wskaźnik stosu do wykonania na stosie.  
-  
-#### <a name="to-follow-a-pointer-through-memory"></a>Aby podążał za wskaźnikiem za pośrednictwem pamięci  
-  
-1.  W **pamięci** okna **adres** wpisz wyrażenie wskaźnika. Zmienna wskaźnika musi być w bieżącym zakresie. W zależności od języka może być konieczne odwołania do niego.  
-  
-2.  Naciśnij klawisz **ENTER**.  
-  
-     Teraz, kiedy używasz polecenia wykonywania takich jak **kroku**, adres pamięci, która jest wyświetlana automatycznie zmieni się zgodnie ze zmianami wskaźnika.  
-  
-## <a name="see-also"></a>Zobacz też  
+## <a name="see-also"></a>Zobacz także  
  [Wyświetlanie danych w debugerze](../debugger/viewing-data-in-the-debugger.md)

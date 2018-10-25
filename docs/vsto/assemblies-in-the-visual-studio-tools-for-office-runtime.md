@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2f4e486ad1e19a85bc0f7c64a56db9303bb70960
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 550963966b45ed2d8024b36735f17ff24b6701fc
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677599"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050212"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Zestawy w Visual Studio Tools for Office runtime
   Podczas tworzenia projektu pakietu Office, Visual Studio automatycznie dodaje odwołania do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] zestawów, które są używane dla tego typu projektu oraz docelowego środowiska .NET Framework projektu. Istnieją różne zestawy w rozszerzeniach pakietu Office, programu .NET Framework 3.5 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], i [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Aby uzyskać więcej informacji na temat rozszerzeń pakietu Office, zobacz [Visual Studio Tools dla pakietu Office runtime ― omówienie](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
@@ -59,7 +59,7 @@ ms.locfileid: "35677599"
 |Microsoft.Office.Tools.Word.v9.0.dll|Udostępnia elementów hosta i kontrolek hosta dla rozwiązania programu Word. Aby uzyskać więcej informacji, zobacz [automatyzowanie programu Word za pomocą obiektów rozszerzonych](../vsto/automating-word-by-using-extended-objects.md).|  
 |Microsoft.Office.Tools.v9.0.dll|Zawiera następujące typy:<br /><br /> [RemoteBindableComponent](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb546360(v=vs.90)) klasy, która dostarcza możliwości wiązania danych dla kontrolki hosta w poziomie dokumentu dostosowań.<br />-Innych typów, które są częścią Visual Studio Tools for Office runtime infrastruktury i nie są przeznaczone do użycia bezpośrednio w kodzie.|  
 |Microsoft.VisualStudio.Tools.Applications.Runtime.v9.0.dll|Zawiera następujące typy:<br /><br /> <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> Atrybutu i <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType> interfejs, który służy do obiektów danych w pamięci podręcznej w dostosowaniu na poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [dane z pamięci podręcznej](../vsto/caching-data.md).<br />-Wyjątki, które mogą zostać zgłoszone przez Visual Studio Tools for Office runtime.<br />-Innych typów, które są częścią Visual Studio Tools for Office runtime infrastruktury i nie są przeznaczone do użycia bezpośrednio w kodzie.|  
-|Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|Udostępnia <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> interfejs, który można zaimplementować tak, aby uruchomić dodatkowe czynności instalacyjne jako ostatni krok Instalatora ClickOnce dla rozwiązań pakietu Office. Aby uzyskać więcej informacji, zobacz [wdrażaniem rozwiązań Office zaawansowane](http://msdn.microsoft.com/9147b6f6-849f-4cb1-b2c5-e22658d74b02).|  
+|Microsoft.VisualStudio.Tools.Applications.Runtime.v10.0.dll|Udostępnia <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> interfejs, który można zaimplementować tak, aby uruchomić dodatkowe czynności instalacyjne jako ostatni krok Instalatora ClickOnce dla rozwiązań pakietu Office. Aby uzyskać więcej informacji, zobacz [wdrażaniem rozwiązań Office zaawansowane](/previous-versions/visualstudio/visual-studio-2010/dd234217(v=vs.100)).|  
 |Microsoft.VisualStudio.Tools.Applications.ServerDocument.v10.0.dll|Zawiera następujące typy:<br /><br /> <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> Klasy, która umożliwia programowe dołączanie zestawy dostosowywania do dokumentów i uzyskiwać dostęp do pamięci podręcznej w dokumentach. Aby uzyskać więcej informacji, zobacz [Zarządzanie dokumentami na serwerze za pomocą klasy ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md).<br />-Kilka klas, które reprezentują hierarchii buforowanych danych w dostosowaniu na poziomie dokumentu. Aby uzyskać więcej informacji, zobacz [dostęp do danych w dokumentach na serwerze](../vsto/accessing-data-in-documents-on-the-server.md).|  
 |Microsoft.VisualStudio.Tools.Office.Runtime.v10.0.dll|Zawiera następujące typy:<br /><br /> -Microsoft.VisualStudio.Tools.Office.Runtime.Security.AddInSecurityEntry i Microsoft.VisualStudio.Tools.Office.Runtime.Security.UserInclusionList klas, których można użyć do utworzenia użytkownika włączenia wpisów na liście udzielenia zaufania do pakietu Office rozwiązania przeznaczone dla programu .NET Framework 3.5.<br />-Innych typów, które są częścią Visual Studio Tools for Office runtime infrastruktury i nie są przeznaczone do użycia bezpośrednio w kodzie.|  
   

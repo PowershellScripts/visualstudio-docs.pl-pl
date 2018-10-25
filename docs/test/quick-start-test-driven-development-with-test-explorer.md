@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1c05ca6cbcf1f365e6b8147cbaab6004035f633f
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 8dcdd51a53c27ffe5a1bde3170c683d8b1a753b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863903"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837090"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Szybki Start: Testów opartych na tworzenie aplikacji przy użyciu Eksploratora testów
 
@@ -33,33 +33,33 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Aby uruchomić testy jednostkowe za pomocą Eksploratora testów
 
-1.  Tworzenie testów jednostkowych, które używają wybranych środowisk testowych.
+1. Tworzenie testów jednostkowych, które używają wybranych środowisk testowych.
 
-     Na przykład aby utworzyć test który używa środowiska Mstest:
+    Na przykład aby utworzyć test który używa środowiska Mstest:
 
-    1.  Utwórz projekt testu.
+   1.  Utwórz projekt testu.
 
-         W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#** lub **Visual C++**, a następnie wybierz **testu**.
+        W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#** lub **Visual C++**, a następnie wybierz **testu**.
 
-         Wybierz **projektu testu jednostkowego**.
+        Wybierz **projektu testu jednostkowego**.
 
-    2.  Napisz każdy test jednostkowy jako metodę. Prefiks każdej metody testowej z `[TestMethod]` atrybutu.
+   2.  Napisz każdy test jednostkowy jako metodę. Prefiks każdej metody testowej z `[TestMethod]` atrybutu.
 
-2.  Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
+2. Poszczególne testy nie ma żadnych zależności, które uniemożliwiają są uruchamiane w dowolnej kolejności, należy włączyć równoległe wykonywanie testów za pomocą ![WYKONAJ&#95;parallelicon&#45;małe](../test/media/ute_parallelicon-small.png) Przełącz przycisk na pasku narzędzi. Może to znacznie zmniejszyć czas poświęcony na uruchamianie wszystkich testów.
 
-3.  Na pasku menu wybierz **testu** > **uruchomić testy jednostkowe** > **wszystkie testy**.
+3. Na pasku menu wybierz **testu** > **uruchomić testy jednostkowe** > **wszystkie testy**.
 
-     Rozwiązanie zostanie skompilowane i uruchomić testy.
+    Rozwiązanie zostanie skompilowane i uruchomić testy.
 
-     Eksplorator testów otwiera i wyświetla podsumowanie wyników.
+    Eksplorator testów otwiera i wyświetla podsumowanie wyników.
 
- **Aby wyświetlić pełną listę testów:** wybierz **Pokaż wszystko** w dowolnej kategorii.
+   **Aby wyświetlić pełną listę testów:** wybierz **Pokaż wszystko** w dowolnej kategorii.
 
- **Aby wyświetlić szczegóły wyniku testu:** zaznacz test w Eksploratorze testów, aby wyświetlić szczegóły, takie jak komunikaty wyjątków w okienku szczegółów.
+   **Aby wyświetlić szczegóły wyniku testu:** zaznacz test w Eksploratorze testów, aby wyświetlić szczegóły, takie jak komunikaty wyjątków w okienku szczegółów.
 
- **Aby przejść do kodu testu:** kliknij dwukrotnie test w Eksploratorze testów lub wybierz **Otwórz Test** w menu skrótów.
+   **Aby przejść do kodu testu:** kliknij dwukrotnie test w Eksploratorze testów lub wybierz **Otwórz Test** w menu skrótów.
 
- **Aby debugować test:** Otwórz menu skrótów dla jednego lub więcej testów, a następnie wybierz **Debuguj wybrane testy**.
+   **Aby debugować test:** Otwórz menu skrótów dla jednego lub więcej testów, a następnie wybierz **Debuguj wybrane testy**.
 
 > [!IMPORTANT]
 > Wyświetlane wyniki dotyczą ostatniego działają. Kolorowe paski wyników pokazują jedynie wyniki wykonanych testów. Na przykład jeśli uruchomisz kilka testów i niektóre z nich zakończyć się niepowodzeniem, a następnie uruchom testy zakończone powodzeniem, następnie paski wyników zostaną wyświetlone wszystkie zielony.
@@ -74,61 +74,61 @@ Zaleca się utworzenie testów jednostkowych w celu zapewnienia poprawnego dzia�
 
 ### <a name="create-the-test-and-method"></a>Tworzenie testu i metody
 
-1.  Utwórz projekt Visual biblioteki klas C#. Projekt ten będzie zawierał kod, który chcemy dostarczyć. W tym przykładzie jest on nazwany `MyMath`.
+1. Utwórz projekt Visual biblioteki klas C#. Projekt ten będzie zawierał kod, który chcemy dostarczyć. W tym przykładzie jest on nazwany `MyMath`.
 
-2.  Utwórz projekt testu.
+2. Utwórz projekt testu.
 
-    -   W **nowy projekt** okno dialogowe, wybierz **Visual C#** > **testu** , a następnie wybierz **projektu testu jednostkowego**.
+   -   W **nowy projekt** okno dialogowe, wybierz **Visual C#** > **testu** , a następnie wybierz **projektu testu jednostkowego**.
 
-         ![Nowe projekty kodu i testowanie](../test/media/unittestexplorerwalk1.png)
+        ![Nowe projekty kodu i testowanie](../test/media/unittestexplorerwalk1.png)
 
-3.  Napisz podstawową metodę testową. Sprawdź wynik uzyskany dla określonych danych wejściowych:
+3. Napisz podstawową metodę testową. Sprawdź wynik uzyskany dla określonych danych wejściowych:
 
-    ```csharp
+   ```csharp
 
-    [TestMethod]
-    public void BasicRooterTest()
-    {
-      // Create an instance to test:
-      Rooter rooter = new Rooter();
-      // Define a test input and output value:
-      double expectedResult = 2.0;
-      double input = expectedResult * expectedResult;
-      // Run the method under test:
-      double actualResult = rooter.SquareRoot(input);
-      // Verify the result:
-      Assert.AreEqual(expectedResult, actualResult,
-          delta: expectedResult / 100);
-    }
-    ```
+   [TestMethod]
+   public void BasicRooterTest()
+   {
+     // Create an instance to test:
+     Rooter rooter = new Rooter();
+     // Define a test input and output value:
+     double expectedResult = 2.0;
+     double input = expectedResult * expectedResult;
+     // Run the method under test:
+     double actualResult = rooter.SquareRoot(input);
+     // Verify the result:
+     Assert.AreEqual(expectedResult, actualResult,
+         delta: expectedResult / 100);
+   }
+   ```
 
-4.  Wygeneruj metodę z testu.
+4. Wygeneruj metodę z testu.
 
-    1.  Umieść kursor w `Rooter`, a następnie w menu skrótów wybierz polecenie **Generuj** > **nowy typ**.
+   1.  Umieść kursor w `Rooter`, a następnie w menu skrótów wybierz polecenie **Generuj** > **nowy typ**.
 
-    2.  W **Generuj nowy typ** okno dialogowe, zestaw **projektu** do projektu biblioteki klas. W tym przykładzie jest `MyMath`.
+   2.  W **Generuj nowy typ** okno dialogowe, zestaw **projektu** do projektu biblioteki klas. W tym przykładzie jest `MyMath`.
 
-    3.  Umieść kursor w `SquareRoot`, a następnie w menu skrótów wybierz polecenie **Generuj** > **szkieletu metody**.
+   3.  Umieść kursor w `SquareRoot`, a następnie w menu skrótów wybierz polecenie **Generuj** > **szkieletu metody**.
 
-5.  Uruchom test jednostkowy.
+5. Uruchom test jednostkowy.
 
-    1.  Na **testu** menu, wybierz **uruchomić testy jednostkowe** > **wszystkie testy**.
+   1.  Na **testu** menu, wybierz **uruchomić testy jednostkowe** > **wszystkie testy**.
 
-         Rozwiązanie zostanie skompilowane i działa.
+        Rozwiązanie zostanie skompilowane i działa.
 
-         Eksplorator testów otwiera i wyświetla wyniki.
+        Eksplorator testów otwiera i wyświetla wyniki.
 
-         Test pojawi się w obszarze **testy zakończone niepomyślnie**.
+        Test pojawi się w obszarze **testy zakończone niepomyślnie**.
 
-6.  Wybierz nazwę testu.
+6. Wybierz nazwę testu.
 
-     Szczegóły testu zostaną wyświetlone w dolnej części Eksploratora testów.
+    Szczegóły testu zostaną wyświetlone w dolnej części Eksploratora testów.
 
-7.  Wybierz elementy w obszarze **ślad stosu** aby zobaczyć, gdzie test nie powiódł się.
+7. Wybierz elementy w obszarze **ślad stosu** aby zobaczyć, gdzie test nie powiódł się.
 
- ![Testów jednostkowych Test Explorer z wyświetlonym nie powiodło się.](../test/media/unittestexplorerwalkthrough2.png)
+   ![Testów jednostkowych Test Explorer z wyświetlonym nie powiodło się.](../test/media/unittestexplorerwalkthrough2.png)
 
- Na tym etapie utworzono test i procedurę zastępczą, którą zmodyfikujesz, aby test zakończy się pomyślnie.
+   Na tym etapie utworzono test i procedurę zastępczą, którą zmodyfikujesz, aby test zakończy się pomyślnie.
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Po każdej zmianie należy wprowadzić wszystkie testy.
 

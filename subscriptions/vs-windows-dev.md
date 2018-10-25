@@ -9,12 +9,12 @@ description: Więcej informacji na temat konta dewelopera Windows, które są do
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 73a0d9b9cfb8056f78c03387754807e7ffe81552
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: be7a740e22201a230658dec0803a8523f7716462
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832410"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Konto dewelopera Windows w subskrypcji programu Visual Studio
 
@@ -29,27 +29,28 @@ Zaleca się utworzenie okna przeglądarki "private" dla tego procesu.  Na przyk�
 1. Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Znajdź Kafelek Windows konto dewelopera w sekcji narzędzia i kliknąć **uzyskać kod** link w dolnej części kafelka korzyści.  Skopiuj kod do Schowka, a następnie kliknij przycisk **Aktywuj**.
-    > [!div class="mx-imgBorder"]
-    > ![Kafelek korzyści dla deweloperów Windows](_img\vs-windows-dev\vs-windows-dev-tile.png)
+   > [!div class="mx-imgBorder"]
+   > ![Kafelek korzyści dla deweloperów Windows](_img/vs-windows-dev/vs-windows-dev-tile.png)
 
-2. Na [ https://developer.microsoft.com ](https://developer.microsoft.com) lokacji można rozpocząć proces rejestracji.  Kliknij przycisk **Zarejestruj** aby kontynuować.
-    > [!div class="mx-imgBorder"]
-    > ![Rejestracja korzyści dla deweloperów Windows](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+3. Na [ https://developer.microsoft.com ](https://developer.microsoft.com) lokacji można rozpocząć proces rejestracji.  Kliknij przycisk **Zarejestruj** aby kontynuować.
+   > [!div class="mx-imgBorder"]
+   > ![Rejestracja korzyści dla deweloperów Windows](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 
-3. Zaloguj się do Twojej subskrypcji.  Jeśli masz wiele kont, wybierz ten, który został skojarzony z subskrypcją przedsiębiorstwa.
-4. Na następnej stronie Wybierz kraj lub region, gdzie mieszkasz lub w przypadku, gdy znajduje się Twojej firmy, a następnie kliknij przycisk **dalej**.
-5. Wybierz **poszczególnych** jako typ konta.
-6. Utwórz swoją nazwę wyświetlaną wydawcy.  Są to unikatową nazwę, którą zobaczą klientów skojarzone z aplikacji, dodatków i usług.
-7. Podaj swoje informacje kontaktowe i język preferowanego adresu e-mail, a następnie kliknij przycisk **dalej**.
-8. Może być konieczne Sprawdź swoje hasło.  Wprowadź go, a następnie kliknij przycisk **Zaloguj**.
-9. Przy rejestracji — strona płatności, Wklej kod, który wcześniej zostały skopiowane do pola Kod promocyjny.  Strona zostanie zaktualizowana, aby pokazać, że *nie wymagane jest*.  Kliknij przycisk **Dalej**.
+4. Zaloguj się do Twojej subskrypcji.  Jeśli masz wiele kont, wybierz ten, który został skojarzony z subskrypcją przedsiębiorstwa.
+5. Na następnej stronie Wybierz kraj lub region, gdzie mieszkasz lub w przypadku, gdy znajduje się Twojej firmy, a następnie kliknij przycisk **dalej**.
+6. Wybierz **poszczególnych** jako typ konta.
+7. Utwórz swoją nazwę wyświetlaną wydawcy.  Są to unikatową nazwę, którą zobaczą klientów skojarzone z aplikacji, dodatków i usług.
+8. Podaj swoje informacje kontaktowe i język preferowanego adresu e-mail, a następnie kliknij przycisk **dalej**.
+9. Może być konieczne Sprawdź swoje hasło.  Wprowadź go, a następnie kliknij przycisk **Zaloguj**.
+10. Przy rejestracji — strona płatności, Wklej kod, który wcześniej zostały skopiowane do pola Kod promocyjny.  Strona zostanie zaktualizowana, aby pokazać, że *nie wymagane jest*.  Kliknij przycisk **Dalej**.
     > [!div class="mx-imgBorder"]
-    > ![Rejestracja korzyści dla deweloperów Windows](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+    > ![Rejestracja korzyści dla deweloperów Windows](_img/vs-windows-dev/vs-windows-dev-promo-cropped.png)
 
-10. Przejrzyj informacje o Twoim koncie, zapoznaj się z umową dla deweloperów aplikacji, a następnie kliknij pole wyboru, aby wskazać akceptacji warunków i postanowień.  Następnie kliknij przycisk **Zakończ**.
-11. Kliknij przycisk **przejdź do pulpitu nawigacyjnego** aby rozpocząć korzystanie z konta dewelopera Windows!
+11. Przejrzyj informacje o Twoim koncie, zapoznaj się z umową dla deweloperów aplikacji, a następnie kliknij pole wyboru, aby wskazać akceptacji warunków i postanowień.  Następnie kliknij przycisk **Zakończ**.
+12. Kliknij przycisk **przejdź do pulpitu nawigacyjnego** aby rozpocząć korzystanie z konta dewelopera Windows!
 
 ## <a name="eligibility"></a>Uprawnienie
+
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | Licencjonowania zbiorowego, Azure, w sprzedaży detalicznej, wybrane NFR<sup>1</sup> | Uwzględnione       |  Tak|

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_framePointerPresent | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_framepointerpresent — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bee723194914775a77334641ed9bae4a33ec268e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 283674d2bccc81d409db59df04631240e78000cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468080"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846216"
 ---
 # <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
-Pobiera flagę określającą, czy wskaźnik ramki jest obecny. Używany, gdy [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) ma ustawioną wartość `SymTagFunction`.  
+Pobiera flagę określającą, czy znajduje się wskaźnik ramki. Zastosowania [symtagenum — wyliczenie](../../debugger/debug-interface-access/symtagenum.md) ustawiono `SymTagFunction`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,20 +34,20 @@ HRESULT get_framePointerPresent(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out]] Zwraca `TRUE` wskaźnika ramki znajduje się; w przeciwnym razie, funkcja zwraca `FALSE`.  
+ [out]] Zwraca `TRUE` wskaźnik ramki jest obecny; w przeciwnym razie, zwraca wartość `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: Dia2.h  
   
- Biblioteki: diaguids.lib  
+ Biblioteka: diaguids.lib  
   
  Biblioteki DLL: msdia100.dll  
   

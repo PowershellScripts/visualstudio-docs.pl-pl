@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cdd1e740861765958c9115b8112dacd4b338b2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812910"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Wskazówki: programowe przechwytywanie informacji graficznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,18 +73,18 @@ Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostyki grafiki,
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>Aby zdefiniować interfejs IDXGraphicsAnalysis  
   
--   Zdefiniuj interfejs IDXGraphicsAnalysis, w tym samym pliku, w której są uwzględniane pliki nagłówkowe.  
+- Zdefiniuj interfejs IDXGraphicsAnalysis, w tym samym pliku, w której są uwzględniane pliki nagłówkowe.  
   
-    ```  
-    interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
-    IDXGraphicsAnalysis : public IUnknown  
-    {  
-        STDMETHOD_(void, BeginCapture)() PURE;  
-        STDMETHOD_(void, EndCapture)() PURE;  
-    };  
-    ```  
+  ```  
+  interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
+  IDXGraphicsAnalysis : public IUnknown  
+  {  
+      STDMETHOD_(void, BeginCapture)() PURE;  
+      STDMETHOD_(void, EndCapture)() PURE;  
+  };  
+  ```  
   
- Dla wygody można wykonać te kroki w nowym pliku nagłówka, a następnie dołącz ją w razie potrzeby w swojej aplikacji.  
+  Dla wygody można wykonać te kroki w nowym pliku nagłówka, a następnie dołącz ją w razie potrzeby w swojej aplikacji.  
   
 ### <a name="getting-the-idxgraphicsanalysis-interface"></a>Pobieranie interfejsu IDXGraphicsAnalysis  
  Zanim będzie można przechwytywać informacje graficzne z DirectX 11.2, musisz uzyskać DXGI interfejsu debugowania.  
@@ -171,23 +171,23 @@ Możesz użyć [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnostyki grafiki,
   
 ##### <a name="to-configure-the-name-and-location-of-the-graphics-log-file"></a>Aby skonfigurować nazwę i lokalizację pliku dziennika grafiki  
   
--   Aby zapobiec przed zapisaniem do katalogu tymczasowego dziennika grafiki `#include <vsgcapture.h>` wiersz, dodaj to:  
+- Aby zapobiec przed zapisaniem do katalogu tymczasowego dziennika grafiki `#include <vsgcapture.h>` wiersz, dodaj to:  
   
-    ```  
-    #define DONT_SAVE_VSGLOG_TO_TEMP  
-    ```  
+  ```  
+  #define DONT_SAVE_VSGLOG_TO_TEMP  
+  ```  
   
-     Można zdefiniować tę wartość, aby zapisać w dzienniku grafiki do lokalizacji, która jest określana względem katalogu roboczego lub do ścieżki bezwzględnej Jeśli definicja `VSG_DEFAULT_RUN_FILENAME` jest ścieżką bezwzględną.  
+   Można zdefiniować tę wartość, aby zapisać w dzienniku grafiki do lokalizacji, która jest określana względem katalogu roboczego lub do ścieżki bezwzględnej Jeśli definicja `VSG_DEFAULT_RUN_FILENAME` jest ścieżką bezwzględną.  
   
--   Aby zapisać dziennik grafiki do innej lokalizacji, lub nadać mu inną nazwę pliku, zanim `#include <vsgcapture.h>` wiersz, dodaj to:  
+- Aby zapisać dziennik grafiki do innej lokalizacji, lub nadać mu inną nazwę pliku, zanim `#include <vsgcapture.h>` wiersz, dodaj to:  
   
-    ```  
-    #define VSG_DEFAULT_RUN_FILENAME <filename>  
-    ```  
+  ```  
+  #define VSG_DEFAULT_RUN_FILENAME <filename>  
+  ```  
   
-     Jeśli nie możesz wykonać ten krok, nazwa pliku jest default.vsglog. Jeżeli nie zdefiniujesz `DONT_SAVE_VSGLOG_TO_TEMP`, następnie lokalizacja pliku jest względną dla katalogu temp; w przeciwnym, jest względem katalogu roboczego lub w innej lokalizacji, jeśli określono bezwzględnej nazwy pliku.  
+   Jeśli nie możesz wykonać ten krok, nazwa pliku jest default.vsglog. Jeżeli nie zdefiniujesz `DONT_SAVE_VSGLOG_TO_TEMP`, następnie lokalizacja pliku jest względną dla katalogu temp; w przeciwnym, jest względem katalogu roboczego lub w innej lokalizacji, jeśli określono bezwzględnej nazwy pliku.  
   
- Aby uzyskać [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji, lokalizację katalogu temp jest przeznaczony dla każdego użytkownika i aplikacji i zwykle znajduje się w lokalizacji takiej jak C:\users\\*username*\AppData\Local\Packages\\ *nazwy rodziny pakietów*\TempState\\. Dla aplikacji komputerowych, lokalizację katalogu temp jest specyficzne dla poszczególnych użytkowników i zwykle znajduje się w lokalizacji takiej jak C:\Users\\*username*\AppData\Local\Temp\\.  
+  Aby uzyskać [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji, lokalizację katalogu temp jest przeznaczony dla każdego użytkownika i aplikacji i zwykle znajduje się w lokalizacji takiej jak C:\users\\*username*\AppData\Local\Packages\\ *nazwy rodziny pakietów*\TempState\\. Dla aplikacji komputerowych, lokalizację katalogu temp jest specyficzne dla poszczególnych użytkowników i zwykle znajduje się w lokalizacji takiej jak C:\Users\\*username*\AppData\Local\Temp\\.  
   
 > [!NOTE]
 >  Aby zapisać w określonej lokalizacji, musi mieć uprawnienia do zapisu w tej lokalizacji; w przeciwnym razie wystąpi błąd. Należy pamiętać, że [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacje są bardziej ograniczone niż aplikacje komputerowe, o których one mogła zapisywać dane i mogą wymagać dodatkowej konfiguracji do zapisu w określonych lokalizacjach.  

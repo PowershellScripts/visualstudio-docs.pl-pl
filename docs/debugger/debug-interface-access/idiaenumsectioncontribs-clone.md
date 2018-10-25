@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSectionContribs::Clone | Dokumentacja firmy Microsoft
+title: Idiaenumsectioncontribs::clone — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b799ab378de4c772f6671791d9750688bcadd9ca
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1c02f47f3df97c0e5a9fb1f86762de62aaf01cec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457416"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844410"
 ---
 # <a name="idiaenumsectioncontribsclone"></a>IDiaEnumSectionContribs::Clone
-Tworzy moduł wyliczający, który zawiera takim samym stanie wyliczenie jako bieżący modułu wyliczającego.  
+Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,10 +34,10 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Parametry  
  ppenum  
- [out] Zwraca [idiaenumsectioncontribs —](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) obiekt, który zawiera zduplikowane modułu wyliczającego. Zduplikowana sekcji, które nie są udziały tylko moduł wyliczający.  
+ [out] Zwraca [idiaenumsectioncontribs —](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) obiekt, który zawiera zduplikowane modułu wyliczającego. Zduplikowane sekcji, którą przesłane materiały nie są tylko moduł wyliczający.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

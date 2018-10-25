@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a52b63dc5605dfae533a4108e11a43ed0c62ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2507b509ee33957845f010f7c18404d257ad4a38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837584"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Debugowanie lub wyłączanie kodu projektu w Projektancie XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ W wielu przypadkach nieobsługiwanych wyjątków w Projektancie XAML może być 
   
  Zawiera kod projektu:  
   
--   Kontrolki niestandardowe i kontrolki użytkownika  
+- Kontrolki niestandardowe i kontrolki użytkownika  
   
--   Biblioteki klas  
+- Biblioteki klas  
   
--   Konwertery wartości  
+- Konwertery wartości  
   
--   Powiązania względem danych czasu projektowania wygenerowane z kodu projektu  
+- Powiązania względem danych czasu projektowania wygenerowane z kodu projektu  
   
- Po wyłączeniu kodu projektu programu Visual Studio wyświetli symbole zastępcze takie jak nazwa właściwości do powiązania, gdzie dane nie są już dostępne. lub symbol zastępczy dla formantu, który nie jest już uruchomiony.  
+  Po wyłączeniu kodu projektu programu Visual Studio wyświetli symbole zastępcze takie jak nazwa właściwości do powiązania, gdzie dane nie są już dostępne. lub symbol zastępczy dla formantu, który nie jest już uruchomiony.  
   
- ![Nieobsługiwany wyjątek w oknie dialogowym](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
+  ![Nieobsługiwany wyjątek w oknie dialogowym](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
   
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>Aby określić, jeśli kod projektu powoduje wyjątek  
   

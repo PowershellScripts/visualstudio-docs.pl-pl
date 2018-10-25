@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2a0cefc0822559f32a8a4413d7363636ed850a55
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: a46509fb55c3d99c3cb2920dd6088497f326ab08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895499"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Kontrolowanie widoczności ikony lub elementu Decorator
 A *dekoratora* jest ikona albo wiersz tekstu, który pojawia się na kształcie języka specyficznego dla domeny (DSL). Można wprowadzić dekoratora pojawiają się i znikają w zależności od stanu właściwości w modelu. Na przykład na kształcie reprezentująca osobę, może mieć różne ikony, które pojawiają się w zależności od danej osoby, płeć, liczba elementów podrzędnych i tak dalej.
@@ -24,45 +24,45 @@ A *dekoratora* jest ikona albo wiersz tekstu, który pojawia się na kształcie 
 
 #### <a name="to-control-the-visibility-of-an-icon-or-text-decorator"></a>Aby kontrolowanie widoczności ikony lub tekstu elementu decorator
 
-1.  W definicji DSL diagramu Dodaj do klasy kształt ikony lub dekoratorów tekstu, które mają być wyświetlane.
+1. W definicji DSL diagramu Dodaj do klasy kształt ikony lub dekoratorów tekstu, które mają być wyświetlane.
 
-    1.  Kliknij prawym przyciskiem myszy kształt klasy, wskaż opcję **Dodaj**, a następnie kliknij przycisk wymagany typ dekoratora.
+   1.  Kliknij prawym przyciskiem myszy kształt klasy, wskaż opcję **Dodaj**, a następnie kliknij przycisk wymagany typ dekoratora.
 
-    2.  Ustaw dekoratora **pozycji** właściwości. Więcej niż jeden dekorator może mieć taką samą pozycję. Na przykład można mieć ikony dla mężczyzn, a udostępnianie tej samej pozycji kobiet.
+   2.  Ustaw dekoratora **pozycji** właściwości. Więcej niż jeden dekorator może mieć taką samą pozycję. Na przykład można mieć ikony dla mężczyzn, a udostępnianie tej samej pozycji kobiet.
 
-    3.  Ustaw **domyślna ikona** właściwość dekoratora ikony.
+   3.  Ustaw **domyślna ikona** właściwość dekoratora ikony.
 
-2.  Wybierz mapowanie elementu diagramu, który jest szara linia między klasą kształt i klasy domeny na diagramem definicji DSL.
+2. Wybierz mapowanie elementu diagramu, który jest szara linia między klasą kształt i klasy domeny na diagramem definicji DSL.
 
-3.  W oknie Szczegóły języka DSL w **mapy Dekoratora** , a następnie wybierz dekoratora. Na przykład MaleDecorator.
+3. W oknie Szczegóły języka DSL w **mapy Dekoratora** , a następnie wybierz dekoratora. Na przykład MaleDecorator.
 
-4.  Sprawdź **filtr widoczności** pole.
+4. Sprawdź **filtr widoczności** pole.
 
-5.  Jeśli właściwość domeny, który należy kontrolować widoczność znajduje się w klasie natychmiastowego domeny, należy pozostawić **ścieżka do właściwości filtru** puste.
+5. Jeśli właściwość domeny, który należy kontrolować widoczność znajduje się w klasie natychmiastowego domeny, należy pozostawić **ścieżka do właściwości filtru** puste.
 
-     W przeciwnym razie kliknij menu rozwijane i przejście do relacji lub klasy, w którym znajduje się właściwość.
+    W przeciwnym razie kliknij menu rozwijane i przejście do relacji lub klasy, w którym znajduje się właściwość.
 
-    -   Aby uniknąć raport o błędzie, należy nie rozejrzysz się po relacji oznaczone "*" w narzędziu nawigacji.
+   -   Aby uniknąć raport o błędzie, należy nie rozejrzysz się po relacji oznaczone "*" w narzędziu nawigacji.
 
-6.  Ustaw **właściwość filtra** z właściwością domeny. Na przykład płeć.
+6. Ustaw **właściwość filtra** z właściwością domeny. Na przykład płeć.
 
-7.  W **wpisy dotyczące widoczności** liście, Dodaj wartości tej właściwości domeny, dla którego powinny być widoczne dekoratora. Na przykład mężczyzn.
+7. W **wpisy dotyczące widoczności** liście, Dodaj wartości tej właściwości domeny, dla którego powinny być widoczne dekoratora. Na przykład mężczyzn.
 
-8.  Powtórz kroki dla każdej ikony.
+8. Powtórz kroki dla każdej ikony.
 
 9. **Transformuj wszystkie szablony**, tworzenie i uruchamianie i Otwórz diagram testu.
 
 10. Po zmianie wartości właściwości kontroli dekoratory powinien pojawiają się i znikają.
 
- Często mają widoczność kontrolowany przez formułę bardziej skomplikowane niż prosty zestaw wartości. Na przykład zawiera ikony są zależne od liczby łączy określonego typu lub ułatwiają są zależne od tego, i czy liczba jest w określonym zakresie. W takim przypadku należy użyć następującej procedury.
+    Często mają widoczność kontrolowany przez formułę bardziej skomplikowane niż prosty zestaw wartości. Na przykład zawiera ikony są zależne od liczby łączy określonego typu lub ułatwiają są zależne od tego, i czy liczba jest w określonym zakresie. W takim przypadku należy użyć następującej procedury.
 
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Można kontrolować widoczność dekoratora na podstawie formuły
 
 1.  Dodaj właściwość domeny obliczeniowej do klasy domeny. W **właściwości** okna, ustaw następujące wartości:
 
-     **IsBrowsable =**`False`**— spowoduje to ukrycie właściwości użytkownika** 
+     **IsBrowsable =**`False`**— spowoduje to ukrycie właściwości użytkownika**
 
-     **Rodzaj =**`Calculated`**— oznacza to, że zapewni kod, który oblicza swoją wartość** 
+     **Rodzaj =**`Calculated`**— oznacza to, że zapewni kod, który oblicza swoją wartość**
 
      **Nazwa** na przykład **DecoratorControl**
 

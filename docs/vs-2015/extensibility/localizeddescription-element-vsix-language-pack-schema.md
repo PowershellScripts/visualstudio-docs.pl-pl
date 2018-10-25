@@ -13,17 +13,17 @@ ms.assetid: 766a1732-bbaf-4875-b276-feb42169633a
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d136ed60417d51a3fd1cf536ad63e5602b44a26c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbcad72308e9b78a5fcc6865c6070cc887eed06e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826482"
 ---
 # <a name="localizeddescription-element-vsix-language-pack-schema"></a>Element LocalizedDescription (schemat VSIX Language Pack)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wymagane. Zapewnia zlokalizowany opis rozszerzenia.  
+Wymagana. Zapewnia zlokalizowany opis rozszerzenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -50,19 +50,19 @@ Wymagane. Zapewnia zlokalizowany opis rozszerzenia.
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[Element pakietu językowego VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Wymagane. Zawiera element główny pakietu językowego VSIX.|  
+|[Element pakietu językowego VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Wymagana. Zawiera element główny pakietu językowego VSIX.|  
   
 ## <a name="text-value"></a>Wartość tekstowa  
- Wymagane. Opis tekstowy rozszerzenia w języku docelowym.  
+ Wymagana. Opis tekstowy rozszerzenia w języku docelowym.  
   
 ## <a name="element-information"></a>Informacje o elementach  
   
-|||  
-|-|-|  
-|Przestrzeń nazw|http://schemas.microsoft.com/developer/vsx-schema-lp/2010|  
-|Nazwa schematu|VSIX Language Pack schematu|  
-|Plik walidacji|VSIXLanguagePackSchema.xsd|  
-|Może być pusta|Nie dotyczy|  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Przestrzeń nazw    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
+|   Nazwa schematu   |                 VSIX Language Pack schematu                 |
+| Plik walidacji |                VSIXLanguagePackSchema.xsd                 |
+|  Może być pusta   |                      Nie dotyczy                       |
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu VSX Language Pack](../extensibility/vsx-language-pack-schema-reference.md)   

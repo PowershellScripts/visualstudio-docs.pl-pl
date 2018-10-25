@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd73955835f8aff0047995a690da03e5ab0305d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31bde98be596cdfca61434ecab3640655a8c7154
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105830"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877130"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
-Pobiera klasę, która obejmuje tej klasy.  
+Pobiera klasę, która otacza tej klasy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int GetEnclosingClass(
   
 #### <a name="parameters"></a>Parametry  
  `ppClassField`  
- [out] Zwraca [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) obiekt reprezentujący otaczającej klasy. Zwraca wartość null, jeśli nie otaczającą klasę.  
+ [out] Zwraca [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) obiekt reprezentujący otaczającej klasy. Zwraca wartość null, jeśli nie otaczającej klasy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli klasa reprezentowany przez to [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) obiekt jest klasą zagnieżdżoną, a następnie `ppClassField` zwraca parametr `IDebugClassField` obiekt reprezentujący otaczającej klasy. Przykładowo podana tej definicji klasy:  
+ Jeśli klasa reprezentowany przez ten [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) obiekt jest klasy zagnieżdżonej, a następnie `ppClassField` parametr zwraca `IDebugClassField` obiekt reprezentujący otaczającej klasy. Na przykład biorąc pod uwagę tę definicję klasy:  
   
 ```  
 class RootClass {  
@@ -55,7 +55,7 @@ class RootClass {
 };  
 ```  
   
- Wywoływanie `GetEnclosingClass` metoda `IDebugClassField` reprezentujący obiekt `NestedClass` klasy zwraca `IDebugClassField` obiekt reprezentujący klasę `RootClass`.  
+ Wywoływanie `GetEnclosingClass` metody `IDebugClassField` obiekt reprezentujący `NestedClass` klasy zwraca `IDebugClassField` obiekt reprezentujący klasę `RootClass`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

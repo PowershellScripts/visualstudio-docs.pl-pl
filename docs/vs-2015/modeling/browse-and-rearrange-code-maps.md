@@ -27,12 +27,12 @@ caps.latest.revision: 91
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 784f36c022f967f59e365ac35912a9e54a81b82c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dba1be310260a2b1ae6ad28efe4b3d98ac14c4a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281440"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896841"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Przeglądanie i rozmieszczanie map kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,25 +178,25 @@ Zmień kolejność elementów na mapach kodu, aby ułatwić ich do odczytywania 
 ###  <a name="AddNodes"></a>   
 ##### <a name="add-a-link-between-existing-code-elements"></a>Dodać łącze między istniejącymi elementami kodu  
   
-1.  Wybierz element kodu źródłowego. Pasek narzędzi pojawi się nad elementem kodu.  
+1. Wybierz element kodu źródłowego. Pasek narzędzi pojawi się nad elementem kodu.  
   
-     ![Pasek narzędzi wykresu zależności](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
+    ![Pasek narzędzi wykresu zależności](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
   
-2.  Na pasku narzędzi wybierz pierwszą ikonę **Utwórz nowe łącze z węzła do węzła, który klikniesz w następnej kolejności**.  
+2. Na pasku narzędzi wybierz pierwszą ikonę **Utwórz nowe łącze z węzła do węzła, który klikniesz w następnej kolejności**.  
   
-3.  Wybierz element docelowy kodu. Zostanie wyświetlone łącze między elementami dwóch kodu.  
+3. Wybierz element docelowy kodu. Zostanie wyświetlone łącze między elementami dwóch kodu.  
   
- \- lub —  
+   \- lub —  
   
-1.  Wybierz element kodu źródłowego na mapie.  
+4. Wybierz element kodu źródłowego na mapie.  
   
-2.  Jeśli używasz myszy, zainstalowane, przesuń wskaźnik myszy poza granicami mapy.  
+5. Jeśli używasz myszy, zainstalowane, przesuń wskaźnik myszy poza granicami mapy.  
   
-3.  Otwórz menu skrótów elementu kodu, a następnie wybierz **Edytuj**, **Dodaj**, **łącze generyczne**.  
+6. Otwórz menu skrótów elementu kodu, a następnie wybierz **Edytuj**, **Dodaj**, **łącze generyczne**.  
   
-4.  Kartę, a następnie wybierz element docelowy kodu dla tego połączenia.  
+7. Kartę, a następnie wybierz element docelowy kodu dla tego połączenia.  
   
-5.  Naciśnij klawisz **zwracają**.  
+8. Naciśnij klawisz **zwracają**.  
   
 ###  <a name="AddComments"></a>   
 ##### <a name="add-a-comment-to-an-existing-node-on-the-map"></a>Dodaj komentarz do istniejący węzeł na mapie  

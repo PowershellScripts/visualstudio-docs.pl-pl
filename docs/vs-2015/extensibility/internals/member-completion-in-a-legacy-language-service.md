@@ -17,12 +17,12 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 321cbd6482be088bd57c94224c41d4626a86a0f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240815"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892691"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Uzupełnianie składowych w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ Uzupełnianie składowych IntelliSense jest etykietka narzędzia, która zawiera
 ## <a name="how-it-works"></a>Jak to działa  
  Poniżej przedstawiono dwa sposoby, w których lista składowych jest wyświetlana przy użyciu klas MPF:  
   
--   Pozycjonowanie karetkę na identyfikator lub po znaku zakończenia elementu członkowskiego i wybierając polecenie **List Members** z **IntelliSense** menu.  
+- Pozycjonowanie karetkę na identyfikator lub po znaku zakończenia elementu członkowskiego i wybierając polecenie **List Members** z **IntelliSense** menu.  
   
--   <xref:Microsoft.VisualStudio.Package.IScanner> Skanera wykrywa znak zakończenia elementu członkowskiego i ustawia token wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> dla tego znaku.  
+- <xref:Microsoft.VisualStudio.Package.IScanner> Skanera wykrywa znak zakończenia elementu członkowskiego i ustawia token wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> dla tego znaku.  
   
- Znak zakończenia elementu członkowskiego wskazuje członek klasy, struktury lub wyliczenia z. Na przykład w języku C# lub Visual Basic znak zakończenia elementu członkowskiego jest `.`, a w języku C++ znak albo `.` lub `->`. Wyzwalacz ma wartość po znaku wybierz element członkowski jest skanowany.  
+  Znak zakończenia elementu członkowskiego wskazuje członek klasy, struktury lub wyliczenia z. Na przykład w języku C# lub Visual Basic znak zakończenia elementu członkowskiego jest `.`, a w języku C++ znak albo `.` lub `->`. Wyzwalacz ma wartość po znaku wybierz element członkowski jest skanowany.  
   
 ### <a name="the-intellisense-member-list-command"></a>Polecenie List Członkowskich IntelliSense  
  <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> Polecenie inicjuje wywołanie <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metody <xref:Microsoft.VisualStudio.Package.Source> klasy i <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> z kolei wywołuje metody <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analizatora metoda przyczynę analizy <xref:Microsoft.VisualStudio.Package.ParseReason>.  

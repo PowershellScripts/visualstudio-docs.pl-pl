@@ -19,12 +19,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93efc7bfec5f4ba3e545dec7fff57f73e49260d2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8dc2222dd613cad4d5dad7dc70dccdbe0abfe128
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868585"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Identyfikatory GUID i identyfikatory poleceń programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ Identyfikator GUID i identyfikator wartości polecenia zawarte w programie Visua
   
 #### <a name="to-locate-a-command-definition"></a>Aby zlokalizować definicji poleceń  
   
-1.  W programie Visual Studio, otwórz następujące pliki w *ścieżka instalacji programu Visual Studio SDK*folderu \VisualStudioIntegration\Common\Inc\: SharedCmdDef.vsct ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.  
+1. W programie Visual Studio, otwórz następujące pliki w *ścieżka instalacji programu Visual Studio SDK*folderu \VisualStudioIntegration\Common\Inc\: SharedCmdDef.vsct ShellCmdDef.vsct, VsDbgCmdUsed.vsct, Venusmenu.vsct.  
   
-     Większość poleceń programu Visual Studio są definiowane w SharedCmdDef.vsct i ShellCmdDef.vsct. VsDbgCmdUsed.vsct definiuje polecenia, które odnoszą się do debugera i Venusmenu.vsct definiuje polecenia, które są specyficzne dla programowania dla sieci Web.  
+    Większość poleceń programu Visual Studio są definiowane w SharedCmdDef.vsct i ShellCmdDef.vsct. VsDbgCmdUsed.vsct definiuje polecenia, które odnoszą się do debugera i Venusmenu.vsct definiuje polecenia, które są specyficzne dla programowania dla sieci Web.  
   
-2.  Jeśli polecenie jest element menu, należy pamiętać, dokładny tekst elementu menu. Jeśli polecenie to przycisk na pasku narzędzi, należy pamiętać, tekst etykietki narzędzia, która pojawia się po zatrzymaniu na nim.  
+2. Jeśli polecenie jest element menu, należy pamiętać, dokładny tekst elementu menu. Jeśli polecenie to przycisk na pasku narzędzi, należy pamiętać, tekst etykietki narzędzia, która pojawia się po zatrzymaniu na nim.  
   
-3.  Naciśnij klawisze CTRL + F, aby otworzyć **znaleźć** okno dialogowe.  
+3. Naciśnij klawisze CTRL + F, aby otworzyć **znaleźć** okno dialogowe.  
   
-4.  W **Znajdź** wpisz tekst zanotowaną w kroku 2.  
+4. W **Znajdź** wpisz tekst zanotowaną w kroku 2.  
   
-5.  Upewnij się, że **wszystkimi otwartymi dokumentami** jest wyświetlany w **przeszukania** pole.  
+5. Upewnij się, że **wszystkimi otwartymi dokumentami** jest wyświetlany w **przeszukania** pole.  
   
-6.  Kliknij przycisk **Znajdź następny** przycisk, dopóki nie zostanie zaznaczony tekst w `<Strings>` części [Button Element](../../extensibility/button-element.md).  
+6. Kliknij przycisk **Znajdź następny** przycisk, dopóki nie zostanie zaznaczony tekst w `<Strings>` części [Button Element](../../extensibility/button-element.md).  
   
-     `<Button>` Element, który polecenia pojawia się w jest definicji polecenia.  
+    `<Button>` Element, który polecenia pojawia się w jest definicji polecenia.  
   
- Po znalezieniu definicji polecenia Kopiuj polecenia można umieścić w innym menu lub paska narzędzi, tworząc [CommandPlacement, Element](../../extensibility/commandplacement-element.md) ma taką samą `guid` i `id` wartości jako polecenie. Aby uzyskać więcej informacji, zobacz [tworzenia wielokrotnego użytku, do grup przycisków](../../extensibility/creating-reusable-groups-of-buttons.md).  
+   Po znalezieniu definicji polecenia Kopiuj polecenia można umieścić w innym menu lub paska narzędzi, tworząc [CommandPlacement, Element](../../extensibility/commandplacement-element.md) ma taką samą `guid` i `id` wartości jako polecenie. Aby uzyskać więcej informacji, zobacz [tworzenia wielokrotnego użytku, do grup przycisków](../../extensibility/creating-reusable-groups-of-buttons.md).  
   
 ### <a name="special-cases"></a>Specjalne przypadki  
  W następujących przypadkach tekst menu lub tekst etykietki narzędzia może wyglądać inaczej niż w definicji polecenia.  

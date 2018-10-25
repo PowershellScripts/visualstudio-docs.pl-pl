@@ -13,12 +13,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9e92050eab33b542cc5b8165aed63fde1e5fc7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 657f54b258d759d0d966f65ff40649e0fb2a0669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287693"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823531"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Omówienie narzędzi Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ W tej sekcji możesz dowiesz się więcej o funkcjach programu Visual Studio Too
 ## <a name="superior-debugging"></a>Lepsze funkcje debugowania  
  Zaawansowany debuger programu Visual Studio należy nawiązać swoją grę Unity do debugowania skryptów języka C# i biblioteki dll, niezależnie od tego, czy jest to aplikacja autonomiczna lub Edytor platformy Unity. Mogą używać wszystkich funkcji debugowania, których można oczekiwać od programu Visual Studio.  
   
--   Punkty przerwania, w tym warunkowe punkty przerwania.  
+- Punkty przerwania, w tym warunkowe punkty przerwania.  
   
--   Oceniaj złożone wyrażenia w oknie czujki.  
+- Oceniaj złożone wyrażenia w oknie czujki.  
   
--   Sprawdzanie i modyfikowanie wartości zmiennych i argumentów.  
+- Sprawdzanie i modyfikowanie wartości zmiennych i argumentów.  
   
--   Przejść do szczegółów w złożonych obiektów i struktur danych.  
+- Przejść do szczegółów w złożonych obiektów i struktur danych.  
   
- Swoją grę Unity można debugować nawet wtedy, gdy działa na innym komputerze w sieci.  
+  Swoją grę Unity można debugować nawet wtedy, gdy działa na innym komputerze w sieci.  
   
 ## <a name="productivity"></a>Produktywność  
  Oprócz programu Visual Studio wydajności ustanowionych pisanie i Refaktoryzacja kodu w języku C# Visual Studio Tools for Unity udostępnia funkcje dodatkowe produktywność dla deweloperów Unity.  

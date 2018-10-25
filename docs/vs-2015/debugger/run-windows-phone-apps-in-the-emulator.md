@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e17d1af4af50981b1c816d52444f3028162345c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5027c9d40d37aeaee6186662567a009fb051900e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812613"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Uruchamianie aplikacji Windows Phone w emulatorze
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ Emulator Windows Phone zawiera środowisku wirtualnym, w którym można debugowa
   
  Po uruchomieniu aplikacji Windows Phone po raz pierwszy w Emulator Windows Phone, zachodzą następujące zdarzenia:  
   
-1.  Zostanie uruchomiony emulator.  
+1. Zostanie uruchomiony emulator.  
   
-2.  Emulator ładuje system operacyjny Windows Phone.  
+2. Emulator ładuje system operacyjny Windows Phone.  
   
-3.  Emulator wyświetlane na ekranie Start systemu Windows Phone.  
+3. Emulator wyświetlane na ekranie Start systemu Windows Phone.  
   
-4.  Twoja aplikacja jest wdrożona w emulatorze.  
+4. Twoja aplikacja jest wdrożona w emulatorze.  
   
-5.  Aplikacja działa w emulatorze.  
+5. Aplikacja działa w emulatorze.  
   
- Jeśli wybrany emulator jest już uruchomiona, Twoja aplikacja jest wdrożona i uruchomiona w emulatorze uruchomione. Tylko jedno wystąpienie każdego emulator można uruchomić w danym momencie.  
+   Jeśli wybrany emulator jest już uruchomiona, Twoja aplikacja jest wdrożona i uruchomiona w emulatorze uruchomione. Tylko jedno wystąpienie każdego emulator można uruchomić w danym momencie.  
   
 > [!TIP]
 >  Podczas testowania aplikacji w emulatorze, pozostaw emulator otwarte między sesjami debugowania, aby można było ponownie szybko uruchomić aplikację.  
@@ -75,13 +75,13 @@ Emulator Windows Phone zawiera środowisku wirtualnym, w którym można debugowa
   
 ##### <a name="to-stop-a-running-app"></a>Aby zatrzymać uruchomionej aplikacji  
   
--   Aby zatrzymać uruchomionej aplikacji, wykonaj jedną z następujących czynności:  
+- Aby zatrzymać uruchomionej aplikacji, wykonaj jedną z następujących czynności:  
   
-    -   W programie Visual Studio na **debugowania** menu, kliknij przycisk **Zatrzymaj debugowanie**, lub naciśnij klawisze Shift + F5.  
+  - W programie Visual Studio na **debugowania** menu, kliknij przycisk **Zatrzymaj debugowanie**, lub naciśnij klawisze Shift + F5.  
   
-    -   W emulatorze, naciśnij klawisz **ponownie** przycisk, aby zamknąć aplikację. Jeśli się stroną aktywną aplikacji nie było strony początkowej aplikacji, może być konieczne naciśnij **ponownie** przycisk więcej niż jeden raz.  
+  - W emulatorze, naciśnij klawisz **ponownie** przycisk, aby zamknąć aplikację. Jeśli się stroną aktywną aplikacji nie było strony początkowej aplikacji, może być konieczne naciśnij **ponownie** przycisk więcej niż jeden raz.  
   
-     Umożliwia zamknięcie aplikacji i uruchomienia zostanie otwarty ekran. To kończy bieżącą sesję debugowania.  
+    Umożliwia zamknięcie aplikacji i uruchomienia zostanie otwarty ekran. To kończy bieżącą sesję debugowania.  
   
 ##### <a name="to-restart-an-app-without-debugging"></a>Aby ponownie uruchomić aplikację bez debugowania  
   
@@ -122,21 +122,21 @@ Emulator Windows Phone zawiera środowisku wirtualnym, w którym można debugowa
 ##  <a name="BKMK_buttons"></a> Użyj przycisków symulowane sprzętu w emulatorze  
  Symulowanie użyj przycisków sprzętowych na telefonie, korzystając z przycisków symulowane sprzętu po prawej stronie ekranu emulatora.  
   
--   Kliknij przycisk **Power** przycisk, aby zasymulować, wyłączać i włączać włączenie wyświetlania. Kliknij i przytrzymaj je, aby zasymulować, wyłączając telefonu.  
+- Kliknij przycisk **Power** przycisk, aby zasymulować, wyłączać i włączać włączenie wyświetlania. Kliknij i przytrzymaj je, aby zasymulować, wyłączając telefonu.  
   
--   Kliknij przycisk **woluminu się** lub **woluminu w dół** przycisk, aby symulować zmiana ilości telefonu osoby mówiącej, połączeń telefonicznych i powiadomień.  
+- Kliknij przycisk **woluminu się** lub **woluminu w dół** przycisk, aby symulować zmiana ilości telefonu osoby mówiącej, połączeń telefonicznych i powiadomień.  
   
--   **Aparatu** przycisk uruchamia aplikację aparatu. Można zasymulować, biorąc zdjęcie lub wideo za pomocą kontrolki w aplikacji aparatu.  
+- **Aparatu** przycisk uruchamia aplikację aparatu. Można zasymulować, biorąc zdjęcie lub wideo za pomocą kontrolki w aplikacji aparatu.  
   
- Poniższy zrzut ekranu przedstawia przyciski symulowane sprzętu.  
+  Poniższy zrzut ekranu przedstawia przyciski symulowane sprzętu.  
   
-1.  Obraz po lewej stronie wyświetlane na ekranie startowym w emulatorze.  
+1. Obraz po lewej stronie wyświetlane na ekranie startowym w emulatorze.  
   
-2.  Środkowy obraz przedstawia emulator po naciśnięciu **Power** przycisk, aby wyłączyć wyświetlanie.  
+2. Środkowy obraz przedstawia emulator po naciśnięciu **Power** przycisk, aby wyłączyć wyświetlanie.  
   
-3.  Właściwy obraz wyświetlany na ekranie emulatora po naciśnięciu **woluminu się** przycisk, aby zwiększyć wolumin.  
+3. Właściwy obraz wyświetlany na ekranie emulatora po naciśnięciu **woluminu się** przycisk, aby zwiększyć wolumin.  
   
- ![Przyciski na emulator Windows Phone](../debugger/media/wp-emulator-buttons.png "WP_Emulator_buttons")  
+   ![Przyciski na emulator Windows Phone](../debugger/media/wp-emulator-buttons.png "WP_Emulator_buttons")  
   
 ##  <a name="BKMK_tasks_kbd"></a> Korzystanie z klawiatury komputera za pomocą emulatora  
  Emulator obsługuje Mapowanie klawiatury sprzętu na komputerze deweloperskim do klawiatury na Windows Phone. Zachowanie kluczy jest taka sama jak na urządzeniu z systemem Windows Phone.  
@@ -175,21 +175,21 @@ Emulator Windows Phone zawiera środowisku wirtualnym, w którym można debugowa
   
  Na przykład jeśli aplikacja wymaga kilku kontaktów, można utworzyć jeden raz rekordów kontaktów i zapisać migawkę emulatora. W przeciwnym razie musisz odtworzyć rekordów kontaktów, za każdym razem, gdy Uruchom emulator.  
   
--   Kliknij przycisk **nowego punktu kontrolnego** do przechwytywania nową migawkę stanu emulator przy użyciu danych i ustawień wymaganych do testowania aplikacji ponownie później. Nowy punkt kontrolny jest dodawany do **punktów kontrolnych** listy.  
+- Kliknij przycisk **nowego punktu kontrolnego** do przechwytywania nową migawkę stanu emulator przy użyciu danych i ustawień wymaganych do testowania aplikacji ponownie później. Nowy punkt kontrolny jest dodawany do **punktów kontrolnych** listy.  
   
-     Nie można przechwycić punktu kontrolnego, gdy debuger jest dołączony do emulatora.  
+   Nie można przechwycić punktu kontrolnego, gdy debuger jest dołączony do emulatora.  
   
--   Wybierz punkt kontrolny w **punktów kontrolnych** listy, aby wyświetlić informacje dotyczące punktu kontrolnego.  
+- Wybierz punkt kontrolny w **punktów kontrolnych** listy, aby wyświetlić informacje dotyczące punktu kontrolnego.  
   
--   Wybierz przycisk radiowy na **domyślne** kolumnę, aby wyświetlić zapisane punktu kontrolnego domyślnego punktu kontrolnego dla emulatora usługi active.  
+- Wybierz przycisk radiowy na **domyślne** kolumnę, aby wyświetlić zapisane punktu kontrolnego domyślnego punktu kontrolnego dla emulatora usługi active.  
   
--   Kliknij przycisk **przywrócić** konieczne ponowne uruchomienie systemu operacyjnego Windows Phone w emulatorze, a następnie załadować wybrana migawka.  
+- Kliknij przycisk **przywrócić** konieczne ponowne uruchomienie systemu operacyjnego Windows Phone w emulatorze, a następnie załadować wybrana migawka.  
   
--   Kliknij przycisk **Usuń** można usunąć migawki, które nie są już potrzebne.  
+- Kliknij przycisk **Usuń** można usunąć migawki, które nie są już potrzebne.  
   
- Oryginalny obraz emulatora zawsze jest wyświetlany jako pierwszy element **punktów kontrolnych** listy i nie można zmienić ani usunąć. Jednak można wybrać innej migawki, jako domyślny obraz emulatora.  
+  Oryginalny obraz emulatora zawsze jest wyświetlany jako pierwszy element **punktów kontrolnych** listy i nie można zmienić ani usunąć. Jednak można wybrać innej migawki, jako domyślny obraz emulatora.  
   
- ![Na karcie punkty kontrolne Emulator Windows Phone](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
+  ![Na karcie punkty kontrolne Emulator Windows Phone](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
   
 ##  <a name="BKMK_tasks_shot"></a> Przechwytywanie zrzutów ekranu w emulatorze  
  Zrzuty ekranu swoich aplikacji Windows Phone można utworzyć za pomocą narzędzia zrzut ekranu z okna dodatkowe narzędzia. Narzędzie tworzy pliki PNG, pasujące rozwiązanie uruchomiony emulator.  
@@ -198,27 +198,27 @@ Emulator Windows Phone zawiera środowisku wirtualnym, w którym można debugowa
   
 #### <a name="to-create-an-app-screenshot-by-using-the-built-in-emulator-screenshot-tool"></a>Aby utworzyć zrzut ekranu aplikacji za pomocą emulatora wbudowane narzędzie zrzut ekranu  
   
-1.  Aby zoptymalizować jakość usługi zrzuty ekranu, należy ustawić poziom powiększenia emulatora do 100 procent. Im większa ustawiamy poziom powiększenia, tym lepsze jakość zrzucie ekranu.  
+1. Aby zoptymalizować jakość usługi zrzuty ekranu, należy ustawić poziom powiększenia emulatora do 100 procent. Im większa ustawiamy poziom powiększenia, tym lepsze jakość zrzucie ekranu.  
   
-2.  Rozpocznij tworzenie aplikacji w emulatorze.  
+2. Rozpocznij tworzenie aplikacji w emulatorze.  
   
-3.  Na pasku narzędzi emulator, kliknij przycisk Rozwiń, aby otworzyć **dodatkowe narzędzia** okna.  
+3. Na pasku narzędzi emulator, kliknij przycisk Rozwiń, aby otworzyć **dodatkowe narzędzia** okna.  
   
-4.  Kliknij przycisk **zrzut ekranu** kartę.  
+4. Kliknij przycisk **zrzut ekranu** kartę.  
   
-5.  Gdy aplikacja jest gotowa, kliknij przycisk **przechwytywania** przycisku.  
+5. Gdy aplikacja jest gotowa, kliknij przycisk **przechwytywania** przycisku.  
   
-     Zrzut ekranu pojawia się w obszarze roboczym.  
+    Zrzut ekranu pojawia się w obszarze roboczym.  
   
-6.  Kliknij przycisk **Zapisz** przycisk, aby otworzyć **Zapisz jako** okno dialogowe.  
+6. Kliknij przycisk **Zapisz** przycisk, aby otworzyć **Zapisz jako** okno dialogowe.  
   
-7.  Wybierz lokalizację i **nazwy pliku** , a następnie kliknij przycisk **Zapisz**.  
+7. Wybierz lokalizację i **nazwy pliku** , a następnie kliknij przycisk **Zapisz**.  
   
-8.  Opcjonalnie można przechodzić do innych stron w Twojej aplikacji i Przechwytywanie zrzutów ekranu dodatkowe.  
+8. Opcjonalnie można przechodzić do innych stron w Twojej aplikacji i Przechwytywanie zrzutów ekranu dodatkowe.  
   
 9. Uruchom emulator z dokładnością do innego ekranu do przechwytywania tego samego zrzuty ekranu w różnych rozdzielczości. Uruchomiono aplikację z debugowaniem, musisz zatrzymać debugowanie, przed uruchomieniem go ponownie innym emulatora.  
   
- Wyłącz liczniki szybkość klatek na ekranie emulatora, przed przechwyceniem zrzuty ekranu, które zostaną przesłane do Windows Phone Store.  
+   Wyłącz liczniki szybkość klatek na ekranie emulatora, przed przechwyceniem zrzuty ekranu, które zostaną przesłane do Windows Phone Store.  
   
 #### <a name="to-disable-frame-rate-counters-in-the-emulator-before-capturing-screenshots"></a>Aby wyłączyć liczniki szybkość klatek w emulatorze przed rozpoczęciem przechwytywania zrzutów ekranu  
   

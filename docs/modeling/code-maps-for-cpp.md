@@ -1,5 +1,5 @@
 ---
-title: Zobacz zależności między pliki źródłowe C++ i pliki nagłówkowe
+title: Zobacz zależności między plikami źródłowymi C++ a plikami nagłówkowymi
 ms.date: 05/16/2018
 ms.topic: conceptual
 author: gewarren
@@ -9,48 +9,48 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: d274241700dfdac393544f554f7025ea4d0bcb46
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 6e2925eb3bfaf64a48b36c3c7205dce36538123c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263772"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823601"
 ---
-# <a name="code-maps-for-c-projects"></a>Mapy kodu dla projektów C++
+# <a name="code-maps-for-c-projects"></a>Mapy kodu dla projektów języka C++
 
-Jeśli chcesz utworzyć bardziej szczegółowy mapy dla projektów C++, ustaw opcję kompilatora informacji o przeglądaniu (**/FR**) na tych projektów. W przeciwnym razie pojawi się komunikat i monit o ustawienie tej opcji. W przypadku wybrania **OK**, to ustawienie opcji dla bieżącej mapy. Można ukryć w komunikacie wszystkie nowsze mapy.
+Jeśli chcesz utworzyć pełniejsze mapy dla projektów w języku C++, należy ustawić opcji Przeglądaj informacje kompilatora (**/FR**) w tych projektach. W przeciwnym razie pojawi się komunikat i monit o ustawienie tej opcji. Jeśli wybierzesz **OK**, to ustawienie opcji dla bieżącej mapy. Można ukryć komunikat dla wszystkich nowszych mapy.
 
-Po otwarciu rozwiązania, które zawiera projekty Visual C++, aktualizacja bazy danych w technologii IntelliSense może zająć trochę czasu. W tym czasie nie można utworzyć mapy kodu dla nagłówka (*.h* lub `#include`) pliki zakończenie bazy danych IntelliSense aktualizacji. Można monitorować postęp uaktualnienia na pasku stanu programu Visual Studio.
+Po otwarciu rozwiązania, które zawiera projekty Visual C++, aktualizacja bazy danych w technologii IntelliSense może zająć trochę czasu. W tym czasie nie można utworzyć mapy kodu dla nagłówka (*.h* lub `#include`) plików, dopóki nie zakończy się aktualizowania bazy danych IntelliSense. Można monitorować postęp uaktualnienia na pasku stanu programu Visual Studio.
 
-- Aby wyświetlić zależności między wszystkie pliki źródłowe i pliki nagłówkowe w rozwiązaniu, wybierz **architektura** > **Generuj wykres z pliki dołączane**.
+- Aby wyświetlić zależności między wszystkie pliki źródłowe i pliki nagłówkowe w rozwiązaniu, wybierz **architektury** > **generowania wykresu z pliki dołączane**.
 
    ![Wykres zależności dla kodu natywnego](../modeling/media/dependencygraphgeneral_nativecode.png)
 
-- Aby wyświetlić zależności między aktualnie otwarty plik i pliki źródłowe pokrewne i pliki nagłówkowe, otwórz plik źródłowy lub plik nagłówka. Otwórz menu skrótów pliku dowolne miejsce w pliku. Wybierz **Generowanie grafu plików dołączanych**.
+- Aby wyświetlić zależności między aktualnie otwarty plik oraz pokrewne pliki źródłowe i pliki nagłówkowe, otwórz plik źródłowy lub plik nagłówkowy. Otwórz menu skrótów plików w dowolne miejsce wewnątrz pliku. Wybierz **Generowanie grafu plików dołączanych**.
 
-   ![Wykres zależności pierwszego stopnia dla pliku .h](../modeling/media/dependencygraph_native_firstlevel.png)
+   ![Wykres zależności pierwszego poziomu dla pliku .h](../modeling/media/dependencygraph_native_firstlevel.png)
 
-## <a name="troubleshoot-code-maps-for-c-and-c-code"></a>Rozwiązywanie problemów z mapy kodu dla kodu C i C++
+## <a name="troubleshoot-code-maps-for-c-and-c-code"></a>Rozwiązywanie problemów z mapami kodu dla kodu C i C++
 
 Te elementy nie są obsługiwane dla kodu C i C++:
 
-- Typy podstawowe nie pojawiają się w społeczności maps, które obejmują hierarchii nadrzędnej.
+- Typy podstawowe nie pojawiają się na mapach, zawierających hierarchię nadrzędną.
 
-- Większość **Pokaż** elementy menu są niedostępne dla kodu C i C++.
+- Większość **Pokaż** elementów menu nie są dostępne dla kodu C i C++.
 
-Te problemy mogą wystąpić podczas tworzenia mapy kodu dla kodu C i C++:
+Po utworzeniu map kodu dla kodu C i C++, mogą wystąpić następujące problemy:
 
 |**Problem**|**Możliwa przyczyna**|**Rozdzielczość**|
-|---------------|------------------------|--------------------|
-|Nie można wygenerować mapy kodu.|Żadne projekty w rozwiązaniu nie zostały pomyślnie skompilowane.|Błędy kompilacji, które wystąpiły, a następnie ponownie wygenerować mapy.|
-|Visual Studio przestaje odpowiadać podczas próby Generuj mapę kodu z **architektura** menu.|Plik bazy danych programu (.pdb) może być uszkodzony.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Kompiluj rozwiązanie ponownie, a następnie spróbuj jeszcze raz.|
-|Niektóre ustawienia dla bazy danych przeglądania IntelliSense są wyłączone.|Niektóre ustawienia IntelliSense może być wyłączone w programie Visual Studio **opcje** okno dialogowe.|Włącz te ustawienia.<br /><br /> Zobacz [opcje, Edytor tekstu, C/C++, zaawansowane](../ide/reference/options-text-editor-c-cpp-advanced.md).|
-|Komunikat **nieznanych metod** pojawia się w węźle metody.<br /><br /> Ten problem występuje, ponieważ nie można rozpoznać nazwy metody.|Plik binarny może nie mieć podstawowej tabeli relokacji.|Włącz **/Fixed: No** opcji w konsolidatorze.|
+|-|-|-|
+|Nie można wygenerować mapy kodu.|Żadne projekty w rozwiązaniu nie zostały pomyślnie skompilowane.|Napraw błędy kompilacji, które wystąpiły, a następnie ponownie wygenerować mapę.|
+|Program Visual Studio przestaje odpowiadać przy próbie Generuj mapę kodu, z **architektury** menu.|Plik bazy danych programu (.pdb) może być uszkodzony.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Kompiluj rozwiązanie ponownie, a następnie spróbuj jeszcze raz.|
+|Niektóre ustawienia dla bazy danych przeglądania IntelliSense są wyłączone.|Niektóre ustawienia opcji IntelliSense mogą być wyłączone w programie Visual Studio **opcje** okno dialogowe.|Włącz te ustawienia.<br /><br /> Zobacz [opcje, Edytor tekstu, C/C++, zaawansowane](../ide/reference/options-text-editor-c-cpp-advanced.md).|
+|Komunikat **nieznane metody** w węźle metody zostanie wyświetlony.<br /><br /> Ten problem występuje, ponieważ nie można rozpoznać nazwy metody.|Plik binarny może nie mieć podstawowej tabeli relokacji.|Włącz **/Fixed: No** opcji w konsolidatorze.|
 ||Plik bazy danych programu (.pdb) może nie być skompilowany.<br /><br /> Plik .pdb przechowuje informacje debugowania, takie jak typ, metoda i informacje o pliku źródłowym.|Włącz **/DEBUG** opcji w konsolidatorze.|
 ||Nie można otworzyć lub znaleźć pliku .pdb w oczekiwanych lokalizacjach.|Upewnij się, że plik .pdb istnieje w oczekiwanych lokalizacjach.|
-||Informacje o debugowaniu pochodzą z pliku .pdb.|Jeśli **/pdbstripped** użyto opcji w konsolidatorze, zamiast tego zawiera cały plik PDB.|
-||Obiekt wywołujący nie jest funkcją i jest albo osadzony w pliku binarnym, albo stanowi wskaźnik w sekcji danych.|Gdy obiekt wywołujący jest sekcją thunk, spróbuj użyć `_declspec(dllimport)` w celu uniknięcia thunk.|
+||Informacje o debugowaniu pochodzą z pliku .pdb.|Jeśli **/pdbstripped** w konsolidatorze użyto opcji, zamiast dołączyć kompletny plik .pdb.|
+||Obiekt wywołujący nie jest funkcją i jest albo osadzony w pliku binarnym, albo stanowi wskaźnik w sekcji danych.|Jeśli element wywołujący jest sekcją thunk, spróbuj użyć `_declspec(dllimport)` Aby uniknąć osadzenia.|
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Zależności mapy z mapy kodu](../modeling/map-dependencies-across-your-solutions.md)
+- [Mapowanie zależności z mapami kodu](../modeling/map-dependencies-across-your-solutions.md)

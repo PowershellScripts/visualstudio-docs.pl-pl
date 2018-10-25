@@ -17,33 +17,33 @@ ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f1f13f3a9008d86812b0e1e11886cdc66457271e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5603450bdc761626a55f34813dc46cb8141da7be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232599"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811870"
 ---
 # <a name="debugger-components"></a>Składniki debugera
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Debugera jest zaimplementowany jako pakietu VSPackage i zarządza cały debugowanie. Sesja debugowania obejmuje następujące elementy:  
   
--   **Pakiet debugowania:** [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugera zawiera ten sam interfejs użytkownika, niezależnie od tego, co jest debugowany.  
+- **Pakiet debugowania:** [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugera zawiera ten sam interfejs użytkownika, niezależnie od tego, co jest debugowany.  
   
--   **Menedżer debugowania sesji (SDM):** zapewnia spójny interfejs programistyczny do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugera dla zarządzania szereg aparaty debugowania. Jest implementowana przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- **Menedżer debugowania sesji (SDM):** zapewnia spójny interfejs programistyczny do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] debugera dla zarządzania szereg aparaty debugowania. Jest implementowana przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
--   **Menedżer debugowania procesów (menedżerów PDM):** służy do zarządzania, dla wszystkich uruchomionych wystąpieniach [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], listę wszystkich programów, które mogą być lub są debugowane. Jest implementowana przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- **Menedżer debugowania procesów (menedżerów PDM):** służy do zarządzania, dla wszystkich uruchomionych wystąpieniach [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], listę wszystkich programów, które mogą być lub są debugowane. Jest implementowana przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
--   **Debugowanie aparatu (DE):** jest odpowiedzialny za monitorowanie debugowanego programu komunikacji stan uruchomionego programu SDM i menedżerów PDM oraz interakcji z nimi Ewaluator wyrażeń i dostawca symboli zapewniają analizę w czasie rzeczywistym Stan zmiennych i pamięci programu. Jest implementowana przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (dla języków, obsługuje on) i dostawców innych firm, którzy mają być obsługiwane ich w czasie wykonywania.  
+- **Debugowanie aparatu (DE):** jest odpowiedzialny za monitorowanie debugowanego programu komunikacji stan uruchomionego programu SDM i menedżerów PDM oraz interakcji z nimi Ewaluator wyrażeń i dostawca symboli zapewniają analizę w czasie rzeczywistym Stan zmiennych i pamięci programu. Jest implementowana przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (dla języków, obsługuje on) i dostawców innych firm, którzy mają być obsługiwane ich w czasie wykonywania.  
   
--   **Ewaluator wyrażeń (EE):** zapewnia obsługę dynamicznie Szacowanie zmiennych i wyrażeń, dostarczone przez użytkownika, gdy program został zatrzymany w określonym punkcie. Jest implementowana przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (dla języków, obsługuje on) i od innych dostawców, którzy mają być obsługiwane w ich własnym języku.  
+- **Ewaluator wyrażeń (EE):** zapewnia obsługę dynamicznie Szacowanie zmiennych i wyrażeń, dostarczone przez użytkownika, gdy program został zatrzymany w określonym punkcie. Jest implementowana przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (dla języków, obsługuje on) i od innych dostawców, którzy mają być obsługiwane w ich własnym języku.  
   
--   **Dostawca symboli (SP):** jest określana skrótem obsługi symboli, mapuje symbole debugowania programu uruchomionego wystąpienia programu, dzięki czemu można podać istotnych informacji (takich jak ocena debugowania i wyrażenie poziomie kodu źródłowego). Jest implementowana przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (Aby uzyskać środowisko uruchomieniowe języka wspólnego [CLR] symboli i bazy danych programu [PDB] symboli format pliku), jak również od innych dostawców, którzy mają własne własności sposób przechowywania informacji o debugowaniu.  
+- **Dostawca symboli (SP):** jest określana skrótem obsługi symboli, mapuje symbole debugowania programu uruchomionego wystąpienia programu, dzięki czemu można podać istotnych informacji (takich jak ocena debugowania i wyrażenie poziomie kodu źródłowego). Jest implementowana przez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (Aby uzyskać środowisko uruchomieniowe języka wspólnego [CLR] symboli i bazy danych programu [PDB] symboli format pliku), jak również od innych dostawców, którzy mają własne własności sposób przechowywania informacji o debugowaniu.  
   
- Na poniższym diagramie przedstawiono relację między tymi elementami debugera programu Visual Studio.  
+  Na poniższym diagramie przedstawiono relację między tymi elementami debugera programu Visual Studio.  
   
- ![Przegląd składników debugowania](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
+  ![Przegląd składników debugowania](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Pakiet debugowania](../../extensibility/debugger/debug-package.md)  

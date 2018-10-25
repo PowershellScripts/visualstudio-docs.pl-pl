@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: faeac90c92675c897774cc3650575cd60f5be991
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b242f8154f31391d168f2a41bfd00c01f037d87e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288408"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877650"
 ---
 # <a name="editing-tableadapters"></a>Edycja TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,21 +127,21 @@ Czasami możesz chcieć zmienić schemat tabeli karty. Aby to zrobić, należy z
 ## <a name="create-new-stored-procedures"></a>Tworzenie nowych procedur składowanych  
  W tej sekcji opisano sposób wykonania **Kreatora konfiguracji zapytania TableAdapter** podczas wybierania **tworzenie nowych procedur składowanych** opcji.  
   
-1.  W **wygenerować procedur składowanych** wpisz instrukcję SQL do wykonania podczas wywoływania procedury składowanej.  
+1. W **wygenerować procedur składowanych** wpisz instrukcję SQL do wykonania podczas wywoływania procedury składowanej.  
   
-    > [!NOTE]
-    >  Kreator udostępnia **konstruktora zapytań**, wizualne narzędzia do tworzenia zapytań SQL. Aby go otworzyć, kliknij przycisk **konstruktora zapytań** przycisku.  
+   > [!NOTE]
+   >  Kreator udostępnia **konstruktora zapytań**, wizualne narzędzia do tworzenia zapytań SQL. Aby go otworzyć, kliknij przycisk **konstruktora zapytań** przycisku.  
   
-2.  W **Tworzenie procedur składowanych** wykonaj następujące czynności:  
+2. W **Tworzenie procedur składowanych** wykonaj następujące czynności:  
   
-    1.  Wpisz nazwę dla nowej procedury składowanej.  
+   1. Wpisz nazwę dla nowej procedury składowanej.  
   
-    2.  Określ, czy należy utworzyć procedurę składowaną w bazie danych.  
+   2. Określ, czy należy utworzyć procedurę składowaną w bazie danych.  
   
-        > [!NOTE]
-        >  Możliwość tworzenia procedurę składowaną w bazie danych jest określany przez ustawienia zabezpieczeń dla konkretnej bazy danych.  
+      > [!NOTE]
+      >  Możliwość tworzenia procedurę składowaną w bazie danych jest określany przez ustawienia zabezpieczeń dla konkretnej bazy danych.  
   
-     **Wyświetlanie wyników kreatora** strony pokazuje wyniki tworzenia zapytań TableAdapter. Jeśli kreator wykryje problemy, ta strona zawiera informacje o błędzie.  
+      **Wyświetlanie wyników kreatora** strony pokazuje wyniki tworzenia zapytań TableAdapter. Jeśli kreator wykryje problemy, ta strona zawiera informacje o błędzie.  
   
 ## <a name="use-existing-stored-procedures"></a>Używanie istniejących procedur składowanych  
  W tej sekcji opisano sposób wykonania **Kreatora konfiguracji zapytania TableAdapter** podczas wybierania **używanie istniejących procedur składowanych** opcji.  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_age | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_age — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a81c41902b5e6a8421f15b69ebc77fe5ae6eebf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0ba915762a5eacffc32122a1dac4b7b046691e63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868472"
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
-Pobiera wartość wieku pliku PDB.  
+Pobiera wartość wieku pliku .pdb.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,16 +34,16 @@ HRESULT get_age (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca wartość wieku pliku PDB.  
+ [out] Zwraca wartość wieku pliku .pdb.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wiek nie musi odpowiadać wartości czasu znane; zwykle służy do określenia, czy plik PDB nie jest zsynchronizowany z odpowiedniego pliku .exe.  
+ Wiek nie musi odpowiadać do każdej wartości czasu; Zazwyczaj służy do określenia, czy plik .pdb jest zsynchronizowany z odpowiedniego pliku .exe.  
   
 ## <a name="requirements"></a>Wymagania  
   

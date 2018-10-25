@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 0a7da7d09bf9bcb419ba174a4eb60fe370e83cda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131989"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877117"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Szybki Start: Tworzenie pierwszej aplikacji sieci web Python przy użyciu programu Visual Studio
 
@@ -124,19 +124,19 @@ Teraz możesz dodać ilość kodu języka Python do wdrożenia aplikacji sieci w
 
     ![Ustawienie plik startowy dla projektu w Eksploratorze rozwiązań](media/quickstart-python-05-set-as-startup-file.png)
 
-1. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **właściwości**. Następnie wybierz pozycję **debugowania** kartę i ustawić **numer portu** właściwość `4449`. Ten krok zapewnia, że program Visual Studio otworzy w przeglądarce za pomocą `localhost:4449` do dopasowania `app.run` argumentów w kodzie.
+2. Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **właściwości**. Następnie wybierz pozycję **debugowania** kartę i ustawić **numer portu** właściwość `4449`. Ten krok zapewnia, że program Visual Studio otworzy w przeglądarce za pomocą `localhost:4449` do dopasowania `app.run` argumentów w kodzie.
 
-1. Wybierz **Debuguj > Uruchom bez debugowania** (**Ctrl**+**F5**), która zapisuje zmiany w plikach i uruchamia aplikację.
+3. Wybierz **Debuguj > Uruchom bez debugowania** (**Ctrl**+**F5**), która zapisuje zmiany w plikach i uruchamia aplikację.
 
-1. Okno polecenia pojawi się komunikat o "* działające w https://localhost:4449/", i w przeglądarce powinna zostać otwarta `localhost:4449` w przypadku, gdy zostanie wyświetlony komunikat "Hello, języka Python!" Żądanie GET pojawia się również w oknie wiersza polecenia, jego stan 200.
+4. Okno polecenia pojawi się komunikat o "* działające w <https://localhost:4449/>", i w przeglądarce powinna zostać otwarta `localhost:4449` w przypadku, gdy zostanie wyświetlony komunikat "Hello, języka Python!" Żądanie GET pojawia się również w oknie wiersza polecenia, jego stan 200.
 
     Jeśli przeglądarka nie jest otwierany automatycznie, uruchom wybranej przeglądarki i przejdź do `localhost:4449`.
 
     Jeśli zostanie wyświetlony tylko Python interaktywnej powłoki w oknie wiersza polecenia lub tego okna pojawi się na ekranie krótko, upewnij się, że możesz *app.py* jako plik startowy w kroku 1 powyżej.
 
-1. Przejdź do `localhost:4449/hello` do przetestowania, czy dekorator dla `/hello` działa również zasobów. Ponownie żądanie GET pojawia się w oknie wiersza polecenia, jego stan 200. Możesz spróbować niektóre inne również adres URL pokazują kodów stanu 404 w oknie wiersza polecenia.
+5. Przejdź do `localhost:4449/hello` do przetestowania, czy dekorator dla `/hello` działa również zasobów. Ponownie żądanie GET pojawia się w oknie wiersza polecenia, jego stan 200. Możesz spróbować niektóre inne również adres URL pokazują kodów stanu 404 w oknie wiersza polecenia.
 
-1. Zamknij okno polecenia, aby zatrzymać aplikację, a następnie zamknij okno przeglądarki.
+6. Zamknij okno polecenia, aby zatrzymać aplikację, a następnie zamknij okno przeglądarki.
 
 **Pytanie: Jaka jest różnica między polecenia Uruchom bez debugowania i Rozpocznij debugowanie?**
 

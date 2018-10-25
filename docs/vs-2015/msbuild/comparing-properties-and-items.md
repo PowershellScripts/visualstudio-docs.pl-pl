@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b80ea0c25766f75d21d193a67be68c13eb5ea0d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d42cc8fb4e5ba0783ad24aedc0edf7a323db4d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878586"
 ---
 # <a name="comparing-properties-and-items"></a>Porównanie właściwości i elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,27 +90,27 @@ Właściwości programu MSBuild i elementy zarówno służą do przekazywania in
 ## <a name="property-and-item-evaluation-order"></a>Właściwości i kolejność obliczania elementu  
  W fazie oceny procesu kompilacji zaimportowane pliki są włączane do kompilacji w kolejności, w jakiej są wyświetlane. Właściwości i elementy są zdefiniowane w trzech przebiegów w następującej kolejności:  
   
--   Właściwości są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane.  
+- Właściwości są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane.  
   
--   Definicje elementów są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane.  
+- Definicje elementów są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane.  
   
--   Elementy są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane.  
+- Elementy są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane.  
   
- W fazie wykonanie procesu kompilacji właściwości i elementy, które są zdefiniowane w ramach obiekty docelowe są oceniane razem w jednej fazie w kolejności, w jakiej są wyświetlane.  
+  W fazie wykonanie procesu kompilacji właściwości i elementy, które są zdefiniowane w ramach obiekty docelowe są oceniane razem w jednej fazie w kolejności, w jakiej są wyświetlane.  
   
- To nie jest jednak całą historię. Jeśli jest zdefiniowana właściwość, definicja elementu lub elementu, jego wartość jest szacowana. Ewaluator wyrażeń rozwija ciąg, który określa wartość. Rozszerzenie ciągu jest zależna od fazy kompilacji. Poniżej przedstawiono bardziej szczegółowe kolejność obliczania właściwości i elementów:  
+  To nie jest jednak całą historię. Jeśli jest zdefiniowana właściwość, definicja elementu lub elementu, jego wartość jest szacowana. Ewaluator wyrażeń rozwija ciąg, który określa wartość. Rozszerzenie ciągu jest zależna od fazy kompilacji. Poniżej przedstawiono bardziej szczegółowe kolejność obliczania właściwości i elementów:  
   
--   W fazie obliczania kompilacji:  
+- W fazie obliczania kompilacji:  
   
-    -   Właściwości są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Funkcje właściwości są wykonywane. Wartości właściwości w $(PropertyName) formularza zostaną rozwinięte w wyrażeniach. Ustawiono wartość właściwości rozszerzonej wyrażenia.  
+  -   Właściwości są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Funkcje właściwości są wykonywane. Wartości właściwości w $(PropertyName) formularza zostaną rozwinięte w wyrażeniach. Ustawiono wartość właściwości rozszerzonej wyrażenia.  
   
-    -   Definicje elementów są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Funkcje właściwości już zostały rozszerzone w wyrażeniach. Metadane wartości są ustawiane na rozwinięty wyrażeń.  
+  -   Definicje elementów są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Funkcje właściwości już zostały rozszerzone w wyrażeniach. Metadane wartości są ustawiane na rozwinięty wyrażeń.  
   
-    -   Typy elementów są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Wartości elementów w @(ItemType) formularza zostaną rozwinięte. Przekształceń elementów również są rozwijane. W wyrażeniach w już zostały rozszerzone funkcje właściwości i wartości. Wartości elementów listy i metadanych są ustawiane na rozwinięty wyrażenia.  
+  -   Typy elementów są zdefiniowane i modyfikować w kolejności, w jakiej są wyświetlane. Wartości elementów w @(ItemType) formularza zostaną rozwinięte. Przekształceń elementów również są rozwijane. W wyrażeniach w już zostały rozszerzone funkcje właściwości i wartości. Wartości elementów listy i metadanych są ustawiane na rozwinięty wyrażenia.  
   
--   W fazie wykonanie procesu kompilacji:  
+- W fazie wykonanie procesu kompilacji:  
   
-    -   Właściwości i elementy, które są zdefiniowane w ramach obiekty docelowe są oceniane razem w kolejności, w jakiej są wyświetlane. Funkcje właściwości są wykonywane, i wartości właściwości zostaną rozwinięte w wyrażeniach. Wartości elementów i przekształceń elementów również są rozwijane. Wartości właściwości elementu typu wartości i wartości metadanych są ustawione na rozwinięty wyrażeń.  
+  -   Właściwości i elementy, które są zdefiniowane w ramach obiekty docelowe są oceniane razem w kolejności, w jakiej są wyświetlane. Funkcje właściwości są wykonywane, i wartości właściwości zostaną rozwinięte w wyrażeniach. Wartości elementów i przekształceń elementów również są rozwijane. Wartości właściwości elementu typu wartości i wartości metadanych są ustawione na rozwinięty wyrażeń.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Subtelnych efektów kolejność obliczania  
  W fazie oceny kompilacji oceny właściwości poprzedza obliczania wartości elementu. Niemniej jednak właściwości mogą mieć wartości, które wydają się zależy od wartości elementu. Rozważmy poniższy skrypt.  

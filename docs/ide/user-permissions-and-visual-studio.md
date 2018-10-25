@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a415d49770b003c15d4394e4635a138a795cb55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2df7031baffcdcfcac07f4b2054ff2aeb9ab81ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627318"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885762"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uprawnienia użytkownika i program Visual Studio
 
@@ -31,7 +31,7 @@ Ze względów bezpieczeństwa należy uruchomić program Visual Studio jako zwyk
 Możesz tworzyć prawie wszystko w środowisku IDE programu Visual Studio jako zwykły użytkownik. Musisz mieć uprawnienia administratora w celu wykonania następujących zadań:
 
 |Obszar|Zadanie|Więcej informacji|
-|----------|----------|--------------------------|
+|----------|----------| - |
 |Instalacja|Zainstaluj program Visual Studio.|[Instalowanie programu Visual Studio](../install/install-visual-studio.md)|
 ||Instalowanie, aktualizowanie lub usuwanie lokalnej zawartości pomocy.|[Instalowanie i zarządzania lokalną zawartością Pomocy](../ide/install-and-manage-local-content.md)|
 |Przybornik|Dodawanie klasycznych formantów COM do **przybornika**.|[Przybornik](../ide/reference/toolbox.md)|

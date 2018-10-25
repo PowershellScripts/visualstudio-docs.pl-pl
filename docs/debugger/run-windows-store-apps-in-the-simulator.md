@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: fd0aa403e702a591a0b09d0891116063a3ed9ff2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f8d1ae730947a70cac253866d0257aa4e0216626
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281055"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882772"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Uruchamianie aplikacji platformy UWP w symulatorze
 Symulatorze programu Visual Studio dla aplikacji platformy uniwersalnej systemu Windows to aplikacja komputerowa, która symuluje aplikacji platformy uniwersalnej systemu Windows. Zazwyczaj chcesz debugować na komputerze lokalnym, podłączonym urządzeniu lub maszynie zdalnej. Jednak w niektórych przypadkach warto symulatorze programu Visual Studio umożliwia emulowanie różnych fizycznych rozmiaru i rozdzielczości. Można także symulacji typowe touch i obrót zdarzeń i symulowanie właściwości połączenia sieciowego.
@@ -115,35 +115,35 @@ Symulatorze programu Visual Studio dla aplikacji platformy uniwersalnej systemu 
   
  Do symulacji sieci: właściwości:  
   
-1.  Na pasku narzędzi symulator wybierz **Zmień właściwości sieci** przycisku.  
+1. Na pasku narzędzi symulator wybierz **Zmień właściwości sieci** przycisku.  
   
-2.  Na **ustawić właściwości sieci** okno dialogowe, wybierz opcję **Użyj symulowane właściwości sieci**.  
+2. Na **ustawić właściwości sieci** okno dialogowe, wybierz opcję **Użyj symulowane właściwości sieci**.  
   
-     Wyczyść pole wyboru, aby usunąć symulacji i wróć do właściwości sieci aktualnie połączonych interfejsu.  
+    Wyczyść pole wyboru, aby usunąć symulacji i wróć do właściwości sieci aktualnie połączonych interfejsu.  
   
-3.  Wprowadź **nazwa profilu** do symulowanej sieci. Firma Microsoft zaleca używanie unikatową nazwę, która służy do identyfikowania symulacji w [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) właściwość [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) obiektu.  
+3. Wprowadź **nazwa profilu** do symulowanej sieci. Firma Microsoft zaleca używanie unikatową nazwę, która służy do identyfikowania symulacji w [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) właściwość [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) obiektu.  
   
-4.  Wybierz [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) wartość na profil **typ kosztu sieci** listy.  
+4. Wybierz [NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype) wartość na profil **typ kosztu sieci** listy.  
   
-5.  Z **Flaga statusu limitu danych** listy, możesz ustawić [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) właściwości lub [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) właściwości na wartość true, lub możesz wybrać  **Poniżej limitu danych** do obu wartości ustawione na wartość false.  
+5. Z **Flaga statusu limitu danych** listy, możesz ustawić [ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) właściwości lub [OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost) właściwości na wartość true, lub możesz wybrać  **Poniżej limitu danych** do obu wartości ustawione na wartość false.  
   
-6.  Z **roamingu stanu** listę, ustaw [roamingu](/uwp/api/windows.networking.connectivity.connectioncost) właściwości.  
+6. Z **roamingu stanu** listę, ustaw [roamingu](/uwp/api/windows.networking.connectivity.connectioncost) właściwości.  
   
-7.  Wybierz **ustawiania właściwości** symulowanie właściwości sieci, wyzwalając planu [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) zdarzeń i tło [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) typu  **NetworkStateChange**.  
+7. Wybierz **ustawiania właściwości** symulowanie właściwości sieci, wyzwalając planu [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) zdarzeń i tło [SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger) typu  **NetworkStateChange**.  
   
- **Więcej informacji na temat zarządzania połączeniami sieciowymi**  
+   **Więcej informacji na temat zarządzania połączeniami sieciowymi**  
   
- [Szybki Start: Zarządzanie mierzone ograniczenia kosztów sieci](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Szybki Start: Zarządzanie mierzone ograniczenia kosztów sieci](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [Przykładowe informacje o sieci](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Przykładowe informacje o sieci](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [Analiza zużycia energii](../profiling/analyze-energy-use-in-store-apps.md)  
+   [Analiza zużycia energii](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
+   [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
   
- [Sposób reagowania na zdarzenia systemu przy użyciu zadań w tle](/previous-versions/windows/apps/hh977058(v=win.10))  
+   [Sposób reagowania na zdarzenia systemu przy użyciu zadań w tle](/previous-versions/windows/apps/hh977058(v=win.10))  
   
- [Porady: wyzwalanie wstrzymania, wznowienia i zdarzeń w tle w aplikacjach platformy UWP](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
+   [Porady: wyzwalanie wstrzymania, wznowienia i zdarzeń w tle w aplikacjach platformy UWP](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Przejdź symulator za pomocą klawiatury  
  Możesz przejść na pasku narzędzi w symulatorze, naciskając klawisz **CTRL + ALT + Strzałka w górę** można przełączać fokus z okna simulator do paska narzędzi symulatora. Użyj **Strzałka w górę** i **strzałkę w dół** przenoszenia między przyciskami na pasku narzędzi.  

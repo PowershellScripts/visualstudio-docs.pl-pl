@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46135662"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850818"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio projektu C++ rozszerzania i zestawu narzędzi integracji systemów
 
@@ -478,12 +478,13 @@ Format reguły jest prosta, więc w tej sekcji opisano tylko atrybuty, które wp
 
 `PageTemplate` Atrybut definiuje sposób wyświetlania reguły w **stron właściwości** okna dialogowego. Ten atrybut może mieć jedną z następujących wartości:
 
-|Atrybut|Opis|
-|-|-|
-`generic`|Wszystkie właściwości są wyświetlane na jednej stronie w obszarze nagłówki kategorii<br/>Reguła może być widoczny dla `Project` i `PropertySheet` kontekstów, ale nie `File`.<br/><br/> Przykład: `$(VCTargetsPath)` \\ *1033*\\*general.xml*
-`tool`|Kategorie są wyświetlane jako podstrony.<br/>Reguły są widoczne we wszystkich kontekstach: `Project`, `PropertySheet` i `File`.<br/>Reguła jest widoczny we właściwościach projektu tylko wtedy, gdy projekt zawiera elementy `ItemType` zdefiniowane w `Rule.DataSource`, chyba, że nazwa reguły jest uwzględniona w `ProjectTools` grupy elementów.<br/><br/>Przykład: `$(VCTargetsPath)` \\ *1033*\\*clang.xml*
-`debugger`|Strona jest wyświetlana jako część strony debugowanie.<br/>Kategorie aktualnie są ignorowane.<br/>Nazwa reguły powinna odpowiadać obiektowi debugowanie MEF uruchamiania `ExportDebugger` atrybutu.<br/><br/>Przykład: `$(VCTargetsPath)` \\ *1033*\\*debugera\_lokalnego\_windows.xml*
-*custom*| Szablon niestandardowy. Nazwa szablonu powinna odpowiadać `ExportPropertyPageUIFactoryProvider` atrybut `PropertyPageUIFactoryProvider` obiektu MEF. Zobacz **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Przykład: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml*
+
+| Atrybut | Opis |
+|------------| - |
+| `generic` | Wszystkie właściwości są wyświetlane na jednej stronie w obszarze nagłówki kategorii<br/>Reguła może być widoczny dla `Project` i `PropertySheet` kontekstów, ale nie `File`.<br/><br/> Przykład: `$(VCTargetsPath)` \\ *1033*\\*general.xml* |
+| `tool` | Kategorie są wyświetlane jako podstrony.<br/>Reguły są widoczne we wszystkich kontekstach: `Project`, `PropertySheet` i `File`.<br/>Reguła jest widoczny we właściwościach projektu tylko wtedy, gdy projekt zawiera elementy `ItemType` zdefiniowane w `Rule.DataSource`, chyba, że nazwa reguły jest uwzględniona w `ProjectTools` grupy elementów.<br/><br/>Przykład: `$(VCTargetsPath)` \\ *1033*\\*clang.xml* |
+| `debugger` | Strona jest wyświetlana jako część strony debugowanie.<br/>Kategorie aktualnie są ignorowane.<br/>Nazwa reguły powinna odpowiadać obiektowi debugowanie MEF uruchamiania `ExportDebugger` atrybutu.<br/><br/>Przykład: `$(VCTargetsPath)` \\ *1033*\\*debugera\_lokalnego\_windows.xml* |
+| *custom* | Szablon niestandardowy. Nazwa szablonu powinna odpowiadać `ExportPropertyPageUIFactoryProvider` atrybut `PropertyPageUIFactoryProvider` obiektu MEF. Zobacz **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**.<br/><br/> Przykład: `$(VCTargetsPath)` \\ *1033*\\*userMacros.xml* |
 
 Jeśli reguła używa jednego z szablonów na podstawie siatki właściwości, służy te punkty rozszerzalności dla jego właściwości:
 

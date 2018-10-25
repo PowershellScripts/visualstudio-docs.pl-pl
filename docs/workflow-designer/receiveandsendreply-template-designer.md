@@ -1,5 +1,5 @@
 ---
-title: Projektant przepływu pracy — Projektant szablonów ReceiveAndSendReply
+title: Projektant przepływu pracy — ReceiveAndSendReply, Projektant szablonów
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -13,51 +13,52 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acfe9f80a5125ef13996e7cd8ec88a35cfb83211
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 9c6b5a12b37509e6e5113c704ef2c3ff931ea32e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756389"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886412"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply, projektant szablonów
 
-**ReceiveAndSendReply** szablon zostanie użyty do utworzenia pary wstępnie skonfigurowane <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działań. Działania są częścią <xref:System.Activities.Statements.Sequence> działania i są skorelowane w ramach wymiany komunikatów żądań i odpowiedzi na serwerze.
+**ReceiveAndSendReply** szablon służy do tworzenia pary wstępnie skonfigurowane <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działań. Działania są częścią <xref:System.Activities.Statements.Sequence> działania i są skorelowane w ramach wymiany komunikatów żądań/odpowiedzi na serwerze.
 
 ## <a name="the-receiveandsendreply-template"></a>Szablon ReceiveAndSendReply
 
-Dodawanie **ReceiveAndSendReply** szablonu realizuje trzy funkcje oprócz tworzenia <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działań z <xref:System.Activities.Statements.Sequence> działania:
+Dodawanie **ReceiveAndSendReply** szablonu wykonuje trzy rzeczy, oprócz tworzenia <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działań z <xref:System.Activities.Statements.Sequence> działania:
 
 - Konfiguruje <xref:System.ServiceModel.Activities.Receive.OperationName%2A> i <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> właściwości <xref:System.ServiceModel.Activities.Receive> działania.
 
 - Wiąże <xref:System.ServiceModel.Activities.SendReply.Request%2A> właściwość <xref:System.ServiceModel.Activities.Receive> działanie <xref:System.ServiceModel.Activities.Send> działania.
 
-- Tworzy <xref:System.ServiceModel.Activities.CorrelationHandle> jako zmienną w działaniu nadrzędnym.
+- Tworzy <xref:System.ServiceModel.Activities.CorrelationHandle> jako zmienna w działanie nadrzędne.
 
 ### <a name="use-the-receiveandsendreply-template-designer"></a>Używany jest Projektant szablonów ReceiveAndSendReply
 
-Dostęp **ReceiveAndSendReply** Projektant działań w **wiadomości** kategorii **przybornika**. **ReceiveAndSendReply** Projektant działań mogą być przeciągnięte z **przybornika** i porzucić na powierzchni projektanta przepływów pracy wszędzie tam, gdzie działania są zwykle umieszczane. Projektant działań porzucenie tworzy <xref:System.ServiceModel.Activities.Receive> działanie, które można skonfigurować za pomocą **wysyłania** Projektant działań i skorelowane <xref:System.ServiceModel.Activities.SendReply> który można skonfigurować przy użyciu projektanta SendReplyToReceive.
+Dostęp do **ReceiveAndSendReply** projektanta działań w **komunikatów** kategorii **przybornika**. **ReceiveAndSendReply** projektanta działań mogą być przeciągnięte z **przybornika** i porzucić do powierzchni projektanta przepływów pracy wszędzie tam, gdzie działań są zazwyczaj umieszczone. Tworzy porzucenie Projektant działań <xref:System.ServiceModel.Activities.Receive> działania, które można skonfigurować za pomocą **wysyłania** projektanta działań i skorelowane <xref:System.ServiceModel.Activities.SendReply> , można skonfigurować za pomocą projektanta SendReplyToReceive.
 
-Aby uzyskać więcej informacji o korzystaniu z **Receive** projektanta, aby skonfigurować <xref:System.ServiceModel.Activities.Receive> działania, zobacz [odbierania Projektant działań](../workflow-designer/receive-activity-designer.md).
+Aby uzyskać więcej informacji o korzystaniu z **Receive** projektanta, aby skonfigurować <xref:System.ServiceModel.Activities.Receive> działania, zobacz [wyświetlony Projektant działań](../workflow-designer/receive-activity-designer.md).
 
 ### <a name="properties-of-sendreply"></a>Właściwości SendReply
 
-W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.SendReply> właściwości oraz opis korzystania z nich w projektancie. Te właściwości można edytować w siatce właściwości, a niektóre można edytowane na powierzchni projektanta przepływów pracy.
+W poniższej tabeli przedstawiono <xref:System.ServiceModel.Activities.SendReply> właściwości i w tym artykule opisano, jak są używane w projektancie. Te właściwości można edytować w siatce właściwości, a niektóre z nich mogą być edytowane na powierzchni projektanta przepływów pracy.
 
-|Nazwa właściwości|Wymagane|Użycie|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Opcjonalne przyjazna nazwa <xref:System.ServiceModel.Activities.SendReply> działania. Wartość domyślna to SendReplyToReceive.<br /><br /> Mimo że użycie wartości innych niż domyślne dla przyjaznych <xref:System.Activities.Activity.DisplayName%2A> nie jest ścisłym wymogiem, najlepiej użyć tych wartości.|
-|<xref:System.ServiceModel.Activities.SendReply.Request%2A>|True|Odwołanie do <xref:System.ServiceModel.Activities.Receive> działania łączyć się z tym <xref:System.ServiceModel.Activities.SendReply> działania. Ta właściwość nie może być **null**. <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działania są używane razem na serwerze do modelu wzorzec przesyłania komunikatów żądań i odpowiedzi. Ta właściwość określa, która <xref:System.ServiceModel.Activities.Send> parę działania. W projektancie, nie można edytować tej właściwości, ponieważ jest on automatycznie powiązany z <xref:System.ServiceModel.Activities.Send> działania, z której jest tworzony <xref:System.ServiceModel.Activities.SendReply> działania.|
-|<xref:System.ServiceModel.Activities.SendReply.Content%2A>|False|Określa zawartość komunikatu lub parametr do odbierania. Może być albo <xref:System.ServiceModel.Activities.ReceiveMessageContent> działania lub <xref:System.ServiceModel.Activities.ReceiveParametersContent> działania. Edytować tej właściwości, klikając przycisk wielokropka obok pola **zawartości** pole w siatce właściwości lub przez kliknięcie przycisku **Definiuj** znajdujący się obok **zawartości** etykiety na  **Odbieranie** działania powierzchnię projektanta. Wyświetl obie **definicję zawartości** okna dialogowego. Aby uzyskać więcej informacji na temat używania tego pola, zobacz [definicji zawartości, okno dialogowe](../workflow-designer/content-definition-dialog-box.md) tematu.|
-|<xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A>|False|Określa kolekcję <xref:System.ServiceModel.Activities.CorrelationInitializer> obiektów, które zainicjować wielu <xref:System.ServiceModel.Activities.CorrelationHandle> obiektów, które to skonfigurować <xref:System.ServiceModel.Activities.Receive> działania w przepływie pracy. Kliknij przycisk wielokropka obok <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> właściwości siatki właściwości, aby otworzyć **dodać inicjatorów korelacji** okno dialogowe. Aby uzyskać więcej informacji na temat używania tego pola, zobacz [CorrelationInitializers okno dialogowe Dodawanie](../workflow-designer/add-correlationinitializers-dialog-box.md) tematu.|
-|<xref:System.ServiceModel.Activities.SendReply.Action%2A>|False|Określa akcję nagłówek wiadomości. Jeśli nie jest jawnie ustawiona, jej domyślnie przyjmowana jest wartość:<br /><br /> **https://tempuri.org/{service Zwiń przestrzeni nazw} / {Nazwa kontraktu usługi} / {nazwa operacji}**|
-|<xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A>|False|Określa, czy wystąpienie przepływu pracy powinna zostać utrwalony przed wysłaniem komunikatu odpowiedzi. Wartość domyślna to **false**.|
+
+| Nazwa właściwości | Wymagane | Użycie |
+|-|----------|-|
+| <xref:System.Activities.Activity.DisplayName%2A> | False | Opcjonalna nazwa przyjazna <xref:System.ServiceModel.Activities.SendReply> działania. Wartość domyślna to SendReplyToReceive.<br /><br /> Mimo że użycie wartości innych niż domyślne przyjazna <xref:System.Activities.Activity.DisplayName%2A> nie jest ściśle wymagane, zaleca się używać tych wartości. |
+| <xref:System.ServiceModel.Activities.SendReply.Request%2A> | True | Odwołanie do <xref:System.ServiceModel.Activities.Receive> działania skojarzone z tym <xref:System.ServiceModel.Activities.SendReply> działania. Ta właściwość nie może być **null**. <xref:System.ServiceModel.Activities.Receive> i <xref:System.ServiceModel.Activities.SendReply> działania są używane wspólnie na serwerze do modelowania wzorzec przesyłania komunikatów żądań/odpowiedzi. Ta właściwość określa, która <xref:System.ServiceModel.Activities.Send> Europą działania. W projektancie nie można edytować tej właściwości, ponieważ jest on automatycznie powiązany z <xref:System.ServiceModel.Activities.Send> działań, z którego została utworzona <xref:System.ServiceModel.Activities.SendReply> działania. |
+| <xref:System.ServiceModel.Activities.SendReply.Content%2A> | False | Określa zawartość komunikatu lub parametr do odbierania. Może być albo <xref:System.ServiceModel.Activities.ReceiveMessageContent> działania lub <xref:System.ServiceModel.Activities.ReceiveParametersContent> działania. Edytuj tę właściwość, klikając przycisk wielokropka obok pozycji **zawartości** pola w siatce właściwości lub przez kliknięcie przycisku **Definiuj** przycisk Dalej, aby **zawartości** etykiety na  **Odbieranie** powierzchni projektanta działań. Wyświetl oba **definicji zawartości** okna dialogowego. Aby uzyskać więcej informacji na temat używania tego pola, zobacz [definicji zawartości, okno dialogowe](../workflow-designer/content-definition-dialog-box.md) tematu. |
+| <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> | False | Określa kolekcję elementów <xref:System.ServiceModel.Activities.CorrelationInitializer> obiektów, które zainicjować wielu <xref:System.ServiceModel.Activities.CorrelationHandle> obiektów, które to skonfigurować <xref:System.ServiceModel.Activities.Receive> działania w przepływie pracy. Kliknij przycisk wielokropka obok <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> właściwości siatki właściwości, aby otworzyć **Dodaj inicjatory korelacji** okno dialogowe. Aby uzyskać więcej informacji o korzystaniu z tego pola, zobacz [Dodawanie CorrelationInitializers, okno dialogowe](../workflow-designer/add-correlationinitializers-dialog-box.md) tematu. |
+| <xref:System.ServiceModel.Activities.SendReply.Action%2A> | False | Określa nagłówek akcji w wiadomości. Jeśli nie zostały jawnie jest ustawiona, jej wartość ustawiona wartość domyślna:<br /><br /> <strong>https://tempuri.org/{service kontrakt przestrzeni nazw} / {Nazwa kontraktu usługi} / {nazwa operacji}</strong> |
+| <xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A> | False | Określa, czy wystąpienie przepływu pracy powinny zostać utrwalone przed wysłaniem komunikat odpowiedzi. Wartość domyślna to **false**. |
 
 ## <a name="see-also"></a>Zobacz także
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [Odbieranie](../workflow-designer/receive-activity-designer.md)
-- [Wyślij](../workflow-designer/send-activity-designer.md)
+- [Receive](../workflow-designer/receive-activity-designer.md)
+- [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c5733bfa889a38c1d143fdd3bfbd8f208fed13a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44692c4715db3db8f65a85bd66a129b4d17e5138
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125591"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855550"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
-Określa, jakie informacje o wątku ma być pobrana.  
+Określa, jakie informacje o wątku do pobrania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -54,32 +54,32 @@ public enum enum_THREADPROPERTY_FIELDS {
   
 ## <a name="members"></a>Elementy członkowskie  
  TPF_ID  
- Inicjowanie użycia `dwThreadId` pole [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury.  
+ Inicjowanie bądź użyj `dwThreadId` pole [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury.  
   
  TPF_SUSPENDCOUNT  
- Inicjowanie użycia `dwSuspendCount` pole `THREADPROPERTIE`Struktura.  
+ Inicjowanie bądź użyj `dwSuspendCount` pole `THREADPROPERTIE`Struktura.  
   
  TPF_STATE  
- Inicjowanie użycia `dwThreadState` pole `THREADPROPERTIE`Struktura.  
+ Inicjowanie bądź użyj `dwThreadState` pole `THREADPROPERTIE`Struktura.  
   
  TPF_PRIORITY  
- Inicjowanie użycia `bstrPriority` pole `THREADPROPERTIE`Struktura.  
+ Inicjowanie bądź użyj `bstrPriority` pole `THREADPROPERTIE`Struktura.  
   
  TPF_NAME  
- Inicjowanie użycia `bstrName` pole `THREADPROPERTIE`Struktura.  
+ Inicjowanie bądź użyj `bstrName` pole `THREADPROPERTIE`Struktura.  
   
  TPF_LOCATION  
- Inicjowanie użycia `bstrLocation` pole `THREADPROPERTIE`Struktura.  
+ Inicjowanie bądź użyj `bstrLocation` pole `THREADPROPERTIE`Struktura.  
   
  TPF_ALLFIELDS  
  Określa wszystkie pola.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości są przekazywane jako argument [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) metody, aby wskazać, które pola [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury mają być zainicjowany.  
+ Te wartości są przekazywane jako argument do [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) metodę, aby wskazać, które pola [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) struktury, które mają zostać zainicjowane.  
   
- Te wartości są również używane w `dwFields` członkiem `THREADPROPERTIES` struktury, aby wskazać pola, które są używane i prawidłowe.  
+ Te wartości są również używane w `dwFields` członkiem `THREADPROPERTIES` struktury, aby wskazać, które pola są używane i prawidłowy.  
   
- Te flagi mogą być łączone z bitowego `OR`.  
+ Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

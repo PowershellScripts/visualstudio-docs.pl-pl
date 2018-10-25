@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e6a7bf23ab8b64516f474c6741cef48d7a0d4b43
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294271"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878560"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Porady: rozszerzanie projektanta języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,17 +74,17 @@ Można wykonać rozszerzenia do projektanta, którego używasz do edytowania def
   
  Do wdrożenia rozszerzenia do głównego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]i na innych komputerach, wykonaj następujące czynności:  
   
-1.  Znajdź plik VSIX instalacji w projekcie VSIX bin\\*\*\\\*.vsix  
+1. Znajdź plik VSIX instalacji w projekcie VSIX bin\\*\*\\\*.vsix  
   
-2.  Skopiuj ten plik do komputera docelowego, a następnie w Eksploratorze Windows (lub Eksploratora plików), kliknij go dwukrotnie.  
+2. Skopiuj ten plik do komputera docelowego, a następnie w Eksploratorze Windows (lub Eksploratora plików), kliknij go dwukrotnie.  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otwiera Menedżera rozszerzenia, aby upewnić się, że rozszerzenie zostało zainstalowane.  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Otwiera Menedżera rozszerzenia, aby upewnić się, że rozszerzenie zostało zainstalowane.  
   
- Aby odinstalować rozszerzenie, wykonaj następujące kroki:  
+   Aby odinstalować rozszerzenie, wykonaj następujące kroki:  
   
-1.  w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.  
+3. w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.  
   
-2.  Zaznacz rozszerzenie, a następnie usuń go.  
+4. Zaznacz rozszerzenie, a następnie usuń go.  
   
 ## <a name="adding-a-shortcut-menu-command"></a>Dodawanie polecenia Menu skrótów  
  Aby polecenie menu skrótów, pojawiają się na powierzchni projektanta DSL lub w oknie Eksplorator DSL, napisz klasy podobne do następujących.  

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 575f847758bd18c5e13298b1fddd3e34ddb98545
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676226"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862193"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Wskazówki: Wstawianie tekstu do dokumentu z okienka akcji
   W tym przewodniku pokazano, jak utworzyć okienka akcji w dokumencie programu Microsoft Office Word. W okienku Akcje zawiera dwie kontrolki, które gromadzenia danych wejściowych, a następnie wyślij tekstu do dokumentu.  
@@ -60,17 +60,17 @@ ms.locfileid: "35676226"
   
 ### <a name="to-add-text-to-your-document"></a>Dodawanie tekstu do dokumentu  
   
-1.  Wpisz następujący tekst w dokumencie programu Word:  
+1. Wpisz następujący tekst w dokumencie programu Word:  
   
-     **21 marca 2008**  
+    **21 marca 2008**  
   
-     **Nazwa**  
+    **Nazwa**  
   
-     **Adres**  
+    **Adres**  
   
-     **Jest to przykład okienko podstawowe działania w programie Word.**  
+    **Jest to przykład okienko podstawowe działania w programie Word.**  
   
- Możesz dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu, przeciągając go z **przybornika** w programie Visual Studio lub za pomocą **zakładki** okno dialogowe w programie Word.  
+   Możesz dodać <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolki do dokumentu, przeciągając go z **przybornika** w programie Visual Studio lub za pomocą **zakładki** okno dialogowe w programie Word.  
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>Aby dodać kontrolkę zakładki w dokumencie  
   
@@ -133,7 +133,7 @@ ms.locfileid: "35676226"
     |Właściwość|Wartość|  
     |--------------|-----------|  
     |**Nazwa**|**addText**|  
-    |**Tekst**|**Wstaw**|  
+    |**Text**|**Wstaw**|  
   
 ## <a name="add-code-to-insert-text-into-the-document"></a>Dodaj kod, aby Wstawianie tekstu do dokumentu  
  W okienku Akcje napisać kod, który wstawia tekst z pola tekstowe w odpowiednim <xref:Microsoft.Office.Tools.Word.Bookmark> kontrolek w dokumencie. Możesz użyć `Globals` klasy, aby uzyskać dostęp do dokumentu z kontrolek w okienku akcji. Aby uzyskać więcej informacji, zobacz [globalny dostęp do obiektów w projektach pakietu Office](../vsto/global-access-to-objects-in-office-projects.md).  

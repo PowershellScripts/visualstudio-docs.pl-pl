@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b152b381aaca2b9e43729616979cd7765d3a8c53
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 34ebe35ba7cad601a0ba5d43cd5c424743cb2684
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305470"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848387"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Porady: określanie poleceń pre- i post-instrumentalnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,25 +36,25 @@ Możesz określić polecenia, które są uruchamiane przed lub po są instrument
   
  **Wymagania**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Katalog roboczy, w którym są wykonywane polecenia zależy od systen operacyjne, w którym jest uruchomiony [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] i na platformie docelowej profilowanej aplikacji.  
+  Katalog roboczy, w którym są wykonywane polecenia zależy od systen operacyjne, w którym jest uruchomiony [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] i na platformie docelowej profilowanej aplikacji.  
   
- **32-bitowych komputerów**  
+  **32-bitowych komputerów**  
   
- Na komputerach z 32-bitowych domyślny katalog narzędzia profiler jest 10.0\Team: dysk rozruchowy\Program Files\Microsoft Visual Studio Tools narzędzia.  
+  Na komputerach z 32-bitowych domyślny katalog narzędzia profiler jest 10.0\Team: dysk rozruchowy\Program Files\Microsoft Visual Studio Tools narzędzia.  
   
- **komputerów 64-bitowych**  
+  **komputerów 64-bitowych**  
   
- Na komputerach 64-bitowego wpisz ścieżkę zależnie od platformy docelowej profilowanej aplikacji:  
+  Na komputerach 64-bitowego wpisz ścieżkę zależnie od platformy docelowej profilowanej aplikacji:  
   
--   Dla 32-bitowych aplikacji domyślny katalog narzędzia profiler jest:  
+- Dla 32-bitowych aplikacji domyślny katalog narzędzia profiler jest:  
   
-     *Drive*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
+   *Drive*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools  
   
--   Dla aplikacji 64-bitowych jest domyślny katalog narzędzi profilera:  
+- Dla aplikacji 64-bitowych jest domyślny katalog narzędzi profilera:  
   
-     *Drive*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
+   *Drive*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64  
   
 ### <a name="to-specify-pre-instrument-commands"></a>Aby określić polecenie przed Instrumentacją  
   

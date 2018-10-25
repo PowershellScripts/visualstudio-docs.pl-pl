@@ -31,12 +31,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5cd62b5cc5eabd731e5ad398cbb9ddbe60db073
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: feae495e83e4f78fcd627bec25dd5e988962cec4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219118"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917703"
 ---
 # <a name="assertions-in-managed-code"></a>Potwierdzenia w zarządzanym kodzie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,19 +153,19 @@ Debug.Assert ( temp != 0 );
   
  W przeciwnym razie dla <xref:System.Diagnostics.Trace> metody do pracy, program musi mieć jedną z następujących czynności w górnej części pliku źródłowego:  
   
--   `#Const TRACE = True` W języku Visual Basic  
+- `#Const TRACE = True` W języku Visual Basic  
   
--   `#define TRACE` w środowisku Visual C# i C++  
+- `#define TRACE` w środowisku Visual C# i C++  
   
- Lub program muszą zostać skompilowane przy użyciu opcji śledzenia:  
+  Lub program muszą zostać skompilowane przy użyciu opcji śledzenia:  
   
--   `/d:TRACE=True` W języku Visual Basic  
+- `/d:TRACE=True` W języku Visual Basic  
   
--   `/d:TRACE` w środowisku Visual C# i C++  
+- `/d:TRACE` w środowisku Visual C# i C++  
   
- W przypadku należy użyć metody debugowania w języku C# lub Visual Basic wersji kompilacji, zdefiniuj symbol debugowania w konfiguracji wydania.  
+  W przypadku należy użyć metody debugowania w języku C# lub Visual Basic wersji kompilacji, zdefiniuj symbol debugowania w konfiguracji wydania.  
   
- Język C++ nie obsługuje <xref:System.Diagnostics.Debug> metody klasy. Ten sam efekt można osiągnąć za pomocą <xref:System.Diagnostics.Trace> klasy kompilacji warunkowej, takie jak `#ifdef DEBUG`... `#endif`. Można zdefiniować te symbole w  **\<Projekt > strony właściwości** okno dialogowe. Aby uzyskać więcej informacji, zobacz [Zmienianie ustawienia projektu dla konfiguracji debugowania języka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) lub [Zmienianie ustawienia projektu dla konfiguracji debugowania języka C++ lub C](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+  Język C++ nie obsługuje <xref:System.Diagnostics.Debug> metody klasy. Ten sam efekt można osiągnąć za pomocą <xref:System.Diagnostics.Trace> klasy kompilacji warunkowej, takie jak `#ifdef DEBUG`... `#endif`. Można zdefiniować te symbole w  **\<Projekt > strony właściwości** okno dialogowe. Aby uzyskać więcej informacji, zobacz [Zmienianie ustawienia projektu dla konfiguracji debugowania języka Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) lub [Zmienianie ustawienia projektu dla konfiguracji debugowania języka C++ lub C](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ##  <a name="BKMK_Assert_arguments"></a> Asercja argumentów  
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> i <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> zająć maksymalnie trzy argumenty. Pierwszy argument, który jest wymagany, jest warunek, który chcesz sprawdzić. Jeśli wywołasz <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> lub <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName> z tylko jednym argumentem, `Assert` metoda sprawdza warunek i, jeśli wynikiem jest wartość FAŁSZ, wyświetla zawartość stosu wywołań, aby **dane wyjściowe** okna. W poniższym przykładzie przedstawiono <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> i <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>:  

@@ -1,5 +1,5 @@
 ---
-title: Tworzenie Portable profilowania pliki danych z poziomu wiersza polecenia | Dokumentacja firmy Microsoft
+title: Tworzenie przenośna profilowania pliki danych z poziomu wiersza polecenia | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,37 +10,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f2faf1be7f2e8ff5c96eca16ef2de9be2514db
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: be919183f18efc29ea562b0e4cc60c84febe60c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815852"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841939"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Tworzenie przenośnych plików danych profilowania z wiersza polecenia
-Aby udostępnianie danych profilowania, można użyć [VSPerfReport](../profiling/vsperfreport.md) narzędzia wiersza polecenia do osadzenia symboli dla przebiegu do profilowania. *Vsp* pliku.  
+Aby ułatwić udostępnianie danych ułatwia profilowania, można użyć [VSPerfReport](../profiling/vsperfreport.md) narzędzie wiersza polecenia do osadzenia symbole dla przebiegu do profilowania. *Vsp* pliku.  
   
- Można również utworzyć wstępnie analizowanych danych profilowania (. *vsps*) pliku, który jest mniejszy szybszą obciążenia w środowisku IDE.  
+ Możesz również utworzyć wstępnie analizowanych danych profilowania (. *vsps*) plik, który jest mniejszy i jest szybsze ładowanie w środowisku IDE.  
   
 > [!NOTE]
->  Upewnij się, że symbol (. *PDB*) pliki są dostępne dla **VSPerfReport**. Aby uzyskać więcej informacji, zobacz [porady: Określanie lokalizacji plików symboli z wiersza polecenia](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
+>  Upewnij się, że symbol (. *plik PDB*) pliki są dostępne dla **VSPerfReport**. Aby uzyskać więcej informacji, zobacz [porady: Określanie lokalizacji plików symboli z wiersza polecenia](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
 >   
 >  Aby uzyskać informacje o ścieżce do **VSReport**, zobacz [Określ ścieżkę do narzędzia wiersza polecenia](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 >   
->  Dane profilowania. *vsps* pliku nie można filtrować.  
+>  Dane profilowania. *vsps* plików nie mogą zostać odfiltrowane.  
   
-### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Aby osadzić symboli dla profilowania funkcjonowaniem danych profilowania (. *Vsp*) pliku  
+### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Aby osadzić symbole dla przebiegu profilowania danych profilowania (. *Vsp*) plików  
   
--   W oknie wiersza polecenia wpisz następujące polecenie:  
+- W oknie wiersza polecenia wpisz następujące polecenie:  
   
-     \<Ścieżka >**VSPerfReport \<** pliku VSP > **/PackSymbols**  
+   \<Ścieżka ><strong>VSPerfReport \<</strong> pliku VSP > **packsymbols**  
   
-     Domyślnie. *vsps* nosi nazwę pliku o nazwie podstawowej z. *Vsp* pliku. Można określić nazwę alternatywną, za pomocą **dane wyjściowe** opcji.  
+   Domyślnie. *vsps* nazwie z podstawowej nazwy pliku. *Vsp* pliku. Należy określić nazwę alternatywną, za pomocą **dane wyjściowe** opcji.  
   
-### <a name="to-create-a-summary-profiling-data-file"></a>Aby utworzyć plik podsumowania danych profilowania  
+### <a name="to-create-a-summary-profiling-data-file"></a>Aby utworzyć plik danych profilowania podsumowania  
   
--   W oknie wiersza polecenia wpisz następujące polecenie:  
+- W oknie wiersza polecenia wpisz następujące polecenie:  
   
-     \<Ścieżka >**VSPerfReport \<** pliku VSP > **/SummaryFile** [**/Output:**\<nazwa pliku >]  
+   \<Ścieżka ><strong>VSPerfReport \<</strong> pliku VSP > **/summaryfile** [**/Output:**\<nazwa pliku >]  
   
-     Domyślnie. *vsps* nosi nazwę pliku o nazwie podstawowej z. *Vsp* pliku. Można określić nazwę alternatywną, za pomocą **dane wyjściowe** opcji.
+   Domyślnie. *vsps* nazwie z podstawowej nazwy pliku. *Vsp* pliku. Należy określić nazwę alternatywną, za pomocą **dane wyjściowe** opcji.

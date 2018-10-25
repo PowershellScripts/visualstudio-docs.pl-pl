@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64a22cb00a90d9d5475fe89ff8c7fc800f23d86a
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: c37da890842711b941e61aadc23ed85d60672f3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371150"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823765"
 ---
 # <a name="image-service-and-catalog"></a>Usługa obrazów i katalog
 Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi obrazu w usłudze Visual Studio i katalog obrazów wprowadzone w programie Visual Studio 2015.  
@@ -32,46 +32,46 @@ Ten podręcznik zawiera wskazówki i najlepsze rozwiązania dotyczące usługi o
   
  Dlaczego warto przyjąć Usługa obrazów?  
   
--   Zawsze uzyskać najnowszego obrazu "doskonałe rozwiązanie pikseli" z programu Visual Studio  
+- Zawsze uzyskać najnowszego obrazu "doskonałe rozwiązanie pikseli" z programu Visual Studio  
   
--   Możesz przesłać i korzystanie z własnych obrazów  
+- Możesz przesłać i korzystanie z własnych obrazów  
   
--   Nie trzeba przetestować obrazy się kiedy Windows dodaje nowe Skalowanie DPI  
+- Nie trzeba przetestować obrazy się kiedy Windows dodaje nowe Skalowanie DPI  
   
--   Adres stare architektury przeszkody w swojej implementacji.  
+- Adres stare architektury przeszkody w swojej implementacji.  
   
- Narzędzi programu Visual Studio shell przed i po nim za pomocą usługi obrazów:  
+  Narzędzi programu Visual Studio shell przed i po nim za pomocą usługi obrazów:  
   
- ![Usługa obrazów przed i po nim](../extensibility/media/image-service-before-and-after.png "Usługa obrazów przed i po nim")  
+  ![Usługa obrazów przed i po nim](../extensibility/media/image-service-before-and-after.png "Usługa obrazów przed i po nim")  
   
 ## <a name="how-it-works"></a>Jak to działa
  Usługa obrazów można podać obraz mapy bitowej nadające się do dowolnej obsługiwanej architektury interfejsu użytkownika:  
   
--   WPF: BitmapSource  
+- WPF: BitmapSource  
   
--   Formularze winform: System.Drawing.Bitmap  
+- Formularze winform: System.Drawing.Bitmap  
   
--   Win32: HBITMAP  
+- Win32: HBITMAP  
   
- Diagram przepływu usługi obrazów  
+  Diagram przepływu usługi obrazów  
   
- ![Obraz diagramu przepływu usługi](../extensibility/media/image-service-flow-diagram.png "obrazu diagramu przepływu usługi")  
+  ![Obraz diagramu przepływu usługi](../extensibility/media/image-service-flow-diagram.png "obrazu diagramu przepływu usługi")  
   
- **Monikery obrazu**  
+  **Monikery obrazu**  
   
- Moniker obrazu (lub krótkiej nazwy w skrócie) jest pary identyfikator GUID/ID, który unikatowo identyfikuje zasób obrazu lub obraz listy zasobów w bibliotece obrazów.  
+  Moniker obrazu (lub krótkiej nazwy w skrócie) jest pary identyfikator GUID/ID, który unikatowo identyfikuje zasób obrazu lub obraz listy zasobów w bibliotece obrazów.  
   
- **Monikery znane**  
+  **Monikery znane**  
   
- Zestaw monikerów obrazów znajdujących się w katalogu obrazu w usłudze Visual Studio i publicznie usprawnia według dowolnego składnika programu Visual Studio lub rozszerzenia.  
+  Zestaw monikerów obrazów znajdujących się w katalogu obrazu w usłudze Visual Studio i publicznie usprawnia według dowolnego składnika programu Visual Studio lub rozszerzenia.  
   
- **Pliki manifestu obrazu**  
+  **Pliki manifestu obrazu**  
   
- Manifestu obrazu (*.imagemanifest*) pliki są plikami XML, które definiują zestaw zasoby obrazów, monikerów, które reprezentują te zasoby i rzeczywistego obrazu lub obrazów, które reprezentują każdego zasobu. Manifesty obrazu można zdefiniować obrazy autonomiczne lub listy obrazów do obsługi starszych wersji interfejsu użytkownika. Ponadto są atrybuty, które mogą być ustawione na zasób lub na poszczególnych obrazów za każdy zasób do zmiany, kiedy i jak te zasoby są wyświetlane.  
+  Manifestu obrazu (*.imagemanifest*) pliki są plikami XML, które definiują zestaw zasoby obrazów, monikerów, które reprezentują te zasoby i rzeczywistego obrazu lub obrazów, które reprezentują każdego zasobu. Manifesty obrazu można zdefiniować obrazy autonomiczne lub listy obrazów do obsługi starszych wersji interfejsu użytkownika. Ponadto są atrybuty, które mogą być ustawione na zasób lub na poszczególnych obrazów za każdy zasób do zmiany, kiedy i jak te zasoby są wyświetlane.  
   
- **Obraz schematu manifestu**  
+  **Obraz schematu manifestu**  
   
- Manifest pełny obraz wygląda następująco:  
+  Manifest pełny obraz wygląda następująco:  
   
 ```xml  
 <ImageManifest>  
@@ -405,52 +405,52 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
   
  Są to kluczowe miejsca, do używają monikerów w oknie narzędzia. Postępuj zgodnie z instrukcjami dla każdego:  
   
-1.  Karta okna narzędzia, gdy wystarczająco mała, kartach (używany również w **Ctrl**+**kartę** przełącznik okien).  
+1. Karta okna narzędzia, gdy wystarczająco mała, kartach (używany również w **Ctrl**+**kartę** przełącznik okien).  
   
-     Dodaj następujący wiersz do konstruktora dla klasy, która pochodzi od klasy **obiektu ToolWindowPane** typu:  
+    Dodaj następujący wiersz do konstruktora dla klasy, która pochodzi od klasy **obiektu ToolWindowPane** typu:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    this.BitmapImageMoniker = KnownMonikers.Blank;  
-    ```  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   this.BitmapImageMoniker = KnownMonikers.Blank;  
+   ```  
   
-2.  Polecenie, aby otworzyć okno narzędzia.  
+2. Polecenie, aby otworzyć okno narzędzia.  
   
-     W *vsct* pliku pakietu, Edytuj przycisku polecenia z okna narzędzi:  
+    W *vsct* pliku pakietu, Edytuj przycisku polecenia z okna narzędzi:  
   
-    ```xml  
-    <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <!-- Replace this KnownMoniker with your desired ImageMoniker -->  
-      <Icon guid="ImageCatalogGuid" id="Blank" />  
-      <!-- Add this -->  
-      <CommandFlag>IconIsMoniker</CommandFlag>  
-      <Strings>  
-        <ButtonText>MyToolWindow</ButtonText>  
-      </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidPackageCmdSet" id="CommandId" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <!-- Replace this KnownMoniker with your desired ImageMoniker -->  
+     <Icon guid="ImageCatalogGuid" id="Blank" />  
+     <!-- Add this -->  
+     <CommandFlag>IconIsMoniker</CommandFlag>  
+     <Strings>  
+       <ButtonText>MyToolWindow</ButtonText>  
+     </Strings>  
+   </Button>  
+   ```  
   
- **Jak używać obrazu monikerów w istniejącym oknie Narzędzie?**  
+   **Jak używać obrazu monikerów w istniejącym oknie Narzędzie?**  
   
- Aktualizowanie istniejącego okna narzędzia do używają monikerów obrazu jest podobna do procedury służące do tworzenia nowego okna narzędzia.  
+   Aktualizowanie istniejącego okna narzędzia do używają monikerów obrazu jest podobna do procedury służące do tworzenia nowego okna narzędzia.  
   
- Są to kluczowe miejsca, do używają monikerów w oknie narzędzia. Postępuj zgodnie z instrukcjami dla każdego:  
+   Są to kluczowe miejsca, do używają monikerów w oknie narzędzia. Postępuj zgodnie z instrukcjami dla każdego:  
   
-1.  Karta okna narzędzia, gdy wystarczająco mała, kartach (używany również w **Ctrl**+**kartę** przełącznik okien).  
+3. Karta okna narzędzia, gdy wystarczająco mała, kartach (używany również w **Ctrl**+**kartę** przełącznik okien).  
   
-    1.  Usuń następujące wiersze (jeśli istnieją) w konstruktorze klasy, która pochodzi od klasy **obiektu ToolWindowPane** typu:  
+   1.  Usuń następujące wiersze (jeśli istnieją) w konstruktorze klasy, która pochodzi od klasy **obiektu ToolWindowPane** typu:  
   
-        ```csharp  
-        this.BitmapResourceID = <Value>;  
-        this.BitmapIndex = <Value>;  
-        ```  
+       ```csharp  
+       this.BitmapResourceID = <Value>;  
+       this.BitmapIndex = <Value>;  
+       ```  
   
-    2.  Zobacz krok #1 "Jak używać obrazu monikerów w nowym oknie narzędzia?" powyższej sekcji.  
+   2.  Zobacz krok #1 "Jak używać obrazu monikerów w nowym oknie narzędzia?" powyższej sekcji.  
   
-2.  Polecenie, aby otworzyć okno narzędzia.  
+4. Polecenie, aby otworzyć okno narzędzia.  
   
-    -   Zobacz krok #2 "Jak używać obrazu monikerów w nowym oknie narzędzia?" powyższej sekcji.  
+   -   Zobacz krok #2 "Jak używać obrazu monikerów w nowym oknie narzędzia?" powyższej sekcji.  
   
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Jak używać monikerów obraz w pliku vsct?  
  Aktualizacja usługi *vsct* pliku wskazane wiersze komentarzem poniżej:  
@@ -516,83 +516,83 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ## <a name="how-do-i-port-a-project-system"></a>Jak port system projektu?  
  **Jak przekazać ImageMonikers dla projektu**  
   
-1.  Implementowanie **VSHPROPID_SupportsIconMonikers** nad projektem **IVsHierarchy**i zwraca wartość true.  
+1. Implementowanie **VSHPROPID_SupportsIconMonikers** nad projektem **IVsHierarchy**i zwraca wartość true.  
   
-2.  Implementowanie albo **VSHPROPID_IconMonikerImageList** (Jeśli oryginalny projekt **VSHPROPID_IconImgList**) lub **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (Jeśli oryginalny projekt  **VSHPROPID_IconHandle** i **VSHPROPID_OpenFolderIconHandle**).  
+2. Implementowanie albo **VSHPROPID_IconMonikerImageList** (Jeśli oryginalny projekt **VSHPROPID_IconImgList**) lub **VSHPROPID_IconMonikerGuid**,  **VSHPROPID_IconMonikerId**, **VSHPROPID_OpenFolderIconMonikerGuid**, **VSHPROPID_OpenFolderIconMonikerId** (Jeśli oryginalny projekt  **VSHPROPID_IconHandle** i **VSHPROPID_OpenFolderIconHandle**).  
   
-3.  Zmień implementację oryginalnego VSHPROPIDs ikon w celu utworzenia "starszych" wersje ikony, jeśli punkty rozszerzenia zażądać ich. **IVsImageService2** udostępnia funkcje niezbędne do doprowadzenia tych ikon  
+3. Zmień implementację oryginalnego VSHPROPIDs ikon w celu utworzenia "starszych" wersje ikony, jeśli punkty rozszerzenia zażądać ich. **IVsImageService2** udostępnia funkcje niezbędne do doprowadzenia tych ikon  
   
- **Dodatkowe wymagania dla języka VB / odmian systemu projektu języka C#**  
+   **Dodatkowe wymagania dla języka VB / odmian systemu projektu języka C#**  
   
- Zawierać implementację tylko **VSHPROPID_SupportsIconMonikers** jeśli wykryje, że projekt jest **peryferyjnych flavor**. W przeciwnym razie rzeczywiste flavor peryferyjnych mogą nie obsługiwać monikerów obrazu w rzeczywistości, a Twoja wersja podstawowa mogą skutecznie "hide" dostosowanych obrazów.  
+   Zawierać implementację tylko **VSHPROPID_SupportsIconMonikers** jeśli wykryje, że projekt jest **peryferyjnych flavor**. W przeciwnym razie rzeczywiste flavor peryferyjnych mogą nie obsługiwać monikerów obrazu w rzeczywistości, a Twoja wersja podstawowa mogą skutecznie "hide" dostosowanych obrazów.  
   
- **Jak używać monikerów obrazu w systemie CPS?**  
+   **Jak używać monikerów obrazu w systemie CPS?**  
   
- Ustawienia niestandardowe obrazy w systemie CPS (Common Project System) może odbywać się ręcznie lub za pomocą szablonu elementu, który jest dostarczany z zestawem SDK rozszerzalność systemu projektów.  
+   Ustawienia niestandardowe obrazy w systemie CPS (Common Project System) może odbywać się ręcznie lub za pomocą szablonu elementu, który jest dostarczany z zestawem SDK rozszerzalność systemu projektów.  
   
- **Za pomocą funkcji rozszerzalności System projektu zestawu SDK**  
+   **Za pomocą funkcji rozszerzalności System projektu zestawu SDK**  
   
- Postępuj zgodnie z instrukcjami w artykule [Podaj niestandardowe ikony dla typu elementu typu projektu](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) dostosowywania obrazów CPS. Więcej informacji na temat CPS znajduje się w temacie [rozszerzania System projektu usługi Visual Studio](https://github.com/Microsoft/VSProjectSystem)  
+   Postępuj zgodnie z instrukcjami w artykule [Podaj niestandardowe ikony dla typu elementu typu projektu](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/scenario/provide_custom_icons_for_the_project_or_item_type.md) dostosowywania obrazów CPS. Więcej informacji na temat CPS znajduje się w temacie [rozszerzania System projektu usługi Visual Studio](https://github.com/Microsoft/VSProjectSystem)  
   
- **Użyj ręcznie ImageMonikers**  
+   **Użyj ręcznie ImageMonikers**  
   
-1.  Implementowanie i eksportowanie **IProjectTreeModifier** interfejs w systemie projektu.  
+4. Implementowanie i eksportowanie **IProjectTreeModifier** interfejs w systemie projektu.  
   
-2.  Określenie **KnownMoniker** lub monikera niestandardowy obraz, którego chcesz użyć.  
+5. Określenie **KnownMoniker** lub monikera niestandardowy obraz, którego chcesz użyć.  
   
-3.  W **ApplyModifications** metody, wykonaj następujące czynności gdzieś w metodzie przed zwróceniem nowego drzewa, podobnie jak poniższym przykładzie:  
+6. W **ApplyModifications** metody, wykonaj następujące czynności gdzieś w metodzie przed zwróceniem nowego drzewa, podobnie jak poniższym przykładzie:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
-    ```  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
+   ```  
   
-4.  W przypadku tworzenia nowego drzewa, można ustawić niestandardowych obrazów, przekazując żądaną monikerów NewTree do metody, podobnie jak poniższym przykładzie:  
+7. W przypadku tworzenia nowego drzewa, można ustawić niestandardowych obrazów, przekazując żądaną monikerów NewTree do metody, podobnie jak poniższym przykładzie:  
   
-    ```csharp  
-    // Replace this KnownMoniker with your desired ImageMoniker  
-    ProjectImageMoniker icon         = KnownMonikers.FolderClosed.ToProjectSystemType();  
-    ProjectImageMoniker expandedIcon = KnownMonikers.FolderOpened.ToProjectSystemType();  
+   ```csharp  
+   // Replace this KnownMoniker with your desired ImageMoniker  
+   ProjectImageMoniker icon         = KnownMonikers.FolderClosed.ToProjectSystemType();  
+   ProjectImageMoniker expandedIcon = KnownMonikers.FolderOpened.ToProjectSystemType();  
   
-    return this.ProjectTreeFactory.Value.NewTree(/*caption*/<value>,  
-                                                 /*filePath*/<value>,  
-                                                 /*browseObjectProperties*/<value>,  
-                                                 icon,  
-                                                 expandedIcon);  
-    ```  
+   return this.ProjectTreeFactory.Value.NewTree(/*caption*/<value>,  
+                                                /*filePath*/<value>,  
+                                                /*browseObjectProperties*/<value>,  
+                                                icon,  
+                                                expandedIcon);  
+   ```  
   
 ## <a name="how-do-i-convert-from-a-real-image-strip-to-a-moniker-based-image-strip"></a>Jak przekonwertować z paska rzeczywistego obrazu na pasek oparte na monikera obrazu?  
  **Potrzebuję pomocy technicznej HIMAGELISTs**  
   
  Zalety usługi obrazów można uzyskać nawet w sytuacji, w przypadku istniejącego paska obrazów w kodzie, który ma zostać zaktualizowany do korzystania z usługi obrazu, ale są ograniczone przez interfejsy API, które wymagają przekazywania wokół list obrazów. Aby utworzyć pasek oparte na monikera obrazu, wykonaj poniższe kroki, aby utworzyć manifest z istniejących monikerów.  
   
-1.  Uruchom **ManifestFromResources** narzędzia, podając mu paska obrazów. Spowoduje to wygenerowanie manifestu paska.  
+1. Uruchom **ManifestFromResources** narzędzia, podając mu paska obrazów. Spowoduje to wygenerowanie manifestu paska.  
   
-    -   Zalecane: Podaj nazwę innego niż domyślny manifest do własnych jej użycie.  
+   -   Zalecane: Podaj nazwę innego niż domyślny manifest do własnych jej użycie.  
   
-2.  Jeśli używane są tylko **KnownMonikers**, wykonaj następujące czynności:  
+2. Jeśli używane są tylko **KnownMonikers**, wykonaj następujące czynności:  
   
-    -   Zastąp \<obrazów > sekcji manifestu z \<obrazów / >.  
+   -   Zastąp \<obrazów > sekcji manifestu z \<obrazów / >.  
   
-    -   Usuń wszystkie subimage identyfikatorów (wszystko z \<imagestrip name > _ ##).  
+   -   Usuń wszystkie subimage identyfikatorów (wszystko z \<imagestrip name > _ ##).  
   
-    -   Zalecane: Zmień nazwę symbolu AssetsGuid i symbol paska obraz do potrzeb ich użycie.  
+   -   Zalecane: Zmień nazwę symbolu AssetsGuid i symbol paska obraz do potrzeb ich użycie.  
   
-    -   Zastąp każde **ContainedImage**firmy identyfikatora GUID $(ImageCatalogGuid), Zastąp każde **ContainedImage**firmy identyfikator z $(\<moniker >) i Dodaj atrybut zewnętrznych = "true" do każdego **ContainedImage**  
+   -   Zastąp każde **ContainedImage**firmy identyfikatora GUID $(ImageCatalogGuid), Zastąp każde **ContainedImage**firmy identyfikator z $(\<moniker >) i Dodaj atrybut zewnętrznych = "true" do każdego **ContainedImage**  
   
-        -   \<Moniker > należy zastąpić je klasą **KnownMoniker** odpowiadającej obrazu, ale z "KnownMonikers." usunięte z nazwy.  
+       -   \<Moniker > należy zastąpić je klasą **KnownMoniker** odpowiadającej obrazu, ale z "KnownMonikers." usunięte z nazwy.  
   
-    -   Dodaj < Import Manifest="$(ManifestFolder)\\< względna instalacji ścieżkę katalogu do *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*> na początku \<symbole > sekcji.  
+   -   Dodaj < Import Manifest="$(ManifestFolder)\\< względna instalacji ścieżkę katalogu do *\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest" /\*> na początku \<symbole > sekcji.  
   
-        -   Ścieżka względna jest ustalany w lokalizacji wdrożenia zdefiniowany w ustawieniach tworzenia manifestu.  
+       -   Ścieżka względna jest ustalany w lokalizacji wdrożenia zdefiniowany w ustawieniach tworzenia manifestu.  
   
-3.  Uruchom **ManifestToCode** narzędzie do generowania otoki, aby istniejący kod jest krótka, można użyć do zapytania usługi obrazów dla paska obrazów.  
+3. Uruchom **ManifestToCode** narzędzie do generowania otoki, aby istniejący kod jest krótka, można użyć do zapytania usługi obrazów dla paska obrazów.  
   
-    -   Zalecane: Podaj nazwy innej niż domyślna dla otok i przestrzenie nazw w zależności od ich użycia.  
+   -   Zalecane: Podaj nazwy innej niż domyślna dla otok i przestrzenie nazw w zależności od ich użycia.  
   
-4.  Wykonaj wszystkie dodaje, tworzenia instalacji/wdrażania i innych zmian w kodzie do pracy z usługą obrazu i nowe pliki.  
+4. Wykonaj wszystkie dodaje, tworzenia instalacji/wdrażania i innych zmian w kodzie do pracy z usługą obrazu i nowe pliki.  
   
- W tym obrazy wewnętrzne i zewnętrzne, aby zobaczyć, co powinno to wyglądać podobnie manifestu próbki:  
+   W tym obrazy wewnętrzne i zewnętrzne, aby zobaczyć, co powinno to wyglądać podobnie manifestu próbki:  
   
 ```xml  
 <?xml version="1.0"?>  

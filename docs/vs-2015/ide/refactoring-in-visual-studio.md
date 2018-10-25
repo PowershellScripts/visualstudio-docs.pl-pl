@@ -14,27 +14,27 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e621d8bccdb8dceb1a6516ff0c070393962cea11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce995687f304579c7a4f3a95b971dcc86e28f050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878040"
 ---
 # <a name="refactoring-in-visual-studio"></a>Refaktoryzacja w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Refaktoryzacja polega na modyfikacji kodu, aby ułatwić utrzymanie, zrozumieć i rozszerzenie, ale bez zmiany jego zachowania. Niektóre typowe *refaktoryzacje* obejmują:  
   
-1.  dzielenie długie funkcje na mniejsze  
+1. dzielenie długie funkcje na mniejsze  
   
-2.  Zmiana nazwy zmiennych, typów, funkcji lub parametrów  
+2. Zmiana nazwy zmiennych, typów, funkcji lub parametrów  
   
-3.  Zmiana kolejności parametrów  
+3. Zmiana kolejności parametrów  
   
-4.  Usuwanie lub zmiana kolejności dyrektyw using  
+4. Usuwanie lub zmiana kolejności dyrektyw using  
   
- Ponieważ logiki refaktoryzacji jest ściśle powiązany składni języka, każda usługa języka w programie Visual Studio udostępnia swoje własne możliwości refaktoryzacji. Aby uzyskać więcej informacji zobacz następujące strony:  
+   Ponieważ logiki refaktoryzacji jest ściśle powiązany składni języka, każda usługa języka w programie Visual Studio udostępnia swoje własne możliwości refaktoryzacji. Aby uzyskać więcej informacji zobacz następujące strony:  
   
 ### <a name="refactoring-in-c"></a>Refaktoryzacja w języku C#  
  [Refaktoryzacja (C#)](../csharp-ide/refactoring-csharp.md)  

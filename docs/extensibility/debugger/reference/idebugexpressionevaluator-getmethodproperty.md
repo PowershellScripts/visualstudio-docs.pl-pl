@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5d294e401af09ec3c10fa6dabbb878c661b559e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 70c527fcc9e676523d6372c53517c43b9e5feb7d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950332"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
-Ta metoda pobiera obiekt właściwości, który zawiera elementy lokalne, argumentów i inne właściwości metody.  
+Ta metoda pobiera obiekt właściwości, który zawiera zmienne, argumenty i inne właściwości, metody.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -49,25 +49,25 @@ int GetMethodProperty(
   
 #### <a name="parameters"></a>Parametry  
  `pSymbolProvider`  
- [in] Dostawcy symbol, który ma być używany, wyrażony jako [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) obiektu.  
+ [in] Dostawca symboli, które ma być używany, wyrażone jako [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) obiektu.  
   
  `pAddress`  
- [in] Adres w kodzie, wyrażony jako [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiektu, który ma zostać rozpoznane do najbliższej zawierającego funkcji.  
+ [in] Adres w kodzie, wyrażone jako [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiektu, które powinny zostać rozwiązane do najbliższej zawierającego funkcję.  
   
  `pBinder`  
- [in] Obiekt wiążący mają być używane, wyrażony jako [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) obiektu.  
+ [in] Obiekt wiążący, który ma być używany, wyrażone jako [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) obiektu.  
   
  `fIncludeHiddenLocals`  
- [in] Różna od zera (`TRUE`) oznacza, że obejmują ukryte zmienne lokalne; zero (`FALSE`) oznacza, że Opuść ukrytych zmiennych lokalnych  
+ [in] Wartość różną od zera (`TRUE`) oznacza, że zawierają ukryte elementy lokalne; wartość zero (`FALSE`) oznacza, że Opuść ukryte elementy lokalne  
   
  `ppProperty`  
  [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt, który reprezentuje metodę.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ukryte elementy lokalne są zazwyczaj zmiennych, które są generowane przez kompilator.  
+ Ukryte elementy lokalne są zwykle zmienne, które są generowane przez kompilator.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)   

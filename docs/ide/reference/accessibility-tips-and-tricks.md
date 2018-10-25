@@ -1,6 +1,6 @@
 ---
-title: I porady dotyczące ułatwień dostępu dla programu Visual Studio
-description: Więcej informacji o porady i wskazówki, które może sprawić, że program Visual Studio zintegrowane środowisko programistyczne (IDE) jest bardziej dostępny dla wszystkich użytkowników do użycia, w tym osób niepełnosprawnych.
+title: Wskazówki dotyczące dostępności i wskazówki dotyczące programu Visual Studio
+description: Więcej informacji na temat porady i wskazówki, które mogą pomóc, że program Visual Studio zintegrowane środowisko programistyczne (IDE) jest bardziej dostępny dla każdego, w tym osobom niepełnosprawnym.
 ms.date: 09/15/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -13,88 +13,88 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cff1eb98dd76f8b594193b2e768987b4e2a441d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 57898fbcfba72c67b199ea584d494cb96dfbf491
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811844"
 ---
-# <a name="accessibility-tips-and-tricks-for-visual-studio"></a>I porady dotyczące ułatwień dostępu dla programu Visual Studio
+# <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Wskazówki dotyczące dostępności i wskazówki dotyczące programu Visual Studio
 
 > [!TIP]
-> Aby dowiedzieć się więcej o najnowszych aktualizacji ułatwień dostępu, zobacz [ulepszenia ułatwień dostępu w programie Visual Studio 2017 wersji 15 ustęp 3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) wpis w blogu.
+> Aby dowiedzieć się więcej o najnowszych aktualizacjach ułatwień dostępu, zobacz [ulepszenia ułatwień dostępu w programie Visual Studio 2017 w wersji 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) wpis w blogu.
 
-Visual Studio ma wbudowanych funkcji ułatwień dostępu są zgodne z czytników ekranu i innych technologii pomocniczych. W tym temacie wymieniono typowe kombinacje klawiszy skrótu można używać do wykonywania zadań za pomocą klawiatury tylko i zawiera informacje dotyczące używania motywów dużego kontrastu do poprawy widoczności. Również przedstawia sposób użycia adnotacje do ujawniania przydatne informacje na temat kodu i jak ustawić dźwięku wskaźniki kompilacji i przerwania zdarzenia.
+Visual Studio ma wbudowanych funkcji ułatwień dostępu, które są zgodne z czytnikami ekranu i innych technologii pomocniczych. Ten temat zawiera listę typowych kombinacje klawiszy skrótu można używać do wykonywania zadań przy użyciu tylko klawiatury i zawiera informacje o używaniu motywy o wysokim kontraście poprawi widoczność. Także pokazuje jak ujawnić przydatnych informacji o kodzie za pomocą adnotacji i jak ustawić dźwięku wskazówek dla kompilacji i punkt przerwania zdarzenia.
 
 ## <a name="save-your-ide-settings"></a>Zapisz ustawienia IDE
 
- Zapisywanie układu okna, schemat mapowania klawiatury i inne preferencje można dostosować środowiska IDE. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+ Aby dostosować swoje środowisko IDE, należy zapisywanie układu okna, schemat mapowania klawiatury i inne preferencje. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="modify-your-ide-for-high-contrast-viewing"></a>Modyfikowanie środowiskiem IDE w celu wyświetlenia dużego kontrastu
+## <a name="modify-your-ide-for-high-contrast-viewing"></a>Zmodyfikuj swoje środowisko IDE przeznaczone do wyświetlania o wysokim kontraście
 
-Dla niektórych pracowników niektóre kolory są trudne do Zobacz. Jeśli mają więcej kontrastu jako kod można, ale nie chcesz używać Typowe motywy "Duży kontrast", firma Microsoft oferuje teraz motywu "Niebieski (dodatkowy kontrastu)".
+Dla niektórych osób niektóre kolory są trudne do wyświetlić. Jeśli chcesz więcej kontrastu w trakcie kodowania, ale nie mają być używane Typowe motywy "O wysokim kontraście", oferujemy teraz motywu "Niebieski (dodatkowy kontrast)".
 
-  ![Porównanie motywu niebieski i motyw niebieski dodatkowe kontrast](media/blue-extra-contrast-theme.png)
+  ![Porównaj motyw niebieski i motyw niebieski dodatkowy kontrast](media/blue-extra-contrast-theme.png)
 
-## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Umożliwia ujawnienie przydatnych informacji o kodzie adnotacji
+## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>Aby wyświetlić przydatnych informacji o kodzie korzystanie z adnotacji
 
-Edytor programu Visual Studio zawiera wiele tekst "skojarzenia" umożliwiające wiedzieć o cechy i funkcje w punktach określonego wiersza kodu, takie jak lightbulbs, błąd i ostrzeżenie "zygzaki" zakładki i tak dalej. Możesz użyć polecenia "Pokaż linii adnotacji" Ustaw ułatwiają odnajdywanie, a następnie przejdź między tymi skojarzenia.
+Edytor programu Visual Studio zawiera wiele tekst "zakończeń", które pozwalają poznać cechy i funkcje w punktach konkretnego wiersza kodu, takie jak lightbulbs, błąd i ostrzeżenie "zygzaki" zakładek i tak dalej. Można użyć zestaw ułatwiają odnajdywanie i następnie przechodzić między zakończeniami tych poleceń "Pokaż adnotacje z linią".
 
-  ![Użyj zestawu poleceń Pokaż linii adnotacji](media/show-line-annotations-command-set.png)
+  ![Użyj zestawu poleceń Pokaż adnotacje z linią](media/show-line-annotations-command-set.png)
 
-## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>Paski narzędzi dostępu przy użyciu kombinacji klawiszy skrótów
+## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>Dostęp do pasków narzędzi, za pomocą kombinacji klawiszy skrótów
 
-Środowiska IDE programu Visual Studio ma paski narzędzi, jak wiele okien narzędzi. Następujące kombinacje klawiszy skrótu pomóc uzyskiwać do nich dostęp.
+Visual Studio IDE ma paski narzędzi, jak wielu okien narzędziowych. Następujące kombinacje klawiszy skrótu ułatwiają dostęp do nich.
 
 |Funkcja|Opis|Kombinacja klawiszy|
-|-------------|-----------------|---------------------|
-|Paski narzędzi IDE|Kliknij pierwszy przycisk na standardowym pasku narzędzi.|**ALT**, **CTRL** + **KARTĘ**|
-|Paski narzędzi okna narzędzi|Przenieś fokus na paskach narzędzi w oknie narzędzia. <br> <br> **Uwaga:** działa to w przypadku większości okien narzędzi, ale tylko wtedy, gdy fokus w oknie narzędzia. Ponadto musisz wybrać klawisz SHIFT przed klawisza ALT. W niektórych okien narzędzi, takich jak Team Explorer musi przytrzymaj klawisz SHIFT, na chwilę przed wybraniem klawisza ALT.|**SHIFT** + **ALT**|
-|Paski narzędzi|Przejdź do pierwszego elementu w pasku narzędzi dalej (po aktywowaniu paska narzędzi).|**CTRL** + **KARTĘ**|
+|-------------|-----------------| - |
+|Paski narzędzi IDE|Wybierz pierwszy przycisk na pasku narzędzi Standardowy.|**ALT**, **CTRL** + **KARTĘ**|
+|Paskach narzędzi okna|Przenieś fokus na paski narzędzi w oknie narzędzi. <br> <br> **Uwaga:** działa to dla większości okien narzędzi, ale tylko wtedy, gdy fokus znajduje się w oknie narzędzi. Ponadto musisz wybrać klawisz SHIFT przed klawisza ALT. W niektórych oknach narzędzi, takich jak Team Explorer musi przytrzymaj klawisz SHIFT, przez chwilę przed wybraniem klawisza ALT.|**SHIFT** + **ALT**|
+|Paski narzędzi|Przejdź do pierwszego elementu w pasku dalej (w przypadku pasek narzędzi jest ustawiony fokus).|**CTRL** + **KARTĘ**|
 
-### <a name="other-useful-shortcut-key-combinations"></a>Kombinacje klawiszy skrótów przydatne
+### <a name="other-useful-shortcut-key-combinations"></a>Inne kombinacje klawiszy skrótu przydatne
 
 Oto niektóre inne przydatne kombinacje klawiszy skrótu.
 
 |Funkcja|Opis|Kombinacja klawiszy|
-|-------------|-----------------|---------------------|
-|IDE|Przełącz duży kontrast, włączać i wyłączać. <br> <br> **Uwaga:** skrót standardowych systemu Windows|**ALT + Left SHIFT + PRINT SCREEN w lewo**|
-|Okno dialogowe|Wybierz lub wyczyść pole wyboru opcji w oknie dialogowym. <br> <br> **Uwaga:** skrót standardowych systemu Windows|**SPACJA**|
-|Menu kontekstowe|Otwórz menu kontekstowe (kliknij prawym przyciskiem myszy). <br> <br> **Uwaga:** skrót standardowych systemu Windows|**SHIFT** + **F10**|
-|Menu|Szybki dostęp do elementu menu przy użyciu jego klawiszy skrótów. Wybierz **ALT** klucza następuje podkreślone litery w menu, aby uaktywnić to polecenie. Na przykład, aby wyświetlić okno dialogowe Otwórz projekt w programie Visual Studio, możesz wybrać **ALT** + **F** + **O**  +  **P**.  <br><br> **Uwaga:** skrót standardowych systemu Windows|**ALT** + **[list]**|
-|Okno przybornika|Przenoszenie między kartami przybornika.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **DOWNARROW**|
-|Okno przybornika|Dodaj formant z przybornika do formularza lub projektanta.|**WPROWADŹ**|
-|Klawiatura, środowisko, opcje — Okno dialogowe|Usuń kombinację klawiszy w **klawiszy skrótów** opcji.|**BACKSPACE**|
+|-------------|-----------------| - |
+|IDE|Przełącz wysokiego kontrastu, włączać i wyłączać. <br> <br> **Uwaga:** skrótów Windows Standard|**Lewy ALT + lewy SHIFT + PRINT SCREEN**|
+|Okno dialogowe|Zaznacz lub wyczyść pole wyboru opcji w oknie dialogowym. <br> <br> **Uwaga:** skrótów Windows Standard|**SPACJA**|
+|Menu kontekstowe|Otwórz menu kontekstowe (kliknij prawym przyciskiem myszy). <br> <br> **Uwaga:** skrótów Windows Standard|**SHIFT** + **F10**|
+|Menu|Szybki dostęp do elementu menu przy użyciu jego klawiszy skrótów. Wybierz **ALT** klucz następuje podkreślnikiem w menu, aby uaktywnić to polecenie. Na przykład, aby wyświetlić okno dialogowe Otwórz projekt w programie Visual Studio, możesz wybrać **ALT** + **F** + **O**  +  **P**.  <br><br> **Uwaga:** skrótów Windows Standard|**ALT** + **[list]**|
+|Okno przybornika|Przechodzenie między karty przybornika.|**CTRL** + **UPARROW**<br /><br /> and<br /><br /> **CTRL** + **STRZAŁKA W DÓŁ**|
+|Okno przybornika|Dodawanie formantu z przybornika do formularza lub projektanta.|**WPROWADŹ**|
+|Klawiatura, środowisko, opcje — Okno dialogowe|Usunąć kombinacja klawiszy w **naciśnij klawisze skrótu** opcji.|**BACKSPACE**|
 
 > [!NOTE]
 > Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania.
 
-## <a name="use-the-sound-applet-to-set-build-and-breakpoint-cues"></a>Użyj apletu dźwięku, aby ustawić wskaźników kompilacji i punktu przerwania
+## <a name="use-the-sound-applet-to-set-build-and-breakpoint-cues"></a>Użyj apletu dźwięku, aby ustawić podpowiedzi kompilacji i punkt przerwania
 
-Aplet dźwięku w systemie Windows umożliwia przypisać dźwięk do zdarzenia programu Visual Studio. W szczególności można przypisać dźwięki do następujących programów:
+Aplet dźwięku w Windows służy do przypisywania dźwięk do zdarzenia programu Visual Studio. W szczególności można przypisać dźwięków do następujących programów:
 
- * Trafienie punktu przerwania
+ * Trafiony punkt przerwania
  * Kompilacja anulowana
- * Budowanie nie powiodło się
- * Powodzenie kompilacji
+ * Kompilacja nie powiodła się
+ * Kompilacja powiodła się
 
 Poniżej przedstawiono sposób.
 
-1. W **wyszukiwania** pole na komputerze z systemem Windows 10, typ **Zmień dźwięki systemu**.
+1. W **wyszukiwania** okno na komputerze z systemem Windows 10, typ **Zmień dźwięki systemu**.
 
-  ![Pole wyszukiwania w systemie Windows 10](media/type-here-to-search.png)
+   ![Pole wyszukiwania w systemie Windows 10](media/type-here-to-search.png)
 
-  (Alternatywnie, jeśli włączono funkcję Cortana, powiedz "Witaj Cortana", a następnie powiedz "Zmień dźwięki systemu".)
+   (Również w przypadku Cortana włączone powiedzieć "Hey Cortana", a następnie powiedział do was "Zmień dźwięki systemu".)
 
 2. Kliknij dwukrotnie **Zmień dźwięki systemu**.
 
-  ![Wyniki wyszukiwania w systemie Windows 10](media/change-system-sounds.png)
+   ![Wyniki wyszukiwania w systemie Windows 10](media/change-system-sounds.png)
 
 3. W **dźwięk** okno dialogowe, kliknij przycisk **dźwięki** kartę. <br><br>
- Następnie w **zdarzenia programu**, przewiń do **programu Microsoft Visual Studio**i wybierz dźwięki, które chcesz zastosować do zdarzenia, które można wybrać.
+   Następnie w **zdarzenia programu**, przewiń do **programu Microsoft Visual Studio**i wybierz dźwięki, które chcesz zastosować do zdarzenia, które wybierzesz.
 
-  ![Dźwięki kartę dźwiękową apletu w systemie Windows 10](media/sound-applet.png)
+   ![Dźwięki karty dźwiękowej apletu w systemie Windows 10](media/sound-applet.png)
 
 4. Kliknij przycisk **OK**.
 
@@ -103,4 +103,4 @@ Poniżej przedstawiono sposób.
 * [Funkcje ułatwień dostępu programu Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
 * [Porady: Dostosowywanie menu i pasków zadań w programie Visual Studio](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [Personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)
-* [Ułatwienia dostępu firmy Microsoft](https://www.microsoft.com/Accessibility)
+* [Microsoft poświęconą ułatwieniom dostępu](https://www.microsoft.com/Accessibility)

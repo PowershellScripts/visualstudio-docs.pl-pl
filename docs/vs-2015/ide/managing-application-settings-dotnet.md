@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac4f670b813970d027925b681a2e3211e1898e1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866132"
 ---
 # <a name="managing-application-settings-net"></a>Zarządzanie ustawieniami aplikacji (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ Ustawienia aplikacji umożliwiają przechowywanie informacji o aplikacji dynamic
   
  Istnieją dwa rodzaje ustawień aplikacji, w oparciu o zakres:  
   
--   Ustawienia w zakresie aplikacji może służyć do informacje, takie jak adres URL usługi sieci Web lub ciąg połączenia bazy danych. Te wartości są skojarzone z aplikacją. Dlatego użytkownicy nie mogą zmieniać ich w czasie wykonywania.  
+- Ustawienia w zakresie aplikacji może służyć do informacje, takie jak adres URL usługi sieci Web lub ciąg połączenia bazy danych. Te wartości są skojarzone z aplikacją. Dlatego użytkownicy nie mogą zmieniać ich w czasie wykonywania.  
   
--   Ustawienia z zakresu użytkownika mogą służyć do informacje, np. dotyczących utrwalenia ostatniej pozycji formularza lub preferencji czcionek. Użytkownicy mogą zmieniać te wartości w czasie wykonywania.  
+- Ustawienia z zakresu użytkownika mogą służyć do informacje, np. dotyczących utrwalenia ostatniej pozycji formularza lub preferencji czcionek. Użytkownicy mogą zmieniać te wartości w czasie wykonywania.  
   
- Typ ustawienia można zmienić za pomocą **zakres** właściwości.  
+  Typ ustawienia można zmienić za pomocą **zakres** właściwości.  
   
- System projektów przechowuje ustawienia aplikacji w dwóch plikach XML: pliku app.config, który jest tworzony w czasie projektowania podczas tworzenia pierwszego ustawienia aplikacji; i w pliku user.config, który jest tworzony w czasie wykonywania, gdy użytkownik uruchamiający aplikację zmienia wartość dowolnego ustawienia użytkownika. Należy zauważyć, że zmiany w ustawieniach użytkownika nie są zapisywane na dysku, chyba że aplikacja specjalnie wywołuje metodę, aby to zrobić.  
+  System projektów przechowuje ustawienia aplikacji w dwóch plikach XML: pliku app.config, który jest tworzony w czasie projektowania podczas tworzenia pierwszego ustawienia aplikacji; i w pliku user.config, który jest tworzony w czasie wykonywania, gdy użytkownik uruchamiający aplikację zmienia wartość dowolnego ustawienia użytkownika. Należy zauważyć, że zmiany w ustawieniach użytkownika nie są zapisywane na dysku, chyba że aplikacja specjalnie wywołuje metodę, aby to zrobić.  
   
 ## <a name="creating-application-settings-at-design-time"></a>Tworzenie ustawień aplikacji w czasie projektowania  
  W czasie projektowania ustawienia aplikacji można tworzyć na dwa sposoby: za pomocą **ustawienia** strony **projektanta projektu**, lub za pomocą **właściwości** okna formularza lub formant, który pozwala powiązać ustawienie z właściwością.  

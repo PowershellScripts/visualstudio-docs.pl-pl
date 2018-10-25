@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e5b9bbd5127ac3cf7aef70744fc80ebc8372dfb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c8a8b26ceca3390466f3300d3692a7ee887ebd91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106247"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861036"
 ---
 # <a name="idebugcanstopevent2getdocumentcontext"></a>IDebugCanStopEvent2::GetDocumentContext
-Pobiera kontekst dokumentu, który opisuje lokalizacja tego zdarzenia.  
+Pobiera kontekst dokumentu, opisująca lokalizację tego zdarzenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,15 +41,15 @@ int GetDocumentContext (
   
 #### <a name="parameters"></a>Parametry  
  `ppDocCxt`  
- [out] Zwraca [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfejs, który reprezentuje pozycji w pliku dokument źródłowy odpowiadającego do bieżącej lokalizacji kodu.  
+ [out] Zwraca [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfejs, który reprezentuje pozycji w dokumencie pliku źródłowym odpowiadającą bieżącej lokalizacji kodu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ogólnie rzecz biorąc kontekstu dokumentu można traktować jako pozycji w pliku źródłowym.  
+ Ogólnie rzecz biorąc kontekstu dokumentu mogą być uważane za pozycji w pliku źródłowym.  
   
- Aby pobrać kontekst kodu, który jest zorientowany instrukcje kodu, należy wywołać [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md) metody.  
+ Aby uzyskać kontekst kodu, który jest zorientowany na instrukcje kodu, należy wywołać [GetCodeContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getcodecontext.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   

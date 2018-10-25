@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2b85d2d20f4400e252cbfd19ea169c7b27b2aecf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 229097b12e5b32e6be6af6b9614a628346780063
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921486"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>Za pomocą panelu liczników w widokach wykresy i tabele
 
@@ -54,7 +54,7 @@ Panel liczników oferuje następujące funkcje:
 ## <a name="tasks"></a>Zadania
 
 |Zadania|Skojarzone tematy|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Dodawanie większej liczby liczników wydajności do wykresu w widoku wykresu:** w **liczniki** panelu, można dodać różne rodzaje danych do wykresu testu obciążeniowego przez dodanie większej liczby liczników wydajności na wykresie.|-   [Porady: Dodawanie i usuwanie liczników na wykresach](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Analizowanie wszelkich wartości progowych określonych w teście obciążenia, które zostały naruszone:** **liczniki** panel wyświetla ikony przedstawiające naruszenia progów, które można następnie dodać do tabel i wykresów do dalszej analizy.|-   [Porady: analizowanie naruszeń progu za pomocą panelu liczników](../test/analyze-threshold-rule-violations-in-load-tests.md)|
 |**Analizuj wszystkie błędy, które zostały wykryte podczas przebiegu testu obciążeniowego:** **liczniki** panelu posiada węzeł błędów, która zawiera błąd kategorie i podkategorie, takie jak błędy HTTP, które służą do dodania błędów do wykresów dla dalszej analizy.|-   [Porady: analizowanie błędów za pomocą panelu liczników](../test/how-to-analyze-errors-using-the-counters-panel.md)|
@@ -66,7 +66,7 @@ Wybierz wartość dla **częstotliwość próbkowania** uruchomieniowe właściw
 Oto niektóre wytyczne dotyczące częstotliwości próbkowania:
 
 |Czas trwania testu obciążenia|Zalecana częstotliwość próbkowania|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 godzina|5 sekund|
 |1 - 8 godzin|15 sekund|
 |8 - 24 godziny|30 sekund|

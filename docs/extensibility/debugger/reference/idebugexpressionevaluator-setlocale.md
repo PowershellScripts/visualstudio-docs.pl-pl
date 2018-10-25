@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5836069aacb80a3d917a8e272150a477589c3ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f9c5e1fc300a150b15acc48f12dc3b8c6c01e277
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111128"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882650"
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
-Ta metoda określa język używać do tworzenia wyniki do druku.  
+Ta metoda określa język na potrzeby tworzenia drukowalnych wyników.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,10 +44,10 @@ int SetLocale(
  [in] Identyfikator języka.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda może zostać wywołana wiele razy podczas ewaluatora wyrażenia (EE) jest załadowany, więc EE musi mieć możliwość przełączania języków na bieżąco. EE używa tych ustawień regionalnych, aby zwrócić komunikaty o błędach i ciągi w odpowiednim języku.  
+ Ta metoda może zostać wywołana wiele razy, gdy Ewaluator wyrażeń (EE) jest załadowane, więc EE musi mieć możliwość przełączać języków na bieżąco. EE używa tych ustawień regionalnych, aby zwracać komunikaty o błędach i ciągi w odpowiednim języku.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

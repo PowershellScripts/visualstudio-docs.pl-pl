@@ -21,21 +21,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6cbe73fb5da7ae5d0efa01e1e7c6fb0068310ad2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: beee4dd4a67b03f278a296d4b5f129100212fd25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677232"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850363"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Porady: ochrona części dokumentów za pomocą formantów zawartości
   W przypadku ochrony części dokumentu, można uniemożliwić użytkownikom zmienianie lub usuwanie zawartości w tej części dokumentu. Istnieje kilka sposobów, w części dokumentu Microsoft Word pakietu Office można chronić za pomocą formantów zawartości:  
   
--   Można chronić zawartość formantu.  
+- Można chronić zawartość formantu.  
   
--   Możesz chronić część dokumentu, który nie znajduje się w zawartości formantu.  
+- Możesz chronić część dokumentu, który nie znajduje się w zawartości formantu.  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ##  <a name="EditDeleteControl"></a> Ochrona zawartości kontrolki  
  Można uniemożliwić użytkownikom edytowanie lub usuwanie zawartości formantu przez ustawienie właściwości formantu w projekcie na poziomie dokumentu, w czasie projektowania lub w czasie wykonywania.  

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f35779debdad5a43781b2fe7221085f3fe0e1010
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cea6e61a1afd734ca0ae52a704a2d881371f5817
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42632938"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882598"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Przewodnik: Tworzenie pierwszego dodatku narzędzi VSTO dla programu PowerPoint
   W tym instruktażu przedstawiono sposób tworzenia dodatku narzędzi VSTO dla programu Microsoft Office PowerPoint. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne dla aplikacji, niezależnie od tego, które są otwarte prezentacji. Aby uzyskać więcej informacji, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -32,15 +32,15 @@ ms.locfileid: "42632938"
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Tworzenie projektu dodatku narzędzi VSTO dla programu PowerPoint dla programu PowerPoint.  
+- Tworzenie projektu dodatku narzędzi VSTO dla programu PowerPoint dla programu PowerPoint.  
   
--   Pisanie kodu, który używa modelu obiektów programu PowerPoint, aby dodać pole tekstowe do każdego nowego slajdu.  
+- Pisanie kodu, który używa modelu obiektów programu PowerPoint, aby dodać pole tekstowe do każdego nowego slajdu.  
   
--   Tworzenie i uruchamianie projektu, aby ją przetestować.  
+- Tworzenie i uruchamianie projektu, aby ją przetestować.  
   
--   Czyszczenie projektu, tak aby dodatku narzędzi VSTO już nie uruchamia automatycznie na komputerze deweloperskim.  
+- Czyszczenie projektu, tak aby dodatku narzędzi VSTO już nie uruchamia automatycznie na komputerze deweloperskim.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
@@ -78,18 +78,18 @@ ms.locfileid: "42632938"
   
 ### <a name="to-add-a-text-box-to-each-new-slide"></a>Aby dodać pole tekstowe do każdego nowego slajdu  
   
-1.  W pliku kodu ThisAddIn, Dodaj następujący kod do `ThisAddIn` klasy. Ten kod definiuje zdarzenia obsługi dla [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) zdarzenia <xref:Microsoft.Office.Interop.PowerPoint.Application> obiektu.  
+1. W pliku kodu ThisAddIn, Dodaj następujący kod do `ThisAddIn` klasy. Ten kod definiuje zdarzenia obsługi dla [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) zdarzenia <xref:Microsoft.Office.Interop.PowerPoint.Application> obiektu.  
   
-     Gdy użytkownik dodaje nowy slajd do aktywnej prezentacji, ta procedura obsługi zdarzeń dodaje pole tekstowe na początku nowego slajdu, a następnie dodaje tekst w polu tekstowym.  
+    Gdy użytkownik dodaje nowy slajd do aktywnej prezentacji, ta procedura obsługi zdarzeń dodaje pole tekstowe na początku nowego slajdu, a następnie dodaje tekst w polu tekstowym.  
   
-     [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  Jeśli używasz języka C#, Dodaj następujący kod do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod jest wymagane do połączenia z `Application_PresentationNewSlide` programu obsługi zdarzeń z [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) zdarzeń.  
+2. Jeśli używasz języka C#, Dodaj następujący kod do `ThisAddIn_Startup` programu obsługi zdarzeń. Ten kod jest wymagane do połączenia z `Application_PresentationNewSlide` programu obsługi zdarzeń z [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) zdarzeń.  
   
-     [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]  
   
- Aby zmodyfikować każdego nowego slajdu, w poprzednich przykładach kodu za pomocą następujących obiektów:  
+   Aby zmodyfikować każdego nowego slajdu, w poprzednich przykładach kodu za pomocą następujących obiektów:  
   
 -   `Application` Pole `ThisAddIn` klasy. `Application` Pole zwraca <xref:Microsoft.Office.Interop.PowerPoint.Application> reprezentujący bieżące wystąpienie programu PowerPoint.  
   

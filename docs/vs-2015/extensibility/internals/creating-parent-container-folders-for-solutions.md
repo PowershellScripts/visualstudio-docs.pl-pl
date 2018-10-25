@@ -16,12 +16,12 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f731c9f441aecf5277dafffc5cc8b10d1a703a4b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8bf3de0c558dbda1d1b43e7b5887780f1a1e2b90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832069"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>Tworzenie nadrzędnych folderów kontenera dla rozwiązań
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49307719"
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE prawie zawsze tworzy SUR folder podczas dodawania rozwiązanie do kontroli źródła. W szczególności odbywa się to w następujących przypadkach:  
   
--   Projekt jest udział plików projektu sieci Web.  
+- Projekt jest udział plików projektu sieci Web.  
   
--   Istnieją różne dyski dla projektu i pliku rozwiązania.  
+- Istnieją różne dyski dla projektu i pliku rozwiązania.  
   
--   Istnieją różne udziały plików rozwiązania i projektu.  
+- Istnieją różne udziały plików rozwiązania i projektu.  
   
--   Projekt został dodany osobno (w ramach rozwiązania pod kontrolą źródła).  
+- Projekt został dodany osobno (w ramach rozwiązania pod kontrolą źródła).  
   
- W [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zalecane jest, czy nazwa folderu SUR być taka sama jak nazwa rozwiązania bez rozszerzenia. W poniższej tabeli podsumowano zachowanie w dwóch wersjach.  
+  W [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zalecane jest, czy nazwa folderu SUR być taka sama jak nazwa rozwiązania bez rozszerzenia. W poniższej tabeli podsumowano zachowanie w dwóch wersjach.  
   
 |Funkcja|tSource interfejsu API wtyczki kontroli w wersji 1.1|Wtyczka API w wersji 1.2 kontroli źródła|  
 |-------------|----------------------------------------------|---------------------------------------------|  

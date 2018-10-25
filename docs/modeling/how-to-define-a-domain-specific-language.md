@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 56381b86b367d7ca93c43b2918d98eb0fdc092bb
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3e80e90928bd5ff81e7364e23a1d5035d2bfbe3a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860488"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860646"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Porady: definiowanie języka właściwego dla domeny
 Aby zdefiniować języka specyficznego dla domeny (DSL), należy utworzyć rozwiązanie programu Visual Studio z szablonu. Kluczowym elementem rozwiązania jest diagramem definicji DSL, który jest przechowywany w DslDefinition.dsl. W definicji DSL definiuje klasy i kształty język DSL. Po zmodyfikowaniu i dodawane do tych elementów, można dodać kod programu, aby dostosować DSL bardziej szczegółowo.
@@ -33,12 +33,12 @@ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy 
 ## <a name="templates"></a> Wybieranie szablonu rozwiązania
  Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
 
-|||
-|-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio Visualisation i Modeling SDK||
 
+| | |
+|-|-|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio Visualisation i Modeling SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -47,49 +47,49 @@ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy 
 
 #### <a name="to-create-a-dsl-solution"></a>Aby utworzyć rozwiązanie DSL
 
-1.  Tworzenie rozwiązań za pomocą **Domain-Specific Language** szablonu, który znajduje się w obszarze **inne typy/rozszerzalności projektów** w **nowy projekt** okno dialogowe.
+1. Tworzenie rozwiązań za pomocą **Domain-Specific Language** szablonu, który znajduje się w obszarze **inne typy/rozszerzalności projektów** w **nowy projekt** okno dialogowe.
 
-     ![Tworzenie okna dialogowego DSL](../modeling/media/create_dsldialog.png)
+    ![Tworzenie okna dialogowego DSL](../modeling/media/create_dsldialog.png)
 
-     Po kliknięciu **OK**, **kreatora języka specyficznego dla domeny** otwiera i wyświetla listę rozwiązań DSL szablonu.
+    Po kliknięciu **OK**, **kreatora języka specyficznego dla domeny** otwiera i wyświetla listę rozwiązań DSL szablonu.
 
-2.  Kliknij każdy szablon, aby wyświetlić opis. Wybierz rozwiązanie, które najbardziej przypomina ma zostać utworzona.
+2. Kliknij każdy szablon, aby wyświetlić opis. Wybierz rozwiązanie, które najbardziej przypomina ma zostać utworzona.
 
-     Każdy szablon DSL definiuje działającego podstawowe DSL. Trzeba edytować tego języka DSL w celu dopasowania do własnych wymagań.
+    Każdy szablon DSL definiuje działającego podstawowe DSL. Trzeba edytować tego języka DSL w celu dopasowania do własnych wymagań.
 
-     Kliknij każdy przykład, aby uzyskać więcej informacji.
+    Kliknij każdy przykład, aby uzyskać więcej informacji.
 
-    -   Wybierz **przepływu zadań** utworzyć DSL, który ma ścieżek. Tory są pionowych lub poziomych partycji diagramu.
+   -   Wybierz **przepływu zadań** utworzyć DSL, który ma ścieżek. Tory są pionowych lub poziomych partycji diagramu.
 
-    -   Wybierz **modeli składnika** utworzyć DSL, który ma portów. Porty są małe kształty na krawędzi większy kształt.
+   -   Wybierz **modeli składnika** utworzyć DSL, który ma portów. Porty są małe kształty na krawędzi większy kształt.
 
-    -   Wybierz **diagramów klas** do definiowania DSL, który ma kształtów przedziałów. Kształty przedziału zawierają listy elementów.
+   -   Wybierz **diagramów klas** do definiowania DSL, który ma kształtów przedziałów. Kształty przedziału zawierają listy elementów.
 
-    -   Wybierz **minimalny języka** w innych przypadkach lub sprawdzić.
+   -   Wybierz **minimalny języka** w innych przypadkach lub sprawdzić.
 
-    -   Wybierz **minimalny projektanta formularza systemu Windows** lub **minimalny WPF Designer** utworzyć DSL, który jest wyświetlany na powierzchni Windows Forms i WPF. Należy napisać kod, aby zdefiniować edytora. Więcej informacji znajduje się w następujących tematach:
+   -   Wybierz **minimalny projektanta formularza systemu Windows** lub **minimalny WPF Designer** utworzyć DSL, który jest wyświetlany na powierzchni Windows Forms i WPF. Należy napisać kod, aby zdefiniować edytora. Więcej informacji znajduje się w następujących tematach:
 
-         [Tworzenie języka specyficznego dla domeny opartego na modelu Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
+        [Tworzenie języka specyficznego dla domeny opartego na modelu Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
 
-         [Tworzenie języka specyficznego dla domeny opartego na podsystemie WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
+        [Tworzenie języka specyficznego dla domeny opartego na podsystemie WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
-3.  Wprowadź rozszerzenie nazwy pliku DSL w odpowiedniej strony w kreatorze. To rozszerzenie, używanego przez pliki zawierające wystąpienia elementu DSL.
+3. Wprowadź rozszerzenie nazwy pliku DSL w odpowiedniej strony w kreatorze. To rozszerzenie, używanego przez pliki zawierające wystąpienia elementu DSL.
 
-    -   Wybierz rozszerzenie nazwy pliku, który nie jest skojarzony z każdą aplikacją na komputerze lub w dowolnym komputerze, na którym chcesz zainstalować język DSL. Na przykład **docx** i **htm** będzie niedopuszczalne pliku rozszerzenia nazw.
+   -   Wybierz rozszerzenie nazwy pliku, który nie jest skojarzony z każdą aplikacją na komputerze lub w dowolnym komputerze, na którym chcesz zainstalować język DSL. Na przykład **docx** i **htm** będzie niedopuszczalne pliku rozszerzenia nazw.
 
-    -   Kreator wyświetli ostrzeżenie, jeśli jest używane rozszerzenie, które zostały wprowadzone jako języka DSL. Należy rozważyć użycie innym rozszerzeniem nazwy pliku. Możesz także zresetować Visual Studio SDK eksperymentalne wystąpienie wyczyszczenie stare projektantów eksperymentalne. Kliknij przycisk **Start**, kliknij przycisk **wszystkie programy**, **Microsoft Visual Studio 2010 SDK**, **narzędzia**, a następnie **resetowania firmy Microsoft Wystąpienie programu Visual Studio 2010 eksperymentalne**.
+   -   Kreator wyświetli ostrzeżenie, jeśli jest używane rozszerzenie, które zostały wprowadzone jako języka DSL. Należy rozważyć użycie innym rozszerzeniem nazwy pliku. Możesz także zresetować Visual Studio SDK eksperymentalne wystąpienie wyczyszczenie stare projektantów eksperymentalne. Kliknij przycisk **Start**, kliknij przycisk **wszystkie programy**, **Microsoft Visual Studio 2010 SDK**, **narzędzia**, a następnie **resetowania firmy Microsoft Wystąpienie programu Visual Studio 2010 eksperymentalne**.
 
-4.  Możesz dostosować ustawienia na innych stronach lub pozostaw wartości domyślne.
+4. Możesz dostosować ustawienia na innych stronach lub pozostaw wartości domyślne.
 
-5.  Kliknij przycisk **Zakończ**.
+5. Kliknij przycisk **Zakończ**.
 
-     Kreator utworzy rozwiązanie, które zawiera dwa lub trzy projekty i generuje kod w definicji DSL.
+    Kreator utworzy rozwiązanie, które zawiera dwa lub trzy projekty i generuje kod w definicji DSL.
 
- Interfejs użytkownika jest teraz podobny do poniższej ilustracji.
+   Interfejs użytkownika jest teraz podobny do poniższej ilustracji.
 
- ![Projektant DSL](../modeling/media/dsl_designer.png)
+   ![Projektant DSL](../modeling/media/dsl_designer.png)
 
- To rozwiązanie definiuje języka specyficznego dla domeny. Aby uzyskać więcej informacji, zobacz [omówienie interfejsu użytkownika narzędzi języka specyficznego dla domeny](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
+   To rozwiązanie definiuje języka specyficznego dla domeny. Aby uzyskać więcej informacji, zobacz [omówienie interfejsu użytkownika narzędzi języka specyficznego dla domeny](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
 ### <a name="test-the-solution"></a>Testowanie rozwiązania
  Szablon rozwiązania zawiera działającego DSL, który można zmodyfikować lub użyć, ponieważ jest.
@@ -114,26 +114,26 @@ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy 
 
  Jest to szczególnie przydatne zachować te klasy:
 
--   Klasa główna pojawia się w lewym górnym rogu z diagramem definicji DSL, w obszarze **klasy i relacje**. Zmień jej nazwę na inny niż język DSL. Na przykład DSL o nazwie **MusicLibrary** może być klasą główną o nazwie **utworów muzycznych**.
+- Klasa główna pojawia się w lewym górnym rogu z diagramem definicji DSL, w obszarze **klasy i relacje**. Zmień jej nazwę na inny niż język DSL. Na przykład DSL o nazwie **MusicLibrary** może być klasą główną o nazwie **utworów muzycznych**.
 
--   Klasa diagram jest wyświetlany w prawym dolnym rogu z diagramem definicji DSL w **elementów diagramu** kolumny. Trzeba będzie przewinąć w prawo, aby zobaczyć, że. Jest typowo nazwana _YourDsl_**Diagram**.
+- Klasa diagram jest wyświetlany w prawym dolnym rogu z diagramem definicji DSL w **elementów diagramu** kolumny. Trzeba będzie przewinąć w prawo, aby zobaczyć, że. Jest typowo nazwana _YourDsl_**Diagram**.
 
--   Jeśli użyto **przepływu zadań** szablonu i chcesz utworzyć diagramy za pomocą ścieżek, przechowywać i Zmień nazwę klasy domeny aktora i kształt ActorSwimlane.
+- Jeśli użyto **przepływu zadań** szablonu i chcesz utworzyć diagramy za pomocą ścieżek, przechowywać i Zmień nazwę klasy domeny aktora i kształt ActorSwimlane.
 
- Usuń lub zmień innych klas ze swoimi potrzebami.
+  Usuń lub zmień innych klas ze swoimi potrzebami.
 
 ## <a name="patterns"></a> Wzorce do definiowania języka DSL
  Firma Microsoft zaleca tworzenie DSL, dodając lub dostosowania jednego lub dwóch funkcji w danym momencie. Dodaj funkcję, uruchom język DSL i przetestować go, a następnie dodaj jeden lub dwa więcej funkcji. Typowa funkcja DSL może być:
 
--   Klasy domeny relacji osadzania, która łączy elementu modelu, kształt, wymagany, aby wyświetlić elementy tej klasy w diagramie i narzędzia elementu, który umożliwia użytkownikom tworzenie elementów.
+- Klasy domeny relacji osadzania, która łączy elementu modelu, kształt, wymagany, aby wyświetlić elementy tej klasy w diagramie i narzędzia elementu, który umożliwia użytkownikom tworzenie elementów.
 
--   Właściwości domeny klasy domeny i dekoratory, zawierające je na kształcie.
+- Właściwości domeny klasy domeny i dekoratory, zawierające je na kształcie.
 
--   Relacja odwołania i łącznik, który wyświetla na diagramie i narzędzia łącznika, który pozwala użytkownikom tworzyć łącza.
+- Relacja odwołania i łącznik, który wyświetla na diagramie i narzędzia łącznika, który pozwala użytkownikom tworzyć łącza.
 
--   Możliwość dostosowania, który wymaga kod programu, takie jak polecenie menu lub ograniczenia sprawdzania poprawności.
+- Możliwość dostosowania, który wymaga kod programu, takie jak polecenie menu lub ograniczenia sprawdzania poprawności.
 
- Poniżej opisano sposób tworzenia najbardziej przydatne rodzaju funkcje języka DSL. Istnieje wiele innych wzorców za pomocą których można skonstruować DSL, ale są one używane najczęściej.
+  Poniżej opisano sposób tworzenia najbardziej przydatne rodzaju funkcje języka DSL. Istnieje wiele innych wzorców za pomocą których można skonstruować DSL, ale są one używane najczęściej.
 
 > [!NOTE]
 >  Po dodaniu funkcji, nie zapomnij kliknąć **Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, przed kompilowanie i uruchamianie DSL.
@@ -168,7 +168,7 @@ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy 
  We wzorcach definicji DSL opisane w tym temacie założono spowoduje, że elementów wyświetlanych w kontenerze zostaną usunięte po usunięciu kontenera. Bardziej złożone są możliwe i schematy można osiągnąć, definiując zasady.
 
 |Sposób wyświetlania elementu|Klasa nadrzędna (osadzanie)|Przykład szablonu rozwiązania dotyczącego języka DSL|
-|------------------------------|--------------------------------|--------------------------------------|
+|-|-|-|
 |Kształt na diagramie.<br /><br /> Swimlane.|Klasa główna DSL.|Minimalny język.<br /><br /> Przepływ zadanie: Klasa aktora.|
 |Kształt w toru.|Klasa domeny elementów, które są wyświetlane jako ścieżek.|Przepływ zadań: Zadania klasy.|
 |Element na liście w kształcie, gdy element zostanie usunięty po usunięciu kontenera.<br /><br /> Port na krawędzi kształtu.|Klasa domeny, która jest mapowana na kształt kontenera.|Diagram klas: klasy atrybutu.<br /><br /> Diagram składników: Port klasy.|
@@ -236,96 +236,96 @@ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy 
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Aby zdefiniować klasę elementów, które są wyświetlane jako kształtów na diagramie
 
-1.  **Definiowanie i przetestować klasy domeny, zgodnie z opisem w**[Definiowanie klas domeny](#classes) **.**
+1. **Definiowanie i przetestować klasy domeny, zgodnie z opisem w**[Definiowanie klas domeny](#classes) **.**
 
-    -   Element nadrzędny klasy powinna być klasy głównego. Oznacza to powinien istnieć relacja osadzania między klasą głównego i nową klasę domeny.
+   -   Element nadrzędny klasy powinna być klasy głównego. Oznacza to powinien istnieć relacja osadzania między klasą głównego i nową klasę domeny.
 
-    -   Jeśli diagramu ma torów, element nadrzędny może być klasy domeny, który jest mapowany tor. Przed kontynuowaniem tej procedury, zobacz [Definiowanie DSL, który ma torów](#swimlanes).
+   -   Jeśli diagramu ma torów, element nadrzędny może być klasy domeny, który jest mapowany tor. Przed kontynuowaniem tej procedury, zobacz [Definiowanie DSL, który ma torów](#swimlanes).
 
-2.  **Dodaj klasę kształtu** reprezentujące elementy na diagram modelu. Przeciągnij jeden z następujących narzędzi na diagramem definicji DSL:
+2. **Dodaj klasę kształtu** reprezentujące elementy na diagram modelu. Przeciągnij jeden z następujących narzędzi na diagramem definicji DSL:
 
-    -   **Kształt geometryczny** zapewnia prostokąta lub elipsy.
+   - **Kształt geometryczny** zapewnia prostokąta lub elipsy.
 
-    -   **Obraz kształtu** Wyświetla obraz, który należy podać.
+   - **Obraz kształtu** Wyświetla obraz, który należy podać.
 
-    -   **Przedział kształtu** jest prostokąt, który zawiera jedną lub więcej list elementów.
+   - **Przedział kształtu** jest prostokąt, który zawiera jedną lub więcej list elementów.
 
      Zmień nazwę klasy kształtu, który pojawi się po prawej stronie diagramem definicji DSL, w obszarze kształtów i łączników.
 
-3.  **Zdefiniuj obraz, jeśli utworzono kształt obrazu**.
+3. **Zdefiniuj obraz, jeśli utworzono kształt obrazu**.
 
-    1.  Utwórz plik obrazu, o dowolnym rozmiarze. BMP, JPEG, GIF i EMF formaty są obsługiwane.
+   1.  Utwórz plik obrazu, o dowolnym rozmiarze. BMP, JPEG, GIF i EMF formaty są obsługiwane.
 
-    2.  W Eksploratorze rozwiązań Dodaj plik do rozwiązania w folderze Dsl\Resources.
+   2.  W Eksploratorze rozwiązań Dodaj plik do rozwiązania w folderze Dsl\Resources.
 
-    3.  Wróć do diagramem definicji DSL i wybierz nową klasę kształtu obrazu.
+   3.  Wróć do diagramem definicji DSL i wybierz nową klasę kształtu obrazu.
 
-    4.  W oknie dialogowym właściwości kliknij **obraz** właściwości.
+   4.  W oknie dialogowym właściwości kliknij **obraz** właściwości.
 
-    5.  W **wybierz obraz** okna dialogowego kliknij menu rozwijane w obszarze **nazwy pliku**i wybierz obraz.
+   5.  W **wybierz obraz** okna dialogowego kliknij menu rozwijane w obszarze **nazwy pliku**i wybierz obraz.
 
-4.  **Dodaj dekoratorów tekstu do kształtu, aby wyświetlić właściwości domeny.**
+4. **Dodaj dekoratorów tekstu do kształtu, aby wyświetlić właściwości domeny.**
 
-     Aby wyświetlić nazwę lub tytuł elementu modelu, niezbędny będzie co najmniej jeden dekorator tekstu.
+    Aby wyświetlić nazwę lub tytuł elementu modelu, niezbędny będzie co najmniej jeden dekorator tekstu.
 
-     Kliknij prawym przyciskiem myszy nagłówek klasę kształtu, wskaż opcję **Dodaj**, a następnie kliknij przycisk **Dekoratora tekstu**. Ustaw nazwę dekoratora, a w zestawie okna właściwości jego **pozycji**.
+    Kliknij prawym przyciskiem myszy nagłówek klasę kształtu, wskaż opcję **Dodaj**, a następnie kliknij przycisk **Dekoratora tekstu**. Ustaw nazwę dekoratora, a w zestawie okna właściwości jego **pozycji**.
 
-5.  **Połącz wszystkie kształty z mapowanie elementu diagramu, do klasy domeny, która powinna zostać wyświetlona**.
+5. **Połącz wszystkie kształty z mapowanie elementu diagramu, do klasy domeny, która powinna zostać wyświetlona**.
 
-     Kliknij przycisk **mapowanie elementu diagramu** narzędzia, a następnie kliknij klasy domeny, a następnie klasy kształtu.
+    Kliknij przycisk **mapowanie elementu diagramu** narzędzia, a następnie kliknij klasy domeny, a następnie klasy kształtu.
 
-6.  **Właściwości są mapowane na dekoratorów tekstu.**
+6. **Właściwości są mapowane na dekoratorów tekstu.**
 
-    1.  Wybierz szara linia między klasą domeny i Klasa kształtu, która reprezentuje mapowanie elementu diagramu.
+   1. Wybierz szara linia między klasą domeny i Klasa kształtu, która reprezentuje mapowanie elementu diagramu.
 
-    2.  W **szczegóły języka DSL** okna, kliknij przycisk **mapy Dekoratora** kartę. Jeśli nie widzisz **szczegóły języka DSL** okna na **widoku** menu wskaż **Windows inne** a następnie kliknij przycisk **szczegóły języka DSL**. Jest to często konieczne zgłoszenie górnej części tego okna, aby wyświetlić jego zawartość.
+   2. W **szczegóły języka DSL** okna, kliknij przycisk **mapy Dekoratora** kartę. Jeśli nie widzisz **szczegóły języka DSL** okna na **widoku** menu wskaż **Windows inne** a następnie kliknij przycisk **szczegóły języka DSL**. Jest to często konieczne zgłoszenie górnej części tego okna, aby wyświetlić jego zawartość.
 
-    3.  Wybierz nazwę dekoratora. W obszarze **Właściwość wyświetlania**, wybierz nazwę właściwości klasy domeny. Powtórz tę czynność dla każdego elementu decorator.
+   3. Wybierz nazwę dekoratora. W obszarze **Właściwość wyświetlania**, wybierz nazwę właściwości klasy domeny. Powtórz tę czynność dla każdego elementu decorator.
 
-         Jeśli chcesz wyświetlić właściwości elementu powiązane, kliknij przycisk Nawigator drzewo listy rozwijanej w obszarze **cieżka do właściwości wyświetlania**.
+       Jeśli chcesz wyświetlić właściwości elementu powiązane, kliknij przycisk Nawigator drzewo listy rozwijanej w obszarze **cieżka do właściwości wyświetlania**.
 
-    4.  Upewnij się, że jest wyświetlany znacznik wyboru obok nazwy dekoratora.
+   4. Upewnij się, że jest wyświetlany znacznik wyboru obok nazwy dekoratora.
 
-     ![W oknie mapowań kształtów i szczegóły języka DSL](../modeling/media/dsldetailswindow.png)
+      ![W oknie mapowań kształtów i szczegóły języka DSL](../modeling/media/dsldetailswindow.png)
 
-7.  **Ustaw element przybornika do tworzenia elementów klasy domeny.**
+7. **Ustaw element przybornika do tworzenia elementów klasy domeny.**
 
-    1.  W **Eksplorator DSL**, rozwiń węzeł **edytora** węzła i wszystkich jego węzłów podrzędnych.
+   1.  W **Eksplorator DSL**, rozwiń węzeł **edytora** węzła i wszystkich jego węzłów podrzędnych.
 
-    2.  Kliknij prawym przyciskiem myszy węzeł w węźle **karty przybornika** który ma taką samą nazwę jak DSL, na przykład MusicLibrary. Kliknij przycisk **narzędzie elementu Dodawanie**.
+   2.  Kliknij prawym przyciskiem myszy węzeł w węźle **karty przybornika** który ma taką samą nazwę jak DSL, na przykład MusicLibrary. Kliknij przycisk **narzędzie elementu Dodawanie**.
 
-        > [!NOTE]
-        >  Kliknięcie prawym przyciskiem myszy **narzędzia** węzła, nie będzie mógł przeglądać **narzędzia elementu Dodawanie**. Zamiast tego kliknij węzeł powyżej.
+       > [!NOTE]
+       >  Kliknięcie prawym przyciskiem myszy **narzędzia** węzła, nie będzie mógł przeglądać **narzędzia elementu Dodawanie**. Zamiast tego kliknij węzeł powyżej.
 
-    3.  W oknie dialogowym właściwości nowego elementu wybierz narzędzie, należy ustawić **klasy** do klasy domeny, która została ostatnio dodana.
+   3.  W oknie dialogowym właściwości nowego elementu wybierz narzędzie, należy ustawić **klasy** do klasy domeny, która została ostatnio dodana.
 
-    4.  Ustaw **podpis** i **etykietki narzędzia**.
+   4.  Ustaw **podpis** i **etykietki narzędzia**.
 
-    5.  Ustaw **ikonę przybornika** ikonę, która będzie wyświetlana w przyborniku. Można ustawić go na nową ikonę lub ikony już używana dla innego narzędzia.
+   5.  Ustaw **ikonę przybornika** ikonę, która będzie wyświetlana w przyborniku. Można ustawić go na nową ikonę lub ikony już używana dla innego narzędzia.
 
-         Aby utworzyć nową ikonę, otwórz Dsl\Resources w **Eksploratora rozwiązań**. Skopiuj i Wklej jeden z istniejących plików BMP narzędzia elementu. Zmień nazwę kopii wklejonych, a następnie kliknij dwukrotnie, aby go edytować.
+        Aby utworzyć nową ikonę, otwórz Dsl\Resources w **Eksploratora rozwiązań**. Skopiuj i Wklej jeden z istniejących plików BMP narzędzia elementu. Zmień nazwę kopii wklejonych, a następnie kliknij dwukrotnie, aby go edytować.
 
-         Wróć do diagramem definicji DSL, wybierz narzędzie i w oknie dialogowym właściwości kliknij **[...]**  w **ikonę przybornika**. W **Wybierz mapę bitową** okno dialogowe, wybierz użytkownika. Plik BMP z menu rozwijanego.
+        Wróć do diagramem definicji DSL, wybierz narzędzie i w oknie dialogowym właściwości kliknij **[...]**  w **ikonę przybornika**. W **Wybierz mapę bitową** okno dialogowe, wybierz użytkownika. Plik BMP z menu rozwijanego.
 
- Aby uzyskać więcej informacji, zobacz [właściwości kształtów geometrycznych](../modeling/properties-of-geometry-shapes.md) i [właściwości kształtów obrazu](../modeling/properties-of-image-shapes.md).
+   Aby uzyskać więcej informacji, zobacz [właściwości kształtów geometrycznych](../modeling/properties-of-geometry-shapes.md) i [właściwości kształtów obrazu](../modeling/properties-of-image-shapes.md).
 
 #### <a name="to-test-shapes"></a>Aby przetestować kształtów
 
-1.  **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, aby wygenerować kod projektanta DSL.
+1. **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, aby wygenerować kod projektanta DSL.
 
-2.  **Twórz i uruchamiaj język DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie programu Visual Studio w trybie doświadczalnym. W doświadczalnym wystąpieniu programu Visual Studio Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
+2. **Twórz i uruchamiaj język DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie programu Visual Studio w trybie doświadczalnym. W doświadczalnym wystąpieniu programu Visual Studio Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
 
-3.  **Sprawdź, czy narzędzia elementu są wyświetlane w przyborniku.**
+3. **Sprawdź, czy narzędzia elementu są wyświetlane w przyborniku.**
 
-4.  **Tworzyć kształty** , przeciągając przy użyciu narzędzia na diagram modelu.
+4. **Tworzyć kształty** , przeciągając przy użyciu narzędzia na diagram modelu.
 
-5.  **Sprawdź, czy każdy dekorator tekst jest wyświetlany,** oraz że:
+5. **Sprawdź, czy każdy dekorator tekst jest wyświetlany,** oraz że:
 
-    1.  Można edytować go, o ile nie zostało ustawione **jest interfejs użytkownika tylko do odczytu** flagi dla właściwości domeny.
+   1.  Można edytować go, o ile nie zostało ustawione **jest interfejs użytkownika tylko do odczytu** flagi dla właściwości domeny.
 
-    2.  Podczas edytowania właściwości w oknie dialogowym właściwości lub w dekoratorze innych widokach jest aktualizowana.
+   2.  Podczas edytowania właściwości w oknie dialogowym właściwości lub w dekoratorze innych widokach jest aktualizowana.
 
- Po przetestowaniu najpierw kształtu, można dostosować niektóre jej właściwości i dodać niektóre bardziej zaawansowane funkcje. Aby uzyskać więcej informacji, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+   Po przetestowaniu najpierw kształtu, można dostosować niektóre jej właściwości i dodać niektóre bardziej zaawansowane funkcje. Aby uzyskać więcej informacji, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 ## <a name="references"></a> Definiowanie relacji odwołania
  Można zdefiniować relacji między wszystkie klasy domeny źródłowej, a wszystkie klasy domeny docelowej. Relacje odniesienia zazwyczaj są wyświetlane na diagramie jako łączniki, które linie między kształtami.
@@ -387,27 +387,27 @@ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy 
 
 ##### <a name="to-test-a-reference-relationship-and-connector"></a>Aby przetestować relacji i łącznik
 
-1.  **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, aby wygenerować kod projektanta DSL.
+1. **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, aby wygenerować kod projektanta DSL.
 
-2.  **Twórz i uruchamiaj język DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie programu Visual Studio w trybie doświadczalnym. W doświadczalnym wystąpieniu programu Visual Studio Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
+2. **Twórz i uruchamiaj język DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie programu Visual Studio w trybie doświadczalnym. W doświadczalnym wystąpieniu programu Visual Studio Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
 
-3.  **Sprawdź, czy narzędzie połączenia jest wyświetlany w przyborniku.**
+3. **Sprawdź, czy narzędzie połączenia jest wyświetlany w przyborniku.**
 
-4.  **Tworzyć kształty** , przeciągając przy użyciu narzędzia na diagram modelu.
+4. **Tworzyć kształty** , przeciągając przy użyciu narzędzia na diagram modelu.
 
-5.  **Tworzenie połączeń** między kształtów. Kliknij narzędzie łącznik, kliknij kształt, a następnie kliknij przycisk innego kształtu.
+5. **Tworzenie połączeń** między kształtów. Kliknij narzędzie łącznik, kliknij kształt, a następnie kliknij przycisk innego kształtu.
 
-6.  **Upewnij się, że nie można utworzyć połączenia między klasami nieodpowiednie.** Na przykład w przypadku relacji między ze zdjęciami i artystów, sprawdź, że nie można połączyć artystów artystów.
+6. **Upewnij się, że nie można utworzyć połączenia między klasami nieodpowiednie.** Na przykład w przypadku relacji między ze zdjęciami i artystów, sprawdź, że nie można połączyć artystów artystów.
 
-7.  **Sprawdź, czy liczebność punktów są poprawne. Na przykład sprawdzić, że nie można nawiązać połączenia osoby więcej niż jednego z kierowników.**
+7. **Sprawdź, czy liczebność punktów są poprawne. Na przykład sprawdzić, że nie można nawiązać połączenia osoby więcej niż jednego z kierowników.**
 
-8.  **Sprawdź, czy każdy dekorator tekst jest wyświetlany,** oraz że:
+8. **Sprawdź, czy każdy dekorator tekst jest wyświetlany,** oraz że:
 
-    1.  Można edytować go, o ile nie zostało ustawione **jest interfejs użytkownika tylko do odczytu** flagi dla właściwości domeny.
+   1.  Można edytować go, o ile nie zostało ustawione **jest interfejs użytkownika tylko do odczytu** flagi dla właściwości domeny.
 
-    2.  Podczas edytowania właściwości w oknie dialogowym właściwości lub w dekoratorze innych widokach jest aktualizowana.
+   2.  Podczas edytowania właściwości w oknie dialogowym właściwości lub w dekoratorze innych widokach jest aktualizowana.
 
- Po przetestowaniu najpierw łącznik, możesz chcieć dostosować niektóre jej właściwości i dodać niektóre bardziej zaawansowane funkcje. Aby uzyskać więcej informacji, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+   Po przetestowaniu najpierw łącznik, możesz chcieć dostosować niektóre jej właściwości i dodać niektóre bardziej zaawansowane funkcje. Aby uzyskać więcej informacji, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 ## <a name="compartments"></a> Definiowanie kształtów, które zawierają listy: kształtów przedziałów
  Kształt przedziału zawiera jedną lub więcej list elementów. Na przykład w języku DSL biblioteki utworów muzycznych wystarczą kształtów przedziałów do reprezentowania utworów muzycznych albumy. W przypadku każdego albumu ma listę utworów.
@@ -488,27 +488,27 @@ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy 
 
 #### <a name="to-test-a-compartment-shape"></a>Aby przetestować kształt przedziału
 
-1.  **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, aby wygenerować kod projektanta DSL.
+1. **Kliknij przycisk Przekształć wszystkie szablony** na pasku narzędzi Eksploratora rozwiązań, aby wygenerować kod projektanta DSL.
 
-2.  **Twórz i uruchamiaj język DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie programu Visual Studio w trybie doświadczalnym. W doświadczalnym wystąpieniu programu Visual Studio Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
+2. **Twórz i uruchamiaj język DSL.** Naciśnij klawisz F5 lub CTRL + F5, aby uruchomić nowe wystąpienie programu Visual Studio w trybie doświadczalnym. W doświadczalnym wystąpieniu programu Visual Studio Otwórz lub Utwórz plik, który ma rozszerzenie nazwy pliku DSL.
 
-3.  **Sprawdź, czy narzędzie znajduje się w przyborniku.**
+3. **Sprawdź, czy narzędzie znajduje się w przyborniku.**
 
-4.  Przeciągnij narzędzie na diagram modelu. Kształt jest tworzony.
+4. Przeciągnij narzędzie na diagram modelu. Kształt jest tworzony.
 
-     Sprawdź, czy nazwa elementu jest wyświetlany i jest automatycznie ustawiana na wartość domyślną.
+    Sprawdź, czy nazwa elementu jest wyświetlany i jest automatycznie ustawiana na wartość domyślną.
 
-5.  Kliknij prawym przyciskiem myszy nagłówek nowy kształt, a następnie kliknij przycisk Dodaj *Your elementu listy.* W tym przykładzie polecenie jest dodać utworu.
+5. Kliknij prawym przyciskiem myszy nagłówek nowy kształt, a następnie kliknij przycisk Dodaj *Your elementu listy.* W tym przykładzie polecenie jest dodać utworu.
 
-     Sprawdź, czy element jest wyświetlany na liście i że jego nazwa została zmieniona.
+    Sprawdź, czy element jest wyświetlany na liście i że jego nazwa została zmieniona.
 
-6.  Kliknij jeden z elementów listy, a następnie sprawdź w oknie właściwości. Właściwości elementów listy powinny być widoczne.
+6. Kliknij jeden z elementów listy, a następnie sprawdź w oknie właściwości. Właściwości elementów listy powinny być widoczne.
 
-7.  Otwórz Eksplorator języka. Upewnij się, widoczne węzły kontenerów z węzłami elementu listy wewnątrz.
+7. Otwórz Eksplorator języka. Upewnij się, widoczne węzły kontenerów z węzłami elementu listy wewnątrz.
 
- ![Wygenerowany Eksploratorze DSL](../modeling/media/music_explorer.png)
+   ![Wygenerowany Eksploratorze DSL](../modeling/media/music_explorer.png)
 
- Po przetestowaniu najpierw kształt przedziału, możesz chcieć dostosować niektóre jej właściwości i dodać niektóre bardziej zaawansowane funkcje. Aby uzyskać więcej informacji, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+   Po przetestowaniu najpierw kształt przedziału, możesz chcieć dostosować niektóre jej właściwości i dodać niektóre bardziej zaawansowane funkcje. Aby uzyskać więcej informacji, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
 ### <a name="displaying-a-reference-link-in-a-compartment"></a>Wyświetlanie tematami w przedziale
  Zazwyczaj wyświetlanych w przedziale element jest elementem podrzędnym elementu, który jest reprezentowany przez kształt przedziału. Jednak czasami chcesz wyświetlić element, który jest połączony do niej przy użyciu relacji odwołania.
@@ -544,21 +544,21 @@ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy 
 
  Aby zobaczyć przykład, który korzysta z portów, wybierz **Diagram składników** szablonu podczas tworzenia nowego rozwiązania języka DSL. Ten przykład przedstawia główne punkty, które należy rozważyć podczas definiowania portów:
 
--   Brak klasy domeny, który reprezentuje kontener, portów, `Component`.
+- Brak klasy domeny, który reprezentuje kontener, portów, `Component`.
 
--   Brak klasy domeny, który reprezentuje portów. W tym przykładzie jest to `ComponentPort`.
+- Brak klasy domeny, który reprezentuje portów. W tym przykładzie jest to `ComponentPort`.
 
--   Istnieje relacja osadzania z klasy domeny kontenera do portu klasy domeny. Aby uzyskać więcej informacji, zobacz [Definiowanie klas domeny](#classes).
+- Istnieje relacja osadzania z klasy domeny kontenera do portu klasy domeny. Aby uzyskać więcej informacji, zobacz [Definiowanie klas domeny](#classes).
 
--   Różnego rodzaju port była mieszana na tym samym kontenerze, można utworzyć podklasy klasy domeny portu. W tym przykładzie `InPort` i `OutPort` dziedziczyć `ComponentPort`.
+- Różnego rodzaju port była mieszana na tym samym kontenerze, można utworzyć podklasy klasy domeny portu. W tym przykładzie `InPort` i `OutPort` dziedziczyć `ComponentPort`.
 
--   Klasa domeny mogą być mapowane do dowolnego rodzaju kształtu. W tym przykładzie jest `ComponentShape`. Aby uzyskać więcej informacji, zobacz [Definiowanie kształtów](#shapes).
+- Klasa domeny mogą być mapowane do dowolnego rodzaju kształtu. W tym przykładzie jest `ComponentShape`. Aby uzyskać więcej informacji, zobacz [Definiowanie kształtów](#shapes).
 
--   Klasy domeny portu są mapowane na port kształtów. Możesz mapować klas pochodnych do rozdzielania klas kształt portu lub mapowania klasy bazowej do klasy kształt jeden port.
+- Klasy domeny portu są mapowane na port kształtów. Możesz mapować klas pochodnych do rozdzielania klas kształt portu lub mapowania klasy bazowej do klasy kształt jeden port.
 
- Pod innymi względami kształtów portu zachowują się zgodnie z opisem w [Definiowanie kształtów](#shapes).
+  Pod innymi względami kształtów portu zachowują się zgodnie z opisem w [Definiowanie kształtów](#shapes).
 
- Aby uzyskać więcej informacji, zobacz [właściwości kształtów portu](../modeling/properties-of-port-shapes.md).
+  Aby uzyskać więcej informacji, zobacz [właściwości kształtów portu](../modeling/properties-of-port-shapes.md).
 
 ## <a name="swimlanes"></a> Definiowanie DSL, który ma torów
  Tory są poziomej lub pionowej partycji diagramu. Każdego toru odnosi się do elementu modelu. Definicji DSL wymaga jednej klasy domeny dla elementów toru.
@@ -610,16 +610,17 @@ Jeśli jesteś nowym użytkownikiem językami DSL, firma Microsoft zaleca pracy 
 ## <a name="trouble"></a> Rozwiązywanie problemów
  Poniższa lista zawiera niektóre z najczęściej występujących problemów napotkanych podczas projektowania DSL, wraz z sugestie dotyczące ich rozwiązania. Więcej porad jest dostępny na [Extensibililty Forum narzędzia wizualizacji](http://go.microsoft.com/fwlink/?LinkId=186074).
 
-|Problem|Sugestia|
-|-------------|----------------|
-|Zmiany wprowadzone w pliku definicji DSL przyniosło żadnego skutku.|Kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi powyżej Eksploratora rozwiązań, a następnie ponownej kompilacji rozwiązania.|
-|Kształty Pokaż nazwę elementu decorator zamiast wartości właściwości.|Skonfiguruj mapowanie dekoratora. Wybierz polecenie mapowanie elementu diagramu, czyli szara linia między klasą domeny i klasa kształt z diagramem definicji DSL.<br /><br /> Otwórz **szczegóły języka DSL** okna. Jeśli nie jest widoczna, w menu Widok, wskaż **Windows inne**, a następnie kliknij przycisk **szczegóły języka DSL**.<br /><br /> Kliknij przycisk **mapy Dekoratora** kartę. Wybierz nazwę dekoratora. Upewnij się, że zaznaczono pole wyboru obok tej pozycji. W obszarze **Właściwość wyświetlania**, wybierz nazwę właściwości domeny.<br /><br /> Aby uzyskać więcej informacji, zobacz [kształtów na diagramie](#shapes).|
-|W Eksploratorze DSL nie można dodać do kolekcji. Na przykład gdy klikam prawym przyciskiem myszy narzędzia istnieje żadne polecenie "Dodaj narzędzie" w menu.<br /><br /> W Eksploratorze dla mojego języka DSL nie można dodać elementu do listy.|Kliknij prawym przyciskiem myszy element nad węzłem, który ma. Jeśli chcesz dodać do listy polecenia Dodaj jest nie znajduje się w węźle listy, ale w jego właściciel.|
-|Po utworzeniu klasy domeny, ale nie można utworzyć wystąpienia w Eksploratorze języka.|Każda klasa domeny, z wyjątkiem głównego musi być elementem docelowym relacji osadzania.|
-|W Eksploratorze dla mojego języka DSL elementy są wyświetlane tylko w przypadku ich nazwy typu.|W definicji DSL wybierz właściwość domeny klasy, a w oknie właściwości ustaw oknie **jest nazwa elementu** na wartość true.|
-|Moje DSL zawsze zostanie otwarty w edytorze XML.|Może to nastąpić z powodu błędu podczas odczytu pliku. Jednak mimo należy naprawić ten błąd, możesz jawnie zresetować edytora projektanta DSL.<br /><br /> Kliknij prawym przyciskiem myszy element projektu, kliknij przycisk **Otwórz za pomocą** i wybierz _YourLanguage_**projektanta (ustawienie domyślne)**.|
-|Przybornik Moje DSL nie pojawia się po zmianie nazwy zestawu.|Sprawdzić i zaktualizować **DslPackage\GeneratedCode\Package.tt** Aby uzyskać więcej informacji, zobacz [porady: Zmienianie Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|
-|Przybornik Moje DSL nie pojawia się, ale nie uległy zmianie nazwy zestawu.<br /><br /> Lub pojawia się komunikat z raportowania błędów, które można załadować rozszerzenia.|Zresetuj wystąpienie eksperymentalne programu i ponownie skompiluj rozwiązanie.<br /><br /> 1.  Windows — w menu Start, w obszarze **wszystkie programy**, rozwiń węzeł [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], następnie **narzędzia**, a następnie kliknij przycisk **Zresetuj Microsoft Visual Studio wystąpienie eksperymentalne programu**.<br />2.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.|
+
+| Problem | Sugestia |
+|-|-|
+| Zmiany wprowadzone w pliku definicji DSL przyniosło żadnego skutku. | Kliknij przycisk **Przekształć wszystkie szablony** na pasku narzędzi powyżej Eksploratora rozwiązań, a następnie ponownej kompilacji rozwiązania. |
+| Kształty Pokaż nazwę elementu decorator zamiast wartości właściwości. | Skonfiguruj mapowanie dekoratora. Wybierz polecenie mapowanie elementu diagramu, czyli szara linia między klasą domeny i klasa kształt z diagramem definicji DSL.<br /><br /> Otwórz **szczegóły języka DSL** okna. Jeśli nie jest widoczna, w menu Widok, wskaż **Windows inne**, a następnie kliknij przycisk **szczegóły języka DSL**.<br /><br /> Kliknij przycisk **mapy Dekoratora** kartę. Wybierz nazwę dekoratora. Upewnij się, że zaznaczono pole wyboru obok tej pozycji. W obszarze **Właściwość wyświetlania**, wybierz nazwę właściwości domeny.<br /><br /> Aby uzyskać więcej informacji, zobacz [kształtów na diagramie](#shapes). |
+| W Eksploratorze DSL nie można dodać do kolekcji. Na przykład gdy klikam prawym przyciskiem myszy narzędzia istnieje żadne polecenie "Dodaj narzędzie" w menu.<br /><br /> W Eksploratorze dla mojego języka DSL nie można dodać elementu do listy. | Kliknij prawym przyciskiem myszy element nad węzłem, który ma. Jeśli chcesz dodać do listy polecenia Dodaj jest nie znajduje się w węźle listy, ale w jego właściciel. |
+| Po utworzeniu klasy domeny, ale nie można utworzyć wystąpienia w Eksploratorze języka. | Każda klasa domeny, z wyjątkiem głównego musi być elementem docelowym relacji osadzania. |
+| W Eksploratorze dla mojego języka DSL elementy są wyświetlane tylko w przypadku ich nazwy typu. | W definicji DSL wybierz właściwość domeny klasy, a w oknie właściwości ustaw oknie **jest nazwa elementu** na wartość true. |
+| Moje DSL zawsze zostanie otwarty w edytorze XML. | Może to nastąpić z powodu błędu podczas odczytu pliku. Jednak mimo należy naprawić ten błąd, możesz jawnie zresetować edytora projektanta DSL.<br /><br /> Kliknij prawym przyciskiem myszy element projektu, kliknij przycisk **Otwórz za pomocą** i wybierz pozycję * YourLanguage ***projektanta (ustawienie domyślne)**. |
+| Przybornik Moje DSL nie pojawia się po zmianie nazwy zestawu. | Sprawdzić i zaktualizować **DslPackage\GeneratedCode\Package.tt** Aby uzyskać więcej informacji, zobacz [porady: Zmienianie Namespace języka specyficznego dla domeny](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
+| Przybornik Moje DSL nie pojawia się, ale nie uległy zmianie nazwy zestawu.<br /><br /> Lub pojawia się komunikat z raportowania błędów, które można załadować rozszerzenia. | Zresetuj wystąpienie eksperymentalne programu i ponownie skompiluj rozwiązanie.<br /><br /> 1.  Windows — w menu Start, w obszarze **wszystkie programy**, rozwiń węzeł [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], następnie **narzędzia**, a następnie kliknij przycisk **Zresetuj Microsoft Visual Studio wystąpienie eksperymentalne programu**.<br />2.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**. |
 
 ## <a name="see-also"></a>Zobacz też
 

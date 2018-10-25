@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99d3984a6e399828097dc40d4b2aa3ec98221d2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b25c673a684e4892f3cd13a4f950fc6cd2565dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841471"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 Ładuje symbole debugowania określony w pamięci.  
@@ -59,19 +59,19 @@ int LoadSymbols(
  [in] Adres podstawowy pamięci.  
   
  `pUnkMetadataImport`  
- [in] Obiekt zawierający metadane symbolu.  
+ [in] Obiekt, który zawiera metadane symbolu.  
   
  `bstrModuleName`  
  [in] Nazwa modułu.  
   
  `bstrSymSearchPath`  
- [in] Ścieżka wyszukiwania pliku symboli.  
+ [in] Ścieżka do wyszukiwania pliku symboli.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbols(  

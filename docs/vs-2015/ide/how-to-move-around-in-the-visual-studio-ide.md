@@ -23,12 +23,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce77ac0d7d2cf7cfa131742f40f89af692982506
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8ef4cf0c416a72b61b1e02f97cf28798ecb340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189062"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812859"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Porady: poruszanie się w środowisku IDE programu Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,20 +48,20 @@ Zintegrowanego środowiska programistycznego (IDE) został zaprojektowany umożl
   
 #### <a name="to-move-through-open-files-in-order-of-use"></a>Aby przeglądać otwarte pliki w kolejności użycia  
   
--   Aby aktywować otwarte dokumenty w kolejności, w której ostatnio były przez nich wspomnieliśmy, naciśnij klawisze CTRL + ZNAK MINUS.  
+- Aby aktywować otwarte dokumenty w kolejności, w której ostatnio były przez nich wspomnieliśmy, naciśnij klawisze CTRL + ZNAK MINUS.  
   
--   Aby aktywować otwartymi dokumentami w odwrotnej kolejności niż kolejność, naciśnij klawisze CTRL + SHIFT + ZNAK MINUS.  
+- Aby aktywować otwartymi dokumentami w odwrotnej kolejności niż kolejność, naciśnij klawisze CTRL + SHIFT + ZNAK MINUS.  
   
-    > [!NOTE]
-    >  **Przejdź wstecz** i **Nawiguj do przodu** również znajduje się na **widoku** menu.  
+  > [!NOTE]
+  >  **Przejdź wstecz** i **Nawiguj do przodu** również znajduje się na **widoku** menu.  
   
- Możesz również przełączyć się do określonego pliku, Otwórz w edytorze, niezależnie od tego, kiedy ostatniego dostępu do pliku, przy użyciu **Nawigator IDE**, **aktywnych plików** listy w edytorze lub **Windows** okno dialogowe.  
+  Możesz również przełączyć się do określonego pliku, Otwórz w edytorze, niezależnie od tego, kiedy ostatniego dostępu do pliku, przy użyciu **Nawigator IDE**, **aktywnych plików** listy w edytorze lub **Windows** okno dialogowe.  
   
- **Nawigator IDE** działa podobnie do przełącznika aplikacji Windows. Nie jest dostępne z menu i jest możliwy tylko za pomocą klawiszy skrótów. Jedno z dwóch poleceń uzyskiwać dostęp do **Nawigator IDE** (pokazana poniżej), aby przechodzić między plików, w zależności od kolejności, w której chcesz przechodzić między.  
+  **Nawigator IDE** działa podobnie do przełącznika aplikacji Windows. Nie jest dostępne z menu i jest możliwy tylko za pomocą klawiszy skrótów. Jedno z dwóch poleceń uzyskiwać dostęp do **Nawigator IDE** (pokazana poniżej), aby przechodzić między plików, w zależności od kolejności, w której chcesz przechodzić między.  
   
- ![Nawigator IDE programu Visual Studio](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
+  ![Nawigator IDE programu Visual Studio](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
   
- `Window.PreviousDocumentWindowNav` Umożliwia przeniesienie do pliku, który został ostatnio używane i `Window.NextDocumentWindowNav` umożliwia przeniesienie w odwrotnej kolejności. Przypisuje ogólnych ustawieniach projektowych, CTRL + SHIFT + TAB, aby `Window.PreviousDocumentWindowNav` i CTRL + TAB, aby `Window.NextDocumentWindowNav`.  
+  `Window.PreviousDocumentWindowNav` Umożliwia przeniesienie do pliku, który został ostatnio używane i `Window.NextDocumentWindowNav` umożliwia przeniesienie w odwrotnej kolejności. Przypisuje ogólnych ustawieniach projektowych, CTRL + SHIFT + TAB, aby `Window.PreviousDocumentWindowNav` i CTRL + TAB, aby `Window.NextDocumentWindowNav`.  
   
 > [!NOTE]
 >  Kombinację ustawień, którego używasz nie ma jeszcze kombinacji klawiszy skrótów, przypisany do tego polecenia, można przypisać własne niestandardowe polecenie wartości za pomocą **klawiatury** strony **opcje** okna dialogowego pole. Aby uzyskać więcej informacji, zobacz [określenie i dostosowywanie skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 727c11e24eb3409de89fe211c6a37691dfec298c
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: dce43c02f4976b51bab61a48f615fb0307102fc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204118"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884189"
 ---
 # <a name="customize-a-rule-set"></a>Dostosuj zestaw reguł
 
@@ -34,11 +34,11 @@ Aby utworzyć niestandardową regułę zestaw, możesz otworzyć wbudowany zesta
 
 3. W **Uruchom ten zestaw reguł** listy rozwijanej, wykonaj jedną z następujących czynności:
 
-    - Wybierz zestaw reguł, który chcesz dostosować.
+   - Wybierz zestaw reguł, który chcesz dostosować.
 
      \- lub —
 
-    - Wybierz  **\<Przeglądaj … >** do określenia zestawu istniejącą regułę, która nie jest na liście.
+   - Wybierz  **\<Przeglądaj … >** do określenia zestawu istniejącą regułę, która nie jest na liście.
 
 4. Wybierz **Otwórz** reguły są wyświetlane w edytorze zestawu reguł.
 

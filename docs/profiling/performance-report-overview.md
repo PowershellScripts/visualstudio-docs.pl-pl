@@ -1,5 +1,5 @@
 ---
-title: Przegląd raportu wydajności | Dokumentacja firmy Microsoft
+title: Omówienie raportów wydajności | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,87 +14,87 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 455c05ae0d8645040d3f9eac68d20f57138df5cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255996"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830772"
 ---
 # <a name="performance-report-overview"></a>Przegląd raportu wydajności
-Można wyświetlić danych profilowania w sesji wydajności **raport wydajności** okno programu Visual Studio Team System programowanie Edition zintegrowane środowisko programistyczne (IDE). Dane profilowania jest zapisywany w pliku Vsp i vsps plików. Podgląd raportów umożliwiają przeglądać i analizować problemy z wydajnością aplikacji.  
+Można wyświetlić danych profilowania w sesji pomiaru wydajności **raport dotyczący wydajności** okna programu Visual Studio Team System Development Edition zintegrowanego środowiska programistycznego (IDE). Profilowania dane są zapisywane w plikach .vsp i .vsps. Widok raportu w systemie windows umożliwiają można wyświetlać i analizować problemy z wydajnością aplikacji.  
   
 > [!CAUTION]
->  Plik danych profilowania zawiera poufne informacje, takie jak nazwa komputera, wersja systemu operacyjnego, ścieżki do pliku informacji o pamięci i innych informacji o instalacji na komputerze. Należy zachować ścisłą kontrolę nad dystrybucją danych, zarówno w jego macierzystego. *vsp* format oraz gdy są eksportowane do. *CSV* lub. *XML* pliku.  
+>  Plik danych profilowania zawiera poufne informacje, takie jak nazwa komputera, wersję systemu operacyjnego, ścieżki do plików, informacje o pamięci i innych informacji o instalacji na komputerze. Należy zachować ścisłą kontrolę nad dystrybucją danych, zarówno w jego native. *vsp* format i kiedy są eksportowane do. *CSV* lub. *XML* pliku.  
 >   
->  Jeśli dane śledzenia zdarzeń są zbierane w ramach sesji wydajności, dodatkowe informacje mogą być wyświetlane w zdarzeniu dziennik śledzenia (. *etl*) pliku. Te informacje obejmują nazwę domeny i użytkownika; w związku z tym należy utrzymywać ścisłą kontrolę nad dystrybucji pliku dziennika.  
+>  Jeśli dane śledzenia zdarzeń są zbierane w ramach sesji wydajności, dodatkowe informacje mogą być wyświetlane w zdarzeniu dziennik śledzenia (. *etl*) pliku. Te informacje obejmują nazwę domeny oraz nazwę użytkownika; w związku z tym należy zachować ścisłą kontrolę nad dystrybucją w pliku dziennika.  
   
 ## <a name="performance-report-window"></a>Okno raportu wydajności  
- Okno Raport wydajności jest okna narzędzia, która jest używana do wyświetlania, zarządzania i filtrowanie danych wydajności, a także formantu można dostosowywać zapytania.  
+ Okno Raport dotyczący wydajności jest oknem narzędzi, który służy do wyświetlania, zarządzanie i filtrować dane dotyczące wydajności, a także kontroli dostosowywalne zapytania.  
   
- Na głównym pasku narzędzi okna Raport o wydajności można uzyskać dostępu do każdego widoku. Kliknij strzałkę obok pozycji **bieżący widok** listy do wyświetlania i wybierania poszczególnych widoków, które są dostępne.  
+ Na głównym pasku narzędzi okna Raport o wydajności możesz uzyskać dostęp każdy widok. Kliknij strzałkę obok pozycji **bieżący widok** listy do wyświetlania i wybierania poszczególnych widoków, które są dostępne.  
   
  Okno Raport wydajności zawiera następujące widoki danych:  
   
 ### <a name="summary-view"></a>Widok podsumowania  
- Domyślnie dane profilowania jest wyświetlany w widoku podsumowania. Ten widok stanowi punkt wyjścia w badaniu na problemy z wydajnością. Z każdego wiersza w widoku podsumowania można przenieść do bardziej szczegółowych widoków klikając prawym przyciskiem myszy nazwę funkcji lub modułu. Aby uzyskać więcej informacji, zobacz [widoku podsumowania](../profiling/summary-view.md).  
+ Domyślnie dane profilowania jest wyświetlany w widoku podsumowania. Ten widok jest punktem wyjścia w badaniu na problemy z wydajnością. Z każdego wiersza w widoku podsumowania można przenieść do bardziej szczegółowych widoków przez kliknięcie prawym przyciskiem myszy nazwę funkcji lub modułu. Aby uzyskać więcej informacji, zobacz [Widok Podsumowanie](../profiling/summary-view.md).  
   
 ### <a name="callercallee-view"></a>Widok wywołujący/wywoływany  
- Widok wywołujący/wywoływany Wyświetla drzewo wywołań dla poszczególnych funkcji. Widok jest podzielone na trzy części:  
+ Widok wywołujący/wywoływany Wyświetla drzewo wywołań dla poszczególnych funkcji. Widok jest podzielony na trzy części:  
   
--   Funkcja docelowego jest wyświetlany w środku widoku.  
+- Funkcja docelowa jest wyświetlany w środku widoku.  
   
--   Funkcje, które wywołuje funkcję (obiekty wywołujące) są wyświetlane powyżej funkcja docelowej.  
+- Funkcje, które wywołuje funkcję (obiekty wywołujące) są wyświetlane powyżej docelowej funkcji.  
   
--   Funkcje, które są wywoływane przez funkcję docelowego (callees) są wyświetlane poniżej wartości docelowej.  
+- Funkcje, które są wywoływane przez funkcję target (wywoływane) są wyświetlane poniżej wartości docelowej.  
   
- Aby wybrać inną funkcję, możesz kliknąć dwukrotnie dowolnej funkcji o nazwie liście lub lista wywoływany. Aby uzyskać więcej informacji, zobacz [widok wywołujący/wywoływany](../profiling/caller-callee-view.md).  
+  Możesz wybrać inną funkcję przez dwukrotne kliknięcie dowolnej funkcji, na liście o nazwie lub na liście / / wywoływany. Aby uzyskać więcej informacji, zobacz [widok wywołujący/wywoływany](../profiling/caller-callee-view.md).  
   
 ### <a name="call-tree-view"></a>Widok drzewa wywołań  
- Widok drzewa wywołań Wyświetla ścieżek wykonywania funkcji, które zostały przechodzić w profilowanych aplikacji. Korzeń drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcja zawiera wszystkie funkcje, które mu i dane wydajności dotyczące tych wywołań funkcji.  
+ Widok drzewa wywołania Wyświetla ścieżki wykonywania funkcji, które zostały przesunięta w profilowanej aplikacji. Główny drzewa jest punktem wejścia do aplikacji lub składnika. Każdy węzeł funkcji Wyświetla wszystkie funkcje, które go wywołały i dane wydajności dotyczące tych wywołań funkcji.  
   
- Widok drzewa wywołań można rozwinąć i wyróżnij ścieżkę wykonywania funkcji wykorzystany najwięcej czasu lub zostało pobrane najczęściej. Aby wyświetlić najbardziej aktywne ścieżki, kliknij prawym przyciskiem myszy funkcji, a następnie kliknij przycisk **rozwiń aktywnej ścieżki**. Aby uzyskać więcej informacji, zobacz [widok drzewa wywołań](../profiling/call-tree-view.md).  
+ Widok drzewa wywołania można również rozwijać i Podświetlenie ścieżki wykonywania funkcji, która użyte najwięcej czasu lub zostało pobrane najczęściej. Aby wyświetlić najbardziej aktywne ścieżkę, kliknij prawym przyciskiem myszy funkcję, a następnie kliknij przycisk **Rozwiń ścieżkę aktywną**. Aby uzyskać więcej informacji, zobacz [widok drzewa wywołań](../profiling/call-tree-view.md).  
   
 ### <a name="process-view"></a>Widok procesu  
- Widok procesu przedstawia dane wydajności dla każdego procesu i wątku, który został profilowaniu. Aby uzyskać więcej informacji, zobacz [widok procesu](../profiling/process-view.md).  
+ Widok procesu przedstawia dane wydajności dla każdego procesu i wątku, która była profilowana. Aby uzyskać więcej informacji, zobacz [widok procesu](../profiling/process-view.md).  
   
 ### <a name="modules-view"></a>Widok modułów  
- Widok modułów Wyświetla listę modułów w projekcie i przedstawia dane profilowania dla każdego modułu. Rozwiń lub Zwiń nazwę modułu, aby wyświetlić dane profilowania funkcji. Podczas zbierania danych za pomocą metody pobierania próbek, źródła kodu wiersza i instrukcji wskaźnika danych profilowania jest również dostępna. Aby uzyskać więcej informacji, zobacz [widok modułów](../profiling/modules-view.md).  
+ Widok modułów Wyświetla listę modułów w projekcie i przedstawia danych profilowania dla każdego modułu. Rozwiń lub Zwiń nazwę modułu, aby wyświetlić dane profilowania funkcji. Podczas zbierania danych za pomocą próbkowania, źródła kodu wiersza i instrukcje wskaźnik danych profilowania jest również dostępna. Aby uzyskać więcej informacji, zobacz [widok modułów](../profiling/modules-view.md).  
   
 ### <a name="functions-view"></a>Widok funkcji  
  Widok funkcji zawiera listę funkcji, które zostały wywołane podczas profilowania. Aby uzyskać więcej informacji, zobacz [widoku funkcji](../profiling/functions-view.md).  
   
 ### <a name="line-view"></a>Widok wiersza  
- Widok linii umożliwia wyświetlenie wierszy kodu określone źródło, które zostały wykonane podczas profilowania próbkowania. Aby uzyskać więcej informacji, zobacz [widok linii](../profiling/lines-view.md).  
+ Widok linii umożliwia wyświetlenie określonego źródła wierszy kodu, które zostały wykonane podczas pobierania próbek profilowania. Aby uzyskać więcej informacji, zobacz [widok linii](../profiling/lines-view.md).  
   
-### <a name="instruction-pointer-ip-view"></a>Widok wskaźnika (IP) instrukcji  
- Widok wskaźnika instrukcji można wyświetlić szczegółowe instrukcje, które zostały wykonane podczas profilowania próbkowania. Aby uzyskać więcej informacji, zobacz [widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view.md).  
+### <a name="instruction-pointer-ip-view"></a>Widok wskaźnika (IP) w instrukcji  
+ Widok wskaźnika instrukcji umożliwia wyświetlenie szczegółowych instrukcji, które zostały wykonane podczas pobierania próbek profilowania. Aby uzyskać więcej informacji, zobacz [widok wskaźników instrukcji (IP)](../profiling/instruction-pointers-ips-view.md).  
   
 ### <a name="allocation-view"></a>Widok alokacji  
- Widok alokacji jest dostępny jeśli **zbieranie .NET obiektu alokacji** został wybrany na **ogólne** strony **sesji wydajności** okno dialogowe właściwości. Zobacz [sesja wydajności — omówienie](../profiling/performance-session-overview.md). Widok alokacji wyszczególniono obiekty .NET przydzielone przez aplikację lub składnik. Po rozwinięciu wiersza obiektu jest wyświetlany drzewo wywołań. Drzewo wywołań pokazuje ścieżek wykonywania, które spowodowało utworzenie obiektu. Są także informacje o liczbę włącznie i wyłącznego alokacji dla każdej funkcji w drzewie wywołań. Widok alokacji można rozwinąć i wyróżnij ścieżkę wykonywania funkcji, które przydzielone największej liczby obiektów. Aby wyświetlić najbardziej aktywne ścieżki, kliknij prawym przyciskiem myszy funkcji, a następnie kliknij przycisk **rozwiń aktywnej ścieżki**. Aby uzyskać więcej informacji, zobacz [danych pamięci .NET zbieranie alokacji i okresem istnienia](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) i [Widok alokacji](../profiling/dotnet-memory-allocations-view.md).  
+ Widok alokacji jest dostępny jeśli **przydziału obiektu .NET zbieranie** został wybrany na **ogólne** strony **sesji wydajności** okno dialogowe właściwości. Zobacz [sesja wydajności — omówienie](../profiling/performance-session-overview.md). Widok alokacji Wyświetla listę obiektów platformy .NET, które zostały przydzielone przez aplikację lub składnik. Po rozwinięciu wiersza obiektu drzewo wywołań jest wyświetlany. Drzewo wywołań pokazuje ścieżki wykonywania, które spowodowało utworzenie obiektu. Są również informacje o liczbie przydziały włączne i wyłączne dla poszczególnych funkcji w drzewie wywołań. Widok alokacji można również rozwijać i Podświetlenie ścieżki wykonywania funkcji, która przydzielona największej liczby obiektów. Aby wyświetlić najbardziej aktywne ścieżkę, kliknij prawym przyciskiem myszy funkcję, a następnie kliknij przycisk **Rozwiń ścieżkę aktywną**. Aby uzyskać więcej informacji, zobacz [.NET zbieranie danych alokacji i okresie istnienia pamięci](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md) i [Widok alokacji](../profiling/dotnet-memory-allocations-view.md).  
   
 ### <a name="objects-lifetime-view"></a>Widok okresu istnienia obiektów  
- Widok okresu istnienia obiektu jest dostępna jeśli **.NET zbierać informacje dotyczące alokacji obiektów** i **również zbierać informacje dotyczące okresu istnienia obiektu platformy .NET** zostały wybrane na **ogólne**strony **sesji wydajności** okno dialogowe właściwości.  
+ Widok okresu istnienia obiektu jest dostępny jeśli **informacje dotyczące alokacji obiektów .NET zbieranie** i **również zbierać informacje dotyczące okresu istnienia obiektu platformy .NET** zostały wybrane na **ogólne**strony **sesji wydajności** okno dialogowe właściwości.  
   
- Widok okresu istnienia obiektu wyświetla całkowita liczba wystąpień poszczególnych typów i liczbę obiektów, które zostały zebrane podczas generowania kolekcji każdego pamięci. Aby uzyskać więcej informacji, zobacz [widok okresu istnienia obiektu](../profiling/object-lifetime-view.md).  
+ Widok okresu istnienia obiektu Wyświetla całkowitą liczbę wystąpień każdego typu i liczby obiektów, które zostały zebrane w wszystkich generacjach wyrzucania. Aby uzyskać więcej informacji, zobacz [widok okresu istnienia obiektu](../profiling/object-lifetime-view.md).  
   
-## <a name="customizable-filter-control"></a>Formant filtru dostosowania  
+## <a name="customizable-filter-control"></a>Formant filtru można dostosowywać  
  Formant filtru można dostosowywać ma następujące opcje:  
   
--   **Importowanie filtru** -pobiera wcześniej zapisane zapytanie niestandardowe.  
+-   **Importowanie filtru** — pobiera wcześniej zapisane zapytanie niestandardowe.  
   
--   **Eksportowanie filtru** -zapisuje niestandardowe zapytanie do określonej lokalizacji.  
+-   **Eksportuj filtr** — zapisuje niestandardowe zapytanie do określonej lokalizacji.  
   
--   **Wykonanie kwerendy** — uruchamia zapytania jako wyświetlanych w formancie zapytanie niestandardowe.  
+-   **Wykonaj zapytanie** — wykonuje zapytanie, wyświetlana w formancie zapytanie niestandardowe.  
   
--   **Zatrzymaj kwerendę** -zatrzymuje wykonanie zapytania, który jest uruchomiony. Ten przycisk jest niedostępny, jeśli jest uruchomiony bez określenia zapytania.  
+-   **Zatrzymaj zapytanie** -zatrzymuje wykonywanie zapytania, który jest uruchomiony. Ten przycisk jest dostępny, jeśli jest uruchomiony bez określenia zapytania.  
   
--   **Pokaż kwerendy** -Pokazuje/ukrywa kontroli niestandardowe zapytania.  
+-   **Wyświetl zapytanie** — pokazuje lub ukrywa Kontrolki niestandardowe zapytanie.  
   
--   **Zapisz Analyzed** -raport wraz z jego bieżącej analizy jest zapisywany jako plik vsps.  
+-   **Zapisz Analyzed** — raport wraz z jego bieżącej analizy jest zapisywany jako plik .vsps.  
   
--   **Eksportuj** -zapisuje w bieżącym raporcie. Sformatowany CVS lub. Pliku w formacie XML, z opcjami, aby zapisać różne widoki.  
+-   **Eksportuj** — zapisuje bieżący raport w. Sformatowana CVS lub. Pliku w formacie XML, z opcjami, aby zapisać różne widoki.  
   
 ## <a name="see-also"></a>Zobacz także  
- [Analizowanie danych narzędzi wydajności](../profiling/analyzing-performance-tools-data.md)   
+ [Analizowanie danych dotyczących narzędzi wydajności](../profiling/analyzing-performance-tools-data.md)   
  [Widoki raportu wydajności](../profiling/performance-report-views.md)

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 098698041ab90611e29132a9f9205b7b78238062
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3bda3f7869715b3c0ab08d64cdb7ef1f13ca4898
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109730"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816732"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
-Powiadamia odbiornik zdarzenia zaktualizowano atrybuty dokumentu.  
+Powiadamia użytkownika, Odbiorca zdarzenia zaktualizowano atrybuty dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,10 +41,10 @@ int onUpdateDocumentAttributes(
   
 #### <a name="parameters"></a>Parametry  
  `textdocattr`  
- [in] Kombinacja flag z [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) wyliczenie określający zaktualizowane atrybuty dokumentu.  
+ [in] Kombinacja flag z [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) wyliczenie, które określa zaktualizowano atrybuty dokumentu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   

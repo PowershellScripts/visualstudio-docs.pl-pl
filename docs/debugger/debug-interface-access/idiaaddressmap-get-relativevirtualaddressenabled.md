@@ -1,5 +1,5 @@
 ---
-title: IDiaAddressMap::get_relativeVirtualAddressEnabled | Dokumentacja firmy Microsoft
+title: Idiaaddressmap::get_relativevirtualaddressenabled — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25159556d44ca37d7938e67e67f1b9900a05010b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa61da69f30b759ade63798d681ae8036bcd8ece
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458024"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849089"
 ---
 # <a name="idiaaddressmapgetrelativevirtualaddressenabled"></a>IDiaAddressMap::get_relativeVirtualAddressEnabled
 Wskazuje, czy włączono obliczania i Użyj względnych adresów wirtualnych (RVA).  
@@ -34,17 +34,17 @@ HRESULT get_relativeVirtualAddressEnabled (
   
 #### <a name="parameters"></a>Parametry  
  pRetVal  
- [out] Zwraca `TRUE` włączenie obliczania RVAs.  
+ [out] Zwraca `TRUE` Jeśli obliczenie RVA jest włączona.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- RVAs są włączone, jeśli segmenty zostały wstępnie załadowane z pliku PDB. Użycie RVAs można tymczasowo wyłączyć przez wywołanie metody [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) metody.  
+ RVA są włączone, jeśli segmenty zostały wstępnie załadowane z pliku PDB. Użycie RVA można tymczasowo wyłączyć, wywołując [idiaaddressmap::put_relativevirtualaddressenabled —](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) metody.  
   
- Ponadto nowe nagłówki obrazu można ustalić wywołując [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) metody następuje wywołanie `put_relativeVirtualAddressEnabled` metody, aby umożliwić użycie RVAs przy użyciu w nowe nagłówki obrazu.  
+ Ponadto można nawiązać nowe nagłówki obrazu, wywołując [idiaaddressmap::set_imageheaders —](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md) metody następuje po wywołaniu `put_relativeVirtualAddressEnabled` metodę, aby umożliwić użycie RVA przy użyciu nowe nagłówki obrazu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaaddressmap —](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)   
+ [Idiaaddressmap::set_imageheaders —](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)   
  [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)

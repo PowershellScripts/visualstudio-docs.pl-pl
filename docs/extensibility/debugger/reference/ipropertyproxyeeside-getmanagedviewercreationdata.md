@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47ae1c724542d628e7f3c047efd8ed2da1f6f1f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd8da39b89311939017698b4095321df450112e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821373"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-Pobiera informacje o podglądu dla tego typu właściwości, aby można było utworzyć wystąpienia tego podglądu.  
+Pobiera informacje o viewer dla tego typu właściwości, aby utworzyć wystąpienia tego podglądu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,13 +51,13 @@ int GetManagedViewerCreationData(
   
 #### <a name="parameters"></a>Parametry  
  `assemName`  
- [out] Zwraca nazwę zestaw zawierający ten obiekt.  
+ [out] Zwraca nazwę zestawu, zawierający ten obiekt.  
   
  `assemBytes`  
- [out] Zwraca [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) obiekt zawierający bajtów zestawu tego obiektu (jest to wartość null, jeśli liczba dostępnych bajtów nie).  
+ [out] Zwraca [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) obiekt zawierający ten obiekt (jest to wartość null Jeśli bajty nie są dostępne), w bajtach zestawu.  
   
  `assemPdb`  
- [out] Zwraca `IEEDataStorage` obiektu zawierającego symbol przechowywania informacji dla tego obiektu (jest to wartość null Jeśli nie magazynu symboli jest dostępna).  
+ [out] Zwraca `IEEDataStorage` obiekt, który zawiera symbol przechowywania informacji dla tego obiektu (jest to wartość null, jeśli nie symboli sklep jest dostępny).  
   
  `className`  
  [out] Zwraca nazwę klasy zawierające ten obiekt.  
@@ -66,13 +66,13 @@ int GetManagedViewerCreationData(
  [out] Zwraca wartość z zakresu od [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) Wyliczenie wskazujące lokalizacji zestawu.  
   
  `replacementOk`  
- [out] Zwraca wartość niezerową (`TRUE`) Jeśli wartość tego obiektu można zmieniać; zero (`FALSE`) Jeśli obiekt jest tylko do odczytu.  
+ [out] Zwraca wartość różną od zera (`TRUE`) Jeśli wartość tego obiektu może zostać zmieniona; wartość zero (`FALSE`) Jeśli obiekt jest tylko do odczytu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest używana przez typ wizualizatorów można utworzyć wystąpienia zarządzanego podglądu.  
+ Ta metoda jest używana przez wizualizatorów typu tworzenia wystąpienia zarządzanego podglądu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   

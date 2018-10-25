@@ -26,12 +26,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 815c2eba06af4fe50eb9dc87dd158fe1713342ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1243c9d26e25bd76a7e8b3518484671bdd973fb9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280153"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841874"
 ---
 # <a name="how-to-write-a-visualizer"></a>Porady: pisanie wizualizatora
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,27 +43,27 @@ Możesz napisać niestandardowego wizualizatora obiektu klasy zarządzanej z wyj
   
  Architektura wizualizatora debuger ma dwie części:  
   
--   *Debugera po stronie* jest uruchamiany w ramach debugera programu Visual Studio. Kod po stronie debugera tworzy i wyświetla interfejsu użytkownika dla usługi wizualizatora.  
+- *Debugera po stronie* jest uruchamiany w ramach debugera programu Visual Studio. Kod po stronie debugera tworzy i wyświetla interfejsu użytkownika dla usługi wizualizatora.  
   
--   *Po stronie debugowanego obiektu* jest uruchamiany w ramach procesu programu Visual Studio debuguje ( *obiekt debugowany*).  
+- *Po stronie debugowanego obiektu* jest uruchamiany w ramach procesu programu Visual Studio debuguje ( *obiekt debugowany*).  
   
- Obiekt danych, które mają być wyświetlane (na przykład obiekt ciągu) istnieje w obiekcie debugowanym procesie. Dlatego po stronie debugowanego obiektu ma wysyłać ten obiekt danych po stronie debugera, który można następnie wyświetlać je za pomocą interfejsu użytkownika, które można utworzyć.  
+  Obiekt danych, które mają być wyświetlane (na przykład obiekt ciągu) istnieje w obiekcie debugowanym procesie. Dlatego po stronie debugowanego obiektu ma wysyłać ten obiekt danych po stronie debugera, który można następnie wyświetlać je za pomocą interfejsu użytkownika, które można utworzyć.  
   
- Po stronie debugera otrzyma ten obiekt danych, aby być wizualizowane z *dostawcy obiektów* implementującej <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interfejsu. Po stronie debugowanego obiektu wysyła obiekt danych za pośrednictwem *źródła obiektu*, który pochodzi od <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. Dostawcy obiektów można również wysyłać dane z powrotem do źródła obiektu, który umożliwia pisanie wizualizatora, który umożliwia edycję, a także wyświetla dane. Dostawcy obiektów może zostać zastąpiona w celu komunikować Ewaluator wyrażeń i dlatego źródła obiektu  
+  Po stronie debugera otrzyma ten obiekt danych, aby być wizualizowane z *dostawcy obiektów* implementującej <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> interfejsu. Po stronie debugowanego obiektu wysyła obiekt danych za pośrednictwem *źródła obiektu*, który pochodzi od <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>. Dostawcy obiektów można również wysyłać dane z powrotem do źródła obiektu, który umożliwia pisanie wizualizatora, który umożliwia edycję, a także wyświetla dane. Dostawcy obiektów może zostać zastąpiona w celu komunikować Ewaluator wyrażeń i dlatego źródła obiektu  
   
- Po stronie debugowanego obiektu i debuger komunikować się ze sobą za pośrednictwem <xref:System.IO.Stream>. Metody są dostarczane do serializacji obiektu danych do <xref:System.IO.Stream> i deserializacji <xref:System.IO.Stream> do obiektu danych.  
+  Po stronie debugowanego obiektu i debuger komunikować się ze sobą za pośrednictwem <xref:System.IO.Stream>. Metody są dostarczane do serializacji obiektu danych do <xref:System.IO.Stream> i deserializacji <xref:System.IO.Stream> do obiektu danych.  
   
- Kod po stronie debugowanego obiektu jest określony za pomocą atrybutu DebuggerVisualizer (<xref:System.Diagnostics.DebuggerVisualizerAttribute>).  
+  Kod po stronie debugowanego obiektu jest określony za pomocą atrybutu DebuggerVisualizer (<xref:System.Diagnostics.DebuggerVisualizerAttribute>).  
   
- Do tworzenia interfejsu użytkownika wizualizatora po stronie debugera, należy utworzyć klasę, która dziedziczy po elemencie <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> i zastąpić <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> metodę w celu wyświetlenia interfejsu.  
+  Do tworzenia interfejsu użytkownika wizualizatora po stronie debugera, należy utworzyć klasę, która dziedziczy po elemencie <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> i zastąpić <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> metodę w celu wyświetlenia interfejsu.  
   
- Możesz użyć <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> do wyświetlania formularzy Windows, okien dialogowych i formantów z Twojej wizualizatora.  
+  Możesz użyć <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> do wyświetlania formularzy Windows, okien dialogowych i formantów z Twojej wizualizatora.  
   
- Obsługa typów ogólnych jest ograniczona. Można napisać Wizualizator dla obiektu docelowego, który jest typem ogólnym, tylko wtedy, gdy typ ogólny jest typem otwartym. To ograniczenie jest taka sama jak wartość ograniczenia, korzystając z `DebuggerTypeProxy` atrybutu. Aby uzyskać więcej informacji, zobacz [przy użyciu atrybutu DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).  
+  Obsługa typów ogólnych jest ograniczona. Można napisać Wizualizator dla obiektu docelowego, który jest typem ogólnym, tylko wtedy, gdy typ ogólny jest typem otwartym. To ograniczenie jest taka sama jak wartość ograniczenia, korzystając z `DebuggerTypeProxy` atrybutu. Aby uzyskać więcej informacji, zobacz [przy użyciu atrybutu DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md).  
   
- Wizualizatory niestandardowe mogą mieć zagadnienia związane z zabezpieczeniami. Zobacz [zagadnienia dotyczące zabezpieczeń internetowych](../debugger/visualizer-security-considerations.md).  
+  Wizualizatory niestandardowe mogą mieć zagadnienia związane z zabezpieczeniami. Zobacz [zagadnienia dotyczące zabezpieczeń internetowych](../debugger/visualizer-security-considerations.md).  
   
- Procedury opisane poniżej, zapewniają ogólny widok co należy zrobić, aby utworzyć wizualizatora. Aby uzyskać bardziej szczegółowy opis, zobacz [wskazówki: pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+  Procedury opisane poniżej, zapewniają ogólny widok co należy zrobić, aby utworzyć wizualizatora. Aby uzyskać bardziej szczegółowy opis, zobacz [wskazówki: pisanie wizualizatora w języku C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Aby utworzyć po stronie debugera  
   

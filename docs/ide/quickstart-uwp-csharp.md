@@ -1,5 +1,5 @@
 ---
-title: 'Szybki Start: Tworzenie pierwszej aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio XAML i C# | Dokumentacja firmy Microsoft'
+title: 'Szybki Start: Tworzenie pierwszej aplikacji Universal Windows Platform w programie Visual Studio przy użyciu XAML i C# | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
@@ -14,73 +14,73 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: dd638a539b8956716aa60b5361bd003c18d35f9b
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: a203d471d5947df9919ed8c9afe7d1c2d41296f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908928"
 ---
-# <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Szybki Start: Tworzenie pierwszej aplikacji platformy uniwersalnej systemu Windows w programie Visual Studio z XAML i C&#35;
+# <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Szybki Start: Tworzenie pierwszej aplikacji Universal Windows Platform w programie Visual Studio przy użyciu XAML i C&#35;
 
-W tym wprowadzeniu do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut utworzysz aplikację "Hello World", która działa na dowolnym urządzeniu z systemem Windows 10. Aby to zrobić, użyjesz szablon projektu uniwersalnej platformy systemu Windows (UWP), Extensible Application Markup Language (XAML) i język programowania C#.
+W ramach tego wprowadzenia do programu Visual Studio zintegrowane środowisko programistyczne (IDE) 5 – 10 minut utworzysz aplikację "Hello World", która jest uruchamiana na dowolnym urządzeniu z systemem Windows 10. Aby to zrobić, możesz za pomocą szablonu projektu uniwersalnej platformy Windows (UWP), Extensible Application Markup Language (XAML), a C# języka programowania.
 
-Jeśli nie został już zainstalowany program Visual Studio, przejdź do [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) stronę, aby zainstalować ją bezpłatnie.
+Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 
-Najpierw utwórz projekt platformy uniwersalnej systemu Windows. Typ projektu zawiera wszystkie pliki szablonów potrzebne przed nawet dodano niczego!
+Najpierw utwórz projekt Universal Windows Platform. Typ projektu jest dostarczany z wszystkie pliki szablonu, czego potrzebujesz, zanim dodaniu jeszcze nic!
 
-1. Otwórz program Visual Studio 2017 r.
+1. Otwórz program Visual Studio 2017.
 
-2. Na pasku menu u góry wybierz **pliku** > **nowy** > **projektu**.
+2. Na pasku menu u góry wybierz **pliku** > **New** > **projektu**.
 
-3. W lewym okienku **nowy projekt** okna dialogowego rozwiń **Visual C#**, a następnie wybierz pozycję **uniwersalnych systemu Windows**. W środkowym okienku wybierz **pusta aplikacja (uniwersalna systemu Windows)**. Następnie, nazwij projekt *HelloWorld* i wybierz polecenie **OK**.
+3. W okienku po lewej stronie **nowy projekt** okna dialogowego rozwiń **Visual C#** , a następnie wybierz **Windows Universal**. W środkowym okienku wybierz **pusta aplikacja (Windows Universal)**. Następnie nadaj projektowi nazwę *HelloWorld* i wybierz polecenie **OK**.
 
-   ![Windows Universal szablonu projektu w oknie dialogowym Nowy projekt w programie Visual Studio IDE](../ide/media/new-project-csharp-uwp-helloworld.png)
+   ![Windows Universal szablonu projektu w oknie dialogowym Nowy projekt w środowisku IDE programu Visual Studio](../ide/media/new-project-csharp-uwp-helloworld.png)
 
    > [!NOTE]
-   > Jeśli nie widzisz **pusta aplikacja (uniwersalna systemu Windows)** projektu szablonu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w lewym okienku **nowy projekt** okno dialogowe.<br><br>![Kliknij łącze Otwórz Instalator programu Visual Studio w oknie dialogowym Nowy projekt](../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Uruchamia Instalator programu Visual Studio. Wybierz **rozwoju platformy uniwersalnej systemu Windows** obciążenia, a następnie wybierz pozycję **Modyfikuj**.<br><br>![Uniwersalny obciążenia rozwoju platformy systemu Windows w Instalatorze programu Visual Studio](../ide/media/uwp-dev-workload.png)
+   > Jeśli nie widzisz **pusta aplikacja (Windows Universal)** szablonu projektu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe.<br><br>![Kliknij link Otwórz Instalator programu Visual Studio z okna dialogowego Nowy projekt](../ide/media/vb-open-visual-studio-installer-hello-world.png)<br><br>Uruchamia Instalatora programu Visual Studio. Wybierz **programowania na platformę uniwersalną Windows** obciążenia, a następnie wybierz **Modyfikuj**.<br><br>![Uniwersalne obciążenie projektowania platformy Windows w Instalatorze programu Visual Studio](../ide/media/uwp-dev-workload.png)
 
-4. Gdy **nowego projektu platformy uniwersalnej systemu Windows** zostanie wyświetlone okno dialogowe, wybierz **OK**.
+4. Gdy **nowy projekt platformy Windows Universal** pojawi się okno dialogowe, wybierz **OK**.
 
-   ![Zaakceptuj domyślne docelową wersję i minimalna wersja ustawień w oknie dialogowym Nowy projekt platformy uniwersalnej systemu Windows](../ide/media/new-uwp-project-target-minver-dialog.png)
+   ![Zaakceptuj domyślną wersję docelowej i minimalnej wersji ustawień w oknie dialogowym Nowy projekt platformy Universal Windows](../ide/media/new-uwp-project-target-minver-dialog.png)
 
-  > [!NOTE]
-  > Jeśli po raz pierwszy używasz programu Visual Studio umożliwiające utworzenie aplikacji platformy uniwersalnej systemu Windows, **ustawienia** pojawi się okno dialogowe. Wybierz **tryb dewelopera**, a następnie wybierz pozycję **tak**.<br><br>
- ![Włącz tryb dewelopera, w oknie dialogowym Ustawienia platformy uniwersalnej systemu Windows](../ide/media/enable-developer-mode.png)<br><br>Visual Studio instaluje dodatkowe pakietu tryb dewelopera. Po zakończeniu instalacji pakietu Zamknij **ustawienia** okno dialogowe.
+   > [!NOTE]
+   > Jeśli po raz pierwszy używasz programu Visual Studio do tworzenia aplikacji platformy uniwersalnej systemu Windows, **ustawienia** może zostać wyświetlone okno dialogowe. Wybierz **tryb dewelopera**, a następnie wybierz **tak**.<br><br>
+   ![Włącz tryb dewelopera w oknie dialogowym Ustawienia platformy uniwersalnej systemu Windows](../ide/media/enable-developer-mode.png)<br><br>Program Visual Studio zainstaluje dodatkowego pakietu tryb dewelopera. Po zakończeniu instalacji pakietu aktualizacji Zamknij **ustawienia** okno dialogowe.
 
 ## <a name="create-the-application"></a>Tworzenie aplikacji
 
-Nadszedł czas, aby rozpocząć tworzenie. Będzie dodać kontrolkę przycisku, Dodaj akcję na przycisk, a następnie uruchom aplikację "Hello World", aby wyświetlić, wygląda następująco.
+Nadszedł czas, aby rozpocząć tworzenie. Będzie Dodaj kontrolkę przycisk, Dodaj akcję do przycisku, a następnie uruchom aplikację "Hello World", aby zobaczyć, jak to wygląda.
 
-### <a name="add-a-button-to-the-design-canvas"></a>Dodawanie przycisku do obszaru projektowania
+### <a name="add-a-button-to-the-design-canvas"></a>Dodawanie przycisku do obszaru roboczego projektowania
 
-1. W **Eksploratora rozwiązań**, kliknij dwukrotnie *MainPage.xaml* otwarcie widoku podziału.
+1. W **Eksploratora rozwiązań**, kliknij dwukrotnie *MainPage.xaml* można otworzyć widoku podzielonego.
 
-  ![Otwórz MainPage.xaml z Eksploratora rozwiązań ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
+   ![Otwórz plik MainPage.xaml z poziomu Eksploratora rozwiązań ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  Istnieją dwa okienka: **projektanta XAML**, która obejmuje obszaru roboczego projektowanie i **edytora XAML**, którym można dodać lub zmienić kod.
+   Istnieją dwa okienka: **projektanta XAML**, która obejmuje kanwą i **edytora XAML**, którym można dodać lub zmienić kod.
 
-  ![W okienku projektanta XAML w edytorze XAML](../ide/media/uwp-xaml-editor.png)
+   ![W okienku projektanta XAML w edytorze XAML](../ide/media/uwp-xaml-editor.png)
 
 2. Wybierz **przybornika** można otworzyć okna wysuwanego przybornika.
 
-  ![Kliknij przycisk przybornika, aby otworzyć okno wysuwanego przybornika](../ide/media/uwp-toolbox.png)
+   ![Kliknij przycisk przybornika, aby otworzyć okno staną się przybornika](../ide/media/uwp-toolbox.png)
 
-  (Jeśli nie widzisz **przybornika** opcji, możesz otworzyć go na pasku menu. Aby to zrobić, wybierz **widoku** > **narzędzi**. Możesz również nacisnąć klawisz **Ctrl**+**Alt**+**X**.)
+   (Jeśli nie widzisz **przybornika** opcji, możesz go otworzyć z paska menu. Aby to zrobić, wybierz **widoku** > **narzędzi**. Lub naciśnij **Ctrl**+**Alt**+**X**.)
 
-3. Kliknij przycisk **numeru Pin** ikonę, aby dock okno przybornika.
+3. Kliknij przycisk **numeru Pin** ikonę, aby zadokować okno przybornika.
 
-  ![Kliknij ikonę pinezki do dock okno przybornika](../ide/media/uwp-toolbox-autohide.png)
+   ![Kliknij ikonę pinezki, aby zadokować okno przybornika](../ide/media/uwp-toolbox-autohide.png)
 
-4. Kliknij przycisk **przycisk** kontroli, a następnie przeciągnij go do obszaru projektowania.
+4. Kliknij przycisk **przycisk** sterowania, a następnie przeciągnij go do obszaru roboczego projektowania.
 
-   ![Formantu przycisku kliknij i przeciągnij go do obszaru projektowania](../ide/media/uwp-toolbox-add-button-control.png)
+   ![Kliknij formant przycisku i przeciągnij je na kanwę projektu](../ide/media/uwp-toolbox-add-button-control.png)
 
-  Jeśli przyjrzymy się kod w **edytora XAML**, zobaczysz, że przycisk został dodany, za:
+   Jeśli spojrzysz na kod w **edytora XAML**, zobaczysz, że przycisk został dodany, za:
 
-  ![Formantu przycisku kliknij i przeciągnij go do obszaru projektowania](../ide/media/uwp-xaml-control-code-window.png)
+   ![Kliknij formant przycisku i przeciągnij je na kanwę projektu](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Dodaj etykietę do przycisku
 
@@ -88,30 +88,30 @@ Nadszedł czas, aby rozpocząć tworzenie. Będzie dodać kontrolkę przycisku, 
 
    ![Zmień wartość zawartości przycisku na Hello World](../ide/media/uwp-change-button-text-in-xaml-code-window.png)
 
-2. Należy zauważyć, że przycisk w **projektanta XAML** zmiany zbyt.
+2. Należy zauważyć, że przycisk w **projektanta XAML** zmienia zbyt.
 
-   ![Przycisk zmiany Hello World w obszarze roboczym projekt](../ide/media/uwp-button-text-change-in-design-canvas.png)
+   ![Przycisk zmienia się na aplikację Hello World na kanwę projektu](../ide/media/uwp-button-text-change-in-design-canvas.png)
 
-### <a name="add-an-event-handler"></a>Dodaj program obsługi zdarzeń
+### <a name="add-an-event-handler"></a>Dodawanie obsługi zdarzeń
 
-Dźwięki "obsługi zdarzeń" skomplikowane, ale jest po prostu inną nazwę dla kodu, który jest wywoływany, gdy zdarzenie. W takim przypadku dodaje akcję "Witaj świecie!" przycisk.
+Skomplikowane dźwięki "program obsługi zdarzeń", ale jest po prostu inną nazwę dla kodu, która jest wywoływana w przypadku wystąpienia zdarzenia. W tym przypadku dodaje akcję "Hello World!" przycisk.
 
-1. Kliknij dwukrotnie ikonę w obszarze roboczym projektowania formantu przycisku.
+1. Kliknij dwukrotnie formant przycisku w obszarze roboczym projektu.
 
-2. Edytuj kod obsługi zdarzeń w *MainPage.xaml.cs*, strony związane z kodem.
+2. Edytuj kod obsługi zdarzeń w *MainPage.xaml.cs*, na stronie związanym z kodem.
 
- Jest to, gdzie interesujący rzeczy. Domyślny program obsługi zdarzeń wygląda następująco:
+   Jest to, skąd pobrać interesujących rzeczy. Domyślny program obsługi zdarzeń wygląda następująco:
 
    ![Domyślny program obsługi zdarzeń Button_Click ](../ide/media/uwp-button-click-code.png)
 
- Zmieńmy, więc wygląda następująco:
+   Zmieńmy go tak, aby wyglądał następująco:
 
     ![Nowy program obsługi zdarzeń Button_Click async ](../ide/media/uwp-add-hello-world-async-code.png)
 
-  Oto kod, aby skopiować i wkleić:
+   Poniżej przedstawiono kod, aby skopiować i wkleić:
 
-  ```C#
-  private async void Button_Click(object sender, RoutedEventArgs e)
+   ```C#
+   private async void Button_Click(object sender, RoutedEventArgs e)
          {
              MediaElement mediaElement = new MediaElement();
              var synth = new Windows.Media.SpeechSynthesis.SpeechSynthesizer();
@@ -119,35 +119,35 @@ Dźwięki "obsługi zdarzeń" skomplikowane, ale jest po prostu inną nazwę dla
              mediaElement.SetSource(stream, stream.ContentType);
              mediaElement.Play();
          }
-  ```
+   ```
 
-#### <a name="what-did-we-just-do"></a>Co tak jak?
+#### <a name="what-did-we-just-do"></a>Co to po prostu zrobiliśmy?
 
-Kod używa niektórych interfejsów API systemu Windows w celu utworzenia obiektu syntezy mowy i nadaje mu po część tekstu, aby podać. (Aby uzyskać więcej informacji na temat używania `SpeechSynthesis`, zobacz <xref:System.Speech.Synthesis>.)
+Kod używa niektóre interfejsy API Windows w celu utworzenia obiektu synteza mowy i nadaje jej po jakiś tekst powiedzieć. (Aby uzyskać więcej informacji na temat korzystania z `SpeechSynthesis`, zobacz <xref:System.Speech.Synthesis>.)
 
 ## <a name="run-the-application"></a>Uruchamianie aplikacji
 
-Nadszedł czas na tworzenie, wdrażanie i uruchamianie aplikacji platformy uniwersalnej systemu Windows "Hello World" Aby zobaczyć, co sprawdza i brzmi jak. Poniżej przedstawiono sposób.
+Nadszedł czas na tworzenie, wdrażanie i uruchomić aplikację "Hello World" platformy uniwersalnej systemu Windows, aby zobaczyć, co wyglądu i dźwięki, np. Poniżej przedstawiono sposób.
 
 1. Wybierz **komputera lokalnego** do uruchomienia aplikacji.
 
    ![Kliknij komputer lokalny, aby uruchomić i debugowanie aplikacji platformy uniwersalnej systemu Windows](../ide/media/uwp-start-or-debug.png)
 
-   (Można też wybrać **debugowania** > **Rozpocznij debugowanie** z paska menu lub naciśnij klawisz **F5** można uruchomić aplikacji.)
+   (Można też wybrać **debugowania** > **Rozpocznij debugowanie** z paska menu lub naciśnij **F5** można uruchomić aplikacji.)
 
-2. Wyświetlanie aplikacji, który jest wyświetlany zaraz po zniknie ekranu powitalnego. Aplikacja powinna wyglądać podobnie do poniższego:
+2. Wyświetl aplikację, która pojawia się, gdy ekran powitalny zniknie. Aplikacja powinna wyglądać mniej więcej tak:
 
    ![Platformy uniwersalnej systemu Windows aplikacja "Hello World"](../ide/media/uwp-hello-world-app.png)
 
-3. Kliknij przycisk **Hello World** przycisku.
+3. Kliknij przycisk **Witaj, świecie** przycisku.
 
- Z systemu Windows 10 dosłownie dowiesz się urządzenie, "Hello, World!"
+   Usługi systemu Windows 10, urządzenie dosłownie wyświetli komunikat, "Hello, World!"
 
-4. Aby zamknąć aplikację, kliknij przycisk **Zatrzymaj debugowanie** przycisku w pasku narzędzi. (Można również wybrać **debugowania** > **Zatrzymaj debugowanie** z paska menu, lub naciśnij klawisz **Shift**+**F5**.)
+4. Aby zamknąć aplikację, kliknij przycisk **Zatrzymaj debugowanie** przycisku na pasku narzędzi. (Wybierz również **debugowania** > **Zatrzymaj debugowanie** z paska menu lub naciśnij klawisz **Shift**+**F5**.)
 
 ## <a name="next-steps"></a>Następne kroki
 
-Gratulujemy Kończenie pracy tego przewodnika Szybki Start! Mamy nadzieję, że znasz już podstawowe zasady dotyczące platformy uniwersalnej systemu Windows i programu Visual Studio IDE. Aby dowiedzieć się więcej, kontynuuj samouczek następujące:
+Gratulujemy ukończenie tego przewodnika Szybki Start! Mamy nadzieję, że znasz już pewne podstawowe informacje dotyczące platformy uniwersalnej systemu Windows i środowiska IDE programu Visual Studio. Aby dowiedzieć się więcej, przejdź do następującego samouczka:
 
 > [!div class="nextstepaction"]
 > [Tworzenie interfejsu użytkownika](/windows/uwp/design/basics/xaml-basics-ui)

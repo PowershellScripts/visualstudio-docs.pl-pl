@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51ac98095f8b0dc6e303a0fc4135e022e9de5011
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ee38f210585124f8492f6aed9f062003602f287
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895323"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Porady: dołączanie i odłączanie narzędzi wydajności do uruchomionego procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ Program profilujący może służyć do dołączenia do lub odłączyć od uruch
   
  Procesy, które są dostępne dla profilu zależą od uprawnień dostępu użytkowników, które są ustawiane przez administratora komputera. Konto użytkownika może na przykład mają uprawnienie do żadnego z następujących czynności:  
   
--   Zaawansowane funkcje, profilowania, gdy administrator ustawił sterownik i uruchomienie usługi.  
+- Zaawansowane funkcje, profilowania, gdy administrator ustawił sterownik i uruchomienie usługi.  
   
--   Przykład profilowanie tylko (użytkowników domeny).  
+- Przykład profilowanie tylko (użytkowników domeny).  
   
--   Odmowa dostępu do profilowania, aby wszyscy.  
+- Odmowa dostępu do profilowania, aby wszyscy.  
   
- Aby uzyskać więcej informacji, zobacz [profilowania i Windows Vista zabezpieczeń](../profiling/profiling-and-windows-vista-security.md) i opcje administratora w [VSPerfCmd](../profiling/vsperfcmd.md).  
+  Aby uzyskać więcej informacji, zobacz [profilowania i Windows Vista zabezpieczeń](../profiling/profiling-and-windows-vista-security.md) i opcje administratora w [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-attach-to-a-running-process"></a>Aby dołączyć do uruchomionego procesu  
   

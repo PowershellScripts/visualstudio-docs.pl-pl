@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3b0e9bf702515a4c36d58eeb18eb869b96646f1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 326b29574d8ff2562196652cdcde9865aee24c0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638433"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896929"
 ---
 # <a name="how-to-register-editor-file-types"></a>Porady: rejestrowanie Edytor typów plików
 Najprostszym sposobem zarejestrowania Edytor typów plików jest za pomocą atrybutów rejestracji w ramach [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] zarządzanych klas framework (MPF) pakietu. W przypadku wdrażania pakietu w trybie macierzystym [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], można także napisać skrypt rejestru, który rejestruje edytora i rozszerzenia skojarzone.
@@ -26,44 +26,44 @@ Najprostszym sposobem zarejestrowania Edytor typów plików jest za pomocą atry
 
 ### <a name="to-register-editor-file-types-using-mpf-classes"></a>Aby zarejestrować Edytor typów plików, przy użyciu klas MPF
 
-1.  Podaj <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> klasy za pomocą odpowiednich parametrów dla Twojego edytora w klasie usługi pakietu VSPackage.
+1. Podaj <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> klasy za pomocą odpowiednich parametrów dla Twojego edytora w klasie usługi pakietu VSPackage.
 
-    ```
-    [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
-         ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
-         TemplateDir = "..\\..\\Templates",
-         NameResourceID = 106)]
-    ```
+   ```
+   [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
+        ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
+        TemplateDir = "..\\..\\Templates",
+        NameResourceID = 106)]
+   ```
 
-     Gdzie *. Przykładowe* to rozszerzenie, które jest zarejestrowany dla tego edytora, a "32" jest jej priorytet.
+    Gdzie *. Przykładowe* to rozszerzenie, które jest zarejestrowany dla tego edytora, a "32" jest jej priorytet.
 
-     `projectGuid` To identyfikator GUID pliku różne typy, zdefiniowane w <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>. Typ pliku inny zostanie podany, dzięki czemu wynikowy plik nie będzie to część procesu kompilacji.
+    `projectGuid` To identyfikator GUID pliku różne typy, zdefiniowane w <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>. Typ pliku inny zostanie podany, dzięki czemu wynikowy plik nie będzie to część procesu kompilacji.
 
-     *TemplateDir* reprezentuje folder, który zawiera pliki szablonów, które są dołączone do przykładu zarządzanych Edytor języka basic.
+    *TemplateDir* reprezentuje folder, który zawiera pliki szablonów, które są dołączone do przykładu zarządzanych Edytor języka basic.
 
-     `NameResourceID` jest zdefiniowany w *Resources.h* pliku projektu BasicEditorUI i identyfikuje edytora edytorem"Moje".
+    `NameResourceID` jest zdefiniowany w *Resources.h* pliku projektu BasicEditorUI i identyfikuje edytora edytorem"Moje".
 
-2.  Zastąp <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.
+2. Zastąp <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody.
 
-     W danej implementacji <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody, wywołanie <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> metody i przekazać wystąpienia fabryki edytora, jak pokazano poniżej.
+    W danej implementacji <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> metody, wywołanie <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> metody i przekazać wystąpienia fabryki edytora, jak pokazano poniżej.
 
-    ```csharp
-    protected override void Initialize()
-    {
-        Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
-        "Entering Initialize() of: {0}", this.ToString()));
-        base.Initialize();
-           //Create Editor Factory
-        editorFactory = new EditorFactory(this);
-        base.RegisterEditorFactory(editorFactory);
-    }
-    ```
+   ```csharp
+   protected override void Initialize()
+   {
+       Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
+       "Entering Initialize() of: {0}", this.ToString()));
+       base.Initialize();
+          //Create Editor Factory
+       editorFactory = new EditorFactory(this);
+       base.RegisterEditorFactory(editorFactory);
+   }
+   ```
 
-     W tym kroku rejestruje fabryki edytora i rozszerzenia plików edytora.
+    W tym kroku rejestruje fabryki edytora i rozszerzenia plików edytora.
 
-3.  Wyrejestruj fabryki edytora.
+3. Wyrejestruj fabryki edytora.
 
-     Po usunięciu pakietu VSPackage, fabryki edytora są automatycznie wyrejestrowana. Jeśli obiekt fabryki edytora implementuje <xref:System.IDisposable> interfejsu, jego `Dispose` metoda jest wywoływana po fabryka ma został wyrejestrowany z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+    Po usunięciu pakietu VSPackage, fabryki edytora są automatycznie wyrejestrowana. Jeśli obiekt fabryki edytora implementuje <xref:System.IDisposable> interfejsu, jego `Dispose` metoda jest wywoływana po fabryka ma został wyrejestrowany z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="registration-using-a-registry-script"></a>Rejestracja za pomocą skryptów rejestru
  Zarejestrowanie fabryki edytora i typów plików w macierzystym [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] odbywa się przy użyciu skryptu rejestru do zapisu do rejestru systemu windows, zgodnie z przedstawionymi poniżej.

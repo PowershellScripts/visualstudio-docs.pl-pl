@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03ffd0a1d7150d03a801fdc839f48b072f278130
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857682"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Wielowersyjność kodu Visual Studio ― Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,29 +37,29 @@ W tej wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], można okre�
 ## <a name="framework-targeting-features"></a>Funkcji określania wartości docelowej Framework  
  Adresowanie obejmuje następujące funkcje:  
   
--   Po otwarciu projektu, który jest przeznaczony dla starszej wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] może automatycznie go uaktualnić lub pozostawić obiekt docelowy jest.  
+- Po otwarciu projektu, który jest przeznaczony dla starszej wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] może automatycznie go uaktualnić lub pozostawić obiekt docelowy jest.  
   
--   Podczas tworzenia projektu można określić wersję [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , ma pod kątem.  
+- Podczas tworzenia projektu można określić wersję [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , ma pod kątem.  
   
--   Można zmienić wersję [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] element docelowy, istniejącego projektu.  
+- Można zmienić wersję [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] element docelowy, istniejącego projektu.  
   
--   Można odwoływać się do różnych wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] w każdym z kilku projektów w tym samym rozwiązaniu.  
+- Można odwoływać się do różnych wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] w każdym z kilku projektów w tym samym rozwiązaniu.  
   
--   Po zmianie wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , projekt jest ukierunkowany [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wprowadza wszelkie wymagane zmiany dotyczące odwołań i plików konfiguracji.  
+- Po zmianie wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] , projekt jest ukierunkowany [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] wprowadza wszelkie wymagane zmiany dotyczące odwołań i plików konfiguracji.  
   
- Podczas pracy nad projektem, który jest przeznaczony dla starszej wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], Visual Studio dynamicznie zmienia środowisko programistyczne, w następujący sposób:  
+  Podczas pracy nad projektem, który jest przeznaczony dla starszej wersji [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], Visual Studio dynamicznie zmienia środowisko programistyczne, w następujący sposób:  
   
--   Filtruje elementy w **nowy projekt** okno dialogowe **Dodaj nowy element** okno dialogowe **Dodaj nowe odwołanie** okno dialogowe i **Dodaj odwołanie do usługi** okno dialogowe, aby pominąć wybory, które nie są dostępne w wersji docelowej.  
+- Filtruje elementy w **nowy projekt** okno dialogowe **Dodaj nowy element** okno dialogowe **Dodaj nowe odwołanie** okno dialogowe i **Dodaj odwołanie do usługi** okno dialogowe, aby pominąć wybory, które nie są dostępne w wersji docelowej.  
   
--   Filtruje niestandardowe formanty w **przybornika** Aby usunąć te, które nie są dostępne w wersji docelowej i pokazać tylko najbardziej aktualne formanty, gdy będzie dostępnych jest kilka formantów.  
+- Filtruje niestandardowe formanty w **przybornika** Aby usunąć te, które nie są dostępne w wersji docelowej i pokazać tylko najbardziej aktualne formanty, gdy będzie dostępnych jest kilka formantów.  
   
--   Filtruje IntelliSense, aby pominąć funkcje językowe, które nie są dostępne w wersji docelowej.  
+- Filtruje IntelliSense, aby pominąć funkcje językowe, które nie są dostępne w wersji docelowej.  
   
--   Filtruje właściwości w **właściwości** okna, aby pominąć te, które nie są dostępne w wersji docelowej.  
+- Filtruje właściwości w **właściwości** okna, aby pominąć te, które nie są dostępne w wersji docelowej.  
   
--   Filtruje opcje menu, aby pominąć opcje, które nie są dostępne w wersji docelowej.  
+- Filtruje opcje menu, aby pominąć opcje, które nie są dostępne w wersji docelowej.  
   
--   W przypadku kompilacji wykorzystuje wersję kompilatora i opcje kompilatora, które są odpowiednie dla wersji docelowej.  
+- W przypadku kompilacji wykorzystuje wersję kompilatora i opcje kompilatora, które są odpowiednie dla wersji docelowej.  
   
 > [!NOTE]
 >  Adresowanie nie gwarantuje, że Twoja aplikacja będzie działać poprawnie. Należy przetestować aplikację w taki sposób, aby upewnić się, że jest uruchamiana w wersji docelowej. Nie można wskazywać wersji struktury, które są starsze niż .NET Framework 2.0.  

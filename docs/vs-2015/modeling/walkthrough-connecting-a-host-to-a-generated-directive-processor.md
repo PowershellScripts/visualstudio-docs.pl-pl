@@ -15,12 +15,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817876"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Wskazówki: łączenie hosta z generowanym procesorem dyrektywy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,34 +56,34 @@ Możesz napisać własnego hosta, który przetwarza szablonów tekstowych. Podst
   
 #### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>Aby użyć narzędzia języka specyficznego dla domeny w celu wygenerowania procesor dyrektywy, która jest oparta na modelu domeny  
   
-1.  Tworzenie rozwiązania języka dotyczącego określonej domeny, które ma następujące cechy:  
+1. Tworzenie rozwiązania języka dotyczącego określonej domeny, które ma następujące cechy:  
   
-    -   Nazwa: DSLMinimalTest  
+   - Nazwa: DSLMinimalTest  
   
-    -   Szablon rozwiązania: minimalne języka  
+   - Szablon rozwiązania: minimalne języka  
   
-    -   Rozszerzenie pliku: min  
+   - Rozszerzenie pliku: min  
   
-    -   Nazwa firmy: Fabrikam  
+   - Nazwa firmy: Fabrikam  
   
      Aby uzyskać więcej informacji na temat tworzenia rozwiązania języka dotyczącego określonej domeny, zobacz [porady: tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
-2.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
+2. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
   
-    > [!IMPORTANT]
-    >  W tym kroku generuje procesora dyrektywy i dodaje klucz dla niego w rejestrze.  
+   > [!IMPORTANT]
+   >  W tym kroku generuje procesora dyrektywy i dodaje klucz dla niego w rejestrze.  
   
-3.  Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.  
+3. Na **debugowania** menu, kliknij przycisk **Rozpocznij debugowanie**.  
   
-     Drugie wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zostanie otwarty.  
+    Drugie wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zostanie otwarty.  
   
-4.  W eksperymentalnym kompilacji w **Eksploratora rozwiązań**, kliknij dwukrotnie plik **sample.min**.  
+4. W eksperymentalnym kompilacji w **Eksploratora rozwiązań**, kliknij dwukrotnie plik **sample.min**.  
   
-     Plik zostanie otwarty w projektancie. Należy zauważyć, że model ma dwa elementy, ExampleElement1 i ExampleElement2 oraz połączenia między nimi.  
+    Plik zostanie otwarty w projektancie. Należy zauważyć, że model ma dwa elementy, ExampleElement1 i ExampleElement2 oraz połączenia między nimi.  
   
-5.  Zamknij drugie wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+5. Zamknij drugie wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-6.  Zapisywanie rozwiązania, a następnie zamknij projektanta języka specyficznego dla domeny.  
+6. Zapisywanie rozwiązania, a następnie zamknij projektanta języka specyficznego dla domeny.  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Łączenie niestandardowego hosta szablonu tekstu z procesorem dyrektywy  
  Po wygenerowaniu procesor dyrektywy łączenia procesora dyrektywy i hosta szablonu tekstu niestandardowego, który został utworzony w [wskazówki: Tworzenie niestandardowego hosta szablonu tekstowego](../modeling/walkthrough-creating-a-custom-text-template-host.md).  

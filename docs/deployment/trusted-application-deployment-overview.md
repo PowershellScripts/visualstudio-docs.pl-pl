@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f99bd0188c89110796f4d082e803f35ce10da867
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c1be49bb015334ed37326fbe301ac2035a6f3269
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848790"
 ---
 # <a name="trusted-application-deployment-overview"></a>Zaufane wdrożenie aplikacji — omówienie
 Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, które mają podwyższony poziom uprawnień przy użyciu technologii zaufanego wdrożenia aplikacji.  
@@ -51,21 +51,21 @@ Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../deploy
   
  W większych organizacji wydawcy i wdrażania są często dwa osobne jednostki:  
   
--   Wydawca jest grupa, która tworzy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
+- Wydawca jest grupa, która tworzy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
   
--   Wdrażania jest to grupa, zazwyczaj dział technologii informatycznych (IT) informacji, która będzie dystrybuować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji na komputerach stacjonarnych korporacyjnym.  
+- Wdrażania jest to grupa, zazwyczaj dział technologii informatycznych (IT) informacji, która będzie dystrybuować [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji na komputerach stacjonarnych korporacyjnym.  
   
 Należy wykonać następujące kroki, aby móc korzystać z zaufanego wdrożenia aplikacji:  
   
-1.  Uzyskaj certyfikat dla wydawcy.  
+1. Uzyskaj certyfikat dla wydawcy.  
   
-2.  Dodaj wydawcy do magazynu zaufanych wydawców na wszystkich klientach.  
+2. Dodaj wydawcy do magazynu zaufanych wydawców na wszystkich klientach.  
   
-3.  Utwórz swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
+3. Utwórz swoje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
   
-4.  Podpisać manifest wdrożenia przy użyciu certyfikatu wydawcy.  
+4. Podpisać manifest wdrożenia przy użyciu certyfikatu wydawcy.  
   
-5.  Publikowanie wdrażania aplikacji na komputerach klienckich.  
+5. Publikowanie wdrażania aplikacji na komputerach klienckich.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Uzyskaj certyfikat dla wydawcy  
  Certyfikaty cyfrowe są podstawowym składnikiem systemu zabezpieczeń i uwierzytelniania Microsoft Authenticode. Jest standardowa częścią systemu operacyjnego Windows. Wszystkie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje muszą być podpisane za pomocą certyfikatu cyfrowego, niezależnie od tego, czy uczestniczą w zaufanego wdrożenia aplikacji. Aby uzyskać pełne wyjaśnienie sposobu działania kodu Authenticode z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], zobacz [ClickOnce i podpis Authenticode](../deployment/clickonce-and-authenticode.md).  

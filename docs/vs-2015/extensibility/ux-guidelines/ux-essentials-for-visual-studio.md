@@ -13,12 +13,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bda4e23fc98210ddf35bd81efee6ca41c2d945b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70950e616a4ce0cc2e355205b65b5da7ec7ce88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848660"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Podstawy interfejsu użytkownika dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -168,15 +168,15 @@ ms.locfileid: "49303325"
 ### <a name="hyperlink-anti-patterns"></a>Niezalecane wzorce dotyczące hiperłącza  
  Poniższy przykład zawiera dwa niezalecane wzorce.  
   
-1.  Pierwszego planu, włączając czerwony po najechaniu wskaźnikiem oznacza, że nie jest używany prawidłowy kolor udostępnionych usługi czcionki.  
+1. Pierwszego planu, włączając czerwony po najechaniu wskaźnikiem oznacza, że nie jest używany prawidłowy kolor udostępnionych usługi czcionki.  
   
-2.  "Dowiedz się więcej" nie jest odpowiedni tekst łącza do tematu pojęciowego. Celem użytkownika jest nie Aby dowiedzieć się więcej, aby zrozumieć zagadnienia wybranych przez nich.  
+2. "Dowiedz się więcej" nie jest odpowiedni tekst łącza do tematu pojęciowego. Celem użytkownika jest nie Aby dowiedzieć się więcej, aby zrozumieć zagadnienia wybranych przez nich.  
   
- ![Hiperłącze ochrony przed złośliwym&#45;wzorców](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")  
+   ![Hiperłącze ochrony przed złośliwym&#45;wzorców](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")  
   
- **Ignorowanie usługi kolorów i za pomocą "Dowiedz się więcej" dla hiperlinków są niezalecane wzorce dotyczące programu Visual Studio.**  
+   **Ignorowanie usługi kolorów i za pomocą "Dowiedz się więcej" dla hiperlinków są niezalecane wzorce dotyczące programu Visual Studio.**  
   
- **Lepsze rozwiązania:** pytanie użytkownika, będzie zapytaniem, klikając link.  
+   **Lepsze rozwiązania:** pytanie użytkownika, będzie zapytaniem, klikając link.  
   
 -   Jak działają usługi Windows Azure?  
   

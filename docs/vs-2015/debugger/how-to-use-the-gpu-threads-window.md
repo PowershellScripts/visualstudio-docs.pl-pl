@@ -24,12 +24,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3c58bed9dd25cc9d25ad122b4c4c42f72ddf60f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0bf63fb2eedc03b62af46f3ecdf746aaee6dde09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848673"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Porady: korzystanie z okna wątków GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,25 +38,25 @@ Okno wątków GPU można zbadać i Praca z wątkami, które są uruchomione w pr
   
  Okno wątków GPU zawiera tabelę, w którym każdy wiersz reprezentuje zestaw wątków GPU, które mają takie same wartości we wszystkich kolumnach. Można sortować, zmienić kolejność, Usuń i grupowania elementów, które w kolumnach. Możesz Flaga, Usuń flagę, blokowanie (zawieszenie) i Odblokuj wątki (Wznów) z okna wątków GPU. Następujące kolumny są wyświetlane w oknie wątków GPU:  
   
--   Kolumna flagi, w którym można oznaczyć wątek, który chcesz zwrócić szczególną uwagę.  
+- Kolumna flagi, w którym można oznaczyć wątek, który chcesz zwrócić szczególną uwagę.  
   
--   Kolumna aktywnego wątku, w której żółta strzałka wskazuje aktywny wątek. Strzałka wskazuje wątek, w którym wykonanie przerwało pracę debugera.  
+- Kolumna aktywnego wątku, w której żółta strzałka wskazuje aktywny wątek. Strzałka wskazuje wątek, w którym wykonanie przerwało pracę debugera.  
   
--   **Liczba wątków** kolumny, która wyświetla liczbę wątków w tej samej lokalizacji.  
+- **Liczba wątków** kolumny, która wyświetla liczbę wątków w tej samej lokalizacji.  
   
--   **Wiersza** kolumny, która wyświetla wiersz kodu, w którym znajduje się każda grupa wątków.  
+- **Wiersza** kolumny, która wyświetla wiersz kodu, w którym znajduje się każda grupa wątków.  
   
--   **Adres** kolumny, która wyświetla adres instrukcji, w którym znajduje się każda grupa wątków. Domyślnie ta kolumna jest ukryta.  
+- **Adres** kolumny, która wyświetla adres instrukcji, w którym znajduje się każda grupa wątków. Domyślnie ta kolumna jest ukryta.  
   
--   **Lokalizacji** kolumny, która jest lokalizacją w kodzie źródłowym.  
+- **Lokalizacji** kolumny, która jest lokalizacją w kodzie źródłowym.  
   
--   **Stan** kolumny, która wskazuje, czy wątek aktywnych, zablokowane, nie jest uruchomiona lub ukończone.  
+- **Stan** kolumny, która wskazuje, czy wątek aktywnych, zablokowane, nie jest uruchomiona lub ukończone.  
   
--   **Kafelek** kolumny, która zawiera indeks kafelka dla wątków w wierszu.  
+- **Kafelek** kolumny, która zawiera indeks kafelka dla wątków w wierszu.  
   
- Nagłówek tabeli pokazuje Kafelek i wątku są wyświetlane.  
+  Nagłówek tabeli pokazuje Kafelek i wątku są wyświetlane.  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-gpu-threads-window"></a>Aby wyświetlić okno wątków GPU  
   

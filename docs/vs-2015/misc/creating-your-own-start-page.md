@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: douge
-ms.openlocfilehash: dc3c19d7a2756e3716e76846ac468433d00cc1d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 005f9597abd1ce688724af9fcb167a626e4cd885
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232079"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815042"
 ---
 # <a name="creating-your-own-start-page"></a>Tworzenie własną stronę początkową
 Za pomocą szablonu projektu strony Start lub tworząc pustą stronę początkową, można utworzyć niestandardowej strony początkowej.  
@@ -57,52 +57,52 @@ Za pomocą szablonu projektu strony Start lub tworząc pustą stronę początkow
   
 #### <a name="to-create-a-blank-start-page-by-using-the-start-page-project-template"></a>Aby utworzyć pustą stronę początkową za pomocą szablonu projektu strona startowa  
   
-1.  Utwórz projekt strony początkowej za pomocą szablonu projektu strony początkowej, zgodnie z opisem w poprzedniej procedurze.  
+1. Utwórz projekt strony początkowej za pomocą szablonu projektu strony początkowej, zgodnie z opisem w poprzedniej procedurze.  
   
-2.  Otwórz StartPage.xaml.  
+2. Otwórz StartPage.xaml.  
   
-3.  Usuń całą zawartość strony, pozostawiając pouze prvky xml zewnętrznego i zawierający siatki <xref:System.Windows.Controls.Grid> elementu, tak, aby plik .xaml przypomina poniższy przykład.  
+3. Usuń całą zawartość strony, pozostawiając pouze prvky xml zewnętrznego i zawierający siatki <xref:System.Windows.Controls.Grid> elementu, tak, aby plik .xaml przypomina poniższy przykład.  
   
-    ```xaml
-       <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-                 xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
-                 xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
-                 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
-             mc:Ignorable="d" 
-                 d:DesignHeight="600" d:DesignWidth="800">
-        <Grid>
-            <!--Add content here.-->
-        </Grid>
-    </Grid>
-    ```
+   ```xaml
+      <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
+                xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
+                xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
+            mc:Ignorable="d" 
+                d:DesignHeight="600" d:DesignWidth="800">
+       <Grid>
+           <!--Add content here.-->
+       </Grid>
+   </Grid>
+   ```
       
-4.  Usuń wszelkie pliki pomocnicze, które będą używane.  
+4. Usuń wszelkie pliki pomocnicze, które będą używane.  
   
-     Należy zachować plików .vsix i .pkgdef do celów wdrożenia.  
+    Należy zachować plików .vsix i .pkgdef do celów wdrożenia.  
   
- Alternatywnie można utworzyć pustą stronę początkową przez utworzenie pliku XAML, ze strukturą poprawny tag, aby zostały rozpoznane przez program Visual Studio. Następnie można dodać znaczniki i kodem, aby uzyskać żądany wygląd i działanie. Aby uzyskać więcej informacji, zobacz [tworzenie niestandardowe strony początkowej](../extensibility/creating-a-custom-start-page.md).  
+   Alternatywnie można utworzyć pustą stronę początkową przez utworzenie pliku XAML, ze strukturą poprawny tag, aby zostały rozpoznane przez program Visual Studio. Następnie można dodać znaczniki i kodem, aby uzyskać żądany wygląd i działanie. Aby uzyskać więcej informacji, zobacz [tworzenie niestandardowe strony początkowej](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>Testowanie i stosowanie niestandardowy strona początkowa  
  Nie należy ustawiać podstawowe wystąpienie, aby uruchomić niestandardowej strony początkowej do momentu upewnieniu się, że nie powoduje awarii. Po przetestowaniu niestandardowej strony początkowej, można go zastosować do systemu, powtarzając ostatnie trzy kroki tej procedury w podstawowego wystąpienia programu Visual Studio.  
   
 #### <a name="to-test-a-custom-start-page"></a>Aby przetestować niestandardowej strony początkowej  
   
-1.  Naciśnij F5.  
+1. Naciśnij F5.  
   
-     Nowa strona startowa zainstalowany, ale nie wybrano doświadczalnym wystąpieniu programu Visual Studio zostanie otwarty.  
+    Nowa strona startowa zainstalowany, ale nie wybrano doświadczalnym wystąpieniu programu Visual Studio zostanie otwarty.  
   
-2.  W doświadczalnym wystąpieniu programu Visual Studio na **narzędzia** menu, kliknij przycisk **opcje**.  
+2. W doświadczalnym wystąpieniu programu Visual Studio na **narzędzia** menu, kliknij przycisk **opcje**.  
   
-3.  W **opcje** dialogowego **środowiska**, wybierz opcję **uruchamiania**. Następnie na **Dostosuj stronę początkową** listy, wybierz swój plik .xaml, a następnie kliknij przycisk **OK**.  
+3. W **opcje** dialogowego **środowiska**, wybierz opcję **uruchamiania**. Następnie na **Dostosuj stronę początkową** listy, wybierz swój plik .xaml, a następnie kliknij przycisk **OK**.  
   
-4.  Na **widoku** menu, kliknij przycisk **strona startowa**.  
+4. Na **widoku** menu, kliknij przycisk **strona startowa**.  
   
-     Praca, wyświetlania strony początkowej. Należy Zamknij wystąpienie doświadczalne, ponownego skopiowania zmienionych plików, a następnie ponownie otwórz wystąpienie doświadczalne, aby zobaczyć nowe zmiany.  
+    Praca, wyświetlania strony początkowej. Należy Zamknij wystąpienie doświadczalne, ponownego skopiowania zmienionych plików, a następnie ponownie otwórz wystąpienie doświadczalne, aby zobaczyć nowe zmiany.  
   
- Możesz udostępnić niestandardowej strony początkowej, przekazując plik .vsix z katalogu bin\debug [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witrynę sieci Web lub do innej witryny sieci Web lub intranet udostępniania. Aby uzyskać więcej informacji, zobacz [wdrażanie niestandardowych stron Start](../extensibility/deploying-custom-start-pages.md).  
+   Możesz udostępnić niestandardowej strony początkowej, przekazując plik .vsix z katalogu bin\debug [galerii Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) witrynę sieci Web lub do innej witryny sieci Web lub intranet udostępniania. Aby uzyskać więcej informacji, zobacz [wdrażanie niestandardowych stron Start](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostosowanie strony początkowej](../ide/customizing-the-start-page-for-visual-studio.md)   

@@ -12,58 +12,58 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0230201677fd2422817ca1fbeab6679a424e5c05
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31145974"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865833"
 ---
 # <a name="workspaces"></a>Obszary robocze
 
-Obszar roboczy jest jak Visual Studio reprezentuje dowolnej kolekcji plików z [Otwórz Folder](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), i jest reprezentowana przez <xref:Microsoft.VisualStudio.Workspace.IWorkspace> typu. Samodzielnie obszar roboczy nie rozpoznaje zawartości lub funkcje związane z plików w folderze. Zamiast zapewnia ogólne zestaw interfejsów API funkcji i rozszerzeń do tworzenia i wykorzystywania danych, które inne osoby mogą oni oddziaływać. Producenci składają się za pośrednictwem [Managed Extensibility Framework](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (MEF) przy użyciu różnych wyeksportować atrybutów.
+Obszar roboczy to, jak Visual Studio reprezentuje żadnych kolekcji plików z [Otwórz Folder](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), i jest reprezentowana przez <xref:Microsoft.VisualStudio.Workspace.IWorkspace> typu. Przez siebie obszar roboczy nie rozpoznaje zawartości lub funkcji związanych z plikami w folderze. Przeciwnie zapewnia ogólne zestaw interfejsów API dla funkcji i rozszerzeń do tworzenia i wykorzystywania danych, które inne osoby mogą działać na. Producenci są złożone za pośrednictwem [Managed Extensibility Framework](https://github.com/Microsoft/vs-mef/blob/master/doc/index.md) (MEF) przy użyciu różnych wyeksportować atrybutów.
 
 ## <a name="workspace-providers-and-services"></a>Obszar roboczy dostawców i usługi
 
-Obszar roboczy dostawców i usługi Podaj dane i funkcje, aby zareagować na zawartość obszaru roboczego. Mogą być zapewniają informacji kontekstowych plików symboli w plikach źródłowych lub tworzenie funkcji.
+Obszar roboczy dostawców umożliwiają danych i funkcji, aby zareagować na zawartość obszaru roboczego. Mogą być zawierają informacje kontekstowe pliku, symboli w plikach źródłowych lub tworzyć funkcje.
 
-Użyj obu pojęcia [wzorzec fabryki](https://en.wikipedia.org/wiki/Factory_method_pattern) i są importowane przez MEF w obszarze roboczym. Implementuje wszystkie atrybuty eksportu `IProviderMetadataBase` lub `IWorkspaceServiceFactoryMetadata`, ale ma konkretnych typów, które rozszerzenia mają zostać użyte dla typów wyeksportowanych.
+Użyj obu pojęcia [wzorzec fabryki](https://en.wikipedia.org/wiki/Factory_method_pattern) i są importowane za pomocą MEF przez obszar roboczy. Wszystkie atrybuty eksportu zaimplementować `IProviderMetadataBase` lub `IWorkspaceServiceFactoryMetadata`, ale konkretnych typów, które rozszerzenia należy używać typów eksportowanych.
 
-Jeden odstęp między dostawców usług jest ich relacji do obszaru roboczego. Obszar roboczy może mieć wielu dostawców określonego typu, ale tylko jedna usługa określonego typu jest tworzony na obszar roboczy. Na przykład obszaru roboczego ma wielu dostawców skanera pliku, ale obszar roboczy ma tylko jedną usługę indeksowania według obszaru roboczego.
+Jedną różnicą między dostawcami i usług jest ich relacji z obszarem roboczym. Obszar roboczy może mieć wielu dostawców określonego typu, ale tylko jedna usługa określonego typu jest tworzony na obszar roboczy. Na przykład obszar roboczy zawiera wielu dostawców skanera pliku, ale obszar roboczy ma tylko jedną usługę indeksowania danego obszaru roboczego.
 
-Inny Najważniejsza różnica polega na użycie danych od dostawców i usług. Obszar roboczy jest punkt wejścia do pobrania danych z dostawców kilka przyczyn. Po pierwsze dostawców ma zwykle niektórych wąskie zestaw danych, które tworzą. Dane może symboli dla pliku źródłowego C# lub tworzenia pliku kontekstów dla _CMakeLists.txt_ pliku. Obszar roboczy będzie pasował do konsumenta żądanie z dostawcami metadanych, których były wyrównane z żądania. Po drugie, niektóre scenariusze Zezwalaj dla wielu dostawców przyczynić się do żądania, podczas gdy inne scenariusze korzystają z dostawcy o najwyższym priorytecie.
+Inną główną różnicą jest użycie danych od dostawców i usługi. Obszar roboczy jest punktem wejściowym umożliwiającym pobieranie danych od dostawców kilka przyczyn. Po pierwsze dostawcy zazwyczaj mają pewne wąskie zestawu danych, utworzonego przez siebie. Dane mogą być symbole dla C# pliku źródłowego lub przy tworzeniu pliku konteksty dla _CMakeLists.txt_ pliku. Obszar roboczy będzie pasuje do żądania klientów dostawców, w których metadanych wyrównać z żądaniem. Po drugie, Zezwalaj na niektórych scenariuszy dla wielu dostawców na Współtworzenie na żądanie, podczas gdy inne scenariusze użycia dostawcy o najwyższym priorytecie.
 
-Z kolei rozszerzeń można uzyskać wystąpień i bezpośrednią interakcję z obszaru roboczego usługi. Metody rozszerzenia na `IWorkspace` są dostępne dla usług świadczonych przez program Visual Studio, takich jak <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetFileWatcherService%2A>. Rozszerzenie może oferować usługę obszaru roboczego składników w ramach rozszerzenia lub korzystać z innych rozszerzeń. Należy używać konsumentów <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetServiceAsync%2A> lub metody rozszerzenia w `IWorkspace` typu.
+Rozszerzenia mogą z kolei pobiera wystąpienia i bezpośrednią interakcję z obszaru roboczego usługi. Metody rozszerzenia na `IWorkspace` są dostępne dla usługi świadczone przez program Visual Studio, takie jak <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetFileWatcherService%2A>. Rozszerzenia mogą oferować usługi obszaru roboczego składników w ramach rozszerzenia lub używanie innych rozszerzeń. Należy używać konsumentów <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetServiceAsync%2A> lub metodę rozszerzenia, możesz udostępnić na `IWorkspace` typu.
 
 >[!WARNING]
-> Nie możesz tworzyć usług, które powodują konflikt z programem Visual Studio. Może to prowadzić do nieoczekiwanych problemów.
+> Nie możesz tworzyć usługi, które powodują konflikt z programem Visual Studio. Może to prowadzić do nieoczekiwanych problemów.
 
-## <a name="disposal-on-workspace-closure"></a>Usuwanie na zamknięcie obszaru roboczego
+## <a name="disposal-on-workspace-closure"></a>Sprzedaż na zamknięcia obszaru roboczego
 
-Podczas zamykania obszaru roboczego, Extender może być konieczne do usunięcia, ale wywołanie asynchroniczne kodu. <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> Interfejs jest dostępny pisania tego kodu.
+W przypadku zamknięcia obszaru roboczego, rozszerzeń może być konieczne usunięcia, ale wywołanie asynchroniczne kodu. <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> Interfejs jest dostępny umożliwiają pisanie kodu, to proste.
 
 ## <a name="related-types"></a>Powiązanych typów
 
-- <xref:Microsoft.VisualStudio.Workspace.IWorkspace> jest jednostką centralnej dla otwartego obszaru roboczego, takich jak otwartym folderze.
-- <xref:Microsoft.VisualStudio.Workspace.IWorkspaceProviderFactory`1> tworzy dostawcę na obszar roboczy wystąpienia.
-- <xref:Microsoft.VisualStudio.Workspace.IWorkspaceServiceFactory> Tworzy usługę na obszar roboczy wystąpienia.
-- <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> powinny zostać wdrożone na dostawców i usług, które muszą uruchamiać asynchroniczne kodu podczas usuwania.
-- <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper> udostępnia metody pomocnicze do uzyskiwania dostępu do usług dobrze znanego lub dowolnego usług.
+- <xref:Microsoft.VisualStudio.Workspace.IWorkspace> jest centralna jednostka dla otwarty obszar roboczy otwartym folderze.
+- <xref:Microsoft.VisualStudio.Workspace.IWorkspaceProviderFactory`1> tworzy dostawcę danego obszaru roboczego tworzone.
+- <xref:Microsoft.VisualStudio.Workspace.IWorkspaceServiceFactory> Tworzy usługę danego obszaru roboczego tworzone.
+- <xref:Microsoft.VisualStudio.Threading.IAsyncDisposable> powinny zostać wdrożone na dostawców i usługi, które wymagają do uruchomienia kodu asynchronicznego podczas usuwania.
+- <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper> udostępnia metody pomocnicze do uzyskiwania dostępu do dobrze znane usługi lub dowolnych usług.
 
 ## <a name="workspace-settings"></a>Ustawienia obszaru roboczego
 
-Obszary robocze mają <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> usługi simple, ale jednocześnie wydajną kontrolę nad obszarem roboczym. Aby uzyskać ogólne omówienie ustawień, zobacz [Dostosowywanie kompilacji i debugowanie zadań](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
+Obszary robocze mają <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> usługi prosty, lecz wydajny kontrolę nad obszarem roboczym. Aby uzyskać ogólne omówienie ustawienia, zobacz [Dostosowywanie kompilacji i debugowania zadań](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
 
-Ustawienia dla większości `SettingsType` typy są _JSON_ plików, takich jak _VSWorkspaceSettings.json_ i _tasks.vs.json_.
+Ustawienia dla większości `SettingsType` typy są _.json_ plików, takich jak _VSWorkspaceSettings.json_ i _tasks.vs.json_.
 
-Możliwości ustawienia obszaru roboczego koncentruje się wokół "zakresy", które są po prostu ścieżki w obszarze roboczym. Kiedy klient wywołuje <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A>, wszystkie zakresy obejmujące żądany ścieżce i typu ustawienia są agregowane. Priorytet agregacji zakres jest następujący:
+Możliwości ustawienia obszaru roboczego koncentruje się wokół "zakresów", które są po prostu ścieżki w obszarze roboczym. Gdy użytkownik wywołuje <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A>, wszystkie zakresy, które zawierają żądanej ścieżki i ustawienie typu są agregowane. Priorytet agregacji zakres jest następująca:
 
-1. "Ustawienia lokalnego", co jest zazwyczaj katalogu roboczego `.vs` katalogu.
-1. Żądana ścieżka samej siebie.
+1. "Ustawienia lokalnego", co jest typowe w katalogu głównym obszaru roboczego `.vs` katalogu.
+1. Żądana samej ścieżce.
 1. Katalog nadrzędny żądanej ścieżki.
-1. Nadrzędnego wszystkie dodatkowe katalogi, w tym katalogu roboczego.
-1. "Ustawienia globalne", które znajduje się w katalogu użytkownika.
+1. Wszystkie dalsze nadrzędnego katalogi, w tym katalogu głównym obszaru roboczego.
+1. "Globalne ustawienia", które znajduje się w katalogu użytkownika.
 
-Wynik jest wystąpieniem <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings>. Ten obiekt zawiera ustawienia dla określonego typu i może być badana Ustawianie nazw kluczy przechowywanych jako `string`. <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A> Metod i <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> metody rozszerzenia oczekują od wywołującego jest znany typ żądanej wartości ustawień. Ponieważ większość plików ustawienia są zachowywane jako _JSON_ plików, będzie używana w wielu wywołań `string`, `bool`, `int`i tablice tych typów. Typy obiektów są również obsługiwane. W takich przypadkach można użyć `IWorkspaceSettings` siebie jako argument typu. Na przykład:
+Wynik jest wystąpieniem <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings>. Ten obiekt zawiera ustawienia dla danego typu i mogą być wyszukiwane Ustawianie nazw kluczy przechowywanych jako `string`. <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings.GetProperty%2A> Metod i <xref:Microsoft.VisualStudio.Workspace.Settings.WorkspaceSettingsExtensions> metody rozszerzenia oczekują od wywołującego jest znany typ żądanej wartości ustawień. Ponieważ większość plików ustawień są utrwalane jako _.json_ plików, będzie używać wielu wywołań `string`, `bool`, `int`i tablice z tych typów. Wybierane są również obsługiwane. W takich przypadkach można użyć `IWorkspaceSettings` siebie jako argument typu. Na przykład:
 
 ```json
 {
@@ -80,7 +80,7 @@ Wynik jest wystąpieniem <xref:Microsoft.VisualStudio.Workspace.Settings.IWorksp
 }
 ```
 
-Zakładając, że te ustawienia były użytkownika _VSWorkspaceSettings.json_, dane są dostępne:
+Zakładając, że te ustawienia były użytkownika _VSWorkspaceSettings.json_, dane są dostępne jako:
 
 ```csharp
 using System.Collections.Generic;
@@ -115,13 +115,13 @@ private static void ReadSettings(IWorkspace workspace)
 ```
 
 >[!NOTE]
->Ustawienia te interfejsy API są związane z interfejsami API dostępnymi w `Microsoft.VisualStudio.Settings` przestrzeni nazw. Ustawienia obszaru roboczego są niezależny hosta i użyć plików ustawienia specyficzne dla obszaru roboczego lub dostawców ustawień dynamicznych.
+>Ustawienia te interfejsy API są powiązane z interfejsami API dostępnymi w `Microsoft.VisualStudio.Settings` przestrzeni nazw. Ustawienia obszaru roboczego są niezależne od hosta i użyj plików ustawień specyficznych dla obszaru roboczego lub dostawców ustawień dynamicznych.
 
-### <a name="providing-dynamic-settings"></a>Zapewnianie ustawień dynamicznych
+### <a name="providing-dynamic-settings"></a>Podanie ustawień dynamicznych
 
-Rozszerzenia może zapewnić <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsProvider>s. Tych dostawców w pamięci umożliwia dodawanie ustawień lub inne zastąpienie przez rozszerzenia.
+Rozszerzenia może zapewnić <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsProvider>s. Tych dostawców w pamięci umożliwia rozszerzenia Dodaj ustawienia lub zastąpienia innych użytkowników.
 
-Eksportowanie `IWorkspaceSettingsProvider` różni się od innych dostawców obszaru roboczego. Fabryka nie jest `IWorkspaceProviderFactory` i nie ma typu atrybutu specjalnych. Zamiast tego należy zaimplementować <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsProviderFactory> i użyj `[Export(typeof(IWorkspaceSettingsProviderFactory))]`.
+Eksportowanie `IWorkspaceSettingsProvider` różni się od innych dostawców rozwiązań w obszarze roboczym. Fabryka nie jest `IWorkspaceProviderFactory` i nie ma żadnego typu atrybutów specjalnych. Zamiast niego należy zaimplementować <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsProviderFactory> i użyj `[Export(typeof(IWorkspaceSettingsProviderFactory))]`.
 
 ```csharp
 // Common workspace provider factory pattern
@@ -143,19 +143,19 @@ internal class MySettingsProviderFactory : IWorkspaceSettingsProviderFactory
 ```
 
 >[!TIP]
->Podczas wykonywania metody, które zwracają `IWorkspaceSettingsSource` (takich jak `IWorkspaceSettingsProvider.GetSingleSettings`), zwrócić wystąpienia `IWorkspaceSettings` zamiast `IWorkspaceSettingsSource`. `IWorkspaceSettings` zawiera więcej informacji, które mogą być przydatne podczas agregacji niektórych ustawień.
+>Podczas implementowania metod, które zwracają `IWorkspaceSettingsSource` (takich jak `IWorkspaceSettingsProvider.GetSingleSettings`), zwraca wystąpienie `IWorkspaceSettings` zamiast `IWorkspaceSettingsSource`. `IWorkspaceSettings` zawiera więcej informacji, które mogą być przydatne podczas agregacji niektórych ustawień.
 
 ### <a name="settings-related-apis"></a>Ustawienia związane z interfejsów API
 
-- <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> odczytuje i agreguje ustawienia dla obszaru roboczego.
+- <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager> odczytuje i agreguje ustawień dla obszaru roboczego.
 - <xref:Microsoft.VisualStudio.Workspace.WorkspaceServiceHelper.GetSettingsManager%2A> pobiera `IWorkspaceSettingsManager` dla obszaru roboczego.
-- <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A> pobiera ustawienia dla danego zakresu zagregowane we wszystkich nakładających się zakresów.
+- <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettingsManager.GetAggregatedSettings%2A> pobiera ustawienia dla danego zakresu agregowane w obrębie wszystkich nakładających się zakresów.
 - <xref:Microsoft.VisualStudio.Workspace.Settings.IWorkspaceSettings> zawiera ustawienia dla określonego zakresu.
 
-## <a name="workspace-suggested-practices"></a>Obszar roboczy sugerowane rozwiązania
+## <a name="workspace-suggested-practices"></a>Obszar roboczy zalecane praktyki
 
-- Zwraca obiekty z `IWorkspaceProviderFactory.CreateProvider` lub podobne interfejsów API, które należy pamiętać, ich `Workspace` kontekście podczas tworzenia. Interfejsy dostawców są zapisywane oczekuje się, że ten obiekt jest przechowywany na tworzenie.
-- Zapisz ustawienia w ścieżce "Ustawienia lokalnego" tego obszaru roboczego lub pamięci podręcznych specyficzne dla obszaru roboczego. Tworzenie ścieżki do pliku przy użyciu `Microsoft.VisualStudio.Workspace.WorkspaceHelper.MakeRootedUnderWorkingFolder` w programie Visual Studio 2017 wersji 15.6 lub nowszej. Wersje poprzedzające wersję 15,6 użyj następującego fragmentu kodu:
+- Zwraca obiekty z `IWorkspaceProviderFactory.CreateProvider` lub podobne interfejsy API, które należy pamiętać, ich `Workspace` kontekstu po utworzeniu. Interfejsy dostawcy są zapisywane, oczekiwano, że ten obiekt jest przechowywany przy tworzeniu.
+- Zapisz pamięci podręcznych specyficznych dla obszaru roboczego lub ustawienia w ścieżce "Ustawienia lokalnego" obszaru roboczego. Utwórz ścieżkę dla pliku przy użyciu `Microsoft.VisualStudio.Workspace.WorkspaceHelper.MakeRootedUnderWorkingFolder` w programie Visual Studio 2017 w wersji 15.6 lub nowszej. W wersjach wcześniejszych niż w wersji 15.6 użyj następującego fragmentu kodu:
 
 ```csharp
 using System.IO;
@@ -169,19 +169,19 @@ private static string MakeRootedUnderWorkingFolder(IWorkspace workspace, string 
 }
 ```
 
-## <a name="solution-events-and-package-auto-load"></a>Rozwiązanie zdarzenia i automatyczne ładowanie pakietu
+## <a name="solution-events-and-package-auto-load"></a>Rozwiązanie zdarzenia i automatyczne ładowanie pakiet
 
-Można wdrożyć pakietów załadować `IVsSolutionEvents7` i wywoływać `IVsSolution.AdviseSolutionEvents`. Obejmuje on zdarzeń na otwieranie i zamykanie folderu w programie Visual Studio.
+Załadowano pakietów można zaimplementować `IVsSolutionEvents7` i wywoływać `IVsSolution.AdviseSolutionEvents`. Obejmuje ona obsługi zdarzeń na otwierające i zamykające folderu w programie Visual Studio.
 
-Kontekst interfejsu użytkownika można automatycznie załadować pakietu. Wartość jest `4646B819-1AE0-4E79-97F4-8A8176FDD664`.
+Kontekstu interfejsu użytkownika można automatycznie załadować pakietu. Wartość jest `4646B819-1AE0-4E79-97F4-8A8176FDD664`.
 
 ## <a name="troubleshooting"></a>Rozwiązywanie problemów
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>Pakiet SourceExplorerPackage nie został poprawnie załadowany.
 
-Rozszerzalność obszaru roboczego jest silnie MEF oparty na i błędów kompozycji spowoduje, że hosting Otwórz Folder, aby nie można załadować pakietu. Na przykład, jeśli rozszerzenie eksportuje typ z `ExportFileContextProviderAttribute`, ale tylko implementuje typ `IWorkspaceProviderFactory<IFileContextActionProvider>`, wystąpi błąd podczas próby otwarcia folderu w programie Visual Studio. Szczegóły błędu można znaleźć w _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Usuń wszelkie błędy dla typów implementowane przez rozszerzenie.
+Rozszerzalność obszar roboczy jest silnie MEF oparty na i kompozycji błędy spowoduje, że pakiet, otwórz Folder, aby nie można załadować hostingu. Na przykład, jeśli rozszerzenie eksportuje typ z `ExportFileContextProviderAttribute`, ale tylko implementuje `IWorkspaceProviderFactory<IFileContextActionProvider>`, wystąpi błąd podczas próby otwarcia folderu w programie Visual Studio. Szczegóły błędu znajdują się w _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Usuń wszelkie błędy typów implementowany przez Twoje rozszerzenie.
 
 ## <a name="next-steps"></a>Następne kroki
 
-* [Plik kontekstów](workspace-file-contexts.md) -dostawców kontekstu pliku dostosowania analizy kodu dla obszarów roboczych Otwórz Folder. 
-* [Indeksowanie](workspace-indexing.md) -indeksowania obszaru roboczego zbiera i będzie nadal występował, informacje o obszarze roboczym.
+* [Konteksty plików](workspace-file-contexts.md) -dostawców kontekstu pliku dostosowania analizy kodu dla obszarów roboczych Otwórz Folder. 
+* [Indeksowanie](workspace-indexing.md) -Workspace indeksowania zbiera i będzie nadal występował, informacje o obszarze roboczym.

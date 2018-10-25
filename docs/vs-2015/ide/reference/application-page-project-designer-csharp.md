@@ -20,12 +20,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87cd108d3225b87b39121684217c93510f95f140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867237"
 ---
 # <a name="application-page-project-designer-c"></a>Strona aplikacji, Projektant projektu (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,16 +94,16 @@ Użyj **aplikacji** strony **projektanta projektu** do określania ustawień apl
  **Manifest**  
  Wybiera opcję generowania manifestu, gdy aplikacja zostanie uruchomiona w systemie Windows Vista w ramach kontroli konta użytkownika (UAC). Ta opcja może mieć następujące wartości:  
   
--   **Osadź manifest z ustawieniami domyślnymi**. Obsługuje typowy sposób, w którym działa program Visual Studio na Windows Vista, czyli do osadzenia informacji o zabezpieczeniach w pliku wykonywalnym aplikacji, określając, że `requestedExecutionLevel` można `AsInvoker`. Jest to opcja domyślna.  
+- **Osadź manifest z ustawieniami domyślnymi**. Obsługuje typowy sposób, w którym działa program Visual Studio na Windows Vista, czyli do osadzenia informacji o zabezpieczeniach w pliku wykonywalnym aplikacji, określając, że `requestedExecutionLevel` można `AsInvoker`. Jest to opcja domyślna.  
   
--   **Tworzenie aplikacji bez manifestu**. Ta metoda jest określana jako *wirtualizacji*. Użyj tej opcji w celu zachowania zgodności ze starszymi aplikacjami.  
+- **Tworzenie aplikacji bez manifestu**. Ta metoda jest określana jako *wirtualizacji*. Użyj tej opcji w celu zachowania zgodności ze starszymi aplikacjami.  
   
--   **Properties\app.manifest**. Ta opcja jest wymagana w przypadku aplikacji wdrożonych przez ClickOnce lub rejestracji wolnego modelu COM. W przypadku publikowania aplikacji za pomocą wdrażania ClickOnce **manifestu** jest automatycznie ustawiona na tę opcję.  
+- **Properties\app.manifest**. Ta opcja jest wymagana w przypadku aplikacji wdrożonych przez ClickOnce lub rejestracji wolnego modelu COM. W przypadku publikowania aplikacji za pomocą wdrażania ClickOnce **manifestu** jest automatycznie ustawiona na tę opcję.  
   
- **Plik zasobów**  
- Wybierz ten przycisk radiowy, udostępniając plik zasobów dla projektu. Wybranie tej opcji wyłącza **ikonę** i **manifestu** opcje.  
+  **Plik zasobów**  
+  Wybierz ten przycisk radiowy, udostępniając plik zasobów dla projektu. Wybranie tej opcji wyłącza **ikonę** i **manifestu** opcje.  
   
- Wprowadź nazwę ścieżki lub użyj przycisku Przeglądaj (**...** ) aby dodać plik zasobów Win32 do projektu.  
+  Wprowadź nazwę ścieżki lub użyj przycisku Przeglądaj (**...** ) aby dodać plik zasobów Win32 do projektu.  
   
 ## <a name="see-also"></a>Zobacz też  
 [Zarządzanie właściwościami aplikacji](../../ide/application-properties.md)  

@@ -11,74 +11,74 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8ca4046bdc6c6ee59dae223dd5f2dc5d354aab3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4ced1cb0fda46a77bb9303a8f69e9f413b2e4751
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954414"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898554"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Plik DslDefinition.dsl
 
-W tym temacie opisano strukturę pliku DslDefinition.dsl w projekcie Dsl [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązania, które definiuje *języka specyficznego dla domeny*. Plik DslDefinition.dsl opisano klasy i relacje języka specyficznego dla domeny, wraz z diagramu, kształtów, łączniki, format serializacji i **przybornika** języka specyficznego dla domeny i jego narzędzia do edycji. W rozwiązaniu języka specyficznego dla domeny kod, który definiuje te narzędzia jest generowany zgodnie z informacjami w pliku DslDefinition.dsl.
+W tym temacie opisano strukturę plik DslDefinition.dsl w projekcie języka Dsl [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] rozwiązania, które definiuje *języka specyficznego dla domeny*. Plik DslDefinition.dsl opis klas i relacji języka specyficznego dla domeny, wraz z diagramu, kształty, łączniki, format serializacji i **przybornika** języka specyficznego dla domeny i jego narzędzia do edycji. W rozwiązaniu języka dotyczącego określonej domeny jest generowany kod, który definiuje tych narzędzi, zgodnie z informacjami w plik DslDefinition.dsl.
 
-Ogólnie rzecz biorąc, użyj *projektanta języka specyficznego dla domeny* na edycję pliku DslDefinition.dsl. Jednak jego raw formularz jest XML i możesz otworzyć plik DslDefinition.dsl w edytorze XML. Może być przydatna zrozumienie, jakie informacje zawiera plik i sposób organizacji do celów debugowania i rozszerzenia.
+Ogólnie rzecz biorąc, możesz użyć *projektanta języka specyficznego dla domeny* do edycji plik DslDefinition.dsl. Jednak język XML jest w postaci pierwotnej i plik DslDefinition.dsl można otworzyć w edytorze XML. Może być przydatna zrozumieć, jakie informacje zawiera plik i sposób organizowania dla celów debugowania i rozszerzenia.
 
-Przykłady w tym temacie są pobierane z diagramu składników szablon rozwiązania. Aby zapoznać się przykładem, tworzenie rozwiązań języka specyficznego dla domeny, które jest oparty na szablonie rozwiązania modeli składnika. Po utworzeniu rozwiązania, plik DslDefinition.dsl zostanie wyświetlony w Projektancie języka specyficznego dla domeny. Zamknij plik, kliknij go prawym przyciskiem myszy **Eksploratora rozwiązań**, wskaż polecenie **Otwórz za pomocą**, kliknij przycisk **edytora XML**, a następnie kliknij przycisk **OK**.
+Przykłady w niniejszym temacie są pobierane z szablonu rozwiązania Diagram składników. Aby zobaczyć przykład, tworzenie rozwiązań języka dotyczącego określonej domeny, które jest oparty na szablonie rozwiązania modeli składnika. Po utworzeniu rozwiązania, plik DslDefinition.dsl pojawia się w projektanta języka specyficznego dla domeny. Zamknij plik, kliknij go prawym przyciskiem myszy **Eksploratora rozwiązań**, wskaż polecenie **Otwórz za pomocą**, kliknij przycisk **edytora XML**, a następnie kliknij przycisk **OK**.
 
-## <a name="sections-of-the-dsldefinitiondsl-file"></a>Sekcji w pliku DslDefinition.dsl
+## <a name="sections-of-the-dsldefinitiondsl-file"></a>Sekcje plik DslDefinition.dsl
 
-Element główny jest \<Dsl >, a jego atrybuty zidentyfikować nazwę języka specyficznego dla domeny, przestrzeń nazw, i numery wersji głównej i pomocniczej dla wersji. `DslDefinitionModel` Schemat definiuje zawartości i struktury prawidłowy plik DslDefinition.dsl.
+Element główny jest \<Dsl >, jego atrybuty Określ nazwę języka specyficznego dla domeny, obszaru nazw i wersji głównych i pomocniczych numerów wersji. `DslDefinitionModel` Schemat definiuje zawartości i struktury, aby uzyskać prawidłowy plik DslDefinition.dsl.
 
-Elementy podrzędne \<Dsl > elementu głównego są następujące:
+Elementy podrzędne \<Dsl > element główny są następujące:
 
 ### <a name="classes"></a>Klasy
 
-Ta sekcja definiuje każdej klasy domeny, który generuje klasę w wygenerowanym kodzie.
+Ta sekcja definiuje klasę każdej domeny, która generuje klasę w wygenerowanym kodzie.
 
 ### <a name="relationships"></a>Relacje
 
-Ta sekcja definiuje każdej relacji w modelu. Element źródłowy i docelowy reprezentować dwie strony relacji.
+Ta sekcja definiuje każdej relacji w modelu. Źródłowy i docelowy reprezentować dwie strony relacji.
 
 ### <a name="types"></a>Types
 
-Ta sekcja definiuje każdego typu i jego przestrzeni nazw. Właściwości domeny ma dwa typy. `DomainEnumerations` zdefiniowanych w modelu oraz generowanie typów do DomainModel.cs. `ExternalTypes` odwołuje się do typów, które są zdefiniowane w innym miejscu (takich jak `String` lub `Int32`) i nie generują żadnych czynności.
+Ta sekcja definiuje każdego typu i jego przestrzeń nazw. Właściwości domeny ma dwa typy. `DomainEnumerations` są zdefiniowane w modelu i wygenerować typy do DomainModel.cs. `ExternalTypes` odnoszą się do typów, które są zdefiniowane w innym miejscu (takie jak `String` lub `Int32`) i nie generują żadnych.
 
 ### <a name="shapes"></a>Kształty
 
-Ta sekcja definiuje kształtów, które opisują sposób wyświetlania modelu w projektancie. Te kształty geometryczne są mapowane na klasy modelu w sekcji diagramu.
+Ta sekcja definiuje kształty, które opisują, jak model pojawia się w projektancie. Te kształty geometryczne są mapowane do klas w modelu w sekcji dla diagramu.
 
 ### <a name="connectors"></a>Łączniki
 
-Ta sekcja definiuje wygląd łączniki, które są wyświetlane w projektancie. Opisy te style geometrycznych są mapowane na określonych relacji w modelu, w sekcji diagramu.
+Ta sekcja definiuje wygląd elementów łączników, które pojawiają się w projektancie. Opisy te style geometrycznych są mapowane na relacji w modelu w sekcji diagramu.
 
 ### <a name="xmlserializationbehavior"></a>XmlSerializationBehavior
 
-Ta sekcja definiuje schemat serializacji i udostępnia dodatkowe informacje na temat sposobu każdej klasy jest zapisywane w pliku.
+Ta sekcja definiuje schemat serializacji i zawiera dodatkowe informacje na temat sposobu każdej klasy są zapisywane do pliku.
 
-### <a name="explorerbehavior"></a>ExplorerBehavior
+### <a name="explorerbehavior"></a>Zachowania ExplorerBehavior
 
-Ta sekcja definiuje sposób **DSL Explorer** okna jest wyświetlany, gdy użytkownik edytuje modelu.
+Ta sekcja definiuje sposób, w jaki **Eksplorator DSL** okna jest wyświetlany, gdy użytkownik edytuje modelu.
 
 ### <a name="connectionbuilders"></a>ConnectionBuilders
 
-Ta sekcja definiuje konstruktora połączenia dla każdego łącznik (utworzenie łącza między żadnych dwie klasy, która za pomocą narzędzia mogą zostać połączone). W tej sekcji określa, czy możesz połączyć źródłowe i klasy docelowej.
+Ta sekcja definiuje konstruktora połączeń dla każdego narzędzia connector (narzędzie do tworzenia łączy między wszystkie dwóch klas, które mogą zostać połączone). W tej sekcji określa, czy można połączyć źródłowy i klasę docelową.
 
 ### <a name="diagram"></a>Diagram
 
-Ta sekcja definiuje diagramu, i używać go do określania właściwości, takie jak kolor tła i klasy głównym. (Klasy głównym jest reprezentowana przez diagram całej klasy domeny). Sekcja Diagram zawiera również elementy ShapeMap i ConnectorMap, które określają kształtu lub łącznik, który reprezentuje każdej klasy domeny lub relacji.
+Ta sekcja definiuje diagram, i jej używać do określania właściwości, takich jak kolor tła i Klasa główna. (Klasa główna jest klasy domeny, który jest reprezentowany przez diagram jako całość). Sekcja Diagram zawiera również elementy mapy ShapeMap i mapy ConnectorMap, określających, kształtu lub łącznik, który reprezentuje każdej klasy domeny lub relacji.
 
 ### <a name="designer"></a>Projektant
 
-Ta sekcja definiuje projektanta (Edytor), która gromadzi **przybornika**, ustawienia sprawdzania poprawności, diagram i schematu serializacji. W sekcji projektanta definiuje również klasy głównym modelu, który zazwyczaj jest także klasy głównym diagramu.
+Ta sekcja definiuje projektanta (Edytor), który umożliwia połączenie ze sobą **przybornika**, ustawienia sprawdzania poprawności, diagram i schematu serializacji. Sekcja projektanta definiuje również klasę głównego modelu, który zazwyczaj jest również Klasa główna diagramu.
 
-### <a name="explorer"></a>Explorer
+### <a name="explorer"></a>Eksplorator
 
-W tej sekcji wymieniono **DSL Explorer** zachowanie (zdefiniowany w sekcji XmlSerializationBehavior).
+W tej sekcji wymieniono **Eksplorator DSL** zachowanie (zdefiniowane w sekcji elementu XmlSerializationBehavior).
 
-## <a name="monikers-in-the-dsldefinitiondsl-file"></a>Monikery w pliku DslDefinition.dsl
+## <a name="monikers-in-the-dsldefinitiondsl-file"></a>Monikery w plik DslDefinition.dsl
 
-W całym pliku DslDefinition.dsl można użyć monikerów wprowadzać odsyłacze do określonych elementów. Na przykład każda definicja relacji zawiera podsekcja źródła i podsekcji docelowej. Każdy podsekcja zawiera krótkiej nazwy klasy obiektów, które mogą być połączone z tym relacji:
+Przez cały plik DslDefinition.dsl umożliwia monikerów wprowadzić odsyłacze do określonych elementów. Na przykład każda definicja relacji zawiera podsekcja źródła i podsekcji docelowego. Każdej podsekcji zawiera moniker klasę obiektu, który może zostać powiązany z tej relacji:
 
 ```
 <DomainRelationship ...        Name="LibraryHasMembers" Namespace="ExampleNamespace" >    <Source>      <DomainRole ...>
@@ -89,37 +89,37 @@ W całym pliku DslDefinition.dsl można użyć monikerów wprowadzać odsyłacze
    </Source>
 ```
 
-Zazwyczaj przestrzeń nazw elementu z odwołaniem (w tym przykładzie `Library` klasy domeny) jest taki sam jak element odwołujący się (w tym przypadku LibraryHasMembers relacji domeny). W takich przypadkach moniker musi podać tylko nazwę klasy. W przeciwnym razie należy użyć /Namespace/Name pełnej formy:
+Zazwyczaj przestrzeń nazw elementu odwołania (w tym przykładzie `Library` klasy domeny) jest taka sama jak element odwołujący się (w tym przypadku LibraryHasMembers relacji domeny). W takich przypadkach moniker Podaj tylko nazwę klasy. W przeciwnym razie należy użyć /Namespace/Name pełnej postaci:
 
 ```
 <DomainClassMoniker Name="/ExampleNameSpace/Library" />
 ```
 
-Krótka nazwa systemu wymaga, aby elementów równorzędnych w drzewie XML miały unikatowe nazwy. Z tego powodu błędy sprawdzania poprawności wystąpić, jeśli użytkownik próbuje zapisać definicję języka specyficznego dla domeny, która zawiera, na przykład dwie klasy o tej samej nazwie. Takie błędy zduplikowana nazwa powinna zawsze poprawić, zanim zapiszesz plik DslDefinition.dsl, dzięki czemu możesz ponownie załadować go poprawnie później.
+Moniker system wymaga, że elementów równorzędnych w drzewie XML mają różne nazwy. Z tego powodu błędy walidacji występują, jeśli zostanie podjęta próba zapisania definicji języka specyficznego dla domeny, który, na przykład dwóch klas o takiej samej nazwie. Zawsze należy poprawić błędy takie zduplikowana nazwa, zanim zapiszesz plik DslDefinition.dsl, dzięki czemu możesz ponownie załadować je poprawnie później.
 
-Każdy typ ma własny typ krótkiej nazwy: DomainClassMoniker, DomainRelationshipMoniker, i tak dalej.
+Każdy typ ma swój własny typ monikera: DomainClassMoniker, DomainRelationshipMoniker, i tak dalej.
 
 ## <a name="types"></a>Types
 
-Sekcja Typy określa wszystkie typy, które zawiera plik DslDefinition.dsl jako typy właściwości. Tego typu można podzielić na dwa rodzaje: typy zewnętrzne, takie jak System.String oraz typy wyliczone.
+Sekcja: typy określa wszystkie typy, które zawiera plik DslDefinition.dsl jako typy właściwości. Te typy można podzielić na dwa rodzaje: typy zewnętrzne, np. System.String oraz typach wyliczeniowych.
 
-### <a name="external-types"></a>Typów zewnętrznych
+### <a name="external-types"></a>Typy zewnętrzne
 
-Przykład diagramu składników zawiera zestaw standardowych typów pierwotnych, mimo że tylko niektóre z nich są używane.
+Przykładowy Diagram składników zawiera zestaw standardowych typów pierwotnych, mimo że tylko niektóre z nich są używane.
 
-Każda definicja typu zewnętrznego składa się po prostu nazwy i przestrzeni nazw, takich jak parametry i systemu:
+Każda definicja typu zewnętrznego składa się z tylko nazwę i przestrzeń nazw, takich jak parametry i systemu:
 
 ```
 <ExternalType Name="String" Namespace="System" />
 ```
 
-Pełne nazwy typów są używane zamiast słowa kluczowe równoważne kompilatora, takie jak "string".
+Pełne nazwy typów są używane zamiast słowa kluczowe równoważne kompilatora, takich jak "string".
 
-Zewnętrzne typy nie są ograniczone do standardowej biblioteki typów.
+Typy zewnętrzne nie są ograniczone do typów biblioteki standardowej.
 
 ### <a name="enumerations"></a>Wyliczenia
 
-Typowy specyfikacji wyliczenie podobny w tym przykładzie:
+Typowe specyfikacji wyliczenie podobna do poniższego przykładu:
 
 ```
 <DomainEnumeration IsFlags="true" Name="PageSort"          Namespace="Fabrikam.Wizard">
@@ -130,13 +130,13 @@ Typowy specyfikacji wyliczenie podobny w tym przykładzie:
 </DomainEnumeration>
 ```
 
-`IsFlags` Atrybutu formantów czy wygenerowany kod jest poprzedzony `[Flags]` atrybutu środowisko uruchomieniowe języka wspólnego (CLR), który określa, czy wartości wyliczenia można łączyć bitowo. Jeśli ten atrybut ma ustawioną wartość true, należy określić wartości zasilania z dwóch wartości literałów.
+`IsFlags` Atrybutu formanty czy wygenerowany kod jest poprzedzony `[Flags]` atrybutu środowisko uruchomieniowe języka wspólnego (CLR), który określa, czy wartości wyliczenia można łączyć alternatywy bitowej. Jeśli ten atrybut jest ustawiony na wartość true, należy określić wartości zasilania z dwóch wartości literału.
 
 ## <a name="classes"></a>Klasy
 
-Większość elementów w definicji dowolnego języka specyficznego dla domeny są bezpośrednio lub pośrednio wystąpienia `DomainClass`. Podklasy `DomainClass` obejmują `DomainRelationship`, `Shape`, `Connector`, i `Diagram`. `Classes` Sekcji pliku DslDefinition.dsl zawiera klasy domeny.
+Większość elementów w żadnych definicji języka specyficznego dla domeny są bezpośrednio lub pośrednio wystąpień `DomainClass`. Podklasy `DomainClass` obejmują `DomainRelationship`, `Shape`, `Connector`, i `Diagram`. `Classes` Sekcji plik DslDefinition.dsl zawiera klasy domeny.
 
-Każda klasa ma zestaw właściwości i może mieć klasy podstawowej. W przykładzie Diagram składnika `NamedElement` jest klasą abstrakcyjną, która ma `Name` właściwości, których typ to ciąg:
+Każda klasa ma zestaw właściwości i może mieć klasy bazowej. W tym przykładzie Diagram składników `NamedElement` jest klasą abstrakcyjną, która ma `Name` właściwości, których typ to ciąg:
 
 ```
 <DomainClass Id="ee3161ca-2818-42c8-b522-88f50fc72de8"  Name="NamedElement" Namespace="Fabrikam.CmptDsl5"      DisplayName="Named Element"  InheritanceModifier="Abstract">
@@ -150,7 +150,7 @@ Każda klasa ma zestaw właściwości i może mieć klasy podstawowej. W przykł
 </DomainClass>
 ```
 
-`NamedElement` jest podstawą kilka innych klas takich jak `Component`, który zawiera właściwości oprócz `Name` właściwość, która ono odziedziczone po `NamedElement`. Węzeł podrzędny baseclass — zawiera odwołanie do krótkiej nazwy. Ponieważ przywoływany klasa znajduje się w tej samej przestrzeni nazw, tylko jego nazwa jest wymagana w monikerze:
+`NamedElement` jest podstawą kilka innych klas, takich jak `Component`, który ma własne właściwości oprócz `Name` właściwość, która ono odziedziczone `NamedElement`. Węzeł podrzędny BaseClass zawiera odwołanie krótkiej nazwy. Ponieważ klasy odwołania znajduje się w tej samej przestrzeni nazw, tylko jego nazwa jest wymagana w moniker:
 
 ```
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
@@ -166,35 +166,35 @@ Każda klasa ma zestaw właściwości i może mieć klasy podstawowej. W przykł
   </Properties>
 ```
 
-Każda klasa domeny (w tym relacje, kształtów, łączniki i diagramy) może mieć następujące atrybuty i węzłów podrzędnych:
+Każda klasa domeny (w tym relacje, kształty, łączników i diagramy) może mieć tych atrybutów i węzłów podrzędnych:
 
--   **Id.** Ten atrybut jest identyfikatorem GUID. Jeśli nie zostanie określona wartość w pliku, Projektant języka specyficznego dla domeny utworzy wartość. (W ilustracjach w tym dokumencie, ten atrybut jest zwykle pominięte aby zaoszczędzić miejsce.)
+-   **Id.** Ten atrybut jest identyfikatorem GUID. Jeśli nie zostanie określona wartość w pliku, projektanta języka specyficznego dla domeny utworzy wartość. (Na ilustracjach w tym dokumencie, ten atrybut jest zwykle pominąć, aby zaoszczędzić miejsce.)
 
 -   **Nazwa i Namespace.** Te atrybuty Określ nazwę i przestrzeń nazw, klasy w wygenerowanym kodzie. Razem muszą być unikatowe w obrębie języka specyficznego dla domeny.
 
--   **InheritanceModifier.** Ten atrybut to "abstract", "sealed" lub none.
+-   **InheritanceModifier.** Ten atrybut to "abstrakcyjnego", "sealed" lub Brak.
 
--   **DisplayName.** Ten atrybut jest nazwa wyświetlana w **właściwości** okna. Atrybut Nazwa wyświetlana może zawierać spacji i innych znaków interpunkcyjnych.
+-   **DisplayName.** Ten atrybut jest nazwą, która jest wyświetlana w **właściwości** okna. Atrybut DisplayName może zawierać spacje i inne znaki interpunkcyjne.
 
--   **GeneratesDoubleDerived.** Jeśli ten atrybut ma ustawioną wartość true, dwie klasy są generowane i jest podklasą innych. Wygenerowane metody są w podstawowym, a w podklasy konstruktorów. Przez ustawienie dla tego atrybutu, można zastąpić dowolnej metody wygenerowanego kodu niestandardowego.
+-   **GeneratesDoubleDerived.** Jeśli ten atrybut jest ustawiony na wartość true, dwóch klas są generowane i jeden jest podklasą drugiego. Wygenerowane metody są w podstawowym, a konstruktory znajdują się w podklasy. Przez ustawienie tego atrybutu, można zastąpić dowolną metodę wygenerowanego w kodzie niestandardowym.
 
--   **HasCustomConstructor**. Jeśli ten atrybut ma ustawioną wartość true, konstruktor został pominięty wygenerowany kod, aby mogły zapisywać własną wersję.
+-   **HasCustomConstructor**. Jeśli ten atrybut jest ustawiony na wartość true, Konstruktor pominięcia z wygenerowanego kodu, aby napisać własną wersję.
 
 -   **Atrybuty**. Ten atrybut zawiera atrybuty CLR wygenerowanej klasy.
 
--   **Baseclass —**. Jeśli określisz klasy podstawowej, musi być tego samego typu. Na przykład klasa domeny musi mieć inną klasę domeny podstawowym i kształt Przedział musi mieć kształt Przedział. Jeśli nie określisz klasy podstawowej, klasa w wygenerowanym kodzie pochodzi z klasy standardowych ramy. Na przykład pochodną klasy domeny `ModelElement`.
+-   **BaseClass**. Jeśli określono klasy bazowej, musi to być tego samego typu. Na przykład klasa domeny musi mieć innej klasy domeny jako jego podstawowy i kształt przedziału musi mieć kształtu przedziału. Jeśli klasa bazowa nie jest określona, klasy w wygenerowanym kodzie pochodzi od klasy framework standardowych. Na przykład klasy domeny jest pochodną `ModelElement`.
 
--   **Właściwości**. Ten atrybut zawiera właściwości, które są obsługiwane pod kontrolą transakcji i utrwalone po zapisaniu modelu.
+-   **Właściwości**. Ten atrybut zawiera właściwości, które są obsługiwane pod kontrolą transakcji i zachowywane po zapisaniu modelu.
 
--   **ElementMergeDirectives**. Każdy element scalania dyrektywy określa, jak inne wystąpienie innej klasy jest dodawany do wystąpienia klasy nadrzędnej. Więcej szczegółów na temat dyrektywy scalania element można znaleźć w dalszej części tego tematu.
+-   **ElementMergeDirectives**. Każda dyrektywa scalania Określa, jak inne wystąpienie innej klasy jest dodawany do wystąpienia klasy nadrzędnej. Więcej szczegółów na temat dyrektywy scalania elementów można znaleźć w dalszej części tego tematu.
 
--   Klasa C# jest generowany dla każdej klasy domeny, który ma na liście `Classes` sekcji. Klasy C# są generowane w Dsl\GeneratedCode\DomainClasses.cs.
+-   Klasa C# jest generowane dla każdej klasy domeny, który znajduje się w `Classes` sekcji. Klas języka C# są generowane w Dsl\GeneratedCode\DomainClasses.cs.
 
 ### <a name="properties"></a>Właściwości
 
-Każda właściwość domeny ma nazwę i typ. Nazwa musi być unikatowa w obrębie klasy domeny i jego przechodnie podstawowych.
+Każda właściwość domeny ma nazwy i typu. Nazwa musi być unikatowa w obrębie klasy domeny i jego przechodnie klasy podstawowe.
 
-Typ musi odwoływać się do jednego z wymienionych w `Types` sekcji. Ogólnie rzecz biorąc krótka nazwa musi zawierać przestrzeni nazw.
+Typ musi odwoływać się do jednej z tych na liście `Types` sekcji. Ogólnie rzecz biorąc moniker musi zawierać przestrzeń nazw.
 
 ```
 <DomainProperty Name="Name" DisplayName="Name"  DefaultValue="" Category="" IsElementName="true">
@@ -204,55 +204,55 @@ Typ musi odwoływać się do jednego z wymienionych w `Types` sekcji. Ogólnie r
 </DomainProperty>
 ```
 
-Każda właściwość domeny również może mieć następujące atrybuty:
+Każda właściwość domeny może mieć również te atrybuty:
 
--   **IsBrowsable**. Ten atrybut określa, czy właściwość jest wyświetlany w **właściwości** okna, gdy użytkownik kliknie obiekt klasy nadrzędnej.
+-   **IsBrowsable**. Ten atrybut określa, czy właściwość pojawia się w **właściwości** okna, gdy użytkownik kliknie obiekt klasy nadrzędnej.
 
--   **IsUIReadOnly**. Ten atrybut określa, czy użytkownik może zmienić właściwości w **właściwości** okna lub za pośrednictwem dekoratora, w którym przedstawiono właściwości.
+-   **IsUIReadOnly**. Ten atrybut określa, czy użytkownik może zmienić właściwość **właściwości** okna lub za pośrednictwem dekoratora, w której jest prezentowane właściwości.
 
--   **Rodzaj**. Ten atrybut zostanie ustawiony na normalny, obliczona lub wartości CustomStorage. Jeśli ustawisz ten atrybut obliczona, musisz podać kodu niestandardowego, który określa wartość, a właściwość będą tylko do odczytu. Jeśli ustawisz ten atrybut wartości CustomStorage, należy podać kod, który zarówno pobiera i ustawia wartości.
+-   **Rodzaj**. Ten atrybut zostanie ustawiony na normalny, obliczona lub wartości CustomStorage. Jeśli ten atrybut jest ustawiony na obliczeniowe, musi podać kod niestandardowy, który określa wartość, a właściwość będzie tylko do odczytu. Jeśli ten atrybut jest ustawiony na wartości CustomStorage, musisz podać kod, który pobiera i ustawia wartości.
 
--   **IsElementName**. Jeśli ten atrybut ma ustawioną wartość true, jego wartość jest automatycznie ustawiana unikatowe wartości podczas tworzenia wystąpienia klasy nadrzędnej. Ten atrybut można ustawić wartość true dla tylko jednej właściwości każdej klasy, która musi mieć typ ciągu. W przykładzie Diagram składnika `Name` właściwości w `NamedElement` ma `IsElementName` ustawioną na true. Zawsze, gdy użytkownik tworzy `Component` elementu (który dziedziczy z `NamedElement`), jest inicjowana automatycznie podobną "Component6."
+-   **IsElementName**. Jeśli ten atrybut jest ustawiony na wartość true, wartość jest automatycznie ustawiona na unikatową wartość po utworzeniu wystąpienia klasy nadrzędnej. Ten atrybut można ustawić wartość true dla tylko jednej właściwości w każdej klasie i musi mieć typ ciągu. W tym przykładzie Diagram składników `Name` właściwość `NamedElement` ma `IsElementName` ma wartość true. Zawsze, gdy użytkownik tworzy `Component` — element (który dziedziczy z `NamedElement`), jest inicjowana automatycznie na wartość podobną "Component6."
 
--   `DefaultValue`. Jeśli ten atrybut został określony, podanej wartości jest przypisany do tego atrybutu dla nowego wystąpienia tej klasy. Jeśli `IsElementName` jest ustawiony atrybut DefaultValue Określa początkowy część nowe parametry.
+-   `DefaultValue`. Jeśli ten atrybut został określony, wartość określona zostanie przypisany do tego atrybutu dla nowych wystąpień tej klasy. Jeśli `IsElementName` jest ustawiony atrybut DefaultValue Określa początkowy część nowego ciągu znaków.
 
--   **Kategoria** jest nagłówka, w którym właściwość będą wyświetlane w **właściwości** okna.
+-   **Kategoria** jest nagłówkiem, w którym właściwość pojawi się w **właściwości** okna.
 
 ## <a name="relationships"></a>Relacje
 
-`Relationships` Sekcja zawiera wszystkie relacje języka specyficznego dla domeny. Każdy `Domain Relationship` jest binarna, a bezpośrednie łączenie członkami klasy źródłowej do elementów członkowskich klasy docelowej. Klasy źródłowa i docelowa są zazwyczaj klasy domeny, ale relacji z innymi relacje są również dozwolone.
+`Relationships` Sekcji przedstawiono wszystkie relacje w języku specyficznym dla domeny. Każdy `Domain Relationship` jest binarny i bezpośredniego łączenia elementów członkowskich klasy źródłowej do elementów członkowskich klasy docelowej. Klas źródłowych i docelowych zwykle są klasami domeny, ale relacje z innymi relacje są również dozwolone.
 
-Na przykład relacja połączenia łączy elementy członkowskie klasy OutPort do elementów członkowskich klasy portu podczerwieni. Każde wystąpienie łącza relacji łączy wystąpienia OutPort na wystąpienie InPort. Ponieważ jest w relacji wiele wiele każdego OutPort może mieć wiele łączy połączenia ze źródłami na nim, a każde wystąpienie portu podczerwieni mogą mieć wiele łącza, które odnoszą się do jego.
+Na przykład relacji połączenia łączy elementów członkowskich klasy elementu OutPort składowe klasy elementu InPort. Każde wystąpienie łącza relacji łączy z wystąpienia elementu OutPort do wystąpienia elementu InPort. Ponieważ jest w relacji wiele wiele każdego elementu OutPort może mieć wiele łączy połączenia ze źródłami na nim i każdego wystąpienia elementu InPort może mieć wiele łączy połączenia, które go wykorzystać.
 
 ### <a name="source-and-target-roles"></a>Role źródłowe i docelowe
 
-Każdej relacji zawiera role źródłowe i docelowe, które mają następujące atrybuty:
+Każda relacja zawiera role źródłowe i docelowe, które mają następujące atrybuty:
 
--   `RolePlayer` Atrybut odwołuje się do klasy domeny połączonego wystąpień: OutPort źródła, InPort dla elementu docelowego.
+-   `RolePlayer` Atrybut odwołuje się do klasy domeny połączonych wystąpień: elementu OutPort dla źródła, InPort dla obiektu docelowego.
 
--   `Multiplicity` Atrybut ma cztery wartości (wartości ZeroMany, wartość ZeroOne jednego i OneMany). Ten atrybut określa numer łączy tę relację, która może być skojarzony z jednego obiektu pełniącego rolę.
+-   `Multiplicity` Atrybut ma czterech możliwych wartości (wartości ZeroMany, wartość ZeroOne, co i OneMany). Ten atrybut odwołuje się do liczby łączy tę relację, która może być skojarzony z jednego obiektu pełniącego rolę.
 
--   `PropertyName` Atrybut określa nazwę, która jest używana w roli odtwarzanie klasy dostępu do obiektów na drugim końcu. Ta nazwa jest używana w szablonie lub kodu niestandardowego, aby przechodzić między nimi relacja. Na przykład `PropertyName` ustawiono atrybut roli źródłowej `Targets`. W związku z tym będzie działać następujący kod:
+-   `PropertyName` Atrybut określa nazwę, która jest używana w fabularne klasy dostępu do obiektów na drugim końcu. Ta nazwa jest używana w szablonie lub niestandardowego kodu na przechodzenie przez relację. Na przykład `PropertyName` ma ustawioną wartość atrybutu roli źródłowej `Targets`. W związku z tym poniższy kod będzie działać:
 
     ```
     OutPort op = ...; foreach (InPort ip in op.Targets) ...
     ```
 
-     Konwencja liczbie mnogiej, jeśli liczebność jest wartości ZeroMany ani OneMany są nazwy właściwości.
+     Zgodnie z Konwencją plural, jeśli liczebność jest wartości ZeroMany ani OneMany są nazwy właściwości.
 
-     Liczebność roli odwołuje się do ile przeciwną roli może być skojarzony z każde wystąpienie tej roli. Na przykład w relacji ComponentHasPorts rola Serwer obiektów docelowych ma `RolePlayer` ustawionego atrybutu do portu, `PropertyName` ustawionego atrybutu do składnika i `Multiplicity` atrybut ustawiony na wartość ZeroOne. W związku z tym jest odpowiedni kod, aby użyć tej roli:
+     Liczebność roli odwołuje się do liczby rolę odwrotną mogą być skojarzone z każdym wystąpieniem tej roli. Na przykład w relacji elementu ComponentHasPorts, docelowa rola ma `RolePlayer` atrybut ustawiony na Port, `PropertyName` atrybut ustawiony na składnik, a `Multiplicity` atrybut ustawiony na wartość ZeroOne. Dlatego jest odpowiedni kod, aby użyć tej roli:
 
     ```
     ComponentPort p = ...; Component c = p.Component; if (c != null) ...
     ```
 
--   Rola `Name` to nazwa, która jest używana w ramach klasy relacji do odwoływania się do tego celu łącza. Konwencja Nazwa roli jest zawsze pojedynczej, ponieważ każde łącze ma tylko jedno wystąpienie na końcach. Następujący kod będzie działać:
+-   Rola `Name` jest nazwa, która jest używana w ramach klasy relacji do odwoływania się do końca tego łącza. Według Konwencji nazwy roli jest zawsze pojedynczej, ponieważ każde połączenie ma tylko jedno wystąpienie na każdym końcu. Poniższy kod będzie działać:
 
     ```
     Connection connectionLink = ...; OutPort op = connectionLink.Source;
     ```
 
--   Domyślnie `IsPropertyGenerator` atrybut jest ustawiony na wartość true. Jeśli ma wartość false, ma właściwości zostanie utworzony w klasie obiektu pełniącego rolę. (W takim przypadku `op.Targets`, na przykład nie będzie działać). Jest jednak nadal możliwe użyć niestandardowego kodu, aby przechodzić między nimi relacja lub uzyskać dostępu do łączy się, jeśli kod niestandardowy jawnie używa relacji:
+-   Domyślnie `IsPropertyGenerator` atrybut jest ustawiony na wartość true. Jeśli ma wartość false, nie ma właściwości zostanie utworzony dla klasy obiektu pełniącego rolę. (W takim przypadku `op.Targets`, na przykład, nie będzie działać). Jednak nadal możliwe jest przechodzenie relacji lub uzyskania dostępu do łączy się, jeśli kod niestandardowy używa relacji jawnie przy użyciu niestandardowego kodu:
 
     ```
     OutPort op = ...; foreach (InPort ip in Connection.GetTargets(op)) ...
@@ -261,59 +261,59 @@ Każdej relacji zawiera role źródłowe i docelowe, które mają następujące 
 
 ### <a name="relationship-attributes"></a>Atrybuty relacji
 
-Oprócz tych atrybutów i węzły podrzędne, które są dostępne dla wszystkich klas każdej relacji ma następujące atrybuty:
+Oprócz atrybutów i węzłów podrzędnych, które są dostępne dla wszystkich klas każda relacja ma następujące atrybuty:
 
--   **IsEmbedding**. Ten atrybut logiczny określa, czy relacja jest częścią drzewa osadzania. Każdy model muszą tworzyć drzewo o relacje osadzania. Każda klasa domeny w związku z tym musi być elementem docelowym co najmniej jedna relacja osadzania, chyba że jest głównym elementem modelu.
+-   **IsEmbedding**. Ten atrybut logiczny określa, czy relacja jest częścią drzewa osadzania. Każdy model musi tworzą drzewa za pomocą jego relacji osadzania. Każda klasa domeny musi być celem co najmniej jednej relacji osadzania, w związku z tym, chyba że jest to główny modelu.
 
--   **AllowsDuplicates**. Ten atrybut Boolean, który ma wartość false, domyślnie, dotyczą tylko relacje, które mają liczebność "many" w pliku źródłowym i docelowym. Określa, czy użytkownicy języka może łączyć z jedną parą elementy źródłowe i docelowe przez więcej niż jednego łącza w tej samej relacji.
+-   **AllowsDuplicates**. Ta logiczna atrybut, który ma wartość false, domyślnie, dotyczy tylko relacje, które mają liczebność "many" w pliku źródłowym i docelowym. Określa, czy użytkownicy języka mogą się łączyć jedna para elementów źródłowych i docelowych przez więcej niż jednego połączenia w tej samej relacji.
 
-## <a name="designer-and-toolbox-tabs"></a>Projektant i kart z przybornika
+## <a name="designer-and-toolbox-tabs"></a>Projektant i karty przybornika
 
-Główna część **projektanta** jest sekcji pliku DslDefinition.dsl **ToolboxTab** elementów. Projektant jeden może mieć wiele z tych elementów, z których każdy reprezentuje kapusty sekcję w Projektancie wygenerowanego **przybornika**. Każdy **ToolboxTab** element może zawierać jeden lub więcej **ElementTool** elementów, **ConnectionTool** elementy, lub obie.
+Główna część **projektanta** sekcja plik DslDefinition.dsl **ToolboxTab** elementów. Projektant co może mieć kilka z tych elementów, z których każdy reprezentuje kapusty sekcji w wygenerowanym projektancie **przybornika**. Każdy **ToolboxTab** element może zawierać jeden lub więcej **narzędzie ElementTool** elementów **elementu ConnectionTool** elementy i / lub.
 
-Element narzędzia można utworzyć wystąpienia klasy określonej domeny. Gdy użytkownik przeciąga narzędzia elementu na diagramie, wynik jest określana przez element scalania dyrektywy zgodnie z opisem w sekcji o dyrektywy scalania element w dalszej części tego tematu.
+Element narzędzia można utworzyć wystąpienia klasy określonej domeny. Gdy użytkownik przeciągnie narzędziem elementu na diagram, wynik jest określany przez dyrektywy scalania elementów zgodnie z opisem w sekcji o dyrektywy scalania elementów w dalszej części tego tematu.
 
-Narzędzia każdego połączenia można wywołać konstruktora określonego połączenia. Jeden konstruktor połączenia można utworzyć więcej niż jeden typ relacji, w zależności od tego, gdy użytkownik kliknie przycisk myszy, zgodnie z opisem w sekcji o konstruktorów połączenia.
+Każde narzędzie połączenia można wywołać konstruktora określonego połączenia. Jednego konstruktora połączeń można utworzyć więcej niż jeden typ relacji, w zależności od tego, gdy użytkownik kliknie przycisk myszy, zgodnie z opisem w sekcji o konstruktory połączeń.
 
-Ani typu narzędzie tworzy bezpośrednio kształtów lub łączników. Każdy tworzy wystąpienie klasy domeny lub relacji domeny; mapowania kształt i łącznika następnie określ sposób wyświetlania tej domeny klasy lub relacji domeny.
+Ani typ narzędzia bezpośrednio konstrukcje kształtów i łączników. Każdy tworzy wystąpienie klasy domeny lub relacji domeny; mapowania kształtów i łączników następnie określają sposób wyświetlania tej klasy domeny lub relacji domeny.
 
 ## <a name="paths"></a>Ścieżki
 
-Ścieżki domeny są wyświetlane w kilku lokalizacjach w pliku DslDefinition.dsl. Te ścieżki Określ szereg łącza z jednego elementu w modelu (to znaczy wystąpienia języka specyficznego dla domeny) do innej. Składnia ścieżki jest proste, ale pełne.
+Ścieżki domeny są wyświetlane w kilku lokalizacjach w plik DslDefinition.dsl. Te ścieżki Określ szereg linki z jednego elementu w modelu (oznacza to, że wystąpienie języka specyficznego dla domeny) do innego. Składnia ścieżki jest prosty, lecz pełne.
 
-Ścieżki zostaną wyświetlone w pliku DslDefinition.dsl `<DomainPath>...</DomainPath>` tagów. Mimo że ścieżki nawigować przez kilka łączy, większość przykładów w praktyce przechodzenie przez tylko jeden link.
+Ścieżki zostaną wyświetlone w plik DslDefinition.dsl w `<DomainPath>...</DomainPath>` tagów. Mimo że ścieżek nawigować przez kilka łączy, większość przykładów w praktyce przechodzić tylko jedno połączenie.
 
-Ścieżka składa się sekwencji segmentów. Każdy z segmentów jest przeskoku od obiektu łącza lub łącze do obiektu. W związku z tym przeskoków alternatywny zwykle długie ścieżki. Przy pierwszym przeskoku z obiektu łącza, drugi przeskok jest obiektem na drugim końcu łącza, trzeci przeskoku ma dalej łącza i tak dalej. Okazjonalne wyjątek do tej sekwencji jest, gdzie relacji jest elementem źródłowa lub docelowa z inną relacją.
+Ścieżka składa się z sekwencji segmentów. Każdy z segmentów jest przeskoku od obiektu do łącza lub link do obiektu. W związku z tym przeskoków alternatywne zwykle długie ścieżki. Pierwszym przeskokiem jest z obiektu do łącza, drugim przeskokiem jest obiektem na drugim końcu łącza, trzeci przeskoku jest następny link i tak dalej. Sporadyczne wyjątkiem od tej sekwencji jest, gdzie relacji jest sam źródłowych lub docelowych innej relacji.
 
-Każdy z segmentów rozpoczyna się od nazwy relacji. W przeskoku łącza obiektu relacji poprzedza kropkę i nazwa właściwości: "`Relationship . Property`". W przeskoku obiektu łącza, relacja poprzedza wykrzyknikiem i nazwa roli: "`Relationship ! Role`".
+Każdy z segmentów rozpoczyna się od nazwy relacji. W przeskoku łącze obiektu relacji poprzedza kropkę i nazwę właściwości: "`Relationship . Property`". W przeskoku obiekt łącza relacji poprzedza znak wykrzyknika i nazwa roli: "`Relationship ! Role`".
 
-Przykład diagramu składników zawiera ścieżkę w ParentElementPath z ShapeMap InPort. Ta ścieżka rozpoczyna się w następujący sposób:
+Przykładowy Diagram składników zawiera ścieżkę w ParentElementPath z mapy ShapeMap InPort. Ta ścieżka rozpoczyna się w następujący sposób:
 
 ```
     ComponentHasPorts.Component
 ```
 
-W tym przykładzie InPort jest podklasą klasy ComponentPort i ma relację ComponentHasPorts. Właściwość nosi nazwę składnika.
+W tym przykładzie InPort jest podklasą elementu ComponentPort oraz ma ustanowioną relację elementu ComponentHasPorts. Właściwość nosi nazwę składnika.
 
-Podczas zapisywania C# w odniesieniu do tego modelu, można przejść przez łącze w jednym kroku przy użyciu właściwości, który generuje relacji w każdej klasy, które dotyczą:
+Podczas pisania C# dla tego modelu, możesz przejść przez łącze w jednym kroku, za pomocą właściwości, która generuje relacji na każdą z klas, które odnosi się:
 
 ```
      InPort port; ...  Component c = port.Component;
 ```
 
-Jednak należy wykonać obie przeskoków jawnie w składnia ścieżki. Ze względu na to wymaganie można łatwiej dostęp do pośredniego łącza. Poniższy kod zakończeniu przeskoku z łącza do składnika:
+Jednak należy wykonać obie przeskoków jawnie przy użyciu składni ścieżki. Ze względu na to wymaganie jest dostępny link pośredni łatwiejsze. Poniższy kod wykonuje przeskoku z łącza do składnika:
 
 ```
     ComponentHasPorts.Component / ! Component
 ```
 
-(Można pominąć nazwę relacji, w którym jest taki sam jak poprzedni segment).
+(Pomiń Nazwa relacji, w której jest taka sama, jak poprzedniego segmentu).
 
-## <a name="element-merge-directives"></a>Element dyrektywy scalania
+## <a name="element-merge-directives"></a>Dyrektywy scalania elementów
 
-Gdy użytkownik języka przeciągnie element z **przybornika** na diagramie, jest tworzony wystąpienia klasy tego narzędzia. Łącza są również między to wystąpienie i istniejące elementy modelu. Niektóre elementy, takie jak składniki lub komentarzy, są tworzone, gdy użytkownik języka przeciąga je z **przybornika** na pustą część diagramu. Innych elementów są tworzone, gdy język użytkownik przeciąga je na inne elementy hosta. Na przykład OutPort lub InPort jest tworzony podczas przeciągania go na składnik przez użytkownika język.
+Gdy użytkownik języka element zostanie przeciągnięty z **przybornika** na diagram, wystąpienia klasy tego narzędzia jest tworzony. Łącza są również między tego wystąpienia i istniejące elementy modelu. Niektóre elementy, takie jak składniki lub komentarze są tworzone podczas przeciągania przez użytkownika języka ich z **przybornika** na pustą część diagramu. Inne elementy są tworzone, gdy użytkownik języka przeciągnie je do innych elementów hosta. Na przykład elementu OutPort lub InPort jest tworzony podczas języka przeciągania go przez użytkownika na składnik.
 
-Potencjalne klasy obsługującej, takich jak składnika będzie akceptować nowego elementu tylko wtedy, gdy klasa hosta dyrektywę scalania element klasy nowego elementu. Na przykład węzeł DomainClass o nazwie = "Component" zawiera:
+Potencjalne klasy obsługującej, takich jak składnik będzie akceptować nowego elementu, tylko wtedy, gdy klasy obsługującej dyrektywa scalania dla klasy nowego elementu. Na przykład węzeł DomainClass o nazwie = "Component" zawiera:
 
 ```
 <DomainClass Name="Component" ...> ...
@@ -327,17 +327,17 @@ Potencjalne klasy obsługującej, takich jak składnika będzie akceptować nowe
     </ElementMergeDirective> ...
 ```
 
-Krótkiej nazwy klasy, która znajduje się w węźle indeksu odwołuje się do klasy elementu, które mogą być akceptowane. W takim przypadku ComponentPort jest abstrakcyjna klasa podstawowa InPort i OutPort. W związku z tym jednej z tych elementów mogą być akceptowane.
+Klasa elementu, który może zostać zaakceptowany odwołuje się do krótkiej nazwy klasy, która znajduje się w węźle indeksu. W tym przypadku elementu ComponentPort jest abstrakcyjna klasa bazowa InPort i elementu OutPort. W związku z tym jedną z tych elementów mogą być akceptowane.
 
-ComponentModel, klasy głównym języka, ma element dyrektywy scalania dla składników i komentarze. Użytkownika języka można przeciągnij elementy dla tych klas bezpośrednio na diagramu, ponieważ puste części diagramu reprezentują klasy głównym. Jednak ComponentModel zawiera żadna dyrektywa scalania element ComponentPort. W związku z tym użytkownika języka nie można przeciągnąć InPorts lub OutPorts bezpośrednio na diagramie.
+ComponentModel, Klasa główna języka, ma dyrektywy scalania elementów dla składników i komentarze. Użytkownik języka można przeciągać elementy dla tych klas bezpośrednio na diagram, ponieważ puste części diagramu reprezentuje klasę głównego. Jednak ComponentModel nie ma żadnych dyrektywa scalania dla elementu ComponentPort. W związku z tym użytkownik języka nie można przeciągnąć InPorts lub OutPorts bezpośrednio na diagramie.
 
-Dyrektywa scalania element określa, jakie łącza lub łącza są tworzone, aby nowy element można zintegrować lub scalić istniejącego modelu. ComponentPort wystąpienie ComponentHasPorts jest tworzone. DomainPath identyfikuje zarówno relacji, jak i właściwość klasy nadrzędnej portów, do których zostanie dodany nowy element.
+Dyrektywa scalania Określa, jakie łącza lub łącza są tworzone tak, aby nowy element można zintegrować lub scalić istniejący model. Dla elementu ComponentPort tworzone jest wystąpienie elementu ComponentHasPorts. DomainPath identyfikuje zarówno relacji, jak i właściwość klasy nadrzędnej, portów, do których zostanie dodany nowy element.
 
-Można utworzyć więcej niż jednego połączenia w dyrektywie scalania element umieszczając w niej więcej niż jedną ścieżkę tworzenia łącza. Jedna ze ścieżek musi być osadzony.
+Można utworzyć więcej niż jednego połączenia w dyrektywie scalania elementów, tym więcej niż jednej ścieżki tworzenia linku. Jedna ze ścieżek muszą być osadzone.
 
-Można użyć więcej niż jeden segment w ścieżce tworzenia łącza. W takim przypadku ostatni segment definiuje, jakie link musi zostać utworzony. Wcześniej segmentów przejdź z klasy nadrzędnej obiektu, z którego można utworzyć nowy link.
+W ścieżce tworzenia linku, można użyć więcej niż jednego segmentu. W tym przypadku ostatni element definiuje, jakie łącza muszą być tworzone. Wcześniej segmentów przejdź z klasy nadrzędnej obiektu, z którego można utworzyć nowy link.
 
-Na przykład można dodać tej dyrektywy scalania element do klasy składnika:
+Na przykład można dodać tej dyrektywy scalenia elementów do klasy składników:
 
 ```
 <DomainClass Name="Component" ...> ...
@@ -352,35 +352,35 @@ Na przykład można dodać tej dyrektywy scalania element do klasy składnika:
   </ElementMergeDirective>
 ```
 
-Użytkownicy języka można przeciągnięcie komentarz do składnika i mieć nowy komentarz automatycznie utworzone z łączem do składnika.
+Użytkownicy języka można przeciągnąć składnik komentarz i mają nowy komentarz, które są tworzone automatycznie za pomocą łącza do składnika.
 
-Pierwszy ścieżki tworzenia łącza nawiguje między `Component` do `ComponentModel` , a następnie tworzy wystąpienie relacja osadzania `ComponentModelHasComments`. Drugi ścieżki tworzenia łącza tworzy łącze relacji odwołania CommentsReferenceComponents z hosta składnik do nowego komentarza. Wszystkie ścieżki tworzenia link musi rozpoczynać się od klasy obsługującej i musi się kończyć na łącze tej czynności na nowo wystąpień klasy.
+Pierwszy ścieżki tworzenia linku powoduje przejście z `Component` do `ComponentModel` , a następnie tworzy wystąpienie relacji osadzania `ComponentModelHasComments`. Drugi ścieżki tworzenia linku tworzy łącze relacji odwołania CommentsReferenceComponents z hosta składnika nowy komentarz. Wszystkie ścieżki tworzenia linku musi rozpoczynać się od klasy obsługującej i musi kończyć łącza tego kroków prowadzących do nowo skonkretyzowaną klasę.
 
 ## <a name="xmlclassdata"></a>XmlClassData
 
-Każda klasa domeny (w tym relacje i inne podtypy) mogą mieć dodatkowe informacje zawarte w `XmlClassData` węzła, który jest wyświetlany w obszarze `XmlSerializationBehavior` sekcji pliku DslDefinition.dsl. Te informacje w szczególności dotyczy jak wystąpień klasy są przechowywane w postaci serializacji podczas zapisywania do pliku modelu.
+Każda klasa domeny (w tym relacji i innych podtypów) może mieć dodatkowe informacje zawarte w `XmlClassData` węzła, który pojawia się w obszarze `XmlSerializationBehavior` sekcji plik DslDefinition.dsl. Te informacje dotyczy w szczególności, jak wystąpienia klasy są przechowywane w postaci serializowanej, gdy model jest zapisywany do pliku.
 
-Większość wygenerowany kod, który `XmlSerializationBehavior` ma wpływ `Dsl\GeneratedCode\Serializer.cs`.
+Większość wygenerowany kod, który `XmlSerializationBehavior` trwa wpływa `Dsl\GeneratedCode\Serializer.cs`.
 
 Każdy `XmlClassData` węzła zawiera następujące węzły podrzędne i atrybuty:
 
--   Węzeł krótkiej nazwy, która odwołuje się do klasy, do którego odnosi się dane.
+-   Węzeł monikera, która odwołuje się do klasy, do której stosują się dane.
 
 -   **XmlPropertyData** dla każdej właściwości, która jest zdefiniowana w klasie.
 
--   **XmlRelationshipData** dla każdej relacji, które są uzyskiwane w klasie. (Relacje również mieć własne węzłów XmlClassData).
+-   **Element XmlRelationshipData** dla każdej relacji, który jest rozwijani w klasie. (Relacje również mieć własne węzłów XmlClassData).
 
--   **Właściwość TypeName** atrybut ciągu, który określa nazwę klasy pomocnika serializacji w wygenerowanym kodzie.
+-   **Element TypeName** atrybut ciągu, który określa nazwę klasy pomocnika serializacji w wygenerowanym kodzie.
 
--   **ElementName** ciąg, który określa tagu XML serializacji wystąpienia tej klasy. Według Konwencji ElementName jest zwykle taka sama jak nazwa klasy z wyjątkiem pierwszej litery jest pisana małymi literami. Na przykład plik przykładowy model rozpoczyna się następująco:
+-   **ElementName** ciąg, który określa tagu XML serializacji wystąpienia tej klasy. Zgodnie z Konwencją ElementName jest zwykle taka sama jak nazwa klasy z wyjątkiem pierwszej litery jest pisana małymi literami. Na przykład plik przykładowy model rozpoczyna się następująco:
 
     ```
     <componentModel ...
     ```
 
--   **MonikerElementName** w plikach serializacji modelu użytkownika. Ten atrybut wprowadza krótkiej nazwy, która odwołuje się do tej klasy.
+-   **MonikerElementName** w plikach modelu serializowane przez użytkownika. Ten atrybut wprowadza moniker elementu, który odwołuje się do tej klasy.
 
--   **MonikerAttributeName**, który identyfikuje nazwa atrybutu XML w krótka nazwa. W tym fragmencie pliku serializacji użytkownika Autor języka specyficznego dla domeny zdefiniowane **MonikerElementName** jako "inPortMoniker" i **MonikerAttributeName** jako "path":
+-   **Elementu MonikerAttributeName**, który identyfikuje nazwę atrybutu XML w ramach krótka. W tym fragmencie pliku Zserializowany użytkownika Autor języka specyficznego dla domeny zdefiniowane **MonikerElementName** jako "inPortMoniker" i **elementu MonikerAttributeName** jako "path":
 
     ```
     <inPortMoniker path="//Component2/InPort1" />
@@ -388,35 +388,35 @@ Każdy `XmlClassData` węzła zawiera następujące węzły podrzędne i atrybut
 
 ### <a name="connectionbuilders"></a>ConnectionBuilders
 
-Konstruktor połączenia jest zdefiniowana dla każdego narzędzia połączenia. Konstruktor każdego połączenia składa się z co najmniej jeden element LinkConnectDirective, z których każdy zawiera jeden lub więcej elementów SourceDirective i co najmniej jeden element TargetDirective. Po kliknięciu przycisku narzędzia połączenia, użytkownik może uruchomić połączenie z dowolnym kształcie zamapowane na element modelu, który pojawi się na liście elementów SourceDirective. Następnie można wykonać połączenia kształtu, który jest zamapowany do elementu, który pojawi się na liście elementów TargetDirective. Klasa relacji wystąpienia zależy od elementu LinkConnectDirective wskazywany przez gdzie połączenie zostało uruchomione.
+Konstruktor połączeń jest zdefiniowana dla każdego narzędzia połączenia. Każdy konstruktora połączeń składa się z co najmniej jeden element LinkConnectDirective, z których każdy zawiera jeden lub więcej elementów SourceDirective i jeden lub więcej elementów TargetDirective. Po kliknięciu przycisku narzędzia połączenia, użytkownik może uruchomić połączenia z dowolnym kształcie mapowany do elementu modelu, który pojawia się na liście elementów SourceDirective. Następnie można zakończyć połączenia dla kształtu, który jest mapowany na element, który pojawia się na liście elementów TargetDirective. Klasy relacji wystąpienia zależy od elementu LinkConnectDirective wyznaczony, gdy połączenie zostało uruchomione.
 
 ### <a name="xmlpropertydata"></a>XmlPropertyData
 
 A **DomainPropertyMoniker** atrybut określa właściwość, do którego odwołuje się dane. Ten atrybut musi być właściwością klasy otaczającej danych klas.
 
-**XmlName** atrybutu daje z odpowiednią nazwą atrybutu, jak powinien wyglądać w pliku XML. Konwencja, ten ciąg jest taka sama jak nazwa właściwości z wyjątkiem pierwszej litery jest pisana małymi literami.
+**XmlName** atrybutu daje odpowiedniej nazwy atrybutu, który powinien być widoczny w pliku XML. Umownie ten ciąg jest taka sama jak nazwa właściwości z wyjątkiem pierwszej litery jest pisana małymi literami.
 
-Domyślnie **reprezentacja** atrybut ma wartość atrybutu. Jeśli **reprezentacja** ustawiono Element podrzędny węzła jest tworzony w pliku XML. Jeśli **reprezentacja** jest ustawić wartość Ignore, właściwość nie jest serializowany.
+Domyślnie **reprezentacji** atrybut jest ustawiony na wartość Attribute. Jeśli **reprezentacji** jest ustawiona na Element podrzędny jest tworzony węzeł w pliku XML. Jeśli **reprezentacji** jest ustawić wartość Ignore, właściwość nie jest serializowana.
 
-**IsMonikerKey** i **IsMonikerQualifier** atrybuty przypisać właściwości rolę w identyfikacji wystąpienia klasy nadrzędnej. Można ustawić **IsMonikerKey** na wartość true dla jednej właściwości, która jest zdefiniowana w lub dziedziczone przez klasy. Ten atrybut identyfikuje poszczególne wystąpienia klasy nadrzędnej. Właściwość, której możesz ustawić `IsMonikerKey` jest zazwyczaj nazwą lub innego identyfikatora klucza. Na przykład `Name` właściwości ciągu jest kluczem moniker dla nazwanego i jej klas pochodnych. Gdy użytkownik zapisuje modelu do pliku, ten atrybut musi zawierać unikatowe wartości dla każdego wystąpienia między jego elementów równorzędnych w drzewie osadzenia relacji.
+**IsMonikerKey** i **IsMonikerQualifier** atrybuty nadać właściwości roli do identyfikowania wystąpienia klasy nadrzędnej. Możesz ustawić **IsMonikerKey** na wartość true dla jednej właściwości, która jest zdefiniowana w lub dziedziczone przez klasy. Ten atrybut identyfikuje poszczególne wystąpienia klasy nadrzędnej. Właściwość, której możesz ustawić `IsMonikerKey` jest zazwyczaj nazwę lub inny identyfikator klucza. Na przykład `Name` właściwość ciągu jest kluczem monikera NamedElement i jej klasy pochodne. Gdy użytkownik zapisuje model do pliku, ten atrybut musi zawierać unikatowe wartości dla każdego wystąpienia wśród elementów równorzędnych w drzewie relacji osadzania.
 
-W pliku modelu serializacji pełne krótkiej nazwy elementu jest ścieżką z katalogu głównego modelu niżej na drzewie osadzenia relacje zamykający klucza krótkiej nazwy w każdym punkcie. Na przykład InPorts są osadzone w składnikach, które z kolei są osadzone w modelu głównym. Dlatego jest prawidłową krótką nazwę:
+W pliku modelu serializowane pełną moniker elementu jest ścieżka z katalogu głównego modelu niżej na drzewie osadzania relacji cytowanie kluczem monikera w każdym punkcie. Na przykład InPorts są osadzone w ramach składników, które z kolei są osadzone w głównym modelu. Nieprawidłowy moniker jest w związku z tym:
 
 ```
 <inPortMoniker name="//Component2/InPort1" />
 ```
 
-Można ustawić **IsMonikerQualifier** atrybutu dla właściwości ciągu i zapewnić dodatkowe sposób utworzyć pełną nazwę elementu. Na przykład w pliku DslDefinition.dsl **Namespace** jest kwalifikatora krótkiej nazwy.
+Możesz ustawić **IsMonikerQualifier** atrybutu dla właściwości ciągu i podaj dodatkowe sposobem konstruowania pełną nazwę elementu. Na przykład w plik DslDefinition.dsl **Namespace** jest kwalifikatorem monikera.
 
-### <a name="xmlrelationshipdata"></a>XmlRelationshipData
+### <a name="xmlrelationshipdata"></a>Element XmlRelationshipData
 
-W pliku modelu serializacji łączy (osadzanie i odwołanie relacje) są reprezentowane przez węzły podrzędne końca źródłowego relacji. Do osadzenia relacje, węzeł podrzędny zawiera poddrzewo. W przypadku relacji odwołania węzeł podrzędny zawiera krótkiej nazwy, która odwołuje się do innej części drzewa.
+W pliku modelu serializowane łącza (relacji osadzania i odwołania) są reprezentowane przez węzły podrzędne końca źródło relacji. Aby osadzić relacje, węzeł podrzędny zawiera poddrzewo. W przypadku relacji odwołania węzeł podrzędny zawiera moniker elementu, który odwołuje się do innej części drzewa.
 
-**XmlRelationshipData** atrybutu w **XmlClassData** atrybut definiuje dokładnie, jak węzły podrzędne są zagnieżdżone w obrębie elementu źródła. Każdy relacji, który jest źródłem w klasie domeny ma jeden **XmlRelationshipData** atrybutu.
+**XmlRelationshipData** atrybutu w **XmlClassData** atrybut definiuje dokładnie, jak węzły podrzędne są zagnieżdżone w obrębie elementu źródłowego. Każda relacja, który jest źródłem dla klasy domeny ma jeden **XmlRelationshipData** atrybutu.
 
-**DomainRelationshipMoniker** atrybut identyfikuje jednej z relacji powierzając jej ich konserwację w klasie.
+**DomainRelationshipMoniker** atrybut identyfikuje w jednej z relacji źródło w klasie.
 
-**RoleElementName** atrybutu daje nazwie tagu XML, który umieszcza węzła podrzędnego w danych serializacji.
+**RoleElementName** atrybutu daje nazwa tagu XML, który otacza węzeł podrzędny w danych serializacji.
 
 Na przykład plik DslDefinition.dsl zawiera:
 
@@ -429,7 +429,7 @@ Na przykład plik DslDefinition.dsl zawiera:
     </XmlRelationshipData>
 ```
 
-W związku z tym zawiera seryjnych pliku:
+W związku z tym Zserializowany plik zawiera:
 
 ```
 <component name="Component1"> <!-- parent ->
@@ -440,7 +440,7 @@ W związku z tym zawiera seryjnych pliku:
    </ports> ...
 ```
 
-Jeśli **UseFullForm** atrybut ma ustawioną wartość true, wprowadza dodatkową warstwę zagnieżdżenia. Ta warstwa reprezentuje samą relację. Ten atrybut musi mieć ustawioną wartość true, jeśli relacja ma właściwości.
+Jeśli **atrybutu UseFullForm** atrybut jest ustawiony na wartość true, dodatkową warstwę zagnieżdżenia został wprowadzony. Ta warstwa reprezentuje samą relację. Ten atrybut musi być równa true, jeśli relacja ma właściwości.
 
 ```
 <XmlClassData ElementName="outPort">
@@ -453,7 +453,7 @@ Jeśli **UseFullForm** atrybut ma ustawioną wartość true, wprowadza dodatkow�
  </XmlClassData>
 ```
 
-Zawiera seryjnych pliku:
+Zserializowany plik zawiera:
 
 ```
 <outPort name="OutPort1">  <!-- Parent ->
@@ -465,9 +465,9 @@ Zawiera seryjnych pliku:
   </outPort>
 ```
 
-(Relacja połączenia ma własną klasy danych XML, co zapewnia jego nazw elementów i atrybutów).
+(Relacja połączenie ma swój własny danych klasy XML, co zapewnia jego nazw elementów i atrybutów).
 
-Jeśli **OmitElement** atrybut jest ustawiony na wartość true, relacji nazwa roli jest pominięty, który wyświetla trzyliterowy skrót pliku serializacji i jest jednoznaczne, jeśli dwie klasy mieć nie więcej niż jedną relację. Na przykład:
+Jeśli **OmitElement** atrybut jest ustawiony na wartość true, relacja nazwy roli zostanie pominięty, który wyświetla trzyliterowy skrót pliku serializowane i jest jednoznaczna, jeśli dwie klasy mieć nie więcej niż jedną relację. Na przykład:
 
 ```
 <component name="Component3">
@@ -478,9 +478,9 @@ Jeśli **OmitElement** atrybut jest ustawiony na wartość true, relacji nazwa r
 
 ### <a name="serialization-of-a-domain-specific-language-definition"></a>Serializacja definicji języka specyficznego dla domeny
 
-Plik DslDefinition.dsl jest plikiem serializacji i jest zgodny z definicją języka specyficznego dla domeny. Oto kilka przykładów definicje serializacji XML:
+Plik DslDefinition.dsl jest sam to Zserializowany plik i jest zgodny z definicji języka specyficznego dla domeny. Poniżej przedstawiono kilka przykładów definicji serializacji XML:
 
--   **DSL** jest węzeł RootClass i klasa diagramu. DomainClass elementu DomainRelationship i inne elementy są osadzone w obszarze `Dsl`.
+-   **Język DSL** jest węzeł klasy RootClass i klasa diagramu. Klasa DomainClass, relacji DomainRelationship i inne elementy są osadzone w obszarze `Dsl`.
 
 -   **Klasy** jest **RoleElementName** relacji między języka specyficznego dla domeny i DomainClass.
 
@@ -490,7 +490,7 @@ Plik DslDefinition.dsl jest plikiem serializacji i jest zgodny z definicją jęz
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
 ```
 
--   **XmlSerializationBehavior** atrybutu jest osadzony w obszarze `Dsl` atrybutu, ale **OmitElement** atrybut został ustawiony na Relacja osadzania. W związku z tym nie `RoleElementName` uczestniczyło atrybutu. Z kolei **danych klas** atrybutu `RoleElementName` atrybutu osadzania relacji między **XmlSerializationBehavior** atrybutu i **XmlClassData** atrybutu.
+-   **Elementu XmlSerializationBehavior** atrybutu jest osadzony w obszarze `Dsl` atrybutu, ale **OmitElement** atrybut został ustawiony w relacji osadzania. W związku z tym, bez `RoleElementName` uczestniczyło atrybutu. Z drugiej strony **danych klas** atrybut jest `RoleElementName` atrybut relacja osadzania między **elementu XmlSerializationBehavior** atrybutu i **XmlClassData** atrybutu.
 
 ```
 <Dsl Name="CmptDsl5" ...> ...
@@ -500,7 +500,7 @@ Plik DslDefinition.dsl jest plikiem serializacji i jest zgodny z definicją jęz
       <XmlClassData ...>...</XmlClassData>
 ```
 
--   ConnectorHasDecorators jest relacja osadzania między `Connector` i `Decorator`. `UseFullForm` ustawiono tak, aby nazwa relacji pojawi się z listą właściwości dla każdego łącza z obiektu łącznika. Jednak `OmitElement` również została ustawiona, aby nie `RoleElementName` umieszcza wielu linki, które są osadzone wewnątrz `Connector`:
+-   ConnectorHasDecorators jest relacja osadzania między `Connector` i `Decorator`. `UseFullForm` zostało ustawione tak, aby nazwa relacji pojawia się z listą właściwości dla każdego linku z obiektu łącznika. Jednak `OmitElement` ma również ustawienie, aby nie `RoleElementName` zawiera wiele łączy, które są osadzone wewnątrz `Connector`:
 
 ```
 <Connector Name="AssociationLink" ...>
@@ -515,19 +515,19 @@ Plik DslDefinition.dsl jest plikiem serializacji i jest zgodny z definicją jęz
 
 ## <a name="shapes-and-connectors"></a>Kształty i łączniki
 
-Definicje kształt i łącznika atrybuty i węzłów podrzędnych dziedziczyć klasy domeny, oprócz następujących czynności:
+Definicje kształtów i łączników atrybutów i węzłów podrzędnych dziedziczyć klasy domeny, oprócz następujących czynności:
 
 -   `Color` i `Line``Style` atrybutów.
 
--   **ExposesFillColorAsProperty** i kilku atrybutów podobne. Te atrybuty logiczne wprowadź odpowiednią zmienną właściwości przez użytkownika. Ogólnie rzecz biorąc, kliknięcie języka kształt na diagramie, właściwości wyświetlanych w **właściwości** okna są wystąpienia klasy domeny, do którego kształt jest zamapowany. Jeśli `ExposesFillColorAsProperty` ma wartość true, właściwość kształt pojawia się również.
+-   **ExposesFillColorAsProperty** i kilku atrybutów podobne. Te atrybuty typu Boolean wprowadź odpowiednią zmienną właściwości przez użytkownika. Ogólnie rzecz biorąc, gdy użytkownik języka kliknie kształt na diagramie, właściwości wyświetlanych w **właściwości** okna są zależne od wystąpienia klasy domeny, na który jest mapowany kształt. Jeśli `ExposesFillColorAsProperty` ma wartość true, właściwość kształt pojawia się również.
 
--   **ShapeHasDecorators**. Wystąpienie tego atrybutu występuje dla każdego tekstu, ikony lub dekoratora Rozwiń/Zwiń. (W pliku DslDefinition.dsl `ShapeHasDecorators` relację z `UseFullForm` ustawioną na true.)
+-   **ShapeHasDecorators**. Wystąpienie tego atrybutu jest wykonywana dla każdego typu text, ikony lub dekoratora Rozwiń/Zwiń. (W plik DslDefinition.dsl `ShapeHasDecorators` relację z `UseFullForm` ma wartość true.)
 
-## <a name="shape-maps"></a>Kształt mapy
+## <a name="shape-maps"></a>Mapowania kształtów
 
-Mapy kształtu określają sposób wyświetlania wystąpienia klasy danej domeny na ekranie reprezentowany przez kształtu. Mapy zarówno kształtu, jak i łącznika są wyświetlane w obszarze `Diagram` sekcji pliku DslDefinition.dsl.
+Mapowania kształtów określają, jak wystąpień klasy danej domeny są wyświetlane na ekranie, reprezentowane przez kształty. Mapowań zarówno kształtów i łączników są wyświetlane w obszarze `Diagram` sekcji plik DslDefinition.dsl.
 
-Jak w poniższym przykładzie `ShapeMap` elementy mają co najmniej, krótkiej nazwy klasy domeny, moniker kształtu, a `ParentElementPath` elementu:
+Jak w poniższym przykładzie `ShapeMap` elementów ma co najmniej, moniker klasy domeny, moniker kształtu, a `ParentElementPath` elementu:
 
 ```
 <ShapeMap>
@@ -539,17 +539,17 @@ Jak w poniższym przykładzie `ShapeMap` elementy mają co najmniej, krótkiej n
 </ShapeMap>
 ```
 
-Podstawową funkcją `ParentElementPath` element jest tak, aby w tej samej klasy obiektów może pojawić się jako inny kształt w różnych kontekstach. Na przykład jeśli `InPort` można również osadzać w komentarzu, `InPort` może występować jako inny kształt do tego celu.
+Podstawową funkcją `ParentElementPath` element jest tak, aby w tej samej klasie obiekty mogą być wyświetlane jako innego kształtu w różnych kontekstach. Na przykład jeśli `InPort` można również osadzić w komentarzu, `InPort` może się pojawić jako innego kształtu, w tym celu.
 
-Po drugie ścieżka Określa, jak kształtu odnosi się do elementu nadrzędnego. Nie określono żadnych osadzania struktury między kształtów w pliku DslDefinition.dsl. Musi rozpoznać struktury z mapy kształtu. Element nadrzędny kształtu jest kształtu, który jest zamapowany do elementu domeny, który identyfikuje ścieżkę elementu nadrzędnego. W takim przypadku ścieżki identyfikuje składnika, do którego `InPort` należy. W innym mapy kształtu Klasa składnika jest mapowany na ComponentShape. W związku z tym nowy `InPort` kształtu staje się elementem podrzędnym kształt z jego składników `ComponentShape`.
+Po drugie ścieżka Określa, jak kształt odnosi się do elementu nadrzędnego. Nie osadzania struktura jest zdefiniowana między kształtami na plik DslDefinition.dsl. Musi wywnioskować struktury z mapowań kształtów. Kształt nadrzędny jest kształtu, który jest mapowany na element domeny, który identyfikuje ścieżka elementu nadrzędnego. W tym przypadku ścieżki identyfikuje składnika, do którego `InPort` należy. W innym mapowanie kształtów klasa składnika jest zamapowana na ComponentShape. W związku z tym, nowe `InPort` kształt następuje element podrzędny kształt z jego składników `ComponentShape`.
 
-Jeśli zamiast tego dołączonego portu podczerwieni kształtu do diagramu, ścieżka elementu nadrzędnego mają przyjąć kolejny krok do modelu składnika, który jest mapowany do diagramu:
+Jeśli zamiast tego dołączonego elementu InPort kształtu na diagramie, ścieżka elementu nadrzędnego musiałby wykonać kolejny krok w celu modelu składnika, który jest mapowany do diagramu:
 
 ```
 ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . ComponentModel / ! ComponentModel
 ```
 
-Katalogu głównego modelu nie ma mapy kształtu. Zamiast tego głównego odwołuje się bezpośrednio z diagramu, który ma `Class` elementu:
+Korzeń modelu ma mapowanie kształtów. Zamiast tego główny odwołuje się bezpośrednio z diagramu, który ma `Class` elementu:
 
 ```
 <Diagram Name="ComponentDiagram" >
@@ -558,17 +558,17 @@ Katalogu głównego modelu nie ma mapy kształtu. Zamiast tego głównego odwoł
     </Class>...
 ```
 
-### <a name="decorator-maps"></a>Dekoratora mapy
+### <a name="decorator-maps"></a>Mapowania dekoratorów
 
-Mapa dekoratora kojarzy właściwości w klasie zmapowane do dekorator dla kształtu. Jeśli właściwość jest typu wyliczeniowego lub Boolean, jego wartość można określić, czy dekorator jest widoczny. Jeśli dekorator dekoratora tekstu, wartości właściwości mogą być wyświetlane, a użytkownik może go edytować.
+Mapowanie dekoratora kojarzy właściwości w klasie mapowanego do dekoratora dla kształtu. Jeśli właściwość jest typu wyliczeniowego lub wartość logiczna, wartość można określić, czy dekorator jest widoczny. Jeśli dekorator jest dekoratora tekstu, wartości właściwości mogą być wyświetlane, a użytkownik może edytować go.
 
-### <a name="compartment-shape-maps"></a>Przedział kształtu mapy
+### <a name="compartment-shape-maps"></a>Mapowania kształtów przedziału
 
-Mapy kształtu Przedział są podtypów map kształtu.
+Mapowania kształtów przedziału są podtypy mapowania kształtów.
 
-## <a name="connector-maps"></a>Łącznik mapy
+## <a name="connector-maps"></a>Mapowania łączników
 
-Mapa minimalnego łącznika odwołuje się łącznika i relacji:
+Mapowanie łącznika minimalny odwołuje się łącznikiem i relacją:
 
 ```
 <ConnectorMap>
@@ -577,10 +577,10 @@ Mapa minimalnego łącznika odwołuje się łącznika i relacji:
 </ConnectorMap>
 ```
 
-Łącznik maps może również zawierać dekoratora mapy.
+Mapowania łączników może również zawierać mapowania dekoratorów.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Słownik narzędzia języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Słownik narzędzi języka specyficznego dla domeny](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [Instrukcje: Definiowanie języka właściwego dla domeny](../modeling/how-to-define-a-domain-specific-language.md)
 - [Opis modeli, klas i relacji](../modeling/understanding-models-classes-and-relationships.md)

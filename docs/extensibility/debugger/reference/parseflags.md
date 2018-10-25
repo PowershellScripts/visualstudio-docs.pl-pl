@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70766aef19c199a191f141947f1b5a458450c322
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7192483b4f2ce88235fc5e8d48f1d51ef71b442f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913010"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 Określa, jak można przeanalizować wyrażenia.  
@@ -46,16 +46,16 @@ public enum enum_PARSEFLAGS {
   
 ## <a name="members"></a>Elementy członkowskie  
  PARSE_EXPRESSION  
- Wskazuje, czy wyrażenie nie jest oświadczenie.  
+ Wskazuje, czy wyrażenie nie jest instrukcja.  
   
  PARSE_FUNCTION_AS_ADDRESS  
- Wskazuje, czy wyrażenie jest analizowana (i później oceniane) jako adres.  
+ Wskazuje, czy wyrażenie jest analizowany (i później oceniane) jako adres.  
   
  PARSE_DESIGN_TIME_EXPR_EVAL  
- Wskazuje, czy wyrażenie jest przetwarzane w czasie projektowania (oznacza to, gdy projektant jest otwarty).  
+ Wskazuje, czy wyrażenie jest analizowana w czasie projektowania (oznacza to, gdy projektant jest otwarty).  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako parametr [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) i [przeanalizować](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) metody.  
+ Przekazany jako parametr do [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) i [przeanalizować](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -67,4 +67,4 @@ public enum enum_PARSEFLAGS {
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   
- [analizy](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
+ [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

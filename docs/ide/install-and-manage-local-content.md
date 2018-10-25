@@ -1,5 +1,5 @@
 ---
-title: Zainstaluj lokalny dokumentacji pomocy programu Visual Studio
+title: Zainstaluj lokalną dokumentację pomocy programu Visual Studio
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
@@ -25,109 +25,109 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 702c1124e3b14f8bfec4f514edd8e1e7def6b776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 238c903fc81ef2323d0de44e4e5b900a9b68d766
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947641"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915850"
 ---
-# <a name="install-and-manage-local-content"></a>Zainstaluj i Zarządzaj zawartości lokalnej
+# <a name="install-and-manage-local-content"></a>Instalowanie i zarządzać zawartością lokalną
 
-Za pomocą Podglądu pomocy firmy Microsoft, można dodać, usunąć, aktualizacji i przenieść zawartości pomocy, która jest zainstalowana na komputerze, aby spełniały Twoje potrzeby rozwoju oprogramowania.
+Za pomocą Podglądu pomocy firmy Microsoft, mogą dodawania, usuwania, zaktualizować i przenieść zawartość pomocy, która jest zainstalowana na komputerze, aby zaspokajać potrzeby rozwoju oprogramowania.
 
-Aby zarządzać zawartości na komputerze lokalnym, musisz zalogować się przy użyciu konta z uprawnieniami administratora. Ponadto nie można zarządzać lokalnej zawartości podczas pracy w środowisku przedsiębiorstwa, ponieważ administratorzy systemu może podejmowanie tych decyzji dotyczących organizacji. Aby uzyskać więcej informacji, zobacz [Przewodnik administratora podglądu pomocy](../ide/help-viewer-administrator-guide.md).
+Aby zarządzać zawartością na komputerze lokalnym, należy zalogować się przy użyciu konta z uprawnieniami administratora. Ponadto nie można zarządzać zawartością lokalną, jeśli pracujesz w środowisku przedsiębiorstwa, ponieważ administratorzy systemu mogą podjąć te decyzje dla danej organizacji. Aby uzyskać więcej informacji, zobacz [Podręcznik administratora programu Podgląd Pomocy](../ide/help-viewer-administrator-guide.md).
 
 ## <a name="change-the-content-installation-source"></a>Zmiana źródła instalacji zawartości
 
-Domyślnie Podgląd pomocy instalację zawartości przy użyciu usługi online firmy Microsoft jako źródło. Zazwyczaj nie zmienisz źródła zawartości chyba, że pracujesz w środowisku firmowym, dla której administrator systemu zainstalował już zawartości w innej lokalizacji.
+Domyślnie Podgląd pomocy instaluje zawartość przy użyciu usług Microsoft online Services jako źródło. Możesz ogólnie nie należy zmieniać źródła zawartości, chyba że użytkownik pracuje w środowisku przedsiębiorstwa, dla którego administrator systemu już zainstalował zawartość w innej lokalizacji.
 
-### <a name="to-change-the-content-installation-source"></a>Aby zmienić źródło instalacji zawartości
+### <a name="to-change-the-content-installation-source"></a>Aby zmienić źródło zawartości instalacji
 
-1.  Na **zarządzania zawartością** , wybierz pozycję **dysku** przycisk opcji.
+1.  Na **zarządzanie zawartością** kartę, wybrać **dysku** przycisku opcji.
 
     > [!NOTE]
-    > **Dysku** opcja jest niedostępna, jeśli administrator uniemożliwił modyfikowanie źródła instalacji zawartości. Aby uzyskać więcej informacji, zobacz [Przewodnik administratora podglądu pomocy](../ide/help-viewer-administrator-guide.md).
+    > **Dysku** opcja jest niedostępna, jeśli administrator uniemożliwił Ci modyfikowanie źródła instalacji zawartości. Aby uzyskać więcej informacji, zobacz [Podręcznik administratora programu Podgląd Pomocy](../ide/help-viewer-administrator-guide.md).
 
 2.  Wykonaj jedną z następujących czynności:
 
-    -   Wprowadź ścieżkę *.msha* pliku lub adres URL punktu końcowego usługi.
+    -   Wprowadź ścieżkę *.msha* plik lub adres URL punktu końcowego usługi.
 
-    -   Kliknij przycisk Przeglądaj (**...** ) przycisk, aby przejść do *.msha* pliku.
+    -   Wybierz kolejno opcje Przeglądaj (**...** ) przycisk, aby przejść do *.msha* pliku.
 
-    -   Na liście wybierz polecenie wpisu, który został ostatnio używanych.
+    -   Na liście wybierz wpis, który był używany ostatni.
 
-## <a name="download-and-install-content-locally"></a>Pobierz i zainstaluj zawartość lokalnie
+## <a name="download-and-install-content-locally"></a>Pobieranie i instalowanie zawartości lokalnie
 
-Jeśli pobrać i zainstalować zawartość na komputerze lokalnym, można wyświetlić tematy, gdy nie ma połączenia internetowego.
+Jeżeli pobierzesz i zainstalujesz zawartość na komputerze lokalnym, możesz wyświetlić tematy, gdy nie masz dostępu do Internetu.
 
 > [!IMPORTANT]
 > Aby zainstalować zawartość, należy zalogować się przy użyciu konta z uprawnieniami administracyjnymi.
 
 > [!NOTE]
-> Jeśli ustawiono programu Visual Studio IDE języka innego niż angielski, można zainstalować zawartości w języku angielskim i zlokalizowanej zawartości. Jednak żadnej zawartości pojawi się zainstalowanie wersji angielskiej i **obejmują angielskim zawartości we wszystkich kartach nawigacji i żądaniach F1** pole wyboru w **Opcje aplikacji Viewer** okno dialogowe jest wyczyszczone.
+> Jeśli programu Visual Studio IDE jest ustawiony na język inny niż angielski, można zainstalować zawartość w języku angielskim i/lub zlokalizowanej zawartości. Jednak żadnej zawartości pojawia się po zainstalowaniu tylko angielskiej wersji i **zawartości Zawrzyj w języku angielskim we wszystkich kartach nawigacji i żądaniach F1** pole wyboru w **Opcje podglądu** okno dialogowe zostanie wyczyszczona.
 
 ### <a name="to-download-and-install-content"></a>Aby pobrać i zainstalować zawartość
 
-1.  Wybierz **zarządzania zawartością** kartę.
+1.  Wybierz **zarządzanie zawartością** kartę.
 
-2.  Na liście zawartości, wybierz **Dodaj** link obok książki lub książek, które chcesz pobrać i zainstalować.
+2.  Na liście zawartości, wybierz opcję **Dodaj** łącze obok księgi lub ksiąg, które chcesz pobrać i zainstalować.
 
-     Książce jest dodawany do **oczekujące zmiany** listy i szacowany rozmiar książki lub książek określonych pojawia się poniżej tej listy. Ponieważ niektóre książek udostępnić tematy, rozmiar całkowitą pobierania wielu książek może być mniejszy niż wynik zsumowanie rozmiary książki, co określony.
+     Książka zostanie dodana do **oczekujące zmiany** listy, a szacowany rozmiar księgi lub ksiąg, które określiłeś, zostanie wyświetlone poniżej tej listy. Ponieważ niektóre książki mają wspólne tematy, całkowity rozmiar wiele książek może być mniejszy niż suma wielkości każdej z książek.
 
 3.  Wybierz **aktualizacji** przycisku.
 
-     Książki lub książek, które są instalowane wraz wszelkie aktualizacje książki, które mają już na komputerze. Termin instalacji różny, ale można wyświetlić postęp na pasku stanu.
+     Księgi lub ksiąg, które można określić są instalowane wraz z wszelkimi aktualizacjami książek, które mają już na tym komputerze. Czasy instalacji różnią się, ale mogą wyświetlić postęp na pasku stanu.
 
 ## <a name="remove-local-content"></a>Usuwanie zawartości lokalnej
 
-Przez usunięcie niechcianych zawartości z komputera, można zaoszczędzić miejsce na dysku.
+Można zaoszczędzić miejsce na dysku przez usunięcie niepożądanych elementów ze swojego komputera.
 
 > [!IMPORTANT]
 > Musi mieć uprawnienia administracyjne, aby usunąć zawartość.
 
 > [!NOTE]
-> Nie zawartość jest wyświetlana, jeśli środowiska IDE programu Visual Studio jest ustawiony na języku innym niż angielski, należy usunąć zlokalizowanej zawartości i **obejmują angielskim zawartości we wszystkich karty nawigacji i żądaniach F1** pole wyboru w **Opcje aplikacji Viewer** okno dialogowe jest wyczyszczone.
+> Żadna zawartość jest wyświetlana, jeśli programu Visual Studio IDE jest ustawiony na język inny niż angielski, usuniesz zlokalizowaną zawartości i **zawartości Zawrzyj w języku angielskim we wszystkich kartach nawigacji i żądaniach F1** pole wyboru w **Opcje podglądu** okno dialogowe zostanie wyczyszczona.
 
 ### <a name="to-remove-content"></a>Aby usunąć zawartość
 
-1.  Wybierz **zarządzania zawartością** kartę.
+1.  Wybierz **zarządzanie zawartością** kartę.
 
-2.  Na liście zawartości, wybierz **Usuń** link obok książki lub książek, które mają zostać usunięte.
+2.  Na liście zawartości, wybierz opcję **Usuń** łącze obok księgi lub ksiąg, które chcesz usunąć.
 
-     Książce jest dodawany do **oczekujące zmiany** listy.
+     Książka zostanie dodana do **oczekujące zmiany** listy.
 
 3.  Wybierz **aktualizacji** przycisku.
 
-     Książki lub książek określone przez użytkownika są usuwane z komputera.
+     Księgi lub ksiąg, określonych przez użytkownika są usuwane z komputera.
 
 ## <a name="update-local-content"></a>Aktualizowanie zawartości lokalnej
 
-Pasek stanu wskazuje, kiedy są dostępne aktualizacje do zainstalowanych zawartości.
+Pasek stanu wskazuje, kiedy są dostępne aktualizacje zainstalowanej zawartości.
 
 > [!IMPORTANT]
-> Jeśli chcesz **podglądu pomocy** Aby automatycznie sprawdzać dostępność aktualizacji w trybie online, należy otworzyć **Opcje aplikacji Viewer** okno dialogowe, a następnie wybierz **przejść do trybu online, aby sprawdzić aktualizacje zawartości**pole wyboru.
+> Jeśli chcesz **podglądu pomocy** Aby automatycznie sprawdzać aktualizacje w trybie online, należy otworzyć **Opcje podglądu** okno dialogowe, a następnie wybierz pozycję **przejdź do trybu online, aby sprawdzić, czy są dostępne aktualizacje zawartości**pole wyboru.
 
-### <a name="to-update-local-content"></a>Aby zaktualizować zawartość lokalnego
+### <a name="to-update-local-content"></a>Aby zaktualizować zawartość lokalną
 
--   W prawym dolnym rogu paska stanu, wybierz **kliknij tutaj, aby pobrać teraz** łącza.
+- W prawym dolnym rogu paska stanu, wybierz **kliknij tutaj, aby pobrać teraz** łącza.
 
- Czas aktualizacji może się różnić, ale na pasku stanu jest wyświetlany postęp aktualizacji.
+Czasy aktualizacji mogą się różnić, ale możesz wyświetlić postęp aktualizacji, na pasku stanu.
 
 ## <a name="move-local-content"></a>Przenoszenie zawartości lokalnej
 
-Przenosząc zainstalowaną zawartość z komputera lokalnego do udziału sieciowego lub innej partycji na komputerze lokalnym, można zaoszczędzić miejsce na dysku.
+Przenosząc zainstalowaną zawartość z komputera lokalnego do udziału sieciowego lub na inną partycję na komputerze lokalnym, można zaoszczędzić miejsce na dysku.
 
 > [!IMPORTANT]
-> Aby przenieść zawartość, musisz zalogować się przy użyciu konta z uprawnieniami administracyjnymi.
+> Aby przenieść zawartość, należy zalogować się przy użyciu konta z uprawnieniami administracyjnymi.
 
-### <a name="to-move-local-content"></a>Aby przenieść zawartości lokalnej
+### <a name="to-move-local-content"></a>Aby przenieść zawartość lokalną
 
-1.  Na **zarządzania zawartością** , wybierz pozycję **Przenieś** przycisku w obszarze **lokalnej ścieżki magazynu**.
+1.  Na **zarządzanie zawartością** kartę, wybrać **przenieść** przycisku w obszarze **ścieżkę lokalną Store**.
 
-     **Przenoszenia zawartości** zostanie otwarte okno dialogowe.
+     **Przenoszenie zawartości** zostanie otwarte okno dialogowe.
 
-2.  W **do** polu tekstowym Wprowadź inną lokalizację zawartości, a następnie wybierz **OK** przycisku.
+2.  W **do** pola tekstowego, wprowadzić inną lokalizację zawartości, a następnie wybierz **OK** przycisku.
 
 3.  Wybierz **Zamknij** przycisk po przeniesieniu zawartości.
 

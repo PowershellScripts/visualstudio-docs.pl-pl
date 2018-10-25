@@ -27,12 +27,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 342d51b5057ac0c17e92db1d4c454962b50df19a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239385"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843395"
 ---
 # <a name="hierarchical-update"></a>Hierarchiczna aktualizacja
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,14 +89,14 @@ Hierarchiczna aktualizacja * odnosi się do procesu zapisywanie zaktualizowanych
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Aby zaktualizować kod w celu zatwierdzenia zmian w tabelach pokrewnych przed zapisaniem  
   
-1.  Kliknij dwukrotnie **Zapisz** znajdujący się na <xref:System.Windows.Forms.BindingNavigator> otworzyć **Form1** w edytorze kodu.  
+1. Kliknij dwukrotnie **Zapisz** znajdujący się na <xref:System.Windows.Forms.BindingNavigator> otworzyć **Form1** w edytorze kodu.  
   
-2.  Dodaj wiersz kodu w celu wywołania `OrdersBindingSource.EndEdit` metoda po wierszu, który wywołuje `CustomersBindingSource.EndEdit` metody. Kod w **Zapisz** kliknięcia przycisku zdarzeń powinny wyglądać podobnie do poniższego:  
+2. Dodaj wiersz kodu w celu wywołania `OrdersBindingSource.EndEdit` metoda po wierszu, który wywołuje `CustomersBindingSource.EndEdit` metody. Kod w **Zapisz** kliknięcia przycisku zdarzeń powinny wyglądać podobnie do poniższego:  
   
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
+    [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
+    [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
   
- Oprócz zatwierdzania zmian w pokrewnej tabeli podrzędnej przed zapisaniem danych do bazy danych, również może być konieczne rekordów nadrzędnych zatwierdzenia nowo utworzony przed dodaniem nowych rekordów podrzędnych do zestawu danych. Innymi słowy trzeba będzie dodać nowy rekord nadrzędny (klienta) do zestawu danych przed ograniczenia klucza obcego włączyć nowe rekordy podrzędne (zamówienia), który ma zostać dodany do zestawu danych. Aby to osiągnąć, należy użyć elementu podrzędnego `BindingSource.AddingNew` zdarzeń.  
+   Oprócz zatwierdzania zmian w pokrewnej tabeli podrzędnej przed zapisaniem danych do bazy danych, również może być konieczne rekordów nadrzędnych zatwierdzenia nowo utworzony przed dodaniem nowych rekordów podrzędnych do zestawu danych. Innymi słowy trzeba będzie dodać nowy rekord nadrzędny (klienta) do zestawu danych przed ograniczenia klucza obcego włączyć nowe rekordy podrzędne (zamówienia), który ma zostać dodany do zestawu danych. Aby to osiągnąć, należy użyć elementu podrzędnego `BindingSource.AddingNew` zdarzeń.  
   
 > [!NOTE]
 >  Czy masz do zatwierdzenia nowych rekordów nadrzędnych, zależy od typu formantu, który służy do tworzenia powiązania ze źródłem danych. W tym przewodniku umożliwia pojedynczych formantów powiązania tabeli nadrzędnej. Wymaga to dodatkowego kodu, aby zatwierdzić nowy rekord nadrzędny. Jeśli rekordów nadrzędnych zamiast były wyświetlane w kontrolce złożone powiązanie <xref:System.Windows.Forms.DataGridView>, tym dodatkowe <xref:System.Windows.Forms.BindingSource.EndEdit%2A> wywołania dla rekordu nadrzędnego nie jest konieczne. Jest to spowodowane obsługuje podstawową funkcjonalność powiązanie danych kontrolki, zatwierdzanie nowych rekordów.  

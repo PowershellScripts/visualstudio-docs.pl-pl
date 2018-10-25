@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c6102761e69f8e6cc8bf0d94a81740c934d558f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 537b2c2b682db1e1bed8131df6f010e55ef47744
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115164"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900348"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
-Ta metoda określa język, który proces będzie udostępniana w obszarze. Ten język następnie można przez aparat debugowania (DE) załadować ewaluatora wyrażenia odpowiednie.  
+Ta metoda określa język, który proces będzie obsługiwana w obszarze. Ten język następnie można przez aparat debugowania (DE) załadować Ewaluator wyrażeń odpowiednie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int SetHostingProcessLanguage(
   
 #### <a name="parameters"></a>Parametry  
  `guidLang`  
- [in] `GUID` języka, która powinna być używana DE. Określ `GUID_NULL` (C++) lub `Guid.Empty` (C#) mają DE użyć domyślnego języka.  
+ [in] `GUID` języka, który DE powinien być używany. Określ `GUID_NULL` (C++) lub `Guid.Empty` (C#) mieć DE użycia języka domyślnego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) może służyć do pobrania z bieżącym ustawieniem języka.  
+ [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) może służyć do pobierania z bieżącym ustawieniem języka.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   

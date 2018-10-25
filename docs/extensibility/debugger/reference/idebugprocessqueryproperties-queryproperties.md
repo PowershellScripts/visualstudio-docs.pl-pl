@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c278e5713432c19eaea1a964534c79522e36500b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 37abff77fa0c969be7186413f0e3e2531c8d94d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915402"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
-Ta — metoda zapytania dla określonej wartości debugowania procesu.  
+Tego zapytania metody dla wartości właściwości określonego procesu debugowania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,22 +41,22 @@ int QueryProperties(
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [in] Rozmiar tablic zawierających definicji właściwości i wartości właściwości.  
+ [in] Rozmiar macierzy zawierający definicje właściwości i wartości właściwości.  
   
  `dwPropType`  
- [in] Tablica zawiera definicje właściwości, którego dotyczy kwerenda. Możliwe wartości to:  
+ [in] Tablica, która zawiera definicje właściwości kwerendy. Możliwe wartości to:  
   
--   PROCESS_PROPERTY_COMMAND_LINE = 1  
+- PROCESS_PROPERTY_COMMAND_LINE = 1  
   
--   PROCESS_PROPERTY_CURRENT_DIRECTORY = 2  
+- PROCESS_PROPERTY_CURRENT_DIRECTORY = 2  
   
--   PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
+- PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
   
- `pvarPropValue`  
- [out] Tablica zawierająca wartości właściwości.  
+  `pvarPropValue`  
+  [out] Tablica zawierająca wartości właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
  Ta metoda jest rzadko używana.  

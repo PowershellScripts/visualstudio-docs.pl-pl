@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfdf517dc1871884d4a3893a976cfcd01b3e6333
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252372"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879535"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definiowanie niestandardowego elementu przybornika modelowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,25 +66,25 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
 ### <a name="what-the-custom-tool-will-replicate"></a>Jakie będą replikowane narzędzie niestandardowe  
  Narzędzie niestandardowe będą replikowane większość funkcji diagramu źródłowego:  
   
--   Nazwy. Po utworzeniu elementu z przybornika do jest dodawany numer na końcu nazwy, jeśli to konieczne uniknąć zduplikowanych nazw w tej samej przestrzeni nazw.  
+- Nazwy. Po utworzeniu elementu z przybornika do jest dodawany numer na końcu nazwy, jeśli to konieczne uniknąć zduplikowanych nazw w tej samej przestrzeni nazw.  
   
--   Kolorów, rozmiarów i kształtów  
+- Kolorów, rozmiarów i kształtów  
   
--   Stereotypów i profili pakietu  
+- Stereotypów i profili pakietu  
   
--   Wartości właściwości, takie jak jest abstrakcyjny  
+- Wartości właściwości, takie jak jest abstrakcyjny  
   
--   Połączone elementy robocze  
+- Połączone elementy robocze  
   
--   Liczebność punktów i inne właściwości relacji  
+- Liczebność punktów i inne właściwości relacji  
   
--   Względne położenie kształtów.  
+- Względne położenie kształtów.  
   
- Następujące funkcje nie zostaną zachowane w niestandardowego narzędzia:  
+  Następujące funkcje nie zostaną zachowane w niestandardowego narzędzia:  
   
--   Kształty proste. Są to kształty, które nie są powiązane z elementami modelu można rysować na niektóre rodzaje diagramów.  
+- Kształty proste. Są to kształty, które nie są powiązane z elementami modelu można rysować na niektóre rodzaje diagramów.  
   
--   Łącznik routingu. Jeśli ręczne trasowanie łączników routingu będzie nie zostać zachowane podczas służy narzędzie. Położenie niektórych kształtów zagnieżdżonych, takie jak porty, nie są zachowywane względem ich właścicieli.  
+- Łącznik routingu. Jeśli ręczne trasowanie łączników routingu będzie nie zostać zachowane podczas służy narzędzie. Położenie niektórych kształtów zagnieżdżonych, takie jak porty, nie są zachowywane względem ich właścicieli.  
   
 ##  <a name="tbxinfo"></a> Jak zdefiniować właściwości niestandardowych narzędzi  
  Informacji przybornika (**.tbxinfo**) plik pozwala określić nazwę przybornika, ikony, etykietki narzędzia, karta i słowo kluczowe dla co najmniej jedno niestandardowe narzędzie pomocy. Nadać mu dowolną nazwę, taką jak **MyTools.tbxinfo**.  
@@ -114,19 +114,19 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
   
  Wartość każdego elementu można:  
   
--   Jak pokazano w przykładzie `<bmp fileName="…"/>` ikony przybornika i `<value>string</value>` dla innych elementów.  
+- Jak pokazano w przykładzie `<bmp fileName="…"/>` ikony przybornika i `<value>string</value>` dla innych elementów.  
   
- \- lub —  
+  \- lub —  
   
--   `<resource fileName="Resources.dll"`  
+- `<resource fileName="Resources.dll"`  
   
-     `baseName="Observer.resources" id="Observer.tabname" />`  
+   `baseName="Observer.resources" id="Observer.tabname" />`  
   
-     W takim przypadku użytkownik poda skompilowanego zestawu, w którym zostały skompilowane wartości ciągu jako zasoby.  
+   W takim przypadku użytkownik poda skompilowanego zestawu, w którym zostały skompilowane wartości ciągu jako zasoby.  
   
- Dodaj `<customToolboxItem>` węzła dla każdego elementu przybornika, aby zdefiniować.  
+  Dodaj `<customToolboxItem>` węzła dla każdego elementu przybornika, aby zdefiniować.  
   
- Węzły w **.tbxinfo** znajdują się w następujący sposób. Ma wartość domyślną dla każdego węzła.  
+  Węzły w **.tbxinfo** znajdują się w następujący sposób. Ma wartość domyślną dla każdego węzła.  
   
 |Nazwa węzła|Definiuje|  
 |---------------|-------------|  
@@ -215,21 +215,21 @@ Aby ułatwić tworzenie elementu lub grupy elementów zgodnie ze wzorca, które 
   
 #### <a name="to-provide-versions-of-the-tool-in-more-than-one-language"></a>Aby zapewnić wersje narzędzia w więcej niż jednym języku  
   
-1.  Utwórz projekt rozszerzenia Visual Studio, który zawiera co najmniej jedno narzędzie niestandardowe.  
+1. Utwórz projekt rozszerzenia Visual Studio, który zawiera co najmniej jedno narzędzie niestandardowe.  
   
-     W **.tbxinfo** pliku, użyj metody plików zasobów do definiowania narzędzia `displayName`, przybornika `tabName`i etykietkę narzędzia. Tworzenie pliku zasobów, w której są zdefiniowane następujące ciągi, wkompilować ją w zestaw i odwołują się do niego z pliku tbxinfo.  
+    W **.tbxinfo** pliku, użyj metody plików zasobów do definiowania narzędzia `displayName`, przybornika `tabName`i etykietkę narzędzia. Tworzenie pliku zasobów, w której są zdefiniowane następujące ciągi, wkompilować ją w zestaw i odwołują się do niego z pliku tbxinfo.  
   
-2.  Tworzenie dodatkowych zestawów, które zawierają pliki zasobów ciągów w innych językach.  
+2. Tworzenie dodatkowych zestawów, które zawierają pliki zasobów ciągów w innych językach.  
   
-3.  Umieść każdego dodatkowego zestawu w folderze, w której nazwa to kodu kultury dla języka. Na przykład umieścić Francuska wersja językowa zestawu wewnątrz folderu, który nosi nazwę **fr**.  
+3. Umieść każdego dodatkowego zestawu w folderze, w której nazwa to kodu kultury dla języka. Na przykład umieścić Francuska wersja językowa zestawu wewnątrz folderu, który nosi nazwę **fr**.  
   
-4.  Należy używać kodu kultury neutralnej, zazwyczaj dwóch liter, określonej kultury takiej jak `fr-CA`. Aby uzyskać więcej informacji na temat kodów kultury, zobacz [metoda CultureInfo.GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), który zawiera pełną listę kodów kultur.  
+4. Należy używać kodu kultury neutralnej, zazwyczaj dwóch liter, określonej kultury takiej jak `fr-CA`. Aby uzyskać więcej informacji na temat kodów kultury, zobacz [metoda CultureInfo.GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), który zawiera pełną listę kodów kultur.  
   
-5.  Tworzenie rozszerzenia programu Visual Studio i rozpowszechnić je.  
+5. Tworzenie rozszerzenia programu Visual Studio i rozpowszechnić je.  
   
-6.  Jeśli rozszerzenie jest zainstalowane na innym komputerze, wersję pliku zasobów dla kultury lokalnego użytkownika zostaną załadowane automatycznie. Jeśli nie podano wersji dla kultury użytkownika, będą używane domyślne zasoby.  
+6. Jeśli rozszerzenie jest zainstalowane na innym komputerze, wersję pliku zasobów dla kultury lokalnego użytkownika zostaną załadowane automatycznie. Jeśli nie podano wersji dla kultury użytkownika, będą używane domyślne zasoby.  
   
- Ta metoda nie umożliwia instalowanie różnych wersji diagram prototypu. Nazwy elementów oraz łączniki będą takie same, w każdej instalacji.  
+   Ta metoda nie umożliwia instalowanie różnych wersji diagram prototypu. Nazwy elementów oraz łączniki będą takie same, w każdej instalacji.  
   
 ## <a name="other-toolbox-operations"></a>Inne operacje przybornika  
  Zazwyczaj w [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], przybornika można spersonalizować, zmiana nazwy narzędzia, przeniesienie ich do karty innej przybornika i ich usuwania. Jednak te zmiany nie są zachowywane dla narzędzi do modelowania niestandardowe utworzone przy użyciu procedur, które są opisane w tym temacie. Po ponownym uruchomieniu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], niestandardowe narzędzia pojawi się wraz z ich zdefiniowane nazwy i lokalizacje przybornika.  

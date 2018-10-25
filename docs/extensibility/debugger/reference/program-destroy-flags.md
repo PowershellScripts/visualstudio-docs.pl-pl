@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47c1482d5ad2e748bb2664b796e272ce8e9c03d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7746f85eeec41b708bd4c1537ee725d2096c41ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920628"
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
-Wylicza poprawne wartości program zniszczyć flagi.  
+Wylicza prawidłowe wartości program zniszczyć flag.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,10 +42,10 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
   
 ## <a name="terms"></a>Warunki  
  PROGRAM_DESTROY_CONTINUE_DEBUGGING  
- Destroy programu, ale nadal do debugowania.  
+ Zniszcz program, ale nadal można debugować.  
   
 ## <a name="remarks"></a>Uwagi  
- Wyliczanie jest zwracany przez [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) metody.  
+ Wyliczenia jest zwracany przez [getflags —](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: Msdbg.h  

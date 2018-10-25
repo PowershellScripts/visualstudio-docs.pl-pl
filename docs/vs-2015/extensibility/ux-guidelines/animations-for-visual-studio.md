@@ -13,12 +13,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f1769f4d94df0621e06eb01d3dad55598cc810c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ba2f13ff484f73a7455089ccf2689037eabebdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824402"
 ---
 # <a name="animations-for-visual-studio"></a>Animacje dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,15 +64,15 @@ ms.locfileid: "49178428"
   
 #### <a name="do-not"></a>Nie:  
   
--   Użyj ruchy (przenoszenia w niewielkich rozmiarach), preferowanie stopniowo i zmienia się za pośrednictwem przenoszenia obiektów.  
+- Użyj ruchy (przenoszenia w niewielkich rozmiarach), preferowanie stopniowo i zmienia się za pośrednictwem przenoszenia obiektów.  
   
--   Użyj animacji, które odbywają się za pośrednictwem duży obszar powierzchnię ekranu. Bez względu na rozmiar to style, animacji rozprasza dla użytkownika.  
+- Użyj animacji, które odbywają się za pośrednictwem duży obszar powierzchnię ekranu. Bez względu na rozmiar to style, animacji rozprasza dla użytkownika.  
   
--   Użyj animacji, które nie odnoszą się do obiektu, który użytkownik aktualnie ma fokus w lub interakcji z.  
+- Użyj animacji, które nie odnoszą się do obiektu, który użytkownik aktualnie ma fokus w lub interakcji z.  
   
--   Użyj animacji, które wymagają interakcji użytkownika, aby zresetować stan, takich jak zmuszania użytkownika odpowiedzieć migające powiadomienie, aby udostępnić ją zatrzymać migające. Powinna być wystarczające, aby je odrzucić interakcji z nimi w jakikolwiek sposób.  
+- Użyj animacji, które wymagają interakcji użytkownika, aby zresetować stan, takich jak zmuszania użytkownika odpowiedzieć migające powiadomienie, aby udostępnić ją zatrzymać migające. Powinna być wystarczające, aby je odrzucić interakcji z nimi w jakikolwiek sposób.  
   
- Aby uzyskać więcej informacji na temat aplikacji dla tych najlepszych rozwiązań, zobacz [wzorców animacji](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).  
+  Aby uzyskać więcej informacji na temat aplikacji dla tych najlepszych rozwiązań, zobacz [wzorców animacji](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns).  
   
 ### <a name="animation-metrics"></a>Metryki animacji  
   
@@ -205,21 +205,21 @@ ms.locfileid: "49178428"
 ### <a name="overview"></a>Omówienie  
  Animacje w programie Visual Studio są przeznaczone do obsługi określonych funkcji i utrudnia wydajność pracy użytkowników. Cechy animacji ogólne stosować się do uwzględnienia:  
   
--   Małe i dyskretny kod  
+- Małe i dyskretny kod  
   
--   Fizyczne i realistyczne  
+- Fizyczne i realistyczne  
   
--   Subtelnym, przytłumionym  
+- Subtelnym, przytłumionym  
   
--   Szybkie i wydajne  
+- Szybkie i wydajne  
   
--   Swobodna, nie hurried  
+- Swobodna, nie hurried  
   
- Poniższa ilustracja przedstawia style animacji, zaleca się używania w programie Visual Studio. Nie animacji i subtelne animacje takich jak zanikanie / fade się najczęściej są używane. Istnieje ograniczona aplikacji przepływu animacji, takich jak rozwinąć lub zwinąć, X i Y pozycji zmian które obrotu.  
+  Poniższa ilustracja przedstawia style animacji, zaleca się używania w programie Visual Studio. Nie animacji i subtelne animacje takich jak zanikanie / fade się najczęściej są używane. Istnieje ograniczona aplikacji przepływu animacji, takich jak rozwinąć lub zwinąć, X i Y pozycji zmian które obrotu.  
   
- ![Zalecane animacji, stylów dla programu Visual Studio](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202 a_VSAnimStyles")  
+  ![Zalecane animacji, stylów dla programu Visual Studio](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202 a_VSAnimStyles")  
   
- **Style animacji zalecany dla programu Visual Studio**  
+  **Style animacji zalecany dla programu Visual Studio**  
   
 #### <a name="appear-and-disappear"></a>Pojawiają się i znikają  
  W ramach tego wzorca elementu przechodzi z widoczne poza widoku i ponownie bez animacji przejścia:  
@@ -363,65 +363,65 @@ ms.locfileid: "49178428"
   
 #### <a name="tab-open"></a>Karta Otwórz  
   
--   Styl: wyświetlane  
+- Styl: wyświetlane  
   
--   Czas trwania: Zero sekund.  
+- Czas trwania: Zero sekund.  
   
- ![Karcie Animacja Otwórz w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202 h_TabOpen")  
+  ![Karcie Animacja Otwórz w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202 h_TabOpen")  
   
 #### <a name="tab-close"></a>Zamknij kartę  
   
--   Styl: Zmienianie pozycji X  
+- Styl: Zmienianie pozycji X  
   
--   Czas trwania: 200 ms.  
+- Czas trwania: 200 ms.  
   
- ![Karta Zamknij animacji w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202 i_TabClose")  
+  ![Karta Zamknij animacji w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202 i_TabClose")  
   
 #### <a name="tab-reorder"></a>Której kolejność chcesz zmienić kartę  
   
--   Styl: Zmienianie pozycji X  
+- Styl: Zmienianie pozycji X  
   
--   Czas trwania: 200 ms.  
+- Czas trwania: 200 ms.  
   
- ![Karta zmiany kolejności animacji w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202 j_TabReorder")  
+  ![Karta zmiany kolejności animacji w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202 j_TabReorder")  
   
 #### <a name="close-floating-document"></a>Zamknij dokument zmiennoprzecinkowy  
   
--   Styl: wyświetlane  
+- Styl: wyświetlane  
   
--   Czas trwania: 200 ms.  
+- Czas trwania: 200 ms.  
   
- ![Zamknij liczb zmiennoprzecinkowych animacji dokumentu w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202 k_CloseFloatingDocument")  
+  ![Zamknij liczb zmiennoprzecinkowych animacji dokumentu w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202 k_CloseFloatingDocument")  
   
 #### <a name="window-state-transition"></a>Zmiana stanu okna  
   
--   Styl: Aby zachować spójność z innymi oknami, umożliwiają definiowanie animacji Zamknij dokument bieżącego systemu operacyjnego.  
+- Styl: Aby zachować spójność z innymi oknami, umożliwiają definiowanie animacji Zamknij dokument bieżącego systemu operacyjnego.  
   
--   Czas trwania: 200 ms.  
+- Czas trwania: 200 ms.  
   
- ![Okno stanu przejścia animacji w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202 l_WindowStateTransition")  
+  ![Okno stanu przejścia animacji w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202 l_WindowStateTransition")  
   
 #### <a name="menu-open"></a>Menu Otwórz  
   
--   Styl: wsunąć  
+- Styl: wsunąć  
   
--   Czas trwania: 200 ms.  
+- Czas trwania: 200 ms.  
   
- ![Menu Otwórz animacji w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202 m_MenuOpen")  
+  ![Menu Otwórz animacji w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202 m_MenuOpen")  
   
 #### <a name="menu-close"></a>Zamknij menu  
   
--   Styl: Fade-out  
+- Styl: Fade-out  
   
--   Czas trwania: 200 ms.  
+- Czas trwania: 200 ms.  
   
- ![Zamknij animację menu w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202 n_MenuClose")  
+  ![Zamknij animację menu w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202 n_MenuClose")  
   
 #### <a name="auto-hide-tool-window-reveal"></a>Odsłoń okna narzędzia autoukrywanie  
   
--   Styl: wyświetlane  
+- Styl: wyświetlane  
   
--   Czas trwania: Zero sekund.  
+- Czas trwania: Zero sekund.  
   
- ![Automatyczne&#45;Ukryj Animacja okna narzędzi w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")
+  ![Automatyczne&#45;Ukryj Animacja okna narzędzi w programie Visual Studio](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")
 

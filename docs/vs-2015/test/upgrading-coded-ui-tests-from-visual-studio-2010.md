@@ -13,12 +13,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2475a61839e34b69d8e99e01bde32fd47b9c276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298951"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907147"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Aktualizowanie kodowanych testów interfejsu użytkownika z Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,17 +56,17 @@ Testowanie projektów zawierających kodowane testy interfejsu użytkownika, kt�
   
  Po zastosowaniu aktualizacji, następujące [!INCLUDE[vs2010](../includes/vs2010-md.md)] funkcji narzędzia w kodowanych testów interfejsu użytkownika zostały udoskonalone specjalnie dla systemu Windows 8 z dodatkiem SP1:  
   
--   Kodowanego testu interfejsu użytkownika dla Microsoft określa oparte na programie .NET Framework 4.5 Windows Presentation Foundation (WPF) można uruchomić na komputerze z systemem Windows 8.  
+- Kodowanego testu interfejsu użytkownika dla Microsoft określa oparte na programie .NET Framework 4.5 Windows Presentation Foundation (WPF) można uruchomić na komputerze z systemem Windows 8.  
   
--   Na komputerze z systemem Windows 8, można uruchomić kodowanego testu interfejsu użytkownika dla 64-bitowych (x 64) Internet Explorer 10.  
+- Na komputerze z systemem Windows 8, można uruchomić kodowanego testu interfejsu użytkownika dla 64-bitowych (x 64) Internet Explorer 10.  
   
- Aktualizacja również rozwiązuje następujące problemy:  
+  Aktualizacja również rozwiązuje następujące problemy:  
   
--   **Pokrycie kodu:** brakiem, aby otworzyć pliku pokrycia kodu (.coverage), który jest tworzony przez program Visual Studio 2012 w [!INCLUDE[vs2010](../includes/vs2010-md.md)] z dodatkiem SP1.  
+- **Pokrycie kodu:** brakiem, aby otworzyć pliku pokrycia kodu (.coverage), który jest tworzony przez program Visual Studio 2012 w [!INCLUDE[vs2010](../includes/vs2010-md.md)] z dodatkiem SP1.  
   
--   **Skrętki artefaktów testowych:** zespół ma artefakt testu, który jest przypisany do nieprawidłowego użytkownika w Team Foundation Server (TFS) 2010. Na przykład użytkownik opuścił firmę, ale nadal ma przypadek testowy, który jest przypisany do niego. Można uaktualnić modelu obiektów TFS 2010 do wersji TFS 2012. Możesz użyć [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010, aby nawiązać połączenie z uaktualnionego serwera TFS. Nie jest możliwe do artefaktów testowych można przypisać do użytkowników TFS, używając [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
+- **Skrętki artefaktów testowych:** zespół ma artefakt testu, który jest przypisany do nieprawidłowego użytkownika w Team Foundation Server (TFS) 2010. Na przykład użytkownik opuścił firmę, ale nadal ma przypadek testowy, który jest przypisany do niego. Można uaktualnić modelu obiektów TFS 2010 do wersji TFS 2012. Możesz użyć [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010, aby nawiązać połączenie z uaktualnionego serwera TFS. Nie jest możliwe do artefaktów testowych można przypisać do użytkowników TFS, używając [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.  
   
--   **Testowanie obciążeniowe:** po uruchomieniu testu obciążenia wraz z sieci typu innego niż profil sieci lokalnej (LAN) na komputerze, to jest uruchomiony system Windows 8, sterownik emulatora sieci powoduje awarię systemu operacyjnego. Aby uzyskać więcej informacji, zobacz [2736182 artykułu KB](http://support.microsoft.com/kb/2736182).  
+- **Testowanie obciążeniowe:** po uruchomieniu testu obciążenia wraz z sieci typu innego niż profil sieci lokalnej (LAN) na komputerze, to jest uruchomiony system Windows 8, sterownik emulatora sieci powoduje awarię systemu operacyjnego. Aby uzyskać więcej informacji, zobacz [2736182 artykułu KB](http://support.microsoft.com/kb/2736182).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Przenoszenie, migrowanie i uaktualnianie projektów programu Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   

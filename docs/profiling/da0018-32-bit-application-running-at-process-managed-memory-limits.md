@@ -1,5 +1,5 @@
 ---
-title: 'DA0018: limitach pamięci zarządzanych aplikacji 32-bitowych uruchomionej w procesie | Dokumentacja firmy Microsoft'
+title: 'DA0018: aplikacja 32-bitowa działa w procesie granicach pamięci zarządzanej | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,59 +14,60 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 862e70c104db08f147c6a608adf1cf022b642025
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 013f4b0ed19a2227d6b86fe5fca2f8343d88f554
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921252"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: aplikacja 32-bitowa uruchomiona w limity pamięci zarządzanych przez proces
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: aplikacja 32-bitowych, działa w limity pamięci proces zarządzany
+
 |||  
 |-|-|  
 |Identyfikator reguły|DA0018|  
 |Kategoria|Użycie narzędzia profilowania|  
-|Metoda profilowania|Pobierania próbek|  
-|Komunikat|Zarządzane zbliża się domyślny limit dla procesu 32-bitowego alokacji pamięci. Aplikacja może być zależna od pamięci.|  
+|Metoda profilowania|Próbkowania|  
+|Komunikat|Zarządzane alokacji pamięci, zbliża się limit domyślny dla procesu 32-bitowych. Aplikacja może być powiązane z pamięci.|  
 |Typ reguły|Ostrzeżenie|  
-  
- Gdy profilu można za pomocą próbkowania, pamięci platformy .NET lub metody kontencji zasobów, należy zebrać co najmniej 10 próbek do wyzwolenia tej reguły.  
-  
+
+ Podczas profilowania za pomocą próbkowania pamięci platformy .NET i metod rywalizacji zasobów musi zebrać co najmniej 10 próbek do wyzwolenia tej reguły.  
+
 ## <a name="cause"></a>Przyczyna  
- System dane zebrane podczas przebiegu profilowania wskazuje, że pamięci .NET Framework sterty osiągnięciu maksymalnego rozmiaru zarządzanych stosów może nawiązać połączenie w procesie 32-bitowych. Ten maksymalny rozmiar to wartość domyślna. Jest on oparty na łączną ilość przestrzeni adresowej procesu, który można przydzielić bajtów prywatnych. Zgłaszana wartość to maksimum zaobserwowane wartość stosach z gdy była aktywna PROFILOWANEGO procesu. Należy rozważyć profilowanie ponownie przy użyciu metody profilowania pamięci .NET i optymalizacji wykorzystania zasobów zarządzanych przez aplikację.  
-  
- Gdy rozmiar zarządzanej sterty podejścia domyślny limit, proces zbierania automatyczne odzyskiwanie może być konieczne wywoływanej częściej. Powoduje to zwiększenie obciążenia zarządzania pamięcią.  
-  
- Reguła generowane tylko dla 32-bitowych aplikacji uruchomionych na maszynach 32-bitowych.  
-  
+ System danych zebranych podczas uruchomienia profilowania wskazuje, że pamięci .NET Framework stosów skontaktowali maksymalnego rozmiaru sterty zarządzanej może nawiązać połączenie w procesie 32-bitowym. Ten maksymalny rozmiar jest wartością domyślną. Jest ona oparta na łączną ilość przestrzeni adresowej procesu, która może być przydzielona dla prywatnych bajtów. Zgłaszana wartość to maksimum zaobserwowane WE wartość sterty podczas aktywnego PROFILOWANEGO procesu. Należy wziąć pod uwagę, profilowanie ponownie przy użyciu metody profilowania pamięci .NET i optymalizację użycia zasobów zarządzanych przez aplikację.  
+
+ Gdy rozmiar zarządzanej sterty podejście domyślny limit, proces zbierania automatyczne wyrzucanie elementów może być konieczne wywoływanej częściej. Zwiększa to narzut na zarządzanie pamięcią.  
+
+ Reguła jest uruchamiana tylko dla 32-bitowymi aplikacjami działającymi na komputerach 32-bitowych.  
+
 ## <a name="rule-description"></a>Opis reguły  
- Program Microsoft .NET wspólnego języka środowiska wykonawczego (CLR) zapewnia mechanizm zarządzania automatyczne pamięci używane przez moduł Garbage Collector do odzyskać pamięci z obiektów, które nie jest już używane przez aplikację. Moduł zbierający elementy bezużyteczne to zorientowane na generowanie oparte na założeniu, że wiele są krótkim okresie. Zmienne lokalne, na przykład należy krótkim okresie. Nowo utworzone obiekty Uruchom podczas generowania 0 (gen 0), a następnie postępu na pokolenie 1 po ich przetrwać wyrzucanie elementów bezużytecznych Uruchom, a na koniec przejście do generacji 2 Jeśli aplikacja nadal używa ich.  
-  
- Zarządzane obiekty, które są większe niż 85 KB są przydzielone sterty dużych obiektów, gdy są dłuższe interwały wyrzucanie elementów bezużytecznych i kompaktowanie niż mniejsze obiektów. duże obiekty są zarządzane oddzielnie, ponieważ zakłada się, że znajdują się większą trwałość i ponieważ połączenie trwałe i duże obiekty o często przydzielone obiekty mniejszych może utworzyć rzutowania najgorszy fragmentacji sterty.  
-  
- Ponieważ całkowity rozmiar zarządzanej sterty podejścia domyślny limit, obciążenie zarządzania pamięcią zwykle zwiększa do punktu, w którym można uruchomić wpłynąć na elastyczność i skalowalność aplikacji.  
-  
+ Microsoft .NET wspólnego języka środowiska wykonawczego (języka wspólnego CLR) zapewnia mechanizm zarządzania pamięcią automatyczną, który używa modułu odśmiecania pamięci, aby odzyskać pamięci z obiektów, które aplikacja już używa. Moduł odśmiecania pamięci jest zorientowana na generowanie na podstawie założenia, że wiele alokacje są krótkotrwałe. Na przykład, zmienne lokalne, powinny być krótkotrwały. Nowo utworzonych obiektach Uruchom w generacji 0 (gen 0), a następnie przejść do generacji 1, po ich przetrwać wyrzucania elementów bezużytecznych, uruchom, a na koniec przejścia do generacji 2, jeśli aplikacja nadal korzysta z nich.  
+
+ Zarządzane obiekty, które są większe niż 85 KB są przydzielane sterty obiektów wielkich, której podlegają rzadsze wyrzucania elementów bezużytecznych i kompaktowania niż mniejsze obiekty. duże obiekty są zarządzane oddzielnie, ponieważ zakłada się, że są one więcej trwały i ponieważ mieszanie trwałego, jak i dużych obiektów z często przydzielone obiekty mniejszych może utworzyć rzutowania najgorszy fragmentację sterty.  
+
+ Ponieważ całkowity rozmiar zarządzanej sterty podejście domyślny limit, obciążenie zarządzanie pamięcią zwykle zwiększa się do punktu, w którym można uruchomić mających wpływ na czas odpowiedzi i skalowalność aplikacji.  
+
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
- Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [znaczniki](../profiling/marks-view.md) widoku. Znajdź **pamięci platformy .NET CLR\\# bajtów we wszystkich Stertach** i **# łączna liczba zadeklarowanych bajtów** kolumn. Określa, czy określone fazy wykonywania programu przydział pamięci zarządzanej w przypadku większych niż inne faz. Porównaj wartości **# bajtów we wszystkich Stertach** kolumny, która ma stopień wyrzucania elementów bezużytecznych zgłoszone w **pamięci platformy .NET CLR\\# kolekcje pokolenia 0**, **.NET CLR pamięci\\# pamięci Gen 1**, i **pamięci platformy .NET CLR\\# pamięci Gen 2** kolumny w celu określenia, jeśli wzorzec przydziału pamięci zarządzanej wpływa na szybkość pamięci Kolekcja.  
-  
- W przypadku aplikacji .NET Framework środowisko uruchomieniowe języka wspólnego ogranicza całkowity rozmiar zarządzanej sterty celu nieco mniejsze niż połowa maksymalny rozmiar prywatnego obszaru część przestrzeni adresowej procesu. Dla procesów 32-bitowy, uruchomione na komputerze 32-bitowy 2 GB reprezentuje górny limit prywatna część przestrzeni adresowej procesu. Całkowity rozmiar zarządzanego stosów po rozpoczęciu z rozwiązań jego domyślny limit, może zwiększyć koszty zarządzanie pamięcią i może obniżyć wydajność aplikacji.  
-  
- Jeśli pamięci zarządzanej nadmierne obciążenie problem, należy rozważyć jednej z dwóch opcji:  
-  
--   Optymalizacja użycia aplikacji zasobów pamięci zarządzanej  
-  
-     —lub—  
-  
--   sposób, aby zwolnić architektury ograniczenia dotyczące maksymalny rozmiar pamięci wirtualnej dla procesu 32-bitowego  
-  
- Aby zoptymalizować użycie zasobów pamięci zarządzanej aplikacji, zbieranie danych przydziału pamięci zarządzanej w alokacji pamięci .NET profilowania, uruchom. Przegląd [widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md) raporty, aby poznać wzorce przydzielania pamięci aplikacji.  
-  
- Użyj [widok okresu istnienia obiektu](../profiling/object-lifetime-view.md) umożliwia określenie, które obiekty są zachowane w generacji, a następnie odzyskać z niego danych tego programu.  
-  
- Użyj [Widok alokacji](../profiling/dotnet-memory-allocations-view.md) można ustalić ścieżki wykonywania, które spowodowały tych przydziałów.  
-  
- Aby uzyskać więcej informacji o sposobie poprawić wydajność zbierania danych pamięci, zobacz artykułu technicznego na .NET Framework, [podstawy modułu zbierającego elementy bezużyteczne i wskazówki dotyczące wydajności](http://go.microsoft.com/fwlink/?LinkId=177946) w witrynie MSDN.  
-  
- Aby uzyskać architektury zwolnienia z ograniczeń pamięci wirtualnej na rozmiar prywatna część przestrzeni adresowej procesu, spróbuj uruchomienie tego procesu 32-bitowych na komputerze 64-bitowych.  Proces 32-bitowy, na komputerze 64-bitowe mogą uzyskiwać do 4 GB pamięci wirtualnej prywatnych.  
-  
- 64-bitowych procesu uruchomionego na komputerze 64-bitowych mogą uzyskiwać do 8 TB pamięci wirtualnej. Rozważ ponowną kompilację aplikacji do wykonywania jako natywnych aplikacji 64-bitowych. Ta zasada jest wyłącznie do celów informacyjnych i nie może wymagać działań korygujących.
+ Kliknij dwukrotnie komunikat w oknie Lista błędów, aby przejść do [znaczniki](../profiling/marks-view.md) widoku. Znajdź **pamięć .NET CLR\\# bajtów we wszystkich Stertach** i **# łączna liczba zadeklarowanych bajtów** kolumn. Określa, czy określone faz wykonywania programu gdzie alokacji pamięci zarządzanej jest większe niż pozostałych faz. Porównaj wartości **# bajtów we wszystkich Stertach** kolumny do szybkości wyrzucania elementów bezużytecznych zgłoszone w **pamięć .NET CLR\\# pokolenia 0**, **pamięć .NET CLR\\# zbierania obiektów pokolenia 1**, i **pamięć .NET CLR\\# zbierania obiektów pokolenia 2** kolumny w celu określenia, jeśli wzorzec alokacje pamięci zarządzanej ma wpływ na stopień odzyskiwania pamięci Kolekcja.  
+
+ W przypadku aplikacji .NET Framework środowisko uruchomieniowe języka wspólnego ogranicza całkowity rozmiar zarządzanej sterty deskryptorów do nieco mniej niż połowa maksymalny rozmiar w prywatnym obszarze części przestrzeni adresowej procesu. Dla procesów 32-bitowych, uruchomione na komputerze 32-bitowym 2 GB reprezentuje górny limit prywatna część przestrzeni adresowej procesu. Całkowity rozmiar sterty zarządzanej po rozpoczęciu jego domyślny limit podejście do, może zwiększyć obciążenie zarządzanie pamięcią i może obniżyć wydajność aplikacji.  
+
+ W przypadku zbyt dużej ilości pamięci zarządzanej obciążenie problemu wziąć pod uwagę jedną z następujących opcji:  
+
+- Optymalizacja użycia aplikacji zasobów pamięci zarządzanej  
+
+   —lub—  
+
+- wykonanie czynności, aby zwolnić architektury ograniczenia dotyczące maksymalnego rozmiaru pamięci wirtualnej dla procesu 32-bitowego  
+
+  Aby zoptymalizować użycie zasobów pamięci zarządzanej aplikacji, zbierać dane alokacji pamięci zarządzanej w alokacji pamięci .NET przebiegu profilowania. Przegląd [widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md) raportów, aby poznać wzorce przydzielania pamięci w aplikacji.  
+
+  Użyj [widok okresu istnienia obiektu](../profiling/object-lifetime-view.md) umożliwia określenie, które uszkodziło danych obiekty są pozostałych do generacji, a następnie odzyskać z tego miejsca.  
+
+  Użyj [Widok alokacji](../profiling/dotnet-memory-allocations-view.md) można ustalić ścieżki wykonywania, które spowodowały tych przydziałów.  
+
+  Aby uzyskać więcej informacji na temat zwiększania wydajności kolekcji wyrzucania elementów, zobacz artykułu technicznego na .NET Framework, [podstawy modułu odśmiecania pamięci i wskazówki dotyczące wydajności](http://go.microsoft.com/fwlink/?LinkId=177946) w witrynie MSDN w sieci Web.  
+
+  Aby uzyskać architektury zwolnienia z ograniczenia pamięci wirtualnej na podstawie rozmiaru części prywatnej przestrzeni adresowej procesu, spróbuj uruchomienie tego procesu 32-bitowego na komputerze 64-bitowym.  32-bitowy proces na komputerze 64-bitowym, mogą uzyskiwać maksymalnie 4 GB pamięci wirtualnej prywatny.  
+
+  64-bitowych proces uruchomiony na komputerze 64-bitowym, mogą uzyskiwać do 8 TB pamięci wirtualnej. Należy wziąć pod uwagę, ponownej kompilacji aplikacji ma działać jako natywnych aplikacji 64-bitowych. Ta reguła jest wyłącznie w celach informacyjnych i może nie wymagać działań korygujących.

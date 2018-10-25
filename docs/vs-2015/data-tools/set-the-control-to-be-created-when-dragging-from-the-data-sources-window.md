@@ -22,12 +22,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 883c2ce82dc1c4b1d8d17d9be57ced0e598840e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e48bac812f8d87b7e65b6a2a5832a7a36e4f95c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293686"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860360"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ Możesz utworzyć formanty powiązane z danymi przez przeciąganie elementów z 
   
 #### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>Aby ustawić formanty, które ma zostać utworzony dla tabel danych lub obiektów  
   
-1.  Upewnij się, że projektant WPF lub projektanta Windows Forms jest otwarty.  
+1. Upewnij się, że projektant WPF lub projektanta Windows Forms jest otwarty.  
   
-2.  W **źródeł danych** okna, wybierz element, który reprezentuje tabeli danych lub obiekt, którego chcesz ustawić.  
+2. W **źródeł danych** okna, wybierz element, który reprezentuje tabeli danych lub obiekt, którego chcesz ustawić.  
   
-3.  Kliknij przycisk menu rozwijanej dla elementu, a następnie kliknij jedną z następujących elementów w menu:  
+3. Kliknij przycisk menu rozwijanej dla elementu, a następnie kliknij jedną z następujących elementów w menu:  
   
-    -   Aby wyświetlić poszczególnych pól w oddzielnej kontrolce, kliknij przycisk **szczegóły**. Podczas przeciągania elementu danych do projektanta, ta akcja spowoduje utworzenie innej kontrolki powiązane z danymi dla każdej kolumny lub właściwości nadrzędnej danych tabeli lub obiektu oraz etykiety dla każdego formantu.  
+   - Aby wyświetlić poszczególnych pól w oddzielnej kontrolce, kliknij przycisk **szczegóły**. Podczas przeciągania elementu danych do projektanta, ta akcja spowoduje utworzenie innej kontrolki powiązane z danymi dla każdej kolumny lub właściwości nadrzędnej danych tabeli lub obiektu oraz etykiety dla każdego formantu.  
   
-    -   Aby wyświetlić wszystkie dane w jednym formancie, Wybieranie innej kontrolki na liście, takie jak **DataGrid** lub **listy** w aplikacji WPF lub **DataGridView** w formularzach Windows Forms aplikacja.  
+   - Aby wyświetlić wszystkie dane w jednym formancie, Wybieranie innej kontrolki na liście, takie jak **DataGrid** lub **listy** w aplikacji WPF lub **DataGridView** w formularzach Windows Forms aplikacja.  
   
      Lista dostępnych kontrolek jest zależny, na których projektant otwartych, która wersja programu .NET Framework projekt jest ukierunkowany i tego, czy zostały dodane niestandardowe formanty danych pomocy technicznej powiązanie **przybornika**. Jeśli formant, który ma zostać utworzona lista dostępnych kontrolek, możesz dodać formant do listy. Aby uzyskać więcej informacji, zobacz [Dodawanie niestandardowych formantów do okna źródeł danych](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   

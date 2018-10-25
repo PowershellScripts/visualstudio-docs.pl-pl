@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab51e2dbc75de33bcafe28295b5e47e4b4358538
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6ec1e09628b2bd1da23bda6baaa1fa157dfbf08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122525"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928103"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
-Ta metoda określa, czy Edytuj i Kontynuuj stanu tego obiektu lub kontenera nadrzędnego jest nieaktualny. Ta metoda i zawsze zwraca ewaluatora wyrażenia niestandardowego nie implementuje `E_NOTIMPL`.  
+Ta metoda określa, czy stan Edytuj i Kontynuuj tego obiektu lub kontenera nadrzędnego jest nieaktualna. Ewaluator wyrażeń niestandardowych nie implementuje tę metodę i zawsze zwraca `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int IsEncOutdated(
   
 #### <a name="parameters"></a>Parametry  
  `pfEncOutdated`  
- [out] Różna od zera (`TRUE`) Jeśli stan Edytuj i Kontynuuj jest nieaktualny, zero (`FALSE`) Jeśli nie jest.  
+ [out] Wartość różną od zera (`TRUE`) Jeśli stan Edytuj i Kontynuuj jest nieaktualna, zero (`FALSE`) Jeśli nie jest.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 > [!NOTE]
->  Zawsze powinna zwrócić ewaluatora wyrażenia niestandardowego `E_NOTIMPL`.  
+>  Ewaluator wyrażeń niestandardowych zawsze powinna zwrócić `E_NOTIMPL`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

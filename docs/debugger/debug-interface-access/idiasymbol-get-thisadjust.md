@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_thisAdjust | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_thisadjust — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93abb3b252d430510b8e1681d683078d5c25a379
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0c9ff814968077b32c4ed0ddb8d951808ebffea4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851858"
 ---
 # <a name="idiasymbolgetthisadjust"></a>IDiaSymbol::get_thisAdjust
-Pobiera logicznym `this` adjustor dla metody.  
+Pobiera logicznej `this` adjustor dla metody.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,13 +37,13 @@ HRESULT get_thisAdjust (
  [out] Zwraca wartość logiczną `this` adjustor dla metody.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
- W niektórych przypadkach wielu dziedziczenia tej metody należy obliczyć wartość PRAWDA `this` wartości przez dodanie przesunięcia `this`.  
+ Czasami dziedziczenia w wielu sama metoda należy obliczyć wartość PRAWDA `this` wartości przez dodanie przesunięcia `this`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

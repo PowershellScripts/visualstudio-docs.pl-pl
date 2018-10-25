@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5eaa1b9edc128b5e13641bb5b38296fd96740ab4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4339c18f7aa745c8b741c0a431b6073300ff145b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109646"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841770"
 ---
 # <a name="dwtypekind"></a>dwTYPE_KIND
-Określa sposób interpretowania typ [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu.  
+Określa, jak interpretować typ [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,16 +47,16 @@ public enum enum_dwTYPE_KIND {
   
 #### <a name="parameters"></a>Parametry  
  TYPE_KIND_METADATA  
- [Type_info —](../../../extensibility/debugger/reference/type-info.md) Unii powinny być rozumiane jako [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) struktury.  
+ [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) Unii powinno być interpretowane jako [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) struktury.  
   
  TYPE_KIND_PDB  
- `TYPE_INFO` Unii powinny być rozumiane jako [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) struktury.  
+ `TYPE_INFO` Unii powinno być interpretowane jako [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) struktury.  
   
  TYPE_KIND_BUILT  
- `TYPE_INFO` Unii powinny być rozumiane jako [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) struktury.  
+ `TYPE_INFO` Unii powinno być interpretowane jako [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) struktury.  
   
 ## <a name="remarks"></a>Uwagi  
- To wyliczenie wartości są wyświetlane w `dwKind` pole [type_info —](../../../extensibility/debugger/reference/type-info.md) struktury i służą do określenia sposobu interpretowania `type` elementu członkowskiego typu union. `TYPE_INFO` Struktury jest zwracany przez wywołanie do [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) metody.  
+ Wartości to wyliczenie są wyświetlane w `dwKind` pole [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) struktury i służą do określenia sposobu interpretowania `type` Unii. `TYPE_INFO` Struktury jest zwracany przez wywołanie [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  
@@ -67,7 +67,7 @@ public enum enum_dwTYPE_KIND {
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [TYPE_INFO —](../../../extensibility/debugger/reference/type-info.md)   
+ [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)   
  [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)   
  [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)   

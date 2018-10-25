@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 026cf84cca89097bea84a09c2e723ca9d2ceb85d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3171fedfe263aa4e2624e4425d3bc6929dd3c2fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950449"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
 Tworzy tablicę określonego typu i rozmiaru.  
@@ -50,10 +50,10 @@ int CreateArrayOfType (
  [in] Liczba elementów w tablicy.  
   
  `pArrayOfTypeField`  
- [out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektów, które reprezentują nowej tablicy.  
+ [out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekty reprezentujące nowej tablicy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)

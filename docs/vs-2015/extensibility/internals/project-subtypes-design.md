@@ -15,12 +15,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d167559a442e351c6256d07943092825deef288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243826"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839430"
 ---
 # <a name="project-subtypes-design"></a>Projektowanie podtypów projektów
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ Podtypy projektów umożliwiają pakietów VSPackage rozszerzanie projektów opa
 ## <a name="project-subtype-design"></a>Podtypu projektu  
  Inicjowanie podtypu projektu odbywa się agregowanie głównym <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> obiektów. Takie połączenie umożliwia podtypem projektu do nadpisania lub zwiększ większość funkcji projektu podstawowego. Podtypy projektów uzyskać pierwszy szansę, aby obsłużyć właściwości za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, poleceń, za pomocą <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> i <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>i Projekt element zarządzania za pomocą <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Dodatkowo można rozszerzyć podtypy projektów:  
   
--   Obiekty konfiguracji projektu.  
+- Obiekty konfiguracji projektu.  
   
--   Obiekty zależne od konfiguracji.  
+- Obiekty zależne od konfiguracji.  
   
--   Niezależne od konfiguracji przeglądania obiektów.  
+- Niezależne od konfiguracji przeglądania obiektów.  
   
--   Obiekty automatyzacji projektu.  
+- Obiekty automatyzacji projektu.  
   
--   Kolekcje właściwości automatyzacji dla projektu.  
+- Kolekcje właściwości automatyzacji dla projektu.  
   
- Aby uzyskać więcej informacji na temat rozszerzania przez podtypy projektów, zobacz [właściwości i metody rozszerzane przez podtypy projektów](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
+  Aby uzyskać więcej informacji na temat rozszerzania przez podtypy projektów, zobacz [właściwości i metody rozszerzane przez podtypy projektów](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md).  
   
 ##### <a name="policy-files"></a>Pliki zasad  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Środowisko zawiera przykład rozszerzanie systemu projektu podstawowego z podtypem projektu w swojej implementacji pliki zasad. Plik zasad umożliwia przekształcanie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] środowiska dzięki zarządzaniu funkcje, w Eksploratorze rozwiązań **Dodaj projekt** okno dialogowe **Dodaj nowy element** okno dialogowe i  **Właściwości** okno dialogowe. Podtyp zasad zastępuje i rozszerza te funkcje przy użyciu <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>, `IOleCommandTarget` i <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> implementacji.  

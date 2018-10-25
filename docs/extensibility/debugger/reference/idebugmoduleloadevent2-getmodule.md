@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6188ba6842a922fa0758a21c0f496f50889f8b3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f0a043b3842805357de685484fcc4daf935aefcc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114534"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906837"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
-Pobiera moduł, który jest załadowany lub zwalnianie modułu.  
+Pobiera moduł, który jest załadowany lub zwolnione.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -45,16 +45,16 @@ int GetModule(
   
 #### <a name="parameters"></a>Parametry  
  `pModule`  
- [out] Zwraca [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) obiekt, który reprezentuje ładowania lub zwalnianie modułu.  
+ [out] Zwraca [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) obiekt, który reprezentuje ładowanie lub zwalnianie modułu.  
   
  `pbstrDebugMessage`  
- [w, out] Zwraca opcjonalny komunikat opisujący tego zdarzenia. Jeśli ten parametr ma wartość null, jest wymagany żaden komunikat.  
+ [out w] Zwraca wartość opcjonalną wiadomość, zawierająca opis tego zdarzenia. Jeśli ten parametr ma wartość null, jest wymagany żaden komunikat.  
   
  `pbLoad`  
- [w, out] Różna od zera (`TRUE`) w przypadku modułu ładowania oraz zero (`FALSE`) Jeśli jest zwalnianie modułu. Jeśli ten parametr ma wartość null, stan nie jest wymagany.  
+ [out w] Wartość różną od zera (`TRUE`) Jeśli moduł jest ładowanie i zero (`FALSE`) Jeśli Trwa zwalnianie modułu. Jeśli ten parametr ma wartość null, wymagane jest Brak stanu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)   

@@ -23,12 +23,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 9c9a59d8b1d24ee854a4ff7e3f462f7db9062763
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50654574dea18df98f8f4ecef8d606cccec93f14
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232105"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898177"
 ---
 # <a name="clickonce-security-and-deployment"></a>Wskazówki dotyczące wdrażania ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "49232105"
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenie pozwala pokonać trzy główne problemy we wdrożeniu:  
   
--   **Trudności podczas aktualizowania aplikacji.** Przy użyciu wdrożenia Instalatora systemu Microsoft Windows zawsze wtedy, gdy aplikacja zostanie zaktualizowana, użytkownik może zainstalować aktualizację, plik msp i zastosować je do zainstalowanego produktu; za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia, możesz podać aktualizacje automatyczne. Są pobierane tylko te części aplikacji, które uległy zmianie, a następnie ponowna instalacja aplikacji pełne, zaktualizowane z nowego folderu side-by-side.  
+- **Trudności podczas aktualizowania aplikacji.** Przy użyciu wdrożenia Instalatora systemu Microsoft Windows zawsze wtedy, gdy aplikacja zostanie zaktualizowana, użytkownik może zainstalować aktualizację, plik msp i zastosować je do zainstalowanego produktu; za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia, możesz podać aktualizacje automatyczne. Są pobierane tylko te części aplikacji, które uległy zmianie, a następnie ponowna instalacja aplikacji pełne, zaktualizowane z nowego folderu side-by-side.  
   
--   **Wpływ na komputerze użytkownika.** Przy użyciu wdrożenia Instalatora Windows aplikacji często zależy od składników udostępnionych oraz o potencjalnych konfliktów wersji; za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia, każda aplikacja jest niezależna i nie może kolidować z innymi aplikacjami.  
+- **Wpływ na komputerze użytkownika.** Przy użyciu wdrożenia Instalatora Windows aplikacji często zależy od składników udostępnionych oraz o potencjalnych konfliktów wersji; za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia, każda aplikacja jest niezależna i nie może kolidować z innymi aplikacjami.  
   
--   **Uprawnienia zabezpieczeń.** Wdrażanie za pomocą Instalatora Windows wymaga uprawnień administracyjnych, a także umożliwia tylko użytkownika standardowego instalacji; [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia innych niż administracyjne użytkownicy mogą zainstalować i przydziela tylko tych uprawnień zabezpieczeń dostępu kodu niezbędnych dla aplikacji.  
+- **Uprawnienia zabezpieczeń.** Wdrażanie za pomocą Instalatora Windows wymaga uprawnień administracyjnych, a także umożliwia tylko użytkownika standardowego instalacji; [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia innych niż administracyjne użytkownicy mogą zainstalować i przydziela tylko tych uprawnień zabezpieczeń dostępu kodu niezbędnych dla aplikacji.  
   
- W przeszłości te problemy spowodowane czasami deweloperów podjęcie decyzji, tworzenie aplikacji sieci Web zamiast aplikacji opartych na Windows obniżania oczekiwanego poziomu zaawansowanego interfejsu użytkownika w celu ułatwienia instalacji. Przy użyciu aplikacji wdrożonych za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], może mieć najlepsze cechy obu technologii.  
+  W przeszłości te problemy spowodowane czasami deweloperów podjęcie decyzji, tworzenie aplikacji sieci Web zamiast aplikacji opartych na Windows obniżania oczekiwanego poziomu zaawansowanego interfejsu użytkownika w celu ułatwienia instalacji. Przy użyciu aplikacji wdrożonych za pomocą [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], może mieć najlepsze cechy obu technologii.  
   
 ## <a name="what-is-a-clickonce-application"></a>Co to jest aplikacja ClickOnce?  
  A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacja jest Windows Presentation Foundation (.xbap), Windows Forms (.exe), aplikacja konsolowa (.exe) lub rozwiązania dla pakietu Office (.dll) opublikowanych przy użyciu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] technologii. Możesz opublikować [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikację na trzy różne sposoby: ze strony sieci Web, z sieciowego udziału plików lub z nośnika, takich jak dysk CD-ROM. A [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji można zainstalować na komputerze użytkownika końcowego i uruchamiane lokalnie, nawet wtedy, gdy komputer jest w trybie offline lub może być uruchamiane w trybie tylko w trybie online bez konieczności instalowania żadnych trwale na komputerze użytkownika końcowego. Aby uzyskać więcej informacji, zobacz [Wybieranie strategii wdrażania ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  

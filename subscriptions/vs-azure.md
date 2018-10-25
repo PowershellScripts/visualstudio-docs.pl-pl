@@ -9,12 +9,12 @@ description: Dowiedz się, jak aktywować korzyść platformy Azure, zawarte w T
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2a59953eb3af65430492d892e58f51f2d51f63e5
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: a97dbd638c4840266f22c46610f78ec5b2d527d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862349"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Dzięki platformie Microsoft Azure w ramach subskrypcji programu Visual Studio
 
@@ -24,51 +24,52 @@ Jako subskrybent programu Visual Studio mogą używać programu Microsoft Azure,
 
 ## <a name="eligibility"></a>Uprawnienie
 
-| Poziom subskrypcji / Program                                 | Korzyść                     | Podlega odnowieniu?                                                   |
-|--------------------------------------------------------------|-----------------------------|--------------------------------------------------------------|
-| Visual Studio Enterprise Standard                            | 150 USD środków miesięcznie         |   Tak                                                        |
-| Visual Studio Enterprise annual                              | 150 USD środków miesięcznie         |   Tak                                                        |
-| Visual Studio Enterprise miesięczna                             | Niedostępne               |                                                              |
-| Visual Studio Professional Standard                          | 50 USD środków miesięcznie          |   Tak                                                        |
-| Visual Studio Professional roczna                            | 50 USD środków miesięcznie          |   Tak                                                        |
-| Visual Studio Professional miesięczna                           | Niedostępne               |                                                              |
-| Visual Studio Test Pro                                       | 50 USD środków miesięcznie          |   Tak                                                        |
-| Platformy MSDN                                               | miesięczne środki w wysokości 100 USD         |   Tak                                                        |
-| Visual Studio Dev Essentials                                 | W przypadku usług bezpłatnych i 200 USD środków | Bezpłatnych usług są nieograniczone.  jednorazowe jest tylko 200 USD środków.  |
-| Visual Studio Enterprise - NFR*                              | 150 USD środków miesięcznie         |   Tak                                                        |
-| Visual Studio Enterprise - FTE                               | 150 USD środków miesięcznie         |   Tak                                                        |
-| Visual Studio Enterprise — sieci Microsoft Partner Network         | 150 USD środków miesięcznie         |   Tak                                                        |
-| Visual Studio Professional — sieci Microsoft Partner Network       | Niedostępne               |                                                              |
-| Visual Studio Enterprise — Imagine (standardowa)                | Niedostępne               |                                                              |
-| Visual Studio Enterprise — Imagine (Premium)                 | Niedostępne               |                                                              |
-| Visual Studio Enterprise – BizSpark                          | 150 USD środków miesięcznie         |   Tak                                                        |
-| Visual Studio Enterprise — MCT Software & Services           | miesięczne środki w wysokości 100 USD         |   Tak                                                        |
-| Visual Studio Enterprise — MCT Software & Services dla deweloperów | 150 USD środków miesięcznie         |   Tak                                                        |
+|                 Poziom subskrypcji / Program                 |           Korzyść           |                         Podlega odnowieniu?                          |
+|--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
+|              Visual Studio Enterprise Standard               |     150 USD środków miesięcznie     |                             Tak                             |
+|               Visual Studio Enterprise annual                |     150 USD środków miesięcznie     |                             Tak                             |
+|               Visual Studio Enterprise miesięczna               |        Niedostępne        |                                                             |
+|             Visual Studio Professional Standard              |     50 USD środków miesięcznie      |                             Tak                             |
+|              Visual Studio Professional roczna               |     50 USD środków miesięcznie      |                             Tak                             |
+|              Visual Studio Professional miesięczna              |        Niedostępne        |                                                             |
+|                    Visual Studio Test Pro                    |     50 USD środków miesięcznie      |                             Tak                             |
+|                        Platformy MSDN                        |     miesięczne środki w wysokości 100 USD     |                             Tak                             |
+|                 Visual Studio Dev Essentials                 | W przypadku usług bezpłatnych i 200 USD środków | Bezpłatnych usług są nieograniczone.  jednorazowe jest tylko 200 USD środków. |
+|               Visual Studio Enterprise — NFR\*               |     150 USD środków miesięcznie     |                             Tak                             |
+|                Visual Studio Enterprise - FTE                |     150 USD środków miesięcznie     |                             Tak                             |
+|     Visual Studio Enterprise — sieci Microsoft Partner Network     |     150 USD środków miesięcznie     |                             Tak                             |
+|    Visual Studio Professional — sieci Microsoft Partner Network    |        Niedostępne        |                                                             |
+|        Visual Studio Enterprise — Imagine (standardowa)         |        Niedostępne        |                                                             |
+|         Visual Studio Enterprise — Imagine (Premium)         |        Niedostępne        |                                                             |
+|             Visual Studio Enterprise – BizSpark              |     150 USD środków miesięcznie     |                             Tak                             |
+|      Visual Studio Enterprise — MCT Software & Services      |     miesięczne środki w wysokości 100 USD     |                             Tak                             |
+| Visual Studio Enterprise — MCT Software & Services dla deweloperów |     150 USD środków miesięcznie     |                             Tak                             |
+
 * Zawiera nie for Resale (NFR), Microsoft wycenia Professional (MVP), dyrektor Region (usług pulpitu zdalnego), Visual Studio Industry Partner (VSIP)
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
 
-1.  Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Znajdź Kafelek Azure w sekcji narzędzia dotyczące zalet strony, a następnie kliknij przycisk **Aktywuj** link w dolnej części kafelka korzyści.
-    > [!div class="mx-imgBorder"]
-    > ![Kafelek Azure](_img\vs-azure\vs-azure-tile.png)
+2. Znajdź Kafelek Azure w sekcji narzędzia dotyczące zalet strony, a następnie kliknij przycisk **Aktywuj** link w dolnej części kafelka korzyści.
+   > [!div class="mx-imgBorder"]
+   > ![Kafelek Azure](_img/vs-azure/vs-azure-tile.png)
 
-3.  Wprowadź informacje wymagane do utworzenia subskrypcji usługi Azure, kliknij pole wyboru, aby zaakceptować warunki i postanowienia, a następnie kliknij przycisk **Zarejestruj**:
-    > [!div class="mx-imgBorder"]
-    > ![Utwórz konto platformy Azure](_img\vs-azure\vs-azure-sign-up-cropped.png)
+3. Wprowadź informacje wymagane do utworzenia subskrypcji usługi Azure, kliknij pole wyboru, aby zaakceptować warunki i postanowienia, a następnie kliknij przycisk **Zarejestruj**:
+   > [!div class="mx-imgBorder"]
+   > ![Utwórz konto platformy Azure](_img/vs-azure/vs-azure-sign-up-cropped.png)
 
-4.  Jeśli Twoje konto jest gotowe, będziesz mieć opcję, aby wybrać plan pomocy technicznej platformy Azure (sprzedawany oddzielnie) lub zacznij pracę ze swoją subskrypcją platformy Azure.
-    > [!div class="mx-imgBorder"]
-    > ![Trwa przygotowywanie platformy Azure](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+4. Jeśli Twoje konto jest gotowe, będziesz mieć opcję, aby wybrać plan pomocy technicznej platformy Azure (sprzedawany oddzielnie) lub zacznij pracę ze swoją subskrypcją platformy Azure.
+   > [!div class="mx-imgBorder"]
+   > ![Trwa przygotowywanie platformy Azure](_img/vs-azure/vs-azure-getting-ready-cropped.png)
 
-5.  Zostanie załadowany pulpit nawigacyjny platformy Azure i przy pierwszym użyciu będziesz mieć możliwość skorzystaj z przewodnika.  Przewodnik składa się z szeregu etykietki ekranowe, wskazujących się, jak można wykonywać różnorodne zadania i znajdować odpowiednie informacje.  Kończenie lub zamyka samouczka wyświetli pulpit nawigacyjny platformy Azure.
+5. Zostanie załadowany pulpit nawigacyjny platformy Azure i przy pierwszym użyciu będziesz mieć możliwość skorzystaj z przewodnika.  Przewodnik składa się z szeregu etykietki ekranowe, wskazujących się, jak można wykonywać różnorodne zadania i znajdować odpowiednie informacje.  Kończenie lub zamyka samouczka wyświetli pulpit nawigacyjny platformy Azure.
 
-6.  Zakładki [witryny Azure Portal](https://portal.azure.com) łatwy dostęp w przyszłości.
-    > [!div class="mx-imgBorder"]
-    > ![Pulpit nawigacyjny platformy Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
+6. Zakładki [witryny Azure Portal](https://portal.azure.com) łatwy dostęp w przyszłości.
+   > [!div class="mx-imgBorder"]
+   > ![Pulpit nawigacyjny platformy Azure](_img/vs-azure/vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>Najczęściej zadawane pytania
 

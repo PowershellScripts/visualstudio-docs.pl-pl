@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 06b2d1e537152020b42fdff38fab1200b9cf7668
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908540"
 ---
 # <a name="mip-map-generation-variant"></a>Wariant generowania mipmapy
 Umożliwia mapy mip na tekstury, które nie są renderowane elementów docelowych.  
@@ -30,19 +30,19 @@ Umożliwia mapy mip na tekstury, które nie są renderowane elementów docelowyc
 ## <a name="remarks"></a>Uwagi  
  Każde wywołanie jest wymuszana generacji mipmapy `ID3D11Device::CreateTexture2D` tworząca źródłową teksturę. W szczególności generacji mipmapy jest wymuszone, gdy D3D11_TEXTURE2D_DESC obiekt przekazany w `pDesc` opisuje niezmiennych zasób programu do cieniowania; będącego:  
   
--   Element członkowski BindFlags ma tylko D3D11_BIND_SHADER_RESOURCE ustawiona jest flaga.  
+- Element członkowski BindFlags ma tylko D3D11_BIND_SHADER_RESOURCE ustawiona jest flaga.  
   
--   Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT lub D3D11_USAGE_IMMUTABLE.  
+- Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT lub D3D11_USAGE_IMMUTABLE.  
   
--   Element członkowski CPUAccessFlags jest równa 0 (Brak dostępu Procesora).  
+- Element członkowski CPUAccessFlags jest równa 0 (Brak dostępu Procesora).  
   
--   Element członkowski SampleDesc ma członków liczba równa 1 (nie próbkowanie Wygładzanie (MSAA)).  
+- Element członkowski SampleDesc ma członków liczba równa 1 (nie próbkowanie Wygładzanie (MSAA)).  
   
--   Element członkowski MipLevels jest ustawiona na 1 (nie istniejącego mipmapy).  
+- Element członkowski MipLevels jest ustawiona na 1 (nie istniejącego mipmapy).  
   
- Gdy początkowe dane są dostarczane przez aplikację, format tekstury musi obsługiwać generacji mipmapy automatyczne — zgodnie z ustaleniami D3D11_FORMAT_SUPPORT_MIP_AUTOGEN — chyba, że format jest BC1, BC2 lub BC3; w przeciwnym razie Tekstura nie został zmodyfikowany i nie mapy mip są generowane, gdy początkowe dane są dostarczane.  
+  Gdy początkowe dane są dostarczane przez aplikację, format tekstury musi obsługiwać generacji mipmapy automatyczne — zgodnie z ustaleniami D3D11_FORMAT_SUPPORT_MIP_AUTOGEN — chyba, że format jest BC1, BC2 lub BC3; w przeciwnym razie Tekstura nie został zmodyfikowany i nie mapy mip są generowane, gdy początkowe dane są dostarczane.  
   
- Mapy mip zostały wygenerowane automatycznie tekstury, wywołania `ID3D11Device::CreateShaderResourceView` są modyfikowane podczas odtwarzania, aby korzystać z łańcucha mip w czasie pobierania próbek tekstury.  
+  Mapy mip zostały wygenerowane automatycznie tekstury, wywołania `ID3D11Device::CreateShaderResourceView` są modyfikowane podczas odtwarzania, aby korzystać z łańcucha mip w czasie pobierania próbek tekstury.  
   
 ## <a name="example"></a>Przykład  
  **Generacji mipmapy** wariant zostać odtworzone przy użyciu kodu w następujący sposób:  
@@ -72,4 +72,4 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 >  Jeśli chcesz podać własne mip poziomu zawartość zamiast generować je automatycznie, musi utworzyć swoje tekstury za pomocą obrazu edytora obsługującego mapowane mip tekstury i następnie załaduj plik i poziomów mip, aby przekazać `CreateTexture2D`.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Wariant wymiarów tekstury połowie/kwartał](half-quarter-texture-dimensions-variant.md)
+ [Wariant wymiarów jednej ósmej tekstury](half-quarter-texture-dimensions-variant.md)

@@ -23,12 +23,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d8d5321187d4665ebc10cb3e7471294df50db30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 32c1c66484d5bdaff6ba37b8b37f7f86cb513e44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851663"
 ---
 # <a name="creating-project-and-item-templates"></a>Tworzenie szablonów projektów i elementów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Szablony projektu i elementu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zapewn
 ## <a name="contents-of-a-template"></a>Zawartość szablonu  
  Wszystkie szablony projektów i elementów, instalowane wraz z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lub utworzone przez użytkownika, działają na podstawie tych samych zasad i spisu treści. Wszystkie szablony zawierają następujące elementy:  
   
--   Pliki, które można utworzyć, jeśli jest używany szablon. Dotyczy to plików kodu źródłowego, zasobów osadzonych, plików projektu i tak dalej.  
+- Pliki, które można utworzyć, jeśli jest używany szablon. Dotyczy to plików kodu źródłowego, zasobów osadzonych, plików projektu i tak dalej.  
   
--   Jeden plik .vstemplate. Ten plik zawiera metadane, które dostarczają [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] informacji wymaganych, aby wyświetlić szablon w **nowy projekt** i **Dodaj nowy element** okna dialogowe i umożliwia utworzenie projektu lub elementu z szablon. Aby uzyskać więcej informacji na temat plików .vstemplate, zobacz [parametry szablonu](../ide/template-parameters.md).  
+- Jeden plik .vstemplate. Ten plik zawiera metadane, które dostarczają [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] informacji wymaganych, aby wyświetlić szablon w **nowy projekt** i **Dodaj nowy element** okna dialogowe i umożliwia utworzenie projektu lub elementu z szablon. Aby uzyskać więcej informacji na temat plików .vstemplate, zobacz [parametry szablonu](../ide/template-parameters.md).  
   
- Jeśli te pliki są kompresowane w pliku zip i umieść w odpowiednim folderze, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wyświetla je automatycznie. Szablony projektów są wyświetlane w **Moje szablony** części **nowy projekt** okien dialogowych i szablonów elementów są wyświetlane w **Dodaj nowy element** okien dialogowych. Aby uzyskać więcej informacji na temat folderów szablonów, zobacz [jak: Znajdź i organizowania szablony](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+  Jeśli te pliki są kompresowane w pliku zip i umieść w odpowiednim folderze, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wyświetla je automatycznie. Szablony projektów są wyświetlane w **Moje szablony** części **nowy projekt** okien dialogowych i szablonów elementów są wyświetlane w **Dodaj nowy element** okien dialogowych. Aby uzyskać więcej informacji na temat folderów szablonów, zobacz [jak: Znajdź i organizowania szablony](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="starter-kits"></a>Zestawy początkowe  
  Zestawy startowe są rozszerzone przez szablony, które mogą być współużytkowane z innymi członkami społeczności. Zestaw startowy zawiera przykłady kodu, które kompilują, dokumentację i inne zasoby, aby pomóc użytkownikom poznać nowe narzędzia i techniki programowania, podczas tworzenia użytecznych, rzeczywistych aplikacji. Podstawowe zawartości i procedury zestawu startowego są identyczne z tymi szablonami. Aby uzyskać więcej informacji, zobacz [porady: tworzenie startowe](../ide/how-to-create-starter-kits.md).  

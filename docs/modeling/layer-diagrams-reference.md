@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92b4b6eea3fcaa4ce6785385fe5e779ba38dac61
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920933"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramy zależności: odwołanie
 
@@ -59,7 +59,7 @@ W tym temacie opisano elementy, które można używać na diagram zależności. 
 W poniższej tabeli opisano elementy, które można używać na diagram zależności.
 
 |**Kształt**|**Element**|**Opis**|
-|---------------|-----------------|---------------------|
+|-|-|-|
 |1|**Warstwa**|Grupy logicznej artefaktów fizycznych w systemie. Te artefakty mogą być przestrzenie nazw, projekty, klasy, metody i tak dalej.<br /><br /> Aby zobaczyć artefakty, które są połączone z warstwą, otwórz menu skrótów dla warstwy, a następnie wybierz **Wyświetl łącza** otworzyć **Eksplorator warstw**.<br /><br /> Aby uzyskać więcej informacji, zobacz [Eksplorator warstw](#Explorer).<br /><br /> -   **Zabronione zależności Namespace** — Określa, że artefakty skojarzone z tą warstwą nie może zależeć od określonych przestrzeni nazw.<br />-   **Zabronione przestrzenie nazw** — Określa, że artefakty skojarzone z tą warstwą nie mogą należeć do określonych przestrzeni nazw.<br />-   **Wymagane przestrzenie nazw** — Określa, że artefakty skojarzone z tą warstwą muszą należeć do jednej z określonych przestrzeni nazw.|
 |2|**Zależności**|Wskazuje, że jedna warstwę może korzystać z funkcji w innej warstwie, ale nie odwrotnie.<br /><br /> -   **Kierunek** -Określa kierunek zależności.|
 |3|**Zależność dwukierunkowa**|Wskazuje, że jedna warstwę może korzystać z funkcji w innej warstwie i odwrotnie.<br /><br /> -   **Kierunek** -Określa kierunek zależności.|
@@ -92,7 +92,7 @@ Na diagramie zależności, otwórz menu skrótów dla jednej lub kilku warstw, a
 > Jeśli nie widzisz wszystkie te właściwości, rozwiń **Eksplorator warstw** okna.
 
 |**Kolumna w Eksploratorze warstw**|**Opis**|
-|----------------------------------|---------------------|
+|-|-|
 |**Kategorie**|Rodzaj artefaktu, takie jak klasy, przestrzeni nazw, plik źródłowy i tak dalej|
 |**Warstwa**|Warstwy, który stanowi łącze do artefaktu|
 |**Obsługuje walidację**|Jeśli **True**, a następnie proces sprawdzania poprawności warstwy można sprawdzić, czy projekt jest zgodny ze zależności do lub z tego elementu.<br /><br /> Jeśli **False**, a następnie łącze nie uczestniczy w procesie walidacji warstwy.<br /><br /> Aby uzyskać więcej informacji, zobacz [diagramy zależności: wskazówki dotyczące](../modeling/layer-diagrams-guidelines.md).|

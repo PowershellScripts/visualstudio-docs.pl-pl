@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d7f16422b8282daa1f94011adf1e4a7df5cf387
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ba62fc129674bd25f97037efdfcdbf7396ea3a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824935"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Wprowadzenie do diagnostyki grafiki w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ W tej sekcji umożliwią przygotowanie skorzystać z Graphics Diagnostics po raz
 ## <a name="requirements"></a>Wymagania  
  Aby skorzystać z diagnostyki grafiki w programie Visual Studio 2015, musisz mieć jedną z następujących wersji:  
   
--   Visual Studio 2015 Enterprise  
+- Visual Studio 2015 Enterprise  
   
--   Visual Studio 2015 Professional  
+- Visual Studio 2015 Professional  
   
--   Program Visual Studio Community 2015  
+- Program Visual Studio Community 2015  
   
- [!INCLUDE[downloadvs](../includes/downloadvs-md.md)]  
+  [!INCLUDE[downloadvs](../includes/downloadvs-md.md)]  
   
 ### <a name="windows-10-prerequisites"></a>Wymagania wstępne systemu Windows 10  
  Opcjonalna funkcja Windows *narzędzi graficznych* udostępnia infrastrukturę przechwytywania i odtwarzania, która jest wymagana przez narzędzie Diagnostyka grafiki w systemie Windows 10.  
@@ -54,17 +54,17 @@ W tej sekcji umożliwią przygotowanie skorzystać z Graphics Diagnostics po raz
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Aby zainstalować narzędzi graficznych dla systemu Windows 10  
   
-1.  Na **Start** menu, wybierz **ustawienia**. **Ustawienia** zostanie wyświetlone okno dialogowe.  
+1. Na **Start** menu, wybierz **ustawienia**. **Ustawienia** zostanie wyświetlone okno dialogowe.  
   
-2.  W **ustawienia** okno dialogowe, wybierz **systemu**, a następnie wybierz **zainstalowane aplikacje** z listy ustawień systemu.  
+2. W **ustawienia** okno dialogowe, wybierz **systemu**, a następnie wybierz **zainstalowane aplikacje** z listy ustawień systemu.  
   
-3.  W prawej części **ustawienia** okno dialogowe, wybierz **Zarządzaj funkcjami opcjonalnymi** w obszarze **zainstalowane aplikacje i funkcje**. **Zarządzaj funkcjami opcjonalnymi** zostanie wyświetlone okno dialogowe.  
+3. W prawej części **ustawienia** okno dialogowe, wybierz **Zarządzaj funkcjami opcjonalnymi** w obszarze **zainstalowane aplikacje i funkcje**. **Zarządzaj funkcjami opcjonalnymi** zostanie wyświetlone okno dialogowe.  
   
-4.  W **Zarządzaj funkcjami opcjonalnymi** okno dialogowe, wybierz **Dodaj funkcję**. Zostanie wyświetlona lista funkcji opcjonalnych, które można zainstalować.  
+4. W **Zarządzaj funkcjami opcjonalnymi** okno dialogowe, wybierz **Dodaj funkcję**. Zostanie wyświetlona lista funkcji opcjonalnych, które można zainstalować.  
   
-5.  Wybierz **narzędzi graficznych** z listy funkcji, następnie wybierz **zainstalować**.  
+5. Wybierz **narzędzi graficznych** z listy funkcji, następnie wybierz **zainstalować**.  
   
- Funkcja narzędzi graficznych jest również instalowany automatycznie podczas instalacji zestawu Windows 10 SDK.  
+   Funkcja narzędzi graficznych jest również instalowany automatycznie podczas instalacji zestawu Windows 10 SDK.  
   
 > [!TIP]
 >  Opcjonalna funkcja narzędzi graficznych w systemu Windows 10 oferuje uproszczone przechwytywanie i odtwarzanie funkcje — takie jak program wiersza polecenia do przechwytywania **dxcap.exe**— które mogą być używane w pomocy technicznej, testowania i diagnostycznych scenariusze maszyny, na którym nie są zainstalowane narzędzia dla deweloperów. Aby uzyskać więcej informacji, zobacz [narzędzia wiersza polecenia do przechwytywania](../debugger/command-line-capture-tool.md) tematu.  
@@ -75,11 +75,11 @@ W tej sekcji umożliwią przygotowanie skorzystać z Graphics Diagnostics po raz
 ### <a name="1---create-a-direct3d-app"></a>1 — Tworzenie aplikacji programu Direct3D  
  Jeśli już masz własną aplikację Direct3D diagnostyki grafiki, zapoznaj się z świetne! W przeciwnym razie służy jeden z przykładów Direct3D, dostępnych w galerii kodów.  
   
--   Aby wypróbować diagnostyki grafiki przy użyciu Direct3D 12 w systemie Windows 10 przy użyciu programu Visual Studio 2015, spróbuj [przykładowy program Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) dla systemu Windows 10.  
+- Aby wypróbować diagnostyki grafiki przy użyciu Direct3D 12 w systemie Windows 10 przy użyciu programu Visual Studio 2015, spróbuj [przykładowy program Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) dla systemu Windows 10.  
   
--   Aby wypróbować diagnostyki grafiki w programie Direct3D 11 na system Windows 10 lub Windows 8.1, możesz użyć **aplikacji DirectX (Windows Universal)** lub **aplikacji DirectX (Windows 8.1)** szablony projektów. Lub aby ciekawsze, wypróbuj [przykładowa gra marble maze DirectX](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) dla Windows 8.1.  
+- Aby wypróbować diagnostyki grafiki w programie Direct3D 11 na system Windows 10 lub Windows 8.1, możesz użyć **aplikacji DirectX (Windows Universal)** lub **aplikacji DirectX (Windows 8.1)** szablony projektów. Lub aby ciekawsze, wypróbuj [przykładowa gra marble maze DirectX](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) dla Windows 8.1.  
   
- Upewnij się, że możesz tworzyć aplikacji przed kontynuowaniem.  
+  Upewnij się, że możesz tworzyć aplikacji przed kontynuowaniem.  
   
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 — uruchamianie sesji diagnostyki grafiki  
  Teraz możesz uruchomić sesję pierwszy diagnostyki grafiki. W programie Visual Studio, w menu głównym wybierz **debugowania grafiki, Rozpocznij diagnostykę**, lub po prostu naciśnij **klawisze Alt + F5**. Spowoduje to uruchomienie aplikacji w obszarze Diagnostyka grafiki i wyświetla okien sesji diagnostyki w programie Visual Studio.  
@@ -96,11 +96,11 @@ W tej sekcji umożliwią przygotowanie skorzystać z Graphics Diagnostics po raz
   
 ##### <a name="to-capture-a-sequence-of-frames"></a>Aby przechwycić sekwencji ramek  
   
--   W programie Visual Studio, w oknie sesji diagnostycznej ustaw **ramek do przechwycenia** do liczby klatek, które mają być przechwytywane w sekwencji, następnie przechwycić sekwencji przy użyciu dowolnej z metod opisanych powyżej, aby przechwycić ramki pojedynczego.  
+- W programie Visual Studio, w oknie sesji diagnostycznej ustaw **ramek do przechwycenia** do liczby klatek, które mają być przechwytywane w sekwencji, następnie przechwycić sekwencji przy użyciu dowolnej z metod opisanych powyżej, aby przechwycić ramki pojedynczego.  
   
-     Aby przechwycić ramki pojedynczego ponownie, należy ustawić **ramek do przechwycenia** do `1`.  
+   Aby przechwycić ramki pojedynczego ponownie, należy ustawić **ramek do przechwycenia** do `1`.  
   
- Gdy wszystko będzie gotowe przechwytywanie ramek po prostu zamknąć aplikację, lub wybierz **zatrzymać** przycisk paska narzędzi graficznych lub okna sesji diagnostycznej.  
+  Gdy wszystko będzie gotowe przechwytywanie ramek po prostu zamknąć aplikację, lub wybierz **zatrzymać** przycisk paska narzędzi graficznych lub okna sesji diagnostycznej.  
   
 ### <a name="4--examine-captured-frames-in-the-graphics-analyzer"></a>4 — Sprawdź przechwycone ramki w analizatorze grafiki  
  Teraz możesz przystąpić do sprawdzenia ramki, który został przechwycony. Aby zacząć analizować ramkę, wybierz numer ramki ramki, który chcesz zbadać z okna sesji diagnostycznej. Spowoduje to otwarcie ramki w **analizatora grafiki**, gdzie można użyj narzędzi programu Graphics Diagnostics, aby sprawdzić, jak aplikacja używa technologii Direct3D do śledzenia problemów z renderowaniem, lub użyj **analizy klatek** narzędzia, aby Dowiedz się, jego wydajność.  

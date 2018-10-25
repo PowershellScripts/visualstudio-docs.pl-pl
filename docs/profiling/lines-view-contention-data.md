@@ -12,57 +12,57 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae52ad47e18a0572a883c50f43689bdaae60234d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 7c05f928d7c5c6f35226985147b6a4545e2a2937
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843854"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890052"
 ---
-# <a name="lines-view---contention-data"></a>Widok linii - dane kontencji
-Widok linii danych kontencji wyświetla dane wydajności dla instrukcji, które były wykonywane w chwili przykłady zostały zebrane w przebiegu profilowania. W pliku źródłowym instrukcję może obejmować więcej niż jeden wiersz w pliku źródłowym, a jednym wierszu może zawierać więcej niż jedną instrukcję.  
+# <a name="lines-view---contention-data"></a>Widok linii — dane rywalizacji
+Widok wierszy danych rywalizacji o zasoby wyświetla dane o wydajności dla instrukcji, które były wykonywane w chwili przykłady zostały zebrane podczas uruchomienia profilowania. W pliku źródłowym instrukcji może obejmować więcej niż jeden wiersz w pliku źródłowym, a jeden wiersz może zawierać więcej niż jedną instrukcję.  
   
  Instrukcja jest identyfikowany przez następujące dane:  
   
--   Plik źródłowy, który zawiera deklarację funkcji.  
+- Plik źródłowy, który zawiera deklarację funkcji.  
   
--   Funkcja, która zawiera instrukcję.  
+- Funkcja, która zawiera instrukcję.  
   
--   Wiersza źródłowego, w którym rozpoczyna się instrukcji.  
+- Wiersza źródłowego, w którym rozpoczyna się wykonywanie instrukcji.  
   
--   Po znaku wiersza źródłowego, w którym rozpoczyna się instrukcji.  
+- Znak w wierszu źródłowym, w którym rozpoczyna się wykonywanie instrukcji.  
   
--   Wiersza źródłowego, w którym kończy się instrukcji.  
+- Wiersza źródłowego, w którym kończy się instrukcji.  
   
--   Po znaku wiersza źródłowego, w którym kończy się instrukcji.  
+- Znak w wierszu źródłowym, w którym kończy się instrukcji.  
   
- Kolumna nazw wiersza zawiera sortowanie łączenia danych identyfikator.  
+  Kolumna Nazwa wiersza zawiera wzorzec sortowalnej łączenia danych identyfikator.  
   
- W poniższej tabeli opisano kolumny wierszy Wyświetl raport.  
+  W poniższej tabeli opisano kolumny raportu widok wierszy.  
   
 |Kolumny|Opis|  
 |------------|-----------------|  
-|**Wyłączny czasu blokowania**|Ilość czasu, w którym ta instrukcja została zablokowana wykonywanie kodu w instrukcji z powodu zdarzenia rywalizacji. Czas blokowania w funkcje, które wywołuje instrukcja nie jest włączony.|  
-|**% Wyłącznego czasu blokowania**|Procent wszystkich czas blokowania w procesie, który był własny czas zablokowanych instrukcji.|  
-|**Wyłączny rywalizacji**|Ile razy ta instrukcja została zablokowana wykonywanie kodu w instrukcji z powodu zdarzenia rywalizacji. Zdarzenia rywalizacji w funkcje, które wywołuje instrukcji nie są uwzględniane.|  
-|**% Wyłącznego rywalizacji**|Procent wszystkich zdarzeń rywalizacji w procesie, które były wyłącznego rywalizacje dla tej instrukcji.|  
+|**Wyłączny czas blokowania**|Ilość czasu, w którym ta instrukcja został zablokowany wykonywanie kodu w instrukcji z powodu zdarzenia rywalizacji o zasoby. Czas blokowania w funkcje, które wywołały instrukcja nie jest włączony.|  
+|**% Własnego czasu blokowania**|Procent wszystkich czas blokowania w procesie, który był wyłączny czas blokowania instrukcji.|  
+|**Rywalizacje wyłączne**|Liczba prób niniejszych zablokowano wykonywanie kodu w instrukcji z powodu zdarzenia rywalizacji o zasoby. Zdarzenia rywalizacji w funkcje, które wywołały wykonywanie instrukcji nie są uwzględniane.|  
+|**% Rywalizacji wyłącznych**|Procent wszystkich zdarzeń rywalizacji o zasoby w procesie, które były rywalizacji wyłącznych instrukcji.|  
 |**Adres funkcji**|Adres funkcji, która zawiera tej instrukcji.|  
-|**Nazwa funkcji**|Pełna nazwa funkcji, która zawiera tej instrukcji.|  
-|**Całkowity czas blokowania**|Czas blokowania w tej instrukcji i funkcje wywoływane w instrukcji.|  
-|**Całkowity czas blokowania %**|Procent wszystkich czas blokowania w procesie, który był całkowity czas blokowania instrukcji.|  
-|**Wraz z wartościami granicznymi rywalizacji**|Liczba ta instrukcja i funkcje, które zostały wywołane w instrukcji zostały zablokowane wykonywanie.|  
-|**% Rywalizacji włącznie**|Procent wszystkich zdarzeń rywalizacji w procesie, które były włącznie rywalizacje dla tej instrukcji.|  
-|**Nazwa linii**|Generowane przez profiler identyfikator wiersza. Identyfikator używa następującej składni:`SourceFile`**; [**  `LineNumberStart` **,**`CharacterStart`**] ->; [** `LineNumberEnd`**,**`CharacterEnd`**]**|  
-|**Numer wiersza — funkcja**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
-|**Nazwa modułu**|Nazwa modułu zawiera instrukcję.|  
-|**Ścieżka modułu**|Ścieżka moduł, który zawiera instrukcję.|  
-|**Identyfikator procesu**|Identyfikator PID procesu PROFILOWANEGO procesu.|  
+|**Nazwa funkcji**|W pełni kwalifikowana nazwa funkcji, która zawiera tej instrukcji.|  
+|**Całkowity czas blokowania**|Czas blokowania w tej instrukcji i funkcji o nazwie w instrukcji.|  
+|**% Całkowitego czasu blokowania**|Procent wszystkich czas blokowania w procesie, który był całkowity czas blokowania instrukcji.|  
+|**Rywalizacje włączne**|Ile razy zostały zablokowane tej instrukcji i funkcji, które zostały wywołane w zestawieniu z wykonywania.|  
+|**% Rywalizacji włącznych**|Procent wszystkich zdarzeń rywalizacji o zasoby w procesie, które były rywalizacji włącznych instrukcji.|  
+|**Nazwa wiersza**|Identyfikator wygenerowany przez program profilujący wiersza. Identyfikator używa następującej składni:`SourceFile`**; [**  `LineNumberStart` **,**`CharacterStart`**] ->; [** `LineNumberEnd`**,**`CharacterEnd`**]**|  
+|**Numer wiersza funkcji**|Numer wiersza początku tej funkcji w pliku źródłowym.|  
+|**Nazwa modułu**|Nazwa modułu, który zawiera instrukcję.|  
+|**Ścieżka modułu**|Ścieżka modułu, który zawiera instrukcję.|  
+|**Identyfikator procesu**|Identyfikator procesu (PID) dla PROFILOWANEGO procesu.|  
 |**Nazwa procesu**|Nazwa procesu.|  
-|**Rozpocznij znaków źródła**|Przesunięcie początkowy znaku w wierszu pliku źródłowego, w którym rozpoczyna się tej instrukcji.|  
-|**Źródło znak końcowy**|Przesunięcie początkowy znak w wiersza pliku źródłowego, w którym kończy się w tej instrukcji.|  
+|**Początkowy znak w źródle**|Przesunięcie początkowy znak w wierszu pliku źródłowego, w którym rozpoczyna się tej instrukcji.|  
+|**Końcowy znak w źródle**|Przesunięcie początkowy znak w wiersza pliku źródłowego, w którym kończy się w tej instrukcji.|  
 |**Plik źródłowy**|Nazwa pliku źródłowego, który zawiera deklarację funkcji.|  
-|**Początek wiersza źródłowego**|Numer wiersza pliku źródłowego, w którym rozpoczyna się instrukcji.|  
-|**Źródło końca wiersza**|Numer wiersza w pliku źródłowym, w którym kończy się instrukcji.|  
+|**Początkowy wiersz w źródle**|Numer wiersza w pliku źródłowym, w którym rozpoczyna się wykonywanie instrukcji.|  
+|**Końcowy wiersz w źródle**|Numer wiersza w pliku źródłowym, w którym kończy się instrukcji.|  
   
 ## <a name="see-also"></a>Zobacz także  
  [Porady: Dostosowywanie kolumn widoku raportu](../profiling/how-to-customize-report-view-columns.md)   

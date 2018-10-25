@@ -18,12 +18,12 @@ ms.assetid: f6895cd4-3e95-4f0e-aa9e-8c7750f46ed4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f28f0efc755f40a0d2f4cfdc710eda8f2f4799ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 43f7638039672fad530cb2cd2447dbe8174011cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894082"
 ---
 # <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType — Element (szablony Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,15 +65,15 @@ Klasyfikuje szablon do podkategorii wartości określonej w `ProjectType` elemen
   
  `ProjectSubType` Element udostępnia podkategorię, aby [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) elementu. Ta wartość może zawierać:  
   
--   `SmartDevice-NETCFv1`: Określa, że elementy docelowe szablonu [!INCLUDE[Compact](../includes/compact-md.md)] w wersji 1.0.  
+- `SmartDevice-NETCFv1`: Określa, że elementy docelowe szablonu [!INCLUDE[Compact](../includes/compact-md.md)] w wersji 1.0.  
   
--   `SmartDevice-NETCFv2`: Określa, że elementy docelowe tempalate [!INCLUDE[Compact](../includes/compact-md.md)] w wersji 2.0.  
+- `SmartDevice-NETCFv2`: Określa, że elementy docelowe tempalate [!INCLUDE[Compact](../includes/compact-md.md)] w wersji 2.0.  
   
- Jeśli szablon zawiera `ProjectType` element z wartością `Web`, `ProjectSubType` element określa język programowania szablonu. Ten element może mieć następujące wartości:  
+  Jeśli szablon zawiera `ProjectType` element z wartością `Web`, `ProjectSubType` element określa język programowania szablonu. Ten element może mieć następujące wartości:  
   
--   `CSharp`: Określa, że ten szablon tworzy [!INCLUDE[csprcs](../includes/csprcs-md.md)] projektu sieci Web lub elementu.  
+- `CSharp`: Określa, że ten szablon tworzy [!INCLUDE[csprcs](../includes/csprcs-md.md)] projektu sieci Web lub elementu.  
   
--   `VisualBasic`: Określa, że ten szablon tworzy [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektu sieci Web lub elementu.  
+- `VisualBasic`: Określa, że ten szablon tworzy [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projektu sieci Web lub elementu.  
   
 ## <a name="example"></a>Przykład  
  W poniższym przykładzie pokazano metadanych szablon projektu służący do [!INCLUDE[csprcs](../includes/csprcs-md.md)] element docelowy aplikacji urządzenia [!INCLUDE[Compact](../includes/compact-md.md)] w wersji 2.0.  

@@ -1,5 +1,5 @@
 ---
-title: IDiaInjectedSource::get_source | Dokumentacja firmy Microsoft
+title: Idiainjectedsource::get_source — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8331086fff33f247ab030e3736e1e598c3af477d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2966405dfe3bb7e6134f5ef35e55b30ef6c66c6e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909911"
 ---
 # <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
-Pobiera bajtów kodu źródłowego.  
+Pobiera bajty kodu źródłowego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,16 +36,16 @@ HRESULT get_source (
   
 #### <a name="parameters"></a>Parametry  
  `cbData`  
- [in] Liczba bajtów reprezentujący rozmiar buforu danych.  
+ [in] Liczba bajtów, która przedstawia rozmiar buforu danych.  
   
  `pcbData`  
- [out] Zwraca liczbę bajtów reprezentujący bajtów zwracana. Jeśli `data` jest `NULL`, następnie `pcbData` jest całkowita liczba bajtów danych jest dostępna.  
+ [out] Zwraca liczbę bajtów, która reprezentuje bajtów zwracane. Jeśli `data` jest `NULL`, następnie `pcbData` dostępnej całkowita liczba bajtów danych.  
   
  `data[]`  
- [out] Buforu, który ma zostać wypełnione bajtów źródła.  
+ [out] Buforu, który jest wypełniona bajtów źródła.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

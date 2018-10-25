@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c94ec84d322a8947af72dbc0a4c7aac2c79ae8b
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: feedf1789e4ee3f6b7e04966d945a5a2638242c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880191"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821113"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Zestaw narzędzi MSBuild (ToolsVersion)
 Program MSBuild używa narzędzi zadania, celów i narzędzi do tworzenia aplikacji. Zazwyczaj zawiera zestaw narzędzi MSBuild *microsoft.common.tasks* pliku *microsoft.common.targets* plików i kompilatory, takie jak *csc.exe* i  *vbc.exe*. Większość zestawów narzędzi może służyć do kompilowania aplikacji, aby więcej niż jedna wersja programu .NET Framework i więcej niż jedną platformę systemu. Jednak zestaw narzędzi w wersji 2.0 programu MSBuild może służyć do docelowych tylko .NET Framework 2.0.  
@@ -61,9 +61,9 @@ Program MSBuild używa narzędzi zadania, celów i narzędzi do tworzenia aplika
 ## <a name="toolset-implementation"></a>Zestaw narzędzi wdrażania  
  Implementowanie zestawu narzędzi, wybierając ścieżki różnych narzędzi, obiektów docelowych i zadań, które tworzą zestaw narzędzi. Narzędzia w zestawie narzędzi, który definiuje MSBuild pochodzić z następujących źródeł:  
   
--   Folder .NET Framework.  
+- Folder .NET Framework.  
   
--   Dodatkowe narzędzia zarządzanych.  
+- Dodatkowe narzędzia zarządzanych.  
   
   Narzędzia zarządzanych obejmują *ResGen.exe* i *TlbImp.exe*.  
 

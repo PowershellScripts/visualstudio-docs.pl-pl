@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1b886346a43e75d38a8ea8b6ed7a8b8d7391293
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9085861418f11ed63f76a6493a6927c63530759b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152464"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918795"
 ---
 # <a name="target-element-msbuild"></a>TARGET — element (MSBuild)
 Zawiera zestaw zadań dla [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonania po kolei.  
@@ -73,18 +73,18 @@ Zawiera zestaw zadań dla [!INCLUDE[vstecmsbuild](../extensibility/internals/inc
 
 ### <a name="child-elements"></a>Elementy podrzędne  
 
-|Element|Opis|  
-|-------------|-----------------|  
-|[Zadanie](../msbuild/task-element-msbuild.md)|Tworzy i uruchamia wystąpienie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadania. W elemencie docelowym może być zero lub więcej zadań.|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Zawiera zestaw zdefiniowanych przez użytkownika `Property` elementów. Począwszy od programu .NET Framework 3.5 `Target` element może zawierać `PropertyGroup` elementów.|  
-|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Zawiera zestaw zdefiniowanych przez użytkownika `Item` elementów. Począwszy od programu .NET Framework 3.5 `Target` element może zawierać `ItemGroup` elementów. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md).|  
-|[OnError](../msbuild/onerror-element-msbuild.md)|Powoduje, że jeden lub więcej obiektów docelowych do wykonania, jeśli `ContinueOnError` atrybut jest ErrorAndStop (lub `false`) dla zadania nie powiodło się. Może wynosić zero lub więcej `OnError` elementy w elemencie docelowym. Jeśli `OnError` elementy, muszą być ostatnie elementy w `Target` elementu.<br /><br /> Aby uzyskać informacje o `ContinueOnError` atrybutów, zobacz [Task — element (MSBuild)](../msbuild/task-element-msbuild.md).|  
+| Element | Opis |
+| - | - |
+| [Zadanie](../msbuild/task-element-msbuild.md) | Tworzy i uruchamia wystąpienie [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zadania. W elemencie docelowym może być zero lub więcej zadań. |
+| [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Zawiera zestaw zdefiniowanych przez użytkownika `Property` elementów. Począwszy od programu .NET Framework 3.5 `Target` element może zawierać `PropertyGroup` elementów. |
+| [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Zawiera zestaw zdefiniowanych przez użytkownika `Item` elementów. Począwszy od programu .NET Framework 3.5 `Target` element może zawierać `ItemGroup` elementów. Aby uzyskać więcej informacji, zobacz [elementów](../msbuild/msbuild-items.md). |
+| [OnError](../msbuild/onerror-element-msbuild.md) | Powoduje, że jeden lub więcej obiektów docelowych do wykonania, jeśli `ContinueOnError` atrybut jest ErrorAndStop (lub `false`) dla zadania nie powiodło się. Może wynosić zero lub więcej `OnError` elementy w elemencie docelowym. Jeśli `OnError` elementy, muszą być ostatnie elementy w `Target` elementu.<br /><br /> Aby uzyskać informacje o `ContinueOnError` atrybutów, zobacz [Task — element (MSBuild)](../msbuild/task-element-msbuild.md). |
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 
-|Element|Opis|  
-|-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
+| Element | Opis |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu. |
 
 ## <a name="remarks"></a>Uwagi  
  Pierwszy element docelowy do wykonania jest określona w czasie wykonywania. Obiekty docelowe mogą mieć zależności na innych celów. Na przykład cel wdrożenia jest zależny od docelowej dla kompilacji. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Aparat wykonuje zależności w kolejności, w jakiej występują w `DependsOnTargets` atrybutu, od lewej do prawej. Aby uzyskać więcej informacji, zobacz [cele](../msbuild/msbuild-targets.md).  

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a29c9cd7c1c80ca27ea3e72b4aab3e881bb8d480
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926192"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Wyrażenia w debugerze programu Visual Studio
 Debuger programu Visual Studio zawiera ewaluatory wyrażeń, które działają przy wprowadzaniu wyrażenia w **QuickWatch** okno dialogowe **Obejrzyj** oknie lub **bezpośrednie** okna. Ewaluatory wyrażeń są również w pracy w **punktów przerwania** okna i wielu innych miejscach w debugerze.
@@ -91,13 +91,13 @@ int main()
   
  Funkcje wewnętrzne debugera:  
   
--   Zapewniona jest bezpieczne: wykonanie funkcji wewnętrzne debugera nie spowoduje uszkodzenie procesu, który jest debugowany.  
+- Zapewniona jest bezpieczne: wykonanie funkcji wewnętrzne debugera nie spowoduje uszkodzenie procesu, który jest debugowany.  
   
--   Są dozwolone w wszystkie wyrażenia, nawet w scenariuszach, gdzie efekty uboczne i obliczanie funkcji nie są dozwolone.  
+- Są dozwolone w wszystkie wyrażenia, nawet w scenariuszach, gdzie efekty uboczne i obliczanie funkcji nie są dozwolone.  
   
--   Praca w scenariuszach, w których wywołania funkcji regularnych nie są dostępne, takich jak debugowania minizrzutu.  
+- Praca w scenariuszach, w których wywołania funkcji regularnych nie są dostępne, takich jak debugowania minizrzutu.  
   
- Funkcje wewnętrzne debugera można również ustawić oceny wyrażenia bardziej wygodne. Na przykład `strncmp(str, "asd")` jest znacznie łatwiejsze do zapisu w warunku punktu przerwania niż `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
+  Funkcje wewnętrzne debugera można również ustawić oceny wyrażenia bardziej wygodne. Na przykład `strncmp(str, "asd")` jest znacznie łatwiejsze do zapisu w warunku punktu przerwania niż `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )  
   
 |Obszar|Funkcje wewnętrzne|  
 |----------|-------------------------|  

@@ -1,5 +1,5 @@
 ---
-title: Interfejsy profilera aktywnego skryptu | Dokumentacja firmy Microsoft
+title: Interfejsy Profiler aktywnego skryptu | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -12,45 +12,45 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d44edbd0e37ecef3f32f7dc70d55245335bc70e9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8532c5f7c490237994332e38b8f6fe97a8235bad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24792070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832813"
 ---
 # <a name="active-script-profiler-interfaces"></a>Interfejsy profilera aktywnego skryptu
-Aktywne interfejsy profilera skryptu umożliwiają odbieranie zdarzeń profilowania z [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparatu.  
+Aktywne interfejsy Profiler skryptu umożliwiają odbieranie zdarzeń profilowania z [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] aparatu.  
   
- Plik nagłówka activprof.h udostępnia interfejsy, które są wymienione w tej sekcji.  
+ Plik nagłówkowy activprof.h udostępnia interfejsy, które są wymienione w tej sekcji.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  Następujące interfejsy Włącz profilowanie:  
   
--   [Interfejs IActiveScriptProfilerControl](../../winscript/reference/iactivescriptprofilercontrol-interface.md)  
+- [IActiveScriptProfilerControl, interfejs](../../winscript/reference/iactivescriptprofilercontrol-interface.md)  
   
--   [Interfejs IActiveScriptProfilerControl2](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)  
+- [IActiveScriptProfilerControl2, interfejs](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)  
   
--   [Interfejs IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md)  
+- [IActiveScriptProfilerControl3, interfejs](../../winscript/reference/iactivescriptprofilercontrol3-interface.md)  
   
--   [Iactivescriptprofilercontrol5 — interfejs](../../winscript/reference/iactivescriptprofilercontrol5-interface.md)  
+- [IActiveScriptProfilerControl5, interfejs](../../winscript/reference/iactivescriptprofilercontrol5-interface.md)  
   
--   [Interfejs IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)  
+- [IActiveScriptProfilerCallback, interfejs](../../winscript/reference/iactivescriptprofilercallback-interface.md)  
   
--   [Interfejs IActiveScriptProfilerCallback2](../../winscript/reference/iactivescriptprofilercallback2-interface.md)  
+- [IActiveScriptProfilerCallback2, interfejs](../../winscript/reference/iactivescriptprofilercallback2-interface.md)  
   
--   [Interfejs IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md)  
+- [IActiveScriptProfilerCallback3, interfejs](../../winscript/reference/iactivescriptprofilercallback3-interface.md)  
   
--   [Interfejs IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)  
+- [IActiveScriptProfilerHeapEnum, interfejs](../../winscript/reference/iactivescriptprofilerheapenum-interface.md)  
   
- W poniższej sekcji przedstawiono wyliczenia, które są używane do profilowania:  
+  W poniższej sekcji przedstawiono wyliczenia, które są używane na potrzeby profilowania:  
   
--   [Stałe profilera aktywnego skryptu, wyliczenia i struktury](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)  
+- [Stałe, wyliczenia i struktury profilera aktywnego skryptu](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)  
   
 > [!NOTE]
->  Aktywne interfejsy profilera skryptu pierwszy zostały wydane z programu Internet Explorer 8. `IActiveScriptProfilerControl2` i `IActiveScriptProfilerCallback2` interfejsy pierwszy zostały wydane z programu Internet Explorer 9. [Interfejs IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [interfejs IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md), i [interfejs IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) zostały interfejsów opublikowany po raz pierwszy w programie Internet Explorer 10. [Iactivescriptprofilercontrol5 — interfejs](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) pierwszego wydania programu Internet Explorer 11.  
+>  Aktywne interfejsy Profiler skryptu pierwszy zostały wydane z programu Internet Explorer 8. `IActiveScriptProfilerControl2` i `IActiveScriptProfilerCallback2` interfejsów pierwszy zostały wydane z programu Internet Explorer 9. [Interfejs IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [interfejs IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md), i [interfejs IActiveScriptProfilerHeapEnum](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) zostały interfejsów najpierw wydane w programie Internet Explorer 10. [IActiveScriptProfilerControl5, interfejs](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) został pierwotnie wydany w programie Internet Explorer 11.  
 >   
->  W programie Internet Explorer 8 oraz Internet Explorer 9, tylko [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] języka używa te interfejsy do obsługi profilowania skryptu.  
+>  W programie Internet Explorer 8 oraz programu Internet Explorer 9, tylko [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] tych interfejsów w języku jest używany do obsługi profilowania skryptu.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Odwołania skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)
+ [Dokumentacja interfejsów skryptów systemu Windows](../../winscript/reference/windows-script-interfaces-reference.md)

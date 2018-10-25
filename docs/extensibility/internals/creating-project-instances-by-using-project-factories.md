@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 920f81c432dfed2761bf2d0438b02ad76ce36e4d
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 10b62093f85c51ee349386ec09470228d0194e9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370721"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833998"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Tworzenie wystąpień projektów przy użyciu fabryk projektów
 Typów projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] użyj *fabryka projektu* do tworzenia wystąpień obiektów projektu. Fabryka projektu jest podobna do fabryki klas standard dla obiektów COM, cocreatable. Obiekty projektu nie są jednak cocreatable; mogą one można tworzyć tylko za pomocą fabryki projektu.  
@@ -35,19 +35,19 @@ Typów projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
 ## <a name="create-an-owned-project"></a>Tworzenie projektu należące do firmy  
  Właściciel tworzy projekt należące do firmy w dwóch fazach:  
   
-1.  Przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.PreCreateForOwner%2A> metody. Zapewnia możliwość tworzenia obiektu projektu zagregowane oparte na danych wejściowych kontrolowanie należących do projektu `IUnknown`. Należących do projektu przekazuje wewnętrzny `IUnknown` i zagregowane obiekt do projektu właściciela. Daje możliwość przechowywania wewnętrzny należących do projektu `IUnknown`.  
+1. Przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.PreCreateForOwner%2A> metody. Zapewnia możliwość tworzenia obiektu projektu zagregowane oparte na danych wejściowych kontrolowanie należących do projektu `IUnknown`. Należących do projektu przekazuje wewnętrzny `IUnknown` i zagregowane obiekt do projektu właściciela. Daje możliwość przechowywania wewnętrzny należących do projektu `IUnknown`.  
   
-2.  Przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A> metody. Należących do projektu nie wszystkie jego wystąpienia, gdy ta metoda jest wywoływana zamiast wywoływać metodę `IVsProjectFactory::CreateProject` tak jak w przypadku projektów, które nie należą do. Dane wejściowe `VSOWNEDPROJECTOBJECT` wyliczenie jest zazwyczaj zagregowane należących do projektu. Należących do projektu, można użyć tej zmiennej do określenia, czy jego obiektu projektu już istnieje (plik cookie nie jest równa NULL) lub musi zostać utworzona (plik cookie jest równa NULL).  
+2. Przez wywołanie metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A> metody. Należących do projektu nie wszystkie jego wystąpienia, gdy ta metoda jest wywoływana zamiast wywoływać metodę `IVsProjectFactory::CreateProject` tak jak w przypadku projektów, które nie należą do. Dane wejściowe `VSOWNEDPROJECTOBJECT` wyliczenie jest zazwyczaj zagregowane należących do projektu. Należących do projektu, można użyć tej zmiennej do określenia, czy jego obiektu projektu już istnieje (plik cookie nie jest równa NULL) lub musi zostać utworzona (plik cookie jest równa NULL).  
   
- Typy projektów są identyfikowane przez projekt Unikatowy identyfikator GUID, podobnie jak identyfikator CLSID cocreatable obiektu COM. Zazwyczaj jeden projekt fabryka obsługuje tworzenia wystąpień typu pojedynczego projektu, mimo że można mieć jedną fabryka projektu obsługiwać więcej niż jeden identyfikator GUID typu projektu.  
+   Typy projektów są identyfikowane przez projekt Unikatowy identyfikator GUID, podobnie jak identyfikator CLSID cocreatable obiektu COM. Zazwyczaj jeden projekt fabryka obsługuje tworzenia wystąpień typu pojedynczego projektu, mimo że można mieć jedną fabryka projektu obsługiwać więcej niż jeden identyfikator GUID typu projektu.  
   
- Typy projektów są skojarzone z rozszerzeniem nazwy pliku określonej. Po użytkownik próbuje otworzyć istniejący plik projektu lub podejmuje próbę utworzenia nowego projektu przez Sklonowanie szablonu, IDE używa rozszerzenia w pliku w celu określenia odpowiedniego identyfikatora GUID projektu.  
+   Typy projektów są skojarzone z rozszerzeniem nazwy pliku określonej. Po użytkownik próbuje otworzyć istniejący plik projektu lub podejmuje próbę utworzenia nowego projektu przez Sklonowanie szablonu, IDE używa rozszerzenia w pliku w celu określenia odpowiedniego identyfikatora GUID projektu.  
   
- Jak najszybciej IDE ustala, czy należy utworzyć nowy projekt lub Otwórz istniejący projekt określonego typu, IDE używa informacji w kluczu rejestru systemu **[HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects]**  można znaleźć którego pakietu VSPackage implementuje fabryki wymagane projekty. IDE ładuje tego pakietu VSPackage. W <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> metody pakietu VSPackage należy zarejestrować jego fabryka projektu środowiska IDE, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> metody.  
+   Jak najszybciej IDE ustala, czy należy utworzyć nowy projekt lub Otwórz istniejący projekt określonego typu, IDE używa informacji w kluczu rejestru systemu **[HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects]**  można znaleźć którego pakietu VSPackage implementuje fabryki wymagane projekty. IDE ładuje tego pakietu VSPackage. W <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> metody pakietu VSPackage należy zarejestrować jego fabryka projektu środowiska IDE, wywołując <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> metody.  
   
- Podstawową metodą `IVsProjectFactory` interfejs <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>, która powinna obsługiwać dwa scenariusze: otwierania istniejącego projektu i tworzenia nowego projektu. Większość projektów przechowywania ich stanu projektu w pliku projektu. Zazwyczaj nowe projekty są tworzone przez tworzenie kopii pliku szablonu jest przekazywany do `CreateProject` metody, a następnie otwarcie kopii. Istniejące projekty są tworzone przez bezpośrednio, otwierając plik projektu przekazany do `CreateProject` metody. `CreateProject` Metoda można wyświetlić dodatkowe funkcje interfejsu użytkownika dla użytkownika, zgodnie z potrzebami.  
+   Podstawową metodą `IVsProjectFactory` interfejs <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>, która powinna obsługiwać dwa scenariusze: otwierania istniejącego projektu i tworzenia nowego projektu. Większość projektów przechowywania ich stanu projektu w pliku projektu. Zazwyczaj nowe projekty są tworzone przez tworzenie kopii pliku szablonu jest przekazywany do `CreateProject` metody, a następnie otwarcie kopii. Istniejące projekty są tworzone przez bezpośrednio, otwierając plik projektu przekazany do `CreateProject` metody. `CreateProject` Metoda można wyświetlić dodatkowe funkcje interfejsu użytkownika dla użytkownika, zgodnie z potrzebami.  
   
- Projekt można również użyć żadne pliki, a zamiast tego należy przechowywać stanu projektu w mechanizm magazynu innego niż system plików, takich jak bazy danych lub serwer sieci Web. W tym przypadku parametr nazwy pliku jest przekazywane do `CreateProject` metoda nie jest faktycznie ścieżka systemu plików, ale unikatowy ciąg — adres URL — do identyfikowania danych projektu. Nie należy skopiować pliki szablonów, które są przekazywane do `CreateProject` do wyzwolenia sekwencji konstrukcji odpowiednie do wykonania.  
+   Projekt można również użyć żadne pliki, a zamiast tego należy przechowywać stanu projektu w mechanizm magazynu innego niż system plików, takich jak bazy danych lub serwer sieci Web. W tym przypadku parametr nazwy pliku jest przekazywane do `CreateProject` metoda nie jest faktycznie ścieżka systemu plików, ale unikatowy ciąg — adres URL — do identyfikowania danych projektu. Nie należy skopiować pliki szablonów, które są przekazywane do `CreateProject` do wyzwolenia sekwencji konstrukcji odpowiednie do wykonania.  
   
 ## <a name="see-also"></a>Zobacz także  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>   

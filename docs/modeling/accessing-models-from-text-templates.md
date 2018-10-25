@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6c05befbfa59063956d0df37a7aa57d955503ec5
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882525"
 ---
 # <a name="accessing-models-from-text-templates"></a>Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu
 Przy użyciu szablonów tekstowych, można utworzyć raport plików, pliki kodu źródłowego i inne pliki tekstowe, które są oparte na modelach języka specyficznego dla domeny. Aby uzyskać podstawowe informacje na temat szablonów tekstu, zobacz [generowanie kodu i szablony tekstowe T4](../modeling/code-generation-and-t4-text-templates.md). Szablonów tekstowych będzie działać w trybie doświadczalnym podczas debugowania DSL, a także będą działać na komputerze, na którym wdrożono język DSL.
@@ -26,11 +26,11 @@ Przy użyciu szablonów tekstowych, można utworzyć raport plików, pliki kodu 
 
  Dostęp do modelu z szablonu tekstu:
 
--   Ustaw właściwość Dziedzicz — dyrektywa szablonu do <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. To zapewnia dostęp do Store.
+- Ustaw właściwość Dziedzicz — dyrektywa szablonu do <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. To zapewnia dostęp do Store.
 
--   Określ procesory dyrektyw dla języka DSL, który chcesz uzyskać dostęp. Ładuje zestawy dla DSL, tak, aby można było używać jej klas domeny, właściwości i relacje w kodzie szablon tekstowy. Powoduje ono również pobieranie pliku modelu, który określisz.
+- Określ procesory dyrektyw dla języka DSL, który chcesz uzyskać dostęp. Ładuje zestawy dla DSL, tak, aby można było używać jej klas domeny, właściwości i relacje w kodzie szablon tekstowy. Powoduje ono również pobieranie pliku modelu, który określisz.
 
- A `.tt` podobny do poniższego przykładu utworzony zostanie plik w projekcie debugowania podczas tworzenia nowego rozwiązania programu Visual Studio z szablonu minimalnego języka DSL.
+  A `.tt` podobny do poniższego przykładu utworzony zostanie plik w projekcie debugowania podczas tworzenia nowego rozwiązania programu Visual Studio z szablonu minimalnego języka DSL.
 
 ```
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -50,22 +50,21 @@ Here is a list of elements in the model:
 <#
   }
 #>
-
 ```
 
  Zwróć uwagę na następujące kwestie dotyczące tego szablonu:
 
--   Szablon można użyć klas domeny, właściwości i relacje, które są zdefiniowane w definicji DSL.
+- Szablon można użyć klas domeny, właściwości i relacje, które są zdefiniowane w definicji DSL.
 
--   Szablon ładuje plik modelu, który określisz w `requires` właściwości.
+- Szablon ładuje plik modelu, który określisz w `requires` właściwości.
 
--   Właściwość `this` zawiera element główny. W efekcie kodu można przejść do innych elementów modelu. Nazwa właściwości jest zwykle taka sama jak klasa domeny katalogu głównego DSL. W tym przykładzie jest `this.ExampleModel`.
+- Właściwość `this` zawiera element główny. W efekcie kodu można przejść do innych elementów modelu. Nazwa właściwości jest zwykle taka sama jak klasa domeny katalogu głównego DSL. W tym przykładzie jest `this.ExampleModel`.
 
--   Mimo że język, w którym zapisywane są fragmenty kodu C#, można wygenerować tekstu dowolnego rodzaju. Można także napisać kod w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] przez dodanie właściwości `language="VB"` do `template` dyrektywy.
+- Mimo że język, w którym zapisywane są fragmenty kodu C#, można wygenerować tekstu dowolnego rodzaju. Można także napisać kod w [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] przez dodanie właściwości `language="VB"` do `template` dyrektywy.
 
--   Aby debugować szablonu, należy dodać `debug="true"` do `template` dyrektywy. Szablon zostanie otwarty w innym wystąpieniu programu Visual Studio, jeśli wystąpi wyjątek. Jeśli chcesz przerwać działanie debugera w określonym miejscu w kodzie, instrukcji insert `System.Diagnostics.Debugger.Break();`
+- Aby debugować szablonu, należy dodać `debug="true"` do `template` dyrektywy. Szablon zostanie otwarty w innym wystąpieniu programu Visual Studio, jeśli wystąpi wyjątek. Jeśli chcesz przerwać działanie debugera w określonym miejscu w kodzie, instrukcji insert `System.Diagnostics.Debugger.Break();`
 
-     Aby uzyskać więcej informacji, zobacz [debugowanie szablonu tekstowego T4](../modeling/debugging-a-t4-text-template.md).
+   Aby uzyskać więcej informacji, zobacz [debugowanie szablonu tekstowego T4](../modeling/debugging-a-t4-text-template.md).
 
 ## <a name="about-the-dsl-directive-processor"></a>Procesor dyrektywy języka DSL — informacje
  Szablon można użyć klas domeny, które są zdefiniowane w definicji DSL. To jest spowodowanym ulepszonym dyrektywy, który zwykle pojawia się bliżej początku tego szablonu. W poprzednim przykładzie jest następująca.
@@ -87,16 +86,15 @@ Here is a list of elements in the model:
 
 ```
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1';validation='open|load|save|menu'" #>
-
 ```
 
  Należy zauważyć, że:
 
-1.  `filename` i `validation` parametry są rozdzielane ";" oraz nie może być nie separatorów ani spacji.
+1. `filename` i `validation` parametry są rozdzielane ";" oraz nie może być nie separatorów ani spacji.
 
-2.  Lista kategorii weryfikacji określa metody sprawdzania poprawności, które zostaną wykonane. Wiele kategorii powinny być rozdzielone za pomocą "&#124;" oraz nie może być nie separatorów ani spacji.
+2. Lista kategorii weryfikacji określa metody sprawdzania poprawności, które zostaną wykonane. Wiele kategorii powinny być rozdzielone za pomocą "&#124;" oraz nie może być nie separatorów ani spacji.
 
- Jeśli zostanie znaleziony błąd, będą raportowane w oknie błędów, a plik wynik będzie zawierać komunikat o błędzie.
+   Jeśli zostanie znaleziony błąd, będą raportowane w oknie błędów, a plik wynik będzie zawierać komunikat o błędzie.
 
 ## <a name="Multiple"></a> Uzyskiwanie dostępu do wielu modeli z szablonu tekstowego
 
@@ -173,7 +171,6 @@ For Each element As ExampleElement In Me.WorkModel.Elements
    // Here you generate more content derived from the element.
   }
 #>
-
 ```
 
  `LoopSplitter.tt` wywołuje `LoopTemplate.t4`, a następnie dzieli wynikowy plik na jego segmentów. Należy zauważyć, że ten szablon nie ma być szablonem modelowania, ponieważ nie odczytuje model.
@@ -215,5 +212,4 @@ For Each element As ExampleElement In Me.WorkModel.Elements
      File.WriteAllText(Path.Combine(dir, parts[0] + ".txt"), parts[1]);
   }
 #>
-
 ```

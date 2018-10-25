@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f89540c7ca084c6ef60d83b7678bb8cd4f56990
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ef5dc15db983a54e60df447a2457d9dbc6804d85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915808"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Jak utworzyć i stosowanie zasobów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,18 +57,18 @@ Style i szablony dla elementów w Projektancie XAML są przechowywane w jednostk
   
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>Aby zastosować zasób do elementu lub właściwości  
   
-1.  Okno konspektu dokumentu wybierz element, który chcesz zastosować zasób.  
+1. Okno konspektu dokumentu wybierz element, który chcesz zastosować zasób.  
   
-2.  Wykonaj jedną z następujących czynności:  
+2. Wykonaj jedną z następujących czynności:  
   
-    -   Stosowanie zasobów do właściwości. W oknie dialogowym właściwości wybierz znacznik właściwości obok wartości właściwości, wybierz polecenie **zasobu lokalnego** lub **zasób systemowy**, a następnie wybierz zasób dostępny z wyświetlonej listy.  
+   - Stosowanie zasobów do właściwości. W oknie dialogowym właściwości wybierz znacznik właściwości obok wartości właściwości, wybierz polecenie **zasobu lokalnego** lub **zasób systemowy**, a następnie wybierz zasób dostępny z wyświetlonej listy.  
   
-         Jeśli nie widzisz zasobów, która powinna się pojawić, może to być, ponieważ typ zasobu nie jest zgodny z typem właściwości.  
+      Jeśli nie widzisz zasobów, która powinna się pojawić, może to być, ponieważ typ zasobu nie jest zgodny z typem właściwości.  
   
-    -   Stosowanie zasobu szablon stylu lub kontrolki do formantu. Otwórz menu kontekstowe dla formantu w oknie konspekt dokumentu, wybierz opcję **Edytuj szablon** lub **Edytuj dodatkowe szablony**, wybierz **Zastosuj zasób**, a następnie wybierz pozycję Nazwa szablonu kontrolki z wyświetlonej listy.  
+   - Stosowanie zasobu szablon stylu lub kontrolki do formantu. Otwórz menu kontekstowe dla formantu w oknie konspekt dokumentu, wybierz opcję **Edytuj szablon** lub **Edytuj dodatkowe szablony**, wybierz **Zastosuj zasób**, a następnie wybierz pozycję Nazwa szablonu kontrolki z wyświetlonej listy.  
   
-        > [!NOTE]
-        >  **Edytuj szablon** służy do stosowania szablonów kontrolek. **Edytuj dodatkowe szablony** służy do stosowania innego typu szablonu.  
+     > [!NOTE]
+     >  **Edytuj szablon** służy do stosowania szablonów kontrolek. **Edytuj dodatkowe szablony** służy do stosowania innego typu szablonu.  
   
      Zasoby mogą być stosowane wszędzie tam, gdzie są one zgodne. Na przykład, można zastosować do zasobu pędzla **pierwszego planu** właściwość <xref:Windows.UI.Xaml.Controls.TextBox> kontroli.  
   

@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb711763e96cf6959a71b002f09cefa1ced44734
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 6ac6fb3ae1f8c4e7fb48c9cd9a0d2b77cb875094
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624323"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894472"
 ---
 # <a name="navigate-code"></a>Przechodzenie do kodu
 
@@ -65,10 +65,10 @@ Aby ukryć pasek nawigacyjny, należy zmienić **pasek nawigacyjny** opcji **Edy
 
 Znajduje wszystkie odwołania do wybranego elementu w rozwiązaniu. Umożliwia to, aby sprawdzić efekty uboczne o dużych refaktoryzacji lub sprawdzić "nieużywany" kod. Naciśnij klawisz **F8** do przechodzenia między wynikami. Aby uzyskać więcej informacji, zobacz [Znajdowanie odwołań w kodzie](finding-references.md).
 
-Dane wejściowe        | Funkcja
+Dane wejściowe | Funkcja
 ------------ | ---
 **Keyboard** | Umieść kursor tekst zawarty wewnątrz nazwy typu, a następnie naciśnij klawisz **Shift**+**F12**
-**Myszy**    | Wybierz **Znajdź wszystkie odwołania** z menu kontekstowego
+**Myszy** | Wybierz **Znajdź wszystkie odwołania** z menu kontekstowego
 
 ## <a name="reference-highlighting"></a>Wyróżnianie odwołań
 
@@ -104,37 +104,37 @@ Zobacz więcej informacji na temat tych poleceń w [Znajdowanie kodu za pomocą 
 
 Przejdź do definicji powoduje przejście do definicji wybranego elementu. Aby uzyskać więcej informacji, zobacz [przejdź do definicji i zobacz definicję](../ide/go-to-and-peek-definition.md).
 
-Dane wejściowe        | Funkcja
+Dane wejściowe | Funkcja
 ------------ | ---
 **Keyboard** | Umieść kursor tekst zawarty wewnątrz nazwy typu, a następnie naciśnij klawisz **F12**
-**Myszy**    | Kliknij prawym przyciskiem myszy nazwę typu, a następnie wybierz pozycję **przejdź do definicji** lub naciśnij **Ctrl** i kliknij nazwę typu (nowego programu Visual Studio 2017 wersji 15.4)
+**Myszy** | Kliknij prawym przyciskiem myszy nazwę typu, a następnie wybierz pozycję **przejdź do definicji** lub naciśnij **Ctrl** i kliknij nazwę typu (nowego programu Visual Studio 2017 wersji 15.4)
 
 ## <a name="peek-definition"></a>Zobacz definicję
 
 Definicja zaznaczonego elementu w oknie wglądu Wyświetla definicji bez przechodzenia poza bieżącą lokalizację w edytorze kodu. Aby uzyskać więcej informacji, zobacz [porady: wyświetlanie i edytowanie kodu za pomocą funkcji zobacz definicję](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) i [przejdź do definicji i zobacz definicję](../ide/go-to-and-peek-definition.md).
 
-Dane wejściowe        | Funkcja
+Dane wejściowe | Funkcja
 ------------ | ---
 **Keyboard** | Umieść kursor tekst zawarty wewnątrz nazwy typu, a następnie naciśnij klawisz **Alt**+**F12**
-**Myszy**    | Kliknij prawym przyciskiem myszy nazwę typu, a następnie wybierz pozycję **Peek Definition** lub naciśnij **Ctrl** i kliknij nazwę typu (Jeśli masz **Otwórz definicję w widoku podglądu** zaznaczoną opcją)
+**Myszy** | Kliknij prawym przyciskiem myszy nazwę typu, a następnie wybierz pozycję **Peek Definition** lub naciśnij **Ctrl** i kliknij nazwę typu (Jeśli masz **Otwórz definicję w widoku podglądu** zaznaczoną opcją)
 
 ## <a name="go-to-implementation"></a>Przejdź do implementacji
 
 Przy użyciu przejdź do implementacji, możesz przejść z klasy bazowej lub wpisz, aby ich implementacji. Jeśli istnieje wiele implementacji, zobaczysz je na liście **wyniki wyszukiwania symboli** okna:
 
-Dane wejściowe        | Funkcja
+Dane wejściowe | Funkcja
 ------------ | ---
 **Keyboard** | Umieść kursor tekst zawarty wewnątrz nazwy typu, a następnie naciśnij klawisz **Ctrl**+**F12**
-**Myszy**    | Kliknij prawym przyciskiem myszy nazwę typu, a następnie wybierz pozycję **przejdź do implementacji**
+**Myszy** | Kliknij prawym przyciskiem myszy nazwę typu, a następnie wybierz pozycję **przejdź do implementacji**
 
 ## <a name="call-hierarchy"></a>Hierarchia wywołań
 
 Możesz wyświetlić wywołania do i z metody w [hierarchię wywołań, okno](../ide/reference/call-hierarchy.md):
 
-Dane wejściowe        | Funkcja
+Dane wejściowe | Funkcja
 ------------ | ---
 **Keyboard** | Umieść kursor tekst zawarty wewnątrz nazwy typu, a następnie naciśnij klawisz **Ctrl**+**K**, **Ctrl**+**T**
-**Myszy**    | Kliknij prawym przyciskiem myszy na nazwę elementu członkowskiego, a następnie wybierz pozycję **Pokaż hierarchię wywołań**
+**Myszy** | Kliknij prawym przyciskiem myszy na nazwę elementu członkowskiego, a następnie wybierz pozycję **Pokaż hierarchię wywołań**
 
 ## <a name="next-method-and-previous-method-commands-visual-basic"></a>Kolejne polecenia metody i poprzedniej metody (Visual Basic)
 

@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175269"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894524"
 ---
 # <a name="about-domain-specific-languages"></a>Języki specyficzne dla domeny — informacje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ W przeciwieństwie do języka ogólnego przeznaczenia, takich jak C# lub UML ję
   
  Firmy, a projekt także dotyczyć specjalne rodzaje pojęcia, które można opisać za pomocą języka DSL. Na przykład można zdefiniować DSL dla jednego z tych aplikacji:  
   
--   Plan ścieżki nawigacji w witrynie sieci Web.  
+- Plan ścieżki nawigacji w witrynie sieci Web.  
   
--   Diagramy połączeń dla komponentów elektronicznych.  
+- Diagramy połączeń dla komponentów elektronicznych.  
   
--   Sieci taśmy przenoszące i obsługi sprzętu na lotnisku bagażu.  
+- Sieci taśmy przenoszące i obsługi sprzętu na lotnisku bagażu.  
   
- Podczas projektowania DSL, należy zdefiniować *klasy domeny* dla każdego ważnych pojęć w domenie, np. strony sieci Web, lamp lub port lotniczy biurku ewidencjonowania. Należy zdefiniować *relacje domeny* takie jak hiperłącza, o komunikacji sieciowej lub pas taśmy połączyć ze sobą pojęcia.  
+  Podczas projektowania DSL, należy zdefiniować *klasy domeny* dla każdego ważnych pojęć w domenie, np. strony sieci Web, lamp lub port lotniczy biurku ewidencjonowania. Należy zdefiniować *relacje domeny* takie jak hiperłącza, o komunikacji sieciowej lub pas taśmy połączyć ze sobą pojęcia.  
   
- Tworzenie użytkowników DSL *modeli.* Modele są *wystąpień* z język DSL. Na przykład opisują one określonej witryny sieci Web lub okablowanie określonego urządzenia lub bagażu systemu w określonym porcie lotniczym obsługi.  
+  Tworzenie użytkowników DSL *modeli.* Modele są *wystąpień* z język DSL. Na przykład opisują one określonej witryny sieci Web lub okablowanie określonego urządzenia lub bagażu systemu w określonym porcie lotniczym obsługi.  
   
- Użytkownicy mogą wyświetlać modelu jako diagramu lub formularza Windows. Modele można również wyświetlać jako kod XML, który jest, jak są one przechowywane. Podczas definiowania DSL, należy zdefiniować jak wystąpień każdej klasy domeny i relacje są pokazywane na ekranie użytkownika. Typowe DSL jest wyświetlany jako kolekcja ikon lub prostokąty połączone przez strzałki.  
+  Użytkownicy mogą wyświetlać modelu jako diagramu lub formularza Windows. Modele można również wyświetlać jako kod XML, który jest, jak są one przechowywane. Podczas definiowania DSL, należy zdefiniować jak wystąpień każdej klasy domeny i relacje są pokazywane na ekranie użytkownika. Typowe DSL jest wyświetlany jako kolekcja ikon lub prostokąty połączone przez strzałki.  
   
- Na poniższej ilustracji przedstawiono model małych w DSL diagramu:  
+  Na poniższej ilustracji przedstawiono model małych w DSL diagramu:  
   
- ![Model drzewa rodziny Tudorów](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
+  ![Model drzewa rodziny Tudorów](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
   
 ## <a name="what-you-can-do-with-dsls"></a>Co można zrobić za pomocą języków DSL  
  Typowa aplikacja języka DSL ma generować kod programu lub inne artefakty. Podczas definiowania DSL można zdefiniować *szablonów tekstowych* , odczytywanie modelu DSL i generowanie plików tekstowych.  

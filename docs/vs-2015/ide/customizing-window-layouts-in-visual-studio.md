@@ -29,12 +29,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d1fb044d2529e2349e7c98e810adbfe62c7c654
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1702a2b25bd0489814473f3ae2fc0073dab8497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911645"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Dostosowywanie układów okien w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,21 +65,21 @@ W programie Visual Studio można dostosować położenie, rozmiar i zachowanie s
   
  Rozmieść z systemu windows, w następujący sposób:  
   
--   Przypnij dobrze okna dokumentu do lewej strony karty.  
+- Przypnij dobrze okna dokumentu do lewej strony karty.  
   
--   Karta dokowanie okien do ramki edycji.  
+- Karta dokowanie okien do ramki edycji.  
   
--   Dokowanie okien narzędzi do krawędzi ramki w IDE.  
+- Dokowanie okien narzędzi do krawędzi ramki w IDE.  
   
--   Przestawianie okien dokumentu lub narzędzia na lub poza IDE.  
+- Przestawianie okien dokumentu lub narzędzia na lub poza IDE.  
   
--   Ukrywanie okien narzędzi wzdłuż krawędzi środowiska IDE.  
+- Ukrywanie okien narzędzi wzdłuż krawędzi środowiska IDE.  
   
--   Wyświetlaj okna na różnych monitorach.  
+- Wyświetlaj okna na różnych monitorach.  
   
--   Resetowanie położenia okna, domyślny układ lub zapisanego układu niestandardowego.  
+- Resetowanie położenia okna, domyślny układ lub zapisanego układu niestandardowego.  
   
- Okna dokumentów i narzędzi mogą być ułożone przez przeciąganie, za pomocą poleceń w **okna** menu i klikając prawym przyciskiem myszy pasek tytułu okna.  
+  Okna dokumentów i narzędzi mogą być ułożone przez przeciąganie, za pomocą poleceń w **okna** menu i klikając prawym przyciskiem myszy pasek tytułu okna.  
   
 > [!NOTE]
 >  Na komputerze w poniższych instrukcjach mogą być wyświetlane inne nazwy i lokalizacje niektórych elementów interfejsu użytkownika programu Visual Studio. Te elementy są określane przez numer wersji Visual Studio oraz twoje ustawienia. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

@@ -15,12 +15,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f98990cfe1a3451b9932eb5614de614c05434edb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 62a451b1004a6e93980d7fb594781e661b06246d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863628"
 ---
 # <a name="unit-test-basics"></a>Podstawowe informacje o teście jednostkowym
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,19 +65,19 @@ Sprawdź, czy kod działa zgodnie z oczekiwaniami, tworzenie i Uruchamianie test
   
  Utworzymy `MyBank` rozwiązanie, które zawiera dwa projekty:  
   
--   `Accounts`  
+- `Accounts`  
   
--   `BankDb`  
+- `BankDb`  
   
- Nasze pierwsza próba projektowania `Accounts` projekt zawiera klasę do przechowywania podstawowe informacje o koncie, interfejs, który określa typowych funkcji dowolnego typu konta, takie jak zdeponowanie i wycofania zasobów z konta i klasy pochodzi z interfejsu, który reprezentuje konto sprawdzanie. Zaczniemy projektów kont, tworząc następujące pliki źródłowe:  
+  Nasze pierwsza próba projektowania `Accounts` projekt zawiera klasę do przechowywania podstawowe informacje o koncie, interfejs, który określa typowych funkcji dowolnego typu konta, takie jak zdeponowanie i wycofania zasobów z konta i klasy pochodzi z interfejsu, który reprezentuje konto sprawdzanie. Zaczniemy projektów kont, tworząc następujące pliki źródłowe:  
   
--   `AccountInfo.cs` Definiuje podstawowe informacje dotyczące konta.  
+- `AccountInfo.cs` Definiuje podstawowe informacje dotyczące konta.  
   
--   `IAccount.cs` zdefiniowano standard `IAccount` interfejs dla konta, takie jak metody złożenia i wycofać zasoby z konta usługi i pobrać salda konta.  
+- `IAccount.cs` zdefiniowano standard `IAccount` interfejs dla konta, takie jak metody złożenia i wycofać zasoby z konta usługi i pobrać salda konta.  
   
--   `CheckingAccount.cs` zawiera `CheckingAccount` klasę, która implementuje `IAccounts` interfejsu dla konta rozliczeniowego.  
+- `CheckingAccount.cs` zawiera `CheckingAccount` klasę, która implementuje `IAccounts` interfejsu dla konta rozliczeniowego.  
   
- Zdajemy sobie sprawę doświadczenia, że tego jednego rzeczą, jaką należy wykonać wycofania z konta rozliczeniowego, upewnij się, że wybierana kwota jest mniejsza niż saldo konta. Dlatego firma Microsoft Zastąp `IAccount.Withdaw` method in Class metoda `CheckingAccount` z metodą, która sprawdza, czy dla tego warunku. Metoda może wyglądać następująco:  
+  Zdajemy sobie sprawę doświadczenia, że tego jednego rzeczą, jaką należy wykonać wycofania z konta rozliczeniowego, upewnij się, że wybierana kwota jest mniejsza niż saldo konta. Dlatego firma Microsoft Zastąp `IAccount.Withdaw` method in Class metoda `CheckingAccount` z metodą, która sprawdza, czy dla tego warunku. Metoda może wyglądać następująco:  
   
 ```csharp  
   
@@ -102,46 +102,46 @@ public void Withdraw(double amount)
   
  **Generowanie projektu testów jednostkowych i testów jednostkowych wycinków**  
   
-1.  W oknie edytora kodu, kliknij prawym przyciskiem myszy i wybierz polecenie **Utwórz testy jednostkowe** z menu kontekstowego.  
+1. W oknie edytora kodu, kliknij prawym przyciskiem myszy i wybierz polecenie **Utwórz testy jednostkowe** z menu kontekstowego.  
   
-     ![W oknie edytora wyświetlić menu kontekstowe](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
+    ![W oknie edytora wyświetlić menu kontekstowe](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
   
-2.  Kliknij przycisk OK, aby zaakceptować ustawienia domyślne, aby utworzyć testy jednostkowe lub zmienić wartości użyte do utworzenia i nazwę jednostki testowania projektu i testów jednostkowych. Możesz wybrać kod, który jest domyślnie dodawany do metody testów jednostkowych.  
+2. Kliknij przycisk OK, aby zaakceptować ustawienia domyślne, aby utworzyć testy jednostkowe lub zmienić wartości użyte do utworzenia i nazwę jednostki testowania projektu i testów jednostkowych. Możesz wybrać kod, który jest domyślnie dodawany do metody testów jednostkowych.  
   
-     ![Po prawej stronie&#45;kliknij w edytorze i wybierz polecenie Utwórz testy jednostkowe](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
+    ![Po prawej stronie&#45;kliknij w edytorze i wybierz polecenie Utwórz testy jednostkowe](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
   
-3.  Wycinki kodu testu jednostki są tworzone w nowy projekt testu jednostki dla wszystkich metod w klasie.  
+3. Wycinki kodu testu jednostki są tworzone w nowy projekt testu jednostki dla wszystkich metod w klasie.  
   
-     ![Testy jednostkowe są tworzone](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
+    ![Testy jednostkowe są tworzone](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
   
-4.  Teraz przejdź od razu, aby dowiedzieć się, jak [Dodaj kod do metody testów jednostkowych](#BKMK_Writing_your_tests) istotnych testu jednostkowego i wszelkie testy jednostkowe dodatkowe, które możesz zechcieć dodać do dokładnego przetestowania kodu.  
+4. Teraz przejdź od razu, aby dowiedzieć się, jak [Dodaj kod do metody testów jednostkowych](#BKMK_Writing_your_tests) istotnych testu jednostkowego i wszelkie testy jednostkowe dodatkowe, które możesz zechcieć dodać do dokładnego przetestowania kodu.  
   
- **Tworzenie testu jednostkowego ręcznie projektu i testy jednostkowe**  
+   **Tworzenie testu jednostkowego ręcznie projektu i testy jednostkowe**  
   
- Projekt testu jednostkowego zwykle odzwierciedla strukturę projektu pojedynczego kodu. W tym przykładzie MyBank Dodaj dwa projekty testów jednostkowych, o nazwie `AccountsTests` i `BankDbTests` do `MyBanks` rozwiązania. W nazwach projektów testów są dowolne, ale przyjęcie standardowej konwencji nazewnictwa jest dobrym pomysłem.  
+   Projekt testu jednostkowego zwykle odzwierciedla strukturę projektu pojedynczego kodu. W tym przykładzie MyBank Dodaj dwa projekty testów jednostkowych, o nazwie `AccountsTests` i `BankDbTests` do `MyBanks` rozwiązania. W nazwach projektów testów są dowolne, ale przyjęcie standardowej konwencji nazewnictwa jest dobrym pomysłem.  
   
- **Aby dodać projekt testu jednostkowego do rozwiązania:**  
+   **Aby dodać projekt testu jednostkowego do rozwiązania:**  
   
-1.  Na **pliku** menu, wybierz **New** , a następnie wybierz **projektu** (klawiatura: Ctrl + Shift + N).  
+5. Na **pliku** menu, wybierz **New** , a następnie wybierz **projektu** (klawiatura: Ctrl + Shift + N).  
   
-2.  W oknie dialogowym Nowy projekt rozwiń **zainstalowane** węzła, wybierz język, którego chcesz użyć dla projektu testowego, a następnie wybierz **testu**.  
+6. W oknie dialogowym Nowy projekt rozwiń **zainstalowane** węzła, wybierz język, którego chcesz użyć dla projektu testowego, a następnie wybierz **testu**.  
   
-3.  Aby użyć jednego z platform testów jednostkowych firmy Microsoft, wybierz opcję **projektu testu jednostkowego** z listy szablonów projektu. W przeciwnym razie wybierz szablon projektu jednostki środowiskiem testowym, którego chcesz użyć. Aby przetestować `Accounts` projekt naszego przykładu, czy nazwa projektu `AccountsTests`.  
+7. Aby użyć jednego z platform testów jednostkowych firmy Microsoft, wybierz opcję **projektu testu jednostkowego** z listy szablonów projektu. W przeciwnym razie wybierz szablon projektu jednostki środowiskiem testowym, którego chcesz użyć. Aby przetestować `Accounts` projekt naszego przykładu, czy nazwa projektu `AccountsTests`.  
   
-    > [!WARNING]
-    >  Nie wszystkie platform testów jednostkowych innych firm i open source udostępniają szablon projektu Visual Studio. Zapoznaj się z dokumentem framework, aby uzyskać informacje o tworzeniu projektu.  
+   > [!WARNING]
+   >  Nie wszystkie platform testów jednostkowych innych firm i open source udostępniają szablon projektu Visual Studio. Zapoznaj się z dokumentem framework, aby uzyskać informacje o tworzeniu projektu.  
   
-4.  W projekcie testu jednostki Dodaj odwołanie do projektu kodu, w ramach badania, w tym przykładzie do projektu kont.  
+8. W projekcie testu jednostki Dodaj odwołanie do projektu kodu, w ramach badania, w tym przykładzie do projektu kont.  
   
-     Aby utworzyć odwołanie do projektu kodu:  
+    Aby utworzyć odwołanie do projektu kodu:  
   
-    1.  Wybierz projekt w Eksploratorze rozwiązań.  
+   1.  Wybierz projekt w Eksploratorze rozwiązań.  
   
-    2.  Na **projektu** menu, wybierz **Dodaj odwołanie**.  
+   2.  Na **projektu** menu, wybierz **Dodaj odwołanie**.  
   
-    3.  W oknie dialogowym Reference Manager Otwórz **rozwiązania** węzeł i wybierz polecenie **projektów**. Wybierz nazwę projektu kodu, a następnie zamknij okno dialogowe.  
+   3.  W oknie dialogowym Reference Manager Otwórz **rozwiązania** węzeł i wybierz polecenie **projektów**. Wybierz nazwę projektu kodu, a następnie zamknij okno dialogowe.  
   
- Każdy projekt testu jednostkowego zawiera klasy, które odzwierciedlają nazwy klasy w projekcie kodu. W naszym przykładzie `AccountsTests` projekt będzie zawierać następujące klasy:  
+   Każdy projekt testu jednostkowego zawiera klasy, które odzwierciedlają nazwy klasy w projekcie kodu. W naszym przykładzie `AccountsTests` projekt będzie zawierać następujące klasy:  
   
 -   `AccountInfoTests` Klasa zawiera metody testów jednostkowych dla `AccountInfo` klasy w `BankAccount` projektu  
   
@@ -152,13 +152,13 @@ public void Withdraw(double amount)
   
  Wzorzec AAA (rozmieszczanie, Act, Asercja) jest typowy sposób pisania testów jednostkowych dla metody, w ramach testu.  
   
--   **Rozmieść** sekcji metodę testu jednostkowego inicjuje obiektów i ustawia wartość danych, który jest przekazywany do metody w ramach testu.  
+- **Rozmieść** sekcji metodę testu jednostkowego inicjuje obiektów i ustawia wartość danych, który jest przekazywany do metody w ramach testu.  
   
--   **Act** sekcji wywołuje metodę w ramach testu z parametrami ułożonymi.  
+- **Act** sekcji wywołuje metodę w ramach testu z parametrami ułożonymi.  
   
--   **Asercja** sekcji sprawdza, czy akcja testowaną metodę zachowuje się zgodnie z oczekiwaniami.  
+- **Asercja** sekcji sprawdza, czy akcja testowaną metodę zachowuje się zgodnie z oczekiwaniami.  
   
- Aby przetestować `CheckingAccount.Withdraw` metody w naszym przykładzie, możemy napisać dwóch testów: taki, który sprawdza standardowe zachowanie metody oraz jedna, która sprawdza się, że cofnięcie większa niż saldo zakończy się niepowodzeniem. W `CheckingAccountTests` klasy, możemy dodać następujących metod:  
+  Aby przetestować `CheckingAccount.Withdraw` metody w naszym przykładzie, możemy napisać dwóch testów: taki, który sprawdza standardowe zachowanie metody oraz jedna, która sprawdza się, że cofnięcie większa niż saldo zakończy się niepowodzeniem. W `CheckingAccountTests` klasy, możemy dodać następujących metod:  
   
 ```csharp  
 [TestMethod]  
@@ -265,24 +265,24 @@ public void My_Test ()
   
  **Odp.:** Użyj Eksploratora testów do uruchamiania sesji debugowania dla testów. Krokowe wykonywanie kodu za pomocą debugera programu Visual Studio bezproblemowe przejście i z powrotem między testami jednostek a testowanego projektu. Aby rozpocząć debugowanie:  
   
-1.  W edytorze programu Visual Studio Ustaw punkt przerwania w metodach testów, które chcesz debugować.  
+1. W edytorze programu Visual Studio Ustaw punkt przerwania w metodach testów, które chcesz debugować.  
   
-    > [!NOTE]
-    >  Ponieważ metody testowe można uruchomić w dowolnej kolejności, ustaw punkty przerwania w wszystkich metodach testowych, które chcesz debugować.  
+   > [!NOTE]
+   >  Ponieważ metody testowe można uruchomić w dowolnej kolejności, ustaw punkty przerwania w wszystkich metodach testowych, które chcesz debugować.  
   
-2.  W Eksploratorze testów Wybierz metody badania, a następnie wybierz **Debuguj wybrane testy** z menu skrótów.  
+2. W Eksploratorze testów Wybierz metody badania, a następnie wybierz **Debuguj wybrane testy** z menu skrótów.  
   
- Dowiedz się więcej szczegółów o [debugowanie testów jednostkowych](../debugger/debugging-in-visual-studio.md).  
+   Dowiedz się więcej szczegółów o [debugowanie testów jednostkowych](../debugger/debugging-in-visual-studio.md).  
   
- **Pyt.: jeśli używam TDD, jak I generowanie kodu na podstawie moich testów?**  
+   **Pyt.: jeśli używam TDD, jak I generowanie kodu na podstawie moich testów?**  
   
- **Odp.:** wykorzystania IntelliSense do generowania klasy i metody w kodzie projektu. Napisze instrukcję w metodzie badania, która wywołuje klasy lub metody, która ma zostać wygenerowany, a następnie otwórz menu funkcji IntelliSense w wywołaniu. Jeśli wywołanie konstruktora dla nowej klasy, wybierz **Generuj nowy typ** menu i wykonaj polecenia kreatora, aby wstawić klasy w projekcie kodu. W przypadku wywołania do metody, wybierz **wygenerować nową metodę** menu funkcji IntelliSense.  
+   **Odp.:** wykorzystania IntelliSense do generowania klasy i metody w kodzie projektu. Napisze instrukcję w metodzie badania, która wywołuje klasy lub metody, która ma zostać wygenerowany, a następnie otwórz menu funkcji IntelliSense w wywołaniu. Jeśli wywołanie konstruktora dla nowej klasy, wybierz **Generuj nowy typ** menu i wykonaj polecenia kreatora, aby wstawić klasy w projekcie kodu. W przypadku wywołania do metody, wybierz **wygenerować nową metodę** menu funkcji IntelliSense.  
   
- ![Generowanie metody klasy zastępczej Intellisense Menu](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
+   ![Generowanie metody klasy zastępczej Intellisense Menu](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
   
- **P: czy można utworzyć testów, które przyjmują wiele zestawów danych jako dane wejściowe, aby uruchomić test?**  
+   **P: czy można utworzyć testów, które przyjmują wiele zestawów danych jako dane wejściowe, aby uruchomić test?**  
   
- **Odp.:** tak. *Metody testowe opartych na danych* pozwala testować zakres wartości z metodą testową pojedyncza jednostka. Użyj `DataSource` atrybut metody testowej, który określa źródło danych i tabelę, która zawiera wartości zmiennych, które mają zostać przetestowane.  W treści metody, przypisz wartości wierszy do zmiennych, przy użyciu `TestContext.DataRow[` *ColumnName* `]` indeksatora.  
+   **Odp.:** tak. *Metody testowe opartych na danych* pozwala testować zakres wartości z metodą testową pojedyncza jednostka. Użyj `DataSource` atrybut metody testowej, który określa źródło danych i tabelę, która zawiera wartości zmiennych, które mają zostać przetestowane.  W treści metody, przypisz wartości wierszy do zmiennych, przy użyciu `TestContext.DataRow[` *ColumnName* `]` indeksatora.  
   
 > [!NOTE]
 >  Te procedury dotyczą tylko metody testowe, które piszesz za pomocą środowiska testów jednostkowych Microsoft dla kodu zarządzanego. Jeśli używasz innej struktury, zajrzyj do dokumentacji framework równoważne funkcje.  
@@ -334,21 +334,21 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
  Microsoft Fakes używa dwa podejścia do tworzenia klas zastępczych dla zależności zewnętrznych.  
   
-1.  *Wycinki* Generowanie klas zastępczych pochodzi od klasy docelowej zależności interfejs nadrzędny. Można zastąpić metody klasy zastępczej dla publicznej metody wirtualne klasy docelowej.  
+1. *Wycinki* Generowanie klas zastępczych pochodzi od klasy docelowej zależności interfejs nadrzędny. Można zastąpić metody klasy zastępczej dla publicznej metody wirtualne klasy docelowej.  
   
-2.  *Podkładki* umożliwia kierowanie wywołań do metody docelowej, do metody podkładkę substytut dla metod niewirtualnych środowiska uruchomieniowego instrumentacji.  
+2. *Podkładki* umożliwia kierowanie wywołań do metody docelowej, do metody podkładkę substytut dla metod niewirtualnych środowiska uruchomieniowego instrumentacji.  
   
- W obu metod użyjesz wygenerowanego delegatów wywołania metody zależności do określania zachowania, który ma w metodzie testowej.  
+   W obu metod użyjesz wygenerowanego delegatów wywołania metody zależności do określania zachowania, który ma w metodzie testowej.  
   
- Dowiedz się więcej o [izolowanie metody testów jednostkowych with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
+   Dowiedz się więcej o [izolowanie metody testów jednostkowych with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
   
- **P: czy do tworzenia testów jednostkowych można używać innych struktur testów jednostek?**  
+   **P: czy do tworzenia testów jednostkowych można używać innych struktur testów jednostek?**  
   
- **Odp.:** tak, wykonaj następujące kroki, aby [znajdować i instalować innych struktur](../test/install-third-party-unit-test-frameworks.md). Po ponownym uruchomieniu programu Visual Studio ponownie otwórz rozwiązanie do utworzenia testów jednostkowych, a następnie wybierz zainstalowany struktur w tym miejscu:  
+   **Odp.:** tak, wykonaj następujące kroki, aby [znajdować i instalować innych struktur](../test/install-third-party-unit-test-frameworks.md). Po ponownym uruchomieniu programu Visual Studio ponownie otwórz rozwiązanie do utworzenia testów jednostkowych, a następnie wybierz zainstalowany struktur w tym miejscu:  
   
- ![Wybierz inne środowiska testów jednostkowych zainstalowanych](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
+   ![Wybierz inne środowiska testów jednostkowych zainstalowanych](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   
- Twoje wycinków testu jednostki zostanie utworzony za pomocą wybranej platformy.
+   Twoje wycinków testu jednostki zostanie utworzony za pomocą wybranej platformy.
 
 
 

@@ -12,41 +12,41 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e3a8cdd6d8551a4ea399a2ef387d383acca136c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873672"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Uruchamianie testów jednostek dla rozszerzeń UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby zapewnić stabilne, wykonując kolejne zmiany kodu, firma Microsoft zaleca pisanie testów jednostkowych, a następnie wykonać je jako część procesu kompilacji regularne. Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md). Aby skonfigurować testy dla rozszerzenia modelowania programu Visual Studio, potrzebujesz niektórych kluczowych informacji. Podsumowanie:  
   
--   [Konfigurowanie testów jednostkowych dla rozszerzenia VSIX](#Host)  
+- [Konfigurowanie testów jednostkowych dla rozszerzenia VSIX](#Host)  
   
-     Uruchom testy z karty hosta środowiska IDE programu VS. Prefiks każdej metody testowej z `[HostType("VS IDE")]`. Ten adapter hosta uruchamia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uruchamiania testów.  
+   Uruchom testy z karty hosta środowiska IDE programu VS. Prefiks każdej metody testowej z `[HostType("VS IDE")]`. Ten adapter hosta uruchamia [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] uruchamiania testów.  
   
--   [Uzyskiwanie dostępu do obiektu DTE i ModelStore](#DTE)  
+- [Uzyskiwanie dostępu do obiektu DTE i ModelStore](#DTE)  
   
-     Zazwyczaj trzeba będzie otworzyć modelu i jego diagramy i dostęp `IModelStore` podczas inicjowania testu.  
+   Zazwyczaj trzeba będzie otworzyć modelu i jego diagramy i dostęp `IModelStore` podczas inicjowania testu.  
   
--   [Otwieranie diagramu modelu](#Opening)  
+- [Otwieranie diagramu modelu](#Opening)  
   
-     Można rzutować `EnvDTE.ProjectItem` do i z `IDiagramContext`.  
+   Można rzutować `EnvDTE.ProjectItem` do i z `IDiagramContext`.  
   
--   [Wykonywanie niezależnych od zmian w wątku interfejsu użytkownika](#UiThread)  
+- [Wykonywanie niezależnych od zmian w wątku interfejsu użytkownika](#UiThread)  
   
-     Testy, wprowadzić zmiany w magazynie modeli, które muszą być wykonywane w wątku interfejsu użytkownika. Możesz użyć `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` tego.  
+   Testy, wprowadzić zmiany w magazynie modeli, które muszą być wykonywane w wątku interfejsu użytkownika. Możesz użyć `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` tego.  
   
--   [Testowanie poleceń i gestów i inne składniki MEF](#MEF)  
+- [Testowanie poleceń i gestów i inne składniki MEF](#MEF)  
   
-     Aby przetestować składniki MEF, należy jawnie nawiązać ich importowane właściwości wartości.  
+   Aby przetestować składniki MEF, należy jawnie nawiązać ich importowane właściwości wartości.  
   
- Te punkty są opracowane w poniższych sekcjach.  
+  Te punkty są opracowane w poniższych sekcjach.  
   
- Przykładem rozszerzenia UML jednostki przetestowane można znaleźć w galerii przykładów kodu w [UML — szybka wejścia przy użyciu tekstu](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
+  Przykładem rozszerzenia UML jednostki przetestowane można znaleźć w galerii przykładów kodu w [UML — szybka wejścia przy użyciu tekstu](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).  
   
 ## <a name="requirements"></a>Wymagania  
  Zobacz [wymagania](../modeling/extend-uml-models-and-diagrams.md#Requirements).  

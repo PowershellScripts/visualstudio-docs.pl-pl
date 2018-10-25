@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 334a0b964033282458c211d69af30aad20dbd6bc
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4677380081aaa0ac79f589ea7594f19f78750613
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844110"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Zdalne debugowanie projektu Visual C++ w programie Visual Studio
 Debugowanie aplikacji Visual Studio na innym komputerze, zainstalować i uruchomić narzędzia zdalne na komputerze, w którym wdrożysz swoją aplikację, należy skonfigurować projekt, aby połączyć się z komputerem zdalnym z programu Visual Studio, a następnie wdrożyć i uruchomić aplikację.
@@ -56,50 +56,50 @@ Zdalny debuger jest obsługiwane w systemie Windows 7 lub nowszej (nie phone) i 
 ## <a name="remote_cplusplus"></a> Debugowanie zdalne projektu Visual C++  
  W poniższej procedurze nazwa i ścieżka projektu jest C:\remotetemp\MyMfc, a nazwa komputera zdalnego jest **MJO DL**.  
   
-1.  Tworzenie aplikacji MFC o nazwie **mymfc.**  
+1. Tworzenie aplikacji MFC o nazwie **mymfc.**  
   
-2.  Ustaw punkt przerwania gdzieś w aplikacji, które łatwo zostanie osiągnięty, na przykład w **MainFrm.cpp**, na początku `CMainFrame::OnCreate`.  
+2. Ustaw punkt przerwania gdzieś w aplikacji, które łatwo zostanie osiągnięty, na przykład w **MainFrm.cpp**, na początku `CMainFrame::OnCreate`.  
   
-3.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz pozycję **właściwości**. Otwórz **debugowanie** kartę.  
+3. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt i wybierz pozycję **właściwości**. Otwórz **debugowanie** kartę.  
   
-4.  Ustaw **debuger do uruchomienia** do **zdalny debuger Windows**.  
+4. Ustaw **debuger do uruchomienia** do **zdalny debuger Windows**.  
   
-     ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
+    ![RemoteDebuggingCPlus](../debugger/media/remotedebuggingcplus.png "RemoteDebuggingCPlus")  
   
-5.  Do właściwości, należy wprowadzić następujące zmiany:  
+5. Do właściwości, należy wprowadzić następujące zmiany:  
   
-    |Ustawienie|Wartość|
-    |-|-|  
-    |Polecenie zdalne|C:\remotetemp\mymfc.exe|  
-    |Katalog roboczy|C:\remotetemp|  
-    |Nazwa serwera zdalnego|Listy Dystrybucyjnej MJO:*numer_portu*|  
-    |połączenia|Zdalny z uwierzytelnianiem Windows|  
-    |Typ debugera|Tylko w trybie macierzystym|  
-    |Katalog wdrażania|C:\remotetemp.|  
-    |Dodatkowe pliki do wdrożenia|C:\data\mymfcdata.txt.|  
+   |Ustawienie|Wartość|
+   |-|-|  
+   |Polecenie zdalne|C:\remotetemp\mymfc.exe|  
+   |Katalog roboczy|C:\remotetemp|  
+   |Nazwa serwera zdalnego|Listy Dystrybucyjnej MJO:*numer_portu*|  
+   |połączenia|Zdalny z uwierzytelnianiem Windows|  
+   |Typ debugera|Tylko w trybie macierzystym|  
+   |Katalog wdrażania|C:\remotetemp.|  
+   |Dodatkowe pliki do wdrożenia|C:\data\mymfcdata.txt.|  
   
-     Jeśli wdrożono dodatkowe pliki (opcjonalnie), folder musi istnieć na obu komputerach.  
+    Jeśli wdrożono dodatkowe pliki (opcjonalnie), folder musi istnieć na obu komputerach.  
   
-6.  W Eksploratorze rozwiązań kliknij rozwiązanie prawym przyciskiem myszy i wybierz polecenie **programu Configuration Manager**.  
+6. W Eksploratorze rozwiązań kliknij rozwiązanie prawym przyciskiem myszy i wybierz polecenie **programu Configuration Manager**.  
   
-7.  Aby uzyskać **debugowania** konfigurację, kliknij przycisk **Wdróż** pole wyboru.  
+7. Aby uzyskać **debugowania** konfigurację, kliknij przycisk **Wdróż** pole wyboru.  
   
-     ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
+    ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
-8.  Rozpocznij debugowanie (**Debuguj > Rozpocznij debugowanie**, lub **F5**).  
+8. Rozpocznij debugowanie (**Debuguj > Rozpocznij debugowanie**, lub **F5**).  
   
 9. Plik wykonywalny jest automatycznie wdrażane na komputerze zdalnym.  
   
 10. Po wyświetleniu monitu wprowadź poświadczenia sieci, aby nawiązać połączenie z komputerem zdalnym.  
   
-     Wymagane poświadczenia są specyficzne dla konfiguracji zabezpieczeń w sieci. Na przykład na komputerze domeny, możesz wybrać certyfikat zabezpieczeń, lub wprowadź nazwę domeny i hasło. Na komputerze nienależących do domeny, wprowadzić nazwę komputera i prawidłową nazwę konta użytkownika, takie jak **MJO-DL\name@something.com**, oraz prawidłowe hasło.  
+     Wymagane poświadczenia są specyficzne dla konfiguracji zabezpieczeń w sieci. Na przykład na komputerze domeny, możesz wybrać certyfikat zabezpieczeń, lub wprowadź nazwę domeny i hasło. Na komputerze nienależących do domeny, wprowadzić nazwę komputera i prawidłową nazwę konta użytkownika, takie jak <strong>MJO-DL\name@something.com</strong>, oraz prawidłowe hasło.  
   
 11. Na komputerze programu Visual Studio powinien zostać wyświetlony, że wykonanie zostanie zatrzymana w punkcie przerwania.  
   
     > [!TIP]
     >  Alternatywnie można rozłożyć pliki w osobnym kroku. W **Eksploratora rozwiązań** kliknij prawym przyciskiem myszy **mymfc** węzeł, a następnie wybierz **Wdróż**.  
   
- Jeśli masz pliki niezawierające kodu, które będzie używane przez aplikację, należy je uwzględnić w projekcie programu Visual Studio. Utworzenie folderu projektu do dodatkowych plików (w **Eksploratora rozwiązań**, kliknij przycisk **Dodaj > Nowy Folder**.) Następnie dodaj pliki do folderu (w **Eksploratora rozwiązań**, kliknij przycisk **Dodaj > istniejący element**, następnie wybierz pliki). Na **właściwości** strony dla każdego pliku, należy ustawić **Kopiuj do katalogu wyjściowego** do **zawsze Kopiuj**.
+    Jeśli masz pliki niezawierające kodu, które będzie używane przez aplikację, należy je uwzględnić w projekcie programu Visual Studio. Utworzenie folderu projektu do dodatkowych plików (w **Eksploratora rozwiązań**, kliknij przycisk **Dodaj > Nowy Folder**.) Następnie dodaj pliki do folderu (w **Eksploratora rozwiązań**, kliknij przycisk **Dodaj > istniejący element**, następnie wybierz pliki). Na **właściwości** strony dla każdego pliku, należy ustawić **Kopiuj do katalogu wyjściowego** do **zawsze Kopiuj**.
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>Konfigurowanie debugowania przy użyciu zdalnego symboli 
 

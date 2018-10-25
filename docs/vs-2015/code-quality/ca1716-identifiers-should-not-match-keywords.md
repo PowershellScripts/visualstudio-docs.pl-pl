@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: cb5e3fe219d6ed8d976cf4bf03b3411dd5855a5c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 000e28642a10c565e525b2714eed0d7abaca9340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858878"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Identyfikatory nie powinny odpowiadać słowom kluczowym
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotMatchKeywords|
@@ -44,13 +45,13 @@ ms.locfileid: "49189777"
 
  Ta reguła sprawdza, czy przed słów kluczowych w następujących językach:
 
--   Visual Basic
+- Visual Basic
 
--   C#
+- C#
 
--   C++/CLI
+- C++/CLI
 
- Porównanie bez uwzględniania wielkości liter jest używana do [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] słów kluczowych i porównywanie uwzględniające wielkość liter jest używana w innych językach.
+  Porównanie bez uwzględniania wielkości liter jest używana do [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] słów kluczowych i porównywanie uwzględniające wielkość liter jest używana w innych językach.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Wybierz nazwę, która nie ma na liście słów kluczowych.

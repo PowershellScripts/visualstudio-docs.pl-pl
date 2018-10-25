@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ac0e1d9ca251e4d12dbdfb59fbfaf115cbdd348d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228881"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913868"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Przenieś P/Invokes do klasy NativeMethods
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MovePInvokesToNativeMethodsClass|
@@ -42,13 +43,13 @@ ms.locfileid: "49228881"
 ## <a name="rule-description"></a>Opis reguły
  Metody platform Invocation, takich jak te, które są oznaczone za pomocą <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atrybutu lub metody, które są zdefiniowane przy użyciu `Declare` — słowo kluczowe w [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], dostęp do kodu niezarządzanego. Metody te powinny być w jednym z następujących klas:
 
--   **NativeMethods** -tej klasy nie pomija przeszukiwań stosu dla niezarządzanego kodu uprawnienia. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> nie może być stosowane do tej klasy.) Ta klasa jest dla metod, które może służyć wszędzie ponieważ przeszukiwania stosu, zostaną wykonane.
+- **NativeMethods** -tej klasy nie pomija przeszukiwań stosu dla niezarządzanego kodu uprawnienia. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> nie może być stosowane do tej klasy.) Ta klasa jest dla metod, które może służyć wszędzie ponieważ przeszukiwania stosu, zostaną wykonane.
 
--   **SafeNativeMethods** -tej klasy pomija przeszukiwań stosu dla niezarządzanego kodu uprawnienia. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> jest stosowany do tej klasy.) Ta klasa jest dla metod, które są bezpieczne dla każdego, kto do wywołania. Obiekty wywołujące tych metod nie są wymagane do przeprowadzenia przeglądu pełne zabezpieczenia, aby upewnić się, że użycie jest bezpieczna, ponieważ metody jest bezpieczna dla każdego obiektu wywołującego.
+- **SafeNativeMethods** -tej klasy pomija przeszukiwań stosu dla niezarządzanego kodu uprawnienia. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> jest stosowany do tej klasy.) Ta klasa jest dla metod, które są bezpieczne dla każdego, kto do wywołania. Obiekty wywołujące tych metod nie są wymagane do przeprowadzenia przeglądu pełne zabezpieczenia, aby upewnić się, że użycie jest bezpieczna, ponieważ metody jest bezpieczna dla każdego obiektu wywołującego.
 
--   **UnsafeNativeMethods** -tej klasy pomija przeszukiwań stosu dla niezarządzanego kodu uprawnienia. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> jest stosowany do tej klasy.) Ta klasa jest dla metod, które mogą być niebezpieczne. Dowolny obiekt wywołujący metody te należy wykonać przegląd pełne zabezpieczenia, aby upewnić się, że użycie jest bezpieczna, ponieważ zostaną wykonane nie stosów.
+- **UnsafeNativeMethods** -tej klasy pomija przeszukiwań stosu dla niezarządzanego kodu uprawnienia. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> jest stosowany do tej klasy.) Ta klasa jest dla metod, które mogą być niebezpieczne. Dowolny obiekt wywołujący metody te należy wykonać przegląd pełne zabezpieczenia, aby upewnić się, że użycie jest bezpieczna, ponieważ zostaną wykonane nie stosów.
 
- Te klasy są deklarowane jako `internal` (`Friend`, w języku Visual Basic) i Zadeklaruj Konstruktor prywatny, aby uniemożliwić Trwa tworzenie nowych wystąpień. Powinny móc wywoływać metody w ramach tych zajęć `static` i `internal` (`Shared` i `Friend` w języku Visual Basic).
+  Te klasy są deklarowane jako `internal` (`Friend`, w języku Visual Basic) i Zadeklaruj Konstruktor prywatny, aby uniemożliwić Trwa tworzenie nowych wystąpień. Powinny móc wywoływać metody w ramach tych zajęć `static` i `internal` (`Shared` i `Friend` w języku Visual Basic).
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby naprawić naruszenie tej zasady, należy przenieść metodę do odpowiedniego **NativeMethods** klasy. W przypadku większości aplikacji przenoszenie P/Invokes do nową klasę o nazwie **NativeMethods** jest wystarczająca.

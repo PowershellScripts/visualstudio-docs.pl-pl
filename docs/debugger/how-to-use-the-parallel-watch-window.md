@@ -19,28 +19,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a142b512c5bbaf5d93dc0302aa39db92fb7c7ae
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e9381479fdfa3d64f3504e947f49411b99d53e2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808077"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857955"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Ustawianie wyrażenia kontrolnego na zmiennych w równoległych wątków w programie Visual Studio
 W oknie czujki równoległej może jednocześnie wyświetlać wartości, które zawiera jedno wyrażenie, w wielu wątkach. Każdy wiersz reprezentuje wątek, który jest uruchomiony w aplikacji, ale wątek może być reprezentowany w wielu wierszach. Dokładniej mówiąc każdy wiersz reprezentuje wywołanie funkcji, w których funkcja Podpis pasuje do funkcji w bieżącej ramki stosu. Można sortować, zmienić kolejność, Usuń i grupować elementy, które w kolumnach. Możesz Flaga, Usuń flagę, blokowanie (zawieszenie) i Odblokuj wątki (Wznów). Następujące kolumny są wyświetlane w **równoległego wyrażenia kontrolnego** okna:  
   
--   Kolumna flagi, w którym można oznaczyć wątek, który chcesz zwrócić szczególną uwagę.  
+- Kolumna flagi, w którym można oznaczyć wątek, który chcesz zwrócić szczególną uwagę.  
   
--   Bieżącej kolumny wątku, w której żółta strzałka wskazuje bieżący wątek (zielona strzałka z zakręconym ogonkiem wskazuje, czy innym niż bieżący wątek jest bieżący kontekst debugera).  
+- Bieżącej kolumny wątku, w której żółta strzałka wskazuje bieżący wątek (zielona strzałka z zakręconym ogonkiem wskazuje, czy innym niż bieżący wątek jest bieżący kontekst debugera).  
   
--   Konfigurowalna kolumna, która może wyświetlać maszynę, proces, kafelków, zadania i wątku.  
+- Konfigurowalna kolumna, która może wyświetlać maszynę, proces, kafelków, zadania i wątku.  
   
-    > [!TIP]
-    >  Wyświetlana informacjach o zadaniu w **równoległego wyrażenia kontrolnego** okna, należy najpierw otworzyć **zadań** okna.  
+  > [!TIP]
+  >  Wyświetlana informacjach o zadaniu w **równoległego wyrażenia kontrolnego** okna, należy najpierw otworzyć **zadań** okna.  
   
--   Pustą *Dodaj wyrażenie kontrolne* kolumn, w których można wprowadzić wyrażenia, aby obejrzeć.  
+- Pustą *Dodaj wyrażenie kontrolne* kolumn, w których można wprowadzić wyrażenia, aby obejrzeć.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>Aby wyświetlić okno czujki równoległej  
   

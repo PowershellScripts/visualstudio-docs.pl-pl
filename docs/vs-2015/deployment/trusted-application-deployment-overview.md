@@ -22,12 +22,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 1807efdefd387c4e4fa01c2acec0f7b32bbce6f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 733eb98544d48716ec073605d68628ddeab7b794
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827589"
 ---
 # <a name="trusted-application-deployment-overview"></a>Przegląd wdrażania zaufanych aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +57,11 @@ Ten temat zawiera omówienie sposobu wdrażania [!INCLUDE[ndptecclick](../includ
   
  W większych organizacji wydawcy i wdrażania są często dwa osobne jednostki:  
   
--   Wydawca jest grupa, która tworzy [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji.  
+- Wydawca jest grupa, która tworzy [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji.  
   
--   Wdrażania jest to grupa, zazwyczaj dział technologii informatycznych (IT) informacji, która będzie dystrybuować [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji na komputerach stacjonarnych korporacyjnym.  
+- Wdrażania jest to grupa, zazwyczaj dział technologii informatycznych (IT) informacji, która będzie dystrybuować [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji na komputerach stacjonarnych korporacyjnym.  
   
- Należy wykonać następujące kroki, aby móc korzystać z zaufanego wdrożenia aplikacji:  
+  Należy wykonać następujące kroki, aby móc korzystać z zaufanego wdrożenia aplikacji:  
   
 1.  Uzyskaj certyfikat dla wydawcy.  
   

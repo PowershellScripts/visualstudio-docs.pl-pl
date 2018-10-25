@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4080a0d868f154136b11058abdf29948a353b0ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ed3ddbbbffb6e1a92e4c5038fad8f901ecf303e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104205"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834035"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 W tym artykule opisano ramki stosu.  
@@ -65,19 +65,19 @@ public struct FRAMEINFO {
   
 ## <a name="members"></a>Elementy członkowskie  
  m_dwValidFields  
- Kombinacja flag z [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) wyliczenie określający pola, które są wypełnione.  
+ Kombinacja flag z [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) wyliczenia, która określa, które pola są wypełniane.  
   
  m_bstrFuncName  
- Nazwa funkcji ramki stosu.  
+ Nazwa funkcji skojarzone z ramki stosu.  
   
  m_bstrReturnType  
- Typ zwracany ramki stosu.  
+ Zwracany typ ramki stosu.  
   
  m_bstrArgs  
- Argumenty funkcji ramki stosu.  
+ Argumenty do funkcji skojarzonych z ramki stosu.  
   
  m_bstrLanguage  
- Język, w którym zaimplementowano funkcji.  
+ Język, w którym funkcja jest zaimplementowana.  
   
  m_bstrModule  
  Nazwa modułu ramki stosu.  
@@ -86,7 +86,7 @@ public struct FRAMEINFO {
  Adres minimalny stos fizycznych.  
   
  m_addrMAX  
- Adres maksymalny stosu fizycznych.  
+ Adres maksymalnej stosu fizycznych.  
   
  m_pFrame  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) obiekt, który reprezentuje tej ramki stosu.  
@@ -95,16 +95,16 @@ public struct FRAMEINFO {
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) obiekt, który reprezentuje moduł, który zawiera tej ramki stosu.  
   
  m_fHasDebugInfo  
- Niezerowa (`TRUE`), jeśli istnieją informacje debugowania w danym przedziale.  
+ Niezerowa Koniunkcja (`TRUE`) Jeśli informacje o debugowaniu istnieje w podanej ramce.  
   
  m_fHasDebugInfo  
- Niezerowa (`TRUE`) Jeśli ramka stosu jest skojarzony z kodem, który nie jest już prawidłowy.  
+ Niezerowa Koniunkcja (`TRUE`) Jeśli ramka stosu jest skojarzony z kodem, który nie jest już prawidłowy.  
   
  m_fHasDebugInfo  
- Niezerowa (`TRUE`), jeśli ramka stosu jest adnotowany przez menedżera sesji debugowania (SDM).  
+ Niezerowa Koniunkcja (`TRUE`), jeśli ramka stosu jest oznaczona przez Menedżer debugowania sesji (SDM).  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest przekazywana do [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) metodę, aby wypełnić. Ta struktura również znajduje się na liście znajduje się w [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfejs, który z kolei jest zwracana z wywołania [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) metody.  
+ Ta struktura jest przekazywany do [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) metodę, aby wypełnić. Ta struktura również znajduje się na liście, który jest zawarty w [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interfejs, który z kolei jest zwracany z wywołania [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -114,7 +114,7 @@ public struct FRAMEINFO {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   

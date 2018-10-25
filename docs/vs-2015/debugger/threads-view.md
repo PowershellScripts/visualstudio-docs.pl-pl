@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12ab9170c0f071ba319c0560f55291f41174ddf9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1adef2aeda5385fae1e3603127e3eea3f5ad109b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943040"
 ---
 # <a name="threads-view"></a>Widok wątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ Widok wątków jest płaską listę wszystkich wątków, skojarzone z systemem w
   
 #### <a name="to-open-the-threads-view"></a>Aby otworzyć widok wątków  
   
-1.  Z **Spy** menu, wybierz **wątków**.  
+1. Z **Spy** menu, wybierz **wątków**.  
   
- ![Szpieguj&#43; &#43; wątki widoku](../debugger/media/spy-threads.png "Spy ++ _Threads")  
-Widok wątków programu Spy ++  
+   ![Szpieguj&#43; &#43; wątki widoku](../debugger/media/spy-threads.png "Spy ++ _Threads")  
+   Widok wątków programu Spy ++  
   
- Powyższy rysunek przedstawia widok wątków.  
+   Powyższy rysunek przedstawia widok wątków.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Wyszukiwanie wątku w widoku wątków](../debugger/how-to-search-for-a-thread-in-threads-view.md)  

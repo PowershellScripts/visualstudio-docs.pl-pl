@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3d704be00294f1b7b52e5a9bd4a01d0692bc5ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 07eeee3fa69407c17c20f55b7b8c0974bd4751b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255297"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829511"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analizator i skaner starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ namespace MyNamespace
 ## <a name="types-of-parsers"></a>Typy analizatory składni  
  Analizatora usługa języka nie jest taka sama jak analizator używany jako część kompilatora. Jednak tego rodzaju analizator musi używać analizator i skaner w taki sam sposób jak analizatora kompilator.  
   
--   Skaner służy do identyfikowania typy tokenów. Te informacje są używane, wyróżnianie składni i szybko zidentyfikować typy tokenów, które mogą wyzwalać inne operacje, na przykład, parowanie nawiasów klamrowych. Ten skaner jest reprezentowany przez <xref:Microsoft.VisualStudio.Package.IScanner> interfejsu.  
+- Skaner służy do identyfikowania typy tokenów. Te informacje są używane, wyróżnianie składni i szybko zidentyfikować typy tokenów, które mogą wyzwalać inne operacje, na przykład, parowanie nawiasów klamrowych. Ten skaner jest reprezentowany przez <xref:Microsoft.VisualStudio.Package.IScanner> interfejsu.  
   
--   Analizator jest używany do opisu funkcji i zakresu tokenów. Te informacje jest używany w funkcji IntelliSense, operacjach, aby zidentyfikować elementy języka, takich jak metody, zmiennych, parametrów i deklaracji i zawierają listy elementów członkowskich i podpisy metod na podstawie kontekstu. Ten parser również jest używana do lokalizowania pasujących par elementu języka, takich jak nawiasy i nawiasy. Ten parser odbywa się za pośrednictwem <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.LanguageService> klasy.  
+- Analizator jest używany do opisu funkcji i zakresu tokenów. Te informacje jest używany w funkcji IntelliSense, operacjach, aby zidentyfikować elementy języka, takich jak metody, zmiennych, parametrów i deklaracji i zawierają listy elementów członkowskich i podpisy metod na podstawie kontekstu. Ten parser również jest używana do lokalizowania pasujących par elementu języka, takich jak nawiasy i nawiasy. Ten parser odbywa się za pośrednictwem <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.LanguageService> klasy.  
   
- Sposób implementacji skanera i analizatora dla usługi w języka zależy od użytkownika. Dostępnych jest kilka zasobów opisujące, jak działają analizatory i jak napisać własny analizator składni. Ponadto są dostępne kilka produktów bezpłatne i komercyjne to pomoże w tworzeniu analizatora składni.  
+  Sposób implementacji skanera i analizatora dla usługi w języka zależy od użytkownika. Dostępnych jest kilka zasobów opisujące, jak działają analizatory i jak napisać własny analizator składni. Ponadto są dostępne kilka produktów bezpłatne i komercyjne to pomoże w tworzeniu analizatora składni.  
   
 ### <a name="the-parsesource-parser"></a>Analizator ParseSource  
  W przeciwieństwie do analizatora, która jest używana jako część kompilatora (gdzie tokeny są konwertowane na jakiegoś kodu wykonywalnego) analizatora usług języka może być wywoływana wiele różnych powodów i w wielu różnych kontekstach. Jak zaimplementować to podejście w <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.LanguageService> klasy zależy od użytkownika. Ważne jest, aby pamiętać, że <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metoda może być wywoływana w wątku tła.  

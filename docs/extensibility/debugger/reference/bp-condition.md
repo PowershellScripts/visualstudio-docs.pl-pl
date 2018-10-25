@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee951c5bc18fbf92f94f557c5ade4cd7f39159f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f638fe36131969c50e7572ac36ef54b3ad0d10e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102603"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873399"
 ---
 # <a name="bpcondition"></a>BP_CONDITION
-Opisuje warunki, w jakich generowane punkt przerwania.  
+Opisuje warunki, na których jest uruchamiany punkt przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -52,21 +52,21 @@ public struct BP_CONDITION {
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje aktywnego wątku dla aplikacji, która zawiera punkt przerwania.  
   
  `styleCondition`  
- Wartość z zakresu od [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) wyliczenie opisujące styl tego warunku punktu przerwania.  
+ Wartość z zakresu od [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) wyliczenie opisujące styl ten warunek punktu przerwania.  
   
  `bstrContext`  
  Lokalizacja punktu przerwania.  
   
  `bstrCondition`  
- Stan uruchamiania punktu przerwania.  
+ Stan uruchomieniu którego punkt przerwania.  
   
  `nRadix`  
- Podstawa do użycia podczas obliczania wszelkie informacje numeryczne.  
+ Podstawy do użycia podczas obliczania wszelkie dane liczbowe.  
   
 ## <a name="remarks"></a>Uwagi  
  Ta struktura jest elementem członkowskim [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) i [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.  
   
- Ta struktura jest również przekazany jako parametr [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) i [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) metody.  
+ Ta struktura również jest przekazywany jako parametr do [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md) i [SetCondition](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setcondition.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -76,7 +76,7 @@ public struct BP_CONDITION {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
  [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
  [SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)   

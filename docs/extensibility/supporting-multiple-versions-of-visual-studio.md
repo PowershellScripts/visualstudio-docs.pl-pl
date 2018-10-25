@@ -1,5 +1,5 @@
 ---
-title: Obsługa wielu wersji programu Visual Studio | Dokumentacja firmy Microsoft
+title: Obsługiwanie wielu wersji programu Visual Studio | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,39 +14,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 317ec1f214d18989c3b2c5c27fe9df9309239631
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3837116a33dc5608f75e48e3397273f65e5ea260
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817993"
 ---
-# <a name="supporting-multiple-versions-of-visual-studio"></a>Obsługa wielu wersji programu Visual Studio
-Termin *side-by-side* oznacza, że można zainstalować i zarządzać wieloma wersjami produktu na tym samym komputerze. Do VSPackages oznacza to, że każdy użytkownik może mieć kilka wersji programu Visual Studio zainstalowany na tym samym komputerze. Jednak nie może mieć side-by-side wersje programu VSPackages ładowane do jednej wersji programu Visual Studio.  
+# <a name="supporting-multiple-versions-of-visual-studio"></a>Obsługiwanie wielu wersji programu Visual Studio
+Termin *side-by-side* oznacza, że można zainstalować i zarządzać wieloma wersjami produktu na tym samym komputerze. Dla pakietów VSPackage oznacza to, że użytkownik może mieć różne wersje programu Visual Studio zainstalowany na tym samym komputerze. Jednak nie może mieć side-by-side wersje usługi pakietów VSPackage załadowane do jednej wersji programu Visual Studio.  
   
- Przed wprowadzeniem VSPackage może być załadowane do side-by-side wersji programu Visual Studio, należy rozważyć następujące kwestie:  
+ Przed wprowadzeniem Twojego pakietu VSPackage, mogą być ładowane do side-by-side wersji programu Visual Studio, należy rozważyć następujące kwestie:  
   
--   Należy określić strategii wdrażania side-by-side, która ma następować.  
+- Należy ustalić strategię wdrażania side-by-side, w jakiej chcesz obserwować.  
   
-     Aby uzyskać więcej informacji, zobacz [wybór między udostępnionego i numerów wersji VSPackages](../extensibility/choosing-between-shared-and-versioned-vspackages.md).  
+   Aby uzyskać więcej informacji, zobacz [wybór między udostępnionych i kontrolą wersji pakietów VSPackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md).  
   
--   Formaty plików rozwiązań i projektów musi znajdować się w strategii wdrażania.  
+- Formaty plików rozwiązania i projektu należy dopasować strategii wdrażania.  
   
-     Aby uzyskać więcej informacji, zobacz [Uaktualnianie projektów niestandardowych](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects) i [rejestrowanie rozszerzeń nazw plików w przypadku wdrożeń Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
+   Aby uzyskać więcej informacji, zobacz [Uaktualnianie projektów niestandardowych](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects) i [rejestrowanie rozszerzeń nazw plików dla wdrożeń Side-By-Side](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   
--   Instalatorem musi obsługiwać strategii wdrażania, dzięki czemu numerów wersji składników i składniki współużytkowana przez wszystkie wersje, są poprawnie zainstalowane i zarejestrowane.  
+- Instalatora musi obsługiwać swoją strategię wdrażania, aby składniki numerów wersji, a także składniki współużytkowane przez wszystkie wersje, są poprawnie zainstalowane i zarejestrowane.  
   
-     Aby uzyskać więcej informacji, zobacz [instalowanie VSPackages z Instalatora Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) , a także [zarządzania składnika](../extensibility/internals/component-management.md).  
+   Aby uzyskać więcej informacji, zobacz [instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md) , a także [Zarządzanie składnikami](../extensibility/internals/component-management.md).  
   
-    > [!NOTE]
-    >  Instalowanie wersji programu Visual Studio instaluje odpowiednią wersję programu [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Na przykład instalowania programu Visual Studio 2010 i Visual Studio 2012 w tym samym komputerze instaluje wersji 4.0 i 4.5 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]odpowiednio.  
+  > [!NOTE]
+  >  Instalowanie wersji programu Visual Studio instaluje odpowiednią wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Na przykład instalowania programu Visual Studio 2010 i Visual Studio 2012 na tym samym komputerze instaluje wersjach 4.0 i 4.5 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]odpowiednio.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Wybieranie między udostępnionymi i wersjonowanymi pakietami VSPackage](../extensibility/choosing-between-shared-and-versioned-vspackages.md)  
- Wyjaśniono, jak rozwiązać problemy side-by-side, w pakiecie VSPackage.  
+ Wyjaśnia, jak rozwiązywać problemy side-by-side w swojej pakietu VSPackage.  
   
  [Rejestrowanie rozszerzeń nazw plików na potrzeby wdrożeń równoległych](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)  
- W tym artykule opisano, jak zarejestrować skojarzeń plików w scenariuszu side-by-side VSPackage.  
+ W tym artykule opisano, jak zarejestrować skojarzenia plików w scenariuszu side-by-side Twojego pakietu VSPackage.  
   
 ## <a name="related-sections"></a>Sekcje pokrewne  
  [Instalowanie pakietów VSPackage przy użyciu Instalatora Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)  

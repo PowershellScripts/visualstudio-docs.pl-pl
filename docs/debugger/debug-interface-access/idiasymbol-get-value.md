@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_value | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_value — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a6249506356f586a2e00d2b2c2bf73eb0283c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 23fb08303840c8d90644a292cac8832e29641246
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481973"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863740"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
 Pobiera wartość stałą.  
@@ -34,16 +34,16 @@ HRESULT get_value (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [w, out] A `VARIANT` obiekt, który jest wprowadzana wartość stałą.  
+ [out w] A `VARIANT` obiekt, który jest wypełniane wartością stałą.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
- Podany typ VARIANT muszą zostać zainicjowane przed przekazaniem do tej metody. Aby uzyskać więcej informacji zobacz przykład.  
+ Podany typ VARIANT musi być zainicjowany, zanim zostanie on przekazany do tej metody. Aby uzyskać więcej informacji zobacz przykład.  
   
 ## <a name="example"></a>Przykład  
   

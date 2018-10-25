@@ -19,12 +19,12 @@ ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b19fa248641d8df0fd19cd6f5baec7e86fa0c51c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee48fbf33513878626553d8703b44c8b2ed8f252
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899048"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Porady: korzystanie z kreatora z szablonami projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,171 +60,171 @@ Program Visual Studio udostępnia <xref:Microsoft.VisualStudio.TemplateWizard.IW
 ## <a name="creating-a-custom-template-wizard"></a>Tworzenie kreatora niestandardowego szablonu  
  W tym temacie przedstawiono sposób tworzenia niestandardowego kreatora, który służy do otwierania formularza Windows przed utworzeniem projektu. Formularz pozwala użytkownikom na dodawanie wartości parametru niestandardowego, który jest dodawany do kodu źródłowego podczas tworzenia projektu.  
   
-1.  Konfigurowanie projektu VSIX, aby zezwalała na utworzenie zestawu.  
+1. Konfigurowanie projektu VSIX, aby zezwalała na utworzenie zestawu.  
   
-2.  W **Eksploratora rozwiązań**, wybierz węzeł projektu VSIX. Poniżej Eksplorator rozwiązań powinien zostać wyświetlony **właściwości** okna. Jeśli tego nie zrobisz, wybierz opcję **widok / okno właściwości**, lub naciśnij **F4**. W oknie dialogowym Właściwości zaznacz następujące pola do `true`:  
+2. W **Eksploratora rozwiązań**, wybierz węzeł projektu VSIX. Poniżej Eksplorator rozwiązań powinien zostać wyświetlony **właściwości** okna. Jeśli tego nie zrobisz, wybierz opcję **widok / okno właściwości**, lub naciśnij **F4**. W oknie dialogowym Właściwości zaznacz następujące pola do `true`:  
   
-    -   **IncludeAssemblyInVSIXContainer**  
+   -   **IncludeAssemblyInVSIXContainer**  
   
-    -   **IncludeDebugSymbolsInVSIXContainer**  
+   -   **IncludeDebugSymbolsInVSIXContainer**  
   
-    -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
+   -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
   
-3.  Dodaj zestaw jako zasobu w projekcie VSIX. Otwórz plik source.extension.vsixmanifest, a następnie wybierz pozycję **zasoby** kartę. W **Dodaj nowy zasób** oknie dla **typu** wybierz **Microsoft.VisualStudio.Assembly**, dla **źródła** wybierz **A Projekt w bieżącym rozwiązaniu**oraz **projektu** wybierz **MyTemplateWizard**.  
+3. Dodaj zestaw jako zasobu w projekcie VSIX. Otwórz plik source.extension.vsixmanifest, a następnie wybierz pozycję **zasoby** kartę. W **Dodaj nowy zasób** oknie dla **typu** wybierz **Microsoft.VisualStudio.Assembly**, dla **źródła** wybierz **A Projekt w bieżącym rozwiązaniu**oraz **projektu** wybierz **MyTemplateWizard**.  
   
-4.  Dodaj następujące odwołania do projektu VSIX. (W **Eksploratora rozwiązań**, w obszarze VSIX projektu wybierz węzeł **odwołania**, kliknij prawym przyciskiem myszy, a następnie wybierz **Dodaj odwołanie**.) W **Dodaj odwołanie** okna dialogowego w **Framework** kartę, Znajdź **formularzy System.Windows** zestawu i wybierz ją. Teraz wybierz **rozszerzenia** Znajdź kartę **EnvDTE** zestawu i wybierz ją. Również znaleźć **Microsoft.VisualStudio.TemplateWizardInterface** zestawu i wybierz ją. Kliknij przycisk **OK**.  
+4. Dodaj następujące odwołania do projektu VSIX. (W **Eksploratora rozwiązań**, w obszarze VSIX projektu wybierz węzeł **odwołania**, kliknij prawym przyciskiem myszy, a następnie wybierz **Dodaj odwołanie**.) W **Dodaj odwołanie** okna dialogowego w **Framework** kartę, Znajdź **formularzy System.Windows** zestawu i wybierz ją. Teraz wybierz **rozszerzenia** Znajdź kartę **EnvDTE** zestawu i wybierz ją. Również znaleźć **Microsoft.VisualStudio.TemplateWizardInterface** zestawu i wybierz ją. Kliknij przycisk **OK**.  
   
-5.  Dodaj klasę dla Kreatora wdrażania w projekcie VSIX. (W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy węzeł projektu VSIX, a następnie wybierz **Dodaj**, następnie **nowy element**, następnie **klasy**.) Nazwa klasy **WizardImplementation**.  
+5. Dodaj klasę dla Kreatora wdrażania w projekcie VSIX. (W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy węzeł projektu VSIX, a następnie wybierz **Dodaj**, następnie **nowy element**, następnie **klasy**.) Nazwa klasy **WizardImplementation**.  
   
-6.  Zastąp kod w **WizardImplementationClass.cs** pliku następującym kodem:  
+6. Zastąp kod w **WizardImplementationClass.cs** pliku następującym kodem:  
   
-    ```csharp  
-    using System;  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.TemplateWizard;  
-    using System.Windows.Forms;  
-    using EnvDTE;  
+   ```csharp  
+   using System;  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.TemplateWizard;  
+   using System.Windows.Forms;  
+   using EnvDTE;  
   
-    namespace MyProjectWizard  
-    {  
-        public class WizardImplementation:IWizard  
-        {  
-            private UserInputForm inputForm;  
-            private string customMessage;  
+   namespace MyProjectWizard  
+   {  
+       public class WizardImplementation:IWizard  
+       {  
+           private UserInputForm inputForm;  
+           private string customMessage;  
   
-            // This method is called before opening any item that   
-            // has the OpenInEditor attribute.  
-            public void BeforeOpeningFile(ProjectItem projectItem)  
-            {  
-            }  
+           // This method is called before opening any item that   
+           // has the OpenInEditor attribute.  
+           public void BeforeOpeningFile(ProjectItem projectItem)  
+           {  
+           }  
   
-            public void ProjectFinishedGenerating(Project project)  
-            {  
-            }  
+           public void ProjectFinishedGenerating(Project project)  
+           {  
+           }  
   
-            // This method is only called for item templates,  
-            // not for project templates.  
-            public void ProjectItemFinishedGenerating(ProjectItem   
-                projectItem)  
-            {  
-            }  
+           // This method is only called for item templates,  
+           // not for project templates.  
+           public void ProjectItemFinishedGenerating(ProjectItem   
+               projectItem)  
+           {  
+           }  
   
-            // This method is called after the project is created.  
-            public void RunFinished()  
-            {  
-            }  
+           // This method is called after the project is created.  
+           public void RunFinished()  
+           {  
+           }  
   
-            public void RunStarted(object automationObject,  
-                Dictionary<string, string> replacementsDictionary,  
-                WizardRunKind runKind, object[] customParams)  
-            {  
-                try  
-                {  
-                    // Display a form to the user. The form collects   
-                    // input for the custom message.  
-                    inputForm = new UserInputForm();  
-                    inputForm.ShowDialog();  
+           public void RunStarted(object automationObject,  
+               Dictionary<string, string> replacementsDictionary,  
+               WizardRunKind runKind, object[] customParams)  
+           {  
+               try  
+               {  
+                   // Display a form to the user. The form collects   
+                   // input for the custom message.  
+                   inputForm = new UserInputForm();  
+                   inputForm.ShowDialog();  
   
-                    customMessage = UserInputForm.CustomMessage;  
+                   customMessage = UserInputForm.CustomMessage;  
   
-                    // Add custom parameters.  
-                    replacementsDictionary.Add("$custommessage$",   
-                        customMessage);  
-                }  
-                catch (Exception ex)  
-                {  
-                    MessageBox.Show(ex.ToString());  
-                }  
-            }  
+                   // Add custom parameters.  
+                   replacementsDictionary.Add("$custommessage$",   
+                       customMessage);  
+               }  
+               catch (Exception ex)  
+               {  
+                   MessageBox.Show(ex.ToString());  
+               }  
+           }  
   
-            // This method is only called for item templates,  
-            // not for project templates.  
-            public bool ShouldAddProjectItem(string filePath)  
-            {  
-                return true;  
-            }          
-        }  
-    }  
-    ```  
+           // This method is only called for item templates,  
+           // not for project templates.  
+           public bool ShouldAddProjectItem(string filePath)  
+           {  
+               return true;  
+           }          
+       }  
+   }  
+   ```  
   
-     **UserInputForm** do którego odwołuje się ten kod będzie wykonywane później.  
+    **UserInputForm** do którego odwołuje się ten kod będzie wykonywane później.  
   
-     `WizardImplementation` Klasa zawiera implementacje metod dla każdego członka <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>. W tym przykładzie, tylko <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> metoda wykonuje zadanie. Wszystkie inne metody nic nie rób lub zwrócić `true`.  
+    `WizardImplementation` Klasa zawiera implementacje metod dla każdego członka <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>. W tym przykładzie, tylko <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> metoda wykonuje zadanie. Wszystkie inne metody nic nie rób lub zwrócić `true`.  
   
-     <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> Metoda przyjmuje cztery parametry:  
+    <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> Metoda przyjmuje cztery parametry:  
   
-    -   <xref:System.Object> Parametr, który może być rzutowany w katalogu głównym <xref:EnvDTE._DTE> obiektu, aby umożliwić dostosować projekt.  
+   - <xref:System.Object> Parametr, który może być rzutowany w katalogu głównym <xref:EnvDTE._DTE> obiektu, aby umożliwić dostosować projekt.  
   
-    -   A <xref:System.Collections.Generic.Dictionary%602> parametr, który zawiera zbiór wszystkich parametrów wstępnie zdefiniowanych w szablonie. Aby uzyskać więcej informacji na temat parametrów szablonu, zobacz [parametry szablonu](../ide/template-parameters.md).  
+   - A <xref:System.Collections.Generic.Dictionary%602> parametr, który zawiera zbiór wszystkich parametrów wstępnie zdefiniowanych w szablonie. Aby uzyskać więcej informacji na temat parametrów szablonu, zobacz [parametry szablonu](../ide/template-parameters.md).  
   
-    -   A <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> parametr, który zawiera informacje o jakiego typu szablon jest używany.  
+   - A <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> parametr, który zawiera informacje o jakiego typu szablon jest używany.  
   
-    -   <xref:System.Object> Tablicę, która zawiera zestaw parametrów przekazanych do kreatora przez program Visual Studio.  
+   - <xref:System.Object> Tablicę, która zawiera zestaw parametrów przekazanych do kreatora przez program Visual Studio.  
   
      Ten przykład dodaje wartości parametru z formularza wejściowego użytkownika do <xref:System.Collections.Generic.Dictionary%602> parametru. Każde wystąpienie `$custommessage$` parametru w projekcie zostanie zastąpione tekstem wprowadzonym przez użytkownika. Należy dodać następujące zestawy do projektu:  
   
-7.  Teraz Utwórz **UserInputForm**. W **WizardImplementation.cs** plików, Dodaj następujący kod na końcu **WizardImplementation** klasy.  
+7. Teraz Utwórz **UserInputForm**. W **WizardImplementation.cs** plików, Dodaj następujący kod na końcu **WizardImplementation** klasy.  
   
-    ```csharp  
-    public partial class UserInputForm : Form  
-        {  
-            private static string customMessage;  
-            private TextBox textBox1;  
-            private Button button1;  
+   ```csharp  
+   public partial class UserInputForm : Form  
+       {  
+           private static string customMessage;  
+           private TextBox textBox1;  
+           private Button button1;  
   
-            public UserInputForm()  
-            {  
-                this.Size = new System.Drawing.Size(155, 265);   
+           public UserInputForm()  
+           {  
+               this.Size = new System.Drawing.Size(155, 265);   
   
-                button1 = new Button();  
-                button1.Location = new System.Drawing.Point(90, 25);  
-                button1.Size = new System.Drawing.Size(50, 25);  
-                button1.Click += button1_Click;  
-                this.Controls.Add(button1);  
+               button1 = new Button();  
+               button1.Location = new System.Drawing.Point(90, 25);  
+               button1.Size = new System.Drawing.Size(50, 25);  
+               button1.Click += button1_Click;  
+               this.Controls.Add(button1);  
   
-                textBox1 = new TextBox();  
-                textBox1.Location = new System.Drawing.Point(10, 25);  
-                textBox1.Size = new System.Drawing.Size(70, 20);  
-                this.Controls.Add(textBox1);  
-            }  
-            public static string CustomMessage  
-            {  
-                get  
-                {  
-                    return customMessage;  
-                }  
-                set  
-                {  
-                    customMessage = value;  
-                }     
-            }  
-            private void button1_Click(object sender, EventArgs e)  
-            {  
-                customMessage = textBox1.Text;  
-            }  
-        }  
-    ```  
+               textBox1 = new TextBox();  
+               textBox1.Location = new System.Drawing.Point(10, 25);  
+               textBox1.Size = new System.Drawing.Size(70, 20);  
+               this.Controls.Add(textBox1);  
+           }  
+           public static string CustomMessage  
+           {  
+               get  
+               {  
+                   return customMessage;  
+               }  
+               set  
+               {  
+                   customMessage = value;  
+               }     
+           }  
+           private void button1_Click(object sender, EventArgs e)  
+           {  
+               customMessage = textBox1.Text;  
+           }  
+       }  
+   ```  
   
-     Formularz wprowadzania użytkownika zapewnia prosty formularz Wprowadzanie parametru niestandardowego. Formularz zawiera pole tekstowe o nazwie `textBox1` i przycisk o nazwie `button1`. Po kliknięciu przycisku, tekst z pola tekstowego jest przechowywany w `customMessage` parametru.  
+    Formularz wprowadzania użytkownika zapewnia prosty formularz Wprowadzanie parametru niestandardowego. Formularz zawiera pole tekstowe o nazwie `textBox1` i przycisk o nazwie `button1`. Po kliknięciu przycisku, tekst z pola tekstowego jest przechowywany w `customMessage` parametru.  
   
 ## <a name="connect-the-wizard-to-the-custom-template"></a>Kreator nawiązać połączenie z szablonu niestandardowego  
  Szablon niestandardowy projekt, aby użyć niestandardowego kreatora, musisz podpisać zestaw kreatora i dodaj kilka wierszy do szablonu niestandardowego projektu o tym, gdzie można znaleźć implementacji kreatora podczas tworzenia nowego projektu.  
   
-1.  Podpisz zestaw. W **Eksploratora rozwiązań**, wybierz projekt VSIX, kliknij prawym przyciskiem myszy i wybierz **właściwości projektu**.  
+1. Podpisz zestaw. W **Eksploratora rozwiązań**, wybierz projekt VSIX, kliknij prawym przyciskiem myszy i wybierz **właściwości projektu**.  
   
-2.  W **właściwości projektu** wybierz **podpisywanie** kartę w **podpisywanie** karcie wyboru **Podpisz zestaw**. W **wybierz plik klucza o silnej nazwie** pól, zaznacz  **\<nowy >**. W **Utwórz klucz silnej nazwy** okna w **nazwę pliku klucza** wpisz **key.snk**. Usuń zaznaczenie pola wyboru **Chroń mój plik klucza przy użyciu hasła** pola.  
+2. W **właściwości projektu** wybierz **podpisywanie** kartę w **podpisywanie** karcie wyboru **Podpisz zestaw**. W **wybierz plik klucza o silnej nazwie** pól, zaznacz  **\<nowy >**. W **Utwórz klucz silnej nazwy** okna w **nazwę pliku klucza** wpisz **key.snk**. Usuń zaznaczenie pola wyboru **Chroń mój plik klucza przy użyciu hasła** pola.  
   
-3.  W **Eksploratora rozwiązań**, wybierz projekt VSIX i Znajdź **właściwości** okna.  
+3. W **Eksploratora rozwiązań**, wybierz projekt VSIX i Znajdź **właściwości** okna.  
   
-4.  Ustaw **katalog danych wyjściowych danych wyjściowych kompilacji kopiowania** pole **true**. Dzięki temu zestaw, który ma być skopiowany do katalogu wyjściowego, gdy rozwiązanie zostanie ponownie skompilowany. Nadal znajduje się w pliku .vsix. Zachodzi potrzeba wyświetlenia zestawu, aby dowiedzieć się, jego klucza podpisywania.  
+4. Ustaw **katalog danych wyjściowych danych wyjściowych kompilacji kopiowania** pole **true**. Dzięki temu zestaw, który ma być skopiowany do katalogu wyjściowego, gdy rozwiązanie zostanie ponownie skompilowany. Nadal znajduje się w pliku .vsix. Zachodzi potrzeba wyświetlenia zestawu, aby dowiedzieć się, jego klucza podpisywania.  
   
-5.  Ponownie skompiluj rozwiązanie.  
+5. Ponownie skompiluj rozwiązanie.  
   
-6.  Teraz można znaleźć pliku key.snk w katalogu projektu MyProjectWizard (**\<lokalizacji na dysku > \MyProjectTemplate\MyProjectWizard\key.snk**). Skopiuj plik key.snk.  
+6. Teraz można znaleźć pliku key.snk w katalogu projektu MyProjectWizard (**\<lokalizacji na dysku > \MyProjectTemplate\MyProjectWizard\key.snk**). Skopiuj plik key.snk.  
   
-7.  Przejdź do katalogu wyjściowego i Znajdź zestaw (**\<lokalizacji na dysku > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Wklej plik key.snk w tym miejscu. (Nie jest to absolutnie konieczne, ale jej ułatwi następujące kroki).  
+7. Przejdź do katalogu wyjściowego i Znajdź zestaw (**\<lokalizacji na dysku > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Wklej plik key.snk w tym miejscu. (Nie jest to absolutnie konieczne, ale jej ułatwi następujące kroki).  
   
-8.  Otwórz okno polecenia i przejdź do katalogu, w którym utworzono zestaw.  
+8. Otwórz okno polecenia i przejdź do katalogu, w którym utworzono zestaw.  
   
 9. Znajdź **sn.exe** narzędzia podpisywania. Na przykład w systemie operacyjnym 64-bitowego systemu Windows 10, typowe ścieżki będzie następujące:  
   
@@ -264,17 +264,17 @@ Program Visual Studio udostępnia <xref:Microsoft.VisualStudio.TemplateWizard.IW
 ## <a name="adding-the-custom-parameter-to-the-template"></a>Dodawanie parametru niestandardowego do szablonu  
  W tym przykładzie projekt użyty jako szablonu nie wyświetla komunikat określony w postaci danych wejściowych użytkownika niestandardowego kreatora.  
   
-1.  W Eksploratorze rozwiązań, przejdź do **MyProjectTemplate** projektu, a następnie otwórz **Class1.cs**.  
+1. W Eksploratorze rozwiązań, przejdź do **MyProjectTemplate** projektu, a następnie otwórz **Class1.cs**.  
   
-2.  W `Main` metoda aplikacji, Dodaj następujący wiersz kodu.  
+2. W `Main` metoda aplikacji, Dodaj następujący wiersz kodu.  
   
-    ```  
-    Console.WriteLine("$custommessage$");  
-    ```  
+   ```  
+   Console.WriteLine("$custommessage$");  
+   ```  
   
-     Parametr `$custommessage$` zostaje zastąpiony tekstem wprowadzonym w formularzu wejściowym użytkownika, gdy projekt jest tworzony na podstawie tego szablonu.  
+    Parametr `$custommessage$` zostaje zastąpiony tekstem wprowadzonym w formularzu wejściowym użytkownika, gdy projekt jest tworzony na podstawie tego szablonu.  
   
- Oto pełny kod pliku zanim został on wyeksportowany do szablonu.  
+   Oto pełny kod pliku zanim został on wyeksportowany do szablonu.  
   
 ```csharp  
 using System;  

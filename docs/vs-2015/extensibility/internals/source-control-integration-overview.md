@@ -15,12 +15,12 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1658f54cb50ca1d04668f177657b8aaa80592494
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a16a0ece140f205f8276f0b3ec7db6b2402d3537
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836778"
 ---
 # <a name="source-control-integration-overview"></a>Omówienie integracji kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ W tej sekcji porównuje dwa sposoby integracji kontroli źródła programu Visua
   
  Aby zaimplementować wtyczka do kontroli źródła przy użyciu interfejsu API wtyczki kontroli źródła, wykonaj następujące kroki:  
   
-1.  Tworzenie biblioteki DLL, która implementuje funkcje wymienione w [wtyczki kontroli źródła](../../extensibility/source-control-plug-ins.md).  
+1. Tworzenie biblioteki DLL, która implementuje funkcje wymienione w [wtyczki kontroli źródła](../../extensibility/source-control-plug-ins.md).  
   
-2.  Zarejestruj plik DLL, wprowadzając wpisy rejestru odpowiednich (opisanego w [porady: Instalowanie wtyczki kontroli źródła](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Zarejestruj plik DLL, wprowadzając wpisy rejestru odpowiednich (opisanego w [porady: Instalowanie wtyczki kontroli źródła](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
-3.  Utwórz obiekt pomocnika interfejsu użytkownika i wyświetlanie po wyświetleniu monitu przez pakiet karty kontroli źródła (składnik programu Visual Studio, który obsługuje funkcji kontroli źródła, za pomocą wtyczek kontroli kodu źródłowego)  
+3. Utwórz obiekt pomocnika interfejsu użytkownika i wyświetlanie po wyświetleniu monitu przez pakiet karty kontroli źródła (składnik programu Visual Studio, który obsługuje funkcji kontroli źródła, za pomocą wtyczek kontroli kodu źródłowego)  
   
- W odpowiedzi na polecenia kontroli źródła środowiska IDE programu Visual Studio przedstawia standardowego interfejsu użytkownika dla podstawowych operacji, a następnie przekazuje informacje do kontroli źródła wtyczek przy użyciu funkcje zdefiniowane w interfejsie API wtyczki kontroli źródła. Zaawansowane opcje wtyczka do kontroli źródła może być wywołana dla aby zaprezentować swój własny interfejs użytkownika, na przykład przeglądanie dla projektu z kontrolą źródła. Oznacza to, czy użytkownik może pojawić się dwa prawdopodobnie różne style interfejsu użytkownika podczas pracy z kontrolą źródła: interfejs użytkownika, który przedstawia informacje o programie Visual Studio i interfejs użytkownika, który przedstawia wtyczka do kontroli źródła. Jest to najbardziej zauważalne w przypadku operacji kontroli źródła zaawansowane.  
+   W odpowiedzi na polecenia kontroli źródła środowiska IDE programu Visual Studio przedstawia standardowego interfejsu użytkownika dla podstawowych operacji, a następnie przekazuje informacje do kontroli źródła wtyczek przy użyciu funkcje zdefiniowane w interfejsie API wtyczki kontroli źródła. Zaawansowane opcje wtyczka do kontroli źródła może być wywołana dla aby zaprezentować swój własny interfejs użytkownika, na przykład przeglądanie dla projektu z kontrolą źródła. Oznacza to, czy użytkownik może pojawić się dwa prawdopodobnie różne style interfejsu użytkownika podczas pracy z kontrolą źródła: interfejs użytkownika, który przedstawia informacje o programie Visual Studio i interfejs użytkownika, który przedstawia wtyczka do kontroli źródła. Jest to najbardziej zauważalne w przypadku operacji kontroli źródła zaawansowane.  
   
 ### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Wady do wdrażania wtyczki kontroli źródła  
   

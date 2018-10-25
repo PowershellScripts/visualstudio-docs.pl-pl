@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6897c3085f14be785e4baaace0de7a4e92fea9ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 433f9724a712620e86cb78ab64e1ce27e6151d30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920108"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
-Pobiera opis portu, który był wcześniej używany do utworzenia portu (jeśli jest dostępna).  
+Pobiera opis portu, który został wcześniej użyty do utworzenia portu (jeśli jest dostępny).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,10 +41,10 @@ int GetPortRequest(
   
 #### <a name="parameters"></a>Parametry  
  `ppRequest`  
- [out] Zwraca [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) obiekt reprezentujący żądania, który został użyty do utworzenia portu.  
+ [out] Zwraca [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) obiekt reprezentujący żądanie, które zostało użyte do utworzenia portu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  Zwraca `E_PORT_NO_REQUEST` Jeśli port nie został utworzony przy użyciu [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) port żądania.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  Zwraca `E_PORT_NO_REQUEST` Jeśli port nie został utworzony przy użyciu [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) port żądania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   

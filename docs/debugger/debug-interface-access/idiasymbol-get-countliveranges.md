@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68fdee03e7e75b40cd5b80f3fc2e8c3f9e055af4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 422025e61987a80b365b8db69dde11ee61e38472
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875336"
 ---
 # <a name="idiasymbolgetcountliveranges"></a>IDiaSymbol::get_countLiveRanges
-Pobiera liczbę zakresów prawidłowy adres skojarzony z lokalnym symbolu.  
+Pobiera liczbę zakresów prawidłowy adres skojarzony z symbolu lokalnego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,12 +37,12 @@ HRESULT get_countLiveRanges (
  [out] Zwraca liczbę zakresów adresów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: Dia2.h  
   
- Biblioteki: diaguids.lib  
+ Biblioteka: diaguids.lib  
   
  Biblioteki DLL: msdia100.dll  
   

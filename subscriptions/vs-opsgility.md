@@ -9,33 +9,34 @@ description: Więcej informacji na temat umiejętności mi się — obsługiwane
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscriptions
-ms.openlocfilehash: 8f62fdb14847048f212c055017b1461085e3529b
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 7bf23407207493e4e74a61fe29d695379d6d0975
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943027"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>Umiejętności mnie w górę - działającemu korzyści szkolenie Opsgility w subskrypcji programu Visual Studio
 
 Wybrane subskrypcje programu Visual Studio obejmują dostęp do szkolenia wykwalifikowaną, na żądanie dostęp do środowisk laboratoryjnych i certyfikacji ścieżki szkoleniowe maksymalnie sześć miesięcy.
 
 ## <a name="activation-steps"></a>Procedurę aktywacji
-1.  Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Zaloguj się do [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
-2.  Aby zrealizować korzyści umiejętności mi się, kliknij **uzyskać kod** link w dolnej części kafelka korzyści.   Otrzymasz powiadomienie, które pomyślnie pobrano kod kuponu.  Kliknij przycisk **Aktywuj** aby kontynuować.
-    > [!div class="mx-imgBorder"]
-    > ![Firma Opsgility korzyści kafelka](_img\vs-opsgility\vs-opsgility-tile.png)
+2. Aby zrealizować korzyści umiejętności mi się, kliknij **uzyskać kod** link w dolnej części kafelka korzyści.   Otrzymasz powiadomienie, które pomyślnie pobrano kod kuponu.  Kliknij przycisk **Aktywuj** aby kontynuować.
+   > [!div class="mx-imgBorder"]
+   > ![Firma Opsgility korzyści kafelka](_img/vs-opsgility/vs-opsgility-tile.png)
 
 
-3.  Nastąpi przekierowanie do odpowiednich umiejętności mi się docelowej strony dla Twojej subskrypcji.  (Może być oferowana możliwość Rozpocznij sesję czatu ze specjalistą pomocy technicznej.  Jeśli nie chcesz rozpocząć czat, można zminimalizować to okno.)  Podaj żądane informacje kontaktowe, sprawdź pole, aby akceptuje warunki i postanowienia, a następnie kliknij przycisk **zarejestrować**.
-    > [!div class="mx-imgBorder"]
-    > ![Strona docelowa Opsgility korzyści](_img\vs-opsgility\vs-vse-landing-page.png)
+3. Nastąpi przekierowanie do odpowiednich umiejętności mi się docelowej strony dla Twojej subskrypcji.  (Może być oferowana możliwość Rozpocznij sesję czatu ze specjalistą pomocy technicznej.  Jeśli nie chcesz rozpocząć czat, można zminimalizować to okno.)  Podaj żądane informacje kontaktowe, sprawdź pole, aby akceptuje warunki i postanowienia, a następnie kliknij przycisk **zarejestrować**.
+   > [!div class="mx-imgBorder"]
+   > ![Strona docelowa Opsgility korzyści](_img/vs-opsgility/vs-vse-landing-page.png)
 
-4.  To wszystko jest do niego!  Możesz rozpocząć naukę!  
+4. To wszystko jest do niego!  Możesz rozpocząć naukę!  
 
 
 ## <a name="eligibility"></a>Uprawnienie
+
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | VL, Azure, Retail | 6 miesięcy       |  Nie.  Dostępne tylko dla nowych subskrybentów          |

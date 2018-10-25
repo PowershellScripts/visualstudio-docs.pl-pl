@@ -20,15 +20,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43db6cd118e2097d857d5c41334341c595088302
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 831f12d11515e6796941b64e114bdc084309b87d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24792133"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862414"
 ---
 # <a name="dbgpropattribflags"></a>DBGPROP_ATTRIB_FLAGS
-Zawiera opis różnych atrybutów `IDebugProperty`. Element członkowski `DebugPropertyInfo` struktury.  
+W tym artykule opisano różne atrybuty dla `IDebugProperty`. Członek `DebugPropertyInfo` struktury.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -63,53 +63,53 @@ DBGPROP_ATTRIB_NO_ATTRIB  =0x00000000,
  Oznacza to, że wartość w `DebugPropertyInfo::bstrValue` jest nieprawidłowy.  
   
  DBGPROP_ATTRIB_VALUE_IS_EXPANDABLE  
- Wskazuje, czy odwołanie lub właściwość zawiera elementy podrzędne.  
+ Wskazuje, że odwołanie lub właściwość ma elementy podrzędne.  
   
  DBGPROP_ATTRIB_VALUE_READONLY  
- Wskazuje, czy wartość jest tylko do odczytu.  
+ Wskazuje, że wartość jest tylko do odczytu.  
   
  DBGPROP_ATTRIB_ACCESS_PUBLIC  
- Wskazuje obiekt, który ma dostęp publiczny.  
+ Określa obiekt, który ma dostęp publiczny.  
   
  DBGPROP_ATTRIB_ACCESS_PRIVATE  
- Wskazuje obiekt, który ma dostęp do prywatnego.  
+ Określa obiekt, który ma dostęp prywatny.  
   
  DBGPROP_ATTRIB_ACCESS_PROTECTED  
- Wskazuje obiekt, który zawiera chronione dostępu.  
+ Określa obiekt, który został ochroną dostępu.  
   
  DBGPROP_ATTRIB_ACCESS_FINAL  
- Wskazuje obiekt, który ma dostęp do końcowego.  
+ Określa obiekt, który ma dostęp do końcowej.  
   
  DBGPROP_ATTRIB_STORAGE_GLOBAL  
- Wskazuje globalne magazynu.  
+ Wskazuje globalnej pamięci masowej.  
   
  DBGPROP_ATTRIB_STORAGE_STATIC  
  Wskazuje statycznego magazynu.  
   
  DBGPROP_ATTRIB_STORAGE_FIELD  
- Wskazuje obiekt, który jest właściwością.  
+ Określa obiekt, który jest właściwością.  
   
  DBGPROP_ATTRIB_STORAGE_VIRTUAL  
  Wskazuje magazynu wirtualnego.  
   
  DBGPROP_ATTRIB_TYPE_IS_CONSTANT  
- Wskazuje, że typ obiektu jest stałą.  
+ Wskazuje, że typ obiektu jest stały.  
   
  DBGPROP_ATTRIB_TYPE_IS_SYNCHRONIZED  
- Oznacza to gniazdo wątku synchronizowane.  
+ Wskazuje, że to gniazdo jest synchronizowane wątku.  
   
  DBGPROP_ATTRIB_TYPE_IS_VOLATILE  
- Oznacza to gniazdo volatile względem magazynu trwałego.  
+ Wskazuje to gniazdo volatile w odniesieniu do skorzystania z magazynu trwałego.  
   
  DBGPROP_ATTRIB_HAS_EXTENDED_ATTRIBS  
  Wskazuje, że to miejsce ma atrybuty niż te wstępnie zdefiniowane usługi bits.  
   
  DBGPROP_ATTRIB_VALUE_IS_RETURN_VALUE  
- Wskazuje, czy wartość jest wartości zwracanej przez funkcję.  
+ Wskazuje, że wartość jest wartość zwracaną przez funkcję.  
   
 ## <a name="remarks"></a>Uwagi  
- Te flagi są również używane do filtrowania elementów podrzędnych obiektu. Wartości mogą być łączone z bitowego OR.  
+ Te flagi są również używane do filtrowania elementów podrzędnych obiektu. Wartości mogą być łączone z bitowe OR.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
- [Struktura DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)
+ [DebugPropertyInfo, struktura](../../winscript/reference/debugpropertyinfo-structure.md)

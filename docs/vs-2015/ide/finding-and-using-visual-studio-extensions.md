@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 256000fb3371477c74d4f922de6cb10f3998ae86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268180"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831136"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Znajdowanie rozszerzeń programu Visual Studio i korzystanie z nich
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ Rozszerzenia programu Visual Studio są pakiety kodu, które są uruchamiane w p
 ## <a name="sample-master-copies-and-working-copies"></a>Kopie główne próbki i kopie robocze  
  Po zainstalowaniu przykładu online, rozwiązanie jest przechowywane w dwóch miejscach:  
   
--   Kopia robocza jest przechowywany w lokalizacji określonej w **nowy projekt** okno dialogowe.  
+- Kopia robocza jest przechowywany w lokalizacji określonej w **nowy projekt** okno dialogowe.  
   
--   Oddzielna kopia główna jest przechowywana na komputerze.  
+- Oddzielna kopia główna jest przechowywana na komputerze.  
   
- Możesz użyć **rozszerzenia i aktualizacje** okno dialogowe do wykonania tych zadań związanych z przykładami:  
+  Możesz użyć **rozszerzenia i aktualizacje** okno dialogowe do wykonania tych zadań związanych z przykładami:  
   
--   Wypisanie listy kopii głównych przykładów, które zostały zainstalowane.  
+- Wypisanie listy kopii głównych przykładów, które zostały zainstalowane.  
   
--   Wyłączenie lub odinstalowanie kopii głównej przykładu.  
+- Wyłączenie lub odinstalowanie kopii głównej przykładu.  
   
--   Zainstalowanie pakietów przykładów, które są zbiorami przykładów odnoszących się do technologii lub funkcji.  
+- Zainstalowanie pakietów przykładów, które są zbiorami przykładów odnoszących się do technologii lub funkcji.  
   
--   Instalowanie pojedynczych przykładów online. (Można to również zrobić w **nowy projekt** okno dialogowe.)  
+- Instalowanie pojedynczych przykładów online. (Można to również zrobić w **nowy projekt** okno dialogowe.)  
   
--   Wyświetlanie powiadomień o aktualizacjach, gdy zostaną opublikowane zmiany kodu źródłowego dla zainstalowanych przykładów.  
+- Wyświetlanie powiadomień o aktualizacjach, gdy zostaną opublikowane zmiany kodu źródłowego dla zainstalowanych przykładów.  
   
--   Aktualizowanie kopii głównej zainstalowanego przykładu, po powiadomienie o aktualizacji.  
+- Aktualizowanie kopii głównej zainstalowanego przykładu, po powiadomienie o aktualizacji.  
   
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Instalowanie bez używania okna dialogowego Rozszerzenia i aktualizacje  
  Rozszerzenia, które zostały spakowane do plików .vsix, mogą być dostępne w lokalizacjach innych niż galeria programu Visual Studio. **Rozszerzenia i aktualizacje** okno dialogowe nie może wykryć tych plików, ale można zainstalować plik .vsix, klikając dwukrotnie plik, lub wybierając plik i naciskając klawisz ENTER. Następnie postępuj zgodnie z instrukcjami. Jeśli rozszerzenie jest zainstalowane, możesz użyć **rozszerzenia i aktualizacje** okno dialogowe, aby ją włączyć, wyłączyć lub odinstaluj je.  

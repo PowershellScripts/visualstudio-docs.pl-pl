@@ -23,12 +23,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e945a3a55f1ea4f9e68b96209e350c843324c30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e2b39aa13316b1b9ca47c5587ffabf6f6a14e68
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294518"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843057"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Porady: konfigurowanie projektów do platform docelowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,22 +40,22 @@ ms.locfileid: "49294518"
   
 #### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Aby skonfigurować projekt przeznaczony dla platformy 64-bitowej  
   
-1.  Na pasku menu wybierz **kompilacji**, **programu Configuration Manager**.  
+1. Na pasku menu wybierz **kompilacji**, **programu Configuration Manager**.  
   
-2.  W **aktywną platformą rozwiązania** listy, wybierz platformę 64-bitowych dla rozwiązania do obiektu docelowego, a następnie wybierz **Zamknij** przycisku.  
+2. W **aktywną platformą rozwiązania** listy, wybierz platformę 64-bitowych dla rozwiązania do obiektu docelowego, a następnie wybierz **Zamknij** przycisku.  
   
-    1.  Jeśli nie ma platformy, która ma **aktywną platformą rozwiązania** wybierz **New**.  
+   1.  Jeśli nie ma platformy, która ma **aktywną platformą rozwiązania** wybierz **New**.  
   
-         **Nowa platforma rozwiązania** pojawi się okno dialogowe.  
+        **Nowa platforma rozwiązania** pojawi się okno dialogowe.  
   
-    2.  W **wpisz lub wybierz nową platformę** wybierz **x64**.  
+   2.  W **wpisz lub wybierz nową platformę** wybierz **x64**.  
   
-        > [!NOTE]
-        >  Jeśli nadasz konfiguracji nową nazwę, może być konieczne zmodyfikować ustawienia w **projektanta projektu** pod kątem odpowiedniej platformy.  
+       > [!NOTE]
+       >  Jeśli nadasz konfiguracji nową nazwę, może być konieczne zmodyfikować ustawienia w **projektanta projektu** pod kątem odpowiedniej platformy.  
   
-    3.  Jeśli chcesz skopiować ustawienia z bieżącej konfiguracji platformy, wybierz go, a następnie wybierz **OK** przycisku.  
+   3.  Jeśli chcesz skopiować ustawienia z bieżącej konfiguracji platformy, wybierz go, a następnie wybierz **OK** przycisku.  
   
- Właściwości dla wszystkich projektów przeznaczonych dla platformy 64-bitowe są aktualizowane i następnej kompilacji projektu będzie optymalizowany dla platform 64-bitowych.  
+   Właściwości dla wszystkich projektów przeznaczonych dla platformy 64-bitowe są aktualizowane i następnej kompilacji projektu będzie optymalizowany dla platform 64-bitowych.  
   
 ## <a name="targeting-platforms-in-the-project-designer"></a>Platformy w Projektancie projektu  
  W Projektancie projektu umożliwia także przeznaczonych dla różnych platform za pomocą projektu. W przypadku wybrania jednej z platform uwzględnione na liście w **nowa platforma rozwiązania** okno dialogowe nie działa w przypadku rozwiązania, można utworzyć nazwy niestandardowej konfiguracji i zmodyfikować ustawienia w **Projektant projektu**  pod kątem odpowiedniej platformy.  

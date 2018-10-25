@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17cd40938d177f3ea74af13bd84fcf1b873dd650
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 40ee5cb4bf552b04683c4c2119a8c43a595b2105
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102333"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900309"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 Określa typ nazwy plików do pobrania.  
@@ -63,7 +63,7 @@ public enum enum_GETNAME_TYPE {
  Określa nazwę pliku podstawowego zamiast pełnej ścieżki dokumentu lub kontekstu.  
   
  GN_MONIKERNAME  
- Określa unikatową nazwę dokumentu lub kontekstu postać krótkiej nazwy.  
+ Określa unikatową nazwę dokumentu lub kontekstu w postaci krótka.  
   
  GN_URL  
  Określa nazwę adresu URL dokumentu lub kontekstu.  
@@ -75,7 +75,7 @@ public enum enum_GETNAME_TYPE {
  Pobiera początkowy adres URL strony dla procesów.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości są przekazywane jako parametry [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), i [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) metod, aby określić, jakiego rodzaju nazwy, aby znaleźć.  
+ Te wartości są przekazywane jako parametry [getname —](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [getname —](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), i [getname —](../../../extensibility/debugger/reference/idebugprocess2-getname.md) metody, aby określić, jakiego rodzaju nazwy do zwrócenia.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -86,6 +86,6 @@ public enum enum_GETNAME_TYPE {
   
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)   
- [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)   
+ [Getname —](../../../extensibility/debugger/reference/idebugdocument2-getname.md)   
+ [Getname —](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)   
  [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)

@@ -22,12 +22,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3f98a3b2883f4b0e6e3ade0c0ca8f39f4d7efdf1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 251f6a99f64a191f1a5d957157c06c7e89147217
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221731"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812676"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,120 +46,120 @@ Testy automatyczne, które kontrolują aplikację przez jej interfejs użytkowni
   
  **Wymagania**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
- Aby uzyskać więcej informacji o tym, które platformy i konfiguracje są obsługiwane przez kodowane testy interfejsu użytkownika, zobacz [obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
+  Aby uzyskać więcej informacji o tym, które platformy i konfiguracje są obsługiwane przez kodowane testy interfejsu użytkownika, zobacz [obsługiwane konfiguracje i platformy dla kodowanych testów interfejsu użytkownika i nagrywania akcji](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
   
- **W tym temacie**  
+  **W tym temacie**  
   
--   [Tworzenie kodowanych testów interfejsu użytkownika](#VerifyingCodeUsingCUITCreate)  
+- [Tworzenie kodowanych testów interfejsu użytkownika](#VerifyingCodeUsingCUITCreate)  
   
-    -   [Główne procedury](#VerifyingCodeUsingCUITCreate)  
+  -   [Główne procedury](#VerifyingCodeUsingCUITCreate)  
   
-    -   [Uruchamianie i zatrzymywanie aplikacji](#starting)  
+  -   [Uruchamianie i zatrzymywanie aplikacji](#starting)  
   
-    -   [Sprawdzanie poprawności właściwości formantów interfejsu użytkownika](#VerifyingCodeUsingCUITGenerateAssertions)  
+  -   [Sprawdzanie poprawności właściwości formantów interfejsu użytkownika](#VerifyingCodeUsingCUITGenerateAssertions)  
   
--   [Dostosowywanie kodowanego testu interfejsu użytkownika](#VerifyingCodeCUITModify)  
+- [Dostosowywanie kodowanego testu interfejsu użytkownika](#VerifyingCodeCUITModify)  
   
-    -   [Wygenerowany kod](#generatedCode)  
+  -   [Wygenerowany kod](#generatedCode)  
   
-    -   [Kodowanie akcji kontrolki UI oraz właściwości](#actions)  
+  -   [Kodowanie akcji kontrolki UI oraz właściwości](#actions)  
   
-    -   [Debugowanie](#debugging)  
+  -   [Debugowanie](#debugging)  
   
--   [Jaka jest przyszłość](#VerifyCodeUsingCUITWhatsNext)  
+- [Jaka jest przyszłość](#VerifyCodeUsingCUITWhatsNext)  
   
 ##  <a name="VerifyingCodeUsingCUITCreate"></a> Tworzenie kodowanych testów interfejsu użytkownika  
   
-1.  **Utwórz projekt kodowanego testu interfejsu użytkownika.**  
+1. **Utwórz projekt kodowanego testu interfejsu użytkownika.**  
   
-     Kodowane testy interfejsu użytkownika musi być zawarty w projekt kodowanego testu interfejsu użytkownika. Jeśli nie masz jeszcze projektu kodowanego testu interfejsu użytkownika, zrób to. W **Eksploratora rozwiązań**, w menu skrótów rozwiązania wybierz **Dodaj**, **nowy projekt** a następnie wybierz opcję **języka Visual Basic** lub **Visual C#**. Następnie wybierz pozycję **testu**, **kodowanego testu interfejsu użytkownika**.  
+    Kodowane testy interfejsu użytkownika musi być zawarty w projekt kodowanego testu interfejsu użytkownika. Jeśli nie masz jeszcze projektu kodowanego testu interfejsu użytkownika, zrób to. W **Eksploratora rozwiązań**, w menu skrótów rozwiązania wybierz **Dodaj**, **nowy projekt** a następnie wybierz opcję **języka Visual Basic** lub **Visual C#**. Następnie wybierz pozycję **testu**, **kodowanego testu interfejsu użytkownika**.  
   
-    -   *Nie widzę **kodowanego testu interfejsu użytkownika** szablony projektów.*  
+   - <em>Nie widzę **kodowanego testu interfejsu użytkownika</em>* szablony projektów.*  
   
-         Być może używasz wersji programu Visual Studio, który nie obsługuje kodowanych testów interfejsu użytkownika. Aby utworzyć kodowane testy interfejsu użytkownika, należy użyć programu Visual Studio Enterprise.  
+      Być może używasz wersji programu Visual Studio, który nie obsługuje kodowanych testów interfejsu użytkownika. Aby utworzyć kodowane testy interfejsu użytkownika, należy użyć programu Visual Studio Enterprise.  
   
-2.  **Dodaj plik kodowanego testu interfejsu użytkownika.**  
+2. **Dodaj plik kodowanego testu interfejsu użytkownika.**  
   
-     Jeśli właśnie utworzone projektu kodowanego interfejsu użytkownika, pierwszy plik CUIT jest automatycznie dodawany. Aby dodać inny plik testowy, otwórz menu skrótów projektu kodowanego testu interfejsu użytkownika, wskaż opcję **Dodaj**, a następnie wybierz **kodowanego testu interfejsu użytkownika**.  
+    Jeśli właśnie utworzone projektu kodowanego interfejsu użytkownika, pierwszy plik CUIT jest automatycznie dodawany. Aby dodać inny plik testowy, otwórz menu skrótów projektu kodowanego testu interfejsu użytkownika, wskaż opcję **Dodaj**, a następnie wybierz **kodowanego testu interfejsu użytkownika**.  
   
-     ![Tworzenie kodowanego testu interfejsu użytkownika](../test/media/codedui-create.png "CodedUI_Create")  
+    ![Tworzenie kodowanego testu interfejsu użytkownika](../test/media/codedui-create.png "CodedUI_Create")  
   
-     W **Generuj kod dla kodowanego testu interfejsu użytkownika** okna dialogowego wybierz **Rejestruj akcje, Edytuj mapę interfejsu użytkownika lub Dodaj potwierdzenia**.  
+    W **Generuj kod dla kodowanego testu interfejsu użytkownika** okna dialogowego wybierz **Rejestruj akcje, Edytuj mapę interfejsu użytkownika lub Dodaj potwierdzenia**.  
   
-     ![Wybierz pozycję Zarejestruj akcje](../test/media/codedui-codegendialogb.png "CodedUI_CodeGenDialogB")  
+    ![Wybierz pozycję Zarejestruj akcje](../test/media/codedui-codegendialogb.png "CodedUI_CodeGenDialogB")  
   
-     Konstruktor kodowanego testu interfejsu użytkownika jest wyświetlany, i Visual Studio jest zminimalizowany.  
+    Konstruktor kodowanego testu interfejsu użytkownika jest wyświetlany, i Visual Studio jest zminimalizowany.  
   
-     ![Konstruktor kodowanego testu interfejsu użytkownika](../test/media/codedui-testbuilder.png "CodedUI_TestBuilder")  
+    ![Konstruktor kodowanego testu interfejsu użytkownika](../test/media/codedui-testbuilder.png "CodedUI_TestBuilder")  
   
-3.  **Zarejestruj sekwencję akcji**.  
+3. **Zarejestruj sekwencję akcji**.  
   
-     **Aby rozpocząć rejestrowanie**, wybierz **rekordu** ikony. Wykonywanie akcji, które mają zostać przetestowane w aplikacji, w tym uruchamianie aplikacji, jeśli jest to wymagane.  
+    **Aby rozpocząć rejestrowanie**, wybierz **rekordu** ikony. Wykonywanie akcji, które mają zostać przetestowane w aplikacji, w tym uruchamianie aplikacji, jeśli jest to wymagane.  
   
-     Na przykład jeśli testujesz aplikację sieci web możesz może uruchamiają przeglądarkę, przejdź do witryny sieci web i zaloguj się do aplikacji.  
+    Na przykład jeśli testujesz aplikację sieci web możesz może uruchamiają przeglądarkę, przejdź do witryny sieci web i zaloguj się do aplikacji.  
   
-     **Aby Wstrzymaj nagrywanie**, na przykład jeśli masz do czynienia z przychodzących wiadomości e-mail, wybierz **wstrzymać**.  
+    **Aby Wstrzymaj nagrywanie**, na przykład jeśli masz do czynienia z przychodzących wiadomości e-mail, wybierz **wstrzymać**.  
   
-    > [!WARNING]
-    >  Wszystkie akcje wykonywane na pulpicie będą rejestrowane. Wstrzymanie nagrywania, jeśli są wykonywane działania, które mogą prowadzić do danych poufnych jest zawarty w nagraniu.  
+   > [!WARNING]
+   >  Wszystkie akcje wykonywane na pulpicie będą rejestrowane. Wstrzymanie nagrywania, jeśli są wykonywane działania, które mogą prowadzić do danych poufnych jest zawarty w nagraniu.  
   
-     **Można usunąć akcji** zapisane przez pomyłkę, wybierz polecenie **edytować akcje**.  
+    **Można usunąć akcji** zapisane przez pomyłkę, wybierz polecenie **edytować akcje**.  
   
-     **Do generowania kodu** , będzie replikowanie Twoje działania, wybierz **Generuj kod** ikonę i wpisz nazwę i opis dla kodowanego interfejsu użytkownika metoda testowa.  
+    **Do generowania kodu** , będzie replikowanie Twoje działania, wybierz **Generuj kod** ikonę i wpisz nazwę i opis dla kodowanego interfejsu użytkownika metoda testowa.  
   
-4.  **Sprawdź wartości w polach interfejsu użytkownika, takie jak pola tekstowe**.  
+4. **Sprawdź wartości w polach interfejsu użytkownika, takie jak pola tekstowe**.  
   
-     Wybierz **dodawania potwierdzeń** w kodowanego testu interfejsu użytkownika, a następnie wybierz kontrolkę interfejsu użytkownika w uruchomionej aplikacji. Pojawia się liście właściwości wybierz właściwość, na przykład **tekstu** w polu tekstowym. W menu skrótów wybierz **Dodaj potwierdzenie**. W oknie dialogowym Wybierz operator porównania, wartość porównania i komunikat o błędzie.  
+    Wybierz **dodawania potwierdzeń** w kodowanego testu interfejsu użytkownika, a następnie wybierz kontrolkę interfejsu użytkownika w uruchomionej aplikacji. Pojawia się liście właściwości wybierz właściwość, na przykład **tekstu** w polu tekstowym. W menu skrótów wybierz **Dodaj potwierdzenie**. W oknie dialogowym Wybierz operator porównania, wartość porównania i komunikat o błędzie.  
   
-     Zamknij okno potwierdzenia, a następnie wybierz **Generuj kod**.  
+    Zamknij okno potwierdzenia, a następnie wybierz **Generuj kod**.  
   
-     ![Kodowany test interfejsu użytkownika, przeznaczonych dla elementu](../test/media/codedui-1.png "CodedUI_1")  
+    ![Kodowany test interfejsu użytkownika, przeznaczonych dla elementu](../test/media/codedui-1.png "CodedUI_1")  
   
-    > [!TIP]
-    >  Przełącza między rejestrowanie akcji i weryfikowanie wartości. Generowanie kodu na końcu każdego sekwencję akcji lub weryfikacji. Jeśli chcesz, będzie można później Wstaw nowe akcje i weryfikacji.  
+   > [!TIP]
+   >  Przełącza między rejestrowanie akcji i weryfikowanie wartości. Generowanie kodu na końcu każdego sekwencję akcji lub weryfikacji. Jeśli chcesz, będzie można później Wstaw nowe akcje i weryfikacji.  
   
-     Aby uzyskać więcej informacji, zobacz [sprawdzania poprawności właściwości formantów](#VerifyingCodeUsingCUITGenerateAssertions).  
+    Aby uzyskać więcej informacji, zobacz [sprawdzania poprawności właściwości formantów](#VerifyingCodeUsingCUITGenerateAssertions).  
   
-5.  **Wyświetl kod wygenerowany test**.  
+5. **Wyświetl kod wygenerowany test**.  
   
-     Aby wyświetlić wygenerowany kod, zamknij okno konstruktora testu interfejsu użytkownika. W kodzie widać nazwy, które na każdym kroku. Kod znajduje się w pliku CUIT, który został utworzony:  
+    Aby wyświetlić wygenerowany kod, zamknij okno konstruktora testu interfejsu użytkownika. W kodzie widać nazwy, które na każdym kroku. Kod znajduje się w pliku CUIT, który został utworzony:  
   
-    ```csharp  
-    [CodedUITest]  
-    public class CodedUITest1  
-    { ...  
-      [TestMethod]  
-      public void CodedUITestMethod1()  
-      {  
-          this.UIMap.AddTwoNumbers();  
-          this.UIMap.VerifyResultValue();  
-          // To generate more code for this test, select   
-          // "Generate Code" from the shortcut menu.  
-      }  
-    }  
-    ```  
+   ```csharp  
+   [CodedUITest]  
+   public class CodedUITest1  
+   { ...  
+     [TestMethod]  
+     public void CodedUITestMethod1()  
+     {  
+         this.UIMap.AddTwoNumbers();  
+         this.UIMap.VerifyResultValue();  
+         // To generate more code for this test, select   
+         // "Generate Code" from the shortcut menu.  
+     }  
+   }  
+   ```  
   
-6.  **Dodawanie więcej akcji i potwierdzenia**.  
+6. **Dodawanie więcej akcji i potwierdzenia**.  
   
-     Umieść kursor we właściwym miejscu w metodzie testowej, a następnie w menu skrótów wybierz **Generuj kod dla kodowanego testu interfejsu użytkownika**. Nowy kod zostanie wstawiony w tym momencie.  
+    Umieść kursor we właściwym miejscu w metodzie testowej, a następnie w menu skrótów wybierz **Generuj kod dla kodowanego testu interfejsu użytkownika**. Nowy kod zostanie wstawiony w tym momencie.  
   
-7.  **Edytuj szczegóły działań testów i potwierdzenia**.  
+7. **Edytuj szczegóły działań testów i potwierdzenia**.  
   
-     Otwórz UIMap.uitest. Ten plik zostanie otwarty w interfejsie użytkownika edytora kodowanego testu, gdzie można edytować dowolnej sekwencji akcji, które nagrałeś oraz jak edytować swoje potwierdzenia.  
+    Otwórz UIMap.uitest. Ten plik zostanie otwarty w interfejsie użytkownika edytora kodowanego testu, gdzie można edytować dowolnej sekwencji akcji, które nagrałeś oraz jak edytować swoje potwierdzenia.  
   
-     ![Edytor testu interfejsu użytkownika kodowany](../test/media/cuit-editor-edit.png "CUIT_Editor_edit")  
+    ![Edytor testu interfejsu użytkownika kodowany](../test/media/cuit-editor-edit.png "CUIT_Editor_edit")  
   
-     Aby uzyskać więcej informacji, zobacz [testy interfejsu użytkownika kodowany edycji za pomocą edytora kodowanego testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
+    Aby uzyskać więcej informacji, zobacz [testy interfejsu użytkownika kodowany edycji za pomocą edytora kodowanego testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
-8.  **Uruchom test**.  
+8. **Uruchom test**.  
   
-     Eksplorator testów lub Otwórz menu skrótów w metodzie testowej, a następnie wybierz **Uruchom testy**. Aby uzyskać więcej informacji o sposobach uruchamiania testów, zobacz [Uruchamianie testów jednostkowych w Eksploratorze testów](../test/run-unit-tests-with-test-explorer.md) i *dodatkowe opcje do uruchomienia kodowanych testów interfejsu użytkownika* w [co przyniesie przyszłość?](#VerifyCodeUsingCUITWhatsNext) sekcji w zakończenie tego tematu.  
+    Eksplorator testów lub Otwórz menu skrótów w metodzie testowej, a następnie wybierz **Uruchom testy**. Aby uzyskać więcej informacji o sposobach uruchamiania testów, zobacz [Uruchamianie testów jednostkowych w Eksploratorze testów](../test/run-unit-tests-with-test-explorer.md) i *dodatkowe opcje do uruchomienia kodowanych testów interfejsu użytkownika* w [co przyniesie przyszłość?](#VerifyCodeUsingCUITWhatsNext) sekcji w zakończenie tego tematu.  
   
- Pozostałe sekcje w tym temacie więcej szczegółowych informacji o krokach w tej procedurze.  
+   Pozostałe sekcje w tym temacie więcej szczegółowych informacji o krokach w tej procedurze.  
   
- Aby uzyskać bardziej szczegółowym przykładem, zobacz [wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). W instruktażu utworzysz prostą aplikację Windows Presentation Foundation (WPF) w celu zademonstrowania sposobu tworzenia, edytowania i obsługa kodowanego testu interfejsu użytkownika. Dostarcza on rozwiązania do korekcji testów, które zostały uszkodzone przez różne problemy związane z czasem i refaktoryzacją kontroli.  
+   Aby uzyskać bardziej szczegółowym przykładem, zobacz [wskazówki: tworzenie, edytowanie i obsługa kodowanego testu interfejsu użytkownika](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md). W instruktażu utworzysz prostą aplikację Windows Presentation Foundation (WPF) w celu zademonstrowania sposobu tworzenia, edytowania i obsługa kodowanego testu interfejsu użytkownika. Dostarcza on rozwiązania do korekcji testów, które zostały uszkodzone przez różne problemy związane z czasem i refaktoryzacją kontroli.  
   
 ###  <a name="starting"></a> Uruchamianie i zatrzymywanie testowaną aplikację  
  *Nie chcę uruchomić i zatrzymać mojej aplikacji, przeglądarki lub bazy danych oddzielnie dla każdego testu. Jak uniknąć,?*  
@@ -185,54 +185,54 @@ Testy automatyczne, które kontrolują aplikację przez jej interfejs użytkowni
   
  ![Kodowanego testu interfejsu użytkownika właściwości](../test/media/codedui-2.png "CodedUI_2")  
   
--   *Nie widzisz żadnych właściwości, gdy mogę wybrać kontrolkę w mojej aplikacji lub nie jest wyświetlane na formant mapy formantów interfejsu użytkownika.*  
+- *Nie widzisz żadnych właściwości, gdy mogę wybrać kontrolkę w mojej aplikacji lub nie jest wyświetlane na formant mapy formantów interfejsu użytkownika.*  
   
-     W kodzie aplikacji formant, który chcesz zweryfikować musi mieć unikatowy identyfikator, takie jak atrybutu HTML Identyfikatora lub WPF UId. Może być konieczne zaktualizowanie kodu aplikacji w celu dodania tych identyfikatorów.  
+   W kodzie aplikacji formant, który chcesz zweryfikować musi mieć unikatowy identyfikator, takie jak atrybutu HTML Identyfikatora lub WPF UId. Może być konieczne zaktualizowanie kodu aplikacji w celu dodania tych identyfikatorów.  
   
- Następnie otwórz menu skrótów dla właściwości do kontrolki interfejsu użytkownika, który chcesz sprawdzić, a następnie wskaż **Dodaj potwierdzenie**. W **Dodaj potwierdzenie** okno dialogowe, wybierz opcję **Komparator** do potwierdzenia, na przykład <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>, a następnie wpisz wartość dla Twojego potwierdzenia w **porównywana wartość**.  
+  Następnie otwórz menu skrótów dla właściwości do kontrolki interfejsu użytkownika, który chcesz sprawdzić, a następnie wskaż **Dodaj potwierdzenie**. W **Dodaj potwierdzenie** okno dialogowe, wybierz opcję **Komparator** do potwierdzenia, na przykład <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A>, a następnie wpisz wartość dla Twojego potwierdzenia w **porównywana wartość**.  
   
- ![Kodowanego testu interfejsu użytkownika potwierdzenia](../test/media/codedui-3.png "CodedUI_3")  
+  ![Kodowanego testu interfejsu użytkownika potwierdzenia](../test/media/codedui-3.png "CodedUI_3")  
   
- Po dodaniu wszystkich asercje o dla testu wybierz **OK**.  
+  Po dodaniu wszystkich asercje o dla testu wybierz **OK**.  
   
- Aby wygenerować kod dla potwierdzenia usługi i Dodaj formant do mapy interfejsu użytkownika, wybierz **Generuj kod** ikony. Wpisz nazwę metodę kodowanego testu interfejsu użytkownika i opis metody, które zostaną dodane jako komentarze do metody. Wybierz **Dodaj i wygeneruj**. Następnie wybierz pozycję **Zamknij** ikoną, aby zamknąć **kodowanego testu interfejsu użytkownika**. Spowoduje to wygenerowanie kodu podobne do następującego kodu. Na przykład, jeśli wprowadzona nazwa jest `AssertForAddTwoNumbers`, kod będzie wyglądać następująco:  
+  Aby wygenerować kod dla potwierdzenia usługi i Dodaj formant do mapy interfejsu użytkownika, wybierz **Generuj kod** ikony. Wpisz nazwę metodę kodowanego testu interfejsu użytkownika i opis metody, które zostaną dodane jako komentarze do metody. Wybierz **Dodaj i wygeneruj**. Następnie wybierz pozycję **Zamknij** ikoną, aby zamknąć **kodowanego testu interfejsu użytkownika**. Spowoduje to wygenerowanie kodu podobne do następującego kodu. Na przykład, jeśli wprowadzona nazwa jest `AssertForAddTwoNumbers`, kod będzie wyglądać następująco:  
   
--   Dodaje wywołanie metody assert AssertForAddTwoNumbers do metody testowej w pliku kodowanego testu interfejsu użytkownika:  
+- Dodaje wywołanie metody assert AssertForAddTwoNumbers do metody testowej w pliku kodowanego testu interfejsu użytkownika:  
   
-    ```  
-    [TestMethod]  
-    public void CodedUITestMethod1()  
-    {  
-        this.UIMap.AddTwoNumbers();  
-        this.UIMap.AssertForAddTwoNumbers();  
-    }  
-    ```  
+  ```  
+  [TestMethod]  
+  public void CodedUITestMethod1()  
+  {  
+      this.UIMap.AddTwoNumbers();  
+      this.UIMap.AssertForAddTwoNumbers();  
+  }  
+  ```  
   
-     Możesz edytować ten plik, aby zmienić kolejność kroków i potwierdzenia lub tworzenie nowych metod testowych. Aby dodać więcej kodu, umieść kursor na metodzie testowej, jak i w menu skrótów wybierz **Generuj kod dla kodowanego testu interfejsu użytkownika**.  
+   Możesz edytować ten plik, aby zmienić kolejność kroków i potwierdzenia lub tworzenie nowych metod testowych. Aby dodać więcej kodu, umieść kursor na metodzie testowej, jak i w menu skrótów wybierz **Generuj kod dla kodowanego testu interfejsu użytkownika**.  
   
--   Dodaje metodę o nazwie `AssertForAddTwoNumbers` do mapy interfejsu użytkownika (UIMap.uitest). Ten plik zostanie otwarty w interfejsie użytkownika edytora kodowanego testu, którym można edytować potwierdzenia.  
+- Dodaje metodę o nazwie `AssertForAddTwoNumbers` do mapy interfejsu użytkownika (UIMap.uitest). Ten plik zostanie otwarty w interfejsie użytkownika edytora kodowanego testu, którym można edytować potwierdzenia.  
   
-     ![Edytuj assert, za pomocą edytora kodowanego testu interfejsu użytkownika](../test/media/cuit-editor-assert.png "CUIT_Editor_assert")  
+   ![Edytuj assert, za pomocą edytora kodowanego testu interfejsu użytkownika](../test/media/cuit-editor-assert.png "CUIT_Editor_assert")  
   
-     Aby uzyskać więcej informacji, zobacz [testy interfejsu użytkownika kodowany edycji za pomocą edytora kodowanego testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
+   Aby uzyskać więcej informacji, zobacz [testy interfejsu użytkownika kodowany edycji za pomocą edytora kodowanego testu interfejsu użytkownika](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
-     Można również wyświetlić wygenerowany kod metody asercji w UIMap.Designer.cs. Jednak nie należy edytować ten plik. Aby dostosować wersję kodu kopiowanie metody do innego pliku, takie jak UIMap.cs, Zmień nazwę metody i tam edytować.  
+   Można również wyświetlić wygenerowany kod metody asercji w UIMap.Designer.cs. Jednak nie należy edytować ten plik. Aby dostosować wersję kodu kopiowanie metody do innego pliku, takie jak UIMap.cs, Zmień nazwę metody i tam edytować.  
   
-    ```  
-    public void AssertForAddTwoNumbers()  
-    {  
-        ...  
-    }  
-    ```  
+  ```  
+  public void AssertForAddTwoNumbers()  
+  {  
+      ...  
+  }  
+  ```  
   
- *Formant, który chcę wybrać traci fokus i znika przy próbie wybierz narzędzie Dodaj Asercje z konstruktora kodowanego testu interfejsu użytkownika. Jak wybrać formant?*  
- **Wybieranie ukrytą kontrolkę za pomocą klawiatury**  
+  *Formant, który chcę wybrać traci fokus i znika przy próbie wybierz narzędzie Dodaj Asercje z konstruktora kodowanego testu interfejsu użytkownika. Jak wybrać formant?*  
+  **Wybieranie ukrytą kontrolkę za pomocą klawiatury**  
   
- Czasami, gdy [dodawanie formantów i weryfikowania ich właściwości](#VerifyingCodeUsingCUITGenerateAssertions), może być konieczne użycie klawiatury. Na przykład podczas próby rejestrowania kodowanego testu interfejsu użytkownika, używającej formant menu kontekstowego na liście elementów menu w formancie utracić fokus i znikają w przypadku próby wybierz narzędzie Dodaj Asercje z Konstruktor kodowanego testu IU. Zostało to przedstawione na poniższej ilustracji, gdzie tracić fokus i znika, jeśli zostanie podjęta próba wybierz ją przy użyciu narzędzia Dodaj Asercje przez menu kontekstowego w programie Internet Explorer.  
+  Czasami, gdy [dodawanie formantów i weryfikowania ich właściwości](#VerifyingCodeUsingCUITGenerateAssertions), może być konieczne użycie klawiatury. Na przykład podczas próby rejestrowania kodowanego testu interfejsu użytkownika, używającej formant menu kontekstowego na liście elementów menu w formancie utracić fokus i znikają w przypadku próby wybierz narzędzie Dodaj Asercje z Konstruktor kodowanego testu IU. Zostało to przedstawione na poniższej ilustracji, gdzie tracić fokus i znika, jeśli zostanie podjęta próba wybierz ją przy użyciu narzędzia Dodaj Asercje przez menu kontekstowego w programie Internet Explorer.  
   
- ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest-selectcontrolkeyboard.png "CodedUITest_SelectControlKeyboard")  
+  ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest-selectcontrolkeyboard.png "CodedUITest_SelectControlKeyboard")  
   
- Aby użyć klawiatury, aby wybrać kontrolkę interfejsu użytkownika, umieść kursor nad kontrolką za pomocą myszy. Wciśnij klawisz **Ctrl** klucza i **I** klucza w tym samym czasie. Wydawanie kluczy. Kontrolka jest rejestrowana przez konstruktora kodowanego testu UT.  
+  Aby użyć klawiatury, aby wybrać kontrolkę interfejsu użytkownika, umieść kursor nad kontrolką za pomocą myszy. Wciśnij klawisz **Ctrl** klucza i **I** klucza w tym samym czasie. Wydawanie kluczy. Kontrolka jest rejestrowana przez konstruktora kodowanego testu UT.  
   
 > [!WARNING]
 >  Jeśli używasz Microsoft Lync, należy zamknąć Lync, przed rozpoczęciem korzystania z konstruktora kodowanego testu interfejsu użytkownika. Microsoft Lync zakłóca **Ctrl + I** skróty klawiaturowe.  
@@ -323,95 +323,95 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ###  <a name="generatedCode"></a> Wygenerowany kod  
  Po wybraniu **Generuj kod**, tworzonych jest kilka fragmentów kodu:  
   
--   **Wiersz w metodzie testowej.**  
+- **Wiersz w metodzie testowej.**  
   
-    ```csharp  
-    [CodedUITest]  
-    public class CodedUITest1  
-    { ...  
-      [TestMethod]  
-      public void CodedUITestMethod1()  
-      {  
-          this.UIMap.AddTwoNumbers();  
-          // To generate more code for this test, select   
-          // "Generate Code" from the shortcut menu.      }  
-    }  
-    ```  
-  
-     Możesz kliknąć prawym przyciskiem myszy w przypadku tej metody, aby dodać więcej zarejestrowane akcje i weryfikacji. Można również edytować je ręcznie, aby rozszerzyć lub zmodyfikować kod. Na przykład można część kodu ująć w pętli.  
-  
-     Można także dodać nowe metody testowe i dodać kod do nich w taki sam sposób. Każda metoda testowa musi mieć `[TestMethod]` atrybutu.  
-  
--   **Metoda w UIMap.uitest**  
-  
-     Ta metoda obejmuje szczegółów nagrane akcje lub wartość, która Cię o zweryfikowanie informacji. Ten kod można edytować, otwierając UIMap.uitest. Zostanie otwarty w edytorze specjalistyczne, można usunąć lub refaktoryzować zarejestrowane akcje.  
-  
-     Youcan również wyświetlić wygenerowana metoda w UIMap.Designer.cs. Ta metoda wykonuje akcje rejestrowane po uruchomieniu testu.  
-  
-    ```csharp  
-    // File: UIMap.Designer.cs  
-    public partial class UIMap  
+  ```csharp  
+  [CodedUITest]  
+  public class CodedUITest1  
+  { ...  
+    [TestMethod]  
+    public void CodedUITestMethod1()  
     {  
-      /// <summary>  
-      /// Add two numbers  
-      /// </summary>  
-      public void AddTwoNumbers()  
-      { ...   }  
+        this.UIMap.AddTwoNumbers();  
+        // To generate more code for this test, select   
+        // "Generate Code" from the shortcut menu.      }  
+  }  
+  ```  
+  
+   Możesz kliknąć prawym przyciskiem myszy w przypadku tej metody, aby dodać więcej zarejestrowane akcje i weryfikacji. Można również edytować je ręcznie, aby rozszerzyć lub zmodyfikować kod. Na przykład można część kodu ująć w pętli.  
+  
+   Można także dodać nowe metody testowe i dodać kod do nich w taki sam sposób. Każda metoda testowa musi mieć `[TestMethod]` atrybutu.  
+  
+- **Metoda w UIMap.uitest**  
+  
+   Ta metoda obejmuje szczegółów nagrane akcje lub wartość, która Cię o zweryfikowanie informacji. Ten kod można edytować, otwierając UIMap.uitest. Zostanie otwarty w edytorze specjalistyczne, można usunąć lub refaktoryzować zarejestrowane akcje.  
+  
+   Youcan również wyświetlić wygenerowana metoda w UIMap.Designer.cs. Ta metoda wykonuje akcje rejestrowane po uruchomieniu testu.  
+  
+  ```csharp  
+  // File: UIMap.Designer.cs  
+  public partial class UIMap  
+  {  
+    /// <summary>  
+    /// Add two numbers  
+    /// </summary>  
+    public void AddTwoNumbers()  
+    { ...   }  
+  }  
+  ```  
+  
+  > [!WARNING]
+  >  Nie należy edytować tego pliku, ponieważ zostaną wygenerowane, gdy tworzysz więcej testów.  
+  
+   Można tworzyć dostosowane wersji tych metod, kopiując je do UIMap.cs. Na przykład można dokonać sparametryzowane wersji, który można wywołać z metody testowej:  
+  
+  ```csharp  
+  // File: UIMap.cs  
+  public partial class UIMap // Same partial class  
+  {  
+    /// <summary>  
+    /// Add two numbers – parameterized version  
+    /// </summary>  
+    public void AddTwoNumbers(int firstNumber, int secondNumber)  
+    { ...   // Code modified to use parameters.  
     }  
-    ```  
+  }  
+  ```  
   
-    > [!WARNING]
-    >  Nie należy edytować tego pliku, ponieważ zostaną wygenerowane, gdy tworzysz więcej testów.  
+- **Deklaracje w UIMap.uitest**  
   
-     Można tworzyć dostosowane wersji tych metod, kopiując je do UIMap.cs. Na przykład można dokonać sparametryzowane wersji, który można wywołać z metody testowej:  
+   Te deklaracje reprezentują kontrolek interfejsu użytkownika aplikacji, które są używane w ramach testu. Służą one przez wygenerowany kod do obsługi formantów i uzyskiwanie dostępu do ich właściwości.  
   
-    ```csharp  
-    // File: UIMap.cs  
-    public partial class UIMap // Same partial class  
-    {  
-      /// <summary>  
-      /// Add two numbers – parameterized version  
-      /// </summary>  
-      public void AddTwoNumbers(int firstNumber, int secondNumber)  
-      { ...   // Code modified to use parameters.  
-      }  
-    }  
-    ```  
+   Umożliwia także je w przypadku pisania własnego kodu. Na przykład można mieć swojej metody testowej, wybierz hiperłącze w aplikacji sieci Web, wpisz wartość w polu tekstowym lub gałęzie i wykonać różne operacje testowania na podstawie wartości w polu.  
   
--   **Deklaracje w UIMap.uitest**  
+   Można dodać wiele kodowane testy interfejsu użytkownika i wiele obiektów mapy interfejsu użytkownika i pliki, aby usprawnić testowanie dużej aplikacji. Aby uzyskać więcej informacji, zobacz [testowanie dużej aplikacji przy użyciu wielu map UI](../test/testing-a-large-application-with-multiple-ui-maps.md).  
   
-     Te deklaracje reprezentują kontrolek interfejsu użytkownika aplikacji, które są używane w ramach testu. Służą one przez wygenerowany kod do obsługi formantów i uzyskiwanie dostępu do ich właściwości.  
-  
-     Umożliwia także je w przypadku pisania własnego kodu. Na przykład można mieć swojej metody testowej, wybierz hiperłącze w aplikacji sieci Web, wpisz wartość w polu tekstowym lub gałęzie i wykonać różne operacje testowania na podstawie wartości w polu.  
-  
-     Można dodać wiele kodowane testy interfejsu użytkownika i wiele obiektów mapy interfejsu użytkownika i pliki, aby usprawnić testowanie dużej aplikacji. Aby uzyskać więcej informacji, zobacz [testowanie dużej aplikacji przy użyciu wielu map UI](../test/testing-a-large-application-with-multiple-ui-maps.md).  
-  
- Aby uzyskać więcej informacji na temat wygenerowany kod, zobacz [anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md).  
+  Aby uzyskać więcej informacji na temat wygenerowany kod, zobacz [anatomia kodowanego testu interfejsu użytkownika](../test/anatomy-of-a-coded-ui-test.md).  
   
 ###  <a name="actions"></a> Kodowanie akcji kontrolki UI oraz właściwości  
  Podczas pracy z kontrolkami testu interfejsu użytkownika w programie kodowane testy interfejsu użytkownika, są one podzielone na dwie części: właściwości i akcje.  
   
--   Pierwsza część składa się z akcji, które można wykonywać na kontrolek testu interfejsu użytkownika. Na przykład kodowane testy interfejsu użytkownika można symulować kliknięcia myszy na kontrolce testu interfejsu użytkownika lub symulacji wpisywane znaki na klawiaturze, aby wpłynąć na kontrolkę interfejsu użytkownika testu.  
+- Pierwsza część składa się z akcji, które można wykonywać na kontrolek testu interfejsu użytkownika. Na przykład kodowane testy interfejsu użytkownika można symulować kliknięcia myszy na kontrolce testu interfejsu użytkownika lub symulacji wpisywane znaki na klawiaturze, aby wpłynąć na kontrolkę interfejsu użytkownika testu.  
   
--   Druga część składa się z pozwala na pobieranie i ustawianie właściwości formantu testu interfejsu użytkownika. Na przykład kodowane testy interfejsu użytkownika można uzyskać liczbę elementów w `ListBox`, lub ustawić `CheckBox` do wybranego stanu.  
+- Druga część składa się z pozwala na pobieranie i ustawianie właściwości formantu testu interfejsu użytkownika. Na przykład kodowane testy interfejsu użytkownika można uzyskać liczbę elementów w `ListBox`, lub ustawić `CheckBox` do wybranego stanu.  
   
- **Uzyskiwanie dostępu do akcji testu IU**  
+  **Uzyskiwanie dostępu do akcji testu IU**  
   
- Aby wykonać akcje na test UI, takie jak kliknięcia myszy lub klawiatury akcji, należy użyć metod w <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse> i <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard> klasy:  
+  Aby wykonać akcje na test UI, takie jak kliknięcia myszy lub klawiatury akcji, należy użyć metod w <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse> i <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard> klasy:  
   
--   Aby wykonać zorientowane na myszy akcji, takich jak kliknięcie myszą, sterowanie testu interfejsu użytkownika, należy użyć <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click%2A>.  
+- Aby wykonać zorientowane na myszy akcji, takich jak kliknięcie myszą, sterowanie testu interfejsu użytkownika, należy użyć <xref:Microsoft.VisualStudio.TestTools.UITesting.Mouse.Click%2A>.  
   
-     `Mouse.Click(buttonCancel);`  
+   `Mouse.Click(buttonCancel);`  
   
--   Aby wykonać akcję korzystający z klawiatury, np. do kontrolki edycji należy użyć <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A>.  
+- Aby wykonać akcję korzystający z klawiatury, np. do kontrolki edycji należy użyć <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard.SendKeys%2A>.  
   
-     `Keyboard.SendKeys(textBoxDestination, @"C:\Temp\Output.txt");`  
+   `Keyboard.SendKeys(textBoxDestination, @"C:\Temp\Output.txt");`  
   
- **Uzyskiwanie dostępu do właściwości kontrolki testu interfejsu użytkownika**  
+  **Uzyskiwanie dostępu do właściwości kontrolki testu interfejsu użytkownika**  
   
- Aby uzyskać i ustawić określone wartości właściwości kontrolki interfejsu użytkownika, można bezpośrednio uzyskać lub ustawić wartości właściwości kontrolki, możesz też <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A?displayProperty=fullName> i <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A?displayProperty=fullName> metody o nazwie określone właściwości, które chcesz pobrać lub ustawić.  
+  Aby uzyskać i ustawić określone wartości właściwości kontrolki interfejsu użytkownika, można bezpośrednio uzyskać lub ustawić wartości właściwości kontrolki, możesz też <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A?displayProperty=fullName> i <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A?displayProperty=fullName> metody o nazwie określone właściwości, które chcesz pobrać lub ustawić.  
   
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> Zwraca obiekt, który następnie można rzutować na odpowiedni <xref:System.Type>. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> akceptuje obiekt do wartości właściwości.  
+  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> Zwraca obiekt, który następnie można rzutować na odpowiedni <xref:System.Type>. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> akceptuje obiekt do wartości właściwości.  
   
 ##### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Aby pobierać lub ustawiać właściwości z kontrolek testu interfejsu użytkownika bezpośrednio  
   
@@ -450,27 +450,27 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ##  <a name="VerifyCodeUsingCUITWhatsNext"></a> Jaka jest przyszłość?  
  **Dodatkowe opcje do uruchomienia kodowanych testów interfejsu użytkownika:** można uruchomić kodowane testy interfejsu użytkownika bezpośrednio z programu Visual Studio, zgodnie z opisem we wcześniejszej części tego tematu. Ponadto można uruchomić zautomatyzowane testy interfejsu użytkownika z [!INCLUDE[TCMext](../includes/tcmext-md.md)], lub z [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]. Kodowane testy interfejsu użytkownika są automatyzowane, mają wchodzić w interakcje z pulpitem po uruchomieniu, w przeciwieństwie do innych testów automatycznych.  
   
--   [Porady: Uruchamianie testów z programu Microsoft Visual Studio](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)  
+- [Porady: Uruchamianie testów z programu Microsoft Visual Studio](http://msdn.microsoft.com/library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)  
   
--   [Uruchamianie automatycznych testów w programie Microsoft Test Manager](http://msdn.microsoft.com/en-us/0632f265-63fe-4859-a413-9bb934c66835)  
+- [Uruchamianie automatycznych testów w programie Microsoft Test Manager](http://msdn.microsoft.com/en-us/0632f265-63fe-4859-a413-9bb934c66835)  
   
--   [Porady: Konfigurowanie i przeprowadzanie zaplanowanych testów po skompilowaniu aplikacji](http://msdn.microsoft.com/en-us/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)  
+- [Porady: Konfigurowanie i przeprowadzanie zaplanowanych testów po skompilowaniu aplikacji](http://msdn.microsoft.com/en-us/32acfeb1-b1aa-4afb-8cfe-cc209e6183fd)  
   
--   [Uruchom testy w procesie kompilacji](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)  
+- [Uruchom testy w procesie kompilacji](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)  
   
--   [Uruchamianie testów automatycznych z wiersza polecenia](http://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)  
+- [Uruchamianie testów automatycznych z wiersza polecenia](http://msdn.microsoft.com/library/f18179c6-b688-4e41-9898-8aca130c4fc3)  
   
--   [Porady: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](~/E:/Repos/visualstudio-docs-pr/docs/test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md)  
+- [Porady: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](~/E:/Repos/visualstudio-docs-pr/docs/test/how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop.md)  
   
--   [&#91;wycofane&#93; za pomocą kodowanych testów interfejsu użytkownika w testach obciążenia](http://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)  
+- [&#91;wycofane&#93; za pomocą kodowanych testów interfejsu użytkownika w testach obciążenia](http://msdn.microsoft.com/library/704339ff-7da7-4d5f-acb3-c3b23f4acb43)  
   
- **Dodawanie obsługi kontrolek niestandardowych:** kodowanych testów interfejsu użytkownika nie obsługuje każdego możliwego interfejsu użytkownika i może nie obsługiwać interfejsu użytkownika, którą chcesz przetestować. Na przykład nie można od razu utworzyć kodowany test interfejsu użytkownika interfejsu użytkownika dla [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Można jednak utworzyć rozszerzenie kodowanych testów interfejsu użytkownika, który będzie obsługiwać formant niestandardowy.  
+  **Dodawanie obsługi kontrolek niestandardowych:** kodowanych testów interfejsu użytkownika nie obsługuje każdego możliwego interfejsu użytkownika i może nie obsługiwać interfejsu użytkownika, którą chcesz przetestować. Na przykład nie można od razu utworzyć kodowany test interfejsu użytkownika interfejsu użytkownika dla [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Można jednak utworzyć rozszerzenie kodowanych testów interfejsu użytkownika, który będzie obsługiwać formant niestandardowy.  
   
--   [Włączanie testowania kodowanego interfejsu użytkownika dla kontrolek](../test/enable-coded-ui-testing-of-your-controls.md)  
+- [Włączanie testowania kodowanego interfejsu użytkownika dla kontrolek](../test/enable-coded-ui-testing-of-your-controls.md)  
   
--   [Rozszerzanie kodowanych testów interfejsu użytkownika i rejestrowanie akcji obsługujących program Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)  
+- [Rozszerzanie kodowanych testów interfejsu użytkownika i rejestrowanie akcji obsługujących program Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)  
   
- Kodowane testy interfejsu użytkownika są często używane do automatyzacji testów ręcznych. Aby uzyskać dodatkowe wskazówki, zobacz [testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 5: Automatyzacja testów systemu](http://go.microsoft.com/fwlink/?LinkID=255196). Aby uzyskać więcej informacji na temat testów ręcznych, zobacz [ &#91;wycofane&#93; tworzenie ręcznych przypadków testowych za pomocą programu Microsoft Test Manager](http://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Aby uzyskać więcej informacji na temat automatycznych testów systemowych, zobacz [tworzenie zautomatyzowanych testów przy użyciu programu Microsoft Test Manager](http://msdn.microsoft.com/en-us/7b5075ee-ddfe-411d-b1d4-94283550a5d0).  
+  Kodowane testy interfejsu użytkownika są często używane do automatyzacji testów ręcznych. Aby uzyskać dodatkowe wskazówki, zobacz [testowanie dostarczania ciągłego w programie Visual Studio 2012 – rozdział 5: Automatyzacja testów systemu](http://go.microsoft.com/fwlink/?LinkID=255196). Aby uzyskać więcej informacji na temat testów ręcznych, zobacz [ &#91;wycofane&#93; tworzenie ręcznych przypadków testowych za pomocą programu Microsoft Test Manager](http://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Aby uzyskać więcej informacji na temat automatycznych testów systemowych, zobacz [tworzenie zautomatyzowanych testów przy użyciu programu Microsoft Test Manager](http://msdn.microsoft.com/en-us/7b5075ee-ddfe-411d-b1d4-94283550a5d0).  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
   

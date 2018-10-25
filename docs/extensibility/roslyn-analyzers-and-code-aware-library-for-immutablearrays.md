@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 075f3391a155938082847c708f831d0587cf54fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907485"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizatory Roslyn i Biblioteka obsługująca kod dla tablic Immutablearray
 
@@ -82,7 +82,6 @@ Możesz zaimplementować analizator w języku Visual Basic, który jest przeznac
 
 ```csharp
 public override void Initialize(AnalysisContext context) {}
-
 ```
 
 Otwórz nowy wiersz w tej metody i typu "kontekstu." Aby zobaczyć listy uzupełniania IntelliSense.  Widoczne na liście uzupełniania jest wiele `Register...` metod do obsługi różnych typów zdarzeń.  Na przykład, pierwszy z nich, `RegisterCodeBlockAction`, wywołania z powrotem do kodu w bloku, który zazwyczaj znajduje się kod między nawiasy klamrowe.  Rejestrowanie w bloku również ponownie wywołuje kodu dla inicjatora pola, wartość atrybutu lub wartość parametru opcjonalnego.
@@ -225,7 +224,6 @@ namespace ImmutableArrayAnalyzer
     [ExportCodeFixProvider(LanguageNames.CSharp)]
     class BuildCodeFixProvider : CodeFixProvider
     {}
-
 ```
 
 **Klasy zastępczej się pochodzić elementy członkowskie.** Teraz umieść karetka edytora w identyfikatorze `CodeFixProvider` i naciśnij klawisz **Ctrl**+**.** (okres), aby zastąpić klasą zastępczą out to implementacja to abstrakcyjna klasa bazowa.  Spowoduje to wygenerowanie właściwości i metody dla Ciebie.

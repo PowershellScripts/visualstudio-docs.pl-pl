@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 873c377b4b2262df6b12f581f1cdac901d27ffce
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6942511e325b77aaa3d646b6e84cd833b8b55ab2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871748"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Przegląd narzędzi językowych właściwych dla domeny
 Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowane w programie Visual Studio, pozwalają na projektowanie języka specyficznego dla domeny, a następnie wygenerować wszystko, co użytkownicy muszą mieć do tworzenia modeli, które są oparte na języku.
@@ -34,31 +34,31 @@ Narzędzia języka specyficznego dla domeny (narzędzia DSL), które są hostowa
 ## <a name="the-dsl-tools-solution"></a>Rozwiązanie narzędzi języka DSL
  Kreator projektanta specyficznego dla domeny zawiera następujące szablony rozwiązań:
 
--   Przepływ zadań
+- Przepływ zadań
 
--   Diagramy klas
+- Diagramy klas
 
--   Minimalny języka
+- Minimalny języka
 
--   Modele składnika
+- Modele składnika
 
--   Minimalny WPF
+- Minimalny WPF
 
--   Minimalny Windows.Forms
+- Minimalny Windows.Forms
 
--   Biblioteka DSL
+- Biblioteka DSL
 
- Aby uzyskać więcej informacji, zobacz [Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md).
+  Aby uzyskać więcej informacji, zobacz [Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
- Kreator utworzy rozwiązanie programu Visual Studio, które ma następujące projekty:
+  Kreator utworzy rozwiązanie programu Visual Studio, które ma następujące projekty:
 
--   Język DSL
+- Język DSL
 
-     Projektu Dsl definiuje języka specyficznego dla domeny i jego narzędzi edycji i przetwarzania.
+   Projektu Dsl definiuje języka specyficznego dla domeny i jego narzędzi edycji i przetwarzania.
 
--   **DslPackage**
+- **DslPackage**
 
-     Projekt DslPackage Określa, jak narzędzia językowe zintegrować z programem Visual Studio.
+   Projekt DslPackage Określa, jak narzędzia językowe zintegrować z programem Visual Studio.
 
 ## <a name="the-dsl-tools-graphical-interface"></a>Interfejsu graficznego narzędzia DSL
  Aby dodać elementy i relacje do języka specyficznego dla domeny, można użyć interfejsu graficznego narzędzia DSL. Po dodaniu elementów można zdefiniować ich wygląd, mapując je do kształtów zewnętrznych, dostosowywanie kolorów i dodawanie dekoratory. Możesz również dodać elementy do przybornika.

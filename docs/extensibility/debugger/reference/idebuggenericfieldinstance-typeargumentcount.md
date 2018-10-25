@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2fb72a486c58c0213361eb983371493f7ebafc5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 066084853c63f7f824b27b365e9abf0f2d695970
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822244"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
 Zwraca liczbę typu argumenty parametrów dla tego wystąpienia.  
@@ -40,13 +40,13 @@ int TypeArgumentCount(
   
 #### <a name="parameters"></a>Parametry  
  `pcArgs`  
- [w, out] Liczba argumentów typu parametru dla tego wystąpienia.  
+ [out w] Liczba argumentów do parametrów typu dla tego wystąpienia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Na przykład jeśli lista\<int >, ta metoda zwraca wartość 1 oraz, jeśli lista\<int, float2 > Ta metoda zwraca wartość 2. Ta metoda zwraca wartość 0, jeśli nie wymaga argumentów typu.  
+ Na przykład jeśli lista\<int >, ta metoda zwraca wartość 1 i, jeśli lista\<int, float2 > Ta metoda zwraca wartość 2. Ta metoda zwraca wartość 0, jeśli nie wymaga argumentów typu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

@@ -27,12 +27,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5dd01b20e84bbe39e0c082a0b598fb6742f33d9f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa90ddb397d1c18e88ab8f25e2a0c3aee3e4d9a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891131"
 ---
 # <a name="validate-data-in-datasets"></a>Weryfikowanie danych w zestawach danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,21 +47,21 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
 ## <a name="validate-data"></a>Sprawdzanie poprawności danych  
  Sprawdzanie poprawności w zestawie danych może się odbywać w następujący sposób:  
   
--   Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy wartości w kolumnie danych podczas zmiany.  Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas zmiany kolumn](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy wartości w kolumnie danych podczas zmiany.  Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas zmiany kolumn](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
--   Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy dane wartości podczas całego danymi wiersza ulegnie zmianie. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- Tworząc własne weryfikacji specyficzne dla aplikacji, które sprawdza, czy dane wartości podczas całego danymi wiersza ulegnie zmianie. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
--   Tworząc klucze, ograniczenia unikatowe, i tak dalej jako część definicji rzeczywiste schemat zestawu danych. Aby uzyskać więcej informacji o dołączaniu sprawdzania poprawności do definicji schematu, zobacz [ograniczając DataColumn zawiera unikatowe wartości](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).  
+- Tworząc klucze, ograniczenia unikatowe, i tak dalej jako część definicji rzeczywiste schemat zestawu danych. Aby uzyskać więcej informacji o dołączaniu sprawdzania poprawności do definicji schematu, zobacz [ograniczając DataColumn zawiera unikatowe wartości](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).  
   
--   Przez ustawienie właściwości <xref:System.Data.DataColumn> obiektu, takie jak <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, i <xref:System.Data.DataColumn.Unique%2A>.  
+- Przez ustawienie właściwości <xref:System.Data.DataColumn> obiektu, takie jak <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, i <xref:System.Data.DataColumn.Unique%2A>.  
   
- Kilka zdarzeń są inicjowane przez <xref:System.Data.DataTable> obiektu, kiedy zmiana odbywa się w rekordzie:  
+  Kilka zdarzeń są inicjowane przez <xref:System.Data.DataTable> obiektu, kiedy zmiana odbywa się w rekordzie:  
   
--   <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.ColumnChanged> zdarzenia są wywoływane podczas i po każdej zmianie do poszczególnych kolumn. <xref:System.Data.DataTable.ColumnChanging> Zdarzeń jest przydatne w przypadku, gdy chcesz zweryfikować zmiany w określonych kolumnach. Informacje o proponowana zmiana jest przekazywany jako argument ze zdarzeniem. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas zmiany kolumn](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.ColumnChanged> zdarzenia są wywoływane podczas i po każdej zmianie do poszczególnych kolumn. <xref:System.Data.DataTable.ColumnChanging> Zdarzeń jest przydatne w przypadku, gdy chcesz zweryfikować zmiany w określonych kolumnach. Informacje o proponowana zmiana jest przekazywany jako argument ze zdarzeniem. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas zmiany kolumn](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
--   <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia są wywoływane podczas i po każdym zmianę w wierszu. <xref:System.Data.DataTable.RowChanging> Zdarzeń jest bardziej ogólny. Oznacza, że zmiany występuje gdzieś w wierszu, ale nie wiesz, która kolumna została zmieniona. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia są wywoływane podczas i po każdym zmianę w wierszu. <xref:System.Data.DataTable.RowChanging> Zdarzeń jest bardziej ogólny. Oznacza, że zmiany występuje gdzieś w wierszu, ale nie wiesz, która kolumna została zmieniona. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
- Domyślnie każda zmiana z kolumną w związku z tym wywołuje cztery zdarzenia. Pierwsza to <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.ColumnChanged> zdarzenia dla określonej kolumny, która jest zmieniany. Następnie są <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia. Jeśli wiersz wprowadzono wiele zmian, zdarzenia zostanie wygenerowany dla każdej zmiany.  
+  Domyślnie każda zmiana z kolumną w związku z tym wywołuje cztery zdarzenia. Pierwsza to <xref:System.Data.DataTable.ColumnChanging> i <xref:System.Data.DataTable.ColumnChanged> zdarzenia dla określonej kolumny, która jest zmieniany. Następnie są <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia. Jeśli wiersz wprowadzono wiele zmian, zdarzenia zostanie wygenerowany dla każdej zmiany.  
   
 > [!NOTE]
 >  Wiersz danych <xref:System.Data.DataRow.BeginEdit%2A> metoda wyłącza <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia po każdej zmianie poszczególnych kolumn. W takim przypadku zdarzenie nie zostanie wywołane do momentu <xref:System.Data.DataRow.EndEdit%2A> metoda została wywołana, gdy <xref:System.Data.DataTable.RowChanging> i <xref:System.Data.DataTable.RowChanged> zdarzenia są wywoływane tylko raz. Aby uzyskać więcej informacji, zobacz [wyłączanie ograniczeń podczas zapełniania zestawu danych](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
@@ -94,13 +94,13 @@ Sprawdzanie poprawności danych jest procesem potwierdzania, że wartości wprow
   
  Można sprawdzić poprawność danych po zmianie wartości w kolumnie danych odpowiedzi na <xref:System.Data.DataTable.ColumnChanging> zdarzeń. Gdy wywoływane, zdarzenie to przekazuje argument zdarzeń (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>) zawierający wartość, która jest proponowany dla bieżącej kolumny. Oparte na zawartości `e.ProposedValue`, możesz:  
   
--   Zaakceptuj wartość proponowaną przez czynności.  
+- Zaakceptuj wartość proponowaną przez czynności.  
   
--   Odrzuć proponowaną wartość przez ustawienie błędu kolumny (<xref:System.Data.DataRow.SetColumnError%2A>) z w ramach programu obsługi zdarzeń zmiany kolumny.  
+- Odrzuć proponowaną wartość przez ustawienie błędu kolumny (<xref:System.Data.DataRow.SetColumnError%2A>) z w ramach programu obsługi zdarzeń zmiany kolumny.  
   
--   Opcjonalnie użyć <xref:System.Windows.Forms.ErrorProvider> formantu, aby wyświetlić komunikat o błędzie dla użytkownika. Aby uzyskać więcej informacji, zobacz [ErrorProvider, składnik](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6).  
+- Opcjonalnie użyć <xref:System.Windows.Forms.ErrorProvider> formantu, aby wyświetlić komunikat o błędzie dla użytkownika. Aby uzyskać więcej informacji, zobacz [ErrorProvider, składnik](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6).  
   
- Można również wykonać sprawdzanie poprawności podczas <xref:System.Data.DataTable.RowChanging> zdarzeń. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+  Można również wykonać sprawdzanie poprawności podczas <xref:System.Data.DataTable.RowChanging> zdarzeń. Aby uzyskać więcej informacji, zobacz [porady: Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
 ## <a name="validate-data-during-row-changes"></a>Sprawdzanie poprawności danych podczas przeprowadzania zmian w wierszach  
  Można napisać kod, aby sprawdzić, czy każda kolumny, której chcesz sprawdzić zawiera dane, które spełniają wymagania aplikacji. To zrobić, ustawiając kolumny, aby wskazać, że zawiera błąd, jeżeli proponowana wartość jest nieakceptowana. W następujących przykładach ustawiona jest błąd kolumny gdy `Quantity` kolumna jest mniejsza lub równa 0. Programy obsługi zdarzeń zmiany wiersza powinien przypominać poniższe przykłady.  

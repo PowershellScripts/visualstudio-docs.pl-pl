@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f717a61e79e9f91f9f79a32d1da5020b0084516
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d8d9c479c1dac638a63ce45d114c4a66e0a213d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908427"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
-Wywołuje funkcję i zwraca wartość wynikową jako obiekt.  
+Wywołuje funkcję i zwraca wartość wynikowa jako obiekt.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,22 +47,22 @@ int Evaluate(
   
 #### <a name="parameters"></a>Parametry  
  `ppParams`  
- [in] Tablica [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekty reprezentujące parametry wejściowe. Każdy z tych parametrów został utworzony za pomocą `Create` metod w [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfejsu.  
+ [in] Tablica [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekty reprezentujące parametrów wejściowych. Każdy z tych parametrów został utworzony przy użyciu jednego z `Create` metody [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfejsu.  
   
  `dwParams`  
  [in] Liczba parametrów w `ppParams` tablicy.  
   
  `dwTimeout`  
- [in] Określa maksymalny czas (w milisekundach) oczekiwania przed powrotem z tej metody. Użyj `INFINITE` będzie czekać w nieskończoność.  
+ [in] Określa maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.  
   
  `ppResult`  
  [out] Zwraca [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) reprezentujący wartość funkcji jako obiekt.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda konfiguruje i wykonuje wywołanie funkcji reprezentowany przez [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) obiektu.  
+ Ta metoda konfiguruje i wykonuje wywołanie funkcji, reprezentowane przez [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) obiektu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

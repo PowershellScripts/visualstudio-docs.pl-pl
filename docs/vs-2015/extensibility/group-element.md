@@ -16,12 +16,12 @@ ms.assetid: 69faee18-cbf4-470a-b952-c1919c583df8
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6821dbce6a492f5f72e7f319f7a88763636f369f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 41cf6174fa4bc7816135056a1f9adb205ff57974
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947906"
 ---
 # <a name="group-element"></a>Group, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,8 +43,8 @@ Definiuje grupy poleceń pakietu VSPackage.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagane. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|  
-|identyfikator|Wymagane. Identyfikator GUID/ID identyfikator polecenia.|  
+|Identyfikator GUID|Wymagana. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|  
+|identyfikator|Wymagana. Identyfikator GUID/ID identyfikator polecenia.|  
 |priorytet|Opcjonalna. Wartość liczbowa określająca priorytet.|  
 |Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   

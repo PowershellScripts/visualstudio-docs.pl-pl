@@ -23,12 +23,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3ffd5a4d341b8a194dee9f6d8600a75999df38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248537"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893705"
 ---
 # <a name="creating-solutions-and-projects"></a>Tworzenie rozwiązań i projektów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,15 +74,15 @@ Projekty są kontenery logiczne dla wszystko, co jest potrzebne do budowania apl
   
 #### <a name="to-create-an-empty-solution"></a>Aby utworzyć puste rozwiązanie  
   
-1.  Na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **nowy projekt**.  
+1. Na **pliku** menu, kliknij przycisk **New** a następnie kliknij przycisk **nowy projekt**.  
   
-2.  W okienku po lewej stronie wybierz **zainstalowane**, wybierz opcję **inne typy projektów**, a następnie wybierz pozycję **Visual Studio Solutions** z rozwiniętej listy.  
+2. W okienku po lewej stronie wybierz **zainstalowane**, wybierz opcję **inne typy projektów**, a następnie wybierz pozycję **Visual Studio Solutions** z rozwiniętej listy.  
   
-3.  W środkowym okienku wybierz **puste rozwiązanie**.  
+3. W środkowym okienku wybierz **puste rozwiązanie**.  
   
-4.  Ustaw **nazwa** i **lokalizacji** wartości dla rozwiązania, następnie kliknij przycisk **OK**.  
+4. Ustaw **nazwa** i **lokalizacji** wartości dla rozwiązania, następnie kliknij przycisk **OK**.  
   
- Po utworzeniu puste rozwiązanie, nowe lub istniejące projekty lub elementy można dodać do niego, klikając **Dodaj nowy element** lub **Dodaj istniejący element** na **projektu** menu.  
+   Po utworzeniu puste rozwiązanie, nowe lub istniejące projekty lub elementy można dodać do niego, klikając **Dodaj nowy element** lub **Dodaj istniejący element** na **projektu** menu.  
   
 ### <a name="deleting-solutions"></a>Usuwanie rozwiązania  
  Rozwiązanie można usunąć trwale, ale nie przy użyciu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Zanim usuniesz to rozwiązanie, Przenieś wszystkie projekty, które możesz chcieć użyć ponownie w innym rozwiązaniem. Następnie użyj Eksploratora plików, aby usunąć katalog zawierający pliki rozwiązania .sln i .suo.  

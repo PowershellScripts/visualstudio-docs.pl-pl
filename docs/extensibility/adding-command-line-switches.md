@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb6b739d91bfe5931d1af853ec01e145a0cb2c85
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901050"
 ---
 # <a name="add-command-line-switches"></a>Dodawanie przełączników wiersza polecenia
 Możesz dodać przełączniki wiersza polecenia, które są stosowane do Twojego pakietu VSPackage podczas *devenv.exe* jest wykonywany. Użyj <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> do deklarowania nazwę przełącznika i jego właściwości. W tym przykładzie przełącznika MySwitch zostanie dodany do podklasy pakietu VSPackage o nazwie **AddCommandSwitchPackage** bez argumentów i za pomocą pakietu VSPackage ładowane automatycznie.  
@@ -36,7 +36,7 @@ Możesz dodać przełączniki wiersza polecenia, które są stosowane do Twojego
 |-|-|-|-|
 | Parametr | Opis|
 | Argumenty | Liczba argumentów dla przełącznika. Może być "*", lub Podaj listę argumentów. |
-| DemandLoad |  Ładowanie pakietu VSPackage automatycznie, jeśli jest ono ustawione na 1, w przeciwnym razie jest ustawiona na 0. |  
+| DemandLoad | Ładowanie pakietu VSPackage automatycznie, jeśli jest ono ustawione na 1, w przeciwnym razie jest ustawiona na 0. |  
 | HelpString — | Pomoc ciąg lub identyfikator zasobu ciągu do wyświetlania o **devenv /?**. |
 | Nazwa | Przełącznik. |
 | PackageGuid | Identyfikator GUID pakietu. |  
@@ -54,11 +54,11 @@ Możesz dodać przełączniki wiersza polecenia, które są stosowane do Twojego
 ## <a name="retrieve-command-line-switches"></a>Pobieranie przełączniki wiersza polecenia  
  Po załadowaniu pakietu można pobrać przełączniki wiersza polecenia, wykonując następujące kroki.  
   
-1.  W swojej VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementacji, wywołanie `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> można pobrać <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interfejsu.  
+1. W swojej VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementacji, wywołanie `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> można pobrać <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interfejsu.  
   
-2.  Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> można pobrać przełączniki wiersza polecenia, które użytkownik wprowadził.  
+2. Wywołaj <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> można pobrać przełączniki wiersza polecenia, które użytkownik wprowadził.  
   
- Poniższy kod przedstawia sposób dowiedzieć się, czy przełącznik wiersza polecenia MySwitch została wprowadzona przez użytkownika:  
+   Poniższy kod przedstawia sposób dowiedzieć się, czy przełącznik wiersza polecenia MySwitch została wprowadzona przez użytkownika:  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  

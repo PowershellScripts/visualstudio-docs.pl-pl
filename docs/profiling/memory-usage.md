@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6924ff846da2ca7fb3ad7591f6d1c8e07f89b0d
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: eeacfb15b02c19ea4a166fbc8511aab644d41ea5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624225"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861413"
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Użycie pamięci profilu w programie Visual Studio
 Podczas debugowania za pomocą zintegrowane z debugerem umożliwia znajdowanie przecieków pamięci i pamięci nieefektywne **użycie pamięci** narzędzia diagnostycznego. Narzędzie umożliwia wykorzystanie pamięci, zapoznasz się z co najmniej jeden *migawek* sterty pamięci zarządzanego i natywnego ułatwi zrozumienie wpływu użycia pamięci typów obiektów. Można zbierać migawki .NET, Tryb natywny lub mieszany (.NET i natywny) aplikacji.  
@@ -101,14 +101,14 @@ Po wykonaniu wiele migawek komórek tabeli podsumowania obejmują zmianę warto�
 
 Aby Analizowanie użycia pamięci, kliknij jedno z łączy, które otwiera szczegółowy raport użycia pamięci:  
 
--   Aby wyświetlić szczegóły różnicę między bieżącą migawką i poprzedniej migawki, wybierz łącze Zmień strzałkę po lewej stronie (![zwiększyć użycie pamięci](../profiling/media/prof-tour-mem-usage-up-arrow.png "zwiększyć użycie pamięci")). Czerwona strzałka wskazuje wzrost użycia pamięci i zieloną strzałkę, aby wskazuje zmniejszenie.
+- Aby wyświetlić szczegóły różnicę między bieżącą migawką i poprzedniej migawki, wybierz łącze Zmień strzałkę po lewej stronie (![zwiększyć użycie pamięci](../profiling/media/prof-tour-mem-usage-up-arrow.png "zwiększyć użycie pamięci")). Czerwona strzałka wskazuje wzrost użycia pamięci i zieloną strzałkę, aby wskazuje zmniejszenie.
 
-    > [!TIP]
-    >  Aby zidentyfikować problemy z pamięcią szybciej, raporty różnice są sortowane według typów obiektów, które zwiększył się wykorzystać w ogólny numer (kliknij łącze Zmień w **obiekty (różnica)** kolumny) lub większa wykorzystać w ogólny rozmiar sterty (kliknij Zmień łącze w **Rozmiar sterty (różnica)** kolumny).
+  > [!TIP]
+  >  Aby zidentyfikować problemy z pamięcią szybciej, raporty różnice są sortowane według typów obiektów, które zwiększył się wykorzystać w ogólny numer (kliknij łącze Zmień w **obiekty (różnica)** kolumny) lub większa wykorzystać w ogólny rozmiar sterty (kliknij Zmień łącze w **Rozmiar sterty (różnica)** kolumny).
 
--   Aby wyświetlić szczegóły wybranej migawki, kliknij łącze nie został zmieniony. 
+- Aby wyświetlić szczegóły wybranej migawki, kliknij łącze nie został zmieniony. 
   
- Raport jest wyświetlany w osobnym oknie.   
+  Raport jest wyświetlany w osobnym oknie.   
   
 ### <a name="managed-types-reports"></a>Zarządzane typy raportów  
  Wybierz link bieżącego **obiekty (różnica)** lub **alokacje (różnica)** komórka w tabeli podsumowania użycia pamięci.  
@@ -148,23 +148,23 @@ Aby Analizowanie użycia pamięci, kliknij jedno z łączy, które otwiera szcze
   
 ### <a name="change-diff-reports"></a>Zmiany raportów (różnica)  
   
--   Wybierz łącze zmian w komórce tabeli podsumowania **użycie pamięci** karcie **narzędzia diagnostyczne** okna.  
+- Wybierz łącze zmian w komórce tabeli podsumowania **użycie pamięci** karcie **narzędzia diagnostyczne** okna.  
   
-     ![Kliknij przycisk Zmień &#40;dif&#41;raportu f](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+   ![Kliknij przycisk Zmień &#40;dif&#41;raportu f](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
--   Wybierz migawkę w **Porównaj z** raport zarządzane lub natywne listy.  
+- Wybierz migawkę w **Porównaj z** raport zarządzane lub natywne listy.  
   
-     ![Wybierz migawkę z porównania na liście](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
+   ![Wybierz migawkę z porównania na liście](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
- Raport zmiana dodaje kolumn (oznaczone **(różnica)**) do podstawowej raport, który wyświetlenie różnicy między wartością podstawowy, migawki i migawki porównania. Poniżej przedstawiono, jak może wyglądać raport natywnego typu widoku różnic:  
+  Raport zmiana dodaje kolumn (oznaczone **(różnica)**) do podstawowej raport, który wyświetlenie różnicy między wartością podstawowy, migawki i migawki porównania. Poniżej przedstawiono, jak może wyglądać raport natywnego typu widoku różnic:  
   
- ![Typy natywne Diff Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+  ![Typy natywne Diff Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Blogi i filmy wideo  
 
-|         |         |
+| | |
 |---------|---------|
-|  ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo")  |    [Obejrzyj film wideo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) na temat korzystania z narzędzia diagnostyczne, które pokazuje, jak i analizowanie użycia pamięci i użycie procesora CPU w programie Visual Studio 2017. |
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Obejrzyj film wideo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) na temat korzystania z narzędzia diagnostyczne, które pokazuje, jak i analizowanie użycia pamięci i użycie procesora CPU w programie Visual Studio 2017. |
 
  [Analizowanie użycia Procesora i pamięci podczas debugowania](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   

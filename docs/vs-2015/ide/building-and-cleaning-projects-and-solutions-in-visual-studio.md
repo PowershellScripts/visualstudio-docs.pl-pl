@@ -28,12 +28,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1691c8cd10e74f5d139fefa5b57471c86f9e6e6c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bda1af9a47d512d2d35f509aee96cc71964a47ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193560"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912035"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Kompilowanie oraz oczyszczanie projektów i rozwiązań w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,33 +70,33 @@ Korzystając z procedur opisanych w tym temacie, można utworzyć, odbudować lu
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Aby skompilować tylko projekt startowy i jego zależności  
   
-1.  Na pasku menu wybierz **narzędzia**, **opcje**.  
+1. Na pasku menu wybierz **narzędzia**, **opcje**.  
   
-2.  W **opcje** okna dialogowego rozwiń **projekty i rozwiązania** węzła, a następnie wybierz **kompilowanie i uruchamianie** strony.  
+2. W **opcje** okna dialogowego rozwiń **projekty i rozwiązania** węzła, a następnie wybierz **kompilowanie i uruchamianie** strony.  
   
-     **Kompiluj i uruchom, projekty i rozwiązania, opcje** zostanie otwarte okno dialogowe.  
+    **Kompiluj i uruchom, projekty i rozwiązania, opcje** zostanie otwarte okno dialogowe.  
   
-3.  Wybierz **tylko tworzyć projekty startowe i zależności przy uruchomieniu** pole wyboru.  
+3. Wybierz **tylko tworzyć projekty startowe i zależności przy uruchomieniu** pole wyboru.  
   
-     Gdy to pole wyboru jest zaznaczone, tylko bieżący projekt startowy i jego zależności są tworzone podczas wykonywania jednej z następujących czynności:  
+    Gdy to pole wyboru jest zaznaczone, tylko bieżący projekt startowy i jego zależności są tworzone podczas wykonywania jednej z następujących czynności:  
   
-    -   Na pasku menu wybierz **debugowania**, **Start** (F5).  
+   - Na pasku menu wybierz **debugowania**, **Start** (F5).  
   
-    -   Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie** (CTRL + SHIFT + B).  
+   - Na pasku menu wybierz **kompilacji**, **Kompiluj rozwiązanie** (CTRL + SHIFT + B).  
   
      Gdy to pole wyboru jest wyczyszczone, wszystkie projekty, ich zależności i pliki rozwiązania są tworzone po uruchomieniu dowolnego z powyższych poleceń. Domyślnie to pole wyboru jest wyczyszczone.  
   
 ### <a name="to-build-only-the-selected-visual-c-project"></a>Można tworzyć tylko dla wybranego projektu Visual C++  
   
-1.  Wybierz [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projektu, a następnie na pasku menu wybierz **kompilacji**, **projektu tylko**i jeden z następujących poleceń:  
+1. Wybierz [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projektu, a następnie na pasku menu wybierz **kompilacji**, **projektu tylko**i jeden z następujących poleceń:  
   
-    -   **Tylko kompilacja** *ProjectName*  
+   - **Tylko kompilacja** *ProjectName*  
   
-    -   **Ponownie skompiluj tylko** *ProjectName*  
+   - **Ponownie skompiluj tylko** *ProjectName*  
   
-    -   **Czyszczenie tylko** *ProjectName*  
+   - **Czyszczenie tylko** *ProjectName*  
   
-    -   **Połącz tylko** *ProjectName*  
+   - **Połącz tylko** *ProjectName*  
   
      Polecenia te dotyczą tylko programu [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] projektu, która została wybrana, bez tworzenia, ponownie skompilować, czyszczenia i łączenie wszystkie zależności projektu lub rozwiązania pliki. W zależności od używanej wersji programu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], **projektu tylko** podmenu może zawierać więcej poleceń.  
   

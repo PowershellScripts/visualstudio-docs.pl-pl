@@ -15,33 +15,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 697a060399fa17321f30ccb92ad3617e99ca106f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a5e3038f873895e38cf162e67316bc08f2fc007b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849376"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005: Częste kolekcje GC2
+
 |||  
 |-|-|  
-|RuleId|DA0005|  
+|Identyfikator reguły|DA0005|  
 |Kategoria|Sposób użycia programu .NET framework|  
-|Metoda profilowania|Pamięci platformy .NET|  
-|Komunikat|Wiele obiektów podlega odzyskiwaniu w generacji 2 wyrzucanie elementów bezużytecznych.|  
+|Metoda profilowania|Pamięć .NET|  
+|Komunikat|Wiele obiektów są zbierane w generacji 2 wyrzucania elementów bezużytecznych.|  
 |Typ komunikatu|Ostrzeżenie|  
-  
+
 ## <a name="cause"></a>Przyczyna  
- Duża liczba obiektów pamięci .NET jest odzyskane w generacji 2 wyrzucanie elementów bezużytecznych.  
-  
+ Dużą liczbę obiektów pamięci platformy .NET są są odzyskiwane w generacji 2 wyrzucania elementów bezużytecznych.  
+
 ## <a name="rule-description"></a>Opis reguły  
- Program Microsoft .NET środowisko uruchomieniowe języka wspólnego (CLR) zapewnia mechanizm zarządzania automatyczne pamięci używane przez moduł Garbage Collector do odzyskać pamięci z obiektów, które nie jest już używane przez aplikację. Moduł zbierający elementy bezużyteczne to zorientowane na generowanie oparte na założeniu, że wiele są krótkim okresie. Zmienne lokalne, na przykład należy krótkim okresie. Nowo utworzone obiekty Uruchom podczas generowania 0 (gen 0), a następnie postępu na pokolenie 1 po ich przetrwać wyrzucanie elementów bezużytecznych Uruchom, a na koniec przejście do generacji 2 Jeśli aplikacja nadal używa ich.  
-  
- Często i zazwyczaj bardzo wydajnie, są zebrane obiektów generacji 0. Obiekty w generacji 1 są zbierane rzadziej i mniej wydajne. Na koniec długotrwałe obiektów podczas generowania 2 powinny być gromadzone nawet rzadziej. Kolekcja generacji 2, czyli pełnego wyrzucania elementów bezużytecznych, uruchom również jest najbardziej kosztowna operacja.  
-  
- Ta zasada uruchamiane w przypadku proporcjonalnie za dużo generacji 2 wyrzucania wystąpiły. Jeśli zbyt wiele obiektów względnie krótkim okresie przetrwać kolekcji generacji 1, ale będą w stanie mają być zbierane w kolekcji pełne generacji 2, kosztów zarządzania pamięci można łatwo stają się nadmierne. Aby uzyskać więcej informacji, zobacz [kryzysami Średni czas życia](http://go.microsoft.com/fwlink/?LinkId=177835) post na informacje o wydajności Rico Mariani technologii w witrynie MSDN.  
-  
+ Microsoft .NET środowisko uruchomieniowe języka wspólnego (CLR) zapewnia mechanizm zarządzania pamięcią automatyczną, który używa modułu odśmiecania pamięci, aby odzyskać pamięci z obiektów, które aplikacja już używa. Moduł odśmiecania pamięci jest zorientowana na generowanie na podstawie założenia, że wiele alokacje są krótkotrwałe. Na przykład, zmienne lokalne, powinny być krótkotrwały. Nowo utworzonych obiektach Uruchom w generacji 0 (gen 0), a następnie przejść do generacji 1, po ich przetrwać wyrzucania elementów bezużytecznych, uruchom, a na koniec przejścia do generacji 2, jeśli aplikacja nadal korzysta z nich.  
+
+ Obiekty w generacji 0 są zbierane, często i zazwyczaj bardzo wydajny sposób. Obiekty w generacji 1 są zbierane rzadziej i mniej skuteczne. Na koniec długotrwałe obiekty w generacji 2 powinny być zbierane nawet rzadziej. Kolekcji generacji 2, która znajduje się pełne wyrzucanie elementów bezużytecznych, uruchamianie, jest również najbardziej kosztowną operacją.  
+
+ Ta reguła jest uruchamiana podczas proporcjonalnie za dużo generacji 2 wyrzucania elementów bezużytecznych miały miejsce. Jeśli zbyt wiele obiektów stosunkowo krótkotrwałe przetrwać bezużytecznych generacji 1, ale będą w stanie mają być zbierane w generacji 2 pełnego, koszty zarządzania pamięci mogą łatwo stać się nadmierne. Aby uzyskać więcej informacji, zobacz [kryzysu środku życia](http://go.microsoft.com/fwlink/?LinkId=177835) publikować informacje o technologii Rico Mariani wydajności w witrynie MSDN w sieci Web.  
+
 ## <a name="how-to-investigate-a-warning"></a>Jak badać ostrzeżenie  
- Przegląd [widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md) raporty, aby poznać wzorce przydzielania pamięci aplikacji. Użyj [widok okresu istnienia obiektu](../profiling/object-lifetime-view.md) umożliwia określenie, które obiekty są zachowane w generacji 2, a następnie odzyskać z niego danych tego programu. Użyj [Widok alokacji](../profiling/dotnet-memory-allocations-view.md) można ustalić ścieżki wykonywania, które spowodowały tych przydziałów.  
-  
- Aby dowiedzieć się, jak poprawić wydajność kolekcji pamięci, zobacz [podstawy modułu zbierającego elementy bezużyteczne i wskazówki dotyczące wydajności](http://go.microsoft.com/fwlink/?LinkId=148226) w witrynie sieci Web firmy Microsoft. Uzyskać informacji o obciążenie automatyczne odzyskiwanie pamięci, zobacz [niepokrytego sterty obiektu dużych](http://go.microsoft.com/fwlink/?LinkId=177836).
+ Przegląd [widoki danych pamięci .NET](../profiling/dotnet-memory-data-views.md) raportów, aby poznać wzorce przydzielania pamięci w aplikacji. Użyj [widok okresu istnienia obiektu](../profiling/object-lifetime-view.md) umożliwia określenie, które uszkodziło danych obiekty są pozostałych do generacji 2, a następnie odzyskać z tego miejsca. Użyj [Widok alokacji](../profiling/dotnet-memory-allocations-view.md) można ustalić ścieżki wykonywania, które spowodowały tych przydziałów.  
+
+ Aby dowiedzieć się, jak poprawić wydajność odzyskiwania pamięci zbierania danych, zobacz [podstawy modułu odśmiecania pamięci i wskazówki dotyczące wydajności](http://go.microsoft.com/fwlink/?LinkId=148226) w witrynie sieci Web firmy Microsoft. Aby uzyskać informacje na temat obciążenie automatyczne wyrzucanie elementów bezużytecznych, zobacz [duży obiekt sterty Niepokryty](http://go.microsoft.com/fwlink/?LinkId=177836).

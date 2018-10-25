@@ -12,26 +12,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f0e83f674378ca7f9297aedbeb580b4f2cad89
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de41c8351c7767cbfe0882cffb48b145e341f923
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835868"
 ---
-# <a name="while-activity-designer"></a>Podczas gdy Projektant działań
+# <a name="while-activity-designer"></a>While, projektant działań
 
-<xref:System.Activities.Statements.While> Działania wykonuje działania zawarte w jego <xref:System.Activities.Statements.While.Body%2A> podczas określonego <xref:System.Activities.Statements.While.Condition%2A> daje w wyniku **true**. Nigdy nie może wykonać zawarte działanie. Jeśli chcesz, aby zawarte działanie ma być wykonywana co najmniej raz, użyj <xref:System.Activities.Statements.DoWhile> działania zamiast tego.
+<xref:System.Activities.Statements.While> Działanie wykonuje działania zawarte w jego <xref:System.Activities.Statements.While.Body%2A> podczas określonego <xref:System.Activities.Statements.While.Condition%2A> daje w wyniku **true**. Zawarte działanie nigdy nie może zostać wykonany. Jeśli chcesz, aby zawarte działanie do wykonania, co najmniej raz, użyj <xref:System.Activities.Statements.DoWhile> działania zamiast tego.
 
-## <a name="while-properties-in-workflow-designer"></a>Podczas właściwości w Projektancie przepływów pracy
+## <a name="while-properties-in-workflow-designer"></a>Podczas gdy właściwości w Projektancie przepływu pracy
 
 W poniższej tabeli przedstawiono najbardziej przydatne <xref:System.Activities.Statements.While> właściwości działania i w tym artykule opisano, jak są używane w projektancie.
 
 |Nazwa właściwości|Wymagane|Użycie|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę <xref:System.Activities.Statements.While> Projektant działań w nagłówku. Wartość domyślna to podczas. Wartość można edytować w **właściwości** okna lub bezpośrednio w nagłówku projektanta działania.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest ścisłym wymogiem jest najlepszym rozwiązaniem jej użyć.|
+|-|--------------|-|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Określa przyjazną nazwę <xref:System.Activities.Statements.While> projektanta działań w nagłówku. Wartość domyślna to a. Wartość może być edytowana w **właściwości** okna lub bezpośrednio w nagłówku projektanta działań.<br /><br /> Mimo że <xref:System.Activities.Activity.DisplayName%2A> nie jest bezwzględnie konieczne jest najlepszym rozwiązaniem, aby użyć jednego.|
 |<xref:System.Activities.Statements.While.Body%2A>|False|Zawiera działanie do wykonania podczas <xref:System.Activities.Statements.While.Condition%2A> daje w wyniku **true**.|
-|<xref:System.Activities.Statements.While.Condition%2A>|True|Zawiera wyrażenie języka Visual Basic, który jest oszacowywane, aby określić czy działania w <xref:System.Activities.Statements.While.Body%2A> jest wykonywana.|
+|<xref:System.Activities.Statements.While.Condition%2A>|True|Zawiera wyrażenie języka Visual Basic, które jest obliczane, aby określić, czy działania w <xref:System.Activities.Statements.While.Body%2A> ma zostać wykonana.|
 
 ## <a name="see-also"></a>Zobacz także
 

@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0b65e204f9af28eea59d45cdf8fd591bf7e2dabd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8bca7452b94aa8e65386c3d5ef77e9f36ab98df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828705"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analizowanie jakości kodu w języku Visual Basic i C# w aplikacjach Store przy użyciu programu Visual Studio statycznej analizy kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,17 +49,17 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
 ##  <a name="BKMK_Run"></a> Trwa uruchamianie analizy kodu  
  Aby uruchomić analizę kodu w rozwiązaniu programu Visual Studio:  
   
--   Na **kompilacji** menu, wybierz **Uruchom analizę kodu dla rozwiązania**.  
+- Na **kompilacji** menu, wybierz **Uruchom analizę kodu dla rozwiązania**.  
   
- Do automatycznego uruchamiania analizy kodu za każdym razem, tworzysz projekt:  
+  Do automatycznego uruchamiania analizy kodu za każdym razem, tworzysz projekt:  
   
-1.  Kliknij prawym przyciskiem myszy nazwę projektu w Eksploratorze rozwiązań, a następnie wybierz **właściwości**.  
+1. Kliknij prawym przyciskiem myszy nazwę projektu w Eksploratorze rozwiązań, a następnie wybierz **właściwości**.  
   
-2.  Na stronie właściwości projektu, wybierz opcję **analizy kodu** , a następnie wybierz **Włącz analizę kodu podczas kompilacji (definiuje stałą analizy)**.  
+2. Na stronie właściwości projektu, wybierz opcję **analizy kodu** , a następnie wybierz **Włącz analizę kodu podczas kompilacji (definiuje stałą analizy)**.  
   
- Rozwiązania jest kompilowana i uruchomieniu analizy kodu. Wyniki są wyświetlane w oknie analizy kodu.  
+   Rozwiązania jest kompilowana i uruchomieniu analizy kodu. Wyniki są wyświetlane w oknie analizy kodu.  
   
- ![Okno analizy kodu](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
+   ![Okno analizy kodu](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
   
 ##  <a name="BKMK_Analyze"></a> Analizowanie i rozwiązywanie ostrzeżenia analizy kodu  
  Aby analizować szczególne ostrzeżenie, kliknij tytuł ostrzeżenie w oknie analizy kodu. Ostrzeżenie rozwija, aby wyświetlić szczegółowe informacje o problemie.  
@@ -80,15 +80,15 @@ Ma to zastosowanie, Windows i Windows Phone] (.. /Image/windows_and_phone_conten
   
  Aby pominąć Ostrzeżenie:  
   
-1.  Jeśli nie są wyświetlane szczegółowe informacje, kliknij tytuł ostrzeżenie, aby ją rozwinąć.  
+1. Jeśli nie są wyświetlane szczegółowe informacje, kliknij tytuł ostrzeżenie, aby ją rozwinąć.  
   
-2.  Wybierz **akcje** widocznego u dołu ostrzeżenia.  
+2. Wybierz **akcje** widocznego u dołu ostrzeżenia.  
   
-3.  Wskaż **Pomiń komunikat** , a następnie wybierz opcję **w źródłowej** lub **w pliku pominięć**.  
+3. Wskaż **Pomiń komunikat** , a następnie wybierz opcję **w źródłowej** lub **w pliku pominięć**.  
   
-    -   **W źródle** wstawia `SuppressMessage` atrybutu w pliku źródłowym powyżej metody, która wygenerowała ostrzeżenie. To sprawia, że pomijanie mogą szybciej odnajdywać.  
+   - **W źródle** wstawia `SuppressMessage` atrybutu w pliku źródłowym powyżej metody, która wygenerowała ostrzeżenie. To sprawia, że pomijanie mogą szybciej odnajdywać.  
   
-    -   **W pliku pominięć** dodaje `SuppressMessage` atrybutu **GlobalSuppressions.cs** pliku projektu. To może ułatwić zarządzanie pominięcia. Należy pamiętać, że `SuppressMessage` dodany atrybut **GlobalSuppression.cs** wspiera także metodę, która wygenerowała ostrzeżenie. Pomijaj ostrzeżenia globalnie.  
+   - **W pliku pominięć** dodaje `SuppressMessage` atrybutu **GlobalSuppressions.cs** pliku projektu. To może ułatwić zarządzanie pominięcia. Należy pamiętać, że `SuppressMessage` dodany atrybut **GlobalSuppression.cs** wspiera także metodę, która wygenerowała ostrzeżenie. Pomijaj ostrzeżenia globalnie.  
   
      Decyzji, czy ostrzeżenia w pliku źródłowym lub w pliku pominięć zależy od potrzeb i stylu kodowania.  
   

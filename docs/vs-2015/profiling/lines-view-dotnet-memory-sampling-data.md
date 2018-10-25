@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77a262edcbf55f7c1f14c36d35a8618f5b788dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: edc922b2d96776d38de1b55ab2226be0d2c10f85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815731"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Widok linii — dane próbkowania pamięci platformy .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ Widok linii dla platformy .NET dane alokacji pamięci profilowania, która używ
   
  Instrukcja jest identyfikowane przez następujące elementy:  
   
--   Plik źródłowy, który zawiera deklarację funkcji.  
+- Plik źródłowy, który zawiera deklarację funkcji.  
   
--   Funkcja, która zawiera instrukcję.  
+- Funkcja, która zawiera instrukcję.  
   
--   Wiersza źródłowego, w którym rozpoczyna się wykonywanie instrukcji.  
+- Wiersza źródłowego, w którym rozpoczyna się wykonywanie instrukcji.  
   
--   Znak w wierszu źródłowym, w którym rozpoczyna się wykonywanie instrukcji.  
+- Znak w wierszu źródłowym, w którym rozpoczyna się wykonywanie instrukcji.  
   
--   Wiersza źródłowego, w którym kończy się instrukcji.  
+- Wiersza źródłowego, w którym kończy się instrukcji.  
   
--   Znak w wierszu źródłowym, w którym kończy się instrukcji.  
+- Znak w wierszu źródłowym, w którym kończy się instrukcji.  
   
- Kolumna Nazwa wiersza zawiera wzorzec sortowalnej łączenia danych identyfikator.  
+  Kolumna Nazwa wiersza zawiera wzorzec sortowalnej łączenia danych identyfikator.  
   
- Zgodnie z definicją instrukcja wywołuje inne funkcje. W związku z tym są wyświetlane tylko wyłączne wartości.  
+  Zgodnie z definicją instrukcja wywołuje inne funkcje. W związku z tym są wyświetlane tylko wyłączne wartości.  
   
 |Kolumny|Opis|  
 |------------|-----------------|  

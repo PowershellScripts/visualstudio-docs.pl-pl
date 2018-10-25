@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 431fea97c0dcca0407f2b0627e6b2d9def774799
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fb5e63f8c33267d622271221271ba8e71bb6f205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179443"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862505"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Edytowanie wzorców obciążenia w celu modelu aktywności wirtualnych użytkowników
 
@@ -56,32 +56,32 @@ Wzorzec obciążenia jest składnikiem scenariusza. Scenariusze, wraz z ich wzor
 
  Krokowego wzorca obciążenia może służyć do uruchomienia testów obciążenia, dzięki czemu można zobaczyć, jak wydajność zmienia się wraz ze wzrostem obciążenia użytkownika to zwiększenie obciążenia na serwerze lub serwerach. Na przykład, aby zobaczyć, jak wykonać serwer lub serwery jako obciążenie użytkownikami wzrasta do 2000 użytkowników, może uruchomić 10-godzinny test obciążenia przy użyciu krokowego wzorca obciążenia, który ma następujące właściwości:
 
--   **Początkowa liczba użytkowników**: 100
+- **Początkowa liczba użytkowników**: 100
 
--   **Maksymalna liczba użytkowników**: 2000
+- **Maksymalna liczba użytkowników**: 2000
 
--   **Czas trwania kroku (w sekundach)**: 1800
+- **Czas trwania kroku (w sekundach)**: 1800
 
--   **Czas narastania (w sekundach)**: 20
+- **Czas narastania (w sekundach)**: 20
 
--   **Liczba użytkowników zwiększana podczas kroku**: 100
+- **Liczba użytkowników zwiększana podczas kroku**: 100
 
- Te ustawienia, uruchom test obciążenia w ciągu 30 minut (1800 sekund) po użytkownik ładuje 100, 200, 300, a także do 2000 użytkowników. **Czas do zwiększenia kroku** właściwość warto szczególnej uwagi, ponieważ jest tylko jeden z tych właściwości, która nie jest dostępna do wyboru w **nowego kreatora testu obciążenia**. Ta właściwość umożliwia zwiększenie od jednego kroku do następnego (na przykład od 100 do 200 użytkowników), nastąpi stopniowo, a nie od razu. W przykładzie obciążenia użytkownikami zwiększyłoby się ze 100 do 200 użytkowników w okresie 20 sekund (wzrost o 5 użytkowników co sekundę). Aby uzyskać więcej informacji, zobacz [porady: Określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
+  Te ustawienia, uruchom test obciążenia w ciągu 30 minut (1800 sekund) po użytkownik ładuje 100, 200, 300, a także do 2000 użytkowników. **Czas do zwiększenia kroku** właściwość warto szczególnej uwagi, ponieważ jest tylko jeden z tych właściwości, która nie jest dostępna do wyboru w **nowego kreatora testu obciążenia**. Ta właściwość umożliwia zwiększenie od jednego kroku do następnego (na przykład od 100 do 200 użytkowników), nastąpi stopniowo, a nie od razu. W przykładzie obciążenia użytkownikami zwiększyłoby się ze 100 do 200 użytkowników w okresie 20 sekund (wzrost o 5 użytkowników co sekundę). Aby uzyskać więcej informacji, zobacz [porady: Określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
 ### <a name="goal-based"></a>Opartego na celach
 
  Wzorca obciążenia opartego na celach przypomina krokowego wzorca, ale dopasowuje obciążenie użytkownikami, na podstawie progów licznika wydajności i dopasowania obciążenia okresowe użytkownika. Obciążenia opartego na celach są przydatne w wielu różnych celów:
 
--   Maksymalizacja dane wyjściowe z agentów: pomiar klucz ograniczanie metryki na agencie w celu zmaksymalizowania dane wyjściowe agentów. Typowo jest Procesora; Jednak może również być pamięci.
+- Maksymalizacja dane wyjściowe z agentów: pomiar klucz ograniczanie metryki na agencie w celu zmaksymalizowania dane wyjściowe agentów. Typowo jest Procesora; Jednak może również być pamięci.
 
--   Osiągnie pewien poziom zasobów docelowych, zwykle procesora CPU, na serwerze docelowym, następnie pomiaru przepływności na tym samym poziomie. Dzięki temu można wykonać porównania w celu uruchamiania przepływności, biorąc pod uwagę spójne poziom użycia zasobów na serwerze.
+- Osiągnie pewien poziom zasobów docelowych, zwykle procesora CPU, na serwerze docelowym, następnie pomiaru przepływności na tym samym poziomie. Dzięki temu można wykonać porównania w celu uruchamiania przepływności, biorąc pod uwagę spójne poziom użycia zasobów na serwerze.
 
--   Docieranie do docelowego poziomu przepływności, na serwerze.
+- Docieranie do docelowego poziomu przepływności, na serwerze.
 
- W poniższej tabeli przedstawiono przykład pokazuje opartego na celach wzorzec z następującymi ustawieniami właściwości:
+  W poniższej tabeli przedstawiono przykład pokazuje opartego na celach wzorzec z następującymi ustawieniami właściwości:
 
 |Grupa właściwości|Właściwość|Wartość|
-|--------------------|--------------|-----------|
+|-|--------------|-|
 |Licznik wydajności|Kategoria|Procesor|
 |Licznik wydajności|Komputer|ContosoServer1|
 |Licznik wydajności|Licznik|Czas procesora (%)|
@@ -109,7 +109,7 @@ Wzorzec obciążenia jest składnikiem scenariusza. Scenariusze, wraz z ich wzor
 ## <a name="tasks"></a>Zadania
 
 |Zadania|Skojarzone tematy|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Określanie wzorzec ładowania początkowego dla testu obciążeniowego:** podczas tworzenia testu obciążeniowego za pomocą **Kreatora nowego testu obciążeniowego**, wybierz wzorzec obciążenia.|-   [Zmień wzorzec obciążenia](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
 |**Edytowanie wzorzec obciążenia dla testu obciążeniowego:** po utworzeniu testu obciążenia, można edytować wzorca obciążenia w **edytora testu obciążenia**.|-   [Porady: Określanie właściwości czasu narastania kroku dla wzorca obciążenia krokowego](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 |**Określanie, czy użytkownicy wirtualni w obciążenia scenariusza testu powinien zawierać dane pamięci podręcznej sieci web:** można zmienić **procent nowych użytkowników** wpływają na sposób, w którym zasymulowano obciążenie sieci web, buforowanie, właściwość może być wykonywane przez przeglądarkę sieci web dla użytkowników wirtualnych.|-   [Porady: Określ wartość procentową użytkowników wirtualnych korzystających z danych w pamięci podręcznej sieci web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|

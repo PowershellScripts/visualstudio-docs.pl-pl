@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4ad3742befbf564c7924c520fb560e69037004c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4251e5aac5042b610ed32f95a13ba5d6ffb9d4eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848492"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Porady: wyłączanie procesu hostingu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Wywołania niektórych interfejsów API mogą mieć wpływ na włączenie proces
   
 ### <a name="to-disable-the-hosting-process"></a>Aby wyłączyć procesu hostingu  
   
-1.  Otwórz projekt wykonywalny w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Projekty, które nie tworzą pliki wykonywalne (na przykład klasy biblioteki lub usługi projektów) nie ma takiej możliwości.  
+1. Otwórz projekt wykonywalny w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Projekty, które nie tworzą pliki wykonywalne (na przykład klasy biblioteki lub usługi projektów) nie ma takiej możliwości.  
   
-2.  Na **projektu** menu, kliknij przycisk **właściwości**.  
+2. Na **projektu** menu, kliknij przycisk **właściwości**.  
   
-3.  Kliknij przycisk **debugowania** kartę.  
+3. Kliknij przycisk **debugowania** kartę.  
   
-4.  Wyczyść **włączyć procesu hostingu Visual Studio** pole wyboru.  
+4. Wyczyść **włączyć procesu hostingu Visual Studio** pole wyboru.  
   
- Po wyłączeniu procesu hostingu kilka funkcji debugowania są niedostępne lub wystąpić obniżenie wydajności. Aby uzyskać więcej informacji, zobacz [debugowanie i proces hostingu](../debugger/debugging-and-the-hosting-process.md).  
+   Po wyłączeniu procesu hostingu kilka funkcji debugowania są niedostępne lub wystąpić obniżenie wydajności. Aby uzyskać więcej informacji, zobacz [debugowanie i proces hostingu](../debugger/debugging-and-the-hosting-process.md).  
   
- Ogólnie rzecz biorąc, gdy proces hostingu jest wyłączony:  
+   Ogólnie rzecz biorąc, gdy proces hostingu jest wyłączony:  
   
 -   Czas potrzebny, aby rozpocząć debugowanie [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] zwiększa aplikacji.  
   

@@ -17,23 +17,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 192b78df4f0d1f579fb9a08c913c84e5a1e2fc71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 34013c0b896f47e919a105680d18812aaba60dd0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943296"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906991"
 ---
 # <a name="neutral-resources-languages-for-localization"></a>Neutralny język zasobów do lokalizacji
 
-<xref:System.Resources.NeutralResourcesLanguageAttribute> Klasy określa kulturę zasobów zawarte w zestawie głównym. Ten atrybut służy jako zwiększenie wydajności, dzięki czemu <xref:System.Resources.ResourceManager> obiektu nie wyszukuje zasoby, które znajdują się w zestawie głównym.
+<xref:System.Resources.NeutralResourcesLanguageAttribute> Klasa określa kulturę uwzględnione w głównym zestawie zasoby. Ten atrybut jest używany jako zwiększeniem wydajności, dzięki czemu <xref:System.Resources.ResourceManager> obiektu nie Szukaj zasobów, które znajdują się w głównym zestawie.
 
- Poniższy kod przedstawia sposób ustawić język neutralne zasoby. Kod można umieścić w skrypcie kompilacji lub plik AssemblyInfo.vb lub AssemblyInfo.cs.
+ Poniższy kod przedstawia sposób ustawiania języka neutralne zasoby. Kod można umieścić w skrypcie kompilacji lub w pliku AssemblyInfo.vb lub AssemblyInfo.cs.
 
 ```vb
 ' Set neutral resources language for assembly.
 <Assembly: NeutralResourcesLanguageAttribute("en")>
-
 ```
 
 ```csharp

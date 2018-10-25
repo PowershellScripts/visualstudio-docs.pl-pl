@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 949bc7b8722e11be0a69800f890b509399169688
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5aa1713aba2def384a9dd8290d6ae6afcee6ba64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107010"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913238"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 Pobiera informacje o atrybutach jako obiekt blob bajtów.  
@@ -43,18 +43,18 @@ int GetAttributeBytes(
   
 #### <a name="parameters"></a>Parametry  
  `ppBlob`  
- [w, out] Tablica jest wypełniane bajtów atrybutu.  
+ [out w] Tablica, która jest wypełniane bajtów atrybutu.  
   
  `pdwLen`  
- [w, out] Określa maksymalną liczbę bajtów do zwrócenia w `ppBlob` tablicy i zwraca liczbę bajtów zapisana do tablicy.  
+ [out w] Określa maksymalną liczbę bajtów do zwrócenia w `ppBlob` tablicy i zwraca liczbę bajtów rzeczywiście zapisanych na tablicy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ustaw `ppBlob` parametr ma wartość null, aby zwrócić liczbę atrybutów liczby dostępnych bajtów. Następnie przydzielić tablicy i przekaż tablicy w przypadku `ppBlob` parametru.  
+ Ustaw `ppBlob` parametr ma wartość null, aby zwrócić liczbę atrybutów dostępnych bajtów. Następnie przydzielić tablicy i przekażesz ten tablica w `ppBlob` parametru.  
   
- Bajty atrybutu reprezentują nieprzetworzone dane atrybutu niestandardowego.  
+ Bajty atrybut reprezentują dane pierwotne atrybutu niestandardowego.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

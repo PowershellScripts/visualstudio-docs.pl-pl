@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7801cb937f2a94df92bf8ab3052e4e0e2f734d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed11edadca2f5e5e521eda824ece5ab735814125
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277449"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912178"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Porady: wyszukiwanie wątku w widoku wątków
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,24 +30,24 @@ Możesz wyszukać określonego wątku w widoku wątków, za pomocą ciągu Ident
   
 ### <a name="to-search-for-a-thread-in-threads-view"></a>Wyszukiwanie wątku w widoku wątków  
   
-1.  Rozmieść aplikacji dla systemu windows, więc tego programu Spy ++ i aktywne [Widok wątków](../debugger/threads-view.md) okna są widoczne.  
+1. Rozmieść aplikacji dla systemu windows, więc tego programu Spy ++ i aktywne [Widok wątków](../debugger/threads-view.md) okna są widoczne.  
   
-2.  Z **wyszukiwania** menu, wybierz **Znajdź wątek**.  
+2. Z **wyszukiwania** menu, wybierz **Znajdź wątek**.  
   
-     [Okno dialogowe Wyszukiwanie wątków](../debugger/thread-search-dialog-box.md) zostanie otwarty.  
+    [Okno dialogowe Wyszukiwanie wątków](../debugger/thread-search-dialog-box.md) zostanie otwarty.  
   
-3.  Wpisz identyfikator wątku lub ciąg modułu jako kryterium wyszukiwania.  
+3. Wpisz identyfikator wątku lub ciąg modułu jako kryterium wyszukiwania.  
   
-4.  Wyczyść wszystkie pola, dla których nie chcesz określać wartości.  
+4. Wyczyść wszystkie pola, dla których nie chcesz określać wartości.  
   
-    > [!TIP]
-    >  Aby znaleźć wszystkie wątki, które są własnością modułu, należy wyczyścić **wątku** pole tekstowe i wpisz moduł nazwy **modułu** pole. Następnie użyj **Znajdź następny** kontynuować wyszukiwanie wątków.  
+   > [!TIP]
+   >  Aby znaleźć wszystkie wątki, które są własnością modułu, należy wyczyścić **wątku** pole tekstowe i wpisz moduł nazwy **modułu** pole. Następnie użyj **Znajdź następny** kontynuować wyszukiwanie wątków.  
   
-5.  Wybierz **się** lub **dół** dla początkowej kierunek wyszukiwania.  
+5. Wybierz **się** lub **dół** dla początkowej kierunek wyszukiwania.  
   
-6.  Kliknij przycisk **OK**.  
+6. Kliknij przycisk **OK**.  
   
- Jeśli zostanie znalezione pasujące wątku, jest wyróżniona w oknie Widok wątków.
+   Jeśli zostanie znalezione pasujące wątku, jest wyróżniona w oknie Widok wątków.
 
 
 

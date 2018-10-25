@@ -13,12 +13,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 54702db4a89bdabb58805560ed8b9909652c649e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a6cd7efa12fc87c5de4bd82bcfb789d50193dbe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904419"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ Typy podkładek ** są jedną z dwóch technologii używanych struktura sztuczny
   
  **Wymagania**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
- Zobacz [wideo (1 godz. 16): testowanie kodu bez sprawdzalnego działa zgodnie z substytutami w programie Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
+  Zobacz [wideo (1 godz. 16): testowanie kodu bez sprawdzalnego działa zgodnie z substytutami w programie Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)  
   
 ## <a name="in-this-topic"></a>W tym temacie:  
  Oto, co dowiesz się, w tym temacie:  
@@ -42,41 +42,41 @@ Typy podkładek ** są jedną z dwóch technologii używanych struktura sztuczny
   
  [Jak używać podkładek](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Fakes_requirements)  
   
--   [Dodaj zestawy elementów sztucznych](#AddFakes)  
+- [Dodaj zestawy elementów sztucznych](#AddFakes)  
   
--   [Użyj ShimsContext](#ShimsContext)  
+- [Użyj ShimsContext](#ShimsContext)  
   
--   [Pisać testy podkładek](#WriteTests)  
+- [Pisać testy podkładek](#WriteTests)  
   
- [Podkładki dla różnych rodzajów metod](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Shim_basics)  
+  [Podkładki dla różnych rodzajów metod](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Shim_basics)  
   
--   [Metody statyczne](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_methods)  
+- [Metody statyczne](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_methods)  
   
--   [Metody wystąpienia (dla wszystkich wystąpień)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_all_instances_)  
+- [Metody wystąpienia (dla wszystkich wystąpień)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_all_instances_)  
   
--   [Wystąpienie metody (jedno wystąpienie środowiska wykonawczego)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_one_instance_)  
+- [Wystąpienie metody (jedno wystąpienie środowiska wykonawczego)](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Instance_methods__for_one_instance_)  
   
--   [Konstruktory](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Constructors)  
+- [Konstruktory](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Constructors)  
   
--   [Składowe bazowe](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Base_members)  
+- [Składowe bazowe](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Base_members)  
   
--   [Konstruktory statyczne](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_constructors)  
+- [Konstruktory statyczne](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Static_constructors)  
   
--   [Finalizatory](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Finalizers)  
+- [Finalizatory](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Finalizers)  
   
--   [Metody prywatne](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Private_methods)  
+- [Metody prywatne](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Private_methods)  
   
--   [Interfejsy powiązania](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Binding_interfaces)  
+- [Interfejsy powiązania](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Binding_interfaces)  
   
- [Zmiana domyślnego zachowania](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Changing_the_default_behavior)  
+  [Zmiana domyślnego zachowania](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Changing_the_default_behavior)  
   
- [Uzyskuje dostęp do środowiska wykrywanie](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Detecting_environment_accesses)  
+  [Uzyskuje dostęp do środowiska wykrywanie](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Detecting_environment_accesses)  
   
- [Współbieżność](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Concurrency)  
+  [Współbieżność](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Concurrency)  
   
- [Wywoływanie oryginalną metodę z metodą podkładki](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Calling_the_original_method_from_the_shim_method)  
+  [Wywoływanie oryginalną metodę z metodą podkładki](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Calling_the_original_method_from_the_shim_method)  
   
- [Ograniczenia](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
+  [Ograniczenia](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md#BKMK_Limitations)  
   
 ##  <a name="BKMK_Example__The_Y2K_bug"></a> Przykład: Y2K usterki  
  Rozważmy metodę, która zgłosiła wyjątek na 1 stycznia 2000:  

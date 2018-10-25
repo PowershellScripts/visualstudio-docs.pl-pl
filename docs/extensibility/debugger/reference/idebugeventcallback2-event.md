@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ea52b8be040df50da1585165599c4fdea635557
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc61f6a8b2a8a069d0fb921e4dbfe631088b2925
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913322"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 Wysyła powiadomienia o zdarzeniach debugowania.  
@@ -53,33 +53,33 @@ int Event(
   
 #### <a name="parameters"></a>Parametry  
  `pEngine`  
- [in] [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) obiekt, który reprezentuje aparat debugowania (DE), który wysyła tego zdarzenia. Niemcy jest wymagany do wypełniania tego parametru.  
+ [in] [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) obiekt, który reprezentuje aparat debugowania (DE), która wysyła tego zdarzenia. DE jest wymagany do wypełnienia tego parametru.  
   
  `pProcess`  
- [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt, który reprezentuje proces, w którym występuje zdarzenie. Ten parametr jest wypełniane przez menedżera sesji debugowania (SDM). Niemcy zawsze przekazuje wartość null dla tego parametru.  
+ [in] [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) obiekt, który reprezentuje proces, w której występuje zdarzenie. Ten parametr jest wypełniane przez Menedżer debugowania sesji (SDM). DE zawsze przekazuje wartość null dla tego parametru.  
   
  `pProgram`  
  [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt, który reprezentuje program, w którym to zdarzenie występuje. W przypadku większości zdarzeń ten parametr nie jest wartością null.  
   
  `pThread`  
- [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątku, w którym to zdarzenie występuje. Zatrzymywanie zdarzeń, aby uzyskać ten parametr nie może być wartość null, ramka stosu jest otrzymane w wyniku tego parametru.  
+ [in] [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątek, w którym to zdarzenie występuje. Dla zdarzeniami zatrzymującymi, ten parametr nie może być wartością null jako ramka stosu jest uzyskiwana z tego parametru.  
   
  `pEvent`  
- [in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) obiekt, który reprezentuje zdarzenia debugowania.  
+ [in] [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) obiekt, który reprezentuje zdarzenie debugowania.  
   
  `riidEvent`  
- [in] Identyfikator GUID, który identyfikuje interfejsu zdarzenia, które można uzyskać z `pEvent` parametru.  
+ [in] Identyfikator GUID, który identyfikuje interfejs zdarzenia, które można uzyskać z `pEvent` parametru.  
   
  `dwAttrib`  
  [in] Kombinacja flag z [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) wyliczenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Podczas wywoływania tej metody `dwAttrib` parametru musi być zgodna wartość zwracana z [GetAttributes](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) przekazano Metoda wywołana dla obiekt zdarzenia `pEvent` parametru.  
+ Po wywołaniu tej metody `dwAttrib` parametru musi być zgodna wartość zwracana z [GetAttributes —](../../../extensibility/debugger/reference/idebugevent2-getattributes.md) przekazanego do metody, nazywane obiektu zdarzenia `pEvent` parametru.  
   
- Wszystkie zdarzenia debugowania są publikowane asynchronicznie, niezależnie od tego samego zdarzenia jest asynchroniczne lub nie. Gdy URZ wywołuje tę metodę, zwracana wartość nie wskazuje, czy zdarzenie zostało przetworzone, tylko, czy odebrano zdarzenie. W rzeczywistości w większości przypadków zdarzenia nie został przetworzony po powrocie z tej metody.  
+ Wszystkie zdarzenia debugowania są ogłaszane asynchronicznie, niezależnie od tego, czy samego zdarzenia jest asynchroniczne, czy nie. Gdy DE wywołuje tę metodę, zwracana wartość nie wskazuje, czy zdarzenie zostało przetworzone, tylko, czy odebrano zdarzenie. W rzeczywistości w większości przypadków zdarzenie nie zostało przetworzone po powrocie z tej metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c383fd188c035dfacf41cdf86a84b4afe8dfa40d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 63426af550894df0e9796babaec91ff5758bbf1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461057"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909919"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
-Określa język kodu źródłowego aplikacji lub połączonych modułu.  
+Określa język kodu źródłowego aplikacji lub połączone modułu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -50,10 +50,10 @@ typedef enum CV_CFL_LANG {
   
 ## <a name="elements"></a>Elementy  
  CV_CFL_C  
- Język aplikacji jest C.  
+ Język aplikacji to C.  
   
  CV_CFL_CXX  
- Język aplikacji jest C++.  
+ Język aplikacji jest w języku C++.  
   
  CV_CFL_FORTRAN  
  Język aplikacji jest FORTRAN.  
@@ -65,7 +65,7 @@ typedef enum CV_CFL_LANG {
  Język aplikacji jest Pascal.  
   
  CV_CFL_BASIC  
- Język aplikacji jest BASIC.  
+ Język aplikacji to podstawowa.  
   
  CV_CFL_COBOL  
  Język aplikacji jest COBOL.  
@@ -74,34 +74,34 @@ typedef enum CV_CFL_LANG {
  Aplikacja jest modułem generowanych przez konsolidator.  
   
  CV_CFL_CVTRES  
- Aplikacja jest konwertowane za pomocą narzędzia CVTRES modułu zasobów.  
+ Aplikacja jest konwertowane przy użyciu narzędzia CVTRES modułu zasobów.  
   
  CV_CFL_CVTPGD  
- Aplikacja jest modułem POGO zoptymalizowanych pod kątem wygenerowane za pomocą narzędzia CVTPGD.  
+ Aplikacja jest generowane przy użyciu narzędzia CVTPGD modułu POGO zoptymalizowane pod kątem.  
   
  CV_CFL_CSHARP  
- Język aplikacji jest C#.  
+ Aplikacja językiem jest C#.  
   
  CV_CFL_VB  
- Język aplikacji jest Visual Basic.  
+ Język aplikacji jest języka Visual Basic.  
   
  CV_CFL_ILASM  
- Język aplikacji jest zestawem język pośredni (to znaczy zestawów środowiska uruchomieniowego języka wspólnego (CLR)).  
+ Język aplikacji jest zestawem języka pośredniego (czyli zestawów środowiska uruchomieniowego języka wspólnego (CLR)).  
   
  CV_CFL_JAVA  
- Język aplikacji jest Java.  
+ Język aplikacji jest języka Java.  
   
  CV_CFL_JSCRIPT  
- Język aplikacji jest Jscript.  
+ Aplikacja języka JScript.  
   
  CV_CFL_MSIL  
- Język aplikacji jest nieznany Microsoft pośredniego Language (MSIL), prawdopodobnie wynik przy użyciu [opcję/LTCG (Generowanie kodu w czasie Link)](/cpp/build/reference/ltcg-link-time-code-generation) przełącznika.  
+ Język aplikacji jest nieznany Microsoft Intermediate Language (MSIL), prawdopodobnie wynik za pomocą [opcję/LTCG (Generowanie kodu Link-time)](/cpp/build/reference/ltcg-link-time-code-generation) przełącznika.  
   
  CV_CFL_HLSL  
  Aplikacja język jest wysoki poziom programu do cieniowania.  
   
 ## <a name="remarks"></a>Uwagi  
- To wyliczenie wartości są zwracane przez wywołanie do [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) metody.  
+ Wartości w tym wyliczeniu są zwracane przez wywołanie [idiasymbol::get_language —](../../debugger/debug-interface-access/idiasymbol-get-language.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: cvconst.h  

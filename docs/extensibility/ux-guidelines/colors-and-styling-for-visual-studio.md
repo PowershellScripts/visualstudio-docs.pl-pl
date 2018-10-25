@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 028c88e1c2cd88736cf98a1f513654692ee50daf
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 5f184fc08679100562a53c1f3f27d797a4cdff37
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863845"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918028"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Kolory i style dla programu Visual Studio
 
@@ -425,7 +425,7 @@ Aby to zrobić, pakietu VSPackage musi:
 
 - **Obsługa zdarzenia generowane przez środowisko IDE** implementując [IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents) interfejsu. IDE wywołuje odpowiednią metodę następujące modyfikacje użytkownika strony czcionek i kolorów. Na przykład wywołuje [onfontchanged —](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged) metody, jeśli wybrano opcję nowego czcionki.
 
- **OR**
+  **OR**
 
 - **sondowanie środowisko IDE dla zmian**. Można to zrobić za pomocą systemu zaimplementowane [IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage) interfejsu. Mimo że przede wszystkim do obsługi trwałości, [GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem) metody można uzyskać informacji czcionek i kolorów dla elementów wyświetlana. Aby uzyskać więcej informacji na temat ustawienia czcionek i kolorów, zobacz artykuł w witrynie MSDN [uzyskiwania dostępu do przechowywanych czcionkę i ustawienia kolorów](../accessing-stored-font-and-color-settings.md).
 

@@ -18,12 +18,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cf28035726f20aa715bfe12a48b1378edfacb673
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2650afc2172cdcceca892d4ad19a05becac3e472
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223223"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908948"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Porady: tworzenie rozwiązania języka właściwego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,43 +43,43 @@ Języka specyficznego dla domeny (DSL) jest tworzony przy użyciu wyspecjalizowa
   
 #### <a name="to-create-a-domain-specific-language-solution"></a>Tworzenie rozwiązań języka dotyczącego określonej domeny  
   
-1.  Uruchom Kreatora DSL.  
+1. Uruchom Kreatora DSL.  
   
-    1.  Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.  
+   1. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.  
   
-    2.  **Nowy projekt** pojawi się okno dialogowe.  
+   2. **Nowy projekt** pojawi się okno dialogowe.  
   
-    3.  W obszarze **typów projektów**, rozwiń węzeł **inne typy projektów** węzeł, a następnie kliknij przycisk **rozszerzalności**.  
+   3. W obszarze **typów projektów**, rozwiń węzeł **inne typy projektów** węzeł, a następnie kliknij przycisk **rozszerzalności**.  
   
-    4.  Kliknij przycisk **projektanta języka specyficznego dla domeny**.  
+   4. Kliknij przycisk **projektanta języka specyficznego dla domeny**.  
   
-    5.  W **nazwa** wpisz nazwę dla rozwiązania. Kliknij przycisk **OK**.  
+   5. W **nazwa** wpisz nazwę dla rozwiązania. Kliknij przycisk **OK**.  
   
-         **Kreator projektanta języka specyficznego dla domeny** pojawia się.  
+       **Kreator projektanta języka specyficznego dla domeny** pojawia się.  
   
-        > [!NOTE]
-        >  Najlepiej możesz wpisać nazwę powinny być prawidłowym Visual C# identyfikatorem, ponieważ może służyć do generowania kodu.  
+      > [!NOTE]
+      >  Najlepiej możesz wpisać nazwę powinny być prawidłowym Visual C# identyfikatorem, ponieważ może służyć do generowania kodu.  
   
-     ![Tworzenie okna dialogowego DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
+      ![Tworzenie okna dialogowego DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
-2.  Wybierz szablon DSL.  
+2. Wybierz szablon DSL.  
   
-     Na **wybierz opcje języka specyficznego dla domeny** wybierz jeden z szablonów rozwiązań, takich jak **minimalny języka**. Wybierz szablon, który przypomina język DSL, który chcesz utworzyć.  
+    Na **wybierz opcje języka specyficznego dla domeny** wybierz jeden z szablonów rozwiązań, takich jak **minimalny języka**. Wybierz szablon, który przypomina język DSL, który chcesz utworzyć.  
   
-     Aby uzyskać więcej informacji na temat szablonów rozwiązań, zobacz [Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md).  
+    Aby uzyskać więcej informacji na temat szablonów rozwiązań, zobacz [Wybieranie szablonu rozwiązania dotyczącego języka specyficznego dla domeny](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
-3.  Wprowadź rozszerzenie nazwy pliku na **rozszerzenie pliku** strony. Powinien on być unikatowy w komputerze i w każdym komputerze, na którym chcesz zainstalować język DSL. Powinien zostać wyświetlony komunikat **Brak aplikacji lub edytorów programu Visual Studio za pomocą tego rozszerzenia**.  
+3. Wprowadź rozszerzenie nazwy pliku na **rozszerzenie pliku** strony. Powinien on być unikatowy w komputerze i w każdym komputerze, na którym chcesz zainstalować język DSL. Powinien zostać wyświetlony komunikat **Brak aplikacji lub edytorów programu Visual Studio za pomocą tego rozszerzenia**.  
   
-    -   Jeśli rozszerzenie nazwy pliku jest używany, poprzednie eksperymentalne językami DSL, które nie zostały w pełni zainstalowane, można wyczyścić je na zewnątrz przy użyciu **Zresetuj wystąpienie eksperymentalne** narzędzia, które znajdują się w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu zestawu SDK.  
+   -   Jeśli rozszerzenie nazwy pliku jest używany, poprzednie eksperymentalne językami DSL, które nie zostały w pełni zainstalowane, można wyczyścić je na zewnątrz przy użyciu **Zresetuj wystąpienie eksperymentalne** narzędzia, które znajdują się w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu zestawu SDK.  
   
-    -   Jeśli w kolejnym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pełni zainstalowano rozszerzenie, która używa tego rozszerzenia pliku na komputerze, należy rozważyć odinstalowanie go. Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.  
+   -   Jeśli w kolejnym [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pełni zainstalowano rozszerzenie, która używa tego rozszerzenia pliku na komputerze, należy rozważyć odinstalowanie go. Na **narzędzia** menu, kliknij przycisk **Menedżera rozszerzeń**.  
   
-4.  Zbadaj i w razie potrzeby dostosować, pola na pozostałych stronach kreatora. Gdy jesteś zadowolony z ustawień, kliknij przycisk **Zakończ**. Aby uzyskać więcej informacji na temat ustawień, zobacz [stron kreatora Projektant DSL](#settings).  
+4. Zbadaj i w razie potrzeby dostosować, pola na pozostałych stronach kreatora. Gdy jesteś zadowolony z ustawień, kliknij przycisk **Zakończ**. Aby uzyskać więcej informacji na temat ustawień, zobacz [stron kreatora Projektant DSL](#settings).  
   
-     Kreator utworzy rozwiązanie, które ma dwa projekty, które noszą nazwy **Dsl** i **DslPackage**.  
+    Kreator utworzy rozwiązanie, które ma dwa projekty, które noszą nazwy **Dsl** i **DslPackage**.  
   
-    > [!NOTE]
-    >  Jeśli zobaczysz komunikat z ostrzeżeniem, nie można uruchomić szablony tekstowe ze źródeł niezaufanych, kliknij przycisk **OK**. Można ustawić ten komunikat, aby nie pojawiają się ponownie.  
+   > [!NOTE]
+   >  Jeśli zobaczysz komunikat z ostrzeżeniem, nie można uruchomić szablony tekstowe ze źródeł niezaufanych, kliknij przycisk **OK**. Można ustawić ten komunikat, aby nie pojawiają się ponownie.  
   
 ##  <a name="settings"></a> Na stronach kreatora projektanta DSL  
  Możesz pozostawić kilka pól, bez zmian wartości domyślne. Jednak należy się upewnić, czy ustawić pola rozszerzenie pliku.  

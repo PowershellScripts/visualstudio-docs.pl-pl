@@ -25,12 +25,12 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e382c5d312a2de69281bdeda92e9c275e2877932
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891001"
 ---
 # <a name="application-deployment-prerequisites"></a>Wstępnie wymagane składniki wdrażania aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ Aby upewnić się, że Twoja aplikacja zostanie zainstalowana i wykonane pomyśl
 ## <a name="bootstrapping-and-clickonce-deployment"></a>Uruchamianie i wdrażanie technologii ClickOnce  
  Przed zainstalowaniem aplikacji na komputerze klienckim [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] zbada klienta, aby upewnić się, że ma określone wymagania określone w manifeście aplikacji. Należą do nich między innymi:  
   
--   Minimalna wymagana wersja środowiska CLR, który jest określony jako zależność od zestawu w manifeście aplikacji.  
+- Minimalna wymagana wersja środowiska CLR, który jest określony jako zależność od zestawu w manifeście aplikacji.  
   
--   Minimalna wymagana wersja systemu operacyjnego Windows, które są wymagane przez aplikację, jak określono w aplikacji manifestu za pomocą `<osVersionInfo>` elementu. (Zobacz [ \<zależności > Element](../deployment/dependency-element-clickonce-application.md))  
+- Minimalna wymagana wersja systemu operacyjnego Windows, które są wymagane przez aplikację, jak określono w aplikacji manifestu za pomocą `<osVersionInfo>` elementu. (Zobacz [ \<zależności > Element](../deployment/dependency-element-clickonce-application.md))  
   
--   Minimalna wersja wszystkie zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC), jak określono w deklaracji zależności zestawu w manifeście zestawu.  
+- Minimalna wersja wszystkie zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC), jak określono w deklaracji zależności zestawu w manifeście zestawu.  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] może wykryć brakujących wymagań wstępnych i wymagań wstępnych można zainstalować za pomocą programu inicjującego. Aby uzyskać więcej informacji, zobacz [porady: instalowanie wstępnie wymaganych składników w aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] może wykryć brakujących wymagań wstępnych i wymagań wstępnych można zainstalować za pomocą programu inicjującego. Aby uzyskać więcej informacji, zobacz [porady: instalowanie wstępnie wymaganych składników w aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
 >  Aby zmienić wartości w manifestach wygenerowanych przez narzędzia takie jak [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] i MageUI.exe, należy edytować manifest aplikacji w edytorze tekstów, a następnie ponownie podpisać manifesty aplikacji i wdrażania. Aby uzyskać więcej informacji, zobacz [porady: ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81128cf13cf8ebe7052851b25d328851705f3124
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 858463e3506919d68d9aa0b353f2988f801dc1d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107608"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916385"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
-Zwraca obiekt kontekstu kodu odpowiadający identyfikator lokalizacji określony kod.  
+Zwraca obiekt kontekstu kodu odpowiadającego identyfikatorowi lokalizacji określonego kodu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,18 +43,18 @@ int GetCodeContext(
   
 #### <a name="parameters"></a>Parametry  
  `uCodeLocationId`  
- [in] Określa identyfikator lokalizacji kodu. W sekcji uwag [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) metody opis identyfikator lokalizacji kodu.  
+ [in] Określa identyfikator lokalizacji kodu. Zobacz sekcję Spostrzeżenia, aby [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) metoda opis identyfikator lokalizacji kodu.  
   
  `ppCodeContext`  
- [out] Zwraca [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który reprezentuje kontekst skojarzony kod.  
+ [out] Zwraca [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który reprezentuje kontekst skojarzonego kodu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Identyfikator lokalizacji kodu może być zwracany po wywołaniu [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) — metoda i może występować w [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury.  
+ Identyfikator lokalizacji kodu mogą być zwracane przez wywołanie [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) metoda i może być wyświetlany w [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury.  
   
- Aby przekonwertować kontekst kodu identyfikator lokalizacji kodu, należy wywołać [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) metody.  
+ Aby dokonać konwersji kontekst kodu na identyfikator lokalizacji kodu, należy wywołać [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   

@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ecd6d0ed9c69cad1275a399ffacf402529eebf4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b78c5f44d8f73aa9bb2af5a5b2aa43d5b15bd7db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910527"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-Pobiera sumy kontrolnej dokumentu dla żądania przerwania podane Unikatowy identyfikator algorytmu sumy kontrolnej do użycia.  
+Pobiera suma kontrolna dokumentu żądania punktu przerwania podane Unikatowy identyfikator algorytmu sumy kontrolnej do użycia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,10 +47,10 @@ public int GetChecksum(
  [out] Suma kontrolna dokumentu dla żądania punktu przerwania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia funkcję, która sprawdza, czy suma kontrolna dokumentu, który ma być powiązana, zgodny z interfejsu użytkownika.  
+ Funkcja, która sprawdza, czy suma kontrolna dokumentu, które ma być powiązana, jest zgodna z interfejsu użytkownika można znaleźć w poniższym przykładzie.  
   
 ```cpp  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  

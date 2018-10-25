@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8026bb0cc85ef71766ab5c2538a3d6476d871cb8
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 78d28da26cd01b804f8527e42c9ed3aa7977ed10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280730"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917859"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Porady: uwzględnianie wstępnie wymaganych składników w aplikacji ClickOnce
 Aby można było dystrybuować wstępnie wymagane oprogramowanie za pomocą [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji, musisz najpierw pobrać pakiety instalacyjne tych wstępnie wymaganych składników na komputerze dewelopera. Po opublikowaniu aplikacji i wybraniu **Pobierz wstępnie wymagane składniki z tej samej lokalizacji co aplikację**, wystąpi błąd, jeśli pakiety instalacyjne nie są w **pakietów** folderu.  
@@ -25,31 +25,31 @@ Aby można było dystrybuować wstępnie wymagane oprogramowanie za pomocą [!IN
   
 ##  <a name="Package"></a> Aby dodać pakiet instalacyjny przy użyciu pliku Package.xml  
   
-1.  W Eksploratorze plików otwórz **pakietów** folderu.  
+1. W Eksploratorze plików otwórz **pakietów** folderu.  
   
-     Domyślna ścieżka to *14.0\SDK\Bootstrapper\Packages C:\Program Files\Microsoft Visual Studio* w systemie 32-bitowe i *C:\Program Files (x86) \Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* w systemie 64-bitowych.  
+    Domyślna ścieżka to *14.0\SDK\Bootstrapper\Packages C:\Program Files\Microsoft Visual Studio* w systemie 32-bitowe i *C:\Program Files (x86) \Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages* w systemie 64-bitowych.  
   
-2.  Otwórz folder wstępnie wymaganego składnika, który chcesz dodać, a następnie otwórz folder języka dla zainstalowanej wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (na przykład **en** w języku angielskim).  
+2. Otwórz folder wstępnie wymaganego składnika, który chcesz dodać, a następnie otwórz folder języka dla zainstalowanej wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (na przykład **en** w języku angielskim).  
   
-3.  Otwórz w Notatniku *Package.xml* pliku.  
+3. Otwórz w Notatniku *Package.xml* pliku.  
   
-4.  Znajdź **nazwa** element, który zawiera **http://go.microsoft.com/fwlink**, a następnie skopiuj adres URL. Obejmują **LinkID** części.  
+4. Znajdź **nazwa** element, który zawiera **http://go.microsoft.com/fwlink**, a następnie skopiuj adres URL. Obejmują **LinkID** części.  
   
-    > [!NOTE]
-    >  Jeśli nie **nazwa** element zawiera **http://go.microsoft.com/fwlink**, otwórz **Product.xml** pliku w folderze głównym wstępnie wymaganego składnika i zlokalizuj **fwlink** ciągu.  
+   > [!NOTE]
+   >  Jeśli nie **nazwa** element zawiera **http://go.microsoft.com/fwlink**, otwórz **Product.xml** pliku w folderze głównym wstępnie wymaganego składnika i zlokalizuj **fwlink** ciągu.  
   
-    > [!IMPORTANT]
-    >  Niektóre wstępnie wymagane składniki mają wiele pakietów instalacyjnych (na przykład dla systemów 32-bitowych i 64-bitowych). Jeśli wiele **nazwa** elementy zawierają **fwlink**, pozostałe kroki należy powtórzyć dla każdego z nich.  
+   > [!IMPORTANT]
+   >  Niektóre wstępnie wymagane składniki mają wiele pakietów instalacyjnych (na przykład dla systemów 32-bitowych i 64-bitowych). Jeśli wiele **nazwa** elementy zawierają **fwlink**, pozostałe kroki należy powtórzyć dla każdego z nich.  
   
-5.  Wklej adres URL w pasku adresu przeglądarki, a następnie, gdy zostanie wyświetlony monit o uruchomienie lub zapisanie, wybierz **Zapisz**.  
+5. Wklej adres URL w pasku adresu przeglądarki, a następnie, gdy zostanie wyświetlony monit o uruchomienie lub zapisanie, wybierz **Zapisz**.  
   
-     W tym kroku plik instalatora jest pobierany na komputer.  
+    W tym kroku plik instalatora jest pobierany na komputer.  
   
-6.  Skopiuj plik do folderu głównego dla wstępnie wymaganego składnika.  
+6. Skopiuj plik do folderu głównego dla wstępnie wymaganego składnika.  
   
-     Na przykład dla wstępnie wymaganego programu Windows Installer 4.5 skopiuj plik do *\Packages\WindowsInstaller4_5* folderu.  
+    Na przykład dla wstępnie wymaganego programu Windows Installer 4.5 skopiuj plik do *\Packages\WindowsInstaller4_5* folderu.  
   
-     Teraz można dystrybuować pakiet instalacyjny z aplikacją.  
+    Teraz można dystrybuować pakiet instalacyjny z aplikacją.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Porady: Instalowanie wymagania wstępne przy użyciu aplikacji ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

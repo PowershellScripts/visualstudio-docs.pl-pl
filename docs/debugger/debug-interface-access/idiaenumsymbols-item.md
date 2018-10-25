@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSymbols::Item | Dokumentacja firmy Microsoft
+title: Idiaenumsymbols::Item — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e90fb2d4ce258560c3588a6dd9b4379c76441773
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c8786d53e1ba3001bc882580c03005377d476a47
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468518"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918977"
 ---
 # <a name="idiaenumsymbolsitem"></a>IDiaEnumSymbols::Item
 Pobiera symbol za pomocą indeksu.  
@@ -35,13 +35,13 @@ HRESULT Item (
   
 #### <a name="parameters"></a>Parametry  
  indeks  
- [in] Indeks o [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiektu do pobrania. Indeks znajduje się w zakresie od 0 do `count`-1, gdy `count` zwróconego przez [IDiaEnumSymbols::get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md) metody.  
+ [in] Indeks elementu [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiektu do pobrania. Indeks znajduje się w zakresie od 0 do `count`-1, gdzie `count` jest zwracany przez [idiaenumsymbols::get_count —](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md) metody.  
   
  — symbol  
- [out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt reprezentujący żądany symbol.  
+ [out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt reprezentujący symbol żądaną.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md)   

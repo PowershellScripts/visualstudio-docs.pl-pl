@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59589c0db502ac5ddbf7c204968ca0684340f685
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4582516126cad72c5b2939ef4c12fd59cc6fbcb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103568"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909892"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-Załaduj symbole debugowania z danego strumienia danych **ICorDebugModule** obiektu.  
+Ładowanie symboli debugowania z danego strumienia danych **ICorDebugModule** obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -59,19 +59,19 @@ int LoadSymbolsFromStreamWithCorModule(
  [in] Adres podstawowy pamięci.  
   
  `pUnkMetadataImport`  
- [in] Obiekt zawierający metadane symbolu.  
+ [in] Obiekt, który zawiera metadane symbolu.  
   
  `pUnkCorDebugModule`  
- [in] Obiekt, który implementuje [ICorDebugModule — interfejs](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
+ [in] Obiekt, który implementuje [icordebugmodule — interfejs](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
   
  `pStream`  
  [in] Strumień danych, który zawiera symbole debugowania do załadowania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfejsu.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(  

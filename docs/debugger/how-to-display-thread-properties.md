@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 04e209132818824a8fc6e320e93031e65a7c403c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: cc5b8d6dcf3cb6dc2a78bee626633103d5b1b18c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473221"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904859"
 ---
 # <a name="how-to-display-thread-properties"></a>Porady: wyświetlanie właściwości wątku
-Aby dowiedzieć się więcej o wątku na liście [Widok wątków](../debugger/threads-view.md), użyj [okno dialogowe właściwości wątku](../debugger/thread-properties-dialog-box.md).  
+Aby dowiedzieć się więcej na temat wątku, na liście [Widok wątków](../debugger/threads-view.md), użyj [okno dialogowe właściwości wątku](../debugger/thread-properties-dialog-box.md).  
   
 ### <a name="to-open-a-thread-properties-dialog-box"></a>Aby otworzyć okno dialogowe właściwości wątku  
   
-1.  Wybierz wątku z wyświetlany w drzewie [Widok wątków](../debugger/threads-view.md).  
+1. Wybierz wątku z poziomu drzewa wyświetlany w [Widok wątków](../debugger/threads-view.md).  
   
-2.  Z **widoku** menu, wybierz **właściwości**.  
+2. Z **widoku** menu, wybierz **właściwości**.  
   
- Okno dialogowe właściwości nie są modalne, dzięki czemu możesz kliknąć innym elementem w okno widoku i zostanie wyświetlone okno dialogowe informacje wybranego elementu.
+   Okno dialogowe właściwości nie są modalne, dzięki czemu możesz kliknąć inny element w oknie Widok i zostanie wyświetlone okno dialogowe informacje wybranego elementu.

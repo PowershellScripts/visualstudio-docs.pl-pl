@@ -30,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41870980aa27dd14576a3e04378d602f073091ab
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892783"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Formanty Windows Forms na przegląd dokumentów pakietu Office
   Kontrolek formularzy Windows Forms są obiekty, które użytkownicy mogą wchodzić w interakcje z wprowadzać ani wykonywać operacje na danych. W projektach na poziomie dokumentu dla programu Microsoft Office Excel i Microsoft Office Word dodaniem kontrolek formularzy Windows Forms do dokumentów lub skoroszytu w projekcie w czasie projektowania lub można programowo dodać tych formantów w czasie wykonywania. Programowe można dodać te formanty do dowolnego otwartego dokumentu lub arkusza w czasie wykonywania w dodatku narzędzi VSTO dla programu Excel lub Word.  
@@ -52,25 +52,25 @@ ms.locfileid: "35676941"
  W dokumencie.  
  -   Kiedy chcesz wyświetlić kontrolki 100% czasu.  
   
--   Kiedy chcesz użytkownikom na wprowadzanie danych bezpośrednio w dokumencie, na przykład w dokumentach opartego na formularzach, gdzie edycji powierzchni jest zablokowany.  
+- Kiedy chcesz użytkownikom na wprowadzanie danych bezpośrednio w dokumencie, na przykład w dokumentach opartego na formularzach, gdzie edycji powierzchni jest zablokowany.  
   
--   Kiedy chcesz formantów do wyświetlania tworzone są dane w dokumencie. Na przykład jeśli chcesz dodać przyciski do każdego wiersza w obiekcie listy, należy je zgodnie z każdego elementu listy.  
+- Kiedy chcesz formantów do wyświetlania tworzone są dane w dokumencie. Na przykład jeśli chcesz dodać przyciski do każdego wiersza w obiekcie listy, należy je zgodnie z każdego elementu listy.  
   
- W okienku Akcje lub niestandardowego okienka zadań.  
- -   Kiedy chcesz udostępniać kontekstowe informacje do użytkownika.  
+  W okienku Akcje lub niestandardowego okienka zadań.  
+  -   Kiedy chcesz udostępniać kontekstowe informacje do użytkownika.  
   
--   Jeśli chcesz tylko wyniki były wyświetlane w dokumencie i nie formanty zapytania i danych.  
+- Jeśli chcesz tylko wyniki były wyświetlane w dokumencie i nie formanty zapytania i danych.  
   
--   Jeśli chcesz upewnić się, że formanty nie są drukowane w dokumencie.  
+- Jeśli chcesz upewnić się, że formanty nie są drukowane w dokumencie.  
   
--   Kiedy chcesz upewnić się, że formanty nie przeszkadzają ze stanowiskiem dokumentu.  
+- Kiedy chcesz upewnić się, że formanty nie przeszkadzają ze stanowiskiem dokumentu.  
   
- W formularzu Windows.  
- -   Jeśli chcesz kontrolować rozmiar interfejsu użytkownika.  
+  W formularzu Windows.  
+  -   Jeśli chcesz kontrolować rozmiar interfejsu użytkownika.  
   
--   Kiedy chcesz uniemożliwić użytkownikom ukrywanie lub usuwanie kontrolek.  
+- Kiedy chcesz uniemożliwić użytkownikom ukrywanie lub usuwanie kontrolek.  
   
--   Jeśli chcesz pobrać dane wejściowe od użytkownika i uniemożliwić wykonywanie wszystko w dokumencie, do momentu otrzymania danych wejściowych przez użytkownika.  
+- Jeśli chcesz pobrać dane wejściowe od użytkownika i uniemożliwić wykonywanie wszystko w dokumencie, do momentu otrzymania danych wejściowych przez użytkownika.  
   
 ## <a name="add-windows-forms-controls-programmatically"></a>Programowe Dodawanie kontrolek formularzy Windows Forms  
  Można dodać kontrolek formularzy Windows Forms do dokumentów programu Word i arkusze programu Excel w czasie wykonywania. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zapewnia metody pomocnika do dodawania najczęstsze formanty Windows Forms. Te metody pomocnika umożliwiają szybko dodać kontrolki do dokumentu pakietu Office i dostęp do połączonych funkcjonalność formantu Windows Forms i funkcji związanych ze Office tych kontrolek.  
@@ -134,13 +134,13 @@ ms.locfileid: "35676941"
   
  Po dodaniu kontrolki do dokumentu programu Word w czasie wykonywania, można określić styl układu nowego formantu przy użyciu różnych `Add` \< *kontrolować klasy*> przeciążenia metody <xref:Microsoft.Office.Tools.Word.ControlCollection> klasy:  
   
--   Aby dodać formant z tekstu, użyj przeciążenia, które akceptuje <xref:Microsoft.Office.Interop.Word.Range> określająca położenie formantu.  
+- Aby dodać formant z tekstu, użyj przeciążenia, które akceptuje <xref:Microsoft.Office.Interop.Word.Range> określająca położenie formantu.  
   
--   Aby dodać kontrolkę jako kształt zmiennoprzecinkowe, użyj przeciążenia, które akceptuje lewym i górnym współrzędne formantu.  
+- Aby dodać kontrolkę jako kształt zmiennoprzecinkowe, użyj przeciążenia, które akceptuje lewym i górnym współrzędne formantu.  
   
- Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+  Aby uzyskać więcej informacji, zobacz [dodawanie formantów do dokumentów pakietu Office w środowisku uruchomieniowym](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Jeśli otworzysz szablon programu Word w Projektancie Visual Studio niewbudowana formantów na szablon może nie być widoczna ponieważ Visual Studio otwiera szablon w **normalny** widoku. Aby wyświetlać kontrolki, należy zmienić widok, aby **układ wydruku**.  
+  Jeśli otworzysz szablon programu Word w Projektancie Visual Studio niewbudowana formantów na szablon może nie być widoczna ponieważ Visual Studio otwiera szablon w **normalny** widoku. Aby wyświetlać kontrolki, należy zmienić widok, aby **układ wydruku**.  
   
 ### <a name="controls-outside-the-main-document-body"></a>Kontrolki poza treścią dokumentu głównego  
  Kontrolek formularzy Windows Forms, nie są obsługiwane w nagłówku lub stopce lub w ramach podrzędnego.  

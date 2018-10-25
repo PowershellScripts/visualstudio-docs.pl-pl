@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6cc7265def2d1a4b184f27865461706e62b98f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3303d86abed596f35f714c4389770c613fa09b6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113640"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896656"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 Odejmuje określoną wartość z bieżącego kontekstu i zwraca nowy kontekst.  
@@ -50,12 +50,12 @@ int Subtract(
  [out] Zwraca nowy [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiektu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Kontekst pamięci jest adresem, więc odjęcie wartości z adresu tworzy nowy adres, który wymaga nowy interfejs kontekstu.  
+ Kontekst pamięci nie jest adresem, więc odjęcie wartości z adresu tworzy nowy adres, który wymaga nowy interfejs kontekstu.  
   
- Ta metoda zawsze musi mieć nowy kontekst, nawet jeśli adres wynikowa znajduje się poza obszar pamięci skojarzone z tym kontekstem. Jedynym wyjątkiem jest, jeśli w nowym kontekście można przydzielić pamięć lub `ppMemCxt` jest wartość null (która jest błąd).  
+ Ta metoda zawsze musi mieć nowy kontekst, nawet jeśli otrzymany adres znajduje się poza obszar pamięci skojarzone z tym kontekstem. Jedynym wyjątkiem jest, jeśli nie pamięć może być przydzielenia w nowym kontekście lub `ppMemCxt` jest wartością null (jest to błąd).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

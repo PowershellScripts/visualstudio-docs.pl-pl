@@ -16,12 +16,12 @@ ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d6d1e7f9323227ca6d925acadf93068935887f3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1d701679755d73e01e27c7be0ba9833bf878bc43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260057"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894446"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Instrukcje: tworzenie Atom dla galerii prywatnej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ Można utworzyć kanału Atom (RSS) do lokalizacji intranetowej, która nie zawi
 ## <a name="creating-an-atom-feed"></a>Tworzenie Atom kanału informacyjnego  
  Aby utworzyć źródła danych jako prywatną galerię Atom, najpierw Zbierz do folderu rozszerzeń (plików .vsix). Możesz organizować je w podfolderach chcącym. Należy również następujące zasoby:  
   
--   Plik atom.xml, która udostępnia rozszerzenia jako prywatną galerię. Aby uzyskać informacje o tym, jak połączyć pliku atom.xml do **rozszerzenia i aktualizacje**, zobacz [galerie prywatne](../extensibility/private-galleries.md).  
+- Plik atom.xml, która udostępnia rozszerzenia jako prywatną galerię. Aby uzyskać informacje o tym, jak połączyć pliku atom.xml do **rozszerzenia i aktualizacje**, zobacz [galerie prywatne](../extensibility/private-galleries.md).  
   
--   Folder, który zawiera pliki obrazów, które zostały wyodrębnione ze rozszerzenia (na przykład zrzuty ekranu). Plik atom.xml zawiera linków względnych do tych obrazów, tak aby były dostępne w **rozszerzenia i aktualizacje**.  
+- Folder, który zawiera pliki obrazów, które zostały wyodrębnione ze rozszerzenia (na przykład zrzuty ekranu). Plik atom.xml zawiera linków względnych do tych obrazów, tak aby były dostępne w **rozszerzenia i aktualizacje**.  
   
- Na przykład załóżmy, że zostały zebrane następujące dwa rozszerzenia do folderu:  
+  Na przykład załóżmy, że zostały zebrane następujące dwa rozszerzenia do folderu:  
   
--   Template_Wizard_239.vsix, który jest pusty szablon projektu VSIX.  
+- Template_Wizard_239.vsix, który jest pusty szablon projektu VSIX.  
   
--   SelectionHighlight.vsix, czyli narzędzie, aby wyróżnić wszystkie wystąpienia wybranego słowa.  
+- SelectionHighlight.vsix, czyli narzędzie, aby wyróżnić wszystkie wystąpienia wybranego słowa.  
   
- Zawartość pliku atom.xml będzie wyglądać następująco:  
+  Zawartość pliku atom.xml będzie wyglądać następująco:  
   
 ```  
   <?xml version="1.0" encoding="utf-8" ?>   

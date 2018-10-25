@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4af26930fc8c9f362d91656cec758c9d4a9c437
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2053083ed5e39422deeeb87f34aaf9e13aff6e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288993"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891072"
 ---
 # <a name="processes-view"></a>Widok procesów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +38,12 @@ Widok procesów przedstawia drzewo wszystkich aktywnych procesów w Twoim system
   
 #### <a name="to-open-the-processes-view"></a>Aby otworzyć widok procesów  
   
-1.  Z **Spy** menu, wybierz **procesy**.  
+1. Z **Spy** menu, wybierz **procesy**.  
   
- ![Szpieguj&#43; &#43; widok procesów](../debugger/media/spy-processes.png "Spy ++ _Processes")  
-Widok procesów programu Spy ++  
+   ![Szpieguj&#43; &#43; widok procesów](../debugger/media/spy-processes.png "Spy ++ _Processes")  
+   Widok procesów programu Spy ++  
   
- Powyższy rysunek przedstawia widok procesów z węzłami procesu i wątku, rozwinięty.  
+   Powyższy rysunek przedstawia widok procesów z węzłami procesu i wątku, rozwinięty.  
   
 ### <a name="in-this-section"></a>W tej sekcji  
  [Trwa wyszukiwanie procesu w widoku procesów](../debugger/how-to-search-for-a-process-in-processes-view.md)  

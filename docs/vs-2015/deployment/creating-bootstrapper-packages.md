@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 9224314dbcb5fcb424708c7dad4ca674af661604
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dcc331defab98303a805f75f75afb3e309c7d2dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910930"
 ---
 # <a name="creating-bootstrapper-packages"></a>Tworzenie pakietów programu inicjującego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,37 +45,37 @@ Setup program jest generycznym Instalatorem, który można skonfigurować, aby w
   
  Aby utworzyć pakiet bootstrapper, musisz dostarczyć redystrybucyjne w formie file.to pliku EXE lub MSI do generatora manifestu Bootstrapper. Następnie Manifest generatora Bootstrapper tworzy następujące pliki:  
   
--   Manifest produktu, product.xml, który zawiera wszystkie metadane niezależny od języka dla pakietu. Zawiera to metadane wspólne dla wszystkich lokalizowanych wersji komponentu do redystrybucji.  
+- Manifest produktu, product.xml, który zawiera wszystkie metadane niezależny od języka dla pakietu. Zawiera to metadane wspólne dla wszystkich lokalizowanych wersji komponentu do redystrybucji.  
   
--   Manifest pakietu, package.xml, który zawiera metadane specyficzne dla języka; typowo zawiera lokalizowane komunikaty o błędzie. Składnik musi mieć co najmniej jeden manifest pakietu dla każdej zlokalizowanej wersji tego składnika.  
+- Manifest pakietu, package.xml, który zawiera metadane specyficzne dla języka; typowo zawiera lokalizowane komunikaty o błędzie. Składnik musi mieć co najmniej jeden manifest pakietu dla każdej zlokalizowanej wersji tego składnika.  
   
- Po utworzeniu tych plików, należy umieścić plik manifestu produktu w folderze o nazwie niestandardowy program inicjujący. Plik manifestu pakietu przechodzi do folderu nazwanego na podstawie lokalizacji. Na przykład w przypadku pliku manifestu pakietu do redystrybucji w języku angielskim, należy umieścić plik w folderze o nazwie en. Powtórz ten proces dla poszczególnych ustawień regionalnych, takich jak ja w języku japońskim i "de" dla języka niemieckiego. Końcowe niestandardowy pakiet programu inicjującego może mieć następującą strukturę folderów.  
+  Po utworzeniu tych plików, należy umieścić plik manifestu produktu w folderze o nazwie niestandardowy program inicjujący. Plik manifestu pakietu przechodzi do folderu nazwanego na podstawie lokalizacji. Na przykład w przypadku pliku manifestu pakietu do redystrybucji w języku angielskim, należy umieścić plik w folderze o nazwie en. Powtórz ten proces dla poszczególnych ustawień regionalnych, takich jak ja w języku japońskim i "de" dla języka niemieckiego. Końcowe niestandardowy pakiet programu inicjującego może mieć następującą strukturę folderów.  
   
- `CustomBootstrapperPackage`  
+  `CustomBootstrapperPackage`  
   
- `product.xml`  
+  `product.xml`  
   
- `CustomBootstrapper.msi`  
+  `CustomBootstrapper.msi`  
   
- `de`  
+  `de`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- `en`  
+  `en`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- `ja`  
+  `ja`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- Na koniec skopiuj przeznaczone do redystrybucji pliki do folderu programu inicjującego. Aby uzyskać więcej informacji, zobacz [porady: tworzenie zlokalizowanego pakietu programu inicjującego](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Na koniec skopiuj przeznaczone do redystrybucji pliki do folderu programu inicjującego. Aby uzyskać więcej informacji, zobacz [porady: tworzenie zlokalizowanego pakietu programu inicjującego](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  

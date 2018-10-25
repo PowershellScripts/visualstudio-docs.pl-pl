@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25c236134d07d9c6074315f4fa021e11fc755cae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 47be9b7b2e6a11c5d1d50bfd52d21927d766be81
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122044"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908499"
 ---
 # <a name="ienumdebugboundbreakpoints2next"></a>IEnumDebugBoundBreakpoints2::Next
 Zwraca następny zestaw elementów z wyliczenia.  
@@ -45,16 +45,16 @@ int Next(
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [in] Liczba elementów do pobrania. Określa maksymalny rozmiar `rgelt` tablicy.  
+ [in] Liczba elementów do pobrania. Również określa maksymalny rozmiar `rgelt` tablicy.  
   
  `rgelt`  
- [w, out] Tablica [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) elementy do wypełnienia.  
+ [out w] Tablica [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) elementami do wypełnienia.  
   
  `pceltFetched`  
- [out] Zwraca liczbę elementów, w rzeczywistości zwracane w `rgelt`.  
+ [out] Zwraca liczbę elementów, w rzeczywistości są zwracane w `rgelt`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli mniej niż żądana liczba elementów mogą być zwracane; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli mniej niż żądana liczba elementów, które mogą być zwracane; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)   

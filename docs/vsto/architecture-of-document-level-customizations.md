@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3532f4e5b1fc38c25ebb462916bc7eefae9f9725
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677181"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912633"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektura dostosowywania na poziomie dokumentu
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] zawiera projekty do tworzenia dostosowań poziomie dokumentu dla programu Microsoft Office Word i Microsoft Office Excel. W tym temacie opisano następujące aspekty dostosowań poziomu dokumentu:  
   
--   [Omówienie dostosowywania](#UnderstandingCustomizations)  
+- [Omówienie dostosowywania](#UnderstandingCustomizations)  
   
--   [Składniki dostosowania](#Components)  
+- [Składniki dostosowania](#Components)  
   
--   [Jak działają dostosowania przy użyciu aplikacji Microsoft Office](#HowCustomizationsWork)  
+- [Jak działają dostosowania przy użyciu aplikacji Microsoft Office](#HowCustomizationsWork)  
   
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
+  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Aby uzyskać ogólne informacje dotyczące tworzenia dostosowań poziomie dokumentu, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), i [wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
+  Aby uzyskać ogólne informacje dotyczące tworzenia dostosowań poziomie dokumentu, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), i [wprowadzenie do programowania dostosowań na poziomie dokumentu dla programu Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
   
 ##  <a name="UnderstandingCustomizations"></a> Omówienie dostosowywania  
  Korzystając z narzędzia Office developer tools w programie Visual Studio do tworzenia dostosowań poziomie dokumentu, możesz utworzyć zestawu kodu zarządzanego, który jest skojarzony z określonym dokumentem. Dokument lub skoroszyt z połączonego zestawu jest nazywany ma rozszerzenia kodu zarządzanego. Aby uzyskać więcej informacji, zobacz [projektowania i tworzenia rozwiązań dla pakietu Office](../vsto/designing-and-creating-office-solutions.md).  
@@ -94,11 +94,11 @@ ms.locfileid: "35677181"
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Obsługa dokumentów programu Word, które mają rozszerzenia nazwy pliku .xml  
  Szablony projektów dokumentów nie pozwalają na tworzenie projektów, w oparciu o następujące formaty plików:  
   
--   Dokument XML programu Word (*\*xml*).  
+- Dokument XML programu Word (*\*xml*).  
   
--   Dokument XML programu Word 2003 (*\*xml*).  
+- Dokument XML programu Word 2003 (*\*xml*).  
   
- Chcąc użytkownikom końcowym, użyj opcji dostosowania w tych formatach plików, tworzenie i wdrażanie dostosowania, które korzysta z jednego z obsługiwanych formatów plików określone w powyższej tabeli. Po zainstalowaniu dostosowania, użytkownicy końcowi można zapisać dokument w dokumencie programu Word XML (*\*xml*) format lub dokument programu Word 2003 XML (*\*xml*) format, a Dostosowywanie będą w dalszym ciągu działać zgodnie z oczekiwaniami.  
+  Chcąc użytkownikom końcowym, użyj opcji dostosowania w tych formatach plików, tworzenie i wdrażanie dostosowania, które korzysta z jednego z obsługiwanych formatów plików określone w powyższej tabeli. Po zainstalowaniu dostosowania, użytkownicy końcowi można zapisać dokument w dokumencie programu Word XML (*\*xml*) format lub dokument programu Word 2003 XML (*\*xml*) format, a Dostosowywanie będą w dalszym ciągu działać zgodnie z oczekiwaniami.  
   
 ##  <a name="Components"></a> Składniki dostosowania  
  Główne składniki dostosowania są dokumentu i zestawu. Oprócz tych składników istnieje kilka elementów, które odgrywa ważną rolę w sposób aplikacje Microsoft Office wykrycie i załadowanie dostosowań.  

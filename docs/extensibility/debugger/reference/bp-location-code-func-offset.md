@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d312824bb88022cba9b58945cb5f3e78c13b837
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a1828a7cea62893ecddec6d28f44ca6475352dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911398"
 ---
 # <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
 W tym artykule opisano przesunięcia lokalizacji punktu przerwania w funkcji w kodzie.  
@@ -39,12 +39,12 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
  Kontekst punktu przerwania, zazwyczaj nazwę metody lub funkcji wyświetlanego w stosie wywołań.  
   
  `pFuncPos`  
- [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) obiektu, który opisuje nazwy funkcji i względne położenie od początku funkcji.  
+ [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) obiekt, który opisuje nazwę funkcji i względnego położenia od samego początku funkcji.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest elementem członkowskim [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktury jako część Unii.  
+ Ta struktura jest elementem członkowskim [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktur w ramach złożenia.  
   
- `pFuncPos` Elementu członkowskiego wskazuje, gdzie można ustawić punktu przerwania funkcji.  
+ `pFuncPos` Członka wskazuje, gdzie można ustawić punktu przerwania funkcji.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -54,6 +54,6 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

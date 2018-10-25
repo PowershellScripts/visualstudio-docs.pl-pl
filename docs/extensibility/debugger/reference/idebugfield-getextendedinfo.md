@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63bf182e4e8b17133fbefd4f4a19c4b8b4a458e9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b276b2bff8e8ab5af0f007fbc5bd5dd6074c4d9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110318"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896049"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 Ta metoda pobiera rozszerzone informacje dotyczące pola.  
@@ -49,20 +49,20 @@ int GetExtendedInfo(
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|`guidConstantValue`|Wartość sekwencję bajtów.|  
-|`guidConstantType`|Typu jako typu.|  
+|`guidConstantValue`|Wartość atrybutu jako sekwencja bajtów.|  
+|`guidConstantType`|Typ jako typ podpisu.|  
   
  `prgBuffer`  
- [out] Zwraca rozszerzonych informacji.  
+ [out] Zwraca informacje o rozszerzonych.  
   
  `pdwLen`  
- [w, out] Zwraca rozmiar danych rozszerzonych w bajtach.  
+ [out w] Zwraca rozmiar rozszerzone informacje w bajtach.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Obecnie ta metoda zwraca tylko typu lub wartości stałej. Obiekt wywołujący musi wolnego buforu zwracane w `prgBuffer` przez wywołanie modelu COM `CoTaskMemFree` — funkcja (C++) lub <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).  
+ Obecnie metoda ta zwraca tylko typ lub wartość stałą. Obiekt wywołujący należy zwolnić buforu zwracane w `prgBuffer` przez wywołanie modelu COM `CoTaskMemFree` — funkcja (C++) lub <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

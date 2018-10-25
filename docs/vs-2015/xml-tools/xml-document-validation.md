@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a09e4346c84982bdac6fa740c53dedf6444f9268
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b765efcfc01384a14bba6eb46cbaadd915e7752
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211526"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914271"
 ---
 # <a name="xml-document-validation"></a>Walidacja dokumentów XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ Edytor XML sprawdza składni XML 1.0 i wykonuje sprawdzanie poprawności danych 
   
  Schematy używane podczas sprawdzania poprawności znajdują się przez dopasowanie `targetNamespace` skompilowanych schematu z deklaracją xmlns elementu. Skompilowany schematy są załadowane z jednej z następujących lokalizacji, w kolejności priorytetu:  
   
--   Z pliku o nazwie określonej w **schematów** pola w oknie właściwości dokumentu.  
+- Z pliku o nazwie określonej w **schematów** pola w oknie właściwości dokumentu.  
   
--   Wbudowany schemat lub DTD.  
+- Wbudowany schemat lub DTD.  
   
--   Zewnętrznej definicji DTD lub `xsd:schemaLocation` i `xsd:noNamespaceSchemaLocation` atrybutu  
+- Zewnętrznej definicji DTD lub `xsd:schemaLocation` i `xsd:noNamespaceSchemaLocation` atrybutu  
   
--   "X-schema" XDR schematu identyfikatora URI obszaru nazw.  
+- "X-schema" XDR schematu identyfikatora URI obszaru nazw.  
   
- Schematy można także znaleźć w następujących lokalizacjach dodatkowych, jeśli schemat zawiera pusty docelowego obszaru nazw:  
+  Schematy można także znaleźć w następujących lokalizacjach dodatkowych, jeśli schemat zawiera pusty docelowego obszaru nazw:  
   
--   Inne okno edytora, która zawiera schemat.  
+- Inne okno edytora, która zawiera schemat.  
   
--   Schemat w bieżącym rozwiązaniu.  
+- Schemat w bieżącym rozwiązaniu.  
   
--   Schemat z katalogu pamięci podręcznej schematu.  
+- Schemat z katalogu pamięci podręcznej schematu.  
   
 ## <a name="xslt-files"></a>Pliki XSLT  
  Podczas edytowania pliku XSLT, plik xslt.xsd, znajdujący się w pamięci podręcznej schematów służy do sprawdzania poprawności. Błędy sprawdzania poprawności są wyświetlane jako niebieskie faliste podkreślenia. Błędy kompilatora XSLT są wyświetlane jako czerwone faliste podkreślenia.  

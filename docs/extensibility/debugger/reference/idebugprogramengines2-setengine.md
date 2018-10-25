@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c436500e54f128a4095b50b2332b0d21eef7d469
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9decc11ed13029831d78e1a79deb4134cc377e99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903208"
 ---
 # <a name="idebugprogramengines2setengine"></a>IDebugProgramEngines2::SetEngine
-Określa, że program lub program węzła który aparat debugowania (DE) na potrzeby debugowania tego programu.  
+Informuje program lub węzeł program który aparat debugowania (DE) do użycia, aby debugować ten program.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,7 +44,7 @@ int SetEngine(
  [in] Identyfikator GUID DE.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)

@@ -13,12 +13,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 350a379e14e526385776b815ce7e356a437d12af
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bb802aa9dd797004b61ab856dda7b7670f204c79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908245"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Tekst interfejsu użytkownika i pomoc dotyczącą programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -319,15 +319,15 @@ ms.locfileid: "49303819"
   
  To rozwiązanie zapewnia cztery założenia, które mogłyby spowodować usterki:  
   
--   Przycisk Pomoc w oknie dialogowym jest **IDHELP** (9).  
+- Przycisk Pomoc w oknie dialogowym jest **IDHELP** (9).  
   
--   Okno dialogowe wydaje się prawidłowe, gdy przycisk Pomoc jest ukryty.  
+- Okno dialogowe wydaje się prawidłowe, gdy przycisk Pomoc jest ukryty.  
   
--   Okno dialogowe nie zastąpić jej winproc.  
+- Okno dialogowe nie zastąpić jej winproc.  
   
--   Okno dialogowe nie jest osadzone wewnątrz innego okna dialogowego.  
+- Okno dialogowe nie jest osadzone wewnątrz innego okna dialogowego.  
   
- Jeśli znajduje się w obrębie msenv okna dialogowego, a nie korzysta z **VBDialogBoxParam**, Zbadaj, wykorzystując **VBDialogBoxParam** przed wdrożeniem własnego programu obsługi.  
+  Jeśli znajduje się w obrębie msenv okna dialogowego, a nie korzysta z **VBDialogBoxParam**, Zbadaj, wykorzystując **VBDialogBoxParam** przed wdrożeniem własnego programu obsługi.  
   
 ##### <a name="dialogs-created-through-other-packages"></a>Okna dialogowe utworzonych za pomocą innych pakietów  
  Można zaimplementować rozwiązania w oknach dialogowych, które znajdują się poza msenv. Klasy okien dialogowych udostępnione w Twojej pakietu VSPackage rozważ Przenoszenie przycisku paska tytułu lub wykonawcze programu obsługi dla każdego okna dialogowego. Następujący kod to szkielet tego wdrożenia, aby pomóc Ci rozpocząć pracę:  

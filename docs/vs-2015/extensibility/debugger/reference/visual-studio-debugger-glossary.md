@@ -16,12 +16,12 @@ ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 39cf7c116e1f05629f738ec536a9dab38100718f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a946eb1d8891bfb11179c480fde6369781fdd57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260133"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911450"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Słownik debugera programu Visual Studio
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -65,31 +65,31 @@ Poniżej przedstawiono terminów używanych w [!INCLUDE[vsprvs](../../../include
  Oczekujący punkt przerwania  
  Udostępnia abstrakcję do punktów przerwania przed, podczas i po kod jest załadowany i sposób wirtualizacji punktów przerwania. A oczekujących punktów przerwania:  
   
--   Zawiera wszystkie informacje potrzebne do powiązać punkt przerwania z kodu w jednym lub wielu programów.  
+- Zawiera wszystkie informacje potrzebne do powiązać punkt przerwania z kodu w jednym lub wielu programów.  
   
--   Może zostać powiązany z wieloma lokalizacjami kodu w jeden lub więcej programów.  
+- Może zostać powiązany z wieloma lokalizacjami kodu w jeden lub więcej programów.  
   
--   Nigdy nie wiąże się z kodu.  
+- Nigdy nie wiąże się z kodu.  
   
- Każdy kod w czasie ładowania, wszystkich oczekujących punktów przerwania w programie są sprawdzane w celu sprawdzenia, jeśli można powiązać. Oczekujący punkt przerwania jest nazywany ma zawierać wszystkie powiązane punkty przerwania, które powiąże.  
+  Każdy kod w czasie ładowania, wszystkich oczekujących punktów przerwania w programie są sprawdzane w celu sprawdzenia, jeśli można powiązać. Oczekujący punkt przerwania jest nazywany ma zawierać wszystkie powiązane punkty przerwania, które powiąże.  
   
- proces  
- Proces fizyczny Win32. Proces może zawierać wiele programów. Zobacz też *program*.  
+  proces  
+  Proces fizyczny Win32. Proces może zawierać wiele programów. Zobacz też *program*.  
   
- program  
- Jednej przestrzeni nazw działający szczególna Architektura środowiska wykonawczego. Zobacz też *procesu*.  
+  program  
+  Jednej przestrzeni nazw działający szczególna Architektura środowiska wykonawczego. Zobacz też *procesu*.  
   
- Menedżer debugowania sesji (SDM)  
- Zarządza dowolną liczbę aparaty debugowania debugowania dowolną liczbę programów w wielu procesach w dowolnej liczbie maszyn. Na podstawowym poziomie SDM jest multiplekser z aparatami debugowania. Ponadto SDM zapewnia spójny widok sesji debugowania środowiska IDE.  
+  Menedżer debugowania sesji (SDM)  
+  Zarządza dowolną liczbę aparaty debugowania debugowania dowolną liczbę programów w wielu procesach w dowolnej liczbie maszyn. Na podstawowym poziomie SDM jest multiplekser z aparatami debugowania. Ponadto SDM zapewnia spójny widok sesji debugowania środowiska IDE.  
   
- ramka stosu  
- Reprezentuje stan obliczeń na określoną ramkę i określonym poziomie zagnieżdżonych wywołań funkcji.  
+  ramka stosu  
+  Reprezentuje stan obliczeń na określoną ramkę i określonym poziomie zagnieżdżonych wywołań funkcji.  
   
- wątek  
- Pojęcie uogólnionego wykonywania instrukcji oparty na stosie, działające w co najmniej jeden program.  
+  wątek  
+  Pojęcie uogólnionego wykonywania instrukcji oparty na stosie, działające w co najmniej jeden program.  
   
- Ostrzeżenie punktu przerwania  
- Abstrakcja do opisywania ostrzeżenia w oczekującym punktem przerwania. Ostrzeżenie punktu przerwania w tym artykule opisano przyczyny, dlaczego oczekujący punkt przerwania nie została jeszcze powiązana z lokalizacji kodu. Może to być, czy kod nie załadował jeszcze do lokalizacji, w opisany przez oczekujący punkt przerwania lub innego powodu.  
+  Ostrzeżenie punktu przerwania  
+  Abstrakcja do opisywania ostrzeżenia w oczekującym punktem przerwania. Ostrzeżenie punktu przerwania w tym artykule opisano przyczyny, dlaczego oczekujący punkt przerwania nie została jeszcze powiązana z lokalizacji kodu. Może to być, czy kod nie załadował jeszcze do lokalizacji, w opisany przez oczekujący punkt przerwania lub innego powodu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozszerzalność debugera programu Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

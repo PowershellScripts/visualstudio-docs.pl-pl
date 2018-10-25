@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 84060ed018059f4b067b4744465bf4116f72841b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc6b015058445ddf35e5d247847a40d01e691047
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634741"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915818"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Przewodnik: Rozszerzanie Eksploratora serwera na potrzeby wyświetlania składników web Part
   W programie Visual Studio, można użyć **połączeń SharePoint** węźle **Eksploratora serwera** do wyświetlania składników w witrynach programu SharePoint. Jednak **Eksploratora serwera** nie jest wyświetlany domyślnie niektóre składniki. W tym przewodniku możesz rozszerzać **Eksploratora serwera** tak, aby wyświetlał galerii składników Web Part na każdy połączony witryny programu SharePoint.  
@@ -48,26 +48,26 @@ ms.locfileid: "42634741"
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Potrzebne są następujące składniki na komputerze deweloperskim w celu przeprowadzenia tego instruktażu:  
   
--   Obsługiwane wersje systemu Windows, SharePoint i Visual Studio.  
+- Obsługiwane wersje systemu Windows, SharePoint i Visual Studio.  
   
--   Program Visual Studio SDK. W tym instruktażu wykorzystano **projekt VSIX** szablonu w zestawie SDK, aby utworzyć pakiet VSIX do wdrożenia elementu projektu. Aby uzyskać więcej informacji, zobacz [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Program Visual Studio SDK. W tym instruktażu wykorzystano **projekt VSIX** szablonu w zestawie SDK, aby utworzyć pakiet VSIX do wdrożenia elementu projektu. Aby uzyskać więcej informacji, zobacz [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, aby ukończyć Instruktaż:  
+  Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, aby ukończyć Instruktaż:  
   
--   Za pomocą modelu obiektów serwera dla programu SharePoint. Aby uzyskać więcej informacji, zobacz [za pomocą modelu obiektów programu SharePoint Foundation po stronie serwera](http://go.microsoft.com/fwlink/?LinkId=177796).  
+- Za pomocą modelu obiektów serwera dla programu SharePoint. Aby uzyskać więcej informacji, zobacz [za pomocą modelu obiektów programu SharePoint Foundation po stronie serwera](http://go.microsoft.com/fwlink/?LinkId=177796).  
   
--   Składniki Web Part w rozwiązaniach programu SharePoint. Aby uzyskać więcej informacji, zobacz [przegląd części sieci Web](http://go.microsoft.com/fwlink/?LinkId=177803).  
+- Składniki Web Part w rozwiązaniach programu SharePoint. Aby uzyskać więcej informacji, zobacz [przegląd części sieci Web](http://go.microsoft.com/fwlink/?LinkId=177803).  
   
 ## <a name="create-the-projects"></a>Tworzenie projektów
  Do przeprowadzenia tego instruktażu, należy utworzyć trzy projekty:  
   
--   Projekt VSIX do stworzenia pakietu VSIX, aby wdrożyć rozszerzenie.  
+- Projekt VSIX do stworzenia pakietu VSIX, aby wdrożyć rozszerzenie.  
   
--   Projekt biblioteki klas, który implementuje rozszerzenie. Ten projekt musi być przeznaczony .NET Framework 4.5.  
+- Projekt biblioteki klas, który implementuje rozszerzenie. Ten projekt musi być przeznaczony .NET Framework 4.5.  
   
--   Projekt biblioteki klas, który definiuje niestandardowe polecenia programu SharePoint. Ten projekt musi być przeznaczony dla środowiska.NET Framework 3.5.  
+- Projekt biblioteki klas, który definiuje niestandardowe polecenia programu SharePoint. Ten projekt musi być przeznaczony dla środowiska.NET Framework 3.5.  
   
- Instruktaż należy rozpocząć od utworzenia projektów.  
+  Instruktaż należy rozpocząć od utworzenia projektów.  
   
 #### <a name="to-create-the-vsix-project"></a>Aby utworzyć projekt VSIX  
   

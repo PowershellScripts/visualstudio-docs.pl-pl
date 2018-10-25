@@ -1,5 +1,5 @@
 ---
-title: IDiaFrameData::execute | Dokumentacja firmy Microsoft
+title: Idiaframedata::EXECUTE — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0645d2364712769a6b4f18ef14fbbcb503a51888
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 66b8f904ac8add69db0c6d1760b5427cb8c802ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918359"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 Wykonuje odwijanie stosu i zwraca wyniki w interfejsie ramki przeszukiwania stosu.  
@@ -34,20 +34,20 @@ HRESULT execute (
   
 #### <a name="parameters"></a>Parametry  
  `frame`  
- [in] [Idiastackwalkframe —](../../debugger/debug-interface-access/idiastackwalkframe.md) obiektu, która przechowuje stan rejestrów ramki.  
+ [in] [Idiastackwalkframe —](../../debugger/debug-interface-access/idiastackwalkframe.md) obiekt, który zawiera stan rejestrów ramki.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono możliwe wartości zwracane dla tej metody.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. W poniższej tabeli przedstawiono możliwe wartości zwracane dla tej metody.  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|E_DIA_INPROLOG|Nie można wykonać ramka stosu znajduje się w prologu kodu.|  
+|E_DIA_INPROLOG|Nie można wykonać ramkę stosu w kodzie prologu.|  
 |E_DIA_SYNTAX|Błąd wystąpił w programie ramki analizy.|  
 |E_DIA_FRAME_ACCESS|Nie można rejestrów dostępu lub pamięci.|  
-|E_DIA_VALUE|Wystąpił błąd podczas obliczania wartości (na przykład dzielenie przez zero).|  
+|E_DIA_VALUE|Wystąpił błąd podczas obliczania wartości (na przykład, dzielenie przez zero).|  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest wywoływana podczas debugowania na Odwiń stos. [Idiastackwalkframe —](../../debugger/debug-interface-access/idiastackwalkframe.md) obiektu jest zaimplementowana przez aplikację klienta, aby otrzymywać aktualizacje w rejestrach i dostarcza metod używanych przez `execute` metody.  
+ Ta metoda jest wywoływana podczas debugowania do odkręcanie stosu. [Idiastackwalkframe —](../../debugger/debug-interface-access/idiastackwalkframe.md) obiektu jest implementowany przez aplikację klienta, aby otrzymywać aktualizacje w rejestrach i dostarcza metod używanych przez `execute` metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md)   

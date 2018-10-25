@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 876e901e13a2fe25957744665e54f703e209fc7d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c179639c0ab559ae4147559b9279fb7ef694c45c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251189"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912802"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0 x / 2 x / 4 x MSAA wariantów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,23 +39,23 @@ Zastąpienia wielu przykładowe Wygładzanie (MSAA) ustawień dla wszystkich ele
 ## <a name="remarks"></a>Uwagi  
  Te wariantów Zastąp przykładowe jakość próbkowania i liczba argumentów dla wywołań `ID3DDevice::CreateTexture2D` które tworzą elementy docelowe renderowania. W szczególności te parametry zostaną zastąpione, gdy:  
   
--   `D3D11_TEXTURE2D_DESC` Obiekt przekazany w `pDesc` opisuje obiekt docelowy renderowania; który jest:  
+- `D3D11_TEXTURE2D_DESC` Obiekt przekazany w `pDesc` opisuje obiekt docelowy renderowania; który jest:  
   
-    -   Element członkowski BindFlags ma flagę D3D11_BIND_TARGET albo ustawiona jest flaga D3D11_BIND_DEPTH_STENCIL.  
+  -   Element członkowski BindFlags ma flagę D3D11_BIND_TARGET albo ustawiona jest flaga D3D11_BIND_DEPTH_STENCIL.  
   
-    -   Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT.  
+  -   Użycie elementu członkowskiego jest równa D3D11_USAGE_DEFAULT.  
   
-    -   Element członkowski CPUAccessFlags jest równa 0.  
+  -   Element członkowski CPUAccessFlags jest równa 0.  
   
-    -   Element członkowski MipLevels jest ustawiona na 1.  
+  -   Element członkowski MipLevels jest ustawiona na 1.  
   
--   Urządzenie obsługuje liczność próbki żądanej (0, 2 lub 4) i jakość próbkowania (0) dla żądanego docelowej format (członek D3D11_TEXTURE2D_DESC::Format), zgodnie z ustaleniami renderowania `ID3D11Device::CheckMultisampleQualityLevels`.  
+- Urządzenie obsługuje liczność próbki żądanej (0, 2 lub 4) i jakość próbkowania (0) dla żądanego docelowej format (członek D3D11_TEXTURE2D_DESC::Format), zgodnie z ustaleniami renderowania `ID3D11Device::CheckMultisampleQualityLevels`.  
   
- Jeśli element członkowski D3D11_TEXTURE2D_DESC::BindFlags ma D3D_BIND_SHADER_RESOUCE lub D3D11_BIND_UNORDERED_ACCESS flag ustawionych, są tworzone dwie wersje tekstury; pierwszy ma tych flag wyczyszczone do użycia jako obiektu docelowego renderowania, a drugi to teksturę bez MSAA, która ma te flagi niezmienione może pełnić rolę bufora rozwiązania dla pierwszej wersji. Jest to konieczne, ponieważ prawdopodobnie nie będzie obowiązywać przy użyciu tekstury MSAA jako zasób programu do cieniowania lub nieuporządkowanego dostępu — na przykład programu do cieniowania, działające na nim będzie wygenerować niepoprawne wyniki, ponieważ go oczekiwać tekstury bez MSAA. Jeśli wariant utworzył tekstury dodatkowej bez MSAA, następnie zawsze wtedy, gdy cel renderowania MSAA usunięta z kontekstu urządzenia, jego zawartość są rozwiązywane do tekstury bez MSAA. Podobnie zawsze wtedy, gdy renderowania MSAA docelowy powinien zostać powiązany jako zasób programu do cieniowania lub jest używany w widok nieuporządkowanego dostępu, tekstury rozwiązany bez MSAA jest powiązana zamiast tego.  
+  Jeśli element członkowski D3D11_TEXTURE2D_DESC::BindFlags ma D3D_BIND_SHADER_RESOUCE lub D3D11_BIND_UNORDERED_ACCESS flag ustawionych, są tworzone dwie wersje tekstury; pierwszy ma tych flag wyczyszczone do użycia jako obiektu docelowego renderowania, a drugi to teksturę bez MSAA, która ma te flagi niezmienione może pełnić rolę bufora rozwiązania dla pierwszej wersji. Jest to konieczne, ponieważ prawdopodobnie nie będzie obowiązywać przy użyciu tekstury MSAA jako zasób programu do cieniowania lub nieuporządkowanego dostępu — na przykład programu do cieniowania, działające na nim będzie wygenerować niepoprawne wyniki, ponieważ go oczekiwać tekstury bez MSAA. Jeśli wariant utworzył tekstury dodatkowej bez MSAA, następnie zawsze wtedy, gdy cel renderowania MSAA usunięta z kontekstu urządzenia, jego zawartość są rozwiązywane do tekstury bez MSAA. Podobnie zawsze wtedy, gdy renderowania MSAA docelowy powinien zostać powiązany jako zasób programu do cieniowania lub jest używany w widok nieuporządkowanego dostępu, tekstury rozwiązany bez MSAA jest powiązana zamiast tego.  
   
- Te wariantów również zastąpienia ustawień MSAA wszystkie łańcuchy wymiany utworzone za pomocą `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition`, i `ID3D11CreateDeviceAndSwapChain`.  
+  Te wariantów również zastąpienia ustawień MSAA wszystkie łańcuchy wymiany utworzone za pomocą `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition`, i `ID3D11CreateDeviceAndSwapChain`.  
   
- Net te zmiany powoduje, że renderowanie wszystkich odbywa się do obiektu docelowego renderowania MSAA, ale jeśli aplikacja używa jednej z tych renderowania elementów docelowych lub łańcucha wymiany buforów jako widok zasobów programu do cieniowania lub widok nieuporządkowanego dostępu, a następnie próbkowania danych z rozwiązania , bez MSAA kopię obiektu docelowego renderowania.  
+  Net te zmiany powoduje, że renderowanie wszystkich odbywa się do obiektu docelowego renderowania MSAA, ale jeśli aplikacja używa jednej z tych renderowania elementów docelowych lub łańcucha wymiany buforów jako widok zasobów programu do cieniowania lub widok nieuporządkowanego dostępu, a następnie próbkowania danych z rozwiązania , bez MSAA kopię obiektu docelowego renderowania.  
   
 ## <a name="restrictions-and-limitations"></a>Ograniczenia i ograniczenia  
  W Direct3D11 MSAA tekstury są bardziej ograniczony w innych MSAA tekstury. Na przykład nie można wywołać `ID3D11DeviceContext::UpdateSubresource` MSAA tekstury i wywoływania `ID3D11DeviceContext::CopySubresourceRegion` zakończy się niepowodzeniem, jeśli liczba próbek i jakość próbkowania zasobu źródłowego i docelowego zasobu nie są zgodne, które mogą wystąpić, gdy ten wariant zastępuje ustawienia MSAA jednej zasób, ale nie drugiej.  

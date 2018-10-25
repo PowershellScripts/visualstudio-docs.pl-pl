@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0da11c3f3f517f15d8ce4430f9437d476679f5b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 481e4c76869e4a352607835800d232c3d2075569
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125554"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917781"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 Ta struktura reprezentuje adres metody klasy.  
@@ -47,16 +47,16 @@ public struct METADATA_ADDRESS_METHOD {
  tokMethod  
  Identyfikator metody.  
   
- [C++] `_mdToken` jest `typedef` dla 32-bitowej `int`.  
+ [C++] `_mdToken` jest `typedef` dla 32-bitowych `int`.  
   
  dwOffset  
  Przesunięcie od początku klasy do tej metody (może reprezentować przesunięcie w vtable).  
   
- wersja magazynu danych  
- Wersja metody (Ta wartość jest unikatowa dla dostawcy symbolu).  
+ Źródła  
+ Wersja metody (Ta wartość jest unikatowa dla dostawcy symbol).  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest częścią Unii w [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struktury, kiedy `dwKind` pole `DEBUG_ADDRESS_UNION` ustawiono struktury `ADDRESS_KIND_METHOD` (wartość z zakresu od [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Wyliczenie).  
+ Ta struktura jest częścią Unii w [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) struktury, kiedy `dwKind` pole `DEBUG_ADDRESS_UNION` struktury jest ustawiona na `ADDRESS_KIND_METHOD` (wartość z zakresu od [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) Wyliczenie).  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  
@@ -66,6 +66,6 @@ public struct METADATA_ADDRESS_METHOD {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

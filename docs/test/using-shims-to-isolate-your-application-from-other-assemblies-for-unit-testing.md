@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: da8ff01bed6446cc497c41ad21894c70df090efb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 53bddbda7ed89a0d826e135d7989c1b8a01ce594
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380834"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915246"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Stosowanie podkładek do izolowania aplikacji od innych zestawów w celu przeprowadzania testów jednostkowych
 
@@ -435,7 +435,6 @@ To zachowanie można zmienić w dowolnym momencie przez ustawienie `InstanceBeha
 var shim = new ShimMyClass();
 //return default(T) or do nothing
 shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
-
 ```
 
 To zachowanie można także zmienić globalnie dla wszystkich wystąpień typu shim dla którego `InstanceBehavior` właściwość nie została jawnie ustawiona przez ustawienie statycznego `ShimsBehaviors.Current` właściwości:

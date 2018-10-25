@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 082471c04bd8354e392a075f1ff559961cd402ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14517a3f941ae7d177c876a48a400113c775fdb2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194131"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897878"
 ---
 # <a name="gpu-usage"></a>Użycie procesora GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,52 +33,52 @@ Użyj narzędzie użycie procesora GPU w programie Visual Studio Centrum wydajno
 ## <a name="requirements"></a>Wymagania  
  Poniżej przedstawiono wymagania dotyczące korzystania z narzędzia użycie procesora GPU, które obowiązują oprócz wymagań diagnostyki grafiki.  
   
--   Procesora GPU i sterowników, które obsługują Instrumentacji niezbędne chronometrażu.  
+- Procesora GPU i sterowników, które obsługują Instrumentacji niezbędne chronometrażu.  
   
-    > [!NOTE]
-    >  Aby uzyskać więcej informacji na temat obsługiwanego sprzętu i sterowniki, zobacz [sprzętu i sterowników, które obsługują](#hwsupport) na końcu tego dokumentu.  
+  > [!NOTE]
+  >  Aby uzyskać więcej informacji na temat obsługiwanego sprzętu i sterowniki, zobacz [sprzętu i sterowników, które obsługują](#hwsupport) na końcu tego dokumentu.  
   
- Aby uzyskać więcej informacji na temat wymagań dotyczących diagnostyki grafiki, zobacz [wprowadzenie](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
+  Aby uzyskać więcej informacji na temat wymagań dotyczących diagnostyki grafiki, zobacz [wprowadzenie](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="using-the-gpu-usage-tool"></a>Za pomocą narzędzia użycie procesora GPU  
  Po uruchomieniu aplikacji w narzędziu użycie procesora GPU, Visual Studio tworzy sesję diagnostyki, wykresów ogólne informacje o aplikacji wydajność renderowania i użycie procesora GPU w czasie rzeczywistym.  
   
 #### <a name="to-start-the-gpu-usage-tool"></a>Aby uruchomić narzędzie użycie procesora GPU:  
   
-1.  W menu głównym wybierz **debugowania**, następnie **wydajności i diagnostyki** (klawiatura: naciśnij klawisze Alt + F2).  
+1. W menu głównym wybierz **debugowania**, następnie **wydajności i diagnostyki** (klawiatura: naciśnij klawisze Alt + F2).  
   
-2.  W Centrum wydajności i diagnostyki, zaznacz pole wyboru obok pozycji **użycie procesora GPU**. Opcjonalnie zaznacz pola wyboru obok inne narzędzia, których interesuje Cię. Możesz uruchomić kilka wydajności i narzędzia diagnostyczne jednocześnie, aby uzyskać pełniejszy obraz wydajności Twojej aplikacji.  
+2. W Centrum wydajności i diagnostyki, zaznacz pole wyboru obok pozycji **użycie procesora GPU**. Opcjonalnie zaznacz pola wyboru obok inne narzędzia, których interesuje Cię. Możesz uruchomić kilka wydajności i narzędzia diagnostyczne jednocześnie, aby uzyskać pełniejszy obraz wydajności Twojej aplikacji.  
   
-     ![Wybierz narzędzia diagnostyczne, którego chcesz użyć. ](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
+    ![Wybierz narzędzia diagnostyczne, którego chcesz użyć. ](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
-    > [!NOTE]
-    >  Nie wszystkie narzędzia wydajności i diagnostyki, można w tym samym czasie.  
+   > [!NOTE]
+   >  Nie wszystkie narzędzia wydajności i diagnostyki, można w tym samym czasie.  
   
-3.  Wybierz niebieski **Start** znajdujący się u dołu Centrum wydajności i diagnostyki, aby uruchomić aplikację w obszarze narzędzia wybrane.  
+3. Wybierz niebieski **Start** znajdujący się u dołu Centrum wydajności i diagnostyki, aby uruchomić aplikację w obszarze narzędzia wybrane.  
   
- Ogólne informacje, które jest wyświetlane w czasie rzeczywistym obejmuje czas ramki, szybkości klatek i użycia procesora GPU. Każda z tych rodzajów informacji wykresie przedstawia możliwościom niezależnie, ale Użyj skali typowy moment, można łatwo powiązać między nimi.  
+   Ogólne informacje, które jest wyświetlane w czasie rzeczywistym obejmuje czas ramki, szybkości klatek i użycia procesora GPU. Każda z tych rodzajów informacji wykresie przedstawia możliwościom niezależnie, ale Użyj skali typowy moment, można łatwo powiązać między nimi.  
   
- **Ramki czas (ms)** i **klatek na sekundę (kl. / s)** wykresów zawiera dwa czerwony, poziomych linii przeznaczonego wydajności reprezentują 60 i 30 klatek na sekundę. W **ramki czasu** wykres, Twoja aplikacja jest przekroczenie element docelowy wydajności, gdy wykres jest poniżej wiersza i go brakuje, gdy wykres jest powyżej wiersza. Liczba klatek na drugi wykres jest przeciwieństwem — Twoja aplikacja jest przekroczenie element docelowy wydajności, gdy wykres jest powyżej wiersza i go brakuje, gdy wykres jest poniżej wiersza. Przede wszystkim te wykresy są używane, można pobrać pomysłem wysokiego poziomu wydajności Twojej aplikacji i zidentyfikować slow-downs, które możesz chcieć zbadać — na przykład, szybkości klatek nagły spadek lub wzrost użycia procesora GPU.  
+   **Ramki czas (ms)** i **klatek na sekundę (kl. / s)** wykresów zawiera dwa czerwony, poziomych linii przeznaczonego wydajności reprezentują 60 i 30 klatek na sekundę. W **ramki czasu** wykres, Twoja aplikacja jest przekroczenie element docelowy wydajności, gdy wykres jest poniżej wiersza i go brakuje, gdy wykres jest powyżej wiersza. Liczba klatek na drugi wykres jest przeciwieństwem — Twoja aplikacja jest przekroczenie element docelowy wydajności, gdy wykres jest powyżej wiersza i go brakuje, gdy wykres jest poniżej wiersza. Przede wszystkim te wykresy są używane, można pobrać pomysłem wysokiego poziomu wydajności Twojej aplikacji i zidentyfikować slow-downs, które możesz chcieć zbadać — na przykład, szybkości klatek nagły spadek lub wzrost użycia procesora GPU.  
   
- Podczas wykonywania aplikacji w narzędziu użycie procesora GPU, sesja diagnostyki zbiera również szczegółowe informacje dotyczące zdarzenia grafiki, które zostały wykonane na procesorze GPU. Te informacje jest używane do generowania bardziej szczegółowy raport o jak Twoja aplikacja korzysta z sprzętu. Ponieważ ten raport wymaga pewnego czasu, aby wygenerować z zebranych informacji, jest on dostępny tylko po wykonaniu czynności zbieranie informacji o sesji diagnostycznej.  
+   Podczas wykonywania aplikacji w narzędziu użycie procesora GPU, sesja diagnostyki zbiera również szczegółowe informacje dotyczące zdarzenia grafiki, które zostały wykonane na procesorze GPU. Te informacje jest używane do generowania bardziej szczegółowy raport o jak Twoja aplikacja korzysta z sprzętu. Ponieważ ten raport wymaga pewnego czasu, aby wygenerować z zebranych informacji, jest on dostępny tylko po wykonaniu czynności zbieranie informacji o sesji diagnostycznej.  
   
- Podczas chcesz Przyjrzyj się wydajności lub wykorzystania wystawiać dokładniej, zatrzymać zbieranie informacji o wydajności, dzięki czemu można wygenerować raport.  
+   Podczas chcesz Przyjrzyj się wydajności lub wykorzystania wystawiać dokładniej, zatrzymać zbieranie informacji o wydajności, dzięki czemu można wygenerować raport.  
   
 #### <a name="to-generate-and-view-the-gpu-usage-report"></a>Aby wygenerować i wyświetlić raport użycia procesora GPU:  
   
-1.  W dolnej części okna sesji diagnostyki wybierz **Zatrzymaj Kolekcjonowanie** łącze lub naciśnij **zatrzymać** w lewym górnym rogu.  
+1. W dolnej części okna sesji diagnostyki wybierz **Zatrzymaj Kolekcjonowanie** łącze lub naciśnij **zatrzymać** w lewym górnym rogu.  
   
-     ![Zbieraj informacje o czasie procesorów GPU i CPU. ](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![Zbieraj informacje o czasie procesorów GPU i CPU. ](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
-2.  W górnej części raportu wybierz sekcję jeden z wykresów, które przedstawiono ten problem, które chcesz zbadać. Wybór może być maksymalnie 3 sekundy długie. dłużej sekcje są obcinane w kierunku początku.  
+2. W górnej części raportu wybierz sekcję jeden z wykresów, które przedstawiono ten problem, które chcesz zbadać. Wybór może być maksymalnie 3 sekundy długie. dłużej sekcje są obcinane w kierunku początku.  
   
-     ![Wpis&#45;kolekcji, wybierz zakres, aby wyświetlić szczegóły](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![Wpis&#45;kolekcji, wybierz zakres, aby wyświetlić szczegóły](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
-3.  W dolnej części raportu, wybierz **wyświetlić szczegóły** łącze w **... Kliknij tutaj, aby wyświetlić szczegóły użycia procesora GPU dla tego zakresu** komunikat, aby wyświetlić szczegółowe osi czasu zaznaczenia.  
+3. W dolnej części raportu, wybierz **wyświetlić szczegóły** łącze w **... Kliknij tutaj, aby wyświetlić szczegóły użycia procesora GPU dla tego zakresu** komunikat, aby wyświetlić szczegółowe osi czasu zaznaczenia.  
   
-     ![Wpis&#45;kolekcji z zakresem wybrane](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![Wpis&#45;kolekcji z zakresem wybrane](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
- Spowoduje to otwarcie nowego dokumentu z zakładkami, który zawiera raport. Raport użycia procesora GPU pomaga Zobacz rozpoczęcia zdarzenia grafiki na procesorze CPU, po dotarciu serwerów do procesora GPU i czas trwania procesora GPU do jego wykonania. Te informacje mogą pomóc w identyfikacji wąskich gardeł i możliwości zwiększenia równoległości w kodzie.  
+   Spowoduje to otwarcie nowego dokumentu z zakładkami, który zawiera raport. Raport użycia procesora GPU pomaga Zobacz rozpoczęcia zdarzenia grafiki na procesorze CPU, po dotarciu serwerów do procesora GPU i czas trwania procesora GPU do jego wykonania. Te informacje mogą pomóc w identyfikacji wąskich gardeł i możliwości zwiększenia równoległości w kodzie.  
   
 ## <a name="using-the-gpu-usage-report"></a>Za pomocą funkcji Zgłoś użycie procesora GPU  
  Górna część raport użycia procesora GPU przedstawia wykorzystanie Procesora działania, procesora GPU renderowanie aktywności i działania kopiowania procesora GPU osi czasu. Te osi czasu są podzielone według jasnoszary, pionowych słupków, które reprezentują pionie wyświetlania; częstotliwość pasków odpowiada częstotliwość odświeżania jednego zawiera (wybrany za pomocą **wyświetlania** listy rozwijanej) zostały zebrane tych danych użycia procesora GPU. Ponieważ wyświetlanie może być wyższa częstotliwość odświeżania od elementu docelowego wydajności aplikacji może nie być relacja 1 do 1 pionie i chcesz, aby aplikację, aby osiągnąć szybkość klatek. Do swojego docelowego wydajności aplikacji musi ukończenia całego procesu przetwarzania, wykonywanie renderowania i wywoływania Present() w docelowej szybkość klatek, ale Wyrenderowana ramka nie będą wyświetlane do czasu następnego pionie po Present().  

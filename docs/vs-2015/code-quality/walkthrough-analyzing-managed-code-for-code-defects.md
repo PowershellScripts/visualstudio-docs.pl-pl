@@ -18,12 +18,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0c8bf9d1f293895c762348752b64c7be8cf6d510
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b9d6aba5997182578b43ac9edd3c889bcfc365e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217488"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912893"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Wskazówki: analizowanie zarządzanego kodu pod względem wad kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,81 +98,81 @@ W tym przewodniku możesz analizować za pomocą narzędzia do analizy kodu zarz
   
 4.  Aby poprawić ostrzeżenia, należy użyć następujących:  
   
--   [CA1014: Oznacz zestawy atrybutem CLSCompliant](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: "pokaz" powinien być oznaczony atrybutem CLSCompliant, a jej wartość powinna być prawdziwe.  
+- [CA1014: Oznacz zestawy atrybutem CLSCompliant](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Microsoft.Design: "pokaz" powinien być oznaczony atrybutem CLSCompliant, a jej wartość powinna być prawdziwe.  
   
-    -   Dodaj kod `using``System;` w pliku AssemblyInfo.cs.  
+  -   Dodaj kod `using``System;` w pliku AssemblyInfo.cs.  
   
-         Następnie dodaj ten kod `[assembly: CLSCompliant(true)]` -to-end w pliku AssemblyInfo.cs.  
+       Następnie dodaj ten kod `[assembly: CLSCompliant(true)]` -to-end w pliku AssemblyInfo.cs.  
   
-         Skompiluj ponownie projekt.  
+       Skompiluj ponownie projekt.  
   
--   [CA1032: Zaimplementuj standardowe konstruktory wyjątku](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następującego konstruktora do klasy: demo(String) publiczne  
+- [CA1032: Zaimplementuj standardowe konstruktory wyjątku](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następującego konstruktora do klasy: demo(String) publiczne  
   
-    -   Dodaj Konstruktor `public demo (String s) : base(s) { }` do klasy `demo`.  
+  -   Dodaj Konstruktor `public demo (String s) : base(s) { }` do klasy `demo`.  
   
--   [CA1032: Zaimplementuj standardowe konstruktory wyjątku](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następującego konstruktora do klasy: Pokaz publiczny (String, wyjątku)  
+- [CA1032: Zaimplementuj standardowe konstruktory wyjątku](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następującego konstruktora do klasy: Pokaz publiczny (String, wyjątku)  
   
-    -   Dodaj Konstruktor `public demo (String s, Exception e) : base(s, e) { }` do klasy `demo`.  
+  -   Dodaj Konstruktor `public demo (String s, Exception e) : base(s, e) { }` do klasy `demo`.  
   
--   [CA1032: Zaimplementuj standardowe konstruktory wyjątku](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następującego konstruktora do klasy: chronione pokaz (SerializationInfo, StreamingContext)  
+- [CA1032: Zaimplementuj standardowe konstruktory wyjątku](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następującego konstruktora do klasy: chronione pokaz (SerializationInfo, StreamingContext)  
   
-    -   Dodaj kod `using System.Runtime.Serialization;` na początku pliku Class1.cs.  
+  -   Dodaj kod `using System.Runtime.Serialization;` na początku pliku Class1.cs.  
   
-         Następnie dodaj Konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`  
+       Następnie dodaj Konstruktor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { } to the class demo.`  
   
-         Skompiluj ponownie projekt.  
+       Skompiluj ponownie projekt.  
   
--   [CA1032: Zaimplementuj standardowe konstruktory wyjątku](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następującego konstruktora do klasy: help.Start() publiczne  
+- [CA1032: Zaimplementuj standardowe konstruktory wyjątku](../code-quality/ca1032-implement-standard-exception-constructors.md): Microsoft.Design: Dodaj następującego konstruktora do klasy: help.Start() publiczne  
   
-    -   Dodaj Konstruktor `public demo () : base() { }` do klasy `demo` **.**  
+  -   Dodaj Konstruktor `public demo () : base() { }` do klasy `demo` **.**  
   
-         Skompiluj ponownie projekt.  
+       Skompiluj ponownie projekt.  
   
--   [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: poprawianie wielkości liter nazwy przestrzeni nazw "testCode" przez zmianę na "TestCode".  
+- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: poprawianie wielkości liter nazwy przestrzeni nazw "testCode" przez zmianę na "TestCode".  
   
-    -   Zmień wielkość liter w wyrazie przestrzeń nazw `testCode` do `TestCode`.  
+  -   Zmień wielkość liter w wyrazie przestrzeń nazw `testCode` do `TestCode`.  
   
--   [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Popraw wielkość liter w wyrazie nazwy typu "pokaz" przez zmianę na "Pokaz".  
+- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Popraw wielkość liter w wyrazie nazwy typu "pokaz" przez zmianę na "Pokaz".  
   
-    -   Zmień nazwę elementu członkowskiego do `Demo`.  
+  -   Zmień nazwę elementu członkowskiego do `Demo`.  
   
--   [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Popraw wielkość liter w wyrazie name "elementu członkowskiego" przez zmianę na "Item".  
+- [CA1709: Identyfikatory powinny mieć prawidłową wielkość liter](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): Microsoft.Naming: Popraw wielkość liter w wyrazie name "elementu członkowskiego" przez zmianę na "Item".  
   
-    -   Zmień nazwę elementu członkowskiego do `Item`.  
+  -   Zmień nazwę elementu członkowskiego do `Item`.  
   
--   [CA1710: Identyfikatory powinny mieć poprawny sufiks](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: zmiana nazwy 'testCode.demo", aby kończyła się"Exception".  
+- [CA1710: Identyfikatory powinny mieć poprawny sufiks](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): Microsoft.Naming: zmiana nazwy 'testCode.demo", aby kończyła się"Exception".  
   
-    -   Zmień nazwę klasy i jego konstruktorów do `DemoException`.  
+  -   Zmień nazwę klasy i jego konstruktorów do `DemoException`.  
   
--   [CA2210: Zestawy powinny mieć prawidłowe silne nazwy](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Podpisz "ManagedDemo" przy użyciu klucz silnej nazwy.  
+- [CA2210: Zestawy powinny mieć prawidłowe silne nazwy](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md): Podpisz "ManagedDemo" przy użyciu klucz silnej nazwy.  
   
-    -   Na **projektu** menu, kliknij przycisk **właściwości ManagedDemo**.  
+  -   Na **projektu** menu, kliknij przycisk **właściwości ManagedDemo**.  
   
-         Właściwości projektu są wyświetlane.  
+       Właściwości projektu są wyświetlane.  
   
-         Kliknij przycisk **podpisywania**.  
+       Kliknij przycisk **podpisywania**.  
   
-         Wybierz **Podpisz zestaw** pole wyboru.  
+       Wybierz **Podpisz zestaw** pole wyboru.  
   
-         W **wybierz plik klucza o nazwie ciąg** listy wybierz  **\<nowy... >**.  
+       W **wybierz plik klucza o nazwie ciąg** listy wybierz  **\<nowy... >**.  
   
-         **Utwórz klucz silnej nazwy** pojawi się okno dialogowe.  
+       **Utwórz klucz silnej nazwy** pojawi się okno dialogowe.  
   
-         W **nazwę pliku klucza**, wpisz TestKey.  
+       W **nazwę pliku klucza**, wpisz TestKey.  
   
-         Wprowadź hasło, a następnie kliknij przycisk **OK**.  
+       Wprowadź hasło, a następnie kliknij przycisk **OK**.  
   
-         Na **pliku** menu, kliknij przycisk **Zapisz wybrane elementy**, a następnie zamknij na stronach właściwości.  
+       Na **pliku** menu, kliknij przycisk **Zapisz wybrane elementy**, a następnie zamknij na stronach właściwości.  
   
-         Skompiluj ponownie projekt.  
+       Skompiluj ponownie projekt.  
   
--   [CA2237: Oznacz typy ISerializable atrybutem SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Dodaj atrybut [Serializable] do typu "pokaz", ponieważ ten typ implementuje interfejs ISerializable.  
+- [CA2237: Oznacz typy ISerializable atrybutem SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md): Microsoft.Usage: Dodaj atrybut [Serializable] do typu "pokaz", ponieważ ten typ implementuje interfejs ISerializable.  
   
-    -   Dodaj `[Serializable ()]` do klasy atrybutu `demo`.  
+  -   Dodaj `[Serializable ()]` do klasy atrybutu `demo`.  
   
-         Skompiluj ponownie projekt.  
+       Skompiluj ponownie projekt.  
   
- Po zakończeniu zmiany pliku Class1.cs powinien wyglądać następująco:  
+  Po zakończeniu zmiany pliku Class1.cs powinien wyglądać następująco:  
   
 ```  
 //CodeAnalysisManagedDemo  
@@ -202,17 +202,17 @@ namespace TestCode
   
 #### <a name="to-exclude-code-defect-warnings"></a>Aby wyłączyć ostrzeżenia wad kodu  
   
-1.  Dla każdej z pozostałych ostrzeżenia należy wykonać następujące czynności:  
+1. Dla każdej z pozostałych ostrzeżenia należy wykonać następujące czynności:  
   
-    1.  W oknie analizy kodu zaznacz ostrzeżenie.  
+   1. W oknie analizy kodu zaznacz ostrzeżenie.  
   
-    2.  Wybierz **akcje**, następnie wybierz **Pomiń komunikat**, a następnie wybierz **w pliku pominięć projektu**.  
+   2. Wybierz **akcje**, następnie wybierz **Pomiń komunikat**, a następnie wybierz **w pliku pominięć projektu**.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: pomijanie ostrzeżeń przy użyciu elementu Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
+      Aby uzyskać więcej informacji, zobacz [porady: pomijanie ostrzeżeń przy użyciu elementu Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)  
   
-2.  Skompiluj ponownie projekt.  
+2. Skompiluj ponownie projekt.  
   
-     Projekt zostanie skompilowany bez żadnych ostrzeżeń ani błędów.
+    Projekt zostanie skompilowany bez żadnych ostrzeżeń ani błędów.
 
 
 

@@ -15,12 +15,12 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70bcea2599ac318d59255a274629b5c53cea730
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223222"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889792"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Dodawanie poleceń i gestów do diagramów warstw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ Można zdefiniować polecenia w menu kontekstowym i elemencie obsługi gestu na 
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>Aby zdefiniować rozszerzenie przy użyciu szablonu projektu  
   
-1.  Tworzenie projektu w nowym rozwiązaniu za pomocą **nowy projekt** polecenie **pliku** menu.  
+1. Tworzenie projektu w nowym rozwiązaniu za pomocą **nowy projekt** polecenie **pliku** menu.  
   
-2.  W **nowy projekt** dialogowego **projekty modelowania**, wybierz opcję **rozszerzenia polecenia projektanta warstwy** lub **rozszerzenia gestu projektanta warstwy** .  
+2. W **nowy projekt** dialogowego **projekty modelowania**, wybierz opcję **rozszerzenia polecenia projektanta warstwy** lub **rozszerzenia gestu projektanta warstwy** .  
   
-     Ten szablon tworzy projekt zawierający krótki przykład roboczy.  
+    Ten szablon tworzy projekt zawierający krótki przykład roboczy.  
   
-3.  Aby przetestować rozszerzenie, naciśnij klawisz **kombinację klawiszy CTRL + F5** lub **F5**.  
+3. Aby przetestować rozszerzenie, naciśnij klawisz **kombinację klawiszy CTRL + F5** lub **F5**.  
   
-     Eksperymentalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpoczyna się. W tym wypadku Utwórz diagram warstwy. Rozszerzenia poleceń lub gest powinny działać na tym diagramie.  
+    Eksperymentalne wystąpienie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozpoczyna się. W tym wypadku Utwórz diagram warstwy. Rozszerzenia poleceń lub gest powinny działać na tym diagramie.  
   
-4.  Zamknij wystąpienie doświadczalne i Modyfikuj przykładowy kod. Aby uzyskać więcej informacji, zobacz [Navigate i aktualizacji warstwy modeli w kodzie programu](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+4. Zamknij wystąpienie doświadczalne i Modyfikuj przykładowy kod. Aby uzyskać więcej informacji, zobacz [Navigate i aktualizacji warstwy modeli w kodzie programu](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-5.  Możesz dodać więcej programów obsługi polecenia lub gestu w tym samym projekcie. Aby uzyskać więcej informacji zobacz jeden z następujących sekcji:  
+5. Możesz dodać więcej programów obsługi polecenia lub gestu w tym samym projekcie. Aby uzyskać więcej informacji zobacz jeden z następujących sekcji:  
   
-     [Definiowanie polecenia Menu](#command)  
+    [Definiowanie polecenia Menu](#command)  
   
-     [Definiowanie procedury obsługi gestu](#gesture)  
+    [Definiowanie procedury obsługi gestu](#gesture)  
   
-6.  Aby zainstalować rozszerzenie w głównym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku **bin\\\***. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, należy użyć **rozszerzenia i aktualizacje** na **narzędzia** menu.  
+6. Aby zainstalować rozszerzenie w głównym wystąpieniu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], lub na innym komputerze, należy znaleźć **.vsix** w pliku *bin\\*. Skopiuj go na komputerze, na którym chcesz go zainstalować i kliknij go dwukrotnie. Aby odinstalować go, należy użyć **rozszerzenia i aktualizacje** na **narzędzia** menu.  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Dodawanie polecenia lub gestu do oddzielnych VSIX  
  Jeśli chcesz utworzyć jeden VSIX zawierający polecenia, moduły sprawdzania warstwy oraz inne rozszerzenia, zaleca się utworzenie jednego projektu do definiowania VSIX i oddzielnych projektów dla programów obsługi. Aby uzyskać informacje na temat innych rodzajów rozszerzenia modelowania, zobacz [modeli i diagramów UML rozszerzyć](../modeling/extend-uml-models-and-diagrams.md).  
@@ -116,37 +116,37 @@ Można zdefiniować polecenia w menu kontekstowym i elemencie obsługi gestu na 
 ##  <a name="command"></a> Definiowanie polecenia Menu  
  Możesz dodać więcej definicji poleceń menu do istniejącego gest lub polecenia projektu. Każde polecenie jest zdefiniowane przez klasę, która ma następujące cechy:  
   
--   Klasa jest zadeklarowana w następujący sposób:  
+- Klasa jest zadeklarowana w następujący sposób:  
   
-     `[LayerDesignerExtension]`  
+   `[LayerDesignerExtension]`  
   
-     `[Export(typeof(ICommandExtension))]`  
+   `[Export(typeof(ICommandExtension))]`  
   
-     `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
+   `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
   
--   Przestrzeń nazw i nazwę klasy nie są ważne.  
+- Przestrzeń nazw i nazwę klasy nie są ważne.  
   
--   Metody, które implementują `ICommandExtension` są następujące:  
+- Metody, które implementują `ICommandExtension` są następujące:  
   
-    -   `string Text {get;}` Etykieta jest wyświetlana w menu.  
+  -   `string Text {get;}` Etykieta jest wyświetlana w menu.  
   
-    -   `void QueryStatus(IMenuCommand command)` -wywoływana, gdy użytkownik kliknie prawym przyciskiem myszy diagram i określa, czy polecenie powinno być widoczne i włączone dla bieżącego zaznaczenia przez użytkownika.  
+  -   `void QueryStatus(IMenuCommand command)` -wywoływana, gdy użytkownik kliknie prawym przyciskiem myszy diagram i określa, czy polecenie powinno być widoczne i włączone dla bieżącego zaznaczenia przez użytkownika.  
   
-    -   `void Execute(IMenuCommand command)` -wywoływana, gdy użytkownik wybierze polecenie.  
+  -   `void Execute(IMenuCommand command)` -wywoływana, gdy użytkownik wybierze polecenie.  
   
--   Aby określić bieżące zaznaczenie, można importować `IDiagramContext`:  
+- Aby określić bieżące zaznaczenie, można importować `IDiagramContext`:  
   
-     `[Import]`  
+   `[Import]`  
   
-     `public IDiagramContext DiagramContext { get; set; }`  
+   `public IDiagramContext DiagramContext { get; set; }`  
   
-     `...`  
+   `...`  
   
-     `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
+   `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
   
- Aby uzyskać więcej informacji, zobacz [Navigate i aktualizacji warstwy modeli w kodzie programu](../modeling/navigate-and-update-layer-models-in-program-code.md).  
+  Aby uzyskać więcej informacji, zobacz [Navigate i aktualizacji warstwy modeli w kodzie programu](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
- Aby dodać nowe polecenie, Utwórz nowy plik kodu, który zawiera poniższy przykład. Następnie przetestuj i edytuj go.  
+  Aby dodać nowe polecenie, Utwórz nowy plik kodu, który zawiera poniższy przykład. Następnie przetestuj i edytuj go.  
   
 ```  
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
@@ -242,30 +242,30 @@ namespace MyLayerExtensions // change to your preference
   
  Zwróć uwagę na następujące kwestie dotyczące obsługi gestu:  
   
--   Elementy członkowskie `IGestureExtension` są następujące:  
+- Elementy członkowskie `IGestureExtension` są następujące:  
   
-     **OnDoubleClick** -wywoływana, gdy użytkownik kliknie dwukrotnie dowolne miejsce na diagramie.  
+   **OnDoubleClick** -wywoływana, gdy użytkownik kliknie dwukrotnie dowolne miejsce na diagramie.  
   
-     **CanDragDrop** — wywoływany wielokrotnie, gdy użytkownik przesuwa mysz podczas przeciągania elementu na diagram. Musi działać szybko.  
+   **CanDragDrop** — wywoływany wielokrotnie, gdy użytkownik przesuwa mysz podczas przeciągania elementu na diagram. Musi działać szybko.  
   
-     **OnDragDrop** -wywoływana, gdy użytkownik porzuca element na diagram.  
+   **OnDragDrop** -wywoływana, gdy użytkownik porzuca element na diagram.  
   
--   Pierwszy argument do każdej metody jest `IShape`, z którego można uzyskać element warstwy. Na przykład:  
+- Pierwszy argument do każdej metody jest `IShape`, z którego można uzyskać element warstwy. Na przykład:  
   
-    ```  
-    public void OnDragDrop(IShape target, IDataObject data)  
-    {  
-        ILayerElement element = target.GetLayerElement();  
-        if (element is ILayer)  
-        {  
-            // ...  
-        }  
-    }  
-    ```  
+  ```  
+  public void OnDragDrop(IShape target, IDataObject data)  
+  {  
+      ILayerElement element = target.GetLayerElement();  
+      if (element is ILayer)  
+      {  
+          // ...  
+      }  
+  }  
+  ```  
   
--   Programy obsługi dla niektórych typów przeciąganych elementów zostały już zdefiniowane. Na przykład użytkownik może przeciągać elementy z Eksploratora rozwiązań na diagram warstwy. Nie można zdefiniować uchwytu przeciągania dla tego typu elementu. W takich przypadkach Twoje `DragDrop` metody nie zostaną wywołane.  
+- Programy obsługi dla niektórych typów przeciąganych elementów zostały już zdefiniowane. Na przykład użytkownik może przeciągać elementy z Eksploratora rozwiązań na diagram warstwy. Nie można zdefiniować uchwytu przeciągania dla tego typu elementu. W takich przypadkach Twoje `DragDrop` metody nie zostaną wywołane.  
   
- Aby uzyskać więcej informacji dotyczących sposobu dekodowania innych elementów podczas przeciągania ich na diagram, zobacz [definiowanie procedury obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
+  Aby uzyskać więcej informacji dotyczących sposobu dekodowania innych elementów podczas przeciągania ich na diagram, zobacz [definiowanie procedury obsługi gestów na diagramie modelowania](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Nawigowanie i aktualizowanie modeli warstw w kodzie programu](../modeling/navigate-and-update-layer-models-in-program-code.md)   

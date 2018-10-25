@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41b35475bb56b417729fa70d0e980411ae0f0e3a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b53b8f2cd7819650abbb4fc88a7ec3f4b6dfe21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108664"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903195"
 ---
 # <a name="idebugarrayobject2getbaseindices"></a>IDebugArrayObject2::GetBaseIndices
-Pobiera podstawowy indeksów (dolną granicę) dla każdego indeksu podanej liczby wymiarów tablicy.  
+Pobiera podstawowy indeksów (dolne granice) dla każdego indeksu, biorąc pod uwagę liczbę wymiarów w tablicy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,16 +42,16 @@ int GetBaseIndices (
   
 #### <a name="parameters"></a>Parametry  
  `dwRank`  
- [in] Liczba wymiarów (rangę) tablicy.  
+ [in] Liczba wymiarów (ranga) w tablicy.  
   
  `dwIndices`  
- [out] Wskaźniki podstawowej (dolną granicę) dla tablicy.  
+ [out] Wskaźniki podstawowej (dolne granice) dla tablicy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Na przykład ta funkcja zwróci "5" dla tablicy utworzony przez następujący kod C#:  
+ Na przykład ta funkcja zwróci "5" dla tablicy, utworzone przez następujące C# kodu:  
   
 ```  
 int[] lengths = { 12 };  

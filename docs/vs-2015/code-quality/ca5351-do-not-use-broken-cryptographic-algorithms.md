@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ba7e632d4d91eeaaba886f7a438414c7e428746e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233743"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889818"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351: Nie używaj uszkodzonych algorytmów kryptograficznych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "49233743"
   
  Algorytmy szyfrowania:  
   
--   <xref:System.Security.Cryptography.DES> szyfrowanie zawiera mały rozmiar klucza, który może być ataków siłowych w mniej niż jeden dzień.  
+- <xref:System.Security.Cryptography.DES> szyfrowanie zawiera mały rozmiar klucza, który może być ataków siłowych w mniej niż jeden dzień.  
   
--   <xref:System.Security.Cryptography.RC2> Szyfrowanie jest podatny na atak związane z kluczem, gdy osoba atakująca znajduje matematyczne relacje między wszystkie wartości klucza.  
+- <xref:System.Security.Cryptography.RC2> Szyfrowanie jest podatny na atak związane z kluczem, gdy osoba atakująca znajduje matematyczne relacje między wszystkie wartości klucza.  
   
- Ta zasada wyzwala umożliwia znalezienie dowolnego z powyższych funkcji kryptograficznych w kodzie źródłowym i generuje ostrzeżenia dla użytkownika.  
+  Ta zasada wyzwala umożliwia znalezienie dowolnego z powyższych funkcji kryptograficznych w kodzie źródłowym i generuje ostrzeżenia dla użytkownika.  
   
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
  Użyj kryptograficznie silniejszych opcji:  

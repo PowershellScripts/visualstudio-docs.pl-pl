@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d169e4b53850fc4c63a838fdd8936c2f3d4820be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 533cbf2e6c971da709818343089d13a78d99a997
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298548"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912269"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Karta Komunikaty, okno dialogowe opcji komunikatów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ Użyj **wiadomości** kartę, aby wybrać, które wiadomości typów do listy w 
  **Grupy komunikatów**  
  Wybierz grupy komunikat do wyświetlenia. Dostępne grupy obejmują:  
   
--   WM_USER: z kodem, jest większa niż lub równa WM_USER  
+- WM_USER: z kodem, jest większa niż lub równa WM_USER  
   
--   Zarejestrowany: zarejestrowany **RegisterWindowMessage** wywołania  
+- Zarejestrowany: zarejestrowany **RegisterWindowMessage** wywołania  
   
--   Nieznane: nieznany komunikaty w zakresie od 0 do (WM_USER — 1)  
+- Nieznane: nieznany komunikaty w zakresie od 0 do (WM_USER — 1)  
   
- Należy pamiętać, że te **grupy komunikatów** nie zostaną zamapowani na określonych wpisów w obszarze **widoku komunikatów**. Po wybraniu grupy, wybór jest stosowane bezpośrednio do strumienia komunikatów.  
+  Należy pamiętać, że te **grupy komunikatów** nie zostaną zamapowani na określonych wpisów w obszarze **widoku komunikatów**. Po wybraniu grupy, wybór jest stosowane bezpośrednio do strumienia komunikatów.  
   
- Wygaszone pole wyboru w ramach **grupy komunikatów** wskazuje, że **widoku komunikatów** pole listy został zmodyfikowany dla wiadomości w tej grupie; nie wszystkie typy komunikatów w tej grupie są zaznaczone.  
+  Wygaszone pole wyboru w ramach **grupy komunikatów** wskazuje, że **widoku komunikatów** pole listy został zmodyfikowany dla wiadomości w tej grupie; nie wszystkie typy komunikatów w tej grupie są zaznaczone.  
   
- **Zapisz ustawienia jako domyślne**  
- Zapisz bieżące ustawienia w celu późniejszego użycia jako opcje wyszukiwania komunikatu. Te ustawienia są również zapisywane podczas zamykania programu Spy ++.
+  **Zapisz ustawienia jako domyślne**  
+  Zapisz bieżące ustawienia w celu późniejszego użycia jako opcje wyszukiwania komunikatu. Te ustawienia są również zapisywane podczas zamykania programu Spy ++.
 
 
 

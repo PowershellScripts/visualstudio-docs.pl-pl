@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0db5ef80a1734aedb819c109aa4c27c40224886e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f776feafe86180c60df7cc69a2c4afb6a3070012
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917950"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
-Niszczy Unikatowy identyfikator skojarzony z tą właściwością wskazujący, że obiekt wywołujący nie jest już dba do identyfikowania tej właściwości jednoznacznie ze wszystkich innych właściwości.  
+Niszczy Unikatowy identyfikator skojarzony z tą właściwością wskazujący, że obiekt wywołujący nie jest już dba do identyfikowania tej właściwości, które jednoznacznie ze wszystkich innych właściwości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,12 +38,12 @@ int DestroyObjectID();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli aparat debugowania nie musi obsługiwać unikatowych identyfikatorów dla właściwości (ponieważ jest on już śledzi je jednoznacznie wewnętrznie), a następnie po prostu może zwrócić `E_NOTIMPL` dla tej metody.  
+ Jeśli aparat debugowania nie ma konieczności obsługi unikatowych identyfikatorów dla właściwości (ponieważ jest on już śledzi je jednoznacznie wewnętrznie), a następnie można po prostu zwrócenia `E_NOTIMPL` dla tej metody.  
   
- Unikatowe identyfikatory są tworzone w wyniku wywołania [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) metody, gdy obiekt wywołujący chce upewnij się, że ta właściwość jest unikatowo identyfikowana wśród innych właściwości.  
+ Unikatowe identyfikatory są tworzone za pomocą wywołania [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md) metody, gdy obiekt wywołujący chce upewnić się, ta właściwość jest unikatowo identyfikowana przez inne właściwości.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   

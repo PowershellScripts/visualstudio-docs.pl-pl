@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8698c3402fdbbd4daa3e132b1455d722b40ef1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d620ae0f93b2bbcee66419cfe9ff5e76e470c5f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676244"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918886"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizowanie użycia sieci w aplikacjach platformy UWP
 Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje sieciowe, wykonywane przy użyciu [Windows.Web.Http API](/uwp/api/windows.web.http). Analizowanie danych może pomóc rozwiązać problemy, takie jak problemy dostępu i uwierzytelniania, nieprawidłowe użycie pamięci podręcznej i wyświetlania jest niska i pobrać wydajności.  
@@ -28,19 +28,19 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje
 ## <a name="collect-network-tool-data"></a>Zbieranie danych narzędzie sieci  
  Należy uruchomić **sieci** narzędzie z otwartym projekcie programu Visual Studio na komputerze programu Visual Studio.  
   
-1.  Otwórz projekt w programie Visual Studio.  
+1. Otwórz projekt w programie Visual Studio.  
   
-2.  W menu, kliknij polecenie **debugowanie / Profiler wydajności**. Wybierz **sieci**, a następnie wybierz **Start**.  
+2. W menu, kliknij polecenie **debugowanie / Profiler wydajności**. Wybierz **sieci**, a następnie wybierz **Start**.  
   
-3.  Narzędzie sieci rozpoczyna zbieranie ruch HTTP Twojej aplikacji.  
+3. Narzędzie sieci rozpoczyna zbieranie ruch HTTP Twojej aplikacji.  
   
-     Podczas uruchamiania aplikacji widok podsumowania w okienku po lewej stronie automatycznie wyświetla listę przechwyconych operacji HTTP. Wybierz element w widoku podsumowania, aby uzyskać więcej informacji, w okienku szczegółów w okienku po prawej stronie.  
+    Podczas uruchamiania aplikacji widok podsumowania w okienku po lewej stronie automatycznie wyświetla listę przechwyconych operacji HTTP. Wybierz element w widoku podsumowania, aby uzyskać więcej informacji, w okienku szczegółów w okienku po prawej stronie.  
   
-4.  Wybierz **zatrzymać** aby zamknąć aplikację.  
+4. Wybierz **zatrzymać** aby zamknąć aplikację.  
   
- Okno raportu powinna wyglądać mniej więcej tak:  
+   Okno raportu powinna wyglądać mniej więcej tak:  
   
- ![Okno sieci](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
+   ![Okno sieci](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyze-data"></a>Analizowanie danych  
  Można analizować przechwycone ruch HTTP, gdy Twoja aplikacja jest uruchomiona lub nawet w przypadku, po zamknięciu aplikacji, wybierając dowolną z operacji sieciowych wyświetlany w widoku podsumowania.  

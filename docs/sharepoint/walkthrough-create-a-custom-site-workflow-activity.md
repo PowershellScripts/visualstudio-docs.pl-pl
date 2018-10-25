@@ -21,29 +21,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b366db32a4caadf0f454f893d8f98e2d288f2390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627360"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894173"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Przewodnik: Tworzenie niestandardowego przepływu pracy działania witryny
   W tym instruktażu pokazano, jak utworzyć niestandardowe działanie na poziomie witryny przepływu pracy przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Przepływy pracy poziomie witryny dotyczą całej lokacji, a nie tylko listy w witrynie). Niestandardowe działanie tworzy kopię zapasową listy anonsów i następnie kopiuje zawartość listy ogłoszeń tę sytuację.  
   
  W tym instruktażu pokazano następujące zagadnienia:  
   
--   Tworzenie na poziomie witryny przepływu pracy.  
+- Tworzenie na poziomie witryny przepływu pracy.  
   
--   Tworzenie działań niestandardowych przepływów pracy.  
+- Tworzenie działań niestandardowych przepływów pracy.  
   
--   Tworzenie i usuwanie listy programu SharePoint.  
+- Tworzenie i usuwanie listy programu SharePoint.  
   
--   Kopiuje elementy z jednej listy do innego.  
+- Kopiuje elementy z jednej listy do innego.  
   
--   Wyświetlanie listy na pasku szybkiego uruchamiania.  
+- Wyświetlanie listy na pasku szybkiego uruchamiania.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  

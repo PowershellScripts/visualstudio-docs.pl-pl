@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ea9c1739b0f1236deedcea98bcbc96e99abb404
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: ddedc1d46c82c20580575a85db92b2c8049c813e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908755"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Klawisze modyfikujące Pióro w programie Blend
 W poniższej tabeli przedstawiono skróty, które służy do modyfikowania ścieżki, podczas tworzenia go **pióra** narzędzie ![pióro](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). Można również użyć **pióra** narzędzia, aby dodać lub usunąć punkty w istniejącej ścieżki lub połączyć dwa istniejące ścieżki.
 
 |Do tej czynności|Zrób to|Wskaźnik|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |Utwórz punkt można uruchomić odcinek prosty|Kliknij, aby utworzyć nowy punkt|![Utwórz punkt można uruchomić odcinek prosty](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Kursor pióra|
 |Utwórz punkt można uruchomić segmentu krzywej|Kliknij, aby utworzyć nowy punkt, a następnie przeciągnij, aby dopasować uchwytów przed zwolnieniem przycisku myszy|![Utwórz punkt można uruchomić segmentu krzywej](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png)<br /><br /> Kursor pióra|
 |Dostosuj styczną ostatniego, bez ograniczenia smooth, dzięki czemu możesz podejmować ostry kąt|Kliknij, aby utworzyć nowy punkt, a następnie naciśnij klawisz **Alt** przed zwolnieniem przycisku myszy|![Dostosuj styczną ostatniego, bez ograniczenia smooth](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png)<br /><br /> Wskaźnik dopasowania pióra|
@@ -40,5 +40,5 @@ W poniższej tabeli przedstawiono skróty, które służy do modyfikowania ście
 
 - [Skróty klawiaturowe i klawisze modyfikujące](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)
 - [Klawisze modyfikujące obszar kompozycji](../designers/artboard-modifier-keys-in-blend.md)
-- [Klawisze modyfikujące narzędzie Zaznaczanie bezpośrednie](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Klawisze modyfikujące narzędzia Wybór bezpośredni](../designers/direct-selection-tool-modifier-keys-in-blend.md)
 - [Rysowanie kształtów i ścieżek](../designers/draw-shapes-and-paths.md)

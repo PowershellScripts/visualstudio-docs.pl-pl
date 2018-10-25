@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d15ac70fbbc9291dca32f25ed5f3c3378b6b848
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a68f6c58ad7e497dfc0e91e92f2cf40e4bd8d992
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239736"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897540"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Porady: eksportowanie tekstury wykorzystującej wstępnie przemnożony kanał alfa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ Potok zawartości obrazu może generować wstępnie przemnożone tekstury alfa z
   
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>Aby utworzyć tekstury wykorzystującej wstępnie przemnożony kanał alfa  
   
-1.  Rozpocznij od podstawowej tekstury. Załaduj istniejący pliku obrazu lub utwórz je, zgodnie z opisem w [porady: tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md).  
+1. Rozpocznij od podstawowej tekstury. Załaduj istniejący pliku obrazu lub utwórz je, zgodnie z opisem w [porady: tworzenie tekstury podstawowej](../designers/how-to-create-a-basic-texture.md).  
   
-2.  Skonfigurować pliku tekstury, jest przetwarzany przez potok zawartości obrazu. W **Eksploratora rozwiązań**, otwórz menu skrótów dla pliku tekstury, a następnie wybierz **właściwości**. Na **właściwości konfiguracji**, **ogólne** ustaw **typu elementu** właściwości **potok zawartości obrazu**. Upewnij się, że **zawartości** właściwość jest ustawiona na **tak** i **Wyłącz z kompilacji** ustawiono **nie**, a następnie wybierz  **Zastosuj** przycisku. **Potok zawartości obrazu** zostanie wyświetlona strona właściwości konfiguracji.  
+2. Skonfigurować pliku tekstury, jest przetwarzany przez potok zawartości obrazu. W **Eksploratora rozwiązań**, otwórz menu skrótów dla pliku tekstury, a następnie wybierz **właściwości**. Na **właściwości konfiguracji**, **ogólne** ustaw **typu elementu** właściwości **potok zawartości obrazu**. Upewnij się, że **zawartości** właściwość jest ustawiona na **tak** i **Wyłącz z kompilacji** ustawiono **nie**, a następnie wybierz  **Zastosuj** przycisku. **Potok zawartości obrazu** zostanie wyświetlona strona właściwości konfiguracji.  
   
-3.  Konfigurowanie potoku zawartości obrazu, aby generować wstępnie przemnożonego kanału alfa. Na **właściwości konfiguracji**, **potok zawartości obrazu**, **ogólne** ustaw **przekonwertować wstępnie przemnożonego alfa format** Właściwość **tak (/ generatepremultipliedalpha)**.  
+3. Konfigurowanie potoku zawartości obrazu, aby generować wstępnie przemnożonego kanału alfa. Na **właściwości konfiguracji**, **potok zawartości obrazu**, **ogólne** ustaw **przekonwertować wstępnie przemnożonego alfa format** Właściwość **tak (/ generatepremultipliedalpha)**.  
   
-4.  Wybierz **OK** przycisku.  
+4. Wybierz **OK** przycisku.  
   
- Podczas budowania projektu potok zawartości obrazów konwertuje obraz źródłowy z formatu roboczego do formatu wyjściowego, który określiłeś, obejmuje to konwersję obrazu do wstępnie przemnożonego kanału alfa formatu — a wynik jest kopiowany do wyjściowego projektu katalog.
+   Podczas budowania projektu potok zawartości obrazów konwertuje obraz źródłowy z formatu roboczego do formatu wyjściowego, który określiłeś, obejmuje to konwersję obrazu do wstępnie przemnożonego kanału alfa formatu — a wynik jest kopiowany do wyjściowego projektu katalog.
 
 
 

@@ -13,12 +13,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38bb2e9db99d35773d2e625783a613db5c051b5b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9e540e35bdfd68d8c371c2bad0ace3fc4b420e0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210382"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893237"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Korzystanie z różnych przeglądarek sieci Web do przeprowadzania kodowanych testów interfejsu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,35 +27,35 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
   
  **Wymagania**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
--   Systemy operacyjne:  
+- Systemy operacyjne:  
   
-    -   Microsoft Windows 7  
+  -   Microsoft Windows 7  
   
-    -   Microsoft Windows 8  
+  -   Microsoft Windows 8  
   
-    -   Microsoft Windows Server 2008 R2 SP1  
+  -   Microsoft Windows Server 2008 R2 SP1  
   
--   Wersje przeglądarki sieci Web:  
+- Wersje przeglądarki sieci Web:  
   
-    -   Windows Internet Explorer 9  
+  -   Windows Internet Explorer 9  
   
-    -   Program Windows Internet Explorer 10  
+  -   Program Windows Internet Explorer 10  
   
-    -   Obsługiwane wersje Mozilla Firefox i Google Chrome, przejdź [tutaj](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
+  -   Obsługiwane wersje Mozilla Firefox i Google Chrome, przejdź [tutaj](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
   
--   Zainstaluj [Selenium components for Coded UI Cross Browser Testing](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+- Zainstaluj [Selenium components for Coded UI Cross Browser Testing](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- **Co jest obsługiwane we wszystkich przeglądarkach sieci web?**  
+  **Co jest obsługiwane we wszystkich przeglądarkach sieci web?**  
   
--   [Dodawanie kodu niestandardowego w celu kontrolowania funkcji](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) takie jak obiekty właściwości, wyszukiwanie i odtwarzania.  
+- [Dodawanie kodu niestandardowego w celu kontrolowania funkcji](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) takie jak obiekty właściwości, wyszukiwanie i odtwarzania.  
   
--   Wyskakujące okienka i okna dialogowe  
+- Wyskakujące okienka i okna dialogowe  
   
--   [Wykonaj podstawowy kod JavaScript bez zwrotu typu](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
+- [Wykonaj podstawowy kod JavaScript bez zwrotu typu](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)  
   
--   Wyszukaj tolerancję (za pomocą inteligentnego dopasowania) i [ulepszenia wydajności](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)  
+- Wyszukaj tolerancję (za pomocą inteligentnego dopasowania) i [ulepszenia wydajności](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)  
   
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Dlaczego należy używać zakodowanych testów interfejsu użytkownika w kilku przeglądarkach sieci Web?  
  Testując aplikację internetową za pomocą przeglądarek internetowych różnego typu, można lepiej emulować doświadczenia z interfejsem użytkowników korzystających z różnych przeglądarek. Na przykład aplikacja może zawierać formant lub kod w Internet Explorer, który nie jest zgodny z innymi przeglądarkami sieci Web. Uruchamianie kodowanych testów interfejsu użytkownika w różnych przeglądarkach pozwoli wykryć i naprawić wszelkie problemy, zanim wpłyną one na doświadczenia klientów.  
@@ -74,16 +74,16 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
   
 #### <a name="installing-selenium-components"></a>Instalowanie składników środowiska Selenium  
   
-1.  Na **narzędzia** menu, wybierz **rozszerzenia i aktualizacje**.  
+1. Na **narzędzia** menu, wybierz **rozszerzenia i aktualizacje**.  
   
-2.  W oknie dialogowym rozszerzenia i aktualizacje Wyszukaj `Selenium components for Cross Browser Testing`.  
+2. W oknie dialogowym rozszerzenia i aktualizacje Wyszukaj `Selenium components for Cross Browser Testing`.  
   
-3.  Zaznacz rozszerzenie i wybierz polecenie **Pobierz**.  
+3. Zaznacz rozszerzenie i wybierz polecenie **Pobierz**.  
   
-    > [!TIP]
-    >  Możesz również pobrać narzędzie Selenium components for Coded UI Cross Browser Testing z [tutaj](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+   > [!TIP]
+   >  Możesz również pobrać narzędzie Selenium components for Coded UI Cross Browser Testing z [tutaj](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- Aby uzyskać więcej informacji na temat tworzenia i używania kodowanego interfejsu użytkownika, testów, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+   Aby uzyskać więcej informacji na temat tworzenia i używania kodowanego interfejsu użytkownika, testów, zobacz [tworzenie kodowanych testów interfejsu użytkownika](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   
 ### <a name="enable-debugging"></a>Włączanie debugowania  
  Aby włączyć debugowanie aplikacji internetowej, należy zastosować następujące opcje konfiguracji:  
@@ -106,29 +106,29 @@ Zakodowane testy interfejsu użytkownika mogą zautomatyzować testowanie aplika
  *Co jeszcze muszę wiedzieć?*  
  **Uwagi**  
   
--   ![Wymagań wstępnych](../test/media/prereq.png "wstępnie wymagany składnik") przeglądarka Safari firmy Apple nie jest obsługiwana.  
+- ![Wymagań wstępnych](../test/media/prereq.png "wstępnie wymagany składnik") przeglądarka Safari firmy Apple nie jest obsługiwana.  
   
--   ![Wymagań wstępnych](../test/media/prereq.png "wstępnie wymagany składnik") Akcja uruchomienia przeglądarki sieci web muszą być częścią kodowanego testu interfejsu użytkownika.  
+- ![Wymagań wstępnych](../test/media/prereq.png "wstępnie wymagany składnik") Akcja uruchomienia przeglądarki sieci web muszą być częścią kodowanego testu interfejsu użytkownika.  
   
-     Jeśli masz już otwartą przeglądarkę sieci Web i chcesz wykonać w niej te czynności, odtwarzanie zakończy się niepowodzeniem, chyba że używasz Internet Explorer. Dlatego najlepiej uwzględniać uruchamianie przeglądarki sieci Web jako część zakodowanych testów interfejsu użytkownika.  
+   Jeśli masz już otwartą przeglądarkę sieci Web i chcesz wykonać w niej te czynności, odtwarzanie zakończy się niepowodzeniem, chyba że używasz Internet Explorer. Dlatego najlepiej uwzględniać uruchamianie przeglądarki sieci Web jako część zakodowanych testów interfejsu użytkownika.  
   
--   ![Wymagań wstępnych](../test/media/prereq.png "wstępnie wymagany składnik") Automating określonych w przeglądarce działania interfejsu użytkownika, takich jak maksymalizowanie, minimalizowanie i przywracanie nie jest obsługiwane.  
+- ![Wymagań wstępnych](../test/media/prereq.png "wstępnie wymagany składnik") Automating określonych w przeglądarce działania interfejsu użytkownika, takich jak maksymalizowanie, minimalizowanie i przywracanie nie jest obsługiwane.  
   
- **Porady**  
+  **Porady**  
   
--   ![Porada](../test/media/tip.png "Porada") można skonfigurować dane wyjściowe do uwzględnienia zrzutów ekranu w zakodowanych dziennikach interfejsu użytkownika. Aby to zrobić, należy zmienić kilka ustawień konfiguracji w pliku QTAgent32.exe.config. Domyślnie ten plik jest instalowany w następującej lokalizacji:  
+- ![Porada](../test/media/tip.png "Porada") można skonfigurować dane wyjściowe do uwzględnienia zrzutów ekranu w zakodowanych dziennikach interfejsu użytkownika. Aby to zrobić, należy zmienić kilka ustawień konfiguracji w pliku QTAgent32.exe.config. Domyślnie ten plik jest instalowany w następującej lokalizacji:  
   
-     **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
+   **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   
-     Ustaw następujące wartości:  
+   Ustaw następujące wartości:  
   
-    -   `EqtTraceLevel` w `system.diagnostics` sekcji.  
+  - `EqtTraceLevel` w `system.diagnostics` sekcji.  
   
-    -   `<add name="EqtTraceLevel" value="4" />`  
+  - `<add name="EqtTraceLevel" value="4" />`  
   
-         Ustawiając wartość 3 lub większą, zrzuty ekranu są pobierane dla każdego działania. Gdy wartość jest równa 1 lub 2, zrzuty ekranu są wykonywane tylko w przypadku błędów.  
+     Ustawiając wartość 3 lub większą, zrzuty ekranu są pobierane dla każdego działania. Gdy wartość jest równa 1 lub 2, zrzuty ekranu są wykonywane tylko w przypadku błędów.  
   
-     Aby uzyskać więcej informacji, zobacz [analizowanie kodowanych testów przy użyciu kodowanego interfejsu użytkownika dzienników testów interfejsu użytkownika](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).  
+    Aby uzyskać więcej informacji, zobacz [analizowanie kodowanych testów przy użyciu kodowanego interfejsu użytkownika dzienników testów interfejsu użytkownika](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).  
   
 ## <a name="external-resources"></a>Zasoby zewnętrzne  
   

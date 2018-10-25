@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cfff2f5a040ce309e05afff1dc93954eb59db9dd
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 935c1ebfb2efd888de5b336eafab4059fa6cd443
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863663"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903559"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurowanie testów jednostkowych przy użyciu *.runsettings* pliku
 
@@ -164,7 +164,7 @@ W kolejnych sekcjach szczegółowo elementy *.runsettings* pliku.
 **RunConfiguration** element może zawierać następujące elementy:
 
 |Węzeł|Domyślny|Wartości|
-|----------|-------------|------------|
+|-|-|-|
 |**ResultsDirectory**||Katalog, w którym są umieszczane wyniki testu.|
 |**targetFrameworkVersion**|Framework40|Framework35, Framework40, Framework45<br /><br />To ustawienie określa wersję środowiska testów jednostkowych, które są używane do odnajdowania i wykonywania testów. Może ona być inna niż wersja platformy .NET określonej we właściwościach kompilacji projektu badania jednostki.|
 |**TargetPlatform**|x86|x86, x64|
@@ -241,7 +241,7 @@ Aby użyć parametrów przebiegu testu, Dodaj prywatnej <xref:Microsoft.VisualSt
 Te ustawienia są właściwe dla adaptera testowego, który uruchamia metody testowe, które mają <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> atrybutu.
 
 |Konfiguracja|Domyślny|Wartości|
-|-------------------|-------------|------------|
+|-|-|-|
 |**ForcedLegacyMode**|false|W programie Visual Studio 2012 Adapter karty MSTest został zoptymalizowany umożliwiają szybsze i bardziej skalowalne. Niektóre zachowania, na przykład kolejność, w jakiej są uruchamiane testy, mogą nie być dokładnie takie same, jak w poprzednich wersjach programu Visual Studio. Ustaw tę wartość na **true** Aby użyć starszego adaptera testowego.<br /><br />Na przykład możesz użyć tego ustawienia, jeśli masz *app.config* plik określony dla testu jednostkowego.<br /><br />Zaleca się, aby rozważyć refaktoryzację testów pozwalającą na użycie nowszego adaptera.|
 |**IgnoreTestImpact**|false|Funkcja wpływu na testy określa priorytety testów, których dotyczą ostatnie zmiany, po uruchomieniu w programie MSTest lub Microsoft Test Manager. To ustawienie powoduje wyłączenie funkcji. Aby uzyskać więcej informacji, zobacz [testy, które można uruchamiać od czasu poprzedniej kompilacji](https://msdn.microsoft.com/library/dd286589).|
 |**Plik_ustawień**||Można określić plik ustawień testu do użycia przez adapter MSTest. Można również określić plik ustawień testu, wybierając **Test** > **ustawienia testu** > **wybierz plik ustawień testu**.<br /><br />Jeśli ta wartość jest podana, należy także ustawić **ForcedlegacyMode** do **true**.<br /><br />`<ForcedLegacyMode>true</ForcedLegacyMode>`|

@@ -16,29 +16,29 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4baec4427c09eff34b2fedb205de5556f22a4aa6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246151"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897774"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Wybieranie warunku, okno dialogowe (starsza wersja)
 W tym temacie opisano sposób użycia **wybierz warunek** okno dialogowe w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  **Wybierz warunek** okno dialogowe służy do wybierania warunku reguły deklaratywnej do przypisania do właściwości działania tak warunku. Te warunki reguły są widoczne jako właściwości na następujących działaniach out-of-box Windows Workflow Foundation:  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
- Aby uzyskać informacje o tym, jak uzyskać dostęp do **wybierz warunek** okno dialogowe, zobacz [jak: utworzyć warunek reguły deklaratywne (starsza wersja)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
+  Aby uzyskać informacje o tym, jak uzyskać dostęp do **wybierz warunek** okno dialogowe, zobacz [jak: utworzyć warunek reguły deklaratywne (starsza wersja)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).  
   
- W poniższej tabeli opisano elementy interfejsu użytkownika **wybierz warunek** okno dialogowe.  
+  W poniższej tabeli opisano elementy interfejsu użytkownika **wybierz warunek** okno dialogowe.  
   
 |Element interfejsu użytkownika|Opis|  
 |----------------|-----------------|  

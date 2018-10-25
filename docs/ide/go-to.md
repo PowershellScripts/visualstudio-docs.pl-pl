@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8d9ceeb7c4d24871bc0f2ddfc743c2c65e087205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624180"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907056"
 ---
 # <a name="find-code-using-go-to-commands"></a>Znajdowanie kodu za pomocą poleceń Przejdź do
 
@@ -27,10 +27,10 @@ Visual Studio **przejdź do** poleceń wyszukiwania ukierunkowanych swój kod, a
 
 ## <a name="how-to-use-it"></a>Jak z niej korzystać
 
-Dane wejściowe        | Funkcja
+Dane wejściowe | Funkcja
 ------------ | ---
 **Keyboard** | Naciśnij klawisz **Ctrl**+**T** lub **Ctrl**+**,**
-**Myszy**    | Wybierz **Edytuj** > **przejdź do** > **przejdź do wszystkich**
+**Myszy** | Wybierz **Edytuj** > **przejdź do** > **przejdź do wszystkich**
 
 Niewielki przedział jest wyświetlany w prawym górnym rogu edytora kodu.
 
@@ -56,7 +56,7 @@ Aby zawęzić kryteria wyszukiwania dla określonego typu elementu kodu, możesz
 
 Prefiks | Ikona | Skrót | Opis
 :-: | - | - | -
-:| ![Ikona wiersza](media/gotoall-line-icon.png) | **CTRL**+**G**         | Przejdź do określonego numeru wiersza
+:| ![Ikona wiersza](media/gotoall-line-icon.png) | **CTRL**+**G** | Przejdź do określonego numeru wiersza
 f| ![Ikona pliki](media/gotoall-files-icon.png) | **CTRL**+**1**, **Ctrl**+**F** | Przejdź do określonego pliku
 r| ![Ikona ostatnie pliki](media/gotoall-recent-files-icon.png) | **CTRL**+**1**, **Ctrl**+**R** | Przejdź do pliku określonego, ostatnio odwiedzonych
 t| ![Ikony typów](media/gotoall-types-icon.png) | **CTRL**+**1**, **Ctrl**+**T** | Przejdź do określonego typu
@@ -85,8 +85,8 @@ Wybierając ikonę koła zębatego ![Ikona koła zębatego](media/gotoall_gear.p
 Ustawienie | Opis
 ------- | ---
 Użyj karty podglądu | Natychmiast wyświetlić wybranego elementu w karcie podglądu środowiska IDE
-Pokaż szczegóły    | Wyświetl w oknie projektu, plików, wiersza i podsumowanie informacji z komentarzy dokumentacji
-Wyśrodkuj okno   | Przenieś to okno w środkowej górnej edytora kodu, zamiast prawym górnym rogu
+Pokaż szczegóły | Wyświetl w oknie projektu, plików, wiersza i podsumowanie informacji z komentarzy dokumentacji
+Wyśrodkuj okno | Przenieś to okno w środkowej górnej edytora kodu, zamiast prawym górnym rogu
 
 ## <a name="see-also"></a>Zobacz także
 

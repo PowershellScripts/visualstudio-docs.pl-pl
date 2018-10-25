@@ -17,12 +17,12 @@ ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 591967bd9ac61b611b1b062a006a5069fc94d114
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1cf22cd0bc717e9e9e3d0b06b76bed8420d1778
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910800"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Uzupełnianie wyrazów w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Uzupełnianie wyrazów wypełnia brakujących znaków na częściowo wpisane pro
   
 ## <a name="implementation-steps"></a>Kroki implementacji  
   
-1.  Gdy użytkownik wybierze **Dokończ wyraz** z **IntelliSense** menu <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> polecenia są wysyłane do usługi języka.  
+1. Gdy użytkownik wybierze **Dokończ wyraz** z **IntelliSense** menu <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> polecenia są wysyłane do usługi języka.  
   
-2.  <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasy przechwytuje polecenia i wywołuje <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metoda przyczynę analizy <xref:Microsoft.VisualStudio.Package.ParseReason>.  
+2. <xref:Microsoft.VisualStudio.Package.ViewFilter> Klasy przechwytuje polecenia i wywołuje <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metoda przyczynę analizy <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
-3.  <xref:Microsoft.VisualStudio.Package.Source> Klasę i wywołania <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodę, aby uzyskać listę uzupełnienia możliwe programu word, a następnie wyświetla listę słów w etykietce narzędzia, za pomocą <xref:Microsoft.VisualStudio.Package.CompletionSet> klasy.  
+3. <xref:Microsoft.VisualStudio.Package.Source> Klasę i wywołania <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> metodę, aby uzyskać listę uzupełnienia możliwe programu word, a następnie wyświetla listę słów w etykietce narzędzia, za pomocą <xref:Microsoft.VisualStudio.Package.CompletionSet> klasy.  
   
-     Jeśli istnieje tylko jedno słowo dopasowania, <xref:Microsoft.VisualStudio.Package.Source> klasy kończy wyraz.  
+    Jeśli istnieje tylko jedno słowo dopasowania, <xref:Microsoft.VisualStudio.Package.Source> klasy kończy wyraz.  
   
- Alternatywnie Jeśli skaner zwraca wartość wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> po wpisaniu pierwszy znak identyfikatora <xref:Microsoft.VisualStudio.Package.Source> klasy wykryje to i wywołuje <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metoda przyczynę analizy <xref:Microsoft.VisualStudio.Package.ParseReason>. W takim przypadku analizator musi wykryć obecność znaku wyboru elementu członkowskiego i zawierają listę elementów członkowskich.  
+   Alternatywnie Jeśli skaner zwraca wartość wyzwalacza <xref:Microsoft.VisualStudio.Package.TokenTriggers> po wpisaniu pierwszy znak identyfikatora <xref:Microsoft.VisualStudio.Package.Source> klasy wykryje to i wywołuje <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> metoda przyczynę analizy <xref:Microsoft.VisualStudio.Package.ParseReason>. W takim przypadku analizator musi wykryć obecność znaku wyboru elementu członkowskiego i zawierają listę elementów członkowskich.  
   
 ## <a name="enabling-support-for-the-complete-word"></a>Włączanie obsługi Dokończ wyraz  
  Aby włączyć obsługę zestawu ukończenia programu word `CodeSense` o nazwie parametr przekazany do <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atrybut użytkownika skojarzonego z pakietem języka. To ustawienie <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> właściwość <xref:Microsoft.VisualStudio.Package.LanguagePreferences> klasy.  

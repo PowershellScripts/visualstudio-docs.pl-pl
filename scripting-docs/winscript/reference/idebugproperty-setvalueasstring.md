@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88a7cba4ec83c5428dd4da4a23ce554702177e76
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 18d04a085542aeec82b81dac64a6f9c97d0837c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916229"
 ---
 # <a name="idebugpropertysetvalueasstring"></a>IDebugProperty::SetValueAsString
 Ustawia wartości właściwości z ciągu.  
@@ -42,10 +42,10 @@ HRESULT SetValueAsString (
  [in] Wartość do ustawienia.  
   
  `nRadix`  
- [in] Podstawa ma być używana podczas interpretacji wszelkie informacje numeryczne.  
+ [in] Podstawy do użycia w interpretacji wszelkie dane liczbowe.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zwykle `S_OK`.  
+ Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugProperty](../../winscript/reference/idebugproperty-interface.md)
+ [IDebugProperty, interfejs](../../winscript/reference/idebugproperty-interface.md)

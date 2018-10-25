@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f031e81911c9a36cd2c48abf7bd2b092bb5940f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886282"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Uruchamianie aplikacji ze Sklepu Windows na maszynie zdalnej
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
   
  [Konfigurowanie projektu programu Visual Studio dla zdalnego debugowania](#BKMK_ConnectVS)  
   
--   [Wybieranie urządzenia zdalnego dla projektów C# i Visual Basic](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
+- [Wybieranie urządzenia zdalnego dla projektów C# i Visual Basic](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
   
--   [Wybieranie urządzenia zdalnego dla projektów języka C++ i JavaScript](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
+- [Wybieranie urządzenia zdalnego dla projektów języka C++ i JavaScript](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
   
- [Uruchamianie sesji debugowania zdalnego](#BKMK_RunRemoteDebug)  
+  [Uruchamianie sesji debugowania zdalnego](#BKMK_RunRemoteDebug)  
   
 ##  <a name="BKMK_Prerequisites"></a> Wymagania wstępne  
  Aby debugować na urządzeniu zdalnym:  
@@ -123,20 +123,20 @@ Dotyczy tylko Windows] (.. /Image/windows_only_content.png "windows_only_content
 ##  <a name="BKMK_ConfigureRemoteDebugger"></a> Konfigurowanie zdalnego debugera  
  Dwa narzędzia służą do modyfikowania konfiguracji zdalnego debugera.  
   
-1.  Na **narzędzia** menu **zdalny Monitor debugowania Visual Studio**:  
+1. Na **narzędzia** menu **zdalny Monitor debugowania Visual Studio**:  
   
-    1.  Wybierz **opcje** do zmiany numeru portu, tryb uwierzytelniania lub interwał limitu czasu zdalnego debugera.  
+   1.  Wybierz **opcje** do zmiany numeru portu, tryb uwierzytelniania lub interwał limitu czasu zdalnego debugera.  
   
-    2.  Wybierz **uprawnienia** do dodawania lub usuwania użytkowników, którzy mają uprawnienia do zdalnego debugowania.  
+   2.  Wybierz **uprawnienia** do dodawania lub usuwania użytkowników, którzy mają uprawnienia do zdalnego debugowania.  
   
-        > [!NOTE]
-        >  Muszą mieć uprawnienia do wszystkich kont użytkowników, które debuguje zdalnie.  
+       > [!NOTE]
+       >  Muszą mieć uprawnienia do wszystkich kont użytkowników, które debuguje zdalnie.  
   
- Możesz użyć **Kreatora konfiguracji zdalnego debugera** Aby ustawić zaawansowane opcje dla zdalnego debugera. Aby otworzyć kreatora, wybierz opcję **Kreatora konfiguracji zdalnego debugera** na ekranie startowym.  
+   Możesz użyć **Kreatora konfiguracji zdalnego debugera** Aby ustawić zaawansowane opcje dla zdalnego debugera. Aby otworzyć kreatora, wybierz opcję **Kreatora konfiguracji zdalnego debugera** na ekranie startowym.  
   
-1.  Na **Konfigurowanie debugera zdalnego programu Visual Studio** strony, istnieje możliwość uruchomienia zdalnego debugera jako usługi. W większości przypadków uruchamianie jako usługi nie jest wymagana.  
+2. Na **Konfigurowanie debugera zdalnego programu Visual Studio** strony, istnieje możliwość uruchomienia zdalnego debugera jako usługi. W większości przypadków uruchamianie jako usługi nie jest wymagana.  
   
-2.  Na **skonfigurować zaporę Windows dla debugowania** strony, można dodać lub usunąć typ sieci, które mają zdalnego debugera, aby nawiązać połączenie. Tylko te sieci, które urządzenia jest aktualnie połączony z są włączone. Musisz wybrać co najmniej jedna sieć.  
+3. Na **skonfigurować zaporę Windows dla debugowania** strony, można dodać lub usunąć typ sieci, które mają zdalnego debugera, aby nawiązać połączenie. Tylko te sieci, które urządzenia jest aktualnie połączony z są włączone. Musisz wybrać co najmniej jedna sieć.  
   
 ##  <a name="BKMK_ConnectVS"></a> Konfigurowanie projektu programu Visual Studio dla zdalnego debugowania  
  Należy określić urządzenie zdalne, aby połączyć się we właściwościach projektu. Procedura różni się w zależności od języka programowania. Można wpisać nazwę sieciową urządzenia zdalnego lub wybrać go z okna dialogowego Wybierz połączenie ze zdalnym debugerem.  

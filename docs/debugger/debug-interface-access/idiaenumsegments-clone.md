@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSegments::Clone | Dokumentacja firmy Microsoft
+title: Idiaenumsegments::clone — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3198e21440d2fc20898fde83925aaf8ae0e3a3be
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b946633c7a999ff0c7b154a02291301efdea512b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457780"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905080"
 ---
 # <a name="idiaenumsegmentsclone"></a>IDiaEnumSegments::Clone
-Tworzy moduł wyliczający, który zawiera takim samym stanie wyliczenie jako bieżący modułu wyliczającego.  
+Tworzy moduł wyliczający, który zawiera ten sam stan wyliczenia jako bieżącego modułu wyliczającego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,7 +37,7 @@ HRESULT Clone (
  [out] Zwraca [idiaenumsegments —](../../debugger/debug-interface-access/idiaenumsegments.md) obiekt, który zawiera zduplikowane modułu wyliczającego. Segmenty nie są duplikowane, tylko moduł wyliczający.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

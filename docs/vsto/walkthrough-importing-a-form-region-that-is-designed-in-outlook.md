@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1e3ae3a77edd39bed48ac4a5a92cce2e232c589
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 413d2fed56da809b2fdb8c1fad867818e0cce010
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903520"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Wskazówki: Importowanie regionów formularzy zaprojektowanych w programie Outlook
   W tym instruktażu pokazano, jak projektowanie regionów formularzy w programie Microsoft Office Outlook, a następnie zaimportuj regionu formularza w projekcie dodatku narzędzi VSTO dla programu Outlook, za pomocą **nowy Region formularza** kreatora. Projektowanie regionów formularzy programu Outlook umożliwia dodanie natywne kontrolki programu Outlook do regionu formularza, który należy powiązać dane programu Outlook. Po zaimportowaniu region formularza można obsługiwać zdarzenia każdej kontrolki.  
@@ -30,13 +30,13 @@ ms.locfileid: "35677304"
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Projektowanie regionów formularzy przy użyciu projektanta regionów formularza w programie Outlook.  
+- Projektowanie regionów formularzy przy użyciu projektanta regionów formularza w programie Outlook.  
   
--   Importowanie regionów formularzy w projekcie dodatku narzędzi VSTO dla programu Outlook.  
+- Importowanie regionów formularzy w projekcie dodatku narzędzi VSTO dla programu Outlook.  
   
--   Obsługa zdarzeń formantów na region formularza.  
+- Obsługa zdarzeń formantów na region formularza.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
@@ -161,47 +161,47 @@ ms.locfileid: "35677304"
   
 ### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>Do obsługi zdarzeń formantów na region formularza  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy *TaskFormRegion.cs* lub *TaskFormRegion.vb*, a następnie kliknij przycisk **Wyświetl kod**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy *TaskFormRegion.cs* lub *TaskFormRegion.vb*, a następnie kliknij przycisk **Wyświetl kod**.  
   
-     *TaskFormRegion.cs* lub *TaskFormRegion.vb* zostanie otwarty w edytorze kodu.  
+    *TaskFormRegion.cs* lub *TaskFormRegion.vb* zostanie otwarty w edytorze kodu.  
   
-2.  Dodaj następujący kod do `TaskFormRegion` klasy. Ten kod powoduje wypełnienie pola kombi na region formularza wiersza tematu każdego zadania w folderze zadania programu Outlook.  
+2. Dodaj następujący kod do `TaskFormRegion` klasy. Ten kod powoduje wypełnienie pola kombi na region formularza wiersza tematu każdego zadania w folderze zadania programu Outlook.  
   
-     [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
-     [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]  
+    [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
+    [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]  
   
-3.  Dodaj następujący kod do `TaskFormRegion` klasy. Kod będzie wykonywał następujące zadania:  
+3. Dodaj następujący kod do `TaskFormRegion` klasy. Kod będzie wykonywał następujące zadania:  
   
-    -   Lokalizuje `Microsoft.Office.Interop.Outlook.TaskItem` w folderze zadań, wywołując `FindTaskBySubjectName` metody pomocnika i przekazanie przedmiotem odpowiednie zadanie. Należy dodać `FindTaskBySubjectName` metody pomocnika w następnym kroku.  
+   - Lokalizuje `Microsoft.Office.Interop.Outlook.TaskItem` w folderze zadań, wywołując `FindTaskBySubjectName` metody pomocnika i przekazanie przedmiotem odpowiednie zadanie. Należy dodać `FindTaskBySubjectName` metody pomocnika w następnym kroku.  
   
-    -   Dodaje `Microsoft.Office.Interop.Outlook.TaskItem.Subject` i `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` wartości do pola listy zadanie zależne.  
+   - Dodaje `Microsoft.Office.Interop.Outlook.TaskItem.Subject` i `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` wartości do pola listy zadanie zależne.  
   
-    -   Dodaje temat zadania ukryte pole na region formularza. Ukryte pole te wartości są przechowywane jako część elementu programu Outlook.  
+   - Dodaje temat zadania ukryte pole na region formularza. Ukryte pole te wartości są przechowywane jako część elementu programu Outlook.  
   
      [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)]
      [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]  
   
-4.  Dodaj następujący kod do `TaskFormRegion` klasy. Ten kod zawiera metody pomocnika `FindTaskBySubjectName` który został opisany w poprzednim kroku.  
+4. Dodaj następujący kod do `TaskFormRegion` klasy. Ten kod zawiera metody pomocnika `FindTaskBySubjectName` który został opisany w poprzednim kroku.  
   
-     [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
-     [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]  
+    [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
+    [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]  
   
-5.  Dodaj następujący kod do `TaskFormRegion` klasy. Kod będzie wykonywał następujące zadania:  
+5. Dodaj następujący kod do `TaskFormRegion` klasy. Kod będzie wykonywał następujące zadania:  
   
-    -   Odświeża pola listy na region formularza o bieżący stan ukończenia każdego zadania zależne.  
+   - Odświeża pola listy na region formularza o bieżący stan ukończenia każdego zadania zależne.  
   
-    -   Analizuje tekstu ukrytego pola uzyskać podmiotu każdego zadania zależne. Następnie klient zlokalizuje każdego `Microsoft.Office.Interop.Outlook.TaskItem` w *zadania* folderu przez wywołanie metody `FindTaskBySubjectName` metody pomocnika i przekazanie podmiotu każdego zadania.  
+   - Analizuje tekstu ukrytego pola uzyskać podmiotu każdego zadania zależne. Następnie klient zlokalizuje każdego `Microsoft.Office.Interop.Outlook.TaskItem` w *zadania* folderu przez wywołanie metody `FindTaskBySubjectName` metody pomocnika i przekazanie podmiotu każdego zadania.  
   
-    -   Dodaje `Microsoft.Office.Interop.Outlook.TaskItem.Subject` i `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` wartości do pola listy zadanie zależne.  
+   - Dodaje `Microsoft.Office.Interop.Outlook.TaskItem.Subject` i `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` wartości do pola listy zadanie zależne.  
   
      [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
      [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]  
   
-6.  Zastąp `TaskFormRegion_FormRegionShowing` programu obsługi zdarzeń z następującym kodem. Kod będzie wykonywał następujące zadania:  
+6. Zastąp `TaskFormRegion_FormRegionShowing` programu obsługi zdarzeń z następującym kodem. Kod będzie wykonywał następujące zadania:  
   
-    -   Wypełnia pola kombi na region formularza za pomocą zadań przedmioty, podczas wyświetlania regionu formularza.  
+   - Wypełnia pola kombi na region formularza za pomocą zadań przedmioty, podczas wyświetlania regionu formularza.  
   
-    -   Wywołania `RefreshTaskListBox` metody pomocnika, podczas wyświetlania regionu formularza. Spowoduje to wyświetlenie zależne zadania, które zostały dodane do pola listy, jeśli element został wcześniej otwarty.  
+   - Wywołania `RefreshTaskListBox` metody pomocnika, podczas wyświetlania regionu formularza. Spowoduje to wyświetlenie zależne zadania, które zostały dodane do pola listy, jeśli element został wcześniej otwarty.  
   
      [!code-csharp[Trin_Outlook_FR_Import#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#5)]
      [!code-vb[Trin_Outlook_FR_Import#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#5)]  

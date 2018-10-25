@@ -16,12 +16,12 @@ ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd74c98b3ad2951437e8d0acdfb98c02e5dfa5e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ded80c0bcb7ac8246d1ac620aa936d63ecb3b04d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220860"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902376"
 ---
 # <a name="automation-support-for-options-pages"></a>Obsługa automatyzacji dla stron opcji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ Pakietów VSPackage może zapewnić niestandardowy **opcje** do okien dialogowyc
   
  Jest opcjonalny, ale zalecamy, aby umożliwić dostęp do tej nowej strony za pomocą modelu automatyzacji. Można to zrobić przez następujące kroki:  
   
-1.  Rozszerzanie <xref:EnvDTE._DTE.Properties%2A> obiektu za pomocą implementacji obiektu klasy pochodnej IDispatch.  
+1. Rozszerzanie <xref:EnvDTE._DTE.Properties%2A> obiektu za pomocą implementacji obiektu klasy pochodnej IDispatch.  
   
-2.  Zwraca implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> — metoda (lub dla kodu zarządzanego <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A> metody) do obiektu klasy pochodnej IDispatch.  
+2. Zwraca implementację <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> — metoda (lub dla kodu zarządzanego <xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A> metody) do obiektu klasy pochodnej IDispatch.  
   
-3.  Kiedy wywołuje konsumenta automatyzacji <xref:EnvDTE._DTE.Properties%2A> metody na niestandardowy **opcji** używa środowiska strony właściwości <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metodę, aby uzyskać niestandardowy **opcje narzędzi** automatyzacji strony Implementacja.  
+3. Kiedy wywołuje konsumenta automatyzacji <xref:EnvDTE._DTE.Properties%2A> metody na niestandardowy **opcji** używa środowiska strony właściwości <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metodę, aby uzyskać niestandardowy **opcje narzędzi** automatyzacji strony Implementacja.  
   
-4.  Obiektu automatyzacji pakietu VSPackage jest następnie używany do zapewnienia każdego <xref:EnvDTE.Property> zwrócone przez <xref:EnvDTE._DTE.Properties%2A>.  
+4. Obiektu automatyzacji pakietu VSPackage jest następnie używany do zapewnienia każdego <xref:EnvDTE.Property> zwrócone przez <xref:EnvDTE._DTE.Properties%2A>.  
   
- Przykład wykonania niestandardowej strony opcji narzędzi, zobacz [przykłady VSSDK](../../misc/vssdk-samples.md).  
+   Przykład wykonania niestandardowej strony opcji narzędzi, zobacz [przykłady VSSDK](../../misc/vssdk-samples.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Udostępnianie obiektów projektu](../../extensibility/internals/exposing-project-objects.md)

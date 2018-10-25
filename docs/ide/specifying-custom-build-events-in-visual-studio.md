@@ -1,5 +1,5 @@
 ---
-title: Określenie niestandardowych zdarzeń kompilacji w programie Visual Studio
+title: Określanie niestandardowych zdarzeń kompilacji w programie Visual Studio
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -12,53 +12,53 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f439a8bb1ae559e915769f8ea89ef7f4bf863
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29273ff1580d7fcb757a979309d38f599a9ff499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908745"
 ---
-# <a name="specify-custom-build-events-in-visual-studio"></a>Określenie niestandardowych zdarzeń kompilacji w programie Visual Studio
+# <a name="specify-custom-build-events-in-visual-studio"></a>Określanie niestandardowych zdarzeń kompilacji w programie Visual Studio
 
-Określając zdarzeń niestandardowej kompilacji, możesz automatycznie uruchamiać polecenia przed rozpoczęciem kompilacji lub po jej zakończeniu. Na przykład można uruchomić *bat* pliku przed rozpoczęciem kompilacji lub skopiuj nowe pliki do folderu po zakończeniu kompilacji. Zdarzenia kompilacji uruchomić tylko wtedy, gdy kompilacja pomyślnie osiągnie tych punktów w procesie kompilacji.
+Określając to zdarzenie kompilacji niestandardowej, może automatycznie uruchomić polecenia przed uruchomieniem kompilacji lub po jej zakończeniu. Na przykład, można uruchomić *.bat* plików przed uruchomieniem kompilacji lub skopiuj nowe pliki do folderu, po zakończeniu kompilacji. Zdarzenia kompilacji są uruchamiane tylko wtedy, gdy kompilacja pomyślnie osiągnie tych punktów w procesie kompilacji.
 
  Aby uzyskać szczegółowe informacje o języku programowania, którego używasz zobacz następujące tematy:
 
--   Visual Basic —[porady: Określ zdarzenia (Visual Basic) kompilacji](../ide/how-to-specify-build-events-visual-basic.md).
+-   Visual Basic —[porady: Określanie Tworzenie zdarzenia (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   C# i F # —[porady: Określ zdarzenia (C#) kompilacji](../ide/how-to-specify-build-events-csharp.md).
+-   C#i F#—[porady: Określanie zdarzeń kompilacji (C#)](../ide/how-to-specify-build-events-csharp.md).
 
--   Visual C++ —[zdarzenia kompilacji określ](/cpp/ide/specifying-build-events).
+-   Visual C++ —[określanie zdarzeń kompilacji](/cpp/ide/specifying-build-events).
 
 ## <a name="syntax"></a>Składnia
 
-Zdarzenia kompilacji wykonaj takiej samej składni jak polecenia systemu DOS, ale makra umożliwia łatwiejsze tworzenie zdarzeń kompilacji. Aby uzyskać listę dostępnych makr, zobacz [okno dialogowe wiersza polecenia zdarzenia/po kompilacji — zdarzenia prekompilacyjnego](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
+Zdarzenia kompilacji postępuj zgodnie z tej samej składni jako polecenia systemu DOS, ale makra umożliwia łatwiejsze tworzenie zdarzeń kompilacji. Aby uzyskać listę dostępnych makr, zobacz [okno dialogowe wiersz polecenia zdarzenia/po kompilacji — zdarzenia prekompilacyjnego](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
- Aby uzyskać najlepsze wyniki wykonaj następujące porady dotyczące formatowania:
+ Aby uzyskać najlepsze wyniki postępuj zgodnie z tymi porady dotyczące formatowania:
 
--   Dodaj `call` instrukcji, aby wszystkie zdarzenia, które są uruchamiane kompilacji *bat* plików.
+- Dodaj `call` instrukcji przed wszystkich zdarzeń, które są uruchamiane kompilacji *.bat* plików.
 
-     Przykład: `call C:\MyFile.bat`
+   Przykład: `call C:\MyFile.bat`
 
-     Przykład: `call C:\MyFile.bat call C:\MyFile2.bat`
+   Przykład: `call C:\MyFile.bat call C:\MyFile2.bat`
 
--   Ścieżki pliku należy ująć w cudzysłowy.
+- Ścieżki plików należy ująć w znaki cudzysłowu.
 
-     Przykład (dla [!INCLUDE[win8](../debugger/includes/win8_md.md)]): "% ProgramFiles (x86) %\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" — Jeśli "$(TargetPath)"
+   Przykład (dla [!INCLUDE[win8](../debugger/includes/win8_md.md)]): "% ProgramFiles (x86) %\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" — Jeśli "$(TargetPath)"
 
--   Rozdzielić wiele poleceń podziały wiersza.
+- Oddziel wiele poleceń przy użyciu podziały wierszy.
 
--   Zawierać symboli wieloznacznych, zgodnie z potrzebami.
+- Zawierać symbole wieloznaczne, zgodnie z potrzebami.
 
-     Przykład: `for %I in (*.txt *.doc *.html) do copy %I c:\` *mydirectory*`\`
+   Przykład: `for %I in (*.txt *.doc *.html) do copy %I c:\` *mydirectory*`\`
 
-    > [!NOTE]
-    >  `%I` Powyższy kod powinien być `%%I` w partii skryptów.
+  > [!NOTE]
+  >  `%I` w powyższym kodzie powinno być `%%I` w skryptach wsadowych.
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Kompilowanie i kompilacji](../ide/compiling-and-building-in-visual-studio.md)
-- [Okno dialogowe wiersza polecenia zdarzenia/po kompilacji — zdarzenia prekompilacyjnego](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Znaki specjalne MSBuild](../msbuild/msbuild-special-characters.md)
-- [Wskazówki: Tworzenie aplikacji](../ide/walkthrough-building-an-application.md)
+- [Kompilowanie i tworzenie kompilacji](../ide/compiling-and-building-in-visual-studio.md)
+- [Okno dialogowe wiersz polecenia zdarzenia/po kompilacji — Zdarzenie sprzed kompilacji](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
+- [Znaki specjalne w MSBuild](../msbuild/msbuild-special-characters.md)
+- [Przewodnik: kompilowanie aplikacji](../ide/walkthrough-building-an-application.md)

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f41b0e5973af8e0cb65f093f51137059084c9792
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af349d8568d50e2059ab33ad54b14f499c7b6afd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105492"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913465"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
-Porównuje tego kontekstu dokumentu do danej tablicy kontekstów dokumentu.  
+Porównuje ten kontekst dokumentu do danej tablicy kontekstów dokumentu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -47,22 +47,22 @@ int Compare(
   
 #### <a name="parameters"></a>Parametry  
  `compare`  
- [in] Wartość z zakresu od [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) wyliczenia, która określa typ porównania.  
+ [in] Wartość z zakresu od [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) wyliczenie, który określa typ porównania.  
   
  `rgpDocContextSet`  
- [in] Tablica [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) obiekty reprezentujące kontekstów dokumentu są porównywane do.  
+ [in] Tablica [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) obiekty reprezentujące kontekstów dokumentu, którą jest porównywany.  
   
  `dwDocContextSetLen`  
  [in] Długość tablicy kontekstów dokumentu do porównania.  
   
  `pdwDocContext`  
- [out] Zwraca indeks `rgpDocContextSet` tablicy pierwszy kontekstu dokumentu, który spełnia porównanie.  
+ [out] Zwraca indeks do `rgpDocContextSet` tablicy pierwszy kontekst dokumentu, który spełnia porównanie.  
   
 ## <a name="return-value"></a>Wartość zwracana  
  Zwraca `S_OK` Jeśli znaleziono dopasowanie. Zwraca `S_FALSE` Jeżeli nie znaleziono dopasowania. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) obiektów, które są przekazywane w tablicy musi być implementowana przez tego samego aparatu debugowania, który implementuje `IDebugDocumentContext2` obiekt wywoływany w przeciwnym razie wynik porównania jest nieprawidłowa.  
+ [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) obiekty, które są przekazywane w tablicy musi być implementowana przez tego samego aparatu debugowania, który implementuje `IDebugDocumentContext2` obiektu wywołanego w przeciwnym razie wynik porównania jest nieprawidłowy.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   

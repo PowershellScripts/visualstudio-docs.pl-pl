@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6c38eb732a6e431804070505ecbd01e869c34ca
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 76be049c670fb91911be70132b459cad5e5183bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079875"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902467"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Porady: Określanie alternatywnej lokalizacji aktualizacji wdrażania
 Można zainstalować usługi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacja początkowo z dysku CD lub udział plików, ale aplikacja musi sprawdzić okresowe aktualizacje w sieci Web. Tak, aby aplikacja może automatycznie zaktualizowana z sieci Web po jego wstępnej instalacji, można określić alternatywną lokalizację aktualizacji w manifeście wdrożenia.  
@@ -46,16 +46,16 @@ Można zainstalować usługi [!INCLUDE[ndptecclick](../deployment/includes/ndpte
   
 ### <a name="specify-an-alternate-location-for-updates-by-using-mageexe"></a>Określanie alternatywnej lokalizacji aktualizacji za pomocą Mage.exe  
   
-1.  Otwórz wiersz polecenia .NET Framework.  
+1. Otwórz wiersz polecenia .NET Framework.  
   
-2.  Ustaw lokalizację aktualizacji, używając następującego polecenia. W tym przykładzie *HelloWorld.exe.application* jest ścieżką do Twojego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji, która zawsze ma rozszerzenie .application, i *http://adatum.com/Update/Path* jest adres URL tego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] będzie szukać aktualizacji aplikacji.  
+2. Ustaw lokalizację aktualizacji, używając następującego polecenia. W tym przykładzie *HelloWorld.exe.application* jest ścieżką do Twojego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikacji, która zawsze ma rozszerzenie .application, i *<http://adatum.com/Update/Path>* jest adres URL tego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] będzie szukać aktualizacji aplikacji.  
   
-     **Mage — aktualizowanie HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
+    **Mage — aktualizowanie HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
   
-3.  Zapisz plik.  
+3. Zapisz plik.  
   
-    > [!NOTE]
-    >  Teraz należy ponownie podpisać plik za pomocą *Mage.exe*. Aby uzyskać więcej informacji, zobacz [wskazówki: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+   > [!NOTE]
+   >  Teraz należy ponownie podpisać plik za pomocą *Mage.exe*. Aby uzyskać więcej informacji, zobacz [wskazówki: ręczne wdrażanie aplikacji ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="net-framework-security"></a>Zabezpieczenia.NET Framework  
  Jeśli instalowanie aplikacji w trybie offline średnie, takich jak dysk CD, a komputer jest w trybie online [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] najpierw sprawdza ją pod adres URL określony przez `<deploymentProvider>` tag w manifeście wdrożenia, aby ustalić, czy lokalizacji aktualizacji zawiera nowszą wersję aplikacja. Jeśli tak jest, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instaluje aplikację bezpośrednio stamtąd, a nie z katalogu instalacji początkowej i środowisko uruchomieniowe języka wspólnego (CLR) określa zaufania aplikacji przy użyciu na poziomie `<deploymentProvider>`. Jeśli komputer jest w trybie offline lub `<deploymentProvider>` jest nieosiągalny, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalacji z dysku CD, a środowisko CLR przyznaje zaufania, w oparciu o punkt instalacji; w przypadku instalacji z dysku CD, oznacza to, Twoja aplikacja otrzyma pełnego zaufania. Wszystkie kolejne aktualizacje będą dziedziczyć ten poziom zaufania.  

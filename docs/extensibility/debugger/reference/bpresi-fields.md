@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b6ecfd729762944bcf26814e735c4c73841e2d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b25c979870b21b802cd3c32f02bc649347159857
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908616"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
-Określa informacje mają być pobrane informacje pomyślne rozpoznawanie punkt przerwania.  
+Określa informacje, które mają zostać pobrane informacje pomyślnego rozwiązania punktu przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -48,23 +48,23 @@ public enum enum_BPRESI_FIELDS {
   
 ## <a name="members"></a>Elementy członkowskie  
  BPRESI_BPRESLOCATION  
- Inicjowanie użycia `bpResLocation` pola (lokalizacji punktu przerwania rozpoznawania) [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury.  
+ Inicjowanie bądź użyj `bpResLocation` pola (lokalizacji punktu przerwania rozdzielczość) [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury.  
   
  BPRESI_PROGRAM  
- Inicjowanie użycia `pProgram` pole `BP_RESOLUTION_INFO` struktury.  
+ Inicjowanie bądź użyj `pProgram` pole `BP_RESOLUTION_INFO` struktury.  
   
  BPRESI_THREAD  
- Inicjowanie użycia `pThread` pole `BP_RESOLUTION_INFO` struktury.  
+ Inicjowanie bądź użyj `pThread` pole `BP_RESOLUTION_INFO` struktury.  
   
  BPRESI_ALLFIELDS  
  Określa wszystkie pola.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany do [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) metody, aby wskazać, które pola [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury mają być zainicjowany.  
+ Przekazany do [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) metodę, aby wskazać, które pola [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury, które mają zostać zainicjowane.  
   
- Te flagi są również używane w celu wskazania, które pola `BP_RESOLUTION_INFO` struktury są używane i prawidłowe, gdy jest zwracany tej struktury.  
+ Te flagi są również używane w celu wskazania, które pola `BP_RESOLUTION_INFO` struktury są używane i ważne, gdy tej struktury jest zwracany.  
   
- Te wartości mogą być łączone z bitowego `OR`.  
+ Te wartości mogą być łączone przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

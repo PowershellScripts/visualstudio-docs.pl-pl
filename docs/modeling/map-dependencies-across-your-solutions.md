@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5625d79221416a8799d120530d3c463041412417
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341228"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896944"
 ---
 # <a name="map-dependencies-with-code-maps"></a>Mapowanie zależności z mapami kodu
 
@@ -138,15 +138,15 @@ Aby wyświetlić wszystkie zależności w rozwiązaniu:
 
 10. Innym sposobem, aby skoncentrować się na mapie złożone rozwiązanie jest generowanie nowej mapy zawierająca wybrane elementy z istniejącej mapy. Przytrzymaj **Ctrl** podczas wybierania elementów chcesz skupić się na, otwórz menu skrótów i wybierz polecenie **nowy wykres na podstawie wyboru**.
 
-   ![Pokaż wybrane elementy na nowej mapie kodu](../modeling/media/codemapsshowonnewmap.png)
+    ![Pokaż wybrane elementy na nowej mapie kodu](../modeling/media/codemapsshowonnewmap.png)
 
 11. Kontekst zawierający są przenoszone do nowej mapy. Ukryj foldery rozwiązania i innych kontenerów nie chcesz, aby zobaczyć, za pomocą **filtry** okienka.
 
-   ![Filtruj kontener, aby uprościć widok](../modeling/media/codemapsexpandnewgroups.png)
+    ![Filtruj kontener, aby uprościć widok](../modeling/media/codemapsexpandnewgroups.png)
 
 12. Rozwiń grupy, a następnie wybierz elementy na mapie, aby wyświetlać relacje.
 
-   ![Wybierz elementy, aby wyświetlać relacje](../modeling/media/codemapsviewnewrelationships.png)
+    ![Wybierz elementy, aby wyświetlać relacje](../modeling/media/codemapsviewnewrelationships.png)
 
 Zobacz też:
 

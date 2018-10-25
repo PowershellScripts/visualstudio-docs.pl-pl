@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 283333c8d505952e36dc8524d1377fd828142aca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ae9bafa3aa97146abd63cd6f98516632d079bfd3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104998"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903247"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
-Pobiera symbole debugowania z atrybutem danego nadrzędnego dla określonego modułu.  
+Pobiera symbole debugowania z atrybutem nadrzędnym podanego dla określonego modułu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -64,7 +64,7 @@ int GetSymAttribute (
  [in] Nazwa modułu.  
   
  `cBuffer`  
- [in] Liczbę bajtów wymaganą dla danych wyjściowych `buffer`.  
+ [in] Liczba bajtów potrzebnych dla danych wyjściowych `buffer`.  
   
  `pcBuffer`  
  [out] Długość danych wyjściowych `buffer`.  
@@ -73,10 +73,10 @@ int GetSymAttribute (
  [out] Tablica, która zawiera symbole.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetSymAttribute(  

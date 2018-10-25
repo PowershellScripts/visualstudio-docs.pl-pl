@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb04a772a9ca2a6bf63861c02e3c65870639da56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e609451af16d202828fac30cd0da133bf3bea73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117260"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898879"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
-Pobiera liczbę niestandardowych przeglądarek, które mogą być dostępne dla tej właściwości.  
+Pobiera liczbę przeglądarek niestandardowych, które mogą być dostępne dla tej właściwości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,18 +41,18 @@ int GetCustomViewerCount(
   
 #### <a name="parameters"></a>Parametry  
  `pcelt`  
- [out] Liczba osób przeglądających niestandardowych, które są dostępne dla tej właściwości.  
+ [out] Liczba przeglądarek niestandardowych, które są dostępne dla tej właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Aby zapewnić obsługę wizualizatorach typu, ta metoda przekazuje wywołanie [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) metody. Jeśli ewaluatora wyrażenia obsługuje również podglądy niestandardowe dla tego typu właściwości, ta metoda dodaje do zwrócona wartość liczbę niestandardowych przeglądarki.  
+ Aby można było obsługiwać wizualizatorów typu, ta metoda przekazuje wywołanie do [GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md) metody. Jeśli Ewaluator wyrażeń również obsługuje przeglądarek niestandardowych dla tego typu właściwości, ta metoda dodaje numer przeglądarek niestandardowych do zwróconej wartości.  
   
- Aby uzyskać szczegółowe informacje na temat różnic między wizualizatorach typu i niestandardowych przeglądarki, zobacz [wizualizatora typu i podglądu niestandardowego](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md).  
+ Aby uzyskać szczegółowe informacje na temat różnic między wizualizatorów typu i przeglądarek niestandardowych, zobacz [Wizualizator typów i Przeglądarka niestandardowa](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md).  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CProperty** obiekt ujawniający [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CProperty** obiekt ujawniający [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interfejsu.  
   
 ```cpp  
 STDMETHODIMP CProperty::GetCustomViewerCount(ULONG* pcelt)  

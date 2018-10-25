@@ -46,39 +46,39 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e1efa6852a9bb1c2ec6cd4cabf63ca761506cad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca6d6d1e4a3ad6705890efdc40171857781e6d12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220223"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892938"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Porady: Korzystanie z macierzystego sprawdzania w trakcie wykonywania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 W programie Visual C++ można użyć natywny [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) do przechwytywania typowych błędów czasu wykonywania, takich jak:  
   
--   Uszkodzenie wskaźnika stosu.  
+- Uszkodzenie wskaźnika stosu.  
   
--   Przepełnienia lokalne tablice.  
+- Przepełnienia lokalne tablice.  
   
--   Uszkodzenie stosu.  
+- Uszkodzenie stosu.  
   
--   Zależności w niezainicjowanych zmiennych lokalnych.  
+- Zależności w niezainicjowanych zmiennych lokalnych.  
   
--   Utrata danych na przypisanie do zmiennej krótszy.  
+- Utrata danych na przypisanie do zmiennej krótszy.  
   
- Jeśli używasz **usunęliśmy** przy użyciu zoptymalizowanego (**/O**) kompilacji powoduje błąd kompilatora. Jeśli używasz `runtime_checks` pragmy w optymalizowania kompilacji pragmy nie ma wpływu.  
+  Jeśli używasz **usunęliśmy** przy użyciu zoptymalizowanego (**/O**) kompilacji powoduje błąd kompilatora. Jeśli używasz `runtime_checks` pragmy w optymalizowania kompilacji pragmy nie ma wpływu.  
   
- Podczas debugowania programu, który ma włączone kontrole czasu wykonywania, domyślna akcja dotyczy programu zatrzymać, a następnie Przerwij do debugera, gdy wystąpi błąd czasu wykonywania. Można zmienić to domyślne zachowanie dla sprawdzanie w czasie wykonania. Aby uzyskać więcej informacji, zobacz [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md).  
+  Podczas debugowania programu, który ma włączone kontrole czasu wykonywania, domyślna akcja dotyczy programu zatrzymać, a następnie Przerwij do debugera, gdy wystąpi błąd czasu wykonywania. Można zmienić to domyślne zachowanie dla sprawdzanie w czasie wykonania. Aby uzyskać więcej informacji, zobacz [Zarządzanie wyjątkami za pomocą debugera](../debugger/managing-exceptions-with-the-debugger.md).  
   
- W poniższych procedurach opisano sposób włączania macierzyste sprawdzanie w czasie wykonywania w kompilacji debugowania oraz jak zmodyfikować zachowanie natywnych sprawdzanie w czasie wykonania.  
+  W poniższych procedurach opisano sposób włączania macierzyste sprawdzanie w czasie wykonywania w kompilacji debugowania oraz jak zmodyfikować zachowanie natywnych sprawdzanie w czasie wykonania.  
   
- Inne tematy w tej sekcji zawierają informacje dotyczące:  
+  Inne tematy w tej sekcji zawierają informacje dotyczące:  
   
--   [Dostosowywanie środowiska wykonawczego sprawdza, czy za pomocą biblioteki wykonawczej języka C](../debugger/native-run-time-checks-customization.md)  
+- [Dostosowywanie środowiska wykonawczego sprawdza, czy za pomocą biblioteki wykonawczej języka C](../debugger/native-run-time-checks-customization.md)  
   
--   [Za pomocą środowiska wykonawczego sprawdza, czy bez biblioteki wykonawczej języka C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
+- [Za pomocą środowiska wykonawczego sprawdza, czy bez biblioteki wykonawczej języka C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Aby włączyć macierzyste sprawdzanie w czasie wykonywania w kompilacji debugowania  
   

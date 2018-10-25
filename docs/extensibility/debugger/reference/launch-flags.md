@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44d7396388d0bac1539a597fa5b72e0bedaba8c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 74ec5b3cc02efa75e84d52910c02ea693a7ab8a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903494"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Określa flagi uruchamiania debugowania.  
@@ -48,21 +48,21 @@ public enum enum_LAUNCH_FLAGS {
   
 ## <a name="members"></a>Elementy członkowskie  
  LAUNCH_DEBUG  
- Uruchamia proces do debugowania.  
+ Uruchamia proces debugowania.  
   
  LAUNCH_NODEBUG  
- Uruchamia proces bez jego debugowania.  
+ Uruchamia proces bez debugowania go.  
   
  LAUNCH_ENABLE_ENC  
  PRZESTARZAŁE, NIE NALEŻY UŻYWAĆ.  
   
  LAUNCH_MERGE_ENV  
- Uruchamia proces i scala środowisko uruchamiania hosta.  
+ Uruchamia proces i scala środowiska za pomocą uruchamiania hosta.  
   
 ## <a name="remarks"></a>Uwagi  
- Te wartości są przekazywane jako argument [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metody.  
+ Te wartości są przekazywane jako argument do [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) metody.  
   
- Te flagi mogą być łączone z bitowego `OR`.  
+ Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

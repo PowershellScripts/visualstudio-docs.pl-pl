@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d48c0e1921c57923021e88a2a4a5bb5f89763ef1
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 05d7c3cc2c391eee6ceeba492cd083efd3c00015
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677492"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916754"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Wskazówki: Powiązywanie kontrolek zawartości do niestandardowych części XML
   W tym instruktażu pokazano, jak powiązać formanty zawartości w dostosowaniu na poziomie dokumentu dla programu Word z danymi XML, który znajduje się w dokumencie.  
@@ -36,19 +36,19 @@ ms.locfileid: "35677492"
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Dodawanie kontrolek zawartości do dokumentu programu Word w projekcie na poziomie dokumentu w czasie projektowania.  
+- Dodawanie kontrolek zawartości do dokumentu programu Word w projekcie na poziomie dokumentu w czasie projektowania.  
   
--   Tworzenie pliku danych XML i schematu XML, który określa elementy, aby powiązać formanty zawartości.  
+- Tworzenie pliku danych XML i schematu XML, który określa elementy, aby powiązać formanty zawartości.  
   
--   Dołączanie do dokumentu schematu XML, w czasie projektowania.  
+- Dołączanie do dokumentu schematu XML, w czasie projektowania.  
   
--   Dodawanie zawartości pliku XML z niestandardowym elementem XML w dokumencie w czasie wykonywania.  
+- Dodawanie zawartości pliku XML z niestandardowym elementem XML w dokumencie w czasie wykonywania.  
   
--   Powiązanie kontrolek zawartości do elementów w niestandardowym elementem XML.  
+- Powiązanie kontrolek zawartości do elementów w niestandardowym elementem XML.  
   
--   Powiązanie <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> zbiór wartości, które są zdefiniowane w schemacie XML.  
+- Powiązanie <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> zbiór wartości, które są zdefiniowane w schemacie XML.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
@@ -71,36 +71,36 @@ ms.locfileid: "35677492"
   
 ### <a name="to-add-content-controls-to-the-document"></a>Aby dodać formanty zawartości do dokumentu  
   
-1.  W dokumencie programu Word, który znajduje się w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer na Wstążce, wybierz **Wstaw** kartę.  
+1. W dokumencie programu Word, który znajduje się w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer na Wstążce, wybierz **Wstaw** kartę.  
   
-2.  W **tabel** grupy, wybierz **tabeli**i Wstaw tabelę z kolumnami 2 i 3 wiersze.  
+2. W **tabel** grupy, wybierz **tabeli**i Wstaw tabelę z kolumnami 2 i 3 wiersze.  
   
-3.  Wpisz tekst w pierwszej kolumnie tak, aby wyglądała jak następujące kolumny:  
+3. Wpisz tekst w pierwszej kolumnie tak, aby wyglądała jak następujące kolumny:  
   
-    ||  
-    |-|  
-    |**Nazwisko pracownika**|  
-    |**Data zatrudnienia**|  
-    |**Tytuł**|  
+   ||  
+   |-|  
+   |**Nazwisko pracownika**|  
+   |**Data zatrudnienia**|  
+   |**Tytuł**|  
   
-4.  W drugiej kolumnie tabeli, wybierz pierwszy wiersz (obok **nazwiska pracownika**).  
+4. W drugiej kolumnie tabeli, wybierz pierwszy wiersz (obok **nazwiska pracownika**).  
   
-5.  Na Wstążce, wybierz **Developer** kartę.  
+5. Na Wstążce, wybierz **Developer** kartę.  
   
-    > [!NOTE]  
-    >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: wyświetlić kartę Deweloper na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+   > [!NOTE]  
+   >  Jeśli **Developer** karta nie jest widoczna, najpierw musisz wyświetlić. Aby uzyskać więcej informacji, zobacz [jak: wyświetlić kartę Deweloper na wstążce](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
-6.  W **kontrolki** grupy, wybierz **tekstu** przycisk ![PlainTextContentControl —](../vsto/media/plaintextcontrol.gif "PlainTextContentControl —") dodać <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do pierwszej komórki.  
+6. W **kontrolki** grupy, wybierz **tekstu** przycisk ![PlainTextContentControl —](../vsto/media/plaintextcontrol.gif "PlainTextContentControl —") dodać <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>do pierwszej komórki.  
   
-7.  W drugiej kolumnie tabeli, wybierz drugi wiersz (obok **Data zatrudnienia**).  
+7. W drugiej kolumnie tabeli, wybierz drugi wiersz (obok **Data zatrudnienia**).  
   
-8.  W **kontrolki** grupy, wybierz **selektora daty** przycisk ![DatePickerContentControl —](../vsto/media/datepicker.gif "DatePickerContentControl —") dodać <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> do drugiej komórce.  
+8. W **kontrolki** grupy, wybierz **selektora daty** przycisk ![DatePickerContentControl —](../vsto/media/datepicker.gif "DatePickerContentControl —") dodać <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> do drugiej komórce.  
   
 9. W drugiej kolumnie tabeli, wybierz trzeciego wiersza (obok **tytuł**).  
   
 10. W **kontrolki** grupy, wybierz **listy rozwijanej** przycisk ![DropDownListContentControl —](../vsto/media/dropdownlist.gif "DropDownListContentControl —") do dodania <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> do ostatniej komórki.  
   
- To już cały interfejs użytkownika dla tego projektu. Po uruchomieniu projektu można teraz wpisz tekst w pierwszym wierszu i wybierz datę w drugim wierszu. Następnym krokiem jest, aby dołączyć dane, które mają być wyświetlane w dokumencie w pliku XML.  
+    To już cały interfejs użytkownika dla tego projektu. Po uruchomieniu projektu można teraz wpisz tekst w pierwszym wierszu i wybierz datę w drugim wierszu. Następnym krokiem jest, aby dołączyć dane, które mają być wyświetlane w dokumencie w pliku XML.  
   
 ## <a name="create-the-xml-data-file"></a>Utwórz plik danych XML  
  Zwykle będą uzyskiwać dane XML do przechowywania w niestandardowym elementem XML z zewnętrznego źródła, takich jak plik lub bazy danych. W tym instruktażu utworzysz plik XML, który zawiera dane pracowników, oznaczony przez elementy, które zostaną powiązane z kontrolkami zawartości w dokumencie. Aby udostępnić dane w czasie wykonywania, należy osadzić pliku XML jako zasób w zestawie dostosowywania.  
@@ -189,7 +189,7 @@ ms.locfileid: "35677492"
 ## <a name="attach-the-xml-schema-to-the-document"></a>Dołącz schemat XML w dokumencie  
  Należy dołączyć schematu XML w dokumencie, aby powiązać <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> na prawidłowe wartości `title` elementu.  
   
-### <a name="to-attach-the-xml-schema-to-the-document-includeword15shortvstoincludesword-15-short-mdmd"></a>Aby dołączyć schematu XML w dokumencie ([!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
+### <a name="to-attach-the-xml-schema-to-the-document--includeword15shortvstoincludesword-15-short-mdmd"></a>Aby dołączyć schematu XML w dokumencie ( [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
   
 1.  Aktywuj **EmployeeControls.docx** w projektancie.  
   

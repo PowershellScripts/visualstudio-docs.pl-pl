@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f10a26eca06aed24d53b70cd406fe3f24e2fe898
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af772ebfd844679c7fb8d482b0fd0adf7d84e0e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111823"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905353"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
-Ta metoda konwertuje metody lokalizacji i Przesunięcie na adres pamięci.  
+Ta metoda konwertuje metody lokalizacji i Przesunięcie adresu pamięci.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -49,13 +49,13 @@ int GetMethodLocationProperty(
   
 #### <a name="parameters"></a>Parametry  
  `upstrFullyQualifiedMethodPlusOffset`  
- [in] Metoda lokalizacji i przesunięcie, wyrażony jako ciąg.  
+ [in] Metoda lokalizacji i przesunięcie, wyrażone jako ciąg.  
   
  `pSymbolProvider`  
- [in] Dostawca symbol wyrażonej w postaci [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) obiektu.  
+ [in] Dostawca symboli wyrażonej w postaci [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) obiektu.  
   
  `pAddress`  
- [in] Adres w metodzie, wyrażony jako [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiektu.  
+ [in] Adres znajdujący się w metodzie, wyrażone jako [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) obiektu.  
   
  `pBinder`  
  [in] Obiekt wiążący wyrażonej w postaci [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) obiektu.  
@@ -64,12 +64,12 @@ int GetMethodLocationProperty(
  [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interfejs, który reprezentuje adres pamięci.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Zwrócony adres można na przykład ustawić punktu przerwania.  
+ Ustaw punkt przerwania, na przykład można zwróconego adresu.  
   
- Pomimo nazwę `upstrFullyQualifiedMethodPlusOffset`, nazwę metody częściowo kwalifikowanej można przekazać tego parametru. W takim przypadku wybranej metody jest ten, który umieszcza `pAddress`. Sposób ten parametr jest interpretowany zależy od implementacji ewaluatora wyrażeń i język, który go obsługuje.  
+ Niezależnie od nazwy `upstrFullyQualifiedMethodPlusOffset`, ten parametr może być przekazywany nazwę metody częściowo kwalifikowane. W takim przypadku wybranej metody jest tą, która otacza `pAddress`. Jak ten parametr jest interpretowany zależy od implementacji ewaluatora wyrażeń i język, który ją obsługuje.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   

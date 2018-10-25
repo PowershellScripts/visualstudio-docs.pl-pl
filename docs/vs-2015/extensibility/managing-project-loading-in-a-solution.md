@@ -15,12 +15,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f7df8c667753c13a5b69935a31755a72d232a96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914259"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>Zarządzanie ładowaniem projektu w rozwiązaniu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,23 +100,23 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 ## <a name="detecting-and-managing-solution-and-project-loading"></a>Wykrywanie i zarządzania nimi rozwiązania i ładowanie projektu  
  W celu wykrycia stan ładowania projektów i rozwiązań, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A> z następującymi wartościami:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` zwraca `true` Jeśli rozwiązanie i jego projekty są załadowane, w przeciwnym razie `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` zwraca `true` Jeśli rozwiązanie i jego projekty są załadowane, w przeciwnym razie `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` zwraca `true` Jeśli partii projekty są obecnie ładowane w tle, w przeciwnym razie `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` zwraca `true` Jeśli partii projekty są obecnie ładowane w tle, w przeciwnym razie `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` zwraca `true` Jeśli partii projekty są obecnie ładowane synchronicznie wyniku polecenia user lub inne obciążenia jawne, w przeciwnym razie `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>: `var` zwraca `true` Jeśli partii projekty są obecnie ładowane synchronicznie wyniku polecenia user lub inne obciążenia jawne, w przeciwnym razie `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` zwraca `true` Jeśli rozwiązanie jest obecnie zamykane, w przeciwnym razie `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>: `var` zwraca `true` Jeśli rozwiązanie jest obecnie zamykane, w przeciwnym razie `false`.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` zwraca `true` Jeśli rozwiązanie jest obecnie są otwarte, w przeciwnym razie `false`.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>: `var` zwraca `true` Jeśli rozwiązanie jest obecnie są otwarte, w przeciwnym razie `false`.  
   
- Można także zapewnić, że projekty i rozwiązania są ładowane (niezależnie od tego, jakie są priorytetów ładowania projektu), wywołując jedną z następujących metod:  
+  Można także zapewnić, że projekty i rozwiązania są ładowane (niezależnie od tego, jakie są priorytetów ładowania projektu), wywołując jedną z następujących metod:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: wywołanie tej metody wymusza projektów w rozwiązaniu do załadowania przed powrotem z metody.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>: wywołanie tej metody wymusza projektów w rozwiązaniu do załadowania przed powrotem z metody.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: wywołanie tej metody wymusza projektów w `guidProject` załadować przed powrotem z metody.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>: wywołanie tej metody wymusza projektów w `guidProject` załadować przed powrotem z metody.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: wywołanie tej metody wymusza projektu w `guidProjectID` załadować przed powrotem z metody.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>: wywołanie tej metody wymusza projektu w `guidProjectID` załadować przed powrotem z metody.  
   
 > [!NOTE]
 >  . Domyślnie tylko projekty, które mają zapotrzebowanie obciążenia i priorytety obciążenia w tle są załadowane, ale jeśli <xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS> flaga jest przekazywany do metody, zostaną załadowane wszystkie projekty z wyjątkiem tych, które zostaną oznaczone, aby jawnie załadować.

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce17a44a6680288a31d80993a11d59eaa95f1a31
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676361"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900478"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Wskazówki: Zbieranie danych przy użyciu formularza Windows
   W tym instruktażu pokazano, jak otworzyć formularz Windows z dostosowywania poziomie dokumentu dla programu Microsoft Office Excel, zbiera informacje o użytkowniku i zapisanie tych informacji w komórce arkusza.  
@@ -70,41 +70,41 @@ ms.locfileid: "35676361"
   
 ### <a name="to-add-a-windows-form"></a>Aby dodać formularz Windows  
   
-1.  Wybierz projekt **WinFormInput** w **Eksploratora rozwiązań**.  
+1. Wybierz projekt **WinFormInput** w **Eksploratora rozwiązań**.  
   
-2.  Na **projektu** menu, kliknij przycisk **Dodaj formularz Windows**.  
+2. Na **projektu** menu, kliknij przycisk **Dodaj formularz Windows**.  
   
-3.  Nazwa formularza **GetInputString.vb** lub **GetInputString.cs**, a następnie kliknij przycisk **Dodaj**.  
+3. Nazwa formularza **GetInputString.vb** lub **GetInputString.cs**, a następnie kliknij przycisk **Dodaj**.  
   
-     Nowy formularz zostanie otwarty w projektancie.  
+    Nowy formularz zostanie otwarty w projektancie.  
   
-4.  Dodaj <xref:System.Windows.Forms.TextBox> i <xref:System.Windows.Forms.Button> do formularza.  
+4. Dodaj <xref:System.Windows.Forms.TextBox> i <xref:System.Windows.Forms.Button> do formularza.  
   
-5.  Wybierz przycisk, znaleźć właściwości **tekstu** w **właściwości** okna i zmień tekst, który ma **OK**.  
+5. Wybierz przycisk, znaleźć właściwości **tekstu** w **właściwości** okna i zmień tekst, który ma **OK**.  
   
- Następnie dodaj kod, aby `ThisWorkbook.vb` lub `ThisWorkbook.cs` umożliwiają zebranie informacji dotyczących użytkownika.  
+   Następnie dodaj kod, aby `ThisWorkbook.vb` lub `ThisWorkbook.cs` umożliwiają zebranie informacji dotyczących użytkownika.  
   
 ## <a name="display-the-windows-form-and-collecting-information"></a>Wyświetl formularz Windows i używana do zbierania informacji  
  Utwórz wystąpienie obiektu `GetInputString` formularza Windows i wyświetlenia go, a następnie wpisz informacje o użytkowniku do komórki w arkuszu.  
   
 #### <a name="to-display-the-form-and-collect-information"></a>Formularz wyświetlania i zbierać informacje  
   
-1.  Kliknij prawym przyciskiem myszy **ThisWorkbook.vb** lub **ThisWorkbook.cs** w **Eksploratora rozwiązań**, a następnie kliknij przycisk **Wyświetl kod**.  
+1. Kliknij prawym przyciskiem myszy **ThisWorkbook.vb** lub **ThisWorkbook.cs** w **Eksploratora rozwiązań**, a następnie kliknij przycisk **Wyświetl kod**.  
   
-2.  W <xref:Microsoft.Office.Tools.Excel.Workbook.Open> program obsługi zdarzeń `ThisWorkbook`, Dodaj następujący kod, aby zadeklarować zmienną formularza `GetInputString` i wyświetlić formularz.  
+2. W <xref:Microsoft.Office.Tools.Excel.Workbook.Open> program obsługi zdarzeń `ThisWorkbook`, Dodaj następujący kod, aby zadeklarować zmienną formularza `GetInputString` i wyświetlić formularz.  
   
-    > [!NOTE]  
-    >  W języku C#, należy dodać program obsługi zdarzeń, jak pokazano na <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> poniższe zdarzenie. Aby dowiedzieć się, jak tworzenie procedur obsługi zdarzeń, zobacz [porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+   > [!NOTE]  
+   >  W języku C#, należy dodać program obsługi zdarzeń, jak pokazano na <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> poniższe zdarzenie. Aby dowiedzieć się, jak tworzenie procedur obsługi zdarzeń, zobacz [porady: tworzenie obsługi zdarzeń w projektach pakietu Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
   
-3.  Utwórz metodę o nazwie `WriteStringToCell` , zapisuje tekst z nazwanym zakresem. Ta metoda jest wywoływana z formularza i danych wejściowych użytkownika jest przekazywany do <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli `formInput`, w komórce **A1**.  
+3. Utwórz metodę o nazwie `WriteStringToCell` , zapisuje tekst z nazwanym zakresem. Ta metoda jest wywoływana z formularza i danych wejściowych użytkownika jest przekazywany do <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli `formInput`, w komórce **A1**.  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
   
- Następnie dodaj kod do formularza w celu obsługi kliknięcia przycisku zdarzeń.  
+   Następnie dodaj kod do formularza w celu obsługi kliknięcia przycisku zdarzeń.  
   
 ## <a name="send-information-to-the-worksheet"></a>Wysyłanie informacji do arkusza  
   

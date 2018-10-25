@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916910"
 ---
 # <a name="save-data-back-to-the-database"></a>Zapisywanie danych z powrotem w bazie danych
 
@@ -47,10 +47,10 @@ Jeśli znasz TableAdapters, możesz przejść bezpośrednio do jednego z tych te
 |-----------|-----------------|
 |[Wstawianie nowych rekordów do bazy danych](../data-tools/insert-new-records-into-a-database.md)|Jak przeprowadzić aktualizacje i wstawia przy użyciu obiektów TableAdapter lub polecenia|
 |[Aktualizowanie danych za pomocą adaptera TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Jak przeprowadzić aktualizacje z TableAdapters|
-|[Hierarchiczna aktualizacja](../data-tools/hierarchical-update.md)|Jak przeprowadzić aktualizacje z zestawu danych przy użyciu dwóch lub więcej powiązanych tabel|
+|[Aktualizacja hierarchiczna](../data-tools/hierarchical-update.md)|Jak przeprowadzić aktualizacje z zestawu danych przy użyciu dwóch lub więcej powiązanych tabel|
 |[Obsługiwanie wyjątku współbieżności](../data-tools/handle-a-concurrency-exception.md)|Jak obsługiwać wyjątki, gdy dwóch użytkowników podejmują próby zmiany te same dane w bazie danych, w tym samym czasie|
 |[Porady: zapisywanie danych przy użyciu transakcji](../data-tools/save-data-by-using-a-transaction.md)|Jak zapisać danych w ramach transakcji przy użyciu systemu. Transactions — przestrzeń nazw i obiekt elementu TransactionScope|
-|[Zapisywanie danych w ramach transakcji](../data-tools/save-data-in-a-transaction.md)|Przewodnik, który pokazuje tworzenie aplikacji Windows Forms, aby zademonstrować zapisywanie danych do bazy danych w obrębie transakcji|
+|[Zapisywanie danych w transakcji](../data-tools/save-data-in-a-transaction.md)|Przewodnik, który pokazuje tworzenie aplikacji Windows Forms, aby zademonstrować zapisywanie danych do bazy danych w obrębie transakcji|
 |[Zapisywanie danych w bazie danych (wiele tabel)](../data-tools/save-data-to-a-database-multiple-tables.md)|Jak edytować rekordy i zapisać zmiany w wielu tabel w bazie danych|
 |[Zapisywanie danych z obiektu w bazie danych](../data-tools/save-data-from-an-object-to-a-database.md)|Sposób przekazywania danych z obiektu, który nie jest w zestawie danych do bazy danych za pomocą TableAdapter dbdirect — metody|
 |[Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Jak wysyłać zapytania SQL bezpośrednio do bazy danych za pomocą TableAdapter|
@@ -73,21 +73,21 @@ Można zaktualizować zawartości zestawu danych przez *scalanie* go z innym zes
 Podczas scalania zestawów danych, można przekazać argument logiczny (`preserveChanges`) informuje, że <xref:System.Data.DataSet.Merge%2A> metoda czy zachować istniejące zmiany w zestawie danych docelowych. Ponieważ zestawy danych, obsługa wielu wersji rekordy, należy pamiętać o więcej niż jedna wersja rekordów jest scalana. W poniższej tabeli przedstawiono, jak został scalony rekord w dwóch zestawów danych:
 
 |DataRowVersion|Docelowy dataset|Zestaw danych źródłowych|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Oryginał|James Wilson|James C. Wilson|
 |bieżący|Jim Wilson|James C. Wilson|
 
 Wywoływanie <xref:System.Data.DataSet.Merge%2A> metody w poprzedniej tabeli za pomocą `preserveChanges=false targetDataset.Merge(sourceDataset)` powoduje następujące dane:
 
 |DataRowVersion|Docelowy dataset|Zestaw danych źródłowych|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Oryginał|James C. Wilson|James C. Wilson|
 |bieżący|James C. Wilson|James C. Wilson|
 
 Wywoływanie <xref:System.Data.DataSet.Merge%2A> metody z `preserveChanges = true targetDataset.Merge(sourceDataset, true)` powoduje następujące dane:
 
 |DataRowVersion|Docelowy dataset|Zestaw danych źródłowych|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |Oryginał|James C. Wilson|James C. Wilson|
 |bieżący|Jim Wilson|James C. Wilson|
 
@@ -128,7 +128,7 @@ Informacje o zmianach wprowadzonych w zestawie danych są obsługiwane na dwa sp
 W poniższej tabeli przedstawiono możliwe wartości <xref:System.Data.DataRowState> wyliczenia:
 
 |Wartość właściwością DataRowState|Opis|
-|------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowState.Added>|Wiersz został dodany jako element, aby <xref:System.Data.DataRowCollection>. (Wiersz, w tym stanie nie ma odpowiedniej wersji oryginalnej, ponieważ nie istnieje podczas ostatniego <xref:System.Data.DataRow.AcceptChanges%2A> wywołano metodę).|
 |<xref:System.Data.DataRowState.Deleted>|Wiersz został usunięty, za pomocą <xref:System.Data.DataRow.Delete%2A> z <xref:System.Data.DataRow> obiektu.|
 |<xref:System.Data.DataRowState.Detached>|Wiersz został utworzony, ale nie jest częścią żadnego <xref:System.Data.DataRowCollection>. A <xref:System.Data.DataRow> obiekt jest w tym stanie, natychmiast po jego utworzeniu, zanim dodano go do kolekcji, a po jego usunięciu z kolekcji.|
@@ -142,7 +142,7 @@ Zestawy danych, obsługa wielu wersji rekordów. <xref:System.Data.DataRowVersio
 W poniższej tabeli przedstawiono możliwe wartości <xref:System.Data.DataRowVersion> wyliczenia:
 
 |Wartość DataRowVersion|Opis|
-|--------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|Bieżąca wersja rekord zawiera wszystkich modyfikacjach, które zostały wykonane na rekord od czasu ostatniego <xref:System.Data.DataRow.AcceptChanges%2A> została wywołana. Wiersz został usunięty, czy nie bieżącej wersji.|
 |<xref:System.Data.DataRowVersion.Default>|Wartość domyślna rekord, zgodnie z definicją schematu lub dane źródło zestawu danych.|
 |<xref:System.Data.DataRowVersion.Original>|Oryginalną wersję rekordu jest kopia rekordu, jak to było dosyć ostatnie zmiany czasu zostały zatwierdzone w zestawie danych. W praktyce jest to zazwyczaj wersji rekordu jako przeczytane ze źródła danych.|
@@ -276,9 +276,9 @@ W instrukcji UPDATE należy określić zarówno nowe wartości (te, które będ�
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Tworzenie i konfigurowanie adapterów TableAdapter](create-and-configure-tableadapters.md)
 - [Aktualizowanie danych za pomocą adaptera TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
-- [Powiązywanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+- [Wiązanie kontrolek z danymi w programie Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Sprawdzanie poprawności danych](validate-data-in-datasets.md)
 - [Porady: Dodawanie, modyfikowanie i usuwanie jednostek (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

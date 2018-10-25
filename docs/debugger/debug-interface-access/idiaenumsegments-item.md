@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSegments::Item | Dokumentacja firmy Microsoft
+title: Idiaenumsegments::Item — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64089113f0ad5b0e3fea0189a5dc3bf680213158
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 19d42e8bb2cdf950043b6a60a0db82706cf582ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896409"
 ---
 # <a name="idiaenumsegmentsitem"></a>IDiaEnumSegments::Item
 Pobiera segment za pomocą indeksu.  
@@ -35,13 +35,13 @@ HRESULT Item (
   
 #### <a name="parameters"></a>Parametry  
  indeks  
- [in] Indeks o [idiasegment —](../../debugger/debug-interface-access/idiasegment.md) obiektu do pobrania. Indeks znajduje się w zakresie od 0 do `count`-1, gdy `count` zwróconego przez [IDiaEnumSegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) metody.  
+ [in] Indeks elementu [idiasegment —](../../debugger/debug-interface-access/idiasegment.md) obiektu do pobrania. Indeks znajduje się w zakresie od 0 do `count`-1, gdzie `count` jest zwracany przez [idiaenumsegments::get_count —](../../debugger/debug-interface-access/idiaenumsegments-get-count.md) metody.  
   
  Segment  
  [out] Zwraca [idiasegment —](../../debugger/debug-interface-access/idiasegment.md) obiekt reprezentujący wybrane segmenty.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenumsegments —](../../debugger/debug-interface-access/idiaenumsegments.md)   

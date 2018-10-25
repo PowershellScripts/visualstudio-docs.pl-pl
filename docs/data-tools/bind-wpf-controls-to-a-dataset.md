@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: aef6236b896495f81e91cbdd7befd2923c013a33
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 3450671c32cb7cfa03ade49bffcbecea728ddacf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917530"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 
@@ -58,15 +58,15 @@ Znajomość następujących pojęć jest również przydatna, ale nie jest wymag
 
 Utwórz nowy projekt WPF, aby wyświetlić rekordy produktu.
 
-1.  Uruchom program Visual Studio.
+1. Uruchom program Visual Studio.
 
-2.  Na **pliku** menu, wybierz opcję **New** > **projektu**.
+2. Na **pliku** menu, wybierz opcję **New** > **projektu**.
 
-3.  Rozwiń **języka Visual Basic** lub **Visual C#**, a następnie wybierz pozycję **Windows**.
+3. Rozwiń **języka Visual Basic** lub **Visual C#**, a następnie wybierz pozycję **Windows**.
 
-4.  Wybierz **aplikacji WPF** szablonu projektu.
+4. Wybierz **aplikacji WPF** szablonu projektu.
 
-5.  W **nazwa** wprowadź **AdventureWorksProductsEditor** , a następnie wybierz **OK**.
+5. W **nazwa** wprowadź **AdventureWorksProductsEditor** , a następnie wybierz **OK**.
 
    Program Visual Studio tworzy projekt AdventureWorksProductsEditor.
 
@@ -126,23 +126,23 @@ Aby wypełnić dataset z danymi, należy użyć `Fill` metody `ProductTableAdapt
 
 Dodaj kilku przycisków do okna, modyfikując XAML w Projektancie WPF. W dalszej części tego przewodnika należy dodać kod, który umożliwia przewijanie za pośrednictwem, a następnie zapisz zmiany rekordów produktów za pomocą tych przycisków.
 
-1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie *MainWindow.xaml*.
+1. W **Eksploratora rozwiązań**, kliknij dwukrotnie *MainWindow.xaml*.
 
-     Okno w **WPF Designer**.
+    Okno w **WPF Designer**.
 
-2.  W [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] wyświetlić projektanta, Dodaj następujący kod między `<Grid>` tagi:
+2. W [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] wyświetlić projektanta, Dodaj następujący kod między `<Grid>` tagi:
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="625" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="625" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  Skompiluj projekt.
+3. Skompiluj projekt.
 
 ## <a name="create-data-bound-controls"></a>Tworzenie formantów powiązanych z danymi
 
@@ -248,6 +248,6 @@ Po ukończeniu tego przewodnika, możesz spróbować następujące zadania:
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
-- [Narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Wiązanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
+- [Narzędzia zestawów danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Powiązanie danych — omówienie](/dotnet/framework/wpf/data/data-binding-overview)

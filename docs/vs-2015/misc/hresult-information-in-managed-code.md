@@ -15,31 +15,31 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: douge
-ms.openlocfilehash: b629f856bcdba13523c094b5d3fd32b6848ec23f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08d14f1155838e53321224280a69e7a76bf07b52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256077"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911853"
 ---
 # <a name="hresult-information-in-managed-code"></a>Informacje o HRESULT w kodzie zarządzanym
 Interakcja między kodem zarządzanym i COM może powodować problemy, gdy wystąpią zwracane wartości HRESULT.  
   
  Za pomocą interfejsu COM zwracanej wartości HRESULT można odtworzyć te role:  
   
--   Dostarczanie informacji o błędach (na przykład <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>).  
+- Dostarczanie informacji o błędach (na przykład <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>).  
   
--   Dostarczaj informacje dotyczące zachowania programu normalnego stanu.  
+- Dostarczaj informacje dotyczące zachowania programu normalnego stanu.  
   
- Wartości HRESULT COM wywołuje kod zarządzany, może spowodować następujące problemy:  
+  Wartości HRESULT COM wywołuje kod zarządzany, może spowodować następujące problemy:  
   
--   Funkcje modelu COM, które zwracają wartości HRESULT mniejsza od zera (kody błędów) generować wyjątki.  
+- Funkcje modelu COM, które zwracają wartości HRESULT mniejsza od zera (kody błędów) generować wyjątki.  
   
--   COM metod zwracających regularnie co najmniej dwóch kodów różnych Powodzenie, na przykład <xref:Microsoft.VisualStudio.VSConstants.S_OK> lub <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>, nie może być wyodrębnione.  
+- COM metod zwracających regularnie co najmniej dwóch kodów różnych Powodzenie, na przykład <xref:Microsoft.VisualStudio.VSConstants.S_OK> lub <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>, nie może być wyodrębnione.  
   
- Ponieważ wiele [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] funkcje modelu COM, albo zwraca wartość HRESULT mniejszej niż zero lub zwrócić kody sukcesu różnych [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] zapisanych zestawy międzyoperacyjne, tak aby podpisy metod są zachowywane. Wszystkie [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] międzyoperacyjny metody są `int` typu. Wartości HRESULT są przekazywane za pośrednictwem warstwa międzyoperacyjności bez zmian i bez generowania wyjątków.  
+  Ponieważ wiele [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] funkcje modelu COM, albo zwraca wartość HRESULT mniejszej niż zero lub zwrócić kody sukcesu różnych [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] zapisanych zestawy międzyoperacyjne, tak aby podpisy metod są zachowywane. Wszystkie [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] międzyoperacyjny metody są `int` typu. Wartości HRESULT są przekazywane za pośrednictwem warstwa międzyoperacyjności bez zmian i bez generowania wyjątków.  
   
- Ponieważ funkcja COM zwraca wartość HRESULT do metody zarządzanego, który ją wywołuje, wywoływania metody należy sprawdzić HRESULT i zgłaszają wyjątki, zgodnie z potrzebami.  
+  Ponieważ funkcja COM zwraca wartość HRESULT do metody zarządzanego, który ją wywołuje, wywoływania metody należy sprawdzić HRESULT i zgłaszają wyjątki, zgodnie z potrzebami.  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>Obsługa wartości HRESULT zwracane do kodu zarządzanego z modelu COM  
  Po wywołaniu interfejsu COM z kodu zarządzanego, sprawdź wartość HRESULT, aby zgłosić wyjątek, jeśli jest to wymagane. <xref:Microsoft.VisualStudio.ErrorHandler> Klasa zawiera <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> przekazany metody, która zgłasza wyjątek modelu COM., w zależności od wartości HRESULT.  

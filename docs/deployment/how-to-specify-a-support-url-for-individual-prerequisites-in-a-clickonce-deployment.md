@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4102decf844d70d85342aae9f140610102ff58
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1e93e8ab84a751c447488e1b4dc6e3e6779b86b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077786"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913284"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Porady: Określanie adresu URL pomocy technicznej dla indywidualnych wstępnie wymaganych składników wdrożenia ClickOnce
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pewne wymagania wstępne, które muszą być dostępne na komputerze klienckim, aby sprawdzić wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] do uruchomienia aplikacji. Te zależności obejmują wymaganą minimalną wersję [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], wersję systemu operacyjnego i dowolne zestawy, które muszą być wstępnie zainstalowane w globalnej pamięci podręcznej zestawów (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], jednak nie zainstalują dowolną z tych wymagań wstępnych. Jeśli warunek wstępny nie zostanie znaleziony, po prostu zatrzymuje instalację i wyświetla okno dialogowe wyjaśniające, dlaczego instalacja nie powiodła się.  
@@ -33,52 +33,52 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pewne wymaga
   
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Określ adres URL pomocy technicznej dla indywidualnych wstępnie wymaganego składnika  
   
-1.  Otwórz manifest aplikacji ( *.manifest* pliku) dla Twojego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w edytorze tekstów.  
+1. Otwórz manifest aplikacji ( *.manifest* pliku) dla Twojego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w edytorze tekstów.  
   
-2.  Wstępnie wymaganego składnika systemu operacyjnego można dodać `supportUrl` atrybutu `dependentOS` elementu:  
+2. Wstępnie wymaganego składnika systemu operacyjnego można dodać `supportUrl` atrybutu `dependentOS` elementu:  
   
-    ```xml  
+   ```xml  
+    <dependency>  
+       <dependentOS supportUrl="http://www.adatum.com/MyApplication/wrongOSFound.htm">  
+         <osVersionInfo>  
+           <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" servicePackMinor="0" />  
+         </osVersionInfo>  
+       </dependentOS>  
+     </dependency>  
+   ```  
+  
+3. Wymaganiem wstępnym dla określonej wersji środowiska uruchomieniowego języka wspólnego, Dodaj `supportUrl` atrybutu `dependentAssembly` wpis, który określa wspólne zależności środowiska uruchomieniowego języka:  
+  
+   ```xml  
      <dependency>  
-        <dependentOS supportUrl="http://www.adatum.com/MyApplication/wrongOSFound.htm">  
-          <osVersionInfo>  
-            <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" servicePackMinor="0" />  
-          </osVersionInfo>  
-        </dependentOS>  
-      </dependency>  
-    ```  
+       <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/wrongClrVersionFound.htm">  
+         <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />  
+       </dependentAssembly>  
+     </dependency>  
+   ```  
   
-3.  Wymaganiem wstępnym dla określonej wersji środowiska uruchomieniowego języka wspólnego, Dodaj `supportUrl` atrybutu `dependentAssembly` wpis, który określa wspólne zależności środowiska uruchomieniowego języka:  
+4. Wymaganiem wstępnym dla zestawu, który musi być wstępnie zainstalowane w globalnej pamięci podręcznej, można ustawić `supportUrl` dla `dependentAssembly` element, który określa wymagany zestaw:  
   
-    ```xml  
-      <dependency>  
-        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/wrongClrVersionFound.htm">  
-          <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />  
-        </dependentAssembly>  
-      </dependency>  
-    ```  
+   ```xml  
+     <dependency>  
+       <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
+         <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
+       </dependentAssembly>  
+     </dependency>  
+   ```  
   
-4.  Wymaganiem wstępnym dla zestawu, który musi być wstępnie zainstalowane w globalnej pamięci podręcznej, można ustawić `supportUrl` dla `dependentAssembly` element, który określa wymagany zestaw:  
+5. Opcjonalna. Dla aplikacji przeznaczonych dla środowiska .NET Framework 4, otwarcie manifestu wdrażania ( *.application* pliku) dla Twojego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w edytorze tekstów.  
   
-    ```xml  
-      <dependency>  
-        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" supportUrl=" http://www.adatum.com/MyApplication/missingSampleGACAssembly.htm">  
-          <assemblyIdentity name="SampleGACAssembly" version="5.0.0.0" publicKeyToken="04529dfb5da245c5" processorArchitecture="msil" language="neutral" />  
-        </dependentAssembly>  
-      </dependency>  
-    ```  
+6. Wymaganie wstępne platformy .NET Framework 4, można dodać `supportUrl` atrybutu `compatibleFrameworks` elementu:  
   
-5.  Opcjonalna. Dla aplikacji przeznaczonych dla środowiska .NET Framework 4, otwarcie manifestu wdrażania ( *.application* pliku) dla Twojego [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji w edytorze tekstów.  
+   ```xml  
+   <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
+     <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />  
+     <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />  
+   </compatibleFrameworks>  
+   ```  
   
-6.  Wymaganie wstępne platformy .NET Framework 4, można dodać `supportUrl` atrybutu `compatibleFrameworks` elementu:  
-  
-    ```xml  
-    <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
-      <framework targetVersion="4.0" profile="Client" supportedRuntime="4.0.30319" />  
-      <framework targetVersion="4.0" profile="Full" supportedRuntime="4.0.30319" />  
-    </compatibleFrameworks>  
-    ```  
-  
-7.  Po ręcznie zmienione manifest aplikacji należy ponownie podpisać manifest aplikacji za pomocą certyfikatu cyfrowego, a następnie aktualizacji i ponowne podpisanie pliku manifestu wdrożenia. Użyj *Mage.exe* lub *MageUI.exe* narzędzi zestawu SDK, aby wykonać to zadanie, jak ponownie wygenerować te pliki przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Usuwa ręczne zmiany. Aby uzyskać więcej informacji na temat korzystania z Mage.exe w celu ponownego podpisania manifestów, zobacz [porady: ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7. Po ręcznie zmienione manifest aplikacji należy ponownie podpisać manifest aplikacji za pomocą certyfikatu cyfrowego, a następnie aktualizacji i ponowne podpisanie pliku manifestu wdrożenia. Użyj *Mage.exe* lub *MageUI.exe* narzędzi zestawu SDK, aby wykonać to zadanie, jak ponownie wygenerować te pliki przy użyciu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Usuwa ręczne zmiany. Aby uzyskać więcej informacji na temat korzystania z Mage.exe w celu ponownego podpisania manifestów, zobacz [porady: ponowne podpisywanie aplikacji i manifestów wdrożenia](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>zabezpieczenia .NET Framework  
  Adres URL pomocy technicznej nie jest wyświetlana w oknie dialogowym, jeśli aplikacja jest oznaczony do uruchamiania w trybie częściowego zaufania.  

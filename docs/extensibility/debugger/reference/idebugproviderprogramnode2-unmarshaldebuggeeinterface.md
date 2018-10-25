@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9ebadbc35ee8752e9f3b985a99155444caff5f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 464c840c9f3009c1ed763bdc8dbbf66b8491bfe8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119753"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917053"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
-Pobiera określonego interfejsu przez granice procesu.  
+Pobiera określonego interfejsu, granice procesu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,13 +46,13 @@ int UnmarshalDebuggeeInterface(
  [in] Identyfikator GUID interfejsu do uzyskania.  
   
  `ppvObject`  
- [out] Zwraca obiekt zawierający implementację żądanego interfejsu. [C++] to mogą być rzutowane bezpośrednio do typu żądanego interfejsu. C# użyj <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> metodę, aby uzyskać żądanego interfejsu.  
+ [out] Zwraca obiekt implementujący żądanego interfejsu. [C++] to może być rzutowany bezpośrednio typ żądanego interfejsu. C# użyj <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> metodę umożliwiającą uzyskanie żądanego interfejsu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest używana, gdy aparat debugowania jest uruchomiony w [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] przestrzeni procesu i debugowany program działa w jego własnej przestrzeni procesu.  
+ Ta metoda jest używana, gdy aparat debugowania jest uruchomiony w [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] przestrzeni procesu, a program poddawany działa w jego własnej przestrzeni procesu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)

@@ -9,12 +9,12 @@ description: Informacje dla dostawców rozwiązań w chmurze o tym, jak kupić i
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9d040d2f586e2c47a6f904f06d483fe484a57429
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 50f4cfeaa6d0f530a70729155f0e81065359281d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899464"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Kupowanie i zarządzać subskrypcjami chmury programu Visual Studio dla klientów
 
@@ -75,6 +75,7 @@ Jeśli subskrybent nie aktywowali swoją subskrypcję programu Visual Studio, mo
 Aby wyświetlić ceny programu Visual Studio dla partnerów CSP, zaloguj się na [Centrum partnerskiego](https://partnercenter.microsoft.com).  Wybierz **ceny i oferty** w lewym okienku nawigacji  Wybierz bieżącego miesiąca, cennik pliku w obszarze **usług opartych na użyciu** w prawym górnym rogu. Po arkusz kalkulacyjny programu Excel do pobrania, przejdź do obszaru **cennik platformy Azure** arkusza, a następnie filtrować **kategoria licznika** kolumny **programu Visual Studio**.
 
 Oto jak interpretować, co widać na ten arkusz kalkulacyjny:
+
 | Kategoria miernika    |   Nazwa                 |  Jednostki                                |           Co to jest                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Subskrypcja                         | Miesięczna subskrypcja programu Visual Studio Enterprise   |

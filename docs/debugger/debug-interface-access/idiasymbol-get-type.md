@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_type | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_type — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 414c66b000a7cd81783ec963d78105792d6b816b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b4c80a04d41df9548fafa2da869f2e6443c599c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896474"
 ---
 # <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
 Pobiera symbol, który reprezentuje typ dla tego symbolu.  
@@ -37,13 +37,13 @@ HRESULT get_type (
  [out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt, który reprezentuje typ tego symbolu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
- Można określić typu zawiera symbol, należy wywołać tę metodę i zbadać powstałe w ten sposób [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiektu. Należy pamiętać, że możliwe symbol nie ma typu. Na przykład nazwę struktury nie ma typu, ale może mieć elementów podrzędnych symboli (Użyj [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) metody do sprawdzenia tych elementów podrzędnych).  
+ Aby określić typ symbolu ma, należy wywołać tę metodę i sprawdź, wynikowy [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiektu. Należy pamiętać, że możliwe jest nie mieć typ symbolu. Na przykład nazwę struktury nie ma typu, ale może mieć elementów podrzędnych symbole (Użyj [idiasymbol::findchildren —](../../debugger/debug-interface-access/idiasymbol-findchildren.md) metodę, aby zbadać te elementy podrzędne).  
   
 ## <a name="example"></a>Przykład  
   
@@ -60,5 +60,5 @@ if (SUCCEEDED(pType->get_type( &pBaseType ))) {
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_baseType](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
+ [Idiasymbol::get_basetype —](../../debugger/debug-interface-access/idiasymbol-get-basetype.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

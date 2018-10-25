@@ -1,5 +1,5 @@
 ---
-title: Błąd modelu DCOM podczas próby kontaktu z komputerem zdalnym. Odmowa dostępu. | Microsoft Docs
+title: Wystąpił błąd modelu DCOM podczas próby skontaktowania się z komputerem zdalnym. Odmowa dostępu. | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -22,34 +22,34 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8533201bfd052b2131ba302e8e1c451f62e5b50a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 193c93e7c29d3ea9fa13c08c9d77e4e88026d814
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900517"
 ---
-# <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Błąd modelu DCOM podczas próby kontaktu z komputerem zdalnym. Odmowa dostępu.
-Debugowanie zdalne używa modelu DCOM do komunikacji między komputerami lokalnymi i zdalnymi w następujących sytuacjach:  
+# <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Wystąpił błąd modelu DCOM podczas próby skontaktowania się z komputerem zdalnym. Odmowa dostępu.
+Zdalne debugowanie używa modelu DCOM do komunikacji między komputerami lokalnymi i zdalnymi w następujących sytuacjach:  
   
--   Debuger ma ustawioną wartość **natywnego trybu zgodności** lub **trybu zgodności zarządzanej** zaewidencjonowania **Narzędzia > Opcje > debugowanie** strony  
+- Debuger jest ustawiona na **macierzysty tryb zgodności** lub **trybu zgodności zarządzanej** jest zaewidencjonowany **Narzędzia > Opcje > debugowanie** strony  
   
--   Debugowania zarządzanego języka C++ (C + +/ CLI) kodu.  
+- Debugowany zarządzany kod C++ (C + +/ CLI) kod.  
   
--   W programie Visual Studio 2013 gdy **włączyć natywnego Edytuj i Kontynuuj** zaznaczono **Narzędzia > Opcje > debugowanie** strony  
+- W programie Visual Studio 2013 podczas **Włączanie natywnego Edytuj i Kontynuuj** jest zaewidencjonowany **Narzędzia > Opcje > debugowanie** strony  
   
--   Niektóre innej debugowania scenariuszy  
+- Niektóre innych firm debugowania scenariuszy  
   
- Ten błąd występuje, gdy proces programu Visual Studio nie może uwierzytelnić się (lub podane poświadczenia są niewystarczające) do procesu zdalnego debugera za pośrednictwem modelu DCOM. Co najmniej jeden z następujących rozwiązań może rozwiązać ten problem:  
+  Ten błąd występuje, gdy proces programu Visual Studio nie może uwierzytelniać (lub podane poświadczenia zostały uznane za niewystarczające) do procesu zdalnego debugera za pośrednictwem protokołów DCOM. Co najmniej jeden z następujących rozwiązań może rozwiązać ten problem:  
   
--   Wyłącz **natywnego trybu zgodności** i **trybu zgodności zarządzanej**.  
+- Wyłącz **macierzysty tryb zgodności** i **trybu zgodności zarządzanej**.  
   
--   W programie Visual Studio 2013, wyłącz **włączyć natywnego Edytuj i Kontynuuj**.  
+- W programie Visual Studio 2013, wyłącz **Włączanie natywnego Edytuj i Kontynuuj**.  
   
--   Ponowny rozruch obu komputerów.  
+- Ponowne uruchomienie obu komputerów.  
   
--   Jeśli zdalne debugowanie wymaga wprowadzania poświadczeń, zaznacz opcję Zapisz poświadczenia.  
+- Jeśli zdalne debugowanie wymaga wprowadzania poświadczeń, zaznacz opcję zapisania poświadczeń.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Zdalne debugowanie błędów i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Błędy związane z debugowaniem zdalnym i rozwiązywanie problemów](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [Debugowanie zdalne](../debugger/remote-debugging.md)

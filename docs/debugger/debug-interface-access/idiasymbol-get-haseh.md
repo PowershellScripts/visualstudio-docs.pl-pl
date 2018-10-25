@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasEH | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_haseh — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0104afd4a84f8d6c50effee0b1cd552b952289c4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: de561482d0d6d98006fa8cda2299125be666f073
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464355"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917235"
 ---
 # <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
-Pobiera flagę określającą, czy funkcja zawiera wszelkie niezarządzane obsługi wyjątków C++ stylu (na przykład bloku try/catch).  
+Pobiera flagę określającą, czy funkcja zawiera wszystkie style języka C++ obsługę niezarządzanych wyjątków (na przykład bloku try/catch).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,13 +34,13 @@ HRESULT get_hasEH(
   
 #### <a name="parameters"></a>Parametry  
  `pFlag`  
- [out] Zwraca `TRUE` Jeśli funkcja ma żadnych wyjątków C++ styl; w przeciwnym razie zwraca `FALSE`.  
+ [out] Zwraca `TRUE` Jeśli funkcja ma żadnych wyjątków języka c++; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5bd49d550cb03e8234c8740ea8c0f605ed721c2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a65928e8a5a734e84d51cbb4368c7346ba8c2edb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896344"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Ustawienia projektu dla konfiguracji debugowania w C#
 Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka C# w **stron właściwości** zgodnie z opisem w oknie [konfiguracji Debug i Release](../debugger/how-to-set-debug-and-release-configurations.md). W poniższej tabeli przedstawiono, gdzie można znaleźć ustawienia związane z debugerem w **stron właściwości** okna.  
@@ -37,15 +37,15 @@ Możesz zmienić ustawienia projektu dla konfiguracji debugowania języka C# w *
   
 ##  <a name="BKMK_Debug_tab"></a> Debugowanie kartę  
   
-|**Ustawienie**|**Opis**|  
-|-----------------|---------------------|  
-|**Konfiguracja**|Ustawia tryb do kompilowania aplikacji. Można wybrać jedną z **aktywna (debugowanie)**, **debugowania**, **wersji**, **wszystkie konfiguracje**.|  
-|**Akcja uruchamiania**|Ta grupa formantów Określa akcję, która ma miejsce, gdy z menu debugowanie wybierz przycisk Start.<br /><br /> -   **Rozpocznij projekt** jest ustawieniem domyślnym i uruchamia projekt startowy do debugowania. Aby uzyskać więcej informacji, zobacz [Wybieranie projektu startowego](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />-   **Uruchom zewnętrzny program** pozwala uruchomić i Dołącz do programu, który nie jest częścią [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchamiania programu](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z(v=vs.100)).<br />-   **Uruchom przeglądarkę w adresie URL** umożliwia debugowanie aplikacji sieci Web.|  
-|**Argumenty wiersza polecenia**|Określa argumenty wiersza polecenia dla programu do debugowania. Nazwa polecenia jest nazwa programu, określone w uruchomienia programu zewnętrznego. Jeśli akcja uruchamiania jest ustawiony na początkowy adres URL, nie można określić argumenty wiersza polecenia.|  
-|**Katalog roboczy**|Określa katalog roboczy debugowanego programu. W [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], katalog roboczy jest katalog, aplikacja zostanie uruchomiona z \bin\debug domyślny.|  
-|**Użyj komputera zdalnego**|Nazwa komputera zdalnego, gdy aplikacja zostanie uruchomiona na potrzeby debugowania lub [nazwy serwera Msvsmon](../debugger/remote-debugging.md). Lokalizacja pliku EXE na komputerze zdalnym jest określona przez właściwość ścieżkę wyjściową w folderze właściwości konfigurowania kategorii kompilacji. Lokalizacja musi być możliwe do udostępnienia katalogu na komputerze zdalnym.|
-|**Włącz debugowanie kodu niezarządzanego**|Umożliwia debugowanie wywołań do kodu natywnego (niezarządzanego) Win32 z zarządzanych aplikacji.|  
-|**Włącz debugowanie programu SQL Server**|Umożliwia debugowanie obiektów bazy danych programu SQL Server.|  
+| **Ustawienie** | **Opis** |
+|-------------------------------------| - |
+| **Konfiguracja** | Ustawia tryb do kompilowania aplikacji. Można wybrać jedną z **aktywna (debugowanie)**, **debugowania**, **wersji**, **wszystkie konfiguracje**. |
+| **Akcja uruchamiania** | Ta grupa formantów Określa akcję, która ma miejsce, gdy z menu debugowanie wybierz przycisk Start.<br /><br /> -   **Rozpocznij projekt** jest ustawieniem domyślnym i uruchamia projekt startowy do debugowania. Aby uzyskać więcej informacji, zobacz [Wybieranie projektu startowego](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100)).<br />-   **Uruchom zewnętrzny program** pozwala uruchomić i Dołącz do programu, który nie jest częścią [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Aby uzyskać więcej informacji, zobacz [dołączanie do uruchamiania programu](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z(v=vs.100)).<br />-   **Uruchom przeglądarkę w adresie URL** umożliwia debugowanie aplikacji sieci Web. |
+| **Argumenty wiersza polecenia** | Określa argumenty wiersza polecenia dla programu do debugowania. Nazwa polecenia jest nazwa programu, określone w uruchomienia programu zewnętrznego. Jeśli akcja uruchamiania jest ustawiony na początkowy adres URL, nie można określić argumenty wiersza polecenia. |
+| **Katalog roboczy** | Określa katalog roboczy debugowanego programu. W [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], katalog roboczy jest katalog, aplikacja zostanie uruchomiona z \bin\debug domyślny. |
+| **Użyj komputera zdalnego** | Nazwa komputera zdalnego, gdy aplikacja zostanie uruchomiona na potrzeby debugowania lub [nazwy serwera Msvsmon](../debugger/remote-debugging.md). Lokalizacja pliku EXE na komputerze zdalnym jest określona przez właściwość ścieżkę wyjściową w folderze właściwości konfigurowania kategorii kompilacji. Lokalizacja musi być możliwe do udostępnienia katalogu na komputerze zdalnym. |
+| **Włącz debugowanie kodu niezarządzanego** | Umożliwia debugowanie wywołań do kodu natywnego (niezarządzanego) Win32 z zarządzanych aplikacji. |
+| **Włącz debugowanie programu SQL Server** | Umożliwia debugowanie obiektów bazy danych programu SQL Server. |
   
 ##  <a name="BKMK_Build_tab"></a> Tworzenie karty  
   

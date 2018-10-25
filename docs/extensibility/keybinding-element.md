@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb8e0dca8293d5d5e853dde19e0c411cfd3e4e63
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 77fb94e702615d0d27ce2587c034000f6c4b3e3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905106"
 ---
 # <a name="keybinding-element"></a>KeyBinding, element
 KeyBinding, element określa skróty klawiaturowe dla poleceń.  
   
- Polecenia może mieć zarówno pojedynczych, jak i podwójną klawiszy skojarzonych z nimi. Na przykład jednego powiązanie klawiszy **Ctrl**+**S** dla **Zapisz** polecenia. Podwójna klawiszy wymaga dwóch kolejnych kombinacje klawiszy, aby wyzwolić poleceniu. Na przykład dwa powiązanie klawiszy **Ctrl * +** K **,** Ctrl**+** K **, aby ustawić zakładki.  
+ Polecenia może mieć zarówno pojedynczych, jak i podwójną klawiszy skojarzonych z nimi. Na przykład jednego powiązanie klawiszy **Ctrl**+**S** dla **Zapisz** polecenia. Podwójna klawiszy wymaga dwóch kolejnych kombinacje klawiszy, aby wyzwolić poleceniu. Na przykład dwa powiązanie klawiszy <strong>Ctrl*+</strong>K<strong>,</strong>Ctrl<strong>+</strong>K** Aby ustawić zakładki.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -39,10 +39,10 @@ KeyBinding, element określa skróty klawiaturowe dla poleceń.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagane.|  
-|identyfikator|Wymagane.|  
-|edytor|Wymagane. Identyfikator GUID edytora wskazuje Kontekst edycyjny, dla którego ten skrót klawiaturowy zostanie uaktywniona. Wartość zakresu globalnego powiązania jest "guidVSStd97".|  
-|klucz1|Wymagane. Prawidłowe wartości to wszystkie typable znaków alfanumerycznych, a także dwucyfrowych wartości szesnastkowych, poprzedzony 0 x i [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
+|Identyfikator GUID|Wymagana.|  
+|identyfikator|Wymagana.|  
+|edytor|Wymagana. Identyfikator GUID edytora wskazuje Kontekst edycyjny, dla którego ten skrót klawiaturowy zostanie uaktywniona. Wartość zakresu globalnego powiązania jest "guidVSStd97".|  
+|klucz1|Wymagana. Prawidłowe wartości to wszystkie typable znaków alfanumerycznych, a także dwucyfrowych wartości szesnastkowych, poprzedzony 0 x i [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
 |mod1|Opcjonalna. Dowolną kombinację **Ctrl**, **Alt**, i **Shift** rozdzielone spacjami.|  
 |klucz2|Opcjonalna. Prawidłowe wartości to wszystkie typable znaków alfanumerycznych, a także dwucyfrowych wartości szesnastkowych, poprzedzony 0 x i [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|  
 |mod2|Opcjonalna. Dowolną kombinację **Ctrl**, **Alt**, i **Shift** rozdzielone spacjami.|  

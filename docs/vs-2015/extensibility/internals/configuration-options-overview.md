@@ -16,12 +16,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e502f78698d830c916b09968e8fa2cfbcd74fbf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294297"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915779"
 ---
 # <a name="configuration-options-overview"></a>Omówienie opcji konfiguracji
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ Interfejsy konfiguracji
   
  Kilka uwagi odnoszące się do poprzedniego diagramu:  
   
--   `IDispatch` jest oznaczony jako opcjonalny w obiekcie konfiguracji. Ściślej mówiąc jest to opcjonalne mieć interfejsy konfiguracji w obiekcie przeglądania.  
+- `IDispatch` jest oznaczony jako opcjonalny w obiekcie konfiguracji. Ściślej mówiąc jest to opcjonalne mieć interfejsy konfiguracji w obiekcie przeglądania.  
   
--   `IVsDebuggableProjectCfg` oznaczone jako opcjonalne w obiekt konfiguracji, ale jest wymagany do obsługi debugowania.  
+- `IVsDebuggableProjectCfg` oznaczone jako opcjonalne w obiekt konfiguracji, ale jest wymagany do obsługi debugowania.  
   
--   `IVsProjectCfg2` oznaczone jako opcjonalne w obiekt konfiguracji, ale wymagane jest grupowanie pomocy technicznej w danych wyjściowych.  
+- `IVsProjectCfg2` oznaczone jako opcjonalne w obiekt konfiguracji, ale wymagane jest grupowanie pomocy technicznej w danych wyjściowych.  
   
--   `Config Provider` Obiekt jest oznaczony jako obiekt opcjonalne, ale ta opcja jest miejsce, do jej wdrożenia. Obiekt może wdrożyć na obiekt projektu lub na oddzielnym obiektem.  
+- `Config Provider` Obiekt jest oznaczony jako obiekt opcjonalne, ale ta opcja jest miejsce, do jej wdrożenia. Obiekt może wdrożyć na obiekt projektu lub na oddzielnym obiektem.  
   
--   `IVsCfgProvider2` jest potrzebny do obsługi platformy i konfiguracji do edycji. `IVsCfgProvider` jest wystarczająca, jeśli nie należy implementować te funkcje.  
+- `IVsCfgProvider2` jest potrzebny do obsługi platformy i konfiguracji do edycji. `IVsCfgProvider` jest wystarczająca, jeśli nie należy implementować te funkcje.  
   
--   Niektóre z tych obiektów, które przedstawiono na diagramie jako oddzielne obiekty mogą być połączone w tej samej klasy, gdzie jest to praktyczne zgodnie z wymaganiami określonego projektu. W innych tematach w tej sekcji jednak obiekty i interfejsy skojarzone z tymi obiektami zostanie dokładnie omówione zgodnie z scenariusz przedstawiony na diagramie.  
+- Niektóre z tych obiektów, które przedstawiono na diagramie jako oddzielne obiekty mogą być połączone w tej samej klasy, gdzie jest to praktyczne zgodnie z wymaganiami określonego projektu. W innych tematach w tej sekcji jednak obiekty i interfejsy skojarzone z tymi obiektami zostanie dokładnie omówione zgodnie z scenariusz przedstawiony na diagramie.  
   
--   Określone obiekty są implementowane oddzielnie. Na przykład projektu i tworzenia rozwiązań są dokonywane na oddzielnych wątkach i obiekt na potrzeby zarządzania życie kompilację oddzielnie od obiektu opisujący konfigurację kompilacji.  
+- Określone obiekty są implementowane oddzielnie. Na przykład projektu i tworzenia rozwiązań są dokonywane na oddzielnych wątkach i obiekt na potrzeby zarządzania życie kompilację oddzielnie od obiektu opisujący konfigurację kompilacji.  
   
- Aby uzyskać więcej informacji na obiekt konfiguracji w interfejsach i obiekt dostawcy konfiguracji na poprzednim rysunku, zobacz [obiekt konfiguracji projektu](../../extensibility/internals/project-configuration-object.md). Ponadto [Konfigurowanie projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md) zamieszczono więcej informacji dotyczących interfejsów konstruktora konfiguracji i tworzenie obiektu zależności i [konfiguracji projektu w celu wdrożenia zarządzania](../../extensibility/internals/project-configuration-for-managing-deployment.md) dalsze informacje interfejsów, dołączonych do narzędzia konfiguracji wdrażania i wdrożenie zależności obiektów. Na koniec [konfiguracji projektu dla danych wyjściowych](../../extensibility/internals/project-configuration-for-output.md) opisuje interfejsy grupy danych wyjściowych i obiekt danych wyjściowych i użycie stron właściwości, aby wyświetlić i ustaw właściwości konfiguracji-zależnych od ustawień lokalnych.  
+  Aby uzyskać więcej informacji na obiekt konfiguracji w interfejsach i obiekt dostawcy konfiguracji na poprzednim rysunku, zobacz [obiekt konfiguracji projektu](../../extensibility/internals/project-configuration-object.md). Ponadto [Konfigurowanie projektu do kompilowania](../../extensibility/internals/project-configuration-for-building.md) zamieszczono więcej informacji dotyczących interfejsów konstruktora konfiguracji i tworzenie obiektu zależności i [konfiguracji projektu w celu wdrożenia zarządzania](../../extensibility/internals/project-configuration-for-managing-deployment.md) dalsze informacje interfejsów, dołączonych do narzędzia konfiguracji wdrażania i wdrożenie zależności obiektów. Na koniec [konfiguracji projektu dla danych wyjściowych](../../extensibility/internals/project-configuration-for-output.md) opisuje interfejsy grupy danych wyjściowych i obiekt danych wyjściowych i użycie stron właściwości, aby wyświetlić i ustaw właściwości konfiguracji-zależnych od ustawień lokalnych.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   

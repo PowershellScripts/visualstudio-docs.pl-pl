@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0117053e47ee9238ee225b9265865b34c6f2140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891859"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfejs użytkownika debugera (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,13 +90,13 @@ W tym temacie opisano okien debugera i oknach dialogowych. Zostało omówione ty
   
  Poniższa lista zawiera pewne ograniczenia dotyczące oceny wyrażenia XPath.  
   
--   Dozwolone są tylko wbudowane funkcje XPath.  
+- Dozwolone są tylko wbudowane funkcje XPath.  
   
--   XSLT wbudowane funkcje, takie jak `document()`, `key()`i tak dalej, nie są dozwolone.  
+- XSLT wbudowane funkcje, takie jak `document()`, `key()`i tak dalej, nie są dozwolone.  
   
--   Funkcje zdefiniowane przez użytkownika nie są dozwolone.  
+- Funkcje zdefiniowane przez użytkownika nie są dozwolone.  
   
- Aby uzyskać więcej informacji, zobacz [instrukcje: Ocena wyrażenia XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
+  Aby uzyskać więcej informacji, zobacz [instrukcje: Ocena wyrażenia XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
   
 ## <a name="disassembly-window"></a>Okno dezasemblacji  
  Okno dezasemblacji zawiera kod zestawu, który jest generowany przez kompilator XSLT. Tego okna może służyć w taki sam sposób, jak wszystkie inne okna dezasemblacji programu Visual Studio.  

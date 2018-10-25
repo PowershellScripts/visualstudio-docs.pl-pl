@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0cbbcbc57d07eaf6273545f5520e461c7578977
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 2e1faf28c05dec58117e5d34e21e7c8020ad3a4d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894290"
 ---
 # <a name="build-loggers"></a>Rejestratory kompilacji
 Rejestratory umożliwiają umożliwiające dostosowanie dane wyjściowe kompilacji i wyświetlanie wiadomości, błędy lub ostrzeżenia w odpowiedzi na zdarzenia w konkretnej kompilacji. Każdy rejestrator jest implementowany jako klasa .NET, która implementuje <xref:Microsoft.Build.Framework.ILogger> interfejs, który jest zdefiniowany w *Microsoft.Build.Framework.dll* zestawu.  
   
  Istnieją dwie metody, których można użyć podczas implementowania Rejestrator:  
   
--   Implementowanie <xref:Microsoft.Build.Framework.ILogger> interfejs bezpośrednio.  
+- Implementowanie <xref:Microsoft.Build.Framework.ILogger> interfejs bezpośrednio.  
   
--   Pochodną klasy z klasy Pomocnika <xref:Microsoft.Build.Utilities.Logger>, który jest zdefiniowany w *Microsoft.Build.Utilities.dll* zestawu. <xref:Microsoft.Build.Utilities.Logger> implementuje <xref:Microsoft.Build.Framework.ILogger> i zawiera domyślne implementacje niektórych <xref:Microsoft.Build.Framework.ILogger> elementów członkowskich.  
+- Pochodną klasy z klasy Pomocnika <xref:Microsoft.Build.Utilities.Logger>, który jest zdefiniowany w *Microsoft.Build.Utilities.dll* zestawu. <xref:Microsoft.Build.Utilities.Logger> implementuje <xref:Microsoft.Build.Framework.ILogger> i zawiera domyślne implementacje niektórych <xref:Microsoft.Build.Framework.ILogger> elementów członkowskich.  
   
- W tym temacie wyjaśniono, jak napisać prosty rejestratora, która pochodzi od klasy <xref:Microsoft.Build.Utilities.Logger>, i wyświetla komunikaty na konsoli w odpowiedzi na niektóre zdarzenia kompilacji.  
+  W tym temacie wyjaśniono, jak napisać prosty rejestratora, która pochodzi od klasy <xref:Microsoft.Build.Utilities.Logger>, i wyświetla komunikaty na konsoli w odpowiedzi na niektóre zdarzenia kompilacji.  
   
 ## <a name="register-for-events"></a>Rejestrowanie zdarzeń  
  Rejestrator ma na celu zbierania informacji o postępie kompilacji, zgłoszonej przez aparat kompilacji, a następnie zgłaszanie tych informacji w wygodny sposób. Należy zastąpić wszystkie rejestratory <xref:Microsoft.Build.Utilities.Logger.Initialize%2A> metoda, która jest, gdy rejestruje rejestratora dla zdarzeń. W tym przykładzie rejestruje rejestratora <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted>, i <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> zdarzenia.  

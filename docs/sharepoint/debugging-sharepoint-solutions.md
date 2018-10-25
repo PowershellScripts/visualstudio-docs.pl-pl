@@ -18,38 +18,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 99d7f5e813e3ac33b327ed0c2962b150b6eed755
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6f53ca7f1a5e449d47a30a32967072f7220c159a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903156"
 ---
 # <a name="debug-sharepoint-solutions"></a>Debugowanie rozwiązań SharePoint
-  Rozwiązania programu SharePoint można debugować przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera. Po rozpoczęciu debugowania, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wdraża pliki projektu do serwera programu SharePoint, a następnie otwiera wystąpienia witryny programu SharePoint w przeglądarce sieci Web. W poniższych sekcjach opisano sposób debugowania aplikacji SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+  Można debugować rozwiązania programu SharePoint przy użyciu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugera. Podczas uruchamiania debugowania, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wdraża pliki projektu na serwerze programu SharePoint, a następnie powoduje otwarcie witryny programu SharePoint w przeglądarce sieci Web. W poniższych sekcjach opisano sposób debugowania aplikacji programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 -   [Włączanie debugowania](#EnableDebug)  
   
--   [Proces wdrażania i debugowania za pomocą F5](#Deployment)  
+-   [Proces wdrażania i debugowania F5](#Deployment)  
   
--   [Funkcje projektu SharePoint](#Features)  
+-   [Funkcje projektu programu SharePoint](#Features)  
   
 -   [Debugowanie przepływów pracy](#Workflow)  
   
--   [Odbiorcy zdarzeń funkcji debugowania](#FeatureEvents)  
+-   [Debugowanie funkcji odbiorcy zdarzeń](#FeatureEvents)  
   
--   [Włączanie rozszerzonej informacji o debugowaniu](#EnhancedDebug)  
+-   [Włączanie rozszerzone informacje o debugowaniu](#EnhancedDebug)  
   
 ## <a name="enable-debugging"></a>Włączanie debugowania
- Po pierwsze debugowania rozwiązania programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], okno dialogowe ostrzega, że plik web.config nie jest skonfigurowana by włączyć debugowanie. (Plik web.config jest tworzona podczas instalowania serwera programu SharePoint. Aby uzyskać więcej informacji, zobacz [Praca z plikami Web.config](http://go.microsoft.com/fwlink/?LinkID=149266).) Okno dialogowe daje możliwość włączenia debugowania uruchomionych projekt bez debugowania lub zmodyfikowanie pliku web.config. Wybranie opcji pierwszy projekt działa normalnie. Jeśli wybierzesz opcję drugi plik web.config jest skonfigurowany do:  
+ Kiedy najpierw debugować rozwiązania programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], okno dialogowe ostrzega, że plik web.config nie jest skonfigurowana by włączyć debugowanie. (Plik web.config jest tworzony podczas instalacji serwera programu SharePoint. Aby uzyskać więcej informacji, zobacz [Praca z plikami Web.config](http://go.microsoft.com/fwlink/?LinkID=149266).) Okno dialogowe zapewnia możliwość włączenia debugowania działających projekt bez debugowania lub zmodyfikowanie pliku web.config. Wybranie opcji pierwszy projekt działa normalnie. Jeśli zdecydujesz się druga opcja, plik web.config jest skonfigurowany do:  
   
--   Włącz w stosie wywołań (`CallStack="true"`)  
+- Włącz na stosie wywołań (`CallStack="true"`)  
   
--   Wyłącz błędy niestandardowe w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="Off" />`)  
+- Wyłączanie błędów niestandardowych w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="Off" />`)  
   
--   Włącz debugowanie kompilacji (`<compilation debug="true">`)  
+- Włącz debugowanie kompilacji (`<compilation debug="true">`)  
   
- Wynikowy plik web.config następująco:  
+  Wynikowy plik web.config jest następujący:  
   
 ```xml  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
@@ -78,79 +78,79 @@ ms.locfileid: "36327170"
     </configuration>  
 ```  
   
- Aby cofnąć te zmiany i wyłączyć debugowanie, Zmień następujące [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] w pliku web.config:  
+ Aby wycofać zmiany i wyłączyć debugowanie, Zmień następujące [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] w pliku web.config:  
   
 -   Wyłącz stos wywołań (`CallStack="false"`)  
   
 -   Włącz błędy niestandardowe w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="On" />`)  
   
--   Wyłącz debugowanie kompilacji (`<compilation debug="false">`)  
+-   Należy wyłączyć debugowanie kompilacji (`<compilation debug="false">`)  
   
-## <a name="f5-debug-and-deployment-process"></a>F5 debugowania i procesem wdrażania
- Po uruchomieniu projektu programu SharePoint w trybie debugowania procesu wdrażania SharePoint wykonuje następujące zadania:  
+## <a name="f5-debug-and-deployment-process"></a>Proces debugowania, jak i wdrożenie F5
+ Po uruchomieniu projektu programu SharePoint w trybie debugowania procesu wdrażania programu SharePoint wykonuje następujące zadania:  
   
-1.  Uruchamia polecenia można dostosowywać przed wdrożeniem.  
+1. Uruchamia polecenia przed wdrożeniem można dostosowywać.  
   
-2.  Tworzy plik pakietu (wsp) rozwiązanie sieci Web przy użyciu [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] poleceń. Plik wsp obejmuje wszystkie niezbędne pliki i funkcje. Aby uzyskać więcej informacji, zobacz [omówienie rozwiązań](http://go.microsoft.com/fwlink/?LinkID=128154).  
+2. Tworzy plik pakietu (wsp) przy użyciu rozwiązań sieci Web przy użyciu [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] poleceń. Plik .wsp obejmuje wszystkie niezbędne pliki i funkcje. Aby uzyskać więcej informacji, zobacz [omówienie rozwiązań](http://go.microsoft.com/fwlink/?LinkID=128154).  
   
-3.  Jeśli rozwiązanie programu SharePoint jest rozwiązanie farmy, odtwarzana [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] puli aplikacji dla określonej lokacji [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]. Ten krok zwalnia zablokowane przez pliki [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] proces roboczy.  
+3. Rozwiązania programu SharePoint jest rozwiązanie farmy, jest odtwarzana [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] pulę aplikacji dla określonej lokacji [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]. W tym kroku zwalnia pliki zablokowane przez [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] procesu roboczego.  
   
-4.  Jeśli poprzednia wersja pakietu już istnieje, wycofuje poprzedniej wersji funkcji i plików w pliku wsp. Ten krok dezaktywuje funkcje, odinstalowanie pakietu rozwiązania, a następnie usuwa pakietu rozwiązania na serwerze programu SharePoint.  
+4. Jeśli poprzednią wersję pakietu już istnieje, wycofująca poprzednią wersję funkcji i plików w pliku wsp. W tym kroku dezaktywuje funkcji, odinstalowuje pakiet rozwiązania, a następnie usuwa pakietu rozwiązania na serwerze programu SharePoint.  
   
-5.  Instaluje bieżącej wersji funkcji i plików w pliku wsp. Ten krok dodaje i instaluje rozwiązanie na serwerze programu SharePoint.  
+5. Instaluje bieżącej wersji funkcji i plików w pliku wsp. Ten krok dodaje i instaluje rozwiązanie na serwerze programu SharePoint.  
   
-6.  W przypadku przepływów pracy instaluje zestawu przepływu pracy. Można zmienić lokalizacji za pomocą *lokalizacji zestawu* właściwości.  
+6. W przypadku przepływów pracy instaluje zestawu przepływu pracy. Można zmienić lokalizacji za pomocą *lokalizacji zestawu* właściwości.  
   
-7.  Aktywuje funkcję projektu w programie SharePoint, jeśli zakres jest witryny lub aplikacji internetowej. Funkcje w zakresach farmy i aplikacji sieci Web nie są uaktywnione.  
+7. Aktywuje funkcję projektu w programie SharePoint, jeśli zakres jest lokacji lub w sieci Web. Funkcje w zakresach farmy i aplikacji sieci Web nie są uaktywnione.  
   
-8.  Dla przepływów pracy, przepływ pracy zostanie skojarzony z biblioteki programu SharePoint, listy lub witryny, które wybrano w **Kreator dostosowania programu SharePoint**.  
+8. W przypadku przepływów pracy, skojarzenie przepływu pracy z biblioteki programu SharePoint, listy lub witryny, które wybrano w **Kreator ustawień niestandardowych SharePoint**.  
   
-    > [!NOTE]  
-    >  To skojarzenie występuje tylko wtedy, gdy wybrano **automatycznie Skojarz przepływu pracy** w kreatorze.  
+   > [!NOTE]  
+   >  To skojarzenie występuje tylko wtedy, gdy wybrano **automatyczne kojarzenie przepływu pracy** w kreatorze.  
   
 9. Uruchamia polecenia po wdrożeniu można dostosowywać.  
   
-10. Dołącza [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debuger [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] procesu (*w3wp.exe*). Jeśli typ projektu umożliwia zmianę *rozwiązania w trybie piaskownicy* właściwość i jej wartość jest równa **true**, a następnie dołącza debuger do innego procesu (*SPUCWorkerProcess.exe*). Aby uzyskać więcej informacji, zobacz [zagadnienia dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).  
+10. Dołącza [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debuger [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] procesu (*w3wp.exe*). Jeśli typ projektu pozwala zmienić *rozwiązanie w trybie piaskownicy* właściwości i jej wartość jest równa **true**, debuger dołącza do innego procesu, a następnie (*SPUCWorkerProcess.exe*). Aby uzyskać więcej informacji, zobacz [uwagi dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).  
   
-11. Uruchomienie debugera JavaScript, jeśli rozwiązanie farmy jest rozwiązania programu SharePoint.  
+11. Uruchamia debuger JavaScript, jeśli rozwiązanie programu SharePoint jest rozwiązanie farmy.  
   
-12. Wyświetla odpowiednią bibliotekę, listy lub strony w przeglądarce sieci Web.  
+12. Wyświetla odpowiednią bibliotekę, listy lub strony witryny w przeglądarce sieci Web.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Wyświetla komunikat o stanie w oknie danych wyjściowych, po zakończeniu każdego zadania. Jeśli nie można ukończyć zadania, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wyświetla komunikat o błędzie w oknie Lista błędów.  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Wyświetla komunikat o stanie w oknie danych wyjściowych, po zakończeniu każdego zadania. Jeśli nie można ukończyć zadania, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] wyświetla komunikat o błędzie w oknie Lista błędów.  
   
-## <a name="sharepoint-project-features"></a>Funkcje projektu SharePoint
- Funkcja jest jednostką przenośnych i moduły funkcji, które ułatwiają modyfikacji lokacji przy użyciu definicji lokacji. Istnieje również pakiet [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] elementów (WSS), które można uaktywnić dla określonego zakresu i pomagające użytkownikom wykonania określonego celu lub zadania. Szablony są wdrażane jako funkcje.  
+## <a name="sharepoint-project-features"></a>Funkcji projektu SharePoint
+ Funkcja jest jednostką przenośny i modularnej funkcji, które upraszcza modyfikacja lokacji przy użyciu definicji witryny. Warto również pakiet [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] elementów (WSS), może być aktywowana dla określonego zakresu i która pomaga użytkownikom wykonania konkretnego celu lub zadania. Szablony są wdrażane jako funkcje.  
   
- Po uruchomieniu projektu w trybie debugowania procesu wdrażania tworzy folder w *funkcji* katalogu w *%COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES*. Nazwy funkcji ma format *Nazwa projektu*_Feature*x*, takich jak TestProject_Feature1.  
+ Kiedy uruchamiasz projekt w trybie debugowania, proces wdrażania tworzy folder w *funkcji* katalogu na *%COMMONPROGRAMFILES%\Microsoft Shared\web server extensions\14\TEMPLATE\FEATURES*. Nazwy funkcji mają format *Nazwa projektu*_funkcji*x*, takich jak TestProject_Feature1.  
   
- Folder rozwiązania w katalogu funkcji zawiera *definicji funkcji* pliku i *definicji przepływu pracy* pliku. Plik definicji funkcji (Feature.xml) opisuje pliki w pliku definicji projektu Feature.The projektu (*Elements.xml*) zawiera opis szablonu projektu. *Elements.XML* znajdują się w **Eksploratora rozwiązań**, ale Feature.xml jest generowany po utworzeniu pakietu rozwiązania. Aby uzyskać więcej informacji o tych plikach, zobacz [SharePoint elementu szablonów projektu i projektu](../sharepoint/sharepoint-project-and-project-item-templates.md).  
+ Folder rozwiązania w katalogu funkcji zawiera *definicji funkcji* pliku i *definicji przepływu pracy* pliku. Plik definicji funkcji (Feature.xml) opisano pliki w pliku definicji projektu Feature.The projektu (*Elements.xml*) opisuje szablon projektu. *Elements.XML* znajdują się w **Eksploratora rozwiązań**, ale Feature.xml jest generowany po utworzeniu pakietu rozwiązania. Aby uzyskać więcej informacji o tych plikach, zobacz [SharePoint szablony elementu projektu i projektu](../sharepoint/sharepoint-project-and-project-item-templates.md).  
   
 ## <a name="debug-workflows"></a>Debugowania przepływów pracy
- Podczas debugowania projektów przepływu pracy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje szablonu przepływu pracy (w zależności od jego typu) do biblioteki lub do listy. Następnie należy uruchomić szablon przepływu pracy ręcznie lub przez dodanie lub uaktualnienie elementu. Następnie można użyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Aby debugować przepływ pracy.  
+ Podczas debugowania projektów przepływu pracy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dodaje szablon przepływu pracy (w zależności od typu), do biblioteki lub listy. Następnie należy uruchomić szablonu przepływu pracy, ręcznie lub przez dodanie lub zaktualizowanie elementu. Następnie można użyć [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] debugowanie przepływu pracy.  
   
-> [!NOTE]  
->  Jeśli możesz dodać odwołania do innych zestawów, upewnij się, że te zestawy są zainstalowane w globalnej pamięci podręcznej zestawów ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). W przeciwnym razie rozwiązania przepływu pracy zakończy się niepowodzeniem. Aby uzyskać informacje o sposobie instalowania zestawów, zobacz [ręcznie uruchomić przepływ pracy dla dokumentu lub elementu](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
+> [!NOTE]
+>  Po dodaniu odwołania do innych zestawów, upewnij się, że te zestawy są zainstalowane w globalnej pamięci podręcznej ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). W przeciwnym razie rozwiązaniu przepływ pracy zakończy się niepowodzeniem. Aby uzyskać informacje o sposobie instalowania zestawów, zobacz [ręcznie uruchomić przepływ pracy dla dokumentu lub elementu](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
- Jednak proces wdrożenia nie można uruchomić przepływu pracy. Należy uruchomić przepływ pracy z witryny sieci Web programu SharePoint. Można też uruchomić przepływ pracy za pomocą aplikacji klienckiej, takich jak Microsoft Office Word 2010 lub przy użyciu osobnych kodu po stronie serwera. Użyj jednej z metod określone w **Kreator dostosowania programu SharePoint**.  
+ Jednak proces wdrażania nie można uruchomić przepływu pracy. W witrynie sieci Web programu SharePoint, należy uruchomić przepływ pracy. Można również uruchomić przepływ pracy za pomocą aplikacji klienckiej, takich jak Microsoft Office Word 2010 lub przy użyciu osobnego kodu po stronie serwera. Użyj jednej z metod, określone w **Kreator ustawień niestandardowych SharePoint**.  
   
- Na przykład jeśli określono, że przepływ pracy można uruchomić ręcznie, należy uruchomić przepływ pracy bezpośrednio z poziomu elementu w bibliotece lub na liście. Aby uzyskać więcej informacji na temat ręcznego uruchamiania przepływu pracy, zobacz [ręcznie uruchomić przepływ pracy element dokumentu](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
+ Na przykład jeśli określono, że przepływ pracy może zostać uruchomione ręcznie, należy uruchomić przepływ pracy bezpośrednio z elementu w bibliotece lub na liście. Aby uzyskać więcej informacji o tym, jak ręcznie uruchomić przepływ pracy, zobacz [ręcznie uruchomić przepływ pracy element dokumentu](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
-## <a name="debug-feature-event-receivers"></a>Odbiorcy zdarzeń funkcji debugowania
- Domyślnie podczas uruchamiania [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aplikacji programu SharePoint, jego funkcje są automatycznie aktywowane automatycznie na serwerze programu SharePoint. Jednak powoduje problemy podczas debugowania odbiorcy zdarzeń funkcji, ponieważ po aktywowaniu funkcji przez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], działa w ramach innego procesu niż debugera. Oznacza to, że niektóre funkcje debugowania, takie jak punkty kontrolne, nie będą działać poprawnie.  
+## <a name="debug-feature-event-receivers"></a>Debugowanie funkcji odbiorcy zdarzeń
+ Domyślnie po uruchomieniu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aplikacji programu SharePoint, jej funkcje zostaną automatycznie aktywowane automatycznie na serwerze programu SharePoint. Jednak powoduje to problemy podczas debugowania funkcji zdarzenia odbiorców, ponieważ gdy funkcja jest aktywowana za [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], działa w ramach innego procesu niż debugera. Oznacza to, że niektóre funkcje debugowania, takie jak punkty kontrolne, nie będą działać poprawnie.  
   
- Aby wyłączyć automatyczną aktywację funkcji w programie SharePoint i zezwolenia na debugowanie prawidłowego elementu odbiorcy zdarzeń funkcji, należy ustawić wartość projektu **aktywnej konfiguracji wdrożenia** właściwości **aktywacji nie** przed debugowania. Następnie, po rozpoczęciu debugowania aplikacji programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ręcznie aktywować tej funkcji w programie SharePoint. Aby włączyć funkcję, otwórz **Akcje witryny** menu w programie SharePoint, wybierz **ustawienia lokacji**, wybierz **Zarządzanie funkcji witryny** łącza, a następnie wybierz pozycję **Aktywuj** przycisk Dalej, funkcji, aby kontynuować debugowanie normalnego.  
+ Aby wyłączyć automatyczną aktywację funkcji w programie SharePoint i zezwolenia na debugowanie właściwe dla funkcji odbiorcy zdarzeń, ustaw wartość projektu **aktywnej konfiguracji wdrożenia** właściwość **aktywacji nie** przed debugowaniem. Następnie, po rozpoczęciu debugowania aplikacji programu SharePoint w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ręcznie aktywować tej funkcji w programie SharePoint. Aby aktywować tę funkcję, otwórz **Akcje witryny** menu w programie SharePoint, wybierz opcję **ustawienia lokacji**, wybierz **Zarządzanie funkcji witryny** łącze, a następnie wybierz **Aktywuj** przycisk obok funkcji, aby kontynuować debugowanie w zwykły sposób.  
   
 ## <a name="enable-enhanced-debug-information"></a>Włącz rozszerzone informacje debugowania
- Z powodu złożonych czasami interakcje między [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] procesu (devenv.exe), [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] procesu hosta programu SharePoint (*vssphost4.exe*), SharePoint i warstwę usługi WCF, diagnozowanie błędów występujących podczas Tworzenie, wdrażanie i tak dalej, może być trudne. Aby pomóc w rozwiązaniu takie błędy, można włączyć rozszerzone informacje debugowania. Aby to zrobić, przejdź do następującego klucza rejestru w rejestrze systemu Windows:  
+ Z powodu czasami złożone interakcje między [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] procesu (devenv.exe) [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] procesie hosta programu SharePoint (*vssphost4.exe*), SharePoint i warstwę WCF diagnozowanie błędów występujących podczas Tworzenie, wdrażanie i tak dalej, może być trudne. Aby pomóc Ci rozwiązać błędy takie, można włączyć rozszerzone informacje o debugowaniu. Aby to zrobić, przejdź do następującego klucza rejestru w rejestrze systemu Windows:  
   
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**  
   
  Jeśli "EnableDiagnostics" **REG_DWORD** wartość jeszcze nie istnieje, utworzenie go ręcznie. Ustaw wartość "EnableDiagnostics" na "1".  
   
- Ustawienie tej wartości klucza 1 powoduje, że stos śledzenia informacji w wynikach **dane wyjściowe** okna zawsze, gdy projekt błędów systemowych są wykonywane, gdy są uruchomione [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby wyłączyć rozszerzone informacje debugowania, ustawić EnableDiagnostics 0 lub usuwania wartości.  
+ Ustawienie tej wartości klucza 1 powoduje, że stos śledzenia informacji do wyświetlania w **dane wyjściowe** okna zawsze wtedy, gdy projekt systemu błędy występują, gdy są uruchomione [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby wyłączyć rozszerzone informacje o debugowaniu, wartość EnableDiagnostics 0 lub usunąć wartości.  
   
- Aby uzyskać więcej informacji na temat kluczy rejestru programu SharePoint, zobacz [Debugowanie rozszerzeń dla narzędzi SharePoint w Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+ Aby uzyskać więcej informacji na temat kluczy rejestru programu SharePoint, zobacz [Debugowanie rozszerzeń dla narzędzi SharePoint w programie Visual Studio](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Zobacz także
- [Rozwiązywanie problemów z rozwiązań SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
+ [Rozwiązywanie problemów z rozwiązaniami SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
   

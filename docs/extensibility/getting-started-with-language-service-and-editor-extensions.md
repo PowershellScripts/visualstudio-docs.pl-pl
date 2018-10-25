@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c07d2f374890d6a87b5fe45304d098acfb05065b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8b5fa8d0dbe011ef6b960c03d7d95aa776de6933
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901323"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Wprowadzenie do usługi i Edytor rozszerzenia językowe
 Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspektu, parowanie nawiasów klamrowych, funkcja IntelliSense i żarówki, język programowania lub dowolnego typu zawartości. Można również dostosować wygląd i zachowanie edytora programu Visual Studio, na przykład tekst kolorowanie, marginesy, zakończeń i inne elementy wizualne. Można również zdefiniować własny typ zawartości i określ wygląd i zachowanie widoki tekstowe, w których zawartość zostanie wyświetlona.  
@@ -44,17 +44,17 @@ Rozszerzenia edytora służy do dodawania funkcji języka, np. Tworzenie konspek
   
  Poniżej przedstawiono niektóre z podstawowych rodzajów rozszerzenia edytora:  
   
--   Marginesy i paski przewijania  
+- Marginesy i paski przewijania  
   
--   Znaczniki  
+- Znaczniki  
   
--   Zakończeń  
+- Zakończeń  
   
--   Opcje  
+- Opcje  
   
--   IntelliSense  
+- IntelliSense  
   
- Aby uzyskać więcej informacji na temat punktów rozszerzenia edytora, zobacz [punkty rozszerzenia usługi oraz edytora języka](../extensibility/language-service-and-editor-extension-points.md).  
+  Aby uzyskać więcej informacji na temat punktów rozszerzenia edytora, zobacz [punkty rozszerzenia usługi oraz edytora języka](../extensibility/language-service-and-editor-extension-points.md).  
   
 ## <a name="deploying-editor-extensions"></a>Wdrażanie rozszerzenia Edytora  
  W programie Visual Studio, wdrażanie rozszerzenia edytora, dodając plik metadanych o nazwie *source.extension.vsixmanifest* do rozwiązania, należy skompilować rozwiązanie, a następnie dodając kopię plików binarnych i manifest w folderze, który jest znany w programie Visual Studio. Plik manifestu definiuje podstawowych informacji o rozszerzeniu (na przykład nazwy, autora, wersji i typu zawartości). Aby uzyskać więcej informacji na temat pliku manifestu VSIX i sposobu wdrażania rozszerzeń, zobacz [rozszerzeń programu Visual Studio statku](../extensibility/shipping-visual-studio-extensions.md).  

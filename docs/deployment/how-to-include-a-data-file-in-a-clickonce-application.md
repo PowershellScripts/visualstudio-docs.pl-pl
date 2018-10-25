@@ -18,47 +18,47 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a3b6b92dda0936c61d4eb69ff29021c58da30c99
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: cfba7612ec0e019b8c8dfa7c7406435b6e43e6cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917924"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Porady: uwzględnianie pliku danych w aplikacji ClickOnce
 Każdy [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalowania aplikacji jest przypisany do katalogu danych na dysku lokalnym komputera docelowego, gdzie aplikacja można zarządzać swoimi danymi. Pliki danych może zawierać pliki dowolnego typu: pliki tekstowe, pliki XML lub nawet bazy danych Microsoft Access (*.mdb*) plików. Poniższe procedury pokazują, jak dodać plik danych dowolnego typu do Twojej [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacji.  
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Aby dołączyć plik danych przy użyciu Mage.exe  
   
-1.  Dodaj plik danych do katalogu aplikacji z użyciem usług rest plików aplikacji.  
+1. Dodaj plik danych do katalogu aplikacji z użyciem usług rest plików aplikacji.  
   
-     Zazwyczaj będzie katalog etykietą bieżąca wersja wdrożenia katalogu aplikacji — na przykład v1.0.0.0.  
+    Zazwyczaj będzie katalog etykietą bieżąca wersja wdrożenia katalogu aplikacji — na przykład v1.0.0.0.  
   
-2.  Zaktualizuj manifest aplikacji do listy plików danych.  
+2. Zaktualizuj manifest aplikacji do listy plików danych.  
   
-     `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
+    `mage -u v1.0.0.0\Application.manifest -FromDirectory v1.0.0.0`  
   
-     Wykonanie tego zadania ponownie utworzy listę plików w manifeście aplikacji, a także automatycznie wygeneruje sygnatury skrótu.  
+    Wykonanie tego zadania ponownie utworzy listę plików w manifeście aplikacji, a także automatycznie wygeneruje sygnatury skrótu.  
   
-3.  Otwórz manifest aplikacji w preferowanym tekstu lub edytora XML i Znajdź `file` element ostatnio dodane pliku.  
+3. Otwórz manifest aplikacji w preferowanym tekstu lub edytora XML i Znajdź `file` element ostatnio dodane pliku.  
   
-     Jeśli został dodany plik XML o nazwie `Data.xml`, plik będzie wyglądać podobnie jak w poniższym przykładzie kodu.  
+    Jeśli został dodany plik XML o nazwie `Data.xml`, plik będzie wyglądać podobnie jak w poniższym przykładzie kodu.  
   
- `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
+   `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Dodaj atrybut `type` do tego elementu i dostarczyć wartość `data`.  
+4. Dodaj atrybut `type` do tego elementu i dostarczyć wartość `data`.  
   
- `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
+   `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  Ponownie podpisać manifest aplikacji przy użyciu certyfikatu lub parę kluczy, a następnie ponownie podpisać manifest wdrożenia.  
+5. Ponownie podpisać manifest aplikacji przy użyciu certyfikatu lub parę kluczy, a następnie ponownie podpisać manifest wdrożenia.  
   
-     Należy ponownie podpisać manifest wdrożenia, ponieważ jego skrót manifest aplikacji została zmieniona.  
+    Należy ponownie podpisać manifest wdrożenia, ponieważ jego skrót manifest aplikacji została zmieniona.  
   
-     `mage -s app manifest -cf cert_file -pwd password`
+    `mage -s app manifest -cf cert_file -pwd password`
   
-     `mage -u deployment manifest -appm app manifest`
+    `mage -u deployment manifest -appm app manifest`
   
-     `mage -s deployment manifest -cf certfile -pwd password`
+    `mage -s deployment manifest -cf certfile -pwd password`
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Aby dołączyć plik danych przy użyciu MageUI.exe  
   

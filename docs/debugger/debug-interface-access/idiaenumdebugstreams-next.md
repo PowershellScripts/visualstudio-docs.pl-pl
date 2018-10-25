@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreams::Next | Dokumentacja firmy Microsoft
+title: Idiaenumdebugstreams::Next — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 780aaca4d840d87df17572ec7d58cebc84e84d4c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5fc8bfcbf9d95e838648d8923c01cc9b145ed9bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456344"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916232"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 Pobiera określoną liczbę strumieni debugowania w kolejności wyliczenia.  
@@ -36,16 +36,16 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parametry  
  celt  
- [in] **T**on liczby strumieni debugowania w moduł wyliczający, które mają zostać pobrane.  
+ [in] **T**on liczby strumieni debugowania w modułu wyliczającego do pobrania.  
   
  rgelt  
- [out] Zwraca tablicę [idiaenumdebugstreamdata —](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) obiektów, które reprezentuje debugowania strumieni pobierania.  
+ [out] Zwraca tablicę [idiaenumdebugstreamdata —](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) obiektów, które reprezentuje debugowania strumieni, trwa pobieranie.  
   
  pceltFetched  
  [out] Zwraca liczbę strumieni debugowania zwracane.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie ma więcej strumieni. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli brak więcej strumieni. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

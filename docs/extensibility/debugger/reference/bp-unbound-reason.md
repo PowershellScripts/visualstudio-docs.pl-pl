@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65398ac0c4bde18dc772d75ceea203bdbfe3b189
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1e1e344ff5adb51d118370f81de10ba01c8950e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904222"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
-Zapewnia punkt przerwania został niezwiązanego przyczyny.  
+Zapewnia powodów, dla którego punkt przerwania został niepowiązanej.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -54,13 +54,13 @@ public enum enum_BP_UNBOUND_REASON {
  Kod, który zawiera punkt przerwania został zwolniony.  
   
  BPUR_BREAKPOINT_REBIND  
- Punkt przerwania zostało odbitych do innej lokalizacji. To po edycji i kontynuowania operacji po przemieszczeniu punkt przerwania lub gdy punkt przerwania jest powiązana z pliku ze ścieżką, która nie jest już prawidłowy.  
+ Punkt przerwania ma zostało odbitych do innej lokalizacji. To jest wykonywane podczas edycji i kontynuowania działania w przypadku, gdy punkt przerwania lub gdy punkt przerwania jest powiązana z pliku ze ścieżką, która nie jest już prawidłowy.  
   
  BPUR_ BREAKPOINT_ERROR  
- Punkt przerwania jest określony jako błąd po jest powiązany. Dzieje się to do zarządzanego punktów przerwania, którego warunki nie są już prawidłowe.  
+ Punkt przerwania jest określana jest błędny po jest powiązany. Dzieje się to do zarządzanego punktów przerwania, którego warunki nie są już prawidłowe.  
   
 ## <a name="remarks"></a>Uwagi  
- Zwrócony przez [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) metody.  
+ Zwrócone przez [getreason —](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

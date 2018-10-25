@@ -23,12 +23,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0014ec8677cf8b437780ab23fdd521f3ec5f938
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f7b404253c2425a64fd2a9ad4bb53943e033d8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196320"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898840"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>Korzystanie z atrybutu DebuggerTypeProxy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,21 +37,21 @@ Debuggertypeproxyattribute —] (assetId:///T:System.Diagnostics.DebuggerTypePro
   
  Ten atrybut można zastosować do:  
   
--   Struktury  
+- Struktury  
   
--   Klasy  
+- Klasy  
   
--   Zestawy  
+- Zestawy  
   
- Klasa proxy typu musi mieć konstruktora, który przyjmuje argument typu, który zastąpi serwer proxy. Debuger tworzy nowe wystąpienie klasy proxy typu za każdym razem, gdy wymaganych, aby wyświetlić zmienną typu docelowego. Może to mieć wpływ na wydajność. W rezultacie nie należy przeprowadzać więcej pracy w Konstruktorze niż jest to absolutnie konieczne.  
+  Klasa proxy typu musi mieć konstruktora, który przyjmuje argument typu, który zastąpi serwer proxy. Debuger tworzy nowe wystąpienie klasy proxy typu za każdym razem, gdy wymaganych, aby wyświetlić zmienną typu docelowego. Może to mieć wpływ na wydajność. W rezultacie nie należy przeprowadzać więcej pracy w Konstruktorze niż jest to absolutnie konieczne.  
   
- Aby zminimalizować spadku wydajności, Ewaluator wyrażeń nie analizuje atrybuty na serwerze proxy wyświetlania tego typu, chyba że typ jest rozwinięta, użytkownika, klikając pozycję + symboli w oknie debugera lub przy użyciu <xref:System.Diagnostics.DebuggerBrowsableAttribute>. W związku z tym nie należy umieszczać atrybutów na sam typ wyświetlania. Atrybuty można i powinny być używane w treści typ wyświetlania.  
+  Aby zminimalizować spadku wydajności, Ewaluator wyrażeń nie analizuje atrybuty na serwerze proxy wyświetlania tego typu, chyba że typ jest rozwinięta, użytkownika, klikając pozycję + symboli w oknie debugera lub przy użyciu <xref:System.Diagnostics.DebuggerBrowsableAttribute>. W związku z tym nie należy umieszczać atrybutów na sam typ wyświetlania. Atrybuty można i powinny być używane w treści typ wyświetlania.  
   
- Dobrym rozwiązaniem dla obiektu pośredniczącego typu jako prywatne klasa zagnieżdżona w klasie, docelowe atrybuty. Dzięki temu można łatwo dostęp do wewnętrznych składowych.  
+  Dobrym rozwiązaniem dla obiektu pośredniczącego typu jako prywatne klasa zagnieżdżona w klasie, docelowe atrybuty. Dzięki temu można łatwo dostęp do wewnętrznych składowych.  
   
- Jeśli <xref:System.Diagnostics.DebuggerTypeProxyAttribute> jest używana na poziomie zestawu `Target` parametr określa typ, który zastąpi serwer proxy.  
+  Jeśli <xref:System.Diagnostics.DebuggerTypeProxyAttribute> jest używana na poziomie zestawu `Target` parametr określa typ, który zastąpi serwer proxy.  
   
- Aby uzyskać przykład sposobu użycia tego atrybutu, wraz z <xref:System.Diagnostics.DebuggerDisplayAttribute> i <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, zobacz[korzystanie z atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
+  Aby uzyskać przykład sposobu użycia tego atrybutu, wraz z <xref:System.Diagnostics.DebuggerDisplayAttribute> i <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, zobacz[korzystanie z atrybutu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).  
   
 ## <a name="using-generics-with-debuggertypeproxy"></a>Za pomocą typów ogólnych za pomocą DebuggerTypeProxy  
  Obsługa typów ogólnych jest ograniczona. Dla języka C# `DebuggerTypeProxy` obsługuje tylko Otwórz typy. Typem otwartym, jest określana skrótem typu unconstructed jest typ ogólny, który nie utworzono wystąpienia z argumentami dla jego parametrów typu. Zamknięte typy, nazywany również typy utworzone, nie są obsługiwane.  

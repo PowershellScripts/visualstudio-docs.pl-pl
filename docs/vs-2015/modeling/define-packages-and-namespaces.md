@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79ceb9393291f6197cd68743dffdfd314776e717
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58a6c33449162665c10c6fa1d2c96f665c904a98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219417"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915031"
 ---
 # <a name="define-packages-and-namespaces"></a>Definiowanie pakietów i przestrzeni nazw
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,20 +78,20 @@ W programie Visual Studio *pakietu* jest kontenerem dla definicji elementów UML
   
 #### <a name="to-create-a-package-in-uml-model-explorer"></a>Aby utworzyć pakiet w Eksploratorze modelu UML  
   
-1.  Otwórz **Eksploratora modelu UML**. Na **architektury** menu wskaż **Windows**, a następnie kliknij przycisk **Eksploratora modelu UML**.  
+1. Otwórz **Eksploratora modelu UML**. Na **architektury** menu wskaż **Windows**, a następnie kliknij przycisk **Eksploratora modelu UML**.  
   
-2.  Kliknij prawym przyciskiem myszy pakiet lub model, do którego chcesz dodać nowy pakiet.  
+2. Kliknij prawym przyciskiem myszy pakiet lub model, do którego chcesz dodać nowy pakiet.  
   
-    > [!NOTE]
-    >  Można zagnieżdżać pakietu wewnątrz innego pakietu.  
+   > [!NOTE]
+   >  Można zagnieżdżać pakietu wewnątrz innego pakietu.  
   
-3.  Wskaż **Dodaj** a następnie kliknij przycisk **pakietu**.  
+3. Wskaż **Dodaj** a następnie kliknij przycisk **pakietu**.  
   
-     Nowy pakiet pojawia się w modelu.  
+    Nowy pakiet pojawia się w modelu.  
   
-4.  Wpisz nową nazwę dla pakietu.  
+4. Wpisz nową nazwę dla pakietu.  
   
- Jeśli utworzono pakiet w Eksploratorze modelu UML, można wyświetlić je na diagramie klas UML. Można również wyświetlić pakiet na więcej niż jednym diagramie klas UML.  
+   Jeśli utworzono pakiet w Eksploratorze modelu UML, można wyświetlić je na diagramie klas UML. Można również wyświetlić pakiet na więcej niż jednym diagramie klas UML.  
   
 #### <a name="to-show-an-existing-package-on-a-uml-class-diagram"></a>Aby wyświetlić istniejący pakiet na diagramie klas UML  
   
@@ -103,15 +103,15 @@ W programie Visual Studio *pakietu* jest kontenerem dla definicji elementów UML
 ##  <a name="Elements"></a> Tworzenie modelu elementów wewnątrz pakietów  
  Istnieją cztery sposoby, w których można umieścić elementy modelu w pakiecie:  
   
--   Dodaj nowy element do pakietu w Eksploratorze modelu UML.  
+- Dodaj nowy element do pakietu w Eksploratorze modelu UML.  
   
--   Dodaj klasami i innymi typami do pakietów na diagramie klas UML.  
+- Dodaj klasami i innymi typami do pakietów na diagramie klas UML.  
   
--   Ustaw **LinkedPackage** właściwości diagramu, aby nowe elementy utworzone na diagramie są umieszczane w pakiecie, należy określić. Diagramy klas, diagramy składników i diagramy przypadków użycia może być połączony do pakietu w ten sposób.  
+- Ustaw **LinkedPackage** właściwości diagramu, aby nowe elementy utworzone na diagramie są umieszczane w pakiecie, należy określić. Diagramy klas, diagramy składników i diagramy przypadków użycia może być połączony do pakietu w ten sposób.  
   
--   Przesuń elementy do lub z pakietu w Eksploratorze modelu UML.  
+- Przesuń elementy do lub z pakietu w Eksploratorze modelu UML.  
   
- Element w pakiecie, który pojawia się poniżej pakietu w Eksploratorze modelu UML i jego kwalifikowana nazwa zaczyna się od nazwy kwalifikowanej pakietu. Aby wyświetlić kwalifikowana nazwa dowolnego elementu, kliknij prawym przyciskiem myszy element, a następnie kliknij przycisk **właściwości**. **Kwalifikowana nazwa** właściwość pojawia się w **właściwości** okna.  
+  Element w pakiecie, który pojawia się poniżej pakietu w Eksploratorze modelu UML i jego kwalifikowana nazwa zaczyna się od nazwy kwalifikowanej pakietu. Aby wyświetlić kwalifikowana nazwa dowolnego elementu, kliknij prawym przyciskiem myszy element, a następnie kliknij przycisk **właściwości**. **Kwalifikowana nazwa** właściwość pojawia się w **właściwości** okna.  
   
 #### <a name="to-create-an-element-in-a-package-in-uml-model-explorer"></a>Można utworzyć elementu w pakiecie w Eksploratorze modelu UML  
   

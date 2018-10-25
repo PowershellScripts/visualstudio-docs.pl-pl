@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d3fd57f5c55a321ca09495adcd7c712964b01f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 28dba0a2b386cef00daf4827609ce9762c667067
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154607"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892964"
 ---
 # <a name="usingtask-element-msbuild"></a>Usingtask — element (MSBuild)
 Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.md) element do zestawu zawierającego implementację zadania.  
@@ -64,9 +64,9 @@ Mapuje zadanie, które odwołują się [zadań](../msbuild/task-element-msbuild.
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 
-|Element|Opis|  
-|-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
+| Element | Opis |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu. |
 
 ## <a name="remarks"></a>Uwagi  
  Zmienne środowiskowe, właściwości wiersza polecenia, właściwości na poziomie projektu i elementy na poziomie projektu może być przywoływany w `UsingTask` elementy zawarte w pliku projektu, albo plik bezpośrednio lub za pośrednictwem importowanym projekcie. Aby uzyskać więcej informacji, zobacz [zadania](../msbuild/msbuild-tasks.md).  

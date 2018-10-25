@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 72aa7681293fa6dd50b23e4b9d090f086d3c67ad
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6839385e64503ce939d5244b116a9f24be786395
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860462"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904443"
 ---
 # <a name="customizing-copy-behavior"></a>Dostosowywanie zachowania dotyczącego kopiowania
 W języku specyficznym dla domeny (DSL) utworzone za pomocą Visual Studio Visualization i Modeling SDK można zmienić, co się dzieje, gdy użytkownik kopiuje i wkleja elementów.
@@ -24,19 +24,19 @@ W języku specyficznym dla domeny (DSL) utworzone za pomocą Visual Studio Visua
 
  Domyślnie gdy użytkownik kopiuje elementy do Schowka, następujące elementy są również kopiowane:
 
--   Osadzone elementy podrzędne elementu wybranych elementów. (Oznacza to, elementy, które są cele osadzania relacje, które rozwijani w modelu są kopiowane elementy).
+- Osadzone elementy podrzędne elementu wybranych elementów. (Oznacza to, elementy, które są cele osadzania relacje, które rozwijani w modelu są kopiowane elementy).
 
--   Łączy relacji między skopiowane elementy.
+- Łączy relacji między skopiowane elementy.
 
- Ta reguła ma charakter cykliczny skopiowane elementy i łącza.
+  Ta reguła ma charakter cykliczny skopiowane elementy i łącza.
 
- ![Elementów skopiowanych i wklejonych](../modeling/media/dslcopypastedefault.png)
+  ![Elementów skopiowanych i wklejonych](../modeling/media/dslcopypastedefault.png)
 
- Skopiowane elementy i łącza są serializowane i przechowywane w <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), który znajduje się w Schowku.
+  Skopiowane elementy i łącza są serializowane i przechowywane w <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP), który znajduje się w Schowku.
 
- Obraz przedstawiający skopiowane elementy jest również umieszczona w Schowku. Dzięki temu użytkownikowi skopiować do innych aplikacji, takich jak Word.
+  Obraz przedstawiający skopiowane elementy jest również umieszczona w Schowku. Dzięki temu użytkownikowi skopiować do innych aplikacji, takich jak Word.
 
- Użytkownik może Wklej skopiowane elementy do obiektu docelowego, który może akceptować elementy według definicji DSL. Na przykład DSL generowany na podstawie szablonu rozwiązania składniki, użytkownik może Wklej w porty na składniki, ale nie na diagram; i wkleić składników na diagram, ale nie do innych składników.
+  Użytkownik może Wklej skopiowane elementy do obiektu docelowego, który może akceptować elementy według definicji DSL. Na przykład DSL generowany na podstawie szablonu rozwiązania składniki, użytkownik może Wklej w porty na składniki, ale nie na diagram; i wkleić składników na diagram, ale nie do innych składników.
 
 ## <a name="customizing-copy-and-paste-behavior"></a>Dostosowywanie kopiowania i wklejania zachowania
  Aby uzyskać więcej informacji na temat dostosowywania modelu przy użyciu kodu programu, zobacz [nawigowanie i aktualizowanie modelu w kodzie programu](../modeling/navigating-and-updating-a-model-in-program-code.md).
@@ -72,7 +72,6 @@ partial class MyDslClipboardCommandSet
      .SelectObjects(1, new object[] { diagram }, 0);
   }
 } }
-
 ```
 
  **Utwórz dodatkowe linki, gdy użytkownik Wkleja do wybranego obiektu docelowego.** Na przykład gdy pole komentarza jest wklejany na element, powstaje łącze między nimi.
@@ -142,7 +141,6 @@ partial class MyDslDiagram // EDIT NAME
   }
  private MyElementOperations singleton = null;
 }
-
 ```
 
  **Wklejanie kształtów w wybranej lokalizacji, na przykład w bieżącej pozycji kursora.**
@@ -222,15 +220,15 @@ Zobacz [porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-
 
  Istnieją trzy wartości:
 
--   Propagowanie nie Kopiuj
+- Propagowanie nie Kopiuj
 
--   Propagacja kopiowania, aby połączyć tylko - po wklejeniu grupy, nowa kopia tego łącza będzie odnosił się do istniejącego elementu na drugim końcu łącza.
+- Propagacja kopiowania, aby połączyć tylko - po wklejeniu grupy, nowa kopia tego łącza będzie odnosił się do istniejącego elementu na drugim końcu łącza.
 
--   Propagacja kopiowania, aby połączyć, a obiekt pełniący rolę - odwrotną skopiowany grupa zawiera kopię elementu na drugim końcu łącza.
+- Propagacja kopiowania, aby połączyć, a obiekt pełniący rolę - odwrotną skopiowany grupa zawiera kopię elementu na drugim końcu łącza.
 
- ![Działania kopiowania przy użyciu PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png)
+  ![Działania kopiowania przy użyciu PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png)
 
- Zmiany, które wpłynie zarówno elementy, jak i obraz, który jest kopiowany.
+  Zmiany, które wpłynie zarówno elementy, jak i obraz, który jest kopiowany.
 
 ## <a name="programming-copy-and-paste-behavior"></a>Kopiuj programowania i zachowanie wklejania
  Wiele aspektów zachowania DSL w odniesieniu do kopiowania, wklejania, tworzenia i usuwania obiektów są regulowane przez wystąpienie <xref:Microsoft.VisualStudio.Modeling.ElementOperations> , jest sprzężona do diagramu. Można zmodyfikować zachowanie DSL wyprowadzanie klasy z <xref:Microsoft.VisualStudio.Modeling.ElementOperations> i zastępowanie <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> właściwości diagramu klasy.
@@ -244,13 +242,13 @@ Zobacz [porady: Dodawanie obsługi przeciągania i upuszczania](../modeling/how-
 
 #### <a name="to-define-your-own-elementoperations"></a>Aby zdefiniować własne ElementOperations
 
-1.  W nowym pliku w projekcie języka DSL, należy utworzyć klasę, która jest pochodną <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
+1. W nowym pliku w projekcie języka DSL, należy utworzyć klasę, która jest pochodną <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
-2.  Dodaj definicję klasy częściowej klasy diagramu. Nazwa tej klasy można znaleźć w **Dsl\GeneratedCode\Diagrams.cs**.
+2. Dodaj definicję klasy częściowej klasy diagramu. Nazwa tej klasy można znaleźć w **Dsl\GeneratedCode\Diagrams.cs**.
 
-     W klasie diagram zastąpić <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> do zwrócenia wystąpienia usługi podklasy ElementOperations. To samo wystąpienie w każdym wywołaniu powinna zostać zwrócona.
+    W klasie diagram zastąpić <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> do zwrócenia wystąpienia usługi podklasy ElementOperations. To samo wystąpienie w każdym wywołaniu powinna zostać zwrócona.
 
- Dodaj następujący kod w pliku niestandardowego kodu w projekcie DslPackage:
+   Dodaj następujący kod w pliku niestandardowego kodu w projekcie DslPackage:
 
 ```csharp
 
@@ -281,7 +279,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
     { }
     // Overridden methods follow
   }
-
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>Odbieranie elementów przeciągnięte z innymi modelami
@@ -311,7 +308,6 @@ public override bool CanMerge(ModelElement targetShape, System.Windows.Forms.IDa
         return true;
    return base.CanMerge(targetShape, data);
  }
-
 ```
 
 ## <a name="mergeelementgroupprototype"></a>MergeElementGroupPrototype()
@@ -329,7 +325,6 @@ public override void MergeElementGroupPrototype(ModelElement targetShape, Elemen
   if (prototypeToMerge != null)
     base.MergeElementGroupPrototype(targetShape, prototypeToMerge);
 }
-
 ```
 
  Ten przykład dotyczy elementów klasy UML przeciągnięte z diagramu klas UML. Język DSL nie jest przeznaczony do przechowywania klas UML bezpośrednio, ale zamiast tego, możemy utworzyć element DSL dla każdej przeciąganego klasy UML. Spowoduje to być przydatne, na przykład, jeśli język DSL jest diagram wystąpienia. Użytkownik można przeciągnąć klasy na niego przeciągnięte do tworzenia wystąpień tych klas.
@@ -367,7 +362,6 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
   }
   return null;
 }
-
 ```
 
 ## <a name="standard-copy-behavior"></a>Zachowania dotyczącego kopiowania standardowe
@@ -558,7 +552,6 @@ namespace Company.MyDsl
     }
   }
 }
-
 ```
 
 ## <a name="see-also"></a>Zobacz także

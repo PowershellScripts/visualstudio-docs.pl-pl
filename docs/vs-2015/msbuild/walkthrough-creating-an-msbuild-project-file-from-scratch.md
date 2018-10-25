@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 029cd44bc19bd279ed9b5d46a5fea53539706a23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272366"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913894"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Wskazówki: tworzenie pliku projektu MSBuild od zera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ Języki programowania, które obsługują program .NET Framework używają plik�
   
  W tym instruktażu przedstawiono sposób przyrostowego tworzenia podstawowego pliku projektu za pomocą edytora tekstu. Instruktaż obejmuje następujące kroki:  
   
--   Utwórz minimalny plik źródłowy aplikacji.  
+- Utwórz minimalny plik źródłowy aplikacji.  
   
--   Utwórz minimalny plik projektu MSBuild.  
+- Utwórz minimalny plik projektu MSBuild.  
   
--   Rozszerz zmienną środowiskową PATH, aby uwzględnić MSBuild.  
+- Rozszerz zmienną środowiskową PATH, aby uwzględnić MSBuild.  
   
--   Kompiluj aplikację przy użyciu pliku projektu.  
+- Kompiluj aplikację przy użyciu pliku projektu.  
   
--   Dodaj właściwości do kontrolowania kompilacji.  
+- Dodaj właściwości do kontrolowania kompilacji.  
   
--   Steruj kompilacją przez zmianę wartości właściwości.  
+- Steruj kompilacją przez zmianę wartości właściwości.  
   
--   Dodawanie elementów docelowych do kompilacji.  
+- Dodawanie elementów docelowych do kompilacji.  
   
--   Steruj kompilacją przez określenie obiektów docelowych.  
+- Steruj kompilacją przez określenie obiektów docelowych.  
   
--   Kompiluj przyrostowo.  
+- Kompiluj przyrostowo.  
   
- W tym przewodniku przedstawiono sposób budowania projektu w wierszu polecenia i przeglądania wyników. Aby uzyskać więcej informacji na temat MSBuild i sposobach uruchamiania MSBuild w wierszu polecenia, zobacz [wskazówki: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
+  W tym przewodniku przedstawiono sposób budowania projektu w wierszu polecenia i przeglądania wyników. Aby uzyskać więcej informacji na temat MSBuild i sposobach uruchamiania MSBuild w wierszu polecenia, zobacz [wskazówki: Korzystanie z programu MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
- Aby ukończyć Instruktaż, musisz mieć .NET Framework (wersja 2.0, 3.5, 4.0 lub 4.5) zainstalowane, ponieważ zawiera on MSBuild i kompilator Visual C#, które są wymagane do instruktażu.  
+  Aby ukończyć Instruktaż, musisz mieć .NET Framework (wersja 2.0, 3.5, 4.0 lub 4.5) zainstalowane, ponieważ zawiera on MSBuild i kompilator Visual C#, które są wymagane do instruktażu.  
   
 ## <a name="creating-a-minimal-application"></a>Tworzenie minimalnej aplikacji  
  W tej sekcji przedstawiono sposób tworzenia minimalne Visual C# plik źródłowy aplikacji przy użyciu typu text editor.  
@@ -109,39 +109,39 @@ Języki programowania, które obsługują program .NET Framework używają plik�
   
 #### <a name="to-create-a-minimal-msbuild-project-file"></a>Aby utworzyć plik projektu minimalnego MSBuild  
   
-1.  W edytorze tekstów należy zastąpić istniejący tekst za pomocą tych dwóch linijek:  
+1. W edytorze tekstów należy zastąpić istniejący tekst za pomocą tych dwóch linijek:  
   
-    ```  
-    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    </Project>  
-    ```  
+   ```  
+   <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   </Project>  
+   ```  
   
-2.  Wstaw ten `ItemGroup` węzła jako element podrzędny `Project` węzła:  
+2. Wstaw ten `ItemGroup` węzła jako element podrzędny `Project` węzła:  
   
-    ```  
-    <ItemGroup>  
-      <Compile Include="helloworld.cs" />  
-    </ItemGroup>  
-    ```  
+   ```  
+   <ItemGroup>  
+     <Compile Include="helloworld.cs" />  
+   </ItemGroup>  
+   ```  
   
-     Zwróć uwagę że `ItemGroup` zawiera już element pozycji.  
+    Zwróć uwagę że `ItemGroup` zawiera już element pozycji.  
   
-3.  Dodaj `Target` węzła jako element podrzędny `Project` węzła. Nazwij węzeł `Build`.  
+3. Dodaj `Target` węzła jako element podrzędny `Project` węzła. Nazwij węzeł `Build`.  
   
-    ```  
-    <Target Name="Build">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="Build">  
+   </Target>  
+   ```  
   
-4.  Wstaw ten element zadania jako element podrzędny `Target` węzła:  
+4. Wstaw ten element zadania jako element podrzędny `Target` węzła:  
   
-    ```  
-    <Csc Sources="@(Compile)"/>  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)"/>  
+   ```  
   
-5.  Zapisz ten plik projektu i nadaj mu nazwę Helloworld.csproj.  
+5. Zapisz ten plik projektu i nadaj mu nazwę Helloworld.csproj.  
   
- Plik projektu minimalnego powinien przypominać następujący kod:  
+   Plik projektu minimalnego powinien przypominać następujący kod:  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -201,36 +201,36 @@ Języki programowania, które obsługują program .NET Framework używają plik�
   
 #### <a name="to-add-build-properties"></a>Aby dodać właściwości kompilacji  
   
-1.  Usuń istniejącą aplikację, wpisując **del helloworld.exe** w wierszu polecenia.  
+1. Usuń istniejącą aplikację, wpisując **del helloworld.exe** w wierszu polecenia.  
   
-2.  W pliku projektu, Wstaw `PropertyGroup` elementu tuż po otwarciu `Project` elementu:  
+2. W pliku projektu, Wstaw `PropertyGroup` elementu tuż po otwarciu `Project` elementu:  
   
-    ```  
-    <PropertyGroup>  
-      <AssemblyName>MSBuildSample</AssemblyName>  
-      <OutputPath>Bin\</OutputPath>  
-    </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup>  
+     <AssemblyName>MSBuildSample</AssemblyName>  
+     <OutputPath>Bin\</OutputPath>  
+   </PropertyGroup>  
+   ```  
   
-3.  Dodaj to zadanie do docelowej kompilacji tuż przed `Csc` zadań:  
+3. Dodaj to zadanie do docelowej kompilacji tuż przed `Csc` zadań:  
   
-    ```  
-    <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
-    ```  
+   ```  
+   <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
+   ```  
   
-     `MakeDir` Zadanie tworzy folder, który jest nazwany przez `OutputPath` właściwości, pod warunkiem, że żaden folder o tej nazwie obecnie istnieje.  
+    `MakeDir` Zadanie tworzy folder, który jest nazwany przez `OutputPath` właściwości, pod warunkiem, że żaden folder o tej nazwie obecnie istnieje.  
   
-4.  Dodaj tę `OutputAssembly` atrybutu `Csc` zadań:  
+4. Dodaj tę `OutputAssembly` atrybutu `Csc` zadań:  
   
-    ```  
-    <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
+   ```  
   
-     To powoduje, że kompilator Visual C# produkuje zestawu, który jest nazwany przez `AssemblyName` właściwość i umieść go w folderze, który jest nazwany przez `OutputPath` właściwości.  
+    To powoduje, że kompilator Visual C# produkuje zestawu, który jest nazwany przez `AssemblyName` właściwość i umieść go w folderze, który jest nazwany przez `OutputPath` właściwości.  
   
-5.  Zapisz zmiany.  
+5. Zapisz zmiany.  
   
- Plik projektu minimalnego powinien teraz przypominać następujący kod:  
+   Plik projektu minimalnego powinien teraz przypominać następujący kod:  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -279,34 +279,34 @@ Języki programowania, które obsługują program .NET Framework używają plik�
 ## <a name="adding-build-targets"></a>Dodawanie obiektów docelowych kompilacji  
  Następnie dodaj jeszcze dwa obiekty docelowe do pliku projektu:  
   
--   Oczyść element docelowy usuwa stare pliki.  
+- Oczyść element docelowy usuwa stare pliki.  
   
--   Element docelowy ponownej kompilacji, który używa `DependsOnTargets` atrybutu, aby wymusić czystą zadania do uruchomienia przed zadaniem kompilacji.  
+- Element docelowy ponownej kompilacji, który używa `DependsOnTargets` atrybutu, aby wymusić czystą zadania do uruchomienia przed zadaniem kompilacji.  
   
- Teraz, gdy masz wiele elementów docelowych, można ustawić element docelowy kompilacji jako domyślnego obiektu docelowego.  
+  Teraz, gdy masz wiele elementów docelowych, można ustawić element docelowy kompilacji jako domyślnego obiektu docelowego.  
   
 #### <a name="to-add-build-targets"></a>Aby dodać obiekty docelowe kompilacji  
   
-1.  W pliku projektu należy dodać dwa obiekty docelowe po docelowej kompilacji:  
+1. W pliku projektu należy dodać dwa obiekty docelowe po docelowej kompilacji:  
   
-    ```  
-    <Target Name="Clean" >  
-      <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
-    </Target>  
-    <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
-    ```  
+   ```  
+   <Target Name="Clean" >  
+     <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
+   </Target>  
+   <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
+   ```  
   
-     Czyste miejsce docelowe wywołuje zadanie Usuń do usunięcia aplikacji. Miejsce docelowe powtórnej kompilacji nie jest możliwe, dopóki nie uruchomiono zarówno czystego miejsce docelowego i celu kompilacji. Chociaż miejsce docelowe powtórnej kompilacji nie ma zadań, powoduje uruchomienie czyszczenia miejsca docelowego przed jego kompilacją.  
+    Czyste miejsce docelowe wywołuje zadanie Usuń do usunięcia aplikacji. Miejsce docelowe powtórnej kompilacji nie jest możliwe, dopóki nie uruchomiono zarówno czystego miejsce docelowego i celu kompilacji. Chociaż miejsce docelowe powtórnej kompilacji nie ma zadań, powoduje uruchomienie czyszczenia miejsca docelowego przed jego kompilacją.  
   
-2.  Dodaj tę `DefaultTargets` atrybutu do otwarcia `Project` elementu:  
+2. Dodaj tę `DefaultTargets` atrybutu do otwarcia `Project` elementu:  
   
-    ```  
-    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    ```  
+   ```  
+   <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   ```  
   
-     To ustawienie docelowej kompilacji jako domyślnego obiektu docelowego.  
+    To ustawienie docelowej kompilacji jako domyślnego obiektu docelowego.  
   
- Plik projektu minimalnego powinien teraz przypominać następujący kod:  
+   Plik projektu minimalnego powinien teraz przypominać następujący kod:  
   
 ```  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

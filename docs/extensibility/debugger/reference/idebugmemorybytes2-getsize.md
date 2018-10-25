@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fce2d9beecb6c2a51d64e229dcf386795ab55f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7b0d6c40c9b73ce14d06ce59f9506ce13550d851
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111280"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898125"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
-Pobiera rozmiar w bajtach pamięci reprezentowany przez to [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) obiektu.  
+Pobiera rozmiar w bajtach, pamięci, reprezentowane przez to [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -45,7 +45,7 @@ int GetSize(
  [out] Zwraca rozmiar w bajtach miejsca w pamięci.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

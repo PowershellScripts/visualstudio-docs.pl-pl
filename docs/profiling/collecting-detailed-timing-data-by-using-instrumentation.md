@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a86b74787a574a1ad54b228c117f6cb598f1eb2b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4ab2777675df16df47b69d024be3f2d9458d0ba8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775168"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916845"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>Zbieranie szczegółowych danych o chronometrażu przy użyciu instrumentacji
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools metoda Instrumentacja wprowadza profilowania kodu do kopii modułu. Ten kod rejestruje każdego wpisu, zakończenia i wywołanie funkcji funkcji w module podczas uruchomienia profilowania. Metoda Instrumentacja jest przydatne do zbierania informacji chronometrażu o sekcji kodu i zrozumienie wpływu na operacje wejścia i wyjścia na wydajność aplikacji.  
@@ -34,9 +34,9 @@ ms.locfileid: "43775168"
 ## <a name="common-tasks"></a>Wspólne zadania
  Można określić dodatkowe opcje w _sesji wydajności_**stron właściwości** okna dialogowego sesji wydajności. Aby otworzyć to okno dialogowe:  
   
--   W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij **właściwości**.  
+- W **Eksplorator wydajności**, kliknij prawym przyciskiem myszy nazwę sesji wydajności, a następnie kliknij **właściwości**.  
   
- Zadania przedstawione w poniższej tabeli opisano opcje, które można określić w _sesji wydajności_**stron właściwości** okno dialogowe podczas profilowania przy użyciu metody instrumentacji.  
+  Zadania przedstawione w poniższej tabeli opisano opcje, które można określić w _sesji wydajności_**stron właściwości** okno dialogowe podczas profilowania przy użyciu metody instrumentacji.  
   
 |Zadanie|Powiązana zawartość|  
 |----------|---------------------|  

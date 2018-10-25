@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_offsetInUdt | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_offsetinudt — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22e0574f8892c2e73a12ebf241af604b85a5ed30
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 48b13de8a9d1680ae4e2a6a94a4fda120a74a18e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469233"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911424"
 ---
 # <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
-Pobiera Przesunięcie początku typu zdefiniowane przez użytkownika (UDT) elementu członkowskiego w UDT.  
+Pobiera Przesunięcie początku typ zdefiniowany przez użytkownika (UDT) elementu członkowskiego w UDT.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,21 +34,21 @@ HRESULT get_offsetInUdt(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca Przesunięcie bajtów Lokalizacja symbolu.  
+ [out] Zwraca przesunięcie w bajtach lokalizacji symboli.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta funkcja jest używana tylko w lokalnej rekordów w optymalizowania kompilacji.  
+ Ta funkcja jest używana tylko w lokalnym rekordów w optymalizowania kompilacji.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: Dia2.h  
   
- Biblioteki: diaguids.lib  
+ Biblioteka: diaguids.lib  
   
  Biblioteki DLL: msdia100.dll  
   

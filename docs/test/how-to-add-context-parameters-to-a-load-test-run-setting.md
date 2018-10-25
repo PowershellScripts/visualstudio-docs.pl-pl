@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 63cf3e71ded582b3406957ccb423c8dbf47768ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203757"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905905"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Porady: Dodawanie parametrów kontekstu do ustawień przebiegu testu obciążeniowego
 
@@ -36,19 +36,19 @@ Jeśli przypisujesz wartość parametru kontekstowego serwer_sieci_Web_1 do `htt
 
 Ponadto, przypisując różne wartości do parametru kontekstu przy użyciu tej samej nazwie w uruchomieniowych testu obciążeniowego różnych, można uruchomić testu obciążeniowego za pomocą różnych środowiskach:
 
--   Firmowy serwer sieci Web przemieszczania uruchomieniowy: parametr kontekstowy o nazwie `WebServer1=http://CorporateStagingWebServer`
+- Firmowy serwer sieci Web przemieszczania uruchomieniowy: parametr kontekstowy o nazwie `WebServer1=http://CorporateStagingWebServer`
 
--   Firmowy serwer sieci Web w środowisku produkcyjnym uruchomieniowy: parametr kontekstu, który nosi nazwę `WebServer1=http://CorporateProductionWebServer`
+- Firmowy serwer sieci Web w środowisku produkcyjnym uruchomieniowy: parametr kontekstu, który nosi nazwę `WebServer1=http://CorporateProductionWebServer`
 
- **Zmienianie ustawień wykonywania w wierszu polecenia**
+  **Zmienianie ustawień wykonywania w wierszu polecenia**
 
- Jeśli chcesz korzystać z zalet strategii parametru kontekstu przy użyciu różnych parametrów uruchomieniowych z wiersza polecenia, użyj następujących poleceń:
+  Jeśli chcesz korzystać z zalet strategii parametru kontekstu przy użyciu różnych parametrów uruchomieniowych z wiersza polecenia, użyj następujących poleceń:
 
- **Set Test.UseRunSetting= CorporateStagingWebServer**
+  **Set Test.UseRunSetting= CorporateStagingWebServer**
 
- - i -
+  - i -
 
- **mstest /testcontainer:loadtest1.loadtest**
+  **mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Aby dodać parametr kontekstu do ustawień
 

@@ -1,5 +1,5 @@
 ---
-title: IDiaAddressMap::put_imageAlign | Dokumentacja firmy Microsoft
+title: Idiaaddressmap::put_imagealign — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c87592dc04c244e394f1df06cfa46d77f595a1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 06110568e0854692b19c3c118e948024bd346295
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457728"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904001"
 ---
 # <a name="idiaaddressmapputimagealign"></a>IDiaAddressMap::put_imageAlign
 Ustawia wyrównanie obrazu.  
@@ -34,18 +34,18 @@ HRESULT put_imageAlign (
   
 #### <a name="parameters"></a>Parametry  
  NewVal  
- [in] Nowa wartość wyrównanie obrazu pliku wykonywalnego.  
+ [in] Nowa wartość wyrównania obrazu pliku wykonywalnego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Obrazy (załadować pliki wykonywalne) są wyrównane do granice określonej pamięci. Wyrównanie takie mogą mieć wpływ przez bieżący architektura systemu i opcje czasu kompilacji i łącza. Wyrównanie obrazu jest zawsze włączona bajtowych granicach. Następujące wartości wyrównanie obrazu są prawidłowe: 1, 2, 4, 8, 16, 32 i 64-bajtowych granicach.  
+ Obrazy (załadowanych plików wykonywalnych) są wyrównane na granicach pamięci określonej. Wyrównanie ten ma wpływ przez bieżący architektury systemu i opcje czasu kompilacji i łącza. Wyrównanie obrazu jest zawsze bajtowych granic. Prawidłowe są następujące wartości wyrównanie obrazu: 1, 2, 4, 8, 16, 32 i 64-bajtowych granicach.  
   
- Bieżący wyrównanie obrazu może zostać pobrany z wywołaniem do [IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) metody.  
+ Można pobrać bieżącego wyrównanie obrazu z wywołaniem [idiaaddressmap::get_imagealign —](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md) metody.  
   
 > [!NOTE]
->  Obraz jest już załadowany w czasie, który można wywołać tej metody. `put_imageAlign` Metody zwykle jest używana, gdy obraz został przeniesiony lub zmienić i nowych wyrównania jest wymagana.  
+>  Obraz, który jest już załadowany przez czas, który można wywołać tej metody. `put_imageAlign` Metoda jest zwykle używana, gdy obraz, który został przeniesiony lub zmienić, a nowe wyrównanie jest wymagane.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaaddressmap —](../../debugger/debug-interface-access/idiaaddressmap.md)   

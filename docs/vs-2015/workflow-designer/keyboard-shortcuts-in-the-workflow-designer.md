@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 955e942f3e2215fa20a95b2e25c6abddc355fd6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895343"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Skróty klawiaturowe w Projektancie przepływu pracy
 Wszystkie najważniejsze funkcje [!INCLUDE[wfd1](../includes/wfd1-md.md)] może zostać oceniony przez klawiatury.  
@@ -49,29 +49,29 @@ Wszystkie najważniejsze funkcje [!INCLUDE[wfd1](../includes/wfd1-md.md)] może 
 ### <a name="flowchart"></a>Schemat blokowy  
  Na poniższej liście przedstawiono gestów, używaną do utworzenia schematu blokowego klawiatury. Tak jak w pozostałej części [!INCLUDE[wfd2](../includes/wfd2-md.md)], działania są dodawane do powierzchni projektanta za pomocą skrótów globalnego przybornika dołączonym [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
--   Aby przenieść działania, wybierz działanie, a następnie używaj klawiszy strzałek Aby zmienić położenie.  
+- Aby przenieść działania, wybierz działanie, a następnie używaj klawiszy strzałek Aby zmienić położenie.  
   
--   Aby zmienić rozmiar blokowego, Przenieś działanie poza granicą bieżącego schematu blokowego, używając klawiszy ze strzałkami. Schemat blokowy zmieniany jest automatycznie.  
+- Aby zmienić rozmiar blokowego, Przenieś działanie poza granicą bieżącego schematu blokowego, używając klawiszy ze strzałkami. Schemat blokowy zmieniany jest automatycznie.  
   
--   Aby ustawić działanie jako węzeł początkowy, użyj **ustawiony jako Węzeł_początkowy** polecenia w menu kontekstowym.  
+- Aby ustawić działanie jako węzeł początkowy, użyj **ustawiony jako Węzeł_początkowy** polecenia w menu kontekstowym.  
   
--   Aby połączyć działania:  
+- Aby połączyć działania:  
   
-    1.  Wybierz czynność źródła, przechodząc do działania.  
+  1.  Wybierz czynność źródła, przechodząc do działania.  
   
-    2.  Naciśnij klawisze CTRL + E, M tyle razy, zgodnie z potrzebami, aby przenieść fokus klawiatury na działanie docelowe.  
+  2.  Naciśnij klawisze CTRL + E, M tyle razy, zgodnie z potrzebami, aby przenieść fokus klawiatury na działanie docelowe.  
   
-    3.  Naciśnij klawisze CTRL + E, S, aby dodać działanie docelowe do wyboru.  
+  3.  Naciśnij klawisze CTRL + E, S, aby dodać działanie docelowe do wyboru.  
   
-    4.  Naciśnij klawisze CTRL + E, F, aby dodać łącznika ze źródła do miejsca docelowego.  
+  4.  Naciśnij klawisze CTRL + E, F, aby dodać łącznika ze źródła do miejsca docelowego.  
   
- Uwagi dotyczące łączenia działań przez klawiatury:  
+  Uwagi dotyczące łączenia działań przez klawiatury:  
   
--   Aby włączyć wiele połączeń w tym samym czasie, dodając więcej działań do wyboru przed naciskając klawisze CTRL + E, F. Połączenia są nawiązywane w kolejności, czy działania zostały dodane do zaznaczenia.  
+- Aby włączyć wiele połączeń w tym samym czasie, dodając więcej działań do wyboru przed naciskając klawisze CTRL + E, F. Połączenia są nawiązywane w kolejności, czy działania zostały dodane do zaznaczenia.  
   
--   Jeśli nie można połączyć dwa działania na przykład jeśli działania źródłowego ma już połączenia wychodzącego inne połączenia między działaniami w zaznaczeniu nadal zostały wprowadzone, jeśli to możliwe.  
+- Jeśli nie można połączyć dwa działania na przykład jeśli działania źródłowego ma już połączenia wychodzącego inne połączenia między działaniami w zaznaczeniu nadal zostały wprowadzone, jeśli to możliwe.  
   
--   Gdy **FlowDecision** jest dołączony do zaznaczenia i **FlowDecision** ma Brak wychodzących łączników, łącznik jest umieszczany na **True** gałęzi.  
+- Gdy **FlowDecision** jest dołączony do zaznaczenia i **FlowDecision** ma Brak wychodzących łączników, łącznik jest umieszczany na **True** gałęzi.  
   
 ### <a name="expression-editing"></a>Edytowanie wyrażeń  
  Domyślnie, domyślne skróty klawiaturowe dla [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] edycji tekstu zastosować wewnątrz edytora wyrażeń w [!INCLUDE[wfd2](../includes/wfd2-md.md)], zastosowanie mają poniższe ograniczenia:  

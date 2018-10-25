@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_unalignedType | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_unalignedtype — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a603fb7df64ace0b5e0c2f99db8a0aac18281430
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b005ce077aa8cd94efc06c42673609adacaa4abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469610"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906770"
 ---
 # <a name="idiasymbolgetunalignedtype"></a>IDiaSymbol::get_unalignedType
-Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika jest niewyrównany.  
+Pobiera flagę określającą, czy typ danych zdefiniowany przez użytkownika jest niewyrównanych.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,13 +34,13 @@ HRESULT get_unalignedType (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca `TRUE` w przypadku typu danych zdefiniowanego przez użytkownika niewyrównany; w przeciwnym razie, zwraca `FALSE`.  
+ [out] Zwraca `TRUE` Jeśli typ danych zdefiniowany przez użytkownika jest niewyrównanych; w przeciwnym razie, zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

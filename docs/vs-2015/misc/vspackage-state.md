@@ -16,39 +16,39 @@ helpviewer_keywords:
 ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
 manager: douge
-ms.openlocfilehash: 1fee544dcf9bec9295d297f153df7f86dd464bda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0364d7190244217bef50b50b60462d69e1fc145c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192858"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895213"
 ---
 # <a name="vspackage-state"></a>Stan pakietu VSPackage
 Wpływa wiele czynników zbiór wartości trwałe lub stan z [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] aplikacji.  
   
--   Projekt ma właściwości projektu i konfiguracji.  
+- Projekt ma właściwości projektu i konfiguracji.  
   
--   Rozwiązania mają właściwości.  
+- Rozwiązania mają właściwości.  
   
--   Ustawienia użytkownika określić rozmiar i położenie okna dokumentów, okien narzędzi, stan dokowania i skróty klawiaturowe.  
+- Ustawienia użytkownika określić rozmiar i położenie okna dokumentów, okien narzędzi, stan dokowania i skróty klawiaturowe.  
   
--   Aplikacje mogą mieć opcje, które są ustawiane przez użytkownika.  
+- Aplikacje mogą mieć opcje, które są ustawiane przez użytkownika.  
   
--   Obiekty utworzone przez aplikację może mieć własne właściwości.  
+- Obiekty utworzone przez aplikację może mieć własne właściwości.  
   
- Oto kilka sposobów, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] stan aplikacji, które mogą być zarządzane:  
+  Oto kilka sposobów, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] stan aplikacji, które mogą być zarządzane:  
   
--   Za pomocą strony właściwości projektu i rozwiązania.  
+- Za pomocą strony właściwości projektu i rozwiązania.  
   
--   Za pomocą **Kreatora importowania i eksportowania ustawień**, który umożliwia użytkownikowi przenoszenie ustawień z jednego komputera na inny.  
+- Za pomocą **Kreatora importowania i eksportowania ustawień**, który umożliwia użytkownikowi przenoszenie ustawień z jednego komputera na inny.  
   
--   Za pomocą **opcje** okno dialogowe, które zawiera opcje dotyczące aplikacji.  
+- Za pomocą **opcje** okno dialogowe, które zawiera opcje dotyczące aplikacji.  
   
--   Za pomocą **właściwości** okno, które udostępnia właściwości obiektów.  
+- Za pomocą **właściwości** okno, które udostępnia właściwości obiektów.  
   
--   Dzięki automatyzacji. Aplikacja ma dostęp do właściwości obiektu i pakietu VSPackage, które została udostępniona z automatyzacją.  
+- Dzięki automatyzacji. Aplikacja ma dostęp do właściwości obiektu i pakietu VSPackage, które została udostępniona z automatyzacją.  
   
- Podstawowy stan aplikacji są różne mechanizmy trwałości, umożliwiające stan aplikacji być zapisywany i przywracany.  
+  Podstawowy stan aplikacji są różne mechanizmy trwałości, umożliwiające stan aplikacji być zapisywany i przywracany.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Obsługa stanu trwałości](../misc/support-for-state-persistence.md)  

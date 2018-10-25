@@ -1,5 +1,5 @@
 ---
-title: IDiaAddressMap::get_imageAlign | Dokumentacja firmy Microsoft
+title: Idiaaddressmap::get_imagealign — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd085e59606b1e8598359636208cf308ff0b711d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 409b33953d6674066eff9570288de2e3912bdab3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459077"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908854"
 ---
 # <a name="idiaaddressmapgetimagealign"></a>IDiaAddressMap::get_imageAlign
 Pobiera bieżący wyrównanie obrazu.  
@@ -34,13 +34,13 @@ HRESULT get_imageAlign (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca wartość wyrównania obrazu z pliku wykonywalnego.  
+ [out] Zwraca wartość wyrównania obraz z pliku wykonywalnego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Obrazy są wyrównane do granic pamięci zależności jak obraz został załadowany i utworzone. Wyrównanie zazwyczaj znajduje się na granice 1, 2, 4, 8, 16, 32 lub 64 bajtów. Wyrównanie obrazu można ustawić za pomocą wywołania [IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md) metody.  
+ Obrazy są wyrównane do granic dotyczące pamięci, zależności, jak załadować i utworzyć obrazu. Wyrównanie zwykle znajduje się na granice 1, 2, 4, 8, 16, 32 lub 64 bajtów. Wyrównanie obrazu można ustawić za pomocą wywołania [idiaaddressmap::put_imagealign —](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaaddressmap —](../../debugger/debug-interface-access/idiaaddressmap.md)   

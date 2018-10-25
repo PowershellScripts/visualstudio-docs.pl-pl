@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa5a21a60ab95b6dbc9aeb27a0c7d6e27ab32773
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a42ee63b863393c3cc2bad789d14404def8d1f5d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894992"
 ---
 # <a name="client-side-script-debugging"></a>Debugowanie skryptu po stronie klienta
 Debuger programu Visual Studio zapewnia kompleksowe środowisko debugowania do znajdowania i poprawiania błędów w skryptach po stronie klienta na stronach ASP.NET.  
@@ -41,17 +41,17 @@ Można wyświetlić listy dokumentów skryptów po stronie serwera i klienta w *
   
  Debuger automatycznie dołącza do skryptu, gdy wystąpi jedno z następujących czynności:  
   
--   Zostanie trafiony punkt przerwania w skrypcie.  
+- Zostanie trafiony punkt przerwania w skrypcie.  
   
--   Osiągasz instrukcję VBScript `Stop` lub instrukcję JScript `debugger` instrukcji w kodzie skryptu.  
+- Osiągasz instrukcję VBScript `Stop` lub instrukcję JScript `debugger` instrukcji w kodzie skryptu.  
   
--   Przeglądarka lub serwer napotyka składni lub uruchom błąd w skrypcie. W takiej sytuacji pojawi się okno dialogowe i mogli rozpocząć debugowanie.  
+- Przeglądarka lub serwer napotyka składni lub uruchom błąd w skrypcie. W takiej sytuacji pojawi się okno dialogowe i mogli rozpocząć debugowanie.  
   
- Po dołączeniu ręcznie do skryptu, proces skryptu będzie nadal działać do momentu zatrzymywania. Można to zatrzymać wybierając **Przerwij** na **debugowania** menu.  
+  Po dołączeniu ręcznie do skryptu, proces skryptu będzie nadal działać do momentu zatrzymywania. Można to zatrzymać wybierając **Przerwij** na **debugowania** menu.  
   
- Gdy automatycznie dołączany jest debuger, wykonywanie skryptu jest zatrzymywane w wierszu gdzie punkt przerwania, `Stop` instrukcji lub `debugger` instrukcji lub błąd wystąpił, lub w momencie, gdy wybrano opcję Rozpocznij debugowanie w programie Internet Explorer.  
+  Gdy automatycznie dołączany jest debuger, wykonywanie skryptu jest zatrzymywane w wierszu gdzie punkt przerwania, `Stop` instrukcji lub `debugger` instrukcji lub błąd wystąpił, lub w momencie, gdy wybrano opcję Rozpocznij debugowanie w programie Internet Explorer.  
   
- W tym momencie można użyć normalnych obiektów debugera, aby rozpocząć debugowanie. Na przykład, można użyć **kroku** poleceń, aby kontynuować wykonywanie kodu wiersz po wierszu. Możesz użyć **stos wywołań** okna do przeglądania i kontrolowania przepływu skryptu. Można użyć okien zmiennej lub **bezpośrednie** okna, aby wyświetlić lub zmienić zmienne i właściwości.  
+  W tym momencie można użyć normalnych obiektów debugera, aby rozpocząć debugowanie. Na przykład, można użyć **kroku** poleceń, aby kontynuować wykonywanie kodu wiersz po wierszu. Możesz użyć **stos wywołań** okna do przeglądania i kontrolowania przepływu skryptu. Można użyć okien zmiennej lub **bezpośrednie** okna, aby wyświetlić lub zmienić zmienne i właściwości.  
   
 ## <a name="enhanced-error-messages-for-script-debugging"></a>Ulepszone komunikaty o błędach dotyczące debugowania skryptów  
  Visual Studio zapewnia ulepszone komunikaty o błędach dla typowych problemów debugowania skryptu. Te komunikaty nie są wyświetlane, jeśli nie dołączysz do programu Internet Explorer ręcznie. Jeśli wystąpi błąd, po otwarciu programu Internet Explorer automatycznie, spróbuj ręcznego dołączania, dzięki czemu można zobaczyć komunikaty o błędach.  

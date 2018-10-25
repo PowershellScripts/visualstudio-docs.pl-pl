@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c721527234be41157dfb38f617bcfe5322cd8f91
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4ca913ec9110c22108b2e4125cc33a19336ad911
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110292"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893770"
 ---
 # <a name="idebugerrorbreakpoint2getbreakpointresolution"></a>IDebugErrorBreakpoint2::GetBreakpointResolution
-Pobiera rozpoznawania błędu przerwania opisującego błąd.  
+Pobiera rozwiązanie błąd punktu przerwania, który opisuje błąd.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,7 +44,7 @@ int GetBreakpointResolution(
  [out] Zwraca [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) obiektu, który opisuje błąd.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   

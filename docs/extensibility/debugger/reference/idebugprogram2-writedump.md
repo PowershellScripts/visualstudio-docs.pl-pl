@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b17d75ace19ac53cbcd229d7c15de573c1ecb8b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d2953b3f30a0d485b58afc04e8ce42158a7537e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114511"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905275"
 ---
 # <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
 Zapisuje plik zrzutu.  
@@ -43,16 +43,16 @@ int WriteDump(
   
 #### <a name="parameters"></a>Parametry  
  `DumpType`  
- [in] Wartość z zakresu od [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) wyliczenie określający typ zrzut, na przykład, czyli lub long.  
+ [in] Wartość z zakresu od [DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md) wyliczenie, które określa typ zrzutu, na przykład, w skrócie lub long.  
   
  `pszDumpUrl`  
  [in] Adres URL zrzutu do zapisu. Zazwyczaj jest to w formie `file://c:\path\filename.ext`, ale może być dowolny prawidłowy adres URL.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Zrzut program zwykle obejmuje bieżącej ramki stosu, sam stos, listę wątki uruchomione w programie i prawdopodobnie wszystkie pamięci, który jest właścicielem program.  
+ Zrzut program zwykle obejmuje bieżącej ramki stosu, sam stos, Lista wątków, uruchomiony w programie i prawdopodobnie wszystkie pamięci, który jest właścicielem program.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

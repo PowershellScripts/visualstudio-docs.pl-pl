@@ -22,12 +22,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: da31c33288489c3dbaef8a51b5c3fe2fe96d818b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c832686cbe56bb9d2a3b9f31206dada8043e7b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918639"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Powiązanie obiektów w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,11 +64,11 @@ Visual Studio zapewnia narzędzia projektowania do pracy z niestandardowych obie
 ### <a name="loaddata-into-objects"></a>Loaddata na obiekty  
  W tym przykładzie dane zostały załadowane do obiektów za pomocą adapterów TableAdapter. Domyślnie TableAdapters są tworzone za pomocą dwóch rodzajów metod, które pobierania danych z bazy danych i wypełnianie tabel danych.  
   
--   `TableAdapter.Fill` Metoda wypełni istniejącej tabeli danych z danymi zwracanymi.  
+- `TableAdapter.Fill` Metoda wypełni istniejącej tabeli danych z danymi zwracanymi.  
   
--   `TableAdapter.GetData` Metoda zwraca tabelę danych wypełniony danymi.  
+- `TableAdapter.GetData` Metoda zwraca tabelę danych wypełniony danymi.  
   
- Najprostszym sposobem załadowania niestandardowych obiektów z danymi jest wywołać `TableAdapter.GetData` metody w pętli poprzez Kolekcja wierszy w tabeli zwracanych danych i wypełnić każdego obiektu z wartościami w każdym wierszu. Możesz utworzyć `GetData` metodę zwracającą tabelę danych wypełnione dla dowolnego zapytania, które dodano do TableAdapter.  
+  Najprostszym sposobem załadowania niestandardowych obiektów z danymi jest wywołać `TableAdapter.GetData` metody w pętli poprzez Kolekcja wierszy w tabeli zwracanych danych i wypełnić każdego obiektu z wartościami w każdym wierszu. Możesz utworzyć `GetData` metodę zwracającą tabelę danych wypełnione dla dowolnego zapytania, które dodano do TableAdapter.  
   
 > [!NOTE]
 >  Visual Studio nazw zapytań TableAdapter `Fill` i `GetData` domyślnie, ale można zmienić tych nazw z nazwą prawidłowej metody.  

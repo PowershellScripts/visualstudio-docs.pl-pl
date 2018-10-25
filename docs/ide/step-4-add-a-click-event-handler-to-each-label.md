@@ -11,36 +11,36 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95a58c1e816c448a641a81282aaecf9d51a63ea
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 04054d353e0260e7a38a189fc6946aacd353b6c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897956"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Krok 4: Dodawanie obsługi zdarzeń kliknięcia do każdej etykiety
+
 Gra w dopasowywanie działa w następujący sposób:
 
-1.  Gdy gracz wybiera jeden z kwadratów z ukrytą ikoną, program pokazuje graczowi ikonę, zmieniając jej kolor na czarny.
+1. Gdy gracz wybiera jeden z kwadratów z ukrytą ikoną, program pokazuje graczowi ikonę, zmieniając jej kolor na czarny.
 
-2.  Następnie gracz wybiera inną ukrytą ikonę.
+2. Następnie gracz wybiera inną ukrytą ikonę.
 
-3.  Jeśli ikony pasują, pozostają widoczne. Jeśli tak nie jest, obie ikony są ukrywane ponownie.
+3. Jeśli ikony pasują, pozostają widoczne. Jeśli tak nie jest, obie ikony są ukrywane ponownie.
 
- Aby pobrać program do pracy w ten sposób, należy dodać <xref:System.Windows.Forms.Control.Click> obsługi zdarzeń, który zmienia kolor etykiety, dla której zostanie wybrany.
+   Aby uzyskać program umożliwiał pracę w ten sposób, należy dodać <xref:System.Windows.Forms.Control.Click> program obsługi zdarzeń, który zmienia kolor wybranej etykiety.
 
-## <a name="to-add-a-click-event-handler-to-each-label"></a>Aby dodać obsługi zdarzeń kliknięcia do każdej etykiety
+## <a name="to-add-a-click-event-handler-to-each-label"></a>Aby dodać obsługę zdarzeń kliknięcia do każdej etykiety
 
-1.  Otwórz formularz w **Projektant formularzy systemu Windows**. W **Eksploratora rozwiązań**, wybierz *pliku Form1.cs* lub *Form1.vb*. Na pasku menu wybierz **widoku** > **projektanta**.
+1.  Otwórz formularz w **Windows Forms Designer**. W **Eksploratora rozwiązań**, wybierz *Form1.cs* lub *Form1.vb*. Na pasku menu wybierz **widoku** > **projektanta**.
 
-2.  Wybierz pierwszy formant etykiety, aby go zaznaczyć. Następnie, przytrzymaj **Ctrl** klucza podczas wybierz wszystkie inne etykiety, aby je zaznaczyć. Pamiętaj, że każda etykieta jest zaznaczona.
+2.  Wybierz pierwszy formant etykiety, aby go zaznaczyć. Następnie przytrzymaj naciśnięty **Ctrl** klucza wciśnięty pozostałe etykiety, aby je wybrać. Pamiętaj, że każda etykieta jest zaznaczona.
 
-3.  Wybierz **zdarzenia** przycisk na pasku narzędzi w **właściwości** okna, aby wyświetlić **zdarzenia** strony **właściwości** okna. Przewiń w dół do **kliknij** zdarzeń, a następnie wprowadź **label_Click** w polu, jak pokazano na poniższej ilustracji.
+3.  Wybierz **zdarzenia** przycisk na pasku narzędzi w **właściwości** okna, aby wyświetlić **zdarzenia** strony w **właściwości** okna. Przewiń w dół do **kliknij** zdarzeń, a następnie wprowadź **label_Click** w polu, jak pokazano na poniższej ilustracji.
 
-     ![Okno właściwości przedstawiający kliknij zdarzenie](../ide/media/express_labelclick.png)
-**właściwości** okno **kliknij** zdarzeń
+     ![Okno Właściwości pokazujące zdarzenie Kliknij](../ide/media/express_labelclick.png)
 
-4.  Wybierz **Enter** klucza. Dodaje IDE `Click` wywołuje program obsługi zdarzeń `label_Click()` w kodzie i przechwytuje go do każdej etykiety w formularzu.
+4.  Wybierz **Enter** klucza. IDE dodaje `Click` wywołuje program obsługi zdarzeń `label_Click()` z kodem i przyczepia go do każdej etykiety w formularzu.
 
 5.  Wypełnij resztę kodu w następujący sposób:
 
@@ -48,14 +48,14 @@ Gra w dopasowywanie działa w następujący sposób:
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]
 
     > [!NOTE]
-    >  Jeśli kopiowanie i wklejanie `label_Click()` blok kodu, a nie ręczne wprowadzenie kodu, upewnij się zastąpić istniejącą `label_Click()` kodu. W przeciwnym razie otrzymasz zduplikowany blok kodu.
+    > Jeśli skopiujesz i wkleisz `label_Click()` blok kodu, a nie wprowadzasz kod ręcznie, upewnij się zastąpić istniejącą `label_Click()` kodu. W przeciwnym razie otrzymasz zduplikowany blok kodu.
 
     > [!NOTE]
-    >  Może rozpoznać `object sender` w górnej części programu obsługi zdarzeń jako taka sama jak używane w [samouczek 2: tworzenie kwizu matematycznego](../ide/tutorial-2-create-a-timed-math-quiz.md) samouczka. Ponieważ użytkownik argumentów podłączono kontrolą inną etykietę zdarzenia do metody obsługi pojedyncze zdarzenie kliknięcia, ta sama metoda jest wywoływana, niezależnie od tego, które etykiety użytkownik wybierze. Metoda obsługi zdarzeń musi wiedzieć, które etykieta została wybrana, więc używa nazwy `sender` do identyfikacji formantu etykiety. W pierwszym wierszu metody informuje program, że nie jest obiekt generyczny, ale w szczególności formantu etykiety i korzysta z nazwą `clickedLabel` dostępu do właściwości i metod etykiety.
+    > Może rozpoznać `object sender` w górnej części programu obsługi zdarzeń jako ten sam używany w [samouczek 2: utworzenie kwizu matematycznego czasu](../ide/tutorial-2-create-a-timed-math-quiz.md) samouczka. Możesz podłączone kontrolą inną etykietę zdarzenia do metody obsługi pojedynczego zdarzenia kliknięcia, wywoływana jest metoda ten sam, niezależnie od tego, którą etykietę wybierze użytkownik. Metoda obsługi zdarzeń musi wiedzieć, którą etykietę wybrano, więc używa nazwy `sender` Aby zidentyfikować formant etykiety. Pierwszy wiersz metody mówi programowi, że nie jest obiekt rodzajowy, ale konkretnie formant etykiety i że używa on nazwy `clickedLabel` dostęp do właściwości i metod etykiety.
 
-     Ta metoda najpierw sprawdza, czy `clickedLabel` został pomyślnie przekonwertowany (rzutowania) z obiektu do formantu etykiety. Jeśli nie powiodło się, ma wartość `null` (C#) lub `Nothing` (Visual Basic), a użytkownik nie chce wykonać do końca kod w metodzie. Następnie metoda sprawdza kolor tekstu etykiety wybrany za pomocą etykiety **ForeColor** właściwości. Jeśli kolor tekstu etykiety jest czarny, oznacza to, że ikona jest już wybrana, a metoda jest wykonana. (Co to jest `return` instrukcja nie wykonuje: informuje program można zatrzymać wykonywania metody.) W przeciwnym razie ikona nie została wybrana, więc program zmienia kolor tekstu etykiety na czarny.
+     Metoda ta najpierw sprawdza, czy `clickedLabel` został pomyślnie przekonwertowany (rzutowany) z obiektu na formant etykiety. Jeśli nie, ma wartość `null` (C#) lub `Nothing` (Visual Basic), a nie chcesz wykonać pozostałej części kodu w metodzie. Następnie metoda sprawdza kolor tekstu wybranej etykiety za pomocą etykiety **ForeColor** właściwości. Jeśli kolor tekstu etykiety jest czarny, oznacza to, że ikona jest już wybrana, a metoda jest wykonana. (Właśnie to `return` wykonuje instrukcja: mówi programowi, aby zatrzymał wykonywanie metody.) W przeciwnym razie ikona nie została wybrana, więc program zmienia kolor tekstu etykiety na czarny.
 
-6.  Na pasku menu wybierz **pliku** > **Zapisz wszystko** Aby zapisać postęp, a następnie na pasku menu wybierz **debugowania** > **Start Debugowanie** do uruchomienia programu. Powinien zostać wyświetlony pusty formularz z niebieskim tłem. Wybierz którąś komórkę w formularzu, jedna z ikon powinna się stać widoczna. Kontynuuj wybieranie różnych miejsc w formularzu. Ikony powinny się pojawiać w miarę wybierania.
+6.  Na pasku menu wybierz **pliku** > **Zapisz wszystko** Aby zapisać postęp, a następnie na pasku menu wybierz **debugowania** > **Start Debugowanie** Aby uruchomić program. Powinien zostać wyświetlony pusty formularz z niebieskim tłem. Wybierz którąś komórkę w formularzu, jedna z ikon powinna się stać widoczna. Kontynuuj wybieranie różnych miejsc w formularzu. Ikony powinny się pojawiać w miarę wybierania.
 
 ## <a name="to-continue-or-review"></a>Aby kontynuować lub przeglądnąć
 

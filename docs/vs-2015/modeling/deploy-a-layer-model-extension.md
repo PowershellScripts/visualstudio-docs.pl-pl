@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5b19e8ef9ee23f11291c0f560c1932ba53234ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb6644b45e2256aa3fdc24ccd8e6d14095f72e13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291856"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907251"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Wdrażanie rozszerzenia modelu warstwy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Innym użytkownikom programu Visual Studio można zainstalować warstwę modelow
   
 #### <a name="to-install-the-extension"></a>Aby zainstalować rozszerzenie  
   
-1.  W projekcie, który zawiera **source.vsix.manifest**, otwórz **bin\\ \***  w Eksploratorze plików.  
+1. W projekcie, który zawiera **source.vsix.manifest**, otwórz **bin\\\\*** w Eksploratorze plików.  
   
-2.  Kopiuj  **\*.vsix** pliku na komputerze, na którym chcesz zainstalować rozszerzenie.  
+2. Kopiuj  **\*.vsix** pliku na komputerze, na którym chcesz zainstalować rozszerzenie.  
   
-3.  Na komputerze docelowym kliknij dwukrotnie plik *.vsix w Eksploratorze Windows.  
+3. Na komputerze docelowym kliknij dwukrotnie plik *.vsix w Eksploratorze Windows.  
   
-     Otwiera Instalatora VSIX.  
+    Otwiera Instalatora VSIX.  
   
 #### <a name="to-uninstall-the-extension"></a>Aby odinstalować rozszerzenie  
   

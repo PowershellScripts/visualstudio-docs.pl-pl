@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d7861b19a553860b3973418131c607fb0e9a2de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 298afc379736befab0365ccdad4cc3cfa857785a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910037"
 ---
 # <a name="idebugexpressionevaluator2preloadmodules"></a>IDebugExpressionEvaluator2::PreloadModules
-Wstępnie ładuje moduły wskazywany przez dostawcę określony symbol.  
+Wstępnie ładuje moduły wyznaczony przez dostawcę określonego symbolu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -40,16 +40,16 @@ int PreloadModules (
   
 #### <a name="parameters"></a>Parametry  
  `pSym`  
- [in] Dostawca symbolu, dla której zostaną załadowane moduły.  
+ [in] Dostawca symboli, dla których zostaną załadowane moduły.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda opcjonalny jest używany po wykonaniu dołączanie procesu hostingu. EE udostępnia możliwość "rozgrzewki" jako część Podłączanie.  
+ Ta opcjonalna metoda jest używana po wykonaniu dołączanie procesu hostingu. Ta funkcja zapewnia EE szansy "przećwiczeniu" jako część dołączanie.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **ExpressionEvaluatorPackage** obiekt ujawniający [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **ExpressionEvaluatorPackage** obiekt ujawniający [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md) interfejsu.  
   
 ```cpp  
 STDMETHODIMP ExpressionEvaluatorPackage::PreloadModules  

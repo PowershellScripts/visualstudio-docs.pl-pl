@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 922d33e52e02a0d2cde9c17f799f6e35f1ae2db4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1fc90acf94fde0ef815fc3a487412bba8e8257ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253191"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913140"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Wskazówki: wyświetlanie powiązanych danych w aplikacji WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,28 +36,28 @@ W tym instruktażu utworzysz aplikację programu WPF, która wyświetla dane z t
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Tworzenie aplikacji WPF i modelu danych jednostki, który jest generowany na podstawie danych w przykładowej bazie danych AdventureWorksLT.  
+- Tworzenie aplikacji WPF i modelu danych jednostki, który jest generowany na podstawie danych w przykładowej bazie danych AdventureWorksLT.  
   
--   Tworzenie zestawu formantów powiązanych z danymi, które wyświetlają informacje ogólne dotyczące zestawu zamówień. Tworzenie kontrolki, przeciągając jednostka nadrzędna, z **źródeł danych** okna **projektanta WPF**.  
+- Tworzenie zestawu formantów powiązanych z danymi, które wyświetlają informacje ogólne dotyczące zestawu zamówień. Tworzenie kontrolki, przeciągając jednostka nadrzędna, z **źródeł danych** okna **projektanta WPF**.  
   
--   Tworzenie <xref:System.Windows.Controls.DataGrid> zaznaczony formant, który wyświetla szczegóły powiązanych dla każdego zamówienia. Tworzenie kontrolki, przeciągając jednostce podrzędnej z **źródeł danych** okna do okna **projektanta WPF**.  
+- Tworzenie <xref:System.Windows.Controls.DataGrid> zaznaczony formant, który wyświetla szczegóły powiązanych dla każdego zamówienia. Tworzenie kontrolki, przeciągając jednostce podrzędnej z **źródeł danych** okna do okna **projektanta WPF**.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Dostęp do uruchomionego wystąpienia programu SQL Server lub SQL Server Express, który ma przykładowej bazy danych AdventureWorksLT podłączone do niego. Możesz pobrać bazy danych AdventureWorksLT z [witryny sieci CodePlex Web](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Dostęp do uruchomionego wystąpienia programu SQL Server lub SQL Server Express, który ma przykładowej bazy danych AdventureWorksLT podłączone do niego. Możesz pobrać bazy danych AdventureWorksLT z [witryny sieci CodePlex Web](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- Znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończeni instruktażu:  
+  Znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończeni instruktażu:  
   
--   Jednostki danych modeli i ADO.NET Entity Framework. Aby uzyskać więcej informacji, zobacz [Omówienie programu Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Jednostki danych modeli i ADO.NET Entity Framework. Aby uzyskać więcej informacji, zobacz [Omówienie programu Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
--   Praca z projektanta WPF. Aby uzyskać więcej informacji, zobacz [WPF i Silverlight projektanta Przegląd](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Praca z projektanta WPF. Aby uzyskać więcej informacji, zobacz [WPF i Silverlight projektanta Przegląd](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [Przegląd wiązanie danych](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [Przegląd wiązanie danych](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="creating-the-project"></a>Tworzenie projektu  
  Utwórz nowy projekt WPF, aby wyświetlić rekordy zlecenia.  
@@ -85,80 +85,80 @@ W tym instruktażu utworzysz aplikację programu WPF, która wyświetla dane z t
   
 #### <a name="to-create-an-entity-data-model"></a>Aby utworzyć model Entity Data Model  
   
-1.  Na **danych** menu, kliknij przycisk **Dodaj nowe źródło danych** otworzyć **Kreatora konfiguracji źródła danych**.  
+1. Na **danych** menu, kliknij przycisk **Dodaj nowe źródło danych** otworzyć **Kreatora konfiguracji źródła danych**.  
   
-2.  Na **wybierz typ źródła danych** kliknij **bazy danych**, a następnie kliknij przycisk **dalej**.  
+2. Na **wybierz typ źródła danych** kliknij **bazy danych**, a następnie kliknij przycisk **dalej**.  
   
-3.  Na **wybierz Model bazy danych** kliknij **modelu Entity Data Model**, a następnie kliknij przycisk **dalej**.  
+3. Na **wybierz Model bazy danych** kliknij **modelu Entity Data Model**, a następnie kliknij przycisk **dalej**.  
   
-4.  Na **wybierz zawartość modelu** kliknij **Generuj z bazy danych**, a następnie kliknij przycisk **dalej**.  
+4. Na **wybierz zawartość modelu** kliknij **Generuj z bazy danych**, a następnie kliknij przycisk **dalej**.  
   
-5.  Na **wybierz połączenie danych** wykonaj jedną z następujących czynności:  
+5. Na **wybierz połączenie danych** wykonaj jedną z następujących czynności:  
   
-    -   Jeśli połączenie danych z przykładowej bazy danych AdventureWorksLT jest dostępny na liście rozwijanej, wybierz ją.  
+   - Jeśli połączenie danych z przykładowej bazy danych AdventureWorksLT jest dostępny na liście rozwijanej, wybierz ją.  
   
-         —lub—  
+      —lub—  
   
-    -   Kliknij przycisk **nowe połączenie** i Utwórz połączenie z bazą danych AdventureWorksLT.  
+   - Kliknij przycisk **nowe połączenie** i Utwórz połączenie z bazą danych AdventureWorksLT.  
   
      Upewnij się, że **zapisywanie ustawień połączenia w pliku App.Config jako jednostki** opcja jest zaznaczona, a następnie kliknij **dalej**.  
   
-6.  Na **wybierz obiekty bazy danych** rozwiń **tabel**, a następnie wybierz następujące tabele:  
+6. Na **wybierz obiekty bazy danych** rozwiń **tabel**, a następnie wybierz następujące tabele:  
   
-    -   **Szczegóły zamówienia sprzedaży**  
+   -   **Szczegóły zamówienia sprzedaży**  
   
-    -   **SalesOrderHeader**  
+   -   **SalesOrderHeader**  
   
-7.  Kliknij przycisk **Zakończ**.  
+7. Kliknij przycisk **Zakończ**.  
   
-8.  Skompiluj projekt.  
+8. Skompiluj projekt.  
   
 ## <a name="creating-data-bound-controls-that-display-the-orders"></a>Tworzenie powiązanych z danymi kontrolki, które wyświetlają zamówienia  
  Tworzenie formantów, które wyświetlają rekordów zamówień, przeciągając `SalesOrderHeaders` jednostka z **źródeł danych** okna Projektanta WPF.  
   
 #### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>Aby utworzyć formanty powiązane z danymi, które wyświetla rekordy zlecenia  
   
-1.  W **Eksploratora rozwiązań**, kliknij dwukrotnie opcję MainWindow.xaml.  
+1. W **Eksploratora rozwiązań**, kliknij dwukrotnie opcję MainWindow.xaml.  
   
-     Okno zostanie otwarty w Projektancie WPF.  
+    Okno zostanie otwarty w Projektancie WPF.  
   
-2.  Edytuj XAML więc **wysokość** i **szerokość** właściwości są ustawione na 800  
+2. Edytuj XAML więc **wysokość** i **szerokość** właściwości są ustawione na 800  
   
-3.  W **źródeł danych** okna, kliknij przycisk menu rozwijanej dla **SalesOrderHeaders** a następnie wybierz węzeł **szczegóły**.  
+3. W **źródeł danych** okna, kliknij przycisk menu rozwijanej dla **SalesOrderHeaders** a następnie wybierz węzeł **szczegóły**.  
   
-4.  Rozwiń **SalesOrderHeaders** węzła.  
+4. Rozwiń **SalesOrderHeaders** węzła.  
   
-5.  Kliknij menu rozwijane **SalesOrderID** i wybierz **ComboBox**.  
+5. Kliknij menu rozwijane **SalesOrderID** i wybierz **ComboBox**.  
   
-6.  Dla każdego następujące węzły podrzędne **SalesOrderHeaders** węzła, kliknij menu rozwijane, następnie węzeł i wybierz **Brak**:  
+6. Dla każdego następujące węzły podrzędne **SalesOrderHeaders** węzła, kliknij menu rozwijane, następnie węzeł i wybierz **Brak**:  
   
-    -   **RevisionNumber**  
+   - **RevisionNumber**  
   
-    -   **OnlineOrderFlag**  
+   - **OnlineOrderFlag**  
   
-    -   **ShipToAddressID**  
+   - **ShipToAddressID**  
   
-    -   **BillToAddressID**  
+   - **BillToAddressID**  
   
-    -   **CreditCardApprovalCode**  
+   - **CreditCardApprovalCode**  
   
-    -   **Suma częściowa**  
+   - **Suma częściowa**  
   
-    -   **TaxAmt**  
+   - **TaxAmt**  
   
-    -   **Transport**  
+   - **Transport**  
   
-    -   **ROWGUID**  
+   - **ROWGUID**  
   
-    -   **Data modyfikacji**  
+   - **Data modyfikacji**  
   
      Ta akcja uniemożliwia tworzenie formantów powiązanych z danymi dla tych węzłów w następnym kroku programu Visual Studio. W tym przewodniku zakłada się, że użytkownik końcowy nie musi widzieć tych danych.  
   
-7.  Z **źródeł danych** okna, przeciągnij **SalesOrderHeaders** węzła do okna **projektanta WPF**.  
+7. Z **źródeł danych** okna, przeciągnij **SalesOrderHeaders** węzła do okna **projektanta WPF**.  
   
-     Program Visual Studio generuje XAML, która tworzy zestaw elementów sterujących, które są powiązane z danymi w **SalesOrderHeaders** jednostki i kod, który służy do ładowania danych. Aby uzyskać więcej informacji na temat wygenerowany XAML i kodu, zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
+    Program Visual Studio generuje XAML, która tworzy zestaw elementów sterujących, które są powiązane z danymi w **SalesOrderHeaders** jednostki i kod, który służy do ładowania danych. Aby uzyskać więcej informacji na temat wygenerowany XAML i kodu, zobacz [WPF powiązać kontrolki z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-8.  W projektancie, kliknij pole kombi **identyfikator zamówienia sprzedaży** etykiety.  
+8. W projektancie, kliknij pole kombi **identyfikator zamówienia sprzedaży** etykiety.  
   
 9. W **właściwości** okna, zaznacz pole wyboru obok pozycji **IsReadOnly** właściwości.  
   
@@ -167,28 +167,28 @@ W tym instruktażu utworzysz aplikację programu WPF, która wyświetla dane z t
   
 #### <a name="to-create-a-datagrid-that-displays-the-order-details"></a>Aby utworzyć DataGrid, który wyświetla szczegóły zamówienia  
   
-1.  W **źródeł danych** oknie Znajdź **SalesOrderDetails** węzeł, który jest elementem podrzędnym **SalesOrderHeaders** węzła.  
+1. W **źródeł danych** oknie Znajdź **SalesOrderDetails** węzeł, który jest elementem podrzędnym **SalesOrderHeaders** węzła.  
   
-    > [!NOTE]
-    >  Istnieje również **SalesOrderDetails** węzła, który jest elementem równorzędnym **SalesOrderHeaders** węzła. Upewnij się, że wybrano węzeł podrzędny **SalesOrderHeaders** węzła.  
+   > [!NOTE]
+   >  Istnieje również **SalesOrderDetails** węzła, który jest elementem równorzędnym **SalesOrderHeaders** węzła. Upewnij się, że wybrano węzeł podrzędny **SalesOrderHeaders** węzła.  
   
-2.  Rozwiń węzeł podrzędny **SalesOrderDetails** węzła.  
+2. Rozwiń węzeł podrzędny **SalesOrderDetails** węzła.  
   
-3.  Dla każdego następujące węzły podrzędne **SalesOrderDetails** węzła, kliknij menu rozwijane, następnie węzeł i wybierz **Brak**:  
+3. Dla każdego następujące węzły podrzędne **SalesOrderDetails** węzła, kliknij menu rozwijane, następnie węzeł i wybierz **Brak**:  
   
-    -   **SalesOrderID**  
+   - **SalesOrderID**  
   
-    -   **SalesOrderDetailID**  
+   - **SalesOrderDetailID**  
   
-    -   **ROWGUID**  
+   - **ROWGUID**  
   
-    -   **Data modyfikacji**  
+   - **Data modyfikacji**  
   
      Ta akcja uniemożliwia tych danych w tym Visual Studio <xref:System.Windows.Controls.DataGrid> formant zostanie utworzony w następnym kroku. W tym przewodniku zakłada się, że użytkownik końcowy nie musi widzieć tych danych.  
   
-4.  Z **źródeł danych** okna, przeciągnij element podrzędny **SalesOrderDetails** węzła do okna **projektanta WPF**.  
+4. Z **źródeł danych** okna, przeciągnij element podrzędny **SalesOrderDetails** węzła do okna **projektanta WPF**.  
   
-     Program Visual Studio generuje XAML, aby zdefiniować nowe powiązane z danymi <xref:System.Windows.Controls.DataGrid> sterowania i kontroli pojawia się w projektancie. Aktualizacje programu Visual Studio również wygenerowany `GetSalesOrderHeadersQuery` metody w pliku związanym z kodem, aby dołączyć dane w **SalesOrderDetails** jednostki.  
+    Program Visual Studio generuje XAML, aby zdefiniować nowe powiązane z danymi <xref:System.Windows.Controls.DataGrid> sterowania i kontroli pojawia się w projektancie. Aktualizacje programu Visual Studio również wygenerowany `GetSalesOrderHeadersQuery` metody w pliku związanym z kodem, aby dołączyć dane w **SalesOrderDetails** jednostki.  
   
 ## <a name="testing-the-application"></a>Testowanie aplikacji  
  Skompiluj i uruchom aplikację, aby sprawdzić, czy powoduje wyświetlenie rekordów zlecenia.  

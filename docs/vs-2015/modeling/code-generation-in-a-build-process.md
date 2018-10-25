@@ -15,12 +15,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: abb37b7bdfbc01affea63aa90d35b3702dcb4719
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208653"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907927"
 ---
 # <a name="code-generation-in-a-build-process"></a>Generowanie kodu w procesie kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,11 +160,11 @@ Transformacja tekstu ma miejsce przed innymi zadaniami w procesie kompilacji. Mo
 
 W `AfterTransform`, możesz odwoływać się do listy plików:
 
--   GeneratedFiles — lista plików zapisanych przez proces. Dla tych plików, które zastąpią istniejące pliki tylko do odczytu, %(GeneratedFiles.ReadOnlyFileOverwritten) będzie prawdziwe. Pliki te można wyewidencjonować z kontroli źródła.
+- GeneratedFiles — lista plików zapisanych przez proces. Dla tych plików, które zastąpią istniejące pliki tylko do odczytu, %(GeneratedFiles.ReadOnlyFileOverwritten) będzie prawdziwe. Pliki te można wyewidencjonować z kontroli źródła.
 
--   NonGeneratedFiles — lista plików tylko do odczytu, które nie zostały nadpisane.
+- NonGeneratedFiles — lista plików tylko do odczytu, które nie zostały nadpisane.
 
- Na przykład, można zdefiniować zadanie do wyewidencjonowania GeneratedFiles.
+  Na przykład, można zdefiniować zadanie do wyewidencjonowania GeneratedFiles.
 
 ## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath i OutputFileName
 
@@ -255,7 +255,6 @@ Wyedytuj plik .csproj lub .vbproj, aby zdefiniować właściwość projektu. Ten
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
 Teraz możesz korzystać ze swojej właściwości projektu w dyrektywach zestawu i dołączania:

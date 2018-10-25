@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a3d64aed3834d517cb916bfbbed47a263eb8619
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a3fffb36d7070701b99382c320e3a2d23b9a2b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290475"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893406"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Narzędzia modelu danych jednostki w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,20 +38,20 @@ Entity Framework to technologii mapowania obiektowo relacyjny, który umożliwia
   
  Są one określone narzędzia, które tworzą narzędzia modelu danych jednostki w programie Visual Studio 2015:  
   
--   Możesz użyć [!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] projektanta** (**Projektant jednostki**) aby wizualnie tworzyć i modyfikować jednostek, skojarzeń, mapowania i relacjami dziedziczenia. **Projektant jednostki** generuje również [!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)] lub [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kod warstwy obiektu.  
+- Możesz użyć [!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] projektanta** (**Projektant jednostki**) aby wizualnie tworzyć i modyfikować jednostek, skojarzeń, mapowania i relacjami dziedziczenia. **Projektant jednostki** generuje również [!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)] lub [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] kod warstwy obiektu.  
   
--   Możesz użyć  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] kreatora** Generowanie modelu koncepcyjnego z istniejącej bazy danych i Dodaj informacje o połączeniu bazy danych do aplikacji.  
+- Możesz użyć  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] kreatora** Generowanie modelu koncepcyjnego z istniejącej bazy danych i Dodaj informacje o połączeniu bazy danych do aplikacji.  
   
--   Możesz użyć **Kreatora tworzenia bazy danych** najpierw utworzyć model koncepcyjny, a następnie utworzenie bazy danych, która obsługuje model.  
+- Możesz użyć **Kreatora tworzenia bazy danych** najpierw utworzyć model koncepcyjny, a następnie utworzenie bazy danych, która obsługuje model.  
   
--   Możesz użyć **Kreatora aktualizacji modelu** można zaktualizować swoje modelu koncepcyjnego, model magazynu i mapowania, jeśli wprowadzono zmiany do podstawowej bazy danych.  
+- Możesz użyć **Kreatora aktualizacji modelu** można zaktualizować swoje modelu koncepcyjnego, model magazynu i mapowania, jeśli wprowadzono zmiany do podstawowej bazy danych.  
   
-    > [!NOTE]
-    >  Począwszy od programu Visual Studio 2010, [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] narzędzia nie obsługują [!INCLUDE[ss2k](../includes/ss2k-md.md)].  
+  > [!NOTE]
+  >  Począwszy od programu Visual Studio 2010, [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] narzędzia nie obsługują [!INCLUDE[ss2k](../includes/ss2k-md.md)].  
   
- Narzędzia Generowanie lub modyfikowanie pliku edmx. Ten plik zawiera informacje opisujące modelu koncepcyjnego, model magazynu i mapowania między nimi. Aby uzyskać więcej informacji, zobacz [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).  
+  Narzędzia Generowanie lub modyfikowanie pliku edmx. Ten plik zawiera informacje opisujące modelu koncepcyjnego, model magazynu i mapowania między nimi. Aby uzyskać więcej informacji, zobacz [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).  
   
- Entity Framework Power Tools pomagają Ci tworzyć aplikacje, które używają modelu Entity Data Model. Narzędzia można wygenerować model koncepcyjny, sprawdzania poprawności istniejącego modelu, generuje pliki kodu źródłowego, które zawierają klas obiektów opartych na modelu koncepcyjnego i tworzenia plików kodu źródłowego, które zawierają widoki, które generuje modelu. Aby uzyskać szczegółowe informacje, zobacz [Pre-Generated mapowanie widoków](https://msdn.microsoft.com/data/dn469601.aspx).  
+  Entity Framework Power Tools pomagają Ci tworzyć aplikacje, które używają modelu Entity Data Model. Narzędzia można wygenerować model koncepcyjny, sprawdzania poprawności istniejącego modelu, generuje pliki kodu źródłowego, które zawierają klas obiektów opartych na modelu koncepcyjnego i tworzenia plików kodu źródłowego, które zawierają widoki, które generuje modelu. Aby uzyskać szczegółowe informacje, zobacz [Pre-Generated mapowanie widoków](https://msdn.microsoft.com/data/dn469601.aspx).  
   
 ## <a name="related-topics"></a>Tematy pokrewne  
   

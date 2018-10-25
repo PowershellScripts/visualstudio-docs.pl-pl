@@ -15,12 +15,12 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c2efd5a626e92d180f7c842172f764fa7f8011e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 29ca670f5c660e70a5177754c3fac518443d310b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245804"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907889"
 ---
 # <a name="solution-configuration"></a>Konfiguracja rozwiązania
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,33 +34,33 @@ Konfiguracje rozwiązania przechowywania właściwości poziomie rozwiązania. B
   
  Poniżej przedstawiono, jak można implementować konfiguracje rozwiązania obsługiwany przez użytkownika typ projektu:  
   
--   Projekt  
+- Projekt  
   
-     Wyświetla nazwy projektów w bieżącym rozwiązaniu.  
+   Wyświetla nazwy projektów w bieżącym rozwiązaniu.  
   
--   Konfiguracja  
+- Konfiguracja  
   
-     Podaj listę konfiguracje obsługiwane przez danego typu projektu i wyświetlane na stronach właściwości wdrożenie <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>.  
+   Podaj listę konfiguracje obsługiwane przez danego typu projektu i wyświetlane na stronach właściwości wdrożenie <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>.  
   
-     Kolumna konfiguracji Wyświetla nazwę konfiguracji projektu do kompilacji w tej konfiguracji rozwiązania i wyświetla listę wszystkich konfiguracji projektu, po kliknięciu przycisk strzałki. Wywołania środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A> metodę, aby wypełnić tej listy. Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> metody oznacza, że projekt obsługuje edycji konfiguracji, nowe lub Edytuj wybrane opcje są również wyświetlane w pozycji konfiguracji. Każda z tych opcji Uruchom okna dialogowe, które wywołują metody `IVsCfgProvider2` interfejsu do edycji konfiguracji projektu.  
+   Kolumna konfiguracji Wyświetla nazwę konfiguracji projektu do kompilacji w tej konfiguracji rozwiązania i wyświetla listę wszystkich konfiguracji projektu, po kliknięciu przycisk strzałki. Wywołania środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A> metodę, aby wypełnić tej listy. Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> metody oznacza, że projekt obsługuje edycji konfiguracji, nowe lub Edytuj wybrane opcje są również wyświetlane w pozycji konfiguracji. Każda z tych opcji Uruchom okna dialogowe, które wywołują metody `IVsCfgProvider2` interfejsu do edycji konfiguracji projektu.  
   
-     Jeśli projekt nie obsługuje konfiguracji, w kolumnie konfiguracji wyświetla Brak i jest wyłączone.  
+   Jeśli projekt nie obsługuje konfiguracji, w kolumnie konfiguracji wyświetla Brak i jest wyłączone.  
   
--   Platforma  
+- Platforma  
   
-     Wyświetla platformę konfiguracji wybranego projektu kompilacji dla oraz listę wszystkich dostępnych platform dla projektu, po kliknięciu przycisk strzałki. Wywołania środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A> metodę, aby wypełnić tej listy. Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> metody oznacza, że projekt obsługuje edytowania platform, nowe lub Edytuj wybrane opcje są również wyświetlane pod nagłówkiem platformy. Każda z tych opcji Uruchom okna dialogowe, które wywołują `IVsCfgProvider2` metody służące do edycji projektu dostępnych platform.  
+   Wyświetla platformę konfiguracji wybranego projektu kompilacji dla oraz listę wszystkich dostępnych platform dla projektu, po kliknięciu przycisk strzałki. Wywołania środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A> metodę, aby wypełnić tej listy. Jeśli <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> metody oznacza, że projekt obsługuje edytowania platform, nowe lub Edytuj wybrane opcje są również wyświetlane pod nagłówkiem platformy. Każda z tych opcji Uruchom okna dialogowe, które wywołują `IVsCfgProvider2` metody służące do edycji projektu dostępnych platform.  
   
-     Jeśli projekt nie obsługuje platformy, w kolumnie platformy dla tego projektu Brak Wyświetla i jest wyłączone.  
+   Jeśli projekt nie obsługuje platformy, w kolumnie platformy dla tego projektu Brak Wyświetla i jest wyłączone.  
   
--   Kompilacja  
+- Kompilacja  
   
-     Określa, czy projekt jest kompilowany za pomocą bieżącej konfiguracji rozwiązania. Niewybrane projekty są kompilowane podczas wywoływania poleceń kompilacji poziomie rozwiązania niezależnie od wszelkich zależności projektu, które zawierają. Nie wybrano projektów do zbudowania nadal będą uwzględniane w debugowanie, uruchamianie, pakowania i wdrażania rozwiązania.  
+   Określa, czy projekt jest kompilowany za pomocą bieżącej konfiguracji rozwiązania. Niewybrane projekty są kompilowane podczas wywoływania poleceń kompilacji poziomie rozwiązania niezależnie od wszelkich zależności projektu, które zawierają. Nie wybrano projektów do zbudowania nadal będą uwzględniane w debugowanie, uruchamianie, pakowania i wdrażania rozwiązania.  
   
--   Deploy  
+- Deploy  
   
-     Określa, czy stosowania poleceń uruchamiania lub Wdróż przy użyciu wybranego rozwiązania konfiguracji kompilacji zostanie wdrożony projekt. Pole wyboru dla tego pola będą dostępne, jeśli projekt obsługuje wdrażania przez zaimplementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfejs w jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> obiektu.  
+   Określa, czy stosowania poleceń uruchamiania lub Wdróż przy użyciu wybranego rozwiązania konfiguracji kompilacji zostanie wdrożony projekt. Pole wyboru dla tego pola będą dostępne, jeśli projekt obsługuje wdrażania przez zaimplementowanie <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interfejs w jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> obiektu.  
   
- Po dodaniu nowej konfiguracji rozwiązania, użytkownik może wybrać go z konfiguracji rozwiązania pola listy rozwijanej na standardowym pasku narzędzi do kompilacji i/lub uruchom tę konfigurację.  
+  Po dodaniu nowej konfiguracji rozwiązania, użytkownik może wybrać go z konfiguracji rozwiązania pola listy rozwijanej na standardowym pasku narzędzi do kompilacji i/lub uruchom tę konfigurację.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zarządzanie opcjami konfiguracji](../../extensibility/internals/managing-configuration-options.md)   

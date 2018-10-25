@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91e4c4648108cdc6afa28f5a5dd8f9bfd46fcf59
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 04bc34de6e7ecbc438cfc63ed08c684cf4224366
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126350"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917027"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
@@ -52,19 +52,19 @@ PIFLAG_SYSTEM_PROCESS
 Wskazuje, że proces jest proces systemowy.
 
 PIFLAG_DEBUGGER_ATTACHED  
-Wskazuje, że proces jest debugowany przez debuger. Być może jest ona [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugera, lub może być niektóre inne debugera, na przykład WinDbg.
+Wskazuje, że proces jest debugowany przez debuger. Może być [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] debugera, lub może być kilka innych debugera, na przykład WinDbg.
 
 PIFLAG_PROCESS_STOPPED  
-Wskazuje, że proces jest zatrzymany. Prawidłowe tylko wtedy, gdy `PIFLAG_DEBUGGER_ATTACHED` jest określona. Jest dostępna w programie Visual Studio 2005 i nowszej.
+Wskazuje, że proces zostanie zatrzymany. Prawidłowe tylko wtedy, gdy `PIFLAG_DEBUGGER_ATTACHED` jest także określona. Dostępne w programie Visual Studio 2005 i nowszych wersjach.
 
 PIFLAG_PROCESS_RUNNING  
-Wskazuje, że proces jest uruchomiony. Prawidłowe tylko wtedy, gdy `PIFLAG_DEBUGGER_ATTACHED` jest określona. Jest dostępna w programie Visual Studio 2005 i nowszej.
+Wskazuje, że proces jest uruchomiony. Prawidłowe tylko wtedy, gdy `PIFLAG_DEBUGGER_ATTACHED` jest także określona. Dostępne w programie Visual Studio 2005 i nowszych wersjach.
 
 ## <a name="remarks"></a>Uwagi
 
 Używany do `Flags` członkiem [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md) struktury.
 
-Te flagi mogą być łączone z bitowego `OR`.
+Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.
 
 ## <a name="requirements"></a>Wymagania
 

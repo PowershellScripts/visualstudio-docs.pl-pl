@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d44077dbe839fe6ce6b369f8d8b3b828bdb982a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b968a94b76f0b2161eef84fdad2cf01288165e65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549433"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899412"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Należy rozważyć przekazywanie typów bazowych jako parametrów
 
@@ -37,16 +37,20 @@ ms.locfileid: "45549433"
 |Zmiana kluczowa|Kluczowa|
 
 ## <a name="cause"></a>Przyczyna
- Deklaracja metody zawiera parametr formalny, który jest typem pochodnym, a metoda wywołuje tylko członkowie podstawowy typ parametru.
+
+Deklaracja metody zawiera parametr formalny, który jest typem pochodnym, a metoda wywołuje tylko członkowie podstawowy typ parametru.
 
 ## <a name="rule-description"></a>Opis reguły
- Jeśli typ podstawowy jest określony jako parametr w deklaracji metody, dowolny typ, który pochodzi od typu podstawowego, może zostać przekazany jako odpowiadający argument do metody. Jeśli argument jest używana wewnątrz treści metody, określonej metody, która jest wykonywana zależy od typu argumentu. Jeśli dodatkowe funkcje, które są dostarczane przez typ pochodny nie jest wymagana, użycie typu podstawowego umożliwia szersze wykorzystanie metody.
+
+Jeśli typ podstawowy jest określony jako parametr w deklaracji metody, dowolny typ, który pochodzi od typu podstawowego, może zostać przekazany jako odpowiadający argument do metody. Jeśli argument jest używana wewnątrz treści metody, określonej metody, która jest wykonywana zależy od typu argumentu. Jeśli dodatkowe funkcje, które są dostarczane przez typ pochodny nie jest wymagana, użycie typu podstawowego umożliwia szersze wykorzystanie metody.
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
- Aby naprawić naruszenie tej zasady, należy zmienić typ parametru do jego typ podstawowy.
+
+Aby naprawić naruszenie tej zasady, należy zmienić typ parametru do jego typ podstawowy.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
- Pomijaj ostrzeżeń dla tej reguły można bezpiecznie
+
+Pomijaj ostrzeżeń dla tej reguły można bezpiecznie
 
 - Jeśli metoda, która wymaga określonych funkcji, która jest dostarczana przez typ pochodny
 
@@ -54,14 +58,16 @@ ms.locfileid: "45549433"
 
 - Aby wymusić typu pochodnego lub typu bardziej pochodnego jest przekazywany do metody.
 
- W takich przypadkach kod będzie bardziej niezawodne z powodu silnego typu sprawdzanie dostarczonego przez kompilatora i środowiska uruchomieniowego.
+W takich przypadkach kod będzie bardziej niezawodne z powodu silnego typu sprawdzanie dostarczonego przez kompilatora i środowiska uruchomieniowego.
 
 ## <a name="example"></a>Przykład
- W poniższym przykładzie pokazano metodę `ManipulateFileStream`, które mogą być używane tylko w <xref:System.IO.FileStream> obiektu, który narusza tę regułę. Druga metoda `ManipulateAnyStream`, spełnia reguły, zastępując <xref:System.IO.FileStream> parametru za pomocą <xref:System.IO.Stream>.
 
- [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
- [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
- [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]
+W poniższym przykładzie pokazano metodę `ManipulateFileStream`, które mogą być używane tylko w <xref:System.IO.FileStream> obiektu, który narusza tę regułę. Druga metoda `ManipulateAnyStream`, spełnia reguły, zastępując <xref:System.IO.FileStream> parametru za pomocą <xref:System.IO.Stream>.
+
+[!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
+[!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
+[!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]
 
 ## <a name="related-rules"></a>Powiązane reguły
- [CA1059: Składowe nie powinny ujawniać pewnych typów konkretnych](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+
+[CA1059: Składowe nie powinny ujawniać pewnych typów konkretnych](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

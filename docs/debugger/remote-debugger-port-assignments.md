@@ -10,25 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 988731be4376e1d1e402b3722bed157cc9b655d2
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1570468a56a4eaba80965d8feea669a0d3f3cb1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151005"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905067"
 ---
 # <a name="remote-debugger-port-assignments"></a>Przypisania portów debugera zdalnego
 Zdalny debuger programu Visual Studio można uruchomić jako aplikację lub usługę w tle. Po jego uruchomieniu jako aplikacja wykorzystuje port, który jest domyślnie przypisane w następujący sposób:  
 
--   Program Visual Studio 2017:4022
+- Program Visual Studio 2017:4022
 
--   Program Visual Studio 2015:4020  
+- Program Visual Studio 2015:4020  
   
--   Program Visual Studio 2013:4018  
+- Program Visual Studio 2013:4018  
   
--   Program Visual Studio 2012:4016  
+- Program Visual Studio 2012:4016  
   
- Innymi słowy numer portu przypisany do zdalnego debugera jest zwiększany przez 2 dla każdej wersji. Możesz ustawić inny numer portu, np. Firma Microsoft wyjaśniono, jak ustawić numery portów w dalszej części tego tematu.  
+  Innymi słowy numer portu przypisany do zdalnego debugera jest zwiększany przez 2 dla każdej wersji. Możesz ustawić inny numer portu, np. Firma Microsoft wyjaśniono, jak ustawić numery portów w dalszej części tego tematu.  
   
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Port debugera zdalnego w systemach operacyjnych 32-bitowy  
  4022 TCP (w programie Visual Studio 2017) jest port główny i jest wymagany w przypadku wszystkich scenariuszy. Można to skonfigurować, z poziomu wiersza polecenia lub okna debugera zdalnego.  

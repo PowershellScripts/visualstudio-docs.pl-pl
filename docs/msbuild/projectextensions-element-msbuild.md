@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c977578a01c6d0af62f328e44a617ff2e00fe128
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: e0057d51256f9cddff7c30056d4c669e9f2f2dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150859"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895460"
 ---
 # <a name="projectextensions-element-msbuild"></a>Projectextensions — element (MSBuild)
 Umożliwia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliki, aby zawierała non - projektu[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] informacji. Wszystko wewnątrz elementu `ProjectExtensions` element zostanie zignorowana przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
@@ -52,9 +52,9 @@ Umożliwia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 
-|Element|Opis|  
-|-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
+| Element | Opis |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu. |
 
 ## <a name="remarks"></a>Uwagi  
  Tylko jeden `ProjectExtensions` element może być używany w [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.  

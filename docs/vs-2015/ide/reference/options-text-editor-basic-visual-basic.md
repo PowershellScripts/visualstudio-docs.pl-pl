@@ -23,12 +23,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f49a6f55cdccc82214c20c4b489d83bbd0199d8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb8856f250810988b73058562402c8d1fe8c644f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227841"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902480"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Opcje, edytor tekstów, Basic (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,28 +42,28 @@ ms.locfileid: "49227841"
  **Lista pretty (ponowne formatowanie) kodu**  
  Edytor tekstu formatuje kodu zgodnie z potrzebami. Gdy ta opcja jest zaznaczona, Edytor kodu wykonują następujące czynności:  
   
--   Wyrównaj kod do położenia odpowiedniej karcie  
+- Wyrównaj kod do położenia odpowiedniej karcie  
   
--   Recase słów kluczowych, zmienne i obiekty do odpowiedniej wielkości liter  
+- Recase słów kluczowych, zmienne i obiekty do odpowiedniej wielkości liter  
   
--   Dodaj brakujące `Then` do `If...Then` — instrukcja  
+- Dodaj brakujące `Then` do `If...Then` — instrukcja  
   
--   Dodaj nawiasy do wywołania funkcji  
+- Dodaj nawiasy do wywołania funkcji  
   
--   Dodaj brakujące nawiasy zakończenia na ciągi  
+- Dodaj brakujące nawiasy zakończenia na ciągi  
   
--   Zapis wykładniczy formatowania  
+- Zapis wykładniczy formatowania  
   
--   Ponowne formatowanie dat  
+- Ponowne formatowanie dat  
   
- **Włącz tryb konspektu**  
- Po otwarciu pliku w edytorze kodu, możesz wyświetlić dokument w trybie konspektu. Zobacz [konspekt](../../ide/outlining.md) Aby uzyskać więcej informacji. Gdy ta opcja jest zaznaczona, funkcję tworzenia konspektów jest aktywowany po otwarciu pliku.  
+  **Włącz tryb konspektu**  
+  Po otwarciu pliku w edytorze kodu, możesz wyświetlić dokument w trybie konspektu. Zobacz [konspekt](../../ide/outlining.md) Aby uzyskać więcej informacji. Gdy ta opcja jest zaznaczona, funkcję tworzenia konspektów jest aktywowany po otwarciu pliku.  
   
- **Automatyczne wstawianie składowych Interface i MustOverride**  
- Jeśli zdecydujesz się `Implements` instrukcji lub `Inherits` instrukcji dla klasy, Edytor tekstu wstawia prototypy dla elementów członkowskich, które mają zostać zaimplementowane lub została zastąpiona, odpowiednio.  
+  **Automatyczne wstawianie składowych Interface i MustOverride**  
+  Jeśli zdecydujesz się `Implements` instrukcji lub `Inherits` instrukcji dla klasy, Edytor tekstu wstawia prototypy dla elementów członkowskich, które mają zostać zaimplementowane lub została zastąpiona, odpowiednio.  
   
- **Pokaż separatory wierszy procedury**  
- Edytor tekstu wskazuje zakres visual procedur. Linia jest rysowana w plikach źródłowych .vb projektu w lokalizacjach, wymienione w poniższej tabeli:  
+  **Pokaż separatory wierszy procedury**  
+  Edytor tekstu wskazuje zakres visual procedur. Linia jest rysowana w plikach źródłowych .vb projektu w lokalizacjach, wymienione w poniższej tabeli:  
   
 |Lokalizacja w pliku źródłowym .vb|Przykład lokalizację wiersza|  
 |---------------------------------|------------------------------|  

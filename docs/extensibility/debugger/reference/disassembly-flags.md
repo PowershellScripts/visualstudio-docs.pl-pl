@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd1aa9c73fad40d07be371ad7f9b3108464aeb34
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f6d42a7c5e9247359abfcdb4d65db5a4e0de247e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916403"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
-Określa flagi dezasemblacji.  
+Określa flagi dla dezasemblacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -52,27 +52,27 @@ public enum enum_DISASSEMBLY_FLAGS {
   
 ## <a name="members"></a>Elementy członkowskie  
  DF_DOCUMENTCHANGE  
- Wskazuje, czy ta instrukcja znajduje się w innym dokumencie od poprzedniego.  
+ Wskazuje, że ta instrukcja znajduje się w innym dokumencie niż poprzednia.  
   
  DF_DISABLED  
  Wskazuje, że ta instrukcja nie zostanie wykonany.  
   
  DF_INSTRUCTION_ACTIVE  
- Wskazuje, że ta instrukcja jest jedną z następnej instrukcji do wykonania (może istnieć więcej niż jeden).  
+ Wskazuje, że tej instrukcji jest jednym z następnej instrukcji do wykonania (może istnieć więcej niż jeden).  
   
  DF_DATA  
- Wskazuje, że ta instrukcja jest naprawdę danych (nie kodu).  
+ Wskazuje, czy tej instrukcji jest naprawdę danych (nie kodzie).  
   
  DF_HASSOURCE  
- Wskazuje, czy ta instrukcja ma źródła. Instrukcje, takich jak kodu kolekcji profilowania lub odzyskiwanie, mieć nie odpowiadającego jej źródła.  
+ Wskazuje, że ta instrukcja ma źródła. Niektóre instrukcje, takich jak profilowania lub wyrzucania elementów kodu, ma nie odpowiadającego jej źródła.  
   
  DF_DOCUMENT_CHECKSUM  
- Oznacza to, że `bstrDocumentUrl` pole zawiera dane sumy kontrolnej adresem URL dokumentu. W sekcji uwag [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury sposób przechowywania danych sumy kontrolnej.  
+ Oznacza to, że `bstrDocumentUrl` pole zawiera dane sumy kontrolnej po adres URL dokumentu. Zobacz sekcję Spostrzeżenia, aby [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury przechowywania danych sumy kontrolnej.  
   
 ## <a name="remarks"></a>Uwagi  
  Używane jako `dwFlags` członkiem [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) struktury.  
   
- Te flagi mogą być łączone z bitowego `OR`.  
+ Te flagi mogą być łączone przy użyciu bitowego operatora `OR`.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  

@@ -13,21 +13,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f44264eace04475fc96e42b533a288ef87dd2c2b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758486"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891014"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Tworzenie prostej aplikacji danych przy użyciu pakietu ADO.NET
 
-Podczas tworzenia aplikacji, która obsługuje dane w bazie danych można wykonywać podstawowe zadania, takie jak definiowanie parametry połączenia, wstawiania danych i uruchamianie procedur składowanych. Wykonując w tym temacie, można wykryć jak wchodzić w interakcję z bazą danych z wewnątrz prostą aplikację "formularzy nad danymi" formularzy systemu Windows za pomocą Visual C# lub Visual Basic i ADO.NET.  Wszystkie technologie danych .NET — łącznie z zestawów danych LINQ do SQL i programu Entity Framework — ostatecznie wykonaj kroki, które są bardzo podobne do tych przedstawionych w tym artykule.
+Gdy tworzysz aplikację, która manipuluje danymi w bazie danych, wykonujesz podstawowe zadania, takie jak definiowania ciągów połączeń, wstawiania danych i uruchamianie przechowywanych procedur. Korzystając z tego tematu, można wykryć, jak korzystać z bazy danych z w ramach prostą aplikację "formularzy nad danymi" Windows Forms przy użyciu języka Visual C# lub Visual Basic i ADO.NET.  Wszystkie technologie danych .NET — w tym zestawy danych, LINQ to SQL i Entity Framework — ostatecznie wykonaj kroki, które są bardzo podobne do tych przedstawione w tym artykule.
 
- W tym artykule przedstawiono prosty sposób można pobrać danych z bazy danych w sposób, szybkie. Jeśli aplikacja wymaga do modyfikacji danych w sposób nieuproszczony i zaktualizować bazę danych, należy rozważyć przy użyciu programu Entity Framework i danych powiązanie formantów interfejsu użytkownika na zmiany w danych są synchronizowane automatycznie.
+W tym artykule przedstawiono prosty sposób pobrać dane z bazy danych w szybki sposób. Jeśli aplikacja musi modyfikować dane w sposób nietrywialnymi i aktualizują bazę danych, należy rozważyć używający narzędzia Entity Framework i korzystanie z danych powiązywanie kontrolek interfejsu użytkownika na zmiany w danych bazowych są synchronizowane automatycznie.
 
 > [!IMPORTANT]
-> Aby zachować prostego kodu, nie ma wśród nich obsługi wyjątków gotowe do produkcji.
+> W celu uproszczenia kodu nie zawiera obsługi wyjątków gotowych do produkcji.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
 
@@ -35,59 +35,59 @@ Aby utworzyć aplikację, będą potrzebne:
 
 -   Program Visual Studio.
 
--   SQL Server Express LocalDB. Jeśli nie masz programu SQL Server Express LocalDB, można zainstalować go z [strony pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
+-   SQL Server Express LocalDB. Jeśli nie masz programu SQL Server Express LocalDB, możesz zainstalować go z [stronę pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
-W tym temacie założono, że znasz podstawowych funkcji programu Visual Studio IDE i można utworzyć aplikacji formularzy systemu Windows, dodać formularzy do projektu, przycisków i innych formantów na formularzach, ustaw właściwości formantów i zdarzenia prostego kodu. Jeśli nie masz doświadczenia z tych zadań, zaleca się wykonanie [wprowadzenie do języka Visual C# i Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) tematu przed skorzystaniem z tego przewodnika.
+W tym temacie założono, że znasz podstawowe funkcje środowiska IDE programu Visual Studio i można utworzyć aplikacji Windows Forms, dodawać formularze do projektu, umieszczać przyciski i inne formanty w formularzach, ustaw właściwości kontrolek i kodować proste zdarzenia. Jeśli nie masz doświadczenia z tych zadań, zalecamy wykonanie [wprowadzenie do wizualizacji C# i Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) tematu przed rozpoczęciem tego instruktażu.
 
 ## <a name="set-up-the-sample-database"></a>Konfigurowanie przykładowej bazy danych
 
-Tworzenie przykładowej bazy danych, wykonaj następujące czynności:
+Tworzenie przykładowej bazy danych, wykonując następujące czynności:
 
-1. W programie Visual Studio Otwórz **Eksploratora serwera** okna.
+1. W programie Visual Studio, otwórz **Eksploratora serwera** okna.
 
-2. Kliknij prawym przyciskiem myszy **połączenia danych** i wybierz polecenie **Tworzenie nowej bazy danych SQL Server**.
+2. Kliknij prawym przyciskiem myszy **połączeń danych** i wybierz polecenie **Tworzenie nowej bazy danych SQL Server**.
 
-3. W **nazwy serwera** tekst wprowadź **(localdb) \mssqllocaldb**.
+3. W **nazwy serwera** tekstu wprowadź **(localdb) \mssqllocaldb**.
 
-4. W **nowej nazwy bazy danych** tekst wprowadź **sprzedaży**, a następnie wybierz **OK**.
+4. W **nazwę nowej bazy danych** tekstu wprowadź **sprzedaży**, następnie wybierz **OK**.
 
-     Pustych **sprzedaży** bazy danych jest tworzony i dodawany do węzła połączenia danych w Eksploratorze serwera.
+     Pusty **sprzedaży** bazy danych zostanie utworzony i dodany do węzła połączenia danych w Eksploratorze serwera.
 
-5. Kliknij prawym przyciskiem myszy **sprzedaży** połączenie danych i wybierz **nowe zapytanie**.
+5. Kliknij prawym przyciskiem myszy **sprzedaży** połączenia danych i wybierz pozycję **nowe zapytanie**.
 
      Zostanie otwarte okno edytora zapytań.
 
-6. Kopiuj [skryptu sprzedaży języka Transact-SQL](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql) do Schowka.
+6. Kopiuj [sprzedaży języka Transact-SQL skrypt](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql) do Schowka.
 
-7. Wkleić skryptu T-SQL w edytorze zapytań, a następnie wybierz pozycję **Execute** przycisku.
+7. Wklej skrypt języka T-SQL do edytora zapytań, a następnie wybierz **Execute** przycisku.
 
-     Po pewnym czasie zakończeniu zapytania i są tworzone obiekty bazy danych. Baza danych zawiera dwie tabele: klienta oraz zleceń. Te tabele nie zawierają danych początkowo, ale możesz dodać dane po uruchomieniu aplikacji, które zostaną utworzone. Baza danych zawiera również czterech prostych procedur składowanych.
+     Po przez krótki czas odliczania zapytanie, a następnie są tworzone obiekty bazy danych. Baza danych zawiera dwie tabele: klienta i zamówień. Te tabele zawierają początkowo żadnych danych, ale możesz dodać dane po uruchomieniu aplikacji, który utworzysz. Baza danych zawiera również czterech prostych przechowywanych procedur.
 
-## <a name="create-the-forms-and-add-controls"></a>Utwórz formularze i Dodaj formanty
+## <a name="create-the-forms-and-add-controls"></a>Tworzenie formularzy i dodawanie formantów
 
-1.  Utwórz projekt aplikacji formularzy systemu Windows i nadaj mu nazwę **SimpleDataApp**.
+1. Utwórz projekt dla aplikacji Windows Forms i nadaj mu nazwę **SimpleDataApp**.
 
-     Program Visual Studio tworzy projekt i kilka plików, w tym pusty formularz systemu Windows o nazwie **Form1**.
+    Program Visual Studio tworzy projekt i kilka plików, w tym pusty formularz Windows o nazwie **Form1**.
 
-2.  Dodaj dwa formularze systemu Windows do projektu, aby miała trzy formularzy, a następnie nadaj im następujące nazwy:
+2. Dodaj dwie formy Windows do projektu tak, że ma trzy formy, a następnie nadaj im następujące nazwy:
 
-    -   **Nawigacja**
+   -   **Nawigacja**
 
-    -   **NewCustomer**
+   -   **NewCustomer**
 
-    -   **FillOrCancel**
+   -   **FillOrCancel**
 
-3.  Dla każdego formularza Dodaj pola tekstowe, przycisków i innych kontrolek, które pojawiają się na poniższych ilustracjach. Dla każdego formantu można ustawić właściwości, które w tabelach opisano.
+3. Dla każdego formularza należy dodać pola tekstowe, przyciski i inne formanty, które pojawiają się na poniższych ilustracjach. Dla każdego formantu należy ustawić właściwości opisywane przez tabele.
 
-    > [!NOTE]
-    >  Pole grupy i formantów etykiet, Dodaj przejrzystości, ale nie są używane w kodzie.
+   > [!NOTE]
+   > Formanty etykiety i pole grupy zwiększają przejrzystość, ale nie są używane w kodzie.
 
- **Formularz nawigacji**
+   **Formularz nawigacji**
 
- ![Okno dialogowe nawigacji](../data-tools/media/simpleappnav.png)
+   ![Okno dialogowe nawigacji](../data-tools/media/simpleappnav.png)
 
 |Formanty formularza nawigacji|Właściwości|
-|--------------------------------------|----------------|
+| - |----------------|
 |Przycisk|Nazwa = btnGoToAdd|
 |Przycisk|Name = btnGoToFillOrCancel|
 |Przycisk|Nazwa = btnExit|
@@ -97,87 +97,87 @@ Tworzenie przykładowej bazy danych, wykonaj następujące czynności:
  ![Dodawanie nowego klienta i złóż zamówienie](../data-tools/media/simpleappnewcust.png)
 
 |Formanty formularza NewCustomer|Właściwości|
-|---------------------------------------|----------------|
+| - |----------------|
 |TextBox|Nazwa = txtCustomerName|
-|TextBox|Nazwa = txtCustomerID<br /><br /> ReadOnly = True|
+|TextBox|Nazwa = txtCustomerID<br /><br /> ReadOnly = PRAWDA|
 |Przycisk|Nazwa = btnCreateAccount|
-|NumericUpdown|DecimalPlaces = 0<br /><br /> Maksymalna = 5000<br /><br /> Nazwa = numOrderAmount|
-|Element DateTimePicker|Format = krótki<br /><br /> Nazwa = dtpOrderDate|
+|NumericUpdown|MiejscaDziesiętne = 0<br /><br /> Maksymalna = 5000<br /><br /> Nazwa = numOrderAmount|
+|DateTimePicker|Format = krótki<br /><br /> Nazwa = dtpOrderDate|
 |Przycisk|Nazwa = btnPlaceOrder|
 |Przycisk|Nazwa = btnAddAnotherAccount|
 |Przycisk|Nazwa = btnAddFinish|
 
  **Formularz FillOrCancel**
 
- ![Wypełnij lub Anuluj zlecenia](../data-tools/media/simpleappcancelfill.png)
+ ![Wypełnij lub Anuluj zamówienia](../data-tools/media/simpleappcancelfill.png)
 
 |Formanty formularza FillOrCancel|Właściwości|
-|----------------------------------------|----------------|
+| - |----------------|
 |TextBox|Nazwa = txtOrderID|
 |Przycisk|Nazwa = btnFindByOrderID|
-|Element DateTimePicker|Format = krótki<br /><br /> Nazwa = dtpFillDate|
-|Formant DataGridView|Nazwa = dgvCustomerOrders<br /><br /> ReadOnly = True<br /><br /> RowHeadersVisible = False|
+|DateTimePicker|Format = krótki<br /><br /> Nazwa = dtpFillDate|
+|DataGridView|Nazwa = dgvCustomerOrders<br /><br /> ReadOnly = PRAWDA<br /><br /> RowHeadersVisible = False|
 |Przycisk|Nazwa = btnCancelOrder|
 |Przycisk|Nazwa = btnFillOrder|
 |Przycisk|Nazwa = btnFinishUpdates|
 
-## <a name="store-the-connection-string"></a>Przechowywanie parametrów połączenia
- Gdy aplikacja próbuje otworzyć połączenia z bazą danych, aplikacja musi mieć dostęp do ciągu połączenia. Aby uniknąć wprowadzenia ciąg ręcznie na każdym formularzu, przechowywanie ciągów w *App.config* pliku w projekcie i Tworzenie metody, która zwraca ciąg, gdy metoda jest wywoływana z dowolnego formularza w aplikacji.
+## <a name="store-the-connection-string"></a>Store parametry połączenia
+ Gdy Twoja aplikacja próbuje otworzyć połączenie z bazą danych, aplikacja musi mieć dostęp do parametrów połączenia. Aby uniknąć wpisywania ciągu ręcznie w każdym formularzu, Przechowaj ciąg w *App.config* plik w projekcie i Utwórz metodę, która zwraca ciąg, gdy metoda jest wywoływana z jakiegokolwiek formularza w aplikacji.
 
- Parametry połączenia można znaleźć, klikając prawym przyciskiem myszy **sprzedaży** połączenia danych w **Eksploratora serwera** i wybierając polecenie **właściwości**. Zlokalizuj **ConnectionString** właściwości, następnie użyć **Ctrl**+**A**, **Ctrl**+**C**  zaznacz i skopiuj ciąg do Schowka.
+ Parametry połączenia można znaleźć, klikając prawym przyciskiem myszy **sprzedaży** połączenia danych w **Eksploratora serwera** i wybierając pozycję **właściwości**. Znajdź **ConnectionString** właściwości, następnie za pomocą **Ctrl**+**A**, **Ctrl**+**C**  zaznacz i skopiuj ciąg do Schowka.
 
-1.  Jeśli używasz C# w **Eksploratora rozwiązań**, rozwiń węzeł **właściwości** węzła w ramach projektu, a następnie otwórz **Settings.settings** pliku.
+1.  Jeśli używasz C#w **Eksploratora rozwiązań**, rozwiń węzeł **właściwości** węzła w ramach projektu, a następnie otwórz **Settings.settings** pliku.
     Jeśli używasz języka Visual Basic w **Eksploratora rozwiązań**, kliknij przycisk **Pokaż wszystkie pliki**, rozwiń węzeł **mój projekt** węzeł, a następnie otwórz **Settings.settings** pliku.
 
 2.  W **nazwa** kolumny, wprowadź `connString`.
 
-3.  W **typu** listy, wybierz **(parametry połączenia)**.
+3.  W **typu** listy wybierz **(parametry połączenia)**.
 
-4.  W **zakres** listy, wybierz **aplikacji**.
+4.  W **zakres** listy wybierz **aplikacji**.
 
-5.  W **wartość** kolumny, wprowadź ciąg połączenia (bez żadnych poza cudzysłowów), a następnie zapisz zmiany.
+5.  W **wartość** kolumny, wprowadź parametry połączenia (bez żadnego poza cudzysłowy), a następnie zapisz zmiany.
 
 > [!NOTE]
-> W rzeczywistej aplikacji, należy przechowywać parametry połączenia bezpiecznego, zgodnie z opisem w [parametry połączenia i pliki konfiguracyjne](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).
+> W rzeczywistej aplikacji, należy przechowywać parametry połączenia bezpieczne, zgodnie z opisem w [parametry połączenia i pliki konfiguracyjne](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).
 
 ##  <a name="write-the-code-for-the-forms"></a>Pisanie kodu dla formularzy
 
-Ta sekcja zawiera krótkie omówienia działania każdego formularza. Umożliwia także kod, który definiuje podstawowej logiki, gdy kliknięto przycisk w formularzu.
+Ta sekcja zawiera krótki przegląd informacji na temat działania każdego formularza. Zapewnia również kod, który definiuje podstawowej logiki po kliknięciu przycisku w formularzu.
 
 ### <a name="navigation-form"></a>Formularz nawigacji
 
-Formularz nawigacji zostanie otwarte po uruchomieniu aplikacji. **Dodaj konto** przycisk otwiera NewCustomer formularza. **Wypełnienia lub anulowania zamówienia** przycisk otwiera FillOrCancel formularza. **Zakończenia** kliknięcie przycisku powoduje zamknięcie aplikacji.
+Formularz nawigacji otwiera się po uruchomieniu aplikacji. **Dodaj konto** przycisk służy do otwierania formularza NewCustomer. **Realizuj lub Anuluj zamówienia** przycisk służy do otwierania formularza FillOrCancel. **Zakończenia** przycisk zamyka aplikację.
 
-#### <a name="make-the-navigation-form-the-startup-form"></a>Umożliwiają tworzą formularz startowy
+#### <a name="make-the-navigation-form-the-startup-form"></a>Wykonaj formularz początkowy formularz nawigacji
 
-Jeśli używasz C# w **Eksploratora rozwiązań**, otwórz **Program.cs**, a następnie zmień `Application.Run` wiersza do tego: `Application.Run(new Navigation());`
+Jeśli używasz C#w **Eksploratora rozwiązań**, otwórz **Program.cs**, a następnie zmień `Application.Run` wiersz do tego: `Application.Run(new Navigation());`
 
-Jeśli używasz języka Visual Basic w **Eksploratora rozwiązań**, otwórz **właściwości** wybierz **aplikacji** , a następnie wybierz  **SimpleDataApp.Navigation** w **formularz startowy** listy.
+Jeśli używasz języka Visual Basic w **Eksploratora rozwiązań**, otwórz **właściwości** wybierz **aplikacji** , a następnie wybierz pozycję  **SimpleDataApp.Navigation** w **formularz początkowy** listy.
 
-#### <a name="create-auto-generated-event-handlers"></a>Tworzenie obsługi zdarzeń generowanych automatycznie
+#### <a name="create-auto-generated-event-handlers"></a>Tworzenie programów do obsługi automatycznego generowania zdarzeń
 
-Kliknij dwukrotnie trzy przyciski nawigacji formularza można utworzyć metody obsługi zdarzeń pusta. Dwukrotne kliknięcie przycisków dodaje również automatycznie wygenerowany kod w pliku kodu projektanta, który umożliwia kliknij przycisk wywołać zdarzenie.
+Kliknij dwukrotnie trzech przycisków w formularzu nawigacji, aby utworzyć metody obsługi zdarzeń puste. Dwukrotne kliknięcie przycisków oferuje również automatycznie wygenerowany kod, plik kodu projektanta, który umożliwia kliknięcia przycisku wywołać zdarzenie.
 
 #### <a name="add-code-for-the-navigation-form-logic"></a>Dodaj kod logiki formularza nawigacji
 
-Na stronie kodu formularza nawigacji pełną treść metody dla trzech przycisku kliknięcie uchwytów zdarzeń jak pokazano w poniższym kodzie.
+Na stronie kodowej formularza nawigacji pełną treść metody dla trzech przycisku kliknij obsługi zdarzeń jak pokazano w poniższym kodzie.
 
 [!code-csharp[Navigation#1](../data-tools/codesnippet/CSharp/SimpleDataApp/Navigation.cs#1)]
 [!code-vb[Navigation#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/Navigation.vb#1)]
 
 ### <a name="newcustomer-form"></a>Formularz NewCustomer
 
-Gdy wprowadź nazwę klienta, a następnie wybierz **Utwórz konto** przycisk, formularz NewCustomer tworzy konto klienta, a program SQL Server zwraca wartość tożsamości jako nowego identyfikatora klienta. Można zdefiniować kolejność dla nowego konta przez określenie kwotę i dat zamówienia i wybierając **złóż zamówienie** przycisku.
+Kiedy wpisujesz nazwę klienta, a następnie wybierz pozycję **Utwórz konto** przycisk, formularz NewCustomer tworzy konto klienta, a program SQL Server zwraca wartość IDENTITY jako nowy identyfikator klienta. Następnie można złożyć zamówienia na nowe konto, określając wielkość i datę zamówienia i wybierając **złóż zamówienie** przycisku.
 
-#### <a name="create-auto-generated-event-handlers"></a>Tworzenie obsługi zdarzeń generowanych automatycznie
+#### <a name="create-auto-generated-event-handlers"></a>Tworzenie programów do obsługi automatycznego generowania zdarzeń
 
-Utwórz pusty kliknij program obsługi zdarzeń dla każdego przycisku w formularzu NewCustomer przez dwukrotne kliknięcie na każdej z czterech przycisków. Dwukrotne kliknięcie przycisków dodaje również automatycznie wygenerowany kod w pliku kodu projektanta, który umożliwia kliknij przycisk wywołać zdarzenie.
+Utwórz puste kliknij obsługi zdarzeń dla każdego przycisku w formularzu NewCustomer przez dwukrotne kliknięcie na każdym z czterech przycisków. Dwukrotne kliknięcie przycisków oferuje również automatycznie wygenerowany kod, plik kodu projektanta, który umożliwia kliknięcia przycisku wywołać zdarzenie.
 
-#### <a name="add-code-for-the-newcustomer-form-logic"></a>Dodaj kod NewCustomer logiki formularza
+#### <a name="add-code-for-the-newcustomer-form-logic"></a>Dodaj kod logiki formularza NewCustomer
 
-Aby ukończyć logiki formularza NewCustomer, wykonaj następujące kroki.
+Aby wykonać logikę formularz NewCustomer, wykonaj następujące kroki.
 
-1. Przełącz `System.Data.SqlClient` przestrzeni nazw w zakresie, dzięki czemu nie trzeba pełni kwalifikuje się nazwy jej elementów członkowskich.
+1. Przenieś `System.Data.SqlClient` przestrzeni nazw do zakresu, aby nie trzeba było w pełni kwalifikowania nazwy składowych.
 
      ```csharp
      using System.Data.SqlClient;
@@ -186,29 +186,29 @@ Aby ukończyć logiki formularza NewCustomer, wykonaj następujące kroki.
      Imports System.Data.SqlClient
      ```
 
-2. Dodaj niektóre zmienne i metody pomocnicze do klasy, jak pokazano w poniższym kodzie.
+2. Dodaj niektóre zmienne i metody pomocnika do klasy, jak pokazano w poniższym kodzie.
 
      [!code-csharp[NewCustomer#1](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#1)]
      [!code-vb[NewCustomer#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#1)]
 
-3. Pełna treść metody dla przycisku cztery kliknięcie uchwytów zdarzeń jak pokazano w poniższym kodzie.
+3. Pełne procedury obsługi zdarzeń kliknij treści metod dla czterech przycisku, jak pokazano w poniższym kodzie.
 
      [!code-csharp[NewCustomer#2](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#2)]
      [!code-vb[NewCustomer#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#2)]
 
 ### <a name="fillorcancel-form"></a>Formularz FillOrCancel
 
-Formularz FillOrCancel przeprowadza kwerendę zwracane kolejności w przypadku wprowadź identyfikator zamówienia, a następnie kliknij przycisk **znaleźć kolejności** przycisku. Wiersz zwrócony zostanie wyświetlony w siatce danych tylko do odczytu. Możesz oznaczyć kolejności jak anulowane (X) w przypadku wybrania **anulowania zamówienia** przycisku, lub można określić kolejność wypełniony (F) w przypadku wybrania **wypełnienia kolejności** przycisku. W przypadku wybrania **znaleźć kolejności** przycisk ponownie, pojawi się zaktualizowany wiersz.
+Formularz FillOrCancel uruchamia zapytanie do zwrotu zamówienia, gdy wprowadzasz identyfikator zamówienia, a następnie kliknij przycisk **Znajdź zamówienie** przycisku. Zwracany wiersz wyświetla się w siatce danych tylko do odczytu. Możesz oznaczyć porządek jako anulowany (X), jeśli zostanie wybrana **Anuluj porządek** przycisku, lub możesz oznaczyć porządek jako wypełniony (F) po wybraniu **Wypełnij porządek** przycisku. Jeśli wybierzesz **Znajdź zamówienie** przycisk ponownie, pojawi się uaktualniony wiersz.
 
-#### <a name="create-auto-generated-event-handlers"></a>Tworzenie obsługi zdarzeń generowanych automatycznie
+#### <a name="create-auto-generated-event-handlers"></a>Tworzenie programów do obsługi automatycznego generowania zdarzeń
 
-Utwórz pusty kliknięcie uchwytów zdarzeń czterech przycisków w formularzu FillOrCancel przez dwukrotne kliknięcie przycisków. Dwukrotne kliknięcie przycisków dodaje również automatycznie wygenerowany kod w pliku kodu projektanta, który umożliwia kliknij przycisk wywołać zdarzenie.
+Utwórz puste kliknij obsługi zdarzeń dla czterech przycisków w formularzu FillOrCancel przez dwukrotne kliknięcie przycisków. Dwukrotne kliknięcie przycisków oferuje również automatycznie wygenerowany kod, plik kodu projektanta, który umożliwia kliknięcia przycisku wywołać zdarzenie.
 
-#### <a name="add-code-for-the-fillorcancel-form-logic"></a>Dodaj kod FillOrCancel logiki formularza
+#### <a name="add-code-for-the-fillorcancel-form-logic"></a>Dodaj kod logiki formularza FillOrCancel
 
-Aby ukończyć logiki formularza FillOrCancel, wykonaj następujące kroki.
+Aby wykonać logikę formularza FillOrCancel, wykonaj następujące kroki.
 
-1. Przełącz następujące dwie przestrzenie nazw w zakresie, dzięki czemu nie trzeba do pełnej kwalifikacji nazwy ich elementy członkowskie.
+1. Przenieś następujące dwie przestrzenie nazw do zakresu, dzięki czemu nie trzeba do pełnej kwalifikacji nazwy przez nie składowe.
 
      ```csharp
      using System.Data.SqlClient;
@@ -219,19 +219,19 @@ Aby ukończyć logiki formularza FillOrCancel, wykonaj następujące kroki.
      Imports System.Text.RegularExpressions
      ```
 
-2. Dodaj metodę zmienną i pomocnika do klasy, jak pokazano w poniższym kodzie.
+2. Dodaj zmienną i pomocnika metodę do klasy, jak pokazano w poniższym kodzie.
 
      [!code-csharp[FillOrCancel#1](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#1)]
      [!code-vb[FillOrCancel#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#1)]
 
-3. Pełna treść metody dla przycisku cztery kliknięcie uchwytów zdarzeń jak pokazano w poniższym kodzie.
+3. Pełne procedury obsługi zdarzeń kliknij treści metod dla czterech przycisku, jak pokazano w poniższym kodzie.
 
      [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]
      [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]
 
 ## <a name="test-your-application"></a>Testowanie aplikacji
 
-Wybierz **F5** klucz do tworzenia i testowania aplikacji po kodu każdego kliknij program obsługi zdarzeń, a następnie po Zakończ kodowania.
+Wybierz **F5** klucz, aby skompilować i przetestować aplikację po zakodowaniu każdej obsługi zdarzenia Click, a następnie po zakończenia kodowania.
 
 ## <a name="see-also"></a>Zobacz także
 

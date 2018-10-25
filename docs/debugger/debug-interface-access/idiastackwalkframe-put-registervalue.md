@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkFrame::put_registerValue | Dokumentacja firmy Microsoft
+title: Idiastackwalkframe::put_registervalue — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a2188b412572b69abcf8bd3966c66e93d98ae2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 554be793ba1e41a5a8540d67c1b3f0585ad8664e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464167"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916396"
 ---
 # <a name="idiastackwalkframeputregistervalue"></a>IDiaStackWalkFrame::put_registerValue
 Ustawia wartość rejestru.  
@@ -41,8 +41,8 @@ HRESULT put_registerValue (
  [in] Nowa wartość rejestru.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiastackwalkframe —](../../debugger/debug-interface-access/idiastackwalkframe.md)   
- [Cv_hreg_e — wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md)
+ [CV_HREG_e, wyliczenie](../../debugger/debug-interface-access/cv-hreg-e.md)

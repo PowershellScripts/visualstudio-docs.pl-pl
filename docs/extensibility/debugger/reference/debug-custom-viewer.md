@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d8bdc7a4ea9ac59ee0956226618402b397844b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e86cae45298b3f137e2ebca65fa8c531c6d86457
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109993"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908447"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
-Struktura, która identyfikuje podglądu niestandardowego lub wpisz wizualizatora.  
+Struktura, która identyfikuje podglądu niestandardowego lub typu wizualizatora.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,25 +51,25 @@ public struct DEBUG_CUSTOM_VIEWER {
   
 ## <a name="members"></a>Elementy członkowskie  
  dwID  
- Identyfikator możesz rozróżnić wiele przeglądarek lub wizualizatorów zaimplementowana przez jedną `GUID`.  
+ Identyfikator, aby odróżnić wiele osób przeglądających lub wizualizatorów implementowane za pomocą jednej `GUID`.  
   
  bstrMenuName  
  Tekst, który będzie wyświetlany w menu rozwijanym.  
   
  bstrDescription  
- Opis podglądu niestandardowego lub typ wizualizatora (musi być wartością null, jeśli nie jest używany).  
+ Opis podglądu niestandardowego lub Wizualizator typów (musi być wartością null Jeśli nie są używane).  
   
  guidLang  
- Język udostępnienie ewaluatora wyrażenia.  
+ Język dostarczanie Ewaluator wyrażeń.  
   
  guidVendor  
- Dostawca udostępnienie ewaluatora wyrażenia.  
+ Dostawca dostarczanie Ewaluator wyrażeń.  
   
  bstrMetric  
- Metryki, pod którym podglądu niestandardowego lub typ wizualizatora `CLSID` jest przechowywany.  
+ Metryki w ramach której przeglądarka niestandardowa lub typu wizualizatora `CLSID` są przechowywane.  
   
 ## <a name="remarks"></a>Uwagi  
- Lista ta struktura jest zwracany przez wywołanie do [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) — metoda (i przez rozszerzenie, [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) metody).  
+ Lista ta struktura jest zwracany przez wywołanie [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) — metoda (a w konsekwencji, [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) metody).  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -79,6 +79,6 @@ public struct DEBUG_CUSTOM_VIEWER {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

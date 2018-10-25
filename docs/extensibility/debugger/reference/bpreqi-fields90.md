@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef4363b210fff059a88f80bd7377d91971ef2bce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3412b0a27704ec0ddd3d77f296b3fa73976bf359
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903169"
 ---
 # <a name="bpreqifields90"></a>BPREQI_FIELDS90
-Wylicza prawidłowe wartości, które określają informacje mają być pobrane żądanie przerwania. To wyliczenie rozszerza [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) wyliczenia.  
+Wylicza prawidłowe wartości, które określają informacje do pobrania dotyczące żądania punktu przerwania. To wyliczenie rozszerza [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -99,13 +99,13 @@ public enum enum_BPREQI_FIELDS90
  Inicjowanie lub użyj `bpPassCount` pole `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.  
   
  BPREQI90_CONDITION  
- Inicjowanie lub użyj `bpCondition` pola (warunku punktu przerwania) `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.  
+ Inicjowanie lub użyj `bpCondition` pola (warunek punktu przerwania) `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.  
   
  BPREQI90_FLAGS  
  Inicjowanie lub użyj `dwFlags` pole `BP_REQUEST_INFO` lub `BP_REQUEST_INFO2` struktury.  
   
  BPREQI90_ALLOLDFIELDS  
- Inicjowanie lub użyj wszystkie pola z `BP_REQUEST_INFO` struktury.  
+ Inicjowanie lub użyj wszystkich pól z `BP_REQUEST_INFO` struktury.  
   
  BPREQI90_VENDOR  
  Inicjowanie lub użyj `guidVendor` pole `BP_REQUEST_INFO2` struktury.  
@@ -120,7 +120,7 @@ public enum enum_BPREQI_FIELDS90
  Inicjowanie lub użyj `bstrMacroTracepoint` pole `BP_REQUEST_INFO2` struktury. BPREQI_ALLFIELDS nie zawiera tego pola.  
   
  BPREQI90_ALLFIELDS  
- Określa wszystkie pola `BP_REQUEST_INFO2` struktury.  
+ Określa wszystkie pola dla `BP_REQUEST_INFO2` struktury.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: Msdbg90.h  

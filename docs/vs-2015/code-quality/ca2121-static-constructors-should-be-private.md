@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9425cabbc024e445df97d9b909f1803b7a972571
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 24fcd6970d368bfee739e47f9b7e0407f5cd6307
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267322"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918548"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121: Konstruktory statyczne powinny być prywatne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|StaticConstructorsShouldBePrivate|
@@ -47,11 +48,11 @@ ms.locfileid: "49267322"
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Naruszenia zwykle są spowodowane przez jedną z następujących czynności:
 
--   Zdefiniowany Konstruktor statyczny dla danego typu i nie wykonał on prywatnych.
+- Zdefiniowany Konstruktor statyczny dla danego typu i nie wykonał on prywatnych.
 
--   Kompilator języka programowania dodany statyczny Konstruktor do typu, a nie wykonał on prywatnych.
+- Kompilator języka programowania dodany statyczny Konstruktor do typu, a nie wykonał on prywatnych.
 
- Aby rozwiązać pierwszy rodzaj naruszenie, upewnij konstruktora statycznego prywatnego. Aby rozwiązać drugi rodzaj, Dodaj Konstruktor statyczny prywatny do danego typu.
+  Aby rozwiązać pierwszy rodzaj naruszenie, upewnij konstruktora statycznego prywatnego. Aby rozwiązać drugi rodzaj, Dodaj Konstruktor statyczny prywatny do danego typu.
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Nie pomijaj te naruszenia. Jeśli projekt oprogramowania wymaga jawnym wywołaniem statyczny Konstruktor, jest prawdopodobne, że projekt zawiera poważne wady i powinna zostać przejrzana pod.

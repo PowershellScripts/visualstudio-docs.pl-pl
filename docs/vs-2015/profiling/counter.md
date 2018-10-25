@@ -14,23 +14,23 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd2fe9a025c4499b35c4d8aaea581c5242c00b65
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f2e702689e0261012693db47a2743f4c3e58067
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186748"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902246"
 ---
 # <a name="counter"></a>Licznik
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Licznika** opcji zbiera dane z liczników wydajności procesora (sprzęt).  
   
--   Gdy używana jest metoda profilowania próbkowanie **licznika** Określa licznik wydajności na układ i liczbę zdarzeń licznika do użycia jako interwał próbkowania. Można określić tylko jeden licznik, korzystając z próbkowania.  
+- Gdy używana jest metoda profilowania próbkowanie **licznika** Określa licznik wydajności na układ i liczbę zdarzeń licznika do użycia jako interwał próbkowania. Można określić tylko jeden licznik, korzystając z próbkowania.  
   
--   Gdy używana jest metoda profilowania Instrumentacja, liczbę zdarzeń licznika, które wystąpiły w przedziale między zdarzeniami poprzedni i bieżącej kolekcji są wyświetlane jako oddzielne pola w raportach profilera. Wiele **licznika** opcji można określić, gdy używasz instrumentacji.  
+- Gdy używana jest metoda profilowania Instrumentacja, liczbę zdarzeń licznika, które wystąpiły w przedziale między zdarzeniami poprzedni i bieżącej kolekcji są wyświetlane jako oddzielne pola w raportach profilera. Wiele **licznika** opcji można określić, gdy używasz instrumentacji.  
   
- Każdy typ procesora ma swój własny zestaw liczników wydajności sprzętu. Program profilujący definiuje zestaw liczników ogólnych problemów z wydajnością, które są wspólne dla prawie wszystkich procesorów. Aby wyświetlić listę liczników ogólnych i specyficznych dla procesora na komputerze, należy użyć narzędzia VSPerfCmd **QueryCounters** polecenia.  
+  Każdy typ procesora ma swój własny zestaw liczników wydajności sprzętu. Program profilujący definiuje zestaw liczników ogólnych problemów z wydajnością, które są wspólne dla prawie wszystkich procesorów. Aby wyświetlić listę liczników ogólnych i specyficznych dla procesora na komputerze, należy użyć narzędzia VSPerfCmd **QueryCounters** polecenia.  
   
 ## <a name="syntax"></a>Składnia  
   

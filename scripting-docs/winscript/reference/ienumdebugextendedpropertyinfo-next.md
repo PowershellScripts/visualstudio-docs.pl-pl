@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 343620e4539e9d095f2708ab46077ee0dafd1932
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 57cb567926f92c77f52a339fa2fecd7a315bd1b6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794548"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893627"
 ---
 # <a name="ienumdebugextendedpropertyinfonext"></a>IEnumDebugExtendedPropertyInfo::Next
-Pobiera określoną liczbę`ExtendedDebugPropertyInfo` struktury w kolejności wyliczenia.  
+Pobiera określoną liczbę`ExtendedDebugPropertyInfo` struktur w kolejności wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,14 +43,14 @@ HRESULT Next (
  [in] Liczba `ExtendedDebugPropertyInfo`struktur, które mają zostać pobrane.  
   
  `rgelt`  
- [out] Tablica `ExtendedDebugPropertyInfo` pobrać struktury.  
+ [out] Tablica `ExtendedDebugPropertyInfo` struktury pobierane.  
   
  `pceltFetched`  
- [out] Liczba `ExtendedDebugPropertyInfo` struktury faktycznie pobrany.  
+ [out] Liczba `ExtendedDebugPropertyInfo` struktury faktycznego pobrania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zwykle `S_OK`.  
+ Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IEnumDebugExtendedPropertyInfo](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
- [Struktura ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)
+ [ExtendedDebugPropertyInfo, struktura](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

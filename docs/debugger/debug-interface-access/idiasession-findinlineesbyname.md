@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2551e68e2563570d4b72df2438bd747da36e59ac
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 47d01237d7e2235f2d50e82a8fd599384e930d2c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896266"
 ---
 # <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
-Pobiera wyliczenie umożliwia klientowi iterację informacja o numerach wierszy wszystkich funkcji śródwierszowych, zgodne określonej nazwy.  
+Pobiera wyliczenie, które umożliwia klientowi do iterowania po informacje o numerze wiersza wszystkich funkcji śródwierszowych, które odpowiadają określonej nazwie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,16 +34,16 @@ HRESULT findInlineesByName (
   
 #### <a name="parameters"></a>Parametry  
  `name`  
- [in] Nazwa do użycia na potrzeby porównania.  
+ [in] Określa nazwę do użycia dla porównania.  
   
  `option`  
- [in] Określa opcje porównania stosowane do wyszukiwania nazwy. Wartości z [namesearchoptions — wyliczenie](../../debugger/debug-interface-access/namesearchoptions.md) wyliczenie można samodzielnie lub w połączeniu.  
+ [in] Określa opcje porównywania stosowane do wyszukiwania nazwy. Wartości z kolekcji [namesearchoptions — wyliczenie](../../debugger/debug-interface-access/namesearchoptions.md) wyliczenia można samodzielnie lub w połączeniu.  
   
  `ppResult`  
- [out] Zwraca [idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md) obiekt, który zawiera listę numerów wierszy, które zostały pobrane.  
+ [out] Zwraca [idiaenumlinenumbers —](../../debugger/debug-interface-access/idiaenumlinenumbers.md) obiektu, który zawiera listę numerów wierszy, które zostały pobrane.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   

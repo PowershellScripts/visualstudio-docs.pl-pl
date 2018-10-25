@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15b41cc5ff9f60143cdbf006005358cb86eb7f30
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d0af1607d8352b158c28248fc4bd85ed0fbaf7b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908644"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 Tworzy obiekt przy użyciu konstruktora.  
@@ -47,24 +47,24 @@ int CreateObject(
   
 #### <a name="parameters"></a>Parametry  
  `pConstructor`  
- [in] [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) obiekt reprezentujący Konstruktor obiektu, który ma zostać utworzony.  
+ [in] [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) obiekt reprezentujący konstruktora obiektu, który ma zostać utworzony.  
   
  `dwArgs`  
- [in] Liczba parametrów w `pArg` tablicy. Przedstawia liczbę parametrów przekazanych do konstruktora.  
+ [in] Liczba parametrów w `pArg` tablicy. Reprezentuje liczbę parametrów przekazanych do konstruktora.  
   
  `pArg`  
- [in] Tablica [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekty reprezentujące parametry przekazany do konstruktora.  
+ [in] Tablica [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekty reprezentujące parametry przekazywane do konstruktora.  
   
  `ppObject`  
  [out] Zwraca `IDebugObject` reprezentujący nowo utworzony obiekt.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wywołanie tej metody, aby utworzyć obiekt, który reprezentuje wystąpienie klasy (lub inne typ złożony, który wymaga konstruktora) czyli parametr do funkcji, która jest reprezentowana przez [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfejsu.  
+ Wywołaj tę metodę, aby utworzyć obiekt, który reprezentuje wystąpienie klasy (lub inne typ złożony, który wymaga konstruktora) oznacza to parametr do funkcji, która jest reprezentowana przez [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interfejsu.  
   
- Jeśli parametr obiektu nie wymaga konstruktora, wywołanie [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) metody.  
+ Jeśli parametr obiektu, nie wymaga konstruktora, wywołaj [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)   

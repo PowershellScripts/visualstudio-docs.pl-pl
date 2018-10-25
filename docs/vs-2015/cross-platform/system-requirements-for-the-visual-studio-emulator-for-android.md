@@ -13,12 +13,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 819f64b9d526cc307f0f9fbd0a35db5d4e7bd1ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a566a6aa73ef9b1e3729248b14b0f3879f21d21c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176569"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898781"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Wymagania systemowe dotyczące emulatora programu Visual Studio dla systemu Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,76 +50,76 @@ Visual Studio Emulator for Android działa jako maszyna wirtualna funkcji Hyper-
   
  Wymagania systemowe  
   
--   Obsługa funkcji Hyper-V (zobacz poniższe wymagania funkcji Hyper-V)  
+- Obsługa funkcji Hyper-V (zobacz poniższe wymagania funkcji Hyper-V)  
   
--   6 GB lub więcej pamięci RAM.  
+- 6 GB lub więcej pamięci RAM.  
   
--   64-bitowej wersji Pro w wersji Windows10 systemu Windows 8, Windows 8.1 lub nowszy  
+- 64-bitowej wersji Pro w wersji Windows10 systemu Windows 8, Windows 8.1 lub nowszy  
   
--   Procesor obsługujący instrukcji SSSE3 lub nowszej.  
+- Procesor obsługujący instrukcji SSSE3 lub nowszej.  
   
- Wymagania dotyczące sieci  
+  Wymagania dotyczące sieci  
   
--   DHCP  
+- DHCP  
   
--   Automatycznie skonfigurowana DNS i ustawień bramy  
+- Automatycznie skonfigurowana DNS i ustawień bramy  
   
- Wymagania funkcji Hyper-V  
+  Wymagania funkcji Hyper-V  
   
--   W systemie BIOS muszą być obsługiwane następujące funkcje:  
+- W systemie BIOS muszą być obsługiwane następujące funkcje:  
   
-    -   Wirtualizacja sprzętowa  
+  -   Wirtualizacja sprzętowa  
   
-    -   Drugi adres poziomu Translation (SLAT)  
+  -   Drugi adres poziomu Translation (SLAT)  
   
-    -   Zapobieganie wykonywaniu danych oparte na sprzęcie (DEP)  
+  -   Zapobieganie wykonywaniu danych oparte na sprzęcie (DEP)  
   
--   W Windows funkcji Hyper-V musi być włączona i uruchomiona.  
+- W Windows funkcji Hyper-V musi być włączona i uruchomiona.  
   
--   Musisz być członkiem lokalnej grupy Administratorzy funkcji Hyper-V.  
+- Musisz być członkiem lokalnej grupy Administratorzy funkcji Hyper-V.  
   
 ##  <a name="System"></a> Wymagania systemowe  
  Komputer musi spełniać następujące wymagania:  
   
--   Obsługa funkcji Hyper-V (zobacz [wymagania funkcji Hyper-V](#HyperV))  
+- Obsługa funkcji Hyper-V (zobacz [wymagania funkcji Hyper-V](#HyperV))  
   
--   6 GB lub więcej pamięci RAM.  
+- 6 GB lub więcej pamięci RAM.  
   
--   wersja 64-bitowej wersji Pro Windows10 systemu Windows 8, Windows 8.1 lub nowszy.  
+- wersja 64-bitowej wersji Pro Windows10 systemu Windows 8, Windows 8.1 lub nowszy.  
   
- Aby sprawdzić wymagania dotyczące pamięci RAM i Windows, w Panelu sterowania wybierz pozycję System i zabezpieczenia, a następnie wybierz systemu.  
+  Aby sprawdzić wymagania dotyczące pamięci RAM i Windows, w Panelu sterowania wybierz pozycję System i zabezpieczenia, a następnie wybierz systemu.  
   
- ![Sprawdź wymagania systemowe](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")  
+  ![Sprawdź wymagania systemowe](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")  
   
 ##  <a name="Network"></a> Wymagania dotyczące sieci  
  Sieć musi spełniać następujące wymagania:  
   
--   DHCP  
+- DHCP  
   
-     Emulator wymaga protokołu DHCP, ponieważ konfiguruje się jako osobne urządzenia do sieci za pomocą adresu IP.  
+   Emulator wymaga protokołu DHCP, ponieważ konfiguruje się jako osobne urządzenia do sieci za pomocą adresu IP.  
   
--   Automatycznie skonfigurowana DNS i ustawień bramy  
+- Automatycznie skonfigurowana DNS i ustawień bramy  
   
-     Nie jest możliwe do skonfigurowania ustawień DNS i bramę ręcznie dla emulatora.  
+   Nie jest możliwe do skonfigurowania ustawień DNS i bramę ręcznie dla emulatora.  
   
- Aby rozwiązać problemy z siecią w emulatorze, zobacz następujące tematy:  
+  Aby rozwiązać problemy z siecią w emulatorze, zobacz następujące tematy:  
   
--   [Rozwiązywanie problemów z emulatorem programu Visual Studio dla systemu Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
+- [Rozwiązywanie problemów z emulatorem programu Visual Studio dla systemu Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="HyperV"></a> Wymagania funkcji Hyper-V  
  Wymagania funkcji Hyper-V w systemie BIOS  
   
  System BIOS komputera musi obsługiwać następujące wymagania i należy je włączyć:  
   
--   Wirtualizacja sprzętowa  
+- Wirtualizacja sprzętowa  
   
--   Drugi adres poziomu Translation (SLAT)  
+- Drugi adres poziomu Translation (SLAT)  
   
--   Zapobieganie wykonywaniu danych oparte na sprzęcie (DEP)  
+- Zapobieganie wykonywaniu danych oparte na sprzęcie (DEP)  
   
- Wymagania funkcji Hyper-V w Windows  
+  Wymagania funkcji Hyper-V w Windows  
   
- Jeśli ustawienia systemu BIOS i komputer, na których są już skonfigurowane do obsługi funkcji Hyper-V, program instalacyjny włącza się i uruchamia funkcji Hyper-V. W przeciwnym razie może być konieczne ręcznie włączyć te wymagania.  
+  Jeśli ustawienia systemu BIOS i komputer, na których są już skonfigurowane do obsługi funkcji Hyper-V, program instalacyjny włącza się i uruchamia funkcji Hyper-V. W przeciwnym razie może być konieczne ręcznie włączyć te wymagania.  
   
 |Wymaganie|Jak sprawdzić i włączyć to wymaganie|  
 |-----------------|----------------------------------------------|  
@@ -147,15 +147,15 @@ Visual Studio Emulator for Android działa jako maszyna wirtualna funkcji Hyper-
 ##  <a name="Files"></a> Funkcji Hyper-V wymaga bez kompresji i szyfrowania plików  
  Na dysku twardym skonfigurowane przy użyciu systemu plików NTFS pliki wirtualnych dysków twardych, używany przez funkcję Hyper-V muszą nieskompresowany i bez szyfrowania. Upewnij się, że nie skompresowane lub zaszyfrowane następujących katalogów:  
   
--   %localappdata%\Microsoft\XDE  
+- %localappdata%\Microsoft\XDE  
   
--   C:\Program Files (x86)\Microsoft Emulator Manager  
+- C:\Program Files (x86)\Microsoft Emulator Manager  
   
--   C:\Program pliki (x86) \Microsoft Visual Studio Emulator for Android  
+- C:\Program pliki (x86) \Microsoft Visual Studio Emulator for Android  
   
--   %localappdata%\Microsoft\VisualStudioEmulator  
+- %localappdata%\Microsoft\VisualStudioEmulator  
   
- W systemie plików ReFS pliki wirtualnego dysku twardego nie może mieć zestaw integralności bit.  
+  W systemie plików ReFS pliki wirtualnego dysku twardego nie może mieć zestaw integralności bit.  
   
 ## <a name="hardware-graphics-forwarding-opengl-es-support-requirements"></a>Wymagania dotyczące sprzętu grafiki przekazywania (Obsługa OpenGL ES)  
  Emulatora do emulowania wywołania do procesora GPU, takich jak używane przez OpenGL ES komputer musi mieć zgodną jednostkę GPU DirectX przy użyciu odpowiednich sterowników DirectX zainstalowane.  

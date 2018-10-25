@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a310957f1552e289993643d39965d8a6a8693fe2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51878d18deb56c77ebbef0d0aa84b399ef2fa722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207951"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894979"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Pola tablicy nie powinny być tylko do odczytu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ArrayFieldsShouldNotBeReadOnly|
@@ -47,11 +48,11 @@ ms.locfileid: "49207951"
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  Aby rozwiązać problem luki w zabezpieczeniach, która jest identyfikowana przez tę regułę, nie należy polegać na zawartości tablicy tylko do odczytu, które są publicznie dostępne. Zdecydowanie zaleca się korzystanie z jednej z następujących procedur:
 
--   Zastąp tablicy silnie typizowaną kolekcją, której nie można zmienić. Aby uzyskać więcej informacji, zobacz <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
+- Zastąp tablicy silnie typizowaną kolekcją, której nie można zmienić. Aby uzyskać więcej informacji, zobacz <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
 
--   Zastąp pole publiczne metody, która zwróci klon tablicy prywatnej. Ponieważ kod nie polega na klonie, nie ma ryzyka, jeśli elementy są modyfikowane.
+- Zastąp pole publiczne metody, która zwróci klon tablicy prywatnej. Ponieważ kod nie polega na klonie, nie ma ryzyka, jeśli elementy są modyfikowane.
 
- Jeśli została wybrana opcja drugiej metody, nie zastępują pola z właściwością; właściwości zwracające tablice niekorzystnie wpłynąć na wydajność. Aby uzyskać więcej informacji, zobacz [CA1819: właściwości nie powinny zwracać tablic](../code-quality/ca1819-properties-should-not-return-arrays.md).
+  Jeśli została wybrana opcja drugiej metody, nie zastępują pola z właściwością; właściwości zwracające tablice niekorzystnie wpłynąć na wydajność. Aby uzyskać więcej informacji, zobacz [CA1819: właściwości nie powinny zwracać tablic](../code-quality/ca1819-properties-should-not-return-arrays.md).
 
 ## <a name="when-to-suppress-warnings"></a>Kiedy pominąć ostrzeżenia
  Wykluczenie ostrzeżenie od tej reguły jest zdecydowanie odradzane. Niemal żadnych scenariuszy wystąpić, gdy zawartość pola tylko do odczytu nie są ważne. Jeśli jest to w przypadku danego scenariusza, należy usunąć `readonly` modyfikator zamiast wiadomości z wyjątkiem.

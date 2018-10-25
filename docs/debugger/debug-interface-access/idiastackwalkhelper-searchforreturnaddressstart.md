@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::searchForReturnAddressStart | Dokumentacja firmy Microsoft
+title: Idiastackwalkhelper::searchforreturnaddressstart — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b92068c935c90e6cfe278b5f07a995c941b8a89
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 016f2e3ab816b7def9aa0ef1e40ef5727063eb25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460898"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895772"
 ---
 # <a name="idiastackwalkhelpersearchforreturnaddressstart"></a>IDiaStackWalkHelper::searchForReturnAddressStart
-Wyszukuje ramka stosu określony dla adres zwrotny lub prawie adresu określonej wartości atrybutu stosu.  
+Wyszukuje ramki określonego stosu, dla adres zwrotny po lub w pobliżu adresu określonego stosu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,16 +36,16 @@ HRESULT searchForReturnAddressStart(
   
 #### <a name="parameters"></a>Parametry  
  `frame`  
- [in] [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiekt, który reprezentuje bieżącej ramki stosu.  
+ [in] [Idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiekt, który reprezentuje bieżącą ramkę stosu.  
   
  `startAddress`  
- [in] Jest adresem pamięci wirtualnej, z którego można rozpocząć wyszukiwanie.  
+ [in] Adres pamięci wirtualnej, z którego należy rozpocząć wyszukiwanie.  
   
  `ReturnAddress`  
- [out] Zwraca adres, aby zwracany najbliższej funkcji `startAddress`.  
+ [out] Zwraca funkcję najbliższej zwrotny adres, który `startAddress`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

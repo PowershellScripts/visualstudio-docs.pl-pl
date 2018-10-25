@@ -1,5 +1,5 @@
 ---
-title: Omówienie narzędzi projektowania modelu BDC | Dokumentacja firmy Microsoft
+title: Omówienie narzędzia projektowania modelu usługi łączności danych biznesowych | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -28,53 +28,53 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 999c7d4adf47dfecddd379c9f1252a343583831d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6c5a799a245d2149161809977446d0c005dbe293
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326221"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914505"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Omówienie narzędzi projektowania modelu BDC
-  Można zaprojektować modelu łączności danych biznesowych (BDC) przy użyciu narzędzia Projektant BDC **szczegóły metody usługi łączności danych biznesowych** okno i **Eksplorator modelu BDC**.  
+  Można zaprojektować modelu łączności danych biznesowych (BDC) przy użyciu projektanta łączności danych biznesowych **szczegóły metody BDC** oknie i **Eksplorator BDC**.  
   
- **Eksplorator modelu BDC** umożliwia przeglądanie modelu, wyszukiwanie modelu i zdefiniuj deskryptory typu.  
+ **Eksplorator BDC** pozwala na przeglądanie modelu, model wyszukiwania i zdefiniuj deskryptory typu.  
   
 ## <a name="bdc-designer"></a>Projektant BDC
- Projektant BDC umożliwia definiowanie jednostek w modelu oraz wizualnie ułożyć ich relacje ze sobą. Za pomocą projektanta BDC do wykonywania następujących zadań:  
+ W Projektancie usługi łączności danych biznesowych umożliwia do definiowania jednostek w modelu oraz wizualnie rozmieszczanie ich wzajemne relacje ze sobą. Za pomocą projektanta łączności danych biznesowych do wykonywania następujących zadań:  
   
--   Dodaj jednostki do modelu.  
+- Dodawanie jednostki do modelu.  
   
--   Usuwanie jednostek z modelu.  
+- Usuń jednostki z modelu.  
   
--   Definiowanie relacji między obiektami.  
+- Definiowanie relacji między jednostkami.  
   
- Aby otworzyć projektanta usługi łączności danych biznesowych, kliknij dwukrotnie plik modelu w projekcie, lub Otwórz menu skrótów dla pliku modelu, a następnie wybierz pozycję **Otwórz**. Dodawanie jednostki do modelu, przeciągając lub kopiowanie **jednostki** z **przybornika** do projektanta. Aby utworzyć skojarzenie między dwiema jednostkami, wybierz **skojarzenia** kontroli w **przybornika**, wybierz pierwszy jednostki, a następnie wybierz jednostki drugiego.  
+  Aby otworzyć projektanta usługi łączności danych biznesowych, kliknij dwukrotnie plik modelu w swoim projekcie lub Otwórz menu skrótów dla pliku modelu, a następnie wybierz **Otwórz**. Dodawanie jednostki do modelu przez przeciąganie lub kopiowanie **jednostki** z **przybornika** do projektanta. Aby utworzyć skojarzenie między dwiema jednostkami, wybierz opcję **skojarzenia** w kontrolce **przybornika**, wybierz pierwszy obiekt, a następnie wybierz drugiej jednostki.  
   
-## <a name="bdc-method-details-window"></a>Okno Szczegóły metody usługi łączności danych biznesowych
- Użyj **szczegóły metody usługi łączności danych biznesowych** okno, aby określić parametry wystąpień i filtrować deskryptory metody.  
+## <a name="bdc-method-details-window"></a>Okno Szczegóły metody BDC
+ Użyj **szczegóły metody BDC** okno, aby zdefiniować parametry, wystąpień i deskryptory metody filtrów.  
   
- Mogą szybko generować metod wyszukiwania, określonej metody wyszukiwania, tworzenia, aktualizacji i Deleter **szczegóły metody usługi łączności danych biznesowych** okna. Podczas generowania tych metod, Visual Studio dodaje metadane, takie jak parametry, wystąpienia i deskryptorów typu metody. Można zmodyfikować te metadane do zaspokojenia konkretnego scenariusza.  
+ Można szybko wygenerować metody wyszukiwania, określonej metody wyszukiwania, twórcy, aktualizacji i Deleter w **szczegóły metody BDC** okna. Podczas generowania tych metod, program Visual Studio dodaje metadane, takie jak parametry, wystąpienia i deskryptory typu, do metody. Możesz zmodyfikować te metadane do spełnienia określonego scenariusza.  
   
- Aby otworzyć **szczegóły metody usługi łączności danych biznesowych** okna, na pasku menu wybierz **widoku** > **inne okna** > **szczegóły metody usługi łączności danych biznesowych** .  
+ Aby otworzyć **szczegóły metody BDC** okna, na pasku menu wybierz **widoku** > **Windows inne** > **szczegóły metody BDC** .  
   
- Aby wyświetlić metod w **szczegóły metody usługi łączności danych biznesowych** okna, wybierz jednostki w Projektancie usługi łączności danych biznesowych. Metody wybranego obiektu są wyświetlane w **szczegóły metody usługi łączności danych biznesowych** okna. Jeśli nie wybierzesz jednostki w Projektancie BDC **szczegóły metody usługi łączności danych biznesowych** wyświetlane żadne informacje.  
+ Aby wyświetlić metod w **szczegóły metody BDC** oknie Wybierz jednostkę w Projektancie usługi łączności danych biznesowych. Metody wybranej jednostki są wyświetlane w **szczegóły metody BDC** okna. Jeśli nie wybierzesz jednostkę w Projektancie usługi łączności danych biznesowych **szczegóły metody BDC** oknie zostaną wyświetlone żadne informacje.  
   
- Rozwiń lub Zwiń węzłów w **szczegóły metody usługi łączności danych biznesowych** okno, aby określić parametry, wystąpień i filtrować deskryptorów. Użyj **Eksplorator modelu BDC** do definiowania deskryptory typu.  
+ Rozwiń lub Zwiń węzłów w **szczegóły metody BDC** okno, aby zdefiniować parametry, wystąpień i deskryptory filtrów. Użyj **Eksplorator BDC** do definiowania deskryptory typu.  
   
 ## <a name="bdc-explorer"></a>Eksplorator modelu BDC
- **Eksplorator modelu BDC** Wyświetla elementy wchodzące w skład modelu. Aby otworzyć **Eksplorator modelu BDC**, na pasku menu wybierz **widoku** > **inne okna** > **Eksplorator modelu BDC**. Aby przeglądać model, rozwiń węzły w **Eksplorator modelu BDC**. Każdy węzeł reprezentuje element w pliku XML z pliku modelu.  
+ **Eksplorator BDC** Wyświetla elementy, które tworzą model. Aby otworzyć **Eksplorator BDC**, na pasku menu wybierz **widoku** > **Windows inne** > **Eksplorator BDC**. Aby przeglądać model, rozwiń węzły w **Eksplorator BDC**. Każdy węzeł reprezentuje element w pliku XML w pliku modelu.  
   
- Wybierz polecenie węzłów w **Eksplorator modelu BDC**, wyświetlania właściwości każdego węzła wybranego w **właściwości** okna. Wiele z tych właściwości odpowiadają atrybutom w pliku modelu. Umożliwia wyszukiwanie modelu przy użyciu pola wyszukiwania w górnej części **Eksplorator modelu BDC**.  
-  
-> [!NOTE]  
->  **Eksplorator modelu BDC** nie Wyświetla identyfikatory, właściwości niestandardowe, zlokalizowanych ciągów, skojarzenie grupy, działania, deskryptory filtrów, akcji listy kontroli i domyślne wartości parametrów.  
-  
-### <a name="define-type-descriptors"></a>Zdefiniuj deskryptory typów.
- Użyj **Eksplorator modelu BDC** do definiowania deskryptory typu. Eksplorator modelu BDC umożliwia definiowanie deskryptor typu jeden raz i ponowne użycie tego deskryptora typu w modelu. W tym celu kopiowania deskryptora typu i wkleić go do innych parametrów lub deskryptor typu.  
+ Podczas wybierania węzły w **Eksplorator BDC**, właściwości każdego węzła, który wybierzesz są wyświetlane w **właściwości** okna. Wiele z tych właściwości odnoszą się do atrybutów w pliku modelu. Możesz wyszukiwać modelu przy użyciu pola wyszukiwania w górnej części **Eksplorator BDC**.  
   
 > [!NOTE]  
->  Zmiany w oryginalnym deskryptor typu nie wpływają na kopii tego deskryptor typu.  
+>  **Eksplorator BDC** nie wyświetla identyfikatorów, właściwości niestandardowe, zlokalizowanych ciągów, grup skojarzeń, akcje, deskryptory filtrów, list kontroli akcji i wartości domyślne parametrów.  
+  
+### <a name="define-type-descriptors"></a>Zdefiniuj deskryptory typu
+ Użyj **Eksplorator BDC** do definiowania deskryptory typu. Eksplorator BDC pozwala zdefiniować deskryptor typu jeden raz i ponownie użyć tego deskryptora typu, gdzie indziej w modelu. Aby to osiągnąć, skopiuj deskryptor typu i wkleić go do innych parametrów lub deskryptor typu.  
+  
+> [!NOTE]  
+>  Oryginalny deskryptor typu zmiany nie wpływają na kopie ten deskryptor typu.  
   
  Aby uzyskać więcej informacji, zobacz [porady: Określanie deskryptora typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
@@ -87,7 +87,7 @@ ms.locfileid: "36326221"
  [Porady: Dodawanie metody Deleter](../sharepoint/how-to-add-a-deleter-method.md)   
  [Porady: Dodawanie metody Updater](../sharepoint/how-to-add-an-updater-method.md)   
  [Tworzenie skojarzenia między jednostkami](../sharepoint/creating-an-association-between-entities.md)   
- [Wskazówki: Tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)   
+ [Przewodnik: Tworzenie listy zewnętrznej w SharePoint za pomocą danych biznesowych](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)   
  [Integrowanie danych biznesowych programu SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)   
  [Tworzenie modelu łączności danych biznesowych](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Projektowanie modelu łączności danych biznesowych](../sharepoint/designing-a-business-data-connectivity-model.md)  

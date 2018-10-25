@@ -13,23 +13,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56791d944b811ec4ca549ec51affaa74cb421909
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 91f3339fd18db8c006855c634e011b14eecc9206
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232915"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888944"
 ---
 # <a name="operational-modes"></a>Tryby operacyjne
 Istnieją trzy tryby, w których IDE może działać w następujący sposób:  
   
--   [Tryb projektowania](#vsconoperationalmodesanchor1)  
+- [Tryb projektowania](#vsconoperationalmodesanchor1)  
   
--   [Tryb uruchamiania](#vsconoperationalmodesanchor2)  
+- [Tryb uruchamiania](#vsconoperationalmodesanchor2)  
   
--   [Tryb przerwania](#vsconoperationalmodesanchor3)  
+- [Tryb przerwania](#vsconoperationalmodesanchor3)  
   
- Jak Twojego niestandardowego aparatu debugowania (DE) przechodzi między tych trybów jest decyzja dotycząca implementacji wymaga należy zapoznać się z mechanizmami przejścia. DE może lub nie może bezpośrednio implementacji tych trybów. Te tryby są naprawdę debugowania pakietu tryby, które przełączyć się na podstawie akcji przez użytkownika lub zdarzenia z DE. Na przykład przejście od uruchomienia tryb na tryb przerwania jest zainicjowanego przez zdarzenie zatrzymywanie z DE. Przejście z break, aby uruchomić trybu lub krok jest zainicjowanego przez użytkownika, wykonywanie operacji, takich jak krok lub wykonania. Aby uzyskać więcej informacji na temat przejścia DE zobacz [Kontrola wykonywania](../../extensibility/debugger/control-of-execution.md).  
+  Jak Twojego niestandardowego aparatu debugowania (DE) przechodzi między tych trybów jest decyzja dotycząca implementacji wymaga należy zapoznać się z mechanizmami przejścia. DE może lub nie może bezpośrednio implementacji tych trybów. Te tryby są naprawdę debugowania pakietu tryby, które przełączyć się na podstawie akcji przez użytkownika lub zdarzenia z DE. Na przykład przejście od uruchomienia tryb na tryb przerwania jest zainicjowanego przez zdarzenie zatrzymywanie z DE. Przejście z break, aby uruchomić trybu lub krok jest zainicjowanego przez użytkownika, wykonywanie operacji, takich jak krok lub wykonania. Aby uzyskać więcej informacji na temat przejścia DE zobacz [Kontrola wykonywania](../../extensibility/debugger/control-of-execution.md).  
   
 ##  <a name="vsconoperationalmodesanchor1"></a> Tryb projektowania  
  Tryb projektowania jest nonrunning stan debugowania programu Visual Studio, w tym czasie można ustawić funkcji w aplikacji do debugowania.  
@@ -46,7 +46,7 @@ Istnieją trzy tryby, w których IDE może działać w następujący sposób:
   
  Zatrzymywanie zdarzenia były obecne przez wywołanie jednej z następujących metod, których przejście do debugera w trybie przerwania, aby uruchomić lub krok trybu:  
   
--   [Wykonywanie](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
+-   [Execute](../../extensibility/debugger/reference/idebugprocess3-execute.md)  
   
 -   [Step](../../extensibility/debugger/reference/idebugprocess3-step.md)  
   

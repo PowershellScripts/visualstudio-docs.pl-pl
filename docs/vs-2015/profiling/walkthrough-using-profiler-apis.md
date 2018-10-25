@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad4b22be98396fe58734f9c785da201450bdafcc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d046015b1a88b3699fa8ef572e39e2ffefec2064
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898762"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Wskazówki: korzystanie z interfejsów API profilera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,19 +124,19 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>Do gromadzenia i wyświetlania danych w środowisku IDE programu Visual Studio  
   
-1.  Otwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Do **analizy** menu wskaż **Profiler**, a następnie wybierz pozycję **nowej sesji wydajności.**  
+1. Otwórz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Do **analizy** menu wskaż **Profiler**, a następnie wybierz pozycję **nowej sesji wydajności.**  
   
-2.  Dodaj swoje skompilowanych plików binarnych do **cele** listy w **Eksplorator wydajności** okna. Kliknij prawym przyciskiem myszy **cele**, a następnie wybierz pozycję **Dodaj binarne docelowej**. Znajdź plik binarny w **Dodaj binarne docelowej** okno dialogowe, a następnie kliknij przycisk **Otwórz**.  
+2. Dodaj swoje skompilowanych plików binarnych do **cele** listy w **Eksplorator wydajności** okna. Kliknij prawym przyciskiem myszy **cele**, a następnie wybierz pozycję **Dodaj binarne docelowej**. Znajdź plik binarny w **Dodaj binarne docelowej** okno dialogowe, a następnie kliknij przycisk **Otwórz**.  
   
-3.  Wybierz **Instrumentacji** z **metoda** listy na **Eksplorator wydajności** paska narzędzi.  
+3. Wybierz **Instrumentacji** z **metoda** listy na **Eksplorator wydajności** paska narzędzi.  
   
-4.  Kliknij przycisk **Uruchom za pomocą profilowania**.  
+4. Kliknij przycisk **Uruchom za pomocą profilowania**.  
   
-     Program profilujący zostanie Instrumentacja wykonania pliku binarnego i utworzenia pliku raportu wydajności. Plik raportu wydajności będą wyświetlane w **raporty** węźle **Eksplorator wydajności**.  
+    Program profilujący zostanie Instrumentacja wykonania pliku binarnego i utworzenia pliku raportu wydajności. Plik raportu wydajności będą wyświetlane w **raporty** węźle **Eksplorator wydajności**.  
   
-5.  Otwórz wynikowy plik raportu wydajności.  
+5. Otwórz wynikowy plik raportu wydajności.  
   
- Domyślnie po uruchomieniu profilera, program profilujący będzie zbierać dane na poziomie globalnym. Następujący kod na początku programu, włącza globalnego profilowania na wyłączone.  
+   Domyślnie po uruchomieniu profilera, program profilujący będzie zbierać dane na poziomie globalnym. Następujący kod na początku programu, włącza globalnego profilowania na wyłączone.  
   
 ```  
 DataCollection.StopProfile(  

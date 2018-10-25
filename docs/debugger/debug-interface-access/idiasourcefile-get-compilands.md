@@ -1,5 +1,5 @@
 ---
-title: IDiaSourceFile::get_compilands | Dokumentacja firmy Microsoft
+title: Idiasourcefile::get_compilands — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e1d29f9f27dcbe2f85a7d9f4e015264d685be7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a4c97f7e16f193d70048f3803ff764b0bfcdbc69
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460700"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885684"
 ---
 # <a name="idiasourcefilegetcompilands"></a>IDiaSourceFile::get_compilands
-Pobiera moduł wyliczający jednostki kompilacji, które mają numery wierszy odwołujące się do tego pliku.  
+Pobiera moduł wyliczający compilands, które mają numery wierszy, które odwołuje się do tego pliku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,10 +34,10 @@ HRESULT get_compilands (
   
 #### <a name="parameters"></a>Parametry  
  `ppRetVal`  
- [out] Zwraca [idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md) obiekt, który zawiera listę wszystkich jednostki kompilacji, które mają numery wierszy odwołujące się do tego pliku.  
+ [out] Zwraca [idiaenumsymbols —](../../debugger/debug-interface-access/idiaenumsymbols.md) obiektu, który zawiera listę wszystkich compilands, które mają numery wierszy, które odwołuje się do tego pliku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md)   

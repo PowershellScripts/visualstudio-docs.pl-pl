@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5403b1945739c39392ba31006ad932a7eccda4ff
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7849f0df8f7e2f29c34b129dbf8e684424711b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511554"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904651"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Wywoływanie kodu w dodatkach VSTO z innych rozwiązań pakietu Office
   Obiekt można ujawnić w dodatku narzędzi VSTO dla programów do innych rozwiązań, w tym inne rozwiązania Microsoft Office. Jest to przydatne, jeśli dodatku narzędzi VSTO dla programów udostępnia usługę, aby włączyć innych rozwiązań do użycia. Na przykład jeśli masz dodatku narzędzi VSTO dla programu Microsoft Office Excel wykonuje obliczenia na dane finansowe z usługi sieci Web, innych rozwiązań wykonać te obliczenia za pośrednictwem wywołania do dodatku narzędzi VSTO dla programu Excel w czasie wykonywania.  
@@ -63,24 +63,24 @@ ms.locfileid: "39511554"
   
  Zalecanym sposobem udostępnienia [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) interfejsu jest wykonaj następujące czynności:  
   
-1.  Zdefiniuj interfejs, który deklaruje elementów członkowskich, które chcesz udostępnić innych rozwiązań. Ten interfejs można zdefiniować w projekcie dodatku narzędzi VSTO. Można zdefiniować w projekcie osobnej klasy biblioteki tego interfejsu, jeśli chcesz udostępnić klasy na rozwiązania innych VBA tak, aby rozwiązania, które wywołują dodatku narzędzi VSTO dla programów może odwoływać się interfejs bez odwołania do projektu dodatku narzędzi VSTO.  
+1. Zdefiniuj interfejs, który deklaruje elementów członkowskich, które chcesz udostępnić innych rozwiązań. Ten interfejs można zdefiniować w projekcie dodatku narzędzi VSTO. Można zdefiniować w projekcie osobnej klasy biblioteki tego interfejsu, jeśli chcesz udostępnić klasy na rozwiązania innych VBA tak, aby rozwiązania, które wywołują dodatku narzędzi VSTO dla programów może odwoływać się interfejs bez odwołania do projektu dodatku narzędzi VSTO.  
   
-2.  Zastosuj <xref:System.Runtime.InteropServices.ComVisibleAttribute> atrybutu dla tego interfejsu, a następnie ustaw ten atrybut **true**.  
+2. Zastosuj <xref:System.Runtime.InteropServices.ComVisibleAttribute> atrybutu dla tego interfejsu, a następnie ustaw ten atrybut **true**.  
   
-3.  Zmodyfikuj klasy do zaimplementowania tego interfejsu.  
+3. Zmodyfikuj klasy do zaimplementowania tego interfejsu.  
   
-4.  Zastosuj <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atrybutów do klasy, a następnie ustaw ten atrybut **Brak** wartość <xref:System.Runtime.InteropServices.ClassInterfaceType> wyliczenia.  
+4. Zastosuj <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atrybutów do klasy, a następnie ustaw ten atrybut **Brak** wartość <xref:System.Runtime.InteropServices.ClassInterfaceType> wyliczenia.  
   
-5.  Jeśli chcesz udostępnić tej klasy, aby klienci spoza procesu, konieczne może wykonać następujące czynności:  
+5. Jeśli chcesz udostępnić tej klasy, aby klienci spoza procesu, konieczne może wykonać następujące czynności:  
   
-    -   Pochodną klasy z <xref:System.Runtime.InteropServices.StandardOleMarshalObject>. Aby uzyskać więcej informacji, zobacz [ujawnić klasy klientom spoza procesu](#outofproc).  
+   -   Pochodną klasy z <xref:System.Runtime.InteropServices.StandardOleMarshalObject>. Aby uzyskać więcej informacji, zobacz [ujawnić klasy klientom spoza procesu](#outofproc).  
   
-    -   Ustaw **Zarejestruj dla współdziałania COM** właściwość w projekcie, w której definiujesz interfejsu. Ta właściwość jest tylko, jeśli chcesz umożliwić klientom na używanie wczesne powiązania do wywołania w dodatku narzędzi VSTO.  
+   -   Ustaw **Zarejestruj dla współdziałania COM** właściwość w projekcie, w której definiujesz interfejsu. Ta właściwość jest tylko, jeśli chcesz umożliwić klientom na używanie wczesne powiązania do wywołania w dodatku narzędzi VSTO.  
   
- Poniższy przykład kodu demonstruje `AddInUtilities` klasy `ImportData` metodę, która może być wywoływany przez inne rozwiązania. Aby wyświetlić ten kod w kontekście większych wskazówki, zobacz [wskazówki: Wywoływanie kodu w dodatku VSTO z kodu VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
+   Poniższy przykład kodu demonstruje `AddInUtilities` klasy `ImportData` metodę, która może być wywoływany przez inne rozwiązania. Aby wyświetlić ten kod w kontekście większych wskazówki, zobacz [wskazówki: Wywoływanie kodu w dodatku VSTO z kodu VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
- [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
- [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
+   [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
+   [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
   
 ### <a name="expose-classes-to-vba"></a>Udostępnianie klas z VBA  
  Po wykonaniu powyższych kroków, kod VBA można wywołać metody, które można zadeklarować w interfejsie. Kod VBA nie można wywołać wszelkich innych metod w klasie, włączając w to metody, które klasy uzyskuje klas podstawowych, takich jak <xref:System.Object>.  
@@ -105,13 +105,13 @@ ms.locfileid: "39511554"
 ## <a name="access-objects-from-other-solutions"></a>Uzyskiwanie dostępu do obiektów z innych rozwiązań  
  Aby wywołać obiekt narażonych w dodatku narzędzi VSTO dla programów, należy wykonać następujące kroki w rozwiązaniu klienta:  
   
-1.  Pobierz <xref:Microsoft.Office.Core.COMAddIn> obiekt, który reprezentuje narażonych dodatku narzędzi VSTO. Klienci mogą uzyskiwać dostęp do wszystkich dostępnych dodatków narzędzi VSTO dla programów przy użyciu `Application.COMAddIns` właściwości w modelu obiektu hosta aplikacji pakietu Office.  
+1. Pobierz <xref:Microsoft.Office.Core.COMAddIn> obiekt, który reprezentuje narażonych dodatku narzędzi VSTO. Klienci mogą uzyskiwać dostęp do wszystkich dostępnych dodatków narzędzi VSTO dla programów przy użyciu `Application.COMAddIns` właściwości w modelu obiektu hosta aplikacji pakietu Office.  
   
-2.  Dostęp do właściwości COMAddIn.Object <xref:Microsoft.Office.Core.COMAddIn> obiektu. Ta właściwość zwraca obiekt narażonych z dodatku narzędzi VSTO.  
+2. Dostęp do właściwości COMAddIn.Object <xref:Microsoft.Office.Core.COMAddIn> obiektu. Ta właściwość zwraca obiekt narażonych z dodatku narzędzi VSTO.  
   
-3.  Wywołaj członków narażonych obiektu.  
+3. Wywołaj członków narażonych obiektu.  
   
- Sposób, że używasz zwracana wartość właściwości COMAddIn.Object różni się dla klientów VBA i VBA innych klientów. W przypadku klientów spoza procesu dodatkowy kod jest konieczne, aby uniknąć sytuacji wyścigu możliwe.  
+   Sposób, że używasz zwracana wartość właściwości COMAddIn.Object różni się dla klientów VBA i VBA innych klientów. W przypadku klientów spoza procesu dodatkowy kod jest konieczne, aby uniknąć sytuacji wyścigu możliwe.  
   
 ### <a name="access-objects-from-vba-solutions"></a>Uzyskiwanie dostępu do obiektów z rozwiązań VBA  
  Poniższy przykład kodu pokazuje, jak wywołać metodę, która jest uwidaczniany przez dodatku narzędzi VSTO za pomocą języka VBA. To makro VBA wywołuje metodę o nazwie `ImportData` zdefiniowanego w dodatku narzędzi VSTO dla programów, który nosi nazwę **ExcelImportData**. Aby wyświetlić ten kod w kontekście większych wskazówki, zobacz [wskazówki: Wywoływanie kodu w dodatku VSTO z kodu VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  

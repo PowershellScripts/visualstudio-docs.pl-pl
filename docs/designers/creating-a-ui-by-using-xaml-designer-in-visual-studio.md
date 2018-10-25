@@ -15,126 +15,184 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: f18814d14c28d1f0263950579767490cd7deca38
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: da5b6d3659371eb7e6d04a782c37cbab73a59fd5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903260"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Tworzenie interfejsu użytkownika przy użyciu projektanta XAML w programie Visual Studio
+
 Projektant XAML w programie Visual Studio udostępnia interfejs graficzny, aby ułatwić projektowanie oparte na XAML Windows i aplikacje sieci Web. Można utworzyć interfejsów użytkownika dla aplikacji poprzez przeciąganie kontrolek z **przybornika** i ustawianie właściwości w **właściwości** okna. Można również edytować XAML bezpośrednio w widoku XAML.
 
- Aby uzyskać zaawansowane zadania projektowania XAML, takich jak animacjom i zachowaniom, zobacz [Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md). Zobacz też [projektowanie XAML w programie Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md) w celu porównania narzędzia.
+Aby uzyskać zaawansowane zadania projektowania XAML, takich jak animacjom i zachowaniom, zobacz [Tworzenie interfejsu użytkownika przy użyciu programu Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md). Zobacz też [projektowanie XAML w programie Visual Studio i Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md) w celu porównania narzędzia.
 
 ## <a name="xaml-designer-workspace"></a>Obszar roboczy Projektanta XAML
- Obszar roboczy w Projektancie XAML składa się z kilku elementów interfejsu wizualnego. Należą do nich **obszaru kompozycji**, **edytora XAML**, **urządzenia** oknie **konspekt dokumentu** oknie i **właściwości**  okna. Aby otworzyć projektanta XAML, kliknij prawym przyciskiem myszy plik XAML w **Eksploratora rozwiązań** i wybierz polecenie **Projektant widoków**.
+
+Obszar roboczy w Projektancie XAML składa się z kilku elementów interfejsu wizualnego. Należą do nich **obszaru kompozycji**, **edytora XAML**, **urządzenia** oknie **konspekt dokumentu** oknie i **właściwości**  okna. Aby otworzyć projektanta XAML, kliknij prawym przyciskiem myszy plik XAML w **Eksploratora rozwiązań** i wybierz polecenie **Projektant widoków**.
 
 ## <a name="authoring-views"></a>Tworzenie widoków
- Projektant XAML udostępnia widok XAML i zsynchronizowany widok projektu aplikacji renderowanego kodu znaczników XAML. Plik XAML jest otwarty w programie Visual Studio, można przełączać się między widoku projektu i widok XAML przy użyciu **projektowania** i **XAML** karty. Możesz użyć **Zamień okienka** przycisk, aby zmienić okno, które pojawia się na wierzchu: obszar roboczy lub edytora XAML.
 
- W widoku Projekt zawierający okna *obszaru kompozycji* jest aktywnym oknem i służy jako powierzchnia podstawowego. Służy on do wizualnie projektować strony w aplikacji przez dodanie lub rysowania elementów i ich modyfikowania. Aby uzyskać więcej informacji, zobacz [Praca z elementami w Projektancie XAML](../designers/working-with-elements-in-xaml-designer.md). Ta ilustracja przedstawia obszaru kompozycji w widoku Projekt.
+Projektant XAML udostępnia widok XAML i zsynchronizowany widok projektu aplikacji renderowanego kodu znaczników XAML. Plik XAML jest otwarty w programie Visual Studio, można przełączać się między widoku projektu i widok XAML przy użyciu **projektowania** i **XAML** karty. Możesz użyć **Zamień okienka** przycisk, aby zmienić okno, które pojawia się na wierzchu: obszar roboczy lub edytora XAML.
 
- ![Widok projektu w Projektancie XAML](../designers/media/xaml_editor_design_view.png)
+W widoku Projekt zawierający okna *obszaru kompozycji* jest aktywnym oknem i służy jako powierzchnia podstawowego. Służy on do wizualnie projektować strony w aplikacji przez dodanie lub rysowania elementów i ich modyfikowania. Aby uzyskać więcej informacji, zobacz [Praca z elementami w Projektancie XAML](../designers/working-with-elements-in-xaml-designer.md). Ta ilustracja przedstawia obszaru kompozycji w widoku Projekt.
 
- Te funkcje są dostępne w obszarze roboczym:
+![Widok projektu w Projektancie XAML](../designers/media/xaml_editor_design_view.png)
 
- **Linii przyciągania** linii przyciągania są *granice wyrównanie* , są wyświetlane jako linia przerywana red wierszy do wyświetlenia po wyrównania krawędzi kontrolki lub kiedy są wyrównane linii bazowych tekstu. Wyrównanie granice są wyświetlane tylko wtedy, gdy **przyciąganie do linii wyrównania** jest włączona.
+Te funkcje są dostępne w obszarze roboczym:
 
- **Siatka rails** `Grid` rails są używane do zarządzania, wierszy i kolumn w [siatki](/uwp/api/Windows.UI.Xaml.Controls.Grid) panelu. Można tworzyć i usuwać wiersze i kolumny, a można dostosować ich względne szerokości i wysokości. Szyny siatki pionowej, która pojawia się po lewej stronie obszaru roboczego, jest używany dla wierszy i linii poziomej, która pojawia się u góry, jest używany dla kolumn.
+**Linii przyciągania**
 
- **Moduły definiowania układu siatki** moduł definiowania układu siatki jest wyświetlany jako trójkąt z linią pionową lub poziomą podłączone do niego na szynie siatki. Podczas przeciągania moduł definiowania układu siatki szerokości lub wysokości przyległe kolumny lub wiersze aktualizacji podczas przesuwania myszy.
+Są liniami przyciągania *granice wyrównanie* , są wyświetlane jako linia przerywana red wierszy do wyświetlenia po wyrównania krawędzi kontrolki lub kiedy są wyrównane linii bazowych tekstu. Wyrównanie granice są wyświetlane tylko wtedy, gdy **przyciąganie do linii wyrównania** jest włączona.
 
- Moduły definiowania układu siatki są używane do kontrolowania, szerokość i wysokość wierszy i kolumn siatki. Klikając przycisk w rails siatki, można dodać nowej kolumny lub wiersza. Po dodaniu nowego wiersza lub kolumny wiersza dla panelu siatki, która ma dwa lub więcej kolumn lub wierszy mini narzędzi pojawia się poza szyny, który umożliwia ustawianie szerokości i wysokości jawnie. Mini narzędzi można ustawić opcje zmiany rozmiaru siatki wierszy i kolumn.
+**Rails siatki**
 
- **Uchwyty zmiany rozmiaru** uchwytami zmiany rozmiaru pojawiają się w zaznaczonych kontrolek oraz pozwalające użytkownikowi na zmienianie rozmiaru formantów. Podczas zmiany rozmiaru kontrolki wartości szerokości i wysokości wyświetlane są zwykle ułatwiające rozmiar kontrolki. Aby uzyskać więcej informacji na temat manipulowanie kontrolami w **projektowania** wyświetlić, zobacz [Praca z elementami w Projektancie XAML](../designers/working-with-elements-in-xaml-designer.md).
+`Grid` Rails są używane do zarządzania, wierszy i kolumn w [siatki](/uwp/api/Windows.UI.Xaml.Controls.Grid) panelu. Można tworzyć i usuwać wiersze i kolumny, a można dostosować ich względne szerokości i wysokości. Szyny siatki pionowej, która pojawia się po lewej stronie obszaru roboczego, jest używany dla wierszy i linii poziomej, która pojawia się u góry, jest używany dla kolumn.
 
- **Marginesy** marginesy reprezentują ilość stały odstęp między krawędzią formantu a krawędzią jej kontenera. Można ustawić marginesy kontrolki przy użyciu [margines](/uwp/api/windows.ui.xaml.frameworkelement.margin) właściwości pod **układ** w oknie dialogowym właściwości.
+**Moduły definiowania układu siatki**
 
- **Moduły definiowania układu marginesu** moduły definiowania układu marginesu można użyć, aby zmienić margines elementu względem jego kontener układu. Gdy marginesu jest otwarty, margines nie jest ustawiona, a moduł definiowania układu marginesu zawiera przerwany łańcuch. Gdy margines nie jest ustawiona, elementy pozostają przy zmianie rozmiaru kontener układu w czasie wykonywania. Po zamknięciu marginesu marginesu Wyświetla nieprzerwany łańcuch, a elementy przeniesione z marginesem jako kontener układu zmiany rozmiaru w czasie wykonywania (margines pozostaje stały).
+Moduł definiowania układu siatki jest wyświetlana jako trójkąt z linią pionową lub poziomą podłączone do niego na szynie siatki. Podczas przeciągania moduł definiowania układu siatki szerokości lub wysokości przyległe kolumny lub wiersze aktualizacji podczas przesuwania myszy.
 
- **Obsługuje element** można zmodyfikować elementu za pomocą uchwytów elementów, które pojawiają się w obszarze kompozycji podczas przesuwania wskaźnika nad narożnikami niebieski prostokąt otaczający element. Uchwyty te umożliwiają obracanie, zmieniać rozmiar, przerzucić, Przenieś lub Dodaj promienia narożnika do elementu. Symbol uchwytu elementu zależy od funkcji, a następnie zmienia się w zależności od dokładnej lokalizacji wskaźnika. Jeśli nie widzisz uchwyty elementu, upewnij się, że element jest wybrany.
+Moduły definiowania układu siatki są używane do kontrolowania, szerokość i wysokość wierszy i kolumn siatki. Klikając przycisk w rails siatki, można dodać nowej kolumny lub wiersza. Po dodaniu nowego wiersza lub kolumny wiersza dla panelu siatki, która ma dwa lub więcej kolumn lub wierszy mini narzędzi pojawia się poza szyny, który umożliwia ustawianie szerokości i wysokości jawnie. Mini narzędzi można ustawić opcje zmiany rozmiaru siatki wierszy i kolumn.
 
- W **projektowania** widoku dodatkowe obszar roboczy polecenia są dostępne w obszarze lewej dolnej części ekranu, jak pokazano poniżej:
+**Uchwyty zmiany rozmiaru**
 
- ![Polecenia w widoku projektu](../designers/media/xaml_editor_design_controls.png)
+Zmień rozmiar obsługuje pojawiają się w zaznaczonych kontrolek oraz pozwalające użytkownikowi na zmienianie rozmiaru formantów. Podczas zmiany rozmiaru kontrolki wartości szerokości i wysokości wyświetlane są zwykle ułatwiające rozmiar kontrolki. Aby uzyskać więcej informacji na temat manipulowanie kontrolami w **projektowania** wyświetlić, zobacz [Praca z elementami w Projektancie XAML](../designers/working-with-elements-in-xaml-designer.md).
 
- Te polecenia są dostępne w tym narzędzi:
+**Marginesy**
 
- **Powiększenie** powiększenia pozwala na rozmiar powierzchni projektowej. Powiększenie z % 12,5 800% lub wybrać opcje takie jak **Dopasuj do wyboru** i **Dopasuj do wszystkich**.
+Marginesy reprezentuje ilość stały odstęp między krawędzią formantu a krawędzią jej kontenera. Można ustawić marginesy kontrolki przy użyciu [margines](/uwp/api/windows.ui.xaml.frameworkelement.margin) właściwości pod **układ** w oknie dialogowym właściwości.
 
- **Pokaż/Ukryj siatkę przyciągania** Wyświetla lub ukrywa przyciągania siatki, który pokazuje linie siatki. Linie siatki są używane, gdy zostanie włączone **przyciąganie do linii siatki** lub **przyciąganie do linii wyrównania**.
+**Moduły definiowania układu marginesu**
 
- **Włączanie/wyłączanie przyciągania do siatki** Jeśli **przyciąganie do linii siatki** jest włączona, podczas przeciągania elementu w obszarze kompozycji, element zwykle przy najbliższej poziome i pionowe linie siatki.
+Moduły definiowania układu marginesu można użyć, aby zmienić margines elementu względem jego kontener układu. Gdy marginesu jest otwarty, margines nie jest ustawiona, a moduł definiowania układu marginesu zawiera przerwany łańcuch. Gdy margines nie jest ustawiona, elementy pozostają przy zmianie rozmiaru kontener układu w czasie wykonywania. Po zamknięciu marginesu marginesu Wyświetla nieprzerwany łańcuch, a elementy przeniesione z marginesem jako kontener układu zmiany rozmiaru w czasie wykonywania (margines pozostaje stały).
 
- **Włącz/wyłącz przyciąganie do linii wyrównania** linii przyciągania ułatwiają wyrównywanie formantów względem siebie nawzajem. Jeśli **przyciąganie do linii wyrównania** jest włączona, podczas przeciągania kontroli względem innych kontrolek wyrównanie granice są wyświetlane, gdy krawędzie i tekst niektóre kontrolki są wyrównane w poziomie lub pionie. Granicy wyrównania jest wyświetlana jako linia kreskowana czerwony.
+**Obsługuje element**
 
- W **XAML** widoku okna zawierającego edytora XAML jest aktywnym oknem, a Edytor XAML to podstawowe narzędzie autorskie. Extensible Application Markup Language (XAML) zapewnia słownictwa deklaratywne, oparty na formacie XML do określania interfejsu użytkownika aplikacji. Widok XAML zawiera, IntelliSense, automatycznego formatowania, wyróżnianie składni i nawigacji tagu. Ta ilustracja przedstawia widok XAML:
+Element można modyfikować za pomocą uchwytów elementów, które pojawiają się w obszarze kompozycji podczas przesuwania wskaźnika nad narożnikami niebieski prostokąt otaczający element. Uchwyty te umożliwiają obracanie, zmieniać rozmiar, przerzucić, Przenieś lub Dodaj promienia narożnika do elementu. Symbol uchwytu elementu zależy od funkcji, a następnie zmienia się w zależności od dokładnej lokalizacji wskaźnika. Jeśli nie widzisz uchwyty elementu, upewnij się, że element jest wybrany.
 
- ![Widok XAML](../designers/media/xaml_editor.png)
+W **projektowania** widoku dodatkowe obszar roboczy polecenia są dostępne w obszarze lewej dolnej części ekranu, jak pokazano poniżej:
 
- **Wyświetl podziału** pasek podziału w widoku jest wyświetlany w górnej części widoku XAML, gdy Edytor XAML znajduje się w dolnym oknie. Wyświetl pasek podziału umożliwia sterowanie względne rozmiary **projektowania** widoku i **XAML** widoku. Mogą również wymieniać lokalizacje widoki (przy użyciu **Zamień okienka** przycisku), a następnie określ, czy widoków ułożone poziomo lub pionowo i zwinąć którymś z widoków.
+![Polecenia w widoku projektu](../designers/media/xaml_editor_design_controls.png)
 
- **Powiększenie znaczników** powiększenia znaczników umożliwia rozmiar **XAML** widoku. Możesz powiększyć z 20% do 400%.
+Te polecenia są dostępne w tym narzędzi:
+
+**Zoom**
+
+Powiększenie umożliwia rozmiar powierzchni projektowej. Powiększenie z % 12,5 800% lub wybrać opcje takie jak **Dopasuj do wyboru** i **Dopasuj do wszystkich**.
+
+**Pokaż/Ukryj siatkę przyciągania**
+
+Wyświetla lub ukrywa przyciągania siatki, który pokazuje linie siatki. Linie siatki są używane, gdy zostanie włączone **przyciąganie do linii siatki** lub **przyciąganie do linii wyrównania**.
+
+**Włącz/wyłącz przyciąganie do linii siatki**
+
+Jeśli **przyciąganie do linii siatki** jest włączona, podczas przeciągania elementu w obszarze kompozycji, element zwykle przy najbliższej poziome i pionowe linie siatki.
+
+**Włącz/wyłącz przyciąganie do linii wyrównania**
+
+Linii przyciągania ułatwiają wyrównywanie formantów względem siebie nawzajem. Jeśli **przyciąganie do linii wyrównania** jest włączona, podczas przeciągania kontroli względem innych kontrolek wyrównanie granice są wyświetlane, gdy krawędzie i tekst niektóre kontrolki są wyrównane w poziomie lub pionie. Granicy wyrównania jest wyświetlana jako linia kreskowana czerwony.
+
+W **XAML** widoku okna zawierającego edytora XAML jest aktywnym oknem, a Edytor XAML to podstawowe narzędzie autorskie. Extensible Application Markup Language (XAML) zapewnia słownictwa deklaratywne, oparty na formacie XML do określania interfejsu użytkownika aplikacji. Widok XAML zawiera, IntelliSense, automatycznego formatowania, wyróżnianie składni i nawigacji tagu. Ta ilustracja przedstawia widok XAML:
+
+![Widok XAML](../designers/media/xaml_editor.png)
+
+**Wyświetl podziału**
+
+Pasek podziału widok wyświetlany u góry widoku XAML, gdy Edytor XAML znajduje się w dolnym oknie. Wyświetl pasek podziału umożliwia sterowanie względne rozmiary **projektowania** widoku i **XAML** widoku. Mogą również wymieniać lokalizacje widoki (przy użyciu **Zamień okienka** przycisku), a następnie określ, czy widoków ułożone poziomo lub pionowo i zwinąć którymś z widoków.
+
+**Powiększenie znaczników**
+
+Powiększenie znaczników umożliwia rozmiar **XAML** widoku. Możesz powiększyć z 20% do 400%.
 
 ## <a name="device-window"></a>Okno urządzenia
- **Urządzenia** okna w programie XAML Designer umożliwia symulowanie w czasie projektowania, różnych widoków, ekranów i wyświetlić opcje projektu. **Urządzenia** oknie jest dostępna w **projektowania** menu podczas pracy w Projektancie XAML. Poniżej przedstawiono wygląda następująco:
 
- ![Okno urządzenia](../designers/media/xaml_editor_device_panel.png)
+**Urządzenia** okna w programie XAML Designer umożliwia symulowanie w czasie projektowania, różnych widoków, ekranów i wyświetlić opcje projektu. **Urządzenia** oknie jest dostępna w **projektowania** menu podczas pracy w Projektancie XAML. Poniżej przedstawiono wygląda następująco:
 
- Oto opcje dostępne w oknie urządzenia:
+![Okno urządzenia](../designers/media/xaml_editor_device_panel.png)
 
- **Wyświetlanie** określa rozmiarów ekranów i rozwiązań dla aplikacji.
+Oto opcje dostępne w oknie urządzenia:
 
- **Orientacja** określa różnych orientacji aplikacji: **pozioma** lub **pionowa**.
+**Wyświetlanie**
 
- **Krawędź** Określa wyrównanie krawędzi różnych aplikacji: **zarówno**, **po lewej stronie**, **po prawej stronie**, lub **Brak**.
+Określa rozmiarów ekranów i rozwiązań dla aplikacji.
 
- **Duży kontrast** Wyświetl podgląd aplikacji, w oparciu o wybrane ustawienie kontrastu. To ustawienie, gdy wartość do wartości innej niż **domyślne**, zastępuje `RequestedTheme` właściwością *App.xaml*.
+**Orientacja**
 
- **Zastąp skalowanie** włącza i wyłącza emulacji skalowania w obrębie na powierzchnię projektową dokumentu. Dzięki temu można zwiększyć procent skalowania przez jeden składnik. Zaznacz pole wyboru, aby włączyć emulacji. Na przykład jeśli Twoje procent skalowania wynosi 100%, dokumentu w powierzchni projektowej skalowane wraz ze 140%. Ta opcja jest wyłączona, jeśli bieżąca wartość skalowania jest 180.
+Określa różne orientacje dla aplikacji: **pozioma** lub **pionowa**.
 
- **Minimalna szerokość** określa ustawienie minimalnej szerokości. Minimalna szerokość można zmienić w programie *App.xaml*.
+**Krawędź**
 
- **Motyw** określa układu aplikacji. Na przykład może przełączyć między **ciemny** i **światła** motywu.
+Określa wyrównanie krawędzi różnych aplikacji: **zarówno**, **po lewej stronie**, **po prawej stronie**, lub **Brak**.
 
- **Pokaż chrome** włącza i wyłącza ramki symulowane tablet wokół aplikacji w widoku Projekt. Zaznacz pole wyboru, aby wyświetlić ramki.
+**Duży kontrast**
 
- **Przytnij do ekranu** Określa tryb wyświetlania. Zaznacz pole wyboru, kiedy należy przyciąć rozmiar dokumentu do rozmiaru ekranu.
+Wyświetl podgląd aplikacji, w oparciu o wybrane ustawienie kontrastu. To ustawienie, gdy wartość do wartości innej niż **domyślne**, zastępuje `RequestedTheme` właściwością *App.xaml*.
+
+**Zastąp skalowania**
+
+Włącza lub wyłącza emulacji skalowania w obrębie na powierzchnię projektową dokumentu. Dzięki temu można zwiększyć procent skalowania przez jeden składnik. Zaznacz pole wyboru, aby włączyć emulacji. Na przykład jeśli Twoje procent skalowania wynosi 100%, dokumentu w powierzchni projektowej skalowane wraz ze 140%. Ta opcja jest wyłączona, jeśli bieżąca wartość skalowania jest 180.
+
+**Minimalna szerokość**
+
+Określa ustawienie minimalnej szerokości. Minimalna szerokość można zmienić w programie *App.xaml*.
+
+**Motyw**
+
+Określa układu aplikacji. Na przykład może przełączyć między **ciemny** i **światła** motywu.
+
+**Pokaż w przeglądarce chrome**
+
+Włącza lub wyłącza ramki symulowane tablet wokół aplikacji w widoku Projekt. Zaznacz pole wyboru, aby wyświetlić ramki.
+
+**Przytnij do ekranu**
+
+Określa tryb wyświetlania. Zaznacz pole wyboru, kiedy należy przyciąć rozmiar dokumentu do rozmiaru ekranu.
 
 ## <a name="document-outline-window"></a>Okno konspektu dokumentu
- Okno konspektu dokumentu w Projektancie XAML pomaga wykonywać następujące zadania:
 
--   Wyświetlanie hierarchicznej struktury wszystkich elementów w obszarze kompozycji.
+Okno konspektu dokumentu w Projektancie XAML pomaga wykonywać następujące zadania:
 
--   Wybierz elementy, dzięki czemu możesz modyfikować je (przeniesienie ich wokół w hierarchii, zmodyfikuj je w obszarze kompozycji, ustawiać ich właściwości w oknie dialogowym właściwości i tak dalej). Aby uzyskać więcej informacji, zobacz [Praca z elementami w Projektancie XAML](../designers/working-with-elements-in-xaml-designer.md)
+- Wyświetlanie hierarchicznej struktury wszystkich elementów w obszarze kompozycji.
 
--   Tworzenie i modyfikowanie szablonów elementów będących kontrolkami.
+- Wybierz elementy, dzięki czemu możesz modyfikować je (przeniesienie ich wokół w hierarchii, zmodyfikuj je w obszarze kompozycji, ustawiać ich właściwości w oknie dialogowym właściwości i tak dalej). Aby uzyskać więcej informacji, zobacz [Praca z elementami w Projektancie XAML](../designers/working-with-elements-in-xaml-designer.md)
 
--   Użyj menu kontekstowego dla wybranych elementów. Tego samego menu jest również dostępny dla wybranych elementów w obszarze kompozycji.
+- Tworzenie i modyfikowanie szablonów elementów będących kontrolkami.
 
- Aby wyświetlić **konspekt dokumentu** okna, na pasku menu wybierz **widoku** > **Windows inne** > **konspekt dokumentu**.
+- Użyj menu kontekstowego dla wybranych elementów. Tego samego menu jest również dostępny dla wybranych elementów w obszarze kompozycji.
 
- ![Okno konspektu dokumentu](../designers/media/xaml_editor_doc_outline.png)
+Aby wyświetlić **konspekt dokumentu** okna, na pasku menu wybierz **widoku** > **Windows inne** > **konspekt dokumentu**.
 
- Są to opcje dostępne w **konspekt dokumentu** okna:
+![Okno konspektu dokumentu](../designers/media/xaml_editor_doc_outline.png)
 
- **Konspekt dokumentu** Widok główny w **konspekt dokumentu** okno wyświetla hierarchię dokumentu w strukturze drzewa. Hierarchiczny charakter konspekt dokumentu można użyć, aby zbadać dokument na różnych poziomach szczegółowości i blokowanie i ukrywanie elementów, pojedynczo lub w grupach.
+Są to opcje dostępne w **konspekt dokumentu** okna:
 
- **Pokaż/Ukryj** Wyświetla lub ukrywa elementy obszaru kompozycji, które odpowiadają elementom konspekt dokumentu. Użyj **Pokaż/Ukryj** przycisków, które wyświetlić symbol oka po pokazano, lub naciśnij klawisz **Ctrl**+**H** do ukrywania elementów i **Shift** + **Ctrl**+**H** umożliwiający ich wyświetlenie.
+**Konspekt dokumentu**
 
- **Zablokuj/Odblokuj** blokuje albo odblokowuje elementy obszaru kompozycji, które odpowiadają elementom konspekt dokumentu. Nie można zmodyfikować zablokowanych elementów. Użyj **Zablokuj/Odblokuj** przyciski wyświetlania symbolu kłódki, gdy zablokowany, lub naciśnij klawisz **Ctrl**+**L** elementy blokady i **Shift** + **Ctrl**+**L** je odblokować.
+Widok główny w **konspekt dokumentu** okno wyświetla hierarchię dokumentu w strukturze drzewa. Hierarchiczny charakter konspekt dokumentu można użyć, aby zbadać dokument na różnych poziomach szczegółowości i blokowanie i ukrywanie elementów, pojedynczo lub w grupach.
 
- **Zwróć zakres do pageRoot** opcji w górnej części **konspekt dokumentu** okno, które znajduje się symbol strzałki, zwraca konspekt dokumentu do poprzedniego zakresu. Zakresu działa ma zastosowanie tylko wtedy, gdy jesteś w zakresie stylu lub szablonu.
+**Pokaż/Ukryj**
+
+Wyświetla lub ukrywa elementy obszaru kompozycji, które odpowiadają elementom konspekt dokumentu. Użyj **Pokaż/Ukryj** przycisków, które wyświetlić symbol oka po pokazano, lub naciśnij klawisz **Ctrl**+**H** do ukrywania elementów i **Shift** + **Ctrl**+**H** umożliwiający ich wyświetlenie.
+
+**Zablokuj/Odblokuj**
+
+Blokuje albo odblokowuje elementy obszaru kompozycji, które odpowiadają elementom konspekt dokumentu. Nie można zmodyfikować zablokowanych elementów. Użyj **Zablokuj/Odblokuj** przyciski wyświetlania symbolu kłódki, gdy zablokowany, lub naciśnij klawisz **Ctrl**+**L** elementy blokady i **Shift** + **Ctrl**+**L** je odblokować.
+
+**Zwróć zakres do pageRoot**
+
+Opcja w górnej części **konspekt dokumentu** okno, które znajduje się symbol strzałki, zwraca konspekt dokumentu do poprzedniego zakresu. Zakresu działa ma zastosowanie tylko wtedy, gdy jesteś w zakresie stylu lub szablonu.
 
 ## <a name="properties-window"></a>Okno właściwości
- **Właściwości** okno służy do ustawiania wartości właściwości kontrolek. Poniżej przedstawiono wygląda następująco:
 
- ![Okno właściwości](../designers/media/xaml_editor_prop_window.png)
+**Właściwości** okno służy do ustawiania wartości właściwości kontrolek. Poniżej przedstawiono wygląda następująco:
 
- Istnieją różne opcje w górnej części **właściwości** okna. Nazwa aktualnie wybranego elementu można zmienić za pomocą **nazwa** pole. W lewym górnym rogu istnieje ikona reprezentująca obecnie wybranego elementu. Aby ustawić właściwości według kategorii lub alfabetycznie, kliknij przycisk **kategorii**, **nazwa**, lub **źródła** w **Rozmieść według** listy. Aby wyświetlić listę zdarzeń dla formantu, kliknij **zdarzenia** przycisk, który jest wyświetlany symbol bolt pod kątem obsługi. Aby wyszukać właściwość, rozpocznij wpisywanie nazwy właściwości w **wyszukującą** pole. **Właściwości** oknie zostaną wyświetlone właściwości, spełniających kryteria wyszukiwania. Niektóre właściwości umożliwiają ustawianie zaawansowanych właściwości, wybierając przycisk strzałki w dół. Aby uzyskać więcej informacji na temat używania właściwości i obsługa zdarzeń, zobacz [Szybki Start: dodawanie formantów i obsługa zdarzeń](http://go.microsoft.com/fwlink/?LinkID=247983)
+![Okno właściwości](../designers/media/xaml_editor_prop_window.png)
 
- Po prawej stronie każdej właściwości jest wartość *znacznik właściwości* wyświetlany jako symbol pola. Wygląd znacznika właściwość wskazuje, czy powiązanie danych lub zasób stosowany do właściwości. Na przykład symbol białe pola wskazuje wartość domyślną, symbol czarne pole zwykle wskazuje, że zastosowano zasobu lokalnego i pole pomarańczowy zwykle wskazuje, że zastosowano powiązanie danych. Po kliknięciu znacznik właściwości, przejdź do definicji stylu, otworzyć Konstruktor powiązań danych lub otworzyć selektor zasobów.
+Istnieją różne opcje w górnej części **właściwości** okna. Nazwa aktualnie wybranego elementu można zmienić za pomocą **nazwa** pole. W lewym górnym rogu istnieje ikona reprezentująca obecnie wybranego elementu. Aby ustawić właściwości według kategorii lub alfabetycznie, kliknij przycisk **kategorii**, **nazwa**, lub **źródła** w **Rozmieść według** listy. Aby wyświetlić listę zdarzeń dla formantu, kliknij **zdarzenia** przycisk, który jest wyświetlany symbol bolt pod kątem obsługi. Aby wyszukać właściwość, rozpocznij wpisywanie nazwy właściwości w **wyszukującą** pole. **Właściwości** oknie zostaną wyświetlone właściwości, spełniających kryteria wyszukiwania. Niektóre właściwości umożliwiają ustawianie zaawansowanych właściwości, wybierając przycisk strzałki w dół. Aby uzyskać więcej informacji na temat używania właściwości i obsługa zdarzeń, zobacz [Szybki Start: dodawanie formantów i obsługa zdarzeń](http://go.microsoft.com/fwlink/?LinkID=247983)
+
+Po prawej stronie każdej właściwości jest wartość *znacznik właściwości* wyświetlany jako symbol pola. Wygląd znacznika właściwość wskazuje, czy powiązanie danych lub zasób stosowany do właściwości. Na przykład symbol białe pola wskazuje wartość domyślną, symbol czarne pole zwykle wskazuje, że zastosowano zasobu lokalnego i pole pomarańczowy zwykle wskazuje, że zastosowano powiązanie danych. Po kliknięciu znacznik właściwości, przejdź do definicji stylu, otworzyć Konstruktor powiązań danych lub otworzyć selektor zasobów.
 
 ## <a name="see-also"></a>Zobacz także
 

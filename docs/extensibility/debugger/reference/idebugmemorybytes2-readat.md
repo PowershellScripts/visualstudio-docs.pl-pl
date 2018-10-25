@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 612a065286723e3c2b68a9ce5bd31c850d030959
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e3989ef8c79e4304e3bda3e99418da1973e6e0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912951"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
-Odczytuje sekwencję bajtów, rozpoczynając od podanej lokalizacji.  
+Odczytuje sekwencji bajtów, zaczynając od danej lokalizacji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -53,28 +53,28 @@ int ReadAt(
  [in] [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt, który określa, gdzie należy rozpocząć odczyt bajtów.  
   
  `dwCount`  
- [in] Liczba bajtów do odczytania. Określa również długość `rgbMemory` tablicy.  
+ [in] Liczba bajtów do odczytania. Również określa długość `rgbMemory` tablicy.  
   
  `rgbMemory`  
- [w, out] Tablicy wypełnione bajtów odczytanych w rzeczywistości.  
+ [out w] Tablica wypełniona Bajty odczytane.  
   
  `pdwRead`  
- [out] Zwraca liczbę bajtów ciągłe faktycznie odczytu.  
+ [out] Zwraca liczbę bajtów ciągłych odczytane.  
   
  `pdwUnreadable`  
- [w, out] Zwraca liczbę bajtów nie można go odczytać. Może być wartością null, jeśli klient jest zainteresowany liczba bajtów nie można go odczytać.  
+ [out w] Zwraca liczbę bajtów nie można go odczytać. Może być wartością null, jeśli klient jest zainteresowany liczbę bajtów nie można go odczytać.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli wnosi 100 bajtów i odczytanie jest pierwszym 50, 20 dalej są nieczytelne, a pozostałe 30 można odczytać, ta metoda zwraca:  
+ Jeśli wymagane są 100 bajtów i 50 pierwszych można odczytać, następnych 20 są nieczytelne i pozostałe 30 do odczytu, Metoda ta zwraca:  
   
  *`pdwRead` = 50  
   
  *`pdwUnreadable` = 20  
   
- W takim przypadku ponieważ `*pdwRead + *pdwUnreadable < dwCount`, wywołujący musi wywoływania dodatkowe pozostałe 30 bajtów 100 oryginalne żądanie odczytu i [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) przekazano obiekt `pStartContext` parametru musi być zaawansowane przez 70.  
+ W tym przypadku ponieważ `*pdwRead + *pdwUnreadable < dwCount`, obiekt wywołujący musi wywoływania dodatkowych odczytu pozostałe bajty 30 oryginalnego 100, żądane i [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) obiekt przekazany w `pStartContext` parametru musi być zaawansowane za 70.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)   

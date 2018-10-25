@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e58b4896b7935926904ecf37f4d8d130618d5961
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c7264648775f078af16a0a26ecc3bba3a129374c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909866"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
-Pobiera typ danego jego typu podstawowego.  
+Pobiera typ danego typu pierwotnego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,13 +42,13 @@ int GetTypeFromPrimitive(
   
 #### <a name="parameters"></a>Parametry  
  `dwCorElementType`  
- [in] Wartość z [CorElementType — wyliczenie](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) reprezentujący typ pierwotny.  
+ [in] Wartość z [corelementtype — wyliczenie](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) reprezentujący typu pierwotnego.  
   
  `ppType`  
  [out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) reprezentujący typ.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

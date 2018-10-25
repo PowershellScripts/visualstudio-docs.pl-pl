@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 10bfb61ae9e3750926dad39ad3c614d8daf8f867
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 83d5eac54560d9c0c1960808d39a909858db323d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43224965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900673"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Rozszerzanie programu Visual Studio dla komputerów Mac
 
@@ -162,4 +162,4 @@ Aby uzyskać informacji na temat zakresu obszarów, które są dostępne dla roz
 ## <a name="additional-information"></a>Dodatkowe informacje
 
 > [!NOTE]
-Obecnie pracujemy nad ulepszaniem scenariuszy rozszerzalności programu Visual Studio dla komputerów Mac. Jeśli tworzysz rozszerzeń i uzyskać dodatkowe informacje lub chcesz przekazać opinię, wypełnij [programu Visual Studio do tworzenia rozszerzenia Mac](https://aka.ms/vsmac-extensions-survey) formularza.
+> Obecnie pracujemy nad ulepszaniem scenariuszy rozszerzalności programu Visual Studio dla komputerów Mac. Jeśli tworzysz rozszerzeń i uzyskać dodatkowe informacje lub chcesz przekazać opinię, wypełnij [programu Visual Studio do tworzenia rozszerzenia Mac](https://aka.ms/vsmac-extensions-survey) formularza.

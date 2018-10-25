@@ -30,12 +30,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa414aacc8b7ffc39132157686abee860cac994c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cdefbbc16021931e3d31dd2d46f4e6509c4dd17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287763"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907589"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Porady: korzystanie z okna dezasemblacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,23 +46,23 @@ Ta funkcja jest dostępna tylko wtedy, gdy włączone jest debugowanie na poziom
   
  Oprócz instrukcje montażu **dezasemblacji** okna można wyświetlić następujące informacje opcjonalne:  
   
--   Adres pamięci, w którym znajduje się każdą instrukcję. Dla natywnych aplikacji jest to adres pamięci rzeczywistych. W przypadku języka Visual Basic, C# lub kodu zarządzanego jest przesunięcie od początku funkcji.  
+- Adres pamięci, w którym znajduje się każdą instrukcję. Dla natywnych aplikacji jest to adres pamięci rzeczywistych. W przypadku języka Visual Basic, C# lub kodu zarządzanego jest przesunięcie od początku funkcji.  
   
--   Kod źródłowy, z którego pochodzi kod zestawu.  
+- Kod źródłowy, z którego pochodzi kod zestawu.  
   
--   Bajty kodu — bajtów reprezentujących rzeczywistą lub instrukcji MSIL.  
+- Bajty kodu — bajtów reprezentujących rzeczywistą lub instrukcji MSIL.  
   
--   Nazwy symboli dla adresów pamięci.  
+- Nazwy symboli dla adresów pamięci.  
   
--   Numery wierszy odpowiadających do kodu źródłowego.  
+- Numery wierszy odpowiadających do kodu źródłowego.  
   
- Instrukcje języka asemblera składają się z klawiszy skrótu skrótów dla instrukcji nazwy i symbole, które reprezentują zmiennych, rejestrów i stałe. Każdą instrukcję języka maszyny jest reprezentowany przez jeden język asemblera skrót klawiszowy, zwykle następuje jeden lub więcej zmiennych, rejestrów lub stałe.  
+  Instrukcje języka asemblera składają się z klawiszy skrótu skrótów dla instrukcji nazwy i symbole, które reprezentują zmiennych, rejestrów i stałe. Każdą instrukcję języka maszyny jest reprezentowany przez jeden język asemblera skrót klawiszowy, zwykle następuje jeden lub więcej zmiennych, rejestrów lub stałe.  
   
- Jeśli nie można odczytać języka asembler i chcesz w pełni korzystać z okna dezasemblacji, zapoznaj się z dobrej książki na programowania języka asemblera. Język asemblera programowania jest poza zakres, w jaki firma Microsoft adres, w tym krótkie wprowadzenie do okna dezasemblacji.  
+  Jeśli nie można odczytać języka asembler i chcesz w pełni korzystać z okna dezasemblacji, zapoznaj się z dobrej książki na programowania języka asemblera. Język asemblera programowania jest poza zakres, w jaki firma Microsoft adres, w tym krótkie wprowadzenie do okna dezasemblacji.  
   
- Ponieważ kod zestawu rolę odgrywa w rejestrach procesora lub, w przypadku kodu zarządzanego, rejestruje środowiska uruchomieniowego języka wspólnego, użytkownik będzie często przydatne może użyć okna dezasemblacji w połączeniu z okna rejestrów, dzięki czemu można zbadać rejestr zawartość.  
+  Ponieważ kod zestawu rolę odgrywa w rejestrach procesora lub, w przypadku kodu zarządzanego, rejestruje środowiska uruchomieniowego języka wspólnego, użytkownik będzie często przydatne może użyć okna dezasemblacji w połączeniu z okna rejestrów, dzięki czemu można zbadać rejestr zawartość.  
   
- Prawdopodobnie będzie nigdy nie masz pragnienie lub konieczne wyświetlenie kodu maszynowego instrukcje w ich pierwotne, numerycznego formularza, a nie języka asemblera. Jednak jeśli chcesz to zrobić, możesz użyć okna pamięci, w tym celu lub wybrać bajty kodu z menu skrótów w oknie demontażu.  
+  Prawdopodobnie będzie nigdy nie masz pragnienie lub konieczne wyświetlenie kodu maszynowego instrukcje w ich pierwotne, numerycznego formularza, a nie języka asemblera. Jednak jeśli chcesz to zrobić, możesz użyć okna pamięci, w tym celu lub wybrać bajty kodu z menu skrótów w oknie demontażu.  
   
 > [!NOTE]
 >  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [Dostosowywanie ustawień środowiska deweloperskiego, w programie Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

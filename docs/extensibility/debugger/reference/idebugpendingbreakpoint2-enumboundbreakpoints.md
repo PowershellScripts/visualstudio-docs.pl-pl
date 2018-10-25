@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4afde641fe7e40c2444ef0477c3ca536aeea9fd3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0747722d62cd86cd73d42f0757a4744686e3c7af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901726"
 ---
 # <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
-Wylicza wszystkie punkty przerwania powiązany z tym oczekującym punktem przerwania.  
+Wylicza wszystkie punkty przerwania, powiązany z tym oczekujący punkt przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -42,13 +42,13 @@ int EnumBoundBreakpoints(
   
 #### <a name="parameters"></a>Parametry  
  `ppEnum`  
- [out] Zwraca [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) obiektu, który wylicza powiązane punkty przerwania.  
+ [out] Zwraca [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) obiekt, który wylicza powiązane punkty przerwania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli punkt przerwania został usunięty.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Zwraca `E_BP_DELETED` Jeśli punkt przerwania został usunięty.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę dla prostego `CPendingBreakpoint` obiekt ujawniający [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CPendingBreakpoint` obiekt ujawniający [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interfejsu.  
   
 ```cpp  
 HRESULT CPendingBreakpoint::EnumBoundBreakpoints(IEnumDebugBoundBreakpoints2** ppEnum)    

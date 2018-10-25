@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc5c7367a8b134324073d40452ec9b7ec20c1ffc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eff83198e337a3f89c88663722bf34046d3d4f62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127663"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905743"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
-Określa typ obiektu z ewaluatora wyrażenia.  
+Określa typ obiektu z Ewaluator wyrażeń.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -73,34 +73,34 @@ public enum enum_OBJECT_TYPE {
  Wskazuje, że obiekt jest wartością logiczną.  
   
  OBJECT_TYPE_CHAR  
- Wskazuje, że obiekt jest znak.  
+ Wskazuje, że obiekt jest znakiem.  
   
  OBJECT_TYPE_I1  
- Wskazuje, że obiekt jest całkowita jednobajtowe.  
+ Wskazuje, że obiekt jest liczba całkowita ze znakiem jednobajtowych.  
   
  OBJECT_TYPE_U1  
- Wskazuje, że obiekt jest jednobajtowych liczbę całkowitą bez znaku.  
+ Wskazuje, że obiekt jest liczba całkowita bez znaku jednobajtowych.  
   
  OBJECT_TYPE_I2  
- Wskazuje, czy obiekt jest całkowita dwubajtowych.  
+ Wskazuje, że obiekt jest liczba całkowita ze znakiem dwóch bajtów.  
   
  OBJECT_TYPE_U2  
  Wskazuje, że obiekt jest liczba całkowita bez znaku dwubajtowego.  
   
  OBJECT_TYPE_I4  
- Wskazuje, że obiekt jest całkowita 4 bajtowych.  
+ Wskazuje, że obiekt jest całkowita czwartego bajtu.  
   
  OBJECT_TYPE_U4  
- Wskazuje, czy obiekt jest 4 bajtowych liczbę całkowitą bez znaku.  
+ Wskazuje, że obiekt jest liczba całkowita bez znaku czwartego bajtu.  
   
  OBJECT_TYPE_I8  
- Wskazuje, czy obiekt jest 8 bajtowych liczbę całkowitą ze znakiem.  
+ Wskazuje, że obiekt jest całkowita 8 bajtową.  
   
  OBJECT_TYPE_U8  
  Wskazuje, że obiekt jest liczbą całkowitą bez znaku ośmiu bajtów.  
   
  OBJECT_TYPE_R4  
- Wskazuje, że obiekt jest 4 bajtowa liczba zmiennoprzecinkowa.  
+ Wskazuje, że obiekt jest czterobajtową liczbą zmiennoprzecinkową.  
   
  OBJECT_TYPE_R8  
  Wskazuje, że obiekt jest 8 bajtowa liczba zmiennoprzecinkowa.  
@@ -109,13 +109,13 @@ public enum enum_OBJECT_TYPE {
  Wskazuje, że obiekt jest obiektem.  
   
  OBJECT_TYPE_NULL  
- Wskazuje, że obiekt ma wartość NULL.  
+ Wskazuje, czy obiekt ma wartość NULL.  
   
  OBJECT_TYPE_CLASS  
  Wskazuje, że obiekt jest klasą.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekazany jako argument [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) i [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) metody.  
+ Przekazywany jako argument do [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) i [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: ee.h  

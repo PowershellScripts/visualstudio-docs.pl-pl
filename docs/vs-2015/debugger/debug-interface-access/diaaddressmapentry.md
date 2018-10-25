@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ae4e4de3d3f81f335609201ce510b64a4b0f385
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f1b06773cbc160c683c87c0ec2cd8b4f54436f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910670"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ struct DiaAddressMapEntry {
   
  Do translacji adresów `addrA`, na ilustracji A adres `addrB`, na ilustracji B, wykonaj następujące czynności:  
   
-1.  Wyszukaj mapy dla wpisu, `e`, za pomocą największej `rva` mniejsze niż lub równe `addrA`.  
+1. Wyszukaj mapy dla wpisu, `e`, za pomocą największej `rva` mniejsze niż lub równe `addrA`.  
   
-2.  Ustaw `delta = addrA – e.rva`.  
+2. Ustaw `delta = addrA – e.rva`.  
   
-3.  Ustaw `addrB = e.rvaTo + delta`.  
+3. Ustaw `addrB = e.rvaTo + delta`.  
   
- Tablica `DiaAddressMapEntry` struktury jest przekazywany do [idiaaddressmap::set_addressmap —](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) metody.  
+   Tablica `DiaAddressMapEntry` struktury jest przekazywany do [idiaaddressmap::set_addressmap —](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: dia2.h  

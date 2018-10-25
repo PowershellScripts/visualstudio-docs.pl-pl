@@ -18,25 +18,25 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5f8840ba13d9b0caed2631d328593a0c23a110cd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b7dfaa4fb659418c26d5aa0144fac4188ef4b16b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173287"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899386"
 ---
 # <a name="debug-stepping-options-legacy"></a>Opcje debugowania wykonywania krokowego (starsza wersja)
 W tym temacie opisano sposób debugowania [!INCLUDE[wf](../includes/wf-md.md)] aplikacji, które mają działań w starszej wersji [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Użyj starszego [!INCLUDE[wfd2](../includes/wfd2-md.md)] konieczność docelowy: [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] lub [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Kiedy debugujesz starsze działania, które mają wykonania, takie jak **działaniu równoległym** lub **grupy ConditionedActivityGroup**, używasz jednego z poniższych dwóch opcji krokowo kodu .  
   
--   **Rozgałęzienie, przechodzenie krok po kroku.** Ten tryb przechodzenie krok po kroku umożliwia krok po kroku i debugować gałąź działania złożonego, takich jak **działaniu równoległym** lub **ConditionalActivityGroup** działania. Gdy ta opcja umożliwia debugowanie nie zauważysz, że zmiana w formancie występuje ze względu na równoczesne wykonywanie innych działań w przepływie pracy. Debuger kroki tylko do działania w obecnie zaznaczonej gałęzi, podczas gdy inne działania w przepływie pracy, które mogą być wykonywane jednocześnie. Na przykład domyślnie skrajnie po lewej stronie gałęzi w **działaniu równoległym** działanie i pierwszego działania podrzędne **grupy ConditionedActivityGroup** działania są używane do przechodzenia. Jeśli użytkownik jest zainteresowany debugowania dowolne inne działanie gałęzi lub podrzędnej, jawnych punktów przerwania muszą znajdować się w gałęzi lub podrzędnej działania. Przechodzenie krok po kroku będzie kontynuowana w tej gałęzi, gdy punkt przerwania zostanie wyzwolony.  
+- **Rozgałęzienie, przechodzenie krok po kroku.** Ten tryb przechodzenie krok po kroku umożliwia krok po kroku i debugować gałąź działania złożonego, takich jak **działaniu równoległym** lub **ConditionalActivityGroup** działania. Gdy ta opcja umożliwia debugowanie nie zauważysz, że zmiana w formancie występuje ze względu na równoczesne wykonywanie innych działań w przepływie pracy. Debuger kroki tylko do działania w obecnie zaznaczonej gałęzi, podczas gdy inne działania w przepływie pracy, które mogą być wykonywane jednocześnie. Na przykład domyślnie skrajnie po lewej stronie gałęzi w **działaniu równoległym** działanie i pierwszego działania podrzędne **grupy ConditionedActivityGroup** działania są używane do przechodzenia. Jeśli użytkownik jest zainteresowany debugowania dowolne inne działanie gałęzi lub podrzędnej, jawnych punktów przerwania muszą znajdować się w gałęzi lub podrzędnej działania. Przechodzenie krok po kroku będzie kontynuowana w tej gałęzi, gdy punkt przerwania zostanie wyzwolony.  
   
--   **Wystąpienia, przechodzenie krok po kroku.** Przechodzenie krok po kroku ten tryb pozwala na krok po kroku i debugowania równocześnie wykonywanych działań w przepływie pracy. Po wybraniu tej opcji można zauważyć, że zmiana w formancie występuje, gdy jednocześnie wykonywania działań uruchamianych w ramach przepływu pracy.  
+- **Wystąpienia, przechodzenie krok po kroku.** Przechodzenie krok po kroku ten tryb pozwala na krok po kroku i debugowania równocześnie wykonywanych działań w przepływie pracy. Po wybraniu tej opcji można zauważyć, że zmiana w formancie występuje, gdy jednocześnie wykonywania działań uruchamianych w ramach przepływu pracy.  
   
- Domyślnie opcja przechodzenia krok po kroku gałęzi jest zaznaczone, a użytkownicy mogą przełączać się pomiędzy dwiema opcjami podczas debugowania przepływem pracy starszego.  
+  Domyślnie opcja przechodzenia krok po kroku gałęzi jest zaznaczone, a użytkownicy mogą przełączać się pomiędzy dwiema opcjami podczas debugowania przepływem pracy starszego.  
   
- Należy wybrać wystąpienie przechodzenie krok po kroku opcji podczas debugowania przepływów pracy automatu stanów starszej wersji.  
+  Należy wybrać wystąpienie przechodzenie krok po kroku opcji podczas debugowania przepływów pracy automatu stanów starszej wersji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Debugowanie starszych wersji przepływów pracy](../workflow-designer/debugging-legacy-workflows.md)   

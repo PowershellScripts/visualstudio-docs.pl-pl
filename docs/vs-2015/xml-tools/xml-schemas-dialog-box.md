@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e229919a625241f270090eb59be4aa8cd478c18c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f97bfca4623a826130e68a5399cc2ab86f784cbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899594"
 ---
 # <a name="xml-schemas-dialog-box"></a>Schematy XML, okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,23 +33,23 @@ ms.locfileid: "49251696"
  **Użyj**  
  Wybierz, jak ma być używany schemat XML.  
   
--   **Automatyczne**. W tym schemacie nie jest używany przez bieżącego dokumentu, ale są dostępne na automatyczne kojarzenie. Jeśli dokument XML deklaruje przestrzeni nazw, który odpowiada `targetNamespace` tego schematu schemat zostaną automatycznie skojarzone i znajduje się w zestawie schematów.  
+- **Automatyczne**. W tym schemacie nie jest używany przez bieżącego dokumentu, ale są dostępne na automatyczne kojarzenie. Jeśli dokument XML deklaruje przestrzeni nazw, który odpowiada `targetNamespace` tego schematu schemat zostaną automatycznie skojarzone i znajduje się w zestawie schematów.  
   
--   **Użyj tego schematu**. Ten schemat jest on używany przez bieżącego dokumentu. Użytkownik ma jawnie zażądano, można użyć tego schematu, klikając tę kolumnę lub schemat został automatycznie skojarzone w oparciu o dopasowanie `targetNamespace`.  
+- **Użyj tego schematu**. Ten schemat jest on używany przez bieżącego dokumentu. Użytkownik ma jawnie zażądano, można użyć tego schematu, klikając tę kolumnę lub schemat został automatycznie skojarzone w oparciu o dopasowanie `targetNamespace`.  
   
--   **Nie używaj wybranych schematów**. W tym schemacie nie jest używany przez bieżącego dokumentu, nawet wtedy, gdy schemat miała zgodną `targetNamespace`. To ustawienie może być przydatne w przypadku rozwiązywania konfliktów, jeśli istnieje więcej niż jedna wersja ten sam schemat w pamięci podręcznej schematów lub rozwiązania.  
+- **Nie używaj wybranych schematów**. W tym schemacie nie jest używany przez bieżącego dokumentu, nawet wtedy, gdy schemat miała zgodną `targetNamespace`. To ustawienie może być przydatne w przypadku rozwiązywania konfliktów, jeśli istnieje więcej niż jedna wersja ten sam schemat w pamięci podręcznej schematów lub rozwiązania.  
   
- **TARGET Namespace**  
- Wyświetla docelowego obszaru nazw, skojarzone ze schematem XML.  
+  **TARGET Namespace**  
+  Wyświetla docelowego obszaru nazw, skojarzone ze schematem XML.  
   
- **Nazwa pliku**  
- Wyświetla nazwę pliku schematu XML.  
+  **Nazwa pliku**  
+  Wyświetla nazwę pliku schematu XML.  
   
- **Add**  
- Otwiera **otwieranie schematu XSD** okno dialogowe, które umożliwia wybranie dodatkowe schematy do dodania do zestawu schematów. Po dodaniu schematu do schematu ustawiony **użyj** jest równa wartości w kolumnie **używają tego schematu**.  
+  **Add**  
+  Otwiera **otwieranie schematu XSD** okno dialogowe, które umożliwia wybranie dodatkowe schematy do dodania do zestawu schematów. Po dodaniu schematu do schematu ustawiony **użyj** jest równa wartości w kolumnie **używają tego schematu**.  
   
- **Usuń**  
- Usuwa aktualnie wybranego schematu z zestawu schematów. Spowoduje to usunięcie schematu z pamięci podręcznej schematów w pamięci, ale nie z systemu plików.  
+  **Usuń**  
+  Usuwa aktualnie wybranego schematu z zestawu schematów. Spowoduje to usunięcie schematu z pamięci podręcznej schematów w pamięci, ale nie z systemu plików.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Składniki edytora XML](../xml-tools/xml-editor-components.md)   

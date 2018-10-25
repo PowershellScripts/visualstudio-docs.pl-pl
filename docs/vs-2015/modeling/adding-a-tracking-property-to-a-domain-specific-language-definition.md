@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 183c459871f991aedb3cec19c7a83105091d2706
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183006"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894381"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Dodawanie właściwości śledzenia do definicji języka specyficznego dla domeny
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ W tym instruktażu przedstawiono sposób dodawania właściwości śledzenia do 
   
  W tym instruktażu utworzysz języka specyficznego dla domeny (DSL), który ma Namespace, właściwość, która ma wartość domyślną, w oparciu o właściwość Namespace domyślny model śledzenia. Aby uzyskać więcej informacji na temat śledzenia właściwości, zobacz [Definiowanie właściwości śledzenia](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
--   Obsługa narzędzia DSL, śledzenie deskryptorów właściwości. Jednak projektanta DSL nie można dodać właściwości śledzenia do języka. W związku z tym należy dodać niestandardowy kod definiować ani implementować właściwości śledzenia.  
+- Obsługa narzędzia DSL, śledzenie deskryptorów właściwości. Jednak projektanta DSL nie można dodać właściwości śledzenia do języka. W związku z tym należy dodać niestandardowy kod definiować ani implementować właściwości śledzenia.  
   
- Właściwości śledzenia ma dwa stany: śledzenie i zaktualizowane przez użytkownika. Śledzenie właściwości oferują następujące funkcje:  
+  Właściwości śledzenia ma dwa stany: śledzenie i zaktualizowane przez użytkownika. Śledzenie właściwości oferują następujące funkcje:  
   
--   W stanie śledzenia, obliczana jest wartość właściwości śledzenia, a wartość jest aktualizowana co inne właściwości, zmiana modelu.  
+- W stanie śledzenia, obliczana jest wartość właściwości śledzenia, a wartość jest aktualizowana co inne właściwości, zmiana modelu.  
   
--   Gdy na zaktualizowanej według stanu użytkownika, wartość właściwości śledzenia zachowuje wartość, do którego użytkownik ostatnim ustawieniu właściwości.  
+- Gdy na zaktualizowanej według stanu użytkownika, wartość właściwości śledzenia zachowuje wartość, do którego użytkownik ostatnim ustawieniu właściwości.  
   
--   W **właściwości** oknie **resetowania** polecenia właściwości śledzenia jest włączone tylko, gdy właściwość jest na zaktualizowanej według stanu użytkownika. **Resetowania** polecenie ustawia parametry logowania właściwości śledzenia do śledzenia stanu.  
+- W **właściwości** oknie **resetowania** polecenia właściwości śledzenia jest włączone tylko, gdy właściwość jest na zaktualizowanej według stanu użytkownika. **Resetowania** polecenie ustawia parametry logowania właściwości śledzenia do śledzenia stanu.  
   
--   W **właściwości** okna, gdy właściwość śledzenia jest w stanie śledzenia, a jego wartość jest wyświetlana w regularnych czcionki.  
+- W **właściwości** okna, gdy właściwość śledzenia jest w stanie śledzenia, a jego wartość jest wyświetlana w regularnych czcionki.  
   
--   W **właściwości** okna, gdy właściwość śledzenia na zaktualizowanej według stanu użytkownika, jego wartość jest wyświetlany czcionką pogrubioną.  
+- W **właściwości** okna, gdy właściwość śledzenia na zaktualizowanej według stanu użytkownika, jego wartość jest wyświetlany czcionką pogrubioną.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Przed rozpoczęciem tego instruktażu, należy najpierw zainstalować te składniki:  

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cec66860bb75cb62e71e2924ed728e1bd86ad59f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2ed411d632df544d47b376e59bc59b7331d8aa91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901810"
 ---
 # <a name="idebugdefaultport2queryislocal"></a>IDebugDefaultPort2::QueryIsLocal
-Ta metoda określa, czy ten port na komputerze lokalnym.  
+Ta metoda określa, czy ten port jest na komputerze lokalnym.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,7 +38,7 @@ int QueryIsLocal();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca `S_OK` czy ten port jest lokalny (na tym samym komputerze co wywołującego) lub `S_FALSE` Jeśli port jest na innym komputerze.  
+ Zwraca `S_OK` czy ten port jest lokalny (na tym samym komputerze co obiekt wywołujący) lub `S_FALSE` Jeśli port znajduje się na innym komputerze.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)

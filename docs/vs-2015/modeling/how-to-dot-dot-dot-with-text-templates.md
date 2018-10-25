@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e6a580a906ea228f04f8ec81b15eee6c143c6a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231507"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903819"
 ---
 # <a name="how-to--with-text-templates"></a>How to ... with — Szablony tekstowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,21 +54,21 @@ Szablony tekstu w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] wygodny sposób g
 ### <a name="invoke-methods-from-a-template"></a>Wywoływanie metod na podstawie szablonu  
  Jeśli metody już istnieje, na przykład w standardzie [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] klasy:  
   
--   Użyj \<#@assembly#> dyrektywy do załadowania zestawu oraz użyć \<#@import#> można ustawić kontekstu przestrzeni nazw. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca importowania](../modeling/t4-import-directive.md).  
+- Użyj \<#@assembly#> dyrektywy do załadowania zestawu oraz użyć \<#@import#> można ustawić kontekstu przestrzeni nazw. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca importowania](../modeling/t4-import-directive.md).  
   
-     Jeśli często ten sam zestaw zestawów i dyrektywy import, należy wziąć pod uwagę pisania procesora dyrektywy. W każdym szablonie można wywoływać procesor dyrektywy, którego można załadować zestawów i plików modelu i Ustaw kontekst przestrzeni nazw. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych procesorów T4 dotyczącej tekstu szablonu dyrektywy](../modeling/creating-custom-t4-text-template-directive-processors.md).  
+   Jeśli często ten sam zestaw zestawów i dyrektywy import, należy wziąć pod uwagę pisania procesora dyrektywy. W każdym szablonie można wywoływać procesor dyrektywy, którego można załadować zestawów i plików modelu i Ustaw kontekst przestrzeni nazw. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych procesorów T4 dotyczącej tekstu szablonu dyrektywy](../modeling/creating-custom-t4-text-template-directive-processors.md).  
   
- Jeśli piszesz metody samodzielnie:  
+  Jeśli piszesz metody samodzielnie:  
   
--   Jeśli piszesz szablonie tekstowym czasu wykonywania pisania definicji klasy częściowej, który ma taką samą nazwę jak szablon tekstowy środowiska uruchomieniowego. Dodaj dodatkowe metody do tej klasy.  
+- Jeśli piszesz szablonie tekstowym czasu wykonywania pisania definicji klasy częściowej, który ma taką samą nazwę jak szablon tekstowy środowiska uruchomieniowego. Dodaj dodatkowe metody do tej klasy.  
   
--   Blok sterowania cechami klasy zapisu `<#+ ... #>` , w którym można zadeklarować metody, właściwości i klasy prywatnej. Szablon tekstowy jest kompilowany, jest on przekształcany do klasy. Standardowe bloki sterujące `<#...#>` tekstu są przekształcane do pojedynczej metody i bloki cech klas są wstawiane jako elementy członkowskie w oddzielne. Aby uzyskać więcej informacji, zobacz [bloki formantów szablonów tekstowych](../modeling/text-template-control-blocks.md).  
+- Blok sterowania cechami klasy zapisu `<#+ ... #>` , w którym można zadeklarować metody, właściwości i klasy prywatnej. Szablon tekstowy jest kompilowany, jest on przekształcany do klasy. Standardowe bloki sterujące `<#...#>` tekstu są przekształcane do pojedynczej metody i bloki cech klas są wstawiane jako elementy członkowskie w oddzielne. Aby uzyskać więcej informacji, zobacz [bloki formantów szablonów tekstowych](../modeling/text-template-control-blocks.md).  
   
-     Metody zdefiniowane jako funkcje klasy może również zawierać bloki tekstu osadzonych.  
+   Metody zdefiniowane jako funkcje klasy może również zawierać bloki tekstu osadzonych.  
   
-     Zaleca się umieszczenie funkcje klasy w oddzielnym pliku, który można `<#@include#>` do jednego lub więcej plików szablonu.  
+   Zaleca się umieszczenie funkcje klasy w oddzielnym pliku, który można `<#@include#>` do jednego lub więcej plików szablonu.  
   
--   Pisanie metod w osobnym zestawie (Biblioteka klas) i wywoływać je z szablonu. Użyj `<#@assembly#>` dyrektywy można załadować zestawu, a `<#@import#>` do ustawienia kontekstu przestrzeni nazw. Należy pamiętać, że aby odbudować zestawu podczas jej debugowania, może być konieczne zatrzymać i ponownie uruchomić [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [dyrektywy T4 dotyczące szablonu tekstowego](../modeling/t4-text-template-directives.md).  
+- Pisanie metod w osobnym zestawie (Biblioteka klas) i wywoływać je z szablonu. Użyj `<#@assembly#>` dyrektywy można załadować zestawu, a `<#@import#>` do ustawienia kontekstu przestrzeni nazw. Należy pamiętać, że aby odbudować zestawu podczas jej debugowania, może być konieczne zatrzymać i ponownie uruchomić [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [dyrektywy T4 dotyczące szablonu tekstowego](../modeling/t4-text-template-directives.md).  
   
 ### <a name="generate-many-files-from-one-model-schema"></a>Generowanie wielu plików z jednego modelu schematu  
  Jeśli często Generuj pliki z modeli, które mają ten sam schemat XML lub baza danych:  

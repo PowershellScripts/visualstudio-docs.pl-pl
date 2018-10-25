@@ -13,17 +13,17 @@ ms.assetid: 767f5c22-8b87-49ca-92aa-a7a3f026469f
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8cc63f24f50f8ed0fecb9640ae4b2a5d2ec669be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a3ff92a52613910f481492c744116c8be04463d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224747"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908070"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>Element VSIXLanguagePack (schemat VSIX Language Pack)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Wymagane. Zawiera element główny pakietu językowego VSIX. Pakietu językowego VSIX zawiera informacje dotyczące instalacji zlokalizowanego pakietu VSIX.  
+Wymagana. Zawiera element główny pakietu językowego VSIX. Pakietu językowego VSIX zawiera informacje dotyczące instalacji zlokalizowanego pakietu VSIX.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -49,14 +49,14 @@ Wymagane. Zawiera element główny pakietu językowego VSIX. Pakietu językowego
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|`http://schemas.microsoft.com/developer/vsx-schema-lp/2010`|Wymagane. Lokalizacja pliku, który definiuje schemat pakietów językowych.|  
+|`http://schemas.microsoft.com/developer/vsx-schema-lp/2010`|Wymagana. Lokalizacja pliku, który definiuje schemat pakietów językowych.|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  
   
 |Element|Opis|  
 |-------------|-----------------|  
-|[LocalizedName, element](../extensibility/localizedname-element-vsix-language-pack-schema.md)|Wymagane. Zlokalizowana nazwa rozszerzenia do zainstalowania.|  
-|[LocalizedDescription, element](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)|Wymagane. Zlokalizowany opis rozszerzenia do zainstalowania.|  
+|[LocalizedName, element](../extensibility/localizedname-element-vsix-language-pack-schema.md)|Wymagana. Zlokalizowana nazwa rozszerzenia do zainstalowania.|  
+|[LocalizedDescription, element](../extensibility/localizeddescription-element-vsix-language-pack-schema.md)|Wymagana. Zlokalizowany opis rozszerzenia do zainstalowania.|  
 |[MoreInfoURL, element](../extensibility/moreinfourl-element-vsix-language-pack-schema.md)|Opcjonalna. Łącze do zlokalizowanych informacji o rozszerzeniu.|  
 |[License, element](../extensibility/license-element-vsix-language-pack-schema.md)|Opcjonalna. Ścieżka zlokalizowaną wersję pliku licencji dla rozszerzenia.|  
   
@@ -68,12 +68,12 @@ Wymagane. Zawiera element główny pakietu językowego VSIX. Pakietu językowego
   
 ## <a name="element-information"></a>Informacje o elementach  
   
-|||  
-|-|-|  
-|Przestrzeń nazw|http://schemas.microsoft.com/developer/vsx-schema-lp/2010|  
-|Nazwa schematu|VSIX Language Pack schematu|  
-|Plik walidacji|VSIXLanguagePackSchema.xsd|  
-|Może być pusta|Nie|  
+|                 |                                                           |
+|-----------------|-----------------------------------------------------------|
+|    Przestrzeń nazw    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
+|   Nazwa schematu   |                 VSIX Language Pack schematu                 |
+| Plik walidacji |                VSIXLanguagePackSchema.xsd                 |
+|  Może być pusta   |                            Nie                             |
   
 ## <a name="see-also"></a>Zobacz też  
  [Odwołanie do schematu VSX Language Pack](../extensibility/vsx-language-pack-schema-reference.md)   

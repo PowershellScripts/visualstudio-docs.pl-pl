@@ -24,29 +24,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c0359af3d55f6efe26b2ae3bde7bc7726f7d333
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635658"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900127"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Przewodnik: Tworzenie kolumny witryny, typu zawartości oraz list dla SharePoint
   Poniższe procedury przedstawiają sposób tworzenia kolumn niestandardowych witryny programu SharePoint — lub *pola*— a także typu zawartości, która korzysta z kolumny witryny. Pokazano również, jak utworzyć listę, która korzysta z nowego typu zawartości.  
   
  Ten instruktaż zawiera następujące zagadnienia:  
   
--   [Tworzenie kolumny niestandardowej witryny](#BKMK_CreatingCustSiteCols).  
+- [Tworzenie kolumny niestandardowej witryny](#BKMK_CreatingCustSiteCols).  
   
--   [Tworzenie niestandardowego typu zawartości](#BKMK_CreateCustContType).  
+- [Tworzenie niestandardowego typu zawartości](#BKMK_CreateCustContType).  
   
--   [Tworzenie listy](#BKMK_CreateList).  
+- [Tworzenie listy](#BKMK_CreateList).  
   
--   [Tworzenie listy](#BKMK_CreateList).  
+- [Tworzenie listy](#BKMK_CreateList).  
   
--   [Testowanie aplikacji](#BKMK_TestApp).  
+- [Testowanie aplikacji](#BKMK_TestApp).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  

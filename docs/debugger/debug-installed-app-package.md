@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 291f24c6ffdf885cf3d24c5ff163c2f4f911d7ce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3bb858f2ee20eb65c09dd4979f2bbba1470cbe0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908252"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Debugowanie zainstalowanego pakietu aplikacji w programie Visual Studio (platformy UWP)
 
@@ -78,18 +78,18 @@ Podczas debugowania zainstalowanego pakietu aplikacji na komputerze zdalnym po r
 
      Jeśli nie można dołączyć, przy użyciu nazwy komputera (po wybraniu **Start**), zamiast tego użyj adresu IP. Użyj adresu IP dla urządzeń z konsoli XBox, HoloLens i IoT.
 
-5. Wybierz sposób uwierzytelniania, wybierając opcję **tryb uwierzytelniania**.
+6. Wybierz sposób uwierzytelniania, wybierając opcję **tryb uwierzytelniania**.
 
     W przypadku większości aplikacji zachować wartość domyślną, **uniwersalny (protokół niezaszyfrowanym)**.
 
-6. Wybierz nazwę aplikacji, który chcesz debugować w obszarze **systemem** lub **nieuruchomiona** i wybierz polecenie **Start** lub (w przypadku uruchamiania aplikacji) **Dołącz**.
+7. Wybierz nazwę aplikacji, który chcesz debugować w obszarze **systemem** lub **nieuruchomiona** i wybierz polecenie **Start** lub (w przypadku uruchamiania aplikacji) **Dołącz**.
 
      Jeśli wybierzesz **nie uruchamiaj, ale Debuguj kod przy rozpoczęciu**, to spowoduje, że debuger programu Visual Studio można dołączyć do pakietu aplikacji, po uruchomieniu niestandardowej naraz. To efektywny sposób debugowania ścieżek kontroli [uruchomienia różnych metod](/windows/uwp/xbox-apps/automate-launching-uwp-apps), takich jak protokół aktywacji z użyciem niestandardowych parametrów.
 
      Podczas debugowania zainstalowanego pakietu aplikacji na konsoli XBox, HoloLens i IoT na podłączonym urządzeniu po raz pierwszy, program Visual Studio instaluje poprawną wersję zdalnego debugera na urządzeniu docelowym. Może to zająć trochę czasu i zostanie wyświetlony komunikat ``Starting remote debugger`` podczas, gdy to się dzieje.
 
      > [!NOTE]
-> Obecnie, XBox lub urządzenia HoloLens spowoduje ponowne uruchomienie aplikacji w debugerze, jeśli jest już uruchomiona.
+   > Obecnie, XBox lub urządzenia HoloLens spowoduje ponowne uruchomienie aplikacji w debugerze, jeśli jest już uruchomiona.
 
 Aby uzyskać informacji na temat Zaawansowane opcje zdalnego wdrażania aplikacji platformy uniwersalnej systemu Windows Zobacz [wdrażania i debugowania apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options) platformy uniwersalnej systemu Windows. 
   

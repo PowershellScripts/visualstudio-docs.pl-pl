@@ -14,12 +14,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c1fac3a8fde417065aecb7e3882ff9dc12b06402
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df4b435f791b066afda90ac9f5492a946d7e215c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224968"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825676"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,46 +42,46 @@ Skoncentrowanie się na pracy, chociaż możesz dowiedzieć się, co się stało
 ##  <a name="FindReferences"></a> Znajdowanie odwołań w kodzie  
  Będą potrzebne:  
   
--   Visual Studio Enterprise lub Professional programu Visual Studio  
+- Visual Studio Enterprise lub Professional programu Visual Studio  
   
--   Visual C# .NET lub Visual Basic .NET kodu  
+- Visual C# .NET lub Visual Basic .NET kodu  
   
- Wybierz **odwołania** wskaźnika (**Alt + 2**). Jeśli widzisz **0 odwołań**, nie ma odwołań z kodu języka Visual C# lub Visual Basic. To nie zawiera odwołań z innych elementów, takich jak pliki ASPX i XAML.  
+  Wybierz **odwołania** wskaźnika (**Alt + 2**). Jeśli widzisz **0 odwołań**, nie ma odwołań z kodu języka Visual C# lub Visual Basic. To nie zawiera odwołań z innych elementów, takich jak pliki ASPX i XAML.  
   
- ![Funkcja CodeLens &#45; Wybierz wskaźnik odwołań](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
+  ![Funkcja CodeLens &#45; Wybierz wskaźnik odwołań](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
   
- Aby wyświetlić kod odwołujący się, przenieś wskaźnik myszy na górze odwołania.  
+  Aby wyświetlić kod odwołujący się, przenieś wskaźnik myszy na górze odwołania.  
   
- ![Funkcja CodeLens &#45; wgląd w odwołania](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
+  ![Funkcja CodeLens &#45; wgląd w odwołania](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
   
- Aby otworzyć plik zawierający odwołanie, kliknij dwukrotnie odwołanie.  
+  Aby otworzyć plik zawierający odwołanie, kliknij dwukrotnie odwołanie.  
   
- Aby wyświetlić relacje między tym kodem i jego odwołaniami [utworzenie mapy kodu](../modeling/map-dependencies-across-your-solutions.md) i wybierz polecenie **Pokaż wszystkie odwołania** w menu skrótów mapy kodu.  
+  Aby wyświetlić relacje między tym kodem i jego odwołaniami [utworzenie mapy kodu](../modeling/map-dependencies-across-your-solutions.md) i wybierz polecenie **Pokaż wszystkie odwołania** w menu skrótów mapy kodu.  
   
- ![Funkcja CodeLens &#45; odwołania na mapie kodu](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
+  ![Funkcja CodeLens &#45; odwołania na mapie kodu](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
   
 ##  <a name="FindCodeHistory"></a> Znajdowanie historii kodu i połączone elementy  
  Przejrzyj historią swojego kodu, aby dowiedzieć się, co się stało z kodu. Lub przejrzyj zmiany, zanim one scalane w kodzie, dzięki czemu można lepiej zrozumieć, jak zmiany w innych gałęzi, mogą mieć wpływ na kod.  
   
  Będą potrzebne:  
   
--   Visual Studio Enterprise lub Professional programu Visual Studio  
+- Visual Studio Enterprise lub Professional programu Visual Studio  
   
--   Team Foundation Server 2013 or later, Visual Studio Team Services, or Git  
+- Team Foundation Server 2013 or later, Visual Studio Team Services, or Git  
   
--   [Lync 2010 lub nowszej lub Skype dla firm](http://technet.microsoft.com/lync), skontaktuj się z zespołem z poziomu edytora kodu  
+- [Lync 2010 lub nowszej lub Skype dla firm](http://technet.microsoft.com/lync), skontaktuj się z zespołem z poziomu edytora kodu  
   
- Kod Visual C# .NET lub Visual Basic .NET, który są przechowywane z kontroli wersji Team Foundation (TFVC) lub Git, Pobierz szczegóły wskaźników CodeLens na poziomie klasy i metody (*poziomie elementu kodu* wskaźniki). Jeśli repozytorium Git jest hostowana w TfGit, możesz także uzyskać łącza do elementów roboczych TFS.  
+  Kod Visual C# .NET lub Visual Basic .NET, który są przechowywane z kontroli wersji Team Foundation (TFVC) lub Git, Pobierz szczegóły wskaźników CodeLens na poziomie klasy i metody (*poziomie elementu kodu* wskaźniki). Jeśli repozytorium Git jest hostowana w TfGit, możesz także uzyskać łącza do elementów roboczych TFS.  
   
- ![Element kodu&#45;wskaźniki poziomu](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
+  ![Element kodu&#45;wskaźniki poziomu](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
   
- Dla wszystkich innych typów plików, które można otworzyć w edytorze programu Visual Studio możesz uzyskać szczegółowe informacje CodeLens cały plik w jednym miejscu w dolnej części okna (*poziomu plików* wskaźniki).  
+  Dla wszystkich innych typów plików, które można otworzyć w edytorze programu Visual Studio możesz uzyskać szczegółowe informacje CodeLens cały plik w jednym miejscu w dolnej części okna (*poziomu plików* wskaźniki).  
   
- ![Plik&#45;wskaźników CodeLens na poziomie](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
+  ![Plik&#45;wskaźników CodeLens na poziomie](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
   
- Aby wybrać wskaźników za pomocą klawiatury, naciśnij i przytrzymaj **ALT** klawisz, aby wyświetlić powiązane klawisze numeryczne.  
+  Aby wybrać wskaźników za pomocą klawiatury, naciśnij i przytrzymaj **ALT** klawisz, aby wyświetlić powiązane klawisze numeryczne.  
   
- ![Naciśnij klawisz ALT, aby wyświetlić numery dostępu do klawiatury](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
+  ![Naciśnij klawisz ALT, aby wyświetlić numery dostępu do klawiatury](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
   
 ### <a name="find-changes-in-your-code"></a>Znajdowanie zmian w kodzie  
  Znajdź użytkownika języka C# lub kod języka Visual Basic, kto i zmiany, które wprowadził wprowadził, wskaźniki na poziomie elementu kodu. Jest to, zobacz korzystając z kontroli wersji Team Foundation (TFVC) w Team Foundation Server lub Visual Studio Team Services.  
@@ -243,11 +243,11 @@ Skoncentrowanie się na pracy, chociaż możesz dowiedzieć się, co się stało
   
  **Które konfiguracje Lync i Skype są obsługiwane?**  
   
--   Skype dla firm (32-bitowy lub 64-bitowy)  
+- Skype dla firm (32-bitowy lub 64-bitowy)  
   
--   Lync 2010 lub nowszej samodzielnie (32-bitowy lub 64-bitowy), ale nie Lync Basic 2013 za pomocą Windows 8.1  
+- Lync 2010 lub nowszej samodzielnie (32-bitowy lub 64-bitowy), ale nie Lync Basic 2013 za pomocą Windows 8.1  
   
- Zainstalowany program Skype lub CodeLens nie obsługuje różnych wersji programu Lync. One może nie być zlokalizowana dla wszystkich zlokalizowanych wersji programu Visual Studio.  
+  Zainstalowany program Skype lub CodeLens nie obsługuje różnych wersji programu Lync. One może nie być zlokalizowana dla wszystkich zlokalizowanych wersji programu Visual Studio.  
   
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>P: jak zmienić czcionkę i kolor wskaźników codelens?  
  **Odp.:** przejdź do **narzędzia**, **opcje**, **środowiska**, **czcionki i kolory**.  

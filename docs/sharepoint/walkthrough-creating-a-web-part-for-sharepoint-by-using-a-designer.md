@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f569769613e4fac0b4773a755740274ec0933016
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b5cfd9afaf0c37dcf267c63641b7917efe4c249
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635235"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831818"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Przewodnik: Tworzenie składnika web part programu SharePoint przy użyciu narzędzia Projektant
 
@@ -98,9 +98,9 @@ Dodaj kod, który umożliwia użytkownikowi dodanie kalendarze w widoku kalendar
 
 1. Wykonaj jeden z następujących zestawów czynności:
 
-    - W projektancie, kliknij dwukrotnie **aktualizacji** przycisku.
+   - W projektancie, kliknij dwukrotnie **aktualizacji** przycisku.
 
-    - W **właściwości** okno **aktualizacji** przycisku, wybierz polecenie **zdarzenia** przycisku. W **kliknij** właściwości wprowadź **Button1_Click**, a następnie naciśnij klawisz Enter.
+   - W **właściwości** okno **aktualizacji** przycisku, wybierz polecenie **zdarzenia** przycisku. W **kliknij** właściwości wprowadź **Button1_Click**, a następnie naciśnij klawisz Enter.
 
      Pliku kodu formanu użytkownika zostanie otwarty w edytorze kodu i `Button1_Click` pojawia się program obsługi zdarzeń. Później dodasz kod do tego programu obsługi zdarzeń.
 
@@ -116,11 +116,11 @@ Dodaj kod, który umożliwia użytkownikowi dodanie kalendarze w widoku kalendar
 
 4. Zastąp `Page_Load` metody `VisualWebPart1` klasy z następującym kodem. Kod będzie wykonywał następujące zadania:
 
-    - Dodaje widok kalendarza miesięcznego do kontrolki użytkownika.
+   - Dodaje widok kalendarza miesięcznego do kontrolki użytkownika.
 
-    - Dodaje pole wyboru dla każdej listy kalendarza w witrynie.
+   - Dodaje pole wyboru dla każdej listy kalendarza w witrynie.
 
-    - Określa szablon dla każdego typu elementu, który pojawia się w widoku kalendarza.
+   - Określa szablon dla każdego typu elementu, który pojawia się w widoku kalendarza.
 
      [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
      [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]

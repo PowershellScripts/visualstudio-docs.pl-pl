@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc2f4464915a1f251c08f3de5741a82ed9d7efbd
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ae2f0e571876c336d74c295f2cba4a654a713e93
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498613"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821437"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Tworzenie rozszerzenia za pomocą polecenia menu
 W tym instruktażu przedstawiono sposób tworzenia rozszerzenia za pomocą polecenia menu, który uruchamia program Notatnik.  
@@ -118,20 +118,20 @@ W tym instruktażu przedstawiono sposób tworzenia rozszerzenia za pomocą polec
 ## <a name="next-steps"></a>Następne kroki  
  W tym instruktażu jest wyświetlane tylko niewielką część co można zrobić za pomocą rozszerzenia programu Visual Studio. Poniżej przedstawiono krótką listę innymi (względnie proste), które można wykonać przy użyciu rozszerzeń programu Visual Studio:  
   
-1.  Możesz wykonać wiele innych rzeczy przy użyciu prostego polecenia:  
+1. Możesz wykonać wiele innych rzeczy przy użyciu prostego polecenia:  
   
-    1.  Dodaj własną ikonę: [dodawanie ikon do poleceń menu](../extensibility/adding-icons-to-menu-commands.md)  
+   1.  Dodaj własną ikonę: [dodawanie ikon do poleceń menu](../extensibility/adding-icons-to-menu-commands.md)  
   
-    2.  Zmiana tekstu polecenia menu: [zmiana tekstu polecenia menu](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2.  Zmiana tekstu polecenia menu: [zmiana tekstu polecenia menu](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-    3.  Dodawanie menu skrótu do polecenia: [powiązać skrótów klawiaturowych z elementami menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3.  Dodawanie menu skrótu do polecenia: [powiązać skrótów klawiaturowych z elementami menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2.  Dodaj różne rodzaje polecenia, menu i paski narzędzi: [rozszerzenia menu i poleceń](../extensibility/extending-menus-and-commands.md)  
+2. Dodaj różne rodzaje polecenia, menu i paski narzędzi: [rozszerzenia menu i poleceń](../extensibility/extending-menus-and-commands.md)  
   
-3.  Dodawanie okna narzędzi i rozszerzyć wbudowane okna narzędzi programu Visual Studio: [rozszerzanie i dostosowywanie okien narzędzi](../extensibility/extending-and-customizing-tool-windows.md)  
+3. Dodawanie okna narzędzi i rozszerzyć wbudowane okna narzędzi programu Visual Studio: [rozszerzanie i dostosowywanie okien narzędzi](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4.  Dodaj funkcję IntelliSense, sugestie kodu i inne funkcje do istniejącej kodu edytorów: [rozszerzanie usług edytora i języka](../extensibility/extending-the-editor-and-language-services.md)  
+4. Dodaj funkcję IntelliSense, sugestie kodu i inne funkcje do istniejącej kodu edytorów: [rozszerzanie usług edytora i języka](../extensibility/extending-the-editor-and-language-services.md)  
   
-5.  Dodawanie do rozszerzenia strony Opcje i właściwości i ustawienia użytkownika: [rozszerzanie właściwości i okno właściwości](../extensibility/extending-properties-and-the-property-window.md) i [rozszerzenie ustawienia użytkownika i Ooptions](../extensibility/extending-user-settings-and-options.md)  
+5. Dodawanie do rozszerzenia strony Opcje i właściwości i ustawienia użytkownika: [rozszerzanie właściwości i okno właściwości](../extensibility/extending-properties-and-the-property-window.md) i [rozszerzenie ustawienia użytkownika i Ooptions](../extensibility/extending-user-settings-and-options.md)  
   
- Innych rodzajów rozszerzenia wymaga trochę więcej pracy, takich jak tworzenie nowego typu projektu ([rozszerzanie projektów](../extensibility/extending-projects.md)), tworzenia nowego typu edytora ([Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md)), lub implementacji usługi rozszerzenie w izolowanej powłoki: [programu Visual Studio isolated shell](../extensibility/visual-studio-isolated-shell.md)
+   Innych rodzajów rozszerzenia wymaga trochę więcej pracy, takich jak tworzenie nowego typu projektu ([rozszerzanie projektów](../extensibility/extending-projects.md)), tworzenia nowego typu edytora ([Tworzenie niestandardowych edytorów i projektantów](../extensibility/creating-custom-editors-and-designers.md)), lub implementacji usługi rozszerzenie w izolowanej powłoki: [programu Visual Studio isolated shell](../extensibility/visual-studio-isolated-shell.md)

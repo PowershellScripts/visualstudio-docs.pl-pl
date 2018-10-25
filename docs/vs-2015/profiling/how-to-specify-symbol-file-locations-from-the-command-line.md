@@ -14,33 +14,33 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1661788c010d55586413060d1e79b3630fa2d89e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f90a844d3e4e4d02a2e2eddd64e62d8fce59407c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220067"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825307"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Porady: określanie lokalizacji plików symboli z wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby wyświetlić informacje o symbolach, takich jak nazwy i numery wierszy, narzędzie wiersza polecenia VSPerfReport wymaga dostępu do plików symboli (.pdb) profilowanych składników i pliki systemu Windows. Pliki symboli są tworzone, gdy składnik został skompilowany. Aby uzyskać więcej informacji, zobacz [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport automatycznie przeszukuje następujące lokalizacje plików symboli:  
   
--   Ścieżki określane w **symbolpath** opcji lub **_NT_SYMBOL_PATH** zmiennej środowiskowej.  
+- Ścieżki określane w **symbolpath** opcji lub **_NT_SYMBOL_PATH** zmiennej środowiskowej.  
   
--   Gdy składnik został skompilowany dokładny ścieżka lokalna.  
+- Gdy składnik został skompilowany dokładny ścieżka lokalna.  
   
--   Katalog, który zawiera plik danych profilowania (.vsp lub .vsps).  
+- Katalog, który zawiera plik danych profilowania (.vsp lub .vsps).  
   
- Firma Microsoft udostępnia pliki .pdb dla wielu swoich produktów online na serwerze symboli. Jeśli komputer, którego używasz do raportowania jest połączony z Internetem, VSPerfReport łączy się z serwera symboli online, aby automatycznie wyszukać informacje o symbolach i Zapisz pliki w magazynie lokalnym.  
+  Firma Microsoft udostępnia pliki .pdb dla wielu swoich produktów online na serwerze symboli. Jeśli komputer, którego używasz do raportowania jest połączony z Internetem, VSPerfReport łączy się z serwera symboli online, aby automatycznie wyszukać informacje o symbolach i Zapisz pliki w magazynie lokalnym.  
   
- Można określić lokalizacji plików symboli i magazynu serwera symboli firmy Microsoft w następujący sposób:  
+  Można określić lokalizacji plików symboli i magazynu serwera symboli firmy Microsoft w następujący sposób:  
   
--   Ustaw **_NT_SYMBOL_PATH** zmiennej środowiskowej.  
+- Ustaw **_NT_SYMBOL_PATH** zmiennej środowiskowej.  
   
--   Dodaj **symbolpath** opcji wiersza polecenia VSPerfReport.  
+- Dodaj **symbolpath** opcji wiersza polecenia VSPerfReport.  
   
- Można również użyć obu tych metod.  
+  Można również użyć obu tych metod.  
   
 > [!NOTE]
 >  Jeśli [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] jest zainstalowany na komputerze lokalnym, lokalizację, aby pliki symboli Windows prawdopodobnie określono już. Aby uzyskać więcej informacji, zobacz [jak: informacje o symbolach Windows odwołanie](../profiling/how-to-reference-windows-symbol-information.md). Nadal należy skonfigurować VSPerfReport, aby użyć lokalizacji i serwera, zgodnie z opisem w dalszej części tego tematu.  
@@ -49,13 +49,13 @@ Aby wyświetlić informacje o symbolach, takich jak nazwy i numery wierszy, narz
   
 #### <a name="to-configure-the-use-of-the-windows-symbol-server"></a>Umożliwia skonfigurowanie użycia serwera symboli Windows  
   
-1.  Jeśli to konieczne, należy utworzyć katalog do przechowywania plików symboli lokalnie.  
+1. Jeśli to konieczne, należy utworzyć katalog do przechowywania plików symboli lokalnie.  
   
-2.  Użyj następującej składni, aby ustawić **_NT_SYMBOL_PATH** zmiennej środowiskowej lub opcji symbolpath VSPerfReport:  
+2. Użyj następującej składni, aby ustawić **_NT_SYMBOL_PATH** zmiennej środowiskowej lub opcji symbolpath VSPerfReport:  
   
-     **SRV\***  *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **SRV\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
-     gdzie *LocalStore* to ścieżka katalogu lokalnego, który został utworzony.  
+    gdzie *LocalStore* to ścieżka katalogu lokalnego, który został utworzony.  
   
 ## <a name="specifying-component-symbol-files"></a>Określanie plików symboli składnika  
  Profilowanie narzędzia wyszukuje pliki the.pdb składników, które chcesz przeprowadzić profilowanie w ich oryginalnych lokalizacji, które są przechowywane w składnikach lub w folderze, który zawiera plik danych profilowania. Można określić innych lokalizacji do przeszukania, dodając jeden lub więcej ścieżek do **_NT_SYMBOL_PATH** lub **symbolpath** opcji. Osobnym ścieżkom średnikami.  

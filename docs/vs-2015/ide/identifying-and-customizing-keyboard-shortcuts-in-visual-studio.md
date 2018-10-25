@@ -24,35 +24,35 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 908d5094ad36a6f907c781987fba1fd053d673dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 64c663e423d0d87fa0b710b65f60b4890a836d88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830941"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identyfikowanie i dostosowywanie skrótów klawiaturowych w Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Można zidentyfikować skróty klawiaturowe dla poleceń programu Visual Studio, dostosować te skróty i eksportować je dla innych użytkowników. Wiele skrótów zawsze wywołuje te same polecenia, ale zachowanie skrótu może zależeć od następujących warunków:  
   
--   Które domyślne ustawienia środowiska wybrano podczas pierwszego uruchomienia programu Visual Studio (na przykład ogólne ustawienia projektowania lub Visual C#).  
+- Które domyślne ustawienia środowiska wybrano podczas pierwszego uruchomienia programu Visual Studio (na przykład ogólne ustawienia projektowania lub Visual C#).  
   
--   Czy dostosowywałeś zachowanie danego skrótu.  
+- Czy dostosowywałeś zachowanie danego skrótu.  
   
--   W którym kontekście jesteś w momencie wybierania skrótu. Na przykład skrót F2 wywołuje polecenie Edit.EditCell, jeśli używasz Projektanta ustawień, i polecenie File.Rename, jeśli używasz Eksploratora zespołów.  
+- W którym kontekście jesteś w momencie wybierania skrótu. Na przykład skrót F2 wywołuje polecenie Edit.EditCell, jeśli używasz Projektanta ustawień, i polecenie File.Rename, jeśli używasz Eksploratora zespołów.  
   
- Niezależnie od ustawień, dostosowania i kontekstu, zawsze możesz znaleźć i zmienić skrót klawiaturowy w **opcje** okno dialogowe. Możesz również wyszukać domyślne skróty klawiaturowe dla kilkudziesięciu poleceń w [domyślne skróty klawiaturowe dla często używane polecenia](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), możesz znaleźć, aby uzyskać pełną listę wszystkich skrótów domyślnych (na podstawie ogólnego projektowania Ustawienia) w [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
+  Niezależnie od ustawień, dostosowania i kontekstu, zawsze możesz znaleźć i zmienić skrót klawiaturowy w **opcje** okno dialogowe. Możesz również wyszukać domyślne skróty klawiaturowe dla kilkudziesięciu poleceń w [domyślne skróty klawiaturowe dla często używane polecenia](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), możesz znaleźć, aby uzyskać pełną listę wszystkich skrótów domyślnych (na podstawie ogólnego projektowania Ustawienia) w [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
   
- **W tym temacie**  
+  **W tym temacie**  
   
--   [Identyfikowanie skrótu klawiaturowego](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_identify)  
+- [Identyfikowanie skrótu klawiaturowego](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_identify)  
   
--   [Dostosowywanie skrótu klawiaturowego](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_assign)  
+- [Dostosowywanie skrótu klawiaturowego](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_assign)  
   
--   [Udostępnianie niestandardowych skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_transfer)  
+- [Udostępnianie niestandardowych skrótów klawiaturowych](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_transfer)  
   
- Jeśli skrót jest przypisany do polecenia wyłącznie w kontekście globalnym, ten skrót zawsze będzie wywoływał dane polecenie. Jednak skrót może być przypisany do jednego polecenia w kontekście globalnym i innego polecenia w określonym kontekście. Gdy korzystasz z takiego skrótu podczas pracy w określonym kontekście, skrót wywołuje polecenie odpowiadające temu kontekstowi, a nie kontekstowi globalnemu.  
+  Jeśli skrót jest przypisany do polecenia wyłącznie w kontekście globalnym, ten skrót zawsze będzie wywoływał dane polecenie. Jednak skrót może być przypisany do jednego polecenia w kontekście globalnym i innego polecenia w określonym kontekście. Gdy korzystasz z takiego skrótu podczas pracy w określonym kontekście, skrót wywołuje polecenie odpowiadające temu kontekstowi, a nie kontekstowi globalnemu.  
   
 > [!NOTE]
 >  Twoje ustawienia i wersja programu Visual Studio mogą zmienić nazwy i lokalizacje poleceń menu oraz opcje, które pojawiają się w oknach dialogowych. Ten temat opiera się na **ogólnych ustawieniach projektowych**.  

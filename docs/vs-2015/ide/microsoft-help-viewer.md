@@ -25,12 +25,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a51372b48eb01f0ff424c6919b572646235039f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8c8803394c4f6d31db187384304f8fbb1db4468
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194840"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820099"
 ---
 # <a name="microsoft-help-viewer"></a>Podgląd Pomocy firmy Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,21 +63,21 @@ Można zainstalować i wyświetlić zawartość dla różnych produktów i techn
   
  Pasek narzędzi w oknie podglądu pomocy zawiera następujące przyciski:  
   
--   **Pokaż temat w spisie treści** przycisk pokazuje lokalizację tematu w **zawartość** kartę.  
+- **Pokaż temat w spisie treści** przycisk pokazuje lokalizację tematu w **zawartość** kartę.  
   
--   **Dodaj do ulubionych** przycisk umożliwia dodanie aktywnego tematu do **ulubione** kartę.  
+- **Dodaj do ulubionych** przycisk umożliwia dodanie aktywnego tematu do **ulubione** kartę.  
   
--   **Znaleźć w temacie** przycisk wyróżnia wyszukiwany tekst w aktywnym temacie.  
+- **Znaleźć w temacie** przycisk wyróżnia wyszukiwany tekst w aktywnym temacie.  
   
--   **Drukowania** przycisku drukuje lub pokazuje jego podgląd aktywnego tematu.  
+- **Drukowania** przycisku drukuje lub pokazuje jego podgląd aktywnego tematu.  
   
--   **Opcje podglądu** przycisk powoduje wyświetlenie ustawienia, takie jak rozmiar, jaki tekst jest wyświetlany, ile wyników wyszukiwania do zwrotu, jak wiele tematów pokazywanych w historii i czy chcesz sprawdzać dostępność aktualizacji w trybie online.  
+- **Opcje podglądu** przycisk powoduje wyświetlenie ustawienia, takie jak rozmiar, jaki tekst jest wyświetlany, ile wyników wyszukiwania do zwrotu, jak wiele tematów pokazywanych w historii i czy chcesz sprawdzać dostępność aktualizacji w trybie online.  
   
--   **Zarządzanie zawartością** przycisk sprawia, że **zarządzanie zawartością** kartą aktywną.  
+- **Zarządzanie zawartością** przycisk sprawia, że **zarządzanie zawartością** kartą aktywną.  
   
--   Mały trójkąt Otwiera listę kart, łącznie z kartami tematów i **zarządzanie zawartością** kartę. Można uaktywnić dowolne z tych zakładek, wybierając je.  
+- Mały trójkąt Otwiera listę kart, łącznie z kartami tematów i **zarządzanie zawartością** kartę. Można uaktywnić dowolne z tych zakładek, wybierając je.  
   
- Dolny obszar okna podglądu pomocy zawiera informacje o łącznym rozmiarze oczekujących plików do pobrania, ilości miejsca na dysku, którego wymagają i ilość miejsca na dysku, który jest dostępny. Ten obszar zawiera również informacje o błędach, które mogły wystąpić i łącze, które użytkownik może odświeżyć zainstalowaną zawartość, jeśli aktualizacje są dostępne.  
+  Dolny obszar okna podglądu pomocy zawiera informacje o łącznym rozmiarze oczekujących plików do pobrania, ilości miejsca na dysku, którego wymagają i ilość miejsca na dysku, który jest dostępny. Ten obszar zawiera również informacje o błędach, które mogły wystąpić i łącze, które użytkownik może odświeżyć zainstalowaną zawartość, jeśli aktualizacje są dostępne.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Podręcznik administratora programu Podgląd pomocy](../ide/help-viewer-administrator-guide.md)   

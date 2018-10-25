@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 4740ec0dea2e92737980df33051d29ff5832dab8
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 2ce99d472c2499d773e48ba90d20844b1cfae8f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880451"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819618"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Rozwiązywanie problemów z narzędziem Visual Studio Emulator for Android
 Ten temat zawiera informacje pomocne podczas rozwiązywania problemów, które mogą wystąpić podczas korzystania z programu Visual Studio Emulator for Android.  
@@ -94,11 +94,11 @@ Ten temat zawiera informacje pomocne podczas rozwiązywania problemów, które m
 ##  <a name="ManualNetworkConfig"></a> Nie można połączyć z sieci docelowych, jeśli ustawienia sieciowe wymagają ręcznej konfiguracji  
  Aby połączyć się z sieci docelowych z emulatora, sieci musi spełniać następujące wymagania:  
   
--   DHCP. Emulator wymaga protokołu DHCP, ponieważ konfiguruje się jako osobne urządzenia do sieci za pomocą adresu IP.  
+- DHCP. Emulator wymaga protokołu DHCP, ponieważ konfiguruje się jako osobne urządzenia do sieci za pomocą adresu IP.  
   
--   Automatycznie skonfigurowana DNS i ustawień bramy. Nie jest możliwe do skonfigurowania ustawień DNS i bramę ręcznie dla emulatora.  
+- Automatycznie skonfigurowana DNS i ustawień bramy. Nie jest możliwe do skonfigurowania ustawień DNS i bramę ręcznie dla emulatora.  
   
- Jeśli sieć wymaga ręcznie skonfigurowane ustawienia, skontaktuj się z administratorem IT, aby ustalić, jak włączyć łączność sieciową dla emulatora.  
+  Jeśli sieć wymaga ręcznie skonfigurowane ustawienia, skontaktuj się z administratorem IT, aby ustalić, jak włączyć łączność sieciową dla emulatora.  
   
 ##  <a name="SlowStart"></a> Emulator uruchamia się powoli, nie można uruchomić z powodu przekroczenia limitu czasu lub wdrożenia aplikacji nie powiedzie się.  
  W pewnych okolicznościach emulatora w ciągu kilku minut można uruchomić lub nie została uruchomiona z powodu przekroczenia limitu czasu. Jeśli emulator nie powiedzie się, zostanie wyświetlony następujący komunikat: `App deployment failed. Please try again`. Ten błąd może powodować następujące warunki.  
@@ -141,131 +141,131 @@ Ten temat zawiera informacje pomocne podczas rozwiązywania problemów, które m
 ##  <a name="NoStart"></a> Emulator nie powiedzie się (pierwszym użyciu)  
  Nie można uruchomić emulatora, wykonaj następujące zadania, aby zidentyfikować i rozwiązać problem.  
   
--   Upewnij się, że spełnione są wymagania dotyczące minimalnych wymagań sprzętowych i czy ustawienia systemu BIOS są poprawne.  
+- Upewnij się, że spełnione są wymagania dotyczące minimalnych wymagań sprzętowych i czy ustawienia systemu BIOS są poprawne.  
   
-     Emulatora i Windows 8 Hyper-V wymaga 64-bitowy procesor z adresów drugiego poziomu Translation (SLAT). Firmy Intel konieczne są zasadniczo i3 Core, i5 lub i7 procesora (lub jeden z wielu Xeons). Dostępna jest lista mikroukładami AMD [tutaj](http://support.amd.com/en-us).  
+   Emulatora i Windows 8 Hyper-V wymaga 64-bitowy procesor z adresów drugiego poziomu Translation (SLAT). Firmy Intel konieczne są zasadniczo i3 Core, i5 lub i7 procesora (lub jeden z wielu Xeons). Dostępna jest lista mikroukładami AMD [tutaj](http://support.amd.com/en-us).  
   
-    1.  Upewnić się, że Twoje komputer spełnia [wymagania systemowe](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
+  1. Upewnić się, że Twoje komputer spełnia [wymagania systemowe](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).  
   
-    2.  Upewnij się, że [narzędzie SLAT](https://slatstatuscheck.codeplex.com/) zgłasza, że komputer jest w stanie SLAT.  
+  2. Upewnij się, że [narzędzie SLAT](https://slatstatuscheck.codeplex.com/) zgłasza, że komputer jest w stanie SLAT.  
   
-    3.  W ustawieniach systemu BIOS komputera upewnij się, że włączono wszystkich technologii wirtualizacji. Dokładne opisy systemu BIOS mogą się różnić dla każdego producenta sprzętu. Ogólnie rzecz biorąc Włącz funkcje związane z programem:  
+  3. W ustawieniach systemu BIOS komputera upewnij się, że włączono wszystkich technologii wirtualizacji. Dokładne opisy systemu BIOS mogą się różnić dla każdego producenta sprzętu. Ogólnie rzecz biorąc Włącz funkcje związane z programem:  
   
-        -   SLAT (translacji adresów drugiego poziomu)  
+     -   SLAT (translacji adresów drugiego poziomu)  
   
-        -   EPT (Extended Page Tables) (Intel)  
+     -   EPT (Extended Page Tables) (Intel)  
   
-        -   NPT (zagnieżdżona strona tabele) (AMD)  
+     -   NPT (zagnieżdżona strona tabele) (AMD)  
   
-        -   RVI (Rapid Virtualization Indexing) (AMD)  
+     -   RVI (Rapid Virtualization Indexing) (AMD)  
   
-        -   VMX (wskazująca, obsługa wirtualizacji sprzętowej akronim Intel)  
+     -   VMX (wskazująca, obsługa wirtualizacji sprzętowej akronim Intel)  
   
-        -   SVM (akronim AMD wskazujący Obsługa wirtualizacji sprzętowej)  
+     -   SVM (akronim AMD wskazujący Obsługa wirtualizacji sprzętowej)  
   
-        -   XD (wykonywania Wyłącz) (Intel); musi być włączona  
+     -   XD (wykonywania Wyłącz) (Intel); musi być włączona  
   
-        -   NX (nie Execute)(AMD); musi być włączona.  
+     -   NX (nie Execute)(AMD); musi być włączona.  
   
-    4.  Jeśli poniższe opcje są obecne w systemie BIOS, należy je wyłączyć.  
+  4. Jeśli poniższe opcje są obecne w systemie BIOS, należy je wyłączyć.  
   
-        -   Wyłącz Intel VT-d  
+     - Wyłącz Intel VT-d  
   
-        -   Wyłącz zaufane wykonywanie  
+     - Wyłącz zaufane wykonywanie  
   
-         Aby uzyskać więcej informacji znajduje się w artykule: Technet: funkcja Hyper-V: jak można rozwiązać systemu BIOS błędy włączenie funkcji Hyper-V  
+       Aby uzyskać więcej informacji znajduje się w artykule: Technet: funkcja Hyper-V: jak można rozwiązać systemu BIOS błędy włączenie funkcji Hyper-V  
   
-    5.  Upewnij się, że masz co najmniej 4 GB pamięci systemu i że jego jest nie są używane przez inne programy dużej ilości zasobów i procesów.  
+  5. Upewnij się, że masz co najmniej 4 GB pamięci systemu i że jego jest nie są używane przez inne programy dużej ilości zasobów i procesów.  
   
-    6.  Upewnij się, że używasz systemu Windows 8 Professional lub nowszy (system Windows Server 2008 nie jest obsługiwane). Jest obsługiwana w systemie Windows Server 2012, ale należy włączyć środowisko pulpitu.  
+  6. Upewnij się, że używasz systemu Windows 8 Professional lub nowszy (system Windows Server 2008 nie jest obsługiwane). Jest obsługiwana w systemie Windows Server 2012, ale należy włączyć środowisko pulpitu.  
   
      Można sprawdzić Podgląd zdarzeń, aby zobaczyć, czy istnieją błędy funkcji Hypervisor. Aby to zrobić, otwórz Podgląd zdarzeń (**klucza Start**+**R**, a następnie wpisz `eventvwr`), a następnie wybierz **Dzienniki Windows**, **System**. Następnie przeprowadź filtrowanie dziennika przez źródło zdarzenia, ustawienie źródła **funkcji Hyper-V-funkcji Hypervisor**. Sprawdź, czy błędy, aby ułatwić zidentyfikowanie przyczyny.  
   
      Jeśli Twoje spełnia procesora minimalne wymagania, ale funkcja hypervisor nadal nie działa prawidłowo, należy wziąć pod uwagę wyszukiwanie po podjęciu występuje uaktualnienie systemu BIOS dostępnej dla komputera. Jeśli istnieje, i chcesz uaktualnić, pamiętaj obserwować wszystkie środki ostrożności od producenta, podczas uaktualniania do systemu BIOS (na przykład upewniając się, uaktualnienie oprogramowania układowego BIOS nie zostało przerwane przez utraty zasilania, które trwale może uszkodzić system BIOS).  
   
--   Upewnij się, że masz co najmniej 4 GB pamięci systemu i że jego jest nie są używane przez inne programy dużej ilości zasobów i procesów.  
+- Upewnij się, że masz co najmniej 4 GB pamięci systemu i że jego jest nie są używane przez inne programy dużej ilości zasobów i procesów.  
   
--   Usuń/wyłączyć sterowników firm trzecich lub oprogramowania, które zakłócają sieci wirtualnej.  
+- Usuń/wyłączyć sterowników firm trzecich lub oprogramowania, które zakłócają sieci wirtualnej.  
   
-     Istnieją znane problemy z niektórych 3rd produktów innych firm, które są zainstalowane w systemie Windows 8, takie jak sterowniki/protokołów sieciowych, które nie są w pełni zgodny ze stosu sieciowego funkcji Hyper-V.  
+   Istnieją znane problemy z niektórych 3rd produktów innych firm, które są zainstalowane w systemie Windows 8, takie jak sterowniki/protokołów sieciowych, które nie są w pełni zgodny ze stosu sieciowego funkcji Hyper-V.  
   
-     Ogólnie rzecz biorąc będzie ona do tych produktów deweloperom aktualizacji oprogramowania, aby był zgodny z systemem Windows 8 i funkcji Hyper-V.  
+   Ogólnie rzecz biorąc będzie ona do tych produktów deweloperom aktualizacji oprogramowania, aby był zgodny z systemem Windows 8 i funkcji Hyper-V.  
   
-     Następujące produkty mogą wymagać uaktualnienia pod kątem zgodności z systemem Windows 8: VirtualBox, Virtual PC 7, VMWare, niektórzy klienci sieci VPN oprogramowania zapory, niektóre wersje klientów sieci VPN oprogramowania Cisco i innych systemów wirtualizacji. Praca z deweloper oprogramowania wirtualizacji wątpliwe zachęcania go do uaktualnienia oprogramowania, aby był zgodny z systemem Windows 8 i funkcji Hyper-V.  
+   Następujące produkty mogą wymagać uaktualnienia pod kątem zgodności z systemem Windows 8: VirtualBox, Virtual PC 7, VMWare, niektórzy klienci sieci VPN oprogramowania zapory, niektóre wersje klientów sieci VPN oprogramowania Cisco i innych systemów wirtualizacji. Praca z deweloper oprogramowania wirtualizacji wątpliwe zachęcania go do uaktualnienia oprogramowania, aby był zgodny z systemem Windows 8 i funkcji Hyper-V.  
   
-     Jako *obejście*, można wyłączyć wszystkie sterowniki innych firm i aplikacje, które zakłócają sieci wirtualnej, używanego przez Emulator do komunikowania się z programem Visual Studio. Aplikacje te mogą obejmować:  
+   Jako *obejście*, można wyłączyć wszystkie sterowniki innych firm i aplikacje, które zakłócają sieci wirtualnej, używanego przez Emulator do komunikowania się z programem Visual Studio. Aplikacje te mogą obejmować:  
   
-    -   Aplikacje antywirusowe, (które dołączyć do stosu sieciowego)  
+  - Aplikacje antywirusowe, (które dołączyć do stosu sieciowego)  
   
-    -   Narzędzia do monitorowania sieci  
+  - Narzędzia do monitorowania sieci  
   
-    -   Narzędzia rejestrowania w sieci  
+  - Narzędzia rejestrowania w sieci  
   
-    -   Inne oprogramowanie monitorujące systemu  
+  - Inne oprogramowanie monitorujące systemu  
   
-     Innym możliwym obejściem ograniczony odinstalowaniu produktów w zapytania i żądanie developer produktu do wersji jest dostępna zaktualizowana wersja, ma wykonać następujące czynności.  
+    Innym możliwym obejściem ograniczony odinstalowaniu produktów w zapytania i żądanie developer produktu do wersji jest dostępna zaktualizowana wersja, ma wykonać następujące czynności.  
   
-    1.  Uruchom Menedżera połączeń sieciowych (na ekranie startowym wpisz `View Network Connections` i wybierz tę opcję, aby wyświetlić połączenia sieciowego.)  
+  1. Uruchom Menedżera połączeń sieciowych (na ekranie startowym wpisz `View Network Connections` i wybierz tę opcję, aby wyświetlić połączenia sieciowego.)  
   
-    2.  Dla karty vEthernet (wewnętrzny Ethernet portu Windows Phone Emulator wewnętrznego przełącznika), wybierz **właściwości** z menu kontekstowego.  
+  2. Dla karty vEthernet (wewnętrzny Ethernet portu Windows Phone Emulator wewnętrznego przełącznika), wybierz **właściwości** z menu kontekstowego.  
   
-         ![Wirtualną kartę sieciową, używane przez Hyper&#45;V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
+      ![Wirtualną kartę sieciową, używane przez Hyper&#45;V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
   
-         Właściwości karty są wyświetlane w tym miejscu.  
+      Właściwości karty są wyświetlane w tym miejscu.  
   
-         ![Właściwości karty wirtualnego](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
+      ![Właściwości karty wirtualnego](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
   
-    3.  Dla tej karty, tylko elementy, które należy wybrać w obszarze **to połączenie wykorzystuje następujące elementy** powinny być następujące:  
+  3. Dla tej karty, tylko elementy, które należy wybrać w obszarze **to połączenie wykorzystuje następujące elementy** powinny być następujące:  
   
-        -   Klient sieci Microsoft Networks  
+     -   Klient sieci Microsoft Networks  
   
-        -   Harmonogram pakietów QoS  
+     -   Harmonogram pakietów QoS  
   
-        -   Udostępnianie plików i drukarek w sieciach Microsoft Networks  
+     -   Udostępnianie plików i drukarek w sieciach Microsoft Networks  
   
-        -   Sterownik protokołu LLDP firmy Microsoft  
+     -   Sterownik protokołu LLDP firmy Microsoft  
   
-        -   Warstwa łącza sterownik mapowania topologii odnajdowania  
+     -   Warstwa łącza sterownik mapowania topologii odnajdowania  
   
-        -   Obiekt odpowiadający odnajdywania topologii warstwy linku  
+     -   Obiekt odpowiadający odnajdywania topologii warstwy linku  
   
-        -   Protokół internetowy w wersji 6 (TCP/IPv6)  
+     -   Protokół internetowy w wersji 6 (TCP/IPv6)  
   
-        -   Protokół internetowy w wersji 4 (TCP/IPv4)  
+     -   Protokół internetowy w wersji 4 (TCP/IPv4)  
   
-    4.  Usuń zaznaczenie wszystkich innych elementów.  
+  4. Usuń zaznaczenie wszystkich innych elementów.  
   
      Wadą się przy użyciu tej metody polega na ilekroć nowych produktów innych firm 3 instaluje sterowniki nieobsługiwana lub każdym razem, gdy emulator jest zainstalowany, te kroki należy powtórzyć.  
   
      Po odinstalowaniu produktów innych firm może być konieczne przywrócić przełącznika wewnętrznego Emulator Windows Phone. Aby to zrobić:  
   
-    -   Otwórz Hyper-V i przejdź do Menedżera przełącznika wirtualnego. Utwórz przełącznik wirtualny o nazwie "Windows Phone Emulator wewnętrznego przełącznika" i ustaw jej typ połączenia na **sieci wewnętrznej**.  
+  - Otwórz Hyper-V i przejdź do Menedżera przełącznika wirtualnego. Utwórz przełącznik wirtualny o nazwie "Windows Phone Emulator wewnętrznego przełącznika" i ustaw jej typ połączenia na **sieci wewnętrznej**.  
   
-         ![Menedżer przełącznika wirtualnego](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
+     ![Menedżer przełącznika wirtualnego](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
   
-     Teraz uruchom emulator. Wszystko powinno działać.  
+    Teraz uruchom emulator. Wszystko powinno działać.  
   
 ##  <a name="NoBoot"></a> Komputerowi nie uda się uruchomić po zainstalowaniu emulatora  
  Ten problem może wystąpić, gdy są spełnione następujące warunki:  
   
--   Komputer ma gigabajt płyty głównej.  
+- Komputer ma gigabajt płyty głównej.  
   
--   USB3 jest włączona na płycie głównej.  
+- USB3 jest włączona na płycie głównej.  
   
- Aby rozwiązać ten problem, wyłącz USB3 w ustawieniach systemu BIOS płyty głównej, a następnie uruchom ponownie komputer. Sprawdź, czy gigabajt wydała aktualizacji dla systemu BIOS z płyty głównej.  
+  Aby rozwiązać ten problem, wyłącz USB3 w ustawieniach systemu BIOS płyty głównej, a następnie uruchom ponownie komputer. Sprawdź, czy gigabajt wydała aktualizacji dla systemu BIOS z płyty głównej.  
   
- Aby uzyskać więcej informacji, zobacz następujący artykuł bazy wiedzy Knowledge Base: [rozruchu awarii po zakończeniu instalacji roli funkcji Hyper-V w systemach gigabajt](https://support.microsoft.com/en-us/kb/2693144).  
+  Aby uzyskać więcej informacji, zobacz następujący artykuł bazy wiedzy Knowledge Base: [rozruchu awarii po zakończeniu instalacji roli funkcji Hyper-V w systemach gigabajt](https://support.microsoft.com/en-us/kb/2693144).  
   
 ##  <a name="ADB"></a> Program Visual Studio zablokowania próby wdrożenia aplikacji w emulatorze lub emulator nie jest wyświetlany jako element docelowy debugowania w innych środowiskach IDE  
  Jeśli emulator jest uruchomiona, ale nie ma się połączyć z ADB (Android Debug Bridge) lub pojawia się narzędzia systemu Android, które korzystają z ADB (na przykład programu Android Studio lub Eclipse), może być konieczne dostosowanie, gdy emulator szuka ADB. Emulator używa klucza rejestru do identyfikowania podstawowa Lokalizacja zestawu Android SDK i szuka pliku \platform-tools\adb.exe, w tym katalogu. Aby zmodyfikować ścieżkę zestawu Android SDK używany przez emulator:  
   
--   Otwórz Edytor rejestru, wybierając **Uruchom** z menu kontekstowego przyciski Start, wpisując `regedit` w oknie dialogowym i wybierając pozycję **OK**.  
+- Otwórz Edytor rejestru, wybierając **Uruchom** z menu kontekstowego przyciski Start, wpisując `regedit` w oknie dialogowym i wybierając pozycję **OK**.  
   
--   Przejdź do *SDK Tools HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android* w drzewie folderów po lewej stronie.  
+- Przejdź do *SDK Tools HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android* w drzewie folderów po lewej stronie.  
   
--   Modyfikowanie **ścieżki** zmiennej rejestru, aby dopasować ścieżkę do zestawu SDK systemu Android.  
+- Modyfikowanie **ścieżki** zmiennej rejestru, aby dopasować ścieżkę do zestawu SDK systemu Android.  
   
- Ponowne uruchomienie emulatora i powinno być teraz możliwe emulator połączone ADB i skojarzonych narzędzi dla systemu Android.  
+  Ponowne uruchomienie emulatora i powinno być teraz możliwe emulator połączone ADB i skojarzonych narzędzi dla systemu Android.  
   
 ##  <a name="XamarinPlayer"></a> Emulator zawiesza się, ponieważ nie można ustawić port UDP  
  Może wystąpić problem związany z powodu niezgodności z odtwarzaczem Xamarin. Emulator zawiesi się lub jeśli zostanie wyświetlony ten komunikat o błędzie "emulator nie jest w stanie połączyć się z system operacyjny urządzenia: nie można ustawić port UDP.  Niektóre funkcje mogą być wyłączone", być może wystąpił problem. Wykonaj następujące kroki.  

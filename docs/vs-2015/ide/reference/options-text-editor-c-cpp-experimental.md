@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b07bdc7ab114619629ab4ef360ded3bf6655e6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aae8681bf9db0998c1d86ad00112d3228a76081d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285119"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814418"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opcje, Edytor tekstu, C/C++, eksperymentalne
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,15 +59,15 @@ Zmieniając tych opcji, możesz zmienić zachowanie związane z technologii Inte
   
  Dla funkcji edytora dodatkowego tekstu w galerii Visual Studio, należy zapoznać się z listą [tutaj](http://go.microsoft.com/fwlink/?LinkId=692016). Na przykład [C++ szybkich poprawek](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f), który obsługuje następujące czynności:  
   
--   **Dodaj brakujące #include** -sugeruje odpowiednie #include przez nieznany symboli w kodzie  
+- **Dodaj brakujące #include** -sugeruje odpowiednie #include przez nieznany symboli w kodzie  
   
--   **Dodaj instrukcję using przestrzeń nazw/pełnej kwalifikacji symbol** — podobnie jak poprzedni element, ale w przypadku przestrzeni nazw  
+- **Dodaj instrukcję using przestrzeń nazw/pełnej kwalifikacji symbol** — podobnie jak poprzedni element, ale w przypadku przestrzeni nazw  
   
--   **Dodaj Brak średnika**  
+- **Dodaj Brak średnika**  
   
--   **Pomoc MSDN** — komunikaty o błędach w witrynie MSDN wyszukiwania  
+- **Pomoc MSDN** — komunikaty o błędach w witrynie MSDN wyszukiwania  
   
- Możesz albo umieść kursor nad wężyk do pobrania żarówki, lub użyj domyślnej skrótu klawiaturowego Ctrl + kropka (Ctrl +.). Należy zauważyć, że dla skrótu klawiaturowego swoje karetki nie się znajdować na konkretny błąd lub tokenu po prostu można w tym samym wierszu jako błąd do wywołania sugestie dla wszystkich elementów w danym wierszu.  
+  Możesz albo umieść kursor nad wężyk do pobrania żarówki, lub użyj domyślnej skrótu klawiaturowego Ctrl + kropka (Ctrl +.). Należy zauważyć, że dla skrótu klawiaturowego swoje karetki nie się znajdować na konkretny błąd lub tokenu po prostu można w tym samym wierszu jako błąd do wywołania sugestie dla wszystkich elementów w danym wierszu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Ustawianie opcji edytora specyficznych dla języka](../../ide/reference/setting-language-specific-editor-options.md)   

@@ -16,27 +16,27 @@ ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1abb0905e276c2e9a2c5fc99b7d77edffedbb2d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3067f9d54a91c02df63d3c22afda19da3b5707ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242598"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818019"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Tworzenie niestandardowych edytorów i projektantów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio zintegrowane środowisko programistyczne (IDE) mogą obsługiwać różne rodzaje Edytor:  
   
--   Podstawowy edytor programu Visual Studio  
+- Podstawowy edytor programu Visual Studio  
   
--   Edytorach niestandardowych  
+- Edytorach niestandardowych  
   
--   Edytory zewnętrzne  
+- Edytory zewnętrzne  
   
--   Projektanci  
+- Projektanci  
   
- Poniższe informacje pomaga wybrać typu edytora, których potrzebujesz.  
+  Poniższe informacje pomaga wybrać typu edytora, których potrzebujesz.  
   
 ## <a name="types-of-editor"></a>Typy edytora  
  Aby uzyskać informacji na temat podstawowy edytor programu Visual Studio, zobacz [rozszerzanie usług edytora i języka](../extensibility/extending-the-editor-and-language-services.md).  

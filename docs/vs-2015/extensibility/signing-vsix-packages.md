@@ -19,12 +19,12 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 091edab3b3fad6707058ff7d35918176854c02f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ab10152afbefbdc49f0934f3fd062a74a2a1f30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915597"
 ---
 # <a name="signing-vsix-packages"></a>Podpisywanie pakietów VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Zestawy rozszerzenia nie trzeba zostać podpisane przed uruchomieniem w programi
   
 #### <a name="to-use-the-vsixsigntool"></a>Aby użyć VSIXSignTool  
   
-1.  Dodawanie VSIX użytkownika do projektu.  
+1. Dodawanie VSIX użytkownika do projektu.  
   
-2.  Kliknij prawym przyciskiem myszy węzeł projektu w Eksploratorze rozwiązań, wybierając **Dodaj &#124; Zarządzaj pakietami NuGet**.  Aby uzyskać więcej informacji na temat dodawania NuGet i NuGet Zobacz pakiety [Przegląd NuGet](http://docs.nuget.org/) i [Zarządzanie NuGet pakietów przy użyciu okna dialogowego](http://docs.nuget.org/Consume/Package-Manager-Dialog).  
+2. Kliknij prawym przyciskiem myszy węzeł projektu w Eksploratorze rozwiązań, wybierając **Dodaj &#124; Zarządzaj pakietami NuGet**.  Aby uzyskać więcej informacji na temat dodawania NuGet i NuGet Zobacz pakiety [Przegląd NuGet](http://docs.nuget.org/) i [Zarządzanie NuGet pakietów przy użyciu okna dialogowego](http://docs.nuget.org/Consume/Package-Manager-Dialog).  
   
-3.  Wyszukaj VSIXSignTool z VisualStudioExtensibility, a następnie zainstaluj pakiet NuGet.  
+3. Wyszukaj VSIXSignTool z VisualStudioExtensibility, a następnie zainstaluj pakiet NuGet.  
   
-4.  Możesz teraz uruchomić VSIXSignTool z lokalizacji lokalnej pakietów projektu. Poszukaj Pomoc wiersza polecenia narzędzia podpisywania scenariusza (VSIXSignTool.exe /?).  
+4. Możesz teraz uruchomić VSIXSignTool z lokalizacji lokalnej pakietów projektu. Poszukaj Pomoc wiersza polecenia narzędzia podpisywania scenariusza (VSIXSignTool.exe /?).  
   
- Na przykład aby zalogować się przy użyciu pliku certyfikatu chronione hasłem:  
+   Na przykład aby zalogować się przy użyciu pliku certyfikatu chronione hasłem:  
   
- /F logowania VSIXSignTool.exe \<certfile > /p \<hasło > \<VSIXfile >  
+   /F logowania VSIXSignTool.exe \<certfile > /p \<hasło > \<VSIXfile >  
   
 ## <a name="see-also"></a>Zobacz też  
  [Dostarczanie rozszerzeń programu Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

@@ -16,12 +16,12 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63c1eae7d53050f1763ba868d8d545ab7f326a34
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906926"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struktura pakietu VSPackage (pakiet VSPackage kontroli kodu źródłowego)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ Zestaw SDK pakietu kontroli źródła zawiera wytyczne dotyczące tworzenia paki
   
  Semantyka pakietu VSPackage obejmują:  
   
--   Interfejs do zaimplementowania bycia pakietu VSPackage ( `IVsPackage` interfejsu)  
+- Interfejs do zaimplementowania bycia pakietu VSPackage ( `IVsPackage` interfejsu)  
   
--   Implementacja poleceń interfejsu użytkownika (pliku vsct i stosowania <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu)  
+- Implementacja poleceń interfejsu użytkownika (pliku vsct i stosowania <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfejsu)  
   
--   Rejestrowanie pakietów VSPackage przy użyciu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- Rejestrowanie pakietów VSPackage przy użyciu [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
- Kontrola źródła pakietu VSPackage muszą komunikować się z tych innych [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jednostki:  
+  Kontrola źródła pakietu VSPackage muszą komunikować się z tych innych [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] jednostki:  
   
--   Projekty  
+- Projekty  
   
--   Edytory  
+- Edytory  
   
--   Rozwiązania  
+- Rozwiązania  
   
--   Windows  
+- Windows  
   
--   Uruchamianie tabeli dokumentu  
+- Uruchamianie tabeli dokumentu  
   
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>Usługi środowiska Visual Studio, które mogą być używane  
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  

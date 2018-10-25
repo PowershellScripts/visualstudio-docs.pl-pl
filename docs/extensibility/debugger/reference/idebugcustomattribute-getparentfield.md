@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76e80a29d9d73f26a1394d40cf6625e36b279f53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a0fe53b32b3aa36ae91f024d4764f4f1419a76e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927336"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
-Pobiera pola, do której jest dołączona atrybutu niestandardowego.  
+Pobiera pola, do której jest dołączony atrybut niestandardowy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int GetParentField(
   
 #### <a name="parameters"></a>Parametry  
  `ppField`  
- [out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt, który reprezentuje pole, do której jest dołączona atrybutu niestandardowego.  
+ [out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt, który reprezentuje pole, do której jest dołączony atrybut niestandardowy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wywołanie [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metody w zwróconym [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) jest obiektem, aby określić rodzaj polem obiektu nadrzędnego.  
+ Wywołaj [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) zwracanego metody [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) jest obiekt, aby określić, które pole jest rodzaju obiektu nadrzędnego.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   

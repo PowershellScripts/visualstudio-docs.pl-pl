@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ac5bad37ad5df85022ba6572da44d32de39736
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0ac385eaff1344d21b47e902e7c76d7f4c39343
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869763"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
-Ta metoda powoduje, że program dostępne dla aparatami debugowania (DEs) i Menedżera sesji debugowania.  
+Ta metoda powoduje, że program jest dostępny dla silniki debugowania (DEs) i Menedżer debugowania sesji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -45,19 +45,19 @@ int PublishProgram(
   
 #### <a name="parameters"></a>Parametry  
  `Engines`  
- [in] Tablica identyfikatory GUID dla DEs, które można uruchamiać lub dołączyć do tego programu.  
+ [in] Tablica identyfikatorów GUID do obsługi szyfrowania DEs, które można uruchomić lub dołączyć do tego programu.  
   
  `szFriendlyName`  
- [in] Przyjazna nazwa dla programu (jest wyświetlana w menu i okien dialogowych, użytkownik widzi).  
+ [in] Przyjazna nazwa dla programu (pojawia się w menu i okien dialogowych, użytkownik widzi).  
   
  `pDebuggeeInterface`  
- [in] `IUnknown` interfejsu programu (Ta wartość służy do jednoznacznej identyfikacji program jako plik cookie; tę samą wartość jest używana "cofnął publikacji" program)  
+ [in] `IUnknown` interfejsu programu (Ta wartość jest używana jako plik cookie do unikatowego identyfikowania program; ta sama wartość służy do "cofnąć publikację" program)  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Aby program nie jest już niedostępna na potrzeby debugowania, wywołaj [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).  
+ Aby napisać program, który nie jest już dostępna do debugowania, należy wywołać [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   

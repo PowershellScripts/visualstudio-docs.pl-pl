@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321193"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851611"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Porady: tworzenie adaptera danych diagnostycznych
 
@@ -33,7 +33,7 @@ Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy u
  Oto częściowa lista kluczowych zdarzeń, których można używać podczas tworzenia adaptera danych diagnostycznych. Aby uzyskać pełną listę zdarzeń adaptera danych diagnostycznych, zobacz Omówienie abstrakcyjnej <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> klasy.
 
 |Zdarzenie|Opis|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|Rozpoczęcie cyklu testów|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|Zakończenie cyklu testów|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseStart>|Rozpoczęcie każdego testu w przebiegu testu|
@@ -52,78 +52,78 @@ Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy u
 
 ### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Aby utworzyć i zainstalować adapter danych diagnostycznych
 
-1.  Utwórz nową bibliotekę klas.
+1. Utwórz nową bibliotekę klas.
 
-    1.  Na **pliku** menu, wybierz **New**, a następnie wskaż **nowy projekt**.
+   1.  Na **pliku** menu, wybierz **New**, a następnie wskaż **nowy projekt**.
 
-    2.  Z **typów projektów**, wybierz język do użycia.
+   2.  Z **typów projektów**, wybierz język do użycia.
 
-    3.  Z **zainstalowane szablony programu Visual Studio**, wybierz opcję **biblioteki klas**.
+   3.  Z **zainstalowane szablony programu Visual Studio**, wybierz opcję **biblioteki klas**.
 
-    4.  Wpisz nazwę dla adaptera danych diagnostycznych.
+   4.  Wpisz nazwę dla adaptera danych diagnostycznych.
 
-    5.  Wybierz **OK**.
+   5.  Wybierz **OK**.
 
-2.  Dodaj zestaw **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
+2. Dodaj zestaw **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-    1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** i wybierz polecenie **Dodaj odwołanie** polecenia.
+   1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** i wybierz polecenie **Dodaj odwołanie** polecenia.
 
-    2.  Wybierz **.NET** i Znajdź **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
+   2.  Wybierz **.NET** i Znajdź **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-    3.  Wybierz **OK**.
+   3.  Wybierz **OK**.
 
-3.  Dodaj zestaw **Microsoft.VisualStudio.QualityTools.Common**.
+3. Dodaj zestaw **Microsoft.VisualStudio.QualityTools.Common**.
 
-    1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** i wybierz **Dodaj odwołanie** polecenia.
+   1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy **odwołania** i wybierz **Dodaj odwołanie** polecenia.
 
-    2.  Choose **/.NET**, locate **Microsoft.VisualStudio.QualityTools.Common.dll**.
+   2.  Choose **/.NET**, locate **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-    3.  Wybierz **OK**.
+   3.  Wybierz **OK**.
 
-4.  Dodaj następujący kod `using` instrukcje do pliku klasy:
+4. Dodaj następujący kod `using` instrukcje do pliku klasy:
 
-    ```csharp
-    using Microsoft.VisualStudio.TestTools.Common;
-    using Microsoft.VisualStudio.TestTools.Execution;
-    using System.Linq;
-    using System.Text;
-    using System.Xml;
-    using System;
-    ```
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.Common;
+   using Microsoft.VisualStudio.TestTools.Execution;
+   using System.Linq;
+   using System.Text;
+   using System.Xml;
+   using System;
+   ```
 
-5.  Dodaj <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> do klasy dla adaptera danych diagnostycznych w celu zidentyfikowania go jako adapter danych diagnostycznych, zastępując **firmy**, **produktu**, i **wersji** z odpowiednimi informacjami dla adaptera danych diagnostycznych:
+5. Dodaj <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> do klasy dla adaptera danych diagnostycznych w celu zidentyfikowania go jako adapter danych diagnostycznych, zastępując **firmy**, **produktu**, i **wersji** z odpowiednimi informacjami dla adaptera danych diagnostycznych:
 
-    ```csharp
-    [DataCollectorTypeUri("datacollector://Company/Product/Version")]
-    ```
+   ```csharp
+   [DataCollectorTypeUri("datacollector://Company/Product/Version")]
+   ```
 
-6.  Dodaj <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> atrybutów do klasy, zastępując odpowiednimi informacjami dla adaptera danych diagnostycznych:
+6. Dodaj <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> atrybutów do klasy, zastępując odpowiednimi informacjami dla adaptera danych diagnostycznych:
 
-    ```csharp
-    [DataCollectorFriendlyName("Collect Log Files", false)]
-    ```
+   ```csharp
+   [DataCollectorFriendlyName("Collect Log Files", false)]
+   ```
 
-     Ta przyjazna nazwa jest wyświetlana w działaniu dotyczącym ustawień testu.
+    Ta przyjazna nazwa jest wyświetlana w działaniu dotyczącym ustawień testu.
 
-    > [!NOTE]
-    > Można również dodać <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> do określenia `Type` z edytora konfiguracji niestandardowej dla tej karty danych i aby opcjonalnie określić plik pomocy dla edytora.
-    >
-    > Można również zastosować <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> do określenia, że powinna zawsze być włączone.
+   > [!NOTE]
+   > Można również dodać <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> do określenia `Type` z edytora konfiguracji niestandardowej dla tej karty danych i aby opcjonalnie określić plik pomocy dla edytora.
+   >
+   > Można również zastosować <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> do określenia, że powinna zawsze być włączone.
 
-7.  Klasy adaptera danych diagnostycznych musi dziedziczyć <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> klasy w następujący sposób:
+7. Klasy adaptera danych diagnostycznych musi dziedziczyć <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> klasy w następujący sposób:
 
-    ```csharp
-    public class MyDiagnosticDataAdapter : DataCollector
-    ```
+   ```csharp
+   public class MyDiagnosticDataAdapter : DataCollector
+   ```
 
-8.  Dodaj zmienne lokalne w następujący sposób:
+8. Dodaj zmienne lokalne w następujący sposób:
 
-    ```csharp
-    private DataCollectionEvents dataEvents;
-    private DataCollectionLogger dataLogger;
-    private DataCollectionSink dataSink;
-    private XmlElement configurationSettings;
-    ```
+   ```csharp
+   private DataCollectionEvents dataEvents;
+   private DataCollectionLogger dataLogger;
+   private DataCollectionSink dataSink;
+   private XmlElement configurationSettings;
+   ```
 
 9. Dodaj <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector.Initialize*> metody i **Dispose** metody. W `Initialize` metodę inicjowania ujście danych, wszelkie dane konfiguracyjne z ustawień testu i zarejestrujesz programy obsługi zdarzeń, które chcesz użyć w następujący sposób:
 
@@ -273,7 +273,7 @@ Aby utworzyć *adaptera danych diagnostycznych*, Utwórz bibliotekę klas przy u
 
 17. Uruchom testy przy użyciu ustawień testowych z wybraną kartą danych diagnostycznych.
 
-   Określony plik danych jest dołączony do wyników testu.
+    Określony plik danych jest dołączony do wyników testu.
 
 ## <a name="see-also"></a>Zobacz także
 

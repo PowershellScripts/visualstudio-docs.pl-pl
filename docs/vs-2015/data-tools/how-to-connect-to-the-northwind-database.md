@@ -21,12 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 2b4393758b4c246af0da830b6ed8d8e20eb8ff40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f64fa378029546f7a3126b324c282f6a91d7231
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191129"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897637"
 ---
 # <a name="how-to-connect-to-the-northwind-database"></a>Porady: połączenie z bazą danych Northwind
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,29 +38,29 @@ Jak dowiesz się, jak tworzyć aplikacje bazy danych przy użyciu programu Visua
   
 #### <a name="to-create-a-data-connection-to-the-northwind-database-sql-server"></a>Aby utworzyć połączenie danych z bazy danych Northwind (SQL Server)  
   
-1.  Na **widoku** menu, wybierz **Eksploratora serwera**/**Eksplorator bazy danych**.  
+1. Na **widoku** menu, wybierz **Eksploratora serwera**/**Eksplorator bazy danych**.  
   
-2.  W **Eksploratora serwera**/**Eksplorator bazy danych**, otwórz menu skrótów dla **połączeń danych** i wybierz polecenie **Dodaj połączenie**.  
+2. W **Eksploratora serwera**/**Eksplorator bazy danych**, otwórz menu skrótów dla **połączeń danych** i wybierz polecenie **Dodaj połączenie**.  
   
-     Po wybraniu **Dodaj połączenie**, albo **wybierz źródło danych** okno dialogowe lub **Dodaj połączenie** zostanie wyświetlone okno dialogowe.  
+    Po wybraniu **Dodaj połączenie**, albo **wybierz źródło danych** okno dialogowe lub **Dodaj połączenie** zostanie wyświetlone okno dialogowe.  
   
-3.  Jeśli **wybierz źródło danych** pojawi się okno dialogowe, wybierz **programu Microsoft SQL Server**, a następnie wybierz **OK**.  
+3. Jeśli **wybierz źródło danych** pojawi się okno dialogowe, wybierz **programu Microsoft SQL Server**, a następnie wybierz **OK**.  
   
-     Jeśli **Dodaj połączenie** pojawi się okno dialogowe i **źródła danych** nie **programu Microsoft SQL Server (SqlClient)**, wybierz **zmiany** przycisk, aby otworzyć **Zmień źródło danych** okno dialogowe, wybierz opcję **programu Microsoft SQL Server**, a następnie wybierz **OK** przycisku.  
+    Jeśli **Dodaj połączenie** pojawi się okno dialogowe i **źródła danych** nie **programu Microsoft SQL Server (SqlClient)**, wybierz **zmiany** przycisk, aby otworzyć **Zmień źródło danych** okno dialogowe, wybierz opcję **programu Microsoft SQL Server**, a następnie wybierz **OK** przycisku.  
   
-4.  W **nazwy serwera** Określ nazwę serwera, na którym znajduje się baza danych Northwind.  
+4. W **nazwy serwera** Określ nazwę serwera, na którym znajduje się baza danych Northwind.  
   
-5.  W zależności od wymagań używanej wersji programu SQL Server i bazy danych Northwind, wybierz opcję **uwierzytelnianie Windows** lub wybierz **Użyj uwierzytelniania programu SQL Server** i wprowadź nazwę użytkownika i hasło do logowania się do komputera z programem SQL Server.  
+5. W zależności od wymagań używanej wersji programu SQL Server i bazy danych Northwind, wybierz opcję **uwierzytelnianie Windows** lub wybierz **Użyj uwierzytelniania programu SQL Server** i wprowadź nazwę użytkownika i hasło do logowania się do komputera z programem SQL Server.  
   
-6.  Wybierz bazę danych Northwind w **wybierz lub wprowadź nazwę bazy danych** listy.  
+6. Wybierz bazę danych Northwind w **wybierz lub wprowadź nazwę bazy danych** listy.  
   
-7.  Wybierz **Testuj połączenie** do weryfikowania łączności z bazą danych Northwind.  
+7. Wybierz **Testuj połączenie** do weryfikowania łączności z bazą danych Northwind.  
   
-8.  Wybierz **OK**.  
+8. Wybierz **OK**.  
   
-     Połączenie danych z bazy danych Northwind jest dodawany do **Eksploratora serwera**/**Eksplorator bazy danych**.  
+    Połączenie danych z bazy danych Northwind jest dodawany do **Eksploratora serwera**/**Eksplorator bazy danych**.  
   
- Oprócz nawiązywania połączenia ze zdalnym wystąpieniem bazy danych programu SQL Server, można też połączyć bezpośrednio z rzeczywistymi plikami, które zawierają bazy danych. Dzięki temu można dodać pliki bazy danych bezpośrednio do projektu, gdzie one wdrażane jako część aplikacji. Obecnie obsługiwane są następujące pliki z lokalnej bazy danych: pliki bazy danych programu SQL Server Compact (.sdf) [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] i pliki bazy danych programu SQL Server Express (.mdf) i pliki bazy danych Microsoft Access (.mdb lub accdb).  
+   Oprócz nawiązywania połączenia ze zdalnym wystąpieniem bazy danych programu SQL Server, można też połączyć bezpośrednio z rzeczywistymi plikami, które zawierają bazy danych. Dzięki temu można dodać pliki bazy danych bezpośrednio do projektu, gdzie one wdrażane jako część aplikacji. Obecnie obsługiwane są następujące pliki z lokalnej bazy danych: pliki bazy danych programu SQL Server Compact (.sdf) [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] i pliki bazy danych programu SQL Server Express (.mdf) i pliki bazy danych Microsoft Access (.mdb lub accdb).  
   
 #### <a name="to-create-a-data-connection-to-the-northwind-databasesql-server-database-file-mdf"></a>Aby utworzyć połączenie danych z bazy danych Northwind — plik bazy danych programu SQL Server (mdf)  
   

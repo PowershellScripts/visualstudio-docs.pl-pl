@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292789"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852716"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,31 +116,31 @@ Jeśli chcesz dowiedzieć się o nowych funkcjach w programie Visual Studio 2015
 
  Edytor tekstu jest wysoce interakcyjny (jeśli ma to być) produktywne wiele funkcji, które ułatwiają lepsze szybsze pisanie kodu. Różne funkcje za pomocą języka, a nie masz żadnego z nich (typu "Editor" na szybkie uruchamianie) umożliwia włączanie i wyłączanie funkcji: niektóre typowe funkcje produktywności są:
 
-1.  [Refaktoryzacja](../ide/refactoring-in-visual-studio.md) obejmuje operacje, takie jak inteligentne zmiana nazwy zmiennych, przenosząc zaznaczone wiersze kodu w to oddzielna funkcja przenoszenia kodu do innych lokalizacji, redordering parametrów funkcji i nie tylko.
+1. [Refaktoryzacja](../ide/refactoring-in-visual-studio.md) obejmuje operacje, takie jak inteligentne zmiana nazwy zmiennych, przenosząc zaznaczone wiersze kodu w to oddzielna funkcja przenoszenia kodu do innych lokalizacji, redordering parametrów funkcji i nie tylko.
 
-2.  *Funkcja IntelliSense* to ogólny termin dla zestawu popularne funkcje, które wyświetlania informacji o typie o kodzie bezpośrednio w edytorze, a w niektórych przypadkach zapisu małe fragmenty kodu dla Ciebie. To, jak podstawowa dokumentacja wbudowanego w edytorze, co pozwala uniknąć konieczności wyszukiwania informacji o typie w oknie Pomoc. Funkcje IntelliSense, zależy od języka. Aby uzyskać więcej informacji, zobacz [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [IntelliSense specyficzne dla języka Visual Basic ](../ide/visual-basic-specific-intellisense.md). Poniższa ilustracja przedstawia niektóre funkcje IntelliSense w miejscu pracy:
+2. *Funkcja IntelliSense* to ogólny termin dla zestawu popularne funkcje, które wyświetlania informacji o typie o kodzie bezpośrednio w edytorze, a w niektórych przypadkach zapisu małe fragmenty kodu dla Ciebie. To, jak podstawowa dokumentacja wbudowanego w edytorze, co pozwala uniknąć konieczności wyszukiwania informacji o typie w oknie Pomoc. Funkcje IntelliSense, zależy od języka. Aby uzyskać więcej informacji, zobacz [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), [IntelliSense specyficzne dla języka Visual Basic ](../ide/visual-basic-specific-intellisense.md). Poniższa ilustracja przedstawia niektóre funkcje IntelliSense w miejscu pracy:
 
-     ![Lista elementów członkowskich programu Visual Studio](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
+    ![Lista elementów członkowskich programu Visual Studio](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
 
-3.  **Zygzaki** alertów dotyczących błędów lub potencjalnych problemów w kodzie w czasie rzeczywistym podczas wpisywania, co umożliwia naprawić natychmiast bez oczekiwania na błąd, które mają zostać odnalezione w czasie kompilacji lub wykonywania. Po umieszczeniu wskaźnika myszy nad wężyk, zobaczysz dodatkowe informacje o tym błędzie. Żarówka może również wystąpić na lewym marginesie z sugestii dotyczących sposobu naprawić błąd. Aby uzyskać więcej informacji, zobacz [szybkie wykonywanie akcji dzięki żarówkom](../ide/perform-quick-actions-with-light-bulbs.md).
+3. **Zygzaki** alertów dotyczących błędów lub potencjalnych problemów w kodzie w czasie rzeczywistym podczas wpisywania, co umożliwia naprawić natychmiast bez oczekiwania na błąd, które mają zostać odnalezione w czasie kompilacji lub wykonywania. Po umieszczeniu wskaźnika myszy nad wężyk, zobaczysz dodatkowe informacje o tym błędzie. Żarówka może również wystąpić na lewym marginesie z sugestii dotyczących sposobu naprawić błąd. Aby uzyskać więcej informacji, zobacz [szybkie wykonywanie akcji dzięki żarówkom](../ide/perform-quick-actions-with-light-bulbs.md).
 
-     ![Ikona żarówki z kursor](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+    ![Ikona żarówki z kursor](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
 
-4.  [Zakładki](../ide/setting-bookmarks-in-code.md) umożliwiają szybko przechodzić do określonych wierszy w plikach, które aktywnie pracuje.
+4. [Zakładki](../ide/setting-bookmarks-in-code.md) umożliwiają szybko przechodzić do określonych wierszy w plikach, które aktywnie pracuje.
 
-5.  [Hierarchię wywołań](../ide/reference/call-hierarchy.md) okno może być wywoływany w menu kontekstowym edytora tekstu, aby pokazać metody, które wywołanie i są wywoływane przez, metoda pod karetką.
+5. [Hierarchię wywołań](../ide/reference/call-hierarchy.md) okno może być wywoływany w menu kontekstowym edytora tekstu, aby pokazać metody, które wywołanie i są wywoływane przez, metoda pod karetką.
 
-6.  **Code Lens** umożliwia znajdowanie odwołań i zmian kodu, połączone usterki, elementy robocze, przeglądy kodu i testów jednostkowych, wszystko to bez zamykania edytora. Aby uzyskać więcej informacji, zobacz [znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md).
+6. **Code Lens** umożliwia znajdowanie odwołań i zmian kodu, połączone usterki, elementy robocze, przeglądy kodu i testów jednostkowych, wszystko to bez zamykania edytora. Aby uzyskać więcej informacji, zobacz [znajdowanie zmian w kodzie i innych elementów historii](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-7.  **Wgląd do definicji** okno pokazuje tekście definicji metody lub typu, bez przechodzenia poza bieżący kontekst. To okno teraz działa dla XAML, zbyt.
+7. **Wgląd do definicji** okno pokazuje tekście definicji metody lub typu, bez przechodzenia poza bieżący kontekst. To okno teraz działa dla XAML, zbyt.
 
-8.  **Przejdź do definicji** menu kontekstowego spowoduje przejście bezpośrednio do miejsca, w którym definiowany jest funkcji lub obiektu. Inne polecenia nawigacji są także dostępne przez kliknięcie prawym przyciskiem myszy w edytorze.
+8. **Przejdź do definicji** menu kontekstowego spowoduje przejście bezpośrednio do miejsca, w którym definiowany jest funkcji lub obiektu. Inne polecenia nawigacji są także dostępne przez kliknięcie prawym przyciskiem myszy w edytorze.
 
 9. Pokrewne narzędzia [przeglądarki obiektów](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470)zawierają umożliwia umożliwia sprawdzanie zestawów .NET lub środowiska wykonawczego Windows w systemie, aby zobaczyć ich typy i jakie metody i właściwości zawierają te typy.
 
      ![Obiekt System.Timer w przeglądarce](../ide/media/objectbrowser.png "ObjectBrowser")
 
- Większość elementów menu Edycja i menu Widok odnoszą się do edytora kodu, które w jakiś sposób. Aby uzyskać więcej informacji na temat edytora, zobacz [pisanie kodu](../ide/writing-code-in-the-code-and-text-editor.md) i [edycji kodu](https://www.visualstudio.com/features/ide-vs).
+   Większość elementów menu Edycja i menu Widok odnoszą się do edytora kodu, które w jakiś sposób. Aby uzyskać więcej informacji na temat edytora, zobacz [pisanie kodu](../ide/writing-code-in-the-code-and-text-editor.md) i [edycji kodu](https://www.visualstudio.com/features/ide-vs).
 
 ## <a name="compiling-and-building-your-code"></a>Kompilowanie i tworzenie kodu
 

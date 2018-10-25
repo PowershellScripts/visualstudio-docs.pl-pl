@@ -29,12 +29,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5522c9da025b76a3892d3923cdd7397b8ed5ce5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fbe323d5c8939ee5a4088436c906b99b4696254e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207496"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872931"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Just-in-time, debugowanie, opcje ― Okno dialogowe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ Aby uzyskać dostęp do **Just-In-Time** strony, przejdź do **narzędzia** menu
   
  Aby umożliwić debugowanie dla tych typów programów Just-In-Time:  
   
--   Zarządzane  
+- Zarządzane  
   
--   Natywne  
+- Natywne  
   
--   skrypt  
+- skrypt  
   
- Debugowanie Just In Time jest techniką debugowanie programu, który jest uruchamiany poza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Można uruchomić programu, który został utworzony w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] środowiska. Włączenie debugowania Just-in-time awarii wyświetli okno dialogowe z pytaniem, jeśli chcesz debugować.  
+  Debugowanie Just In Time jest techniką debugowanie programu, który jest uruchamiany poza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Można uruchomić programu, który został utworzony w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] poza [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] środowiska. Włączenie debugowania Just-in-time awarii wyświetli okno dialogowe z pytaniem, jeśli chcesz debugować.  
   
 ## <a name="associated-warnings"></a>Skojarzone ostrzeżenia  
  Podczas odwiedzania ta strona **opcje** okno dialogowe może pojawić się komunikat ostrzegawczy, następująco:  

@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad9cd6c3356d38184b24a7e2ecfa06ca954bfbb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ebff9aaeb49d99b26b92d1908e22397b9ab0a20d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868693"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Rozszerzanie właściwości, listy zadań, danych wyjściowych i opcji systemu windows
 Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W tym przewodniku pokazano, jak zintegrować informacji na temat okna narzędzia nową **opcje** strony i nowe ustawienie na **właściwości** strony, a także zapisywać **listy zadań** i **dane wyjściowe** systemu windows.  
@@ -98,33 +98,33 @@ Możesz uzyskać dostęp do każdego okna narzędzi w programie Visual Studio. W
 ## <a name="create-an-options-page"></a>Tworzenie strony opcji  
  Możesz podać strony w **opcje** okno dialogowe, dzięki czemu użytkownicy mogą zmieniać ustawienia dla okna narzędzia. Tworzenie strony opcji wymaga obu klasę, która w tym artykule opisano opcje i wpis w *TodoListPackage.cs* lub *TodoListPackage.vb* pliku.  
   
-1.  Dodaj klasę o nazwie `ToolsOptions.cs`. Wprowadź `ToolsOptions` klasa dziedziczy <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+1. Dodaj klasę o nazwie `ToolsOptions.cs`. Wprowadź `ToolsOptions` klasa dziedziczy <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
-    ```csharp  
-    class ToolsOptions : DialogPage  
-    {  
-    }  
-    ```  
+   ```csharp  
+   class ToolsOptions : DialogPage  
+   {  
+   }  
+   ```  
   
-2.  Dodaj następującą instrukcję using:  
+2. Dodaj następującą instrukcję using:  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell;  
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell;  
+   ```  
   
-3.  Strona opcji, w tym przewodniku zawiera tylko jedną opcję o nazwie DaysAhead. Dodaj pole private o nazwie **daysAhead** i właściwość o nazwie **DaysAhead** do `ToolsOptions` klasy:  
+3. Strona opcji, w tym przewodniku zawiera tylko jedną opcję o nazwie DaysAhead. Dodaj pole private o nazwie **daysAhead** i właściwość o nazwie **DaysAhead** do `ToolsOptions` klasy:  
   
-    ```csharp  
-    private double daysAhead;  
+   ```csharp  
+   private double daysAhead;  
   
-    public double DaysAhead  
-    {  
-        get { return daysAhead; }  
-        set { daysAhead = value; }  
-    }  
-    ```  
+   public double DaysAhead  
+   {  
+       get { return daysAhead; }  
+       set { daysAhead = value; }  
+   }  
+   ```  
   
- Teraz należy projekt o tej stronie opcje.  
+   Teraz należy projekt o tej stronie opcje.  
   
 ### <a name="make-the-options-page-available-to-users"></a>Udostępnić użytkownikom stronę opcji  
   

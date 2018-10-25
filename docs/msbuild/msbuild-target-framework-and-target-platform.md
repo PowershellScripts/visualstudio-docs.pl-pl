@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2fc6fb0be13dbda001c23a4d51e11dc9f53853d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bfb45efc199ea1f643c71bdc19a90862bb6c5dd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774710"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916065"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Program MSBuild docelowej platformy framework i docelowego
 Można skompilować projekt, do uruchamiania na *platformę docelową*, czyli konkretnej wersji programu .NET Framework i *platformę docelową*, czyli architektury konkretnego oprogramowania.  Można na przykład wskazać aplikację do uruchamiania na .NET Framework 2.0 na 32-bitowej platformie, która jest zgodna z rodziny procesorów 802 x 86 ("x86"). Kombinacja wartości docelowej i platforma docelowa jest znany jako *kontekstu docelowej*.  
@@ -25,23 +25,23 @@ Można skompilować projekt, do uruchamiania na *platformę docelową*, czyli ko
   
  Obecnie następujące wersje programu .NET Framework są dostępne do użycia:  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 (zawarty w programie Visual Studio 2005)  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 (zawarty w programie Visual Studio 2005)  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.0 (zawarte w [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.0 (zawarte w [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.5 (zawarte w [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.5 (zawarte w [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.2  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.2  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6 (zawarte w [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6 (zawarte w [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])  
 
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.1  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.1  
 
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.2  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.2  
 
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7  
 
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1  
 
 Na liście zestawów, że każdy sprawia, że można odwoływać się do wersji programu .NET Framework różnią się od siebie. Na przykład nie można tworzyć aplikacje Windows Presentation Foundation (WPF), chyba że projekt jest przeznaczony dla .NET Framework w wersji 3.0 lub nowszej.  
 

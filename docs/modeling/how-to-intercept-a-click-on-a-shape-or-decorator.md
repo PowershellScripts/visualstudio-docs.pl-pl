@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a8f959595ec40f70b736c163299d8593883ee5e5
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0a8af35d9edbb28c6b357149586fe7015858f4f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567406"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876532"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Porady: przechwytywanie kliknięć w kształcie lub elemencie Decorator
 Poniższe procedury pokazują, jak przechwytywanie kliknięć w kształcie lub elemencie decorator ikonę. Można przechwycić kliknięć, kliknie dwukrotnie, przeciągnie, oraz innych gesty i wprowadzić element reagować.
@@ -121,17 +121,17 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Przechwytuje kliknięcia i przeciąga element CompartmentShape list
  Poniższy przykład umożliwia użytkownikom zmienić kolejność elementów w kształt przedziału, przeciągając je. Aby uruchomić ten kod:
 
-1.  Utwórz nowe rozwiązanie języka DSL za pomocą **diagramów klas** szablonu rozwiązania.
+1. Utwórz nowe rozwiązanie języka DSL za pomocą **diagramów klas** szablonu rozwiązania.
 
-     Może również współdziałać z rozwiązaniem samodzielnie, zawierający kształty przedziału. Ten kod zakłada, że istnieje relacja osadzania między elementy modelu reprezentowanego przez kształt i elementy reprezentowane w elementach listy przedziału.
+    Może również współdziałać z rozwiązaniem samodzielnie, zawierający kształty przedziału. Ten kod zakłada, że istnieje relacja osadzania między elementy modelu reprezentowanego przez kształt i elementy reprezentowane w elementach listy przedziału.
 
-2.  Ustaw **Generates Double Derived** właściwość kształtu przedziału.
+2. Ustaw **Generates Double Derived** właściwość kształtu przedziału.
 
-3.  Dodaj następujący kod w pliku w **Dsl** projektu.
+3. Dodaj następujący kod w pliku w **Dsl** projektu.
 
-4.  Dostosuj klasę i kształt nazwy domen w tym kodzie, aby dopasować swoje własne DSL.
+4. Dostosuj klasę i kształt nazwy domen w tym kodzie, aby dopasować swoje własne DSL.
 
- Podsumowując ten kod działa w następujący sposób. W tym przykładzie `ClassShape` jest nazwa kształtu przedziału.
+   Podsumowując ten kod działa w następujący sposób. W tym przykładzie `ClassShape` jest nazwa kształtu przedziału.
 
 -   Zestaw programów obsługi zdarzeń myszy jest dołączany do każdego wystąpienia elementu compartment, podczas jego tworzenia.
 
@@ -393,7 +393,6 @@ namespace Company.CompartmentDrag
   }
  }
 }
-
 ```
 
 ## <a name="see-also"></a>Zobacz też

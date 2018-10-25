@@ -18,24 +18,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a6dee20c35b290b50306d5484dc139e8a7600a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235105"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905957"
 ---
 # <a name="command-window"></a>Okno polecenia
-**Polecenia** okna jest używany do wykonywania poleceń ani aliasów bezpośrednio w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowane środowisko programistyczne (IDE). W żadnym menu mogą wykonywać zarówno poleceń menu i poleceń, które nie są wyświetlane. Aby wyświetlić **polecenia** okna, wybierz **inne okna** z **widoku** menu, a następnie wybierz **okno polecenia**.
+**Polecenia** okna jest używana do wykonywania poleceń ani aliasów bezpośrednio w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE). Można wykonać polecenia menu i poleceń, które nie są wyświetlane w żadnym menu. Aby wyświetlić **polecenia** okna, wybierz **Windows inne** z **widoku** menu, a następnie wybierz **okna polecenia**.
 
 ## <a name="displaying-the-values-of-variables"></a>Wyświetlanie wartości zmiennych
- Aby sprawdzić wartość zmiennej `varA`, użyj [polecenia Drukuj](../../ide/reference/print-command.md):
+ Aby sprawdzić wartość zmiennej `varA`, użyj [polecenie Drukuj](../../ide/reference/print-command.md):
 
 ```cmd
 >Debug.Print varA
 ```
 
- Znak zapytania (?) jest aliasem `Debug.Print`, dlatego to polecenie może być także zapisane:
+ Znak zapytania (?) jest aliasem `Debug.Print`, dlatego to polecenie można również zapisać:
 
 ```cmd
 >? varA
@@ -43,39 +43,39 @@ ms.locfileid: "36235105"
 
  Obie wersje to polecenie zwróci wartość zmiennej `varA`.
 
-## <a name="entering-commands"></a>Wprowadzanie polecenia
- Im większa niż symbol (`>`) jest wyświetlany przy lewej krawędzi okna wiersza polecenia, jako wiersz dla nowych wierszy. Użyj klawiszy Strzałka w górę i Strzałka w dół, aby przewijać wcześniej wydanych poleceń.
+## <a name="entering-commands"></a>Wprowadzenie poleceń
+ Większa niż symbol (`>`) jest wyświetlana przy lewej krawędzi okna wiersza polecenia jako wiersza dla nowych wierszy. Użyj klawiszy Strzałka w górę i Strzałka w dół do przewijania wcześniej wydanych poleceń.
 
 |Zadanie|Rozwiązanie|Przykład|
 |----------|--------------|-------------|
-|Obliczyć wyrażenia.|Należy poprzedzić wyrażenia znakiem zapytania (`?`).|`? myvar`|
-|Przełącz do okna bezpośredniego.|Wprowadź `immed` do okna bez oznacza większe znak większości (>)|`immed`|
-|Przejdź do okna poleceń w oknie bezpośrednim.|Wprowadź `cmd` do okna.|`>cmd`|
+|Ocena wyrażenia.|Należy poprzedzić wyrażenie znakiem zapytania (`?`).|`? myvar`|
+|Przełącz do okna bezpośredniego.|Wprowadź `immed` do okna bez znaku większości (>)|`immed`|
+|Przejdź z powrotem do okna polecenia w oknie bezpośrednim.|Wprowadź `cmd` do okna.|`>cmd`|
 
- Następujące skróty pomóc Przejdź w trybie polecenia.
+ Poniższe skróty pomóc w nawigowaniu w trybie polecenia.
 
-|Akcja|Lokalizacja kursora|Keybinding|
-|------------|---------------------|----------------|
-|Przełączanie po kolei listę poleceń, wprowadzony wcześniej.|Wierszu danych wejściowych|&AMP; STRZAŁKA W DÓŁ STRZAŁKA W GÓRĘ|
+|Akcja|Lokalizacji kursora|Powiązanie klawiszy|
+|------------| - |----------------|
+|Przechodzenie między listę poleceń podaną wcześniej.|Wiersz danych wejściowych|&AMP; STRZAŁKA W DÓŁ STRZAŁKA W GÓRĘ|
 |Przewiń w górę okna.|Zawartość okna polecenia|CTRL + STRZAŁKA W GÓRĘ|
 |Przewiń w dół okna.|Zawartość okna polecenia|Strzałka w dół lub CTRL + Strzałka w dół|
 
 > [!TIP]
-> Całość lub część poprzednie polecenie można skopiować do wierszu danych wejściowych przewijanie do niego, wyróżnianie całości lub części, a następnie naciskając klawisz ENTER.
+> Możesz skopiować całość lub część poprzednie polecenie do wiersza danych wejściowych przewijanie do niego, wyróżnianie całość lub część jej i następnie naciśnij klawisz ENTER.
 
 
 ## <a name="mark-mode"></a>Tryb oznaczania
- Po kliknięciu dowolnej poprzedniego wiersza w **polecenia** okna, następuje przejście automatycznie w trybie znaku. Dzięki temu można wybrać, edytowania i skopiować tekst powyższych poleceń w edytorze tekstu i wklej je do bieżącego wiersza.
+ Po kliknięciu dowolnego poprzedniego wiersza w **polecenia** okna, nastąpi automatyczne przejście w tryb oznaczania. Dzięki temu można wybrać, edytować i skopiować tekst z poprzedniego polecenia, ponieważ w dowolnym edytorze tekstów i wkleić je do bieżącego wiersza.
 
 ## <a name="the-equals--sign"></a>Znak równości (=)
- Okno służy do wprowadzania `EvaluateStatement` polecenie Określa, czy znak równości (=) jest interpretowany jako operator porównania lub operator przypisania.
+ Okno służące do wprowadzania `EvaluateStatement` polecenie Określa, czy znak równości (=) jest interpretowany jako operator porównania lub operator przypisania.
 
- W **polecenia** okna, znak równości (=) jest interpretowana jako operator porównania. Nie można używać operatorów przypisania w **polecenia** okna. Na przykład, jeśli wartości zmiennych `varA` i `varB` są różne, a następnie polecenie `>Debug.EvaluateStatement(varA=varB)` zwróci wartość `False`.
+ W **polecenia** okna, znak równości (=) jest interpretowany jako operator porównania. Nie można używać operatorów przypisania w **polecenia** okna. Na przykład, jeśli wartości zmiennych `varA` i `varB` są różne, a następnie polecenie `>Debug.EvaluateStatement(varA=varB)` zwróci wartość `False`.
 
- W **Immediate** okna, natomiast znak równości (=) jest interpretowana jako operatora przypisania. Tak, na przykład polecenie `>Debug.EvaluateStatement(varA=varB)` przypisze do zmiennej `varA` wartość zmiennej `varB`.
+ W **bezpośrednie** okna, z drugiej strony, znak równości (=) jest interpretowany jako operator przypisania. Tak, na przykład polecenie `>Debug.EvaluateStatement(varA=varB)` przypiszą do zmiennej `varA` wartość zmiennej `varB`.
 
 ## <a name="parameters-switches-and-values"></a>Parametry, przełączniki i wartości
- Niektóre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] wymagać polecenia i argumentów opcjonalnych, przełączniki i wartości. Niektóre zasady mają zastosowanie podczas pracy z tych poleceń. Oto przykład poleceniu sformatowanego wyjaśnienie terminologii.
+ Niektóre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] polecenia mają wymagane i opcjonalne argumenty, przełączniki i wartości. Niektóre reguły stosuje się podczas pracy z tych poleceń. Oto przykład sformatowanego polecenie, aby wyjaśnić, terminologii.
 
 ```cmd
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
@@ -83,34 +83,34 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 
  W tym przykładzie
 
--   `Edit.ReplaceInFiles` to polecenie
+-   `Edit.ReplaceInFiles` polecenie
 
--   `/case` i `/pattern:regex` parametry (poprzedzone znakiem ukośnika [/])
+-   `/case` i `/pattern:regex` parametry (poprzedzony znakiem ukośnika [/])
 
 -   `regex` jest to wartość `/pattern` przełączyć; `/case` przełącznik nie ma wartości
 
 -   `var[1-3]+` i `oldpar` parametrów
 
     > [!NOTE]
-    >  Polecenie, parametr, przełącznika lub wartość zawierająca spacje musi mieć podwójny cudzysłów po obu stronach.
+    >  Polecenia, parametr, przełącznika lub wartość, która zawiera spacje, musi mieć podwójny cudzysłów po obu stronach.
 
-Pozycja przełączników i parametry mogą być stosowane zamiennie za darmo w wierszu polecenia, z wyjątkiem produktów [powłoki](../../ide/reference/shell-command.md) polecenia, które wymaga jego przełączników i parametrów w określonej kolejności.
+Pozycja przełączników i parametry mogą być stosowane zamiennie za darmo w wierszu polecenia, z wyjątkiem produktów [powłoki](../../ide/reference/shell-command.md) polecenia, które wymaga jej przełączniki i parametry w określonej kolejności.
 
-Niemal każdy przełącznik obsługiwane przez polecenie ma dwie formy: formularza (jeden znak) krótkich i długich fragmentów. W grupie można łączyć wielu przełącznikach krótkiej postaci. Na przykład `/p /g /m` mogą być również wyrażone jako `/pgm`.
+Prawie każdy przełącznik obsługiwanych przez polecenie ma dwie formy: krótka (jeden znak) i długich fragmentów. W grupie można łączyć wielu przełącznikach krótkiej postaci. Na przykład `/p /g /m` może też wyrażona jako `/pgm`.
 
-Jeśli przełączniki skróconej są łączone w grupy i określoną wartość tej wartości ma zastosowanie do każdego przełącznika. Na przykład `/pgm:123` jest równa `/p:123 /g:123 /m:123`. Błąd występuje, gdy dowolne przełączników w grupie nie akceptuje wartości.
+Jeśli krótkich przełączniki są łączone w grupie, danej wartości tej wartości ma zastosowanie do każdego przełącznika. Na przykład `/pgm:123` jest równa `/p:123 /g:123 /m:123`. Błąd występuje, jeśli dowolny z przełączników w grupie nie akceptuje wartości.
 
 ## <a name="escape-characters"></a>Znaki specjalne
- Daszek (^) znaku w wierszu polecenia oznacza, że znak natychmiast po jej jest interpretowany jako literału, a nie jako znak kontrolny. Może być używany do osadzania cudzysłowy proste ("), spacji, wiodącego ukośniki, daszka lub innych literał znaków w wartości parametru lub przełącznikiem, z wyjątkiem nazwy przełącznika. Na przykład
+ W wierszu polecenia znak karetki (^) oznacza, że znak natychmiast po jego jest interpretowany dosłownie, a nie jako znak kontrolny. Może to służyć do osadzania prostych znaków cudzysłowu ("), spacji, ukośników wiodących, daszków lub innych znaków literałowych w wartości parametru lub przełącznika, z wyjątkiem nazw przełączników. Na przykład
 
 ```cmd
 >Edit.Find ^^t /regex
 ```
 
- Daszek działa tak samo, czy wewnętrznej lub zewnętrznej znaki cudzysłowu. Jeśli daszek jest ostatni znak w wierszu, zostanie zignorowany. Tu przykładzie pokazano, jak wyszukać wzorzec "^ t".
+ Daszek działa tak samo, czy wewnątrz lub poza znaki cudzysłowu. Jeśli znak daszka jest ostatnim znakiem w wierszu, jest on ignorowany. Tu przykładzie pokazano, jak wyszukać wzorzec "^ t".
 
-## <a name="use-quotes-for-path-names-with-spaces"></a>Użycie cudzysłowu dla nazwy ścieżki zawierające spacje
- Jeśli na przykład chcesz otworzyć plik, który ma ścieżkę zawierających spacje, możesz umieścić cudzysłowów wokół ścieżki lub segment ścieżki, która zawiera spacje: **C:\\"Program Files"** lub **"C:\Program Files"**.
+## <a name="use-quotes-for-path-names-with-spaces"></a>Użyj cudzysłowów dla nazwy ścieżki zawierające spacje
+ Jeśli na przykład chcesz otworzyć plik, który zawiera ścieżkę zawierającą spacje, należy umieścić podwójnego cudzysłowu wokół ścieżki lub segment ścieżki, która zawiera spacje: **C:\\"Program Files"** lub **"C:\Program Files"**.
 
 ## <a name="see-also"></a>Zobacz też
 

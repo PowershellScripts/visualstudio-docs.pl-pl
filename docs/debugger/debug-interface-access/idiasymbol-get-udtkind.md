@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_udtKind | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_udtkind — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a1ddc76e6a791421be6f55d985d1c8d59715de8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f1bad5019b03612195de119e5ed6a6308d1e39b6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479711"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925607"
 ---
 # <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
-Pobiera różnych typów zdefiniowanych przez użytkownika (UDT).  
+Pobiera różne typu zdefiniowanego przez użytkownika (UDT).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,14 +34,14 @@ HRESULT get_udtKind (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca wartość z zakresu od [udtkind — wyliczenie](../../debugger/debug-interface-access/udtkind.md) wyliczenia, które określa rodzaj UDT: struktury, klasy lub union.  
+ [out] Zwraca wartość z zakresu od [udtkind — wyliczenie](../../debugger/debug-interface-access/udtkind.md) wyliczenie, które określa rodzaj UDT: struktury, klasy lub Unii.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [Udtkind — wyliczenie](../../debugger/debug-interface-access/udtkind.md)
+ [UdtKind, wyliczenie](../../debugger/debug-interface-access/udtkind.md)

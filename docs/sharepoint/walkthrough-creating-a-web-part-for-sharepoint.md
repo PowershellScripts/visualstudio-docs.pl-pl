@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 055e1da96ae3078c0b77597816868be5994d1223
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872411"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>Przewodnik: Tworzenie składnika web part programu SharePoint
 
@@ -96,13 +96,13 @@ Można określić, które kontrolki mają być wyświetlane w składniku Web Par
 
 3. Dodaj następujący kod do `WebPart1` klasy. Ten kod deklaruje następujące pola:
 
-    - Siatka danych do wyświetlenia pracowników w składniku Web Part.
+   - Siatka danych do wyświetlenia pracowników w składniku Web Part.
 
-    - Tekst wyświetlany w kontrolce, która jest używana do filtrowania siatki danych.
+   - Tekst wyświetlany w kontrolce, która jest używana do filtrowania siatki danych.
 
-    - Etykiety, która wyświetla komunikat o błędzie, jeśli siatki danych nie jest w stanie wyświetlić dane.
+   - Etykiety, która wyświetla komunikat o błędzie, jeśli siatki danych nie jest w stanie wyświetlić dane.
 
-    - Ciąg, który zawiera ścieżkę do pliku danych pracownika.
+   - Ciąg, który zawiera ścieżkę do pliku danych pracownika.
 
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
@@ -114,18 +114,18 @@ Można określić, które kontrolki mają być wyświetlane w składniku Web Par
 
 5. Zastąp `CreateChildControls` metoda następującym kodem. Kod będzie wykonywał następujące zadania:
 
-    - Dodaje siatki danych i etykiety, która została zadeklarowana w poprzednim kroku.
+   - Dodaje siatki danych i etykiety, która została zadeklarowana w poprzednim kroku.
 
-    - Wiąże siatki danych do pliku XML, który zawiera dane pracowników.
+   - Wiąże siatki danych do pliku XML, który zawiera dane pracowników.
 
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
 6. Dodaj następującą metodę do `WebPart1` klasy. Kod będzie wykonywał następujące zadania:
 
-    - Tworzy zlecenia, który pojawia się w menu zleceń składnika Web Part renderowanych składnika Web Part.
+   - Tworzy zlecenia, który pojawia się w menu zleceń składnika Web Part renderowanych składnika Web Part.
 
-    - Obsługuje zdarzenie, które jest wywoływane, gdy użytkownik wybierze czasownika w menu zleceń. Ten kod filtry listę pracowników, który pojawia się w siatce danych.
+   - Obsługuje zdarzenie, które jest wywoływane, gdy użytkownik wybierze czasownika w menu zleceń. Ten kod filtry listę pracowników, który pojawia się w siatce danych.
 
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]

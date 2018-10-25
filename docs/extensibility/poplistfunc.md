@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 600ad01047a977050c474c9af139e0d279fe8b5b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 061f7b4d1c1fb9ddeb76444f058a95fe30abe47c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639630"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920875"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 To wywołanie zwrotne jest dostarczony do [SccPopulateList](../extensibility/sccpopulatelist-function.md) IDE i jest używany przez wtyczka do kontroli źródła do aktualizowania listy plików lub katalogów (również dostarczane do `SccPopulateList` funkcji).  

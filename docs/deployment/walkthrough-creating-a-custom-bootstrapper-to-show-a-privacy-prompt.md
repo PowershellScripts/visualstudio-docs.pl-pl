@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 18ac2ad1125067109b0ca02d552e997f2c30482f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873789"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Przewodnik: tworzenie niestandardowego programu inicjującego wyświetlającego monit o zasadach ochrony prywatności
 Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zestawy za pomocą nowszej wersji plików i wersje zestawów stają się dostępne. Aby upewnić się, że klienci wyrazić zgodę na to zachowanie, możesz wyświetlić monit o prywatności do nich. Następnie mogą wybrać, czy można udzielić uprawnienia do aplikacji w celu automatycznej aktualizacji. Jeśli aplikacja nie może być aktualizowane automatycznie, nie jest instalowana.  
@@ -43,23 +43,23 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
   
 #### <a name="to-create-a-consent-dialog-box"></a>Aby utworzyć okno dialogowe zgody  
   
-1.  Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.  
+1. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.  
   
-2.  W **nowy projekt** okno dialogowe, kliknij przycisk **Windows**, a następnie kliknij przycisk **WindowsFormsApplication**.  
+2. W **nowy projekt** okno dialogowe, kliknij przycisk **Windows**, a następnie kliknij przycisk **WindowsFormsApplication**.  
   
-3.  Aby uzyskać **nazwa**, typ **ConsentDialog**, a następnie kliknij przycisk **OK**.  
+3. Aby uzyskać **nazwa**, typ **ConsentDialog**, a następnie kliknij przycisk **OK**.  
   
-4.  W Projektancie kliknij formularz.  
+4. W Projektancie kliknij formularz.  
   
-5.  W **właściwości** oknie zmiany **tekstu** właściwości **okna dialogowego zgody aktualizacji**.  
+5. W **właściwości** oknie zmiany **tekstu** właściwości **okna dialogowego zgody aktualizacji**.  
   
-6.  W **przybornika**, rozwiń węzeł **wszystkie formularze Windows**, a następnie przeciągnij **etykiety** formantu do formularza.  
+6. W **przybornika**, rozwiń węzeł **wszystkie formularze Windows**, a następnie przeciągnij **etykiety** formantu do formularza.  
   
-7.  W Projektancie kliknij kontrolkę etykiety.  
+7. W Projektancie kliknij kontrolkę etykiety.  
   
-8.  W **właściwości** oknie zmiany **tekstu** właściwości **wygląd** do następującego:  
+8. W **właściwości** oknie zmiany **tekstu** właściwości **wygląd** do następującego:  
   
-     Sprawdza, czy aplikacji, które zamierzasz zainstalować najnowsze aktualizacje w sieci Web. Klikając "Zgadzam się", możesz zezwolić aplikacji, aby wyszukać i automatycznego instalowania aktualizacji z Internetu.  
+    Sprawdza, czy aplikacji, które zamierzasz zainstalować najnowsze aktualizacje w sieci Web. Klikając "Zgadzam się", możesz zezwolić aplikacji, aby wyszukać i automatycznego instalowania aktualizacji z Internetu.  
   
 9. W **przybornika**, przeciągnij **wyboru** kontroli w środku formularza.  
   
@@ -112,28 +112,28 @@ Można skonfigurować aplikacji ClickOnce do automatycznego aktualizowania zesta
   
      Visual Basic tylko dla deweloperów:  
   
-    1.  W **Eksploratora rozwiązań**, kliknij przycisk **ConsentDialog**.  
+    1. W **Eksploratora rozwiązań**, kliknij przycisk **ConsentDialog**.  
   
-    2.  Na **projektu** menu, kliknij przycisk **Dodawanie modułu**, a następnie kliknij przycisk **Dodaj**.  
+    2. Na **projektu** menu, kliknij przycisk **Dodawanie modułu**, a następnie kliknij przycisk **Dodaj**.  
   
-    3.  W *Module1.vb* plik kodu, Dodaj następujący kod.  
+    3. W *Module1.vb* plik kodu, Dodaj następujący kod.  
   
-         [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
+        [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
-    4.  Na **projektu** menu, kliknij przycisk **właściwości ConsentDialog**, a następnie kliknij przycisk **aplikacji** kartę.  
+    4. Na **projektu** menu, kliknij przycisk **właściwości ConsentDialog**, a następnie kliknij przycisk **aplikacji** kartę.  
   
-    5.  Usuń zaznaczenie pola wyboru **struktury aplikacji Włącz**.  
+    5. Usuń zaznaczenie pola wyboru **struktury aplikacji Włącz**.  
   
-    6.  W **obiekt początkowy** menu rozwijanego wybierz opcję **Module1**.  
+    6. W **obiekt początkowy** menu rozwijanego wybierz opcję **Module1**.  
   
-        > [!NOTE]
-        >  Wyłączenie struktury aplikacji powoduje wyłączenie funkcji, takich jak stylów wizualnych Windows XP, zdarzenia aplikacji, ekran powitalny i aplikacja pojedynczego wystąpienia. Aby uzyskać więcej informacji, zobacz [strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > [!NOTE]
+       >  Wyłączenie struktury aplikacji powoduje wyłączenie funkcji, takich jak stylów wizualnych Windows XP, zdarzenia aplikacji, ekran powitalny i aplikacja pojedynczego wystąpienia. Aby uzyskać więcej informacji, zobacz [strona aplikacji, Projektant projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
-     Visual C# tylko dla deweloperów:  
+       Visual C# tylko dla deweloperów:  
   
-     Otwórz *Program.cs* plik kodu i Dodaj następujący kod.  
+       Otwórz *Program.cs* plik kodu i Dodaj następujący kod.  
   
-     [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
+       [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
 26. Na **kompilacji** menu, kliknij przycisk **Skompiluj rozwiązanie**.  
   

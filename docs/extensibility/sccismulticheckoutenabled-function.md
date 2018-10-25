@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7102a049cd3db072506cbf492799908196df32
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4a71f839c2129bcfb699188dec09b02b18d4cd1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136779"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920121"
 ---
-# <a name="sccismulticheckoutenabled-function"></a>Funkcja SccIsMultiCheckoutEnabled
-Ta funkcja sprawdza, czy wtyczkę kontroli źródła umożliwia skonfigurowanie wielu wyewidencjonowania pliku.  
+# <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled, funkcja
+Ta funkcja sprawdza, czy wtyczka do kontroli źródła zezwala na wiele operacji wyewidencjonowania w pliku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,21 +36,21 @@ SCCRTN SccIsMultiCheckoutEnabled(
   
 #### <a name="parameters"></a>Parametry  
  pContext  
- [in] Struktura kontekstu wtyczkę kontroli źródła.  
+ [in] Struktura kontekście wtyczki kontroli źródła.  
   
  pbMultiCheckout  
- [out] Określa, czy wiele wyewidencjonowania są włączone dla tego projektu (obsługiwanych wiele wyewidencjonowania oznacza różną od zera).  
+ [out] Określa, czy wiele operacji wyewidencjonowania są włączone dla tego projektu (obsługujące wiele operacji wyewidencjonowania oznacza wartość różną od zera).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Implementacja wtyczkę kontroli źródła tej funkcji może przywrócić jedną z następujących wartości:  
+ Implementacja wtyczki kontroli źródła tej funkcji powinien zwrócić jedną z następujących wartości:  
   
 |Wartość|Opis|  
 |-----------|-----------------|  
-|SCC_OK|Sprawdzenie powiodło się.|  
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Nieokreślony błąd.|  
+|SCC_OK|Sprawdzanie zakończyło się pomyślnie.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Wystąpił nieokreślony błąd.|  
   
 ## <a name="remarks"></a>Uwagi  
- IDE sprawia, że dwa sprawdza, czy pliki mogą zostać wyewidencjonowane jednocześnie przez więcej niż jednego użytkownika. Po pierwsze system kontroli źródła musi obsługiwać wiele wyewidencjonowania. Wtyczka do kontroli źródła można określić tej możliwości podczas inicjowania podając `SCC_CAP_MULTICHECKOUT`. Następnie drugiego wyboru IDE wywołuje tę funkcję, aby określić, czy bieżący projekt obsługuje wiele wyewidencjonowania. Jeśli wiele wyewidencjonowania są obsługiwane dla wybranego projektu, zwraca sukces wtyczki kodu i ustawia `pbMultiCheckout` do różną od zera (`TRUE`) lub `FALSE`.  
+ IDE ułatwia dwóch kontroli, aby określić, jeśli pliki mogą zostać wyewidencjonowane jednocześnie przez więcej niż jednego użytkownika. Po pierwsze system kontroli źródła musi obsługiwać wiele operacji wyewidencjonowania. Wtyczka do kontroli źródła można określić tę możliwość podczas inicjowania, określając `SCC_CAP_MULTICHECKOUT`. Następnie drugiego wyboru IDE wywołuje tę funkcję, aby określić, czy bieżący projekt obsługuje wiele operacji wyewidencjonowania. Jeśli wiele operacji wyewidencjonowania są obsługiwane dla wybranego projektu, wtyczka zwraca Powodzenie kodu i ustawia `pbMultiCheckout` na wartość różną od zera (`TRUE`) lub `FALSE`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Funkcje interfejsu API wtyczki kontroli źródła ](../extensibility/source-control-plug-in-api-functions.md)

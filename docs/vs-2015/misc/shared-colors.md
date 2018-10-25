@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 981c05e61e02746e1cbaf40e7f15553d04786a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acc359d7dec2c008bec49a86357faa7227d53ff6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299341"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875076"
 ---
 # <a name="shared-colors"></a>Udostępnione kolory
 Tutaj wstaw wprowadzenie.  
@@ -48,10 +48,10 @@ Tutaj wstaw wprowadzenie.
  Użyj...  
  -   Kiedy należy utworzyć niestandardowe menu.  
   
--   Jeśli masz nowy składnik interfejsu użytkownika, który chcesz dopasować menu programu Visual Studio.  
+- Jeśli masz nowy składnik interfejsu użytkownika, który chcesz dopasować menu programu Visual Studio.  
   
- Nie używaj...  
- kolor tła samodzielnie. Zawsze użyj kombinacji tła/pierwszego planu, jak określono.  
+  Nie używaj...  
+  kolor tła samodzielnie. Zawsze użyj kombinacji tła/pierwszego planu, jak określono.  
   
 ##### <a name="menu-title"></a>Tytuł menu  
  Tytuły menu składają się z tła, obramowania i tekst tytułu, a także opcjonalnie symbol, zwykle w przypadku, gdy menu znajduje się na pasku poleceń.  
@@ -64,9 +64,9 @@ Tutaj wstaw wprowadzenie.
  Nie używaj...  
  -   dla wszystkich elementów, które nie chcesz zawsze odpowiada tytuł menu.  
   
--   w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
+- w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
   
- **Default**  
+  **Default**  
   
 |Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -113,9 +113,9 @@ Tutaj wstaw wprowadzenie.
  Nie używaj...  
  -   Aby uzyskać wszystkie listy rozwijanej, która występuje w kontekście innego.  
   
--   w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
+- w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
   
- **Default**  
+  **Default**  
   
 |Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -180,9 +180,9 @@ Tutaj wstaw wprowadzenie.
  Nie używaj...  
  -   dla elementów interfejsu użytkownika, które nie są podobne do paska poleceń.  
   
--   Aby uzyskać inne niż te, dla których token nazwy zostały określone składniki paska poleceń.  
+- Aby uzyskać inne niż te, dla których token nazwy zostały określone składniki paska poleceń.  
   
- **Domyślne** (nie innych Państw)  
+  **Domyślne** (nie innych Państw)  
   
 |Element|Nazwa tokenu: Category.color|  
 |-------------|--------------------------------|  
@@ -202,9 +202,9 @@ Tutaj wstaw wprowadzenie.
  Nie używaj...  
  -   dla formantów, które mają własne nazwy tokenu.  
   
--   w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
+- w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
   
- **Default**  
+  **Default**  
   
 |Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -252,14 +252,14 @@ Tutaj wstaw wprowadzenie.
  Użyj...  
  -   Podczas tworzenia pola kombi niestandardowych.  
   
--   Podczas tworzenia formantu paska poleceń, która jest podobna do pola kombi.  
+- Podczas tworzenia formantu paska poleceń, która jest podobna do pola kombi.  
   
- Nie używaj...  
- -   dla wszystkich elementów, nie należy zawsze dopasować polecenia paska.  
+  Nie używaj...  
+  -   dla wszystkich elementów, nie należy zawsze dopasować polecenia paska.  
   
--   Jeśli masz dostęp do pola kombi ze stylem.  
+- Jeśli masz dostęp do pola kombi ze stylem.  
   
- **Default**  
+  **Default**  
   
 |Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -333,9 +333,9 @@ Tutaj wstaw wprowadzenie.
  Nie używaj...  
  -   dla wszystkich elementów, który nie jest podobna do listy rozwijanej.  
   
--   dla pola kombi lub przyciski dzielone.  
+- dla pola kombi lub przyciski dzielone.  
   
- **Default**  
+  **Default**  
   
 |Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -397,9 +397,9 @@ Tutaj wstaw wprowadzenie.
  Nie używaj...  
  -   dla innych rodzajów przycisków.  
   
--   w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
+- w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
   
- **Default**  
+  **Default**  
   
 |Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -550,19 +550,19 @@ Tutaj wstaw wprowadzenie.
 ##### <a name="open-document-tabs"></a>Otwórz dokument karty  
  Każdy otwarty dokument ma kartę w kanale kartę dokumentu, który wyświetla jego nazwę. Dokumenty można albo wybrać lub otworzyć w tle, a ich karty odzwierciedlać te stany:  
   
--   Wybrane karta reprezentuje dokument, który jest aktualnie wyświetlany w dokumencie dobrze. Kartę wybraną ma obramowanie dokumentu, które dobrze rozszerza między górną krawędzią dokumentu.  
+- Wybrane karta reprezentuje dokument, który jest aktualnie wyświetlany w dokumencie dobrze. Kartę wybraną ma obramowanie dokumentu, które dobrze rozszerza między górną krawędzią dokumentu.  
   
--   Karty w tle są żadnych kart dokumentu, które nie są aktualnie wybrana karta. Po kliknięciu stają się wybranej karty i uzyskania wszystkich obramowania, tekstu i tła kolorów z tymi nazwami tokenu.  
+- Karty w tle są żadnych kart dokumentu, które nie są aktualnie wybrana karta. Po kliknięciu stają się wybranej karty i uzyskania wszystkich obramowania, tekstu i tła kolorów z tymi nazwami tokenu.  
   
- ![Karta otwartym dokumencie poprawek](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
+  ![Karta otwartym dokumencie poprawek](../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")  
   
- Użyj...  
- Podczas tworzenia karty niestandardowego dokumentu.  
+  Użyj...  
+  Podczas tworzenia karty niestandardowego dokumentu.  
   
- Nie używaj...  
- -   dla karty tymczasowe (wersja zapoznawcza).  
+  Nie używaj...  
+  -   dla karty tymczasowe (wersja zapoznawcza).  
   
--   dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.  
+- dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.  
   
 ##### <a name="selected-tab"></a>Wybranej karty  
  **Fokus**  
@@ -611,9 +611,9 @@ Tutaj wstaw wprowadzenie.
  Nie używaj...  
  -   dla każdego rodzaju dokumentu lub kartę, która nie jest tymczasowe (wersja zapoznawcza).  
   
--   dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.  
+- dla wszelkich elementów interfejsu użytkownika, nie chcesz zmienić automatycznie, jeśli powłoka ma aktualizacji motywu.  
   
- **Karta podgląd wybranych: fokus**  
+  **Karta podgląd wybranych: fokus**  
   
 |Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -658,9 +658,9 @@ Tutaj wstaw wprowadzenie.
  Nie używaj...  
  -   dla interfejsu użytkownika, który nie jest podobne do przycisku przepełnienia.  
   
--   dla przycisków przepełnienie paska poleceń.  
+- dla przycisków przepełnienie paska poleceń.  
   
- **Default**  
+  **Default**  
   
 |Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -765,9 +765,9 @@ Tutaj wstaw wprowadzenie.
  Nie używaj...  
  -   w przypadku przycisków, które pojawiają się w innych lokalizacjach.  
   
--   w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
+- w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
   
- **Default**  
+  **Default**  
   
 |Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -870,25 +870,25 @@ Tutaj wstaw wprowadzenie.
   
  Pole wyszukiwania może być jednym z kilku Państw, z których niektóre są wzajemnie wykluczających się:  
   
--   "Skupia się" lub "po przeniesieniu fokusu" odnosi się do czy kursor znajduje się w polu tekstowym.  
+- "Skupia się" lub "po przeniesieniu fokusu" odnosi się do czy kursor znajduje się w polu tekstowym.  
   
--   "Active" lub "nieaktywne" odnosi się do tego, czy użytkownik wprowadził zapytania wyszukiwania w polu tekstowym.  
+- "Active" lub "nieaktywne" odnosi się do tego, czy użytkownik wprowadził zapytania wyszukiwania w polu tekstowym.  
   
--   "Aktywowaniu" oznacza, że użytkownik ma moused w polu wyszukiwania za pomocą myszy (ten stan zastępuje inne stany).  
+- "Aktywowaniu" oznacza, że użytkownik ma moused w polu wyszukiwania za pomocą myszy (ten stan zastępuje inne stany).  
   
--   "Wyłączone" oznacza, że funkcja wyszukiwania jest wyłączone dla bieżącego kontekstu.  
+- "Wyłączone" oznacza, że funkcja wyszukiwania jest wyłączone dla bieżącego kontekstu.  
   
- ![Pole wyszukiwania poprawek](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
+  ![Pole wyszukiwania poprawek](../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303 110_SearchBoxRedline")  
   
- Użyj...  
- Podczas projektowania pole wyszukiwania niestandardowego.  
+  Użyj...  
+  Podczas projektowania pole wyszukiwania niestandardowego.  
   
- Nie używaj...  
- -   dla wszystkich elementów, który nie jest pole wyszukiwania.  
+  Nie używaj...  
+  -   dla wszystkich elementów, który nie jest pole wyszukiwania.  
   
--   dla każdego elementu, który nie ma zawsze do dopasowania wyszukiwania polu interfejsu użytkownika.  
+- dla każdego elementu, który nie ma zawsze do dopasowania wyszukiwania polu interfejsu użytkownika.  
   
- **Fokus**  
+  **Fokus**  
   
 |Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -969,14 +969,14 @@ Tutaj wstaw wprowadzenie.
  Użyj...  
  -   Podczas tworzenia listy rozwijanej wyszukiwania niestandardowego.  
   
--   Prawidłowe nazwy tokenu dla składników poprawnej listy.  
+- Prawidłowe nazwy tokenu dla składników poprawnej listy.  
   
- Nie używaj...  
- -   Aby uzyskać listy rozwijane, które pojawiają się w innych kontekstach.  
+  Nie używaj...  
+  -   Aby uzyskać listy rozwijane, które pojawiają się w innych kontekstach.  
   
--   w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
+- w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
   
- **Domyślne (nie innych Państw)**  
+  **Domyślne (nie innych Państw)**  
   
 |Element|Nazwa tokenu: Category.color|  
 |-------------|--------------------------------|  
@@ -1133,9 +1133,9 @@ Tutaj wstaw wprowadzenie.
  Nie używaj...  
  -   dla wszystkich elementów, który nie jest podobny do widoku drzewa.  
   
--   w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
+- w dowolnej kombinacji tła/pierwszego planu, inny niż określony.  
   
- **Default**  
+  **Default**  
   
 |Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1295,9 +1295,9 @@ Tutaj wstaw wprowadzenie.
  Nie używaj...  
  -   dla dowolnego interfejsu użytkownika, który nie jest listy rozwijanej lub pola kombi.  
   
--   Aby uzyskać [listy rozwijanej](../misc/shared-colors.md#BKMK_CommandDropDown) lub [pola kombi](../misc/shared-colors.md#BKMK_CommandComboBox) na pasku poleceń.  
+- Aby uzyskać [listy rozwijanej](../misc/shared-colors.md#BKMK_CommandDropDown) lub [pola kombi](../misc/shared-colors.md#BKMK_CommandComboBox) na pasku poleceń.  
   
- **Default**  
+  **Default**  
   
 |Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  
@@ -1428,12 +1428,12 @@ Tutaj wstaw wprowadzenie.
  Użyj...  
  -   dla projektantów, które są podobne do projektanta manifestu.  
   
--   zamiast przy użyciu karty wspólne kontroluje również w górnej części edytora w obrębie dokumentu.  
+- zamiast przy użyciu karty wspólne kontroluje również w górnej części edytora w obrębie dokumentu.  
   
- Nie używaj...  
- -   Jeśli masz więcej niż sześć kart.  
+  Nie używaj...  
+  -   Jeśli masz więcej niż sześć kart.  
   
--   dla wszelkich elementów interfejsu użytkownika, który nie ma struktury, takich jak projektant manifestów.  
+- dla wszelkich elementów interfejsu użytkownika, który nie ma struktury, takich jak projektant manifestów.  
   
 |Stan|Składnik|Element|Nazwa tokenu: Category.color|  
 |-----------|---------------|-------------|--------------------------------|  
@@ -1550,10 +1550,10 @@ Tutaj wstaw wprowadzenie.
  Użyj...  
  -   dla obszarów, w którym umieszcza się menu i paski narzędzi.  
   
--   Dzięki połączeniu Nazwa tokenu poprawne tła/pierwszego planu.  
+- w tle poprawne / pierwszego planu token kombinacja nazwy.  
   
- Nie używaj...  
- dla obszarów, które nie są podobne do półki polecenia.  
+  Nie używaj...  
+  dla obszarów, które nie są podobne do półki polecenia.  
   
 |Składnik|Element|Nazwa tokenu: Category.color|  
 |---------------|-------------|--------------------------------|  

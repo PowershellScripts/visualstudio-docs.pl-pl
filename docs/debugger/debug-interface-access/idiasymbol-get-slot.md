@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_slot | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_slot — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a996b35bab371bb331dfbe068258a2469c0e2df
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 64e554ac5e414ccc34d1ab66962232a263535d9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852443"
 ---
 # <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
-Pobiera numer gniazda lokalizacji. Używany, gdy [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) jest `LocIsSlot`.  
+Pobiera numer gniazda lokalizacji. Zastosowania [locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md) jest `LocIsSlot`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,11 +37,11 @@ HRESULT get_slot (
  [out] Zwraca numer gniazda lokalizacji.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [Locationtype — wyliczenie](../../debugger/debug-interface-access/locationtype.md)
+ [LocationType, wyliczenie](../../debugger/debug-interface-access/locationtype.md)

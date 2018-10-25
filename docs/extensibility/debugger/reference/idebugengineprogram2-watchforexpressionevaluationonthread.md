@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3f89502beeb1e8165450c7c07f3f55f83dd39e1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed77975e1a1d337354e7ac743e4b47e3c84ed701
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855819"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
-Umożliwia lub nie zezwala na Obliczanie wyrażenia występuje w danym wątku, nawet jeśli zostało zatrzymane.  
+Zezwala lub nie zezwala na Obliczanie wyrażenia wystąpić w danym wątku, nawet jeśli zostało zatrzymane.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -49,7 +49,7 @@ int WatchForExpressionEvaluationOnThread(
   
 #### <a name="parameters"></a>Parametry  
  `pOriginatingProgram`  
- [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt reprezentujący program, który jest obliczenie wyrażenia.  
+ [in] [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) obiekt reprezentujący program, który jest obliczenia wyrażenia.  
   
  `dwTid`  
  [in] Określa identyfikator wątku.  
@@ -58,18 +58,18 @@ int WatchForExpressionEvaluationOnThread(
  [in] Kombinacja flag z [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) wyliczenie określające sposób oceny ma zostać wykonane.  
   
  `pExprCallback`  
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiektu ma być używany do wysyłania zdarzeń debugowania podczas obliczania wyrażenia.  
+ [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiekt ma być używany do wysyłania zdarzenia debugowania, które wystąpiły podczas obliczania wyrażenia.  
   
  `fWatch`  
- [in] Jeśli różna od zera (`TRUE`), umożliwia obliczanie wyrażenia w wątku identyfikowane przez `dwTid`; w przeciwnym razie wartość zero (`FALSE`) nie zezwala na Obliczanie wyrażenia w tym wątku.  
+ [in] Jeśli wartość od zera (`TRUE`), umożliwia oceny wyrażenia w wątku identyfikowane przez `dwTid`; w przeciwnym razie zero (`FALSE`) nie zezwalają na obliczenia wyrażenia dla tego wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Gdy Menedżer debugowania sesji (SDM) żąda programu identyfikowane przez `pOriginatingProgram` parametru można obliczyć wyrażenia, powiadomi wszystkie inne programy dołączone przez wywołanie tej metody.  
+ Gdy Menedżer debugowania sesji (SDM) prosi programu identyfikowane przez `pOriginatingProgram` parametru, aby szacować wyrażenia, powiadomi użytkownika wszystkie inne programy dołączone przez wywołanie tej metody.  
   
- Szacowanie wyrażeń w jednym programie może uruchomić kod w innym, ze względu na obliczanie funkcji lub oceny dowolnego `IDispatch` właściwości. W związku z tym ta metoda umożliwia obliczanie wyrażenia zostać uruchomione i ukończone, nawet jeśli wątek może być zatrzymana w tym programie.  
+ Ocena wyrażeń w jeden program może spowodować, że kod uruchomiony w innym, ze względu na obliczanie funkcji lub oceny dowolnego `IDispatch` właściwości. W związku z tym ta metoda umożliwia obliczanie wyrażenia zostać uruchomione i ukończone, nawet jeśli wątek może być zatrzymana w tym programie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   

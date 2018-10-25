@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1675fe871849247d2c9f9da2bda3c7445356aaea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a691030ca2113acd0800ee11ca125884a7f4da8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916923"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
-Pobiera układ zmienne lokalne dla zestawu metod.  
+Pobiera układ zmienne lokalne, aby uzyskać zestaw metod.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -54,19 +54,19 @@ int GetLocalVariablelayout(
  [in] Unikatowy identyfikator modułu.  
   
  `cMethods`  
- [in] Liczba metody tokenów w `rgMethodTokens` tablicy.  
+ [in] Liczba metoda tokenów w `rgMethodTokens` tablicy.  
   
  `rgMethodTokens`  
  [in] Tablica metody.  
   
  `pStreamLayout`  
- [out] Strumień tekst, który zawiera zmiennej układu.  
+ [out] Strumień tekst, który zawiera zmienną układu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetLocalVariablelayout(  

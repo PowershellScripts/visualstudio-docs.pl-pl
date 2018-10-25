@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01accfb86161880be3d155a0f1751ebd9ac0a5a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e21d89c7c674cd3e7056b5244b7d8b50ae18db6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928220"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
-Tworzy obiekt ciągu zawierający określonej długości.  
+Tworzy obiekt ciągu, który ma określony czas.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -50,10 +50,10 @@ int CreateStringObjectWithLength (
  [in] Długość ciągu w bajtach.  
   
  `ppObject`  
- [out] Zwraca [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekt, który reprezentuje ciąg nowo utworzony obiekt.  
+ [out] Zwraca [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) obiekt, który reprezentuje obiekt ciągu nowo utworzony.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

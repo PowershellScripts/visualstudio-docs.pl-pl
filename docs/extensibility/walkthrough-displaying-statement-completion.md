@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fa6a1547a604e5d073c4e45c7769c68e0674d74
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497745"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879327"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Przewodnik: Wyświetlanie uzupełniania
 Uzupełnianie instrukcji opartych na języku można zaimplementować poprzez określenie identyfikatorów, dla których chcesz udostępnić uzupełniania i następnie wyzwalania sesja kończenia. Można zdefiniować uzupełnianie instrukcji w kontekście usługi językowej, zdefiniować własne rozszerzenia nazwy pliku i typu zawartości, a następnie Wyświetl uzupełnianie po prostu tego typu. Lub możesz wyzwolić zakończenia dla istniejącego typu zawartości — na przykład "plaintext". W tym przewodniku pokazano, jak wyzwolić uzupełniania instrukcji dla typu zawartości "w postaci zwykłego tekstu", który jest typem zawartości pliki tekstowe. Typ zawartości "text" jest element nadrzędny elementu wszystkich innych typów zawartości, w tym kodu i pliki XML.  
@@ -148,48 +148,48 @@ Uzupełnianie instrukcji opartych na języku można zaimplementować poprzez okr
   
 #### <a name="to-implement-the-completion-command-handler"></a>Aby zaimplementować polecenia procedury obsługi zakończenia  
   
-1.  Dodaj klasę o nazwie `TestCompletionCommandHandler` implementującej <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. Dodaj klasę o nazwie `TestCompletionCommandHandler` implementującej <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
-     [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
+    [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
+    [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
   
-2.  Dodaj pola prywatne, kolejna procedura obsługi polecenia (do którego należy przekazać polecenie), widoku tekstu, dostawcy obsługi polecenia (który umożliwia dostęp do różnych usług), a sesja kończenia:  
+2. Dodaj pola prywatne, kolejna procedura obsługi polecenia (do którego należy przekazać polecenie), widoku tekstu, dostawcy obsługi polecenia (który umożliwia dostęp do różnych usług), a sesja kończenia:  
   
-     [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
-     [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
+    [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
+    [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
   
-3.  Dodaj Konstruktor, który ustawia widok tekstu i pola dostawcy i dodaje polecenia do tworzenia łańcucha polecenia:  
+3. Dodaj Konstruktor, który ustawia widok tekstu i pola dostawcy i dodaje polecenia do tworzenia łańcucha polecenia:  
   
-     [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
-     [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
+    [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
+    [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
   
-4.  Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody przez przekazanie polecenia wzdłuż:  
+4. Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metody przez przekazanie polecenia wzdłuż:  
   
-     [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
-     [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
+    [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
+    [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
   
-5.  Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody. Gdy ta metoda odbiera naciśnięcie klawisza, wykonaj jedną z tych czynności:  
+5. Implementowanie <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metody. Gdy ta metoda odbiera naciśnięcie klawisza, wykonaj jedną z tych czynności:  
   
-    -   Zezwalaj na znak do zapisania w buforze i następnie wyzwolić lub filtrowanie uzupełniania. (Znaki niedrukowane to zrobić.)  
+   - Zezwalaj na znak do zapisania w buforze i następnie wyzwolić lub filtrowanie uzupełniania. (Znaki niedrukowane to zrobić.)  
   
-    -   Zatwierdź zakończenia, ale nie zezwalają na znak do zapisania w buforze. (Biały znak oraz **kartę**, i **Enter** to zrobić, gdy sesja kończenia jest wyświetlana.)  
+   - Zatwierdź zakończenia, ale nie zezwalają na znak do zapisania w buforze. (Biały znak oraz **kartę**, i **Enter** to zrobić, gdy sesja kończenia jest wyświetlana.)  
   
-    -   Zezwalaj na polecenie, aby być przekazywane do następnej procedury obsługi. (Wszystkie inne polecenia.)  
+   - Zezwalaj na polecenie, aby być przekazywane do następnej procedury obsługi. (Wszystkie inne polecenia.)  
   
      Ponieważ ta metoda może wyświetlić interfejs użytkownika, wywołaj <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> aby upewnić się, że nie jest wywoływana w kontekście usługi automation:  
   
      [!code-csharp[VSSDKCompletionTest#19](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_19.cs)]
      [!code-vb[VSSDKCompletionTest#19](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_19.vb)]  
   
-6.  Ten kod jest metody prywatnej, która wyzwala sesja kończenia:  
+6. Ten kod jest metody prywatnej, która wyzwala sesja kończenia:  
   
-     [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
-     [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
+    [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
+    [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
   
-7.  Następny przykład jest metodą prywatnej, która anuluje subskrypcje ze <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> zdarzeń:  
+7. Następny przykład jest metodą prywatnej, która anuluje subskrypcje ze <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> zdarzeń:  
   
-     [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
-     [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
+    [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
+    [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
   
 ## <a name="build-and-test-the-code"></a>Tworzenie i testowanie kodu  
  Aby przetestować ten kod, Kompiluj rozwiązanie CompletionTest, a następnie uruchomić go w doświadczalnym wystąpieniu.  

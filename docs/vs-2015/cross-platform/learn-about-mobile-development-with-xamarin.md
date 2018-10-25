@@ -10,12 +10,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4b6580602e730ae2f8cfc6fe47366d57ce1ff7ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9390182f6fec91d049a1c080e33802aecfed305
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178818"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860698"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Informacje dotyczące programowania mobilnego za pomocą platformy Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Ten temat kieruje do materiału Przegląd, który pomoże Ci zrozumieć, opracow
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Podstawy: Omówienie programu Visual Studio i środowiska Xamarin  
  *5 – 15 minut*  
   
--   Komputer Windows za pomocą programu Visual Studio i Xamarin to, gdzie wykonasz większość swojej pracy. Na tym komputerze bezpośrednio tworzyć aplikacje dla systemu Android i Windows oraz uruchamianie i debugowanie ich na urządzenie lub emulator. Możesz także zdalnie tworzenie, uruchamianie i debugowanie aplikacji dla systemu iOS przy użyciu komputerów Mac. Visual Studio na komputerze Windows też nawiązać połączenie z systemem iOS designer scenorysu i symulatora systemu iOS.  
+- Komputer Windows za pomocą programu Visual Studio i Xamarin to, gdzie wykonasz większość swojej pracy. Na tym komputerze bezpośrednio tworzyć aplikacje dla systemu Android i Windows oraz uruchamianie i debugowanie ich na urządzenie lub emulator. Możesz także zdalnie tworzenie, uruchamianie i debugowanie aplikacji dla systemu iOS przy użyciu komputerów Mac. Visual Studio na komputerze Windows też nawiązać połączenie z systemem iOS designer scenorysu i symulatora systemu iOS.  
   
--   Mac za pomocą środowiska Xcode i Xamarin służy jako kompilacji/podpisywania hosta i środowiska uruchomieniowego dla aplikacji systemu iOS. Kompilacje dla systemu iOS w programie Visual Studio na komputerze Windows są delegowane ten komputer Mac; podczas debugowania aplikacji systemu iOS w programie Visual Studio, działa w symulatorze systemu iOS na komputerze Mac lub bezpośrednio na urządzenia powiązanego połączone na komputerze Mac. W tym przypadku będzie interakcji z aplikacją na lub w pobliżu komputera Mac, a masz środowisko debugowania w programie Visual Studio.  
+- Mac za pomocą środowiska Xcode i Xamarin służy jako kompilacji/podpisywania hosta i środowiska uruchomieniowego dla aplikacji systemu iOS. Kompilacje dla systemu iOS w programie Visual Studio na komputerze Windows są delegowane ten komputer Mac; podczas debugowania aplikacji systemu iOS w programie Visual Studio, działa w symulatorze systemu iOS na komputerze Mac lub bezpośrednio na urządzenia powiązanego połączone na komputerze Mac. W tym przypadku będzie interakcji z aplikacją na lub w pobliżu komputera Mac, a masz środowisko debugowania w programie Visual Studio.  
   
- Poniżej przedstawiono te relacje i możesz dowiedzieć się więcej o pracy z aplikacjami systemu iOS na [wprowadzenie do rozwiązania Xamarin.iOS dla programu Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (strony xamarin.com).  
+  Poniżej przedstawiono te relacje i możesz dowiedzieć się więcej o pracy z aplikacjami systemu iOS na [wprowadzenie do rozwiązania Xamarin.iOS dla programu Visual Studio](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (strony xamarin.com).  
   
- ![Relacja między komputerami deweloperów Windows i Mac w środowisku Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin informacje 1")  
+  ![Relacja między komputerami deweloperów Windows i Mac w środowisku Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin informacje 1")  
   
 ## <a name="essentials-how-projects-are-structured"></a>Podstawy: Projekty są struktury  
  *10-30 minut*  
@@ -64,15 +64,15 @@ Ten temat kieruje do materiału Przegląd, który pomoże Ci zrozumieć, opracow
   
  Nie musisz zdecydować, które rozwiązanie do wykonania na początku; aplikacje można zaimplementować przy użyciu kombinacji natywnego środowiska Xamarin i Xamarin.Forms:  
   
--   Użyj zestawu narzędzi Xamarin.Forms do tworzenia ekranów ogólnego przeznaczenia, które zapewniają podobne możliwości i interfejsu użytkownika na platformach, takich jak nazwy logowania, skontaktuj się z formularzy i wyniki wyszukiwania.  
+- Użyj zestawu narzędzi Xamarin.Forms do tworzenia ekranów ogólnego przeznaczenia, które zapewniają podobne możliwości i interfejsu użytkownika na platformach, takich jak nazwy logowania, skontaktuj się z formularzy i wyniki wyszukiwania.  
   
--   Użyj różnych możliwości dostosowywania w interfejsie Xamarin.Forms, aby dopasować interfejsu użytkownika na poszczególnych platform. Obejmują one API OnPlatform, który może być używana zarówno kod i XAML, tworzenie widoku niestandardowego, rozszerzanie istniejących renderowania i tworzenie niestandardowego modułu renderowania.  
+- Użyj różnych możliwości dostosowywania w interfejsie Xamarin.Forms, aby dopasować interfejsu użytkownika na poszczególnych platform. Obejmują one API OnPlatform, który może być używana zarówno kod i XAML, tworzenie widoku niestandardowego, rozszerzanie istniejących renderowania i tworzenie niestandardowego modułu renderowania.  
   
--   Jeśli to konieczne, należy użyć natywnego platformy Xamarin do tworzenia ekranów, korzystających z unikatowych funkcji interfejsu użytkownika dla każdej platformy, na przykład, ekran, który używa natywnego aparatu manipulowania przechwytywania i obrazów.  
+- Jeśli to konieczne, należy użyć natywnego platformy Xamarin do tworzenia ekranów, korzystających z unikatowych funkcji interfejsu użytkownika dla każdej platformy, na przykład, ekran, który używa natywnego aparatu manipulowania przechwytywania i obrazów.  
   
- Firma Microsoft zaleca, począwszy od zawsze rozwiązanie Xamarin.Forms, aby zdefiniować kod interfejsu użytkownika, udostępnianie na platformach i wprowadzać zmiany specyficzne dla platformy z użyciem możliwości dostosowywania. Jeśli potrzebujesz ekrany całkowicie specyficzne dla platformy, można dodać oddzielnie za pomocą natywnego platformy Xamarin.  
+  Firma Microsoft zaleca, począwszy od zawsze rozwiązanie Xamarin.Forms, aby zdefiniować kod interfejsu użytkownika, udostępnianie na platformach i wprowadzać zmiany specyficzne dla platformy z użyciem możliwości dostosowywania. Jeśli potrzebujesz ekrany całkowicie specyficzne dla platformy, można dodać oddzielnie za pomocą natywnego platformy Xamarin.  
   
- Aby dowiedzieć się więcej:  
+  Aby dowiedzieć się więcej:  
   
 1.  [Zestaw narzędzi Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (strony xamarin.com) zawiera krótkie omówienie i zalet i wad Xamarin.Forms a native warstwy interfejsu użytkownika (czyli Xamarin.iOS i Xamarin.Android).  
   

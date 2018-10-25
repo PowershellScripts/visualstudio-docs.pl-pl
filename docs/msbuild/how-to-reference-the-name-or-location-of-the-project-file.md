@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f720c86f98aa484a6f83721dcf6d6c0881822b22
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: dceca1e518783f405490d3f2527156bd20bf81aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079641"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911528"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Porady: odwołanie do nazwy lub lokalizacji pliku projektu
 W pliku projektu bez konieczności tworzenia własnych właściwości, można użyć nazwy lub lokalizacji projektu. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Udostępnia właściwości zastrzeżonych, które odwołują się nazwa pliku projektu i inne właściwości związane z tym projektem. Aby uzyskać więcej informacji na temat właściwości zastrzeżonych, zobacz [MSBuild zarezerwowane i dobrze znane właściwości](../msbuild/msbuild-reserved-and-well-known-properties.md).  
@@ -33,15 +33,15 @@ W pliku projektu bez konieczności tworzenia własnych właściwości, można u�
   
 #### <a name="to-use-the-project-properties"></a>Aby użyć właściwości projektu
   
--   Odwoływać się do właściwości w pliku projektu przy użyciu notacji $ (), tak samo jak dowolnej właściwości. Na przykład:  
+- Odwoływać się do właściwości w pliku projektu przy użyciu notacji $ (), tak samo jak dowolnej właściwości. Na przykład:  
   
-    ```xml  
-    <CSC Sources = "@(CSFile)"   
-        OutputAssembly = "$(MSBuildProjectName).exe"/>  
-    </CSC>  
-    ```          
+  ```xml  
+  <CSC Sources = "@(CSFile)"   
+      OutputAssembly = "$(MSBuildProjectName).exe"/>  
+  </CSC>  
+  ```          
   
- Zaletą używania zastrzeżonych właściwości to, że wszelkie zmiany nazwy pliku projektu są włączane automatycznie. Przy następnym uruchomieniu, skompiluj projekt, plik wyjściowy będzie zawierał nową nazwę z żadnych dodatkowych czynności ze strony użytkownika.  
+  Zaletą używania zastrzeżonych właściwości to, że wszelkie zmiany nazwy pliku projektu są włączane automatycznie. Przy następnym uruchomieniu, skompiluj projekt, plik wyjściowy będzie zawierał nową nazwę z żadnych dodatkowych czynności ze strony użytkownika.  
   
 > [!NOTE]
 >  Właściwości zastrzeżone nie mogą zostać redefiniowane w pliku projektu.  

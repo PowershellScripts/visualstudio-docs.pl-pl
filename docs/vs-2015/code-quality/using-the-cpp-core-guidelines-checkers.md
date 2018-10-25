@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fc975ab5c9c1e43b79ddd861bca3a61e9005f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63cd97a23f26d23b99aa7c93be90cef91a630856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906172"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Za pomocą narzędzia do sprawdzania podstawowych wytycznych dotyczących języka C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ Podstawowych wytycznych dotyczących języka C++ są przenośne zbiór wytycznyc
   
 #### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project"></a>Aby dodać pakiet Microsoft.CppCoreCheck do projektu  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe projektu w rozwiązaniu, które chcesz dodać pakiet do. Wybierz **Zarządzaj pakietami NuGet** otworzyć **Menedżera pakietów NuGet**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy, aby otworzyć menu kontekstowe projektu w rozwiązaniu, które chcesz dodać pakiet do. Wybierz **Zarządzaj pakietami NuGet** otworzyć **Menedżera pakietów NuGet**.  
   
-2.  W **Menedżera pakietów NuGet** okna, wyszukaj Microsoft.CppCoreCheck.  
+2. W **Menedżera pakietów NuGet** okna, wyszukaj Microsoft.CppCoreCheck.  
   
-     ![Pokazuje okno Menedżera pakietów Nuget, pakietów CppCoreCheck](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
+    ![Pokazuje okno Menedżera pakietów Nuget, pakietów CppCoreCheck](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
   
-3.  Wybierz pakiet Microsoft.CppCoreCheck, a następnie wybierz **zainstalować** przycisk, aby dodać reguły do projektu.  
+3. Wybierz pakiet Microsoft.CppCoreCheck, a następnie wybierz **zainstalować** przycisk, aby dodać reguły do projektu.  
   
- Pakiet NuGet dodaje dodatkowe pliki .targets MSBuild do projektu, która jest wywoływana po włączeniu analizy kodu w projekcie. Ten plik .targets dodaje zasady podstawowe sprawdzanie języka C++ jako dodatkowe rozszerzenia narzędzie do analizy kodu programu Visual Studio.  
+   Pakiet NuGet dodaje dodatkowe pliki .targets MSBuild do projektu, która jest wywoływana po włączeniu analizy kodu w projekcie. Ten plik .targets dodaje zasady podstawowe sprawdzanie języka C++ jako dodatkowe rozszerzenia narzędzie do analizy kodu programu Visual Studio.  
   
- Można włączyć analizę kodu projektu, wybierając **Włącz analizę kodu podczas kompilacji** pola wyboru w **analizy kodu** części **stron właściwości** okno dialogowe Projekt.  
+   Można włączyć analizę kodu projektu, wybierając **Włącz analizę kodu podczas kompilacji** pola wyboru w **analizy kodu** części **stron właściwości** okno dialogowe Projekt.  
   
- ![Strony właściwości dla ustawień ogólnych analizy kodu](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
+   ![Strony właściwości dla ustawień ogólnych analizy kodu](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
   
- Podstawowe sprawdzanie języka C++ reguły należały do zestawów reguł domyślne, które są uruchamiane po włączeniu analizy kodu. Ponieważ zasady podstawowe sprawdzanie języka C++, są w fazie projektowania, niektóre reguły nie może być gotowa do użycia na cały kod, ale może być informacyjne podczas programowania. Te reguły są wydawane jako eksperymentalne. Możesz wybrać, czy do uruchamiania reguły wydana lub eksperymentalnych we właściwościach projektu.  
+   Podstawowe sprawdzanie języka C++ reguły należały do zestawów reguł domyślne, które są uruchamiane po włączeniu analizy kodu. Ponieważ zasady podstawowe sprawdzanie języka C++, są w fazie projektowania, niektóre reguły nie może być gotowa do użycia na cały kod, ale może być informacyjne podczas programowania. Te reguły są wydawane jako eksperymentalne. Możesz wybrać, czy do uruchamiania reguły wydana lub eksperymentalnych we właściwościach projektu.  
   
- ![Strony właściwości dla ustawień rozszerzenia analizy kodu](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
+   ![Strony właściwości dla ustawień rozszerzenia analizy kodu](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
- Aby włączyć lub wyłączyć zestawy reguł podstawowe sprawdzanie języka C++, otwórz **stron właściwości** okno dialogowe dla Twojego projektu. W obszarze **właściwości konfiguracji**, rozwiń węzeł **analizy kodu**, **rozszerzenia**. W menu rozwijanym obok kontrolować **Włącz podstawowe sprawdzanie języka C++ (wydania)** lub **Włącz podstawowe sprawdzanie języka C++ (funkcja eksperymentalna)**, wybierz **tak** lub **nie**. Wybierz **OK** lub **Zastosuj** Aby zapisać zmiany.  
+   Aby włączyć lub wyłączyć zestawy reguł podstawowe sprawdzanie języka C++, otwórz **stron właściwości** okno dialogowe dla Twojego projektu. W obszarze **właściwości konfiguracji**, rozwiń węzeł **analizy kodu**, **rozszerzenia**. W menu rozwijanym obok kontrolować **Włącz podstawowe sprawdzanie języka C++ (wydania)** lub **Włącz podstawowe sprawdzanie języka C++ (funkcja eksperymentalna)**, wybierz **tak** lub **nie**. Wybierz **OK** lub **Zastosuj** Aby zapisać zmiany.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Sprawdź typy, granice i okresów istnienia  
  Podstawowe sprawdzanie języka C++ pakiet zawiera obecnie narzędzia do sprawdzania dla [bezpieczeństwo typu](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [granic bezpieczeństwa](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds), i [bezpieczeństwa okres istnienia](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) profilów.  
@@ -81,15 +81,15 @@ int main()
   
  W tym przykładzie pokazano kilka ostrzeżeń, które można znaleźć reguły podstawowe sprawdzanie języka C++:  
   
--   C26494 jest reguła Type.5: zawsze Inicjuj obiekt.  
+- C26494 jest reguła Type.5: zawsze Inicjuj obiekt.  
   
--   C26485 jest reguła Bounds.3: nie zanikania tablicy do wskaźnika.  
+- C26485 jest reguła Bounds.3: nie zanikania tablicy do wskaźnika.  
   
--   C26481 jest reguła Bounds.1: nie używaj arytmetyki wskaźnika. Zamiast nich należy używać słów kluczowych `span`.  
+- C26481 jest reguła Bounds.1: nie używaj arytmetyki wskaźnika. Zamiast nich należy używać słów kluczowych `span`.  
   
- Jeśli zestawów reguł podstawowe sprawdzanie języka C++ analizy kodu są zainstalowane i włączone, skompilować ten kod, pierwsze dwa ostrzeżenia są dane wyjściowe, ale trzecie jest pomijane. Oto dane wyjściowe kompilacji z przykładowego kodu:  
+  Jeśli zestawów reguł podstawowe sprawdzanie języka C++ analizy kodu są zainstalowane i włączone, skompilować ten kod, pierwsze dwa ostrzeżenia są dane wyjściowe, ale trzecie jest pomijane. Oto dane wyjściowe kompilacji z przykładowego kodu:  
   
- **1 >---Kompilacja została rozpoczęta: Projekt: CoreCheckExample, konfiguracja: Debug Win32 —**  
+  **1 >---Kompilacja została rozpoczęta: Projekt: CoreCheckExample, konfiguracja: Debug Win32 —**  
 **----**  
 **1 > CoreCheckExample.cpp**  
 **1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  

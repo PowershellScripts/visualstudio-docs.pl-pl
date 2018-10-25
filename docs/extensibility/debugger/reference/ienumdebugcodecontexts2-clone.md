@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf8b2161d784a2718d6838d8641f3d08f8f3e5f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4acfaac88439f2793e41e0b3fb396f8c59980829
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122694"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926179"
 ---
 # <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
-Zwraca kopię bieżącego wyliczenie jako oddzielny obiekt.  
+Zwraca kopię bieżącego wyliczenia jako oddzielny obiekt.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,10 +44,10 @@ int Clone(
  [out] Zwraca kopię tego wyliczenia jako oddzielny obiekt.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Kopiuj wyliczenia ma takim samym stanie, co oryginalne w czasie, gdy ta metoda zostanie wywołana. Jednak kopiowania i oryginalny stan są oddzielone i można zmieniać pojedynczo.  
+ Kopię wyliczenia ma ten sam stan, co oryginalny w czasie, którego ta metoda jest wywoływana. Jednak stany kopiowania i oryginalne są niezależne i można zmieniać indywidualnie.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

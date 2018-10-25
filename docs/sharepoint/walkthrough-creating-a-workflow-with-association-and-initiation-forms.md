@@ -22,37 +22,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635684"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873880"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Wskazówki: Tworzenie przepływu pracy z formularzami inicjacji i skojarzenia
   W tym instruktażu pokazano, jak utworzyć podstawowy sekwencyjny przepływ pracy, który obejmuje korzystanie z formularzy skojarzenia i inicjacji. Są to formularze ASPX, umożliwiające parametry, które mają zostać dodane do przepływu pracy, gdy jest ona skojarzona najpierw przez administratora programu SharePoint (formularza skojarzenia) i po uruchomieniu przepływu pracy przez użytkownika (formularza inicjowania).  
   
  Ten przewodnik przedstawia scenariusz, w którym użytkownik chce, aby utworzyć przepływy pracy zatwierdzania w raportach wydatków ma następujące wymagania:  
   
--   Gdy przepływ pracy jest skojarzona z listy, administrator jest monitowany przy użyciu formularza skojarzenia, w których użytkownik podał limit Dolar raportów wydatków.  
+- Gdy przepływ pracy jest skojarzona z listy, administrator jest monitowany przy użyciu formularza skojarzenia, w których użytkownik podał limit Dolar raportów wydatków.  
   
--   Pracownicy przekazać swoje raporty wydatków na listę dokumenty udostępnione, uruchomić przepływ pracy, a następnie wprowadź wydatków całkowite w formularza inicjowania przepływu pracy.  
+- Pracownicy przekazać swoje raporty wydatków na listę dokumenty udostępnione, uruchomić przepływ pracy, a następnie wprowadź wydatków całkowite w formularza inicjowania przepływu pracy.  
   
--   Jeśli raport wydatków pracowników łączna liczba przekracza limit wstępnie zdefiniowanych przez administratora, zadanie jest tworzone dla Menedżera pracownika zatwierdzić raportu wydatków. Jednak jeśli suma raportu wydatków pracownika jest większa niż limit wydatków, zatwierdzane automatycznie zostanie napisany komunikat do listy historii przepływu pracy.  
+- Jeśli raport wydatków pracowników łączna liczba przekracza limit wstępnie zdefiniowanych przez administratora, zadanie jest tworzone dla Menedżera pracownika zatwierdzić raportu wydatków. Jednak jeśli suma raportu wydatków pracownika jest większa niż limit wydatków, zatwierdzane automatycznie zostanie napisany komunikat do listy historii przepływu pracy.  
   
- W instruktażu przedstawiono następujące zagadnienia:  
+  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Tworzenie projektu programu SharePoint listy definicji sekwencyjnego przepływu pracy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+- Tworzenie projektu programu SharePoint listy definicji sekwencyjnego przepływu pracy w [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
--   Tworzenie harmonogramu przepływu pracy.  
+- Tworzenie harmonogramu przepływu pracy.  
   
--   Obsługa zdarzeń działania przepływu pracy.  
+- Obsługa zdarzeń działania przepływu pracy.  
   
--   Tworzenie przepływu pracy, formularzy skojarzenia i inicjacji.  
+- Tworzenie przepływu pracy, formularzy skojarzenia i inicjacji.  
   
--   Skojarzenie przepływu pracy.  
+- Skojarzenie przepływu pracy.  
   
--   Ręczne uruchamianie przepływu pracy.  
+- Ręczne uruchamianie przepływu pracy.  
   
 > [!NOTE]  
 >  Chociaż ten przewodnik korzysta z projektem sekwencyjnego przepływu pracy, proces jest taki sam dla przepływów pracy automatu stanów.  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f0dd09d963fe28cafb611947f2c542c4b78ba39
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 3abf3a93db79ac347931acf9275065eb0d085ca4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920201"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem, element
 `VisibilityItem` Element określa statyczne widoczności poleceń i paski narzędzi. Każdy wpis identyfikuje polecenia lub menu, a także polecenia skojarzonego kontekstu interfejsu użytkownika. Program Visual Studio wykrywa polecenia, menu i paski narzędzi i ich widoczność bez ładowanie pakietów VSPackage, który definiuje je. IDE używa <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metodę pozwala ustalić, czy kontekst interfejsu użytkownika poleceń jest aktywny.  
@@ -46,9 +46,9 @@ ms.locfileid: "39586264"
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagane. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|  
-|identyfikator|Wymagane. Identyfikator GUID/ID identyfikator polecenia.|  
-|kontekst|Wymagane. Kontekst interfejsu użytkownika, w którym polecenie jest widoczna.|  
+|Identyfikator GUID|Wymagana. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|  
+|identyfikator|Wymagana. Identyfikator GUID/ID identyfikator polecenia.|  
+|kontekst|Wymagana. Kontekst interfejsu użytkownika, w którym polecenie jest widoczna.|  
 |Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Elementy podrzędne  

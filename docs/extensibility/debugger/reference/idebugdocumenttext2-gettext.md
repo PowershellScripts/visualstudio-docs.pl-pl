@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b5adaccf5a74119ee5e697c9dfd7b7ad46d6151
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe2b5ef3804c4ccfafbf164a8eb144e7822a6fdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106854"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905509"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Pobiera tekst z określonej pozycji w dokumencie.  
@@ -47,22 +47,22 @@ int GetText(
   
 #### <a name="parameters"></a>Parametry  
  `pos`  
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) struktury, która wskazuje lokalizację tekst, który można pobrać.  
+ [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) strukturę, która wskazuje lokalizację tekst, który ma zostać pobrane.  
   
  `cMaxChars`  
  [in] Maksymalna liczba znaków z tekstu, które mają zostać pobrane.  
   
  `pText`  
- [w, out] Wskaźnik do buforu, który ma zostać wypełnione odpowiedni tekst. Bufor musi mieć możliwość zawiera co najmniej `cMaxChars` liczba znaki dwubajtowe.  
+ [out w] Wskaźnik do buforu, który ma zostać wypełniona odpowiedni tekst. Ten bufor musi mieć możliwość zawierać co najmniej `cMaxChars` liczby znaków dwubajtowych.  
   
  `pcNumChars`  
- [out] Zwraca liczbę znaków, które faktycznie pobrany.  
+ [out] Zwraca liczbę znaków, które faktycznie pobrane.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Ten przykład przedstawia, jak można wywołać tej metody w języku C#.  
+ Ten przykład pokazuje, jak można wywołać tej metody za pomocą języka C#.  
   
 ```csharp  
 using System.Runtime.Interop.Services;  

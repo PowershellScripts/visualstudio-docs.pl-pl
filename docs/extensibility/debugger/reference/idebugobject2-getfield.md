@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e58ef7e706ff23edf28cefbf375d5f79a548b9a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d602aa7da2f82258a7f0d9b0ba7d1d803d05cc7d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926335"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
-Pobiera typ obiektu.  
+Pobiera typ tego obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int GetField(
   
 #### <a name="parameters"></a>Parametry  
  `ppField`  
- [out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu, jeśli nie wartość null.  
+ [out] Zwraca [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu w przeciwnym razie wartość null.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Opisuje typ obiektu.  
+ Pole opisuje typ obiektu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   

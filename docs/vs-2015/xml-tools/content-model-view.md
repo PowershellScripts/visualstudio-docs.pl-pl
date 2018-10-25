@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 406c870f099d2dbb1e60b0088a68e5a5c252b907
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a535a97835491f4a109ed0893d20a4330b218801
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274407"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860308"
 ---
 # <a name="content-model-view"></a>Widok modelu zawartości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,11 +110,11 @@ Widok modelu zawartości zapewnia graficzną reprezentację węzłów schematu l
   
  Powiększenie mogą być kontrolowane w następujący sposób:  
   
--   Przytrzymując klawisz CTRL i obracanie kółkiem myszy, gdy wskaźnik myszy znajduje się na powierzchni widoku modelu zawartości.  
+- Przytrzymując klawisz CTRL i obracanie kółkiem myszy, gdy wskaźnik myszy znajduje się na powierzchni widoku modelu zawartości.  
   
--   Za pomocą suwaka. Suwak pokazuje bieżący poziom powiększenia.  
+- Za pomocą suwaka. Suwak pokazuje bieżący poziom powiększenia.  
   
- Suwak powiększenia jest nieprzezroczysta ją zaznaczyć, umieść kursor nad, lub użyj kombinacji klawisza CTRL kółkiem myszy, aby powiększyć; w pozostałych godzinach jest przezroczysty.  
+  Suwak powiększenia jest nieprzezroczysta ją zaznaczyć, umieść kursor nad, lub użyj kombinacji klawisza CTRL kółkiem myszy, aby powiększyć; w pozostałych godzinach jest przezroczysty.  
   
 ## <a name="xml-editor-integration"></a>Integracja z edytorem XML  
  Możesz przełączać się i z powrotem między Projektant XSD i edytorem XML za pomocą menu kontekstowego.  

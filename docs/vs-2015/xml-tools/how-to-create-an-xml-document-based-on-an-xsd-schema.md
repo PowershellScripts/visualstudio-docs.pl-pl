@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54d7ead9f759e990b741ac9c5219af693d10a412
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884228"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Porady: Tworzenie dokumentu XML na podstawie schematu XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "49287329"
   
  Tej opcji można użyć w następujących scenariuszach:  
   
--   Aby poznać użycie różnych konstrukcji w schemacie.  
+- Aby poznać użycie różnych konstrukcji w schemacie.  
   
--   Aby upewnić się, że schemat wykonuje co ma na celu.  
+- Aby upewnić się, że schemat wykonuje co ma na celu.  
   
- **Generowanie XML przykładowe** funkcja jest dostępna tylko na elementy globalne i wymaga prawidłowego zestawu schematu XML.  
+  **Generowanie XML przykładowe** funkcja jest dostępna tylko na elementy globalne i wymaga prawidłowego zestawu schematu XML.  
   
- Ta funkcja generuje zwykle ważnych dokumentów XML. Jednakże, jeśli schemat zawiera co najmniej jeden z następujących czynności, próbki mogą być nieprawidłowe:  
+  Ta funkcja generuje zwykle ważnych dokumentów XML. Jednakże, jeśli schemat zawiera co najmniej jeden z następujących czynności, próbki mogą być nieprawidłowe:  
   
--   `xs:key`, `xs:keyref`, I `xs:unique` ograniczenia tożsamości.  
+- `xs:key`, `xs:keyref`, I `xs:unique` ograniczenia tożsamości.  
   
--   `xs:pattern` zestawy reguł.  
+- `xs:pattern` zestawy reguł.  
   
--   Wyliczenia o `xs:QName` typu.  
+- Wyliczenia o `xs:QName` typu.  
   
--   `xs:ENTITY`, `xs:ENTITIES`, i `xs:NOTATION` typów.  
+- `xs:ENTITY`, `xs:ENTITIES`, i `xs:NOTATION` typów.  
   
- Ponadto należy pamiętać, że `xs:base64Binary` zawartość zostanie wygenerowany tylko wtedy, gdy wyliczenia występują w schematu dla tego typu.  
+  Ponadto należy pamiętać, że `xs:base64Binary` zawartość zostanie wygenerowany tylko wtedy, gdy wyliczenia występują w schematu dla tego typu.  
   
 ### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Można wygenerować wystąpienia dokumentu XML na podstawie pliku XSD  
   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bdb8719174b4a5fb66dcf79db04d2ea3ea565381
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 00abfd827bf98d79e74ecbaf9a01efdc7761c3ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203793"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881706"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Porady: analizowanie, co robią użytkownicy wirtualni podczas testu obciążenia za pomocą wykresu aktywności wirtualnego użytkownika
 
@@ -39,67 +39,67 @@ Poniższe procedury pokazują, jak wyświetlić **wykres aktywności wirtualnych
 
 ## <a name="to-investigate-a-specific-users-activity-in-the-virtual-user-activity-chart"></a>Aby zbadać działania określonego użytkownika w wykres aktywności wirtualnych użytkowników
 
-1.  Polecenie narzędzia okresu czasu w dolnej części **wykres aktywności wirtualnych użytkowników** aby wybrać obszar na wykresie, w którym chcesz zbadać szczegółowe informacje na temat określonego użytkownika.
+1. Polecenie narzędzia okresu czasu w dolnej części **wykres aktywności wirtualnych użytkowników** aby wybrać obszar na wykresie, w którym chcesz zbadać szczegółowe informacje na temat określonego użytkownika.
 
-2.  Umieść kursor myszy szczegółów na wykresie. Zwróć uwagę, że w etykietce narzędzia są wyświetlane następujące informacje:
+2. Umieść kursor myszy szczegółów na wykresie. Zwróć uwagę, że w etykietce narzędzia są wyświetlane następujące informacje:
 
-    -   **Identyfikator użytkownika**
+   - **Identyfikator użytkownika**
 
-    -   **Scenariusz**
+   - **Scenariusz**
 
-    -   **Test**
+   - **Test**
 
-    -   **Adres URL** (nie jest wyświetlane w testowej lub transakcji)
+   - **Adres URL** (nie jest wyświetlane w testowej lub transakcji)
 
-    -   **Wynik**
+   - **Wynik**
 
-    -   **Przeglądarka** (nie jest wyświetlane w testowej lub transakcji)
+   - **Przeglądarka** (nie jest wyświetlane w testowej lub transakcji)
 
-    -   **Sieci**
+   - **Sieci**
 
-    -   **Godzina rozpoczęcia**
+   - **Godzina rozpoczęcia**
 
-    -   **Czas trwania**
+   - **Czas trwania**
 
-    -   **Agent**
+   - **Agent**
 
-    -   **Dziennik testu** (łącze do dziennika testu)
+   - **Dziennik testu** (łącze do dziennika testu)
 
-        > [!NOTE]
-        > Aby pomóc w debugowaniu aplikacji, jeśli wybierzesz **Dziennik testu** łącze, wynik testu sieci web lub wynik skojarzony z Otwórz dziennik testu jednostkowego.
+     > [!NOTE]
+     > Aby pomóc w debugowaniu aplikacji, jeśli wybierzesz **Dziennik testu** łącze, wynik testu sieci web lub wynik skojarzony z Otwórz dziennik testu jednostkowego.
 
      Następnie można użyć filtrowania i wyróżniania operacje dostępne w **wykres aktywności wirtualnych użytkowników**.
 
 ## <a name="to-use-filtering-options-in-the-virtual-user-activity-chart"></a>Aby użyć opcji filtrowania w wykres aktywności wirtualnych użytkowników
 
-1.  W **Legenda szczegółów**, użyj listy rozwijanej możesz wybrać opcję **testu**, **strony**, lub **transakcji**.
+1. W **Legenda szczegółów**, użyj listy rozwijanej możesz wybrać opcję **testu**, **strony**, lub **transakcji**.
 
-     **Legenda szczegółów — panel**
+    **Legenda szczegółów — panel**
 
-     ![Legenda szczegółów — panel](../test/media/ltest_detailslegend.png)
+    ![Legenda szczegółów — panel](../test/media/ltest_detailslegend.png)
 
-2.  Zaznacz lub wyczyść pola wyboru dla błędów, dzienniki, testy, wyszukiwania i stron aspx, które są skojarzone z testu obciążenia.
+2. Zaznacz lub wyczyść pola wyboru dla błędów, dzienniki, testy, wyszukiwania i stron aspx, które są skojarzone z testu obciążenia.
 
-     **Wykres aktywności wirtualnych użytkowników** odpowiednio aktualizowany.
+    **Wykres aktywności wirtualnych użytkowników** odpowiednio aktualizowany.
 
-     **Wykres aktywności wirtualnych użytkowników** umożliwia filtrowanie testy, strony i transakcje na podstawie kilku różnych kryteriów. Można usunąć niektórych testów w widoku lub Usuń wszystkie testy zakończone powodzeniem i usuwać testy, które nie powiodło się z pewnych błędów. Można również usunąć wszystkie testy, które nie mają dzienniki.
+    **Wykres aktywności wirtualnych użytkowników** umożliwia filtrowanie testy, strony i transakcje na podstawie kilku różnych kryteriów. Można usunąć niektórych testów w widoku lub Usuń wszystkie testy zakończone powodzeniem i usuwać testy, które nie powiodło się z pewnych błędów. Można również usunąć wszystkie testy, które nie mają dzienniki.
 
-     Na przykład, możesz wybrać **(Podświetl błędy)** opcja, która wyświetla wszystkie błędy na wykresie pokolorowane w kolorze czerwonym. Możesz również wybrać **(Podświetl wyniki z dziennikami)** opcja, która wyświetla wszystkie wyniki testów, które mają dzienniki pokolorowane w kolorze zielonym na wykresie.
+    Na przykład, możesz wybrać **(Podświetl błędy)** opcja, która wyświetla wszystkie błędy na wykresie pokolorowane w kolorze czerwonym. Możesz również wybrać **(Podświetl wyniki z dziennikami)** opcja, która wyświetla wszystkie wyniki testów, które mają dzienniki pokolorowane w kolorze zielonym na wykresie.
 
-     **Panel wyników filtrowania**
+    **Panel wyników filtrowania**
 
-     ![Panel wyników filtrowania](../test/media/ltest_filterresults.png)
+    ![Panel wyników filtrowania](../test/media/ltest_filterresults.png)
 
-3.  W **filtrowanie wyników**, zaznacz lub wyczyść pola wyboru dla następujących opcji filtrowania:
+3. W **filtrowanie wyników**, zaznacz lub wyczyść pola wyboru dla następujących opcji filtrowania:
 
-    -   **Pokaż tylko wyniki z dziennikami** wyświetla tylko wyniki, które mają dzienniki testów skojarzonych z nimi.
+   - **Pokaż tylko wyniki z dziennikami** wyświetla tylko wyniki, które mają dzienniki testów skojarzonych z nimi.
 
-    -   **Pokaż pomyślne wyniki** Wyświetla pomyślne wyniki.
+   - **Pokaż pomyślne wyniki** Wyświetla pomyślne wyniki.
 
-    -   **Pokaż wyniki z błędami** wyświetla wyniki z błędami, które mogą pomóc w debugowaniu.
+   - **Pokaż wyniki z błędami** wyświetla wyniki z błędami, które mogą pomóc w debugowaniu.
 
-        > [!NOTE]
-        > Lista typów błędów, które są wyświetlane w obszarze **Pokaż wyniki z błędami** węzła może dalszego zbadania, wybierając **tabel** znajdujący się w **podgląduwynikówtestuwydajnościsieciWeb** paska narzędzi. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+     > [!NOTE]
+     > Lista typów błędów, które są wyświetlane w obszarze **Pokaż wyniki z błędami** węzła może dalszego zbadania, wybierając **tabel** znajdujący się w **podgląduwynikówtestuwydajnościsieciWeb** paska narzędzi. Aby uzyskać więcej informacji, zobacz [analizowanie wyników testów obciążenia oraz błędów w widoku tabele](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
      **Wykres aktywności wirtualnych użytkowników** odpowiednio aktualizowany.
 

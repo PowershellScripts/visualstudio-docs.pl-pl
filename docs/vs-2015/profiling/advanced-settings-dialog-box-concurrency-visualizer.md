@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b09b5d3a6bb279291df64c0de720ba03f2eee16d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 052c4c59b72d5d7f5c4722fc32efc9ecedb0556b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921967"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Okno dialogowe Zaawansowane ustawienia (Concurrency Visualizer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,15 +81,15 @@ Za pomocą **Zaawansowane ustawienia** okno dialogowe w Wizualizatorze współbi
 ## <a name="files"></a>Pliki  
  Na **pliki** karcie, można określić katalog, w obszarze śledzenia pliki są przechowywane każdorazowo śledzenia są zbierane.  Narzędzie Concurrency Visualizer generuje cztery pliki do każdego śledzenia, które są zbierane:  
   
--   Plik dziennika (ETL) śledzenia zdarzeń w trybie jądra (*. kernel.etl)  
+- Plik dziennika (ETL) śledzenia zdarzeń w trybie jądra (*. kernel.etl)  
   
--   Plik dziennika śledzenia zdarzeń tryb użytkownika (*. user.etl)  
+- Plik dziennika śledzenia zdarzeń tryb użytkownika (*. user.etl)  
   
--   Plik dane narzędzia Concurrency Visualizer (*. CVData)  
+- Plik dane narzędzia Concurrency Visualizer (*. CVData)  
   
--   Plik śladu wizualizatora współbieżności (*. CVTrace)  
+- Plik śladu wizualizatora współbieżności (*. CVTrace)  
   
- Dwa pliki ETL przechowywanie danych pierwotnych śledzenia, a te dwa pliki narzędzia Concurrency Visualizer magazynowanie przetworzonych danych.  Nieprzetworzone pliki ETL zwykle nie są używane po przetworzeniu śledzenia.  Wybieranie **pliki usunąć zdarzenia śledzenia dziennika (ETL) po przeprowadzeniu analizy** pole wyboru pozwala na zmniejszenie ilości danych śledzenia, który jest przechowywany na dysku.  
+  Dwa pliki ETL przechowywanie danych pierwotnych śledzenia, a te dwa pliki narzędzia Concurrency Visualizer magazynowanie przetworzonych danych.  Nieprzetworzone pliki ETL zwykle nie są używane po przetworzeniu śledzenia.  Wybieranie **pliki usunąć zdarzenia śledzenia dziennika (ETL) po przeprowadzeniu analizy** pole wyboru pozwala na zmniejszenie ilości danych śledzenia, który jest przechowywany na dysku.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Tylko mój kod](../profiling/just-my-code-threads-view.md)   

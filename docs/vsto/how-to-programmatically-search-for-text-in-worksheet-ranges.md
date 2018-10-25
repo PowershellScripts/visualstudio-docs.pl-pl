@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ba3c4cea78e2c5c32d1bb7159243155e18fd01ce
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c0dcf2787706de121fba691edaf42e9971747524
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676402"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920082"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Porady: programowane wyszukiwanie tekstu w zakresach arkusza
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> Metody <xref:Microsoft.Office.Interop.Excel.Range> obiektu umożliwia wyszukiwanie tekstu w zakresie. Ten tekst może być również dowolne ciągi błędów, które mogą wystąpić w komórce arkusza, takich jak `#NULL!` lub `#VALUE!`. Aby uzyskać więcej informacji na temat ciągi błędów, zobacz [komórki wartości błędów](http://msdn.microsoft.com/library/office/ff839168.aspx).  
@@ -38,42 +38,42 @@ ms.locfileid: "35676402"
   
 ## <a name="to-search-for-text-in-a-worksheet-range"></a>Aby wyszukać tekst w zakresie arkusza  
   
-1.  Zadeklaruj zmienne do śledzenia całego zakresu, pierwszy znaleziony zakres i znaleziono bieżącego zakresu.  
+1. Zadeklaruj zmienne do śledzenia całego zakresu, pierwszy znaleziony zakres i znaleziono bieżącego zakresu.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#58)]
-     [!code-vb[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#58)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#58)]
+    [!code-vb[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#58)]  
   
-2.  Wyszukaj pierwsze dopasowanie, określając wszystkie parametry z wyjątkiem komórki do wyszukiwania po.  
+2. Wyszukaj pierwsze dopasowanie, określając wszystkie parametry z wyjątkiem komórki do wyszukiwania po.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#59)]
-     [!code-vb[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#59)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#59)]
+    [!code-vb[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#59)]  
   
-3.  Kontynuuj wyszukiwanie, tak długo, jak są zgodne.  
+3. Kontynuuj wyszukiwanie, tak długo, jak są zgodne.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
-     [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
+    [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]  
   
-4.  Porównaj pierwszego znaleziono zakresu (`firstFind`) do **nic**. Jeśli `firstFind` nie zawiera wartości, natychmiast magazynów kodu znaleziono zakresu (`currentFind`).  
+4. Porównaj pierwszego znaleziono zakresu (`firstFind`) do **nic**. Jeśli `firstFind` nie zawiera wartości, natychmiast magazynów kodu znaleziono zakresu (`currentFind`).  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
-     [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
+    [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]  
   
-5.  Wyjście z pętli, jeśli adres znaleziono zakresu jest zgodny z adresem, pierwszy znaleziony zakresu.  
+5. Wyjście z pętli, jeśli adres znaleziono zakresu jest zgodny z adresem, pierwszy znaleziony zakresu.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#62)]
-     [!code-vb[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#62)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#62)]
+    [!code-vb[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#62)]  
   
-6.  Ustaw efekt znaleziono zakresu.  
+6. Ustaw efekt znaleziono zakresu.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#63)]
-     [!code-vb[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#63)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#63)]
+    [!code-vb[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#63)]  
   
-7.  Wykonaj innych kryteriów wyszukiwania.  
+7. Wykonaj innych kryteriów wyszukiwania.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#64)]
-     [!code-vb[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#64)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#64)]
+    [!code-vb[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#64)]  
   
- Poniższy przykład pokazuje całą metodę.  
+   Poniższy przykład pokazuje całą metodę.  
   
 ## <a name="example"></a>Przykład  
  [!code-csharp[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#57)]

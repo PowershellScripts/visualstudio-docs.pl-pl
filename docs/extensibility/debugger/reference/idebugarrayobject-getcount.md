@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81788423523837b6e8b29a8869abca7b393cf37a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4edfaf7b9ef655473244bdcd18bf6b2c31b8210d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891404"
 ---
 # <a name="idebugarrayobjectgetcount"></a>IDebugArrayObject::GetCount
 Pobiera liczbę elementów w tablicy.  
@@ -46,10 +46,10 @@ int GetCount(
  [out] Zwraca liczbę.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda widzi wszystkie elementy tablicy obiektów jako tablicą jednowymiarową, nawet jeśli obiekt tablicy jest wielowymiarowy. Przykładowo, podana tablicy `myarray[3][2][6]`, ta metoda zwróci 36 w `pdwElements` parametru. Użyj [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) metoda pobierania poszczególne elementy jednym naraz.  
+ Ta metoda uznaje wszystkie elementy obiektu tablicowego Jednowymiarowa tablica, nawet w przypadku obiektu tablicy wielowymiarowej. Na przykład, biorąc pod uwagę tablicy `myarray[3][2][6]`, ta metoda zwróci 36 w `pdwElements` parametru. Użyj [GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md) metodę, aby pobrać poszczególne elementy jednego naraz.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

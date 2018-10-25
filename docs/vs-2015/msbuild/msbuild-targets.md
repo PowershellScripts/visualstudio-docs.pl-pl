@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2eab4a6085ce6756d1b55b0669008cb745b82e28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af666f40dec018e2dfde330cfc5727159b8b1dc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288683"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925738"
 ---
 # <a name="msbuild-targets"></a>Obiekty docelowe w programie MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ Obiekty docelowe grupują zadania w określonej kolejności i pozwól, aby być 
 ## <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych  
  Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego obiektu docelowego jest zależna od danych wyjściowych z innym elementem docelowym. Istnieje kilka sposobów, aby określić kolejność, w które elementy docelowe, uruchom.  
   
--   Cele początkowe  
+- Cele początkowe  
   
--   Domyślne elementy docelowe  
+- Domyślne elementy docelowe  
   
--   Pierwszy element docelowy  
+- Pierwszy element docelowy  
   
--   Miejsce docelowe zależności  
+- Miejsce docelowe zależności  
   
--   `BeforeTargets` i `AfterTargets` (MSBuild 4.0)  
+- `BeforeTargets` i `AfterTargets` (MSBuild 4.0)  
   
- Obiekt docelowy nigdy nie będzie uruchamiany dwa razy podczas pojedynczej kompilacji, nawet wtedy, gdy kolejne docelowego w kompilacji zależy od niego. Po uruchomieniu elementu docelowego swój wkład zgodnie z kompilacją zostało ukończone.  
+  Obiekt docelowy nigdy nie będzie uruchamiany dwa razy podczas pojedynczej kompilacji, nawet wtedy, gdy kolejne docelowego w kompilacji zależy od niego. Po uruchomieniu elementu docelowego swój wkład zgodnie z kompilacją zostało ukończone.  
   
- Aby uzyskać szczegóły i dodatkowe informacje o docelowym kolejność kompilacji, zobacz [kolejności kompilacji docelowej](../msbuild/target-build-order.md).  
+  Aby uzyskać szczegóły i dodatkowe informacje o docelowym kolejność kompilacji, zobacz [kolejności kompilacji docelowej](../msbuild/target-build-order.md).  
   
 ## <a name="target-batching"></a>Przetwarzaniu wsadowym obiektów docelowych  
  Element docelowy może mieć `Outputs` atrybut, który określa metadanych w formie % (metadane). Jeśli tak, MSBuild uruchamia docelowej jeden raz dla każdej wartości unikatowe metadane, grupowania lub "przetwarzanie wsadowe" elementy, które mają tę wartość metadanych. Na przykład  

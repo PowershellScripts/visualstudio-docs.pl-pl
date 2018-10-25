@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fd2cb4ef249e2ff31507058d7572bf6db10e20a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8fa0699363ee0e4c1b0b2d42bfd1a938e28db4af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888076"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
-Pobiera kod zakończenia wątku.  
+Pobiera kod wyjścia wątku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,10 +41,10 @@ int GetExitCode (
   
 #### <a name="parameters"></a>Parametry  
  `pdwExit`  
- [out] Zwraca kod zakończenia wątku.  
+ [out] Zwraca kod wyjścia wątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3851b70f818c9cc601dbbdabce059e16fec747ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909780"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Porady: tworzenie wtyczki rejestratora
 
@@ -87,11 +87,11 @@ W poniższych procedurach opisano sposób tworzenia kodu szczątkowego dla rejes
 
 ### <a name="deploy-the-recorder-plug-in"></a>Wdróż wtyczkę Rejestrator
 
-Po skompilowaniu dodatku plug-in rejestratora, konieczne będzie umieścić wynikowy DLL w jednej z dwóch lokalizacji:
+Po skompilowaniu dodatku plug-in rejestratora umieścić wynikowy DLL w jednej z dwóch lokalizacji:
 
--   *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\WebTestPlugins*
+- *% ProgramFiles (x86) %\Microsoft Visual Studio\\[wersja]\\\Common7\IDE\PrivateAssemblies\WebTestPlugins [wersja]*
 
--   *%USERPROFILE%\My Documents\Visual Studio \<* wersji *> \WebTestPlugins*
+- *%USERPROFILE%\Documents\Visual studio [wersja] \WebTestPlugins*
 
 > [!WARNING]
 > Po skopiowaniu dodatku plug-in rejestratora do jednej z dwóch lokalizacji, należy ponownie uruchomić program Visual Studio dla dodatku plug-in do zarejestrowania.
@@ -113,8 +113,8 @@ Po skompilowaniu dodatku plug-in rejestratora, konieczne będzie umieścić wyni
     >
     > Dzieje się tak Jeśli wprowadzasz zmiany kodu do dowolnego typu plug-ins i utworzyć nową wersję biblioteki DLL **(wersja = 0.0.0.0)**, ale wtyczka nadal odwołuje się do oryginalnej wersji wtyczki. Aby rozwiązać ten problem, wykonaj następujące kroki:
     >
-    > 1.  W wydajności sieci web i obciążenia projektu testowego zostanie wyświetlone ostrzeżenie w odwołaniach. Usuń i ponownie Dodaj odwołanie do biblioteki DLL dodatku plug-in.
-    > 2.  Usuń dodatek plug-in z testu lub odpowiedniej lokalizacji, a następnie dodaj go ponownie.
+    > 1. W wydajności sieci web i obciążenia projektu testowego zostanie wyświetlone ostrzeżenie w odwołaniach. Usuń i ponownie Dodaj odwołanie do biblioteki DLL dodatku plug-in.
+    > 2. Usuń dodatek plug-in z testu lub odpowiedniej lokalizacji, a następnie dodaj go ponownie.
 
 ## <a name="example"></a>Przykład
 
@@ -123,7 +123,7 @@ Ten przykład przedstawia sposób tworzenia dodatku typu plug-in do wykonywania 
 > [!NOTE]
 > Pełną listę przykładowy kod znajduje się w dolnej części tego tematu.
 
- **Recenzowanie przykładowego kodu**
+**Recenzowanie przykładowego kodu**
 
 ## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Wykonuj iteracje przez wyniki w celu znalezienia pierwszej strony z obiektem ReportSession
 

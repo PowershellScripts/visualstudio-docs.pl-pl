@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c36ee7332f896ed3228166b2c729a4bc2a4df03c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 783c73cc73da188ec1be626cf54db93ca62af465
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496041"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865105"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Pomoc techniczna dotycząca właściwości projektu i konfiguracji
 **Właściwości** okna [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zintegrowanego środowiska programistycznego (IDE) można wyświetlić właściwości projektu i konfiguracji. Strony właściwości można określić dla typu projektu co użytkownik może ustawić właściwości dla aplikacji.  
@@ -61,14 +61,14 @@ ms.locfileid: "46496041"
   
  `SettingsPage` Klasy i `Microsoft.VisualStudio.Package.ProjectNode` klasy oferują te metody, aby zachować właściwości projektu i konfiguracji:  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` i `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` utrwalanie właściwości projektu.  
+- `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` i `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` utrwalanie właściwości projektu.  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` i `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` utrwalanie właściwości konfiguracji.  
+- `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` i `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` utrwalanie właściwości konfiguracji.  
   
-    > [!NOTE]
-    >  Implementacje `Microsoft.VisualStudio.Package.SettingsPage` i `Microsoft.VisualStudio.Package.ProjectNode` klasy użyj `Microsoft.Build.BuildEngine` (MSBuild) metody do pobierania i ustawiania właściwości projektu i konfiguracji z pliku projektu.  
+  > [!NOTE]
+  >  Implementacje `Microsoft.VisualStudio.Package.SettingsPage` i `Microsoft.VisualStudio.Package.ProjectNode` klasy użyj `Microsoft.Build.BuildEngine` (MSBuild) metody do pobierania i ustawiania właściwości projektu i konfiguracji z pliku projektu.  
   
- Klasa pochodzi od `SettingsPage` musi implementować `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` i `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` można utrwalić projektu lub konfiguracji właściwości pliku projektu.  
+  Klasa pochodzi od `SettingsPage` musi implementować `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` i `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` można utrwalić projektu lub konfiguracji właściwości pliku projektu.  
   
 ## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute i ścieżki rejestru  
  Klasy pochodne `SettingsPage` są przeznaczone do można współdzielić w ramach pakietów VSPackage. Aby umożliwić VSPackage utworzyć klasę pochodną `SettingsPage`, Dodaj `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` do klasy pochodzącej od `Microsoft.VisualStudio.Shell.Package`.  

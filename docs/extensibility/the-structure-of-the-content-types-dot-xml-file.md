@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49ba65f92143f47432cac874ebfd539f9b2da0f5
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 538a518d1186dc50a9e5e89635af0a07c2542041
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893276"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Struktura pliku [Content_types].xml
 Zawiera informacje na temat rodzajów zawartości w pakiecie VSIX. Program Visual Studio używa pliku [Content_Types] .xml, aby zainstalować pakiet, ale nie jest instalowana w samym pliku.  
@@ -46,9 +46,9 @@ Zawiera informacje na temat rodzajów zawartości w pakiecie VSIX. Program Visua
   
 ### <a name="attribute-name-attribute"></a>{Atrybut name} Atrybut  
   
-|Wartość|Opis|  
-|-----------|-----------------|  
-|http://schemas.openformats.org/package/2006/content-types|Lokalizacja schematu, typy zawartości.|  
+| Wartość | Opis |
+| - | - |
+| http://schemas.openformats.org/package/2006/content-types | Lokalizacja schematu, typy zawartości. |
   
 ### <a name="child-elements"></a>Elementy podrzędne  
  `Types` Element może zawierać dowolną liczbę `Default` elementów.  

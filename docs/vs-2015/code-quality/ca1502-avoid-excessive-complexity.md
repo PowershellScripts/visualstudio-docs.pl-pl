@@ -20,15 +20,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0f81efa03c3955114561e923c232e8ee81dd2af6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b582d4679aee10010741994117b8b17f47b23aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259080"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890585"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Unikaj nadmiernej złożoności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
@@ -59,11 +60,11 @@ ms.locfileid: "49259080"
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>Jak obliczana jest złożoność Cyklomatyczna
  Złożoność cyklomatyczna jest obliczany przez dodanie 1 do następujących:
 
--   Liczba gałęzi (takich jak `if`, `while`, i `do`)
+- Liczba gałęzi (takich jak `if`, `while`, i `do`)
 
--   Liczba `case` instrukcje w `switch`
+- Liczba `case` instrukcje w `switch`
 
- Poniższe przykłady przedstawiają metody, które mają różnej złożoności cyklomatycznej.
+  Poniższe przykłady przedstawiają metody, które mają różnej złożoności cyklomatycznej.
 
 ## <a name="example"></a>Przykład
  **Złożoność Cyklomatyczna 1**

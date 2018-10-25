@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d62c68bfc8e43370105a94818437bb0cfa2221e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b707f63aaf9e4873fe851c9b9db1d175fdb51ce2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926478"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
-Usunięcie węzła określonego programu z dostępności debugowanie aparaty (DEs) i Menedżer debugowania sesji (SDM).  
+Usunięcie węzła określony program z dostępności, aby debugować aparatów (DEs) i Menedżer debugowania sesji (SDM).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int UnpublishProgramNode(
   
 #### <a name="parameters"></a>Parametry  
  `pProgramNode`  
- [in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekt reprezentujący węzeł program usuwana.  
+ [in] [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiekt reprezentujący węzeł program usuwany.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Po usunięciu węzła program nie jest już dostępny do można wykonać zapytania o informacje o programie.  
+ Po usunięciu węzła program nie jest już dostępna zostać wykonane zapytanie, aby uzyskać informacje o programie.  
   
  Aby udostępnić węzła program, należy wywołać [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md) metody.  
   

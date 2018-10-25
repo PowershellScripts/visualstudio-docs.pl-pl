@@ -13,12 +13,12 @@ ms.assetid: 0a1ed675-2bd1-4603-ba3a-f40dfb5cfb69
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25296e78c0525b6bf3a39b808f64d26376e70bfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cd1eefc0cab26f54ef7b1491c234d1187f5f79c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196511"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905938"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menu i poleceń dla programu Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -191,29 +191,29 @@ ms.locfileid: "49196511"
   
  **Pasek narzędzi ogólne wytyczne:**  
   
--   Każdy narzędzi ma 24 pikseli formantów wspólnych (uchwytu, przepełnienie).  
+- Każdy narzędzi ma 24 pikseli formantów wspólnych (uchwytu, przepełnienie).  
   
--   Każdy przycisk paska narzędzi jest 22 pikseli szerokości, w tym dopełnienia. Tworzenie ikony przycisku podziału dodaje inny 11 pikseli szerokości.  
+- Każdy przycisk paska narzędzi jest 22 pikseli szerokości, w tym dopełnienia. Tworzenie ikony przycisku podziału dodaje inny 11 pikseli szerokości.  
   
--   Duplikowanie poleceń na paskach narzędzi jest dozwolone.  
+- Duplikowanie poleceń na paskach narzędzi jest dozwolone.  
   
- **Paski narzędzi specyficznych dla dokumentu** są wyświetlane, gdy określony typ pliku jest aktywny i znikają w przypadku uaktywniania innym typem pliku.  
+  **Paski narzędzi specyficznych dla dokumentu** są wyświetlane, gdy określony typ pliku jest aktywny i znikają w przypadku uaktywniania innym typem pliku.  
   
--   Paski narzędzi specyficznych dla dokumentu nie może mieć więcej niż 12 przycisków.  
+- Paski narzędzi specyficznych dla dokumentu nie może mieć więcej niż 12 przycisków.  
   
--   Łączna szerokość paska narzędzi nie może przekraczać 300 pikseli.  
+- Łączna szerokość paska narzędzi nie może przekraczać 300 pikseli.  
   
--   Każdy typ pliku może mieć jeden osadzonym pasku narzędzi lub jeden globalny pasek narzędzi specyficznych dla dokumentu, ale nie oba.  
+- Każdy typ pliku może mieć jeden osadzonym pasku narzędzi lub jeden globalny pasek narzędzi specyficznych dla dokumentu, ale nie oba.  
   
- **Paski narzędzi specyficznych dla kontekstu** są wyświetlane, gdy pewnym kontekście jest ustawiona i zwykle pozostają aktywne przez dłuższy czas.  
+  **Paski narzędzi specyficznych dla kontekstu** są wyświetlane, gdy pewnym kontekście jest ustawiona i zwykle pozostają aktywne przez dłuższy czas.  
   
--   Przycisk dla wszystkich pasków narzędzi specyficznych dla kontekstu wynoszący 18.  
+- Przycisk dla wszystkich pasków narzędzi specyficznych dla kontekstu wynoszący 18.  
   
--   Jeśli większość użytkowników nie będzie stale stosować poleceń tym paska narzędzi, gdy kontekst jest aktywny, następnie nie skojarzyć ten pasek narzędzi z kontekstem.  
+- Jeśli większość użytkowników nie będzie stale stosować poleceń tym paska narzędzi, gdy kontekst jest aktywny, następnie nie skojarzyć ten pasek narzędzi z kontekstem.  
   
--   Upewnij się, że pasek narzędzi zniknie podczas zamykania kontekstu. Żadna z nich powinna pojawić się podczas uruchamiania.  
+- Upewnij się, że pasek narzędzi zniknie podczas zamykania kontekstu. Żadna z nich powinna pojawić się podczas uruchamiania.  
   
- **Paski narzędzi z kontekstu** nigdy nie pojawiają się automatycznie. Pokazują one, tylko gdy użytkownik aktywuje je. Zachowaj maksymalną szerokość poniżej 200 pikseli.  
+  **Paski narzędzi z kontekstu** nigdy nie pojawiają się automatycznie. Pokazują one, tylko gdy użytkownik aktywuje je. Zachowaj maksymalną szerokość poniżej 200 pikseli.  
   
 ### <a name="general-organization-and-shell-defined-groups"></a>Ogólnej organizacji i grupy zdefiniowane powłoki  
  Użyj istniejących udostępnionych poleceń, grup poleceń i menu. Jeśli nowego polecenia musi być zdefiniowana, spróbuj umieścić go w istniejącej grupie udostępnionego polecenia. Jeśli nowa grupa musi być zdefiniowana, spróbuj umieścić go w istniejącego menu udostępnionego blisko grupą powiązanych poleceń przed utworzeniem nowego menu najwyższego poziomu. Pozwala to zmniejszyć złożoność polecenia przy jednoczesnym zapewnieniu położenie polecenia spójne w środowisku IDE.  
@@ -278,19 +278,19 @@ ms.locfileid: "49196511"
   
  Podczas definiowania skróty, należy wykonać następujące czynności:  
   
--   **Za pomocą kontrolki (Ctrl) i sekwencji klawiszy — funkcja (Fn).**  
+- **Za pomocą kontrolki (Ctrl) i sekwencji klawiszy — funkcja (Fn).**  
   
--   **Zachowaj często stosowane skróty.** Obsługa najpopularniejszych skróty.  
+- **Zachowaj często stosowane skróty.** Obsługa najpopularniejszych skróty.  
   
--   **Ułatw wpisz skróty dla edytora.** Skróty — w typie należy powiązać polecenia, że deweloperzy muszą większość podczas pisania kodu. Na przykład **Edit.InvokeSmartTag** musi mieć klucz skrót, takie jak Ctrl +/ i nie Alt + Shift + F10.  
+- **Ułatw wpisz skróty dla edytora.** Skróty — w typie należy powiązać polecenia, że deweloperzy muszą większość podczas pisania kodu. Na przykład **Edit.InvokeSmartTag** musi mieć klucz skrót, takie jak Ctrl +/ i nie Alt + Shift + F10.  
   
--   **Dążenie do spójnego motywem skróty.**  
+- **Dążenie do spójnego motywem skróty.**  
   
--   **Postępuj zgodnie z wytycznymi Windows, aby ustalić, które modyfikator kluczy mogą wykorzystać.** Użyj kombinacji klawiszy Ctrl dla polecenia, które mają wpływ na dużą skalę, takich jak polecenia, które są stosowane do całego dokumentu. Użyj kombinacji klawisza Shift dla poleceń, które rozszerzyć lub uzupełniają działania klawisza skrótu standard. Nie należy używać kombinacji klawiszy Ctrl + Alt.  
+- **Postępuj zgodnie z wytycznymi Windows, aby ustalić, które modyfikator kluczy mogą wykorzystać.** Użyj kombinacji klawiszy Ctrl dla polecenia, które mają wpływ na dużą skalę, takich jak polecenia, które są stosowane do całego dokumentu. Użyj kombinacji klawisza Shift dla poleceń, które rozszerzyć lub uzupełniają działania klawisza skrótu standard. Nie należy używać kombinacji klawiszy Ctrl + Alt.  
   
--   **Usuń skróty nadmiarowe.** Jeśli masz starszej wersji funkcji, rozważ usunięcie skróty, które są używane z infrequency extreme (mniej niż 10 razy w danych programu CEIP) lub umiarkowane infrequency (mniej niż 100 razy dane programu CEIP), jeśli klucz dostępu zapewnia szybki dostęp do tego samego polecenia. Na przykład: C Alt-H, spowoduje to otwarcie/spis treści pomocy.  
+- **Usuń skróty nadmiarowe.** Jeśli masz starszej wersji funkcji, rozważ usunięcie skróty, które są używane z infrequency extreme (mniej niż 10 razy w danych programu CEIP) lub umiarkowane infrequency (mniej niż 100 razy dane programu CEIP), jeśli klucz dostępu zapewnia szybki dostęp do tego samego polecenia. Na przykład: C Alt-H, spowoduje to otwarcie/spis treści pomocy.  
   
- Nie jest to prosty sposób sprawdzić dostępność skrótów. Jeśli chcesz dodać skrót, wykonaj następujące kroki:  
+  Nie jest to prosty sposób sprawdzić dostępność skrótów. Jeśli chcesz dodać skrót, wykonaj następujące kroki:  
   
 1.  Sprawdź listę [skróty programu Visual Studio 2013](http://visualstudioshortcuts.com/2013/) można sprawdzić, czy są podobne polecenia, aby Twoje z grupy.  
   

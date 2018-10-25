@@ -22,12 +22,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db777a7b35ce6576640b6ac688ae716c0e41f676
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbcd6fb78ef87992571347f6a32f18e939a00586
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241673"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892184"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Błąd: Wykonanie Transact-SQL zakończyło się bez debugowania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ Ten błąd występuje podczas próby debugowania języka Transact-SQL lub proced
   
  Zaangażowanych dwa konta:  
   
--   Konto aplikacji znajduje się konto użytkownika, który [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] działa jako.  
+- Konto aplikacji znajduje się konto użytkownika, który [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] działa jako.  
   
--   Konto połączenia jest to tożsamość używana do nawiązywania połączeń z programem SQL Server. To nie jest zawsze taki sam jak tożsamość, która Visual Studio działa tak, jakby połączenie za pomocą uwierzytelniania SQL.  
+- Konto połączenia jest to tożsamość używana do nawiązywania połączeń z programem SQL Server. To nie jest zawsze taki sam jak tożsamość, która Visual Studio działa tak, jakby połączenie za pomocą uwierzytelniania SQL.  
   
- Debugowanie SQL wymaga, aby konto aplikacji musi odpowiadać kontu połączenia lub być sysadmin.  
+  Debugowanie SQL wymaga, aby konto aplikacji musi odpowiadać kontu połączenia lub być sysadmin.  
   
- Jeśli używasz identyfikatora logowania SQL, takich jak Ameryka Południowa konta aplikacji musi być Instalatora na serwerze SQL, administrator systemu. Domyślnie administratorzy na komputerze program SQL server jest uruchomiony są głównym programu SQL Server.  
+  Jeśli używasz identyfikatora logowania SQL, takich jak Ameryka Południowa konta aplikacji musi być Instalatora na serwerze SQL, administrator systemu. Domyślnie administratorzy na komputerze program SQL server jest uruchomiony są głównym programu SQL Server.  
   
- Aby naprawić ten błąd, konieczne może być:  
+  Aby naprawić ten błąd, konieczne może być:  
   
--   Sprawdź ustawienia uprawnień. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie uprawnień programu SQL Server dla debugowania](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
+- Sprawdź ustawienia uprawnień. Aby uzyskać więcej informacji, zobacz [porady: Ustawianie uprawnień programu SQL Server dla debugowania](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414).  
   
--   Upewnij się, że debugowanie SQL, jeśli skonfigurowane prawidłowo.  
+- Upewnij się, że debugowanie SQL, jeśli skonfigurowane prawidłowo.  
   
--   Zapoznaj się z administratorem sieci lub bazy danych.  
+- Zapoznaj się z administratorem sieci lub bazy danych.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Konfigurowanie debugowania SQL](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   

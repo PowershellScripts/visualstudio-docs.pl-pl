@@ -17,12 +17,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71098c0dda7c06f446658c4970d0b6cf2e35e55e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d1769b4064b92283e75c242a5abb897296c5156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847801"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Obsługa fragmentów kodu w starszej wersji usługi językowej
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -335,15 +335,15 @@ namespace TestLanguagePackage
   
  Gdy usługa językowa pobiera nazwę skrótów, wywołuje <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> metodę, aby uzyskać nazwę pliku i kod tytuł fragmentu kodu. Następnie wywołuje usługa językowa <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.ExpansionProvider> klasy, aby wstawić fragment kodu. Następujące metody są wywoływane przez program Visual Studio w podanej kolejności w <xref:Microsoft.VisualStudio.Package.ExpansionProvider> klasy podczas wstawiania fragmentu kodu:  
   
-1.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-2.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+2. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-3.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+3. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
- Aby uzyskać więcej informacji na temat pobierania listy zainstalowanych fragmentów kodu dla usługi w języka, zobacz [wskazówki: pobieranie listy z zainstalowane fragmenty kodu (starsza wersja implementacji)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+   Aby uzyskać więcej informacji na temat pobierania listy zainstalowanych fragmentów kodu dla usługi w języka, zobacz [wskazówki: pobieranie listy z zainstalowane fragmenty kodu (starsza wersja implementacji)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
 ## <a name="implementing-the-expansionfunction-class"></a>Implementacja klasy ExpansionFunction  
  Funkcja rozszerzenia jest o nazwie funkcji, zostanie osadzony w szablon fragmentu kodu, która zwraca jedną lub więcej wartości do umieszczenia w polu. W celu obsługi funkcji rozszerzeń w usłudze języka, należy wyprowadzić klasę z <xref:Microsoft.VisualStudio.Package.ExpansionFunction> klasę i zaimplementować <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> metody. Musisz przesłonić <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.LanguageService> klasy w celu zwracania nowego wystąpienia wersji <xref:Microsoft.VisualStudio.Package.ExpansionFunction> klasy dla każdej funkcji rozszerzenia, które obsługujesz. Jeśli obsługujesz listę możliwych wartości z funkcji rozszerzenia, konieczne jest również przesłonięcie <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> method in Class metoda <xref:Microsoft.VisualStudio.Package.ExpansionFunction> klasy, aby powrócić do listy tych wartości.  

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumInjectedSources::Item | Dokumentacja firmy Microsoft
+title: Idiaenuminjectedsources::Item — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fb753605a85dedefac5fc2cd33f4baf158b128b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e8299bce906c5f3e7a38296a9c19e9c85d03501b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456871"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917456"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
-Pobiera źródło wprowadzony za pomocą indeksu.  
+Pobiera wstrzyknięte źródło za pomocą indeksu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,13 +35,13 @@ HRESULT Item (
   
 #### <a name="parameters"></a>Parametry  
  indeks  
- [in] Indeks o [idiainjectedsource —](../../debugger/debug-interface-access/idiainjectedsource.md) obiektu do pobrania. Indeks jest z zakresu od 0 do `count`-1, gdy `count` zwróconego przez [IDiaEnumInjectedSources::get_Count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md) metody.  
+ [in] Indeks elementu [idiainjectedsource —](../../debugger/debug-interface-access/idiainjectedsource.md) obiektu do pobrania. Indeks jest z zakresu od 0 do `count`-1, gdzie `count` jest zwracany przez [idiaenuminjectedsources::get_count —](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md) metody.  
   
  injectedSource  
- [out] Zwraca [idiainjectedsource —](../../debugger/debug-interface-access/idiainjectedsource.md) obiekt reprezentujący wprowadzony źródła.  
+ [out] Zwraca [idiainjectedsource —](../../debugger/debug-interface-access/idiainjectedsource.md) obiekt reprezentujący wstrzyknięte źródło.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenuminjectedsources —](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   

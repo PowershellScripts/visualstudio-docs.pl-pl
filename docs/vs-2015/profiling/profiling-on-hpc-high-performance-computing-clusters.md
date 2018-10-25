@@ -26,12 +26,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bea3ca5adf462ec6c403099c8276bbdb87e4b57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67cc55d47e10093b440597ce464d7cc058689455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920368"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilowanie na klastrach HPC (przetwarzanie o wysokiej wydajności)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Można profilować w węzłach obliczeniowych systemu Microsoft Windows HPC klas
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby przeprowadzić profilowanie w węźle obliczeń HPC, wykonaj następujące czynności:  
   
--   Zainstaluj Microsoft HPC Pack 2008 na tym samym komputerze co [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Komputer nie musi być częścią klastra HPC. Można zainstalować pakietu HPC Pack na [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414).  
+- Zainstaluj Microsoft HPC Pack 2008 na tym samym komputerze co [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Komputer nie musi być częścią klastra HPC. Można zainstalować pakietu HPC Pack na [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=177414).  
   
--   Zainstaluj [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] i węzła obliczeniowego autonomiczną wersję narzędzi profilowania w HPC. Zainstalować programy dla obu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] a profiler autonomicznym dostępnych [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] nośnika instalacyjnego. **Uwaga** po wykonaniu procedury instalacji należy ponownie uruchomić obliczenia [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] oraz przed zainstalowaniem narzędzi profilowania.  
+- Zainstaluj [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] i węzła obliczeniowego autonomiczną wersję narzędzi profilowania w HPC. Zainstalować programy dla obu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] a profiler autonomicznym dostępnych [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] nośnika instalacyjnego. **Uwaga** po wykonaniu procedury instalacji należy ponownie uruchomić obliczenia [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] oraz przed zainstalowaniem narzędzi profilowania.  
   
- Aby zainstalować [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] i autonomicznych Profiling Tools na aktywne HPC obliczeń, węzeł i Włącz profilowanie na komputerze z klastra, wykonaj następujące kroki:  
+  Aby zainstalować [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] i autonomicznych Profiling Tools na aktywne HPC obliczeń, węzeł i Włącz profilowanie na komputerze z klastra, wykonaj następujące kroki:  
   
 1.  Otwórz okno wiersza polecenia, który został zainstalowany przy użyciu pakietu HPC pack.  
   

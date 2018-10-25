@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5300623e3bbd1eeec584b30015e122539a6c7203
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93f573412524619292b1966e87abeda11cc0813a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210460"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863727"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Porady: Wybieranie schematów XML do użycia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,23 +36,23 @@ Edytor XML udostępnia pamięci podręcznej schematów znajduje się w katalogu 
   
 ### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>Aby wybrać schematu XML z pamięci podręcznej schematów  
   
-1.  Otwórz plik w edytorze XML.  
+1. Otwórz plik w edytorze XML.  
   
-2.  W oknie dialogowym właściwości dokumentu, kliknij przycisk **schematów** pola.  
+2. W oknie dialogowym właściwości dokumentu, kliknij przycisk **schematów** pola.  
   
-     **Schematów XML** zostanie wyświetlone okno dialogowe. Okno dialogowe wyświetla listę wszystkich schematów z rozszerzeniem xsd w pamięci podręcznej schematów (w tym schematy przywoływane w pliku catalog.xml), a także żadnego schematu, który znajduje się w bieżącym rozwiązaniu, Otwórz w programie Visual Studio, do którego odwołuje się `xsd:schemaLocation` atrybut lub do których odwołuje się **schematów** właściwości.  
+    **Schematów XML** zostanie wyświetlone okno dialogowe. Okno dialogowe wyświetla listę wszystkich schematów z rozszerzeniem xsd w pamięci podręcznej schematów (w tym schematy przywoływane w pliku catalog.xml), a także żadnego schematu, który znajduje się w bieżącym rozwiązaniu, Otwórz w programie Visual Studio, do którego odwołuje się `xsd:schemaLocation` atrybut lub do których odwołuje się **schematów** właściwości.  
   
-3.  Wybieranie schematów do użycia w celu weryfikacji, wykonując jedną z następujących czynności:  
+3. Wybieranie schematów do użycia w celu weryfikacji, wykonując jedną z następujących czynności:  
   
-    -   Wybierz schemat na liście **schematów XML** okno dialogowe, kliknij przycisk **użyj** kolumny, a następnie wybierz **używają tego schematu**.  
+   - Wybierz schemat na liście **schematów XML** okno dialogowe, kliknij przycisk **użyj** kolumny, a następnie wybierz **używają tego schematu**.  
   
      —lub—  
   
-    -   Wybierz wiele schematów na liście **schematów XML** okno dialogowe, kliknij prawym przyciskiem myszy i wybierz **używają tego schematu**.  
+   - Wybierz wiele schematów na liście **schematów XML** okno dialogowe, kliknij prawym przyciskiem myszy i wybierz **używają tego schematu**.  
   
-4.  Kliknij przycisk **OK**.  
+4. Kliknij przycisk **OK**.  
   
-     Lista wybranych schematów są kopiowane z powrotem do **schematów** właściwości dokumentu.  
+    Lista wybranych schematów są kopiowane z powrotem do **schematów** właściwości dokumentu.  
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Aby dodać schematu XML do pamięci podręcznej schematów  
   

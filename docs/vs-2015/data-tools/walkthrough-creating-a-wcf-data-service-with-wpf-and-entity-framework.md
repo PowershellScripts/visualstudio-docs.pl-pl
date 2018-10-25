@@ -17,12 +17,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6aeb16bb805bc6dda1328b424acbe48b6371437e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d115c7ea7b2739f49492fb28fe855e2638d972c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197954"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889597"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Wskazówki: Tworzenie usługi danych WCF, WPF i Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,84 +60,84 @@ W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[ss_data_ser
   
 #### <a name="to-create-the-web-project"></a>Aby utworzyć projekt internetowy  
   
-1.  Na pasku menu wybierz **pliku**, **New**, **projektu**.  
+1. Na pasku menu wybierz **pliku**, **New**, **projektu**.  
   
-2.  W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#** i **sieci Web** węzłów, a następnie wybierz **ASP. Aplikacja sieci Web NET** szablonu.  
+2. W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#** i **sieci Web** węzłów, a następnie wybierz **ASP. Aplikacja sieci Web NET** szablonu.  
   
-3.  W **nazwa** tekstu wprowadź **NorthwindWeb**, a następnie wybierz **OK** przycisku.  
+3. W **nazwa** tekstu wprowadź **NorthwindWeb**, a następnie wybierz **OK** przycisku.  
   
-4.  W **nowy projekt ASP.NET** okno dialogowe, **wybierz szablon** wybierz **pusty**, a następnie wybierz **OK** przycisku.  
+4. W **nowy projekt ASP.NET** okno dialogowe, **wybierz szablon** wybierz **pusty**, a następnie wybierz **OK** przycisku.  
   
- W tym kroku utworzysz [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] reprezentujący tabelę Klienci w bazie danych Northwind.  
+   W tym kroku utworzysz [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] reprezentujący tabelę Klienci w bazie danych Northwind.  
   
 #### <a name="to-create-the-entity-data-model"></a>Aby utworzyć model Entity Data Model  
   
-1.  Na pasku menu wybierz **projektu**, **Dodaj nowy element**.  
+1. Na pasku menu wybierz **projektu**, **Dodaj nowy element**.  
   
-2.  W **Dodaj nowy element** okna dialogowego wybierz **danych** węzła, a następnie wybierz **ADO.NET Entity Data Model** elementu.  
+2. W **Dodaj nowy element** okna dialogowego wybierz **danych** węzła, a następnie wybierz **ADO.NET Entity Data Model** elementu.  
   
-3.  W **nazwa** tekstu wprowadź `NorthwindModel`, a następnie wybierz **Dodaj** przycisku.  
+3. W **nazwa** tekstu wprowadź `NorthwindModel`, a następnie wybierz **Dodaj** przycisku.  
   
-     Zostanie wyświetlony Kreator modelu Entity Data Model.  
+    Zostanie wyświetlony Kreator modelu Entity Data Model.  
   
-4.  W kreatorze modelu danych jednostki w **wybierz zawartość modelu** wybierz **projektancie platformy EF z bazy danych** elementu, a następnie wybierz **dalej** przycisku.  
+4. W kreatorze modelu danych jednostki w **wybierz zawartość modelu** wybierz **projektancie platformy EF z bazy danych** elementu, a następnie wybierz **dalej** przycisku.  
   
-5.  Na **wybierz połączenie danych** strony, wykonaj jedną z następujących czynności:  
+5. Na **wybierz połączenie danych** strony, wykonaj jedną z następujących czynności:  
   
-    -   Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.  
+   -   Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.  
   
-         —lub—  
+        —lub—  
   
-    -   Wybierz **nowe połączenie** przycisk, aby skonfigurować nowe połączenie danych. Aby uzyskać więcej informacji, zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md).  
+   -   Wybierz **nowe połączenie** przycisk, aby skonfigurować nowe połączenie danych. Aby uzyskać więcej informacji, zobacz [dodać nowe połączenia](../data-tools/add-new-connections.md).  
   
-6.  Jeśli baza danych wymaga hasła, wybierz opcję **tak, Dołącz dane poufne w parametrach połączenia** przycisk opcji, a następnie wybierz **dalej** przycisku.  
+6. Jeśli baza danych wymaga hasła, wybierz opcję **tak, Dołącz dane poufne w parametrach połączenia** przycisk opcji, a następnie wybierz **dalej** przycisku.  
   
-    > [!NOTE]
-    >  Jeśli pojawi się okno dialogowe, wybierz **tak** można zapisać pliku do projektu.  
+   > [!NOTE]
+   >  Jeśli pojawi się okno dialogowe, wybierz **tak** można zapisać pliku do projektu.  
   
-7.  Na **wybierz wersję** wybierz **Entity Framework 5.0** przycisk opcji, a następnie wybierz **dalej** przycisku.  
+7. Na **wybierz wersję** wybierz **Entity Framework 5.0** przycisk opcji, a następnie wybierz **dalej** przycisku.  
   
-    > [!NOTE]
-    >  Aby można było używać najnowszej wersji programu Entity Framework 6 za pomocą usługi WCF, należy zainstalować pakiet NuGet dostawcy Framework jednostki usługi danych WCF. Zobacz [przy użyciu programu WCF Data Services 5.6.0 z platformą Entity Framework 6](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).  
+   > [!NOTE]
+   >  Aby można było używać najnowszej wersji programu Entity Framework 6 za pomocą usługi WCF, należy zainstalować pakiet NuGet dostawcy Framework jednostki usługi danych WCF. Zobacz [przy użyciu programu WCF Data Services 5.6.0 z platformą Entity Framework 6](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).  
   
-8.  Na **wybierz obiekty bazy danych** rozwiń **tabel** węzeł **klientów** pole wyboru, a następnie wybierz **Zakończ** przycisk.  
+8. Na **wybierz obiekty bazy danych** rozwiń **tabel** węzeł **klientów** pole wyboru, a następnie wybierz **Zakończ** przycisk.  
   
-     Zostanie wyświetlony diagram modelu jednostek, a do projektu zostanie dodany plik NorthwindModel.edmx.  
+    Zostanie wyświetlony diagram modelu jednostek, a do projektu zostanie dodany plik NorthwindModel.edmx.  
   
- W tym kroku utworzysz i przetestujesz usługę danych.  
+   W tym kroku utworzysz i przetestujesz usługę danych.  
   
 #### <a name="to-create-the-data-service"></a>Aby utworzyć usługę danych  
   
-1.  Na pasku menu wybierz **projektu**, **Dodaj nowy element**.  
+1. Na pasku menu wybierz **projektu**, **Dodaj nowy element**.  
   
-2.  W **Dodaj nowy element** okna dialogowego wybierz **Web** węzła, a następnie wybierz **5.6 usługi danych WCF** elementu.  
+2. W **Dodaj nowy element** okna dialogowego wybierz **Web** węzła, a następnie wybierz **5.6 usługi danych WCF** elementu.  
   
-3.  W **nazwa** tekstu wprowadź `NorthwindCustomers`, a następnie wybierz **Dodaj** przycisku.  
+3. W **nazwa** tekstu wprowadź `NorthwindCustomers`, a następnie wybierz **Dodaj** przycisku.  
   
-     Plik NorthwindCustomers.svc pojawi się w **Edytor kodu**.  
+    Plik NorthwindCustomers.svc pojawi się w **Edytor kodu**.  
   
-4.  W **Edytor kodu**, odszukaj pierwszy `TODO:` komentarz i Zastąp kod następującym kodem:  
+4. W **Edytor kodu**, odszukaj pierwszy `TODO:` komentarz i Zastąp kod następującym kodem:  
   
-     [!code-csharp[WCFDataServiceWalkthrough#1](../snippets/csharp/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/cs/northwindcustomers.svc.cs#1)]
-     [!code-vb[WCFDataServiceWalkthrough#1](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/vb/northwindcustomers.svc.vb#1)]  
+    [!code-csharp[WCFDataServiceWalkthrough#1](../snippets/csharp/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/cs/northwindcustomers.svc.cs#1)]
+    [!code-vb[WCFDataServiceWalkthrough#1](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/vb/northwindcustomers.svc.vb#1)]  
   
-5.  Zastąp komentarze w `InitializeService` programu obsługi zdarzeń z następującym kodem:  
+5. Zastąp komentarze w `InitializeService` programu obsługi zdarzeń z następującym kodem:  
   
-     [!code-csharp[WCFDataServiceWalkthrough#2](../snippets/csharp/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/cs/northwindcustomers.svc.cs#2)]
-     [!code-vb[WCFDataServiceWalkthrough#2](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/vb/northwindcustomers.svc.vb#2)]  
+    [!code-csharp[WCFDataServiceWalkthrough#2](../snippets/csharp/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/cs/northwindcustomers.svc.cs#2)]
+    [!code-vb[WCFDataServiceWalkthrough#2](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/vb/northwindcustomers.svc.vb#2)]  
   
-6.  Na pasku menu wybierz **debugowania**, **Rozpocznij bez debugowania** do uruchamiania usługi. Zostanie otwarte okno przeglądarki i pojawi się w nim schemat XML usługi.  
+6. Na pasku menu wybierz **debugowania**, **Rozpocznij bez debugowania** do uruchamiania usługi. Zostanie otwarte okno przeglądarki i pojawi się w nim schemat XML usługi.  
   
-7.  W **adres** paska, wprowadź `Customers` na końcu adresu URL pliku northwindcustomers.SVC, a następnie wybierz **ENTER** klucza.  
+7. W **adres** paska, wprowadź `Customers` na końcu adresu URL pliku northwindcustomers.SVC, a następnie wybierz **ENTER** klucza.  
   
-     Zostanie wyświetlona reprezentacja XML danych znajdujących się w tabeli Klienci.  
+    Zostanie wyświetlona reprezentacja XML danych znajdujących się w tabeli Klienci.  
   
-    > [!NOTE]
-    >  Czasami przeglądarka Internet Explorer błędnie interpretuje dane jako źródło danych RSS. Należy się upewnić, że opcja wyświetlania źródeł danych RSS jest wyłączona. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z odwołaniami usługi](../data-tools/troubleshooting-service-references.md).  
+   > [!NOTE]
+   >  Czasami przeglądarka Internet Explorer błędnie interpretuje dane jako źródło danych RSS. Należy się upewnić, że opcja wyświetlania źródeł danych RSS jest wyłączona. Aby uzyskać więcej informacji, zobacz [Rozwiązywanie problemów z odwołaniami usługi](../data-tools/troubleshooting-service-references.md).  
   
-8.  Zamknij okno przeglądarki.  
+8. Zamknij okno przeglądarki.  
   
- W następnych krokach utworzysz aplikację kliencką opartą na interfejsie Windows Forms, która będzie korzystała z usługi.  
+   W następnych krokach utworzysz aplikację kliencką opartą na interfejsie Windows Forms, która będzie korzystała z usługi.  
   
 ## <a name="creating-the-client-application"></a>Tworzenie aplikacji klienckiej  
  W celu utworzenia aplikacji klienckiej dodasz drugi projekt, dodasz odwołanie z projektu do usługi, skonfigurujesz źródło danych oraz utworzysz interfejs użytkownika, w którym będą wyświetlane dane z usługi.  
@@ -146,94 +146,94 @@ W tym instruktażu przedstawiono sposób tworzenia prostej [!INCLUDE[ss_data_ser
   
 #### <a name="to-create-the-client-application"></a>Aby utworzyć aplikację kliencką  
   
-1.  Na pasku menu wybierz plik, **Dodaj**, **nowy projekt**.  
+1. Na pasku menu wybierz plik, **Dodaj**, **nowy projekt**.  
   
-2.  W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#** węzeł i wybierz polecenie **Windows** węzła, a następnie wybierz polecenie  **Windows Forms aplikacji**.  
+2. W **nowy projekt** okna dialogowego rozwiń **języka Visual Basic** lub **Visual C#** węzeł i wybierz polecenie **Windows** węzła, a następnie wybierz polecenie  **Windows Forms aplikacji**.  
   
-3.  W **nazwa** tekstu wprowadź `NorthwindClient`, a następnie wybierz **OK** przycisku.  
+3. W **nazwa** tekstu wprowadź `NorthwindClient`, a następnie wybierz **OK** przycisku.  
   
-4.  W **Eksploratora rozwiązań**, wybierz **NorthwindClient** węzeł projektu.  
+4. W **Eksploratora rozwiązań**, wybierz **NorthwindClient** węzeł projektu.  
   
-5.  Na pasku menu wybierz **projektu**, **Ustaw jako projekt startowy**.  
+5. Na pasku menu wybierz **projektu**, **Ustaw jako projekt startowy**.  
   
- W tym kroku dodasz odwołanie do usługi [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] w projekcie sieci Web.  
+   W tym kroku dodasz odwołanie do usługi [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] w projekcie sieci Web.  
   
 #### <a name="to-add-a-service-reference"></a>Aby dodać odwołanie do usługi  
   
-1.  Na pasku menu wybierz **projektu**, **Dodaj odwołanie do usługi**.  
+1. Na pasku menu wybierz **projektu**, **Dodaj odwołanie do usługi**.  
   
-2.  W **Dodaj odwołanie do usługi** okna dialogowego wybierz **odnajdź** przycisku.  
+2. W **Dodaj odwołanie do usługi** okna dialogowego wybierz **odnajdź** przycisku.  
   
-     Adres URL usługi NorthwindCustomers pojawia się w **adres** pola.  
+    Adres URL usługi NorthwindCustomers pojawia się w **adres** pola.  
   
-3.  Wybierz **OK** przycisk, aby dodać odwołanie do usługi.  
+3. Wybierz **OK** przycisk, aby dodać odwołanie do usługi.  
   
- W tym kroku skonfigurujesz źródło danych w celu utworzenia powiązania danych z usługą.  
+   W tym kroku skonfigurujesz źródło danych w celu utworzenia powiązania danych z usługą.  
   
 #### <a name="to-enable-data-binding-to-the-service"></a>Aby utworzyć powiązanie danych z usługą  
   
-1.  Na pasku menu wybierz **widoku**, **Windows inne**, **źródeł danych**.  
+1. Na pasku menu wybierz **widoku**, **Windows inne**, **źródeł danych**.  
   
-2.  W **źródeł danych** oknie Wybierz **Dodaj nowe źródło danych** przycisku.  
+2. W **źródeł danych** oknie Wybierz **Dodaj nowe źródło danych** przycisku.  
   
-3.  Na **wybierz typ źródła danych** strony **Kreatora konfiguracji źródła danych**, wybierz **obiektu**, a następnie wybierz **dalej** przycisku .  
+3. Na **wybierz typ źródła danych** strony **Kreatora konfiguracji źródła danych**, wybierz **obiektu**, a następnie wybierz **dalej** przycisku .  
   
-4.  Na **wybierz obiekty danych** rozwiń **NorthwindClient** węzła, a następnie rozwiń węzeł **Northwindkliencka.servicereference1** węzła.  
+4. Na **wybierz obiekty danych** rozwiń **NorthwindClient** węzła, a następnie rozwiń węzeł **Northwindkliencka.servicereference1** węzła.  
   
-5.  Wybierz **klienta** pole wyboru, a następnie wybierz **Zakończ** przycisku.  
+5. Wybierz **klienta** pole wyboru, a następnie wybierz **Zakończ** przycisku.  
   
- W tym kroku utworzysz interfejs użytkownika, w którym będą wyświetlane dane z usługi.  
+   W tym kroku utworzysz interfejs użytkownika, w którym będą wyświetlane dane z usługi.  
   
 #### <a name="to-create-the-user-interface"></a>Aby utworzyć interfejs użytkownika  
   
-1.  W **źródeł danych** okna, otwórz menu skrótów dla **klientów** węzeł i wybierz polecenie **kopiowania**.  
+1. W **źródeł danych** okna, otwórz menu skrótów dla **klientów** węzeł i wybierz polecenie **kopiowania**.  
   
-2.  W **Form1.vb** lub **Form1.cs** projektancie formularzy, otwórz menu skrótów i wybierz **Wklej**.  
+2. W **Form1.vb** lub **Form1.cs** projektancie formularzy, otwórz menu skrótów i wybierz **Wklej**.  
   
-     A <xref:System.Windows.Forms.DataGridView> kontroli <xref:System.Windows.Forms.BindingSource> składnika, a <xref:System.Windows.Forms.BindingNavigator> składników są dodawane do formularza.  
+    A <xref:System.Windows.Forms.DataGridView> kontroli <xref:System.Windows.Forms.BindingSource> składnika, a <xref:System.Windows.Forms.BindingNavigator> składników są dodawane do formularza.  
   
-3.  Wybierz **CustomersDataGridView** kontroli, a następnie w polu **właściwości** zestaw okna **Dock** właściwości **wypełnienia**.  
+3. Wybierz **CustomersDataGridView** kontroli, a następnie w polu **właściwości** zestaw okna **Dock** właściwości **wypełnienia**.  
   
-4.  W **Eksploratora rozwiązań**, otwórz menu skrótów dla **Form1** węzeł i wybierz polecenie **Wyświetl kod** otwarcie edytora kodu i dodaj następujące instrukcje importu lub przy użyciu instrukcji w na początku pliku:  
+4. W **Eksploratora rozwiązań**, otwórz menu skrótów dla **Form1** węzeł i wybierz polecenie **Wyświetl kod** otwarcie edytora kodu i dodaj następujące instrukcje importu lub przy użyciu instrukcji w na początku pliku:  
   
-    ```vb  
-    Imports NorthwindClient.ServiceReference1  
-    ```  
+   ```vb  
+   Imports NorthwindClient.ServiceReference1  
+   ```  
   
-    ```csharp  
-    using NorthwindClient.ServiceReference1;  
-    ```  
+   ```csharp  
+   using NorthwindClient.ServiceReference1;  
+   ```  
   
-5.  Dodaj następujący kod do `Form1_Load` program obsługi zdarzeń:  
+5. Dodaj następujący kod do `Form1_Load` program obsługi zdarzeń:  
   
-    ```vb  
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load  
-            Dim proxy As New NorthwindEntities _  
-    (New Uri("http://localhost:53161/NorthwindCustomers.svc/"))  
-            Me.CustomersBindingSource.DataSource = proxy.Customers  
-        End Sub  
-    ```  
+   ```vb  
+   Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load  
+           Dim proxy As New NorthwindEntities _  
+   (New Uri("http://localhost:53161/NorthwindCustomers.svc/"))  
+           Me.CustomersBindingSource.DataSource = proxy.Customers  
+       End Sub  
+   ```  
   
-    ```csharp  
-    private void Form1_Load(object sender, EventArgs e)  
-    {  
-    NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));  
-    this.CustomersBindingSource.DataSource = proxy.Customers;  
-    }  
+   ```csharp  
+   private void Form1_Load(object sender, EventArgs e)  
+   {  
+   NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));  
+   this.CustomersBindingSource.DataSource = proxy.Customers;  
+   }  
   
-    ```  
+   ```  
   
-6.  W **Eksploratora rozwiązań**, otwórz menu skrótów pliku NorthwindCustomers.svc i wybierz **Pokaż w przeglądarce**. Zostanie otwarte okno przeglądarki Internet Explorer i pojawi się w nim schemat XML usługi.  
+6. W **Eksploratora rozwiązań**, otwórz menu skrótów pliku NorthwindCustomers.svc i wybierz **Pokaż w przeglądarce**. Zostanie otwarte okno przeglądarki Internet Explorer i pojawi się w nim schemat XML usługi.  
   
-7.  Skopiuj adres URL z paska adresu przeglądarki Internet Explorer.  
+7. Skopiuj adres URL z paska adresu przeglądarki Internet Explorer.  
   
-8.  W kodzie dodanym w kroku 4 Zaznacz `http://localhost:53161/NorthwindCustomers.svc/` i zastąp adres URL, który właśnie został skopiowany.  
+8. W kodzie dodanym w kroku 4 Zaznacz `http://localhost:53161/NorthwindCustomers.svc/` i zastąp adres URL, który właśnie został skopiowany.  
   
 9. Na pasku menu wybierz **debugowania**, **Rozpocznij debugowanie** do uruchomienia aplikacji. Zostaną wyświetlone informacje o kliencie.  
   
- Masz teraz działającą aplikację, która wyświetla listę klientów z usługi NorthwindCustomers. Jeśli chcesz udostępnić dodatkowe dane za pośrednictwem usługi, możesz zmodyfikować [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] celu uwzględnienia dodatkowych tabel z bazy danych Northwind.  
+   Masz teraz działającą aplikację, która wyświetla listę klientów z usługi NorthwindCustomers. Jeśli chcesz udostępnić dodatkowe dane za pośrednictwem usługi, możesz zmodyfikować [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] celu uwzględnienia dodatkowych tabel z bazy danych Northwind.  
   
- W następnym opcjonalnym kroku dowiesz się, jak filtrować dane zwracane przez usługę.  
+   W następnym opcjonalnym kroku dowiesz się, jak filtrować dane zwracane przez usługę.  
   
 ## <a name="adding-filtering-capabilities"></a>Dodawanie funkcji filtrowania  
  W tym kroku dostosujesz aplikację w taki sposób, aby filtrowała dane według miejscowości zamieszkania klienta.  

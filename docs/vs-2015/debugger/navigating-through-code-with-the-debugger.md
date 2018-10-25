@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91d99b6eaa33f3aae84ecd3510bf08fe194f101
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f37674f1899ab710d4612eb2b9cd89764ce74634
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898151"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Nawigowanie po kodzie za pomocą debugera
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,25 +63,25 @@ Zapoznaj się z poleceń i skrótów, przechodzenie do kodu w debugerze i który
   
  Poniżej przedstawiono niektóre szczegóły na temat zachowania **Step Into**:  
   
--   W wywołaniu funkcji zagnieżdżonej **Step Into** wchodzi do najgłębiej zagnieżdżonej funkcji. Jeśli używasz **Step Into** przy wywołaniu, takich jak `Func1(Func2())`, debuger wchodzi do funkcji `Func2`.  
+- W wywołaniu funkcji zagnieżdżonej **Step Into** wchodzi do najgłębiej zagnieżdżonej funkcji. Jeśli używasz **Step Into** przy wywołaniu, takich jak `Func1(Func2())`, debuger wchodzi do funkcji `Func2`.  
   
--   Debuger faktycznie przechodzi przez instrukcje kodu, a nie fizyczne wiersze. Na przykład `if` klauzuli mogą być zapisywane w jednym wierszu:  
+- Debuger faktycznie przechodzi przez instrukcje kodu, a nie fizyczne wiersze. Na przykład `if` klauzuli mogą być zapisywane w jednym wierszu:  
   
-    ```csharp  
-    int x = 42;  
-    string s = "Not answered";  
-    if( int x == 42) s = "Answered!";  
-    ```  
+  ```csharp  
+  int x = 42;  
+  string s = "Not answered";  
+  if( int x == 42) s = "Answered!";  
+  ```  
   
-    ```vb  
-    Dim x As Integer = 42  
-    Dim s As String = "Not answered"  
-    If x = 42 Then s = "Answered!"  
-    ```  
+  ```vb  
+  Dim x As Integer = 42  
+  Dim s As String = "Not answered"  
+  If x = 42 Then s = "Answered!"  
+  ```  
   
-     Gdy wchodzisz do tego wiersza debuger traktuje ten warunek jako jeden krok, a jego konsekwencję jako inny (w tym przykładzie, warunek jest spełniony).  
+   Gdy wchodzisz do tego wiersza debuger traktuje ten warunek jako jeden krok, a jego konsekwencję jako inny (w tym przykładzie, warunek jest spełniony).  
   
- Aby wizualnie śledzić stos wywołań, wchodząc krok do funkcji, zobacz [metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
+  Aby wizualnie śledzić stos wywołań, wchodząc krok do funkcji, zobacz [metody mapowania dla stosu wywołań podczas debugowania](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ##  <a name="BKMK_Step_over_Step_out"></a> Przejść przez kod, pomijanie funkcji  
  Podczas uruchamiania kodu w debugerze, często będą okazuje się, że nie jest wymagane zobaczyć, co dzieje się w określonej funkcji (nie dba o go lub ją znasz dzieła, takie jak kod dobrze przetestowanych biblioteki). Używać tych poleceń, aby przejść przez kod (funkcje nadal wykonywane, oczywiście, ale debuger pomija nad nimi).  
@@ -146,20 +146,20 @@ Zapoznaj się z poleceń i skrótów, przechodzenie do kodu w debugerze i który
   
 > [!CAUTION]
 >  Ustawienie następnej instrukcji powoduje, że licznik programu przechodzi bezpośrednio do nowej lokalizacji. Użyj tego polecenia ostrożnie:  
->   
->  -   Instrukcje między stary i nowymi punktami wykonania nie są wykonywane.  
-> -   Jeśli przeniesiesz punkt wykonania Wstecz, instrukcje interwencyjne nie zostaną cofnięte.  
-> -   Przenoszenie następnej instrukcji do innej funkcji lub zakresu zwykle powoduje uszkodzenie stosu wywołań, powodując błąd lub wyjątek. Jeśli spróbujesz przenieść następną instrukcję do innego zakresu, debuger otwiera okno dialogowe z ostrzeżeniem i daje możliwość anulowania operacji. W języku Visual Basic nie można przenieść następnej instrukcji do innego zakresu lub funkcji.  
-> -   W natywnym kodzie C++ zostały włączone, kontrole czasu wykonywania ustawienie następnej instrukcji może spowodować wyjątek zgłaszany, gdy wykonywanie osiągnie koniec metody.  
-> -   Gdy Edytuj i Kontynuuj jest włączona, **Ustaw następną instrukcję** kończy się niepowodzeniem, jeśli zostały wprowadzone zmiany, których Edytuj i Kontynuuj nie może od razu ponownie zamapować. Może to występować, na przykład, jeśli edytowano kod wewnątrz bloku catch. W takim przypadku zobaczysz komunikat o błędzie informujący o tym, że ta operacja nie jest obsługiwane.  
-  
+> 
+> - Instrukcje między stary i nowymi punktami wykonania nie są wykonywane.  
+>   -   Jeśli przeniesiesz punkt wykonania Wstecz, instrukcje interwencyjne nie zostaną cofnięte.  
+>   -   Przenoszenie następnej instrukcji do innej funkcji lub zakresu zwykle powoduje uszkodzenie stosu wywołań, powodując błąd lub wyjątek. Jeśli spróbujesz przenieść następną instrukcję do innego zakresu, debuger otwiera okno dialogowe z ostrzeżeniem i daje możliwość anulowania operacji. W języku Visual Basic nie można przenieść następnej instrukcji do innego zakresu lub funkcji.  
+>   -   W natywnym kodzie C++ zostały włączone, kontrole czasu wykonywania ustawienie następnej instrukcji może spowodować wyjątek zgłaszany, gdy wykonywanie osiągnie koniec metody.  
+>   -   Gdy Edytuj i Kontynuuj jest włączona, **Ustaw następną instrukcję** kończy się niepowodzeniem, jeśli zostały wprowadzone zmiany, których Edytuj i Kontynuuj nie może od razu ponownie zamapować. Może to występować, na przykład, jeśli edytowano kod wewnątrz bloku catch. W takim przypadku zobaczysz komunikat o błędzie informujący o tym, że ta operacja nie jest obsługiwane.  
+> 
 > [!NOTE]
 >  W kodzie zarządzanym nie można przenieść następnej instrukcji w następujących warunkach:  
->   
->  -   Następna instrukcja znajduje się w innej metodzie niż bieżąca instrukcja.  
-> -   Debugowanie zostało uruchomione przy użyciu Just-In-Time debugowania.  
-> -   Odwijanie stosu wywołań jest w toku.  
-> -   Został zgłoszony wyjątek System.StackOverflowException lub System.Threading.ThreadAbortException.  
+> 
+> - Następna instrukcja znajduje się w innej metodzie niż bieżąca instrukcja.  
+>   -   Debugowanie zostało uruchomione przy użyciu Just-In-Time debugowania.  
+>   -   Odwijanie stosu wywołań jest w toku.  
+>   -   Został zgłoszony wyjątek System.StackOverflowException lub System.Threading.ThreadAbortException.  
   
  Nie można ustawić następnej instrukcji, gdy aplikacja jest aktywnie uruchomiona. Aby ustawić następną instrukcję, debuger musi być w trybie przerwania.  
   

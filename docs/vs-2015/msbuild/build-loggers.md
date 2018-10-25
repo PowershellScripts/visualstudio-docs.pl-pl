@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 855160fa1e1f02bbebecaa8ddc522bb92f3f5bd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbf27388013b71945879537dffff1e53a7314e7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226439"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853249"
 ---
 # <a name="build-loggers"></a>Rejestratory kompilacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ Rejestratory umożliwiają umożliwiające dostosowanie dane wyjściowe kompilac
   
  Istnieją dwie metody, których można użyć podczas implementowania Rejestrator:  
   
--   Implementowanie <xref:Microsoft.Build.Framework.ILogger> interfejs bezpośrednio.  
+- Implementowanie <xref:Microsoft.Build.Framework.ILogger> interfejs bezpośrednio.  
   
--   Pochodną klasy z klasy Pomocnika <xref:Microsoft.Build.Utilities.Logger>, który jest zdefiniowany w zestawie Microsoft.Build.Utilities.dll. <xref:Microsoft.Build.Utilities.Logger> implementuje <xref:Microsoft.Build.Framework.ILogger> i zawiera domyślne implementacje niektórych <xref:Microsoft.Build.Framework.ILogger> elementów członkowskich.  
+- Pochodną klasy z klasy Pomocnika <xref:Microsoft.Build.Utilities.Logger>, który jest zdefiniowany w zestawie Microsoft.Build.Utilities.dll. <xref:Microsoft.Build.Utilities.Logger> implementuje <xref:Microsoft.Build.Framework.ILogger> i zawiera domyślne implementacje niektórych <xref:Microsoft.Build.Framework.ILogger> elementów członkowskich.  
   
- W tym temacie wyjaśniono, jak napisać prosty rejestratora, która pochodzi od klasy <xref:Microsoft.Build.Utilities.Logger>, i wyświetla komunikaty na konsoli w odpowiedzi na niektóre zdarzenia kompilacji.  
+  W tym temacie wyjaśniono, jak napisać prosty rejestratora, która pochodzi od klasy <xref:Microsoft.Build.Utilities.Logger>, i wyświetla komunikaty na konsoli w odpowiedzi na niektóre zdarzenia kompilacji.  
   
 ## <a name="registering-for-events"></a>Rejestracja nasłuchiwania zdarzeń  
  Rejestrator ma na celu zbierania informacji o postępie kompilacji, zgłoszonej przez aparat kompilacji, a następnie zgłaszanie tych informacji w wygodny sposób. Należy zastąpić wszystkie rejestratory <xref:Microsoft.Build.Utilities.Logger.Initialize%2A> metoda, która jest, gdy rejestruje rejestratora dla zdarzeń. W tym przykładzie rejestruje rejestratora <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>, <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted>, i <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> zdarzenia.  

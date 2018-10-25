@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c63936fb78d2de58a9ae1c937a9f8f536a8714c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c117f6864aadd7c981aa2b89302c06ccfd6c9768
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256987"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923787"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadane elementu w przetwarzaniu wsadowym zadań
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49256987"
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] ma możliwość podzielić listy elementów na różnych kategorii lub serii, na podstawie metadanych elementu i uruchomić zadanie jeden raz z każdej partii. Może być mylące zrozumieć, dokładnie jakie elementy są przekazywany przy użyciu której usługi batch. W tym temacie omówiono następujące typowe scenariusze, które obejmują przetwarzanie wsadowe.  
   
--   Podział listy elementów w partie  
+- Podział listy elementów w partie  
   
--   Dzielenie kilka list elementów na partie  
+- Dzielenie kilka list elementów na partie  
   
--   Przetwarzanie wsadowe jeden element w czasie  
+- Przetwarzanie wsadowe jeden element w czasie  
   
--   Filtrowanie listy elementów  
+- Filtrowanie listy elementów  
   
- Więcej informacji na temat przetwarzania wsadowego za pomocą [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], zobacz [przetwarzania wsadowego](../msbuild/msbuild-batching.md).  
+  Więcej informacji na temat przetwarzania wsadowego za pomocą [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], zobacz [przetwarzania wsadowego](../msbuild/msbuild-batching.md).  
   
 ## <a name="dividing-an-item-list-into-batches"></a>Podział listy elementów w partie  
  Przetwarzanie wsadowe umożliwia podzielić listy elementów na różnych partii na podstawie metadanych elementu i przekazać każdej partii w zadanie oddzielnie. Jest to przydatne do tworzenia zestawów satelickich.  

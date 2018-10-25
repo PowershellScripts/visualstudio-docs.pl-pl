@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4240a3ba82f3787c1e2e2da9f14c1cee5a8d177e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1bb9348c0dfae477d0c306868991acd13e7a487
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121108"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856057"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
-Ta metoda pobiera obiekt, który umożliwia wyliczenie listy portów utrwalonych.  
+Ta metoda pobiera obiekt, który umożliwia wyliczenie listę portów utrwalonych.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,16 +43,16 @@ int EnumPersistedPorts(
   
 #### <a name="parameters"></a>Parametry  
  `PortNames`  
- [in] A [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) strukturę, która zawiera listę nazw portu odnajdujący i zwracający między utrwalonego portów. Tylko te utrwalonego porty o tych nazwach, zostaną zwrócone.  
+ [in] A [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) strukturę, która zawiera listę nazw portu odnajdujący i zwracający między utrwalonych portów. Zostaną zwrócone tylko tych utrwalonych portów przy użyciu tych nazw.  
   
  `ppEnum`  
  [out] Obiekt, który implementuje [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) interfejsu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Utrwalonych porty są ładowane podczas port dostawcy jest wystąpienie zostało utworzone i zapisywana, gdy dostawca portu zostanie zniszczony.  
+ Utrwalonych porty są ładowane, gdy dostawcy portu jest tworzone i zapisywane, kiedy niszczony jest dostawcy portu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)   

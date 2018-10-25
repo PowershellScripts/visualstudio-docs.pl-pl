@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa525f50a0ffd18f136cfa23ae05a8e2ba193d0d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0a2824eff43103ee2f8c82fba6131325def0c8ea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912726"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 Tworzy moduł wyliczający dla konstruktorów dla tej klasy.  
@@ -43,18 +43,18 @@ int EnumConstructors(
   
 #### <a name="parameters"></a>Parametry  
  `cMatch`  
- [in] Wartość z zakresu od [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) wyliczenie określający typ konstruktorów do wyliczenia.  
+ [in] Wartość z zakresu od [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) wyliczenie, który określa typ konstruktorów do wyliczenia.  
   
  `ppEnum`  
- [out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) obiekt reprezentujący listę konstruktorów. Zwraca wartość null, jeśli nie ma konstruktorów.  
+ [out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) obiekt reprezentujący listę konstruktorów. Zwraca wartość null, jeśli nie ma żadnych konstruktorów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK lub zwraca wartości S_FALSE, jeśli nie ma konstruktorów. W przeciwnym razie zwraca kod błędu.  
+ Jeśli to się powiedzie, zwraca wartość S_OK lub zwraca wartość S_FALSE, jeśli nie ma żadnych konstruktorów. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Każdy element wyliczenia jest [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) Obiekt opisujący konstruktora.  
+ Każdy element wyliczenia jest [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) Obiekt opisujący metodę konstruktora.  
   
- Lista konstruktorów zwykle nie ma domyślnych konstruktorów dostarczonych przez kompilator.  
+ Lista konstruktory zwykle nie ma konstruktory domyślne, dostarczone przez kompilator.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   

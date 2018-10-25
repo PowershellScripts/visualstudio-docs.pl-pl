@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dc83fc859e99a86b1057a02b7cfb9ff2e1232af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635528"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926205"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Korzystanie z atrybutu DebuggerDisplay
 <xref:System.Diagnostics.DebuggerDisplayAttribute> Kontroluje sposób wyświetlania obiektu, właściwość lub pole w oknach zmiennych debugera. Ten atrybut może dotyczyć typy delegatów, właściwości, pola i zestawy.  
@@ -36,7 +36,7 @@ ms.locfileid: "42635528"
  W poniższej tabeli przedstawiono niektóre możliwości wykorzystania `DebuggerDisplay` atrybutu i przykładowe dane wyjściowe.  
   
 |Atrybut|Dane wyjściowe znajdujących się w kolumnie wartości|  
-|---------------|------------------------------------------------|  
+|---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Używane w danym typie z polami `x` i `y`.|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`Składnia parametru może się różnić między językami. W związku z tym jej używać z rozwagą.|`String value is [5, 6, 6]`|  
   
@@ -65,13 +65,13 @@ csc /t:library autoexp.cs
   
  Używanie wyrażeń w DebuggerDisplay może prowadzić do następujących problemów:  
   
--   Ocenianie wyrażenia jest najbardziej kosztownych operacji w debugerze i wyrażenie jest obliczane na każdym razem, gdy jest on wyświetlany. Może to spowodować problemy z wydajnością w krokowe wykonywanie kodu. Na przykład wyrażenie złożone, który służy do wyświetlania wartości w kolekcji lub na liście może być bardzo wolno po dużą liczbę elementów.  
+- Ocenianie wyrażenia jest najbardziej kosztownych operacji w debugerze i wyrażenie jest obliczane na każdym razem, gdy jest on wyświetlany. Może to spowodować problemy z wydajnością w krokowe wykonywanie kodu. Na przykład wyrażenie złożone, który służy do wyświetlania wartości w kolekcji lub na liście może być bardzo wolno po dużą liczbę elementów.  
   
--   Wyrażenia są obliczane przez ewaluatora wyrażeń języka bieżącej ramki stosu a nie przez ewaluatora języka, w którym został zapisany wyrażenia. Może to spowodować nieprzewidywalne skutki, gdy języki są różne.  
+- Wyrażenia są obliczane przez ewaluatora wyrażeń języka bieżącej ramki stosu a nie przez ewaluatora języka, w którym został zapisany wyrażenia. Może to spowodować nieprzewidywalne skutki, gdy języki są różne.  
   
--   Obliczenia wyrażenia można zmienić stanu aplikacji. Na przykład wyrażenie, które ustawia wartości właściwości mutuje wartość właściwości wykonywanie kodu.  
+- Obliczenia wyrażenia można zmienić stanu aplikacji. Na przykład wyrażenie, które ustawia wartości właściwości mutuje wartość właściwości wykonywanie kodu.  
   
- Jednym ze sposobów, aby ograniczyć możliwe problemy obliczania wyrażenia jest utworzenie właściwości prywatnej, który wykonuje operację i zwraca ciąg. Atrybut DebuggerDisplay następnie wyświetlić wartość tej właściwości prywatnej. Poniższy przykład implementuje tego wzorca:  
+  Jednym ze sposobów, aby ograniczyć możliwe problemy obliczania wyrażenia jest utworzenie właściwości prywatnej, który wykonuje operację i zwraca ciąg. Atrybut DebuggerDisplay następnie wyświetlić wartość tej właściwości prywatnej. Poniższy przykład implementuje tego wzorca:  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

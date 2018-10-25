@@ -15,12 +15,12 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d45431d2d6757169c225136620124d94a6e75dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7a421ba2278c177eeb0fdba8571497e50ba71b39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894238"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Dodawanie elementów do okien dialogowych Dodawanie nowego elementu
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,15 +72,15 @@ Proces dodawania elementów do **Dodaj nowy element** okno dialogowe zaczyna si�
 ## <a name="filtering-project-items"></a>Filtrowanie elementów projektu  
  `IVsFilterAddProjectItemDlg2` udostępnia filtrowania elementów drzewa (lewe okienko) i pliki projektu (w okienku po prawej stronie) w następujący sposób:  
   
--   Na podstawie zlokalizowanych nazw (napisy wyświetlane w oknie dialogowym, który jest zawarty w pliku .vsdir) udzielane przez `IVsFilterAddProjectItemDlg`.  
+- Na podstawie zlokalizowanych nazw (napisy wyświetlane w oknie dialogowym, który jest zawarty w pliku .vsdir) udzielane przez `IVsFilterAddProjectItemDlg`.  
   
--   Według rzeczywistych nazw plików i folderów na dysku (niezlokalizowana — nie plików .vsdir) dostarczonych przez `IVsFilterAddProjectItemDlg`.  
+- Według rzeczywistych nazw plików i folderów na dysku (niezlokalizowana — nie plików .vsdir) dostarczonych przez `IVsFilterAddProjectItemDlg`.  
   
--   Według kategorii, dostarczone przez `IVsFilterAddProjectItemDlg2`.  
+- Według kategorii, dostarczone przez `IVsFilterAddProjectItemDlg2`.  
   
- Aby filtrować według kategorii, podaj ciąg kategorii elementu w pliku .vsdir, takie jak "Formularza sieci Web" lub "Element klienta" w języku Visual Basic. Kodu pola dialogowego następnie pobiera klasyfikacji kategorii z pliku .vsdir i przekazuje je do Ciebie. Możesz następnie przekazać te informacje do implementacji `IVsFilterAddProjectItemDlg2` do filtrowania **Dodaj nowy element** okno dialogowe według kategorii. Można również filtrować elementy dla stron sieci Web lub jako przypadków aplikacji Win32 klienta. Ponadto możesz zidentyfikować [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] oznaczone elementy jako Microsoft Foundation Classes (MFC) lub aktywnego szablonu library (ATL) elementów. Po zidentyfikowaniu tych elementów, system projektu, można zdefiniować własne klasyfikacje, aby system można filtrować na podstawie kategorii i klasyfikacji.  
+  Aby filtrować według kategorii, podaj ciąg kategorii elementu w pliku .vsdir, takie jak "Formularza sieci Web" lub "Element klienta" w języku Visual Basic. Kodu pola dialogowego następnie pobiera klasyfikacji kategorii z pliku .vsdir i przekazuje je do Ciebie. Możesz następnie przekazać te informacje do implementacji `IVsFilterAddProjectItemDlg2` do filtrowania **Dodaj nowy element** okno dialogowe według kategorii. Można również filtrować elementy dla stron sieci Web lub jako przypadków aplikacji Win32 klienta. Ponadto możesz zidentyfikować [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] oznaczone elementy jako Microsoft Foundation Classes (MFC) lub aktywnego szablonu library (ATL) elementów. Po zidentyfikowaniu tych elementów, system projektu, można zdefiniować własne klasyfikacje, aby system można filtrować na podstawie kategorii i klasyfikacji.  
   
- W przypadku zaimplementowania tej funkcji filtru ma mapowania tabeli każdego elementu, który ma być ukryty. Można po prostu klasyfikowania elementów na typy i umieścić klasyfikacje w .vsdir plik lub pliki. Następnie można ukryć elementy, które mają określoną klasyfikację, implementując interfejs. W ten sposób można zapewnić elementów w **Dodaj nowy element** dynamiczne okno dialogowe na podstawie stanu w projekcie.  
+  W przypadku zaimplementowania tej funkcji filtru ma mapowania tabeli każdego elementu, który ma być ukryty. Można po prostu klasyfikowania elementów na typy i umieścić klasyfikacje w .vsdir plik lub pliki. Następnie można ukryć elementy, które mają określoną klasyfikację, implementując interfejs. W ten sposób można zapewnić elementów w **Dodaj nowy element** dynamiczne okno dialogowe na podstawie stanu w projekcie.  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   

@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81b90a43f1de02ba4d195f43b78ee1179c562eff
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f30c76dfd0c2f9dafa4844f815ce2506e70346f3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111198"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917937"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
-Zwraca interfejs, który reprezentuje obiekt zarządzany.  
+Zwraca interfejs, który reprezentuje obiektu zarządzanego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int GetManagedObject(
   
 #### <a name="parameters"></a>Parametry  
  `ppManagedObject`  
- [out] Zwraca interfejs, który reprezentuje obiekt zarządzany.  
+ [out] Zwraca interfejs, który reprezentuje obiektu zarządzanego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Interfejs zwracane przez tę metodę można wykonać zapytania, dla dowolnego interfejsu zaimplementowany przez klasę zarządzanych, zezwalając na jego metody do wywołania.  
+ Interfejs zwrócone w wyniku tej metody można wykonywać zapytania, dla dowolnego interfejsu implementowany przez klasy zarządzanej, dzięki czemu jego metody do wywołania.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

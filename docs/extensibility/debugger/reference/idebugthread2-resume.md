@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f51fdb05fb44a23227a1a35fd6504f2d18aa804
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f41f26c824a779133a335c0d3d5080373b791d06
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121420"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920992"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
-Wznawia wykonywanie wątku.  
+Wznawia wykonanie wątku.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,16 +41,16 @@ int Resume (
   
 #### <a name="parameters"></a>Parametry  
  `pdwSuspendCount`  
- [out] Zwraca liczbę wstrzymania po wykonaniu operacji wznowienia.  
+ [out] Zwraca wstrzymania liczenia przez operację wznawiania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Każdy wywołanie zmniejsza to metoda liczba zawieszenia aż osiągnie 0 po tym czasie, wykonanie faktycznie zostanie wznowione. Ten licznik wstrzymania jest wyświetlany w **wątków** okna debugowania.  
+ Każdy wywołanie tej metody zmniejsza wstrzymania liczenia aż do napotkania 0 w tym czasie faktycznie wznowiono wykonywanie. Ten licznik Wstrzymaj jest wyświetlana w **wątków** okna debugowania.  
   
- Dla każdego wywołania tej metody, musi być poprzednie wywołanie [zawieszenia](../../../extensibility/debugger/reference/idebugthread2-suspend.md) metody. Liczba Wstrzymaj Określa, ile razy `IDebugThread2::Suspend` wykonanej do tej pory zostanie wywołana metoda.  
+ Dla każdego wywołania tej metody musi być poprzednie wywołanie [Wstrzymaj](../../../extensibility/debugger/reference/idebugthread2-suspend.md) metody. Wstrzymania liczenia Określa, ile razy `IDebugThread2::Suspend` do tej pory została wywołana metoda.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [Wstrzymaj](../../../extensibility/debugger/reference/idebugthread2-suspend.md)
+ [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md)

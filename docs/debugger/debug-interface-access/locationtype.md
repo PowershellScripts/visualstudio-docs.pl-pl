@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fb46eb1c7477f93ed63dfc4424d881886c8d0c8f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e816ac9dca3c70e88ae023b4fda4edf0b99f9c96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480007"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872099"
 ---
 # <a name="locationtype"></a>LocationType
-Wskazuje typ lokalizacji informacji zawartych w symbolu.  
+Wskazuje rodzaj informacji o lokalizacji zawarte w symbolu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,10 +51,10 @@ enum LocationType {
  Lokalizacja jest statyczne.  
   
  `LocIsTLS`  
- Lokalizacja jest lokalny magazyn wątków.  
+ Lokalizacja znajduje się w pamięci lokalnej wątku.  
   
  `LocIsRegRel`  
- Lokalizacja jest względna rejestru.  
+ Lokalizacja jest powiązane z wątkiem rejestru.  
   
  `LocIsThisRel`  
  Lokalizacja jest `this`— względna.  
@@ -66,13 +66,13 @@ enum LocationType {
  Lokalizacja jest polem bitowym.  
   
  `LocIsSlot`  
- Lokalizacja jest miejscem Microsoft języka pośredniego (MSIL).  
+ Lokalizacja jest miejsce Microsoft Intermediate Language (MSIL).  
   
  `LocIsIlRel`  
- Lokalizacja jest względna MSIL.  
+ Lokalizacja jest powiązane z wątkiem MSIL.  
   
  `LocInMetaData`  
- Lokalizacja jest w metadanych.  
+ Lokalizacja znajduje się w metadanych.  
   
  `LocIsConstant`  
  Lokalizacja jest wartością stałą.  
@@ -81,9 +81,9 @@ enum LocationType {
  Liczba typów lokalizacji, w tym wyliczeniu.  
   
 ## <a name="remarks"></a>Uwagi  
- Właściwości dostępne dla [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) interfejsu zależą od lokalizacji symbolu w pliku obrazu. Aby uzyskać więcej informacji, zobacz [lokalizacje symboli](../../debugger/debug-interface-access/symbol-locations.md).  
+ Właściwości dostępne dla [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) interfejsu są zależne od lokalizacji symbolu w pliku obrazu. Aby uzyskać więcej informacji, zobacz [lokalizacje symboli](../../debugger/debug-interface-access/symbol-locations.md).  
   
- To wyliczenie wartości są zwracane przez wywołanie do [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) metody.  
+ Wartości w tym wyliczeniu są zwracane przez wywołanie [idiasymbol::get_locationtype —](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: cvconst.h  
@@ -91,5 +91,5 @@ enum LocationType {
 ## <a name="see-also"></a>Zobacz też  
  [Wyliczenia i struktury](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
+ [Idiasymbol::get_locationtype —](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)   
  [Lokalizacje symboli](../../debugger/debug-interface-access/symbol-locations.md)

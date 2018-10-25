@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 353d9a39a299c0803bb4f27843fcae43375105cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3be45a598535d81e23cd32ff4d30045ae2ac8dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891729"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Korzystanie z okna stosów równoległych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,21 +99,21 @@ ms.locfileid: "49182177"
 ## <a name="tasks-view"></a>Widok zadania  
  Jeśli aplikacja wykorzystuje <xref:System.Threading.Tasks.Task?displayProperty=fullName> obiektów (kod zarządzany) lub `task_handle` obiektów (kodu natywnego) do wyrażania równoległości umożliwia pola kombi na pasku narzędzi okna stosów równoległych przełączyć się do *widoku zadania*. Widok zadania przedstawia stosy wywołań zadań zamiast wątków. Widok zadania różni się od widoku wątków w następujący sposób:  
   
--   Stosy wywołań wątków, które nie zostały uruchomione zadania nie są wyświetlane.  
+- Stosy wywołań wątków, które nie zostały uruchomione zadania nie są wyświetlane.  
   
--   Stosy wywołań wątków, które są uruchomione zadania wizualnie są usuwane u góry i u dołu, aby wyświetlić najbardziej istotnych ramek, które odnoszą się do zadań.  
+- Stosy wywołań wątków, które są uruchomione zadania wizualnie są usuwane u góry i u dołu, aby wyświetlić najbardziej istotnych ramek, które odnoszą się do zadań.  
   
--   W przypadku wielu zadań w jednym wątku, stosy wywołań tych zadań są dzielone na osobne węzły.  
+- W przypadku wielu zadań w jednym wątku, stosy wywołań tych zadań są dzielone na osobne węzły.  
   
- Na poniższej ilustracji przedstawiono równoległych stosów widoku zadania po prawej stronie i odpowiedniego widoku wątków po lewej stronie.  
+  Na poniższej ilustracji przedstawiono równoległych stosów widoku zadania po prawej stronie i odpowiedniego widoku wątków po lewej stronie.  
   
- ![Zadania widoku okna stosów równoległych](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
+  ![Zadania widoku okna stosów równoległych](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
   
- Aby wyświetlić cały stos wywołań, wystarczy przełączyć do widoku wątków przez kliknięcie prawym przyciskiem myszy ramkę stosu, a następnie klikając polecenie **przejdź do wątku**.  
+  Aby wyświetlić cały stos wywołań, wystarczy przełączyć do widoku wątków przez kliknięcie prawym przyciskiem myszy ramkę stosu, a następnie klikając polecenie **przejdź do wątku**.  
   
- Zgodnie z opisem w tabeli wcześniej, ustawiając kursor w kontekście metody, można przeglądać dodatkowe informacje. Na poniższej ilustracji przedstawiono informacje w etykietce narzędzia, widok wątki i widoku zadań.  
+  Zgodnie z opisem w tabeli wcześniej, ustawiając kursor w kontekście metody, można przeglądać dodatkowe informacje. Na poniższej ilustracji przedstawiono informacje w etykietce narzędzia, widok wątki i widoku zadań.  
   
- ![Etykietki narzędzi w okna stosów równoległych](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
+  ![Etykietki narzędzi w okna stosów równoległych](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>Widok — metoda  
  Widok wątków lub widoku zadań można przestawiać wykresu na bieżącą metodę, klikając ikonę widoku metody, na pasku narzędzi. Metoda widoku wyświetlane są w skrócie wszystkie metody we wszystkich wątkach, które są wywoływane przy bieżącej metody lub wywołania. Na poniższej ilustracji przedstawiono widok wątków, a także wygląd te same informacje w widoku metody.  

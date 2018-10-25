@@ -13,12 +13,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9883b266e74db115c57f0a7cc245889ed59a599d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5ab2ca3e0f7d8f7006177f89c6850ce9882681a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848543"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Włącz testowanie kodowanego interfejsu użytkownika dla Twoich kontrolek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Kontrolki można łatwo przetestować w przypadku zastosowania pomocy techniczne
   
  **W tym temacie:**  
   
-1.  [Obsługuje rekordu i odtwarzania oraz właściwości sprawdzania poprawności poprzez implementację ułatwień dostępu](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
+1. [Obsługuje rekordu i odtwarzania oraz właściwości sprawdzania poprawności poprzez implementację ułatwień dostępu](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
   
-2.  [Obsługuje sprawdzanie poprawności właściwości niestandardowe poprzez implementację dostawcy właściwości](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
+2. [Obsługuje sprawdzanie poprawności właściwości niestandardowe poprzez implementację dostawcy właściwości](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
   
-3.  [Obsługuje generowanie kodu poprzez implementację klasę umożliwiającą dostęp do właściwości niestandardowe](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
+3. [Obsługuje generowanie kodu poprzez implementację klasę umożliwiającą dostęp do właściwości niestandardowe](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
   
-4.  [Obsługuje świadomie akcji przez zaimplementowanie filtr akcji](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
+4. [Obsługuje świadomie akcji przez zaimplementowanie filtr akcji](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
   
- ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
+   ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a> Obsługuje rekordu i odtwarzania oraz właściwości sprawdzania poprawności poprzez implementację ułatwień dostępu  
  Konstruktor kodowanego testu interfejsu użytkownika przechwytuje informacji na temat formantów napotka podczas rejestrowania i następnie generuje kod w celu odtworzenia tej sesji. Jeśli formant nie obsługuje ułatwień dostępu, kodowanego testu interfejsu użytkownika będzie przechwytywać akcje (takie jak kliknięcia myszą), za pomocą współrzędnych ekranu. Podczas odtwarzania testu wygenerowany kod będzie wystawiać tych kliknięć myszą, w tym samym współrzędne ekranu. Jeśli formant znajduje się w innym miejscu na ekranie, podczas odtwarzania testu, wygenerowany kod nie będzie można wykonać tę akcję dla formantu. Może to spowodować błędy, jeśli test jest odtwarzany na ekranach o różnych konfiguracjach, w różnych środowiskach lub po została zmieniona na układ interfejsu użytkownika.  

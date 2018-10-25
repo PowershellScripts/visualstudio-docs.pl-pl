@@ -12,23 +12,23 @@ ms.topic: article
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: douge
-ms.openlocfilehash: ad93bfe700c881977130ba6651bd3e271207a56f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d10d0e49389b43a288826adf2043c603aeff36a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269311"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925841"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Porady: ręczne pakietu rozszerzenia (VSIX wdrożenia)
 Możesz utworzyć pakiet VSIX do opakowania [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozszerzeń dla wdrożenia. Istnieją trzy sposoby, aby utworzyć pakiet:  
   
--   Utwórz projekt VSIX pakietu przy użyciu jednego z szablonów rozszerzeń, które są zawarte w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zestawu SDK. Jest to opcja najłatwiejsza, w przypadku większości scenariuszy.  
+- Utwórz projekt VSIX pakietu przy użyciu jednego z szablonów rozszerzeń, które są zawarte w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zestawu SDK. Jest to opcja najłatwiejsza, w przypadku większości scenariuszy.  
   
--   Zawijanie dane wyjściowe projektu rozszerzenia w pustą [projekt VSIX](../extensibility/vsix-project-template.md). Zaleca się tej opcji dla szablonów, nieobsługiwanych zestawów i typów niestandardowych.  
+- Zawijanie dane wyjściowe projektu rozszerzenia w pustą [projekt VSIX](../extensibility/vsix-project-template.md). Zaleca się tej opcji dla szablonów, nieobsługiwanych zestawów i typów niestandardowych.  
   
--   Ręcznie utworzyć pakiet VSIX. Zaleca się tej opcji tylko wtedy, gdy nie są dostępne dwie opcje.  
+- Ręcznie utworzyć pakiet VSIX. Zaleca się tej opcji tylko wtedy, gdy nie są dostępne dwie opcje.  
   
- W tym dokumencie opisano trzecią opcję.  
+  W tym dokumencie opisano trzecią opcję.  
   
 ## <a name="creating-a-vsix-package"></a>Tworzenie pakietu VSIX  
  Aby ręcznie pakiet rozszerzenia, Dodaj plik extension.manifest i pliku [Content_Types] .xml do projektu rozszerzenia, umieść je w pliku skompresowanym wraz z danych wyjściowych kompilacji, a tak, że ma rozszerzenie nazwy pliku .vsix, Zmień nazwę skompresowanego pliku. Rozszerzenie do umieszczenia w pakiecie musi być typu, który jest obsługiwany przez [schematu VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  

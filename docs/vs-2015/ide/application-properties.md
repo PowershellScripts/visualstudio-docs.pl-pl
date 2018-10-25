@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b74279373a11a13fd7e2e3fc47b2eb57e35d981
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a89832fe70e2e19085e8006646de5370b6019cbc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209017"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848621"
 ---
 # <a name="application-properties"></a>Właściwości aplikacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,31 +32,31 @@ Można ustawić właściwości ogólne aplikacji w Visual Basic, C# i F # aplika
   
  Można wykonywać następujące zadania w **aplikacji** okienka:  
   
--   Określ informacje o zestawie  
+- Określ informacje o zestawie  
   
--   Określ ekran powitalny dla aplikacji  
+- Określ ekran powitalny dla aplikacji  
   
--   Określanie zdarzeń na poziomie aplikacji  
+- Określanie zdarzeń na poziomie aplikacji  
   
--   Zmień nazwę zestawu  
+- Zmień nazwę zestawu  
   
--   Zmienianie przestrzeni nazw dla aplikacji  
+- Zmienianie przestrzeni nazw dla aplikacji  
   
--   Zmień typ aplikacji  
+- Zmień typ aplikacji  
   
--   Zmień obiekt początkowy dla aplikacji  
+- Zmień obiekt początkowy dla aplikacji  
   
--   Określanie ikony aplikacji  
+- Określanie ikony aplikacji  
   
--   Włączanie stylów wizualnych Windows XP  
+- Włączanie stylów wizualnych Windows XP  
   
--   Określ zachowanie wystąpień aplikacji  
+- Określ zachowanie wystąpień aplikacji  
   
--   Zezwolenie na uwierzytelnianie użytkownika niestandardowego  
+- Zezwolenie na uwierzytelnianie użytkownika niestandardowego  
   
--   Określ zachowanie zamykania aplikacji  
+- Określ zachowanie zamykania aplikacji  
   
- Zadania dostępne dla aplikacji są zależne od języka programowania, używany.  
+  Zadania dostępne dla aplikacji są zależne od języka programowania, używany.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Instrukcje: Określanie ikony aplikacji (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  

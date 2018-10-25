@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90afe268a68d6a72e4444dd78a5748d30ddf7b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ddd3f6f3fe06b0a02a1df992561428aa04895748
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902519"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
-Pobiera listę konteksty kodu dla danej pozycji w pliku źródłowym.  
+Pobiera listę konteksty kodu dla danego stanowiska w pliku źródłowym.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,16 +43,16 @@ int EnumCodeContexts(
   
 #### <a name="parameters"></a>Parametry  
  `pDocPos`  
- [in] [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) obiekt reprezentujący abstrakcyjny pozycji w pliku źródłowym znane IDE.  
+ [in] [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) obiekt reprezentujący abstrakcyjne pozycji w pliku źródłowym, wiadomo, że środowisko IDE.  
   
  `ppEnum`  
  [out] Zwraca [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) obiekt, który zawiera listę konteksty kodu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda umożliwia sesji debugowania Menedżera (SDM) lub IDE, aby zamapować pozycji w pliku źródłowego w pozycji kodu. Więcej niż jeden kontekst kodu jest zwracana, gdy źródło generuje wiele bloków kodu (na przykład szablonów języka C++).  
+ Ta metoda umożliwia debugowania sesji manager (SDM) lub mapy pozycji w pliku źródłowego w miejscu kodu w środowisku IDE. Więcej niż jeden kontekst kodu jest zwracany, jeśli źródło generuje wiele bloków kodu (na przykład, szablony języka C++).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

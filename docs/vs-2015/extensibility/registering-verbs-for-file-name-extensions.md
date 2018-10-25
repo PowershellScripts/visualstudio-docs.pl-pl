@@ -15,12 +15,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d81916910eb4769801ae330c10edde24cb52f52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923410"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Rejestrowanie zleceń dla rozszerzeń nazw plików
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ Skojarzenie rozszerzenia nazwy pliku z aplikacją zazwyczaj ma preferowanego akc
 ## <a name="registering-standard-verbs"></a>Rejestrowanie zleceń standardowych  
  System operacyjny rozpoznaje następujących zleceń standardowych:  
   
--   Otwarcie  
+- Otwarcie  
   
--   Edytowanie  
+- Edytowanie  
   
--   Odtwarzanie  
+- Odtwarzanie  
   
--   Drukuj  
+- Drukuj  
   
--   Wersja zapoznawcza  
+- Wersja zapoznawcza  
   
- Jeśli to możliwe, należy zarejestrować standardowy czasownika. Najbardziej typowe to Open zlecenie. Czasownik edycji należy użyć tylko wtedy, gdy istnieje wyraźna różnica pomiędzy otwierania pliku i edytowania pliku. Na przykład otwieranie pliku .htm wyświetla go w przeglądarce, natomiast edycji pliku .htm uruchamia edytora HTML. Zleceń standardowych są lokalizowane za pomocą ustawień regionalnych systemu operacyjnego.  
+  Jeśli to możliwe, należy zarejestrować standardowy czasownika. Najbardziej typowe to Open zlecenie. Czasownik edycji należy użyć tylko wtedy, gdy istnieje wyraźna różnica pomiędzy otwierania pliku i edytowania pliku. Na przykład otwieranie pliku .htm wyświetla go w przeglądarce, natomiast edycji pliku .htm uruchamia edytora HTML. Zleceń standardowych są lokalizowane za pomocą ustawień regionalnych systemu operacyjnego.  
   
 > [!NOTE]
 >  Podczas rejestrowania zleceń standardowych, nie należy ustawiać wartość domyślna dla otworzyć klucza. Wartość domyślna zawiera ciąg wyświetlany w menu. System operacyjny dostarcza ten ciąg dla zleceń standardowych.  

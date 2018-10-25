@@ -1,5 +1,5 @@
 ---
-title: IDiaLineNumber::get_compiland | Dokumentacja firmy Microsoft
+title: Idialinenumber::get_compiland — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee004d5cd97157963973f6dd650bd0ce1aa37b52
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0ca79c4a2f90e21d71518033ffb8450c02998945
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458723"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904560"
 ---
 # <a name="idialinenumbergetcompiland"></a>IDiaLineNumber::get_compiland
-Pobiera odwołanie do symbolu dla compiland, która była przyczyną bajtów tekstu obrazu.  
+Pobiera odwołanie do symbolu dla compiland —, mówiąca bajtów tekst obrazu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,10 +34,10 @@ HRESULT get_compiland (
   
 #### <a name="parameters"></a>Parametry  
  pRetVal  
- [out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiektu dla compiland, która była przyczyną bajtów tekstu obrazu.  
+ [out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt compiland —, mówiąca bajtów tekst obrazu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli ta właściwość nie jest obsługiwana. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

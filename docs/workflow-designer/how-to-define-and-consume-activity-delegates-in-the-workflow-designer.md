@@ -1,5 +1,5 @@
 ---
-title: 'Projektant przepływu pracy — porady: Definiowanie oraz stosowanie delegatów działania'
+title: 'Projektant przepływu pracy — porady: Definiowanie oraz stosowanie delegowania działania'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.prod: visual-studio-dev15
@@ -10,83 +10,83 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2039c1792a5e42c3181a01b10ff5bf271ea3bf2f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 32546f551972cf97779e0828d8c47c9c892d39bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916365"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Porady: Definiowanie oraz stosowanie delegatów działania w Projektancie przepływów pracy
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Porady: Definiowanie oraz stosowanie delegowania działania w Projektancie przepływu pracy
 
-.NET framework 4.5 obejmuje Projektant out-of-box <xref:System.Activities.Statements.InvokeDelegate> działania. Tego projektanta pozwala przypisać delegatów do działania, która pochodzi z <xref:System.Activities.ActivityDelegate>, takich jak <xref:System.Activities.ActivityAction> lub <xref:System.Activities.ActivityFunc%601>.
+.NET framework 4.5 zawiera Projektant out-of-box <xref:System.Activities.Statements.InvokeDelegate> działania. Projektant można przypisać delegatów do działania, który pochodzi od <xref:System.Activities.ActivityDelegate>, takich jak <xref:System.Activities.ActivityAction> lub <xref:System.Activities.ActivityFunc%601>.
 
-## <a name="define-an-activity-delegate"></a>Zdefiniuj do delegata działania
+## <a name="define-an-activity-delegate"></a>Zdefiniowanie pełnomocnika działania
 
-1.  W programie Visual Studio, wybierz **pliku** > **nowy** > **projektu**.
+1. W programie Visual Studio, wybierz **pliku** > **New** > **projektu**.
 
-1. W **nowy projekt** okno dialogowe, wybierz opcję **przepływu pracy** kategorii po lewej stronie, a następnie wybierz **Aplikacja konsoli przepływu pracy** szablonu projektu. Nazwij projekt (Jeśli to konieczne), a następnie kliknij przycisk **Ok**.
+2. W **nowy projekt** okno dialogowe, wybierz opcję **przepływu pracy** kategorii po lewej stronie, a następnie wybierz pozycję **Aplikacja konsoli przepływu pracy** szablonu projektu. Nazwij projekt (w razie potrzeby), a następnie kliknij przycisk **Ok**.
 
    > [!NOTE]
-   > Jeśli nie widzisz **przepływu pracy** kategorii, wcześniejszej instalacji **Windows Workflow Foundation** składnika programu Visual Studio 2017 r. Aby uzyskać szczegółowe instrukcje, zobacz [zainstalować program Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Jeśli nie widzisz **przepływu pracy** kategorii, wcześniejszej instalacji **Windows Workflow Foundation** składnika programu Visual Studio 2017. Aby uzyskać szczegółowe instrukcje, zobacz [Instalowanie programu Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-2.  Kliknij prawym przyciskiem myszy projekt w **Eksploratora rozwiązań** i wybierz **Dodaj** > **nowy element**. Wybierz **przepływu pracy** kategorii, a następnie wybierz **działania** szablon elementu. Nazwa nowego działania **MyForEach.xaml** , a następnie wybierz **OK**.
+3. Kliknij prawym przyciskiem myszy nad projektem w **Eksploratora rozwiązań** i wybierz **Dodaj** > **nowy element**. Wybierz **przepływu pracy** kategorii, a następnie wybierz **działania** szablon elementu. Nazwa nowego działania **MyForEach.xaml** , a następnie wybierz **OK**.
 
-   Działanie zostanie otwarty w Projektancie przepływów pracy.
+   Działanie zostanie otwarty w Projektancie przepływu pracy.
 
-3.  W Projektancie przepływów pracy, kliknij przycisk **argumenty** kartę.
+4. W Projektancie przepływu pracy kliknij **argumenty** kartę.
 
-4.  Kliknij przycisk **utworzenia argumentu**. Nazwa nowej argument **elementów**.
+5. Kliknij przycisk **utworzenia argumentu**. Nazwij nowy argument **elementów**.
 
-5.  W **typ argumentu** kolumny wybierz **tablicy [T]**.
+6. W **typ argumentu** kolumny wybierz **tablica [T]**.
 
-6.  W przeglądarce typu wybierz **obiektu** , a następnie wybierz **OK**.
+7. W przeglądarce typu wybierz **obiektu** , a następnie wybierz **OK**.
 
-7.  Kliknij przycisk **utworzyć Argument** ponownie. Nazwa nowej argument **treści**. W **kierunek** kolumny dla argumentu nowy, wybierz opcję **właściwości**.
+8. Kliknij przycisk **Utwórz Argument** ponownie. Nazwij nowy argument **treści**. W **kierunek** kolumny jako argumentu nowy, wybierz opcję **właściwość**.
 
-8.  W kolumnie Typ argumentu wybierz **Przeglądaj w poszukiwaniu typów**
+9. W kolumnie Typ argumentu wybierz **vyhledat typy**
 
-9. W przeglądarce typu wprowadź **ActivityAction** w **nazwy typu** pola. Wybierz **ActivityAction\<T >** w widoku drzewa. Wybierz **obiektu** na liście rozwijanej, który wygląda jak przypisać typ **ActivityAction\<obiektu >** do argumentu.
+10. W przeglądarce typu wprowadź **elementu ActivityAction** w **nazwy typu** pola. Wybierz **elementu ActivityAction\<T >** w widoku drzewa. Wybierz **obiektu** na liście rozwijanej, który wygląda jak przypisać typu **elementu ActivityAction\<obiektu >** do argumentu.
 
-10. Przeciągnij <xref:System.Activities.Statements.While> działania z **przepływ sterowania** sekcji przybornika powierzchnię projektanta.
+11. Przeciągnij <xref:System.Activities.Statements.While> działanie z **przepływ sterowania** sekcji przybornika do powierzchni projektanta.
 
-11. Wybierz <xref:System.Activities.Statements.While> działania, a następnie wybierz **zmienne** kartę.
+12. Wybierz <xref:System.Activities.Statements.While> działania, a następnie wybierz **zmienne** kartę.
 
-12. Wybierz **utworzyć zmienną**. Nazwa nowej zmiennej **indeksu**.
+13. Wybierz **utworzyć zmienną**. Nadaj nazwę nowej zmiennej **indeksu**.
 
-13. W **typ zmiennej** kolumny wybierz **Int32**. Pozostaw **zakres** jako **podczas**i **domyślne** puste kolumny.
+14. W **typ zmiennej** kolumny wybierz **Int32**. Pozostaw **zakres** jako **podczas**i **domyślne** puste kolumny.
 
-14. Ustaw **warunku** właściwość <xref:System.Activities.Statements.While> działanie **indeksu < Items.Length;**.
+15. Ustaw **warunek** właściwość <xref:System.Activities.Statements.While> działanie **indeks < Items.Length;**.
 
-15. Przeciągnij <xref:System.Activities.Statements.InvokeDelegate> działania z **podstawowych** sekcji przybornika do **treści** z <xref:System.Activities.Statements.While> działania.
+16. Przeciągnij <xref:System.Activities.Statements.InvokeDelegate> działanie z **podstawowych** sekcji przybornika, aby **treści** z <xref:System.Activities.Statements.While> działania.
 
-16. Wybierz **treści** w listy rozwijanej delegata.
+17. Wybierz **treści** listy rozwijanej delegata.
 
-17. W **właściwości** siatki dla <xref:System.Activities.Statements.InvokeDelegate> działania, kliknij przycisk **...**  przycisk **argumenty delegata** właściwości.
+18. W **właściwości** siatkę <xref:System.Activities.Statements.InvokeDelegate> działania, kliknij przycisk **...**  znajdujący się w **argumenty delegata** właściwości.
 
-18. W **wartość** kolumny argument o nazwie **Argument**, wprowadź **elementy [Indeks]**. Kliknij przycisk **Ok** zamknąć **DelegateArguments** okna dialogowego.
+19. W **wartość** kolumny argument o nazwie **Argument**, wprowadź **elementów [Index]**. Kliknij przycisk **Ok** zamknąć **DelegateArguments** okna dialogowego.
 
-19. Przeciągnij <xref:System.Activities.Statements.Assign> działania na poziomie wiersz poniżej <xref:System.Activities.Statements.InvokeDelegate> działania. <xref:System.Activities.Statements.Assign> Utworzeniu działania i <xref:System.Activities.Statements.Sequence> działanie jest tworzone automatycznie zawiera dwa działania w **treści** sekcji **MyForEach** działania. Sekwencja jest wymagana od momentu **treści** sekcja może zawierać tylko pojedyncze działanie. Automatyczne tworzenie nowego <xref:System.Activities.Statements.Sequence> działanie to nowa funkcja programu .NET Framework 4.5.
+20. Przeciągnij <xref:System.Activities.Statements.Assign> działania na linii poziomej poniżej <xref:System.Activities.Statements.InvokeDelegate> działania. <xref:System.Activities.Statements.Assign> Tworzenia działania i <xref:System.Activities.Statements.Sequence> działania jest tworzona automatycznie zawiera dwa działania w **treści** części **MyForEach** działania. Sekwencja jest konieczne, ponieważ **treści** sekcji może zawierać tylko jedno działanie. Automatyczne utworzenie nowego <xref:System.Activities.Statements.Sequence> działania to nowa funkcja programu .NET Framework 4.5.
 
-20. Ustaw **do** właściwość <xref:System.Activities.Statements.Assign> działanie **indeksu**. Ustaw **wartość** właściwość **przypisać** działanie **indeksu + 1**.
+21. Ustaw **do** właściwość <xref:System.Activities.Statements.Assign> działanie **indeksu**. Ustaw **wartość** właściwość **przypisać** działanie **indeksu + 1**.
 
-   Niestandardowa **MyForEach** działania wywołuje dowolne działanie raz dla każdej wartości przekazywane do niego za pośrednictwem **elementów** kolekcji z wartościami w kolekcji jako dane wejściowe dla działania.
+    Niestandardowy **MyForEach** działania wywołuje dowolne działanie, jeden raz dla każdej wartości przekazywane do niego za pośrednictwem **elementów** kolekcji przy użyciu wartości w kolekcji jako dane wejściowe dla działania.
 
-## <a name="use-the-custom-activity-in-a-workflow"></a>Użyj niestandardowego działania w przepływie pracy
+## <a name="use-the-custom-activity-in-a-workflow"></a>Używanie niestandardowych działań w przepływie pracy
 
-1.  Tworzenie projektu przez naciśnięcie przycisku **Ctrl**+**Shift**+**B**.
+1.  Skompiluj projekt, naciskając klawisz **Ctrl**+**Shift**+**B**.
 
 2.  W **Eksploratora rozwiązań**, otwórz **Workflow1.xaml** w projektancie.
 
-3.  Przeciągnij **MyForEach** przybornika działań na powierzchnię projektanta. Działanie jest w sekcji przybornika z taką samą nazwę jak projektu.
+3.  Przeciągnij **MyForEach** działania z przybornika do powierzchni projektanta. Działanie znajduje się w sekcji przybornika z taką samą nazwę jak projektu.
 
 4.  Ustaw **elementów** właściwość **MyForEach** działanie **nowy obiekt [] {1, "abc"}**.
 
-5.  Przeciągnij <xref:System.Activities.Statements.WriteLine> działania z **podstawowych** sekcji przybornika do **delegata: Body** sekcji **MyForEach** działania.
+5.  Przeciągnij <xref:System.Activities.Statements.WriteLine> działanie z **podstawowych** sekcji przybornika, aby **delegata: treść** części **MyForEach** działania.
 
-6.  Ustaw **tekst** właściwość <xref:System.Activities.Statements.WriteLine> działanie **Argument.ToString()**.
+6.  Ustaw **tekstu** właściwość <xref:System.Activities.Statements.WriteLine> działanie **Argument.ToString()**.
 
-Podczas wykonywania przepływu pracy w konsoli programu zawiera następujące dane wyjściowe:
+Gdy przepływ pracy ma miejsce, w konsoli wyświetlone zostaną następujące dane wyjściowe:
 
 **1**
 **abc**

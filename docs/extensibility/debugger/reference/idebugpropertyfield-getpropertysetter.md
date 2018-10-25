@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 055c057120753d156b19bbb359c4cc1ded3f58b5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e193ae70de88606d68861ccb9eb20d6926d18241
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118664"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905795"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
-Pobiera metodę ustawiającą właściwość.  
+Pobiera metodę, która ustawia właściwość.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,10 +41,10 @@ int GetPropertySetter(
   
 #### <a name="parameters"></a>Parametry  
  `ppField`  
- [out] Zwraca [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) obiekt reprezentujący metodę ustawiającą właściwość.  
+ [out] Zwraca [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) obiekt reprezentujący metodę, która ustawia właściwość.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
  Aby pobrać metodę, która pobiera właściwość, należy wywołać [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) metody.  

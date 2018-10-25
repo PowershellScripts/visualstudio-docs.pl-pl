@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3446b910aa1e728319d0f4c7acdbf65b01d1cb4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d569362de2e71a462bcfe90bd5c7180256f981b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106867"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921044"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
-Usuwa listy wyjątków ustawione dla konkretnego środowiska wykonawczego architektura lub języka IDE.  
+Usuwa listy wyjątków, ustawionych przez środowisko IDE dla określonej architektury środowiska wykonawczego lub języka.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int RemoveAllSetExceptions(
   
 #### <a name="parameters"></a>Parametry  
  `guidType`  
- [in] Identyfikator GUID dla języka lub identyfikator GUID dla aparatu debugowania, specyficzne dla architektury środowiska wykonawczego.  
+ [in] Identyfikator GUID dla języka lub identyfikator GUID dla aparatu debugowania, które są specyficzne dla architektury środowiska wykonawczego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wyjątki usunięte przez tę metodę zostały określone przez wcześniejszą wywołań [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) metody.  
+ Usunięto przez tę metodę wyjątki były ustawione przez poprzednie wywołania do [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md) metody.  
   
  Aby usunąć określony wyjątek, należy wywołać [RemoveSetException](../../../extensibility/debugger/reference/idebugengine2-removesetexception.md) metody.  
   

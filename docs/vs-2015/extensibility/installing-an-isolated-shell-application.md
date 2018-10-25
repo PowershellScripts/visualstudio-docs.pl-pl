@@ -16,34 +16,34 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3c19f48ffe00f3c824dc5085910b0319bc3c184
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7722132a81c63902450edd85ef90bde94ad94744
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257351"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880514"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalowanie aplikacji Isolated Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aby zainstalować aplikację powłoki należy wykonać następujące czynności.  
   
--   Przygotuj swoje rozwiązanie.  
+- Przygotuj swoje rozwiązanie.  
   
--   Tworzenie pakietu Instalatora Windows (MSI) dla aplikacji.  
+- Tworzenie pakietu Instalatora Windows (MSI) dla aplikacji.  
   
--   Utwórz program inicjujący Instalatora.  
+- Utwórz program inicjujący Instalatora.  
   
- Cały kod przykładowy w tym dokumencie pochodzą z [Przykładowe wdrożenie powłoki](http://go.microsoft.com/fwlink/?LinkId=262245), który można pobrać z galerii kodów w witrynie MSDN. Przykład przedstawiono wyniki wykonania każdy z tych kroków.  
+  Cały kod przykładowy w tym dokumencie pochodzą z [Przykładowe wdrożenie powłoki](http://go.microsoft.com/fwlink/?LinkId=262245), który można pobrać z galerii kodów w witrynie MSDN. Przykład przedstawiono wyniki wykonania każdy z tych kroków.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Aby wykonać procedury, które w tym temacie opisano, następujące narzędzia musi zainstalowany na tym komputerze.  
   
--   Visual Studio SDK  
+- Visual Studio SDK  
   
--   [Zestaw narzędzi XML Instalatora Windows](http://go.microsoft.com/fwlink/?LinkId=82720) wersji 3.6  
+- [Zestaw narzędzi XML Instalatora Windows](http://go.microsoft.com/fwlink/?LinkId=82720) wersji 3.6  
   
- Przykład wymaga także Microsoft Visualization i Modeling SDK, które wymagają powłoki nie wszystkie.  
+  Przykład wymaga także Microsoft Visualization i Modeling SDK, które wymagają powłoki nie wszystkie.  
   
 ## <a name="preparing-your-solution"></a>Trwa przygotowywanie rozwiązania  
  Domyślnie szablony powłoki kompilacja — przejście do pakietów VSIX, ale to zachowanie jest przeznaczony głównie do celów debugowania. Podczas wdrażania aplikacji powłoki, aby zezwolić na dostęp do rejestru i ponownego uruchomienia podczas instalacji należy użyć pakiety MSI dla. Aby przygotować aplikację do wdrożenia MSI, wykonaj następujące czynności.  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_rank | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_rank — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b78ba89b56c6d8c473060e39d402ee46e4ae15f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fc12e9251bd452edc3fdede1a5f7414462162301
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469246"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847698"
 ---
 # <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
 Pobiera rangę tablicy wielowymiarowej FORTRAN (liczba wymiarów).  
@@ -34,16 +34,16 @@ HRESULT get_rank (
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca liczbę wymiarów tablicy wielowymiarowej FORTRAN.  
+ [out] Zwraca liczbę wymiarów w tablicy wielowymiarowej FORTRAN.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ranga odwołuje się do liczby wymiarów w tablicy, której tablicy jest zadeklarowany jako `myarray[1,2,3]`. W tym przykładzie ma pozycję Wymiary 3 i 3. Pozycja nie ma zastosowania do języka C++, który korzysta z koncepcji tablicy tablic do każdego wymiaru (czyli `myarray[1][2][3]`).  
+ Ranga odnosi się do liczby wymiarów w tablicy, gdy tablica jest zadeklarowana jako `myarray[1,2,3]`. W tym przykładzie randze wymiary 3 i 3. Ranga nie ma zastosowania do języka C++, która korzysta z koncepcji tablicy tablic dla każdego wymiaru (czyli `myarray[1][2][3]`).  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

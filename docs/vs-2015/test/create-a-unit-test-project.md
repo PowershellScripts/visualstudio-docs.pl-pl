@@ -13,12 +13,12 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8c592b634b6005033b5b43dcdccf2fdef83025a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 92520f2b092d3ef8b3daa3f4ffa41139a18d6641
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179058"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883422"
 ---
 # <a name="create-a-unit-test-project"></a>Tworzenie projektu testu jednostkowego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ Testy jednostkowe dublowanie często struktury kodu w ramach testu. Na przykład
   
  Zobacz jeden z następujących sekcji:  
   
--   [Pisanie testów jednostkowych dla .NET Framework za pomocą struktury testów jednostkowych Microsoft dla kodu zarządzanego](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
+- [Pisanie testów jednostkowych dla .NET Framework za pomocą struktury testów jednostkowych Microsoft dla kodu zarządzanego](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
   
--   [Pisanie testów jednostkowych dla języka C/C++ za pomocą platformy testów jednostkowych firmy Microsoft dla języka C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
+- [Pisanie testów jednostkowych dla języka C/C++ za pomocą platformy testów jednostkowych firmy Microsoft dla języka C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
   
- **Uruchamianie testów jednostkowych**  
+  **Uruchamianie testów jednostkowych**  
   
- [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
+  [Przeprowadzanie testów jednostkowych za pomocą narzędzia Eksplorator testów](../test/run-unit-tests-with-test-explorer.md)
 
 
 

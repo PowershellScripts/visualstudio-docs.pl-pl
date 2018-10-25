@@ -1,5 +1,5 @@
 ---
-title: 'DA0010: GetHashCode kosztowne | Dokumentacja firmy Microsoft'
+title: 'DA0010: Kosztowna funkcja GetHashCode | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,27 +15,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a670eb3145f3fd2ab9478dc68e0490cdeda8ac56
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c4bb60104fa865cffa3e06ac088b92081e444457
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877234"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010: Expensive GetHashCode
+
 |||  
 |-|-|  
 |Identyfikator reguły|DA0010|  
 |Kategoria|Sposób użycia programu .NET framework|  
-|Metod profilowania|Pobierania próbek<br /><br /> Pamięci platformy .NET|  
-|Komunikat|Funkcje GetHashCode powinny być tanie i nie alokować wszystkie pamięci. Jeśli to możliwe zmniejszyć złożoność funkcji wartości skrótu.|  
+|Metod profilowania|Próbkowania<br /><br /> Pamięć .NET|  
+|Komunikat|Funkcje GetHashCode powinny być tanie i nie alokować wszystkie pamięci. Mniejsza złożoność funkcji wartości skrótu, jeśli jest to możliwe.|  
 |Typ komunikatu|Ostrzeżenie|  
-  
+
 ## <a name="cause"></a>Przyczyna  
- Wywołania metody GetHashCode typu są znaczna część danych profilowania lub metoda przydziela pamięć.  
-  
+ Wywołania metody GetHashCode tego typu są znaczna część danych profilowania, lub metoda przydziela pamięć.  
+
 ## <a name="rule-description"></a>Opis reguły  
- Tworzenie skrótu jest technika szybko lokalizowanie określonego elementu w kolekcji duże. Tabele hash może być duży i trzeba obsługuje bardzo dużej szybkości dostępu, tabele hash należy wydajne. Możliwa tego wymagania jest, że metody GetHashCode w programie .NET Framework nie należy przydzielić pamięci. Przydzielanie pamięci zwiększa obciążenie moduł garbage collector i udostępnia metody do potencjalnych opóźnienia, jeśli okaże się konieczne uruchomienie wyrzucanie elementów bezużytecznych w wyniku żądania alokacji.  
-  
-## <a name="how-to-fix-violations"></a>Jak rozwiązać naruszeń  
- Upraszczanie metody.
+ Wyznaczania wartości skrótu jest techniką, szybko lokalizowania określonego elementu w dużych kolekcji. Ponieważ tabele skrótów mogą być duże i musi obsługiwać bardzo intensywny dostępu, tabele zbędnych danych powinna być wydajne. Domniemanie to wymaganie jest, że metody GetHashCode w programie .NET Framework nie należy przydzielić pamięci. Przydzielanie pamięci zwiększa obciążenie moduł odśmiecania pamięci i udostępnia metody do potencjalnych opóźnienia, jeśli okaże się niezbędne do uruchomienia wyrzucania elementów bezużytecznych w wyniku żądania alokacji.  
+
+## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia  
+ Zmniejsz złożoność metody.

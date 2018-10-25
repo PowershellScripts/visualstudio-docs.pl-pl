@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 039e9a43e3ab6af5db399aa32722c698014256c9
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 2e1c289ca84b4f3298aa32cc0016b3be9132263b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926738"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generowanie konstruktora w programie Visual Studio
 
@@ -47,10 +47,10 @@ Dotyczy to generowanie kodu:
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
-     - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-     - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikona, który pojawia się na lewym marginesie, jeśli kursor tekstu jest już w pustym wierszu w klasie.
+      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
+      - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikona, który pojawia się na lewym marginesie, jeśli kursor tekstu jest już w pustym wierszu w klasie.
 
    ![Generowanie konstruktora (wersja zapoznawcza)](media/constructor1-preview-cs.png)
 
@@ -78,12 +78,12 @@ Dotyczy to generowanie kodu:
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
-     - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-     - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikonę, która pojawia się na lewym marginesie, gdy kursor tekstu znajduje się już na wiersz z zaznaczenia.
+      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
+      - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikonę, która pojawia się na lewym marginesie, gdy kursor tekstu znajduje się już na wiersz z zaznaczenia.
 
-     ![Generowanie konstruktora (wersja zapoznawcza)](media/constructor2-preview-cs.png)
+      ![Generowanie konstruktora (wersja zapoznawcza)](media/constructor2-preview-cs.png)
 
 1. Wybierz **Generuj Konstruktor "TypeName(...)"**  z menu rozwijanego.
 
@@ -97,24 +97,24 @@ Dotyczy to generowanie kodu:
 
    - C#:
 
-    ![Wyróżniony kod C#](media/constructor-highlight-cs.png)
+       ![Wyróżniony kod C#](media/constructor-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Wyróżniony Kod VB](media/constructor-highlight-vb.png)
+       ![Wyróżniony Kod VB](media/constructor-highlight-vb.png)
 
-1. Następnie wykonaj jedną z następujących czynności:
+2. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
-     - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-     - Umieść kursor nad czerwona fala, a następnie kliknij przycisk ![Żarówka](media/bulb-cs.png) ikona, który jest wyświetlany.
-     - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikona, który pojawia się na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym czerwona fala.
+      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
+      - Umieść kursor nad czerwona fala, a następnie kliknij przycisk ![Żarówka](media/bulb-cs.png) ikona, który jest wyświetlany.
+      - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikona, który pojawia się na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym czerwona fala.
 
-    ![Generowanie konstruktora (wersja zapoznawcza)](media/constructor-preview-cs.png)
+      ![Generowanie konstruktora (wersja zapoznawcza)](media/constructor-preview-cs.png)
 
-1. Wybierz **Generowanie konstruktora w "*TypeName*"** z menu rozwijanego.
+3. Wybierz **Generowanie konstruktora w "*TypeName*"** z menu rozwijanego.
 
    > [!TIP]
    > Użyj **podgląd zmian** link w dolnej części okna podglądu [Aby wyświetlić wszystkie zmiany](../../ide/preview-changes.md) , zostaną wprowadzone przed dokonaniem wyboru.
@@ -123,32 +123,32 @@ Dotyczy to generowanie kodu:
 
    - C#:
 
-      ![Generowanie metody powodują C#](media/constructor-result-cs.png)
+       ![Generowanie metody powodują C#](media/constructor-result-cs.png)
 
    - Visual Basic:
 
-      ![Generowanie metody powodują VB](media/constructor-result-vb.png)
+       ![Generowanie metody powodują VB](media/constructor-result-vb.png)
 
 ## <a id="addparameter"></a> Dodaj parametr do konstruktora istniejących (tylko język C#)
 
 1. Dodaj parametr do istniejących wywołanie konstruktora.
 
-1. Umieść kursor w wierszu gdzie znajduje się czerwona fala wskazujący użyty Konstruktor, który jeszcze nie istnieje.
+2. Umieść kursor w wierszu gdzie znajduje się czerwona fala wskazujący użyty Konstruktor, który jeszcze nie istnieje.
 
     ![Generuj Konstruktor wyróżnienia](media/constructor4-highlight-cs.png)
 
-1. Następnie wykonaj jedną z następujących czynności:
+3. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
-     - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-     - Umieść kursor nad czerwona fala, a następnie kliknij przycisk ![Żarówka](media/bulb-cs.png) ikona, który jest wyświetlany.
-     - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikona, który pojawia się na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym czerwona fala.
+      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
+      - Umieść kursor nad czerwona fala, a następnie kliknij przycisk ![Żarówka](media/bulb-cs.png) ikona, który jest wyświetlany.
+      - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikona, który pojawia się na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym czerwona fala.
 
-    ![Generowanie konstruktora (wersja zapoznawcza)](media/constructor4-preview-cs.png)
+      ![Generowanie konstruktora (wersja zapoznawcza)](media/constructor4-preview-cs.png)
 
-1. Wybierz **dodać parametr "TypeName(...)"**  z menu rozwijanego.
+4. Wybierz **dodać parametr "TypeName(...)"**  z menu rozwijanego.
 
    Parametr zostanie dodany do konstruktora z typem wywnioskować na podstawie jej użycie.
 
@@ -167,10 +167,10 @@ Można również dodać parametr do istniejącej metody. Aby uzyskać więcej in
 1. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
+      - Naciśnij klawisz **Ctrl**+**.** wyzwalacz **szybkie akcje i Refaktoryzacje** menu.
    - **Myszy**
-     - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
-     - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikona, który pojawia się na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym dodano parametr.
+      - Kliknij prawym przyciskiem myszy i wybierz **szybkie akcje i Refaktoryzacje** menu.
+      - Kliknij ikonę ![Żarówka](media/bulb-cs.png) ikona, który pojawia się na lewym marginesie, jeśli kursor tekstu jest już w wierszu zawierającym dodano parametr.
 
    ![Generowanie konstruktora (wersja zapoznawcza)](media/constructor5-preview-cs.png)
 

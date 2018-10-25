@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a38971aa15cca2dc1e2fe780b603ea885cba0a3
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 898c5b1b9de186a7ac704b4987fb090de5381f07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636113"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884774"
 ---
 # <a name="sccdiff-function"></a>Funkcja SccDiff
 Ta funkcja zawiera (lub opcjonalnie tylko sprawdza, czy) system kontroli różnice między bieżącego pliku (na dysku lokalnym) i jego ostatniej wersji w źródle.  

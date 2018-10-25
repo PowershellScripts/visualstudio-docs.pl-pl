@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd7f686ccaa5a3195b82458cf3ee11f02be104f3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 08abf4443932b81fd13601dd43a2111626b09382
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923514"
 ---
 # <a name="ienumdebugextendedpropertyinfoskip"></a>IEnumDebugExtendedPropertyInfo::Skip
-Pomija określoną liczbę `ExtendedDebugPropertyInfo` struktury w kolejności wyliczenia.  
+Pomija określoną liczbę `ExtendedDebugPropertyInfo` struktur w kolejności wyliczenia.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,11 +38,11 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parametry  
  `celt`  
- [in] Liczba `ExtendedDebugPropertyInfo` struktury w kolejności wyliczenie do pominięcia.  
+ [in] Liczba `ExtendedDebugPropertyInfo` struktur w kolejności wyliczenie, aby pominąć.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zwykle `S_OK`. Zwraca `S_FALSE` i ustawia bieżący wskaźnik elementu koniec wyliczenia, jeśli `celt` jest większa niż liczba elementów w lewo w moduł wyliczający.  
+ Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`. Zwraca `S_FALSE` i ustawia bieżący wskaźnik element na koniec wyliczenia, jeśli `celt` jest większa niż liczba elementów w lewo w moduł wyliczający.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IEnumDebugExtendedPropertyInfo](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
- [Struktura ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)
+ [ExtendedDebugPropertyInfo, struktura](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

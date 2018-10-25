@@ -19,12 +19,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 048ea406fd9237640976f3a44bb5e53504276e0c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2d84ba17fb3fd866dcd73cd2821289c40153b6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279373"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872671"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Analiza kodu dla zarządzanego kodu — Omówienie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ Analiza kodu dla kodu zarządzanego analizuje zestawy zarządzane i raportuje in
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Uruchamianie analizy kodu jako części zasad ewidencjonowania  
  Jako organizacja można wymagać, aby wszystkie zaewidencjonowania spełniały pewne zasady. W szczególności chcesz upewnić się, że spełnione są następujące zasady:  
   
--   Nie było żadnych błędów kompilacji w kodzie, które zostały zaewidencjonowane.  
+- Nie było żadnych błędów kompilacji w kodzie, które zostały zaewidencjonowane.  
   
--   Analiza kodu została uruchomiona jako część najnowszej kompilacji.  
+- Analiza kodu została uruchomiona jako część najnowszej kompilacji.  
   
- Można to zrobić poprzez określenie zasad ewidencjonowania. Aby uzyskać więcej informacji, zobacz [udoskonalanie jakości kodu za pomocą zasad ewidencjonowania projektu zespołowego](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
+  Można to zrobić poprzez określenie zasad ewidencjonowania. Aby uzyskać więcej informacji, zobacz [udoskonalanie jakości kodu za pomocą zasad ewidencjonowania projektu zespołowego](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
 ## <a name="team-build-integration"></a>Integracji kompilacji zespołu  
  Zintegrowane funkcje systemu kompilacji można użyć, aby uruchomić narzędzie do analizy jako część procesu kompilacji. Aby uzyskać więcej informacji, zobacz [skompilować aplikację](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8c532692b7faddd90a3a67ffdd52b512511d719
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: dc849f0b3f66c7e2bdd85ff20023c9755ce5c985
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152191"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853353"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup — element (MSBuild)
 Zawiera zestaw zdefiniowanych przez użytkownika [właściwość](../msbuild/property-element-msbuild.md) elementów. Każdy `Property` elementu używanego przy [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu musi być obiektem podrzędnym obiektu `PropertyGroup` elementu.  
@@ -59,9 +59,9 @@ Zawiera zestaw zdefiniowanych przez użytkownika [właściwość](../msbuild/pro
 
 ### <a name="parent-elements"></a>Elementy nadrzędne  
 
-|Element|Opis|  
-|-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu.|  
+| Element | Opis |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | Element główny wymagany [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pliku projektu. |
 
 ## <a name="example"></a>Przykład  
  Poniższy przykład kodu pokazuje sposób ustawiania właściwości na podstawie warunku. W tym przykładzie Jeśli wartość `CompileConfig` właściwość `DEBUG`, `Optimization`, `Obfuscate`, i `OutputPath` właściwości wewnątrz `PropertyGroup` elementu są ustawione.  

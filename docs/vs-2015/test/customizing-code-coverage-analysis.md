@@ -13,12 +13,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9188cf2039249f5207685217719bc41d25abd0a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281752"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890169"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Dostosowywanie analizy pokrycia kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,40 +27,40 @@ Domyślnie narzędzie Visual Studio Code Coverage analizuje wszystkie zestawy ro
   
  Przed rozpoczęciem dostosowywania zachowania pokrycia kodu należy wziąć pod uwagę kilka alternatyw:  
   
--   *Chcę Dołączanie i wykluczanie kod testu z wyników pokrycia kodu tylko kod aplikacji.*  
+- *Chcę Dołączanie i wykluczanie kod testu z wyników pokrycia kodu tylko kod aplikacji.*  
   
-     Dodaj `ExcludeFromCodeCoverage Attribute` do klasy testowej.  
+   Dodaj `ExcludeFromCodeCoverage Attribute` do klasy testowej.  
   
--   *Chcę dołączyć zestawów, które nie są częścią Moje rozwiązanie.*  
+- *Chcę dołączyć zestawów, które nie są częścią Moje rozwiązanie.*  
   
-     Uzyskaj pliki .pdb dla tych zestawów i skopiuj je do tego samego folderu, co pliki .dll zestawu.  
+   Uzyskaj pliki .pdb dla tych zestawów i skopiuj je do tego samego folderu, co pliki .dll zestawu.  
   
- Aby dostosować zachowanie pokrycia kodu, skopiuj [próbki na końcu tego tematu](#sample) i dodaj go do rozwiązania przy użyciu rozszerzenia pliku .runsettings. Edytuj go zgodnie z własnymi potrzebami, a następnie na **testu** menu, wybierz **ustawienia testu**, **wybierz ustawienia testu** pliku. W pozostałej części tego tematu opisano tę procedurę bardziej szczegółowo.  
+  Aby dostosować zachowanie pokrycia kodu, skopiuj [próbki na końcu tego tematu](#sample) i dodaj go do rozwiązania przy użyciu rozszerzenia pliku .runsettings. Edytuj go zgodnie z własnymi potrzebami, a następnie na **testu** menu, wybierz **ustawienia testu**, **wybierz ustawienia testu** pliku. W pozostałej części tego tematu opisano tę procedurę bardziej szczegółowo.  
   
 ## <a name="the-runsettings-file"></a>Plik .runsettings  
  Zaawansowane ustawienia pokrycia kodu są określone w pliku .runsettings. Jest to plik konfiguracji używany przez narzędzia do testowania jednostkowego. Zalecamy skopiowanie [próbki na końcu tego tematu](#sample) i dostosuj go do swoich potrzeb.  
   
--   *Co się stało z plikiem .testsettings, używane w programie Visual Studio 2010?*  
+- *Co się stało z plikiem .testsettings, używane w programie Visual Studio 2010?*  
   
-     W programie Visual Studio 2010 plik .testsettings stosuje się jedynie do testów jednostkowych opartych na środowisku MSTest. Narzędzia do testowania w programie Visual Studio 2012 stosuje się nie tylko do środowiska MSTest, ale także do innych środowisk, takich jak NUnit i xUnit.net. Plik .testsettings nie będzie z nimi działać. Plik .runsettings ma na celu dostosowanie narzędzi testowych w sposób, który działa w przypadku wszystkich środowisk testowania.  
+   W programie Visual Studio 2010 plik .testsettings stosuje się jedynie do testów jednostkowych opartych na środowisku MSTest. Narzędzia do testowania w programie Visual Studio 2012 stosuje się nie tylko do środowiska MSTest, ale także do innych środowisk, takich jak NUnit i xUnit.net. Plik .testsettings nie będzie z nimi działać. Plik .runsettings ma na celu dostosowanie narzędzi testowych w sposób, który działa w przypadku wszystkich środowisk testowania.  
   
- Aby dostosować pokrycie kodu, należy dodać plik .runsettings do rozwiązania:  
+  Aby dostosować pokrycie kodu, należy dodać plik .runsettings do rozwiązania:  
   
-1.  Dodaj plik XML jako element rozwiązania z rozszerzeniem `.runsettings`:  
+1. Dodaj plik XML jako element rozwiązania z rozszerzeniem `.runsettings`:  
   
-     W Eksploratorze rozwiązań w menu skrótów danego rozwiązania, wybierz **Dodaj**, **nowy element**i wybierz **pliku XML**. Zapisz plik pod nazwą kończącą `CodeCoverage.runsettings`  
+    W Eksploratorze rozwiązań w menu skrótów danego rozwiązania, wybierz **Dodaj**, **nowy element**i wybierz **pliku XML**. Zapisz plik pod nazwą kończącą `CodeCoverage.runsettings`  
   
-2.  Dodaj zawartość podaną w próbie na końcu tego tematu, a następnie dostosuj go do własnych potrzeb zgodnie z opisem w poniższych sekcjach.  
+2. Dodaj zawartość podaną w próbie na końcu tego tematu, a następnie dostosuj go do własnych potrzeb zgodnie z opisem w poniższych sekcjach.  
   
-3.  Na **testu** menu, wybierz **ustawienia testu**, **zaznacz plik ustawień testu** i wybierz plik.  
+3. Na **testu** menu, wybierz **ustawienia testu**, **zaznacz plik ustawień testu** i wybierz plik.  
   
-4.  Teraz po uruchomieniu **Analizuj pokrycie kodu**ten `.runsettings` plików będzie kontrolować jego zachowanie. Nie zapomnij, że należy ponownie uruchomić pokrycie kodu: Twoje poprzednie wyniki pokrycia i kolorowanie kodu nie są automatycznie ukrywane podczas uruchamiania testów czy aktualizowania kodu.  
+4. Teraz po uruchomieniu **Analizuj pokrycie kodu**ten `.runsettings` plików będzie kontrolować jego zachowanie. Nie zapomnij, że należy ponownie uruchomić pokrycie kodu: Twoje poprzednie wyniki pokrycia i kolorowanie kodu nie są automatycznie ukrywane podczas uruchamiania testów czy aktualizowania kodu.  
   
-5.  Aby włączyć ustawienia niestandardowe i wyłączonym, usuń zaznaczenie lub zaznacz plik w **testu**, **ustawienia testu** menu.  
+5. Aby włączyć ustawienia niestandardowe i wyłączonym, usuń zaznaczenie lub zaznacz plik w **testu**, **ustawienia testu** menu.  
   
- ![Menu Ustawienia testu przy użyciu pliku ustawień niestandardowych](../test/media/codecoverage-settingsfile.png "Plik_ustawień CodeCoverage")  
+   ![Menu Ustawienia testu przy użyciu pliku ustawień niestandardowych](../test/media/codecoverage-settingsfile.png "Plik_ustawień CodeCoverage")  
   
- Inne aspekty testów jednostkowych można skonfigurować w tym samym pliku .runsettings. Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md).  
+   Inne aspekty testów jednostkowych można skonfigurować w tym samym pliku .runsettings. Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md).  
   
 ### <a name="specifying-symbol-search-paths"></a>Określanie ścieżek wyszukiwania symbolu  
  Pokrycie kodu wymaga symboli (pliki .pdb), aby były obecne zestawy. Dla zestawów zbudowanych według rozwiązania pliki symboli są zwykle obecne obok plików binarnych, a pokrycie kodu działa automatycznie. Jednak w niektórych przypadkach można chcieć dołączyć odwołania do zestawów do analizy pokrycia kodu. W takich przypadkach pliki .pdb mogą nie być przylegającymi do plików binarnych, ale ścieżkę wyszukiwania symbolu można określić w pliku .runsettings.  
@@ -106,21 +106,21 @@ Domyślnie narzędzie Visual Studio Code Coverage analizuje wszystkie zestawy ro
 ### <a name="regular-expressions"></a>Wyrażenia regularne  
  Uwzględnij lub wyklucz węzły, używając wyrażeń regularnych. Aby uzyskać więcej informacji, zobacz [za pomocą wyrażeń regularnych w programie Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Wyrażenia regularne nie są tym samym, co symbole wieloznaczne. W szczególności:  
   
-1.  **\.\*** pasuje do ciągu znaków  
+1. **\.\\*** odpowiada ciągowi dowolnych znaków  
   
-2.  **\\.** odpowiada kropce ".")  
+2. **\\.** odpowiada kropce ".")  
   
-3.  **\\( \\)** odpowiada nawiasom ""  
+3. **\\( \\)** odpowiada nawiasom ""  
   
-4.  **\\\\** odpowiada ścieżce pliku ogranicznika "\\"  
+4. **\\\\** odpowiada ścieżce pliku ogranicznika "\\"  
   
-5.  **^** odpowiada początkowi ciągu  
+5. **^** odpowiada początkowi ciągu  
   
-6.  **$** Dopasowuje koniec ciągu  
+6. **$** Dopasowuje koniec ciągu  
   
- We wszystkich dopasowaniach rozróżniana jest wielkość liter.  
+   We wszystkich dopasowaniach rozróżniana jest wielkość liter.  
   
- Na przykład:  
+   Na przykład:  
   
 ```xml  
 <ModulePaths>  
@@ -144,25 +144,25 @@ Domyślnie narzędzie Visual Studio Code Coverage analizuje wszystkie zestawy ro
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Inne sposoby, aby dołączyć lub wykluczyć elementy  
  Zobacz [próbki na końcu tego tematu](#sample) przykłady.  
   
--   `ModulePath` — Zestawy określone przez ścieżkę pliku zestawu.  
+- `ModulePath` — Zestawy określone przez ścieżkę pliku zestawu.  
   
--   `CompanyName` — dopasowanie zestawów przez atrybut firmy.  
+- `CompanyName` — dopasowanie zestawów przez atrybut firmy.  
   
--   `PublicKeyToken` — Dopasowuje zestawy podpisane przez token klucza publicznego. Na przykład dopasować wszystkie składniki programu Visual Studio i rozszerzenia, użyj `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`.  
+- `PublicKeyToken` — Dopasowuje zestawy podpisane przez token klucza publicznego. Na przykład dopasować wszystkie składniki programu Visual Studio i rozszerzenia, użyj `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`.  
   
--   `Source` — Dopasowuje elementy według nazwy ścieżki pliku źródłowego, w której są zdefiniowane.  
+- `Source` — Dopasowuje elementy według nazwy ścieżki pliku źródłowego, w której są zdefiniowane.  
   
--   `Attribute` — Dopasowuje elementy, do których dołączono określony atrybut. Podaj pełną nazwę atrybutu, łącznie z wyrazem „Atrybut” na końcu nazwy.  
+- `Attribute` — Dopasowuje elementy, do których dołączono określony atrybut. Podaj pełną nazwę atrybutu, łącznie z wyrazem „Atrybut” na końcu nazwy.  
   
--   `Function` — Dopasowuje procedury, funkcji lub metody w pełni kwalifikowanej nazwy.  
+- `Function` — Dopasowuje procedury, funkcji lub metody w pełni kwalifikowanej nazwy.  
   
- **Pasujące nazwy funkcji**  
+  **Pasujące nazwy funkcji**  
   
- Dane wyrażenie regularne musi odpowiadać w pełni kwalifikowanej nazwie funkcji, łącznie z przestrzenią nazw, nazwą klasy, nazwą metody i listą parametrów. Na przykład  
+  Dane wyrażenie regularne musi odpowiadać w pełni kwalifikowanej nazwie funkcji, łącznie z przestrzenią nazw, nazwą klasy, nazwą metody i listą parametrów. Na przykład  
   
--   C# lub Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
+- C# lub Visual Basic: `Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
--   C++:  `Fabrikam::Math::LocalMath::SquareRoot(double)`  
+- C++:  `Fabrikam::Math::LocalMath::SquareRoot(double)`  
   
 ```xml  
 <Functions>  
@@ -201,17 +201,17 @@ Domyślnie narzędzie Visual Studio Code Coverage analizuje wszystkie zestawy ro
   
  ![Określanie runsettings w definicji kompilacji](../test/media/codecoverage-buildrunsettings.png "CodeCoverage buildRunsettings")  
   
-1.  Upewnij się, że plik .runsettings jest zaewidencjonowany.  
+1. Upewnij się, że plik .runsettings jest zaewidencjonowany.  
   
-2.  W programie Team Explorer Otwórz **kompilacje**, a następnie dodaj lub Edytuj definicję kompilacji.  
+2. W programie Team Explorer Otwórz **kompilacje**, a następnie dodaj lub Edytuj definicję kompilacji.  
   
-3.  Na **procesu** rozwiń **testy automatyczne**, **źródła testów**, **parametrów uruchomieniowych**. Wybierz swoje **.runsettings** pliku.  
+3. Na **procesu** rozwiń **testy automatyczne**, **źródła testów**, **parametrów uruchomieniowych**. Wybierz swoje **.runsettings** pliku.  
   
-    -   *Ale **zestawu testowego** pojawia się zamiast **źródła testów**. Gdy próbuję ustawić **parametrów uruchomieniowych** pola można wybrać tylko pliki .testsettings.*  
+   - <em>Ale **zestawu testowego</em>* pojawia się zamiast **źródła testów**. Gdy próbuję ustawić **parametrów uruchomieniowych** pola można wybrać tylko pliki .testsettings.*  
   
-         W obszarze **testy automatyczne**, wybierz opcję **zestawu testowego**i wybierz polecenie **[...]**  na końcu wiersza. W **Dodaj/Edytuj przebieg testowy** okno dialogowe, zestaw **Test Runner** do **Visual Studio Test Runner**.  
+      W obszarze **testy automatyczne**, wybierz opcję **zestawu testowego**i wybierz polecenie **[...]**  na końcu wiersza. W **Dodaj/Edytuj przebieg testowy** okno dialogowe, zestaw **Test Runner** do **Visual Studio Test Runner**.  
   
- Wyniki są widoczne w sekcji podsumowania raportu kompilacji.  
+   Wyniki są widoczne w sekcji podsumowania raportu kompilacji.  
   
 ##  <a name="sample"></a> Przykładowy plik .runsettings  
  Skopiuj ten kod i dostosuj go do swoich potrzeb. Jest to domyślny plik .runsettings.  

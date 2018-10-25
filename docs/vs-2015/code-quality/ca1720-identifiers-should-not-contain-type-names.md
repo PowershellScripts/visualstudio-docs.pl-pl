@@ -20,15 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8dda659a746f98bfa8038156d38316729f43016c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ec0980d312d4a65a770e63f0a23203a7e95c546f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862342"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Identyfikatory nie powinny zawierać nazw typów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
@@ -48,89 +49,89 @@ ms.locfileid: "49282506"
 
  Każdy token dyskretnych nazwę parametru lub elementu członkowskiego jest porównywany następujące nazwy typów danych specyficznych dla języka, bez uwzględniania wielkości liter:
 
--   wartość logiczna
+- wartość logiczna
 
--   WChar
+- WChar
 
--   Int8
+- Int8
 
--   UInt8
+- UInt8
 
--   Krótka
+- Krótka
 
--   UShort
+- UShort
 
--   int
+- int
 
--   UInt
+- UInt
 
--   Liczba całkowita
+- Liczba całkowita
 
--   Uinteger —
+- Uinteger —
 
--   długi
+- długi
 
--   ULong
+- ULong
 
--   Bez znaku
+- Bez znaku
 
--   Podpisany
+- Podpisany
 
--   float
+- float
 
--   float32
+- float32
 
--   float64
+- float64
 
- Ponadto nazwy parametru również są porównywane z następujących nazw typu danych niezależny od języka, bez uwzględniania wielkości liter:
+  Ponadto nazwy parametru również są porównywane z następujących nazw typu danych niezależny od języka, bez uwzględniania wielkości liter:
 
--   Obiekt
+- Obiekt
 
--   obj
+- obj
 
--   Boolean
+- Boolean
 
--   Char
+- Char
 
--   String
+- String
 
--   SByte
+- SByte
 
--   Byte
+- Byte
 
--   UByte
+- UByte
 
--   Int16
+- Int16
 
--   UInt16
+- UInt16
 
--   Int32
+- Int32
 
--   UInt32
+- UInt32
 
--   Int64
+- Int64
 
--   UInt64
+- UInt64
 
--   Pola IntPtr
+- Pola IntPtr
 
--   PTR
+- PTR
 
--   Wskaźnik
+- Wskaźnik
 
--   UInptr
+- UInptr
 
--   UPtr
+- UPtr
 
--   UPointer
+- UPointer
 
--   Single
+- Single
 
--   Double
+- Double
 
--   Wartość dziesiętna
+- Wartość dziesiętna
 
--   Identyfikator GUID
+- Identyfikator GUID
 
 ## <a name="how-to-fix-violations"></a>Jak naprawić naruszenia
  **Jeśli uruchamiany dla parametru:**

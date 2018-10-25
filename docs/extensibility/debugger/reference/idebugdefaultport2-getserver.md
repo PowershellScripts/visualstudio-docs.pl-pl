@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61e4ea81da1e8f31cabd7c2dae6ca5dc3251eef8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 273e6b89ce9ca38c05034ae1b31e4eeb9fec5b86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106682"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874374"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
-Ta metoda uzyskuje interfejs do serwera, który znajduje się na tym porcie.  
+Ta metoda pobiera interfejs do serwera, na którym znajduje się na tym porcie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,13 +41,13 @@ int GetServer(
   
 #### <a name="parameters"></a>Parametry  
  `ppServer`  
- [out] Zwraca obiekt implementacja [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) interfejsu.  
+ [out] Zwraca obiekt Implementowanie [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) interfejsu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) jest zaimplementowana przez program Visual Studio i reprezentuje serwer, który port znajduje się na.  
+ [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) jest implementowany przez program Visual Studio i reprezentuje serwer, który port znajduje się na.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   

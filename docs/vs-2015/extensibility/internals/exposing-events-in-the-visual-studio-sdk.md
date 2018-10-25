@@ -16,12 +16,12 @@ ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c7e001d71ca413cb5b984fabf203eaa6f748b98
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96cbc9ad5c7098ff1aba2bc9cd3f387ca229cc98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195575"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919891"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>Udostępnianie zdarzeń w zestawie Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,23 +32,23 @@ ms.locfileid: "49195575"
   
  Następujący proces wyjaśnia, jak są zwracane zdarzeń specyficznych dla pakietu VSPackage.  
   
-1.  Uruchamia środowisko.  
+1. Uruchamia środowisko.  
   
-2.  Odczytuje z rejestru wszystkie nazwy wartości w ramach usługi Automation, AutomationEvents i AutomationProperties klucze wszystkich pakietów VSPackage, a te nazwy są przechowywane w tabeli.  
+2. Odczytuje z rejestru wszystkie nazwy wartości w ramach usługi Automation, AutomationEvents i AutomationProperties klucze wszystkich pakietów VSPackage, a te nazwy są przechowywane w tabeli.  
   
-3.  Wywołuje konsumenta automatyzacji, w tym przykładzie `DTE.Events.AutomationProjectsEvents` lub `DTE.Events.AutomationProjectItemsEvents`.  
+3. Wywołuje konsumenta automatyzacji, w tym przykładzie `DTE.Events.AutomationProjectsEvents` lub `DTE.Events.AutomationProjectItemsEvents`.  
   
-4.  Środowisko znajduje parametr ciągu w tabeli i ładuje odpowiedniego pakietu VSPackage.  
+4. Środowisko znajduje parametr ciągu w tabeli i ładuje odpowiedniego pakietu VSPackage.  
   
-5.  Wywołania środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metody przy użyciu nazwy przekazywane w wywołaniu; w tym przykładzie AutomationProjectsEvents lub AutomationProjectItemsEvents.  
+5. Wywołania środowiska <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> metody przy użyciu nazwy przekazywane w wywołaniu; w tym przykładzie AutomationProjectsEvents lub AutomationProjectItemsEvents.  
   
-6.  Pakietu VSPackage tworzy obiekt główny, który zawiera metody, takie jak `get_AutomationProjectsEvents` i `get_AutomationProjectItemEvents` , a następnie zwraca wskaźnik interfejsu IDispatch do obiektu.  
+6. Pakietu VSPackage tworzy obiekt główny, który zawiera metody, takie jak `get_AutomationProjectsEvents` i `get_AutomationProjectItemEvents` , a następnie zwraca wskaźnik interfejsu IDispatch do obiektu.  
   
-7.  Środowisko wywołuje odpowiednią metodę na podstawie nazwy przekazane do wywołania usługi automation.  
+7. Środowisko wywołuje odpowiednią metodę na podstawie nazwy przekazane do wywołania usługi automation.  
   
-8.  `get_` Metoda tworzy inny obiekt zdarzeń w oparciu o IDispatch, który implementuje interfejsy `IConnectionPointContainer` interfejsu i `IConnectionPoint` interfejs i zwraca IDispatchpointer do obiektu.  
+8. `get_` Metoda tworzy inny obiekt zdarzeń w oparciu o IDispatch, który implementuje interfejsy `IConnectionPointContainer` interfejsu i `IConnectionPoint` interfejs i zwraca IDispatchpointer do obiektu.  
   
- Aby udostępnić zdarzenia przy użyciu usługi automation, musi odpowiadać na <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> i obserwowanie ciągów, które można dodać do rejestru. W przykładowym projekcie podstawowe ciągi są "BscProjectsEvents" i "BscProjectItemsEvents".  
+   Aby udostępnić zdarzenia przy użyciu usługi automation, musi odpowiadać na <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> i obserwowanie ciągów, które można dodać do rejestru. W przykładowym projekcie podstawowe ciągi są "BscProjectsEvents" i "BscProjectItemsEvents".  
   
 ## <a name="registry-entries-from-the-basic-project-sample"></a>Wpisy rejestru z przykładowym projekcie podstawowe  
  W tej sekcji pokazano, gdzie należy dodać wartości zdarzeń automatyzacji do rejestru.  

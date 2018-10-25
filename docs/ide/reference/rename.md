@@ -1,5 +1,5 @@
 ---
-title: Zrefaktoryzuj zmienić w programie Visual Studio
+title: Refaktoryzacja zmiany nazwy w programie Visual Studio
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,64 +14,64 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 696ec34bb0009b9b09b5902a102c71cf1331f320
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b85814be6df104a0d5859fbb339ce0dc665c09c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945457"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908756"
 ---
-# <a name="rename-a-code-symbol-refactoring"></a>Symbol kodu Refaktoryzacja zmiany nazwy
+# <a name="rename-a-code-symbol-refactoring"></a>Zmień nazwę symbolu kodu refaktoryzacji
 
-Dotyczy to refaktoryzacji:
+Ta Refaktoryzacja mają zastosowanie do:
 
 - C#
 
 - Visual Basic
 
-**Co:** pozwala zmienić identyfikatory symboli kodu, takich jak pola, zmienne lokalne, metody, obszary nazw, właściwości i typów.
+**Co:** umożliwia zmianę nazwy identyfikatorów w celu symbole kodu, takie jak pola, zmienne lokalne, metody, przestrzenie nazw, właściwości i typów.
 
-**Kiedy:** chcesz zmienić element bezpiecznie bez konieczności Znajdź wszystkie wystąpienia i kopiowania/wklejania nową nazwę.
+**Kiedy:** chcesz bezpiecznie zmienić coś bez konieczności Znajdź wszystkie wystąpienia i kopiowanie/wklejanie nowej nazwy.
 
-**Dlaczego:** kopiowania i wklejania nową nazwę dla całego projektu prawdopodobnie będą powodować błędy. To narzędzie refaktoryzacji dokładnie będzie wykonywać operacji zmiany nazwy.
+**Dlaczego:** kopiowanie i wklejanie nową nazwę dla całego projektu, prawdopodobnie będą powodować błędy. To narzędzie refaktoryzacji dokładnie wykona akcję zmiany nazwy.
 
-## <a name="how-to"></a>Porada
+## <a name="how-to"></a>Instrukcje
 
-1. Zaznacz lub umieść kursor tekst wewnątrz można zmienić nazwy elementu:
+1. Zaznacz lub umieść kursor tekstu w można zmienić nazwy elementu:
 
    - C#:
 
-    ![Wyróżniony kod - C#](media/rename-highlight-cs.png)
+       ![Wyróżniony kod-C#](media/rename-highlight-cs.png)
 
    - Visual Basic:
 
-    ![Wyróżniony kod - języka Visual Basic](media/rename-highlight-vb.png)
+       ![Wyróżniony kod - języka Visual Basic](media/rename-highlight-vb.png)
 
-1. Następnie wykonaj jedną z następujących czynności:
+2. Następnie wykonaj jedną z następujących czynności:
 
    - **Keyboard**
-     - Naciśnij klawisz **Ctrl + R**, następnie **Ctrl + R**. (Należy pamiętać, że skrót klawiaturowy mogą być różne oparte na profil, który wybrano).
+      - Naciśnij klawisz **Ctrl + R**, następnie **Ctrl + R**. (Należy pamiętać, że skrót klawiaturowy może różnić się w oparciu o profilu, który wybrano.)
    - **Myszy**
-     - Wybierz **Edytuj > Refaktoryzuj > Zmień nazwę**.
-     - Kliknij prawym przyciskiem myszy kod i wybierz **zmienić**.
+      - Wybierz **Edytuj > Refaktoryzuj > Zmień nazwę**.
+      - Kliknij prawym przyciskiem myszy ten kod, a następnie wybierz pozycję **Zmień nazwę**.
 
-1. Zmień nazwę elementu po prostu, wpisując nazwę nowego.
+3. Zmień nazwę elementu, po prostu wpisując nową nazwę.
 
    - C#:
 
-    ![Zmień nazwę animacji - C#](media/rename-animated-cs.gif)
+      ![Zmień nazwę Animacja —C#](media/rename-animated-cs.gif)
 
    - Visual Basic:
 
-    ![Zmień nazwę - VB](media/rename-rename-vb.png)
+      ![Rename - VB](media/rename-rename-vb.png)
 
    > [!TIP]
-   > Można także zaktualizować komentarze i innymi ciągami, aby użyć tej nowej nazwy oraz [podgląd zmian](../../ide/preview-changes.md) przed zapisaniem, za pomocą pola wyboru w **zmienić** pole, który jest wyświetlany u góry prawo do edytora.
+   > Możesz także zaktualizować komentarze i innych ciągów, aby użyć tej nowej nazwy także [podgląd zmian](../../ide/preview-changes.md) przed zapisaniem, za pomocą pola wyboru w **Zmień nazwę** pole, które pojawia się u góry bezpośrednio z edytora.
 
-1. Po zakończeniu modyfikowania zmiany, wybierz **Zastosuj** przycisk lub naciśnij przycisk **Enter** , a zmiany zostaną zatwierdzone.
+4. Po zakończeniu zmiany wybierz **Zastosuj** przycisk lub naciśnij klawisz **Enter** i zmiany zostaną zatwierdzone.
 
 > [!NOTE]
-> Jeśli używasz nazwę, która już istnieje która może spowodować konflikt, **zmienić** wyświetli ostrzeżenie, pole.
+> Jeśli używasz nazwę, która już istnieje która może spowodować konflikt, **Zmień nazwę** wyświetli ostrzeżenie, pole.
 >
 > ![Zmień nazwę konflikt](media/rename-conflict-cs.png)
 

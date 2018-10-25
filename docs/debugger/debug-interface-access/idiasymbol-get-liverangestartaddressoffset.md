@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 471c9ecfb7ee1aa318e2db9c1c7de0cd56a1184f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 517e3c516f18d32634d0c8243d65674175e7da17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468658"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870981"
 ---
 # <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
-Zwraca przesunięcia część adres początkowy zakresu, w którym symbol lokalnego jest poprawna.  
+Zwraca przesunięcia część adres początkowy zakresu, w którym symbolu lokalnego jest poprawna.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,23 +34,23 @@ HRESULT get_liveRangeStartAddressOffset (
   
 #### <a name="parameters"></a>Parametry  
  `offset`  
- [out] Zwraca przesunięcia część początkowy zakresu adresów.  
+ [out] Zwraca przesunięcia część rozpoczęcia zakresu adresów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 > [!NOTE]
->  Zwrócony kod błędu oznacza, że symbol nie ma informacji o zakresie na żywo.  
+>  Zwrócony kod błędu: oznacza, że symbol nie ma informacji o zakresie na żywo.  
   
 ## <a name="remarks"></a>Uwagi  
- Adres utworzone przez sekcji i przesunięcie jest początek zakresu, w którym symbol jest nieprawidłowy.  
+ Adres utworzone przez sekcję i przesunięcie to początek zakresu, w którym symbol jest poprawna.  
   
- Aby uzyskać sekcji część adresu, należy użyć [IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).  
+ Aby uzyskać sekcji część adresu, użyj [IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: Dia2.h  
   
- Biblioteki: diaguids.lib  
+ Biblioteka: diaguids.lib  
   
  Biblioteki DLL: msdia100.dll  
   

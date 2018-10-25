@@ -12,35 +12,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b46cb18e1972d22010ce356f1d9208f391f6d79
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2ccb9c11d39d0500eab0698dc2907ab983964753
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31580411"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881628"
 ---
 # <a name="markers-report"></a>Raport dotyczący znaczników
-Raport dotyczący znaczników wymieniono znaczników w wyświetlany przedział czasu.  Przesuwanie powiększanie lub ukrywanie pasm, może spowodować znaczników lub pojawiania się. Raport zawiera informacje o poszczególnych znaczników:  
+Raport dotyczący znaczników Wyświetla listę znaczników w wyświetlany przedział czasu.  Przesuwanie powiększanie lub ukrywanie pasm, może spowodować znaczniki do wyświetlone lub znikają. Raport zawiera informacje o poszczególnych znaczników:  
   
--   Czas, gdy rozpoczęto, względem początku śledzenia.  
+- Czas, kiedy go już się rozpoczął, względem początku śledzenia.  
   
--   Jego czas trwania. Czas trwania wynosi zero dla flagi i komunikaty, ponieważ stanowią one natychmiastowe.  
+- Czas jego trwania. Czas trwania jest zero dla flag i komunikatów, ponieważ stanowią one natychmiastowe.  
   
--   Identyfikator wątku, który wygenerował go.  
+- Identyfikator wątku, który ją wygenerowało.  
   
--   Dostawca zdarzenia śledzenia zdarzeń systemu Windows (ETW), która go wygenerowała.  
+- Dostawca zdarzeń śledzenia dla Windows (ETW), które ją wygenerowało.  
   
--   Seria znacznika, w którym został zapisany.  
+- Seria znacznika, w którym został zapisany.  
   
--   Kategoria zdarzenia, które należy do.  
+- Kategoria zdarzenia, dla której należy.  
   
--   Jej poziom ważności.  
+- Jej poziom ważności.  
   
--   Jego typ (zakres, Flaga lub komunikat).  
+- Jego typ (zakres, Flaga lub komunikat).  
   
--   Opis wysokiego poziomu co reprezentuje  
+- Co określa opis wysokiego poziomu  
   
- Wybierz **wyeksportować** przycisk, aby zapisać raport dotyczący znaczników do pliku CSV. Dane można użyć w pliku CSV z innych aplikacji lub narzędzi.  
+  Wybierz **wyeksportować** przycisk, aby zapisać raport dotyczący znaczników do pliku CSV. Można użyć danych w pliku CSV z innymi aplikacjami lub narzędzia.  
   
 > [!NOTE]
 >  Raport dotyczący znaczników można wyświetlić 1000 znaczników. Aby wyświetlić wszystkie znaczniki, należy wyeksportować pełny raport do pliku CSV.

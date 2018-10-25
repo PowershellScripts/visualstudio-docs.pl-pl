@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9cb57f2609fcd9a80e2a9e0dfd63637e6f700047
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 07ad47ee8d0232df5f528db659def421475e7b33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794416"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924248"
 ---
 # <a name="idebugpropertyenummembers"></a>IDebugProperty::EnumMembers
-Wylicza elementy członkowskie właściwości.  
+Wylicza właściwości elementów członkowskich.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,22 +41,22 @@ HRESULT EnumMembers (
   
 #### <a name="parameters"></a>Parametry  
  `dwFieldSpec`  
- [in] Określa `DBGPROP_INFO_FLAGS` stałe, które określają pola, które w strukturach właściwości debugowania wyliczany mają zostać wypełnione.  
+ [in] Określa `DBGPROP_INFO_FLAGS` stałych, które określają, pola, które w strukturach właściwości debugowania wyliczenia mają zostać wypełnione.  
   
  `nRadix`  
- [in] Podstawa ma być używana podczas interpretacji wszelkie informacje numeryczne.  
+ [in] Podstawy do użycia w interpretacji wszelkie dane liczbowe.  
   
  `refiid`  
- [in] Identyfikator IID jest przekazywany do filtrowania modułu wyliczającego. Uzyskanie identyfikatora IID jest jednym z `IDebugPropertyEnumType` interfejsów, które dziedziczą z `IDebugPropertyEnumType_All`.  
+ [in] IID jest przekazywany do filtrowania modułu wyliczającego. Identyfikator IID jest jednym z `IDebugPropertyEnumType` interfejsów, które dziedziczą z `IDebugPropertyEnumType_All`.  
   
  `ppEnum`  
- [out] Zwraca `IEnumDebugPropertyInfo` interfejsu, który wylicza właściwości elementów członkowskich.  
+ [out] Zwraca `IEnumDebugPropertyInfo` interfejs, który wylicza właściwości elementu członkowskiego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zwykle `S_OK`.  
+ Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
  [Interfejs IDebugPropertyEnumType_All](../../winscript/reference/idebugpropertyenumtype-all-interface.md)   
- [Interfejs IEnumDebugPropertyInfo](../../winscript/reference/ienumdebugpropertyinfo-interface.md)
+ [IEnumDebugPropertyInfo, interfejs](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f99523ea5c4ae955be86bfb9da1acd1f99143be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d4ee98e4a843227f1855a456fae0f698286b3dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893754"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
-Określa, czy jest definiowany określonego atrybutu niestandardowego.  
+Określa, jeśli zdefiniowano określonego atrybutu niestandardowego.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,10 +43,10 @@ int IsCustomAttributeDefined(
  [in] Nazwa atrybutu niestandardowego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli atrybut niestandardowy jest zdefiniowany, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`.  
+ Jeśli nie zdefiniowano atrybutu niestandardowego, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE`.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CDebugClassFieldSymbol** obiekt ujawniający [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugClassFieldSymbol** obiekt ujawniający [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interfejsu.  
   
 ```cpp  
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(  

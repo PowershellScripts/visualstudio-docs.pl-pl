@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a63dd4eae31b99646af04ceabe76e4edb946027
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ce16e3c2aca99acf6de9a7ce74c0c2ff46c0dcbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800935"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849037"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Przewodnik: Tworzenie pierwszego dostosowania na poziomie dokumentu dla programu Excel
   Ten Przewodnik wprowadzający dowiesz się, jak utworzyć dostosowywania poziomie dokumentu dla programu Microsoft Office Excel. Funkcje, które tworzysz w tego rodzaju rozwiązania są dostępne tylko wtedy, gdy wybrany skoroszyt jest otwarty. Nie możesz użyć dostosowywania poziomie dokumentu do zmiany całej aplikacji, na przykład wyświetlanie Nowa karta wstążki, gdy dowolny skoroszyt jest otwarty.  
@@ -31,17 +31,17 @@ ms.locfileid: "38800935"
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Tworzenie projektu skoroszytu programu Excel.  
+- Tworzenie projektu skoroszytu programu Excel.  
   
--   Dodawanie tekstu do arkusza, który znajduje się w Projektancie Visual Studio.  
+- Dodawanie tekstu do arkusza, który znajduje się w Projektancie Visual Studio.  
   
--   Pisanie kodu, który używa modelu obiektów programu Excel do dodawania tekstu w arkuszu dostosowany po jego otwarciu.  
+- Pisanie kodu, który używa modelu obiektów programu Excel do dodawania tekstu w arkuszu dostosowany po jego otwarciu.  
   
--   Tworzenie i uruchamianie projektu, aby ją przetestować.  
+- Tworzenie i uruchamianie projektu, aby ją przetestować.  
   
--   Czyszczenie zakończone projekt, aby usunąć z komputera dewelopera kompilacji niepotrzebne pliki i ustawienia zabezpieczeń.  
+- Czyszczenie zakończone projekt, aby usunąć z komputera dewelopera kompilacji niepotrzebne pliki i ustawienia zabezpieczeń.  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
@@ -54,35 +54,35 @@ ms.locfileid: "38800935"
   
 ### <a name="to-create-a-new-excel-workbook-project-in-visual-studio"></a>Aby utworzyć nowy projekt arkusza Excel w programie Visual Studio  
   
-1.  Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1. Rozpocznij [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.  
+2. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **projektu**.  
   
-3.  W okienku szablonów, rozwiń **Visual C#** lub **języka Visual Basic**, a następnie rozwiń węzeł **Office/SharePoint**.  
+3. W okienku szablonów, rozwiń **Visual C#** lub **języka Visual Basic**, a następnie rozwiń węzeł **Office/SharePoint**.  
   
-4.  W rozwiniętym okienku **Office/SharePoint** węzeł **dodatków pakietu Office** węzła.  
+4. W rozwiniętym okienku **Office/SharePoint** węzeł **dodatków pakietu Office** węzła.  
   
-5.  Na liście szablonów projektu wybierz projekt dodatku narzędzi VSTO programu Excel.  
+5. Na liście szablonów projektu wybierz projekt dodatku narzędzi VSTO programu Excel.  
   
-6.  W **nazwa** wpisz **FirstWorkbookCustomization**.  
+6. W **nazwa** wpisz **FirstWorkbookCustomization**.  
   
-7.  Kliknij przycisk **OK**.  
+7. Kliknij przycisk **OK**.  
   
-     **Visual Studio Tools dla pakietu Office, Kreator projektu** zostanie otwarty.  
+    **Visual Studio Tools dla pakietu Office, Kreator projektu** zostanie otwarty.  
   
-8.  Wybierz **Utwórz nowy dokument**i kliknij przycisk **OK**.  
+8. Wybierz **Utwórz nowy dokument**i kliknij przycisk **OK**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tworzy **FirstWorkbookCustomization** projektu i dodaje następujące pliki do projektu.  
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tworzy **FirstWorkbookCustomization** projektu i dodaje następujące pliki do projektu.  
   
-    -   *FirstWorkbookCustomization*xlsx — reprezentuje skoroszyt programu Excel w projekcie. Zawiera wszystkie arkusze i wykresy.  
+   - *FirstWorkbookCustomization*xlsx — reprezentuje skoroszyt programu Excel w projekcie. Zawiera wszystkie arkusze i wykresy.  
   
-    -   Sheet1 (*.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — arkusz, zapewniająca powierzchni projektowej i kod dla pierwszego arkusza w skoroszycie. Aby uzyskać więcej informacji, zobacz [element hosta arkusza](../vsto/worksheet-host-item.md).  
+   - Sheet1 (*.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — arkusz, zapewniająca powierzchni projektowej i kod dla pierwszego arkusza w skoroszycie. Aby uzyskać więcej informacji, zobacz [element hosta arkusza](../vsto/worksheet-host-item.md).  
   
-    -   Sheet2 — (*.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — arkusz, zapewniająca powierzchni projektowej i kod dla drugiego arkusza w skoroszycie.  
+   - Sheet2 — (*.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — arkusz, zapewniająca powierzchni projektowej i kod dla drugiego arkusza w skoroszycie.  
   
-    -   Sheet3 — (*.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — arkusz, zapewniająca powierzchni projektowej i kod dla trzeciego arkusza w skoroszycie.  
+   - Sheet3 — (*.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — arkusz, zapewniająca powierzchni projektowej i kod dla trzeciego arkusza w skoroszycie.  
   
-    -   Ten skoroszyt (*.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — zawiera powierzchnię projektu i kodu w przypadku dostosowań na poziomie skoroszytu. Aby uzyskać więcej informacji, zobacz [element hosta skoroszytu](../vsto/workbook-host-item.md).  
+   - Ten skoroszyt (*.vb* pliku dla języka Visual Basic lub *.cs* pliku dla języka Visual C#) — zawiera powierzchnię projektu i kodu w przypadku dostosowań na poziomie skoroszytu. Aby uzyskać więcej informacji, zobacz [element hosta skoroszytu](../vsto/workbook-host-item.md).  
   
      Plik kodu Arkusz1 zostanie automatycznie otwarty w projektancie.  
   

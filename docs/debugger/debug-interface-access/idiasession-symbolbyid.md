@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::symbolById | Dokumentacja firmy Microsoft
+title: Idiasession::symbolbyid — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e5e2815985aacd43603d24f1c6f4052b66c19c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8ca800c4409c9c3c1b72b625aa8cedac31e5b194
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467592"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911638"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
-Pobiera symbol przez jego unikatowy identyfikator.  
+Pobiera symbol według unikatowego identyfikatora.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,15 +41,15 @@ HRESULT symbolById (
  [out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) pobrać obiekt reprezentujący symbol.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Określony identyfikator jest używana wewnętrznie przez DIA SDK, aby zapewnić, że wszystkie symbole unikatowy unikatową wartość.  
+ Określony identyfikator jest unikatowa wartość używana wewnętrznie przez DIA SDK unikatowość wszystkie symbole.  
   
- Ta metoda może służyć, na przykład można pobrać symbol reprezentujący typ symbolu innego (Zobacz przykład).  
+ Ta metoda może służyć, na przykład, można pobrać symboli reprezentujący typ symbolu innego (Zobacz przykład).  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie pobierana [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) reprezentujący typ symbolu innego. Ten przykład przedstawia sposób użycia `symbolById` metody w sesji. Prostsze jest wywołanie [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md) metodę, aby bezpośrednio pobrać symbol typu.  
+ W tym przykładzie pobiera [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) reprezentujący typ symbolu innego. W tym przykładzie pokazano, jak używać `symbolById` metody w sesji. Prostszej metody jest wywołanie [idiasymbol::get_type —](../../debugger/debug-interface-access/idiasymbol-get-type.md) metodę, aby bezpośrednio pobrać symbol typu.  
   
 ```C++  
 IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)  

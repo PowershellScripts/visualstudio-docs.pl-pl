@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dffd06c7342b77f1e4293d50217a0c6a468bf18
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d7dfac01624d83518a749dd762837dfbea3d6e54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110227"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915298"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
-Zwraca informacje umożliwiające temu konstrukcji komunikatu o błędzie zrozumiałą dla użytkownika.  
+Zwraca informacje, które umożliwiają konstrukcji czytelny dla człowieka komunikat.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -51,28 +51,28 @@ int GetErrorMessage(
   
 #### <a name="parameters"></a>Parametry  
  `pMessageType`  
- [out] Zwraca wartość z zakresu od [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) wyliczenie opisujące typ komunikatu.  
+ [out] Zwraca wartość z zakresu od [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) wyliczenie, opisujące typ komunikatu.  
   
  `pbstrErrorFormat`  
- [out] Format komunikatu końcowego dla użytkownika (patrz "Uwagi", aby uzyskać szczegółowe informacje).  
+ [out] Format komunikatu końcowego użytkownika (zobacz "Uwagi", aby uzyskać szczegółowe informacje).  
   
  `hrErrorReason`  
  [out] Kod błędu: komunikat dotyczy.  
   
  `pdwType`  
- [out] Ważność błędu (Użyj stałe MB_XXX dla `MessageBox`, na przykład `MB_EXCLAMATION` lub `MB_WARNING`).  
+ [out] Ważność błędu (Użyj stałych MB_XXX dla `MessageBox`, na przykład `MB_EXCLAMATION` lub `MB_WARNING`).  
   
  `pbstrHelpFileName`  
- [out] Ścieżka do pliku pomocy (zestaw ma wartość null, jeśli plik pomocy nie istnieje).  
+ [out] Ścieżka do pliku pomocy (zestaw ma wartość null, jeśli nie ma żadnego pliku pomocy).  
   
  `pdwHelpId`  
- [out] Identyfikator tematu pomocy do wyświetlenia (wartość 0, jeśli ma tematu pomocy).  
+ [out] Identyfikator tematu pomocy do wyświetlenia (wartość 0, jeśli Brak tematu pomocy).  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Komunikat o błędzie powinien być sformatowany wzdłuż linii `"What I was doing.  %1"`. `"%1"` Będą następnie zastąpione przez obiekt wywołujący komunikat pochodzi z kodu błędu (który jest zwracany w `hrErrorReason`). `pMessageType` Parametr określa, że obiekt wywołujący wyświetlania ostatni komunikat o błędzie.  
+ Komunikat o błędzie powinien mieć format wzdłuż linii `"What I was doing.  %1"`. `"%1"` Będą następnie zastąpione przez obiekt wywołujący komunikat o błędzie, pochodzące z kodu błędu (który jest zwracany w `hrErrorReason`). `pMessageType` Parametr informuje obiekt wywołujący jak ostatni komunikat o błędzie powinien być wyświetlany.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)   

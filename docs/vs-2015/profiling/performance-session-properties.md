@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9ee879bec628628a19914a6fbc6236cad3fb5c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306153"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879119"
 ---
 # <a name="performance-session-properties"></a>Właściwości sesji wydajności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ A **sesji wydajności** umożliwia skonfigurowanie ustawień, które określają
   
  **Wymagania**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Możesz utworzyć **sesji wydajności** , uruchamiając **kreatora wydajności** lub za pomocą ręcznego tworzenia sesji. **Sesji wydajności** jest wyświetlany w **Eksplorator wydajności** po **sesji wydajności** została utworzona.  
+  Możesz utworzyć **sesji wydajności** , uruchamiając **kreatora wydajności** lub za pomocą ręcznego tworzenia sesji. **Sesji wydajności** jest wyświetlany w **Eksplorator wydajności** po **sesji wydajności** została utworzona.  
   
- Aby wyświetlić **sesji wydajności** właściwości, wybierz nazwę sesji, w **Eksplorator wydajności**, kliknij go prawym przyciskiem myszy, a następnie wybierz **właściwości**.  
+  Aby wyświetlić **sesji wydajności** właściwości, wybierz nazwę sesji, w **Eksplorator wydajności**, kliknij go prawym przyciskiem myszy, a następnie wybierz **właściwości**.  
   
- Sesja wydajności ma następujące strony właściwości:  
+  Sesja wydajności ma następujące strony właściwości:  
   
 ## <a name="general"></a>Ogólne  
  Te ustawienia umożliwiają wybór metody, można dodać kolekcji obiektów .NET i danych o okresie istnienia, aby określić domyślną lokalizację raportu profilowania i nazewnictwa konwencje.  
@@ -59,17 +59,17 @@ A **sesji wydajności** umożliwia skonfigurowanie ustawień, które określają
 ## <a name="sampling"></a>Próbkowania  
  Te ustawienia umożliwiają wybierz interwał próbkowania zdarzeń i próbkowania, podczas próbkowania jest używana jako metoda profilowania. Zdarzenie próbkowania służy do zbierania danych profilowania w określonym interwale. Na przykład, jeśli zdarzenie próbkowania cykli zegara, a interwał próbkowania jest ustawiony na 10 000 000, następnie danych profilowania są zbierane po co 10 milionów cykli zegara. Dostępne są następujące cztery przykładowe zdarzenia:  
   
--   Cykle zegara - procesora CPU związane problemy  
+- Cykle zegara - procesora CPU związane problemy  
   
--   Problemy związane z błędów stron — pamięci  
+- Problemy związane z błędów stron — pamięci  
   
--   System wywołuje — dla operacji We/Wy problemy związane z  
+- System wywołuje — dla operacji We/Wy problemy związane z  
   
--   Liczniki wydajności — problemy z wydajnością niskiego poziomu  
+- Liczniki wydajności — problemy z wydajnością niskiego poziomu  
   
--   Przykładowe dodatkowe zdarzenia może być określony w oparciu o dostępne liczniki wydajności  
+- Przykładowe dodatkowe zdarzenia może być określony w oparciu o dostępne liczniki wydajności  
   
- Aby uzyskać więcej informacji, zobacz [porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)  
+  Aby uzyskać więcej informacji, zobacz [porady: Wybieranie zdarzeń pobierania próbek](../profiling/how-to-choose-sampling-events.md)  
   
 ## <a name="binary"></a>plików binarnych  
  Te ustawienia umożliwiają określenie, czy chcesz przenieść instrumentowanego pliku binarnego do innej lokalizacji. Na przykład jeśli profilowany My.DLL i nie chcesz zmienić lokalizację instrumentowanych danych binarnych, utworzyć kopię zapasową o nazwie My.Orig.DLL My.DLL powstaje. Następnie My.DLL jest modyfikowany przez wstawienie sondy do zbierania danych. Jeśli zdecydujesz się zmienić lokalizację instrumentowanych danych binarnych, oryginalny plik binarny nie została zmieniona i instrumentowanego pliku binarnego jest kopiowany do określonej lokalizacji do użycia podczas instrumentacji.  

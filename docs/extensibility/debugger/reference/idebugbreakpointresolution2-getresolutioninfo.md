@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17e08e335f2f50967da2b566ef595717e07fc2d1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6e5ad731d94a7b60d3562683595354871b303d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103669"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870487"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
-Pobiera informacje o rozdzielczości punkt przerwania, opisujący ten punkt przerwania.  
+Pobiera informacje o rozdzielczości punkt przerwania, opisujący tego punktu przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,16 +43,16 @@ int GetResolutionInfo(
   
 #### <a name="parameters"></a>Parametry  
  `dwFields`  
- [in] Kombinacja flag z [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) wyliczenia, która określa, które pola `pBPResolutionInfo` parametru mają zostać wypełnione.  
+ [in] Kombinacja flag z [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) wyliczenie, które określają, które pola `pBPResolutionInfo` parametru są do wypełniania.  
   
  `pBPResolutionInfo`  
  [out] [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) struktury w celu wprowadzenia informacji na temat tego punktu przerwania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład implementuje tę metodę dla prostego `CDebugBreakpointResolution` obiekt ujawniający [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interfejsu.  
+ Poniższy przykład implementuje tej metody dla prostego `CDebugBreakpointResolution` obiekt ujawniający [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interfejsu.  
   
 ```  
 HRESULT CDebugBreakpointResolution::GetResolutionInfo(  

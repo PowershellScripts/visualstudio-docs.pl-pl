@@ -13,46 +13,46 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 266b3c4154c10f537cdc9dec78b0f0a036d94503
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 612ad5668ebb1033ef07dcad1fc07030d78e1643
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512595"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921213"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Porady: Tworzenie pliku vsct  
   
 Istnieje kilka sposobów, aby utworzyć konfigurację tabeli polecenia opartych na języku XML programu Visual Studio (*vsct*) pliku.  
   
--   Można utworzyć nowego pakietu VSPackage w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pakietu szablonu.  
+- Można utworzyć nowego pakietu VSPackage w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pakietu szablonu.  
   
--   Można użyć kompilatora konfiguracji tabeli polecenia opartego na języku XML, *Vsct.exe*, aby wygenerować plik z istniejącego *.ctc* pliku.  
+- Można użyć kompilatora konfiguracji tabeli polecenia opartego na języku XML, *Vsct.exe*, aby wygenerować plik z istniejącego *.ctc* pliku.  
   
--   Możesz użyć *Vsct.exe* do generowania *vsct* plików z istniejącej *.cto* pliku.  
+- Możesz użyć *Vsct.exe* do generowania *vsct* plików z istniejącej *.cto* pliku.  
   
--   Można ręcznie utworzyć nowy *vsct* pliku.  
+- Można ręcznie utworzyć nowy *vsct* pliku.  
   
- W tym artykule wyjaśniono, jak ręcznie utworzyć nową *vsct* pliku.  
+  W tym artykule wyjaśniono, jak ręcznie utworzyć nową *vsct* pliku.  
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>Aby ręcznie utworzyć nowego pliku vsct  
   
-1.  Rozpocznij [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+1. Rozpocznij [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
-2.  Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **pliku**.  
+2. Na **pliku** menu wskaż **New**, a następnie kliknij przycisk **pliku**.  
   
-3.  W **szablony** okienku kliknij **pliku XML** a następnie kliknij przycisk **Otwórz**.  
+3. W **szablony** okienku kliknij **pliku XML** a następnie kliknij przycisk **Otwórz**.  
   
-4.  Na **widoku** menu, kliknij przycisk **właściwości** Aby wyświetlić jej właściwości w pliku XML.  
+4. Na **widoku** menu, kliknij przycisk **właściwości** Aby wyświetlić jej właściwości w pliku XML.  
   
-5.  W **właściwości** okna, kliknij przycisk **Przeglądaj** znajdujący się na **schematów** właściwości.  
+5. W **właściwości** okna, kliknij przycisk **Przeglądaj** znajdujący się na **schematów** właściwości.  
   
-6.  Na liście schematy XSD, wybierz *vsct.xsd* schematu. Jeśli nie jest na liście, kliknij przycisk **Dodaj** a następnie znajdź plik na dysku lokalnym. Kliknij przycisk **OK** po zakończeniu.  
+6. Na liście schematy XSD, wybierz *vsct.xsd* schematu. Jeśli nie jest na liście, kliknij przycisk **Dodaj** a następnie znajdź plik na dysku lokalnym. Kliknij przycisk **OK** po zakończeniu.  
   
-7.  W pliku XML, wpisz *< CommandTable* , a następnie naciśnij klawisz **kartę**. Tag zamykający, wpisując *>*.  
+7. W pliku XML, wpisz *< CommandTable* , a następnie naciśnij klawisz **kartę**. Tag zamykający, wpisując *>*.  
   
-     Ta akcja powoduje utworzenie prostej *vsct* pliku.  
+    Ta akcja powoduje utworzenie prostej *vsct* pliku.  
   
-8.  Wypełnij elementów pliku XML, który chcesz dodać, zgodnie z [odwołanie do schematu VSCT XML](../../extensibility/vsct-xml-schema-reference.md). Aby uzyskać więcej informacji, zobacz [tworzenie plików vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
+8. Wypełnij elementów pliku XML, który chcesz dodać, zgodnie z [odwołanie do schematu VSCT XML](../../extensibility/vsct-xml-schema-reference.md). Aby uzyskać więcej informacji, zobacz [tworzenie plików vsct](../../extensibility/internals/authoring-dot-vsct-files.md)  
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
@@ -62,28 +62,28 @@ Można tworzyć oparte na języku XML *vsct* plików z istniejącej tabeli polec
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Do utworzenia pliku vsct z pliku .ctc  
   
-1.  Uzyskaj kopię programu języka Perl.  
+1. Uzyskaj kopię programu języka Perl.  
   
-2.  Uzyskaj kopię skryptu Perl *ConvertCTCToVSCT.pl*, która zwykle znajduje się w  *\<ścieżka instalacji programu Visual Studio SDK > \VisualStudioIntegration\Tools\bin* folderu.  
+2. Uzyskaj kopię skryptu Perl *ConvertCTCToVSCT.pl*, która zwykle znajduje się w  *\<ścieżka instalacji programu Visual Studio SDK > \VisualStudioIntegration\Tools\bin* folderu.  
   
-3.  Uzyskaj kopię programu *.ctc* pliku źródłowego, który ma zostać przekonwertowany.  
+3. Uzyskaj kopię programu *.ctc* pliku źródłowego, który ma zostać przekonwertowany.  
   
-4.  Umieść pliki w tym samym katalogu.  
+4. Umieść pliki w tym samym katalogu.  
   
-5.  W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] polecenia monitu okna, przejdź do katalogu.  
+5. W [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] polecenia monitu okna, przejdź do katalogu.  
   
-6.  Typ  
+6. Typ  
   
-    ```  
-    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  
-    ```  
+   ```  
+   perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  
+   ```  
   
-     gdzie *PkgCmd.ctc* nazywa się *.ctc* pliku i *PkgCmd.vsct* nazywa się *vsct* pliku, który chcesz utworzyć.  
+    gdzie *PkgCmd.ctc* nazywa się *.ctc* pliku i *PkgCmd.vsct* nazywa się *vsct* pliku, który chcesz utworzyć.  
   
-     Ta akcja powoduje utworzenie nowego *vsct* plik źródłowy tabeli poleceń XML. Plik można skompilować przy użyciu *Vsct.exe*, kompilatora VSCT, jak będą inne *vsct* pliku.  
+    Ta akcja powoduje utworzenie nowego *vsct* plik źródłowy tabeli poleceń XML. Plik można skompilować przy użyciu *Vsct.exe*, kompilatora VSCT, jak będą inne *vsct* pliku.  
   
-    > [!NOTE]
-    >  Można zwiększyć czytelność *vsct* pliku przez ponowne formatowanie komentarze XML.  
+   > [!NOTE]
+   >  Można zwiększyć czytelność *vsct* pliku przez ponowne formatowanie komentarze XML.  
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 

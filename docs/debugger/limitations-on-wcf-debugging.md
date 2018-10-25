@@ -18,23 +18,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 001393a856dc374d92e11ff2d4707346a35aea12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280653"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887426"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Ograniczenia debugowania WCF
 Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:  
   
--   Debugowany proces klienta, który wywołuje usługę. Debuger nie wchodzi do usługi. Usługa nie ma znajdować się w tym samym rozwiązaniu jako aplikację kliencką.  
+- Debugowany proces klienta, który wywołuje usługę. Debuger nie wchodzi do usługi. Usługa nie ma znajdować się w tym samym rozwiązaniu jako aplikację kliencką.  
   
--   Debugowany proces klienta, który wysyła żądanie do usługi. Usługa musi być częścią rozwiązania.  
+- Debugowany proces klienta, który wysyła żądanie do usługi. Usługa musi być częścią rozwiązania.  
   
--   Możesz użyć **dołączyć do procesu** do dołączenia do usługi, które jest aktualnie uruchomione. Debugowanie rozpoczyna się w usłudze.  
+- Możesz użyć **dołączyć do procesu** do dołączenia do usługi, które jest aktualnie uruchomione. Debugowanie rozpoczyna się w usłudze.  
   
- W tym temacie opisano ograniczenia dotyczące tych scenariuszy.  
+  W tym temacie opisano ograniczenia dotyczące tych scenariuszy.  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>Ograniczenia dotyczące Wkraczanie do usługi  
  Aby wkraczać do usługi z aplikacji klienckich, które jest debugowany, muszą być spełnione następujące warunki:  
@@ -61,19 +61,19 @@ Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>Ograniczenia dotyczące automatyczne dołączanie do usługi  
  Automatyczne dołączanie do usługi ma następujące ograniczenia:  
   
--   Usługa musi być częścią [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania debugowania.  
+- Usługa musi być częścią [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozwiązania debugowania.  
   
--   Usługa musi być obsługiwana. Może być częścią projektu witryny sieci Web (System plików i HTTP), projekt aplikacji sieci Web (System plików i HTTP) lub projektu biblioteki usługi WCF. Projekty biblioteki usługi WCF może być Usługa biblioteki lub biblioteki usługi przepływu pracy.  
+- Usługa musi być obsługiwana. Może być częścią projektu witryny sieci Web (System plików i HTTP), projekt aplikacji sieci Web (System plików i HTTP) lub projektu biblioteki usługi WCF. Projekty biblioteki usługi WCF może być Usługa biblioteki lub biblioteki usługi przepływu pracy.  
   
--   Usługa musi być wywoływane z klienta programu WCF.  
+- Usługa musi być wywoływane z klienta programu WCF.  
   
--   Debugowanie musi być włączone w pliku Web.config lub app.config następującym kodem:  
+- Debugowanie musi być włączone w pliku Web.config lub app.config następującym kodem:  
   
-    ```xml
-    <system.web>  
-      <compilation debug="true" />  
-    <system.web>  
-    ```  
+  ```xml
+  <system.web>  
+    <compilation debug="true" />  
+  <system.web>  
+  ```  
   
 ## <a name="self-hosting"></a>Hostingu samodzielnego  
  A *usługi hosta samodzielnego* to usługa WCF, która nie jest uruchamiane w usługach IIS, Host usługi WCF, lub [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serwera projektowego. Aby uzyskać informacje o tym, jak można debugować samodzielnie hostowanej usługi, zobacz [porady: debugowanie usług WCF własne](../debugger/how-to-debug-a-self-hosted-wcf-service.md).  

@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a52c65823bb5e4f6ee93522648b235feba691d0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f5dc2c5f053d14a42bac59f56f58d4aa6227980c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925725"
 ---
 # <a name="cvcputypee"></a>CV_CPU_TYPE_e
-Określa docelowy procesora.  
+Określa procesor docelowy.  
   
 > [!NOTE]
 >  Procesor został określony w elemencie wyliczenie po `CV_CFL_*` prefiks.  
@@ -97,7 +97,7 @@ typedef enum CV_CPU_TYPE_e {
 ```  
   
 ## <a name="remarks"></a>Uwagi  
- To wyliczenie wartości są zwracane przez wywołanie do [IDiaSymbol::get_platform](../../debugger/debug-interface-access/idiasymbol-get-platform.md) metody.  
+ Wartości w tym wyliczeniu są zwracane przez wywołanie [idiasymbol::get_platform —](../../debugger/debug-interface-access/idiasymbol-get-platform.md) metody.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: cvconst.h  

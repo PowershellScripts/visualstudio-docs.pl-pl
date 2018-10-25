@@ -16,12 +16,12 @@ ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cfade1c45e7299450a47c290d3746e4e36817319
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38d1ad621b22e9007ed36e642b95b0999890521a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231526"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878365"
 ---
 # <a name="bitmap-element"></a>Bitmap, element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Definiuje mapę bitową. Mapa bitowa jest ładowany z zasobu lub z pliku.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagane. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.<br /><br /> Atrybut guid dla mapy bitowej nie jest skojarzony z dowolnego pakietu VSPackage lub inne grupy poleceń.  Powinna mieć unikatowe dla definicji mapy bitowej i nie powinna być używana do żadnych innych celów.|  
+|Identyfikator GUID|Wymagana. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.<br /><br /> Atrybut guid dla mapy bitowej nie jest skojarzony z dowolnego pakietu VSPackage lub inne grupy poleceń.  Powinna mieć unikatowe dla definicji mapy bitowej i nie powinna być używana do żadnych innych celów.|  
 |Atrybut resID|Identyfikator GUID/ID identyfikator polecenia. Wymagany jest resID lub atrybut href.<br /><br /> Atrybut resID jest identyfikator zasobu liczba całkowita, określająca paska mapy bitowej, który ma być załadowane podczas tabeli poleceń scalania.  Podczas ładowania tabeli poleceń, mapy bitowe, określonego przez identyfikator zasobu zostaną załadowane z zasobu tego samego modułu.|  
 |usedList|Wymagane, jeśli atrybut resID jest obecny. Wybiera dostępne obrazy paska mapy bitowej.|  
 |href|Ścieżka do mapy bitowej. Wymagany jest resID lub atrybut href.<br /><br /> Ścieżka include jest wyszukiwana w plik wskazany obraz, który jest osadzony w wynikowego pliku binarnego.  Polecenie scalania tabeli obraz, który jest kopiowany, a nie wyszukiwanie dodatkowych zasobów obciążenia jest wymagana ani.  Jeśli nie ma atrybutu usedList, wszystkie obrazy w pasku są dostępne. **Uwaga:** obrazy mogą być dostarczane w jednym z kilku formatów, które zawierają bmp, PNG i .gif.  Wcześniejsze wersje kompilatora nie obsługiwał obrazy bitmapowe 32-bitowych, których dane alfa przezroczystości częściowe. Obejście problemu w przypadku tych wersji jest w formacie PNG.|  

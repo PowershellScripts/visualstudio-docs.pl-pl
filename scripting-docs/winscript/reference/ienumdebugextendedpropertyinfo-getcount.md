@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb58bd6fef639091cec4cce1750833bd47e8763e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d454fd82317d1e021b27da3366138bdf1a8091fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794332"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924177"
 ---
 # <a name="ienumdebugextendedpropertyinfogetcount"></a>IEnumDebugExtendedPropertyInfo::GetCount
 Pobiera liczbę `ExtendedDebugPropertyInfo` struktury modułu wyliczającego.  
@@ -41,8 +41,8 @@ HRESULT GetCount (
  [out] Zwraca liczbę `ExtendedDebugPropertyInfo` struktury modułu wyliczającego.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zwykle `S_OK`.  
+ Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Interfejs IEnumDebugExtendedPropertyInfo](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
- [Struktura ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)
+ [ExtendedDebugPropertyInfo, struktura](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

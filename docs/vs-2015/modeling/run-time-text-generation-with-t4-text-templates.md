@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214750"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920134"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generowanie tekstu czasu wykonywania przy użyciu szablonów tekstowych T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -295,17 +295,17 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>Wzorzec dziedziczenia: fragmenty w metodach Base  
  We wzorcu używanych w przykładzie poniżej Zwróć uwagę następujące kwestie:  
   
--   Klasa bazowa `SharedFragments` definiuje metody w ramach bloki cech klas `<#+ ... #>`.  
+- Klasa bazowa `SharedFragments` definiuje metody w ramach bloki cech klas `<#+ ... #>`.  
   
--   Klasa bazowa nie zawiera bezpłatny tekstu. Zamiast tego wszystkie bloki tekstu występować wewnątrz metody funkcji klasy.  
+- Klasa bazowa nie zawiera bezpłatny tekstu. Zamiast tego wszystkie bloki tekstu występować wewnątrz metody funkcji klasy.  
   
--   Klasy pochodnej wywołuje metody zdefiniowane w `SharedFragments`.  
+- Klasy pochodnej wywołuje metody zdefiniowane w `SharedFragments`.  
   
--   Wywołania aplikacji `TextTransform()` metody klasy pochodnej, ale nie przekształca klasy bazowej `SharedFragments`.  
+- Wywołania aplikacji `TextTransform()` metody klasy pochodnej, ale nie przekształca klasy bazowej `SharedFragments`.  
   
--   Klasy podstawowe i pochodne są szablony tekstowe czasu wykonywania: oznacza to, że **narzędzie niestandardowe** właściwość jest ustawiona na **TextTemplatingFilePreprocessor**.  
+- Klasy podstawowe i pochodne są szablony tekstowe czasu wykonywania: oznacza to, że **narzędzie niestandardowe** właściwość jest ustawiona na **TextTemplatingFilePreprocessor**.  
   
- **SharedFragments.tt:**  
+  **SharedFragments.tt:**  
   
 ```csharp  
 <#@ template language="C#" #>  

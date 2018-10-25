@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: e6061918df2110599731c0ac57340ae5319a8a02
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f39479c9421ab87caf7c918e05be89272f0fb4de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887313"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch, projektant działań
 <xref:System.Activities.Statements.PickBranch> Zapewnia oparte na zdarzeniach ścieżką wykonywania w ramach <xref:System.Activities.Statements.Pick> działanie, które mogą być wyzwalane przez zdarzenia przychodzącego.  
@@ -34,21 +34,21 @@ ms.locfileid: "49301889"
   
  Istnieją dwa sposoby dodawania <xref:System.Activities.Statements.PickBranch> obiekty do kolekcji <xref:System.Activities.Statements.Pick> obiektu: przeciąganie i upuszczanie **PickBranch** projektanta z **przybornika** lub za pomocą menu kontekstowego w ramach **wybierz** powierzchni projektu:  
   
-1.  **PickBranch** Projektant <xref:System.Activities.Statements.PickBranch> kiedy zostanie przeciągnięty z **przybornika** i upuścić na jednej z gałęzi **wybierz** projektanta działań na [!INCLUDE[wfd2](../includes/wfd2-md.md)] powierzchni. Nowy <xref:System.Activities.Statements.PickBranch> obiektów, które można umieścić wewnątrz <xref:System.Activities.Statements.Pick> projektanta w lewo lub prawo do wszystkich istniejących <xref:System.Activities.Statements.PickBranch> elementów znajdujących się już w kolekcji. Podczas przeciągania **PickBranch** projektanta na **wybierz** projektanta za pomocą myszy **wybierz** projektanta używa pionowy pasek niebieski szare, aby wskazać miejsce <xref:System.Activities.Statements.PickBranch> jest dodawany do umieszczenia danego myszy.  
+1. **PickBranch** Projektant <xref:System.Activities.Statements.PickBranch> kiedy zostanie przeciągnięty z **przybornika** i upuścić na jednej z gałęzi **wybierz** projektanta działań na [!INCLUDE[wfd2](../includes/wfd2-md.md)] powierzchni. Nowy <xref:System.Activities.Statements.PickBranch> obiektów, które można umieścić wewnątrz <xref:System.Activities.Statements.Pick> projektanta w lewo lub prawo do wszystkich istniejących <xref:System.Activities.Statements.PickBranch> elementów znajdujących się już w kolekcji. Podczas przeciągania **PickBranch** projektanta na **wybierz** projektanta za pomocą myszy **wybierz** projektanta używa pionowy pasek niebieski szare, aby wskazać miejsce <xref:System.Activities.Statements.PickBranch> jest dodawany do umieszczenia danego myszy.  
   
-2.  Kliknij prawym przyciskiem myszy **wybierz** Projektant działań (, ale nie w obrębie **PickBranch** designer) do uzyskania menu kontekstowe i wybierz **utwórz gałąź** Aby dodać nowy <xref:System.Activities.Statements.PickBranch>. Należy zauważyć, że nowy <xref:System.Activities.Statements.PickBranch> zostanie dodany do istniejącego po prawej stronie <xref:System.Activities.Statements.PickBranch> obiekty w **wybierz** projektanta.  
+2. Kliknij prawym przyciskiem myszy **wybierz** Projektant działań (, ale nie w obrębie **PickBranch** designer) do uzyskania menu kontekstowe i wybierz **utwórz gałąź** Aby dodać nowy <xref:System.Activities.Statements.PickBranch>. Należy zauważyć, że nowy <xref:System.Activities.Statements.PickBranch> zostanie dodany do istniejącego po prawej stronie <xref:System.Activities.Statements.PickBranch> obiekty w **wybierz** projektanta.  
   
- **PickBranch** projektanta można rozszerzyć, aby wyświetlić **wyzwalacza** i **akcji** pola lub zwinięte, klikając double daszka po prawej stronie ich nagłówki. Edytuj <xref:System.Activities.Statements.PickBranch.Trigger%2A> i <xref:System.Activities.Statements.PickBranch.Action%2A> każdego <xref:System.Activities.Statements.PickBranch> upuszczając działań na **wyzwalacza** i **akcji** pola ich twórców.  
+   **PickBranch** projektanta można rozszerzyć, aby wyświetlić **wyzwalacza** i **akcji** pola lub zwinięte, klikając double daszka po prawej stronie ich nagłówki. Edytuj <xref:System.Activities.Statements.PickBranch.Trigger%2A> i <xref:System.Activities.Statements.PickBranch.Action%2A> każdego <xref:System.Activities.Statements.PickBranch> upuszczając działań na **wyzwalacza** i **akcji** pola ich twórców.  
   
- <xref:System.Activities.Statements.PickBranch> Obiekty w <xref:System.Activities.Statements.Pick.Branches%2A> zbiór <xref:System.Activities.Statements.Pick> obiektów, można zmienić kolejności, przeciągając i upuszczając je do nowej lokalizacji w ramach **wybierz** projektanta. **Wybierz** projektanta używa pionowy pasek niebieski szare, aby wskazać miejsce <xref:System.Activities.Statements.PickBranch> jest dodawany do umieszczenia danego myszy.  
+   <xref:System.Activities.Statements.PickBranch> Obiekty w <xref:System.Activities.Statements.Pick.Branches%2A> zbiór <xref:System.Activities.Statements.Pick> obiektów, można zmienić kolejności, przeciągając i upuszczając je do nowej lokalizacji w ramach **wybierz** projektanta. **Wybierz** projektanta używa pionowy pasek niebieski szare, aby wskazać miejsce <xref:System.Activities.Statements.PickBranch> jest dodawany do umieszczenia danego myszy.  
   
- Istnieją dwa sposoby, aby usunąć <xref:System.Activities.Statements.PickBranch>:  
+   Istnieją dwa sposoby, aby usunąć <xref:System.Activities.Statements.PickBranch>:  
   
-1.  Wybierz **PickBranch** projektanta i usuń go.  
+3. Wybierz **PickBranch** projektanta i usuń go.  
   
-2.  Wybierz **PickBranch** projektanta, kliknij prawym przyciskiem myszy uzyskać menu kontekstowe i wybierz **Usuń**.  
+4. Wybierz **PickBranch** projektanta, kliknij prawym przyciskiem myszy uzyskać menu kontekstowe i wybierz **Usuń**.  
   
- Pamiętaj o wybraniu **PickBranch** projektanta, jak wybór jednego z działań wewnątrz jego **wyzwalacza** lub **akcji** pola przez pomyłkę spowoduje usunięcie jednej z tych działań i nie <xref:System.Activities.Statements.PickBranch> obiektu.  
+   Pamiętaj o wybraniu **PickBranch** projektanta, jak wybór jednego z działań wewnątrz jego **wyzwalacza** lub **akcji** pola przez pomyłkę spowoduje usunięcie jednej z tych działań i nie <xref:System.Activities.Statements.PickBranch> obiektu.  
   
 ### <a name="pickbranch-properties-in-the-workflow-designer"></a>Właściwości PickBranch w Projektancie przepływu pracy  
  W poniższej tabeli przedstawiono najbardziej przydatne <xref:System.Activities.Statements.PickBranch> właściwości i opisuje sposób używania ich w [!INCLUDE[wfd2](../includes/wfd2-md.md)].  

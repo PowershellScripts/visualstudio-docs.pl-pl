@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbd4fc3abcee9cc7cdea9c078abfaba0b6df5ba7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c9fae6967cc9b37938b83f61a10f8a6a85804a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920433"
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
-Zwraca nazwy skojarzonej z określony token podany obiekt jego metadanych.  
+Zwraca nazwę skojarzone z tokenem określony, biorąc pod uwagę jej obiektu metadanych.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -44,19 +44,19 @@ int GetNameFromToken (
   
 #### <a name="parameters"></a>Parametry  
  `pMetadataImport`  
- [in] Obiekt zawierający informacje o metadanych.  
+ [in] Obiekt, który zawiera informacje o metadanych.  
   
  `dwToken`  
- [in] Token, aby go nazwać.  
+ [in] Token do jej nazwać.  
   
  `pbstrName`  
- [out] Nazwa, która odpowiada tokenu.  
+ [out] Nazwa, która odnosi się do tokenu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę do **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę, aby uzyskać **CDebugSymbolProvider** obiekt ujawniający [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interfejsu.  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetNameFromToken(  

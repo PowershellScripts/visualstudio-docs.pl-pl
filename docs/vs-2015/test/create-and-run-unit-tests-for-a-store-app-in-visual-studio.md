@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: ea2cf8293a0969a152e38304b469e0b4042073c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dc5c40fbabcba4e9f8aab230f21449cabba2a622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891235"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Tworzenie i Uruchamianie testów jednostkowych dla aplikacji Store w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,12 +30,12 @@ Narzędzia do testów jednostkowych programu Visual Studio 2012 Express for Wind
   
 > [!NOTE]
 >  W tematach w tej sekcji opisano funkcje programu Visual Studio 2012 Express for Windows 8. Visual Studio Ultimate, Premium programu VS i VS Professional zapewnia dodatkowe funkcje testów jednostkowych.  
->   
->  -   W programie VS Ultimate, Premium programu VS i VS Professional można użyć dowolnego środowiska testów jednostkowych innych firm lub otwartego źródła został utworzony karty dodatku dla programu Microsoft Test Explorer. Można również analizować i wyświetlanie informacji o pokryciu kodu dla testów za pomocą programu VS Ultimate i Premium programu VS.  
-> -   W programie VS Ultimate można uruchomić testów po każdej kompilacji. Można również użyć Microsoft Fakes framework izolacji dla kodu zarządzanego skoncentrować się testy na własny kod, zastępując kod testu systemu i innych firm funkcjonalność.  
-> -   **JavaScript**. Testowanie jednostek języka JavaScript nie jest dostępny w środowisku IDE programu Visual Studio Express for Windows 8. W Visual Studio Professional, Premium i Ultimate platform testów jednostkowych dla języka JavaScript są dostępne jako rozszerzenia w galerii Visual Studio. Możesz również testowanie kodu JavaScript przy użyciu jednej autonomicznej innych firm lub otworzyć struktur testów jednostek JavaScript źródła.  
->   
->  Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md) w bibliotece MSDN.  
+> 
+> - W programie VS Ultimate, Premium programu VS i VS Professional można użyć dowolnego środowiska testów jednostkowych innych firm lub otwartego źródła został utworzony karty dodatku dla programu Microsoft Test Explorer. Można również analizować i wyświetlanie informacji o pokryciu kodu dla testów za pomocą programu VS Ultimate i Premium programu VS.  
+>   -   W programie VS Ultimate można uruchomić testów po każdej kompilacji. Można również użyć Microsoft Fakes framework izolacji dla kodu zarządzanego skoncentrować się testy na własny kod, zastępując kod testu systemu i innych firm funkcjonalność.  
+>   -   **JavaScript**. Testowanie jednostek języka JavaScript nie jest dostępny w środowisku IDE programu Visual Studio Express for Windows 8. W Visual Studio Professional, Premium i Ultimate platform testów jednostkowych dla języka JavaScript są dostępne jako rozszerzenia w galerii Visual Studio. Możesz również testowanie kodu JavaScript przy użyciu jednej autonomicznej innych firm lub otworzyć struktur testów jednostek JavaScript źródła.  
+> 
+>   Aby uzyskać więcej informacji, zobacz [swój kod testu jednostkowego](../test/unit-test-your-code.md) w bibliotece MSDN.  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Test jednostkowy w języku C#](../test/unit-testing-visual-csharp-code-in-a-store-app.md)  

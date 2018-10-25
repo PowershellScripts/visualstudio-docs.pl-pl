@@ -17,25 +17,25 @@ caps.latest.revision: 23
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1332c335387342d381c1e0030c3c66003c3528b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5bcdb1e026808071167b23b829597a4d28775c02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175854"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880666"
 ---
 # <a name="demo-sample"></a>Przykład
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ten poniższe procedury pokazują, jak utworzyć przykład dla [wskazówki: analizowanie kodu C/C++ pod względem wad](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Utwórz procedury:  
   
--   A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania o nazwie CppDemo.  
+- A [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania o nazwie CppDemo.  
   
--   Projekt biblioteki statycznej o nazwie CodeDefects.  
+- Projekt biblioteki statycznej o nazwie CodeDefects.  
   
--   Projekt biblioteki statycznej o nazwie adnotacji.  
+- Projekt biblioteki statycznej o nazwie adnotacji.  
   
- Procedury również podać kod dla plików nagłówka, jak i .cpp bibliotek statycznych.  
+  Procedury również podać kod dla plików nagłówka, jak i .cpp bibliotek statycznych.  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Tworzenie rozwiązania CppDemo i projektu CodeDefects  
   

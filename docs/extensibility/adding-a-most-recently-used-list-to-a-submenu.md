@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d76cf493c20966a989d559b89da20cf5e24247e
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: d140fed32ac3816b75e13496dc3507fc728f7d26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916533"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Dodaj listy ostatnio używanych elementów do podmenu
 W tym przewodniku opiera się na pokazach w [dodawanie podmenu do menu](../extensibility/adding-a-submenu-to-a-menu.md)i przedstawiono sposób dodawania listy dynamicznych elementów do podmenu. Lista dynamiczna stanowi podstawę do tworzenia list najbardziej ostatnio używanych elementów.  
@@ -38,9 +38,9 @@ W tym przewodniku opiera się na pokazach w [dodawanie podmenu do menu](../exten
   
 ## <a name="create-an-extension"></a>Tworzenie rozszerzenia  
   
--   Postępuj zgodnie z procedurami w [dodawanie podmenu do menu](../extensibility/adding-a-submenu-to-a-menu.md) utworzyć podmenu, który jest modyfikowany w poniższych procedurach.  
+- Postępuj zgodnie z procedurami w [dodawanie podmenu do menu](../extensibility/adding-a-submenu-to-a-menu.md) utworzyć podmenu, który jest modyfikowany w poniższych procedurach.  
   
- W procedurach przedstawionych w tym przewodniku przyjęto założenie, że nazwa pakietu VSPackage jest `TopLevelMenu`, czyli nazwę, która jest używana w [dodać menu na pasku menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
+  W procedurach przedstawionych w tym przewodniku przyjęto założenie, że nazwa pakietu VSPackage jest `TopLevelMenu`, czyli nazwę, która jest używana w [dodać menu na pasku menu programu Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md).  
   
 ## <a name="create-a-dynamic-item-list-command"></a>Utwórz polecenie dynamicznego elementu listy  
   

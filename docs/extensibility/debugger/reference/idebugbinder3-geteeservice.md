@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56c97e9fc7e5505578533c9e7b958a73dc8d2380
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b283ecf3a21f5a5b9246a628a959b4a271c884b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102590"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866665"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Ta metoda zwraca żądanej usługi.  
@@ -59,10 +59,10 @@ Int GetEEService(
  [out] Interfejs do żądanej usługi.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Przekaż `IID` dla [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) interfejsu (`IID_IEEVisualizerServiceProvider`) Jeśli usługa typu wizualizatora jest dostępna. Jeśli tak, może uzyskać ewaluatora wyrażenia [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) interfejs do obsługi wizualizatorach typu. Zobacz [Visualizing i wyświetlanie danych](../../../extensibility/debugger/visualizing-and-viewing-data.md) szczegółowe informacje.  
+ Przekaż `IID` dla [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) interfejsu (`IID_IEEVisualizerServiceProvider`) aby zobaczyć, czy usługa Wizualizator typów jest dostępna. Jeśli tak, można uzyskać Ewaluator wyrażeń [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) wizualizatorów typu obsługiwany przez interfejs. Zobacz [Visualizing i wyświetlanie danych](../../../extensibility/debugger/visualizing-and-viewing-data.md) Aby uzyskać szczegółowe informacje.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   

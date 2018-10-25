@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: fd51bd397e6db3728c10f52db68d45e226fb605b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ffe88fb54da26468ca510a2f1a7ab6170d88db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251046"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881725"
 ---
 # <a name="how-to-install-sample-databases"></a>Porady: instalacja przykładowych baz danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,11 +96,11 @@ Wiele przykładów danych wymaga możliwości podłączenia do Northwind, Pubs i
   
 #### <a name="to-install-the-northwind-sample-database-for-microsoft-access"></a>Aby zainstalować przykładową bazę danych Northwind dla programu Microsoft Access  
   
-1.  W programie Microsoft Access 2010 lub nowszej, wyszukiwanie szablonów online Northwind i wybierz polecenie **Desktop Northwind 2007 przykładowej bazy danych**.  
+1. W programie Microsoft Access 2010 lub nowszej, wyszukiwanie szablonów online Northwind i wybierz polecenie **Desktop Northwind 2007 przykładowej bazy danych**.  
   
-2.  W programie Microsoft Access należy zapisać plik bazy danych jako Northwind.accdb.  
+2. W programie Microsoft Access należy zapisać plik bazy danych jako Northwind.accdb.  
   
- Nowe rozszerzenie dla baz danych programu Access to accdb. Zobacz [programowanie danych przy użyciu programu Microsoft Access 2010](http://msdn.microsoft.com/library/office/ff965871.aspx). Aby połączyć z bazą danych Northwind za pomocą programu Access, zobacz [jak: łączenie z bazą danych Northwind](../data-tools/how-to-connect-to-the-northwind-database.md).  
+   Nowe rozszerzenie dla baz danych programu Access to accdb. Zobacz [programowanie danych przy użyciu programu Microsoft Access 2010](http://msdn.microsoft.com/library/office/ff965871.aspx). Aby połączyć z bazą danych Northwind za pomocą programu Access, zobacz [jak: łączenie z bazą danych Northwind](../data-tools/how-to-connect-to-the-northwind-database.md).  
   
 ## <a name="net-framework-security"></a>Zabezpieczenia.NET Framework  
  Przykładowe bazy danych są wyłącznie do celów informacyjnych i nie muszą pokazywać najlepszych rozwiązań zabezpieczeń.  

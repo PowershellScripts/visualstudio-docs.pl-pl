@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e44f70741e6f47bc628a7952979bead0bfba23d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67885ea85c1ac171fa3a22b025a6e74c969e6c54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883344"
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
-Pobiera informacji na temat tego, czy moduł reprezentuje kod użytkownika lub nie.  
+Pobiera informacji na temat tego, czy moduł reprezentuje kod użytkownika, czy nie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,10 +41,10 @@ int IsUserCode(
   
 #### <a name="parameters"></a>Parametry  
  `pfUser`  
- [out] Różna od zera (`TRUE`) Jeśli moduł reprezentuje kod użytkownika, zero (`FALSE`) Jeśli nie.  
+ [out] Wartość różną od zera (`TRUE`) moduł reprezentuje kod użytkownika, wartość zero (`FALSE`) Jeśli nie jest.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

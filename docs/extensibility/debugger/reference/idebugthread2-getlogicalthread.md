@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab093cb4ca4760737f8216452cfde7340b0329fd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7acf0cbb99fc9541088a339931110e56363213b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120205"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920147"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
-Aparaty debugowania nie implementuje tę metodę.  
+Aparaty debugowania nie należy implementować tej metody.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,13 +43,13 @@ int GetLogicalThread(
   
 #### <a name="parameters"></a>Parametry  
  `pStackFrame`  
- [in] [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) obiekt, który reprezentuje ramki stosu.  
+ [in] [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) obiekt, który reprezentuje ramkę stosu.  
   
  `ppLogicalThread`  
- [out] Zwraca `IDebugLogicalThread2` interfejs, który reprezentuje skojarzone logicznego wątku. Implementacja aparatu debugowania powinny ustaw wartość null.  
+ [out] Zwraca `IDebugLogicalThread2` interfejs, który reprezentuje skojarzony wątek logiczne. Implementacja aparatu debugowania, należy Ustaw tę opcję na wartość null.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zawsze zwracany implementacje aparat debugowania `E_NOTIMPL`.  
+ Debuguj aparat implementacje zwracana zawsze `E_NOTIMPL`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

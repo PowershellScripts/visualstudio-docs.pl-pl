@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98dbffecc51b19a40b1b54cc9afc654fb850155b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176131"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924203"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Tworzenie tabel wyszukiwania w aplikacjach WPF
 Termin *tabeli odnośników* (nazywane czasem *powiązanie wyszukiwania odnośników*) opisano kontrolkę wyświetlającą informacje z danych w jednej tabeli na podstawie wartości pola klucza obcego w innej tabeli. Można utworzyć tabeli odnośników, przeciągając główny węzeł tabeli nadrzędnej lub obiektu w **źródeł danych** okna na formant, który jest już powiązany z kolumny lub właściwości w pokrewnej tabeli podrzędnej.
@@ -83,7 +83,7 @@ Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord
      Program Visual Studio ustawia niektóre właściwości kontrolki do konfigurowania wiązania wyszukiwania. W poniższej tabeli wymieniono właściwości, które modyfikuje programu Visual Studio. Jeśli to konieczne, możesz zmienić te właściwości w XAML lub w **właściwości** okna.
 
     |Właściwość|Wyjaśnienie ustawienia|
-    |--------------|----------------------------|
+    |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Ta właściwość określa, kolekcji lub powiązania, które służy do uzyskiwania danych, który jest wyświetlany w formancie. Program Visual Studio ustawia tę właściwość <xref:System.Windows.Data.CollectionViewSource> dla danych nadrzędnej, do którego został przeciągnięty do formantu.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Ta właściwość określa ścieżkę do elementu danych, który jest wyświetlany w formancie. Program Visual Studio ustawia tę właściwość do pierwszej kolumny lub właściwości w danych nadrzędnej po kluczu podstawowym typie danych ciągu.<br /><br /> Jeśli chcesz wyświetlić innej kolumny lub właściwości w danych nadrzędnej, należy zmienić tę właściwość na ścieżkę inną właściwość.|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Program Visual Studio wiąże tej właściwości do kolumny lub właściwości danych podrzędnych, która została przeciągnięta do projektanta. Jest to klucz obcy, aby dane nadrzędnej.|
@@ -91,6 +91,6 @@ Na przykład rozważmy tabelę `Orders` w bazie danych sprzedaży. Każdy rekord
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Powiązywanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
+- [Wiązanie kontrolek WPF z danymi w programie Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Wyświetlanie powiązanych danych w aplikacjach WPF](../data-tools/display-related-data-in-wpf-applications.md)
 - [Wskazówki: Wyświetlanie powiązanych danych w aplikacji WPF](../data-tools/display-related-data-in-wpf-applications.md)

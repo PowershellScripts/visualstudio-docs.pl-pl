@@ -1,5 +1,5 @@
 ---
-title: IDiaLoadCallback::NotifyOpenPDB | Dokumentacja firmy Microsoft
+title: Idialoadcallback::notifyopenpdb — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02069369e92862fffd90fcf4fe49c2d7e064f64e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1367d444a498c1c066cbdfb38ee4f2cec12c9a2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461363"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915324"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
-Wywoływane, gdy jest otwarty plik PDB kandydata.  
+Wywołuje się, gdy jest otwarty plik .pdb Release candidate.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,13 +35,13 @@ HRESULT NotifyOpenPDB (
   
 #### <a name="parameters"></a>Parametry  
  `pdbPath`  
- [in] Pełna ścieżka pliku PDB.  
+ [in] Pełna ścieżka pliku .pdb.  
   
  `resultCode`  
- [in] Kod, który wskazuje Powodzenie (`S_OK`) lub niepowodzenie ładowania stosowane do tego pliku.  
+ [in] Kod, który pokazuje Powodzenie (`S_OK`) lub niepowodzenie obciążenia, jakie mają zastosowanie do tego pliku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Kod powrotny zwykle jest ignorowana.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Kod powrotny zwykle jest ignorowany.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

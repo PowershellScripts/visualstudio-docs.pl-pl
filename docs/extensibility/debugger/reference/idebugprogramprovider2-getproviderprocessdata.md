@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77a6da58083feb8699c6db24207c265bf50c0f0e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b0cc8d3a87cf89edebb5f1ac35a0493b9451dfa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122473"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926244"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 Pobiera listę uruchomionymi programami od określonego procesu.  
@@ -54,24 +54,24 @@ int GetProviderProcessData(
 |Flaga|Opis|  
 |----------|-----------------|  
 |`PFLAG_REMOTE_PORT`|Obiekt wywołujący jest uruchomiona na komputerze zdalnym.|  
-|`PFLAG_DEBUGGEE`|Obiekt wywołujący jest obecnie debugowany (dodatkowe informacje na temat kierowania zostanie zwrócony dla każdego węzła).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Dołączony do obiektu wywołującego, ale nie jest uruchomiony przez debuger.|  
-|`PFLAG_GET_PROGRAM_NODES`|Obiekt wywołujący pyta o listy węzłów program ma zostać zwrócona.|  
+|`PFLAG_DEBUGGEE`|Obiekt wywołujący jest teraz debugowana (dodatkowe informacje na temat kierowania zostanie zwrócony dla każdego węzła).|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|Dołączony do obiektu wywołującego, ale nie jest uruchomiona przez debuger.|  
+|`PFLAG_GET_PROGRAM_NODES`|Obiekt wywołujący pyta o listę węzłów program mają zostać zwrócone.|  
   
  `pPort`  
  [in] Port procesu wywołującego jest uruchomiona na.  
   
  `processId`  
- [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury zawierający identyfikator procesu, który zawiera program jest zagrożona.  
+ [in] [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) struktury zawierający identyfikator procesu, który zawiera program zagrożona.  
   
  `EngineFilter`  
- [in] Tablica identyfikatorów GUID aparatów debugowania przypisane do debugowania tego procesu (zostaną one użyte do filtrowania programy, które są rzeczywiście zwracane na podstawie co podane aparaty obsługują; Jeśli nie określono żadnych aparaty, zostaną zwrócone wszystkie programy, a następnie).  
+ [in] Tablica identyfikatorów GUID dla aparaty debugowania przypisane do debugowania tego procesu (zostaną one użyte do filtrowania programy, które faktycznie są zwracane na podstawie co podane aparaty obsługują; Jeśli żadne aparaty nie są określone, a następnie zostaną zwrócone wszystkie programy).  
   
  `pProcess`  
- [out] A [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) struktury, która jest wypełniane żądane informacje.  
+ [out] A [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) strukturę, która jest wypełniane wymagane informacje.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
  Ta metoda jest zazwyczaj wywoływana przez proces, aby uzyskać listę programów uruchomionych w tym procesie. Zwracane informacje znajduje się lista [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) obiektów.  

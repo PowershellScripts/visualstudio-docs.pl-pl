@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e163386c7f00f0646bb711617e402a1873e544e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f89ea35c9113ddff67a9d1322b1c83c41e05709a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280530"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848985"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Porady: dodawanie obsługi przeciągania i upuszczania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,45 +51,45 @@ using System.Linq;
   
  W nowym pliku należy zdefiniować klasę częściową dla kształt lub diagram klasy, które powinno odpowiedzieć na operacji przeciągania. Należy zastąpić następujące metody:  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>— Ta metoda jest wywoływana, gdy wskaźnik myszy zostanie kształtu w czasie trwania operacji przeciągania. Metoda należy sprawdzić element, który użytkownik przeciąga i ustaw właściwość efekt, aby wskazać, czy użytkownika można upuścić elementu w tego kształtu. Właściwości efektu określa wygląd kursor znajduje się nad tym kształtem i określa również, czy `OnDragDrop()` zostanie wywołana, gdy użytkownik zwolni przycisk myszy.  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>— Ta metoda jest wywoływana, gdy wskaźnik myszy zostanie kształtu w czasie trwania operacji przeciągania. Metoda należy sprawdzić element, który użytkownik przeciąga i ustaw właściwość efekt, aby wskazać, czy użytkownika można upuścić elementu w tego kształtu. Właściwości efektu określa wygląd kursor znajduje się nad tym kształtem i określa również, czy `OnDragDrop()` zostanie wywołana, gdy użytkownik zwolni przycisk myszy.  
   
-    ```csharp  
-    partial class MyShape // MyShape generated from DSL Definition.  
-    {  
-        public override void OnDragOver(DiagramDragEventArgs e)  
+  ```csharp  
+  partial class MyShape // MyShape generated from DSL Definition.  
+  {  
+      public override void OnDragOver(DiagramDragEventArgs e)  
+      {  
+        base.OnDragOver(e);  
+        if (e.Effect == System.Windows.Forms.DragDropEffects.None   
+             && IsAcceptableDropItem(e)) // To be defined  
         {  
-          base.OnDragOver(e);  
-          if (e.Effect == System.Windows.Forms.DragDropEffects.None   
-               && IsAcceptableDropItem(e)) // To be defined  
-          {  
-            e.Effect = System.Windows.Forms.DragDropEffects.Copy;  
-          }  
+          e.Effect = System.Windows.Forms.DragDropEffects.Copy;  
         }  
+      }  
   
-    ```  
+  ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> — Ta metoda jest wywoływana, gdy użytkownik zwolni przycisk myszy, gdy wskaźnik myszy znajduje się nad tym kształt lub diagram, jeśli `OnDragOver(DiagramDragEventArgs e)` ustawione wcześniej `e.Effect` wartość inną niż `None`.  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> — Ta metoda jest wywoływana, gdy użytkownik zwolni przycisk myszy, gdy wskaźnik myszy znajduje się nad tym kształt lub diagram, jeśli `OnDragOver(DiagramDragEventArgs e)` ustawione wcześniej `e.Effect` wartość inną niż `None`.  
   
-    ```csharp  
-    public override void OnDragDrop(DiagramDragEventArgs e)  
+  ```csharp  
+  public override void OnDragDrop(DiagramDragEventArgs e)  
+      {  
+        if (!IsAcceptableDropItem(e))  
         {  
-          if (!IsAcceptableDropItem(e))  
-          {  
-            base.OnDragDrop(e);  
-          }  
-          else   
-          { // Process the dragged item, for example merging a copy into the diagram  
-            ProcessDragDropItem(e); // To be defined  
-          }    
+          base.OnDragDrop(e);  
         }  
+        else   
+        { // Process the dragged item, for example merging a copy into the diagram  
+          ProcessDragDropItem(e); // To be defined  
+        }    
+      }  
   
-    ```  
+  ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> — Ta metoda jest wywoływana, gdy użytkownik kliknie dwukrotnie kształt lub diagram.  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> — Ta metoda jest wywoływana, gdy użytkownik kliknie dwukrotnie kształt lub diagram.  
   
-     Aby uzyskać więcej informacji, zobacz [porady: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
+   Aby uzyskać więcej informacji, zobacz [porady: Przechwytywanie kliknięć w kształcie lub elemencie Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
- Zdefiniuj `IsAcceptableDropItem(e)` Aby ustalić, czy jest dopuszczalne przeciąganego elementu i ProcessDragDropItem(e) aktualizacji modelu, gdy element zostanie porzucony. Te metody należy najpierw wyodrębnić elementu na podstawie argumentów zdarzeń. Aby uzyskać informacje o tym, jak to zrobić, zobacz [jak odwołać się do przeciągniętego elementu](#extracting).  
+  Zdefiniuj `IsAcceptableDropItem(e)` Aby ustalić, czy jest dopuszczalne przeciąganego elementu i ProcessDragDropItem(e) aktualizacji modelu, gdy element zostanie porzucony. Te metody należy najpierw wyodrębnić elementu na podstawie argumentów zdarzeń. Aby uzyskać informacje o tym, jak to zrobić, zobacz [jak odwołać się do przeciągniętego elementu](#extracting).  
   
 ##  <a name="MEF"></a> Definiowanie procedury obsługi gestu za pomocą MEF  
  MEF (Managed Extensibility Framework) pozwala zdefiniować składniki, które mogą być instalowane z minimalną konfiguracją. Aby uzyskać więcej informacji, zobacz [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
@@ -139,32 +139,32 @@ using System.Linq;
   
  Aby odnaleźć formaty, w których jest dostępne informacje o źródle przeciągania, uruchomić kod w tryb debugowania, ustawienie punktu przerwania na wpis, aby `OnDragOver()` lub `CanDragDrop()`. Sprawdź wartości `DiagramDragEventArgs` parametru. Informacje są udostępniane w dwóch formach:  
   
--   <xref:System.Windows.Forms.IDataObject>  `Data` — Ta właściwość niesie ze sobą wersje serializacji obiektów źródłowych zwykle w wielu formatach. Są najbardziej przydatne funkcje:  
+- <xref:System.Windows.Forms.IDataObject>  `Data` — Ta właściwość niesie ze sobą wersje serializacji obiektów źródłowych zwykle w wielu formatach. Są najbardziej przydatne funkcje:  
   
-    -   diagramEventArgs.Data.GetDataFormats() — zawiera listę formatów, w których mogą dekodować przeciągany obiekt. Na przykład, jeśli użytkownik przeciąga pliku z pulpitu, dostępne formaty obejmują nazwę pliku ("`FileNameW`").  
+  -   diagramEventArgs.Data.GetDataFormats() — zawiera listę formatów, w których mogą dekodować przeciągany obiekt. Na przykład, jeśli użytkownik przeciąga pliku z pulpitu, dostępne formaty obejmują nazwę pliku ("`FileNameW`").  
   
-    -   `diagramEventArgs.Data.GetData(format)` — Dekoduje przeciągany obiekt w określonym formacie. Obiekt do odpowiedniego typu rzutowania. Na przykład:  
+  -   `diagramEventArgs.Data.GetData(format)` — Dekoduje przeciągany obiekt w określonym formacie. Obiekt do odpowiedniego typu rzutowania. Na przykład:  
   
-         `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
+       `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   
-         Obiekty, takie jak odwołania do magistrali modelu ze źródła mogą również przesyłać w format niestandardowy. Aby uzyskać więcej informacji, zobacz [sposób wysyłania magistrali odwołania do modelu w operacji przeciągania i upuszczania](#mbr).  
+       Obiekty, takie jak odwołania do magistrali modelu ze źródła mogą również przesyłać w format niestandardowy. Aby uzyskać więcej informacji, zobacz [sposób wysyłania magistrali odwołania do modelu w operacji przeciągania i upuszczania](#mbr).  
   
--   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` — Użyj tej właściwości, jeśli użytkownicy mają przeciągnij elementy z języka DSL lub modelu UML. Element grupy prototypu zawiera jeden lub więcej obiektów, łączy i ich wartości właściwości. Służy również wklejanie i kiedy dodajesz element z przybornika. W prototyp obiektów i ich typy są identyfikowane przez identyfikator Guid. Na przykład ten kod umożliwia użytkownikowi przenoszenie elementów klas z Eksploratora modelu UML lub diagramu UML:  
+- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` — Użyj tej właściwości, jeśli użytkownicy mają przeciągnij elementy z języka DSL lub modelu UML. Element grupy prototypu zawiera jeden lub więcej obiektów, łączy i ich wartości właściwości. Służy również wklejanie i kiedy dodajesz element z przybornika. W prototyp obiektów i ich typy są identyfikowane przez identyfikator Guid. Na przykład ten kod umożliwia użytkownikowi przenoszenie elementów klas z Eksploratora modelu UML lub diagramu UML:  
   
-    ```csharp  
-    private bool IsAcceptableDropItem(DiagramDragEventArgs e)  
-    {  
-      return e.Prototype != null && e.Prototype.RootProtoElements.Any(element =>   
-            element.DomainClassId.ToString()   
-            == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.  
-     // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId  
-    }  
+  ```csharp  
+  private bool IsAcceptableDropItem(DiagramDragEventArgs e)  
+  {  
+    return e.Prototype != null && e.Prototype.RootProtoElements.Any(element =>   
+          element.DomainClassId.ToString()   
+          == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.  
+   // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId  
+  }  
   
-    ```  
+  ```  
   
-     Aby zaakceptować kształtów UML, należy określić identyfikator GUID w faktycznej klasy UML kształtu, eksperymentu. Pamiętaj, że zwykle ma więcej niż jeden typ elementu na dowolny diagram. Należy pamiętać, że obiekt przeciągnięte z diagram DSL lub UML jest kształtu, a nie do elementu modelu.  
+   Aby zaakceptować kształtów UML, należy określić identyfikator GUID w faktycznej klasy UML kształtu, eksperymentu. Pamiętaj, że zwykle ma więcej niż jeden typ elementu na dowolny diagram. Należy pamiętać, że obiekt przeciągnięte z diagram DSL lub UML jest kształtu, a nie do elementu modelu.  
   
- `DiagramDragEventArgs` ma również właściwości, które wskazują bieżącej pozycji wskaźnika myszy i tego, czy użytkownik jest naciśnięcie klawisza CTRL, ALT lub klawisze SHIFT.  
+  `DiagramDragEventArgs` ma również właściwości, które wskazują bieżącej pozycji wskaźnika myszy i tego, czy użytkownik jest naciśnięcie klawisza CTRL, ALT lub klawisze SHIFT.  
   
 ##  <a name="getOriginal"></a> Jak uzyskać oryginalną przeciąganego elementu  
  `Data` i `Prototype` właściwości argumentów zdarzenia zawiera tylko odwołanie do przeciągniętego kształtu. Zwykle Jeśli chcesz utworzyć obiekt w obiekcie docelowym DSL, który jest tworzony na podstawie prototypu w jakiś sposób, należy uzyskać dostęp do oryginalnego, na przykład odczytywać zawartość pliku lub przechodząc do elementu modelu, reprezentowane przez kształty.  Aby to ułatwić, można użyć programu Visual Studio Model Bus.  

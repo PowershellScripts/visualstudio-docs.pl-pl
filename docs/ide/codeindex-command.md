@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3f1169ff5bc9487fc062ab7cbc6e2adb01151a19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283494"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926153"
 ---
 # <a name="codeindex-command"></a>Polecenie CodeIndex
 
@@ -41,13 +41,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ### <a name="parameters"></a>Parametry
 
 |**Argument**|**Opis**|
-|------------------|---------------------|
+|------------------| - |
 |`CollectionName`|Określa nazwę kolekcji projektu. Jeśli nazwa zawiera spacje, należy ją ująć w cudzysłów, na przykład "Fabrikam Website".|
 |`CollectionId`|Określa numer identyfikujący kolekcji projektu.|
 |`ServerPath`|Określa ścieżkę do pliku kodu.|
 
 |**Option**|**Opis**|
-|----------------|---------------------|
+|----------------| - |
 |**/indexingStatus**|Pokazuje stan i konfigurację usługi indeksowania kodu.|
 |**/setIndexing:**[na &#124; poza &#124; keepupOnly]|-   **na**: Uruchom indeksowanie wszystkich zestawów zmian.<br />-   **Wyłącz**: Zatrzymaj indeksowanie wszystkich zestawów zmian.<br />-   **keepupOnly**: Zatrzymaj indeksowanie wcześniej utworzonych zestawów zmian i Rozpocznij indeksowanie tylko nowych zestawów zmian.|
 |**/ignoreList:**[Dodaj &#124; Usuń &#124; removeAll &#124; view] `ServerPath`<br /><br /> Można użyć znaku wieloznacznego (*) na początku, zakończenia lub obu końcach ścieżki serwera.|Określa listę plików kodu i ich ścieżek, które nie mają być indeksowane.<br /><br /> -   **Dodaj**: Dodawanie pliku, który ma nie być indeksowany do listy plików ignorowanych.<br />-   **Usuń**: Usuń plik, który ma indeksowane z listy plików ignorowanych.<br />-   **removeAll**: Wyczyść listę ignorowanych plików i Rozpocznij indeksowanie wszystkich plików.<br />-   **Widok**: Zobacz wszystkie pliki, które nie są indeksowane.|

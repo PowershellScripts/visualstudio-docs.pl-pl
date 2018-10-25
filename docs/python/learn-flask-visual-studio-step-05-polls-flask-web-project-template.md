@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f79cf8693eb33d7ad5a5d26c9f3c2ef13cc9772c
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: b1331890a0ec9b788b17214a0d5f90b63ceb1a32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909007"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Krok 5: Należy użyć szablonu projektu sieci Web Flask sond
 
@@ -228,7 +228,7 @@ def seed():
     return redirect('/')
 ```
 
-Wywołanie `repository.add_sample_polls()` kończy się w jednym z konkretnym `Repository` implementacje dla magazynu danych wybrany. Każda implementacja wywołuje `_load_samples_json` znaleźć metodę w *modeli\__init__.py* załadować *models\samples.json* plików do pamięci, a następnie wykonuje iterację przez te dane, aby utworzyć niezbędne `Poll` i `Choice` obiektów w magazynie danych.
+Wywołanie `repository.add_sample_polls()` kończy się w jednym z konkretnym `Repository` implementacje dla magazynu danych wybrany. Każda implementacja wywołuje `_load_samples_json` znaleźć metodę w *modeli\_\_init\_\_.py* załadować *models\samples.json* pliku do pamięci, następnie wykonuje iterację przez te dane, aby utworzyć niezbędne `Poll` i `Choice` obiektów w magazynie danych.
 
 Po zakończeniu tego procesu, `redirect('/')` instrukcji w `seed` metoda wraca do strony głównej. Ponieważ `repository.get_polls` teraz zwraca obiekt danych warunkowego znaczniki *templates\index.html* teraz renderuje tabelę zawierającą ankiety.
 

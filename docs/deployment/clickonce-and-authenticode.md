@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2943766bb7b0df6d2e0974f8a8c1b52747f31526
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: bc0018533f089c2be3d0a94093bf41deadd9a74e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512213"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907446"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce i podpis Authenticode
 *Authenticode* to technologia firmy Microsoft, która używa branżowego standardu kryptografii do podpisywania kodu aplikacji przy użyciu certyfikatów cyfrowych, które zweryfikowania autentyczności wydawcy aplikacji. Za pomocą kodu Authenticode dla wdrożenia aplikacji [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zmniejsza ryzyko konia trojańskiego. Koń trojański jest wirus lub występuje inne szkodliwe program, który złośliwy firm zniesławiającej jako program wiarygodnego źródła ustanowione, godne zaufania. Podpisywanie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożenia za pomocą certyfikatu cyfrowego jest opcjonalny krok, aby sprawdzić, czy zestawów i plików nie były modyfikowane.  
@@ -39,11 +39,11 @@ ms.locfileid: "39512213"
   
  Można uzyskać certyfikat podpisywania w jeden z trzech sposobów kodu:  
   
--   Kupić od dostawcy certyfikatu.  
+- Kupić od dostawcy certyfikatu.  
   
--   Wyświetlany jest jeden z grupy w Twojej organizacji, które są odpowiedzialne za tworzenie certyfikatów cyfrowych.  
+- Wyświetlany jest jeden z grupy w Twojej organizacji, które są odpowiedzialne za tworzenie certyfikatów cyfrowych.  
   
--   Generowanie własnego certyfikatu za pomocą polecenia cmdlet New-SelfSignedCertificate programu PowerShell lub za pomocą *MakeCert.exe*, który jest dołączony do [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
+- Generowanie własnego certyfikatu za pomocą polecenia cmdlet New-SelfSignedCertificate programu PowerShell lub za pomocą *MakeCert.exe*, który jest dołączony do [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>Jak za pomocą urzędów certyfikacji ułatwia użytkownikom  
  Certyfikat wygenerowany za pomocą New-SelfSignedCertificate lub *MakeCert.exe* narzędzie jest popularnie określany mianem *self-cert* lub *certyfikatu testowego*. Tego rodzaju certyfikatu znacznie działa tak samo jak *.snk* pliku działa w programie .NET Framework. Składa się wyłącznie z pary kluczy kryptograficznych publiczny/prywatny, a nie zawiera możliwe do zweryfikowania informacji o wydawcy. Certyfikaty z własnym można użyć do wdrożenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje z wysokim poziomem zaufania w sieci intranet. Jednak gdy te aplikacje uruchomione na komputerze klienckim [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zidentyfikować je jako pochodzący od nieznanego wydawcy. Domyślnie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikacje podpisane przy użyciu własnym certyfikatami i wdrożone przez Internet nie może wykorzystać zaufanego wdrożenia aplikacji.  
@@ -68,7 +68,7 @@ ms.locfileid: "39512213"
   
 ### <a name="store-certificates"></a>Certyfikaty Store  
   
--   Można przechowywać certyfikaty jako *PFX* pliku w systemie plików, lub przechowywać je wewnątrz kontenera kluczy. Użytkownik w domenie Windows może mieć wiele kontenerów kluczy. Domyślnie *MakeCert.exe* będą przechowywane certyfikaty w Twoje osobiste kontenera kluczy, chyba że określisz, że jej należy zapisać go w celu *PFX* zamiast tego. *Mage.exe* i *MageUI.exe*, [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] narzędzia służące do tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń umożliwiają korzystanie z certyfikatów przechowywanych w dowolnym czasie.  
+- Można przechowywać certyfikaty jako *PFX* pliku w systemie plików, lub przechowywać je wewnątrz kontenera kluczy. Użytkownik w domenie Windows może mieć wiele kontenerów kluczy. Domyślnie *MakeCert.exe* będą przechowywane certyfikaty w Twoje osobiste kontenera kluczy, chyba że określisz, że jej należy zapisać go w celu *PFX* zamiast tego. *Mage.exe* i *MageUI.exe*, [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] narzędzia służące do tworzenia [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] wdrożeń umożliwiają korzystanie z certyfikatów przechowywanych w dowolnym czasie.  
   
 ## <a name="see-also"></a>Zobacz także  
  [Wdrażania i zabezpieczeń ClickOnce](../deployment/clickonce-security-and-deployment.md)   

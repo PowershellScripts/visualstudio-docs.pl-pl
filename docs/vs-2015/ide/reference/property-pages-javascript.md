@@ -22,12 +22,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3753c11851c1ab4f5e9e32df55c37f0b22d2f3bc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 586ad4352dfdf88aef87d4f9c815a776f85a6a82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904196"
 ---
 # <a name="property-pages-javascript"></a>Strony właściwości, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,26 +73,26 @@ ms.locfileid: "49206833"
  **Debuger do uruchomienia**  
  Określa host domyślny dla debugera.  
   
--   Wybierz **komputera lokalnego** Aby uruchomić aplikację na komputerze-hoście programu Visual Studio. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji na komputerze lokalnym](http://go.microsoft.com/fwlink/?LinkId=234912).  
+- Wybierz **komputera lokalnego** Aby uruchomić aplikację na komputerze-hoście programu Visual Studio. Aby uzyskać więcej informacji, zobacz [uruchamianie aplikacji na komputerze lokalnym](http://go.microsoft.com/fwlink/?LinkId=234912).  
   
--   Wybierz **symulator** Aby uruchomić aplikację w symulatorze. Aby uzyskać więcej informacji, zobacz [uruchamiania aplikacji w symulatorze](http://go.microsoft.com/fwlink/?LinkId=234913).  
+- Wybierz **symulator** Aby uruchomić aplikację w symulatorze. Aby uzyskać więcej informacji, zobacz [uruchamiania aplikacji w symulatorze](http://go.microsoft.com/fwlink/?LinkId=234913).  
   
--   Wybierz **maszyny zdalnej** Aby uruchomić aplikację na komputerze zdalnym. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [uruchamianie aplikacji na komputerze zdalnym](http://go.microsoft.com/fwlink/?LinkId=234914).  
+- Wybierz **maszyny zdalnej** Aby uruchomić aplikację na komputerze zdalnym. Aby uzyskać więcej informacji na temat debugowania zdalnego, zobacz [uruchamianie aplikacji na komputerze zdalnym](http://go.microsoft.com/fwlink/?LinkId=234914).  
   
- **Uruchamianie aplikacji**  
- Określa, czy uruchomić aplikację po naciśnięciu klawisza F5 lub kliknij przycisk **debugowania**, **Rozpocznij debugowanie**. Wybierz **tak** do uruchamiania aplikacji; w przeciwnym razie wybierz **nie**. Jeśli wybierzesz **nie**, nadal można debugować aplikację, jeśli używasz innej metody jej uruchomienia.  
+  **Uruchamianie aplikacji**  
+  Określa, czy uruchomić aplikację po naciśnięciu klawisza F5 lub kliknij przycisk **debugowania**, **Rozpocznij debugowanie**. Wybierz **tak** do uruchamiania aplikacji; w przeciwnym razie wybierz **nie**. Jeśli wybierzesz **nie**, nadal można debugować aplikację, jeśli używasz innej metody jej uruchomienia.  
   
- **Typ debugera**  
- Określa typy kodu do debugowania. Wybierz **tylko skrypt** do debugowania kodu JavaScript. Wybierz **tylko zarządzane** do debugowania kodu, który jest zarządzany przez środowisko uruchomieniowe języka wspólnego. Wybierz **tylko natywny** do debugowania kodu C++. Wybierz **natywny ze skryptem** debugowania C++ i JavaScript. Wybierz **mieszany (zarządzany i natywny)** do debugowania zarządzanego, jak i kodu w języku C++.  
+  **Typ debugera**  
+  Określa typy kodu do debugowania. Wybierz **tylko skrypt** do debugowania kodu JavaScript. Wybierz **tylko zarządzane** do debugowania kodu, który jest zarządzany przez środowisko uruchomieniowe języka wspólnego. Wybierz **tylko natywny** do debugowania kodu C++. Wybierz **natywny ze skryptem** debugowania C++ i JavaScript. Wybierz **mieszany (zarządzany i natywny)** do debugowania zarządzanego, jak i kodu w języku C++.  
   
- **Zezwalaj na sprzężenie zwrotne sieci lokalnej**  
- Określa, czy adres IP sprzężenia zwrotnego jest dostęp do testowania aplikacji. Wybierz **tak** Aby zezwolić na użycie adresu sprzężenia zwrotnego Jeśli aplikacja klienta znajduje się na tym samym komputerze, gdzie aplikacja serwera jest uruchomiona; w przeciwnym razie, wybierz **nie**. Ta właściwość jest dostępna tylko wtedy, gdy **debuger do uruchomienia** właściwość jest ustawiona na **maszyny zdalnej**.  
+  **Zezwalaj na sprzężenie zwrotne sieci lokalnej**  
+  Określa, czy adres IP sprzężenia zwrotnego jest dostęp do testowania aplikacji. Wybierz **tak** Aby zezwolić na użycie adresu sprzężenia zwrotnego Jeśli aplikacja klienta znajduje się na tym samym komputerze, gdzie aplikacja serwera jest uruchomiona; w przeciwnym razie, wybierz **nie**. Ta właściwość jest dostępna tylko wtedy, gdy **debuger do uruchomienia** właściwość jest ustawiona na **maszyny zdalnej**.  
   
- **Nazwa maszyny**  
- Określa nazwę komputera zdalnego hostującego debuger. Ta właściwość jest dostępna tylko wtedy, gdy **debuger do uruchomienia** ustawiono **maszyny zdalnej**.  
+  **Nazwa maszyny**  
+  Określa nazwę komputera zdalnego hostującego debuger. Ta właściwość jest dostępna tylko wtedy, gdy **debuger do uruchomienia** ustawiono **maszyny zdalnej**.  
   
- **Wymagaj uwierzytelniania**  
- Określa, czy komputer zdalny wymaga uwierzytelniania. Ta właściwość jest dostępna tylko wtedy, gdy **debuger do uruchomienia** ustawiono **maszyny zdalnej**.
+  **Wymagaj uwierzytelniania**  
+  Określa, czy komputer zdalny wymaga uwierzytelniania. Ta właściwość jest dostępna tylko wtedy, gdy **debuger do uruchomienia** ustawiono **maszyny zdalnej**.
 
 
 

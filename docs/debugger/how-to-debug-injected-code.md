@@ -26,42 +26,42 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf602d8ee670e5fce8602cb50d2aaa1066b501de
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 479df9e5761066248b8657d9656132b072bddb13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866080"
 ---
 # <a name="how-to-debug-injected-code"></a>Porady: Debugowanie wprowadzonego kodu
 > [!NOTE]
->  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz polecenie Import i eksport ustawień w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
+>  Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).  
   
- Przy użyciu atrybutów może bardzo uprościć programowania w języku C++. Aby uzyskać więcej informacji, zobacz [pojęcia](/cpp/windows/attributed-programming-concepts). Niektóre atrybuty są interpretowane bezpośrednio przez kompilator. Inne atrybuty iniekcję kodu do źródła program, który następnie kompiluje kompilatora. Ten kod wprowadzony sprawia, że ułatwia programowanie dzięki zmniejszeniu ilości kodu, który trzeba napisać. Jednak czasami usterki może spowodować niepowodzenie podczas wykonywania wprowadzony kod aplikacji. W takim przypadku prawdopodobnie można przyjrzeć się wprowadzony kod. Program Visual Studio udostępnia dwa sposoby można zobaczyć wprowadzony kod:  
+ Przy użyciu atrybutów znacznie upraszcza programowania w języku C++. Aby uzyskać więcej informacji, zobacz [pojęcia](/cpp/windows/attributed-programming-concepts). Niektóre atrybuty są interpretowane bezpośrednio przez kompilator. Inne atrybuty wstrzyknięcie kodu do źródło programu, w którym kompilator następnie kompiluje. Ten kod wprowadzonego sprawia, że ułatwia programowanie dzięki zmniejszeniu ilości kodu, który trzeba napisać. Jednak czasami usterkę może spowodować awarię podczas wykonywania wprowadzonego kodu aplikacji. W takim przypadku prawdopodobnie można przyjrzeć się wprowadzonego kodu. Program Visual Studio udostępnia dwa sposoby, aby wprowadzony kod:  
   
--   Możesz wyświetlić wprowadzony kod w **dezasemblacji** okna.  
+- Możesz wyświetlić wprowadzonego kodu w **dezasemblacji** okna.  
   
--   Przy użyciu [/Fx](/cpp/build/reference/fx-merge-injected-code), można utworzyć pliku źródłowego scalone, który zawiera oryginalny i wprowadzony kod.  
+- Za pomocą [/Fx](/cpp/build/reference/fx-merge-injected-code), można utworzyć pliku scalonego źródła, który zawiera oryginalną i wprowadzonego kodu.  
   
- **Dezasemblacji** okno zawiera instrukcje języka zestawu, które odpowiadają kodu źródłowego i kod wstrzyknięte przez atrybuty. Ponadto **dezasemblacji** okno może zawierać adnotacji kodu źródłowego.  
+  **Dezasemblacji** okno przedstawia instrukcje języka asemblera, które odnoszą się do kodu źródłowego i kodu, wprowadzony przez atrybuty. Ponadto **dezasemblacji** okna można wyświetlić adnotacji kodu źródłowego.  
   
-### <a name="to-turn-on-source-annotation"></a>Aby włączyć adnotacji źródła  
+### <a name="to-turn-on-source-annotation"></a>Aby włączyć funkcję adnotacji źródła  
   
--   Kliknij prawym przyciskiem myszy **dezasemblacji** okna i wybierz polecenie **wyświetlić kodu źródłowego** z menu skrótów.  
+-   Kliknij prawym przyciskiem myszy **dezasemblacji** oknie i wybierz polecenie **Pokaż kod źródłowy** z menu skrótów.  
   
-     Jeśli znasz lokalizacji atrybutu w oknie źródła, można użyć menu skrótów można znaleźć wprowadzony kod w **dezasemblacji** okna.  
+     Jeśli znasz lokalizację atrybutu w oknie źródła, można użyć menu skrótów, można znaleźć wprowadzonego kodu w **dezasemblacji** okna.  
   
 ### <a name="to-view-injected-code"></a>Aby wyświetlić wprowadzonego kodu  
   
 1.  Debuger musi być w trybie przerwania.  
   
-2.  W oknie kodu źródłowego umieść kursor na początku atrybut, którego wprowadzony kod, który chcesz wyświetlić.  
+2.  W oknie kodu źródłowego umieść kursor w miejscu dostępnym dla atrybutu, którego wprowadzonego kodu, którą chcesz wyświetlić.  
   
-3.  Kliknij prawym przyciskiem myszy i wybierz **przejść do dezasemblacji** z menu skrótów.  
+3.  Kliknij prawym przyciskiem myszy, a następnie wybierz pozycję **przejdź do demontażu** z menu skrótów.  
   
-     Jeśli lokalizacja atrybutu zbliża się do bieżącego punkt wykonywania, możesz wybrać **dezasemblacji** w oknie **debugowania** menu.  
+     Jeśli lokalizacja atrybutu zbliża się bieżący punkt wykonania, możesz wybrać **dezasemblacji** w oknie **debugowania** menu.  
   
-### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Aby wyświetlić kod dezasemblacji w bieżącym punkcie wykonywania  
+### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Aby wyświetlić kod dezasemblacji w bieżącym punkcie Wykonywanie  
   
 1.  Debuger musi być w trybie przerwania.  
   

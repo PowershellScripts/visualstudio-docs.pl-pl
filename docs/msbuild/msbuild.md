@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0da7118d1ee420e5e4a415ea8f32d9ba8f1771e6
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 7e87b1a71cde4d6fb37e05fa99698b636ff87bf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880100"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876727"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] To platforma do tworzenia aplikacji. Ten aparat, który jest również znany jako MSBuild, dostarcza schemat XML pliku projektu, który kontroluje, jak platforma kompilacji przetwarza i tworzy oprogramowanie. Program Visual Studio używa MSBuild, ale go nie są zależne od programu Visual Studio. Za pomocą wywołania *msbuild.exe* w pliku projektu lub rozwiązania organizowania i kompilować produkty w środowiskach, w których nie zainstalowano programu Visual Studio.
@@ -170,19 +170,19 @@ Aby uzyskać więcej informacji, zobacz [Wielowersyjność](../msbuild/msbuild-m
 
 ## <a name="see-also"></a>Zobacz także
 
-|Tytuł|Opis|
-|-----------|-----------------|
-|[Wskazówki: Tworzenie pliku projektu MSBuild od podstaw](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Przedstawia sposób tworzenia podstawowego pliku projektu przyrostowo, używając tylko tekst edytora.|
-|[Przewodnik: Używanie programu MSBuild](../msbuild/walkthrough-using-msbuild.md)|Wprowadza bloki konstrukcyjne programu MSBuild i pokazuje, jak napisać, modyfikowania i debugowania projektów programu MSBuild bez zamykania środowiska IDE programu Visual Studio.|
-|[Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md)|Przedstawia cztery bloki konstrukcyjne MSBuild: właściwości, elementów, obiektów docelowych i zadań.|
-|[Elementy](../msbuild/msbuild-items.md)|Opisuje ogólne pojęcia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] plik formatu i sposób dopasowywania.|
-|[Właściwości programu MSBuild](../msbuild/msbuild-properties.md)|Wprowadza właściwości i kolekcje właściwości. Właściwości to pary klucz/wartość, które mogą być używane do konfigurowania kompilacji.|
-|[Docelowe elementy](../msbuild/msbuild-targets.md)|Wyjaśnia, jak grupować zadania razem w określonej kolejności i włączyć sekcje procesu kompilacji, który ma być wywoływana w wierszu polecenia.|
-|[Zadania](../msbuild/msbuild-tasks.md)|Pokazuje, jak utworzyć jednostkę kodu wykonywalnego, który może być używany przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonywania niepodzielnych operacji kompilacji.|
-|[Warunki](../msbuild/msbuild-conditions.md)|W tym artykule omówiono sposób używania `Condition` atrybutu w elemencie programu MSBuild.|
-|[Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md)|Przedstawia przetwarzanie wsadowe, wykonywanie przekształceń, wielowersyjność i inne zaawansowane techniki.|
-|[Logowanie w programie MSBuild](../msbuild/logging-in-msbuild.md)|Opisuje sposób rejestrowania zdarzeń kompilacji, wiadomości i błędy.|
-|[Dodatkowe zasoby](../msbuild/additional-msbuild-resources.md)|Wyświetla listę zasobów społeczności i pomocy technicznej, aby uzyskać więcej informacji na temat programu MSBuild.|
+| Tytuł | Opis |
+| - | - |
+| [Wskazówki: Tworzenie pliku projektu MSBuild od podstaw](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Przedstawia sposób tworzenia podstawowego pliku projektu przyrostowo, używając tylko tekst edytora. |
+| [Przewodnik: Używanie programu MSBuild](../msbuild/walkthrough-using-msbuild.md) | Wprowadza bloki konstrukcyjne programu MSBuild i pokazuje, jak napisać, modyfikowania i debugowania projektów programu MSBuild bez zamykania środowiska IDE programu Visual Studio. |
+| [Pojęcia dotyczące programu MSBuild](../msbuild/msbuild-concepts.md) | Przedstawia cztery bloki konstrukcyjne MSBuild: właściwości, elementów, obiektów docelowych i zadań. |
+| [Elementy](../msbuild/msbuild-items.md) | Opisuje ogólne pojęcia [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] plik formatu i sposób dopasowywania. |
+| [Właściwości programu MSBuild](../msbuild/msbuild-properties.md) | Wprowadza właściwości i kolekcje właściwości. Właściwości to pary klucz/wartość, które mogą być używane do konfigurowania kompilacji. |
+| [Docelowe elementy](../msbuild/msbuild-targets.md) | Wyjaśnia, jak grupować zadania razem w określonej kolejności i włączyć sekcje procesu kompilacji, który ma być wywoływana w wierszu polecenia. |
+| [Zadania](../msbuild/msbuild-tasks.md) | Pokazuje, jak utworzyć jednostkę kodu wykonywalnego, który może być używany przez [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] do wykonywania niepodzielnych operacji kompilacji. |
+| [Warunki](../msbuild/msbuild-conditions.md) | W tym artykule omówiono sposób używania `Condition` atrybutu w elemencie programu MSBuild. |
+| [Pojęcia zaawansowane](../msbuild/msbuild-advanced-concepts.md) | Przedstawia przetwarzanie wsadowe, wykonywanie przekształceń, wielowersyjność i inne zaawansowane techniki. |
+| [Logowanie w programie MSBuild](../msbuild/logging-in-msbuild.md) | Opisuje sposób rejestrowania zdarzeń kompilacji, wiadomości i błędy. |
+| [Dodatkowe zasoby](../msbuild/additional-msbuild-resources.md) | Wyświetla listę zasobów społeczności i pomocy technicznej, aby uzyskać więcej informacji na temat programu MSBuild. |
 
 ## <a name="reference"></a>Tematy pomocy
  [Odwołanie do MSBuild](../msbuild/msbuild-reference.md) łącza do tematów, które zawierają informacje referencyjne.

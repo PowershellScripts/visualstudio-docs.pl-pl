@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ead521af376388c73aae045d3586a70f55cc8418
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c78f782180ee2cca874e0001711ae9824eafd5b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124134"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858202"
 ---
 # <a name="ienumdebugports2reset"></a>IEnumDebugPorts2::Reset
-Resetuje pierwszego elementu wyliczenia.  
+Resetuje wyliczenia do pierwszego elementu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,10 +38,10 @@ int Reset();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Po wywołaniu tej metody, następne wywołanie [dalej](../../../extensibility/debugger/reference/ienumdebugports2-next.md) metoda zwraca pierwszy element wyliczenia.  
+ Po ta metoda jest wywoływana, następnym wywołaniu [dalej](../../../extensibility/debugger/reference/ienumdebugports2-next.md) metoda zwraca pierwszy element wyliczenia.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

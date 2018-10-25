@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49b90938630fa96ca91f3346a37a7147ec2b90e7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 41eed5e7fd8ba2874250abf60826bc59da1763df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24794326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923527"
 ---
 # <a name="idebugpropertyenumtypeallgetname"></a>IDebugPropertyEnumType_All::GetName
-Zwraca BSTR, zawierające nazwę `EnumType`.  
+Zwraca ciąg BSTR zawierający nazwę `EnumType`.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,10 +38,10 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>Parametry  
  `pname`  
- [out] BSTR, zawierające nazwę `EnumType`.  
+ [out] Ciąg BSTR zawierający nazwę `EnumType`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Zwraca prawidłową `HRESULT`, zwykle `S_OK`.  
+ Zwraca prawidłową `HRESULT`, zazwyczaj `S_OK`.  
   
 ## <a name="see-also"></a>Zobacz też  
- [Interfejs IDebugPropertyEnumType_All](../../winscript/reference/idebugpropertyenumtype-all-interface.md)
+ [IDebugPropertyEnumType_All, interfejs](../../winscript/reference/idebugpropertyenumtype-all-interface.md)

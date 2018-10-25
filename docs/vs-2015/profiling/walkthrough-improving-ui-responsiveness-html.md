@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b085bf032611eafcb822a4e083d00d4ae72fd1ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258313"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893380"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Wskazówki: Poprawianie czasu odpowiedzi interfejsu użytkownika (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,45 +163,45 @@ Ten instruktaż poprowadzi Cię przez proces identyfikowanie i rozwiązywanie pr
   
 ### <a name="analyzing-performance-data"></a>Analizowanie danych dotyczących wydajności  
   
-1.  Na **debugowania** narzędzi w **Rozpocznij debugowanie** listy, wybierz jedną z emulatory Windows Phone lub **symulator**.  
+1. Na **debugowania** narzędzi w **Rozpocznij debugowanie** listy, wybierz jedną z emulatory Windows Phone lub **symulator**.  
   
-2.  Na **debugowania** menu, wybierz **wydajności i diagnostyki**.  
+2. Na **debugowania** menu, wybierz **wydajności i diagnostyki**.  
   
-3.  W **dostępnych narzędzi**, wybierz **HTML UI Responsiveness**, a następnie wybierz **Start**.  
+3. W **dostępnych narzędzi**, wybierz **HTML UI Responsiveness**, a następnie wybierz **Start**.  
   
-     W tym samouczku jest będzie dołączania profilera do projektu startowego. Aby uzyskać informacje na temat innych opcji, takich jak Dołączanie programu profiler do zainstalowanych aplikacji, zobacz [HTML UI responsiveness](../profiling/html-ui-responsiveness.md).  
+    W tym samouczku jest będzie dołączania profilera do projektu startowego. Aby uzyskać informacje na temat innych opcji, takich jak Dołączanie programu profiler do zainstalowanych aplikacji, zobacz [HTML UI responsiveness](../profiling/html-ui-responsiveness.md).  
   
-     Kiedy uruchamiasz program profilujący, można napotkać Kontrola konta użytkownika, która żąda uprawnienia do uruchomienia VsEtwCollector.exe. Wybierz **tak**.  
+    Kiedy uruchamiasz program profilujący, można napotkać Kontrola konta użytkownika, która żąda uprawnienia do uruchomienia VsEtwCollector.exe. Wybierz **tak**.  
   
-4.  W działającej aplikacji wybierz **oczekiwanie na wartości** i Odczekaj około 10 sekund. Upewnij się, tekst przycisku i kolor na około aktualizacji raz na sekundę.  
+4. W działającej aplikacji wybierz **oczekiwanie na wartości** i Odczekaj około 10 sekund. Upewnij się, tekst przycisku i kolor na około aktualizacji raz na sekundę.  
   
-5.  W uruchomionej aplikacji Przełącz się do programu Visual Studio (Alt + Tab).  
+5. W uruchomionej aplikacji Przełącz się do programu Visual Studio (Alt + Tab).  
   
-6.  Wybierz **Zatrzymaj Kolekcjonowanie**.  
+6. Wybierz **Zatrzymaj Kolekcjonowanie**.  
   
-     Program profilujący Wyświetla informacje na nowej karcie w programie Visual Studio. Jeśli przyjrzymy się wykorzystanie procesora CPU i danych przepustowość wizualna (kl. / s), można łatwo identyfikować trendy w kilku:  
+    Program profilujący Wyświetla informacje na nowej karcie w programie Visual Studio. Jeśli przyjrzymy się wykorzystanie procesora CPU i danych przepustowość wizualna (kl. / s), można łatwo identyfikować trendy w kilku:  
   
-    -   Użycie procesora CPU zwiększa się znacznie po około 3 sekundy (po naciśnięciu **oczekiwanie na wartości** przycisku) i wyświetla wyczyść wzorców zdarzeń (spójne kombinację skryptów, stylów i zdarzenia renderowania) z tego punktu w.  
+   - Użycie procesora CPU zwiększa się znacznie po około 3 sekundy (po naciśnięciu **oczekiwanie na wartości** przycisku) i wyświetla wyczyść wzorców zdarzeń (spójne kombinację skryptów, stylów i zdarzenia renderowania) z tego punktu w.  
   
-    -   Nie ma to wpływ na przepustowość wizualna i kl. / s pozostaje na 60 w całym (oznacza to, że nie ma żadnych porzuconych ramek).  
+   - Nie ma to wpływ na przepustowość wizualna i kl. / s pozostaje na 60 w całym (oznacza to, że nie ma żadnych porzuconych ramek).  
   
      Przyjrzyjmy się typowe części Wykres wykorzystania procesora CPU, aby dowiedzieć się, jakie działania aplikacji w tym okresie dużej aktywności.  
   
-7.  Wybieranie drugiej części jednej do dwóch w środku Wykres wykorzystania procesora CPU (albo kliknięcia i przeciągnięcia lub używać kluczy karty i strzałka). Poniższa ilustracja przedstawia Wykres wykorzystania procesora CPU, po dokonaniu wyboru. Nieudostępnione obszaru to zaznaczenie.  
+7. Wybieranie drugiej części jednej do dwóch w środku Wykres wykorzystania procesora CPU (albo kliknięcia i przeciągnięcia lub używać kluczy karty i strzałka). Poniższa ilustracja przedstawia Wykres wykorzystania procesora CPU, po dokonaniu wyboru. Nieudostępnione obszaru to zaznaczenie.  
   
-     ![Wykres wykorzystania procesora CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![Wykres wykorzystania procesora CPU](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
-8.  Wybierz **powiększyć**.  
+8. Wybierz **powiększyć**.  
   
-     Zmiany wykresu do wyświetlenia na wybrany okres bardziej szczegółowo. Poniższa ilustracja przedstawia Wykres wykorzystania procesora CPU po powiększyć. (Określone dane mogą się różnić, ale ogólny wzorzec będzie widoczna).  
+    Zmiany wykresu do wyświetlenia na wybrany okres bardziej szczegółowo. Poniższa ilustracja przedstawia Wykres wykorzystania procesora CPU po powiększyć. (Określone dane mogą się różnić, ale ogólny wzorzec będzie widoczna).  
   
-     ![Powiększenie w widoku](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
+    ![Powiększenie w widoku](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
   
-     Szczegóły osi czasu w dolnym okienku przedstawiono przykład szczegółów dla wybranego okresu.  
+    Szczegóły osi czasu w dolnym okienku przedstawiono przykład szczegółów dla wybranego okresu.  
   
-     ![Szczegóły osi czasu](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
+    ![Szczegóły osi czasu](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
   
-     Upewnij się, zdarzenia w szczegółach oś czasu widoczny trendów w wykres wykorzystania procesora CPU: wiele zdarzeń zajmuje miejsce w krótkich okresach czasu. Wyświetl szczegóły osi czasu wskazuje, że te zdarzenia są `Timer`, `Layout`, i `Paint` zdarzenia.  
+    Upewnij się, zdarzenia w szczegółach oś czasu widoczny trendów w wykres wykorzystania procesora CPU: wiele zdarzeń zajmuje miejsce w krótkich okresach czasu. Wyświetl szczegóły osi czasu wskazuje, że te zdarzenia są `Timer`, `Layout`, i `Paint` zdarzenia.  
   
 9. Użyj menu kontekstowego (lub kliknij prawym przyciskiem myszy) jeden z `Timer` zdarzenia w dolnym okienku i wybierz polecenie **filtr, aby zdarzenia**. Na poniższej ilustracji przedstawiono przykład szczegółów typowe dla jednego z `Timer` zdarzeń w tym testowanie aplikacji.  
   

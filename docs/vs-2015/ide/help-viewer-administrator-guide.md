@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256961"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871293"
 ---
 # <a name="help-viewer-administrator-guide"></a>Podręcznik administratora programu Podgląd Pomocy
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,18 +47,18 @@ Podgląd Pomocy umożliwia zarządzanie lokalnymi instalacjami pomocy dla środo
   
  Wymagania:  
   
--   Komputery klienckie muszą mieć dostęp do Internetu.  
+- Komputery klienckie muszą mieć dostęp do Internetu.  
   
--   Użytkownicy muszą mieć uprawnienia administratora, aby zaktualizować, Dodaj lub usuń lokalną zawartość pomocy po zakończeniu instalacji.  
+- Użytkownicy muszą mieć uprawnienia administratora, aby zaktualizować, Dodaj lub usuń lokalną zawartość pomocy po zakończeniu instalacji.  
   
- Ostrzeżenia:  
+  Ostrzeżenia:  
   
--   Domyślnym źródłem pomocy będzie nadal Online.  
+- Domyślnym źródłem pomocy będzie nadal Online.  
   
-    > [!TIP]
-    >  Domyślne źródło pomocy można zmienić, modyfikując klucz rejestru HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Aby uzyskać więcej informacji, zobacz [przesłonięcia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).  
+  > [!TIP]
+  >  Domyślne źródło pomocy można zmienić, modyfikując klucz rejestru HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Aby uzyskać więcej informacji, zobacz [przesłonięcia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).  
   
--   Klienci będą nadal się monit o zainstalowanie podstawowa zawartość pomocy przy pierwszym uruchomieniu programu Visual Studio. Możesz wyłączyć ten monit, modyfikując klucz rejestru HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
+- Klienci będą nadal się monit o zainstalowanie podstawowa zawartość pomocy przy pierwszym uruchomieniu programu Visual Studio. Możesz wyłączyć ten monit, modyfikując klucz rejestru HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
   
 ### <a name="example"></a>Przykład  
  Poniższy przykład instaluje zawartość w języku angielskim dla programu Visual Studio na komputerze klienckim.  
@@ -78,47 +78,47 @@ Podgląd Pomocy umożliwia zarządzanie lokalnymi instalacjami pomocy dla środo
   
  Wymagania:  
   
--   Komputer, na którym jest instalowany zestaw zawartości musi mieć dostęp do Internetu.  
+- Komputer, na którym jest instalowany zestaw zawartości musi mieć dostęp do Internetu.  
   
--   Użytkownicy muszą mieć uprawnienia administratora, aby zaktualizować, Dodaj lub usuń lokalną zawartość pomocy po zakończeniu instalacji.  
+- Użytkownicy muszą mieć uprawnienia administratora, aby zaktualizować, Dodaj lub usuń lokalną zawartość pomocy po zakończeniu instalacji.  
   
-    > [!TIP]
-    >  Jeśli użytkownicy nie mają praw administratora, zalecane jest, aby wyłączyć kartę Zarządzaj zawartością w Podglądzie pomocy. Aby uzyskać więcej informacji, zobacz [przesłonięcia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).  
+  > [!TIP]
+  >  Jeśli użytkownicy nie mają praw administratora, zalecane jest, aby wyłączyć kartę Zarządzaj zawartością w Podglądzie pomocy. Aby uzyskać więcej informacji, zobacz [przesłonięcia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).  
   
- Ostrzeżenia:  
+  Ostrzeżenia:  
   
--   Jeśli użytkownicy nie mają praw administratora, zalecane jest, aby wyłączyć kartę Zarządzaj zawartością w Podglądzie pomocy. Aby uzyskać więcej informacji, zobacz [przesłonięcia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).  
+- Jeśli użytkownicy nie mają praw administratora, zalecane jest, aby wyłączyć kartę Zarządzaj zawartością w Podglądzie pomocy. Aby uzyskać więcej informacji, zobacz [przesłonięcia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).  
   
--   Domyślnym źródłem pomocy będzie nadal Online.  
+- Domyślnym źródłem pomocy będzie nadal Online.  
   
--   Klienci będą nadal się monit o zainstalowanie podstawowa zawartość pomocy przy pierwszym uruchomieniu programu Visual Studio. Aby uzyskać więcej informacji, zobacz [przesłonięcia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).  
+- Klienci będą nadal się monit o zainstalowanie podstawowa zawartość pomocy przy pierwszym uruchomieniu programu Visual Studio. Aby uzyskać więcej informacji, zobacz [przesłonięcia menedżera zawartości Pomocy](../ide/help-content-manager-overrides.md).  
   
 ### <a name="create-the-content-set"></a>Utwórz zestaw zawartości  
  Przed utworzeniem zestawu podstawowego zawartości, należy najpierw odinstalować wszystkie lokalne zawartości programu Visual Studio na komputerze docelowym.  
   
 ##### <a name="to-uninstall-local-help"></a>Aby odinstalować Pomoc lokalną  
   
-1.  W Podglądzie pomocy wybierz **zarządzanie zawartością** kartę.  
+1. W Podglądzie pomocy wybierz **zarządzanie zawartością** kartę.  
   
-2.  W obszarze **dostępnej dokumentacji**, przejdź do zestawu dokumentów programu Visual Studio.  
+2. W obszarze **dostępnej dokumentacji**, przejdź do zestawu dokumentów programu Visual Studio.  
   
-3.  Wybierz **Usuń** obok każdej podpozycji.  
+3. Wybierz **Usuń** obok każdej podpozycji.  
   
-4.  Wybierz **Start** do odinstalowania  
+4. Wybierz **Start** do odinstalowania  
   
-5.  Przejdź do *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 i sprawdź, czy folder zawiera tylko plik catalogType.xml.  
+5. Przejdź do *n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12 i sprawdź, czy folder zawiera tylko plik catalogType.xml.  
   
- Po usunięciu wszystkich uprzednio zainstalowanych pomocy programu Visual Studio zawartości lokalnej, jesteś gotowy do pobrania podstawowego zestawu zawartości.  
+   Po usunięciu wszystkich uprzednio zainstalowanych pomocy programu Visual Studio zawartości lokalnej, jesteś gotowy do pobrania podstawowego zestawu zawartości.  
   
 ##### <a name="to-download-the-content"></a>Aby pobrać zawartość  
   
-1.  W Podglądzie pomocy wybierz **zarządzanie zawartością** kartę.  
+1. W Podglądzie pomocy wybierz **zarządzanie zawartością** kartę.  
   
-2.  W obszarze **dostępnej dokumentacji**, przejdź do zestawów dokumentacji, aby pobrać, a następnie wybierz **Dodaj**.  
+2. W obszarze **dostępnej dokumentacji**, przejdź do zestawów dokumentacji, aby pobrać, a następnie wybierz **Dodaj**.  
   
-3.  Wybierz **Start**.  
+3. Wybierz **Start**.  
   
- Następnie należy spakować zawartości, aby można było wdrożyć na komputerach klienckich.  
+   Następnie należy spakować zawartości, aby można było wdrożyć na komputerach klienckich.  
   
 ##### <a name="to-package-the-content"></a>Aby spakować zawartość  
   

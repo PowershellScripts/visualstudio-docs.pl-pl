@@ -16,12 +16,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b33679efb9fc3523d0ee10dc6bded0c1932a2175
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cca327ffe8dbf260915b5eaa143bef6bb631e690
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198591"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893419"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Porady: zbieranie danych pobierania próbek na poziomie wiersza
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ Próbkowanie na poziomie wiersza jest możliwość określenia, gdzie w kodzie f
 ### <a name="available-data"></a>Dostępne dane  
  Dane dostępne próbkowania na poziomie wiersza zawiera następujące informacje:  
   
--   Nazwa funkcji.  
+- Nazwa funkcji.  
   
--   Adres funkcji.  
+- Adres funkcji.  
   
--   Rozpocznij wiersz — numer wiersza, próbki kodu.  
+- Rozpocznij wiersz — numer wiersza, próbki kodu.  
   
--   Wiersz i zakończenia — numer wiersza źródła. Ogólnie jest taka sama jak "Początek wiersza" danych, z wyjątkiem sytuacji, gdy pojedynczej instrukcji program obejmuje kilka wierszy kodu źródłowego.  
+- Wiersz i zakończenia — numer wiersza źródła. Ogólnie jest taka sama jak "Początek wiersza" danych, z wyjątkiem sytuacji, gdy pojedynczej instrukcji program obejmuje kilka wierszy kodu źródłowego.  
   
--   Rozpocznij znak — kolumnę początku próbka. Zwykle jest to 0, z wyjątkiem sytuacji, gdy jeden wiersz zawiera wiele instrukcji programu.  
+- Rozpocznij znak — kolumnę początku próbka. Zwykle jest to 0, z wyjątkiem sytuacji, gdy jeden wiersz zawiera wiele instrukcji programu.  
   
--   Znak zakończenia — kolumny próbka.  
+- Znak zakończenia — kolumny próbka.  
   
--   Adres IP — adres, w której próbka została wykonana (tylko w widoku adresów IP).  
+- Adres IP — adres, w której próbka została wykonana (tylko w widoku adresów IP).  
   
- W **modułów** wyświetlić, jeśli funkcja statystyki na poziomie wiersza, statystyki są zagnieżdżone w każdej funkcji. Ponadto przedstawiono statystyki na poziomie adresów IP, które zostały zagnieżdżone w każdym wierszu.  
+  W **modułów** wyświetlić, jeśli funkcja statystyki na poziomie wiersza, statystyki są zagnieżdżone w każdej funkcji. Ponadto przedstawiono statystyki na poziomie adresów IP, które zostały zagnieżdżone w każdym wierszu.  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Wyłącz próbkowanie poziomie wiersza dla kodu zarządzanego  
  Próbkowanie na poziomie wiersza jest domyślnie włączona. Można wyłączyć zbieranie danych na poziomie wiersza dla kodu zarządzanego, wykonując jedną z następujących czynności:  

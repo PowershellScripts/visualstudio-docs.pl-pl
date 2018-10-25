@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c49e4254df9ec06813499237054ec916bb4b6c1b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1210b84a52aa15d3c8e1bb73bc58d1fbe48a19d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100068"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920355"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
-Ta metoda pobiera kontekst pamięci lub obiekt zawierający bieżącą wartość symbolu.  
+Ta metoda pobiera kontekst pamięci lub obiekt, który zawiera bieżącą wartość symbolu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -45,7 +45,7 @@ int Bind(
   
 #### <a name="parameters"></a>Parametry  
  `pContainer`  
- [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) zawierający podrzędnych odwołuje się `pField`.  
+ [in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) zawierający odwołuje się element podrzędny `pField`.  
   
  `pField`  
  [in] [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) reprezentujący symbol.  
@@ -54,7 +54,7 @@ int Bind(
  [out] Zwraca `IDebugObject` reprezentujący wystąpienie symbolu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

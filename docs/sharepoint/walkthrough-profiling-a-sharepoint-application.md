@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d235508bb0b58ac17846d0b02db25f044c504deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634709"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852755"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Wskazówki: Profilowanie aplikacji SharePoint
   Ten poradnik pokazuje jak używać narzędzi profilowania w programie Visual Studio w celu zoptymalizowania wydajności aplikacji programu SharePoint. Przykładowa aplikacja jest zawierający pętli bezczynności, który obniża wydajność odbiorcę zdarzeń funkcji odbiorcy zdarzeń funkcji programu SharePoint. Profilera Visual Studio umożliwia znalezienie i wyeliminować najbardziej kosztowne (najwolniejsze wykonanie) części projektu, znany także jako *ścieżka aktywna*.  
   
  W tym instruktażu pokazano następujące zagadnienia:  
   
--   [Dodawanie funkcji i odbiorcę zdarzeń funkcji](#BKMK_AddFtrandFtrEvntReceiver).  
+- [Dodawanie funkcji i odbiorcę zdarzeń funkcji](#BKMK_AddFtrandFtrEvntReceiver).  
   
--   [Konfigurowanie i wdrażanie aplikacji programu SharePoint](#BKMK_ConfigSharePointApp).  
+- [Konfigurowanie i wdrażanie aplikacji programu SharePoint](#BKMK_ConfigSharePointApp).  
   
--   [Uruchamianie aplikacji programu SharePoint](#BKMK_RunSPApp).  
+- [Uruchamianie aplikacji programu SharePoint](#BKMK_RunSPApp).  
   
--   [Przeglądanie i interpretowanie wyniki profilowania](#BKMK_ViewResults).  
+- [Przeglądanie i interpretowanie wyniki profilowania](#BKMK_ViewResults).  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
@@ -52,23 +52,23 @@ ms.locfileid: "42634709"
   
 #### <a name="to-create-a-sharepoint-project"></a>Aby utworzyć projekt programu SharePoint  
   
-1.  Na pasku menu wybierz **pliku** > **New** > **projektu** do wyświetlenia **nowy projekt** okno dialogowe.  
+1. Na pasku menu wybierz **pliku** > **New** > **projektu** do wyświetlenia **nowy projekt** okno dialogowe.  
   
-2.  Rozwiń **SharePoint** węźle albo **Visual C#** lub **języka Visual Basic**, a następnie wybierz **2010** węzła.  
+2. Rozwiń **SharePoint** węźle albo **Visual C#** lub **języka Visual Basic**, a następnie wybierz **2010** węzła.  
   
-3.  W okienku szablonów wybierz **projekt programu SharePoint 2010** szablonu.  
+3. W okienku szablonów wybierz **projekt programu SharePoint 2010** szablonu.  
   
-4.  W **nazwa** wprowadź **ProfileTest**, a następnie wybierz **OK** przycisku.  
+4. W **nazwa** wprowadź **ProfileTest**, a następnie wybierz **OK** przycisku.  
   
-     **Kreator ustawień niestandardowych SharePoint** pojawia się.  
+    **Kreator ustawień niestandardowych SharePoint** pojawia się.  
   
-5.  Na **Określanie witryny i poziomu zabezpieczeń dla debugowania** strony, wprowadź adres URL witryny programu SharePoint server gdzie chcesz debugować definicji witryny lub użyj domyślnej lokalizacji (http://*Nazwa systemowa*/) .  
+5. Na **Określanie witryny i poziomu zabezpieczeń dla debugowania** strony, wprowadź adres URL witryny programu SharePoint server gdzie chcesz debugować definicji witryny lub użyj domyślnej lokalizacji (http://<em>Nazwa systemowa</em>/) .  
   
-6.  W **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** wybierz pozycję **Wdróż jako rozwiązanie farmy** przycisku opcji.  
+6. W **co to jest poziom zaufania dla tego rozwiązania programu SharePoint?** wybierz pozycję **Wdróż jako rozwiązanie farmy** przycisku opcji.  
   
-     Obecnie można tylko profile rozwiązania farmy. Aby uzyskać więcej informacji dotyczących rozwiązań sandbox w porównaniu z rozwiązaniami farmy, zobacz [uwagi dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).  
+    Obecnie można tylko profile rozwiązania farmy. Aby uzyskać więcej informacji dotyczących rozwiązań sandbox w porównaniu z rozwiązaniami farmy, zobacz [uwagi dotyczące rozwiązania typu piaskownica](../sharepoint/sandboxed-solution-considerations.md).  
   
-7.  Wybierz **Zakończ** przycisku. Projekt, który pojawia się w **Eksploratora rozwiązań**.  
+7. Wybierz **Zakończ** przycisku. Projekt, który pojawia się w **Eksploratora rozwiązań**.  
   
 ## <a name="add-a-feature-and-feature-event-receiver"></a>Dodawanie funkcji i odbiorcę zdarzeń funkcji
  Następnie dodaj funkcję do projektu, wraz z obsługiwanego odbiornika dla tej funkcji. Odbiornik zdarzeń będzie zawierał kod, które mają być profilowane.  

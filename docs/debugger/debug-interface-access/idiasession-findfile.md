@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findFile | Dokumentacja firmy Microsoft
+title: Idiasession::FindFile — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b91d23cdd92943a40dfa649e82964b101f68739d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 32c8fa5c6f3cd8ec3cf1cead397eadadb99e050d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462191"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909944"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
-Pobiera pliki źródłowe compiland i nazwę.  
+Pobiera pliki źródłowe compiland — i nazwę.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,19 +37,19 @@ HRESULT findFile (
   
 #### <a name="parameters"></a>Parametry  
  `pCompiland`  
- [in] [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt reprezentujący compiland do użycia jako kontekst dla wyszukiwania. Ustaw ten parametr, `NULL` można znaleźć plików źródłowych w wszystkie jednostki kompilacji.  
+ [in] [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt reprezentujący compiland — ma być używany jako kontekst dla wyszukiwania. Ustaw ten parametr na `NULL` do znajdowania plików źródłowych w compilands wszystkich.  
   
  `name`  
- [in] Określa nazwę pliku źródłowego, które mają zostać pobrane. Ustaw ten parametr, `NULL` źródła wszystkie pliki do pobrania.  
+ [in] Określa nazwę pliku źródłowego, które mają zostać pobrane. Ustaw ten parametr na `NULL` dla wszystkich źródłowych plików do pobrania.  
   
  `option`  
- [in] Określa opcje porównania stosowane do wyszukiwania nazwy. Wartości z [namesearchoptions — wyliczenie](../../debugger/debug-interface-access/namesearchoptions.md) wyliczenie można samodzielnie lub w połączeniu.  
+ [in] Określa opcje porównywania stosowane do wyszukiwania nazwy. Wartości z kolekcji [namesearchoptions — wyliczenie](../../debugger/debug-interface-access/namesearchoptions.md) wyliczenia można samodzielnie lub w połączeniu.  
   
  `ppResult`  
- [out] Zwraca [idiaenumsourcefiles —](../../debugger/debug-interface-access/idiaenumsourcefiles.md) pobrać obiekt, który zawiera listę plików źródłowych.  
+ [out] Zwraca [idiaenumsourcefiles —](../../debugger/debug-interface-access/idiaenumsourcefiles.md) pobrać obiektu, który zawiera listę plików źródłowych.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
   
@@ -62,4 +62,4 @@ pSession->findFile( NULL, L"sourcefile.cpp", nsFNameExt, &pEnum );
  [Idiaenumsourcefiles —](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
  [Idiasession —](../../debugger/debug-interface-access/idiasession.md)   
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [Namesearchoptions — wyliczenie](../../debugger/debug-interface-access/namesearchoptions.md)
+ [NameSearchOptions, wyliczenie](../../debugger/debug-interface-access/namesearchoptions.md)

@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dbac1e67e5b23f277d2698c0cb1a959918c32372
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8a21067eab6e55f3fb031e57fa2257b0d40a7eb6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860501"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886464"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Dostosowywanie przechowywania plików i serializacji XML
 
@@ -301,7 +301,7 @@ Właściwości XML węzły znajdują się w węzłach klasy.
 Węzły danych roli znajdują się w węzłach klasy źródłowej.
 
 |Właściwość|Opis|
-|--------------|-----------------|
+|-|-|
 |Ma monikera niestandardowych.|Ustaw na wartość true, jeśli chcesz określić własny kod do generowania i rozpoznawania monikerów, które przemierzają tej relacji.<br /><br /> Aby uzyskać szczegółowe instrukcje Skompiluj rozwiązanie, a następnie kliknij dwukrotnie komunikaty o błędach.|
 |Relacja domeny|Określa relację, do którego te opcje są stosowane. Tylko do odczytu.|
 |Pominięto Element|W przypadku opcji true węzła XML odpowiadający roli źródłowej jest pomijany w schemacie.<br /><br /> Jeśli istnieje więcej niż jedną relację między klas źródłowych i docelowych, ten węzeł roli rozróżnia łączy, które należą do dwie relacje. Dlatego zaleca się, że nie ustawisz tę opcję, w tym przypadku.|

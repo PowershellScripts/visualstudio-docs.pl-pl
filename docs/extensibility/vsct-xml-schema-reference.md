@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73267319733dd6e31b21a0a47796f9766250bb89
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 51be3e86f1f19cc3701dd456b3085d3e8993b7a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915558"
 ---
 # <a name="vsct-xml-schema-reference"></a>Odwołanie do schematu VSCT XML
 Zapewnia tabelę polecenia tabeli kompilatora elementów schematu, dozwolone podrzędnych elementów i atrybutów dla każdego.  
@@ -36,11 +36,11 @@ Zapewnia tabelę polecenia tabeli kompilatora elementów schematu, dozwolone pod
   
  Wszystkie wartości Identyfikator GUID i identyfikator musi być zdefiniowany za pomocą nazw symbolicznych. Te nazwy mogą być określone w plikach nagłówkowych lub VSCT \<symbole > sekcji. Symbolicznych nazw musi określać elementy lokalne, wynikające z \<Include > elementy, lub odwołuje \<Extern > elementy. Nazwa symboliczna została zaimportowana z określonych w pliku nagłówka \<Extern > elementu, jeśli jest zgodna z prostego wzorzec #define wartość SYMBOL. Wartość może być inny symbol, tak długo, jak wcześniej zdefiniowanego symbolu. Identyfikator GUID definicji należy wykonać formacie OLE lub C++. Wartości Identyfikatora może być dziesiętnych lub szesnastkowych, które są poprzedzone 0 x, jak pokazano w następujących wierszach:  
   
--   {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
+- {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
--   {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
+- {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
   
- Komentarze XML mogą być używane, ale mogą je odrzucić obustronne narzędzi graficznego interfejsu użytkownika (GUI). Zawartość \<adnotacja > elementy są gwarantowane utrzymanie niezależnie od tego, w formacie.  
+  Komentarze XML mogą być używane, ale mogą je odrzucić obustronne narzędzi graficznego interfejsu użytkownika (GUI). Zawartość \<adnotacja > elementy są gwarantowane utrzymanie niezależnie od tego, w formacie.  
   
 ## <a name="schema-hierarchy"></a>Hierarchia schematu  
  Pliku vsct zawiera następujące elementy główne.  

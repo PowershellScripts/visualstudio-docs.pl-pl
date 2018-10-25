@@ -22,25 +22,25 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e28ee8c4fa17eca8f2b5419b1d9aefb229fd020
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e5d49b70cc594a05bae8056fe8139e405e15cba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219157"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888104"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Ograniczenia debugowania WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Istnieją trzy sposoby, aby można było rozpocząć debugowanie usługi WCF:  
   
--   Debugowany proces klienta, który wywołuje usługę. Debuger nie wchodzi do usługi. Usługa nie ma znajdować się w tym samym rozwiązaniu jako aplikację kliencką.  
+- Debugowany proces klienta, który wywołuje usługę. Debuger nie wchodzi do usługi. Usługa nie ma znajdować się w tym samym rozwiązaniu jako aplikację kliencką.  
   
--   Debugowany proces klienta, który wysyła żądanie do usługi. Usługa musi być częścią rozwiązania.  
+- Debugowany proces klienta, który wysyła żądanie do usługi. Usługa musi być częścią rozwiązania.  
   
--   Możesz użyć **dołączyć do procesu** do dołączenia do usługi, które jest aktualnie uruchomione. Debugowanie rozpoczyna się w usłudze.  
+- Możesz użyć **dołączyć do procesu** do dołączenia do usługi, które jest aktualnie uruchomione. Debugowanie rozpoczyna się w usłudze.  
   
- W tym temacie opisano ograniczenia dotyczące tych scenariuszy.  
+  W tym temacie opisano ograniczenia dotyczące tych scenariuszy.  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>Ograniczenia dotyczące Wkraczanie do usługi  
  Aby wkraczać do usługi z aplikacji klienckich, które jest debugowany, muszą być spełnione następujące warunki:  

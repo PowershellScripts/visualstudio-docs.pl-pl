@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9cfbf39ad6ff0dc889f18276a0aad2e4510434c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80bba52a25d6931a83724ffb17e9e34d2bbf923b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864312"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
-Pobiera informacje o żądanie przerwania, opisujący to żądanie przerwania.  
+Pobiera informacje o żądaniu punktu przerwania, opisujący tego żądania punktu przerwania.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,16 +43,16 @@ int GetRequestInfo(
   
 #### <a name="parameters"></a>Parametry  
  `dwFields`  
- [in] Kombinacja flag z [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) wyliczenia, który określa, które pola `pBPRequestInfo` parametru mają zostać wypełnione.  
+ [in] Kombinacja flag z [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) wyliczenie, które określa, które pola w `pBPRequestInfo` parametru są do wypełniania.  
   
  `pBPRequestInfo`  
  [out] Określa [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) struktury w celu wprowadzenia opis żądania punktu przerwania.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę dla prostego `CDebugBreakpointRequest` obiekt ujawniający [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CDebugBreakpointRequest` obiekt ujawniający [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) interfejsu.  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetRequestInfo(  

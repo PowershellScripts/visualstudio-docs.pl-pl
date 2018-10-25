@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1029ff61c7833ae03ab513ef486ecbd1edb1f295
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 179cf5fab5a1b2690cb4b46160f7a5c3342fe7bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914219"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Porady: programowane sortowanie danych w arkuszach
   Można sortować dane znajdujące się na listach i zakresach arkusza w czasie wykonywania. Poniższy kod sortuje zakres wielokolumnowych o nazwie `Fruits` przez dane w pierwszej kolumnie, a następnie dane w drugiej kolumnie.  
@@ -34,12 +34,12 @@ ms.locfileid: "35676343"
   
 ### <a name="to-sort-data-in-a-namedrange-control"></a>Aby posortować dane w kontrolki NamedRange  
   
-1.  Wywołaj <xref:Microsoft.Office.Tools.Excel.NamedRange.Sort%2A> metody <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli. Poniższy przykład wymaga <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu o nazwie `Fruits` w arkuszu. Ten kod muszą być umieszczone w klasie arkusza, nie w `ThisWorkbook` klasy.  
+1. Wywołaj <xref:Microsoft.Office.Tools.Excel.NamedRange.Sort%2A> metody <xref:Microsoft.Office.Tools.Excel.NamedRange> kontroli. Poniższy przykład wymaga <xref:Microsoft.Office.Tools.Excel.NamedRange> formantu o nazwie `Fruits` w arkuszu. Ten kod muszą być umieszczone w klasie arkusza, nie w `ThisWorkbook` klasy.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
-     [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#78)]
+    [!code-vb[Trin_VstcoreExcelAutomation#78](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#78)]  
   
- Umieść następujący kod w *Sheet1.vb* lub *Sheet1.cs* sortowania danych w <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli. W kodzie założono, że masz <xref:Microsoft.Office.Tools.Excel.ListObject> formantu o nazwie `fruitList` w arkuszu o nazwie `Sheet1`.  
+   Umieść następujący kod w *Sheet1.vb* lub *Sheet1.cs* sortowania danych w <xref:Microsoft.Office.Tools.Excel.ListObject> kontroli. W kodzie założono, że masz <xref:Microsoft.Office.Tools.Excel.ListObject> formantu o nazwie `fruitList` w arkuszu o nazwie `Sheet1`.  
   
 ### <a name="to-sort-data-in-a-listobject-control"></a>Aby posortować dane w kontrolce ListObject  
   

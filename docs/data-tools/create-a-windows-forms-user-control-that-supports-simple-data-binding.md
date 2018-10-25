@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab4ee8f468b3d6fa138984e17f3bbe843082e987
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 4b6bf3a790d1e6d8d4165bb489176010a43e7c19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582450"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925088"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Tworzenie kontrolki użytkownika formularzy Windows obsługującego proste powiązanie danych
 
@@ -32,7 +32,7 @@ Aby uzyskać więcej informacji na temat tworzenia formantu, zobacz [tworzenia k
 Podczas tworzenia kontrolki do użycia w scenariuszach wiązania danych, powinny implementować jeden z następujących atrybutów powiązania danych:
 
 |Użycie atrybutu powiązania danych|
-|-----------------------------------|
+| - |
 |Implementowanie <xref:System.ComponentModel.DefaultBindingPropertyAttribute> na proste formanty, takie jak <xref:System.Windows.Forms.TextBox>, który pojedynczej kolumny (lub wyświetlić właściwości) danych. (Ten proces jest opisany na tej stronie wskazówki).|
 |Implementowanie <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> kontrolek, takich jak <xref:System.Windows.Forms.DataGridView>, wyświetlanie listy (lub tabele) danych. Aby uzyskać więcej informacji, zobacz [tworzenie kontrolki użytkownika formularzy Windows obsługującego złożone powiązanie danych](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).|
 |Implementowanie <xref:System.ComponentModel.LookupBindingPropertiesAttribute> kontrolek, takich jak <xref:System.Windows.Forms.ComboBox>, który wyświetla listy lub tabele danych, ale również są potrzebne do pojedynczej kolumny lub właściwości. Aby uzyskać więcej informacji, zobacz [utworzyć formant użytkownika Windows Forms, który obsługuje powiązanie danych wyszukiwania](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|
@@ -184,5 +184,5 @@ W zależności od wymagań aplikacji istnieje kilka kroków, które można wykon
 
 ## <a name="see-also"></a>Zobacz także
 
-- [Powiązywanie kontrolek formularzy Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Wiązanie kontrolek Windows Forms z danymi w programie Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Ustawianie kontrolki do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

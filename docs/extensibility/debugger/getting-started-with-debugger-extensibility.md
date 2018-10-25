@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1a812575d14ef6595d58cc3ecc5d9f94b8f5635
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 642f46e9497e20cd8a8276265fb434c5bd7522bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231291"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851182"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>Wprowadzenie do rozszerzalności debugera
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Zawiera informacje potrzebne do tworzenia i dostosowywania składniki debugera, używane do debugowania programów z poziomu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] środowiska.  
@@ -31,11 +31,11 @@ ms.locfileid: "39231291"
   
  Aby optymalnie wykorzystać [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], należy zapoznać się z następującymi elementami:  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowanego środowiska programistycznego (IDE)  
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zintegrowanego środowiska programistycznego (IDE)  
   
--   Język programowania w języku C++  
+- Język programowania w języku C++  
   
--   ATL COM  
+- ATL COM  
   
 ## <a name="in-this-section"></a>W tej sekcji  
  [Plan rozwoju rozszerzania debugera](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  

@@ -28,12 +28,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c5b7f053a2a63830e80247eeeeadcf34e2a6a351
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250487"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926101"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Tworzenie projektów i diagramów modelowania UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,29 +50,29 @@ UML modeli pomagają zrozumieć, omówienia i projektowanie systemów oprogramow
   
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>Aby utworzyć diagram i dodaj go do projektu  
   
-1.  Na **architektury** menu, wybierz **nowe UML lub diagramu warstwowego**.  
+1. Na **architektury** menu, wybierz **nowe UML lub diagramu warstwowego**.  
   
-2.  W **Dodaj nowy Diagram** okna dialogowego kliknij typ diagramu modelowania, który chcesz.  
+2. W **Dodaj nowy Diagram** okna dialogowego kliknij typ diagramu modelowania, który chcesz.  
   
-     ![Dodaj okno dialogowe Nowy Diagram](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
+    ![Dodaj okno dialogowe Nowy Diagram](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
   
-3.  Wpisz nazwę dla nowego diagramu.  
+3. Wpisz nazwę dla nowego diagramu.  
   
-4.  W **Dodaj do projektu modelowania** pola:  
+4. W **Dodaj do projektu modelowania** pola:  
   
-    -   Wybierz projekt modelowania, który już istnieje w rozwiązaniu, a następnie kliknij przycisk **OK**.  
+   - Wybierz projekt modelowania, który już istnieje w rozwiązaniu, a następnie kliknij przycisk **OK**.  
   
      \- lub —  
   
-    1.  Wybierz **Utwórz nowy projekt modelowania**, a następnie kliknij przycisk **OK**.  
+   1.  Wybierz **Utwórz nowy projekt modelowania**, a następnie kliknij przycisk **OK**.  
   
-    2.  W **Utwórz nowy projekt modelowania** okno dialogowe, wpisz nazwę i lokalizację nowego projektu, a następnie kliknij przycisk **OK**.  
+   2.  W **Utwórz nowy projekt modelowania** okno dialogowe, wpisz nazwę i lokalizację nowego projektu, a następnie kliknij przycisk **OK**.  
   
-         ![Tworzenie okna dialogowego Nowy projekt modelowania](../modeling/media/uml-createmodel.png "UML_CreateModel")  
+        ![Tworzenie okna dialogowego Nowy projekt modelowania](../modeling/media/uml-createmodel.png "UML_CreateModel")  
   
-         Jeśli Twoje rozwiązanie jest otwarte, nowy projekt zostanie dodany do rozwiązania. Jeśli nie masz żadnych Otwórz rozwiązanie, możesz wpisać nazwę dla nowego rozwiązania.  
+        Jeśli Twoje rozwiązanie jest otwarte, nowy projekt zostanie dodany do rozwiązania. Jeśli nie masz żadnych Otwórz rozwiązanie, możesz wpisać nazwę dla nowego rozwiązania.  
   
- Jeśli masz już projekt modelowania, można również użyć poniższej procedury.  
+   Jeśli masz już projekt modelowania, można również użyć poniższej procedury.  
   
 #### <a name="to-add-a-diagram-to-an-existing-modeling-project"></a>Aby dodać diagram do istniejącego projektu modelowania  
   

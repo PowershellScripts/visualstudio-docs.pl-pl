@@ -9,12 +9,12 @@ description: Więcej informacji na temat korzyści usługi Office 365, objęte n
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 27be6e98bcaf030a74096a404383cbc54d64f44f
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: a3aa6a9dc60ea48db5e0d97b7a3c417dcb18559a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073912"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908395"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Usługi Office 365 w ramach subskrypcji programu Visual Studio
 
@@ -43,6 +43,7 @@ Jeśli planowane jest tworzenie aplikacji dla pakietu Office, należy aktywować
 
 
 ## <a name="eligibility"></a>Uprawnienie
+
 | Poziom subskrypcji                                                 |     Kanały                                            | Korzyść                                                          | Podlega odnowieniu?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Program Visual Studio Enterprise (standardowy, roczna w chmurze)   | VL, Azure, Retail| Dostępne       |  Tak          |

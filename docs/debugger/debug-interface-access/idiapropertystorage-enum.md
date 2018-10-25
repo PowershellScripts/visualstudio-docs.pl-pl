@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0fe51224a4b4a5abc73a3edb7a2caf239d32efb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2ff182c2600a41a0e7c13ed460418e93f88baaed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871644"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
-Pobiera moduł wyliczający dla właściwości w tym zestawie.  
+Pobiera moduł wyliczający dla właściwości, w tym zestawie.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,7 +37,7 @@ HRESULT Enum (
  [out] Zwraca `IEnumSTATPROPSTG` obiektu (w przestrzeni nazw Microsoft.VisualStudio.OLE.Interop) reprezentujący wyliczenie właściwości.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

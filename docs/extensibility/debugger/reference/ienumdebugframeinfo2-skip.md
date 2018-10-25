@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 450b74909b27f452a2a9f5383436ac9486cb2228
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7826193b0c85f86a760f307e08a8b1fcd9aae279
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31123201"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878800"
 ---
 # <a name="ienumdebugframeinfo2skip"></a>IEnumDebugFrameInfo2::Skip
 Pomija w ciągu określonej liczby elementów.  
@@ -44,10 +44,10 @@ int Skip(
  [in] Liczba elementów do pominięcia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli `celt` jest większa niż liczba pozostałych elementów; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli `celt` jest większa niż liczba pozostałych elementów; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Jeśli `celt` określa wartość większą niż liczba pozostałych elementów wyliczenia jest ustawiona na końcu i `S_FALSE` jest zwracany.  
+ Jeśli `celt` określa wartość większa niż liczba pozostałych elementów wyliczenia jest ustawiona na końcu i `S_FALSE` jest zwracana.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

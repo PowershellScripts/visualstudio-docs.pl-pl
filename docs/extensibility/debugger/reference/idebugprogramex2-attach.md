@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c58f576a0126472ad60ceeb5fc5289b668bd54dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ac2e86c25f9f74b7be4b9606e6e1ec721743878
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906913"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
-Dołącz sesji programu.  
+Sesję należy dołączyć do programu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,22 +46,22 @@ int Attach(
   
 #### <a name="parameters"></a>Parametry  
  `pCallback`  
- [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiekt, który reprezentuje funkcję wywołania zwrotnego, który aparat debugowania dołączone wysyła zdarzenia do.  
+ [in] [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) obiekt, który reprezentuje aparat debugowania dołączonych wysyła zdarzenia do funkcja wywołania zwrotnego.  
   
  `dwReason`  
  [in] Wartość z zakresu od [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) wyliczenie opisujące przyczynę operacji dołączania.  
   
  `pSession`  
- [in] Wartość, która unikatowo identyfikuje sesji, która jest dołączenie do programu.  
+ [in] Wartość, która jednoznacznie identyfikuje sesji, która jest dołączenie do programu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Ta metoda powinna zwrócić `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` Jeśli program jest już dołączony.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Ta metoda powinna zwracać `E_ATTACH_DEBUGGER_ALREADY_ATTACHED` Jeśli program jest już dołączony.  
   
 ## <a name="remarks"></a>Uwagi  
- Port, który zawiera program można użyć wartości w `pSession` do określenia, które sesji próbuje dołączyć do programu. Na przykład jeśli port zezwala na tylko jedną debugowanie można dołączyć do procesu w czasie, port można określić, jeśli ta sama sesja jest już dołączony do innych programów w procesie.  
+ Port, który zawiera program można użyć wartości w `pSession` ustalenie, który sesja próbuje dołączyć do programu. Na przykład jeśli port umożliwia sesję debugowania tylko jeden, aby dołączyć do procesu w czasie, numer portu można określić, jeśli ta sama sesja jest już dołączony do innych programów w procesie.  
   
 > [!NOTE]
->  Przekazany interfejs `pSession` powinien być traktowany jako plik cookie wartość, która unikatowo identyfikuje Menedżera debugowania sesji dołączania do tego programu; żaden z metod interfejsu podany nie jest funkcjonalności.  
+>  Przekazanego interfejsu `pSession` jest traktowane tylko jako plik cookie, a wartość, która jednoznacznie identyfikuje Menedżer debugowania sesji, dołączenie do tego programu; Brak metody w interfejsie podane są funkcjonalne.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

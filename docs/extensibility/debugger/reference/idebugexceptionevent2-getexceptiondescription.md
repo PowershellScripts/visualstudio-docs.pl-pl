@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35baacc0eca2919e12a9056b902ab551e7f824bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 61dcc2d961281b620d6670c7355f026b6207554b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112112"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891612"
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
 Pobiera zawiera opis wyjątku.  
@@ -44,10 +44,10 @@ int GetExceptionDescription(
  [out] Zwraca zawiera opis wyjątku.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Długość ciągu zwróconego z tej metody jest zazwyczaj nazwą wyjątku i jest wyświetlany w **dane wyjściowe** okna po wystąpieniu wyjątku.  
+ Ciąg zwracany przez tę metodę jest zazwyczaj nazwą wyjątek i jest widoczny w **dane wyjściowe** okna, gdy wystąpi wyjątek.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

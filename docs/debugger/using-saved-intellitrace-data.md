@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3afcfc29dcb01de307f0aefc3a943626bc213d
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ad584ac350038ced460b42a4e63d2b140d8396d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321219"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912971"
 ---
 # <a name="using-saved-intellitrace-data"></a>Korzystanie z zapisanych danych funkcji IntelliTrace
 Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz debugowanie z pliku dziennika (.iTrace) funkcji IntelliTrace. Ten plik może zawierać zdarzeń dotyczących wydajności, wyjątki, wątki, kroki testu, moduły i inne informacje systemowe, że IntelliTrace podczas pracy Twojej aplikacji.
@@ -159,25 +159,25 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
 
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>Uruchom debugowanie z identyfikatorem korelacji programu SharePoint
 
-1.  Skopiuj identyfikator korelacji SharePoint z jej źródła.
+1. Skopiuj identyfikator korelacji SharePoint z jej źródła.
 
-     Na przykład:
+    Na przykład:
 
-     ![IntelliTrace &#45; błąd SharePoint &#45; identyfikator korelacji](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
+    ![IntelliTrace &#45; błąd SharePoint &#45; identyfikator korelacji](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")
 
-2.  Otwórz plik .iTrace, a następnie przejdź do **analizy** i wprowadź identyfikator korelacji programu SharePoint, aby przejrzeć odpowiadające żądanie sieci web i rejestrowane zdarzenia.
+2. Otwórz plik .iTrace, a następnie przejdź do **analizy** i wprowadź identyfikator korelacji programu SharePoint, aby przejrzeć odpowiadające żądanie sieci web i rejestrowane zdarzenia.
 
-     ![Dziennik IntelliTrace &#45; identyfikator korelacji SharePoint wprowadź](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
+    ![Dziennik IntelliTrace &#45; identyfikator korelacji SharePoint wprowadź](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")
 
-3.  W obszarze **zdarzenia żądań**, zbadaj zdarzenia. Począwszy od góry, zdarzenia są wyświetlane w kolejności ich wystąpienia.
+3. W obszarze **zdarzenia żądań**, zbadaj zdarzenia. Począwszy od góry, zdarzenia są wyświetlane w kolejności ich wystąpienia.
 
-    1.  Wybierz zdarzenie, aby wyświetlić jego szczegóły.
+   1. Wybierz zdarzenie, aby wyświetlić jego szczegóły.
 
-    2.  Wybierz **Rozpocznij debugowanie** aby rozpocząć debugowanie w punkcie, w której zaszło zdarzenie.
+   2. Wybierz **Rozpocznij debugowanie** aby rozpocząć debugowanie w punkcie, w której zaszło zdarzenie.
 
-     ![Plik dziennika IntelliTrace &#45; żądania sieci web widoku &#43; zdarzenia](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
+      ![Plik dziennika IntelliTrace &#45; żądania sieci web widoku &#43; zdarzenia](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")
 
- Możesz zobaczyć te rodzaje zdarzeń programu SharePoint oraz zdarzenia IntelliTrace:
+   Możesz zobaczyć te rodzaje zdarzeń programu SharePoint oraz zdarzenia IntelliTrace:
 
 -   **Zdarzenia profilu użytkownika**
 
@@ -199,28 +199,28 @@ Przejdź do określonych punktów w wykonywaniu swojej aplikacji, gdy zaczynasz 
 
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Uruchom debugowanie z nieobsłużonego wyjątku
 
-1.  Wybierz identyfikator korelacji programu SharePoint, dla wyjątku. Wyjątki są pogrupowane według typu i stosu wywołań.
+1. Wybierz identyfikator korelacji programu SharePoint, dla wyjątku. Wyjątki są pogrupowane według typu i stosu wywołań.
 
-2.  (Opcjonalnie) Rozwiń **stos wywołań** aby zobaczyć stos wywołań dla grupy wyjątki.
+2. (Opcjonalnie) Rozwiń **stos wywołań** aby zobaczyć stos wywołań dla grupy wyjątki.
 
-3.  Wybierz **wyjątek debugowania** aby rozpocząć debugowanie w punkcie, w którym wyjątek wystąpił.
+3. Wybierz **wyjątek debugowania** aby rozpocząć debugowanie w punkcie, w którym wyjątek wystąpił.
 
-     ![Dziennik IntelliTrace &#45; SharePoint nieobsługiwane wyjątki](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
+    ![Dziennik IntelliTrace &#45; SharePoint nieobsługiwane wyjątki](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")
 
- Aby uzyskać wskazówki, zobacz [wskazówki: debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Do tego rodzaju danych, które rekordy agenta, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).
+   Aby uzyskać wskazówki, zobacz [wskazówki: debugowanie aplikacji SharePoint przy użyciu funkcji IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Do tego rodzaju danych, które rekordy agenta, zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).
 
 ###  <a name="ThreadsList"></a> Lista wątków
  Badać zarejestrowane wątki, które uruchomiono w procesie docelowym. Możesz rozpocząć debugowanie od pierwszego prawidłowego zdarzenia IntelliTrace w wybranym wątku.
 
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>Aby rozpocząć debugowanie z określonego wątku
 
-1.  W obszarze **Lista wątków**, wybierz wątek.
+1. W obszarze **Lista wątków**, wybierz wątek.
 
-2.  W dolnej części **Lista wątków**, wybierz **Rozpocznij debugowanie**. Możesz także dwukrotnie kliknąć na wątek.
+2. W dolnej części **Lista wątków**, wybierz **Rozpocznij debugowanie**. Możesz także dwukrotnie kliknąć na wątek.
 
-     Aby rozpocząć debugowanie, od której rozpoczyna się aplikacja, kliknij dwukrotnie **główny wątek**. Zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).
+    Aby rozpocząć debugowanie, od której rozpoczyna się aplikacja, kliknij dwukrotnie **główny wątek**. Zobacz [funkcji IntelliTrace](../debugger/intellitrace-features.md).
 
- Dane wątku, który użytkownik utworzył mogą być bardziej przydatne niż wątki, które serwer tworzy i którymi zarządza w zakresie aplikacji sieci Web obsługiwanych przez usługi IIS.
+   Dane wątku, który użytkownik utworzył mogą być bardziej przydatne niż wątki, które serwer tworzy i którymi zarządza w zakresie aplikacji sieci Web obsługiwanych przez usługi IIS.
 
 |**Kolumny**|**Pokazuje**|
 |----------------|-------------------|

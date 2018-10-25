@@ -18,12 +18,12 @@ ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0eb2942d0449e69ef25e26e6194d67bc7b0484e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f5f567ecad10e900cc57ed210526b077cd5e94f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882239"
 ---
 # <a name="feedback-to-the-user"></a>Opinia dla użytkownika
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,27 +42,27 @@ W [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] zintegrowanego środowiska pro
   
  Jeśli tylko urządzenia surface funkcjonalność, użytkownicy muszą i zapewnić spójne wybór i opinie kontekst środowiska można zmniejszyć złożoność w środowisku IDE. Przy każdym otwarciu okna w IDE, stosowane są następujące reguły:  
   
--   Jeśli okno zmienia kontekst zaznaczenia, informacje zwrotne dotyczące wyboru jest wyraźnie wskazane w oknie i dynamiczna Pomoc okna, jeśli wyświetlony, jest zaktualizowana w celu odzwierciedlenia bieżącego kontekstu.  
+- Jeśli okno zmienia kontekst zaznaczenia, informacje zwrotne dotyczące wyboru jest wyraźnie wskazane w oknie i dynamiczna Pomoc okna, jeśli wyświetlony, jest zaktualizowana w celu odzwierciedlenia bieżącego kontekstu.  
   
--   Jeśli okno zmienia kontekst zaznaczenia globalnego, wszystkich menu kontekstowych, okna aktywnej hierarchii i na pasku tytułu aplikacji są aktualizowane, tak aby odzwierciedlić bieżący kontekst.  
+- Jeśli okno zmienia kontekst zaznaczenia globalnego, wszystkich menu kontekstowych, okna aktywnej hierarchii i na pasku tytułu aplikacji są aktualizowane, tak aby odzwierciedlić bieżący kontekst.  
   
--   Okno powinno powierzchni właściwości dla bieżącego zaznaczenia w **właściwości** okna i, opcjonalnie, jeśli wyświetlony, **strony właściwości** okno dialogowe.  
+- Okno powinno powierzchni właściwości dla bieżącego zaznaczenia w **właściwości** okna i, opcjonalnie, jeśli wyświetlony, **strony właściwości** okno dialogowe.  
   
--   Jeśli okno nie powierzchni właściwości lub zmienić kontekst zaznaczenia globalnego, informacje zwrotne dotyczące wyboru nie powinna pozostać w oknie, gdy nie jest już aktywnego okna w IDE.  
+- Jeśli okno nie powierzchni właściwości lub zmienić kontekst zaznaczenia globalnego, informacje zwrotne dotyczące wyboru nie powinna pozostać w oknie, gdy nie jest już aktywnego okna w IDE.  
   
--   Wszystkie okna narzędzi specyficznych dla dokumentu stale powinny odzwierciedlać aktywnego dokumentu.  
+- Wszystkie okna narzędzi specyficznych dla dokumentu stale powinny odzwierciedlać aktywnego dokumentu.  
   
--   Menu, paski narzędzi i paska tytułu aplikacji powinny odzwierciedlać okna klienta znajdujące się najwyżej interfejsu wielu dokumentów (MDI).  
+- Menu, paski narzędzi i paska tytułu aplikacji powinny odzwierciedlać okna klienta znajdujące się najwyżej interfejsu wielu dokumentów (MDI).  
   
- Na przykład po otwarciu widoku HTML w formularzu sieci Web w projekcie aplikacji sieci Web w języku Visual Basic i użytkownik wybierze `<td>` tagu, informacje są przekazywane w następujący sposób:  
+  Na przykład po otwarciu widoku HTML w formularzu sieci Web w projekcie aplikacji sieci Web w języku Visual Basic i użytkownik wybierze `<td>` tagu, informacje są przekazywane w następujący sposób:  
   
--   Wybór jest wskazane w aktywnym oknie i zostaną uwzględnione w **właściwości** okna.  
+- Wybór jest wskazane w aktywnym oknie i zostaną uwzględnione w **właściwości** okna.  
   
--   Specyficzne dla dokumentu **przybornika** zostanie zaktualizowany w celu odzwierciedlenia aktywnego dokumentu.  
+- Specyficzne dla dokumentu **przybornika** zostanie zaktualizowany w celu odzwierciedlenia aktywnego dokumentu.  
   
--   **Edytora** narzędzi i **tabeli** są wyświetlane w menu i na pasku tytułu aktualizowany w celu odzwierciedlenia okna formularza sieci Web.  
+- **Edytora** narzędzi i **tabeli** są wyświetlane w menu i na pasku tytułu aktualizowany w celu odzwierciedlenia okna formularza sieci Web.  
   
--   Okno aktywnej hierarchii, które jest zazwyczaj **Eksploratora rozwiązań**i jej aktualizacji paska tytułu, aby odzwierciedlić bieżący kontekst i kontekstowej **projektu** poleceń menu teraz je zastosować do aktywnego internetowego Projekt aplikacji.  
+- Okno aktywnej hierarchii, które jest zazwyczaj **Eksploratora rozwiązań**i jej aktualizacji paska tytułu, aby odzwierciedlić bieżący kontekst i kontekstowej **projektu** poleceń menu teraz je zastosować do aktywnego internetowego Projekt aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Wybór i aktualność w środowisku IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   

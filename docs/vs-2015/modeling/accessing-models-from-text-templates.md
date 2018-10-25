@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ad3d921de04c3fd612571a55d012588793b91db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257195"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919861"
 ---
 # <a name="accessing-models-from-text-templates"></a>Uzyskiwanie dostępu do modeli z poziomu szablonów tekstu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Przy użyciu szablonów tekstowych, można utworzyć raport plików, pliki kodu 
   
  Dostęp do modelu z szablonu tekstu:  
   
--   Ustaw właściwość Dziedzicz — dyrektywa szablonu do <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. To zapewnia dostęp do Store.  
+- Ustaw właściwość Dziedzicz — dyrektywa szablonu do <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. To zapewnia dostęp do Store.  
   
--   Określ procesory dyrektyw dla języka DSL, który chcesz uzyskać dostęp. Ładuje zestawy dla DSL, tak, aby można było używać jej klas domeny, właściwości i relacje w kodzie szablon tekstowy. Powoduje ono również pobieranie pliku modelu, który określisz.  
+- Określ procesory dyrektyw dla języka DSL, który chcesz uzyskać dostęp. Ładuje zestawy dla DSL, tak, aby można było używać jej klas domeny, właściwości i relacje w kodzie szablon tekstowy. Powoduje ono również pobieranie pliku modelu, który określisz.  
   
- A `.tt` podobny do poniższego przykładu utworzony zostanie plik w projekcie debugowania podczas tworzenia nowego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania z szablonu minimalnego języka DSL.  
+  A `.tt` podobny do poniższego przykładu utworzony zostanie plik w projekcie debugowania podczas tworzenia nowego [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] rozwiązania z szablonu minimalnego języka DSL.  
   
 ```  
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -97,11 +97,11 @@ Here is a list of elements in the model:
   
  Należy zauważyć, że:  
   
-1.  `filename` i `validation` parametry są rozdzielane ";" oraz nie może być nie separatorów ani spacji.  
+1. `filename` i `validation` parametry są rozdzielane ";" oraz nie może być nie separatorów ani spacji.  
   
-2.  Lista kategorii weryfikacji określa metody sprawdzania poprawności, które zostaną wykonane. Wiele kategorii powinny być rozdzielone za pomocą "&#124;" oraz nie może być nie separatorów ani spacji.  
+2. Lista kategorii weryfikacji określa metody sprawdzania poprawności, które zostaną wykonane. Wiele kategorii powinny być rozdzielone za pomocą "&#124;" oraz nie może być nie separatorów ani spacji.  
   
- Jeśli zostanie znaleziony błąd, będą raportowane w oknie błędów, a plik wynik będzie zawierać komunikat o błędzie.  
+   Jeśli zostanie znaleziony błąd, będą raportowane w oknie błędów, a plik wynik będzie zawierać komunikat o błędzie.  
   
 ##  <a name="Multiple"></a> Uzyskiwanie dostępu do wielu modeli z szablonu tekstowego  
   

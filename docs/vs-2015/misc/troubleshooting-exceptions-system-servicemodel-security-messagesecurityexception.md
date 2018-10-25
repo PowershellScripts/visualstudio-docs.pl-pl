@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 304847259f9955706f345ef0f27800dfb77eddfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 676f51b34bfc83d0a2af195da85a2c46cae08ac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241233"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853171"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Rozwiązywanie problemów z wyjątkami: System.ServiceModel.Security.MessageSecurityException
 A <xref:System.ServiceModel.Security.MessageSecurityException> wyjątek jest generowany, gdy [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] Określa, że komunikat nie jest poprawnie zabezpieczony lub została naruszona. Ten błąd występuje najczęściej, gdy wszystkie spełnione są następujące warunki:  
@@ -48,35 +48,35 @@ A <xref:System.ServiceModel.Security.MessageSecurityException> wyjątek jest gen
   
 #### <a name="to-create-a-custom-service-binding-for-the-wcf-service-hosted-inside-the-aspnet-development-server"></a>Aby utworzyć usługę niestandardowe powiązanie dla usługi WCF hostowanej w ASP.NET Development Server  
   
-1.  Otwórz plik Web.config dla usługi WCF, które generuje wyjątek.  
+1. Otwórz plik Web.config dla usługi WCF, które generuje wyjątek.  
   
-2.  Wprowadź następujące informacje w pliku Web.config.  
+2. Wprowadź następujące informacje w pliku Web.config.  
   
-    ```  
-    <bindings>  
-      <customBinding>  
-        <binding name="Service1Binding">  
-          <transactionFlow />  
-          <textMessageEncoding />  
-          <httpTransport authenticationScheme="Ntlm" />  
-        </binding>  
-      </customBinding>  
-    </bindings>  
-    ```  
+   ```  
+   <bindings>  
+     <customBinding>  
+       <binding name="Service1Binding">  
+         <transactionFlow />  
+         <textMessageEncoding />  
+         <httpTransport authenticationScheme="Ntlm" />  
+       </binding>  
+     </customBinding>  
+   </bindings>  
+   ```  
   
-3.  Zapisz i zamknij plik Web.config.  
+3. Zapisz i zamknij plik Web.config.  
   
-4.  W kodzie dla usługi sieci Web lub usługi WCF należy zmienić wartość punktu końcowego do następujących:  
+4. W kodzie dla usługi sieci Web lub usługi WCF należy zmienić wartość punktu końcowego do następujących:  
   
-    ```  
-    <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
-    ```  
+   ```  
+   <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
+   ```  
   
-     Daje to gwarancję, że usługa używa niestandardowego powiązania.  
+    Daje to gwarancję, że usługa używa niestandardowego powiązania.  
   
-5.  Dodaj odwołanie do usługi w aplikacji sieci Web, który uzyskuje dostęp do usługi. (W **Dodaj odwołanie do usługi** okna dialogowego Dodaj odwołanie do usługi, jak w przypadku oryginalnej usługi, która generowania wyjątku.)  
+5. Dodaj odwołanie do usługi w aplikacji sieci Web, który uzyskuje dostęp do usługi. (W **Dodaj odwołanie do usługi** okna dialogowego Dodaj odwołanie do usługi, jak w przypadku oryginalnej usługi, która generowania wyjątku.)  
   
- Można wykonaj następujące kroki, aby wyłączyć zabezpieczenie NTLM, gdy pracujesz z odwołania do usługi WCF.  
+   Można wykonaj następujące kroki, aby wyłączyć zabezpieczenie NTLM, gdy pracujesz z odwołania do usługi WCF.  
   
 > [!IMPORTANT]
 >  Wyłączenie zabezpieczeń NTLM nie jest zalecane i może stanowić zagrożenie bezpieczeństwa.  

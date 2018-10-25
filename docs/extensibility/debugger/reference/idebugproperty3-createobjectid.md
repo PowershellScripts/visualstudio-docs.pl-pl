@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: df4e45c442745652b3305fd91146bd31ffe79e4b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1514c21345356bbece6680b9ccd212d15dbfa191
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920979"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
-Tworzy unikatowy identyfikator dla tej właściwości, aby upewnić się, że jest unikatowa wśród innych właściwości.  
+Tworzy unikatowy identyfikator dla tej właściwości, aby upewnić się, że jest ona unikatowa wśród wszystkich innych właściwości.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,15 +38,15 @@ int CreateObjectID();
 ```  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda jest wywoływana, gdy chce upewnij się, że ta właściwość jest unikatowo identyfikowana wśród innych właściwości Menedżera sesji debugowania. Aparat debugowania (DE) obsługuje tę metodę, chyba że właściwości, który zajmuje się są już unikatowo identyfikowane. Jeśli DE nie obsługuje tej metody, zwraca `E_NOTIMPL`.  
+ Ta metoda jest wywoływana, gdy Menedżer debugowania sesji chce mieć pewność, ta właściwość jest unikatowo identyfikowana przez inne właściwości. Aparat debugowania (DE) obsługuje tę metodę, chyba że właściwości, które zajmuje się on już unikatowo zidentyfikować. Jeśli DE nie obsługuje tej metody, zwraca `E_NOTIMPL`.  
   
- Wszelkie Unikatowy identyfikator utworzone za pomocą `CreateObjectID` zostanie zniszczony po [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) metoda jest wywoływana; to również sygnalizuje koniec potrzebę jednoznacznego zidentyfikowania tej właściwości.  
+ Wszelkie Unikatowy identyfikator utworzony za pomocą `CreateObjectID` jest niszczony, kiedy [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) wywoływana jest metoda; to również sygnalizuje koniec potrzebę unikatowo identyfikujący tę właściwość.  
   
 > [!NOTE]
->  Nie istnieje metoda pobierze ten unikatowy identyfikator, tak więc DE można zrobić, niezależnie od chce unikatowych identyfikatorów podczas `CreateObjectID` metoda jest wywoływana.  
+>  Nie istnieje metoda do pobrania to unikatowy identyfikator, więc DE można zrobić, niezależnie od rodzaju chce uzyskać unikatowe identyfikatory podczas `CreateObjectID` metoda jest wywoływana.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   

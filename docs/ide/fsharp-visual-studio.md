@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 938beef8676901c385ef7cc7c07b9ce0d52067c3
-ms.sourcegitcommit: c87b0d9f65dc7ebe95071f66ea8da4d4bc52d360
+ms.openlocfilehash: 4512a6ad5efe519c203a764b18cdfc352ed6e81a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993905"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921434"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Programowanie za pomocą programu Visual F # w programie Visual Studio
 
@@ -61,7 +61,7 @@ W poniższej tabeli podsumowano funkcje we właściwościach projektu dla język
 **Projektant projektu** składa się z kilku stron właściwości projektu, pogrupowane według pokrewne funkcje. Stron, które są dostępne dla projektów języka F # są głównie podzbiór tych, które są dostępne dla innych języków i są opisane w poniższej tabeli. Linki zostały podane dla odpowiedniego języka C# **projektanta projektu** strony.
 
 |Strona projektanta projektu|Linki pokrewne|Opis|
-|---------------------|-------------|-----------|
+| - |-------------|-----------|
 |Aplikacja|[Strona aplikacji, Projektant projektu](reference/application-page-project-designer-csharp.md)|Umożliwia określenie ustawień na poziomie aplikacji i właściwości, takie jak tego, czy tworzysz bibliotekę lub plik wykonywalny, jakiej wersji programu .NET Framework jest przeznaczony dla aplikacji i informacje o którym zasobu pliki aplikacji zastosowań są przechowywane.|
 |Kompilacja|[Strona, Projektant projektu kompilacji](reference/build-page-project-designer-csharp.md)|Umożliwia kontrolowanie sposobu kompilowania kodu.|
 |Zdarzenia kompilacji|[Strona zdarzenia, Projektant projektu kompilacji](reference/build-events-page-project-designer-csharp.md)|Pozwala określić polecenie do uruchomienia przed lub po kompilacji.|
@@ -75,7 +75,7 @@ W poniższej tabeli podsumowano funkcje we właściwościach projektu dla język
 Poniższa tabela zawiera podsumowanie ustawień, które są specyficzne dla języka F #:
 
 |Strona projektanta projektu|Ustawienie|Opis|
-|---------------------|-------|-----------|
+| - |-------|-----------|
 |Kompilacja|Generuj wywołania zakończenia|Jeśli zaznaczone, umożliwia korzystanie z fragmentarycznej instrukcji Microsoft Intermediate Language (MSIL). Powoduje to ramek stosu, można użyć ponownie dla funkcji cyklicznych. Odpowiednikiem `--tailcalls` — opcja kompilatora.|
 |Kompilacja|Inne flagi|Pozwala określić opcje wiersza polecenia kompilatora dodatkowe.|
 

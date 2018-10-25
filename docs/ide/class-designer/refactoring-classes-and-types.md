@@ -21,72 +21,72 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee534ca3c8b2a1cef441005586bc58601fb15ed7
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0d5683f28150089335f04e9cf2e5274ad3ff413c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922526"
 ---
-# <a name="refactor-classes-and-types-in-class-designer"></a>Refaktoryzuj klas i typów w Projektancie klas
+# <a name="refactor-classes-and-types-in-class-designer"></a>Refaktoryzacja klas i typów w Projektancie klas
 
-Gdy zrefaktoryzuj kod, można ułatwić zrozumienie, obsługa i bardziej wydajne, zmieniając jej wewnętrznej struktury i sposobu jego obiektów zaprojektowany nie jego zachowanie zewnętrznych. Korzystanie z projektanta klas i okno Szczegóły klasy do Zmniejsz ilość pracy, które musisz wykonać oraz ryzyko wprowadzenia usterki, gdy Refaktoryzuj kodu C#, VB lub C++ w projekcie programu Visual Studio.
+Refaktoryzacja kodu możesz ułatwić zrozumienie, obsługa i bardziej wydajne, zmieniając jego wewnętrzną strukturę i sposób jej obiektów są zaprojektowane nie jego zachowanie zewnętrznych. Korzystanie z projektanta klas i w oknie Szczegóły klasy, aby zmniejszyć prac, które należy wykonać oraz ryzyko wprowadzenia błędów, Refaktoryzacja C#, Visual Basic lub C++ możesz pisać kod w projekcie programu Visual Studio.
 
 > [!NOTE]
-> Pliki projektu może być tylko do odczytu, ponieważ projekt jest pod kontrolą kodu źródłowego i nie został wyewidencjonowany, jest przywoływanego projektu lub jego pliki są oznaczone jako tylko do odczytu na dysku. Podczas pracy w projekcie w jeden z tych stanów zostaną wyświetlone różne sposoby, aby zapisać swoją pracę, w zależności od stanu projektu. Dotyczy to refaktoryzacji kodu, a także kod w inny sposób, na przykład bezpośrednio edytując ją zmienić.
+> Pliki projektu może być tylko do odczytu, ponieważ projekt jest pod kontrolą kodu źródłowego i nie został wyewidencjonowany, jest przywoływany projekt lub jego pliki są oznaczone jako tylko do odczytu na dysku. Podczas pracy w projekcie w jeden z tych stanów, zostaną wyświetlone różne sposoby, aby zapisać swoją pracę w zależności od stanu projektu. Dotyczy to refaktoryzacji kodu, a także kod, który możesz zmienić w inny sposób, na przykład bezpośrednio edytując ją.
 
 ## <a name="common-tasks"></a>Wspólne zadania
 
 |Zadanie|Zawartość pomocnicza|
-|----------|------------------------|
-|**Refaktoryzacja klas:** refaktoryzacji operacji można użyć do podział klas na klasy częściowe lub Implementowanie abstrakcyjnych klas podstawowych.|-   [Porady: podział klas na klasy częściowe](how-to-split-a-class-into-partial-classes.md)|
-|**Praca z interfejsów:** Projektant klas można zaimplementować interfejsu na diagramie klas, łącząc go z klasy, która udostępnia kod dla metody interfejsu.|-   [Porady: Implementowanie interfejsu](how-to-implement-an-interface.md)|
-|**Refaktoryzacja typy, elementy członkowskie typu i parametry:** za pomocą projektanta klas, można zmienić nazwy typów, zastępują elementy członkowskie typu lub przenoszeniu ich z jednego typu. Można również utworzyć typy dopuszczające wartości zerowe.|-   [Zmiana nazwy, typy i elementy członkowskie typu](#rename-types-and-type-members)<br />-   [Przenieś elementy członkowskie typu z jednego typu na inny](#move-type-members-from-one-type-to-another)<br />-   [Porady: Tworzenie typu Zerowalnego](how-to-create-a-nullable-type.md)|
+|----------| - |
+|**Refaktoryzacja klas:** można użyć operacji refaktoryzacji, podzielić klasę na klasy częściowe lub Implementowanie abstrakcyjnych klas podstawowych.|-   [Porady: podział klasy na klasy częściowe](how-to-split-a-class-into-partial-classes.md)|
+|**Praca z interfejsów:** w Projektancie klas można zaimplementować interfejsu na diagramie klas łącząc je do klasy, która zawiera kod dla metody interfejsu.|-   [Porady: Implementowanie interfejsu](how-to-implement-an-interface.md)|
+|**Refaktoryzacja typy, elementy członkowskie typu i parametry:** za pomocą projektanta klas, można zmienić nazwy typów, Przesłoń składowe typu lub przenieść je z jednego typu na inny. Można również utworzyć typy dopuszczające wartości null.|-   [Zmiana nazwy, typy i elementy członkowskie typu](#rename-types-and-type-members)<br />-   [Przenoszenie elementów członkowskich typu z jednego typu na inny](#move-type-members-from-one-type-to-another)<br />-   [Porady: Tworzenie typu dopuszczającego wartość null](how-to-create-a-nullable-type.md)|
 
 ## <a name="rename-types-and-type-members"></a>Zmiana nazwy, typy i elementy członkowskie typu
 
-W Projektancie klas, można zmienić nazwę typu lub elementu członkowskiego typu na diagramie klas, lub w **właściwości** okna. W **szczegółów klasy** okna, można zmienić nazwę członka, lecz nie jest typem. Zmiana nazwy typu lub elementu członkowskiego typu propaguje do wszystkich systemu windows i gdzie pojawił się starą nazwę lokalizacji kodu.
+W Projektancie klas, możesz zmienić nazwę typu lub składowej typu na diagramie klasy lub w **właściwości** okna. W **szczegóły klasy** okna, możesz zmienić nazwę elementu członkowskiego, ale nie jest typem. Zmiana nazwy typu lub składowej typu propaguje do wszystkich okien i lokalizacji kodu, w których pojawiły się starej nazwy.
 
 ### <a name="rename-in-the-class-designer"></a>Zmień nazwę w Projektancie klas
 
-1. Na diagramie klas wybierz typ lub element członkowski, a następnie wybierz nazwę.
+1. Na diagramie klasy zaznacz typ lub element członkowski, a następnie wybierz nazwę.
 
-     Nazwa elementu członkowskiego będzie można edytować.
+     Nazwa elementu członkowskiego staje się edytowalna.
 
-2. Wpisz nową nazwę typu lub elementu członkowskiego typu
+2. Wpisz nową nazwę dla typu lub składowej typu
 
-### <a name="rename-in-the-class-details-window"></a>Zmień nazwę okno Szczegóły klasy
+### <a name="rename-in-the-class-details-window"></a>Zmień nazwę w oknie Szczegóły klasy
 
-1. Aby wyświetlić **szczegółów klasy** okna, kliknij prawym przyciskiem myszy typ lub element członkowski typu i wybierz **szczegółów klasy**.
+1. Aby wyświetlić **szczegóły klasy** okna, kliknij prawym przyciskiem myszy typ lub składowa typu i wybierz **szczegóły klasy**.
 
-     **Szczegółów klasy** zostanie wyświetlone okno.
+     **Szczegóły klasy** zostanie wyświetlone okno.
 
-2. W **nazwa** kolumny, Zmień nazwę elementu członkowskiego typu
+2. W **nazwa** kolumny, zmienić nazwę elementu członkowskiego typu
 
 3. Aby przenieść fokus od komórki, naciśnij klawisz **Enter** klucza, lub kliknij przycisk od komórki.
 
     > [!NOTE]
-    > W **szczegółów klasy** okna, można zmienić nazwę członka, lecz nie jest typem.
+    > W **szczegóły klasy** okna, możesz zmienić nazwę elementu członkowskiego, ale nie jest typem.
 
-### <a name="rename-in-the-properties-window"></a>Zmień nazwę w oknie właściwości
+### <a name="rename-in-the-properties-window"></a>Zmień nazwę w oknie dialogowym właściwości
 
-1. Na diagramie klas, lub **szczegółów klasy** okna, kliknij prawym przyciskiem myszy typ lub element członkowski, a następnie wybierz **właściwości**.
+1. Na diagramie klasy lub **szczegóły klasy** okna, kliknij prawym przyciskiem myszy typ lub element członkowski, a następnie wybierz pozycję **właściwości**.
 
-     **Właściwości** okno zostanie wyświetlony i właściwości dla typu lub elementu członkowskiego typu.
+     **Właściwości** okna pojawi się i wyświetla właściwości dla typu lub składowej typu.
 
-2. W **nazwa** właściwości, Zmień nazwę typu lub elementu członkowskiego typu.
+2. W **nazwa** właściwości, Zmień nazwę typu lub typ elementu członkowskiego.
 
-     Nowa nazwa propaguje do wszystkich lokalizacji kodu w bieżącym projekcie gdzie pojawił się starą nazwę i systemu windows.
+     Nowa nazwa propaguje do wszystkich okien i lokalizacji kodu w bieżącym projekcie, gdzie znajdowały się starej nazwy.
 
-## <a name="move-type-members-from-one-type-to-another"></a>Przenieś elementy członkowskie typu z jednego typu na inny
+## <a name="move-type-members-from-one-type-to-another"></a>Przenoszenie elementów członkowskich typu z jednego typu na inny
 
-Przy użyciu **Projektant klas**, członka typu z jednego typu można przenieść do innego typu. Oba typy muszą być widoczne w bieżącym diagramu klas.
+Za pomocą **projektanta klas**, można przenieść elementu członkowskiego typu z jednego typu na inny typ. Oba typy muszą być widoczne w bieżącym diagramie klas.
 
-1. Typu, który jest widoczny na powierzchni projektu, kliknij prawym przyciskiem myszy składnik, który chcesz przenieść do innego typu, a następnie wybierz **Wytnij**.
+1. W typie, który jest wyświetlany na powierzchni projektowej, kliknij prawym przyciskiem myszy składnik, który chcesz przenieść do innego typu, a następnie wybierz **Wytnij**.
 
-2. Kliknij prawym przyciskiem myszy typ docelowy i wybierz **Wklej**.
+2. Kliknij prawym przyciskiem myszy docelowy typ, a następnie wybierz pozycję **Wklej**.
 
-     Właściwość zostanie usunięta ze źródłowego typu i pojawia się w typie docelowym.
+     Właściwość zostanie usunięta z typu źródłowego i pojawia się w typie docelowym.
 
 ## <a name="see-also"></a>Zobacz także
 

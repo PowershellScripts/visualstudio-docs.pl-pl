@@ -17,23 +17,23 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b46bffab25420b89ddb16c5eccfa64784d66e82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d7121395b54716096e562a8fe14bb38103f4bd8c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274446"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863532"
 ---
 # <a name="saving-data-in-project-files"></a>Zapisywanie danych w plikach projektu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Podtypu projektu można zapisywać i pobierać dane specyficzne dla podtypu w pliku projektu. Framework pakietu zarządzanego (MPF) zawiera dwa interfejsy do wykonania tego zadania:  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> Interfejs umożliwia dostęp do wartości właściwości z **MSBuild** sekcji w pliku projektu. Metod dostarczonych przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> może być wywoływany przez dowolnego użytkownika przy każdym których użytkownik potrzebuje do załadowania lub zapisania kompilacji powiązane dane.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> Interfejs umożliwia dostęp do wartości właściwości z **MSBuild** sekcji w pliku projektu. Metod dostarczonych przez <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> może być wywoływany przez dowolnego użytkownika przy każdym których użytkownik potrzebuje do załadowania lub zapisania kompilacji powiązane dane.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Służy do utrwalenia-build powiązane dane w dowolnej postaci XML. Metod dostarczonych przez <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> są wywoływane przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zawsze wtedy, gdy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ma zostać zachowany-build powiązane dane w pliku projektu.  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> Służy do utrwalenia-build powiązane dane w dowolnej postaci XML. Metod dostarczonych przez <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> są wywoływane przez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] zawsze wtedy, gdy [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ma zostać zachowany-build powiązane dane w pliku projektu.  
   
- Aby uzyskać więcej informacji na temat zachować kompilacji i powiązane dane-build, zobacz [przechowywanie danych w pliku projektu MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
+  Aby uzyskać więcej informacji na temat zachować kompilacji i powiązane dane-build, zobacz [przechowywanie danych w pliku projektu MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md).  
   
 ## <a name="saving-and-retrieving-build-related-data"></a>Zapisywanie i pobieranie kompilacji powiązanych danych  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 480a316ea7947e71317c3d15424b521f0ac69ba8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61dd80bb8d8ba4c272beff018d3ab65ffce41dc6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911879"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Porady: tworzenie modułu cieniującego gradientu geometrycznego
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,25 +43,25 @@ W tym dokumencie przedstawiono sposób umożliwia tworzenie cieniowania gradient
   
 #### <a name="to-create-a-geometry-based-gradient-shader"></a>Aby utworzyć cieniowania gradientu geometrycznego  
   
-1.  Tworzenie modułu cieniującego DGSL chcesz pracować. Aby uzyskać informacje dotyczące sposobu dodawania modułu cieniującego DGSL do projektu, zobacz sekcję pierwsze kroki w [Shader Designer](../designers/shader-designer.md).  
+1. Tworzenie modułu cieniującego DGSL chcesz pracować. Aby uzyskać informacje dotyczące sposobu dodawania modułu cieniującego DGSL do projektu, zobacz sekcję pierwsze kroki w [Shader Designer](../designers/shader-designer.md).  
   
-2.  Odłącz **koloru punktu** węzła z **ostateczny kolor** węzła. Wybierz **RGB** terminali z **koloru punktu** węzła, a następnie wybierz **Przerwij linki**. To sprawia, że miejsce na węzeł, który zostanie dodany do następnego kroku.  
+2. Odłącz **koloru punktu** węzła z **ostateczny kolor** węzła. Wybierz **RGB** terminali z **koloru punktu** węzła, a następnie wybierz **Przerwij linki**. To sprawia, że miejsce na węzeł, który zostanie dodany do następnego kroku.  
   
-3.  Dodaj **mnożenia** węzła do wykresu. W **przybornika**w obszarze **matematyczne**, wybierz opcję **mnożenia** i przenieś go do powierzchni projektowej.  
+3. Dodaj **mnożenia** węzła do wykresu. W **przybornika**w obszarze **matematyczne**, wybierz opcję **mnożenia** i przenieś go do powierzchni projektowej.  
   
-4.  Dodaj **wektor maski** węzła do wykresu. W **przybornika**w obszarze **narzędzie**, wybierz opcję **wektor maski** i przenieś go do powierzchni projektowej.  
+4. Dodaj **wektor maski** węzła do wykresu. W **przybornika**w obszarze **narzędzie**, wybierz opcję **wektor maski** i przenieś go do powierzchni projektowej.  
   
-5.  Określ wartości maski **wektor maski** węzła. W **wybierz** tryb, wybierz **wektor maski** węzła, a następnie w polu **właściwości** oknie **zielony / Y** właściwość **Wartość true,**, a następnie ustaw **czerwony / X**, **niebieski / Z** i **alfa / W** właściwości w celu **False**. W tym przykładzie **czerwony / X**, **zielony / Y**, i **niebieski / Z** właściwości odpowiadają x, y i składniki z **pozycja świata** węzeł, i **alfa / W** jest nieużywana. Ponieważ tylko **zielony / Y** ustawiono **True**, tylko składnik y wektor wejściowy pozostaje po jego są wyświetlane jako znaki.  
+5. Określ wartości maski **wektor maski** węzła. W **wybierz** tryb, wybierz **wektor maski** węzła, a następnie w polu **właściwości** oknie **zielony / Y** właściwość **Wartość true,**, a następnie ustaw **czerwony / X**, **niebieski / Z** i **alfa / W** właściwości w celu **False**. W tym przykładzie **czerwony / X**, **zielony / Y**, i **niebieski / Z** właściwości odpowiadają x, y i składniki z **pozycja świata** węzeł, i **alfa / W** jest nieużywana. Ponieważ tylko **zielony / Y** ustawiono **True**, tylko składnik y wektor wejściowy pozostaje po jego są wyświetlane jako znaki.  
   
-6.  Dodaj **pozycja świata** węzła do wykresu. W **przybornika**w obszarze **stałe**, wybierz opcję **pozycja świata** i przenieś go do powierzchni projektowej.  
+6. Dodaj **pozycja świata** węzła do wykresu. W **przybornika**w obszarze **stałe**, wybierz opcję **pozycja świata** i przenieś go do powierzchni projektowej.  
   
-7.  Maski pozycji miejsca na świecie fragmentu. W **wybierz** tryb, Przenieś **dane wyjściowe** terminali z **pozycja świata** węzeł, aby **wektor** terminali z **maski Wektor** węzła. To połączenie maskuje pozycji fragmentu, aby zignorować x i z składników.  
+7. Maski pozycji miejsca na świecie fragmentu. W **wybierz** tryb, Przenieś **dane wyjściowe** terminali z **pozycja świata** węzeł, aby **wektor** terminali z **maski Wektor** węzła. To połączenie maskuje pozycji fragmentu, aby zignorować x i z składników.  
   
-8.  Mnożenie — stała koloru RGB według pozycji miejsca na świecie maskowanego. Przenieś **RGB** terminali z **koloru punktu** węzeł, aby **Y** terminali z **mnożenia** węzeł, a następnie przenieść  **Dane wyjściowe** terminali z **wektor maski** węzeł **X** terminali z **mnożenia** węzła. To połączenie jest skalowana w wartości koloru, wysokość piksela w przestrzeni świata.  
+8. Mnożenie — stała koloru RGB według pozycji miejsca na świecie maskowanego. Przenieś **RGB** terminali z **koloru punktu** węzeł, aby **Y** terminali z **mnożenia** węzeł, a następnie przenieść  **Dane wyjściowe** terminali z **wektor maski** węzeł **X** terminali z **mnożenia** węzła. To połączenie jest skalowana w wartości koloru, wysokość piksela w przestrzeni świata.  
   
 9. Połącz się ostateczny kolor z wartości koloru skalowany. Przenieś **dane wyjściowe** terminali z **mnożenia** węzeł, aby **RGB** terminali z **ostateczny kolor** węzła.  
   
- Poniższej ilustracji ukończone programu do cieniowania programu graph i wersję zapoznawczą programu do cieniowania zastosowane do kuli.  
+   Poniższej ilustracji ukończone programu do cieniowania programu graph i wersję zapoznawczą programu do cieniowania zastosowane do kuli.  
   
 > [!NOTE]
 >  Na tej ilustracji określono koloru pomarańczowego, aby lepiej pokazują wpływ programu do cieniowania, ale ponieważ kształtu (wersja zapoznawcza) nie ma żadnych pozycji w przestrzeni świata, programu do cieniowania nie pełni podglądu w projektancie programu do cieniowania. W rzeczywistych sceny w celu wykazania pełnego wpływu, można wyświetlić podglądu modułu cieniującego.  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_noStackOrdering | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_nostackordering — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67d9700e8dcabd44d0cbd187541505859aa65215
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 82f0b0b25c90a4cba2de6fb45164d9a6bf77446c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884241"
 ---
 # <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
-Ta funkcja pobiera flagę wskazującą, czy kolejność stosu nie może być wykonywane w ramach sprawdzania bufora stosu ([/GS (Sprawdzanie zabezpieczeń bufora)](/cpp/build/reference/gs-buffer-security-check) — opcja kompilatora).  
+Ta funkcja pobiera flagę wskazującą, czy kolejność stosu nie może zostać wykonane w ramach sprawdzania bufora stosu ([/GS (Sprawdzanie zabezpieczeń bufora)](/cpp/build/reference/gs-buffer-security-check) — opcja kompilatora).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -34,13 +34,13 @@ HRESULT get_noStackOrdering(
   
 #### <a name="parameters"></a>Parametry  
  `pRetVal`  
- [out] Zwraca `TRUE` Jeśli kolejność stosu nie może być wykonana w ramach sprawdzanie stosu buforu; w przeciwnym razie zwraca `FALSE`.  
+ [out] Zwraca `TRUE` Jeśli kolejność stosu nie może być wykonana w ramach sprawdzeniem stosu buforu; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` albo kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   

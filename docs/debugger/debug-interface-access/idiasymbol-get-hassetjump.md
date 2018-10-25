@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_hasSetJump | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_hassetjump — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e426cad156c79ac532154a201785fed8ed47884
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 29e31a9d3ef88732c06c9b0efa7cd37fc18cd8d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464290"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880044"
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
-Pobiera flagę określającą, czy funkcja zawiera korzystanie z [setjmp](/cpp/c-runtime-library/reference/setjmp) polecenia (sparowany z [longjmp](/cpp/c-runtime-library/reference/longjmp) poleceń, tworzą one metody stylu języka C dla obsługi wyjątków).  
+Pobiera flagę określającą, czy funkcja zawiera korzystanie z [setjmp](/cpp/c-runtime-library/reference/setjmp) polecenia (parowania z [longjmp](/cpp/c-runtime-library/reference/longjmp) polecenia tworzą one stylu C sposób obsługi wyjątków).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,10 +37,10 @@ HRESULT get_hasSetJump(
  [out] Zwraca `TRUE` Jeśli funkcja zawiera `setjmp` polecenie; w przeciwnym razie zwraca `FALSE`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="requirements"></a>Wymagania  
   
@@ -51,6 +51,6 @@ HRESULT get_hasSetJump(
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)   
+ [Idiasymbol::get_haslongjump —](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)   
  [longjmp](/cpp/c-runtime-library/reference/longjmp)   
  [setjmp](/cpp/c-runtime-library/reference/setjmp)

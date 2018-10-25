@@ -1,5 +1,5 @@
 ---
-title: IDiaTable::get_name | Dokumentacja firmy Microsoft
+title: Idiatable::get_name — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dedf326d718c9d015aa488c1dc2fdf9210c4fc9e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 87527cd4a025973294ffc6219a452eb1b23bc897
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471086"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880705"
 ---
 # <a name="idiatablegetname"></a>IDiaTable::get_name
 Pobiera nazwę tabeli.  
@@ -37,7 +37,7 @@ HRESULT get_name (
  [out] Zwraca nazwę tabeli.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

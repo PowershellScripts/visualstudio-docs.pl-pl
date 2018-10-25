@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc92dc6b560332509f69a975eca63ddb5c191fab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bfa467da3ebe500db7f8ee64653f294ad236f445
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112275"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849193"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
-Tworzy moduł wyliczający dla typu argumentu wymaganych do wywołania metody.  
+Tworzy moduł wyliczający typ każdego argumentu wymaganych do wywołania metody.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -41,15 +41,15 @@ int EnumArguments(
   
 #### <a name="parameters"></a>Parametry  
  `ppParams`  
- [out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) obiekt reprezentujący listę typy argumentów. Zwraca wartość null, jeśli nie wymaga argumentów.  
+ [out] Zwraca [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) obiekt reprezentujący listę typów argumentów. Zwraca wartość null, jeśli nie wymaga argumentów.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK lub zwraca wartości S_FALSE, jeśli nie wymaga argumentów. W przeciwnym razie zwraca kod błędu.  
+ Jeśli to się powiedzie, zwraca wartość S_OK lub zwraca wartość S_FALSE, jeśli istnieją bez argumentów. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Każdy element jest [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt reprezentujący typy każdego parametru. Wywołanie [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) metody do pobierania informacji o typie każdego parametru.  
+ Każdy element jest [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiekt reprezentujący typy każdego parametru. Wywołaj [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) metodę, aby pobrać informacje o typie każdego parametru.  
   
- Jeśli nazwa parametru nie jest konieczne wraz z typem, następnie wywołaj [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) metody.  
+ Jeśli nazwa parametru jest potrzebny wraz z typem, następnie wywołać [EnumParameters](../../../extensibility/debugger/reference/idebugmethodfield-enumparameters.md) metody.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   

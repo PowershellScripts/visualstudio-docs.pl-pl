@@ -17,56 +17,56 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5a4f71af9e19cbb9eaefd2937e498b0e59cc2b8f
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a74f610d596a991512f7f3ba5061da6db862f0c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891287"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>Porady: programowane Zmienianie formatowania w wierszach arkusza zawierających zaznaczone komórki
-  Można zmienić czcionkę cały wiersz zawierający zaznaczonej komórki, dzięki czemu tekst jest pogrubiony.  
+  Możesz zmienić czcionkę cały wiersz, który zawiera zaznaczonej komórki, dlatego, że tekst jest pogrubiony.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>Aby pogrubienie bieżącego wiersza i normalnej wcześniej pogrubiony wiersza  
+## <a name="to-make-the-current-row-bold-and-the-previously-bolded-row-normal"></a>Aby pogrubić bieżący wiersz i wcześniej pogrubiony wiersz normalnego  
   
-1.  Należy zadeklarować zmienną statyczną, aby śledzić wcześniej wybrany wiersz.  
+1. Zadeklaruj zmienną statyczną, aby śledzić wcześniej wybrany wiersz.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#37)]
-     [!code-vb[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#37)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#37)]
+    [!code-vb[Trin_VstcoreExcelAutomation#37](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#37)]  
   
-2.  Pobierz odwołanie do bieżącej komórki za pomocą <xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A> właściwości.  
+2. Pobierz odwołanie do bieżącej komórki za pomocą <xref:Microsoft.Office.Interop.Excel._Application.ActiveCell%2A> właściwości.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#38)]
-     [!code-vb[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#38)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#38)]
+    [!code-vb[Trin_VstcoreExcelAutomation#38](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#38)]  
   
-3.  Styl bieżącego wiersza bold przy użyciu <xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A> właściwości aktywną komórką.  
+3. Styl do bieżącego wiersza bold przy użyciu <xref:Microsoft.Office.Interop.Excel.Range.EntireRow%2A> właściwość aktywną komórką.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#39)]
-     [!code-vb[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#39)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#39)]
+    [!code-vb[Trin_VstcoreExcelAutomation#39](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#39)]  
   
-4.  Upewnij się, że bieżąca wartość `previousRow` jest różna od 0. 0 (zero) wskazuje, że jest po raz pierwszy za pomocą tego kodu.  
+4. Upewnij się, że bieżąca wartość `previousRow` jest różna od 0. 0 (zero) oznacza, że jest po raz pierwszy przy użyciu tego kodu.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#40)]
-     [!code-vb[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#40)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#40)]
+    [!code-vb[Trin_VstcoreExcelAutomation#40](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#40)]  
   
-5.  Upewnij się, że bieżący wiersz różni się od poprzedniego wiersza.  
+5. Upewnij się, że bieżący wiersz różni się od poprzedniego wiersza.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#41)]
-     [!code-vb[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#41)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#41)]
+    [!code-vb[Trin_VstcoreExcelAutomation#41](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#41)]  
   
-6.  Pobieranie, a odwołanie do zakresu, który reprezentuje wiersza, który wcześniej została wybrana i ustaw które wiersz nie należy pogrubioną czcionką.  
+6. Pobieranie, a odwołanie do zakresu, który reprezentuje wiersz, który wcześniej został wybrany, a zestaw wierszy nie są pogrubione.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#42)]
-     [!code-vb[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#42)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#42)]
+    [!code-vb[Trin_VstcoreExcelAutomation#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#42)]  
   
-7.  Bieżący wiersz należy przechowywać, dzięki czemu może stać się poprzedniego wiersza na przekazywania dalej.  
+7. Store bieżący wiersz, dzięki czemu może stać się poprzedniego wiersza w następnym przejściu.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#43)]
-     [!code-vb[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#43)]  
+    [!code-csharp[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#43)]
+    [!code-vb[Trin_VstcoreExcelAutomation#43](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#43)]  
   
- W poniższym przykładzie przedstawiono metody ukończenia.  
+   Poniższy przykład pokazuje całą metodę.  
   
 ## <a name="example"></a>Przykład  
  [!code-csharp[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#36)]

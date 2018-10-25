@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1802d5784ad6e94aee4ff63fb51d2c92dbf164f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa68a3064cd40cca8c62f90c2f144a767ebb9e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108417"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855576"
 ---
 # <a name="guidarray"></a>GUID_ARRAY
-W tym artykule opisano tablicę unikatowych identyfikatorów dla aparatami debugowania dostępne.  
+W tym artykule opisano tablicę unikatowych identyfikatorów dla silniki debugowania dostępnych.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,7 +46,7 @@ public struct GUID_ARRAY
  Liczba unikatowych identyfikatorów w tablicy.  
   
  Elementy członkowskie  
- Tablica, która zawiera unikatowych identyfikatorów.  
+ Tablica, która zawiera unikatowe identyfikatory.  
   
 ## <a name="remarks"></a>Uwagi  
  Ta struktura jest zwracany przez [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md) metody.  
@@ -59,5 +59,5 @@ public struct GUID_ARRAY
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)

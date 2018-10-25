@@ -31,12 +31,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 31e05d98af75758dfcd05ba70c6340c5b7f4be4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286291"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909736"
 ---
 # <a name="file-properties-javascript"></a>Właściwości pliku, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,15 +55,15 @@ Aby wskazać, jakie akcje, system projektu należy wykonać na plikach, można u
 ### <a name="package-action"></a>Akcja pakietu  
  **Akcja pakietu** właściwość wskazuje co program Visual Studio przy użyciu pliku po wykonaniu kompilacji. **Pakiet akcji** może mieć jeden z kilku wartości:  
   
--   **Brak** — plik nie jest uwzględniony w manifeście pakietu. Przykładem jest plik tekstowy, który zawiera dokumentację, takich jak plik Readme.  
+- **Brak** — plik nie jest uwzględniony w manifeście pakietu. Przykładem jest plik tekstowy, który zawiera dokumentację, takich jak plik Readme.  
   
--   **Zawartość** — plik jest uwzględniony w manifeście pakietu. Na przykład to ustawienie jest wartością domyślną dla .htm, js, CSS, obrazów, plików audio i wideo.  
+- **Zawartość** — plik jest uwzględniony w manifeście pakietu. Na przykład to ustawienie jest wartością domyślną dla .htm, js, CSS, obrazów, plików audio i wideo.  
   
--   **Manifest** — plik nie jest uwzględniony w manifeście pakietu. Zamiast tego pliku jest używany dla danych wejściowych podczas generowania manifestu pakietu. Jest to wartość domyślna dla pliku package.appxmanifest.  
+- **Manifest** — plik nie jest uwzględniony w manifeście pakietu. Zamiast tego pliku jest używany dla danych wejściowych podczas generowania manifestu pakietu. Jest to wartość domyślna dla pliku package.appxmanifest.  
   
--   **Zasób** — plik nie jest uwzględniony w manifeście pakietu. Zamiast tego należy zawartość pliku są indeksowane w indeksie zasobów pakietu (PRI), prowadzące do manifestu pakietu. Zazwyczaj służy do plików zasobów.  
+- **Zasób** — plik nie jest uwzględniony w manifeście pakietu. Zamiast tego należy zawartość pliku są indeksowane w indeksie zasobów pakietu (PRI), prowadzące do manifestu pakietu. Zazwyczaj służy do plików zasobów.  
   
- Wartością domyślną dla **Akcja pakietu** zależy od rozszerzenia pliku, który można dodać do rozwiązania.  
+  Wartością domyślną dla **Akcja pakietu** zależy od rozszerzenia pliku, który można dodać do rozwiązania.  
   
 ### <a name="file-name-property"></a>Właściwość Nazwa pliku  
  Wyświetla nazwę pliku jako wartość tylko do odczytu. Aby zmienić nazwę pliku, należy kliknąć prawym przyciskiem myszy w Eksploratorze rozwiązań i wybrać **Zmień nazwę**.  

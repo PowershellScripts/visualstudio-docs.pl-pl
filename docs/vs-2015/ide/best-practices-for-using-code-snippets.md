@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c02abbef9a5a9022e5a887c5a9aa452143adb8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1dad7bd7ccddf3645abb11dc55afcdf2e7cce7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241322"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919913"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Najlepsze praktyki dotyczące korzystania z wstawek kodu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ W kodzie we fragmencie kodu pokazano tylko najbardziej podstawową metodą coś 
 ## <a name="security"></a>Zabezpieczenia  
  Jak bezpieczne wstawka to zależy od tego, gdzie jest używana w kodzie źródłowym i jak zmienić po w kodzie. Poniższa lista zawiera kilka obszarów, które muszą być rozważone.  
   
--   Dostęp do plików i bazy danych  
+- Dostęp do plików i bazy danych  
   
--   Zabezpieczenia dostępu kodu  
+- Zabezpieczenia dostępu kodu  
   
--   Ochrona zasobów (takich jak dzienniki zdarzeń, rejestr)  
+- Ochrona zasobów (takich jak dzienniki zdarzeń, rejestr)  
   
--   Przechowywanie kluczy tajnych  
+- Przechowywanie kluczy tajnych  
   
--   Weryfikowanie danych wejściowych  
+- Weryfikowanie danych wejściowych  
   
--   Przekazywanie danych do technologii wykonywania skryptów  
+- Przekazywanie danych do technologii wykonywania skryptów  
   
- Aby uzyskać więcej informacji, zobacz [zabezpieczania aplikacji](../ide/securing-applications.md).  
+  Aby uzyskać więcej informacji, zobacz [zabezpieczania aplikacji](../ide/securing-applications.md).  
   
 ## <a name="downloaded-code-snippets"></a>Fragmenty kodu z pobranego  
  Fragmenty kodu IntelliSense instalowane przez Visual Studio nie są w sobie zagrożenie bezpieczeństwa. Jednak może być utworzona zagrożenia bezpieczeństwa w Twojej aplikacji. Fragmenty kodu, pobranego z Internetu, powinny być traktowane jak inne pobranej zawartości — z najwyższą ostrożnością.  

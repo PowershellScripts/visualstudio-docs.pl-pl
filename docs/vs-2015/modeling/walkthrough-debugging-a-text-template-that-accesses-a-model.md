@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b8fd24f6c1e9b0427746296efa9a839bf46ed7ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220093"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924892"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Wskazówki: debugowanie szablonu tekstowego uzyskującego dostęp do modelu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ W przypadku modyfikowania lub dodać szablonów tekstowych w rozwiązaniu język
 ## <a name="creating-a-domain-specific-language-solution"></a>Tworzenie rozwiązania języka dotyczącego określonej domeny  
  Ta procedura służy do tworzenia rozwiązania języka dotyczącego określonej domeny, które ma następujące cechy:  
   
--   Nazwa: DebuggingTestLanguage  
+- Nazwa: DebuggingTestLanguage  
   
--   Szablon rozwiązania: minimalne języka  
+- Szablon rozwiązania: minimalne języka  
   
--   Rozszerzenie pliku: .ddd  
+- Rozszerzenie pliku: .ddd  
   
--   Nazwa firmy: Fabrikam  
+- Nazwa firmy: Fabrikam  
   
- Aby uzyskać więcej informacji na temat tworzenia rozwiązania języka dotyczącego określonej domeny, zobacz [porady: tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+  Aby uzyskać więcej informacji na temat tworzenia rozwiązania języka dotyczącego określonej domeny, zobacz [porady: tworzenie rozwiązania języka dotyczącego określonej domeny](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
 ## <a name="creating-a-text-template"></a>Tworzenie szablonów tekstowych  
  Dodaj szablon tekstowy do rozwiązania.  

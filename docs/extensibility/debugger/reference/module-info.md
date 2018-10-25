@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e28756873339d504efba417d9e2fe2cc00000b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b28770482357b7e006793f15438e7880f7efb1ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897007"
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
-W tym artykule opisano danego modułu (plik DLL, EXE lub zestawu).  
+W tym artykule opisano konkretnego modułu (DLL, EXE lub zestawu).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -75,13 +75,13 @@ public struct MODULE_INFO {
  Wersja modułu.  
   
  m_bstrDebugMessage  
- Opcjonalny komunikat o module, na przykład "nie można załadować symboli."  
+ Opcjonalną wiadomość, informacje o module, na przykład "nie można załadować symboli."  
   
  m_addrLoadAddress  
- Moduł obciążenia adres.  
+ Adresem ładowania modułu.  
   
  m_addrPreferredLoadAddress  
- Obciążenia preferowany adres modułu.  
+ Adres preferowanego ładowania modułu.  
   
  m_dwSize  
  Rozmiar modułu.  
@@ -99,9 +99,9 @@ public struct MODULE_INFO {
  Kombinacja flag z [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) wyliczenie opisujące modułu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest przekazywana do [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) metody, gdzie jest wypełnione.  
+ Ta struktura jest przekazywany do [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) metody, gdzie jest wypełnione.  
   
- Ta struktura odnosi się do poszczególnych modułów na liście **modułów** okna.  
+ Ta struktura odnosi się do każdego modułu, na liście **modułów** okna.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -111,7 +111,7 @@ public struct MODULE_INFO {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
  [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

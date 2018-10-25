@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumFrameData::frameByVA | Dokumentacja firmy Microsoft
+title: Idiaenumframedata::framebyva — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d19dcff2890291ca198092314b667cc3a0a7d33
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fa12d481811538430385aeda08c1ea01a156d924
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458872"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854016"
 ---
 # <a name="idiaenumframedataframebyva"></a>IDiaEnumFrameData::frameByVA
-Przywraca ramkę wirtualnego adresu (VA).  
+Przywraca ramkę adresów wirtualnych (oceny luk w zabezpieczeniach).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -35,13 +35,13 @@ HRESULT frameByVA(
   
 #### <a name="parameters"></a>Parametry  
  virtualAddress  
- [in] VA ramki zainteresowań.  
+ [in] Oceny luk w zabezpieczeniach ramki zainteresowania.  
   
  ramowe  
- [out] Zwraca [idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiekt, który reprezentuje ramkę, która zawiera podany adres.  
+ [out] Zwraca [idiaframedata —](../../debugger/debug-interface-access/idiaframedata.md) obiekt reprezentujący ramkę, która zawiera podany adres.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli dane ramki nie pasują pod określony adres. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli brak danych ramki odpowiadających podanym adresem. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiaenumframedata —](../../debugger/debug-interface-access/idiaenumframedata.md)   

@@ -19,12 +19,12 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33450d7f904cebd79259c30245cf07e23ca1aba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274485"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896149"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Przewodnik: Identyfikowanie problemów z wydajnością
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ W tym instruktażu przedstawiono sposób profilu aplikacji można zidentyfikowa�
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
   
--   Pośredni znajomości języka C#.  
+- Pośredni znajomości języka C#.  
   
--   Kopię [peopletrax — przykład](../profiling/peopletrax-sample-profiling-tools.md).  
+- Kopię [peopletrax — przykład](../profiling/peopletrax-sample-profiling-tools.md).  
   
- Aby pracować z danymi dostarczonych przez profilowanie, najlepiej jest mieć debugowania dostępnych informacji o symbolach.  
+  Aby pracować z danymi dostarczonych przez profilowanie, najlepiej jest mieć debugowania dostępnych informacji o symbolach.  
   
 ## <a name="profiling-by-using-the-sampling-method"></a>Profilowanie przy użyciu metody próbkowania  
  Próbkowanie jest metodą profilowania za pomocą którego w danym procesie okresowo wysyłane do określenia funkcji active. Dane wynikowe zapewnia liczenie częstotliwość funkcja danego znajdowała się na szczycie stosu wywołań proces był wtedy próbkowany.  
@@ -139,29 +139,29 @@ W tym instruktażu przedstawiono sposób profilu aplikacji można zidentyfikowa�
   
 #### <a name="to-analyze-instrumented-profiling-results"></a>Aby analizować Instrumentacji wyniki profilowania  
   
-1.  Wykres osi czasu **Podsumowanie** widok raportu przedstawia wykorzystanie procesora CPU programu na czas trwania profilowania wykonywania. Operacji eksportowania danych powinien być duże szczytowe lub że po prawej stronie wykresu. Możemy filtrować sesji wydajności, aby wyświetlać i analizować dane, które zostały zebrane w ramach operacji eksportowania. Kliknij, aby po lewej stronie punktu na wykresie, gdzie rozpoczyna się operacji eksportowania danych. Kliknij ponownie, aby wykonać operację po prawej stronie. Następnie kliknij przycisk **filtru według zaznaczenia** na liście łącza z prawej strony na osi czasu.  
+1. Wykres osi czasu **Podsumowanie** widok raportu przedstawia wykorzystanie procesora CPU programu na czas trwania profilowania wykonywania. Operacji eksportowania danych powinien być duże szczytowe lub że po prawej stronie wykresu. Możemy filtrować sesji wydajności, aby wyświetlać i analizować dane, które zostały zebrane w ramach operacji eksportowania. Kliknij, aby po lewej stronie punktu na wykresie, gdzie rozpoczyna się operacji eksportowania danych. Kliknij ponownie, aby wykonać operację po prawej stronie. Następnie kliknij przycisk **filtru według zaznaczenia** na liście łącza z prawej strony na osi czasu.  
   
-     **Ścieżka aktywna** drzewa pokazują, że <xref:System.String.Concat%2A> metodę, która jest wywoływana przez metodę PeopleTrax.Form1.ExportData zużywa duże wartości procentowej czasu. Ponieważ **System.String.Concat** jest również, w górnej części **funkcje za pomocą najbardziej samodzielnej pracy** listy, skracając czas spędzony w funkcji jest prawdopodobnie punktem optymalizacji.  
+    **Ścieżka aktywna** drzewa pokazują, że <xref:System.String.Concat%2A> metodę, która jest wywoływana przez metodę PeopleTrax.Form1.ExportData zużywa duże wartości procentowej czasu. Ponieważ **System.String.Concat** jest również, w górnej części **funkcje za pomocą najbardziej samodzielnej pracy** listy, skracając czas spędzony w funkcji jest prawdopodobnie punktem optymalizacji.  
   
-2.  Kliknij dwukrotnie **System.String.Concat** w podsumowania tabel, aby uzyskać więcej informacji, w widoku szczegółów funkcji.  
+2. Kliknij dwukrotnie **System.String.Concat** w podsumowania tabel, aby uzyskać więcej informacji, w widoku szczegółów funkcji.  
   
-3.  Aby zobaczyć, że PeopleTrax.Form1.ExportData jest jedyną metodą, która wywołuje Concat. Kliknij przycisk **PeopleTrax.Form1.ExportData** w **podczas wywoływania funkcji** listę, aby wybrać metodę jest jako obiektu docelowego widoku szczegółów funkcji.  
+3. Aby zobaczyć, że PeopleTrax.Form1.ExportData jest jedyną metodą, która wywołuje Concat. Kliknij przycisk **PeopleTrax.Form1.ExportData** w **podczas wywoływania funkcji** listę, aby wybrać metodę jest jako obiektu docelowego widoku szczegółów funkcji.  
   
-4.  Sprawdź metodę w oknie Widok kodu funkcji. Należy zauważyć, że nie istnieją żadne literału wywołania **System.String.Concat**. Zamiast tego ma kilka zastosowań += argument operacji, które kompilator zamienia na wywołania **System.String.Concat**. Wszelkie zmiany w ciągu w .NET Framework spowodować, że nowy ciąg do przydzielenia. Program .NET Framework zawiera <xref:System.Text.StringBuilder> klasę, która jest zoptymalizowana pod kątem ciągów  
+4. Sprawdź metodę w oknie Widok kodu funkcji. Należy zauważyć, że nie istnieją żadne literału wywołania **System.String.Concat**. Zamiast tego ma kilka zastosowań += argument operacji, które kompilator zamienia na wywołania **System.String.Concat**. Wszelkie zmiany w ciągu w .NET Framework spowodować, że nowy ciąg do przydzielenia. Program .NET Framework zawiera <xref:System.Text.StringBuilder> klasę, która jest zoptymalizowana pod kątem ciągów  
   
-5.  Aby zastąpić ten obszar problemu zoptymalizowany kod, należy dodać OPTIMIZED_EXPORTDATA jako symbole kompilacji warunkowej do projektu peopletrax —.  
+5. Aby zastąpić ten obszar problemu zoptymalizowany kod, należy dodać OPTIMIZED_EXPORTDATA jako symbole kompilacji warunkowej do projektu peopletrax —.  
   
-6.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt peopletrax — a następnie kliknij przycisk **właściwości**.  
+6. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt peopletrax — a następnie kliknij przycisk **właściwości**.  
   
-     Zostanie wyświetlony formularz peopletrax — właściwości projektu.  
+    Zostanie wyświetlony formularz peopletrax — właściwości projektu.  
   
-7.  Kliknij przycisk **kompilacji** kartę.  
+7. Kliknij przycisk **kompilacji** kartę.  
   
-8.  W **symbole kompilacji warunkowej** polu tekstowym **OPTIMIZED_EXPORTDATA**.  
+8. W **symbole kompilacji warunkowej** polu tekstowym **OPTIMIZED_EXPORTDATA**.  
   
 9. Zamknij formularz Właściwości projektu i wybierz polecenie **Zapisz wszystko** po wyświetleniu monitu.  
   
- Należy ponownie uruchomić aplikację, zobaczysz oznaczone poprawę wydajności. Zaleca się uruchomienie sesji profilowania, nawet jeśli występują użytkownika widoczne poprawę wydajności. Ważne jest przeglądania danych po rozwiązaniu problemu, ponieważ pierwszy problem może zasłaniać jakiś inny problem.  
+   Należy ponownie uruchomić aplikację, zobaczysz oznaczone poprawę wydajności. Zaleca się uruchomienie sesji profilowania, nawet jeśli występują użytkownika widoczne poprawę wydajności. Ważne jest przeglądania danych po rozwiązaniu problemu, ponieważ pierwszy problem może zasłaniać jakiś inny problem.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Omówienie](../profiling/overviews-performance-tools.md)   

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0323e6902be9c5b784a17bfc8b48f4f9a1225e41
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d86dfcd84ba203891deb52b8a4b646f610a3567
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180324"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925219"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomia kodowanego testu interfejsu użytkownika
 
@@ -27,7 +27,7 @@ Podczas tworzenia kodowanych testów interfejsu użytkownika w projekt kodowaneg
 Podczas tworzenia kodowanych testów interfejsu użytkownika, **Konstruktor kodowanego testu IU** tworzy mapę interfejsu użytkownika w ramach testu i również metody testowe, parametry i potwierdzenia dla wszystkich testów. Tworzy również plik klasy dla każdego testu.
 
 |Plik|Spis treści|Można edytować?|
-|----------|--------------|---------------|
+|-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Sekcja deklaracji](#UIMapDesignerFile)<br /><br /> [Klasa UIMap](#UIMapClass) (częściowych, wygenerowany automatycznie)<br /><br /> [Metody](#UIMapMethods)<br /><br /> [Właściwości](#UIMapProperties)|Nie|
 |[UIMap.cs](#UIMapCS)|[Klasa UIMap](#UIMapCS) (częściowa)|Tak|
 |[CodedUITest1.cs](#CodedUITestCS)|[Klasa CodedUITest1](#CodedUITestCS)<br /><br /> [Metody](#CodedUITestMethods)<br /><br /> [Właściwości](#CodedUITestProperties)|Tak|

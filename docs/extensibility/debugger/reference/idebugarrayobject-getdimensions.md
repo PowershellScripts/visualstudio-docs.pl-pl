@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a20073a19f785d30b0fcd0a7f126919371e722c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1a931b488f2827e59a6b9b9ecaf86bf938ddc72a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896436"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
-Pobiera wymiarów tablicy.  
+Pobiera wymiary tablicy.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,13 +46,13 @@ int GetDimensions(
  [in] Liczba wymiarów do pobrania.  
   
  `dwDimensions`  
- [w, out] Tablica jest wypełniane rozmiary każdego wymiaru. `dwCount` Określa maksymalny rozmiar `dwDimensions` tablicy.  
+ [out w] Tablica, która jest wypełniane rozmiarów każdego wymiaru. `dwCount` Określa maksymalny rozmiar `dwDimensions` tablicy.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca wartość S_OK; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Wielowymiarowe tablice mogą mieć różne rozmiary, dla każdego wymiaru. Przykładowo, podana tablicą trójwymiarową `myarray[3][2][6]`, ta metoda zwróci 3, 2 i 6 w `dwDimensions` parametru w podanej kolejności.  
+ Wielowymiarowe tablice może mieć różne rozmiary dla każdego wymiaru. Na przykład, biorąc pod uwagę tablicy trójwymiarowej `myarray[3][2][6]`, ta metoda zwróci 3, 2 i 6 w `dwDimensions` parametru w tej kolejności.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

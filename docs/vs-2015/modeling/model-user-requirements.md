@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ac55e2ec1d07c32c154b69cd467dfc534da6ae3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bc0620c06b6fa5b4018b6e027e30a18216454b29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863961"
 ---
 # <a name="model-user-requirements"></a>Wymagania modelu użytkownika
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
   
  Wymagania modelu pomoże Ci:  
   
--   Skup się na zachowaniu zewnętrznego systemu, niezależnie od jego wewnętrzną konstrukcją.  
+- Skup się na zachowaniu zewnętrznego systemu, niezależnie od jego wewnętrzną konstrukcją.  
   
--   Opis użytkowników i udziałowców wymaga o wiele mniej niejednoznaczności niż w języku naturalnym.  
+- Opis użytkowników i udziałowców wymaga o wiele mniej niejednoznaczności niż w języku naturalnym.  
   
--   Zdefiniuj spójne słownik terminów, używane przez użytkowników, deweloperów i testerów.  
+- Zdefiniuj spójne słownik terminów, używane przez użytkowników, deweloperów i testerów.  
   
--   Ogranicz luki i niespójności w wymaganiach.  
+- Ogranicz luki i niespójności w wymaganiach.  
   
--   Zmniejsz czynności niezbędne do reagowania na zmiany wymagań.  
+- Zmniejsz czynności niezbędne do reagowania na zmiany wymagań.  
   
--   Zaplanuj kolejność, w którym będą opracowywane funkcje.  
+- Zaplanuj kolejność, w którym będą opracowywane funkcje.  
   
--   Na użytek modele jako podstawa testy systemu, co wyczyść relację między testy i wymagania. Gdy zmienią się wymagania tę relację pomaga poprawnie zaktualizować testy. To sprawia, że się, że system spełnia nowe wymagania.  
+- Na użytek modele jako podstawa testy systemu, co wyczyść relację między testy i wymagania. Gdy zmienią się wymagania tę relację pomaga poprawnie zaktualizować testy. To sprawia, że się, że system spełnia nowe wymagania.  
   
- Modelu wymagań zapewnia największe korzyści, jeśli go użyć do dyskusji fokus z użytkowników lub ich przedstawicieli, a go ponownie na początku każdej iteracji. Nie masz Oznacz go jako ukończony szczegółowo przed napisaniem kodu. Częściowo działającą aplikację, nawet wtedy, gdy znacznie uproszczone, zazwyczaj są podstawą najbardziej pobudzania dyskusję na temat wymagań użytkowników. Model jest efektywny sposób podsumowywania wyniki tych dyskusji. Aby uzyskać więcej informacji, zobacz [używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md).  
+  Modelu wymagań zapewnia największe korzyści, jeśli go użyć do dyskusji fokus z użytkowników lub ich przedstawicieli, a go ponownie na początku każdej iteracji. Nie masz Oznacz go jako ukończony szczegółowo przed napisaniem kodu. Częściowo działającą aplikację, nawet wtedy, gdy znacznie uproszczone, zazwyczaj są podstawą najbardziej pobudzania dyskusję na temat wymagań użytkowników. Model jest efektywny sposób podsumowywania wyniki tych dyskusji. Aby uzyskać więcej informacji, zobacz [używanie modeli w procesie tworzenia aplikacji](../modeling/use-models-in-your-development-process.md).  
   
 > [!NOTE]
 >  W tych tematach "system" oznacza system lub aplikację, którą tworzysz. Może być duży zbiór wielu składniki sprzętu i oprogramowania; lub pojedynczej aplikacji; lub składnik oprogramowania w systemie większe. W każdym przypadku modelu wymagań w tym artykule opisano zachowanie, które nie jest widoczny spoza systemu, czy za pośrednictwem interfejsu użytkownika lub interfejsu API.  
@@ -84,11 +84,11 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
   
  Rysowanie diagramu przypadków użycia, pomaga Twojemu zespołowi:  
   
--   Skup się na Użytkownicy oczekują sposób korzystania z systemu, bez trwa efektów, szczegóły implementacji.  
+- Skup się na Użytkownicy oczekują sposób korzystania z systemu, bez trwa efektów, szczegóły implementacji.  
   
--   Omówiono w zakresie systemu lub konkretnej wersji systemu.  
+- Omówiono w zakresie systemu lub konkretnej wersji systemu.  
   
- Więcej informacji można znaleźć w następujących tematach:  
+  Więcej informacji można znaleźć w następujących tematach:  
   
 |Aby dowiedzieć się więcej o|Odczyt|  
 |--------------------|----------|  
@@ -99,41 +99,41 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
 ##  <a name="RequirementsClasses"></a> Definiowanie terminy używane do opisu wymagań  
  Diagramów klas UML można użyć, które pomogą Ci tworzyć spójne słownictwa koncepcji biznesowych używanych do następujących celów:  
   
--   Przez samych użytkowników w celu omówienia ich firm, w którym działa system.  
+- Przez samych użytkowników w celu omówienia ich firm, w którym działa system.  
   
--   Do opisania potrzeb użytkowników, na przykład w opisach przypadki użycia, reguł biznesowych i przypadki użycia.  
+- Do opisania potrzeb użytkowników, na przykład w opisach przypadki użycia, reguł biznesowych i przypadki użycia.  
   
--   Typy informacji wymieniane na interfejs API systemu lub za pomocą interfejsu użytkownika.  
+- Typy informacji wymieniane na interfejs API systemu lub za pomocą interfejsu użytkownika.  
   
--   Opisy testy systemu, czy akceptacji.  
+- Opisy testy systemu, czy akceptacji.  
   
- Gdy są one używane w tym celu, zawartość diagramu klas UML jest wywoływana diagram koncepcyjny klasy. (Nazywane również jest *modelu domeny* lub *modelu klasy analizy*.)  
+  Gdy są one używane w tym celu, zawartość diagramu klas UML jest wywoływana diagram koncepcyjny klasy. (Nazywane również jest *modelu domeny* lub *modelu klasy analizy*.)  
   
- Na diagramie klasy pojęć możesz wyświetlić tylko te klasy potrzebne w opisach wymagań, bez wyświetlania dowolne szczegółowych informacji na temat wewnętrzną konstrukcją systemu. Diagram nie wyświetla szczegółów wewnętrzną konstrukcją systemu. Użytkownik nie zwykle pokazywałaby operacji lub interfejsów w klasach pojęć.  
+  Na diagramie klasy pojęć możesz wyświetlić tylko te klasy potrzebne w opisach wymagań, bez wyświetlania dowolne szczegółowych informacji na temat wewnętrzną konstrukcją systemu. Diagram nie wyświetla szczegółów wewnętrzną konstrukcją systemu. Użytkownik nie zwykle pokazywałaby operacji lub interfejsów w klasach pojęć.  
   
- Na przykład można narysować tych pojęciach klas systemu firmy Dinner Now:  
+  Na przykład można narysować tych pojęciach klas systemu firmy Dinner Now:  
   
- ![Klasy Menu, zamówienie i element Menu kolejność elementów. ](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")  
+  ![Klasy Menu, zamówienie i element Menu kolejność elementów. ](../modeling/media/uml-reqmcd1.png "UML_ReqMCD1")  
   
- Diagram koncepcyjny klasy zawiera słownik terminów używanych w całym modelu wymagań. Na przykład w szczegółowy opis użycia przypadek zamówienie posiłku, można napisać:  
+  Diagram koncepcyjny klasy zawiera słownik terminów używanych w całym modelu wymagań. Na przykład w szczegółowy opis użycia przypadek zamówienie posiłku, można napisać:  
   
- Klient wybierze *Menu* z którego można skonstruować *kolejności*, a następnie tworzy *kolejność elementów* w *kolejności* , wybierając  *Elementy menu* z *Menu*.  
+  Klient wybierze *Menu* z którego można skonstruować *kolejności*, a następnie tworzy *kolejność elementów* w *kolejności* , wybierając  *Elementy menu* z *Menu*.  
   
- Zwróć uwagę, jak terminy używane w tym opisie są nazwy klasy w modelu. Diagram usuwa niejednoznaczności z relacji między tymi klasami. Na przykład jego wykazują, że każde zamówienie jest skojarzony z tylko jednym Menu.  
+  Zwróć uwagę, jak terminy używane w tym opisie są nazwy klasy w modelu. Diagram usuwa niejednoznaczności z relacji między tymi klasami. Na przykład jego wykazują, że każde zamówienie jest skojarzony z tylko jednym Menu.  
   
- Nieporozumień o wymaganiach użytkowników często można powiązać z nieporozumień o szczegółowe znaczenie słowa. Na przykład większość restauracji będzie wiedzę na temat udostępnionych warunków, Menu i kolejność, ale różnią się element na zamówienie i element menu jest mniej jasne. Wymagania są przedmiotem z zainteresowane strony biznesowe, jest ważne, aby udostępnić te różnice. Diagram klas jest przydatne narzędzie, aby pomóc w określeniu warunków i ich wzajemne relacje.  
+  Nieporozumień o wymaganiach użytkowników często można powiązać z nieporozumień o szczegółowe znaczenie słowa. Na przykład większość restauracji będzie wiedzę na temat udostępnionych warunków, Menu i kolejność, ale różnią się element na zamówienie i element menu jest mniej jasne. Wymagania są przedmiotem z zainteresowane strony biznesowe, jest ważne, aby udostępnić te różnice. Diagram klas jest przydatne narzędzie, aby pomóc w określeniu warunków i ich wzajemne relacje.  
   
- Model koncepcyjny klasy można tworzyć podstawowe słownictwo, za pomocą którego można opisać logikę biznesową w systemie. Jednak klasy w oprogramowaniu będzie zazwyczaj znacznie bardziej skomplikowane niż modelu koncepcyjnego, ponieważ implementacji należy wziąć pod uwagę problemów, takich jak wydajność, dystrybucji, elastyczność i innych czynników. Kilka różnych implementacji klasy koncepcyjny często znajdują się w jednym systemie.  
+  Model koncepcyjny klasy można tworzyć podstawowe słownictwo, za pomocą którego można opisać logikę biznesową w systemie. Jednak klasy w oprogramowaniu będzie zazwyczaj znacznie bardziej skomplikowane niż modelu koncepcyjnego, ponieważ implementacji należy wziąć pod uwagę problemów, takich jak wydajność, dystrybucji, elastyczność i innych czynników. Kilka różnych implementacji klasy koncepcyjny często znajdują się w jednym systemie.  
   
- Na przykład zamówień, mogą być reprezentowane w XML, SQL, HTML i języka C# w różnych częściach systemu, w różne interfejsy między częściami. Skojarzenie między zamówienie i Menu mogą być reprezentowane na wiele różnych sposobów, takich jak odwołania w kodzie języka C#, relacje w bazie danych lub zaktualizowana w informacjach odsyłaczy identyfikatory w formacie XML. Jednak mimo tych zmian, model koncepcyjny zawiera ważne informacje, które ma wartość true w każdej części oprogramowania. Diagram klas w przykładzie informuje, że w każdym wykonaniu będą istnieć tylko jeden Menu skojarzone z każdego zamówienia.  
+  Na przykład zamówień, mogą być reprezentowane w XML, SQL, HTML i języka C# w różnych częściach systemu, w różne interfejsy między częściami. Skojarzenie między zamówienie i Menu mogą być reprezentowane na wiele różnych sposobów, takich jak odwołania w kodzie języka C#, relacje w bazie danych lub zaktualizowana w informacjach odsyłaczy identyfikatory w formacie XML. Jednak mimo tych zmian, model koncepcyjny zawiera ważne informacje, które ma wartość true w każdej części oprogramowania. Diagram klas w przykładzie informuje, że w każdym wykonaniu będą istnieć tylko jeden Menu skojarzone z każdego zamówienia.  
   
- Rysowanie diagramu klas wymagania, pomaga Twojemu zespołowi:  
+  Rysowanie diagramu klas wymagania, pomaga Twojemu zespołowi:  
   
--   Zdefiniowanie i ujednolicenie podstawowych pojęć używanych w dyskusji potrzeb użytkowników.  
+- Zdefiniowanie i ujednolicenie podstawowych pojęć używanych w dyskusji potrzeb użytkowników.  
   
--   Wyjaśnienie relacji między tymi terminami.  
+- Wyjaśnienie relacji między tymi terminami.  
   
- Więcej informacji można znaleźć w następujących tematach:  
+  Więcej informacji można znaleźć w następujących tematach:  
   
 |Aby dowiedzieć się więcej o|Odczyt|  
 |--------------------|----------|  
@@ -146,7 +146,7 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
 ##  <a name="BusinessRules"></a> Wyświetlanie reguły biznesowe  
  Reguły biznesowej jest wymagana, która nie jest skojarzony z konkretnego przypadku użycia, należy przestrzegać w całym systemie.  
   
- Wiele reguł biznesowych są ograniczenia relacje klas pojęć. Można napisać te *statyczne ** reguły biznesowe* jako komentarze skojarzone z odpowiednich klas na diagramie klasy pojęć. Na przykład:  
+ Wiele reguł biznesowych są ograniczenia relacje klas pojęć. Można napisać te *reguły biznesowe statyczne* jako komentarze skojarzone z odpowiednich klas na diagramie klasy pojęć. Na przykład:  
   
  ![Reguła w komentarzu dołączona do klasy zamówienia. ](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")  
   
@@ -167,21 +167,21 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
 ##  <a name="QoSRequirements"></a> Opisujące jakości wymagań  
  Istnieje kilka kategorii wymagań dotyczących jakości usługi. Ulepszenia obejmują następujące czynności:  
   
--   Wydajność  
+- Wydajność  
   
--   Zabezpieczenia  
+- Zabezpieczenia  
   
--   Użyteczność  
+- Użyteczność  
   
--   Niezawodność  
+- Niezawodność  
   
--   Niezawodność  
+- Niezawodność  
   
- Niektóre z tych wymagań można uwzględnić w opisach przypadki użycia określonego. Inne wymagania nie są specyficzne dla przypadków użycia i najbardziej efektywne są zapisywane w osobnym dokumencie. Możliwe, to warto stosować się do słownictwa zdefiniowane za pomocą modelu wymagań. W poniższym przykładzie należy zauważyć, że głównym słowa używane wymaganie są tytuły aktorów, przypadki użycia i klas w poprzedniej ilustracji:  
+  Niektóre z tych wymagań można uwzględnić w opisach przypadki użycia określonego. Inne wymagania nie są specyficzne dla przypadków użycia i najbardziej efektywne są zapisywane w osobnym dokumencie. Możliwe, to warto stosować się do słownictwa zdefiniowane za pomocą modelu wymagań. W poniższym przykładzie należy zauważyć, że głównym słowa używane wymaganie są tytuły aktorów, przypadki użycia i klas w poprzedniej ilustracji:  
   
- Jeśli restauracji usunie element Menu, gdy klient jest zamawianie posiłku, dowolny element zamówienia, który odwołuje się do tego elementu Menu będą wyświetlane w kolorze czerwonym.  
+  Jeśli restauracji usunie element Menu, gdy klient jest zamawianie posiłku, dowolny element zamówienia, który odwołuje się do tego elementu Menu będą wyświetlane w kolorze czerwonym.  
   
- Więcej informacji można znaleźć w następujących tematach:  
+  Więcej informacji można znaleźć w następujących tematach:  
   
 |Aby dowiedzieć się więcej o|Odczyt|  
 |--------------------|----------|  
@@ -232,15 +232,15 @@ Program Visual Studio pozwala zrozumieć, omówienia i komunikują się potrzeby
   
  Można zauważyć, że wiele pytań dotyczących domeny biznesowej naturalnie wystąpić podczas tworzenia modelu. Umieszczając te pytania dla użytkowników, co wpłynie na zredukowanie potrzeby zmiany na późniejszym etapie w projekcie. Poniżej przedstawiono niektóre konkretne pytania, spróbuj odpowiedzieć sobie na początku, a następnie poprosić zainteresowane strony biznesowe czy jasne odpowiedzi:  
   
--   Dla każdej klasy modelu wymagań poproś "co przypadek użycia tworzy wystąpienia tej klasy?" Na przykład w zamawianie posiłku usług online, możesz zadawać, "co przypadek użycia tworzy wystąpienia klasy Menu restauracji?" Może to prowadzić do dyskusję na temat sposobu nowej restauracji jest zarejestrowana w usłudze i wspiera jego menu. Możesz zadawać pytania podobne informacje co tworzy lub zmienia atrybuty i asocjacje.  
+- Dla każdej klasy modelu wymagań poproś "co przypadek użycia tworzy wystąpienia tej klasy?" Na przykład w zamawianie posiłku usług online, możesz zadawać, "co przypadek użycia tworzy wystąpienia klasy Menu restauracji?" Może to prowadzić do dyskusję na temat sposobu nowej restauracji jest zarejestrowana w usłudze i wspiera jego menu. Możesz zadawać pytania podobne informacje co tworzy lub zmienia atrybuty i asocjacje.  
   
--   Dla każdego przypadku użycia w modelu wymagań spróbuj opisu wynik lub postcondition każdego przypadku użycia w słowach dostarczone przez diagramy klas. Jest często przydatny pokazać efekt przypadek użycia przez powstawać wystąpienia klas, przed i po wystąpieniu przypadek użycia. Na przykład jeśli postcondition przypadków użycia jest "element menu jest dodawany do zamówienia klienta", szkic wystąpień klas zamówienie i element Menu. Pokaż skutki przypadek użycia, takie jak nowe łącze lub nowy obiekt w innym kolorze lub nowe rysunku. Prowadzi to często dyskusje na temat jakie informacje są niezbędne w modelu. Mimo że wymagania dotyczące klas bezpośrednio nie dotyczą one z implementacją opisują one systemu będzie potrzebnych do przechowywania i przesyłania informacji.  
+- Dla każdego przypadku użycia w modelu wymagań spróbuj opisu wynik lub postcondition każdego przypadku użycia w słowach dostarczone przez diagramy klas. Jest często przydatny pokazać efekt przypadek użycia przez powstawać wystąpienia klas, przed i po wystąpieniu przypadek użycia. Na przykład jeśli postcondition przypadków użycia jest "element menu jest dodawany do zamówienia klienta", szkic wystąpień klas zamówienie i element Menu. Pokaż skutki przypadek użycia, takie jak nowe łącze lub nowy obiekt w innym kolorze lub nowe rysunku. Prowadzi to często dyskusje na temat jakie informacje są niezbędne w modelu. Mimo że wymagania dotyczące klas bezpośrednio nie dotyczą one z implementacją opisują one systemu będzie potrzebnych do przechowywania i przesyłania informacji.  
   
--   Poproś o ograniczenia dotyczące atrybuty i asocjacje, szczególnie ograniczenia obejmujące więcej niż jeden atrybut lub skojarzenia.  
+- Poproś o ograniczenia dotyczące atrybuty i asocjacje, szczególnie ograniczenia obejmujące więcej niż jeden atrybut lub skojarzenia.  
   
--   Poproś o prawidłowe i nieprawidłowe sekwencje przypadki użycia, rysowania diagramów sekwencji lub działania w celu przedstawienia ich.  
+- Poproś o prawidłowe i nieprawidłowe sekwencje przypadki użycia, rysowania diagramów sekwencji lub działania w celu przedstawienia ich.  
   
- Dzięki badanie relacje między widokami, które udostępniają różne diagramy, może szybko zrozumieć główne pojęcia, z którymi użytkownicy korzystają, oraz pomóc je, aby zrozumieć, czego potrzebują, z systemu. Można również osiągnąć lepiej zrozumieć, jakie wymagania zainteresowane strony są co najmniej pewne informacje. Możesz zaplanować tworzenie tych funkcji, co najmniej w formie uproszczonej na wczesnym etapie projektu, aby użytkownicy mogli eksperymentować z nimi.  
+  Dzięki badanie relacje między widokami, które udostępniają różne diagramy, może szybko zrozumieć główne pojęcia, z którymi użytkownicy korzystają, oraz pomóc je, aby zrozumieć, czego potrzebują, z systemu. Można również osiągnąć lepiej zrozumieć, jakie wymagania zainteresowane strony są co najmniej pewne informacje. Możesz zaplanować tworzenie tych funkcji, co najmniej w formie uproszczonej na wczesnym etapie projektu, aby użytkownicy mogli eksperymentować z nimi.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Edytowanie modeli i diagramów UML](../modeling/edit-uml-models-and-diagrams.md)   

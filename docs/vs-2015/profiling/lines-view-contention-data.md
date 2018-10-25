@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c53db386ee9eb0815ebb27f82794118035d6cba6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b91c12807482f411783ed6ef5f50e29716612ffd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254738"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921939"
 ---
 # <a name="lines-view---contention-data"></a>Widok linii — dane rywalizacji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ Widok wierszy danych rywalizacji o zasoby wyświetla dane o wydajności dla inst
   
  Instrukcja jest identyfikowany przez następujące dane:  
   
--   Plik źródłowy, który zawiera deklarację funkcji.  
+- Plik źródłowy, który zawiera deklarację funkcji.  
   
--   Funkcja, która zawiera instrukcję.  
+- Funkcja, która zawiera instrukcję.  
   
--   Wiersza źródłowego, w którym rozpoczyna się wykonywanie instrukcji.  
+- Wiersza źródłowego, w którym rozpoczyna się wykonywanie instrukcji.  
   
--   Znak w wierszu źródłowym, w którym rozpoczyna się wykonywanie instrukcji.  
+- Znak w wierszu źródłowym, w którym rozpoczyna się wykonywanie instrukcji.  
   
--   Wiersza źródłowego, w którym kończy się instrukcji.  
+- Wiersza źródłowego, w którym kończy się instrukcji.  
   
--   Znak w wierszu źródłowym, w którym kończy się instrukcji.  
+- Znak w wierszu źródłowym, w którym kończy się instrukcji.  
   
- Kolumna Nazwa wiersza zawiera wzorzec sortowalnej łączenia danych identyfikator.  
+  Kolumna Nazwa wiersza zawiera wzorzec sortowalnej łączenia danych identyfikator.  
   
- W poniższej tabeli opisano kolumny raportu widok wierszy.  
+  W poniższej tabeli opisano kolumny raportu widok wierszy.  
   
 |Kolumny|Opis|  
 |------------|-----------------|  

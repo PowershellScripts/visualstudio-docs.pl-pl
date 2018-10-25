@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddd64829f1e9f04c1e7634537818f3b6a081db8f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 96b280221ba7efdefd3023f015bd4075b8c03aaa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280613"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910500"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Dodaj kontrolkę użytkownika do strony początkowej
 W tym instruktażu przedstawiono sposób dodawania odwołania biblioteki DLL do niestandardowej strony początkowej. Przykład dodaje formant użytkownika do rozwiązania, tworzy kontrolkę użytkownika i następnie odwołuje się skompilowany zestaw z poziomu strony startowej *.xaml* pliku. Nowa karta obsługuje formant użytkownika, który działa jako podstawowa przeglądarka sieci Web.  
@@ -137,41 +137,41 @@ W tym instruktażu przedstawiono sposób dodawania odwołania biblioteki DLL do 
 ## <a name="add-the-user-control-to-the-start-page"></a>Dodaj kontrolkę użytkownika do strony początkowej  
  Aby udostępnić ten formant do projektu strony początkowej w pliku projektu strony początkowej, należy dodać odwołanie do Nowa biblioteka kontrolki. Następnie można dodać kontrolki do znaczników Start strony XAML.  
   
-1.  W **Eksploratora rozwiązań**, w projekcie strony początkowej, kliknij prawym przyciskiem myszy **odwołania** a następnie kliknij przycisk **Dodaj odwołanie**.  
+1. W **Eksploratora rozwiązań**, w projekcie strony początkowej, kliknij prawym przyciskiem myszy **odwołania** a następnie kliknij przycisk **Dodaj odwołanie**.  
   
-2.  Na **projektów** zaznacz **WebUserControl** a następnie kliknij przycisk **OK**.  
+2. Na **projektów** zaznacz **WebUserControl** a następnie kliknij przycisk **OK**.  
   
-3.  Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
+3. Na **kompilacji** menu, kliknij przycisk **Kompiluj rozwiązanie**.  
   
-     Skompilować rozwiązanie udostępnia kontrolkę użytkownika do funkcji IntelliSense dla innych plików w rozwiązaniu.  
+    Skompilować rozwiązanie udostępnia kontrolkę użytkownika do funkcji IntelliSense dla innych plików w rozwiązaniu.  
   
- Aby dodać formant do znaczników Start strony XAML, Dodaj odwołanie do zestawu przestrzeni nazw, a następnie umieszczanie kontrolki na stronie.  
+   Aby dodać formant do znaczników Start strony XAML, Dodaj odwołanie do zestawu przestrzeni nazw, a następnie umieszczanie kontrolki na stronie.  
   
 ### <a name="to-add-the-control-to-the-markup"></a>Aby dodać kontrolkę znaczników  
   
-1.  W **Eksploratora rozwiązań**, otwórz stronę początkową *.xaml* pliku.  
+1. W **Eksploratora rozwiązań**, otwórz stronę początkową *.xaml* pliku.  
   
-2.  W **XAML** okienko, dodaj następującą deklarację przestrzeni nazw do najwyższego poziomu <xref:System.Windows.Controls.Grid> elementu.  
+2. W **XAML** okienko, dodaj następującą deklarację przestrzeni nazw do najwyższego poziomu <xref:System.Windows.Controls.Grid> elementu.  
   
-    ```xml  
-    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
-    ```  
+   ```xml  
+   xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
+   ```  
   
-3.  W **XAML** okienko, przewiń do \<siatki > sekcji.  
+3. W **XAML** okienko, przewiń do \<siatki > sekcji.  
   
-     Sekcja zawiera <xref:System.Windows.Controls.TabControl> element <xref:System.Windows.Controls.Grid> elementu.  
+    Sekcja zawiera <xref:System.Windows.Controls.TabControl> element <xref:System.Windows.Controls.Grid> elementu.  
   
-4.  Dodaj \<TabControl > zawierający element \<TabItem > zawiera odwołanie do kontrolki użytkownika.  
+4. Dodaj \<TabControl > zawierający element \<TabItem > zawiera odwołanie do kontrolki użytkownika.  
   
-    ```xml  
+   ```xml  
   
-    <TabItem Header="Web" Height="Auto">  
-        <vsc:UserControl1 />  
-    </TabItem>  
+   <TabItem Header="Web" Height="Auto">  
+       <vsc:UserControl1 />  
+   </TabItem>  
   
-    ```  
+   ```  
   
- Teraz można przetestować formant.  
+   Teraz można przetestować formant.  
   
 ## <a name="test-a-manually-created-custom-start-page"></a>Testowanie ręczne tworzenie niestandardowej strony początkowej  
   

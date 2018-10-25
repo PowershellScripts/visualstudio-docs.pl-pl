@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e14da45b7c4f6064685cc4dbd88cd26aca3b0ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bdae912e1eb43d3fa323850fa9dae35f2c56f18
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923215"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer"></a>Porady: kopiowanie elementów diagramu klasy do dokumentu pakietu Microsoft Office (Projektant klas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Kształtów można skopiować z diagramu klasy (.cd plik) platformy .NET do inny
   
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>Aby skopiować wszystkie elementy na diagramie klasy  
   
-1.  Kliknij prawym przyciskiem myszy powierzchnię diagramu, a następnie wybierz **Zaznacz wszystko**. (Klawiatura: **Ctrl + A**)  
+1. Kliknij prawym przyciskiem myszy powierzchnię diagramu, a następnie wybierz **Zaznacz wszystko**. (Klawiatura: **Ctrl + A**)  
   
-2.  Na **Edytuj** menu, wybierz opcję **Kopiuj obraz**.  
+2. Na **Edytuj** menu, wybierz opcję **Kopiuj obraz**.  
   
- Można również wybrać **kopiowania** zamiast **Kopiuj obraz**. **Kopiuj** kopiuje obraz jako regularne mapy bitowej. **Skopiuj obraz** kopiuje obraz jako obrazu opartego na wektorach, który jest lepszym rozwiązaniem dla większości aplikacji pakietu Office.  
+   Można również wybrać **kopiowania** zamiast **Kopiuj obraz**. **Kopiuj** kopiuje obraz jako regularne mapy bitowej. **Skopiuj obraz** kopiuje obraz jako obrazu opartego na wektorach, który jest lepszym rozwiązaniem dla większości aplikacji pakietu Office.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Porady: drukowanie diagramów klas (Projektant klas)](../ide/how-to-print-class-diagrams-class-designer.md)   

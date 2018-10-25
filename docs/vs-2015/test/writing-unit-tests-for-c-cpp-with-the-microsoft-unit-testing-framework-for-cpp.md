@@ -13,12 +13,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c3b24aea533083e7d9158b54e2e68b5095f06df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 180f970f35ed0bb3de70ba3a7b7b47dbe656ddf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904048"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Framework testów jednostkowych firmy Microsoft dla języka C++ pozwala pisać testy jednostkowe dla projektów języka C++.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,53 +187,53 @@ W programie Visual Studio można utworzyć testy jednostkowe dla niezarządzaneg
   
 ###  <a name="coupleProjects"></a> Kilka projekt testowy do projektu biblioteki DLL  
   
-1.  Dodaj projekt biblioteki DLL do odwołań projektu dla projektu testowego:  
+1. Dodaj projekt biblioteki DLL do odwołań projektu dla projektu testowego:  
   
-    1.  Otwórz właściwości projektu testowego i wybierz polecenie **wspólne właściwości**, **szablon i odwołania**.  
+   1.  Otwórz właściwości projektu testowego i wybierz polecenie **wspólne właściwości**, **szablon i odwołania**.  
   
-         ![C&#43; &#43; właściwości projektu &#45; szablon i odwołania](../test/media/utecpp08.png "UteCpp08")  
+        ![C&#43; &#43; właściwości projektu &#45; szablon i odwołania](../test/media/utecpp08.png "UteCpp08")  
   
-    2.  Wybierz **Dodaj nowe odwołanie**.  
+   2.  Wybierz **Dodaj nowe odwołanie**.  
   
-         W **Dodaj odwołanie** okna dialogowego pole, zaznacz projekt DLL i wybierz **Dodaj**.  
+        W **Dodaj odwołanie** okna dialogowego pole, zaznacz projekt DLL i wybierz **Dodaj**.  
   
-         ![C&#43; &#43; właściwości projektu &#45; Dodaj nowe odwołanie](../test/media/utecpp09.png "UteCpp09")  
+        ![C&#43; &#43; właściwości projektu &#45; Dodaj nowe odwołanie](../test/media/utecpp09.png "UteCpp09")  
   
-2.  W pliku .cpp testu jednostkowego jednostki Dołącz plik .h kodu biblioteki DLL:  
+2. W pliku .cpp testu jednostkowego jednostki Dołącz plik .h kodu biblioteki DLL:  
   
-    ```cpp  
-    #include "..\RootFinder\RootFinder.h"  
-    ```  
+   ```cpp  
+   #include "..\RootFinder\RootFinder.h"  
+   ```  
   
-3.  Dodaj podstawowy test, który używa eksportowanych funkcji:  
+3. Dodaj podstawowy test, który używa eksportowanych funkcji:  
   
-    ```cpp  
-    TEST_METHOD(BasicTest)  
-    {  
-    CRootFinder rooter;  
-    Assert::AreEqual(  
-    // Expected value:  
-    0.0,   
-    // Actual value:  
-    rooter.SquareRoot(0.0),   
-    // Tolerance:  
-    0.01,  
-    // Message:  
-    L"Basic test failed",  
-    // Line number - used if there is no PDB file:  
-    LINE_INFO());  
-    }  
-    ```  
+   ```cpp  
+   TEST_METHOD(BasicTest)  
+   {  
+   CRootFinder rooter;  
+   Assert::AreEqual(  
+   // Expected value:  
+   0.0,   
+   // Actual value:  
+   rooter.SquareRoot(0.0),   
+   // Tolerance:  
+   0.01,  
+   // Message:  
+   L"Basic test failed",  
+   // Line number - used if there is no PDB file:  
+   LINE_INFO());  
+   }  
+   ```  
   
-4.  Skompiluj rozwiązanie.  
+4. Skompiluj rozwiązanie.  
   
-     Nowy test zostanie wyświetlony w Eksploratorze testów.  
+    Nowy test zostanie wyświetlony w Eksploratorze testów.  
   
-5.  W Eksploratorze testów wybierz **Uruchom wszystkie**.  
+5. W Eksploratorze testów wybierz **Uruchom wszystkie**.  
   
-     ![Eksplorator testów jednostkowych &#45; podstawowy Test zakończony sukcesem](../test/media/utecpp10.png "UteCpp10")  
+    ![Eksplorator testów jednostkowych &#45; podstawowy Test zakończony sukcesem](../test/media/utecpp10.png "UteCpp10")  
   
- Mają ustawienie testu i projekty kodu, a następnie zweryfikować, że można uruchomić testy, które uruchamiania funkcji w projekcie kodu. Teraz możesz rozpocząć pisanie rzeczywistych testów i kodu.  
+   Mają ustawienie testu i projekty kodu, a następnie zweryfikować, że można uruchomić testy, które uruchamiania funkcji w projekcie kodu. Teraz możesz rozpocząć pisanie rzeczywistych testów i kodu.  
   
 ###  <a name="iterate"></a> Iteracyjne Udoskonal testy i nadawać im przekazać  
   

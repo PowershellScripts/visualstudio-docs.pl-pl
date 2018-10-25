@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b56371ed66287f4b8f8005b6e793f6311427100
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289565"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893003"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,30 +36,30 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
   
  W instruktażu przedstawiono następujące zagadnienia:  
   
--   Tworzenie aplikacji WPF i zestaw danych, który jest generowany na podstawie danych w przykładowej bazie danych AdventureWorksLT.  
+- Tworzenie aplikacji WPF i zestaw danych, który jest generowany na podstawie danych w przykładowej bazie danych AdventureWorksLT.  
   
--   Tworzenie zestawu formantów powiązanych z danymi przez przeciąganie tabelę danych z **źródeł danych** okna do okna Projektanta WPF.  
+- Tworzenie zestawu formantów powiązanych z danymi przez przeciąganie tabelę danych z **źródeł danych** okna do okna Projektanta WPF.  
   
--   Tworzenie przycisków, które przejdź do przodu i wstecz za pośrednictwem rekordów produktu.  
+- Tworzenie przycisków, które przejdź do przodu i wstecz za pośrednictwem rekordów produktu.  
   
--   Tworzenie przycisku, który zapisuje zmiany wprowadzone przez użytkownika do rekordów produkt do tabeli danych i źródle danych.  
+- Tworzenie przycisku, który zapisuje zmiany wprowadzone przez użytkownika do rekordów produkt do tabeli danych i źródle danych.  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   Dostęp do uruchomionego wystąpienia programu SQL Server lub SQL Server Express, który ma przykładowej bazy danych AdventureWorksLT podłączone do niego. Możesz pobrać bazy danych AdventureWorksLT z [witryny sieci CodePlex Web](http://go.microsoft.com/fwlink/?linkid=87843).  
+- Dostęp do uruchomionego wystąpienia programu SQL Server lub SQL Server Express, który ma przykładowej bazy danych AdventureWorksLT podłączone do niego. Możesz pobrać bazy danych AdventureWorksLT z [witryny sieci CodePlex Web](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- Znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończeni instruktażu:  
+  Znajomość następujących pojęć jest również przydatna, ale nie jest wymagana do ukończeni instruktażu:  
   
--   Zestawy danych i adapterów TableAdapter. Aby uzyskać więcej informacji, zobacz [narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) i [TableAdapter — Przegląd](../data-tools/tableadapter-overview.md).  
+- Zestawy danych i adapterów TableAdapter. Aby uzyskać więcej informacji, zobacz [narzędzia zestawu danych w programie Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) i [TableAdapter — Przegląd](../data-tools/tableadapter-overview.md).  
   
--   Praca z projektanta WPF. Aby uzyskać więcej informacji, zobacz [WPF i Silverlight projektanta Przegląd](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Praca z projektanta WPF. Aby uzyskać więcej informacji, zobacz [WPF i Silverlight projektanta Przegląd](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [Przegląd wiązanie danych](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Powiązanie danych WPF. Aby uzyskać więcej informacji, zobacz [Przegląd wiązanie danych](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="create-the-project"></a>Utwórz projekt  
  Utwórz nowy projekt WPF. Projekt zostanie wyświetlona rekordy produktu.  

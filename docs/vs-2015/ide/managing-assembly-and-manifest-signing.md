@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172747"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909682"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Zarządzanie zestawem i podpisywanie manifestu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,23 +40,23 @@ Podpisywania silnymi zawiera składnik oprogramowania globalnie unikatową tożs
 ## <a name="asset-types-and-signing"></a>Typy zasobów i podpisywania  
  Można podpisać manifesty aplikacji i zestawy .NET. Należą do nich między innymi:  
   
--   pliki wykonywalne (.exe)  
+- pliki wykonywalne (.exe)  
   
--   Manifesty aplikacji (. exe.manifest)  
+- Manifesty aplikacji (. exe.manifest)  
   
--   manifesty wdrożenia (.application)  
+- manifesty wdrożenia (.application)  
   
--   współużytkowany składnik zestawy (.dll)  
+- współużytkowany składnik zestawy (.dll)  
   
- Musisz zalogować się następujące typy zasobów:  
+  Musisz zalogować się następujące typy zasobów:  
   
-1.  Zestawy, jeśli chcesz wdrożyć je w globalnej pamięci podręcznej zestawów (GAC).  
+1. Zestawy, jeśli chcesz wdrożyć je w globalnej pamięci podręcznej zestawów (GAC).  
   
-2.  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Manifesty aplikacji i wdrożenia. Program Visual Studio umożliwia podpisywania domyślnie w przypadku tych aplikacji.  
+2. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Manifesty aplikacji i wdrożenia. Program Visual Studio umożliwia podpisywania domyślnie w przypadku tych aplikacji.  
   
-3.  Podstawowe zestawy międzyoperacyjne, które są używane do współdziałania COM. Narzędzia TLBIMP wymusza silne nazwy podczas tworzenia podstawowego zestawu międzyoperacyjnego z biblioteki typów COM.  
+3. Podstawowe zestawy międzyoperacyjne, które są używane do współdziałania COM. Narzędzia TLBIMP wymusza silne nazwy podczas tworzenia podstawowego zestawu międzyoperacyjnego z biblioteki typów COM.  
   
- Ogólnie rzecz biorąc nie powinien utworzyć pliki wykonywalne. Składnik silnej nazwy nie mogą odwoływać się bez — nazwie składnik wdrożoną wraz z aplikacją. Visual Studio nie podpisuje plików wykonywalnych aplikacji, ale zamiast tego podpisuje manifest aplikacji, które wskazuje do pliku wykonywalnego o nazwie weak. Ogólnie należy unikać podpisywania składników, które są prywatne do aplikacji, ponieważ podpisywanie może utrudnić zarządzanie zależnościami.  
+   Ogólnie rzecz biorąc nie powinien utworzyć pliki wykonywalne. Składnik silnej nazwy nie mogą odwoływać się bez — nazwie składnik wdrożoną wraz z aplikacją. Visual Studio nie podpisuje plików wykonywalnych aplikacji, ale zamiast tego podpisuje manifest aplikacji, które wskazuje do pliku wykonywalnego o nazwie weak. Ogólnie należy unikać podpisywania składników, które są prywatne do aplikacji, ponieważ podpisywanie może utrudnić zarządzanie zależnościami.  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Jak zarejestrować zestaw w programie Visual Studio  
  Podpisywania aplikacji lub składnika przy użyciu **podpisywanie** karty w oknie właściwości projektu (kliknij prawym przyciskiem myszy węzeł projektu w **Eksploratora rozwiązań** i wybierz **właściwości**, lub typu **właściwości projektu** w **Szybkie uruchamianie** okna, naciśnij klawisze ALT + ENTER w **Eksploratora rozwiązań** okna). Wybierz **podpisywanie** kartę, a następnie wybierz **Podpisz zestaw** pole wyboru.  

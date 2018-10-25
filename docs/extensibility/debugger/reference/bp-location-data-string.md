@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae83bf4d0f8ba6435a962f5c1477e460d69ae27f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8c740c853fff0701bf27d3c37d69141440525b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100601"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875778"
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
-Używana do ustawiania punkty przerwania danych, które są oparte na ciąg, który użytkownik może wprowadzić z zintegrowane środowisko programistyczne (IDE).  
+Używana do ustawiania punktów przerwania danych, które są oparte na ciąg, który użytkownik może wprowadzić ze zintegrowanego środowiska programistycznego (IDE).  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -38,19 +38,19 @@ typedef struct _BP_LOCATION_DATA_STRING {
   
 ## <a name="members"></a>Elementy członkowskie  
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątku, w którym występuje punktu przerwania.  
+ [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) obiekt, który reprezentuje wątek, w którym występuje punkt przerwania.  
   
  `bstrContext`  
- Kontekst punktu przerwania w kodzie, zwykle nazwę metody lub funkcji wyświetlanego w stosie wywołań.  
+ Kontekst punktu przerwania w kodzie, zazwyczaj nazwę metody lub funkcji wyświetlanego w stosie wywołań.  
   
  `bstrDataExpr`  
- Ciąg danych, które użytkownik wprowadza można ustawić punktu przerwania.  
+ Ciąg danych, które użytkownik wprowadza ustawić punkt przerwania.  
   
  `dwNumElements`  
- Liczba elementów w ciągu danych, w którym występuje punktu przerwania.  
+ Liczba elementów w ciągu danych, w której występuje punkt przerwania.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest elementem członkowskim [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktury jako część Unii.  
+ Ta struktura jest elementem członkowskim [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) struktur w ramach złożenia.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -60,6 +60,6 @@ typedef struct _BP_LOCATION_DATA_STRING {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

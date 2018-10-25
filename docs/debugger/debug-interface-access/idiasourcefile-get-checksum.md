@@ -1,5 +1,5 @@
 ---
-title: IDiaSourceFile::get_checksum | Dokumentacja firmy Microsoft
+title: Idiasourcefile::get_checksum — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 002ad16d94467c135e08ef0040fd7ffd51462719
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3f0484fce6f5355361c0c5156cd3c7ad827775c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463140"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919432"
 ---
 # <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
-Pobiera liczbę bajtów sumy kontrolnej.  
+Pobiera bajtów sumy kontrolnej.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -36,23 +36,23 @@ HRESULT get_checksum (
   
 #### <a name="parameters"></a>Parametry  
  `cbData`  
- [in] Rozmiar buforu danych w bajtach.  
+ [in] Rozmiar buforu danych, w bajtach.  
   
  `pcbData`  
  [out] Zwraca liczbę bajtów sumy kontrolnej. Ten parametr nie może być `NULL`.  
   
  `data`  
- [w, out] Buforu, który jest wypełniony bajtów sumy kontrolnej. Jeśli ten parametr ma `NULL`, następnie `pcbData` zwraca liczbę bajtów wymaganą.  
+ [out w] Buforu, który zostanie wypełniony kolorem bajtów sumy kontrolnej. Jeśli ten parametr jest `NULL`, następnie `pcbData` zwraca liczbę bajtów wymaganą.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Aby określić typ algorytmu sumy kontrolnej, który został użyty do generowania bajtów sumy kontrolnej, należy wywołać [IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) metody.  
+ Aby określić typ algorytmu sumy kontrolnej, który został użyty do wygenerowania sumy kontrolnej bajty, należy wywołać [idiasourcefile::get_checksumtype —](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) metody.  
   
- Suma kontrolna zwykle są generowane na podstawie obrazu pliku źródłowego, zmiany w pliku źródłowym są uwzględniane w zmiany w bajtach sumy kontrolnej. Jeśli sumy kontrolnej, z jaką bajty są niezgodne sumy kontrolnej generowane na podstawie załadowanego obrazu pliku, a następnie plik należy traktować jako uszkodzony lub zmodyfikowany.  
+ Suma kontrolna zwykle jest generowany z obrazu źródłowego pliku, więc zmiany w pliku źródłowym są odzwierciedlane na zmiany w bajtach sumy kontrolnej. Jeśli bajtów sumy kontrolnej nie są zgodne sumy kontrolnej wygenerowany na podstawie załadowanego obrazu pliku, a następnie plik należy rozważyć uszkodzony lub naruszony.  
   
- Typowy sum kontrolnych są nigdy nie więcej niż 32 bajtów, ale nie przyjęto założenie, że jest maksymalny rozmiar sumy kontrolnej. Ustaw `data` parametr `NULL` można pobrać liczby bajtów wymaganej można pobrać sumy kontrolnej. Następnie przydzielić buforu odpowiedni rozmiar i wywołać tę metodę raz z bufor nowego.  
+ Typowe sumy kontrolne nigdy nie są więcej niż 32 bajty, rozmiar, ale nie należy zakładać, że jest maksymalny rozmiar sumy kontrolnej. Ustaw `data` parametr `NULL` do liczby bajtów wymaganej do pobierania sumy kontrolnej. Następnie przydziel bufor odpowiedni rozmiar i wywoływanie tej metody raz z bufor nowego.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Idiasourcefile —](../../debugger/debug-interface-access/idiasourcefile.md)   

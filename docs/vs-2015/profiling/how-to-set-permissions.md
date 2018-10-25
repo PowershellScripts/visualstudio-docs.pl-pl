@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d33c99ba2bbca5c7e99d73c9c8168e08674b499e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187555"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905268"
 ---
 # <a name="how-to-set-permissions"></a>Porady: Ustawianie uprawnień
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ W tym temacie opisano, jak Administrator komputera przyznaje uprawnienia zabezpi
   
  **Wymagania**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- Członkowie grupy Użytkownicy będą potrzebowali dostępu do folderów i plików na dysku, które są współużytkowane z innymi członkami zespołu. Drugą procedurę "Aby udzielić dostępu do plików projektu udostępnionego" w tym artykule opisano jak przyznać dostęp.  
+  Członkowie grupy Użytkownicy będą potrzebowali dostępu do folderów i plików na dysku, które są współużytkowane z innymi członkami zespołu. Drugą procedurę "Aby udzielić dostępu do plików projektu udostępnionego" w tym artykule opisano jak przyznać dostęp.  
   
- Jeśli administrator przyznaje im dostęp do sterownika oprogramowania dla narzędzi profilowania, członkowie grupy użytkowników można uruchomić narzędzi profilowania. Ostatniej procedury "Aby udzielić dostępu do profilowania sterownika" w tym artykule opisano jak udzielić dostępu do tego sterownika.  
+  Jeśli administrator przyznaje im dostęp do sterownika oprogramowania dla narzędzi profilowania, członkowie grupy użytkowników można uruchomić narzędzi profilowania. Ostatniej procedury "Aby udzielić dostępu do profilowania sterownika" w tym artykule opisano jak udzielić dostępu do tego sterownika.  
   
 > [!NOTE]
 >  Musisz mieć uprawnienia administratora, aby wykonać czynności opisane w tych procedurach.  
@@ -89,47 +89,47 @@ W tym temacie opisano, jak Administrator komputera przyznaje uprawnienia zabezpi
   
 ### <a name="to-grant-access-to-the-profiling-driver"></a>Aby udzielić dostępu do profilowania sterownika  
   
-1.  Otwórz wiersz polecenia jako administrator.  
+1. Otwórz wiersz polecenia jako administrator.  
   
-2.  Zmień katalog na:  
+2. Zmień katalog na:  
   
-    ```  
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
-    ```  
+   ```  
+   <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
+   ```  
   
-3.  Uruchom następujące polecenie:  
+3. Uruchom następujące polecenie:  
   
-    ```  
-    vsperfcmd /admin:driver,start /admin:service,start  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,start /admin:service,start  
+   ```  
   
-     To polecenie instaluje i uruchamia sterownik dla narzędzi profilowania.  
+    To polecenie instaluje i uruchamia sterownik dla narzędzi profilowania.  
   
-     To polecenie uruchamia profilowanie sterowników i usługi, aby użytkownicy inni niż administratorzy mogą używać profilowania funkcji, które są dostępne w przestrzeni procesu ich użytkowników. Tylko Administrator może uruchomić polecenia; i nie powiedzie się dla użytkowników innych niż administracyjne.  
+    To polecenie uruchamia profilowanie sterowników i usługi, aby użytkownicy inni niż administratorzy mogą używać profilowania funkcji, które są dostępne w przestrzeni procesu ich użytkowników. Tylko Administrator może uruchomić polecenia; i nie powiedzie się dla użytkowników innych niż administracyjne.  
   
-     Należy zauważyć, że efekty w tym kroku są cofnięta po ponownym uruchomieniu komputera, chyba że również wykonać ostatni krok w tej procedurze.  
+    Należy zauważyć, że efekty w tym kroku są cofnięta po ponownym uruchomieniu komputera, chyba że również wykonać ostatni krok w tej procedurze.  
   
-4.  Uruchom polecenie, aby zezwolić na dostęp do profilowania funkcji sterownika przez użytkownika lub grupy, które ma dostęp administratora do komputera:  
+4. Uruchom polecenie, aby zezwolić na dostęp do profilowania funkcji sterownika przez użytkownika lub grupy, które ma dostęp administratora do komputera:  
   
-    ```  
-    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
-    ```  
+   ```  
+   vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
+   ```  
   
-     To polecenie przyznaje \<nazwa_użytkownika > lub \<Nazwa grupy > konta dostępu do narzędzi profilowania. \<Prawo > Opcja określa profilowania funkcji użytkownik może uzyskać dostęp. \<Prawo > opcja może być co najmniej jeden z następujących wartości:  
+    To polecenie przyznaje \<nazwa_użytkownika > lub \<Nazwa grupy > konta dostępu do narzędzi profilowania. \<Prawo > Opcja określa profilowania funkcji użytkownik może uzyskać dostęp. \<Prawo > opcja może być co najmniej jeden z następujących wartości:  
   
-    -   FullAccess — zezwala na dostęp do wszystkich metod profilowania, zbieranie danych wydajności z usługi, w tym do pobierania próbek i obejmujące wiele sesji profilowania.  
+   -   FullAccess — zezwala na dostęp do wszystkich metod profilowania, zbieranie danych wydajności z usługi, w tym do pobierania próbek i obejmujące wiele sesji profilowania.  
   
-    -   SampleProfiling — zezwala na dostęp do metod profilowania próbki  
+   -   SampleProfiling — zezwala na dostęp do metod profilowania próbki  
   
-    -   CrossSession — zezwala na dostęp do wielu sesji profilowania, co jest wymagane dla usług profilowania.  
+   -   CrossSession — zezwala na dostęp do wielu sesji profilowania, co jest wymagane dla usług profilowania.  
   
-5.  (Opcjonalnie) Aby zachować wyniki dowolnego z poprzednich kroków, po ponownym uruchomieniu komputera, uruchom następujące polecenie:  
+5. (Opcjonalnie) Aby zachować wyniki dowolnego z poprzednich kroków, po ponownym uruchomieniu komputera, uruchom następujące polecenie:  
   
-    ```  
-    vsperfcmd /admin:driver,autostart,on  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,autostart,on  
+   ```  
   
- Określeni użytkownicy po zalogowaniu, teraz będzie można użyć narzędzi profilowania bez uprawnień administratora.  
+   Określeni użytkownicy po zalogowaniu, teraz będzie można użyć narzędzi profilowania bez uprawnień administratora.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Konfigurowanie sesji wydajności](../profiling/configuring-performance-sessions.md)   

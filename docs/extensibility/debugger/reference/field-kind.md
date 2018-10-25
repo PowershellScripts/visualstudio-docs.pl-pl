@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a603310986f42141a04f38c7ce26db0d7326fe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: df29c9bd876a437dbcf8d797f1dcc51fb05a296f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868199"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
-Określa rodzaj pole zawarte w [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu.  
+Określa typ pola ujętego w [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) obiektu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -129,19 +129,19 @@ public enum enum_FIELD_KIND {
  Wskazuje, że pole jest tylko typu.  
   
  FIELD_KIND_SYMBOL  
- Wskazuje, że pole jest symbol, typu, nazwy i inne informacje.  
+ Wskazuje, że pole jest symbol, za pomocą typu, nazwy i inne informacje.  
   
  FIELD_TYPE_PRIMITIVE  
- Wskazuje, że pole jest typu pierwotnego.  
+ Wskazuje, że pole jest typem danych pierwotnych.  
   
  FIELD_TYPE_STRUCT  
- Wskazuje, że pole jest strukturą.  
+ Wskazuje, że pole jest struktura.  
   
  FIELD_TYPE_CLASS  
  Wskazuje, że pole jest klasą.  
   
  FIELD_TYPE_INTERFACE  
- Wskazuje, że pole jest interfejsem.  
+ Wskazuje, że pole jest interfejs.  
   
  FIELD_TYPE_UNION  
  Wskazuje, że pole jest Unii.  
@@ -153,7 +153,7 @@ public enum enum_FIELD_KIND {
  Wskazuje, że pole jest metodą.  
   
  FIELD_TYPE_BLOCK  
- Wskazuje, że pole jest blok.  
+ Wskazuje, że pole jest blokiem.  
   
  FIELD_TYPE_POINTER  
  Wskazuje, że pole jest wskaźnik.  
@@ -162,10 +162,10 @@ public enum enum_FIELD_KIND {
  Wskazuje, że pole jest wyliczany typ danych.  
   
  FIELD_TYPE_LABEL  
- Wskazuje, że pole jest etykiety.  
+ Wskazuje, że pole jest etykietę.  
   
  FIELD_TYPE_TYPEDEF  
- Wskazuje, że pole jest elementem typedef.  
+ Wskazuje, że pole jest typedef.  
   
  FIELD_TYPE_BITFIELD  
  Wskazuje, że pole jest bitfield.  
@@ -183,10 +183,10 @@ public enum enum_FIELD_KIND {
  Wskazuje, że pole jest właściwością.  
   
  FIELD_TYPE_INNERCLASS  
- Wskazuje, że pole jest klasą wewnętrzny.  
+ Wskazuje, że pole jest klasy wewnętrznej.  
   
  FIELD_TYPE_REFERENCE  
- Wskazuje, że pole jest odwołanie.  
+ Wskazuje, że pole jest odwołaniem.  
   
  FIELD_TYPE_EXTENDED  
  Zarezerwowane do użytku w przyszłości.  
@@ -204,10 +204,10 @@ public enum enum_FIELD_KIND {
  Wskazuje, że pole jest wskaźnik "this".  
   
  FIELD_SYM_GLOBAL  
- Wskazuje, że pole jest globalnego.  
+ Wskazuje, że pole jest globalne.  
   
  FIELD_SYM_PROP_GETTER  
- Wskazuje, czy pole pobiera właściwości.  
+ Wskazuje, że pole pobiera właściwości.  
   
  FIELD_SYM_PROP_SETTER  
  Wskazuje, że pole ustawia właściwości.  
@@ -219,15 +219,15 @@ public enum enum_FIELD_KIND {
  Wskazuje maska dla typów pól.  
   
  FIELD_TYPE_MASK  
- Wskazuje maskę dla typów pól.  
+ Określa maskę dla typów pól.  
   
  FIELD_SYM_MASK  
- Wskazuje maskę dla informacji o symbolach.  
+ Określa maskę, aby uzyskać informacje o symbolach.  
   
 ## <a name="remarks"></a>Uwagi  
- Zwrócone w wyniku wywołania [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metody.  
+ Zwrócony z wywołania do [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) metody.  
   
- W zależności od rodzaju pola [QueryInterface](/cpp/atl/queryinterface) można wywołać w [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejs dla bardziej konkretnych formularza interfejsu. Na przykład jeśli [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) zwraca `FIELD_TYPE_METHOD`, można wywołać `QueryInterface` i`DebugField` uzyskanie [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interfejsu.  
+ W zależności od rodzaju pola [QueryInterface](/cpp/atl/queryinterface) może być wywoływana na [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfejsu dokładniejszą formularza interfejsu. Na przykład jeśli [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) zwraca `FIELD_TYPE_METHOD`, następnie możesz wywołać `QueryInterface` i`DebugField` uzyskać [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) interfejsu.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: sh.h  

@@ -32,12 +32,12 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297198"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925505"
 ---
 # <a name="memory-windows"></a>Okno pamięci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,21 +91,21 @@ ms.locfileid: "49297198"
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>Aby zmienić liczbę kolumn w oknie pamięci  
   
-1.  Na pasku narzędzi u góry **pamięci** oknie Znajdź **kolumn** listy.  
+1. Na pasku narzędzi u góry **pamięci** oknie Znajdź **kolumn** listy.  
   
-2.  W **kolumn** , wybierz liczbę kolumn, które chcesz wyświetlić, lub zaznacz na liście **automatycznie** automatycznego dostosowania do Dopasuj szerokość okna.  
+2. W **kolumn** , wybierz liczbę kolumn, które chcesz wyświetlić, lub zaznacz na liście **automatycznie** automatycznego dostosowania do Dopasuj szerokość okna.  
   
- Jeśli nie chcesz, aby zawartość **pamięci** wykonuje okna, aby zmienić jako program, można wyłączyć oceny wyrażenia na żywo.  
+   Jeśli nie chcesz, aby zawartość **pamięci** wykonuje okna, aby zmienić jako program, można wyłączyć oceny wyrażenia na żywo.  
   
 #### <a name="to-toggle-live-evaluation"></a>Aby przełączyć na żywo oceny  
   
-1.  Kliknij prawym przyciskiem myszy **pamięci** okna.  
+1. Kliknij prawym przyciskiem myszy **pamięci** okna.  
   
-2.  W menu skrótów kliknij **automatycznie Oblicz ponownie**.  
+2. W menu skrótów kliknij **automatycznie Oblicz ponownie**.  
   
-     Jeśli ocena na żywo jest włączona, zostanie wybrana opcja, a kliknięcie powoduje wyłączenie oceny na żywo. Jeśli oceny na żywo jest wyłączona, nie zaznaczono opcji, a następnie klikając go Włącza obliczanie na żywo.  
+    Jeśli ocena na żywo jest włączona, zostanie wybrana opcja, a kliknięcie powoduje wyłączenie oceny na żywo. Jeśli oceny na żywo jest wyłączona, nie zaznaczono opcji, a następnie klikając go Włącza obliczanie na żywo.  
   
- Można ukryć lub wyświetlić pasek narzędzi w górnej części **pamięci** okna. Nie masz dostępu do adresu pola lub innych narzędzi, tak długo, jak pasek narzędzi jest ukryty.  
+   Można ukryć lub wyświetlić pasek narzędzi w górnej części **pamięci** okna. Nie masz dostępu do adresu pola lub innych narzędzi, tak długo, jak pasek narzędzi jest ukryty.  
   
 #### <a name="to-toggle-the-toolbar"></a>Aby przełączyć na pasku narzędzi  
   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6ad12c823d0a29bb2d4211f03010e484e79257
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 603c0849d22f658800776e8a1e4cb1f429990e00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "34751705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894628"
 ---
 # <a name="graph-view"></a>Widok wykresu
 
@@ -48,7 +48,7 @@ Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i re
  W poniższej tabeli opisano opcje, które są dostępne dla wszystkich węzłów na powierzchni projektowej widoku wykresu.
 
 |Opcja|Opis|
-|------------|-----------------|
+|-|-----------------|
 |**Pokaż w Eksplorator schematu XML**|Przełącza fokus na Eksploratora schematu i wyróżnienie węzeł zestawu schematu.|
 |**Pokaż w widoku wykresu**|Przełącza do widoku wykresu (wyszarzony).|
 |**Generowanie przykładowy kod XML**|Dostępne tylko dla elementów globalnej. Generuje przykładowy plik XML dla elementu globalnego.|
@@ -63,7 +63,7 @@ Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i re
  Oprócz typowych opcji opisanych powyżej menu kontekstowe dla elementy globalne ma następujące opcje:
 
 |Opcja|Opis|
-|------------|-----------------|
+|-|-----------------|
 |**Dodawanie definicji typu**|Dodaje typ bazowy do diagramu.|
 |**Dodaj wszystkie odwołania**|Dodaje wszystkie węzły, które odnoszą się do elementu i rysuje strzałki wskazują relacje między nimi.|
 |**Dodaj składowe grupy podstawienia**|Dodaje wszystkich członków grupy podstawienia. Ta opcja jest wyświetlana w widoku, jeśli element jest węzłem głównym lub składową grupy podstawienia.|
@@ -72,7 +72,7 @@ Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i re
  Oprócz typowych opcji opisanych powyżej menu kontekstowe dla globalne proste i globalne typy złożone ma następujące opcje:
 
 |Opcja|Opis|
-|------------|-----------------|
+|-|-----------------|
 |**Dodaj typ podstawowy**|Jeśli wybrany typ pochodzi od typu globalnego, dodaje typ podstawowy elementu wybranego typu.|
 |**Dodaj wszystkie odwołania**|Dodaje wszystkie odwołania do wybranego typu. Obejmuje to elementy i atrybuty wybranego typu, a typy pochodzące od wybranego typu.|
 |**Dodaj wszystkie typy pochodne**|Dodaje wszystkie typy, które bezpośredniego lub pośredniego pochodzą od wybranego typu.|
@@ -81,14 +81,14 @@ Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i re
  Oprócz typowych opcji opisanych powyżej menu kontekstowe dla grup globalnych i grup atrybutów ma następujące opcje:
 
 |Opcja|Opis|
-|------------|-----------------|
+|-|-----------------|
 |**Dodaj wszystkie odwołania**|Dodaje wszystkie węzły, które odnoszą się do grupy i rysuje strzałki wskazują relacje między nimi.|
 |**Dodaj wszystkie elementy członkowskie**|Dodaje wszystkich członków grupy i rysuje strzałki wskazują relacje między nimi.|
 
  Oprócz typowych opcji opisanych powyżej menu kontekstowe dla atrybutami globalnymi ma następujące opcje:
 
 |Opcja|Opis|
-|------------|-----------------|
+|-|-----------------|
 |**Dodaj wszystkie odwołania**|Dodaje wszystkie węzły, które odnoszą się do grupy i rysuje strzałki wskazują relacje między nimi.|
 
 ## <a name="properties-window"></a>Okno właściwości
@@ -102,7 +102,7 @@ Widok wykresu zawiera graficzną reprezentację globalnego schematu węzły i re
  ![Pasek narzędzi Projektanta schematu XML](../xml-tools/media/xsdgraphviewtoolbar.gif)
 
 |Opcja|Opis|
-|------------|-----------------|
+|-|-----------------|
 |**Pokaż widok startowy**|Przełącza do [widok startowy](../xml-tools/start-view.md). Ten widok jest możliwy za pomocą skrótu klawiaturowego: **Ctrl**+**1**.|
 |**Pokaż widok modelu zawartości**|Przełącza do [widoku modelu zawartości](../xml-tools/content-model-view.md). Ten widok jest możliwy za pomocą skrótu klawiaturowego: **Ctrl**+**2**.|
 |**Pokaż widok wykresu**|Przełącza do [widoku wykresu](../xml-tools/graph-view.md). Ten widok jest możliwy za pomocą skrótu klawiaturowego: **Ctrl**+**3**.|

@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6816aed50bd7d03338508856472f893b441842e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3a9c5f368cef94bdc270d678a25f0ec0d94052b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296078"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912880"
 ---
 # <a name="how-to-display-process-properties"></a>Porady: wyświetlanie właściwości procesu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Aby dowiedzieć się więcej na temat procesu, na liście [widok procesy](../deb
   
 ### <a name="to-open-a-process-properties-dialog-box"></a>Aby otworzyć okno dialogowe właściwości procesu  
   
-1.  Wybierz proces z poziomu drzewa wyświetlany w **widok procesów**.  
+1. Wybierz proces z poziomu drzewa wyświetlany w **widok procesów**.  
   
-2.  Z **widoku** menu, wybierz **właściwości**.  
+2. Z **widoku** menu, wybierz **właściwości**.  
   
- Okno dialogowe właściwości nie są modalne, dzięki czemu możesz kliknąć inny element w oknie Widok i zostanie wyświetlone okno dialogowe informacje wybranego elementu.
+   Okno dialogowe właściwości nie są modalne, dzięki czemu możesz kliknąć inny element w oknie Widok i zostanie wyświetlone okno dialogowe informacje wybranego elementu.
 
 
 

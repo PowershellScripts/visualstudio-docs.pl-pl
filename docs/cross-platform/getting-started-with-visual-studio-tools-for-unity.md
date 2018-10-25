@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4b6fb4e5ba69695389de2ad7db578488bf55ab75
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 9d924ee92258e348d5ffee1551fcde7707d711cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855212"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Rozpoczynanie pracy z usługą Visual Studio Tools for Unity
 
@@ -63,21 +63,21 @@ Począwszy od Unity 2018.1, Visual Studio powinien być domyślnego edytora skry
 
 1. Wybierz **preferencje** z **Edytuj** menu.
 
-  ![Wybierz polecenie Preferencje](media/vstu_unity-preferences.png)
+   ![Wybierz polecenie Preferencje](media/vstu_unity-preferences.png)
 
-1. W oknie dialogowym Preferencje wybierz **zewnętrznych narzędzi** kartę.
+2. W oknie dialogowym Preferencje wybierz **zewnętrznych narzędzi** kartę.
 
-1. Z **Edytor skryptów zewnętrznych** listy rozwijanej wybierz odpowiednią wersję programu Visual Studio, jeśli ta opcja jest wyświetlana, w przeciwnym razie wybierz **Przeglądaj...** .
+3. Z **Edytor skryptów zewnętrznych** listy rozwijanej wybierz odpowiednią wersję programu Visual Studio, jeśli ta opcja jest wyświetlana, w przeciwnym razie wybierz **Przeglądaj...** .
 
-  ![Wybierz program Visual Studio](media/vstu_unity-external-tools.png)
+   ![Wybierz program Visual Studio](media/vstu_unity-external-tools.png)
 
-1. Jeśli **Przeglądaj...**  została zaznaczona, przejdź do **Common7/IDE** katalog wewnątrz usługi katalogu instalacyjnego programu Visual Studio i wybierz pozycję **devenv.exe**. Następnie kliknij przycisk **Otwórz**.
+4. Jeśli **Przeglądaj...**  została zaznaczona, przejdź do **Common7/IDE** katalog wewnątrz usługi katalogu instalacyjnego programu Visual Studio i wybierz pozycję **devenv.exe**. Następnie kliknij przycisk **Otwórz**.
 
-  ![Wybierz przycisk Otwórz](media/vstu_browse-for-application.png)
+   ![Wybierz przycisk Otwórz](media/vstu_browse-for-application.png)
 
-1. Po wybraniu w programie Visual Studio **Edytor skryptów zewnętrznych** listy, upewnij się, że **dołączanie edytora** pole wyboru jest zaznaczone.
+5. Po wybraniu w programie Visual Studio **Edytor skryptów zewnętrznych** listy, upewnij się, że **dołączanie edytora** pole wyboru jest zaznaczone.
 
-1. Zamknij **preferencje** okno dialogowe, aby zakończyć proces konfiguracji.
+6. Zamknij **preferencje** okno dialogowe, aby zakończyć proces konfiguracji.
 
 ## <a name="support-for-older-versions"></a>Obsługa starszych wersji
 

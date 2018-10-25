@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dace2a3de8e61a92672442adbf77199232c76e12
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874621"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Wdrażanie rozszerzenia modelu warstwy
 
@@ -29,13 +29,13 @@ Rozszerzenie jest skompilowane do pliku VSIX, który można zainstalować na inn
 
 ### <a name="to-install-the-extension"></a>Aby zainstalować rozszerzenie
 
-1.  W projekcie, który zawiera **source.vsix.manifest**, otwórz **bin\\ \***  w Eksploratorze plików.
+1. W projekcie, który zawiera **source.vsix.manifest**, otwórz *bin* katalogu w Eksploratorze plików.
 
-2.  Kopiuj  **\*.vsix** pliku na komputerze, na którym chcesz zainstalować rozszerzenie.
+2. Kopiuj  **\*.vsix** pliku na komputerze, na którym chcesz zainstalować rozszerzenie.
 
-3.  Na komputerze docelowym kliknij dwukrotnie plik *.vsix w Eksploratorze Windows.
+3. Na komputerze docelowym kliknij dwukrotnie plik *.vsix w Eksploratorze Windows.
 
-     Otwiera Instalatora VSIX.
+    Otwiera Instalatora VSIX.
 
 ### <a name="to-uninstall-the-extension"></a>Aby odinstalować rozszerzenie
 

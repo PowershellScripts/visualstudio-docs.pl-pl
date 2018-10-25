@@ -16,12 +16,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cacd0c1cd2a1e36e7c160902c93c6bcc6bfc0cdd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c12ee9593bb7baadfbaf29ebade142f142e8f40a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181210"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893887"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Odwołanie do schematu 2.0 rozszerzenia VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,31 +166,31 @@ Plik manifestu VSIX wdrożenia w tym artykule opisano zawartość pakietu VSIX. 
 ### <a name="assets-element"></a>Zasoby — Element  
  Element ten zawiera listę `<Asset>` tagi dla każdego elementu rozszerzenia lub zawartości udostępniane przez ten pakiet.  
   
--   `<Asset>` — Ten element zawiera następujące atrybuty i elementy:  
+- `<Asset>` — Ten element zawiera następujące atrybuty i elementy:  
   
-    -   `Type` — Jest to typ rozszerzenia lub zawartości, reprezentowany przez ten element. Każdy `<Asset>` elementu musi mieć pojedynczy `Type`, ale wiele `<Asset>` elementy mogą mieć takie same `Type`. Ten atrybut powinna być reprezentowana jako w pełni kwalifikowana nazwa, zgodnie z konwencjami przestrzeni nazw. Znane typy to:  
+  - `Type` — Jest to typ rozszerzenia lub zawartości, reprezentowany przez ten element. Każdy `<Asset>` elementu musi mieć pojedynczy `Type`, ale wiele `<Asset>` elementy mogą mieć takie same `Type`. Ten atrybut powinna być reprezentowana jako w pełni kwalifikowana nazwa, zgodnie z konwencjami przestrzeni nazw. Znane typy to:  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         Możesz utworzyć własne typy i nadaj im nazwy unikatowe. W czasie wykonywania w programie Visual Studio Twój kod można wyliczyć i dostęp do tych typów niestandardowych przy użyciu interfejsu API Menedżera rozszerzeń.  
+       Możesz utworzyć własne typy i nadaj im nazwy unikatowe. W czasie wykonywania w programie Visual Studio Twój kod można wyliczyć i dostęp do tych typów niestandardowych przy użyciu interfejsu API Menedżera rozszerzeń.  
   
-    -   Ścieżka — ścieżkę względną do pliku lub folderu w pakiecie, który zawiera element zawartości.  
+  - Ścieżka — ścieżkę względną do pliku lub folderu w pakiecie, który zawiera element zawartości.  
   
-    -   `AnyAttribute*` — Nieograniczony zbiór atrybutów, które będą dostępne w czasie wykonywania jako słownik par nazwa wartość.  
+  - `AnyAttribute*` — Nieograniczony zbiór atrybutów, które będą dostępne w czasie wykonywania jako słownik par nazwa wartość.  
   
-         `<AnyElement>*` — Żadnej ze strukturą zawartości jest dozwolone między `<Asset>` rozpoczęcia i zakończenia znacznika. Wszystkie elementy są widoczne jako listę obiektów, XmlElement. Rozszerzenia VSIX można zdefiniować ze strukturą metadanych dla określonego typu w pliku manifestu i wyliczenia w czasie wykonywania.  
+     `<AnyElement>*` — Żadnej ze strukturą zawartości jest dozwolone między `<Asset>` rozpoczęcia i zakończenia znacznika. Wszystkie elementy są widoczne jako listę obiektów, XmlElement. Rozszerzenia VSIX można zdefiniować ze strukturą metadanych dla określonego typu w pliku manifestu i wyliczenia w czasie wykonywania.  
   
 ### <a name="sample-manifest"></a>Manifest próbki  
   

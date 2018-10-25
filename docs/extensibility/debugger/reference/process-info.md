@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d35b94b6153b65672453ed8b4e7d2c0d9c2bd5eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2a8f07cfb99ac42704d3829c30dbf5adbb16e9d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134398"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864624"
 ---
 # <a name="processinfo"></a>PROCESS_INFO
-Zawiera informacje dotyczące procesu.  
+Zawiera informacje na temat procesu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -57,34 +57,34 @@ public struct PROCESS_INFO {
   
 ## <a name="members"></a>Elementy członkowskie  
  Pola  
- Kombinacja flag z [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) wyliczenie Określ pola, które są wypełnione.  
+ Kombinacja flag z [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) wyliczenie określające, które pola są wypełnione.  
   
  bstrFileName  
- Pełna nazwa ścieżki procesu. Odpowiednikiem wywołania [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) metody z parametrem `GN_FILENAME`.  
+ Pełna nazwa ścieżki procesu. Równoważne z wywoływaniem [getname —](../../../extensibility/debugger/reference/idebugprocess2-getname.md) metody z parametrem `GN_FILENAME`.  
   
  bstrBaseName  
- Nazwa pliku i rozszerzenie procesu. Odpowiednikiem wywołania `IDebugProcess2::Getname` metody z parametrem `GN_BASENAME`.  
+ Nazwa pliku i rozszerzenie procesu. Równoważne z wywoływaniem `IDebugProcess2::Getname` metody z parametrem `GN_BASENAME`.  
   
  bstrTitle  
- Tytuł ten proces, jeśli taka istnieje. Odpowiednikiem wywołania `IDebugProcess2::Getname` metody z parametrem `GN_TITLE`.  
+ Tytuł proces, jeśli taka istnieje. Równoważne z wywoływaniem `IDebugProcess2::Getname` metody z parametrem `GN_TITLE`.  
   
  Identyfikator procesu  
- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) strukturę, która identyfikuje proces. Odpowiednikiem wywołania [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) metody.  
+ [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) strukturę, która identyfikuje proces. Równoważne z wywoływaniem [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) metody.  
   
  dwSessionId  
  Identyfikator ten proces jest uruchomiony w sesji debugowania.  
   
  bstrAttachedSessionName  
- Nazwa sesji dołączone. Odpowiednikiem wywołania [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) metody.  
+ Nazwa sesji dołączone. Równoważne z wywoływaniem [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) metody.  
   
  CreationTime  
- Czas utworzenia procesu.  
+ Godzina utworzenia procesu.  
   
  Flagi  
- Kombinacja flag z [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) wyliczenia, która określa właściwości procesu.  
+ Kombinacja flag z [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) wyliczenie określające właściwości procesu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest przekazywana do [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) metody, gdzie jest wypełnione.  
+ Ta struktura jest przekazywany do [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) metody, gdzie jest wypełnione.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -94,10 +94,10 @@ public struct PROCESS_INFO {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)   
  [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)   
- [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)   
+ [Getname —](../../../extensibility/debugger/reference/idebugprocess2-getname.md)   
  [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)   
  [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)

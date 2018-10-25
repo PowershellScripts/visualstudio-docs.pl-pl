@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79df08496cfa0e15f2caa648afcb1ee78c636d56
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2054181bfd34e9f9382391c879030e147ce2b8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878456"
 ---
 # <a name="filtering-report-views"></a>Filtrowanie widoków raportów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,19 +53,19 @@ Filtry można zastosować do pliku danych, aby ograniczyć dane profilowania, kt
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Aby utworzyć filtr raportów profilera w widoku raportu znaczniki  
   
-1.  Wybierz **znaczniki** z **bieżący widok** listy na pasku narzędzi w widoku raportu wydajności.  
+1. Wybierz **znaczniki** z **bieżący widok** listy na pasku narzędzi w widoku raportu wydajności.  
   
-     Zostanie wyświetlony raport profiler znaczników.  
+    Zostanie wyświetlony raport profiler znaczników.  
   
-2.  Wybierz ETW lub próbkowania, nawet, którą chcesz użyć jako punktu wyjścia raportu.  
+2. Wybierz ETW lub próbkowania, nawet, którą chcesz użyć jako punktu wyjścia raportu.  
   
-3.  Naciśnij i przytrzymaj klawisz CTRL i kliknij zdarzenie, które chcesz użyć jako punktu końcowego raportu.  
+3. Naciśnij i przytrzymaj klawisz CTRL i kliknij zdarzenie, które chcesz użyć jako punktu końcowego raportu.  
   
-4.  Kliknij prawym przyciskiem myszy, a następnie kliknij jedną z następujących opcji:  
+4. Kliknij prawym przyciskiem myszy, a następnie kliknij jedną z następujących opcji:  
   
-    -   **Dodaj filtr znaczników** tworzy klauzul filtru, korzystających z kolumny Oznacz jako pole filtru.  
+   - **Dodaj filtr znaczników** tworzy klauzul filtru, korzystających z kolumny Oznacz jako pole filtru.  
   
-    -   **Dodaj filtr sygnatury czasowe** tworzy klauzul filtru, korzystających z jako pole filtru w kolumnie sygnatura czasowa w milisekundach.  
+   - **Dodaj filtr sygnatury czasowe** tworzy klauzul filtru, korzystających z jako pole filtru w kolumnie sygnatura czasowa w milisekundach.  
   
      Dwie opcje filtrowania bieżącego pliku danych, w tym samym początkowego i punktu końcowego. Jedną z opcji może być lepiej, jeśli eksportujesz filtru do użycia w innych raportach.  
   

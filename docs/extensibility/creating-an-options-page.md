@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea56cf7db42d7028856b88fb8572f5a4024fe07
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6100f6b0a793b138712250ac5451454784bc877a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498775"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876753"
 ---
 # <a name="create-an-options-page"></a>Tworzenie strony opcji
 Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki właściwości w celu zbadania i ustawić właściwości.  
@@ -35,9 +35,9 @@ Ten poradnik tworzy prostą stronę Narzędzia/Opcje korzystającą z siatki wł
   
 ### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>Aby utworzyć projekt VSIX i dodać pakietu VSPackage  
   
-1.  Każde rozszerzenie programu Visual Studio rozpoczyna się od Projekt wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Tworzenie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu VSIX, o nazwie `MyToolsOptionsExtension`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C#** > **rozszerzalności**.  
+1. Każde rozszerzenie programu Visual Studio rozpoczyna się od Projekt wdrożenia VSIX, który będzie zawierać zasoby rozszerzenia. Tworzenie [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu VSIX, o nazwie `MyToolsOptionsExtension`. Można znaleźć szablonu projektu VSIX w **nowy projekt** , okno dialogowe **Visual C#** > **rozszerzalności**.  
   
-2.  Dodawanie pakietu VSPackage, dodając szablon elementu pakiet rozszerzeń Visual Studio o nazwie `MyToolsOptionsPackage`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **okna dialogowego Dodaj nowy element**, przejdź do **elementy Visual C#** > **rozszerzalności** i wybierz **pakiet rozszerzeń Visual Studio**. W **nazwa** pola w dolnej części okna dialogowego, Zmień nazwę pliku, aby `MyToolsOptionsPackage.cs`. Aby uzyskać więcej informacji o sposobie tworzenia pakietu VSPackage, zobacz [Tworzenie rozszerzenia za pomocą pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
+2. Dodawanie pakietu VSPackage, dodając szablon elementu pakiet rozszerzeń Visual Studio o nazwie `MyToolsOptionsPackage`. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy węzeł projektu i wybierz **Dodaj** > **nowy element**. W **okna dialogowego Dodaj nowy element**, przejdź do **elementy Visual C#** > **rozszerzalności** i wybierz **pakiet rozszerzeń Visual Studio**. W **nazwa** pola w dolnej części okna dialogowego, Zmień nazwę pliku, aby `MyToolsOptionsPackage.cs`. Aby uzyskać więcej informacji o sposobie tworzenia pakietu VSPackage, zobacz [Tworzenie rozszerzenia za pomocą pakietu VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
   
 ### <a name="to-create-the-tools-options-property-grid"></a>Aby utworzyć siatki właściwości opcji narzędzi  
   

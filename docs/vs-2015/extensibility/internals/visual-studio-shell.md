@@ -16,12 +16,12 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f0ef1e207fffc4d44963b968caad392b9d976c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 141b0966c3b7d53bf1084b3ea9ac466bbc92d0bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222407"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903715"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,59 +31,59 @@ ms.locfileid: "49222407"
 ## <a name="shell-responsibilities"></a>Obowiązki powłoki  
  Powłoka ma następujące obowiązki klucza:  
   
--   Obsługa (za pośrednictwem interfejsów COM) podstawowych elementów interfejsu użytkownika (UI). Należą do domyślnych menu i paski narzędzi, ramki okna dokumentu lub okna podrzędne interfejsu wielu dokumentów (MDI) i ramki okna narzędzia i obsługę dokującej.  
+- Obsługa (za pośrednictwem interfejsów COM) podstawowych elementów interfejsu użytkownika (UI). Należą do domyślnych menu i paski narzędzi, ramki okna dokumentu lub okna podrzędne interfejsu wielu dokumentów (MDI) i ramki okna narzędzia i obsługę dokującej.  
   
--   Utrzymanie uruchomionej listę wszystkich aktualnie otwarte dokumenty w uruchomionej tabeli dokumentu (Normalizacją) w celu skoordynowania trwałości dokumentów i w celu zagwarantowania, że nie można otworzyć tego jednego dokumentu, w więcej niż jeden sposób lub w sposób niezgodny.  
+- Utrzymanie uruchomionej listę wszystkich aktualnie otwarte dokumenty w uruchomionej tabeli dokumentu (Normalizacją) w celu skoordynowania trwałości dokumentów i w celu zagwarantowania, że nie można otworzyć tego jednego dokumentu, w więcej niż jeden sposób lub w sposób niezgodny.  
   
--   Obsługa interfejsu routing poleceń i polecenia obsługi `IOleCommandTarget`.  
+- Obsługa interfejsu routing poleceń i polecenia obsługi `IOleCommandTarget`.  
   
--   Ładowanie pakietów VSPackage w odpowiednim czasie. Opóźnienie podczas ładowania pakietu VSPackage jest poprawa wydajności powłoki.  
+- Ładowanie pakietów VSPackage w odpowiednim czasie. Opóźnienie podczas ładowania pakietu VSPackage jest poprawa wydajności powłoki.  
   
--   Zarządzanie niektórych udostępnionych usług, takich jak <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, która zapewnia funkcje podstawowe powłoki i <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, która dostarcza funkcje podstawowe obsługi okien.  
+- Zarządzanie niektórych udostępnionych usług, takich jak <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>, która zapewnia funkcje podstawowe powłoki i <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, która dostarcza funkcje podstawowe obsługi okien.  
   
--   Zarządzanie plikami rozwiązania (.sln). Rozwiązania zawierać grup powiązanych projektów, podobne do obszaru roboczego (.dsw) plików w Visual C++ 6.0.  
+- Zarządzanie plikami rozwiązania (.sln). Rozwiązania zawierać grup powiązanych projektów, podobne do obszaru roboczego (.dsw) plików w Visual C++ 6.0.  
   
--   Zaznaczenie całego powłoki śledzenia, kontekstu i waluty. Powłoka śledzi następujące elementy:  
+- Zaznaczenie całego powłoki śledzenia, kontekstu i waluty. Powłoka śledzi następujące elementy:  
   
-    -   Bieżący projekt  
+  -   Bieżący projekt  
   
-    -   Bieżący element projektu lub bieżący identyfikator elementu <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  -   Bieżący element projektu lub bieżący identyfikator elementu <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-    -   Bieżące zaznaczenie dla **właściwości** okna lub `SelectionContainer`  
+  -   Bieżące zaznaczenie dla **właściwości** okna lub `SelectionContainer`  
   
-    -   Kontekstu interfejsu użytkownika lub identyfikatory CmdUIGuids, który kontrolowanie widoczności elementu polecenia, menu i paski narzędzi  
+  -   Kontekstu interfejsu użytkownika lub identyfikatory CmdUIGuids, który kontrolowanie widoczności elementu polecenia, menu i paski narzędzi  
   
-    -   Aktualnie aktywnych elementów, takich jak aktywne okno dokumentu i menedżera cofania  
+  -   Aktualnie aktywnych elementów, takich jak aktywne okno dokumentu i menedżera cofania  
   
-    -   Atrybuty kontekstu użytkownika, które dysku dynamiczna pomoc  
+  -   Atrybuty kontekstu użytkownika, które dysku dynamiczna pomoc  
   
- Powłoka pośredniczy również komunikację między bieżącym usług i zainstalowanych pakietów VSPackage. Obsługuje podstawowe funkcje powłoki i udostępnienie ich dla wszystkich pakietów VSPackage zintegrowane w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Te podstawowe funkcje obejmują następujące elementy:  
+  Powłoka pośredniczy również komunikację między bieżącym usług i zainstalowanych pakietów VSPackage. Obsługuje podstawowe funkcje powłoki i udostępnienie ich dla wszystkich pakietów VSPackage zintegrowane w [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Te podstawowe funkcje obejmują następujące elementy:  
   
--   **Temat** ekranu okna dialogowego pole i ekranu powitalnego  
+- **Temat** ekranu okna dialogowego pole i ekranu powitalnego  
   
--   **Dodaj nowy i Dodaj istniejący element** okien dialogowych  
+- **Dodaj nowy i Dodaj istniejący element** okien dialogowych  
   
--   **Widok klas** okna i **przeglądarki obiektów**  
+- **Widok klas** okna i **przeglądarki obiektów**  
   
--   **Odwołania** okno dialogowe  
+- **Odwołania** okno dialogowe  
   
--   **Konspekt dokumentu** okna  
+- **Konspekt dokumentu** okna  
   
--   **Dynamiczna Pomoc** okna  
+- **Dynamiczna Pomoc** okna  
   
--   **Znajdź** i **zastąpienia**  
+- **Znajdź** i **zastąpienia**  
   
--   **Otwórz projekt** i **Otwórz plik** okien dialogowych na **New** menu  
+- **Otwórz projekt** i **Otwórz plik** okien dialogowych na **New** menu  
   
--   **Opcje** okno dialogowe na **narzędzia** menu  
+- **Opcje** okno dialogowe na **narzędzia** menu  
   
--   **Właściwości** okna  
+- **Właściwości** okna  
   
--   **Eksplorator rozwiązań**  
+- **Eksplorator rozwiązań**  
   
--   **Lista zadań** okna  
+- **Lista zadań** okna  
   
--   **Przybornik**  
+- **Przybornik**  
   
 ## <a name="see-also"></a>Zobacz też  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

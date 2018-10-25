@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4564772fd118e3928f6e8a091c1066e2e8e92534
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 20dbc5223ddb053355fa5e8076ae66badee688a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859892"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883077"
 ---
 # <a name="how-to--with-text-templates"></a>How to ... with — Szablony tekstowe
 Szablony tekstu w programie Visual Studio zapewniają wygodny sposób generowania tekstu dowolnego rodzaju. Aby wygenerować tekst w czasie wykonywania w ramach Twojej aplikacji i w czasie projektowania, aby wygenerować niektóre z kodu projektu, można użyć szablonów tekstowych. Ten temat zawiera podsumowanie najczęściej zadawane "Jak mogę...?" pytania.
@@ -49,21 +49,21 @@ Szablony tekstu w programie Visual Studio zapewniają wygodny sposób generowani
 ### <a name="invoke-methods-from-a-template"></a>Wywoływanie metod na podstawie szablonu
  Jeśli metody już istnieje, na przykład w standardzie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] klasy:
 
--   Użyj \<#@assembly#> dyrektywy do załadowania zestawu oraz użyć \<#@import#> można ustawić kontekstu przestrzeni nazw. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca importowania](../modeling/t4-import-directive.md).
+- Użyj \<#@assembly#> dyrektywy do załadowania zestawu oraz użyć \<#@import#> można ustawić kontekstu przestrzeni nazw. Aby uzyskać więcej informacji, zobacz [dyrektywa T4 dotycząca importowania](../modeling/t4-import-directive.md).
 
-     Jeśli często ten sam zestaw zestawów i dyrektywy import, należy wziąć pod uwagę pisania procesora dyrektywy. W każdym szablonie można wywoływać procesor dyrektywy, którego można załadować zestawów i plików modelu i Ustaw kontekst przestrzeni nazw. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych procesorów T4 dotyczącej tekstu szablonu dyrektywy](../modeling/creating-custom-t4-text-template-directive-processors.md).
+   Jeśli często ten sam zestaw zestawów i dyrektywy import, należy wziąć pod uwagę pisania procesora dyrektywy. W każdym szablonie można wywoływać procesor dyrektywy, którego można załadować zestawów i plików modelu i Ustaw kontekst przestrzeni nazw. Aby uzyskać więcej informacji, zobacz [Tworzenie niestandardowych procesorów T4 dotyczącej tekstu szablonu dyrektywy](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
- Jeśli piszesz metody samodzielnie:
+  Jeśli piszesz metody samodzielnie:
 
--   Jeśli piszesz szablonie tekstowym czasu wykonywania pisania definicji klasy częściowej, który ma taką samą nazwę jak szablon tekstowy środowiska uruchomieniowego. Dodaj dodatkowe metody do tej klasy.
+- Jeśli piszesz szablonie tekstowym czasu wykonywania pisania definicji klasy częściowej, który ma taką samą nazwę jak szablon tekstowy środowiska uruchomieniowego. Dodaj dodatkowe metody do tej klasy.
 
--   Blok sterowania cechami klasy zapisu `<#+ ... #>` , w którym można zadeklarować metody, właściwości i klasy prywatnej. Szablon tekstowy jest kompilowany, jest on przekształcany do klasy. Standardowe bloki sterujące `<#...#>` tekstu są przekształcane do pojedynczej metody i bloki cech klas są wstawiane jako elementy członkowskie w oddzielne. Aby uzyskać więcej informacji, zobacz [bloki formantów szablonów tekstowych](../modeling/text-template-control-blocks.md).
+- Blok sterowania cechami klasy zapisu `<#+ ... #>` , w którym można zadeklarować metody, właściwości i klasy prywatnej. Szablon tekstowy jest kompilowany, jest on przekształcany do klasy. Standardowe bloki sterujące `<#...#>` tekstu są przekształcane do pojedynczej metody i bloki cech klas są wstawiane jako elementy członkowskie w oddzielne. Aby uzyskać więcej informacji, zobacz [bloki formantów szablonów tekstowych](../modeling/text-template-control-blocks.md).
 
-     Metody zdefiniowane jako funkcje klasy może również zawierać bloki tekstu osadzonych.
+   Metody zdefiniowane jako funkcje klasy może również zawierać bloki tekstu osadzonych.
 
-     Zaleca się umieszczenie funkcje klasy w oddzielnym pliku, który można `<#@include#>` do jednego lub więcej plików szablonu.
+   Zaleca się umieszczenie funkcje klasy w oddzielnym pliku, który można `<#@include#>` do jednego lub więcej plików szablonu.
 
--   Pisanie metod w osobnym zestawie (Biblioteka klas) i wywoływać je z szablonu. Użyj `<#@assembly#>` dyrektywy można załadować zestawu, a `<#@import#>` do ustawienia kontekstu przestrzeni nazw. Należy pamiętać, że aby odbudować zestawu podczas jej debugowania, może być konieczne zatrzymać i ponownie uruchomić program Visual Studio. Aby uzyskać więcej informacji, zobacz [dyrektywy T4 dotyczące szablonu tekstowego](../modeling/t4-text-template-directives.md).
+- Pisanie metod w osobnym zestawie (Biblioteka klas) i wywoływać je z szablonu. Użyj `<#@assembly#>` dyrektywy można załadować zestawu, a `<#@import#>` do ustawienia kontekstu przestrzeni nazw. Należy pamiętać, że aby odbudować zestawu podczas jej debugowania, może być konieczne zatrzymać i ponownie uruchomić program Visual Studio. Aby uzyskać więcej informacji, zobacz [dyrektywy T4 dotyczące szablonu tekstowego](../modeling/t4-text-template-directives.md).
 
 ### <a name="generate-many-files-from-one-model-schema"></a>Generowanie wielu plików z jednego modelu schematu
  Jeśli często Generuj pliki z modeli, które mają ten sam schemat XML lub baza danych:
@@ -91,7 +91,6 @@ Szablony tekstu w programie Visual Studio zapewniają wygodny sposób generowani
 #>
 
 Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
-
 ```
 
 ### <a name="execute-text-templates-in-the-build-process"></a>Wykonaj szablonów tekstowych w procesie kompilacji

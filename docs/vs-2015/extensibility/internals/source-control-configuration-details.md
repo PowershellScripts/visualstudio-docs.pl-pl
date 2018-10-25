@@ -15,12 +15,12 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c0c663e521e113de69e749a68bf3d81bfd523687
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bc4d7caefe0d0db2cdadf684702ec7e0d800c9c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297820"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884163"
 ---
 # <a name="source-control-configuration-details"></a>Szczegóły konfiguracji kontroli kodu źródłowego
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ W celu wdrożenia kontroli źródła, należy poprawnie skonfigurować system pr
   
  W odpowiedzi na `IVsQueryEditQuerySave2::QueryEditFiles` wywołać, środowiska może wykonać następujące czynności:  
   
--   Odrzuć wywołanie, aby zmienić, w którym to przypadku Edytor lub projekt musi pozostać bez zmian stanu (czyszczenie).  
+- Odrzuć wywołanie, aby zmienić, w którym to przypadku Edytor lub projekt musi pozostać bez zmian stanu (czyszczenie).  
   
--   Wskazuje, czy należy ponownie załadować danych dokumentu. Dla projektu środowiska spowoduje ponowne załadowanie danych dla projektu. Edytor należy ponownie załadować dane z dysku za pomocą jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementacji. W obu przypadkach kontekstu w projekcie lub w edytorze można zmienić po załadowaniu danych.  
+- Wskazuje, czy należy ponownie załadować danych dokumentu. Dla projektu środowiska spowoduje ponowne załadowanie danych dla projektu. Edytor należy ponownie załadować dane z dysku za pomocą jego <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementacji. W obu przypadkach kontekstu w projekcie lub w edytorze można zmienić po załadowaniu danych.  
   
- Jest to zadanie złożonej i trudnej do przeprojektować odpowiednie `IVsQueryEditQuerySave2::QueryEditFiles` wywołania do istniejącej bazy kodu. W wyniku tych wywołań powinny być włączone podczas tworzenia projektu lub edytorze.  
+  Jest to zadanie złożonej i trudnej do przeprojektować odpowiednie `IVsQueryEditQuerySave2::QueryEditFiles` wywołania do istniejącej bazy kodu. W wyniku tych wywołań powinny być włączone podczas tworzenia projektu lub edytorze.  
   
 ## <a name="request-permission-to-save-a-file"></a>Żądanie uprawnień do zapisania pliku  
  Zanim projekt lub Edytor zapisuje plik, należy wywołać <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> lub <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Pliki projektu te wywołania są automatycznie uzupełniane przez rozwiązanie, który wie, kiedy można zapisać pliku projektu. Edytory jest odpowiedzialny za wykonywanie tych wywołań, chyba że implementacja edytora `IVsPersistDocData2` korzysta z funkcji pomocnika <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Jeśli Edytor implementuje `IVsPersistDocData2` w ten sposób, a następnie wywołania `IVsQueryEditQuerySave2::QuerySaveFile` lub `IVsQueryEditQuerySave2::QuerySaveFiles` ma zostać dla Ciebie.  

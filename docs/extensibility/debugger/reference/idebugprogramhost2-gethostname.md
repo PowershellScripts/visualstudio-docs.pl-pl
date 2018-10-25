@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 139c7c991235f57dba670c15721751dca71c550f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d0e2ccf73ffdaa905585841eef99f84f59513867
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116350"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925210"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
 Pobiera tytuł, przyjazną nazwę lub nazwę pliku procesu hostingu tego programu.  
@@ -46,13 +46,13 @@ int GetHostName(
  [in] Wartość z zakresu od [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) wyliczenia.  
   
  `pbstrHostName`  
- [out] Zwraca żądanej nazwy procesu hostingu.  
+ [out] Zwraca nazwę żądanej procesu hostingu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- W typowej implementacja tej metody `dwType` parametr jest ignorowany i jest zwracany przyjazną nazwę komputera hosta. Inną implementację możliwe jest przekazanie `dwType` parametru do wywołania [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) metody, aby uzyskać nazwę.  
+ W Typowa implementacja tej metody `dwType` parametr jest ignorowany i zwracany jest przyjazną nazwę komputera hosta. Inną możliwą implementację służy do przekazywania `dwType` parametr do wywołania [gethostname —](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) metodę, aby uzyskać nazwę.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)   

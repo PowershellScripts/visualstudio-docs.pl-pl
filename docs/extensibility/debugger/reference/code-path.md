@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c88737638b20eafdef0ef84f5c45e494cf39607
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a9618d28aeadaa85d97e9018fdf57ee8952ac3fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109795"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920264"
 ---
 # <a name="codepath"></a>CODE_PATH
-Opisuje wywołanie metody lub funkcji.  
+Opis wywołania metody lub funkcji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -46,10 +46,10 @@ public struct CODE_PATH {
  Nazwa ścieżki kodu.  
   
  pCode  
- [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiektu, który identyfikuje w kodzie Aby wkraczać do funkcji.  
+ [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) obiekt, który identyfikuje gdzie kod w celu wkroczenia do funkcji.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta struktura jest używany do zaimplementowania Wkraczanie do funkcji. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) zwraca wszystkie wywołania z bieżącej lokalizacji w programie debugowany. Ta struktura reprezentuje jednego takiego wywołania.  
+ Ta struktura jest używany do implementowania przechodzenie krok po kroku do funkcji. [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md) zwraca wszystkie wywołania z bieżącej lokalizacji w debugowanego programu. Ta struktura reprezentuje jedno takie wywołanie.  
   
 ## <a name="requirements"></a>Wymagania  
  Nagłówek: msdbg.h  
@@ -59,6 +59,6 @@ public struct CODE_PATH {
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Zobacz też  
- [Struktury i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Struktur i Unii](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)

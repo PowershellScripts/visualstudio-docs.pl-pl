@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b36d2ac3aa378a14dff0ec5a59a1d23f0843d3b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f03dc4ea85fe0f44ea2253da9544ace9b0068abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922474"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Porady: publikowanie aplikacji WPF przy użyciu włączonej funkcji stylów wizualnych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależnośc
   
  Aby naprawić błąd i opublikować rozwiązanie, należy wykonać następujące zadania:  
   
--   [Publikowanie rozwiązania bez włączonej funkcji stylów wizualnych](#BKMK_publishsolwovs).  
+- [Publikowanie rozwiązania bez włączonej funkcji stylów wizualnych](#BKMK_publishsolwovs).  
   
--   [Utwórz plik manifestu](#BKMK_CreateManifest).  
+- [Utwórz plik manifestu](#BKMK_CreateManifest).  
   
--   [Osadzanie pliku manifestu w pliku wykonywalnego opublikowane rozwiązania](#BKMK_embedmanifest).  
+- [Osadzanie pliku manifestu w pliku wykonywalnego opublikowane rozwiązania](#BKMK_embedmanifest).  
   
--   [Podpisywanie manifestów aplikacji i wdrożenia](#BKMK_signappdeplyman).  
+- [Podpisywanie manifestów aplikacji i wdrożenia](#BKMK_signappdeplyman).  
   
- Następnie można przenieść opublikowane pliki do lokalizacji, z którego chcesz zainstalować aplikację użytkownikom końcowym.  
+  Następnie można przenieść opublikowane pliki do lokalizacji, z którego chcesz zainstalować aplikację użytkownikom końcowym.  
   
 ##  <a name="BKMK_publishsolwovs"></a> Publikowanie rozwiązania bez włączonej funkcji stylów wizualnych  
   
@@ -100,72 +100,72 @@ Style wizualne Włącz wygląd wspólnych formantów, aby zmienić w zależnośc
   
 ##  <a name="BKMK_embedmanifest"></a> Osadzanie pliku manifestu w pliku wykonywalnego opublikowane rozwiązania  
   
-1.  Otwórz **wiersz polecenia programu Visual Studio**.  
+1. Otwórz **wiersz polecenia programu Visual Studio**.  
   
-     Aby uzyskać więcej informacji o sposobie otwierania **Visual Studio Command Prompt**, zobacz [wiersz polecenia](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).  
+    Aby uzyskać więcej informacji o sposobie otwierania **Visual Studio Command Prompt**, zobacz [wiersz polecenia](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).  
   
-    > [!NOTE]
-    >  Pozostałe kroki zakładają następujące rozwiązania:  
-    >   
-    >  -   Nazwa rozwiązania jest **MyWPFProject**.  
-    > -   Rozwiązanie znajduje się w następującym katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
-    >   
-    >      To rozwiązanie jest publikowane do następującego katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
-    > -   Najnowszą wersję plików opublikowanej aplikacji znajduje się w następującym katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
-    >   
-    >  Nie trzeba używać nazwy lub lokalizacje katalogu opisanych powyżej. Nazwy i lokalizacje opisanych powyżej są używane tylko w celu zilustrowania kroki wymagane do publikowania rozwiązania.  
+   > [!NOTE]
+   >  Pozostałe kroki zakładają następujące rozwiązania:  
+   > 
+   > - Nazwa rozwiązania jest **MyWPFProject**.  
+   >   -   Rozwiązanie znajduje się w następującym katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\`.  
+   > 
+   >   To rozwiązanie jest publikowane do następującego katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`.  
+   >   -   Najnowszą wersję plików opublikowanej aplikacji znajduje się w następującym katalogu: `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+   > 
+   >   Nie trzeba używać nazwy lub lokalizacje katalogu opisanych powyżej. Nazwy i lokalizacje opisanych powyżej są używane tylko w celu zilustrowania kroki wymagane do publikowania rozwiązania.  
   
-2.  W wierszu polecenia należy zmienić ścieżkę do katalogu, który zawiera najnowszą wersję plików opublikowanej aplikacji. Poniższy przykład pokazuje, w tym kroku.  
+2. W wierszu polecenia należy zmienić ścieżkę do katalogu, który zawiera najnowszą wersję plików opublikowanej aplikacji. Poniższy przykład pokazuje, w tym kroku.  
   
-    ```  
-    cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
-    ```  
+   ```  
+   cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+   ```  
   
-3.  W wierszu polecenia Uruchom następujące polecenie, aby osadzić pliku manifestu w pliku wykonywalnego aplikacji.  
+3. W wierszu polecenia Uruchom następujące polecenie, aby osadzić pliku manifestu w pliku wykonywalnego aplikacji.  
   
-    ```  
-    mt –manifest c:\temp\themes.manifest –outputresource:MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   mt –manifest c:\temp\themes.manifest –outputresource:MyWPFApp.exe.deploy  
+   ```  
   
 ##  <a name="BKMK_signappdeplyman"></a> Podpisywanie manifestów aplikacji i wdrożenia  
   
-1.  W wierszu polecenia Uruchom następujące polecenie, aby usunąć `.deploy` rozszerzenie z pliku wykonywalnego w bieżącym katalogu.  
+1. W wierszu polecenia Uruchom następujące polecenie, aby usunąć `.deploy` rozszerzenie z pliku wykonywalnego w bieżącym katalogu.  
   
-    ```  
-    ren MyWPFApp.exe.deploy MyWPFApp.exe  
-    ```  
+   ```  
+   ren MyWPFApp.exe.deploy MyWPFApp.exe  
+   ```  
   
-    > [!NOTE]
-    >  W tym przykładzie założono, że tylko jeden plik ma `.deploy` rozszerzenie pliku. Upewnij się, zmiana nazwy wszystkich plików w tym katalogu, które mają `.deploy` rozszerzenie pliku.  
+   > [!NOTE]
+   >  W tym przykładzie założono, że tylko jeden plik ma `.deploy` rozszerzenie pliku. Upewnij się, zmiana nazwy wszystkich plików w tym katalogu, które mają `.deploy` rozszerzenie pliku.  
   
-2.  W wierszu polecenia Uruchom następujące polecenie, aby podpisać manifest aplikacji.  
+2. W wierszu polecenia Uruchom następujące polecenie, aby podpisać manifest aplikacji.  
   
-    ```  
-    mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  W tym przykładzie przyjęto założenie, podpisać manifest za pomocą `.pfx` pliku projektu. Jeśli nie są podpisywania manifestu, można pominąć `–cf` parametr, który jest używany w tym przykładzie. W przypadku podpisywania manifestu za pomocą certyfikatu, który wymaga hasła, podaj `–password` opcji (`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`).  
+   > [!NOTE]
+   >  W tym przykładzie przyjęto założenie, podpisać manifest za pomocą `.pfx` pliku projektu. Jeśli nie są podpisywania manifestu, można pominąć `–cf` parametr, który jest używany w tym przykładzie. W przypadku podpisywania manifestu za pomocą certyfikatu, który wymaga hasła, podaj `–password` opcji (`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`).  
   
-3.  W wierszu polecenia Uruchom następujące polecenie, aby dodać `.deploy` rozszerzenie nazwy pliku, którego nazwa została zmieniona w poprzednim kroku tej procedury.  
+3. W wierszu polecenia Uruchom następujące polecenie, aby dodać `.deploy` rozszerzenie nazwy pliku, którego nazwa została zmieniona w poprzednim kroku tej procedury.  
   
-    ```  
-    ren MyWPFApp.exe MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   ren MyWPFApp.exe MyWPFApp.exe.deploy  
+   ```  
   
-    > [!NOTE]
-    >  W tym przykładzie przyjęto założenie, że tylko jeden plik miał `.deploy` rozszerzenie pliku. Upewnij się, zmiana nazwy wszystkich plików w tym katalogu, który stracił `.deploy` rozszerzenie nazwy pliku.  
+   > [!NOTE]
+   >  W tym przykładzie przyjęto założenie, że tylko jeden plik miał `.deploy` rozszerzenie pliku. Upewnij się, zmiana nazwy wszystkich plików w tym katalogu, który stracił `.deploy` rozszerzenie nazwy pliku.  
   
-4.  W wierszu polecenia Uruchom następujące polecenie, aby podpisać manifest wdrożenia.  
+4. W wierszu polecenia Uruchom następujące polecenie, aby podpisać manifest wdrożenia.  
   
-    ```  
-    mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  W tym przykładzie przyjęto założenie, podpisać manifest za pomocą `.pfx` pliku projektu. Jeśli nie są podpisywania manifestu, można pominąć `–cf` parametr, który jest używany w tym przykładzie. W przypadku podpisywania manifestu za pomocą certyfikatu, który wymaga hasła, podaj `–password` opcji, jak w poniższym przykładzie:`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`.  
+   > [!NOTE]
+   >  W tym przykładzie przyjęto założenie, podpisać manifest za pomocą `.pfx` pliku projektu. Jeśli nie są podpisywania manifestu, można pominąć `–cf` parametr, który jest używany w tym przykładzie. W przypadku podpisywania manifestu za pomocą certyfikatu, który wymaga hasła, podaj `–password` opcji, jak w poniższym przykładzie:`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`.  
   
- Po wykonaniu tych kroków można umieścić opublikowanych pliki do lokalizacji, z którego chcesz zainstalować aplikację użytkownikom końcowym. Jeśli zamierzasz często aktualizacji rozwiązania, można przenieść te polecenia do skryptu i uruchom skrypt na każdym publikowaniu nowej wersji.  
+   Po wykonaniu tych kroków można umieścić opublikowanych pliki do lokalizacji, z którego chcesz zainstalować aplikację użytkownikom końcowym. Jeśli zamierzasz często aktualizacji rozwiązania, można przenieść te polecenia do skryptu i uruchom skrypt na każdym publikowaniu nowej wersji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Rozwiązywanie problemów z określonymi błędami wdrożeń technologii ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   

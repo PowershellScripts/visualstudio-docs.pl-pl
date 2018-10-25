@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05fe4ee4394efd0d6784b9ff0dd87eab6f8ecbf1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 5bbc06ba777939857876221a2796eef6786ec44c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638778"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928012"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Zarządzaj skojarzeniami plików side-by-side
 Jeśli Twoje pakietu VSPackage udostępnia skojarzenia plików, należy zdecydować, jak obsługiwać instalacje side-by-side, w którym konkretnej wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] powinny być używane w celu otwarcia pliku. Niezgodnych formatów pliku złożone problem.  
@@ -33,46 +33,46 @@ Jeśli Twoje pakietu VSPackage udostępnia skojarzenia plików, należy zdecydow
 ## <a name="face-the-problem"></a>Problem z rozpoznawania twarzy  
  Jeśli chcesz, aby wiele VSPackages side-by-side, aby użyć tego samego rozszerzenia, należy wybrać wersję [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] skojarzony z rozszerzeniem. Poniżej przedstawiono dwa warianty:  
   
--   Otwórz plik w najnowszej wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zainstalowane na komputerze użytkownika.  
+- Otwórz plik w najnowszej wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zainstalowane na komputerze użytkownika.  
   
-     W tym podejściu jest odpowiedzialny za sprawdzenie najnowszą wersję Instalatora [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i, w tym we wpisie rejestru napisane dla skojarzenia plików. Pakiet Instalatora Windows może zawierać akcje niestandardowe można ustawić właściwości, która wskazuje najnowszą wersję [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+   W tym podejściu jest odpowiedzialny za sprawdzenie najnowszą wersję Instalatora [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i, w tym we wpisie rejestru napisane dla skojarzenia plików. Pakiet Instalatora Windows może zawierać akcje niestandardowe można ustawić właściwości, która wskazuje najnowszą wersję [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-    > [!NOTE]
-    >  W tym kontekście "najnowsza" oznacza "najnowszą obsługiwaną wersję." Te wpisy Instalatora nie wykryje automatycznie późniejszych wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Wpisy w [wykrywanie wymagań systemowych](../extensibility/internals/detecting-system-requirements.md) i [polecenia, musi być uruchamiania po instalacji](../extensibility/internals/commands-that-must-be-run-after-installation.md) są podobne do tych przedstawionych w tym miejscu i są wymagane do obsługi dodatkowych wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+  > [!NOTE]
+  >  W tym kontekście "najnowsza" oznacza "najnowszą obsługiwaną wersję." Te wpisy Instalatora nie wykryje automatycznie późniejszych wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Wpisy w [wykrywanie wymagań systemowych](../extensibility/internals/detecting-system-requirements.md) i [polecenia, musi być uruchamiania po instalacji](../extensibility/internals/commands-that-must-be-run-after-installation.md) są podobne do tych przedstawionych w tym miejscu i są wymagane do obsługi dodatkowych wersji programu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-     Następujące wiersze w tabeli Akcja niestandardowa ustaw właściwość DEVENV_EXE_LATEST, aby mieć ustawioną właściwość, AppSearch powoduje niepoprawne obcięcie oraz tabele RegLocator omówionych w [polecenia uruchamiane po zakończeniu instalacji](../extensibility/internals/commands-that-must-be-run-after-installation.md). Wiersze w tabeli InstallExecuteSequence zaplanować akcje niestandardowe wcześnie w kolejności wykonania. Wartości w upewnij kolumny stan pracy logiki:  
+   Następujące wiersze w tabeli Akcja niestandardowa ustaw właściwość DEVENV_EXE_LATEST, aby mieć ustawioną właściwość, AppSearch powoduje niepoprawne obcięcie oraz tabele RegLocator omówionych w [polecenia uruchamiane po zakończeniu instalacji](../extensibility/internals/commands-that-must-be-run-after-installation.md). Wiersze w tabeli InstallExecuteSequence zaplanować akcje niestandardowe wcześnie w kolejności wykonania. Wartości w upewnij kolumny stan pracy logiki:  
   
-    -   Visual Studio .NET 2002 jest najnowsza wersja, jeśli jest tylko bieżącej wersji.  
+  - Visual Studio .NET 2002 jest najnowsza wersja, jeśli jest tylko bieżącej wersji.  
   
-    -   Visual Studio .NET 2003 jest najnowsza wersja, tylko wtedy, gdy jest obecny i [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie jest obecny.  
+  - Visual Studio .NET 2003 jest najnowsza wersja, tylko wtedy, gdy jest obecny i [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nie jest obecny.  
   
-    -   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest najnowsza wersja, jeśli jest tylko bieżącej wersji.  
+  - [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jest najnowsza wersja, jeśli jest tylko bieżącej wersji.  
   
-     Wynikiem jest, że DEVENV_EXE_LATEST zawiera ścieżkę do najnowszej wersji devenv.exe.  
+    Wynikiem jest, że DEVENV_EXE_LATEST zawiera ścieżkę do najnowszej wersji devenv.exe.  
   
-    ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Akcja niestandardowa wiersze tabeli, które określają najnowszą wersję programu Visual Studio  
+  ### <a name="customaction-table-rows-that-determine-the-latest-version-of-visual-studio"></a>Akcja niestandardowa wiersze tabeli, które określają najnowszą wersję programu Visual Studio  
   
-    |Akcja|Typ|Źródło|Docelowy|  
-    |------------|----------|------------|------------|  
-    |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|  
-    |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|  
-    |CA_SetDevenvLatest_2005|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2005]|  
+  |Akcja|Typ|Źródło|Docelowy|  
+  |------------|----------|------------|------------|  
+  |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|  
+  |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|  
+  |CA_SetDevenvLatest_2005|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2005]|  
   
-    ### <a name="installexecutesequence-table-rows-that-determine-the-latest-version-of-visual-studio"></a>InstallExecuteSequence wiersze tabeli, które określają najnowszą wersję programu Visual Studio  
+  ### <a name="installexecutesequence-table-rows-that-determine-the-latest-version-of-visual-studio"></a>InstallExecuteSequence wiersze tabeli, które określają najnowszą wersję programu Visual Studio  
   
-    |Akcja|Warunek|Sekwencja|  
-    |------------|---------------|--------------|  
-    |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 I NOT (DEVENV_EXE_2003 LUB DEVENV_EXE_2005)|410|  
-    |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 I NIE DEVENV_EXE_2005|420|  
-    |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|  
+  |Akcja|Warunek|Sekwencja|  
+  |------------|---------------|--------------|  
+  |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 I NOT (DEVENV_EXE_2003 LUB DEVENV_EXE_2005)|410|  
+  |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 I NIE DEVENV_EXE_2005|420|  
+  |CA_SetDevenvLatest_2005|DEVENV_EXE_2005|430|  
   
-     Właściwość DEVENV_EXE_LATEST w tabeli w rejestrze pakietu Instalatora Windows służy do zapisywania **HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand** wartości domyślnej klucza [DEVENV_EXE_LATEST] "%1"  
+   Właściwość DEVENV_EXE_LATEST w tabeli w rejestrze pakietu Instalatora Windows służy do zapisywania **HKEY_CLASSES_ROOT*ProgId*ShellOpenCommand** wartości domyślnej klucza [DEVENV_EXE_LATEST] "%1"  
   
--   Uruchom program uruchamiania udostępnionego, który może zgłaszać najlepszym wyborem z dostępnych wersji pakietu VSPackage.  
+- Uruchom program uruchamiania udostępnionego, który może zgłaszać najlepszym wyborem z dostępnych wersji pakietu VSPackage.  
   
-     Deweloperzy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wybrana opcja to podejście do obsługi złożonych wymaganiach, wiele formatów rozwiązań i projektów, które są wynikiem wielu wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. W przypadku tej metody należy zarejestrować program uruchamianie jako procedury obsługi rozszerzenia. Uruchom okno sprawdza plik i decyduje o wyborze wersji z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i usługi pakietu VSPackage może obsługiwać tego określonego pliku. Na przykład, jeśli użytkownik otwiera plik, który został ostatnio zapisany przez określoną wersję usługi pakietu VSPackage, Uruchom okno można uruchomić tego pakietu VSPackage w zgodnej wersji elementu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ponadto użytkownik może skonfigurować uruchamianie można zawsze uruchomić najnowszą wersję. Uruchamianie programu można również monitowania użytkownika o uaktualnienie formatu pliku. Jeśli format pliku zawiera numer wersji, Uruchom okno może informuje użytkownika, jeśli jest w formacie pliku z wersji, która jest nowsza niż co najmniej jedną z zainstalowanych pakietów VSPackage.  
+   Deweloperzy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] wybrana opcja to podejście do obsługi złożonych wymaganiach, wiele formatów rozwiązań i projektów, które są wynikiem wielu wersji [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. W przypadku tej metody należy zarejestrować program uruchamianie jako procedury obsługi rozszerzenia. Uruchom okno sprawdza plik i decyduje o wyborze wersji z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] i usługi pakietu VSPackage może obsługiwać tego określonego pliku. Na przykład, jeśli użytkownik otwiera plik, który został ostatnio zapisany przez określoną wersję usługi pakietu VSPackage, Uruchom okno można uruchomić tego pakietu VSPackage w zgodnej wersji elementu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ponadto użytkownik może skonfigurować uruchamianie można zawsze uruchomić najnowszą wersję. Uruchamianie programu można również monitowania użytkownika o uaktualnienie formatu pliku. Jeśli format pliku zawiera numer wersji, Uruchom okno może informuje użytkownika, jeśli jest w formacie pliku z wersji, która jest nowsza niż co najmniej jedną z zainstalowanych pakietów VSPackage.  
   
-     Uruchom okno powinna mieć składnik Instalatora Windows, który jest udostępniany ze wszystkimi wersjami usługi pakietu VSPackage. Ten proces sprawia, że się, że najnowsza wersja będzie zawsze instalowana i nie zostanie usunięty, dopóki nie zostaną odinstalowane wszystkie wersje usługi pakietu VSPackage. W ten sposób skojarzenia plików i inne wpisy rejestru składnika uruchamiania zostaną zachowane nawet w przypadku odinstalowania jedną wersję pakietu VSPackage.  
+   Uruchom okno powinna mieć składnik Instalatora Windows, który jest udostępniany ze wszystkimi wersjami usługi pakietu VSPackage. Ten proces sprawia, że się, że najnowsza wersja będzie zawsze instalowana i nie zostanie usunięty, dopóki nie zostaną odinstalowane wszystkie wersje usługi pakietu VSPackage. W ten sposób skojarzenia plików i inne wpisy rejestru składnika uruchamiania zostaną zachowane nawet w przypadku odinstalowania jedną wersję pakietu VSPackage.  
   
 ## <a name="uninstall-and-file-associations"></a>Odinstaluj i skojarzenia plików  
  Odinstalowywanie pakietów VSPackage, który zapisuje wpisy rejestru dla skojarzenia plików spowoduje usunięcie skojarzenia plików. Dlatego rozszerzenie ma nie skojarzone z nim programy. Instalator Windows nie "Odzyskiwanie" wpisy rejestru, które zostały dodane po zainstalowaniu pakietu VSPackage. Poniżej przedstawiono niektóre sposoby naprawienia skojarzenia plików użytkownika:  

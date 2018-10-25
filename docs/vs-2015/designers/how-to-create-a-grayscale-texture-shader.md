@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f2fd97c38dcd61bc285b6d9a82d02a17f0fc47d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 046ae16670edaebb44986dee34ea086b4129a0a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304801"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922344"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Porady: tworzenie cieniowania tekstury skali szarości
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,20 +33,20 @@ W tym dokumencie przedstawiono sposób użycia języka programu do cieniowania w
   
 #### <a name="to-create-a-grayscale-texture-shader"></a>Do tworzenie cieniowania tekstury skali szarości  
   
-1.  Tworzenie cieniowania tekstury podstawowej, zgodnie z opisem w [porady: Tworzenie podstawowego cieniowania tekstury](../designers/how-to-create-a-basic-texture-shader.md).  
+1. Tworzenie cieniowania tekstury podstawowej, zgodnie z opisem w [porady: Tworzenie podstawowego cieniowania tekstury](../designers/how-to-create-a-basic-texture-shader.md).  
   
-2.  Odłącz **RGB** terminali z **próbki tekstury** węzła z **RGB** terminali z **ostateczny kolor** węzła. W **wybierz** trybie wybierz **RGB** terminali z **próbki tekstury** węzła, a następnie wybierz **Przerwij linki**. To sprawia, że miejsce na węzeł, który zostanie dodany do następnego kroku.  
+2. Odłącz **RGB** terminali z **próbki tekstury** węzła z **RGB** terminali z **ostateczny kolor** węzła. W **wybierz** trybie wybierz **RGB** terminali z **próbki tekstury** węzła, a następnie wybierz **Przerwij linki**. To sprawia, że miejsce na węzeł, który zostanie dodany do następnego kroku.  
   
-3.  Dodaj **polecenie Zmniejsz nasycenie** węzła do wykresu. W **przybornika**w obszarze **filtry**, wybierz opcję **polecenie Zmniejsz nasycenie** i przenieś go do powierzchni projektowej.  
+3. Dodaj **polecenie Zmniejsz nasycenie** węzła do wykresu. W **przybornika**w obszarze **filtry**, wybierz opcję **polecenie Zmniejsz nasycenie** i przenieś go do powierzchni projektowej.  
   
-4.  Oblicz wartość skali szarości przy użyciu **polecenie Zmniejsz nasycenie** węzła. W **wybierz** tryb, Przenieś **RGB** terminali z **próbki tekstury** węzeł **RGB** terminali z **polecenie Zmniejsz nasycenie**  węzła.  
+4. Oblicz wartość skali szarości przy użyciu **polecenie Zmniejsz nasycenie** węzła. W **wybierz** tryb, Przenieś **RGB** terminali z **próbki tekstury** węzeł **RGB** terminali z **polecenie Zmniejsz nasycenie**  węzła.  
   
-    > [!NOTE]
-    >  Domyślnie **polecenie Zmniejsz nasycenie** węzła pełni desaturates koloru okna wprowadzania i wykorzystuje wagi jasności standardowych konwersji na odcienie szarości. Możesz zmienić sposób, w jaki **polecenie Zmniejsz nasycenie** węzeł, który zachowuje się, zmieniając wartość **jasności** właściwości lub tylko częściowo desaturating koloru okna wprowadzania. Aby częściowo Zmniejsz nasycenie koloru okna wprowadzania, należy podać wartość skalarną w zakresie [0,1) do **procent** terminali z **polecenie Zmniejsz nasycenie** węzła.  
+   > [!NOTE]
+   >  Domyślnie **polecenie Zmniejsz nasycenie** węzła pełni desaturates koloru okna wprowadzania i wykorzystuje wagi jasności standardowych konwersji na odcienie szarości. Możesz zmienić sposób, w jaki **polecenie Zmniejsz nasycenie** węzeł, który zachowuje się, zmieniając wartość **jasności** właściwości lub tylko częściowo desaturating koloru okna wprowadzania. Aby częściowo Zmniejsz nasycenie koloru okna wprowadzania, należy podać wartość skalarną w zakresie [0,1) do **procent** terminali z **polecenie Zmniejsz nasycenie** węzła.  
   
-5.  Połącz się ostateczny kolor z wartości koloru skali szarości. Przenieś **dane wyjściowe** terminali z **polecenie Zmniejsz nasycenie** węzeł **RGB** terminali z **ostateczny kolor** węzła.  
+5. Połącz się ostateczny kolor z wartości koloru skali szarości. Przenieś **dane wyjściowe** terminali z **polecenie Zmniejsz nasycenie** węzeł **RGB** terminali z **ostateczny kolor** węzła.  
   
- Poniższej ilustracji ukończone programu do cieniowania programu graph i wersję zapoznawczą programu do cieniowania stosowane do modułu.  
+   Poniższej ilustracji ukończone programu do cieniowania programu graph i wersję zapoznawczą programu do cieniowania stosowane do modułu.  
   
 > [!NOTE]
 >  Na tej ilustracji płaszczyznę jest używany jako kształt (wersja zapoznawcza), a określono tekstury lepiej wykazać efekt programu do cieniowania.  

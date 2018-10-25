@@ -15,12 +15,12 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c8fe37de7db5a09e9c0e81f25b09e9b4ff345c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c217426d4186477f22a21c9348ff30e181faa840
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237656"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863285"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Przewodnik: wyświetlanie etykietek narzędzi SzybkieInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ Skrócone informacje jest funkcja IntelliSense, który wyświetla podpisy metod 
   
  W przykładzie skrócone informacje w tym przewodniku Wyświetla etykietki narzędzi, gdy użytkownik przesuwa wskaźnik myszy nad nazwą metody. Ten projekt wymaga implementują te interfejsy cztery:  
   
--   interfejs źródłowy  
+- interfejs źródłowy  
   
--   interfejs dostawcy źródła  
+- interfejs dostawcy źródła  
   
--   Kontroler interfejsu  
+- Kontroler interfejsu  
   
--   Kontroler interfejsu dostawcy  
+- Kontroler interfejsu dostawcy  
   
- Dostawcy źródła i kontroler Managed Extensibility Framework (MEF) składające się jest odpowiedzialny za eksportowanie klas źródłowych i kontroler i importowanie usług i brokerzy, takich jak <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, która tworzy tekst etykietki narzędzia bufor i <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, która wyzwala sesji skrócone informacje.  
+  Dostawcy źródła i kontroler Managed Extensibility Framework (MEF) składające się jest odpowiedzialny za eksportowanie klas źródłowych i kontroler i importowanie usług i brokerzy, takich jak <xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>, która tworzy tekst etykietki narzędzia bufor i <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>, która wyzwala sesji skrócone informacje.  
   
- W tym przykładzie źródło skrócone informacje używa stałej listy nazwy metod i opisów, ale w pełnej implementacji usługi językowej i dokumentacji języka są odpowiedzialne za świadczenie tej zawartości.  
+  W tym przykładzie źródło skrócone informacje używa stałej listy nazwy metod i opisów, ale w pełnej implementacji usługi językowej i dokumentacji języka są odpowiedzialne za świadczenie tej zawartości.  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Począwszy od programu Visual Studio 2015, możesz nie należy instalować programu Visual Studio SDK z Centrum pobierania. Jest dołączony jako opcjonalna funkcja w Instalatorze programu Visual Studio. Możesz także zainstalować zestaw SDK programu VS później. Aby uzyskać więcej informacji, zobacz [instalowania programu Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  

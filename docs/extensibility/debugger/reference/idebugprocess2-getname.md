@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e92b4463070d16210ccb99627f03b07dabd6f4d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 06b4d22a0d15a3e600afa286abd1b86756c61c85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118482"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926283"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
-Pobiera tytuł, przyjazną nazwę lub nazwę pliku procesu.  
+Pobiera tytuł, przyjazną nazwę lub nazwę procesu.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -43,13 +43,13 @@ int GetName(
   
 #### <a name="parameters"></a>Parametry  
  `gnType`  
- [in] Wartość z zakresu od [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) wyliczenie określający typ nazwy, aby znaleźć.  
+ [in] Wartość z zakresu od [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) wyliczenie, które określa, jakiego rodzaju nazwy do zwrócenia.  
   
  `pbstrName`  
  [out] Zwraca nazwę procesu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   

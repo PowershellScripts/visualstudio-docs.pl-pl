@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5fc3fb1ad607eb7efb1ba20265545c18b1c1b46
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b288d9995797a000f16533fcee9dafd85171722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864612"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 Ta metoda oblicza wyrażenie synchronicznie.  
@@ -47,30 +47,30 @@ int EvaluateSync(
   
 #### <a name="parameters"></a>Parametry  
  `dwFlags`  
- [in] Kombinacja flag z [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) wyliczenie przez Obliczanie wyrażenia.  
+ [in] Kombinacja flag z [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) wyliczenie, które sterują Obliczanie wyrażenia.  
   
  `dwTimeout`  
- [in] Maksymalny czas (w milisekundach) oczekiwania przed powrotem z tej metody. Użyj `INFINITE` będzie czekać w nieskończoność.  
+ [in] Maksymalny czas (w milisekundach) oczekiwania przed zwróceniem z tej metody. Użyj `INFINITE` czekanie w nieskończoność.  
   
  `pExprCallback`  
  [in] Ten parametr jest zawsze wartość null.  
   
  `ppResult`  
- [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiekt zawierający wynik obliczania wyrażenia.  
+ [out] Zwraca [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) obiektu, który zawiera wynik obliczenia wyrażenia.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Kody niektórych typowych błędów są:  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu. Niektóre kody typowy błąd to:  
   
 |Błąd|Opis|  
 |-----------|-----------------|  
-|E_EVALUATE_BUSY_WITH_EVALUATION|Obecnie trwa Obliczanie wyrażenia innego, a jednocześnie wyrażenia nie jest obsługiwana.|  
-|E_EVALUATE_TIMEOUT|Przekroczono limit czasu obliczania.|  
+|E_EVALUATE_BUSY_WITH_EVALUATION|Inne wyrażenie jest aktualnie szacowana, a jednoczesne wyrażenia nie jest obsługiwana.|  
+|E_EVALUATE_TIMEOUT|Szacowanie przekroczyło limit czasu.|  
   
 ## <a name="remarks"></a>Uwagi  
- Synchroniczne oceny nie jest niezbędne do wysyłania zdarzeń do programu Visual Studio po zakończeniu oceny.  
+ Synchroniczne wersji ewaluacyjnej nie jest niezbędne do wysyłania zdarzeń do programu Visual Studio po zakończeniu oceny.  
   
 ## <a name="example"></a>Przykład  
- Poniższy przykład przedstawia sposób zaimplementować tę metodę dla prostego `CExpression` obiekt, który implementuje [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interfejsu.  
+ Poniższy przykład pokazuje, jak zaimplementować tę metodę dla prostego `CExpression` obiekt, który implementuje [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interfejsu.  
   
 ```cpp  
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,  

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14cecb63e7f96e58b17672bbb5cb67a345b9ece8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: de9ae85156f9d272901893c74c5d2c9729a0a3dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677598"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924231"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Porady: Odczyt z i zapisu do właściwości dokumentu
   Można zapisać właściwości dokumentu z dokumentu. Aplikacje pakietu Office zapewniają szereg wbudowanych właściwości, takie jak tworzenie, tytuł i temat. W tym temacie przedstawiono sposób ustawiania właściwości dokumentu w programie Microsoft Office Excel i Microsoft Office Word.  
@@ -35,13 +35,13 @@ ms.locfileid: "35677598"
 ## <a name="set-document-properties-in-excel"></a>Ustawianie właściwości dokumentu w programie Excel  
  Aby pracować z wbudowanych właściwości w programie Excel, należy użyć następujących właściwości:  
   
--   W projekcie na poziomie dokumentu, należy użyć <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> właściwość `ThisWorkbook` klasy.  
+- W projekcie na poziomie dokumentu, należy użyć <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> właściwość `ThisWorkbook` klasy.  
   
--   W projekcie dodatku narzędzi VSTO dla programów, należy użyć <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> właściwość <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu.  
+- W projekcie dodatku narzędzi VSTO dla programów, należy użyć <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> właściwość <xref:Microsoft.Office.Interop.Excel.Workbook> obiektu.  
   
- Te właściwości zwracają <xref:Microsoft.Office.Core.DocumentProperties> obiektu, który jest kolekcją z <xref:Microsoft.Office.Core.DocumentProperty> obiektów. Możesz użyć `Item` właściwość kolekcji można pobrać określonej właściwości według nazwy lub indeksu w tej kolekcji.  
+  Te właściwości zwracają <xref:Microsoft.Office.Core.DocumentProperties> obiektu, który jest kolekcją z <xref:Microsoft.Office.Core.DocumentProperty> obiektów. Możesz użyć `Item` właściwość kolekcji można pobrać określonej właściwości według nazwy lub indeksu w tej kolekcji.  
   
- Poniższy przykład kodu pokazuje, jak zmienić wbudowane **numer poprawki** właściwość w projekcie na poziomie dokumentu.  
+  Poniższy przykład kodu pokazuje, jak zmienić wbudowane **numer poprawki** właściwość w projekcie na poziomie dokumentu.  
   
 ### <a name="to-change-the-revision-number-property-in-excel"></a>Aby zmienić właściwość numer wersji w programie Excel  
   
@@ -58,13 +58,13 @@ ms.locfileid: "35677598"
 ## <a name="set-document-properties-in-word"></a>Ustawianie właściwości dokumentu w programie Word  
  Aby pracować z wbudowanych właściwości w programie Word, użyj następujących właściwości:  
   
--   W projekcie na poziomie dokumentu, należy użyć <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> właściwość `ThisDocument` klasy.  
+- W projekcie na poziomie dokumentu, należy użyć <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> właściwość `ThisDocument` klasy.  
   
--   W projekcie dodatku narzędzi VSTO dla programów, należy użyć <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> właściwość <xref:Microsoft.Office.Interop.Word.Document> obiektu.  
+- W projekcie dodatku narzędzi VSTO dla programów, należy użyć <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> właściwość <xref:Microsoft.Office.Interop.Word.Document> obiektu.  
   
- Te właściwości zwracają <xref:Microsoft.Office.Core.DocumentProperties> obiektu, który jest kolekcją z <xref:Microsoft.Office.Core.DocumentProperty> obiektów. Możesz użyć `Item` właściwość kolekcji można pobrać określonej właściwości według nazwy lub indeksu w tej kolekcji.  
+  Te właściwości zwracają <xref:Microsoft.Office.Core.DocumentProperties> obiektu, który jest kolekcją z <xref:Microsoft.Office.Core.DocumentProperty> obiektów. Możesz użyć `Item` właściwość kolekcji można pobrać określonej właściwości według nazwy lub indeksu w tej kolekcji.  
   
- Poniższy przykład kodu pokazuje, jak zmienić wbudowane **podmiotu** właściwość w projekcie na poziomie dokumentu.  
+  Poniższy przykład kodu pokazuje, jak zmienić wbudowane **podmiotu** właściwość w projekcie na poziomie dokumentu.  
   
 ### <a name="to-change-the-subject-property"></a>Aby zmienić właściwość podmiotu  
   

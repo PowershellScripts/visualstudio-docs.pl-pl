@@ -15,58 +15,58 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 05c8e43d90837ec73f4d6674e35581eecc5d2e3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 88828eb5abbb9a4e81d69bae9662c291cf5fd9b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885710"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Porady: Tworzenie niestandardowego tekstu znaczników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Jeśli chcesz utworzyć znacznika niestandardowego tekstu, aby podkreślić lub organizowanie kodu, należy wykonać następujące czynności:  
   
--   Zarejestruj nowy znacznik tekst tak, aby inne narzędzia do niego dostęp  
+- Zarejestruj nowy znacznik tekst tak, aby inne narzędzia do niego dostęp  
   
--   Domyślna implementacja i konfiguracji znacznika tekstu  
+- Domyślna implementacja i konfiguracji znacznika tekstu  
   
--   Tworzenie usługi, która może służyć przez inne procesy, aby użyć znacznika tekstu  
+- Tworzenie usługi, która może służyć przez inne procesy, aby użyć znacznika tekstu  
   
- Szczegółowe informacje na temat sposobu stosowania znacznika tekstu do regionu kodu, [porady: użycie znaczników tekstu](../extensibility/how-to-use-text-markers.md).  
+  Szczegółowe informacje na temat sposobu stosowania znacznika tekstu do regionu kodu, [porady: użycie znaczników tekstu](../extensibility/how-to-use-text-markers.md).  
   
 ### <a name="to-register-a-custom-marker"></a>Aby zarejestrować znacznika niestandardowego  
   
-1.  Utwórz wpis rejestru w następujący sposób:  
+1. Utwórz wpis rejestru w następujący sposób:  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* znaczniki \Text Editor\External\\*\<MarkerGUID >*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* znaczniki \Text Editor\External\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >* jest `GUID` używany do identyfikowania znacznika dodawany  
+    <em>\<MarkerGUID ></em>jest `GUID` używany do identyfikowania znacznika dodawany  
   
-     *\<W wersji >* jest wersją [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], na przykład 8.0  
+    *\<W wersji >* jest wersją [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], na przykład 8.0  
   
-     *\<PackageGUID >* jest identyfikator GUID pakietu VSPackage implementacji obiektu automatyzacji.  
+    *\<PackageGUID >* jest identyfikator GUID pakietu VSPackage implementacji obiektu automatyzacji.  
   
-    > [!NOTE]
-    >  Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* może zostać zastąpiona przez główny alternatywne po zainicjowaniu powłoki programu Visual Studio, aby uzyskać więcej informacji, zobacz [Przełączniki wiersza polecenia](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > [!NOTE]
+   >  Ścieżka katalogu głównego HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* może zostać zastąpiona przez główny alternatywne po zainicjowaniu powłoki programu Visual Studio, aby uzyskać więcej informacji, zobacz [Przełączniki wiersza polecenia](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2.  Utwórz cztery wartości w obszarze HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* \Text Editor\External znaczniki\\*\<MarkerGUID >*  
+2. Utwórz cztery wartości w obszarze HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<wersji >* \Text Editor\External znaczniki\\*\<MarkerGUID >*  
   
-    -   (Domyślnie)  
+   -   (Domyślnie)  
   
-    -   Usługa  
+   -   Usługa  
   
-    -   Nazwa wyświetlana  
+   -   Nazwa wyświetlana  
   
-    -   Package  
+   -   Package  
   
-    -   `Default` wpis jest opcjonalny typu REG_SZ. Po ustawieniu wartości wpisu jest ciąg zawierający pewne przydatne informacje identyfikacyjne, na przykład "niestandardowego tekstu znacznika".  
+   -   `Default` wpis jest opcjonalny typu REG_SZ. Po ustawieniu wartości wpisu jest ciąg zawierający pewne przydatne informacje identyfikacyjne, na przykład "niestandardowego tekstu znacznika".  
   
-    -   `Service` jest wpis typu REG_SZ zawierający ciąg identyfikatora GUID usługi, która zawiera znacznik niestandardowego tekstu przez proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Format jest {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   -   `Service` jest wpis typu REG_SZ zawierający ciąg identyfikatora GUID usługi, która zawiera znacznik niestandardowego tekstu przez proffering <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>. Format jest {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
-    -   `DisplayName` to wpis typu REG_SZ zawierający identyfikator zasobu o nazwie znacznika niestandardowego tekstu. Format jest #YYYY.  
+   -   `DisplayName` to wpis typu REG_SZ zawierający identyfikator zasobu o nazwie znacznika niestandardowego tekstu. Format jest #YYYY.  
   
-    -   `Package` wpis typu REG_SZ zawierającego `GUID` pakietu VSPackage, która dostarcza usługę wymienionych w ramach usługi. Format jest {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
+   -   `Package` wpis typu REG_SZ zawierającego `GUID` pakietu VSPackage, która dostarcza usługę wymienionych w ramach usługi. Format jest {XXXXXX XXXX XXXX XXXX XXXXXXXXX}.  
   
 ### <a name="to-create-a-custom-text-marker"></a>Aby utworzyć znacznika niestandardowego tekstu  
   

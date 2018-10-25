@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 156dcb4fc6b94248e488eda4091c3b2ccf192185
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: f206faf2934883c346b39a83c7953f87c98f95dc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42624341"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898242"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Wydajność aplikacji profilującej w programie Visual Studio
 Za pomocą programu Visual Studio profiling tools do analizowania problemów z wydajnością w aplikacji. Poniższa procedura przedstawia sposób użycia **użycie procesora CPU** karta Narzędzia diagnostyczne, aby uzyskać dane wydajności dotyczące Twojej aplikacji. Narzędzia diagnostyczne są obsługiwane podczas tworzenia aplikacji .NET w programie Visual Studio, w tym usługi ASP.NET i dla rozwoju natywnego/C++.
@@ -32,9 +32,9 @@ Gdy debuger zatrzymuje, **użycie procesora CPU** Narzędzie gromadzi informacje
 
 Centrum diagnostyki oferuje wiele innych opcji do uruchamiania i zarządzania sesję diagnostyczną. Jeśli **użycie procesora CPU** nie oferują danych, których potrzebują, [innych narzędzi do profilowania](../profiling/profiling-feature-tour.md) zapewniają różne rodzaje informacji, które mogą być pomocne dla użytkownika. W wielu przypadkach wąskich gardeł wydajności aplikacji może być spowodowane przez coś innego niż Procesora, takich jak pamięć, renderowania interfejsu użytkownika lub czas żądania sieciowego. Centrum diagnostyki oferuje wiele innych opcji rejestracji i analizowaniu tego rodzaju danych.
 
-|         |         |
+| | |
 |---------|---------|
-|  ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo")  |    [Obejrzyj film wideo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) na temat korzystania z narzędzia diagnostyczne, które pokazuje sposób analizowanie użycia procesora CPU oraz analizowanie użycia pamięci. |
+| ![Ikona aparatu film wideo](../install/media/video-icon.png "Obejrzyj klip wideo") | [Obejrzyj film wideo](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171) na temat korzystania z narzędzia diagnostyczne, które pokazuje sposób analizowanie użycia procesora CPU oraz analizowanie użycia pamięci. |
 
 W tym artykule omówimy Analizowanie użycia procesora CPU w normalnym przepływie pracy debugowania. Możesz również Analizowanie użycia procesora CPU bez debugera dołączone lub stosując uruchomionej aplikacji — Aby uzyskać więcej informacji, zobacz [zbierania danych profilowania bez debugowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) w [uruchamianie narzędzi z lub bez debugeraprofilowania](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 

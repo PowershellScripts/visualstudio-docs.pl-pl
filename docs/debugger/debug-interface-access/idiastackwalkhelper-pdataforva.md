@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eb500539184d6ac5e7e3cb00e753a00f3585057
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ec11596091f7039d9f711acc0d96510340a77c6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463221"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901427"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
-Zwraca PDATA bloku danych skojarzone z wirtualnym adresem.  
+Zwraca skojarzony z wirtualnym adresem bloku danych PDATA.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -37,24 +37,24 @@ HRESULT pdataForVA(
   
 #### <a name="parameters"></a>Parametry  
  `va`  
- [in] Określa wirtualny adres danych do uzyskania.  
+ [in] Określa adres wirtualny danych w celu uzyskania.  
   
  `cbData`  
- [in] Rozmiar danych w bajtach do uzyskania.  
+ [in] Rozmiar danych w bajtach, aby uzyskać.  
   
  `pcbData`  
- [out] Zwraca liczbę bajtów, które zostały pobrane rzeczywisty rozmiar danych.  
+ [out] Zwraca rzeczywisty rozmiar danych w bajtach, które zostały pobrane.  
   
  `pbData`  
- [w, out] Buforu, który jest wypełniane żądanych danych. Nie może być `NULL`.  
+ [out w] Bufor, który jest wypełniane żądanych danych. Nie może być `NULL`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` Jeśli nie istnieje żadne PDATA dla określonego adresu. W przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`. Zwraca `S_FALSE` przypadku nie PDATA dla określonego adresu. W przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- PDATA (sekcji o nazwie ".pdata") z compiland zawiera informacje dotyczące obsługi funkcji wyjątków.  
+ PDATA (sekcja o nazwie ".pdata") compiland — zawiera informacje dotyczące obsługi funkcji wyjątków.  
   
- Obiekt wywołujący wie, jak dużo danych jest zwracana więc obiekt wywołujący nie trzeba uzyskać jak dużo danych jest dostępna. W związku z tym jest możliwa do stosowania tę metodę, aby zwrócić błąd, jeśli `pbData` parametr jest `NULL`.  
+ Obiekt wywołujący wie, jak dużo danych jest zwracane, więc nie trzeba zadać, jak dużo danych jest dostępna na obiekt wywołujący. Dlatego jest dopuszczalne związanych z implementacją tę metodę, aby zwrócić błąd, jeśli `pbData` parametr `NULL`.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

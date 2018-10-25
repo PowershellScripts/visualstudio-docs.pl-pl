@@ -18,22 +18,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f134fc7de69727e2a4c330c4904c67e213e6d561
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0db41fe7cc56b9e22c94affe8b502959cec17c84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479822"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912555"
 ---
 # <a name="debugging-wpf"></a>Debugowanie WPF
-[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] zapewnia dodatkowe funkcje, aby ułatwić debugowanie aplikacji WPF.  
+[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] udostępnia dodatkowe funkcje, aby ułatwić debugowanie aplikacji WPF.  
   
 ## <a name="related-topics"></a>Tematy pokrewne  
   
-|Tytuł|Opis|  
-|-----------|-----------------|  
-|[Instrukcje: korzystanie z wizualizatora drzewa platformy WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md)|Z wizualizatora drzewa WPF umożliwia Eksplorowanie drzewa wizualnego obiektu WPF i Wyświetl właściwości zależności WPF dla obiektów w tym drzewie. W tym temacie opisano interfejs użytkownika z wizualizatora drzewa WPF.|  
-|[Porady: wyświetlanie informacji o śledzeniu WPF](../debugger/how-to-display-wpf-trace-information.md)|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można otrzymywać informacje o śledzeniu debugowania aplikacji WPF i wyświetlić te informacje w **dane wyjściowe** okna. Ten temat zawiera opis sposobu włączania i dostosować wyświetlanie informacji o śledzeniu WPF.|  
+| Tytuł | Opis |
+| - | - |
+| [Instrukcje: korzystanie z wizualizatora drzewa platformy WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md) | Korzystanie z wizualizatora drzewa WPF, zapoznaj się z drzewa wizualnego obiektu WPF i wyświetlić właściwości zależności WPF dla obiektów w drzewie. W tym temacie opisano interfejs użytkownika z wizualizatora drzewa WPF. |
+| [Instrukcje: wyświetlanie informacji o śledzeniu platformy WPF](../debugger/how-to-display-wpf-trace-information.md) | [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] można otrzymywać informacje o śledzeniu debugowania aplikacji WPF i wyświetlić te informacje w **dane wyjściowe** okna. W tym temacie opisano, jak włączyć i dostosować wyświetlanie informacji o śledzeniu WPF. |
   
 ## <a name="see-also"></a>Zobacz też  
- [Debugowanie zarządzanego kodu](../debugger/debugging-managed-code.md)
+ [Debugowanie kodu zarządzanego](../debugger/debugging-managed-code.md)

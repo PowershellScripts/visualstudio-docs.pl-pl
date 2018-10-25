@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3bdbbc5bf50f395ab988fd0c2d5b97786333afca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 724b0f5ef277cd6a6eb1fd762aa6f8c81428a3b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126317"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876506"
 ---
 # <a name="ienumdebugreferenceinfo2getcount"></a>IEnumDebugReferenceInfo2::GetCount
 Zwraca liczbę elementów w wyliczeniu.  
@@ -44,10 +44,10 @@ int GetCount(
  [out] Zwraca liczbę elementów w wyliczeniu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
- Ta metoda nie jest częścią zwyczajowe interfejsu wyliczenie COM, który określa tylko `Next`, `Clone`, `Skip`, i `Reset` metody muszą zostać wdrożone.  
+ Ta metoda nie jest częścią zwyczajowego interfejs wyliczanie modelu COM, który określa, że tylko `Next`, `Clone`, `Skip`, i `Reset` metod, które muszą zostać zaimplementowane.  
   
 ## <a name="see-also"></a>Zobacz też  
  [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)

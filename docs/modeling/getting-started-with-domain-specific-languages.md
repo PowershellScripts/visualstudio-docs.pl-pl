@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 36cc776f18990e7cc97b1583267c9f9f9b9c95eb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885666"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Wprowadzenie do języków specyficznych dla domeny
 
@@ -43,11 +43,12 @@ Pozostała część tego omówienia jest przewodnik, który wprowadza podstawowe
 
 Aby zdefiniować DSL, musisz mieć zainstalowane następujące składniki:
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Modeling SDK for Visual Studio||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Modeling SDK for Visual Studio | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -143,7 +144,7 @@ Eksperymentalne programu Visual Studio będzie wyglądać następująco:
 
 ### <a name="the-content-of-a-model"></a>Zawartość modelu
 
-Zawartość pliku, który jest wystąpieniem DSL jest nazywany *modelu*. Model zawiera *modelu ** elementy* i *łącza* między elementami. Określa, jakie typy elementów modelu w definicji DSL i łącza może znajdować się w modelu. Na przykład w utworzone na podstawie szablonu minimalnego języka DSL, istnieje jeden typ elementu modelu i jednego typu łącza.
+Zawartość pliku, który jest wystąpieniem DSL jest nazywany *modelu*. Model zawiera *modelu*<em>elementy</em> i *łącza* między elementami. Określa, jakie typy elementów modelu w definicji DSL i łącza może znajdować się w modelu. Na przykład w utworzone na podstawie szablonu minimalnego języka DSL, istnieje jeden typ elementu modelu i jednego typu łącza.
 
 W definicji DSL można określić, jak model pojawia się na diagramie. Możesz wybrać spośród różnych stylów kształtów i łączników. Można określić, czy niektóre kształty są widoczne w innych kształtów.
 
@@ -246,39 +247,39 @@ Zmień nazwę istniejącej klasy domeny i relacje. Na przykład począwszy od de
 
 ##### <a name="to-add-properties-and-display-them"></a>Aby dodać właściwości i wyświetlaj je
 
-1.  Dodaj właściwości.
+1. Dodaj właściwości.
 
-    1.  W definicji DSL diagramu, kliknij prawym przyciskiem myszy **osoby** klasy domeny, wskaż **Dodaj**, a następnie kliknij przycisk **właściwość domeny**.
+   1.  W definicji DSL diagramu, kliknij prawym przyciskiem myszy **osoby** klasy domeny, wskaż **Dodaj**, a następnie kliknij przycisk **właściwość domeny**.
 
-    2.  Wpisz listę nowych nazw właściwości, takie jak **urodzenia** i **śmierci**. Naciśnij klawisz **Enter** po każdej z nich.
+   2.  Wpisz listę nowych nazw właściwości, takie jak **urodzenia** i **śmierci**. Naciśnij klawisz **Enter** po każdej z nich.
 
-2.  Dodaj dekoratory, które będą wyświetlane właściwości w kształcie.
+2. Dodaj dekoratory, które będą wyświetlane właściwości w kształcie.
 
-    1.  Postępuj zgodnie z szara linia, rozciąga się od klasy domeny osoba po drugiej stronie diagramu. To mapowanie elementu diagramu. Klasy domeny łączy do klasy kształtu.
+   1.  Postępuj zgodnie z szara linia, rozciąga się od klasy domeny osoba po drugiej stronie diagramu. To mapowanie elementu diagramu. Klasy domeny łączy do klasy kształtu.
 
-    2.  Kliknij prawym przyciskiem myszy tę klasę kształtu, wskaż opcję **Dodaj**, a następnie kliknij przycisk **Dekoratora tekstu**.
+   2.  Kliknij prawym przyciskiem myszy tę klasę kształtu, wskaż opcję **Dodaj**, a następnie kliknij przycisk **Dekoratora tekstu**.
 
-    3.  Dodaj dwa dekoratory przy użyciu nazwy, takie jak **BirthDecorator** i **DeathDecorator**.
+   3.  Dodaj dwa dekoratory przy użyciu nazwy, takie jak **BirthDecorator** i **DeathDecorator**.
 
-    4.  Wybierz każdy dekorator nowe, a w oknie właściwości ustaw **pozycji** pola. Określa, gdzie zostaną wyświetlone wartości właściwości domeny na kształcie. Na przykład ustawić **InnerBottomLeft** i **InnerBottomRight**.
+   4.  Wybierz każdy dekorator nowe, a w oknie właściwości ustaw **pozycji** pola. Określa, gdzie zostaną wyświetlone wartości właściwości domeny na kształcie. Na przykład ustawić **InnerBottomLeft** i **InnerBottomRight**.
 
-         ![Definicja kształtu przedziału](../modeling/media/familyt_compartment.png)
+        ![Definicja kształtu przedziału](../modeling/media/familyt_compartment.png)
 
-3.  Mapowania dekoratorów do właściwości.
+3. Mapowania dekoratorów do właściwości.
 
-    1.  Otwórz okno Szczegóły języka DSL. Zazwyczaj jest na karcie obok w oknie danych wyjściowych. Jeśli nie jest widoczna, na **widoku** menu wskaż **Windows inne**, a następnie kliknij przycisk **szczegóły języka DSL**.
+   1.  Otwórz okno Szczegóły języka DSL. Zazwyczaj jest na karcie obok w oknie danych wyjściowych. Jeśli nie jest widoczna, na **widoku** menu wskaż **Windows inne**, a następnie kliknij przycisk **szczegóły języka DSL**.
 
-    2.  Polecenie diagramem definicji DSL linii łączącej **osoby** klasy domeny do klasy kształtu.
+   2.  Polecenie diagramem definicji DSL linii łączącej **osoby** klasy domeny do klasy kształtu.
 
-    3.  W **szczegóły języka DSL**na **mapy Dekoratora** kliknij pole wyboru na niezamapowane dekoratora. W **Właściwość wyświetlania**, wybierz właściwość domeny, do której ma on zamapowany. Na przykład mapować **BirthDecorator** do **urodzenia**.
+   3.  W **szczegóły języka DSL**na **mapy Dekoratora** kliknij pole wyboru na niezamapowane dekoratora. W **Właściwość wyświetlania**, wybierz właściwość domeny, do której ma on zamapowany. Na przykład mapować **BirthDecorator** do **urodzenia**.
 
-4.  Zapisz język DSL, a następnie kliknij przycisk Przekształć wszystkie szablony i naciśnij klawisz F5.
+4. Zapisz język DSL, a następnie kliknij przycisk Przekształć wszystkie szablony i naciśnij klawisz F5.
 
-5.  W przykładowy diagram modelu Sprawdź, czy można teraz kliknąć pozycje, które wybrałeś i wpisz wartości do nich. Ponadto po wybraniu **osoby** kształtu, okno właściwości wyświetla nowe właściwości urodzenia i śmierci.
+5. W przykładowy diagram modelu Sprawdź, czy można teraz kliknąć pozycje, które wybrałeś i wpisz wartości do nich. Ponadto po wybraniu **osoby** kształtu, okno właściwości wyświetla nowe właściwości urodzenia i śmierci.
 
-6.  W pliku .tt można dodać kod, który uzyskuje właściwości każdej osoby.
+6. W pliku .tt można dodać kod, który uzyskuje właściwości każdej osoby.
 
- ![Diagram drzewa rodziny, przybornika i Eksplorator](../modeling/media/familyt_instance.png)
+   ![Diagram drzewa rodziny, przybornika i Eksplorator](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>Definiowanie nowych klas
  Można dodać klasy domeny i relacje do modelu. Na przykład można utworzyć nowej klasy reprezentujące miast i nową relację do reprezentowania osoby znajdowały się w mieście.

@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f2a2979fdc836f0204dec580d49e86ae235d5c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 147d15133a2c5c682960e853defcf5965d04b1d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254699"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868030"
 ---
 # <a name="creating-portable-profiling-data-files-from-the-command-line"></a>Tworzenie przenośnych plików danych profilowania z wiersza polecenia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +37,19 @@ Aby ułatwić udostępnianie danych ułatwia profilowania, można użyć [VSPerf
   
 ### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>Aby osadzić symbole dla profilowania w pliku danych (Vsp) profilowania  
   
--   W oknie wiersza polecenia wpisz następujące polecenie:  
+- W oknie wiersza polecenia wpisz następujące polecenie:  
   
-     \<Ścieżka >**VSPerfReport \<** pliku VSP > **packsymbols**  
+   \<Ścieżka ><strong>VSPerfReport \<</strong> pliku VSP > **packsymbols**  
   
-     Domyślnie plik .vsps nosi nazwę z podstawowej nazwy pliku Vsp. Należy określić nazwę alternatywną, za pomocą **dane wyjściowe** opcji.  
+   Domyślnie plik .vsps nosi nazwę z podstawowej nazwy pliku Vsp. Należy określić nazwę alternatywną, za pomocą **dane wyjściowe** opcji.  
   
 ### <a name="to-create-a-summary-profiling-data-file"></a>Aby utworzyć plik danych profilowania podsumowania  
   
--   W oknie wiersza polecenia wpisz następujące polecenie:  
+- W oknie wiersza polecenia wpisz następujące polecenie:  
   
-     \<Ścieżka >**VSPerfReport \<** pliku VSP > **/summaryfile** [**/Output:**\<nazwa pliku >]  
+   \<Ścieżka ><strong>VSPerfReport \<</strong> pliku VSP > **/summaryfile** [**/Output:**\<nazwa pliku >]  
   
-     Domyślnie plik .vsps nosi nazwę z podstawowej nazwy pliku Vsp. Należy określić nazwę alternatywną, za pomocą **dane wyjściowe** opcji.
+   Domyślnie plik .vsps nosi nazwę z podstawowej nazwy pliku Vsp. Należy określić nazwę alternatywną, za pomocą **dane wyjściowe** opcji.
 
 
 

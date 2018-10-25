@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_arrayIndexType | Dokumentacja firmy Microsoft
+title: Idiasymbol::get_arrayindextype — | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1212bb62888d1bed546a7c12ae4cfc48c22d0a07
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a3d8890e4a1a891cc1efe622b78e185b83a32f81
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882409"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
 Pobiera interfejs symbol typu indeksu tablicy symbolu.  
@@ -37,13 +37,13 @@ HRESULT get_arrayIndexType (
  [out] Zwraca [idiasymbol —](../../debugger/debug-interface-access/idiasymbol.md) obiekt, który reprezentuje typ indeksu tablicy symbolu.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca `S_FALSE` lub kod błędu.  
   
 > [!NOTE]
->  Zwracana wartość `S_FALSE` oznacza, że właściwość nie jest dostępna symbolu.  
+>  Zwracana wartość wynosząca `S_FALSE` oznacza, że właściwość nie jest dostępna dla symbolu.  
   
 ## <a name="remarks"></a>Uwagi  
- W przypadku niektórych języków można określić typ używany jako indeks tablicy. Symbol zwracane z tej metody określa typu.  
+ Niektóre języki można określić typ używany jako indeks do tablicy. Symbol zwrócone w wyniku tej metody określa typu.  
   
 ## <a name="requirements"></a>Wymagania  
   

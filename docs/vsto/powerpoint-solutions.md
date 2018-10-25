@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f836662b9dfe4df8e45e24a7210664b8cecd49e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676212"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906562"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint — rozwiązania
   Program Visual Studio udostępnia szablony projektów, służących do tworzenia dodatków narzędzi VSTO dla programu Microsoft PowerPoint pakietu Office. Za pomocą dodatków narzędzi VSTO dla programów Automatyzacja programu PowerPoint, Rozszerz funkcje programu PowerPoint lub dostosowywanie interfejsu użytkownika (UI) programu PowerPoint.  
@@ -42,15 +42,15 @@ ms.locfileid: "35676212"
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>W programie PowerPoint zautomatyzować za pomocą modelu obiektów programu PowerPoint  
  Model obiektów programu PowerPoint uwidacznia wiele typów, których można użyć do zautomatyzowania programu PowerPoint. Te typy umożliwiają pisanie kodu w celu wykonywania typowych zadań:  
   
--   Programowo utworzyć i sformatować prezentacji.  
+- Programowo utworzyć i sformatować prezentacji.  
   
--   Dodawanie lub usuwanie slajdy z prezentacji.  
+- Dodawanie lub usuwanie slajdy z prezentacji.  
   
--   Dodaj lub zmień kształtów na slajdzie.  
+- Dodaj lub zmień kształtów na slajdzie.  
   
- Dostęp do modelu obiektów programu PowerPoint z dodatku narzędzi VSTO dla programów, należy użyć `Application` pole `ThisAddIn` klasy w projekcie. `Application` Pole zwraca <xref:Microsoft.Office.Interop.PowerPoint.Application> obiekt reprezentujący bieżące wystąpienie programu PowerPoint. Aby uzyskać więcej informacji, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).  
+  Dostęp do modelu obiektów programu PowerPoint z dodatku narzędzi VSTO dla programów, należy użyć `Application` pole `ThisAddIn` klasy w projekcie. `Application` Pole zwraca <xref:Microsoft.Office.Interop.PowerPoint.Application> obiekt reprezentujący bieżące wystąpienie programu PowerPoint. Aby uzyskać więcej informacji, zobacz [dodatków narzędzi VSTO programu](../vsto/programming-vsto-add-ins.md).  
   
- Gdy wywołujesz modelu obiektów programu PowerPoint, należy użyć typów, które są dostarczane w podstawowy zestaw międzyoperacyjny dla programu PowerPoint. Podstawowy zestaw międzyoperacyjny działa jako Most między kodu zarządzanego w dodatku narzędzi VSTO dla programów i model obiektów COM w programie PowerPoint. Wszystkie typy w programie PowerPoint podstawowy zestaw międzyoperacyjny są zdefiniowane w <xref:Microsoft.Office.Interop.PowerPoint> przestrzeni nazw. Aby uzyskać więcej informacji na temat podstawowych usług międzyoperacyjnych, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) i [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).  
+  Gdy wywołujesz modelu obiektów programu PowerPoint, należy użyć typów, które są dostarczane w podstawowy zestaw międzyoperacyjny dla programu PowerPoint. Podstawowy zestaw międzyoperacyjny działa jako Most między kodu zarządzanego w dodatku narzędzi VSTO dla programów i model obiektów COM w programie PowerPoint. Wszystkie typy w programie PowerPoint podstawowy zestaw międzyoperacyjny są zdefiniowane w <xref:Microsoft.Office.Interop.PowerPoint> przestrzeni nazw. Aby uzyskać więcej informacji na temat podstawowych usług międzyoperacyjnych, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) i [podstawowe zestawy międzyoperacyjne pakietu Office](../vsto/office-primary-interop-assemblies.md).  
   
 ##  <a name="WordOMDocumentation"></a> Zapoznaj się z dokumentacją modelu obiektu programu PowerPoint  
  Aby uzyskać pełne informacje o modelu obiektów programu PowerPoint mogą odwoływać się do programu PowerPoint odwołanie do zestawu podstawowej usługi międzyoperacyjnej (PIA) i dokumentacja modelu obiektów języka VBA.  

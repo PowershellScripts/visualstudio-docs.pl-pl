@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5977275b352bf11914760d9cdf7ccada22caccc8
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aa0805b3cffe5a44ae2c6198c6ca2682ceca9f95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865410"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Instalowanie analizatorów platformie kompilatora .NET
 
@@ -28,11 +28,11 @@ Visual Studio 2017 zawiera podstawowy zestaw platformy kompilatora .NET (*Roslyn
 
 1. Znajdź pakiet analizatora, które chcesz zainstalować na www.nuget.org. Na przykład możesz chcieć [zainstalować analizatory Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) Aby sprawdzić swój kod pod kątem problemów zabezpieczeń i wydajności, między innymi.
 
-1. Zainstaluj pakiet w programie Visual Studio, za pomocą [Konsola Menedżera pakietów](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) lub [interfejs użytkownika Menedżera pakietów](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
+2. Zainstaluj pakiet w programie Visual Studio, za pomocą [Konsola Menedżera pakietów](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) lub [interfejs użytkownika Menedżera pakietów](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
    > Strona www.nuget.org dla każdego pakietu analizatora zawiera polecenia, aby wkleić w **Konsola Menedżera pakietów**. Jest parzysta przydatną przycisk, aby skopiować tekst do Schowka.
-   >
+   > 
    > ![Strona NuGet.org przedstawiający polecenia konsoli Menedżera pakietów](media/nuget-install-command.png)
 
    Zestawy analizatora są zainstalowane i są wyświetlane w **Eksploratora rozwiązań** w obszarze **odwołania** > **analizatory**.
@@ -46,25 +46,25 @@ Visual Studio 2017 zawiera podstawowy zestaw platformy kompilatora .NET (*Roslyn
    > [!NOTE]
    > Alternatywnie można znaleźć i pobrać rozszerzenia analizatora bezpośrednio z [Visual Studio Marketplace](https://marketplace.visualstudio.com).
 
-1. Rozwiń **Online** w okienku po lewej stronie, a następnie wybierz **Visual Studio Marketplace**.
+2. Rozwiń **Online** w okienku po lewej stronie, a następnie wybierz **Visual Studio Marketplace**.
 
-1. W polu wyszukiwania wpisz nazwę rozszerzenia analizatora, które chcesz zainstalować. Na przykład możesz chcieć [zainstalować analizatory Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) Aby sprawdzić swój kod pod kątem problemów zabezpieczeń i wydajności, między innymi.
+3. W polu wyszukiwania wpisz nazwę rozszerzenia analizatora, które chcesz zainstalować. Na przykład możesz chcieć [zainstalować analizatory Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix) Aby sprawdzić swój kod pod kątem problemów zabezpieczeń i wydajności, między innymi.
 
-1. Wybierz **Pobierz**.
+4. Wybierz **Pobierz**.
 
    Rozszerzenie zostanie pobrana.
 
-1. Wybierz **OK** aby zamknąć okno dialogowe, a następnie zamknij wszystkie wystąpienia programu Visual Studio, aby uruchomić **Instalator VSIX**.
+5. Wybierz **OK** aby zamknąć okno dialogowe, a następnie zamknij wszystkie wystąpienia programu Visual Studio, aby uruchomić **Instalator VSIX**.
 
    **Instalator VSIX** zostanie otwarte okno dialogowe.
 
    ![Instalator VSIX dla analizy kodu firmy Microsoft](media/vsix-installer-code-analysis.png)
 
-1. Wybierz **Modyfikuj** aby rozpocząć instalację.
+6. Wybierz **Modyfikuj** aby rozpocząć instalację.
 
-1. Po minucie lub dwóch kończy instalację. Wybierz **Zamknij**.
+7. Po minucie lub dwóch kończy instalację. Wybierz **Zamknij**.
 
-1. Otwórz ponownie program Visual Studio.
+8. Otwórz ponownie program Visual Studio.
 
 Jeśli chcesz sprawdzić, czy rozszerzenie jest zainstalowane, wybierz opcję **narzędzia** > **rozszerzenia i aktualizacje**. W **rozszerzenia i aktualizacje** okno dialogowe, wybierz opcję **zainstalowane** kategorii po lewej stronie, a następnie Wyszukaj według nazwy rozszerzenia.
 

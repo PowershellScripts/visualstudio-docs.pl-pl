@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ba8c37e4fd5e62a0f8d05d735fb991c86937698d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859994"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816708"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Dostosowywanie i rozszerzanie języka specyficznego dla domeny
 Program Visual Studio do modelowania i zestaw SDK wizualizacji (VMSDK) zawiera kilka poziomów, w których można zdefiniować narzędzi do modelowania:
@@ -35,7 +35,7 @@ Program Visual Studio do modelowania i zestaw SDK wizualizacji (VMSDK) zawiera k
 ## <a name="customShapes"></a> W tej sekcji
 
 |Aby uzyskać ten efekt|Można znaleźć w tym temacie|
-|----------------------------|-------------------------|
+|-|-|
 |Zezwalaj użytkownikowi na Ustawianie kolorów i styl właściwości kształtu.|Kliknij prawym przyciskiem myszy klasę kształtu lub połączenia, wskaż opcję **Dodaj udostępniane**i kliknij element.<br /><br /> Zobacz [Dostosowywanie prezentacji na diagramie](../modeling/customizing-presentation-on-the-diagram.md).|
 |Różne rodzaje elementu modelu podobne na diagramie, udostępnianie właściwości, takie jak początkowa wysokość i szerokość, kolory, etykietki narzędzi.|Za pomocą dziedziczenia między kształty lub klas łącznika. Mapowania między pochodnej kształty i klasy pochodnej domeny dziedziczą szczegóły mapowania elementów nadrzędnych.<br /><br /> Lub mapowania klas innej domeny w tej samej klasie kształtu.|
 |Klasa elementu modelu jest wyświetlana w kontekstach różne kształty.|Więcej niż jedną klasę kształtu są mapowane na tej samej klasy domeny. W przypadku tworzenia rozwiązania, postępuj zgodnie z raportu o błędach i podaj żądany kod, aby zdecydować, jaki kształt do użycia.|

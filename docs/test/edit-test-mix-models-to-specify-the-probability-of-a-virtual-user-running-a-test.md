@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 32fc3ef0684c89c422fac76550ba1fa123eb2f6b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ee123e474ad4b52b3debe6ad65bf6424388fe191
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180444"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816019"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Edytowanie modeli testów mieszanych, aby określić prawdopodobieństwo, że użytkownik wirtualny uruchomi testu
 
@@ -37,7 +37,7 @@ Można określić jedną z następujących opcji model testu mieszanego, dla sce
 ## <a name="tasks"></a>Zadania
 
 |Zadania|Skojarzone tematy|
-|-----------|-----------------------|
+|-|-----------------------|
 |**Określanie testu mieszanego dla testu obciążeniowego:** podczas tworzenia testu obciążeniowego można określić ustawień dla testu obciążenia w **Kreatora nowego testu obciążeniowego**. W **nowego kreatora testu obciążenia**, możesz wybrać istniejące sieci web i testy jednostkowe można dodać do scenariusza początkowej. Po dodaniu testy do scenariusza, należy określić test mieszany w scenariuszu.<br /><br /> Załaduj opcje modelowania umożliwia bardziej dokładnie przewidzieć oczekiwane wykorzystanie w świecie rzeczywistym witryny sieci Web lub aplikacji, które obciążenia testujesz. Należy to zrobić, ponieważ test obciążenia, który nie jest oparty na dokładne ładowanie modelu można wygenerować wyświetlenie nieprawdziwych wyników.|-   [Emulowanie oczekiwanego wykorzystania rzeczywistych witryny sieci Web lub aplikacji](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md)|
 |**Edytuj model testu mieszanego:** można zmienić scenariusza testu obciążeniowego, aby użyć jednego z modeli testów mieszanych przy użyciu **edytora testu obciążenia**.||
 |**Konfigurowanie rozkład opóźnienia dla użytkownika realizowany testu mieszanego modelu:** Jeśli scenariusza testu obciążenia jest skonfigurowany do używania **oparty na tempie model testu mieszanego użytkownika**, można określić sposób dystrybucji opóźnienie Pacing skonfigurowane.|-   [Porady: Zastosuj rozkład opóźnienia, korzystając z tempa model testu mieszanego użytkownika do](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|

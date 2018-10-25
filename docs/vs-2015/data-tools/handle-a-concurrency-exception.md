@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5949578a6515d74d97821608093f8cdf0dfc7b15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812936"
 ---
 # <a name="handle-a-concurrency-exception"></a>Obsługiwanie wyjątku współbieżności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,13 +129,13 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
   
  Applicationpresents użytkownika za pomocą trzech wersjach rekordu:  
   
--   Bieżący rekord w bazie danych  
+- Bieżący rekord w bazie danych  
   
--   Oryginalny rekord, który jest ładowany do zestawu danych  
+- Oryginalny rekord, który jest ładowany do zestawu danych  
   
--   Proponowane zmiany w zestawie danych  
+- Proponowane zmiany w zestawie danych  
   
- Następnie użytkownik będzie mógł zastąpienia bazy danych przy użyciu proponowanych wersji lub anulować aktualizację i odświeżyć zestaw danych z nowymi wartościami z bazy danych.  
+  Następnie użytkownik będzie mógł zastąpienia bazy danych przy użyciu proponowanych wersji lub anulować aktualizację i odświeżyć zestaw danych z nowymi wartościami z bazy danych.  
   
 #### <a name="to-enable-the-handling-of-concurrency-errors"></a>Aby włączyć obsługę błędów współbieżności  
   

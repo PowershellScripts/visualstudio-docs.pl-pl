@@ -15,23 +15,23 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15f0aeda589b101d9d02c9741eabf8b0e1866e4c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e7d103415869cc30f2c940b632c73f611986af2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273367"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811365"
 ---
 # <a name="using-the-settings-store"></a>Korzystanie z magazynu ustawień
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Istnieją dwa rodzaje ustawień magazynów:  
   
--   Ustawienia konfiguracji, które są tylko do odczytu ustawień programu Visual Studio i pakietu VSPackage. Program Visual Studio scala ustawienia ze wszystkich wygenerowanych plików znanych .pkgdef tego magazynu.  
+- Ustawienia konfiguracji, które są tylko do odczytu ustawień programu Visual Studio i pakietu VSPackage. Program Visual Studio scala ustawienia ze wszystkich wygenerowanych plików znanych .pkgdef tego magazynu.  
   
--   Ustawienia użytkownika, które są zapisywalne ustawienia takie jak te, które są wyświetlane na stronach **opcje** okno dialogowe strony właściwości i niektórych innych oknach dialogowych. Rozszerzenia programu Visual Studio może użyć lokalnego przechowywania niewielkich ilości danych.  
+- Ustawienia użytkownika, które są zapisywalne ustawienia takie jak te, które są wyświetlane na stronach **opcje** okno dialogowe strony właściwości i niektórych innych oknach dialogowych. Rozszerzenia programu Visual Studio może użyć lokalnego przechowywania niewielkich ilości danych.  
   
- W tym instruktażu pokazano, jak można odczytać danych z magazynu ustawień konfiguracji. Zobacz [zapisywania Store ustawienia użytkownika](../extensibility/writing-to-the-user-settings-store.md) opis zapisu w magazynie ustawień użytkownika.  
+  W tym instruktażu pokazano, jak można odczytać danych z magazynu ustawień konfiguracji. Zobacz [zapisywania Store ustawienia użytkownika](../extensibility/writing-to-the-user-settings-store.md) opis zapisu w magazynie ustawień użytkownika.  
   
 ## <a name="creating-the-example-project"></a>Tworzenie projektu w przykładzie  
  W tej sekcji pokazano, jak utworzyć projekt proste rozszerzenie za pomocą polecenia menu celów demonstracyjnych.  
@@ -43,44 +43,44 @@ Istnieją dwa rodzaje ustawień magazynów:
 ## <a name="using-the-configuration-settings-store"></a>Za pomocą Store ustawień konfiguracji  
  W tej sekcji pokazano, jak wykrywać i wyświetlanie ustawień konfiguracji.  
   
-1.  W pliku SettingsStorageCommand.cs, Dodaj następujące instrukcje using:  
+1. W pliku SettingsStorageCommand.cs, Dodaj następujące instrukcje using:  
   
-    ```  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Settings;  
-    using Microsoft.VisualStudio.Shell.Settings;  
-    using System.Windows.Forms;  
-    ```  
+   ```  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Settings;  
+   using Microsoft.VisualStudio.Shell.Settings;  
+   using System.Windows.Forms;  
+   ```  
   
-2.  W `MenuItemCallback`, Usuń treść metody i dodaj następujące wiersze Pobierz z magazynu ustawień konfiguracji:  
+2. W `MenuItemCallback`, Usuń treść metody i dodaj następujące wiersze Pobierz z magazynu ustawień konfiguracji:  
   
-    ```  
-    SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-    SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-    ```  
+   ```  
+   SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+   SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+   ```  
   
-     <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> Jest klasą pomocnika zarządzane za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> usługi.  
+    <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager> Jest klasą pomocnika zarządzane za pośrednictwem <xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager> usługi.  
   
-3.  Teraz Dowiedz się, czy są zainstalowane narzędzia Windows Phone. Kod powinien wyglądać następująco:  
+3. Teraz Dowiedz się, czy są zainstalowane narzędzia Windows Phone. Kod powinien wyglądać następująco:  
   
-    ```  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-        SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-        bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
-        string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
-        MessageBox.Show(message);  
-    }  
-    ```  
+   ```  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+       SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+       bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
+       string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
+       MessageBox.Show(message);  
+   }  
+   ```  
   
-4.  Przetestuj kod. Skompiluj projekt, a następnie rozpocząć debugowanie.  
+4. Przetestuj kod. Skompiluj projekt, a następnie rozpocząć debugowanie.  
   
-5.  W doświadczalnym wystąpieniu na **narzędzia** menu, kliknij przycisk **wywołania SettingsStoreCommand**.  
+5. W doświadczalnym wystąpieniu na **narzędzia** menu, kliknij przycisk **wywołania SettingsStoreCommand**.  
   
-     Powinny zostać wyświetlone okno komunikatu powiedzenie **Microsoft Windows Phone Developer Tools:** następuje **True** lub **False**.  
+    Powinny zostać wyświetlone okno komunikatu powiedzenie **Microsoft Windows Phone Developer Tools:** następuje **True** lub **False**.  
   
- Visual Studio przechowuje magazynu ustawień w rejestrze systemowym.  
+   Visual Studio przechowuje magazynu ustawień w rejestrze systemowym.  
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Aby sprawdzić ustawienia konfiguracji za pomocą Edytora rejestru  
   

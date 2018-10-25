@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5969d47ff6ecb7af60a8d008c4a7a82405be8c8e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 693261bb6894681b613ad0db2f0b3c116109a782
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35677161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813690"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Wskazówki: Projektowanie regionów formularzy programu Outlook
   Regiony formularza niestandardowego rozszerzenie standardowych lub niestandardowych formularzy programu Microsoft Office Outlook. W tym przewodniku projektujesz region formularza niestandardowego, który jest wyświetlany jako nową stronę w oknie Inspektora, skontaktuj się z elementu. Ten region formularza jest wyświetlenie mapy każdego adresu, który znajduje się do kontaktu, wysyłając informacje o adresach do witryny Windows Live lokalnego wyszukiwania w przeglądarce. Aby uzyskać informacji na temat regionów formularzy, zobacz [regionach formularzy programu Outlook z tworzenia](../vsto/creating-outlook-form-regions.md).  
@@ -45,11 +45,11 @@ ms.locfileid: "35677161"
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
   
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] lub [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
+- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] lub [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
- ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") wersja wideo tego tematu, zobacz [wideo porady: Projektowanie regionów formularzy programu Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).  
+  ![Link do wideo](../vsto/media/playvideo.gif "link do wideo") wersja wideo tego tematu, zobacz [wideo porady: Projektowanie regionów formularzy programu Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).  
   
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Utwórz nowy projekt dodatku narzędzi VSTO dla programu Outlook  
  Najpierw należy utworzyć podstawowy projekt dodatku narzędzi VSTO.  
@@ -117,24 +117,24 @@ ms.locfileid: "35677161"
   
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>Aby dostosować zachowanie regionu formularza  
   
-1.  W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy *MapIt.cs* lub *MapIt.vb*, a następnie kliknij przycisk **Wyświetl kod**.  
+1. W **Eksploratora rozwiązań**, kliknij prawym przyciskiem myszy *MapIt.cs* lub *MapIt.vb*, a następnie kliknij przycisk **Wyświetl kod**.  
   
-     *MapIt.cs* lub *MapIt.vb* zostanie otwarty w edytorze kodu.  
+    *MapIt.cs* lub *MapIt.vb* zostanie otwarty w edytorze kodu.  
   
-2.  Rozwiń **fabryka regionów formularza** kodu regionu.  
+2. Rozwiń **fabryka regionów formularza** kodu regionu.  
   
-     Klasa fabryka regionów formularza o nazwie `MapItFactory` jest widoczna.  
+    Klasa fabryka regionów formularza o nazwie `MapItFactory` jest widoczna.  
   
-3.  Dodaj następujący kod do `MapItFactory_FormRegionInitializing` programu obsługi zdarzeń. Ta procedura obsługi zdarzeń jest wywoływana, gdy użytkownik otwiera element kontaktu. Poniższy kod określa, czy skontaktuj się z pomocą element zawiera adres. Jeśli element kontaktu nie zawiera adresu, ten kod ustawia <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> właściwość <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> klasy **true** regionu formularza nie jest wyświetlany. W przeciwnym razie dodatku narzędzi VSTO zgłasza <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> zdarzeń i wyświetla regionu formularza.  
+3. Dodaj następujący kod do `MapItFactory_FormRegionInitializing` programu obsługi zdarzeń. Ta procedura obsługi zdarzeń jest wywoływana, gdy użytkownik otwiera element kontaktu. Poniższy kod określa, czy skontaktuj się z pomocą element zawiera adres. Jeśli element kontaktu nie zawiera adresu, ten kod ustawia <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> właściwość <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> klasy **true** regionu formularza nie jest wyświetlany. W przeciwnym razie dodatku narzędzi VSTO zgłasza <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> zdarzeń i wyświetla regionu formularza.  
   
-     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
-     [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
+    [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
+    [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
   
-4.  Dodaj następujący kod do <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> programu obsługi zdarzeń. Kod będzie wykonywał następujące zadania:  
+4. Dodaj następujący kod do <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> programu obsługi zdarzeń. Kod będzie wykonywał następujące zadania:  
   
-    -   Łączy każdy adres w elemencie skontaktuj się z pomocą i tworzy ciąg adresu URL.  
+   - Łączy każdy adres w elemencie skontaktuj się z pomocą i tworzy ciąg adresu URL.  
   
-    -   Wywołania <xref:System.Windows.Forms.WebBrowser.Navigate%2A> metody <xref:System.Windows.Forms.WebBrowser> obiektu i przekazuje ciągu adresu URL jako parametr.  
+   - Wywołania <xref:System.Windows.Forms.WebBrowser.Navigate%2A> metody <xref:System.Windows.Forms.WebBrowser> obiektu i przekazuje ciągu adresu URL jako parametr.  
   
      Witryną lokalną wyszukiwania pojawi się w regionie formularza mapy go i przedstawia każdy adres w konsoli do zera.  
   

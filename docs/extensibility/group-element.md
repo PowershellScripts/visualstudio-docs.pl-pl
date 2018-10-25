@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dad2781a0d8231c40ad16dd2c5bd2a7a0905cd3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 34ca01d77856fadabcc8e681d2be3b1eb6173c70
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813536"
 ---
 # <a name="group-element"></a>Element grupy
 Definiuje grupy poleceń pakietu VSPackage.  
@@ -39,8 +39,8 @@ Definiuje grupy poleceń pakietu VSPackage.
   
 |Atrybut|Opis|  
 |---------------|-----------------|  
-|Identyfikator GUID|Wymagane. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|  
-|identyfikator|Wymagane. Identyfikator GUID/ID identyfikator polecenia.|  
+|Identyfikator GUID|Wymagana. Identyfikator GUID identyfikatora polecenia identyfikator GUID/ID.|  
+|identyfikator|Wymagana. Identyfikator GUID/ID identyfikator polecenia.|  
 |priorytet|Opcjonalna. Wartość liczbowa określająca priorytet.|  
 |Warunek|Opcjonalna. Zobacz [atrybuty warunkowe](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   

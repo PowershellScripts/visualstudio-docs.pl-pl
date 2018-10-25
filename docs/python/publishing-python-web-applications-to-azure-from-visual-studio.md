@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 3ebfd95431948e4444cd6b7ed551c0b99e457fec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 050b98f663a1db6bde6d32342b094fe454046283
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277254"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459663"
 ---
 # <a name="publish-to-azure-app-service"></a>Publikowanie w usłudze Azure App Service
 
@@ -26,7 +26,7 @@ Obecnie obsługuje język Python w usłudze Azure App Service dla systemu Linux,
 > [!Note]
 > Obsługa w języku Python w usłudze Azure App Service dla Windows oficjalnie jest przestarzały. W rezultacie **publikowania** polecenia w programie Visual Studio jest oficjalnie obsługiwana tylko dla [docelowej usługi IIS](#publish-to-iis), i zdalne debugowanie w usłudze Azure App Service jest już oficjalnie obsługiwany.
 >
-> Jednak te funkcje kontynuować pracę w chwili obecnej, rozszerzenia języka Python dla usługi App Service na Windows pozostaną dostępne, ale będzie nie być obsłużonych lub zaktualizowane.
+> Jednak [publikowania w usłudze App Service w Windows](publish-to-app-service-windows.md) funkcje nadal działa w chwili obecnej, jak rozszerzenia języka Python dla usługi App Service na Windows pozostają dostępne, ale będzie nie obsłużonych lub zaktualizowane.
 
 ## <a name="publish-to-app-service-on-linux-using-git-deploy"></a>Publikowanie do usługi App Service w systemie Linux przy użyciu narzędzia Git wdrożenia
 

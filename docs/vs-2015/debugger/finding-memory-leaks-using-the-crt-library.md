@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4be0ac6e3e0de77f19f63b41ec53f433478f5063
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8157e10ccc79df3caea8257d46753f2993501e5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812287"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Wyszukiwanie przecieków pamięci za pomocą biblioteki CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,21 +112,21 @@ Object dump complete.
   
  Czy można zdefiniować `_CRTDBG_MAP_ALLOC` lub nie będą raport przecieku pamięci wyświetlić następujące informacje:  
   
--   Numer alokacji pamięci, która jest `18` w tym przykładzie  
+- Numer alokacji pamięci, która jest `18` w tym przykładzie  
   
--   [Typ bloku](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), czyli `normal` w tym przykładzie.  
+- [Typ bloku](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97), czyli `normal` w tym przykładzie.  
   
--   Lokalizacja pamięci szesnastkowej, czyli `0x00780E80` w tym przykładzie.  
+- Lokalizacja pamięci szesnastkowej, czyli `0x00780E80` w tym przykładzie.  
   
--   Rozmiar bloku, `64 bytes` w tym przykładzie.  
+- Rozmiar bloku, `64 bytes` w tym przykładzie.  
   
--   Pierwsze 16 bajtów danych w bloku, w postaci szesnastkowej.  
+- Pierwsze 16 bajtów danych w bloku, w postaci szesnastkowej.  
   
- Raport przecieku pamięci określa blok pamięci jako normalny, klienta lub CRT. A *Blok normalny* to zwykła pamięć przydzielana przez Twój program. A *blok klienta* to specjalny rodzaj bloku pamięci używany przez programy MFC dla obiektów, które wymagają destruktora. MFC `new` operator tworzy Blok normalny lub blok klienta, odpowiednio do tworzonego obiektu. A *blok CRT* jest przydzielany przez bibliotekę CRT na własny użytek. Biblioteka CRT obsługuje dezalokację dla tych bloków. Dlatego jest mało prawdopodobne, zobaczysz je w raporcie o przeciekach pamięci, chyba że występuje jakiś poważny problem, na przykład biblioteka CRT jest uszkodzona.  
+  Raport przecieku pamięci określa blok pamięci jako normalny, klienta lub CRT. A *Blok normalny* to zwykła pamięć przydzielana przez Twój program. A *blok klienta* to specjalny rodzaj bloku pamięci używany przez programy MFC dla obiektów, które wymagają destruktora. MFC `new` operator tworzy Blok normalny lub blok klienta, odpowiednio do tworzonego obiektu. A *blok CRT* jest przydzielany przez bibliotekę CRT na własny użytek. Biblioteka CRT obsługuje dezalokację dla tych bloków. Dlatego jest mało prawdopodobne, zobaczysz je w raporcie o przeciekach pamięci, chyba że występuje jakiś poważny problem, na przykład biblioteka CRT jest uszkodzona.  
   
- Istnieją dwa typy bloków pamięci, które nigdy nie są wyświetlane w raportach o przeciekach pamięci. A *wolny blok* pamięci, która została zwolniona. Oznacza to, że nie jest to przeciek, zgodnie z definicją. *Ignoruj blok* jest pamięcią, która jawnie oznaczone jako celu wykluczenia go ze raport przecieku pamięci.  
+  Istnieją dwa typy bloków pamięci, które nigdy nie są wyświetlane w raportach o przeciekach pamięci. A *wolny blok* pamięci, która została zwolniona. Oznacza to, że nie jest to przeciek, zgodnie z definicją. *Ignoruj blok* jest pamięcią, która jawnie oznaczone jako celu wykluczenia go ze raport przecieku pamięci.  
   
- Techniki te działają w przypadku pamięci przydzielonej przy użyciu standardowych CRT `malloc` funkcji. Jeśli Twój program przydziela pamięć przy użyciu języka C++ `new` operatora, jednak użytkownik może być widoczna tylko plik i numer wiersza gdzie wdrożenia globalnego `operator new` wywołania `_malloc_dbg` w raporcie o przecieku pamięci. To zachowanie nie jest bardzo przydatny, można zmienić go zgłosić wiersz, który wprowadzone alokacji za pomocą makra, który wygląda w następujący sposób: 
+  Techniki te działają w przypadku pamięci przydzielonej przy użyciu standardowych CRT `malloc` funkcji. Jeśli Twój program przydziela pamięć przy użyciu języka C++ `new` operatora, jednak użytkownik może być widoczna tylko plik i numer wiersza gdzie wdrożenia globalnego `operator new` wywołania `_malloc_dbg` w raporcie o przecieku pamięci. To zachowanie nie jest bardzo przydatny, można zmienić go zgłosić wiersz, który wprowadzone alokacji za pomocą makra, który wygląda w następujący sposób: 
  
 ```cpp  
 #ifdef _DEBUG
@@ -188,25 +188,25 @@ Oznacza to, że ujawnione przydział był przeznaczony w wierszu 20 debug_new.cp
   
 #### <a name="to-set-a-memory-allocation-breakpoint-using-the-watch-window"></a>Aby ustawić punkt przerwania alokacji pamięci za pomocą okna czujki  
   
-1.  Ustaw punkt przerwania w pobliżu początku aplikacji, a następnie uruchom aplikację.  
+1. Ustaw punkt przerwania w pobliżu początku aplikacji, a następnie uruchom aplikację.  
   
-2.  Gdy aplikacja przerywa w punkcie przerwania, **Obejrzyj** okna.  
+2. Gdy aplikacja przerywa w punkcie przerwania, **Obejrzyj** okna.  
   
-3.  W **Obejrzyj** okna, typ `_crtBreakAlloc` w **nazwa** kolumny.  
+3. W **Obejrzyj** okna, typ `_crtBreakAlloc` w **nazwa** kolumny.  
   
-     Jeśli używasz wielowątkowej wersji DLL biblioteki CRT (opcja/MD), Dodaj operator kontekstu: `{,,ucrtbased.dll}_crtBreakAlloc`  
+    Jeśli używasz wielowątkowej wersji DLL biblioteki CRT (opcja/MD), Dodaj operator kontekstu: `{,,ucrtbased.dll}_crtBreakAlloc`  
   
-4.  Naciśnij klawisz **zwracają**.  
+4. Naciśnij klawisz **zwracają**.  
   
-     Debuger ocenia wywołanie i umieszcza wynik w **wartość** kolumny. Ta wartość będzie równa – 1, jeśli nie ustawiono żadnych punktów przerwania w alokacjach pamięci.  
+    Debuger ocenia wywołanie i umieszcza wynik w **wartość** kolumny. Ta wartość będzie równa – 1, jeśli nie ustawiono żadnych punktów przerwania w alokacjach pamięci.  
   
-5.  W **wartość** kolumny, Zamień wartość widoczną z liczbą alokacji alokacji pamięci, w którym chcesz przerwać.  
+5. W **wartość** kolumny, Zamień wartość widoczną z liczbą alokacji alokacji pamięci, w którym chcesz przerwać.  
   
- Po ustawieniu punktu przerwania na liczbę alokacji pamięci można kontynuować debugowanie. Uważaj uruchomić program w tych samych warunkach jako poprzedniego uruchomienia, tak, aby nie zmienia kolejność alokacji pamięci. Kiedy program przerywa w określonej alokacji pamięci, możesz użyć **stos wywołań** okna i innych oknach debugera, aby określić warunki, w jakich pamięć została alokowana. Następnie można kontynuować wykonywanie, aby obserwować, co się dzieje z obiektem i ustalić, dlaczego go jest nie jest poprawnie dezalokowany.  
+   Po ustawieniu punktu przerwania na liczbę alokacji pamięci można kontynuować debugowanie. Uważaj uruchomić program w tych samych warunkach jako poprzedniego uruchomienia, tak, aby nie zmienia kolejność alokacji pamięci. Kiedy program przerywa w określonej alokacji pamięci, możesz użyć **stos wywołań** okna i innych oknach debugera, aby określić warunki, w jakich pamięć została alokowana. Następnie można kontynuować wykonywanie, aby obserwować, co się dzieje z obiektem i ustalić, dlaczego go jest nie jest poprawnie dezalokowany.  
   
- Ustawianie punktu przerwania danych obiektu może być również przydatne. Aby uzyskać więcej informacji, zobacz [przy użyciu punktów przerwania](../debugger/using-breakpoints.md).  
+   Ustawianie punktu przerwania danych obiektu może być również przydatne. Aby uzyskać więcej informacji, zobacz [przy użyciu punktów przerwania](../debugger/using-breakpoints.md).  
   
- Można również ustawić punkty przerwania alokacji pamięci, w kodzie. Istnieją dwa sposoby wykonania tej czynności:  
+   Można również ustawić punkty przerwania alokacji pamięci, w kodzie. Istnieją dwa sposoby wykonania tej czynności:  
   
 ```  
 _crtBreakAlloc = 18;  

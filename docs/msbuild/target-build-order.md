@@ -12,27 +12,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7546c2da20c29f0140bd6b9572175ae0c2b019ad
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 13405d197fc5ab64d4c7b7040580f073e36f98c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879372"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812663"
 ---
 # <a name="target-build-order"></a>Kolejność kompilowania obiektów docelowych
 Muszą być uporządkowane obiekty docelowe, jeśli dane wejściowe do jednego obiektu docelowego jest zależna od danych wyjściowych z innym elementem docelowym. Aby określić kolejność uruchamiania elementów docelowych, można użyć tych atrybutów:  
   
--   `InitialTargets`. To `Project` atrybut określa elementy docelowe, które będą uruchamiane po pierwsze, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w `DefaultTargets` atrybutu.  
+- `InitialTargets`. To `Project` atrybut określa elementy docelowe, które będą uruchamiane po pierwsze, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w `DefaultTargets` atrybutu.  
   
--   `DefaultTargets`. To `Project` atttribute Określa, które elementy docelowe są uruchamiane, jeśli element docelowy nie jest jawnie określona w wierszu polecenia.  
+- `DefaultTargets`. To `Project` atttribute Określa, które elementy docelowe są uruchamiane, jeśli element docelowy nie jest jawnie określona w wierszu polecenia.  
   
--   `DependsOnTargets`. To `Target` atrybut określa elementy docelowe, które muszą zostać uruchomione przed uruchomieniem tego obiektu docelowego.  
+- `DependsOnTargets`. To `Target` atrybut określa elementy docelowe, które muszą zostać uruchomione przed uruchomieniem tego obiektu docelowego.  
   
--   `BeforeTargets` i `AfterTargets`. Te `Target` atrybuty określają, że ten element docelowy powinien być wykonywany przed lub po określonych celów (MSBuild 4.0).  
+- `BeforeTargets` i `AfterTargets`. Te `Target` atrybuty określają, że ten element docelowy powinien być wykonywany przed lub po określonych celów (MSBuild 4.0).  
   
- Obiekt docelowy nigdy nie jest uruchamiane dwa razy podczas kompilacji, nawet wtedy, gdy kolejne docelowego w kompilacji zależy od niego. Po uruchomieniu elementu docelowego swój wkład zgodnie z kompilacją zostało ukończone.  
+  Obiekt docelowy nigdy nie jest uruchamiane dwa razy podczas kompilacji, nawet wtedy, gdy kolejne docelowego w kompilacji zależy od niego. Po uruchomieniu elementu docelowego swój wkład zgodnie z kompilacją zostało ukończone.  
   
- Obiekty docelowe może mieć `Condition` atrybutu. Jeśli określony warunek ma `false`, element docelowy nie jest wykonywane i nie ma wpływu na kompilację. Aby uzyskać więcej informacji o warunkach, zobacz [warunki](../msbuild/msbuild-conditions.md).  
+  Obiekty docelowe może mieć `Condition` atrybutu. Jeśli określony warunek ma `false`, element docelowy nie jest wykonywane i nie ma wpływu na kompilację. Aby uzyskać więcej informacji o warunkach, zobacz [warunki](../msbuild/msbuild-conditions.md).  
   
 ## <a name="initial-targets"></a>Cele początkowe  
  `InitialTargets` Atrybutu [projektu](../msbuild/project-element-msbuild.md) element określa elementy docelowe, które będą uruchamiane po pierwsze, nawet jeśli obiekty docelowe są określone w wierszu polecenia lub w `DefaultTargets` atrybutu. Cele początkowe są zwykle używane do sprawdzania błędów.  

@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ee3bfaac9cfcdf887a22c84e0b98a13f8add7ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812949"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definiowanie kształtów i łączników
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ Istnieje kilka typów podstawowych kształtów, które mogą być używane do wy
 ##  <a name="shapeTypes"></a> Podstawowe typy kształtów i łączników  
  DSL diagram zawiera zbiór *kształty* powiązane liniami lub *łączników*.  Zwykle, ale nie zawsze:  
   
--   Kształty są widoczne reprezentacja elementów modelu.  
+- Kształty są widoczne reprezentacja elementów modelu.  
   
--   Łączniki reprezentują relacje odniesienia.  
+- Łączniki reprezentują relacje odniesienia.  
   
--   Diagram przedstawia wystąpienie katalogu głównego modelu.  
+- Diagram przedstawia wystąpienie katalogu głównego modelu.  
   
--   Osadzanie relacje między elementami modelu są wyświetlane przez relację zawierania. Na przykład elementów reprezentujących porty składnika są osadzone w składniku.  
+- Osadzanie relacje między elementami modelu są wyświetlane przez relację zawierania. Na przykład elementów reprezentujących porty składnika są osadzone w składniku.  
   
- Te wzorce nie są wymuszane, ale mocno są obsługiwane. Podczas projektowania DSL ponosi należy pamiętać, że projekt relacji osadzania powinien być wpływ, jaki chcesz przedstawić modelu na ekranie. Z drugiej strony relacje odniesienia powinien odzwierciedlać pojęcia domeny biznesowej.  
+  Te wzorce nie są wymuszane, ale mocno są obsługiwane. Podczas projektowania DSL ponosi należy pamiętać, że projekt relacji osadzania powinien być wpływ, jaki chcesz przedstawić modelu na ekranie. Z drugiej strony relacje odniesienia powinien odzwierciedlać pojęcia domeny biznesowej.  
   
- Dostępne są następujące typy kształtów:  
+  Dostępne są następujące typy kształtów:  
   
 |Typ kształtu|Opis|  
 |----------------|-----------------|  

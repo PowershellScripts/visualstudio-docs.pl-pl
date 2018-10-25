@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: faa6f205bfc4033ea4adb92f5d0d0a6718d4ac47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 91600821b3d68c04382028e469a4e1a54a5d191c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286406"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812761"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Porady: Dodawanie walidacji do klas jednostek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,46 +37,46 @@ ms.locfileid: "49286406"
   
 #### <a name="to-validate-data-during-a-columns-value-change"></a>Aby sprawdzić poprawność danych podczas zmiany wartości w kolumnie  
   
-1.  Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**.)  
+1. Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**.)  
   
-2.  W Projektancie obiektów relacyjnych, kliknij prawym przyciskiem myszy klasę, dla którego chcesz dodać sprawdzanie poprawności, a następnie kliknij przycisk **Wyświetl kod**.  
+2. W Projektancie obiektów relacyjnych, kliknij prawym przyciskiem myszy klasę, dla którego chcesz dodać sprawdzanie poprawności, a następnie kliknij przycisk **Wyświetl kod**.  
   
-     Zostanie otwarty Edytor kodu klasę częściową dla klasy wybranego obiektu.  
+    Zostanie otwarty Edytor kodu klasę częściową dla klasy wybranego obiektu.  
   
-3.  Umieść kursor w klasie częściowej.  
+3. Umieść kursor w klasie częściowej.  
   
-4.  Dla projektów języka Visual Basic:  
+4. Dla projektów języka Visual Basic:  
   
-    1.  Rozwiń **nazwę metody** listy.  
+   1. Rozwiń **nazwę metody** listy.  
   
-    2.  Znajdź **na**_COLUMNNAME_**zmiana** metody dla kolumny, które chcesz dodać sprawdzanie poprawności, aby.  
+   2. Znajdź **na**_COLUMNNAME_**zmiana** metody dla kolumny, które chcesz dodać sprawdzanie poprawności, aby.  
   
-    3.  `On` *COLUMNNAME* `Changing` metoda jest dodawana do klasy częściowej.  
+   3. `On` *COLUMNNAME* `Changing` metoda jest dodawana do klasy częściowej.  
   
-    4.  Dodaj następujący kod, aby najpierw sprawdź, czy wprowadzona wartość, a następnie upewnij się, że wprowadzona dla kolumny, która wartość jest dopuszczalny dla aplikacji. `value` Argument zawiera proponowana wartość, więc Dodaj logikę, aby upewnić się, że jest prawidłowa wartość:  
+   4. Dodaj następujący kod, aby najpierw sprawdź, czy wprowadzona wartość, a następnie upewnij się, że wprowadzona dla kolumny, która wartość jest dopuszczalny dla aplikacji. `value` Argument zawiera proponowana wartość, więc Dodaj logikę, aby upewnić się, że jest prawidłowa wartość:  
   
-        ```vb  
-        If value.HasValue Then  
-            ' Add code to ensure that the value is acceptable.  
-            ' If value < 1 Then  
-            '    Throw New Exception("Invalid data!")  
-            ' End If  
-        End If  
-        ```  
+      ```vb  
+      If value.HasValue Then  
+          ' Add code to ensure that the value is acceptable.  
+          ' If value < 1 Then  
+          '    Throw New Exception("Invalid data!")  
+          ' End If  
+      End If  
+      ```  
   
-     Dla projektów C#:  
+      Dla projektów C#:  
   
-    1.  Ponieważ projektów języka C# nie generują automatycznie obsługi zdarzeń, można użyć funkcji IntelliSense do tworzenia metody częściowe zmieniającej się kolumny.  
+   5. Ponieważ projektów języka C# nie generują automatycznie obsługi zdarzeń, można użyć funkcji IntelliSense do tworzenia metody częściowe zmieniającej się kolumny.  
   
-         Typ `partial` i następnie spację, aby uzyskać dostęp do listy dostępnych metod częściowych. Kliknij metodę zmieniającej się kolumny dla kolumny, które chcesz dodać sprawdzanie poprawności. Poniższy kod jest podobny kod, który jest generowany po wybraniu metody częściowej zmieniającej się kolumny:  
+       Typ `partial` i następnie spację, aby uzyskać dostęp do listy dostępnych metod częściowych. Kliknij metodę zmieniającej się kolumny dla kolumny, które chcesz dodać sprawdzanie poprawności. Poniższy kod jest podobny kod, który jest generowany po wybraniu metody częściowej zmieniającej się kolumny:  
   
-        ```csharp  
-        partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)  
-            {  
-               throw new System.NotImplementedException();  
-            }  
+      ```csharp  
+      partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)  
+          {  
+             throw new System.NotImplementedException();  
+          }  
   
-        ```  
+      ```  
   
 ## <a name="adding-validation-for-updates-to-an-entity-class"></a>Dodawanie sprawdzania poprawności dla aktualizacji do klasy jednostki  
  Oprócz sprawdzania wartości podczas wprowadzania zmian, możesz również walidować dane podczas próby aktualizacji klasy całą jednostkę. Sprawdzanie poprawności podczas próby aktualizacji umożliwia porównanie wartości w wielu kolumnach, jeśli reguły biznesowe tego wymagać. Poniższa procedura pokazuje, jak sprawdzania poprawności, gdy podejmowana jest próba aktualizacja klasy całą jednostkę.  
@@ -86,47 +86,47 @@ ms.locfileid: "49286406"
   
 #### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Aby sprawdzić poprawność danych podczas aktualizacji do klasy jednostki  
   
-1.  Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**.)  
+1. Otwórz lub Utwórz nowy plik LINQ to SQL klas (**dbml** pliku) w [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Kliknij dwukrotnie **dbml** w pliku **Eksploratora rozwiązań**.)  
   
-2.  Kliknij prawym przyciskiem myszy pusty obszar na O/R Designer, a następnie kliknij przycisk **Wyświetl kod**.  
+2. Kliknij prawym przyciskiem myszy pusty obszar na O/R Designer, a następnie kliknij przycisk **Wyświetl kod**.  
   
-     Zostanie otwarty Edytor kodu za pomocą klasę częściową dla `DataContext`.  
+    Zostanie otwarty Edytor kodu za pomocą klasę częściową dla `DataContext`.  
   
-3.  Umieść kursor w klasie częściowej dla `DataContext`.  
+3. Umieść kursor w klasie częściowej dla `DataContext`.  
   
-4.  Dla projektów języka Visual Basic:  
+4. Dla projektów języka Visual Basic:  
   
-    1.  Rozwiń **nazwę metody** listy.  
+   1. Rozwiń **nazwę metody** listy.  
   
-    2.  Kliknij przycisk **aktualizacji**_ENTITYCLASSNAME_.  
+   2. Kliknij przycisk **aktualizacji**_ENTITYCLASSNAME_.  
   
-    3.  `Update` *ENTITYCLASSNAME* metoda jest dodawana do klasy częściowej.  
+   3. `Update` *ENTITYCLASSNAME* metoda jest dodawana do klasy częściowej.  
   
-    4.  Dostęp do wartości poszczególnych kolumn przy użyciu `instance` argumentu, jak pokazano w poniższym kodzie:  
+   4. Dostęp do wartości poszczególnych kolumn przy użyciu `instance` argumentu, jak pokazano w poniższym kodzie:  
   
-        ```vb  
-        If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then  
-            Dim ErrorMessage As String = "Invalid data!"  
-            Throw New Exception(ErrorMessage)  
-        End If  
-        ```  
+      ```vb  
+      If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then  
+          Dim ErrorMessage As String = "Invalid data!"  
+          Throw New Exception(ErrorMessage)  
+      End If  
+      ```  
   
-     Dla projektów C#:  
+      Dla projektów C#:  
   
-    1.  Ponieważ projektów języka C# nie generują automatycznie obsługi zdarzeń, można użyć funkcji IntelliSense do utworzenia częściowego `Update` *CLASSNAME* metody.  
+   5. Ponieważ projektów języka C# nie generują automatycznie obsługi zdarzeń, można użyć funkcji IntelliSense do utworzenia częściowego `Update` *CLASSNAME* metody.  
   
-    2.  Typ `partial` i następnie spację, aby uzyskać dostęp do listy dostępnych metod częściowych. Kliknij metodę aktualizacji dla klasy, które chcesz dodać sprawdzanie poprawności. Poniższy kod jest podobny kod, który jest generowany, gdy wybierzesz `Update` *CLASSNAME* metody częściowej:  
+   6. Typ `partial` i następnie spację, aby uzyskać dostęp do listy dostępnych metod częściowych. Kliknij metodę aktualizacji dla klasy, które chcesz dodać sprawdzanie poprawności. Poniższy kod jest podobny kod, który jest generowany, gdy wybierzesz `Update` *CLASSNAME* metody częściowej:  
   
-        ```csharp  
-        partial void UpdateCLASSNAME(CLASSNAME instance)  
-        {  
-            if ((instance.COLUMNNAME == x) && (instance.COLUMNNAME = y))  
-            {  
-                string ErrorMessage = "Invalid data!";  
-                throw new System.Exception(ErrorMessage);  
-            }  
-        }  
-        ```  
+      ```csharp  
+      partial void UpdateCLASSNAME(CLASSNAME instance)  
+      {  
+          if ((instance.COLUMNNAME == x) && (instance.COLUMNNAME = y))  
+          {  
+              string ErrorMessage = "Invalid data!";  
+              throw new System.Exception(ErrorMessage);  
+          }  
+      }  
+      ```  
   
 ## <a name="see-also"></a>Zobacz też  
  [LINQ to SQL Tools w programie Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

@@ -31,12 +31,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1daa2681b52f8e052d2868135d028bbbe0092fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 215bebb071ce707e2997e934fd58901ec2d56b8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194717"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816342"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,27 +45,27 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
   
  Technologia IntelliSense sprawia, że łatwiej wykonać następujące zadania:  
   
--   Znajdowanie informacji o elemencie członkowskim.  
+- Znajdowanie informacji o elemencie członkowskim.  
   
--   Wstawianie elementów języka bezpośrednio w kodzie.  
+- Wstawianie elementów języka bezpośrednio w kodzie.  
   
--   Obsługa kontekstu bez konieczności opuszczania Edytora kodu.  
+- Obsługa kontekstu bez konieczności opuszczania Edytora kodu.  
   
--   Obsługa niestandardowej technologii IntelliSense z komentarzami dokumentacji XML i rozszerzalność JavaScript IntelliSense.  
+- Obsługa niestandardowej technologii IntelliSense z komentarzami dokumentacji XML i rozszerzalność JavaScript IntelliSense.  
   
- Ten temat zawiera następujące sekcje:  
+  Ten temat zawiera następujące sekcje:  
   
--   [Określanie kontekstu IntelliSense](#DeterminingIntelliSenseContext)  
+- [Określanie kontekstu IntelliSense](#DeterminingIntelliSenseContext)  
   
--   [Przetwarzanie informacji IntelliSense](#ProcessingIntelliSenseInformation)  
+- [Przetwarzanie informacji IntelliSense](#ProcessingIntelliSenseInformation)  
   
--   [Funkcje JavaScript IntelliSense](#Features)  
+- [Funkcje JavaScript IntelliSense](#Features)  
   
--   [Rozszerzalność JavaScript IntelliSense](#Extensibility)  
+- [Rozszerzalność JavaScript IntelliSense](#Extensibility)  
   
--   [Sprawdzanie poprawności języka JavaScript](#Validation)  
+- [Sprawdzanie poprawności języka JavaScript](#Validation)  
   
- Aby uzyskać więcej informacji na temat funkcji IntelliSense [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md).  
+  Aby uzyskać więcej informacji na temat funkcji IntelliSense [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], zobacz [za pomocą funkcji IntelliSense](../ide/using-intellisense.md).  
   
 ##  <a name="DeterminingIntelliSenseContext"></a> Określanie kontekstu IntelliSense  
  Technologia JavaScript IntelliSense zawiera opcje kodowania w zależności od całego skryptu, który odnosi się do bieżącego kontekstu skryptu. Obejmuje to elementy skryptu w bieżącym pliku. Obejmuje to również wszelki kod, który jest wywoływany bezpośrednio lub pośrednio ze skryptu, takie jak odwołania do pliku skryptu, odwołania do zestawów skryptów, odwołania do usługi i odwołania do strony skojarzonej.  
@@ -103,25 +103,25 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 ##  <a name="Features"></a> Funkcje JavaScript IntelliSense  
  Technologia JavaScript IntelliSense obsługuje następujące obiekty:  
   
--   [Elementy Object Model (DOM) dokumentu](#HTMLDom)  
+- [Elementy Object Model (DOM) dokumentu](#HTMLDom)  
   
--   [Obiekty wewnętrzne](#IntrinsicObjects)  
+- [Obiekty wewnętrzne](#IntrinsicObjects)  
   
--   [Zmienne zdefiniowane przez użytkownika, funkcje i obiekty](#UserDefined)  
+- [Zmienne zdefiniowane przez użytkownika, funkcje i obiekty](#UserDefined)  
   
--   Obiekty zdefiniowane w zewnętrznych plikach przy użyciu odwołań, takie jak [odwołania do skryptu](#Script), [odwołania dyrektywach](#ReferenceDirectives), i [odwoływać się do grup](#ReferenceGroups).  
+- Obiekty zdefiniowane w zewnętrznych plikach przy użyciu odwołań, takie jak [odwołania do skryptu](#Script), [odwołania dyrektywach](#ReferenceDirectives), i [odwoływać się do grup](#ReferenceGroups).  
   
--   Obiekty zdefiniowane w zdalnych plikach, które zostały pobrane przez program Visual Studio.  
+- Obiekty zdefiniowane w zdalnych plikach, które zostały pobrane przez program Visual Studio.  
   
--   Obiekty określone w [komentarze dokumentacji XML](#XMLDocComments), takich jak parametry i pola.  
+- Obiekty określone w [komentarze dokumentacji XML](#XMLDocComments), takich jak parametry i pola.  
   
--   Obiekty oznaczone przy użyciu standardowych znaczników komentarza JavaScript (//). Aby uzyskać więcej informacji, zobacz [rozszerzanie JavaScript IntelliSense](../ide/extending-javascript-intellisense.md).  
+- Obiekty oznaczone przy użyciu standardowych znaczników komentarza JavaScript (//). Aby uzyskać więcej informacji, zobacz [rozszerzanie JavaScript IntelliSense](../ide/extending-javascript-intellisense.md).  
   
--   Obiekty obsługiwane za pomocą [rozszerzalność IntelliSense języka JavaScript](#Extensibility) mechanizm. Aby uzyskać więcej informacji, zobacz [rozszerzanie JavaScript IntelliSense](../ide/extending-javascript-intellisense.md).  
+- Obiekty obsługiwane za pomocą [rozszerzalność IntelliSense języka JavaScript](#Extensibility) mechanizm. Aby uzyskać więcej informacji, zobacz [rozszerzanie JavaScript IntelliSense](../ide/extending-javascript-intellisense.md).  
   
--   [Obiekty ASP.NET AJAX](#ASPNet)  
+- [Obiekty ASP.NET AJAX](#ASPNet)  
   
- Gdy IntelliSense nie jest w stanie określić typu obiektu, udostępnia opcje uzupełniania instrukcji przy użyciu identyfikatorów w aktywnym dokumencie. Aby uzyskać więcej informacji, zobacz [uzupełnianie składni dla identyfikatorów](../ide/statement-completion-for-identifiers.md).  
+  Gdy IntelliSense nie jest w stanie określić typu obiektu, udostępnia opcje uzupełniania instrukcji przy użyciu identyfikatorów w aktywnym dokumencie. Aby uzyskać więcej informacji, zobacz [uzupełnianie składni dla identyfikatorów](../ide/statement-completion-for-identifiers.md).  
   
 ###  <a name="HTMLDom"></a> Elementy DOM HTML  
  Technologia JavaScript IntelliSense zawiera odwołania programistyczne dla elementów DOM Dynamic HTML (DHTML), takie jak `body`, `form`, i `div`. Tylko elementy, które są zawarte w bieżącym dokumencie i na stronie głównej, są wyświetlane przez technologię IntelliSense. JavaScript IntelliSense obsługuje również `window` i `document` obiektów i ich elementów członkowskich.  
@@ -227,15 +227,15 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
 ####  <a name="ReferenceGroups"></a> Grupy odwołań  
  Można używać wstępnie zdefiniowanych grup odwołań w celu określania, że konkretne pliki .js IntelliSense znajdują się w zakresie dla różnych projektów JavaScript. Dostępne są następujące typy grup odwołań:  
   
--   Niejawna (Windows), aby uzyskać [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji przy użyciu języka JavaScript. Pliki dołączone do tej grupy są w zakresie dla każdego pliku .js otwartego w Edytorze kodu dla projektu określonego typu.  
+- Niejawna (Windows), aby uzyskać [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplikacji przy użyciu języka JavaScript. Pliki dołączone do tej grupy są w zakresie dla każdego pliku .js otwartego w Edytorze kodu dla projektu określonego typu.  
   
--   Niejawna (sieć Web) dla projektów HTML5. Pliki dołączone do tej grupy są w zakresie dla każdego pliku .js otwartego w Edytorze kodu dla tych typów projektu.  
+- Niejawna (sieć Web) dla projektów HTML5. Pliki dołączone do tej grupy są w zakresie dla każdego pliku .js otwartego w Edytorze kodu dla tych typów projektu.  
   
--   Grupy odwołań wyspecjalizowanych funkcji roboczych, dla funkcji roboczych HTML5 sieci Web. Pliki określone w tej grupie są w zakresie plików .js, które mają wyraźne odniesienie do grupy odwołań wyspecjalizowanych funkcji roboczych.  
+- Grupy odwołań wyspecjalizowanych funkcji roboczych, dla funkcji roboczych HTML5 sieci Web. Pliki określone w tej grupie są w zakresie plików .js, które mają wyraźne odniesienie do grupy odwołań wyspecjalizowanych funkcji roboczych.  
   
--   Ogólna dla innych typów projektów języka JavaScript.  
+- Ogólna dla innych typów projektów języka JavaScript.  
   
- W większości scenariuszy nie trzeba modyfikować grup odwołań. Jednakże, jeśli chcesz wprowadzić zmiany,możesz użyć opcji konfiguracji dla Edytora kodu JavaScript w celu określenia plików znajdujących się w grupach odwołań. Aby uzyskać instrukcje na temat używania tej funkcji, zobacz [opcje, Edytor tekstu, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
+  W większości scenariuszy nie trzeba modyfikować grup odwołań. Jednakże, jeśli chcesz wprowadzić zmiany,możesz użyć opcji konfiguracji dla Edytora kodu JavaScript w celu określenia plików znajdujących się w grupach odwołań. Aby uzyskać instrukcje na temat używania tej funkcji, zobacz [opcje, Edytor tekstu, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
   
 > [!TIP]
 >  Odwołania IntelliSense są zazwyczaj używane do obsługi technologii IntelliSense dla obiektów globalnych i dla technologii IntelliSense [rozszerzenia](#Extensibility). Ta funkcja służy również dla skryptów, które muszą być ładowane w czasie wykonywania za pomocą programu ładującego skrypt.  
@@ -256,13 +256,13 @@ Technologia IntelliSense pomaga napisać kod szybciej i z mniejszą liczbą bł�
   
  Technologia IntelliSense można wyświetlić komentarze dokumentacji XML w następujących scenariuszach:  
   
--   Plik .js, który odwołuje się do innego pliku .js.  
+- Plik .js, który odwołuje się do innego pliku .js.  
   
--   Plik .js, który odwołuje się do pliku .aspx.  
+- Plik .js, który odwołuje się do pliku .aspx.  
   
--   Plik .aspx, który odwołuje się do pliku .js.  
+- Plik .aspx, który odwołuje się do pliku .js.  
   
- Technologia IntelliSense nie jest dostępna, gdy jeden plik .aspx odwołuje się do innego pliku aspx.  
+  Technologia IntelliSense nie jest dostępna, gdy jeden plik .aspx odwołuje się do innego pliku aspx.  
   
 ###  <a name="ASPNet"></a> Obiekty ASP.NET AJAX  
  ASP.NET AJAX również obsługuje technologię JavaScript IntelliSense. ASP.NET AJAX obejmuje strukturę klienta, która rozszerza standardowe typy, które są dostępne w języku ECMAScript (JavaScript). Aby umożliwić technologii JavaScript IntelliSense dostarczanie szczegółowych informacji o obiektach ASP.NET AJAX, komentarze dokumentacji XML zostały dodane w całej [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)]. Te komentarze dokumentacji XML są wyświetlane podczas korzystania z typów i elementów członkowskich, które są zawarte w bibliotece programu ASP.NET AJAX.  

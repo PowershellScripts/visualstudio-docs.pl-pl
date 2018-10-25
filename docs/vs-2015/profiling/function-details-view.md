@@ -19,29 +19,29 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 980f676a0197e84523d4fa6a080e72abc02ccb4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c60ca5c0e073aa3643d6f77fa1350aaa4cdce837
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812273"
 ---
 # <a name="function-details-view"></a>Widok szczegółów funkcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Widok szczegółów funkcji** wyświetlane są następujące informacje:  
   
--   **Dystrybucji** wykres słupkowy przedstawia relacje między wybranej funkcji i funkcji wywołujących wykonanych wybranej funkcji oraz między wybranej funkcji i funkcji, które zostały wywołane przez go.  
+- **Dystrybucji** wykres słupkowy przedstawia relacje między wybranej funkcji i funkcji wywołujących wykonanych wybranej funkcji oraz między wybranej funkcji i funkcji, które zostały wywołane przez go.  
   
--   **Szczegóły wydajności funkcji** tabelę, która pokazuje, podsumowania danych profilowania dla funkcji, które określisz.  
+- **Szczegóły wydajności funkcji** tabelę, która pokazuje, podsumowania danych profilowania dla funkcji, które określisz.  
   
--   **Widok kodu funkcji** okno, które zawiera kod funkcji, jeśli kod jest dostępny.  
+- **Widok kodu funkcji** okno, które zawiera kod funkcji, jeśli kod jest dostępny.  
   
- **Widok kodu funkcji** okno jest oddzielne okienko. Domyślnie dwa okienka są dzielone w poziomie, a **widok kodu funkcji** okna znajduje się w dolnej części ramki.  
+  **Widok kodu funkcji** okno jest oddzielne okienko. Domyślnie dwa okienka są dzielone w poziomie, a **widok kodu funkcji** okna znajduje się w dolnej części ramki.  
   
--   Aby podzielić dwa okienka w pionie, kliknij **Podziel ekran w pionie** na pasku narzędzi.  
+- Aby podzielić dwa okienka w pionie, kliknij **Podziel ekran w pionie** na pasku narzędzi.  
   
--   Aby zmienić względną wielkość paneli, kliknij zacieniony obramowanie klatek, a następnie przeciągnij krawędź do innej lokalizacji.  
+- Aby zmienić względną wielkość paneli, kliknij zacieniony obramowanie klatek, a następnie przeciągnij krawędź do innej lokalizacji.  
   
 ## <a name="cost-distribution-bar-chart"></a>Wykres słupkowy dystrybucji kosztów  
   
@@ -55,25 +55,25 @@ ms.locfileid: "49181907"
   
  Możesz kliknąć nazwę funkcji wywołującej, aby stał się wybranej funkcji w widoku.  
   
--   W przypadku zbyt wielu funkcji wywołujących, aby wyświetlić listę funkcji z najmniejszą wkładów są gromadzone w **innych** bloku. Kliknij przycisk **innych** do wyświetlenia wszystkich funkcji wywołujących i wywoływanych wybranych funkcji w **widok wywołujący/wywoływany** okna. Aby uzyskać więcej informacji, zobacz [widok wywołujący/wywoływany](../profiling/caller-callee-view.md).  
+- W przypadku zbyt wielu funkcji wywołujących, aby wyświetlić listę funkcji z najmniejszą wkładów są gromadzone w **innych** bloku. Kliknij przycisk **innych** do wyświetlenia wszystkich funkcji wywołujących i wywoływanych wybranych funkcji w **widok wywołujący/wywoływany** okna. Aby uzyskać więcej informacji, zobacz [widok wywołujący/wywoływany](../profiling/caller-callee-view.md).  
   
--   Jeśli brak wywołania funkcji lub jeśli funkcja jest funkcją wpis w wątku lub procesu, **górze stosu** pojawi się blok.  
+- Jeśli brak wywołania funkcji lub jeśli funkcja jest funkcją wpis w wątku lub procesu, **górze stosu** pojawi się blok.  
   
- **Wybranej funkcji**  
+  **Wybranej funkcji**  
   
- Pasek wybranej funkcji pokazuje wkład wywoływane funkcje i kodu w wybranej funkcji na metryki wydajności całkowitej z wybranej funkcji. Rozmiar bloku, który zawiera funkcję o nazwie lub treści funkcji jest proporcjonalnie swój wkład zgodnie z wartością całkowitą metryki wydajności dla wybranej funkcji.  
+  Pasek wybranej funkcji pokazuje wkład wywoływane funkcje i kodu w wybranej funkcji na metryki wydajności całkowitej z wybranej funkcji. Rozmiar bloku, który zawiera funkcję o nazwie lub treści funkcji jest proporcjonalnie swój wkład zgodnie z wartością całkowitą metryki wydajności dla wybranej funkcji.  
   
- Możesz kliknąć nazwę wywoływanej funkcji, aby wybranej funkcji w widoku.  
+  Możesz kliknąć nazwę wywoływanej funkcji, aby wybranej funkcji w widoku.  
   
--   **Całkowita** wartość metryki wydajności dla wybranej funkcji.  
+- **Całkowita** wartość metryki wydajności dla wybranej funkcji.  
   
--   **Treści funkcji** reprezentuje blok kwota łączna wartość metryki wydajności, który wystąpił w bezpośrednie wykonywanie kodu w treści funkcji.  
+- **Treści funkcji** reprezentuje blok kwota łączna wartość metryki wydajności, który wystąpił w bezpośrednie wykonywanie kodu w treści funkcji.  
   
--   Funkcje, które są wywoływane przez wybraną funkcję są wyświetlane w blokach. Rozmiar bloku funkcji reprezentuje ilość metryki wydajności całkowitej wybranej funkcji, które wystąpiły w wywołanej funkcja.  
+- Funkcje, które są wywoływane przez wybraną funkcję są wyświetlane w blokach. Rozmiar bloku funkcji reprezentuje ilość metryki wydajności całkowitej wybranej funkcji, które wystąpiły w wywołanej funkcja.  
   
--   W przypadku zbyt wielu funkcji wywołujących, aby wyświetlić listę funkcji z najmniejszą wkładów są gromadzone w **innych** bloku. Kliknij przycisk **innych** do wyświetlenia wszystkich funkcji wywołujących i wywoływanych wybranych funkcji w **widok wywołujący/wywoływany** okna. Aby uzyskać więcej informacji, zobacz [widok wywołujący/wywoływany](../profiling/caller-callee-view.md).  
+- W przypadku zbyt wielu funkcji wywołujących, aby wyświetlić listę funkcji z najmniejszą wkładów są gromadzone w **innych** bloku. Kliknij przycisk **innych** do wyświetlenia wszystkich funkcji wywołujących i wywoływanych wybranych funkcji w **widok wywołujący/wywoływany** okna. Aby uzyskać więcej informacji, zobacz [widok wywołujący/wywoływany](../profiling/caller-callee-view.md).  
   
--   Jeśli nie wywoływane funkcje **dół stosu** pojawi się blok.  
+- Jeśli nie wywoływane funkcje **dół stosu** pojawi się blok.  
   
 ## <a name="function-performance-details"></a>Szczegóły wydajności — funkcja  
  Tabela Szczegóły wydajności funkcji zawiera podsumowania danych dla metryki wydajności wybranej funkcji. Są wyświetlane zarówno wartość, jak i wartość procentowa. Określ Określ tabelę danych profilowania, których są wyświetlane na wykresie i szczegóły **Metryka wydajności** listy.  

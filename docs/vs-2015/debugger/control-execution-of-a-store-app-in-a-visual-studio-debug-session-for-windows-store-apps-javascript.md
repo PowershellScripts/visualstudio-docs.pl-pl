@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ce3ef7b1d5fe975fdc2edc21a3dbe94fa873e96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275525"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813298"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Kontrolowanie wykonywania aplikacji Store w trakcie sesji debugowania programu Visual Studio dla aplikacji Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,28 +55,28 @@ Ten przewodnik Szybki start pokazuje, jak przechodzić w debugerze programu Visu
   
  [Wyświetlanie danych zmiennej w oknie zmienne lokalne](#BKMK_View_variable_data_in_the_Locals_window)  
   
--   [Wyświetlanie danych zmiennej i łańcuch prototypów obiektu](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
+- [Wyświetlanie danych zmiennej i łańcuch prototypów obiektu](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
   
--   [Sprawdzanie danych łańcucha zakresu](#BKMK_Examine_scope_chain_data)  
+- [Sprawdzanie danych łańcucha zakresu](#BKMK_Examine_scope_chain_data)  
   
- [Nawigowanie do kodu przy użyciu okna stosu wywołań](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
+  [Nawigowanie do kodu przy użyciu okna stosu wywołań](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
   
 ##  <a name="BKMK_Create_the_sample_app"></a> Tworzenie przykładowej aplikacji  
  Debugowanie jest dotyczące kodu, więc Przykładowa aplikacja używa strukturę aplikacji Windows Store, tylko w celu utworzenia pliku źródłowego, w którym widać, jak działa nawigowanie sesji debugowania oraz sposób sprawdzić stan programu. Cały kod, który będzie wywoływał jest wywoływana z `module` funkcja pliku default.js kod. Brak kontrolek są dodawane, a żadne zdarzenia nie są obsługiwane.  
   
-1.  **Tworzenie pustej aplikacji JavaScript Windows Store.** Otwórz program Visual Studio. Na stronie głównej wybierz **nowy projekt** łącza. Na **nowy projekt** okna dialogowego wybierz **JavaScript** w **zainstalowane** listy, a następnie wybierz **Windows Store**. Na liście szablonów projektu wybierz **pusta aplikacja**. Visual Studio tworzy nowe rozwiązanie i projekt i wyświetla plik default.htm w edytorze kodu.  
+1. **Tworzenie pustej aplikacji JavaScript Windows Store.** Otwórz program Visual Studio. Na stronie głównej wybierz **nowy projekt** łącza. Na **nowy projekt** okna dialogowego wybierz **JavaScript** w **zainstalowane** listy, a następnie wybierz **Windows Store**. Na liście szablonów projektu wybierz **pusta aplikacja**. Visual Studio tworzy nowe rozwiązanie i projekt i wyświetla plik default.htm w edytorze kodu.  
   
-     Należy pamiętać, pliki skryptów, które są ładowane do strony.  
+    Należy pamiętać, pliki skryptów, które są ładowane do strony.  
   
-    -   `base.js` i `ui.js` utworzyć pliki **biblioteki Windows dla JavaScript**. Biblioteka Windows dla języka JavaScript jest zestaw JavaScript i plików CSS, które ułatwiają tworzenie aplikacji Windows Store przy użyciu języka JavaScript. Umożliwia ona wraz z HTML, CSS i środowisko wykonawcze Windows tworzenie aplikacji.  
+   -   `base.js` i `ui.js` utworzyć pliki **biblioteki Windows dla JavaScript**. Biblioteka Windows dla języka JavaScript jest zestaw JavaScript i plików CSS, które ułatwiają tworzenie aplikacji Windows Store przy użyciu języka JavaScript. Umożliwia ona wraz z HTML, CSS i środowisko wykonawcze Windows tworzenie aplikacji.  
   
-    -   Kod uruchamia się w `default.js` pliku.  
+   -   Kod uruchamia się w `default.js` pliku.  
   
-2.  **Otwórz plik default.js źródła.** W Eksploratorze rozwiązań Otwórz **js** węzeł i wybierz polecenie `default.js`.  
+2. **Otwórz plik default.js źródła.** W Eksploratorze rozwiązań Otwórz **js** węzeł i wybierz polecenie `default.js`.  
   
-3.  **Zastąp zawartość strony z przykładowym kodem.** Usuń całą zawartość z `default.js` pliku. Skorzystaj z tego linku: [przykładowy kod nawigacji (JavaScript) debugera](../debugger/debugger-navigation-sample-code-javascript.md), a następnie skopiuj kod przedstawiony w sekcji kodu JavaScript do Schowka. (Wybierz **ponownie** w przeglądarce lub podglądu pomocy, aby powrócić do tej strony szybki start.) W edytorze programu Visual Studio, Wklej kod do pustych teraz `default.js`. Wybierz **Ctrl + S** można zapisać pliku.  
+3. **Zastąp zawartość strony z przykładowym kodem.** Usuń całą zawartość z `default.js` pliku. Skorzystaj z tego linku: [przykładowy kod nawigacji (JavaScript) debugera](../debugger/debugger-navigation-sample-code-javascript.md), a następnie skopiuj kod przedstawiony w sekcji kodu JavaScript do Schowka. (Wybierz **ponownie** w przeglądarce lub podglądu pomocy, aby powrócić do tej strony szybki start.) W edytorze programu Visual Studio, Wklej kod do pustych teraz `default.js`. Wybierz **Ctrl + S** można zapisać pliku.  
   
- Teraz można wykonać wraz z przykładami w tym temacie.  
+   Teraz można wykonać wraz z przykładami w tym temacie.  
   
 ##  <a name="BKMK_Set_and_run_to_a_breakpoint__step_into_a_function__and_examine_program_data"></a> Ustaw i uruchom do punktu przerwania, krok po kroku do funkcji i zbadaj dane do programu  
  Najczęstszym sposobem, aby rozpocząć sesję debugowania jest wybranie **Rozpocznij debugowanie** z **debugowania** menu (klawiatura: F5). Aplikacja rozpoczyna się i kontynuuje wykonywanie dopóki punkt przerwania zostanie osiągnięty, ręcznie zawieszenie wykonywania, wystąpi wyjątek, lub kończy się w aplikacji.  
@@ -88,45 +88,45 @@ Ten przewodnik Szybki start pokazuje, jak przechodzić w debugerze programu Visu
 ###  <a name="BKMK_Example_1"></a> Przykład 1  
  W tym przykładzie ustaw punkt przerwania w treści `module` działa w programach `default.js` ponieważ wywołuje pierwszej instrukcji naszych użytkowników. Następnie wejdź do funkcji, wyświetlanie wartości zmiennych w poradach dotyczących debugera, a następnie zatrzymasz debugowanie.  
   
-1.  **Ustaw punkt przerwania.** Ustaw punkt przerwania w instrukcji `callTrack = "module function";` występuje tuż po wywołaniu `app.start()`. Wybierz wiersz w zacieniowane odstępu Edytor kodu źródłowego (klawiatura: Umieść kursor w wierszu, a następnie wybierz **F9** klucza).  
+1. **Ustaw punkt przerwania.** Ustaw punkt przerwania w instrukcji `callTrack = "module function";` występuje tuż po wywołaniu `app.start()`. Wybierz wiersz w zacieniowane odstępu Edytor kodu źródłowego (klawiatura: Umieść kursor w wierszu, a następnie wybierz **F9** klucza).  
   
-     ![Ustaw punkt przerwania w przykład1](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
+    ![Ustaw punkt przerwania w przykład1](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
   
-     Ikona punktu przerwania pojawia się na marginesie.  
+    Ikona punktu przerwania pojawia się na marginesie.  
   
-2.  **Uruchom do punktu przerwania.** Rozpocznij sesję debugowania, wybierając **Rozpocznij debugowanie** na **debugowania** menu (klawiatura: F5).  
+2. **Uruchom do punktu przerwania.** Rozpocznij sesję debugowania, wybierając **Rozpocznij debugowanie** na **debugowania** menu (klawiatura: F5).  
   
-     Aplikacja rozpoczyna wykonywanie i zawiesza wykonywanie tuż przed instrukcji, w którym można ustawić punkt przerwania. Bieżąca ikona wierszu na marginesie identyfikuje Twojej lokalizacji i bieżącej instrukcji jest wyróżniona.  
+    Aplikacja rozpoczyna wykonywanie i zawiesza wykonywanie tuż przed instrukcji, w którym można ustawić punkt przerwania. Bieżąca ikona wierszu na marginesie identyfikuje Twojej lokalizacji i bieżącej instrukcji jest wyróżniona.  
   
-     ![Uruchom do punktu przerwania](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
+    ![Uruchom do punktu przerwania](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
   
-     Teraz masz kontrolę nad wykonywanie aplikacji i sprawdzić stan programu podczas wykonywania kroków za pomocą instrukcji programu.  
+    Teraz masz kontrolę nad wykonywanie aplikacji i sprawdzić stan programu podczas wykonywania kroków za pomocą instrukcji programu.  
   
-3.  **Wejdź do funkcji.** Na **debugowania** menu, wybierz **Step Into** (klawiatura: **F11**).  
+3. **Wejdź do funkcji.** Na **debugowania** menu, wybierz **Step Into** (klawiatura: **F11**).  
   
-     ![Wiersz kodu krok po kroku](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
+    ![Wiersz kodu krok po kroku](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
   
-     Należy zauważyć, że debuger przechodzi do następnego wiersza, który jest wywołanie `example1` funkcji. Wybierz **Step Into** ponownie. Debuger przenosi do pierwszego wiersza kodu `example1` funkcji. Wyróżniony wiersz nie został wykonany, ale funkcja została załadowana w stosie wywołań i przydzieliła pamięć dla zmiennych lokalnych.  
+    Należy zauważyć, że debuger przechodzi do następnego wiersza, który jest wywołanie `example1` funkcji. Wybierz **Step Into** ponownie. Debuger przenosi do pierwszego wiersza kodu `example1` funkcji. Wyróżniony wiersz nie został wykonany, ale funkcja została załadowana w stosie wywołań i przydzieliła pamięć dla zmiennych lokalnych.  
   
-4.  Gdy wchodzisz do wiersza kodu debuger wykonuje jedną z następujących czynności:  
+4. Gdy wchodzisz do wiersza kodu debuger wykonuje jedną z następujących czynności:  
   
-    -   Następna instrukcja nie jest wywołanie funkcji w rozwiązaniu, debuger wykonuje instrukcję, przechodzi do następnej instrukcji, a następnie zawiesza wykonywanie.  
+   - Następna instrukcja nie jest wywołanie funkcji w rozwiązaniu, debuger wykonuje instrukcję, przechodzi do następnej instrukcji, a następnie zawiesza wykonywanie.  
   
-    -   Jeśli instrukcja jest wywołaniem funkcji w rozwiązaniu, debuger przenosi do pierwszego wiersza wywoływanej funkcji, a następnie zawiesza wykonywanie.  
+   - Jeśli instrukcja jest wywołaniem funkcji w rozwiązaniu, debuger przenosi do pierwszego wiersza wywoływanej funkcji, a następnie zawiesza wykonywanie.  
   
      Wejdź do instrukcje w dalszym ciągu `example1` aż do osiągnięcia punktu wyjścia. Do usuwania błędów podkreśli zamykający nawias klamrowy funkcji.  
   
-5.  **Wyświetlanie wartości zmiennych w poradach dotyczących danych.** Wejdź do instrukcje w dalszym ciągu `example1` aż do osiągnięcia punktu wyjścia. Do usuwania błędów podkreśli zamykający nawias klamrowy funkcji. Po wstrzymaniu myszą na nazwę zmiennej, nazwę i wartość zmiennej są wyświetlane w oknie z poradami danych.  
+5. **Wyświetlanie wartości zmiennych w poradach dotyczących danych.** Wejdź do instrukcje w dalszym ciągu `example1` aż do osiągnięcia punktu wyjścia. Do usuwania błędów podkreśli zamykający nawias klamrowy funkcji. Po wstrzymaniu myszą na nazwę zmiennej, nazwę i wartość zmiennej są wyświetlane w oknie z poradami danych.  
   
-     ![Wyświetlanie wartości zmiennych w oknie z poradami danych](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
+    ![Wyświetlanie wartości zmiennych w oknie z poradami danych](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
   
-6.  **Dodaj wyrażenie kontrolne dla zmiennej callTrack.** `callTrack` Zmienna jest używana w tym przewodniku Szybki start, aby pokazać funkcji wywoływanych w przykładach. Aby ułatwić wyświetlić wartość zmiennej, należy go dodać do okna czujki. Wybierz nazwę zmiennej w edytorze, a następnie wybierz **Dodaj czujkę** z menu skrótów.  
+6. **Dodaj wyrażenie kontrolne dla zmiennej callTrack.** `callTrack` Zmienna jest używana w tym przewodniku Szybki start, aby pokazać funkcji wywoływanych w przykładach. Aby ułatwić wyświetlić wartość zmiennej, należy go dodać do okna czujki. Wybierz nazwę zmiennej w edytorze, a następnie wybierz **Dodaj czujkę** z menu skrótów.  
   
-     ![Obejrzyj zmienną](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
+    ![Obejrzyj zmienną](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
   
-     Możesz obejrzeć wiele zmiennych w oknie czujki. Wartości zmiennych obserwowana, takie jak wartości w systemie windows Porada danych, są aktualizowane, zawsze wtedy, gdy wykonanie programu jest zawieszone. Obserwowana zmiennych są zapisywane między sesjami debugowania.  
+    Możesz obejrzeć wiele zmiennych w oknie czujki. Wartości zmiennych obserwowana, takie jak wartości w systemie windows Porada danych, są aktualizowane, zawsze wtedy, gdy wykonanie programu jest zawieszone. Obserwowana zmiennych są zapisywane między sesjami debugowania.  
   
-7.  **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatura: **Shift + F5**). Kończy sesję debugowania.  
+7. **Zatrzymaj debugowanie.** Na **debugowania** menu, wybierz **Zatrzymaj debugowanie** (klawiatura: **Shift + F5**). Kończy sesję debugowania.  
   
 ##  <a name="BKMK_Step_into__over__and_out_of_functions"></a> Krok do, za pośrednictwem i z funkcji  
  W przeciwieństwie do przechodzenie krok po kroku do funkcji wywoływanych przez funkcję nadrzędnego, przechodzenie krok po kroku, za pośrednictwem funkcji wykonuje funkcję podrzędnych, a następnie zawieszenie wykonywania w funkcji wywołującej, jako element nadrzędny wznawia działanie. Może być Przekrocz nad funkcja, przypadku wiedzą, jak funkcja działa i pewności, czy jego wykonanie nie ma wpływu na problem, który badania.  
@@ -241,13 +241,13 @@ Ten przewodnik Szybki start pokazuje, jak przechodzić w debugerze programu Visu
 ##  <a name="BKMK_Examine_scope_chain_data"></a> Sprawdzanie danych łańcucha zakresu  
  *Zakresu łańcucha* funkcji obejmuje wszystkie zmienne, które są aktywne i osiągalny przez funkcję. Zmienne globalne są częścią łańcucha zakres, są wszystkie obiekty (w tym funkcji), które są zdefiniowane w funkcji, która definiuje aktualnie wykonywanej funkcji. Na przykład `callTrack` zmiennej, która jest zdefiniowana w `module` funkcji `default.js` jest dostępny za pomocą dowolnej funkcji, która jest zdefiniowana w `module` funkcji. Każdego zakresu jest wyświetlany osobno w oknie zmienne lokalne.  
   
--   Zmienne aktualnie wykonywanej funkcji są wyświetlane w górnej części okna.  
+- Zmienne aktualnie wykonywanej funkcji są wyświetlane w górnej części okna.  
   
--   Zmienne każdego zakresu funkcji w łańcuchu zakresu są wyświetlane w obszarze **[zakresu]** węzła dla tej funkcji. Zasięg funkcje są wyświetlane według ich kolejność w łańcuchu z funkcji, który definiuje bieżącą funkcję najbardziej zewnętrzną funkcję łańcucha.  
+- Zmienne każdego zakresu funkcji w łańcuchu zakresu są wyświetlane w obszarze **[zakresu]** węzła dla tej funkcji. Zasięg funkcje są wyświetlane według ich kolejność w łańcuchu z funkcji, który definiuje bieżącą funkcję najbardziej zewnętrzną funkcję łańcucha.  
   
--   **[Globals]** węzła zawiera listę obiektów globalnych, które są zdefiniowane poza jakąkolwiek funkcją.  
+- **[Globals]** węzła zawiera listę obiektów globalnych, które są zdefiniowane poza jakąkolwiek funkcją.  
   
- Łańcuchy zakres może być mylące i najlepiej są przedstawione według przykładu. W poniższym przykładzie można zobaczyć jak `module` funkcja tworzy własnego zakresu i sposób tworzenia drugiego poziomu zakresu, tworząc zamknięcie.  
+  Łańcuchy zakres może być mylące i najlepiej są przedstawione według przykładu. W poniższym przykładzie można zobaczyć jak `module` funkcja tworzy własnego zakresu i sposób tworzenia drugiego poziomu zakresu, tworząc zamknięcie.  
   
 ###  <a name="BKMK_Example_4"></a> Przykład 4  
   

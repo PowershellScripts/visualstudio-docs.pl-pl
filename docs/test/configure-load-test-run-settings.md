@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283336"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813865"
 ---
 # <a name="configure-load-test-run-settings"></a>Konfigurowanie ustawień testu obciążenia
 
@@ -30,7 +30,7 @@ Początkowy parametr uruchomieniowy jest tworzony podczas tworzenia testu obcią
 ## <a name="tasks"></a>Zadania
 
 |Zadania|Skojarzone tematy|
-|-----------|-----------------------|
+|-|-|
 |**Dodanie kolejnych parametrów uruchomieniowych do testu obciążeniowego:** oprócz parametru uruchomieniowego tworzonego podczas uruchamiania **Kreatora nowego testu obciążeniowego**, można dodać kolejnych parametrów uruchomieniowych do testu obciążeniowego, aby uruchomić test w różnych warunki.|-   [Porady: Dodawanie dodatkowych ustawień przebiegu testu obciążenia](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**Określenie aktywnego parametru uruchomieniowego do użycia w teście obciążeniowym:** można wybrać parametr uruchomieniowy, którą chcesz używać z testu obciążenia za pomocą edytora testu obciążenia. Aktywny parametr jest identyfikowany za pomocą przyrostka „[Aktywny]”.|-   [Porady: Wybierz aktywne ustawienia uruchamiania dla testu obciążenia](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
 |**Edytuj właściwości ustawienia przebiegu:** przebieg można edytować właściwości ustawienia dla takich operacji jak opcje logowania (zobacz poniżej), określająca długość testu, czas trwania rozgrzewania, maksymalną liczbę błędów podać szczegóły, częstotliwość próbkowania połączenia Model (tylko testy wydajności sieci web), typ przechowywania wyników, poziom sprawdzania poprawności i śledzenie SQL. Parametry uruchomieniowe powinny odzwierciedlać cele testu obciążeniowego.|-   [Właściwości ustawień przebiegu testu obciążeniowego](../test/load-test-run-settings-properties.md)<br />-   [Zmiana właściwości ustawienia przebiegu](../test/load-test-run-settings-properties.md#change-run-setting-properties)|

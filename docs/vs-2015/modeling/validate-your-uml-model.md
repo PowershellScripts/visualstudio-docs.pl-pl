@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c13a5e8ed5ae7fe778908af87958d4ed25951c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812507"
 ---
 # <a name="validate-your-uml-model"></a>Weryfikacja modelu UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ Niektóre modele UML, które można narysować w programie Visual Studio może z
 ## <a name="invoking-validation"></a>Wywoływanie walidacji  
  Po zainstalowaniu rozszerzenia sprawdzania poprawności ograniczenia, które zapewnia mogą być stosowane w następujących przypadkach. Niektóre ograniczenia są ustawione do zastosowania w tylko niektóre z tych przypadków.  
   
--   **Polecenie sprawdzania poprawności.** Aby wywołać sprawdzania poprawności w dowolnym momencie, kliknij przycisk **Sprawdź poprawność modelu UML** na **architektury** menu.  
+- **Polecenie sprawdzania poprawności.** Aby wywołać sprawdzania poprawności w dowolnym momencie, kliknij przycisk **Sprawdź poprawność modelu UML** na **architektury** menu.  
   
-    > [!NOTE]
-    >  Polecenie będą wyświetlane tylko wtedy, gdy ograniczenia sprawdzania poprawności są zainstalowane.  
+  > [!NOTE]
+  >  Polecenie będą wyświetlane tylko wtedy, gdy ograniczenia sprawdzania poprawności są zainstalowane.  
   
--   **Przy zapisywaniu modelu.** Po zapisaniu modelu można zastosować ograniczenia sprawdzania poprawności. Te ograniczenia ma na celu pomóc, upewnij się, nie należy zapisywać modelu, który jest nieprawidłowa przy uwzględnieniu interpretacji projektu.  
+- **Przy zapisywaniu modelu.** Po zapisaniu modelu można zastosować ograniczenia sprawdzania poprawności. Te ograniczenia ma na celu pomóc, upewnij się, nie należy zapisywać modelu, który jest nieprawidłowa przy uwzględnieniu interpretacji projektu.  
   
-     Jeśli wystąpią błędy, zostanie wyświetlony pytaniem, czy nadal chcesz zapisać model. Możesz poprawić błędy lub zapisać mimo to model.  
+   Jeśli wystąpią błędy, zostanie wyświetlony pytaniem, czy nadal chcesz zapisać model. Możesz poprawić błędy lub zapisać mimo to model.  
   
--   **Otwieranie modelu.** Podczas otwierania modelu metody sprawdzania poprawności można zastosować do przywrócenia komunikaty o błędach, które istniały podczas zapisywania modelu. Błędy mogą być także wprowadzone przez niespójności między zmiany wprowadzone przez użytkowników, którzy pracują na różnych częściach modelu. Aby uzyskać więcej informacji, zobacz [udostępnianie modeli i eksportowanie diagramów](../modeling/share-models-and-exporting-diagrams.md).  
+- **Otwieranie modelu.** Podczas otwierania modelu metody sprawdzania poprawności można zastosować do przywrócenia komunikaty o błędach, które istniały podczas zapisywania modelu. Błędy mogą być także wprowadzone przez niespójności między zmiany wprowadzone przez użytkowników, którzy pracują na różnych częściach modelu. Aby uzyskać więcej informacji, zobacz [udostępnianie modeli i eksportowanie diagramów](../modeling/share-models-and-exporting-diagrams.md).  
   
- Błędy sprawdzania poprawności są zgłaszane w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oknie błędów.  
+  Błędy sprawdzania poprawności są zgłaszane w [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oknie błędów.  
   
- Aby wybrać na diagramie elementy, które są nieprawidłowe, klikaj dwukrotnie poszczególne błędy. Ta funkcja działa tylko w przypadku, gdy niepoprawne elementy są widoczne w Otwórz diagram.  
+  Aby wybrać na diagramie elementy, które są nieprawidłowe, klikaj dwukrotnie poszczególne błędy. Ta funkcja działa tylko w przypadku, gdy niepoprawne elementy są widoczne w Otwórz diagram.  
   
 ## <a name="installing-validation-constraints"></a>Instalowanie ograniczeń walidacji  
  Ograniczenia są pakowane w ramach [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pliki rozszerzenia (VSIX). Zazwyczaj zestawem ograniczeń jest częścią rozszerzenia, które zawiera również inne definicje, takich jak polecenia menu, profile i elementy do przybornika.  

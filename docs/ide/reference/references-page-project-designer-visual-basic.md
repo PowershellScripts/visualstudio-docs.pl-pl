@@ -18,45 +18,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 788df6c5d7084398f5c1df1fffdf51e501cce4c6
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 719f58ff7a8fe333f43e13ddef298ba9938ad4e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180480"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815198"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Strona odwołań, Projektant projektu (Visual Basic)
+
 Użyj **odwołania** strony **projektanta projektu** Zarządzanie odwołania, odwołania sieci web i importowanych przestrzeni nazw w projekcie. Projekty mogą zawierać odwołania do składników modelu COM, usług sieci web XML, zestawów i biblioteki klas .NET Framework lub inne biblioteki klas. Aby uzyskać więcej informacji na temat korzystania z odwołań, zobacz [Zarządzanie odwołaniami w projekcie](../../ide/managing-references-in-a-project.md).
 
- Aby uzyskać dostęp do **odwołania** wybierz węzeł projektu (nie **rozwiązania** węzła) w **Eksploratora rozwiązań**. Następnie wybierz **projektu**, **właściwości** na pasku menu. Gdy pojawi się w Projektancie projektu, kliknij przycisk **odwołania** kartę.
+Aby uzyskać dostęp do **odwołania** wybierz węzeł projektu (nie **rozwiązania** węzła) w **Eksploratora rozwiązań**. Następnie wybierz **projektu**, **właściwości** na pasku menu. Gdy pojawi się w Projektancie projektu, kliknij przycisk **odwołania** kartę.
 
 ## <a name="uielement-list"></a>Lista elementów UI
- Poniższe opcje umożliwiają zaznacz lub usuń odwołania i importowanych przestrzeni nazw w projekcie.
 
- **Nieużywane odwołania**
+Poniższe opcje umożliwiają zaznacz lub usuń odwołania i importowanych przestrzeni nazw w projekcie.
 
- Kliknij ten przycisk, aby uzyskać dostęp do **odwołań nieużywanych** okno dialogowe.
+**Nieużywane odwołania**
 
- **Odwołań nieużywanych** okno dialogowe umożliwia usunięcie odwołań, które są zawarte w projekcie, ale bez faktycznego używane przez kod. Zawiera on siatki, zawierającego **Nazwa odwołania**, **ścieżki**oraz inne informacje o odwołaniach do nieużywanych przestrzeni nazw w projekcie. W siatce, wybierz odwołania do przestrzeni nazw, które chcesz usunąć z projektu, a następnie kliknij przycisk **Usuń**.
+Kliknij ten przycisk, aby uzyskać dostęp do **odwołań nieużywanych** okno dialogowe.
 
- **Ścieżki odwołania**
+**Odwołań nieużywanych** okno dialogowe umożliwia usunięcie odwołań, które są zawarte w projekcie, ale bez faktycznego używane przez kod. Zawiera on siatki, zawierającego **Nazwa odwołania**, **ścieżki**oraz inne informacje o odwołaniach do nieużywanych przestrzeni nazw w projekcie. W siatce, wybierz odwołania do przestrzeni nazw, które chcesz usunąć z projektu, a następnie kliknij przycisk **Usuń**.
 
- Kliknij ten przycisk, aby uzyskać dostęp do **ścieżki odwołania** okno dialogowe.
+**Ścieżki odwołania**
+
+Kliknij ten przycisk, aby uzyskać dostęp do **ścieżki odwołania** okno dialogowe.
 
 > [!NOTE]
 > Jeśli system projektu znajdzie odwołania do zestawu, system rozwiązuje odwołania przez wyszukiwanie w następujących lokalizacjach, w następującej kolejności:
-
 >
->  1.  Folder projektu. Pliki folderu projektu pojawiają się w **Eksploratora rozwiązań** podczas **Pokaż wszystkie pliki** nie ma zastosowania.
-> 2.  Foldery, które są określone w **ścieżki odwołania** okno dialogowe.
-> 3.  Foldery zawierające pliki w **Dodaj odwołanie** okno dialogowe.
-> 4.  Folder obj tego projektu. (Po dodaniu do projektu odwołanie COM, jeden lub więcej zestawów można dodać do folderu obj projektu.)
+> 1. Folder projektu. Pliki folderu projektu pojawiają się w **Eksploratora rozwiązań** podczas **Pokaż wszystkie pliki** nie ma zastosowania.
+> 2. Foldery, które są określone w **ścieżki odwołania** okno dialogowe.
+> 3. Foldery zawierające pliki w **Dodaj odwołanie** okno dialogowe.
+> 4. Folder obj tego projektu. (Po dodaniu do projektu odwołanie COM, jeden lub więcej zestawów można dodać do folderu obj projektu.)
 
  **Odwołania**
 
  Ta lista zawiera wszystkie odwołania w projekcie, używane lub nieużywane.
 
- **Dodaj**
+ **Add**
 
  Kliknij ten przycisk, aby dodać odwołanie lub sieci web odwołanie do **odwołania** listy.
 

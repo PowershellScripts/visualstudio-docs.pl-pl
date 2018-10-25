@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1e5c5856217951d15042f07edb97a918e09ba777
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f42433b4ec79138e60b11e6380a6b709e74bacd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812846"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Przewodnik: Tworzenie niestandardowego kroku wdrożenia dla projektów programu SharePoint
   Podczas wdrażania projektu programu SharePoint, programu Visual Studio wykonuje szereg kroków wdrożenia w określonej kolejności. Program Visual Studio obejmuje wiele kroków wdrożenia wbudowanych, ale można także tworzyć własne.  
@@ -45,28 +45,28 @@ ms.locfileid: "42635029"
 ## <a name="prerequisites"></a>Wymagania wstępne  
  Potrzebne są następujące składniki na komputerze deweloperskim w celu przeprowadzenia tego instruktażu:  
   
--   Obsługiwane wersje systemu Windows, SharePoint i Visual Studio.
+- Obsługiwane wersje systemu Windows, SharePoint i Visual Studio.
   
--   Program Visual Studio SDK. W tym instruktażu wykorzystano **projekt VSIX** szablonu w zestawie SDK, aby utworzyć pakiet VSIX do wdrożenia rozszerzenia. Aby uzyskać więcej informacji, zobacz [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+- Program Visual Studio SDK. W tym instruktażu wykorzystano **projekt VSIX** szablonu w zestawie SDK, aby utworzyć pakiet VSIX do wdrożenia rozszerzenia. Aby uzyskać więcej informacji, zobacz [Rozszerzanie narzędzi SharePoint w programie Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
   
- Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, aby ukończyć Instruktaż:  
+  Znajomość następujących pojęć jest przydatna, ale nie jest to wymagane, aby ukończyć Instruktaż:  
   
--   Za pomocą modelu obiektów serwera dla programu SharePoint. Aby uzyskać więcej informacji, zobacz [za pomocą modelu obiektów programu SharePoint Foundation po stronie serwera](http://go.microsoft.com/fwlink/?LinkId=177796).  
+- Za pomocą modelu obiektów serwera dla programu SharePoint. Aby uzyskać więcej informacji, zobacz [za pomocą modelu obiektów programu SharePoint Foundation po stronie serwera](http://go.microsoft.com/fwlink/?LinkId=177796).  
   
--   Rozwiązania programu SharePoint. Aby uzyskać więcej informacji, zobacz [omówienie rozwiązań](http://go.microsoft.com/fwlink/?LinkId=169422).  
+- Rozwiązania programu SharePoint. Aby uzyskać więcej informacji, zobacz [omówienie rozwiązań](http://go.microsoft.com/fwlink/?LinkId=169422).  
   
--   Uaktualnianie rozwiązań programu SharePoint. Aby uzyskać więcej informacji, zobacz [uaktualnianie rozwiązania](http://go.microsoft.com/fwlink/?LinkId=177802).  
+- Uaktualnianie rozwiązań programu SharePoint. Aby uzyskać więcej informacji, zobacz [uaktualnianie rozwiązania](http://go.microsoft.com/fwlink/?LinkId=177802).  
   
 ## <a name="create-the-projects"></a>Tworzenie projektów
  Do przeprowadzenia tego instruktażu, należy utworzyć trzy projekty:  
   
--   Projekt VSIX do stworzenia pakietu VSIX, aby wdrożyć rozszerzenie.  
+- Projekt VSIX do stworzenia pakietu VSIX, aby wdrożyć rozszerzenie.  
   
--   Projekt biblioteki klas, który implementuje rozszerzenie. Ten projekt musi być przeznaczony .NET Framework 4.5.  
+- Projekt biblioteki klas, który implementuje rozszerzenie. Ten projekt musi być przeznaczony .NET Framework 4.5.  
   
--   Projekt biblioteki klas, który definiuje niestandardowe polecenia programu SharePoint. Ten projekt musi być przeznaczony dla .NET Framework 3.5.  
+- Projekt biblioteki klas, który definiuje niestandardowe polecenia programu SharePoint. Ten projekt musi być przeznaczony dla .NET Framework 3.5.  
   
- Instruktaż należy rozpocząć od utworzenia projektów.  
+  Instruktaż należy rozpocząć od utworzenia projektów.  
   
 #### <a name="to-create-the-vsix-project"></a>Aby utworzyć projekt VSIX  
   
@@ -250,28 +250,28 @@ ms.locfileid: "42635029"
   
 #### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>Aby utworzyć projekt programu SharePoint przy użyciu definicji listy i instancji list  
   
-1.  W doświadczalnym wystąpieniu programu Visual Studio, na pasku menu wybierz **pliku** > **New** > **projektu**.  
+1. W doświadczalnym wystąpieniu programu Visual Studio, na pasku menu wybierz **pliku** > **New** > **projektu**.  
   
-2.  W **nowy projekt** okna dialogowego rozwiń **Visual C#** węzła lub **języka Visual Basic** węzła, rozwiń węzeł **programu SharePoint** węzła, a następnie wybierz **2010** węzła.  
+2. W **nowy projekt** okna dialogowego rozwiń **Visual C#** węzła lub **języka Visual Basic** węzła, rozwiń węzeł **programu SharePoint** węzła, a następnie wybierz **2010** węzła.  
   
-3.  Upewnij się, że w górnej części okna dialogowego **.NET Framework 3.5** pojawia się na liście wersji programu .NET Framework.  
+3. Upewnij się, że w górnej części okna dialogowego **.NET Framework 3.5** pojawia się na liście wersji programu .NET Framework.  
   
-     Projekty dla [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] i [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] wymagają tej wersji systemu .NET Framework.  
+    Projekty dla [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] i [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] wymagają tej wersji systemu .NET Framework.  
   
-4.  Na liście szablonów projektu wybierz **projekt programu SharePoint 2010**, nadaj projektowi nazwę **EmployeesListDefinition**, a następnie wybierz **OK** przycisku.  
+4. Na liście szablonów projektu wybierz **projekt programu SharePoint 2010**, nadaj projektowi nazwę **EmployeesListDefinition**, a następnie wybierz **OK** przycisku.  
   
-5.  W **Kreator ustawień niestandardowych SharePoint**, wprowadź adres URL witryny, której chcesz używać do debugowania.  
+5. W **Kreator ustawień niestandardowych SharePoint**, wprowadź adres URL witryny, której chcesz używać do debugowania.  
   
-6.  W obszarze **co to jest poziom zaufania dla tego rozwiązania programu SharePoint**, wybierz **Wdróż jako rozwiązanie farmy** przycisku opcji.  
+6. W obszarze **co to jest poziom zaufania dla tego rozwiązania programu SharePoint**, wybierz **Wdróż jako rozwiązanie farmy** przycisku opcji.  
   
-    > [!NOTE]  
-    >  Krok wdrożenia uaktualnienia nie obsługuje rozwiązania w trybie piaskownicy.  
+   > [!NOTE]  
+   >  Krok wdrożenia uaktualnienia nie obsługuje rozwiązania w trybie piaskownicy.  
   
-7.  Wybierz **Zakończ** przycisku.  
+7. Wybierz **Zakończ** przycisku.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tworzy projekt EmployeesListDefinition.  
+    [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tworzy projekt EmployeesListDefinition.  
   
-8.  Wybierz pozycję Otwórz menu skrótów dla projektu EmployeesListDefinition **Dodaj**, a następnie wybierz **nowy element**.  
+8. Wybierz pozycję Otwórz menu skrótów dla projektu EmployeesListDefinition **Dodaj**, a następnie wybierz **nowy element**.  
   
 9. W **Dodaj nowy element - EmployeesListDefinition** okna dialogowego rozwiń **SharePoint** węzła, a następnie wybierz **2010** węzła.  
   
@@ -281,13 +281,13 @@ ms.locfileid: "42635029"
   
 11. Na **wybierz ustawienia listy** strony, sprawdź następujące ustawienia, a następnie wybierz **Zakończ** przycisku:  
   
-    1.  **Lista pracowników** pojawia się w **jaką nazwę chcesz wyświetlić listy?** pole.  
+    1. **Lista pracowników** pojawia się w **jaką nazwę chcesz wyświetlić listy?** pole.  
   
-    2.  **Tworzenie na podstawie listy można dostosowywać:** wciśnięcia przycisku opcji.  
+    2. **Tworzenie na podstawie listy można dostosowywać:** wciśnięcia przycisku opcji.  
   
-    3.  **Domyślne (pustego)** jest wybierany w **tworzenie na podstawie listy można dostosowywać:** listy.  
+    3. **Domyślne (pustego)** jest wybierany w **tworzenie na podstawie listy można dostosowywać:** listy.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tworzy element listy pracowników z kolumny Title i pojedyncze wystąpienie pusty i zostanie otwarty projektant listy.  
+       [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Tworzy element listy pracowników z kolumny Title i pojedyncze wystąpienie pusty i zostanie otwarty projektant listy.  
   
 12. W Projektancie listy na **kolumn** kartę, wybrać **wpisz nazwę nowej lub istniejącej kolumny** wiersza, a następnie dodaj następujące kolumny w **Nazwa wyświetlana kolumny** listy:  
   
@@ -419,29 +419,29 @@ ms.locfileid: "42635029"
   
 #### <a name="to-test-the-upgrade-deployment-step"></a>Aby przetestować krok uaktualniania wdrożenia  
   
-1.  W doświadczalnym wystąpieniu programu Visual Studio w **Eksploratora rozwiązań**, otwórz menu skrótów dla **EmployeesListDefinition** węzła projektu, a następnie wybierz **właściwości**.  
+1. W doświadczalnym wystąpieniu programu Visual Studio w **Eksploratora rozwiązań**, otwórz menu skrótów dla **EmployeesListDefinition** węzła projektu, a następnie wybierz **właściwości**.  
   
-     Zostanie otwarty Edytor właściwości/projektanta.  
+    Zostanie otwarty Edytor właściwości/projektanta.  
   
-2.  Na **SharePoint** kartę, należy ustawić **aktywnej konfiguracji wdrożenia** właściwości **uaktualnienia**.  
+2. Na **SharePoint** kartę, należy ustawić **aktywnej konfiguracji wdrożenia** właściwości **uaktualnienia**.  
   
-     Ta konfiguracja wdrożenia niestandardowego zawiera nowy krok uaktualniania wdrożenia.  
+    Ta konfiguracja wdrożenia niestandardowego zawiera nowy krok uaktualniania wdrożenia.  
   
-3.  Otwórz menu skrótów dla **listy pracowników** elementu projektu, a następnie wybierz **właściwości** lub **Otwórz**.  
+3. Otwórz menu skrótów dla **listy pracowników** elementu projektu, a następnie wybierz **właściwości** lub **Otwórz**.  
   
-     Zostanie otwarty Edytor właściwości/projektanta.  
+    Zostanie otwarty Edytor właściwości/projektanta.  
   
-4.  Na **widoków** karty, wybierz polecenie **wiadomości E-Mail** kolumny, a następnie wybierz **<** klawisz, aby przenieść tej kolumny z **wybrane kolumny**do listy **dostępnych kolumn** listy.  
+4. Na **widoków** karty, wybierz polecenie **wiadomości E-Mail** kolumny, a następnie wybierz **<** klawisz, aby przenieść tej kolumny z **wybrane kolumny**do listy **dostępnych kolumn** listy.  
   
-     Ta akcja usuwa te pola z domyślny widok **pracowników** listy w witrynie programu SharePoint.  
+    Ta akcja usuwa te pola z domyślny widok **pracowników** listy w witrynie programu SharePoint.  
   
-5.  Rozpocznij debugowanie wybierając **F5** klucza lub na pasku menu, wybierając **debugowania** > **Rozpocznij debugowanie**.  
+5. Rozpocznij debugowanie wybierając **F5** klucza lub na pasku menu, wybierając **debugowania** > **Rozpocznij debugowanie**.  
   
-6.  Sprawdź, czy kod w innym wystąpieniu programu Visual Studio zatrzymuje się na punkcie przerwania, który wcześniej w ustawieniu `CanExecute` metody.  
+6. Sprawdź, czy kod w innym wystąpieniu programu Visual Studio zatrzymuje się na punkcie przerwania, który wcześniej w ustawieniu `CanExecute` metody.  
   
-7.  Wybierz **F5** ponownie klucza, lub na pasku menu wybierz **debugowania** > **Kontynuuj**.  
+7. Wybierz **F5** ponownie klucza, lub na pasku menu wybierz **debugowania** > **Kontynuuj**.  
   
-8.  Sprawdź, czy kod zatrzymuje się na punkcie przerwania, który wcześniej w ustawieniu `Execute` metody.  
+8. Sprawdź, czy kod zatrzymuje się na punkcie przerwania, który wcześniej w ustawieniu `Execute` metody.  
   
 9. Wybierz **F5** klucza, lub na pasku menu wybierz **debugowania** > **Kontynuuj** raz ostatni.  
   
@@ -449,11 +449,11 @@ ms.locfileid: "42635029"
   
 10. W **Wyświetla** sekcji obszaru szybkiego uruchamiania wybierz **pracowników** listy, a następnie sprawdź następujące informacje:  
   
-    -   Element, który ręcznie dodane wcześniej (dla Andy, Menedżer urządzeń) jest nadal na liście.  
+    - Element, który ręcznie dodane wcześniej (dla Andy, Menedżer urządzeń) jest nadal na liście.  
   
-    -   **Telefon służbowy** i **adres E-mail** kolumn nie są wyświetlane w tym widoku listy.  
+    - **Telefon służbowy** i **adres E-mail** kolumn nie są wyświetlane w tym widoku listy.  
   
-     **Uaktualnienia** konfiguracji wdrożenia modyfikuje istniejące **pracowników** wystąpienie listy w witrynie programu SharePoint. Jeśli użyto **domyślne** konfiguracji wdrożenia zamiast **uaktualnienia** konfiguracji, może wystąpić konflikt wdrażania. Program Visual Studio może rozwiązać konflikt, zastępując **pracowników** listy i element dla Andy, Menedżera urządzeń, zostaną usunięte.  
+      **Uaktualnienia** konfiguracji wdrożenia modyfikuje istniejące **pracowników** wystąpienie listy w witrynie programu SharePoint. Jeśli użyto **domyślne** konfiguracji wdrożenia zamiast **uaktualnienia** konfiguracji, może wystąpić konflikt wdrażania. Program Visual Studio może rozwiązać konflikt, zastępując **pracowników** listy i element dla Andy, Menedżera urządzeń, zostaną usunięte.  
   
 ## <a name="clean-up-the-development-computer"></a>Czyszczenie na komputerze deweloperskim
  Po zakończeniu testowania kroku wdrożenia uaktualnienia Usuń wystąpienie listy i definicji listy z witryny programu SharePoint i usuń rozszerzenie kroku wdrażania z programu Visual Studio.  

@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812468"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Porady: tworzenie niestandardowego zestawu reguł
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ W [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](..
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Aby utworzyć niestandardową regułę z jednego istniejącego zestawu reguł  
   
-1.  W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt, a następnie wybierz **właściwości**.  
+1. W Eksploratorze rozwiązań kliknij prawym przyciskiem myszy projekt, a następnie wybierz **właściwości**.  
   
-2.  Na **właściwości** kliknij pozycję **analizy kodu**.  
+2. Na **właściwości** kliknij pozycję **analizy kodu**.  
   
-3.  W **zestaw reguł** listy rozwijanej, wykonaj jedną z następujących czynności:  
+3. W **zestaw reguł** listy rozwijanej, wykonaj jedną z następujących czynności:  
   
-    -   Wybierz zestaw reguł, który chcesz dostosować.  
+   - Wybierz zestaw reguł, który chcesz dostosować.  
   
      \- lub —  
   
-    -   Wybierz  **\<Przeglądaj … >** do określenia zestawu istniejącą regułę, która nie jest na liście.  
+   - Wybierz  **\<Przeglądaj … >** do określenia zestawu istniejącą regułę, która nie jest na liście.  
   
-4.  Kliknij przycisk **Otwórz** reguły są wyświetlane w edytorze zestawu reguł.  
+4. Kliknij przycisk **Otwórz** reguły są wyświetlane w edytorze zestawu reguł.  
   
 #### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>Aby utworzyć regułę niestandardową zestaw z wielu istniejących zestawów reguł  
   

@@ -15,12 +15,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72355b396dc88fc02c1ccdfb4f3a2ed4afe66467
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50af6d65ad98c15506c4f7b015634a44455cd0aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246288"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815212"
 ---
 # <a name="how-to-implement-undo-management"></a>Porady: Implementowanie zarządzania cofania
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,39 +47,39 @@ Podstawowy interfejs używany do zarządzania cofania jest <xref:Microsoft.Visua
   
 #### <a name="to-hook-your-undo-manager-into-the-environment"></a>Można dołączyć Menedżera cofania do środowiska  
   
-1.  Wywołaj `QueryInterface` na obiekt zwrócony z <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> dla `IID_IOleUndoManager`. Wskaźnik do Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>.  
+1. Wywołaj `QueryInterface` na obiekt zwrócony z <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> dla `IID_IOleUndoManager`. Wskaźnik do Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>.  
   
-2.  Wywołaj `QueryInterface` na `IOleUndoManager` dla `IID_IOleCommandTarget`. Wskaźnik do Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+2. Wywołaj `QueryInterface` na `IOleUndoManager` dla `IID_IOleCommandTarget`. Wskaźnik do Store <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
-3.  Przekaźnik usługi <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> wywołania do przechowywanej `IOleCommandTarget` interfejsu dla następujących poleceń StandardCommandSet97:  
+3. Przekaźnik usługi <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> i <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> wywołania do przechowywanej `IOleCommandTarget` interfejsu dla następujących poleceń StandardCommandSet97:  
   
-    -   cmdidUndo  
+   -   cmdidUndo  
   
-    -   cmdidMultiLevelUndo  
+   -   cmdidMultiLevelUndo  
   
-    -   cmdidRedo  
+   -   cmdidRedo  
   
-    -   cmdidMultiLevelRedo  
+   -   cmdidMultiLevelRedo  
   
-    -   cmdidMultiLevelUndoList  
+   -   cmdidMultiLevelUndoList  
   
-    -   cmdidMultiLevelRedoList  
+   -   cmdidMultiLevelRedoList  
   
-4.  Wywołaj `QueryInterface` na `IOleUndoManager` dla `IID_IVsChangeTrackingUndoManager`. Wskaźnik do Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
+4. Wywołaj `QueryInterface` na `IOleUndoManager` dla `IID_IVsChangeTrackingUndoManager`. Wskaźnik do Store <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
   
-     Za pomocą wskaźnika do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager> do wywołania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A>i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A> metody.  
+    Za pomocą wskaźnika do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager> do wywołania <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A>i <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A> metody.  
   
-5.  Wywołaj `QueryInterface` na `IOleUndoManager` dla `IID_IVsLinkCapableUndoManager`.  
+5. Wywołaj `QueryInterface` na `IOleUndoManager` dla `IID_IVsLinkCapableUndoManager`.  
   
-6.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A> z dokumentu, które powinny również implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient> interfejsu. Po zamknięciu dokumentu wywołania `IVsLinkCapableUndoManager::UnadviseLinkedUndoClient`.  
+6. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A> z dokumentu, które powinny również implementować <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient> interfejsu. Po zamknięciu dokumentu wywołania `IVsLinkCapableUndoManager::UnadviseLinkedUndoClient`.  
   
-7.  Po zamknięciu dokumentu wywołać `QueryInterface` na Twojego menedżera cofania `IID_IVsLifetimeControlledObject`.  
+7. Po zamknięciu dokumentu wywołać `QueryInterface` na Twojego menedżera cofania `IID_IVsLifetimeControlledObject`.  
   
-8.  Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A>.  
+8. Wywołaj <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A>.  
   
 9. Gdy zmiany zostaną wprowadzone do dokumentu, należy wywołać <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> w Menedżerze z `OleUndoUnit` klasy. <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A> Metoda przechowuje odwołania do obiektu, więc zazwyczaj, zwolnij go zaraz po <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>.  
   
- `OleUndoManager` Klasa reprezentuje wystąpienie stosu pojedynczą czynność cofnięcia. W efekcie jest jeden obiekt menedżera cofania na jednostkę danych są śledzone dla cofania i ponawiania.  
+   `OleUndoManager` Klasa reprezentuje wystąpienie stosu pojedynczą czynność cofnięcia. W efekcie jest jeden obiekt menedżera cofania na jednostkę danych są śledzone dla cofania i ponawiania.  
   
 > [!NOTE]
 >  Gdy obiekt menedżera cofania jest często używany przez Edytor tekstu, jest ogólnego składnika, który nie obsługuje określonego edytora tekstu. Chcąc obsługuje wielopoziomowe cofnięcie ani ponownego wykonywania, można użyć tego obiektu, aby to zrobić.  

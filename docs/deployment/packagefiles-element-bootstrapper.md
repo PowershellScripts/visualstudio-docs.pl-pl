@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fbb8fa5e4881c76aae08759b2feb159b764231f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 84451a90e316a98a9998e1a64e68a72668bd4781
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078146"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813768"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;Zadaniach PackageFiles&gt; — element (program inicjujący)
 `PackageFiles` Element zawiera `PackageFile` elementów, które definiują pakietów instalacyjnych, wykonywane na `Command` elementu.  
-  
+
 ## <a name="syntax"></a>Składnia  
-  
+
 ```xml  
 <PackageFiles  
     CopyAllPackageFiles  
@@ -42,30 +42,31 @@ ms.locfileid: "39078146"
     />  
 </PackageFiles>  
 ```  
-  
+
 ## <a name="elements-and-attributes"></a>Atrybuty i elementy  
  `PackageFiles` Element ma atrybut.  
-  
+
 |Atrybut|Opis|  
 |---------------|-----------------|  
 |`CopyAllPackageFiles`|Opcjonalna. Jeśli ustawiono `false`, Instalator pobierze tylko pliki, do których odwołuje się z `Command` elementu. Jeśli ustawiono `true`, wszystkie pliki zostaną pobrane.<br /><br /> Jeśli ustawiono `IfNotHomesite`, Instalator będzie działa tak samo tak, jakby `False` Jeśli `ComponentsLocation` jest ustawiona na `HomeSite`, a w przeciwnym razie zostanie działa tak samo tak, jakby `True`. To ustawienie może być przydatne zezwolenie na pakiety, które znajdują się programów inicjujących można wykonać swoje własne zachowanie w przypadku scenariusza HomeSite.<br /><br /> Wartość domyślna to `true`.|  
-  
+
 ## <a name="packagefile"></a>PackageFile  
  `PackageFile` Element jest elementem podrzędnym `PackageFiles` elementu. A `PackageFiles` element musi mieć co najmniej jeden `PackageFile` elementu.  
-  
+
  `PackageFile` ma następujące atrybuty.  
-  
-|Atrybut|Opis|  
-|---------------|-----------------|  
-|`Name`|Wymagane. Nazwa pliku pakietu. Jest to nazwa która `Command` elementu, będzie stanowiła odwołanie podczas definiuje warunki, w których pakiet instaluje. Ta wartość jest również używana jako klucz do `Strings` tabelę, aby pobrać zlokalizowana nazwa, która narzędzia takie jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] będzie używany do opisania pakietu.|  
-|`HomeSite`|Opcjonalna. Lokalizacja pakietu na serwerze zdalnym, jeśli nie jest dołączony do Instalatora.|  
-|`CopyOnBuild`|Opcjonalna. Określa, czy program inicjujący należy skopiować plik pakietu na dysku w czasie kompilacji. Wartość domyślna to true.|  
-|`PublicKey`|Zaszyfrowany klucz publiczny podpisu certyfikatu pakietu. Jeśli wymagane `HomeSite` jest używany; w przeciwnym razie opcjonalne.|  
-|`Hash`|Opcjonalna. Skrót SHA1 pliku pakietu. Służy to sprawdzić integralność pliku w czasie instalacji. Jeśli nie można obliczyć skrótu identyczne z pliku pakietu, pakietu nie zostanie zainstalowana.|  
-  
+
+
+| Atrybut | Opis |
+|---------------| - |
+| `Name` | Wymagana. Nazwa pliku pakietu. Jest to nazwa która `Command` elementu, będzie stanowiła odwołanie podczas definiuje warunki, w których pakiet instaluje. Ta wartość jest również używana jako klucz do `Strings` tabelę, aby pobrać zlokalizowana nazwa, która narzędzia takie jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] będzie używany do opisania pakietu. |
+| `HomeSite` | Opcjonalna. Lokalizacja pakietu na serwerze zdalnym, jeśli nie jest dołączony do Instalatora. |
+| `CopyOnBuild` | Opcjonalna. Określa, czy program inicjujący należy skopiować plik pakietu na dysku w czasie kompilacji. Wartość domyślna to true. |
+| `PublicKey` | Zaszyfrowany klucz publiczny podpisu certyfikatu pakietu. Jeśli wymagane `HomeSite` jest używany; w przeciwnym razie opcjonalne. |
+| `Hash` | Opcjonalna. Skrót SHA1 pliku pakietu. Służy to sprawdzić integralność pliku w czasie instalacji. Jeśli nie można obliczyć skrótu identyczne z pliku pakietu, pakietu nie zostanie zainstalowana. |
+
 ## <a name="example"></a>Przykład  
  Poniższy kod definiuje pakietów dla [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pakietu redystrybucyjnego oprogramowania oraz jego zależności, takich jak Instalator Windows.  
-  
+
 ```xml  
 <PackageFiles>  
     <PackageFile Name="instmsia.exe" HomeSite="InstMsiAExe" PublicKey="3082010A0282010100AA99BD39A81827F42B3D0B4C3F7C772EA7CBB5D18C0DC23A74D793B5E0A04B3F595ECE454F9A7929F149CC1A47EE55C2083E1220F855F2EE5FD3E0CA96BC30DEFE58C82732D08554E8F09110BBF32BBE19E5039B0B861DF3B0398CB8FD0B1D3C7326AC572BCA29A215908215E277A34052038B9DC270BA1FE934F6F335924E5583F8DA30B620DE5706B55A4206DE59CBF2DFA6BD154771192523D2CB6F9B1979DF6A5BF176057929FCC356CA8F440885558ACBC80F464B55CB8C96774A87E8A94106C7FF0DE968576372C36957B443CF323A30DC1BE9D543262A79FE95DB226724C92FD034E3E6FB514986B83CD0255FD6EC9E036187A96840C7F8E203E6CF050203010001"/>  
@@ -74,7 +75,7 @@ ms.locfileid: "39078146"
     <PackageFile Name="dotnetchk.exe"/>  
 </PackageFiles>  
 ```  
-  
+
 ## <a name="see-also"></a>Zobacz także  
  [\<Produktu > element](../deployment/product-element-bootstrapper.md)   
  [\<Pakiet > element](../deployment/package-element-bootstrapper.md)   

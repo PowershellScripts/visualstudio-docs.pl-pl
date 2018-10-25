@@ -16,15 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f3ce3aee4a7a498600da4eb0c99210c9c20d00f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 57d6c8c7821df8bd22723900ebd011c110a1857f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703422"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815185"
 ---
 # <a name="list-memory-command"></a>Lista pamięci — Polecenie
-Wyświetla zawartość z pamięci podanego zakresu.
+Wyświetla zawartość określonego zakresu pamięci.
 
 ## <a name="syntax"></a>Składnia
 
@@ -36,12 +36,12 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 ## <a name="arguments"></a>Argumenty
  `expression`
 
- Opcjonalna. Adres pamięci, z którego ma zostać rozpoczęta wyświetlanie pamięci.
+ Opcjonalna. Adres pamięci, od którego należy rozpocząć wyświetlanie pamięci.
 
 ## <a name="switches"></a>Przełączniki
  / ANSI&#124;Unicode
 
- Opcjonalna. Wyświetl pamięć jako znaków odpowiadającej liczbę bajtów pamięci, ANSI lub Unicode.
+ Opcjonalna. Wyświetl pamięć jako znaki odpowiadający bajtów pamięci, ANSI lub Unicode.
 
  / Liczba:`number`
 
@@ -49,37 +49,37 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
  / Format:`formattype`
 
- Opcjonalna. Format typu podczas wyświetlania informacji w pamięci w **pamięci** okna; może być OneByte, TwoBytes, FourBytes, EightBytes, Float (32-bitowe) lub dwukrotnie (64-bitowe). Użycie OneByte `/Unicode` jest niedostępny.
+ Opcjonalna. Formatowanie typ do wyświetlania informacji o pamięci w **pamięci** okna; może być OneByte TwoBytes, FourBytes, EightBytes, Float (32-bitowa) lub dwukrotnie (64-bitowe). Jeśli OneByte `/Unicode` jest niedostępny.
 
- / Szesnastkowych&#124;podpisany&#124;bez znaku
+ / Szesnastkowy&#124;podpisany&#124;bez znaku
 
  Opcjonalna. Określa format wyświetlania liczb: jak podpisem, bez znaku lub szesnastkową.
 
 ## <a name="remarks"></a>Uwagi
- Zamiast zapisywania pełnego **Debug.listmemory —** polecenie z wszystkich przełączników, można wywołać polecenia przy użyciu wstępnie zdefiniowane aliasy z przełącznikami, niektórych ustawień do określonej wartości. Na przykład zamiast wprowadzania:
+ Zamiast pisania się kompletna **Debug.listmemory —** polecenia wszystkich przełączników, można wywołać polecenia przy użyciu wstępnie zdefiniowanych aliasów z przełącznikami, niektórych ustawień do określonej wartości. Na przykład zamiast wprowadzania:
 
 ```cmd
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
- Można napisać:
+ można napisać:
 
 ```cmd
 >df /Count:30 /Unicode
 ```
 
- Poniżej przedstawiono listę dostępnych aliasów dla **Debug.listmemory —** polecenia:
+ W tym miejscu znajduje się lista dostępnych aliasów dla **Debug.listmemory —** polecenia:
 
 |Alias|Polecenia i przełączniki|
-|-----------|--------------------------|
+|-----------| - |
 |**d**|Debug.listmemory —|
-|**da**|Debug.listmemory — /Ansi|
+|**Akcelerator deweloperski w wersji**|Debug.listmemory — /Ansi|
 |**bazy danych**|Debug.listmemory — /Format:OneByte|
 |**Kontroler domeny**|Debug.listmemory — /Format:FourBytes /Ansi|
 |**dd**|Debug.listmemory — /Format:FourBytes|
 |**DF**|Debug.listmemory — /Format:Float|
-|**dq —**|Debug.listmemory — /Format:EightBytes|
-|**du**|Debug.listmemory — /Unicode|
+|**dq**|Debug.listmemory — /Format:EightBytes|
+|**jednostka bazy danych**|Debug.listmemory — /Unicode|
 
 ## <a name="example"></a>Przykład
 
@@ -93,5 +93,5 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 - [Lista wątków, polecenie](../../ide/reference/list-threads-command.md)
 - [Visual Studio — polecenia](../../ide/reference/visual-studio-commands.md)
 - [Okno Polecenie](../../ide/reference/command-window.md)
-- [Find/Command — pole](../../ide/find-command-box.md)
+- [Pole znajdowania i polecenia](../../ide/find-command-box.md)
 - [Visual Studio — aliasy poleceń](../../ide/reference/visual-studio-command-aliases.md)

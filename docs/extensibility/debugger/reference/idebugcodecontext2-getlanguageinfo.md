@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 915c6009d796209e34abc38fe5769ebdd90635d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3c2638a072c3cf7c234adc88c26bace3348533f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931028"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 Pobiera informacje o języku dla tego kontekstu kodu.  
@@ -43,13 +43,13 @@ int GetLanguageInfo(
   
 #### <a name="parameters"></a>Parametry  
  `pbstrLanguage`  
- [w, out] Zwraca ciąg zawierający nazwę języka, takie jak "C++."  
+ [out w] Zwraca ciąg zawierający nazwę języka, takich jak "C++".  
   
  `pguidLanguage`  
- [w, out] Zwraca identyfikator GUID dla języka kontekst kodu, na przykład `guidCPPLang`.  
+ [out w] Zwraca identyfikator GUID dla języka kontekst kodu, na przykład `guidCPPLang`.  
   
 ## <a name="return-value"></a>Wartość zwracana  
- Jeśli to się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
+ Jeśli operacja się powiedzie, zwraca `S_OK`; w przeciwnym razie zwraca kod błędu.  
   
 ## <a name="remarks"></a>Uwagi  
  Co najmniej jeden z parametrów musi zwracać wartość inną niż null.  

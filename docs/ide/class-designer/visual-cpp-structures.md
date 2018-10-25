@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36d9e78a1944817d9384d0c55b9584e58a758ccc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 79b4adcfbcacc8cf342b5fc4183ae4fe27431b09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925084"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864773"
 ---
-# <a name="visual-c-structures-in-class-designer"></a>Visual C++ struktur w Projektancie klas
+# <a name="visual-c-structures-in-class-designer"></a>Struktury Visual C++ w w Projektancie klas
 
-**Projektant klas** obsługuje struktury języka C++, które są zadeklarowane ze słowem kluczowym `struct`. Poniżej przedstawiono przykładowy:
+**Projektant klasy** obsługuje struktury, C++, które są zadeklarowane za pomocą słowa kluczowego `struct`. Poniżej znajduje się przykład:
 
 ```cpp
 struct MyStructure
@@ -34,10 +34,10 @@ struct MyStructure
 
 Aby uzyskać więcej informacji o korzystaniu z `struct` typu, zobacz [struktury](/cpp/cpp/struct-cpp).
 
-Struktura C++ kształt na diagramie klas wyglądu i działania takie jak kształt klasy, z tą różnicą, że etykieta odczytuje **struktury** i ma narożniki zamiast zaokrąglone narożniki.
+Kształt struktury języka C++ na diagramie klasy wygląda i działa jak kształt klasy, z tą różnicą, że czyta etykietę **struktury** i ma ostre rogi zamiast zaokrąglone rogi.
 
 |Element Code|Widok projektanta klas|
-|------------------|-------------------------|
+|------------------| - |
 |`struct StructureName {};`|**StructureName**<br /><br /> Struct|
 
 ## <a name="see-also"></a>Zobacz także

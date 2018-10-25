@@ -22,21 +22,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2bbb0aad4db91119c3754a27cc5410769b494e65
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c2710fae53cd860b6d67cc9f9d8c7ce61afa2b03
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35676369"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929858"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Typ funkcji według aplikacji pakietu Office i projekt
   Program Visual Studio zawiera kilka typów szablonów projektu obsługi różnych scenariuszy biznesowych aplikacji pakietu Microsoft Office, w tym następujących typów:  
   
--   Dostosowania poziomu dokumentu.  
+- Dostosowania poziomu dokumentu.  
   
--   Dodatków narzędzi VSTO.  
+- Dodatków narzędzi VSTO.  
   
- Nie wszystkie aplikacje mogą używać każdego typu projektu. Na przykład projektów na poziomie dokumentu są dostępne tylko dla programu Microsoft Office Word i Microsoft Office Excel. Podobnie niektóre funkcje są dostępne tylko dla niektórych typów projektów lub aplikacji. Na przykład w okienku Akcje jest dostępna tylko w projektach na poziomie dokumentu i wstążki rozszerzenia są dostępne tylko dla niektórych aplikacji. Aby uzyskać więcej informacji o różnych typach projektów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
+  Nie wszystkie aplikacje mogą używać każdego typu projektu. Na przykład projektów na poziomie dokumentu są dostępne tylko dla programu Microsoft Office Word i Microsoft Office Excel. Podobnie niektóre funkcje są dostępne tylko dla niektórych typów projektów lub aplikacji. Na przykład w okienku Akcje jest dostępna tylko w projektach na poziomie dokumentu i wstążki rozszerzenia są dostępne tylko dla niektórych aplikacji. Aby uzyskać więcej informacji o różnych typach projektów, zobacz [rozwój rozwiązań Office ― omówienie &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 > [!NOTE]  
 >  Szablony projektów pakietu Office są dostępne tylko w niektórych wersjach [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Aby uzyskać więcej informacji, zobacz [Konfigurowanie komputera do opracowywania rozwiązań pakietu Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  

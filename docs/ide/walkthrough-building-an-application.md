@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23d22e5fc3169cc731428e8c5fafff607847c156
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942221"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143193"
 ---
 # <a name="walkthrough-build-an-application"></a>Przewodnik: kompilowanie aplikacji
 
@@ -100,7 +100,7 @@ Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji za
 
 1. Wybierz **kompilacji** strony i następnie **pomijanie ostrzeżeń** Określ numer ostrzeżenia **0168**.
 
-     ![Strona, Projektant projektu kompilacji](../ide/media/buildwalk_csharpsupresswarnings.png)
+     ![Strona, Projektant projektu kompilacji](../ide/media/buildwalk_csharpsuppresswarnings.png)
 
      Aby uzyskać więcej informacji, zobacz [Stroka kompilacji, Projektant projektu (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -120,7 +120,7 @@ Można tymczasowo ukryć niektóre komunikaty ostrzegawcze podczas kompilacji za
 
 3. Na **skompilować** wybierz opcję **Wyłącz wszystkie ostrzeżenia** pole wyboru.
 
-     ![Strona kompilowania, Projektant projektu](../ide/media/buildwalk_vbsupresswarnings.png)
+     ![Strona kompilowania, Projektant projektu](../ide/media/buildwalk_vbsuppresswarnings.png)
 
      Aby uzyskać więcej informacji, zobacz [Konfigurowanie ostrzeżeń w języku Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 

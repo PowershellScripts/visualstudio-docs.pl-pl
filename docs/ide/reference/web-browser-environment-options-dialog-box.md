@@ -7,7 +7,6 @@ ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
 - VS.ToolsOptionsPages.Environment.WebBrowser
-- VS.ToolsOptionsPag.Environment.Web_Browser
 - VS.ToolsOptionsPages.Environment.Web_Browser
 helpviewer_keywords:
 - browsers, customizing
@@ -25,48 +24,48 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f8dc8fb781e75116dbdcb6e316981225f32439
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f4eb5b3a73d2b06123e7878ac90ceb5bdf21869c
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947121"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143167"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Przeglądarka sieci Web, środowisko, opcje — Okno dialogowe
-Ustawia opcje dla wewnętrznej przeglądarce sieci Web i program Internet Explorer. Aby uzyskać dostęp do tego okna dialogowego, kliknij przycisk **opcje** na **narzędzia** menu, rozwiń węzeł **środowiska** folder, a następnie wybierz **przeglądarki sieci Web**.
+Ustawia opcje dla wewnętrznej przeglądarki sieci Web i program Internet Explorer. Aby otworzyć to okno dialogowe, kliknij przycisk **opcje** na **narzędzia** menu, rozwiń węzeł **środowiska** folder, a następnie wybierz **przeglądarki sieci Web**.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz polecenie Import i eksport ustawień w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz Importuj i Eksportuj ustawienia w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 
 > [!IMPORTANT]
-> Otwieranie niektóre pliki lub składniki z sieci Web można wykonać kod na komputerze.
+> Otwieranie określone pliki lub składniki z sieci Web może wykonać kod na komputerze.
 
 
 ## <a name="home-page"></a>Strona główna
- Ustawia stronę wyświetlaną po otwarciu przeglądarki sieci Web IDE.
+ Ustawia stronę wyświetlaną po otwarciu przeglądarki sieci Web w środowisku IDE.
 
 ## <a name="search-page"></a>Strona wyszukiwania
- Umożliwia wyznaczenie strona wyszukiwania przeglądarki sieci Web wewnętrznej. Ta lokalizacja może się różnić od strony wyszukiwania wystąpień programu Internet Explorer inicjowane poza zintegrowane środowisko programistyczne (IDE).
+ Umożliwia wyznaczenie stronę wyszukiwania wewnętrznej przeglądarki sieci Web. Ta lokalizacja może się różnić od strony wyszukiwania wystąpień programu Internet Explorer inicjowane poza zintegrowanego środowiska programistycznego (IDE).
 
 ## <a name="view-source-in"></a>Wyświetl źródło w
- Ustawia Edytor użyty do otwarcia strony sieci Web po wybraniu **Wyświetl źródło** na stronie z wewnętrznej przeglądarki sieci Web.
+ Ustawia Edytor używana w celu otwarcia strony sieci Web, w przypadku wybrania **Wyświetl źródło** na stronie z wewnętrznej przeglądarki sieci Web.
 
--   **Edytor źródła** wybierz, aby wyświetlić źródło w [edytor](../../ide/writing-code-in-the-code-and-text-editor.md).
+-   **Edytor źródła** wybierz, aby wyświetlić źródła w [edytora](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **Edytor HTML** wybierz, aby wyświetlić źródło w [projektanta HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Zaznacz to pole wyboru do edycji strony sieci Web w jednym z dwóch widoków: widoku projektu lub standardowy tekstowy źródła.
+-   **Edytor HTML** wybierz, aby wyświetlić źródła w [projektancie HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Zaznacz to pole wyboru, aby edytować strony sieci Web na jeden z dwóch widoków: widoku projektu lub standardowy widok źródła oparte na tekście.
 
--   **Edytor zewnętrzny** zaznacz, aby wyświetlić kod źródłowy w innym edytorze. Określ ścieżkę dowolnego edytora, wybrane, na przykład Notepad.exe.
+-   **Edytor zewnętrzny** zaznacz, aby wyświetlić kod źródłowy w innym edytorze. Określ ścieżkę do dowolnego edytora, który wybierzesz, na przykład Notepad.exe.
 
 ## <a name="internet-explorer-options"></a>Opcje programu Internet Explorer
-Kliknij, aby zmienić opcje programu Internet Explorer w **właściwości internetowe** okno dialogowe. Zmiany wprowadzone w tym oknie dialogowym wpływają na wewnętrznej przeglądarce sieci Web i wystąpień programu Internet Explorer inicjowane poza programu Visual Studio IDE (na przykład z Start menu).
+Kliknij, aby zmienić opcje programu Internet Explorer w **właściwości internetowe** okno dialogowe. Zmiany wprowadzone w tym oknie dialogowym wpływa na wewnętrznej przeglądarki sieci Web i wystąpień programu Internet Explorer inicjowane poza programem Visual Studio IDE (na przykład z Start menu).
 
 > [!NOTE]
-> Użyj **przeglądanie za pomocą** okno dialogowe, aby zastąpić wewnętrznej przeglądarce sieci Web programu Visual Studio za pomocą przeglądarki wybranych przez użytkownika. Dostępne oknie dialogowym Przeglądanie za pomocą menu kliknij prawym przyciskiem myszy lub kontekstu, na przykład plik HTML w projekcie.
+> Użyj **przeglądanie za pomocą** okno dialogowe, aby zastąpić wewnętrznej przeglądarki sieci Web programu Visual Studio przy użyciu wybranej przeglądarki. Okno dialogowe Przeglądanie za pomocą menu kliknij prawym przyciskiem myszy lub kontekst, na przykład plik HTML dostęp w swoim projekcie.
 
 
 ## <a name="see-also"></a>Zobacz także
 
 - [Środowisko, Opcje — okno dialogowe](../../ide/reference/environment-options-dialog-box.md)
-- [Ogólne, środowisko, opcje — Okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
+- [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
 - [Projektant HTML](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

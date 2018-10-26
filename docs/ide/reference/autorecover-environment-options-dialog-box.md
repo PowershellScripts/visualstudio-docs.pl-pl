@@ -5,7 +5,6 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPag.Environment.AutoRecover
 - VS.DialogAutoRestore
 - VS.ToolsOptionsPages.Environment.AutoRecover
 - VS.ToolsOptionsPages.Environment.Auto_Save_and_Restore
@@ -20,23 +19,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f6409e31a606fe31fa1296dc937616338f8d62c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ed5ad6259ede32304cfe15ef4e79c6b3e56dbd9d
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943205"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143310"
 ---
-# <a name="autorecover-environment-options-dialog-box"></a>AutoRecover, środowisko, opcje — Okno dialogowe
-Ta strona Opcje — okno dialogowe umożliwia określenie, czy pliki są automatycznie do kopii zapasowej. Ta strona umożliwia również określić czy zmodyfikowane pliki zostaną przywrócone, gdy jest nieoczekiwanie zamykany zintegrowane środowisko programistyczne (IDE). Dostęp do tego okna dialogowego, wybierając **narzędzia** menu i wybierając pozycję **opcje**, a następnie wybierając **środowiska** folderu i wybierając polecenie  **AutoRecover** strony. Jeśli ta strona nie ma na liście, wybierz **wszystkie ustawienia** w **opcje** okno dialogowe.
+# <a name="autorecover-environment-options-dialog-box"></a>Okno dialogowe AutoRecover, środowisko, opcje
+
+Użyj tej strony w **opcje** okno dialogowe, aby określić, czy do automatycznego wykonywania kopii zapasowej plików, czy nie. Ta strona umożliwia również określić, czy przywrócić zmodyfikowane pliki, jeśli nieoczekiwane zamknięcie programu Visual Studio.
+
+Dostęp do tego okna dialogowego wybierając **narzędzia** menu, wybierając **opcje**, a następnie wybierając **środowiska** > **Autoodzyskiwania**. Jeśli ta strona nie jest wyświetlana na liście, wybierz **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.
 
 > [!NOTE]
-> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić ustawienia, wybierz polecenie Import i eksport ustawień w menu Narzędzia. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Okna dialogowe i polecenia menu mogą się różnić od tych opisanych w Pomocy, w zależności od ustawień aktywnych lub wydania. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
- **Zapisz informacje automatycznego odzyskiwania co \<n > minut** Użyj tej opcji, aby dostosować częstotliwość pliku są automatycznie zapisywane w edytorze. W przypadku wcześniej zapisane pliki kopia pliku jest zapisywany w \\... \My Studio \< *wersji*> pliki \Backup\\<*projectname*>. Jeśli plik jest nowy i nie zostały ręcznie zapisane, plik jest automatycznie zapisane przy użyciu nazwy losowo wygenerowany plik.
+**Zapisuj informacje Autoodzyskiwania co minut [n]**
 
- **Zachowaj informacje automatycznego odzyskiwania dla \<n > dni** Użyj tej opcji, aby określić, jak długo przechowuje pliki utworzone dla Autoodzyskiwania w Visual Studio.
+Użyj tej opcji, aby dostosować, jak często automatycznie zapisaniu pliku w edytorze. Wcześniej zapisanych plików, kopia pliku jest zapisywana w *%USERPROFILE%\Documents\Visual Studio \<wersji > pliki \Backup\\<projectname>*. Jeśli plik jest nowy, a nie zapisano go, plik jest automatycznie zapisany przy użyciu nazwy losowo wygenerowany plik.
 
-## <a name="see-also"></a>Zobacz też
+**Zachowaj informacje automatycznego odzyskiwania dni [n]**
+
+Użyj tej opcji, aby określić, jak długo Visual Studio przechowuje pliki utworzone dla Autoodzyskiwania.
+
+## <a name="see-also"></a>Zobacz także
 
 - [Opcje, okno dialogowe](../../ide/reference/options-dialog-box-visual-studio.md)

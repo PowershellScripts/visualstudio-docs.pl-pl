@@ -24,12 +24,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fe2bb17979b7bc4fd068ddd7fb309446c88b7f6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f97e3ad4321cb8503a964115922f06e62f2c121
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184252"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143427"
 ---
 # <a name="vbc-task"></a>Vbc — Zadanie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Opakowuje vbc.exe, który tworzy pliki wykonywalne (.exe), bibliotek dołączany
 |`NoLogo`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, Pomija wyświetlanie informacji o transparencie kompilatora. Ten parametr odnosi się do [/nologo](http://msdn.microsoft.com/library/25ef54b6-d676-4639-a2d2-a747a158bc07) przełącznika kompilatora vbc.exe.|  
 |`NoStandardLib`|Opcjonalnie `Boolean` parametru.<br /><br /> Powoduje, że kompilator, aby nie odwoływać się do standardowych bibliotek. Ten parametr odnosi się do [/nostdlib](http://msdn.microsoft.com/library/140381b8-dc96-4ad5-ae11-792c9ed0be4d) przełącznika kompilatora vbc.exe.|  
 |`NoVBRuntimeReference`|Opcjonalnie `Boolean` parametru.<br /><br /> Wyłącznie do użytku wewnętrznego. W przypadku opcji true uniemożliwia automatyczne odwołanie do pliku Microsoft.VisualBasic.dll...|  
-|`NoWarnings`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, pomija zadania wszystkie ostrzeżenia. Aby uzyskać więcej informacji, zobacz [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).|  
+|`NoWarnings`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, zadanie wyłącza wszystkie ostrzeżenia. Aby uzyskać więcej informacji, zobacz [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).|  
 |`Optimize`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, umożliwia optymalizacje kompilatora. Ten parametr odnosi się do [/ optimize](http://msdn.microsoft.com/library/fcba4a97-3622-4b87-a891-0f77deab4998) przełącznika kompilatora vbc.exe.|  
 |`OptionCompare`|Opcjonalnie `String` parametru.<br /><br /> Określa, jak są wykonywane porównywania ciągów. Ten parametr może mieć następujące wartości:<br /><br /> -   `binary`<br />-   `text`<br /><br /> Wartość `binary` Określa, że zadanie używa porównania ciągów binarnych. Wartość `text` Określa, że zadanie używa porównania ciągów tekstu. Wartość domyślna tego parametru to `binary`. Ten parametr odnosi się do [/optioncompare —](http://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4) przełącznika kompilatora vbc.exe.|  
 |`OptionExplicit`|Opcjonalnie `Boolean` parametru.<br /><br /> Jeśli `true`, jawnej deklaracji zmiennych jest wymagana. Ten parametr odnosi się do [/optionexplicit —](http://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7) przełącznika kompilatora vbc.exe.|  

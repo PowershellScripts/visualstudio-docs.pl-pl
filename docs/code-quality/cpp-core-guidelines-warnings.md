@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4ed54d3b87944491539e6bc7f127cbf10913d46
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 086a977ce5ef69da94316fd708b42b79623d596c
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818695"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143271"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Za pomocą narzędzia do sprawdzania podstawowych wytycznych dotyczących języka C++
 
@@ -128,10 +128,10 @@ Te makra odpowiadają zestawów reguł i rozszerzyć do rozdzielonej spacjami li
 Kompilator Microsoft Visual C++ ma ograniczoną obsługę GSL Pomiń atrybut. Może służyć do Pomijaj ostrzeżenia w przypadku wyrażeń i instrukcji bloku wewnątrz funkcji.
 
 ```cpp
-// Supress only warnings from the 'r.11' rule in expression.
+// Suppress only warnings from the 'r.11' rule in expression.
 [[gsl::suppress(r.11)]] new int;
 
-// Supress all warnings from the 'r' rule group (resource management) in block.
+// Suppress all warnings from the 'r' rule group (resource management) in block.
 [[gsl::suppress(r)]]
 {
     new int;

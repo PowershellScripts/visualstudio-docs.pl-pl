@@ -6,7 +6,6 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Task_List
-- VS.ToolsOptionsPag.Environment.Task_List
 - VS.ToolsOptionsPages.Environment.TaskList
 - VS.Environment.Task List
 helpviewer_keywords:
@@ -25,63 +24,63 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe61b439c0cb4360151d161a5a0b0190858ef71f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c152e7a193fff8d444daf86d098681f20a8f5434
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947654"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143141"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Lista zadań, środowisko, opcje — Okno dialogowe
 
-Ta strona Opcje umożliwia dodawanie, usuwanie i zmienić tokenów komentarzy, które generują **listy zadań** przypomnienia. Aby wyświetlić te ustawienia, wybierz **opcje** z **narzędzia** menu, rozwiń węzeł **środowiska** folderu i wybierz polecenie **listy zadań**.
+Ta strona opcji pozwala na dodawanie, usuwanie i zmienianie tokenami komentarzy, które generują **listy zadań** przypomnienia. Aby wyświetlić te ustawienia, wybierz **opcje** z **narzędzia** menu, rozwiń węzeł **środowiska** folderu i wybierz polecenie **listy zadań**.
 
 ## <a name="task-list-options"></a>Opcje listy zadań
- Potwierdź usunięcie zadań
+ Potwierdź usunięcie zadania
 
- Po wybraniu okno komunikatu jest wyświetlane zawsze, gdy zadanie użytkownika są usuwane z **listy zadań**, co umożliwia potwierdzenie usunięcia. Ta opcja jest domyślnie wybrana.
+ Po wybraniu wyświetlane jest okno wiadomości, zawsze wtedy, gdy zadanie użytkownika są usuwane z **listy zadań**, co pozwala potwierdzić usunięcie. Ta opcja jest domyślnie wybrana.
 
 > [!NOTE]
-> Aby usunąć komentarz zadań, użyj łącza, aby znaleźć komentarz, a następnie usuń go z kodu.
+> Aby usunąć komentarza do zadania, użyj linku, aby znaleźć komentarz, a następnie usuń go z kodu.
 
 
- Wyświetl tylko nazwy pliku
+ Pokazuj tylko nazwy plików
 
- Po wybraniu **pliku** kolumny **listy zadań** wyświetla tylko nazwy plików można edytowane, nie ich pełnej ścieżki.
+ Po wybraniu **pliku** kolumny **listy zadań** wyświetla tylko nazwy plików, które można edytować, nie ich pełnej ścieżki.
 
 ## <a name="tokens"></a>Tokeny
- Gdy Wstaw komentarz do kodu, w których tekst rozpoczyna się od tokenu z **lista tokenów**, **listy zadań** Wyświetla komentarz jako nowy wpis w każdym przypadku, gdy plik jest otwarty do edycji. Kliknij ten przycisk **listy zadań** wpis, aby przejść bezpośrednio do wiersza komentarz w kodzie. Aby uzyskać więcej informacji, zobacz [korzystanie z listy zadań](../../ide/using-the-task-list.md).
+ Po wstawieniu komentarz w kodzie, którego tekst zaczyna się od tokenu z **lista tokenów**, **listy zadań** Wyświetla komentarz jako nowy wpis, zawsze wtedy, gdy plik jest otwarty do edycji. Możesz kliknąć to **listy zadań** wpis, aby bezpośrednio przejść do wiersza komentarza w kodzie. Aby uzyskać więcej informacji, zobacz [korzystanie z listy zadań](../../ide/using-the-task-list.md).
 
  lista tokenów
 
- Wyświetla listę tokenów i umożliwia dodawanie lub usuwanie tokeny niestandardowe. Tokeny komentarza to rozróżnianiem wielkości liter w języku C# i Visual C++, ale nie w języku Visual Basic.
+ Wyświetla listę tokenów i umożliwia dodawanie lub usuwanie tokeny niestandardowe. Tokeny komentarza jest uwzględniana wielkość liter w C# i Visual C++, ale nie w języku Visual Basic.
 
 > [!NOTE]
-> Jeśli nie wpiszesz żądanego tokenu dokładnie w brzmieniu podanym w **lista tokenów**, komentarza zadania nie będą wyświetlane w **listy zadań**.
+> Jeśli nie wpiszesz żądanego tokenu dokładnie tak, jak pojawiają się one w **lista tokenów**, komentarz zadania nie będą wyświetlane w **listy zadań**.
 
 
  Priorytet
 
- Ustawia priorytet zadania korzystające z wybranych tokenu. Komentarze zadań, które zaczynają się od tokenu są automatycznie przypisywane wyznaczonych priorytet w **listy zadań**.
+ Ustawia priorytet zadania korzystające z wybranego tokenu. Komentarze do zadań, które zaczynają się od tego tokenu są automatycznie przypisywane wyznaczonym priorytet w **listy zadań**.
 
  Nazwa
 
- Wprowadź ciąg tokena. Dzięki temu **Dodaj** przycisku. Na **Dodaj**, ten ciąg jest uwzględniona w **lista tokenów**, i komentarze zaczynające się ta nazwa będzie wyświetlana w **listy zadań**.
+ Wprowadź ciąg tokenu. Dzięki temu **Dodaj** przycisku. Na **Dodaj**, te parametry są objęte **lista tokenów**, i komentarze rozpoczynające się od ta nazwa będzie wyświetlana w **listy zadań**.
 
  Dodaj
 
- Włączone po wprowadzeniu nowego **nazwa**. Kliknij, aby dodać nowy ciąg tokenu przy użyciu wartości wprowadzone w **nazwa** i **priorytet** pola.
+ Włączony podczas wprowadzania nowej **nazwa**. Kliknij, aby dodać nowy ciąg tokenu przy użyciu wartościami podanymi w **nazwa** i **priorytet** pola.
 
  Usuwanie
 
- Kliknij, aby usunąć wybrany token z **lista tokenów**. Nie można usunąć domyślnego tokenu komentarza.
+ Kliknij, aby usunąć wybrany token z **lista tokenów**. Nie można usunąć domyślny token komentarz.
 
  Zmiana
 
- Kliknij, aby wprowadzić zmiany w istniejących tokenu przy użyciu wartości wprowadzone w **nazwa** i **priorytet** pola.
+ Kliknij, aby wprowadzić zmiany do istniejącego tokenu przy użyciu wartościami podanymi w **nazwa** i **priorytet** pola.
 
 > [!NOTE]
-> Nie można zmienić ani usunąć domyślny token komentarza, ale można zmienić jego poziom priorytetu.
+> Nie można zmienić ani usunąć domyślny token komentarz, ale można zmienić jego priorytet.
 
 
 ## <a name="see-also"></a>Zobacz też

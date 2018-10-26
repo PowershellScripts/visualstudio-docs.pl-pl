@@ -1,22 +1,22 @@
-## Microsoft Open Source Code of Conduct
+## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open źródła Kodeks postępowania
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Ten projekt przyjęła [Otwórz źródło Kodeks postępowania firmy Microsoft](https://opensource.microsoft.com/codeofconduct/).
+Aby uzyskać więcej informacji, zobacz [kodu postępowania FAQ](https://opensource.microsoft.com/codeofconduct/faq/) lub skontaktuj się z [ opencode@microsoft.com ](mailto:opencode@microsoft.com) z jakichkolwiek dodatkowych pytań lub komentarzy.
 
-# Visual Studio 2017 documentation
+# <a name="visual-studio-2017-documentation"></a>Dokumentacja programu Visual Studio 2017
 
-Welcome! This repo contains source files for the work-in-progress Visual Studio 2017 technical documentation. The topics are published on the [Visual Studio documentation site](https://docs.microsoft.com/visualstudio).
+Witamy! To repozytorium zawiera pliki źródłowe dla dokumentacji technicznej programu Visual Studio 2017 prac w toku. Tematy są publikowane w [witrynie dokumentacji programu Visual Studio](https://docs.microsoft.com/visualstudio).
 
-This repo was moved on June 23, 2017 from https://github.com/Microsoft/vsdocs. Traffic to the old URLs is redirected here.
+To repozytorium została przeniesiona na 23 czerwca 2017 r. z https://github.com/Microsoft/vsdocs. Ruch do starych adresów URL jest przekierowywany w tym miejscu.
 
-The documentation for Visual Basic and Visual C# are located in a separate repo at [http://github.com/dotnet/core-docs](http://github.com/dotnet/core-docs), and the Visual C++ documentation is located in the repo located at [http://github.com/MicrosoftDocs/cpp-docs](http://github.com/MicrosoftDocs/cpp-docs).
+Dokumentacja dla języka Visual Basic i Visual C# znajdują się w osobnym repozytorium na [ http://github.com/dotnet/core-docs ](http://github.com/dotnet/core-docs), dokumentacji języka Visual C++ znajdują się w repozytorium znajduje się w [ http://github.com/MicrosoftDocs/cpp-docs ](http://github.com/MicrosoftDocs/cpp-docs).
 
-## Contributing to the documentation
+## <a name="contributing-to-the-documentation"></a>Współtworzenie dokumentacji
 
-To contribute to this documentation, please see the [Contributing guide](CONTRIBUTING.md).
-We welcome your contributions to help us improve the Visual Studio docs. All the articles in this repository use GitHub flavored markdown.
+Aby współtworzyć tej dokumentacji, zobacz [przewodnik Dodawanie](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/CONTRIBUTING.md).
+Chętnie poznamy wkład w taki sposób, aby pomóc nam ulepszyć dokumentację programu Visual Studio. Wszystkie artykuły w tym repozytorium, użyj GitHub flavored markdown.
 
-Several feature areas of Visual Studio have their own folders in this repo, such as **debugger** for topics on debugging, **ide** for topics on the Visual Studio interactive development environment (IDE), and so forth. The **/media** subfolder in each folder contains art files for the topics. The [Contributing guide](CONTRIBUTING.md) has more information.
+Kilka obszarów funkcji programu Visual Studio mają własnych folderów, w tym repozytorium, takich jak **debugera** tematy dotyczące debugowania, **ide** na temat środowiska (IDE), opracowywanie interakcyjne Visual Studio i itd. **/Media** podfolderu w każdym folderze znajdują się pliki grafika tematy. [Przewodnik Dodawanie](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/CONTRIBUTING.md) zawiera więcej informacji.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Ten projekt przyjęła [Otwórz źródło Kodeks postępowania firmy Microsoft](https://opensource.microsoft.com/codeofconduct/). Aby uzyskać więcej informacji, zobacz [kodu postępowania FAQ](https://opensource.microsoft.com/codeofconduct/faq/) lub skontaktuj się z [ opencode@microsoft.com ](mailto:opencode@microsoft.com) z jakichkolwiek dodatkowych pytań lub komentarzy.
 

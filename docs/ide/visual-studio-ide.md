@@ -1,6 +1,6 @@
 ---
 title: Omówienie programu Visual Studio 2017
-ms.date: 06/01/2018
+ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cccaef2d5678bffa19e822cf537f4acb3d046cca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc5961e2565c8618ad0f34a8c58d149e4a82c935
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907524"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244453"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Witamy w środowisku IDE programu Visual Studio
 
 Visual Studio *zintegrowanego środowiska programistycznego* to twórczych Konsola uruchamianie służy do edytowania, debugowania i kompilowanie kodu, a następnie opublikować aplikację. Zintegrowanym środowisku programistycznym (IDE) to program bogate, który może służyć do wielu aspektów programowania. Podniesienia standardowy edytor i debugera, większości środowisk IDE podać, program Visual Studio obejmuje kompilatory, narzędzia uzupełniania kodu, projektanci graficzni i wiele innych funkcji, do jej obsługi ułatwiają realizację procesu tworzenia oprogramowania.
 
-Program Visual Studio jest dostępna dla Windows i Mac. [Program Visual Studio for Mac](/visualstudio/mac/) zawiera wiele same funkcje co program Visual Studio 2017 i jest zoptymalizowany pod kątem tworzenia aplikacji dla wielu platform i na urządzeniach przenośnych.
+Program Visual Studio jest dostępna dla Windows i Mac. [Program Visual Studio for Mac](/visualstudio/mac/) zawiera wiele same funkcje co program Visual Studio 2017 i jest zoptymalizowany pod kątem tworzenia aplikacji dla wielu platform i na urządzeniach przenośnych. Ten artykuł dotyczy programu Visual Studio 2017 w wersji Windows.
 
-Ten artykuł koncentruje się na programie Visual Studio 2017 for Windows. Jego przedstawiono podstawowe funkcje środowiska IDE. Omówimy kilka rzeczy można zrobić z programem Visual Studio, takich jak tworzenie prostego projektu, przy użyciu [IntelliSense](using-intellisense.md) jako pomocy kodowania i debugowania aplikacji, aby wyświetlić wartość zmiennej podczas wykonywania programu. Firma Microsoft będzie także zapoznaj się z różnych narzędzi systemu windows.
+Istnieją trzy wersje programu Visual Studio 2017: Community, Professional i Enterprise. Zobacz [porównanie programu Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/) Aby dowiedzieć się więcej o funkcji, które są obsługiwane w poszczególnych wydaniach.
+
+Ten artykuł stanowi wprowadzenie do podstawowych funkcji środowiska IDE. Omówimy kilka rzeczy można zrobić z programem Visual Studio, takich jak tworzenie prostego projektu, przy użyciu [IntelliSense](using-intellisense.md) jako pomocy kodowania i debugowania aplikacji, aby wyświetlić wartość zmiennej podczas wykonywania programu. Firma Microsoft będzie także zapoznaj się z różnych narzędzi systemu windows.
 
 ## <a name="install-the-visual-studio-ide"></a>Zainstaluj program Visual Studio IDE
 

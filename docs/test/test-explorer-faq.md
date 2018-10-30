@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c9321c90132b026a71733dbbadc19a82db20d981
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775107"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244388"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Eksplorator testów programu Visual Studio — często zadawane pytania
 
@@ -84,6 +84,10 @@ ms.locfileid: "43775107"
 **Nie ma już filtru "Ścieżka pliku" w polu wyszukiwania Eksploratora testów.**
 
 Filtr ścieżki pliku w **Eksplorator testów** pole wyszukiwania została usunięta w wersji 15.7 programu Visual Studio 2017 w wersji zapoznawczej 3. Ta funkcja była o niskim użyciu i Eksplorator testów może pobrać szybszych metod testowych, z wyłączeniem tej funkcji. Jeśli ta zmiana przerywa przepływ rozwoju, Daj nam znać, przesyłając swoje opinie na [społeczności deweloperów](https://developercommunity.visualstudio.com/).
+
+## <a name="remove-undocumented-interfaces"></a>Usuń nieudokumentowane interfejsy
+**Niektóre interfejsy API związane z testów nie są już dostępne w programie Visual Studio 2019 r. Co się zmieniło?**
+W programie Visual Studio 2019 r niektóre okna testów interfejsów API, które wcześniej zostały oznaczone jako publiczne, ale nigdy nie jest oficjalnie zostały udokumentowane zostaną usunięte. Zostały one oznaczone jako "przestarzałe" w programie Visual Studio 2017 pozwala maintainers rozszerzenia wczesnego ostrzegania. Do naszej wiedzy bardzo mało rozszerzenia ma znaleźć tych interfejsów API i wykonywanych zależności na nich. Obejmują one `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken`, i `SearchFilterTokenType`. Jeśli ta zmiana ma wpływ na Twoje rozszerzenie, Daj nam znać, rejestrując usterki na [społeczności deweloperów](https://developercommunity.visualstudio.com).
 
 ## <a name="test-adapter-nuget-reference"></a>Adapter testowy odwołań NuGet
 **W programie Visual Studio 2017 wersja 15.8 Moje testy są odnajdywane, ale nie wykonywania.**

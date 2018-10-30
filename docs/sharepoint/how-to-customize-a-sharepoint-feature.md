@@ -51,7 +51,7 @@ ms.locfileid: "37120300"
   
 1.  W **Eksploratorze rozwiązań** wybierz ikonę **Pokaż wszystkie pliki**.  
   
-2.  Rozwiń węzeł funkcje rozwiń FeatureName, rozwiń FeatureName.feature, a następnie otwórz  *\<Nazwa_funkcji >. Template.XML* pliku.  
+2.  Rozwiń węzeł Funkcje, rozwiń pozycję NazwaFunkcji, rozwiń pozycję NazwaFunkcji.feature, a następnie otwórz plik  *\<Nazwa_funkcji >. Template.XML* .  
   
     > [!NOTE]  
     >  Po otwarciu szablonu manifestu funkcji w formacie pliku XML pliki zostaną automatycznie sprawdzone i można zignorować ostrzeżenia, które są wyświetlane w oknie Lista błędów.  

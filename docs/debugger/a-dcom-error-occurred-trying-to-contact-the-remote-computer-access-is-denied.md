@@ -1,4 +1,4 @@
----
+﻿---
 title: Wystąpił błąd modelu DCOM podczas próby skontaktowania się z komputerem zdalnym. Odmowa dostępu. | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016

@@ -1,4 +1,4 @@
----
+﻿---
 title: Tworzenie modelu łączności danych biznesowych | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 02/02/2017

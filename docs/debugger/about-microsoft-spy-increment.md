@@ -1,4 +1,4 @@
----
+﻿---
 title: O Microsoft Spy ++ | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016

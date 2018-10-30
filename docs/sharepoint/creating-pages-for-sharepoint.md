@@ -1,4 +1,4 @@
----
+﻿---
 title: Tworzenie stron dla SharePoint | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 02/02/2017
@@ -32,10 +32,10 @@ ms.locfileid: "36326053"
   
  Strony aplikacji można tworzyć za pomocą szablonu w programie Visual Studio. Tworzenie stron w witrynie, stron wzorcowych i układów stron jest możliwe za pomocą programu SharePoint Designer. Następnie można zaimportować te strony do programu Visual Studio, aby korzystać z nich w projekcie programu SharePoint.  
   
- Można również zmodyfikować wygląd i działanie stron przy użyciu kaskadowych arkuszy stylów, ECMAScript i motywów.  
+Można również zmodyfikować wygląd i działanie stron przy użyciu kaskadowych arkuszy stylów, ECMAScript i motywów. 
   
 ## <a name="types-of-sharepoint-pages"></a>Typy strony programu SharePoint
- W poniższej tabeli opisano cztery typy stron, które zawiera witryny programu SharePoint.  
+ W poniższej tabeli opisano cztery typy stron, które zawiera witryny programu SharePoint. 
   
 |Typ strony|Opis|  
 |---------------|-----------------|  
@@ -57,7 +57,7 @@ ms.locfileid: "36326053"
  Ponieważ trudno jest modyfikować te strony po zaimportowaniu, należy je projektować przed zaimportowaniem.  
   
 ## <a name="create-cascading-style-sheets-ecmascript-and-themes"></a>Tworzenie kaskadowych arkuszy stylów, ECMAScript i motywów
- Visual Studio nie ma szablonów dla tworzenie kaskadowych arkuszy stylów (CSS), ECMAScript (JavaScript, JScript) lub pliki motyw witryny programu SharePoint. Pliki te można utworzyć za pomocą wskazówki, które są dostępne w zestawie SDK programu SharePoint lub za pomocą narzędzi, takich jak SharePoint Designer.  
+ Visual Studio nie ma szablonów do tworzenia kaskadowych arkuszy stylów (CSS), skryptów ECMAScript (JavaScript, JScript) lub plików motywu witryny programu SharePoint. Pliki te można utworzyć za pomocą wskazówek, które są dostępne w zestawie SDK programu SharePoint. lub za pomocą narzędzi, takich jak SharePoint Designer. 
   
  Te pliki można dodać bezpośrednio do rozwiązania lub można je zaimportować. W obu przypadkach należy utworzyć odpowiednie foldery zamapowanego dla każdego elementu, który zostanie dodany. Aby uzyskać więcej informacji na temat tworzenia zamapowany folder, zobacz [porady: Dodawanie i usuwanie folderów mapowanych](../sharepoint/how-to-add-and-remove-mapped-folders.md).  
   

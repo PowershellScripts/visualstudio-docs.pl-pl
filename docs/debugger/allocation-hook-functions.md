@@ -1,4 +1,4 @@
----
+﻿---
 title: Funkcje punktu zaczepienia alokacji | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016

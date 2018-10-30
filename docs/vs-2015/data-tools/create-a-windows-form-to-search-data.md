@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c610ebecf48d8a21e8962a549d7114b8d13e3ad6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cf0941d1f08060bcc0c8889b3038d491dc91d1a7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270624"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220407"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Tworzenie formularza Windows Forms na potrzeby wyszukiwania danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Typowy scenariusz aplikacji jest wyświetlany wybranych danych w formularzu. Na 
   
 -   Tworzenie i konfigurowanie źródła danych w aplikacji za pomocą **konfiguracji źródła danych** kreatora.  
   
--   Ustawienie upuszczany typ elementów w **źródeł danych**okna.  
+-   Ustawienie upuszczany typ elementów w **źródeł danych** okna.  
   
 -   Tworzenie formantów, które wyświetlają dane przez przeciąganie elementów z **źródeł danych** okna w formularzu.  
   

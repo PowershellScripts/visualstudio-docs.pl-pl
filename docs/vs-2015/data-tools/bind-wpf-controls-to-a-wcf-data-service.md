@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4f3dbfad8655b8594301b8da7ce1dda050119206
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812429"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220381"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Powiązywanie kontrolek WPF z usługą danych programu WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
   
 3.  Zmień nazwę na `AdventureWorksModel.edmx`i kliknij przycisk **Dodaj**.  
   
-     **Modelu Entity Data Model**zostanie otwarty Kreator.  
+     **Modelu Entity Data Model** zostanie otwarty Kreator.  
   
 4.  Na **wybierz zawartość modelu** kliknij **Generuj z bazy danych**i kliknij przycisk **dalej**.  
   
@@ -161,7 +161,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
   
 6.  W **źródeł danych** okna, kliknij przycisk **Dodaj nowe źródło danych**.  
   
-     **Konfiguracji źródła danych**zostanie otwarty Kreator.  
+     **Konfiguracji źródła danych** zostanie otwarty Kreator.  
   
 7.  W **wybierz typ źródła danych** strony kreatora, wybierz **usługi**, a następnie kliknij przycisk **dalej**.  
   

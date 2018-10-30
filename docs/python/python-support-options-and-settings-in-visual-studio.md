@@ -1,7 +1,7 @@
 ---
 title: Opcje i ustawienia dla języka Python
 description: Odwołanie dla różnych ustawień w programie Visual Studio, które odnoszą się do kodu w języku Python i projektów.
-ms.date: 06/27/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: reference
@@ -19,12 +19,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b158955c9730898c3624c9a832f5cc75c62ba338
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: f5b8c6b3860641dafccac28b24a4be141d90eae5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549654"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220059"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opcje dla języka Python w programie Visual Studio
 

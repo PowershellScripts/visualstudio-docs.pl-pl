@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e024772e9deb5f391e057c3c66e505637765e1d
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 8055e1c11f38ab83ae9c3a0570064ca49158b886
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050095"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219032"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalowanie agentów testowych i kontrolerów testów
 
@@ -44,9 +44,9 @@ Te instalatory są dostępne jako pliki ISO w celu łatwej instalacji na maszyna
 
 ## <a name="compatible-versions-of-tfs-microsoft-test-manager-the-test-controller-and-test-agent"></a>Zgodne wersje serwera TFS, Microsoft Test Manager, kontroler testów i agenta testowego
 
-Można łączyć różne wersje programu TFS, Microsoft Test Manager (MTM), kontroler testów i agenta testowego, zgodnie z poniższą tabelą:
+Można łączyć różne wersje programu TFS, Microsoft Test Manager, kontroler testów i agenta testowego, zgodnie z poniższą tabelą:
 
-| TFS | MTM przy użyciu Centrum laboratoryjnego | Kontroler | Agent |
+| TFS | Program Microsoft Test Manager przy użyciu Centrum laboratoryjnego | Kontroler | Agent |
 | --- | -------------------------------------- | ---------- | ----- |
 | 2017: instalacji lub uaktualniania z dnia 2015 | 2017 | 2017 | 2017 |
 | 2017: instalacji lub uaktualniania z dnia 2015 | 2017 | 2013 Update 5 | 2013 Update 5 |

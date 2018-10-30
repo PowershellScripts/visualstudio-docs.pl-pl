@@ -19,20 +19,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e5ff6fd7c9e78871d180f08c6148c25fbede3583
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4178f1ca5a437c52754199d26a6d39023193aaf8
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756291"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219149"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>Porady: Dodawanie i usuwanie zestawów dodatkowych
-  Jeśli pakiet programu SharePoint jest zależny od innych zestawów dla funkcji lub danych, możesz dodać zestawy do pakietu rozwiązań (wsp). W ten sposób programu SharePoint server upewnia się, że niestandardowe zestawy są instalowane przy użyciu pakietu.  
+  Jeśli pakiet programu SharePoint jest zależna od innych zestawów w celu funkcji lub dane, możesz dodać zestawy, do rozwiązania pakietu (wsp). W ten sposób zapewnia, że zainstalowanie zestawów niestandardowych przy użyciu pakietu programu SharePoint server.  
   
- Można również dodawać i zmienić bezpieczne kontrolki i klasa zasobów plików skojarzonych z zestawów.  
+ Można dodawać i zmieniać bezpiecznych kontrolek i pliki zasobów klasy skojarzone z zestawów.  
   
-## <a name="add-additional-assemblies-safe-controls-and-class-resources"></a>Dodaj dodatkowe zestawy, bezpieczne kontrolki i klasa zasobów  
- Możesz dodać dodatkowe zestawy do pakietu rozwiązania programu SharePoint. Dodatkowe zestawy w trybie piaskownicy rozwiązania wdrożyć w globalnej pamięci podręcznej zestawów, ale w trybie piaskownicy rozwiązania SharePoint — elementy projektu zostaną dodane do bazy danych zawartości. Bezpieczne kontrolki i klasa zasobów można również dodać do tych zestawów dodatkowych. Aby uzyskać więcej informacji na temat bezpiecznych formantów, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) lub "Tworzenie SafeControl — wpis" w [wdrażanie części sieci Web w programie SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=245505).  
+## <a name="add-additional-assemblies-safe-controls-and-class-resources"></a>Dodawanie dodatkowych zestawów, bezpieczne kontrolki i zasoby klasy  
+ Możesz dodać dodatkowe zestawy do pakietu rozwiązania programu SharePoint. Dodatkowe zestawy w trybie piaskownicy rozwiązań wdrożyć do globalnej pamięci podręcznej, ale elementów projektu programu SharePoint w trybie piaskownicy rozwiązań są dodawane do bazy danych zawartości. Bezpieczne kontrolki i zasoby klasy można również dodać do tych dodatkowych zestawów. Aby uzyskać więcej informacji na temat bezpiecznych kontrolek, zobacz [dostarczanie pakowania i informacje o wdrożeniu w elementach projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) lub "Tworzenie SafeControl — wpis" [wdrażania składników Web Part w SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=245505).  
   
 #### <a name="to-add-an-existing-assembly"></a>Aby dodać istniejący zestaw  
   
@@ -40,13 +40,13 @@ ms.locfileid: "36756291"
   
 2.  Wybierz **zaawansowane** kartę.  
   
-3.  Wybierz **Dodaj** przycisk, a następnie wybierz pozycję **Dodawanie istniejącego zestawu** z listy.  
+3.  Wybierz **Dodaj** przycisk, a następnie wybierz **Dodaj istniejący zestaw** z listy.  
   
-     **Dodawanie istniejącego zestawu** zostanie wyświetlone okno dialogowe.  
+     **Dodaj istniejący zestaw** pojawi się okno dialogowe.  
   
-4.  Wybierz wielokropek (![elipsy ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "elipsy ASP.NET Mobile Designer")), a następnie wybierz zestaw, który chcesz dodać. Zalecamy używanie ścieżka względna do zestawu wybranych na potrzeby przenoszenia.  
+4.  Wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "elipsy projektanta Mobile ASP.NET")), a następnie wybierz zestaw, który chcesz dodać. Firma Microsoft zaleca, za pomocą ścieżki względnej do wybranego zestawu dla celów przenoszenia.  
   
-5.  Dla **cel wdrożenia**, wybierz **GlobalAssemblyCache** przycisk opcji, aby wdrożyć zestawu w pamięci podręcznej GAC, lub wybierz pozycję **WebApplication** opcji Aby wdrożyć zestawu do folderu aplikacji sieci Web na serwerze z programem SharePoint.  
+5.  Aby uzyskać **cel wdrożenia**, wybierz **GlobalAssemblyCache** przycisk opcji, aby wdrożyć zestaw do globalnej pamięci podręcznej, lub wybierz **WebApplication** — opcja przycisk, aby wdrożyć zestaw do folderu aplikacji sieci Web na serwerze, na którym uruchomiony jest SharePoint.  
   
 #### <a name="to-add-an-assembly-from-project-output"></a>Aby dodać zestaw z danych wyjściowych projektu  
   
@@ -56,36 +56,36 @@ ms.locfileid: "36756291"
   
 2.  Wybierz **zaawansowane** kartę.  
   
-3.  Wybierz **Dodaj** przycisk, a następnie wybierz pozycję **dodać zestawu z danych wyjściowych projektu** z listy.  
+3.  Wybierz **Dodaj** przycisk, a następnie wybierz **Dodawanie zestawu z danych wyjściowych projektu** z listy.  
   
-     **Dodać zestawu z danych wyjściowych projektu** zostanie wyświetlone okno dialogowe.  
+     **Dodawanie zestawu z danych wyjściowych projektu** pojawi się okno dialogowe.  
   
 4.  W **projekt źródłowy** listy, a następnie wybierz projekt źródłowy, który chcesz dodać.  
   
-5.  Dla **cel wdrożenia**, wybierz **GlobalAssemblyCache** przycisk opcji, aby wdrożyć zestawu w pamięci podręcznej GAC, lub wybierz pozycję **WebApplication** opcji Aby wdrożyć zestawu do folderu aplikacji sieci Web na serwerze z programem SharePoint.  
+5.  Aby uzyskać **cel wdrożenia**, wybierz **GlobalAssemblyCache** przycisk opcji, aby wdrożyć zestaw do globalnej pamięci podręcznej, lub wybierz **WebApplication** — opcja przycisk, aby wdrożyć zestaw do folderu aplikacji sieci Web na serwerze, na którym uruchomiony jest SharePoint.  
   
 #### <a name="to-add-a-safe-control"></a>Aby dodać kontrolkę bezpieczne  
   
-1.  Otwórz **edytowanie istniejącego zestawu** okno dialogowe. W tym celu otwórz projektanta pakietów, wybierz pozycję **zaawansowane** karcie, wybierz zestaw, a następnie wybierz pozycję **Edytuj**przycisku.  
+1.  Otwórz **edycji istniejący zestaw** okno dialogowe. Aby to zrobić, otwórz projektanta pakietu, wybierz **zaawansowane** karty, wybierz zestaw, a następnie wybierz **Edytuj** przycisku.  
   
-2.  W **bezpieczne kontrolki** okienku wybierz **kliknij tutaj, aby dodać nowy element** przycisku.  
+2.  W **bezpiecznych kontrolek** okienku wybierz **kliknij tutaj, aby dodać nowy element** przycisku.  
   
 3.  W **nazwy zestawu** kolumny, wprowadź nazwę zestawu.  
   
-4.  W **Namespace** kolumny, wprowadź nazwę przestrzeni nazw kontrolki bezpieczne.  
+4.  W **Namespace** kolumny, wprowadź nazwę przestrzeni nazw dla bezpiecznej kontrolki.  
   
 5.  W **nazwy typu** kolumny, wprowadź nazwę typu.  
   
 #### <a name="to-add-a-class-resource"></a>Aby dodać zasób klasy  
   
-1.  Otwórz **edytowanie istniejącego zestawu** okno dialogowe. W tym celu otwórz projektanta pakietów, wybierz pozycję **zaawansowane** karcie, wybierz zestaw, a następnie wybierz pozycję **Edytuj** przycisku.  
+1.  Otwórz **edycji istniejący zestaw** okno dialogowe. Aby to zrobić, otwórz projektanta pakietu, wybierz **zaawansowane** karty, wybierz zestaw, a następnie wybierz **Edytuj** przycisku.  
   
-2.  W **zasobów klasy** okienku wybierz **kliknij tutaj, aby dodać nowy element** przycisku.  
+2.  W **zasoby klasy** okienku wybierz **kliknij tutaj, aby dodać nowy element** przycisku.  
   
-3.  W **nazwę pliku** kolumny, wybierz wielokropek (![elipsy ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "elipsy ASP.NET Mobile Designer")) i wybierz zasób klasy, do którego chcesz dodać.  
+3.  W **nazwy pliku** kolumny, wybierz przycisk wielokropka (![elipsy projektanta Mobile ASP.NET](../sharepoint/media/mwellipsis.gif "elipsy projektanta Mobile ASP.NET")) i wybierz zasób klasy, które chcesz dodać.  
   
 ## <a name="delete-custom-assemblies"></a>Usuwanie zestawów niestandardowych  
- Usuwanie zestawów z pakietu programu SharePoint lub usunąć bezpieczne kontrolki i klasa zasobów z istniejących zestawów.  
+ Usuwanie zestawów z pakietu programu SharePoint lub usunąć bezpiecznych kontrolek i zasoby klasy z istniejących zestawów.  
   
 #### <a name="to-delete-an-existing-assembly"></a>Aby usunąć istniejący zestaw  
   
@@ -93,25 +93,25 @@ ms.locfileid: "36756291"
   
 2.  Wybierz **zaawansowane** kartę.  
   
-3.  W **dodatkowe zestawy** okienku wybierz niestandardowego zestawu, który chcesz usunąć.  
+3.  W **dodatkowe zestawy** okienku wybierz zestaw niestandardowy, który chcesz usunąć.  
   
-4.  Wybierz **usunąć** przycisku.  
+4.  Wybierz **Usuń** przycisku.  
   
-#### <a name="to-delete-a-safe-control-for-an-assembly"></a>Aby usunąć formant bezpieczny dla zestawu  
+#### <a name="to-delete-a-safe-control-for-an-assembly"></a>Aby usunąć bezpiecznej kontrolki dla zestawu  
   
-1.  Otwórz **edytowanie istniejącego zestawu** okno dialogowe. W tym celu otwórz projektanta pakietów, wybierz pozycję **zaawansowane** karcie, wybierz zestaw, a następnie wybierz pozycję **Edytuj** przycisku.  
+1.  Otwórz **edycji istniejący zestaw** okno dialogowe. Aby to zrobić, otwórz projektanta pakietu, wybierz **zaawansowane** karty, wybierz zestaw, a następnie wybierz **Edytuj** przycisku.  
   
-2.  Wybierz bezpieczne formant, który chcesz usunąć.  
+2.  Wybierz bezpiecznej kontrolki, które chcesz usunąć.  
   
-3.  Wybierz klawisz Delete.  
+3.  Naciśnij klawisz Delete.  
   
 #### <a name="to-delete-a-class-resource-for-an-assembly"></a>Aby usunąć zasób klasy dla zestawu  
   
-1.  Otwórz **edytowanie istniejącego zestawu** okno dialogowe. W tym celu otwórz projektanta pakietów, wybierz pozycję **zaawansowane** karcie, wybierz zestaw, a następnie wybierz pozycję **Edytuj** przycisku.  
+1.  Otwórz **edycji istniejący zestaw** okno dialogowe. Aby to zrobić, otwórz projektanta pakietu, wybierz **zaawansowane** karty, wybierz zestaw, a następnie wybierz **Edytuj** przycisku.  
   
-2.  Wybierz zasób klasy, który chcesz usunąć.  
+2.  Wybierz zasób klasy, która ma zostać usunięty.  
   
-3.  Wybierz klawisz Delete.  
+3.  Naciśnij klawisz Delete.  
   
 ## <a name="see-also"></a>Zobacz także
  [Tworzenie funkcji SharePoint](../sharepoint/creating-sharepoint-features.md)   

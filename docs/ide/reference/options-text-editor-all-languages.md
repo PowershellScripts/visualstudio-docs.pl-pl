@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
 - VS.ToolsOptionsPages.Text_Editor.ResJSON.General
-- vs.toolsoptionspages.text_editor.all_languages.scrollbars
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - statement completion
@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3537cf15ef1ec619a701df0036431810dfb7c087
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6e8d3494ad0c48bb6254090b26faef9162a89f8d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175738"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220485"
 ---
 # <a name="options-text-editor-all-languages"></a>Opcje, edytor tekstu, wszystkie języki
 To okno dialogowe pozwala zmienić domyślne zachowanie edytora kodu. Te ustawienia mają zastosowanie również do innych edytorów oparte na kod edytora, takiego jak widok źródła w Projektancie HTML. Aby otworzyć to okno dialogowe, wybierz **opcje** z **narzędzia** menu. W ramach **edytora tekstów** folder, rozwiń węzeł **wszystkie języki** podfolder, a następnie wybierz **ogólne**.
@@ -42,24 +42,24 @@ To okno dialogowe pozwala zmienić domyślne zachowanie edytora kodu. Te ustawie
 
 
 ## <a name="statement-completion"></a>Dokańczanie instrukcji
- Automatyczna lista członków
+ **Automatyczna lista członków**
 
  Po wybraniu wyskakującego listy dostępne elementy członkowskie, właściwości, wartości lub metody są wyświetlane przez technologię IntelliSense podczas wpisywania w edytorze. Wybierz dowolny element z wyskakującej listy do podawania pozycji w kodzie. Wybranie tej opcji umożliwia **kryj składowe zaawansowane** opcji.
 
- Kryj składowe zaawansowane
+ **Kryj składowe zaawansowane**
 
  Po wybraniu skraca uzupełniania instrukcji wyskakujące, wyświetlając tylko te elementy, które są używane najczęściej. Inne elementy są odfiltrowywane z listy.
 
- Informacje o parametrach
+ **Informacje o parametrach**
 
  Po wybraniu pełną składnię bieżącej deklaracji lub procedura jest wyświetlana w obszarze punkt wstawiania w edytorze, ze wszystkimi jego dostępnych parametrów. Następny parametr, które można przypisać jest wyświetlany czcionką pogrubioną.
 
 ## <a name="settings"></a>Ustawienia
- Włączyć wirtualną przestrzeń
+ **Włączyć wirtualną przestrzeń**
 
  Gdy ta opcja jest zaznaczona i **zawijanie wyrazów** jest wyczyszczone, można kliknąć dowolne miejsce poza końcem wiersza w edytorze kodu i typu. Ta funkcja może służyć do pozycji Komentarze w momencie spójne obok kodu.
 
- Zawijanie wyrazów
+ **Zawijanie wyrazów**
 
  Po wybraniu dowolnej części wiersza, który mieści się w poziomie w obszarze edytora w widoczne jest automatycznie wyświetlana w następnym wierszu. Wybranie tej opcji umożliwia **Pokaż zualne przy zawijaniu wierszy** opcji.
 
@@ -67,7 +67,7 @@ To okno dialogowe pozwala zmienić domyślne zachowanie edytora kodu. Te ustawie
 > **Wirtualną przestrzenią** włączenia funkcji wyłączone podczas **zawijanie** znajduje się na.
 
 
- Pokaż zualne przy zawijaniu wierszy
+ **Pokaż zualne przy zawijaniu wierszy**
 
  Po wybraniu wskaźnik zwracany strzałkę jest wyświetlany, gdy długi wiersz zawijana drugi wiersz.
 
@@ -79,7 +79,23 @@ To okno dialogowe pozwala zmienić domyślne zachowanie edytora kodu. Te ustawie
 > Tych strzałek monitu nie są dodawane do kodu, a nie do drukowania. Są one tylko do celów referencyjnych.
 
 
- Zastosuj poleceń Wytnij lub Kopiuj do pustych wierszy, jeśli nie zaznaczono żadnego fragmentu
+**Numery wierszy**
+
+ Po wybraniu numer wiersza obok każdego wiersza kodu.
+
+> [!NOTE]
+> Te numery wierszy nie są dodawane do kodu, a nie do drukowania. Są one tylko do celów referencyjnych.
+
+
+ **Włącz nawigację adresów URL jednym kliknięciem**
+
+ Po wybraniu myszy przybiera postać dłoni przekazywanego za pośrednictwem adresu URL w edytorze. Możesz kliknąć adres URL, aby wyświetlić stronę wskazany w przeglądarce sieci web.
+
+ **Pasek nawigacyjny**
+
+ Po wybraniu Wyświetla **pasek nawigacyjny** w górnej części edytora kodu. Jego listy rozwijanej **obiektów** i **członków** list pozwalają na wybranie określonego obiektu w kodzie, wybierz jedną z jej członków i przechodzi do deklaracji wybranego elementu członkowskiego w edytorze kodu.
+
+**Zastosuj poleceń Wytnij lub Kopiuj do pustych wierszy, jeśli nie zaznaczono żadnego fragmentu**
 
  Ta opcja ustawia zachowanie edytora, gdy umieścisz kursor w pustym wierszu, wybierz nothing, a następnie skopiować lub wyciąć.
 
@@ -92,26 +108,8 @@ To ustawienie nie ma wpływu na Kopiuj lub Wytnij gdy wiersz nie jest pusty. Je�
 > [!TIP]
 > Aby wyświetlić wskaźniki dla miejsca do magazynowania oraz o końców linii, a zatem odróżnienia wiersze z wcięciami wiersze, które są całkowicie pusty, wybierz **zaawansowane** z **Edytuj** menu i wybierz polecenie **widoku biały Miejsce**.
 
-
-## <a name="display"></a>Monitor
- Numery wierszy
-
- Po wybraniu numer wiersza obok każdego wiersza kodu.
-
-> [!NOTE]
-> Te numery wierszy nie są dodawane do kodu, a nie do drukowania. Są one tylko do celów referencyjnych.
-
-
- Włącz nawigację adresów URL jednym kliknięciem
-
- Po wybraniu myszy przybiera postać dłoni przekazywanego za pośrednictwem adresu URL w edytorze. Możesz kliknąć adres URL, aby wyświetlić stronę wskazany w przeglądarce sieci web.
-
- Pasek nawigacyjny
-
- Po wybraniu Wyświetla **pasek nawigacyjny** w górnej części edytora kodu. Jego listy rozwijanej **obiektów** i **członków** list pozwalają na wybranie określonego obiektu w kodzie, wybierz jedną z jej członków i przechodzi do deklaracji wybranego elementu członkowskiego w edytorze kodu.
-
 ## <a name="see-also"></a>Zobacz też
 
-- [Opcje, Edytor tekstu, wszystkie języki, karty](../../ide/reference/options-text-editor-all-languages-tabs.md)
-- [Ogólne, środowisko, okno dialogowe Opcje](../../ide/reference/general-environment-options-dialog-box.md)
+- [Opcje, Edytor tekstów, Wszystkie języki, Karty](../../ide/reference/options-text-editor-all-languages-tabs.md)
+- [Ogólne, Środowisko, Opcje — okno dialogowe](../../ide/reference/general-environment-options-dialog-box.md)
 - [Korzystanie z funkcji IntelliSense](../../ide/using-intellisense.md)

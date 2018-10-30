@@ -27,12 +27,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4dd3e3b44bfdf9a3c9f0f144d984d1408046e80
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 751ae59a5a41d22728dd31f71491ec0d9a93ea19
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143336"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220264"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 **Czcionki i kolory** strony **opcje** okno dialogowe umożliwia ustanawianie niestandardowy schemat czcionek i kolorów dla różnych elementów interfejsu użytkownika w zintegrowanym środowisku programistycznym (IDE). To okno dialogowe można skorzystać, klikając **narzędzia / Opcje**, a następnie wybierając **środowisko / czcionki i kolory**. Jeśli ta strona nie jest wyświetlana na liście, wybierz opcję **Pokaż wszystkie ustawienia** w **opcje** okno dialogowe.
@@ -142,7 +142,7 @@ ms.locfileid: "50143336"
 |**Keyword**|Słowa kluczowe dla danego języka, które są zastrzeżone. Na przykład: klasy i przestrzeni nazw.|
 |**Adres pamięci**|Kolor tekstu używany do wyświetlania kolumny adres wewnątrz **pamięci** okna.|
 |**Pamięć zmieniła się**|Kolor tekstu używany do wyświetlania zmienionych danych wewnątrz **pamięci** okna.|
-|**Dane pamięci**|Kolor tekstu używany do wyświetlania danych wewnątrz M**zapewniający** okna.|
+|**Dane pamięci**|Kolor tekstu używany do wyświetlania danych wewnątrz **pamięci** okna.|
 |**Pamięć niemożliwa do odczytu**|Kolor tekstu używany do wyświetlania obszary pamięci nie można go odczytać w ramach **pamięci** okna.|
 |**Numer**|Liczba w kodzie, który reprezentuje rzeczywisty wartość liczbową.|
 |**Operator**|Operatory, takie jak +, -, i! =.|

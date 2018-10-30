@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ac52f3b393c411f58c27091fbbf3940f20f5dc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1bb41fbf0fc4a41a5cf45d68f6453f2ef6ebdd6c
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930833"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219942"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniki testowania MFC
 Jeśli debugujesz program MFC te techniki debugowania mogą być przydatne.  
@@ -440,7 +440,7 @@ pMyPerson->Dump( afxDump );
 
    4.  W **Skopiuj ustawienia z** wybierz **wersji**.  
 
-   5.  Kliknij przycisk **OK** zamknąć **nowa konfiguracja projektu**okno dialogowe.  
+   5.  Kliknij przycisk **OK** zamknąć **nowa konfiguracja projektu** okno dialogowe.  
 
    6.  Zamknij **programu Configuration Manager** okno dialogowe.  
 

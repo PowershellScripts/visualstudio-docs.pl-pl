@@ -32,12 +32,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cae9f5af0c6b8df6594a78bc7601ac123c349dc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949438"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220238"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Czcionki i kolory, środowisko, opcje — Okno dialogowe
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -153,7 +153,7 @@ ms.locfileid: "49949438"
 |**Keyword**|Słowa kluczowe dla danego języka, które są zastrzeżone. Na przykład: klasy i przestrzeni nazw.|  
 |**Adres pamięci**|Kolor tekstu używany do wyświetlania kolumny adres wewnątrz **pamięci** okna.|  
 |**Pamięć zmieniła się**|Kolor tekstu używany do wyświetlania zmienionych danych wewnątrz **pamięci** okna.|  
-|**Dane pamięci**|Kolor tekstu używany do wyświetlania danych wewnątrz M**zapewniający** okna.|  
+|**Dane pamięci**|Kolor tekstu używany do wyświetlania danych wewnątrz **pamięci** okna.|  
 |**Pamięć niemożliwa do odczytu**|Kolor tekstu używany do wyświetlania obszary pamięci nie można go odczytać w ramach **pamięci** okna.|  
 |**Numer**|Liczba w kodzie, który reprezentuje rzeczywisty wartość liczbową.|  
 |**Operator**|Operatory, takie jak +, -, i! =.|  

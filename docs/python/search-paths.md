@@ -1,7 +1,7 @@
 ---
 title: Sposób stosowania ścieżki wyszukiwania języka Python
 description: Omówienie, jak program Visual Studio używa języka Python ścieżki wyszukiwania, zarówno w środowiskach, jak i w projektach.
-ms.date: 06/27/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2a02bf78d731764b0725c03cefb4959451a40b9c
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: e3a52579a5b22308c4255cbe41617bc37f47bbab
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624369"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219981"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Jak program Visual Studio używa ścieżki wyszukiwania języka Python
 

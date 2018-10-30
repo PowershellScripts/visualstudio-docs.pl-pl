@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0580cebe97d4646074c678296c18b4caa20ce44b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 986df2d58c9a8955c9de9b45edaa5276b2e68bfb
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234484"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218425"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
   
 2.  Nadaj projektowi nazwę `UpdateMultipleTablesWalkthrough`.  
   
-3.  Wybierz **aplikacji Windows**, a następnie wybierz pozycję**OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **UpdateMultipleTablesWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   
@@ -81,7 +81,7 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
   
 2.  W **źródeł danych** wybierz**Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
   
-3.  Na **wybierz typ źródła danych**ekranu, wybierz opcję **bazy danych**, a następnie wybierz pozycję**dalej**.  
+3.  Na **wybierz typ źródła danych**ekranu, wybierz opcję **bazy danych**, a następnie wybierz pozycję **dalej**.  
   
 4.  Na **wybierz połączenie danych**wykonaj ekranu, jedną z następujących czynności:  
   
@@ -91,9 +91,9 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
   
     -   Wybierz **nowe połączenie** otworzyć **Dodawanie/modyfikowanie połączenia** okno dialogowe.  
   
-5.  Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie wybierz**dalej**.  
+5.  Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie wybierz **dalej**.  
   
-6.  Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji**, wybierz opcję**dalej**.  
+6.  Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji**, wybierz opcję **dalej**.  
   
 7.  Na **wybierz obiekty bazy danych**ekranu, a następnie rozwiń **tabel** węzła.  
   
@@ -127,7 +127,7 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
      A <xref:System.Windows.Forms.DataGridView> kontroli i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w formularzu. [OrdersTableAdapter](../data-tools/tableadapter-overview.md) i <xref:System.Windows.Forms.BindingSource> są wyświetlane w zasobniku składnika.  
   
 ## <a name="addcode-to-update-the-database"></a>Addcode aktualizacji bazy danych  
- Zaktualizuj bazy danych, wywołując `Update` metody **klientów** i **zamówienia** adapterów TableAdapter. Domyślnie program obsługi zdarzeń dla**Zapisz** przycisk<xref:System.Windows.Forms.BindingNavigator> zostanie dodany do kodu formularza w celu wysyłania aktualizacji do bazy danych. Ta procedura modyfikuje kod, aby wysłać aktualizacje we właściwej kolejności. Pozwala to wyeliminować możliwość zgłaszania błędów więzów integralności. Kod implementuje również dodanymi komentarzami opakowując wywołania aktualizacji w bloku try-catch. Można zmodyfikować kod odpowiednio do potrzeb aplikacji.  
+ Zaktualizuj bazy danych, wywołując `Update` metody **klientów** i **zamówienia** adapterów TableAdapter. Domyślnie program obsługi zdarzeń dla **Zapisz** przycisk<xref:System.Windows.Forms.BindingNavigator> zostanie dodany do kodu formularza w celu wysyłania aktualizacji do bazy danych. Ta procedura modyfikuje kod, aby wysłać aktualizacje we właściwej kolejności. Pozwala to wyeliminować możliwość zgłaszania błędów więzów integralności. Kod implementuje również dodanymi komentarzami opakowując wywołania aktualizacji w bloku try-catch. Można zmodyfikować kod odpowiednio do potrzeb aplikacji.  
   
 > [!NOTE]
 >  Dla jasności ten przewodnik nie używa transakcji. Jeśli aktualizujesz, dwa lub więcej powiązanych tabel, obejmuje jednak logika aktualizacji w obrębie transakcji. Transakcja jest procesem, który gwarantuje, że wszystkie powiązane zmiany w bazie danych są pomyślnie, zanim wszelkie zmiany zostaną zatwierdzone. Aby uzyskać więcej informacji, zobacz [transakcje i współbieżność](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
@@ -145,7 +145,7 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
   
 #### <a name="to-test-the-application"></a>Aby przetestować aplikację  
   
-1.  Wybierz**F5**.  
+1.  Wybierz **F5**.  
   
 2.  Należy wprowadzić pewne zmiany do danych z co najmniej jednego rekordu w każdej tabeli.  
   

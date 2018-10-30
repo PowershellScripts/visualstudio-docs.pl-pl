@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c18e4e895d8a0563699cf08e5a49fdecc973ab
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 4da159ae0fcb4347052efcea5d0dbd24d5ccd8f1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39152262"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219240"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Aktualizowanie istniejących aplikacji dla programu MSBuild 15
 
@@ -40,7 +40,7 @@ Zmienianie projektu pozwala uniknąć wczytywania programu MSBuild z centralnej 
 
 #### <a name="use-nuget-packages-preferred"></a>Korzystanie z pakietów NuGet (preferowane)
 
-W poniższych instrukcjach przyjęto, że używasz [odwołań NuGet PackageReference stylu](https://docs.microsoft.com/en-us/nuget/consume-packages/package-references-in-project-files).
+W poniższych instrukcjach przyjęto, że używasz [odwołań NuGet PackageReference stylu](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files).
 
 Zmień swoje pliki projektu, aby odwoływać się do zestawów programu MSBuild z pakietów NuGet. Określ `ExcludeAssets=runtime` NuGet można stwierdzić, że zestawy są wymagane tylko w czasie kompilacji, a nie powinny być kopiowany do katalogu wyjściowego.
 

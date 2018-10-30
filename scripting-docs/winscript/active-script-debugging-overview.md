@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 447a8faf6e62448e7e8ce9ee8d7d8097fba2dd7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d8624c1405931edefe2e1e53e579ad28a7b238f1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919367"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220225"
 ---
 # <a name="active-script-debugging-overview"></a>Przegląd debugowania aktywnego skryptu
 Interfejsy funkcji aktywnego debugowania skryptu zezwolenia na debugowanie niezależny od języka, niezależny od hosta, a także obsługuje wiele różnych środowisk deweloperskich.  
@@ -33,31 +33,30 @@ Rysunek 1.
   
  W poniższych podsekcjach omówiono każdy kluczowym czynnikiem aktywnego debugowania i jego skojarzone interfejsy. Jednak przed kontynuowaniem, można zdefiniować kilka podstawowych pojęć aktywnego debugowania:  
   
- Aplikacja hosta  
+ **Aplikacja hosta**  
  Aplikacji, który jest hostem skrypt silników i udostępnia zestaw za pomocą skryptów obiektów (lub "object model").  
   
- aparat języka  
+ **aparat języka**  
  Składnik, który umożliwia analizowanie, wykonywania i debugowania abstrakcji dla określonego języka.  
   
- Debuger środowiska IDE  
+ **Debuger środowiska IDE**  
  Aplikacja, która umożliwia debugowanie interfejsu użytkownika, komunikując się z aparatami aplikacji i języka hosta.  
   
- Menedżer debugowania maszyny  
- Składnik, który przechowuje rejestr procesów debugowania aplikacji.  
+ **Menedżer debugowania maszyny** składnik, który przechowuje rejestr procesów debugowania aplikacji.  
   
- Menedżer debugowania procesów  
+ **Menedżer debugowania procesów**  
  Składnik, który przechowuje drzewa debugowania dokumentów dla określonej aplikacji śledzi uruchomionych wątków i tak dalej.  
   
- Kontekst dokumentu  
+ **Kontekst dokumentu**  
  Kontekst dokumentu jest klasą abstrakcyjną reprezentującą określony zakres w kodzie źródłowym dokumentu hosta.  
   
- Kontekst kodu  
+ **Kontekst kodu**  
  Kontekst kodu reprezentuje określonego miejsca w uruchamianie kodu języka aparatu ("wskaźnik instrukcji wirtualne".)  
   
- wyrażenie kontekstu  
+ **wyrażenie kontekstu**  
  Szczególnym kontekście (na przykład ramki stosu) w którym określeń może zostać ocenione przez aparat języka.  
   
- Przeglądanie obiektów  
+ **Przeglądanie obiektów**  
  Ze strukturą, niezależny od języka reprezentacji nazwy, typu, wartości i obiektów podrzędnych, odpowiednie do wykonania "okno czujki" obiektu interfejsu użytkownika.  
   
  Poniżej przedstawiono omówienie każdego z kluczowych składników. ich aktywnego debugowania i odpowiednie skojarzone interfejsy, następuje szczegółowe informacje o tych interfejsów.  

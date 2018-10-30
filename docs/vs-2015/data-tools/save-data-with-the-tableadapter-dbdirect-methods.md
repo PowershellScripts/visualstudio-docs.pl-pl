@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bb326f1cad6ea019c5d057ca24d198c28dca2a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6b7a7ec1d244f8bf711f0d1aaf4726c910846357
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220821"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219721"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Zapisywanie danych za pomocą metod DBDirect adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
   
 2.  Nadaj projektowi nazwę **TableAdapterDbDirectMethodsWalkthrough**.  
   
-3.  Wybierz **aplikacji Windows**i thenselect**OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **TableAdapterDbDirectMethodsWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   
@@ -70,13 +70,13 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
   
 #### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych  
   
-1.  Na **danych** menu, wybierz opcję**Pokaż źródła danych**.  
+1.  Na **danych** menu, wybierz opcję **Pokaż źródła danych**.  
   
 2.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
   
-3.  Na **wybierz typ źródła danych**ekranu, wybierz opcję **bazy danych**, a następnie wybierz pozycję**dalej**.  
+3.  Na **wybierz typ źródła danych** ekranu, wybierz opcję **bazy danych**, a następnie wybierz pozycję **dalej**.  
   
-4.  Na **wybierz połączenie danych**ekranu, wykonaj jedną z następujących czynności:  
+4.  Na **wybierz połączenie danych** ekranu, wykonaj jedną z następujących czynności:  
   
     -   Jeśli połączenie danych z przykładową bazą danych Northwind jest dostępne na liście rozwijanej, wybierz je.  
   
@@ -84,13 +84,13 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
   
     -   Wybierz **nowe połączenie** można uruchomić **Dodawanie/modyfikowanie połączenia** okno dialogowe.  
   
-5.  Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie wybierz**dalej**.  
+5.  Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie wybierz **dalej**.  
   
-6.  Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji**ekranu, wybierz opcję **dalej**.  
+6.  Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** ekranu, wybierz opcję **dalej**.  
   
-7.  Na **wybierz obiekty bazy danych**ekranu, a następnie rozwiń **tabel** węzła.  
+7.  Na **wybierz obiekty bazy danych** ekranu, a następnie rozwiń **tabel** węzła.  
   
-8.  Wybierz `Region` tabeli, a następnie wybierz**Zakończ**.  
+8.  Wybierz `Region` tabeli, a następnie wybierz **Zakończ**.  
   
      **NorthwindDataSet** zostanie dodany do projektu i `Region` tabela zostanie wyświetlona w **źródeł danych** okna.  
   
@@ -117,7 +117,7 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
   
 #### <a name="to-add-code-to-insert-new-records-into-the-database"></a>Aby dodać kod, aby wstawianie nowych rekordów do bazy danych  
   
-1.  Wybierz**InsertButton** utworzyć program obsługi zdarzeń dla zdarzenia kliknięcia i Otwórz formularz w edytorze kodu.  
+1.  Wybierz **InsertButton** utworzyć program obsługi zdarzeń dla zdarzenia kliknięcia i Otwórz formularz w edytorze kodu.  
   
 2.  Zastąp `InsertButton_Click` programu obsługi zdarzeń z następującym kodem:  
   
@@ -135,7 +135,7 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
   
 #### <a name="to-add-code-to-delete-records-from-the-database"></a>Aby dodać kod do usuwania rekordów z bazy danych  
   
-1.  Wybierz**DeleteButton** utworzyć program obsługi zdarzeń dla zdarzenia kliknięcia i Otwórz formularz w edytorze kodu.  
+1.  Wybierz **DeleteButton** utworzyć program obsługi zdarzeń dla zdarzenia kliknięcia i Otwórz formularz w edytorze kodu.  
   
 2.  Zastąp `DeleteButton_Click` programu obsługi zdarzeń z następującym kodem:  
   
@@ -146,7 +146,7 @@ Ten przewodnik zawiera szczegółowe instrukcje na temat uruchamiania instrukcji
   
 #### <a name="to-run-the-application"></a>Aby uruchomić aplikację  
   
--   Wybierz**F5** do uruchomienia aplikacji.  
+-   Wybierz **F5** do uruchomienia aplikacji.  
   
 -   Wybierz **Wstaw** przycisk i sprawdź, czy nowy rekord jest wyświetlany w siatce.  
   

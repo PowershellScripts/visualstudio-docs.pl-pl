@@ -23,12 +23,12 @@ caps.latest.revision: 49
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88e5815abbd9b773db1b6c35f2ecbbf08fd4862f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70ebc816b5bf0b2b27805499ebd688f62431a87f
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291313"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220290"
 ---
 # <a name="vsinstr"></a>VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ VSInstr [/U] filename [/options]
 |**ExcludeSmallFuncs**|Wyklucza małych funkcji, które są krótkich funkcji, które nie należy wprowadzać wszelkie wywołania funkcji z Instrumentacji. **ExcludeSmallFuncs** opcji zapewnia mniejsze koszty Instrumentacji szybkość Instrumentacji w związku z tym ulepszone.<br /><br /> Wyłączenie małych funkcji zmniejsza rozmiar pliku Vsp i czas wymagany do analizy.|  
 |**Znacznik:**{**przed**`&#124;`**po**`&#124;`**górnej**`&#124;`**dolnej**}`,funcname,markid`|Wstawia znak profilu (identyfikator używany do ograniczania danych w raportach) służące do identyfikowania początkowy lub końcowy zakresu danych w pliku Vsp raportu.<br /><br /> **Przed** — natychmiast przed wprowadzeniem funkcji docelowej.<br /><br /> **Po** — natychmiast po wyjście funkcji docelowej.<br /><br /> **TOP** — natychmiast po wejściu do funkcji docelowej.<br /><br /> **Dolny** — bezpośrednio przed każdego zwrotu w funkcji docelowej.<br /><br /> `funcname` — Nazwa docelowej funkcji<br /><br /> `Markid` -Dodatnią liczbą całkowitą (long) do wykorzystania jako identyfikator znacznika profilu.|  
 |**Pokrycie**|Wykonuje Instrumentację pokrycia. Można go używać tylko z następujących opcji: **pełne**, **OutputPath**, **wykluczyć**, i **Logfile**...|  
-|**pełne**|**Pełne**opcja jest używana, aby wyświetlić szczegółowe informacje na temat procesu instrumentacji.|  
+|**pełne**|**Pełne** opcja jest używana, aby wyświetlić szczegółowe informacje na temat procesu instrumentacji.|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|Ukrywa wszystkie lub określone ostrzeżenia.<br /><br /> `Message Number` -numer ostrzeżenia. Jeśli `Message Number` jest pominięty, wszystkie ostrzeżenia są pomijane.<br /><br /> Aby uzyskać więcej informacji, zobacz [ostrzeżenia VSInstr](../profiling/vsinstr-warnings.md).|  
 |**Kontrolka** `:{` **wątku** `&#124;` **procesu** `&#124;` **globalne** `}`|Określa poziom profilowania z następującą kolekcją danych VSInstr opcje sterowania:<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Wątek** -Określa funkcje kontroli zbierania danych na poziomie wątku. Profilowanie jest uruchomiona lub zatrzymana tylko dla bieżącego wątku. Nie dotyczy profilowania stan innych wątków. Wartość domyślna to wątku.<br /><br /> **Proces** -Określa funkcje kontroli zbierania danych poziom procesu profilowania. Profilowanie, uruchamia lub zatrzymuje działanie dla wszystkich wątków w bieżącym procesie. Nie wpływa na stan profilowania innych procesów.<br /><br /> **Globalne** -Określa funkcje kontroli danych (między procesami) poziomie globalnym w kolekcji.<br /><br /> Błąd występuje, jeśli nie określisz poziomu profilowania.|  
 |**Rozpocznij** `:{` **wewnątrz** `&#124;` **poza metodą** `},funcname`|Ogranicza zbieranie danych do docelowej funkcji i funkcjach podrzędnych wywoływanych przez tę funkcję.<br /><br /> **Wewnątrz** -Wstawia funkcję StartProfile natychmiast po wejściu do funkcji docelowej. Wstawia funkcja StopProfile bezpośrednio przed każdy zwracany w docelowej funkcji.<br /><br /> **Poza metodą** -Wstawia funkcję StartProfile bezpośrednio przed każde wywołanie funkcji docelowej. Wstawia funkcję StopProfile bezpośrednio za każde wywołanie funkcji docelowej.<br /><br /> `funcname` — Nazwa docelowej funkcji.|  

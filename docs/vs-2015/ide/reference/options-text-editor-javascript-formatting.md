@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ea54b743853bba445618ad3b6e08fd9a9a54027
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86c766f776195da17a33b9d52570a2867f700c9b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271053"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219994"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Opcje, edytor tekstu, JavaScript, formatowanie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Użyj **formatowanie** strony **opcje** okno dialogowe, aby ustawić opcje forma
 |**Umieść otwierający nawias klamrowy w nowym wierszu dla bloków sterowania**|Gdy ta opcja jest zaznaczona, Edytor kodu przenosi otwierający nawias klamrowy, skojarzone z bloku sterowania (na przykład `if` i `while` bloki sterujące) do nowego wiersza.|  
   
 ## <a name="spacing"></a>Odstępy  
- Te opcje określają, jak spacje są dodawane w **źródła**widoku.  
+ Te opcje określają, jak spacje są dodawane w **źródła** widoku.  
   
 ## <a name="uielement-list"></a>Lista elementów UI  
   

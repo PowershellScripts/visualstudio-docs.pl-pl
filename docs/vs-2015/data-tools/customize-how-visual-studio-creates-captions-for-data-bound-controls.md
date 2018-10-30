@@ -22,12 +22,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf3d47c4e14606a4d3cc3006735fbe04af809600
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6906e68c74bbb718f9bfc041ab35075b3f9b0aa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195614"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220189"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Dostosowywanie sposobu tworzenia podpisów dla kontrolek powiązanych z danymi przez program Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,15 +83,15 @@ Podczas przeciągania elementów z [okna źródeł danych](http://msdn.microsoft
   
 10. Kliknij prawym przyciskiem myszy **projektantów danych** węzeł i Utwórz nowy **wartość ciągu** o nazwie `SmartCaptionSuffix`.  
   
-11. Kliknij prawym przyciskiem myszy **SmartCaptionExpression** elementu, a następnie wybierz**Modyfikuj**.  
+11. Kliknij prawym przyciskiem myszy **SmartCaptionExpression** elementu, a następnie wybierz **Modyfikuj**.  
   
 12. Wprowadź wyrażenie regularne ma **źródeł danych** okna do użycia.  
   
-13. Kliknij prawym przyciskiem myszy **SmartCaptionReplacement** elementu, a następnie wybierz**Modyfikuj**.  
+13. Kliknij prawym przyciskiem myszy **SmartCaptionReplacement** elementu, a następnie wybierz **Modyfikuj**.  
   
 14. Zastąpienia wprowadź ciąg sformatowany w sposób mają być wyświetlane wzorców dopasowywane w wyrażeniu regularnym.  
   
-15. Kliknij prawym przyciskiem myszy **SmartCaptionSuffix** elementu, a następnie wybierz**Modyfikuj**.  
+15. Kliknij prawym przyciskiem myszy **SmartCaptionSuffix** elementu, a następnie wybierz **Modyfikuj**.  
   
 16. Wprowadź wszystkie znaki, które mają być wyświetlane na końcu podpis.  
   
@@ -119,11 +119,11 @@ Podczas przeciągania elementów z [okna źródeł danych](http://msdn.microsoft
   
 10. Kliknij prawym przyciskiem myszy **projektantów danych** węzeł i Utwórz nowy **wartość ciągu** o nazwie `SmartCaptionSuffix`.  
   
-11. Kliknij prawym przyciskiem myszy **SmartCaptionExpression** elementu, a następnie wybierz**Modyfikuj**.  
+11. Kliknij prawym przyciskiem myszy **SmartCaptionExpression** elementu, a następnie wybierz **Modyfikuj**.  
   
 12. Wprowadź `(.*)` dla wartości. To będzie odpowiadał cały ciąg.  
   
-13. Kliknij prawym przyciskiem myszy **SmartCaptionReplacement** elementu, a następnie wybierz**Modyfikuj**.  
+13. Kliknij prawym przyciskiem myszy **SmartCaptionReplacement** elementu, a następnie wybierz **Modyfikuj**.  
   
 14. Wprowadź `$1` dla wartości. Ciąg to zamienia dopasowany wartość, która jest cały ciąg pozostanie niezmieniona.  
   

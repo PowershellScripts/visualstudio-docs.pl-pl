@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994edc924d0261a7eb26c4eac6e3c9277f15a81c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b15617dce090a3aacde71ad48bf4984f5efbcac4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823882"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218928"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Zaawansowane opcje, Edytor tekstów, Basic (Visual Basic)
 **VB określonych** stronie właściwości, **podstawowe** folderu **edytora tekstów** folderu **opcje** (**narzędzia** menu) okno dialogowe zawiera następujące właściwości:
@@ -71,16 +71,6 @@ Edytor tekstu wskazuje zakres visual procedur. Linia jest rysowana *.vb* pliki �
 **Automatyczne wstawianie składowych Interface i MustOverride**
 
 Jeśli zdecydujesz się `Implements` instrukcji lub `Inherits` instrukcji dla klasy, Edytor tekstu wstawia prototypy dla elementów członkowskich, które mają zostać zaimplementowane lub została zastąpiona, odpowiednio.
-
-**Pokaż separatory wierszy procedury**
-
-Edytor tekstu wskazuje zakres visual procedur. Linia jest rysowana w plikach źródłowych .vb projektu w lokalizacjach, wymienione w poniższej tabeli:
-
-|Lokalizacja w pliku źródłowym .vb|Przykład lokalizację wiersza|
-| - | - |
-|Po zamknięciu bloku konstrukcja deklaracji|-Na końcu klasy, struktury, moduł, interfejs lub wyliczenie<br />-After właściwości, funkcji lub sub<br />-Nie między get i set klauzule we właściwości|
-|Po zestaw konstrukcji w jednym wierszu|-After instrukcje importowania, przed definicją typu w pliku klasy<br />-After zmienne zadeklarowane w klasie, zanim wszelkie procedury|
-|Po jednym wierszu deklaracji (-block deklaracje poziomu)|— Następujące instrukcje importu dziedziczy instrukcji, deklaracji zmiennych, deklaracji zdarzeń, delegat deklaracje i biblioteki DLL zadeklarować instrukcji|
 
 **Włącz sugestie korekty błędów**
 

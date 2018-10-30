@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bade19778c64b6338c29db1eef8eb09a0d95fa3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b0912ffbe2a9a82ac5efbd3b2ca6ba3566ce5b02
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874647"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219305"
 ---
 # <a name="save-data-in-a-transaction"></a>Zapisywanie danych w ramach transakcji
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
   
 2.  Nadaj projektowi nazwę **SavingDataInATransactionWalkthrough**.  
   
-3.  Wybierz **aplikacji Windows**, a następnie wybierz pozycję**OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3.  Wybierz **aplikacji Windows**, a następnie wybierz pozycję **OK**. Aby uzyskać więcej informacji, zobacz [aplikacje klienckie](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      **SavingDataInATransactionWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.  
   
@@ -61,7 +61,7 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
   
 2.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.  
   
-3.  Na **wybierz typ źródła danych**ekranu, wybierz opcję **bazy danych**, a następnie wybierz pozycję**dalej**.  
+3.  Na **wybierz typ źródła danych**ekranu, wybierz opcję **bazy danych**, a następnie wybierz pozycję **dalej**.  
   
 4.  Na **wybierz połączenie danych**wykonaj ekranu, jedną z następujących czynności:  
   
@@ -71,13 +71,13 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
   
     -   Wybierz **nowe połączenie** można uruchomić **Dodawanie/modyfikowanie połączenia** okna dialogowego pole, a następnie utwórz połączenie z bazą danych Northwind.  
   
-5.  Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie wybierz**dalej**.  
+5.  Jeśli baza danych wymaga hasła, wybierz opcję dołączenia danych poufnych, a następnie wybierz **dalej**.  
   
-6.  Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** ekranu, wybierz opcję**dalej**.  
+6.  Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji** ekranu, wybierz opcję **dalej**.  
   
 7.  Na **wybierz obiekty bazy danych** ekranu, a następnie rozwiń **tabel** węzła.  
   
-8.  Wybierz `Customers` i `Orders` tabel, a następnie wybierz**Zakończ**.  
+8.  Wybierz `Customers` i `Orders` tabel, a następnie wybierz **Zakończ**.  
   
      **NorthwindDataSet** zostanie dodany do projektu i `Customers` i `Orders` tabele są wyświetlane w **źródeł danych** okna.  
   
@@ -103,7 +103,7 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
   
 1.  Na **projektu** menu, wybierz opcję**Dodaj odwołanie**.  
   
-2.  Wybierz **System.Transactions**(na **.NET** karty), a następnie wybierz pozycję**OK**.  
+2.  Wybierz **System.Transactions**(na **.NET** karty), a następnie wybierz pozycję **OK**.  
   
      Odwołanie do **System.Transactions** zostanie dodany do projektu.  
   
@@ -161,7 +161,7 @@ W tym instruktażu pokazano, jak zapisywanie danych w ramach transakcji przy uż
   
 #### <a name="to-run-the-application"></a>Aby uruchomić aplikację  
   
--   Wybierz**F5** do uruchomienia aplikacji.  
+-   Wybierz **F5** do uruchomienia aplikacji.  
   
 ## <a name="see-also"></a>Zobacz też  
  [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

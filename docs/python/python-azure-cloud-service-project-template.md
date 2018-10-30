@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: a9daea659f1a19919da31ea57946a7b287e6c040
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: da1ee8b930ad7e7366f2f0702be2ef3a538009f5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468328"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219682"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty usługi w chmurze platformy Azure dla języka Python
 
@@ -25,7 +25,7 @@ Program Visual Studio zawiera szablony ułatwiające wprowadzenie do tworzenia u
 
 A [usługi w chmurze](https://docs.microsoft.com/azure/cloud-services/) składa się z dowolną liczbą *ról procesów roboczych* i *role sieci web*, z których każdy wykonuje koncepcyjnie osobne zadania, ale można osobno być replikowane między maszyny wirtualne w razie potrzeby skalowania. Role sieć Web udostępniają hosting dla aplikacji frontonu sieci web. W przypadku danego języka Python, wszystkie struktury sieci web, który obsługuje WSGI może być użyty do zapisu takiej aplikacji (obsługiwana przez [szablon projektów internetowych](python-web-application-project-templates.md)). Role procesów roboczych są przeznaczone dla długotrwałe procesy, które nie bezpośrednią interakcję z użytkownikami. Zazwyczaj należy używać pakietów w pakiecie "azure", który został zainstalowany przy użyciu [ `pip install azure` ](http://pypi.org/project/azure).
 
-Ten artykuł zawiera szczegółowe informacje o szablonu projektu oraz innych pomocy technicznej w programie Visual Studio 2017 (wcześniejszych wersji są podobne, ale w edytorze). Aby uzyskać więcej informacji dotyczących pracy z platformą Azure za pomocą języka Python, odwiedź stronę [Centrum deweloperów języka Python Azure](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
+Ten artykuł zawiera szczegółowe informacje o szablonu projektu oraz innych pomocy technicznej w programie Visual Studio 2017 (wcześniejszych wersji są podobne, ale w edytorze). Aby uzyskać więcej informacji dotyczących pracy z platformą Azure za pomocą języka Python, odwiedź stronę [Centrum deweloperów języka Python Azure](https://docs.microsoft.com/python/azure/?view=azure-python).
 
 ## <a name="create-a-project"></a>Tworzenie projektu
 

@@ -49,12 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3cb2a939fb569ca9c50e6334fa7b836a6953dca4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830668"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219162"
 ---
 # <a name="options-text-editor-general"></a>Opcje, edytor tekstów, ogólne
 
@@ -94,14 +94,6 @@ Po wybraniu Wyświetla pionowego marginesu wzdłuż lewej krawędzi obszaru teks
 ### <a name="indicator-margin"></a>Margines wskaźnika
 
 Po wybraniu Wyświetla pionowego marginesu poza lewej krawędzi obszaru tekstu edytora. Po kliknięciu tego marginesie są wyświetlane ikonę i etykietkę narzędzia, które są powiązane z tekstu. Na przykład punkt przerwania lub zadania skróty listy są wyświetlane w margines wskaźnika. Informacje o margines wskaźnika do drukowania.
-
-### <a name="vertical-scroll-bar"></a>Pionowy pasek przewijania
-
-Po wybraniu Wyświetla pionowy pasek przewijania, dzięki czemu można przewijać w górę i w dół do elementów widoku, które wykraczają poza obszar wyświetlania edytora. Jeśli pionowe paski przewijania są niedostępne, można użyć Page Up, Page Down i klawisze kursora do przewijania.
-
-### <a name="horizontal-scroll-bar"></a>Poziomy pasek przewijania
-
-Po wybraniu Wyświetla poziomy pasek przewijania, dzięki czemu można przewijać z na boki do elementów widoku, które wykraczają poza obszar wyświetlania edytora. Jeśli poziome paski przewijania są niedostępne, można użyć klawiszy strzałek do przewijania.
 
 ### <a name="highlight-current-line"></a>Wyróżnij bieżący wiersz
 

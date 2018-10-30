@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10b62093f85c51ee349386ec09470228d0194e9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a02d6dd09ec019ad05404c033889f89ed140dd1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833998"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219500"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Tworzenie wystąpień projektów przy użyciu fabryk projektów
 Typów projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] użyj *fabryka projektu* do tworzenia wystąpień obiektów projektu. Fabryka projektu jest podobna do fabryki klas standard dla obiektów COM, cocreatable. Obiekty projektu nie są jednak cocreatable; mogą one można tworzyć tylko za pomocą fabryki projektu.  
@@ -27,8 +27,6 @@ Typów projektów w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE wywołuje fabryka projektu zaimplementowane w swojej pakietu VSPackage, gdy użytkownik wczytuje istniejący projekt lub tworzy nowy projekt w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Nowy obiekt projektu zapewnia środowisko IDE z wystarczającą ilość informacji, aby wypełnić **Eksploratora rozwiązań**. Nowy obiekt projektu także interfejsami wymaganymi do obsługi wszystkich odpowiednich akcji UI inicjowane przez środowisko IDE.  
   
  Możesz zaimplementować <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfejsu w klasie w projekcie. Zazwyczaj znajduje się w module swój własny.  
-  
- Na przykład implementacja `IVsProjectFactory` interfejsu, zobacz *PrjFac.cpp*, który znajduje się w [podstawowego projektu](https://www.microsoft.com/download/details.aspx?id=55984) katalog przykładu.  
   
  Projekty, które obsługuje Agregacja przez właściciela, muszą zostać zachowane klawiszem właściciela w pliku projektu. Gdy <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> metoda jest wywoływana w projekcie przy użyciu klucza właściciela, należących do projektu konwertuje jego właściciela klucza fabryką projektu, następnie wywołuje GUID `CreateProject` metody w tej fabryce projektu w celu utworzenia rzeczywistych.  
   

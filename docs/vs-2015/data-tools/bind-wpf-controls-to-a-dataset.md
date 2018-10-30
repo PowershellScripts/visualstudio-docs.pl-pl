@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b77e8211d8f76627f16f96abed8a61e6dae03d7
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893003"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219799"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Powiązywanie kontrolek WPF z zestawem danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
   
 2.  W **źródeł danych** okna, kliknij przycisk **Dodaj nowe źródło danych**.  
   
-     **Konfiguracji źródła danych**zostanie otwarty Kreator.  
+     **Konfiguracji źródła danych** zostanie otwarty Kreator.  
   
 3.  Na **wybierz typ źródła danych** wybierz opcję **bazy danych**, a następnie kliknij przycisk **dalej**.  
   
@@ -122,7 +122,7 @@ W tym instruktażu utworzysz aplikację WPF, która zawiera formanty powiązane 
   
 2.  W projektancie, kliknij prawym przyciskiem myszy **Fill,GetData()** zapytania, a następnie wybierz pozycję **Konfiguruj**.  
   
-     **Konfiguracji TableAdapter**zostanie otwarty Kreator.  
+     **Konfiguracji TableAdapter** zostanie otwarty Kreator.  
   
 3.  W **wprowadź instrukcję SQL** strony, należy dodać następującą klauzulę WHERE po `SELECT` instrukcji w polu tekstowym.  
   

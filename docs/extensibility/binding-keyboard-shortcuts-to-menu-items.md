@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba37ffc3bb277590b6cbdd309bc92e1466345183
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66436f31a0c2f3b895b4f12a5fb352eddf685632
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822108"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219643"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Powiąż skrótów klawiaturowych z elementami menu
 Aby powiązać polecenia niestandardowego menu skrótu klawiaturowego, wystarczy dodać wpis do *vsct* plik pakietu. W tym temacie opisano sposób mapowania skrótów klawiaturowych na niestandardowy przycisk, element menu lub paska narzędzi polecenia, a także jak zastosować Mapowanie klawiatury w edytorze domyślnej lub ograniczyć je do edytora niestandardowego.  
@@ -45,7 +45,7 @@ Aby powiązać polecenia niestandardowego menu skrótu klawiaturowego, wystarczy
 4. Wypróbuj różne kombinacje klawiszy, dopóki nie znajdziesz taki, który nie jest zamapowany.  
   
    > [!NOTE]
-   >  Skróty klawiaturowe, które używają **Alt** może otworzyć menu i nie są bezpośrednio wykonania polecenia. W związku z tym **skrótów obecnie używany przez** pole może być pusty podczas wpisywania tekstu skrót, który zawiera **Alt**. Możesz sprawdzić, czy skrót nie otwiera menu przez zamknięcie **opcje** okno dialogowe, a następnie naciskając klawisze.  
+   >  Skróty klawiaturowe, które używają **Alt** może otworzyć menu i nie są bezpośrednio wykonania polecenia. W związku z tym **skrót aktualnie używany przez** pole może być pusty podczas wpisywania tekstu skrót, który zawiera **Alt**. Możesz sprawdzić, czy skrót nie otwiera menu przez zamknięcie **opcje** okno dialogowe, a następnie naciskając klawisze.  
   
    W poniższej procedurze przyjęto, że masz istniejących pakietów VSPackage przy użyciu polecenia menu. Jeśli potrzebujesz pomocy z tą operacją, Przyjrzyj się [Tworzenie rozszerzenia za pomocą polecenia menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
@@ -78,7 +78,7 @@ Aby powiązać polecenia niestandardowego menu skrótu klawiaturowego, wystarczy
   
    W większości sytuacji **Shift** nie należy używać bez modyfikatora drugiej już naciśnięcie klawisza powoduje, że większość klawisze alfanumeryczne wpisać wielką literę lub symbol.  
   
-   Kody klucz wirtualnej umożliwiają uzyskanie dostępu do klawisze specjalne, które nie mają skojarzonych z nimi, na przykład klawiszy funkcyjnych znak i **Backspace** klucza. Aby uzyskać więcej informacji, zobacz [kody klucz wirtualnej](https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes).  
+   Kody klucz wirtualnej umożliwiają uzyskanie dostępu do klawisze specjalne, które nie mają skojarzonych z nimi, na przykład klawiszy funkcyjnych znak i **Backspace** klucza. Aby uzyskać więcej informacji, zobacz [kody klucz wirtualnej](https://docs.microsoft.com/windows/desktop/inputdev/virtual-key-codes).  
   
    Aby udostępnić polecenie w programie Visual Studio edytor, należy ustawić `editor` atrybutu `guidVSStd97`.  
   

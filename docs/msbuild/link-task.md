@@ -32,12 +32,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 199d871851a03b7fe97c640a9efa70c01c2b8c5c
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
+ms.openlocfilehash: 5cd79db9b5bfc2e68dea2ff711b2da6ce55c9bc0
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143440"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220124"
 ---
 # <a name="link-task"></a>Link — Zadanie
 Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsolidatora łączy pliki obiektu Common Object File Format (COFF) i biblioteki, aby utworzyć plik wykonywalny (*.exe*) pliku lub biblioteki dołączanej (dynamicznie DLL). Aby uzyskać więcej informacji, zobacz [opcje konsolidatora](/cpp/build/reference/linker-options).  
@@ -67,7 +67,7 @@ Narzędzia konsolidatora Visual C++, jest zawijany *link.exe*. Narzędzia konsol
   
      Określa atrybuty, które zostaną umieszczone w `dependency` części pliku manifestu.  
   
-     Aby uzyskać więcej informacji, zobacz [/MANIFESTDEPENDENCY (Określ zależności manifestu)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Zobacz też [pliki konfiguracyjne wydawcy](https://docs.microsoft.com/en-us/windows/desktop/SbsCs/publisher-configuration-files).  
+     Aby uzyskać więcej informacji, zobacz [/MANIFESTDEPENDENCY (Określ zależności manifestu)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Zobacz też [pliki konfiguracyjne wydawcy](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).  
   
 -   **AdditionalOptions**  
   

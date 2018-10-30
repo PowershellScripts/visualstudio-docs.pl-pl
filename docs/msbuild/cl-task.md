@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f23a23f1dbdb8dc66a46e1eb1e0b9f1156182e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c239dc78d152e9060d176ebe1d4abd3b981a57d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922409"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220368"
 ---
 # <a name="cl-task"></a>CL — Zadanie
 Narzędzia kompilatora Visual C++, jest zawijany *cl.exe*. Kompilator generuje plik wykonywalny (*.exe*) plików, biblioteka dołączana dynamicznie (*.dll*) plików lub modułu kodu (*.netmodule*) plików. Aby uzyskać więcej informacji, zobacz [opcje kompilatora](/cpp/build/reference/compiler-options).  
@@ -52,7 +52,9 @@ Narzędzia kompilatora Visual C++, jest zawijany *cl.exe*. Kompilator generuje p
   
    Aby uzyskać więcej informacji, zobacz [opcje kompilatora](/cpp/build/reference/compiler-options).  
   
-- **AdditionalUsingDirectories**opcjonalny ciąg [] parametru.  
+- **AdditionalUsingDirectories**
+
+   Opcjonalny parametr typu String [].  
   
    Określa katalog, który kompilator będzie przeszukiwał, aby rozwiązać odwołania do plików przekazywane do **#using** dyrektywy.  
   

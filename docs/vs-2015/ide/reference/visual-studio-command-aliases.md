@@ -22,12 +22,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c2daf9aa4e92ef4a017f36cbcc806abc50d6bde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbde5651c66582b7d0536be906358d3a4446f587
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240438"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220277"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio — Aliasy poleceń
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "49240438"
   
 Aliasy zapewniają środki do wprowadzania polecenia do **Find/Command** pole lub **polecenia** okna skracając tekst wymaganej do wykonania polecenia. Na przykład, zamiast wprowadzać `>File.OpenFile` do wyświetlenia **Otwórz plik** okno dialogowe, można użyć wstępnie zdefiniowanych aliasów `>of`.  
   
- Typ `alias` w **polecenia**okno, aby wyświetlić listę bieżących aliasów i ich definicje. Typ `>cls` aby wyczyścić zawartość **polecenia** okna. Jeśli chcesz zobaczyć aliasu dla określonego polecenia, wpisz `alias <command name>`.  
+ Typ `alias` w **polecenia** okno, aby wyświetlić listę bieżących aliasów i ich definicje. Typ `>cls` aby wyczyścić zawartość **polecenia** okna. Jeśli chcesz zobaczyć aliasu dla określonego polecenia, wpisz `alias <command name>`.  
   
  Można łatwo utworzyć aliasu dla jednego z poleceń programu Visual Studio (z lub bez argumentów). Na przykład składnia aliasów `File.NewFile MyFile.txt` jest `alias MyAlias File.NewFile MyFile.txt`. Można usunąć jeden z aliasy `alias <alias name> /delete`  
   

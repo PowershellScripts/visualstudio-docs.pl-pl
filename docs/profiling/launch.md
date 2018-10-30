@@ -1,5 +1,5 @@
 ---
-title: Uruchamianie | Dokumentacja firmy Microsoft
+title: Uruchom | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,17 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b34cf3124ab4479be624f097502240e5014b330
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 3afc0a50847591445c106d86460ee1821fe0df81
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844407"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219201"
 ---
 # <a name="launch"></a>Uruchom
-**Uruchamianie** opcja uruchamiania przy użyciu metody próbkowania profilera i rozpoczyna się również określonej aplikacji.  
+**Uruchom** opcji uruchamiania profilera za pomocą metody pobierania próbek i uruchomieniu określonej aplikacji.  
   
- Do używania **uruchamianie** opcji, należy określić **próbki** metody w **Start** opcji.  
+ Do użycia **Uruchom** opcji, należy określić **przykładowe** method in Class metoda **Start** opcji.  
   
 ## <a name="syntax"></a>Składnia  
   
@@ -30,25 +30,25 @@ VSPerfCmd.exe /Launch:AppName [Options]
   
 #### <a name="parameters"></a>Parametry  
  `AppName`  
- Nazwa aplikacji do uruchomienia. Obsługiwane są pełne i częściowe ścieżki z bieżącego katalogu.  
+ Nazwa aplikacji do uruchomienia. Pełne i częściowe ścieżki z bieżącego katalogu są obsługiwane.  
   
 ## <a name="valid-options"></a>Prawidłowe opcje  
- Następujące opcje narzędzia VSPerfCmd można łączyć z **uruchamianie** opcji w jednym wierszu polecenia.  
+ Można łączyć z następujących opcji VSPerfCmd **Uruchom** opcji w pojedynczym wierszu polecenia.  
   
- **Uruchom:** `Method`  
- Inicjuje sesję wiersza polecenia profilera i ustawia określonej metody profilowania.  
+ **Początek:** `Method`  
+ Inicjuje sesji wiersza polecenia profilera i ustawia określonej metody profilowania.  
   
- **GlobalOn**i **GlobalOff**  
- Wznawia (**GlobalOn**) lub wstrzymuje (**GlobalOff**) profilowania, ale nie kończy się sesja profilowania.  
+ **GlobalOn** i **GlobalOff**  
+ Wznawia (**GlobalOn**) lub zatrzymuje (**GlobalOff**) profilowania, ale nie kończy się sesja profilowania.  
   
  **ProcessOn:** `PID` i **ProcessOff**:`PID`  
- Wznawia (**ProcessOn**) lub wstrzymuje (**ProcessOff**) profilowania dla określonego procesu.  
+ Wznawia (**ProcessOn**) lub zatrzymuje (**ProcessOff**) profilowania dla określonego procesu.  
   
  **TargetCLR**  
- Określa wersję programu .NET Framework wspólnego języka środowiska uruchomieniowego (CLR) do profilu, gdy więcej niż jedna wersja jest ładowany w sesji profilowania. Domyślnie jest profilowane pierwszy załadowano wersję.  
+ Określa wersję programu .NET Framework języka wspólnego środowiska uruchomieniowego (CLR) do profilowania, gdy więcej niż jedna wersja jest załadowana w sesji profilowania. Domyślnie jest profilowane pierwszy załadowano wersję.  
   
 ## <a name="exclusive-options"></a>Wykluczających się opcji  
- Następujące opcje można używać tylko z **uruchamianie** opcji.  
+ Następujące opcje można używać tylko z **Uruchom** opcji.  
   
  **Console**  
  Uruchamia określony aplikacji wiersza polecenia w nowym oknie.  
@@ -57,26 +57,26 @@ VSPerfCmd.exe /Launch:AppName [Options]
  Określa listę argumenty do przekazania do aplikacji.  
   
  **LineOff**  
- Wyłącza funkcję zbierania danych profilowania na poziomie wiersza.  
+ Wyłącza kolekcję profilowania danych na poziomie wiersza.  
   
-## <a name="sampling-options"></a>Opcje pobierania próbek  
- Można określić jedną z następujących opcji Interwał próbkowania na **uruchamianie** wiersza polecenia. Domyślny interwał próbkowania wynosi 10 000 000 cykli zegara procesora.  
+## <a name="sampling-options"></a>Opcje próbkowania  
+ Można określić tylko jedną z następujących opcji Interwał próbkowania na **Uruchom** wiersza polecenia. Domyślny interwał próbkowania wynosi 10 000 000 cykli zegara procesora.  
   
  **Czasomierz**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`] **Licznik**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**alokacji** &#124;  **okres istnienia**]  
  Określa liczbę i typ interwału próbkowania.  
   
--   **Czasomierz** — przykłady co `Cycles` cykle zegara procesora nie zostało zatrzymane. Jeśli `Cycles` nie zostanie określony, 10 000 000 cykle są używane.  
+-   **Czasomierz** — przykłady co `Cycles` cykli zegara procesora niewstrzymanych. Jeśli `Cycles` nie zostanie określony, 10 000 000 cykle są używane.  
   
 -   **PF** — przykłady co `Events` błędów stron. Jeśli `Events` nie zostanie określony, 10 błędów stron.  
   
--   **Sys** — przykłady co `Events` wywołań do systemu operacyjnego. Jeśli `Events` nie zostanie określony, 10 wywołań systemowych są używane.  
+-   **Sys** — przykłady co `Events` wywołania systemu operacyjnego. Jeśli `Events` nie zostanie określony, 10 wywołań systemowych są używane.  
   
--   **Licznik** — przykłady co `Reload` liczba wydajności procesora CPU licznika określony przez `Name`. Opcjonalnie `FriendlyName` można określić ciąg do użycia w nagłówku kolumny raportów profilera.  
+-   **Licznik** — przykłady co `Reload` liczba wydajność procesora CPU, licznik określonej przez `Name`. Opcjonalnie `FriendlyName` można określić ciąg do użycia jako nagłówek kolumny w raportach profilera.  
   
--   **Wykaz Globalny** -.NET umożliwia zbieranie danych pamięci. Domyślnie (**alokacji**), dane są zbierane w każdym zdarzeniu alokacji pamięci. Gdy **okres istnienia** parametr jest określony, również zbieranych danych w każdym zdarzeniu kolekcji pamięci.  
+-   **GC** — .NET umożliwia zbieranie danych pamięci. Domyślnie (**alokacji**), dane są zbierane na każde zdarzenie alokacji pamięci. Gdy **okres istnienia** parametr jest określony, dane są również zbierane przy każdym zdarzeniu kolekcji wyrzucania elementów.  
   
 ## <a name="example"></a>Przykład  
- W tym przykładzie przedstawiono użycie **uruchamianie** do uruchomienia aplikacji.  
+ W tym przykładzie pokazano użycie **Uruchom** uruchomić aplikację.  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
@@ -84,7 +84,7 @@ VSPerfCmd.exe /Launch:TestApp.exe
 ```  
   
 ## <a name="see-also"></a>Zobacz także  
- [VSPerfCmd](../profiling/vsperfcmd.md)   
+ [Narzędzia VSPerfCmd](../profiling/vsperfcmd.md)   
  [Profil aplikacji autonomicznych](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Aplikacje sieci web ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Usługi profilowania](../profiling/command-line-profiling-of-services.md)

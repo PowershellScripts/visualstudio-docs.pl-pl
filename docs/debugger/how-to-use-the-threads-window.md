@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f82d53d5bbc9d309ba5d7e8710f0afe2023b8965
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933563"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219890"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Przewodnik: Debugowanie aplikacji wielowątkowych w programie Visual Studio za pomocą okna wątków
 Program Visual Studio udostępnia **wątków** okna i inny użytkownik interfejsu elementy, aby pomóc w debugowaniu aplikacji wielowątkowych. W tym samouczku pokazano, jak używać **wątków** okna i **Lokalizacja debugowania** paska narzędzi. Aby uzyskać informacje na temat innych narzędzi, zobacz [Rozpoczynanie debugowania aplikacji wielowątkowych](../debugger/get-started-debugging-multithreaded-apps.md). Ten samouczek zawiera tylko kilka minut, ale jego ukończenia umożliwia zapoznanie się z funkcjami debugowania aplikacji wielowątkowych.   
@@ -37,7 +37,7 @@ Do wykonywania kroków opisanych w tym samouczku, potrzebny jest projektu aplika
   
      **Nowy projekt** pojawi się okno dialogowe.  
   
-2.  W **typu projektu**s kliknij wybranego przez siebie języka: **języka Visual Basic**, **Visual C#**, lub **Visual C++**.  
+2.  W **typów projektów** kliknij wybranego przez siebie języka: **języka Visual Basic**, **Visual C#** , lub **Visual C++**.  
   
 3.  W obszarze **pulpitu Windows**, wybierz **aplikacja Konsolowa**.  
   

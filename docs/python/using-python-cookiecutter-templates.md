@@ -1,7 +1,7 @@
 ---
 title: Rozszerzenia CookieCutter dla języka Python
 description: Program Visual Studio obsługuje graficzny rozszerzenia Cookiecutter do odnajdowania szablonów dla kodu w języku Python i twórz projekty na podstawie tych szablonów.
-ms.date: 06/26/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 841606c8b0f39f730d78a53ccaa8e1de96feb109
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: b7a040b5ab12c1f940996ea26c27a6136ab81f2f
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586468"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219695"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Używanie rozszerzenia Cookiecutter
 
@@ -41,7 +41,7 @@ Strona główna Cookiecutter Wyświetla listę szablonów do wyboru, podzielone 
 | **Zainstalowane** | Szablony, które zostały zainstalowane na komputerze lokalnym. W przypadku szablonu usługi online jako repozytorium zostanie automatycznie sklonowany do podfolderu *~/.cookiecutters*. Usunąć wybranego szablonu zainstalowane, naciskając **Usuń**. |
 | **Zalecane** | Szablony są ładowane z kanał zalecane. Domyślne źródło danych jest nadzorowane przez firmę Microsoft. Zobacz [opcje Cookiecutter](#cookiecutter-options) poniżej szczegółowe informacje na temat dostosowywania źródła danych. |
 | **GitHub** | Wyniki wyszukiwania usługi GitHub — słowo kluczowe narzędzia cookiecutter. Wyniki z repozytorium GitHub możesz wrócić z podziałem na strony, jeśli będą dostępne, wyniki **obciążenia więcej** pojawia się na końcu listy. |
-| **Niestandardowy** | Po wprowadzeniu niestandardową lokalizację w polu wyszukiwania, pojawi się w tej grupie. Możesz wpisz pełną ścieżkę do repozytorium GitHub lub pełną ścieżkę do folderu na dysku lokalnym. |
+| **Custom** | Po wprowadzeniu niestandardową lokalizację w polu wyszukiwania, pojawi się w tej grupie. Możesz wpisz pełną ścieżkę do repozytorium GitHub lub pełną ścieżkę do folderu na dysku lokalnym. |
 
 ### <a name="cloning"></a>Klonowanie
 

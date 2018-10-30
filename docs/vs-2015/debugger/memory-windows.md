@@ -32,19 +32,19 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 140d3e0fb721c9913de6feb6f1ed9249c8b75cfa
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925505"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219526"
 ---
 # <a name="memory-windows"></a>Okno pamięci
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Pamięci** okna zapewnia wgląd w to obszar pamięci, który jest używany przez aplikację. **Obejrzyj** oknie **QuickWatch** okno dialogowe **automatyczne** oknie i **lokalne** okno Pokaż zawartość zmiennych, które są przechowywaną w określonej lokalizacji w pamięci. Ale **pamięci** okno zawiera obraz na dużą skalę. Ten widok może być wygodną badanie dużej części danych (buforów lub dużych ciągów, na przykład), które nie są wyświetlane poprawnie w innych oknach. Jednak **pamięci** okno nie jest ograniczona do wyświetlania danych. Wyświetla wszystkie elementy w obszarze pamięci czy zawartość jest dane, kod lub losowych bity wyrzucania elementów w pamięci nieprzypisane.  
   
- **Pamięci** okno jest dostępne tylko wtedy, gdy debugowanie na poziomie adresów jest włączone w **opcje**okno dialogowe**debugowanie** węzła. **Pamięci** okno nie jest dostępne dla skryptu lub SQL, które są języki, które nie rozpoznają koncepcji pamięci.  
+ **Pamięci** okno jest dostępne tylko wtedy, gdy debugowanie na poziomie adresów jest włączone w **opcje** okno dialogowe**debugowanie** węzła. **Pamięci** okno nie jest dostępne dla skryptu lub SQL, które są języki, które nie rozpoznają koncepcji pamięci.  
   
 ## <a name="opening-a-memory-window"></a>Otwierając okno pamięci  
   

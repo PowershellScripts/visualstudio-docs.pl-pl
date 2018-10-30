@@ -19,12 +19,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7100e3fc6e18387cf8ef8cfdc2b485b610b3dc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 009e9269961b3cd532736fd5b72e28a389a4382a
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812715"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220046"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Wiązanie skrótów klawiaturowych z elementami menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ Aby powiązać polecenia niestandardowego menu skrótu klawiaturowego, Dodaj odp
   
 3. W **naciśnij klawisze skrótu** wpisz skrót klawiaturowy, który chcesz użyć.  
   
-    Jeśli skrót jest już używany w programie Visual Studio, **skrótów obecnie używany przez** zostanie wyświetlone skrót aktualnie wywołuje polecenie.  
+    Jeśli skrót jest już używany w programie Visual Studio, **skrót aktualnie używany przez** zostanie wyświetlone skrót aktualnie wywołuje polecenie.  
   
 4. Wypróbuj różne kombinacje klawiszy, dopóki nie znajdziesz taki, który nie jest zamapowany.  
   
    > [!NOTE]
-   >  Skróty klawiaturowe, które używają ALT może otworzyć menu i nie są bezpośrednio wykonania polecenia. W związku z tym **skrótów obecnie używany przez** pole może być pusty podczas wpisywania tekstu skrót, który zawiera ALT. Możesz sprawdzić, czy skrót nie otwiera menu przez zamknięcie **opcje** okno dialogowe, a następnie naciskając klawisze.  
+   >  Skróty klawiaturowe, które używają ALT może otworzyć menu i nie są bezpośrednio wykonania polecenia. W związku z tym **skrót aktualnie używany przez** pole może być pusty podczas wpisywania tekstu skrót, który zawiera ALT. Możesz sprawdzić, czy skrót nie otwiera menu przez zamknięcie **opcje** okno dialogowe, a następnie naciskając klawisze.  
   
    W poniższej procedurze przyjęto, że masz istniejących pakietów VSPackage przy użyciu polecenia menu. Jeśli potrzebujesz pomocy z tą operacją, Przyjrzyj się [Tworzenie rozszerzenia za pomocą polecenia Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   

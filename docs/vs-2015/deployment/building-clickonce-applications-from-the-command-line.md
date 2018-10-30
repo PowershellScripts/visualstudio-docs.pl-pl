@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dac26a7846f4a6b611c53e9cd537d112a8205d2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836791"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220020"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Tworzenie aplikacji ClickOnce z wiersza poleceń
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ W [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], można kompi
   
 5. Typ `msbuild /target:publish`.  
   
-   Powyższe kroki powoduje wygenerowanie pełnego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia aplikacji w podfolderze o nazwie P projektu**ublikuj**. Jest CmdLineDemo.application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest wdrożenia. Folder CmdLineDemo_1.0.0.0 zawiera pliki CmdLineDemo.exe i CmdLineDemo.exe.manifest, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikacji. Setup.exe jest program inicjujący, która domyślnie jest skonfigurowana do instalowania [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. DotNetFX folder zawiera pakiety redystrybucyjne dla [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Jest to całego zestawu plików, należy wdrożyć aplikację sieci Web lub za pośrednictwem ścieżka UNC lub dysk CD/DVD.  
+   Powyższe kroki powoduje wygenerowanie pełnego [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] wdrożenia aplikacji w podfolderze o nazwie projektu **Publikuj**. Jest CmdLineDemo.application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifest wdrożenia. Folder CmdLineDemo_1.0.0.0 zawiera pliki CmdLineDemo.exe i CmdLineDemo.exe.manifest, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestu aplikacji. Setup.exe jest program inicjujący, która domyślnie jest skonfigurowana do instalowania [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. DotNetFX folder zawiera pakiety redystrybucyjne dla [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Jest to całego zestawu plików, należy wdrożyć aplikację sieci Web lub za pośrednictwem ścieżka UNC lub dysk CD/DVD.  
   
 ## <a name="publishing-properties"></a>Właściwości publikowania  
  Gdy będziesz publikować aplikację w powyższych procedurach następujące właściwości są wstawiane do pliku projektu, w Kreatorze publikacji. Te właściwości bezpośrednio wpływają na sposób, w jaki [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplikacji są generowane.  

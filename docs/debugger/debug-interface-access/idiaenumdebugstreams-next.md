@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fc8bfcbf9d95e838648d8923c01cc9b145ed9bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: acd95d68ed32e5bb9116123f4cbdfd9d30e26f16
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49916232"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220459"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
 Pobiera określoną liczbę strumieni debugowania w kolejności wyliczenia.  
@@ -27,7 +27,7 @@ Pobiera określoną liczbę strumieni debugowania w kolejności wyliczenia.
 ## <a name="syntax"></a>Składnia  
   
 ```C++  
-HRESULT Next (   
+HRESULT Next (   
    ULONG                     celt,   
    IDiaEnumDebugStreamData** rgelt,  
    ULONG*                    pceltFetched  
@@ -36,7 +36,7 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parametry  
  celt  
- [in] **T**on liczby strumieni debugowania w modułu wyliczającego do pobrania.  
+ [in] Liczba strumieni debugowania w modułu wyliczającego do pobrania.  
   
  rgelt  
  [out] Zwraca tablicę [idiaenumdebugstreamdata —](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) obiektów, które reprezentuje debugowania strumieni, trwa pobieranie.  

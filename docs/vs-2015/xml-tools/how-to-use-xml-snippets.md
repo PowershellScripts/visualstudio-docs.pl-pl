@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4da9c5cd5d4aaf3a99fd891a814b1f8ccef04ac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 774a0f5639057ea5b1dc190ce475278477a7f373
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245859"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219617"
 ---
 # <a name="how-to-use-xml-snippets"></a>Porady: używanie fragmentów kodu XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Możesz wywołać fragmentów kodu XML za pomocą dwóch poniższych poleceń w 
   
  Naciśnięcie klawisza ENTER lub ESC spowoduje anulowanie edytowania pól i zwraca Edytor do normalnego.  
   
- Domyślne kolory dla pól fragmentu kodu można edytować można zmienić, modyfikując ustawienie pole fragmentu kodu w **czcionki i kolory** okienku **opcji**s, okno dialogowe. Aby uzyskać więcej informacji, zobacz [porady: zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
+ Domyślne kolory dla pól fragmentu kodu można edytować można zmienić, modyfikując ustawienie pole fragmentu kodu w **czcionki i kolory** okienku **opcje** okno dialogowe. Aby uzyskać więcej informacji, zobacz [porady: zmiana czcionek i kolorów w edytorze](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).  
   
 ## <a name="see-also"></a>Zobacz też  
  [Fragmentów kodu XML](../xml-tools/xml-snippets.md)   

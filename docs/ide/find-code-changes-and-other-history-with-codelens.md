@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e11b7458c5d26d56252b228522c53b00ebadb35b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853522"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220303"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Znajdowanie zmian w kodzie i innych elementów historii kodu za pomocą funkcji CodeLens
 
@@ -127,7 +127,7 @@ Możesz dowiedzieć się jak wiele osób zmieniło kodu i jak wiele zmian w gał
 
 ### <a name="find-when-your-code-was-branched"></a>Dowiedz się, gdy został rozgałęziony kodu
 
-Aby dowiedzieć się, gdy kod został rozgałęziony, przejdź do kodu w gałęzi podrzędnej. Następnie wybierz **zmiany** wskaźnika lub naciśnij klawisz**Alt**+**6**:
+Aby dowiedzieć się, gdy kod został rozgałęziony, przejdź do kodu w gałęzi podrzędnej. Następnie wybierz **zmiany** wskaźnika lub naciśnij klawisz **Alt**+**6**:
 
 ![CodeLens: Dowiedz się, gdy został rozgałęziony kodu](../ide/media/codelens-first-branch.png)
 
@@ -297,7 +297,7 @@ Aby użyć klawiatury:
 
 4. Naciśnij klawisz **kartę** można przejść do **Pokaż ustawienia dla** listy, a następnie naciśnij klawisz **strzałkę w dół** wybrać **CodeLens**.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>P: czy mogę przenieść CodeLens `head`s-up wyświetlaną?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Pyt.: Czy można przesunąć ekran projekcyjny CodeLens?
 
 **Odp.:** tak, wybierz polecenie ![ikonę dokowania](../ide/media/codelensdockwindow.png) Aby zadokować CodeLens jako okno.
 

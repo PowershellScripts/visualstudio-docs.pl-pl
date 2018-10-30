@@ -1,5 +1,5 @@
 ---
-title: Kreator interfejsu (IDTWizard) | Dokumentacja firmy Microsoft
+title: Interfejs kreatora (IDTWizard) | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ebb605ed61cc06ef70fde97f3d5831c6d5c4503
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f1bc71239ff7923676c35496e103223a6b6e56e
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140706"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219864"
 ---
-# <a name="wizard-interface-idtwizard"></a>Kreator interfejsu (IDTWizard)
-Zintegrowane środowisko programistyczne (IDE) używa <xref:EnvDTE.IDTWizard> interfejs do komunikacji z kreatorów. Kreatorzy musi implementować ten interfejs, aby mogło zostać zainstalowane w środowisku IDE.  
+# <a name="wizard-interface-idtwizard"></a>Interfejs kreatora (IDTWizard)
+Używa zintegrowanego środowiska programistycznego (IDE) <xref:EnvDTE.IDTWizard> interfejs do komunikacji za pomocą kreatorów. Kreatorzy musi implementować ten interfejs, aby mogło zostać zainstalowane w środowisku IDE.  
   
- <xref:EnvDTE.IDTWizard.Execute%2A> Metoda jest jedyną metodą skojarzone z <xref:EnvDTE.IDTWizard> interfejsu. Kreatorzy zaimplementować tę metodę i IDE wywołuje metodę w interfejsie. W poniższym przykładzie przedstawiono podpis metody.  
+ <xref:EnvDTE.IDTWizard.Execute%2A> Metody jest jedyną metodą, które są skojarzone z <xref:EnvDTE.IDTWizard> interfejsu. Kreatorzy zaimplementować tę metodę i IDE wywołuje metodę w interfejsie. Poniższy przykład pokazuje podpis metody.  
   
 ```  
 /* IDTWizard Method */  
@@ -37,25 +37,25 @@ STDMETHOD(Execute)(THIS_
    );  
 ```  
   
- Mechanizm start przypomina zarówno **nowy projekt** i **Dodaj nowy element**kreatorów. Aby rozpocząć, albo, należy wywołać <xref:EnvDTE.IDTWizard> zdefiniowane w Dteinternal.h interfejsu. Jedyną różnicą jest zestaw kontekstu i niestandardowe parametry przekazywane do interfejsu wywołanego interfejsu.  
+ Mechanizm rozpoczęcia jest podobny dla obu **nowy projekt** i **Dodaj nowy element** kreatorów. Aby rozpocząć, albo, należy wywołać <xref:EnvDTE.IDTWizard> interfejsem zdefiniowanym w Dteinternal.h. Jedyna różnica polega na zestaw kontekstu i parametry niestandardowe, które są przekazywane do interfejsu, po wywołaniu interfejsu.  
   
- Poniżej opisano <xref:EnvDTE.IDTWizard> interfejs, który musi implementować kreatorów, aby pracować w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Wywołania IDE <xref:EnvDTE.IDTWizard.Execute%2A> metody w Kreatorze przekazanie jej przez następujące:  
+ Poniższe informacje zawierają opis <xref:EnvDTE.IDTWizard> interfejs, który musi implementować kreatorów, aby pracować w [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Wywołania środowiska IDE <xref:EnvDTE.IDTWizard.Execute%2A> kreatora, podając mu następujące metody:  
   
 -   Obiekt DTE  
   
-     Obiekt DTE jest elementem głównym model automatyzacji.  
+     Obiekt DTE jest głównym modelu automatyzacji.  
   
--   Dojście do okna dialogowego okna, jak pokazano w segment kodu `hwndOwner ([in] long)`.  
+-   Dojście do pokazanego poniżej segment kodu, okno dialogowe `hwndOwner ([in] long)`.  
   
-     Kreator używa to `hwndOwner` jako elementu nadrzędnego dla okna dialogowego kreatora.  
+     Kreator używa to `hwndOwner` jako element nadrzędny dla okna dialogowego kreatora.  
   
--   Kontekst parametry przekazywane do interfejsu jako wariant dla parametru SAFEARRAY pokazany w segment kodu `[in] SAFEARRAY (VARIANT)* ContextParams`.  
+-   Kontekst parametry przekazywane do interfejsu jako wariant dla SAFEARRAY zgodnie z informacjami w segmencie kodu `[in] SAFEARRAY (VARIANT)* ContextParams`.  
   
-     Parametry kontekstu zawierać tablicę wartości, które są specyficzne dla rodzaju uruchomienie kreatora i bieżący stan projektu. IDE przekazuje parametrów kontekstu do kreatora. Aby uzyskać więcej informacji, zobacz [parametrów kontekstu](../../extensibility/internals/context-parameters.md).  
+     Parametry kontekstu zawierać tablicę wartości, które są specyficzne dla rodzaju uruchomieniu kreatora i bieżącego stanu projektu. IDE przekazuje parametrów kontekstu do kreatora. Aby uzyskać więcej informacji, zobacz [parametrów kontekstu](../../extensibility/internals/context-parameters.md).  
   
--   Niestandardowe parametry przekazywane do interfejsu jako wariant dla parametru SAFEARRAY pokazany w segment kodu `[in] SAFEARRAY (VARIANT)* CustomParams`.  
+-   Niestandardowe parametry przekazywane do interfejsu jako wariant dla SAFEARRAY zgodnie z informacjami w segmencie kodu `[in] SAFEARRAY (VARIANT)* CustomParams`.  
   
-     Parametry niestandardowe zawiera tablicę parametrów zdefiniowanych przez użytkownika. Plik .vsz przekazuje parametry niestandardowe do środowiska IDE. Wartości są określane przez `Param=` instrukcje. Aby uzyskać więcej informacji, zobacz [niestandardowe parametry](../../extensibility/internals/custom-parameters.md).  
+     Parametry niestandardowe zawierać tablicę parametrów zdefiniowanych przez użytkownika. Plik .vsz przekazuje parametry niestandardowe do środowiska IDE. Wartości są określane przez `Param=` instrukcji. Aby uzyskać więcej informacji, zobacz [parametry niestandardowe](../../extensibility/internals/custom-parameters.md).  
   
 -   Są zwracane wartości dla interfejsu  
   

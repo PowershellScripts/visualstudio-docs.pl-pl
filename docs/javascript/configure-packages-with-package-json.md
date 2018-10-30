@@ -13,14 +13,14 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 039d88fb3aac6c1f7f0880be8b0f08dcf71bff5a
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 711d7b65eb329e844fedb0148006cacb1c7a0ebf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126557"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219098"
 ---
-# <a name="packagejson-configuration"></a>Konfiguracja pliku Package.JSON
+# <a name="packagejson-configuration"></a>Konfiguracja pliku package.json
 
 Jeśli tworzysz aplikację platformy Node.js z dużą liczbą pakietów npm nie jest niczym niezwykłym wystąpiły ostrzeżenia i błędy podczas kompilowania projektu, jeśli co najmniej jeden pakiet został zaktualizowany. Czasami wyniki konflikt wersji lub wersji pakietu jest przestarzała. Oto kilka szybkich porad, aby pomóc w skonfigurowaniu Twojej [package.json](https://docs.npmjs.com/files/package.json) pliku i zrozumieć, co się dzieje po wyświetleniu ostrzeżenia lub błędy. Nie jest to kompletny przewodnik dotyczący *package.json* i koncentruje się tylko na przechowywanie wersji pakietów npm.
 
@@ -28,7 +28,7 @@ System przechowywania wersji pakietu npm ma ścisłych zasad. Format wersji nast
 
     [major].[minor].[patch]
 
-Załóżmy, że masz pakiet w swojej aplikacji za pomocą wersji 5.2.1. 5 jest wersja główna, 2 to wersja pomocnicza i 1 jest poprawka.
+Załóżmy, że masz pakiet w swojej aplikacji za pomocą wersji 5.2.1. Wersja główna wynosi 5, wersja pomocnicza jest 2 i poprawka jest 1.
 
 * W ramach aktualizacji wersji głównych pakiet zawiera nowe funkcje, które są wstecznie niezgodny, który istotne zmiany.
 * Aktualizacja wersji pomocniczej, nowe funkcje zostały dodane do pakietu, które są wstecznie zgodne ze starszymi wersjami pakietu.

@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 35e2c354293679d9cb6044b0c5f21b77aadb7f52
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926549"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220163"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Identyfikatory GUID i identyfikatory programu Visual Studio poleceń
 Identyfikator GUID i identyfikator wartości polecenia zawarte w programie Visual Studio zintegrowane środowisko programistyczne (IDE) są definiowane w .vsct — pliki, które są zainstalowane jako część programu Visual Studio SDK. Aby uzyskać więcej informacji, zobacz [polecenia definiowane w IDE, menu i grupy](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -57,7 +57,7 @@ Identyfikator GUID i identyfikator wartości polecenia zawarte w programie Visua
   
 -   Elementy menu, które obejmują podkreślony znak, takie jak **drukowania** polecenie **pliku** menu, w którym *P* jest podkreślony.  
   
-     Znaki, które są poprzedzone symbolem handlowego "i" (&) znaków w nazwach elementów menu są wyświetlane jako podkreślony. Jednak *vsct* pliki są zapisywane w formacie XML, który używa handlowe "i" (&) znaku, aby wskazać znaki specjalne i wymaga, że musi województw handlowe "i" mają być wyświetlane jako  *&amp;amp;*. Dlatego w *vsct* pliku **P**rukuj polecenia jest wyświetlany jako  *&amp;amp; Drukuj*.  
+     Znaki, które są poprzedzone symbolem handlowego "i" (&) znaków w nazwach elementów menu są wyświetlane jako podkreślony. Jednak *vsct* pliki są zapisywane w formacie XML, który używa handlowe "i" (&) znaku, aby wskazać znaki specjalne i wymaga, że musi województw handlowe "i" mają być wyświetlane jako  *&amp;amp;*. Dlatego w *vsct* pliku **drukowania** polecenia jest wyświetlany jako  *&amp;amp; Drukuj*.  
   
 -   Polecenia, które mają dynamiczne tekstu, takie jak **Zapisz** \<bieżącej, nazwa_pliku\>i dynamicznie wygenerowano elementy menu, takie jak elementy **ostatnio używane pliki** listy.  
   

@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2d4183a5bcfac62e9f6a1ad1509078bc6e534e68
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: c01af7a02dc8d6909b878b22dc3d40d0f3e0dfce
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174400"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220342"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
 Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlenie danych z formularza w aplikacji Windows, edytować dane i wysyłać zaktualizowane dane w bazie danych. Ten poradnik tworzy formularz, który wyświetla dane z dwóch pokrewnych tabel i pokazuje, jak edytować rekordy i zapisać zmiany w bazie danych. W tym przykładzie użyto `Customers` i `Orders` tabel z przykładowej bazy danych Northwind.
@@ -86,7 +86,7 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 
 1.  Na **danych** menu, wybierz opcję **Pokaż źródła danych**.
 
-2.  W **źródeł danych** wybierz**Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.
+2.  W **źródeł danych** wybierz **Dodaj nowe źródło danych** można uruchomić **Kreatora konfiguracji źródła danych**.
 
 3.  Na **wybierz typ źródła danych** ekranu, wybierz opcję **bazy danych**, a następnie wybierz pozycję **dalej**.
 
@@ -102,7 +102,7 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 
 6.  Na **Zapisz parametry połączenia do pliku konfiguracji aplikacji**, wybierz opcję **dalej**.
 
-7.  Na **wybierz obiekty bazy danych**ekranu, a następnie rozwiń **tabel** węzła.
+7.  Na **wybierz obiekty bazy danych** ekranu, a następnie rozwiń **tabel** węzła.
 
 8.  Wybierz **klientów** i **zamówienia** tabel, a następnie wybierz **Zakończ**.
 

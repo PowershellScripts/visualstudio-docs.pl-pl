@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0b2de4ce9c332b5a4f54ad41e6d3af500b49956
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9ea239fcdef2c9b2e5eccc82fd162e0b940bdf44
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843486"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219968"
 ---
 # <a name="properties-of-image-shapes"></a>Właściwości kształtów obrazu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Można użyć kształtów obrazu, aby określić, jak klasy domeny są wyświetl
   
 - .png  
   
-  Domyślnie pliki projektanta zasobów, takich jak pliki obrazów, znajdują się w **zasobów**folderu w **Dsl** projektu.  
+  Domyślnie pliki projektanta zasobów, takich jak pliki obrazów, znajdują się w **zasobów** folderu w **Dsl** projektu.  
   
   Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji o tym, jak korzystać z tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   

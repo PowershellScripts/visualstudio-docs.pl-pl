@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812936"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220420"
 ---
 # <a name="handle-a-concurrency-exception"></a>Obsługiwanie wyjątku współbieżności
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
   
 3.  W **szablony** okienku wybierz **aplikacji Windows**.  
   
-4.  Nadaj projektowi nazwę `ConcurrencyWalkthrough`, a następnie wybierz pozycję**OK**.  
+4.  Nadaj projektowi nazwę `ConcurrencyWalkthrough`, a następnie wybierz pozycję **OK**.  
   
      Program Visual Studio dodaje projekt do **Eksploratora rozwiązań** i wyświetla nowy formularz w projektancie.  
   
@@ -96,7 +96,7 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
   
 5.  Rozwiń **tabel** a następnie wybierz węzeł `Customers` tabeli. Domyślna nazwa zestawu danych powinny być `NorthwindDataSet`.  
   
-6.  Wybierz**Zakończ** można dodać zestaw danych do projektu.  
+6.  Wybierz **Zakończ** można dodać zestaw danych do projektu.  
   
 ## <a name="create-a-data-bound-datagridview-control"></a>Tworzenie formantu DataGridView powiązanych z danymi  
  W tej sekcji utworzysz <xref:System.Windows.Forms.DataGridView> , przeciągając **klientów** elementu z **źródeł danych** okna do formularza Windows.  
@@ -107,7 +107,7 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
   
 2.  W **źródeł danych** okna, rozwiń węzeł **NorthwindDataSet** węzeł, a następnie wybierz **klientów** tabeli.  
   
-3.  Wybierz strzałkę w dół w węźle tabeli, a następnie wybierz **DataGridView**na liście rozwijanej.  
+3.  Wybierz strzałkę w dół w węźle tabeli, a następnie wybierz **DataGridView** na liście rozwijanej.  
   
 4.  Przeciągnij tabelę na wolne miejsce formularza.  
   
@@ -118,7 +118,7 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
   
 #### <a name="to-test-the-form"></a>Aby przetestować formularz  
   
-1.  Wybierz**F5** do uruchamiania aplikacji  
+1.  Wybierz **F5** do uruchamiania aplikacji  
   
      Zostanie wyświetlony formularz z <xref:System.Windows.Forms.DataGridView> formant na nim, który jest wypełniony przy użyciu danych z `Customers` tabeli.  
   
@@ -192,7 +192,7 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
   
 #### <a name="to-test-the-form"></a>Aby przetestować formularz  
   
-1.  Wybierz**F5** do uruchomienia aplikacji.  
+1.  Wybierz **F5** do uruchomienia aplikacji.  
   
 2.  Gdy zostanie wyświetlony formularz, będzie działać, a następnie przełącz się do środowiska IDE programu Visual Studio.  
   
@@ -215,8 +215,8 @@ Wyjątki współbieżności (<xref:System.Data.DBConcurrencyException>) są wywo
   
      Błąd współbieżności, a pojawi się okno komunikatu.  
   
-10. Wybieranie**nie** anuluje aktualizacji i aktualizuje zestaw danych o wartości, które są obecnie dostępne w bazie danych. Wybieranie**tak** zapisuje proponowana wartość w bazie danych.  
+10. Wybieranie **nie** anuluje aktualizacji i aktualizuje zestaw danych o wartości, które są obecnie dostępne w bazie danych. Wybieranie **tak** zapisuje proponowana wartość w bazie danych.
   
-## <a name="see-also"></a>Zobacz też  
- [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>Zobacz też
 
+- [Zapisywanie danych z powrotem w bazie danych](../data-tools/save-data-back-to-the-database.md)

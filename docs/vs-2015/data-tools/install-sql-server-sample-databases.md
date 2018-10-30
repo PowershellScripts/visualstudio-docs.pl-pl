@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b681a5ee965ac32120f72ac2e0064a72ce7fa76
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f6cd9260f29d8e46f66e54fec8cb24ae6857eb05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213265"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217866"
 ---
 # <a name="install-sql-server-sample-databases"></a>Instalowanie programu SQL Server przykładowych baz danych
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Przykładowe bazy danych są przydatne do eksperymentowania z zapytań SQL i LIN
   
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Aby przywrócić bazę danych z pliku bak, w programie Visual Studio  
   
-1.  Podczas wykonywania kopii zapasowej bazy danych programu Microsoft SQL Server, wynik jest plik bak. Aby .bak plików można używać ponownie jako plik bazy danych, musi być *przywrócić*. W menu głównym wybierz**widoku** > **Eksplorator obiektów SQL Server**. Jeśli nie widzisz, konieczne może go zainstalować. Przejdź do **Panelu sterowania** > **programy i funkcje**, Znajdź program Microsoft Visual Studio 2015 i kliknij przycisk **zmiany** przycisku. Gdy w oknie Instalatora zostanie wyświetlona lista zainstalowanych składników, wybierz pozycję **Eksplorator obiektów SQL Server**pole wyboru, a następnie kontynuuj instalację.  
+1.  Podczas wykonywania kopii zapasowej bazy danych programu Microsoft SQL Server, wynik jest plik bak. Aby .bak plików można używać ponownie jako plik bazy danych, musi być *przywrócić*. W menu głównym wybierz **widoku** > **Eksplorator obiektów SQL Server**. Jeśli nie widzisz, konieczne może go zainstalować. Przejdź do **Panelu sterowania** > **programy i funkcje**, Znajdź program Microsoft Visual Studio 2015 i kliknij przycisk **zmiany** przycisku. Gdy w oknie Instalatora zostanie wyświetlona lista zainstalowanych składników, wybierz pozycję **Eksplorator obiektów SQL Server** pole wyboru, a następnie kontynuuj instalację.  
   
 2.  W Eksploratorze obiektów programu SQL Server, kliknij prawym przyciskiem myszy dowolnego aparatu bazy danych programu SQL Server (na przykład localdb), a następnie wybierz pozycję**nowe zapytanie**.  
   

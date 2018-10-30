@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ce10e56d197b720922356b72ab7245036c4f7d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865365"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219916"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>Diagnozowanie problemów po wdrożeniu za pomocą funkcji IntelliTrace
 
@@ -44,7 +44,7 @@ Aby zdiagnozować problemy w aplikacji internetowej ASP.NET po wdrożeniu przy u
 
 Program Visual Studio 2017 nie obejmuje *BuildInfo.config* pliku, która została zastąpiona, a następnie usuwane. Aby debugować aplikacje sieci web ASP.NET po wdrożeniu, należy użyć jednej z następujących metod:
 
-* W przypadku wdrożenia na platformie Azure, użyj [usługi Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/).
+* W przypadku wdrożenia na platformie Azure, użyj [usługi Application Insights](https://docs.microsoft.com/azure/application-insights/).
 
 * Jeśli musisz używać IntelliTrace, otwórz projekt w programie Visual Studio i ładowanie plików symboli z pasujących kompilacji. Możesz załadować pliki symboli z **modułów** okna lub przez skonfigurowanie symboli w **narzędzia** > **opcje** > **debugowania**   >  **Symbole**.
 

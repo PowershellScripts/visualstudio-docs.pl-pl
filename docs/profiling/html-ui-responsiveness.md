@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c89a437938a042ead343ee5c1386ea11d637663d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834538"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220150"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analizowanie czasu odpowiedzi interfejsu użytkownika HTML Universal Windows Apps
 W tym temacie opisano, jak można wyizolować problemy z wydajnością w aplikacjach przy użyciu Profiler czasu odpowiedzi interfejsu użytkownika, narzędzie wydajność, dostępne dla uniwersalnych aplikacji dla Windows.  
@@ -42,7 +42,7 @@ W tym temacie opisano, jak można wyizolować problemy z wydajnością w aplikac
   
 2.  Na **debugowania** menu, wybierz **Profiler wydajności**.  
   
-     Jeśli chcesz zmienić cel analizy programu Profiler, wybierz opcję**zmienić docelowy**.  
+     Jeśli chcesz zmienić cel analizy programu Profiler, wybierz opcję **zmienić docelowy**.  
   
      ![Zmień cel analizy](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   

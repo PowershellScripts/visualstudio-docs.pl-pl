@@ -14,14 +14,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e492996a194c6602af3ec412b86f7477ef233e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d69db4619aaa3b0f2dde4ab5daac0bd31e958975
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928714"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220111"
 ---
 # <a name="properties-of-image-shapes"></a>Właściwości kształtów obrazu
+
 Można użyć kształtów obrazu, aby określić, jak klasy domeny są wyświetlane w wygenerowanym projektancie. Zdefiniuj kształt obrazu, ustawiając `Image` właściwość klasy do pliku obrazu wstępnie zdefiniowane. Obsługiwane są następujące formaty:
 
 - .gif
@@ -38,11 +39,11 @@ Można użyć kształtów obrazu, aby określić, jak klasy domeny są wyświetl
 
 - .png
 
-  Domyślnie pliki projektanta zasobów, takich jak pliki obrazów, znajdują się w **zasobów**folderu w **Dsl** projektu.
+Domyślnie pliki projektanta zasobów, takich jak pliki obrazów, znajdują się w **zasobów** folderu w **Dsl** projektu.
 
-  Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji o tym, jak korzystać z tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Aby uzyskać więcej informacji, zobacz [sposób definiowania języka specyficznego dla domeny](../modeling/how-to-define-a-domain-specific-language.md). Aby uzyskać więcej informacji o tym, jak korzystać z tych właściwości, zobacz [dostosowywanie i rozszerzanie języka specyficznego dla domeny](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-  Kształty obrazu mają właściwości, które są wymienione w poniższej tabeli.
+Kształty obrazu mają właściwości, które są wymienione w poniższej tabeli.
 
 |Właściwość|Opis|Domyślny|
 |-|-|-|

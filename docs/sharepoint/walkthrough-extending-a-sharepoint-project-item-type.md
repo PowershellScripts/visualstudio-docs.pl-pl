@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e1210d95a73038ea21c0455e944eb46b1791b426
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 683d0e75ca5e925ccd7bf56ceffb0e28da844cc5
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844519"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220329"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Przewodnik: Rozszerzanie typu elementu projektu SharePoint
   Możesz użyć **Model usługi łączności danych biznesowych** elementu projektu, aby utworzyć model usługi łączności danych biznesowych (BDC) w programie SharePoint. Domyślnie podczas tworzenia modelu przy użyciu tego elementu projektu danych w modelu jest niewidoczne dla użytkowników. Należy także utworzyć listy zewnętrznej w SharePoint, aby umożliwić użytkownikom wyświetlanie danych.  
@@ -220,7 +220,7 @@ ms.locfileid: "49844519"
   
 5.  W **nazwa** wprowadź **SharePointProjectTestBDC**, a następnie wybierz **OK** przycisku.  
   
-6.  W Kreatorze dostosowywania programu SharePoint, wprowadź adres URL witryny, której chcesz używać do debugowania, wybierz **Wdróż jako rozwiązanie farmy**, a następnie wybierz **Zakończ**przycisku.  
+6.  W Kreatorze dostosowywania programu SharePoint, wprowadź adres URL witryny, której chcesz używać do debugowania, wybierz **Wdróż jako rozwiązanie farmy**, a następnie wybierz **Zakończ** przycisku.  
   
 7.  Otwórz menu skrótów dla projektu SharePointProjectTestBDC, wybierz polecenie **Dodaj**, a następnie wybierz **nowy element**.  
   

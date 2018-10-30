@@ -9,12 +9,12 @@ description: Dowiedz się więcej na temat subskrypcji usługi Power BI Pro, do�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 739598d8783a6ba0eb7930b5efff6c018eed942a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894563"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219539"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Usługa Power BI Pro w ramach subskrypcji programu Visual Studio
 
@@ -80,7 +80,7 @@ Aby korzystać z usługi Power BI Pro, należy skonfigurować konto lub zaloguj 
 | Visual Studio Dev Essentials | NAZWA  | Niedostępne |NAZWA|
 | Program Visual Studio Enterprise (miesięcznych w chmurze) | Azure                                       | Niedostępne                                  |NAZWA|
 
-<sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi, Microsoft zwracającej Professional (MVP), dyrektor Region (usług pulpitu zdalnego).    Z wyłączeniem: Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, Imagine.*
+<sup>1</sup>*obejmuje: nie for Resale (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & usług dla deweloperów, MCT Software & usługi, Microsoft zwracającej Professional (MVP), dyrektor Region (usług pulpitu zdalnego).  Z wyłączeniem: Microsoft Partner Network (MPN), ekwiwalentu pełnego wymiaru czasu, Imagine.*
 
 
 Nie masz pewności której subskrypcji używasz?  Połączyć się z [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) Aby wyświetlić wszystkie subskrypcje, które są przypisane do Twojego adresu e-mail. Jeśli nie widzisz wszystkie swoje subskrypcje, mogą mieć co najmniej jeden przypisany do innego adresu e-mail.  Musisz zalogować się przy użyciu tego adresu e-mail, aby wyświetlić te subskrypcje.
@@ -92,9 +92,24 @@ Odp.: korzyścią jest bezpłatna, ale aktywacji używa tego samego systemu, kt�
 - Karta kredytowa.  Jeśli podasz numer karty kredytowej, Twoja karta nie zostanie obciążona. 
 - Faktury.  Jeśli wybierzesz opcję "Pomocą faktury" jako typ płatności, nie trzeba podać numer karty kredytowej.  Można również ustawić interwał "corocznie".  Dzięki temu, otrzymasz jedną wiadomość e-mail informacją o tym, że faktury jest gotowa.  Kwota faktury będzie wynosić 0,00 USD.  
 
-### <a name="q--can-the-power-bi-pro-benefit-included-in-my-subscription-be-used-in-a-production-environment"></a>P: czy można w środowisku produkcyjnym usługi Power BI Pro korzyści uwzględnione w mojej subskrypcji?
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>Pytanie: czy usługa Power BI Pro korzyści zawarte w moich licencji subskrypcji do użytku w środowisku produkcyjnym?
 Odp. tak.  
 
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>Pyt.: podczas próby aktywowania usługi Power BI Pro, otrzymuję komunikat "Masz już konto, za pośrednictwem pracy".  Można nadal korzystać z korzyści?
+Odp. tak.  Komunikat wskazuje, że użytkownik jest zalogowany do domeny, która ma już aktywnych dzierżaw usługi Office 365, na których nie jesteś administratorem.  Aby dodać usługę Power BI Pro do dzierżawy, musi być administratorem tej dzierżawy.  Aby rozwiązać ten problem, wykonaj następujące kroki, aby utworzyć własną dzierżawę.
+1.  Gdy pojawi się komunikat, czy masz już konto, za pośrednictwem pracy, kliknij przycisk **Utwórz nowe konto**.
+
+2.  Na następnym ekranie, podaj swoje informacje kontaktowe, a następnie kliknij przycisk **dalej**.
+
+3.  Utwórz swoją nazwę użytkownika i hasło.  Aby skorzystać z bezpłatnej oferty, upewnij się, możesz wybrać **. onmicrosoft.com** jako domena. Kliknij przycisk **Utwórz moje konto**.
+    > [!div class="mx-imgBorder"]
+    > ![Usługa Power BI Pro korzyści tworzenia dzierżawy prywatny identyfikator użytkownika](_img/vs-pbi/vs-pbi-work-userid.png)
+    
+4.  Pozostałe kroki w procesie są identyczne z tymi wymienionymi w treści artykułu, zaczynając od kroku 6.
+
+
+### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>P: jestem w domenie dla instytucji rządowych.  Czy można używać korzyści? 
+Odpowiedź: nie.  Nie można dodać korzyści z usługi Power BI Pro dla dzierżaw w domenie dla instytucji rządowych. 
 
 ## <a name="support-resources"></a>Zasoby pomocy technicznej
 -  Potrzebujesz pomocy przy użyciu usługi Power BI Pro?
@@ -103,3 +118,6 @@ Odp. tak.
     - Poznaj najważniejsze problemy, Uzyskaj pomoc od społeczności lub Wyślij bilet pomocy technicznej na [stronę pomocy technicznej](https://powerbi.microsoft.com/support/).
 -  Aby uzyskać pomoc dotyczącą sprzedaży, subskrypcji, kont i rozliczeń dla subskrypcji programu Visual Studio, skontaktuj się z pomocą programu Visual Studio [pomoc techniczna dla subskrypcji](https://visualstudio.microsoft.com/subscriptions/support/).
 -  Masz pytanie dotyczące programu Visual Studio IDE, usługom DevOps platformy Azure lub innych produktów Visual Studio lub usług?  Odwiedź stronę [pomoc techniczna dla programu Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Następne kroki
+Aby aktywować swoje korzyści z usługi Power BI Pro, odwiedź stronę [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)

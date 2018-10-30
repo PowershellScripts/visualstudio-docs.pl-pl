@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56e14d66275bd961829fc09e06f7d5e99dbcc2c4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823505"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218902"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Tworzenie sparametryzowanych zapytań adaptera TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,10 +67,10 @@ Uruchamianie zapytania parametrycznego zwraca dane spełniające warunki klauzul
   
 1. Otwórz formularz w **Windows Forms Designer**.  
   
-2. Na **danych** menu, wybierz opcję**Dodaj zapytanie**lub**tagów inteligentnych danych**.  
+2. Na **danych** menu, wybierz opcję **Dodaj zapytanie** lub **tagów inteligentnych danych**.  
   
    > [!NOTE]
-   >  Jeśli **Dodaj zapytanie** nie jest dostępny na **danych** menu, wybierz formant w formularzu, wyświetla źródła danych, możesz chcesz dodać parametry do. Na przykład, jeśli w formularzu są wyświetlane dane w <xref:System.Windows.Forms.DataGridView> sterowania, wybierz ją. Jeśli w formularzu wyświetlane dane w poszczególnych formantów, wybierz dowolny formant powiązany z danymi.  
+   > Jeśli **Dodaj zapytanie** nie jest dostępny na **danych** menu, wybierz formant w formularzu, wyświetla źródła danych, możesz chcesz dodać parametry do. Na przykład, jeśli w formularzu są wyświetlane dane w <xref:System.Windows.Forms.DataGridView> sterowania, wybierz ją. Jeśli w formularzu wyświetlane dane w poszczególnych formantów, wybierz dowolny formant powiązany z danymi.  
   
 3. W **tabeli źródła danych wybierz** obszaru, wybierz tablethat, którą chcesz dodać parametryzacji do.  
   
@@ -82,7 +82,7 @@ Uruchamianie zapytania parametrycznego zwraca dane spełniające warunki klauzul
   
 5. W **tekst zapytania** wpisz kwerendę, która przyjmuje parametry.  
   
-6. Wybierz**OK**.  
+6. Wybierz **OK**.  
   
     Co formantu, aby parametr wejściowy, a co **obciążenia** przycisk są dodawane do formularza w <xref:System.Windows.Forms.ToolStrip> kontroli.  
   
@@ -105,7 +105,7 @@ Uruchamianie zapytania parametrycznego zwraca dane spełniające warunki klauzul
   
 1.  W **Projektanta obiektów Dataset**, wybierz zapytanie TableAdapter, które wymaga, aby zaakceptować wartości parametru o wartości null.  
   
-2.  W **właściwości** wybierz**parametry**. Naciśnij przycisk wielokropka (**...** ) przycisk, aby otworzyć **Edytor kolekcji parametrów**.  
+2.  W **właściwości** wybierz **parametry**. Naciśnij przycisk wielokropka (**...** ) przycisk, aby otworzyć **Edytor kolekcji parametrów**.  
   
 3.  Wybierz parametr, który dopuszcza wartości null i ustaw **AllowDbNull** właściwość `true`.  
   

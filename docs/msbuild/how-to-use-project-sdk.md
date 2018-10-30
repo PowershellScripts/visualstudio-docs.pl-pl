@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f76c88cafd1ce0e448d32faa902f1cebcf3430f8
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: abc61f0e07ed1e22d0ec3b2c8fb15d66c9eea3cd
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151018"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220452"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Porady: projektu programu MSBuild z użycia zestawów SDK
 
@@ -101,7 +101,7 @@ Podczas obliczania importu [!INCLUDE[vstecmsbuild](../extensibility/internals/in
    Ten mechanizm rozpoznawania lokalizuje zestawy SDK projektu, takich jak `Microsoft.NET.Sdk` i `Microsoft.NET.Sdk.Web` będące częścią produktu.
 3. Mechanizm rozpoznawania do domyślnego, który jest rozpoznawany jako zestawy SDK, które zostały zainstalowane za pomocą narzędzia MSBuild.
 
-Program rozpoznawania nazw oparty na pakietach NuGet zestawu SDK obsługuje określanie wersji w Twojej [global.json](https://docs.microsoft.com/en-us/dotnet/core/tools/global-json) pozwala kontrolować wersję zestawu SDK projektu w jednym miejscu, a nie w każdego indywidualnego projektu:
+Program rozpoznawania nazw oparty na pakietach NuGet zestawu SDK obsługuje określanie wersji w Twojej [global.json](https://docs.microsoft.com/dotnet/core/tools/global-json) pozwala kontrolować wersję zestawu SDK projektu w jednym miejscu, a nie w każdego indywidualnego projektu:
 
 ```json
 {

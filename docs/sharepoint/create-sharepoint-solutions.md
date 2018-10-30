@@ -1,4 +1,4 @@
----
+﻿---
 title: Tworzenie rozwiązań programu SharePoint | Dokumentacja firmy Microsoft
 ms.custom: ''
 ms.date: 02/02/2017

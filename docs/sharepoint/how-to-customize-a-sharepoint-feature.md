@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Porady: dostosowywanie funkcji SharePoint | Dokumentacja firmy Microsoft'
 ms.custom: ''
 ms.date: 02/02/2017
@@ -88,7 +88,7 @@ ms.locfileid: "37120300"
 ## <a name="enable-the-feature-designer"></a>Włączanie Projektanta funkcji  
  Można ponownie włączyć Projektanta funkcji, aby dostosować plik *feature.xml*.  
   
-#### <a name="to-re-enable-the-designer"></a>Aby ponownie włączyć projektanta  
+#### <a name="to-re-enable-the-designer"></a>Aby ponownie włączyć Projektanta  
   
 1.  W **Projektancie funkcji** wybierz link **Odrzuć zmiany manifestu i ponownie włącz projektanta**, a następnie wybierz przycisk **Tak**.  
   

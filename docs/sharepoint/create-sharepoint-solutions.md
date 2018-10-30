@@ -25,12 +25,12 @@ ms.lasthandoff: 08/02/2018
 ms.locfileid: "39468647"
 ---
 # <a name="create-sharepoint-solutions"></a>Tworzenie rozwiązań SharePoint
-  Można tworzyć aplikacje SharePoint w programie Visual Studio jako alternatywę do tworzenia ich w programie SharePoint Designer. Visual Studio promuje szybki rozwój programu SharePoint, udostępniając takie funkcje jak zaawansowane narzędzia do debugowania, IntelliSense, dokańczanie instrukcji i szablony projektów. Program Visual Studio również korzysta z zaawansowanych narzędzi opartych na programie .NET Framework i języków. Można rozwijać projekty programu SharePoint przy użyciu języka Visual Basic lub Visual C# i można opracować aplikację dla projektów programu SharePoint przy użyciu języka JavaScript.  
+  Można tworzyć aplikacje SharePoint w programie Visual Studio jako alternatywę do tworzenia ich w programie SharePoint Designer. Visual Studio promuje szybki rozwój programu SharePoint, udostępniając takie funkcje jak zaawansowane narzędzia do debugowania, IntelliSense, dokańczanie instrukcji i szablony projektów. Program Visual Studio również korzysta z zaawansowanych języków i narzędzi opartych na programie .NET Framework. Można rozwijać projekty programu SharePoint przy użyciu języka Visual Basic lub Visual C# i można opracować aplikację dla projektów programu SharePoint przy użyciu języka JavaScript.  
   
- Aby uzyskać informacji na temat programu SharePoint 2013 i dodatków programu SharePoint, zobacz [programu SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) i [tworzenie aplikacji dla programu SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
+ Aby uzyskać informacje na temat programu SharePoint 2013 i dodatków programu SharePoint, zobacz [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) i [Tworzenie aplikacji dla programu SharePoint](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx).  
   
 > [!NOTE]  
->  Dowiedz się, jak korzystać z nowych [model dodatku programu SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx) rozszerzenie obsługi programu SharePoint dla użytkowników. Dodatki te mają udzielaniu bardzo mały w porównaniu do rozwiązań programu SharePoint, a następnie utworzyć je przy użyciu niemal dowolnej technologii, takich jak HTML5, JavaScript, CSS3 i XML programowanie dla sieci web.  
+>  Dowiedz się, jak korzystać z nowego [modelu dodatków programu SharePoint](https://msdn.microsoft.com/library/office/fp179930.aspx), aby wzbogacić doświadczenia użytkowników z obsługą programu SharePoint. Dodatki te mają bardzo mały wpływ na zużycie zasobów w porównaniu z rozwiązaniami programu SharePoint i można tworzyć je przy użyciu niemal dowolnych technologii programowania dla sieci web, takich jak HTML5, JavaScript, CSS3 i XML.  
   
 |||  
 |-|-|  

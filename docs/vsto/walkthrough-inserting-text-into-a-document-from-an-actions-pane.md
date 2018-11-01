@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c858cfbd2fb48aa850e395d74d7f03386ec8bc2f
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862193"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671862"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Wskazówki: Wstawianie tekstu do dokumentu z okienka akcji
   W tym przewodniku pokazano, jak utworzyć okienka akcji w dokumencie programu Microsoft Office Word. W okienku Akcje zawiera dwie kontrolki, które gromadzenia danych wejściowych, a następnie wyślij tekstu do dokumentu.  
@@ -178,14 +178,14 @@ ms.locfileid: "49862193"
 ## <a name="next-steps"></a>Następne kroki  
  Poniżej przedstawiono niektóre zadania, które mogą pochodzić dalej:  
   
--   Tworzenie okienek akcji w programie Excel. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie okienek akcji do skoroszytów programu Excel](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872).  
+-   Tworzenie okienek akcji w programie Excel. Aby uzyskać więcej informacji, zobacz [porady: Dodawanie okienek akcji do skoroszytów programu Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100)).  
   
 -   Wiązanie danych z kontrolkami w okienku Akcje. Aby uzyskać więcej informacji, zobacz [wskazówki: powiązywanie danych z kontrolkami w okienku akcji programu Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
 ## <a name="see-also"></a>Zobacz także  
  [Okienko akcji ― omówienie](../vsto/actions-pane-overview.md)   
  [Porady: Dodawanie okienek akcji do dokumentów programu Word i skoroszytów programu Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Porady: Dodawanie okienek akcji do skoroszytów programu Excel](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872)   
+ [Porady: Dodawanie okienek akcji do skoroszytów programu Excel](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
  [Porady: Zarządzanie układem formantu w okienkach akcji](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [BOOKMARK, kontrolka](../vsto/bookmark-control.md)  
   

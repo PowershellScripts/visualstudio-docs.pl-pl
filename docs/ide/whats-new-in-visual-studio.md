@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 5bf6de28ff98bf7a05098cabefb86b8cd5169d27
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029111"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673035"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s Nowość w programie Visual Studio 2017
 
@@ -212,7 +212,7 @@ Nowy Pomocnik wyjątków pomaga przeglądać swoje wyjątek informacji w skróci
 
 ![Okno dialogowe nowego pomocnika wyjątków w programie Visual Studio](../ide/media/vs2017ide-ExceptionHelper.png)
 
-Aby uzyskać więcej informacji, zobacz [Użyj nowego pomocnika wyjątków w programie Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) wpis w blogu.
+Aby uzyskać więcej informacji, zobacz [Użyj nowego pomocnika wyjątków w programie Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) wpis w blogu.
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Migawki i IntelliTrace krok do tyłu
 
@@ -264,7 +264,7 @@ Uniwersalnej platformy Windows (UWP) to platforma aplikacji dla systemu Windows 
 
 Wybierz język programowania preferowanych&mdash;w językach C#, Visual Basic, C++ lub JavaScript&mdash;umożliwiające utworzenie aplikacji Universal Windows Platform dla urządzeń z systemem Windows 10. Program Visual Studio 2017 zawiera szablon aplikacji platformy uniwersalnej systemu Windows dla każdego z języków, która umożliwia utworzenie jednego projektu dla wszystkich urządzeń. Po zakończeniu pracy możesz produkcji pakietu aplikacji i przesłać go do Microsoft Store z poziomu programu Visual Studio do swojej aplikacji dla klientów na dowolnym urządzeniu z systemem Windows 10.
 
-**Nowość w wersji 15.5**: Visual Studio 2017 w wersji 15.5 zapewnia najlepszą obsługę Windows 10 Fall Creators Update SDK (10.0.16299.0). Windows 10 Fall Creators Update zapewnia również wiele usprawnień dla deweloperów platformy uniwersalnej systemu Windows. Poniżej przedstawiono niektóre z największych zmian: 
+**Nowość w wersji 15.5**: Visual Studio 2017 w wersji 15.5 zapewnia najlepszą obsługę Windows 10 Fall Creators Update SDK (10.0.16299.0). Windows 10 Fall Creators Update zapewnia również wiele usprawnień dla deweloperów platformy uniwersalnej systemu Windows. Poniżej przedstawiono niektóre z największych zmian: 
 
 * **Obsługa .NET Standard 2.0**<br/>Oprócz wdrażania usprawnione aplikacji systemu Windows 10 Fall Creators Update jest pierwsza wersja systemu Windows 10, aby zapewnić obsługę .NET Standard 2.0. W rezultacie [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) jest referencyjnej implementacji Biblioteka klasy podstawowej, który może implementować dowolną platformę .NET. Celem .NET Standard jest zapewnienie bardzo proste, jak to możliwe, dla deweloperów platformy .NET, które umożliwiają współużytkowanie kodu dla dowolnej platformy .NET, które postanowili pracować nad.
 * **Najlepsze cechy zarówno platformy uniwersalnej systemu Windows, jak i Win32**<br/>Firma Microsoft ulepszyła platformy Windows 10 za pomocą [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) Aby ulepszyć systemu Windows 10 dla wszystkich deweloperów platformy .NET, czy ich bieżący fokus jest ustawiony na platformy UWP, WPF, Windows Forms lub Xamarin. Z nowym typem projektu pakietu aplikacji w programie Visual Studio 2017 w wersji 15.5 można tworzyć pakiety aplikacji Windows dla Twoich projektów WPF i formularze Windows, tak samo jak w przypadku projektów platformy uniwersalnej systemu Windows. Po spakowaniu aplikacji korzyści wdrożenia aplikacji systemu Windows 10 i mieć możliwość dystrybucji za pośrednictwem Microsoft Store (w przypadku aplikacji konsumenta) lub Microsoft Store dla firm i instytucji edukacyjnych. Ponieważ spakowane aplikacje mają dostęp do pełnego powierzchni interfejsu API platformy uniwersalnej systemu Windows oraz interfejsów API systemu Win32 na pulpicie, można teraz modernizowanie aplikacji WPF i formularze Windows stopniowo dzięki funkcjom interfejsów API platformy uniwersalnej systemu Windows i Windows 10. Ponadto możesz dołączyć składniki systemu Win32 w aplikacjach platformy uniwersalnej systemu Windows, które dostarczone na pulpicie ze wszystkimi funkcjami systemu Win32.

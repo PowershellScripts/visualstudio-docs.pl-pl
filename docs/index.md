@@ -4,12 +4,12 @@ hide_bc: true
 title: Dokumentacja programu Visual Studio | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak używać programu Visual Studio 2017 do tworzenia aplikacji, usług i narzędzi w języku wybranym dla platform i urządzeń.
 ms.topic: hub-page
-ms.openlocfilehash: b16114bd175be4c8e13c0418494c730ed58b9d12
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d458683758916e78d3773b2700fb9ab2ae3acd39
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672876"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750722"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -308,7 +308,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Debugowanie</h3>
-                                                    <p>Badanie i rozwiązywanie problemów z kodem.</p>
+                                                    <p>Zbadaj i naprawiania błędów w kodzie.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -402,7 +402,7 @@ Aplikacja sieci Web za pomocą programu ASP.NET Core</a>
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Poprawianie wydajności</h3>
+                                                    <h3>Miara wydajności</h3>
                                                     <p>Zidentyfikuj wąskie gardła i zoptymalizować wydajność kodu za pomocą narzędzi diagnostycznych.
                                                     </p>
                                                 </div>

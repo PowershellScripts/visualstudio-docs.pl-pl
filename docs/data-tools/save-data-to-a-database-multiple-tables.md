@@ -18,22 +18,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c01af7a02dc8d6909b878b22dc3d40d0f3e0dfce
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 9fd3051aae78f6f0440c637137ea5a04f726df8c
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220342"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750837"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Zapisywanie danych w bazie danych (wiele tabel)
+
 Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlenie danych z formularza w aplikacji Windows, edytować dane i wysyłać zaktualizowane dane w bazie danych. Ten poradnik tworzy formularz, który wyświetla dane z dwóch pokrewnych tabel i pokazuje, jak edytować rekordy i zapisać zmiany w bazie danych. W tym przykładzie użyto `Customers` i `Orders` tabel z przykładowej bazy danych Northwind.
 
- Dane można zapisać w aplikacji w bazie danych, wywołując `Update` metody TableAdapter. Podczas przeciągania tabel z **źródeł danych** okna na formularzu, kod, który jest wymagany w celu zapisywania danych jest automatycznie dodawany. Dodatkowe tabele, które są dodawane do formularza wymaga ręcznego dodawania tego kodu. W tym instruktażu pokazano, jak dodać kod, aby zapisać aktualizacje z więcej niż jedną tabelą.
+Dane można zapisać w aplikacji w bazie danych, wywołując `Update` metody TableAdapter. Podczas przeciągania tabel z **źródeł danych** okna na formularzu, kod, który jest wymagany w celu zapisywania danych jest automatycznie dodawany. Dodatkowe tabele, które są dodawane do formularza wymaga ręcznego dodawania tego kodu. W tym instruktażu pokazano, jak dodać kod, aby zapisać aktualizacje z więcej niż jedną tabelą.
 
 > [!NOTE]
->  Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji, którego używasz. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Polecenia menu i okien dialogowych mogą różnić się od tych opisanych w pomocy, w zależności od ustawień aktywnych lub wersji, którego używasz. Aby zmienić swoje ustawienia, wybierz opcję **Import i eksport ustawień** na **narzędzia** menu. Aby uzyskać więcej informacji, zobacz [personalizowanie środowiska IDE programu Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
- Zadania zilustrowane w tym przewodniku obejmują:
+Zadania zilustrowane w tym przewodniku obejmują:
 
 -   Tworzenie nowego **aplikacja interfejsu Windows Forms** projektu.
 
@@ -48,6 +49,7 @@ Jedną z najbardziej typowych scenariuszy w tworzeniu aplikacji jest wyświetlen
 -   Modyfikowanie kodu wysyłać zaktualizowane dane w zestawie danych w bazie danych.
 
 ## <a name="prerequisites"></a>Wymagania wstępne
+
 Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Northwind.
 
 1.  Jeśli nie masz programu SQL Server Express LocalDB, zainstaluj go z [stronę pobierania programu SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), lub za pomocą **Instalatora programu Visual Studio**. W **Instalatora programu Visual Studio**, można zainstalować programu SQL Server Express LocalDB, jako część **przechowywanie i przetwarzanie danych** obciążenie, lub jako poszczególnych składników.
@@ -65,9 +67,8 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
        Po pewnym czasie odliczania zapytania i utworzeniu bazy danych Northwind.
 
 ## <a name="create-the-windows-forms-application"></a>Tworzenie aplikacji Windows Forms
- Pierwszym krokiem jest utworzenie **aplikacja interfejsu Windows Forms**. Przypisanie nazwy do projektu jest opcjonalny w tym kroku, ale firma Microsoft będzie nadaj mu nazwę ponieważ projektu zostaną zapisane później.
 
-#### <a name="to-create-the-new-windows-forms-application-project"></a>Aby utworzyć nowy projekt aplikacji Windows forms
+Pierwszym krokiem jest utworzenie **aplikacja interfejsu Windows Forms**. Przypisanie nazwy do projektu jest opcjonalny w tym kroku, ale firma Microsoft będzie nadaj mu nazwę ponieważ projektu zostaną zapisane później.
 
 1. W programie Visual Studio na **pliku** menu, wybierz opcję **New** > **projektu**.
 
@@ -80,9 +81,8 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
      **UpdateMultipleTablesWalkthrough** projekt zostanie utworzony i dodany do **Eksploratora rozwiązań**.
 
 ## <a name="create-the-data-source"></a>Utwórz źródło danych
- Spowoduje to utworzenie źródła danych z bazy danych Northwind przy użyciu **Kreatora konfiguracji źródła danych**. Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje dotyczące konfigurowania przykładowej bazy danych Northwind, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/installing-database-systems-tools-and-samples.md).
 
-#### <a name="to-create-the-data-source"></a>Aby utworzyć źródło danych
+Spowoduje to utworzenie źródła danych z bazy danych Northwind przy użyciu **Kreatora konfiguracji źródła danych**. Musi mieć dostęp do przykładowej bazy danych Northwind do utworzenia połączenia. Aby uzyskać informacje dotyczące konfigurowania przykładowej bazy danych Northwind, zobacz [porady: Instalowanie przykładowych baz danych](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1.  Na **danych** menu, wybierz opcję **Pokaż źródła danych**.
 
@@ -109,18 +109,18 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
      **NorthwindDataSet** zostanie dodany do projektu, a tabele są wyświetlane w **źródeł danych** okna.
 
 ## <a name="set-the-controls-to-be-created"></a>Ustawienie kontroli ma zostać utworzony
- W tym przewodniku dane w `Customers` tabela znajduje się w **szczegóły** układu, w którym dane są wyświetlane w poszczególnych formantów. Dane z `Orders` tabela znajduje się w **siatki** układ, który jest wyświetlany w <xref:System.Windows.Forms.DataGridView> kontroli.
 
-#### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Aby ustawić upuszczany typ elementów w oknie źródeł danych
+W tym przewodniku dane w `Customers` tabela znajduje się w **szczegóły** układu, w którym dane są wyświetlane w poszczególnych formantów. Dane z `Orders` tabela znajduje się w **siatki** układ, który jest wyświetlany w <xref:System.Windows.Forms.DataGridView> kontroli.
+
+### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Aby ustawić upuszczany typ elementów w oknie źródeł danych
 
 1.  W **źródeł danych** okna, rozwiń węzeł **klientów** węzła.
 
 2.  Na **klientów** węzeł **szczegóły** z listy kontroli, aby zmienić kontrolę nad **klientów** tabeli do poszczególnych formantów. Aby uzyskać więcej informacji, zobacz [Ustawianie formantu do utworzenia podczas przeciągania z okna źródeł danych](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 ## <a name="create-the-data-bound-form"></a>Tworzenie formularza powiązanych z danymi
- Można utworzyć formanty powiązane z danymi przez przeciąganie elementów z **źródeł danych** okna do formularza.
 
-#### <a name="to-create-data-bound-controls-on-the-form"></a>Aby utworzyć formanty powiązane z danymi formularza
+Można utworzyć formanty powiązane z danymi przez przeciąganie elementów z **źródeł danych** okna do formularza.
 
 1.  Przeciągnij główny **klientów** węzła z **źródeł danych** okna na **Form1**.
 
@@ -129,17 +129,18 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 2.  Przeciągnij powiązane **zamówienia** węzła z **źródeł danych** okna na **Form1**.
 
     > [!NOTE]
-    >  Powiązane **zamówienia** węzeł znajduje się poniżej **faks** kolumny, a jest elementem podrzędnym **klientów** węzła.
+    > Powiązane **zamówienia** węzeł znajduje się poniżej **faks** kolumny, a jest elementem podrzędnym **klientów** węzła.
 
      A <xref:System.Windows.Forms.DataGridView> kontroli i pasek narzędzi (<xref:System.Windows.Forms.BindingNavigator>) do nawigowania między rekordami wyświetlanymi w formularzu. `OrdersTableAdapter` i <xref:System.Windows.Forms.BindingSource> są wyświetlane w zasobniku składnika.
 
 ## <a name="add-code-to-update-the-database"></a>Dodaj kod, aby zaktualizować bazę danych
- Zaktualizuj bazy danych, wywołując `Update` metody **klientów** i **zamówienia** adapterów TableAdapter. Domyślnie program obsługi zdarzeń dla **Zapisz** przycisk<xref:System.Windows.Forms.BindingNavigator> zostanie dodany do kodu formularza w celu wysyłania aktualizacji do bazy danych. Ta procedura modyfikuje kod, aby wysłać aktualizacje we właściwej kolejności. Pozwala to wyeliminować możliwość zgłaszania błędów więzów integralności. Kod implementuje również dodanymi komentarzami opakowując wywołania aktualizacji w bloku try-catch. Można zmodyfikować kod odpowiednio do potrzeb aplikacji.
+
+Zaktualizuj bazy danych, wywołując `Update` metody **klientów** i **zamówienia** adapterów TableAdapter. Domyślnie program obsługi zdarzeń dla **Zapisz** przycisk<xref:System.Windows.Forms.BindingNavigator> zostanie dodany do kodu formularza w celu wysyłania aktualizacji do bazy danych. Ta procedura modyfikuje kod, aby wysłać aktualizacje we właściwej kolejności. Pozwala to wyeliminować możliwość zgłaszania błędów więzów integralności. Kod implementuje również dodanymi komentarzami opakowując wywołania aktualizacji w bloku try-catch. Można zmodyfikować kod odpowiednio do potrzeb aplikacji.
 
 > [!NOTE]
->  Dla jasności ten przewodnik nie używa transakcji. Jeśli aktualizujesz, dwa lub więcej powiązanych tabel, obejmuje jednak logika aktualizacji w obrębie transakcji. Transakcja jest procesem, który gwarantuje, że wszystkie powiązane zmiany w bazie danych są pomyślnie, zanim wszelkie zmiany zostaną zatwierdzone. Aby uzyskać więcej informacji, zobacz [transakcje i współbieżność](/dotnet/framework/data/adonet/transactions-and-concurrency).
+> Dla jasności ten przewodnik nie używa transakcji. Jeśli aktualizujesz, dwa lub więcej powiązanych tabel, obejmuje jednak logika aktualizacji w obrębie transakcji. Transakcja jest procesem, który gwarantuje, że wszystkie powiązane zmiany w bazie danych są pomyślnie, zanim wszelkie zmiany zostaną zatwierdzone. Aby uzyskać więcej informacji, zobacz [transakcje i współbieżność](/dotnet/framework/data/adonet/transactions-and-concurrency).
 
-#### <a name="to-add-update-logic-to-the-application"></a>Aby dodać logikę aktualizacji do aplikacji
+### <a name="to-add-update-logic-to-the-application"></a>Aby dodać logikę aktualizacji do aplikacji
 
 1.  Wybierz **Zapisz** znajdujący się na <xref:System.Windows.Forms.BindingNavigator>. Spowoduje to otwarcie edytora kodu, aby `bindingNavigatorSaveItem_Click` programu obsługi zdarzeń.
 
@@ -150,16 +151,13 @@ Ten przewodnik korzysta z programu SQL Server Express LocalDB i bazie danych Nor
 
 ## <a name="test-the-application"></a>Testowanie aplikacji
 
-#### <a name="to-test-the-application"></a>Aby przetestować aplikację
-
-1.  Wybierz **F5**.
+1.  Naciśnij klawisz **F5**.
 
 2.  Należy wprowadzić pewne zmiany do danych z co najmniej jednego rekordu w każdej tabeli.
 
 3.  Wybierz **Zapisz** przycisku.
 
 4.  Sprawdź wartości w bazie danych, aby sprawdzić, czy zmiany zostały zapisane.
-
 
 ## <a name="see-also"></a>Zobacz także
 

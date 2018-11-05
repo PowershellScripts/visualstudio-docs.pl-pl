@@ -5,16 +5,16 @@ author: mlearned
 manager: douge
 ms.assetid: b81c172a-be87-4adc-861e-d20b94be9e38
 ms.service: azure-resource-manager
-ms.topic: conceptual
+ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: 4b9304458219b262b07607bf61257e634ff2d435
+ms.openlocfilehash: f6404b15e8a7cd3f95ac63bbae6076ef62fcff06
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000386"
+ms.locfileid: "51003612"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Ciągła integracja w usługom DevOps platformy Azure przy użyciu projekty wdrażania grupy zasobów platformy Azure
 Do wdrożenia szablonu platformy Azure, wykonywania zadań w poszczególnych etapach: kopiowania kompilacji, testów, na platformie Azure (zwane również "Staging") i wdrożyć szablon. Istnieją dwa różne sposoby wdrażania szablonów usługom DevOps platformy Azure. Obie metody zapewniają takie same wyniki, więc wybierz ten, który najlepiej pasuje do przepływu pracy.

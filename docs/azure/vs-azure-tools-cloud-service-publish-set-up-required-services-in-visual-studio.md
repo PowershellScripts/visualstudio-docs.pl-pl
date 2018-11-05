@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 8c65dbc0f5a7d064d3752e47314345a0fb714b13
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 160fe5a4de39aec5d29d981202bcfb791b763d12
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673676"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000099"
 ---
-# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Przygotowywanie do opublikowania lub wdrożyć usługę w chmurze w programie Visual Studio
+# <a name="prepare-to-publish-or-deploy-a-cloud-service-from-visual-studio"></a>Przygotowywanie do publikowania lub wdrażania usługi w chmurze z programu Visual Studio
 
 Aby opublikować projekt usługi w chmurze, możesz skonfigurować następujące usługi zgodnie z opisem w tym artykule:
 
@@ -71,7 +71,7 @@ Jeśli usługa w chmurze utworzone z programu Visual Studio przy użyciu **Dodaj
 
 Jeśli utworzono usługi w chmurze za pośrednictwem witryny Azure portal, wykonaj te same czynności w [Tworzenie konta magazynu w programie Visual Studio](#create-a-storage-account-from-visual-studio) , ale wybierz istniejące konto, zamiast tworzenia nowej. Program Visual Studio następnie aktualizuje konfigurację dla Ciebie.
 
-Aby skonfigurować ustawienia ręcznie, używać stron właściwości w programie Visual Studio na zastosowanie roli w projekt usługi w chmurze (kliknij prawym przyciskiem myszy rolę, a następnie wybierz pozycję **właściwości**). Aby uzyskać więcej informacji, zobacz [Konfigurowanie parametrów połączenia z kontem magazynu](https://docs.microsoft.com/azure/vs-azure-tools-multiple-services-project-configurations#configuring-a-connection-string-to-a-storage-account).
+Aby skonfigurować ustawienia ręcznie, używać stron właściwości w programie Visual Studio na zastosowanie roli w projekt usługi w chmurze (kliknij prawym przyciskiem myszy rolę, a następnie wybierz pozycję **właściwości**). Aby uzyskać więcej informacji, zobacz [Konfigurowanie parametrów połączenia z kontem magazynu](vs-azure-tools-multiple-services-project-configurations.md#configuring-a-connection-string-for-a-storage-account).
 
 ### <a name="about-access-keys"></a>Klawisze dostępu — informacje
 

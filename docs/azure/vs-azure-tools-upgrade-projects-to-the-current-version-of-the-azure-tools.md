@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 1bb499b1f5bb96985ef87c68d79dc1a47ce9979f
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 8d8b5ac6beb6cfb7b40f3f09fded3fef365652a4
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673667"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000430"
 ---
-# <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Uaktualnianie projektów do bieżącej wersji narzędzi platformy Azure dla programu Visual Studio
+# <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Jak uaktualniać projekty do bieżącej wersji narzędzi platformy Azure dla programu Visual Studio
 ## <a name="overview"></a>Omówienie
 Po zainstalowaniu bieżąca wersja narzędzi platformy Azure (lub poprzedniej wersji, która jest nowsza niż 1.6), wszystkie projekty, które zostały utworzone przy użyciu narzędzi Azure Zwolnij przed 1.6 (listopad 2011) zostaną automatycznie uaktualnione zaraz po ich otwarciu. Jeśli nadal masz tej wersji zainstalowane projekty są tworzone za pomocą wersji 1.6 (listopad 2011) wersję tych narzędzi, możesz otworzyć te projekty w starszej wersji i później zdecydować, czy należy uaktualnić ich.
 

@@ -4,19 +4,19 @@ description: Dodawanie usługi Azure Storage do swojej aplikacji za pomocą okna
 author: ghogen
 manager: douge
 assetId: 521ec044-ad4b-4828-8864-01decde2e758
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: 5e2c89b0e45d5432f08c03d3a4b4b38647b72848
+ms.openlocfilehash: 63b796d9c514602a40f15b5725c07b1b89787df1
 ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
 ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000702"
+ms.locfileid: "51003297"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Dodawanie usługi Azure storage przy użyciu programu Visual Studio podłączone usługi
 Za pomocą programu Visual Studio, można nawiązać żadnego z następujących usługi Azure Storage za pomocą **Dodaj usługi połączone** okno dialogowe:

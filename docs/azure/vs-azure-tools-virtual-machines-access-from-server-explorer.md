@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: a25658482fb29d31c19f3c63ed8222503188f6c7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1a353caf4781a2c321a8a0b385e023686ca78cde
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673767"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000102"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Uzyskiwanie dostępu do maszyn wirtualnych platformy Azure z poziomu Eksploratora serwera
 

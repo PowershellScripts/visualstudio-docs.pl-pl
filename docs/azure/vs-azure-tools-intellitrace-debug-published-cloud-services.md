@@ -1,27 +1,24 @@
 ---
 title: Debugowanie opublikowanej usługi Visual Studio i funkcja IntelliTrace w chmurze platformy Azure | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak debugowanie usługi w chmurze za pomocą programu Visual Studio i funkcji IntelliTrace
-documentationcenter: n/a
-author: mikejo
+author: mikejo5000
 manager: douge
-editor: ''
 ms.assetid: 5e6662fc-b917-43ea-bf2b-4f2fc3d213dc
-ms.service: visual-studio-online
-ms.devlang: multiple
-ms.topic: article
-ms.tgt_pltfrm: multiple
+ms.topic: conceptual
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.date: 03/21/2017
 ms.author: mikejo
-ms.openlocfilehash: a66923de21f50acb078d10955587f672d9a2a171
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
+ms.openlocfilehash: 492c3ab06bc2a9c832e2eea476a14dfaeba44fcc
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673745"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000250"
 ---
-# <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Debugowanie usługi opublikowana chmura platformy Azure za pomocą programu Visual Studio i funkcji IntelliTrace
+# <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Debugowanie opublikowanej usługi w chmurze platformy Azure za pomocą programu Visual Studio i funkcji IntelliTrace
 Po uruchomieniu na platformie Azure przy użyciu funkcji IntelliTrace, możesz rejestrować wyczerpujące informacje debugowania dla wystąpienia roli. Jeśli potrzebujesz znaleźć przyczynę problemu, można użyć dzienników IntelliTrace do kroku przez kod z programu Visual Studio, tak jakby były uruchamiane na platformie Azure. W efekcie funkcja IntelliTrace ma rejestrować klucza wykonywania kodu i środowisko danych aplikacji platformy Azure działa jako usługa w chmurze na platformie Azure, gdy pozwala odtwarzać zapisane dane z programu Visual Studio. 
 
 Można użyć funkcji IntelliTrace, jeśli masz program Visual Studio Enterprise i usługi Azure application obiektów docelowych programu .NET Framework 4 lub nowszej. IntelliTrace zbiera informacje dotyczące poszczególnych ról platformy Azure. Maszyny wirtualne dla tych ról są zawsze uruchamiane w 64-bitowych systemach operacyjnych.

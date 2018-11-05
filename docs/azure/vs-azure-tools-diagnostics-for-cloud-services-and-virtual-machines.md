@@ -1,26 +1,23 @@
 ---
 title: Konfigurowanie diagnostyki dla usług Azure Cloud Services i virtual machines | Dokumentacja firmy Microsoft
 description: Dowiedz się, jak skonfigurować diagnostykę dla debugowania cloude platformy Azure, usług i maszyn wirtualnych (VM) w programie Visual Studio.
-documentationcenter: na
-author: mikejo
+author: ghogen
 manager: douge
-editor: ''
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
-ms.service: multiple
-ms.devlang: dotnet
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: multiple
+ms.topic: conceptual
+ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: c80c879a3a059af1a01a0b03dd4e0c26d6ffec5a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
+ms.openlocfilehash: 171f46efbcec7d21b281058475466f536899aa2b
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673776"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000520"
 ---
-# <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Konfigurowanie diagnostyki dla usług Azure Cloud Services i virtual machines
+# <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Konfigurowanie diagnostyki dla usług w chmurze i maszyn wirtualnych platformy Azure
 Gdy zachodzi potrzeba Rozwiązywanie problemów z usługą w chmurze platformy Azure lub maszynie wirtualnej, można użyć programu Visual Studio na łatwiejsze konfigurowanie diagnostyki platformy Azure. Diagnostyka przechwytuje dane systemu i rejestrowania danych na maszynach wirtualnych i wystąpień maszyn wirtualnych, które są uruchamiane usługi w chmurze. Dane diagnostyczne jest przekazywany do wybranego konta magazynu. Aby uzyskać więcej informacji o diagnostyce rejestrowania na platformie Azure, zobacz [Włączanie rejestrowania diagnostycznego dla aplikacji sieci Web w usłudze Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
 
 W tym artykule pokazujemy, jak używać programu Visual Studio, aby włączyć i skonfigurować diagnostykę platformy Azure, przed i po wdrożeniu. Dowiedz się, jak skonfigurować diagnostykę na maszynach wirtualnych platformy Azure, jak wybrać typy informacji diagnostycznych do zbierania i sposób wyświetlania informacji po ich zebraniu.

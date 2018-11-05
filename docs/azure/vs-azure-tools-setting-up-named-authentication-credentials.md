@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: f3d0a3499257a72d500774f00824150f88757823
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 62f95253b894e27cce7131bf387aacb5dd0f6903
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673766"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000269"
 ---
-# <a name="set-up-named-authentication-credentials"></a>Skonfiguruj poświadczenia uwierzytelniania o nazwie
+# <a name="set-up-named-authentication-credentials"></a>Konfigurowanie nazwanych poświadczeń uwierzytelniania
 
 Aby opublikować aplikację na platformie Azure lub do monitorowania istniejącej usługi w chmurze, program Visual Studio wymaga poświadczeń do uwierzytelniania żądań do systemu Azure, a mianowicie swój identyfikator subskrypcji platformy Azure i prawidłowy certyfikat X.509 v3 kluczem do co najmniej 2048 bitów. Te poświadczenia przy użyciu jednej z następujących metod:
 

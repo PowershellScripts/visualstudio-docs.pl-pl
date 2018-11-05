@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f0d53ece6add1c781cb18569139fea5ffbbeca76
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36755927"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000232"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Jak zgłosić problem w programie Visual Studio 2017
 
@@ -125,7 +125,7 @@ Począwszy od programu Visual Studio 2017 w wersji 15.5 istnieje nowy przepływ 
 
 Jeśli nie chcesz lub nie można użyć programu Visual Studio, aby zgłosić problem, istnieje szansa, że już zgłoszono problem i rozwiązaniem opublikowano [społeczności deweloperów programu Visual Studio](https://developercommunity.visualstudio.com/) strony.
 
-Jeśli nie masz problem do raportu, ale chce dostarczać opinie o produkcie lub sugestia, ma miejsce, w tym za. Aby uzyskać więcej informacji, zobacz [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide) strony.
+Jeśli masz problem, aby zgłosić, ale chcesz zaproponować funkcję, ma miejsce, w tym za. Aby uzyskać więcej informacji, zobacz [Zaproponuj funkcję](https://developercommunity.visualstudio.com/content/idea/post.html?space=8) strony.
 
 ## <a name="see-also"></a>Zobacz także
 

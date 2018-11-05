@@ -1,26 +1,23 @@
 ---
 title: Za pomocą Emulator Express uruchamianie i debugowanie usługi w chmurze platformy Azure na maszynie lokalnej | Dokumentacja firmy Microsoft
 description: Za pomocą Emulator Express uruchamianie i debugowanie usługi w chmurze na komputerze lokalnym
-documentationcenter: n/a
-author: mikejo
+author: mikejo5000
 manager: douge
-editor: ''
 ms.assetid: 73108f98-a552-4817-b7a1-551367b71906
-ms.service: visual-studio-online
-ms.devlang: multiple
-ms.topic: article
-ms.tgt_pltfrm: multiple
-ms.workload: na
+ms.topic: conceptual
+ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: 4322da27ed09bb71b8724f53fc34a0b3653086f7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
+ms.openlocfilehash: 955095af8bf587b39595be7ca6f332e2ac85b212
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673687"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000779"
 ---
-# <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Za pomocą Emulator Express uruchamianie i debugowanie usługi w chmurze platformy Azure na maszynie lokalnej
+# <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Uruchamianie i debugowanie usługi w chmurze platformy Azure na maszynie lokalnej za pomocą emulatora w wersji Express
 Za pomocą Emulator Express, można przetestować i debugowanie usługi w chmurze bez konieczności uruchamiania programu Visual Studio jako administrator. Możesz ustawić ustawienia projektu, aby użyć Emulator Express lub pełnego emulatora, w zależności od wymagań usługi w chmurze. Aby uzyskać więcej informacji na temat pełnego emulatora, zobacz [uruchamiania aplikacji platformy Azure w emulatorze obliczeń](/azure/storage/common/storage-use-emulator).
 
 ## <a name="using-emulator-express-in-visual-studio"></a>Za pomocą Emulator Express w programie Visual Studio

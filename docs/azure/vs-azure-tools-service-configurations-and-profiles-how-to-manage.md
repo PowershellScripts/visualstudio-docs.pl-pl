@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: ab53f038d926785726c90c7e8136c0680ea9fb41
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 1b520edc52c21d3edfc03b7e501a838eabe775ff
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673782"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000853"
 ---
-# <a name="how-to-manage-service-configurations-and-profiles"></a>Jak zarządzać konfiguracje usług i profilów
+# <a name="how-to-manage-service-configurations-and-profiles"></a>Jak zarządzać profilami i konfiguracjami usług
 ## <a name="overview"></a>Omówienie
 Podczas publikowania usługi w chmurze programu Visual Studio przechowuje informacje o konfiguracji w dwa rodzaje plików konfiguracyjnych: usługi konfiguracji i profilów. Konfiguracja usługi (.cscfg pliki) przechowywania ustawień dla środowiska wdrażania usługi w chmurze platformy Azure. Platforma Azure używa tych plików konfiguracji, gdy zarządza usługi w chmurze. Z drugiej strony profile (pliki .azurePubxml) magazynu ustawień publikowania dla usługi w chmurze. Te ustawienia są rekordu wybierz możesz za pomocą Kreatora publikacji, gdy są używane lokalnie przez program Visual Studio. W tym temacie wyjaśniono, jak działają z oboma typami plików konfiguracyjnych.
 
@@ -58,7 +58,7 @@ Możesz również otworzyć **Zarządzanie konfiguracjami** okno dialogowe ze st
     Nazwa pliku konfiguracji usługi jest zmieniona w projekcie platformy Azure w Eksploratorze rozwiązań.
 
 ### <a name="to-change-a-service-configuration"></a>Aby zmienić konfigurację usługi
-* Jeśli chcesz zmienić konfiguracji usługi, otwórz menu skrótów dla określonej roli, aby zmiany w projekcie platformy Azure, a następnie wybierz **właściwości**. Zobacz [porady: Konfigurowanie ról dla usługi Azure Cloud Service za pomocą programu Visual Studio](https://docs.microsoft.com/azure/vs-azure-tools-configure-roles-for-cloud-service) Aby uzyskać więcej informacji.
+* Jeśli chcesz zmienić konfiguracji usługi, otwórz menu skrótów dla określonej roli, aby zmiany w projekcie platformy Azure, a następnie wybierz **właściwości**. Zobacz [porady: Konfigurowanie ról dla usługi Azure Cloud Service za pomocą programu Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) Aby uzyskać więcej informacji.
 
 ## <a name="make-different-setting-combinations-by-using-profiles"></a>Wprowadź ustawienie różnych kombinacji przy użyciu profilów
 Za pomocą profilu, można automatycznie wypełnić **Kreatora publikacji** z różnymi kombinacjami ustawienia do różnych celów. Na przykład może mieć jeden profil debugowania, a drugi dla wersji kompilacji. W takim przypadku swoje **debugowania** miałby profilu **IntelliTrace** włączone i **debugowania** wybranej, konfiguracji i **wersji** Profil musi **IntelliTrace** wyłączone i **wersji** wybranej konfiguracji. Aby wdrożyć usługę przy użyciu innego konta magazynu można także użyć różnych profilów.

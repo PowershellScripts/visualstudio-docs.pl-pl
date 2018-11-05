@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 43898f330ed58863bdf7b14c6574a2b09e795043
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: db2127cbca42f158fa10617ceac04976fdbfcaf3
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673744"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000751"
 ---
-# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Zarządzanie zasobami skojarzonych kont systemu Azure w programie Visual Studio Cloud Explorer
+# <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Zarządzanie zasobami skojarzonymi z kontami platformy Azure w narzędziu Visual Studio Cloud Explorer
 
 Eksplorator chmury umożliwia wyświetlanie zasobów platformy Azure i grup zasobów, badania ich właściwości i akcje klucza dewelopera diagnostyki z poziomu programu Visual Studio. 
 

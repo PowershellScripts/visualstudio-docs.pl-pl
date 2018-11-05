@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 8a892677362a2a445469ae05e79c66fbbcb3deb4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 0d0ac9d18e72ff656877e47b9858ac460e54e7cf
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673701"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000606"
 ---
-# <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Zachowaj stałej wirtualny adres IP dla usługi w chmurze platformy Azure
+# <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Zachowywanie stałego wirtualnego adresu IP usługi w chmurze platformy Azure
 Po zaktualizowaniu usługi w chmurze, która jest hostowana na platformie Azure może być konieczne upewnić się, że nie zmienia się wirtualnego adresu IP (VIP) usługi. Wiele usług zarządzania domeny na użytek systemu nazw domen (DNS) rejestracji nazw domen. DNS działa tylko wtedy, gdy adres VIP pozostają bez zmian. Możesz użyć **Kreatora publikacji** w narzędziach platformy Azure, aby upewnić się, że VIP usługi w chmurze nie zmienia się podczas aktualizacji. Aby uzyskać więcej informacji o sposobie zarządzania domeny DNS na użytek usług w chmurze, zobacz [Konfigurowanie niestandardowej nazwy domeny dla usługi w chmurze Azure](/azure/cloud-services/cloud-services-custom-domain-name-portal).
 
 ## <a name="publish-a-cloud-service-without-changing-its-vip"></a>Publikowanie usługi w chmurze bez konieczności zmieniania swój adres VIP

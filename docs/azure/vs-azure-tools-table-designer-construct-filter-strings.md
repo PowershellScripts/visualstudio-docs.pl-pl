@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 0b0c6954729c92382cb11ea0b7b5a4b7e9922b77
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: ccba0314e51116b58aa44bd25309b921c47c8799
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673771"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000590"
 ---
-# <a name="constructing-filter-strings-for-the-table-designer"></a>Konstruowanie ciągi filtrów dla projektanta tabel
+# <a name="constructing-filter-strings-for-the-table-designer"></a>Konstruowanie ciągów filtrów dla projektanta tabel
 ## <a name="overview"></a>Omówienie
 Aby filtrować dane w tabeli platformy Azure, która jest wyświetlana w programie Visual Studio **projektanta tabel**, utworzyć ciągu filtru i wprowadzić go w polu filtru. Składnia ciągu filtru jest definiowany przez usługi danych WCF i przypomina klauzulę WHERE języka SQL, ale są wysyłane do usługi tabeli za pomocą żądania HTTP. **Projektanta tabel** obsługuje poprawne kodowanie, więc aby odfiltrować wartość żądanej właściwości, należy podać tylko nazwę właściwości, operator porównania, wartości kryteriów i opcjonalnie, wartość logiczna operatora w polu filtru. Nie muszą zawierać opcję zapytania $filter, jak gdyby były konstruuje adres URL do wykonywania zapytań w tabeli za pomocą [dokumentacja interfejsu API REST usług Storage](http://go.microsoft.com/fwlink/p/?LinkId=400447).
 

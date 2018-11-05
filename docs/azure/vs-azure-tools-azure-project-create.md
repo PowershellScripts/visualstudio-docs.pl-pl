@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: f6e3dd79cb91f5c00558f833bdc4b65a9404885e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: b51f7b5334452217da208873f203c7b010d77b9b
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673734"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000339"
 ---
 # <a name="creating-an-azure-cloud-service-project-with-visual-studio"></a>Tworzenie projektu usługi w chmurze platformy Azure za pomocą programu Visual Studio
 Azure Tools dla programu Visual Studio zawiera szablon projektu umożliwiający tworzenie [usłudze w chmurze Azure](/azure/cloud-services/cloud-services-choose-me), który jest prostą usługę Azure ogólnego przeznaczenia. Po utworzeniu projektu programu Visual Studio pozwala konfigurować, debugować i wdrożyć usługę w chmurze na platformie Azure.

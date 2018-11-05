@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: e0ddc479d7e7095e03ebd31670ab19f8d8c8a748
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: bace670073072e5330af913b897ae477fb0ce528
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673785"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000179"
 ---
-# <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Przeglądanie i zarządzanie zasobami magazynu za pomocą Eksploratora serwera
+# <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Przeglądanie zasobów magazynu i zarządzanie nimi za pomocą Eksploratora serwera
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 
@@ -219,7 +219,7 @@ Można dostosować zestaw jednostek, które pojawiają się w tabeli, jeśli Uż
 1. Po zakończeniu tworzenia zapytania, zamknij okno dialogowe. Tekst w formularzu, zapytania pojawia się w polu tekstowym jako filtr usługi danych WCF.
 1. Aby uruchomić zapytanie, wybierz ikonę zielony trójkąt.
 
-Można także filtrować dane jednostki, która pojawia się w Projektancie tabel po wprowadzeniu ciąg filtru WCF Data Services bezpośrednio w polu tekstowym filtru. Tego rodzaju ciągu przypomina klauzulę WHERE języka SQL, ale jest wysyłane do serwera jako żądanie HTTP. Aby uzyskać informacje dotyczące sposobu konstruowania parametry filtru, zobacz [Constructing parametry filtru dla projektanta tabel](https://docs.microsoft.com/azure/vs-azure-tools-table-designer-construct-filter-strings).
+Można także filtrować dane jednostki, która pojawia się w Projektancie tabel po wprowadzeniu ciąg filtru WCF Data Services bezpośrednio w polu tekstowym filtru. Tego rodzaju ciągu przypomina klauzulę WHERE języka SQL, ale jest wysyłane do serwera jako żądanie HTTP. Aby uzyskać informacje dotyczące sposobu konstruowania parametry filtru, zobacz [Constructing parametry filtru dla projektanta tabel](vs-azure-tools-table-designer-construct-filter-strings.md).
 
 Poniższa ilustracja przedstawia przykład ciągu prawidłowego filtru:
 

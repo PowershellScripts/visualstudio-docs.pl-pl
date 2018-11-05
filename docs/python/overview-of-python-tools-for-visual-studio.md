@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d686d51216141ccf2960a9b6cffd0ea9aafb329
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
+ms.openlocfilehash: ee6d8349887207a7c9eaf34ec2485d045acd4e47
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991617"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000877"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Praca z językiem Python w programie Visual Studio na Windows
 
@@ -151,7 +151,7 @@ Aby uzyskać więcej informacji, zobacz [zestawu Azure SDK dla języka Python](a
 
 **PYTANIA I ODPOWIEDZI. Czy obsługi języka Python w programie Visual Studio dla komputerów Mac?**
 
-A. W tej chwili nie możesz nawet głosować na żądanie, ale [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). [Programu Visual Studio dla komputerów Mac](/visualstudio/mac/) dokumentacji identyfikuje bieżące typy programowania, który ją obsługuje. W międzyczasie, Visual Studio Code w Windows, Mac i Linux [dobrze działa z języka Python za pomocą dostępnych rozszerzeń](https://code.visualstudio.com/docs/languages/python).
+A. W tej chwili nie możesz nawet głosować na żądanie, ale [społeczności deweloperów](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). [Programu Visual Studio dla komputerów Mac](/visualstudio/mac/) dokumentacji identyfikuje bieżące typy programowania, który ją obsługuje. W międzyczasie, Visual Studio Code w Windows, Mac i Linux [dobrze działa z języka Python za pomocą dostępnych rozszerzeń](https://code.visualstudio.com/docs/languages/python).
 
 **PYTANIA I ODPOWIEDZI. Do czego można używać do tworzenia interfejsu użytkownika za pomocą języka Python?**
 

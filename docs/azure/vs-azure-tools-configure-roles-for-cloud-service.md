@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 5ec91b981bf22ac7b33a1ad30da23bbd0f6145e4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 71f89c8d7a7ffc7e1eb24f4ace12363844ee5c4d
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673611"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000182"
 ---
-# <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurowanie ról usługi w chmurze platformy Azure przy użyciu programu Visual Studio
+# <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Konfigurowanie ról usług w chmurze platformy Azure przy użyciu programu Visual Studio
 Usługi w chmurze platformy Azure może mieć jedną lub więcej procesów roboczych lub role sieci web. Dla każdej roli musisz zdefiniować sposób konfigurowania tej roli, a także skonfigurować, jak działa tej roli. Aby dowiedzieć się więcej na temat ról w usługach cloud services, zobacz wideo [wprowadzenie do usług Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services). 
 
 Informacje dotyczące usługi w chmurze są przechowywane w następujących plikach:

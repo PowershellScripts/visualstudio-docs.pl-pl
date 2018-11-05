@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/05/2017
 ms.author: ghogen
-ms.openlocfilehash: ef345310c31b95ab13b8e175d8810598d3cf7b09
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 3934d93355cd652b5da09886e3c7afa5d406119a
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673662"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000549"
 ---
 # <a name="building-azure-projects-from-the-command-line"></a>Tworzenie projektów systemu Azure z poziomu wiersza polecenia
 Korzystając z aparatu Microsoft Build Engine (MSBuild), można tworzyć produktów w środowisku laboratorium kompilacji, których nie zainstalowano programu Visual Studio. Program MSBuild używa formatu XML, pliki projektu, czyli rozszerzalne i w pełni obsługiwane przez firmę Microsoft. Przy użyciu formatu pliku MSBuild, można opisać co elementy muszą być zbudowane dla co najmniej jeden platformach i konfiguracjach.

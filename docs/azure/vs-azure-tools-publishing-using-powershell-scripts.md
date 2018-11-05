@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 4ff17c33c56227520e4a1491275d1489383a1eea
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 5ee9ca92533e19b1c845242efda49aee410d264a
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673740"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000747"
 ---
-# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Za pomocą skryptów środowiska Windows PowerShell do publikowania w środowisku deweloperskim i testowym
+# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Publikowanie w środowisku deweloperskim i testowym za pomocą skryptów programu Windows PowerShell
 
 Podczas tworzenia aplikacji sieci web w programie Visual Studio można wygenerować skrypt programu Windows PowerShell, którego można później zautomatyzować publikowanie witryny sieci Web na platformie Azure jako aplikację internetową w usłudze Azure App Service lub maszyny wirtualnej. Można edytować i rozszerzać skrypt programu Windows PowerShell w edytorze programu Visual Studio ze swoimi potrzebami lub zintegrować z istniejącą kompilację, testowania i skryptów publikowania.
 

@@ -1,6 +1,6 @@
 ---
 title: Skróty klawiaturowe w usłudze Visual Studio
-ms.date: 06/21/2017
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e38fb09f77d7c00d2764ca181a604b3e25c264b
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672980"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220856"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Skróty klawiaturowe dla programu Visual Studio
 
@@ -73,6 +73,11 @@ Możesz przejść w programie Visual Studio łatwiej za pomocą skrótów klawia
 
 |Polecenie|Skrót|Dostępność wersji|
 |-|-|-|
+|Przejdź do wszystkich|**CTRL**+**T**|
+|Przejdź do ostatnio używane pliki|**CTRL**+**T**,**języka R**|
+|Daszek wielu wielu punkty wstawienia|**CTRL**+**Alt**+**kliknij**|
+|Daszek wielu Dodaj wybrane elementy pasujące|**SHIFT**+**Alt**+**dodatki**|
+|Formatuj dokument|**CTRL**+**K**,**D**|Visual Studio 2017 w wersji 15.8|
 |Tryb sugestii IntelliSense|**CTRL**+**Alt**+**miejsca** (przełącznik)||
 |Wymuszaj pokazywanie IntelliSense|**CTRL**+**"j"**||
 |Szybkie akcje|**Ctrl**+**.**||
@@ -95,6 +100,9 @@ Możesz przejść w programie Visual Studio łatwiej za pomocą skrótów klawia
 |Przechodzenie między wieloma oknami definicji wglądu|**CTRL**+**Alt** + **-** i **Ctrl**+**Alt**+**=**||
 |Przechodzenie między wieloma wynikami wyglądu|**F8** i **Shift**+**F8**||
 |Przełączanie się między oknem edytora kodu i okna Zobacz definicję|**SHIFT**+**Esc**||
+|Przejdź do otaczający blok|**CTRL**+**Alt**+**UpArrow**|
+|Przejdź do następnego/poprzedniego wydania|**ALT**+**PgUp**/**PgDn**|
+|Menu kontekstowe nawigacji|**ALT**+**`**|
 
 ## <a name="toolbars"></a>Paski narzędzi
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d620ae0f93b2bbcee66419cfe9ff5e76e470c5f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03b5a669c0977aa35ef6943af3fa6afe6dda2aaa
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918886"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220791"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analizowanie użycia sieci w aplikacjach platformy UWP
 Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje sieciowe, wykonywane przy użyciu [Windows.Web.Http API](/uwp/api/windows.web.http). Analizowanie danych może pomóc rozwiązać problemy, takie jak problemy dostępu i uwierzytelniania, nieprawidłowe użycie pamięci podręcznej i wyświetlania jest niska i pobrać wydajności.  
@@ -23,7 +23,7 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje
  Narzędzie do sieci obsługuje tylko aplikacje platformy uniwersalnej systemu Windows. Inne platformy nie są obsługiwane w tej chwili.  
   
 > [!NOTE]
->  Aby uzyskać bardziej szczegółowy opis narzędzie do sieci, zobacz [wprowadzenie do programu Visual Studio narzędzie sieci](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx).  
+>  Aby uzyskać bardziej szczegółowy opis narzędzie do sieci, zobacz [wprowadzenie do programu Visual Studio narzędzie sieci](https://blogs.msdn.microsoft.com/visualstudio/2015/05/04/introducing-visual-studios-network-tool/).  
   
 ## <a name="collect-network-tool-data"></a>Zbieranie danych narzędzie sieci  
  Należy uruchomić **sieci** narzędzie z otwartym projekcie programu Visual Studio na komputerze programu Visual Studio.  
@@ -75,6 +75,6 @@ Visual Studio **sieci** narzędzie diagnostyczne zbiera dane dotyczące operacje
 ## <a name="see-also"></a>Zobacz także  
  [Uruchamianie narzędzi profilowania z debugerem lub bez debugera](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Blog dotyczący programu Visual Studio: Inspektor sieci wprowadzenie do programu Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Wideo Channel 9: Narzędzia diagnostyczne programu VS — nowy Profiler sieci](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [Wideo Channel 9: Narzędzia diagnostyczne programu VS — nowy Profiler sieci](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Profilowanie w programie Visual Studio](../profiling/index.md)  
  [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)

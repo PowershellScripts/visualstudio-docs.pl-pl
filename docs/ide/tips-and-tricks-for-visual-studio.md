@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 039d0caac98bdb574f2e42303ccb001e9600a740
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
-ms.translationtype: MT
+ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.translationtype: HT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348946"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220856"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Skróty klawiaturowe dla programu Visual Studio
 
@@ -22,9 +22,6 @@ Możesz przejść w programie Visual Studio łatwiej za pomocą skrótów klawia
 
 > [!TIP]
 > Skróty, wymienione w tym miejscu są podzbiorem skróty klawiaturowe dostępne. Aby uzyskać bardziej szczegółowy wykaz zobacz [domyślne skróty klawiaturowe](../ide/default-keyboard-shortcuts-in-visual-studio.md).
-
-> [!NOTE]
-> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [typowych skrótów klawiaturowych w programie Visual Studio dla komputerów Mac](/visualstudio/mac/keyboard-shortcuts).
 
 ## <a name="window-management"></a>Zarządzanie oknem
 
@@ -139,5 +136,4 @@ Możesz przejść w programie Visual Studio łatwiej za pomocą skrótów klawia
 
 - [Ułatwienia dostępu, porady i wskazówki](../ide/reference/accessibility-tips-and-tricks.md)
 - [Skróty klawiaturowe (usługom DevOps platformy Azure i TFS)](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Program Visual Studio — porady i wskazówki blog](https://blogs.msdn.microsoft.com/zainnab/)
-- [Typowe skróty klawiaturowe w programie Visual Studio dla komputerów Mac](/visualstudio/mac/keyboard-shortcuts)
+- [Program Visual Studio — porady i wskazówki blog](https://blogs.msdn.com/b/zainnab)

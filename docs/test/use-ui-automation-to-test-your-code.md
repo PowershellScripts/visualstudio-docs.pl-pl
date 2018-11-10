@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec65f2a35f0e28a8e9424497bcdfb11b1a02c84f
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: cbe8f1b9e0fc1fcc47a8d90e0033e8edb933e1aa
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371085"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296076"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Używanie automatyzacji interfejsu użytkownika do testowania kodu
 
@@ -402,7 +402,7 @@ Aby uzyskać i ustawić określone wartości właściwości kontrolki interfejsu
 
 ### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Aby pobierać lub ustawiać właściwości z kontrolek testu interfejsu użytkownika bezpośrednio
 
-Za pomocą kontrolek, które wynikają z <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, takich jak [listy HTML](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.htmlcontrols.htmllist.aspx) lub [WinComboBox](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.wincontrols.wincombobox.aspx), można uzyskać lub ustawić bezpośrednio ich wartości właściwości. Poniższy kod pokazuje kilka przykładów:
+Za pomocą kontrolek, które wynikają z <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, takich jak [listy HTML](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) lub [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox), można uzyskać lub ustawić bezpośrednio ich wartości właściwości. Poniższy kod pokazuje kilka przykładów:
 
  ```csharp
  int i = myHtmlList.ItemCount;
@@ -443,7 +443,7 @@ Możesz analizować kodowanych testów interfejsu użytkownika za pomocą zakodo
 
 - [Uruchom testy w procesie kompilacji](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Porady: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Porady: Konfigurowanie agenta testowego do uruchamiania testów, które współdziałają z pulpitem](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
 **Dodawanie obsługi kontrolek niestandardowych:** kodowanych testów interfejsu użytkownika nie obsługuje każdego możliwego interfejsu użytkownika i może nie obsługiwać interfejsu użytkownika, którą chcesz przetestować. Na przykład nie można od razu utworzyć kodowany test interfejsu użytkownika interfejsu użytkownika dla programu Microsoft Excel. Można jednak utworzyć rozszerzenie kodowanych testów interfejsu użytkownika, który będzie obsługiwać formant niestandardowy.
 

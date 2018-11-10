@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 049b3caebc884ea22bd2928e9e4ff10e9921fd1d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6978457fdc976f87a8334b181ab69dfd78ef240c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930599"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294543"
 ---
 # <a name="extract-a-method-refactoring"></a>Wyodrębnij także refaktoryzację — metoda
 
@@ -60,7 +60,7 @@ Ta Refaktoryzacja mają zastosowanie do:
    Metoda zostanie utworzona natychmiast. W tym miejscu można teraz zmienić nazwę metody po prostu wpisując nową nazwę.
 
    > [!TIP]
-   > Możesz także zaktualizować komentarze i innych ciągów, aby użyć tej nowej nazwy także [podgląd zmian](../../ide/preview-changes.md) przed zapisaniem, za pomocą pola wyboru w **Zmień nazwę** pole, które pojawia się u góry rogu zintegrowanego środowiska Projektowego.
+   > Możesz także zaktualizować komentarze i innych ciągów, aby użyć tej nowej nazwy, jak i [podgląd zmian](../../ide/preview-changes.md) przed zapisaniem, za pomocą pola wyboru w **Zmień nazwę** wyświetlonym u góry rogu zintegrowanego środowiska Projektowego.
 
    - C#:
 

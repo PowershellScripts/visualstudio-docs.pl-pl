@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a937e06eadc1af0734ff34f043c97833e1be1c96
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 19d2a50eba8850b3950e951da58800aed77931ad
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382213"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295803"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Przewodnik: Używanie wykresu wirtualnego aktywności użytkownika umożliwiającego Wyizolowanie problemów
 
@@ -42,9 +42,9 @@ Aby uzyskać więcej informacji, zobacz [analizować aktywność wirtualnego uż
 
 -   Wykonaj następujące procedury:
 
-    -   [Rejestrowanie i uruchamianie testu wydajności sieci web](http://msdn.microsoft.com/en-us/bd0a82fd-cec0-4861-bc09-e1b0b2d258ef).
+    -   [Rejestrowanie i uruchamianie testu wydajności sieci web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
 
-    -   [Tworzenie i uruchamianie testu obciążenia](http://msdn.microsoft.com/en-us/7041cbcf-9ab1-4579-98ff-8f296aeaded4)
+    -   [Tworzenie i uruchamianie testu obciążenia](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Otwórz rozwiązanie ColorWebApp utworzony w poprzednich — wskazówki
 

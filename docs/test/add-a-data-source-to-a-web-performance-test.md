@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 49e1b465bbc964e962942304d5f8b63f8c5480b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bda1c548b4db5d7f94a1dd85befdff5645460b83
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930716"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295101"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Dodawanie źródła danych do testu wydajności sieci Web
 
@@ -24,7 +24,7 @@ Wiązanie danych, aby zapewnić różne wartości w ten sam test, na przykład, 
 
  ![Wiązanie danych do testu wydajności sieci web](../test/media/web_test_databinding_conceptual.png)
 
- Zamierzamy korzystanie z przykładowej aplikacji platformy ASP.NET. Posiada trzy *.aspx* strony — domyślną stronę, stronę czerwoną i niebieską stronę. Domyślna strona zawiera formant radiowy, do wyboru czerwony lub niebieski i przycisk Prześlij. Pozostałe dwa *.aspx* strony są bardzo proste. Jedna ma etykietę o nazwie czerwona, a druga ma etykietę o nazwie niebieska. Po wybraniu Prześlij na stronie domyślnej wyświetlamy jedną z innych stron. Możesz pobrać [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) przykładowy lub po prostu wykonaj własną aplikację sieci web.
+ Zamierzamy korzystanie z przykładowej aplikacji platformy ASP.NET. Posiada trzy *.aspx* strony — domyślną stronę, stronę czerwoną i niebieską stronę. Domyślna strona zawiera formant radiowy, do wyboru czerwony lub niebieski i przycisk Prześlij. Pozostałe dwa *.aspx* strony są bardzo proste. Jedna ma etykietę o nazwie czerwona, a druga ma etykietę o nazwie niebieska. Po wybraniu Prześlij na stronie domyślnej wyświetlamy jedną z innych stron. Możesz pobrać [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) przykładowy lub po prostu wykonaj własną aplikację sieci web.
 
  ![Uruchamianie aplikacji sieci web do zbadania](../test/media/web_test_databinding_runwebapp.png)
 

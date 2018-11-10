@@ -1,7 +1,7 @@
 ---
-title: Wybieranie interpretera języka Python i środowiska dla projektu
-description: Jak przypisać środowiska Python na potrzeby projektu programu Visual Studio, a także instrukcje dotyczące tworzenia środowisk wirtualnych.
-ms.date: 06/27/2018
+title: Wybierz interpreter języka Python i środowiska dla projektu
+description: Jak wybrać środowisko Python lub interpretera dla projektu programu Visual Studio, w tym Anaconda i środowisk wirtualnych.
+ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0bff5e81fbfda45908315091063833b31abbdd8c
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101137"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349455"
 ---
-# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Jak przypisać środowisko Python, które jest używane dla projektu
+# <a name="how-to-select-a-python-environment-for-a-project"></a>Jak wybrać środowisko Python dla projektu
 
-Cały kod w projekcie języka Python jest uruchamiany w kontekście określonego środowiska. Visual Studio używa także środowisko do debugowania, importowania i zakończenia elementu członkowskiego, sprawdzanie składni i innych zadań, które wymagają środowiska.
+Cały kod w projekcie języka Python jest uruchamiany w kontekście określonego środowiska, takie jak globalnego środowisko Python, środowisko Anaconda, środowisko wirtualne lub środowiska conda. Visual Studio używa także środowisko do debugowania, importowania i zakończenia elementu członkowskiego, sprawdzanie składni i innych zadań, które wymagają usług językowych, które są specyficzne dla środowiska Python w wersji i zestaw zainstalowanych pakietów.
 
 Nowe projekty języka Python w programie Visual Studio początkowo są skonfigurowane do używania domyślnej globalnej środowisko, w którym pojawia się w obszarze **środowiska Python** w węźle **Eksploratora rozwiązań**:
 
@@ -42,7 +42,7 @@ Menu kontekstowe **środowiska Python** węzła zawiera także dodatkowe polecen
 | --- | --- |
 | **Dodawanie środowiska wirtualnego** | Rozpocznie się proces tworzenia nowego środowiska wirtualnego w projekcie. Zobacz [Utwórz środowisko wirtualne](#create-a-virtual-environment). |
 | **Dodawanie istniejącego środowiska wirtualnego** | Monit o wybranie folder zawierający środowisko wirtualne i dodaje go do listy w obszarze **środowiska Python**, ale nie aktywować. Zobacz [aktywować istniejącego środowiska wirtualnego](#activate-an-existing-virtual-environment). |
-| **Tworzenie środowiska Conda** | Przełącza do **środowiska Python** *okna* w którym należy wprowadzić nazwę środowiska i określić jego podstawowy interpreter. |
+| **Tworzenie środowiska Conda** | Przełącza do **środowiska Python** *okna* w którym należy wprowadzić nazwę środowiska i określić jego podstawowy interpreter. Zobacz [środowisk Conda](managing-python-environments-in-visual-studio.md#conda-environments). |
 
 ## <a name="use-virtual-environments"></a>Korzystanie ze środowisk wirtualnych
 

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fb3f0c5d44ed8043266640cfeb30838f7d37894
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827739"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220778"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analizowanie użycia pamięci bez debugera programu Visual Studio
 Możesz użyć **użycie pamięci** narzędzia bez debugowania, aby wykonać następujące czynności  
@@ -204,5 +204,5 @@ Możesz użyć **użycie pamięci** narzędzia bez debugowania, aby wykonać nas
  [Pamięć języka JavaScript](../profiling/javascript-memory.md)  
  [Profilowanie w programie Visual Studio](../profiling/index.md)  
  [Pierwsze spojrzenie na narzędziach profilowania](../profiling/profiling-feature-tour.md)  
- [Wydajność — najlepsze rozwiązania dla aplikacji platformy uniwersalnej systemu Windows przy użyciu języka C++, C# i Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [Wydajność — najlepsze rozwiązania dla aplikacji platformy uniwersalnej systemu Windows przy użyciu języka C++, C# i Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))   
  [Diagnozowanie problemów z pamięcią za pomocą nowe narzędzie użycie pamięci w programie Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)

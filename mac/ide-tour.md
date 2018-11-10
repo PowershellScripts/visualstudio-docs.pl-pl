@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 37c4f6c50cc5deaee1decf6fcfae5eda211018b2
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228867"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295686"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Program Visual Studio for Mac samouczek
 
@@ -56,13 +56,13 @@ Jest to, gdzie plików kodu źródłowego, zasobów, interfejs użytkownika i za
 Aby uzyskać więcej informacji na temat korzystania z projektów i rozwiązań w programie Visual Studio dla komputerów Mac, zobacz [projekty i rozwiązania](projects-and-solutions.md) artykułu.
 
 ## <a name="assembly-references"></a>Odwołania do zestawów
- 
+
 Odwołania do zestawów dla każdego projektu są dostępne w folderze odwołania:
 
 ![Folder odwołań w konsoli rozwiązania](media/ide-tour-image19.png)
 
 Dodatkowe informacje są dodawane przy użyciu **Edytuj odwołania** okno dialogowe, która jest wyświetlana, klikając dwukrotnie plik w folderze odwołania lub wybierając **Edytuj odwołania** na jego akcje menu kontekstowe:
- 
+
 ![Okno dialogowe odwołania do edycji](media/ide-tour-image20.png)
 
 Aby uzyskać więcej informacji na temat korzystania z odwołań w programie Visual Studio dla komputerów Mac, zobacz [Zarządzanie odwołaniami w projekcie](managing-references-in-a-project.md) artykułu.
@@ -93,7 +93,7 @@ Aby uzyskać więcej informacji na temat wizualizacji danych funkcji debugera, o
 
 ## <a name="version-control"></a>Kontrola wersji
 
-Program Visual Studio for Mac integruje się z usługą Git i Subversion systemów kontroli źródła. Projektów pod kontrolą źródła są oznaczone symbolem gałęzi, na liście obok nazwy rozwiązania: 
+Program Visual Studio for Mac integruje się z usługą Git i Subversion systemów kontroli źródła. Projektów pod kontrolą źródła są oznaczone symbolem gałęzi, na liście obok nazwy rozwiązania:
 
 ![Nazwa gałęzi, aby wskazać projektu objętego kontrolą źródła](media/ide-tour-image22.png)
 
@@ -102,3 +102,7 @@ Pliki bez wprowadzania zmian mają adnotacji na ich ikon w okienku rozwiązania,
 ![Niezatwierdzone pliki w konsoli rozwiązania](media/ide-tour-image23.png)
 
 Aby uzyskać więcej informacji na temat korzystania z systemu kontroli wersji w programie Visual Studio, zobacz [kontroli wersji](version-control.md) artykułu.
+
+## <a name="see-also"></a>Zobacz także
+
+- [Visual Studio IDE (na Windows)](/visualstudio/ide/visual-studio-ide)

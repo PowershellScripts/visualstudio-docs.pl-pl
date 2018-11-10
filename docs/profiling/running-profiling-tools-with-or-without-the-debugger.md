@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92744b9fdbfa0e383ba061cfe51c80c9b8cd9976
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: adb0180d892f34374ce58db3a4830fb7e5c21f10
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929429"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220986"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Uruchamianie narzędzi profilowania z debugerem lub bez debugera
 Program Visual Studio teraz oferuje możliwość wyboru wydajności narzędzia, z których niektóre (na przykład **użycie procesora CPU** i **użycie pamięci**) można uruchamiać z lub bez debugera. Narzędzia do oceny wydajności bez debugera są przeznaczone do uruchamiania na konfiguracje wydania, podczas gdy narzędzia zintegrowane z debugerem są przeznaczone do uruchamiania w konfiguracji debugowania.  
@@ -68,7 +68,7 @@ Można użyć narzędzi profilowania bez debugera, system Windows 7 lub nowszy. 
   
    ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
-   Aby uzyskać więcej informacji, zobacz [wyszukiwanie i filtrowanie na karcie zdarzenia w oknie narzędzia diagnostyczne](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+   Aby uzyskać więcej informacji, zobacz [wyszukiwanie i filtrowanie na karcie zdarzenia w oknie narzędzia diagnostyczne](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
   
 ## <a name="collect-profiling-data-without-debugging"></a>Zbieranie danych profilowania bez debugowania  
  Niektóre narzędzia profilowania wymagają uprawnień administratora do uruchomienia. Możesz uruchomić program Visual Studio jako administrator lub użytkownik może uruchomić narzędzia jako administrator, podczas uruchamiania sesji diagnostycznej.  
@@ -126,18 +126,18 @@ Można użyć narzędzi profilowania bez debugera, system Windows 7 lub nowszy. 
  Uruchamianie sesji diagnostycznej na zdalnym komputerze lub tablecie wymaga narzędzia zdalne programu Visual Studio zainstalowane i działają w zdalnym elemencie docelowym. Dla aplikacji komputerowych, zobacz [zdalne debugowanie](../debugger/remote-debugging.md).  W przypadku aplikacji platformy uniwersalnej systemu Windows, zobacz [uruchamianie aplikacji platformy UWP na komputerze zdalnym](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Blogi i artykuły w witrynie MSDN z zespołu programistycznego diagnostyki  
- [Magazyn MSDN: Analizowanie wydajności podczas debugowania w programie Visual Studio 2015](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  
+ [Magazyn MSDN: Analizowanie wydajności podczas debugowania w programie Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)
   
- [Magazyn MSDN: Używać IntelliTrace, aby szybciej diagnozować problemy](https://msdn.microsoft.com/en-us/magazine/dn973014.aspx)  
+ [Magazyn MSDN: Używać IntelliTrace, aby szybciej diagnozować problemy](https://msdn.microsoft.com/magazine/dn973014.aspx)
   
- [Wpis w blogu: diagnozowanie przecieków procedury obsługi zdarzeń za pomocą narzędzia użycie pamięci w programie Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [Wpis w blogu: diagnozowanie przecieków procedury obsługi zdarzeń za pomocą narzędzia użycie pamięci w programie Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)
   
- [Wideo: Debugowanie historyczne za pomocą IntelliTrace w programie Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [Wideo: Debugowanie historyczne za pomocą IntelliTrace w programie Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)
   
- [Wideo: Debugowanie problemów z wydajnością za pomocą programu Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [Wideo: Debugowanie problemów z wydajnością za pomocą programu Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)
   
- [Perftip: Informacje o wydajności w skrócie podczas debugowania przy użyciu programu Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [Perftip: Informacje o wydajności w skrócie podczas debugowania przy użyciu programu Visual Studio](https://blogs.msdn.microsoft.com/devops/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
   
- [Okno debugera narzędzia diagnostyczne w programie Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Okno debugera narzędzia diagnostyczne w programie Visual Studio 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015/)
   
- [Funkcja IntelliTrace w Visual Studio Enterprise 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
+ [Funkcja IntelliTrace w Visual Studio Enterprise 2015](https://blogs.msdn.microsoft.com/devops/2015/01/16/intellitrace-in-visual-studio-ultimate-2015/)

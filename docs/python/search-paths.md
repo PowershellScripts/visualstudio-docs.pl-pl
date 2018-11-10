@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e3a52579a5b22308c4255cbe41617bc37f47bbab
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 92185b224af50dd5cf125d62282f1e8f7b951bc6
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219981"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349003"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Jak program Visual Studio używa ścieżki wyszukiwania języka Python
 
@@ -36,7 +36,7 @@ Pliki z *zip* lub *.egg* rozszerzenia mogą być również dodawane jako ścież
 
 Jeśli zawartość nie zmienia się często regularnie używasz tej samej ścieżki wyszukiwania, może być bardziej efektywne i zainstaluj go w folderze pakietów lokacji. Ścieżka wyszukiwania są następnie analizowane i przechowywane w bazie danych technologii IntelliSense, zawsze jest skojarzony ze środowiskiem zamierzone i nie wymaga ścieżki wyszukiwania, który ma zostać dodany do każdego projektu.
 
-### <a name="see-also"></a>Zobacz także
+## <a name="see-also"></a>Zobacz także
 
 - [Zarządzanie środowiskami Python w programie Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Wybierz interpreter dla projektu](selecting-a-python-environment-for-a-project.md)

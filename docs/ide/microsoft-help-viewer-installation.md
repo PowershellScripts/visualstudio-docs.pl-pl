@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 512a573a0d04f9459080442a2b2b01837ac37229
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: caba938f491855695ca94e5c8f4765d4ecfa8da8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942753"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348152"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalacja podglądu pomocy firmy Microsoft
 
@@ -39,7 +39,7 @@ Innym sposobem na łatwe instalowanie podglądu pomocy firmy Microsoft jest za p
 
    ![Szybkie uruchamianie pole](media/help_viewer_quick_launch.png)
 
-1. Wybierz wynik o nazwie **Help Viewer (składnik Indiviual)**.
+1. Wybierz wynik o nazwie **Help Viewer (poszczególnych składników)**.
 
 1. W wyświetlonym oknie dialogowym wybierz **zainstalować** przycisku.
 

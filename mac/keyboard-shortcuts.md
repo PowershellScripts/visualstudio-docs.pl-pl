@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 3aea39862ee2221454a337d7c50defd41319623b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: ff5a7d79bf59f841aaf1957095cb2ae0e53a46c7
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42624278"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295114"
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Typowe skróty klawiaturowe w programie Visual Studio dla komputerów Mac
 
@@ -18,17 +18,17 @@ ms.locfileid: "42624278"
 
 To polecenie spowoduje wygenerowanie kontekstowe kodu:
 
- `⌘ + 1`
+`⌘ + 1`
 
 ![Opcje generowania kodu powiązany z wybrany symbol zostanie wyświetlony panel](media/keyboard-shortcuts-image8.png)
 
 ## <a name="search-files-symbols-and-commands"></a>Wyszukaj pliki, symbole i polecenia
 
-`control + .` 
+`control + .`
 
-## <a name="autocomplete"></a>Autouzupełnianie 
+## <a name="autocomplete"></a>Autouzupełnianie
 
-`control + /` 
+`control + /`
 
 ## <a name="quick-fixes-and-actions"></a>Szybkich poprawek i akcje
 
@@ -50,7 +50,7 @@ Pozwala na szybkie przełączanie się między plikami:
 
 ## <a name="move-lines-around-in-editor"></a>Przenoszenie wierszy w edytorze
 
-`alt + up/down` 
+`alt + up/down`
 
 Użyj **alt + nawet** polecenie Przenieś w górę bieżącego wiersza lub bieżącego wybranych wierszy w celu użycia **alt + dół** polecenie, aby przenieść wiersze w dół. Dodatek języka obsługuje tę funkcję, wiersze zostaną ponownie wcięte do dopasowania kontekstu, gdy ich przenosić i zakresu.
 
@@ -71,3 +71,7 @@ Przenosi karetkę do początku lub na końcu wiersza:
 Rozwija word, wyrażeń podrzędnych, poufności i wybór elementów członkowskich wiersza w sposób logiczny:
 
 `alt + shift + up` Aby wybrać `alt + shift + down` do Usuń zaznaczenie pola wyboru
+
+## <a name="see-also"></a>Zobacz także
+
+- [Skróty klawiaturowe w programie Visual Studio (na Windows)](/visualstudio/ide/tips-and-tricks-for-visual-studio)

@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9b6890613cc4ad41af77e27f7f41c6f5c9da
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219851"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349339"
 ---
 # <a name="python-web-application-project-templates"></a>Szablony projektów aplikacji sieci web języka Python
 
 Język Python w programie Visual Studio obsługuje tworzenie projektów sieci web platformy Bottle, Flask i Django przy użyciu szablonów projektu i uruchamianie debugowania, które mogą być skonfigurowane do obsługi różnych platform. Te szablony obejmują *requirements.txt* pliku do zadeklarowania zależnościami. Podczas tworzenia projektu z jednej z tych szablonów, programu Visual Studio wyświetli monit o zainstalowanie tych pakietów (zobacz [Zainstaluj wymagania projektu](#install-project-requirements) w dalszej części tego artykułu).
 
-Możesz również użyć ogólnego **projektu sieci Web** szablonu dla innych platform, takich jak ostrosłupa. W tym przypadku nie struktur są instalowane przy użyciu szablonu. Zamiast tego Zainstaluj wymagane pakiety do środowiska używasz projektu (zobacz [środowiska Python zarządzanie](managing-python-environments-in-visual-studio.md)).
+Możesz również użyć ogólnego **projektu sieci Web** szablonu dla innych platform, takich jak ostrosłupa. W tym przypadku nie struktur są instalowane przy użyciu szablonu. Zamiast tego Zainstaluj wymagane pakiety do środowiska używasz projektu (zobacz [okna środowiska Python - karcie pakietu](python-environments-window-tab-reference.md#packages-tab)).
 
 Aby uzyskać informacje na temat wdrażania aplikacji sieci web w języku Python na platformie Azure, zobacz [Publikuj w usłudze Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md).
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16ec8cdb2402546f2059053495a8e656427783e3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3adcb961e3031180054706da9d43dd04dccdedf
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49937333"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348646"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Projektowanie XAML w programie Visual Studio
 
@@ -52,7 +52,7 @@ Dla najbardziej podstawowe zadania środowisko IDE programu Visual Studio i Blen
 
 - **Typowe Eksploratora rozwiązań:** **Eksploratora rozwiązań** zapewnia zorganizowany widok projektów i ich pliki, a także uzyskać dostęp do poleceń związanych z nimi. Za pomocą Eksploratora rozwiązań łatwiej jest pracować z projektami dużych przedsiębiorstw. Zobacz [rozwiązania i projekty](../ide/solutions-and-projects-in-visual-studio.md).
 
-- **Team Explorer:** za pomocą programu Team Explorer można zarządzać projektów z repozytoriami GIT lub TFS, ułatwiające współpracę zespołową. Zobacz [pracy w programie Team Explorer](http://msdn.microsoft.com/Library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
+- **Team Explorer:** za pomocą programu Team Explorer można zarządzać projektów z repozytoriami GIT lub TFS, ułatwiające współpracę zespołową. Zobacz [pracy w programie Team Explorer](/azure/devops/user-guide/work-team-explorer).
 
 - **Pakiet NuGet:** można zarządzać pakietami NuGet w programie Visual Studio i Blend for Visual Studio. NuGet to Menedżer pakietów dla platformy .NET Framework, która upraszcza instalacji i usuwania pakietów za pomocą rozwiązania.
 

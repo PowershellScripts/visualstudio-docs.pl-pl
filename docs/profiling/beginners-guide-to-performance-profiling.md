@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f206faf2934883c346b39a83c7953f87c98f95dc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 966697652e969c3d6de9f3c17f52f88e84c89bb8
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898242"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220680"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Wydajność aplikacji profilującej w programie Visual Studio
 Za pomocą programu Visual Studio profiling tools do analizowania problemów z wydajnością w aplikacji. Poniższa procedura przedstawia sposób użycia **użycie procesora CPU** karta Narzędzia diagnostyczne, aby uzyskać dane wydajności dotyczące Twojej aplikacji. Narzędzia diagnostyczne są obsługiwane podczas tworzenia aplikacji .NET w programie Visual Studio, w tym usługi ASP.NET i dla rozwoju natywnego/C++.
@@ -69,7 +69,7 @@ W tym samouczku wykonasz następujące czynności:
 
      ![Karta Podsumowanie narzędzia do diagnostyki](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
-     Aby uzyskać więcej informacji na temat zdarzeń, zobacz [wyszukiwanie i filtrowanie na karcie zdarzenia w oknie narzędzia diagnostyczne](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)
+     Aby uzyskać więcej informacji na temat zdarzeń, zobacz [wyszukiwanie i filtrowanie na karcie zdarzenia w oknie narzędzia diagnostyczne](https://blogs.msdn.microsoft.com/devops/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).
 
 6.  Uruchom scenariusz, który spowoduje, że pierwszy punkt przerwania na.
 

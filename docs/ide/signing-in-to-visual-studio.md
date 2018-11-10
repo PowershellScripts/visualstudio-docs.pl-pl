@@ -11,16 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e947ec99ff0d63f413e00f5602035a7baa0bd708
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542497"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348342"
 ---
 # <a name="sign-in-to-visual-studio"></a>Logowanie do programu Visual Studio
 
 Możesz spersonalizować i poprawić komfort programowania w programie Visual Studio, jeśli ustawisz konta personalizacji, logując się do środowiska IDE.
+
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [Zaloguj się do programu Visual Studio dla komputerów Mac](/visualstudio/mac/signing-in).
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Dlaczego powinienem się zarejestrować w usłudze Visual Studio?
 
@@ -68,3 +71,5 @@ Jeśli wystąpią problemy podczas logowania, zobacz [konta pomocy technicznej](
 
 * [Jak odblokować program Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Środowisko IDE programu Visual Studio — przegląd](../ide/visual-studio-ide.md)
+* [Zaloguj się (Visual Studio dla komputerów Mac)](/visualstudio/mac/signing-in)
+* [Aktywacja (Visual Studio dla komputerów Mac)](/visualstudio/mac/activation)

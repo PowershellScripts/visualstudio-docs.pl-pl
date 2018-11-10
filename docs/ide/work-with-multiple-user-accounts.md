@@ -9,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eaba2b81467c60e900aa70b633e15b81175ffc7
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 33f88444d7bbdc0b0fe85bfa5efbdbbd794fa3e4
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283473"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349396"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Praca z wieloma kontami użytkowników
 
@@ -80,3 +80,4 @@ Teraz przejdź do **Eksploratora serwera** ponownie, kliknij prawym przyciskiem 
 ## <a name="see-also"></a>Zobacz także
 
 - [Logowanie do programu Visual Studio](signing-in-to-visual-studio.md)
+- [Zaloguj się do programu Visual Studio dla komputerów Mac](/visualstudio/mac/signing-in)

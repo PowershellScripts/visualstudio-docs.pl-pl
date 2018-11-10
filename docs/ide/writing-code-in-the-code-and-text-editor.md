@@ -12,16 +12,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 397ed4ea94aa54c8f8d31fc6ff0d08da16a93479
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8be5d3692459c2c65d4243c831ef4de002828bb0
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624117"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349078"
 ---
 # <a name="features-of-the-code-editor"></a>Funkcje edytora kodu
 
 Edytor programu Visual Studio zapewnia wiele funkcji, które ułatwiają zapis i zarządzanie nimi, tekstu i kodu. Można rozwijać i zwijać różne bloki kodu przy użyciu konturów. Więcej o kodzie można znaleźć za pomocą technologii IntelliSense, **przeglądarki obiektów**i hierarchii wywoływania. Kod można znaleźć przy użyciu funkcji, takich jak **przejdź do**, **przejdź do definicji**, i **Znajdź wszystkie odwołania**. Możesz wstawiać bloki kodu za pomocą wstawek kodu i może wygenerować kod, za pomocą funkcji, takich jak **Generowanie z użycia**. Jeśli po raz pierwszy używasz Edytor programu Visual Studio przed, zobacz [Edytuj kod](https://visualstudio.microsoft.com/vs/features/ide/) Aby uzyskać szybki przegląd.
+
+> [!NOTE]
+> Ten temat dotyczy programu Visual Studio w Windows. Dla programu Visual Studio dla komputerów Mac, zobacz [Edytor źródła (program Visual Studio dla komputerów Mac)](/visualstudio/mac/source-editor).
 
 Możesz wyświetlić swój kod na wiele różnych sposobów. Domyślnie **Eksploratora rozwiązań** pokazuje kod zorganizowane w pliki. Możesz kliknąć **Widok klas** karta w dolnej części okna, aby wyświetlić kod uporządkowane według klasy.
 
@@ -87,6 +90,7 @@ Aby uzyskać więcej informacji na temat dostosowywania edytora, zobacz [dostoso
 
 ## <a name="see-also"></a>Zobacz także
 
+- [Edytor źródła (program Visual Studio dla komputerów Mac)](/visualstudio/mac/source-editor)
 - [Visual Studio IDE](../ide/visual-studio-ide.md)
 - [Wprowadzenie do języka C++ w programie Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
 - [Wprowadzenie do języka C# i platformy ASP.NET w programie Visual Studio](../ide/tutorial-csharp-aspnet-core.md)

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e4f4e79941be143f4eb6252dac735015f6145881
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 5e7479a8d121eeb518d5ba39c9eb1444af64a788
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324993"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349024"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Jak zainstalować obsługę języka Python w programie Visual Studio na Windows
 
@@ -48,7 +48,7 @@ Aby szybko przetestować, obsługa w języku Python po wykonaniu kroków instala
 
     ![Obciążenie programowania języka Python w Instalatorze programu Visual Studio](media/installation-python-workload.png)
 
-    Opcjonalnie: Jeśli pracujesz z analizy danych, należy również rozważyć **aplikacji analitycznych i naukowych opracowań danych** obciążenia. To obciążenie obejmuje obsługę języka Python, a także języków R i F #. Aby uzyskać więcej informacji, zobacz [obciążenie dla aplikacji analitycznych i naukowych opracowań danych](../rtvs/data-science-and-analytical-applications-workload.md).
+    Opcjonalnie: Jeśli pracujesz z analizy danych, należy również rozważyć **aplikacji analitycznych i naukowych opracowań danych** obciążenia. To obciążenie obejmuje obsługę języka Python, a także języka R i F# języków. Aby uzyskać więcej informacji, zobacz [obciążenie dla aplikacji analitycznych i naukowych opracowań danych](../rtvs/data-science-and-analytical-applications-workload.md).
 
     > [!Note]
     > Obciążenia języka Python i nauki o danych są dostępne tylko w przypadku programu Visual Studio 2017 wersja 15.2 i nowszych wersjach.
@@ -59,7 +59,7 @@ Aby szybko przetestować, obsługa w języku Python po wykonaniu kroków instala
 
     | Opcja | Opis |
     | --- | --- |
-    | Dystrybucje języka Python | Wybierz dowolną kombinację wariantów 32-bitowych i 64-bitowe języka Python 2, 3 języka Python, anaconda2, wersja i Anaconda3 dystrybucji, które zamierzasz pracować. Każde zawiera obsługę dystrybucji interpreter środowiska uruchomieniowego i bibliotek. Anaconda, to w szczególności platforma analizy otwartej obsługi danych, która zawiera szereg wstępnie zainstalowane pakiety. (Można zwrócić do Instalatora programu Visual Studio w dowolnym momencie, aby dodać lub usunąć dystrybucje.)  **Uwaga**: po zainstalowaniu dystrybucji poza Instalatora programu Visual Studio, czy nie ma potrzeby Sprawdź tutaj opcji równoważne. Program Visual Studio automatycznie wykrywa istniejącej instalacji środowiska Python. Zobacz [środowiska Python](managing-python-environments-in-visual-studio.md). Ponadto jeśli nowszą wersję języka Python jest dostępny od przedstawionego w oknie Instalatora tej wersji można zainstalować oddzielnie i Visual Studio wykryje go. |
+    | Dystrybucje języka Python | Wybierz dowolną kombinację wariantów 32-bitowych i 64-bitowe języka Python 2, 3 języka Python, anaconda2, wersja i Anaconda3 dystrybucji, które zamierzasz pracować. Każde zawiera obsługę dystrybucji interpreter środowiska uruchomieniowego i bibliotek. Anaconda, to w szczególności platforma analizy otwartej obsługi danych, która zawiera szereg wstępnie zainstalowane pakiety. (Można zwrócić do Instalatora programu Visual Studio w dowolnym momencie, aby dodać lub usunąć dystrybucje.)  **Uwaga**: po zainstalowaniu dystrybucji poza Instalatora programu Visual Studio, czy nie ma potrzeby Sprawdź tutaj opcji równoważne. Program Visual Studio automatycznie wykrywa istniejącej instalacji środowiska Python. Zobacz [okna środowiska Python](managing-python-environments-in-visual-studio.md#the-python-environments-window). Ponadto jeśli nowszą wersję języka Python jest dostępny od przedstawionego w oknie Instalatora tej wersji można zainstalować oddzielnie i Visual Studio wykryje go. |
     | **Obsługa szablonów Cookiecutter** | Instaluje Cookiecutter graficznego interfejsu użytkownika, aby odnaleźć szablonów, wprowadź opcje szablonu i tworzenie projektów i plików. Zobacz [używanie rozszerzenia Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Obsługa sieci web w języku Python** | Instaluje narzędzia do tworzenia aplikacji internetowych, w tym HTML, CSS i JavaScript, edycję, wraz z szablonów dla projektów przy użyciu platformy Bottle, Flask i Django. Zobacz [internetowa szablony projektów w języku Python](python-web-application-project-templates.md). |
     | **Obsługa IoT w języku Python** | Obsługuje rozwój systemu Windows IoT Core przy użyciu języka Python. |

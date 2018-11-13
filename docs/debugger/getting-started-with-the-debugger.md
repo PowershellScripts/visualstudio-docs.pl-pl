@@ -1,7 +1,7 @@
 ---
 title: Dowiedz się, jak debugowanie za pomocą debugera programu Visual Studio
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
-ms.custom: mvc
+ms.custom: debug-experiment
 ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9cb4e6b69f88f0c3e61d17211ffe5ff464f1b17
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d832753b798cc9e476b675f8791c1ab245b3adee
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827562"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561676"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Samouczek: Dowiedz się, jak debugowanie za pomocą programu Visual Studio
 
@@ -45,7 +45,7 @@ W tym samouczku wykonasz następujące czynności:
 
 * Konieczne jest posiadanie programu Visual Studio 2017 i **programowanie aplikacji klasycznych dla platformy .NET** lub **programowanie aplikacji klasycznych w języku C++** obciążenia.
 
-    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
     Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe (wybierz **pliku**  >  **Nowe** > **projektu**). Uruchamia Instalatora programu Visual Studio. Wybierz opcję. **Netto programowanie aplikacji klasycznych** lub **programowanie aplikacji klasycznych w języku C++** obciążenia, wybierz **Modyfikuj**.
 

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: cd3dce86104343b6c10bd1329b3ee3cdb7c7ee4f
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120358"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561650"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Krok 5: Uwierzytelnianie użytkowników w Django
 
@@ -152,24 +152,30 @@ Poniższe kroki wykonuje przepływ uwierzytelniania i opisano części projektu,
 
 1. Aby sprawdzić, czy uwierzytelniony użytkownik jest autoryzowany do dostępu do określonych zasobów, musisz pobrać uprawnienia specyficzne dla użytkowników ze swojej bazy danych. Aby uzyskać więcej informacji, zobacz [przy użyciu uwierzytelniania systemu Django](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization) (Django docs).
 
-1. Administrator lub administrator, w szczególności jest autoryzowany do dostępu do wbudowanych interfejsów administratora Django przy użyciu względnych adresów URL "/admin/" i "/ admin/docs /". Aby włączyć te interfejsy, otwórz projekt Django *urls.py* i Usuń komentarze z następujących pozycji:
+1. Administrator lub administrator, w szczególności jest autoryzowany do dostępu do wbudowanych interfejsów administratora Django przy użyciu względnych adresów URL "/admin/" i "/ admin/docs /". Aby włączyć te interfejsy, wykonaj następujące czynności:
 
-    ```python
-    from django.conf.urls import include
-    from django.contrib import admin
-    admin.autodiscover()
+    1. Zainstaluj pakiet języka Python docutils do własnego środowiska. Jest doskonały sposób, w tym celu można dodać "docutils" Twoje *requirements.txt* pliku, a następnie w obszarze **Eksploratora rozwiązań**, rozwiń węzeł projektu, rozwiń węzeł **środowiska Python** węzła, a następnie Kliknij prawym przyciskiem myszy środowiska używasz wybierz **Zainstaluj z pliku requirements.txt**.
 
-    # ...
-    urlpatterns = [
+    1. Otwórz projekt Django *urls.py* i usuwanie komentarzy domyślne z następujących pozycji:
+
+        ```python
+        from django.conf.urls import include
+        from django.contrib import admin
+        admin.autodiscover()
+
         # ...
-        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    ```
+        urlpatterns = [
+            # ...
+            url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+            url(r'^admin/', include(admin.site.urls)),
+        ]
+        ```
 
-    Po ponownym uruchomieniu aplikacji, możesz przejść do "/admin/" i "/ admin/docs /" i wykonywać zadania takie jak utworzenie dodatkowych kont użytkowników.
+    1. W projekcie Django *settings.py* pliku, przejdź do folderu `INSTALLED_APPS` kolekcji i Dodaj `'django.contrib.admindocs'`.
 
-    ![Django Administratorze](media/django/step05-administrator-interface.png)
+    1. Po ponownym uruchomieniu aplikacji, możesz przejść do "/admin/" i "/ admin/docs /" i wykonywać zadania, takie jak utworzenie dodatkowych kont użytkowników.
+
+        ![Django Administratorze](media/django/step05-administrator-interface.png)
 
 1. Wylogowanie końcowe część z przepływem uwierzytelniania. Jak widać w *loginpartial.html*, **wylogować** łącze jest po prostu WPIS względny adres URL "/ logowania", który jest obsługiwany przez wbudowany view `django.contrib.auth.views.logout`. Ten widok nie wyświetla żadnych interfejsów użytkownika i po prostu powoduje przejście do strony głównej (jak pokazano na *urls.py* dla "^ wylogowania$" wzorca). Jeśli chcesz wyświetlić stronę wylogowywania, należy najpierw zmienić wzorzec adresu URL w następujący sposób, aby dodać właściwość "template_name" i Usuń właściwość "next_page":
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: dffc0344c0cd7c226ae6651679c4a8f491d8aaa3
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42623991"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607806"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Dowiedz się więcej o projekty i rozwiązania
 
@@ -100,7 +100,7 @@ Mamy pusty projekt. Dodajmy pliku kodu.
    }
    ```
 
-   Nie musisz zrozumieć, co dany kod realizuje, ale jeśli chcesz, można uruchomić program i zobacz, wydrukowaniu dzisiejszej daty do konsoli (lub standardowe dane wyjściowe) okno.
+   Nie musisz zrozumieć, co dany kod realizuje, ale jeśli chcesz, można uruchomić program, naciskając klawisz **Ctrl**+**F5** i zobacz, wydrukowaniu dzisiejszej daty do konsoli (lub standardowe dane wyjściowe) okno.
 
 ## <a name="add-a-second-project"></a>Dodasz drugi projekt
 
@@ -148,7 +148,7 @@ Będziemy używać nowego projektu testu jednostkowego do testowania naszych met
 
    Zobaczysz czerwony symbol "falista" w obszarze część kodu. Naprawimy ten błąd, wprowadzając projekt testowy [przyjaznego zestawu](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies) do **QuickDate** projektu.
 
-1. Ponownie **QuickDate** otwarty projekt *Calendar.cs* plik, jeśli nie jest jeszcze otwarty, a następnie dodaj następujący kod [za pomocą instrukcji](/dotnet/csharp/language-reference/keywords/using-statement) i <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atrybutu do Napraw błąd w projekcie testowym.
+1. Ponownie **QuickDate** otwarty projekt *Calendar.cs* plik, jeśli nie jest jeszcze otwarty, a następnie dodaj następujący kod [za pomocą instrukcji](/dotnet/csharp/language-reference/keywords/using-statement) i <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atrybutu do góry pliku, aby rozwiązać problem w projekcie testowym.
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -162,11 +162,11 @@ Będziemy używać nowego projektu testu jednostkowego do testowania naszych met
 
 ## <a name="project-properties"></a>Właściwości projektu
 
-Wiersz w pliku kodu C#, która zawiera <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atrybut odwołuje się nazwa zestawu (nazwa pliku) **QuickTest** projektu. Nazwa zestawu może nie być taka sama jak nazwa projektu. Aby znaleźć nazwy zestawu projektu, otwórz właściwości projektu.
+Wiersz w *Calendar.cs* pliku, który zawiera <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atrybut odwołuje się nazwa zestawu (nazwa pliku) **QuickTest** projektu. Nazwa zestawu może nie być taka sama jak nazwa projektu. Aby znaleźć nazwy zestawu projektu, otwórz właściwości projektu.
 
 1. W **Eksploratora rozwiązań**, wybierz opcję **QuickTest** projektu. Wybierz z menu kliknij prawym przyciskiem myszy lub kontekst **właściwości**, lub po prostu naciśnij **Alt**+**Enter**.
 
-   *Stron właściwości* dla projektu, Otwórz na **aplikacji** kartę. Strony właściwości zawierają różne ustawienia dla projektu. Należy zauważyć, że nazwa zestawu **QuickTest** projekt jest w rzeczywistości "QuickTest". Jeśli chcesz je zmienić, oznacza to, gdzie należy ją zmienić. Następnie podczas tworzenia projektu testowego, wynikowy plik wykonywalny będzie zmiany nazwy z *QuickTest.exe* możesz wybrać.
+   *Stron właściwości* dla projektu, Otwórz na **aplikacji** kartę. Strony właściwości zawierają różne ustawienia dla projektu. Należy zauważyć, że nazwa zestawu **QuickTest** projekt jest w rzeczywistości "QuickTest". Jeśli chcesz je zmienić, oznacza to, gdzie sposób, jak. Następnie podczas tworzenia projektu testowego, wynikowy plik binarny może zmiany nazwy z *QuickTest.dll* możesz wybrać.
 
    ![Właściwości projektu](media/quickstart-projects-properties.png)
 
@@ -175,6 +175,11 @@ Wiersz w pliku kodu C#, która zawiera <xref:System.Runtime.CompilerServices.Int
 ## <a name="next-steps"></a>Następne kroki
 
 Jeśli chcesz sprawdzić, czy działa testu jednostkowego, wybierz opcję **Test** > **Uruchom** > **wszystkie testy** z paska menu. Wywołuje okno **Eksploratora testów** zostanie otwarta, a powinna być wyświetlana **TestGetCurrentDate** przebiegów testów.
+
+![Test Explorer tekstu w programie Visual Studio przedstawiający przekazany](media/quickstart-projects-test-explorer.png)
+
+> [!TIP]
+> Jeśli **Eksplorator testów** nie automatycznie, otwórz go, wybierając **testu** > **Windows** > **Eksplorator testów** z paska menu.
 
 ## <a name="see-also"></a>Zobacz także
 

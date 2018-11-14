@@ -2,7 +2,7 @@
 title: Co nowego w programie Visual Studio 2017
 description: Dowiedz się więcej o nowych funkcjach w programie Visual Studio 2017.
 ms.custom: ''
-ms.date: 09/04/2018
+ms.date: 11/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -17,16 +17,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf6de28ff98bf7a05098cabefb86b8cd5169d27
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 51a87e5df597c398c89f59b53fa9d92585d8d4fb
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673035"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607877"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s Nowość w programie Visual Studio 2017
 
-**Zaktualizowano do programu [należy zachować 15,8 wydania](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
+**Zaktualizowano do programu [wersji 15.9](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)**
 
 Chcesz uaktualnienie z poprzedniej wersji programu Visual Studio? Oto, co program Visual Studio 2017 można zaoferować: Niezrównana wydajność dla każdego programisty, każdej aplikacji i dowolnej platformy. Visual Studio 2017 umożliwia tworzenie aplikacji dla systemów Android, iOS, Windows, Linux, sieci web i chmury. Szybko twórz kod, z łatwością debuguj i diagnozuj, często testuj i swobodnie wydawaj. Możesz również rozszerzać funkcjonalność programu Visual Studio oraz go dostosowywać, tworząc własne rozszerzenia. Korzystanie z kontroli wersji, elastyczność i Współpracuj efektywnie dzięki tej wersji!
 

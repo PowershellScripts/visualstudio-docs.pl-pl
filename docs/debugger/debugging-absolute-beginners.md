@@ -327,7 +327,7 @@ Po znalezieniu region kodu z tym problemem, należy użyć debugera, aby zbadać
 > [!TIP]
 > Możesz użyć debugera, aby pomóc w znalezieniu błędów. Narzędzie do debugowania można znaleźć błędy *dla Ciebie* tylko wtedy, gdy wie celem swój kod. To narzędzie można tylko zamiar kodu, jeśli informacje możesz developer, express, tym przeznaczeniem. Zapisywanie [testów jednostkowych](../test/improve-code-quality.md) się, jak to zrobić.
 
-## <a name="next-steps"></a>Kolejne kroki
+## <a name="next-steps"></a>Następne kroki
 
 W tym artykule wyjaśniono kilka ogólnych pojęć debugowania. Następnie można uruchomić, jak można debugować za pomocą programu Visual Studio.
 

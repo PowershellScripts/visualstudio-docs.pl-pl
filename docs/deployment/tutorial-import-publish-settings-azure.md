@@ -48,7 +48,7 @@ Plik ustawień publikowania (*\*.publishsettings*) różni się od profilu publi
 
 1. Na komputerze z programem Visual Studio wybierz **pliku** > **nowy projekt**.
 
-1. W obszarze **Visual C#** lub **języka Visual Basic**, wybierz **Web**, a następnie w środkowym okienku wybierz **aplikacji sieci Web platformy ASP.NET (.NET Framework)**(tylko język C#) lub **aplikacji sieci Web programu ASP.NET Core**, a następnie kliknij przycisk **OK**.
+1. W obszarze **Visual C#**  lub **języka Visual Basic**, wybierz **Web**, a następnie w środkowym okienku wybierz **aplikacji sieci Web platformy ASP.NET (.NET Framework)** lub (C# tylko) **aplikacji sieci Web programu ASP.NET Core**, a następnie kliknij przycisk **OK**.
 
     Jeśli nie widzisz szablony określonego projektu, kliknij przycisk **Otwórz Instalator programu Visual Studio** łącze w okienku po lewej stronie **nowy projekt** okno dialogowe. Uruchamia Instalatora programu Visual Studio. Zobacz wymagania wstępne w tym artykule, aby zidentyfikować wymagane obciążeń programu Visual Studio, które trzeba zainstalować.
 

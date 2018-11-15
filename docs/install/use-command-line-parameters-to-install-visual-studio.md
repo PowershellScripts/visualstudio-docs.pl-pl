@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 051935a2c7022af3c6811e90a89697a08f52fa9a
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 55cf6eb2a46f707e5c0c20633ab92ac2304214ec
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050368"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645201"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017
 
@@ -55,6 +55,7 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 | `update` | Aktualizuje zainstalowany produkt. |
 | `repair` | Naprawia zainstalowany produkt. |
 | `uninstall` | Odinstalowuje zainstalowany produkt. |
+| `export` | **Nowość w 15.9**: eksportuje wybór instalacji do pliku konfiguracji instalacji. |
 
 | **Opcję instalacji** | **Opis** |
 | ----------------------- | --------------- |
@@ -74,6 +75,7 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 | `--nickname <name>` | **Opcjonalnie**: definiuje pseudonim w celu przypisania do zainstalowanego produktu. Pseudonim nie może być dłuższa niż 10 znaków.  |
 | `--productKey` | **Opcjonalnie**: Określa klucz produktu na potrzeby zainstalowany produkt. Składa się z 25 alfanumeryczne znaki w formacie `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` lub `xxxxxxxxxxxxxxxxxxxxxxxxx`. |
 | `--help, --?, -h, -?` | Wyświetl w trybie offline wersję tej strony. |
+| `--config <path>` | **Nowość w 15.9 opcjonalne**: podczas instalacji lub zmodyfikować działanie, ta wartość określa obciążeń i składników, aby dodać opartego na pliku konfiguracji instalacji wcześniej zapisany. Ta operacja jest dodatku i nie spowoduje usunięcia dowolnych obciążeń lub składników, jeśli nie istnieją w pliku. Ponadto elementy, których nie można zastosować do produktu nie zostanie dodany. Podczas operacji eksportowania Określa lokalizację do zapisania pliku konfiguracji instalacji. |
 
 > Uwaga: Podczas określania wielu obciążeń i składników, należy powtórzyć `--add` lub `--remove` przełącznik wiersza polecenia dla każdego elementu.
 

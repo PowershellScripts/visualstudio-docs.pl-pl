@@ -80,7 +80,7 @@ Edycja właściwości akcji UI
   
  Aby zmodyfikować właściwości dla akcji interfejsu użytkownika w **działania interfejsu użytkownika** okienku rozwiń metody testowej, który zawiera działania interfejsu użytkownika, który chcesz edytować właściwości, wybierz działania interfejsu użytkownika, a następnie zmodyfikuj właściwości w oknie właściwości.  
   
- Na przykład jeśli serwer nie jest dostępny i ma akcji interfejsu użytkownika skojarzonego z przeglądarką sieci Web, stanów **przejdź do strony sieci Web "<http://Contoso1/default.aspx’>"** , można zmienić adres URL do `‘ http://Contoso2/default.aspx’`.  
+ Na przykład jeśli serwer nie jest dostępny i ma akcji interfejsu użytkownika skojarzonego z przeglądarką sieci Web, stanów **przejdź do strony sieci Web "<http://Contoso1/default.aspx’>"** , można zmienić adres URL do `‘http://Contoso2/default.aspx’`.  
   
  ![Właściwości formantu](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Edycja właściwości kontrolki  

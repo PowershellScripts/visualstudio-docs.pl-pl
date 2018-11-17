@@ -5,19 +5,19 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 11/13/2018
+ms.date: 11/15/2018
 ms.topic: reference
 helpviewer_keywords: ''
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: f5312f18c006505697a76bcc8f11197b1d780b36
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: cf7b70ff310680bab90066c2d4929c95b47352ea
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645175"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826859"
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Program Visual Studio 2017 numery wersji i daty wydania
 
@@ -25,6 +25,7 @@ W poniższej tabeli wymieniono daty liczb i wersji kompilacji dla programu Visua
 
 | **Wersja**| **Channel** | **Data wydania** | **Wersja kompilacji** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.1 | Wydanie | 15 listopada 2018 r. | 15.9.28307.105 |
 | 15.9.0 | Wydanie | 13 listopada 2018 r. | 15.9.28307.53 |
 | 15.9.0 w wersji zapoznawczej 6 | Wersja zapoznawcza | 13 listopada 2018 r. | 15.9.28307.53 |
 | 15.9.0 w wersji zapoznawczej 5 | Wersja zapoznawcza | 6 listopada 2018 r. | 15.9.28302.56 |

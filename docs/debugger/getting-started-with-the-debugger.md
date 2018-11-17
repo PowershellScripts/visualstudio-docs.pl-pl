@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d832753b798cc9e476b675f8791c1ab245b3adee
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: ba3da2325750fca655e0de28e13bb13da208963d
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561676"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826781"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>Samouczek: Dowiedz się, jak debugowanie za pomocą programu Visual Studio
 
@@ -297,7 +297,7 @@ W tym samouczku wykonasz następujące czynności:
 
     Punkty przerwania są najbardziej podstawowa i podstawowych funkcji niezawodne debugowanie. Punkt przerwania wskazuje, gdzie programu Visual Studio powinny zawiesić uruchamianie kodu, dzięki czemu możesz zapoznaj się z wartości zmiennych lub zachowanie pamięci lub czy gałąź kodu wprowadzenie uruchomieniu. 
 
-6. Naciśnij klawisz **F5** lub **Rozpocznij debugowanie** przycisku aplikacja zostanie uruchomiona, i debuger uruchamia wiersz kodu, gdzie ustawić punkt przerwania.
+2. Naciśnij klawisz **F5** lub **Rozpocznij debugowanie** przycisku aplikacja zostanie uruchomiona, i debuger uruchamia wiersz kodu, gdzie ustawić punkt przerwania.
 
     ![Ustaw i Traf punkt przerwania](../debugger/media/get-started-set-breakpoint.gif)
 
@@ -325,14 +325,14 @@ Przede wszystkim, używamy skróty klawiaturowe w tym miejscu, ponieważ jest to
 
 ## <a name="navigate-code-using-run-to-click"></a>Przechodzenie do kodu przy użyciu polecenia Uruchom do kliknięcia
 
-5. W edytorze kodu, przewiń w dół, umieść kursor nad `Console.WriteLine` — metoda (`std::cout` w języku C++) w `Triangle` klasy do momentu zielony **uruchamianie do kliknięcia** przycisk ![uruchamianie do kliknięcia](../debugger/media/dbg-tour-run-to-click.png " RunToClick") pojawia się po lewej stronie.
+1. W edytorze kodu, przewiń w dół, umieść kursor nad `Console.WriteLine` — metoda (`std::cout` w języku C++) w `Triangle` klasy do momentu zielony **uruchamianie do kliknięcia** przycisk ![uruchamianie do kliknięcia](../debugger/media/dbg-tour-run-to-click.png " RunToClick") pojawia się po lewej stronie.
 
      ![Użyj Uruchom do kliknięcia funkcji](../debugger/media/get-started-run-to-click.png "uruchamianie do kliknięcia")
 
    > [!NOTE]
    > **Uruchamianie do kliknięcia** przycisk jest nowego w programie [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Jeśli nie widzisz przycisku zieloną strzałkę, użyj **F11** w tym przykładzie zamiast Aby awansować debugera we właściwym miejscu.
 
-6. Kliknij przycisk **uruchamianie do kliknięcia** przycisk ![uruchamianie do kliknięcia](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Kliknij przycisk **uruchamianie do kliknięcia** przycisk ![uruchamianie do kliknięcia](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     Za pomocą tego przycisku jest podobna do ustawienia tymczasowy punkt przerwania. **Uruchamianie do kliknięcia** jest przydatna do poruszania się szybko w obrębie regionu widoczne dla kodu aplikacji (możesz kliknąć dowolny otwarty plik).
 
@@ -447,4 +447,4 @@ Funkcje, które pozwalają na sprawdzanie zmiennych są jednymi z najbardziej pr
 W tym samouczku wyjaśniono sposób uruchamiania debugera, Przechodź przez kod i Sprawdź zmienne. Możesz chcieć wysokiego poziomu poznać funkcje debugera, wraz z linkami do dodatkowych informacji.
 
 > [!div class="nextstepaction"]
-> [Porady i wskazówki dotyczące debugera](../debugger/debugger-tips-and-tricks.md)
+> [Pierwsze spojrzenie na debugera](../debugger/debugger-feature-tour.md)

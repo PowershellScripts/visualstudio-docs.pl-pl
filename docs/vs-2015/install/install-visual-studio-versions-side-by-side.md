@@ -18,12 +18,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d6cc66b828b07c0facb8fae19b562dc6566df420
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b01219fa0d9f3ab95fb2d64e2d3dd003557bfe51
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199904"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51761254"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalowanie programu Visual Studio wersje Side-by-Side
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Ta wersja programu Visual Studio można zainstalować na komputerze, na którym 
   
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Wersje programu .NET framework i instalacje Side-by-Side  
   
--   Projekty języka Visual Basic, Visual C# i Visual F # korzystają **platformę docelową** opcji **projektanta projektu** do określenia, która wersja programu .NET Framework projekt używa. Dla projektu w języku C++ można ręcznie zmienić platformę docelową, modyfikując plik vcxproj. Aby uzyskać więcej informacji, zobacz [zgodność wersji](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).  
+-   Visual Basic, Visual C#i Visual F# projektów użyj **platformę docelową** opcji **projektanta projektu** do określenia, która wersja programu .NET Framework projekt używa. Dla projektu w języku C++ można ręcznie zmienić platformę docelową, modyfikując plik vcxproj. Aby uzyskać więcej informacji, zobacz [zgodność wersji](http://msdn.microsoft.com/library/2f25e522-456a-48c3-8a53-e5f39275649f).  
   
      Podczas tworzenia projektu można określić, która wersja programu .NET Framework jest przeznaczony projekt **.NET Framework** listy w **nowy projekt** okno dialogowe.  
   

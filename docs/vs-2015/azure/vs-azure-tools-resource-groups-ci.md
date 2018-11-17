@@ -9,12 +9,12 @@ ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: f6404b15e8a7cd3f95ac63bbae6076ef62fcff06
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: b20a43181ad4d36377e61434b880b491543a6c47
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51003612"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791608"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Ciągła integracja w usługom DevOps platformy Azure przy użyciu projekty wdrażania grupy zasobów platformy Azure
 Do wdrożenia szablonu platformy Azure, wykonywania zadań w poszczególnych etapach: kopiowania kompilacji, testów, na platformie Azure (zwane również "Staging") i wdrożyć szablon. Istnieją dwa różne sposoby wdrażania szablonów usługom DevOps platformy Azure. Obie metody zapewniają takie same wyniki, więc wybierz ten, który najlepiej pasuje do przepływu pracy.
@@ -131,7 +131,7 @@ Poniższe procedury opisują czynności niezbędne do skonfigurowania ciągłego
 
 1. Edytuj potoku kompilacji usługom DevOps platformy Azure, aby dodać dwa nowe kroki kompilacji. Wybierz proces kompilacji w ramach **definicje kompilacji** kategorii, a następnie wybierz **Edytuj** łącza.
    
-   ![Edytowanie definicji kompilacji][12]
+   ![Edytuj definicję kompilacji][12]
 2. Dodaj nowe kroki kompilacji do potoku kompilacji przy użyciu **Dodaj krok kompilacji...** przycisk.
    
    ![Dodaj krok kompilacji][13]

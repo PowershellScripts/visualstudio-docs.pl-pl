@@ -13,12 +13,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fae40230a75816653e8d06ab9ec7ed4f894d3fa0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63f057d635682e9552f392e73a5c2ad67f96d66f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194106"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51765371"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Tworzenie aplikacji mobilnych na wiele platform w programie Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Można tworzyć aplikacje dla urządzeń z systemem Android, iOS i Windows przy 
 |[Dowiedz się więcej o Visual Studio Emulator for Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (Visual Studio)|  
   
 ###  <a name="AndroidHTML"></a> Docelowe systemów Android, iOS i Windows z pojedynczą bazą kodu  
- Za tworzenie natywnych aplikacji dla systemu Android, iOS i Windows przy użyciu języka C# lub F # (Visual Basic nie jest obsługiwane w tej chwili).  Aby rozpocząć pracę, należy zainstalować program Visual Studio 2015, wybierz **niestandardowe** opcji w oknie Instalatora, a następnie zaznacz pole w obszarze **Cross Platform Mobile Development > C# / .NET (Xamarin)**. Można także uruchomić z [Instalatora platformy Xamarin](https://www.xamarin.com/download), co jest wymagane do instalacji Xamarin dla programu Visual Studio 2013.  
+ Tworzyć natywne aplikacje dla systemów Android, iOS i Windows przy użyciu C# lub F# (Visual Basic nie jest obsługiwane w tej chwili).  Aby rozpocząć pracę, należy zainstalować program Visual Studio 2015, wybierz **niestandardowe** opcji w oknie Instalatora, a następnie zaznacz pole w obszarze **Cross Platform Mobile Development > C# / .NET (Xamarin)**. Można także uruchomić z [Instalatora platformy Xamarin](https://www.xamarin.com/download), co jest wymagane do instalacji Xamarin dla programu Visual Studio 2013.  
   
  Jeśli masz już program Visual Studio 2015, uruchom Instalatora z **Panel sterowania > programy i funkcje** i wybierz taki sam **niestandardowe** opcji dla programu Xamarin opisanych powyżej.  
   

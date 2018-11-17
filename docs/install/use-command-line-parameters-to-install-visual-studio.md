@@ -2,7 +2,7 @@
 title: Korzystanie z parametrów wiersza polecenia do zainstalowania programu Visual Studio
 description: Dowiedz się, jak użyć parametrów wiersza polecenia, aby kontrolować lub dostosować instalację programu Visual Studio.
 ms.custom: ''
-ms.date: 05/07/2018
+ms.date: 11/14/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55cf6eb2a46f707e5c0c20633ab92ac2304214ec
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: e52d61c1226e131c9d989a70f7c8e6432d8f3733
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645201"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768511"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Użyj parametrów wiersza polecenia, aby zainstalować program Visual Studio 2017
 
@@ -75,7 +75,7 @@ Opcje wiersza polecenia są używane w połączeniu z program inicjujący Instal
 | `--nickname <name>` | **Opcjonalnie**: definiuje pseudonim w celu przypisania do zainstalowanego produktu. Pseudonim nie może być dłuższa niż 10 znaków.  |
 | `--productKey` | **Opcjonalnie**: Określa klucz produktu na potrzeby zainstalowany produkt. Składa się z 25 alfanumeryczne znaki w formacie `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` lub `xxxxxxxxxxxxxxxxxxxxxxxxx`. |
 | `--help, --?, -h, -?` | Wyświetl w trybie offline wersję tej strony. |
-| `--config <path>` | **Nowość w 15.9 opcjonalne**: podczas instalacji lub zmodyfikować działanie, ta wartość określa obciążeń i składników, aby dodać opartego na pliku konfiguracji instalacji wcześniej zapisany. Ta operacja jest dodatku i nie spowoduje usunięcia dowolnych obciążeń lub składników, jeśli nie istnieją w pliku. Ponadto elementy, których nie można zastosować do produktu nie zostanie dodany. Podczas operacji eksportowania Określa lokalizację do zapisania pliku konfiguracji instalacji. |
+| `--config <path>` | **Opcjonalnie** i **Nowość w wersji 15.9**: podczas instalacji lub zmodyfikować działanie, ta wartość określa obciążeń i składników, aby dodać opartego na pliku konfiguracji instalacji wcześniej zapisany. Ta operacja jest dodatku i nie spowoduje usunięcia dowolnych obciążeń lub składników, jeśli nie istnieją w pliku. Ponadto elementy, których nie można zastosować do produktu nie zostanie dodany. Podczas operacji eksportowania Określa lokalizację do zapisania pliku konfiguracji instalacji. |
 
 > Uwaga: Podczas określania wielu obciążeń i składników, należy powtórzyć `--add` lub `--remove` przełącznik wiersza polecenia dla każdego elementu.
 

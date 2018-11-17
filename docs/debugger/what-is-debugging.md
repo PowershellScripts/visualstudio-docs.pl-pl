@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bece83e7e2a66499721c017932d4b498b664b459
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51562011"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826664"
 ---
 # <a name="what-is-debugging"></a>Co to jest debugowanie?
 
@@ -49,7 +49,7 @@ Debuger to podstawowe narzędzie do znajdowania i rozwiązywania usterek w aplik
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym artykule wyjaśniono kilka ogólnych pojęć debugowania. Następnie można uruchomić uczenia sposób debugowania w programie Visual Studio oraz pisania kodu z mniej błędów.
+W tym artykule wyjaśniono kilka ogólnych pojęć debugowania. Następnie można uruchomić uczenia sposób debugowania w programie Visual Studio oraz pisania kodu z mniej błędów. Poniższy artykuł przedstawia C# przykłady kodu, ale pojęcia dotyczą wszystkich językach obsługiwanych przez program Visual Studio.
 
 > [!div class="nextstepaction"]
 > [Tworzenie lepszych C# kodu za pomocą programu Visual Studio](../debugger/write-better-code-with-visual-studio.md)

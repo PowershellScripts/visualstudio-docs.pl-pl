@@ -1,6 +1,6 @@
 ---
 title: Pozwól Pomoc programu Visual Studio, możesz napisać C# kodu z mniej błędów
-description: Zrozumienie, kiedy należy użyć debugera, aby debugować aplikację
+description: Dowiedz się, jak napisać lepszego kodu z mniej błędów
 ms.custom: debug-experiments
 ms.date: 10/30/2018
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b020dcf27ee9b248b460465a9b0c75cdb3b0ab6
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51562012"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948962"
 ---
 # <a name="write-better-c-code-using-visual-studio"></a>Tworzenie lepszych C# kodu za pomocą programu Visual Studio
 
@@ -166,7 +166,7 @@ Poniżej przedstawiono kilka ważnych wskazówki dotyczące obsługi wyjątków:
     }
     ```
 
-* Dla nieznanych metod, które należy uwzględnić w swojej aplikacji zapoznaj się z dokumentacją, aby zobaczyć, jakie wyjątki metoda będzie prawdopodobnie zgłaszany. Może to być kluczowych informacji do obsługi błędów właściwe i do debugowania aplikacji.
+* Dla nieznanego funkcje, które zawierają w swojej aplikacji, expecially tych interakcji z danymi zewnętrznymi (np. żądania sieci web) zapoznaj się z dokumentacją, aby zobaczyć, jakie wyjątki funkcji będzie prawdopodobnie zgłaszany. Może to być kluczowych informacji do obsługi błędów właściwe i do debugowania aplikacji.
 
 Dla przykładowej aplikacji, należy naprawić `SerializationException` w `GetJsonData` metody, zmieniając `4o` do `40`.
 
@@ -217,7 +217,10 @@ Po ponownym uruchomieniu, debuger zatrzymuje się na `assert` instrukcji, poniew
 
 ![Asercja rozwiązuje na wartość false](../debugger/media/write-better-code-using-assert.png)
 
-`assert` Błąd informujący o tym problemie, który chcesz zbadać. `assert` może obejmować wiele scenariuszy, w którym niekoniecznie nie widzisz wyjątek. W tym przykładzie użytkownik nie będzie widział wyjątek (w innych scenariuszach `NullReferenceException` może wystąpić), a `null` wartość zostanie dodany jako `firstname` w bazie danych. Może to spowodować problemy później (takie jak widać w danych wyjściowych konsoli) i może być trudniejsze do debugowania.
+`assert` Błąd informujący o tym problemie, który chcesz zbadać. `assert` może obejmować wiele scenariuszy, w którym niekoniecznie nie widzisz wyjątek. W tym przykładzie użytkownik nie będzie widział wyjątek, a `null` wartość zostanie dodany jako `firstname` na liście rekordów. Może to spowodować problemy później (takie jak widać w danych wyjściowych konsoli) i może być trudniejsze do debugowania.
+
+> [!NOTE]
+> W scenariuszach, gdzie wywołania metody wobec `null` wartość `NullReferenceException` wyników. Zazwyczaj chcesz należy unikać `try/catch` zablokować na ogólny wyjątek, oznacza to, że wyjątek, który nie jest związany z funkcji w określonej bibliotece. Każdy obiekt może zgłosić `NullReferenceException`. Jeśli nie masz pewności, sprawdź w dokumentacji dotyczącej funkcji biblioteki.
 
 Podczas debugowania, warto zachować określonego `assert` instrukcji, dopóki nie wiesz, musisz zastąpić poprawkę rzeczywisty kod. Załóżmy, że możesz zdecydować, czy użytkownik może wystąpić wyjątek w kompilacji wydania aplikacji. W takim przypadku musisz wykonać refaktoryzację kodu, aby upewnić się, że Twoja aplikacja nie zgłosić wyjątek krytyczny lub spowodować inny błąd. Tak aby rozwiązać ten kod, Zastąp następujący kod:
 
@@ -276,7 +279,7 @@ Błędów innego rodzaju obejmują nieefektywny kod, który powoduje, że aplika
 
 ## <a name="sample-code"></a> Przykładowy kod
 
-Poniższy kod zawiera pewne błędy, które można rozwiązać, przy użyciu programu Visual Studio IDE. W tym miejscu aplikacja jest prosta aplikacja, która symuluje pobieranie danych JSON z niektórych operacji, podczas deserializacji danych do obiektu i aktualizowanie prostej bazy danych w pamięci z nowymi danymi.
+Poniższy kod zawiera pewne błędy, które można rozwiązać, przy użyciu programu Visual Studio IDE. W tym miejscu aplikacja jest prosta aplikacja, która symuluje pobieranie danych JSON z niektórych operacji, podczas deserializacji danych do obiektu i aktualizowanie prostą listę nowych danych.
 
 ```csharp
 using System;

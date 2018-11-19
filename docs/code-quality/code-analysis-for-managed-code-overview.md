@@ -1,5 +1,5 @@
 ---
-title: Analiza kodu dla kodu zarządzanego w programie Visual Studio
+title: Statyczna analiza kodu dla kodu zarządzanego
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1e77955de9bb650ac262d8f9b7513c90acbd19ac
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320818"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948429"
 ---
-# <a name="overview-of-code-analysis-for-managed-code"></a>Omówienie analizy kodu dla kodu zarządzanego
+# <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>Omówienie statycznej analizy kodu dla kodu zarządzanego w programie Visual Studio
 
-Program Visual Studio 2017 analizuje kod zarządzany na dwa sposoby: za pomocą starszej wersji *FxCop* analizy statycznej zestawów zarządzanych, a dzięki platformie kompilatora .NET *analizatory*. W tym temacie omówiono FxCop statycznej analizy kodu. Aby dowiedzieć się więcej na temat analizowania kodu za pomocą analizatorów platformie kompilatora .NET, zobacz [analizatorów Przegląd Roslyn](../code-quality/roslyn-analyzers-overview.md).
+Program Visual Studio 2017 można wykonać analizy kodu dla kodu zarządzanego na dwa sposoby: za pomocą *FxCop* analizy statycznej zestawów zarządzanych, a za pomocą nowoczesnych więcej *analizatorów Roslyn*. W tym temacie omówiono FxCop statycznej analizy kodu. Aby dowiedzieć się więcej na temat analizowania kodu za pomocą analizatorów kodu, zobacz [analizatorów Przegląd Roslyn](../code-quality/roslyn-analyzers-overview.md).
 
 Analiza kodu dla kodu zarządzanego analizuje zestawy zarządzane i raportuje informacje o zestawach, takie jak naruszenia programowania i projektowania reguły określone w wytycznych projektowych programu Microsoft .NET Framework.
 

@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2955790cdd0f322c1a1df75b6586b7e08ce03367
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 64bad925b7d0ac6170a4ac581fc327450aa2dd04
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727371"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948117"
 ---
 # <a name="understanding-resource-contention-data-values"></a>Zapoznanie z wartościami danych kontencji zasobów
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Profilowanie rywalizacji zasobów zbiera szczegółowe informacje stosu wywoła�
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
-  Raporty rywalizacji zasobów zawierają całkowitą liczbę zdarzeń rywalizacji oraz całkowity czas spędzony zasobu dla modułów, funkcje, wiersze kodu źródłowego i instrukcji, w których oczekiwaniu.  
+  Raporty z rywalizacji o zasoby pokazują łączną liczbę zdarzeń rywalizacji oraz całkowity czas spędzony przez moduły, funkcje, wiersze kodu źródłowego i instrukcje w oczekiwaniu na zasoby.  
   
 - Alternatywne wartości wyświetlane całkowita liczba rywalizacji, których wymuszone funkcja oczekiwania przez rywalizacje o zasoby i łączny czas oczekiwania funkcji.  Rywalizacji, które były spowodowane przez funkcje podrzędne, które zostały wywołane przez funkcję znajdują się w wartości włącznie.  
   

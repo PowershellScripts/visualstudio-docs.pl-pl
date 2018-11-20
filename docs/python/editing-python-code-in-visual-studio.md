@@ -1,7 +1,7 @@
 ---
 title: Edytowanie kodu w języku Python
 description: Edycji języka Python w programie Visual Studio zawiera funkcję IntelliSense, fragmenty kodu i funkcje nawigacji, wraz z formatowania, Zaznaczanie błędów i refaktoryzacji.
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 680f568ef6d44aa5194931bd585ba307f7b64b3d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b8d92f16f869de400d0d66ff44c1848abffde67f
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774768"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001272"
 ---
 # <a name="edit-python-code"></a>Edytowanie kodu w języku Python
 
@@ -195,7 +195,7 @@ Obsługa języka Python w programie Visual Studio zawiera kilka oznacza, że mo�
 
 Na pasku nawigacyjnym jest wyświetlana w górnej części każdego okna edytora i zawiera listę dwupoziomowej definicji. Lista rozwijana po lewej stronie zawiera klasę najwyższego poziomu i definicje funkcji w bieżącym pliku; prawo rozwijanej Wyświetla listę definicji w zakresie wyświetlane po lewej stronie. Jak zmieniają położenie w edytorze list zaktualizowane, aby wyświetlić bieżący kontekst i można również wybrać wpis z tych list można przechodzić bezpośrednio do.
 
-![Pasek nawigacyjny](media/code-editing-navigation-bar.png)
+![Pasek nawigacji](media/code-editing-navigation-bar.png)
 
 > [!Tip]
 > Aby ukryć pasek nawigacyjny, przejdź do **narzędzia** > **opcje** > **edytora tekstów** > **Python**  >  **Ogólne** i wyczyść **ustawienia** > **pasek nawigacyjny**.

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b0fc5cd2a70176e671caa187358d8f940f9f11f
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: c71161c85c1a532b8c7e188f23cb00e73f78b06c
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000126"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001220"
 ---
 # <a id="top"> </a> Obrazów programu Visual Studio w systemie Azure
 
@@ -34,14 +34,13 @@ Obrazy do najnowszej wersji głównych, Visual Studio 2017 i Visual Studio 2015 
 
 | Wersja                                              | Wersje                     |     Wersja produktu     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: R (wersja 15.8)                    |    Enterprise, Community     |      Wersja 15.8.7     |
-| Programu Visual Studio 2017: Najnowszą wersję zapoznawczą (w wersji 15.9, wersja zapoznawcza 5) |    Enterprise, Community     |      W wersji 15.9       |
+| Visual Studio 2017: R (w wersji 15.9)                    |    Enterprise, Community     |      Wersja 15.9.0     |
 |         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Wersja 15.0.18    |
 |   Visual Studio 2015: R (Aktualizacja 3)                      |    Enterprise, Community     |  Wersja 14.0.25431.01  |
 |         Visual Studio 2015: RTW                              |             Brak             | (Wygasłe obsługi) |
 
 > [!NOTE]
-> Zgodnie z zasady obsługi firmy Microsoft pierwotnie (RTW) wersji programu Visual Studio 2015 zakończył się okres obsługi. Visual Studio 2015 Update 3 jest jedynie wersja pozostałe oferowana w przypadku linii produktów Visual Studio 2015.
+> Zgodnie z zasady obsługi firmy Microsoft pierwotnie (RTW) wersji programu Visual Studio 2015 zakończył się okres obsługi. Visual Studio 2015 Update 3 jest jedynie wersja pozostałe oferowana w przypadku linii produktów Visual Studio 2015.  Najnowsza wersja Podgląd obrazów, zawarte w wersjach zapoznawczych, wersji 15.9 została również zrezygnowaliśmy od programu Visual Studio 2017 w wersji 15.9 wydane.
 
 Aby uzyskać więcej informacji, zobacz [Visual Studio obsługi zasad](/visualstudio/productinfo/vs-servicing-vs).
 

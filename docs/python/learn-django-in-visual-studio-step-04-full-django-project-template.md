@@ -1,7 +1,7 @@
 ---
 title: Samouczek — Dowiedz się, Django w programie Visual Studio, krok 4
 description: Przewodnik po podstawy Django w kontekście projektów programu Visual Studio, w szczególności funkcji oferowanych przez szablon projektu sieci Web Django.
-ms.date: 08/13/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4e37b8f5b50a7145ca5fbaa0597fd6109b1be98a
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: f087086343623d0a8e698821902a5cf92598061e
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42624286"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001207"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Krok 4: Użyj pełnego szablonów projektów internetowych Django
 

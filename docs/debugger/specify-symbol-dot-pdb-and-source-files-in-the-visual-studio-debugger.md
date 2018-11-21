@@ -29,14 +29,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eb7d535b99aa6af8b977711fbc60f7b4d9856dd
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c289da63a8fbc8469734e905c29edca1149e04c4
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349494"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257384"
 ---
-# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Określanie plików symboli (pdb) i plików źródłowych w debugerze programu Visual Studio
+# <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Określanie plików symboli (.pdb) i plików źródłowych w debugerze programu Visual Studio (C#, C++, Visual Basic F#)
 
 Baza danych programu (*.pdb*) plików, nazywany również pliki symboli mapowania identyfikatorów i instrukcje w kodzie źródłowym projektu do odpowiednich identyfikatorów i zgodnie z instrukcjami w skompilowanych aplikacji. 
 
@@ -182,7 +182,7 @@ Podczas budowania projektu z programu Visual Studio IDE ze standardem **debugowa
   
   - *\<Projekt > .pdb* 
     
-    *\<Projekt > .pdb* plik przechowuje wszystkie informacje debugowania dla projektu *.exe* pliku i znajduje się w *\debug* podkatalogu. *\<Projekt > .pdb* plik zawiera pełne informacje o debugowaniu, w tym prototypy funkcji, nie tylko informacje o typie znalezione w *VC\<x > .pdb*. 
+     *\<Projekt > .pdb* plik przechowuje wszystkie informacje debugowania dla projektu *.exe* pliku i znajduje się w *\debug* podkatalogu.  *\<Projekt > .pdb* plik zawiera pełne informacje o debugowaniu, w tym prototypy funkcji, nie tylko informacje o typie znalezione w *VC\<x > .pdb*. 
   
   Zarówno *VC\<x > .pdb* i  *\<Projekt > .pdb* pliki zezwalają na aktualizacje przyrostowe. Konsolidator osadza także ścieżkę do *.pdb* pliki *.exe* lub *.dll* utworzonych plików.  
   

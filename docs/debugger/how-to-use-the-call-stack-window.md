@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d138e954ce01af04405b72ce50ab72a76d8cf3
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 264aeeeaac47e30eb08b4320443da15ea48a8601
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348894"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257241"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Wyświetl stos wywołań i korzystanie z okna stosu wywołań w debugerze
 
@@ -103,7 +103,7 @@ W programie Visual Studio Enterprise (tylko) możesz wyświetlić mapy kodu dla 
 
 ![Pokaż stos wywołań na mapie kodu](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
   
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>Wyświetlanie kodu dezasemblacji dla funkcji na stosie wywołań  
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Wyświetlanie kodu dezasemblacji dla funkcji na stosie wywołań (C#, C++, Visual Basic F#) 
   
 -   W **stos wywołań** okna, kliknij prawym przyciskiem myszy funkcję, której kod demnotażu chcesz wyświetlić i wybierz **przejdź do demontażu**.    
 
@@ -111,7 +111,8 @@ W programie Visual Studio Enterprise (tylko) możesz wyświetlić mapy kodu dla 
   
 -   Kliknij prawym przyciskiem myszy **stos wywołań** okna i zestawu lub wyczyść **Pokaż \<**  _informacje, które mają_ **>**.  
   
-## <a name="bkmk_symbols"></a> Ładowanie symboli dla modułu
+## <a name="bkmk_symbols"></a> Ładowanie symboli dla modułu (C#, C++, Visual Basic F#)
+
 W **stos wywołań** okna, możesz załadować symbole debugowania dla kodu, który nie ma obecnie załadowanych symboli. Te symbole mogą być .NET Framework lub symbole systemu, które zostały pobrane z serwerów symboli publicznych firmy Microsoft lub symbolami w ścieżce symboli na komputerze, na którym wykonujesz debugowanie.  
   
 Zobacz [określanie plików symboli (.pdb) i pliki źródłowe](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).

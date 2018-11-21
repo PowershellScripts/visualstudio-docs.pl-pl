@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 072cfcf253bb01687df20a6a0f2d41b71468b90c
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612730"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257358"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Dowiedz się więcej i porady dotyczące wydajności w debugerze programu Visual Studio
 
@@ -145,7 +145,7 @@ Wybierz operację podsumowania bardziej szczegółowo widokami.
 
 Aby uzyskać więcej informacji, zobacz [użycie sieci](../profiling/network-usage.md).
 
-## <a name="modules_window"></a> Zapoznać się z jak dołącza debuger do swojej aplikacji
+## <a name="modules_window"></a> Zapoznać się z jak dołącza debuger do swojej aplikacji (C#, C++, Visual Basic F#)
 
 Aby dołączyć do uruchomionej aplikacji, debuger ładuje pliki symboli (.pdb), generowany dla dokładnie tej samej kompilacji aplikacji, którą próbujesz debugować. W niektórych przypadkach nieco znajomości pliki symboli mogą być pomocne. Można sprawdzić, jak Visual Studio ładuje pliki symboli za pomocą **modułów** okna.
 

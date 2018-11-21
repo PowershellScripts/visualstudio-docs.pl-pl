@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612678"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257371"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Jak debugować dla całkowicie początkujących
 
@@ -80,7 +80,7 @@ Następnie zostanie utworzona aplikacja, która ma kilka błędów.
 
 1. Konieczne jest posiadanie zainstalowanego programu Visual Studio, a następnie. **Netto programowanie aplikacji klasycznych** obciążenia lub. **.NET Core programowanie wieloplatformowych** zainstalowanym obciążeniem, w zależności od typu aplikacji, która ma zostać utworzony.
 
-    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
+    Jeśli jeszcze nie zainstalowano programu Visual Studio, przejdź do strony [program Visual Studio pobiera](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) strony, aby zainstalować go za darmo.
 
     Jeśli musisz zainstalować obciążenie, ale już program Visual Studio, kliknij przycisk **narzędzia** > **Pobierz narzędzia i funkcje**. Uruchamia Instalatora programu Visual Studio. Wybierz opcję. **Netto programowanie aplikacji klasycznych** (lub. **.NET Core programowanie wieloplatformowych**) obciążeń, następnie wybierz **Modyfikuj**.
 
@@ -325,11 +325,11 @@ Po znalezieniu region kodu z tym problemem, należy użyć debugera, aby zbadać
 * Sprawdź, czy aplikacja wykonuje kod, który powinien być. (Na przykład w przykładowej aplikacji, Oczekiwano kodu dla instrukcji switch ustawić automatyczny typ galaxy nieregularne, ale aplikacja pominięte kodu ze względu na błąd pisowni.)
 
 > [!TIP]
-> Możesz użyć debugera, aby pomóc w znalezieniu błędów. Narzędzie do debugowania można znaleźć błędy *dla Ciebie* tylko wtedy, gdy wie celem swój kod. To narzędzie można tylko zamiar kodu, jeśli informacje możesz developer, express, tym przeznaczeniem. Zapisywanie [testów jednostkowych](../test/improve-code-quality.md) się, jak to zrobić.
+> Możesz użyć debugera, aby pomóc w znalezieniu błędów. Narzędzie do debugowania można znaleźć błędy *dla Ciebie* tylko wtedy, gdy wie celem swój kod. To narzędzie można tylko zamiar kodu, jeśli informacje możesz developer, express, tym przeznaczeniem. Zapisywanie [testów jednostkowych](../test/improve-code-quality.md) się, jak to zrobić. 
 
 ## <a name="next-steps"></a>Następne kroki
 
-W tym artykule wyjaśniono kilka ogólnych pojęć debugowania. Następnie można uruchomić, jak można debugować za pomocą programu Visual Studio.
+W tym artykule wyjaśniono kilka ogólnych pojęć debugowania. Następnie można uruchomić dowiedzieć się więcej na temat debugera.
 
 > [!div class="nextstepaction"]
 > [Naucz się debugować przy użyciu programu Visual Studio](../debugger/getting-started-with-the-debugger.md)

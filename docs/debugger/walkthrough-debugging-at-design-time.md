@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f1235e6360ccc5f6c0677f7ec9acb1dd85cad226
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 452b4045357db12c4b4cff1a5b6e27035cf85d82
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180181"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257202"
 ---
-# <a name="debug-at-design-time-in-visual-studio"></a>Debugowanie w czasie projektowania w programie Visual Studio
+# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Debugowanie w czasie projektowania w programie Visual Studio (C#, C++, Visual Basic F#)
 
 W niektórych przypadkach warto możliwe jest debugowanie kodu na projekt czasu zamiast, gdy aplikacja jest uruchomiona. Można to zrobić za pomocą **bezpośrednie** okna. Jeśli chcesz debugować kodu XAML, który wchodzi w interakcję z innego kodu, takie jak kod powiązania danych, możesz użyć **debugowania** > **dołączyć do procesu** Aby to zrobić.
   
@@ -32,7 +32,7 @@ W niektórych przypadkach warto możliwe jest debugowanie kodu na projekt czasu 
 
 Możesz użyć programu Visual Studio **bezpośrednie** okna do wykonania funkcji lub podprocedury, gdy aplikacja nie jest uruchomiona. Jeśli funkcja lub podprocedura zawiera punkt przerwania, program Visual Studio spowoduje przerwanie wykonywania we właściwym miejscu. Można następnie użyć okien debugera do sprawdzenia stanu programu. Ta funkcja jest wywoływana, debugowanie w czasie projektowania.  
 
-Poniższy przykład jest w języku Visual Basic, ale **bezpośrednie** okno jest również obsługiwane w aplikacjach języka C# i C++.
+Poniższy przykład jest w języku Visual Basic. Korzystanie z **bezpośrednie** okna w czasie projektowania jest też obsługiwana na C#, C++, i F# aplikacji.
   
 1.  Wklej następujący kod do aplikacji konsoli Visual Basic:  
   

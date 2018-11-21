@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51510d09a1840035bb96817d30aebdcd6bf3ebd7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9733569c3fa53d2c5a5905b5b893d16b4eeaf10b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: pl-PL
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671147"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257046"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>Wyświetlanie kodu dezasemblacji w debugerze programu Visual Studio
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Wyświetlanie kodu dezasemblacji w debugerze programu Visual Studio (C#, C++, Visual Basic F#)
 
 **Dezasemblacji** okno pokazuje kod zestawu odpowiadający instrukcjom utworzonym przez kompilator. Jeśli debugujesz kod zarządzany w instrukcjach zestawu odnoszą się do kodu macierzystego, utworzony przez kompilator Just-in-Time (JIT), a nie języka Microsoft intermediate language (MSIL) utworzony przez kompilator programu Visual Studio.  
   
@@ -41,7 +41,7 @@ Ta funkcja jest dostępna tylko jeśli włączone jest debugowanie na poziomie a
 
 Oprócz instrukcje montażu **dezasemblacji** okna można wyświetlić następujące informacje opcjonalne:  
   
-- Adres pamięci, w którym znajduje się każdą instrukcję. Dla natywnych aplikacji jest to adres pamięci rzeczywistych. Dla języka Visual Basic C#, lub kod zarządzany, to przesunięcie od początku funkcji.  
+- Adres pamięci, w którym znajduje się każdą instrukcję. Dla natywnych aplikacji jest to adres pamięci rzeczywistych. Dla języka Visual Basic lub C#, to przesunięcie od początku funkcji.  
   
 - Kod źródłowy, z którego pochodzi kod zestawu.  
   

@@ -1,6 +1,6 @@
-## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open źródła Kodeks postępowania
+## <a name="microsoft-open-source-code-of-conduct"></a>Kodeks postępowania firmy Microsoft dotyczący treści open source
 
-Ten projekt przyjął [Kodeks postępowania firmy Microsoft](https://opensource.microsoft.com/codeofconduct/).
+Ten projekt przyjął [Kodeks postępowania firmy Microsoft dotyczący treści open source](https://opensource.microsoft.com/codeofconduct/).
 Aby uzyskać więcej informacji, zobacz [FAQ kodu postępowania](https://opensource.microsoft.com/codeofconduct/faq/) lub skontaktuj się z [ opencode@microsoft.com ](mailto:opencode@microsoft.com) z jakimikolwiek dodatkowymi pytaniami lub komentarzami.
 
 # <a name="visual-studio-2017-documentation"></a>Dokumentacja programu Visual Studio 2017
@@ -18,5 +18,5 @@ Chętnie przyjmiemy wkłady, które mogą pomóc nam ulepszyć dokumentację pro
 
 Kilka obszarów funkcji programu Visual Studio ma własne foldery w tym repozytorium, przykładowo **debuger** dla tematów dotyczących debugowania, **ide** dla tematów środowiska IDE i itd. Podfolder **/Media** w każdym folderze zawiera pliki graficzne dla danego tematu. [Przewodnik o Dodawaniu](CONTRIBUTING.md) zawiera więcej informacji.
 
-Ten projekt przyjął [Kodeks postępowania o oprogramowaniu typu open source firmy Microsoft](https://opensource.microsoft.com/codeofconduct/). Aby uzyskać więcej informacji, zobacz [FAQ kodu postępowania](https://opensource.microsoft.com/codeofconduct/faq/) lub skontaktuj się z [ opencode@microsoft.com ](mailto:opencode@microsoft.com) z jakimikolwiek dodatkowymi pytaniami lub komentarzami.
+Ten projekt przyjął [Kodeks postępowania firmy Microsoft dotyczący treści open source](https://opensource.microsoft.com/codeofconduct/). Aby uzyskać więcej informacji, zobacz [FAQ kodu postępowania](https://opensource.microsoft.com/codeofconduct/faq/) lub skontaktuj się z [ opencode@microsoft.com ](mailto:opencode@microsoft.com) z jakimikolwiek dodatkowymi pytaniami lub komentarzami.
 

@@ -30,31 +30,31 @@ ms.locfileid: "49909760"
   
  W tym instruktażu pokazano następujące zagadnienia:  
   
-- Dostosowywanie witryny programu SharePoint przez dodanie kolumny niestandardowej witryny (znany także jako *pola*.  
+- Dostosowywanie witryny programu SharePoint przez dodanie niestandardowej kolumny witryny (znanej także jako *pole*).  
   
 - Eksportowanie witryny programu SharePoint w pliku wsp.  
   
-- Importowanie plików .wsp do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] programu SharePoint przy użyciu WSP importowania projektu.  
+- Importowanie plików .wsp do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] programu SharePoint przy użyciu importowania projektu wsp.  
   
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>Wymagania wstępne  
- Następujące składniki są wymagane do przeprowadzenia tego instruktażu:  
+ Następujące składniki są wymagane do wykonania tego instruktażu:  
   
 -   Obsługiwane edycje [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] i programu SharePoint.  
   
 -   Program Visual Studio.  
   
 ## <a name="customize-a-sharepoint-site"></a>Dostosowywanie witryny programu SharePoint
- W tym przykładzie utworzysz i dostosować podwitrynę programu SharePoint, dodając nowe kolumny witryny do niego i tworząc inną witrynę do użycia w przyszłości. Później będzie wyeksportować pierwszy podwitryny z plikiem WSP i zaimportowanie kolumny niestandardowej witryny do drugiego podwitryny przy użyciu WSP importowania projektu.  
+ W tym przykładzie utworzysz i dostosujesz podwitrynę programu SharePoint, dodając do niej nowe kolumny witryny i tworząc inną witrynę do użycia w przyszłości. Później będzie można wyeksportować pierwszą podwitrynę z plikiem WSP i zaimportować kolumny niestandardowej witryny do drugiej podwitryny przy użyciu pliku WSP.  
   
-#### <a name="to-create-and-customize-a-sharepoint-site"></a>Do tworzenia i dostosowywania witryny programu SharePoint  
+#### <a name="to-create-and-customize-a-sharepoint-site"></a>Tworzenie i dostosowywanie witryny programu SharePoint  
   
-1. Otwórz witrynę programu SharePoint, korzystając z przeglądarki internetowej, takiej jak http://<em>Nazwa systemowa</em>/SitePages/Home.aspx.  
+1. Korzystając z przeglądarki internetowej, otwórz witrynę programu SharePoint, np. http://<em>Nazwa systemu</em>/SitePages/Home.aspx.  
   
-2. Utwórz podwitryny zniżki w stosunku do głównego witryny programu SharePoint, otwierając **Akcje witryny** menu, a następnie wybierając **nowej lokacji**.  
+2. Utwórz podwitrynę głównej witryny programu SharePoint, otwierając menu **Akcje witryny**, a następnie wybierając **Nowa strona**.  
   
-3. W tej witrynie **Utwórz** okna dialogowego wybierz **pustej witryny** typu.  
+3. W tej witrynie **Utwórz** okna dialogowego wybierz **pusta witryny** typu.  
   
 4. W **tytuł** wprowadź **lokacji kolumny Test 1**; w **nazwa adresu URL** wprowadź **columntest1**; pozostaw inne ustawienia domyślne wartości. a następnie wybierz **Utwórz** przycisku.  
   
